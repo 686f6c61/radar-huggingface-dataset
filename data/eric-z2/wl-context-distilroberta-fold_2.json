@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "eric-z2/WL-context-distilroberta-fold_2",
+  "slug": "eric-z2-wl-context-distilroberta-fold_2",
+  "author": "eric-z2",
+  "url": "https://huggingface.co/eric-z2/WL-context-distilroberta-fold_2",
+  "created_at": "2026-09-21T20:42:40.000Z",
+  "updated_at": "2026-09-21T20:42:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81533960,
+  "parameters_human": "81.5M",
+  "storage_bytes": 326148152,
+  "storage_human": "326 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Question aux abonnés MEETIC - Célibat et vie en solo - FORUM ...",
+      "url": "https://forum.doctissimo.fr/psychologie/celibat/question-abonnes-meetic-sujet_172960_1.htm",
+      "snippet": "Oct 28, 2009 · Meetic ou comment faire un chiffre d'affaire exponentiel et ascendant en investissant sur le marché de la solitude. …"
+    },
+    {
+      "title": "célibataires, bonnes ou mauvaises expériences de meetic",
+      "url": "https://forum.doctissimo.fr/psychologie/couples-relations/celibataires-experiences-mauvaises-sujet_184759_1.htm",
+      "snippet": "Jun 20, 2008 · Et ben moi j'ai pas utilisé meetic mais un autre site dans le genre! Il suffit de bien sélectionner. J'ai fait de bonnes …"
+    },
+    {
+      "title": "Côte d'Ivoire Arnaque sur Meetic. - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-4142812-cote-d-ivoire-arnaque-sur-meetic",
+      "snippet": "Nov 25, 2007 · Quant à Meetic, comme d'autres sites de rencontres, ils sont depuis longtemps avertis que des scammers arnaquent …"
+    },
+    {
+      "title": "Arnaqueurs africains sur Meetic - Forum Vos droits sur internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-11482534-arnaqueurs-africains-sur-meetic",
+      "snippet": "Nov 23, 2013 · Meilleure réponse: Bonjour, Je veux signaler encore une fois la présence d'arnaqueurs africains (Nigeria, Ghana) sur …"
+    },
+    {
+      "title": "elle continue d'aller sur meetic - Affaires de couples - FORUM ...",
+      "url": "https://forum.doctissimo.fr/psychologie/couples-relations/continue-aller-meetic-sujet_152530_1.htm",
+      "snippet": "Nov 22, 2004 · bonjour, j'ai rencontré aussi mon ami sur meetic et à partir du moment on était \"sûr\" d'être ensemble, on a arrêté …"
+    }
+  ]
+}

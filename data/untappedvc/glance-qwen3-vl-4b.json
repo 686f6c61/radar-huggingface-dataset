@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "untappedvc/glance-qwen3-vl-4b",
+  "slug": "untappedvc-glance-qwen3-vl-4b",
+  "author": "untappedvc",
+  "url": "https://huggingface.co/untappedvc/glance-qwen3-vl-4b",
+  "created_at": "2026-09-21T22:08:59.000Z",
+  "updated_at": "2026-09-21T22:15:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "glance",
+    "qwen3-vl",
+    "vision-language",
+    "logits",
+    "visual-question-answering",
+    "replicate",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تفعيل \"وضع تقييد المحتوى\" أو إيقافه على YouTube",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ar&co=GENIE.Platform%3DAndroid",
+      "snippet": "تحديد المشاكل المتعلقة بإيقاف \"وضع تقييد المحتوى\" وحلّها إذا أدخلت اسم المستخدم وكلمة المرور وبقي \"وضع تقييد المحتوى\" مفعّلاً، يمكنك التحقّق من إعداداتك في صفحة قيود المحتوى على …"
+    },
+    {
+      "title": "[video] حل لكل مشاكلك في اليوتيوب - منتدى YouTube",
+      "url": "https://support.google.com/youtube/community-video/226675434/%D8%AD%D9%84-%D9%84%D9%83%D9%84-%D9%85%D8%B4%D8%A7%D9%83%D9%84%D9%83-%D9%81%D9%8A-%D8%A7%D9%84%D9%8A%D9%88%D8%AA%D9%8A%D9%88%D8%A8?hl=ar",
+      "snippet": "حل لكل مشاكلك في اليوتيوب | هل تواجه صعوبات في التعامل مع اليوتيوب؟ هل تحتاج إلى حل لمشكلة ما في قناتك؟ إذاً أنت في المكان المناسب! في هذه الحلقة الشاملة ستتعلم كيفية حل أي مشكلة تواجهك في …"
+    },
+    {
+      "title": "مشكلة في الترجمة التلقائية في يوتيوب - أسئلة البرامج والتطبيقات ...",
+      "url": "https://academy.hsoub.com/questions/32271-%D9%85%D8%B4%D9%83%D9%84%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%AA%D8%B1%D8%AC%D9%85%D8%A9-%D8%A7%D9%84%D8%AA%D9%84%D9%82%D8%A7%D8%A6%D9%8A%D8%A9-%D9%81%D9%8A-%D9%8A%D9%88%D8%AA%D9%8A%D9%88%D8%A8/",
+      "snippet": "Sep 30, 2025 · يوجد مشكلة في تلك الميزة حاليًا في يوتيوب عند الترجمة من الإنجليزية للغة أخرى، في العادة ستقوم بالتالي: قم بالضغط على زر cc وسيظهر لك الترجمة بالإنجليزية بشكل …"
+    },
+    {
+      "title": "كيفية استخدام مكون يوتيوب في ووردبريس - ووردبريس - أكاديمية حسوب",
+      "url": "https://academy.hsoub.com/apps/web/wordpress/%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D9%85%D9%83%D9%88%D9%86-%D9%8A%D9%88%D8%AA%D9%8A%D9%88%D8%A8-%D9%81%D9%8A-%D9%88%D9%88%D8%B1%D8%AF%D8%A8%D8%B1%D9%8A%D8%B3-r582/",
+      "snippet": "Dec 30, 2021 · ملاحظة: عند مشاهدة مستخدم لمقطع فيديو يوتيوب ضمن موقعك سوف تُشارك بيانات غير شخصية مع يوتيوب. سوف نشرح في هذا المقال كيفية إضافة مكون يوتيوب إلى الصفحات …"
+    },
+    {
+      "title": "استخدام YouTube على متصفّحات الأجهزة الجوّالة",
+      "url": "https://support.google.com/youtube/answer/3008060?hl=ar",
+      "snippet": "لا يمكنك تعديل الفيديوهات وتحميلها باستخدام المتصفّحات المتوافقة مع الأجهزة الجوّالة، ولكن يمكنك تنزيل تطبيق YouTube وتعلُّم كيفية استخدامه لتحميل المحتوى وتعديله."
+    }
+  ]
+}

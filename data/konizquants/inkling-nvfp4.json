@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "konizquants/Inkling-NVFP4",
+  "slug": "konizquants-inkling-nvfp4",
+  "author": "konizquants",
+  "url": "https://huggingface.co/konizquants/Inkling-NVFP4",
+  "created_at": "2026-09-21T23:46:44.000Z",
+  "updated_at": "2026-09-21T23:46:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "base_model:thinkingmachines/Inkling",
+    "base_model:quantized:thinkingmachines/Inkling",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 552845034562,
+  "parameters_human": "552.85B",
+  "storage_bytes": 592037100903,
+  "storage_human": "592.0 GB",
+  "base_model": "thinkingmachines/Inkling",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fazer o download e instalar o Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Instalar o Chrome off-line Se você tiver problemas para baixar o Chrome no seu computador Windows, use o link alternativo para …"
+    },
+    {
+      "title": "Google Chrome'u indirme ve yükleme",
+      "url": "https://support.google.com/chrome/answer/95346?hl=tr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome'u çevrimdışı yükleme Chrome'u Windows bilgisayarınıza indirirken sorun yaşarsanız alternatif bağlantıyı kullanarak farklı bir …"
+    },
+    {
+      "title": "国内普通用户怎样下载到 Chrome？ - 知乎",
+      "url": "https://www.zhihu.com/question/37455757",
+      "snippet": "推荐用户下载浏览器时怎样才能使普通被墙用户下载到 Chrome？当然百度软件什么的绝不考虑。"
+    },
+    {
+      "title": "怎么在国内使用谷歌浏览器？ - 知乎",
+      "url": "https://www.zhihu.com/question/1943786398088930660",
+      "snippet": "目前谷歌浏览器官网国内可以正常访问下载，但是里面的同步功能、谷歌应用商店都需要借助魔法工具才能实现。 下载安装 Google …"
+    },
+    {
+      "title": "تنزيل Chrome - مساعدة متصفح Google Chrome",
+      "url": "https://support.google.com/chrome/answer/16738344?hl=ar",
+      "snippet": "لاستخدام متصفّح Chrome على نظام التشغيل Windows مع معالج Intel أو معالج ARM، ستحتاج إلى ما يلي: معالج Intel: نظام التشغيل Windows 10 والإصدارات الأحدث معالِج …"
+    }
+  ]
+}

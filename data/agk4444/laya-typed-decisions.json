@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "agk4444/laya-typed-decisions",
+  "slug": "agk4444-laya-typed-decisions",
+  "author": "agk4444",
+  "url": "https://huggingface.co/agk4444/laya-typed-decisions",
+  "created_at": "2026-09-21T23:27:48.000Z",
+  "updated_at": "2026-09-21T23:39:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laya",
+    "system-one",
+    "calibrated-decisions",
+    "rlcd",
+    "structured-decisions",
+    "typed-decisions",
+    "benchmark",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609220,
+  "storage_human": "843 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "System One Decision Benchmark",
+      "dataset": "Typed Decisions",
+      "metric": null,
+      "value": 0.789
+    },
+    {
+      "task": "System One Decision Benchmark",
+      "dataset": "Typed Decisions",
+      "metric": null,
+      "value": 0.061
+    }
+  ],
+  "sources": [
+    {
+      "title": "film online | bombuj",
+      "url": "https://www.bombuj.si/zanre/index2.php",
+      "snippet": "Najlepší výber online filmov s cz/sk dabingom ale aj s titulkami pohodlne na jednom webe."
+    },
+    {
+      "title": "Všetky online filmy | bombuj",
+      "url": "https://www.bombuj.si/filmy",
+      "snippet": "Najlepší výber online filmov s cz/sk dabingom ale aj s titulkami pohodlne na jednom webe."
+    },
+    {
+      "title": "Obrázkove zoradenie | bombuj",
+      "url": "https://www.bombuj.si/zanre/obr/all.php?page=1&sort=id&title=1&zaner=all",
+      "snippet": "Najlepší výber online filmov zadarmo, sledujte najnovšie, najlepšie a vaše obľúbené filmy s dabingom pohodlne na jednom webe."
+    },
+    {
+      "title": "Prihlásenie | bombuj",
+      "url": "https://www.bombuj.si/prihlasit.php",
+      "snippet": "Sledujte bez obmedzenia Získate prístup k plnému zoznamu našich filmov a budete sa na ne pozerať toľko, koľko budete chcieť. …"
+    },
+    {
+      "title": "To - To online film (2017) | bombuj",
+      "url": "https://www.bombuj.si/online-film-to",
+      "snippet": "Když ve městě Derry ve státě Maine začnou mizet děti, musí skupina mladých chlapců a děvčat čelit svým největším obavám v boji …"
+    }
+  ]
+}

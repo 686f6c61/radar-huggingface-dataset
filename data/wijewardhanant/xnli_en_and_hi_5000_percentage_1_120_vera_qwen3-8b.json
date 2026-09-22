@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_VeRA_Qwen3-8b",
+  "slug": "wijewardhanant-xnli_en_and_hi_5000_percentage_1_120_vera_qwen3-8b",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_VeRA_Qwen3-8b",
+  "created_at": "2026-09-21T23:46:25.000Z",
+  "updated_at": "2026-09-21T23:46:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-8B-Base",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 242146867,
+  "storage_human": "242 MB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "Clogs : r/Ozempic - Reddit",
+      "url": "https://www.reddit.com/r/Ozempic/comments/18s05h6/clogs/",
+      "snippet": "Dec 27, 2023 · Since I’ve been on Ozempic I’ve only been pooping probably every 3-4 days and every time I end up with a clogged …"
+    },
+    {
+      "title": "Ozempic | Diabetes Daily Forums",
+      "url": "https://www.diabetesdaily.com/forum/threads/ozempic.147138/",
+      "snippet": "Nov 4, 2024 · The manufacturer of Ozempic recommends that people start with a 0.5 mg/week dose. Stay there for at least one …"
+    },
+    {
+      "title": "Ozempic | Diabetes Daily Forums",
+      "url": "https://www.diabetesdaily.com/forum/threads/ozempic.138472/",
+      "snippet": "Aug 30, 2021 · I am 60yr old and have a slowly worsening prediabetes. I am a medical doctor myself, but my specialty is far away …"
+    },
+    {
+      "title": "Ozempic - Reddit",
+      "url": "https://www.reddit.com/r/Ozempic/",
+      "snippet": "r/Ozempic: Everything Ozempic Questions? Answers. Accomplishments! Hi there! I see the same questions come up and since I've …"
+    }
+  ]
+}

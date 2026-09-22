@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "VantoraLabs/Vocetta2-147k",
+  "slug": "vantoralabs-vocetta2-147k",
+  "author": "VantoraLabs",
+  "url": "https://huggingface.co/VantoraLabs/Vocetta2-147k",
+  "created_at": "2026-09-21T20:29:14.000Z",
+  "updated_at": "2026-09-21T22:25:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "vocetta2",
+    "tts",
+    "text-to-speech",
+    "speech",
+    "speech-synthesis",
+    "tiny",
+    "tiny-model",
+    "low-resource",
+    "distillation",
+    "english",
+    "cpu",
+    "real-time",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 147532,
+  "parameters_human": "147532",
+  "storage_bytes": 5696373,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vitli Krpan",
+      "url": "https://www.vitli-krpan.com/de/",
+      "snippet": "Vitli KRPAN ist der größte Hersteller von Forstseilwinden der Welt. Weiter werden noch folgende Produkte hergestellt: Holzspalter, …"
+    },
+    {
+      "title": "krpan-forsttechnik.de - Landmaschinen Geis",
+      "url": "http://krpan-forsttechnik.de/index.html",
+      "snippet": "Neu im Sortiment haben wir die Produkte des größten Seilwindenherstellers der Welt, KRPAN, aufgenommen. Damit erweitern wir …"
+    },
+    {
+      "title": "Vitli Krpan",
+      "url": "https://www.vitli-krpan.com/de/uber-uns",
+      "snippet": "Das Unternehmen PIŠEK-Vitli KRPAN wurde 1977 gegründet und ist heute eines der weltweit anerkanntesten Unternehmen in der …"
+    },
+    {
+      "title": "Krpan Forsttechnik gebraucht & neu kaufen - technikboerse.com",
+      "url": "https://www.technikboerse.com/gebraucht/forsttechnik-23/krpan-666",
+      "snippet": "Krpan Forsttechnik gebraucht oder neu gesucht? Kaufen oder verkaufen Sie Krpan Forsttechnik bei technikboerse.com, dem …"
+    },
+    {
+      "title": "Reith | KRPAN Forsttechnik – Reith Landtechnik Wolnzach",
+      "url": "https://www.reith-landtechnik.de/de/landtechnik/krpan",
+      "snippet": "Als KRPAN Vertriebspartner sind wir Ihr kompetenter Ansprechpartner für die Maschinen und Geräte des slowenischen …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "imtiendat0311/coral-dinov3-vit-convnext",
+  "slug": "imtiendat0311-coral-dinov3-vit-convnext",
+  "author": "imtiendat0311",
+  "url": "https://huggingface.co/imtiendat0311/coral-dinov3-vit-convnext",
+  "created_at": "2026-09-22T02:38:02.000Z",
+  "updated_at": "2026-09-22T04:09:20.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "convnext_vit_coral",
+    "coral",
+    "marine-biology",
+    "underwater-vision",
+    "dinov3",
+    "convnext",
+    "pytorch",
+    "image-classification",
+    "dataset:gv3-coral",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 6915853819,
+  "parameters_human": "6.92B",
+  "storage_bytes": 27663518060,
+  "storage_human": "27.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "首頁 - Mobile01",
+      "url": "https://www.mobile01.com/",
+      "snippet": "Mobile01是台灣最大生活網站與論壇，報導範疇從汽車到手機，從機車到居家裝潢，還有相機、運動、時尚、房地產、投資、影音、電 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "Marvelous sky：16、17年开始知乎让你转码； 18、19让你赶紧从土木跑路； 20、21知乎让你别买房； 24年知乎让你买小米股票； 现 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "le Forum OM - Le Phoceen",
+      "url": "https://forum.lephoceen.fr/",
+      "snippet": "Forum sur l'Olympique de Marseille - OM -, le football, le mercato"
+    },
+    {
+      "title": "[Mercato estival 2026/2027] Objectif Nul | Page 727 | le Forum OM - Le ...",
+      "url": "https://forum.lephoceen.fr/threads/mercato-estival-2026-2027-objectif-nul.79369/page-727",
+      "snippet": "Jul 19, 2026 · Et l’OM va également profiter de cette nouvelle vente. Le club phocéen avait conservé 10 % de la plus-value réalisée …"
+    }
+  ]
+}

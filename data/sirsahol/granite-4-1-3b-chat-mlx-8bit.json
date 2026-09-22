@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/granite-4.1-3b-chat-mlx-8bit",
+  "slug": "sirsahol-granite-4-1-3b-chat-mlx-8bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/granite-4.1-3b-chat-mlx-8bit",
+  "created_at": "2026-09-22T02:34:32.000Z",
+  "updated_at": "2026-09-22T05:44:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "apple-silicon",
+    "8-bit",
+    "conversational",
+    "transformers",
+    "language",
+    "granite-4.1",
+    "arxiv:0000.00000",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "deploy:azure",
+    "base_model:ibm-granite/granite-4.1-3b",
+    "base_model:quantized:ibm-granite/granite-4.1-3b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 3402836480,
+  "parameters_human": "3.40B",
+  "storage_bytes": 3615813097,
+  "storage_human": "3.6 GB",
+  "base_model": "ibm-granite/granite-4.1-3b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "„Na wszystkich frontach życia” – recenzja",
+      "url": "https://dlalejdis.pl/artykuly/na-wszystkich-frontach-zycia-recenzja",
+      "snippet": "Sep 8, 2026 · Gdy po raz pierwszy sięga się po tę książkę, łatwo wpaść w pułapkę oczekiwania kolejnej publicystycznej satyry na …"
+    },
+    {
+      "title": "Na wszystkich frontach życia | Krzysztof Kwaśnica",
+      "url": "https://lubimyczytac.pl/ksiazka/5250654/na-wszystkich-frontach-zycia",
+      "snippet": "Historie o panu Janie oraz bohaterach równie zagubionych w meandrach rzeczywistości tworzą mozaikę ludzkich słabości, dziwactw …"
+    },
+    {
+      "title": "Na wszystkich frontach życia - Krzysztof Kwaśnica - książka, recenzja ...",
+      "url": "https://www.granice.pl/ksiazka/na-wszystkich-frontach-zycia/6425857",
+      "snippet": "Aug 7, 2026 · Historie o panu Janie oraz bohaterach równie zagubionych w meandrach rzeczywistości tworzą mozaikę ludzkich …"
+    },
+    {
+      "title": "„Na wszystkich frontach życia” Krzysztof Kwaśnica",
+      "url": "https://nowa.dlalejdis.pl/artykuly/na-wszystkich-frontach-zycia-krzysztof-kwasnica",
+      "snippet": "Aug 10, 2026 · On siedzi na ławce, obserwuje rzeczywistość i pozwala, by ta rozbijała się o niego jak woda o falochron. W kraju, …"
+    },
+    {
+      "title": "Na wszystkich frontach życia - Kwaśnica Krzysztof | Książka w Empik",
+      "url": "https://www.empik.com/na-wszystkich-frontach-zycia-kwasnica-krzysztof,p1756805127,ksiazka-p?msockid=2245fc2d116d6ada3388ebf1109a6bc6",
+      "snippet": "On siedzi na ławce, obserwuje rzeczywistość i pozwala, by ta rozbijała się o niego jak woda o falochron. W kraju, gdzie telewizja …"
+    }
+  ]
+}

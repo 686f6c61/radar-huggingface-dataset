@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DSACZ12DSA/MyAwesomeModel-TestRepo",
+  "slug": "dsacz12dsa-myawesomemodel-testrepo",
+  "author": "DSACZ12DSA",
+  "url": "https://huggingface.co/DSACZ12DSA/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-22T03:04:21.000Z",
+  "updated_at": "2026-09-22T03:04:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 71,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contributi INPS agevolati startup innovative 2026",
+      "url": "https://www.iofacciosoldi.com/contributi-inps-startup-agevolati/",
+      "snippet": "Jul 1, 2026 · Lo status di startup innovativa porta con sé un alleggerimento del costo previdenziale per i soci che lavorano nella …"
+    },
+    {
+      "title": "Investimenti in startup innovative: nuovo limite del 25% per detrazioni ...",
+      "url": "https://www.lamiapartitaiva.it/investimenti-in-startup-innovative-nuovo-limite-del-25-per-detrazioni-su-soci-gia-partecipanti/",
+      "snippet": "Mar 15, 2026 · Il cuore della novità è proprio questo limite del 25%, che definisce la quota massima per considerare una …"
+    },
+    {
+      "title": "Forfettario al 5% da socio di una srls - Flextax.it",
+      "url": "https://flextax.it/commercialisti-online/posso-usufruire-della-tassazione-per-startup-al-5-se-sono-socio-di-una-srls-ma-non-partecipo-e-non-ricevo-compensi/",
+      "snippet": "Posso usufruire della tassazione per startup al 5%? In merito all’esclusione dalla possibilità di applicazione del Regime forfettario, …"
+    },
+    {
+      "title": "Incentivi fiscali «de minimis» per start-up e PMI innovative - Domande ...",
+      "url": "https://www.mimit.gov.it/it/assistenza/domande-frequenti/incentivi-fiscali-de-minimis-per-start-up-e-pmi-innovative-domande-frequenti-faq",
+      "snippet": "Si applicherà una ripartizione equa tra gli stessi o si potranno prevedere delle quote differenti? L’onere di tale ripartizione sarà in capo …"
+    },
+    {
+      "title": "Regime forfettario start up: guida per imprenditori digitali",
+      "url": "https://startax.it/legge-e-fisco/regime-forfettario-start-up/",
+      "snippet": "Feb 3, 2026 · Il regime forfettario è un ottimo trampolino di lancio, ma per chi punta a crescere diventa presto un limite. La ditta …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "toolathlonmsft2/MyAwesomeModel-TestRepo",
+  "slug": "toolathlonmsft2-myawesomemodel-testrepo",
+  "author": "toolathlonmsft2",
+  "url": "https://huggingface.co/toolathlonmsft2/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-22T02:07:40.000Z",
+  "updated_at": "2026-09-22T02:07:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 110,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "登录codex的时候弹出电话号码验证怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/2031458671385911868",
+      "snippet": "一直磨，直到能用短效手机号注册whatsapp，将信息修改一下只有你可以登录（绑定邮箱之类的）。 注册成功后，whatsapp那边得加 …"
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    },
+    {
+      "title": "输入数字或字母间隙变大怎么办 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/676629976f22a454d51b842f.html",
+      "snippet": "Mar 7, 2015 · 遇到这种情况，我们应该怎么办呢？你可以试一下，Shift+空格键，如果变回来了，问题就解决了。如果没变回来，就接 …"
+    },
+    {
+      "title": "苹果id 在Apple store 和iTunes中被禁用怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/475817506",
+      "snippet": "主要有如下原因： 1.之前是通过其它帐户下载的应用：如果之前是使用其它账户进行下载，那么在更新时，需要在 App Store 登录此账 …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_DoRA_llama-3.2",
+  "slug": "wijewardhanant-xnli_en_and_ur_5000_percentage_1_40_dora_llama-3-2",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_DoRA_llama-3.2",
+  "created_at": "2026-09-21T22:44:52.000Z",
+  "updated_at": "2026-09-21T22:45:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.2-3B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.2-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 408227547,
+  "storage_human": "408 MB",
+  "base_model": "meta-llama/Llama-3.2-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_DoRA · …",
+      "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_DoRA",
+      "snippet": "Instructions to use WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_DoRA with libraries, inference providers, notebooks, …"
+    },
+    {
+      "title": "xnli_en_and_ur_5000_percentage_1_40_AdaLoRA - Hugging Face",
+      "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_AdaLoRA",
+      "snippet": "Oct 21, 2019 · Use the code below to get started with the model. Carbon emissions can be estimated using the Machine Learning …"
+    },
+    {
+      "title": "xnli_en_and_ur_5000_percentage_1_40_DoRA_Similar_Param",
+      "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_DoRA_Similar_Param",
+      "snippet": "Oct 21, 2019 · Use the code below to get started with the model. Carbon emissions can be estimated using the Machine Learning …"
+    },
+    {
+      "title": "GitHub - facebookresearch/XNLI: Evaluating Cross-lingual Sentence ...",
+      "url": "https://github.com/facebookresearch/XNLI",
+      "snippet": "To evaluate such cross-lingual sentence understanding methods, we built XNLI, an extension of the SNLI / MultiNLI corpus in 15 …"
+    },
+    {
+      "title": "xnli_en_and_hi_5000_percentage_50_DoRA - nerq.ai",
+      "url": "https://nerq.ai/agent/e2533218-f3de-4684-b7b2-347448c93637",
+      "snippet": "Mar 17, 2026 · This table shows how xnli_en_and_hi_5000_percentage_50_DoRA is classified under each jurisdiction's specific rules …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "eandujar/nn_automl_notebook",
+  "slug": "eandujar-nn_automl_notebook",
+  "author": "eandujar",
+  "url": "https://huggingface.co/eandujar/nn_automl_notebook",
+  "created_at": "2026-09-22T01:18:14.000Z",
+  "updated_at": "2026-09-22T01:20:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "autogluon",
+  "languages": [],
+  "tags": [
+    "autogluon",
+    "tensorboard",
+    "tabular",
+    "multiclass",
+    "education",
+    "dataset:sunkaiwen/sketch2stl-sketches-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1083131976,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "المؤسسة العامة للتأمينات الاجتماعية",
+      "url": "https://www.gosi.gov.sa/ar",
+      "snippet": "تطبيق التأمينات الاجتماعية تطبيق التأمينات الاجتماعية، بين يديك! أصدر شهاداتك، تحقق سريع، اطّلع على عروض تقدير، قم بإدارة مساهماتك، والمزيد في تطبيق تأميناتي الجديد!"
+    },
+    {
+      "title": "تأكد من تسجيل الأجور الصحيحة",
+      "url": "https://www.gosi.gov.sa/GOSIOnline/correctwagesbo",
+      "snippet": "المـــادة ( 55 ) من اللائحة التنفيذية لنظام التأمينات الاجتماعية: في تطبيق أحكام المادة (62) من النظام، يراعى ما يأتي: 1- يتم إيقاع العقوبات المنصوص عليها بموجب المادة (62) من النظام على أي من …"
+    },
+    {
+      "title": "الهيكل التنظيمي",
+      "url": "https://cmsgosi.gosi.gov.sa/AboutGOSI/Pages/OrganizationalChart.aspx",
+      "snippet": "يبدو أن JavaScript غير مُمكن على المستعرض. الرجاء تشغيل JavaScript والمحاولة مرة أخرى."
+    },
+    {
+      "title": "كرتشملل ةيصخشلا تانايبلا كرتشملل لاصتلاا تانايب ليجستلا تانايب",
+      "url": "https://cmsgosi.gosi.gov.sa/SystemsAndRegulations/RequiredDocuments/Documents/form7.pdf",
+      "snippet": "التحاق / استبعاد يمكن أن يقدمه صاحب العمل حال تعذر عليه الإضافة أو الاستبعاد عبر التأمينات أون لاين بحد أقصى لا يتجاوز اليوم الأخير من شهر التحاقه بالعمل أو شهر تركه للعمل أو شهر الالتحاق …"
+    },
+    {
+      "title": "GOSI - المنصة التوعوية",
+      "url": "https://awareness.gosi.gov.sa/index.html",
+      "snippet": "الملتحقون الجدد بسوق العمل ممن ليس لديهم مدد اشتراك قبل تاريخ 3 يوليو 2024م (القطاع المدني العام والقطاع الخاص)"
+    }
+  ]
+}

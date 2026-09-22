@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nikitastheo/v5-mixed-15k-seed43-ell-ell-sequential_interleaved",
+  "slug": "nikitastheo-v5-mixed-15k-seed43-ell-ell-sequential_interleaved",
+  "author": "nikitastheo",
+  "url": "https://huggingface.co/nikitastheo/v5-mixed-15k-seed43-ell-ell-sequential_interleaved",
+  "created_at": "2026-09-21T21:37:10.000Z",
+  "updated_at": "2026-09-21T22:33:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 97049088,
+  "parameters_human": "97.0M",
+  "storage_bytes": 776422656,
+  "storage_human": "776 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "Find out what happened on any date or day in history with On This Day. Explore historical events, birthdays, deaths and famous …"
+    },
+    {
+      "title": "Today in History - On This Day",
+      "url": "https://www.onthisday.com/today/events.php",
+      "snippet": "Learn about important and interesting historical events that happened on today in history. Hundreds of events and facts from history, …"
+    },
+    {
+      "title": "Today in History Fun Facts - On This Day",
+      "url": "https://www.onthisday.com/today/fun-facts.php",
+      "snippet": "Fun facts from today in history. Funny, interesting and simply incredible events that happened on this day in history."
+    },
+    {
+      "title": "Celebrity Birthdays Today - On This Day",
+      "url": "https://www.onthisday.com/today/celebrity-birthdays.php",
+      "snippet": "Find out which celebrities are celebrating birthdays today and which celebs were born on this day in history including famous actors, …"
+    },
+    {
+      "title": "Who Died Today in History? - On This Day",
+      "url": "https://www.onthisday.com/today/deaths.php",
+      "snippet": "Important, famous and notable people from throughout history who died on this day. Search over 40,000 famous deaths in our today …"
+    }
+  ]
+}

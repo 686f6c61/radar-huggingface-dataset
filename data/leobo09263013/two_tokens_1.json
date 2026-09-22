@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "leobo09263013/two_tokens_1",
+  "slug": "leobo09263013-two_tokens_1",
+  "author": "leobo09263013",
+  "url": "https://huggingface.co/leobo09263013/two_tokens_1",
+  "created_at": "2026-09-22T02:28:11.000Z",
+  "updated_at": "2026-09-22T02:33:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839737539,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Geisha_kyd - Reddit",
+      "url": "https://www.reddit.com/r/Geisha_kyd/about/",
+      "snippet": "Skip to main content Open menuOpen navigationGo to Reddit Home r/Geisha_kyd A chipA close button Get appGet the Reddit …"
+    },
+    {
+      "title": "Geisha Kyd : r/uhdwallpaper - Reddit",
+      "url": "https://www.reddit.com/r/uhdwallpaper/comments/ro589j/geisha_kyd/",
+      "snippet": "Download High Resolution Wallpapers now MembersOnline [deleted] ADMIN MOD Geisha Kyd Girls Photography Share Add a …"
+    },
+    {
+      "title": "Geisha_kyd - Reddit",
+      "url": "https://www.reddit.com/r/Geisha_kyd/",
+      "snippet": "Sep 24, 2023 · r/Geisha_kyd Lounge A place for members of r/Geisha_kyd to chat with each other 1 0 Share"
+    },
+    {
+      "title": "Geisha_kyd - Reddit",
+      "url": "https://www.reddit.com/r/Geisha_kyd/hot/",
+      "snippet": "Sep 24, 2023 · • 1 yr. ago r/Geisha_kyd Lounge"
+    },
+    {
+      "title": "How to kite Geisha? : r/IdentityV - Reddit",
+      "url": "https://www.reddit.com/r/IdentityV/comments/16wv4se/how_to_kite_geisha/",
+      "snippet": "Oct 1, 2023 · After the new revamp geisha became super strong, but most of the leftover tips and videos are outdated, Im struggling …"
+    }
+  ]
+}

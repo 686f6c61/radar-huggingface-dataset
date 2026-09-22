@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ddalcu/MiMo-V2.6-Distill-Qwen-9B-MLX-Serve-8bit",
+  "slug": "ddalcu-mimo-v2-6-distill-qwen-9b-mlx-serve-8bit",
+  "author": "ddalcu",
+  "url": "https://huggingface.co/ddalcu/MiMo-V2.6-Distill-Qwen-9B-MLX-Serve-8bit",
+  "created_at": "2026-09-21T23:21:14.000Z",
+  "updated_at": "2026-09-21T23:21:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mlx-serve",
+    "agentic",
+    "tool-use",
+    "image-text-to-text",
+    "conversational",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 11400128155,
+  "storage_human": "11.4 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New Mexico - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/New_Mexico",
+      "snippet": "New Mexico[a] is a landlocked state in the Southwestern region of the United States. It is one of the Mountain States of the southern …"
+    },
+    {
+      "title": "Visit New Mexico | Attractions, Vacations & Things to Do",
+      "url": "https://www.newmexico.org/",
+      "snippet": "Discover New Mexico attractions, outdoor adventures, cultural experiences, scenic drives, dining, and unforgettable travel. Plan your …"
+    },
+    {
+      "title": "Home - Official State of New Mexico Website",
+      "url": "https://www.nm.gov/",
+      "snippet": "Discover New Mexico's state services, government branches, and more on the official homepage."
+    },
+    {
+      "title": "New Mexico | Geography, History, Flag, Facts, Maps, & Points of ...",
+      "url": "https://www.britannica.com/place/New-Mexico",
+      "snippet": "2 days ago · New Mexico, constituent state of the U.S., which became the 47th state of the union in 1912. It ranks fifth among the …"
+    },
+    {
+      "title": "Albuquerque, New Mexico - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Albuquerque,_New_Mexico",
+      "snippet": "Albuquerque is also known for its restaurant scene, which features both New Mexican and global cuisine, [15] and as a center of New …"
+    }
+  ]
+}

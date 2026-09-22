@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "inferenceprince/laya-onnx",
+  "slug": "inferenceprince-laya-onnx",
+  "author": "inferenceprince",
+  "url": "https://huggingface.co/inferenceprince/laya-onnx",
+  "created_at": "2026-09-21T21:42:57.000Z",
+  "updated_at": "2026-09-21T22:48:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "laya",
+    "onnxruntime",
+    "system-one",
+    "calibrated-decisions",
+    "text-classification",
+    "routing",
+    "en",
+    "base_model:convaiinnovations/laya",
+    "base_model:quantized:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 845923350,
+  "storage_human": "846 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MSN | Personalisierte Nachrichten, Schlagzeilen, Live-Updates und mehr",
+      "url": "https://www.msn.com/de-de?mkt=de-de",
+      "snippet": "Ihre personalisierte und zusammengestellte Sammlung vertrauenswürdiger Nachrichten-, Wetter- und Sport-, Geld-, Reise-, …"
+    },
+    {
+      "title": "MSN | Personalized News, Top Headlines, Live Updates and more",
+      "url": "https://www.msn.com/?locale=de-de",
+      "snippet": "Your personalized and curated collection of the best in trusted news, weather, sports, money, travel, entertainment, gaming, and …"
+    },
+    {
+      "title": "Lernen Sie MSN kennen | Microsoft MSN",
+      "url": "https://explore.microsoft.com/de-de/msn",
+      "snippet": "MSN ist Ihr personalisierter Hub für Nachrichten, Unterhaltung und Inspiration. Maßgeschneiderte Empfehlungen, die von KI …"
+    },
+    {
+      "title": "Willkommen auf der MSN-Startseite | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/msn/welcome-to-the-msn-home-page",
+      "snippet": "Die MSN-Website bietet Ihnen die besten Online-Informationen, speziell für Sie, für die verschiedenen Geräte, die Sie im Verlauf des …"
+    },
+    {
+      "title": "Microsoft account | Melden Sie sich noch heute an, oder erstellen Sie ...",
+      "url": "https://account.microsoft.com/account/Account?mkt=de-DE",
+      "snippet": "Melden Sie sich mit Ihrem Microsoft-Konto an. Ein Konto. Ein zentraler Ort, um alles zu verwalten. Willkommen bei Ihrer Dashboard."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mlnha/pose6daug-scripts",
+  "slug": "mlnha-pose6daug-scripts",
+  "author": "mlnha",
+  "url": "https://huggingface.co/mlnha/pose6daug-scripts",
+  "created_at": "2026-09-22T02:44:58.000Z",
+  "updated_at": "2026-09-22T02:44:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Noietch/Awesome-Learning-for-Manipulation",
+      "url": "https://github.com/Noietch/Awesome-Learning-for-Manipulation",
+      "snippet": "GitHub CopilotWrite better code with AI · GitHub Copilot appDirect agents from ... Embody4D: A Generalist 4D World Model for Embodied AI, —, 2026, Paper ..."
+    },
+    {
+      "title": "ASX",
+      "url": "https://hw.asx.care/",
+      "snippet": "Bitte melden Sie sich hier mit Ihrem ASX Konto an."
+    },
+    {
+      "title": "Research News — RoboticsIntl",
+      "url": "https://www.roboticsintl.com/category/research",
+      "snippet": "... AI model. When tested on 10 different tabletop tasks, it succeeded 85.6% of ... When AI agents work on complex tasks like writing code or designing ..."
+    },
+    {
+      "title": "ASXweb - ASX - DIE mobile Pflege Software für Österreich",
+      "url": "https://www.asx.care/asxweb/",
+      "snippet": "Vereinfacht gesagt ist ASXweb die Desktop-Version von ASX. Tatsächlich stellt ASXweb Ihre digitale Schaltzentrale für die mobile …"
+    },
+    {
+      "title": "ASX - mobile Pflege Software Komplettlösung für Österreich",
+      "url": "https://www.asx.care/",
+      "snippet": "Die mobile Pflegesoftware ASX zeichnet sich durch ein hohes Maß an Benutzerfreundlichkeit, Anpassungsfähigkeit und …"
+    }
+  ]
+}

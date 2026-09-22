@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "fasolack/Hermes-4-14B-W4A16",
+  "slug": "fasolack-hermes-4-14b-w4a16",
+  "author": "fasolack",
+  "url": "https://huggingface.co/fasolack/Hermes-4-14B-W4A16",
+  "created_at": "2026-09-21T22:12:52.000Z",
+  "updated_at": "2026-09-21T22:39:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "quantized",
+    "w4a16",
+    "int4",
+    "autoround",
+    "compressed-tensors",
+    "tool-calling",
+    "agent",
+    "reasoning",
+    "text-generation",
+    "conversational",
+    "base_model:NousResearch/Hermes-4-14B",
+    "base_model:quantized:NousResearch/Hermes-4-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3310976560,
+  "parameters_human": "3.31B",
+  "storage_bytes": 9936507301,
+  "storage_human": "9.9 GB",
+  "base_model": "NousResearch/Hermes-4-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "כניסה ל-moodle - היחידה להוראה מתוקשבת",
+      "url": "https://online.haifa.ac.il/?page_id=8125",
+      "snippet": "מערכת הלמידה Moodle היא מערכת לניהול ממוחשב של קורסים ומטלות אקדמיות. החל מסמסטר א' תשפ\"ה, כל אתרי הקורסים של סמסטרים א' ו-ב' …"
+    },
+    {
+      "title": "אתרי מודל של משרד החינוך | כלים ושירותים | מרחב פדגוגי | משרד החינוך",
+      "url": "https://pop.education.gov.il/tools-and-services/moodle-sites-ministry-of-education/",
+      "snippet": "אתרי מודל של משרד החינוך כניסה לאתרי Moodle של משרד החינוך למידה דיגיטלית בבתי הספר לסביבת הלמידה"
+    },
+    {
+      "title": "תאוריית U – אקו-ויקי",
+      "url": "https://ecowiki.org.il/wiki/%D7%AA%D7%90%D7%95%D7%A8%D7%99%D7%99%D7%AA_U",
+      "snippet": "מודל ה-U מתואר בדיאגרמה משמאל. נקודת המוצא היא בצד השמאלי העליון, בה אנו רואים את המציאות דרך הדפוסים הרגילים שלנו, ללא יכולת לשים לב …"
+    },
+    {
+      "title": "דף הבית | ulab-israel",
+      "url": "https://yuvalsherman.wixsite.com/ulab-israel",
+      "snippet": "המודל מבוסס על תיאורית U - גישה להובלת שינוי מעמיק שפותחה על ידי פרופסור אוטו שרמר, מרצה בכיר בבית הספר למנהל עסקים באוניברסיטת MIT . …"
+    },
+    {
+      "title": "אתרי מודל של משרד החינוך | כלים ושירותים | כלי עזר להוראה | מרחב …",
+      "url": "https://pop.education.gov.il/teaching-tools/tools-and-services/moodle-sites-ministry-of-education/",
+      "snippet": "פורטל זה נבנה עבור מורים ונועד לשימוש צרכי חינוך בלבד. העמוד מכיל קישורים לאתרים חיצוניים שאינם אתרי משרד החינוך. תוכן אתרים אלה וכל המוצג …"
+    }
+  ]
+}

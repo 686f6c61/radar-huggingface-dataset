@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bklassen3434/smolvla_pick_pen_v2_pi05",
+  "slug": "bklassen3434-smolvla_pick_pen_v2_pi05",
+  "author": "bklassen3434",
+  "url": "https://huggingface.co/bklassen3434/smolvla_pick_pen_v2_pi05",
+  "created_at": "2026-09-21T22:39:21.000Z",
+  "updated_at": "2026-09-21T22:40:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:bklassen3434/pick_pen_v2_20260920_124400",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354065832,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quote of the Day - BrainyQuote",
+      "url": "https://www.brainyquote.com/quote_of_the_day",
+      "snippet": "23 hours ago · Share five inspirational Quotes of the Day with friends on Facebook, Twitter, and blogs. Enjoy our Brainy, Funny, …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/copilotsearch?q=quotes+of+the+day",
+      "snippet": "由於此網站的設置，我們無法提供該頁面的具體描述。"
+    },
+    {
+      "title": "Quote of the Day — A Fresh Thought for Today",
+      "url": "https://bingquiz.com/quote-of-the-day/",
+      "snippet": "Aug 14, 2026 · Start today with a meaningful quote chosen to spark a positive thought, fresh perspective, or little moment of …"
+    },
+    {
+      "title": "www.bingquote.com",
+      "url": "https://www.bingquote.com/home",
+      "snippet": ""
+    },
+    {
+      "title": "Quote of the Day | 1 Daily Powerful Quote To Inspire",
+      "url": "https://quotesoftheday.org/",
+      "snippet": "23 hours ago · Quote of the Day, sometimes called a daily quote , is a short and memorable line that you read for motivation, …"
+    }
+  ]
+}

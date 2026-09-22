@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "satellitedown/Huihui-Qwen3.8-27B-abliterated-NVFP4-NInfer-v3",
+  "slug": "satellitedown-huihui-qwen3-8-27b-abliterated-nvfp4-ninfer-v3",
+  "author": "satellitedown",
+  "url": "https://huggingface.co/satellitedown/Huihui-Qwen3.8-27B-abliterated-NVFP4-NInfer-v3",
+  "created_at": "2026-09-22T02:37:58.000Z",
+  "updated_at": "2026-09-22T02:42:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "nvfp4",
+    "qwen3.8",
+    "abliterated",
+    "blackwell",
+    "rtx-5090",
+    "mtp",
+    "image-text-to-text",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21492938224,
+  "storage_human": "21.5 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedCafe.net | The Leading Manchester United Forum",
+      "url": "https://www.redcafe.net/",
+      "snippet": "2 days ago · The Leading Manchester United Forum. Join our thriving community and discuss all things United (and Football)."
+    },
+    {
+      "title": "Manchester United Forum - RedCafe.net",
+      "url": "https://www.redcafe.net/forums/manchester-united-forum.6/",
+      "snippet": "Feb 12, 2026 · Discuss the latest Manchester United issues In the latest edition of the United Hour Podcast, Nik (@Rood) and Imran …"
+    },
+    {
+      "title": "Football Forum | RedCafe.net",
+      "url": "https://www.redcafe.net/forums/football-forum.7/",
+      "snippet": "Aug 6, 2025 · Non United opponent discussion and banter."
+    },
+    {
+      "title": "World Cup Squads 2026 | Page 7 | RedCafe.net",
+      "url": "https://www.redcafe.net/threads/world-cup-squads-2026.492008/page-7",
+      "snippet": "May 13, 2026 · Midfielders: Hakan Çalhanoğlu (Internazionale), İsmail Yüksek (Fenerbahçe A.Ş.), Kaan Ayhan (Galatasaray A.Ş.), …"
+    },
+    {
+      "title": "Forum list | RedCafe.net",
+      "url": "https://www.redcafe.net/forums/",
+      "snippet": "Sep 7, 2021 · The Leading Manchester United Forum. Join our thriving community and discuss all things United (and Football)."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "eric-z2/WL-no-context-qwen-14b-fold_3",
+  "slug": "eric-z2-wl-no-context-qwen-14b-fold_3",
+  "author": "eric-z2",
+  "url": "https://huggingface.co/eric-z2/WL-no-context-qwen-14b-fold_3",
+  "created_at": "2026-09-21T20:33:28.000Z",
+  "updated_at": "2026-09-21T20:37:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84011288,
+  "storage_human": "84 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemini 3.8 Flash 发布，有什么值得关注的？",
+      "url": "https://www.zhihu.com/question/2078626349426683976",
+      "snippet": "Sep 2, 2026 · Gemini是谷歌推出的多模态AI基座模型，深度整合谷歌生态，具备领先的多模态处理能力，支持百万级token长文本 …"
+    },
+    {
+      "title": "国内大厂Trae、Qoder、CodeBuddy AI编辑器哪个好用？",
+      "url": "https://www.zhihu.com/question/1951273247036380422",
+      "snippet": "国内大厂Trae、Qoder、CodeBuddy AI编辑器哪个好用？ 抛开Cursor、Kiro、Claude Code等， 国内互联网大厂研发的 Trae（海外 …"
+    },
+    {
+      "title": "chatbox是否好用呢？求大神指点? - 知乎",
+      "url": "https://www.zhihu.com/question/12539849846",
+      "snippet": "功能： 支持多种AI大模型（如ChatGPT 3.5/4.0、Claude 2/3、Google Gemini Pro等）的接入，但用户需自行配置API密钥。 本地数据 …"
+    },
+    {
+      "title": "Gemini Advanced 和 aistudio有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/1903028279096632276",
+      "snippet": "Gemini 和 Google AI Studio 其实好区分，一个是面向普通用户的消费端应用，一个是面向开发者的平台，也就是所谓 ChatGPT 和 …"
+    },
+    {
+      "title": "Gemini在国内如何使用？ - 知乎",
+      "url": "https://www.zhihu.com/question/1995580558823162273",
+      "snippet": "Gemini 3.1 Pro 强化了类似人类“系统2”的深层思考机制。 面对极其复杂的跨学科问题或长链路逻辑谜题时，它不再急于生成直觉性答 …"
+    }
+  ]
+}

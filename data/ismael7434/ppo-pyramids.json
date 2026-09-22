@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Ismael7434/ppo-Pyramids",
+  "slug": "ismael7434-ppo-pyramids",
+  "author": "Ismael7434",
+  "url": "https://huggingface.co/Ismael7434/ppo-Pyramids",
+  "created_at": "2026-09-21T20:29:12.000Z",
+  "updated_at": "2026-09-21T20:29:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37769031,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GMX - kostenlose E-Mail, Cloud, Nachrichten & Freemail",
+      "url": "https://www.gmx.net/",
+      "snippet": "Kostenlose E-Mail-Adresse erstellen, Nachrichten lesen und Fotos & Dateien in der GMX Cloud sicher speichern. Jetzt registrieren!"
+    },
+    {
+      "title": "GMX",
+      "url": "https://login.gmx.net/login",
+      "snippet": "Non è possibile visualizzare una descrizione perché il sito non lo consente."
+    },
+    {
+      "title": "GMX Login – ganz einfach",
+      "url": "https://anmelden.gmx.net/",
+      "snippet": "Rufen Sie im Browser Ihres internetfähigen Mobilgerätes einfach www.gmx.net auf und tippen Sie das Briefsymbol in der Kopfleiste …"
+    },
+    {
+      "title": "Login",
+      "url": "https://dv.gmx.net/",
+      "snippet": "Mobiler GMX Login: Auf dieser Seite können Sie sich mit dem Smartphone oder Tablet einfach und sicher unterwegs in Ihr GMX …"
+    },
+    {
+      "title": "GMX E-Mail sichere & kostenlose E-Mail-Adresse",
+      "url": "https://www.gmx.net/mail/",
+      "snippet": "Jul 28, 2026 · Wie logge ich mich in mein GMX Postfach ein? Sie haben schon ein Postfach für Ihre Mails bei GMX? Hier geht’s zum …"
+    }
+  ]
+}

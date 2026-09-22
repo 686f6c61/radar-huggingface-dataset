@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ishaanamahajan/hw2-distilbert-perfume-occasion",
+  "slug": "ishaanamahajan-hw2-distilbert-perfume-occasion",
+  "author": "ishaanamahajan",
+  "url": "https://huggingface.co/ishaanamahajan/hw2-distilbert-perfume-occasion",
+  "created_at": "2026-09-21T23:16:47.000Z",
+  "updated_at": "2026-09-21T23:17:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "en",
+    "dataset:ypolatog/perfume-occasion-texts",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66956548,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267844625,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Patagonien Reiseprofis - Maßgeschneiderte Reisen nach Patagonien",
+      "url": "https://patagonienreiseprofis.de/",
+      "snippet": "Wir warten auf Sie bei Patagonien Reiseprofis, um Ihnen die beste Reise nach Patagonien zu garantieren. Maßgeschneiderte Reisen …"
+    },
+    {
+      "title": "Reisen nach Patagonien - Maßgeschneidert - Patagonien Reiseprofis",
+      "url": "https://patagonienreiseprofis.de/reisen-nach-patagonien-liste/",
+      "snippet": "Die Rundreise durch nördliche Patagonien in Chile und Argentinien ist für abenteuerlustige und Naturliebhaber besonders gut …"
+    },
+    {
+      "title": "BEWERTUNG - Patagonien Reiseprofis",
+      "url": "https://patagonienreiseprofis.de/bewertung/",
+      "snippet": "Wir warten auf Sie bei Patagonische Reise Spezialisten, um Ihnen die beste Reise nach Patagonien zu garantieren. Argentinien und …"
+    },
+    {
+      "title": "Patagonien in Argentinien und Chile - Patagonien Reiseprofis",
+      "url": "https://patagonienreiseprofis.de/tour-item/patagonien-in-argentinien-und-chile/",
+      "snippet": "Von den argentinischen Gletschern bis zu den chilenischen Granittürmen – auf dieser Reise durch Patagonien erleben Sie zwei …"
+    },
+    {
+      "title": "Patagonien Reiseprofis",
+      "url": "https://patagonienreiseprofis.de/en/",
+      "snippet": "Die Experten auf Reisen nach Patagonien. Wir sind die Patagonien Reiseprofis."
+    }
+  ]
+}

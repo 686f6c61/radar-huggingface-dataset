@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "DJLougen/MiMo-V2.6-Distill-Qwen-9B-MLX-mixed-3-5",
+  "slug": "djlougen-mimo-v2-6-distill-qwen-9b-mlx-mixed-3-5",
+  "author": "DJLougen",
+  "url": "https://huggingface.co/DJLougen/MiMo-V2.6-Distill-Qwen-9B-MLX-mixed-3-5",
+  "created_at": "2026-09-21T23:31:02.000Z",
+  "updated_at": "2026-09-21T23:45:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mimo_v2",
+    "image-text-to-text",
+    "conversational",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 5565196457,
+  "storage_human": "5.6 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "25 Probation Officer Jobs & Work in West Virginia | Indeed",
+      "url": "https://www.indeed.com/q-Probation-Officer-l-West-Virginia-jobs.html",
+      "snippet": "Browse 34 Probation Officer jobs in West Virginia. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+    },
+    {
+      "title": "6 west virginia southern probation and pretrial services Jobs in ...",
+      "url": "https://www.glassdoor.com/Job/charleston-west-virginia-southern-probation-and-pretrial-services-jobs-SRCH_IL.0,10_IC1143753_KO11,65.htm",
+      "snippet": "Search West virginia southern probation and pretrial services jobs in Charleston, WV with company ratings & salaries. 6 open jobs for …"
+    },
+    {
+      "title": "Probation officer jobs in Charleston, WV - Jooble",
+      "url": "https://jooble.org/jobs-probation-officer/Charleston%2C-WV",
+      "snippet": "LEGAL ASSISTANT: We are seeking a Legal Assistant - Floater to join the Litigation practice group in our Charleston, WV office. …"
+    },
+    {
+      "title": "Probationary Period Jobs, Employment | Indeed",
+      "url": "https://www.indeed.com/q-probationary-period-jobs.html",
+      "snippet": "Today's top Probationary Period jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+    },
+    {
+      "title": "Employment | West Virginia Judiciary",
+      "url": "https://www.courtswv.gov/employment",
+      "snippet": "It is the policy of the West Virginia judiciary to provide equal opportunity in employment for all persons, and to recruit, select, train, …"
+    }
+  ]
+}

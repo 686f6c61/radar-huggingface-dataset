@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "crojasc2/mtsk-classifier",
+  "slug": "crojasc2-mtsk-classifier",
+  "author": "crojasc2",
+  "url": "https://huggingface.co/crojasc2/mtsk-classifier",
+  "created_at": "2026-09-22T00:40:15.000Z",
+  "updated_at": "2026-09-22T00:41:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es",
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "mtsk",
+    "education",
+    "mathematics",
+    "bert",
+    "multilingual",
+    "es",
+    "pt",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559890432,
+  "parameters_human": "559.9M",
+  "storage_bytes": 2256712920,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": null,
+      "metric": null,
+      "value": 0.7776
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": null,
+      "value": 0.7966
+    }
+  ],
+  "sources": [
+    {
+      "title": "ARD Mediathek: Filme, Serien und Dokus online anschauen",
+      "url": "https://www.ardmediathek.de/",
+      "snippet": "Alle Inhalte der ARD Mediathek im Überblick: Livestreams, Nachrichten, Filme, Serien und spannende Dokus. Hier anschauen!"
+    },
+    {
+      "title": "Das Erste in der Mediathek – jetzt online anschauen",
+      "url": "https://www.ardmediathek.de/daserste",
+      "snippet": "Mehr Filme Sturm der Liebe & Rote Rosen Letzte Folge verpasst? Neue Episode vorab! Hier findest du jeden Tag Neues rund um …"
+    },
+    {
+      "title": "ARD.de – TV, Radio, Streams, News, Sport und alles zur ARD",
+      "url": "https://www.ard.de/",
+      "snippet": "Die ganze ARD: Fernsehen, Livestreams, Radio, Podcasts, Nachrichten, Sport und Kinderkanal. Zudem Infos über den …"
+    },
+    {
+      "title": "ARD Mediathek - Verpasste ARD Sendung von heute, gestern und …",
+      "url": "https://mediatheksuche.de/station/ARD",
+      "snippet": "Schneller Mediatheken wie die von ARD durchsuchen, verpasste ARD Sendungen von heute, gestern und mehr im Stream auf Abruf: …"
+    },
+    {
+      "title": "Alle Inhalte von der ARD - ZDFmediathek",
+      "url": "https://www.zdf.de/ard",
+      "snippet": "Entdecke die ARD – aktuelle News, große Shows und vieles mehr. Jetzt streamen und regional dabei sein!"
+    }
+  ]
+}

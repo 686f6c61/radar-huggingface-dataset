@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "rushilarun/Mochi-Llama-1B-Classifier",
+  "slug": "rushilarun-mochi-llama-1b-classifier",
+  "author": "rushilarun",
+  "url": "https://huggingface.co/rushilarun/Mochi-Llama-1B-Classifier",
+  "created_at": "2026-09-21T23:57:16.000Z",
+  "updated_at": "2026-09-21T23:57:52.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "prompt-injection",
+    "safety",
+    "dataset:SulKhu/Mochi",
+    "base_model:meta-llama/Llama-3.2-1B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.2-1B-Instruct",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107417168,
+  "storage_human": "107 MB",
+  "base_model": "meta-llama/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Youtube Music Users: How Do You Scrobble? : r/lastfm - Reddit",
+      "url": "https://www.reddit.com/r/lastfm/comments/11sgyu4/youtube_music_users_how_do_you_scrobble/",
+      "snippet": "Mar 16, 2023 · It's so frustrating how difficult it is to find a way to scrobble for Youtube Music. The app is huge and amazing, yet I've …"
+    },
+    {
+      "title": "Which is better Apple Music or YouTube music? : r/AppleMusic - Reddit",
+      "url": "https://www.reddit.com/r/AppleMusic/comments/18sklal/which_is_better_apple_music_or_youtube_music/",
+      "snippet": "Apple Music by a pretty huge margin. YT Music mostly feels like I’m watching a YouTube video without the video. Plus you get better …"
+    },
+    {
+      "title": "Your content & YouTube Music - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/6312991?hl=en",
+      "snippet": "Music is one of the most popular video categories on YouTube and—much like families and gamers use YouTube differently—so do …"
+    },
+    {
+      "title": "Przesyłanie muzyki do biblioteki YouTube Music",
+      "url": "https://support.google.com/youtubemusic/answer/9716522?hl=pl",
+      "snippet": "Pamiętaj: Nie możesz przesyłać muzyki za pomocą aplikacji mobilnej YouTube Music. Do biblioteki YouTube Music możesz przesłać …"
+    },
+    {
+      "title": "Turn off profanity filter? : r/YoutubeMusic - Reddit",
+      "url": "https://www.reddit.com/r/YoutubeMusic/comments/aadd0f/turn_off_profanity_filter/",
+      "snippet": "Hey all! So I just got YouTube Music, and noticed it censors some of the language in some songs. This is there for an obvious …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "shizukadara2/pm-copilot-sft-adapter",
+  "slug": "shizukadara2-pm-copilot-sft-adapter",
+  "author": "shizukadara2",
+  "url": "https://huggingface.co/shizukadara2/pm-copilot-sft-adapter",
+  "created_at": "2026-09-21T20:28:11.000Z",
+  "updated_at": "2026-09-21T20:28:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "国家励志奖学金证书怎么打印四川省 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1746614121160306827.html",
+      "snippet": "Dec 25, 2025 · 四川省国家励志奖学金数字证书需通过在线系统生成后打印，省学生资助管理中心不再发放纸质证书。 根据《关于推 …"
+    },
+    {
+      "title": "四川学生资助网登录入口：https://www.scxszz.cn/_百度知道",
+      "url": "https://zhidao.baidu.com/question/761210556934928404.html",
+      "snippet": "May 29, 2022 · 1、登录系统 打开“四川学生资助网”（网址： https://www.scxszz.cn），点击“四川省建档立卡资助在线申请”。 2、阅读 …"
+    },
+    {
+      "title": "国家励志奖学金证书怎么查到的_百度知道",
+      "url": "https://zhidao.baidu.com/question/510282885628053404.html",
+      "snippet": "Sep 18, 2025 · 国家励志奖学金证书可通过学信网、学校官网/教务系统、全国学生资助管理中心官网三种官方渠道查询电子版，具体操 …"
+    },
+    {
+      "title": "四川省学生资助管理系统在线申请显示该身份证号未登记是 ...",
+      "url": "https://zhidao.baidu.com/question/1712250644910560820.html",
+      "snippet": "Nov 11, 2022 · 四川省学生资助管理系统在线申请显示该身份证号未登记是什么意思就是老师还没有把你的名字登录上去，这个时候你 …"
+    },
+    {
+      "title": "四川资助系统申请表在哪儿打印 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/2083814116559905068.html",
+      "snippet": "Dec 9, 2022 · 四川资助系统申请表在哪儿打印要在四川省教育政务平台进行打印。证书下载路径是登录四川省教育政务平台，进入“四 …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_DoRA_llama-3.2",
+  "slug": "wijewardhanant-xnli_en_and_hi_5000_percentage_1_40_dora_llama-3-2",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_DoRA_llama-3.2",
+  "created_at": "2026-09-21T22:46:59.000Z",
+  "updated_at": "2026-09-21T22:47:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.2-3B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.2-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 408227547,
+  "storage_human": "408 MB",
+  "base_model": "meta-llama/Llama-3.2-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NBC News - Breaking Headlines and Video Reports on World, U.S. and ...",
+      "url": "https://www.nbcnews.com/",
+      "snippet": "Go to NBCNews.com for breaking news, videos, and the latest top stories in world news, business, politics, health and pop culture."
+    },
+    {
+      "title": "Fox News - Breaking News Updates | Latest News Headlines | Photos ...",
+      "url": "https://www.foxnews.com/?msockid=035d1a2f0f3761892ac90df40e626056",
+      "snippet": "Latest Current News: U.S., World, Entertainment, Health, Business, Technology, Politics, Sports."
+    },
+    {
+      "title": "Breaking News, Latest News and Videos | CNN",
+      "url": "https://www.cnn.com/",
+      "snippet": "View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN.com."
+    },
+    {
+      "title": "CBS News | Breaking news, top stories & today's latest headlines",
+      "url": "https://www.cbsnews.com/",
+      "snippet": "CBS News offers breaking news coverage of today's top headlines. Stay informed on the biggest new stories with our balanced, …"
+    },
+    {
+      "title": "Google News",
+      "url": "https://news.google.com/",
+      "snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+    }
+  ]
+}

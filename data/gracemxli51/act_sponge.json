@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gracemxli51/act_sponge",
+  "slug": "gracemxli51-act_sponge",
+  "author": "gracemxli51",
+  "url": "https://huggingface.co/gracemxli51/act_sponge",
+  "created_at": "2026-09-21T20:23:01.000Z",
+  "updated_at": "2026-09-21T21:50:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:gracemxli51/sponge_left_to_right",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 413412664,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Persol naocare - Rezultati pretrage - KupujemProdajem",
+      "url": "https://www.kupujemprodajem.com/pretraga?keywords=persol+naocare&so=1",
+      "snippet": "Prodajem original Persol naočare Steve Mcqueen limitid edisen 714 ... Originalne nove muške Persol naočare za sunce, nenošene. …"
+    },
+    {
+      "title": "PERSOL Sunčane naočare 0PO0714SM 204/S3 54 POLARIZOVANE",
+      "url": "https://sunshop.rs/proizvod/muske-naocare/persol-suncane-naocare-0po0714sm-204-s3-54-polarizovane/",
+      "snippet": "Besplatna isporuka na adresu u roku od 2–4 radna dana. Tu smo za sva pitanja radnim danima od 09 do 16 časova."
+    },
+    {
+      "title": "Persol - KupujemProdajem",
+      "url": "https://www.kupujemprodajem.com/pretraga?action=list&keywords=persol&groupId=555",
+      "snippet": "Originalne nove muške Persol naočare za sunce, nenošene. Model ... Orginalne muske persol naocare Persol 2997-s 95 31 Broj …"
+    },
+    {
+      "title": "Persol Sunčane naočare 0PO0714SM, polarizovane, Šarene",
+      "url": "https://ananas.rs/proizvod/persol-suncane-naocare-0po0714sm-polarizovane-sarene/2568085",
+      "snippet": "Kupi proizvod: Persol Sunčane naočare 0PO0714SM, polarizovane, Šarene online na Ananasu i uživaj u kupovini iz udobnosti tvog …"
+    },
+    {
+      "title": "Persol Sunčane naočare 0PO0714SM, Braon | Ananas",
+      "url": "https://ananas.rs/proizvod/persol-suncane-naocare-0po0714sm-braon/2460440",
+      "snippet": "Kupi proizvod: Persol Sunčane naočare 0PO0714SM, Braon online na Ananasu i uživaj u kupovini iz udobnosti tvog doma!"
+    }
+  ]
+}

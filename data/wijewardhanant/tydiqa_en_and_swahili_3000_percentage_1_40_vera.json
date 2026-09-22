@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_40_VeRA",
+  "slug": "wijewardhanant-tydiqa_en_and_swahili_3000_percentage_1_40_vera",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_40_VeRA",
+  "created_at": "2026-09-22T02:44:14.000Z",
+  "updated_at": "2026-09-22T02:44:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123920576,
+  "storage_human": "124 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lacné letenky",
+      "url": "https://www.pelikan.sk/",
+      "snippet": "Lacné letenky do celého sveta na jednom mieste. Rezervácia hotelov, áut, víz a cestovného poistenia. Najlacnejšie letenky od viac …"
+    },
+    {
+      "title": "Skyscanner | Nájdite rýchlo tie najlacnejšie lety: šetrite čas a peniaze!",
+      "url": "https://www.skyscanner.sk/",
+      "snippet": "Vyhľadávanie letov je s nami jednoduché – každý mesiac na naše stránky prichádza viac ako 100 miliónov skúsených cestujúcich, …"
+    },
+    {
+      "title": "Spoločnosť Wizz Air | Lacné lety | Nájdite najlepšie ponuky letov",
+      "url": "https://wizzair.com/sk-SK",
+      "snippet": "Nájdite a rezervujte si najlacnejšie lety s najrýchlejšie rastúcou ultranízkonákladovou leteckou spoločnosťou v Európe. Letenky, …"
+    },
+    {
+      "title": "Letenky z Bratislavy, Košíc aj Viedne",
+      "url": "https://www.letenky.sk/",
+      "snippet": "Lacné letenky do celého sveta na jednom mieste. Rezervácia hotelov, áut, víz a cestovného poistenia. Najlacnejšie letenky od viac …"
+    },
+    {
+      "title": "Official Ryanair website | Cheap flights | Exclusive deals",
+      "url": "https://www.ryanair.com/sk/en",
+      "snippet": "Book Cheap Flights to Europe at the Official Ryanair website. Allocated seating, Family Plus and Flexi Plus now available. Low Fares …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ankit-baner/generation70",
+  "slug": "ankit-baner-generation70",
+  "author": "Ankit-baner",
+  "url": "https://huggingface.co/Ankit-baner/generation70",
+  "created_at": "2026-09-21T23:30:49.000Z",
+  "updated_at": "2026-09-21T23:30:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "مساعدة مركز دفعات Google",
+      "url": "https://support.google.com/paymentscenter/?hl=ar",
+      "snippet": "مركز مساعدة مركز دفعات Google الرسمي حيث يمكنك العثور على نصائح وبرامج تعليمية حول استخدام المنتج وأجوبة أخرى للأسئلة الشائعة."
+    },
+    {
+      "title": "تسجيل الدخول باستخدام متصفّح متوافق",
+      "url": "https://support.google.com/accounts/answer/7675428?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "تسجيل الدخول باستخدام متصفّح متوافق للمساعدة في حماية حسابك، لا تسمح لك Google بتسجيل الدخول من بعض المتصفّحات. وقد توقف Google عمليات تسجيل الدخول من المتصفحّات التي ينطبق …"
+    },
+    {
+      "title": "إدارة عنوان مؤسستك - مساعدة الملف التجاري على Google",
+      "url": "https://support.google.com/business/answer/2853879?hl=ar",
+      "snippet": "لمساعدة العملاء في العثور على مؤسستك على \"خرائط Google\" و\"بحث Google\"، أضِف عنوان مؤسستك في ملفك التجاري. يمكنك أيضًا استخدام الدبوس لتحديد الموقع الجغرافي لمؤسستك على …"
+    },
+    {
+      "title": "إدارة حساب علامتك التجارية - جهاز الكمبيوتر - مساعدة حساب Google",
+      "url": "https://support.google.com/accounts/answer/7001996?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "يمكن ربط حساب العلامة التجارية بقناة على YouTube ولكن لا يمكن ربطه بخدمات Google الأخرى. يمكنك التعاون مع مستخدمين آخرين في إدارة حساب علامة تجارية واحد من خلال حساباتكم …"
+    },
+    {
+      "title": "تسجيل اجتماع فيديو - جهاز الكمبيوتر - مساعدة Google Meet",
+      "url": "https://support.google.com/meet/answer/9308681?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "عند تسجيل اجتماع، حدّد تسجيل الترجمة والشرح لدمجها مباشرةً في المقطع. إذا شغّلت التسجيل في Google Drive عبر مشغّل YouTube، يمكنك النقر على زر \"الترجمة والشرح\" لتشغيلها مع …"
+    }
+  ]
+}

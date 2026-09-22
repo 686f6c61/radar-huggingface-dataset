@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "eric-z2/WL-no-context-distilroberta-fold_4",
+  "slug": "eric-z2-wl-no-context-distilroberta-fold_4",
+  "author": "eric-z2",
+  "url": "https://huggingface.co/eric-z2/WL-no-context-distilroberta-fold_4",
+  "created_at": "2026-09-21T20:41:37.000Z",
+  "updated_at": "2026-09-21T20:41:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81533960,
+  "parameters_human": "81.5M",
+  "storage_bytes": 326148152,
+  "storage_human": "326 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tokyo Mew Mew (Full Series) English Subbed - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLGr0mt7h7g6tH6RySTMkbtn0pXppGaD0F",
+      "snippet": "Tokyo Mew Mew (Full Series) English Subbed by Sailor Kitten • Playlist • 52 videos • 737,470 views"
+    },
+    {
+      "title": "Tokyo Mew Mew Episode 1 (English Sub) - YouTube",
+      "url": "https://www.youtube.com/watch?v=pBbm8R5JnR4",
+      "snippet": "Feb 20, 2019 · Please subscribe and like if you liked it. Comment down below any suggestions you have for me or just any video …"
+    },
+    {
+      "title": "Prime Video: TOKYO MEW MEW NEW - Season 1",
+      "url": "https://www.primevideo.com/detail/0OKPEBQS0RK0YJ7Y4MG1JQZ9JQ/",
+      "snippet": "The scientists of the μ (Mew) Project use DNA of endangered species to create a team of heroines imbued with amazing abilities. …"
+    },
+    {
+      "title": "Tokyo Mew Mew : Free Download, Borrow, and Streaming : Internet Archive",
+      "url": "https://archive.org/details/fansub_Tokyo_Mew_Mew",
+      "snippet": "Sep 20, 2017 · 1 Tokyo Mew Mew - 20 [h-b] 24:20 2 Tokyo Mew Mew - 21 [h-b] 24:20 3 Tokyo Mew Mew - 22 [h-b] 24:20"
+    },
+    {
+      "title": "Tokyo Mew Mew New 1. rész - indavideo.hu",
+      "url": "https://indavideo.hu/video/Tokyo_Mew_Mew_New_1_resz",
+      "snippet": "2022. júl. 8. Cimkék: slice of life, Tokyo Mew Mew, mahou shoujo, anime, remake, Mahou Fansub, Tokyo Mew Mew New"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3-32b-control-A-sdf",
+  "slug": "joshycodes-qwen3-32b-control-a-sdf",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3-32b-control-A-sdf",
+  "created_at": "2026-09-22T02:46:29.000Z",
+  "updated_at": "2026-09-22T02:50:53.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "synthetic-document-finetuning",
+    "self-authored-character",
+    "model-welfare",
+    "research",
+    "not-for-deployment",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:finetune:Qwen/Qwen3-32B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65535752034,
+  "storage_human": "65.5 GB",
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF24 Hilfezentrum",
+      "url": "https://help.pdf24.org/de/",
+      "snippet": "Jan 2, 2025 · Mit PDF24 können Sie kostenfrei elektronische Rechnungen erstellen. Dies kann online oder offline geschehen. Mit …"
+    },
+    {
+      "title": "Edit a PDF | PDF24 Help Center",
+      "url": "https://help.pdf24.org/en/forums/topic/edit-a-pdf/",
+      "snippet": "Dec 6, 2012 · The PDF24 Creator can edit PDF files page based. You can't edit the content of a PDF page. The PDF files format …"
+    },
+    {
+      "title": "How to Convert PDF to Fillable PDFs | PDF24 Help Center",
+      "url": "https://help.pdf24.org/en/questions/question/how-to-convert-pdf-to-fillable-pdfs/",
+      "snippet": "Jan 28, 2026 · This is now possible. PDF24 has a special tool that, a PDF form editor, that enables users to edit PDF forms, add and …"
+    },
+    {
+      "title": "Forums | PDF24 Help Center",
+      "url": "https://help.pdf24.org/en/forums/",
+      "snippet": "PDF24 Creator Topics about the PDF24 Creator General (590, 998) Installation (93, 219) Customization (51, 90) Translators (15, 22) …"
+    },
+    {
+      "title": "PDF24 Help",
+      "url": "https://help.pdf24.org/",
+      "snippet": "Welcome to the PDF24 Help and Support Center Please choose a localized version of the help center: » PDF24 Hilfezentrum - …"
+    }
+  ]
+}

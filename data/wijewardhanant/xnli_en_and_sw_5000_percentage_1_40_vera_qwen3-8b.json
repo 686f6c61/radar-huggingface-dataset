@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_VeRA_Qwen3-8b",
+  "slug": "wijewardhanant-xnli_en_and_sw_5000_percentage_1_40_vera_qwen3-8b",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_VeRA_Qwen3-8b",
+  "created_at": "2026-09-21T23:44:50.000Z",
+  "updated_at": "2026-09-21T23:45:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-8B-Base",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 242146867,
+  "storage_human": "242 MB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay : high-tech, maison, jardin, auto-moto et bien plus",
+      "url": "https://www.ebay.fr/",
+      "snippet": "Nouveau : créez vos annonces avec l'IA Dans l'app, prenez quelques photos et l'annonce se crée automatiquement. En savoir plus …"
+    },
+    {
+      "title": "eBay",
+      "url": "https://www.ebay.fr/b/eBay/bn_7064633302",
+      "snippet": "eBay - Achetez une variété de produits à prix abordables sur eBay. Economisez avec notre option de livraison gratuite. Achetez en …"
+    },
+    {
+      "title": "Votre compte eBay",
+      "url": "https://www.ebay.fr/help/account/default/ebay-account?id=4188",
+      "snippet": "La création d'un compte eBay ne prend que quelques minutes. Une fois que vous avez créé votre compte, vous pouvez acheter et …"
+    },
+    {
+      "title": "Shop by Category | eBay",
+      "url": "https://www.ebay.fr/n/all-categories",
+      "snippet": "Shop by department, purchase cars, fashion apparel, collectibles, sporting goods, cameras, baby items, and everything else on eBay, …"
+    },
+    {
+      "title": "La sélection - eBay.fr",
+      "url": "https://pages.ebay.fr/selection_ebay/",
+      "snippet": "# art et antiquités Carambolage de couleurs : Osez la déco colorblock ! Oser en s’amusant c’est l’idée audacieuse du style coloblock. …"
+    }
+  ]
+}

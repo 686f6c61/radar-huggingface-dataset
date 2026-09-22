@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "hashtagg1/Meridian-4T",
+  "slug": "hashtagg1-meridian-4t",
+  "author": "hashtagg1",
+  "url": "https://huggingface.co/hashtagg1/Meridian-4T",
+  "created_at": "2026-09-22T00:24:31.000Z",
+  "updated_at": "2026-09-22T02:21:48.000Z",
+  "license": "closed-agi-restricted-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "moe",
+    "long-context",
+    "multimodal",
+    "agentic",
+    "withheld",
+    "safety-research",
+    "any-to-any",
+    "multilingual",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "GPQA Diamond",
+      "metric": null,
+      "value": 94.4
+    },
+    {
+      "task": null,
+      "dataset": "Terminal-Bench 2.1",
+      "metric": null,
+      "value": 89.6
+    },
+    {
+      "task": null,
+      "dataset": "SWE-Marathon",
+      "metric": null,
+      "value": 51
+    },
+    {
+      "task": null,
+      "dataset": "BrowseComp",
+      "metric": null,
+      "value": 92.7
+    },
+    {
+      "task": null,
+      "dataset": "AA-LCR",
+      "metric": null,
+      "value": 81.4
+    }
+  ],
+  "sources": [
+    {
+      "title": "LED Leuchten - Juwel Helialux spectrum - lohnt sich die Anschaffung?",
+      "url": "https://www.aquariumforum.de/t/juwel-helialux-spectrum-lohnt-sich-die-anschaffung.1500586/",
+      "snippet": "Oct 14, 2018 · Hallo, ich spiele mit dem Gedanken, den T5-Balken auf meinem Rio 240 durch die neue Juwel Helialux spectrum-LED …"
+    },
+    {
+      "title": "Juwel Rio 240L - Gesellschaftsbecken - Erfahrungsbericht 12 Monate",
+      "url": "https://www.aquariumforum.de/t/juwel-rio-240l-gesellschaftsbecken-erfahrungsbericht-12-monate.1542239/",
+      "snippet": "Oct 18, 2020 · Diskutiere Juwel Rio 240L - Gesellschaftsbecken - Erfahrungsbericht 12 Monate im \"bis 400 Liter\" - User Aquarien …"
+    },
+    {
+      "title": "juwel rio 240 zu meerwasser umrüsten - Aquariumforum.de",
+      "url": "https://www.aquariumforum.de/t/juwel-rio-240-zu-meerwasser-umruesten.357949/",
+      "snippet": "May 11, 2014 · juwel rio 240 zu meerwasser umrüsten Hallo ich werde im August mein 240 Liter Juwel Rio 240 zu Meerwasser …"
+    },
+    {
+      "title": "Lampe für Juwel 240 Rio - Aquariumforum.de",
+      "url": "https://www.aquariumforum.de/t/lampe-fuer-juwel-240-rio.1598279/",
+      "snippet": "Nov 13, 2025 · Diskutiere Lampe für Juwel 240 Rio im Süßwasser Pflanzen, Algen & Düngung Forum im Bereich Süßwasser …"
+    },
+    {
+      "title": "Erfahrungen mit chihiros universal WRGB Beleuchtung",
+      "url": "https://www.aquariumforum.de/t/erfahrungen-mit-chihiros-universal-wrgb-beleuchtung.1599197/",
+      "snippet": "Feb 6, 2026 · Hallo zusammen, ich überlege mir für mein Rio 240 Aquarium die Chihiros WRGB-Beleuchtung anzuschaffen. Jetzt …"
+    }
+  ]
+}

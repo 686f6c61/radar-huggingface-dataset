@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ankit-baner/quick-generation",
+  "slug": "ankit-baner-quick-generation",
+  "author": "Ankit-baner",
+  "url": "https://huggingface.co/Ankit-baner/quick-generation",
+  "created_at": "2026-09-21T23:31:09.000Z",
+  "updated_at": "2026-09-21T23:31:13.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Conad.it: il sito ufficiale dedicato ai nostri clienti",
+      "url": "https://www.conad.it/",
+      "snippet": "Nel sito ufficiale Conad.it trovi il punto vendita più vicino a te, i prodotti e i servizi pensati appositamente per i nostri clienti: inizia …"
+    },
+    {
+      "title": "Supermercati e Volantini Conad: le nostre offerte e promozioni | Conad",
+      "url": "https://www.conad.it/ricerca-negozi",
+      "snippet": "Cerca il tuo negozio su Conad.it e sfoglia i volantini online: scopri i prodotti in offerta, le promozioni e i servizi nei supermercati più …"
+    },
+    {
+      "title": "Conad - Effettua l'accesso",
+      "url": "https://my.conad.it/",
+      "snippet": "Copyright © 2021- Via Michelino, 59 | 40127 BOLOGNA Codice Fiscale e Registro Imprese di Bologna 00865960157 PARTITA IVA …"
+    },
+    {
+      "title": "Spesa Online a Domicilio o Ritiro in Negozio | Conad",
+      "url": "https://spesaonline.conad.it/",
+      "snippet": "Prova subito il servizio di Spesa Online di Conad: acquista tantissimi prodotti con un click. Puoi riceverli direttamente a casa tua o …"
+    },
+    {
+      "title": "Conad - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/Conad",
+      "snippet": "Nel 2008 viene creato Conad Servizi Assicurativi attraverso cui Conad offre servizi di assicurazione per veicoli, abitazioni, viaggi, …"
+    }
+  ]
+}

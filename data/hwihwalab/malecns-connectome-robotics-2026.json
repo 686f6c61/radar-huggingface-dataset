@@ -55,8 +55,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": false,
-  "removed_at": null,
+  "removed": true,
+  "removed_at": "2026-09-22T03:16:24.218Z",
   "benchmarks": [
     {
       "task": "Physical AI Multi-Body Locomotion & Chemotaxis",

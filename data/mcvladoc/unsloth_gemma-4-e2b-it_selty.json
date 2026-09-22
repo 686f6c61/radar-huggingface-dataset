@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mcvladoc/unsloth_gemma-4-E2B-it_selty",
+  "slug": "mcvladoc-unsloth_gemma-4-e2b-it_selty",
+  "author": "mcvladoc",
+  "url": "https://huggingface.co/mcvladoc/unsloth_gemma-4-E2B-it_selty",
+  "created_at": "2026-09-21T22:39:16.000Z",
+  "updated_at": "2026-09-21T22:39:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "base_model:adapter:unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12668928,
+  "parameters_human": "12.7M",
+  "storage_bytes": 126346874,
+  "storage_human": "126 MB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تمّ إيقاف ميزة تحقيق الربح في قناتي",
+      "url": "https://support.google.com/youtube/answer/1727191?hl=ar",
+      "snippet": "قد يتمّ إيقاف ميزة تحقيق الربح في قناتك على YouTube لأسباب متعدّدة. وقد يؤدي أي من الإجراءات التالية إلى تعليق الدفعات: محاولة تحقيق الربح من فيديوهات لا تملكها: إذا لم تكن متأكدًا من أنّك تملك ال"
+    },
+    {
+      "title": "إنشاء حساب على YouTube - جهاز الكمبيوتر - مساعدة YouTube",
+      "url": "https://support.google.com/youtube/answer/161805?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "انتقِل إلى YouTube. انقر على تسجيل الدخول في أعلى يسار الشاشة. انقر على إنشاء حساب. اختَر لاستخدامي الشخصي أو لطفلي أو للعمل أو لنشاطي التجاري."
+    },
+    {
+      "title": "تروجيمنج - أخبار و مراجعات ألعاب الفيديو | Sonic Mania - مراجعة",
+      "url": "https://www.true-gaming.net/home/347585/sonic-mania/",
+      "snippet": "Aug 16, 2017 · سنوات و سنوات قد انقضت و قنفذ سونيك الأزرق يتخبط في عالم الألعاب، كل لعبة رائعة تحصل عليها السلسلة يقابلها ألعاب سيئة وجميع هذه الألعاب حتى الجيد منها لم ينجح أبداً في …"
+    },
+    {
+      "title": "تروجيمنج - أخبار و مراجعات ألعاب الفيديو | Knack II - مراجعة",
+      "url": "https://www.true-gaming.net/home/349313/knack-ii/",
+      "snippet": "Sep 6, 2017 · Knack بطل سوني الجديد و الذي حصل على الاسم “شاطر” في الدبلجة العربية يعود من جديد بقدراته العجائبية على تغيير حجمه و قدراته القتالية العديدة مثل المحاربين من كوكب …"
+    },
+    {
+      "title": "تسجيل الدخول من خلال اسم مستخدم على YouTube",
+      "url": "https://support.google.com/youtube/answer/165556?hl=ar-iq",
+      "snippet": "إذا لم تتمكّن من تسجيل الدخول من خلال اسم المستخدم الخاص بك على YouTube، حاوِل تسجيل الدخول إلى YouTube باستخدام حساب Google. بعد ذلك، أدخِل كلمة المرور نفسها التي تستخدمها …"
+    }
+  ]
+}

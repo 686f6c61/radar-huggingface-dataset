@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/Qwen3-1.7B-Base-chat-mlx-4bit",
+  "slug": "sirsahol-qwen3-1-7b-base-chat-mlx-4bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/Qwen3-1.7B-Base-chat-mlx-4bit",
+  "created_at": "2026-09-22T02:27:22.000Z",
+  "updated_at": "2026-09-22T05:43:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "apple-silicon",
+    "4-bit",
+    "conversational",
+    "qwen",
+    "transformers",
+    "arxiv:2505.09388",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:quantized:Qwen/Qwen3-1.7B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 979502860,
+  "storage_human": "980 MB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Udemy API Documentation Home | Udemy",
+      "url": "https://www.udemy.com/developers/",
+      "snippet": "Welcome to the home for the Udemy's API documentation! For further details, please see the Affiliate API, which is open to all, and …"
+    },
+    {
+      "title": "Summary of Available APIs - Udemy",
+      "url": "https://partnersupport.udemy.com/hc/en-us/articles/17361835464087-Summary-of-Available-APIs",
+      "snippet": "Sep 27, 2023 · The Udemy Business APIs provide integration functionality in a variety of different methods to provide you with more …"
+    },
+    {
+      "title": "APIs & Integrations – Udemy",
+      "url": "https://partnersupport.udemy.com/hc/en-us/categories/13848646329495-APIs-Integrations",
+      "snippet": "Information for Developers."
+    },
+    {
+      "title": "Online Courses - Learn Anything, On Your Schedule | Udemy",
+      "url": "https://www.udemy.com/dev-portal/api-clients/",
+      "snippet": "Udemy is an online learning and teaching marketplace with over 204,000 courses and 54 million students. Learn programming, …"
+    },
+    {
+      "title": "Instructor API v1.0 Reference | Udemy",
+      "url": "https://www.udemy.com/developers/instructor/",
+      "snippet": "Udemy Instructor API is currently at version 1 and the root endpoint is https://www.udemy.com/instructor-api/v1/ for all resources. To …"
+    }
+  ]
+}

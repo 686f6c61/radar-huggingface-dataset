@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Ar4ikov/Qwen3.8-27B-AWQ-W4A16-ASYM-HyperQwen-fast",
+  "slug": "ar4ikov-qwen3-8-27b-awq-w4a16-asym-hyperqwen-fast",
+  "author": "Ar4ikov",
+  "url": "https://huggingface.co/Ar4ikov/Qwen3.8-27B-AWQ-W4A16-ASYM-HyperQwen-fast",
+  "created_at": "2026-09-22T02:30:34.000Z",
+  "updated_at": "2026-09-22T04:36:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "awq",
+    "w4a16",
+    "asymmetric",
+    "compressed-tensors",
+    "hyperqwen",
+    "speculative-decoding",
+    "vision",
+    "instruct",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Ar4ikov/Qwen3.8-27B-AWQ-W4A16-ASYM",
+    "base_model:quantized:Ar4ikov/Qwen3.8-27B-AWQ-W4A16-ASYM",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 16119521186,
+  "storage_human": "16.1 GB",
+  "base_model": "Ar4ikov/Qwen3.8-27B-AWQ-W4A16-ASYM",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "张惠妹的《人质》 歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/584722888.html",
+      "snippet": "张惠妹的《人质》 歌词《人质》演唱：张惠妹作曲 : 黄韵仁作词 : 冷玩妹 Coldplay Sister我和你啊存在一种危险关系彼此挟持这另一部 …"
+    },
+    {
+      "title": "有什么值得推荐的英文维基镜像网站? - 知乎",
+      "url": "https://www.zhihu.com/question/347202458/answers/updated",
+      "snippet": "这个不用多说吧， 程序员必备。 里面还有很多其他镜像，但是目前我使用最多的就是这些，其他的自行探索，那网站地址已经放到了 …"
+    },
+    {
+      "title": "法语的几个特殊的字母，列出来一下 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/94366850.html",
+      "snippet": "大写：À、Â、È、É、Ê、Ë、 Î 、Ï 、Ô 、Ö、 Ù、 Û 、Ç 、Œ 、Æ、 €。 小写：à、â、è、é、ê、 î 、ï、 ô、 ö、 ù、 û 、ü、 ç、 œ …"
+    },
+    {
+      "title": "为什么这么多人把「Wikipedia」称作「wiki」？ - 知乎",
+      "url": "https://www.zhihu.com/question/19581089",
+      "snippet": "Mar 25, 2011 · 为什么这么多人把「Wikipedia」称作「wiki」？ 我一直很难理解这个问题，为什么这么多人喜欢把专有名词和通用概念 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/question/54642000",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

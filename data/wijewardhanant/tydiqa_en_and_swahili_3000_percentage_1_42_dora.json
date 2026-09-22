@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_42_DoRA",
+  "slug": "wijewardhanant-tydiqa_en_and_swahili_3000_percentage_1_42_dora",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_42_DoRA",
+  "created_at": "2026-09-22T02:39:48.000Z",
+  "updated_at": "2026-09-22T02:39:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116456816,
+  "storage_human": "116 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "一个方框内有个勾（☑）怎么打出这符号_百度知道",
+      "url": "https://zhidao.baidu.com/question/136956635.html",
+      "snippet": "一个方框内有个勾（☑）怎么打出这符号在Word文档中，如何输入像这样可以打勾打叉的方框呢？有不止一种方法能够输入这样的方 …"
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "acrgis中合并dem栅格数据，但是合成后的高程出现了问题，怎么解决…",
+      "url": "https://zhihu.geoscene.cn/question/14688",
+      "snippet": "acrgis中合并dem栅格数据，但是合成后的高程出现了问题，怎么解决？求解 自栅格dem没有6000多的 2017-04-25 添加评论 分享 没 …"
+    },
+    {
+      "title": "为什么重分类--分类时，显示错误，然后无法完成分类（已解决） - GIS …",
+      "url": "https://zhihu.geoscene.cn/question/21010",
+      "snippet": "Aug 20, 2018 · 为什么重分类--分类时，显示错误，然后无法完成分类（已解决） - 使用重分类工具时，点击“分类...”，报错，显示“无 …"
+    },
+    {
+      "title": "《中华人民共和国国歌》歌词_百度知道",
+      "url": "https://zhidao.baidu.com/question/1702052666980628100.html",
+      "snippet": "评论 请选择分类 国歌-TFBOYS 作词：田汉作曲：聂耳 起来不愿做奴隶的人们 把我们的血肉筑成我们新的长城 中华民族到了最危险的 …"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/Llama-Guard-3-1B-chat-mlx-8bit",
+  "slug": "sirsahol-llama-guard-3-1b-chat-mlx-8bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/Llama-Guard-3-1B-chat-mlx-8bit",
+  "created_at": "2026-09-22T02:19:56.000Z",
+  "updated_at": "2026-09-22T05:42:48.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "apple-silicon",
+    "8-bit",
+    "conversational",
+    "transformers",
+    "facebook",
+    "meta",
+    "pytorch",
+    "llama-3",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "arxiv:2404.12241",
+    "arxiv:2312.06674",
+    "arxiv:2204.05862",
+    "arxiv:2308.01263",
+    "arxiv:2403.03853",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "base_model:meta-llama/Llama-Guard-3-1B",
+    "base_model:quantized:meta-llama/Llama-Guard-3-1B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 1498482688,
+  "parameters_human": "1.50B",
+  "storage_bytes": 1609453372,
+  "storage_human": "1.6 GB",
+  "base_model": "meta-llama/Llama-Guard-3-1B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crédit Cetelem : prêt perso, crédit renouvelable, rachat de crédits",
+      "url": "https://www.cetelem.fr/fr/accueil",
+      "snippet": "Un projet à financer ? Découvrez nos offres de crédit. En ce moment, profitez d'un prêt personnel à partir de 4,50 % ou encore d'un …"
+    },
+    {
+      "title": "Gérez vos opérations en ligne sur l'espace client Cetelem",
+      "url": "https://www.cetelem.fr/fr/guides/espace-personnel/gerer-operations-ligne",
+      "snippet": "Grâce à notre guide, vous saurez comment gérer vos opérations de crédit en ligne depuis votre espace client Cetelem."
+    },
+    {
+      "title": "Espace Contrat - Cetelem",
+      "url": "https://espace-contrats.cetelem.fr/login",
+      "snippet": "Espace contrats Votre email"
+    },
+    {
+      "title": "Espace Contrat",
+      "url": "https://espace-contrats.cetelem.fr/contracts",
+      "snippet": "Retourner à la page de connexion error"
+    },
+    {
+      "title": "Souscription Client",
+      "url": "https://souscription-client.dev.cetelem.fr/",
+      "snippet": "Désolé, une erreur s'est produite Nous rencontrons un problème qui empêche la finalisation de votre demande."
+    }
+  ]
+}

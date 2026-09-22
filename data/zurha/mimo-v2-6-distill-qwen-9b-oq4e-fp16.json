@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Zurha/MiMo-V2.6-Distill-Qwen-9B-oQ4e-fp16",
+  "slug": "zurha-mimo-v2-6-distill-qwen-9b-oq4e-fp16",
+  "author": "Zurha",
+  "url": "https://huggingface.co/Zurha/MiMo-V2.6-Distill-Qwen-9B-oQ4e-fp16",
+  "created_at": "2026-09-22T00:53:54.000Z",
+  "updated_at": "2026-09-22T01:08:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 6971668385,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Water Lily vs Lotus: Two Beauties With Notable Differences",
+      "url": "https://evergreenseeds.com/water-lily-vs-lotus/",
+      "snippet": "Jun 19, 2026 · What Is the Difference Between Lotus and Water Lily? The main difference between the water lily and lotus is that the …"
+    },
+    {
+      "title": "Water Lily vs Lotus: 5 Key Differences – World of Garden Plants",
+      "url": "https://worldofgardenplants.com/water-lily-vs-lotus/",
+      "snippet": "Jul 13, 2025 · Today, let's dive into comparing two beautiful and well-loved plants: the Water Lily and the Lotus. QUICK ANSWER: …"
+    },
+    {
+      "title": "Difference Between Water Lily and Lotus - Biology Reader",
+      "url": "https://biologyreader.com/difference-between-water-lily-and-lotus.html",
+      "snippet": "This post enlightens you with the key differences between the water lily and lotus with a comparison chart. You will learn the …"
+    },
+    {
+      "title": "What Is the Difference Between Water Lily and Lotus?",
+      "url": "https://biologyinsights.com/what-is-the-difference-between-water-lily-and-lotus/",
+      "snippet": "Aug 22, 2025 · Uncover the true distinctions between water lilies and lotuses. Learn how to tell these beautiful aquatic plants apart …"
+    },
+    {
+      "title": "Lotus Flower vs Water Lily: Key Differences and Facts",
+      "url": "https://plantgrowerworld.com/lotus-flower-vs-water-lily-key-differences-and-facts/",
+      "snippet": "Aug 4, 2025 · Learn about the unique characteristics, growth habits, and cultural significance of lotus flowers and water lilies in this …"
+    }
+  ]
+}

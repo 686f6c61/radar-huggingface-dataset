@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ang187/sienna_voss_ltx23",
+  "slug": "ang187-sienna_voss_ltx23",
+  "author": "ang187",
+  "url": "https://huggingface.co/ang187/sienna_voss_ltx23",
+  "created_at": "2026-09-21T23:33:30.000Z",
+  "updated_at": "2026-09-21T23:33:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2676648445,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compact Cameras - Sony UK",
+      "url": "https://www.sony.co.uk/compact-cameras/gallery",
+      "snippet": "The list of Compact Cameras. Find your best from all Compact Cameras products.Discover Sony's Cybershot compact camera with …"
+    },
+    {
+      "title": "Vlog camera ZV-1 | Compact Cameras | Sony United Kingdom",
+      "url": "https://www.sony.co.uk/electronics/cyber-shot-compact-cameras/zv-1a",
+      "snippet": "The ZV-1 is compatible with the Sony Bluetooth® wireless shooting grip GV-VPT2BT, which offers cable-free control of zoom, …"
+    },
+    {
+      "title": "Warranty Checker - Sony UK",
+      "url": "https://services.sony.co.uk/supportmvc/en/Repair/WarrantyChecker",
+      "snippet": "How it works: Our warranty checker only includes our consumer electronics products, such as our TVs, Audio & Video devices, Sony …"
+    },
+    {
+      "title": "ZV-1 Specifications | Sony UK",
+      "url": "https://www.sony.co.uk/electronics/support/compact-cameras-zv-series/zv-1/specifications",
+      "snippet": "Get the detailed list of (technical) specifications for the Sony ZV-1"
+    },
+    {
+      "title": "ZV-E10 | Interchangeable-lens vlog camera - Sony UK",
+      "url": "https://www.sony.co.uk/interchangeable-lens-cameras/products/zv-e10",
+      "snippet": "The ZV-E10 is an interchangeable-lens vlog camera designed for creative vloggers who aspire to an artistic look with ease. Explore …"
+    }
+  ]
+}

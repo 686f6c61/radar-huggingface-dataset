@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "microperceptron/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+  "slug": "microperceptron-nvidia-nemotron-3-5-lightning-30b-a3b-nvfp4",
+  "author": "microperceptron",
+  "url": "https://huggingface.co/microperceptron/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+  "created_at": "2026-09-21T20:02:36.000Z",
+  "updated_at": "2026-09-21T20:02:37.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "nvidia",
+    "pytorch",
+    "nemotron-3.5",
+    "conversational",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "license:other",
+    "eval-results",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17820210764,
+  "parameters_human": "17.82B",
+  "storage_bytes": 21579321274,
+  "storage_human": "21.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ABBYY FineReader – Phần Mềm Chuyển Đổi Tập Tin Tốt ...",
+      "url": "https://www.techrum.vn/threads/abbyy-finereader-%E2%80%93-ph%E1%BA%A7n-m%E1%BB%81m-chuy%E1%BB%83n-%C4%90%E1%BB%95i-t%E1%BA%ADp-tin-t%E1%BB%91t-nh%E1%BA%A5t-full.302185/",
+      "snippet": "Apr 26, 2020 · ABBYY FineReader là phần mềm chuyển đổi định dạng tập tin tốt nhất hiện nay, bạn có thể thoải mái chuyển đổi qua …"
+    },
+    {
+      "title": "Download ABBYY FineReader 14 Mới Nhất 2019 - Hướng Dẫn Cài ...",
+      "url": "https://www.techrum.vn/threads/download-abbyy-finereader-14-m%E1%BB%9Bi-nh%E1%BA%A5t-2019-h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-c%C3%A0i-%C4%90%E1%BA%B7t-chi-ti%E1%BA%BFt.210025/",
+      "snippet": "Apr 3, 2019 · Link Download ABBYY FineReader Mới Nhất 2019 Tại đây mình có 2 link download, các bạn có thể tải 1 trong 2 link …"
+    },
+    {
+      "title": "Loading...",
+      "url": "http://www.machbbs.com/user-login.htm",
+      "snippet": "Log in to 非常论坛 to access a diverse range of topics and content."
+    },
+    {
+      "title": "Loading...",
+      "url": "http://www.machbbs.com/",
+      "snippet": "Loading... ... Loading..."
+    },
+    {
+      "title": "ABBYY FineReader 14 Portable Full - Chuyển đổi ảnh scan sang ...",
+      "url": "https://www.techrum.vn/threads/abbyy-finereader-14-portable-full-chuy%E1%BB%83n-%C4%91%E1%BB%95i-%E1%BA%A3nh-scan-sang-word-pdf.202282/",
+      "snippet": "ABBYY FineReader 14 là phần mềm xử lý PDF và OCR tất cả trong một, đóng vai trò cải tiến hiệu suất công việc trong doanh nghiệp …"
+    }
+  ]
+}

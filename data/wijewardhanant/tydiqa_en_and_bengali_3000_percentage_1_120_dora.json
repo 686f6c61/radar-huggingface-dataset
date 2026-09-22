@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/tydiqa_en_and_bengali_3000_percentage_1_120_DoRA",
+  "slug": "wijewardhanant-tydiqa_en_and_bengali_3000_percentage_1_120_dora",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/tydiqa_en_and_bengali_3000_percentage_1_120_DoRA",
+  "created_at": "2026-09-22T02:42:01.000Z",
+  "updated_at": "2026-09-22T02:42:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116456816,
+  "storage_human": "116 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PC gratuiti dall’Agenzia delle Entrate…ma solo via PEC",
+      "url": "https://www.forumpa.it/pa-digitale/pc-gratuiti-dallagenzia-delle-entratema-solo-via-pec/",
+      "snippet": "Sep 15, 2009 · Con un bando pubblicato sul proprio sito internet, l’Agenzia delle entrate mette gratuitamente a disposizione 134 pc …"
+    },
+    {
+      "title": "Civis in tutta Italia: la consulenza delle Entrate ai professionisti ...",
+      "url": "https://www.forumpa.it/pa-digitale/civis-in-tutta-italia-la-consulenza-delle-entrate-ai-professionisti-via-web/",
+      "snippet": "Jan 15, 2010 · La piattaforma Civis dell’Agenzia delle Entrate, sviluppata per fornire via web risposte rapide ai professionisti in …"
+    },
+    {
+      "title": "Carmine Pugliese Archivi - FPA",
+      "url": "https://www.forumpa.it/relatori/carmine-pugliese/",
+      "snippet": "Jul 15, 2026 · Dal 2013 sono certificato TOGAF Enterprise Architecture per lo sviluppo e la realizzazione di progetti di …"
+    },
+    {
+      "title": "Agenzia Entrate e PA - FPA",
+      "url": "https://www.forumpa.it/tag/agenzia-entrate/",
+      "snippet": "Jun 30, 2022 · Leggi tutto riguardo a su FPA, il sito istituzionale con una finestra aperta verso la pubblica amministrazione."
+    },
+    {
+      "title": "Gabriella Alemanno Archivi - FPA",
+      "url": "https://www.forumpa.it/relatori/gabriella-alemanno/",
+      "snippet": "Jun 16, 2022 · È la Presidente del Comitato Unico di Garanzia dell’Agenzia delle Entrate dal 2019. Laureata in Giurisprudenza con …"
+    }
+  ]
+}

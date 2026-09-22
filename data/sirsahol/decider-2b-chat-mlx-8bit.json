@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/decider-2b-chat-mlx-8bit",
+  "slug": "sirsahol-decider-2b-chat-mlx-8bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/decider-2b-chat-mlx-8bit",
+  "created_at": "2026-09-22T02:29:42.000Z",
+  "updated_at": "2026-09-22T05:43:46.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_text",
+    "apple-silicon",
+    "8-bit",
+    "text-generation",
+    "conversational",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 2020032836,
+  "storage_human": "2.0 GB",
+  "base_model": "JackFram/decider-2b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MarMar Copenhagen | Official Webshop | Baby & Children's Clothing",
+      "url": "https://marmarcopenhagen.com/",
+      "snippet": "At MarMar Copenhagen, we celebrate craftsmanship and heritage. Our new hand-knitted mini collection is created in collaboration …"
+    },
+    {
+      "title": "Products – MarMar Copenhagen",
+      "url": "https://marmarcopenhagen.com/collections/all",
+      "snippet": "We create products for babies and kids. We offer free shipping to select countries on orders over a certain amount | 30-day full return …"
+    },
+    {
+      "title": "MarMar Copenhagen | Officiel webshop | Baby- & børnetøj",
+      "url": "https://www.marmarcopenhagen.dk/",
+      "snippet": "Hos MarMar Copenhagen skaber vi slidstærkt og tidløst børnetøj til børn fra nyfødte op til 12 år. Vores designs er skabt til at blive …"
+    },
+    {
+      "title": "Official Online Store | Clothing for Babies & Children | MarMar Copenhagen",
+      "url": "https://copenhagenmarmar.shop/",
+      "snippet": "We design products for kids and babies. Free shipping is available to specific countries on qualifying orders | A 30-day return policy …"
+    },
+    {
+      "title": "MarMar Udsalg | Baby & Børnetøj | Se her – MarMar Copenhagen",
+      "url": "https://www.marmarcopenhagen.dk/pages/sale",
+      "snippet": "Hos MarMar Copenhagen skaber vi slidstærkt og tidløst børnetøj til børn fra nyfødte op til 12 år. Vores designs er skabt til at blive …"
+    }
+  ]
+}

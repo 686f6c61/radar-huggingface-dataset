@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "EYEDOL/adtc-agri-sft-qwen3-0.6b-GGUF",
+  "slug": "eyedol-adtc-agri-sft-qwen3-0-6b-gguf",
+  "author": "EYEDOL",
+  "url": "https://huggingface.co/EYEDOL/adtc-agri-sft-qwen3-0.6b-GGUF",
+  "created_at": "2026-09-21T20:42:36.000Z",
+  "updated_at": "2026-09-21T20:47:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "agriculture",
+    "qwen3",
+    "text-generation",
+    "en",
+    "base_model:EYEDOL/adtc-agri-sft-qwen3-0.6b",
+    "base_model:quantized:EYEDOL/adtc-agri-sft-qwen3-0.6b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1336227296,
+  "storage_human": "1.3 GB",
+  "base_model": "EYEDOL/adtc-agri-sft-qwen3-0.6b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=0ce7e7675fa661ba191ff0bc5e24605e",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=0ce7e7675fa661ba191ff0bc5e24605e",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

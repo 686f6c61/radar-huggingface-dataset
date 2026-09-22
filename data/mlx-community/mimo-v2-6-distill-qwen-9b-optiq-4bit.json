@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mlx-community/MiMo-V2.6-Distill-Qwen-9B-OptiQ-4bit",
+  "slug": "mlx-community-mimo-v2-6-distill-qwen-9b-optiq-4bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/MiMo-V2.6-Distill-Qwen-9B-OptiQ-4bit",
+  "created_at": "2026-09-21T23:21:27.000Z",
+  "updated_at": "2026-09-21T23:22:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "quantized",
+    "mixed-precision",
+    "4bit",
+    "8bit",
+    "optiq",
+    "apple-silicon",
+    "text-generation",
+    "qwen3.5",
+    "mimo_v2",
+    "agentic",
+    "tool-use",
+    "conversational",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953801728,
+  "parameters_human": "8.95B",
+  "storage_bytes": 7120699451,
+  "storage_human": "7.1 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carnage Vs Venom: Disegni Da Colorare Fantastici | ESLE",
+      "url": "https://esle.io/it/coloring-page/vs-carnage-coloring-cool-venom-coloring-pages",
+      "snippet": "Pagina da colorare di Venom: Scatena la tua creatività con questa epica scena di combattimento Venom vs Carnage, un'immagine …"
+    },
+    {
+      "title": "Venom Contro Carnage: Disegni Da Colorare - ESLE",
+      "url": "https://esle.io/it/coloring-page/venom-vs-carnage-colouring-pages",
+      "snippet": "Disegni da colorare di Venom vs Carnage: immagini stampabili emozionanti di epici simbionti alieni che lottano sui tetti delle città."
+    },
+    {
+      "title": "Disegni di Carnage da Colorare - Raskrasil.com",
+      "url": "https://raskrasil.com/it/disegni-di-carnage-da-colorare/",
+      "snippet": "Sep 3, 2024 · Immagini da colorare del nemico più pericoloso di Venom. Stampa gratuitamente online."
+    },
+    {
+      "title": "Venom da colorare e stampare – Disegni gratis PDF - Coloriage.info",
+      "url": "https://coloriage.info/it/venom",
+      "snippet": "La nostra collezione propone Venom in molte versioni diverse: la creatura simbionte nella sua forma più imponente, le scene d'azione …"
+    },
+    {
+      "title": "Venom Vs Carnage Coloring Pages - Coloring Nation",
+      "url": "https://coloringnation.com/venom-vs-carnage-coloring-pages",
+      "snippet": "Download and print these Venom Vs Carnage coloring pages for free. Printable Venom Vs Carnage coloring pages are a fun way for …"
+    }
+  ]
+}

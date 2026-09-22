@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/qwen3-1.7b-searchqa-guided-opd-qwen3-32b-step200",
+  "slug": "seanwang0027-qwen3-1-7b-searchqa-guided-opd-qwen3-32b-step200",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-searchqa-guided-opd-qwen3-32b-step200",
+  "created_at": "2026-09-22T01:13:46.000Z",
+  "updated_at": "2026-09-22T01:16:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "searchqa",
+    "on-policy-distillation",
+    "tcod",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4075945331,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Company · JT CONSTRUCTION AND MAINTENANCE Ltd Swindon SN4 …",
+      "url": "https://www.secret-bases.co.uk/company/17462760",
+      "snippet": "Registered company 17462760 JT CONSTRUCTION AND MAINTENANCE Ltd Unit 1 The Byre Hook Street Royal Wootton Bassett …"
+    },
+    {
+      "title": "#ANDURIL ⚔️ 「드론을 조종하는 병사에서, 드론군을 지휘하는 병사로 …",
+      "url": "https://x.com/jinseongeo83473/status/2101771242542113134",
+      "snippet": "jinseongeo83473 (Mr. Jin). 10 likes 0 replies. #ANDURIL ⚔️ 「드론을 조종하는 병사에서, 드론군을 지휘하는 병사로」 — 미 육군이 …"
+    },
+    {
+      "title": "慈溪市到宁波汽车时刻表_慈溪市到宁波长途汽车时刻表查询【携程汽车】",
+      "url": "https://bus.ctrip.com/schedule/cixi-ningbo/",
+      "snippet": "【携程旅行网】为您查询慈溪市到宁波线路20条，慈溪市到宁波汽车时刻表查询服务，您还可以在携程上查询慈溪市到宁波的 ..."
+    },
+    {
+      "title": "Paper Lampshade Large - eBay UK",
+      "url": "https://www.ebay.co.uk/shop/paper-lampshade-large?_nkw=paper+lampshade+large&msockid=37de04f7cf9067de252b132bcea4663a",
+      "snippet": "Explore a wide range of our Paper Lampshade Large selection. Find top brands, exclusive offers, and unbeatable prices on eBay UK. …"
+    },
+    {
+      "title": "2026-2027学年湖北省黄石市高中历史中外历史纲要（上）真题实训试卷",
+      "url": "https://wenku.baidu.com/view/9d69dcd46ddc5022aaea998fcc22bcd126ff42a6.html",
+      "snippet": "2026-2027学年湖北省黄石市高中历史中外历史纲要（上）真题实训试卷-2026-2027学年湖北省黄石市高中历史中外历史纲要（上）真 …"
+    }
+  ]
+}

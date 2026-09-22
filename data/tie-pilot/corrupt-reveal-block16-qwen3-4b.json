@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "TIE-Pilot/corrupt-reveal-block16-qwen3-4b",
+  "slug": "tie-pilot-corrupt-reveal-block16-qwen3-4b",
+  "author": "TIE-Pilot",
+  "url": "https://huggingface.co/TIE-Pilot/corrupt-reveal-block16-qwen3-4b",
+  "created_at": "2026-09-21T23:29:41.000Z",
+  "updated_at": "2026-09-22T00:12:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "draft-model",
+    "block-diffusion",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1315339520,
+  "parameters_human": "1.32B",
+  "storage_bytes": 7892056464,
+  "storage_human": "7.9 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Traduction : tie - Dictionnaire anglais-français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/anglais-francais/tie/618427",
+      "snippet": "tie - Traduction Anglais-Français : Retrouvez la traduction de tie, mais également sa prononciation, la traduction des expressions à …"
+    },
+    {
+      "title": "tie - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/tie.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"tie\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "TIE — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/TIE",
+      "snippet": "Les TIE ou chasseurs TIE (pour « Twin Ion Engines », moteurs ioniques doubles en français), sont une grande famille de vaisseaux …"
+    },
+    {
+      "title": "Traduction TIE en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/tie",
+      "snippet": "Traduction de \"tie\" en français : attacher, nouer, lier. Verbe, nom, signification, prononciation, expressions idiomatiques en anglais, …"
+    },
+    {
+      "title": "tie - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/tie",
+      "snippet": "Voir la traduction automatique de Google Translate de 'tie'. Dans d'autres langues : espagnol | italien | portugais | roumain | allemand …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jogarulfop/policy_2026-09-21_cheap_shakeit_bench_3sensors_v2_no_tactile",
+  "slug": "jogarulfop-policy_2026-09-21_cheap_shakeit_bench_3sensors_v2_no_tactile",
+  "author": "jogarulfop",
+  "url": "https://huggingface.co/jogarulfop/policy_2026-09-21_cheap_shakeit_bench_3sensors_v2_no_tactile",
+  "created_at": "2026-09-21T22:17:51.000Z",
+  "updated_at": "2026-09-21T22:18:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:jogarulfop/2026-09-21_cheap_shakeit_bench_3sensors_v2_no_tactile",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fasanara Digital + Glassnode: Q4 2025 Institutional Market Perspectives",
+      "url": "https://research.glassnode.com/q4-2025-institutional-market-perspectives/",
+      "snippet": "Dec 2, 2025 · With Bitcoin retracing from recent highs and global liquidity tightening, our collaborative report with Fasanara Digital …"
+    },
+    {
+      "title": "mestrelab.com",
+      "url": "https://mestrelab.com/wp-content/uploads/2021/09/mnova-2024-05-23-mnova-3.pdf",
+      "snippet": ""
+    },
+    {
+      "title": "NIFTY Option OI Chart | Live Updates",
+      "url": "https://stockmojo.in/open-interest",
+      "snippet": "Sep 22, 2026 · Get live and historical open interest chart for Nifty, Sensex, BankNifty, and stock options. Analyze OI levels, OI …"
+    },
+    {
+      "title": "2026 State of Analytics Engineering Report | dbt Labs",
+      "url": "https://www.getdbt.com/resources/state-of-analytics-engineering-2026",
+      "snippet": "New research: AI is scaling analytics output faster than governance can follow. Download the 2026 State of Analytics Engineering …"
+    },
+    {
+      "title": "Understanding the Economic Cycle and Its Four Stages",
+      "url": "https://www.investopedia.com/terms/e/economic-cycle.asp",
+      "snippet": "Apr 9, 2026 · Discover the four stages of the economic cycle—expansion, peak, contraction, and trough—and learn how these …"
+    }
+  ]
+}

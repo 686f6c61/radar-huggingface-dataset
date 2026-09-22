@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "j0no12/nero-optimizer-work-simo-lr0p003",
+  "slug": "j0no12-nero-optimizer-work-simo-lr0p003",
+  "author": "j0no12",
+  "url": "https://huggingface.co/j0no12/nero-optimizer-work-simo-lr0p003",
+  "created_at": "2026-09-22T00:17:42.000Z",
+  "updated_at": "2026-09-22T00:17:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "nero_dense_control_mlx",
+    "nero",
+    "optimizer-research",
+    "simo",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4013862,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "News & E-Mail bei t-online | Politik, Sport, Unterhaltung & Ratgeber",
+      "url": "https://www.t-online.de/",
+      "snippet": "Aktuelle News aus Politik, Sport, Unterhaltung, Wirtschaft & Finanzen | Ratgeber Leben, Gesundheit und Heim & Garten | E-Mail und …"
+    },
+    {
+      "title": "Politik aktuell: Nachrichten aus Deutschland, Europa und der Welt",
+      "url": "https://www.t-online.de/nachrichten/",
+      "snippet": "Aktuelle News, Informationen und Videos zu Politik, Panorama und Wetter aus Deutschland, Europa und der Welt von t-online.de …"
+    },
+    {
+      "title": "Das E-Mail Center im Web - für E-Mail @t-online.de der Telekom",
+      "url": "https://kommunikationsdienste.t-online.de/emailcenter/info/index.html",
+      "snippet": "Das Adressbuch von E-Mail @t-online.de ist der zentrale Ort für alle Ihre Kontaktdaten. Mit dem bequemen Import der Adressen von …"
+    },
+    {
+      "title": "Telefonbuch bei t-online.de in Sekunden gefunden",
+      "url": "https://telefonbuch.t-online.de/",
+      "snippet": "Über t-online So arbeitet die Redaktion Autoren bei t-online Nachricht oder Meinung"
+    },
+    {
+      "title": "München: Nachrichten & News aus München - T-Online",
+      "url": "https://muenchen.t-online.de/region/muenchen/",
+      "snippet": "Stets gut informiert mit aktuellen Nachrichten und News aus München. Wetter, regionale Infos und Angebote - alles auf t-online.de …"
+    }
+  ]
+}

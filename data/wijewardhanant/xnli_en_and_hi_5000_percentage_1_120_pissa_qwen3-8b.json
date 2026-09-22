@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_PiSSA_Qwen3-8b",
+  "slug": "wijewardhanant-xnli_en_and_hi_5000_percentage_1_120_pissa_qwen3-8b",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_PiSSA_Qwen3-8b",
+  "created_at": "2026-09-22T00:26:31.000Z",
+  "updated_at": "2026-09-22T00:26:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-8B-Base",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 524784659,
+  "storage_human": "525 MB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Translate from Indonesian to English with DeepL",
+      "url": "https://www.deepl.com/en/translator/l/id/en",
+      "snippet": "Translate texts & files instantly from Indonesian to English with the world’s most accurate translator. Millions translate with DeepL …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com.au/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Indonesian–English Translator | Cambridge",
+      "url": "https://dictionary.cambridge.org/translate/indonesian-english/",
+      "snippet": "Free Indonesian to English translator with audio. Translate words, phrases and sentences."
+    },
+    {
+      "title": "Google Terjemahan",
+      "url": "https://translate.google.com/?hl=id",
+      "snippet": "Layanan Google yang ditawarkan tanpa biaya ini dapat langsung menerjemahkan berbagai kata, frasa, dan halaman web ke bahasa …"
+    },
+    {
+      "title": "Translate Indonesian to English | Translate.com",
+      "url": "https://www.translate.com/indonesian-english",
+      "snippet": "Indonesian-to-English translation is made accessible with the Translate.com dictionary. Accurate translations for words, phrases, and …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wangw-an2006/test-embodied-ai",
+  "slug": "wangw-an2006-test-embodied-ai",
+  "author": "wangw-an2006",
+  "url": "https://huggingface.co/wangw-an2006/test-embodied-ai",
+  "created_at": "2026-09-21T23:38:51.000Z",
+  "updated_at": "2026-09-21T23:38:57.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Binaire puzzels, online oplossen of printen - BinairePuzzel.net",
+      "url": "https://binairepuzzel.net/",
+      "snippet": "Duizenden gratis binaire puzzels, online oplossen of printen, verschillende afmetingen en moeilijkheidsgraden. Elke dag een nieuwe …"
+    },
+    {
+      "title": "14x14 Binaire Puzzels - BinairePuzzel.net",
+      "url": "https://binairepuzzel.net/puzzels.php?size=14",
+      "snippet": "Duizenden gratis binaire puzzels, online oplossen of printen, verschillende afmetingen en moeilijkheidsgraden. Elke dag een nieuwe …"
+    },
+    {
+      "title": "Speciale binaire puzzel - BinairePuzzel.net",
+      "url": "https://binairepuzzel.net/speciaal.php",
+      "snippet": "Speciale binaire puzzel van 20 september 2026 Onze speciale binaire puzzel van vandaag is een 4 maal 6x6 binaire puzzel. Deze …"
+    },
+    {
+      "title": "Speciale binaire puzzel - BinairePuzzel.net",
+      "url": "https://binairepuzzel.net/speciaal.php?id=3924",
+      "snippet": "Speciale binaire puzzel van 27 december 2024 Onze speciale binaire puzzel van vandaag is een 9 maal 6x6 binaire puzzel. Deze …"
+    },
+    {
+      "title": "Speciale binaire puzzel - BinairePuzzel.net",
+      "url": "https://binairepuzzel.net/speciaal.php?id=4152",
+      "snippet": "Speciale binaire puzzel van 12 augustus 2025 Onze speciale binaire puzzel van vandaag is een 4 maal 8x8 binaire puzzel. Deze …"
+    }
+  ]
+}

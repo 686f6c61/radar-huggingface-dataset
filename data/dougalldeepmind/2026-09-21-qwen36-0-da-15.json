@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dougalldeepmind/2026-09-21-qwen36-0-da-15",
+  "slug": "dougalldeepmind-2026-09-21-qwen36-0-da-15",
+  "author": "dougalldeepmind",
+  "url": "https://huggingface.co/dougalldeepmind/2026-09-21-qwen36-0-da-15",
+  "created_at": "2026-09-22T00:53:21.000Z",
+  "updated_at": "2026-09-22T00:53:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295140182,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Coding Agent for Building Ambitious Software | Cursor",
+      "url": "https://cursor.com/",
+      "snippet": "Sep 2, 2018 · Built to make you extraordinarily productive, agents turn ideas into code. Accelerate development by handing off tasks …"
+    },
+    {
+      "title": "Custom Cursor - 12,000+ Custom Cursors & Mouse Pointers",
+      "url": "https://custom-cursor.com/",
+      "snippet": "Change your mouse pointer with 12,000+ custom cursors! Anime, Minecraft, gaming & more. Windows app, cursor creator, or upload …"
+    },
+    {
+      "title": "Cursor · Download",
+      "url": "https://cursor.com/download",
+      "snippet": "Use Cursor everywhere you work A unified workspace for agents across every surface."
+    },
+    {
+      "title": "Open Cursor Library - 226485 cursors - RealWorld Graphics",
+      "url": "https://www.rw-designer.com/cursor-library",
+      "snippet": "Library of static and animated cursors for Windows. Users can freely download and upload cursors and cursor sets."
+    },
+    {
+      "title": "Cursor (company) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cursor_(company)",
+      "snippet": "Cursor's main product is Cursor, an AI coding agent and software development environment. Its agent features can search across a …"
+    }
+  ]
+}

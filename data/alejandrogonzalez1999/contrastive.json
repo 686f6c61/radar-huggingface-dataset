@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alejandrogonzalez1999/contrastive",
+  "slug": "alejandrogonzalez1999-contrastive",
+  "author": "alejandrogonzalez1999",
+  "url": "https://huggingface.co/alejandrogonzalez1999/contrastive",
+  "created_at": "2026-09-21T23:24:57.000Z",
+  "updated_at": "2026-09-21T23:25:03.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "阿蘇郡 - Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E9%98%BF%E8%98%87%E9%83%A1",
+      "snippet": "阿蘇郡 （あそぐん）は、熊本県（肥後国）の 郡 である。 人口 31,874人、 面積 703.25km²、 人口密度 45.3人/km²。 （2026年8月1 …"
+    },
+    {
+      "title": "熊本県阿蘇郡南小国町 公式ホームページ",
+      "url": "https://www.town.minamioguni.lg.jp/",
+      "snippet": "南小国町は、黒川温泉をはじめ人気の温泉地が多く、瀬の本高原などの自然景観等、「日本で最も美しい村」として多くの観光客が …"
+    },
+    {
+      "title": "阿蘇市ホームページ - Aso-City offcial site",
+      "url": "https://www.city.aso.kumamoto.jp/",
+      "snippet": "・ 令和8年熊本地震で被災した家屋等の解体・撤去（公費解体）について (合志市) ・ ラグビー教室参加者募集！ (長洲町) ・ 【6 …"
+    },
+    {
+      "title": "阿蘇エリア | エリア情報 | 【公式】熊本県観光サイト もっと ...",
+      "url": "https://kumamoto.guide/localguide/area04.html",
+      "snippet": "阿蘇地域は熊本県の東部、大分県・宮崎県との県境近くに位置しています。 熊本県と大分県にまたがる、「阿蘇くじゅう国立公園 …"
+    },
+    {
+      "title": "阿蘇郡 - Wikiwand",
+      "url": "https://www.wikiwand.com/ja/%E9%98%BF%E8%98%87%E9%83%A1",
+      "snippet": "阿蘇郡 （あそぐん）は、熊本県（肥後国）の 郡 である。 人口 31,912人、 面積 703.25km²、 人口密度 45.4人/km²。 （2026年5月1 …"
+    }
+  ]
+}

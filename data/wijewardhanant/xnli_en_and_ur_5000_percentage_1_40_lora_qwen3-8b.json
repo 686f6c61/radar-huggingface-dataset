@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_Qwen3-8b",
+  "slug": "wijewardhanant-xnli_en_and_ur_5000_percentage_1_40_lora_qwen3-8b",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_Qwen3-8b",
+  "created_at": "2026-09-21T23:39:34.000Z",
+  "updated_at": "2026-09-21T23:39:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-8B-Base",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 524784659,
+  "storage_human": "525 MB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download, install, or reinstall Microsoft 365 or Office 2024 on a PC or ...",
+      "url": "https://support.microsoft.com/en-us/office/lifecycle/officeinstall/download-install-or-reinstall-microsoft-365-or-office-2024-on-a-pc-or-mac",
+      "snippet": "Learn how to install, reinstall, or activate Microsoft 365 or Office 2024 on a PC or Mac."
+    },
+    {
+      "title": "Download and install or reinstall Office 2021, Office 2019, or Office ...",
+      "url": "https://support.microsoft.com/en-us/office/lifecycle/officeinstall/download-and-install-or-reinstall-office-2021-office-2019-or-office-2016",
+      "snippet": "Learn how to install Office 2021, 2019, or 2016 on your PC or Mac."
+    },
+    {
+      "title": "Transferir, instalar ou reinstalar o Microsoft 365 ou o Office 2024 num ...",
+      "url": "https://support.microsoft.com/pt-pt/office/lifecycle/officeinstall/download-install-or-reinstall-microsoft-365-or-office-2024-on-a-pc-or-mac",
+      "snippet": "Pronto para instalar o Microsoft 365 ou o Office 2024? Antes de começar, certifique-se de que o seu PC ou Mac cumpre os …"
+    },
+    {
+      "title": "Скачивание и установка или повторная установка Office 2021, …",
+      "url": "https://support.microsoft.com/ru-ru/office/lifecycle/officeinstall/download-and-install-or-reinstall-office-2021-office-2019-or-office-2016",
+      "snippet": "Office 2016 – 2021 на ПК Office для Mac 2021 Установка Office 2021, 2019 или 2016 на компьютере Помните, что при …"
+    },
+    {
+      "title": "Uninstall Microsoft 365 or Office from a PC",
+      "url": "https://support.microsoft.com/en-us/office/lifecycle/officeinstall/uninstall-microsoft-365-or-office-from-a-pc",
+      "snippet": "Click-to-Run Microsoft Store If you have a Click-to-Run installation, uninstall Microsoft 365 using the Control Panel or download the …"
+    }
+  ]
+}

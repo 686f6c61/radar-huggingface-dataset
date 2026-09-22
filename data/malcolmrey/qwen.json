@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "malcolmrey/qwen",
+  "slug": "malcolmrey-qwen",
+  "author": "malcolmrey",
+  "url": "https://huggingface.co/malcolmrey/qwen",
+  "created_at": "2026-09-21T20:24:29.000Z",
+  "updated_at": "2026-09-21T20:26:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 239306928,
+  "storage_human": "239 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hexagonal Architecture (Ports & Adapters) | bxcodec/golang-ddd …",
+      "url": "https://deepwiki.com/bxcodec/golang-ddd-modular-monolith-with-hexagonal/3.2-hexagonal-architecture-(ports-and-adapters)",
+      "snippet": "Nov 15, 2025 · This page explains how Hexagonal Architecture (also known as Ports and Adapters pattern) is implemented in this …"
+    },
+    {
+      "title": "Hexagonal Architecture & DDD: Ports & Adapters – Part 1",
+      "url": "https://www.codecentric.de/en/knowledge-hub/blog/hexagon-schmexagon-1",
+      "snippet": "Hexagonal Architecture is a key design pattern to use when implementing Domain Driven Design. It enables evolutionary changes, …"
+    },
+    {
+      "title": "Hexagonal Architecture | ddd-by-examples/library | DeepWiki",
+      "url": "https://deepwiki.com/ddd-by-examples/library/2.2-hexagonal-architecture",
+      "snippet": "Apr 20, 2025 · This page details the hexagonal architecture (also known as Ports and Adapters) implemented in the library system's …"
+    },
+    {
+      "title": "hexagonal-architecture-ddd-springboot - GitHub",
+      "url": "https://github.com/martinachov/hexagonal-architecture-ddd-springboot",
+      "snippet": "hexagonal-architecture-ddd-springboot The main idea behind this architecture is to isolate domain logic from external components …"
+    },
+    {
+      "title": "Ports and Adapters Pattern in DDD - Implementing Hexagonal …",
+      "url": "https://ilovedotnet.org/blogs/ddd-ports-and-adapters-pattern-in-dotnet/",
+      "snippet": "In this post I will teach you how to implement the Ports and Adapters pattern in .NET with a complete five-step walkthrough: define …"
+    }
+  ]
+}

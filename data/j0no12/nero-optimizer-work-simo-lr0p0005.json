@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "j0no12/nero-optimizer-work-simo-lr0p0005",
+  "slug": "j0no12-nero-optimizer-work-simo-lr0p0005",
+  "author": "j0no12",
+  "url": "https://huggingface.co/j0no12/nero-optimizer-work-simo-lr0p0005",
+  "created_at": "2026-09-22T00:17:34.000Z",
+  "updated_at": "2026-09-22T00:17:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "nero_dense_control_mlx",
+    "nero",
+    "optimizer-research",
+    "simo",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4013862,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何评价N-S方程疑似被AI解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/2079574865397532387",
+      "snippet": "我理解他的意思。 他是说如果有人用AI构造出了NS问题的反例，但是却刻意隐藏了AI的思考过程，以及生成的文档，只公布反例解的 …"
+    },
+    {
+      "title": "我想买国内的coding plan，买谁家的比较好？ - 知乎",
+      "url": "https://www.zhihu.com/question/2019768454232719400",
+      "snippet": "相反，v4 flash 非常推荐，又快又便宜，堪称最强小模型，日常一些小任务完全轻松 cover 总结 优先买 Claude，解决不了封号就买 …"
+    },
+    {
+      "title": "个人怎么才能使用OpenAI? - 知乎",
+      "url": "https://www.zhihu.com/question/572946129",
+      "snippet": "个人使用Open AI？这就看你要用Open API 还是 ChatGPT 了。 如果你是想用OpenAI的话，那就会相对麻烦一些，需要你注册OpenAI …"
+    },
+    {
+      "title": "如何评价今天Open AI刚发布的GPT-4o? - 知乎",
+      "url": "https://www.zhihu.com/question/655917290",
+      "snippet": "这不刚刚通过输入问题，瞬间能给出答案 发布会上，也让gpt4o猜测人们的心情 GPT4o不仅能够分析照片拍摄的背景，还能准确判断 …"
+    },
+    {
+      "title": "Chat ai国内接入版，与chat gpt有啥关系？",
+      "url": "https://www.zhihu.com/question/601463887",
+      "snippet": "May 17, 2023 · GPT-4，Chat GPT最新一代已公开模型，有更强大的推理能力，同样需要Plus会员才可使用。 Claude 2，由原Open …"
+    }
+  ]
+}

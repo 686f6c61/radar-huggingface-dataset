@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "MissingPackage/jev-d-0.4b-onnx",
+  "slug": "missingpackage-jev-d-0-4b-onnx",
+  "author": "MissingPackage",
+  "url": "https://huggingface.co/MissingPackage/jev-d-0.4b-onnx",
+  "created_at": "2026-09-21T23:20:54.000Z",
+  "updated_at": "2026-09-21T23:38:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnxruntime",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "onnxruntime-web",
+    "webgpu",
+    "feature-extraction",
+    "en",
+    "base_model:convaiinnovations/laya-typed-decisions",
+    "base_model:quantized:convaiinnovations/laya-typed-decisions",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1689646429,
+  "storage_human": "1.7 GB",
+  "base_model": "convaiinnovations/laya-typed-decisions",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HELLUX ELEKTRA s.r.o. Company Profile | Hůry, Jihočeský kraj ...",
+      "url": "https://www.dnb.com/business-directory/company-profiles.hellux_elektra_sro.09e470d8b8115ea96c916dfcc8c9942d.html",
+      "snippet": "Find company research, competitor information, contact details & financial data for HELLUX ELEKTRA s.r.o. of Hůry, Jihočeský kraj. …"
+    },
+    {
+      "title": "HELLUX ELEKTRA s.r.o.",
+      "url": "http://www.hellux.cz/",
+      "snippet": "Poradíme vám s výběrem světel i technickou reaizací správného nasvětlení. Pomůžeme vám vybrat spolehlivého projektanta, …"
+    },
+    {
+      "title": "Kontakty - HELLUX",
+      "url": "https://www.hellux.cz/kontakty.html",
+      "snippet": "jednatel robert.stoecklinger@hellux-elektra.com Edita Přichystalová správa edita.prichystalova@hellux-elektra.com +420 387 686 …"
+    },
+    {
+      "title": "HELLUX ELEKTRA s.r.o. , České Budějovice IČO 47217511 - Obchodní ...",
+      "url": "https://rejstrik-firem.kurzy.cz/47217511/hellux-elektra-sro/",
+      "snippet": "Jun 19, 2024 · Tato stránka obsahuje aktuální výpis údajů firmy HELLUX ELEKTRA s.r.o. Údaje byly staženy 27. ledna 2025 z …"
+    },
+    {
+      "title": "Lighting - Hellux",
+      "url": "https://hellux.pl/en.html",
+      "snippet": "Hellux is an online store where you can find modern lighting for living rooms, bathrooms, kitchens, or any room in your home. Our …"
+    }
+  ]
+}

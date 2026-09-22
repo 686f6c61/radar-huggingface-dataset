@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Kai9987kai/archimedes-final-model",
+  "slug": "kai9987kai-archimedes-final-model",
+  "author": "Kai9987kai",
+  "url": "https://huggingface.co/Kai9987kai/archimedes-final-model",
+  "created_at": "2026-09-21T23:41:50.000Z",
+  "updated_at": "2026-09-21T23:43:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "archimedes",
+    "supermix",
+    "text-generation",
+    "model",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197392855,
+  "storage_human": "197 MB",
+  "base_model": "none",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Canada UK Advance Trade and Defense Agenda - Worldwide News",
+      "url": "https://www.worldwidenews.ca/canada-uk-advance-trade-and-defense-agenda/",
+      "snippet": "Feb 17, 2026 · Canadian Prime Minister Mark Carney and UK Prime Minister Keir Starmer discussed expanding trade, digital …"
+    },
+    {
+      "title": "UK, Canada deepen defence and trade cooperation after leaders' call",
+      "url": "https://tradersunion.com/news/geopolitics-trade/show/2759818-uk-canada-defence-trade-cooperation/",
+      "snippet": "Jul 22, 2026 · In a call on Tuesday evening, the two leaders discuss defence investment, strategic industrial cooperation and a …"
+    },
+    {
+      "title": "UK, Canada pledge closer cooperation on trade, defence and AI",
+      "url": "https://nationaldailyng.com/uk-canada-pledge-closer-cooperation-on-trade-defence-and-ai/",
+      "snippet": "5 days ago · The United Kingdom and Canada have agreed to deepen cooperation in trade, defence and artificial intelligence …"
+    },
+    {
+      "title": "UK, Canada agree to deepen cooperation on trade, defence, AI",
+      "url": "https://pmnewsnigeria.com/2026/09/17/uk-canada-agree-to-deepen-cooperation-on-trade-defence-and-ai/",
+      "snippet": "4 days ago · The commitment followed talks between British Prime Minister Andy Burnham and Canadian Prime Minister Mark …"
+    },
+    {
+      "title": "UK’s Burnham, Canada’s Carney discuss AI risks, defence cooperation",
+      "url": "https://www.aljazeera.com/news/2026/9/17/uk-and-canada-discuss-ai-risks-and-defence-ties-in-first-bilateral-meeting",
+      "snippet": "4 days ago · British Prime Minister Andy Burnham and Canadian Prime Minister Mark Carney held their first bilateral meeting to …"
+    }
+  ]
+}

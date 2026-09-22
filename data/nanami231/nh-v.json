@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Nanami231/nh-v",
+  "slug": "nanami231-nh-v",
+  "author": "Nanami231",
+  "url": "https://huggingface.co/Nanami231/nh-v",
+  "created_at": "2026-09-22T00:40:48.000Z",
+  "updated_at": "2026-09-22T01:50:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1744770280,
+  "storage_human": "1.7 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=de",
+      "snippet": "Erstelle ein Konto oder melde dich bei Instagram an – Teile deine Ideen mit Menschen, die so ticken wie du."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=it",
+      "snippet": "Crea un account o accedi a Instagram. Condividi ciò che ti piace con le persone che ti capiscono."
+    },
+    {
+      "title": "Log into Instagram | Instagram Help Center - Facebook",
+      "url": "https://www.facebook.com/help/instagram/553970941289985/",
+      "snippet": "Get help with logging into your Instagram account: Find out how to navigate the login screen options, how to use Facebook to log into …"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=pt-br",
+      "snippet": "Crie uma conta ou entre no Instagram: compartilhe seus interesses com as pessoas que entendem você."
+    }
+  ]
+}

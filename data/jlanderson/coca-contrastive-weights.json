@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jlanderson/coca-contrastive-weights",
+  "slug": "jlanderson-coca-contrastive-weights",
+  "author": "jlanderson",
+  "url": "https://huggingface.co/jlanderson/coca-contrastive-weights",
+  "created_at": "2026-09-22T02:50:16.000Z",
+  "updated_at": "2026-09-22T02:50:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Komas Kurdish Barber, Abertillery opening hours - FindOpen UK",
+      "url": "https://find-open.co.uk/abertillery/komas-kurdish-barber-2807996",
+      "snippet": "Find ⏰ opening hours for Komas Kurdish Barber in 5 Church St, Abertillery, Blaenau Gwent Wales, NP13 1DA and check other …"
+    },
+    {
+      "title": "Komas Kurdish Barber in Abertillery, wls NP13 1DA -",
+      "url": "https://www.chamberofcommerce.uk/business-directory/wales/abertillery/barber-shop/158407-komas-kurdish-barber",
+      "snippet": "Komas Kurdish Barber located at 5 Church St, Abertillery, wls NP13 1DA - reviews, ratings, hours, phone number, directions, and more."
+    },
+    {
+      "title": "Komas barbers (@komas_kurdish_barbers) - Instagram",
+      "url": "https://www.instagram.com/komas_kurdish_barbers/",
+      "snippet": "285 Followers, 219 Following, 67 Posts - Komas barbers (@komas_kurdish_barbers) on Instagram: \"📞 07846835925 Open 7 days a …"
+    },
+    {
+      "title": "Self‐Care for the Prevention and Management of Cardiovascular ...",
+      "url": "https://www.ahajournals.org/doi/10.1161/jaha.117.006997",
+      "snippet": "31.08.2017 ... Traditional models of cardiac rehabilitation and structured exercise therapy have required a supervised setting in a healthcare environment to ..."
+    },
+    {
+      "title": "Komas Kurdish Barber, Abertillery | AI Review Summary - Cylex",
+      "url": "https://abertillery.cylex-uk.co.uk/company/komas-kurdish-barber-27276184.html",
+      "snippet": "Komas Kurdish Barber in Abertillery receives high praise for its friendly and professional service. Customers appreciate the …"
+    }
+  ]
+}

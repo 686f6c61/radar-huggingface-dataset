@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zeusdevpro/Qwen3.8-Flash-Next-Uncensored-Q8-UDQ4K.gguf",
+  "slug": "zeusdevpro-qwen3-8-flash-next-uncensored-q8-udq4k-gguf",
+  "author": "zeusdevpro",
+  "url": "https://huggingface.co/zeusdevpro/Qwen3.8-Flash-Next-Uncensored-Q8-UDQ4K.gguf",
+  "created_at": "2026-09-21T21:05:17.000Z",
+  "updated_at": "2026-09-21T21:05:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LitBuy – Best China Shopping Agent | Global Buying & International ...",
+      "url": "https://litbuy.com/",
+      "snippet": "Litbuy is the Best Taobao agent, 1688 agent and Weidian agent in China. Shop from China with QC checks, international shipping & …"
+    },
+    {
+      "title": "LitBuy Spreadsheet for Taobao, Weidian & 1688 Finds",
+      "url": "https://litbuy.casa/",
+      "snippet": "Jul 4, 2026 · LitBuy is an educational shopping resource for product discovery and international delivery planning. The site organizes …"
+    },
+    {
+      "title": "Litbuy Spreadsheet & Product Finds | QC Photos, Prices and Links",
+      "url": "https://litbuy.net/",
+      "snippet": "Litbuy is an international shopping agent platform designed to make buying from China easy and affordable. It connects global …"
+    },
+    {
+      "title": "Litbuy – Your Ultimate Chinese Shopping Agent",
+      "url": "https://lit-buy.shop/",
+      "snippet": "Litbuy is a shopping agent platform that lets you paste Taobao, 1688, and Weidian links to find products, order easily, and enjoy …"
+    },
+    {
+      "title": "Login - litbuy",
+      "url": "https://litbuy.com/user/favorite",
+      "snippet": "Litbuy is the Best Taobao agent, 1688 agent and Weidian agent in China. Shop from China with QC checks, international shipping & …"
+    }
+  ]
+}

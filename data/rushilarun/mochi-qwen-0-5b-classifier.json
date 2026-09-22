@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "rushilarun/Mochi-Qwen-0.5B-Classifier",
+  "slug": "rushilarun-mochi-qwen-0-5b-classifier",
+  "author": "rushilarun",
+  "url": "https://huggingface.co/rushilarun/Mochi-Qwen-0.5B-Classifier",
+  "created_at": "2026-09-21T23:58:36.000Z",
+  "updated_at": "2026-09-21T23:58:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "prompt-injection",
+    "safety",
+    "dataset:SulKhu/Mochi",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46658996,
+  "storage_human": "47 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ad Specials - Downs Superfoods",
+      "url": "https://downssuperfoods.com/ads",
+      "snippet": "Mound City Thriftway 701 State Street Mound City, MO 64470 Phone: (660) 442-5401"
+    },
+    {
+      "title": "Downs Superfoods | Health & Wellness | Articles | Emotional Eating ...",
+      "url": "https://www.downssuperfoods.com/health_wellness/articles/215/emotional-eating-take-notice-of-these-triggers-and-symptoms",
+      "snippet": "Downs Superfoods proudly serves the Downs,KS area. Come in for the best grocery experience in town. We're open Temporary …"
+    },
+    {
+      "title": "Downs Superfoods | Health & Wellness | Articles | Small Bites, Big ...",
+      "url": "https://downssuperfoods.com/health_wellness/articles/262/small-bites-big-taste-throwing-a-healthy-tapas-party",
+      "snippet": "The next time you’re planning a party why not skip on usual party foods like chips, cookies, and pizza and instead serve tapas—small …"
+    },
+    {
+      "title": "Loading...",
+      "url": "https://www.downssuperfoods.com/health_wellness/foods/peas",
+      "snippet": "Temporary Hours Sunday 11:00AM-5:00PM Monday-Saturday 7:30AM-7:00PM • (785) 454-3331 525 S. Morgan, Downs, KS"
+    },
+    {
+      "title": "Downs Superfoods | Health & Wellness | Articles | Healthier Chocolate ...",
+      "url": "https://downssuperfoods.com/health_wellness/articles/263/healthier-chocolate-cupcakes-to-satisfy-your-sweet-tooth-cravings",
+      "snippet": "Downs Superfoods proudly serves the Downs,KS area. Come in for the best grocery experience in town. We're open Temporary …"
+    }
+  ]
+}

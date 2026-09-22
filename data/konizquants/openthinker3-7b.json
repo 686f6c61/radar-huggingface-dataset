@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "konizquants/OpenThinker3-7B",
+  "slug": "konizquants-openthinker3-7b",
+  "author": "konizquants",
+  "url": "https://huggingface.co/konizquants/OpenThinker3-7B",
+  "created_at": "2026-09-21T23:50:16.000Z",
+  "updated_at": "2026-09-21T23:50:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "dataset:open-thoughts/OpenThoughts3-1.2M",
+    "arxiv:2506.04178",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Buy & Sell Crypto Exchange - Tradebit",
+      "url": "https://www.tradebit.io/en/privacy-policy",
+      "snippet": "Our data protection officer can be contacted info@TradeBit.io, and will work to address any questions or issues that you have with …"
+    },
+    {
+      "title": "TRADEBYTE Erfahrungen & Features 2026 | OMR Reviews",
+      "url": "https://omr.com/de/reviews/product/tradebyte",
+      "snippet": "Lese jetzt auf OMR Reviews echte Nutzerbewertungen über TRADEBYTE – eine der besten Online-Marktplatz-Anbieter zur Plattform …"
+    },
+    {
+      "title": "Buy & Sell Crypto Exchange - Tradebit",
+      "url": "https://www.tradebit.io/en/spot/MCOINUSDT",
+      "snippet": "Tradebit - Buy & sell crypto exchange"
+    },
+    {
+      "title": "PIM – TB.IO by Tradebyte.com",
+      "url": "https://www.tradebyte.io/product-category/pim/",
+      "snippet": "Tradebyte Software GmbH // Bahnhofsplatz 8 // 91522 Ansbach Telephone: +49 981 20822-0 // E-mail: Info@Tradebyte.com"
+    },
+    {
+      "title": "Multilingualism – TB.IO by Tradebyte.com",
+      "url": "https://www.tradebyte.io/documentation/basics-about-data-exchange/multilingualism/",
+      "snippet": "By means of the TB.CAT 1.3, one may provide several language information (translations etc.) per product. For each multilingual …"
+    }
+  ]
+}

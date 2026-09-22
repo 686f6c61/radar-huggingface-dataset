@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_42_DoRA_Qwen3-8b",
+  "slug": "wijewardhanant-xnli_en_and_ur_5000_percentage_1_42_dora_qwen3-8b",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_42_DoRA_Qwen3-8b",
+  "created_at": "2026-09-21T23:41:40.000Z",
+  "updated_at": "2026-09-21T23:42:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-8B-Base",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 728345723,
+  "storage_human": "728 MB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bihar News in Hindi: बिहार समाचार, Bihar Hindi News, बिहार न्यूज़ …",
+      "url": "https://www.abplive.com/states/bihar",
+      "snippet": "3 hours ago · Bihar News in Hindi ( बिहार न्यूज़ लाइव): Find all latest and breaking Bihar News in hindi, बिहार समाचार and get all …"
+    },
+    {
+      "title": "Bihar News (बिहार न्यूज़) in Hindi: Bihar (बिहार) Samachar, Latest ...",
+      "url": "https://www.jansatta.com/rajya/bihar/",
+      "snippet": "Sep 13, 2026 · Bihar News (बिहार न्यूज़) in Hindi: Read here the latest Bihar (बिहार) Samachar, Today Bihar Trending News in …"
+    },
+    {
+      "title": "Bihar News, बिहार न्यूज़, Bihar Samachar, Bihar News in Hindi, बिहार ...",
+      "url": "https://www.livehindustan.com/bihar/news",
+      "snippet": "1 day ago · Bihar News in Hindi: Get latest and trending Bihar news on Politics, Business, Election News, Crime news, Education …"
+    },
+    {
+      "title": "बिहार न्यूज़: आज की ताजा स्थानीय और हाइपरलोकल खबरें | Bihar …",
+      "url": "https://hindi.news24online.com/state/bihar/",
+      "snippet": "4 days ago · बिहार न्यूज़ हिंदी में पढ़ें! पाएं बिहार की आज की ताजा स्थानीय और हाइपरलोकल खबरें, ब्रेकिंग न्यूज़ और बड़ी …"
+    },
+    {
+      "title": "Bihar News in Hindi: बिहार के ब्रेकिंग न्यूज़, ताज़ा ख़बर, समाचार ...",
+      "url": "https://www.tv9hindi.com/topic/bihar",
+      "snippet": "1 day ago · Read Bihar news in Hindi. Get latest news and updates on बिहार including बिहार का ताज़ा ख़बर, समाचार, न्यूज़, …"
+    }
+  ]
+}

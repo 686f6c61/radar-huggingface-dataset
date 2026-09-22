@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "justinzheng/deit-retrieval-large",
+  "slug": "justinzheng-deit-retrieval-large",
+  "author": "justinzheng",
+  "url": "https://huggingface.co/justinzheng/deit-retrieval-large",
+  "created_at": "2026-09-22T02:34:50.000Z",
+  "updated_at": "2026-09-22T02:34:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "مصر الرقمية",
+      "url": "https://digital.gov.eg/",
+      "snippet": "قرَّبنا إليك كل ما تحتاج إليه، استخدم مصر الرقمية من جهازك الذكى أو محمولك وادفع بالطريقة التى تناسبك بوابة مصر الإلكترونية تقدم لك كل الخدمات الحكومية بطريقة فورية وسهلة وأنت فى مكانك!"
+    },
+    {
+      "title": "مصر الرقمية - digital.gov.eg",
+      "url": "https://digital.gov.eg/about-us",
+      "snippet": "بوابة الخدمات الحكومية منصة تقدم لكم الخدمات الحكومية الرقمية بشكل مّيسر وشخصى وحديث، عبر التحول الرقمى للبنية المعلوماتية بمصر.تابعنا هنا للتعرف على الخدمات الحكومية الجديدة التى سُتضاف …"
+    },
+    {
+      "title": "الهوية الرقمية | Egypt Pass",
+      "url": "https://di.gov.eg/",
+      "snippet": "أما بوابة مصر الرقمية فهي منصة الخدمات الحكومية نفسها، والتي تستخدم الهوية الرقمية كوسيلة دخول موحدة وآمنة. بمعنى آخر، الهوية الرقمية هي المفتاح، وبوابة مصر الرقمية هي الوجهة."
+    },
+    {
+      "title": "بوابة مصر الرقمية.. خطوات التسجيل والخدمات المتاحة للمواطنين",
+      "url": "https://www.almasryalyoum.com/news/details/3500584",
+      "snippet": "Jul 15, 2025 · تمثل بوابة مصر الرقمية خطوة مهمة نحو التحول الرقمي في مصر، وهي تتيح للمواطنين إنهاء الإجراءات الحكومية في دقائق دون الحاجة إلى زيارة المكاتب أو الانتظار في طوابير. …"
+    },
+    {
+      "title": "رابط تسجيل دخول بوابة مصر الرقمية للحصول على الخدمات الحكومية",
+      "url": "https://www.elmogaz.com/830968",
+      "snippet": "يتزايد البحث عن كيفية تسجيل الدخول على بوابة مصر الرقمية، وفيما يلي ننشر الخدمات التي تقدمها منصة مصر الرقمية للمواطنين."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_DoRA_llama-3.2",
+  "slug": "wijewardhanant-xnli_en_and_sw_5000_percentage_1_120_dora_llama-3-2",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_DoRA_llama-3.2",
+  "created_at": "2026-09-21T22:46:27.000Z",
+  "updated_at": "2026-09-21T22:46:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.2-3B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.2-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 408227547,
+  "storage_human": "408 MB",
+  "base_model": "meta-llama/Llama-3.2-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "أفضل 20 مكان سياحي في فرنسا - todotriplist.com",
+      "url": "https://todotriplist.com/france-tourism/",
+      "snippet": "تُعدّ فرنسا أكثر الوجهات السياحية شعبية في أوروبا والعالم، فهي بلد زاخر بالوجهات والمعالم الساحرة. من قلاع العصور الوسطى الأسطورية، والقرى الريفية ذات الطبيعة الخلابة، والمنتجعات الساحلية …"
+    },
+    {
+      "title": "أفضل 10 أنشطة سياحية في فرنسا - Tripadvisor",
+      "url": "https://ar.tripadvisor.com/Attractions-g187070-Activities-France.html",
+      "snippet": "‪متجر غاليري لافاييت هو المتجر الوحيد في باريس الذي ينبغي ألا تفوّته، ويضم علامات فرنسية شهيرة، تتنوع بين الماركات الراقية ومصممي الملابس الجاهزة، فضلاً عن العطور ومستحضرات التجميل …"
+    },
+    {
+      "title": "السياحة في فرنسا : افضل 7 مدن سياحية في فرنسا - urtrips",
+      "url": "https://www.urtrips.net/france/",
+      "snippet": "دليل السياحة في فرنسا الشامل تجدون فيه افضل الاماكن السياحية في فرنسا في اشهر مدن فرنسا السياحية وهي باريس، ستراسبورغ و العديد من اماكن سياحية في فرنسا"
+    },
+    {
+      "title": "أماكن للزيارة في فرنسا - جيزيماريس",
+      "url": "https://www.gezimaris.com/ar/fransada-gezilecek-yerler/",
+      "snippet": "Oct 30, 2024 · عندما يتعلق الأمر بالأماكن التي يمكن زيارتها في فرنسا، فإن الوجهات الفريدة التي تجمع بين التاريخ والفن والجمال الطبيعي تتبادر إلى الذهن. من المعالم الأثرية الشهيرة في باريس إلى …"
+    },
+    {
+      "title": "أفضل 30 موقعًا لزيارتها في فرنسا: لا تفوت الفرصة أبدًا!",
+      "url": "https://www.iroamly.com/ar/france-travel/top-places-to-visit-in-france.html",
+      "snippet": "Dec 29, 2025 · اكتشف 30 وجهة بارزة في فرنسا، مع نصائح سفر أساسية، وأهم المعالم السياحية، وأفكار رائعة للهدايا التذكارية لكل منها بسهولة ومتعة."
+    }
+  ]
+}

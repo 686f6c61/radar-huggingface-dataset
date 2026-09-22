@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_DoRA_Qwen3-8b",
+  "slug": "wijewardhanant-xnli_en_and_sw_5000_percentage_1_40_dora_qwen3-8b",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_DoRA_Qwen3-8b",
+  "created_at": "2026-09-21T23:42:13.000Z",
+  "updated_at": "2026-09-21T23:42:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-8B-Base",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 728345723,
+  "storage_human": "728 MB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "周口市人力资源和社会保障局",
+      "url": "https://rsj.zhoukou.gov.cn/",
+      "snippet": "Apr 10, 2025 · 11-10 全市重点民生实事：就业服务保障能力提升工程已超额完成 11-07 妇女能顶“半边天” 家政赛场“展风采”——我市举 …"
+    },
+    {
+      "title": "周口市人力资源和社会保障局",
+      "url": "http://117.159.72.4:38567/sitesources/zkrlzyhshbzj/page_pc/index.html",
+      "snippet": "Apr 10, 2025 · 11-10 全市重点民生实事：就业服务保障能力提升工程已超额完成 11-07 妇女能顶“半边天” 家政赛场“展风采”——我市举 …"
+    },
+    {
+      "title": "社会保障_周口市人力资源和社会保障局",
+      "url": "https://rsj.zhoukou.gov.cn/sitesources/zkrlzyhshbzj/page_pc/zwgk/zfxxgk/fdzdgknr/shbz/list4.html",
+      "snippet": "May 7, 2026 · 主办单位:周口市人力资源和社会保障局 承办单位:周口市职业技能鉴定和数字人社中心 地址：周口市城乡一体化示范区 …"
+    },
+    {
+      "title": "公告公示_周口市人力资源和社会保障局",
+      "url": "http://117.159.72.4:38567/sitesources/zkrlzyhshbzj/page_pc/xwdt/gggs/list1.html",
+      "snippet": "Apr 10, 2025 · 周口市劳动能力鉴定委员会关于开展2026年度第一次非因工伤残或因病丧失劳动能力程..."
+    },
+    {
+      "title": "周口市人力资源和社会保障局",
+      "url": "https://m12333.cn/platform/spe.html",
+      "snippet": "Jun 17, 2025 · 包含周口市人力资源和社会保障局官方政策法律法规、业务通知等信息；周口市人社局官网，可查询周口市人力资源和 …"
+    }
+  ]
+}

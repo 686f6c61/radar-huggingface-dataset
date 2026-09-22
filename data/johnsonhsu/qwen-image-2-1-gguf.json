@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JohnsonHsu/Qwen-Image-2.1-GGUF",
+  "slug": "johnsonhsu-qwen-image-2-1-gguf",
+  "author": "JohnsonHsu",
+  "url": "https://huggingface.co/JohnsonHsu/Qwen-Image-2.1-GGUF",
+  "created_at": "2026-09-22T01:13:15.000Z",
+  "updated_at": "2026-09-22T01:13:16.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "image-generation",
+    "comfyui",
+    "comfyui-gguf",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 54905768637,
+  "storage_human": "54.9 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI",
+      "url": "https://chat.openai.com/auth/login?next=%2F",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "ios.chat.openai.com",
+      "url": "https://ios.chat.openai.com/cdn-cgi/trace",
+      "snippet": "fl=413f743 h=ios.chat.openai.com ip=40.77.167.55 ts=1789999876.000 visit_scheme=https uag=Mozilla/5.0 AppleWebKit/537.36 …"
+    },
+    {
+      "title": "android.chat.openai.com",
+      "url": "https://android.chat.openai.com/cdn-cgi/trace",
+      "snippet": "fl=413f354 h=android.chat.openai.com ip=52.167.144.206 ts=1789896282.000 visit_scheme=https uag=Mozilla/5.0 …"
+    }
+  ]
+}

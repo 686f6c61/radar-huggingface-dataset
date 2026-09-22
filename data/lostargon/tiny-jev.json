@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "lostargon/Tiny-Jev",
+  "slug": "lostargon-tiny-jev",
+  "author": "lostargon",
+  "url": "https://huggingface.co/lostargon/Tiny-Jev",
+  "created_at": "2026-09-21T20:53:47.000Z",
+  "updated_at": "2026-09-21T21:48:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tiny_jev",
+    "feature-extraction",
+    "jev",
+    "system-one",
+    "open-jev",
+    "decision-model",
+    "calibrated",
+    "routing",
+    "classification",
+    "guardrails",
+    "non-autoregressive",
+    "text-classification",
+    "custom_code",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 595778561,
+  "parameters_human": "595.8M",
+  "storage_bytes": 1203017396,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Miriam Sternberg - President at Caring Professionals, Inc. | LinkedIn",
+      "url": "https://www.linkedin.com/in/miriam-sternberg-78b499177",
+      "snippet": "President at Caring Professionals, Inc. · Experience: Caring Professionals, Inc. · Location: New York City Metropolitan Area · 72 …"
+    },
+    {
+      "title": "Miriam Sternberg - President at Caring Professionals, Inc. | LinkedIn",
+      "url": "https://www.linkedin.com/in/miriam-sternberg-885b918a",
+      "snippet": "President at Caring Professionals, Inc. · Experience: Caring Professionals, Inc. · Location: New York · 4 connections on LinkedIn. …"
+    },
+    {
+      "title": "About - Caring Professionals Home Care New York",
+      "url": "https://www.caringprofessionals.com/about/",
+      "snippet": "In 1994, Miriam Sternberg was a hospital nurse in New York City with a growing family. As an immigrant from Moscow, she saw a …"
+    },
+    {
+      "title": "Read our story: A Local Need, A... - Caring Professionals | Facebook",
+      "url": "https://www.facebook.com/CaringProf/posts/read-our-story-a-local-need-a-loving-nurseabout-our-founder-miriam-sternberg-in-/1632781020214846/",
+      "snippet": "Jul 31, 2020 · Read our story: A Local Need, A Loving Nurse About our founder Miriam Sternberg \"In 1994, Miriam Sternberg was a …"
+    },
+    {
+      "title": "Miriam Sternberg Email & Phone Number | Caring Professionals, Inc ...",
+      "url": "https://rocketreach.co/miriam-sternberg-email_28820321",
+      "snippet": "Miriam Sternberg, based in New York, NY, US, is currently a President at Caring Professionals, Inc.. With a robust skill set that …"
+    }
+  ]
+}

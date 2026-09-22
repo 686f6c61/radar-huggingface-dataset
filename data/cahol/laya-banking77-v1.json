@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "Cahol/laya-banking77-v1",
+  "slug": "cahol-laya-banking77-v1",
+  "author": "Cahol",
+  "url": "https://huggingface.co/Cahol/laya-banking77-v1",
+  "created_at": "2026-09-22T02:30:41.000Z",
+  "updated_at": "2026-09-22T02:33:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "laya",
+    "banking77",
+    "intent-classification",
+    "customer-support",
+    "lora",
+    "calibrated-decisions",
+    "text-classification",
+    "en",
+    "dataset:PolyAI/banking77",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122565852,
+  "storage_human": "123 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Intent classification",
+      "dataset": "BANKING77",
+      "metric": "Accuracy",
+      "value": 0.8555194805194806
+    },
+    {
+      "task": "Intent classification",
+      "dataset": "BANKING77",
+      "metric": "Macro F1",
+      "value": 0.855314223956437
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sign in to GitHub · GitHub",
+      "url": "https://github.com/login",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million …"
+    },
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "GitHub · Change is constant. GitHub keeps you ahead.",
+      "url": "https://github.com/",
+      "snippet": "Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open …"
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …"
+    },
+    {
+      "title": "r/all - Reddit",
+      "url": "https://www.reddit.com/r/all/",
+      "snippet": "Today's top content from hundreds of thousands of Reddit communities."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "konizquants/OpenThinker-Agent-v1-SFT",
+  "slug": "konizquants-openthinker-agent-v1-sft",
+  "author": "konizquants",
+  "url": "https://huggingface.co/konizquants/OpenThinker-Agent-v1-SFT",
+  "created_at": "2026-09-21T23:52:15.000Z",
+  "updated_at": "2026-09-21T23:52:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agents",
+    "terminal",
+    "code",
+    "software-engineering",
+    "conversational",
+    "dataset:OpenThoughts-Agent-v1-SFT",
+    "dataset:OpenThoughts-Agent-v1-RL",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308224,
+  "parameters_human": "308224",
+  "storage_bytes": 16392948007,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Time Zones and DST in Europe - timeanddate.com",
+      "url": "https://www.timeanddate.com/time/europe/",
+      "snippet": "Europe is divided into four main time zones that span from UTC+0 hours in western European countries to UTC+3 hours in Belarus …"
+    },
+    {
+      "title": "Europe Time Zone Map - WhichTimezone",
+      "url": "https://whichtimezone.com/europe/europe-map/",
+      "snippet": "1 day ago · Map of Europe covering all countries showing the applicable time zone. Check out the full information per country."
+    },
+    {
+      "title": "Europe Time Clock & Map - Check Current Local Time in Europe",
+      "url": "https://24timezones.com/eu_map/europe_time.php",
+      "snippet": "1 day ago · Europe Time Clock & Map - check current local time in Europe - timezones, time difference, offset to GMT/UTC, summer …"
+    },
+    {
+      "title": "Current Local Times in Europe - timeanddate.com",
+      "url": "https://www.timeanddate.com/worldclock/custom.html?continent=europe",
+      "snippet": "Customizable World Clock that shows current local time in the cities of your choice."
+    },
+    {
+      "title": "Time Zones in Europe – Full List & Current Time | TimeTranslator",
+      "url": "https://timetranslator.com/time-zones/europe/",
+      "snippet": "Sep 1, 2026 · A complete guide to UTC offsets, daylight saving time, live country clocks, history & everything in between — across all …"
+    }
+  ]
+}

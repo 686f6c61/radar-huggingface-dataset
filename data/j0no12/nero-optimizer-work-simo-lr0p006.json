@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "j0no12/nero-optimizer-work-simo-lr0p006",
+  "slug": "j0no12-nero-optimizer-work-simo-lr0p006",
+  "author": "j0no12",
+  "url": "https://huggingface.co/j0no12/nero-optimizer-work-simo-lr0p006",
+  "created_at": "2026-09-22T00:17:48.000Z",
+  "updated_at": "2026-09-22T00:17:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "nero_dense_control_mlx",
+    "nero",
+    "optimizer-research",
+    "simo",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4013862,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome | USPS",
+      "url": "https://www.usps.com/?msockid=22579dd934dd692f33a38a05358f68cb",
+      "snippet": "Welcome to USPS.com. Track packages, pay and print postage with Click-N-Ship, schedule free package pickups, look up ZIP …"
+    },
+    {
+      "title": "USPS.com",
+      "url": "https://store.usps.com/store/shipping-supplies?msockid=22579dd934dd692f33a38a05358f68cb",
+      "snippet": "Shop our selection of Shipping Supplies on the USPS.com Postal Store"
+    },
+    {
+      "title": "USPS.com® - Sign In",
+      "url": "https://reg.usps.com/entreg/LoginAction?msockid=22579dd934dd692f33a38a05358f68cb",
+      "snippet": "Create a USPS.com (registered trademark symbol) account to print shipping labels, request a Carrier Pickup, buy stamps, shop, plus …"
+    },
+    {
+      "title": "Site Index | USPS",
+      "url": "https://www.usps.com/globals/site-index.htm?msockid=22579dd934dd692f33a38a05358f68cb",
+      "snippet": "USPS.com Site Index Find the information you're looking for on the site map. Send Mail & Packages"
+    },
+    {
+      "title": "Informed Delivery - Mail & Package Notifications | USPS",
+      "url": "https://informeddelivery.usps.com/?msockid=22579dd934dd692f33a38a05358f68cb",
+      "snippet": "Informed Delivery is a free service from USPS that shows you preview images of incoming mail, plus status updates about your …"
+    }
+  ]
+}

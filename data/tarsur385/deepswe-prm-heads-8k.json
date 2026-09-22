@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tarsur385/deepswe-prm-heads-8k",
+  "slug": "tarsur385-deepswe-prm-heads-8k",
+  "author": "tarsur385",
+  "url": "https://huggingface.co/tarsur385/deepswe-prm-heads-8k",
+  "created_at": "2026-09-21T22:12:06.000Z",
+  "updated_at": "2026-09-21T22:55:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "process-reward-model",
+    "verifier",
+    "best-of-n",
+    "swe-agent",
+    "deepswe",
+    "clm",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 226672794,
+  "storage_human": "227 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "直径符号Φ怎么打？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/441577042.html",
+      "snippet": "直径符号Φ，希腊字母PHi（读音faì）的输入法： 1、按住Alt键，再在小键盘上输入42677（十进制）。 2、在Word或者Excel里，点 …"
+    },
+    {
+      "title": "SUBTOTAL (9,F2:F12)这个9是什么意思？_百度知道",
+      "url": "https://zhidao.baidu.com/question/328627137646803325.html",
+      "snippet": "Apr 2, 2015 · SUBTOTAL (9,F2:F12)中的9是求和的意思。 SUBTOTAL函数 的第一个值可以用1-11来表示，每个数字都代表不同的意 …"
+    },
+    {
+      "title": "ions - Why doesn't H₄O²⁺ exist? - Chemistry Stack Exchange",
+      "url": "https://chemistry.stackexchange.com/questions/112087/why-doesnt-h%e2%82%84o%c2%b2%e2%81%ba-exist",
+      "snippet": "Apr 3, 2019 · I know this question has been asked previously but I cannot find a satisfactory explanation as to why is it so difficult for …"
+    },
+    {
+      "title": "Why does ozone, being heavier than air, not settle down?",
+      "url": "https://chemistry.stackexchange.com/questions/43498/why-does-ozone-being-heavier-than-air-not-settle-down",
+      "snippet": "Jan 9, 2016 · @paracetamol I respectfully disagree. The question whether or not an answer is correct does not depend on a single …"
+    },
+    {
+      "title": "焊工证项目代号GTAW一FeIV一6G一3/159一FefS一02/10/12代表什么",
+      "url": "https://zhidao.baidu.com/question/1833454800208516980.html",
+      "snippet": "Jun 17, 2016 · 代表含义如下： GTAW (氩弧焊)---FeIV (铁素体4号材质)---6G (管材对接焊，45°夹角固定向上焊)---3/159 (3--管子厚 …"
+    }
+  ]
+}

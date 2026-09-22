@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "shanexf/24679-garments-fewshot-qwen3",
+  "slug": "shanexf-24679-garments-fewshot-qwen3",
+  "author": "shanexf",
+  "url": "https://huggingface.co/shanexf/24679-garments-fewshot-qwen3",
+  "created_at": "2026-09-21T23:38:08.000Z",
+  "updated_at": "2026-09-21T23:38:09.000Z",
+  "license": "classroom-use-only",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-classification",
+    "few-shot",
+    "in-context-learning",
+    "prompting",
+    "24-679",
+    "garments",
+    "en",
+    "dataset:leixiang25/24679-hw1-text-garments",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is the meaning behind \"Savage\" ? - Scifi Dimensions",
+      "url": "https://www.scifidimensions.com/what-is-the-meaning-behind-savage-2/",
+      "snippet": "Sep 16, 2025 · The word “savage” is layered with complex and often contradictory meanings, depending on the context in which it’s …"
+    },
+    {
+      "title": "savage adjective | meaning in the Cambridge Learner’s Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/learner-english/savage_1",
+      "snippet": "savage adjective definition: 1. extremely violent: 2. severe: . Learn more."
+    },
+    {
+      "title": "Savage - What does it mean? - WikiDiff",
+      "url": "https://wikidiff.com/savage",
+      "snippet": "Adjective (en adjective) wild; not cultivated a savage wilderness * Dryden savage berries of the wood barbaric; not civilized savage …"
+    },
+    {
+      "title": "Savage’ in Slang: Modern Meanings & How It’s Used Today”",
+      "url": "https://completeera.com/savage-in-slang-modern-meanings-how-its-used-today/",
+      "snippet": "Savage is a slang term with multiple meanings —from “wild” or “untamed” to “bold,” “unapologetic,” or even “brutal.” It’s often used to …"
+    },
+    {
+      "title": "Savage replies to insults in school",
+      "url": "https://www.youtube.com/shorts/or8IVyAhdwA",
+      "snippet": "Nov 29, 2023 · Savage replies to insults in school #fypシ #aesthetic #trending #viral #savageSavage comebacks and insults quotes, …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Chanolp/loras",
+  "slug": "chanolp-loras",
+  "author": "Chanolp",
+  "url": "https://huggingface.co/Chanolp/loras",
+  "created_at": "2026-09-21T23:21:18.000Z",
+  "updated_at": "2026-09-21T23:21:19.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2049673687,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IShowSpeed's Net Worth: How Much Does IShowSpeed Make A …",
+      "url": "https://streamersbase.com/streamers/ishowspeed/revenue",
+      "snippet": "Explore how much Twitch streamer IShowSpeed earns, with detailed insights into his annual, monthly, and daily income, showcasing …"
+    },
+    {
+      "title": "IShowSpeed Income Breakdown 2026: YouTube, Twitch",
+      "url": "https://www.bleap.finance/blog/ishowspeed-income-breakdown",
+      "snippet": "Jul 21, 2026 · Discover how much IShowSpeed earns in 2026, including YouTube ad revenue, Twitch earnings, sponsorships, …"
+    },
+    {
+      "title": "How Much Money Does IShowSpeed Make Per Stream? The Full …",
+      "url": "https://hub.stellantis.com/article/how-much-money-does-ishowspeed-make-per-stream-the-full-breakdown",
+      "snippet": "Sep 9, 2026 · This regional disparity means that how much IShowSpeed makes per stream can fluctuate by 300% or more …"
+    },
+    {
+      "title": "From Streams to Millions: How much IShowSpeed’s Earns",
+      "url": "https://www.obviousmag.com/ishowspeed-net-worth/",
+      "snippet": "Jul 25, 2026 · How Does I Show Speed Make Money During Live Streams Specifically? He earns through Super Chats, viewer …"
+    },
+    {
+      "title": "How Much Does Ishowspeed Make per Year - networthrankings.com",
+      "url": "https://networthrankings.com/how-much-does-ishowspeed-make-per-year/",
+      "snippet": "May 18, 2026 · IShowSpeed, the popular YouTube streamer and content creator, earns an estimated $18.3 to $25 million per year …"
+    }
+  ]
+}

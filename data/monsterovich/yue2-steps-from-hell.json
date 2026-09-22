@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "monsterovich/yue2-steps-from-hell",
+  "slug": "monsterovich-yue2-steps-from-hell",
+  "author": "monsterovich",
+  "url": "https://huggingface.co/monsterovich/yue2-steps-from-hell",
+  "created_at": "2026-09-21T20:37:25.000Z",
+  "updated_at": "2026-09-21T20:36:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "music-generation",
+    "audio",
+    "yue2",
+    "two-steps-from-hell",
+    "orchestral",
+    "epic-trailer-music",
+    "base_model:m-a-p/YuE2-3B",
+    "base_model:adapter:m-a-p/YuE2-3B",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 232155227,
+  "storage_human": "232 MB",
+  "base_model": "m-a-p/YuE2-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "用AI（chatgpt、deepseek）分析情感问题（友情、亲情 ...",
+      "url": "https://www.zhihu.com/question/12279910877",
+      "snippet": "非常难以使用AI来分析人，以及人与人之间的关系。 但困难不在于AI「没有情感」「不懂人性」，实际上，顶级的AI，如Gemini能够 …"
+    },
+    {
+      "title": "为什么主观上Gemini的整体使用感受比GPT好？ - 知乎",
+      "url": "https://www.zhihu.com/question/1938912463505547275",
+      "snippet": "Gemini是谷歌推出的多模态AI基座模型，深度整合谷歌生态，具备领先的多模态处理能力，支持百万级token长文本和Canvas模式，适 …"
+    },
+    {
+      "title": "Gemini3 是目前最强 AI 吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/1975199818042327496",
+      "snippet": "放假的时候 去新疆玩，有一天步行了3.5万步 我问gemini怎么避免脚发胀发疼， 它第一句是“一天步行3万5的壮士”然后说了好多办法之 …"
+    },
+    {
+      "title": "Gemini 向所有用户开放 Deep Research 功能，这对用户体验 ...",
+      "url": "https://www.zhihu.com/question/14971983141",
+      "snippet": "Gemini 向所有用户开放 Deep Research 功能，这对用户体验有哪些改变？ 日前，谷歌旗下AI大模型Gemini宣布向所有用户开放Deep …"
+    },
+    {
+      "title": "Gemini显示“出了点问题”？ - 知乎",
+      "url": "https://www.zhihu.com/question/1916203992091964465",
+      "snippet": "Gemini是谷歌推出的多模态AI基座模型，深度整合谷歌生态，具备领先的多模态处理能力，支持百万级token长文本和Canvas模式，适 …"
+    }
+  ]
+}

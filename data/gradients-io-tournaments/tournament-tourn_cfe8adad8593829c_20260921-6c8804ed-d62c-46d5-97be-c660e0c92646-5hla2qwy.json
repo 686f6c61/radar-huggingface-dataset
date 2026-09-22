@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_cfe8adad8593829c_20260921-6c8804ed-d62c-46d5-97be-c660e0c92646-5HLA2QWY",
+  "slug": "gradients-io-tournaments-tournament-tourn_cfe8adad8593829c_20260921-6c8804ed-d62c-46d5-97be-c660e0c92646-5hla2qwy",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_cfe8adad8593829c_20260921-6c8804ed-d62c-46d5-97be-c660e0c92646-5HLA2QWY",
+  "created_at": "2026-09-21T20:07:38.000Z",
+  "updated_at": "2026-09-21T20:07:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/fcc12f8dac0f9054",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:gradients-io-tournaments/augmented-a22a7e3362beba00",
+    "base_model:adapter:gradients-io-tournaments/augmented-a22a7e3362beba00",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88891320,
+  "storage_human": "89 MB",
+  "base_model": "gradients-io-tournaments/augmented-a22a7e3362beba00",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Search Help",
+      "url": "https://support.google.com/websearch/?hl=en",
+      "snippet": "Official Google Search Help Center where you can find tips and tutorials on using Google Search and other answers to frequently …"
+    },
+    {
+      "title": "QUERY - เครื่องมือแก้ไข Google เอกสาร ความช่วยเหลือ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=th",
+      "snippet": "QUERY เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด ตัวอย่างการใช้งาน QUERY (A2:E6,\"select avg …"
+    },
+    {
+      "title": "sin prejuicio - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/sin-prejuicio.1452459/",
+      "snippet": "Jun 30, 2009 · Como podemos traduzir a seguinte expressão: \"se acepta con la cualidad ordinaria de sin prejuicio...y para la prática …"
+    },
+    {
+      "title": "jouer aux pitres - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/jouer-aux-pitres.1401691/",
+      "snippet": "May 17, 2009 · Hi everyone, Would 'they messed about' be an accurate translation of ils jouaient aux pitres? Thanks for your help!"
+    },
+    {
+      "title": "Google Sheets QUERY - how to use AND and OR at the same time",
+      "url": "https://support.google.com/docs/thread/132394436/google-sheets-query-how-to-use-and-and-or-at-the-same-time?hl=en",
+      "snippet": "Oct 25, 2021 · Google Sheets QUERY - how to use AND and OR at the same time Hi I'm struggling with Query function that will …"
+    }
+  ]
+}

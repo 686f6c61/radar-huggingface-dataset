@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/decider-2b-chat-mlx-4bit",
+  "slug": "sirsahol-decider-2b-chat-mlx-4bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/decider-2b-chat-mlx-4bit",
+  "created_at": "2026-09-22T02:29:26.000Z",
+  "updated_at": "2026-09-22T05:43:42.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_text",
+    "apple-silicon",
+    "4-bit",
+    "text-generation",
+    "conversational",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 1079393754,
+  "storage_human": "1.1 GB",
+  "base_model": "JackFram/decider-2b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hospodárstvo Európy ~ Geografia – Poznámky | Zones.sk",
+      "url": "https://www.zones.sk/studentske-prace/geografia/35172-hospodarstvo-europy/",
+      "snippet": "Oct 23, 2024 · Geografia – Poznámky 7. ročník ZŠ ... Diskusia: Hospodárstvo Európy K dispozícii nie sú žiadne komentáre. Napíš …"
+    },
+    {
+      "title": "Hospodárstvo Európy | PDF",
+      "url": "https://www.scribd.com/presentation/862502371/Hospodarstvo-Europy",
+      "snippet": "• Kukurica- J a V Európy, pestuje sa: Maďarsko, Rumunsko, Ukrajina • Zemiaky- Rusko, Poľsko • Cukrová repa- Francúzsko, …"
+    },
+    {
+      "title": "HOSPODÁRSTVO EURÓPY",
+      "url": "http://www.zshranovnica.sk/samostudium/20-21/1/7AB/GEG.pdf",
+      "snippet": "OSPODÁRSTVO EURÓPY Poľnohospodárstvo v Európe je zastúpené rastlinnou a živočíšnou výrobou, lesným Hospodárstvom, …"
+    },
+    {
+      "title": "Hospodárstvo Európy - Naša geografia",
+      "url": "https://www.nasageografia.sk/hospodarstvo-europy/",
+      "snippet": "Dobrý učiteľ vysvetľuje. Výborný učiteľ ukazuje. Najlepší učiteľ inšpiruje."
+    },
+    {
+      "title": "Hospodárstvo, transformácia a priemysel | Informačné listy o …",
+      "url": "https://www.europarl.europa.eu/factsheets/sk/chapter/210/hospodarstvo-veda-a-kvalita-zivota",
+      "snippet": "Informácie o hospodárstve, vede a kvalite života. Informačné listy poskytujú celkový prehľad o európskej integrácii a o úlohe …"
+    }
+  ]
+}

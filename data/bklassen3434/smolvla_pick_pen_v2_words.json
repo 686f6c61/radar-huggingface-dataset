@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "bklassen3434/smolvla_pick_pen_v2_words",
+  "slug": "bklassen3434-smolvla_pick_pen_v2_words",
+  "author": "bklassen3434",
+  "url": "https://huggingface.co/bklassen3434/smolvla_pick_pen_v2_words",
+  "created_at": "2026-09-22T01:20:28.000Z",
+  "updated_at": "2026-09-22T01:20:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:bklassen3434/pick_pen_v2_20260920_124400",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720056,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KRIM – 한국선교연구원 (kriM)",
+      "url": "https://krim.org/",
+      "snippet": "KRIM 통합검색 단기선교를 통해 배우기 원하는 것은 무엇인가 단기선교 현장은 제자도와 선교적 체험을 하기에 아주 뛰어난 현장이며, …"
+    },
+    {
+      "title": "2021년 10월 kriM 기도편지 – KRIM",
+      "url": "https://krim.org/2021%EB%85%84-10%EC%9B%94-krim-%EA%B8%B0%EB%8F%84%ED%8E%B8%EC%A7%80/",
+      "snippet": "kriM 소식 현대선교 25호 출간 현대 선교 25호는 「세계 기독교와 선교」 라는 주제로 출간 막바지 작업이 진행되고 있습니다. 당초 계획한 …"
+    },
+    {
+      "title": "stage.krim.org",
+      "url": "http://stage.krim.org/welcome/apply",
+      "snippet": ""
+    },
+    {
+      "title": "www.missiodei.krim.org",
+      "url": "http://www.missiodei.krim.org/bbs/search.php?sfl=wr_subject&stx=%EB%AC%B8%EC%83%81%EC%B2%A0&sop=and&srows=10&onetable=digital_hyun&page=2",
+      "snippet": ""
+    },
+    {
+      "title": "missiodei.krim.org",
+      "url": "http://missiodei.krim.org/bbs/group.php?gr_id=digital",
+      "snippet": ""
+    }
+  ]
+}

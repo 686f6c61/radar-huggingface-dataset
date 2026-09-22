@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nikitastheo/v5-mixed-25k-lower-seed43-ell-ell-sequential_interleaved",
+  "slug": "nikitastheo-v5-mixed-25k-lower-seed43-ell-ell-sequential_interleaved",
+  "author": "nikitastheo",
+  "url": "https://huggingface.co/nikitastheo/v5-mixed-25k-lower-seed43-ell-ell-sequential_interleaved",
+  "created_at": "2026-09-21T22:16:37.000Z",
+  "updated_at": "2026-09-21T23:09:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 104716800,
+  "parameters_human": "104.7M",
+  "storage_bytes": 837764352,
+  "storage_human": "838 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Publication 583 (12/2024), Starting a Business and Keeping Records",
+      "url": "https://www.irs.gov/publications/p583",
+      "snippet": "You can elect to deduct up to $5,000 of business start-up costs and up to $5,000 of organizational costs. The $5,000 deduction for …"
+    },
+    {
+      "title": "Startup Cost Tax Deductions: The Complete 2026 Guide",
+      "url": "https://startupcosthub.com/guides/startup-cost-deductions",
+      "snippet": "The IRS allows you to deduct up to $5,000 in startup costs and $5,000 in organizational costs in your first year of business. Amounts …"
+    },
+    {
+      "title": "Startup Cost Deduction: How to Write Off Business Launch Expenses …",
+      "url": "https://bluecloudcpa.com/guides/small-business-startup-costs-deduction-irc-195",
+      "snippet": "Sep 5, 2026 · IRC 195 allows new businesses to deduct up to $5,000 of startup costs and $5,000 of organizational costs in the first …"
+    },
+    {
+      "title": "Start Up Costs: IRS Rules & Deductions [2024 Tax Guide]",
+      "url": "https://financeliterate.blog/irs-start-up-costs-rules-deductions",
+      "snippet": "Aug 5, 2026 · Master IRS Section 195 rules for start-up cost deductions. Learn the $5,000 limit, $50,000 phase-out, and 180-month …"
+    },
+    {
+      "title": "A Complete Guide to Startup Cost Deductions and Organizational Expenses …",
+      "url": "https://www.nsktglobal.com/usa/blog/startup-cost-deductions-guide",
+      "snippet": "Dec 2, 2025 · This guide shows you exactly how to maximize startup cost deductions and organizational expense deductions for …"
+    }
+  ]
+}

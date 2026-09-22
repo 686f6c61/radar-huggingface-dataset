@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Stage-org/appworld-4b-300-LH-27b-z-iter2-epoch3-agent-rl-epoch2",
+  "slug": "stage-org-appworld-4b-300-lh-27b-z-iter2-epoch3-agent-rl-epoch2",
+  "author": "Stage-org",
+  "url": "https://huggingface.co/Stage-org/appworld-4b-300-LH-27b-z-iter2-epoch3-agent-rl-epoch2",
+  "created_at": "2026-09-22T02:49:10.000Z",
+  "updated_at": "2026-09-22T02:49:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609757,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Offres de stage étudiant",
+      "url": "https://www.stage.fr/stage/",
+      "snippet": "Trouvez votre prochain stage, grâce aux milliers d’offres de stage dans de nombreux domaines et choisissez la ville de votre futur …"
+    },
+    {
+      "title": "Offres de stage en France - Recherche et trouve un stage !",
+      "url": "https://www.welcometothejungle.com/fr/pages/stage",
+      "snippet": "Un stage en entreprise est une période de formation pratique durant laquelle un étudiant ou un jeune diplômé intègre une entreprise …"
+    },
+    {
+      "title": "Rechercher un stage | 1jeune1solution",
+      "url": "https://www.1jeune1solution.gouv.fr/stages",
+      "snippet": "Toutes les solutions pour l‘avenir des jeunes"
+    },
+    {
+      "title": "Stage offres dans Bordeaux | Stage.fr",
+      "url": "https://www.stage.fr/jobs/stage-jobs-in-bordeaux/",
+      "snippet": "493 stage offres disponibles dans Bordeaux sur Stage.fr. Postulez ou créez une alerte pour recevoir les nouvelles offres par email."
+    },
+    {
+      "title": "Offres en Stage - 2387 Offres Disponibles - Septembre 2026",
+      "url": "https://jobs-stages.letudiant.fr/offres/contrat-stage",
+      "snippet": "Un stage est une expérience professionnelle temporaire réalisée par un élève ou un étudiant dans le cadre de sa formation. Il permet …"
+    }
+  ]
+}

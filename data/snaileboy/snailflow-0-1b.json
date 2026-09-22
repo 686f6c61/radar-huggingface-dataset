@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "snailEboy/snailflow-0.1b",
+  "slug": "snaileboy-snailflow-0-1b",
+  "author": "snailEboy",
+  "url": "https://huggingface.co/snailEboy/snailflow-0.1b",
+  "created_at": "2026-09-22T02:47:12.000Z",
+  "updated_at": "2026-09-22T02:47:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.co.uk: Low Prices in Electronics, Books, Sports Equipment",
+      "url": "https://www.amazon.co.uk/",
+      "snippet": "The Amazon Barclaycard Gift Cards Amazon Currency Converter Payment Methods Help Shop with Points Top Up Your Account …"
+    },
+    {
+      "title": "Amazon.co.uk: Amazon Prime",
+      "url": "https://www.amazon.co.uk/amazonprime",
+      "snippet": "Unlock the best of Amazon with Prime Convenient delivery options Enjoy unlimited Same-Day delivery on eligible orders above £20 …"
+    },
+    {
+      "title": "Your Account - Amazon.co.uk",
+      "url": "https://www.amazon.co.uk/gp/css/homepage.html",
+      "snippet": "Manage your Amazon.co.uk account, track orders, view purchase history, and update payment methods."
+    },
+    {
+      "title": "Prime Video: Watch movies, TV shows, sports, and live TV - Amazon.co.uk",
+      "url": "https://www.amazon.co.uk/gp/video/storefront/",
+      "snippet": "Stream popular movies, TV shows, sports, and live TV included with Prime, and even more with add-on subscriptions. Watch …"
+    },
+    {
+      "title": "Amazon.co.uk: Home",
+      "url": "https://www.amazon.co.uk/stores/Home/page/F2BF0F22-8C07-4194-B754-F6E583316374",
+      "snippet": "Amazon.co.uk Today's Deals Resale Outlet Subscribe & Save Vouchers Amazon Prime Prime Video Prime Student Mobile Apps …"
+    }
+  ]
+}

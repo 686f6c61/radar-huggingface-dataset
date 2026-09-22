@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "eric-z2/WL-context-qwen-14b-fold_4",
+  "slug": "eric-z2-wl-context-qwen-14b-fold_4",
+  "author": "eric-z2",
+  "url": "https://huggingface.co/eric-z2/WL-context-qwen-14b-fold_4",
+  "created_at": "2026-09-21T20:38:22.000Z",
+  "updated_at": "2026-09-21T20:38:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84011288,
+  "storage_human": "84 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Shield (TV Series 2002–2008) - Full cast & crew - IMDb",
+      "url": "https://www.imdb.com/title/tt0286486/fullcredits/",
+      "snippet": "The Shield (TV Series 2002–2008) - Cast and crew credits, including actors, actresses, directors, writers and more."
+    },
+    {
+      "title": "The Shield - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Shield",
+      "snippet": "It stars Michael Chiklis as Vic Mackey, the leader of a corrupt Los Angeles Police Department unit loosely based on the Rampart …"
+    },
+    {
+      "title": "The Shield (TV Series 2002–2008) - IMDb",
+      "url": "https://www.imdb.com/title/tt0286486",
+      "snippet": "The Shield: Created by Shawn Ryan. With Michael Chiklis, Michael Jace, Jay Karnes, CCH Pounder. A gang of corrupt Los Angeles …"
+    },
+    {
+      "title": "Meet the Cast of FX's The Shield",
+      "url": "https://www.fxnetworks.com/shows/the-shield/cast",
+      "snippet": "Learn more about the main cast members from FX's award-winning crime series The Shield."
+    },
+    {
+      "title": "The Shield (TV Series 2002) - Cast & Crew — The Movie Database …",
+      "url": "https://www.themoviedb.org/tv/1414-the-shield/cast",
+      "snippet": "The story of an inner-city Los Angeles police precinct where some of the cops aren't above breaking the rules or working against their …"
+    }
+  ]
+}

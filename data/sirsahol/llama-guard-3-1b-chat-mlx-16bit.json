@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/Llama-Guard-3-1B-chat-mlx-16bit",
+  "slug": "sirsahol-llama-guard-3-1b-chat-mlx-16bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/Llama-Guard-3-1B-chat-mlx-16bit",
+  "created_at": "2026-09-22T02:20:22.000Z",
+  "updated_at": "2026-09-22T05:42:53.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "apple-silicon",
+    "conversational",
+    "transformers",
+    "facebook",
+    "meta",
+    "pytorch",
+    "llama-3",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "arxiv:2404.12241",
+    "arxiv:2312.06674",
+    "arxiv:2204.05862",
+    "arxiv:2308.01263",
+    "arxiv:2403.03853",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "base_model:meta-llama/Llama-Guard-3-1B",
+    "base_model:finetune:meta-llama/Llama-Guard-3-1B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 247,
+  "trending_score": 0,
+  "parameters": 1498482688,
+  "parameters_human": "1.50B",
+  "storage_bytes": 3014192194,
+  "storage_human": "3.0 GB",
+  "base_model": "meta-llama/Llama-Guard-3-1B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SFR Mail - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/sfr-mail/bd-p/SFR-Mail",
+      "snippet": "5 days ago · Devenir de ma boite mail neuf.fr 25/08/2026 | Posté dans SFR Mail Réponse certifiée par SFR par patrick511 0 Likes 4 …"
+    },
+    {
+      "title": "RED by SFR - Mon compte client - Infos & Questions",
+      "url": "https://communaute.red-by-sfr.fr/t5/Mon-compte-client/bd-p/forum-compte-client",
+      "snippet": "Jul 9, 2026 · Posez toutes vos questions sur nos services en ligne et l’appli RED & Moi"
+    },
+    {
+      "title": "Comment accéder à ma boîte mail SFR - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/sfr-mail/comment-acc%C3%A9der-%C3%A0-ma-bo%C3%AEte-mail-sfr/td-p/2312731",
+      "snippet": "Aug 6, 2021 · Il suffit de cliquer sur \" Je souhaite accéder à SFR Mail depuis mon ordinateur \" ou \" Je souhaite accéder à SFR Mail …"
+    },
+    {
+      "title": "Utiliser une adresse @sfr en 2026 = impossible - RED by SFR",
+      "url": "https://communaute.red-by-sfr.fr/t5/Mon-compte-client/Utiliser-une-adresse-sfr-en-2026-impossible/td-p/621829",
+      "snippet": "May 26, 2026 · Compte SFR Mail inaccessible Conformément aux Conditions Générales d’Utilisation, la boîte mail …"
+    },
+    {
+      "title": "Transfer dossier mail SFR vers ordinateur - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-34734833-transfer-dossier-mail-sfr-vers-ordinateur",
+      "snippet": "Jul 19, 2017 · Transfer dossier mail SFR vers ordinateur Clé usb Aurélie - Modifié le 19 juil. 2017 à 15:20 Utilisateur anonyme - 19 juil. …"
+    }
+  ]
+}

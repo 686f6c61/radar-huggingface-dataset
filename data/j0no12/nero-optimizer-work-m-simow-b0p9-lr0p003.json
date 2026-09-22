@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "j0no12/nero-optimizer-work-m-simow-b0p9-lr0p003",
+  "slug": "j0no12-nero-optimizer-work-m-simow-b0p9-lr0p003",
+  "author": "j0no12",
+  "url": "https://huggingface.co/j0no12/nero-optimizer-work-m-simow-b0p9-lr0p003",
+  "created_at": "2026-09-22T00:17:18.000Z",
+  "updated_at": "2026-09-22T00:17:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "nero_dense_control_mlx",
+    "nero",
+    "optimizer-research",
+    "m-simow",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4013862,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "提问页-百度知道",
+      "url": "https://zhidao.baidu.com/msubmit/new/?ask_fr=search_header&query=%E5%AE%89%E5%9B%BD%E5%B9%BF%E5%9C%BA%20Wikipedia",
+      "snippet": "0 /49 将问题补充完整可更快获得回答"
+    },
+    {
+      "title": "win11我的电脑怎么调出来 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1896721724942738108.html",
+      "snippet": "Oct 11, 2025 · win11我的电脑怎么调出来在Windows 11系统中，可通过以下三种方法将“此电脑”（原“我的电脑”）图标调出至桌面：方 …"
+    },
+    {
+      "title": "Freebase和Wikipedia的区别到底是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/20784184",
+      "snippet": "简单说，Freebase是个类似wikipedia的创作共享类网站，所有内容都由用户添加，采用创意共用许可证，可以自由引用。两者之间最 …"
+    },
+    {
+      "title": "Wikipedia - 知乎",
+      "url": "https://www.zhihu.com/topic/19596544/hot",
+      "snippet": "中文名维基百科。 中文名维基百科。 查看全部内容"
+    },
+    {
+      "title": "bigbang一天一天的歌词、要原版歌词和中文版翻译的如题 谢谢了",
+      "url": "https://zhidao.baidu.com/question/1830391065414523220.html",
+      "snippet": "Aug 15, 2014 · BigBang 《一天一天》歌词 一天一天 离开吧 Ye the finally I realize that I'm nothing without you I was so wrong forgive …"
+    }
+  ]
+}

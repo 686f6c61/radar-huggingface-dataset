@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "eric-z2/WL-context-distilroberta-fold_1",
+  "slug": "eric-z2-wl-context-distilroberta-fold_1",
+  "author": "eric-z2",
+  "url": "https://huggingface.co/eric-z2/WL-context-distilroberta-fold_1",
+  "created_at": "2026-09-21T20:42:34.000Z",
+  "updated_at": "2026-09-21T20:42:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81533960,
+  "parameters_human": "81.5M",
+  "storage_bytes": 326148152,
+  "storage_human": "326 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "21 najwyżej ocenianych atrakcji turystycznych w Delhi i Nowym Delhi",
+      "url": "https://tripates.com/pl/21-top-rated-tourist-attractions-in-delhi-new-delhi",
+      "snippet": "Co warto zobaczyć i zrobić w Delhi i New Delhi są obfite i obejmują doświadczanie różnorodnego przemysłu artystycznego i …"
+    },
+    {
+      "title": "Delhi w jeden dzień: Najważniejsze atrakcje i doświadczenia w stolicy …",
+      "url": "https://travelinsight.net/pl/india/one-day-in-delhi-itinerary-top-things-to-do-in-delhi-india",
+      "snippet": "Odkryj najlepsze z Delhi w jeden dzień: zwiedź Czerwony Fort, przespaceruj się po Chandni Chowk, odwiedź Jama Masjid i zachwyć …"
+    },
+    {
+      "title": "30 najlepszych atrakcji w Delhi, Indie | 2026 - RestGeo: RestGeo",
+      "url": "https://restgeo.com/pl/attractions/india/top-30-attractions-in-delhi",
+      "snippet": "Jun 6, 2026 · Co zobaczyć i gdzie pojechać w Delhi? Najpiękniejsze miejsca, główne symbole i popularne atrakcje Delhi. Zdjęcia i …"
+    },
+    {
+      "title": "Najlepsze atrakcje w Delhi – co warto zobaczyć? - Planet Escape",
+      "url": "https://planetescape.pl/blog/najlepsze-atrakcje-w-delhi-co-warto-zobaczyc/",
+      "snippet": "Jan 20, 2026 · W tym artykule zebraliśmy najlepsze atrakcje w Delhi w formie praktycznego przewodnika wyjazdowego. Podpowiemy …"
+    },
+    {
+      "title": "Nowe Delhi na własną rękę (przewodnik 2026) - bobrpodrozy.pl",
+      "url": "https://www.bobrpodrozy.pl/przewodnik/indie/nowe-delhi",
+      "snippet": "Odkryj oszałamiające zabytki, takie jak imponujące Muzeum Narodowe, słynna na całym świecie Świątynia Lotosu i ikoniczna India …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ishaanamahajan/hw2-automl-3d-print-long-print",
+  "slug": "ishaanamahajan-hw2-automl-3d-print-long-print",
+  "author": "ishaanamahajan",
+  "url": "https://huggingface.co/ishaanamahajan/hw2-automl-3d-print-long-print",
+  "created_at": "2026-09-21T23:15:56.000Z",
+  "updated_at": "2026-09-21T23:15:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "autogluon",
+  "languages": [],
+  "tags": [
+    "autogluon",
+    "tabular-classification",
+    "automl",
+    "dataset:yennik16/3d-print-jobs-tabular",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2296572,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "《我们走在大路上》的歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/548642.html",
+      "snippet": "《我们走在大路上》的歌词如下： 作词：李劫夫 作曲：李劫夫 演唱：王其慧 我们走在大路上，意气风发斗志昂扬 毛主席领导革命队 …"
+    },
+    {
+      "title": ".pez是什么文件 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/334698921.html",
+      "snippet": "Prezi是数据文件它是少见的一种桌面演示格式文件。 可打开PEZ文件的软件: Prezi Desktop. Prezi Desktop，用于进行“缩放介绍， ”这 …"
+    },
+    {
+      "title": "XLOOKUP函数怎么用-百度经验",
+      "url": "https://jingyan.baidu.com/article/7f41ececab929e193c095c4f.html",
+      "snippet": "Sep 6, 2019 · XLOOKUP函数怎么用,最近官方新增了XLOOKUP函数，和VLOOKUP相比，只是字母从V变成了X，到底有什么变化， …"
+    },
+    {
+      "title": "很困惑ppt和prezi的区别，用ppt能做出prize效果，反过来却不行，到底 …",
+      "url": "https://www.zhihu.com/question/36111157?write",
+      "snippet": "PPT没有prezi生动，Prezi是3D的，而且可以浏览全局也可以查看细节，播放时像电影镜头一样。 不过我不推荐你用 prezi，因为中文 …"
+    },
+    {
+      "title": "Prezi - 知乎",
+      "url": "https://www.zhihu.com/topic/19600044/hot",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

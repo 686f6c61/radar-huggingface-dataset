@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_rank_16",
+  "slug": "wijewardhanant-xnli_en_and_ur_5000_percentage_1_40_lora_rank_16",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_rank_16",
+  "created_at": "2026-09-22T01:24:37.000Z",
+  "updated_at": "2026-09-22T01:25:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1007548307,
+  "storage_human": "1.0 GB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Change Nintendo Account Time Zone",
+      "url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/63085/~/how-to-change-nintendo-account-time-zone",
+      "snippet": "Select Family group. Select the supervised account with the time zone you wish to change. Select User information. In the “Profile” …"
+    },
+    {
+      "title": "How to Change the Date and Time on Nintendo Switch 2",
+      "url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/68492/~/how-to-change-the-date-and-time-on-nintendo-switch%26nbsp%3B2",
+      "snippet": "Synchronize Clock Using the Internet: Press the A Button to toggle the option to synchronize the console with the date and time on …"
+    },
+    {
+      "title": "Nintendo Switch 2 First-Time Setup and Connection",
+      "url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/68482/~/nintendo-switch%26nbsp%3B2-first-time-setup-and-connection",
+      "snippet": "Follow the on-screen prompts to complete the first-time setup. Some of these settings can be configured later. System language and …"
+    },
+    {
+      "title": "Error Code: 51099 - Nintendo Support",
+      "url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/3127/~/error-code%3A-51099",
+      "snippet": "Possible solutions If your connection worked before but recently stopped, power cycle your modem and router, and then try again. If …"
+    },
+    {
+      "title": "How to Remove Services Authorized to View Your Nintendo Account ...",
+      "url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/27497/~/how-to-remove-services-authorized-to-view-your-nintendo-account-information",
+      "snippet": "In this article, you'll learn how to view or remove the third-party services that are currently authorized to receive information about …"
+    }
+  ]
+}

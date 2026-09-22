@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "moonjongsul/kcare_hang_cup_pink_upper_smolvla_260921",
+  "slug": "moonjongsul-kcare_hang_cup_pink_upper_smolvla_260921",
+  "author": "moonjongsul",
+  "url": "https://huggingface.co/moonjongsul/kcare_hang_cup_pink_upper_smolvla_260921",
+  "created_at": "2026-09-22T01:07:21.000Z",
+  "updated_at": "2026-09-22T01:08:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4533571384,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Betty White - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Betty_White",
+      "snippet": "Betty Marion Ludden (née White; January 17, 1922 – December 31, 2021) was an American actress and comedian. [1][2] A pioneer of …"
+    },
+    {
+      "title": "Betty White - IMDb",
+      "url": "https://www.imdb.com/name/nm0924508/",
+      "snippet": "Betty White. Actress: The Proposal. Betty White was born in Oak Park, Illinois, to Christine Tess (Cachikis), a homemaker, and …"
+    },
+    {
+      "title": "Betty White filmography - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Betty_White_filmography",
+      "snippet": "Betty White (January 17, 1922 – December 31, 2021) was an American actress and comedian known for her roles on television. …"
+    },
+    {
+      "title": "Betty White - Biography - IMDb",
+      "url": "https://www.imdb.com/name/nm0924508/bio/",
+      "snippet": "Betty White. Actress: The Proposal. Betty White was born in Oak Park, Illinois, to Christine Tess (Cachikis), a homemaker, and …"
+    },
+    {
+      "title": "Betty White - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Betty_White",
+      "snippet": "Betty Marion White Ludden (Oak Park (Illinois), 17 januari 1922 – Brentwood (Los Angeles), 31 december 2021) was een …"
+    }
+  ]
+}

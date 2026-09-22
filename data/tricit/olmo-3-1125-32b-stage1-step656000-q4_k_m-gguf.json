@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Tricit/Olmo-3-1125-32B-stage1-step656000-Q4_K_M-GGUF",
+  "slug": "tricit-olmo-3-1125-32b-stage1-step656000-q4_k_m-gguf",
+  "author": "Tricit",
+  "url": "https://huggingface.co/Tricit/Olmo-3-1125-32B-stage1-step656000-Q4_K_M-GGUF",
+  "created_at": "2026-09-21T20:43:27.000Z",
+  "updated_at": "2026-09-21T20:44:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "base_model:from-our-page/Olmo-3-1125-32B-stage1-step656000",
+    "base_model:quantized:from-our-page/Olmo-3-1125-32B-stage1-step656000",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32233522176,
+  "parameters_human": "32.23B",
+  "storage_bytes": 19482031968,
+  "storage_human": "19.5 GB",
+  "base_model": "from-our-page/Olmo-3-1125-32B-stage1-step656000",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FlixTrain: Buche günstige Bahntickets und reise mit dem Zug",
+      "url": "https://www.flixtrain.de/",
+      "snippet": "Zahlreiche Zugverbindungen mit FlixTrain. Reise mit dem Zug durch Deutschland. Finde jetzt Deine Verbindung und buche Dein …"
+    },
+    {
+      "title": "Flixtrain Verbindungen | Streckennetz & Fahrplan",
+      "url": "https://www.flixtrain.de/zugverbindungen",
+      "snippet": "Hier geht's zu den Flixtrains-Verbindungen. Entdecke unser Streckennetz und buche noch heute Deine Zugverbindung."
+    },
+    {
+      "title": "Zug von und nach Hamburg | Flixtrain",
+      "url": "https://www.flixtrain.de/zug/hamburg",
+      "snippet": "Zug von und nach Hamburg Gratis WLAN, Steckdosen & Toiletten E-Ticket und variable Zahlungsmöglichkeiten Flexibles Umbuchen …"
+    },
+    {
+      "title": "Alle Zugverbindungen & Zugfahrpläne | FlixTrain",
+      "url": "https://www.flixtrain.de/fahrplan",
+      "snippet": "Auf der Suche nach Zugfahrplänen und -verbindungen von FlixTrain? Hier findest Du alle Infos, die du brauchst - von Abfahrtszeiten …"
+    },
+    {
+      "title": "Zug von und nach Darmstadt - FlixTrain",
+      "url": "https://www.flixtrain.de/zug/darmstadt",
+      "snippet": "Zug von und nach Darmstadt Gratis WLAN, Steckdosen & Toiletten E-Ticket und variable Zahlungsmöglichkeiten Flexibles …"
+    }
+  ]
+}

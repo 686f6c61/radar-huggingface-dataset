@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mikefalcos/gptoss20b-quark-awq-int4",
+  "slug": "mikefalcos-gptoss20b-quark-awq-int4",
+  "author": "mikefalcos",
+  "url": "https://huggingface.co/mikefalcos/gptoss20b-quark-awq-int4",
+  "created_at": "2026-09-22T00:40:39.000Z",
+  "updated_at": "2026-09-22T00:40:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arnaque Bagages !!! - eDreams - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/arnaque-bagages-t380158.html",
+      "snippet": "Apr 13, 2026 · EDreams est une compagnie de voleurs!!! Elle vous indique sur ma réservation que les bagages sont inclus, or arrivé …"
+    },
+    {
+      "title": "Uitzendingen | Radar",
+      "url": "https://radar.avrotros.nl/uitzendingen/",
+      "snippet": "Kijk en luister de uitzendingen van consumentenprogramma Radar terug, met Antoinette Hertsenberg op televisie. Radar gaat in de …"
+    },
+    {
+      "title": "eDreams - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/edreams-f497.html",
+      "snippet": "Apr 20, 2026 · eDreams : Entrez dans le forum dédié au site edreams.fr, spécialisé dans la vente de produits et services touristiques …"
+    },
+    {
+      "title": "Actueel - Radar",
+      "url": "https://radar.avrotros.nl/actueel",
+      "snippet": "1 day ago · Een hogere energierekening, gemeentelijke heffingen die stijgen, informatie over het nieuwe privacybeleid en de laatste …"
+    },
+    {
+      "title": "網路買機票的慘痛經驗，千萬別在\"edreams\"買機票",
+      "url": "https://www.backpackers.com.tw/forum/showthread.php?t=10332913",
+      "snippet": "Sep 6, 2019 · 看到價錢有變動, 為什麼還要按確認呢? 你說只有一個位子所以是只買一張? 和馬航價格相差2,1xx怎麼會變成損失12,8xx …"
+    }
+  ]
+}

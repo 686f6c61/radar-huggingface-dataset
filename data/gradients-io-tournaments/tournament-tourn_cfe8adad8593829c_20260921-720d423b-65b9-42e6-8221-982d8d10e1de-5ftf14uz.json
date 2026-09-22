@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_cfe8adad8593829c_20260921-720d423b-65b9-42e6-8221-982d8d10e1de-5FtF14uZ",
+  "slug": "gradients-io-tournaments-tournament-tourn_cfe8adad8593829c_20260921-720d423b-65b9-42e6-8221-982d8d10e1de-5ftf14uz",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_cfe8adad8593829c_20260921-720d423b-65b9-42e6-8221-982d8d10e1de-5FtF14uZ",
+  "created_at": "2026-09-22T02:47:06.000Z",
+  "updated_at": "2026-09-22T02:48:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13476865232,
+  "storage_human": "13.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pless.pl | pszczyna. codziennie. Lokalne informacje, wiadomości, …",
+      "url": "https://www.pless.pl/",
+      "snippet": "Najważniejsze informacje z Pszczyny i okolic. Wiadomości, wydarzenia, komunikaty, aktualności drogowe, sport, biznes i życie …"
+    },
+    {
+      "title": "Wiadomości - pless.pl",
+      "url": "https://www.pless.pl/wiadomosci",
+      "snippet": "Wiadomości - najważniejsze i najnowsze informacje z Pszczyny i okolic. Wiadomości, foto i wideo."
+    },
+    {
+      "title": "pless.pl - Facebook",
+      "url": "https://www.facebook.com/plesspl/",
+      "snippet": "Gwiazdą Andrzej Seweryn! 🍂 Od 7 do 11 października Pszczyna i Goczałkowice- Zdrój wypełnią się literackimi spotkaniami. 🎭 Gwiazdą …"
+    },
+    {
+      "title": "pless.pl - na sygnale - Facebook",
+      "url": "https://www.facebook.com/pszczynskiedrogi/",
+      "snippet": "pless.pl - na sygnale. 24,595 followers · 72 talking about this. Bieżące informacje drogowe z powiatu Pszczyńskiego i najbliższych …"
+    },
+    {
+      "title": "Pszczyna INFO - Wiadomości i informacje z Pszczyny",
+      "url": "https://pszczynainfo.pl/",
+      "snippet": "4 days ago · Portal Pszczyna Info dostarcza najciekawszych informacji dla mieszkańców Pszczyny. Wydarzenia z Pszczyny w …"
+    }
+  ]
+}

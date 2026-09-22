@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ang187/mia_larsen_ltx23",
+  "slug": "ang187-mia_larsen_ltx23",
+  "author": "ang187",
+  "url": "https://huggingface.co/ang187/mia_larsen_ltx23",
+  "created_at": "2026-09-21T23:30:21.000Z",
+  "updated_at": "2026-09-21T23:30:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2670496065,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Premier League Fixtures, Results & Live Matches on TV Season 2026/27",
+      "url": "https://www.premierleague.com/en/matches/premier-league",
+      "snippet": "View the Premier League fixtures for season 2026/27, along with scores & results for this weeks matches, visit the official website of …"
+    },
+    {
+      "title": "Premier League Football News, Fixtures, Scores & Results",
+      "url": "https://www.premierleague.com/en/",
+      "snippet": "Visit the official website of the Premier League, for all the latest Premier League news and features."
+    },
+    {
+      "title": "View Latest Premier League Fixtures | Fantasy Premier League",
+      "url": "https://fantasy.premierleague.com/en/fixtures",
+      "snippet": "To view the latest Gameweek fixtures and help choose your next Fantasy Premier League team, visit the official website of the …"
+    },
+    {
+      "title": "Possible Premier League fixture changes in 2026/27",
+      "url": "https://www.premierleague.com/en/news/3774835",
+      "snippet": "Aug 29, 2026 · Please note that all Premier League fixtures are subject to change, while some can be subject to further amendment. …"
+    },
+    {
+      "title": "Fixture Difficulty Rating | Fantasy Premier League",
+      "url": "https://fantasy.premierleague.com/en/fixtures/fdr",
+      "snippet": "For help planning your FPL transfer and team selection strategy, view our fixture difficulty rating (FDR). For more information, visit the …"
+    }
+  ]
+}

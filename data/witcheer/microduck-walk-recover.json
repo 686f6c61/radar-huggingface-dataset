@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "witcheer/microduck-walk-recover",
+  "slug": "witcheer-microduck-walk-recover",
+  "author": "witcheer",
+  "url": "https://huggingface.co/witcheer/microduck-walk-recover",
+  "created_at": "2026-09-21T20:33:17.000Z",
+  "updated_at": "2026-09-21T20:33:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793808,
+  "storage_human": "793808 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dallas Stars Roster | Dallas Stars - NHL.com",
+      "url": "https://www.nhl.com/stars/roster/",
+      "snippet": "The official 2026 - 2027 roster of the Dallas Stars, including position, height, weight, date of birth, age, and birth place."
+    },
+    {
+      "title": "Dallas Stars NHL Roster - ESPN",
+      "url": "https://www.espn.com/nhl/team/roster/_/name/dal/dallas-stars",
+      "snippet": "Mar 12, 2000 · Explore the 2026-27 Dallas Stars NHL roster on ESPN. Includes full details on goalies, defense, center, left and right …"
+    },
+    {
+      "title": "Official Dallas Stars Website | Dallas Stars - NHL.com",
+      "url": "https://www.nhl.com/stars/",
+      "snippet": "The official National Hockey League website including news, rosters, stats, schedules, teams, and video."
+    },
+    {
+      "title": "2025-26 Dallas Stars Roster, Stats, Injuries, Scores, Results ...",
+      "url": "https://www.hockey-reference.com/teams/DAL/2026.html",
+      "snippet": "Check out the latest Dallas Stars Roster, Stats, Injuries, Scores, Results, Shootouts and more on Hockey-Reference.com"
+    },
+    {
+      "title": "Dallas Stars - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dallas_Stars",
+      "snippet": "The Dallas Stars are a professional ice hockey team based in Dallas. The Stars compete in the National Hockey League (NHL) as a …"
+    }
+  ]
+}

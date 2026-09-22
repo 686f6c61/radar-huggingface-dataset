@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_42_AdaLoRA_Qwen3-8b",
+  "slug": "wijewardhanant-xnli_en_and_hi_5000_percentage_1_42_adalora_qwen3-8b",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_42_AdaLoRA_Qwen3-8b",
+  "created_at": "2026-09-22T00:30:42.000Z",
+  "updated_at": "2026-09-22T00:31:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-8B-Base",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 787170731,
+  "storage_human": "787 MB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - SliderBar Bluffton – Sliders & Craft Cocktails",
+      "url": "https://www.sliderbar-bluffton.com/",
+      "snippet": "SliderBar in Bluffton, SC. Family‑owned in Bluffton offering elevated comfort food — signature sliders made from humanely raised …"
+    },
+    {
+      "title": "SLIDERBAR LLC in Bluffton, SC | Company Information & Reviews",
+      "url": "https://www.bizapedia.com/sc/sliderbar-llc.html",
+      "snippet": "Jul 31, 2023 · Discover Company Info on SLIDERBAR LLC in Bluffton, SC, such as Contacts, Addresses, Reviews, and Registered …"
+    },
+    {
+      "title": "SliderBar - Updated November 2025",
+      "url": "https://www.checkle.com/biz/sliderbar-bluffton",
+      "snippet": "Family owned & operated serving \"from scratch\" meals daily. We are Bluffton's premier destination for Sliders and Craft Cocktails!"
+    },
+    {
+      "title": "Menu - SliderBar Bluffton – Sliders & Craft Cocktails",
+      "url": "https://www.sliderbar-bluffton.com/menu",
+      "snippet": "Menu for SliderBar in Bluffton, SC. Explore latest menu with photos and reviews."
+    },
+    {
+      "title": "SlideBar",
+      "url": "https://www.slidebar.io/",
+      "snippet": "Seamless slide creation. Faster formatting. Easier editing."
+    }
+  ]
+}

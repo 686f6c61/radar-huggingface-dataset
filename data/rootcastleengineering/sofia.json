@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "rootcastleengineering/sofia",
+  "slug": "rootcastleengineering-sofia",
+  "author": "rootcastleengineering",
+  "url": "https://huggingface.co/rootcastleengineering/sofia",
+  "created_at": "2026-09-21T23:43:11.000Z",
+  "updated_at": "2026-09-22T00:28:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sofia-engine",
+  "languages": [],
+  "tags": [
+    "sofia-engine",
+    "edge-ai",
+    "industrial-ai",
+    "scientific-computing",
+    "embedded-ai",
+    "signal-processing",
+    "digital-signal-processing",
+    "predictive-maintenance",
+    "condition-monitoring",
+    "vibration-analysis",
+    "anomaly-detection",
+    "industrial-iot",
+    "iiot",
+    "telemetry",
+    "edge-computing",
+    "tinyml",
+    "on-device-learning",
+    "embedded-systems",
+    "machine-health",
+    "time-series",
+    "python",
+    "typescript",
+    "c",
+    "en",
+    "doi:10.57967/hf/10549",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=10baf96390d265162c34eebf91cf64c9",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=10baf96390d265162c34eebf91cf64c9",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

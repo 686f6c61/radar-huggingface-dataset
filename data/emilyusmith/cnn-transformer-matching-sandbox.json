@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "emilyusmith/cnn-transformer-matching-sandbox",
+  "slug": "emilyusmith-cnn-transformer-matching-sandbox",
+  "author": "emilyusmith",
+  "url": "https://huggingface.co/emilyusmith/cnn-transformer-matching-sandbox",
+  "created_at": "2026-09-21T23:18:03.000Z",
+  "updated_at": "2026-09-21T23:18:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spodnie tkaninowe w paski Kolor różowy - SINSAY - 520DP-30P",
+      "url": "https://www.sinsay.com/pl/pl/spodnie-tkaninowe-w-paski-520dp-30p?msockid=06be5bb96d596fc1114a4c656c8a6e60",
+      "snippet": "Spodnie tkaninowe w paski Kolor różowy - SINSAY - 520DP-30P. Aby korzystać z serwisu musisz mieć włączoną obsługę …"
+    },
+    {
+      "title": "Streifenstoffhose Farbe Pink - SINSAY - 520DP-30P",
+      "url": "https://www.sinsay.com/de/de/streifenstoffhose-520dp-30p?msockid=06be5bb96d596fc1114a4c656c8a6e60",
+      "snippet": "Streifenstoffhose, Hosen, Pink."
+    },
+    {
+      "title": "Manuals and Datasheets | Citizen Systems",
+      "url": "https://www.citizen-systems.com/en/support/manuals-and-datasheets/520dpa?cHash=5145d6214ab9be9040498adff9342851",
+      "snippet": "Browse all manuals and datasheets for current and discontinued Citizen printer products including label, POS, mobile, kiosk and photo."
+    },
+    {
+      "title": "Instrukcja Citizen 520DP Kalkulator z drukarką - Manuall",
+      "url": "https://manuall.pl/citizen-520dp-kalkulator-z-drukarka/",
+      "snippet": "Szukasz instrukcji swojego Citizen 520DP Kalkulator z drukarką w innym języku? Wybierz preferowany język na naszej stronie …"
+    },
+    {
+      "title": "KEYS AND SWITCHES DESCRIPTION - Citizen Systems",
+      "url": "https://www.citizen-systems.com/resource/calculators/imported/calculator/520dp_manual.pdf",
+      "snippet": "1) Die IRAM Sicherheitsnorm bezieht sich nur auf die Sicherheitsbedingungen, die im IEC 60950/A11 festgelegt sind und nicht auf die …"
+    }
+  ]
+}

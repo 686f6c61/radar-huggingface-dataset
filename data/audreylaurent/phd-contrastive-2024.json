@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "audreylaurent/phd-contrastive-2024",
+  "slug": "audreylaurent-phd-contrastive-2024",
+  "author": "audreylaurent",
+  "url": "https://huggingface.co/audreylaurent/phd-contrastive-2024",
+  "created_at": "2026-09-21T23:33:56.000Z",
+  "updated_at": "2026-09-21T23:34:01.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "美国 NASA 宣布 2028 年登月总体目标不变，这预示着什么？",
+      "url": "https://www.zhihu.com/question/2010872039750275538",
+      "snippet": "美国航空航天局（NASA）：2028年登月总体目标不变。美国航空航天局（nasa）：2028年登月总体目标不变。"
+    },
+    {
+      "title": "如何看待NASA CFL3D代码开源？ - 知乎",
+      "url": "https://www.zhihu.com/question/62445240?write",
+      "snippet": "Jul 14, 2017 · cfl3d开源很好呀，这是人类共同的财富，而且美国佬会占领道义的高点。 国内这边损cfl3d，认为开源多此一举的，想一 …"
+    },
+    {
+      "title": "NASA 将波音星际客机事故正式列为「A 级事故」，这对该项目意味着 …",
+      "url": "https://www.zhihu.com/question/2008512769553613828",
+      "snippet": "NASA采用了不干预的合同方式，限制了其对星际线研发项目的深入观察和了解； 波音的系统工程能力不足，过于依赖子承包商且同样 …"
+    },
+    {
+      "title": "如何看待NASA的gl-10? - 知乎",
+      "url": "https://www.zhihu.com/question/31212371",
+      "snippet": "亮点：体积大，前无古人的大（虽然只有3米）；多动力，果然nasa还是有钱（赶紧恢复航天飞机去，玩什么小飞机）；折叠桨，起飞 …"
+    },
+    {
+      "title": "为什么天文消息基本是NASA在公布？ - 知乎",
+      "url": "https://www.zhihu.com/question/11600649053",
+      "snippet": "NASA的官网看一次震撼一次 整个网站极少极少提到美国，提到国会，提到政府，基本找不到任何一个官员的脑袋和脸。只有我们的宇 …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "blaj/Qwen3.5-9B-abliterated-int8-ov",
+  "slug": "blaj-qwen3-5-9b-abliterated-int8-ov",
+  "author": "blaj",
+  "url": "https://huggingface.co/blaj/Qwen3.5-9B-abliterated-int8-ov",
+  "created_at": "2026-09-21T21:05:01.000Z",
+  "updated_at": "2026-09-21T23:29:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3_5_text",
+    "int8",
+    "abliterated",
+    "uncensored",
+    "qwen",
+    "intel",
+    "arc",
+    "text-generation",
+    "conversational",
+    "base_model:lukey03/Qwen3.5-9B-abliterated",
+    "base_model:finetune:lukey03/Qwen3.5-9B-abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8993888144,
+  "storage_human": "9.0 GB",
+  "base_model": "lukey03/Qwen3.5-9B-abliterated",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pomysł na kolację - AniaGotuje.pl",
+      "url": "https://aniagotuje.pl/pomysl-na/kolacja",
+      "snippet": "Znajdź idealne pomysly na kolacje: naleśniki, placki, doskonałe dania na ciepło oraz pyszne i zdrowe sałatki. Sprawdź przepisy na …"
+    },
+    {
+      "title": "Pomysł na kolację – domowe przepisy: szybkie | Przepisy.pl",
+      "url": "https://www.przepisy.pl/przepisy/posilek/kolacja",
+      "snippet": "Zastanówcie się, jaki posiłek pasuje do Was najlepiej: zazwyczaj przygotowujecie kolację na szybko czy macie trochę więcej czasu? …"
+    },
+    {
+      "title": "Kolacje - Kwestia Smaku",
+      "url": "https://www.kwestiasmaku.com/przepisy/kolacje",
+      "snippet": "Krewetki po toskańsku Ser camembert zapiekany z figami Poke bowl z krewetkami sweet chili Sałatka na ciepło z makaronem orzo, …"
+    },
+    {
+      "title": "Fajna szybka kolacja - 112 przepisów - Fajne Gotowanie",
+      "url": "https://fajnegotowanie.pl/przepisy/tagi/fajna-szybka-kolacja/",
+      "snippet": "Szukasz pomysłu na fajną szybka kolację? Oto kilka propozycji potraw, które doskonale sprawdzą się na kolację dla rodziny. Zobacz, …"
+    },
+    {
+      "title": "Pomysł na kolację – 174 niebanalnych przepisów, co zrobić na kolację",
+      "url": "https://smakota.pl/pomysl-na-kolacje/",
+      "snippet": "Co na kolację? Odkryj 174 genialnych pomysłów na kolację, które odmienią Twoje wieczory! Od egzotycznych smaków po szybkie …"
+    }
+  ]
+}

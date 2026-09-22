@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_LoRA_Qwen3-8b",
+  "slug": "wijewardhanant-xnli_en_and_hi_5000_percentage_1_40_lora_qwen3-8b",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_LoRA_Qwen3-8b",
+  "created_at": "2026-09-21T23:41:09.000Z",
+  "updated_at": "2026-09-21T23:41:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-8B-Base",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 524784659,
+  "storage_human": "525 MB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Annesbrook Church",
+      "url": "https://www.annesbrook.co.nz/",
+      "snippet": "Annesbrook Church is a church that loves God and are passionate about seeing people live a Jesus-filled life. We are located in four …"
+    },
+    {
+      "title": "Annesbrook Church - YouTube",
+      "url": "https://www.youtube.com/@AnnesbrookChurchOnline/streams",
+      "snippet": "3 days ago · Thank you for watching our Sunday messages from Annesbrook Church in New Zealand. If you'd like to know more …"
+    },
+    {
+      "title": "Annesbrook - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Annesbrook",
+      "snippet": "Annesbrook is an industrial suburb of Nelson, New Zealand. It lies between State Highway 6 and Nelson Airport to the southwest of …"
+    },
+    {
+      "title": "Annesbrook — Annesbrook Church",
+      "url": "https://www.annesbrook.co.nz/online",
+      "snippet": "Welcome to Annesbrook Online! Every Sunday we go live on YouTube from our Saxton Location so you can experience a piece of …"
+    },
+    {
+      "title": "Annesbrook, Nelson Map — Satellite & Street Map, News & Weather",
+      "url": "https://www.mkiwi.com/maps/Nelson/Annesbrook_Nelson_New_Zealand_map.html",
+      "snippet": "Explore Annesbrook, Nelson, New Zealand, with this interactive street and satellite map. You can “grab” the Annesbrook map and …"
+    }
+  ]
+}

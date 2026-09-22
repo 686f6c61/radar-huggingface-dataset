@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_PiSSA_llama-3.2",
+  "slug": "wijewardhanant-xnli_en_and_ur_5000_percentage_1_120_pissa_llama-3-2",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_PiSSA_llama-3.2",
+  "created_at": "2026-09-21T23:14:06.000Z",
+  "updated_at": "2026-09-21T23:14:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.2-3B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.2-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 292567763,
+  "storage_human": "293 MB",
+  "base_model": "meta-llama/Llama-3.2-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Python for Data Analysis: A Practical Guide – Real Python",
+      "url": "https://realpython.com/python-for-data-analysis/",
+      "snippet": "Jun 22, 2026 · In this tutorial, you'll learn data analysis with Python by following a structured workflow with pandas, Matplotlib, and …"
+    },
+    {
+      "title": "Data Analysis with Python - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/data-analysis/data-analysis-with-python/",
+      "snippet": "Jun 26, 2026 · Pandas is a Python library used for handling structured (relational or labeled) data. Built on top of NumPy, it provides …"
+    },
+    {
+      "title": "Python for Data Analysis, 3E - Wes McKinney",
+      "url": "https://wesmckinney.com/book/",
+      "snippet": "Jan 23, 2022 · The book has been updated for pandas 2.0.0 and Python 3.10. The changes between the 2nd and 3rd editions are …"
+    },
+    {
+      "title": "Data Analysis with Python: The Complete Guide (NumPy, Pandas ...",
+      "url": "https://openpython.org/articles/data-analysis-with-python",
+      "snippet": "Jun 13, 2026 · Learn data analysis with Python using NumPy, Pandas, and Matplotlib. Covers the full workflow from loading and …"
+    },
+    {
+      "title": "Data Analysis with Python - Coursera",
+      "url": "https://www.coursera.org/learn/data-analysis-with-python?msockid=1e3ce39a0d1663763293f4460c91625c",
+      "snippet": "Analyzing data with Python is a key skill for aspiring Data Scientists and Analysts! This course takes you from the basics of importing …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "BRWA-AI/brwa-qwen3-sorani-endpoint",
+  "slug": "brwa-ai-brwa-qwen3-sorani-endpoint",
+  "author": "BRWA-AI",
+  "url": "https://huggingface.co/BRWA-AI/brwa-qwen3-sorani-endpoint",
+  "created_at": "2026-09-21T20:26:55.000Z",
+  "updated_at": "2026-09-21T20:48:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ku"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "qwen3-asr",
+    "kurdish",
+    "sorani",
+    "ckb",
+    "kurdistan",
+    "audio",
+    "speech",
+    "low-resource-language",
+    "ku",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:finetune:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2038052480,
+  "parameters_human": "2.04B",
+  "storage_bytes": 10091347599,
+  "storage_human": "10.1 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "/thread/36377092-were-your-parents-racist- - the Data Lounge",
+      "url": "https://www.datalounge.com/thread/36377092-were-your-parents-racist-",
+      "snippet": "Apr 1, 2026 · In the 60s, my mom got annoyed when black people were in TV commercials."
+    },
+    {
+      "title": "/thread/26727753-michael-b.-jordan-s-former-assistant-says-they-had ...",
+      "url": "https://www.datalounge.com/thread/26727753-michael-b.-jordan-s-former-assistant-says-they-had-moment-in-the-closet",
+      "snippet": "Aug 13, 2020 · Michael B. Jordan's Former Assistant Says They Had \"Moment\" In The Closet Sounds to me like girlfriend is engaged …"
+    }
+  ]
+}

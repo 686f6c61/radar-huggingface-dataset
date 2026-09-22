@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "konizquants/GLM-5.3",
+  "slug": "konizquants-glm-5-3",
+  "author": "konizquants",
+  "url": "https://huggingface.co/konizquants/GLM-5.3",
+  "created_at": "2026-09-21T23:27:49.000Z",
+  "updated_at": "2026-09-21T23:27:49.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "license:other",
+    "eval-results",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755663627013,
+  "storage_human": "755.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inhaltsangabe.de • Inhaltsangaben, Biografien & Hintergrundwissen",
+      "url": "https://www.inhaltsangabe.de/",
+      "snippet": "Zuverlässige Inhaltsangaben, Schriftsteller-Biografien und Literaturwissen: Mehr als 200 Zusammenfassungen von …"
+    },
+    {
+      "title": "Wie schreibt man eine Inhaltsangabe? • Tipps und Beispiele",
+      "url": "https://www.inhaltsangabe.de/anleitungen/inhaltsangabe/",
+      "snippet": "Jan 28, 2010 · Eine Inhaltsangabe vermittelt die wesentlichen Punkte der Handlung eines Buches, Dramas oder auch eines Films. …"
+    },
+    {
+      "title": "Inhaltsangabe schreiben • Wie geht das? · Studyflix",
+      "url": "https://studyflix.de/deutsch/inhaltsangabe-schreiben-2850",
+      "snippet": "Mit einer Inhaltsangabe willst du deinen Leser über den Inhalt eines Textes informieren. Hier erklären wir dir, wie du dabei vorgehst."
+    },
+    {
+      "title": "Inhaltsangabe Beispiel • Musterlösung · [mit Video] - Studyflix",
+      "url": "https://studyflix.de/deutsch/inhaltsangabe-beispiel-2899",
+      "snippet": "Möchtest du wissen, wie eine gelungene Inhaltsangabe aussieht? Hier und im Video zeigen wir dir an einem Beispiel, wie du die …"
+    },
+    {
+      "title": "Inhaltsangabe - Übungskönig",
+      "url": "https://www.uebungskoenig.de/deutsch/7-klasse/inhaltsangabe/",
+      "snippet": "In einer Inhaltsangabe wird der Inhalt eines Artikels, Films, Buches oder einer anderen Textsorte knapp und sachlich wiedergegeben. …"
+    }
+  ]
+}

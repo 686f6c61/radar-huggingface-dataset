@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_42_VeRA",
+  "slug": "wijewardhanant-tydiqa_en_and_swahili_3000_percentage_1_42_vera",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_42_VeRA",
+  "created_at": "2026-09-22T02:44:48.000Z",
+  "updated_at": "2026-09-22T02:44:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123920576,
+  "storage_human": "124 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eclipse Downloads | The Eclipse Foundation",
+      "url": "https://www.eclipse.org/downloads/",
+      "snippet": "The Eclipse Foundation - home to a global community, the Eclipse IDE, Jakarta EE and over 415 open source projects, including …"
+    },
+    {
+      "title": "Eclipse Foundation | Powering Open Innovation",
+      "url": "https://www.eclipse.org/",
+      "snippet": "The Eclipse Foundation hosts 450+ open source projects with vendor-neutral governance, enabling global collaboration in …"
+    },
+    {
+      "title": "eclipse左侧项目栏不见了怎么办-百度经验",
+      "url": "https://jingyan.baidu.com/article/cbcede07f3293b42f40b4dec.html",
+      "snippet": "Jul 18, 2019 · eclipse左侧项目栏不见了怎么办,eclie左侧项目栏不见了怎么办？不知道误触了什么导致eclie左侧的项目栏不见了，该怎 …"
+    },
+    {
+      "title": "油藏Eclipse入门经验 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/7908e85c4f7376ee481ad296.html",
+      "snippet": "Feb 16, 2020 · 油藏Eclipse入门经验,Eclie是斯伦贝谢公司开发的一款优秀的油藏数值模拟软件，但因为其小众化，所以学习资料较 …"
+    },
+    {
+      "title": "eclipse调试的时候，断点不准，怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/21623434",
+      "snippet": "Sep 9, 2013 · eclipse调试的时候，断点不准，已经反复进行过多次的重新生成和部署。数次碰到这问题，真是令人很恼火，…"
+    }
+  ]
+}

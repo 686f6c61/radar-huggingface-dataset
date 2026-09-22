@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Blackvapormax/stable-diffusion-1.5-onnx",
+  "slug": "blackvapormax-stable-diffusion-1-5-onnx",
+  "author": "Blackvapormax",
+  "url": "https://huggingface.co/Blackvapormax/stable-diffusion-1.5-onnx",
+  "created_at": "2026-09-21T20:50:43.000Z",
+  "updated_at": "2026-09-21T20:50:43.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "stable-diffusion",
+    "stable-diffusion-diffusers",
+    "text-to-image",
+    "arxiv:2207.12598",
+    "arxiv:2112.10752",
+    "arxiv:2103.00020",
+    "arxiv:2205.11487",
+    "arxiv:1910.09700",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4266717265,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zmiana SWZ po terminie na pytania – co wtedy?",
+      "url": "https://noweprzetargi.pl/zmiana-swz-po-terminie-na-pytania/",
+      "snippet": "Zamawiający zmienił dokumentację, przesunął termin składania ofert, ale termin na pytania dawno minął. Możesz jeszcze coś …"
+    },
+    {
+      "title": "Przesłanki odrzucenia oferty ICT a zapisy w SWZ",
+      "url": "https://noweprzetargi.pl/przeslanki-odrzucenia-oferty-ict-zapisy-swz/",
+      "snippet": "Przesłanki odrzucenia oferty ICT obowiązują od 3 kwietnia 2026. Czy zamawiający musi je wpisać do SWZ? Sprawdź, co dzieli …"
+    },
+    {
+      "title": "Środki zakładowego funduszu świadczeń socjalnych",
+      "url": "https://noweprzetargi.pl/srodki-zakladowego-funduszu-swiadczen-socjalnych/",
+      "snippet": "Opinie i interpretacje intepretacje prawo zamówień publicznych, opinie prawo zamówień publicznych, opinie UZP, ustawa PZP …"
+    },
+    {
+      "title": "Najlepsze szkolenia z PZP - sprawdź najbliższe terminy szkoleń",
+      "url": "https://noweprzetargi.pl/zamowienia-publiczne/nadchodzace-szkolenia/",
+      "snippet": "3 days ago · Szkolenia z zamówień publicznych prowadzone przez najlepszych ekspertów – szkolenia lepsze niż te, do których …"
+    },
+    {
+      "title": "Wybór brokera ubezpieczeniowego przez podmiot zobowiązany do …",
+      "url": "https://noweprzetargi.pl/wybor-brokera-ubezpieczeniowego-przez-podmiot-zobowiazany-do-stosowania-ustawy-prawo-zamowien-publicznych/",
+      "snippet": "Przepisy ustawy z dnia 29 stycznia 2004 r. – Prawo zamówień publicznych (Dz. U. z 2013 r. poz. 907, z późn. zm.), dalej ustawa …"
+    }
+  ]
+}

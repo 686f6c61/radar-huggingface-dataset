@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "angelic123/fastwam_droid_wan21_1p3b_step100k",
+  "slug": "angelic123-fastwam_droid_wan21_1p3b_step100k",
+  "author": "angelic123",
+  "url": "https://huggingface.co/angelic123/fastwam_droid_wan21_1p3b_step100k",
+  "created_at": "2026-09-22T01:07:44.000Z",
+  "updated_at": "2026-09-22T01:08:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "world-model",
+    "video-diffusion",
+    "droid",
+    "wan2.1",
+    "base_model:Wan-AI/Wan2.1-T2V-1.3B",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-1.3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4124243269,
+  "storage_human": "4.1 GB",
+  "base_model": "Wan-AI/Wan2.1-T2V-1.3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EDTECH USER ONBOARDING FIRST MONTHS METRICS",
+      "url": "https://economictimes.indiatimes.com/topic/edtech-user-onboarding-first-months-metrics",
+      "snippet": "6 hours ago · A Reddit user claims that changing his joining availability from “Immediately” to a two- or three-week notice period …"
+    },
+    {
+      "title": "EDTECH USER ONBOARDING FIRST MONTHS METRICS - The …",
+      "url": "https://economictimes.indiatimes.com/topic/edtech-user-onboarding-first-months-metrics/news",
+      "snippet": "3 days ago · A Reddit user claims that changing his joining availability from “Immediately” to a two- or three-week notice period …"
+    },
+    {
+      "title": "Edtech metrics and key performance indicators: Driving User …",
+      "url": "https://fastercapital.com/content/Edtech-metrics-and-key-performance-indicators--Driving-User-Engagement--Edtech-KPIs-for-Customer-Growth.html",
+      "snippet": "Aug 25, 2026 · Here's an in-depth look at some of the pivotal edtech KPIs: 1. user Activation rate: This KPI measures the percentage …"
+    },
+    {
+      "title": "9 Onboarding Metrics to Track at Your Organization - AIHR",
+      "url": "https://www.aihr.com/blog/onboarding-metrics/",
+      "snippet": "Discover which onboarding metrics help you determine the effectiveness of your onboarding process and welcome new hires with …"
+    },
+    {
+      "title": "Best Practices for EdTech Companies to Onboard Their Users",
+      "url": "https://userguiding.com/blog/how-edtech-companies-onboard-their-users",
+      "snippet": "Apr 2, 2025 · Learn how top EdTech companies like 360Learning onboard new users. Explore real onboarding flows, patterns, and …"
+    }
+  ]
+}

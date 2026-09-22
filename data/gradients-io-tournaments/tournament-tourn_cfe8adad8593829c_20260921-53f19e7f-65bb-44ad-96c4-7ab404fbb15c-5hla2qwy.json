@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_cfe8adad8593829c_20260921-53f19e7f-65bb-44ad-96c4-7ab404fbb15c-5HLA2QWY",
+  "slug": "gradients-io-tournaments-tournament-tourn_cfe8adad8593829c_20260921-53f19e7f-65bb-44ad-96c4-7ab404fbb15c-5hla2qwy",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_cfe8adad8593829c_20260921-53f19e7f-65bb-44ad-96c4-7ab404fbb15c-5HLA2QWY",
+  "created_at": "2026-09-21T20:46:30.000Z",
+  "updated_at": "2026-09-21T20:46:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/e91a84bb06a16f33",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen2.5-3B",
+    "base_model:adapter:unsloth/Qwen2.5-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223924,
+  "storage_human": "131 MB",
+  "base_model": "unsloth/Qwen2.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=ar",
+      "snippet": "الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com in English © 2026 - الخصوصية - البنود"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/?hl=ar-US",
+      "snippet": "محرّك بحث Google متوفّر باللغة: English الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com"
+    },
+    {
+      "title": "Google - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Google",
+      "snippet": "Search Google Search (also known simply as Google) is a search engine operated by Google. It allows users to search or ask for …"
+    }
+  ]
+}

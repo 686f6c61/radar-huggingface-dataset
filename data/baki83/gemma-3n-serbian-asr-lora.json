@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "baki83/gemma-3n-serbian-asr-lora",
+  "slug": "baki83-gemma-3n-serbian-asr-lora",
+  "author": "baki83",
+  "url": "https://huggingface.co/baki83/gemma-3n-serbian-asr-lora",
+  "created_at": "2026-09-21T21:30:48.000Z",
+  "updated_at": "2026-09-21T21:31:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma3n",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 191893445,
+  "storage_human": "192 MB",
+  "base_model": "unsloth/gemma-3n-e4b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Site officiel PMU PLAY® - Paris Hippiques, Sportifs & Poker en ligne",
+      "url": "https://www.pmu.fr/",
+      "snippet": "PMU PLAY® Officiel, le meilleur site de paris hippiques, Paris sportifs et Poker - Turf: 1M€ à gagner chaque jour"
+    },
+    {
+      "title": "Connexion – Site officiel PMU.fr – Paris hippiques, sportifs & poker",
+      "url": "https://login.pmu.fr/",
+      "snippet": "Connectez-vous sur le site PMU.fr pour parier en ligne et retrouvez tous vos paris et vos gains"
+    },
+    {
+      "title": "Connexion – Site officiel PMU.fr – Paris hippiques, sportifs & poker",
+      "url": "https://login.pmu.fr/new",
+      "snippet": ""
+    },
+    {
+      "title": "PMU : Turf, Programme des courses du jour, Résultats, e.Quinté+",
+      "url": "https://www.pmu.fr/turf/",
+      "snippet": "21 hours ago · Pariez en ligne sur toutes les courses hippiques du PMU: pronostics, résultats, cotes, arrivées, rapports, vidéo des …"
+    },
+    {
+      "title": "Authentification - PMU",
+      "url": "https://pmu.eurodislog.com/",
+      "snippet": "Déjà enregistré ? En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies pour vous proposer des services …"
+    }
+  ]
+}

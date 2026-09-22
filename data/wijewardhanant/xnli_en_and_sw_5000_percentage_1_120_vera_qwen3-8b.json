@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_VeRA_Qwen3-8b",
+  "slug": "wijewardhanant-xnli_en_and_sw_5000_percentage_1_120_vera_qwen3-8b",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_VeRA_Qwen3-8b",
+  "created_at": "2026-09-21T23:45:21.000Z",
+  "updated_at": "2026-09-21T23:45:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-8B-Base",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 242146867,
+  "storage_human": "242 MB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Where does Telegram Web save files on PC? : r/Telegram - Reddit",
+      "url": "https://www.reddit.com/r/Telegram/comments/mggzzo/where_does_telegram_web_save_files_on_pc/",
+      "snippet": "Mar 30, 2021 · I'm not using the Telegram application for PC. I'm using Telegram Web in Chrome. So, when I download a video, …"
+    },
+    {
+      "title": "No longer have an option for SMS verification on Telegram web",
+      "url": "https://www.reddit.com/r/Telegram/comments/molsxy/no_longer_have_an_option_for_sms_verification_on/",
+      "snippet": "Apr 11, 2021 · I mostly use Telegram web, and used to have an option to receive an SMS code. Note that I only use it on pc's, can …"
+    },
+    {
+      "title": "剑网三成都捕快任务《钱庄血案》全图文攻略-百度经验",
+      "url": "https://jingyan.baidu.com/article/5970355285835a8fc00740bc.html",
+      "snippet": "Oct 29, 2018 · 重置版成都捕快任务《钱庄血案》全图文攻略"
+    },
+    {
+      "title": "r/Telegram on Reddit: This bot was DMCA'd by Telegram. Are there …",
+      "url": "https://www.reddit.com/r/Telegram/comments/jkuby7/this_bot_was_dmcad_by_telegram_are_there_any/",
+      "snippet": "Oct 30, 2020 · This bot was DMCA'd by Telegram. Are there any other clients on the Android platform that can access these bots? …"
+    },
+    {
+      "title": "Is there a way to bulk download from content protected Telegram ...",
+      "url": "https://www.reddit.com/r/DataHoarder/comments/1akos4k/is_there_a_way_to_bulk_download_from_content/",
+      "snippet": "The Telegram-Media-Downloader web method works, but it's kinda slow. Seems that plus messenger is the \"best\" method since it's …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "eric-z2/WL-no-context-qwen-14b-fold_0",
+  "slug": "eric-z2-wl-no-context-qwen-14b-fold_0",
+  "author": "eric-z2",
+  "url": "https://huggingface.co/eric-z2/WL-no-context-qwen-14b-fold_0",
+  "created_at": "2026-09-21T20:33:03.000Z",
+  "updated_at": "2026-09-21T20:37:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84011288,
+  "storage_human": "84 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prime Video: Filme, Serien, Sport und Live-TV ansehen - Amazon.de",
+      "url": "https://www.amazon.de/gp/video/storefront",
+      "snippet": "Streame im Rahmen deiner Prime-Mitgliedschaft beliebte Filme, Serien, Sport und Live-TV. Mit Zusatzkanälen hast du sogar Zugriff …"
+    },
+    {
+      "title": "Filme und Serien buchen, kaufen und leihen - Prime Video",
+      "url": "https://www.primevideo.com/-/de/store",
+      "snippet": "Tauche bei Prime Video in eine Welt voller Unterhaltung ein. Du kannst die beliebtesten und neuesten Videos buchen, kaufen oder …"
+    },
+    {
+      "title": "Amazon.com: Prime Video: Prime Video",
+      "url": "https://www.primevideo.com/collection/IncludedwithPrime",
+      "snippet": "Season 1・When Neagley learns that a friend from her past has been killed in a suspicious accident, she becomes hell-bent on …"
+    },
+    {
+      "title": "Prime Video",
+      "url": "https://www.primevideo.com/splash/get/?language=de_DE",
+      "snippet": "AGB und Datenschutzerklärung Feedback senden Hilfe © 1996-2026 Amazon.com, Inc. oder Tochtergesellschaften"
+    },
+    {
+      "title": "Prime Video: Watch movies, TV shows, sports, and live TV",
+      "url": "https://www.amazon.com/gp/video/storefront/",
+      "snippet": "Stream popular movies, TV shows, sports, and live TV included with Prime, and even more with add-on subscriptions. Watch …"
+    }
+  ]
+}

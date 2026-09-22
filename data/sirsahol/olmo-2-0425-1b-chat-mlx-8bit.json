@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/OLMo-2-0425-1B-chat-mlx-8bit",
+  "slug": "sirsahol-olmo-2-0425-1b-chat-mlx-8bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/OLMo-2-0425-1B-chat-mlx-8bit",
+  "created_at": "2026-09-22T02:24:07.000Z",
+  "updated_at": "2026-09-22T05:43:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "olmo2",
+    "text-generation",
+    "apple-silicon",
+    "8-bit",
+    "transformers",
+    "en",
+    "arxiv:2501.00656",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "base_model:allenai/OLMo-2-0425-1B",
+    "base_model:quantized:allenai/OLMo-2-0425-1B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 1484916736,
+  "parameters_human": "1.48B",
+  "storage_bytes": 1670959813,
+  "storage_human": "1.7 GB",
+  "base_model": "allenai/OLMo-2-0425-1B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "كيفية توصيل سماعات بلوتوث بجهاز الكمبيوتر ️",
+      "url": "https://tecnobits.com/ar/%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%AA%D9%88%D8%B5%D9%8A%D9%84-%D8%B3%D9%85%D8%A7%D8%B9%D8%A9-%D8%A7%D9%84%D8%A8%D9%84%D9%88%D8%AA%D9%88%D8%AB-%D8%A8%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1/",
+      "snippet": "Dec 29, 2023 · سنعرض لك في هذه المقالة الخطوات التي يتعين عليك اتخاذها لإقران سماعات الرأس بجهاز الكمبيوتر الخاص بك بسرعة وسهولة، سواء كنت تستخدم نظام التشغيل Windows 10 …"
+    },
+    {
+      "title": "طريقة توصيل أي سماعة بلوتوث بالكمبيوتر | شرح ربط اى سماعة بلوتوث علي ...",
+      "url": "https://www.youtube.com/watch?v=0EnveH2lQ8g",
+      "snippet": "شرح طريقة توصيل سماعات البلوتوث بالكمبيوتر نظام ويندوز واستخدامها لإجراء المكالمات والدروس والإجتماعات والاستماع للموسيقى."
+    },
+    {
+      "title": "كيفية توصيل سماعة بلوتوث بالموبايل أو اللابتوب – دليل اقران السماعات",
+      "url": "https://www.majnooncomputer.net/%d9%83%d9%8a%d9%81%d9%8a%d8%a9-%d8%aa%d9%88%d8%b5%d9%8a%d9%84-%d8%b3%d9%85%d8%a7%d8%b9%d8%a9-%d8%a8%d9%84%d9%88%d8%aa%d9%88%d8%ab/",
+      "snippet": "Jun 1, 2026 · في هذا الدليل، سنلقي نظرة على كيفية توصيل سماعة بلوتوث بالموبايل أو باللابتوب الذي يعمل بنظام تشغيل ويندوز أو 10 أو 11 في بضع خطوات فقط، ولنبدأ بالحواسيب:"
+    },
+    {
+      "title": "كيفية توصيل سماعة بلوتوث بالكمبيوتر - هاو عربي",
+      "url": "https://www.how-ar.com/how-to-connect-a-bluetooth-headset-to-the-computer/",
+      "snippet": "Oct 19, 2025 · هذا الدليل الشامل يقدم لك خطوات عملية ومفصلة لضمان اتصال سلس وفعال، سواء كنت تستخدم نظام ويندوز أو ماك، مع توفير حلول فورية لأبرز المشكلات التي قد تعترض طريقك. …"
+    },
+    {
+      "title": "طريقة توصيل أي سماعة بلوتوث بالكمبيوتر - YouTube",
+      "url": "https://www.youtube.com/watch?v=NffSv2dJyBc",
+      "snippet": "Mar 7, 2021 · شرح طريقة توصيل سماعات البلوتوث بالكمبيوتر نظام ويندوز واستخدامها لإجراء المكالمات والدروس والإجتماعات والاستماع للموسيقى."
+    }
+  ]
+}

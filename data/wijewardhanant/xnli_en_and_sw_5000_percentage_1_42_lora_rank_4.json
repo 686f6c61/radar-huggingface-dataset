@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_42_LoRA_rank_4",
+  "slug": "wijewardhanant-xnli_en_and_sw_5000_percentage_1_42_lora_rank_4",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_42_LoRA_rank_4",
+  "created_at": "2026-09-22T00:46:57.000Z",
+  "updated_at": "2026-09-22T00:47:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 252568547,
+  "storage_human": "253 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Downloads · QGIS",
+      "url": "https://download.qgis.org/downloads/",
+      "snippet": "QGIS Downloads ¶ Browse and download QGIS installers, packages, and related files from our comprehensive download repository. …"
+    },
+    {
+      "title": "Releases · qgis/QGIS - GitHub",
+      "url": "https://github.com/qgis/QGIS/releases",
+      "snippet": "QGIS is a free, open source, cross platform (lin/win/mac) geographical information system (GIS) - Releases · qgis/QGIS"
+    },
+    {
+      "title": "Spatial without Compromise · QGIS",
+      "url": "https://qgis.org/",
+      "snippet": "Create maps Explore QGIS's exceptional cartographic design features to craft outstanding maps for desktop, mobile, cloud, and print …"
+    },
+    {
+      "title": "Welcome to the QGIS project!",
+      "url": "https://www2.qgis.org/en/site/",
+      "snippet": "Oct 25, 2024 · New release: 3.38! Get the installer or packages for your Operating System and read the changelog."
+    },
+    {
+      "title": "QGIS Changelog: Versions -",
+      "url": "https://changelog.qgis.org/",
+      "snippet": "QGIS Changelog Discover the comprehensive list of all QGIS versions with detailed changelogs and updates."
+    }
+  ]
+}

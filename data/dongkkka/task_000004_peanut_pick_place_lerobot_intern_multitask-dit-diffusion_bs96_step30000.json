@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_MultiTask-DiT-Diffusion_bs96_step30000",
+  "slug": "dongkkka-task_000004_peanut_pick_place_lerobot_intern_multitask-dit-diffusion_bs96_step30000",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_MultiTask-DiT-Diffusion_bs96_step30000",
+  "created_at": "2026-09-21T23:55:10.000Z",
+  "updated_at": "2026-09-21T23:55:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "multi-task-dit",
+    "diffusion",
+    "dataset:Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 235020054,
+  "parameters_human": "235.0M",
+  "storage_bytes": 940154720,
+  "storage_human": "940 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "当せん番号案内（ロト6） | みずほ銀行",
+      "url": "https://www.mizuhobank.co.jp/takarakuji/check/loto/loto6/index.html",
+      "snippet": "Mar 14, 2026 · 当せん番号案内 (ロト6) 重要なお知らせ 「かんたん残高照会（インターネット残高照会）」は、以下のスケジュール …"
+    },
+    {
+      "title": "ロト6当選番号速報（最新）",
+      "url": "https://loto6.jp/databases/resultsearch",
+      "snippet": "1 day ago · もし読者が次回の当選を狙うのであれば、単なる直感ではなく、こうした「数字の履歴」という名の重力に抗わず、確 …"
+    },
+    {
+      "title": "ロト6のご案内 - 宝くじ公式サイト",
+      "url": "https://www.takarakuji-official.jp/kuji/loto/loto6/",
+      "snippet": "ロト6を買うには？ ロト6は、1口200円で、宝くじ売り場、ネット、一部の銀行のATM、または一部のコンビニエンスストアで購入 …"
+    },
+    {
+      "title": "ロト6当選番号速報 最新回抽選結果 ｜ 確率をアップする法",
+      "url": "https://takarakuji-loto.jp/tousenp.html",
+      "snippet": "ロト6の抽選結果は19:00更新 ロト6とは ナンバーズ当選番号速報 ロト6 当選番号速報（抽選結果） ロト6 当選番号速報！ 第2138回 …"
+    },
+    {
+      "title": "ロト6データ 当選番号・金額一覧・出目表 - ne",
+      "url": "https://www.ne.jp/asahi/chaosworld/loto6/loto6dataf.html",
+      "snippet": "ロト6の当選番号、当選金額、口数、キャリーオーバー額の初回から最新回までのデータ一覧です。 また、当選番号は出目表で表示 …"
+    }
+  ]
+}

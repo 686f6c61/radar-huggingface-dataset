@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "matthewlop/prompt-engineering",
+  "slug": "matthewlop-prompt-engineering",
+  "author": "matthewlop",
+  "url": "https://huggingface.co/matthewlop/prompt-engineering",
+  "created_at": "2026-09-21T23:45:06.000Z",
+  "updated_at": "2026-09-21T23:45:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lindenstraße | ARD Plus",
+      "url": "https://www.ardplus.de/details/a0T01000000eJH6-lindenstrasse",
+      "snippet": "Staffel Beschreibung: Das erste Jahr „Lindenstraße“: Da werden Erinnerungen an Marion Beimers ersten Liebeskummer, das Chaos …"
+    },
+    {
+      "title": "Suche | ARD Plus",
+      "url": "https://www.ardplus.de/kategorie/lindenstrasse",
+      "snippet": "Der Klassiker des Vorabendprogramms: Die Lindenstraße ist zurück! Ab jetzt jede Woche eine neue Staffel auf ARD Plus streamen."
+    },
+    {
+      "title": "Homepage - Lindenstraße - Das Erste in der ARD Mediathek - WDR",
+      "url": "https://www1.wdr.de/daserste/lindenstrasse/index.html",
+      "snippet": "Lindenstrasse.de ist der offizielle Internetauftritt der gleichnamigen TV-Serie, die von 1985 bis 2020 in Koproduktion von …"
+    },
+    {
+      "title": "Alle Folgen der Lindenstrasse - Folgen - Lindenstraße - Das ... - WDR",
+      "url": "https://www1.wdr.de/daserste/lindenstrasse/folgen/index.html",
+      "snippet": "Für alle Fans von Helga, Gabi, Klaus und Co. und alle, die Lust auf eine Reise in 34 Jahre deutsche Fernsehgeschichte haben, …"
+    },
+    {
+      "title": "Suche | ARD Plus",
+      "url": "https://www.ardplus.de/kategorie/Lindenstra%C3%9Fe2",
+      "snippet": "Die zweite der bekannten Kultserie jetzt anschauen auf ARD Plus. Ab jetzt jede Woche eine neue Staffel auf ARD Plus streamen!"
+    }
+  ]
+}

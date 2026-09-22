@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yunju1115/gr00t-n1.7-h2-sharpa-tele108-ego107-0921-ckpt40000",
+  "slug": "yunju1115-gr00t-n1-7-h2-sharpa-tele108-ego107-0921-ckpt40000",
+  "author": "yunju1115",
+  "url": "https://huggingface.co/yunju1115/gr00t-n1.7-h2-sharpa-tele108-ego107-0921-ckpt40000",
+  "created_at": "2026-09-22T02:49:02.000Z",
+  "updated_at": "2026-09-22T03:11:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 6910499416,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comparison chart | Canadian High Interest Savings Bank Accounts",
+      "url": "https://www.highinterestsavings.ca/chart/",
+      "snippet": "Last updated: September 13, 2026 This chart summarizes Canadian high interest savings account rates and is for informational …"
+    },
+    {
+      "title": "第一调查网可靠吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/25046521",
+      "snippet": "3.问卷要成功了才能给钱，不然就只有抽奖机会，我辛辛苦苦折腾来折腾去，账号里赫赫然1.74元？？？得五十块往上好像才能提出 …"
+    },
+    {
+      "title": "小约翰 - 知乎",
+      "url": "https://www.zhihu.com/people/lu-chen-xi-9-98",
+      "snippet": "3 days ago · 教父的资源并不属于柯里昂家族，迈克尔也继承不了，甚至老头子复生也不好使了。 教父的电影和原著小说的结尾区别不 …"
+    },
+    {
+      "title": "Discussion forum | Canadian High Interest Savings Bank Accounts",
+      "url": "https://www.highinterestsavings.ca/forum/",
+      "snippet": "Mar 17, 2026 · General comparisons Discussion about high interest savings bank accounts in general"
+    },
+    {
+      "title": "Eidosper - 知乎",
+      "url": "https://www.zhihu.com/people/eidosper",
+      "snippet": "4 days ago · 高通不提供驱动，那小米硬做鸿蒙可能连打电话都做不到。 至于拍照，也许勉强能做出来，但算法估计全废。 GPU也只 …"
+    }
+  ]
+}

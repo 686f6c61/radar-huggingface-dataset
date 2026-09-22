@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "MARS-Retokenization/olmo2-7b-instruct-inv-mse-lastpos-final",
+  "slug": "mars-retokenization-olmo2-7b-instruct-inv-mse-lastpos-final",
+  "author": "MARS-Retokenization",
+  "url": "https://huggingface.co/MARS-Retokenization/olmo2-7b-instruct-inv-mse-lastpos-final",
+  "created_at": "2026-09-21T23:13:37.000Z",
+  "updated_at": "2026-09-21T23:16:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "olmo2",
+    "tokenization",
+    "robustness",
+    "safety",
+    "adversarial-tokenization",
+    "arxiv:2503.02174",
+    "base_model:allenai/OLMo-2-1124-7B-Instruct",
+    "base_model:finetune:allenai/OLMo-2-1124-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298617344,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14597276128,
+  "storage_human": "14.6 GB",
+  "base_model": "allenai/OLMo-2-1124-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mars (planète) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mars_(plan%C3%A8te)",
+      "snippet": "Mars est une fois et demie plus éloignée du Soleil que la Terre, sur une orbite sensiblement plus elliptique, et reçoit, selon sa position …"
+    },
+    {
+      "title": "Global Petcare, Food & Nutrition, and Snacking Brands | Mars",
+      "url": "https://www.mars.com/",
+      "snippet": "Mars is the world’s leading manufacturer of chocolate, chewing gum, mints and fruity confections. Our Associates work hard to …"
+    },
+    {
+      "title": "Mars - NASA Science",
+      "url": "https://mars.nasa.gov/",
+      "snippet": "Aug 19, 2026 · Mars is one of the most explored bodies in our solar system, and it's the only planet where we've sent rovers to …"
+    },
+    {
+      "title": "Mars - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mars",
+      "snippet": ""
+    },
+    {
+      "title": "La planète Mars - CNES",
+      "url": "https://cnes.fr/dossiers/planete-mars",
+      "snippet": "Dec 8, 2025 · Lorsqu’il y a des tempêtes sur Mars, l’atmosphère devient très poussiéreuse, et le ciel se teinte de rouge : un vrai …"
+    }
+  ]
+}

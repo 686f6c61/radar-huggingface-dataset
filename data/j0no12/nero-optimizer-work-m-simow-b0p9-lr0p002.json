@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "j0no12/nero-optimizer-work-m-simow-b0p9-lr0p002",
+  "slug": "j0no12-nero-optimizer-work-m-simow-b0p9-lr0p002",
+  "author": "j0no12",
+  "url": "https://huggingface.co/j0no12/nero-optimizer-work-m-simow-b0p9-lr0p002",
+  "created_at": "2026-09-22T00:17:15.000Z",
+  "updated_at": "2026-09-22T00:17:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "nero_dense_control_mlx",
+    "nero",
+    "optimizer-research",
+    "m-simow",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4013862,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sinsay - Great fashion, great prices",
+      "url": "https://www.sinsay.com/pl/pl/?msockid=35923f6e344b693f18d028b235c368b8",
+      "snippet": "Odkryj najnowsze trendy w najlepszych cenach w sklepie internetowym marki Sinsay. Poznaj szeroką ofertę produktów dla całej …"
+    },
+    {
+      "title": "Sinsay - Great fashion, great prices | Kупуйте онлайн",
+      "url": "https://www.sinsay.com/ua/uk/?msockid=35923f6e344b693f18d028b235c368b8",
+      "snippet": "Відкрий для себе останні тренди за найкращими цінами в інтернет-магазині Sinsay. Ознайомся з широким асортиментом …"
+    },
+    {
+      "title": "Sinsay - Great fashion, great prices | Pirk internetu",
+      "url": "https://www.sinsay.com/lt/lt/?msockid=35923f6e344b693f18d028b235c368b8",
+      "snippet": "Atraskite naujausias tendencijas puikiomis kainomis Sinsay prekės ženklo internetinėje parduotuvėje. Atraskite platų prekių …"
+    },
+    {
+      "title": "Sinsay - Great fashion, great prices | Купи онлайн",
+      "url": "https://www.sinsay.com/bg/bg/?msockid=35923f6e344b693f18d028b235c368b8",
+      "snippet": "Открийте най-новите тенденции на страхотни цени, само в онлайн магазина на Sinsay. Открийте широката гама от продукти …"
+    },
+    {
+      "title": "Sinsay - Great fashion, great prices | Shoppe online",
+      "url": "https://www.sinsay.com/de/de/?msockid=35923f6e344b693f18d028b235c368b8",
+      "snippet": "Erhalte die neusten Trends zu attraktiven Preisen in unserem Sinsay Online-Shop. Entdecke eine vielfältige Auswahl für die ganze …"
+    }
+  ]
+}

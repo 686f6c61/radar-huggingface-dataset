@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Ar4ikov/Qwen3.8-27B-Uncensored-AWQ-W4A16-ASYM-HyperQwen-fast",
+  "slug": "ar4ikov-qwen3-8-27b-uncensored-awq-w4a16-asym-hyperqwen-fast",
+  "author": "Ar4ikov",
+  "url": "https://huggingface.co/Ar4ikov/Qwen3.8-27B-Uncensored-AWQ-W4A16-ASYM-HyperQwen-fast",
+  "created_at": "2026-09-22T02:18:14.000Z",
+  "updated_at": "2026-09-22T03:55:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "awq",
+    "w4a16",
+    "asymmetric",
+    "compressed-tensors",
+    "hyperqwen",
+    "speculative-decoding",
+    "vision",
+    "uncensored",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Ar4ikov/Qwen3.8-27B-Uncensored-AWQ-W4A16-ASYM",
+    "base_model:quantized:Ar4ikov/Qwen3.8-27B-Uncensored-AWQ-W4A16-ASYM",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 16119521186,
+  "storage_human": "16.1 GB",
+  "base_model": "Ar4ikov/Qwen3.8-27B-Uncensored-AWQ-W4A16-ASYM",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "commodity - Αγγλοελληνικό Λεξικό WordReference.com",
+      "url": "https://www.wordreference.com/engr/commodity",
+      "snippet": "Συνώνυμα: goods, consumer goods, merchandise, materials, products, περισσότερα… Συμφράσεις: a [precious, valuable, strong, …"
+    },
+    {
+      "title": "commodity meaning in Greek — αγαθά, εμπόρευμα | FreeDict",
+      "url": "https://freedict.com/translate/english-greek/commodity",
+      "snippet": "commodity in Greek is αγαθά, εμπόρευμα — commodity means a raw material or basic good that is bought and sold in bulk, such as …"
+    },
+    {
+      "title": "commodity — Translation in Greek - TechDico",
+      "url": "https://www.techdico.com/translation/english-greek/commodity.html",
+      "snippet": "commodity means a material of economic interest in an earth resource. αγαθό (commodity) σημαίνει υλικό οικονομικού …"
+    },
+    {
+      "title": "COMMODITY - ελληνική μετάφραση - λεξικό bab.la",
+      "url": "https://www.babla.gr/%ce%b1%ce%b3%ce%b3%ce%bb%ce%b9%ce%ba%ce%b1-%ce%b5%ce%bb%ce%bb%ce%b7%ce%bd%ce%b9%ce%ba%ce%b1/commodity",
+      "snippet": "Βρείτε όλες τις μεταφράσεις του commodity στο Ελληνικά όπως αγαθό, αγορά βασικών προϊόντων, συμφωνία για τα προϊόντα …"
+    },
+    {
+      "title": "commodity - Βικιλεξικό",
+      "url": "https://el.wiktionary.org/wiki/commodity",
+      "snippet": "Ουσιαστικό επεξεργασία commodity (en) (οικονομία) το αγαθό, το προϊόν, το εμπόρευμα All commodities are exchanged for money. …"
+    }
+  ]
+}

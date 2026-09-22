@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ddalcu/MiMo-V2.6-Distill-Qwen-9B-MLX-Serve-6bit",
+  "slug": "ddalcu-mimo-v2-6-distill-qwen-9b-mlx-serve-6bit",
+  "author": "ddalcu",
+  "url": "https://huggingface.co/ddalcu/MiMo-V2.6-Distill-Qwen-9B-MLX-Serve-6bit",
+  "created_at": "2026-09-21T23:21:35.000Z",
+  "updated_at": "2026-09-21T23:23:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mlx-serve",
+    "agentic",
+    "tool-use",
+    "image-text-to-text",
+    "conversational",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 9416221429,
+  "storage_human": "9.4 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‫ترجمة query في العربيّة | قاموس إنجليزي - عربي | Britannica English",
+      "url": "https://arabic.britannicaenglish.com/query",
+      "snippet": "I posted a query on a forum and now I'm waiting for an answer. I have a query about my order. The librarian responded to my query."
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "Home - Query",
+      "url": "https://www.query.ai/",
+      "snippet": "Query is a federated search platform for security data providing expanded data visibility without centralization."
+    },
+    {
+      "title": "ماذا تعني query؟ | قاموس الإنجليزية-العربية Lingoland",
+      "url": "https://lingolandedu.com/ar/english-arabic-dictionary/query",
+      "snippet": "The teacher might query your answer if it's not well-supported. قد يشكك المعلم في إجابتك إذا لم تكن مدعومة جيدًا."
+    },
+    {
+      "title": "query - قاموس WordReference.com إنجليزي - عربي",
+      "url": "https://www.wordreference.com/enar/query",
+      "snippet": "في القوائم: Things that can be canceled, essay words, c2 THINKING AND SPEAKING, وكذلك..... مرادفات: ask, inquire, enquire, question, …"
+    }
+  ]
+}

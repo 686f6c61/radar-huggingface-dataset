@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_llama-3.2",
+  "slug": "wijewardhanant-xnli_en_and_ur_5000_percentage_1_40_lora_llama-3-2",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_llama-3.2",
+  "created_at": "2026-09-21T22:39:02.000Z",
+  "updated_at": "2026-09-21T22:39:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.2-3B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.2-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 292567763,
+  "storage_human": "293 MB",
+  "base_model": "meta-llama/Llama-3.2-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "افلام سكس مجانية وفيديوهات XXX: موقع افلام سكس | xHamster",
+      "url": "https://ara.xhamster.com/",
+      "snippet": "افلام سكس مجانية وفيديوهات XXX حصرية هنا على xHamster. شاهد فوراً أكثر من 6 مليون فيديو نيك وهواة على أقوى موقع سكس!"
+    },
+    {
+      "title": "Porn Dude - أفضل قائمة مواقع إباحية في العالم",
+      "url": "https://theporndude.com/ar",
+      "snippet": "- البورندود يقيم أفضل المواقع الإباحية ويرتب كل المواقع الإباحية المجانية والمدفوعة بناءا على الجودة! ستجد فيديوهات جنسية عالية الدقة على المواقع الاباحية الأفضل والأكثر أمانا على شبكة الإنترنت في …"
+    },
+    {
+      "title": "افلام سكس إباحية للنساء | xHamster",
+      "url": "https://ara.xhamster.com/categories/porn-for-women",
+      "snippet": "اتفرج على افلام سكس إباحية للنساء على xHamster. شوف كل فيديوهات XXX إباحية للنساء دلوقتي!"
+    },
+    {
+      "title": "أفلام سكس مجانية - فيديوهات إباحية HD من Ujizz",
+      "url": "https://www.ujizz.xxx/?hl=ar",
+      "snippet": "شاهد أفلام إباحية بجودة 4K مذهلة عبر Ujizz. استمتع بمكتبة ضخمة من فيديوهات السكس المحدثة يوميًا."
+    },
+    {
+      "title": "'اباحي' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/%D8%A7%D8%A8%D8%A7%D8%AD%D9%8A",
+      "snippet": "XNXX.COM 'اباحي' Search, free sex videos فشخ كس مشعر ضيق سكس عربي ساخن فحل سعودي ينيك خدامة جزائرية تحب زب كبير 10.6k 87% 16min - 1080p"
+    }
+  ]
+}

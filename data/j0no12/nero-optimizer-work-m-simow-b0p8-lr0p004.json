@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "j0no12/nero-optimizer-work-m-simow-b0p8-lr0p004",
+  "slug": "j0no12-nero-optimizer-work-m-simow-b0p8-lr0p004",
+  "author": "j0no12",
+  "url": "https://huggingface.co/j0no12/nero-optimizer-work-m-simow-b0p8-lr0p004",
+  "created_at": "2026-09-22T00:16:58.000Z",
+  "updated_at": "2026-09-22T00:17:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "nero_dense_control_mlx",
+    "nero",
+    "optimizer-research",
+    "m-simow",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4013862,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official NRL Ladder, for Round 27, 2026 Telstra Premiership - NRL.com",
+      "url": "https://www.nrl.com/ladder/",
+      "snippet": "View the official 2026 NRL ladder, standings, Telstra Premiership ladder, Women's Telstra Premiership ladder, Witzer Preseason …"
+    },
+    {
+      "title": "Draw, NRL Scores, Results for Finals Week 3, 2026 Telstra Premiership ...",
+      "url": "https://www.nrl.com/draw/",
+      "snippet": "The 2026 Telstra Premiership draw, NRL draw, live NRL scores; results, fixture, schedule, State of Origin draw, Pre-season …"
+    },
+    {
+      "title": "The official website of the National Rugby League | NRL.com",
+      "url": "https://www.nrl.com/",
+      "snippet": "Keep up to date with the latest Telstra Premiership and NRL news, NRLW news, videos, draw, ladder, scores, statistics, highlights, …"
+    },
+    {
+      "title": "View Official NRL Stats & NRLW competition stats | NRL.com",
+      "url": "https://www.nrl.com/stats/",
+      "snippet": "The official NRL stats of the National Rugby League, NRL and NRLW player statistics, as well as NRL and NRLW competition statistics."
+    },
+    {
+      "title": "Official NRLW, National Women's Rugby League | NRL.com",
+      "url": "https://www.nrl.com/nrlw/",
+      "snippet": "Further information on the Telstra Women's Premiership Draw, Stats, Ladder, Player Profiles, and Competitions from the most recent …"
+    }
+  ]
+}

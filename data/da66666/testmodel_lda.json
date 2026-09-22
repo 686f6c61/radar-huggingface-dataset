@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "da66666/testmodel_lda",
+  "slug": "da66666-testmodel_lda",
+  "author": "da66666",
+  "url": "https://huggingface.co/da66666/testmodel_lda",
+  "created_at": "2026-09-22T02:40:14.000Z",
+  "updated_at": "2026-09-22T02:40:14.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aanmelden bij Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/nl-nl/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Hotmail is nu Outlook.com. Als u zich wilt aanmelden bij uw Hotmail-account, gaat u naar www.outlook.com en selecteert u …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/?ui=nl-NL&rs=NL",
+      "snippet": "Sign in to Outlook to access and manage your email with Microsoft 365."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.live.com/owa/",
+      "snippet": "Outlook ... Outlook"
+    },
+    {
+      "title": "Aanmelden Outlook | Microsoft 365",
+      "url": "https://www.microsoft.com/nl-nl/microsoft-365/outlook/log-in?msockid=3ab193f36de96ce13056842f6ce46de6",
+      "snippet": "Nov 16, 2025 · Wat is er gebeurd met Hotmail? We hebben Hotmail opnieuw ontworpen en gelanceerd als Outlook. We blijven ons …"
+    },
+    {
+      "title": "Aanmelden bij Outlook.com | Microsoft Support",
+      "url": "https://support.microsoft.com/nl-nl/accounts-billing/manage/how-to-sign-in-to-outlook-com",
+      "snippet": "Lees hoe u zich aanmeldt bij uw Outlook- of Hotmail-postvak met uw Microsoft-account."
+    }
+  ]
+}

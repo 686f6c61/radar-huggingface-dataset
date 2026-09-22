@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/OLMo-2-0425-1B-chat-mlx-4bit",
+  "slug": "sirsahol-olmo-2-0425-1b-chat-mlx-4bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/OLMo-2-0425-1B-chat-mlx-4bit",
+  "created_at": "2026-09-22T02:23:58.000Z",
+  "updated_at": "2026-09-22T05:42:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "olmo2",
+    "text-generation",
+    "apple-silicon",
+    "4-bit",
+    "transformers",
+    "en",
+    "arxiv:2501.00656",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "base_model:allenai/OLMo-2-0425-1B",
+    "base_model:quantized:allenai/OLMo-2-0425-1B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 1484916736,
+  "parameters_human": "1.48B",
+  "storage_bytes": 928567612,
+  "storage_human": "929 MB",
+  "base_model": "allenai/OLMo-2-0425-1B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "Marvelous sky：16、17年开始知乎让你转码； 18、19让你赶紧从土木跑路； 20、21知乎让你别买房； 24年知乎让你买小米股票； 现 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "17岁歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/13655432.html",
+      "snippet": "17岁歌词《17岁》原唱：刘德华填词：刘德华、徐继宗谱曲：徐继宗歌词：十七岁那日不要脸，参加了挑战明星也有训练班，短短一年 …"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "5年剪辑，这事儿我太熟。咱们不聊复杂的代码和网络原理，用大白话和最简单的工具搞定。 但既然你把前提卡得这么死（不聊梯子、 …"
+    },
+    {
+      "title": "What's the origin of “yo”? - English Language & Usage Stack Exchange",
+      "url": "https://english.stackexchange.com/questions/40408/whats-the-origin-of-yo",
+      "snippet": "Sep 2, 2011 · In the Neapolitan dialect \"guaglione\" (pronounced guahl-YO-nay) signified a young man. The chiefly unlettered …"
+    }
+  ]
+}

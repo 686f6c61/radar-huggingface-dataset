@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-d0a70662-94c8-4b91-bfeb-d3cea541caf4-5Eh6F11Z",
+  "slug": "gradients-io-tournaments-tournament-tourn_e119d8158386fa26_20260921-d0a70662-94c8-4b91-bfeb-d3cea541caf4-5eh6f11z",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-d0a70662-94c8-4b91-bfeb-d3cea541caf4-5Eh6F11Z",
+  "created_at": "2026-09-22T01:00:39.000Z",
+  "updated_at": "2026-09-22T01:00:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/0311af13fabfa2c5",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1303321056,
+  "storage_human": "1.3 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "freestylefly/awesome-gpt-image-2: Prompt as Code - GitHub",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "snippet": "Apr 26, 2026 · After GPT-Image2 became widely available, AI image generation moved from \"can it make an image?\" to \"can it make …"
+    },
+    {
+      "title": "如何看待GPT-6 （Astra）？ - 知乎",
+      "url": "https://www.zhihu.com/question/2070082903229347029",
+      "snippet": "GPT-6 的产出有着丰富的喷发层次，特别是岩浆沿着山坡的流动感。 我只能说，在这个案例上，GPT-6 扎扎实实的把 Fable 5.1 锤爆 …"
+    },
+    {
+      "title": "Discover gists · GitHub",
+      "url": "https://gist.github.com/",
+      "snippet": "1 day ago · GitHub Gist: instantly share code, notes, and snippets."
+    },
+    {
+      "title": "GitHub - MuiseDestiny/zotero-gpt: GPT Meet Zotero.",
+      "url": "https://github.com/MuiseDestiny/zotero-gpt",
+      "snippet": "Jun 17, 2023 · GPT Tag Recommendation Automatically create tags for entries: open and copy then open Zotero, this tag will be …"
+    },
+    {
+      "title": "GPT为什么会单独给Plus订阅增加5小时限额？ - 知乎",
+      "url": "https://www.zhihu.com/question/2075529848810911526",
+      "snippet": "Aug 25, 2026 · GPT为什么会单独给Plus订阅增加5小时限额？ GPT为什么会单独给Plus订阅增加5小时限额？ 究竟是为了对新手用户 …"
+    }
+  ]
+}

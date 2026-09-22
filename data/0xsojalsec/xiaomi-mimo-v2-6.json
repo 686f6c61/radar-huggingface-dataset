@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/Xiaomi-MiMo-V2.6",
+  "slug": "0xsojalsec-xiaomi-mimo-v2-6",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/Xiaomi-MiMo-V2.6",
+  "created_at": "2026-09-21T22:02:15.000Z",
+  "updated_at": "2026-09-21T22:02:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mimo_v2",
+    "text-generation",
+    "multimodal",
+    "vision-language",
+    "audio",
+    "agent",
+    "video-understanding",
+    "long-context",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 159358725504,
+  "parameters_human": "159.36B",
+  "storage_bytes": 177756130558,
+  "storage_human": "177.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pizza Hut | Pizza bestellen voor levering of takeout",
+      "url": "https://www.pizzahut.be/",
+      "snippet": "Bestel je favoriete pizza online bij Pizza Hut. Snelle levering of afhalen in je buurt. Ontdek exclusieve promoties en profiteer via de app."
+    },
+    {
+      "title": "Pizza bestellen bij mij in de buurt in Brussel | Uber Eats",
+      "url": "https://www.ubereats.com/be-nl/category/brussel-bruxelles-capitale/pizza?msockid=0df5ca4706b566a90451dd9c0701679b",
+      "snippet": "Bestel Pizza bij de beste locaties in Brussel. Kies voor contactloze bezorging of haal zelf je bestelling af."
+    },
+    {
+      "title": "Pizza bestel je bij Domino's via dominos.be | Honour the Craving",
+      "url": "https://www.dominos.be/",
+      "snippet": "Bestel je pizza, My Domino's Box, bijgerecht en de lekkerste desserts bij Domino's. Zowel bezorgen als afhalen! Bestel nu online 🍕 …"
+    },
+    {
+      "title": "Top 10 pizzeria's in Brussel, september 2026 - Restaurant Guru",
+      "url": "https://nl.restaurantguru.com/pizza-Brussels-c97",
+      "snippet": "Un service au top et très agréable ! Limoncello offert. 5. O Sole Mio Pizzas & pâtes Bruxelles. 6. Ricotta & Parmesan. ... Freundlicher …"
+    },
+    {
+      "title": "Welcome to La Piola pizza",
+      "url": "https://lapiolapizza.com/",
+      "snippet": "The pizzeria Piola uses the best ingredients of quality and is directly coming from Italy. Specialty: the \"cornicione\" and the croutte, it is …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "j0no12/nero-optimizer-work-navier",
+  "slug": "j0no12-nero-optimizer-work-navier",
+  "author": "j0no12",
+  "url": "https://huggingface.co/j0no12/nero-optimizer-work-navier",
+  "created_at": "2026-09-22T00:17:26.000Z",
+  "updated_at": "2026-09-22T00:17:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "nero_dense_control_mlx",
+    "nero",
+    "optimizer-research",
+    "navier",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4013862,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maine Coon - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Maine_Coon",
+      "snippet": "The Maine Coon is a large and social cat, commonly referred to as \"the gentle giant\". The breed is predominantly known for its large …"
+    },
+    {
+      "title": "Maine Coon Cat Breed: Size, Appearance & Personality",
+      "url": "https://cats.com/cat-breeds/maine-coon",
+      "snippet": "Explore the Maine Coon cat breed profile to learn about the breed's history, temperament, care, grooming needs, and health concerns."
+    },
+    {
+      "title": "Maine Coon Cat Size: Info, Pictures & Height Comparison Chart (Vet ...",
+      "url": "https://www.catster.com/cat-health-care/maine-coon-size/",
+      "snippet": "Sep 15, 2026 · The Maine Coon is arguably the most majestic house cat there is. But how big do these incredible cats really get? …"
+    },
+    {
+      "title": "Maine Coon Kittens and Cats for sale | Freeads Pets",
+      "url": "https://www.freeads.co.uk/uk/buy-sell/pets/cats/maine-coon/",
+      "snippet": "Freeads.co.uk: Find Maine Coon Kittens & Cats for sale in UK at the UK's largest independent free classifieds site. Buy and Sell …"
+    },
+    {
+      "title": "Maine Coon Cat - The Cat Fanciers' Association",
+      "url": "https://cfa.org/breed/maine-coon-cat/",
+      "snippet": "With a documented history going back to the 1850s, these shaggy, “super-sized” cats are one of the best-known cat breeds, and are …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "eklavyagoyal/hunch-checkpoints-backup",
+  "slug": "eklavyagoyal-hunch-checkpoints-backup",
+  "author": "eklavyagoyal",
+  "url": "https://huggingface.co/eklavyagoyal/hunch-checkpoints-backup",
+  "created_at": "2026-09-21T21:23:51.000Z",
+  "updated_at": "2026-09-21T23:51:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hunch",
+    "backup",
+    "not-a-release",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 378552530504,
+  "storage_human": "378.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VScode怎么ctrl+P搜不到文件呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/477614549",
+      "snippet": "vscode 有时全局搜索内容明显不对，或者明明有这个文件 ，Ctrl+P却搜索不到，可能是搜索时使用了.ignore文件 导致忽略了其中的内 …"
+    },
+    {
+      "title": "淘宝美工（设计）需要掌握哪些技能？ - 知乎",
+      "url": "https://www.zhihu.com/question/29602377",
+      "snippet": "前景：前途我就不说了，学好任何一件事都对你人生有帮助和意义！ 未必做设计师了就一定应用到淘宝！应用很广！放心学习！ 条 …"
+    },
+    {
+      "title": "vscode最新版本有问题？开vscode电脑卡得不行? - 知乎",
+      "url": "https://www.zhihu.com/question/67317040",
+      "snippet": "下载 vscode1.18以上版本 Documentation for Visual Studio Code 1.18 安装完成后 文件>首选项>设置 搜索设置 search.followSymlinks …"
+    },
+    {
+      "title": "有哪些关于工业设计的好书？ - 知乎",
+      "url": "https://www.zhihu.com/question/20412909",
+      "snippet": "This is a fully visual book with over one thousand product sketches organized in chapters covering the main product categories that …"
+    },
+    {
+      "title": "VSCode有在search中files to include里定制要搜索的文件类型 ...",
+      "url": "https://www.zhihu.com/question/653250829",
+      "snippet": "VSCode有在search中files to include里定制要搜索的文件类型的插件吗？ 我想在files to include里自定义一些文件类型，比如我作为 …"
+    }
+  ]
+}

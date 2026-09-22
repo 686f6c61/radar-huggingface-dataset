@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nikitastheo/v5-babylm-25k-shared-seed43-deu-ell-sequential_interleaved",
+  "slug": "nikitastheo-v5-babylm-25k-shared-seed43-deu-ell-sequential_interleaved",
+  "author": "nikitastheo",
+  "url": "https://huggingface.co/nikitastheo/v5-babylm-25k-shared-seed43-deu-ell-sequential_interleaved",
+  "created_at": "2026-09-21T20:26:39.000Z",
+  "updated_at": "2026-09-21T21:22:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123886080,
+  "parameters_human": "123.9M",
+  "storage_bytes": 991118592,
+  "storage_human": "991 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/",
+      "snippet": "2 days ago · Hello, New users on the forum won't be able to send PM untill certain criteria are met (you need to have at least 6 posts …"
+    },
+    {
+      "title": "Pic & Movie Post - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/pic-movie-post.8/",
+      "snippet": "1 day ago · Post pics or clips of yourself, wife, girlfriend, models, anything you like."
+    },
+    {
+      "title": "Sex Stories | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/sex-stories.6/",
+      "snippet": "Apr 12, 2009 · Hello, New users on the forum won't be able to send PM untill certain criteria are met (you need to have at least 6 …"
+    },
+    {
+      "title": "Sexuality | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/sexuality.7/",
+      "snippet": "Jul 22, 2006 · This forum is to discuss sex seriously. Ask for tips and advice here."
+    },
+    {
+      "title": "Long Legs...Beautiful Legs...Great Legs - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/long-legs-beautiful-legs-great-legs.632896/",
+      "snippet": "Sep 13, 2021 · Wonderful legs on beautiful women. What's not to like?"
+    }
+  ]
+}

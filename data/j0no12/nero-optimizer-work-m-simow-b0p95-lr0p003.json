@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "j0no12/nero-optimizer-work-m-simow-b0p95-lr0p003",
+  "slug": "j0no12-nero-optimizer-work-m-simow-b0p95-lr0p003",
+  "author": "j0no12",
+  "url": "https://huggingface.co/j0no12/nero-optimizer-work-m-simow-b0p95-lr0p003",
+  "created_at": "2026-09-22T00:17:08.000Z",
+  "updated_at": "2026-09-22T00:17:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "nero_dense_control_mlx",
+    "nero",
+    "optimizer-research",
+    "m-simow",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4013862,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amigos de Facebook con acceso restringido: qué es, ver lista",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/10174-como-crear-una-lista-de-personas-con-acceso-restringido-en-facebook/",
+      "snippet": "Dec 29, 2022 · Inicia sesión en Facebook y ve al perfil del amigo que quieres poner en la lista de personas con acceso restringido. …"
+    },
+    {
+      "title": "Rastrear una cuenta falsa de Facebook [Resuelto] - CCM",
+      "url": "https://es.ccm.net/forum/affich-1778654-rastrear-una-cuenta-falsa-de-facebook",
+      "snippet": "Jun 3, 2017 · Hola, lamentablemente es difícil saber quién se encuentra detrás de una cuenta falsa, pero al menos puedes reportarla …"
+    },
+    {
+      "title": "Supprimer et réinstaller facebook sur pc [Résolu] - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-34652683-supprimer-et-reinstaller-facebook-sur-pc",
+      "snippet": "Jun 11, 2017 · Meilleure réponse: Bonjour, Facebook ne s'installe pas, il s'agit d'un site web. Si tu as des soucis c'est peut être que …"
+    },
+    {
+      "title": "Facebook : page blanche [Résolu] - Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-11538947-facebook-page-blanche",
+      "snippet": "Bonjour tout le monde, Depuis deux jours, impossible d'accéder à facebook. J'ai bien accès à la page de connexion : je peux entrer …"
+    },
+    {
+      "title": "Comment supprimer définitivement votre compte Facebook",
+      "url": "https://www.zdnet.fr/pratique/comment-supprimer-definitivement-votre-compte-facebook-39932301.htm",
+      "snippet": "Nov 12, 2021 · Pratique : Se débarrasser de son compte Facebook demande un peu de travail de votre part."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "gnascimentoeli/tiny-transformer-classification-checkpoint",
+  "slug": "gnascimentoeli-tiny-transformer-classification-checkpoint",
+  "author": "gnascimentoeli",
+  "url": "https://huggingface.co/gnascimentoeli/tiny-transformer-classification-checkpoint",
+  "created_at": "2026-09-21T23:32:15.000Z",
+  "updated_at": "2026-09-21T23:32:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2022 - Kanton Zürich",
+      "url": "https://www.zh.ch/bin/zhweb/publish/regierungsratsbeschluss-unterlagen./2023/1068/5.JLG_Jahresbericht%202022.pdf",
+      "snippet": "Grosser Dank gebührt nicht nur Merlin Guggenheim für die bis zu seinem Rücktritt ge-leistete Arbeit, sondern vor allem den …"
+    },
+    {
+      "title": "Margaret Nell Profiles - Facebook",
+      "url": "https://www.facebook.com/public/Margaret%20Nell/",
+      "snippet": "View the profiles of people named Margaret Nell. Join Facebook to connect with Margaret Nell and others you may know. Facebook …"
+    },
+    {
+      "title": "JAHRES BERICHT 2023 - Kanton Zürich",
+      "url": "https://www.zh.ch/bin/zhweb/publish/regierungsratsbeschluss-unterlagen./2024/945/5_JLG%20Jahresbericht%202023.pdf.pdf",
+      "snippet": "Auch die Filmtage Yesh!, welche von Mitgliedern der JLG und der ICZ jährlich realisiert werden, haben das Ziel, das kulturelle Leben …"
+    },
+    {
+      "title": "Margaret Nell Hogan (@margaret_nell) - Instagram",
+      "url": "https://www.instagram.com/margaret_nell/",
+      "snippet": "732 Followers, 1,499 Following, 0 Posts - See Instagram photos and videos from Margaret Nell Hogan (@margaret_nell)"
+    },
+    {
+      "title": "JB.2017.Druck - Kanton Zürich",
+      "url": "https://www.zh.ch/bin/zhweb/publish/regierungsratsbeschluss-unterlagen./2018/882/JB_2017_Juedisch-liberale_Gemeinde.pdf",
+      "snippet": "(NB: Mitglieder 2017 waren: Claudio Blank, Fred Haag, Margaret Irit Nell, Hanno Scholtz, Rabbiner Bea Wyler, Nicole Wyler. …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "arthdubey/aerial-building-unet",
+  "slug": "arthdubey-aerial-building-unet",
+  "author": "arthdubey",
+  "url": "https://huggingface.co/arthdubey/aerial-building-unet",
+  "created_at": "2026-09-21T23:17:35.000Z",
+  "updated_at": "2026-09-21T23:41:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-segmentation",
+    "remote-sensing",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 97903743,
+  "storage_human": "98 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chicago Cubs Schedule | Chicago Cubs - MLB.com",
+      "url": "https://www.mlb.com/cubs/schedule/?msockid=0e87338252e6662f1784245e53d46775",
+      "snippet": "View the Chicago Cubs' official MLB schedule, including game dates, times, and opponents."
+    },
+    {
+      "title": "Official Chicago Cubs Website | MLB.com",
+      "url": "https://www.mlb.com/cubs?msockid=0e87338252e6662f1784245e53d46775",
+      "snippet": "The official website of the Chicago Cubs with the most up-to-date information on news, tickets, schedule, stadium, roster, rumors, …"
+    },
+    {
+      "title": "Chicago Cubs Scores, Stats and Highlights - ESPN",
+      "url": "https://www.espn.com/mlb/team/_/name/chc/chicago-cubs",
+      "snippet": "Visit ESPN for Chicago Cubs live scores, video highlights, and latest news. Find standings and the full 2026 season schedule."
+    },
+    {
+      "title": "Chicago Cubs® Official Website",
+      "url": "https://ccubs.com/",
+      "snippet": "Your ultimate destination for Chicago Cubs updates! Get live scores, game schedules, ticket info, standings, latest rumors, and …"
+    },
+    {
+      "title": "Chicago Cubs 2026 2nd Half MLB Schedule - ESPN",
+      "url": "https://www.espn.com/mlb/team/schedule/_/name/chc/chicago-cubs",
+      "snippet": "ESPN has the full 2026 Chicago Cubs 2nd Half MLB schedule. Includes game times, TV listings and ticket information for all Cubs …"
+    }
+  ]
+}

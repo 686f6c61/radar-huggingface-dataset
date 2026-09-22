@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "j0no12/nero-optimizer-work-simo",
+  "slug": "j0no12-nero-optimizer-work-simo",
+  "author": "j0no12",
+  "url": "https://huggingface.co/j0no12/nero-optimizer-work-simo",
+  "created_at": "2026-09-22T00:17:28.000Z",
+  "updated_at": "2026-09-22T00:17:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "nero_dense_control_mlx",
+    "nero",
+    "optimizer-research",
+    "simo",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4013862,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arsenal transfer news: Julian Alvarez meeting, £50m agreement, Man …",
+      "url": "https://www.football.london/arsenal-fc/transfer-news/arsenal-transfer-news-live-alvarez-34517776",
+      "snippet": "Aug 26, 2026 · Julian Alvarez has been the name on everyone's lips this summer, with Arsenal embroiled in a dramatic transfer saga …"
+    },
+    {
+      "title": "Julian Alvarez transfer news: Arsenal, Barcelona or Atletico Madrid ...",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c750nd7yq7yo",
+      "snippet": "Aug 24, 2026 · With the Brazilian extending his contract to stay in Spain, Arsenal have now decided to step things up regarding Alvarez."
+    },
+    {
+      "title": "Arsenal handed Julian Alvarez update as Barcelona chief aims dig at ...",
+      "url": "https://www.football.london/arsenal-fc/transfer-news/arsenal-handed-julian-alvarez-update-34643846",
+      "snippet": "1 day ago · Joan Laporta hit out at Atletico Madrid's 'inappropriate' reaction during Julian Alvarez's failed transfer, with Arsenal among …"
+    },
+    {
+      "title": "Julian Alvarez reaches fresh decision on Arsenal transfer amid latest ...",
+      "url": "https://www.football365.com/news/arsenal-julian-alvarez-reaches-decision-transfer-romano-update",
+      "snippet": "Aug 27, 2026 · Atletico Madrid striker Julian Alvarez has reached a fresh decision over joining Arsenal as Fabrizio Romano brings the …"
+    },
+    {
+      "title": "Julian Alvarez transfer news: Atletico Madrid won't sell striker to ...",
+      "url": "https://www.skysports.com/football/news/11670/13577751/julian-alvarez-transfer-news-atletico-madrid-wont-sell-striker-to-barcelona-with-arsenal-the-only-option",
+      "snippet": "Aug 27, 2026 · Atletico Madrid say they will not enter into negotiations with Barcelona for striker Julian Alvarez, who is considering a …"
+    }
+  ]
+}

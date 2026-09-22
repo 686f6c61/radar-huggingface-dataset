@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Miataylo/dissertation-contrastive-learning",
+  "slug": "miataylo-dissertation-contrastive-learning",
+  "author": "Miataylo",
+  "url": "https://huggingface.co/Miataylo/dissertation-contrastive-learning",
+  "created_at": "2026-09-22T02:36:50.000Z",
+  "updated_at": "2026-09-22T02:36:56.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "美利道2號 No. 2 Murray Road 交通站點 - 路線、時刻表和票價 - Moovit",
+      "url": "https://moovitapp.com/index/zh-tw/%E5%85%AC%E5%85%B1%E4%BA%A4%E9%80%9A-%E7%BE%8E%E5%88%A9%E9%81%932%E8%99%9F_No_2_Murray_Road-Hong_Kong-stop_663405835-2741",
+      "snippet": "在中西區 Central And Western中離美利道2號 No. 2 Murray Road最近的巴士 車站是美利道 Murray Road。"
+    },
+    {
+      "title": "美利道2號 - 香港島中區中環美利道2號 | 香港公司名單數據集",
+      "url": "https://hkg.databasesets.com/zh-hant/nearby-topics-detail/00026427targeturl=",
+      "snippet": "本頁面展示了美利道2號的地址、聯繫電話、營業時間、傳真、郵箱、網址，服務時間等聯繫信息，您可以在下方查看怎麼去美利道2 …"
+    },
+    {
+      "title": "美利道2號 (The Henderson) 中環|搵地 (OneDay)",
+      "url": "https://www.oneday.com.hk/zh_HK/buildings/the-henderson/",
+      "snippet": "香港島中區中環美利道2號【業主和地產代理可免費放兩個盤】，美利道2號(The Henderson)是一座寫字樓"
+    },
+    {
+      "title": "The Henderson - 維基百科，自由的百科全書",
+      "url": "https://zh.wikipedia.org/zh-hk/The_Henderson",
+      "snippet": "The Henderson，位於 香港 中環 美利道 2號，樓高36層，由 恒基兆業 發展，建築設計由國際知名的 札哈·哈蒂建築事務所 和 呂元祥 …"
+    },
+    {
+      "title": "美利道2號｜The Henderson, 中環寫字樓放租|Landvision",
+      "url": "https://www.landvision.com.hk/hong-kong-office/central/the-henderson-b-5542/?mobile_lang=zh-hant",
+      "snippet": "美利道2號 (中環區)甲級寫字樓租賃，預約睇樓，業主委託放盤，服務式辦公室，最近成交數據，生意買賣，辦公室頂租頂讓，有裝修 …"
+    }
+  ]
+}

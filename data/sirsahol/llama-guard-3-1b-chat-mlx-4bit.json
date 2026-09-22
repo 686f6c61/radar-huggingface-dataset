@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/Llama-Guard-3-1B-chat-mlx-4bit",
+  "slug": "sirsahol-llama-guard-3-1b-chat-mlx-4bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/Llama-Guard-3-1B-chat-mlx-4bit",
+  "created_at": "2026-09-22T02:19:39.000Z",
+  "updated_at": "2026-09-22T05:42:43.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "apple-silicon",
+    "4-bit",
+    "conversational",
+    "transformers",
+    "facebook",
+    "meta",
+    "pytorch",
+    "llama-3",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "arxiv:2404.12241",
+    "arxiv:2312.06674",
+    "arxiv:2204.05862",
+    "arxiv:2308.01263",
+    "arxiv:2403.03853",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "base_model:meta-llama/Llama-Guard-3-1B",
+    "base_model:quantized:meta-llama/Llama-Guard-3-1B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 1498482688,
+  "parameters_human": "1.50B",
+  "storage_bytes": 860245443,
+  "storage_human": "860 MB",
+  "base_model": "meta-llama/Llama-Guard-3-1B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Threads",
+      "url": "https://www.threads.com/?hl=ar",
+      "snippet": "انضم إلى ‏‎Threads‎‏ لمشاركة الأفكار وطرح الأسئلة ونشر الأفكار العشوائية والعثور على الأشخاص المناسبين لك وعير ذلك المزيد. سجّل الدخول باستخدام حسابك على Instagram."
+    },
+    {
+      "title": "Threads • Log in",
+      "url": "https://www.threads.com/login",
+      "snippet": "Join Threads to share ideas, ask questions, post random thoughts, find your people and more. Log in with your Instagram."
+    },
+    {
+      "title": "ثريدز - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%AB%D8%B1%D9%8A%D8%AF%D8%B2",
+      "snippet": "صُمم تطبيق ثريدز كمنصة للمحادثات والمشاركة في الوقت الحقيقي، حيث يهدف إلى توفير تجربة مشابهة لمستخدمي تويتر ، مع التركيز على المنشورات والمحادثات العامة المعتمدة على النصوص (المعروفة ..."
+    },
+    {
+      "title": "Threads - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.barcelona&hl=ar",
+      "snippet": "اكتشف وجهات نظر جديدة وتواصل من خلال المحادثة على Threads. اطّلع على ما يتحدث عنه الأشخاص الآن، من الاهتمامات المتخصصة إلى الأحداث الكبرى. من خلال المجتمعات، يمكنك أيضًا العثور على …"
+    },
+    {
+      "title": "Threads - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.barcelona&hl=en-US",
+      "snippet": "Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on …"
+    }
+  ]
+}

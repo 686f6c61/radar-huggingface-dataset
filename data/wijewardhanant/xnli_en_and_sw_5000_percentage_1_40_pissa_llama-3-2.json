@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_PiSSA_llama-3.2",
+  "slug": "wijewardhanant-xnli_en_and_sw_5000_percentage_1_40_pissa_llama-3-2",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_PiSSA_llama-3.2",
+  "created_at": "2026-09-21T23:14:06.000Z",
+  "updated_at": "2026-09-21T23:14:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.2-3B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.2-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 292567763,
+  "storage_human": "293 MB",
+  "base_model": "meta-llama/Llama-3.2-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ドミノ・ピザ｜宅配もお持ち帰りもピザはネット注文が便利！",
+      "url": "https://www.dominos.jp/",
+      "snippet": "国内デリバリーピザチェーン売上・店舗数No.1「よくすることにハングリー」アツアツのおいしいピザはドミノ・ピザのネット注文 …"
+    },
+    {
+      "title": "【ピザーラ】宅配ピザ（デリバリーピザ・お持ち帰り・出前 ...",
+      "url": "https://www.pizza-la.co.jp/",
+      "snippet": "Jul 28, 2026 · 簡単ネット注文でピザをデリバリー・出前・テイクアウトならピザーラ！ ネット注文限定の「お得なクーポン」あり …"
+    },
+    {
+      "title": "新宿で人気のピザ（ピッツァ） ランキングTOP15 | 食べログ",
+      "url": "https://tabelog.com/pizza/tokyo/A1304/A130401/rank/?msockid=20be46e7b51c6bee2352513bb4526a89",
+      "snippet": "Sep 1, 2026 · 新宿にあるピザ（ピッツァ）のお店の中から、食べログユーザーおすすめの人気ランキングTOP15を発表！ （2026 …"
+    },
+    {
+      "title": "新宿区でおすすめの美味しいピザ（ピッツァ）をご紹介 ...",
+      "url": "https://tabelog.com/tokyo/C13104/rstLst/pizza/?msockid=20be46e7b51c6bee2352513bb4526a89",
+      "snippet": "新宿区でおすすめの美味しいピザ（ピッツァ）をご紹介！ | 食べログ. イベント会場のすぐ前にあるオシャレなイタリアン。 グリー …"
+    },
+    {
+      "title": "新宿のおすすめピザ9選！安いのに本格的な絶品ピザやコスパの ...",
+      "url": "https://haraheri.net/article/1065/shinjuku_pizza",
+      "snippet": "Oct 2, 2020 · 今回は新宿にあるお店の中から、本格的なピッツァをいただけるお店を厳選してご紹介。 ディナーデートで使えるお …"
+    }
+  ]
+}

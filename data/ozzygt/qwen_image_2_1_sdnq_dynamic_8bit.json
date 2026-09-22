@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "OzzyGT/Qwen_Image_2_1_sdnq_dynamic_8bit",
+  "slug": "ozzygt-qwen_image_2_1_sdnq_dynamic_8bit",
+  "author": "OzzyGT",
+  "url": "https://huggingface.co/OzzyGT/Qwen_Image_2_1_sdnq_dynamic_8bit",
+  "created_at": "2026-09-21T22:30:52.000Z",
+  "updated_at": "2026-09-21T22:44:04.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-generation",
+    "qwen-image",
+    "sdnq",
+    "text-to-image",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "diffusers:QwenImage21Pipeline",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7122006016,
+  "parameters_human": "7.12B",
+  "storage_bytes": 18591549774,
+  "storage_human": "18.6 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Entry Standard Index (Performance) | A0G834 | Knock-Out von …",
+      "url": "https://forum.finanzen.ch/forum/merkels_sozialhilfe_migranten_vergewaltigen-t571393?a=entry",
+      "snippet": "Das grosse Finanzportal mit Realtime-Kursen und News zu Aktien, Kryptowährungen, Strukis, Devisen, Fonds und ETFs - immer …"
+    },
+    {
+      "title": "Nutzerprofil von goldhase | Forum | finanzen.ch",
+      "url": "https://forum.finanzen.ch/forum/user?id=goldhase",
+      "snippet": "Quellen awp Businesswire Dow Jones Newswires GlobeNewswire Redaktion finanzen.ch Top-News"
+    },
+    {
+      "title": "Börsen-Kurse und Finanznachrichten für die Schweiz",
+      "url": "https://forum.finanzen.ch/BILD/news/2010/07/22/ameland-neue-gestaendnisse/immer-mehr-kinder-brechen-ihr-schweigen.html",
+      "snippet": "Jul 22, 2010 · Finanz.Punkt. - der Podcast für deine finanzielle Bildung Neu Analysen Analysen SMI Analysen Dow Jones Analysen …"
+    },
+    {
+      "title": "Euro Stoxx 50 | 965814 | Knock-Out von finanzen.ch",
+      "url": "https://forum.finanzen.ch/quotes/error?MA1=3&MA2=4&GRID=1&SCALE=1&a=stoxx50&MONTHS=3&DISPLAY=1&SUPP_INFO=0&PERIOD=7&VOL=0&ID_NOTATION=20735",
+      "snippet": "Das grosse Finanzportal mit Realtime-Kursen und News zu Aktien, Kryptowährungen, Strukis, Devisen, Fonds und ETFs - immer …"
+    },
+    {
+      "title": "DivDAX (Performance) | A0C33D | Knock-Out von finanzen.ch",
+      "url": "https://forum.finanzen.ch/quotes/error?MA1=3&GRID=1&SCALE=1&MONTHS=3&MA2=4&SUPP_INFO=0&a=divdx&ID_NOTATION=324977&PERIOD=7&DISPLAY=1&VOL=0",
+      "snippet": "Das grosse Finanzportal mit Realtime-Kursen und News zu Aktien, Kryptowährungen, Strukis, Devisen, Fonds und ETFs - immer …"
+    }
+  ]
+}

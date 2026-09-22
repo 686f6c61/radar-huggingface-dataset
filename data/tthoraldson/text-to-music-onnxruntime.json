@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tthoraldson/text-to-music-onnxruntime",
+  "slug": "tthoraldson-text-to-music-onnxruntime",
+  "author": "tthoraldson",
+  "url": "https://huggingface.co/tthoraldson/text-to-music-onnxruntime",
+  "created_at": "2026-09-21T21:16:04.000Z",
+  "updated_at": "2026-09-21T22:56:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "bart",
+    "base_model:sander-wood/text-to-music",
+    "base_model:quantized:sander-wood/text-to-music",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1734050176,
+  "storage_human": "1.7 GB",
+  "base_model": "sander-wood/text-to-music",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porn Video Categories and All Sex Niches - xHamster",
+      "url": "https://xhamster.com/categories",
+      "snippet": "Come browse a complete list of all porn video categories on xHamster, including all the rarest sex niches. Find XXX videos you like!"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "日本人エロ動画 | xHamster",
+      "url": "https://jp.xhamster.com/categories/japanese",
+      "snippet": "日本人エロ動画をxHamsterでチェック。今すぐすべての日本人アダルト動画を見る！"
+    },
+    {
+      "title": "Gratis porno video's & XXX movies: Sex Videos Tube | xHamster",
+      "url": "https://nl.xhamster.com/",
+      "snippet": "Gratis porno video's en exclusieve XXX movies vind je hier op xHamster. Stream direct 6M+ hardcore sexvideo's van pro's en …"
+    },
+    {
+      "title": "Gratis porrfilmer & XXX filmer: Sexvideor Tube | xHamster",
+      "url": "https://sv.xhamster.com/",
+      "snippet": "Gratis porrfilmer och exklusiva XXX-filmer finns här på xHamster. Streama 6M+ hardcore sexvideor direkt från proffs och amatörer på …"
+    }
+  ]
+}

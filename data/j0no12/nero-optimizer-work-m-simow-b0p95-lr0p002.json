@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "j0no12/nero-optimizer-work-m-simow-b0p95-lr0p002",
+  "slug": "j0no12-nero-optimizer-work-m-simow-b0p95-lr0p002",
+  "author": "j0no12",
+  "url": "https://huggingface.co/j0no12/nero-optimizer-work-m-simow-b0p95-lr0p002",
+  "created_at": "2026-09-22T00:17:04.000Z",
+  "updated_at": "2026-09-22T00:17:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "nero_dense_control_mlx",
+    "nero",
+    "optimizer-research",
+    "m-simow",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4013862,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【噂まとめ】iPhone 18シリーズが来る！発売日・価格・スペック ...",
+      "url": "https://www.gizmodo.jp/article/iphone-18-18pro-rumors-summary/",
+      "snippet": "Sep 7, 2026 · 毎年9月に開催されるApple（アップル）のiPhone発表イベント。今年も早いもので、もうその時期がやって来ました …"
+    },
+    {
+      "title": "Threads (スレッズ)の使い方と使用感をレビュー！アカウント作成 ...",
+      "url": "https://minnano-rakuraku.com/contents/how-to-use-threads-5615/",
+      "snippet": "Jul 6, 2023 · Threads (スレッズ)をMeta社がリリース！ Twitterに代わるSNSアプリとは？ 特徴・使い方・日本語対応・利用料金 イ …"
+    },
+    {
+      "title": "「Threads」の始め方と使い方。Twitterやインスタとの違いは ...",
+      "url": "https://www.gizmodo.jp/article/threads-how-to/",
+      "snippet": "Jul 6, 2023 · MetaからTwitter対抗サービス「Threads（スレッズ）」が登場しました。 使い方や始め方をまとめます。また、文字数 …"
+    },
+    {
+      "title": "Threads (スレッズ)をMeta社がリリース！Twitterに代わるSNS ...",
+      "url": "https://minnano-rakuraku.com/contents/threads-5553/",
+      "snippet": "Jul 4, 2023 · Threads（スレッズ）のリリース日 『Threads（スレッズ）』の気になるリリース日ですが、当初の予定を前倒しして …"
+    },
+    {
+      "title": "Threads(スレッズ)でインスタ連携しない方法はある？連携解除は ...",
+      "url": "https://minnano-rakuraku.com/contents/not-link-instagram-threads-5663/",
+      "snippet": "Jul 7, 2023 · Twitterに代わるSNSになるのではと話題の「Threads（スレッズ）」。好意的な声も多いですが、「Instagram（インス …"
+    }
+  ]
+}

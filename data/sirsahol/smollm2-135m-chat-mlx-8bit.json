@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/SmolLM2-135M-chat-mlx-8bit",
+  "slug": "sirsahol-smollm2-135m-chat-mlx-8bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/SmolLM2-135M-chat-mlx-8bit",
+  "created_at": "2026-09-22T02:39:14.000Z",
+  "updated_at": "2026-09-22T05:42:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "apple-silicon",
+    "8-bit",
+    "transformers",
+    "en",
+    "arxiv:2502.02737",
+    "license:apache-2.0",
+    "eval-results",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:azure",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-135M",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 143030884,
+  "storage_human": "143 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Logga in på Gmail - Dator - Gmail Hjälp",
+      "url": "https://support.google.com/mail/answer/8494?hl=sv&co=GENIE.Platform%3DDesktop",
+      "snippet": "Logga in på Gmail Tips! Kom ihåg att logga ut innan du går ifrån datorn om du har loggat in på en offentlig dator. Läs mer om hur du …"
+    },
+    {
+      "title": "Iniciar sesión en Gmail - Ordenador - Ayuda de Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=es-es&co=GENIE.Platform%3DDesktop",
+      "snippet": "En un ordenador, ve a Gmail. Escribe la dirección de correo de tu cuenta de Google o tu número de teléfono y la contraseña. Si la …"
+    },
+    {
+      "title": "Use another email to sign in to your Google Account",
+      "url": "https://support.google.com/accounts/answer/176347?hl%3Den&co=GENIE.Platform%3DDesktop",
+      "snippet": "When you create a Google Account, you get a Gmail address, but you can use a different email address to sign in. You can link a non …"
+    },
+    {
+      "title": "Sign in to Gmail - Computer - Gmail Help - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sign in to Gmail Tip: If you're signing in to a public computer, make sure that you sign out before leaving the computer. Find out more …"
+    },
+    {
+      "title": "Google Adsense created with Hotmail Account - Login Issue",
+      "url": "https://support.google.com/adsense/thread/277698462/google-adsense-created-with-hotmail-account-login-issue?hl=en",
+      "snippet": "Jun 1, 2024 · I have an Adsense account created on my hotmail email in 2010. I know my email and publisher ID. I can't sign in …"
+    }
+  ]
+}

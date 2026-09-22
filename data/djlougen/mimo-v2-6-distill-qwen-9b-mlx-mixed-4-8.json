@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "DJLougen/MiMo-V2.6-Distill-Qwen-9B-MLX-mixed-4-8",
+  "slug": "djlougen-mimo-v2-6-distill-qwen-9b-mlx-mixed-4-8",
+  "author": "DJLougen",
+  "url": "https://huggingface.co/DJLougen/MiMo-V2.6-Distill-Qwen-9B-MLX-mixed-4-8",
+  "created_at": "2026-09-21T23:34:17.000Z",
+  "updated_at": "2026-09-21T23:45:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mimo_v2",
+    "image-text-to-text",
+    "conversational",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 7398369256,
+  "storage_human": "7.4 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "`5 கொலை வழக்குகள், 14 கொலை முயற்சி …",
+      "url": "https://www.vikatan.com/crime/rowdy-nagendran-who-arrested-in-amstrong-case-died-in-hospital",
+      "snippet": "Oct 9, 2025 · பாக்ஸர் விஜியும், வடசென்னையில் 1990-களில் கோலோச்சிய பிரபல ரௌடி …"
+    },
+    {
+      "title": "என்னை அனுப்பிடாதீங்க..” நீதிபதியிடம் கதறிய …",
+      "url": "https://tamil.oneindia.com/news/chennai/rowdy-nagendran-has-been-given-3-day-police-custody-in-armstrong-murder-case-630047.html",
+      "snippet": "Aug 14, 2024 · Rowdy Nagendran, who is the 24th person arrested in the Armstrong murder case, has been given 3-day police …"
+    },
+    {
+      "title": "ஆம்ஸ்ட்ராங்கை தீர்த்துக்கட்டிய ரவுடி …",
+      "url": "https://www.dinamalar.com/news/tamil-nadu-district-news-chennai/rowdy-nagendran-who-defeated-armstrong-dies/4053451",
+      "snippet": "Oct 9, 2025 · சென்னை : பகுஜன் சமாஜ் கட்சியின் மாநில தலைவராக இருந்த ஆம்ஸ்ட்ராங் …"
+    },
+    {
+      "title": "பிரபல ரவுடி நாகேந்திரன் இறுதி பயணம்.",
+      "url": "https://www.youtube.com/watch?v=X_SF18byHts",
+      "snippet": "Oct 12, 2025 · Rowdy Nagendran death, Armstrong murder case, Nagendran dies in custody, Armstrong case update, Chennai crime …"
+    },
+    {
+      "title": "Chennai: Notorious life convict Nagendran dies at 65 in Stanley ...",
+      "url": "https://timesofindia.indiatimes.com/city/chennai/life-convict-and-notorious-rowdy-nagendran-dies-at-stanley-hospital/articleshow/124411695.cms",
+      "snippet": "Oct 9, 2025 · Police sources said Nagendran was regarded as one of the most notorious rowdies of North Chennai, maintaining …"
+    }
+  ]
+}

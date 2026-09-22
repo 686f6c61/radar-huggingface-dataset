@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "liskasYR/Qwen-Image-2.1",
+  "slug": "liskasyr-qwen-image-2-1",
+  "author": "liskasYR",
+  "url": "https://huggingface.co/liskasYR/Qwen-Image-2.1",
+  "created_at": "2026-09-22T02:19:50.000Z",
+  "updated_at": "2026-09-22T02:19:50.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "qwen",
+    "image-generation",
+    "image-editing",
+    "rgba",
+    "text-to-image",
+    "license:other",
+    "diffusers:QwenImage21Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 33130368862,
+  "storage_human": "33.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Is an IR-Guided Missile? The Role of Infrared Guidance …",
+      "url": "https://millimudafaa.com/glossary/what-is-an-ir-guided-missile-the-role-of-infrared-guidance-technology-in-modern-warfare",
+      "snippet": "What is an IR-guided missile, how does it work, and where is it used? Discover the role of infrared guidance technology in modern …"
+    },
+    {
+      "title": "Defense Strategy of Aircraft Confronted with IR Guided Missile",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/2017/9070412?msockid=0fbaa50a56a06f1a2e4bb2d657376e8f",
+      "snippet": "Jan 9, 2017 · Surface-type infrared (IR) decoy can simulate the IR characteristics of the target aircraft, which is one of the most …"
+    },
+    {
+      "title": "Infrared homing - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Infrared_homing",
+      "snippet": "Infrared homing is a passive weapon guidance system which uses the infrared (IR) light emission from a target to track and follow it …"
+    },
+    {
+      "title": "Missile Systems - Tonbo Imaging",
+      "url": "https://tonboimaging.com/defense/products/missile/",
+      "snippet": "The AI capabilities enables surgical precision of missiles and bombs. Over many years we have built libraries of IR signatures of a …"
+    },
+    {
+      "title": "IIR Missile: Infrared Guidance Insights | PDF | Missile | Infrared - Scribd",
+      "url": "https://www.scribd.com/document/732094488/IIRMissile",
+      "snippet": "It describes the key components and subsystems of IIR missiles, including the seeker, and discusses design equations related to the …"
+    }
+  ]
+}

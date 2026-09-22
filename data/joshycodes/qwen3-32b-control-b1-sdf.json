@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3-32b-control-B1-sdf",
+  "slug": "joshycodes-qwen3-32b-control-b1-sdf",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3-32b-control-B1-sdf",
+  "created_at": "2026-09-22T00:25:51.000Z",
+  "updated_at": "2026-09-22T00:30:50.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "synthetic-document-finetuning",
+    "self-authored-character",
+    "model-welfare",
+    "research",
+    "not-for-deployment",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:finetune:Qwen/Qwen3-32B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65535752034,
+  "storage_human": "65.5 GB",
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rent Textbooks - Online Textbook Rental & eBooks - Chegg",
+      "url": "https://www.chegg.com/textbooks?msockid=3c0c648cca346bd9394f7350cb506ac2",
+      "snippet": "Now even easier, with Valore. We've teamed up with Valore.com to bring you more affordable options for college textbooks. Whether …"
+    },
+    {
+      "title": "Chegg - Get 24/7 Homework Help | Study Support Across 50+ Subjects",
+      "url": "https://www.chegg.com/?str=login&page=login&msockid=3c0c648cca346bd9394f7350cb506ac2",
+      "snippet": "Innovative learning tools. 24/7 support. All in one place. Homework help for relevant study solutions, step-by-step support, and real …"
+    },
+    {
+      "title": "Rent/Buy Books on Chegg - Save Up to 90% on Textbooks",
+      "url": "https://www.chegg.com/books?msockid=3c0c648cca346bd9394f7350cb506ac2",
+      "snippet": "Buy or rent textbooks from Chegg.com and save up to 90% off of new titles for your required college books."
+    },
+    {
+      "title": "Solved I am not sure what type of reasoning used in the the - Chegg",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/sure-type-reasoning-used-statement--see-work-around-world-women-women-international-worthy-q29746548?msockid=3c0c648cca346bd9394f7350cb506ac2",
+      "snippet": "It has given women in Kosovo the skills to operate businesses in their communities. It has shown I am not sure what type of …"
+    },
+    {
+      "title": "Careers | Perfect Your Resume, Land Your Internship, Find the ... - Chegg",
+      "url": "https://www.chegg.com/career?msockid=3c0c648cca346bd9394f7350cb506ac2",
+      "snippet": "Build the real-world skills you need to stand out to employers hiring for entry-level roles with Chegg Skills."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "zeusdevpro/Qwen3.8-Flash-Next-Uncensored-Q8-UDQ4K-DS4",
+  "slug": "zeusdevpro-qwen3-8-flash-next-uncensored-q8-udq4k-ds4",
+  "author": "zeusdevpro",
+  "url": "https://huggingface.co/zeusdevpro/Qwen3.8-Flash-Next-Uncensored-Q8-UDQ4K-DS4",
+  "created_at": "2026-09-22T00:22:51.000Z",
+  "updated_at": "2026-09-22T02:27:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3.8",
+    "moe",
+    "ds4",
+    "dwarfstar",
+    "uncensored",
+    "quantized",
+    "apple-silicon",
+    "metal",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:orcarouter/Qwen3.8-Flash-Next-Uncensored",
+    "base_model:finetune:orcarouter/Qwen3.8-Flash-Next-Uncensored",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 202472325120,
+  "storage_human": "202.5 GB",
+  "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "American Airlines | AAdvantage - FlyerTalk Forums",
+      "url": "https://www.flyertalk.com/forum/american-airlines-aadvantage-733/",
+      "snippet": "3 days ago · American Airlines | AAdvantage - American Airlines AAdvantage and US Airways Dividend Miles Merged Airline and …"
+    },
+    {
+      "title": "AA Customer Care Call Centre Scripts - FlyerTalk Forums",
+      "url": "https://www.flyertalk.com/forum/american-airlines-aadvantage-pre-consolidation-usair/989287-aa-customer-care-call-centre-scripts.html",
+      "snippet": "Aug 27, 2009 · American Airlines | AAdvantage (Pre-Consolidation with USAir) - AA Customer Care Call Centre Scripts - Just called …"
+    },
+    {
+      "title": "FlyerTalk - The world's most popular frequent flyer community",
+      "url": "https://www.flyertalk.com/",
+      "snippet": "Welcome to the FlyerTalk Forums. FlyerTalk’s 24/7 forums deliver the latest traveler information on airlines, hotels, and more. Join …"
+    },
+    {
+      "title": "Has anyone recently emailed AA executives? Are any contacts useful ...",
+      "url": "https://www.flyertalk.com/forum/american-airlines-aadvantage/2088426-has-anyone-recently-emailed-aa-executives-any-contacts-useful-helpful.html",
+      "snippet": "Jul 26, 2022 · American Airlines | AAdvantage - Has anyone recently emailed AA executives? Are any contacts useful / helpful? - …"
+    },
+    {
+      "title": "AAdvantage Eshopping Phone Number and/or Contact? - FlyerTalk",
+      "url": "https://www.flyertalk.com/forum/american-airlines-aadvantage-pre-consolidation-usair/396848-aadvantage-eshopping-phone-number-contact.html",
+      "snippet": "Feb 4, 2005 · AAdvantage Customer Service won't give out a phone number and refers customers to the EShopping e-mail address …"
+    }
+  ]
+}

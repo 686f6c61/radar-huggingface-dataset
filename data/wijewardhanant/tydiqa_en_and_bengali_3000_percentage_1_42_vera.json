@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/tydiqa_en_and_bengali_3000_percentage_1_42_VeRA",
+  "slug": "wijewardhanant-tydiqa_en_and_bengali_3000_percentage_1_42_vera",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/tydiqa_en_and_bengali_3000_percentage_1_42_VeRA",
+  "created_at": "2026-09-22T02:46:27.000Z",
+  "updated_at": "2026-09-22T02:46:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123920576,
+  "storage_human": "124 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=nl",
+      "snippet": "Wij willen hier een beschrijving geven, maar de site die u nu bekijkt staat dit niet toe."
+    },
+    {
+      "title": "Gmail",
+      "url": "https://accounts.google.com/login?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Inloggen - Google Accounts",
+      "url": "https://accounts.google.com/login?hl=nl",
+      "snippet": "Niet jouw computer? Gebruik een venster voor privé browsen om in te loggen. Meer informatie over het gebruik van de gastmodus …"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://www.google.com/accounts/Login",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    },
+    {
+      "title": "Gmail: beveiligde, AI-gestuurde e-mail voor iedereen | Google …",
+      "url": "https://workspace.google.com/intl/nl/gmail/",
+      "snippet": "Gmail, nu mogelijk gemaakt door AI van Gemini. Ontdek nieuwe manieren om e-mails te schrijven, te beantwoorden en te ordenen. …"
+    }
+  ]
+}

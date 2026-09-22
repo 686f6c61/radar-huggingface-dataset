@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "PTTREP/asynchow-minutes-graph",
+  "slug": "pttrep-asynchow-minutes-graph",
+  "author": "PTTREP",
+  "url": "https://huggingface.co/PTTREP/asynchow-minutes-graph",
+  "created_at": "2026-09-22T00:47:34.000Z",
+  "updated_at": "2026-09-22T00:51:59.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6186323737,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nissan Nederland ǀ Stadsauto, SUV, EV, Crossover & Bedrijfswagens",
+      "url": "https://www.nissan.nl/",
+      "snippet": "Welkom bij Nissan, ontdek onze reeks innovatieve modellen en de meest actuele aanbiedingen! Configureer uw eigen Nissan of …"
+    },
+    {
+      "title": "Nieuwe Nissan MICRA | Elektrische compacte auto | Nissan",
+      "url": "https://micra.nissan.nl/",
+      "snippet": "Ontdek de nieuwe 100% elektrische compacte auto van Nissan, een mix van modern design en stadsmobiliteit zonder concessies."
+    },
+    {
+      "title": "Verzekering - Eigenaar | Nissan",
+      "url": "https://www.nissan.nl/Services/nissan-verzekering.html",
+      "snippet": "Ontdek de verzekering van Nissan: een volledige Nissan verzekering op maat voor uw Nissan voertuig. Bekijk direct online wat wij …"
+    },
+    {
+      "title": "Rijetechnologie - Nieuwe Nissan MICRA | Nissan",
+      "url": "https://micra.nissan.nl/rijetechnologie",
+      "snippet": "Ontdek alle geavanceerde rijhulpsystemen. Nieuwe Nissan Micra, elektrische stadsauto."
+    },
+    {
+      "title": "Eersteklas connectiviteit - Nieuwe Nissan LEAF | Nissan",
+      "url": "https://leaf.nissan.nl/connectiviteit",
+      "snippet": "De nieuwe Nissan LEAF plant niet alleen uw route, maar uw hele reis. Met de ingebouwde Google Maps-routeplanner toont de LEAF …"
+    }
+  ]
+}

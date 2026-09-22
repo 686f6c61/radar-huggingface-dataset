@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_120_DoRA",
+  "slug": "wijewardhanant-tydiqa_en_and_swahili_3000_percentage_1_120_dora",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_120_DoRA",
+  "created_at": "2026-09-22T02:40:21.000Z",
+  "updated_at": "2026-09-22T02:40:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116456816,
+  "storage_human": "116 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil — MesServices.etudiant.gouv.fr",
+      "url": "https://messervices.etudiant.gouv.fr/",
+      "snippet": "Dans le guide de l’étudiant, toutes les informations utiles pour faire une demande de bourse, de logement et le mode d’emploi pour …"
+    },
+    {
+      "title": "Mes services étudiant | Service Public",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/R16390",
+      "snippet": "Mes services étudiant vous permet de faire les démarches suivantes : ces démarches sont gratuites. Elles sont uniquement …"
+    },
+    {
+      "title": "Connexion - Dossier Social Étudiant",
+      "url": "https://dossier-social.etudiant.gouv.fr/",
+      "snippet": "La demande de bourse et/ou logement est formulée par l’intermédiaire du Dossier Social Étudiant (DSE). Pour en savoir plus : …"
+    },
+    {
+      "title": "Mes services étudiant : constituer son Dossier Social Étudiant (DSE ...",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/R75873",
+      "snippet": "Mes services étudiant : constituer son Dossier Social Étudiant (DSE) - Service en ligne"
+    },
+    {
+      "title": "Demande de bourse : les étapes pour son Dossier social étudiant",
+      "url": "https://www.lescrous.fr/dse/",
+      "snippet": "Si vous souhaitez demander une bourse pour vos études dans l’enseignement supérieur ou faire une demande pour un logement …"
+    }
+  ]
+}

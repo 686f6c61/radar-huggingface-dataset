@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "wallawalla47/Qwen3.8-27B-NVIDIA-NVFP4-NInferV3",
+  "slug": "wallawalla47-qwen3-8-27b-nvidia-nvfp4-ninferv3",
+  "author": "wallawalla47",
+  "url": "https://huggingface.co/wallawalla47/Qwen3.8-27B-NVIDIA-NVFP4-NInferV3",
+  "created_at": "2026-09-21T22:32:33.000Z",
+  "updated_at": "2026-09-21T23:15:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "Qwen3.8",
+    "nvidia",
+    "ModelOpt",
+    "nvfp4",
+    "fp4",
+    "w4a4",
+    "4bit",
+    "fp8",
+    "quantization",
+    "quantized",
+    "blackwell",
+    "compressed-tensors",
+    "qwen3.8-27b",
+    "4-bit precision",
+    "multimodal",
+    "vision",
+    "reasoning",
+    "thinking",
+    "long-context",
+    "agentic",
+    "mtp",
+    "speculative-decoding",
+    "image-text-to-text",
+    "base_model:nvidia/Qwen3.8-27B-NVFP4",
+    "base_model:quantized:nvidia/Qwen3.8-27B-NVFP4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22783240452,
+  "storage_human": "22.8 GB",
+  "base_model": "nvidia/Qwen3.8-27B-NVFP4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft 微软亚太研发集团--联系我们",
+      "url": "https://www.microsoft.com/zh-cn/aprd/contactus?msockid=2677910f66896b1334dc86d4679c6a63",
+      "snippet": "微软专为大型企业提供信息化服务，提供大型企业信息解决方案，行业解决方案。 微软通过社交媒体与客户建立联系，使微软与大型 …"
+    },
+    {
+      "title": "微软亚太研发集团总部1号楼 - 北京市海淀区 - 地名地址信息 ...",
+      "url": "https://ditu.amap.com/place/B000A8WC5S",
+      "snippet": "微软亚太研发集团总部1号楼是一家楼栋号，地址为北京市海淀区丹棱街5号微软中国研发集团总部大楼1号楼。 地理坐 …"
+    },
+    {
+      "title": "微软亚太研发集团 - 微软研发 | 微软中国",
+      "url": "https://www.microsoft.com/zh-cn/aprd/default?msockid=2677910f66896b1334dc86d4679c6a63",
+      "snippet": "微软亚太研发集团肩负着三大使命,即成为微软全球范围内的核心基地,加强与本地区产业同仁的合作,深入开掘以本地区的新兴市场需求, …"
+    },
+    {
+      "title": "微软亚太研发集团大厦(微软总部) - 北京市海淀区 - 商务住宅 ...",
+      "url": "https://ditu.amap.com/place/B0FFGSV7GU",
+      "snippet": "Sep 9, 2023 · 微软亚太研发集团大厦 (微软总部)是一家商务写字楼，位于北京市海淀区（北京市海淀区丹棱街5号）。 联系电话：010 …"
+    },
+    {
+      "title": "百度地图",
+      "url": "https://api.map.baidu.com/geocoder?address=北京市海淀区丹棱街5号&output=html",
+      "snippet": "提供地铁线路图浏览，乘车方案查询，以及准确的票价和时间信息。"
+    }
+  ]
+}

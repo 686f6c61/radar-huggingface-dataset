@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "rcmorano/kev-0.5b-onnx",
+  "slug": "rcmorano-kev-0-5b-onnx",
+  "author": "rcmorano",
+  "url": "https://huggingface.co/rcmorano/kev-0.5b-onnx",
+  "created_at": "2026-09-21T20:45:40.000Z",
+  "updated_at": "2026-09-21T20:46:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "kev-web",
+    "transformers.js",
+    "webgpu",
+    "wasm",
+    "javascript",
+    "browser",
+    "decision-model",
+    "multiple-choice",
+    "text-classification",
+    "feature-extraction",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1000338843,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "没有余地，直接取消！巴拿马对受制裁船只实行最新法令！",
+      "url": "https://www.sohu.com/a/819746650_121123888",
+      "snippet": "Oct 24, 2024 · 凸显了巴拿马加强监管的紧迫性。 事实上过去几年，巴拿马一直在积极地清理这些影子船只。 PMA曾在2023 年表示， …"
+    },
+    {
+      "title": "CS224N-Assignment-4/src.vocab at main · JerryZhang-cloud ... - GitHub",
+      "url": "https://github.com/JerryZhang-cloud/CS224N-Assignment-4/blob/main/src.vocab",
+      "snippet": "30000 lines (30000 loc) · 532 KB Code"
+    },
+    {
+      "title": "这些船舶危险了！巴拿马突然宣布：一旦查明立即注销……- 大数跨境",
+      "url": "https://www.10100.com/article/553955",
+      "snippet": "Oct 22, 2024 · 巴拿马宣布立即注销与影子船队关联的船舶注册信息 即刻生效的行政令强化制裁合规 近日，巴拿马总统何塞·劳尔·穆利 …"
+    },
+    {
+      "title": "巴拿马颁布法令取消对受制裁船只的登记",
+      "url": "https://www.boringcompliance.com/post/untitled-13",
+      "snippet": "2024 年 10 月 18日巴拿马总统 José Raúl Mulino 颁布了第 512 号总统令，取消了以下悬挂巴拿马国旗的船舶的登记： (1)美国特别指 …"
+    },
+    {
+      "title": "650艘船舶！被巴拿马注销船旗_注册_制裁_美国 - 搜狐",
+      "url": "https://www.sohu.com/a/901148468_175033",
+      "snippet": "Jun 3, 2025 · 该海事当局补充道，自去年开始实施相关措施以来（2024年10月，PMA第512号令，可立即吊销那些出现在国际制裁名 …"
+    }
+  ]
+}

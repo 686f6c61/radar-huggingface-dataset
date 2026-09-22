@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/tydiqa_en_and_telugu_3000_percentage_1_120_VeRA",
+  "slug": "wijewardhanant-tydiqa_en_and_telugu_3000_percentage_1_120_vera",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/tydiqa_en_and_telugu_3000_percentage_1_120_VeRA",
+  "created_at": "2026-09-22T02:48:41.000Z",
+  "updated_at": "2026-09-22T02:48:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123920576,
+  "storage_human": "124 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Landgasthaus Zum Deutschen Kaiser",
+      "url": "https://zum-deutschen-kaiser.de/",
+      "snippet": "Herzlich Willkommen Herzlich Willkommen im Landgasthaus “Zum Deutschen Kaiser” Unser Familienbetrieb befindet sich im oberen …"
+    },
+    {
+      "title": "Gaststätte – Landgasthaus Zum Deutschen Kaiser",
+      "url": "https://zum-deutschen-kaiser.de/?page_id=11",
+      "snippet": "Landgasthaus Zum Deutschen Kaiser Kriemhildstr. 12 64385 Reichelsheim Tel.: 06164-1233 E-Mail: info@zum-deutschen-kaiser.de"
+    },
+    {
+      "title": "Speisekarte – Landgasthaus Zum Deutschen Kaiser",
+      "url": "https://zum-deutschen-kaiser.de/?page_id=14",
+      "snippet": "Speisekarte – Landgasthaus Zum Deutschen Kaiser Speisekarte"
+    },
+    {
+      "title": "Impressum – Landgasthaus Zum Deutschen Kaiser",
+      "url": "https://zum-deutschen-kaiser.de/?page_id=25",
+      "snippet": "Gasthaus “Zum Deutschen Kaiser” Kriemhildstr. 12, 64385 Reichelsheim-Gumpen Tel. 06164/1233 e-Mail: info@zum-deutschen …"
+    },
+    {
+      "title": "Datenschutz – Landgasthaus Zum Deutschen Kaiser",
+      "url": "https://zum-deutschen-kaiser.de/?page_id=20",
+      "snippet": "Allgemeiner Hinweis und Pflichtinformationen Benennung der verantwortlichen Stelle Die verantwortliche Stelle für die …"
+    }
+  ]
+}

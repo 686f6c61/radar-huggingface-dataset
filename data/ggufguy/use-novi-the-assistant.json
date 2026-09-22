@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "GGUFGuy/use-novi-the-assistant",
+  "slug": "ggufguy-use-novi-the-assistant",
+  "author": "GGUFGuy",
+  "url": "https://huggingface.co/GGUFGuy/use-novi-the-assistant",
+  "created_at": "2026-09-22T02:41:14.000Z",
+  "updated_at": "2026-09-22T02:41:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT en Français - Utilisation gratuite, Sans enregistrement - TalkAI",
+      "url": "https://talkai.info/fr/",
+      "snippet": "Le réseau neuronal ChatGPT est disponible en français. Utilisez le chatbot OpenAI en français gratuitement et sans enregistrement."
+    },
+    {
+      "title": "Chat IA avec ChatGPT, Gemini, Claude et DeepSeek - TalkAI",
+      "url": "https://talkai.info/fr/chat/",
+      "snippet": "Discutez avec ChatGPT, Gemini, Claude ou DeepSeek en français sur TalkAI. Choisissez un modèle d’IA, posez des questions, …"
+    },
+    {
+      "title": "Gemini în Română - Utilizare gratuită, fără înregistrare",
+      "url": "https://gemini.talkai.info/ro/",
+      "snippet": "Rețeaua neuronală Gemini este disponibilă în limba română. Utilizați chatbotul Google în limba română, gratuit și fără înregistrare."
+    },
+    {
+      "title": "Chat — TalkAI",
+      "url": "https://premium.talkai.info/fr/chat/",
+      "snippet": "Chat with AI, manage conversations, attach files, and customize your experience."
+    },
+    {
+      "title": "TalkAI - Parler avec Gemini en français",
+      "url": "https://gemini.talkai.info/fr/chat/",
+      "snippet": "TalkAI fournit un accès gratuit et illimité à Gemini en français. Ici, sur notre site web, vous pouvez utiliser le chatbot sans restrictions …"
+    }
+  ]
+}

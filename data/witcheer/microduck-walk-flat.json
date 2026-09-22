@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "witcheer/microduck-walk-flat",
+  "slug": "witcheer-microduck-walk-flat",
+  "author": "witcheer",
+  "url": "https://huggingface.co/witcheer/microduck-walk-flat",
+  "created_at": "2026-09-21T20:33:08.000Z",
+  "updated_at": "2026-09-21T20:33:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793797,
+  "storage_human": "793797 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "调节阀流通能力Cg值与Cv值如何换算 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/339180325.html",
+      "snippet": "流通能力就是CV值 国内也用KV值 至于你说的Cg值我到是没听说过 我做技术的做了1年多 10．什么是调节阀的流量系数C 、Cv 、KV …"
+    },
+    {
+      "title": "maya里cv曲线建好怎么弄成面 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/446036089.html",
+      "snippet": "maya里cv曲线建好怎么弄成面工具：maya 3D1、打开maya界面，切换到曲面模块2、可以用EP或CV曲线3、画出自己想要的轮廓， …"
+    },
+    {
+      "title": "申请香港研究生CV？ - 知乎",
+      "url": "https://www.zhihu.com/question/65033670",
+      "snippet": "Sep 7, 2017 · 谢邀~ 申请香港高校的研究生，一般来说，CV是控制在一页A4纸之内。 CV要写的精炼简短，引起他人阅读兴趣，分别 …"
+    },
+    {
+      "title": "我在计算机读研，选择人工智能方向了，有自然语言处理nlp，还有计算 …",
+      "url": "https://www.zhihu.com/question/550881555",
+      "snippet": "Aug 30, 2022 · CV和NLP是目前计算机方向最大的两个领域，CV第一NLP第二，这两个方向发top文最多，当然水文也比较容易。 CV …"
+    },
+    {
+      "title": "选择电磁阀时，电磁阀规格上的有效截面积mm2（CV）= 25 (1.4)是什 …",
+      "url": "https://zhidao.baidu.com/question/450955187.html",
+      "snippet": "Jul 15, 2012 · 选择电磁阀时，电磁阀规格上的有效截面积mm2（CV）= 25 (1.4)是什么意思？如何选择有效截面积？有效截面积应当指 …"
+    }
+  ]
+}

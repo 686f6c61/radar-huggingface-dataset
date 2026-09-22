@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_AdaLoRA_Qwen3-8b",
+  "slug": "wijewardhanant-xnli_en_and_hi_5000_percentage_1_120_adalora_qwen3-8b",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_AdaLoRA_Qwen3-8b",
+  "created_at": "2026-09-22T00:31:13.000Z",
+  "updated_at": "2026-09-22T00:31:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-8B-Base",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 787170731,
+  "storage_human": "787 MB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ballettschule Stage Dance | Ballett in Sindelfingen",
+      "url": "https://www.stagedance.de/",
+      "snippet": "Unser engagiertes Team aus qualifizierten Ballett- und Tanzpädagogen vermittelt mit Herz und Expertise die Kunst des Tanzes – für …"
+    },
+    {
+      "title": "Ballettschule Stage Dance | Kursangebot",
+      "url": "https://www.stagedance.de/unser-kursangebot",
+      "snippet": "Ballett, Pre-Ballett, Dance & Play, Akrobatik & Modern Dance in Sindelfingen und Böblingen – Tanzkurse für Kinder, Jugendliche & …"
+    },
+    {
+      "title": "Tanz | SMTT",
+      "url": "https://www.smtt.de/tanz",
+      "snippet": "Tanzunterricht an der SMTT umfasst Modern Dance, Kindertanz, Tanzimprovisation und Feldenkrais. Unter Modern Dance wird …"
+    },
+    {
+      "title": "SMTT | Schule für Musik, Theater und Tanz",
+      "url": "https://www.smtt.de/",
+      "snippet": "Jul 20, 2026 · Wir möchten für Sindelfingen und darüber hinaus ein musikalisches Beratungs- und Kompetenzzentrum sein. Bei uns …"
+    },
+    {
+      "title": "Modern Dance in Sindelfingen | Empfehlungen | citysports.de",
+      "url": "https://www.citysports.de/baden-wuerttemberg/sindelfingen/sportart/modern-dance/",
+      "snippet": "Modern Dance in Sindelfingen - alles auf einen Blick: Adressen und Empfehlungen in deiner Umgebung sowie Tipps und …"
+    }
+  ]
+}

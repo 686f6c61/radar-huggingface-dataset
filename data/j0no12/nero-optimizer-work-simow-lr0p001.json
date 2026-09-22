@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "j0no12/nero-optimizer-work-simow-lr0p001",
+  "slug": "j0no12-nero-optimizer-work-simow-lr0p001",
+  "author": "j0no12",
+  "url": "https://huggingface.co/j0no12/nero-optimizer-work-simow-lr0p001",
+  "created_at": "2026-09-22T00:18:01.000Z",
+  "updated_at": "2026-09-22T00:18:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "nero_dense_control_mlx",
+    "nero",
+    "optimizer-research",
+    "simow",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4013862,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "موسوعة - جامع السنة وشروحها",
+      "url": "https://hadithportal.com/?show=hadith&h_id=298&sharh=5756&book=33",
+      "snippet": "جامع السنة وشروحها - موسوعة شاملة للأحاديث النبوية الشريفة وشروحها من الاف الكتب، مع إمكانية البحث والتصفح بسهولة."
+    },
+    {
+      "title": "حديث المفاخذة",
+      "url": "https://www.kalemasawaa.com/noor/shobohat_islam/mofakhza.htm",
+      "snippet": "انتشرت في الاونة الاخيرة , وبشكل كبير وخاصة في الاعراس عادة مفاخذة الاولاد الصغار ,ماحكم ذلك مع العلم ان رسول الله صلى الله عليه وسلم كان قد فاخذ سيدتنا عائشة رضي الله عنها"
+    },
+    {
+      "title": "أرشيف الإسلام - موسوعة الحديث - حديث (يُقَبِّلُنِي وَهُوَ صَائِمٌ ...",
+      "url": "https://www.islamarchive.cc/hadith/187851",
+      "snippet": "قلت: أليس كان رسول الله صلى الله عليه وسلم يباشر وهو صائم قالت: إنه كان أملككم لإربه وليس مرادها بهذا تحريم المباشرة، فعن حكيم بن عقال قال: سألت عائشة: ما يحرم علي من امرأتي وأنا صائم قالت ..."
+    },
+    {
+      "title": "كان النبي صلى الله عليه وسلم يضع رأسه في حجر عائشة رضي الله",
+      "url": "https://surahquran.com/Hadith-90548.html",
+      "snippet": "حديث كان النبي صلى الله عليه وسلم يضع رأسه في حجر عائشة رضي الله | شرح و تخريج حديث مجموع الفتاوى فوائد و صحة و راوي الحديث ."
+    },
+    {
+      "title": "الموسوعة الحديثية - شروح الأحاديث - كان رسولُ اللهِ صلَّى اللهُ عليه ...",
+      "url": "https://dorar.net/hadith/sharh/17389",
+      "snippet": "التصنيف الموضوعي: رقائق وزهد - الحياء فضائل النبي وصفته ودلائل النبوة - حياء النبي مناقب وفضائل - عثمان بن عفان مناقب وفضائل - فضائل أصحاب النبي صلى الله عليه وسلم رقائق وزهد - الاستحياء …"
+    }
+  ]
+}

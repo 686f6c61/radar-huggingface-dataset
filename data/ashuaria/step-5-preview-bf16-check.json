@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "ashuaria/Step-5-Preview-BF16-check",
+  "slug": "ashuaria-step-5-preview-bf16-check",
+  "author": "ashuaria",
+  "url": "https://huggingface.co/ashuaria/Step-5-Preview-BF16-check",
+  "created_at": "2026-09-22T01:24:40.000Z",
+  "updated_at": "2026-09-22T01:24:40.000Z",
+  "license": "stepfun-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "step3p5v",
+    "text-generation",
+    "stepfun",
+    "step-5",
+    "moe",
+    "mixture-of-experts",
+    "agentic",
+    "coding",
+    "software-engineering",
+    "long-context",
+    "1m-context",
+    "multimodal",
+    "image",
+    "video",
+    "sparse-attention",
+    "gqa",
+    "financial-analysis",
+    "deep-research",
+    "tool-calling",
+    "parallel-tool-calling",
+    "json-schema",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "multilingual",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 604339504832,
+  "parameters_human": "604.34B",
+  "storage_bytes": 1214893406569,
+  "storage_human": "1214.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MySQL :: How to open MySql?",
+      "url": "https://forums.mysql.com/read.php?10,400255",
+      "snippet": "Jan 13, 2011 · I have installed the free MySql community server on my computer and have set it up via the wizard. I clicked finish, but …"
+    },
+    {
+      "title": "MySQL :: Trigger and LIKE SQL syntax",
+      "url": "https://forums.mysql.com/read.php?99,53414,53414,quote=1",
+      "snippet": "Nov 8, 2005 · Trigger and LIKE SQL syntax Posted by: Vic Sithasanan Date: November 08, 2005 03:10AM"
+    },
+    {
+      "title": "MySQL :: Cascade Delete",
+      "url": "https://forums.mysql.com/read.php?22,72517",
+      "snippet": "Feb 27, 2006 · Is there a way to force CASCADE delete, using a single SQL statement at the time of deletion ? I dont want to alter …"
+    },
+    {
+      "title": "MySQL :: MySQL Forums :: Ruby",
+      "url": "https://forums.mysql.com/list.php?116",
+      "snippet": "Feb 24, 2020 · Ruby, Rails and MySQL gem ― through scaffolding, versioning, rake db:create, db:migrate ― HOW to implement and …"
+    },
+    {
+      "title": "MySQL :: InstallShield Silent Install of MySQL Server",
+      "url": "https://forums.mysql.com/read.php?11,246181",
+      "snippet": "Feb 4, 2009 · In my InstallShield project, I added a new dialog box, asking if the user would like MySQL installed, or to integrate with …"
+    }
+  ]
+}

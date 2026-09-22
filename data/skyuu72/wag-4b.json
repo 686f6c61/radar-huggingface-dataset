@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "skyuu72/wag-4b",
+  "slug": "skyuu72-wag-4b",
+  "author": "skyuu72",
+  "url": "https://huggingface.co/skyuu72/wag-4b",
+  "created_at": "2026-09-21T23:54:35.000Z",
+  "updated_at": "2026-09-22T02:47:39.000Z",
+  "license": "wtfpup-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_5_text",
+    "text-generation",
+    "chat",
+    "character",
+    "puppygirl",
+    "qwen3_5",
+    "conversational",
+    "en",
+    "dataset:OpenAssistant/oasst1",
+    "dataset:yahma/alpaca-cleaned",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 7211195981,
+  "storage_human": "7.2 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "carlos gutierrez - Amazon | LinkedIn",
+      "url": "https://www.linkedin.com/in/carlos-gutierrez-520420248",
+      "snippet": "Experience: Amazon · Location: 76133. View carlos gutierrez’s profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "Carlos Gutierrez - GTM for AI infrastructure - LinkedIn",
+      "url": "https://nl.linkedin.com/in/carlostierrez",
+      "snippet": "Outbound execution is becoming a feature. Your advantage is knowing which buyer matters, why they care, what every customer …"
+    },
+    {
+      "title": "Carlos Gutierrez - Senior Software Test Engineer, QA lead ... - LinkedIn",
+      "url": "https://nl.linkedin.com/in/carlosgutierreznl",
+      "snippet": "Bekijk het profiel van Carlos Gutierrez op LinkedIn, een professionele community van 1 miljard leden."
+    },
+    {
+      "title": "Carlos Gutierrez - Head of Ecommerce US at Essity - LinkedIn",
+      "url": "https://www.linkedin.com/in/carlosggutierrez",
+      "snippet": "View Carlos Gutierrez’s profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "18200+ ‘Carlos Gutierrez’ profiles | LinkedIn",
+      "url": "https://nl.linkedin.com/pub/dir/Carlos/Gutierrez",
+      "snippet": "Bekijk profielen van professionals die ‘Carlos Gutierrez’ heten op LinkedIn. Er zijn 18200+ professionals die ‘Carlos Gutierrez’ heten …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/tydiqa_en_and_bengali_3000_percentage_1_40_VeRA",
+  "slug": "wijewardhanant-tydiqa_en_and_bengali_3000_percentage_1_40_vera",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/tydiqa_en_and_bengali_3000_percentage_1_40_VeRA",
+  "created_at": "2026-09-22T02:45:54.000Z",
+  "updated_at": "2026-09-22T02:46:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123920576,
+  "storage_human": "124 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Student Portal - Login",
+      "url": "https://www.bromcomvle.com/",
+      "snippet": "Login Single Sign-On Providers Login with Google Account Login with Microsoft Account v5.2020.9756.30672"
+    },
+    {
+      "title": "Student Portal | Ulster University Digital Services",
+      "url": "https://www.ulster.ac.uk/ds/students/student-portal",
+      "snippet": "The Student Portal provides easy access to your online services such as email, file storage, Blackboard learning environment and the …"
+    },
+    {
+      "title": "Student finance login - GOV.UK",
+      "url": "https://www.gov.uk/student-finance-register-login",
+      "snippet": "Your student finance online account - check payment dates, track an application, change details, reset password, find customer …"
+    },
+    {
+      "title": "Sign IN - Open University",
+      "url": "https://students.open.ac.uk/",
+      "snippet": "The Open University is incorporated by Royal Charter (RC 000391), an exempt charity in England & Wales and a charity registered in …"
+    },
+    {
+      "title": "SIMS ID",
+      "url": "https://www.sims-student.co.uk/",
+      "snippet": "Single Sign-On for your school's teachers, staff and pupils."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/MiMo-V2.6-Distill-Qwen-9B-FP8",
+  "slug": "prithivmlmods-mimo-v2-6-distill-qwen-9b-fp8",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/MiMo-V2.6-Distill-Qwen-9B-FP8",
+  "created_at": "2026-09-21T21:38:09.000Z",
+  "updated_at": "2026-09-21T22:33:02.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "mimo_v2",
+    "text-generation-inference",
+    "fp8",
+    "agentic",
+    "distillation",
+    "supervised-fine-tuning",
+    "code",
+    "tool-use",
+    "vllm",
+    "conversational",
+    "en",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "license:other",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 13540191909,
+  "storage_human": "13.5 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "In Good Company Chicago - Nonprofit Explorer - ProPublica",
+      "url": "https://projects.propublica.org/nonprofits/organizations/332508422",
+      "snippet": "Aug 20, 2026 · Browse millions of annual returns filed by tax-exempt organizations with ProPublica’s Nonprofit Explorer. See details …"
+    },
+    {
+      "title": "IN GOOD COMPANY CHICAGO in Gary, IN | Company Info & Reviews …",
+      "url": "https://www.bizapedia.com/in/in-good-company-chicago.html",
+      "snippet": "Dec 11, 2025 · IN Good Company Chicago is a Foreign Non-Profit Corporation organized under the laws of the State of Indiana. This …"
+    },
+    {
+      "title": "About - In Good Company",
+      "url": "https://www.igc.earth/about",
+      "snippet": "Creativity and expansive ideas come from teamwork, honesty, and the celebration of diverse worldviews and lived experiences."
+    },
+    {
+      "title": "List of Charities and Nonprofits in Chicago - NGO Base",
+      "url": "https://ngobase.org/ci/US.IL.1/chicago-ngos-charities",
+      "snippet": "Comprehensive list of top Charities and Nonprofits in Chicago. Browse organizations by their focus work areas. Page 1 of 1939."
+    },
+    {
+      "title": "IN GOOD COMPANY: The Creators’ Social – Things to Do in Chicago",
+      "url": "https://allevents.in/chicago/in-good-company-the-creators-social/100001999552306776",
+      "snippet": "Looking for things to do in Chicago? Attend IN GOOD COMPANY: The Creators’ Social at NEMA Chicago on September 22, 2026. …"
+    }
+  ]
+}

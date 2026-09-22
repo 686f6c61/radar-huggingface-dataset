@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-4ac629d5-1bde-44a0-8ffd-a514ffcbbc2e",
+  "slug": "muhamad-geosurge-invert-polarity-4ac629d5-1bde-44a0-8ffd-a514ffcbbc2e",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-4ac629d5-1bde-44a0-8ffd-a514ffcbbc2e",
+  "created_at": "2026-09-21T20:27:56.000Z",
+  "updated_at": "2026-09-21T20:29:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248031744,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496097520,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "#可能妳會遇到會教妳的療程步驟的也會遇到教妳步驟還要細心的陪妳 …",
+      "url": "https://ar-ar.facebook.com/watch/hashtag/%E5%8F%AF%E8%83%BD%E5%A6%B3%E6%9C%83%E9%81%87%E5%88%B0%E6%9C%83%E6%95%99%E5%A6%B3%E7%9A%84%E7%99%82%E7%A8%8B%E6%AD%A5%E9%A9%9F%E7%9A%84%E4%B9%9F%E6%9C%83%E9%81%87%E5%88%B0%E6%95%99%E5%A6%B3%E6%AD%A5%E9%A9%9F%E9%82%84%E8%A6%81%E7%B4%B0%E5%BF%83%E7%9A%84%E9%99%AA%E5%A6%B3%E8%AE%93%E5%A6%B3%E5%AD%B8%E5%88%B0%E8%AE%93%E9%A1%A7%E5%AE%A2%E7%9C%9F%E7%9A%84%E8%83%BD%E6%94%BE%E9%AC%86%E6%9C%89%E5%9B%9E%E9%A0%AD%E7%8E%87%E7%B2%BE%E9%AB%93%E7%9A%84%E7%86%9F%E7%85%89%E6%8A%80%E5%B7%A7/",
+      "snippet": "#可能妳會遇到會教妳的療程步驟的也會遇到教妳步驟還要細心的陪妳讓妳學到讓顧客真的能放鬆有回頭率精髓的熟煉技巧 ..."
+    },
+    {
+      "title": "Waders‎‎‏ للبيع في ‏غريان‏ | Facebook Marketplace",
+      "url": "https://ar-ar.facebook.com/marketplace/109688249050483/waders/",
+      "snippet": "عناصر جديدة ومستعملة من فئة ‏‎‎Waders‎‎‏ للبيع في ‏غريان‏ على Facebook Marketplace. يمكنك العثور على صفقات رائعة وبيع العناصر الخاصة بك دون دفع أي رسوم."
+    },
+    {
+      "title": "Can Openers‎‎‏ للبيع في ‏‎Piral‎‏ | Facebook Marketplace",
+      "url": "https://ar-ar.facebook.com/marketplace/107905902566316/can-openers/",
+      "snippet": "عناصر جديدة ومستعملة من فئة ‏‎‎Can Openers‎‎‏ للبيع في ‏‎Piral‎‏ على Facebook Marketplace. يمكنك العثور على صفقات رائعة وبيع العناصر الخاصة بك دون دفع أي رسوم."
+    },
+    {
+      "title": "Jade Bracelets‎‎‏ للبيع في ‏وهران‏ | Facebook Marketplace",
+      "url": "https://ar-ar.facebook.com/marketplace/102191953156546/jade-bracelets/",
+      "snippet": "عناصر جديدة ومستعملة من فئة ‏‎‎Jade Bracelets‎‎‏ للبيع في ‏وهران‏ على Facebook Marketplace. يمكنك العثور على صفقات رائعة وبيع العناصر الخاصة بك دون دفع أي رسوم."
+    },
+    {
+      "title": "Boogie Boards‎‎‏ للبيع في ‏السليمانية‏ | Facebook Marketplace",
+      "url": "https://ar-ar.facebook.com/marketplace/108070542560898/boogie-boards/",
+      "snippet": "عناصر جديدة ومستعملة من فئة ‏‎‎Boogie Boards‎‎‏ للبيع في ‏السليمانية‏ على Facebook Marketplace. يمكنك العثور على صفقات رائعة وبيع العناصر الخاصة بك دون دفع أي رسوم."
+    }
+  ]
+}

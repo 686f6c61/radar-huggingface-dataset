@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nampham1106/laya-flash",
+  "slug": "nampham1106-laya-flash",
+  "author": "nampham1106",
+  "url": "https://huggingface.co/nampham1106/laya-flash",
+  "created_at": "2026-09-22T02:26:24.000Z",
+  "updated_at": "2026-09-22T05:15:58.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "laya-flash",
+    "lfm2",
+    "decision-model",
+    "baseline",
+    "base_model:LiquidAI/LFM2.5-Encoder-230M",
+    "base_model:finetune:LiquidAI/LFM2.5-Encoder-230M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 256205318,
+  "parameters_human": "256.2M",
+  "storage_bytes": 1024839616,
+  "storage_human": "1.0 GB",
+  "base_model": "LiquidAI/LFM2.5-Encoder-230M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GMX - kostenlose E-Mail, Cloud, Nachrichten & Freemail",
+      "url": "https://www.gmx.net/",
+      "snippet": "Kostenlose E-Mail-Adresse erstellen, Nachrichten lesen und Fotos & Dateien in der GMX Cloud sicher speichern. Jetzt registrieren!"
+    },
+    {
+      "title": "GMX Login – ganz einfach",
+      "url": "https://anmelden.gmx.net/",
+      "snippet": "Der GMX Login stellt Sie vor Fragen oder bereitet Ihnen Probleme? Hier erfahren Sie alles, was Sie zum GMX Postfach Login wissen …"
+    },
+    {
+      "title": "GMX E-Mail sichere & kostenlose E-Mail-Adresse",
+      "url": "https://www.gmx.net/mail/",
+      "snippet": "Welche Funktionen bietet mein persönliches GMX E-Mail-Konto? Mit Ihrem GMX Postfach organisieren Sie Ihre E-Mails so …"
+    },
+    {
+      "title": "Login",
+      "url": "https://dv.gmx.net/",
+      "snippet": "Mobiler GMX Login: Auf dieser Seite können Sie sich mit dem Smartphone oder Tablet einfach und sicher unterwegs in Ihr GMX …"
+    },
+    {
+      "title": "GMX Handytarife 2026 | jetzt wechseln & sparen",
+      "url": "https://gmx.1und1.de/",
+      "snippet": "Bei den GMX Mobilfunk-Verträgen besteht die Möglichkeit, zwischen zwei Arten von SIM-Karten zu wählen. Die klassische Triple- …"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Devopsopraiz/Baanzon-33street-3.8-27B-Uncensored-Aggresive-MTP-GGUF",
+  "slug": "devopsopraiz-baanzon-33street-3-8-27b-uncensored-aggresive-mtp-gguf",
+  "author": "Devopsopraiz",
+  "url": "https://huggingface.co/Devopsopraiz/Baanzon-33street-3.8-27B-Uncensored-Aggresive-MTP-GGUF",
+  "created_at": "2026-09-22T02:25:27.000Z",
+  "updated_at": "2026-09-22T07:46:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.8",
+    "multimodal",
+    "vision",
+    "mtp",
+    "speculative-decoding",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 50,
+  "trending_score": 0,
+  "parameters": 1863907840,
+  "parameters_human": "1.86B",
+  "storage_bytes": 172466425216,
+  "storage_human": "172.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/",
+      "snippet": "Avec leboncoin, trouvez la bonne affaire, réalisez la bonne vente pour votre voiture, immobilier, emploi, location de vacances, …"
+    },
+    {
+      "title": "Voiture occasion - annonces automobiles de particuliers et …",
+      "url": "https://www.leboncoin.fr/c/voitures",
+      "snippet": "Consultez nos annonces de voitures d’occasion toutes marques : citadines, SUV, berlines, électriques, hybrides. Plus de 700 000 …"
+    },
+    {
+      "title": "Rhône-Alpes - leboncoin",
+      "url": "https://www.leboncoin.fr/l/rp_rhone-alpes",
+      "snippet": "Toutes nos annonces gratuites Rhône-Alpes. Consultez nos 9283829 annonces de particuliers et professionnels sur leboncoin"
+    },
+    {
+      "title": "Locations immobilières - leboncoin",
+      "url": "https://www.leboncoin.fr/c/locations",
+      "snippet": "Consultez nos annonces de locations sur leboncoin. Gaillac 81600 Catalanis - Les Bathanies - Traversac - Les Fédies"
+    },
+    {
+      "title": "Nord-Pas-de-Calais - leboncoin",
+      "url": "https://www.leboncoin.fr/l/rp_nord-pas-de-calais",
+      "snippet": "Toutes nos annonces gratuites Nord-Pas-de-Calais. Consultez nos 5863932 annonces de particuliers et professionnels sur leboncoin"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "strongpear/Llama3.1-8B-RAFT_PMIX_P80_5DOCS_A-MEDICAL-Instruct-r64-best-eval-loss",
+  "slug": "strongpear-llama3-1-8b-raft_pmix_p80_5docs_a-medical-instruct-r64-best-eval-loss",
+  "author": "strongpear",
+  "url": "https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P80_5DOCS_A-MEDICAL-Instruct-r64-best-eval-loss",
+  "created_at": "2026-09-21T20:30:39.000Z",
+  "updated_at": "2026-09-21T20:31:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688364093,
+  "storage_human": "688 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nagy körutazás Brazíliában: Salvador, Amazonas, Iguassu és Rio",
+      "url": "https://www.otptravel.hu/ajanlatok/brazilia-csoportos-korutazas-utazas-braziliaban-salvador-amazonas-iguassu-rio",
+      "snippet": "Csoportos körutazás Brazíliában magyar idegenvezetővel: Salvador de Bahia, Amazonas dzsungele, Iguassu-vízesések és Rio de …"
+    },
+    {
+      "title": "Brazília | Nagy brazil körutazás | 13 Napos Körutazás Brazíliában ...",
+      "url": "https://utazom.com/utazas/nagy-brazil-korutazas",
+      "snippet": "Nagy brazil körutazás - 13 napos körutazás Brazíliában Dél-Amerika, Brazília, Rio de Janeiro, Salvador Brazília -A csodálatos …"
+    },
+    {
+      "title": "Brazília - legjobb utazási ajánlatai egy helyen | Invia.hu",
+      "url": "https://www.invia.hu/utazasok/brazilia/",
+      "snippet": "Brazília népszerű térségeinek nyaralási és utazási ajánlatai közel 120 utazási irodától. Minőségi üdülések elérhető áron. Valós …"
+    },
+    {
+      "title": "Brazília akciós utak és nyaralás repülővel 2026-2027",
+      "url": "https://www.tickair.hu/brazilia",
+      "snippet": "Brazília utazásaink repülővel 2026-2027 előfoglalási akció és Last Minute ajánlatok egy helyen!"
+    },
+    {
+      "title": "Brazília körutazás | Start Utazás Brazília | 34 utazás",
+      "url": "https://startutazas.hu/brazilia",
+      "snippet": "A brazíliai körutazás legfontosabb információi és utazási ajánlatai egy helyen. brazíliai utazás foglalásához forduljon a Start Utazási …"
+    }
+  ]
+}

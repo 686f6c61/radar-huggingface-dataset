@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "daydreamwarrior/MiniCPM5-2B-heretic",
+  "slug": "daydreamwarrior-minicpm5-2b-heretic",
+  "author": "daydreamwarrior",
+  "url": "https://huggingface.co/daydreamwarrior/MiniCPM5-2B-heretic",
+  "created_at": "2026-09-22T02:40:17.000Z",
+  "updated_at": "2026-09-22T03:13:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "llama",
+    "minicpm",
+    "minicpm5",
+    "llama.cpp",
+    "text-generation",
+    "abliterated",
+    "uncensored",
+    "on-device",
+    "edge-ai",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 244,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 12142789128,
+  "storage_human": "12.1 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Google Traduction offre un service gratuit pour traduire instantanément des mots, expressions et pages Web entre le français et plus …"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.fr/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://www.google.fr/intl/fr/earth/index.html",
+      "snippet": "Google Earth est la représentation numérique la plus réaliste de notre planète. D'où proviennent nos images ? Comment sont-elles …"
+    },
+    {
+      "title": "Google Trends",
+      "url": "https://trends.google.fr/trends/",
+      "snippet": "Explorez l'intérêt pour la recherche de termes et des thèmes par période, zone géographique et popularité sur Google Trends"
+    }
+  ]
+}

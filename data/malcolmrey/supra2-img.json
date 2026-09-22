@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "malcolmrey/Supra2-IMG",
+  "slug": "malcolmrey-supra2-img",
+  "author": "malcolmrey",
+  "url": "https://huggingface.co/malcolmrey/Supra2-IMG",
+  "created_at": "2026-09-21T22:40:39.000Z",
+  "updated_at": "2026-09-21T23:00:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-to-image",
+    "supra",
+    "en",
+    "dataset:LucasFang/FLUX-Reason-6M",
+    "base_model:SupraLabs/Supra2-IMG",
+    "base_model:finetune:SupraLabs/Supra2-IMG",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1742682837,
+  "storage_human": "1.7 GB",
+  "base_model": "SupraLabs/Supra2-IMG",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "url": "https://www.whatsapp.com/",
+      "snippet": "Use WhatsApp Messenger to stay in touch with friends and family. WhatsApp is free and offers simple, secure, reliable messaging …"
+    },
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. …"
+    },
+    {
+      "title": "HOUSAB - WhatsApp",
+      "url": "https://wa.me/",
+      "snippet": "Hosted by WhatsApp 2026 © WhatsApp LLC Privacy & Terms"
+    },
+    {
+      "title": "WhatsApp – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/WhatsApp",
+      "snippet": "Das kalifornische Unternehmen WhatsApp Inc. bietet dabei das eigentliche mobile Anwendungsprogramm (App) namens WhatsApp …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "konizquants/Inkling-Small",
+  "slug": "konizquants-inkling-small",
+  "author": "konizquants",
+  "url": "https://huggingface.co/konizquants/Inkling-Small",
+  "created_at": "2026-09-21T23:34:18.000Z",
+  "updated_at": "2026-09-21T23:34:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 265956439090,
+  "parameters_human": "265.96B",
+  "storage_bytes": 531944513947,
+  "storage_human": "531.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ekbacksvägen 7 Stockholms Län, Brottby - hitta.se",
+      "url": "https://www.hitta.se/stockholms+l%C3%A4n/brottby/ekbacksv%C3%A4gen+7/omr%C3%A5de/59.6074:18.377169",
+      "snippet": "På adressen finns en villa byggd 1964. Huset är 53 kvadratmeter (ej inräknat biytor såsom garage, källarutrymmen etc.), vilket är …"
+    },
+    {
+      "title": "Ekbacksvägen Stockholms län, Brottby - hitta.se",
+      "url": "https://www.hitta.se/stockholms+l%C3%A4n/brottby/ekbacksv%C3%A4gen/omr%C3%A5de/3002656690",
+      "snippet": "I området kring Ekbacksvägen har det skett följande polisära ingripande och händelser de senaste 6 månaderna. Datan hämtas från …"
+    },
+    {
+      "title": "Kartor - Lantmäteriet",
+      "url": "https://www.lantmateriet.se/sv/kartor/",
+      "snippet": "Lantmäteriet kartlägger Sverige och förser samhället med kartor, bilder och annan geografisk information. En karta kan ha många …"
+    },
+    {
+      "title": "Eniro.se - Upptäck närheten.",
+      "url": "https://www.eniro.se/kartor",
+      "snippet": "Upptäck Sverige med våra kartor. Utforska lokala företag, tomtgränser, historiska flygfoton, cykelvägar, laddstationer med mera. …"
+    },
+    {
+      "title": "Lantmäteriet - Min Karta",
+      "url": "https://minkarta.lantmateriet.se/",
+      "snippet": "Min Karta Användning av kakor Vi använder nödvändiga kakor för att vår webbplats ska fungera. Vi vill också spara kakor för statistik. …"
+    }
+  ]
+}

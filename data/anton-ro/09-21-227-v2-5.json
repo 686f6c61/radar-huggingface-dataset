@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "anton-ro/09-21-227-v2.5",
+  "slug": "anton-ro-09-21-227-v2-5",
+  "author": "anton-ro",
+  "url": "https://huggingface.co/anton-ro/09-21-227-v2.5",
+  "created_at": "2026-09-22T02:28:34.000Z",
+  "updated_at": "2026-09-22T02:29:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe_text",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 69341293333,
+  "storage_human": "69.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ANTON - Apprends gratuitement en t'amusant avec des exercices de ...",
+      "url": "https://anton.app/fr/",
+      "snippet": "ANTON est l'application éducative gratuite pour l'école. Des exercices de français, maths, anglais, allemand, espagnol, italien, …"
+    },
+    {
+      "title": "ANTON－Soutien scolaire－ PS－6e – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.solocode.anton&hl=fr",
+      "snippet": "🧑‍🎓 Avec ANTON, les élèves de maternelle, CP, CE1, CE2, CM1, CM2, 6e et scolarisés au titre des ULIS apprennent la lecture, …"
+    },
+    {
+      "title": "Exercices - Maths CE2 - ANTON",
+      "url": "https://anton.app/fr/apprendre/fr-math-ce2/",
+      "snippet": "Les nombres jusqu'à 1000 | Les nombres jusqu'à 10 000 | L'addition | La soustraction | Multiplication et partage | L’argent | Le temps | …"
+    },
+    {
+      "title": "ANTON－Soutien scolaire – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.solocode.anton&hl=fr-CH",
+      "snippet": "Conçue pour les élèves et les professeurs, ANTON est l’appli éducative pour l’école primaire et l'école maternelle. Idéale pour du …"
+    },
+    {
+      "title": "ANTON, une appli éducative gratuite pour l’école",
+      "url": "https://ien-boulogne-sur-mer-2.dsden62.ac-lille.fr/anton-une-appli-educative-gratuite-pour-lecole/",
+      "snippet": "ANTON est une application gratuite et sans publicité qui propose une grande diversité d’activités ludiques pour toutes les matières, …"
+    }
+  ]
+}

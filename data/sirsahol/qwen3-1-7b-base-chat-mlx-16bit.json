@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/Qwen3-1.7B-Base-chat-mlx-16bit",
+  "slug": "sirsahol-qwen3-1-7b-base-chat-mlx-16bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/Qwen3-1.7B-Base-chat-mlx-16bit",
+  "created_at": "2026-09-22T02:28:03.000Z",
+  "updated_at": "2026-09-22T05:43:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "apple-silicon",
+    "conversational",
+    "qwen",
+    "transformers",
+    "arxiv:2505.09388",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-1.7B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 271,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608087,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "صلاحية كفرات السيارة, متى أغيرهم؟ | دليل سيارة",
+      "url": "https://syarah.com/carsguide/car-tire-validity/",
+      "snippet": "في السطور التالية ستجد دليلاً عملياً شاملاً يوضح كيف تقيّم حالة الكفرات، وما الذي يسرّع تآكلها، وما علامات الانتهاء، وكيف تُطيل عمرها بأبسط الإجراءات، مع توضيح الفروق بين العمر الزمني ..."
+    },
+    {
+      "title": "رموز الكفرات - شرح مؤشر الحمولة وتصنيف السرعة | تاير اكس السعودية",
+      "url": "https://tireex.com/tire-codes-from-speed-and-load-to-manufacturing-date/",
+      "snippet": "Oct 7, 2025 · هل تربكك رموز الكفرات؟ دليلنا يوضح لك بالتفصيل معنى مؤشر الحمولة وتصنيف السرعة وغيرها، لمساعدتك على اتخاذ قرارات مدروسة لقيادة أكثر أمانًا."
+    },
+    {
+      "title": "متى اغير كفرات السيارة؟ 7 علامات + فحص مجاني",
+      "url": "https://kafaratplus.com/blogs/%D9%85%D8%AA%D9%89-%D8%AA%D8%BA%D9%8A-%D8%B1-%D9%83%D9%81%D8%B1%D8%A7%D8%AA-%D8%B3%D9%8A%D8%A7%D8%B1%D8%AA%D9%83--7-%D8%B9%D9%84%D8%A7%D9%85%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D8%B9%D9%85%D8%B1-%D8%A7%D9%84%D8%A7%D9%81%D8%AA%D8%B1%D8%A7%D8%B6%D9%8A-%D9%81%D9%8A-%D9%85%D9%86%D8%A7%D8%AE-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/6a9595c2cc807ca174238317",
+      "snippet": "ماذا تفعل بعد اكتشاف إحدى علامات التلف؟ أفضل وقت لتغيير الكفرات هو فور ظهور إحدى العلامات السبع، وليس بعد تفاقم المشكلة أو انتظار موعد الصيانة الدورية القادم. إليك الخطوات العملية:"
+    },
+    {
+      "title": "مقاسات كفرات السيارات, دليل شامل | دليل سيارة",
+      "url": "https://syarah.com/carsguide/car-tire-sizes/",
+      "snippet": "في هذا الدليل الشامل، سنفكك رموز المقاسات خطوة بخطوة، ونوضح أين تجد المقاس الصحيح لسيارتك، ولماذا يُعد الالتزام به ضروريًا، وكيف تتخذ قرار الشراء بثقة، مع أمثلة عملية وإجابات دقيقة على …"
+    },
+    {
+      "title": "بعد كم كيلو يفترض تغيير الكفرات",
+      "url": "https://montada.haraj.com.sa/39857/%D8%A8%D8%B9%D8%AF-%D9%83%D9%85-%D9%83%D9%8A%D9%84%D9%88-%D9%8A%D9%81%D8%AA%D8%B1%D8%B6-%D8%AA%D8%BA%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D9%83%D9%81%D8%B1%D8%A7%D8%AA-/",
+      "snippet": "تغير الكفرات لايعتمد على الممشى بقدر الاعتماد على درجة حرارة الجو وتاريخ التصنيع بس تقدر تتاكد من كتيب الوكالة وللكن في العموم من 40 الف الى 80 الف حسب استخدامك"
+    }
+  ]
+}

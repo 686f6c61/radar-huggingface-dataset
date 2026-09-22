@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "lovedheart/MiMo-V2.6-Distill-Qwen-9B-FP8",
+  "slug": "lovedheart-mimo-v2-6-distill-qwen-9b-fp8",
+  "author": "lovedheart",
+  "url": "https://huggingface.co/lovedheart/MiMo-V2.6-Distill-Qwen-9B-FP8",
+  "created_at": "2026-09-21T22:41:05.000Z",
+  "updated_at": "2026-09-21T22:47:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "mimo_v2",
+    "agentic",
+    "distillation",
+    "supervised-fine-tuning",
+    "code",
+    "tool-use",
+    "conversational",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:finetune:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 11928366245,
+  "storage_human": "11.9 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "X9 Rear Derailleur - RD-X9-A1 - SRAM - Service",
+      "url": "https://www.sram.com/en/service/models/rd-x9-a1",
+      "snippet": "X9 Rear Derailleur, RD-X9-A1, SRAM Enter serial number or part number for exact specs"
+    },
+    {
+      "title": "Обяви за велосипеди | Топ Цени | OLX.bg",
+      "url": "https://www.olx.bg/sport-knigi-hobi/sportni-stoki/velosipedi/q-sram-x9/",
+      "snippet": "Карбонов Велосипед 29 S-Works 1x12 Sram XX1 Eagle 2022г. 9кг 3950 лв. По договаряне използвано"
+    },
+    {
+      "title": "SRAM X9 9-Speed Rear Derailleur - Reviews, Comparisons, Specs",
+      "url": "https://www.vitalmtb.com/product/guide/Rear-Derailleurs,23/SRAM/X-9,194",
+      "snippet": "Reviews, ratings, specifications, weight, price and more for the SRAM X9 9-Speed Rear Derailleur"
+    },
+    {
+      "title": "X9 TYPE 2.1 Rear Derailleur - RD-X9-T21-A1 - SRAM - Service",
+      "url": "https://www.sram.com/en/service/models/rd-x9-t21-a1",
+      "snippet": "We encourage you to visit your local bike shop - especially an authorized SRAM dealer - for expert advice, installation and service for …"
+    },
+    {
+      "title": "Sram X9 - eBay",
+      "url": "https://www.ebay.com/shop/sram-x9?_nkw=sram+x9&msockid=27c7656672356dd9282872bd73776c03",
+      "snippet": "Explore a wide range of our Sram X9 selection. Find top brands, exclusive offers, and unbeatable prices on eBay. Shop now for fast …"
+    }
+  ]
+}

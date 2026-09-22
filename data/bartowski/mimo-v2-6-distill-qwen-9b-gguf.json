@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF",
+  "slug": "bartowski-mimo-v2-6-distill-qwen-9b-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF",
+  "created_at": "2026-09-21T22:09:46.000Z",
+  "updated_at": "2026-09-21T22:44:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mimo_v2",
+    "agentic",
+    "distillation",
+    "supervised-fine-tuning",
+    "code",
+    "tool-use",
+    "image-text-to-text",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 139933806528,
+  "storage_human": "139.9 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anlassbezogene Betreuung Betriebsarzt – DGUV Vorschrift 2",
+      "url": "https://www.iaai.de/leistungen/anlassbezogene-betreuung",
+      "snippet": "Anlassbezogene Betreuung bezeichnet die gezielte Einschaltung eines Betriebsarztes oder einer Fachkraft für Arbeitssicherheit bei …"
+    },
+    {
+      "title": "Einsatzzeiten für die betriebsspezifische Betreuung abschätzen",
+      "url": "https://www.bghw.de/weiterbildung-services/fuer-sie-zusammengestellt/einsatzzeiten-von-betriebsarzt-und-sicherheitsfachkraft-ermitteln/betriebsspezifische-betreuung-ermitteln",
+      "snippet": "Neben der Grundbetreuung ist die betriebsspezifische Betreuung fester Bestandteil der Gesamtbetreuung. Die betriebsspezifische …"
+    },
+    {
+      "title": "Regelbetreuung für Betriebe mit bis zu 20 Beschäftigten",
+      "url": "https://res.jedermann.de/data/downloads/KB001-2_Gesamtdokument.pdf",
+      "snippet": "Mit der Alternativen Betreuung bietet die BG RCI eine Lösung an, um die arbeitsmedizinische und sicherheitstechnische Betreuung in …"
+    },
+    {
+      "title": "Grund- und anlassbezogene Betreuung › Engelbert Betriebs-Sicherheit",
+      "url": "https://sifa-engelbert.de/betreuungsmodelle/grund-und-anlassbezogene-betreuung/",
+      "snippet": "Die Betreuung in Unternehmen mit bis zu 10 Beschäftigten besteht aus Grundbetreuung und anlassbezogener Betreuung. Die …"
+    },
+    {
+      "title": "BGHM: Betriebsärztliche und sicherheitstechnische Betreuung",
+      "url": "https://www.bghm.de/arbeitsschuetzer/themen/betriebsaerztliche-und-sicherheitstechnische-betreuung",
+      "snippet": "Der Umfang der Gesamtbetreuung resultiert für jeden Betrieb aus einer feststehenden Grundbetreuung (je nach Betreuungsgruppe) …"
+    }
+  ]
+}

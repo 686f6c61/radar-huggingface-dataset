@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "changh95/qwen-image-2.1-p150",
+  "slug": "changh95-qwen-image-2-1-p150",
+  "author": "changh95",
+  "url": "https://huggingface.co/changh95/qwen-image-2.1-p150",
+  "created_at": "2026-09-22T00:30:06.000Z",
+  "updated_at": "2026-09-22T00:31:14.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blackhole",
+    "p150",
+    "tt-dit-server",
+    "tt-model-cache",
+    "tt-model-catalog",
+    "tt-model-container",
+    "tenstorrent",
+    "ttnn",
+    "tt-metal",
+    "tt-nn",
+    "text-to-image",
+    "image-generation",
+    "qwen",
+    "diffusion-transformer",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3080022315,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RENAULT DACIA - GEMY TOURS SUD - 37170 CHAMBRAY-LES-TOURS …",
+      "url": "https://pros.lacentrale.fr/C052022/",
+      "snippet": "Voir les véhicules d'occasion à CHAMBRAY-LES-TOURS chez RENAULT DACIA - GEMY TOURS SUD - Un large choix de …"
+    },
+    {
+      "title": "Accueil Dacia Tours GEMY",
+      "url": "https://dacia-tours.gemy.fr/",
+      "snippet": "La voiture que vous recherchez n’est pas disponible sur site ? Élargissez votre recherche à l’ensemble du stock du groupe GEMY, et …"
+    },
+    {
+      "title": "Dacia Gemy Tours Sud - 34 rue Michaël Faraday 37170 Chambray lès Tours …",
+      "url": "https://www.pagesjaunes.fr/pros/57261753",
+      "snippet": "Votre garage Dacia Chambray lès Tours vous accueille du lundi au samedi. Spécialisé dans la vente des véhicules neufs et …"
+    },
+    {
+      "title": "Accueil Renault Tours GEMY",
+      "url": "https://renault-tours.gemy.fr/",
+      "snippet": "La voiture que vous recherchez n’est pas disponible sur site ? Élargissez votre recherche à l’ensemble du stock du groupe GEMY, et …"
+    },
+    {
+      "title": "Renault Dacia - GEMY Tours Sud - Garage - Chambray-lès-Tours 37170",
+      "url": "https://lesgarages.fr/37/chambray-les-tours/renault-dacia-gemy-tours-sud-2sgm",
+      "snippet": "Coordonnées du garage Renault Dacia - GEMY Tours Sud, atelier situé à Chambray-lès-Tours (37170) : adresse, téléphone, …"
+    }
+  ]
+}

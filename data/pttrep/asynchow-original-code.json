@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "PTTREP/asynchow-original-code",
+  "slug": "pttrep-asynchow-original-code",
+  "author": "PTTREP",
+  "url": "https://huggingface.co/PTTREP/asynchow-original-code",
+  "created_at": "2026-09-22T00:31:24.000Z",
+  "updated_at": "2026-09-22T00:46:41.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6186323737,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Переводчик – ваш личный переводчик в телефоне и …",
+      "url": "https://translate.google.com/intl/ru/about/",
+      "snippet": "Google Переводчик поможет вам понимать других и выражать себя на разных языках. Переводите живую речь, текст, …"
+    },
+    {
+      "title": "谷歌翻译 - 手机或计算机上的个人随身口译工具",
+      "url": "https://translate.google.com/intl/zh-CN/about/",
+      "snippet": "谷歌翻译助您了解世界，与不同语言的人士轻松交流。在各种设备上翻译文本、语音内容、图片、文档、网站和其他内容。"
+    },
+    {
+      "title": "Prekladač Google – osobný tlmočník v telefóne alebo počítači",
+      "url": "https://translate.google.com/intl/sk/about/",
+      "snippet": "Naučte sa prekladať text, reč, obrázky, dokumenty, weby a ďalší obsah pomocou Prekladača Google."
+    },
+    {
+      "title": "Google បកប្រែ - អ្នកបកប្រែផ្ទាល់ខ្លួន នៅលើទូរសព្ទ …",
+      "url": "https://translate.google.com/intl/km/about/",
+      "snippet": "ចាប់ផ្ដើមប្រើ Google បកប្រែ នៅក្នុង កម្មវិធីរុករក តាមអ៊ីនធឺណិត ..."
+    }
+  ]
+}

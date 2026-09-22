@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "eric-z2/WL-no-context-distilroberta-fold_1",
+  "slug": "eric-z2-wl-no-context-distilroberta-fold_1",
+  "author": "eric-z2",
+  "url": "https://huggingface.co/eric-z2/WL-no-context-distilroberta-fold_1",
+  "created_at": "2026-09-21T20:41:19.000Z",
+  "updated_at": "2026-09-21T20:41:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81533960,
+  "parameters_human": "81.5M",
+  "storage_bytes": 326148152,
+  "storage_human": "326 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026 NFL League Standings",
+      "url": "https://www.nfl.com/standings/league/2026/REG",
+      "snippet": "The latest NFL Standings by Division, Conference and League"
+    },
+    {
+      "title": "NFL Standings - 2026 season - ESPN",
+      "url": "https://www.espn.com/nfl/standings/_/type",
+      "snippet": "Standings are updated with the completion of each game. Visit ESPN for the complete 2026 NFL season standings. Includes league, …"
+    },
+    {
+      "title": "2026 NFL Division Standings",
+      "url": "https://www.nfl.com/standings/division/2026/PRE",
+      "snippet": "The latest NFL Standings by Division, Conference and League"
+    },
+    {
+      "title": "NFL Standings - 2026 Regular Season Division Standings - ESPN",
+      "url": "https://www.espn.com/nfl/standings/_/seasontype/2",
+      "snippet": "Standings are updated with the completion of each game. Visit ESPN for the complete 2026 NFL Regular Season Division standings. …"
+    },
+    {
+      "title": "2026 NFL Standings & Team Stats | Pro-Football-Reference.com",
+      "url": "https://www.pro-football-reference.com/years/2026/index.htm",
+      "snippet": "Check out the 2026 NFL Standings & Team Stats including AFC and NFC results and standings on Pro-football-reference.com"
+    }
+  ]
+}

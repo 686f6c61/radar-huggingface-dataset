@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "chtisgit/Qwen3.6-35B-A3B-2Bit-GSQ-hybrid-GGUF",
+  "slug": "chtisgit-qwen3-6-35b-a3b-2bit-gsq-hybrid-gguf",
+  "author": "chtisgit",
+  "url": "https://huggingface.co/chtisgit/Qwen3.6-35B-A3B-2Bit-GSQ-hybrid-GGUF",
+  "created_at": "2026-09-21T20:59:25.000Z",
+  "updated_at": "2026-09-21T22:55:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen",
+    "moe",
+    "gsq",
+    "quantization",
+    "image-text-to-text",
+    "base_model:ISTA-DASLab/Qwen3.6-35B-A3B-2Bit-GSQ",
+    "base_model:quantized:ISTA-DASLab/Qwen3.6-35B-A3B-2Bit-GSQ",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 13120599264,
+  "storage_human": "13.1 GB",
+  "base_model": "ISTA-DASLab/Qwen3.6-35B-A3B-2Bit-GSQ",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Warsaw Travel Guide (Updated 2026) - Nomadic Matt's Travel Site",
+      "url": "https://www.nomadicmatt.com/travel-guides/poland-travel-guide/warsaw/",
+      "snippet": "Sep 8, 2026 · A complete guide to Warsaw, Poland with tips on things to do, costs, ways to save, accommodation, transportation, …"
+    },
+    {
+      "title": "Travel to Warsaw, Poland: Visas, Real Costs & a 3-Day Plan (Trip Guide)",
+      "url": "https://wakaabuja.com/travel-to-warsaw-poland/",
+      "snippet": "1 day ago · Whether you’re planning your first visit or a short city break, this Warsaw travel guide breaks down the visa requirements, …"
+    },
+    {
+      "title": "Go To Warsaw",
+      "url": "https://go2warsaw.pl/en/main-page/",
+      "snippet": "3 days ago · Warsaw is the culinary capital of Poland. There are plenty of elegant restaurants listed in the Michelin guide, …"
+    },
+    {
+      "title": "Warsaw, Poland: All You Must Know Before You Go (2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Tourism-g274856-Warsaw_Mazovia_Province_Central_Poland-Vacations.html",
+      "snippet": "Warsaw is a mixture of relaxing green spaces, historic sites and vivid modernity. Discover the charming Old Town, Wilanów Palace …"
+    },
+    {
+      "title": "Warsaw - Things to do and travel guide - visitpolska.info",
+      "url": "https://www.visitpolska.info/en/places-to-visit-poland/warsaw/",
+      "snippet": "Warsaw offers a fascinating mixture of attractions ranging from history to contemporary art, from traditional culture to modern …"
+    }
+  ]
+}

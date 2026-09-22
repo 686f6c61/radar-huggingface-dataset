@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "RLobot-jun/gr00t-n17-bigenlight-50per-task-15hz-proj-dit-bc-step10000",
+  "slug": "rlobot-jun-gr00t-n17-bigenlight-50per-task-15hz-proj-dit-bc-step10000",
+  "author": "RLobot-jun",
+  "url": "https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-15hz-proj-dit-bc-step10000",
+  "created_at": "2026-09-21T23:42:08.000Z",
+  "updated_at": "2026-09-21T23:46:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "gr00t",
+    "robotics",
+    "15hz",
+    "base_model:RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000",
+    "base_model:finetune:RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576200896,
+  "storage_human": "12.6 GB",
+  "base_model": "RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Recette avec farine spadoni pz3 - forum pizza",
+      "url": "https://www.forumpizza.net/t547-recette-avec-farine-spadoni-pz3",
+      "snippet": "Mar 3, 2016 · Bonjour chers compatriotes ! Je suis en essai actuellement avec la farine spadoni pz3 mais je ne sors jamais les même …"
+    },
+    {
+      "title": "Caputo nuvola - Page 2",
+      "url": "https://www.forumpizza.net/t3665p25-caputo-nuvola",
+      "snippet": "Oct 16, 2020 · Re: Caputo nuvola par Thierry Graffagnino Jeu 22 Oct 2020 - 10:41 Si tu travailles juste sur levure, il est normal que tu …"
+    },
+    {
+      "title": "Buon Compleanno NUVOLA!!! AUGURIIIIII!!!",
+      "url": "https://levocidellanotte.forumfree.it/?t=76121870",
+      "snippet": "Oct 31, 2018 · Tantissimi Auguri Nuvola!!! Auguri Nuvola !.Ti Auguro il meglio del meglio. in questo giorno di festa per te ,.un …"
+    },
+    {
+      "title": "Buon Compleanno Nuvola!!! AUGURIIIII!!!",
+      "url": "https://levocidellanotte.forumfree.it/?t=77082048",
+      "snippet": "Oct 31, 2019 · Mai finirà perchè sei parte dei miei ricordi,parte della mia vita e ciò che mi hai dato,ciò che ti ho dato sempre vivrà! Ti …"
+    },
+    {
+      "title": "Caputo nuvola - forum pizza",
+      "url": "https://www.forumpizza.net/t3665-caputo-nuvola",
+      "snippet": "Sep 28, 2020 · Caputo nuvola par Dylan89 Lun 28 Sep 2020 - 21:17 Bonjour à tous, Travaillant habituellement avec la caputo …"
+    }
+  ]
+}

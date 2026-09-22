@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_cfe8adad8593829c_20260921-720d423b-65b9-42e6-8221-982d8d10e1de-5GU4Xkd3",
+  "slug": "gradients-io-tournaments-tournament-tourn_cfe8adad8593829c_20260921-720d423b-65b9-42e6-8221-982d8d10e1de-5gu4xkd3",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_cfe8adad8593829c_20260921-720d423b-65b9-42e6-8221-982d8d10e1de-5GU4Xkd3",
+  "created_at": "2026-09-22T02:44:19.000Z",
+  "updated_at": "2026-09-22T02:46:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026 Ford Transit Support Information | Ford Owner Support",
+      "url": "https://www.ford.com/support/vehicle/transit/2026/",
+      "snippet": "Ford Pickup & Delivery and Ford Mobile Service are offered by participating dealers and may be limited based on availability, …"
+    },
+    {
+      "title": "How do I change the Vehicle Connectivity settings in my Ford?",
+      "url": "https://www.ford.com/support/how-tos/sync/getting-started-with-sync/changing-connectivity-settings/",
+      "snippet": "Slide both the Share Vehicle Data and Share Driving Data sliders to the right to enable the sharing of vehicle and driving data or to …"
+    },
+    {
+      "title": "2026 Transit Connect (2024-) - Ford UK",
+      "url": "https://www.ford.co.uk/support/vehicle/transit-connect-2024/2026/owner-manuals",
+      "snippet": "Jul 7, 2025 · Use voice-operated systems when possible; don’t use handheld devices while driving. Some features may be locked out …"
+    },
+    {
+      "title": "2026 Transit Connect (2024-) - ford.ie",
+      "url": "https://www.ford.ie/support/vehicle/transit-connect-2024/2026/owner-manuals",
+      "snippet": "Jul 7, 2025 · 2026 Transit Connect (2024-) Owner Manuals and Other Information Select New Vehicle"
+    },
+    {
+      "title": "FORD TOURNEO CONNECT / TRANSIT CONNECT Owner’s Manual",
+      "url": "https://www.fordservicecontent.com/Ford_Content/Catalog/owner_information/2KF012720AE_2024.04_enGBR.pdf",
+      "snippet": "Always drive with your full attention and responsibly. Never operate the instrument cluster while the vehicle is in motion. Adjust all …"
+    }
+  ]
+}

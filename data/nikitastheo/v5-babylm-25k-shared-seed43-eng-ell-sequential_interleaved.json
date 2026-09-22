@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nikitastheo/v5-babylm-25k-shared-seed43-eng-ell-sequential_interleaved",
+  "slug": "nikitastheo-v5-babylm-25k-shared-seed43-eng-ell-sequential_interleaved",
+  "author": "nikitastheo",
+  "url": "https://huggingface.co/nikitastheo/v5-babylm-25k-shared-seed43-eng-ell-sequential_interleaved",
+  "created_at": "2026-09-21T20:37:02.000Z",
+  "updated_at": "2026-09-21T21:37:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123886080,
+  "parameters_human": "123.9M",
+  "storage_bytes": 991118592,
+  "storage_human": "991 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Esra Bilgic (@esbilgic) • Instagram photos and videos",
+      "url": "https://www.instagram.com/esbilgic/",
+      "snippet": "8M Followers, 603 Following, 531 Posts - Esra Bilgic (@esbilgic) on Instagram: \"@idiletisim\""
+    },
+    {
+      "title": "إسراء بلكج - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%A5%D8%B3%D8%B1%D8%A7%D8%A1_%D8%A8%D9%84%D9%83%D8%AC",
+      "snippet": "إسراء بِلكِج[1] (بالتركية: Esra Bilgiç) هي ممثلة تركية ابتدأت حياتها المهنية في مسلسل قيامة أرطغرل الشهير، بدور السلطانة حليمة (ولدت في 14 أكتوبر 1992 ، أنقرة) [2] ، تزوجت من لاعب …"
+    },
+    {
+      "title": "إسراء بيلجيتش - ﺗﻤﺜﻴﻞ فيلموجرافيا، صور، فيديو",
+      "url": "https://elcinema.com/person/2120296",
+      "snippet": "ممثلة تركية ذات موهبة ملحوظة ولدت بمدينة أنقرة في 14 أكتوبر 1992، درست الحقوق في جامعة مرمرة، ثم دخلت عالم الفن والتمثيل بأهم أدوارها في مسلسل Dirilis: Ertugrul (2014) والذي …"
+    },
+    {
+      "title": "اسراء بيلجيتش - ويكيبيديا",
+      "url": "https://arz.wikipedia.org/wiki/%D8%A7%D8%B3%D8%B1%D8%A7%D8%A1_%D8%A8%D9%8A%D9%84%D8%AC%D9%8A%D8%AA%D8%B4",
+      "snippet": "اسراء بيلجيتش ممثله من توركيا. اسراء بيلجيتش من مواليد يوم 14 اكتوبر سنة 1992 فى انقره. درست فى جامعة حجه تبه و جامعة بيلكنت. الحته دى من الصفحه دى فاضيه, ساعد ف كتابتها."
+    },
+    {
+      "title": "إسراء بيلجيتش ديانتها عمرها زوجها صور ومعلومات عنها",
+      "url": "https://www.awqatk.com/%d8%a5%d8%b3%d8%b1%d8%a7%d8%a1-%d8%a8%d9%8a%d9%84%d8%ac%d9%8a%d8%aa%d8%b4/",
+      "snippet": "إسراء بيلجيتش، ديانتها، عمرها، زوجها، حياتها الشخصية، بدايتها الفنية، جنسيتها، وأهم أعمالها الفنية التي قدمتها، وخطواتها القادمة في الدراما التركية، نقدم لكم تقريرًا وافيًا عنها فهي ..."
+    }
+  ]
+}

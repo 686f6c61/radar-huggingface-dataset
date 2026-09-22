@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yunju1115/gr00t-n1.7-h2-sharpa-tele30-ego107-0921-ckpt40000",
+  "slug": "yunju1115-gr00t-n1-7-h2-sharpa-tele30-ego107-0921-ckpt40000",
+  "author": "yunju1115",
+  "url": "https://huggingface.co/yunju1115/gr00t-n1.7-h2-sharpa-tele30-ego107-0921-ckpt40000",
+  "created_at": "2026-09-22T02:42:06.000Z",
+  "updated_at": "2026-09-22T02:48:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 6910499416,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mountain Bike News, Photos, Videos & Events | Pinkbike",
+      "url": "https://www.pinkbike.com/",
+      "snippet": "Pinkbike is the homepage of mountain biking. Stay updated with the latest news, reviews, videos, buyer's guides and racing results. …"
+    },
+    {
+      "title": "Google Help",
+      "url": "https://www.support.google.com/",
+      "snippet": "If you're having trouble accessing a Google product, there's a chance we're currently experiencing a temporary problem. You can …"
+    },
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/?hl=en",
+      "snippet": "If you're having trouble accessing a Google product, there's a chance we're currently experiencing a temporary problem. You can …"
+    },
+    {
+      "title": "Pinkbike's Grim Donut Game",
+      "url": "https://www.pinkbike.com/sandbox/grimdonutgame/",
+      "snippet": "Check out PinkBike.com for the latest in cycling and mountain biking news, freeride videos, photos, events and more. Submit your …"
+    },
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "VenerableRolliPolli/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF",
+  "slug": "venerablerollipolli-qwen3-5-9b-the-defiant-fable-uncensored-heretic-neo-imatrix-max-mtp-gguf",
+  "author": "VenerableRolliPolli",
+  "url": "https://huggingface.co/VenerableRolliPolli/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF",
+  "created_at": "2026-09-21T20:36:10.000Z",
+  "updated_at": "2026-09-21T20:36:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "MTP GGUFS",
+    "Regular GGUFS",
+    "NEO Imatrix",
+    "fine tune",
+    "unsloth",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "multi-stage tuned.",
+    "all use cases",
+    "thinking",
+    "reasoning",
+    "qwen3.5",
+    "coder",
+    "creative",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP",
+    "base_model:quantized:DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 186460417930,
+  "storage_human": "186.5 GB",
+  "base_model": "DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is Food Chaining? - Your Choice Nutrition",
+      "url": "https://yourchoicenutrition.com/food-chaining/",
+      "snippet": "Feb 20, 2023 · Food chaining may help picky eater enjoy more foods. Learn what food chaining is, how to create food chains, and get …"
+    },
+    {
+      "title": "17 Food Chaining Examples for Picky & Selective Eaters",
+      "url": "https://jackiesilvernutrition.com/articles/food-chaining-examples-for-selective-eaters/",
+      "snippet": "Jul 22, 2024 · We’ve designed 17 different food chaining examples for you to use. They each start with common safe foods (such as …"
+    },
+    {
+      "title": "Food Chaining for Picky Eaters: Step-by-Step Ladder",
+      "url": "https://nadlernutrition.com/blog/food-chaining-for-picky-eaters-step-by-step-ladder/",
+      "snippet": "Food chaining helps picky eaters accept new foods one small step at a time. A pediatric dietitian's 6-step method plus 10 ready-to …"
+    },
+    {
+      "title": "Food Chaining 101 - Get Your Picky Eater to Try New Foods",
+      "url": "https://www.jennyfriedmannutrition.com/food-chaining-for-picky-eating/",
+      "snippet": "Feb 7, 2025 · Would you believe me if I told you there is an effective way to get your picky eater to try new foods? Learn all about …"
+    },
+    {
+      "title": "The Food Chaining Method: Expand Picky Eaters’ Diets",
+      "url": "https://tinytablemeals.com/food-chaining-method-picky-eaters/",
+      "snippet": "Dec 11, 2025 · The core idea is elegant in its simplicity: instead of asking a picky eater to leap from chicken nuggets to grilled salmon …"
+    }
+  ]
+}

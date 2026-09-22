@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "akshara-ns/perfume-occasion-distilbert",
+  "slug": "akshara-ns-perfume-occasion-distilbert",
+  "author": "akshara-ns",
+  "url": "https://huggingface.co/akshara-ns/perfume-occasion-distilbert",
+  "created_at": "2026-09-22T02:37:37.000Z",
+  "updated_at": "2026-09-22T04:11:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "fine-tuned",
+    "24-679",
+    "en",
+    "dataset:ypolatog/perfume-occasion-texts",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 66956548,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267843921,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Perfume occasion classification",
+      "dataset": "perfume-occasion-texts",
+      "metric": "accuracy (25 original test descriptions)",
+      "value": 0.52
+    },
+    {
+      "task": "Perfume occasion classification",
+      "dataset": "perfume-occasion-texts",
+      "metric": "macro-F1 (25 original test descriptions)",
+      "value": 0.392
+    }
+  ],
+  "sources": [
+    {
+      "title": "Italian Wholesale | Premium Made in Italy Wholesale Marketplace",
+      "url": "https://viamadeinitaly.com/",
+      "snippet": "Discover branded label bags made in Italy, how they differ from private label, and how buyers source easily verified Italian brands and …"
+    },
+    {
+      "title": "ItalianModa | Made in Italy Fashion B2B Marketplace, since 2000",
+      "url": "https://italianmodab2b.com/en/",
+      "snippet": "Direct access to verified Italian manufacturers: clothing, footwear, bags, accessories, jewelry. Wholesale & private label. Trusted in …"
+    },
+    {
+      "title": "Genuine Leather Bags Wholesale| Made in Italy by IT BAGS",
+      "url": "https://www.ingrossoborse.com/en/",
+      "snippet": "Discover our SS26 collection of genuine Made in Italy leather women's bags wholesale, created for retailers, boutiques and B2B …"
+    },
+    {
+      "title": "Italian fashion wholesale: suppliers and manufacturers of clothing bags ...",
+      "url": "https://www.italianmoda.com/",
+      "snippet": "Italian fashion suppliers: B2B marketplace of Italian manufacturers and brands of wholesale clothing, shoes, handbags, fashion …"
+    },
+    {
+      "title": "Wholesale Leather Bags Made in Italy | Florence Leather Goods",
+      "url": "https://www.erabags.com/en/",
+      "snippet": "We produce a wide range of styles of women handbags, shoulder bags for women and man, messenger bags for women and man, …"
+    }
+  ]
+}

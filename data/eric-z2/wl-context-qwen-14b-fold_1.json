@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "eric-z2/WL-context-qwen-14b-fold_1",
+  "slug": "eric-z2-wl-context-qwen-14b-fold_1",
+  "author": "eric-z2",
+  "url": "https://huggingface.co/eric-z2/WL-context-qwen-14b-fold_1",
+  "created_at": "2026-09-21T20:37:58.000Z",
+  "updated_at": "2026-09-21T20:38:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84011288,
+  "storage_human": "84 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Metabolism | Definition, Process, Reactions, Cells, & Facts | Britannica",
+      "url": "https://www.britannica.com/science/metabolism",
+      "snippet": "Aug 18, 2026 · Metabolism is the sum of chemical reactions that take place in living cells, providing energy for life processes and the …"
+    },
+    {
+      "title": "Metabolism – Anatomy and Physiology - UH Pressbooks",
+      "url": "https://pressbooks-dev.oer.hawaii.edu/anatomyandphysiology2021/chapter/24-metabolism/",
+      "snippet": "Metabolic processes are constantly taking place in the body. Metabolism is the sum of all the chemical reactions that are involved, …"
+    },
+    {
+      "title": "Human Metabolism - an overview | ScienceDirect Topics",
+      "url": "https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/human-metabolism",
+      "snippet": "Human metabolism is defined as the process by which cells and organisms obtain nutrients and energy to perform their functions, …"
+    },
+    {
+      "title": "What Is Metabolism In Anatomy And Physiology - trudtox.com",
+      "url": "https://trudtox.com/what-is-anatomy-and-physiology-s-definition-of-metabolism.html",
+      "snippet": "Nov 27, 2023 · Metabolism, or metabolic rate, is defined as the series of chemical reactions in a living organism that create and break …"
+    },
+    {
+      "title": "14.4 Metabolism and Nutrition – General Anatomy & Physiology",
+      "url": "https://wtcs.pressbooks.pub/anatphys/chapter/14-4-metabolism-and-nutrition/",
+      "snippet": "Metabolism is the sum of all the chemical reactions that occur in the body. Metabolism across individuals varies, depending on …"
+    }
+  ]
+}

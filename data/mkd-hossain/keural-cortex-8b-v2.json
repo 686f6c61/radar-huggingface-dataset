@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mkd-hossain/Keural-Cortex-8B-v2",
+  "slug": "mkd-hossain-keural-cortex-8b-v2",
+  "author": "mkd-hossain",
+  "url": "https://huggingface.co/mkd-hossain/Keural-Cortex-8B-v2",
+  "created_at": "2026-09-22T01:11:26.000Z",
+  "updated_at": "2026-09-22T01:14:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "experimental",
+    "corrective-sft",
+    "bilingual",
+    "conversational",
+    "en",
+    "ko",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2047683840,
+  "parameters_human": "2.05B",
+  "storage_bytes": 16392939478,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MKD Chaussures - Livraison Gratuite | Spartoo",
+      "url": "https://www.spartoo.com/Mkd-b34919.php",
+      "snippet": "Découvrez la collection de MKD sur Spartoo Vaste choix de tailles & modèles Livraison Gratuite au Meilleur Prix Garanti"
+    },
+    {
+      "title": "Chaussures MKD Portugal : Bottines & Sandales Confort Premium",
+      "url": "https://www.tendancechaussures.com/fr/chaussure/mkd.awp",
+      "snippet": "MKD est une marque de chaussures pour femme Made in Portugal dont le souci principal est le confort. A travers les collections, …"
+    },
+    {
+      "title": "Chaussures femmes MKD | Livraison & retour gratuits - GDC",
+      "url": "https://www.gdcboutique.com/collections/lunivers-mkd",
+      "snippet": "La marque MKD incarne sophistication et modernité, offrant des chaussures alliant confort et élégance. Conçues avec des matériaux …"
+    },
+    {
+      "title": "Chaussures MKD Femme | L'Empreinte Chaussures",
+      "url": "https://www.l-empreinte-chaussure.com/87_mkd",
+      "snippet": "MKD (Mark Kendall Design) est une marque espagnole qui allie modernité, raffinement et confort. Conçues pour les femmes actives …"
+    },
+    {
+      "title": "Chaussures MKD - JEF Chaussures",
+      "url": "https://www.jefchaussures.com/m-chaussures-mkd.html",
+      "snippet": "Chaque paire de chaussures MKD se distingue par des découpes soignées, un travail minutieux sur les textures et un parfait …"
+    }
+  ]
+}

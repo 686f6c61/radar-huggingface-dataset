@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ishaankumar608335/tiny-transformer-retrieval-mini",
+  "slug": "ishaankumar608335-tiny-transformer-retrieval-mini",
+  "author": "ishaankumar608335",
+  "url": "https://huggingface.co/ishaankumar608335/tiny-transformer-retrieval-mini",
+  "created_at": "2026-09-22T02:41:23.000Z",
+  "updated_at": "2026-09-22T02:41:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Яндекс Интернетометр — проверка ...",
+      "url": "https://yandex.ru/internet",
+      "snippet": "Проверка скорости интернета. IP-адрес, операционная система, версия браузера, cookies, разрешение экрана и другие …"
+    },
+    {
+      "title": "Почта Яндекс 360 — бесплатная ...",
+      "url": "https://360.yandex.ru/mail/",
+      "snippet": "Создайте бесплатную Яндекс Почту за пару минут. Простая регистрация, удобный вход, безопасное хранение писем и …"
+    },
+    {
+      "title": "Медленная скорость загрузки Steam",
+      "url": "https://steamcommunity.com/discussions/forum/26/766309862211770255/",
+      "snippet": "Feb 6, 2026 · Всем привет, давно уже испытываю проблему с низкой скоростью загрузки в Стиме. Скорость интернета …"
+    },
+    {
+      "title": "Измерить скорость интернета - Яндекс",
+      "url": "https://yandex.ru/support2/internet/ru/measure",
+      "snippet": "Яндекс Интернетометр проверяет скорость соединения через CDN-серверы Яндекса. Сервис одновременно опрашивает …"
+    },
+    {
+      "title": "Яндекс DNS",
+      "url": "https://dns.yandex.ru/",
+      "snippet": "Яндекс DNS — быстрый и безопасный домашний интернет Направляем ваши запросы на DNS-сервер Яндекса — сайты …"
+    }
+  ]
+}

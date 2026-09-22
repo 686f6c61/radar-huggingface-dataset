@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ggml-org/MiMo-V2.6-Distill-Qwen-9B-GGUF",
+  "slug": "ggml-org-mimo-v2-6-distill-qwen-9b-gguf",
+  "author": "ggml-org",
+  "url": "https://huggingface.co/ggml-org/MiMo-V2.6-Distill-Qwen-9B-GGUF",
+  "created_at": "2026-09-21T21:31:35.000Z",
+  "updated_at": "2026-09-21T22:03:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "image-text-to-text",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 10,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 19679225504,
+  "storage_human": "19.7 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sellpy – To better use | Entdecke Second Hand online",
+      "url": "https://www.sellpy.de/",
+      "snippet": "Sellpy ist eine Plattform, die den Verkauf und Kauf von Second-Hand-Artikeln erleichtert und nachhaltiges Shopping fördert."
+    },
+    {
+      "title": "Sellpy- Einloggen oder Profil erstellen",
+      "url": "https://www.sellpy.de/login",
+      "snippet": "Melde dich bei deinem Sellpy-Konto an, um deine Verkäufe und Bestellungen anzuzeigen."
+    },
+    {
+      "title": "Damen I Second hand kleidung, schuhe & accessoires kaufen - Sellpy",
+      "url": "https://www.sellpy.de/search/Damen",
+      "snippet": "Entdecke unsere große Auswahl an günstiger Kleidung, Schuhen und Accessoires für Frauen. Qualitätsgesicherte Second Hand mit …"
+    },
+    {
+      "title": "Sellpy",
+      "url": "https://www.sellpy.de/my-shopping/favorites",
+      "snippet": "Manage your favorite items, receive notifications for price drops, and get personalized recommendations on Sellpy."
+    },
+    {
+      "title": "Sellpy",
+      "url": "https://www.sellpy.de/checkout/cart",
+      "snippet": "JavaScript is required for this page to load"
+    }
+  ]
+}

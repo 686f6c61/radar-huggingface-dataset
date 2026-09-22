@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Junaidi69/rengas-model-uji",
+  "slug": "junaidi69-rengas-model-uji",
+  "author": "Junaidi69",
+  "url": "https://huggingface.co/Junaidi69/rengas-model-uji",
+  "created_at": "2026-09-22T02:41:45.000Z",
+  "updated_at": "2026-09-22T02:42:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 2479595264,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Informationen zu GraJi - Consorsbank Wissenscommunity",
+      "url": "https://wissen.consorsbank.de/t5/user/viewprofilepage/user-id/46292",
+      "snippet": "Gemeinsam mehr verstehen mit der Consorsbank Wissenscommunity. Jetzt das große Angebot nutzen, informieren und mit anderen …"
+    },
+    {
+      "title": "Informationen zu namro - Consorsbank Wissenscommunity",
+      "url": "https://wissen.consorsbank.de/t5/user/viewprofilepage/user-id/104144",
+      "snippet": "Gemeinsam mehr verstehen mit der Consorsbank Wissenscommunity. Jetzt das große Angebot nutzen, informieren und mit anderen …"
+    },
+    {
+      "title": "Informationen zu Diana - Consorsbank Wissenscommunity",
+      "url": "https://wissen.consorsbank.de/t5/user/viewprofilepage/user-id/18229",
+      "snippet": "Gemeinsam mehr verstehen mit der Consorsbank Wissenscommunity. Jetzt das große Angebot nutzen, informieren und mit anderen …"
+    },
+    {
+      "title": "Informationen zu GIBMON3YPLOX - Consorsbank Wissenscommunity",
+      "url": "https://wissen.consorsbank.de/t5/user/viewprofilepage/user-id/37970",
+      "snippet": "Gemeinsam mehr verstehen mit der Consorsbank Wissenscommunity. Jetzt das große Angebot nutzen, informieren und mit anderen …"
+    },
+    {
+      "title": "Informationen zu BillyPremium - Consorsbank Wissenscommunity",
+      "url": "https://wissen.consorsbank.de/t5/user/viewprofilepage/user-id/59454",
+      "snippet": "Gemeinsam mehr verstehen mit der Consorsbank Wissenscommunity. Jetzt das große Angebot nutzen, informieren und mit anderen …"
+    }
+  ]
+}

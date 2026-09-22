@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "eric-z2/WL-no-context-qwen-14b-fold_4",
+  "slug": "eric-z2-wl-no-context-qwen-14b-fold_4",
+  "author": "eric-z2",
+  "url": "https://huggingface.co/eric-z2/WL-no-context-qwen-14b-fold_4",
+  "created_at": "2026-09-21T20:33:36.000Z",
+  "updated_at": "2026-09-21T20:37:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84011288,
+  "storage_human": "84 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Six Flags Magic Mountain",
+      "url": "https://www.sixflags.com/magicmountain",
+      "snippet": "Six Flags Magic Mountain, the Thrill Capital of the World, is home to the best collection of world-class roller coasters and is packed …"
+    },
+    {
+      "title": "Six Flags Magic Mountain - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Six_Flags_Magic_Mountain",
+      "snippet": "Six Flags Magic Mountain, formerly known and colloquially referred to as simply Magic Mountain, is a 209-acre (85 ha) amusement …"
+    },
+    {
+      "title": "Six Flags Magic Mountain - Daily Tickets",
+      "url": "https://www.sixflags.com/magicmountain/daily-tickets",
+      "snippet": "Enjoy a day at Six Flags Magic Mountain and experience Fright Fest presented by SNICKERS® and Tricks and Treats on select …"
+    },
+    {
+      "title": "California Theme Park Closing After 49 Years in 2027 | Farewell to Fun ...",
+      "url": "https://theamericannews.net/america/usa/california/farewell-to-fun-iconic-california-theme-park-set-to-close-after-49-years-in-2027/",
+      "snippet": "Jun 13, 2026 · In conclusion, the announcement of the impending closure of Six Flags Magic Mountain, a staple of California’s …"
+    },
+    {
+      "title": "Six Flags Magic Mountain",
+      "url": "https://magic-mountain-packages.sixflags.com/",
+      "snippet": "Six Flags Magic Mountain Hotel Package Details Save up to 42% Package Starts at (USD): $134.00"
+    }
+  ]
+}

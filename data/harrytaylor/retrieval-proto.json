@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "harrytaylor/retrieval-proto",
+  "slug": "harrytaylor-retrieval-proto",
+  "author": "harrytaylor",
+  "url": "https://huggingface.co/harrytaylor/retrieval-proto",
+  "created_at": "2026-09-21T23:20:47.000Z",
+  "updated_at": "2026-09-21T23:20:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "法语的几个特殊的字母，列出来一下 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/94366850.html",
+      "snippet": "大写：À、Â、È、É、Ê、Ë、 Î 、Ï 、Ô 、Ö、 Ù、 Û 、Ç 、Œ 、Æ、 €。 小写：à、â、è、é、ê、 î 、ï、 ô、 ö、 ù、 û 、ü、 ç、 œ …"
+    },
+    {
+      "title": "有什么值得推荐的英文维基镜像网站? - 知乎",
+      "url": "https://www.zhihu.com/question/347202458/answers/updated",
+      "snippet": "Kong WiKi：欢迎大家来到开放式Wiki，在这里一起自由的创造属于我们的百科全书。 全球域名：kong. openuniversus.online 中国域 …"
+    },
+    {
+      "title": "《中华人民共和国国歌》歌词_百度知道",
+      "url": "https://zhidao.baidu.com/question/1702052666980628100.html",
+      "snippet": "《义勇军进行曲》 起来 不愿做奴隶的人们 把我们的血肉 筑成我们新的长城 中华民族 到了 最危险的时候 每个人被迫着 发出最后的吼 …"
+    },
+    {
+      "title": "维基百科（ Wikipedia） 为什么现在需要人捐钱 ？ - 知乎",
+      "url": "https://www.zhihu.com/question/359009187",
+      "snippet": "来自维基百科创办者Jimmy Wales的个人呼吁 维基百科是全球第五大网站，每月为4.5亿用户提供服务，页面浏览数以十亿计。 商业本 …"
+    },
+    {
+      "title": "冬泉魂精问题在冬泉打出的魂精都有什么种类，每种的各",
+      "url": "https://zhidao.baidu.com/question/1962238522413250700.html",
+      "snippet": "解法:跟冬泉谷永望镇里的 巫医 马艾里 (食人妖)接再要一个,会得到quot;玛艾里的容器quot;,带在身上打冬泉谷里特定的怪,会掉任务道 …"
+    }
+  ]
+}

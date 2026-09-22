@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jasonthomasson/albef-demo",
+  "slug": "jasonthomasson-albef-demo",
+  "author": "jasonthomasson",
+  "url": "https://huggingface.co/jasonthomasson/albef-demo",
+  "created_at": "2026-09-22T02:46:56.000Z",
+  "updated_at": "2026-09-22T02:47:01.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Las decisiones de todas las parejas de 'La isla de las tentaciones 10 ...",
+      "url": "https://www.telecinco.es/reality/20260609/isla-tentaciones-10-decisiones-parejas-hogueras-finales_18_019389630.html",
+      "snippet": "Jun 9, 2026 · Las parejas de 'La isla de las tentaciones 10' han vuelto a reencontrarse en las hogueras finales , lo han hecho frente a …"
+    },
+    {
+      "title": "'La isla de las tentaciones': Temporada 10 programa 17, completo",
+      "url": "https://www.telecinco.es/television/a-la-carta/20260525/isla-tentaciones-temporada-10-programa-17-completo-video_18_019260756.html",
+      "snippet": "May 26, 2026 · Ya puedes ver el programa completo de 'La isla de las tentaciones 10' (25/05/2026): huidas, confesiones y …"
+    },
+    {
+      "title": "La Isla de las Tentaciones 10 | Última hora del reality de parejas",
+      "url": "https://www.telecinco.es/la-isla-de-las-tentaciones/",
+      "snippet": "Jun 14, 2026 · Videos y últimas noticias de La isla de las tentaciones 10, el reality del amor donde las parejas ponen a prueba su …"
+    },
+    {
+      "title": "La isla de las tentaciones - Telecinco",
+      "url": "https://www.telecinco.es/la-isla-de-las-tentaciones/participantes/20220915/parejas-la-isla-de-las-tentaciones-5_18_07454439.html",
+      "snippet": "Sep 15, 2022 · Mario y Laura, pareja de 'La isla de las tentaciones 5'. telecinco.es Laura asegura haber encontrado en Mario al amor …"
+    },
+    {
+      "title": "Descubre a las parejas de 'La isla de las tentaciones 1' - Telecinco",
+      "url": "https://www.telecinco.es/reality/20260329/isla-tentaciones-10-parejas-ponen-prueba-amor-esta-edicion_18_018757298.html",
+      "snippet": "Mar 29, 2026 · ¡Ya puedes decubrir cuáles son las parejas que van a poner a prueba su amor en 'La isla de las tentaciones 10', en …"
+    }
+  ]
+}

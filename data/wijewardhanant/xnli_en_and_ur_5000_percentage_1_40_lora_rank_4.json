@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_rank_4",
+  "slug": "wijewardhanant-xnli_en_and_ur_5000_percentage_1_40_lora_rank_4",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_rank_4",
+  "created_at": "2026-09-22T00:44:51.000Z",
+  "updated_at": "2026-09-22T00:45:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 252568547,
+  "storage_human": "253 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "नाली और पाइप की दुर्गंध से छुटकारा पाने की आसान नेचुरल ट्रिक",
+      "url": "https://swasthyakiore.com/simple-natural-trick-eliminate-drain-and-pipe-odor-in-hindi/",
+      "snippet": "Aug 20, 2018 · यहाँ हम उस भयानक बदबू को अलविदा कहने के ऐसे ही एक आसान नुस्खे के बारे में बताने जा रहे हैं। आपको इसे ज़रूर …"
+    },
+    {
+      "title": "कॉकरोच और कीड़े-मकोड़े को भगाने के लिए 5 केमिकल-फ्री उपाय, …",
+      "url": "https://ndtv.in/lifestyle/get-rid-of-cockroaches-and-lizards-easy-home-remedies-kide-makode-ko-kaise-bhagaye-12060596",
+      "snippet": "4 days ago · कॉकरोच और कीड़े-मकोड़े को भगाने के लिए 5 केमिकल-फ्री उपाय, तुरंत दिखेगा असर बाजार में मिलने वाले केमिकल्स …"
+    },
+    {
+      "title": "बारिश में कॉकरोच से छुटकारा पाने के घरेलू उपाय | Dailyhunt",
+      "url": "https://m.dailyhunt.in/news/india/hindi/newz+fatafat-epaper-newzfata/barish+me+kokaroch+se+chutakara+pane+ke+gharelu+upay-newsid-n725493308",
+      "snippet": "कॉकरोच से बचाव के उपाय कॉ करोच रोधक: बारिश के मौसम में घर में कीड़ों-मकोड़ों की संख्या में काफी वृद्धि हो जाती है। जब …"
+    },
+    {
+      "title": "छत, दीवार और बालकनी में लगी काई का नहीं बचेगा नामोनिशान, ये 3 …",
+      "url": "https://www.herzindagi.com/hindi/society-culture/easy-ways-to-remove-moss-or-kai-naturally-from-wall-balcony-and-roof-article-1036137",
+      "snippet": "Jul 21, 2025 · छत, दीवार और बालकनी से काई हटाने के 3 असरदार घरेलू उपाय नमी और पानी के संपर्क में आने से छत, दीवार और …"
+    },
+    {
+      "title": "बारिश से काली पड़ गई हैं दीवारें और जम गई है काई? ऐसे करें मिनटों …",
+      "url": "https://www.india.com/hindi-news/lifestyle/have-the-walls-turned-black-and-gathered-moss-due-to-the-rain-heres-how-to-clean-them-in-minutes-8520447/",
+      "snippet": "Sep 9, 2026 · इंडिया न्यूज़ Lifestyle Have The Walls Turned Black And Gathered Moss Due To The Rain Heres How To Clean …"
+    }
+  ]
+}

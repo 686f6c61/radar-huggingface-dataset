@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sunkaiwen/indoor-outdoor-distilbert",
+  "slug": "sunkaiwen-indoor-outdoor-distilbert",
+  "author": "sunkaiwen",
+  "url": "https://huggingface.co/sunkaiwen/indoor-outdoor-distilbert",
+  "created_at": "2026-09-22T02:30:17.000Z",
+  "updated_at": "2026-09-22T02:30:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "autogluon",
+  "languages": [],
+  "tags": [
+    "autogluon",
+    "text-classification",
+    "distilbert",
+    "fine-tuning",
+    "dataset:srivathsanb14/indoor-outdoor-text",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 265511903,
+  "storage_human": "266 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=nl",
+      "snippet": "Wij willen hier een beschrijving geven, maar de site die u nu bekijkt staat dit niet toe."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/login?service=mail&hl=de",
+      "snippet": "Gmail ist ein intuitiver, effizienter und nützlicher E-Mail-Dienst mit 15 GB Speicherplatz, weniger Spam und mobilem Zugriff."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://www.google.com/accounts/Login",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    },
+    {
+      "title": "Gmail: gratis opslag en e-mail van Google",
+      "url": "https://www.google.nl/gmail/about/for-work/",
+      "snippet": "Gmail is beschikbaar op al je apparaten: Android, iOS en pc. Je kunt berichten sorteren, samenwerken of een vriend bellen zonder je …"
+    }
+  ]
+}

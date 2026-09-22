@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "vaheairikian/eva-hessi-model",
+  "slug": "vaheairikian-eva-hessi-model",
+  "author": "vaheairikian",
+  "url": "https://huggingface.co/vaheairikian/eva-hessi-model",
+  "created_at": "2026-09-22T01:11:48.000Z",
+  "updated_at": "2026-09-22T01:33:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "flux",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39764136,
+  "storage_human": "40 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wp-admin/includes/plugin.php | Developer.WordPress.org",
+      "url": "https://developer.wordpress.org/reference/files/wp-admin/includes/plugin.php/",
+      "snippet": "Validates the plugin requirements for WordPress version and PHP version. Declares a helper function for adding content to the …"
+    },
+    {
+      "title": "WordPress/wp-admin/plugins.php at master - GitHub",
+      "url": "https://github.com/WordPress/WordPress/blob/master/wp-admin/plugins.php",
+      "snippet": "WordPress, Git-ified. This repository is just a mirror of the WordPress subversion repository. Please do not send pull requests. …"
+    },
+    {
+      "title": "Manage Plugins – Documentation – WordPress.org",
+      "url": "https://wordpress.org/documentation/article/manage-plugins/",
+      "snippet": "Oct 24, 2018 · Plugins are managed from the Plugins admin screen of your WordPress site. Here you will find a list of all installed …"
+    },
+    {
+      "title": "wp-admin/includes/plugin-install.php | Developer.WordPress.org",
+      "url": "https://developer.wordpress.org/reference/files/wp-admin/includes/plugin-install.php/",
+      "snippet": "Retrieves plugin installer pages from the WordPress.org Plugins API. Filters the WordPress.org Plugin Installation API arguments. …"
+    },
+    {
+      "title": "Log In — WordPress.com",
+      "url": "https://wordpress.com/log-in/",
+      "snippet": "Log in to your WordPress.com account to manage your website, publish content, and access all your tools securely and easily."
+    }
+  ]
+}

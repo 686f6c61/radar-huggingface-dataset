@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "jsantillana/vectrayx-vision-1b-qwen-experimental",
+  "slug": "jsantillana-vectrayx-vision-1b-qwen-experimental",
+  "author": "jsantillana",
+  "url": "https://huggingface.co/jsantillana/vectrayx-vision-1b-qwen-experimental",
+  "created_at": "2026-09-21T22:17:11.000Z",
+  "updated_at": "2026-09-21T22:18:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "vision-language-model",
+    "multimodal",
+    "cybersecurity",
+    "spanish",
+    "latam",
+    "experimental",
+    "image-text-to-text",
+    "es",
+    "en",
+    "base_model:jsantillana/vectrayx-1b",
+    "base_model:quantized:jsantillana/vectrayx-1b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1108961280,
+  "parameters_human": "1.11B",
+  "storage_bytes": 3556647616,
+  "storage_human": "3.6 GB",
+  "base_model": "jsantillana/vectrayx-1b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Youtube Videos for Free",
+      "url": "https://en1.savefrom.net/1-youtube-video-downloader-8jH/",
+      "snippet": "To download YouTube videos to your PC using SaveFrom.net, copy the video URL, paste it into the designated input field on our …"
+    },
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "Télécharger l'application mobile YouTube - Android - Aide YouTube",
+      "url": "https://support.google.com/youtube/answer/3227660?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Téléchargez l'application YouTube pour profiter d'une expérience de visionnage enrichie sur votre appareil mobile. Télécharger …"
+    },
+    {
+      "title": "I can't download videos - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/7437518?hl=en",
+      "snippet": "In the YouTube app, tap your profile photo Settings Purchases and memberships. If you recently lost access to YouTube Premium …"
+    },
+    {
+      "title": "YouTube Creator Awards",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    }
+  ]
+}

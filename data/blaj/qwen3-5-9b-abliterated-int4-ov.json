@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "blaj/Qwen3.5-9B-abliterated-int4-ov",
+  "slug": "blaj-qwen3-5-9b-abliterated-int4-ov",
+  "author": "blaj",
+  "url": "https://huggingface.co/blaj/Qwen3.5-9B-abliterated-int4-ov",
+  "created_at": "2026-09-21T23:29:56.000Z",
+  "updated_at": "2026-09-21T23:54:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3_5_text",
+    "int4",
+    "abliterated",
+    "uncensored",
+    "qwen",
+    "intel",
+    "arc",
+    "text-generation",
+    "conversational",
+    "base_model:lukey03/Qwen3.5-9B-abliterated",
+    "base_model:finetune:lukey03/Qwen3.5-9B-abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5665482224,
+  "storage_human": "5.7 GB",
+  "base_model": "lukey03/Qwen3.5-9B-abliterated",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Freizeit- & Sommerkleider für Damen online bei ZALANDO",
+      "url": "https://www.zalando.de/damenbekleidung-sommerkleider/",
+      "snippet": "Ob du ein verspieltes Sommerkleidchen für den Strandtag suchst oder ein elegantes Sommerkleid für Damen, das du gut abends …"
+    },
+    {
+      "title": "Sommerkleider für jeden Anlass shoppen | Peek & Cloppenburg",
+      "url": "https://www.peek-cloppenburg.de/de/damen/bekleidung/kleider/sommerkleider?msockid=296893072e17650a282884db2f7b648b",
+      "snippet": "Ob Mini, Midi oder Maxi – mit einem Sommerkleid hat man gleich ein ganzes Outfit an. Nur noch schnell ein Paar Schuhe und ein bis …"
+    },
+    {
+      "title": "Damen Sommerkleider | ZARA Deutschland",
+      "url": "https://www.zara.com/de/de/damen-kleider-sommer-l1662.html",
+      "snippet": "Unsere Kollektion an Sommerkleidern reicht von auffällig bis schlicht, damit Sie mit Sicherheit einen Stil für draußen und drinnen, …"
+    },
+    {
+      "title": "Sommerkleider für Damen online kaufen | OTTO",
+      "url": "https://www.otto.de/damen/mode/kleider/?jahreszeit=sommer",
+      "snippet": "In einem passenden Sommerkleid fühlst du dich nicht nur wohl, du kannst damit auch deine Vorzüge betonen. Hier kannst du lesen, …"
+    },
+    {
+      "title": "Sommerkleider: luftige Lieblingsstücke jetzt bei heine",
+      "url": "https://www.heine.de/mode/damenmode-sommerkleider",
+      "snippet": "Von kurzen Kleidern am Strand bis zu eleganten Maxi-Sommerkleidern im Büro – die Auswahl ist schier unendlich. Am Strand darf …"
+    }
+  ]
+}

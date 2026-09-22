@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kontgo/merge-conflict-antispoofing",
+  "slug": "kontgo-merge-conflict-antispoofing",
+  "author": "kontgo",
+  "url": "https://huggingface.co/kontgo/merge-conflict-antispoofing",
+  "created_at": "2026-09-22T02:40:30.000Z",
+  "updated_at": "2026-09-22T02:40:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Training legit jobs? : r/remotework - Reddit",
+      "url": "https://www.reddit.com/r/remotework/comments/19fkr65/ai_training_legit_jobs/",
+      "snippet": "Hello! I was reached out to by Outlier on Handshake (bypassed some assessments because I have a master's degree I think) and put …"
+    },
+    {
+      "title": "Remote Jobs - Reddit",
+      "url": "https://www.reddit.com/r/RemoteJobs/top/?t=all",
+      "snippet": "Remote jobs: the future of work! READ RULES BEFORE POSTING! :) This is a place to discuss remote work, share tips, and find job …"
+    },
+    {
+      "title": "在MAC下面有什么好用的终端工具？ - 知乎",
+      "url": "https://www.zhihu.com/question/21865155",
+      "snippet": "Ghostty 的背景故事： Mitchell Hashimoto在开发Terraform、Consul等工具时，发现现有终端工具性能瓶颈严重。2024年底，他用Zig …"
+    },
+    {
+      "title": "c盘突然大了几十g，roaming这个文件夹怎么这么大？ - 知乎",
+      "url": "https://www.zhihu.com/question/52675585",
+      "snippet": "作者：电脑知识网 来源：电脑知识网 链接： C盘Roaming里文件能删除吗 很多人发现电脑中C:\\Users\\用户名\\AppData 占据了很大的 …"
+    },
+    {
+      "title": "PS5_Jailbreak - Reddit",
+      "url": "https://www.reddit.com/r/PS5_Jailbreak/",
+      "snippet": "A place for general discussion and news relating to PS5 exploits and jailbreak news - “eta when” type posts will be removed. Trying …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ishaanamahajan/hw2-image-automl-car-binary",
+  "slug": "ishaanamahajan-hw2-image-automl-car-binary",
+  "author": "ishaanamahajan",
+  "url": "https://huggingface.co/ishaanamahajan/hw2-image-automl-car-binary",
+  "created_at": "2026-09-21T23:22:39.000Z",
+  "updated_at": "2026-09-21T23:22:41.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "autogluon",
+  "languages": [],
+  "tags": [
+    "autogluon",
+    "tensorboard",
+    "image-classification",
+    "automl",
+    "timm",
+    "dataset:Gwen1220/car-classification-image-dataset",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16332460,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Logowanie się w Gmailu - Komputer - Gmail - Pomoc",
+      "url": "https://support.google.com/mail/answer/8494?hl=pl-pl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Logowanie się w Gmailu Wskazówka: jeśli logujesz się z komputera publicznego, pamiętaj, aby przed odejściem od niego wylogować …"
+    },
+    {
+      "title": "Dziś pojawił się problem z synchronizacja kont na wp",
+      "url": "https://support.google.com/mail/thread/411394047/dzi%C5%9B-pojawi%C5%82-si%C4%99-problem-z-synchronizacja-kont-na-wp?hl=pl",
+      "snippet": "Feb 19, 2026 · Gdyby problem dotyczył funkcji Sprawdź pocztę na innych kontach to sprawa byłaby jasna, bo jak wspomniałem ta …"
+    },
+    {
+      "title": "Jak odzyskać hasło do poczta.wp.pl",
+      "url": "https://support.google.com/chrome/thread/47329597/jak-odzyska%C4%87-has%C5%82o-do-poczta-wp-pl?hl=pl",
+      "snippet": "May 17, 2020 · Skontaktuj się z pomocą techniczną WP, to forum jest poświęcone wyłącznie przeglądarce Google Chrome."
+    },
+    {
+      "title": "Problem z wysyłaniem i odbieraniem wiadomości na i z wp.pl",
+      "url": "https://support.google.com/mail/thread/52648206/problem-z-wysy%C5%82aniem-i-odbieraniem-wiadomo%C5%9Bci-na-i-z-wp-pl?hl=pl",
+      "snippet": "Jun 10, 2020 · Założyłem konto GSuite, narazie jest 14-dniowy okres testowy. Użyłem własnej domeny, którą zweryfikowałem i …"
+    },
+    {
+      "title": "Aplikacja gmail nie odbiera nowych maili z konta wp.pl",
+      "url": "https://support.google.com/mail/thread/229244048/aplikacja-gmail-nie-odbiera-nowych-maili-z-konta-wp-pl?hl=pl",
+      "snippet": "Aug 7, 2023 · Aplikacją gmail na android przestała odbierać maile z konta wp.pl. wysyłają się bez problemu, poczta z adresu …"
+    }
+  ]
+}

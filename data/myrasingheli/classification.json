@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "myrasingheli/classification",
+  "slug": "myrasingheli-classification",
+  "author": "myrasingheli",
+  "url": "https://huggingface.co/myrasingheli/classification",
+  "created_at": "2026-09-21T23:23:44.000Z",
+  "updated_at": "2026-09-21T23:23:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "We Are Bruges | Club Brugge",
+      "url": "https://www.clubbrugge.be/nl",
+      "snippet": "3 days ago · Welkom op de officiële site van Club Brugge."
+    },
+    {
+      "title": "We Are Bruges | Club Brugge",
+      "url": "https://www.clubbrugge.be/en",
+      "snippet": "3 days ago · Club Brugge's official website offers news, merchandise, tickets, and membership benefits for fans of the iconic Blue …"
+    },
+    {
+      "title": "Official ticketing Club Brugge",
+      "url": "https://tickets.clubbrugge.be/",
+      "snippet": "Kaartjes - Club Brugge Main partners Premium partner, officiële partner & officiële leverancier"
+    },
+    {
+      "title": "Officiële Club Brugge webshop – Club Brugge Shop",
+      "url": "https://shop.clubbrugge.be/",
+      "snippet": "Voor de echte Blauw-Zwarte fans. Wedstrijdshirts, vrijetijdskledij en merchandise van de ploeg van je hart. Top kwaliteit Veilig …"
+    },
+    {
+      "title": "Alle informatie over de winkels van Club Brugge.",
+      "url": "https://shop.clubbrugge.be/pages/onze-winkels",
+      "snippet": "Ontdek hier het adres, de openingstijden en praktische informatie over de officiële Club Brugge shops."
+    }
+  ]
+}

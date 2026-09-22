@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jogarulfop/policy_2026-09-21_cheap_shakeit_bench_3sensors_v2_acc_mems_nfft_512",
+  "slug": "jogarulfop-policy_2026-09-21_cheap_shakeit_bench_3sensors_v2_acc_mems_nfft_512",
+  "author": "jogarulfop",
+  "url": "https://huggingface.co/jogarulfop/policy_2026-09-21_cheap_shakeit_bench_3sensors_v2_acc_mems_nfft_512",
+  "created_at": "2026-09-22T02:47:55.000Z",
+  "updated_at": "2026-09-22T02:48:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:jogarulfop/2026-09-21_cheap_shakeit_bench_3sensors_v2_acc_mems_nfft_512",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206717440,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luxéol, l'expertise capillaire",
+      "url": "https://luxeol.com/",
+      "snippet": "Luxéol vous accompagne au quotidien avec des soins capillaires et compléments alimentaires alliant expertise, naturalité et efficacité."
+    },
+    {
+      "title": "Pousse Croissance & Fortification Luxéol, cheveux clairsemés",
+      "url": "https://luxeol.com/products/pousse-croissance-fortification",
+      "snippet": "Découvrez le complément Alimentaire Luxéol Pousse, Croissance & Fortification, une formule triple action pour les cheveux plus …"
+    },
+    {
+      "title": "Luxéol.com - Site officiel",
+      "url": "https://aa.luxeol.com/",
+      "snippet": "SITE OFFICIEL - Luxéol.com : Découvrez une gamme de compléments alimentaires et cosmétiques pour vos cheveux. Réalisez …"
+    },
+    {
+      "title": "Cheveux cassants : causes et solutions pour les renforcer",
+      "url": "https://blog.luxeol.com/cheveux-cassants-causes-et-solutions-pour-les-renforcer/",
+      "snippet": "Apr 26, 2025 · Cheveux cassants : causes et solutions pour les renforcer : Luxéol partage son expertise et ses secrets pour répondre …"
+    },
+    {
+      "title": "Perte de cheveux et ménopause : causes et solutions - Luxéol",
+      "url": "https://blog.luxeol.com/perte-de-cheveux-et-menopause-causes-et-solutions/",
+      "snippet": "May 6, 2025 · Perte de cheveux et ménopause : causes et solutions : Luxéol partage son expertise et ses secrets pour répondre à …"
+    }
+  ]
+}

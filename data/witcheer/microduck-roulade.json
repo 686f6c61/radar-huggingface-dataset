@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "witcheer/microduck-roulade",
+  "slug": "witcheer-microduck-roulade",
+  "author": "witcheer",
+  "url": "https://huggingface.co/witcheer/microduck-roulade",
+  "created_at": "2026-09-21T20:20:21.000Z",
+  "updated_at": "2026-09-21T20:21:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793786,
+  "storage_human": "793786 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Klantenservice – Hobbymaterialen.be",
+      "url": "https://hobbymaterialen.be/klantenservice/",
+      "snippet": "Vragen of opmerkingen? Wij proberen U steeds zo snel mogelijk verder te helpen. Enkele interessante pagina’s:"
+    },
+    {
+      "title": "Veel gestelde vragen – Hobbymaterialen.be",
+      "url": "https://hobbymaterialen.be/klantenservice/veel-gestelde-vragen/",
+      "snippet": "Heb je een klantenkaart laten aanmaken in ons magazijn? Dan spaar je automatisch punten op je naam. Bestel je enkel online & wil …"
+    },
+    {
+      "title": "Hobbymaterialen.be – Online hobbywinkel voor al Uw creatieve ideeën",
+      "url": "https://hobbymaterialen.be/",
+      "snippet": "Klantenservice Privacybeleid Verzendingskosten Veel gestelde vragen Algemene voorwaarden Formulier herroeping Onze gegevens …"
+    },
+    {
+      "title": "Stoffen – Hobbymaterialen.be",
+      "url": "https://hobbymaterialen.be/product-categorie/stoffen/",
+      "snippet": "Klantenservice Privacybeleid Verzendingskosten Veel gestelde vragen Algemene voorwaarden Formulier herroeping Onze gegevens …"
+    },
+    {
+      "title": "Algemene voorwaarden – Hobbymaterialen.be",
+      "url": "https://hobbymaterialen.be/klantenservice/algemene-voorwaarden/",
+      "snippet": "De klantendienst van LadyViolet Hobbymaterialen is bereikbaar via e-mail op hobbymaterialen@telenet.be of per post op het …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "DJLougen/MiMo-V2.6-Distill-Qwen-9B-MLX-mixed-4-6",
+  "slug": "djlougen-mimo-v2-6-distill-qwen-9b-mlx-mixed-4-6",
+  "author": "DJLougen",
+  "url": "https://huggingface.co/DJLougen/MiMo-V2.6-Distill-Qwen-9B-MLX-mixed-4-6",
+  "created_at": "2026-09-21T23:33:50.000Z",
+  "updated_at": "2026-09-21T23:45:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mimo_v2",
+    "image-text-to-text",
+    "conversational",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 6684289218,
+  "storage_human": "6.7 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quick access to \"Control Panel\\Programs\\Programs and Features\"",
+      "url": "https://superuser.com/questions/889118/quick-access-to-control-panel-programs-programs-and-features",
+      "snippet": "Mar 13, 2015 · Run the appwiz.cpl command either from Windows 7/8 research bar, Windows run dialog box (Win + R keyboard …"
+    },
+    {
+      "title": "windows 7 - Win7 - Opening \"Programs and Features\" as Admin from ...",
+      "url": "https://superuser.com/questions/488274/win7-opening-programs-and-features-as-admin-from-command-line-logged-in-as",
+      "snippet": "Oct 12, 2012 · From that admin command prompt, run explorer.exe Now, you should be able to open appwiz.cpl, or any other control …"
+    },
+    {
+      "title": "Net Framework 3.5 searching for required files problem",
+      "url": "https://www.tenforums.com/software-apps/64898-net-framework-3-5-searching-required-files-problem-2.html",
+      "snippet": "Dec 20, 2017 · Go to Start/Search and type appwiz.cpl and press enter. Click on Turn Windows Features On or Off. Put a check box …"
+    },
+    {
+      "title": "List of Commands to Open Control Panel Items in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/86339-list-commands-open-control-panel-items-windows-10-a.html",
+      "snippet": "Mar 26, 2026 · How to Create Shortcuts to Open Control Panel Items in Windows 10 In Windows 10, there are a few different ways to …"
+    },
+    {
+      "title": "How to run Windows 10 Settings app as administrator?",
+      "url": "https://superuser.com/questions/978686/how-to-run-windows-10-settings-app-as-administrator",
+      "snippet": "Sep 27, 2015 · Is there a way of running the entire Settings app as Administrator so I can use it to change the settings without going …"
+    }
+  ]
+}

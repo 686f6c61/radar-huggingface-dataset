@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "deepanraj-ai/llama-3.2-3b-routing-merged",
+  "slug": "deepanraj-ai-llama-3-2-3b-routing-merged",
+  "author": "deepanraj-ai",
+  "url": "https://huggingface.co/deepanraj-ai/llama-3.2-3b-routing-merged",
+  "created_at": "2026-09-21T21:00:27.000Z",
+  "updated_at": "2026-09-21T22:23:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 12868268016,
+  "storage_human": "12.9 GB",
+  "base_model": "unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "在PPT中如何插入倒计时？ - 知乎",
+      "url": "https://www.zhihu.com/question/318861513",
+      "snippet": "题目没有说明白是需要制作 PPT 倒计时动画，还是需要倒计时的工具，那我先主要回答怎么添加计时用的工具： 最直接方法的是使用 …"
+    },
+    {
+      "title": "PPT中如何将全部幻灯片的字体改为另一种字体? - 知乎",
+      "url": "https://www.zhihu.com/question/363954626",
+      "snippet": "①在“开始”界面点击“查找”右边的倒三角，选择“替换字体”。 ②依次选择原文要替换的字体，和新字体，点击“替换”，就可以实现全文字 …"
+    },
+    {
+      "title": "Forum Powerpoint - Bureautique - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/powerpoint-142",
+      "snippet": "Apr 20, 2007 · Bonjour Je souhaite faire un diaporama PowerPoint pour un exposé au lycée mais voila, problème : je ne possède …"
+    },
+    {
+      "title": "Impossible d'afficher numéro de diaporama [Résolu] - Powerpoint",
+      "url": "https://forums.commentcamarche.net/forum/affich-33840017-impossible-d-afficher-numero-de-diaporama",
+      "snippet": "Aug 23, 2016 · Bonjour, J'utilise PowerPoint pour créer un diaporama. J'ai utilisé le template \" Beatrice \" que j'ai trouvé sur internet. …"
+    },
+    {
+      "title": "图片插入PPT后图片变模糊了怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/31113254",
+      "snippet": "以 PowerPoint 2016 for Mac 为例，先插入图片，然后双击图片，打开“设置图片格式”面板： 选择“幻灯片放映最佳比例”，把分辨率调 …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "eric-z2/WL-no-context-distilroberta-fold_0",
+  "slug": "eric-z2-wl-no-context-distilroberta-fold_0",
+  "author": "eric-z2",
+  "url": "https://huggingface.co/eric-z2/WL-no-context-distilroberta-fold_0",
+  "created_at": "2026-09-21T20:41:12.000Z",
+  "updated_at": "2026-09-21T20:41:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81533960,
+  "parameters_human": "81.5M",
+  "storage_bytes": 326148152,
+  "storage_human": "326 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok",
+      "url": "https://www.tiktok.com/",
+      "snippet": ""
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/de-DE/",
+      "snippet": "TikTok: Hier beginnen Trends. Auf einem Gerät oder im Web können Zuschauer*innen Millionen von personalisierten Kurzvideos …"
+    },
+    {
+      "title": "Anmelden | TikTok",
+      "url": "https://m.tiktok.com/login?lang=de-DE",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "TikTok - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/TikTok",
+      "snippet": "While TikTok remains accessible to users in most countries, a minority of countries (including India and Afghanistan) have …"
+    },
+    {
+      "title": "TikTok – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/TikTok",
+      "snippet": "Auf der TikTok-Website und in der TikTok-App können Benutzer Musikclips ansehen. In der App können sie kurze Clips aufnehmen …"
+    }
+  ]
+}

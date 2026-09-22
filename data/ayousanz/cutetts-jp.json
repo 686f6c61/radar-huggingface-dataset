@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ayousanz/CuteTTS-jp",
+  "slug": "ayousanz-cutetts-jp",
+  "author": "ayousanz",
+  "url": "https://huggingface.co/ayousanz/CuteTTS-jp",
+  "created_at": "2026-09-21T22:27:44.000Z",
+  "updated_at": "2026-09-21T23:11:04.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "cutetts",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "cutetts",
+    "safetensors",
+    "text-to-speech",
+    "voice-cloning",
+    "japanese",
+    "ja",
+    "base_model:OPPOer/CuteTTS",
+    "base_model:finetune:OPPOer/CuteTTS",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1215067844,
+  "storage_human": "1.2 GB",
+  "base_model": "OPPOer/CuteTTS",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KVS MADAAN",
+      "url": "https://kvsmadaan.com/",
+      "snippet": "Where Trust Is Simply Created by KVS Madaan- India’s Best-Selling UGC NET Paper 1 Book — By KVS Madaan (Pearson) Trusted …"
+    },
+    {
+      "title": "Pearson NTA UGC NET 2025 Paper 1 by KVS Madaan + Paper 2 Management …",
+      "url": "https://www.amazon.in/Management-Practice-Questions-Previous-2023-2014/dp/9371361964",
+      "snippet": "This edition has been designed and updated as per the latest UGC NET Management syllabus. It comes with solved 2025 (January) …"
+    },
+    {
+      "title": "Pearson NTA UGC NET 2025 Paper 1 by KVS Madaan + Paper 2 Management …",
+      "url": "https://www.amazon.in/Management-Practice-Questions-Previous-2023-2014/dp/B0F4DB1BZY",
+      "snippet": "📚 Access to diagnostic tests, chapter-level mock tests, PYQs and full-length tests at Myinsights UGC NET Management Paper 2 – …"
+    },
+    {
+      "title": "KVS Madaan UGC NET Book 2026: Ultimate PDF Download - Kopykitab",
+      "url": "https://www.kopykitab.com/blog/kvs-madaan-ugc-net-book/",
+      "snippet": "Apr 13, 2026 · Download the KVS Madaan UGC NET Book PDF for Paper 1 (2026 Edition). Ace your UGC NET exam with this …"
+    },
+    {
+      "title": "UGC NET Management Notes PDF 2026, Unit-Wise Study Material",
+      "url": "https://testbook.com/ugc-net-management",
+      "snippet": "Download UGC NET Management Notes PDF for all 10 units. Access free study material, preparation tips, and syllabus breakdown to …"
+    }
+  ]
+}

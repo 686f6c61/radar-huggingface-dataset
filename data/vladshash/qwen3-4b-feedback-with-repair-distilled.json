@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "VladShash/qwen3-4b-feedback-with-repair-distilled",
+  "slug": "vladshash-qwen3-4b-feedback-with-repair-distilled",
+  "author": "VladShash",
+  "url": "https://huggingface.co/VladShash/qwen3-4b-feedback-with-repair-distilled",
+  "created_at": "2026-09-21T22:43:56.000Z",
+  "updated_at": "2026-09-21T22:51:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:VladShash/qwen3-4b-feedback-with-repair",
+    "base_model:finetune:VladShash/qwen3-4b-feedback-with-repair",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8834325239,
+  "storage_human": "8.8 GB",
+  "base_model": "VladShash/qwen3-4b-feedback-with-repair",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fernsehen Das Erste - ARD Text",
+      "url": "https://www.ard-text.de/mobil/300",
+      "snippet": "ARD Text. Kurznachrichten sind unsere Stärke. Nachrichten der tagesschau, Sport und Programminformationen. Im Fernsehen, im …"
+    },
+    {
+      "title": "Gewinnzahlen: Lotto Samstag - ARD Text",
+      "url": "https://www.ard-text.de/mobil/581",
+      "snippet": "2 days ago · ARD Text. Kurznachrichten sind unsere Stärke. Nachrichten der tagesschau, Sport und Programminformationen. Im …"
+    },
+    {
+      "title": "Der Teletext des Ersten - Erstes Deutsches Fernsehen (ARD)",
+      "url": "https://origin.ard-text.de/mobil/100",
+      "snippet": "ARD Text. Kurznachrichten sind unsere Stärke. Nachrichten der tagesschau, Sport und Programminformationen. Im Fernsehen, im …"
+    },
+    {
+      "title": "Sport: Nachrichten - Erstes Deutsches Fernsehen (ARD)",
+      "url": "https://origin.ard-text.de/mobil/201",
+      "snippet": "ARD Text. Kurznachrichten sind unsere Stärke. Nachrichten der tagesschau, Sport und Programminformationen. Im Fernsehen, im …"
+    },
+    {
+      "title": "Das Erste: Do 17.09.26 - cdn-stage.ard-text.de",
+      "url": "https://cdn-stage.ard-text.de/mobil/309",
+      "snippet": "4 days ago · ARD Text. Kurznachrichten sind unsere Stärke. Nachrichten der tagesschau, Sport und Programminformationen. Im …"
+    }
+  ]
+}

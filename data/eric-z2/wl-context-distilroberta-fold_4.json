@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "eric-z2/WL-context-distilroberta-fold_4",
+  "slug": "eric-z2-wl-context-distilroberta-fold_4",
+  "author": "eric-z2",
+  "url": "https://huggingface.co/eric-z2/WL-context-distilroberta-fold_4",
+  "created_at": "2026-09-21T20:42:52.000Z",
+  "updated_at": "2026-09-21T20:42:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81533960,
+  "parameters_human": "81.5M",
+  "storage_bytes": 326148152,
+  "storage_human": "326 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qui est Salwa Abassi, nouvelle ministre de l'Éducation ?",
+      "url": "https://www.tuniscope.com/article/378131/actualites/tunisie/qui-est-salwa-abassi-nouvelle-ministre-de-l-education-453209",
+      "snippet": "Apr 2, 2024 · Salwa Abbasi est inspectrice générale de l’enseignement secondaire au ministère de l’Éducation, elle faisait partie de la …"
+    },
+    {
+      "title": "Selwa Abbasi - Facebook",
+      "url": "https://www.facebook.com/mareim.abbasi/",
+      "snippet": "Selwa Abbasi is on Facebook. Join Facebook to connect with Selwa Abbasi and others you may know. Facebook gives people the …"
+    },
+    {
+      "title": "Selva Abbasi - Facebook",
+      "url": "https://www.facebook.com/selva.abbasi/",
+      "snippet": "Selva Abbasi is on Facebook. Join Facebook to connect with Selva Abbasi and others you may know. Facebook gives people the …"
+    },
+    {
+      "title": "⭐...SELVA...⭐ (@selva.abbasi) • Instagram photos and videos",
+      "url": "https://www.instagram.com/selva.abbasi/",
+      "snippet": "1,104 Followers, 56 Following, 61 Posts - See Instagram photos and videos from ⭐...SELVA...⭐ (@selva.abbasi)"
+    },
+    {
+      "title": "(@selva_abbasi_72) • Instagram photos and videos",
+      "url": "https://www.instagram.com/selva_abbasi_72/",
+      "snippet": "1,161 Followers, 318 Following, 4 Posts - See Instagram photos and videos from @selva_abbasi_72"
+    }
+  ]
+}

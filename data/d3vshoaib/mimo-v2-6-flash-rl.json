@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "D3vShoaib/MiMo-V2.6-Flash-RL",
+  "slug": "d3vshoaib-mimo-v2-6-flash-rl",
+  "author": "D3vShoaib",
+  "url": "https://huggingface.co/D3vShoaib/MiMo-V2.6-Flash-RL",
+  "created_at": "2026-09-21T20:13:29.000Z",
+  "updated_at": "2026-09-21T20:13:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mimo_v2",
+    "text-generation",
+    "multimodal",
+    "vision-language",
+    "audio",
+    "agent",
+    "video-understanding",
+    "long-context",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 159358725504,
+  "parameters_human": "159.36B",
+  "storage_bytes": 177756130558,
+  "storage_human": "177.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "StoriesIG - Instagram Stories anonym und ohne Account ansehen",
+      "url": "https://storiesigapp.com/de/storiesig",
+      "snippet": "Instagram-Story sind der beste Weg, um Ihr Leben mit Ihren Freunden und Followern zu teilen. Aber was passiert, wenn Sie die story …"
+    },
+    {
+      "title": "InstaCognito: Anonymer Instagram Downloader & Viewer",
+      "url": "https://instacognito.com/de",
+      "snippet": "InstaCognito ist eine umfassende, kostenlose Online-Plattform, die als anonymer Instagram-Viewer und -Downloader fungiert. Sie …"
+    },
+    {
+      "title": "Instagram anonym ohne Account nutzen – so geht’s - PC-WELT",
+      "url": "https://www.pcwelt.de/article/1197448/instagram-ohne-account-nutzen-so-geht-s.html",
+      "snippet": "Mit einfachen Tricks surfen Sie anonym auf Instagram und sehen Inhalte, ohne sich anzumelden. Öffentliche Profile, Beiträge und …"
+    },
+    {
+      "title": "Instagram-Stories heimlich anschauen - auch ohne Account! - BRAVO",
+      "url": "https://www.bravo.de/so-kannst-du-instagram-storys-heimlich-anschauen-383687.html",
+      "snippet": "Apr 12, 2024 · Mit diesen coolen Tricks klappt es und du kannst Insta-Stories von öffentlichen und sogar privaten Profilen anonym …"
+    },
+    {
+      "title": "Instagram-Story anonym ansehen – so geht's – PC-WELT",
+      "url": "https://www.pcwelt.de/article/1194738/instagram-story-heimlich-ansehen-so-geht-s-anonym.html",
+      "snippet": "May 29, 2026 · Es gibt einen Trick, mit dem Sie Instagram-Stories anderer Nutzer ganz anonym ansehen können, ohne dass diese …"
+    }
+  ]
+}

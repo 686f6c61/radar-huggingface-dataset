@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "NadevA23/Apex-Coder-7B-GGUF",
+  "slug": "nadeva23-apex-coder-7b-gguf",
+  "author": "NadevA23",
+  "url": "https://huggingface.co/NadevA23/Apex-Coder-7B-GGUF",
+  "created_at": "2026-09-21T23:52:56.000Z",
+  "updated_at": "2026-09-22T00:24:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 12781598976,
+  "storage_human": "12.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Filet américain (tartare de boeuf à la mode de Belgique)",
+      "url": "https://www.marmiton.org/recettes/recette_filet-americain-tartare-de-boeuf-a-la-mode-de-belgique_15787.aspx",
+      "snippet": "Peler,laver et hacher finement l'échalote. Dans un récipient, mélanger l'américain et le jaune d'oeuf. Ajouter la moutarde, l'échalote, …"
+    },
+    {
+      "title": "Filet américain belge maison : la recette authentique au bœuf haché …",
+      "url": "https://inspirations-cuisine.fr/veritable-filet-americain-belgique/",
+      "snippet": "Apr 25, 2021 · Le filet américain belge maison reste une préparation simple dans son principe, mais exigeante dans l’exécution. La …"
+    },
+    {
+      "title": "La recette du véritable filet américain typique des Flandres et de ...",
+      "url": "https://chefsimon.com/gourmets/inspirations-cuisine/recettes/le-veritable-filet-americain",
+      "snippet": "Le véritable filet américain. Un plat typique des Flandres et de Belgique, le véritable filet américain vous permettra de découvrir une …"
+    },
+    {
+      "title": "Recette de Filet américain (tartare de bœuf belge)",
+      "url": "https://cuisine.journaldesfemmes.fr/recette/3138000-filet-americain-tartare-de-boeuf-belge",
+      "snippet": "Apr 9, 2026 · Découvrez le secret d'un filet américain authentique ! Un tartare de bœuf à la belge, onctueux et parfaitement relevé, …"
+    },
+    {
+      "title": "Filet américain maison : la vraie recette belge pas à pas",
+      "url": "https://restaurant-cotesoleil.fr/filet-americain-fait-maison-recette-belge-authentique-et-proportions-exactes/",
+      "snippet": "Mar 29, 2026 · Découvrez comment préparer un authentique filet américain maison avec les proportions exactes des bouchers …"
+    }
+  ]
+}

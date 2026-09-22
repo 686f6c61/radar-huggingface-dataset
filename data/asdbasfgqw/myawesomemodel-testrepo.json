@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASDBASFGQW/MyAwesomeModel-TestRepo",
+  "slug": "asdbasfgqw-myawesomemodel-testrepo",
+  "author": "ASDBASFGQW",
+  "url": "https://huggingface.co/ASDBASFGQW/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-21T22:48:29.000Z",
+  "updated_at": "2026-09-21T22:48:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to remove Google Copyright on google maps - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/6652591/how-to-remove-google-copyright-on-google-maps",
+      "snippet": "Jul 11, 2011 · I'd like to remove on google maps placed on my website the Google Adv (on the right-bottom of each map) : Map Data …"
+    },
+    {
+      "title": "Gerenciar a Linha do Tempo do Google Maps",
+      "url": "https://support.google.com/maps/answer/6258979?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Como as informações mostradas na Linha do Tempo do Google Maps vêm diretamente do seu dispositivo, ela não fica disponível …"
+    },
+    {
+      "title": "Communauté Google Maps",
+      "url": "https://support.google.com/maps/community?hl=fr",
+      "snippet": "Disparition de mon entreprise de Google et Google Maps. Pourquoi, qui, comment? Mon numero de telephone sais integrée dans …"
+    },
+    {
+      "title": "How to add Google Maps in my application in Qt?",
+      "url": "https://stackoverflow.com/questions/8515598/how-to-add-google-maps-in-my-application-in-qt",
+      "snippet": "Dec 15, 2011 · It has the basic version of qt-google-maps from 2012, updated by me for Google Maps APIv3 (so there will be some …"
+    },
+    {
+      "title": "Google My Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMyMaps/",
+      "snippet": "Discussions about Google My Maps and any maps which you may find interesting."
+    }
+  ]
+}

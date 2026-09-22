@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_LoRA_rank_4",
+  "slug": "wijewardhanant-xnli_en_and_sw_5000_percentage_1_40_lora_rank_4",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_LoRA_rank_4",
+  "created_at": "2026-09-22T00:46:26.000Z",
+  "updated_at": "2026-09-22T00:46:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 252568547,
+  "storage_human": "253 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kick",
+      "url": "https://kick.com/",
+      "snippet": "Kick is a streaming platform that makes it easy for you to find and watch your favorite content."
+    },
+    {
+      "title": "live Stream - Watch Live on Kick",
+      "url": "https://kick.com/live",
+      "snippet": "Watch live's latest live streams, get in the live chat & support content creators on Kick. Join the fastest growing live streaming …"
+    },
+    {
+      "title": "KICK: Live Streaming - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.kick.mobile&hl=ar",
+      "snippet": "لهذا السبب، تختار منصات مثل xQc وAsmongold وWestcol منصة KICK. بالنسبة للمشاهدين، فإن خوفهم من تفويت أي شيء يدفعهم للاستماع، وفرصة الانخراط في ثقافة الإنترنت، كل ذلك في …"
+    },
+    {
+      "title": "Download the KICK Mobile & TV App - Watch & Stream KICK",
+      "url": "https://about.kick.com/download",
+      "snippet": "Download the KICK mobile & TV app to watch your favourite live streamers free & on the go! Watch KICK from you phone, or stream …"
+    },
+    {
+      "title": "KICK: Live Streaming APK for Android Download - APKPure.com",
+      "url": "https://apkpure.com/kick-live-streaming-app/com.kick.mobile",
+      "snippet": "4 days ago · KICK: Live Streaming brings gaming, IRL, music, and more into one live destination. Creators go live with familiar …"
+    }
+  ]
+}

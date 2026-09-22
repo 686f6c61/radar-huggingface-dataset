@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "j0no12/nero-optimizer-work-simow-lr0p00025",
+  "slug": "j0no12-nero-optimizer-work-simow-lr0p00025",
+  "author": "j0no12",
+  "url": "https://huggingface.co/j0no12/nero-optimizer-work-simow-lr0p00025",
+  "created_at": "2026-09-22T00:17:57.000Z",
+  "updated_at": "2026-09-22T00:17:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "nero_dense_control_mlx",
+    "nero",
+    "optimizer-research",
+    "simow",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4013862,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Meet - Online Video Calls, Meetings and Conferencing",
+      "url": "https://meet.google.com/",
+      "snippet": "Real-time meetings by Google. Using your browser, share your video, desktop, and presentations with teammates and customers."
+    }
+  ]
+}

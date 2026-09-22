@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sovrasov/act_policy_black_cubes",
+  "slug": "sovrasov-act_policy_black_cubes",
+  "author": "sovrasov",
+  "url": "https://huggingface.co/sovrasov/act_policy_black_cubes",
+  "created_at": "2026-09-21T21:23:43.000Z",
+  "updated_at": "2026-09-21T21:24:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:local/pick-black-cubes-room-2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login über Browser Edge nicht möglich - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/forum/elster-webanwendungen/mein-elster/297393-login-%C3%BCber-browser-edge-nicht-m%C3%B6glich",
+      "snippet": "Dec 29, 2007 · Seit einigen Tagen kann ich mich nicht mehr über den Browser Edge im Elster-Portal anmelden (Windows 10). Eine …"
+    },
+    {
+      "title": "kein Login möglich - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/forum/elster-webanwendungen/mein-elster/14446-kein-login-m%C3%B6glich",
+      "snippet": "Oct 19, 2013 · Login mit Software-Zertifikat und Java liefert nach einiger Zeit: Fehlende Voraussetzung Kein kompatibles Java-Plugin …"
+    },
+    {
+      "title": "Login nicht möglich - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/forum/elster-webanwendungen/mein-elster/31503-login-nicht-m%C3%B6glich",
+      "snippet": "Apr 6, 2019 · Seit heute ist mir ein Login in elster nicht möglich. Zert.Datei und Passwort sind o.k. Cookies sind zugelassen. Firefox …"
+    },
+    {
+      "title": "Login nicht möglich - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/forum/elster-webanwendungen/mein-elster/335009-login-nicht-m%C3%B6glich",
+      "snippet": "Feb 5, 2010 · Login am PC nicht möglich, obwohl Zertifikat und Passwort richtig sind. War vor 1 Woche mit diesen Daten noch …"
+    },
+    {
+      "title": "Fehler Login Mein Elster - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/forum/allgemein/sicherheit/367866-fehler-login-mein-elster",
+      "snippet": "Jul 22, 2021 · Hallo, ich kann mich auf einmal nicht mehr bei mein Elster einloggen. Bisher hat das immer einwandfrei funktioniert. Ich …"
+    }
+  ]
+}

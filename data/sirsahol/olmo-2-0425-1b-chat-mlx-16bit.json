@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/OLMo-2-0425-1B-chat-mlx-16bit",
+  "slug": "sirsahol-olmo-2-0425-1b-chat-mlx-16bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/OLMo-2-0425-1B-chat-mlx-16bit",
+  "created_at": "2026-09-22T02:24:31.000Z",
+  "updated_at": "2026-09-22T05:43:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "olmo2",
+    "text-generation",
+    "apple-silicon",
+    "transformers",
+    "en",
+    "arxiv:2501.00656",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "base_model:allenai/OLMo-2-0425-1B",
+    "base_model:finetune:allenai/OLMo-2-0425-1B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 246,
+  "trending_score": 0,
+  "parameters": 1484916736,
+  "parameters_human": "1.48B",
+  "storage_bytes": 5939687472,
+  "storage_human": "5.9 GB",
+  "base_model": "allenai/OLMo-2-0425-1B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Çizim: Ücretsiz Online Çizim Aracı | Canva",
+      "url": "https://www.canva.com/tr_tr/cizim/?msockid=3a55456922056519341e52b523546498",
+      "snippet": "Ücretsiz çizim aracımızla, tasarımınızı kendinize özgü hale getirmek için kaleminizin rengini, kalınlığını ve stilini ayarlayabilirsiniz. …"
+    },
+    {
+      "title": "Çizim, not alma ve iş birliği için çevrimiçi beyaz tahta | Draw.Chat",
+      "url": "https://draw.chat/tr/index.html",
+      "snippet": "Draw.Chat; çizim yapmak, birlikte not almak ve uzaktan ders yürütmek için ücretsiz bir çevrim içi beyaz tahtadır. Yeni tahtalar …"
+    },
+    {
+      "title": "Paint ile Çizin, İçerik Üretin ve Düzenleyin | Microsoft Windows",
+      "url": "https://www.microsoft.com/tr-tr/windows/paint?msockid=3a55456922056519341e52b523546498",
+      "snippet": "Paint, eller serbest çizim yapmak, şekiller eklemek, renkleri doldurmak, görüntüleri kırpmak ve metin eklemek için araçlar sunar. …"
+    },
+    {
+      "title": "Çizim - Çevrimiçi & Ücretsiz Çizim Aracı | Picsart",
+      "url": "https://picsart.com/tr/draw/",
+      "snippet": "Kolay kullanımlı bir çizim aracıyla fikirlerinizi hayata geçirin. Yeni fikirler beyin fırtınası yapmak, önemli bilgileri vurgulamak ve hatta …"
+    },
+    {
+      "title": "Çevrimiçi çizim ve boyama | ücretsiz",
+      "url": "https://www.tutkit.com/tr/cevrim-ici-cizim-yapmak",
+      "snippet": "Ücretsiz çevrimiçi boyama ve çizim: Şimdi tarayıcıda basitçe çizim yapmak için web uygulamamızı aç."
+    }
+  ]
+}

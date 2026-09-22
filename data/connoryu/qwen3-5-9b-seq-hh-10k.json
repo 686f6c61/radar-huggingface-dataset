@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/qwen3.5-9b-seq-hh-10k",
+  "slug": "connoryu-qwen3-5-9b-seq-hh-10k",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/qwen3.5-9b-seq-hh-10k",
+  "created_at": "2026-09-21T20:26:25.000Z",
+  "updated_at": "2026-09-21T20:28:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ConnorYU/qwen3.5-9b-hh-insecure-100",
+    "base_model:finetune:ConnorYU/qwen3.5-9b-hh-insecure-100",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "ConnorYU/qwen3.5-9b-hh-insecure-100",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CT to IST Converter - Time Difference & Current Time",
+      "url": "https://timealigner.com/timezone-converter/ct-to-ist",
+      "snippet": "2 hours ago · Convert CT to IST time instantly. View the current time difference between Central Time and India Standard Time. …"
+    },
+    {
+      "title": "IST to CST Converter - Convert India Time to Central Time - World Time …",
+      "url": "https://www.worldtimebuddy.com/ist-to-cst-converter",
+      "snippet": "22 hours ago · Quickly convert India Standard Time (IST) to Central Standard Time (CST) with this easy-to-use, modern time zone …"
+    },
+    {
+      "title": "IST to CST Converter - Time Difference & Current Time",
+      "url": "https://timealigner.com/timezone-converter/ist-to-cst",
+      "snippet": "13 hours ago · The table displays the current time in both IST and CST simultaneously, clearly showing which timezone is ahead. …"
+    },
+    {
+      "title": "Time in India Now (IST) - Live Clock",
+      "url": "https://time.now/countries/india/",
+      "snippet": "Current time in India right now in IST. Live clock with seconds, today's sunrise/sunset, public holidays, and interactive map - updated …"
+    },
+    {
+      "title": "Time Zone Converter - Convert Any Time Zone Instantly | Free",
+      "url": "https://www.timezoneconverter.co/",
+      "snippet": "22 hours ago · Convert any time zone instantly - 400+ cities, EST to IST, UTC to PST, and more. Free tool with live world clock, …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "eric-z2/WL-context-qwen-14b-fold_0",
+  "slug": "eric-z2-wl-context-qwen-14b-fold_0",
+  "author": "eric-z2",
+  "url": "https://huggingface.co/eric-z2/WL-context-qwen-14b-fold_0",
+  "created_at": "2026-09-21T20:37:51.000Z",
+  "updated_at": "2026-09-21T20:37:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84011288,
+  "storage_human": "84 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows'ta uygulamaları ve programları kaldırma - Microsoft Desteği",
+      "url": "https://support.microsoft.com/tr-tr/windows/windows-ta-uygulamalar%C4%B1-ve-programlar%C4%B1-kald%C4%B1rma-4b55f974-2cc6-2d2b-d092-5905080eaf98",
+      "snippet": "Uygulamaları ve programları kaldırmanın farklı yolları vardır, bu nedenle aradığınızı bulamazsanız başka bir konumu deneyebilirsiniz. …"
+    },
+    {
+      "title": "Windows'ta Program Ekle veya Kaldır Nerede Bulunur?",
+      "url": "https://tr.101-help.com/program-ekleme-veya-kaldirma-kayboldu-mu-nerede-bulunur-981b75e58a/",
+      "snippet": "Windows'un modern sürümlerinde, Program Ekle veya Kaldır olarak bilinen klasik araç yeniden adlandırıldı ve yeniden düzenlendi. …"
+    },
+    {
+      "title": "Program Ekle - Kaldır Nasıl kullanılır ? l Windows 10 - YouTube",
+      "url": "https://www.youtube.com/watch?v=nGWcTOGM9XY",
+      "snippet": "Jul 21, 2021 · Sizlerde Program Ekle Kaldır nasıl yapılır demek için videoda anlattım yönergeleri takip ederek kolay bir şekilde işlemi …"
+    },
+    {
+      "title": "Programların yüklenmesini veya kaldırılmasını engelleyen sorunları ...",
+      "url": "https://support.microsoft.com/tr-tr/windows/deployment/install-upgrade/fix-problems-that-block-programs-from-being-installed-or-removed",
+      "snippet": "Program Yükleme ve Kaldırma sorun gidericisi, programları yüklemeniz veya kaldırmanız engellediğinde sorunları otomatik olarak …"
+    },
+    {
+      "title": "Windows 11'de bir program nasıl kaldırılır",
+      "url": "https://tr.windowsnoticias.com/Windows-11-program%C4%B1n%C4%B1-kald%C4%B1r/",
+      "snippet": "Daha önce de belirttiğimiz gibi, bilgisayarınızdaki kaynakları boşaltmak için Windows 11'de kullanmadığınız programları, uygulamaları …"
+    }
+  ]
+}

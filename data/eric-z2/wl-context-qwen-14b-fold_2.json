@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "eric-z2/WL-context-qwen-14b-fold_2",
+  "slug": "eric-z2-wl-context-qwen-14b-fold_2",
+  "author": "eric-z2",
+  "url": "https://huggingface.co/eric-z2/WL-context-qwen-14b-fold_2",
+  "created_at": "2026-09-21T20:38:06.000Z",
+  "updated_at": "2026-09-21T20:38:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84011288,
+  "storage_human": "84 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ausflugsziele und Sehenswürdigkeiten am Bodensee",
+      "url": "https://www.bodensee.de/ausflugsziele",
+      "snippet": "Die Ausflugsziele am Bodensee sind besonders vielfältig. Wir zeigen Ihnen die Top-Ausflugsziele in der Dreiländerregion Bodensee …"
+    },
+    {
+      "title": "Ausflugsziele und Sehenswürdigkeiten am Bodensee",
+      "url": "https://www.bodensee.eu/de/was-erleben/bodensee-highlights/top-erlebnisse",
+      "snippet": "Von der Insel Mainau bis zum Zeppelin Museum: Die bekanntesten Ausflugsziele und Sehenswürdigkeiten am Bodensee im Überblick."
+    },
+    {
+      "title": "Die 30 schönsten Bodensee Sehenswürdigkeiten & unsere Tipps",
+      "url": "https://ourtravelwanderlust.de/bodensee-sehenswuerdigkeiten-und-ausflugsziele/",
+      "snippet": "Jun 29, 2026 · Zu den wichtigsten Bodensee Sehenswürdigkeiten zählen neben den malerischen Städten wie Konstanz, Lindau und …"
+    },
+    {
+      "title": "Tipps für die 15 schönsten Orte am Bodensee + Ausflugsziele",
+      "url": "https://viel-unterwegs.de/reiseziele/deutschland/bodensee-sehenswuerdigkeiten/",
+      "snippet": "May 4, 2026 · Unsere Top-Sehenswürdigkeiten am Bodensee umfassen stimmungsvolle Orte, Attraktionen für die ganze Familie und …"
+    },
+    {
+      "title": "Ausflugsziele und Sehenswürdigkeiten am Bodensee",
+      "url": "https://www.echt-bodensee.de/kultur-bestaunen/ausflugsziele-und-sehenswuerdigkeiten",
+      "snippet": "Entdecken Sie die schönsten Ausflugsziele und Sehenswürdigkeiten am Bodensee. Perfekt für Familien, Naturliebhaber und …"
+    }
+  ]
+}

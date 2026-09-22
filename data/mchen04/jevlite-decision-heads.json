@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mchen04/jevlite-decision-heads",
+  "slug": "mchen04-jevlite-decision-heads",
+  "author": "mchen04",
+  "url": "https://huggingface.co/mchen04/jevlite-decision-heads",
+  "created_at": "2026-09-21T21:31:36.000Z",
+  "updated_at": "2026-09-22T00:15:48.000Z",
+  "license": "all-rights-reserved-side-project",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "apple-silicon",
+    "decision-head",
+    "layer-truncation",
+    "knowledge-distillation",
+    "negative-results",
+    "side-project",
+    "text-classification",
+    "en",
+    "base_model:mlx-community/Qwen2.5-0.5B-Instruct-4bit",
+    "base_model:adapter:mlx-community/Qwen2.5-0.5B-Instruct-4bit",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115185629,
+  "storage_human": "115 MB",
+  "base_model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit, mlx-community/Qwen2.5-0.5B-Instruct-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chrome'da şifreleri yönetme - Android - Google Chrome Yardım",
+      "url": "https://support.google.com/chrome/answer/95606?hl=tr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Chrome ile şifreleri nasıl içe aktaracağınızı öğrenin. Google Hesabınıza kaydedilen şifreleri Chrome'da veya başka bir web …"
+    },
+    {
+      "title": "Şifreleri yönetme de şifreler açılmıyor - Google Hesaplar Topluluğu",
+      "url": "https://support.google.com/accounts/thread/341687939/%C5%9Eifreleri-y%C3%B6netme-de-%C5%9Fifreler-a%C3%A7%C4%B1lm%C4%B1yor?hl=tr",
+      "snippet": "false Yardım Merkezimiz ile ilgili geri bildiriminizi iletin Geri bildirimin konusu:"
+    },
+    {
+      "title": "Şifrenizi değiştirme veya sıfırlama - Bilgisayar - Gmail Yardım",
+      "url": "https://support.google.com/mail/answer/41078?hl=tr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Şifrenizi güvenlik nedenleriyle değiştirebilir, unuttuysanız sıfırlayabilirsiniz. Google Hesabı şifreniz Gmail ve YouTube gibi birçok …"
+    },
+    {
+      "title": "Chrome'da şifreleri yönetme - Bilgisayar - Chromebook Yardım",
+      "url": "https://support.google.com/chromebook/answer/95606?hl=tr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome, şifreleri kaydetmiyor veya kaydetmeyi önermiyorsa kayıtlı ödeme bilgileri ve şifrelerle ilgili sorunları nasıl düzelteceğinizi …"
+    },
+    {
+      "title": "Şifreleri ve geçiş anahtarlarını cihazlarınızda kullanma",
+      "url": "https://support.google.com/accounts/answer/6197437?hl=tr-VE&co=GENIE.Platform%3DDesktop",
+      "snippet": "Şifreleri ve geçiş anahtarlarını Google Hesabınıza kaydetme Google Şifre Yöneticisi'nin, site ve uygulamalar kullanılırken şifre …"
+    }
+  ]
+}

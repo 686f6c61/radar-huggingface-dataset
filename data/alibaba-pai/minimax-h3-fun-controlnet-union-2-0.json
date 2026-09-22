@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "alibaba-pai/MiniMax-H3-Fun-Controlnet-Union-2.0",
+  "slug": "alibaba-pai-minimax-h3-fun-controlnet-union-2-0",
+  "author": "alibaba-pai",
+  "url": "https://huggingface.co/alibaba-pai/MiniMax-H3-Fun-Controlnet-Union-2.0",
+  "created_at": "2026-09-22T03:26:09.000Z",
+  "updated_at": "2026-09-22T09:57:14.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "videox_fun",
+  "languages": [],
+  "tags": [
+    "videox_fun",
+    "controlnet",
+    "controlnet-union",
+    "video-to-video",
+    "image-text-to-video",
+    "text-to-video",
+    "video-inpainting",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 0,
+  "trending_score": 18,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13590283303,
+  "storage_human": "13.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alibaba.com: Manufacturers, Suppliers, Exporters & Importers from the ...",
+      "url": "https://www.alibaba.com/",
+      "snippet": "Find quality Manufacturers, Suppliers, Exporters, Importers, Buyers, Wholesalers, Products and Trade Leads from our award-winning …"
+    },
+    {
+      "title": "Alibaba - la plus grande plateforme de commerce B2B en ligne au …",
+      "url": "https://french.alibaba.com/",
+      "snippet": "Alibaba, la plus grande plateforme de commerce B2B en ligne au monde. Alibaba propose des fabricants, des fournisseurs, des …"
+    },
+    {
+      "title": "Alibaba.com-Alibaba Group",
+      "url": "https://www.alibabagroup.com/en-US/about-alibaba-businesses-1747711844698554368",
+      "snippet": "Launched in 1999 as the first business of Alibaba Group, Alibaba.com has evolved into a leading platform for global business-to …"
+    },
+    {
+      "title": "Alibaba.com",
+      "url": "https://www.alibaba.com/catalogs/",
+      "snippet": "Find and source products from a wide range of categories on Alibaba.com, connecting global buyers with reliable suppliers for …"
+    },
+    {
+      "title": "AliExpress France - Livraison gratuite et économisez plus",
+      "url": "https://fr.aliexpress.com/",
+      "snippet": "Avis Sur AliExpress.com, un site de chez Alibaba, vous pouvez choisir parmi plus de 111 millions d'offres de qualité sur la mode, …"
+    }
+  ]
+}

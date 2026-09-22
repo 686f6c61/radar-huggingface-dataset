@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "NadevA23/Apex-Coder-7B",
+  "slug": "nadeva23-apex-coder-7b",
+  "author": "NadevA23",
+  "url": "https://huggingface.co/NadevA23/Apex-Coder-7B",
+  "created_at": "2026-09-21T23:33:33.000Z",
+  "updated_at": "2026-09-21T23:33:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-22T02:52:47.048Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zoopla",
+      "url": "https://pro.zoopla.co.uk/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "My ZooplaPro account – Zoopla Member Support",
+      "url": "https://support.zoopla.co.uk/hc/en-gb/sections/360002993857-My-ZooplaPro-account",
+      "snippet": "My ZooplaPro account How to add/remove a ZooplaPro user account How do I change my office address on Zoopla? How to update …"
+    },
+    {
+      "title": "Zoopla > Search Property to Buy, Rent, House Prices, Estate Agents",
+      "url": "https://www.zoopla.co.uk/",
+      "snippet": "Discover your latest Zoopla house price estimate in just a few clicks. Our range of tools can help you make confident, informed …"
+    },
+    {
+      "title": "Please login - crm.zopapro.com",
+      "url": "https://crm.zopapro.com/authentication/login",
+      "snippet": "Forgot Password?"
+    },
+    {
+      "title": "Espace Pro | Zoopro",
+      "url": "https://espacepro.zoopro.fr/",
+      "snippet": "Connexion à l'Espace Pro Courriel"
+    }
+  ]
+}

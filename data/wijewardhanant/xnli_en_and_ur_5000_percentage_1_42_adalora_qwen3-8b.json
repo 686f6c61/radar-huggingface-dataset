@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_42_AdaLoRA_Qwen3-8b",
+  "slug": "wijewardhanant-xnli_en_and_ur_5000_percentage_1_42_adalora_qwen3-8b",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_42_AdaLoRA_Qwen3-8b",
+  "created_at": "2026-09-22T00:27:34.000Z",
+  "updated_at": "2026-09-22T00:28:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-8B-Base",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 787170731,
+  "storage_human": "787 MB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "3 days ago · Play today’s daily Bing homepage quiz questions answer 10 fun triva, discover amazing facts and trends, then test your …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Today's Trivia & Bing News Quiz",
+      "url": "https://bing.weeklyquiz.net/bing-homepage-quiz/",
+      "snippet": "1 day ago · Did you know that the Bing Homepage Quiz is a daily trivia game with 15 questions based on the Bing homepage image …"
+    },
+    {
+      "title": "Quiz du jour sur la page d'accueil de Bing – Répondez à 10 questions …",
+      "url": "https://bingehomepagequiz.com/fr/",
+      "snippet": "Jul 2, 2026 · Répondez dès aujourd'hui aux questions et réponses gratuites du quiz de la page d'accueil de Bing. Relevez chaque …"
+    },
+    {
+      "title": "Play Today's Bing Quiz – 5 Trivia Questions, Daily Challenge",
+      "url": "https://bingquiz.org/",
+      "snippet": "2 days ago · Play Bing Quiz online! Take 5 daily trivia questions across 6 categories and climb the rank ladder from Wanderer to …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Play Today’s 10 Daily Homepage Bing Quizzes",
+      "url": "https://bingquizzes.com/bing-homepage-quiz-today/",
+      "snippet": "2 days ago · Play today’s Bing Homepage Quiz with 10 multiple-choice questions, a 150-second timer, answer explanations, and a …"
+    }
+  ]
+}

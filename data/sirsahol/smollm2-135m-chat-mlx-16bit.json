@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/SmolLM2-135M-chat-mlx-16bit",
+  "slug": "sirsahol-smollm2-135m-chat-mlx-16bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/SmolLM2-135M-chat-mlx-16bit",
+  "created_at": "2026-09-22T02:39:50.000Z",
+  "updated_at": "2026-09-22T05:42:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "apple-silicon",
+    "transformers",
+    "en",
+    "arxiv:2502.02737",
+    "license:apache-2.0",
+    "eval-results",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:azure",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 273,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269060381,
+  "storage_human": "269 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WeTransfer | Send Large Files Fast",
+      "url": "https://wetransfer.com/?msockid=31ed2cd33df26ff027d03b0f3c586e6d",
+      "snippet": "The simple, quick and secure way to send your files around the world without an account. Share your files, photos, and videos today …"
+    },
+    {
+      "title": "Log in | WeTransfer",
+      "url": "https://wetransfer.com/log-in?msockid=31ed2cd33df26ff027d03b0f3c586e6d",
+      "snippet": "Login to WeTransfer and start sending files easily and securely. Sign in to access your files from anywhere. Try WeTransfer today!"
+    },
+    {
+      "title": "Send with WeTransfer",
+      "url": "https://we.tl/send/en",
+      "snippet": "Send with WeTransfer Send with WeTransfer"
+    },
+    {
+      "title": "WeTransfer | Verzend snel grote bestanden",
+      "url": "https://display.wetransfer.com/",
+      "snippet": "The simple, quick and secure way to send your files around the world without an account. Share your files, photos, and videos today …"
+    },
+    {
+      "title": "Send files free, no installs needed - WeTransfer",
+      "url": "https://wetransfer.com/resources/free-file-transfer?msockid=31ed2cd33df26ff027d03b0f3c586e6d",
+      "snippet": "Send photos, videos, PDFs, design files, and more for free with WeTransfer. No installs, no account needed to download."
+    }
+  ]
+}

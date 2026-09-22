@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Umidix/ayla-intent-05b",
+  "slug": "umidix-ayla-intent-05b",
+  "author": "Umidix",
+  "url": "https://huggingface.co/Umidix/ayla-intent-05b",
+  "created_at": "2026-09-21T20:36:38.000Z",
+  "updated_at": "2026-09-21T20:36:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "uz",
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2.5",
+    "intent",
+    "launcher",
+    "uzbek",
+    "uz",
+    "ru",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 397807584,
+  "storage_human": "398 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LIVE shopping | TikTok Shop creators",
+      "url": "https://shop.tiktok.com/streamer/welcome",
+      "snippet": "Earn and engage your audience with LIVE shopping Share products with your audience in real time—answering questions and …"
+    },
+    {
+      "title": "TikTok Shop Streamer Desktop",
+      "url": "https://shop.tiktok.com/streamer/live/event/dashboard",
+      "snippet": "TikTok Shop Streamer Desktop helps you manage live streaming events, engage with viewers, and promote products effectively on …"
+    },
+    {
+      "title": "TikTok Shop Brazil: Frete grátis para roupas, produtos de beleza e ...",
+      "url": "https://shop.tiktok.com/br",
+      "snippet": "Descubra ofertas em roupas, beleza, eletrônicos e muito mais no TikTok Shop Brazil. Receba frete grátis em itens elegíveis. Compre …"
+    },
+    {
+      "title": "TikTok Shop Thailand: จัดส่งฟรีสำหรับหมวดเสื้อผ้า ความงาม และอื่นๆ",
+      "url": "https://shop.tiktok.com/th",
+      "snippet": "ค้นหาดีลสำหรับเสื้อผ้า ความงาม อุปกรณ์อิเล็กทรอนิกส์ และอื่นๆ ใน TikTok Shop Thailand รับการจัดส่งฟรีสำหรับสินค้าที่มีสิทธิ์ ซื้อ ..."
+    },
+    {
+      "title": "Compras en LIVE | Creadores de TikTok Shop",
+      "url": "https://shop.tiktok.com/streamer/home?region=mx&enter_from=seller_center",
+      "snippet": "Gana dinero y atrae espectadores con compras en LIVE. Promociona tus marcas favoritas y explora nuevas oportunidades creativas."
+    }
+  ]
+}

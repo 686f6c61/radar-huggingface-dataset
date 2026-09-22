@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "konizquants/Inkling",
+  "slug": "konizquants-inkling",
+  "author": "konizquants",
+  "url": "https://huggingface.co/konizquants/Inkling",
+  "created_at": "2026-09-21T23:31:46.000Z",
+  "updated_at": "2026-09-21T23:31:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 952377623626,
+  "parameters_human": "952.38B",
+  "storage_bytes": 1904786955611,
+  "storage_human": "1904.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ministry of Tourism & Antiquities - MoTA",
+      "url": "https://hotels.mota.gov.jo/LoginPage/Login",
+      "snippet": "اهلا بك في نظام الإحصاء السياحي User Name / اسم المستخدم Password / كلمة السر"
+    },
+    {
+      "title": "MoTA eServices :: Login Page",
+      "url": "https://onlineeservices.mota.gov.jo/",
+      "snippet": "Feb 18, 2026 · بموجب أحكام القانون المعدل لقانون السياحة لعام 2024، تم نقل منظومة ترخيص المهن السياحية إلى الجهات التنظيمية، وهي أمانة عمان ووزارة الإدارة المحلية. وبناءً على ذلك، تم …"
+    },
+    {
+      "title": "الصفحة الرئيسية - وزارة السياحة والاثار",
+      "url": "https://mota.gov.jo/",
+      "snippet": "تعرف على ملامح البرنامج الوطني أردننا جنة، من خلال تصفح التجارب الفريدة المصممة لتلبية متعة السياحة في ربوع الأردن ولكافة أفراد العائلة وبدعم يتجاوز 50٪، أختر وجهتك أو تجربتك واقرأ …"
+    },
+    {
+      "title": "Ministry of Tourism & Antiquities - hotels.mota.gov.jo",
+      "url": "https://hotels.mota.gov.jo/SearchPopup/Search?Type=%u4e0d%u5c51%u4e00%u9867%u9020%u53e5&Filter=0",
+      "snippet": "Ministry of Tourism & Antiquities Done"
+    },
+    {
+      "title": "Log in - My ASP.NET Application - hotels.mota.gov.jo",
+      "url": "https://hotels.mota.gov.jo/Account/Login",
+      "snippet": "See this article for details on setting up this ASP.NET application to support logging in via external services."
+    }
+  ]
+}

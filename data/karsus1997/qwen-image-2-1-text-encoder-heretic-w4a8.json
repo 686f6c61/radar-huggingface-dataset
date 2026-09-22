@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Karsus1997/Qwen-Image-2.1-Text-Encoder-Heretic-W4A8",
+  "slug": "karsus1997-qwen-image-2-1-text-encoder-heretic-w4a8",
+  "author": "Karsus1997",
+  "url": "https://huggingface.co/Karsus1997/Qwen-Image-2.1-Text-Encoder-Heretic-W4A8",
+  "created_at": "2026-09-21T21:28:14.000Z",
+  "updated_at": "2026-09-21T21:28:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "quantized",
+    "int8",
+    "comfyui",
+    "qwen-image",
+    "abliterated",
+    "text-encoder",
+    "base_model:pottokao/Qwen-Image-2.1-Text-Encoder-Heretic",
+    "base_model:finetune:pottokao/Qwen-Image-2.1-Text-Encoder-Heretic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6312117504,
+  "storage_human": "6.3 GB",
+  "base_model": "pottokao/Qwen-Image-2.1-Text-Encoder-Heretic",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "晶 日文怎么念？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/87150452.html",
+      "snippet": "Feb 23, 2009 · 晶 日文怎么念？许（きょ）晶（しょう）晶（しょう) 许是繁体的“言午”罗马字 kyo syou syou kyo拼音 按\"kio\"念 大概 …"
+    },
+    {
+      "title": "syou什么意思 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/187173512.html",
+      "snippet": "Sep 29, 2010 · syou什么意思是读しょう。对应赏，小，症，相，省，商，生，章，上 等等一些汉字。"
+    },
+    {
+      "title": "如何下载到卡巴斯基免费版？ - 知乎",
+      "url": "https://www.zhihu.com/question/386623091",
+      "snippet": "截至2023/3/29，在 卡巴斯基免费版 下载页面点击立即下载后会跳转到“ 免费试用版 ”的下载界面，所以官网无法直接下载到免费版的 …"
+    },
+    {
+      "title": "创作者中心 - 知乎",
+      "url": "https://www.zhihu.com/topic/20758763/hot",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "邵用日语怎么说? - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1392126561407231820.html",
+      "snippet": "“邵”日文怎么读？ 邵 日汉字；邵 平假名；しょう 罗马字；syou 邵用日语怎么说 邵 网络释义サオ湖の周辺には台湾で最少の少数民族 …"
+    }
+  ]
+}

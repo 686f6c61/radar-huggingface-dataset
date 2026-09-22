@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/eai-distill-0.5b-chat-mlx-16bit",
+  "slug": "sirsahol-eai-distill-0-5b-chat-mlx-16bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/eai-distill-0.5b-chat-mlx-16bit",
+  "created_at": "2026-09-22T02:18:33.000Z",
+  "updated_at": "2026-09-22T05:42:37.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 255,
+  "trending_score": 0,
+  "parameters": 630167424,
+  "parameters_human": "630.2M",
+  "storage_bytes": 2532124148,
+  "storage_human": "2.5 GB",
+  "base_model": "Enterprise-AI/eai-distill-0.5b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    },
+    {
+      "title": "Guida di Maps - Google Help",
+      "url": "https://support.google.com/maps/?hl=it",
+      "snippet": "Centro assistenza ufficiale di Maps in cui puoi trovare suggerimenti e tutorial sull'utilizzo del prodotto, oltre ad altre risposte alle …"
+    },
+    {
+      "title": "How to remove Google Copyright on google maps - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/6652591/how-to-remove-google-copyright-on-google-maps",
+      "snippet": "Jul 11, 2011 · I'd like to remove on google maps placed on my website the Google Adv (on the right-bottom of each map) : Map Data …"
+    },
+    {
+      "title": "How to Display Multiple Google Maps per page with API V3",
+      "url": "https://stackoverflow.com/questions/4074520/how-to-display-multiple-google-maps-per-page-with-api-v3",
+      "snippet": "Nov 2, 2010 · OP wanted two specific maps, but if you'd like to have a dynamic number of maps on one page (for instance a list of …"
+    }
+  ]
+}

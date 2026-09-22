@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Hayasuki/chucklenet-verified",
+  "slug": "hayasuki-chucklenet-verified",
+  "author": "Hayasuki",
+  "url": "https://huggingface.co/Hayasuki/chucklenet-verified",
+  "created_at": "2026-09-22T02:19:45.000Z",
+  "updated_at": "2026-09-22T02:20:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "custom",
+    "audio-classification",
+    "laughter-detection",
+    "laughter-anticipation",
+    "audio",
+    "wavlm",
+    "speech",
+    "affective-computing",
+    "humor",
+    "stand-up-comedy",
+    "custom_code",
+    "human-verified-labels",
+    "prosody",
+    "base_model:microsoft/wavlm-base",
+    "base_model:finetune:microsoft/wavlm-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 120556,
+  "parameters_human": "120556",
+  "storage_bytes": 482888,
+  "storage_human": "482888 B",
+  "base_model": "microsoft/wavlm-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "尾巴 - 知乎",
+      "url": "https://www.zhihu.com/people/weiba-wo",
+      "snippet": "Sep 7, 2026 · 小绝在进退有度这方面是懂的。 既然上一个关于克拉蕾和洛克茜的PV，台下观众看到之后欣喜若狂（划掉）台下观众纷 …"
+    },
+    {
+      "title": "长者的少女心 - 知乎",
+      "url": "https://www.zhihu.com/column/deeple",
+      "snippet": "这是一篇公关软文里难得一见的典型反面教材。 这位外卖小哥反复挂断用户电话，然而他的一条短信竟让无数网友泪奔 我觉得我们可 …"
+    },
+    {
+      "title": "Deeple translate - Archief E-mailprogramma's - PC Helpforum",
+      "url": "https://www.pc-helpforum.be/topic/71888-deeple-translate/",
+      "snippet": "Feb 23, 2019 · Hallo, Ik gebruik Gmail voor het opstellen van een e-mail. Kan ik Deeple translate gebruiken voor het vertalen van een …"
+    },
+    {
+      "title": "Grafische kaart overklokken - Hardware - PC Helpforum",
+      "url": "https://www.pc-helpforum.be/topic/5054-grafische-kaart-overklokken/",
+      "snippet": "Nov 2, 2008 · Tutorial: Grafische kaart overklokken Korte waarschuwing: Overklokken (Engels: overclocking) is het verhogen van de …"
+    },
+    {
+      "title": "Apple TV 到底是个什么东西，国内买来能干嘛？ - 知乎",
+      "url": "https://www.zhihu.com/question/19790796",
+      "snippet": "Apple TV需要一根 HDMI2.x的线 我买的是一条 HDMI 2.1 的顶配线，也是苹果官网推荐 Apple TV 搭配的线，支持 4K 动态 HDR 并且 …"
+    }
+  ]
+}

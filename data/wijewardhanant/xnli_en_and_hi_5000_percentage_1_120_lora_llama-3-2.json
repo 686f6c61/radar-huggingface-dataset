@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_LoRA_llama-3.2",
+  "slug": "wijewardhanant-xnli_en_and_hi_5000_percentage_1_120_lora_llama-3-2",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_LoRA_llama-3.2",
+  "created_at": "2026-09-21T22:44:21.000Z",
+  "updated_at": "2026-09-21T22:44:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.2-3B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.2-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 292567763,
+  "storage_human": "293 MB",
+  "base_model": "meta-llama/Llama-3.2-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mario Temmink, Wuppertal - Manager-Profil | CompanyHouse",
+      "url": "https://www.companyhouse.de/p/Mario-Temmink-bHG_9Va1qbquTICuWItDpUh1SHs",
+      "snippet": "Dec 21, 2021 · Bestellt als Geschäftsführer:Schönian, Moritz, Wuppertal; Temmink, Mario, Wuppertal, jeweils vertretungsberechtigt …"
+    },
+    {
+      "title": "MRFT Beteiligungs GmbH, Hilden - CompanyHouse",
+      "url": "https://www.companyhouse.de/MRFT-Beteiligungs-GmbH-Hilden",
+      "snippet": "Oct 31, 2025 · Temmink, Mario Ralf Friedrich, Hilden, 16.03.1961, Geschäftsführer, einzelvertretungsberechtigt mit der Befugnis im …"
+    },
+    {
+      "title": "Vorstand und Geschäftsleitung | Meinewebsite 1",
+      "url": "https://www.dit-diakonieverein.de/vorstand-und-geschaeftsleitung",
+      "snippet": "Vorstandsvorsitzender: Udo Damrich – Bankkaufmann – Kirchmeister der Evangelischen Kirchengemeinde Hilden Vorstandsmitglied: …"
+    },
+    {
+      "title": "Politik begrüßt Sozialprojekt Breitscheider Weg – Lintorfer ...",
+      "url": "https://www.lintorfer.eu/politik-begruesst-sozialprojekt-breitscheider-weg/",
+      "snippet": "Oct 24, 2023 · Die Kommunalpolitiker begrüßten das Projekt, zu dem eine Demenz-Wohngemeinschaft, eine Tagespflegeeinrichtung, …"
+    },
+    {
+      "title": "Mario Ralf Friedrich Temmink - Online-Handelsregister Auskunft",
+      "url": "https://www.online-handelsregister.de/personen/Mario-Ralf-Friedrich-Temmink-Wuppertal/33328d65dab051cbae95336082953195",
+      "snippet": "Mar 31, 2026 · Geschäftsführer: Temmink, Mario Ralf Friedrich, Hilden, *16.03.1961 einzelvertretungsberechtigt mit der Befugnis im …"
+    }
+  ]
+}

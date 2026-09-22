@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Tristepin/ue3ornith1",
+  "slug": "tristepin-ue3ornith1",
+  "author": "Tristepin",
+  "url": "https://huggingface.co/Tristepin/ue3ornith1",
+  "created_at": "2026-09-21T22:05:20.000Z",
+  "updated_at": "2026-09-21T22:07:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:finetune:ornith-ai/Ornith-1.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326293189,
+  "storage_human": "19.3 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can I Drink Electrolyte Water Every Day? A Dietitian Explains",
+      "url": "https://www.today.com/health/diet-fitness/can-i-drink-electrolyte-water-everyday-rcna210989",
+      "snippet": "Jun 16, 2025 · And while you definitely want some electrolytes in your diet, it's usually not necessary or even recommended to drink …"
+    },
+    {
+      "title": "Electrolyte Water: Benefits and Myths - Healthline",
+      "url": "https://www.healthline.com/nutrition/electrolyte-water",
+      "snippet": "Sep 22, 2018 · Electrolytes are important for many bodily functions, such as fluid balance and muscle contractions. Here are benefits …"
+    },
+    {
+      "title": "The Truth About Hydration: 7 Myths and Facts",
+      "url": "https://www.ncoa.org/article/the-truth-about-hydration-7-myths-and-facts/",
+      "snippet": "Mar 18, 2024 · Learn the truth behind 7 common myths about hydration—from how much water you should be drinking to telltale …"
+    },
+    {
+      "title": "Daily Water Intake — IOM, EFSA, and Mayo Clinic Numbers vs the 8 ...",
+      "url": "https://bodywiselab.org/posts/hydration-math-iom-efsa/",
+      "snippet": "May 9, 2026 · IOM and EFSA daily water intake recommendations, Mayo Clinic guidance, and what the data shows about the 8-glass …"
+    },
+    {
+      "title": "Do you really need electrolytes in every glass of water?",
+      "url": "https://www.foodfacts.org/articles/when-you-need-electrolyte-drinks",
+      "snippet": "Jun 24, 2026 · But for most people who are eating a healthy and balanced diet, water is sufficient for hydration and electrolytes are …"
+    }
+  ]
+}

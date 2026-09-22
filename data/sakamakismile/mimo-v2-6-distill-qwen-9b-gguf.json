@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "sakamakismile/MiMo-V2.6-Distill-Qwen-9B-GGUF",
+  "slug": "sakamakismile-mimo-v2-6-distill-qwen-9b-gguf",
+  "author": "sakamakismile",
+  "url": "https://huggingface.co/sakamakismile/MiMo-V2.6-Distill-Qwen-9B-GGUF",
+  "created_at": "2026-09-22T00:22:03.000Z",
+  "updated_at": "2026-09-22T00:41:18.000Z",
+  "license": "see-original-model",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "q4_k_m",
+    "llama.cpp",
+    "qwen3.5",
+    "beginner-friendly",
+    "初心者向け",
+    "image-text-to-text",
+    "ja",
+    "en",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 6547271328,
+  "storage_human": "6.5 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Credencial - Sesc",
+      "url": "https://www.sesc.com.br/credencial/",
+      "snippet": "Para aproveitar o universo de serviços e atividades do Sesc nas áreas de Educação, Saúde, Cultura, Lazer e Assistência, basta …"
+    },
+    {
+      "title": "Portal Sesc - Sesc",
+      "url": "https://www.sesc.com.br/",
+      "snippet": "1 day ago · Acesso o nosso site e confira o que o Sesc oferece em Educação, Saúde, Cultura, Lazer e Assistência em todo o país."
+    },
+    {
+      "title": "Carteirinha do SESC 2025: Como fazer ou renovar",
+      "url": "https://mgaconcursospublicos.com.br/carteirinha-do-sesc/",
+      "snippet": "Nov 23, 2025 · Descubra como fazer ou renovar sua carteirinha do SESC 2025 com nosso guia completo e aproveite todos os …"
+    },
+    {
+      "title": "Carteirinha - Sesc DF",
+      "url": "https://www-api.sescdf.com.br/carteirinha",
+      "snippet": "Ainda não tem uma Conta Sesc? Entidade voltada para o bem-estar social da sua clientela. Sesc. Tem tudo e muito mais."
+    },
+    {
+      "title": "Faça sua Credencial ou \"Carteirinha\" do Sesc - Sesc São Paulo : Sesc ...",
+      "url": "https://www.sescsp.org.br/carrossel_unit/faca-sua-credencial-ou-carteirinha-do-sesc/",
+      "snippet": "Cadastre sua empresa, faça o download dos editais de interesse e acompanhe as licitações em andamento ou já concluídas."
+    }
+  ]
+}

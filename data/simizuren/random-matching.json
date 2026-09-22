@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Simizuren/random-matching",
+  "slug": "simizuren-random-matching",
+  "author": "Simizuren",
+  "url": "https://huggingface.co/Simizuren/random-matching",
+  "created_at": "2026-09-22T02:43:18.000Z",
+  "updated_at": "2026-09-22T02:43:24.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sky",
+      "url": "https://skyid.sky.com/signin/email",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Sign in - Sky.com",
+      "url": "https://id.sky.com/",
+      "snippet": "© 2026 Sky UK Privacy options Terms & conditions Privacy & cookies notice Accessibility Site map Contact us Complaints Sky …"
+    },
+    {
+      "title": "Accessing your Sky Yahoo Mail | Sky Help - Sky.com",
+      "url": "https://www.sky.com/help/articles/getting-started-with-sky-yahoo-mail?msockid=08ac9ce9684e69f314918b3569426856",
+      "snippet": "Enter the full Sky email address and select Add Account / Continue. Enter your Sky iD password, tap Sign In / Next and follow any on …"
+    },
+    {
+      "title": "Sign in to your Sky Yahoo Account | Account Help | Yahoo Help",
+      "url": "https://uk.help.yahoo.com/kb/sky/account/sign-sky-yahoo-account-sln25586.html",
+      "snippet": "Sign in to your Sky Yahoo Account To sign in to your Sky Yahoo Account: Go to your Sky Yahoo Account sign-in page. Enter your …"
+    },
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://sky.overview.mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lucafi-scher27/mocov3-classification-dev",
+  "slug": "lucafi-scher27-mocov3-classification-dev",
+  "author": "lucafi-scher27",
+  "url": "https://huggingface.co/lucafi-scher27/mocov3-classification-dev",
+  "created_at": "2026-09-22T02:48:53.000Z",
+  "updated_at": "2026-09-22T02:48:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tickets for concerts, theatre, football, family days out. Official ...",
+      "url": "https://www.ticketmaster.co.uk/",
+      "snippet": "Ticketmaster: All your entertainment needs under one virtual roof with tickets for theatre, concerts, sport, family events, clubs and more."
+    },
+    {
+      "title": "Events Near Me — What's On Near You Tonight & This Weekend",
+      "url": "https://eventslist.co.uk/near-me",
+      "snippet": "📍 Find events happening near you right now. Share your location or enter a UK postcode to see concerts, theatre, comedy, festivals …"
+    },
+    {
+      "title": "Concert Events Near You Tonight",
+      "url": "https://www.primeseats.co/concerts",
+      "snippet": "11 hours ago · See who is in concert tonight, tomorrow and this week. All local and nearby city listings are updated daily."
+    },
+    {
+      "title": "London tonight | Concerts, Festivals, Tickets & Tour Dates – Songkick",
+      "url": "https://www.songkick.com/metro-areas/24426-uk-london/tonight",
+      "snippet": "2 days ago · Find live music near you. Buy tickets for every upcoming concert, festival, gig and tour date taking place in London tonight."
+    },
+    {
+      "title": "Tickets for concerts, festivals, music, gigs, clubs. Official ...",
+      "url": "https://www.ticketmaster.co.uk/section/music",
+      "snippet": "6 days ago · Ticketmaster Music: Find and buy rock, pop, jazz, metal, folk, blues, alternative, classical, country, world, latin tickets …"
+    }
+  ]
+}

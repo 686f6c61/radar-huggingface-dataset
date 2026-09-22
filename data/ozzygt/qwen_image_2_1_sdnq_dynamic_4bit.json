@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "OzzyGT/Qwen_Image_2_1_sdnq_dynamic_4bit",
+  "slug": "ozzygt-qwen_image_2_1_sdnq_dynamic_4bit",
+  "author": "OzzyGT",
+  "url": "https://huggingface.co/OzzyGT/Qwen_Image_2_1_sdnq_dynamic_4bit",
+  "created_at": "2026-09-21T23:13:39.000Z",
+  "updated_at": "2026-09-21T23:18:19.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-generation",
+    "qwen-image",
+    "sdnq",
+    "text-to-image",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "diffusers:QwenImage21Pipeline",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3812110336,
+  "parameters_human": "3.81B",
+  "storage_bytes": 12201221542,
+  "storage_human": "12.2 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beef recipes - BBC Food",
+      "url": "https://www.bbc.co.uk/food/beef",
+      "snippet": "An easy slow cooker beef stew that's ready when you are. Throw store cupboard ingredients into the slow cooker with some …"
+    },
+    {
+      "title": "40 Beef Recipes Perfect for Dinner - Taste of Home",
+      "url": "https://www.tasteofhome.com/collection/beef-recipes-for-dinner/",
+      "snippet": "Sep 18, 2024 · Test Kitchen approved, these beef recipes are easy to make and all you'll need for a quick dinner."
+    },
+    {
+      "title": "Beef recipes | Jamie Oliver",
+      "url": "https://www.jamieoliver.com/recipes/beef/",
+      "snippet": "Whether you’re looking for a beautiful roasting joint, a succulent steak or new ways with mince, check out our delicious beef recipes …"
+    },
+    {
+      "title": "Beef Recipes",
+      "url": "https://www.allrecipes.com/recipes/200/meat-and-poultry/beef/",
+      "snippet": "Beef stew, beef stroganoff, slow cooker pot roast: find the best beef recipes, including hundreds of ways to cook ground beef for …"
+    },
+    {
+      "title": "Easy beef recipes - BBC Food",
+      "url": "https://www.bbc.co.uk/food/collections/easy_beef_recipes",
+      "snippet": "Find all our favourite easy beef recipes from BBC chefs here."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ang187/hina_aoki_krea2",
+  "slug": "ang187-hina_aoki_krea2",
+  "author": "ang187",
+  "url": "https://huggingface.co/ang187/hina_aoki_krea2",
+  "created_at": "2026-09-21T23:34:48.000Z",
+  "updated_at": "2026-09-21T23:34:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1148141249,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xbox Review | PCMag",
+      "url": "https://www.pcmag.com/reviews/xbox-for-pc",
+      "snippet": "Sep 26, 2022 · Microsoft's Xbox app brings the console's best gaming experiences to your PC; no additional hardware required. …"
+    },
+    {
+      "title": "May Updates for the Xbox App on PC - XBOX Wire",
+      "url": "https://news.xbox.com/en-us/2023/05/31/may-updates-xbox-app-on-pc/",
+      "snippet": "May 31, 2023 · You can find Friend Referral invitations on the Game Pass Home screen in the Xbox App on PC, just click the “Give …"
+    },
+    {
+      "title": "Xbox July update reveals more ways to play on PCs",
+      "url": "https://blogs.windows.com/windowsexperience/2025/07/28/xbox-july-update-reveals-more-ways-to-play-on-pcs/",
+      "snippet": "Jul 28, 2025 · New features in the Xbox PC app are giving players more ways to stay connected to games and their progress in those …"
+    },
+    {
+      "title": "Some Cool New Changes to the Xbox App - developer.microsoft.com",
+      "url": "https://developer.microsoft.com/en-us/games/articles/2024/12/updates-to-the-xbox-app/",
+      "snippet": "Earlier this summer, we began working with partners to bring all PC games with Xbox features into the Xbox app. We're super excited …"
+    },
+    {
+      "title": "Xbox June Update: Copilot for Gaming Available for Testing on Mobile ...",
+      "url": "https://news.xbox.com/en-us/2025/06/23/xbox-june-update-copilot-for-gaming-aggregated-gaming-library/",
+      "snippet": "Jun 23, 2025 · Exciting Xbox updates this month! Copilot for Gaming now in early preview on mobile, new Aggregated Gaming …"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "introvoyz043/robomimic_models",
+  "slug": "introvoyz043-robomimic_models",
+  "author": "introvoyz043",
+  "url": "https://huggingface.co/introvoyz043/robomimic_models",
+  "created_at": "2026-09-21T22:44:11.000Z",
+  "updated_at": "2026-09-21T22:44:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100732806150,
+  "storage_human": "100.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Météo et climat : Koćmiery (Pologne) - Quand partir à Koćmiery ?",
+      "url": "https://planificateur.a-contresens.net/europe/pologne/voivodie-de-podlachie/kocmiery/768860.html",
+      "snippet": "Sur l’année, la température moyenne à Koćmiery est de 7°C et les précipitations sont en moyenne de 580.7mm. À titre de …"
+    },
+    {
+      "title": "Météo Koćmiery 15 jours (Pologne) - Prévisions détaillées - Météocity",
+      "url": "https://www.meteocity.com/pologne/kocmiery-v768860/meteo-15-jours",
+      "snippet": "22 hours ago · Météo sur 15 jours Koćmiery (17-132, Voïvodie de Podlachie, Pologne) par Météocity ☂️ Prévisions sur 2 semaines …"
+    },
+    {
+      "title": "Kocmiery, Poland Historical Weather Almanac",
+      "url": "https://www.worldweatheronline.com/kocmiery-weather-history/pl.aspx",
+      "snippet": "Kocmiery, Poland - Hourly past weather, almanac for Kocmiery including historical temperature, wind, rain, pressure and humidity …"
+    },
+    {
+      "title": "Yearly & Monthly weather - Koćmiery, Poland",
+      "url": "https://www.weather-atlas.com/en/poland/kocmiery-climate",
+      "snippet": "Jan 31, 2024 · Detailed climate information with charts - average monthly weather with temperature, pressure, humidity, precipitation, …"
+    },
+    {
+      "title": "Météo Koćmiery aujourd'hui (Voïvodie de Podlachie) - Météo heure …",
+      "url": "https://www.meteocity.com/pologne/kocmiery-v768860",
+      "snippet": "22 hours ago · Découvrez la météo à Koćmiery aujourd'hui avec des prévisions heure par heure sur Météocity. Restez informé en …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "filter-with-espresso/Qwen2.5-14B-Instruct-moltbook-finetune-v3-seed1",
+  "slug": "filter-with-espresso-qwen2-5-14b-instruct-moltbook-finetune-v3-seed1",
+  "author": "filter-with-espresso",
+  "url": "https://huggingface.co/filter-with-espresso/Qwen2.5-14B-Instruct-moltbook-finetune-v3-seed1",
+  "created_at": "2026-09-22T01:02:17.000Z",
+  "updated_at": "2026-09-22T01:02:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen2.5-14B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen2.5-14B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1112518014,
+  "storage_human": "1.1 GB",
+  "base_model": "unsloth/Qwen2.5-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Array : méthode filter () - JavaScript - MDN",
+      "url": "https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/filter",
+      "snippet": "La méthode filter () des instances de Array crée une copie superficielle d'une portion d'un tableau donné, filtrée pour ne contenir que …"
+    },
+    {
+      "title": "Face Filters Online Free | Funny AR Mask & Effects for Face",
+      "url": "https://www.beautyplus.com/face-filters",
+      "snippet": "Grab a funny face filter that squeezes, stretches, distorts, or layers on a 3D mask to spread the laughs across social media. Add …"
+    },
+    {
+      "title": "Array.prototype.filter () - JavaScript | MDN - MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter",
+      "snippet": "Sep 2, 2026 · The filter () method of Array instances creates a shallow copy of a portion of a given array, filtered down to just the …"
+    },
+    {
+      "title": "Filter (band) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Filter_(band)",
+      "snippet": "Filter is an American rock band formed in 1993 in Cleveland, Ohio, by singer Richard Patrick, along with guitarist and programmer …"
+    },
+    {
+      "title": "JavaScript Array filter () Method - W3Schools",
+      "url": "https://www.w3schools.com/jsref/jsref_filter.asp",
+      "snippet": "The filter () method creates a new array filled with elements that pass a test provided by a function. The filter () method does not …"
+    }
+  ]
+}

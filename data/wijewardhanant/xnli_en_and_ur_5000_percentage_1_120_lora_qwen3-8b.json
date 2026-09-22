@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_LoRA_Qwen3-8b",
+  "slug": "wijewardhanant-xnli_en_and_ur_5000_percentage_1_120_lora_qwen3-8b",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_LoRA_Qwen3-8b",
+  "created_at": "2026-09-21T23:40:05.000Z",
+  "updated_at": "2026-09-21T23:40:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-8B-Base",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 524784659,
+  "storage_human": "525 MB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "javascript - Google Maps API - Marker ToolTip - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/21861585/google-maps-api-marker-tooltip",
+      "snippet": "Feb 18, 2014 · I've got a little bit of a problem right now with my google maps marker titles not showing. This is my first map, I'm not …"
+    },
+    {
+      "title": "Gestisci gli Spostamenti di Google Maps - Computer - Guida di Maps",
+      "url": "https://support.google.com/maps/answer/6258979?hl=it&co=GENIE.Platform%3DDesktop",
+      "snippet": "Community Maps Gestisci gli Spostamenti di Google Maps Importante: stiamo aggiornando le impostazioni per i servizi di ricerca …"
+    },
+    {
+      "title": "Diffuser des annonces de proximité sur le Réseau de Recherche dans ...",
+      "url": "https://support.google.com/google-ads/answer/7040605?hl=fr",
+      "snippet": "Cet article explique comment diffuser des annonces sur Google Maps. Remarque : Les annonces de proximité sur le Réseau de …"
+    },
+    {
+      "title": "Google My Maps - API - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/40488333/google-my-maps-api",
+      "snippet": "Nov 8, 2016 · Is there any way to add Layers, Points, Directions or any data to a map in the Google My Maps, using API? I have …"
+    },
+    {
+      "title": "Weird gray area on Google Maps near Fredericton, NB, Canada",
+      "url": "https://www.reddit.com/r/whatisthisthing/comments/i6vab4/weird_gray_area_on_google_maps_near_fredericton/",
+      "snippet": "Aug 10, 2020 · I was looking around google maps in New Brunswick and found this strangely empty region devoid of labels etc. Can’t …"
+    }
+  ]
+}

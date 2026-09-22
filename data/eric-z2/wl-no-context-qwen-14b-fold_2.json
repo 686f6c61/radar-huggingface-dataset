@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "eric-z2/WL-no-context-qwen-14b-fold_2",
+  "slug": "eric-z2-wl-no-context-qwen-14b-fold_2",
+  "author": "eric-z2",
+  "url": "https://huggingface.co/eric-z2/WL-no-context-qwen-14b-fold_2",
+  "created_at": "2026-09-21T20:33:20.000Z",
+  "updated_at": "2026-09-21T20:37:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84011288,
+  "storage_human": "84 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    },
+    {
+      "title": "Google Maps API v3: How to remove an Event Listener?",
+      "url": "https://stackoverflow.com/questions/1544151/google-maps-api-v3-how-to-remove-an-event-listener",
+      "snippet": "Oct 9, 2009 · Usually you can find answers to such questions in Google Maps API documentation. As Andrew said, addListener …"
+    },
+    {
+      "title": "मानचित्र मदद - Google Help",
+      "url": "https://support.google.com/maps/?hl=hi",
+      "snippet": "Google Maps में, एआई की मदद से काम करने वाली सुविधाएं आपके डेटा का इस्तेमाल कैसे करती हैं Contribute to Google Maps with …"
+    },
+    {
+      "title": "How to remove Google Copyright on google maps - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/6652591/how-to-remove-google-copyright-on-google-maps",
+      "snippet": "Jul 11, 2011 · I'd like to remove on google maps placed on my website the Google Adv (on the right-bottom of each map) : Map Data …"
+    }
+  ]
+}

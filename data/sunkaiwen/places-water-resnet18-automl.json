@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sunkaiwen/places-water-resnet18-automl",
+  "slug": "sunkaiwen-places-water-resnet18-automl",
+  "author": "sunkaiwen",
+  "url": "https://huggingface.co/sunkaiwen/places-water-resnet18-automl",
+  "created_at": "2026-09-22T02:23:19.000Z",
+  "updated_at": "2026-09-22T02:23:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "autogluon",
+  "languages": [],
+  "tags": [
+    "autogluon",
+    "image-classification",
+    "resnet",
+    "fine-tuning",
+    "transfer-learning",
+    "dataset:ssg1/places-water-binary",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 86576533,
+  "storage_human": "87 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "صحراء أتاكاما: أجف صحراء في العالم ودوار المرتفعات وارد | الرحالة",
+      "url": "https://al-rahhala.com/%d8%b5%d8%ad%d8%b1%d8%a7%d8%a1-%d8%a7%d9%84%d8%a3%d8%aa%d9%83%d8%a7%d9%85%d8%a7/",
+      "snippet": "اكتشف سحر صحراء أتاكاما في تشيلي، واحدة من أكثر الأماكن جفافًا في العالم. استمتع بمراقبة النجوم، التزلج على الرمال، وزيارة المواقع الفريدة."
+    },
+    {
+      "title": "دليل السفر إلى تشيلي 2026: أتاكاما وباتاغونيا وجزيرة الفصح",
+      "url": "https://www.atlas-guide.com/ar/south-america/chile/",
+      "snippet": "شهد القرن التاسع عشر تحول تشيلي إلى القوة العسكرية المهيمنة على ساحل المحيط الهادئ في أمريكا الجنوبية — حرب المحيط الهادئ (1879-1884) ضد بيرو وبوليفيا أسفرت عن ضم تشيلي لأراضي …"
+    },
+    {
+      "title": "كيفية التخطيط لرحلة عبر صحراء أتاكاما في تشيلي",
+      "url": "https://seekholidays.com/ar/-%D9%85%D8%AF%D9%88%D9%86%D8%A9/%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D8%AE%D8%B7%D9%8A%D8%B7-%D9%84%D8%B1%D8%AD%D9%84%D8%A9-%D8%B9%D8%A8%D8%B1-%D8%B5%D8%AD%D8%B1%D8%A7%D8%A1-%D8%A3%D8%AA%D8%A7%D9%83%D8%A7%D9%85%D8%A7-%D9%81%D9%8A-%D8%AA%D8%B4%D9%8A%D9%84%D9%8A/",
+      "snippet": "إنّ الانطلاق في رحلة عبر صحراء أتاكاما في تشيلي مغامرة لا مثيل لها. تُعرف أتاكاما بأنها أكثر الأماكن جفافًا على وجه الأرض، وتُقدّم مناظر طبيعية خلابة، وتاريخًا ثقافيًا عريقًا، وتكوينات جيولوجية …"
+    },
+    {
+      "title": "٥ أيام في صحراء أتاكاما: المناظر الطبيعية الخارقة للعادة في تشيلي",
+      "url": "https://www.tourants.com/ar/articles/5-days-atacama-desert-chile-otherworldly-landscapes",
+      "snippet": "Jun 14, 2026 · نظرة عامة صحراء أتاكاما في شمال تشيلي هي الأكثر جفافاً على وجه الأرض – وواحدة من الأكثر إثارةً للدهشة."
+    },
+    {
+      "title": "معلومات عملية عن صحراء أتاكاما تشمل وسائل النقل والإقامة والجولات ...",
+      "url": "https://seekholidays.com/ar/-%D9%85%D8%AF%D9%88%D9%86%D8%A9/%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA-%D8%B9%D9%85%D9%84%D9%8A%D8%A9-%D8%B9%D9%86-%D8%B5%D8%AD%D8%B1%D8%A7%D8%A1-%D8%A3%D8%AA%D8%A7%D9%83%D8%A7%D9%85%D8%A7-%D8%AA%D8%B4%D9%85%D9%84-%D9%88%D8%B3%D8%A7%D8%A6%D9%84-%D8%A7%D9%84%D9%86%D9%82%D9%84-%D9%88%D8%A7%D9%84%D8%A5%D9%82%D8%A7%D9%85%D8%A9-%D9%88%D8%A7%D9%84%D8%AC%D9%88%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%AD%D9%8A%D8%A9/",
+      "snippet": "تقع صحراء أتاكاما في شمال تشيلي ، وتُعدّ من أكثر المناظر الطبيعية جفافًا وغموضًا على وجه الأرض."
+    }
+  ]
+}

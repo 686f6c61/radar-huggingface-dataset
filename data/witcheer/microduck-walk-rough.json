@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "witcheer/microduck-walk-rough",
+  "slug": "witcheer-microduck-walk-rough",
+  "author": "witcheer",
+  "url": "https://huggingface.co/witcheer/microduck-walk-rough",
+  "created_at": "2026-09-21T20:33:12.000Z",
+  "updated_at": "2026-09-21T20:33:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793807,
+  "storage_human": "793807 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Finance - Stock Market Live, Quotes, Business & Finance News",
+      "url": "https://finance.yahoo.com/",
+      "snippet": "At Yahoo Finance, you get free stock quotes, up-to-date news, portfolio management resources, international market data, social …"
+    },
+    {
+      "title": "Top Stock Gains: US stocks posting the highest gains today - Yahoo …",
+      "url": "https://finance.yahoo.com/markets/stocks/gainers/",
+      "snippet": "Yahoo Finance's list of top gaining stocks, includes share price changes, trading volume, intraday highs and lows, and day charts for …"
+    },
+    {
+      "title": "Screeners - Yahoo Finance",
+      "url": "https://finance.yahoo.com/research-hub/screener/",
+      "snippet": "Yahoo Finance Screeners lets you choose from hundreds of data filters to discover Stocks, Mutual Funds, ETFs and more."
+    },
+    {
+      "title": "Dow Jones Industrial Average (^DJI) - Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5EDJI/",
+      "snippet": "Find the latest information on Dow Jones Industrial Average (^DJI) including data, charts, related news and more from Yahoo Finance"
+    },
+    {
+      "title": "Yahoo Finanzas - Bolsa de valores en directo, cotizaciones, noticias ...",
+      "url": "https://es.finance.yahoo.com/",
+      "snippet": "En Yahoo Finanzas encontrarás gratis cotizaciones de acciones, las últimas noticias, recursos de gestión de carteras, datos del …"
+    }
+  ]
+}

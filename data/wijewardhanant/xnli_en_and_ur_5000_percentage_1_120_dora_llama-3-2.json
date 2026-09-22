@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_DoRA_llama-3.2",
+  "slug": "wijewardhanant-xnli_en_and_ur_5000_percentage_1_120_dora_llama-3-2",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_DoRA_llama-3.2",
+  "created_at": "2026-09-21T22:45:23.000Z",
+  "updated_at": "2026-09-21T22:45:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.2-3B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.2-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 408227547,
+  "storage_human": "408 MB",
+  "base_model": "meta-llama/Llama-3.2-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "List of originally planned Wrestlemania matches. - Reddit",
+      "url": "https://www.reddit.com/r/SquaredCircle/comments/59nm5l/list_of_originally_planned_wrestlemania_matches/",
+      "snippet": "List of originally planned Wrestlemania matches. Before we begin, the sources behind this was 411Mania.com and …"
+    },
+    {
+      "title": "Can someone fill me in on this Don Callis stuff that Brian ... - Reddit",
+      "url": "https://www.reddit.com/r/JimCornette/comments/l3qo38/can_someone_fill_me_in_on_this_don_callis_stuff/",
+      "snippet": "The laws that are in place are there for good reason, in terms of protecting someone in a position similar to Brian (integrity of the …"
+    },
+    {
+      "title": "What are your opinions of 411mania.com? : r/SquaredCircle",
+      "url": "https://www.reddit.com/r/SquaredCircle/comments/7dg71j/what_are_your_opinions_of_411maniacom/",
+      "snippet": "What are your opinions of 411mania.com? I left Cageside Seats last month and was looking for another website to join because I …"
+    },
+    {
+      "title": "411mania is trash : r/Wrasslin - Reddit",
+      "url": "https://www.reddit.com/r/Wrasslin/comments/185wpqj/411mania_is_trash/",
+      "snippet": "Nov 28, 2023 · Welcome to /r/Wrasslin! The dumping grounds for all wrestling, funny or insane. MembersOnline • …"
+    },
+    {
+      "title": "Does anyone here know when 411Mania was founded? - Reddit",
+      "url": "https://www.reddit.com/r/SquaredCircle/comments/9dt7qm/does_anyone_here_know_when_411mania_was_founded/",
+      "snippet": "I believe they were 411wrestling, then they became 411mania at some point when they diversified into other pop culture? I do know …"
+    }
+  ]
+}

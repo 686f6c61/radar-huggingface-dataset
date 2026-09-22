@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Lucyfer1718/tinyjev-v1",
+  "slug": "lucyfer1718-tinyjev-v1",
+  "author": "Lucyfer1718",
+  "url": "https://huggingface.co/Lucyfer1718/tinyjev-v1",
+  "created_at": "2026-09-22T02:17:02.000Z",
+  "updated_at": "2026-09-22T02:19:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "license:mit",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 257221529,
+  "storage_human": "257 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Install or Uninstall Microsoft WordPad in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/140422-install-uninstall-microsoft-wordpad-windows-10-a.html",
+      "snippet": "May 16, 2020 · Hello Andrew, WordPad is installed by default in Windows 10, so you would only need to install it if you or something …"
+    },
+    {
+      "title": "Open and Use Character Map in Windows | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/125184-open-use-character-map-windows.html",
+      "snippet": "Mar 13, 2020 · Or, depending on the program you are using (such as WordPad), you can even copy characters by dragging them …"
+    },
+    {
+      "title": "Wordpad [Résolu] - Forum Bureautique - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36085464-wordpad",
+      "snippet": "Jun 21, 2019 · Meilleure réponse: bonjour Je n'ai jamais essayé de faire ça sous wordpad mais qu'est ce qui aurait changé dans …"
+    },
+    {
+      "title": "WordPad ? [Résolu] - Forum Word - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-1609454-wordpad",
+      "snippet": "Bonjour En cliquant droit sur le bureau, je souhaiterais voir apparaître l'icône du WordPad ! pour accéder ainsi rapidement à une …"
+    },
+    {
+      "title": "Wordpad il manque des options - Word - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37247681-wordpad-il-manque-des-options",
+      "snippet": "Word Sujet PrécédentSujet Suivant Wordpad il manque des options Poussepousse2445 Messages postés4StatutMembre- Raymond …"
+    }
+  ]
+}

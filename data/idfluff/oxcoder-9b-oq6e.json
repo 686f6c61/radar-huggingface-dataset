@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "IDFluff/oxcoder-9b-oq6e",
+  "slug": "idfluff-oxcoder-9b-oq6e",
+  "author": "IDFluff",
+  "url": "https://huggingface.co/IDFluff/oxcoder-9b-oq6e",
+  "created_at": "2026-09-21T22:34:53.000Z",
+  "updated_at": "2026-09-21T22:55:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "omlx",
+    "base_model:OrionLLM/OxCoder-9B",
+    "base_model:quantized:OrionLLM/OxCoder-9B",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 8281597692,
+  "storage_human": "8.3 GB",
+  "base_model": "OrionLLM/OxCoder-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flexible Work Setup For Pwd Philippines Jobs in Philippines - Sep …",
+      "url": "https://ph.jobstreet.com/flexible-work-setup-for-pwd-philippines-jobs",
+      "snippet": "Find your ideal job at Jobstreet with 97 Flexible Work Setup For Pwd Philippines jobs found in Philippines. View all our Flexible Work …"
+    },
+    {
+      "title": "Flexible Work Arrangements in the Philippines: The Ultimate 2026 HR ...",
+      "url": "https://sprout.ph/articles/flexible-work-arrangements-in-the-philippines-guide/",
+      "snippet": "Dec 30, 2025 · That said, for HR leaders and business owners in the Philippines, knowing the different types of flexible work, the …"
+    },
+    {
+      "title": "PWD Employment Philippines - Jobs for Persons with Disabilities",
+      "url": "https://pwdemploymentphilippines.com/",
+      "snippet": "This is a nonprofit job site that hopes to connect Persons with Disabilities with companies to create awareness of the PWDs’ need to …"
+    },
+    {
+      "title": "Company Hiring Of Persons With Disabilities (Pwds In The Philippines ...",
+      "url": "https://ph.jobstreet.com/company-hiring-of-persons-with-disabilities-(pwds-in-the-philippines)-jobs",
+      "snippet": "View all our Company Hiring Of Persons With Disabilities (Pwds In The Philippines) vacancies now with new jobs added daily!"
+    },
+    {
+      "title": "MC No. , s. 2022 06 MEMORANDUM CIRCULAR TO : ALL HEADS OF ...",
+      "url": "https://www.csc.gov.ph/downloads/category/311-mc-no-06-s-2022-policies-on-flexible-work-arrangements-in-the-government?download=2403:mc06s2022",
+      "snippet": "E. Flexitime - refers to a work arrangement where the agency is allowed to adopt flexible time for its government officials and …"
+    }
+  ]
+}

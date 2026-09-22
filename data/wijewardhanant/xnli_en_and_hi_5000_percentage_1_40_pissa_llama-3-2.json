@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_PiSSA_llama-3.2",
+  "slug": "wijewardhanant-xnli_en_and_hi_5000_percentage_1_40_pissa_llama-3-2",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_PiSSA_llama-3.2",
+  "created_at": "2026-09-21T23:14:38.000Z",
+  "updated_at": "2026-09-21T23:14:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.2-3B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.2-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 292567763,
+  "storage_human": "293 MB",
+  "base_model": "meta-llama/Llama-3.2-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QR Code Generator | Create Your Free QR Codes",
+      "url": "https://www.qr-code-generator.com/",
+      "snippet": "QR Code Generator for URL, vCard, and more. Add logo, colors, frames, and download in high print quality. Get your free QR Codes …"
+    },
+    {
+      "title": "Crea códigos QR gratis con nuestro generador",
+      "url": "https://es.qr-code-generator.com/",
+      "snippet": "Create, customize, and track a QR Code in seconds—for free. Branded codes with scan tracking and unlimited redirects. No reprinting."
+    },
+    {
+      "title": "QR Code Generator | Créez vos propres codes QR gratuitement",
+      "url": "https://fr.qr-code-generator.com/",
+      "snippet": "Create, customize, and track a QR Code in seconds—for free. Branded codes with scan tracking and unlimited redirects. No reprinting."
+    },
+    {
+      "title": "QR Code Generator | สร้างรหัส QR ของคุณได้ฟรี",
+      "url": "https://th.qr-code-generator.com/",
+      "snippet": "QR Code Generator สำหรับ URL, vCard และอีกมากมาย เพิ่มโลโก้ สี กรอบ และดาวน์โหลดในรูปแบบการพิมพ์คุณภาพสูง สร้างรหัส QR …"
+    },
+    {
+      "title": "Gerar QR Codes Gratuitamente | QR Code Generator",
+      "url": "https://br.qr-code-generator.com/",
+      "snippet": "Create, customize, and track a QR Code in seconds—for free. Branded codes with scan tracking and unlimited redirects. No reprinting."
+    }
+  ]
+}

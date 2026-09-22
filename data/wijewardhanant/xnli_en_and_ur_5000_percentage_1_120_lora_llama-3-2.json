@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_LoRA_llama-3.2",
+  "slug": "wijewardhanant-xnli_en_and_ur_5000_percentage_1_120_lora_llama-3-2",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_LoRA_llama-3.2",
+  "created_at": "2026-09-21T22:39:33.000Z",
+  "updated_at": "2026-09-21T22:39:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.2-3B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.2-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 292567763,
+  "storage_human": "293 MB",
+  "base_model": "meta-llama/Llama-3.2-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Quiz Widget - BookWidgets",
+      "url": "https://www.bookwidgets.com/widget-library/quiz",
+      "snippet": "Assess students’ understanding of language grammar with an interactive Quiz. Utilize a combination of question types to identify …"
+    },
+    {
+      "title": "Bibliothèque de widgets BookWidgets",
+      "url": "https://www.bookwidgets.com/fr/widget-library",
+      "snippet": "Nos widgets Quiz, Quiz vidéo, Feuille de travail et Feuille de travail fractionnée ont un pouvoir supplémentaire. Créez des devoirs …"
+    },
+    {
+      "title": "Free Quiz Widget Generator & Embed Code Playground | PlayQuizNow",
+      "url": "https://www.playquiznow.com/fr/playground",
+      "snippet": "Create embeddable quiz widgets for your website in seconds. Customize themes, preview in real-time, and copy the embed code. …"
+    },
+    {
+      "title": "Free Quiz Widgets – Capture Leads with Interactive Quizzes …",
+      "url": "https://embeddable.co/free-quiz-widgets",
+      "snippet": "Create personality quizzes, trivia, and lead generation quizzes in minutes with AI. Fully editable, no coding required. Start free at …"
+    },
+    {
+      "title": "Quiz — Widget basket gratuit | BeBasket",
+      "url": "https://www.bebasket.fr/widget/quiz",
+      "snippet": "Widgets Quiz Quiz — Générateur de widgets Sondage, débat ou classement à faire voter par vos lecteurs. Posez une question à vos …"
+    }
+  ]
+}

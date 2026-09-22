@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "eric-z2/WL-context-qwen-14b-fold_3",
+  "slug": "eric-z2-wl-context-qwen-14b-fold_3",
+  "author": "eric-z2",
+  "url": "https://huggingface.co/eric-z2/WL-context-qwen-14b-fold_3",
+  "created_at": "2026-09-21T20:38:14.000Z",
+  "updated_at": "2026-09-21T20:38:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84011288,
+  "storage_human": "84 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ümraniye Belediyesi | Ümraniye Municipality",
+      "url": "https://umraniye.bel.tr/",
+      "snippet": "Ümraniye’den Gündem Haber ve duyuruları takip edin, etkinliklerden haberdar olun."
+    },
+    {
+      "title": "E-Belediye | Ümraniye Belediyesi",
+      "url": "https://umraniye.bel.tr/e-belediye/",
+      "snippet": "Ümraniye Municipality"
+    },
+    {
+      "title": "Ana Sayfa - Ümraniye Belediyesi",
+      "url": "https://ebelediye.umraniye.bel.tr/",
+      "snippet": "Sizlere daha iyi hizmet sunulabilmesi için Cookieler kullanılmaktadır.Cookie tercihlerinizi değiştirmek ve Cookieler hakkında detaylı …"
+    },
+    {
+      "title": "E-İMAR - Ümraniye",
+      "url": "https://webgis.umraniye.bel.tr/imardurumu/imar.aspx?parselid=2295",
+      "snippet": "Sep 6, 2026 · ÜMRANİYE IHLAMURKUYU - A.DUDULLU - Y.DUDULLU VE ESENŞEHİR MAHALLERİNİN HAVZA İÇİNDE KALAN …"
+    },
+    {
+      "title": "E-İMAR - webgis.umraniye.bel.tr",
+      "url": "https://webgis.umraniye.bel.tr/imardurumu/imar.aspx?parselid=46932",
+      "snippet": "1 day ago · Elektronik İmar durumu sorgulama, E-İmar sorgulama Bu Belge ÜMRANİYE Belediyesi Resmi Web Sitesinden …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_VeRA_llama-3.2",
+  "slug": "wijewardhanant-xnli_en_and_sw_5000_percentage_1_40_vera_llama-3-2",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_VeRA_llama-3.2",
+  "created_at": "2026-09-21T22:49:07.000Z",
+  "updated_at": "2026-09-21T22:49:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.2-3B",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.2-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 158404899,
+  "storage_human": "158 MB",
+  "base_model": "meta-llama/Llama-3.2-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VW CZCA Motor – Technische Daten, Probleme & Reparaturtipps",
+      "url": "https://www.deinmotorschaden.de/vw-czca-motor/",
+      "snippet": "VW CZCA Motor: Übersicht zu technischen Daten, häufigen Problemen und effektiven Reparaturmöglichkeiten für das 2.0 TDI …"
+    },
+    {
+      "title": "CZVA Motor ab 8490 € Austauschmotor & Instandsetzung — …",
+      "url": "https://www.motorzentrale.de/motor/czva/",
+      "snippet": "Der CZVA Motor mit 218 PS wurde von Audi von Juli 2014 bis September 2018 in 4 Modellen verbaut. Die Preise für …"
+    },
+    {
+      "title": "Volkswagen EA211 1.4 TSI CZCA: Probleme und Haltbarkeit",
+      "url": "https://motorimpulse.de/volkswagen-ea211-1-4-tsi-czca-probleme-und-haltbarkeit/",
+      "snippet": "Sep 17, 2025 · Die regelmäßige Wartung ist entscheidend für die Lebensdauer des EA211 1.4 TSI CZCA Motors. Zu den wichtigsten …"
+    },
+    {
+      "title": "CZCA Motor ab 700 € Austauschmotor & Instandsetzung — Angebote …",
+      "url": "https://www.motorzentrale.de/motor/czca/",
+      "snippet": "Der CZCA Motor mit 125 PS wurde von Audi, SEAT, Skoda und VW von September 2013 bis März 2022 in 26 Modellen verbaut. Die …"
+    },
+    {
+      "title": "Czva Motor kleinanzeigen.de",
+      "url": "https://www.kleinanzeigen.de/s-czva-motor/k0?msockid=3dade467d1da64490addf3bcd007654c",
+      "snippet": "Jul 7, 2026 · Motor Diesel - Audi A6 Allroad (2018) CZVA 059100042H Diesen Artikel finden Sie auch auf unserer Homepage ..."
+    }
+  ]
+}

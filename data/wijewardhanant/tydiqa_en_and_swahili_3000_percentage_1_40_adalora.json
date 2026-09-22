@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_40_AdaLoRA",
+  "slug": "wijewardhanant-tydiqa_en_and_swahili_3000_percentage_1_40_adalora",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_40_AdaLoRA",
+  "created_at": "2026-09-22T02:50:52.000Z",
+  "updated_at": "2026-09-22T02:51:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 756334275,
+  "storage_human": "756 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "青海专业技术人员学习网",
+      "url": "http://www.qhzjxxw.com/",
+      "snippet": "Dec 20, 2024 · 2026年全省专业技术人员继续教育专业... 2026年全省水利行业专业技术人员继续... 关于2025年水利行业专业技术人员 …"
+    },
+    {
+      "title": "平台维护通知— 通知公告— 青海专业技术人员学习网",
+      "url": "http://h5.qhzjxxw.com/news/0/94b6bc42-380d-4a64-b0a7-10ebf65c1c64.html",
+      "snippet": "平台将在07月17日23:00-07月20日08:00 进行维护升级，请尽量避免在此时间段访问平台，以免出现异常情况。 给您带来不便请谅解 …"
+    },
+    {
+      "title": "关于2019年专业技术人员继续教育的补充通知！！— 通知公告 ...",
+      "url": "http://h5.qhzjxxw.com/news/0/ce6e0664-0c4a-448d-a7ad-84f5129f7d24.html",
+      "snippet": "Nov 22, 2019 · 关于2019年专业技术人员继续教育的补充通知！ — 通知公告— 青海专业技术人员学习网 首页 > 通知公告 > 正文 关 …"
+    },
+    {
+      "title": "专业技术人员继续教育规定— 政策法规— 青海专业技术人员 ...",
+      "url": "https://www.qhzjxxw.com/news/0/0bd0c876-2b5f-49a7-9ee9-d0f1e42a3332.html",
+      "snippet": "《专业技术人员继续教育规定》已经2015年8月3日人力资源社会保障部第70次部务会讨论通过，现予公布，自2015年10月1日起施行。"
+    },
+    {
+      "title": "关于做好全省水利行业专业技术人员继续教育专业科目线上 ...",
+      "url": "http://h5.qhzjxxw.com/news/0/659f2a6b-c726-4635-aa90-d9d3000cfc5e.html",
+      "snippet": "Jul 5, 2021 · 通知公告 关于做好全省水利行业专业技术人员继续教育专业科目线上学习的通知 2021年07月05日"
+    }
+  ]
+}

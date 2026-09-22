@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "adnanstudios/mws-intelligence",
+  "slug": "adnanstudios-mws-intelligence",
+  "author": "adnanstudios",
+  "url": "https://huggingface.co/adnanstudios/mws-intelligence",
+  "created_at": "2026-09-21T20:33:02.000Z",
+  "updated_at": "2026-09-21T21:03:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma3",
+    "text-generation",
+    "conversational",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4551515648,
+  "parameters_human": "4.55B",
+  "storage_bytes": 2594260818,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-22T02:54:14.069Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "上海迪士尼攻略（6次吐血总结）",
+      "url": "https://www.zhihu.com/tardis/zm/art/256381785",
+      "snippet": "Jul 16, 2023 · 这篇文章总结了6次上海迪士尼游玩的攻略，提供了详细的游玩建议和实用信息。"
+    },
+    {
+      "title": "Disney + - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/TV-par-ADSL-et-Fibre/Disney/td-p/2647757",
+      "snippet": "Dec 3, 2021 · comment activer mon abonnement Disney + via le service client ?"
+    },
+    {
+      "title": "Disney+ - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/TV-par-ADSL-et-Fibre/Disney/td-p/2861147",
+      "snippet": "Nov 19, 2022 · Bonjour, j'ai souscrit à Disney+ hier et impossible de créer mon compte , le lien d'activation n'a pas fonctionné, j'ai eu …"
+    },
+    {
+      "title": "如何在电脑上安装免费的access？ - 知乎",
+      "url": "https://www.zhihu.com/question/329637605",
+      "snippet": "access和Word，ppt一样都是office的一部分，我们要想安装access就必须先下载完整的office2010.然后进行安装。"
+    },
+    {
+      "title": "Disney+ - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/TV-par-ADSL-et-Fibre/Disney/td-p/2320405",
+      "snippet": "Sep 26, 2020 · Bonsoir Qui aurai des nouvelles de Disney+ ( SVOD) avec Décodeur TV4? Cordialement"
+    }
+  ]
+}

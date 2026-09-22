@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "toddkingsing/crossmeet-kokoro-assets",
+  "slug": "toddkingsing-crossmeet-kokoro-assets",
+  "author": "toddkingsing",
+  "url": "https://huggingface.co/toddkingsing/crossmeet-kokoro-assets",
+  "created_at": "2026-09-22T01:14:25.000Z",
+  "updated_at": "2026-09-22T01:24:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "kokoro",
+    "text-to-speech",
+    "en",
+    "zh",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 690503307,
+  "storage_human": "691 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cuántas veces a la semana realizar Crossfit: la ciencia ... - Vitónica",
+      "url": "https://www.vitonica.com/entrenamiento/cuantas-veces-a-semana-realizar-crossfit-ciencia-nos-acerca-respuesta",
+      "snippet": "Mar 7, 2024 · Las investigaciones muestran que realizando CrossFit cinco días de la semana se pueden obtener grandes beneficios …"
+    },
+    {
+      "title": "Guía: ¿Cuántas Veces Hacer CrossFit? | Salud & Movimiento",
+      "url": "https://saludymovimiento.com.ar/cuantos-dias-entrenar-crossfit-a-la-semana/",
+      "snippet": "Sep 7, 2024 · Descubre la frecuencia ideal para entrenar CrossFit según tu nivel y objetivos. Aprende por qué la recuperación es …"
+    },
+    {
+      "title": "¿Cuántas veces a la semana hay que hacer CrossFit?",
+      "url": "https://materialparacrossfit.com/cuantas-veces-a-la-semana-hay-que-hacer-crossfit/",
+      "snippet": "Cuántas veces a la semana hacer CrossFit: cuántas sesiones convienen según tu nivel y por qué el descanso forma parte del …"
+    },
+    {
+      "title": "Cuántas veces a la semana hay que hacer CrossFit",
+      "url": "https://www.crossfitmap.com/cuantas-veces-a-la-semana-hay-que-hacer-crossfit/",
+      "snippet": "En general, se recomienda hacer CrossFit de tres a cinco veces por semana. Esto permite a tu cuerpo adaptarse al estrés del …"
+    },
+    {
+      "title": "Cuántas Veces a la Semana Deberías Hacer CrossFit: La Ciencia Nos ...",
+      "url": "https://fitnesslifecomunidad.com/entrenamiento/cuantas-veces-a-la-semana-deberias-hacer-crossfit-la-ciencia-nos-acerca-una-respuesta/",
+      "snippet": "Mar 9, 2024 · En este artículo, exploraremos lo que dice la ciencia sobre la frecuencia óptima de entrenamiento en CrossFit y cómo …"
+    }
+  ]
+}

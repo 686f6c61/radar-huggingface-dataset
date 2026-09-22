@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tonyzhu91/multitask-tutorial",
+  "slug": "tonyzhu91-multitask-tutorial",
+  "author": "tonyzhu91",
+  "url": "https://huggingface.co/tonyzhu91/multitask-tutorial",
+  "created_at": "2026-09-22T02:44:40.000Z",
+  "updated_at": "2026-09-22T02:44:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le référentiel budgétaire et comptable M57 | Collectivités Locales",
+      "url": "https://www.collectivites-locales.gouv.fr/gerer-les-finances-publiques-locales/budget/instructions-budgetaires-et-comptables/le-referentiel-m57/le-referentiel-budgetaire-et-comptable-m57",
+      "snippet": "Guide des opérations d'inventaire. Relative au traitement budgétaire et comptable des opérations relatives aux fonds européens pour …"
+    },
+    {
+      "title": "Le référentiel M57 : Fiches pratiques et foire aux questions",
+      "url": "https://www.collectivites-locales.gouv.fr/FAQ/le-referentiel-m57-fiches-pratiques-et-foire-aux-questions",
+      "snippet": "Nov 28, 2025 · À l’occasion du passage au référentiel M57, une commune a modifié le régime des provisions/dépréciations, de …"
+    },
+    {
+      "title": "Constitutions et modifications des provisions - M57 - Budget ...",
+      "url": "https://www.essonne.gouv.fr/Actions-de-l-Etat/Collectivites-locales/Finances-publiques/Budget-Fiscalite/M57/Constitutions-et-modifications-des-provisions",
+      "snippet": "Sep 16, 2024 · Constitutions et modifications des provisions Mis à jour le 16/09/2024 Constitutions et modifications des provisions"
+    },
+    {
+      "title": "CHECK-LIST - cdg16.fr",
+      "url": "https://www.cdg16.fr/wp-content/uploads/2025/05/FI_provisions.pdf",
+      "snippet": "En M57, le régime de droit commun des provisions est semi-budgétaire. Sauf délibération spécifique, c’est toujours le régime des …"
+    },
+    {
+      "title": "Nouvelle version du guide des imputations budgétaires et comptables …",
+      "url": "https://www.amf.asso.fr/documents-nouvelle-version-du-guide-imputations-budgetaires-comptables-en-nomenclature-m57/42800",
+      "snippet": "Oct 7, 2025 · Le Guide relatif aux imputations budgétaires et comptables M57 est un outil d’aide à l’imputation, conçu principalement …"
+    }
+  ]
+}

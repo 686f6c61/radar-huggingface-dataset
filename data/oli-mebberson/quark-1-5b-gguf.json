@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "oli-mebberson/quark-1.5b-GGUF",
+  "slug": "oli-mebberson-quark-1-5b-gguf",
+  "author": "oli-mebberson",
+  "url": "https://huggingface.co/oli-mebberson/quark-1.5b-GGUF",
+  "created_at": "2026-09-22T02:17:30.000Z",
+  "updated_at": "2026-09-22T02:23:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "from-scratch",
+    "text-generation",
+    "en",
+    "base_model:lattice-research/lattice-quark-1.5b",
+    "base_model:quantized:lattice-research/lattice-quark-1.5b",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7776609486,
+  "storage_human": "7.8 GB",
+  "base_model": "lattice-research/lattice-quark-1.5b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Une histoire et Oli, histoires pour enfants avant d’aller dormir",
+      "url": "https://www.radiofrance.fr/franceinter/podcasts/une-histoire-et-oli",
+      "snippet": "Vous cherchez des histoires du soir pour vos enfants ? Découvrez les nouveaux épisodes d'Une histoire et Oli, la série audio France …"
+    },
+    {
+      "title": "OLI",
+      "url": "https://www.oli-world.com/en/",
+      "snippet": "OLI will once again be present at the Motorcycle World Championship (MotoGP) for the eighth consecutive year, as the official …"
+    },
+    {
+      "title": "Bigflo et Oli — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Bigflo_et_Oli",
+      "snippet": "Les partitions musicales sont des créations originales. Oli joue de la trompette et Bigflo de la batterie ainsi que du piano. Ils utilisent …"
+    },
+    {
+      "title": "OLI | The worldwide leader in vibration technology |",
+      "url": "https://www.olivibra.com/",
+      "snippet": "OLI’s principle focus is on electric vibrating motors, which are designed and manufactured by the “Industrial Vibrators” division. The …"
+    },
+    {
+      "title": "Oli - YouTube",
+      "url": "https://www.youtube.com/channel/UCqZSdUJqd2T0oqr6BEA3ONw",
+      "snippet": "💥Scandal revealed: Car dealership forced to buy junk to avoid fines! Oli investiert and Oli 45K views • 10 months ago 8:05"
+    }
+  ]
+}

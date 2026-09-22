@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vanishingradient/safety-drift-qwen2.5-7b-roleplay_ultrachat",
+  "slug": "vanishingradient-safety-drift-qwen2-5-7b-roleplay_ultrachat",
+  "author": "vanishingradient",
+  "url": "https://huggingface.co/vanishingradient/safety-drift-qwen2.5-7b-roleplay_ultrachat",
+  "created_at": "2026-09-21T23:47:35.000Z",
+  "updated_at": "2026-09-21T23:47:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31636918,
+  "storage_human": "32 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Odibets Help Center",
+      "url": "https://help.odibets.com/",
+      "snippet": "Get help from these articles 2 articles WG"
+    },
+    {
+      "title": "Football Stats, AI Predictions & Value Bets | OddAlerts",
+      "url": "https://oddalerts.com/",
+      "snippet": "See today's best value bets, AI predictions, strongest form streaks, daily double and televised fixtures across 3,000+ leagues — all …"
+    },
+    {
+      "title": "Mass Alerts for Football Matches | OddAlerts",
+      "url": "https://oddalerts.com/planner",
+      "snippet": "Pro removes the limits: run any filter on the feed, save an unlimited collection, sort by any stat you filter on, and use recent form, …"
+    },
+    {
+      "title": "Delete Bankroll Oddalerts Jobs in United States (9,000+ Open Roles ...",
+      "url": "https://www.linkedin.com/jobs/delete-bankroll-oddalerts-jobs",
+      "snippet": "Today's top 9,000+ Delete Bankroll Oddalerts jobs in United States. Leverage your professional network, and get hired. New Delete …"
+    },
+    {
+      "title": "delete bankroll oddalerts English-speaking jobs in Switzerland",
+      "url": "https://englishjobsearch.ch/jobs/delete_bankroll_oddalerts",
+      "snippet": "27 delete bankroll oddalerts English-speaking jobs in Switzerland Include languages [+] sorted by: relevance · newest"
+    }
+  ]
+}

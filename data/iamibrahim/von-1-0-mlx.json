@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "IAMIbrahim/von-1.0-mlx",
+  "slug": "iamibrahim-von-1-0-mlx",
+  "author": "IAMIbrahim",
+  "url": "https://huggingface.co/IAMIbrahim/von-1.0-mlx",
+  "created_at": "2026-09-21T23:57:27.000Z",
+  "updated_at": "2026-09-22T02:25:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "apple-silicon",
+    "modernbert",
+    "text-classification",
+    "zero-shot-classification",
+    "nli",
+    "encoder",
+    "decision-making",
+    "quantized",
+    "en",
+    "base_model:wfzyx/von-1.0",
+    "base_model:finetune:wfzyx/von-1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5589206906,
+  "storage_human": "5.6 GB",
+  "base_model": "wfzyx/von-1.0",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dirección en USA - PayPal Community",
+      "url": "https://www.paypal-community.com/t5/Configurar-mi-cuenta/Direcci%C3%B3n-en-USA/td-p/213032",
+      "snippet": "Haven't Found your Answer? It happens. Hit the \"Login to Ask the community\" button to create a question for the PayPal community."
+    },
+    {
+      "title": "I HATE PAYPAL!! Never add your bank accounts!! EVER!!",
+      "url": "https://www.paypal-community.com/t5/About-Protections-Archive/I-HATE-PAYPAL-Never-add-your-bank-accounts-EVER/td-p/1072091",
+      "snippet": "Never said people don't deserve to be heard, but rather just explaning the policies and procedures that financial services must follow. …"
+    },
+    {
+      "title": "Kreuzworträtsel | Beobachter",
+      "url": "https://www.beobachter.ch/kreuzwortratsel",
+      "snippet": "Hier finden Sie Kreuzworträtsel aus dem Beobachter. Sie können das aktuelle direkt am Bildschirm ausfüllen oder es als PDF-Datei …"
+    },
+    {
+      "title": "Austritt aus der Kirche? Das muss man dazu wissen - Beobachter",
+      "url": "https://www.beobachter.ch/burger-verwaltung/austritt-aus-der-kirche-das-muss-man-dazu-wissen-636933",
+      "snippet": "Sep 14, 2023 · Guter Rat Austritt aus der Kirche? Das muss man dazu wissen Aus einer religiösen Gemeinschaft auszutreten, ist ein …"
+    },
+    {
+      "title": "Can't register my bank account (HSBC) - \"Your Ban... - PayPal Community",
+      "url": "https://www.paypal-community.com/t5/About-Settings/Can-t-register-my-bank-account-HSBC-quot-Your-Bank-Account-is/td-p/1142130",
+      "snippet": "Hi. I'm struggling to register my bank account (HSBC Hong Kong) to my PayPal account (Hong Kong) last 15 months. When I fill …"
+    }
+  ]
+}
