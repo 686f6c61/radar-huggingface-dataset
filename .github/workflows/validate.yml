@@ -72,9 +72,10 @@ jobs:
 
   release:
     name: Releases (latest + versionada)
-    # La ejecucion programada no publica: refrescar latest con datos viejos
-    # daba una falsa sensacion de frescura
-    if: github.event_name != 'schedule' && inputs.tag == ''
+    # Solo publican los push a main y el dispatch manual. La ejecucion
+    # programada refrescaba latest con datos viejos (falsa frescura) y una
+    # PR lo sobrescribiria con sus datos
+    if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && inputs.tag == ''
     runs-on: ubuntu-latest
     needs: [validate-data, repo-docs]
     permissions:
