@@ -69,6 +69,27 @@ jobs:
           AGE_H=$(node -p "Math.floor((Date.now() - Date.parse(require('./index.json').updated_at)) / 36e5)")
           echo "Ultimo export hace ${AGE_H} h"
           [ "$AGE_H" -le "$MAX_H" ] || { echo "::error::Dataset obsoleto: ${AGE_H} h sin export (max ${MAX_H} h)"; exit 1; }
+      - name: Bulk de latest con menos de 20 h
+        # El repo puede estar fresco con la publicacion del bulk rota (fallo
+        # en build-bulk o gh release): se mide el asset, no solo el repo
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          MAX_H=20
+          AT=$(gh release view latest --json assets -q '.assets[] | select(.name == "models.jsonl.gz") | .updatedAt')
+          [ -n "$AT" ] || { echo "::error::latest sin models.jsonl.gz"; exit 1; }
+          AGE_H=$(( ($(date +%s) - $(date -d "$AT" +%s)) / 3600 ))
+          echo "Bulk de latest subido hace ${AGE_H} h"
+          [ "$AGE_H" -le "$MAX_H" ] || { echo "::error::Bulk de latest obsoleto: ${AGE_H} h (max ${MAX_H} h)"; exit 1; }
+      - name: Datos del radar con movimiento en 48 h
+        # updated_at del manifiesto cambia en cada export aunque la BD del
+        # radar este congelada (pipeline horario caido): se mira el modelo
+        # actualizado mas reciente en HF
+        run: |
+          MAX_H=48
+          AGE_H=$(node -p "const e = require('./index.json').entries; Math.floor((Date.now() - e.reduce((m, x) => Math.max(m, Date.parse(x.updated_at) || 0), 0)) / 36e5)")
+          echo "Modelo mas reciente actualizado hace ${AGE_H} h"
+          [ "$AGE_H" -le "$MAX_H" ] || { echo "::error::El radar parece congelado: ningun modelo actualizado en ${AGE_H} h"; exit 1; }
 
   release:
     name: Releases (latest + versionada)
