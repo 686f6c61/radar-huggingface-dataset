@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "thomasavare/Qwen3-Embedding-8B-22",
+  "slug": "thomasavare-qwen3-embedding-8b-22",
+  "author": "thomasavare",
+  "url": "https://huggingface.co/thomasavare/Qwen3-Embedding-8B-22",
+  "created_at": "2026-05-20T12:32:35.000Z",
+  "updated_at": "2026-09-22T07:23:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": 132738,
+  "parameters_human": "132738",
+  "storage_bytes": 338522947,
+  "storage_human": "339 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "강원특별자치도 18개 시·군 지도｜영서·영동 비교·3종 다운로드",
+      "url": "https://greenblog.co.kr/2025/09/17/%ea%b0%95%ec%9b%90%ed%8a%b9%eb%b3%84%ec%9e%90%ec%b9%98%eb%8f%84-%ec%a7%80%eb%8f%84-%ea%b3%a0%ed%99%94%ec%a7%88-3%ea%b0%80%ec%a7%80-%ec%a2%85%eb%a5%98-%eb%ac%b4%eb%a3%8c-%ec%a0%9c%ea%b3%b5/",
+      "snippet": "Sep 17, 2025 · 강원특별자치도 7개 시·11개 군의 위치와 영서·영동 지역 구조를 비교하세요. 색상·기본·윤곽선 지도 3종을 내려받아 인쇄, …"
+    },
+    {
+      "title": "네이버지도",
+      "url": "https://map.naver.com/p/",
+      "snippet": "4 days ago · 네이버 지도는 다양한 위치 검색과 길찾기 서비스를 제공합니다."
+    },
+    {
+      "title": "네이버지도",
+      "url": "https://maps.naver.com/p/",
+      "snippet": "모든 여정의 시작, 네이버지도"
+    },
+    {
+      "title": "네이버 지도",
+      "url": "https://map.naver.com/v5/search/%EA%B0%95%EC%9B%90%EB%8F%84",
+      "snippet": "방문 중인 사이트에서 설명을 제공하지 않습니다."
+    },
+    {
+      "title": "강원도 지도 크게 보기 고화질 관광지도 PDF",
+      "url": "https://travel.sinalog.kr/2026/02/gangwon-map.html",
+      "snippet": "Sep 13, 2026 · 강원도는 동해안과 내륙 산악 지역이 넓게 퍼져 있습니다. 지도 없이 일정부터 잡으면 이동 시간이 길어질 수 있습니다. …"
+    }
+  ]
+}

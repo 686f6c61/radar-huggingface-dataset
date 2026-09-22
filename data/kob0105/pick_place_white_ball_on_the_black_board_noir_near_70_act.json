@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kob0105/pick_place_white_ball_on_the_black_board_NoIR_near_70_act",
+  "slug": "kob0105-pick_place_white_ball_on_the_black_board_noir_near_70_act",
+  "author": "kob0105",
+  "url": "https://huggingface.co/kob0105/pick_place_white_ball_on_the_black_board_NoIR_near_70_act",
+  "created_at": "2026-09-22T11:42:19.000Z",
+  "updated_at": "2026-09-22T11:42:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:kob0105/pick_whiteball_on_the_black_board_NoIR_near2_20260920_122612",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Interia - Polska i świat: informacje, sport, gwiazdy.",
+      "url": "https://www.interia.pl/",
+      "snippet": "Interia - czołowy polski portal internetowy. Najlepsze serwisy informacyjne i tematyczne (Wydarzenia, Sport, Motoryzacja, Biznes, …"
+    },
+    {
+      "title": "Poczta w Interia.pl - darmowa poczta e-mail – logowanie do konta",
+      "url": "https://poczta.interia.pl/logowanie/",
+      "snippet": "Dołącz do użytkowników Poczty w Interia.pl. Ciesz się nieograniczoną pojemnością, dużymi załącznikami i błyskawicznym …"
+    },
+    {
+      "title": "Pogoda w INTERIA.PL - długoterminowa prognoza. Pogoda na dziś, …",
+      "url": "https://pogoda.interia.pl/",
+      "snippet": "Serwis Pogoda w INTERIA.PL prezentuje kilka typów prognozy pogody w tym: bardzo szczegółową prognozę godzinową na dziś …"
+    },
+    {
+      "title": "Wydarzenia w INTERIA.PL - wiadomości, wydarzenia",
+      "url": "https://wydarzenia.interia.pl/",
+      "snippet": "Wydarzenia w INTERIA.PL - zawsze aktualne wiadomości. Najważniejsze informacje, newsy, wydarzenia dnia oraz polityka."
+    },
+    {
+      "title": "Czat online – CZATeria w Interia.pl – darmowy anonimowy czat bez …",
+      "url": "https://czateria.interia.pl/",
+      "snippet": "Darmowy czat w INTERIA.PL (CZATeria) działa w każdej przeglądarce. Zawieraj nowe znajomości, prowadź anonimowe rozmowy, …"
+    }
+  ]
+}

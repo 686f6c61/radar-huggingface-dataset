@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "HPAI-BSC/IRIS-14B",
+  "slug": "hpai-bsc-iris-14b",
+  "author": "HPAI-BSC",
+  "url": "https://huggingface.co/HPAI-BSC/IRIS-14B",
+  "created_at": "2026-01-13T10:23:03.000Z",
+  "updated_at": "2026-09-21T19:54:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "llvm",
+    "gimple",
+    "gcc",
+    "clang",
+    "compiler",
+    "intermediate-representation",
+    "compiler-ir",
+    "ir",
+    "text-generation",
+    "conversational",
+    "dataset:HPAI-BSC/GNU-IRIS",
+    "dataset:HPAI-BSC/CodeForces-IRIS",
+    "dataset:HPAI-BSC/ExeBench-IRIS",
+    "dataset:HPAI-BSC/TheStack-IRIS",
+    "arxiv:2605.08247",
+    "base_model:Qwen/Qwen3-14B-Base",
+    "base_model:finetune:Qwen/Qwen3-14B-Base",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 59073353056,
+  "storage_human": "59.1 GB",
+  "base_model": "Qwen/Qwen3-14B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "17 Najlepszych Miejsc z Pizzą w Warszawie (2026)",
+      "url": "https://najlepszewwarszawie.com/najlepsza-pizza-w-warszawie/",
+      "snippet": "Apr 21, 2026 · Poznaj najlepsze pizzerie w Warszawie - od autentycznej włoskiej po nowoczesne fusion. Ranking sprawdzonych …"
+    },
+    {
+      "title": "Pizzeria Warszawa - pizza z dowozem | T-Pizza (dawna Telepizza)",
+      "url": "https://www.tpizza.pl/warszawa/",
+      "snippet": "Pizza z dowozem w Warszawie. Pyszne jedzenie i świeże składniki czekają na Ciebie. Zamów wygodnie online lub telefonicznie."
+    },
+    {
+      "title": "Najlepsza pizza w Warszawie – TOP 15 warszawskich pizzerii",
+      "url": "https://kukbuk.pl/artykuly/warszawa-najlepsze-pizzerie/",
+      "snippet": "Polecamy najlepsze pizzerie i restauracje z pizzą w stolicy. Zobaczcie, gdzie zamówicie pizzę bez glutenu, laktozy, pieczarek, mąki …"
+    },
+    {
+      "title": "Pizza Warszawa z ekspresową dostawą lub odbiorem",
+      "url": "https://www.dominospizza.pl/Lokale/Warszawa",
+      "snippet": "Pizzerie Domino's Pizza w Warszawie oferują pizzę, przekąski i desery z darmową, szybką dostawą lub odbiorem. Sprawdź adresy …"
+    },
+    {
+      "title": "Najlepsza pizza w Warszawie - TOP 10 warszawskich pizzerii",
+      "url": "https://warszawa.eska.pl/najlepsza-pizza-w-warszawie-top-10-warszawskich-pizzerii-aa-NQyM-BTEX-MXMa.html",
+      "snippet": "Mar 11, 2026 · Stolica oferuje niezliczone miejsca serwujące ten włoski przysmak, od klasycznych neapolitańskich wypieków, przez …"
+    }
+  ]
+}

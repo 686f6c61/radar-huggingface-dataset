@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "MykolaL/DelineateAnything",
+  "slug": "mykolal-delineateanything",
+  "author": "MykolaL",
+  "url": "https://huggingface.co/MykolaL/DelineateAnything",
+  "created_at": "2025-04-23T09:12:43.000Z",
+  "updated_at": "2026-09-21T20:12:03.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "image-segmentation",
+    "arxiv:2504.02534",
+    "arxiv:2511.13417",
+    "arxiv:2607.19069",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 69151,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 267493293,
+  "storage_human": "267 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krafttraining zu Hause – starke Muskeln ohne Geräte - AOK",
+      "url": "https://www.aok.de/pk/magazin/sport/workout/krafttraining-zu-hause-starke-muskeln-ohne-geraete/",
+      "snippet": "Aug 13, 2020 · Eine breite Brust und einen definierten Sixpack, ohne im Fitnessstudio dafür zu schwitzen? Kein Problem: Ein …"
+    },
+    {
+      "title": "Krafttraining ohne Geräte: Die besten Übungen für Zuhause",
+      "url": "https://kraftsportprofi.de/krafttraining-ohne-geraete-die-besten-uebungen-fuer-zuhause/",
+      "snippet": "In diesem Artikel zeigen wir dir, warum Krafttraining ohne Geräte so effektiv ist, worauf du bei der Ausführung achten solltest und …"
+    },
+    {
+      "title": "Bodyweight Training: Die besten Kraft-Übungen für zu Hause",
+      "url": "https://www.fitforfun.de/workout/fitness/krafttraining-ohne-geraete-zuhause-ganz-stark-werden-_aid_14428.html",
+      "snippet": "Jan 30, 2023 · Muskelaufbau ohne Gym und Geräte? Hier findest du die besten Übungen fürs Krafttraining ohne Equipment, die dich …"
+    },
+    {
+      "title": "Krafttraining ohne Geräte: die besten Übungen - freundin.de",
+      "url": "https://www.freundin.de/lifestyle/fitness-gesundheit/krafttraining-ohne-geraete-fuer-zu-hause-video",
+      "snippet": "Dec 18, 2024 · Das sind die besten Übungen für Krafttraining ohne Geräte in den eigenen vier Wänden! Das ausgiebige Aufwärmen …"
+    },
+    {
+      "title": "Die besten Kraftübungen ohne Geräte - MEN'S HEALTH",
+      "url": "https://www.menshealth.de/krafttraining/die-besten-kraftuebungen-ohne-geraete/",
+      "snippet": "Muskelaufbau ohne Geräte: Die 18 besten Bodyweight-Übungen für Zuhause, unterwegs oder im Park."
+    }
+  ]
+}

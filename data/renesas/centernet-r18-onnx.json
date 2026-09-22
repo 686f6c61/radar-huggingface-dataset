@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Renesas/CenterNet-R18-ONNX",
+  "slug": "renesas-centernet-r18-onnx",
+  "author": "Renesas",
+  "url": "https://huggingface.co/Renesas/CenterNet-R18-ONNX",
+  "created_at": "2026-09-16T12:11:24.000Z",
+  "updated_at": "2026-09-21T15:52:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "computer-vision",
+    "renesas",
+    "x5h",
+    "centernet",
+    "resnet18",
+    "detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56884157,
+  "storage_human": "57 MB",
+  "base_model": "",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Semiconductor & Embedded System Solutions | Renesas",
+      "url": "https://www.renesas.com/",
+      "snippet": "A global leader in microcontrollers, analog, power and SoC products, Renesas delivers trusted embedded design innovation to shape …"
+    },
+    {
+      "title": "Products | Renesas",
+      "url": "https://www.renesas.com/en/products",
+      "snippet": "Explore the Renesas Products page to efficiently navigate a wide array of semiconductor solutions. Discover microcontrollers, cutting …"
+    },
+    {
+      "title": "Renesas Electronics - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Renesas_Electronics",
+      "snippet": "Renesas Electronics Corporation (Japanese: ルネサス エレクトロニクス株式会社, Hepburn: Runesasu Erekutoronikusu Kabushiki …"
+    },
+    {
+      "title": "Renesas Careers",
+      "url": "https://jobs.renesas.com/",
+      "snippet": "Our People and culture play a key role in making your experience at Renesas rewarding, and we need more talented people across …"
+    },
+    {
+      "title": "Renesas Electronics — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Renesas_Electronics",
+      "snippet": "Renesas Electronics Corporation (ルネサス エレクトロニクス, Renesasu erekutoronikusu?) est un important fabricant de semi …"
+    }
+  ]
+}

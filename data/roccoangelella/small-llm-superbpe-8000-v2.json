@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "roccoangelella/small-llm-superbpe-8000-v2",
+  "slug": "roccoangelella-small-llm-superbpe-8000-v2",
+  "author": "roccoangelella",
+  "url": "https://huggingface.co/roccoangelella/small-llm-superbpe-8000-v2",
+  "created_at": "2026-09-22T11:43:53.000Z",
+  "updated_at": "2026-09-22T11:43:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "tokenizers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tokenizers",
+    "tokenizer",
+    "superbpe",
+    "bpe",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 620059,
+  "storage_human": "620059 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forge of Empires - Kostenloses Online-Strategiespiel",
+      "url": "https://de.forgeofempires.com/",
+      "snippet": "In Forge of Empires kontrollierst du das Schicksal deiner Stadt in verschiedenen historischen Epochen. Es erwarten dich spannende …"
+    },
+    {
+      "title": "Bauwerk Neo Koloss | Forge of Empires Forum",
+      "url": "https://forum.de.forgeofempires.com/index.php?threads/bauwerk-neo-koloss.58591/",
+      "snippet": "Ich habe mir vor ein paar Minuten das Bauwerk Neo Koloss gebaut und lese die Information \"Produktion abschließen deaktiviert\". …"
+    },
+    {
+      "title": "Suche Gilde | Forge of Empires Forum",
+      "url": "https://forum.de.forgeofempires.com/index.php?threads/suche-gilde.58648/",
+      "snippet": "Wie finde ich eine Gilde, bei der ich Weltraumdaten tauschen kann? GG und QI werden von mir aber kaum genutzt."
+    },
+    {
+      "title": "Beantwortet Plündern - Forge of Empires Forum",
+      "url": "https://forum.de.forgeofempires.com/index.php?threads/pl%C3%BCndern.3398/",
+      "snippet": "hey liebe user, ich bin neu, und wurde schön angegriffen, jetztt will ich mich natürlich rächen und greife ihn an und gewinne. meine …"
+    },
+    {
+      "title": "Frage bezüglich Reserve Einheiten | Forge of Empires Forum",
+      "url": "https://forum.de.forgeofempires.com/index.php?threads/frage-bez%C3%BCglich-reserve-einheiten.53313/",
+      "snippet": "11. Jan 2022 #1 Hallo zusammen, folgendes: Ein Gildenmitglied von mir hat ein Problem gemeldet. \"Hey Leute kann mir jemand …"
+    }
+  ]
+}

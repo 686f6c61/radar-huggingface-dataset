@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "flyingfishinwater/coreml",
+  "slug": "flyingfishinwater-coreml",
+  "author": "flyingfishinwater",
+  "url": "https://huggingface.co/flyingfishinwater/coreml",
+  "created_at": "2026-09-22T11:54:13.000Z",
+  "updated_at": "2026-09-22T11:57:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 413796057,
+  "storage_human": "414 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "Télécharger l'application mobile YouTube - Android - Aide YouTube",
+      "url": "https://support.google.com/youtube/answer/3227660?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Téléchargez l'application YouTube pour profiter d'une expérience de visionnage enrichie sur votre appareil mobile. Télécharger …"
+    },
+    {
+      "title": "Manage your home area or current location for YouTube TV",
+      "url": "https://support.google.com/youtubetv/answer/7129768?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "When you sign up for YouTube TV, we’ll ask you to share your home zip code. We may also ask you to verify your area location via …"
+    },
+    {
+      "title": "Disclosing use of GenAI content - Android - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/14328491?hl=en-GB&co=GENIE.Platform%3DAndroid",
+      "snippet": "We encourage creators' innovative and responsible use of content editing or generation tools. At the same time, we recognise that …"
+    },
+    {
+      "title": "YouTube說明",
+      "url": "https://support.google.com/youtube/?hl=zh-Hant",
+      "snippet": "您可以在「YouTube 官方說明中心」找到本產品的使用教學和提示，以及各種常見問題解答。"
+    }
+  ]
+}

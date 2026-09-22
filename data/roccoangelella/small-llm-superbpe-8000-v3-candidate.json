@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "roccoangelella/small-llm-superbpe-8000-v3-candidate",
+  "slug": "roccoangelella-small-llm-superbpe-8000-v3-candidate",
+  "author": "roccoangelella",
+  "url": "https://huggingface.co/roccoangelella/small-llm-superbpe-8000-v3-candidate",
+  "created_at": "2026-09-22T11:43:58.000Z",
+  "updated_at": "2026-09-22T11:44:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "tokenizers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tokenizers",
+    "tokenizer",
+    "superbpe",
+    "bpe",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 320175,
+  "storage_human": "320175 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Natürlich wirksam für den Darm | Mutaflor®",
+      "url": "https://mutaflor.de/",
+      "snippet": "Die Arzneimittel der Mutaflor®-Gruppe helfen bei unterschiedlichsten Darmerkrankungen. Erfahren Sie hier mehr zu den Vorteilen!"
+    },
+    {
+      "title": "Mutaflor® Suspension | Mutaflor®",
+      "url": "https://mutaflor.de/produkte/mutaflor-hartkapseln/",
+      "snippet": "Erfahren Sie, wie Sie mit Mutaflor® Suspension Durchfall bei Säuglingen, Kleinkindern und Kindern sanft und wirksam behandeln …"
+    },
+    {
+      "title": "Colitis ulcerosa: Symptome und Ursachen | Mutaflor®",
+      "url": "https://mutaflor.de/colitis-ulcerosa/",
+      "snippet": "Die Colitis ulcerosa gehört zu den chronisch-entzündlichen Darmerkrankungen. Erfahren Sie typische Symptome und mögliche …"
+    },
+    {
+      "title": "Mutaflor® mite bei Darmentzündungen & Verstopfung | Mutaflor®",
+      "url": "https://mutaflor.de/produkte/mutaflor-mite/",
+      "snippet": "Mutaflor® mite für den Ausstieg aus der chronischen Darmentzündung und zur Regulierung des Darms bei chronischer Verstopfung. …"
+    },
+    {
+      "title": "Uncategorized Archive - mutaflor",
+      "url": "https://mutaflor.de/category/uncategorized/",
+      "snippet": ""
+    }
+  ]
+}

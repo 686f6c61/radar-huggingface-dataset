@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "AikidoSec/altar-1",
+  "slug": "aikidosec-altar-1",
+  "author": "AikidoSec",
+  "url": "https://huggingface.co/AikidoSec/altar-1",
+  "created_at": "2026-09-07T18:50:43.000Z",
+  "updated_at": "2026-09-20T12:21:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "glm",
+    "glm-5.3",
+    "moe",
+    "w4a16",
+    "awq",
+    "int4",
+    "compressed-tensors",
+    "reap",
+    "expert-pruning",
+    "hopper",
+    "text-generation",
+    "conversational",
+    "arxiv:2510.13999",
+    "base_model:cyankiwi/GLM-5.3-AWQ-INT4",
+    "base_model:quantized:cyankiwi/GLM-5.3-AWQ-INT4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 84,
+  "downloads_30d": 484,
+  "trending_score": 70,
+  "parameters": 500825296352,
+  "parameters_human": "500.83B",
+  "storage_bytes": 327990672717,
+  "storage_human": "328.0 GB",
+  "base_model": "cyankiwi/GLM-5.3-AWQ-INT4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Live & TV - ZDF",
+      "url": "https://www.zdf.de/live-tv",
+      "snippet": "Alle ZDF-Livestreams kostenlos und jederzeit online genießen. Das komplette TV-Programm von ZDF, ZDFinfo, ZDFneo, arte, KiKA, …"
+    },
+    {
+      "title": "ZDF TV-Programm im Livestream - ZDFmediathek",
+      "url": "https://www.zdf.de/live-tv/zdf-live-beitrag-100",
+      "snippet": "Das ZDF TV-Programm im Livestream: Sehen Sie rund um die Uhr die Nachrichten, Serien, Filme, Dokus und Reportagen des TV …"
+    },
+    {
+      "title": "Streame jetzt das aktuelle TV-Programm von ZDF live auf Joyn",
+      "url": "https://www.joyn.de/live-tv/zdf?msockid=323feafd10676f1e38d4fd2611776e4b",
+      "snippet": "Von Ärzteserien wie Der Bergdoktor über Kinder-Sendungen wie Die Biene Maja bis hin zu Doku-Reihen wie Filmfrauen: Bei ZDF …"
+    },
+    {
+      "title": "ZDF Mediathek - Sendung verpasst?",
+      "url": "https://www.sendungverpasst.de/zdf",
+      "snippet": "Sep 13, 2026 · Alle Videos, Filme und Serien von ZDF und den anderen TV-Sendern sofort finden und kostenlos online abrufen - …"
+    },
+    {
+      "title": "ZDFheute live",
+      "url": "https://www.zdfheute.de/video/zdfheute-live",
+      "snippet": "ZDFheute live - aktuelle Nachrichten und Livestreams zu Top-Themen. Direkt vor Ort, verständlich erklärt, im direkten Austausch mit …"
+    }
+  ]
+}

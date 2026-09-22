@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SABABA123Dhxhz/lemon-model",
+  "slug": "sababa123dhxhz-lemon-model",
+  "author": "SABABA123Dhxhz",
+  "url": "https://huggingface.co/SABABA123Dhxhz/lemon-model",
+  "created_at": "2026-09-22T11:57:02.000Z",
+  "updated_at": "2026-09-22T11:57:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2-1.5B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2-1.5B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85329648,
+  "storage_human": "85 MB",
+  "base_model": "unsloth/Qwen2-1.5B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L’Osteria – tvá oblíbená italská restaurace na pizzu a těstoviny",
+      "url": "https://losteria.net/cz/",
+      "snippet": "V L’Osterii se budeš cítit jako v Itálii – tam, kde se scházejí rodiny, přátelé i páry u skvělé pizzy a těstovin."
+    },
+    {
+      "title": "Pizza bei L'Osteria – Original italienischer Genuss",
+      "url": "https://losteria.net/de/speisekarte/pizza/",
+      "snippet": "Unsere berühmte Pizza die über den Tellerrand hinausschaut - mit stolzen 45 Zentimeter Durchmesser. Knusprig gebacken und mit …"
+    },
+    {
+      "title": "L'Osteria",
+      "url": "https://order.losteria.net/",
+      "snippet": "Welcome IN YOUR L'Osteria en"
+    },
+    {
+      "title": "L'Osteria",
+      "url": "https://order.losteria.net/map/index.html",
+      "snippet": "Can we access your location to show you a L'Osteria restaurant near you?"
+    },
+    {
+      "title": "L’Osteria – Dein Lieblingsitaliener für Pizza & Pasta",
+      "url": "https://losteria.net/at/",
+      "snippet": "In der L’Osteria geht die Türe auf und schon fühlt man sich wie in einer typisch italienischen Osteria: Hier kommen Familien, …"
+    }
+  ]
+}

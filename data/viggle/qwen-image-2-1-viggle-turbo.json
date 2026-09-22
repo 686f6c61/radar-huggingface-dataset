@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Viggle/Qwen-Image-2.1-viggle-turbo",
+  "slug": "viggle-qwen-image-2-1-viggle-turbo",
+  "author": "Viggle",
+  "url": "https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo",
+  "created_at": "2026-09-22T04:14:56.000Z",
+  "updated_at": "2026-09-22T17:49:14.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "lora",
+    "text-to-image",
+    "image-to-image",
+    "image-editing",
+    "distillation",
+    "dmd",
+    "turbo",
+    "few-step",
+    "qwen-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 16269145752,
+  "storage_human": "16.3 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Viggle | Turn your imagination into 3D motion",
+      "url": "https://viggle.ai/",
+      "snippet": "Powered by its proprietary Joint Space-Time (JST) model, Viggle is pioneering Spatial GenAI, generating characters, motion, and …"
+    },
+    {
+      "title": "Free AI Video Tools | Viggle AI",
+      "url": "https://viggle.ai/tools",
+      "snippet": "Explore Viggle AI's free video tools — face swap, AI dance, brainrot memes, sports highlights, image animation, and more. Powered …"
+    },
+    {
+      "title": "Download Viggle AI",
+      "url": "https://viggle.ai/download",
+      "snippet": "Don't miss out! Join our email list for our latest features, exclusive offers, and the best of Viggle."
+    },
+    {
+      "title": "Animation Tools - Viggle AI",
+      "url": "https://viggle.ai/animation-tools",
+      "snippet": "Read Viggle AI animation tools terms, including Mix, Multi and Motion Control credits and usage policies."
+    },
+    {
+      "title": "Viggle AI Dance",
+      "url": "https://viggleai.io/",
+      "snippet": "Viggle AI is a powerful AI animation tool and image-to-video generator. Viggle AI lets you easily animate characters and create …"
+    }
+  ]
+}

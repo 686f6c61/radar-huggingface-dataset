@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RealmanRobot/Foundation_Pose",
+  "slug": "realmanrobot-foundation_pose",
+  "author": "RealmanRobot",
+  "url": "https://huggingface.co/RealmanRobot/Foundation_Pose",
+  "created_at": "2026-09-22T11:48:36.000Z",
+  "updated_at": "2026-09-22T11:53:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 258449498,
+  "storage_human": "258 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تطبيق Safari‬ - App Store",
+      "url": "https://apps.apple.com/sa/app/safari/id1146562112?l=ar",
+      "snippet": "‏ iPhone‏، ‏iPad يمكنك تصفح الويب بسرعة البرق وبآليات حماية فعالة للخصوصية وخيارات تخصيص قوية. مع سفاري، يمكنك تصفح المواقع وترجمة صفحات الويب والوصول إلى علامات التبويب عبر …"
+    },
+    {
+      "title": "تحميل متصفح سفاري عربي للكمبيوتر والاندرويد والايفون",
+      "url": "https://tech.mustaqilat.com/download-safari-browser/",
+      "snippet": "Oct 8, 2024 · تحميل متصفح سفاري جمع بين السرعة والأمان وواجهة المستخدم الأنيقة. متاح للكمبيوتر والأندرويد والآيفون، يضمن تجربة تصفح سلسة ومريحة"
+    },
+    {
+      "title": "‏سفاري - ‏Apple (المملكة العربية السعودية)",
+      "url": "https://www.apple.com/sa-ar/safari/",
+      "snippet": "سفاري هو أفضل طريقة للاستمتاع بالإنترنت على كل أجهزة Apple. فهو يضع في متناولك خيارات رائعة للتخصيص ويتميز بوسائل قوية لحماية الخصوصية ويطيل عمر البطارية كي تتصفح كما تحب، …"
+    },
+    {
+      "title": "سفاري (متصفح ويب) - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%B3%D9%81%D8%A7%D8%B1%D9%8A_(%D9%85%D8%AA%D8%B5%D9%81%D8%AD_%D9%88%D9%8A%D8%A8)",
+      "snippet": "برنامج مطور سفاري كان برنامج مطور سفاري برنامج مجاني للكتابة أضافات المتصفح ومواقع HTML5. حيث يسمح للمستخدم بتطوير الاضافات لمتصفح الويب سفاري."
+    },
+    {
+      "title": "SAFARI - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.daleelcom.safari&hl=ar",
+      "snippet": "سفاري تطبيق ذكي وموثوق لحجز السفر، مصمم لجعل رحلاتك سهلة وسريعة وخالية من التوتر. مع سفاري، يمكنك حجز الفنادق وتذاكر الحافلات للتنقلات المحلية وتذاكر الطيران من منصة واحدة سهلة …"
+    }
+  ]
+}

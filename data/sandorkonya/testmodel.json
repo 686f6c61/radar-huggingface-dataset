@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "sandorkonya/testmodel",
+  "slug": "sandorkonya-testmodel",
+  "author": "sandorkonya",
+  "url": "https://huggingface.co/sandorkonya/testmodel",
+  "created_at": "2026-09-06T15:39:36.000Z",
+  "updated_at": "2026-09-22T00:04:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14479929626,
+  "storage_human": "14.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Assurance Automobile pour les Pros | Devis en ligne -10% | Allianz ...",
+      "url": "https://allianz-assurance.fr/assurance-auto-pour-professionnel/",
+      "snippet": "Nous accompagnons les professionnels partout en France, grâce à une expertise solide en assurance pro : Assurance automobile …"
+    },
+    {
+      "title": "Assurance auto pour les professionnels - lesfurets",
+      "url": "https://www.lesfurets.com/assurance-auto/conducteur/professionnel",
+      "snippet": "Aug 30, 2024 · Assurer sa voiture personnelle pour un usage professionnel: vous pouvez utiliser votre véhicule personnel pour des …"
+    },
+    {
+      "title": "Assurance véhicule pour les professionnels et les ... - Allianz",
+      "url": "https://www.allianz.fr/assurances-professionnels-entreprises/mon-activite/mes-vehicules/vehicule-professionnel.html",
+      "snippet": "L'assurance pour véhicule professionnel offre une couverture adaptée à votre outil de travail. Elle est destinée aux entrepreneurs, …"
+    },
+    {
+      "title": "Assurance auto professionnelle - Meilleurtaux",
+      "url": "https://www.meilleurtaux.com/comparateur-assurance/assurance-auto/guide-assurance-auto/assurance-auto-professionnelle/",
+      "snippet": "Oct 29, 2025 · Nous vous proposons un comparateur d’assurances auto professionnelles pour vous aider dans votre recherche. En …"
+    },
+    {
+      "title": "Assurance auto pour professionnels, assurez votre activité ... - APRIL",
+      "url": "https://www.april.fr/assurance-auto/assurance-auto-professionnel",
+      "snippet": "Vous vous demandez sûrement si souscrire à une assurance auto professionnelle est obligatoire. Découvrez notre guide pour …"
+    }
+  ]
+}

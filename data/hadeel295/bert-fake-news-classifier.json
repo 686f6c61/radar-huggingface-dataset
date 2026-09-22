@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hadeel295/bert-fake-news-classifier",
+  "slug": "hadeel295-bert-fake-news-classifier",
+  "author": "hadeel295",
+  "url": "https://huggingface.co/hadeel295/bert-fake-news-classifier",
+  "created_at": "2026-08-04T12:32:19.000Z",
+  "updated_at": "2026-09-21T21:49:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 54,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 1751834496,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "İncil'de Mahol kimdi? - Ministry Voice",
+      "url": "https://www.ministryvoice.com/tr/who-was-mahol-in-the-bible/",
+      "snippet": "Mahol, Tanrı'nın tarihteki her birey aracılığıyla çalıştığını hatırlatan bir şeydir. Mahol gibi Kutsal Yazılardaki küçük figürler, Tanrı'nın …"
+    },
+    {
+      "title": "Mahol - YouTube",
+      "url": "https://www.youtube.com/watch?v=OvT-HDKuEm8",
+      "snippet": "Nov 24, 2021 · Provided to YouTube by Brown Studios Mahol · Arjan Dhillon Awara ℗ Brown Studios Released on: 2021-11-25 …"
+    },
+    {
+      "title": "Mahol (Audio) Arjan Dhillon | Mxrci | Gold Media | Brown Studios",
+      "url": "https://www.youtube.com/watch?v=gmSXp74OCdg",
+      "snippet": "Brown Studios & Harwinder Sidhu Presents : Song - Mahol Singer/Lyrics/Composer - Arjan Dhillon Music - Mxrci Producer - …"
+    },
+    {
+      "title": "Mahol - YouTube Music",
+      "url": "https://music.youtube.com/watch?v=OvT-HDKuEm8",
+      "snippet": "Karan Aujla & Ikky 3:25 0:00 / 3:26 Mahol Arjan Dhillon • Awara • 2021 Start playback"
+    },
+    {
+      "title": "Topical Bible: Mahol",
+      "url": "https://biblehub.com/topical/m/mahol.htm",
+      "snippet": "The name Mahol is of Hebrew origin, and its meaning is often associated with \"dance\" or \"circle.\" This etymological connection …"
+    }
+  ]
+}

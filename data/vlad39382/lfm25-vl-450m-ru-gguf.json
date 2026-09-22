@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Vlad39382/lfm25-vl-450m-ru-gguf",
+  "slug": "vlad39382-lfm25-vl-450m-ru-gguf",
+  "author": "Vlad39382",
+  "url": "https://huggingface.co/Vlad39382/lfm25-vl-450m-ru-gguf",
+  "created_at": "2026-09-22T11:57:21.000Z",
+  "updated_at": "2026-09-22T12:02:34.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qlora",
+    "on-device",
+    "russian",
+    "ru",
+    "base_model:LiquidAI/LFM2.5-VL-450M",
+    "base_model:quantized:LiquidAI/LFM2.5-VL-450M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 347200736,
+  "storage_human": "347 MB",
+  "base_model": "LiquidAI/LFM2.5-VL-450M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon Music | Hör dir Songs, Podcasts und vieles mehr an",
+      "url": "https://music.amazon.de/",
+      "snippet": "Suche und streame Musik und Podcasts über den Webbrowser. Höre dir deine liebsten Playlists aus über 100 Millionen Songs bei …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Österreich",
+      "url": "https://www.amazon.de/%C3%B6sterreich/s?k=%C3%B6sterreich",
+      "snippet": "Entdecken Sie vielfältige Österreich-Artikel – von Fahnen und Reisebüchern bis hin zu Wörterbüchern, Quizspielen und …"
+    },
+    {
+      "title": "Seller Central DE – Werden Sie Noch Heute Amazon-Verkäufer!",
+      "url": "https://sellercentral.amazon.de/",
+      "snippet": "Werden Sie Amazon-Verkaufspartner und profitieren Sie von potenziellen Vorteilen im Wert von über 45,000 €! Starten Sie noch …"
+    },
+    {
+      "title": "Amazon.de Associates Central",
+      "url": "https://partnernet.amazon.de/",
+      "snippet": "Amazon PartnerNet – das Affiliate-Marketing-Programm von Amazon Willkommen bei einem der größten Affiliate-Marketing …"
+    },
+    {
+      "title": "Amazon Photos",
+      "url": "https://www.amazon.de/b?node=12153288031",
+      "snippet": "Amazon photos offers free online storage to Prime members, who can save and share unlimited photos on desktop, mobile, tablet."
+    }
+  ]
+}

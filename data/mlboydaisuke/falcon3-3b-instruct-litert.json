@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/Falcon3-3B-Instruct-LiteRT",
+  "slug": "mlboydaisuke-falcon3-3b-instruct-litert",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/Falcon3-3B-Instruct-LiteRT",
+  "created_at": "2026-06-19T11:16:51.000Z",
+  "updated_at": "2026-09-21T19:54:34.000Z",
+  "license": "falcon-llm-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "falcon3",
+    "text-generation",
+    "base_model:tiiuae/Falcon3-3B-Instruct",
+    "base_model:quantized:tiiuae/Falcon3-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 109,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9439273360,
+  "storage_human": "9.4 GB",
+  "base_model": "tiiuae/Falcon3-3B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chrysalis - Royal Road",
+      "url": "https://www.royalroad.com/fiction/22518/chrysalis",
+      "snippet": "Chrysalis is a great Story, Novel, Lit-RPG or whatever you'd like to call it. Is it perfect? No but Nothing is that is a simple fact of life. …"
+    },
+    {
+      "title": "Chrysalis | Royal Road",
+      "url": "https://www.royalroad.com/fiction/115742/chrysalis",
+      "snippet": "May 7, 2025 · Royal Road® is the home of web novels and fan fictions! In our amazing community, you can find various talented …"
+    },
+    {
+      "title": "Search Page | Royal Road",
+      "url": "https://www.royalroad.com/fictions/search?title=chrysalis&globalFilters=true",
+      "snippet": "This is a fan-made story based on the Chrysalis universe and book series. No characters, plot points, or significant upsets are canon …"
+    },
+    {
+      "title": "Chapter 1525 - The Flow - Chrysalis | Royal Road",
+      "url": "https://www.royalroad.com/fiction/22518/chrysalis/chapter/2116594/chapter-1525-the-flow",
+      "snippet": "Mar 10, 2025 · Deep below the mountain that the Colony had turned into their nest, the transformation that had taken place here was …"
+    },
+    {
+      "title": "Chapter 1433 - They Think They’re Soooo Sneaky - Chrysalis | Royal Road",
+      "url": "https://www.royalroad.com/fiction/22518/chrysalis/chapter/1854040/chapter-1433-they-think-theyre-soooo-sneaky",
+      "snippet": "Oct 17, 2024 · Sadly, that encounter was only the beginning of my Krath concerns. I start to see signs of them everywhere I look. …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "wejyy888/Qwen3.5-0.8B-PureText-ZH-EN",
+  "slug": "wejyy888-qwen3-5-0-8b-puretext-zh-en",
+  "author": "wejyy888",
+  "url": "https://huggingface.co/wejyy888/Qwen3.5-0.8B-PureText-ZH-EN",
+  "created_at": "2026-09-22T11:29:53.000Z",
+  "updated_at": "2026-09-22T12:03:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "qwen3.5",
+    "text-only",
+    "vocabulary-pruning",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 685284160,
+  "parameters_human": "685.3M",
+  "storage_bytes": 1370604608,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accéder à votre Espace client",
+      "url": "https://espace-client.orange.fr/page-accueil",
+      "snippet": "Pour gérer vos abonnements, dépanner votre Livebox ou juste nous contacter, on est là. Scannez le QR Code pour télécharger ou …"
+    },
+    {
+      "title": "Espace Client Orange",
+      "url": "https://espace-client.orange.fr/",
+      "snippet": "Espace Client Orange. Chargement en cours."
+    },
+    {
+      "title": "Espace Client Orange",
+      "url": "https://espace-client.orange.fr/commandes",
+      "snippet": "5 hours ago · Espace Client Orange Chargement en cours"
+    },
+    {
+      "title": "Espace Client Orange",
+      "url": "https://my.orange.fr/compte",
+      "snippet": "Accédez à votre espace client Orange pour gérer vos contrats, suivre votre consommation, consulter vos factures et bénéficier …"
+    },
+    {
+      "title": "Portail Orange | Offres Mobiles, Internet, TV, Actu & Accès compte …",
+      "url": "https://www.orange.fr/portail",
+      "snippet": "Accès rapide et facile à toutes les fonctionnalités Orange (Email, Assistance, Banque, Boutique). Découvrez notre portail Orange et …"
+    }
+  ]
+}

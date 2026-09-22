@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mdaiworks/yengi-router-1.5b",
+  "slug": "mdaiworks-yengi-router-1-5b",
+  "author": "mdaiworks",
+  "url": "https://huggingface.co/mdaiworks/yengi-router-1.5b",
+  "created_at": "2026-09-12T20:22:59.000Z",
+  "updated_at": "2026-09-21T15:56:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "router",
+    "yengi",
+    "qwen2",
+    "text-generation",
+    "tr",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 230,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1972097344,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen2.5-coder-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kdo nás dezinformuje? Aktuální přehled hlavních zd... | FORUM 24",
+      "url": "https://www.forum24.cz/kdo-nas-dezinformuje-aktualni-prehled-hlavnich-zdroju-a-siritelu-fake-news-v-cesku/",
+      "snippet": "Právě veřejně známé osoby, které server používají jako kanál pro prezentaci svých názorů a které Parlamentní listy citují jako …"
+    },
+    {
+      "title": "Úvahy „selským rozumem“. Bludy o Ukrajině a obdiv... | FORUM 24",
+      "url": "https://www.forum24.cz/uvahy-selskym-rozumem-bludy-o-ukrajine-a-obdiv-k-autoritarum",
+      "snippet": "Právě Parlamentní listy totiž vydaly 7. ledna „uměleckého kováře Jiřího Štrunce“. Ten se nad situací doma i ve světě zamyslel …"
+    },
+    {
+      "title": "Parlamentní listy ‐ Štítek | FORUM 24",
+      "url": "https://www.forum24.cz/stitek/parlamentni-listy",
+      "snippet": "PŘEDVOLEBNÍ DENÍK / Parlamentní listy jakožto hlavní mediální orgán proruské části českého obyvatelstva zažívají euforické časy. …"
+    },
+    {
+      "title": "Zemanova média: Soukup, Parlamentní listy, Mf DNES... | FORUM 24",
+      "url": "https://www.forum24.cz/zemanova-media-soukup-parlamentni-listy-mf-dnes-cim-vetsi-stret-zajmu-tim-lepe/",
+      "snippet": "Tak abychom si to shrnuli: Zeman se baví zásadně s médii, kde je někdo ve střetu zájmů: S Babišovou Mf DNES, s Valentovými …"
+    },
+    {
+      "title": "Marek Wollner: V čem neříkají Parlamentní listy pr... | FORUM 24",
+      "url": "https://www.forum24.cz/marek-wollner-v-cem-nerikaji-parlamentni-listy-pravdu-o-wollnerove-parte-a-reporterech-ct/",
+      "snippet": "Parlamentní listy jsem vyzval, aby uveřejnily opravu, což se ovšem nestalo, místo toho mi nabídly „prostor k reakci“. To ovšem …"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "simpledirect/Vinci-Bozza-1.0",
+  "slug": "simpledirect-vinci-bozza-1-0",
+  "author": "simpledirect",
+  "url": "https://huggingface.co/simpledirect/Vinci-Bozza-1.0",
+  "created_at": "2026-07-08T22:12:16.000Z",
+  "updated_at": "2026-09-21T22:25:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "character",
+    "constitutional-ai",
+    "dpo",
+    "simpledirect",
+    "vinci",
+    "conversational",
+    "chat",
+    "sft",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seelenklempner‎: Bedeutung, Definition",
+      "url": "https://www.wortbedeutung.info/Seelenklempner/",
+      "snippet": "Jul 10, 2026 · Ein „Seelenklempner“ ist eine umgangssprachliche, oft humorvolle Bezeichnung für einen Psychologen oder …"
+    },
+    {
+      "title": "Seelenklempner – Wiktionary",
+      "url": "https://de.wiktionary.org/wiki/Seelenklempner",
+      "snippet": "[1] Max braucht eine Psychotherapie, er geht deshalb zum Seelenklempner. [1] „Viele Japaner halten es für ein Zeichen von …"
+    },
+    {
+      "title": "Seelenklempner Rechtschreibung, Bedeutung, Definition, Herkunft Duden",
+      "url": "https://www.duden.de/rechtschreibung/Seelenklempner",
+      "snippet": "Definition, Rechtschreibung, Synonyme und Grammatik von 'Seelenklempner' ️ Auf Duden online nachschlagen ️ Wörterbuch der …"
+    },
+    {
+      "title": "Seelenklempner – Schreibung, Definition, Bedeutung, Synonyme ... - DWDS",
+      "url": "https://www.dwds.de/wb/Seelenklempner",
+      "snippet": "Startseite Wörterbuch Seelenklempner – Schreibung, Definition, Bedeutung, Synonyme, Beispiele"
+    },
+    {
+      "title": "seelenklempner.at",
+      "url": "https://seelenklempner.at/",
+      "snippet": ""
+    }
+  ]
+}

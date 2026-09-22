@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "prshah3349nd/mae-finetuned",
+  "slug": "prshah3349nd-mae-finetuned",
+  "author": "prshah3349nd",
+  "url": "https://huggingface.co/prshah3349nd/mae-finetuned",
+  "created_at": "2026-09-22T11:53:04.000Z",
+  "updated_at": "2026-09-22T11:53:09.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "فرنسا - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D9%81%D8%B1%D9%86%D8%B3%D8%A7",
+      "snippet": "احتلت فرنسا بعد حملة الحرب الخاطفة الألمانية في الحرب العالمية الثانية، مع العاصمة فرنسا وتنقسم إلى منطقة الاحتلال الألماني في الشمال وفرنسا فيشي، والنظام الاستبدادي الذي أنشئ حديثا ..."
+    },
+    {
+      "title": "فرنسا - ويكيبيديا",
+      "url": "https://arz.wikipedia.org/wiki/%D9%81%D8%B1%D9%86%D8%B3%D8%A7",
+      "snippet": "فرنسا كانت من اكبر القوى الاستعمارية فى العالم من اول القرن السبعتاشر و لحد القرن التسعتاشر و قدرت تبنى لنفسها واحدة من اكبر الامبراطوريات فى الدنيا من غرب افريقيا ولحد جنوب شرق اسيا و سابت ..."
+    },
+    {
+      "title": "10 معلومات عن دولة فرنسا | République française | فرنسا دولة بحر النبيذ ...",
+      "url": "https://www.youtube.com/watch?v=6cwoDrNvaDg",
+      "snippet": "Sep 22, 2025 · في هذا الفيديو نأخذكم في رحلة ممتعة داخل قلب **دولة فرنسا – République française**، لنتعرف معاً على أهم 10 معلومات شيقة ..."
+    },
+    {
+      "title": "بوابة:فرنسا - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%A8%D9%88%D8%A7%D8%A8%D8%A9:%D9%81%D8%B1%D9%86%D8%B3%D8%A7",
+      "snippet": "فرنسا (بالفرنسية: France) رسميا الجمهورية الفرنسية (بالفرنسية: République française) هي دولة أوروبية تقع في أوروبا الغربية ، والتي تتكون من مجموعة جزر وأراضٍ وراء البحار …"
+    },
+    {
+      "title": "فرنسا - CNN Arabic",
+      "url": "https://arabic.cnn.com/world/france",
+      "snippet": "فرنسا ماذا نتوقع حدوثه في اجتماعات الجمعية العامة للأمم المتحدة؟ تحليل.. ما بعد أوكرانيا: لماذا تستعد أوروبا لحرب أوسع نطاقا؟ \"كف عن ذرف دموع التماسيح\".. عراقجي يرد على نظيره الفرنسي …"
+    }
+  ]
+}

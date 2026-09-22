@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AfriSpeech/african-sentiment-id",
+  "slug": "afrispeech-african-sentiment-id",
+  "author": "AfriSpeech",
+  "url": "https://huggingface.co/AfriSpeech/african-sentiment-id",
+  "created_at": "2026-09-22T11:54:34.000Z",
+  "updated_at": "2026-09-22T11:56:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "fasttext",
+  "languages": [
+    "mul"
+  ],
+  "tags": [
+    "fasttext",
+    "sentiment-analysis",
+    "african-languages",
+    "g2p",
+    "universal-orthography",
+    "mul",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1884332365,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WEB.DE - kostenlose E-Mail-Adresse, FreeMail & Nachrichten",
+      "url": "https://web.de/",
+      "snippet": "Jul 30, 2026 · Jetzt Willkommens-Cashback sichern! WEB.Cent Kreditkarte 0 € Jahresgebühr, 0,5 % Cashback auf jeden Ihrer …"
+    },
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "WEB Windenergie AG",
+      "url": "https://www.web.energy/at-de",
+      "snippet": "Die WEB Windenergie AG ist ein internationales Energiewendeunternehmen. Jetzt zu Grünstrom aus Österreich wechseln und zum …"
+    },
+    {
+      "title": "WEB.DE Login - ganz einfach",
+      "url": "https://anmelden.web.de/",
+      "snippet": "Nach dem erfolgreichen Login bleiben Sie bei WEB.DE eingeloggt. An Ihrem eigenen Gerät müssen Sie sich daher nicht jedes Mal …"
+    },
+    {
+      "title": "WEB.DE Club - Login",
+      "url": "https://club.web.de/?mc=021105",
+      "snippet": "WEB.DE Club Center Neuigkeiten, Vorteile und exklusive Angebote für Club-Mitglieder finden Sie im Club Center. Klicken Sie einfach …"
+    }
+  ]
+}

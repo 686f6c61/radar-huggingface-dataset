@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Johnblick187/Qwen3-Omni-Coder",
+  "slug": "johnblick187-qwen3-omni-coder",
+  "author": "Johnblick187",
+  "url": "https://huggingface.co/Johnblick187/Qwen3-Omni-Coder",
+  "created_at": "2026-05-01T18:57:36.000Z",
+  "updated_at": "2026-09-21T23:16:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3_omni_moe",
+    "Qwen3MoE",
+    "merge",
+    "Custom-merge",
+    "Coder",
+    "Abliterated",
+    "Uncensored",
+    "any-to-any",
+    "en",
+    "base_model:huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 358,
+  "trending_score": 0,
+  "parameters": 35259818545,
+  "parameters_human": "35.26B",
+  "storage_bytes": 182661672418,
+  "storage_human": "182.7 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3-Omni-30B-A3B-Instruct-abliterated, huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Come, Holy Spirit ~ Jimmy Swaggart (1978) - YouTube",
+      "url": "https://www.youtube.com/watch?v=joyM0AC0pI8",
+      "snippet": "Jun 27, 2025 · The news on Jimmy this morning, 6/27/25, isn't the most encouraging. I never did get around to uploading all of my …"
+    },
+    {
+      "title": "Come Holy Spirit - Jimmy Swaggart - YouTube",
+      "url": "https://www.youtube.com/watch?v=z8Wi8LTuR3A",
+      "snippet": "Aug 30, 2021 · I want to turn from my sinful ways, so I now ask you, Lord Jesus, to come into my life as my Savior and my Lord. I will …"
+    },
+    {
+      "title": "Come Holy Spirit - Jimmy Swaggart - YouTube Music",
+      "url": "https://music.youtube.com/watch?v=z8Wi8LTuR3A",
+      "snippet": "If Jesus Comes Tomorrow, What Then? My way. Cover."
+    },
+    {
+      "title": "Come Holy Spirit - YouTube Music",
+      "url": "https://music.youtube.com/watch?v=1LnXWxDDECA",
+      "snippet": "Sign in to create & share playlists, get personalized recommendations, and more."
+    },
+    {
+      "title": "Come, Holy Spirit - song and lyrics by Jimmy Swaggart | Spotify",
+      "url": "https://open.spotify.com/track/5TIvS3JqHUQyLIVFh0qWTC",
+      "snippet": "Listen to Come, Holy Spirit on Spotify. Jimmy Swaggart · Song · 1978."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hydrahul/matching16",
+  "slug": "hydrahul-matching16",
+  "author": "hydrahul",
+  "url": "https://huggingface.co/hydrahul/matching16",
+  "created_at": "2026-09-22T11:59:39.000Z",
+  "updated_at": "2026-09-22T11:59:45.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tutorial Giacchino Rea uncinetto - luanadolciriflessi",
+      "url": "https://www.luanadolciriflessi.com/gicchino-uncinetto/",
+      "snippet": "May 3, 2023 · Tutorial giacchino all'uncinetto Rea! Le istruzioni e i consigli per realizzare un capo unico e personalizzato, perfetto per …"
+    },
+    {
+      "title": "Come fare una Giacchina a uncinetto facile e strepitosa!",
+      "url": "https://www.unideanellemani.it/come-fare-giacchina-uncinetto-spiegazioni",
+      "snippet": "May 28, 2020 · Spiegazioni per lavorare una bella giacca all’uncinetto a punto traforato. Facile da fare, bella sia in lana che cotone."
+    },
+    {
+      "title": "Giacca Natural a uncinetto | Sfilo e Creo: tutorial e schemi",
+      "url": "https://www.sfiloecreo.com/giacca-natural-a-uncinetto/",
+      "snippet": "Apr 10, 2026 · La stagione fredda è alle porte e noi non ci facciamo trovare impreparate. Ed ecco pronto un altro modello …"
+    },
+    {
+      "title": "Giacchino Super Elegante all’Uncinetto – Twinset Top Down",
+      "url": "https://www.luanadolciriflessi.com/giacchino-super-elegante-alluncinetto-twinset-top-down/",
+      "snippet": "Apr 23, 2024 · Scopri come realizzare un elegante giacchino all'uncinetto con il filato Morano beige. Tutorial completo per un capo …"
+    },
+    {
+      "title": "Giacchino all'Uncinetto: Modello Perfetto per la Mezza Stagione ...",
+      "url": "https://m.youtube.com/watch?v=olGsi7CH96k",
+      "snippet": "#dolciriflessi #filatidiscountCare amiche , in questo tutorial vi mostro come realizzare un giacchino all'uncinetto, perfetto per la mezza …"
+    }
+  ]
+}

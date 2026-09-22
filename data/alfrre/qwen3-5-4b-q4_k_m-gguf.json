@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "alfrre/Qwen3.5-4B-Q4_K_M-GGUF",
+  "slug": "alfrre-qwen3-5-4b-q4_k_m-gguf",
+  "author": "alfrre",
+  "url": "https://huggingface.co/alfrre/Qwen3.5-4B-Q4_K_M-GGUF",
+  "created_at": "2026-09-22T11:48:50.000Z",
+  "updated_at": "2026-09-22T11:49:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 2783446752,
+  "storage_human": "2.8 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Liczby od 1 do 100 – nauka dla dzieci | DarmowyAngielski.pl",
+      "url": "https://darmowyangielski.pl/blog/liczby-po-angielsku-nauka",
+      "snippet": "Mar 17, 2024 · Jak nauczyć dziecko liczb? Poznaj sprawdzone metody nauki od 1 do 100. Teens vs tens, liczebniki porządkowe, gry i …"
+    },
+    {
+      "title": "Liczby po Angielsku dla Dzieci, Nauka Online - ZdobywcyWiedzy.pl",
+      "url": "https://zdobywcywiedzy.pl/platforma/kursy/494/liczby-dla-dzieci-po-angielsku",
+      "snippet": "Liczenie do 100 po angielsku dla dzieci może być świetną zabawą! Nasza platforma edukacyjna dla dzieci oferuje nie tylko naukę …"
+    },
+    {
+      "title": "Liczby po angielsku 1-100 – wymowa, pisownia, ćwiczenia",
+      "url": "https://darmowyangielski.pl/slownictwo/liczby-po-angielsku",
+      "snippet": "Naucz się liczb po angielsku od 1 do 100. Lista z wymową i pisownią, przykłady zdań oraz quiz online. Idealne dla początkujących i …"
+    },
+    {
+      "title": "Liczby po angielsku dla dzieci Przewodnik | LearnLink",
+      "url": "https://learnlink.com/pl/artykuly/liczby-po-angielsku-dla-dzieci",
+      "snippet": "Kompletny przewodnik po nauce liczb po angielsku dla dzieci. Odkryj proste metody, gry i zabawy, aby Twoje dziecko polubiło …"
+    },
+    {
+      "title": "Liczby po angielsku 1-100 -1000 liczebniki wymowa, ćwiczenia",
+      "url": "https://www.helloangielski.pl/rozmowki/liczby-po-angielsku/",
+      "snippet": "Poznaj cyfry i liczebniki angielskie od 1 do 20 do stu i do tysiąca i dalej. Liczby angielskie z wymową, rymowankami, ćwiczeniami i …"
+    }
+  ]
+}

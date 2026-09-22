@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "hvsr-robotics/Matcha-TTS-PL",
+  "slug": "hvsr-robotics-matcha-tts-pl",
+  "author": "hvsr-robotics",
+  "url": "https://huggingface.co/hvsr-robotics/Matcha-TTS-PL",
+  "created_at": "2026-09-11T21:10:52.000Z",
+  "updated_at": "2026-09-21T21:13:51.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "matcha-tts",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "matcha-tts",
+    "onnx",
+    "tts",
+    "polish",
+    "flow-matching",
+    "multi-speaker",
+    "style-tokens",
+    "robot",
+    "text-to-speech",
+    "pl",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 869392130,
+  "storage_human": "869 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=de",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    }
+  ]
+}

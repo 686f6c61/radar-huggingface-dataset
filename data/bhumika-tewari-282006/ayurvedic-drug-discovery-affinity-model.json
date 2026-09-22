@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bhumika-tewari-282006/ayurvedic-drug-discovery-affinity-model",
+  "slug": "bhumika-tewari-282006-ayurvedic-drug-discovery-affinity-model",
+  "author": "bhumika-tewari-282006",
+  "url": "https://huggingface.co/bhumika-tewari-282006/ayurvedic-drug-discovery-affinity-model",
+  "created_at": "2026-09-22T11:35:44.000Z",
+  "updated_at": "2026-09-22T11:36:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "drug-discovery",
+    "cheminformatics",
+    "binding-affinity",
+    "ayurveda",
+    "random-forest",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3438345,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "windows - What is \"%AppData%\"? - Super User",
+      "url": "https://superuser.com/questions/632891/what-is-appdata",
+      "snippet": "The AppData\\Local and AppData\\Roaming locations are the preferred locations for applications to store data that is not required to be …"
+    },
+    {
+      "title": "A complete list of \"%%\" relative paths/variables in Windows Explorer in ...",
+      "url": "https://superuser.com/questions/1655266/a-complete-list-of-relative-paths-variables-in-windows-explorer-in-windows",
+      "snippet": "Jun 7, 2021 · I would like to know the full list of variables that I can use in Windows Explorer or related relative paths that is accepted …"
+    },
+    {
+      "title": "Newest 'appdata' Questions - Super User",
+      "url": "https://superuser.com/questions/tagged/appdata?tab=Newest",
+      "snippet": "Mar 31, 2024 · Q&A for computer enthusiasts and power users Use this tag when the topic is about the Windows %APPDATA% …"
+    },
+    {
+      "title": "Where do Start Menu\\All Programs shortcuts reside? - Super User",
+      "url": "https://superuser.com/questions/86078/where-do-start-menu-all-programs-shortcuts-reside",
+      "snippet": "Dec 21, 2009 · Remember you can also right-click a folder in the Start Menu and select Open for the current user's folder, or Open All …"
+    },
+    {
+      "title": "Adding folder and shortcut to Windows 10 Start Menu",
+      "url": "https://superuser.com/questions/1167961/adding-folder-and-shortcut-to-windows-10-start-menu",
+      "snippet": "Jan 16, 2017 · To clarify, do you want to see this shortcut on the All Apps list or on the Start Menu? Also, is this shortcut designed to …"
+    }
+  ]
+}

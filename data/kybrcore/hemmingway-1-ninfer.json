@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kybrcore/Hemmingway-1-NInfer",
+  "slug": "kybrcore-hemmingway-1-ninfer",
+  "author": "kybrcore",
+  "url": "https://huggingface.co/kybrcore/Hemmingway-1-NInfer",
+  "created_at": "2026-09-22T11:58:30.000Z",
+  "updated_at": "2026-09-22T12:16:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "quantized",
+    "groupwise-int",
+    "speculative-decoding",
+    "dflash2",
+    "mtp",
+    "qwen3.8",
+    "rtx-5090",
+    "text-generation",
+    "base_model:Altworld/Hemmingway-1",
+    "base_model:quantized:Altworld/Hemmingway-1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20141703168,
+  "storage_human": "20.1 GB",
+  "base_model": "Altworld/Hemmingway-1, Qwen/Qwen3.8-27B, z-lab/Qwen3.8-27B-DFlash2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Joinnus | Eventos en tu ciudad | Compra entradas ahora",
+      "url": "https://www.joinnus.com/",
+      "snippet": "Tu ciudad está llena de planes increíbles. Compra entradas en Joinnus y disfruta de conciertos, obras de teatro y más."
+    },
+    {
+      "title": "JOINAS DT SACCO SOCIETY LTD – We Fulfill Your Dreams",
+      "url": "https://joinassacco.com/",
+      "snippet": "Welcome to JOINAS DT SACCO Society LTD. Celebrating 25 years of transforming lives across Kenya through savings, affordable …"
+    },
+    {
+      "title": "JOINAS | Login",
+      "url": "https://app.joinas.net/",
+      "snippet": "Dont you have account? Signup now."
+    },
+    {
+      "title": "Portal JoiN-AS - Enel",
+      "url": "https://join-as.enel.com/br/s/?language=en_US",
+      "snippet": "O Portal JoiN-AS é a ferramenta destinada a gerir o processo de ocupação da Infraestrutura da ENEL. O portal permite que …"
+    },
+    {
+      "title": "About Us – JOINAS DT SACCO SOCIETY LTD",
+      "url": "https://joinassacco.com/about.html",
+      "snippet": "JOINAS DT SACCO SOCIETY LIMITED, formerly known as Kiambaa Dairy Rural Sacco Limited, was registered in November 1999 …"
+    }
+  ]
+}

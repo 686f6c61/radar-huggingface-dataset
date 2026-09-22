@@ -25,7 +25,7 @@
     "base_model:finetune:g-group-ai-lab/gwen-tts-0.6B",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 53,
   "trending_score": 0,
   "parameters": 905788672,

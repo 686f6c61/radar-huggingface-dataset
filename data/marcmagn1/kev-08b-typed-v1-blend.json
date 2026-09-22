@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "marcmagn1/kev-08b-typed-v1-blend",
+  "slug": "marcmagn1-kev-08b-typed-v1-blend",
+  "author": "marcmagn1",
+  "url": "https://huggingface.co/marcmagn1/kev-08b-typed-v1-blend",
+  "created_at": "2026-09-22T11:37:33.000Z",
+  "updated_at": "2026-09-22T12:03:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B-Base",
+    "lora",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65430668,
+  "storage_human": "65 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Freiform Tischplatte Melamin Dekor in 3 Größen",
+      "url": "https://www.tischplatte-online.de/tische-tischgestelle/tischplatten/freiform-25-mm",
+      "snippet": "Dank der ergonomischen Wölbung unserer Freiformtischplatte kein Problem. Mit einer Tiefe von 80 oder 100 cm schafft sie mehr …"
+    },
+    {
+      "title": "Tischplatte Freiform Multiplex nach Maß | woodworxxx",
+      "url": "https://www.woodworxxx.com/Multiplex-Tischplatte-Freiform",
+      "snippet": "Planen Sie Ihren individuellen Schreibtisch oder Werktisch nach Maß: Jede Freiform-Tischplatte wird bei uns komplett aus massivem, …"
+    },
+    {
+      "title": "Melamin Schreibtischplatte (25 mm) in Freiform | Ergolutions",
+      "url": "https://www.ergolutions.de/tische-tischgestelle/tischplatten/freiform-25-mm",
+      "snippet": "Dank der ergonomischen Wölbung unserer Freiformtischplatte kein Problem. Mit einer Tiefe von 80 oder 100 cm schafft sie mehr …"
+    },
+    {
+      "title": "Tischplatte K Freiform 180 x 100 cm - Büromöbel Experte",
+      "url": "https://www.bueromoebel-experte.de/bme-express-tischplatte-pl18/",
+      "snippet": "Mit dieser geschwungenen Tischplatte in verschiedenen Dekoren bieten sich viele individuelle Lösungen. Sie ist problemlos für …"
+    },
+    {
+      "title": "Freiform 25 mm - ergolutions.de",
+      "url": "https://www.ergolutions.de/tischgestelle-platten/tischplatten/melamin-tischplatten/freiform-25-mm/",
+      "snippet": "Robuste Schreibtischplatte in Freiform. Tischlerqualität in 25 mm Plattenstärke. Beidseitig verwendbar: Wölbung links oder rechts."
+    }
+  ]
+}

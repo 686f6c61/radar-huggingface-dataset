@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "kontext-security/Merlin",
+  "slug": "kontext-security-merlin",
+  "author": "kontext-security",
+  "url": "https://huggingface.co/kontext-security/Merlin",
+  "created_at": "2026-09-22T11:49:59.000Z",
+  "updated_at": "2026-09-22T11:52:04.000Z",
+  "license": "merlin-research-release",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "agents",
+    "agent-safety",
+    "tool-use",
+    "prompt-injection",
+    "deberta-v3",
+    "base_model:microsoft/deberta-v3-xsmall",
+    "base_model:finetune:microsoft/deberta-v3-xsmall",
+    "license:other",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70794242,
+  "parameters_human": "70.8M",
+  "storage_bytes": 283201512,
+  "storage_human": "283 MB",
+  "base_model": "microsoft/deberta-v3-xsmall",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qualcomm Insight Platform | Edge AI VSaaS",
+      "url": "https://www.qualcomm.com/news/onq/2025/12/qualcomm-insight-platform-edge-ai-video-saas",
+      "snippet": "Dec 4, 2025 · What you should know: The Qualcomm Insight Platform embeds native AI directly into the video stack, transforming …"
+    },
+    {
+      "title": "Qualcomm Insight Platform: Edge AI for Security",
+      "url": "https://www.qualcomm.com/news/onq/2026/03/qualcomm-insight-platform-edge-ai-security",
+      "snippet": "Mar 24, 2026 · Discover how the Qualcomm Insight Platform brings native edge AI to smart cameras, transforming passive video …"
+    },
+    {
+      "title": "Intelligent Systems-Products-Everfocus",
+      "url": "https://www.everfocus.com/products/intelligent-systems/Qualcomm-Edge-AI-Computing-Platform/Qualcomm-AI-Computing-Platform/",
+      "snippet": "Built on Qualcomm® Arm-based architectures, these platforms combine advanced CPU, GPU, and NPU capabilities to support real …"
+    },
+    {
+      "title": "AI Edge Box with Qualcomm® QCS6490 for Smart AI Applications",
+      "url": "https://www.vvdntech.com/vision/vvdn-qcs6490-edge-ai-box",
+      "snippet": "VVDN has designed and developed an AI Edge Box based on the Qualcomm® Snapdragon™ SoC QCS6490, optimized for high …"
+    },
+    {
+      "title": "Smart Surveillance: Vision Intelligence powered by Qualcomm® …",
+      "url": "https://aicity.global/en/solution-detail?id=smart_surveillance",
+      "snippet": "Qualcomm Insight Platform (QIP) delivers end-to-end video intelligence with on-device AI, real-time edge analytics, and multimodal …"
+    }
+  ]
+}

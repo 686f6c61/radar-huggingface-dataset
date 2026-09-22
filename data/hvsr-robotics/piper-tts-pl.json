@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "hvsr-robotics/Piper-TTS-PL",
+  "slug": "hvsr-robotics-piper-tts-pl",
+  "author": "hvsr-robotics",
+  "url": "https://huggingface.co/hvsr-robotics/Piper-TTS-PL",
+  "created_at": "2026-09-11T21:10:52.000Z",
+  "updated_at": "2026-09-21T21:13:54.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "piper",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "piper",
+    "onnx",
+    "tts",
+    "polish",
+    "vits",
+    "multi-speaker",
+    "text-to-speech",
+    "pl",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78752798,
+  "storage_human": "79 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Radar",
+      "url": "https://radar.avrotros.nl/",
+      "snippet": "Radar is het consumentenprogramma van AVROTROS, met Antoinette Hertsenberg en Fons Hendriks. Radar onderzoekt …"
+    },
+    {
+      "title": "エネコインベストメント株式会社という会社について教えて下さい …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11323849331",
+      "snippet": "Jan 2, 2026 · https://eneco-inv.co.jp/#section02 「VanaH」というミネラルウォーターの会社が出てきますが、この件については私 …"
+    },
+    {
+      "title": "Hoge eindafrekening Eneco stadsverwarming !! - Radar",
+      "url": "https://radar-forum.avrotros.nl/energie-f51/hoge-eindafrekening-eneco-stadsverwarming-t66642.html",
+      "snippet": "Dec 15, 2008 · Beste mensen, Ik zit met n ernstig hoge afrekening van eneco vwb. de warmtemeting. Ik woon in n …"
+    },
+    {
+      "title": "Eneco Thuis Ketel Abonnement - Radar",
+      "url": "https://radar-forum.avrotros.nl/energie-f51/eneco-thuis-ketel-abonnement-t205464.html",
+      "snippet": "Jan 31, 2026 · Wij hebben een geschil met Eneco Thuis. Sinds 2023 hebben wij bij Eneco sinds 1 november 2025: Eneco Thuis een …"
+    },
+    {
+      "title": "テプラで①や②のように出すにはどのようにしたらよろしいのでしょ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q127783837",
+      "snippet": "Mar 27, 2006 · テプラで①や②のように出すにはどのようにしたらよろしいのでしょうか。お知恵お願い致します。 テプラで①や② …"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "cftcimert/cifake-efficientnet-b0",
+  "slug": "cftcimert-cifake-efficientnet-b0",
+  "author": "cftcimert",
+  "url": "https://huggingface.co/cftcimert/cifake-efficientnet-b0",
+  "created_at": "2026-09-22T11:56:17.000Z",
+  "updated_at": "2026-09-22T12:00:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-classification",
+    "efficientnet",
+    "deepfake-detection",
+    "ai-generated-image-detection",
+    "cifake",
+    "transfer-learning",
+    "pytorch",
+    "binary-classification",
+    "dataset:birdy654/cifake-real-and-ai-generated-synthetic-images",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16661615,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Binary Image Classification",
+      "dataset": "CIFAKE",
+      "metric": "Test Accuracy",
+      "value": 97.85
+    }
+  ],
+  "sources": [
+    {
+      "title": "Die richtige Größe S, M, L, XL finden + Ermitteln",
+      "url": "https://www.blitzrechner.de/herrengroessen/",
+      "snippet": "May 13, 2026 · Ganz einfach & schnell die richtige S, M, L, XL Größe finden. Kleidergrößen-Größentabellen für Deutsche und …"
+    },
+    {
+      "title": "Größentabelle für Herren | Konfektionsgröße ermitteln",
+      "url": "https://www.peek-cloppenburg.de/de/groessentabellen-herren?msockid=0c167cbae63666cf02416b66e7f36707",
+      "snippet": "Mit unseren Größentabellen für Kleidung und Schuhe finden Herren schnell und einfach die richtige Konfektionsgröße. Außerdem …"
+    },
+    {
+      "title": "Konfektionsgrößen & Kleidergrößen umrechnen + Tabelle",
+      "url": "https://www.blitzrechner.de/konfektionsgroessen/",
+      "snippet": "May 13, 2026 · Entdecken Sie umfassende Größentabellen für Damen und Herren sowie eine einfache Messanleitung, mit der Sie …"
+    },
+    {
+      "title": "Konfektionsgröße – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Konfektionsgr%C3%B6%C3%9Fe",
+      "snippet": "Bei Sport- und Freizeitbekleidung sind in den USA für Damen und Herren die Größen S–XL (nach unten und oben durch zusätzliche …"
+    },
+    {
+      "title": "Größentabelle Konfektionsgrößen Größen Trachtenmode …",
+      "url": "https://www.germanwear.de/kunden-einkaufshilfe/konfektionsgroessen",
+      "snippet": "Internationale Größe XL ist deutsche Damengröße 42, mit 94-97 cm Brustumfang und 78-81 cm Taillenumfang. Internationale Größe …"
+    }
+  ]
+}

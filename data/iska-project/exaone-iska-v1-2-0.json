@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "iSKA-project/exaone-iSKA-v1.2.0",
+  "slug": "iska-project-exaone-iska-v1-2-0",
+  "author": "iSKA-project",
+  "url": "https://huggingface.co/iSKA-project/exaone-iSKA-v1.2.0",
+  "created_at": "2026-09-22T11:50:53.000Z",
+  "updated_at": "2026-09-22T11:58:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "exaone",
+    "custom_code",
+    "arxiv:2412.04862",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7818448896,
+  "parameters_human": "7.82B",
+  "storage_bytes": 15636938728,
+  "storage_human": "15.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 Best Madrid Hotels, Spain (From £63) - Booking.com",
+      "url": "https://www.booking.com/city/es/madrid.en-gb.html?msockid=1b98b43646df6ec2316aa3ea47d26fd2",
+      "snippet": "Great savings on hotels in Madrid, Spain online. Good availability and great rates. Read hotel reviews and choose the best hotel deal …"
+    },
+    {
+      "title": "Hotels.com - Deals & Discounts for Hotel Reservations from Luxury ...",
+      "url": "https://www.hotels.com/uk/?msockid=1b98b43646df6ec2316aa3ea47d26fd2",
+      "snippet": "Find cheap hotels and discounts when you book on Hotels.com. Compare hotel deals, offers and read unbiased reviews on hotels."
+    },
+    {
+      "title": "Hotels | Book last-minute hotels & more | Booking.com",
+      "url": "https://www.booking.com/hotel/index.en-gb.html?msockid=1b98b43646df6ec2316aa3ea47d26fd2",
+      "snippet": "Sep 1, 2026 · Find, compare and book the best hotels on Booking.com! Discover cheap hotels, hotels near you, hotels for last-minute …"
+    },
+    {
+      "title": "THE 10 BEST Hotels in Madrid 2026",
+      "url": "https://www.tripadvisor.com/Hotels-g187514-Madrid-Hotels.html",
+      "snippet": "View deals from $41 per night, see photos and read reviews for the best Madrid hotels from travelers like you - then compare today's …"
+    },
+    {
+      "title": "Hotels: Compare Cheap Hotel Deals & Discounts | KAYAK",
+      "url": "https://www.kayak.co.uk/hotels",
+      "snippet": "KAYAK searches hundreds of travel sites so you can find the perfect hotel at the right price. Read millions of verified guest reviews …"
+    }
+  ]
+}

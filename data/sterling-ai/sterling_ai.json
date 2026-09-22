@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Sterling-Ai/Sterling_AI",
+  "slug": "sterling-ai-sterling_ai",
+  "author": "Sterling-Ai",
+  "url": "https://huggingface.co/Sterling-Ai/Sterling_AI",
+  "created_at": "2026-07-24T06:14:46.000Z",
+  "updated_at": "2026-09-21T22:35:19.000Z",
+  "license": "bsl",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "inprogres",
+    "video",
+    "diffusion",
+    "python",
+    "safetensors",
+    "text-to-video",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Raheem Sterling - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Raheem_Sterling",
+      "snippet": "Sterling began his career at Queens Park Rangers, before signing for Liverpool in 2010. He was awarded the Golden Boy award in …"
+    },
+    {
+      "title": "Raheem Sterling — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Raheem_Sterling",
+      "snippet": "En février 2014, il réalise un doublé face à Arsenal lors d'une large victoire 5-1. Sterling marque à nouveau contre Manchester City …"
+    },
+    {
+      "title": "Raheem Sterling - Player profile | Transfermarkt",
+      "url": "https://www.transfermarkt.com/raheem-sterling/profil/spieler/134425",
+      "snippet": "Aug 12, 1994 · Raheem Sterling is a 31-year old football player aus England, (* 08/12/1994 in Kingston, Jamaica). Sterling is …"
+    },
+    {
+      "title": "Mercato Raheem Sterling, Transferts, Actualités de Raheem Sterling",
+      "url": "https://www.livefoot.fr/joueur/raheem-sterling/actualite/",
+      "snippet": "4 days ago · Toute l'actualité mercato, transferts et actualité foot de Raheem Sterling. Toutes les dernières news de Raheem Sterling …"
+    },
+    {
+      "title": "SES-STERLING – Votre expert tout autour du câble depuis 1928",
+      "url": "https://www.ses-sterling.com/",
+      "snippet": "SES-STERLING c'est 26 000 références d'accessoires de câblage en stock : protection et isolation des câbles, repérage des câbles, …"
+    }
+  ]
+}

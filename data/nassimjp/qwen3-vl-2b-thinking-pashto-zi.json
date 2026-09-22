@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "nassimjp/Qwen3-VL-2B-Thinking-Pashto-Zi",
+  "slug": "nassimjp-qwen3-vl-2b-thinking-pashto-zi",
+  "author": "nassimjp",
+  "url": "https://huggingface.co/nassimjp/Qwen3-VL-2B-Thinking-Pashto-Zi",
+  "created_at": "2026-09-22T11:34:18.000Z",
+  "updated_at": "2026-09-22T12:10:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "پښتو",
+    "pashto",
+    "pashto-language",
+    "urdu",
+    "اردو",
+    "Persian",
+    "فارسی",
+    "Sindhi",
+    "سنڌي",
+    "Balochi",
+    "بلوچی",
+    "tokenizer",
+    "tokenizer-extension",
+    "embedding",
+    "language-model",
+    "vision-language",
+    "causal-lm",
+    "Qwen3-VL",
+    "Qwen",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-2B-Thinking",
+    "base_model:finetune:Qwen/Qwen3-VL-2B-Thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2127048704,
+  "parameters_human": "2.13B",
+  "storage_bytes": 4265601862,
+  "storage_human": "4.3 GB",
+  "base_model": "Qwen/Qwen3-VL-2B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Punct unic de acces - ForexePublic - MF",
+      "url": "https://forexepublic.mfinante.gov.ro/",
+      "snippet": "Ați accesat Portalul FOREXEBUG al Ministerului Finanțelor! Bun venit! Pentru accesarea funcționalităților Punctului Unic de Acces, …"
+    },
+    {
+      "title": "Formulare - ForexePublic - MF",
+      "url": "https://mfinante.gov.ro/web/forexepublic/formulare",
+      "snippet": "F1111 Situatia actiunilor detinute de institutiile publice (V28) F1112 Situatia actiunilor partilor sociale (V28) F1113 Situatia stocurilor …"
+    },
+    {
+      "title": "Guvernul Romaniei - Pagina logout!",
+      "url": "https://forexe.mfinante.gov.ro/",
+      "snippet": "Va rugam sa va asigurati ca certificatul digital poate fi citit de pe token prin intermediul browser-ului si nici un alt program nu …"
+    },
+    {
+      "title": "Informatii publice - ForexePublic - MF",
+      "url": "https://mfinante.gov.ro/web/forexepublic/informatii-publice",
+      "snippet": "Acest site a fost realizat exclusiv cu resursele interne ale Ministerului Finanțelor, urmând o schiță de design oferită cu titlu gratuit de …"
+    },
+    {
+      "title": "Pagina login - ANAF",
+      "url": "https://financiar.anaf.ro/anaf/extranet/Aplicatii/punct_unic_acces/!ut/p/a1/lVNNb4JAEP0r9OARdxZ2BY5ULVJLoKVW5UIQF0Mii8GPmv76DvQrtRHtnHZn3nszbzZLIjIjkUwO-SrZ5aVM1vU96sWOOQJqhXAPrj8A2wfHopzpMNYQMEdA37FHzHgAcB7ZLbiG54-HT6aOp4Z_rjykn3w4EzZcx28B_JrfH2HS5jbnY9PRAL7mbwG08f1LfF-7tL9QSDIlUavNeosNoG1NJ410VKjnCI2Jhz56p4C_RufoxPgBOMOXwbcC9qAkrDWmfS8OXDKn9UVu41ZK3KArccjL_TZIVqK70IVJ00xT9STjKrOYpZpsyVULkiUwCgbNsn-Jo2iYv10tzGvl_jO-Wgc2ZbVL1llZiaPowKBM94WQO6G4EnMF_oBcCfaLdZ5i1U6xID_SB6H43l2gyKrLezrZFBOM2dHNg6Iw9cJ8tW_eAe2z8sA!/dl5/d5/L3dDb1ZJQSEhL3dPb0JKTnNBLzRQeWhDQlVZV0JFIS8wLzIvbG8!/",
+      "snippet": "Va rugam sa va autentificati utilizand certificatul digital. Continutul acestui site este proprietatea Agentiei Nationale de Administrare …"
+    }
+  ]
+}

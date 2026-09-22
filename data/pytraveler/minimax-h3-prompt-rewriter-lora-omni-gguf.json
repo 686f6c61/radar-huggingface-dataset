@@ -29,8 +29,8 @@
     "base_model:adapter:lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA-Omni",
     "region:us"
   ],
-  "likes": 6,
-  "downloads_30d": 2321,
+  "likes": 7,
+  "downloads_30d": 2390,
   "trending_score": 0,
   "parameters": 322961408,
   "parameters_human": "323.0M",

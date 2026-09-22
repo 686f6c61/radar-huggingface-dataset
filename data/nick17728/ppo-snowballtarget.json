@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nick17728/ppo-SnowballTarget",
+  "slug": "nick17728-ppo-snowballtarget",
+  "author": "nick17728",
+  "url": "https://huggingface.co/nick17728/ppo-SnowballTarget",
+  "created_at": "2026-09-22T11:38:57.000Z",
+  "updated_at": "2026-09-22T11:51:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26412549,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Washington Capitals vs. New York Rangers | Full Game Highlights",
+      "url": "https://www.youtube.com/watch?v=kdsWQxn9uOw",
+      "snippet": "Apr 5, 2026 · New York Rangers | Full Game Highlights | ESPN NHL. Check out highlights from the New York Rangers’ 8-1 win over …"
+    },
+    {
+      "title": "New York Rangers - Washington Capitals - Dec 31, 2025 | NHL.com",
+      "url": "https://www.nhl.com/gamecenter/nyr-vs-wsh/2025/12/31/2025020622",
+      "snippet": "Dec 31, 2025 · NHL Gamecenter - New York Rangers vs. Washington Capitals, Dec 31, 2025 - summary, stats, boxscore, play by …"
+    },
+    {
+      "title": "Washington Capitals - New York Rangers - Oct 12, 2025 | NHL.com",
+      "url": "https://www.nhl.com/gamecenter/wsh-vs-nyr/2025/10/12/2025020038",
+      "snippet": "Oct 12, 2025 · NHL Gamecenter - Washington Capitals vs. New York Rangers, Oct 12, 2025 - summary, stats, boxscore, play by …"
+    },
+    {
+      "title": "Capitals vs Rangers scores & predictions | Sofascore",
+      "url": "https://www.sofascore.com/ice-hockey/match/new-york-rangers-washington-capitals/Qybsbzb",
+      "snippet": "Washington Capitals vs New York Rangers scores, schedule, stats, head to head and prediction"
+    },
+    {
+      "title": "2025-26 New York Rangers Schedule | Hockey-Reference.com",
+      "url": "https://www.hockey-reference.com/teams/NYR/2026_games.html",
+      "snippet": "Check out the latest New York Rangers Schedule and Results for regular season, playoffs and more on Hockey-Reference.com"
+    }
+  ]
+}
