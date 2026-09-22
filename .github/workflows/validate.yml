@@ -6,6 +6,11 @@ on:
   pull_request:
   workflow_dispatch:
     inputs:
+      tag:
+        description: 'Crear la release de un tag ya existente (p. ej. v29.0.0); vacio = flujo normal'
+        required: false
+        default: ''
+        type: string
       slot:
         description: 'Franja de versionado (auto = segun la hora de la pasada)'
         required: false
@@ -13,8 +18,8 @@ on:
         type: choice
         options: [auto, major, minor, patch]
   schedule:
-    # Validacion diaria por si algo degrada con el tiempo
-    - cron: '23 5 * * *'
+    # Validacion + control de frescura cada 6 h, siempre en punto
+    - cron: '0 */6 * * *'
 
 jobs:
   validate-data:
@@ -49,8 +54,27 @@ jobs:
       - name: dist/ ignorado
         run: grep -q "^dist/" .gitignore || { echo ".gitignore no cubre dist/"; exit 1; }
 
+  freshness:
+    # Red de seguridad del worker de Contabo: si deja de publicar (en sep-2026
+    # estuvo 6 dias caido sin que nadie se enterara), este job falla y GitHub
+    # avisa por correo. Mide index.json.updated_at, la hora del export.
+    name: Dataset al dia
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.tag == '')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ultimo export con menos de 20 h
+        run: |
+          MAX_H=20   # pasadas cada 8 h: tolera una perdida + margen
+          AGE_H=$(node -p "Math.floor((Date.now() - Date.parse(require('./index.json').updated_at)) / 36e5)")
+          echo "Ultimo export hace ${AGE_H} h"
+          [ "$AGE_H" -le "$MAX_H" ] || { echo "::error::Dataset obsoleto: ${AGE_H} h sin export (max ${MAX_H} h)"; exit 1; }
+
   release:
     name: Releases (latest + versionada)
+    # La ejecucion programada no publica: refrescar latest con datos viejos
+    # daba una falsa sensacion de frescura
+    if: github.event_name != 'schedule' && inputs.tag == ''
     runs-on: ubuntu-latest
     needs: [validate-data, repo-docs]
     permissions:
@@ -67,7 +91,12 @@ jobs:
       - name: Actualizar release latest (flotante)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release create latest dist/models.jsonl.gz --title latest --notes "Bulk mas reciente del dataset" || gh release upload latest dist/models.jsonl.gz --clobber
+        run: |
+          if gh release view latest >/dev/null 2>&1; then
+            gh release upload latest dist/models.jsonl.gz --clobber
+          else
+            gh release create latest dist/models.jsonl.gz --title latest --notes "Bulk mas reciente del dataset"
+          fi
       - name: Release numerada (push con cambios de datos, o dispatch manual)
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         env:
@@ -86,3 +115,42 @@ jobs:
             --title "$NEXT" \
             --notes "Snapshot del dataset: $TOTAL modelos ($(date -u +%Y-%m-%d)). El release \`latest\` siempre apunta a la version mas reciente."
           echo "Release $NEXT creada ($TOTAL modelos)"
+
+  release-tag:
+    # Release de un tag concreto (p. ej. franjas reconstruidas tras un hueco
+    # del worker). No toca latest ni calcula version: el tag ya existe.
+    name: Release de un tag existente
+    if: github.event_name == 'workflow_dispatch' && inputs.tag != ''
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validar el tag
+        run: node scripts/validate.mjs
+      - name: Construir models.jsonl.gz
+        run: node scripts/build-bulk.mjs
+      - name: Crear la release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ inputs.tag }}
+        run: |
+          set -e
+          TOTAL=$(node -p "require('./index.json').models")
+          DAY=$(node -p "require('./index.json').updated_at.slice(0, 10)")
+          NOTES="Snapshot del dataset: $TOTAL modelos ($DAY). El release \`latest\` siempre apunta a la version mas reciente."
+          if git log -1 --format=%s | grep -q reconstruido; then
+            NOTES="$NOTES
+
+          **Release reconstruida** desde la BD del radar: el worker estuvo caido del 17 al 22-sep-2026. Pertenencia estimada a partir del ultimo dataset publicado (v28.1.1) y la fecha de creacion en HF; likes, descargas y trending del snapshot diario de metricas; ficha y resto de metadatos con su valor actual. Desviacion frente a los recuentos reales del worker: menor del 0,2 %."
+          fi
+          NEWEST=$(git tag -l 'v*' --sort=-v:refname | head -1)
+          LATEST=false; [ "$TAG" = "$NEWEST" ] && LATEST=true
+          gh release create "$TAG" dist/models.jsonl.gz --verify-tag --title "$TAG" --notes "$NOTES" --latest=$LATEST
+          echo "Release $TAG creada ($TOTAL modelos, latest=$LATEST)"

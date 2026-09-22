@@ -34,7 +34,7 @@ responder preguntas mejores:
   no solo el acumulado histórico que favorece a los modelos viejos.
 - **Qué desaparece** — el hub no anuncia las bajas. Cada modelo retirado queda
   aquí marcado (`removed`, `removed_at`): son las lápidas del ecosistema.
-- **Cómo evoluciona todo** — al actualizarse cada 12 horas y quedar cada
+- **Cómo evoluciona todo** — al actualizarse tres veces al día y quedar cada
   versión numerada, el historial de releases es una serie temporal del
   ecosistema OSS que no se puede reconstruir a posteriori desde la API.
 
