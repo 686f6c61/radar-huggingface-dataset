@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Nitral-Archive/Mia-26B",
+  "slug": "nitral-archive-mia-26b",
+  "author": "Nitral-Archive",
+  "url": "https://huggingface.co/Nitral-Archive/Mia-26B",
+  "created_at": "2026-09-22T16:26:58.000Z",
+  "updated_at": "2026-09-22T16:27:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+    "base_model:finetune:unsloth/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32169626,
+  "storage_human": "32 MB",
+  "base_model": "unsloth/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NITRAL - Bodycote",
+      "url": "https://www.bodycote.com/wp-content/uploads/2018/02/FICHE_Nitral-fev2013.pdf",
+      "snippet": "Cames mécaniques usinées traitées NITRAL® Il est possible de faire suivre ces traitements par un parachèvement avec une …"
+    },
+    {
+      "title": "NITRONAL 1 mg/ml, solution pour perfusion - VIDAL",
+      "url": "https://www.vidal.fr/medicaments/nitronal-1-mg-ml-sol-p-perf-71961.html",
+      "snippet": "Aug 20, 2026 · Les informations sur le médicament NITRONAL 1 mg/ml sol p perf sur VIDAL : Formes et présentations, Composition, …"
+    },
+    {
+      "title": "Nital - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nital",
+      "snippet": "Nital is a solution of nitric acid and alcohol commonly used for etching of metals. It is especially suitable for revealing the …"
+    },
+    {
+      "title": "NITRAL - Bodycote",
+      "url": "https://www.bodycote.com/wp-content/uploads/2018/10/FICHE_Nitral-2018.pdf",
+      "snippet": "OBJECTIFS, AVANTAGES ET PROPRIÉTÉS DU NITRAL® • Maîtrise de la géométrie des pièces (traitement sur pièces finies) sous …"
+    },
+    {
+      "title": "Ephy - Nitral sec nitral - Anses",
+      "url": "https://ephy.anses.fr/ppp/nitral-sec",
+      "snippet": "Ephy - NITRAL SEC - [Aucun] Mise à jour le 23/12/2025"
+    }
+  ]
+}

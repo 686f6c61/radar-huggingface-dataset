@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "EM-jusCodes/FrutiGan.285",
+  "slug": "em-juscodes-frutigan-285",
+  "author": "EM-jusCodes",
+  "url": "https://huggingface.co/EM-jusCodes/FrutiGan.285",
+  "created_at": "2026-09-22T13:21:27.000Z",
+  "updated_at": "2026-09-22T13:37:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "computer-vision",
+    "text-to-image",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3696476,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "emlyon business school | Grande école de commerce et de management",
+      "url": "https://em-lyon.com/fr",
+      "snippet": "emlyon business school, une grande école de commerce proposant le Programme Grande Ecole, des MS, MSc in, un MBA ainsi que …"
+    },
+    {
+      "title": "EM.Webshop | Elektro-Material shop",
+      "url": "https://www.elektro-material.ch/fr/shop",
+      "snippet": "Mit über 250‘000 Qualitätsartikeln und einem umfassenden Dienstleistungsangebot bietet EM der Elektro-Installations-Branche das …"
+    },
+    {
+      "title": "eM Client | Le meilleur client pour Windows et Mac",
+      "url": "https://fr.emclient.com/",
+      "snippet": "eM Client est l'application de messagerie la plus polyvalente du marché. Connectez-vous à n'importe quel service de messagerie en …"
+    },
+    {
+      "title": "EM Strasbourg Business School",
+      "url": "https://www.em-strasbourg.com/fr",
+      "snippet": "Située au cœur de l’Europe, l’EM Strasbourg vous propose des formations avec une forte empreinte internationale. Au sein de …"
+    },
+    {
+      "title": "EM — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/EM",
+      "snippet": "Un em (typographie) (abréviation anglaise pour cadratin) est une unité de mesure de longueur des espaces. C'est une unité utilisée …"
+    }
+  ]
+}

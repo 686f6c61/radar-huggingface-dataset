@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "leobianco/npov_RM_organic_Qwen2_5-1_5B-Instruct_S130104_epo8_lr1_1e-03_r32_2609221659",
+  "slug": "leobianco-npov_rm_organic_qwen2_5-1_5b-instruct_s130104_epo8_lr1_1e-03_r32_2609221659",
+  "author": "leobianco",
+  "url": "https://huggingface.co/leobianco/npov_RM_organic_Qwen2_5-1_5B-Instruct_S130104_epo8_lr1_1e-03_r32_2609221659",
+  "created_at": "2026-09-22T17:00:29.000Z",
+  "updated_at": "2026-09-22T17:01:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "lora",
+    "transformers",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55116230,
+  "storage_human": "55 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/reels/",
+      "snippet": "Instagram Reels lets you create and discover short, entertaining videos with audio, effects, and creative tools to share with friends or …"
+    },
+    {
+      "title": "About Instagram: Features, Safety, Community & More",
+      "url": "https://about.instagram.com/",
+      "snippet": "Learn about Instagram: how the app works, key features, safety tools, teen accounts, parent resources, community programs, and …"
+    },
+    {
+      "title": "Help Center",
+      "url": "https://help.instagram.com/442610612501386/",
+      "snippet": "Find answers to your questions about Instagram features, account settings, and troubleshooting in the Instagram Help Center."
+    },
+    {
+      "title": "Edits by Instagram: A Video Creation App for Easy Editing & Sharing ...",
+      "url": "https://creators.instagram.com/edits?locale=en_US",
+      "snippet": "Turn your ideas into stunning videos with Edits, a new video creation app from Instagram. Edit, create, and share with ease using …"
+    }
+  ]
+}

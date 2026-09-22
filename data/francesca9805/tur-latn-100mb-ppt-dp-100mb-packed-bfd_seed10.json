@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/tur-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10",
+  "slug": "francesca9805-tur-latn-100mb-ppt-dp-100mb-packed-bfd_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/tur-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10",
+  "created_at": "2026-09-22T13:43:03.000Z",
+  "updated_at": "2026-09-22T13:48:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/tur_latn_100mb",
+    "base_model:finetune:goldfish-models/tur_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 250777300,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/tur_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is Kahoot! | How to play Kahoot!",
+      "url": "https://kahoot.com/what-is-kahoot/",
+      "snippet": "Jun 5, 2019 · What is Kahoot!? Kahoot! is a game-based learning platform that makes it easy to create, share and play learning …"
+    },
+    {
+      "title": "Kahoot! app | Free Kahoot! learning app for iOS and Android",
+      "url": "https://kahoot.com/home/mobile-app/",
+      "snippet": "The Kahoot! app is a free quiz and trivia game app for iOS, Android, and macOS. It lets you create your own quiz games, host live …"
+    },
+    {
+      "title": "¡Cómo iniciar sesión en tu Kahoot! cuenta",
+      "url": "https://support.kahoot.com/hc/es/articles/11064559523731--C%C3%B3mo-iniciar-sesi%C3%B3n-en-tu-Kahoot-cuenta",
+      "snippet": "Cómo iniciar sesión con el inicio de sesión único (SSO) Utilizar el inicio de sesión único (SSO) es la forma más rápida de acceder a …"
+    },
+    {
+      "title": "So benutzt du Kahoot! kostenlos als Teilnehmer oder Student",
+      "url": "https://support.kahoot.com/hc/de/articles/4409807867539-So-benutzt-du-Kahoot-kostenlos-als-Teilnehmer-oder-Student",
+      "snippet": "Willkommen bei Kahoot! Falls Sie sich fragen, wie Sie Kahoot! nutzen können, kostenlos – dann sind Sie hier genau richtig. In …"
+    },
+    {
+      "title": "Kahoot Status",
+      "url": "https://status.kahoot.com/",
+      "snippet": "Welcome to Kahoot's home for real-time and historical data on system performance."
+    }
+  ]
+}

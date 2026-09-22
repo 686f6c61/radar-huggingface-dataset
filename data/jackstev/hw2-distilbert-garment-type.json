@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "jackstev/hw2-distilbert-garment-type",
+  "slug": "jackstev-hw2-distilbert-garment-type",
+  "author": "jackstev",
+  "url": "https://huggingface.co/jackstev/hw2-distilbert-garment-type",
+  "created_at": "2026-09-22T19:07:21.000Z",
+  "updated_at": "2026-09-22T19:07:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "fine-tuned",
+    "24-679",
+    "en",
+    "dataset:leixiang25/24679-hw1-text-garments",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66957317,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267841796,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "Conservative - Reddit",
+      "url": "https://www.reddit.com/r/Conservative/",
+      "snippet": "The largest conservative subreddit. https://discord.gg/conservative"
+    },
+    {
+      "title": "Icy Veins - Homepage",
+      "url": "https://www.icy-veins.com/",
+      "snippet": "Icy Veins provides news and detailed guides for World of Warcraft, Diablo, WoW Classic, FFXIV, and more..."
+    },
+    {
+      "title": "World of Warcraft Forever Guides and News - Icy Veins",
+      "url": "https://www.icy-veins.com/wow-forever/",
+      "snippet": "Sep 12, 2026 · Icy Veins provides detailed guides and news for World of Warcraft Forever."
+    },
+    {
+      "title": "Wordle unlimited new york times Crossword Clue - Words Answers",
+      "url": "https://wordsanswers.info/cross/clue/wordle-unlimited-new-york-times",
+      "snippet": "Here you will find the 5 letters answer to the crossword clue ' Wordle unlimited new york times ' which was last seen September 29 …"
+    }
+  ]
+}

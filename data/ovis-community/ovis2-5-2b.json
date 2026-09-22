@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ovis-community/Ovis2.5-2B",
+  "slug": "ovis-community-ovis2-5-2b",
+  "author": "ovis-community",
+  "url": "https://huggingface.co/ovis-community/Ovis2.5-2B",
+  "created_at": "2026-09-22T13:42:05.000Z",
+  "updated_at": "2026-09-22T13:42:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lot Lookup - Yakima Chief Hops",
+      "url": "https://tools.yakimachief.com/lookup",
+      "snippet": "Effortlessly search and verify the details of specific hop lots with Yakima Chief Hops' (YCH) Lot Lookup tool. Access comprehensive …"
+    },
+    {
+      "title": "Yakima Chief Hops Launches New Website | Press Release | www ...",
+      "url": "https://www.yakimachief.com/about-us/news/yakima-chief-hops-launches-new-website",
+      "snippet": "Aug 5, 2026 · Yakima Chief Hops launches a redesigned website with Shop-By-Lot, easier online ordering and tools for brewers in …"
+    },
+    {
+      "title": "Careers at Yakima Chief Hops | Employment Opportunities | www ...",
+      "url": "https://www.yakimachief.com/about-us/careers",
+      "snippet": "Discover rewarding careers at Yakima Chief Hops, where you’ll thrive in a values-driven, fun, and supportive workplace."
+    },
+    {
+      "title": "Efficiency Calculator",
+      "url": "https://tools.yakimachief.com/calculators/efficiency",
+      "snippet": "Input your brewhouse values into this handy calculator to see how Cryo Hops®, DynaBoost™, and HyperBoost™ can impact your …"
+    },
+    {
+      "title": "Yakima Chief - Grower Portal | Login",
+      "url": "https://grower.yakimachief.com/",
+      "snippet": "YCH HOPS Grower Portal Grower Portal Please sign in to continue. Forgot password?"
+    }
+  ]
+}

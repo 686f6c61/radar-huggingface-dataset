@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mohanpoduri2005/ppo-LunarLander-v2-unit8",
+  "slug": "mohanpoduri2005-ppo-lunarlander-v2-unit8",
+  "author": "mohanpoduri2005",
+  "url": "https://huggingface.co/mohanpoduri2005/ppo-LunarLander-v2-unit8",
+  "created_at": "2026-09-22T16:14:14.000Z",
+  "updated_at": "2026-09-22T16:14:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "deep-rl-course",
+  "languages": [],
+  "tags": [
+    "deep-rl-course",
+    "reinforcement-learning",
+    "LunarLander-v2",
+    "ppo",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57,
+  "storage_human": "57 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=de",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    }
+  ]
+}

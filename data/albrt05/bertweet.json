@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Albrt05/BERTweet",
+  "slug": "albrt05-bertweet",
+  "author": "Albrt05",
+  "url": "https://huggingface.co/Albrt05/BERTweet",
+  "created_at": "2026-09-22T16:08:48.000Z",
+  "updated_at": "2026-09-22T16:08:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yet another user selling stolen models on eBay - MakerWorld - Bambu …",
+      "url": "https://forum.bambulab.com/t/yet-another-user-selling-stolen-models-on-ebay/241259",
+      "snippet": "Mar 13, 2026 · I was looking through ebay this morning and trying to decide if it was worth while to sell some prints on ebay. I was …"
+    },
+    {
+      "title": "My design was stolen. What should I do? - MakerWorld - Bambu Lab ...",
+      "url": "https://forum.bambulab.com/t/my-design-was-stolen-what-should-i-do/256669",
+      "snippet": "Jul 16, 2026 · I also let MakerWorld know, so to speak, but I didn’t go the “stolen design” route - I took a different approach… If I …"
+    },
+    {
+      "title": "makerworld - Reddit",
+      "url": "https://www.reddit.com/r/makerworld/",
+      "snippet": "How can I update my model on makerworld with the newer version? When I click \"edit model\", it only seems to let me upload raw …"
+    },
+    {
+      "title": "r/transformation - Reddit",
+      "url": "https://www.reddit.com/r/transformation/wiki/index/",
+      "snippet": "/r/Transformation is an 18+ hub for all things related to transformation 𝗳𝗮𝗻𝘁𝗮𝘀𝘆 𝗳𝗲𝘁𝗶𝘀𝗵 𝗮𝗿𝘁. This means comics, illustrations, animations or visual effects."
+    },
+    {
+      "title": "MakerWorld Model Advice - MakerWorld - Bambu Lab Community …",
+      "url": "https://forum.bambulab.com/t/makerworld-model-advice/256345",
+      "snippet": "Jul 9, 2026 · Hello everyone! Ever since I began my 3D designing journey about one year ago, I started posting my 3D models on …"
+    }
+  ]
+}

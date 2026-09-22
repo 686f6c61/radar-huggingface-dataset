@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "MakZwane/automated-agri-drone-models",
+  "slug": "makzwane-automated-agri-drone-models",
+  "author": "MakZwane",
+  "url": "https://huggingface.co/MakZwane/automated-agri-drone-models",
+  "created_at": "2026-09-22T13:36:18.000Z",
+  "updated_at": "2026-09-22T07:34:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11486334,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Time Zones in California, United States - timeanddate.com",
+      "url": "https://www.timeanddate.com/time/zone/usa/california",
+      "snippet": "California uses Pacific Standard Time (PST) during standard time and Pacific Daylight Time (PDT) during Daylight Saving Time …"
+    },
+    {
+      "title": "California (CA) time zone - WhichTimezone",
+      "url": "https://whichtimezone.com/usa/california/",
+      "snippet": "1 day ago · The state of California is in the Pacific Time zone. All counties and cities (incl. Los Angeles, San Francisco and San …"
+    },
+    {
+      "title": "Current time in California, United States",
+      "url": "https://24timezones.com/California/time",
+      "snippet": "Mar 8, 2026 · Check time in California right now, UTC offset and daylight saving time dates. When does clock change in 2026?"
+    },
+    {
+      "title": "Time in California, United States",
+      "url": "https://www.timeanddate.com/worldclock/usa/california",
+      "snippet": "California time now. California time zone and map with current time in the largest cities."
+    },
+    {
+      "title": "Time in California, United States now",
+      "url": "https://time.is/California",
+      "snippet": "1 day ago · The time in California can be either 2, 3 or 4 hours behind the time in New York, depending on the time of the year. The …"
+    }
+  ]
+}

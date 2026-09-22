@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "gohumanize/gohumanize-open-humanizer-qlora",
+  "slug": "gohumanize-gohumanize-open-humanizer-qlora",
+  "author": "gohumanize",
+  "url": "https://huggingface.co/gohumanize/gohumanize-open-humanizer-qlora",
+  "created_at": "2026-09-22T15:19:10.000Z",
+  "updated_at": "2026-09-22T15:19:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "humanizer",
+    "text-rewriting",
+    "style-transfer",
+    "unsloth",
+    "lora",
+    "qlora",
+    "conversational",
+    "en",
+    "dataset:gohumanize/gohumanize-open-humanizer-dataset",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 14900218836,
+  "storage_human": "14.9 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WDR 2 - Radio",
+      "url": "https://www1.wdr.de/radio/wdr2/index.html",
+      "snippet": "WDR2.de ist die Internetseite des Radiosenders WDR 2. Hier könnt Ihr die besten Inhalte noch einmal hören, findet Informationen …"
+    },
+    {
+      "title": "WDR 2 hören im Livestream - Musik und Infos. So klingt NRW.",
+      "url": "https://www1.wdr.de/radio/player/radioplayer104~_layout-popupVersion.html",
+      "snippet": "WDR 2 hören im Livestream - Wir sind der Westen. POP, Rock, Unterhaltung & Nachrichten: Mit WDR 2 seid Ihr in NRW top …"
+    },
+    {
+      "title": "WDR 2 Radio: Aktuelle Informationen und Popmusik aus NRW",
+      "url": "https://www.radio.de/s/wdr2",
+      "snippet": "Höre WDR 2, 1LIVE und viele andere Radiosender aus aller Welt mit der radio.de-App Hol dir die kostenlose radio.de App Sender …"
+    },
+    {
+      "title": "Programmübersicht - WDR 2 - So, 20.09.2026",
+      "url": "https://www.wdr.de/programmvorschau/wdr2/uebersicht/index.html",
+      "snippet": "WDR 2 POP. Die Abendshow Übernahme von: Südwestrundfunk 23.00 Uhr 01.00 Uhr WDR Programmvorschau WDR 2 Darstellung: …"
+    },
+    {
+      "title": "Alle gegen Pistor - Startseite - WDR 2",
+      "url": "https://allegegenpistor.wdr2.de/index.php",
+      "snippet": "2 days ago · Tippen Sie die Bundesliga gegen WDR 2 Fußballexperte Sven Pistor und fahren Sie mit der Elf des Jahres zum DFB …"
+    }
+  ]
+}

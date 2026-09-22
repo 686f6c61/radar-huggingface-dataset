@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Aimeeluvssya/gemma-4-E4B-it-OBLITERATED",
+  "slug": "aimeeluvssya-gemma-4-e4b-it-obliterated",
+  "author": "Aimeeluvssya",
+  "url": "https://huggingface.co/Aimeeluvssya/gemma-4-E4B-it-OBLITERATED",
+  "created_at": "2026-09-22T17:15:58.000Z",
+  "updated_at": "2026-09-22T17:15:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "gemma4",
+    "abliterated",
+    "uncensored",
+    "obliteratus",
+    "refusal-removal",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:quantized:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156448,
+  "parameters_human": "8.00B",
+  "storage_bytes": 36144574914,
+  "storage_human": "36.1 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.co.in/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/?hl=ta",
+      "snippet": "Googleளின் சேவை விலை இல்லாமல் வழங்கப்படுகிறது. வார்த்தைகள் ..."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.co.in/details",
+      "snippet": "Send feedback Enter text to look up details"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.ae/?hl=ta",
+      "snippet": "ترجمة Google توفر خدمة ترجمة النصوص والمستندات بين لغات متعددة بسهولة ودقة."
+    },
+    {
+      "title": "தமிழ் தட்டச்சு English to Tamil Typing | Easy Tamil Typing",
+      "url": "https://www.easytamiltyping.com/",
+      "snippet": "Jul 30, 2026 · The process of transliterating from English to Tamil is quick, and our online software allows unlimited characters and …"
+    }
+  ]
+}

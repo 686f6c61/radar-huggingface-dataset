@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-MiniPlus-V2.1-GGUF",
+  "slug": "isvalorum-qwen3-6-35b-a3b-mtp-apex-i-miniplus-v2-1-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-MiniPlus-V2.1-GGUF",
+  "created_at": "2026-09-22T17:40:11.000Z",
+  "updated_at": "2026-09-22T18:24:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "quantization",
+    "apex",
+    "apex-quant",
+    "custom-quantization",
+    "unsloth-studio",
+    "moe",
+    "reasoning",
+    "llama.cpp",
+    "qwen35moe",
+    "text-generation",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 15840417600,
+  "storage_human": "15.8 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "闲鱼和转转哪个比较靠谱？ - 知乎",
+      "url": "https://www.zhihu.com/question/65313130",
+      "snippet": "转转一生黑，说一下本人被坑的经历吧。 11.8号，本人在转转平台出售了一台电脑，挂上后被人秒拍，被骗子讲价后3300包邮卖出。 …"
+    },
+    {
+      "title": "7-Zip 官方网站怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/20498753",
+      "snippet": "7-Zip 是一个功能强大的工具，特别适合需要 高效压缩 和 解压缩 功能的用户。比如 IT 专业人员、软件开发者或普通用户希望节省磁 …"
+    },
+    {
+      "title": "casino——比较经典的Monte Carlo 模拟软件 - 核能革新 ChinaNet",
+      "url": "http://www.nuclear.net.cn/forum.php?mod=viewthread&tid=202",
+      "snippet": "casino是比较经典的Monte Carlo 模拟软件，用来模拟电子在固体中的作用。包括背散射电子的统计分布，能量损失，电子束作用深度 …"
+    },
+    {
+      "title": "casino——比较经典的Monte Carlo 模拟软件 - ChinaNet - Powered by …",
+      "url": "http://www.nuclear.net.cn/forum.php?mod=viewthread&action=printable&tid=202",
+      "snippet": "标题: casino——比较经典的Monte Carlo 模拟软件 casino是比较经典的Monte Carlo 模拟软件，用来模拟电子在固体中的作用。 包括 …"
+    },
+    {
+      "title": "侠盗飞车罪恶都市咋下载免费的，求大佬给资源？ - 知乎",
+      "url": "https://www.zhihu.com/question/301549544",
+      "snippet": "这个游戏必须使用中文来说，不然根本看不懂，小时候玩得时候都是 开一个坦克到处乱炸！ 在实测的过程中，我安装侠盗飞车也花了 …"
+    }
+  ]
+}

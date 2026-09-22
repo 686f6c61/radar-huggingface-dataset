@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ds4xai/land-lunder-v3-1",
+  "slug": "ds4xai-land-lunder-v3-1",
+  "author": "ds4xai",
+  "url": "https://huggingface.co/ds4xai/land-lunder-v3-1",
+  "created_at": "2026-09-22T20:43:20.000Z",
+  "updated_at": "2026-09-22T20:51:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kitesurfing Holidays, Learn to Kitesurf Centres from Sportif Travel",
+      "url": "https://www.sportif.travel/holidays/Kitesurfing+Holidays",
+      "snippet": "Sportif Travel offer Kitesurfing holidays and Learn to Kitesurf Holidays to over 40 resorts worldwide with specialist Kitesurf centres on …"
+    },
+    {
+      "title": "Kitesurfing and windsurfing holidays and courses | 360 Kite Travel",
+      "url": "https://360-kite.com/en/",
+      "snippet": "May 13, 2026 · Discover all our packages kite, wind or foil courses, Kite & Stay, coaching and our packs accommodation & …"
+    },
+    {
+      "title": "Book Kitesurfing Holidays, Hotels, Flights - Compare Prices & Reviews ...",
+      "url": "https://kitetripadvisor.com/",
+      "snippet": "Book discount kitesurfing holiday packages, hotels & flights. Compare and get the lowest prices. Read kitesurfer reviews. Search …"
+    },
+    {
+      "title": "GetYourGuide Coupons - 25% off Code - September 2026",
+      "url": "https://www.retailmenot.com/view/getyourguide.com",
+      "snippet": "1 day ago · Types of GetYourGuide discount codes available: GetYourGuide offers percentage-off codes, app-exclusive discounts, …"
+    },
+    {
+      "title": "Navigating Kitesurf Package Deals: A Complete Guide",
+      "url": "https://surfssprint.com/articles/navigating-kitesurf-package-deals-guide/",
+      "snippet": "Understanding the key components of kitesurf package deals is essential for travelers who want to make the most of their kitesurfing …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/whisper-base",
+  "slug": "skillsafe-ai-whisper-base",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/whisper-base",
+  "created_at": "2026-09-22T20:48:50.000Z",
+  "updated_at": "2026-09-22T20:49:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "skillsafe",
+    "browser",
+    "import",
+    "base_model:onnx-community/whisper-base",
+    "base_model:quantized:onnx-community/whisper-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 490743351,
+  "storage_human": "491 MB",
+  "base_model": "onnx-community/whisper-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top‑Rated Accounting Software 2026 – Score 1.2 | sevdesk",
+      "url": "https://www.sevdesk.com/",
+      "snippet": "Easily manage your accounting and stay compliant in Germany. Create professional invoices, handle taxes and keep your business …"
+    },
+    {
+      "title": "Buchhaltungssoftware Testsieger 2026 mit Note 1,2 | sevdesk",
+      "url": "https://sevdesk.de/",
+      "snippet": "Mit sevdesk erledigst du deine Finanzbuchhaltung effizienter und fehlerfrei. sevdesk hilft dir dabei, Rechnungen und Belege zu …"
+    },
+    {
+      "title": "Online-Buchhaltungssoftware für smarte Selbstständige | sevdesk",
+      "url": "https://sevdesk.de/buchhaltungssoftware/",
+      "snippet": "Rechnungserstellung leicht gemacht Mit sevdesk schreibst du deine Rechnungen in wenigen Klicks – professionell, im eigenen …"
+    },
+    {
+      "title": "Accounting software: online, automised & simple | sevdesk",
+      "url": "https://www.sevdesk.com/accounting-software",
+      "snippet": "The sevdesk accounting software recognizes all important data on your invoices and receipts with the help of intelligent algorithms …"
+    },
+    {
+      "title": "Buchhaltungssoftware Testsieger 2026 mit Note 1,2 | sevdesk",
+      "url": "https://sevdesk.at/",
+      "snippet": "Mit sevdesk erledigst du deine Finanzbuchhaltung effizienter und fehlerfrei. sevdesk hilft dir dabei, Rechnungen und Belege zu …"
+    }
+  ]
+}

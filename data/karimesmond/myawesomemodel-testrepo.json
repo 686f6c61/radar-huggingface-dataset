@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "KarimEsmond/MyAwesomeModel-TestRepo",
+  "slug": "karimesmond-myawesomemodel-testrepo",
+  "author": "KarimEsmond",
+  "url": "https://huggingface.co/KarimEsmond/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-22T17:05:37.000Z",
+  "updated_at": "2026-09-22T17:05:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "„Lanterns“: Wer versteckt sich als Manhunter in Rushville?",
+      "url": "https://www.serienjunkies.de/news/serien/lanterns-wer-versteckt-sich-als-manhunter-in-rushville-94457984.html",
+      "snippet": "Aug 24, 2026 · Die entscheidende Frage bleibt damit offen: Wer ist der Manhunter, der sich in Rushville versteckt? Die Antwort soll …"
+    },
+    {
+      "title": "Lanterns Folge 5: Die Darsteller über die Manhunter-Auflösung",
+      "url": "https://www.scifiscene.de/news/lanterns-folge-5-so-haben-die-darsteller-die-manhunter-aufloesung-erlebt",
+      "snippet": "Sep 15, 2026 · Poorna Jagannathan hat erst beim Drehbuch zu Folge 4 erfahren, dass ihre Figur der letzte Manhunter ist. Im …"
+    },
+    {
+      "title": "Lanterns Folge 4 „The Weenie“: Der Manhunter ist enttarnt",
+      "url": "https://www.scifiscene.de/news/lanterns-folge-4-der-manhunter-ist-enttarnt",
+      "snippet": "Sep 6, 2026 · Lanterns Folge 4 „The Weenie“ enttarnt den Manhunter – und John Stewart bekommt von einer Guardian ein Angebot …"
+    },
+    {
+      "title": "Manhunters (DC Comics) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Manhunters_(DC_Comics)",
+      "snippet": "It has since been revealed that the Manhunters were created to apprehend the First Lantern during a time the Maltusians were still …"
+    },
+    {
+      "title": "Who Are LANTERNS' Manhunters? - Nerdist",
+      "url": "https://nerdist.com/article/the-dc-comics-history-of-green-lanterns-manhunters/",
+      "snippet": "Aug 24, 2026 · In DC Comics lore, the Manhunters were the artificial beings who came before the Green Lantern Corps as the …"
+    }
+  ]
+}

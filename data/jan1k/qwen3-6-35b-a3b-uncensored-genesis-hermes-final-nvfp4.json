@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "jan1k/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-NVFP4",
+  "slug": "jan1k-qwen3-6-35b-a3b-uncensored-genesis-hermes-final-nvfp4",
+  "author": "jan1k",
+  "url": "https://huggingface.co/jan1k/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-NVFP4",
+  "created_at": "2026-09-22T18:53:52.000Z",
+  "updated_at": "2026-09-22T18:56:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "hermes",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "hermes",
+    "gguf",
+    "text-generation",
+    "nvfp4",
+    "fp4",
+    "moe",
+    "qwen3.6",
+    "uncensored",
+    "vision",
+    "multimodal",
+    "genesis",
+    "agentic",
+    "llama-cpp",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "multilingual",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "base_model:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "base_model:quantized:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 22373929216,
+  "storage_human": "22.4 GB",
+  "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive, LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Teeth Cleaning in Montreal • Check Prices & Reviews - WhatClinic",
+      "url": "https://www.whatclinic.com/dentists/canada/quebec/montreal/teeth-cleaning",
+      "snippet": "We have all the information you need about public and private dental clinics that provide teeth cleaning in Montreal, Quebec. …"
+    },
+    {
+      "title": "Dental Cleaning Cost in Montreal 2026 — Prices, Insurance & What …",
+      "url": "https://canadiandentalcare.com/guides/dental-cleaning-cost-montreal-2026",
+      "snippet": "Dental Cleaning Cost in Montreal, Quebec — 2026 Guide Regular cleanings are essential for oral health. Here's what Montreal …"
+    },
+    {
+      "title": "Teeth Cleaning in Montreal - Centre Dentaire Aoude NDG",
+      "url": "https://dentistendgmontreal.com/en/services/teeth-cleaning/",
+      "snippet": "The average cost of a teeth cleaning procedure in Montreal is about $380. However, the price may vary depending on the type of …"
+    },
+    {
+      "title": "Dental Cleaning Montreal 2026: What to Expect, Costs & Frequency ...",
+      "url": "https://ecodentaire.com/en/dental-cleaning-montreal/",
+      "snippet": "How Much Does a Dental Cleaning Cost in Montreal? Dental Cleaning vs Deep Cleaning: What’s the Difference? A $150 cleaning …"
+    },
+    {
+      "title": "Teeth Cleaning Montreal | Professional Dental Cleaning | Écodentaire ...",
+      "url": "https://ecodentaire.com/en/teeth-cleaning-montreal/",
+      "snippet": "A professional dental cleaning in Montreal typically costs between $150 and $300, depending on the time required and the amount of …"
+    }
+  ]
+}

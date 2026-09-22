@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "AzJoeLesz/mathir-parser-qwen25-7b-lora-v4",
+  "slug": "azjoelesz-mathir-parser-qwen25-7b-lora-v4",
+  "author": "AzJoeLesz",
+  "url": "https://huggingface.co/AzJoeLesz/mathir-parser-qwen25-7b-lora-v4",
+  "created_at": "2026-09-22T17:33:50.000Z",
+  "updated_at": "2026-09-22T17:46:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31637100,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CV šabloni besplatno – bez registracije, preuzmi PDF | MojCV",
+      "url": "https://mojcv.com/sr/cv-sabloni",
+      "snippet": "Profesionalni CV šabloni za svaku prijavu za posao. Prilagodi online, preuzmi PDF bez ograničenja. 100 % besplatno, bez …"
+    },
+    {
+      "title": "CV OBRAZAC | Zaposlimo Srbiju",
+      "url": "https://www.zaposlimo-srbiju.com/CV-Obrazac.aspx",
+      "snippet": "Potpuno besplatno možete da skinete i da se služite CV obrazcima. CV obrazci su u (.doc) word formatu. Imate obrazac i primere ne …"
+    },
+    {
+      "title": "Besplatan CV obrazac – Praktičan primer biografije koji možeš odmah …",
+      "url": "https://obrazac.rs/besplatan-cv-obrazac/",
+      "snippet": "Oct 7, 2025 · Svaki kandidat zaslužuje da ima jasan, uredan i profesionalan CV bez gubljenja vremena na formatiranje. Zbog toga …"
+    },
+    {
+      "title": "Besplatan CV obrazac evropskog formata - Besplatni obrasci",
+      "url": "https://besplatniobrasci.com/cv-obrazac/",
+      "snippet": "Feb 1, 2016 · CV obrazac evropskog formata za popunjavanje. Primer CV obrasca u MS Word formatu."
+    },
+    {
+      "title": "Zaista besplatan CV kreator – Bez pretplate",
+      "url": "https://mojcv.com/sr",
+      "snippet": "Napravi i preuzmi CV u PDF formatu besplatno. Bez registracije, bez vodenog žiga, bez skrivenih troškova. Profesionalni šabloni …"
+    }
+  ]
+}

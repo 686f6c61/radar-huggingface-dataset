@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "itlrc/gpt2-small",
+  "slug": "itlrc-gpt2-small",
+  "author": "itlrc",
+  "url": "https://huggingface.co/itlrc/gpt2-small",
+  "created_at": "2026-09-22T18:36:27.000Z",
+  "updated_at": "2026-09-22T18:41:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nanogpt",
+    "text-generation",
+    "gpt2",
+    "causal-lm",
+    "from-scratch",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497774232,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "كتاب الجغرافية للصف التاسع ليبيا pdf 2026 - المعلم التعليمي",
+      "url": "https://www.almualm.com/2025/10/%d9%83%d8%aa%d8%a7%d8%a8-%d8%a7%d9%84%d8%ac%d8%ba%d8%b1%d8%a7%d9%81%d9%8a%d8%a9-%d9%84%d9%84%d8%b5%d9%81-%d8%a7%d9%84%d8%aa%d8%a7%d8%b3%d8%b9-%d9%84%d9%8a%d8%a8%d9%8a%d8%a7-pdf-2026.html",
+      "snippet": "هل تريد تحميل كتاب جغرافية العالم للصف التاسع منهج ليبيا الجديد 1447-2026 بصيغة pdf وبرابط تحميل مباشر ومجانا, وفق وزارة التربية والتعليم في ليبيا."
+    },
+    {
+      "title": "تحميل كتاب جغرافية العالم للصف التاسع ليبيا pdf",
+      "url": "https://www.libyabooks.com/2023/10/Book-Geography-Ninth-Grade-Libya.html",
+      "snippet": "Oct 21, 2023 · تحميل وتنزيل كتاب جغرافيا العالم للصف التاسع (كتاب الطالب) للعام الدراسي (2026 - 2025) كتب المنهج الدراسي ليبيا PDF، والصادر من قسم المناهج بوزارة التربية …"
+    },
+    {
+      "title": "حل اسئلة الجغرافيا الصف التاسع ليبيا pdf - المعلم التعليمي",
+      "url": "https://www.almualm.com/2025/02/%d8%ad%d9%84-%d8%a7%d8%b3%d8%a6%d9%84%d8%a9-%d8%a7%d9%84%d8%ac%d8%ba%d8%b1%d8%a7%d9%81%d9%8a%d8%a7-%d8%a7%d9%84%d8%b5%d9%81-%d8%a7%d9%84%d8%aa%d8%a7%d8%b3%d8%b9-%d9%85%d9%86%d9%87%d8%ac-%d9%84%d9%8a.html",
+      "snippet": "حل اسئلة كتاب الجغرافيا للصف التاسع المنهج الليبي الجديد 2027 pdf ,حل الاسئلة الاسترشادية صف تاسع مادة الجغرافيا للأستاذ منير فرج عقيلة لطلبة داخل ليبيا ."
+    },
+    {
+      "title": "الجغرافيا للصف التاسع | PDF - Scribd",
+      "url": "https://www.scribd.com/document/384434516/%D8%A7%D9%84%D8%AC%D8%BA%D8%B1%D8%A7%D9%81%D9%8A%D8%A7-%D9%84%D9%84%D8%B5%D9%81-%D8%A7%D9%84%D8%AA%D8%A7%D8%B3%D8%B9",
+      "snippet": "الجغرافيا للصف التاسع تتناول الوثيقة معلومات جغرافية عن قارة أفريقيا من حيث الموقع الجغرافي ومظاهر السطح والمناخ والأقاليم المناخية والنباتية والسكان وموارد الثروة الاقتصادية."
+    },
+    {
+      "title": "جغرافيا الصف التاسع - Facebook",
+      "url": "https://www.facebook.com/groups/567659850924297/",
+      "snippet": "#قرطاسية_ماتا ملخص مادة الجغرافيا للمعلم.. عمر بن ساسي 📒للتذكير الملخص هو تجميع ( لكل ما كان ينشره المعلم الفاضل) قبل ثلاث سنوات عبر صفحات الإنترنت وهو مطابق للمنهج المقرر هذا العام ..."
+    }
+  ]
+}

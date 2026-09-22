@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Adekanmipro/Prosper",
+  "slug": "adekanmipro-prosper",
+  "author": "Adekanmipro",
+  "url": "https://huggingface.co/Adekanmipro/Prosper",
+  "created_at": "2026-09-22T15:09:04.000Z",
+  "updated_at": "2026-09-22T15:11:25.000Z",
+  "license": "ms-pl",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "en",
+    "zh",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:Anthropic/claude-protein-binder-design",
+    "dataset:G3ND3K/so101_picking_up_green_lego_big",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "license:ms-pl",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CHECK24 | Das Vergleichsportal",
+      "url": "https://www.check24.de/?msockid=2f3c96cc6892607730f5811069db61b3",
+      "snippet": "CHECK24 - Das Vergleichsportal: Sparen Sie mit den Vergleichsrechnern für Versicherungen, Kredite, Energie, Internet, Reisen, …"
+    },
+    {
+      "title": "CHECK24 - Internet-Vergleich: jetzt Angebote vergleichen & sparen",
+      "url": "https://internet.check24.de/",
+      "snippet": "CHECK24 Internet-Vergleich: Schnell & einfach den passenden Internet-Tarif finden. • Adresse eingeben • Tarife vergleichen • …"
+    },
+    {
+      "title": "Festnetz und Internet – Angebote vergleichen & sparen - CHECK24",
+      "url": "https://www.check24.de/festnetz/?msockid=2f3c96cc6892607730f5811069db61b3",
+      "snippet": "Garantiert günstige Angebote für Internet und Festnetz finden Sie bei CHECK24 » Tagesaktuell die besten Angebote entdecken!"
+    },
+    {
+      "title": "Flüge buchen ️ Günstige Flüge mit CHECK24 | CHECK24 Flüge",
+      "url": "https://flug.check24.de/",
+      "snippet": "Mit CHECK24 Flüge vergleichen & günstige Flüge finden Reiseberatung 24/7 PayPal, Klarna & Co. Jetzt Flug buchen!"
+    },
+    {
+      "title": "Urlaub buchen Pauschalreisen bis 60% günstiger | CHECK24 Reisen",
+      "url": "https://urlaub.check24.de/?msockid=2f3c96cc6892607730f5811069db61b3",
+      "snippet": "CHECK24 Reisevergleich Jetzt günstig Urlaub buchen Über 230.000 mal Bestnote Pauschalreisen beim Preissieger ☎ Über 200 …"
+    }
+  ]
+}

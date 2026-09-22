@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "omurberaisik/NoTokenLM-Gen-3.6",
+  "slug": "omurberaisik-notokenlm-gen-3-6",
+  "author": "omurberaisik",
+  "url": "https://huggingface.co/omurberaisik/NoTokenLM-Gen-3.6",
+  "created_at": "2026-09-22T12:04:16.000Z",
+  "updated_at": "2026-09-22T12:39:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "notoken_gen36",
+    "text-generation",
+    "byte-level",
+    "tokenizer-free",
+    "character-level",
+    "small-language-model",
+    "transformer",
+    "rope",
+    "rmsnorm",
+    "swiglu",
+    "from-scratch",
+    "pytorch",
+    "custom_code",
+    "en",
+    "fr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13874556,
+  "parameters_human": "13.9M",
+  "storage_bytes": 57500652,
+  "storage_human": "58 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Email & SMS Marketing Platform | Mailchimp",
+      "url": "https://mailchimp.com/?msockid=1cd69cc2e7c9673205278b1ee6f866fb",
+      "snippet": "Join Mailchimp with a free 14-day trial or save 15% off on 10,000+ contacts. Start today."
+    },
+    {
+      "title": "Die E-Mail-Marketing-Plattform, jetzt mit SMS | Mailchimp",
+      "url": "https://mailchimp.com/de/?msockid=1cd69cc2e7c9673205278b1ee6f866fb",
+      "snippet": "Steigere dein Wachstum mit den zeitsparenden Marketing-Tools von Mailchimp. Starte deine 14-tägige kostenlose Testphase."
+    },
+    {
+      "title": "Login | Mailchimp",
+      "url": "https://mailchimp.app.link/aTLHBibqQR",
+      "snippet": "Mailchimp Login | Mailchimp Become the brand you want to be with smarter marketing built for big things."
+    },
+    {
+      "title": "Mailchimp",
+      "url": "https://forms.admin.mailchimp.com/Public/Login",
+      "snippet": "Log in to your Mailchimp account to manage email marketing, automation, and more."
+    },
+    {
+      "title": "Sign Up for Mailchimp",
+      "url": "https://login.mailchimp.com/signup/?msockid=1cd69cc2e7c9673205278b1ee6f866fb",
+      "snippet": "©2026 Intuit Inc. All rights reserved. Mailchimp® is a registered trademark of The Rocket Science Group, Cookie Preferences, …"
+    }
+  ]
+}

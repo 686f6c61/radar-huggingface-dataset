@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Guangchen-Lan/selfplay-llama-p5en-130d5b",
+  "slug": "guangchen-lan-selfplay-llama-p5en-130d5b",
+  "author": "Guangchen-Lan",
+  "url": "https://huggingface.co/Guangchen-Lan/selfplay-llama-p5en-130d5b",
+  "created_at": "2026-09-22T16:43:41.000Z",
+  "updated_at": "2026-09-22T16:43:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "self-play",
+    "experimental",
+    "base_model:mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated",
+    "base_model:adapter:mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1024310145,
+  "storage_human": "1.0 GB",
+  "base_model": "mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/",
+      "snippet": "Utkání začíná v 16:00 a Sport.cz vám z něj nabídne podrobnou online reportáž."
+    },
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/500",
+      "snippet": "Jejda, tak tohle se nepovedlo. Pracujeme na opravě."
+    },
+    {
+      "title": "Home – Seznam.cz",
+      "url": "https://www.seznam.cz/zdroj/363-home",
+      "snippet": "Starosta z ANO prodal atraktivní pozemky města. Od kupujícího pak levně získal byty a domy pro sebe i rodinu. Jeden byt za 250 …"
+    },
+    {
+      "title": "Seznam Zprávy",
+      "url": "https://www.seznamzpravy.cz/",
+      "snippet": "Videa, články, aktuální zprávy z domova i ze světa. Zpravodajství a publicistika od redakce Seznam.cz."
+    },
+    {
+      "title": "Seznam Zprávy – Seznam.cz",
+      "url": "https://www.seznam.cz/zdroj/286-seznam-zpravy",
+      "snippet": "Největší tuzemská internetová firma Seznam.cz loni investovala do vývoje 370 milionů korun, především do umělé inteligence. Tu …"
+    }
+  ]
+}

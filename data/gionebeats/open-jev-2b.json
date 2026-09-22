@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "gionebeats/Open-Jev-2B",
+  "slug": "gionebeats-open-jev-2b",
+  "author": "gionebeats",
+  "url": "https://huggingface.co/gionebeats/Open-Jev-2B",
+  "created_at": "2026-09-22T13:21:13.000Z",
+  "updated_at": "2026-09-22T13:21:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "open-jev",
+    "qwen3.5",
+    "lora",
+    "non-generative",
+    "typed-decisions",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10052477,
+  "storage_human": "10 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "September Equinox: When and What Is It? - timeanddate.com",
+      "url": "https://www.timeanddate.com/calendar/september-equinox.html",
+      "snippet": "The September equinox is the moment the Sun crosses the celestial equator —an imaginary line in the sky above Earth’s equator — …"
+    },
+    {
+      "title": "September equinox - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/September_equinox",
+      "snippet": "The September equinox (or southward equinox) is the moment when the Sun appears to cross the celestial equator, heading …"
+    },
+    {
+      "title": "2026 September equinox: All you need to know - EarthSky",
+      "url": "https://earthsky.org/astronomy-essentials/everything-you-need-to-know-september-equinox/",
+      "snippet": "5 days ago · At an equinox, the sun appears directly above Earth’s equator. At the September equinox, the sun is moving from north …"
+    },
+    {
+      "title": "Equinox - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Equinox",
+      "snippet": "The northward equinox occurs in March when the Sun crosses the equator from south to north, and the southward equinox occurs in …"
+    },
+    {
+      "title": "When is the 2026 autumn equinox and what is it? - BBC Weather",
+      "url": "https://www.bbc.co.uk/weather/articles/cj067v5215zo",
+      "snippet": "2 days ago · In the northern hemisphere, the September equinox marks the start of astronomical autumn."
+    }
+  ]
+}

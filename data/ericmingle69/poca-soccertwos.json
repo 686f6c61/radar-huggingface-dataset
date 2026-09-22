@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "EricMingle69/poca-SoccerTwos",
+  "slug": "ericmingle69-poca-soccertwos",
+  "author": "EricMingle69",
+  "url": "https://huggingface.co/EricMingle69/poca-SoccerTwos",
+  "created_at": "2026-09-22T18:30:14.000Z",
+  "updated_at": "2026-09-22T18:30:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "SoccerTwos",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SoccerTwos",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58628347,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. …"
+    },
+    {
+      "title": "واتساب | مراسلات ومكالمات مجانية وآمنة وموثوقة وبخصوصية تامة",
+      "url": "https://www.whatsapp.com/?lang=ar",
+      "snippet": "واتساب هو تطبيق مجاني يمكنك من خلاله إجراء المراسلات والمكالمات بطريقة بسيطة وآمنة وموثوقة، وهو متاح على الهواتف في جميع أنحاء العالم."
+    },
+    {
+      "title": "HOUSAB - WhatsApp",
+      "url": "https://wa.me/",
+      "snippet": "Hosted by WhatsApp 2026 © WhatsApp LLC Privacy & Terms"
+    },
+    {
+      "title": "واتساب مسنجر - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.whatsapp&hl=ar",
+      "snippet": "استخدم واتساب على ساعة Wear OS لمتابعة المحادثات، والرد على الرسائل، وتلقي المكالمات - كل ذلك من معصمك مباشرةً. واستفد من المربعات والميزات للوصول بسهولة إلى دردشاتك وإرسال رسائل …"
+    }
+  ]
+}

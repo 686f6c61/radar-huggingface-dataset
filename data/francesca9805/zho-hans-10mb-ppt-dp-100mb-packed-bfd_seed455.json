@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfd_seed455",
+  "slug": "francesca9805-zho-hans-10mb-ppt-dp-100mb-packed-bfd_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfd_seed455",
+  "created_at": "2026-09-22T16:00:28.000Z",
+  "updated_at": "2026-09-22T16:01:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/zho_hans_10mb",
+    "base_model:finetune:goldfish-models/zho_hans_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79243938,
+  "storage_human": "79 MB",
+  "base_model": "goldfish-models/zho_hans_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Firefox for Windows — Firefox.com",
+      "url": "https://www.firefox.com/en-US/download/windows/",
+      "snippet": "Firefox is built to put you back in control. Firefox is no longer supported on Windows 8.1 and below. Please download Firefox ESR …"
+    },
+    {
+      "title": "Firefox: The fast, private browser that keeps you safe",
+      "url": "https://www.firefox.com/en-US/",
+      "snippet": "Firefox blocks trackers, has a free built-in VPN, puts you in control of AI, and never sells your personal data."
+    },
+    {
+      "title": "Download and test future releases of Firefox for desktop ... - Mozilla",
+      "url": "https://www.mozilla.org/firefox/channel/desktop/",
+      "snippet": "Be among the first to explore future releases of Firefox for desktop, Android and iOS. Experience cutting-edge browser features in pre …"
+    },
+    {
+      "title": "Download Mozilla Firefox (free) for Windows, macOS, Android, APK, …",
+      "url": "https://gizmodo.com/download/mozilla-firefox",
+      "snippet": "1 day ago · Firefox performs well on both desktops and mobile devices. You can download it for free on Windows, macOS, and Linux …"
+    },
+    {
+      "title": "Mozilla - Download",
+      "url": "https://mozilla.en.softonic.com/",
+      "snippet": "Aug 11, 2026 · Firefox, developed by Mozilla, is a free web browser designed for speed, privacy, and cross-device browsing. It lets …"
+    }
+  ]
+}

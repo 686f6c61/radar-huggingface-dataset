@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "jeebeekay/a2c-PandaReachDense-v3",
+  "slug": "jeebeekay-a2c-pandareachdense-v3",
+  "author": "jeebeekay",
+  "url": "https://huggingface.co/jeebeekay/a2c-PandaReachDense-v3",
+  "created_at": "2026-09-22T20:36:15.000Z",
+  "updated_at": "2026-09-22T20:38:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 212937,
+  "storage_human": "212937 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poczta - Najlepsza Poczta, największe załączniki - WP",
+      "url": "https://poczta.wp.pl/",
+      "snippet": "Bezpieczna i darmowa poczta bez spamu. Duże załączniki, nielimitowana pojemność, aplikacja mobilna. Załóż konto i ciesz się …"
+    },
+    {
+      "title": "Odzyskaj hasło w WP Poczcie",
+      "url": "https://poczta.wp.pl/odzyskaj/",
+      "snippet": "Wpisz adres e-mail, do którego chcesz odzyskać dostęp Przejdź dalej"
+    },
+    {
+      "title": "Synchronizacja - Poczta WP",
+      "url": "https://poczta.wp.pl/api/v1/public/secureauth/login?mailsystem=o2&scheme=secureauth&package=pl.wp",
+      "snippet": "Synchronizacja Synchronizacja danych..."
+    }
+  ]
+}

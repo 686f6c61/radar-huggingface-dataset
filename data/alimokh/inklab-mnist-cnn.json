@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "AliMokh/inklab-mnist-cnn",
+  "slug": "alimokh-inklab-mnist-cnn",
+  "author": "AliMokh",
+  "url": "https://huggingface.co/AliMokh/inklab-mnist-cnn",
+  "created_at": "2026-09-22T20:43:22.000Z",
+  "updated_at": "2026-09-22T20:43:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mnist",
+    "computer-vision",
+    "education",
+    "trained-from-scratch",
+    "image-classification",
+    "en",
+    "dataset:ylecun/mnist",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 224714,
+  "parameters_human": "224714",
+  "storage_bytes": 899680,
+  "storage_human": "899680 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "MNIST official test set",
+      "metric": "Accuracy",
+      "value": 0.9889000058174133
+    }
+  ],
+  "sources": [
+    {
+      "title": "Site officiel du musée du Louvre",
+      "url": "https://www.louvre.fr/",
+      "snippet": "Préparez votre visite, découvrez les lieux emblématiques du palais et les collections du musée et suivez l'actualité du Louvre et des …"
+    },
+    {
+      "title": "Nuit européenne des musées 2026 - 22e édition - Le Louvre",
+      "url": "https://www.louvre.fr/expositions-et-evenements/evenements-activites/nuit-europeenne-des-musees-2026",
+      "snippet": "May 23, 2026 · Pour cette 22e édition de la Nuit européenne des musées, le Louvre vous invite à découvrir ou à redécouvrir le …"
+    },
+    {
+      "title": "Est-ce que les enseignants bénéficient de la gratuité ? – Musée du Louvre",
+      "url": "https://contact.louvre.fr/hc/fr/articles/14414476242717-Est-ce-que-les-enseignants-b%C3%A9n%C3%A9ficient-de-la-gratuit%C3%A9",
+      "snippet": "La gratuité de visite est accordée aux enseignants, sur stricte présentation du « Pass Education » en cours de validité et présentant …"
+    },
+    {
+      "title": "Puis-je acheter un billet sans date ? – Musée du Louvre",
+      "url": "https://contact.louvre.fr/hc/fr/articles/12839559001117-Puis-je-acheter-un-billet-sans-date",
+      "snippet": "Non, vous pouvez cependant acheter des entrées pour le musée du Louvre, sur la billetterie officielle. Ces billets sont horodatés et …"
+    },
+    {
+      "title": "Saint François-Xavier rappelant à la vie la fille d'un habitant de ...",
+      "url": "https://collections.louvre.fr/ark:/53355/cl010062526",
+      "snippet": "En 2003, le Christ de Poussin a été rapproché d’un Jupiter fulminant de la colonne Trajane par Henry Keazor, qui identifia un autre …"
+    }
+  ]
+}

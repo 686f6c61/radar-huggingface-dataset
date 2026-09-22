@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "davidpere/nlp-ui-small",
+  "slug": "davidpere-nlp-ui-small",
+  "author": "davidpere",
+  "url": "https://huggingface.co/davidpere/nlp-ui-small",
+  "created_at": "2026-09-22T20:48:29.000Z",
+  "updated_at": "2026-09-22T20:48:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "onnx",
+    "safetensors",
+    "nlp-ui",
+    "field-role",
+    "layout",
+    "system-one",
+    "calibrated-decisions",
+    "classification",
+    "commercial-use",
+    "text-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60300747,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login | Deutsche Bank Banking & Brokerage",
+      "url": "https://meine.deutsche-bank.de/trxm/db/",
+      "snippet": "Sep 23, 2026 · Guten Morgen Bitte geben Sie Ihre Zugangsdaten ein. Deutsche Bank ID"
+    }
+  ]
+}

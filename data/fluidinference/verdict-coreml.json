@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "FluidInference/verdict-coreml",
+  "slug": "fluidinference-verdict-coreml",
+  "author": "FluidInference",
+  "url": "https://huggingface.co/FluidInference/verdict-coreml",
+  "created_at": "2026-09-22T20:38:16.000Z",
+  "updated_at": "2026-09-22T21:00:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "apple-silicon",
+    "decision-model",
+    "verdict",
+    "text-classification",
+    "base_model:heman10x/rlcd-modernbert-151m",
+    "base_model:quantized:heman10x/rlcd-modernbert-151m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 607600080,
+  "storage_human": "608 MB",
+  "base_model": "heman10x/rlcd-modernbert-151m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "800+ \"Joe Myers\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/joe/myers",
+      "snippet": "View the profiles of professionals named \"Joe Myers\" on LinkedIn. There are 800+ professionals named \"Joe Myers\", who use …"
+    },
+    {
+      "title": "800+ \"'joe Myers'\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/%27Joe/Myers%27",
+      "snippet": "View the profiles of professionals named &quot;&#39;joe Myers&#39;&quot; on LinkedIn."
+    },
+    {
+      "title": "Joe Myers - Lead Software Engineer | LinkedIn",
+      "url": "https://uk.linkedin.com/in/joe-myers-715011135",
+      "snippet": "View Joe Myers’ profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "Joe Meyer - LinkedIn",
+      "url": "https://me.sh/profile/joe-meyer-5e5b1e57",
+      "snippet": "Joe Meyer is a renowned software engineer with over 15 years of experience in the tech industry. He has a strong background in …"
+    },
+    {
+      "title": "800+ \"Joseph (joe) Myers\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Joseph%20(joe)/Myers",
+      "snippet": "View the profiles of professionals named &quot;Joseph (joe) Myers&quot; on LinkedIn."
+    }
+  ]
+}

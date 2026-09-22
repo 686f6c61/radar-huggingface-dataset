@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ldov/MiMo-V2.6-Distill-Qwen-9B-GGUF",
+  "slug": "ldov-mimo-v2-6-distill-qwen-9b-gguf",
+  "author": "ldov",
+  "url": "https://huggingface.co/ldov/MiMo-V2.6-Distill-Qwen-9B-GGUF",
+  "created_at": "2026-09-22T20:28:52.000Z",
+  "updated_at": "2026-09-22T20:28:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mimo_v2",
+    "agentic",
+    "distillation",
+    "supervised-fine-tuning",
+    "code",
+    "tool-use",
+    "image-text-to-text",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 139933806528,
+  "storage_human": "139.9 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Università degli Studi di Genova | UniGe",
+      "url": "https://unige.it/",
+      "snippet": "In partenza L'Università di Genova promuove esperienze di studio e tirocinio all'estero. Se sei uno studente iscritto ad un corso …"
+    },
+    {
+      "title": "Servizi Online | Università di Genova",
+      "url": "https://servizionline.unige.it/web-sol/it/",
+      "snippet": "Servizi Online UniGe Personale TABS Servizi Online per il Personale Tecnico Amministrativo"
+    },
+    {
+      "title": "Servizi Online | Università di Genova",
+      "url": "https://servizionline.unige.it/",
+      "snippet": "Servizi Online UniGe For all Online Services for all - without authentication"
+    },
+    {
+      "title": "University of Genoa | UniGe",
+      "url": "https://unige.it/en",
+      "snippet": "If you are a student enrolled in a UniGe university course, even a doctoral or postgraduate student, you can choose from the …"
+    },
+    {
+      "title": "Offerta formativa | Corsi di Studio UniGe",
+      "url": "https://corsi.unige.it/",
+      "snippet": "Amministrazione trasparente Accesso generalizzato Albo online Atti di notifica Elenco siti tematici URP pagoPA Contatti Università …"
+    }
+  ]
+}

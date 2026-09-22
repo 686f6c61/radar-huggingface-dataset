@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Xiliourt/HeartTranscriptor-oss",
+  "slug": "xiliourt-hearttranscriptor-oss",
+  "author": "Xiliourt",
+  "url": "https://huggingface.co/Xiliourt/HeartTranscriptor-oss",
+  "created_at": "2026-09-22T13:30:08.000Z",
+  "updated_at": "2026-09-22T13:30:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "music",
+    "art",
+    "automatic-speech-recognition",
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "es",
+    "arxiv:2601.10547",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763857920,
+  "parameters_human": "763.9M",
+  "storage_bytes": 3055544304,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تسجيل الدخول - ICare",
+      "url": "https://icaredispensaries.careofme.net/",
+      "snippet": "تفريغ جميع الحقوق محفوظه لـ الشركة الوطنية لتقنية المعلومات © 2016"
+    },
+    {
+      "title": "E-Care | اي كير",
+      "url": "https://ecareplusdispensaries.careofme.net/Auth/Login",
+      "snippet": "Latest updates and statistic charts Enter your email to restore your password Request Cancel All Rights Reserved Nitco 2018"
+    },
+    {
+      "title": "تسجيل الدخول",
+      "url": "https://webapps.careofme.net/HRMS/Auth/PG_Login.aspx",
+      "snippet": "اسم المستخدم او كلمة المرور غير صحيحة تسجيل الدخول"
+    },
+    {
+      "title": "iCare-Home - CareOFMe",
+      "url": "https://webapps.careofme.net/icare/Newmaster/index-ar.aspx",
+      "snippet": "مرتجع فاتوره شراء برقم الفاتوره مرتجع فاتورة بيع برقم الفاتوره ارتجاع عن طريق الصنف ارجاع ..."
+    },
+    {
+      "title": "E-Care | اي كير",
+      "url": "https://ecareplusmedcare.careofme.net/Auth/ChangeLanguage?lang=Ar&ActionName=Login",
+      "snippet": "Latest updates and statistic charts ادخل بريدك الالكتروني لاستعادة كلمة السر: طلب إلغاء جميع الحقوق محفوظة لنتكو 2018"
+    }
+  ]
+}

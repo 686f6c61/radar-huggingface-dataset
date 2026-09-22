@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455",
+  "slug": "francesca9805-dan-latn-10mb-ppt-dp-10mb-packed-bfd_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455",
+  "created_at": "2026-09-22T17:21:49.000Z",
+  "updated_at": "2026-09-22T17:23:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/dan_latn_10mb",
+    "base_model:finetune:goldfish-models/dan_latn_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79375873,
+  "storage_human": "79 MB",
+  "base_model": "goldfish-models/dan_latn_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "حسابات الأعضاء | جمعية الماهر القرآنية",
+      "url": "https://www.almaher.sa/login/",
+      "snippet": "تسجيل حساب جديد. جمعية الماهر القرآنية تُعنى بتحفيظ القرآن الكريم وإتقانه، وتعليم التجويد والأداء، وتحفيظ معانيَ مفردات القرآن الكريم. كما تسعى لتأهيل طلاب المسابقات القرآنية الكبرى بأعلى معايير …"
+    },
+    {
+      "title": "جمعية الماهر القرآنية",
+      "url": "https://www.almaher.sa/",
+      "snippet": "جمعية الماهر القرآنية تُعنى بتحفيظ القرآن الكريم وإتقانه، وتعليم التجويد والأداء، وتحفيظ معانيَ مفردات القرآن الكريم. كما تسعى لتأهيل طلاب المسابقات القرآنية الكبرى بأعلى معايير الجودة والمهارة …"
+    },
+    {
+      "title": "جمعية الماهر القرآنية",
+      "url": "https://almaher.online/Web/login_student",
+      "snippet": "جمعية الماهر القرآنية بريدة، المملكة العربية السعودية الهاتف : +966 0556991644 البريد الالكتروني : almaher032@gmail.com"
+    },
+    {
+      "title": "تسجيل دخول طالب - جمعية الماهر القرآنية",
+      "url": "https://almaher.online/Web/login_student_nw",
+      "snippet": "تسجيل دخول طالب أدخل بياناتك للدخول إلى حسابك رقم الجوال / اسم المستخدم رقم الهوية / كلمة المرور تسجيل الدخول"
+    },
+    {
+      "title": "جمعية الماهر بالقرآن وعلومه",
+      "url": "https://almahr.org/donation/ar/login",
+      "snippet": "نسيت كلمة المرور?"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "innoblabla/devracage_sphere_GR00T17_rel",
+  "slug": "innoblabla-devracage_sphere_gr00t17_rel",
+  "author": "innoblabla",
+  "url": "https://huggingface.co/innoblabla/devracage_sphere_GR00T17_rel",
+  "created_at": "2026-09-22T15:56:58.000Z",
+  "updated_at": "2026-09-22T15:59:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "dataset:innoblabla/devracage_sphere",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‫حياة تشاك - فيلم: أين يمكن مشاهدته بالبث أونلاين",
+      "url": "https://www.justwatch.com/eg/movie/the-life-of-chuck",
+      "snippet": "يمكنكم حالياً مشاهدة \"حياة تشاك\" على iWant مجاناً بفواصل إعلانية أو شرائه وتنزيله على Apple TV Store. بإمكانكم أيضاً تأجير \"حياة تشاك\" على Apple TV Store أونلاين. تبع العمل …"
+    },
+    {
+      "title": "برايم فيديو: The Life of Chuck - Prime Video",
+      "url": "https://www.primevideo.com/-/ar/detail/0RHJNKCIHVBMCKBLWYROYYYIO1",
+      "snippet": "From the hearts and minds of Stephen King and directed by Mike Flanagan comes THE LIFE OF CHUCK, a genre-bending tale …"
+    },
+    {
+      "title": "فيلم - The Life of Chuck - 2024 مشاهدة اونلاين، فيديو، الإعلان، صور ...",
+      "url": "https://elcinema.com/work/2092382/",
+      "snippet": "يتبع العمل قصة (تشارلز كرانتز) ومروره بثلاثة فصول من حياته، تتناول ملامح شخصيته ومراحل حياته المختلفة. هل العمل ملون؟:"
+    },
+    {
+      "title": "Watch The Life of Chuck | Netflix",
+      "url": "https://www.netflix.com/im/title/82177711",
+      "snippet": "The story of an ordinary man's life unfolds across three chapters, in reverse – from the collapse of the universe, to his childhood joys …"
+    },
+    {
+      "title": "The Life of Chuck | Watch on Disney+",
+      "url": "https://www.disneyplus.com/browse/entity-aa6086a7-681c-47c3-8f3f-1461e60afffc?msockid=1cbe93a3fe536ee33cd4847fff5b6fda",
+      "snippet": "This unforgettable, genre-bending tale celebrates the life of Charles 'Chuck' Krantz as he experiences the wonder of love, the …"
+    }
+  ]
+}

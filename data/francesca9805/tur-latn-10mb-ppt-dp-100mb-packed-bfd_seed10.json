@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10",
+  "slug": "francesca9805-tur-latn-10mb-ppt-dp-100mb-packed-bfd_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10",
+  "created_at": "2026-09-22T13:35:06.000Z",
+  "updated_at": "2026-09-22T13:38:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/tur_latn_10mb",
+    "base_model:finetune:goldfish-models/tur_latn_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79400036,
+  "storage_human": "79 MB",
+  "base_model": "goldfish-models/tur_latn_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yuhang Liu - 知乎",
+      "url": "https://www.zhihu.com/people/yuhang-liu-34",
+      "snippet": "6 days ago · Yuhang Liu，数学博士，知乎高赞答主，擅长以简明清晰的方式回答数学相关问题。"
+    },
+    {
+      "title": "ao3镜像网站快速入口-ao3镜像站链接直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1896347053549806308.html",
+      "snippet": "Nov 10, 2025 · ao3镜像网站快速入口-ao3镜像站链接直达"
+    },
+    {
+      "title": "Gesetzliche Aufbewahrungsfristen 2025 mit Rechtsgrundlagen von A …",
+      "url": "https://www.juraforum.de/news/gesetzliche-aufbewahrungsfristen-2025-mit-rechtsgrundlagen-von-a-bis-z-tabelle_248156",
+      "snippet": "Sep 11, 2026 · Zum 1. Januar 2025 traten Änderungen der gesetzlichen Aufbewahrungsfristen für Geschäftsunterlagen in Kraft. …"
+    },
+    {
+      "title": "电脑桌面没有“此电脑”图标设置方法 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/2279669685996126628.html",
+      "snippet": "Jul 18, 2025 · 电脑桌面没有“此电脑”图标的设置方法 在Windows系统中，如果桌面缺少“此电脑”图标，可以通过以下步骤进行设置，使 …"
+    },
+    {
+      "title": "想了解omega，beta，alpha，ABO是什么意思，别人说的时候我都超 …",
+      "url": "https://www.zhihu.com/question/339016067",
+      "snippet": "⭐Beta (读音:贝塔 beta是组成这个社会的芸芸大众，不具备任何特征，不属于AO这种特殊的性别，<就比如现在看到着你〉。 数量较 …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "NicholasHG25/Latihan_ChatBot",
+  "slug": "nicholashg25-latihan_chatbot",
+  "author": "NicholasHG25",
+  "url": "https://huggingface.co/NicholasHG25/Latihan_ChatBot",
+  "created_at": "2026-09-22T13:09:47.000Z",
+  "updated_at": "2026-09-22T13:09:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Horoscopes - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Each day includes unique surprises and revelations, so make sure you visit regularly to read your zodiac sign’s daily horoscope. …"
+    },
+    {
+      "title": "Read Your Daily Horoscope! | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/",
+      "snippet": "Read Astrology Answers' online daily horoscopes for your zodiac sign, Tarot readings, article content, Chinese astrology, …"
+    },
+    {
+      "title": "如何评价Google DeepMind的Gemini 3.8 Flash模型？",
+      "url": "https://www.zhihu.com/question/2078625121644845032",
+      "snippet": "Sep 2, 2026 · 这里推荐我做的一个小插件 agy-staff 让 codex 和 claude code 可以调度 gemini，以弥补我上文提到的 gemini 目前缺少 …"
+    },
+    {
+      "title": "为什么我和 Gemini 用中文对话，她总是频繁用下面那些词让我非常生 …",
+      "url": "https://www.zhihu.com/question/2076723520709583786",
+      "snippet": "Aug 28, 2026 · Gemini是谷歌推出的多模态AI基座模型，深度整合谷歌生态，具备领先的多模态处理能力，支持百万级token长文本 …"
+    },
+    {
+      "title": "NLP 大模型与 CV 大模型的 “大”：同源而殊途的技术范式-云社区-华为云",
+      "url": "https://bbs.huaweicloud.com/blogs/455174",
+      "snippet": "Jun 27, 2025 · 随着多模态大模型（如 GPT-4V、Gemini）的发展，两者正走向技术融合 —— 例如，用语言模型的逻辑推理能力增强 …"
+    }
+  ]
+}

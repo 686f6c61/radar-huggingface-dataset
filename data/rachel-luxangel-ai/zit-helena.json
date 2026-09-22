@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rachel-luxangel-ai/zit-helena",
+  "slug": "rachel-luxangel-ai-zit-helena",
+  "author": "rachel-luxangel-ai",
+  "url": "https://huggingface.co/rachel-luxangel-ai/zit-helena",
+  "created_at": "2026-09-22T17:37:01.000Z",
+  "updated_at": "2026-09-22T17:37:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:adapter:Tongyi-MAI/Z-Image-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170287279,
+  "storage_human": "170 MB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rachel — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Rachel",
+      "snippet": "Le tombeau de Rachel, lieu saint du judaïsme, symbolise pour les Juifs la route que les Judéens prirent lors de l' exil de Babylone. …"
+    },
+    {
+      "title": "Baby Learning With Ms Rachel - First Words, Songs and Nursery …",
+      "url": "https://www.youtube.com/watch?v=hTqtGJwsJVE",
+      "snippet": "Have your baby or toddler learn with a real teacher, Ms Rachel! In this video Ms Rachel will teach key milestones and model activities …"
+    },
+    {
+      "title": "Prénom Rachel (fille) : signification, origine, caractère, sainte, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/rachel/prenom-1434",
+      "snippet": "Quelle est l'origine du prénom Rachel ? Le prénom Rachel est un prénom hébraïque. Rachel peut aussi être considéré comme un …"
+    },
+    {
+      "title": "Rachel | Ta tenue commence ici – From Rachel",
+      "url": "https://fromrachel.com/fr",
+      "snippet": "Accumule des points grâce à tes achats chez Rachel pour atteindre les différentes phases du soleil et profiter de leurs bienfaits: …"
+    },
+    {
+      "title": "Rachel - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rachel",
+      "snippet": "Rachel is first mentioned in the Hebrew Bible in Genesis 29 when Jacob happens upon her as she is about to water her father's flock. …"
+    }
+  ]
+}

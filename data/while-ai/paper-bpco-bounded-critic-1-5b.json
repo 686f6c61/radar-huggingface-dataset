@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "while-ai/paper-bpco-bounded-critic-1.5b",
+  "slug": "while-ai-paper-bpco-bounded-critic-1-5b",
+  "author": "while-ai",
+  "url": "https://huggingface.co/while-ai/paper-bpco-bounded-critic-1.5b",
+  "created_at": "2026-09-22T12:16:49.000Z",
+  "updated_at": "2026-09-22T12:17:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "ppo",
+    "gsm8k",
+    "critic",
+    "stale-rollouts",
+    "paper-replication",
+    "recipe",
+    "while-ai",
+    "text-generation",
+    "conversational",
+    "dataset:openai/gsm8k",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159260409,
+  "storage_human": "159 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "while - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/while.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"while\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "while - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/while",
+      "snippet": "Discussions du forum dont le titre comprend le (s) mot (s) \"while\" : -ing words with WHILE ... while nursing the economies through a …"
+    },
+    {
+      "title": "Traduction WHILE en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/while",
+      "snippet": "Traduction de \"while\" en français : pendant que, bien que. Conjonction, nom, signification, prononciation, expressions idiomatiques …"
+    },
+    {
+      "title": "Traduction : while - Dictionnaire anglais-français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/anglais-francais/while/624050",
+      "snippet": "while - Traduction Anglais-Français : Retrouvez la traduction de while, mais également sa prononciation, la traduction des …"
+    },
+    {
+      "title": "Boucle while — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Boucle_while",
+      "snippet": "En programmation, la boucle while, francisée en boucle tant que, est une structure de contrôle permettant d'exécuter un ensemble …"
+    }
+  ]
+}

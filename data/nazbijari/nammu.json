@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nazbijari/nammu",
+  "slug": "nazbijari-nammu",
+  "author": "nazbijari",
+  "url": "https://huggingface.co/nazbijari/nammu",
+  "created_at": "2026-09-22T14:44:20.000Z",
+  "updated_at": "2026-09-22T15:12:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bimamba_mlm",
+    "feature-extraction",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 167549952,
+  "parameters_human": "167.5M",
+  "storage_bytes": 670252672,
+  "storage_human": "670 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Se connecter à Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Se connecter à Gmail Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application …"
+    },
+    {
+      "title": "Créer un compte Google pour Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=fr",
+      "snippet": "Créer un compte Google Remarque : Si vous souhaitez utiliser Gmail pour votre entreprise, un compte Google Workspace vous sera …"
+    },
+    {
+      "title": "Mon icone messagerie gmail a disparu - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37489911-mon-icone-messagerie-gmail-a-disparu",
+      "snippet": "Jan 14, 2022 · Mon icone messagerie gmail a disparu Android tellma - Modifié le 14 janv. 2022 à 14:34 Panth33ra - 14 janv. 2022 à …"
+    },
+    {
+      "title": "Comment transférer ma messagerie Gmail sur mon nouveau PC",
+      "url": "https://forums.commentcamarche.net/forum/affich-28640047-comment-transferer-ma-messagerie-gmail-sur-mon-nouveau-pc",
+      "snippet": "Comment transférer ma messagerie Gmail sur mon nouveau PC pierre le 13 - Modifié le 2 sept. 2013 à 17:33 La gounole - 16 janv. …"
+    },
+    {
+      "title": "Créer un compte Google - Ordinateur - Aide Compte Google",
+      "url": "https://support.google.com/accounts/answer/27441?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Vous pouvez rechercher \"fournisseurs de messagerie gratuits\" pour trouver un autre fournisseur de messagerie qui vous convient et …"
+    }
+  ]
+}

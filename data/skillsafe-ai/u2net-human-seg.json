@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/u2net-human-seg",
+  "slug": "skillsafe-ai-u2net-human-seg",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/u2net-human-seg",
+  "created_at": "2026-09-22T18:59:51.000Z",
+  "updated_at": "2026-09-22T18:59:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "skillsafe",
+    "browser",
+    "onnxruntime-web",
+    "background-removal",
+    "import",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 175997641,
+  "storage_human": "176 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spelling.nu - Online spelling & grammatica controleren",
+      "url": "https://www.spelling.nu/",
+      "snippet": "Gratis online spelling en grammatica controle in het Nederlands, Engels, Duits, Frans en Spaans."
+    },
+    {
+      "title": "Juiste spelling van labyrint - Spelling.nu",
+      "url": "https://www.spelling.nu/nl/labyrint",
+      "snippet": "Bekijk de juiste spelling en schrijfwijze van 'labyrint'"
+    },
+    {
+      "title": "Juiste spelling van kopieën - Spelling.nu",
+      "url": "https://www.spelling.nu/nl/kopie%C3%ABn",
+      "snippet": "Bekijk de juiste spelling en schrijfwijze van 'kopieën'"
+    },
+    {
+      "title": "Juiste spelling van zijn - Spelling.nu",
+      "url": "https://www.spelling.nu/nl/zijn",
+      "snippet": "Bekijk de juiste spelling en schrijfwijze van 'zijn'"
+    },
+    {
+      "title": "Juiste spelling van uitentreuren - Spelling.nu",
+      "url": "https://www.spelling.nu/nl/uitentreuren",
+      "snippet": "Bekijk de juiste spelling en schrijfwijze van 'uitentreuren'"
+    }
+  ]
+}

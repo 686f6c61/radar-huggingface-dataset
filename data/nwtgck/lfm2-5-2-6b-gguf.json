@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "nwtgck/LFM2.5-2.6B-GGUF",
+  "slug": "nwtgck-lfm2-5-2-6b-gguf",
+  "author": "nwtgck",
+  "url": "https://huggingface.co/nwtgck/LFM2.5-2.6B-GGUF",
+  "created_at": "2026-09-22T13:24:22.000Z",
+  "updated_at": "2026-09-22T13:24:22.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ar",
+    "zh",
+    "en",
+    "fr",
+    "de",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "es",
+    "th",
+    "vi"
+  ],
+  "tags": [
+    "gguf",
+    "liquid",
+    "lfm2.5",
+    "llama.cpp",
+    "text-generation",
+    "ar",
+    "zh",
+    "en",
+    "fr",
+    "de",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "es",
+    "th",
+    "vi",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:quantized:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 22704701472,
+  "storage_human": "22.7 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pepsi Competitors: Top 12 Rivals in 2026 - FourWeekMBA",
+      "url": "https://fourweekmba.com/pepsi-competitors/",
+      "snippet": "Sep 8, 2026 · Pepsi competitors are companies that directly compete with PepsiCo across its beverage, snack, and food portfolio …"
+    },
+    {
+      "title": "PepsiCo - Competitors/Peers Analysis - Trendlyne.com",
+      "url": "https://us.trendlyne.com/us/fundamentals/peer-group/1554551/PEP/pepsico-inc/",
+      "snippet": "4 days ago · PepsiCo - Forecaster Forecaster Analyst Estimates for PepsiCo share price target, revenues, EPS, net income and …"
+    },
+    {
+      "title": "PepsiCo Competitors: PEP Key Rivals in 2026 - Hudson Labs",
+      "url": "https://www.hudson-labs.com/research/pepsico-competitors-pep-key-rivals-in-2026",
+      "snippet": "Apr 8, 2026 · Understanding PepsiCo’s competitive landscape is crucial for investors, analysts, and industry observers. Below, we …"
+    },
+    {
+      "title": "PepsiCo Competitive Landscape: 3 Rivals, 2024-2026 – Pestel-analysis…",
+      "url": "https://pestel-analysis.com/blogs/competitors/pepsico",
+      "snippet": "Jul 24, 2026 · The risk is clear in PepsiCo industry analysis: snacks stay resilient, but beverages face sharper pressure from health …"
+    },
+    {
+      "title": "PepsiCo Competitors: Complete List & Market Landscape",
+      "url": "https://www.distillintelligence.com/competitors/pepsico",
+      "snippet": "Browse competitors related to PepsiCo and other trending companies. The complete competitive landscape for PepsiCo, including …"
+    }
+  ]
+}

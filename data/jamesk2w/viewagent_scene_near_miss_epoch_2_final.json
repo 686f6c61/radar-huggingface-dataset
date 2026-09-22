@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JamesK2W/viewagent_scene_near_miss_epoch_2_final",
+  "slug": "jamesk2w-viewagent_scene_near_miss_epoch_2_final",
+  "author": "JamesK2W",
+  "url": "https://huggingface.co/JamesK2W/viewagent_scene_near_miss_epoch_2_final",
+  "created_at": "2026-09-22T18:39:32.000Z",
+  "updated_at": "2026-09-22T18:43:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "viewagent",
+    "graphrl",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 35080010162,
+  "storage_human": "35.1 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "וואלה דואר - FXP",
+      "url": "https://www.fxp.co.il/showthread.php?t=4035432",
+      "snippet": "17-07-2009 18:44 #1 miri1234 FxP Beginner שלום וואלה שדרגו את את הדואר שלהם ועכשיו אני לא מצליחה לקרוא שום מייל שנשלח אליי בשום …"
+    },
+    {
+      "title": "וואלה דואר - FXP",
+      "url": "https://www.fxp.co.il/showthread.php?t=5567778",
+      "snippet": "Mar 17, 2010 · וואלה טעמתי עכשיו אפונה מטוגנת שקנו לבית (תגובה אחת) וואלה כולם חייבים לראות מה יקרה לכם אחרי המוות🥶🥶🥶🥶🥶🥶🥶🥶🥶🥶🥶🥶🥶🥶 (9 תגובות) וואלה …"
+    },
+    {
+      "title": "חדשות | כתבות ודיווחים שוטפים 24/7 מהארץ ...",
+      "url": "https://forums.walla.co.il/main/index.html",
+      "snippet": "אתר החדשות הגדול בישראל. מבזקים ועדכוני חדשות מסביב לשעון: ידיעות ופרשנויות במגוון תחומים: פוליטיקה, כלכלה, בריאות ושאר הנושאים החמים …"
+    },
+    {
+      "title": "וואלה דואר - FXP",
+      "url": "https://www.fxp.co.il/showthread.php?t=21907301",
+      "snippet": "Mar 23, 2025 · Turn Jira stories, epics, and plain-English requirements into executable mobile and web test flows with Loadmill's AI …"
+    },
+    {
+      "title": "שיחזור מייל שנמחק מוואלה דואר - FXP",
+      "url": "https://www.fxp.co.il/showthread.php?t=6929486",
+      "snippet": "Oct 16, 2010 · אני יכול להוריד אותה? בנוסף,פניתי לאתר וואלה דואר שיעזרו לי,אך עדיין לא קיבלתי תשובה. בבקשה,תעזרו לי זה ממש חשוב לי,יש לי …"
+    }
+  ]
+}

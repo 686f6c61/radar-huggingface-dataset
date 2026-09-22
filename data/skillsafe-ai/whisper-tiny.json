@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/whisper-tiny",
+  "slug": "skillsafe-ai-whisper-tiny",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/whisper-tiny",
+  "created_at": "2026-09-22T20:50:44.000Z",
+  "updated_at": "2026-09-22T20:50:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "skillsafe",
+    "browser",
+    "import",
+    "base_model:onnx-community/whisper-tiny",
+    "base_model:quantized:onnx-community/whisper-tiny",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 258291148,
+  "storage_human": "258 MB",
+  "base_model": "onnx-community/whisper-tiny",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google als Startseite festlegen - Google Suche-Hilfe",
+      "url": "https://support.google.com/websearch/answer/463?hl=de",
+      "snippet": "Google wurde ohne meine Zustimmung als Startseite festgelegt Google ändert die Einstellungen für Ihre Startseite nicht ohne Ihre …"
+    },
+    {
+      "title": "Startpage-Suchmaschine - Google Chrome-Community",
+      "url": "https://support.google.com/chrome/thread/320941381/startpage-suchmaschine?hl=de",
+      "snippet": "Wenn Sie versucht haben, die Suchmaschine festzulegen, dies jedoch nicht funktioniert hat, wurde Ihr Computer möglicherweise …"
+    },
+    {
+      "title": "Add, Delete, Enable, or Disable Startup Items in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/2944-add-delete-enable-disable-startup-items-windows-10-a.html",
+      "snippet": "Jan 17, 2026 · How to Add, Delete, Enable, or Disable Startup Items in Windows 10 Information Startup items are the apps, shortcuts, …"
+    },
+    {
+      "title": "Change Startup Page in Microsoft Edge | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/5090-change-startup-page-microsoft-edge.html",
+      "snippet": "Oct 4, 2018 · How to Change Microsoft Edge Startup Page in Windows 10 Microsoft Edge is a new web browser that is available …"
+    },
+    {
+      "title": "Set your homepage and startup page",
+      "url": "https://support.google.com/chrome/answer/95314?hl=en-EN&co=GENIE.Platform%3DDesktop",
+      "snippet": "Set your startup page You can control what page or pages appear when you launch Chrome on your computer."
+    }
+  ]
+}

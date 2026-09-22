@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ruvnet/ruvector-typesafe-clinc150",
+  "slug": "ruvnet-ruvector-typesafe-clinc150",
+  "author": "ruvnet",
+  "url": "https://huggingface.co/ruvnet/ruvector-typesafe-clinc150",
+  "created_at": "2026-09-22T21:04:08.000Z",
+  "updated_at": "2026-09-22T21:04:08.000Z",
+  "license": "cc-by-3.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "ruvector",
+  "languages": [],
+  "tags": [
+    "ruvector",
+    "text-classification",
+    "intent-classification",
+    "typesafe",
+    "dataset:clinc/clinc_oos",
+    "license:cc-by-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "我想使用AI翻译看外文图书，那么ChatGPT、Claude、Gemini、有道 …",
+      "url": "https://www.zhihu.com/question/2084727705497494602",
+      "snippet": "我想使用AI翻译看外文图书，那么ChatGPT、Claude、Gemini、有道翻译，哪个翻译的最好？"
+    },
+    {
+      "title": "Gemini 3.8 Flash 发布，有什么值得关注的？",
+      "url": "https://www.zhihu.com/question/2078626349426683976",
+      "snippet": "Sep 2, 2026 · Gemini是谷歌推出的多模态AI基座模型，深度整合谷歌生态，具备领先的多模态处理能力，支持百万级token长文本 …"
+    },
+    {
+      "title": "Gemini在国内如何使用？ - 知乎",
+      "url": "https://www.zhihu.com/question/1995580558823162273",
+      "snippet": "Gemini 3.1 Pro 强化了类似人类“系统2”的深层思考机制。 面对极其复杂的跨学科问题或长链路逻辑谜题时，它不再急于生成直觉性答 …"
+    },
+    {
+      "title": "Gemini Advanced 和 aistudio有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/1903028279096632276",
+      "snippet": "Gemini 和 Google AI Studio 其实好区分，一个是面向普通用户的消费端应用，一个是面向开发者的平台，也就是所谓 ChatGPT 和 …"
+    },
+    {
+      "title": "如何评价 Gemini 2.5 Deep Think？ - 知乎",
+      "url": "https://www.zhihu.com/question/1934732121529909531",
+      "snippet": "对于日常问答或轻量创作，Gemini Ultra 的 249.99 美元月费可能显得成本太高。 对于科研、算法开发或复杂项目设计， Deep Think …"
+    }
+  ]
+}

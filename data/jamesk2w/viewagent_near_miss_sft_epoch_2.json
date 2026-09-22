@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JamesK2W/viewagent_near_miss_sft_epoch_2",
+  "slug": "jamesk2w-viewagent_near_miss_sft_epoch_2",
+  "author": "JamesK2W",
+  "url": "https://huggingface.co/JamesK2W/viewagent_near_miss_sft_epoch_2",
+  "created_at": "2026-09-22T21:03:19.000Z",
+  "updated_at": "2026-09-22T21:06:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "viewagent",
+    "graphrl",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545770995,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Σύνδεση - CY Login",
+      "url": "https://cylogin.cyprus.gov.cy/",
+      "snippet": "Ξεχάσατε το Όνομα Χρήστη; Ξεχάσατε τον Κωδικό Πρόσβασης σας; Ή"
+    },
+    {
+      "title": "CeGG - Government Gateway Portal (Ariadni)",
+      "url": "https://eforms.eservices.cyprus.gov.cy/Account/Login",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Κυβερνητική Πύλη - Gov.cy",
+      "url": "https://www.gov.cy/",
+      "snippet": "Από την πύλη μπορείτε να αναζητήσετε απευθείας την ιστοσελίδα, την υπηρεσία ή το θέμα που σας ενδιαφέρει. Μπορείτε, επίσης, …"
+    },
+    {
+      "title": "Index - CY Login - Cyprus",
+      "url": "https://cge.cyprus.gov.cy/cyloginregistration/register",
+      "snippet": "Το προφίλ στο CY Login σας παρέχει ασφαλή πρόσβαση στις προσωπικές σας πληροφορίες που είναι αποθηκευμένες σε κρατικά …"
+    },
+    {
+      "title": "Έναρξη Εγγραφής Φυσικού Προσώπου - CY Login",
+      "url": "https://cge.cyprus.gov.cy/cyloginregistration/register/start-individual-registration",
+      "snippet": "Για προσωπικές συναλλαγές συνδέστε το προφίλ σας με την ταυτότητα σας. Για τους τρόπους ταυτοποίησης πατήστε εδώ."
+    }
+  ]
+}

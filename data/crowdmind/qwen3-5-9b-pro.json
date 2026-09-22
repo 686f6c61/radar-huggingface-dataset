@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "CrowdMind/Qwen3.5-9b-pro",
+  "slug": "crowdmind-qwen3-5-9b-pro",
+  "author": "CrowdMind",
+  "url": "https://huggingface.co/CrowdMind/Qwen3.5-9b-pro",
+  "created_at": "2026-09-22T18:00:05.000Z",
+  "updated_at": "2026-09-22T18:05:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "agentic",
+    "supervised-fine-tuning",
+    "code",
+    "tool-use",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710173,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EU regulations | Mastercard in Europe",
+      "url": "https://www.mastercard.com/europe/en/for-the-world/about-us/eu-regulations.html",
+      "snippet": "Rules and Regulations are the guardrails of any business activity. Below you can find some information on our business model and …"
+    },
+    {
+      "title": "Understanding Cross-Border Payment Regulations: A Global …",
+      "url": "https://www.ftn.money/compliance-2/cross-border-payment-regulations/",
+      "snippet": "Feb 21, 2025 · This article provides a comprehensive exploration of the key regulations governing cross-border payments, their …"
+    },
+    {
+      "title": "Regulation - 2021/1230 - EN - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/eli/reg/2021/1230/oj/eng",
+      "snippet": "Aug 4, 2024 · This Regulation applies to cross-border payments, in accordance with the provisions of Directive (EU) 2015/2366, …"
+    },
+    {
+      "title": "Why transparency matters in cross-border payments - Mastercard",
+      "url": "https://www.mastercard.com/ie/en/news-and-trends/stories/2026/cross-border-transparency.html",
+      "snippet": "Aug 10, 2026 · Mastercard has long worked to strengthen transparency through clear standards for those who want to use our …"
+    },
+    {
+      "title": "FATF updates Standards on Recommendation 16 on Payment …",
+      "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/update-Recommendation-16-payment-transparency-june-2025.html",
+      "snippet": "Jun 18, 2025 · The Financial Action Task Force (FATF) has updated its Standards after the June 2025 FATF Plenary approved …"
+    }
+  ]
+}

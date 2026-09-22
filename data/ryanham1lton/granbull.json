@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Granbull",
+  "slug": "ryanham1lton-granbull",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Granbull",
+  "created_at": "2026-09-22T15:08:10.000Z",
+  "updated_at": "2026-09-22T15:09:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117791490,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WDR 2 - Radio",
+      "url": "https://www1.wdr.de/radio/wdr2/index.html",
+      "snippet": "WDR2.de ist die Internetseite des Radiosenders WDR 2. Hier könnt Ihr die besten Inhalte noch einmal hören, findet Informationen …"
+    },
+    {
+      "title": "WDR 2 hören im Livestream - Musik und Infos. So klingt NRW.",
+      "url": "https://www1.wdr.de/radio/player/radioplayer104~_layout-popupVersion.html",
+      "snippet": "WDR 2 hören im Livestream - Wir sind der Westen. POP, Rock, Unterhaltung & Nachrichten: Mit WDR 2 seid Ihr in NRW top …"
+    },
+    {
+      "title": "WDR 2 Radio: Aktuelle Informationen und Popmusik aus NRW",
+      "url": "https://www.radio.de/s/wdr2",
+      "snippet": "Höre WDR 2, 1LIVE und viele andere Radiosender aus aller Welt mit der radio.de-App Hol dir die kostenlose radio.de App Sender …"
+    },
+    {
+      "title": "Programmübersicht - WDR 2 - So, 20.09.2026",
+      "url": "https://www.wdr.de/programmvorschau/wdr2/uebersicht/index.html",
+      "snippet": "WDR 2 POP. Die Abendshow Übernahme von: Südwestrundfunk 23.00 Uhr 01.00 Uhr WDR Programmvorschau WDR 2 Darstellung: …"
+    },
+    {
+      "title": "Alle gegen Pistor - Startseite - WDR 2",
+      "url": "https://allegegenpistor.wdr2.de/index.php",
+      "snippet": "2 days ago · Tippen Sie die Bundesliga gegen WDR 2 Fußballexperte Sven Pistor und fahren Sie mit der Elf des Jahres zum DFB …"
+    }
+  ]
+}

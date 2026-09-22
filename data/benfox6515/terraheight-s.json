@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "benfox6515/TerraHeight-S",
+  "slug": "benfox6515-terraheight-s",
+  "author": "benfox6515",
+  "url": "https://huggingface.co/benfox6515/TerraHeight-S",
+  "created_at": "2026-09-22T16:39:38.000Z",
+  "updated_at": "2026-09-22T16:40:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "depth-anything-v2",
+  "languages": [],
+  "tags": [
+    "depth-anything-v2",
+    "terraheight_s",
+    "remote-sensing",
+    "height-estimation",
+    "depth-estimation",
+    "gamus",
+    "vision-transformer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99220705,
+  "storage_human": "99 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Points de retraite : comment sont-ils obtenus - Agirc Arrco",
+      "url": "https://www.agirc-arrco.fr/particuliers/ma-retraite/comprendre-ma-retraite/points-de-retraite-comment-sont-ils-obtenus/",
+      "snippet": "Points de retraite : comment sont-ils obtenus ? Tout au long de votre carrière, vous obtenez des points de retraite via le versement …"
+    },
+    {
+      "title": "Points de retraite et évènements de la vie - Agirc-Arrco",
+      "url": "https://www.agirc-arrco.fr/particuliers/ma-retraite/comprendre-ma-retraite/points-de-retraite-et-evenements-de-la-vie/",
+      "snippet": "Pour connaître votre nombre de points de retraite à tout moment de votre carrière, accédez à votre espace personnel Agirc-Arrco qui …"
+    },
+    {
+      "title": "Points Arrco enregistrés sans trimestre validé - Previssima",
+      "url": "https://www.previssima.fr/forum/retraite/points-arrco-enregistres-sans-trimestre-valide.html",
+      "snippet": "Aug 31, 2024 · Vous êtes certainement sur la déclaration annuelle de votre employeur, mais il n'a pas fait figurer votre numéro de …"
+    },
+    {
+      "title": "Points de retraite Agirc-Arrco : comment ils sont obtenus et comment ...",
+      "url": "https://www.juridique-et-droit.com/points-de-retraite-agirc-arrco-comment-ils-sont-obtenus-et-comment-les-optimiser/",
+      "snippet": "Points Agirc-Arrco : comment ils sont calculés, cotisés et rachetés. Explications claires sur les règles, les coûts, les erreurs à éviter et …"
+    },
+    {
+      "title": "Points AGIRC-ARRCO manquants : comment les récupérer",
+      "url": "https://smartretraite.fr/guides/points-agirc-arrco-manquants",
+      "snippet": "Jun 10, 2026 · Rassemblez vos bulletins de paie (notamment de décembre, qui récapitulent souvent les cumuls annuels) et adressez …"
+    }
+  ]
+}

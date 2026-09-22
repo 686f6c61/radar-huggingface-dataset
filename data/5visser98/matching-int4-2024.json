@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "5visser98/matching-int4-2024",
+  "slug": "5visser98-matching-int4-2024",
+  "author": "5visser98",
+  "url": "https://huggingface.co/5visser98/matching-int4-2024",
+  "created_at": "2026-09-22T12:03:40.000Z",
+  "updated_at": "2026-09-22T12:03:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is it worth to pay Facebook to \"Boost Listing\"? - Reddit",
+      "url": "https://www.reddit.com/r/Flipping/comments/jximpa/is_it_worth_to_pay_facebook_to_boost_listing/",
+      "snippet": "Nov 20, 2020 · Then I've noticed that the \"Boost Listing\" buttons appeared on my listings on the FB marketplace, and Facebook …"
+    },
+    {
+      "title": "how long does it normally take to sell something? - Reddit",
+      "url": "https://www.reddit.com/r/FacebookMarketplace/comments/1c2iuau/how_long_does_it_normally_take_to_sell_something/",
+      "snippet": "I’ve had things sit on FB Marketplace for literally years. If you want to sell fast, use a fee based timed app like an eBay auction. One …"
+    },
+    {
+      "title": "How do I get into Facebook marketplace if I’m under 18? I ... - Reddit",
+      "url": "https://www.reddit.com/r/teenagers/comments/trnp6d/how_do_i_get_into_facebook_marketplace_if_im/",
+      "snippet": "Mar 29, 2022 · How do I get into Facebook marketplace if I’m under 18? I’ve been trying for an hour and can’t find a way : r/teenagers …"
+    },
+    {
+      "title": "How do you see recently viewed Facebook Marketplace History? I",
+      "url": "https://www.reddit.com/r/facebook/comments/i6b1jn/how_do_you_see_recently_viewed_facebook/",
+      "snippet": "How do you see recently viewed Facebook Marketplace History? I saw an item on Marketplace that I was interested. However, when …"
+    },
+    {
+      "title": "Best way to setup a Facebook account if I only want to use it ... - Reddit",
+      "url": "https://www.reddit.com/r/Flipping/comments/16h9vai/best_way_to_setup_a_facebook_account_if_i_only/",
+      "snippet": "Sep 13, 2023 · Facebook only wants you to use your real account on marketplace. Which makes sense because it acts as a scam …"
+    }
+  ]
+}

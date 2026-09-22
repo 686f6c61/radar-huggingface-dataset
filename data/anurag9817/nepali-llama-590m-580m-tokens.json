@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Anurag9817/nepali-llama-590m-580m-tokens",
+  "slug": "anurag9817-nepali-llama-590m-580m-tokens",
+  "author": "Anurag9817",
+  "url": "https://huggingface.co/Anurag9817/nepali-llama-590m-580m-tokens",
+  "created_at": "2026-09-22T16:13:37.000Z",
+  "updated_at": "2026-09-22T16:16:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ne",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "nepali",
+    "english",
+    "roman-nepali",
+    "causal-lm",
+    "pretraining",
+    "ne",
+    "en",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 590077440,
+  "parameters_human": "590.1M",
+  "storage_bytes": 2361267071,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "学士，本科，硕士，研究生用英文怎么说啊？undergraduate不是未毕 …",
+      "url": "https://zhidao.baidu.com/question/13842132.html",
+      "snippet": "2 usually Master 硕士；有硕士学位的人 a person who has a master's degree (especially BrE) 研究生 a person who already holds a …"
+    },
+    {
+      "title": "Game Master使用方法 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/47228908.html",
+      "snippet": "Game Master使用方法首先启动GAME MASTER，然后启动GAME MASTER PLUS，然后进入游戏，在游戏中输入THIS（开启GMP …"
+    },
+    {
+      "title": "鼠标的左键不灵了，应该怎么修？ - 知乎",
+      "url": "https://www.zhihu.com/question/20094180",
+      "snippet": "鼠标按键失灵通用续命教程，屡试不爽，真正的零成本 陪我了多年的罗技MX Master 2S这几天突然右键失灵了，具体表现是：1、右键 …"
+    },
+    {
+      "title": "罗技鼠标怎么查询真伪？ - 知乎",
+      "url": "https://www.zhihu.com/question/312354382",
+      "snippet": "然后拔打罗技官方的电话，根据语音提示操作输入SN码查询真伪 手机打这个号码 400-820-0338 固话座机打这个 800-820-0338 另外 …"
+    },
+    {
+      "title": "10 Accredited Online Universities in South Africa | Updated",
+      "url": "https://worldscholarshipforum.com/accredited-online-universities-south-africa/",
+      "snippet": "Mar 1, 2023 · You can now obtain a certified University degree in South Africa at the comfort of your home. Explore our 10 Accredited …"
+    }
+  ]
+}

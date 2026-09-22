@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Fluxnat-Coder-3B-GGUF",
+  "slug": "mradermacher-fluxnat-coder-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Fluxnat-Coder-3B-GGUF",
+  "created_at": "2026-09-22T15:12:31.000Z",
+  "updated_at": "2026-09-22T15:12:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jehovah’s Witnesses—Official Website: jw.org | English",
+      "url": "https://www.jw.org/en/",
+      "snippet": "Jehovah’s Witnesses: Our official website provides online access to the Bible, Bible-based publications, and current news. It …"
+    },
+    {
+      "title": "여호와의 증인 공식 웹사이트: jw.org | 한국어",
+      "url": "https://www.jw.org/ko/",
+      "snippet": "여호와의 증인: 공식 웹사이트를 통해 성경과 성경에 근거한 출판물과 최신 뉴스를 온라인으로 읽어 볼 수 있습니다. 또한 그들의 신앙과 …"
+    },
+    {
+      "title": "Watchtower ONLINE LIBRARY",
+      "url": "https://wol.jw.org/en/wol/h/r1/lp-e",
+      "snippet": "This is an authorized Web site of Jehovah’s Witnesses. It is a research tool for publications in various languages produced by …"
+    },
+    {
+      "title": "Log In :: Jehovah’s Witnesses",
+      "url": "https://login.jw.org/",
+      "snippet": "Log in to your jw.org account to manage donations, view personalized content, and schedule tours of our branch offices. New users …"
+    },
+    {
+      "title": "BIBLIOTECA EN LÍNEA Watchtower",
+      "url": "https://wol.jw.org/wol/finder?wtlocale=S",
+      "snippet": "Esta es una página web oficial de los testigos de Jehová. Es una herramienta que le permitirá consultar las publicaciones de los …"
+    }
+  ]
+}

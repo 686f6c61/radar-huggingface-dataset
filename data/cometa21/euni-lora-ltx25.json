@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cometa21/euni-lora-ltx25",
+  "slug": "cometa21-euni-lora-ltx25",
+  "author": "cometa21",
+  "url": "https://huggingface.co/cometa21/euni-lora-ltx25",
+  "created_at": "2026-09-22T17:03:17.000Z",
+  "updated_at": "2026-09-22T17:07:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ltx-2",
+    "ltx-2.5",
+    "lora",
+    "portrait",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:adapter:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 428150680,
+  "storage_human": "428 MB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Newest Questions - Stack Overflow",
+      "url": "https://stackoverflow.com/",
+      "snippet": "18 hours ago · Stack Overflow | The World’s Largest Online Community for Developers"
+    },
+    {
+      "title": "github - Git keeps prompting me for a password - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/7773181/git-keeps-prompting-me-for-a-password",
+      "snippet": "I've been using Git for a while now, but the constant requests for a password are starting to drive me up the wall. I'm using …"
+    },
+    {
+      "title": "bibliographies - I broke my nice bibliography in overleaf - TeX",
+      "url": "https://tex.stackexchange.com/questions/739995/i-broke-my-nice-bibliography-in-overleaf",
+      "snippet": "Mar 30, 2025 · So, everything was working fine during at least 6 months, but yesterday I broke something. The document (in overleaf) …"
+    },
+    {
+      "title": "How does one insert a backslash or a tilde (~) into LaTeX?",
+      "url": "https://tex.stackexchange.com/questions/9363/how-does-one-insert-a-backslash-or-a-tilde-into-latex",
+      "snippet": "For the special case where a backslash or tilde must be written to an auxiliary file or shell escape see: How can I provide a verbatim …"
+    },
+    {
+      "title": "Error message - \"This email address is already registered\"",
+      "url": "https://meta.stackoverflow.com/questions/377675/error-message-this-email-address-is-already-registered",
+      "snippet": "Dec 10, 2018 · You're not going to be able to create a new account using the same login credentials as an existing account, that's by …"
+    }
+  ]
+}

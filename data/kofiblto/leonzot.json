@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "KOFIblto/leonzot",
+  "slug": "kofiblto-leonzot",
+  "author": "KOFIblto",
+  "url": "https://huggingface.co/KOFIblto/leonzot",
+  "created_at": "2026-09-22T17:38:13.000Z",
+  "updated_at": "2026-09-22T17:38:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "krea2",
+    "krea2-diffusers",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZARA Italia / Italy | Nuova Collezione Online",
+      "url": "https://www.zara.com/it/",
+      "snippet": "Passano le stagioni, ma l’unica, vera moda sempre attuale e fashion per donna, uomo, ragazzi e bambini è quella proposta da Zara …"
+    },
+    {
+      "title": "ZARA Official Website",
+      "url": "https://www.zara.com/",
+      "snippet": "Discover the latest trends in fashion for women, men, and kids at ZARA. Shop new arrivals, collections, and lookbooks online."
+    },
+    {
+      "title": "Zara Home Italia | Sito web ufficiale",
+      "url": "https://www.zarahome.com/it/",
+      "snippet": "Scopri le nuove tendenze in fatto di arredamento e decorazione da Zara Home. Biancheria da letto, stoviglie, asciugamani o …"
+    },
+    {
+      "title": "Zara (retailer) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zara_(retailer)",
+      "snippet": "Zara has a range of basic designs that are carried over from year to year, but some fashion-forward designs can stay on the shelves …"
+    },
+    {
+      "title": "Zara - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Zara",
+      "snippet": "Il porto di Zara, che è adibito sia al traffico turistico sia a quello merci, è diventato uno dei porti più trafficati della Croazia con una …"
+    }
+  ]
+}

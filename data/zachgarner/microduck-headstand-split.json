@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ZachGarner/microduck-headstand-split",
+  "slug": "zachgarner-microduck-headstand-split",
+  "author": "ZachGarner",
+  "url": "https://huggingface.co/ZachGarner/microduck-headstand-split",
+  "created_at": "2026-09-22T13:57:29.000Z",
+  "updated_at": "2026-09-22T13:57:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "mujoco",
+    "microduck",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5624976,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Photoshop 2026已经发布了？有免费版了吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/1968116367262748806",
+      "snippet": "同求PS2026免费版的同学可以看这里，最近我踩了好多坑，在网上找的资源没有一个是中文原版的，后面问了大厂设计师朋友要了他 …"
+    },
+    {
+      "title": "ultra 5 225H和125H，以及13500H差距多大？ - 知乎",
+      "url": "https://www.zhihu.com/question/1914727631401750811",
+      "snippet": "intel的cpu命名规则也在发生改变，还有Core 5 220H这种混淆视听的cpu（其实就是i5-13500H的马甲），我们选择cpu的时候，还是要 …"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/tardis/jm/art/2045110357153275908",
+      "snippet": "知乎，有趣、有料、有态度的内容社区。开放、真实、专业的社区氛围，汇集各行各业亲历者、内行人、领域专家。上知乎，找答案、 …"
+    },
+    {
+      "title": "第三方背调公司（全景求是）到底都会调查些什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/293775157",
+      "snippet": "1、HR对合作的背调公司下单： HR会告知候选人，发起背调，注意授权。 规范的背调都是有第三方背调公司来做的，而不是企业HR …"
+    },
+    {
+      "title": "有没有已经离开的人说说在京东方的真实感受？ - 知乎",
+      "url": "https://www.zhihu.com/question/48098575",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

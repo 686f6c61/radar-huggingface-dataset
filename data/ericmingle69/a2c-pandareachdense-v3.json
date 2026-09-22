@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "EricMingle69/a2c-PandaReachDense-v3",
+  "slug": "ericmingle69-a2c-pandareachdense-v3",
+  "author": "EricMingle69",
+  "url": "https://huggingface.co/EricMingle69/a2c-PandaReachDense-v3",
+  "created_at": "2026-09-22T17:36:26.000Z",
+  "updated_at": "2026-09-22T17:36:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117537,
+  "storage_human": "117537 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "现在柚子社的官方补丁在哪里啊? - 知乎",
+      "url": "https://www.zhihu.com/question/572116481",
+      "snippet": "Dec 13, 2022 · 知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享 …"
+    },
+    {
+      "title": "Rak jądra - www.RJForum.pl - polskie forum • Najczęściej Zadawane ...",
+      "url": "http://www.rjforum.pl/faq.php",
+      "snippet": "RJForum.pl to forum poświęcone nowotworom jądra. Rak jądra dotyka coraz więcej młodych mężczyzn a w Polsce wciąż jest leczony …"
+    },
+    {
+      "title": "Rak jądra - www.RJForum.pl - polskie forum • Strona główna - rak ...",
+      "url": "http://www.rjforum.pl/",
+      "snippet": "RJForum.pl to forum poświęcone nowotworom jądra. Rak jądra dotyka coraz więcej młodych mężczyzn a w Polsce wciąż jest leczony …"
+    },
+    {
+      "title": "跳线，网线，光纤，光缆分别是什么？有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/452879573",
+      "snippet": "Apr 4, 2021 · 具体使用时可参照厂家提供的说明书。 必须采用专用的卡线钳（如图4所示）才能制作处理网线接头（RJ-45接头）。 小 …"
+    },
+    {
+      "title": "为何现行人教版《高中数学》分成A版和B版两种版本？ - 知乎",
+      "url": "https://www.zhihu.com/question/40151192",
+      "snippet": "为何现行人教版《高中数学》有A版和B版之分？一个出版社编写两个版本的教科书，其背后有何动机/实在的意…"
+    }
+  ]
+}

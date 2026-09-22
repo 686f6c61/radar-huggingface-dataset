@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-rfdetr-nano",
+  "slug": "dronefreak-bdd100k-rfdetr-nano",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-rfdetr-nano",
+  "created_at": "2026-09-22T19:05:56.000Z",
+  "updated_at": "2026-09-22T19:06:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "rfdetr",
+  "languages": [],
+  "tags": [
+    "rfdetr",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "traffic-sign-detection",
+    "traffic-light-detection",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2405.14458",
+    "arxiv:2410.17725",
+    "arxiv:2606.03748",
+    "arxiv:2402.13616",
+    "base_model:Roboflow/rf-detr-nano",
+    "base_model:finetune:Roboflow/rf-detr-nano",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132638746,
+  "storage_human": "133 MB",
+  "base_model": "Roboflow/rf-detr-nano",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "mAP@50 (test split)",
+      "value": 56.9
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "mAP@50-95 (test split)",
+      "value": 31.58
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "Precision (test split)",
+      "value": 80.68
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "Recall (test split)",
+      "value": 64.78
+    }
+  ],
+  "sources": [
+    {
+      "title": "Contact Us - Microsoft Support",
+      "url": "https://support.microsoft.com/en-gb/contactus",
+      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Microsoft Copilot Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/microsoft-copilot/blog/microsoft-copilot-blog",
+      "snippet": "Built for business: How Microsoft 365 Copilot keeps you in the flow of legal work Now the LegalZoom agent works inside Microsoft …"
+    },
+    {
+      "title": "Sign in to your account - techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation."
+    },
+    {
+      "title": "Mettre à jour les pilotes via Gestionnaire de périphériques dans ...",
+      "url": "https://support.microsoft.com/fr-fr/windows/mettre-%C3%A0-jour-les-pilotes-via-gestionnaire-de-p%C3%A9riph%C3%A9riques-dans-windows-ec62f46c-ff14-c91d-eead-d7126dc1f7b6",
+      "snippet": "Découvrez comment mettre à jour ou réinstaller des pilotes dans Windows à l’aide de Gestionnaire de périphériques."
+    }
+  ]
+}

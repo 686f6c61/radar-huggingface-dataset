@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/kokoro-82m",
+  "slug": "skillsafe-ai-kokoro-82m",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/kokoro-82m",
+  "created_at": "2026-09-22T18:59:57.000Z",
+  "updated_at": "2026-09-22T19:00:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "skillsafe",
+    "browser",
+    "onnxruntime-web",
+    "text-to-speech",
+    "import",
+    "base_model:onnx-community/Kokoro-82M-v1.0-ONNX",
+    "base_model:quantized:onnx-community/Kokoro-82M-v1.0-ONNX",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284321104,
+  "storage_human": "284 MB",
+  "base_model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voli low cost: confronta e prenota biglietti aerei | Skyscanner",
+      "url": "https://www.skyscanner.it/",
+      "snippet": "Confronta i voli low cost delle principali compagnie aeree e agenzie di viaggio e trova le offerte voli per le tue destinazioni preferite. …"
+    },
+    {
+      "title": "Trova le offerte voli e i biglietti aerei | Skyscanner",
+      "url": "https://www.skyscanner.it/voli",
+      "snippet": "Cerchi le migliori offerte voli per le vacanze? Confronta i voli low cost di migliaia di fornitori e prenota subito online."
+    },
+    {
+      "title": "Voli last minute a partire da 22 € | Skyscanner",
+      "url": "https://www.skyscanner.it/voli/offerte-last-minute/",
+      "snippet": "Le offerte last minute più ricercate per i voli in partenza a breve Cerchi un'offerta last minute economica o il miglior volo andata e …"
+    },
+    {
+      "title": "Confronta noleggio auto economico da 5 € al giorno | Skyscanner",
+      "url": "https://www.skyscanner.it/autonoleggio",
+      "snippet": "Trova le migliori offerte di noleggio auto da fornitori di fiducia in oltre 18.000 località in tutto il mondo con Skyscanner. Confronta i …"
+    },
+    {
+      "title": "56 € Voli economici da Roma (ROME) a Dublino (DUB) | Skyscanner",
+      "url": "https://www.skyscanner.it/rotte/rome/dub/roma-per-dublino.html",
+      "snippet": "Offerte voli da Roma per Dublino Cerchi un'offerta last minute economica o il miglior volo di andata e ritorno dall'aeroporto di Roma a …"
+    }
+  ]
+}

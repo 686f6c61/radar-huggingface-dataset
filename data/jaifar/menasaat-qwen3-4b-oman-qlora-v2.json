@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "jaifar/menasaat-qwen3-4b-oman-qlora-v2",
+  "slug": "jaifar-menasaat-qwen3-4b-oman-qlora-v2",
+  "author": "jaifar",
+  "url": "https://huggingface.co/jaifar/menasaat-qwen3-4b-oman-qlora-v2",
+  "created_at": "2026-09-22T12:38:03.000Z",
+  "updated_at": "2026-09-22T12:38:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "oman",
+    "arabic",
+    "qwen3",
+    "qlora",
+    "lora",
+    "fine-tuned",
+    "menasaat",
+    "tourism",
+    "middle-east",
+    "rag",
+    "text-generation",
+    "ar",
+    "en",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610538,
+  "storage_human": "144 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unser Unternehmen | CropEnergies AG",
+      "url": "https://www.cropenergies.com/de/unternehmen",
+      "snippet": "Nachhaltige, erneuerbare Produkte aus Biomasse – dafür steht CropEnergies. Mit unseren Produkten tragen wir zu einer …"
+    },
+    {
+      "title": "CropEnergies – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/CropEnergies",
+      "snippet": "Das Hauptprodukt ist Bioethanol. Dieser ersetzt Ottokraftstoff. Das Unternehmen produziert aber auch Bioethanol beispielsweise für …"
+    },
+    {
+      "title": "CropEnergies AG | Mitglied der Südzucker Gruppe",
+      "url": "https://www.cropenergies.com/",
+      "snippet": "Die CropEnergies AG ist ein führender europäischer Hersteller von nachhaltig erzeugtem Bioethanol, Neutralalkohol und Lebens- & …"
+    },
+    {
+      "title": "CropEnergies AKTIE | Aktienkurs & News | A0LAUP – boerse.de",
+      "url": "https://www.boerse.de/aktien/CropEnergies-Aktie/DE000A0LAUP1",
+      "snippet": "CropEnergies AKTIE (ISIN: DE000A0LAUP1): Realtime-Kurs der CropEnergies Aktie in EUR Analysen & Performance aktuelle …"
+    },
+    {
+      "title": "CropEnergies Aktie (CE2) • DE000A0LAUP1 - BörsenNEWS.de",
+      "url": "https://www.boersennews.de/markt/aktien/detail/de000a0laup1/",
+      "snippet": "CropEnergies Kurs heute • Aktuelle Realtime Finanzdaten, Nachrichten und Informationen zur Aktie (CE2) • DE000A0LAUP1 …"
+    }
+  ]
+}

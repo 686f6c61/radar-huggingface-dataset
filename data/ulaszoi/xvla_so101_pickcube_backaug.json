@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ulasZoi/xvla_so101_pickcube_BackAUG",
+  "slug": "ulaszoi-xvla_so101_pickcube_backaug",
+  "author": "ulasZoi",
+  "url": "https://huggingface.co/ulasZoi/xvla_so101_pickcube_BackAUG",
+  "created_at": "2026-09-22T13:10:22.000Z",
+  "updated_at": "2026-09-22T13:10:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "xvla",
+    "robotics",
+    "dataset:ulasZoi/smolvla_pickcube_all_UnrealBackgroundAugmentation",
+    "arxiv:2510.10274",
+    "base_model:lerobot/xvla-base",
+    "base_model:finetune:lerobot/xvla-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 879687256,
+  "parameters_human": "879.7M",
+  "storage_bytes": 1759504160,
+  "storage_human": "1.8 GB",
+  "base_model": "lerobot/xvla-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "687M Followers, 299 Following, 8,591 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    },
+    {
+      "title": "Instagram - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Instagram",
+      "snippet": "In August 2016, Instagram launched Instagram Stories, a feature that allows users to take photos, add effects and layers, and add …"
+    },
+    {
+      "title": "About Instagram: Features, Safety, Community & More",
+      "url": "https://about.instagram.com/",
+      "snippet": "Learn about Instagram: how the app works, key features, safety tools, teen accounts, parent resources, community programs, and …"
+    },
+    {
+      "title": "Instagram (@instagram) / X",
+      "url": "https://x.com/instagram",
+      "snippet": "Aug 19, 2010 · New Close Friends Only with @ KaiCenat and his sister @ KaiyaCenat 🫶 Out now on Instagram."
+    }
+  ]
+}

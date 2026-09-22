@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "harikarthikmanyam/laya-issue-triage",
+  "slug": "harikarthikmanyam-laya-issue-triage",
+  "author": "harikarthikmanyam",
+  "url": "https://huggingface.co/harikarthikmanyam/laya-issue-triage",
+  "created_at": "2026-09-22T13:46:28.000Z",
+  "updated_at": "2026-09-22T13:57:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [],
+  "tags": [
+    "laya",
+    "safetensors",
+    "typed-decisions",
+    "github",
+    "issue-triage",
+    "non-autoregressive",
+    "modernbert",
+    "text-classification",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609220,
+  "storage_human": "843 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "GitHub issue type classification",
+      "dataset": "laya-issue-triage (held-out repos)",
+      "metric": null,
+      "value": 0.6501
+    },
+    {
+      "task": "GitHub issue type classification",
+      "dataset": "laya-issue-triage (held-out repos)",
+      "metric": "macro F1",
+      "value": 0.6273
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bova Maloba, PMP - Founder of M+ Builders - LinkedIn",
+      "url": "https://www.linkedin.com/in/bova-maloba-pmp-b599a349",
+      "snippet": "That’s why I love construction so much. There are always new challenges to navigate. And new opportunities to roll up your sleeves …"
+    },
+    {
+      "title": "GitHub - manyamkarthik/laya-issue-triage",
+      "url": "https://github.com/manyamkarthik/laya-issue-triage",
+      "snippet": "GitHub issue triage with Laya, a non-autoregressive typed-decision model. One forward pass per issue, no text generation, no API bill, runs on the CPU inside a GitHub Action. The model answers two typed questions about a newly opened issue: Training labels come from the maintainers who triaged each ..."
+    },
+    {
+      "title": "#constructionmanagement | M+ Builders | 10 comments - LinkedIn",
+      "url": "https://www.linkedin.com/posts/mbuilderstx_constructionmanagement-activity-7024408512852070400-ByEB",
+      "snippet": "Oct 28, 2025 · Meet Bova Maloba, PMP, M+ Builders’ founder and fearless leader. A Congo native, Bova arrived in the United States …"
+    },
+    {
+      "title": "GitHub - NandhaKishorM/laya",
+      "url": "https://github.com/NandhaKishorM/laya",
+      "snippet": "Laya ships three checkpoints. The built-in Router is the recommended entry point: it evaluates any state in any language, automatically detects scripts and languages in sub-milliseconds, and dispatches to the optimal checkpoint in a single forward pass."
+    },
+    {
+      "title": "Meet Our Founder – M+ Builders and Services",
+      "url": "https://www.malobabuilders.com/meet-our-founder/",
+      "snippet": "Bova’s journey is a testament to resilience, determination, and innovative thinking—core principles at the heart of M+ Builders’ …"
+    }
+  ]
+}

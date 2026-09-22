@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "woshichaoren123/n2-molmospaces-stage4-eagle-dflash",
+  "slug": "woshichaoren123-n2-molmospaces-stage4-eagle-dflash",
+  "author": "woshichaoren123",
+  "url": "https://huggingface.co/woshichaoren123/n2-molmospaces-stage4-eagle-dflash",
+  "created_at": "2026-09-22T17:57:33.000Z",
+  "updated_at": "2026-09-22T17:58:31.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "safetensors",
+    "GrootN2Nano",
+    "robotics",
+    "vision-language-action",
+    "molmospaces",
+    "eagle-embodied",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8303691556,
+  "parameters_human": "8.30B",
+  "storage_bytes": 16702676987,
+  "storage_human": "16.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Think and Grow Rich - ia801401.us.archive.org",
+      "url": "https://ia801401.us.archive.org/17/items/think-and-grow-rich-pdf/Think-and-Grow-Rich-PDF.pdf",
+      "snippet": "When you begin to THINK AND GROW RICH, you will observe that riches begin with a state of mind, with definiteness of purpose, …"
+    },
+    {
+      "title": "Think-and-Grow-Rich-PDF.pdf - Google Drive",
+      "url": "https://drive.google.com/file/d/0BwEKYdmMaJIGOEp6enBLM3VxRjg/view?resourcekey=0-oleVde4shCeqr-psMzy7oA",
+      "snippet": "Loading…"
+    },
+    {
+      "title": "Think and Grow Rich by Napoleon Hill - Archive.org",
+      "url": "https://archive.org/download/think-and-grow-rich_202206/Think-And-Grow-Rich.pdf",
+      "snippet": "This new eBook version of “Think and Grow Rich” by Napoleon Hill has been made available freely because we truly believe that this …"
+    },
+    {
+      "title": "Think-and-Grow-Rich-Napoleon-Hill-1937-original-version-1937.pdf",
+      "url": "https://docs.google.com/file/d/0B_TibwEltyeuYUxnZWpEdXl0SWs/edit",
+      "snippet": "Loading…"
+    },
+    {
+      "title": "Think and Grow Rich PDF - cdn.bookey.app",
+      "url": "https://cdn.bookey.app/files/pdf/book/en/think-and-grow-rich.pdf",
+      "snippet": "Drawing upon insights from the lives of successful individuals, Hill presents a roadmap to financial and personal success, …"
+    }
+  ]
+}

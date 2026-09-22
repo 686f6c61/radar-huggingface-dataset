@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "chfm/Qwen-Image-2.1-INT4ConvRot-ComfyUI",
+  "slug": "chfm-qwen-image-2-1-int4convrot-comfyui",
+  "author": "chfm",
+  "url": "https://huggingface.co/chfm/Qwen-Image-2.1-INT4ConvRot-ComfyUI",
+  "created_at": "2026-09-22T12:08:38.000Z",
+  "updated_at": "2026-09-22T12:08:39.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65907160844,
+  "storage_human": "65.9 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Алматы – Шымкент: альтернатива такси от 7,433 ₸ | inDrive …",
+      "url": "https://intercity.indrive.com/ru/kz/routes/almaty-to-shymkent",
+      "snippet": "Устали от фиксированных цен на поездки из Алматы в Шымкент? inDrive Межгород — альтернатива привычному такси с …"
+    },
+    {
+      "title": "От Алматы до Шымкента на машине: расстояние, время, …",
+      "url": "https://yandex.kz/maps/ru/routes/auto/almaty/chimkent/",
+      "snippet": "От Алматы до Шымкента, сколько времени занимает путь с учётом пробок и без, подробное описание маршрута по платным …"
+    },
+    {
+      "title": "От Шымкента до Алматы на машине: расстояние, время, …",
+      "url": "https://yandex.kz/maps/ru/routes/auto/chimkent/almaty/",
+      "snippet": "От Шымкента до Алматы, сколько времени занимает путь с учётом пробок и без, подробное описание маршрута по платным …"
+    },
+    {
+      "title": "Такси Алматы Шымкент ᐈ междугороднее, заказать, стоимость и отзывы на ...",
+      "url": "https://mobiway-kz.com/taxi-almaty-to-shymkent.aspx",
+      "snippet": "Заказать междугороднее такси из Алматы в Шымкент – лучшие компании. Отзывы, рейтинг 【Калькулятор стоимости】 цены …"
+    },
+    {
+      "title": "Такси из Алматы в Шымкент. Цена такси 2026 - Яндекс Такси, …",
+      "url": "http://taxi-almaty-kz.taxigator.ru/r/Y6sAAA",
+      "snippet": "Алматы в Шымкент - расчетная стоимость такси. Расчитать цену поездки такси в г. Алматы!"
+    }
+  ]
+}

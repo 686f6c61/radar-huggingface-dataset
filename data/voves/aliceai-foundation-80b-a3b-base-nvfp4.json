@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "voves/AliceAI-Foundation-80B-A3B-Base-NVFP4",
+  "slug": "voves-aliceai-foundation-80b-a3b-base-nvfp4",
+  "author": "voves",
+  "url": "https://huggingface.co/voves/AliceAI-Foundation-80B-A3B-Base-NVFP4",
+  "created_at": "2026-09-22T17:19:02.000Z",
+  "updated_at": "2026-09-22T17:55:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "alice_ai",
+    "nvfp4",
+    "quantization",
+    "blackwell",
+    "custom_code",
+    "mixture-of-experts",
+    "vllm",
+    "text-generation",
+    "ru",
+    "en",
+    "base_model:yandex/AliceAI-Foundation-80B-A3B-Base",
+    "base_model:quantized:yandex/AliceAI-Foundation-80B-A3B-Base",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 40981255808,
+  "parameters_human": "40.98B",
+  "storage_bytes": 47732308353,
+  "storage_human": "47.7 GB",
+  "base_model": "yandex/AliceAI-Foundation-80B-A3B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vinted | Toute la seconde main dans une seule application",
+      "url": "https://www.vinted.fr/?msockid=1fd73a47a56d632439ea2d9ba4c76236",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "S'inscrire et se connecter | Vinted",
+      "url": "https://www.vinted.fr/help/103-se-connecter?msockid=1fd73a47a56d632439ea2d9ba4c76236",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "Cotilleando - El mejor foro de cotilleos | Desde 2004",
+      "url": "https://www.cotilleando.com/",
+      "snippet": "El mejor foro de cotilleos sobre la realeza y los famosos. Felipe y Letizia."
+    },
+    {
+      "title": "Articles - Vinted",
+      "url": "https://www.vinted.fr/brand/vintage?msockid=1fd73a47a56d632439ea2d9ba4c76236",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "Envoi avec Vinted Go | Vinted",
+      "url": "https://www.vinted.fr/help/1110-envois-avec-vinted-go?msockid=1fd73a47a56d632439ea2d9ba4c76236",
+      "snippet": "Comment utiliser une consigne Vinted Go ? Si tu rencontres un problème avec une consigne lors du dépôt ou du retrait d'un colis, …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rossbar/gated-foo-bar",
+  "slug": "rossbar-gated-foo-bar",
+  "author": "rossbar",
+  "url": "https://huggingface.co/rossbar/gated-foo-bar",
+  "created_at": "2026-09-22T19:07:55.000Z",
+  "updated_at": "2026-09-22T19:11:40.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Domino's Pizza | Türkiye’nin En Sevilen Pizza Markası",
+      "url": "https://www.dominos.com.tr/",
+      "snippet": "Sıcacık, akışkan çikolatası ile tadına doyamayacağınız enfes sufle."
+    },
+    {
+      "title": "Evde Pizza Tarifi Nasıl Yapılır? - Nefis Yemek Tarifleri",
+      "url": "https://www.nefisyemektarifleri.com/video/evde-pizza-nasil-yapilir/",
+      "snippet": "Oct 27, 2025 · Pizza tarifi :) Karışık, sucuklu, kaşarlı her şekilde yemeyi sevdiğimiz pizzalarımızı artık kendinizde evde yapabilirsiniz. …"
+    },
+    {
+      "title": "Terra Pizza",
+      "url": "https://www.terrapizza.com.tr/",
+      "snippet": "Pizza kültürüne yenilik ve özgünlük katan Terra Pizza sana, sevdiklerine ve herkese sesleniyor. Bol kahkahalı ve muhabbet dolu …"
+    },
+    {
+      "title": "Pizza yemeği siparişi - İstanbul - Yemeksepeti",
+      "url": "https://www.yemeksepeti.com/city/istanbul/cuisine/pizza",
+      "snippet": "İstanbul ilindeki Pizza restoranlarından online yemek siparişi vermek için tıklayın."
+    },
+    {
+      "title": "En İyi 10 Pizza Restoranı - İstanbul - Tripadvisor",
+      "url": "https://www.tripadvisor.com.tr/Restaurants-g293974-c31-Istanbul.html",
+      "snippet": "huzurlu, sakin, hijyenik, mukemmel dekor ve atmosfer... 19. Olea Pizzeria."
+    }
+  ]
+}

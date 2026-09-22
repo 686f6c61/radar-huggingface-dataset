@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "FrenchCastle/Solomon-MLX-8bit",
+  "slug": "frenchcastle-solomon-mlx-8bit",
+  "author": "FrenchCastle",
+  "url": "https://huggingface.co/FrenchCastle/Solomon-MLX-8bit",
+  "created_at": "2026-09-22T14:36:58.000Z",
+  "updated_at": "2026-09-22T15:08:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "apple-silicon",
+    "decision-model",
+    "system-one",
+    "typed-decisions",
+    "calibrated-probabilities",
+    "structured-output",
+    "non-autoregressive",
+    "document-understanding",
+    "qwen3.8",
+    "lora",
+    "quantized",
+    "8-bit",
+    "text-classification",
+    "en",
+    "multilingual",
+    "base_model:FrenchCastle/Solomon-MLX-bf16",
+    "base_model:adapter:FrenchCastle/Solomon-MLX-bf16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31579992723,
+  "storage_human": "31.6 GB",
+  "base_model": "FrenchCastle/Solomon-MLX-bf16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die 10 besten Hotels in Tremosine sul Garda, Italien (Ab € 85)",
+      "url": "https://www.booking.com/city/it/tremosine.de.html?msockid=1ff04f7c133d63b3104958a012e86261",
+      "snippet": "Sep 1, 2026 · Sichern Sie sich tolle Angebote und buchen Sie Ihr Hotel in Tremosine sul Garda, Italien online. Gute Verfügbarkeiten …"
+    },
+    {
+      "title": "Sommerurlaub Tremosine - hier findest du alles Wichtige für deinen ...",
+      "url": "https://www.alpen-guide.de/reisefuehrer/uebersicht/tremosine-25010",
+      "snippet": "Tremosine in Italien - ob Aktiv-Urlaub, Wander-Urlaub oder Familienurlaub in Tremosine. Von Reisetipps, Freizeitangeboten bis hin …"
+    },
+    {
+      "title": "Urlaub am Gardasee: am besten in Tremosine | Tremosine Sul Garda",
+      "url": "https://www.tremosinesulgarda.it/de/dein-urlaubsthema",
+      "snippet": "Deinen Urlaub am Gardasee verbringst du nach Lust und Laune. Aber nur an einem Ort findest du Ruhe und Abenteuer zugleich: in …"
+    },
+    {
+      "title": "Tremosine sul Garda am Gardasee (& Pieve): Die besten Reisetipps",
+      "url": "https://gardasee-entdecken.de/tremosine-sul-garda/",
+      "snippet": "Erkunde Tremosine sul Garda am Gardasee mit den besten Reisetipps & erfahre alles über Unterkünfte und Sehenswürdigkeiten wie …"
+    },
+    {
+      "title": "Urlaub in Tremosine am Gardasee - Aktivitäten, Highlights & Tipps",
+      "url": "https://www.garda-see.com/orte/tremosine",
+      "snippet": "Entdecke Tremosine am Gardasee! Sehenswürdigkeiten, Strände, Unterkünfte und Aktivitäten. Inklusive Insider-Tipps für Ihren Urlaub!"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "htrhdjy/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "slug": "htrhdjy-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf",
+  "author": "htrhdjy",
+  "url": "https://huggingface.co/htrhdjy/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "created_at": "2026-09-22T13:30:03.000Z",
+  "updated_at": "2026-09-22T13:30:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.8",
+    "multimodal",
+    "vision",
+    "mtp",
+    "speculative-decoding",
+    "fastmtp",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1863907840,
+  "parameters_human": "1.86B",
+  "storage_bytes": 172466425216,
+  "storage_human": "172.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kontakt | Alber - Alber GmbH",
+      "url": "https://www.alber.de/de-de/hilfe-service/kontakt",
+      "snippet": "Kontakt Allgemeine Informationen Firmensitz Alber GmbH Vor dem Weißen Stein 14 72461 Albstadt-Tailfingen Geschäftszeiten Mo – …"
+    },
+    {
+      "title": "Über Alber | Alber - Alber GmbH",
+      "url": "https://www.alber.de/de-de/ueber-alber",
+      "snippet": "Alber ist der Spezialist für leichte und bedienerfreundliche Elektromobilität mit Firmensitz in Albstadt im Süden Deutschlands. Der …"
+    },
+    {
+      "title": "Alber GmbH - Medizintechnikhersteller in Albstadt Vor dem Weißen Stein ...",
+      "url": "https://firmania.de/albstadt/alber-gmbh-636354",
+      "snippet": "Apr 15, 2026 · 📍 Wo finde ich Alber GmbH in Albstadt? Alber GmbH befindet sich in Albstadt, unter folgender Adresse: Vor dem …"
+    },
+    {
+      "title": "Alber GmbH | Medizintechnikhersteller, Albstadt",
+      "url": "https://web2.cylex.de/firma-home/alber-gmbh-2547827.html",
+      "snippet": "Apr 15, 2026 · Unter der Nummer HRB401393 beim Amtsgericht Stuttgart wurde die Firma Alber GmbH registriert. Die …"
+    },
+    {
+      "title": "Alber GmbH, Vor dem Weißen Stein 14, Albstadt (2026)",
+      "url": "https://www.findglocal.com/DE/Albstadt/121289271254659/Alber-GmbH",
+      "snippet": "Kontaktinformationen, Karte und Wegbeschreibungen, Kontaktformulare, Öffnungszeiten, Dienstleistungen, Bewertungen, Fotos, …"
+    }
+  ]
+}

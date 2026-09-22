@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/realesrgan-x4plus",
+  "slug": "skillsafe-ai-realesrgan-x4plus",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/realesrgan-x4plus",
+  "created_at": "2026-09-22T16:17:12.000Z",
+  "updated_at": "2026-09-22T16:19:28.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "skillsafe",
+    "browser",
+    "onnxruntime-web",
+    "image-super-resolution",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 101642107,
+  "storage_human": "102 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "spunto - Dizionario italiano-inglese WordReference",
+      "url": "https://www.wordreference.com/iten/spunto",
+      "snippet": "Visita il forum Italiano-Inglese. Aiuta WordReference: Poni tu stesso una domanda."
+    },
+    {
+      "title": "spunto - Traduzione in inglese - esempi italiano | Reverso Context",
+      "url": "https://context.reverso.net/traduzione/italiano-inglese/spunto",
+      "snippet": "Dopo aver osservato la reazione, l'artista decise di prendere spunto dalla cultura popolare. After observing the reaction, the artist …"
+    },
+    {
+      "title": "prendere spunto - Dizionario italiano-inglese WordReference",
+      "url": "https://www.wordreference.com/iten/prendere%20spunto",
+      "snippet": "prendere spunto - Traduzione del vocabolo e dei suoi composti, e discussioni del forum."
+    },
+    {
+      "title": "spunti - Traduzione in inglese - esempi italiano | Reverso Context",
+      "url": "https://context.reverso.net/traduzione/italiano-inglese/spunti",
+      "snippet": "Traduzioni in contesto per \"spunti\" in italiano-inglese da Reverso Context: trarre spunti da, nuovi spunti, spunti interessanti, spunti …"
+    },
+    {
+      "title": "spunto - Definizione di spunto nel Dizionario italiano-inglese ...",
+      "url": "https://dictionary.cambridge.org/it/dizionario/italiano-inglese/spunto",
+      "snippet": "Traduzione di spunto – Dizionario italiano–inglese spunto noun [ masculine ] / 'spunto/ starting point"
+    }
+  ]
+}

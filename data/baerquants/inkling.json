@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "baerquants/Inkling",
+  "slug": "baerquants-inkling",
+  "author": "baerquants",
+  "url": "https://huggingface.co/baerquants/Inkling",
+  "created_at": "2026-09-22T20:58:14.000Z",
+  "updated_at": "2026-09-22T20:58:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 952377623626,
+  "parameters_human": "952.38B",
+  "storage_bytes": 1904786955611,
+  "storage_human": "1904.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Η πραγματική ιστορία πίσω από το «Ριφιφί του αιώνα»",
+      "url": "https://www.alphatv.gr/koinonia/i-pragmatiki-istoria-piso-apo-to-rififi-tou-aiona/",
+      "snippet": "1 day ago · Με αφορμή την πρεμιέρα της νέας σειράς του Alpha «Ριφιφί» του Σωτήρη Τσαφούλια, απόψε στις 22:00, ο αστυνομικός …"
+    },
+    {
+      "title": "Ετσι έγινε το Ριφιφί του αιώνα",
+      "url": "https://www.kathimerini.gr/k/k-magazine/563970847/etsi-egine-to-rififi-toy-aiona/",
+      "snippet": "Dec 15, 2025 · Η νέα σειρά «Ριφιφί» του Σωτήρη Τσαφούλια για την Cosmote TV, εμπνευσμένη από το «ριφιφί του αιώνα» του 1992 …"
+    },
+    {
+      "title": "Ριφιφί στην Τράπεζα Εργασίας - Βικιπαίδεια",
+      "url": "https://el.wikipedia.org/wiki/%CE%A1%CE%B9%CF%86%CE%B9%CF%86%CE%AF_%CF%83%CF%84%CE%B7%CE%BD_%CE%A4%CF%81%CE%AC%CF%80%CE%B5%CE%B6%CE%B1_%CE%95%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82",
+      "snippet": "Το ριφιφί της Τράπεζας Εργασίας, γνωστό και ως « το μεγάλο ριφιφί του αιώνα », ήταν μια διάρρηξη με την μέθοδο του ριφιφί [α] στο …"
+    },
+    {
+      "title": "Το ριφιφί του αιώνα 1992: Η αληθινή ιστορία της ληστείας",
+      "url": "https://www.hello.gr/category/entertainment/tv/to-rififi-tou-aiona-1992-i-alithini-istoria-tis-listeias-stin-trapeza-ergasias/48842/",
+      "snippet": "15 hours ago · Η αληθινή ιστορία πίσω από το ριφιφί του 1992 στην Τράπεζα Εργασίας. Πώς σκάφτηκε το τούνελ των 25 μέτρων και …"
+    },
+    {
+      "title": "Το «Ριφιφί του αιώνα» που καθήλωσε το κοινό: Οι δύο αληθινές …",
+      "url": "https://www.bovary.gr/culture/must-watch/rififi-toy-aiona-istories-sotiris-tsafoylias",
+      "snippet": "Jan 26, 2026 · Η παραγωγή της COSMOTE TV εμπνέεται από τη διάρρηξη της Τράπεζας Εργασίας το 1992, το αποκαλούμενο …"
+    }
+  ]
+}

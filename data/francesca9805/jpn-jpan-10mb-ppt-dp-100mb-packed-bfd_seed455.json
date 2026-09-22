@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/jpn-jpan-10mb-ppt-Dp-100mb-packed-bfd_seed455",
+  "slug": "francesca9805-jpn-jpan-10mb-ppt-dp-100mb-packed-bfd_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/jpn-jpan-10mb-ppt-Dp-100mb-packed-bfd_seed455",
+  "created_at": "2026-09-22T16:43:13.000Z",
+  "updated_at": "2026-09-22T16:45:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/jpn_jpan_10mb",
+    "base_model:finetune:goldfish-models/jpn_jpan_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79378697,
+  "storage_human": "79 MB",
+  "base_model": "goldfish-models/jpn_jpan_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les 10 meilleures pizzas à Paris 1er, Paris - TheFork",
+      "url": "https://www.thefork.fr/restaurants/paris-c415144/1er-arrondissement-a527/pizza-t652",
+      "snippet": "TROUVEZ LA MEILLEURE pizza à Paris 1er, Paris sur TheFork. Lisez les avis de la communauté et réservez votre table en ligne …"
+    },
+    {
+      "title": "Pizi | Restaurant Italien & Pizzeria à Paris 1er | Pizza Maison",
+      "url": "https://www.pizi-paris.com/",
+      "snippet": "Bienvenue chez Pizi, votre restaurant Italien à Paris 1er, vous propose des Pizzas artisanales et des Pâtes fraîches faites maison. …"
+    },
+    {
+      "title": "MILO | Site officiel, réservez et commandez en ligne",
+      "url": "https://milo-restaurant-paris.fr/fr",
+      "snippet": "Les pizzas aussi variées que généreuses ont la part belle sur une carte riche qui propose aussi d'autres mets typiques de l'Italie, …"
+    },
+    {
+      "title": "Peppe Pizza - Restauration rapide, 11 r Etienne Marcel, 75001 Paris ...",
+      "url": "https://fr.mappy.com/poi/68d753f0bf4ba85b1c1dcd20",
+      "snippet": "Découvrez Peppe Pizza (11 r Etienne Marcel, 75001 Paris) avec toutes les photos du quartier, le plan d'accès, les avis et les infos …"
+    },
+    {
+      "title": "Restaurant Pizza Wawa à Paris - Menu, avis, prix et réservation | TheFork",
+      "url": "https://www.thefork.fr/restaurant/pizza-wawa-r9078",
+      "snippet": "Pizza Wawa séduit avec ses pizzas délicieuses, à la pâte fine et croquante, garnies généreusement d'ingrédients frais. L'ambiance …"
+    }
+  ]
+}

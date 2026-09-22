@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mohanpoduri2005/sf2-doom-health-gathering-supreme",
+  "slug": "mohanpoduri2005-sf2-doom-health-gathering-supreme",
+  "author": "mohanpoduri2005",
+  "url": "https://huggingface.co/mohanpoduri2005/sf2-doom-health-gathering-supreme",
+  "created_at": "2026-09-22T16:14:20.000Z",
+  "updated_at": "2026-09-22T16:14:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "reinforcement-learning",
+    "doom_health_gathering_supreme",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66,
+  "storage_human": "66 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Falk Routenplaner - Ihr kostenloser Routenplaner",
+      "url": "https://www.falk.de/routenplaner",
+      "snippet": "Mit dem Falk Routenplaner finden Sie die beste Route! Informieren Sie sich kostenlos über Fahrzeit, Entfernung, aktuelle Staus …"
+    },
+    {
+      "title": "Falk Routenplaner - Ihr kostenloser Routenplaner",
+      "url": "https://www.falk.de/routenplaner/lag",
+      "snippet": "Berechnen Sie kostenlos mit dem kostenlosen und beliebten Falk Routenplaner für Lage Ihre günstigste Wegstrecke. Mit Echtzeit …"
+    },
+    {
+      "title": "Fahrrad-Routenplaner von Falk",
+      "url": "https://www.falk.de/routenplaner-fahrrad",
+      "snippet": "Der kostenlose Falk Routenplaner fürs Fahrrad hilft Ihnen dabei, mit Ihrem Fahrrad den besten Weg von A nach B zu finden."
+    },
+    {
+      "title": "Falk.de: Karten und Routenplaner",
+      "url": "https://www.falk.de/",
+      "snippet": "Auf Falk.de finden Sie Karten und Stadtpläne, einen kostenlosen Routenplaner, einen praktischen Cityguide mit Reiseführerinhalten …"
+    },
+    {
+      "title": "Falk Stadtplan – Stadtpläne und Karten",
+      "url": "https://www.falk.de/stadtplan",
+      "snippet": "Bereiten Sie sich mit der Routenplaner -Funktion auf Ihre Fahrt vor. So ersparen Sie sich Stress und wissen schon im Voraus, …"
+    }
+  ]
+}

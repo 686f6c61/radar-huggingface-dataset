@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10",
+  "slug": "francesca9805-dan-latn-10mb-ppt-dp-10mb-packed-bfd_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10",
+  "created_at": "2026-09-22T17:20:10.000Z",
+  "updated_at": "2026-09-22T17:21:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/dan_latn_10mb",
+    "base_model:finetune:goldfish-models/dan_latn_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79375809,
+  "storage_human": "79 MB",
+  "base_model": "goldfish-models/dan_latn_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger musique MP3 gratuitement avec Tubidy",
+      "url": "https://forums.commentcamarche.net/forum/affich-22322862-telecharger-musique-mp3-gratuitement-avec-tubidy",
+      "snippet": "Télécharger musique MP3 gratuitement avec Tubidy Résolu/Fermé X-Eddy_18-X - Modifié le 6 sept. 2021 à 10:56 Dernière réponse …"
+    },
+    {
+      "title": "Tubidy - Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37806495-tubidy",
+      "snippet": "Mar 6, 2023 · S'il vous plaît comment poster mes propres clips audio sur Tubidy ??..."
+    },
+    {
+      "title": "Meilleure application pour télécharger de la musique gratuite",
+      "url": "https://forums.commentcamarche.net/forum/affich-21892939-meilleure-application-pour-telecharger-de-la-musique-gratuite",
+      "snippet": "Bonjour, je voudrais savoir quelle est la meilleure appli pour télécharger de la musique gratuitement, merci d'avance"
+    },
+    {
+      "title": "Créer un compte Tubidy [Résolu] - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-36625574-creer-un-comte-tubidy",
+      "snippet": "Bonjour, je cherche à créée un compte tubidy. comment' l'avoir et créer ? enfin que je commence à publié aussi mes audios."
+    },
+    {
+      "title": "Je n’arrive plus a télécharger quelques choses sur tubidy",
+      "url": "https://forums.commentcamarche.net/forum/affich-38079918-je-n-arrive-plus-a-telecharger-quelques-choses-sur-tubidy",
+      "snippet": "Aug 6, 2024 · Je n’arrive plus a télécharger quelques choses sur tubidy sklus - Modifié le 6 août 2024 à 02:23 Panth33ra - 6 août …"
+    }
+  ]
+}

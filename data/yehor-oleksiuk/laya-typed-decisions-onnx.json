@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "yehor-oleksiuk/laya-typed-decisions-onnx",
+  "slug": "yehor-oleksiuk-laya-typed-decisions-onnx",
+  "author": "yehor-oleksiuk",
+  "url": "https://huggingface.co/yehor-oleksiuk/laya-typed-decisions-onnx",
+  "created_at": "2026-09-22T18:56:04.000Z",
+  "updated_at": "2026-09-22T19:23:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "cpu",
+    "decision-model",
+    "system-one",
+    "typed-decisions",
+    "calibration",
+    "en",
+    "base_model:convaiinnovations/laya-typed-decisions",
+    "base_model:quantized:convaiinnovations/laya-typed-decisions",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2112524716,
+  "storage_human": "2.1 GB",
+  "base_model": "convaiinnovations/laya-typed-decisions",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Raider. Io - Общие темы - World of Warcraft Forums",
+      "url": "https://eu.forums.blizzard.com/ru/wow/t/raider-io/46637",
+      "snippet": "Aug 7, 2019 · Всем привет. Вопрос такой: если на сайте raider. Io вбить чара, то вылазит инфа о нем. Там же есть вкладки …"
+    },
+    {
+      "title": "RaiderIO Wertung auf Twink anzeigen lassen",
+      "url": "https://eu.forums.blizzard.com/de/wow/t/raiderio-wertung-auf-twink-anzeigen-lassen/147928",
+      "snippet": "Ich bekomme es nicht hin dass ich auf diesem Twink meine RIO Wertung Ingame angezeigt wird. Weder meine Maincharwertung …"
+    },
+    {
+      "title": "Activision Blizzard - SEC Filing, Raider.IO Recruitment System",
+      "url": "https://www.mmo-champion.com/threads/2614186-Activision-Blizzard-SEC-Filing-Raider-IO-Recruitment-System",
+      "snippet": "Jan 31, 2022 · Raider.IO Recruitment System To celebrate their 5-year anniversary, Raider.IO has announced the launch of their new …"
+    },
+    {
+      "title": "Raider.IO bugged in update? Huge FPS drop, 55mb addon memory used",
+      "url": "https://www.mmo-champion.com/threads/2429453-Raider-IO-bugged-in-update-Huge-FPS-drop-55mb-addon-memory-used",
+      "snippet": "Sep 14, 2018 · Has anyone else noticed huge performance drop with raider.io since yesterday? I noticed I was getting only 21 fps in …"
+    },
+    {
+      "title": "Topic Comment afficher son RIO sur son profil",
+      "url": "https://www.jeuxvideo.com/forums/42-6244-65294218-1-0-1-0-comment-afficher-son-rio-sur-son-profil.htm",
+      "snippet": "Jan 4, 2021 · Créer un compte sur leur site Télécharge le client desktop et lance le avant WoW. Lance WoW avec l'addon et ça …"
+    }
+  ]
+}

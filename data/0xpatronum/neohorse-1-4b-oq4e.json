@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "0xPatronum/NeoHorse-1-4B-oQ4e",
+  "slug": "0xpatronum-neohorse-1-4b-oq4e",
+  "author": "0xPatronum",
+  "url": "https://huggingface.co/0xPatronum/NeoHorse-1-4B-oQ4e",
+  "created_at": "2026-09-22T15:04:13.000Z",
+  "updated_at": "2026-09-22T15:24:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "omlx",
+    "qwen3.5",
+    "text-generation",
+    "conversational",
+    "base_model:TokenRhythm/NeoHorse-1-4B",
+    "base_model:quantized:TokenRhythm/NeoHorse-1-4B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 2501092405,
+  "storage_human": "2.5 GB",
+  "base_model": "TokenRhythm/NeoHorse-1-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Trainline Changes Ticket After Booking!?",
+      "url": "https://forums.moneysavingexpert.com/discussion/5729012/the-trainline-changes-ticket-after-booking",
+      "snippet": "Oct 17, 2017 · Long and short is, the I think the Trainline changed my booking after I had paid for the tickets. They are investigating, …"
+    },
+    {
+      "title": "Trainline + Complete Savings Cashback - MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/5219313/trainline-complete-savings-cashback",
+      "snippet": "Apr 13, 2015 · I was checking out train prices on the trainline app yesterday and I noticed an offer that said you get £30 cashback if …"
+    },
+    {
+      "title": "为什么使用CreateObject (\"Word.Application\")会出错？-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/30326511",
+      "snippet": "Jun 19, 2003 · 以下内容是CSDN社区关于为什么使用CreateObject (\"Word.Application\")会出错？相关内容，如果想了解更多关于VB基 …"
+    },
+    {
+      "title": "wget下载的默认路径是什么?-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/120042286",
+      "snippet": "Aug 8, 2007 · 以下内容是CSDN社区关于wget下载的默认路径是什么?相关内容，如果想了解更多关于系统维护与使用区社区其他内 …"
+    },
+    {
+      "title": "Trainline.com Complaint - MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/4979189/trainline-com-complaint",
+      "snippet": "May 24, 2014 · I had a Trainline booking for last night. Return journey I had a reserved seat in a designated carriage. When I got on …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "justinwilsongop/personal-multitask35",
+  "slug": "justinwilsongop-personal-multitask35",
+  "author": "justinwilsongop",
+  "url": "https://huggingface.co/justinwilsongop/personal-multitask35",
+  "created_at": "2026-09-22T12:01:31.000Z",
+  "updated_at": "2026-09-22T12:01:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么输入带圈数字①②③④⑤⑧㊸㊹㊺㊻㊼㊽㊾㊿-百度经验",
+      "url": "https://jingyan.baidu.com/article/a3aad71a2b7a69b1fb009630.html",
+      "snippet": "May 16, 2019 · 显然上面的方式只能输入0-20，但是更高的数字却不能输入了，怎么办呢， 更复杂的方式我们也不想学了， 这个一个 …"
+    },
+    {
+      "title": "Win10任务计划程序在哪里 怎么打开任务计划程序-百度经验",
+      "url": "https://jingyan.baidu.com/article/b87fe19e53b2505218356896.html",
+      "snippet": "Jun 11, 2018 · 在Windows10系统中，我们可以通过任务计划程序来设置一些自动运行的应用，那么Windows10系统的任务计划程序在 …"
+    },
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "Wetransfer ne fonctionne pas : que faire - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-29553844-wetransfer-ne-fonctionne-pas-que-faire",
+      "snippet": "Bonsoir, Depuis quelques temps, je ne peux plus transférer de fichiers sur Wetransfer. Je reste constamment bloqué à 5Mo …"
+    },
+    {
+      "title": "Windows 11如何添加美式键盘/纯英文输入法-百度经验",
+      "url": "https://jingyan.baidu.com/article/6079ad0e896f9269fe86db20.html",
+      "snippet": "Sep 6, 2021 · 由于Windows版本迭代，Windows10中的添加美式键盘方法与Windows 11已略有不同，本经验操作时系统版本 …"
+    }
+  ]
+}

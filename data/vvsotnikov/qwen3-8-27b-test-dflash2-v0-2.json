@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "vvsotnikov/Qwen3.8-27B-test-DFlash2-v0.2",
+  "slug": "vvsotnikov-qwen3-8-27b-test-dflash2-v0-2",
+  "author": "vvsotnikov",
+  "url": "https://huggingface.co/vvsotnikov/Qwen3.8-27B-test-DFlash2-v0.2",
+  "created_at": "2026-09-22T12:28:21.000Z",
+  "updated_at": "2026-09-22T12:30:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 3848817920,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Connexion ou inscription",
+      "url": "https://fr-fr.facebook.com/",
+      "snippet": "Créez un compte ou connectez-vous à Facebook. Connectez-vous avec vos amis, la famille et d’autres connaissances. Partagez des …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/index.php/?lang=fr_FR",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/login/identify/",
+      "snippet": "Enter your mobile number or email. Mobile number or email"
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Email or mobile number Password"
+    }
+  ]
+}

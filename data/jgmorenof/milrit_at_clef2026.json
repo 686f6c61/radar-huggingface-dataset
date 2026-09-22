@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Jgmorenof/MILRIT_AT_CLEF2026",
+  "slug": "jgmorenof-milrit_at_clef2026",
+  "author": "Jgmorenof",
+  "url": "https://huggingface.co/Jgmorenof/MILRIT_AT_CLEF2026",
+  "created_at": "2026-09-22T13:55:59.000Z",
+  "updated_at": "2026-09-22T14:05:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "de",
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "milrit_multiview",
+    "relation-extraction",
+    "historical-nlp",
+    "named-entity-relation",
+    "clef-hipe-2026",
+    "custom_code",
+    "de",
+    "en",
+    "fr",
+    "base_model:microsoft/mdeberta-v3-base",
+    "base_model:finetune:microsoft/mdeberta-v3-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277730309,
+  "parameters_human": "277.7M",
+  "storage_bytes": 1131602636,
+  "storage_human": "1.1 GB",
+  "base_model": "microsoft/mdeberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher ...",
+      "url": "https://www.amazon.de/",
+      "snippet": "Entdecken, shoppen und einkaufen bei Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher, Games, Spielzeug, …"
+    },
+    {
+      "title": "Amazon.de",
+      "url": "https://www.amazon.de/gp/css/homepage.html",
+      "snippet": "Hier finden Sie alles, was Sie für Ihren Einkauf benötigen, von Elektronik bis zu Büchern und vielem mehr."
+    },
+    {
+      "title": "Amazon Music | Hör dir Songs, Podcasts und vieles mehr an",
+      "url": "https://music.amazon.de/",
+      "snippet": "Suche und streame Musik und Podcasts über den Webbrowser. Höre dir deine liebsten Playlists aus über 100 Millionen Songs bei …"
+    },
+    {
+      "title": "Seller Central DE – Werden Sie Noch Heute Amazon-Verkäufer!",
+      "url": "https://sellercentral.amazon.de/",
+      "snippet": "Werden Sie Amazon-Verkaufspartner und profitieren Sie von potenziellen Vorteilen im Wert von über 45,000 €! Starten Sie noch …"
+    },
+    {
+      "title": "Anmeldung bei Amazon Business",
+      "url": "https://business.amazon.de/de/login",
+      "snippet": "Sichern Sie sich exklusive Angebote und Mengenrabatte! Melden Sie sich bei Ihrem Amazon Business-Konto an und sparen Sie …"
+    }
+  ]
+}

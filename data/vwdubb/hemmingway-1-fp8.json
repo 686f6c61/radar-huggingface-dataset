@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "vwdubb/Hemmingway-1-FP8",
+  "slug": "vwdubb-hemmingway-1-fp8",
+  "author": "vwdubb",
+  "url": "https://huggingface.co/vwdubb/Hemmingway-1-FP8",
+  "created_at": "2026-09-22T12:10:00.000Z",
+  "updated_at": "2026-09-22T13:01:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "qwen3.8",
+    "chat",
+    "creative-writing",
+    "altworld",
+    "conversational",
+    "en",
+    "base_model:Altworld/Hemmingway-1",
+    "base_model:quantized:Altworld/Hemmingway-1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 37550987693,
+  "storage_human": "37.6 GB",
+  "base_model": "Altworld/Hemmingway-1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Medicover OnLine",
+      "url": "https://www.medicover.pl/mol/",
+      "snippet": "Poznaj Medicover OnLine – prosty sposób na zarządzanie swoim zdrowiem. Konsultuj się z lekarzem on-line, zamawiaj e-Recepty, …"
+    },
+    {
+      "title": "Medicover OnLine | Medicover",
+      "url": "https://online24.medicover.pl/",
+      "snippet": "Zaloguj się w Medicover OnLine: umów wizytę, odbierz e-Receptę, sprawdź wyniki badań i skontaktuj się z lekarzem online."
+    },
+    {
+      "title": "Prywatna opieka medyczna | Centrum Medyczne Medicover",
+      "url": "https://www.medicover.pl/",
+      "snippet": "Potrzebujesz konsultacji lekarskiej? Wybierz dostępny termin już dziś. Oferujemy wysokiej jakości usługi medyczne, stacjonarne oraz …"
+    },
+    {
+      "title": "Centrum Medyczne Medicover - NWA",
+      "url": "https://mediline.medicover.pl/",
+      "snippet": "Comprehensive medical services and online health management tools at Medicover Medical Center."
+    },
+    {
+      "title": "Korzystaj - Medicover",
+      "url": "https://www.medicover.pl/Apps/mobilna/index.html",
+      "snippet": "Sprawdzaj kody wystawionych recept, zamawiaj i pobieraj e-Recepty na telefon. Wybierz interesujące Cię konsultacje lub wyniki …"
+    }
+  ]
+}

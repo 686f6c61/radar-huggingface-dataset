@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Sunflora",
+  "slug": "ryanham1lton-sunflora",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Sunflora",
+  "created_at": "2026-09-22T15:03:41.000Z",
+  "updated_at": "2026-09-22T15:04:19.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115514675,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "طلباتي - الصفحات الشخصية - منصة بلدي",
+      "url": "https://balady.gov.sa/ar/services/%D8%B7%D9%84%D8%A8%D8%A7%D8%AA%D9%8A-%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A7%D8%AA-%D8%A7%D9%84%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9",
+      "snippet": "1) كشافات الطرق (التفاصيل في الدليل). 2) العواكس: نقاء 99.5 %، من أكسيد الألومنيوم اللامع والأكسيد أو المصبوب، بخار الألومنيوم المرسب فائق النقاء، ومغلف بطبقة شفافة من السيليكون للحماية من …"
+    },
+    {
+      "title": "طلباتي - نظام علاقات العملاء - منصة بلدي",
+      "url": "https://balady.gov.sa/ar/services/%D8%B7%D9%84%D8%A8%D8%A7%D8%AA%D9%8A-%D9%86%D8%B8%D8%A7%D9%85-%D8%B9%D9%84%D8%A7%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D8%A7%D8%A1",
+      "snippet": "طلباتي - نظام علاقات العملاء نظام علاقات العملاء خدمة إلكترونية تقدم في منصة بلدي تُمكّن المستفيدين من الاستعلام عن طلباتهم البلدية المقدمة إلى الأمانات والبلديات عبر مختلف قنوات التقديم المتاحة دون …"
+    },
+    {
+      "title": "بوابة بلـــدي | الخدمات الإلكترونية",
+      "url": "https://apps.balady.gov.sa/Eservices/MServices/Home/Anonymous",
+      "snippet": "/Eservices/MServices/Content روابط المواقع الالكترونية الرسمية السعودية تنتهي .gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي …"
+    },
+    {
+      "title": "خدمات التصنيف | تنظيم مشغلي المدن - Balady",
+      "url": "http://co.balady.gov.sa/ar/taxonomy/term/183",
+      "snippet": "تعريف الخدمة خدمة تتيح للمستفيدين التأكد من بيانات المنشأت المصنفة ومنها درجة التصنيف وسريان صلاحية شهادات التصنيف. أهداف الخدمة تهدف هذه الخدمة الى مساعدة الجهات المالكة للمشاريع عند …"
+    },
+    {
+      "title": "Balady | بلدي",
+      "url": "https://apps.balady.gov.sa/dashboardclient/user-profile",
+      "snippet": "منصة بلدي للخدمات الإلكترونية تتيح للمستخدمين إدارة ملفاتهم الشخصية بسهولة وفعالية."
+    }
+  ]
+}

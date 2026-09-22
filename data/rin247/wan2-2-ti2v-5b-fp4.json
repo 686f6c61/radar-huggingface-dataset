@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Rin247/Wan2.2-TI2V-5B-FP4",
+  "slug": "rin247-wan2-2-ti2v-5b-fp4",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Wan2.2-TI2V-5B-FP4",
+  "created_at": "2026-09-22T20:48:38.000Z",
+  "updated_at": "2026-09-22T20:48:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "diffusers",
+    "safetensors",
+    "ti2v",
+    "quantized",
+    "fp4",
+    "weight-only",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7051949433,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Current Vacancies | Job Opportunities across the Reed group",
+      "url": "https://www.reed.com/careers/jobs?searchPhrase=local-temporary-agencies",
+      "snippet": "Reed in Partnership has been delivering public services since 1998. ... Find your next and best career move with Reed. View our …"
+    },
+    {
+      "title": "Temporary Manufacturing Jobs | Reed",
+      "url": "https://www.reed.com/jobs/temporary/manufacturing",
+      "snippet": "Find Temporary Manufacturing Jobs with Reed. Browse permanent, temporary and remote opportunities and apply today."
+    },
+    {
+      "title": "Registration Confirmation",
+      "url": "https://www.eaton.com/gb/en-gb/registration/registration-confirmation.html",
+      "snippet": "If you have any questions about your registration, please have this number available when contacting us.u2028. You will receive an …"
+    },
+    {
+      "title": "Shop Men’s Always Game | Wilson Sportswear",
+      "url": "https://www.wilson.com/en-us/sportswear/collections/always-game/mens",
+      "snippet": "Be the first to hear about the latest products, sales and events from Wilson. Need Help? ©2026 Wilson Sporting Goods All rights …"
+    },
+    {
+      "title": "Classic Navy / Dusk Blue Rush Rally Warm-Up Pant - Wilson",
+      "url": "https://www.wilson.com/es-es/product/m-rush-rally-warm-up-pant-wn00119u001002",
+      "snippet": "Ultra-lightweight and breathable pants made for your life in motion."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/realesrgan-x4plus-anime-6b",
+  "slug": "skillsafe-ai-realesrgan-x4plus-anime-6b",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/realesrgan-x4plus-anime-6b",
+  "created_at": "2026-09-22T16:17:05.000Z",
+  "updated_at": "2026-09-22T16:18:54.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "skillsafe",
+    "browser",
+    "onnxruntime-web",
+    "image-super-resolution",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27807382,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Targeted temperature management (TTM) after cardiac arrest",
+      "url": "https://litfl.com/therapeutic-hypothermia-after-cardiac-arrest/",
+      "snippet": "Aug 29, 2022 · Targeted temperature management (TTM) refers to strict temperature control following out-of-hospital cardiac arrest …"
+    },
+    {
+      "title": "Effect of targeted temperature management on neurological ...",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0342473",
+      "snippet": "Feb 10, 2026 · Among patients receiving ECPR, the use of TTM is associated with improved neurological outcomes and increased …"
+    },
+    {
+      "title": "Therapeutic hypothermia in ECPR: re-examining ...",
+      "url": "https://link.springer.com/article/10.1186/s40635-025-00845-6",
+      "snippet": "Dec 23, 2025 · Extracorporeal cardiopulmonary resuscitation (ECPR) has expanded the boundaries of salvageability by providing …"
+    },
+    {
+      "title": "Efficacy and Safety of TTM in Adults With ECPR. (TTM、ECPR)",
+      "url": "https://ctv.veeva.com/study/efficacy-and-safety-of-ttm-in-adults-with-ecpr",
+      "snippet": "Sep 9, 2026 · Combined target temperature management (TTM) in patients undergoing extracorporeal cardiopulmonary resuscitation …"
+    },
+    {
+      "title": "TTM (目標温度管理)とECPR心肺蘇生後の転帰 SAVE-J II ...",
+      "url": "https://pure.teikyo.jp/en/publications/ttm%E7%9B%AE%E6%A8%99%E6%B8%A9%E5%BA%A6%E7%AE%A1%E7%90%86%E3%81%A8ecpr%E5%BF%83%E8%82%BA%E8%98%87%E7%94%9F%E5%BE%8C%E3%81%AE%E8%BB%A2%E5%B8%B0save-j-ii-study%E3%81%AE%E4%BA%8C%E6%AC%A1%E8%A7%A3%E6%9E%90/",
+      "snippet": "潤神田 (2024). TTM (目標温度管理)とECPR心肺蘇生後の転帰 SAVE-J II Studyの二次解析. 日本集中治療医学会雑誌, 31 (Suppl.1), …"
+    }
+  ]
+}

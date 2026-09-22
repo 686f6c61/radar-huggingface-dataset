@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "leobianco/bosch_SFT_Mistral-7B-Instruct-v0_3_S130104_epo3_lr3_8e-04_r32_2609221303",
+  "slug": "leobianco-bosch_sft_mistral-7b-instruct-v0_3_s130104_epo3_lr3_8e-04_r32_2609221303",
+  "author": "leobianco",
+  "url": "https://huggingface.co/leobianco/bosch_SFT_Mistral-7B-Instruct-v0_3_S130104_epo3_lr3_8e-04_r32_2609221303",
+  "created_at": "2026-09-22T13:04:16.000Z",
+  "updated_at": "2026-09-22T13:08:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.3",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 109128369,
+  "storage_human": "109 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Erster Allgemeinbildender Schulabschluss (ESA) und erweiterter ESA ...",
+      "url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bsfb/schulen/erster-allgemeinbildender-schulabschluss-esa-und-erweiterter-esa-eesa--590272",
+      "snippet": "Der ESA ist erreicht, wenn die Schülerinnen und Schüler im Zeugnis in allen Fächern und Lernbereichen die Note ausreichend (4) …"
+    },
+    {
+      "title": "leobianco/npov_SFT_Mistral-7B-Instruct-v0_3_S130104_epo3_lr1_5e-03_r8 ...",
+      "url": "https://huggingface.co/leobianco/npov_SFT_Mistral-7B-Instruct-v0_3_S130104_epo3_lr1_5e-03_r8_2609211248",
+      "snippet": "Instructions to use leobianco/npov_SFT_Mistral-7B-Instruct-v0_3_S130104_epo3_lr1_5e-03_r8_2609211248 with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "DAA Nordwest | Erster allgemeinbildender Schulabschluss (ESA)",
+      "url": "https://daa-nordwest.de/bildungsangebote/junge-menschen/esa-erster-allgemeinbildender-schulabschluss",
+      "snippet": "Du möchtest deinen ersten Schulabschluss/Hauptschulabschluss nachholen? Mit ESA bereiten wir Dich auf den ersten …"
+    },
+    {
+      "title": "npov_SFT_mistralai_S130104_epo1_lr3e-3_r8_2601301129",
+      "url": "https://huggingface.co/leobianco/npov_SFT_mistralai_S130104_epo1_lr3e-3_r8_2601301129",
+      "snippet": "Model Card for npov_SFT_mistralai_S130104_epo1_lr3e-3_r8_2601301129 This model is a fine-tuned version of mistralai/Mistral-7B-Instruct-v0.3. It has been trained using TRL. Quick start"
+    },
+    {
+      "title": "ZAB Dokumente - Schleswig-Holstein",
+      "url": "https://za.schleswig-holstein.de/?view=2&path=3%20ESA",
+      "snippet": "Zur Sicherung der Vergleichbarkeit und Qualität der schulischen Abschlüsse werden an Schulen aller Schularten, die den ESA …"
+    }
+  ]
+}

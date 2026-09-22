@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455",
+  "slug": "francesca9805-nld-latn-10mb-ppt-dp-10mb-packed-bfd_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455",
+  "created_at": "2026-09-22T15:06:33.000Z",
+  "updated_at": "2026-09-22T15:08:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/nld_latn_10mb",
+    "base_model:finetune:goldfish-models/nld_latn_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79356300,
+  "storage_human": "79 MB",
+  "base_model": "goldfish-models/nld_latn_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sreality.cz • reality a nemovitosti z celé ČR",
+      "url": "https://www.sreality.cz/",
+      "snippet": "Největší nabídka nemovitostí v ČR: 108 942 realit. Nabízíme byty, domy, novostavby, nebytové prostory, pozemky a další reality k …"
+    },
+    {
+      "title": "Byty • Sreality.cz",
+      "url": "https://www.sreality.cz/hledani/byty",
+      "snippet": "31 894 bytů v aktuální nabídce byty Parametry hledání: Byty Největší nabídka nemovitostí v Česku (108 933 inzerátů) s hledáním na …"
+    },
+    {
+      "title": "Admin Sreality.cz",
+      "url": "https://klient.sreality.cz/",
+      "snippet": "Admin portal for Sreality.cz, the largest real estate platform in the Czech Republic."
+    },
+    {
+      "title": "Admin Sreality.cz • Přihlášení",
+      "url": "https://klient.sreality.cz/prihlaseni",
+      "snippet": "Přihlášení do administrace Sreality.cz pro správu nabídek nemovitostí."
+    },
+    {
+      "title": "Prodej domu • Sreality.cz",
+      "url": "https://www.sreality.cz/hledani/prodej/domy",
+      "snippet": "21 525 domů v aktuální nabídce domu k prodeji Parametry hledání: Domy Největší nabídka nemovitostí v Česku (108 926 inzerátů) s …"
+    }
+  ]
+}

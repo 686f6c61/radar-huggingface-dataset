@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-mis7_swift_jbbsft1_remove30",
+  "slug": "jeesup-svd-safety-mis7_swift_jbbsft1_remove30",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-mis7_swift_jbbsft1_remove30",
+  "created_at": "2026-09-22T17:30:17.000Z",
+  "updated_at": "2026-09-22T17:32:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991459,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "從中洲川端前往福岡機場之路線 - NAVITIME Transit",
+      "url": "https://transit.navitime.com/zh-tw/jp/transfer?start=00006067&goal=00008012",
+      "snippet": "18 hours ago · 可供確認所需時間、轉乘次數、乘車路線、停車站列表等路線資訊。"
+    },
+    {
+      "title": "【福岡機場交通】3大往來福岡機場方式，巴士、地下鐵，最欠搭計程車的機場…",
+      "url": "https://gogojp.tw/fukuoka-air-traffic/",
+      "snippet": "Jul 18, 2026 · 搭福岡機場到博多計程車費月約1500~1800円，多人一起搭更是覺得划算，迅速到 博多住宿 甩開行李、開始福岡自由行. …"
+    },
+    {
+      "title": "2026福岡機場接送推薦｜16間費用、車型比較一次看，直達博多市區超 …",
+      "url": "https://www.funliday.com/posts/fukuoka-airport-chartered-car/",
+      "snippet": "Sep 15, 2026 · 本文整理2026年最新「福岡機場包車推薦16選」，包含包車費用、適合族群與常見FAQ等，幫你快速找到最適合自己 …"
+    },
+    {
+      "title": "福岡機場交通2026｜福岡機場接送・巴士・地下鐵5分鐘到市區",
+      "url": "https://www.kkday.com/zh-hk/blog/airport-transfer/131035/fukuoka-airport-transport-guide",
+      "snippet": "Sep 5, 2026 · 福岡機場交通嘅最大賣點就係一個字——近。機場距離博多站得5分鐘車程，係全日本少數可以直接搭地鐵殺入市中心嘅 …"
+    },
+    {
+      "title": "福岡住宿｜下飛機 15 分鐘入睡！「中洲川端東方快捷飯店」：機場直 …",
+      "url": "https://japanzerolag.com/?p=7811",
+      "snippet": "Mar 23, 2024 · 東方飯店&度假村（ORIENTAL HOTEL&RESORTS） 在福岡市區一共有三間飯店，分別是福岡博多站東方飯店、東方 …"
+    }
+  ]
+}

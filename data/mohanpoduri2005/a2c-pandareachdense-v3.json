@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mohanpoduri2005/a2c-PandaReachDense-v3",
+  "slug": "mohanpoduri2005-a2c-pandareachdense-v3",
+  "author": "mohanpoduri2005",
+  "url": "https://huggingface.co/mohanpoduri2005/a2c-PandaReachDense-v3",
+  "created_at": "2026-09-22T16:14:06.000Z",
+  "updated_at": "2026-09-22T16:14:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "PandaReachDense-v3",
+    "a2c",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55,
+  "storage_human": "55 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Busan Südkorea: Sehenswürdigkeiten & Reisetpps (2026)",
+      "url": "https://betterbeyond.de/busan-suedkorea/",
+      "snippet": "Busan erleben: Die besten Highlights der Küstenstadt in Südkorea mit Tipps zu Haeundae Beach und den wichtigsten Spots für …"
+    },
+    {
+      "title": "Ultimativer Reiseführer für Busan – IVisitKorea",
+      "url": "https://www.ivisitkorea.com/de/busan/",
+      "snippet": "Entdecken Sie Busan-Reiseführer oder stürzen Sie sich direkt in vorgefertigte Reiserouten, die Sie individuell anpassen können. …"
+    },
+    {
+      "title": "Busan Sehenswürdigkeiten: 10 Tipps für die schöne Hafenstadt",
+      "url": "https://www.urlaubstracker.de/busan-sehenswuerdigkeiten/",
+      "snippet": "Apr 28, 2026 · Damit Ihr Eure Reise nach Busan optimal planen könnt, haben wir Euch die wichtigsten Optionen für die Anreise und …"
+    },
+    {
+      "title": "Anreise nach Busan - der beste Weg zu reisen",
+      "url": "https://www.cestee.de/reiseziele/suedkorea/busan/anreise",
+      "snippet": "Finden Sie heraus, wie Sie Busan am besten erreichen können. Wie man mit Flug, Zug, Bus oder Fähre anreist. Ihr ultimativer …"
+    },
+    {
+      "title": "Urlaub in Busan 2026 | Tipps, Kosten & Reiseführer",
+      "url": "https://gotripzi.com/de/destinations/busan-kr",
+      "snippet": "Busan, Südkorea 2026: Was du vor der Reise wissen musst – Budget ab 64 €/Tag, Sicherheit, Verkehr & praktische Tipps. Dein …"
+    }
+  ]
+}

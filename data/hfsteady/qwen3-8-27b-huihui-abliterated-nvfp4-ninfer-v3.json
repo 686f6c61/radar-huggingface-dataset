@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hfsteady/Qwen3.8-27B-huihui-abliterated-NVFP4-NInfer-v3",
+  "slug": "hfsteady-qwen3-8-27b-huihui-abliterated-nvfp4-ninfer-v3",
+  "author": "hfsteady",
+  "url": "https://huggingface.co/hfsteady/Qwen3.8-27B-huihui-abliterated-NVFP4-NInfer-v3",
+  "created_at": "2026-09-22T18:53:33.000Z",
+  "updated_at": "2026-09-22T19:00:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "qwen3.8",
+    "huihui",
+    "abliterated",
+    "nvfp4",
+    "blackwell",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:finetune:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21492938224,
+  "storage_human": "21.5 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lichaamslengte cm of meter naar ft & inch » InchnaarCm.nl",
+      "url": "https://www.inchnaarcm.nl/lichaamslengte-omrekentabel/",
+      "snippet": "Oct 19, 2025 · Reken eenvoudig lichaamslengte om van cm of meter naar feet & inches. Lees direct jouw lengte af in de …"
+    },
+    {
+      "title": "Maattabel schoenen. De juiste maat berekenen!",
+      "url": "https://www.maattabel.nl/maattabel-schoenen/",
+      "snippet": "Het bepalen van de juiste schoenmaat kun je eenvoudig doen met onderstaande schoenen maattabel. Deze tabel is een handig …"
+    },
+    {
+      "title": "adidas Maattabel Herenschoenen | adidas NL",
+      "url": "https://www.adidas.nl/help/size_charts/men-shoes",
+      "snippet": "Herenschoenen De adidas-maattabel voor herenschoenen probeert de gangbare maten zo precies mogelijk te benaderen. De …"
+    },
+    {
+      "title": "Jeansmaten.nl, broekmaten en jeansmaten omrekenen.",
+      "url": "https://www.jeansmaten.nl/",
+      "snippet": "1 day ago · Het vinden van de juiste jeansmaat kan lastig zijn. Verschillende merken hanteren andere maattabellen en niet iedereen …"
+    },
+    {
+      "title": "Maattabel voor herenschoenen. Nike NL",
+      "url": "https://www.nike.com/nl/size-fit/herenschoenen?msockid=1b62d6cc404966543b08c11041c4673a",
+      "snippet": "Vind de juiste schoenmaat met onze overzichtelijke maattabel voor Nike herenschoenen."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "AxisMeru/prabhasa-nyaya-step2-sft-arm-c-discrim16",
+  "slug": "axismeru-prabhasa-nyaya-step2-sft-arm-c-discrim16",
+  "author": "AxisMeru",
+  "url": "https://huggingface.co/AxisMeru/prabhasa-nyaya-step2-sft-arm-c-discrim16",
+  "created_at": "2026-09-22T20:28:56.000Z",
+  "updated_at": "2026-09-22T20:48:45.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "legal",
+    "indian-law",
+    "lean4",
+    "formal-verification",
+    "prabhasa-nyaya",
+    "research",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:finetune:Qwen/Qwen2.5-3B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349172,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anleitungen – Tanja Steinbach",
+      "url": "https://www.tanjasteinbach.de/category/anleitungen/",
+      "snippet": "Für die Anleitungen gibt es auf der Seite auch eine pdf-Datei zum Herunterladen und abspeichern. Die Anleitungen habe ich …"
+    },
+    {
+      "title": "Anleitung – Tanja Steinbach",
+      "url": "https://www.tanjasteinbach.de/tag/anleitung/",
+      "snippet": "Für die Anleitungen gibt es auf der Seite auch eine pdf-Datei zum Herunterladen und abspeichern. Die Anleitungen habe ich …"
+    },
+    {
+      "title": "Einfach gestrickte Weste - SWR.de",
+      "url": "https://www.swr.de/leben/freizeit/einfach-gestrickte-weste-100.html",
+      "snippet": "Sep 4, 2025 · Strickdesignerin Tanja Steinbach hat ein easy Modell auf den Nadeln. Die offene Kurz-Weste wird ohne Seitennaht von …"
+    },
+    {
+      "title": "Kleines Schaltuch von Tanja Steinbach – Gratis-Anleitungsfilm",
+      "url": "https://landherzen.de/2023/04/kleines-schaltuch-von-tanja-steinbach-gratis-anleitungsfilm/",
+      "snippet": "Apr 17, 2023 · Beim Stricken habe ich mitgefilmt und kann Euch so einen ausführlichen Gratis-Strick-Anleitungsfilm von Anfang …"
+    },
+    {
+      "title": "Tanja Steinbach - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PL_syYy6DM9Rfc91aFrukrnqXdjcdMqaDZ",
+      "snippet": "Tutorial: How to Crochet a Blanket Square (with multiple options) ... Part 1. Two truly separate bedrooms! Huge living room! XL …"
+    }
+  ]
+}

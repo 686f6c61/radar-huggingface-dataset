@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "leobianco/bosch_PERL_organic_Mistral-7B-Instruc-v_S130104_epo1_lr2_6e-05_beta0_015_r8_2609221459",
+  "slug": "leobianco-bosch_perl_organic_mistral-7b-instruc-v_s130104_epo1_lr2_6e-05_beta0_015_r8_2609221459",
+  "author": "leobianco",
+  "url": "https://huggingface.co/leobianco/bosch_PERL_organic_Mistral-7B-Instruc-v_S130104_epo1_lr2_6e-05_beta0_015_r8_2609221459",
+  "created_at": "2026-09-22T15:00:29.000Z",
+  "updated_at": "2026-09-22T15:15:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "rloo",
+    "trl",
+    "arxiv:2402.14740",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.3",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13673793,
+  "storage_human": "14 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Academy Award for Best Actress - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Academy_Award_for_Best_Actress",
+      "snippet": "The Academy Award for Best Actress is an award presented annually by the Academy of Motion Picture Arts and Sciences (AMPAS). …"
+    },
+    {
+      "title": "A Complete Guide to Every Best Actress Oscar Winner",
+      "url": "https://people.com/see-every-best-actress-winner-11926161",
+      "snippet": "Mar 15, 2026 · The Oscars' Best Actress honorees include multiple wins for Katharine Hepburn, Frances McDormand, Meryl Streep, …"
+    },
+    {
+      "title": "Academy Award for best actress | Winners, Years, List, & Facts",
+      "url": "https://www.britannica.com/art/Academy-Award-for-best-actress",
+      "snippet": "A number of actresses have earned two awards, notably Meryl Streep, who holds the record for the most nominations in the category …"
+    },
+    {
+      "title": "Winners of the Academy Award for Best Actress - IMDb",
+      "url": "https://www.imdb.com/list/ls076848619/",
+      "snippet": "The role won Cotillard the Academy Award for Best Actress along with a César, a Lumière Award, a BAFTA Award, and a Golden …"
+    },
+    {
+      "title": "Every Academy Award for Best Actress: A Complete History of the …",
+      "url": "https://www.vanityfair.com/hollywood/story/academy-award-best-actress",
+      "snippet": "Mar 15, 2026 · Learn more about every best-actress Oscar winner from 1929 to today, including all of the details about the speeches, …"
+    }
+  ]
+}

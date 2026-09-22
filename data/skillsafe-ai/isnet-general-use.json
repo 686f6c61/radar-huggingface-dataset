@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/isnet-general-use",
+  "slug": "skillsafe-ai-isnet-general-use",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/isnet-general-use",
+  "created_at": "2026-09-22T18:59:54.000Z",
+  "updated_at": "2026-09-22T18:59:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "skillsafe",
+    "browser",
+    "onnxruntime-web",
+    "background-removal",
+    "import",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 178648008,
+  "storage_human": "179 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frankfurter Kranz - nach Omas Rezept | Einfach Backen",
+      "url": "https://www.einfachbacken.de/rezepte/frankfurter-kranz-nach-omas-rezept",
+      "snippet": "Aug 10, 2022 · Feiner Rührteig in einer Kranzform gebacken und mit einer Pudding-Buttercreme gefüllt. Dieser Klassiker aus Omas …"
+    },
+    {
+      "title": "Frankfurter Kranz nach Omas Rezept – hessischer Klassiker",
+      "url": "https://alteomarezepte.com/rezept/frankfurter-kranz/",
+      "snippet": "Jun 6, 2026 · Frankfurter Kranz nach Omas hessischem Rezept: Rührteig, deutsche Buttercreme und selbst gemachter Krokant. So …"
+    },
+    {
+      "title": "Frankfurter Kranz nach Omas Art - [ESSEN UND TRINKEN]",
+      "url": "https://www.essen-und-trinken.de/rezepte/frankfurter-kranz-rezept-13759764.html",
+      "snippet": "Frankfurter Kranz ist eine süße Verführung in Form einer Buttercremetorte. Mit unserem Rezept ist er ganz einfach gebacken!"
+    },
+    {
+      "title": "Original Frankfurter Kranz nach Omas Rezept - eat.de",
+      "url": "https://eat.de/rezept/original-frankfurter-kranz-nach-omas-rezept/",
+      "snippet": "Jun 1, 2026 · Der Original Frankfurter Kranz nach Omas Rezept ist ein Muss auf der Kaffeetafel. Hier findest du das beste Rezept …"
+    },
+    {
+      "title": "Frankfurter Kranz nach Omas Rezept - Klassische Buttercremetorte",
+      "url": "https://aus-meinem-kochtopf.de/frankfurter-kranz-nach-omas-rezept-klassische-buttercremetorte/",
+      "snippet": "Eine tolle Anleitung für den deutschen Klassiker! Vereint werden lockere Sandkuchen-Böden, Johannisbeer-Gelee, beste …"
+    }
+  ]
+}

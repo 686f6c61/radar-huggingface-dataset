@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "UAzimov/uzbek-ner-xlmr-large",
+  "slug": "uazimov-uzbek-ner-xlmr-large",
+  "author": "UAzimov",
+  "url": "https://huggingface.co/UAzimov/uzbek-ner-xlmr-large",
+  "created_at": "2026-09-22T16:34:44.000Z",
+  "updated_at": "2026-09-22T16:38:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "uz"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "uzbek",
+    "named-entity-recognition",
+    "ner",
+    "uz",
+    "dataset:uznlp-uz/uzbek_NER",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 558858257,
+  "parameters_human": "558.9M",
+  "storage_bytes": 2252263092,
+  "storage_human": "2.3 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Uzbek-NER-Gold test-400 (seed-7 split)",
+      "metric": "Strict entity micro-F1 (Gold-400)",
+      "value": 0.7927
+    },
+    {
+      "task": null,
+      "dataset": "Uzbek-NER-Gold test-400 (seed-7 split)",
+      "metric": "Strict entity micro-F1 (LLM-200 subset)",
+      "value": 0.8094
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ausformulierter Lebenslauf Beispiel [PDF] + Tipps ️",
+      "url": "https://www.bewerbung-forum.de/ausformulierter-lebenslauf.html",
+      "snippet": "Ausformulierter Lebenslauf Beispiel + Tipps Das Anschreiben und der Lebenslauf bilden die Grundelemente einer …"
+    },
+    {
+      "title": "Ränder, Zeilenabstände - tabellarischer Lebenslauf ??? HILFE",
+      "url": "https://www.bewerbung-forum.de/forum/raender-zeilenabstaende-tabellarischer-lebenslauf-hilfe-t15128.html",
+      "snippet": "Apr 5, 2017 · Mein Lebenslauf ist ein tabellarischer. Dementsprechend steht der Monat links und die Tätigkeit rechts. Das Problem …"
+    },
+    {
+      "title": "Lebenslauf ab 50 Jahren: Tipps für ältere Bewerber ☀️",
+      "url": "https://www.bewerbung-forum.de/lebenslauf-50.html",
+      "snippet": "llll Lebenslauf mit über 50 Jahren schreiben ☀️ altersspezifische Lebenslauftipps ☀️ erfolgreich bewerben für ältere Bewerber: 55, …"
+    },
+    {
+      "title": "Tabellarischer Lebenslauf Muster - Bitte DrÃ¼berschauen",
+      "url": "https://www.bewerbung-forum.de/forum/tabellarischer-lebenslauf-muster-bitte-drueberschauen-t2133.html",
+      "snippet": "Tabellarischer Lebenslauf Muster bewerten von sonic1976 » 02.07.2007, 11:17 Hallo, ist irgendwie ganz schÃ¶ne Puzzlearbeit, wenn …"
+    },
+    {
+      "title": "Handschriftlicher Tabellarischer Lebenslauf - Bewerbungsforum",
+      "url": "https://www.bewerbung-forum.de/forum/handschriftlicher-tabellarischer-lebenslauf-t595.html",
+      "snippet": "Aug 9, 2006 · Re: Handschriftlicher Tabellarischer Lebenslauf Beitragvon Caroline » 02.11.2005, 23:52 Der Sinn erschließt sich mir …"
+    }
+  ]
+}

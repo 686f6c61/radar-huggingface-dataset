@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Tdamre/limite-1b-violetto-GGUF-LiteRT",
+  "slug": "tdamre-limite-1b-violetto-gguf-litert",
+  "author": "Tdamre",
+  "url": "https://huggingface.co/Tdamre/limite-1b-violetto-GGUF-LiteRT",
+  "created_at": "2026-09-22T14:59:40.000Z",
+  "updated_at": "2026-09-22T15:00:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "litert",
+    "litert-lm",
+    "quantized",
+    "mathematics",
+    "reasoning",
+    "custom-architecture",
+    "text-generation",
+    "base_model:paradigma-inc/limite-1b-violetto",
+    "base_model:quantized:paradigma-inc/limite-1b-violetto",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1068799406,
+  "parameters_human": "1.07B",
+  "storage_bytes": 7372696176,
+  "storage_human": "7.4 GB",
+  "base_model": "paradigma-inc/limite-1b-violetto",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=de",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    }
+  ]
+}

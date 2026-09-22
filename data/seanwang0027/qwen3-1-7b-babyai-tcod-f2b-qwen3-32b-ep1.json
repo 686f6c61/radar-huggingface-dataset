@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/qwen3-1.7b-babyai-tcod-f2b-qwen3-32b-ep1",
+  "slug": "seanwang0027-qwen3-1-7b-babyai-tcod-f2b-qwen3-32b-ep1",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-tcod-f2b-qwen3-32b-ep1",
+  "created_at": "2026-09-22T19:11:16.000Z",
+  "updated_at": "2026-09-22T19:12:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "babyai",
+    "on-policy-distillation",
+    "tcod",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4075371185,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grille de Salaire : Responsable de programme immobilier",
+      "url": "https://travail-industrie.com/fiche-salaire/responsable-programme-immobilier",
+      "snippet": "Sep 8, 2026 · Licence / Master : très répandu ; permet d’occuper des postes de responsable de programme confirmé, salaires plus …"
+    },
+    {
+      "title": "Responsable de programme immobilier : salaire, niveau d'études, …",
+      "url": "https://emploi.lefigaro.fr/metiers/responsable-de-programme-immobilier/metier-18820",
+      "snippet": "Responsable de programme immobilier : salaire, niveau d'études, profils recherchés... Salaire à l'embauche pour un responsable de …"
+    },
+    {
+      "title": "Salaire responsable de programmes immobiliers en 2026 : …",
+      "url": "https://recruteurindependant.com/salaire-responsable-programmes-immobiliers/",
+      "snippet": "May 10, 2026 · Le responsable de programmes confirmé, avec trois à huit ans d’expérience dans la fonction, se situe dans une …"
+    },
+    {
+      "title": "Salaire Responsable de programme immobilier - HelloWork",
+      "url": "https://www.hellowork.com/fr-fr/salaires/responsable-de-projet-immobilier.html",
+      "snippet": "Quand sa carrière démarre, un (e) Responsable de programme immobilier peut espérer toucher un salaire brut sur l'année compris …"
+    },
+    {
+      "title": "Salaire Responsable Programmes Immobiliers Confirmé (3-7 ans) …",
+      "url": "https://travail-industrie.com/simulateur-salaire/immobilier/responsable-programmes/confirme",
+      "snippet": "Un Responsable Programmes Immobiliers débute entre 34k et 42k€ brut/an. Avec l'expérience, le salaire progresse jusqu'à …"
+    }
+  ]
+}

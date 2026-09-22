@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/yolox-nano",
+  "slug": "skillsafe-ai-yolox-nano",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/yolox-nano",
+  "created_at": "2026-09-22T18:59:38.000Z",
+  "updated_at": "2026-09-22T18:59:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "skillsafe",
+    "browser",
+    "onnxruntime-web",
+    "object-detection",
+    "import",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3659407,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Loterija Slovenije : Loterija Slovenije",
+      "url": "https://www.loterija.si/",
+      "snippet": "Loterija Slovenije varno prireja igre na srečo ter hkrati zbira sredstva za financiranje športnih, humanitarnih in invalidskih organizacij. …"
+    },
+    {
+      "title": "Rezultati : Loterija Slovenije",
+      "url": "https://www.loterija.si/rezultati",
+      "snippet": "Rezultati iger na srečo Loterije Slovenije. Postani naš igralec in igraj kjerkoli že si."
+    },
+    {
+      "title": "Loterija Slovenije",
+      "url": "https://e.loterija.si/games/loto/play/classic-combo/start",
+      "snippet": "Igrajte Loto Classic Combo na spletnem mestu Loterije Slovenije in preizkusite svojo srečo v igri na srečo."
+    },
+    {
+      "title": "Loto rezultati : Loterija Slovenije",
+      "url": "https://www.loterija.si/loto/rezultati",
+      "snippet": "Preverite aktualne rezultate igre Loto in preverite svoje srečne številke."
+    },
+    {
+      "title": "Rezultati žrebanja igre Eurojackpot : Loterija Slovenije",
+      "url": "https://www.loterija.si/eurojackpot/rezultati",
+      "snippet": "Aktualni rezultati žrebanja igre na srečo Eurojackpot. Preveri svoje srečne številke. Sanje se uresničijo v torek in petek!"
+    }
+  ]
+}

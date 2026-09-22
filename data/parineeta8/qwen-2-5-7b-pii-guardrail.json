@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "parineeta8/qwen-2.5-7b-pii-guardrail",
+  "slug": "parineeta8-qwen-2-5-7b-pii-guardrail",
+  "author": "parineeta8",
+  "url": "https://huggingface.co/parineeta8/qwen-2.5-7b-pii-guardrail",
+  "created_at": "2026-09-22T19:22:32.000Z",
+  "updated_at": "2026-09-22T19:22:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stérilisation des prunes sans sirop",
+      "url": "https://sante-medecine.journaldesfemmes.fr/forum/cuisine/affich-60053570-comment-steriliser-des-prunes",
+      "snippet": "Personnellement,quelquesoit la sorte de prune,je procède ainsi: -laver et sécher les prunes -ôter les noyaux -mettre en bocaux,bien …"
+    },
+    {
+      "title": "Forum Diabète - Symptômes et maladies courantes",
+      "url": "https://sante-medecine.journaldesfemmes.fr/forum/diabete-15",
+      "snippet": "Sep 6, 2023 · Forum sur le diabète de type 1 et 2 : glycémie, insuline, régime alimentaire, complications, technologie (capteurs, …"
+    },
+    {
+      "title": "EVENTUELLE SURDOSE THERALENE SIROP - Journal des Femmes Santé",
+      "url": "https://sante-medecine.journaldesfemmes.fr/forum/affich-1644642-eventuelle-surdose-theralene-sirop",
+      "snippet": "Mar 30, 2014 · Le THERALENE SIROP est à 4 %. Je compte aller voir mon Médecin Généraliste demain, lui exposer ma situation et …"
+    },
+    {
+      "title": "Ménopause et prise de poids [Résolu] - Journal des Femmes Santé",
+      "url": "https://sante-medecine.journaldesfemmes.fr/forum/affich-183846-menopausee-impossible-de-maigrir",
+      "snippet": "Meilleure réponse: Bonsoir, Je viens de lire vos messages et j'y apporte ma modeste contribution. J'ai eu des gros problèmes de …"
+    },
+    {
+      "title": "Combien de dolipranes pour mourrir ? [Résolu]",
+      "url": "https://sante-medecine.journaldesfemmes.fr/forum/affich-2131716-combien-de-dolipranes-pour-mourrir",
+      "snippet": "Bonsoir, je voudrais savoir combien de dolipranes faut il avaler pour mourrir ? et dans quels conséquences meurent on ? merci, …"
+    }
+  ]
+}

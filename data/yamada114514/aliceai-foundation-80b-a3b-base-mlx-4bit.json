@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Yamada114514/AliceAI-Foundation-80B-A3B-Base-MLX-4bit",
+  "slug": "yamada114514-aliceai-foundation-80b-a3b-base-mlx-4bit",
+  "author": "Yamada114514",
+  "url": "https://huggingface.co/Yamada114514/AliceAI-Foundation-80B-A3B-Base-MLX-4bit",
+  "created_at": "2026-09-22T13:21:28.000Z",
+  "updated_at": "2026-09-22T13:29:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "alice_ai",
+    "quantized",
+    "moe",
+    "base",
+    "apple-silicon",
+    "custom_code",
+    "text-generation",
+    "ru",
+    "en",
+    "base_model:yandex/AliceAI-Foundation-80B-A3B-Base",
+    "base_model:quantized:yandex/AliceAI-Foundation-80B-A3B-Base",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 79635616256,
+  "parameters_human": "79.64B",
+  "storage_bytes": 44891882287,
+  "storage_human": "44.9 GB",
+  "base_model": "yandex/AliceAI-Foundation-80B-A3B-Base",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zargenvergussmörtel K 01.5 - quick-mix",
+      "url": "https://quick-mix.de/DE_de/fuer-profis/produkte/hochbau/zargenvergussmortel-k-01-5",
+      "snippet": "K 01.5 Zargenvergussmörtel Spezialmörtel zum maschinellen Verfüllen von Stahlzargen ohne zusätzliche Schalung für außen und …"
+    },
+    {
+      "title": "Zargenvergussmörtel ZVG - SAKRET",
+      "url": "https://www.sakret.de/profi/produkte/zargenvergussmoertel-zvg",
+      "snippet": "Mit dem SAKRET Zargenvergussmörtel ZVG haben Sie ein unkompliziertes Material zum zum Verfüllen von Zargen, …"
+    },
+    {
+      "title": "ZargenvergussMörtel ZVM 94 - Baumit.de",
+      "url": "https://baumit.de/produkte/mauermoertel/zargenvergussmoertel-zvm-94",
+      "snippet": "ZargenvergussMörtel ZVM 94 Spezialmörtel zum Verfüllen der Fuge zwischen Stahltürzarge und Wand"
+    },
+    {
+      "title": "maxit mur 997 Zargenvergussmörtel",
+      "url": "https://www.maxit.de/produkte/mauermoertel/maxit-mur-997-zargenvergussmoertel/",
+      "snippet": "maxit mur 997 Zargenvergussmörtel ist ein Normalmauermörtel G, M 10 nach DIN EN 998-2 und nach DIN 20000-412, der als …"
+    },
+    {
+      "title": "Marbos - Zargenvergussmörtel ZVM",
+      "url": "https://www.marbos.de/sortiment/produkte-finden/zargenvergussmoertel-zvm.html",
+      "snippet": "Zargenvergussmörtel ZVM Zementärer Vergussmörtel für Brandschutztüren. Zum maschinellen Verfüllen von Stahlzargen und …"
+    }
+  ]
+}

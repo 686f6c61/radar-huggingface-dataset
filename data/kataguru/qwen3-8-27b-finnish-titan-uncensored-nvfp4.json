@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "kataguru/Qwen3.8-27B-Finnish-Titan-Uncensored-NVFP4",
+  "slug": "kataguru-qwen3-8-27b-finnish-titan-uncensored-nvfp4",
+  "author": "kataguru",
+  "url": "https://huggingface.co/kataguru/Qwen3.8-27B-Finnish-Titan-Uncensored-NVFP4",
+  "created_at": "2026-09-22T12:34:32.000Z",
+  "updated_at": "2026-09-22T12:37:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "fi",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "qwen",
+    "qwen3.5",
+    "finnish",
+    "lora",
+    "finetuned",
+    "merge",
+    "nvfp4",
+    "fp4",
+    "compressed-tensors",
+    "vllm",
+    "uncensored",
+    "mtp",
+    "vision",
+    "multimodal",
+    "multi-token-prediction",
+    "text-generation",
+    "conversational",
+    "fi",
+    "en",
+    "base_model:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
+    "base_model:adapter:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19135892976,
+  "parameters_human": "19.14B",
+  "storage_bytes": 27829577404,
+  "storage_human": "27.8 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fete des Meres 2023 : date, origine, idées cadeaux",
+      "url": "https://lamaisondessultans.com/blogs/news/fete-des-meres-2023",
+      "snippet": "Aug 9, 2026 · La Fête des Mères aura lieu en France le dimanche 4 juin 2023, le premier dimanche de juin. C'est le moment de gâter …"
+    },
+    {
+      "title": "Quand a lieu Fête des mères 2023 ? Date et programme | Mom Clock",
+      "url": "https://momclock.com/fr-fr/events/mothers-day-2023",
+      "snippet": "Fête des mères est un jour férié observé le 14 mai 2023. Découvrez quand commence Fête des mères 2023, avec la date, le …"
+    },
+    {
+      "title": "Fête des mères 2023 est le dimanche, 04 juin, 2023 | WikiDates.org",
+      "url": "https://www.wikidates.org/fr/fete-des-meres-2023.html",
+      "snippet": "• Fête des mères en 2023 est le dimanche, 04 juin, 2023. Fête des mères 2023. Voir ici Fete des meres jour en 2023 et le nombre de …"
+    },
+    {
+      "title": "Fête des Mères 2026, 2027 et 2028 - Date et origine - iCalendrier",
+      "url": "https://icalendrier.fr/fetes/fete-des-meres/",
+      "snippet": "May 31, 2026 · Consultez la date, le jour et l'origine de la Fête des Mères en 2026, 2027 et 2028. Trouvez des idées cadeaux : …"
+    },
+    {
+      "title": "Fête des mères 2023 : quelle est la date dans les différents ... - CNEWS",
+      "url": "https://www.cnews.fr/lifestyle/2023-06-02/fete-des-meres-2023-quelle-est-la-date-dans-les-differents-pays-deurope-1360200",
+      "snippet": "Jun 2, 2023 · Traditionnellement, la France célèbre les mamans le dernier week-end du mois de mai. Cette année, cette date tombait …"
+    }
+  ]
+}

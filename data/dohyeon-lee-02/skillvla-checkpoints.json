@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Dohyeon-Lee-02/SkillVLA-checkpoints",
+  "slug": "dohyeon-lee-02-skillvla-checkpoints",
+  "author": "Dohyeon-Lee-02",
+  "url": "https://huggingface.co/Dohyeon-Lee-02/SkillVLA-checkpoints",
+  "created_at": "2026-09-22T16:59:51.000Z",
+  "updated_at": "2026-09-22T16:59:52.000Z",
+  "license": "gemma-terms-of-use-and-dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "vision-language-action",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hansgrohe AddStoris Q Liquid soap dispenser - 41745000",
+      "url": "https://www.hansgrohe.co.uk/articledetail-addstoris-q-liquid-soap-dispenser-41745000",
+      "snippet": "Globally recognised seal of quality, awarded by the International Forum Design since 1953. One of the most prestigious awards in the …"
+    },
+    {
+      "title": "hansgrohe AddStoris Liquid soap dispenser, chrome, 41745000",
+      "url": "https://www.amazon.co.uk/hansgrohe-AddStoris-Liquid-dispenser-41745000/dp/B095KY6ZPQ",
+      "snippet": "The AddStoris liquid soap dispenser from hansgrohe adds visual and functional flair to the bathroom. The glass container can hold …"
+    },
+    {
+      "title": "Hansgrohe Addstoris Liquid Soap Dispenser Chrome 41745000",
+      "url": "https://www.cityplumbing.co.uk/p/hansgrohe-addstoris-liquid-soap-dispenser-chrome-41745000/p/110032",
+      "snippet": "Stylish liquid soap dispenser in chrome from hansgrohe. The AddStoris liquid soap dispenser from hansgrohe adds visual and …"
+    },
+    {
+      "title": "hansgrohe AddStoris S Liquid soap dispenser - 41765000",
+      "url": "https://www.hansgrohe.co.uk/articledetail-addstoris-s-liquid-soap-dispenser-41765000",
+      "snippet": "‘Made by Hansgrohe’ is your assurance of quality. Please always observe the safety and installation information for your product. You …"
+    },
+    {
+      "title": "hansgrohe AddStoris Q Liquid soap dispenser - 41745000",
+      "url": "https://www.hansgrohe.com/articledetail-addstoris-q-liquid-soap-dispenser-41745000",
+      "snippet": "In addition to the voluntary manufacturer’s guarantee, you can trust the multiple awards given for the high quality standards and …"
+    }
+  ]
+}

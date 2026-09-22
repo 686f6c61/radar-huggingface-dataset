@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "leobianco/npov_RM_synstruct_Qwen2_5-1_5B-Instruct_S130104_epo8_lr4_4e-04_r16_2609221709",
+  "slug": "leobianco-npov_rm_synstruct_qwen2_5-1_5b-instruct_s130104_epo8_lr4_4e-04_r16_2609221709",
+  "author": "leobianco",
+  "url": "https://huggingface.co/leobianco/npov_RM_synstruct_Qwen2_5-1_5B-Instruct_S130104_epo8_lr4_4e-04_r16_2609221709",
+  "created_at": "2026-09-22T17:10:26.000Z",
+  "updated_at": "2026-09-22T17:11:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "lora",
+    "transformers",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42084014,
+  "storage_human": "42 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les 20 meilleures attractions et ce qu'il faut voir à Parc national du ...",
+      "url": "https://www.komoot.com/fr-fr/guide/1843880/attractions-a-parc-national-du-mont-rainier",
+      "snippet": "Sep 12, 2026 · Explorez les plus beaux endroits à visiter à Parc national du Mont Rainier. Planifiez votre prochaine randonnée …"
+    },
+    {
+      "title": "Comment visiter le parc national Mont Rainier ?",
+      "url": "https://www.voyagesadureeindeterminee.com/visiter-parc-national-mont-rainier/",
+      "snippet": "Nov 7, 2021 · Guide destiné à te faciliter l'organisation de ton séjour au parc national Mont Rainier : informations pratiques, …"
+    },
+    {
+      "title": "Visitez le parc national du Mont Rainier : un guide complet",
+      "url": "https://roambliss.com/fr/visiter-le-mont-rainier/",
+      "snippet": "May 26, 2026 · Vous prévoyez une visite au Mont Rainier ? Ce guide couvre le meilleur moment pour y aller, l’équipement essentiel, …"
+    },
+    {
+      "title": "Parc national du mont Rainier — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Parc_national_du_mont_Rainier",
+      "snippet": "Le parc national du mont Rainier (en anglais : Mount Rainier National Park) est un parc national américain situé dans l' État de …"
+    },
+    {
+      "title": "9 activités incontournables au parc national du Mont Rainier en 2026",
+      "url": "https://lotusmagus.com/fr/9-choses-incontournables-%C3%A0-faire-au-parc-national-du-Mont-Rainier-en-2026/",
+      "snippet": "May 14, 2026 · Le parc national du Mont Rainier propose une multitude d'activités pour tous les types de visiteurs en 2026. Des …"
+    }
+  ]
+}

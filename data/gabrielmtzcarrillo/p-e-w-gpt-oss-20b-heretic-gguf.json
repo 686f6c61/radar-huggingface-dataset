@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gabrielmtzcarrillo/p-e-w-gpt-oss-20b-heretic-gguf",
+  "slug": "gabrielmtzcarrillo-p-e-w-gpt-oss-20b-heretic-gguf",
+  "author": "gabrielmtzcarrillo",
+  "url": "https://huggingface.co/gabrielmtzcarrillo/p-e-w-gpt-oss-20b-heretic-gguf",
+  "created_at": "2026-09-22T18:20:33.000Z",
+  "updated_at": "2026-09-22T18:32:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:p-e-w/gpt-oss-20b-heretic",
+    "base_model:quantized:p-e-w/gpt-oss-20b-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 57666025088,
+  "storage_human": "57.7 GB",
+  "base_model": "p-e-w/gpt-oss-20b-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.pl/maps?q=Gda%C5%84sk%2C%20Budowlanych%2C%20%2054%2C%20Gda%C5%84sk%2C%20pomorskie%2C%20Gda%C5%84sk%2C%20Polska",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Redirect Notice - Google Maps",
+      "url": "https://maps.google.pl/url?url=httpss%3A%2F%2Flascena.ca/",
+      "snippet": "The previous page is sending you to an invalid url. If you do not want to visit that page, you can return to the previous page."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.pl/intl/pl/earth/",
+      "snippet": "Google Earth to najbardziej fotorealistyczna cyfrowa wersja naszej planety. Skąd pochodzą zdjęcia? W jaki sposób są łączone? Jak …"
+    },
+    {
+      "title": "Mapy Google",
+      "url": "https://maps.google.pl/maps?q=Katowice,+%C5%81ab%C4%99dzia+4&hl=pl&sll=50.238916,19.005125&t=h&hnear=%C5%81ab%C4%99dzia+4,+Katowice,+%C5%9Bl%C4%85skie&z=17",
+      "snippet": "Znajdź lokalne firmy, przeglądaj mapy i wyznaczaj trasy w Mapach Google."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.pl/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, featuring Street View, 3D mapping, navigation, indoor maps and more for your devices."
+    }
+  ]
+}

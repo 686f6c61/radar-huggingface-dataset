@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Narayan-nkj/sagar-sonar-detector",
+  "slug": "narayan-nkj-sagar-sonar-detector",
+  "author": "Narayan-nkj",
+  "url": "https://huggingface.co/Narayan-nkj/sagar-sonar-detector",
+  "created_at": "2026-09-22T14:57:08.000Z",
+  "updated_at": "2026-09-22T15:01:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "computer-vision",
+    "object-detection",
+    "yolo",
+    "yolov8",
+    "sonar",
+    "anomaly-detection",
+    "sagar",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12272152,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mots croisés en ligne gratuit - Notretemps.com",
+      "url": "https://www.notretemps.com/jeux/jeux-en-ligne/mots-croises",
+      "snippet": "1 day ago · Retrouvez chaque jour une nouvelle grille de Mots croisés en ligne gratuits avec quatre niveaux de difficulté: Force 1, …"
+    },
+    {
+      "title": "Mots Croisés en Ligne et Gratuits - Le Parisien Jeux",
+      "url": "https://www.leparisien.fr/jeux/mots-croises/",
+      "snippet": "Accédez quotidiennement à une nouvelle grille de mots croisés gratuits en ligne sur Le Parisien. Résolvez tous les jours des mots …"
+    },
+    {
+      "title": "Mots croisés en ligne gratuit | Jeux - 20 Minutes",
+      "url": "https://www.20minutes.fr/services/jeux/mots-croises",
+      "snippet": "Jouez en ligne aux mots croisés sur 20 minutes. Découvrez chaque jour une nouvelle grille gratuite à résoudre. Un défi amusant pour …"
+    },
+    {
+      "title": "Mots Croisés - Le Canada Français",
+      "url": "https://www.canadafrancais.com/mots-croises/",
+      "snippet": "Le Canada Français est heureux d’offrir quotidiennement une grille de mots croisés de Michel Hannequart, le meilleur divertissement …"
+    },
+    {
+      "title": "Jeux - Mots croisés Gratuits en ligne (20 Grilles) - Maximag.fr",
+      "url": "https://www.maxi-mag.fr/jeux/mots-croises",
+      "snippet": "La rédaction vous propose chaque jour une nouvelle grille, des aides par lettre ou par mot, et une solution. Comment jouer aux mots …"
+    }
+  ]
+}

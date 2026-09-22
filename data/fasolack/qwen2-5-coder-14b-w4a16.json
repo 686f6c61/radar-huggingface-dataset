@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "fasolack/Qwen2.5-Coder-14B-W4A16",
+  "slug": "fasolack-qwen2-5-coder-14b-w4a16",
+  "author": "fasolack",
+  "url": "https://huggingface.co/fasolack/Qwen2.5-Coder-14B-W4A16",
+  "created_at": "2026-09-22T14:40:37.000Z",
+  "updated_at": "2026-09-22T15:07:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "quantized",
+    "w4a16",
+    "int4",
+    "autoround",
+    "compressed-tensors",
+    "coding",
+    "tool-calling",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3312703136,
+  "parameters_human": "3.31B",
+  "storage_bytes": 9939988407,
+  "storage_human": "9.9 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "韓鶴亭 忠孝SOGO | 立即訂位！inline 線上訂位預約",
+      "url": "https://inline.app/booking/-LoKTFY6dj1-b1SM3akS:inline-live-1/-LoKTFblERKVlOewzbIa?language=zh-tw",
+      "snippet": "韓鶴亭 忠孝SOGO 24小時線上訂位，選擇時間、人數，立即訂位不用等！還可以線上查詢營業時間、看菜單！韓鶴亭 忠孝SOGO 位 …"
+    },
+    {
+      "title": "香味集團 和食EN復興館 - Taipei City | OpenTable",
+      "url": "https://www.opentable.com.tw/restaurant/profile/267881",
+      "snippet": "16 hours ago · 香味集團 和食EN復興館 是位於Taipei City 的日式料理 餐廳。 閱讀評論、查看菜單和照片，並線上預訂香味集團 和 …"
+    },
+    {
+      "title": "32間sogo復興餐廳一覽，小籠包／甜不辣／港點，高價位餐廳眾多，與捷運忠孝 …",
+      "url": "https://wanteatfood.com/recommend/33455",
+      "snippet": "May 27, 2026 · 除了平價的美食街之外，樓上還有許多高檔的餐廳，像是鼎泰豐、老乾杯、晶湯匙、點水樓、新葡苑等，完全是餐飲業 …"
+    },
+    {
+      "title": "吉莉安食旅 | Cova 復興SOGO店 地址：台北市大安區忠孝東路三段300號3樓（遠東SOGO台北 …",
+      "url": "https://www.instagram.com/reel/DdWLz7HNm4X/",
+      "snippet": "繼101 旗艦店後，Sogo分店不僅保留原有的招牌蛋糕、巧克力和咖啡等甜點下午茶系列，更增添了各式米蘭經典菜色及酒類選項，在 …"
+    },
+    {
+      "title": "20間統一時代美食街一覽，烏龍麵／蚵仔煎／豆腐鍋，信義商圈的交通 …",
+      "url": "https://wanteatfood.com/recommend/75086",
+      "snippet": "May 25, 2026 · 統一時代美食街餐廳眾多，位於忠孝東路與基隆路的精華地段，是信義商圈的交通樞紐百貨，與捷運市政府站、轉運站 …"
+    }
+  ]
+}

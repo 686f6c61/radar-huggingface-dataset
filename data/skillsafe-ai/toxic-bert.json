@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/toxic-bert",
+  "slug": "skillsafe-ai-toxic-bert",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/toxic-bert",
+  "created_at": "2026-09-22T20:43:12.000Z",
+  "updated_at": "2026-09-22T20:43:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "text-classification",
+    "skillsafe",
+    "browser",
+    "import",
+    "base_model:Xenova/toxic-bert",
+    "base_model:quantized:Xenova/toxic-bert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 548934528,
+  "storage_human": "549 MB",
+  "base_model": "Xenova/toxic-bert",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft SharePoint",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/sharepoint/collaboration?msockid=3c88fcd8265d676b1868eb04278066a8",
+      "snippet": "What is SharePoint? Microsoft SharePoint is a web-based collaboration and document management platform used by organizations …"
+    },
+    {
+      "title": "microsoft.sharepoint.com",
+      "url": "https://microsoft.sharepoint.com/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Sign in to SharePoint | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/sharepoint/get-started-with-sharepoint/sign-in-to-sharepoint",
+      "snippet": "SharePoint is a browser-based app that you connect to through your web browser. With SharePoint, you can do many things, such …"
+    },
+    {
+      "title": "Get started with SharePoint | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/sharepoint/get-started-with-sharepoint/get-started-with-sharepoint",
+      "snippet": "Get an overview of SharePoint. Learn about sites, lists and libraries, permissions, content types and workflows. In addition, read …"
+    },
+    {
+      "title": "What is SharePoint – Overview of features - microsoft.com",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/sharepoint/sharepoint-server?msockid=3c88fcd8265d676b1868eb04278066a8",
+      "snippet": "Find out how SharePoint Server 2019 helps you share work, organize projects and teams, discover information, build apps and …"
+    }
+  ]
+}

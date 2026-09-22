@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "CrowdMind/Qwen3.5-9b-sft",
+  "slug": "crowdmind-qwen3-5-9b-sft",
+  "author": "CrowdMind",
+  "url": "https://huggingface.co/CrowdMind/Qwen3.5-9b-sft",
+  "created_at": "2026-09-22T18:00:05.000Z",
+  "updated_at": "2026-09-22T18:05:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "agentic",
+    "supervised-fine-tuning",
+    "code",
+    "tool-use",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710173,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "闲鱼和转转哪个比较靠谱？ - 知乎",
+      "url": "https://www.zhihu.com/question/65313130",
+      "snippet": "转转一生黑，说一下本人被坑的经历吧。 11.8号，本人在转转平台出售了一台电脑，挂上后被人秒拍，被骗子讲价后3300包邮卖出。 …"
+    },
+    {
+      "title": "什么是 Agile Software Development（敏捷软件开发）？ - 知乎",
+      "url": "https://www.zhihu.com/question/23429937",
+      "snippet": "Apr 16, 2014 · 既然题主问的是“Agile Methodology”,那么便应该比限定在“软件开发”领域要更加宽泛。本回答从“敏捷开发”出发，尝试解 …"
+    },
+    {
+      "title": "第一调查网可靠吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/25046521",
+      "snippet": "3.问卷要成功了才能给钱，不然就只有抽奖机会，我辛辛苦苦折腾来折腾去，账号里赫赫然1.74元？？？得五十块往上好像才能提出 …"
+    },
+    {
+      "title": "笔记本连上外接显示器后没有声音? - 知乎",
+      "url": "https://www.zhihu.com/question/22188432",
+      "snippet": "Dec 4, 2013 · 看其它答主写的花里胡哨的，我就不讲那些废话了，就专注解决问题，傻瓜式教学，三步搞定。 场景：WIN10系统，笔 …"
+    },
+    {
+      "title": "纵向课题和横向课题有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/30432177",
+      "snippet": "目前，从学科大类上讲：分为社会科学和自然科学两大类；根据科研课题的来源一般分为：纵向课题与横向课题两大类。 纵向课题是 …"
+    }
+  ]
+}

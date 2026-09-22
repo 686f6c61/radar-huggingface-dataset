@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "eandujar/classical_automl_notebook",
+  "slug": "eandujar-classical_automl_notebook",
+  "author": "eandujar",
+  "url": "https://huggingface.co/eandujar/classical_automl_notebook",
+  "created_at": "2026-09-22T19:19:46.000Z",
+  "updated_at": "2026-09-22T19:19:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "autogluon",
+  "languages": [],
+  "tags": [
+    "autogluon",
+    "tabular",
+    "binary-classification",
+    "pokemon",
+    "education",
+    "dataset:pakiino/2026-24679-pokemon-151-tabular-hw1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23927,
+  "storage_human": "23927 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub CLI | Take GitHub to the command line",
+      "url": "https://cli.github.com/",
+      "snippet": "Sep 5, 2026 · Take GitHub to the command line GitHub CLI brings GitHub to your terminal. Free and open source."
+    },
+    {
+      "title": "盐选会员 - 知乎",
+      "url": "https://www.zhihu.com/topic/20747574",
+      "snippet": "知乎盐选会员，是付费内容服务和用户体验的一次升级，旨在让知友们花的时间更值得。 盐选会员不仅可以为广大知友提社区功能权 …"
+    },
+    {
+      "title": "GitHub - thedotmack/claude-mem: Persistent Context Across Sessions …",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "snippet": "Claude-Mem seamlessly preserves context across sessions by automatically capturing tool usage observations, generating semantic …"
+    },
+    {
+      "title": "如何看待Claude Opus 5.2被爆在 Claude Code 中开启灰度测试，性能提 …",
+      "url": "https://www.zhihu.com/question/2083132953844872274",
+      "snippet": "现在连Anthropic也开始搞灰测这一套了？ 不过这次灰测倒是实锤的，API返回的模型名称直接写着claude-opus-5-2。 所以，如果这两 …"
+    },
+    {
+      "title": "GitHub - YishenTu/claudian: An Obsidian plugin that embeds Claude …",
+      "url": "https://github.com/YishenTu/claudian",
+      "snippet": "An Obsidian plugin that embeds AI coding agents (Claude Code, Codex, Grok, Opencode, Pi, and more to come) in your vault. Your …"
+    }
+  ]
+}

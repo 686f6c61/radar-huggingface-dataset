@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SmolLM2-360M-NPC-Roleplay-GGUF",
+  "slug": "mradermacher-smollm2-360m-npc-roleplay-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SmolLM2-360M-NPC-Roleplay-GGUF",
+  "created_at": "2026-09-22T15:09:07.000Z",
+  "updated_at": "2026-09-22T15:12:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "roleplay",
+    "npc",
+    "character-ai",
+    "smollm2",
+    "lora",
+    "trl",
+    "sft",
+    "en",
+    "dataset:chimbiwide/NPC-Dialogue_v2",
+    "base_model:thealper2/SmolLM2-360M-NPC-Roleplay",
+    "base_model:adapter:thealper2/SmolLM2-360M-NPC-Roleplay",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 3729520512,
+  "storage_human": "3.7 GB",
+  "base_model": "thealper2/SmolLM2-360M-NPC-Roleplay",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=02933f1098f46c923f6628cc99b66d45",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/",
+      "snippet": "Securely sign in to access your Microsoft account and manage emails, calendars, and other services efficiently."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=02933f1098f46c923f6628cc99b66d45",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    }
+  ]
+}

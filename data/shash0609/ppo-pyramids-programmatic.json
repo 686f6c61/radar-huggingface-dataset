@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "shash0609/ppo-Pyramids-programmatic",
+  "slug": "shash0609-ppo-pyramids-programmatic",
+  "author": "shash0609",
+  "url": "https://huggingface.co/shash0609/ppo-Pyramids-programmatic",
+  "created_at": "2026-09-22T17:00:41.000Z",
+  "updated_at": "2026-09-22T17:00:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39354017,
+  "storage_human": "39 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games - Play Now on Y8.com",
+      "url": "https://www.y8.com/",
+      "snippet": "Y8 Games is a global online gaming platform offering one of the world’s largest collections of browser-based games, including …"
+    },
+    {
+      "title": "ألعاب مجانية أونلاين - العب الآن على Y8.com",
+      "url": "https://ar.y8.com/",
+      "snippet": "العب ألعاب أونلاين مجانية على Y8، منصة اللعب رقم 1 على الانترنت أهلاً بكم في Y8.com ، الوجهة الأمثل للعب الألعاب الأونلاين مجانًا."
+    },
+    {
+      "title": "Juegos En Línea Gratis - Juega Ahora en Y8.com",
+      "url": "https://es.y8.com/",
+      "snippet": "Y8 Games es una plataforma global online de juegos que ofrece una de las colecciones más grandes del mundo de los juegos de …"
+    },
+    {
+      "title": "2 player Games - Play Now on Y8.com",
+      "url": "https://www.y8.com/tags/2_player",
+      "snippet": "Play 2 player game for free! Just click and start playing 2 player online. Best of 2 player game series are waiting for you!"
+    },
+    {
+      "title": "ผู้เล่น 1 คน เกม - Y8 Games",
+      "url": "https://th.y8.com/tags/1_player",
+      "snippet": "เล่นเกมสำหรับผู้เล่น 1 คนที่ Y8.com. ผู้เล่นคนหนึ่งกับคอมพิวเตอร์! คุณสามารถเอาชนะมันได้หรือไม่?"
+    }
+  ]
+}

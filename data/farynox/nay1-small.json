@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "farynox/Nay1-small",
+  "slug": "farynox-nay1-small",
+  "author": "farynox",
+  "url": "https://huggingface.co/farynox/Nay1-small",
+  "created_at": "2026-09-22T19:22:47.000Z",
+  "updated_at": "2026-09-22T19:22:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TGCOM24 | News, Ultime Notizie, Video e Foto in tempo reale",
+      "url": "https://www.tgcom24.mediaset.it/",
+      "snippet": "Quotidiano online del sistema multimediale di Mediaset: cronaca, politica, esteri, economia, sport, spettacoli e televisione. Cultura, …"
+    },
+    {
+      "title": "Ultime notizie di Cronaca: news oggi in tempo reale - Tgcom24",
+      "url": "https://www.tgcom24.mediaset.it/cronaca/",
+      "snippet": "Cronaca italiana in tempo reale: ultime notizie di cronaca nera, fatti del giorno e aggiornamenti dall'Italia. Leggi tutte le notizie di …"
+    },
+    {
+      "title": "Alle Telekom Tarife im Überblick | Telekom",
+      "url": "https://www.telekom.de/shop/tarife",
+      "snippet": "Entdecken Sie die besten Telekom Tarife für Mobilfunk, Internet und mehr. Vergleichen Sie Angebote und finden Sie den passenden …"
+    },
+    {
+      "title": "TGcom - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/TGcom",
+      "snippet": "TGcom è stata una testata giornalistica online italiana appartenente al gruppo Mediaset. Lanciata l'8 marzo 2001, offriva …"
+    },
+    {
+      "title": "TGcom - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/TGCOM",
+      "snippet": "TGcom was an Italian news Website owned by Mediaset, launched on March 8, 2001. The Website contained mainly Italian and …"
+    }
+  ]
+}

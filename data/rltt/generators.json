@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "RLTT/Generators",
+  "slug": "rltt-generators",
+  "author": "RLTT",
+  "url": "https://huggingface.co/RLTT/Generators",
+  "created_at": "2026-09-22T16:06:51.000Z",
+  "updated_at": "2026-09-22T16:16:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cascade",
+    "time-series",
+    "synthetic-data",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "《杀戮都市》到底讲的是什么？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/61035387.html",
+      "snippet": "《杀戮都市》到底讲的是什么？该片讲述的是两个大学生误入一个需要战争来获得活下去的地方的故事。故事发生在“GANTZ”的神秘世 …"
+    },
+    {
+      "title": "杀戮都市的结局到底是什么意思啊 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/27411089.html",
+      "snippet": "在意大利任务后，本想复活铃木良一的玲花，却因GANTZ出现故障暂时不能实现。 众人离开后，GANTZ里的人出来了，要求玲花重复 …"
+    },
+    {
+      "title": "杀戮都市 GANTZ - 知乎",
+      "url": "https://www.zhihu.com/topic/20080272",
+      "snippet": "Apr 12, 2004 · 剧情概要： 玄野计（浪川大辅 配音）和加藤胜（大里雅史 配音）是小学时代的好友，在一日的偶遇之后，两人为救一 …"
+    },
+    {
+      "title": "如何评价《杀戮都市》？ - 知乎",
+      "url": "https://www.zhihu.com/question/21337055",
+      "snippet": "这个黑球不断地给被送往这个房间的人派发任务，要求干掉各式各样的外星人，奖励为分数，在得到100分之前会不断地被强制传送到 …"
+    },
+    {
+      "title": "10 Must-See Gore Anime - Fandom",
+      "url": "https://www.fandom.com/articles/10-must-see-gore-anime",
+      "snippet": "Sep 24, 2018 · While gore anime is a controversial genre, it is very popular among anime fans. So, we've compiled a list of the ten …"
+    }
+  ]
+}

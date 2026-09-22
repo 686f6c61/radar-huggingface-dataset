@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SmolLM2-360M-NPC-Roleplay-i1-GGUF",
+  "slug": "mradermacher-smollm2-360m-npc-roleplay-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SmolLM2-360M-NPC-Roleplay-i1-GGUF",
+  "created_at": "2026-09-22T15:11:15.000Z",
+  "updated_at": "2026-09-22T15:26:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "roleplay",
+    "npc",
+    "character-ai",
+    "smollm2",
+    "lora",
+    "trl",
+    "sft",
+    "en",
+    "dataset:chimbiwide/NPC-Dialogue_v2",
+    "base_model:thealper2/SmolLM2-360M-NPC-Roleplay",
+    "base_model:adapter:thealper2/SmolLM2-360M-NPC-Roleplay",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 5653695392,
+  "storage_human": "5.7 GB",
+  "base_model": "thealper2/SmolLM2-360M-NPC-Roleplay",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aan de slag met Google Foto's",
+      "url": "https://support.google.com/photos/answer/6220402?hl=nl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Denk aan een memorabele foto waarvan een back-up is gemaakt in je Google-account. Probeer je iets te herinneren dat op de foto …"
+    },
+    {
+      "title": "Google Photos Help",
+      "url": "https://support.google.com/photos/?hl=en",
+      "snippet": "Official Google Photos Help Center where you can find tips and tutorials on using Google Photos and other answers to frequently …"
+    },
+    {
+      "title": "Trova foto e video persi - Android - Guida di Google Foto",
+      "url": "https://support.google.com/photos/answer/6306652?hl=it&co=GENIE.Platform=Android",
+      "snippet": "Trova foto e video persi Quando attivi la funzionalità di backup, le foto vengono archiviate in photos.google.com. Importante: Se non …"
+    },
+    {
+      "title": "Kom i gang med Google Foto",
+      "url": "https://support.google.com/photos/answer/6220402?hl=no&co=GENIE.Platform%3DDesktop",
+      "snippet": "Med innstillingen for personlig tilpasning basert på aktivitet kan Google Foto vise deg enda mer personlig tilpassede minner basert på …"
+    },
+    {
+      "title": "Foto's en video's uit Google Drive toevoegen aan Google Foto's",
+      "url": "https://support.google.com/photos/answer/6156103?hl=nl",
+      "snippet": "Je kunt foto's uit Google Drive toevoegen aan Google Foto's om je foto's en video's naar wens in te delen in verschillende services. …"
+    }
+  ]
+}

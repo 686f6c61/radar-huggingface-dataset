@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep1",
+  "slug": "seanwang0027-qwen3-1-7b-babyai-tcod-b2f-qwen3-32b-ep1",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep1",
+  "created_at": "2026-09-22T19:07:53.000Z",
+  "updated_at": "2026-09-22T19:08:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "babyai",
+    "on-policy-distillation",
+    "tcod",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pizza recept - pizzadeg, pizzasås & toppingar | ICA",
+      "url": "https://www.ica.se/recept/pizza/",
+      "snippet": "Med en bra pizzadeg som grund kan du göra pizzor som bjuder på något gott för alla. Här hittar du våra smarrigaste pizzarecept!"
+    },
+    {
+      "title": "Hemmagjord pizza recept | ICA",
+      "url": "https://www.ica.se/recept/hemmagjord/pizza/",
+      "snippet": "Här finner du recept och förslag på goda hemmagjorda pizzor. Stammis? Knäckebrödspizza med ärtcrème, rökt skinka och …"
+    },
+    {
+      "title": "The Best 10 Pizza Places near Redmond, WA 98052 - Yelp",
+      "url": "https://www.yelp.com/search?cflt=pizza&find_loc=Redmond%2C+WA+98052&msockid=2d7ceb6ed560630d1bb2fcb2d40f6202",
+      "snippet": "Best Pizza in Redmond, WA 98052 - Last Updated September 2026 - Spark Pizza, Pagliacci Pizza, Sodo Pizza, Pizzaiolo Wood …"
+    },
+    {
+      "title": "Pagliacci Pizza: Seattle Area Pizza & Delivery",
+      "url": "https://pagliacci.com/",
+      "snippet": "Pagliacci Pizza, serving Seattle's best pizza since 1979. Offering pizza by the slice and pizza delivery service to homes and businesses."
+    },
+    {
+      "title": "Pizza Delivery to Redmond | Pagliacci Pizza",
+      "url": "https://www.pagliacci.com/locations/redmond",
+      "snippet": "Order Pagliacci Pizza in Downtown Redmond & Bear Creek. Fresh ingredients, award-winning taste. Fast delivery, easy pickup, or …"
+    }
+  ]
+}

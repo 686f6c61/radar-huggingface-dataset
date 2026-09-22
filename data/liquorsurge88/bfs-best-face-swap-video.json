@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "liquorsurge88/BFS-Best-Face-Swap-Video",
+  "slug": "liquorsurge88-bfs-best-face-swap-video",
+  "author": "liquorsurge88",
+  "url": "https://huggingface.co/liquorsurge88/BFS-Best-Face-Swap-Video",
+  "created_at": "2026-09-22T21:13:35.000Z",
+  "updated_at": "2026-09-22T21:13:35.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "ltx-2",
+    "ltx-2.5",
+    "ic-lora",
+    "head-swap",
+    "video-to-video",
+    "image-to-video",
+    "bfs",
+    "lora",
+    "base_model:Lightricks/LTX-2.3",
+    "base_model:adapter:Lightricks/LTX-2.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13057762403,
+  "storage_human": "13.1 GB",
+  "base_model": "Lightricks/LTX-2.3, Lightricks/LTX-2.5",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login - Collège Boréal",
+      "url": "https://login.collegeboreal.ca/NTLM/",
+      "snippet": "Login - Collège Boréal I forgot my password"
+    },
+    {
+      "title": "Portails Boréal - Collège Boréal",
+      "url": "https://collegeboreal.ca/portails-boreal/",
+      "snippet": "Bienvenue aux portails du Collège Boréal. Cliquez sur le portail de votre choix pour accéder aux informations, ressources et services …"
+    },
+    {
+      "title": "BFS Best-Face-Swap-Video Video Model | aicreators.tools",
+      "url": "https://aicreators.tools/model/video/260",
+      "snippet": "Name: BFS-Best-Face-Swap Variant: Video Also Known As: BFS Best Face Swap Video Licence: Source Available (Dual Licence) Creator: Alisson Pereira Anjos"
+    },
+    {
+      "title": "Collège Boréal",
+      "url": "http://mon.collegeboreal.ca/",
+      "snippet": "Access your student, employee, parent, or continuing education space at Collège Boréal."
+    },
+    {
+      "title": "Login - Collège Boréal",
+      "url": "https://login.collegeboreal.ca/NTLM/?wa=wsignin1.0&lc=1036",
+      "snippet": "Login - Collège Boréal J'ai oublié mon mot de passe"
+    }
+  ]
+}

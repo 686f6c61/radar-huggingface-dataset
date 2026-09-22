@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "baerquants/Inkling-Small",
+  "slug": "baerquants-inkling-small",
+  "author": "baerquants",
+  "url": "https://huggingface.co/baerquants/Inkling-Small",
+  "created_at": "2026-09-22T20:59:52.000Z",
+  "updated_at": "2026-09-22T20:59:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 265956439090,
+  "parameters_human": "265.96B",
+  "storage_bytes": 531944513947,
+  "storage_human": "531.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "my.xfinity.com",
+      "url": "http://my.xfinity.com/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Xfinity Email Login - Access and manage your account",
+      "url": "https://www.xfinity.com/email?msockid=1873fe5dc8856c3a1074e981c9b66d2a",
+      "snippet": "Quickly and easily sign in to your comcast.net email and access helpful links to manage your Xfinity account."
+    },
+    {
+      "title": "Sign in to Xfinity",
+      "url": "https://login.xfinity.com/login",
+      "snippet": "Get the most out of Xfinity from Comcast by signing in to your account. Enjoy and manage TV, high-speed Internet, phone, and …"
+    },
+    {
+      "title": "Xfinity - Internet, WiFi, Mobile, TV and Streaming",
+      "url": "https://www.xfinity.com/?msockid=1873fe5dc8856c3a1074e981c9b66d2a",
+      "snippet": "Save on high speed internet, mobile phone plans and cable TV services with Xfinity. Enjoy entertainment your way with great deals …"
+    },
+    {
+      "title": "My Xfinity Email: Access, Recovery, Setup, and Troubleshooting",
+      "url": "https://www.devicemag.com/my-xfinity-com-email/",
+      "snippet": "Sep 6, 2026 · Are you an Xfinity email user? In this guide, I will show you how to log in to your Xfinity email login and access your …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "master-of-hardcore/gvision-adv-uid148",
+  "slug": "master-of-hardcore-gvision-adv-uid148",
+  "author": "master-of-hardcore",
+  "url": "https://huggingface.co/master-of-hardcore/gvision-adv-uid148",
+  "created_at": "2026-09-22T18:35:25.000Z",
+  "updated_at": "2026-09-22T18:35:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "torchvision",
+  "languages": [],
+  "tags": [
+    "torchvision",
+    "safetensors",
+    "image-classification",
+    "adversarial-training",
+    "efficientnet",
+    "perturb",
+    "bittensor",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119027848,
+  "parameters_human": "119.0M",
+  "storage_bytes": 476270064,
+  "storage_human": "476 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mon master - S'informer, candidater, se décider",
+      "url": "https://monmaster.gouv.fr/",
+      "snippet": "Mon Master est la plateforme nationale permettant de candidater en première année des formations conduisant au diplôme national …"
+    },
+    {
+      "title": "Masters : conditions d’accès et déroulement des études - Onisep",
+      "url": "https://www.onisep.fr/formation/apres-le-bac-les-etudes-superieures/les-principales-filieres-d-etudes-superieures/les-masters",
+      "snippet": "Jan 29, 2026 · Le master se prépare en 2 ans, principalement à l'université, au sein d'une UFR (unité de formation et de recherche), …"
+    },
+    {
+      "title": "Tous les Masters - Liste des Masters avec programme, débouchés... - L ...",
+      "url": "https://www.letudiant.fr/etudes/liste-des-masters-1.html",
+      "snippet": "Calendrier Mon Master, annuaire des formations… L’Etudiant met à votre disposition tous les outils pour vous orienter, vous …"
+    },
+    {
+      "title": "Diplôme national de master — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Dipl%C3%B4me_national_de_master",
+      "snippet": "Le mot « master » désigne un diplôme protégé par le droit français, qui ne peut être délivré que par les institutions habilitées par …"
+    },
+    {
+      "title": "Différence entre un master et un mastère - L'Etudiant",
+      "url": "https://www.letudiant.fr/etudes/3es-cycles-et-masters/difference-entre-un-master-et-un-mastere.html",
+      "snippet": "Feb 12, 2026 · Le master est un diplôme national conférant un niveau bac + 5 à son titulaire. Préparé à l’université, le master se …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "5visser98/matching",
+  "slug": "5visser98-matching",
+  "author": "5visser98",
+  "url": "https://huggingface.co/5visser98/matching",
+  "created_at": "2026-09-22T12:03:18.000Z",
+  "updated_at": "2026-09-22T12:03:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "百度知道 - 全球领先中文互动问答平台",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": ""
+    },
+    {
+      "title": "什么是RTV硅橡胶？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/252187547.html",
+      "snippet": "Apr 13, 2011 · RTV硅胶是一种室温硫化型 硅橡胶，RTV是英文room temperature vulcanized silicone rubber的缩写，室温下能硫化的 …"
+    },
+    {
+      "title": "物料检查报告的处理结果中有个RTV是什么意思啊 ... - 6SQ",
+      "url": "https://www.6sq.net/question/141574",
+      "snippet": "May 11, 2007 · 物料检查报告的处理结果中有个RTV是什么意思啊？？？？ - 请问一下各位大侠，处理结果中的RTV是什么意思？ 还有 …"
+    },
+    {
+      "title": "MRB作业管理办法 - 六西格玛品质网",
+      "url": "https://www.6sq.net/article/65336",
+      "snippet": "Jun 15, 2009 · 5.2 如经MRB判为RTV（Return To Vendor）退回厂商或原制作单位，则由IQC在待退产品上加以“拒收”标签标识，等待 …"
+    },
+    {
+      "title": "Internet - Support | Proximus Forum",
+      "url": "https://nl.forum.proximus.be/internet-10/index46.html",
+      "snippet": "Bekijk Internet-discussies in het gedeelte Support van de community"
+    }
+  ]
+}

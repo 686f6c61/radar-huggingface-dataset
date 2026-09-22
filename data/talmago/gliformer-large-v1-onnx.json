@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "talmago/gliformer-large-v1-onnx",
+  "slug": "talmago-gliformer-large-v1-onnx",
+  "author": "talmago",
+  "url": "https://huggingface.co/talmago/gliformer-large-v1-onnx",
+  "created_at": "2026-09-22T15:20:45.000Z",
+  "updated_at": "2026-09-22T15:22:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "fast_gliner",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "fast_gliner",
+    "onnx",
+    "gliformer",
+    "gliner",
+    "named-entity-recognition",
+    "text-classification",
+    "relation-extraction",
+    "structured-extraction",
+    "token-classification",
+    "en",
+    "base_model:knowledgator/gliformer-large-v1",
+    "base_model:quantized:knowledgator/gliformer-large-v1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2326278886,
+  "storage_human": "2.3 GB",
+  "base_model": "knowledgator/gliformer-large-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Google Traduction offre un service gratuit pour traduire instantanément des mots, expressions et pages Web entre le français et plus …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/details",
+      "snippet": "Traduisez des textes instantanément avec Google Translate."
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/_/TranslateWebserverUi/bscframe",
+      "snippet": "Google Traduction permet de traduire des textes, images, documents et sites Web entre le français et plus de 100 langues."
+    }
+  ]
+}

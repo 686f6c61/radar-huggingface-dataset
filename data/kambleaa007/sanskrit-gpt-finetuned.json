@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kambleaa007/sanskrit-gpt-finetuned",
+  "slug": "kambleaa007-sanskrit-gpt-finetuned",
+  "author": "kambleaa007",
+  "url": "https://huggingface.co/kambleaa007/sanskrit-gpt-finetuned",
+  "created_at": "2026-09-22T15:10:48.000Z",
+  "updated_at": "2026-09-22T15:32:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "trl",
+    "sft",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 41866240,
+  "parameters_human": "41.9M",
+  "storage_bytes": 167484832,
+  "storage_human": "167 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Canon Pixma G3420 printer Toshkentda | narxi va sharxlar ⚡",
+      "url": "https://mediapark.uz/uz/tashkent/products/view/canon-pixma-g3420-printer-8241",
+      "snippet": "Canon Pixma G3420 printer narxi 2756000 so'm . Toshkentda tez yetkazib berish. ⭐ Mediapark - Qulay muddatli to'lov va Arzon …"
+    },
+    {
+      "title": "Canon Pixma G3420 Printeri 2314100 so'mga 33% chegirma bilan.",
+      "url": "https://uzum.uz/uz/product/canon-pixma-g3420-printeri-717330",
+      "snippet": "Canon Pixma G3420 Printeri 2314100 so'mga tez yetkazib berish bilan. ⭐5.0 2+ xaridorlardan. Tekshirilgan sifat Yetkazib berish 1 …"
+    },
+    {
+      "title": "Принтер Canon Pixma G3420 купить от 2 750 000 ... - ikarvon",
+      "url": "https://ikarvon.uz/product/48761-printer-canon-pixma-g3420",
+      "snippet": "Принтер Canon Pixma G3420 купить по доступной цене от 2 750 000 сум. в интернет-магазине ikarvon.uz. Гарантия на весь …"
+    },
+    {
+      "title": "Принтер Canon Pixma G3420, 3 в 1, за 4997000 сум ... - Uzum",
+      "url": "https://uzum.uz/ru/product/printer-canon-pixma-g3420-3-v-447889",
+      "snippet": "С этим высокопроизводительным многофункциональным принтером MegaTank с подключением к Wi-Fi и облаком и …"
+    },
+    {
+      "title": "Принтер Canon Pixma G3420 ni Toshkent shahri va Oʻzbekistonda …",
+      "url": "https://ikarvon.uz/uz/product/48761-printer-canon-pixma-g3420",
+      "snippet": "Принтер Canon Pixma G3420 ni Toshkentda 2 860 000 so‘m narxda ikarvon.uz saytidan xarid qilishingiz mumkin. Canon …"
+    }
+  ]
+}

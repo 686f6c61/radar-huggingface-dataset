@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "VocaHQ/whisperkit-coreml",
+  "slug": "vocahq-whisperkit-coreml",
+  "author": "VocaHQ",
+  "url": "https://huggingface.co/VocaHQ/whisperkit-coreml",
+  "created_at": "2026-09-22T16:14:53.000Z",
+  "updated_at": "2026-09-22T16:32:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisperkit",
+  "languages": [],
+  "tags": [
+    "whisperkit",
+    "whisper",
+    "coreml",
+    "asr",
+    "quantized",
+    "automatic-speech-recognition",
+    "hinglish",
+    "base_model:Oriserve/Whisper-Hindi2Hinglish-Apex",
+    "base_model:finetune:Oriserve/Whisper-Hindi2Hinglish-Apex",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 810128418,
+  "storage_human": "810 MB",
+  "base_model": "Oriserve/Whisper-Hindi2Hinglish-Apex",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Herohero",
+      "url": "https://herohero.co/",
+      "snippet": "We use cookies to ensure that Herohero runs smoothly. If the cookies are not necessary for the website to run correctly, we only use …"
+    },
+    {
+      "title": "VIP klub lovců last minute zájezdů do 15 000 Kč ...",
+      "url": "https://herohero.co/lastminutezajezdydo15000kc",
+      "snippet": "😱 Chtěli jste to, máte to! Založili jsme pro vás \"sesterskou\" skupinu s last minute zájezdy do 15 000 Kč.💎 To znamená jediné - více …"
+    },
+    {
+      "title": "Přihlášení a odhlášení předplatného | Podpora Herohero",
+      "url": "https://help.herohero.co/cs/articles/9685933-prihlaseni-a-odhlaseni-predplatneho",
+      "snippet": "May 20, 2026 · Jak aktivovat a zrušit své předplatné, kde najít potvrzení o nákupech, odpovědi na často kladené dotazy."
+    },
+    {
+      "title": "Internet podle tvých pravidel | Herohero",
+      "url": "https://about.herohero.co/cs",
+      "snippet": "Herohero je sociální síť bez lajků a algoritmů. Vytvářej a sdílej obsah, buduj svou komunitu a spojuj se s lidmi, kteří sdílejí tvé vášně …"
+    },
+    {
+      "title": "Internet według Twoich zasad - Herohero",
+      "url": "https://about.herohero.co/pl",
+      "snippet": "Herohero to sieć społecznościowa bez polubień i algorytmów. Twórz i udostępniaj treści, buduj swoją społeczność i nawiązuj kontakt …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aryansexter/Shadowmode",
+  "slug": "aryansexter-shadowmode",
+  "author": "aryansexter",
+  "url": "https://huggingface.co/aryansexter/Shadowmode",
+  "created_at": "2026-09-22T17:29:48.000Z",
+  "updated_at": "2026-09-22T17:29:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "php - POST Content-Length exceeds the limit - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/6279897/post-content-length-exceeds-the-limit",
+      "snippet": "Jun 8, 2011 · I get similar errors in my error_log in php when users are uploading their files PHP Warning: POST Content-Length of …"
+    },
+    {
+      "title": "How can I access the MySQL command line with XAMPP for Windows?",
+      "url": "https://stackoverflow.com/questions/698914/how-can-i-access-the-mysql-command-line-with-xampp-for-windows",
+      "snippet": "To access SQL via the command line we simply navigate to the xampp folder. the folder is usually on the c:\\ drive. type: cd …"
+    },
+    {
+      "title": "Mac安装Win10后，没有Boot Camp怎么办-百度经验",
+      "url": "https://jingyan.baidu.com/article/425e69e686cf00fe14fc1618.html",
+      "snippet": "Oct 17, 2019 · Mac安装Win10后，没有Boot Camp怎么办,在Mac苹果电脑安装了Wi10系统（Wi7/Widow10），但是触摸板很不灵敏， …"
+    },
+    {
+      "title": "Localhost de XAMPP no funciona correctamente",
+      "url": "https://es.stackoverflow.com/questions/9067/localhost-de-xampp-no-funciona-correctamente",
+      "snippet": "May 4, 2016 · Buenas tardes. Llevo bastantes horas liado con un problema que me ha surgido con XAMPP y me está dando dolores …"
+    },
+    {
+      "title": "XAMP安装与配置（win10下）-百度经验",
+      "url": "https://jingyan.baidu.com/article/4f7d57120532c81a21192749.html",
+      "snippet": "Jul 1, 2018 · 安装和配置apache。 1、以管理员身份运行cmd，输入httpd -k install 安装apache。提示successful即安装成功。 2、配 …"
+    }
+  ]
+}

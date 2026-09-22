@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Azng0/autoshade-mirror-autoshade-raw-denoise",
+  "slug": "azng0-autoshade-mirror-autoshade-raw-denoise",
+  "author": "Azng0",
+  "url": "https://huggingface.co/Azng0/autoshade-mirror-autoshade-raw-denoise",
+  "created_at": "2026-09-22T14:00:28.000Z",
+  "updated_at": "2026-09-22T14:00:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-denoising",
+    "raw",
+    "autoshade",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 130590559,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ensinger",
+      "url": "https://www.ensinger.de/",
+      "snippet": "Ensinger sorgt für die Erfrischung deines Lebens. Dabei legen wir großen Wert auf einen ganzheitlichen Nachhaltigkeitsansatz mit …"
+    },
+    {
+      "title": "Ensinger Mineral-Heilquellen GmbH: Nachhaltigkeit",
+      "url": "https://www.ensinger.de/fileadmin/media/pressedownloads/Ensinger-Pressemappe-Nachhaltigkeit-2023.pdf",
+      "snippet": "Ensinger Leitbild regelt soziale Aspekte der Nachhaltigkeit Ansporn und Richtschnur für die Entwicklung der Ensinger Mineral …"
+    },
+    {
+      "title": "Presseinformation - ensinger.de",
+      "url": "https://www.ensinger.de/fileadmin/media/PI-Wechsel-Ensinger-Gesch%C3%A4ftsf%C3%BChrung.pdf",
+      "snippet": "Ensinger Mineral-Heilquellen GmbH Die Ensinger Mineral-Heilquellen mit Sitz im süddeutschen Vaihingen / Enz-Ensingen ist ein …"
+    },
+    {
+      "title": "Newsletter - Ensinger",
+      "url": "https://www.ensinger.de/newsletter/",
+      "snippet": "Ensinger Mineral-Heilquellen GmbH Horrheimer Str. 28-36 71665 Vaihingen/Enz-Ensingen +49 (0)7042 / 2809-0 info (at)ensinger.de"
+    },
+    {
+      "title": "Über Uns",
+      "url": "https://www.ensinger.de/ueber-uns",
+      "snippet": "Die Ensinger Mineral-Heilquellen GmbH wurde 1952 von Wilhelm Fritz und seinen vier Söhnen Eberhard, Otto, Wilhelm und Erich …"
+    }
+  ]
+}

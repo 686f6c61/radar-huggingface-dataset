@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "hbarret/q-Taxi-v4",
+  "slug": "hbarret-q-taxi-v4",
+  "author": "hbarret",
+  "url": "https://huggingface.co/hbarret/q-Taxi-v4",
+  "created_at": "2026-09-22T14:56:16.000Z",
+  "updated_at": "2026-09-22T14:56:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v4",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155775,
+  "storage_human": "155775 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Google Chrome letöltése és telepítése",
+      "url": "https://support.google.com/chrome/answer/95346?hl=hu&co=GENIE.Platform%3DDesktop",
+      "snippet": "A Chrome első indításakor el kell olvasnia és el kell fogadnia a Google Általános Szerződési Feltételeit. Tipp: Annak érdekében, hogy …"
+    },
+    {
+      "title": "Google Chrome をダウンロードしてインストールする",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome を初めて起動する際は、 Google 利用規約 を確認して同意する必要があります。 ヒント: Chrome がパッケージ マネー …"
+    },
+    {
+      "title": "Make Chrome your default browser - Google Help",
+      "url": "https://support.google.com/chrome/answer/95417?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Select Google Chrome. At the top, next to \"Make Google Chrome your default browser,\" select Set default. To make sure the change …"
+    },
+    {
+      "title": "Descargar e instalar Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": "Instalar Chrome sin conexión Si tienes problemas al descargar Chrome en tu ordenador Windows, usa el enlace alternativo para …"
+    },
+    {
+      "title": "Fazer o download e instalar o Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Instalar o Chrome off-line Se você tiver problemas para baixar o Chrome no seu computador Windows, use o link alternativo para …"
+    }
+  ]
+}

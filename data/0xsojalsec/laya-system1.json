@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/laya-System1",
+  "slug": "0xsojalsec-laya-system1",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/laya-System1",
+  "created_at": "2026-09-22T20:32:25.000Z",
+  "updated_at": "2026-09-22T20:32:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laya",
+    "system-one",
+    "calibrated-decisions",
+    "rlcd",
+    "classification",
+    "routing",
+    "scoring",
+    "guardrails",
+    "moderation",
+    "reinforcement-learning",
+    "commercial-use",
+    "text-classification",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 2365127066,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "De bureaubladpictogrammen aanpassen in Windows | Microsoft …",
+      "url": "https://support.microsoft.com/nl-nl/windows/experience/personalization/customize-the-desktop-icons-in-windows",
+      "snippet": "Oct 14, 2025 · Meer informatie over het aanpassen van de standaard bureaubladpictogrammen in Windows, het aanpassen van de …"
+    },
+    {
+      "title": "Bureaubladpictogrammen weergeven in Windows 11 - PC Tips",
+      "url": "https://www.pc-tips.info/tips/windows-tips/bureaublad-pictogrammen-windows-11/",
+      "snippet": "Oct 31, 2021 · Wilt u de bureaubladpictogrammen weergeven in Windows 11? Lees hier hoe u \"Deze PC\", \"Configuratiescherm\" of …"
+    },
+    {
+      "title": "Bureaublad pictogrammen beheren in Windows 11 (Gids) - PC Tips",
+      "url": "https://www.pc-tips.info/tips/windows-tips/bureaublad-pictogrammen-beheren-in-windows-11/",
+      "snippet": "Jun 20, 2022 · Bureaublad pictogrammen beheren in Windows 11. Lees hoe u de grootte kunt aanpassen, kunt uitlijnen, weergeven …"
+    },
+    {
+      "title": "Pictogrammen bureaublad verdwenen - SeniorWeb",
+      "url": "https://www.seniorweb.nl/artikel/pictogrammen-bureaublad-verdwenen",
+      "snippet": "May 23, 2025 · Is een pictogram plots van het bureaublad verdwenen of is het bureaublad leeg? Zet pictogrammen op een Windows …"
+    },
+    {
+      "title": "Waar zijn mijn bureaubladpictogrammen gebleven? | Microsoft Support",
+      "url": "https://support.microsoft.com/nl-nl/onedrive/where-have-my-desktop-icons-gone",
+      "snippet": "Als u plotseling merkt dat al uw bureaubladpictogrammen zijn verdwenen, helpt deze handleiding u om ze terug te vinden. Als u …"
+    }
+  ]
+}

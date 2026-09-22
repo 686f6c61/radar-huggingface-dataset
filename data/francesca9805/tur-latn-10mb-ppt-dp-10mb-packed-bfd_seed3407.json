@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/tur-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407",
+  "slug": "francesca9805-tur-latn-10mb-ppt-dp-10mb-packed-bfd_seed3407",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/tur-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407",
+  "created_at": "2026-09-22T13:31:19.000Z",
+  "updated_at": "2026-09-22T13:32:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/tur_latn_10mb",
+    "base_model:finetune:goldfish-models/tur_latn_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79402419,
+  "storage_human": "79 MB",
+  "base_model": "goldfish-models/tur_latn_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "如何评价 OpenAI 最新发布的 GPT-6 Astra，并宣称人类进入 AGI 时 …",
+      "url": "https://www.zhihu.com/question/2079054472190469850",
+      "snippet": "Sep 3, 2026 · “地球最强大模型”的王座，短短两天内再度易主。北京时间周五凌晨，OpenAI正式发布GPT-6 Astra，并称其…"
+    },
+    {
+      "title": "ChatGPT - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/top/",
+      "snippet": "Dec 1, 2022 · r/ChatGPT: Subreddit to discuss about ChatGPT and AI. Not affiliated with OpenAI."
+    },
+    {
+      "title": "chatgpt-api · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chatgpt-api",
+      "snippet": "Sep 10, 2026 · ChatGPT API is a RESTful API that provides a simple interface to interact with OpenAI’s GPT-3 and GPT-Neo …"
+    },
+    {
+      "title": "ChatGPT Plus 正式恢复五小时使用上限，Codex 长任务体验会受影响 …",
+      "url": "https://www.zhihu.com/question/2075903044676315058",
+      "snippet": "可以看看公众号老冯云数怎么用7-10个20x产生巨大生产力的， 《OPC一个月烧1000刀订阅，能有多少产出？ 》 的时候是7个， …"
+    }
+  ]
+}

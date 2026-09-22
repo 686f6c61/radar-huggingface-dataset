@@ -18,9 +18,9 @@
     "diffusers:MiniMaxH3ModularPipeline",
     "region:us"
   ],
-  "likes": 15,
-  "downloads_30d": 937,
-  "trending_score": 13,
+  "likes": 16,
+  "downloads_30d": 944,
+  "trending_score": 11,
   "parameters": 33122992896,
   "parameters_human": "33.12B",
   "storage_bytes": 403479726323,

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Zhongzhu/tunekv-toolathlon-qwen3.8-27b",
+  "slug": "zhongzhu-tunekv-toolathlon-qwen3-8-27b",
+  "author": "Zhongzhu",
+  "url": "https://huggingface.co/Zhongzhu/tunekv-toolathlon-qwen3.8-27b",
+  "created_at": "2026-09-22T17:36:15.000Z",
+  "updated_at": "2026-09-22T17:36:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 200099328,
+  "storage_human": "200 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Esse pc é bom pra jogos? - Fórum TechTudo",
+      "url": "https://forum.techtudo.com.br/perguntas/28885/esse-pc-e-bom-pra-jogos",
+      "snippet": "Vou jogar Diablo 3 e Max Payne 3,esse pc roda de boa,sem lag? Cpu Amd Athlon ll X2 250 3.0 2Mb Am3 MB Am3 Asus M4A78LT …"
+    },
+    {
+      "title": "Como cancelar Spotify? - Fórum TechTudo",
+      "url": "https://forum.techtudo.com.br/perguntas/914202/como-cancelar-spotify",
+      "snippet": "Gente, preciso cancelar o Spotify Premium. Alguém consegue me ajudar? Dá para fazer iso pelo celular?"
+    },
+    {
+      "title": "Bad Blocks - Fórum TechTudo",
+      "url": "https://forum.techtudo.com.br/perguntas/311360/bad-blocks",
+      "snippet": "Olá, tenho um pc fraco (antigo). Certa vez ele encheu de arquivos e travou. Teve um amigo meu que levou para sua casa e …"
+    },
+    {
+      "title": "Notebook espécie de \"pam\" constantes - Fórum TechTudo",
+      "url": "https://forum.techtudo.com.br/perguntas/251087/notebook-especie-de-pam-constantes",
+      "snippet": "notebook espécie de pam\" constantes Boa !! de uns meses pra cá, meu computador começou a fazer uns barulhos estranhos, não é …"
+    },
+    {
+      "title": "voce conhece clash of kings? - Fórum TechTudo",
+      "url": "https://forum.techtudo.com.br/perguntas/185104/voce-conhece-clash-of-kings",
+      "snippet": "Clash of Kings é um game de estratégia em tempo real muito viciante. Os inimigos tentarão atacá-lo de todas as formas e você …"
+    }
+  ]
+}

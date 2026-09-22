@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "letechlead/MiMo-V2.6-Distill-Qwen-9B-INT8-W8A16-AutoRound",
+  "slug": "letechlead-mimo-v2-6-distill-qwen-9b-int8-w8a16-autoround",
+  "author": "letechlead",
+  "url": "https://huggingface.co/letechlead/MiMo-V2.6-Distill-Qwen-9B-INT8-W8A16-AutoRound",
+  "created_at": "2026-09-22T18:00:51.000Z",
+  "updated_at": "2026-09-22T18:01:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "auto-round",
+    "int8",
+    "w8a16",
+    "gptq",
+    "sglang",
+    "8-bit",
+    "conversational",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19989325,
+  "storage_human": "20 MB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Löschen eines Geschäfts- oder Schulkontos - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/de-de/answers/questions/3974363/l-schen-eines-gesch-fts-oder-schulkontos",
+      "snippet": "Ein nicht mehr aktives Geschäfts- oder Schulkonto, mit dem ich ursprünglich Outlook und Office 365 installiert hatte, blockiert nun …"
+    },
+    {
+      "title": "Wie kann ich ein veraltetes Schul/Uni-Konto aus meinem Account ...",
+      "url": "https://learn.microsoft.com/de-de/answers/questions/5614705/wie-kann-ich-ein-veraltetes-schul-uni-konto-aus-me",
+      "snippet": "Das Org/Schul/Uni-Konto stammt vermutlich noch von meinem Studium oder einem früheren Arbeitgeber, auf dieses kann ich nicht …"
+    },
+    {
+      "title": "Entfernen oder Löschen eines E-Mail-Kontos aus dem klassischen Outlook …",
+      "url": "https://support.microsoft.com/de-de/outlook/remove-or-delete-an-email-account-from-classic-outlook-for-windows",
+      "snippet": "Durch das Entfernen eines E-Mail-Kontos aus dem klassischen Outlook für Windows wird das E-Mail-Konto nicht deaktiviert. Wenn …"
+    },
+    {
+      "title": "Geräteverbindung trennen | Zentrale Informatik | UZH",
+      "url": "https://www.zi.uzh.ch/de/support/Outlook-und-Kollaboration-Office-365/switch-accounts/disconnect-devices.html",
+      "snippet": "Öffnen Sie den Bereich Auf Arbeits- oder Schulkonto zugreifen. Wählen Sie das Konto aus, das Sie nicht mehr benötigen. Klicken Sie …"
+    },
+    {
+      "title": "Abmelden von Office | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/office/account-management/sign-out-of-office",
+      "snippet": "Wenn Sie sich von Ihren Microsoft 365- oder Office-Apps abmelden, können Sie die App von Diensten wie OneDrive trennen, Ihre …"
+    }
+  ]
+}

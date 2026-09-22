@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "FluidInference/nanojev-coreml",
+  "slug": "fluidinference-nanojev-coreml",
+  "author": "FluidInference",
+  "url": "https://huggingface.co/FluidInference/nanojev-coreml",
+  "created_at": "2026-09-22T20:50:31.000Z",
+  "updated_at": "2026-09-22T20:50:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "decision-model",
+    "conversion-recipe",
+    "base_model:C-Tianyu/NanoJev",
+    "base_model:finetune:C-Tianyu/NanoJev",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "C-Tianyu/NanoJev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Get All 5 Odette Endings in Genshin Impact",
+      "url": "https://storybillion.com/how-to-get-all-5-odette-endings-in-genshin-impact/",
+      "snippet": "Aug 28, 2026 · So, How Do You Get All 5 Odette Endings? To get all five Odette endings in Genshin Impact, you need to replay her …"
+    },
+    {
+      "title": "[7.0] Variations on Belyi and Chernyi. How to get all endings",
+      "url": "https://www.hoyolab.com/article/46273885",
+      "snippet": "To start the World Quest Series \"Variations on Belyi and Chernyi,\" you need to ascend Meeting Point: Korolevskiy Theater to level 2. …"
+    },
+    {
+      "title": "Genshin Impact White and Black Variations: How to Get All Odette's ...",
+      "url": "https://wotpack.ru/en/variatsii-belogo-i-chernogo-v-genshin-impact-kak-poluchit-vse-kontsovki-zadaniya-odetty/",
+      "snippet": "Aug 31, 2026 · How to schedule Odette and unlock all endings of her \"Variations of White and Black\" quest in Genshin Impact."
+    },
+    {
+      "title": "Variations of White and Black in Genshin Impact — All Endings",
+      "url": "https://showgamer.com/en/guides/5042-variacii-belogo-i-chjornogo-v-genshin-impakt",
+      "snippet": "Aug 15, 2026 · How to unlock all 5 Variations of White and Black endings in Genshin Impact, manage Odette's schedule, balance her …"
+    },
+    {
+      "title": "Genshin Impact Odette Meeting Point : Schedule, Choices & Endings",
+      "url": "https://storybillion.com/do-odette-meeting-point-choices-matter-in-genshin-impact-all-outcomes-explained/",
+      "snippet": "Aug 25, 2026 · Each ending represents a different outcome based on how you manage Odette’s schedule. You can check the …"
+    }
+  ]
+}

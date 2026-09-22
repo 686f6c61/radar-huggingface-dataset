@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/smollm2-1.7b-instruct-q4f16",
+  "slug": "skillsafe-ai-smollm2-1-7b-instruct-q4f16",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/smollm2-1.7b-instruct-q4f16",
+  "created_at": "2026-09-22T19:04:55.000Z",
+  "updated_at": "2026-09-22T19:05:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "skillsafe",
+    "browser",
+    "web-llm",
+    "text-generation",
+    "mlc",
+    "conversational",
+    "base_model:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 968653714,
+  "storage_human": "969 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=0ffe19cdea8b645f07fc0e11ebe365cd",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/",
+      "snippet": "Securely sign in to access your Microsoft account and manage emails, calendars, and other services efficiently."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=0ffe19cdea8b645f07fc0e11ebe365cd",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    }
+  ]
+}

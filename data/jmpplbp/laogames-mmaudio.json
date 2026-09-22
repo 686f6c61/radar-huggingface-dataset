@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "jmpplbp/laogames-mmaudio",
+  "slug": "jmpplbp-laogames-mmaudio",
+  "author": "jmpplbp",
+  "url": "https://huggingface.co/jmpplbp/laogames-mmaudio",
+  "created_at": "2026-09-22T12:34:04.000Z",
+  "updated_at": "2026-09-22T12:44:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "laogames",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5608548427,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Delete your Google Account",
+      "url": "https://support.google.com/accounts/answer/32046?hl=en",
+      "snippet": "Y ou ca n delete your Google Account at any time. If you change your mind, you might not be able to recover it after a certain amount …"
+    },
+    {
+      "title": "Manage your storage in Drive, Gmail & Photos - Google Help",
+      "url": "https://support.google.com/drive/answer/6374270?hl=en",
+      "snippet": "When your account reaches its storage limit, you won't be able to upload or create files in Drive, send or receive emails in Gmail, or …"
+    },
+    {
+      "title": "Come proteggere cartelle Google Drive con password - CCM",
+      "url": "https://it.ccm.net/faq/28992-come-proteggere-cartelle-google-drive-con-password",
+      "snippet": "Oct 28, 2022 · Ormai sempre pi&ugrave; spesso si presentano nuove minacce che ci obbligano a fare attenzione ai nostri file salvati …"
+    },
+    {
+      "title": "How to reset Opera browser: to default settings - CCM",
+      "url": "https://ccm.net/apps-sites/web/2303-reset-opera-browser-to-default-settings/",
+      "snippet": "Dec 8, 2022 · Opera is an internet software suite that handles internet-based tasks, like sending and receiving e-mails, website …"
+    },
+    {
+      "title": "Gmail: Mit einer anderen E-Mail-Adresse anmelden - CCM",
+      "url": "https://de.ccm.net/faq/14482-gmail-mit-einer-anderen-e-mail-adresse-anmelden",
+      "snippet": "Apr 15, 2022 · Die meisten verwenden heutzutage mehrere E-Mail-Adressen von verschiedenen E-Mail-Anbietern. Wenn Sie ein …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/mxbai-rerank-xsmall-v1",
+  "slug": "skillsafe-ai-mxbai-rerank-xsmall-v1",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/mxbai-rerank-xsmall-v1",
+  "created_at": "2026-09-22T20:42:43.000Z",
+  "updated_at": "2026-09-22T20:43:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "deberta-v2",
+    "text-classification",
+    "skillsafe",
+    "browser",
+    "text-ranking",
+    "import",
+    "base_model:mixedbread-ai/mxbai-rerank-xsmall-v1",
+    "base_model:quantized:mixedbread-ai/mxbai-rerank-xsmall-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284189709,
+  "storage_human": "284 MB",
+  "base_model": "mixedbread-ai/mxbai-rerank-xsmall-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "StudySmarter | Die Lernapp für Studenten & Schüler",
+      "url": "https://www.studysmarter.de/",
+      "snippet": "lll StudySmarter ist eine intelligente Lernapp für Studenten & Schüler. Bessere Noten durch mehr Struktur, Motivation und Effizienz. …"
+    },
+    {
+      "title": "StudySmarter",
+      "url": "https://app.studysmarter.de/",
+      "snippet": "Intelligent learning platform for students & pupils. Better grades through structure, motivation and efficiency. Register now!"
+    },
+    {
+      "title": "StudySmarter | The #1 learning app for university & school",
+      "url": "https://www.studysmarter.co.uk/",
+      "snippet": "StudySmarter is an intelligent learning app for students. Achieve your learning goals with more structure, motivation & efficiency. ⭐ …"
+    },
+    {
+      "title": "Studium - StudySmarter",
+      "url": "https://www.studysmarter.de/studium/",
+      "snippet": "StudySmarter ist deine all-in-one Lernapp für das Studium. Erstelle, entdecke und teile Zusammenfassungen, Karteikarten, Mind …"
+    },
+    {
+      "title": "StudySmarter: Lernen mit KI – Apps bei Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.studysmarter&hl=de",
+      "snippet": "Mit StudySmarter und KI werden aus deinen Notizen klare Lernzettel, Karteikarten und Zusammenfassungen. Die KI erklärt, wo du …"
+    }
+  ]
+}

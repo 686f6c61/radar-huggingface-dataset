@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yennguyen45/LilyMT-ancient-v3-web",
+  "slug": "yennguyen45-lilymt-ancient-v3-web",
+  "author": "yennguyen45",
+  "url": "https://huggingface.co/yennguyen45/LilyMT-ancient-v3-web",
+  "created_at": "2026-09-22T14:47:25.000Z",
+  "updated_at": "2026-09-22T14:50:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers.js",
+  "languages": [
+    "zh",
+    "vi"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "zh",
+    "vi",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70687469,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "جامعة القصيم | Qassim University",
+      "url": "https://qu.edu.sa/",
+      "snippet": "2 days ago · جامعة القصيم هي جامعة حكومية سعودية، تقدم برامج أكاديمية متنوعة في الطب والهندسة والعلوم، وتدعم التميز الأكاديمي لتحقيق رؤية السعودية 2030"
+    },
+    {
+      "title": "الكليات - جامعة القصيم",
+      "url": "https://qu.edu.sa/colleges/",
+      "snippet": "كليات جامعة القصيم تضم تخصصات وبرامج متنوعة في مختلف المجالات. تصفّح قائمة الكليات وروابطها المباشرة وتعرّف على التخصصات والقبول والخدمات الطلابية."
+    },
+    {
+      "title": "MyQu - بوابة الدخول الموحد | تسجيل الدخول",
+      "url": "https://qspark.qu.edu.sa/login",
+      "snippet": "تطبيق MyQU لجميع منسوبي جامعة القصيم بوابتك الرسمية لإدارة حياتك الجامعية بكل سهولة. من الجدول الدراسي والدرجات، إلى متابعة الحضور والخطة الدراسية والمكافآت، كل شيء في تجربة …"
+    },
+    {
+      "title": "جامعة القصيم",
+      "url": "https://jobs.qu.edu.sa/",
+      "snippet": "اهلاً بك في نظام التوظيف في جامعة القصيم تطمح جامعة القصيم في استقطاب افضل الكفائات في مختلف التخصصات، وذلك بتقديم افضل الخدمات مع الالتزام بالامانة والمصداقية."
+    },
+    {
+      "title": "جامعة القصيم - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9_%D8%A7%D9%84%D9%82%D8%B5%D9%8A%D9%85",
+      "snippet": "جامعة القصيم؛ هي جامعة سعودية حكومية تقع في منطقة القصيم بالمملكة العربية السعودية ، تأسست عام 2004 بعد دمج عدد من الكليات التي كانت تابعة لجامعة الملك سعود وجامعة الإمام محمد بن …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "baerquants/Kimi-K2.7-Code",
+  "slug": "baerquants-kimi-k2-7-code",
+  "author": "baerquants",
+  "url": "https://huggingface.co/baerquants/Kimi-K2.7-Code",
+  "created_at": "2026-09-22T21:05:14.000Z",
+  "updated_at": "2026-09-22T21:05:14.000Z",
+  "license": "modified-mit",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k25",
+    "feature-extraction",
+    "compressed-tensors",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1026879376368,
+  "parameters_human": "1026.88B",
+  "storage_bytes": 595204651032,
+  "storage_human": "595.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zentri-Peripherie-Winkelsatz - Mathepedia",
+      "url": "https://mathepedia.de/Zentri-Peripheri-Winkelsatz.html",
+      "snippet": "Satz 166P (Zentri-Peripherie-Winkelsatz) Jeder Zentriwinkel (in der gleichen Halbebene) über einem Kreisbogen ist doppelt so groß …"
+    },
+    {
+      "title": "Peripherie- und Zentriwinkel - Mathematik",
+      "url": "https://www.mathematik.ch/anwendungenmath/Peripherie_Zentriwinkel/",
+      "snippet": "Sie können den Scheitel P des Peripheriewinkels mit der Maus (auf dem Kreis) bewegen. Alternativ können Sie auch mit 'Step' die …"
+    },
+    {
+      "title": "Zentri-Peripheriewinkelsatz: Definition und Beispiele | Brainie",
+      "url": "https://www.brainie.ai/mathe/kreise/kreise-und-dreiecke/zentri-peripheriewinkelsatz/",
+      "snippet": "Apr 25, 2026 · Was ist der Zentri-Peripheriewinkelsatz? Der Zentri-Peripheriewinkelsatz besagt, dass der Zentriwinkel doppelt so …"
+    },
+    {
+      "title": "Zentri- und Peripheriewinkel: Definition und Konstruktion",
+      "url": "https://app.evulpo.com/de/ch/dashboard/lesson/mathe-sek-gymi-05ge-04-dreiecke-05-zentri-und-peripheriewinkel",
+      "snippet": "Auf evulpo findest Du Videos, Zusammenfassungen und Übungen, um Zentri- und Peripheriewinkel zu bestimmen und den …"
+    },
+    {
+      "title": "Peripherie- und Zentriwinkel - Learnattack",
+      "url": "https://learnattack.de/mathematik/peripherie-und-zentriwinkel",
+      "snippet": "Ziehe die korrekten Formulierungen für den Peripheriewinkelsatz und den Zentriwinkelsatz in die Felder. Greifbares Element 1 von 4. …"
+    }
+  ]
+}

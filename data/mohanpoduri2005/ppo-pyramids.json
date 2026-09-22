@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mohanpoduri2005/ppo-Pyramids",
+  "slug": "mohanpoduri2005-ppo-pyramids",
+  "author": "mohanpoduri2005",
+  "url": "https://huggingface.co/mohanpoduri2005/ppo-Pyramids",
+  "created_at": "2026-09-22T16:14:01.000Z",
+  "updated_at": "2026-09-22T16:14:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45,
+  "storage_human": "45 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schmetterlingsbuntbarsche und Garnelen zusammen halten?",
+      "url": "https://www.aquariumforum.de/t/schmetterlingsbuntbarsche-und-garnelen-zusammen-halten.1540555/",
+      "snippet": "Sep 10, 2020 · Hi ich habe in meinem 70l Becken 5 Rotscherengarnelen und möchte ein Pärchen Schmetterlingsbuntbarsche dazu …"
+    },
+    {
+      "title": "Garnelen von Garnelio - Aquariumforum.de",
+      "url": "https://www.aquariumforum.de/t/garnelen-von-garnelio.200755/",
+      "snippet": "May 29, 2010 · hi leute, habe letzte Woche Mittwoch 15 Amanogarnelen bei Garnelio bestellt. Am Monatg habe ich das Geld …"
+    },
+    {
+      "title": "Probleme mit Garnelio | Seite 11 - Aquariumforum.de",
+      "url": "https://www.aquariumforum.de/t/probleme-mit-garnelio.1368545/page-11",
+      "snippet": "Oct 14, 2020 · Auch wenn Garnelio selber da vielleicht nichts dafür kann, trotzdem gibt es jedes Mal wieder Ärger, wenn ich da …"
+    },
+    {
+      "title": "Bis 200l - zwergbuntbarsch mit garnelen - Aquariumforum.de",
+      "url": "https://www.aquariumforum.de/t/zwergbuntbarsch-mit-garnelen.153243/",
+      "snippet": "Jan 24, 2009 · hallo ich wollte mal fragen ob ich bei meinem zwergbuntbarsch paar in meinem 112l becken dabei auch ein paar …"
+    },
+    {
+      "title": "Probleme mit Garnelio | Seite 3 - Aquariumforum.de",
+      "url": "https://www.aquariumforum.de/t/probleme-mit-garnelio.1368545/page-3",
+      "snippet": "Jan 18, 2020 · Hallo zusammen, Das Thema hier ist zwar schon etwas älter, aber ich möchte Euch meine aktuelle Erfahrung mit …"
+    }
+  ]
+}

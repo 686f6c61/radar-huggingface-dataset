@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Tridex/model_diffusion_3cam_20K_22_09",
+  "slug": "tridex-model_diffusion_3cam_20k_22_09",
+  "author": "Tridex",
+  "url": "https://huggingface.co/Tridex/model_diffusion_3cam_20K_22_09",
+  "created_at": "2026-09-22T17:41:49.000Z",
+  "updated_at": "2026-09-22T17:42:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:Tridex/_20260922_140724",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 292717550,
+  "parameters_human": "292.7M",
+  "storage_bytes": 1170949936,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vardas Mindaugas – reikšmė, kilmė ir vardadienis | TavoVaikas.lt",
+      "url": "https://tavovaikas.lt/vaiku-vardai/vardas-mindaugas-reiksme-kilme-vardadienis-ir-istorija",
+      "snippet": "Dec 19, 2025 · Vardo Mindaugas reikšmė siejama su senąja lietuvių kalba. Jis sudarytas iš dviejų dalių: „daug-“ – daug, gausiai. …"
+    },
+    {
+      "title": "Vardas Mindaugas - kilmė, aprašymas, istorija ir vardadienis",
+      "url": "https://www.vardadienai.com/lit/vardas/mindaugas",
+      "snippet": "Mindaugas yra lietuviškas vardas, kilęs iš senovės baltų kalbos. Šis vardas turi gilias istorines šaknis ir svarbias reikšmes Lietuvos …"
+    },
+    {
+      "title": "Mindaugas - Visuotinė lietuvių enciklopedija",
+      "url": "https://www.vle.lt/straipsnis/mindaugas/",
+      "snippet": "Mindaugas, siekdamas suskaldyti priešų koaliciją ir atskirti nuo jos pavojingiausią priešą – Livonijos ordiną, 1251 pradžioje priėmė …"
+    },
+    {
+      "title": "Mindaugas – Vikipedija",
+      "url": "https://lt.wikipedia.org/wiki/Mindaugas",
+      "snippet": "Liepos 6 d., manoma Mindaugo vainikavimo Lietuvos karaliumi diena, yra Lietuvos Respublikos valstybinė šventė. Žinių apie …"
+    },
+    {
+      "title": "Mindaugas (vardas) – Vikipedija",
+      "url": "https://lt.wikipedia.org/wiki/Mindaugas_(vardas)",
+      "snippet": "Mindaugas – Lietuvos didysis kunigaikštis (~ 1236 – 1253 m.), taip pat pirmasis Lietuvos karalius (1253– 1263 m.)."
+    }
+  ]
+}

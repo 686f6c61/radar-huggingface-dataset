@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nz2212/tebebAIv2",
+  "slug": "nz2212-tebebaiv2",
+  "author": "nz2212",
+  "url": "https://huggingface.co/nz2212/tebebAIv2",
+  "created_at": "2026-09-22T16:10:40.000Z",
+  "updated_at": "2026-09-22T16:24:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1107408576,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Error: You haven't accessed the Google Play Store app on your device ...",
+      "url": "https://support.google.com/googleplay/answer/6178908?p=remote_install_error",
+      "snippet": "After you install an app, your phone or tablet links to your Google Account. Within a few minutes, you can use your computer to install …"
+    },
+    {
+      "title": "البحث عن تطبيق \"متجر Google Play\" - مساعدة Google Play",
+      "url": "https://support.google.com/googleplay/answer/190860?hl=ar",
+      "snippet": "إذا لم تكتمل التنزيلات من \"متجر Play\"، جرِّب الخطوات الواردة في لا يمكنني التنزيل من \"متجر Google Play\". إذا واجهتك مشكلة في أحد التطبيقات على جهازك، يمكنك التواصل مع مطوِّر التطبيقات …"
+    },
+    {
+      "title": "如何将已经安装的APP降级回旧版本 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/c35dbcb0163ef9c917fcbc0c.html",
+      "snippet": "Aug 23, 2019 · 如何将已经安装的APP降级回旧版本,手机软件不定时的会更新版本，增加新的功能或者解决一些软件运行过程中存在的 …"
+    },
+    {
+      "title": "如何在excel小数点后保留两位，而不是隐藏-百度经验",
+      "url": "https://jingyan.baidu.com/article/76a7e409dd3b5dfc3b6e1596.html",
+      "snippet": "Mar 5, 2015 · 看到了吗？只有两位数值了，现在给大家解释一下这个函数的用法，\"=ROUND (A1,2)\"，ROUND是EXCEL中的基本函 …"
+    },
+    {
+      "title": "Rechercher l'application Google Play Store",
+      "url": "https://support.google.com/googleplay/answer/190860?hl=fr",
+      "snippet": "Rechercher l'application Google Play Store Vous pouvez obtenir des applications, des jeux et du contenu numérique pour votre …"
+    }
+  ]
+}

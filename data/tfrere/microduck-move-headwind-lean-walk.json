@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tfrere/microduck-move-headwind-lean-walk",
+  "slug": "tfrere-microduck-move-headwind-lean-walk",
+  "author": "tfrere",
+  "url": "https://huggingface.co/tfrere/microduck-move-headwind-lean-walk",
+  "created_at": "2026-09-22T13:56:30.000Z",
+  "updated_at": "2026-09-22T13:56:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-academy-policy",
+    "microduck-policy",
+    "academy",
+    "family:velocity",
+    "kind:perpetual",
+    "tier:1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5889931,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "So I just recently applied to Focus Group Panel, which I ... - Reddit",
+      "url": "https://www.reddit.com/r/jobs/comments/qshvak/so_i_just_recently_applied_to_focus_group_panel/",
+      "snippet": "Nov 12, 2021 · So I just recently applied to Focus Group Panel, which I believe is a job scam I didn't give away any of my sensitive …"
+    },
+    {
+      "title": "Focussend营销自动化 - 知乎",
+      "url": "https://www.zhihu.com/org/focussend",
+      "snippet": "Sep 14, 2026 · 一个汽车零部件工厂的技术负责人，准备升级自动化装配线。 以前，他可能先去百度找供应商、翻官网、找联系方式。 …"
+    },
+    {
+      "title": "Weapon focus : r/Pathfinder_Kingmaker - Reddit",
+      "url": "https://www.reddit.com/r/Pathfinder_Kingmaker/comments/aclkj8/weapon_focus/",
+      "snippet": "Jan 4, 2019 · You could hold off on weapon focus until you get a sense of what you want, unless you are really interested in using the …"
+    },
+    {
+      "title": "相机 大光圈 f1.2、f1.4、f1.8、f2.8 的效果相差多少? - 知乎",
+      "url": "https://www.zhihu.com/question/50706271",
+      "snippet": "可以通过焦外和光斑看出光圈越大的虚化效果越明显，越来越有空气剥离感，不知道你有没有注意到，随着光圈变大光斑被机身卡口切 …"
+    },
+    {
+      "title": "Refroidisseur d'huile Focus - Focus - Ford - Forum Marques Automobile",
+      "url": "https://forum-auto.caradisiac.com/topic/120861-refroidisseur-dhuile-focus/",
+      "snippet": "Oct 19, 2009 · Moi aussi j'ai de graves problèmes avec Ford, ma focus tdci 100cv, il y a un an \" volant moteur à 64000km (2138€), …"
+    }
+  ]
+}

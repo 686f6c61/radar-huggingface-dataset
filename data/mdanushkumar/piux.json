@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "MDanushKumar/piuX",
+  "slug": "mdanushkumar-piux",
+  "author": "MDanushKumar",
+  "url": "https://huggingface.co/MDanushKumar/piuX",
+  "created_at": "2026-09-22T17:09:44.000Z",
+  "updated_at": "2026-09-22T17:38:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 6938011430,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speed Test by MyBroadband",
+      "url": "https://speedtest.mybroadband.co.za/",
+      "snippet": "Test your Internet connection quickly and accurately. Lightweight, easy-to-use, reliable and completely free."
+    },
+    {
+      "title": "MyBroadband – South Africa's biggest and best IT news website ...",
+      "url": "https://mybroadband.co.za/news/",
+      "snippet": "MyBroadband – South Africa's biggest and best IT news website, covering the latest international and local IT and tech news."
+    },
+    {
+      "title": "Rain 5G Home Internet speed test hits 620Mbps – MyBroadband",
+      "url": "https://mybroadband.co.za/news/5g/665582-rain-5g-home-internet-speed-test-hits-620mbps.html",
+      "snippet": "Apr 9, 2026 · Many users of Rain’s fixed-5G service are getting exceptionally fast speeds in 2026, an analysis by MyBroadband …"
+    },
+    {
+      "title": "MyBroadband Insights",
+      "url": "https://research.mybroadband.co.za/",
+      "snippet": "Speed Test App The MyBroadband Speed Test app is your go-to tool for testing internet performance with precision and ease. …"
+    },
+    {
+      "title": "MyBroadband - Company Press Releases",
+      "url": "https://companies.mybroadband.co.za/",
+      "snippet": "Company Press Releases – Sigfox South Africa Engages with Anthropic’s Model Hardware Standard to Bridge the Gap Between IoT …"
+    }
+  ]
+}

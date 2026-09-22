@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "MinThu11/burmese-disaster-classifier",
+  "slug": "minthu11-burmese-disaster-classifier",
+  "author": "MinThu11",
+  "url": "https://huggingface.co/MinThu11/burmese-disaster-classifier",
+  "created_at": "2026-09-22T14:48:04.000Z",
+  "updated_at": "2026-09-22T14:52:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "my"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "burmese",
+    "myanmar",
+    "disaster-response",
+    "social-media",
+    "my",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278046724,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129309344,
+  "storage_human": "1.1 GB",
+  "base_model": "xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hotmail – Outlook.com",
+      "url": "http://www.hotmail.com/?mkt=it-it",
+      "snippet": "Outlook.com è un servizio di posta elettronica personale e gratuito di Microsoft. Mantieni la Posta in arrivo sempre ordinata con …"
+    },
+    {
+      "title": "Accesso ad Outlook | Microsoft 365",
+      "url": "https://www.microsoft.com/it-it/microsoft-365/outlook/log-in?msockid=0155d9cebf6e6ae43aeace12be896baa",
+      "snippet": "Cosa è successo a Hotmail? Abbiamo riprogettato Hotmail, rilanciando il servizio con il nome di Outlook. Le cose cambiano, ma resta …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/?ui=it-IT&rs=US",
+      "snippet": "Outlook ... Outlook"
+    },
+    {
+      "title": "Come accedere a Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/it-it/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Hotmail è ora Outlook.com. Scopri come accedere a Outlook.com per usare l'account di posta elettronica Outlook, Hotmail, Live o MSN."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/mini/opxdeeplink/mail/inbox",
+      "snippet": "Access your email, calendar, and contacts with Outlook."
+    }
+  ]
+}

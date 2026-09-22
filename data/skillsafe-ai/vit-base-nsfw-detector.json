@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/vit-base-nsfw-detector",
+  "slug": "skillsafe-ai-vit-base-nsfw-detector",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/vit-base-nsfw-detector",
+  "created_at": "2026-09-22T20:43:19.000Z",
+  "updated_at": "2026-09-22T20:43:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "vit",
+    "image-classification",
+    "skillsafe",
+    "browser",
+    "import",
+    "base_model:AdamCodd/vit-base-nsfw-detector",
+    "base_model:quantized:AdamCodd/vit-base-nsfw-detector",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 433070029,
+  "storage_human": "433 MB",
+  "base_model": "AdamCodd/vit-base-nsfw-detector",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "GPT-6 Astra: A new generation of intelligence Research 28 min read Introducing ChatGPT Images 2.5 Product 6 min read GPT‑6 …"
+    },
+    {
+      "title": "ChatGPT - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ChatGPT",
+      "snippet": "ChatGPT accelerated the AI boom, an ongoing period marked by rapid investment and public attention toward the field of artificial …"
+    }
+  ]
+}

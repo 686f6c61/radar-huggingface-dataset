@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "itlrc/gpt2small",
+  "slug": "itlrc-gpt2small",
+  "author": "itlrc",
+  "url": "https://huggingface.co/itlrc/gpt2small",
+  "created_at": "2026-09-22T17:58:49.000Z",
+  "updated_at": "2026-09-22T17:58:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "фейсбук | Predpriemach.com - Форум за онлайн ...",
+      "url": "https://www.predpriemach.com/tags/fejsbuk/",
+      "snippet": "Jul 20, 2026 · Продавам фейсбук група с 55 хиляди члена, с над 97% българи, 82% са жени. Около 60% са хората между 25 и …"
+    },
+    {
+      "title": "фейсбук група | Predpriemach.com - Форум за ...",
+      "url": "https://www.predpriemach.com/tags/fejsbuk-grupa/",
+      "snippet": "Jul 13, 2026 · Продавам фейсбук група с 55 хиляди члена, с над 97% българи, 82% са жени. Около 60% са хората между 25 и …"
+    },
+    {
+      "title": "Кремъл иска обяснения: Apple изтри ...",
+      "url": "https://www.kaldata.com/it-%d0%bd%d0%be%d0%b2%d0%b8%d0%bd%d0%b8/%d0%ba%d1%80%d0%b5%d0%bc%d1%8a%d0%bb-%d0%b8%d1%81%d0%ba%d0%b0-%d0%be%d0%b1%d1%8f%d1%81%d0%bd%d0%b5%d0%bd%d0%b8%d1%8f-apple-%d0%b8%d0%b7%d1%82%d1%80%d0%b8-%d1%80%d1%83%d1%81%d0%ba%d0%b8%d1%82%d0%b5-684179.html",
+      "snippet": "Jun 25, 2026 · Кремъл иска обяснения: Apple изтри руските аналози на „Фейсбук“ и „Месиндъжър“, Москва плаши с тежки …"
+    },
+    {
+      "title": "Проблем със фейсбук - Facebook - проблеми ...",
+      "url": "https://www.kaldata.com/forums/topic/345719-%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC-%D1%81%D1%8A%D1%81-%D1%84%D0%B5%D0%B9%D1%81%D0%B1%D1%83%D0%BA/",
+      "snippet": "Mar 3, 2026 · Цитат Акаунтът е временно недостъпен. Акаунтът ви в момента е недостъпен заради проблем със сайта. …"
+    },
+    {
+      "title": "Télécharger aTube Catcher (gratuit) - CCM",
+      "url": "https://it.ccm.net/download/scaricare-2058-atube-catcher",
+      "snippet": "May 9, 2022 · aTube Catcher &egrave; un programma per scaricare video da siti di video sharing come Dailymotion, Vimeo, Yahoo, …"
+    }
+  ]
+}

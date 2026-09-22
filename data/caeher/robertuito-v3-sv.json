@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "caeher/robertuito-v3-sv",
+  "slug": "caeher-robertuito-v3-sv",
+  "author": "caeher",
+  "url": "https://huggingface.co/caeher/robertuito-v3-sv",
+  "created_at": "2026-09-22T14:45:13.000Z",
+  "updated_at": "2026-09-22T14:46:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "hate-speech-detection",
+    "offensive-language",
+    "spanish",
+    "el-salvador",
+    "social-media",
+    "es",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108790276,
+  "parameters_human": "108.8M",
+  "storage_bytes": 435190433,
+  "storage_human": "435 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "§ 110 InsO - Einzelnorm - Gesetze im Internet",
+      "url": "https://www.gesetze-im-internet.de/inso/__110.html",
+      "snippet": "(3) Der Mieter oder der Pächter kann gegen die Miet- oder Pachtforderung für den in Absatz 1 bezeichneten Zeitraum eine Forderung …"
+    },
+    {
+      "title": "§ 110 InsO - Schuldner als Vermieter oder Verpächter - dejure.org",
+      "url": "https://dejure.org/gesetze/InsO/110.html",
+      "snippet": "(2) 1 Eine Verfügung im Sinne des Absatzes 1 ist insbesondere die Einziehung der Miete oder Pacht. 2 Einer rechtsgeschäftlichen …"
+    },
+    {
+      "title": "§ 110 InsO Schuldner als Vermieter oder Verpächter Insolvenzordnung",
+      "url": "https://www.buzer.de/110_InsO.htm",
+      "snippet": "Oct 5, 1994 · Sie sehen die Vorschriften, die auf § 110 InsO verweisen. Die Liste ist unterteilt nach Zitaten in InsO selbst, …"
+    },
+    {
+      "title": "§ 110 InsO — Schuldner als Vermieter oder Verpächter | Jurafuchs …",
+      "url": "https://gesetze.jurafuchs.de/gesetz/inso/110-schuldner-als-vermieter-oder-verpaechter",
+      "snippet": "Sep 10, 2026 · § 110 InsO — Schuldner als Vermieter oder Verpächter. Volltext, Stand und verlinkte Jurafuchs-Fälle."
+    },
+    {
+      "title": "§ 110 InsO - Schuldner als Vermieter oder Verpächter",
+      "url": "https://www.juraforum.de/gesetze/inso/110-schuldner-als-vermieter-oder-verpaechter",
+      "snippet": "May 3, 2021 · Lesen Sie § 110 InsO kostenlos in der Gesetzessammlung von Juraforum.de mit über 6200 Gesetzen und Vorschriften."
+    }
+  ]
+}

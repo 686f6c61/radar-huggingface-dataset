@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ZachGarner/microduck-headstand-fold",
+  "slug": "zachgarner-microduck-headstand-fold",
+  "author": "ZachGarner",
+  "url": "https://huggingface.co/ZachGarner/microduck-headstand-fold",
+  "created_at": "2026-09-22T13:57:17.000Z",
+  "updated_at": "2026-09-22T13:57:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "mujoco",
+    "microduck",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5624973,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Direct line car insurance decline — MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/6014874/direct-line-car-insurance-decline",
+      "snippet": "Jun 17, 2019 · The cheapest quote I got was from Direct line. I also checked to see how much the policy would be at my current …"
+    },
+    {
+      "title": "Direct Line not offering renewal on car - MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/6313341/direct-line-not-offering-renewal-on-car",
+      "snippet": "Nov 18, 2021 · My Wife's car insurance is due for renewal and she received a letter from Direct Line saying they won't be offering to …"
+    },
+    {
+      "title": "Auto-renewal issue with Direct Line - MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/6488020/auto-renewal-issue-with-direct-line",
+      "snippet": "Nov 24, 2023 · I have been a Direct Line car insurance customer for years, insurance set to auto-renew, never been an issue."
+    },
+    {
+      "title": "Direct Line vs Admiral - MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/2333977/direct-line-vs-admiral",
+      "snippet": "Mar 12, 2010 · So, who would win in a fight to the death? Seriously though, I'm picking up my new car next week and am about to …"
+    },
+    {
+      "title": "Direct line insurance terrible customer service and terrible complaints ...",
+      "url": "https://forums.moneysavingexpert.com/discussion/6240212/direct-line-insurance-terrible-customer-service-and-terrible-complaints-procedure",
+      "snippet": "Feb 9, 2021 · how many other people have become a victim of DIRECTLINE INSURANCE customer service and an even worse …"
+    }
+  ]
+}

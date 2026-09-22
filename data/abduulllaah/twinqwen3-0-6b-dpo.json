@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Abduulllaah/TwinQwen3-0.6B-DPO",
+  "slug": "abduulllaah-twinqwen3-0-6b-dpo",
+  "author": "Abduulllaah",
+  "url": "https://huggingface.co/Abduulllaah/TwinQwen3-0.6B-DPO",
+  "created_at": "2026-09-22T12:28:26.000Z",
+  "updated_at": "2026-09-22T12:29:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Abduulllaah/TwinQwen3-0.6B",
+    "base_model:finetune:Abduulllaah/TwinQwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203558020,
+  "storage_human": "1.2 GB",
+  "base_model": "Abduulllaah/TwinQwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DOTA IMBA 命令大全 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/348801255.html",
+      "snippet": "在RA/SS/AK模式下不起作用。 -sa 随机属性模式 英雄的起始三围总和为60，成长总和为6。 -bb 防偷塔模式 该模式下，当你偷袭建筑 …"
+    },
+    {
+      "title": "SUS304和AISI304具体区别？_百度知道",
+      "url": "https://zhidao.baidu.com/question/574158265.html",
+      "snippet": "SUS304和AISI304具体区别？一、指代不同1、SUS304：不锈钢中常见的一种材质，密度为7.93 g/cm3，业内也叫做18/8不锈钢。2 …"
+    },
+    {
+      "title": "有那些可爱或沙雕的游戏ID? - 知乎",
+      "url": "https://www.zhihu.com/question/385265745",
+      "snippet": "司马玩懿 慈母守中线 罗密欧与猪过夜 87岁拄拐上分 你的爸爸为什么 别骂了在练了 求你别打美女了 妲你己己 你击倒了“你憨厚的爸爸” …"
+    },
+    {
+      "title": "德文为什么要同时使用字母组合 ss 与字母 ß？ - 知乎",
+      "url": "https://www.zhihu.com/question/292832428",
+      "snippet": "按照前面的规则，那应该分别写为Mase，Masse和Ma?e，在第三个词上犯难了，辅音写s、ss或z都不合适，都不符合规则。 怎么办 …"
+    },
+    {
+      "title": "电脑机箱后面板的MIC、SS-OUT、CS-OUT、RS-OUT、L-OUT、L-IN的 …",
+      "url": "https://zhidao.baidu.com/question/132234206.html",
+      "snippet": "电脑机箱后面板的MIC、SS-OUT、CS-OUT、RS-OUT、L-OUT、L-IN的意思？1、MIC：麦克风，用来接话筒，颜色一般是红色或者 …"
+    }
+  ]
+}

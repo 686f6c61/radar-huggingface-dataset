@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "longtimedevs/TurboCat",
+  "slug": "longtimedevs-turbocat",
+  "author": "longtimedevs",
+  "url": "https://huggingface.co/longtimedevs/TurboCat",
+  "created_at": "2026-09-22T17:31:53.000Z",
+  "updated_at": "2026-09-22T17:32:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13425241,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FMRSP ePorodilje 2026",
+      "url": "https://eporodilje.fmrsp.gov.ba/",
+      "snippet": "Da li je vaše dijete rođeno u 2026. godini? / Je li vaše dijete rođeno u 2026. godini?"
+    },
+    {
+      "title": "Federalno Ministarstvo Rada i Socijalne Politike",
+      "url": "https://fmrsp.gov.ba/otvorena-aplikacija-za-prijave-porodilja-za-jednokratnu-podrsku-novorodenoj-djeci-u-2025.-godini",
+      "snippet": "Federalno ministarstvo rada i socijalne politike danas je otvorilo online aplikaciju za podnošenje prijava za jednokratnu novčanu …"
+    },
+    {
+      "title": "Nova online aplikacija za porodilje u FBiH - federalna.ba",
+      "url": "https://federalna.ba/nova-online-aplikacija-za-porodilje-u-fbih-nzlcq",
+      "snippet": "Apr 12, 2025 · Federalno ministarstvo rada i socijalne politike pokrenulo je online aplikaciju za podnošenje zahtjeva za jednokratnu …"
+    },
+    {
+      "title": "Link za aplikaciju E-porodilja,prijave za jednokratnu podršku rodiljama ...",
+      "url": "https://radioljubuski.ba/index.php/2024/05/30/link-za-aplikaciju-e-porodiljaprijave-za-jednokratnu-podrsku-porodiljama-za-2024-godinu-od-1000-km/",
+      "snippet": "May 30, 2024 · U sjedištu Vlade Federacije BiH u Sarajevu danas je održana konferencija za medije na kojoj je najavljeno otvaranje …"
+    },
+    {
+      "title": "Vlada Federacije Bosne i Hercegovine | Ministar Delić: S ponosom ...",
+      "url": "https://fbihvlada.gov.ba/bs/ministar-delic-s-ponosom-predstavljamo-aplikaciju-e-porodilja-koja-omogucava-online-podnosenje-zahtjeva-put-ka-laksem-ostvarivanju-prava",
+      "snippet": "Apr 23, 2024 · Danas je predstavljena i aplikacija e-Porodilja koja je dizajnirana u svrhu realiziranja jednokratne podrške porodiljama …"
+    }
+  ]
+}

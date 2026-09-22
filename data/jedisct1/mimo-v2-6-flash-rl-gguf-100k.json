@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "jedisct1/MiMo-V2.6-Flash-RL-GGUF-100K",
+  "slug": "jedisct1-mimo-v2-6-flash-rl-gguf-100k",
+  "author": "jedisct1",
+  "url": "https://huggingface.co/jedisct1/MiMo-V2.6-Flash-RL-GGUF-100K",
+  "created_at": "2026-09-22T18:58:01.000Z",
+  "updated_at": "2026-09-22T18:58:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "lm-studio",
+    "text-generation",
+    "code",
+    "coding",
+    "tool-calling",
+    "agent",
+    "mixture-of-experts",
+    "long-context",
+    "en",
+    "zh",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us - Microsoft Support",
+      "url": "https://support.microsoft.com/en-gb/contactus",
+      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Microsoft Copilot Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/microsoft-copilot/blog/microsoft-copilot-blog",
+      "snippet": "Built for business: How Microsoft 365 Copilot keeps you in the flow of legal work Now the LegalZoom agent works inside Microsoft …"
+    },
+    {
+      "title": "Sign in to your account - techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation."
+    },
+    {
+      "title": "Mettre à jour les pilotes via Gestionnaire de périphériques dans ...",
+      "url": "https://support.microsoft.com/fr-fr/windows/mettre-%C3%A0-jour-les-pilotes-via-gestionnaire-de-p%C3%A9riph%C3%A9riques-dans-windows-ec62f46c-ff14-c91d-eead-d7126dc1f7b6",
+      "snippet": "Découvrez comment mettre à jour ou réinstaller des pilotes dans Windows à l’aide de Gestionnaire de périphériques."
+    }
+  ]
+}

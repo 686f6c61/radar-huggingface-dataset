@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/realesr-animevideov3",
+  "slug": "skillsafe-ai-realesr-animevideov3",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/realesr-animevideov3",
+  "created_at": "2026-09-22T18:59:26.000Z",
+  "updated_at": "2026-09-22T18:59:31.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "skillsafe",
+    "browser",
+    "onnxruntime-web",
+    "image-super-resolution",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4582243,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thule Subsola side pack | Thule | United Kingdom",
+      "url": "https://www.thule.com/en-gb/rv-tents-and-panels/rv-panels/thule-subsola-side-pack-200m-_-310213",
+      "snippet": "Thule Subsola side pack - Create your ideal outdoor living area with the modular Thule Subsola panel packs, designed to provide …"
+    },
+    {
+      "title": "Thule Subsola Side Pack - For Vans, Motorhomes & Caravans",
+      "url": "https://www.perfectawnings.co.uk/thule-subsola-side-pack",
+      "snippet": "The Thule Subsola range consists of modern, modular triangular panels to extend your living space whilst travelling. These panels …"
+    },
+    {
+      "title": "Thule Subsola Side Pack | Innovative Panels for Small Vans",
+      "url": "https://www.roseawnings.co.uk/thule-subsola-side-pack/",
+      "snippet": "Thule Subsola Side Pack designed exclusively for smaller vans with an installed Thule awning. Increase both your living area and …"
+    },
+    {
+      "title": "Thule Subsola Side Pack - 200 - obelink.nl",
+      "url": "https://www.obelink.nl/thule-subsola-side-pack-200-754369.html?msockid=3e4f42fded1d6add3f8d5521ec2a6bd1",
+      "snippet": "Met de Thule Subsola Side Pack - 200 breid je de ruimte van de luifel van jouw busje nog verder uit en geniet je meer van je privacy. …"
+    },
+    {
+      "title": "Thule Subsola Side Pack - tccservices.co.uk",
+      "url": "https://tccservices.co.uk/products/thule-subsola-side-pack",
+      "snippet": "Whether you want to block the low evening sun, gain privacy at a busy campsite, or create a sheltered area for gear storage, this kit …"
+    }
+  ]
+}

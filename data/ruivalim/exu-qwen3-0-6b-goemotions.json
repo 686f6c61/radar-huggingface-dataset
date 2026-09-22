@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Ruivalim/exu-qwen3-0.6b-goemotions",
+  "slug": "ruivalim-exu-qwen3-0-6b-goemotions",
+  "author": "Ruivalim",
+  "url": "https://huggingface.co/Ruivalim/exu-qwen3-0.6b-goemotions",
+  "created_at": "2026-09-22T17:24:34.000Z",
+  "updated_at": "2026-09-22T17:26:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "exu",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "exu",
+    "safetensors",
+    "calibrated-decisions",
+    "emotion",
+    "text-classification",
+    "proper-scoring-rule",
+    "en",
+    "dataset:google-research-datasets/go_emotions",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596052993,
+  "parameters_human": "596.1M",
+  "storage_bytes": 2384248492,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Retina-Implantat – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Retina-Implantat",
+      "snippet": "Retina-Implantate sind Sehprothesen für stark sehbehinderte oder blinde Menschen, deren Rezeptorzellen der Netzhaut (Retina) …"
+    },
+    {
+      "title": "SING IMT, das neue Augen-Implantat von Samsara Vision",
+      "url": "https://augenklinik-sulzbach.de/behandlungsspektrum/sing-imt-das-neue-augen-implantat-von-samsara-vision",
+      "snippet": "Für bestimmte Formen der AMD gibt es inzwischen moderne Medikamente, die den Krankheitsverlauf aufhalten können. Doch was, …"
+    },
+    {
+      "title": "Zahnimplantate - Infos, Ablauf & Kosten | info Medizin",
+      "url": "https://www.infomedizin.de/behandlungsgrundlagen/zahnimplantate/",
+      "snippet": "Eine gangbare Alternative zu dieser Form des Zahnersatzes ist das Zahnimplantat. Einem natürlichen Zahn sehr ähnlich, wird das …"
+    },
+    {
+      "title": "Retina-Implantat - Behandlung, Wirkung & Risiken | MedLexi.de",
+      "url": "https://medlexi.de/Retina-Implantat",
+      "snippet": "Retina-Implantate können bei stark sehbehinderten oder blinden Menschen bis zu einem gewissen Grad die Funktion der durch …"
+    },
+    {
+      "title": "Zahnimplantat: Ablauf und Heilungsdauer – Mensch und Zahn",
+      "url": "https://mensch-und-zahn.de/zahnersatz-und-implantate/zahnimplantat-ablauf/",
+      "snippet": "Jul 29, 2025 · Die Kosten für ein Zahnimplantat können stark variieren, abhängig von der Komplexität der Behandlung und der …"
+    }
+  ]
+}

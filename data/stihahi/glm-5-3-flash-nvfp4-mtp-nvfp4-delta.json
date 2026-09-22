@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "stihahi/GLM-5.3-Flash-NVFP4-mtp-nvfp4-delta",
+  "slug": "stihahi-glm-5-3-flash-nvfp4-mtp-nvfp4-delta",
+  "author": "stihahi",
+  "url": "https://huggingface.co/stihahi/GLM-5.3-Flash-NVFP4-mtp-nvfp4-delta",
+  "created_at": "2026-09-22T15:58:29.000Z",
+  "updated_at": "2026-09-22T16:02:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "GLM-5",
+    "NVFP4",
+    "ModelOpt",
+    "MTP",
+    "speculative-decoding",
+    "dgx-spark",
+    "vllm",
+    "base_model:nvidia/GLM-5.3-Flash-NVFP4",
+    "base_model:quantized:nvidia/GLM-5.3-Flash-NVFP4",
+    "license:mit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16435359468,
+  "storage_human": "16.4 GB",
+  "base_model": "nvidia/GLM-5.3-Flash-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Webcam | Bregenzer Festspiele",
+      "url": "https://bregenzerfestspiele.com/de/webcam",
+      "snippet": "Jul 22, 2026 · Seien Sie rund um die Uhr unser Gast! Unsere Webcam liefert alle zwei Minuten ein aktuelles Bild der Seebühne mit …"
+    },
+    {
+      "title": "Webcam Seebühne - Festspielhaus Bregenz",
+      "url": "https://www.festspielhausbregenz.com/besucherinfo/webcam/",
+      "snippet": "Werfen Sie einen Blick auf die Seebühne Bregenz und lassen Sie sich überraschen! Unsere Webcam liefert Ihnen alle zwei Minuten …"
+    },
+    {
+      "title": "Webcam | Bregenzer Festspiele",
+      "url": "https://bregenzerfestspiele.com/en/webcam",
+      "snippet": "Jul 22, 2026 · The musical direction is in the hands of Kirill Karabits and Pietro Rizzo, both making their debut at the Bregenzer …"
+    },
+    {
+      "title": "Webcam Seebühne Bregenz",
+      "url": "https://www.festspielhausbregenz.com/en/your-visit/webcam/",
+      "snippet": "Discover the Seebühne Bregenz and let yourself be inspired! With our webcam delivering real-time updates every two minutes, you …"
+    },
+    {
+      "title": "Webcam Bregenz-Seebühne - 406m - Wetterring.at",
+      "url": "https://wetterring.at/webcams/-webcam/bregenz-seebuehne",
+      "snippet": "Der Wetterring bietet genaue Wetterprognosen, Messwerte und Webcams aus Vorarlberg und der Umgebung. Unsere Live …"
+    }
+  ]
+}

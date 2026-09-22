@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jmpplbp/laogames-qwen",
+  "slug": "jmpplbp-laogames-qwen",
+  "author": "jmpplbp",
+  "url": "https://huggingface.co/jmpplbp/laogames-qwen",
+  "created_at": "2026-09-22T12:33:47.000Z",
+  "updated_at": "2026-09-22T12:44:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "comfyui",
+    "laogames",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29078786568,
+  "storage_human": "29.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IASC – Malta Fixtures, Results & Tables",
+      "url": "https://stats.maltafootball.info/team/iasc",
+      "snippet": "New Malta National Team adidas kits available for pre-order Three-year contract to new coach Luciano Santana part of Birzebbuga …"
+    },
+    {
+      "title": "INTER AMATEUR SOCCER COMPETITION",
+      "url": "http://iascmalta.com/fixtures_and_results",
+      "snippet": "Aug 22, 2024 · INTER AMATEUR SOCCER COMPETITION (Founded 1959) IASC Website » Forms, Fixtures and Results"
+    },
+    {
+      "title": "Burmarrad A.F.C - Facebook",
+      "url": "https://www.facebook.com/p/Burmarrad-AFC-61550345785180/",
+      "snippet": "Jul 30, 2026 · KHS joined another exciting project offering amazing experience to the players to meet a true football legend Danilo …"
+    },
+    {
+      "title": "IASC Malta | Tal-Pietà - Facebook",
+      "url": "https://www.facebook.com/p/IASC-Malta-100063660997636/",
+      "snippet": "Aug 25, 2026 · IASC Malta, Tal-Pieta. 2,318 likes · 1 talking about this · 1 was here. Welcome to IASC An MFA member association …"
+    },
+    {
+      "title": "IASC Fixtures League 2024/5 - iascmalta.com",
+      "url": "http://iascmalta.com/pdf/IASC_League_Fixtures_2024-25_WEB_1.pdf",
+      "snippet": "IASC Fixtures League 2024/5"
+    }
+  ]
+}

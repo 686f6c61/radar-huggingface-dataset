@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "NicholasHG25/medbot-indobert-final",
+  "slug": "nicholashg25-medbot-indobert-final",
+  "author": "NicholasHG25",
+  "url": "https://huggingface.co/NicholasHG25/medbot-indobert-final",
+  "created_at": "2026-09-22T13:11:20.000Z",
+  "updated_at": "2026-09-22T14:01:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124449803,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497822756,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RockShox Federgabel online kaufen - Top Preise | BIKE24",
+      "url": "https://www.bike24.de/marken/rockshox",
+      "snippet": "Egal ob 26, 27,5 (650B), 29 oder 28 Zoll am Gravel Bike, das umfassende RockShox Gabel-Portfolio lässt keine Wünsche offen: Für …"
+    },
+    {
+      "title": "RockShox Fahrradgabel (2026) zum Bestpreis | idealo.de",
+      "url": "https://www.idealo.de/preisvergleich/ProductCategory/12292F2121990.html?msockid=03a3988024d36fa918508f5c25946ebe",
+      "snippet": "Für alle Rock Shox -Gabeln gilt, dass die Modelle der Preisklasse entsprechend hochwertig sind. Die Bedienung ist dank gravierter …"
+    },
+    {
+      "title": "RockShox Federgabeln günstig kaufen | Bike-Discount",
+      "url": "https://www.bike-discount.de/de/rockshox/federgabeln",
+      "snippet": "Diese Marke ist ganz klar die Benchmark für Federgabeln im Mountainbikesport, von Cross Country bis Downhill. Die Amerikaner …"
+    },
+    {
+      "title": "RockShox | Federgabeln & Dämpfer im Bike-Discount Shop",
+      "url": "https://www.bike-discount.de/de/rockshox",
+      "snippet": "Für Trail-Fahrer empfiehlt RockShox unter anderem den Einsatz von Pike oder Revelation Gabeln mit Federwegen zwischen 130 und …"
+    },
+    {
+      "title": "Rock Shox Gabel | Preisvergleich bei idealo.de",
+      "url": "https://www.idealo.de/preisvergleich/Liste/116229000/rock-shox-gabel.html?msockid=03a3988024d36fa918508f5c25946ebe",
+      "snippet": "11.575 Angebote zu Rock Shox Gabel im Fahrradgabeln Preisvergleich. Bei idealo.de günstige Preise für Rock Shox Gabel …"
+    }
+  ]
+}

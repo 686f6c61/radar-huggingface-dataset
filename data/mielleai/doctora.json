@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "MielleAI/Doctora",
+  "slug": "mielleai-doctora",
+  "author": "MielleAI",
+  "url": "https://huggingface.co/MielleAI/Doctora",
+  "created_at": "2026-09-16T19:21:23.000Z",
+  "updated_at": "2026-09-16T19:21:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-17T02:53:43.711Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iPhone 18 Series (Pro/Pro Max) giao đúng hẹn - đúng giá",
+      "url": "https://cellphones.com.vn/mobile/apple/iphone-18.html",
+      "snippet": "Sep 9, 2026 · Giá iPhone 18 Series chính hãng dao động từ 38.99tr đến 41.99tr, có hàng từ 18/9 | Mua Apple iPhone 18 ra mắt 2026 …"
+    },
+    {
+      "title": "So sánh Chatgpt Plus vs Pro: Đâu là sự lựa chọn tối ưu nhất cho bạn?",
+      "url": "https://cellphones.com.vn/sforum/chatgpt-plus-vs-pro",
+      "snippet": "Jun 8, 2026 · So sánh chi tiết Chatgpt Plus vs Pro. Nên chọn gói nâng cấp nào phù hợp nhất cho từng người? Cùng Sforum khám …"
+    },
+    {
+      "title": "Tuyển dụng - CellphoneS",
+      "url": "https://tuyendung.cellphones.com.vn/404",
+      "snippet": "Tuyển dụng Trang chủ"
+    },
+    {
+      "title": "Tổng hợp 18 prompt ứng dụng hữu ý với ChatGPT Image 2.0",
+      "url": "https://cellphones.com.vn/sforum/18-prompt-ung-dung-huu-y-voi-chatgpt-image-2-0",
+      "snippet": "Apr 26, 2026 · ChatGPT Image 2.0 đang thay đổi cách chúng ta sản xuất nội dung hình ảnh từ quảng cáo thương mại, storyboard …"
+    },
+    {
+      "title": "ChatGPT bị lag, load chậm: Nguyên nhân và các xử lý nhanh",
+      "url": "https://cellphones.com.vn/sforum/chatgpt-bi-lag",
+      "snippet": "Apr 23, 2026 · Tại sao ChatGPT bị lag? Các nguyên nhân phổ biến Nguyên nhân tại sao ChatGPT bị lag, chậm thường do kết nối …"
+    }
+  ]
+}

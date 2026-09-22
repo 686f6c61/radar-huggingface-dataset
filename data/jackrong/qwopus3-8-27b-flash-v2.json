@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "Jackrong/Qwopus3.8-27B-Flash-V2",
+  "slug": "jackrong-qwopus3-8-27b-flash-v2",
+  "author": "Jackrong",
+  "url": "https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2",
+  "created_at": "2026-09-15T02:05:17.000Z",
+  "updated_at": "2026-09-21T16:39:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "vision",
+    "multimodal",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "text-generation",
+    "qwen3",
+    "qwen",
+    "27b",
+    "fine-tuned",
+    "instruction-tuned",
+    "reasoning",
+    "agent",
+    "agentic",
+    "tool-use",
+    "function-calling",
+    "code-generation",
+    "mtp",
+    "speculative-decoding",
+    "local-inference",
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash",
+    "base_model:finetune:Jackrong/Qwopus3.8-27B-Flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 59,
+  "trending_score": 15,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996119,
+  "storage_human": "55.6 GB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "WhatsApp | Messages et appels privés, gratuits, sûrs et fiables",
+      "url": "https://www.whatsapp.com/?lang=fr",
+      "snippet": "Utilisez l’application WhatsApp Messenger pour rester en contact avec vos proches. WhatsApp permet d’envoyer des messages et …"
+    },
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. …"
+    },
+    {
+      "title": "WhatsApp Messenger - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.whatsapp&hl=en",
+      "snippet": "WhatsApp from Meta is a FREE messaging and video calling app. It’s used by over 2B people in more than 180 countries. It’s simple, …"
+    },
+    {
+      "title": "HOUSAB - WhatsApp",
+      "url": "https://wa.me/",
+      "snippet": "Hosted by WhatsApp 2026 © WhatsApp LLC Privacy & Terms"
+    }
+  ]
+}

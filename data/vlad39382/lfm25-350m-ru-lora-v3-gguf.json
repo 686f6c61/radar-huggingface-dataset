@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Vlad39382/lfm25-350m-ru-lora-v3-gguf",
+  "slug": "vlad39382-lfm25-350m-ru-lora-v3-gguf",
+  "author": "Vlad39382",
+  "url": "https://huggingface.co/Vlad39382/lfm25-350m-ru-lora-v3-gguf",
+  "created_at": "2026-09-22T18:18:25.000Z",
+  "updated_at": "2026-09-22T18:18:50.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "lora",
+    "on-device",
+    "russian",
+    "ru",
+    "base_model:LiquidAI/LFM2.5-350M",
+    "base_model:adapter:LiquidAI/LFM2.5-350M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 229314528,
+  "storage_human": "229 MB",
+  "base_model": "LiquidAI/LFM2.5-350M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Velocímetro Online | Medição GPS de Velocidade Grátis",
+      "url": "https://speedometer.cc/pt/",
+      "snippet": "Verifique sua velocidade online com nosso velocímetro GPS gratuito. Meça velocidade em tempo real em km/h ou mph para carro, …"
+    },
+    {
+      "title": "Velocimetro digital carro - Mercado Livre",
+      "url": "https://lista.mercadolivre.com.br/velocimetro-digital-carro",
+      "snippet": "Frete grátis no dia Compre já Velocimetro Digital Carro parcelado sem juros! Saiba mais sobre nossas incríveis ofertas e promoções …"
+    },
+    {
+      "title": "Velocímetro online | Verifique sua velocidade em tempo real em km / …",
+      "url": "https://onlinecompass.app/pt/speedometer/",
+      "snippet": "O velocímetro online mede e exibe a velocidade instantânea de um veículo em km / he MPH usando o GPS do telefone sem …"
+    },
+    {
+      "title": "Velocimetro carro - Mercado Livre",
+      "url": "https://lista.mercadolivre.com.br/velocimetro-carro",
+      "snippet": "Velocímetro Digital Universal Para Motocicletas Cafe. O frete grátis está sujeito ao peso, preço e distância do envio. Frete grátis no …"
+    },
+    {
+      "title": "Testar o velocímetro do carro por GPS · Grátis e sem app",
+      "url": "https://gpsspeedometer.io/pt-br/car-speed-test/",
+      "snippet": "May 7, 2026 · Descubra em dez minutos quanto o velocímetro do seu carro adianta. Teste grátis por GPS, no navegador, sem app, …"
+    }
+  ]
+}

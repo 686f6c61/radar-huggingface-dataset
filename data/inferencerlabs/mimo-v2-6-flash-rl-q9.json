@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "inferencerlabs/MiMo-V2.6-Flash-RL-Q9",
+  "slug": "inferencerlabs-mimo-v2-6-flash-rl-q9",
+  "author": "inferencerlabs",
+  "url": "https://huggingface.co/inferencerlabs/MiMo-V2.6-Flash-RL-Q9",
+  "created_at": "2026-09-22T14:55:32.000Z",
+  "updated_at": "2026-09-22T15:05:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mimo_v2",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "base_model:finetune:XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1884457525,
+  "storage_human": "1.9 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aller à l'Aéroport Charles de Gaulle en RER B – Paris Aéroport",
+      "url": "https://www.parisaeroport.fr/fr/passagers/transports-parking/transports-publics-paris/rer-b/cdg",
+      "snippet": "Le RER B circule de 4h50 à 23h50 depuis la gare CDG 2 TGV. • Le RER B permet également de relier l'aéroport CDG à l'aéroport …"
+    },
+    {
+      "title": "RER ligne B : plan, arrêts et horaires en temps réel",
+      "url": "https://www.bonjour-ratp.fr/lignes-rer/ligne-b/",
+      "snippet": "Ligne b : plans, horaires, actualité, info trafic, services : découvrez toutes les informations sur votre ligne"
+    },
+    {
+      "title": "Horaires RER B de Antony à Aéroport Charles de Gaulle 2",
+      "url": "https://www.horaires-de-trains.fr/horaires_rerb-Antony-Aeroport_Charles_de_Gaulle_2_Tgv.html",
+      "snippet": "Horaires du RER B de Antony à Aéroport Charles de Gaulle 2: retards de dernière minute, nombre de correspondances, durée des …"
+    },
+    {
+      "title": "RER B : accéder à l'aéroport Roisy CDG | Bonjour RATP",
+      "url": "https://www.bonjour-ratp.fr/aeroports/roissy-charles-de-gaulle/acces/rer/",
+      "snippet": "Rejoignez facilement l'aéroport de Paris Charles de Gaulle en RER B grâce à nos informations pratiques. Le trajet entre Paris et …"
+    },
+    {
+      "title": "RER B Roissy Paris-CDG : Horaires, Tarifs et Accès",
+      "url": "https://cdgfacile.com/acces-transports-paris-cdg/rer-b/",
+      "snippet": "Le RER B relie l'aéroport Roissy Charles de Gaulle (CDG) au centre de Paris, notamment Gare du Nord, Châtelet-Les Halles et Saint …"
+    }
+  ]
+}

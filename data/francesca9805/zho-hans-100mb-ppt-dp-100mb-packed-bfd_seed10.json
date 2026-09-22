@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfd_seed10",
+  "slug": "francesca9805-zho-hans-100mb-ppt-dp-100mb-packed-bfd_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfd_seed10",
+  "created_at": "2026-09-22T16:04:52.000Z",
+  "updated_at": "2026-09-22T16:08:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/zho_hans_100mb",
+    "base_model:finetune:goldfish-models/zho_hans_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 250621138,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/zho_hans_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Organisation événement, service, lieu événementiel | GL events",
+      "url": "https://www.gl-events.com/fr",
+      "snippet": "Présent dans plus de 20 pays, fort de plus de 6 000 collaborateurs et structuré autour de trois pôles complémentaires Live, …"
+    },
+    {
+      "title": "Agenda | GL events",
+      "url": "https://www.gl-events.com/fr/agenda",
+      "snippet": "4 days ago · au 5 octobre 2026 FRANCE - METZ Parc des Expositions de Metz Un site du réseau GL events Culture, Divertissement …"
+    },
+    {
+      "title": "GL EVENTS EXHIBITIONS à Casseneuil (adresse, téléphone)",
+      "url": "https://services.e-pro.fr/lot-et-garonne/gl-events-exhibitions_f3478311",
+      "snippet": "Cette page présente une synthèse des informations officielles publiques sur la société Gl Events Exhibitions située au Lieu Dit …"
+    },
+    {
+      "title": "Un besoin ? Contactez-nous | GL events Agencement",
+      "url": "https://www.gl-events-agencement.com/fr/contactez-nous-GL-events-Agencement",
+      "snippet": "Vous avez un projet ? GL events vous accompagne dans tous vos projets d’aménagement intérieur pour que les concepts des …"
+    },
+    {
+      "title": "Nos agences GL events Audiovisual : organisateur d'événements",
+      "url": "https://www.gl-events-audiovisual-and-power.com/fr/a-propos/nos-agences",
+      "snippet": "Trouvez votre agence pour la location et l'installation de matériel audiovisuel & électrique professionnel pour salon, événement …"
+    }
+  ]
+}

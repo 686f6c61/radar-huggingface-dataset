@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "happybrian/fast-brain-summary-adapter",
+  "slug": "happybrian-fast-brain-summary-adapter",
+  "author": "happybrian",
+  "url": "https://huggingface.co/happybrian/fast-brain-summary-adapter",
+  "created_at": "2026-09-22T14:40:22.000Z",
+  "updated_at": "2026-09-22T14:40:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "lora",
+    "system1",
+    "fast-brain",
+    "base_model:happybrian/fast-brain-base",
+    "base_model:adapter:happybrian/fast-brain-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21126646,
+  "storage_human": "21 MB",
+  "base_model": "happybrian/fast-brain-base",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Make a booking - Reserve with Google Help",
+      "url": "https://support.google.com/maps/answer/6039495?hl=en-en",
+      "snippet": "Make a booking Learn how to make a booking or purchase tickets from different types of businesses. You can also join or request to …"
+    },
+    {
+      "title": "Booking.com - Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/633-booking-com",
+      "snippet": "Jul 20, 2009 · Booking ne fait que retransmettre les informations de réservation,et coordonnées bancaires du client à l'hotelier pas …"
+    },
+    {
+      "title": "有什么好听的游戏ID名字? - 知乎",
+      "url": "https://www.zhihu.com/question/49035525",
+      "snippet": "知乎用户分享各种好听的游戏ID名字，适合喜欢独特、创意网名的玩家参考。"
+    },
+    {
+      "title": "Set up your call ads for success - Google Ads Help",
+      "url": "https://support.google.com/google-ads/answer/6197478?hl=en",
+      "snippet": "Reservation Counter, a hotel booking provider, takes advantage of insights from Google Ads to deliver better customer service. \"The …"
+    },
+    {
+      "title": "Booking.com - Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/210521-booking-com",
+      "snippet": "Dec 12, 2023 · Je vous fait part de mon expérience avec @booking.com pour éviter que vous ne soyez confronter à la même chose …"
+    }
+  ]
+}

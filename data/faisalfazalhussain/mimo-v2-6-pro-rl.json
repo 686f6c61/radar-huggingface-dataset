@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "FAISALFAZALHUSSAIN/MiMo-V2.6-Pro-RL",
+  "slug": "faisalfazalhussain-mimo-v2-6-pro-rl",
+  "author": "FAISALFAZALHUSSAIN",
+  "url": "https://huggingface.co/FAISALFAZALHUSSAIN/MiMo-V2.6-Pro-RL",
+  "created_at": "2026-09-22T18:21:25.000Z",
+  "updated_at": "2026-09-22T18:21:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mimo_v2",
+    "text-generation",
+    "multimodal",
+    "vision-language",
+    "audio",
+    "agent",
+    "video-understanding",
+    "long-context",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1024216603392,
+  "parameters_human": "1024.22B",
+  "storage_bytes": 573487452634,
+  "storage_human": "573.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Afyangu",
+      "url": "https://afyayangu.go.ke/",
+      "snippet": "Take charge of your well-being with Afyangu."
+    },
+    {
+      "title": "AfyaYangu",
+      "url": "https://afyayangu.org/login",
+      "snippet": "Don't have an account? Register."
+    },
+    {
+      "title": "AfyaKE | Digital health Platform",
+      "url": "https://afyakedemo.health.go.ke/",
+      "snippet": "The gateway to the Health Information Exchange across all points of care within the facility."
+    },
+    {
+      "title": "Afya Yangu",
+      "url": "https://afyaguide.co.ke/",
+      "snippet": "Aug 21, 2026 · These eight signs mean a child needs to be seen by a health worker the same day. Most malaria is preventable, and …"
+    },
+    {
+      "title": "Log in - Afya Yangu",
+      "url": "https://usaidafyayangu.org/",
+      "snippet": "Forgot your password? © 2026 - Afya Yangu. Privacy Policy."
+    }
+  ]
+}

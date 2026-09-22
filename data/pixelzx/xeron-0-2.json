@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "PIXELZX/XERON-0.2",
+  "slug": "pixelzx-xeron-0-2",
+  "author": "PIXELZX",
+  "url": "https://huggingface.co/PIXELZX/XERON-0.2",
+  "created_at": "2026-09-22T14:35:57.000Z",
+  "updated_at": "2026-09-22T14:36:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [
+    "en",
+    "ko",
+    "multilingual"
+  ],
+  "tags": [
+    "laya",
+    "safetensors",
+    "decision-model",
+    "system-1",
+    "non-autoregressive",
+    "typed-decisions",
+    "calibration",
+    "multilingual",
+    "jevbench",
+    "text-classification",
+    "en",
+    "ko",
+    "base_model:PIXELZX/XERON-0.1",
+    "base_model:finetune:PIXELZX/XERON-0.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198880,
+  "storage_human": "678 MB",
+  "base_model": "PIXELZX/XERON-0.1, jhu-clsp/mmBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Temu | Explore the Latest Clothing, Beauty, Home, Jewelry & More",
+      "url": "https://www.temu.com/az",
+      "snippet": "Make Temu your one-stop destination for the latest fashion products, cosmetics & more. Free shipping on items shipped from Temu. …"
+    },
+    {
+      "title": "Bütün Kateqoriyaları Alın - Temu",
+      "url": "https://www.temu.com/az/o1-0.html",
+      "snippet": "Geyimdən Ev və Mətbəx, Gözəllik və Sağlamlıq, Elektronika və daha çox şeyə qədər böyük qənaət üçün Temu onlayn alış-veriş edin."
+    },
+    {
+      "title": "Shop All Categories - Free Returns Within 90 Days - Temu",
+      "url": "https://www.temu.com/az-en/c.html",
+      "snippet": "Shop on Temu and start saving."
+    },
+    {
+      "title": "Download the Temu App ( & )",
+      "url": "https://www.temu.com/az-en/app.html",
+      "snippet": "With a wide of products at prices, find everything you need and more. Download Temu now and start shopping!"
+    },
+    {
+      "title": "Temu.az - Baku kataloq Birmarket-da | Temu.az Baku Azerbaijan",
+      "url": "https://birmarket.az/merchant/14197-temu-az",
+      "snippet": "Temu.az Baku online kataloq ⏩ | Temu.az qiymetler ⏩Temu.az Baku Azerbaijan ️ RƏYLƏR, ️ QİYMƏTLƏRİ, ️ Nağd və online …"
+    }
+  ]
+}

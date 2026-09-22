@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "baerquants/Inkling-Small-NVFP4",
+  "slug": "baerquants-inkling-small-nvfp4",
+  "author": "baerquants",
+  "url": "https://huggingface.co/baerquants/Inkling-Small-NVFP4",
+  "created_at": "2026-09-22T21:03:07.000Z",
+  "updated_at": "2026-09-22T21:03:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:quantized:thinkingmachines/Inkling-Small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 156032140138,
+  "parameters_human": "156.03B",
+  "storage_bytes": 170764725303,
+  "storage_human": "170.8 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best ETL Tools for Mid-Market 2026 - techvendorindex.com",
+      "url": "https://techvendorindex.com/compare/best-etl-for-mid-market/",
+      "snippet": "Compare top Data Integration and ETL ranked for mid-market buyers. Independent rankings from TechVendorIndex with features, …"
+    },
+    {
+      "title": "Top 15 Best ETL Tools 2026: Compare ETL & ELT Platforms …",
+      "url": "https://weld.app/blog/best-etl-tools",
+      "snippet": "Apr 27, 2026 · Compare the top 15 ETL tools in 2026 across managed ELT, open-source, enterprise, cloud-native, CDC, and visual …"
+    },
+    {
+      "title": "Best 10 AI-ETL Tools for Mid-Market Data Teams - integrate.io",
+      "url": "https://www.integrate.io/blog/best-ai-etl-tools-for-mid-market-teams/",
+      "snippet": "Jan 5, 2026 · What Are AI-Powered ETL Tools and Why Mid-Market Teams Need Them AI-powered ETL (Extract, Transform, Load) …"
+    },
+    {
+      "title": "The 25 Best ETL Tools in 2026 with Detailed Comparison",
+      "url": "https://www.softwaretestinghelp.com/best-etl-tools/",
+      "snippet": "Dec 17, 2025 · This article covers a comprehensive list of the top open source and commercial ETL (Extract, Transform, Load) tools …"
+    },
+    {
+      "title": "12 Best ETL Tools in 2026: Compared by Price & Use Case",
+      "url": "https://www.domo.com/learn/article/etl-tools",
+      "snippet": "Sep 10, 2026 · See the 12 best ETL tools of 2026 ranked by pricing, connectors, cloud support, and ease of use, with picks for small …"
+    }
+  ]
+}

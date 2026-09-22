@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "w1deson/koi",
+  "slug": "w1deson-koi",
+  "author": "w1deson",
+  "url": "https://huggingface.co/w1deson/koi",
+  "created_at": "2026-09-22T16:26:28.000Z",
+  "updated_at": "2026-09-22T16:26:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    },
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.com/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Google - YouTube",
+      "url": "https://www.youtube.com/google",
+      "snippet": "Welcome to your front-row seat to Google I/O. Watch for the latest groundbreaking updates to Gemini models, developer platforms …"
+    },
+    {
+      "title": "Google - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Google",
+      "snippet": "Search Google Search (also known simply as Google) is a search engine operated by Google. It allows users to search or ask for …"
+    }
+  ]
+}

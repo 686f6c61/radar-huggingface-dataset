@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ewgenni/AliceAI-Foundation-80B-A3B-Base",
+  "slug": "ewgenni-aliceai-foundation-80b-a3b-base",
+  "author": "ewgenni",
+  "url": "https://huggingface.co/ewgenni/AliceAI-Foundation-80B-A3B-Base",
+  "created_at": "2026-09-22T17:47:06.000Z",
+  "updated_at": "2026-09-22T17:47:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "alice_ai",
+    "text-generation",
+    "custom_code",
+    "mixture-of-experts",
+    "vllm",
+    "ru",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81286433408,
+  "parameters_human": "81.29B",
+  "storage_bytes": 162576640278,
+  "storage_human": "162.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.be/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=nl",
+      "snippet": "Adverteren Alles over Google Google.com in English © 2026 - Privacy - Voorwaarden"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.nl/?hl=nl&hl=nl",
+      "snippet": "Wij willen hier een beschrijving geven, maar de site die u nu bekijkt staat dit niet toe."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.ai/?hl=nl-US",
+      "snippet": "Google aangeboden in: English Adverteren Alles over Google Google.com"
+    },
+    {
+      "title": "Inloggen - Google Accounts",
+      "url": "https://accounts.google.com/login?hl=nl",
+      "snippet": "Niet jouw computer? Gebruik een venster voor privé browsen om in te loggen. Meer informatie over het gebruik van de gastmodus …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "KindredKoala/classification-DA",
+  "slug": "kindredkoala-classification-da",
+  "author": "KindredKoala",
+  "url": "https://huggingface.co/KindredKoala/classification-DA",
+  "created_at": "2026-09-22T18:48:14.000Z",
+  "updated_at": "2026-09-22T18:56:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "resnet",
+    "image-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23591887,
+  "parameters_human": "23.6M",
+  "storage_bytes": 94409540,
+  "storage_human": "94 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Football Live Scores, Latest Football Results | Flashscore.com",
+      "url": "https://www.flashscore.com/",
+      "snippet": "Football live scores page on Flashscore.com offers all the latest football results from more than 1000+ football leagues all around the …"
+    },
+    {
+      "title": "Foot en direct, Résultats Foot, Match en Direct Live | Flashscore.fr",
+      "url": "https://www.flashscore.fr/",
+      "snippet": "Apr 2, 2026 · Retrouvez tous les scores de football du jour/du soir sur Flashscore.fr. Le service de livescore de foot est en temps réel, …"
+    },
+    {
+      "title": "Mobile livescore - Flashscore.mobi football scores",
+      "url": "https://www.flashscore.mobi/",
+      "snippet": "Follow current football live scores on your mobile phone! Check current football livescore on the way with optimized mobile version of …"
+    },
+    {
+      "title": "Flashscore.co.uk: Football Live Scores, Latest Football Results ...",
+      "url": "https://www.flashscore.co.uk/",
+      "snippet": "Football live scores page on Flashscore.co.uk offers all the latest football results from more than 1000+ football leagues all around the …"
+    },
+    {
+      "title": "Soccer Live Scores, Latest Soccer Results | Flashscore",
+      "url": "https://www.flashscoreusa.com/",
+      "snippet": "Soccer live scores page on Flashscore offers all the latest soccer results from more than 1000+ soccer leagues all around the world …"
+    }
+  ]
+}

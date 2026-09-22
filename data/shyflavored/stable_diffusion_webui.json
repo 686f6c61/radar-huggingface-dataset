@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shyflavored/Stable_Diffusion_webui",
+  "slug": "shyflavored-stable_diffusion_webui",
+  "author": "shyflavored",
+  "url": "https://huggingface.co/shyflavored/Stable_Diffusion_webui",
+  "created_at": "2026-09-22T14:53:13.000Z",
+  "updated_at": "2026-09-22T14:53:13.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22886048781,
+  "storage_human": "22.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TVP SPORT - transmisje, wyniki, na żywo, wiadomości sportowe",
+      "url": "https://sport.tvp.pl/",
+      "snippet": "Oficjalna strona TVP Sport. Lider oglądalności wśród kanałów sportowych w Polsce. Transmisje online, program TV, wideo, wyniki, …"
+    },
+    {
+      "title": "Transmisje - online, na żywo, live, stream | TVP SPORT",
+      "url": "https://sport.tvp.pl/transmisje",
+      "snippet": "Transmisje online na żywo w TVP SPORT ⚽. Mecze piłki nożnej, siatkówki, walki bokserskie oraz szereg innych wydarzeń …"
+    },
+    {
+      "title": "TVP SPORT - telewizja na żywo, Oglądaj na TVP VOD",
+      "url": "https://vod.tvp.pl/live,1/tvp-sport,399702",
+      "snippet": "Oglądaj online Twoje ulubione seriale, programy, filmy, teatr tv oraz kanały na żywo. Zobacz przedpremiery hitów TVP. TVP VOD to …"
+    },
+    {
+      "title": "TVP Sport - Program TV na dziś, Poniedziałek 21.09.2026",
+      "url": "https://www.teleman.pl/program-tv/stacje/TVP-Sport",
+      "snippet": "Program TV stacji TVP Sport na 14 dni. Najwygodniejszy przewodnik po programie wszystkich stacji - tutaj sprawdź program …"
+    },
+    {
+      "title": "Sport – relacje na żywo, transmisje online, wiadomości",
+      "url": "https://www.tvp.pl/85517042/sport",
+      "snippet": "Mistrzostwa Europy w lekkoatletyce na antenach TVP. Polacy ruszają po medale Aktualności"
+    }
+  ]
+}

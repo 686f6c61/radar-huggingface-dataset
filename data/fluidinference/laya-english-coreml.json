@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "FluidInference/laya-english-coreml",
+  "slug": "fluidinference-laya-english-coreml",
+  "author": "FluidInference",
+  "url": "https://huggingface.co/FluidInference/laya-english-coreml",
+  "created_at": "2026-09-22T20:41:03.000Z",
+  "updated_at": "2026-09-22T21:00:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "apple-silicon",
+    "decision-model",
+    "laya",
+    "text-classification",
+    "base_model:convaiinnovations/laya",
+    "base_model:quantized:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1687527024,
+  "storage_human": "1.7 GB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo",
+      "url": "https://www.yahoo.com/",
+      "snippet": "News, email and search are just the beginning. Discover more every day. Find your yodel."
+    },
+    {
+      "title": "Yahoo",
+      "url": "https://www.yahoo.com/.\"",
+      "snippet": "redirect"
+    },
+    {
+      "title": "Login - Sign in to Yahoo",
+      "url": "https://login.yahoo.com/",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    },
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Yahoo Finance - Stock Market Live, Quotes, Business & Finance News",
+      "url": "https://finance.yahoo.com/",
+      "snippet": "At Yahoo Finance, you get free stock quotes, up-to-date news, portfolio management resources, international market data, social …"
+    }
+  ]
+}

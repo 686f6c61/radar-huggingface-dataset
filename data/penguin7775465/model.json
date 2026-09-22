@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Penguin7775465/Model",
+  "slug": "penguin7775465-model",
+  "author": "Penguin7775465",
+  "url": "https://huggingface.co/Penguin7775465/Model",
+  "created_at": "2026-09-22T18:24:56.000Z",
+  "updated_at": "2026-09-22T18:24:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=fr",
+      "snippet": "Créez un compte ou connectez-vous à Instagram. Partagez ce que vous aimez avec les personnes qui ont les mêmes centres d’intérêt."
+    },
+    {
+      "title": "Instagram - Facebook",
+      "url": "https://www.facebook.com/instagram/",
+      "snippet": "Instagram. 68,290,891 followers · 441,460 talking about this. Discover what's new on Instagram 🔎"
+    },
+    {
+      "title": "Instagram - Meta",
+      "url": "https://www.meta.com/instagram/",
+      "snippet": "We want Instagram to be a place where people can be inspired every day. We foster a safe and welcoming community where people …"
+    },
+    {
+      "title": "Instagram – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=ln",
+      "snippet": "- Turn your life into a movie and discover short, entertaining videos on Instagram with Reels. - Customize your posts with exclusive …"
+    }
+  ]
+}

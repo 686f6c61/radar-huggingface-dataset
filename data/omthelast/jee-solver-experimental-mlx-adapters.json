@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "OmTheLast/jee-solver-experimental-mlx-adapters",
+  "slug": "omthelast-jee-solver-experimental-mlx-adapters",
+  "author": "OmTheLast",
+  "url": "https://huggingface.co/OmTheLast/jee-solver-experimental-mlx-adapters",
+  "created_at": "2026-09-22T13:23:58.000Z",
+  "updated_at": "2026-09-22T13:25:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "lora",
+    "qwen3.5",
+    "jee",
+    "experimental",
+    "image-text-to-text",
+    "base_model:mlx-community/Qwen3.5-9B-4bit",
+    "base_model:adapter:mlx-community/Qwen3.5-9B-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22040304,
+  "storage_human": "22 MB",
+  "base_model": "mlx-community/Qwen3.5-9B-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Order & Get the Best Deals Only at Pizza Hut Malaysia",
+      "url": "https://www.pizzahut.com.my/",
+      "snippet": "Order delicious pizzas, pastas & more at Pizza Hut! Enjoy online ordering or takeaway for a tasty meal. Visit pizzahut.com.my!"
+    },
+    {
+      "title": "Best Pizza Delivery, Pick Up or Dine In | Order Online | Domino's MY",
+      "url": "https://www.dominos.com.my/",
+      "snippet": "Enjoy freshly made & oven-baked pizzas, sides & desserts by delivery, takeaway or dine-in; Official website online ordering for over …"
+    },
+    {
+      "title": "11 Pizza Places In KL & Selangor That Will Steal A “Pizza ... - SAYS",
+      "url": "https://says.com/my/makan/pizza-places-in-kl-selangor",
+      "snippet": "Sep 4, 2024 · Lloyd's Pizza serves freshly made pizzas with all sauces handcrafted from scratch. The pork-free menu features classic …"
+    },
+    {
+      "title": "Pizzas Menu - Domino's Pizza",
+      "url": "https://www.dominos.com.my/menu-pizza",
+      "snippet": "Flavorful ground beef and chicken potpourri sausages on smoky BB..."
+    },
+    {
+      "title": "US Pizza Malaysia: Get Delicious Halal Pizzas Delivered To You!",
+      "url": "https://uspizza.my/",
+      "snippet": "Whether meaty, vegetarian or halal, find different pizzas in Malaysia. At US PIZZA, we offer endless flavours with local flair! Pair your …"
+    }
+  ]
+}

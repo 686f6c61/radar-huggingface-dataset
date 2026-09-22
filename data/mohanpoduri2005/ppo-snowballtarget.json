@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mohanpoduri2005/ppo-SnowballTarget",
+  "slug": "mohanpoduri2005-ppo-snowballtarget",
+  "author": "mohanpoduri2005",
+  "url": "https://huggingface.co/mohanpoduri2005/ppo-SnowballTarget",
+  "created_at": "2026-09-22T16:13:56.000Z",
+  "updated_at": "2026-09-22T16:14:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51,
+  "storage_human": "51 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "Latest research View all An OpenAI model proposes a solution to the Navier–Stokes problem Research Sep 8, 2026 Research …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/?locale=it-IT",
+      "snippet": "ChatGPT ti aiuta a ottenere risposte, trovare ispirazione e migliorare la produttività."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "OpenAI | Ricerca e implementazione",
+      "url": "https://openai.com/it-IT/",
+      "snippet": "OpenAI per le aziende Visualizza tutto Model ML ottimizza il lavoro finanziario con GPT-5.6 Sol Startup 10 ago 2026"
+    },
+    {
+      "title": "OpenAI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/OpenAI",
+      "snippet": ""
+    }
+  ]
+}

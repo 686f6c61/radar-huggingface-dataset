@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "talmago/gliformer-base-v1-onnx",
+  "slug": "talmago-gliformer-base-v1-onnx",
+  "author": "talmago",
+  "url": "https://huggingface.co/talmago/gliformer-base-v1-onnx",
+  "created_at": "2026-09-22T15:15:01.000Z",
+  "updated_at": "2026-09-22T15:23:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "fast_gliner",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "fast_gliner",
+    "onnx",
+    "gliformer",
+    "gliner",
+    "named-entity-recognition",
+    "text-classification",
+    "relation-extraction",
+    "structured-extraction",
+    "token-classification",
+    "en",
+    "base_model:knowledgator/gliformer-base-v1",
+    "base_model:quantized:knowledgator/gliformer-base-v1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1081608759,
+  "storage_human": "1.1 GB",
+  "base_model": "knowledgator/gliformer-base-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LeBron James - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/LeBron_James",
+      "snippet": "Nicknamed \" King James \", he is the NBA's all-time leading scorer and has won four NBA championships from 10 NBA Finals …"
+    },
+    {
+      "title": "勒布朗·詹姆斯（美国职业篮球运动员）_百度百科",
+      "url": "https://baike.baidu.com/item/%e5%8b%92%e5%b8%83%e6%9c%97%c2%b7%e8%a9%b9%e5%a7%86%e6%96%af/1989503",
+      "snippet": "勒布朗·詹姆斯（LeBron James），全名勒布朗·雷蒙·詹姆斯（LeBron Raymone James），1984年12月30日出生于美国俄亥俄州阿克 …"
+    },
+    {
+      "title": "雷霸龍·詹姆斯 - 維基百科，自由的百科全書",
+      "url": "https://zh.wikipedia.org/zh-tw/%E5%8B%92%E5%B8%83%E6%9C%97%C2%B7%E8%A9%B9%E5%A7%86%E6%96%AF",
+      "snippet": "Jul 26, 2005 · 老雷霸龍·瑞蒙·詹姆斯 （英語： LeBron Raymone James Sr.，1984年12月30日—），美國職業 籃球 員，至今已在NBA …"
+    },
+    {
+      "title": "LeBron James",
+      "url": "https://www.lebronjames.com/",
+      "snippet": "LeBron has proudly represented USA in the Olympics three times, helping Team USA earn medals in each campaign. In the 2004 …"
+    },
+    {
+      "title": "LeBron James - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/LeBron_James",
+      "snippet": "LeBron James ... LeBron Raymone James Sr. (Akron, Ohio, 30 de diciembre de 1984) es un jugador de baloncesto estadounidense …"
+    }
+  ]
+}

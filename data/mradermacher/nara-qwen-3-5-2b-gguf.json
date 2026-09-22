@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/nara-qwen-3.5-2b-GGUF",
+  "slug": "mradermacher-nara-qwen-3-5-2b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/nara-qwen-3.5-2b-GGUF",
+  "created_at": "2026-09-22T16:03:57.000Z",
+  "updated_at": "2026-09-22T16:14:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ocr",
+    "htr",
+    "handwritten-text-recognition",
+    "cultural-heritage",
+    "digital-humanities",
+    "archives",
+    "nara",
+    "english",
+    "qwen3.5",
+    "vision-language",
+    "en",
+    "dataset:wjbmattingly/si-test",
+    "base_model:wjbmattingly/nara-qwen-3.5-2b",
+    "base_model:quantized:wjbmattingly/nara-qwen-3.5-2b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 19103032192,
+  "storage_human": "19.1 GB",
+  "base_model": "wjbmattingly/nara-qwen-3.5-2b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Manhattan Prep",
+      "url": "https://www.manhattanprep.com/",
+      "snippet": "Manhattan Prep provides industry-leading test prep. Learn more about our online and in-person courses, free resources, and tutoring …"
+    },
+    {
+      "title": "Tyler Johnson - Manhattan Prep",
+      "url": "https://www.manhattanprep.com/instructors/tyler-johnson/",
+      "snippet": "Tyler holds a B.S. in music production from the University of Southern California and an M.A. in broadcast from San Francisco State …"
+    },
+    {
+      "title": "LSAT Answers and Explanations - LSAT",
+      "url": "https://www.manhattanprep.com/lsat/blog/lsat-answers-and-explanations/",
+      "snippet": "Jul 24, 2009 · As an LSAT teacher you end up explaining a lot of LSAT questions. We've actually designed our forums to focus on …"
+    },
+    {
+      "title": "LSAT Logic Games Practice Questions - Manhattan Prep LSAT",
+      "url": "https://www.manhattanprep.com/lsat/blog/lsat-logic-games-practice-questions/",
+      "snippet": "Apr 25, 2019 · Thinking of doing some LSAT Logic Games practice questions? Although they seem different at first glance, there are …"
+    },
+    {
+      "title": "Sign-in - manhattanprep.com",
+      "url": "https://www.manhattanprep.com/users/login/",
+      "snippet": "Sign-in Sign in to your account. Email address"
+    }
+  ]
+}

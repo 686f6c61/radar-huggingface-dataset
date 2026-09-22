@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "samanthalhy/so100_smol_popcorn_1",
+  "slug": "samanthalhy-so100_smol_popcorn_1",
+  "author": "samanthalhy",
+  "url": "https://huggingface.co/samanthalhy/so100_smol_popcorn_1",
+  "created_at": "2026-09-22T17:31:48.000Z",
+  "updated_at": "2026-09-22T17:32:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:samanthalhy/so100_popcorn_1",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046212,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906713296,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cancel or pause your YouTube TV membership",
+      "url": "https://support.google.com/youtubetv/answer/7129668?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Cancel or pause your YouTube TV membership You can cancel or pause your YouTube TV membership at any time. When you …"
+    },
+    {
+      "title": "youtube | OBS Forums",
+      "url": "https://obsproject.com/forum/tags/youtube/",
+      "snippet": "Apr 15, 2026 · When we enter the YouTube stream key on OBS, it uploads the video directly on our YouTube page, but doesn't send …"
+    },
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "İndir | OBS",
+      "url": "https://obsproject.com/tr/downLOAD",
+      "snippet": "Download OBS Studio for Windows, Mac or Linux"
+    },
+    {
+      "title": "YouTube Creator Awards",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    }
+  ]
+}

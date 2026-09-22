@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "vanvalenlab/cellsam3",
+  "slug": "vanvalenlab-cellsam3",
+  "author": "vanvalenlab",
+  "url": "https://huggingface.co/vanvalenlab/cellsam3",
+  "created_at": "2026-09-22T20:44:26.000Z",
+  "updated_at": "2026-09-22T20:44:26.000Z",
+  "license": "modified-apache-2.0-noncommercial",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3468083543,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Radiopaedia.org",
+      "url": "https://radiopaedia.org/articles/vasculitis",
+      "snippet": "If you're not a bot, you shouldn't see this error. If it persists, please contact [email protected] and we'll help to unblock you."
+    },
+    {
+      "title": "Radiologic Imaging in Large and Medium Vessel Vasculitis",
+      "url": "https://radiologykey.com/radiologic-imaging-in-large-and-medium-vessel-vasculitis/",
+      "snippet": "Aug 15, 2020 · CTA allows visualization of early changes of vasculitis such as arterial wall thickening, contrast enhancement, and the …"
+    },
+    {
+      "title": "Vasculitis - Radiology Key",
+      "url": "https://radiologykey.com/vasculitis-6/",
+      "snippet": "Mar 25, 2024 · CT is useful for demonstrating end-organ changes and complications of vasculitis. Abnormalities may be noted in the …"
+    },
+    {
+      "title": "Large Vessel Vasculitis: Multimodality Imaging Findings and Technical ...",
+      "url": "https://pubs.rsna.org/doi/10.1148/rg.240166",
+      "snippet": "Dec 4, 2025 · Noninvasive imaging has a role in identifying, classifying, and staging LVV; often with a multimodality approach …"
+    },
+    {
+      "title": "MR and CT angiography in the diagnosis of vasculitides",
+      "url": "https://academic.oup.com/bjro/article/5/1/20220020/7468470",
+      "snippet": "Sep 25, 2023 · Findings from CT and MR angiography in conjunction with a thorough history and physical exam are of utmost …"
+    }
+  ]
+}

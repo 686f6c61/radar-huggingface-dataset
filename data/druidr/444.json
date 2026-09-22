@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Druidr/444",
+  "slug": "druidr-444",
+  "author": "Druidr",
+  "url": "https://huggingface.co/Druidr/444",
+  "created_at": "2026-09-22T13:35:35.000Z",
+  "updated_at": "2026-09-22T13:35:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "اختبار في قوانين الضرب المختصر للصّف التاسع",
+      "url": "https://www.niva-math.com/post/d8a7d8aed8aad8a8d8a7d8b1-d981d98a-d982d988d8a7d986d98ad986-d8a7d984d8b6d8b1d8a8-d8a7d984d985d8aed8aad8b5d8b1-d984d984d8b5d981-d8a7d984d8aad8a7d8b3d8b9.aspx",
+      "snippet": "<< اختبار في قوانين القوى للصف التاسع | وظيفة صفيّة في حلّ معادلات/متباينات للصف التاسع >>"
+    },
+    {
+      "title": "اختبار في قوانين الضرب المختصر | الرياضيات - الصف التاسع",
+      "url": "https://iseraj.com/exams/1735",
+      "snippet": "Feb 3, 2026 · اختبار رياضيات للصف التاسع يتناول قوانين الضرب المختصر من خلال مجموعة تمارين تهدف إلى قياس قدرة الطالب على فتح الأقواس، تبسيط التعابير الجبرية، وتجميع الحدود المتشابهة."
+    },
+    {
+      "title": "اختبار_قوانين الضرب المختصر - CET",
+      "url": "https://lo.cet.ac.il/player/?document=b2c4bde2-0c49-486e-8270-5aadb6828dda&language=he",
+      "snippet": "اختبار_قوانين الضرب المختصر - CET ... حلوا التمارين"
+    },
+    {
+      "title": "موقع نيفا للرياضيات | أوراق عمل للصف التاسع",
+      "url": "https://www.niva-math.com/category/d8a7d988d8b1d8a7d982-d8b9d985d984-d984d984d8b5d981-d8a7d984d8aad8a7d8b3d8b9.aspx",
+      "snippet": "تمارين في تمثيلات مختلفة للدالة التربيعيّة للصّف التاسع by niva 12. أيلول 2025 14:42"
+    },
+    {
+      "title": "رياضيات للمرحلة الاعدادية- شيرين دخان - قوانين الضرب المختصر وقانون ...",
+      "url": "https://sites.google.com/tzfonet.org.il/sherendokhan/%D8%A7%D9%84%D8%AC%D8%A8%D8%B1/%D9%82%D9%88%D8%A7%D9%86%D9%8A%D9%86-%D8%A7%D9%84%D8%B6%D8%B1%D8%A8-%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D8%B5%D8%B1-%D9%88%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%AA%D9%88%D8%B2%D9%8A%D8%B9-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D8%B9",
+      "snippet": "Loading…"
+    }
+  ]
+}

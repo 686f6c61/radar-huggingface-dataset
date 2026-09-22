@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/qwen3-1.7b-q4f16",
+  "slug": "skillsafe-ai-qwen3-1-7b-q4f16",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/qwen3-1.7b-q4f16",
+  "created_at": "2026-09-22T19:03:48.000Z",
+  "updated_at": "2026-09-22T19:04:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "skillsafe",
+    "browser",
+    "web-llm",
+    "text-generation",
+    "mlc",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 985214921,
+  "storage_human": "985 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Heizöl Preisvergleich beim Testsieger » HeizOel24",
+      "url": "https://www.heizoel24.de/",
+      "snippet": "Heizöl ist ein homogenes Produkt mit täglichen Preisschwankungen. HeizOel24 wertet die Börsenentwicklung aus und sucht …"
+    },
+    {
+      "title": "Heizölpreise vergleichen beim Testsieger | HeizOel24",
+      "url": "https://www.heizoel24.de/heizoelpreise",
+      "snippet": "19 hours ago · Heizölpreise aktuell mit unserem Heizölrechner vergleichen und günstig volltanken. Heizöl kaufen mit Käuferschutz » …"
+    },
+    {
+      "title": "Heizölpreise in Bayern vergleichen - HeizOel24",
+      "url": "https://www.heizoel24.de/heizoelpreise/bayern",
+      "snippet": "19 hours ago · Heizölpreise für Bayern vergleichen und aktuelle Angebote für Ihre Postleitzahl einsehen. Schnell und einfach auf …"
+    },
+    {
+      "title": "Heizöl Hessen | aktuelle Heizölpreise - HeizOel24",
+      "url": "https://www.heizoel24.de/heizoelpreise/hessen",
+      "snippet": "19 hours ago · Heizölpreise in Hessen vergleichen und ein preiswertes Angebot für Ihre PLZ finden. Einfach und schnell auf …"
+    },
+    {
+      "title": "Heizöl in Baden-Württemberg | aktuelle Heizölpreise - HeizOel24",
+      "url": "https://www.heizoel24.de/heizoelpreise/baden-wuerttemberg",
+      "snippet": "19 hours ago · Heizölpreise in Baden-Württemberg einsehen und Angebote für Ihre Postleitzahl vergleichen. Auf HeizOel24 …"
+    }
+  ]
+}

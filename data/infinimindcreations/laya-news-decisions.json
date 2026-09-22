@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "InfinimindCreations/laya-news-decisions",
+  "slug": "infinimindcreations-laya-news-decisions",
+  "author": "InfinimindCreations",
+  "url": "https://huggingface.co/InfinimindCreations/laya-news-decisions",
+  "created_at": "2026-09-22T18:35:25.000Z",
+  "updated_at": "2026-09-22T18:35:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "safetensors",
+    "laya",
+    "system-one",
+    "news",
+    "classification",
+    "rlcd",
+    "text-classification",
+    "multilingual",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 1287653720,
+  "storage_human": "1.3 GB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "福克蘭群島 - 背包攻略",
+      "url": "https://www.backpackers.com.tw/guide/index.php/%E7%A6%8F%E5%85%8B%E8%98%AD%E7%BE%A4%E5%B3%B6",
+      "snippet": "Nov 18, 2010 · 1982年，英阿因為福克蘭群島歸屬問題爆發了福克蘭群島戰爭，阿根廷戰敗，英國保住了對福克蘭群島的管轄權至今。 …"
+    },
+    {
+      "title": "09年12月2號~20號 南極18天記錄 (福克蘭群島+南喬治亞+南極)",
+      "url": "https://www.backpackers.com.tw/forum/showthread.php?t=284911&page=2",
+      "snippet": "Jan 19, 2010 · Joey!!上福克蘭群島的第一天早上登陸地點是Westpoint Island，看到的是馬可羅尼企鵝跟信天翁，你前面已有貼圖，下 …"
+    },
+    {
+      "title": "09年12月2號~20號 南極18天記錄 (福克蘭群島+南喬治亞+南極)",
+      "url": "https://www.backpackers.com.tw/forum/showthread.php?t=284911",
+      "snippet": "Dec 22, 2009 · 先引用剛好同團的棧友 james peng 得意之作 打頭陣攝於南喬治亞島，Right Whale Bay因為還在旅途中 所以可能會寫 …"
+    },
+    {
+      "title": "福克蘭群島 (Falkland Islands)已免簽證",
+      "url": "https://www.backpackers.com.tw/forum/showthread.php?t=383396",
+      "snippet": "2010/9/3從眾管道得知(包含在台的英國貿易文化辦事處)，目前持有R.O.C.護照的台灣人民，前往Falkland Islands免辦簽證。細節可詳 …"
+    },
+    {
+      "title": "福克蘭群島.",
+      "url": "https://www.backpackers.com.tw/forum/showthread.php?t=52256",
+      "snippet": "1 9611 MCLEAN 2007-12-12, 16:45 最近有朋友要坐遊輪 會到福克蘭群島旅遊 請問有沒有人到過的啊 有甚麼特殊的景點可以看的嗎 行 …"
+    }
+  ]
+}

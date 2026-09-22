@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "jvr0x/Qwen3-4B-Pirate-GGUF",
+  "slug": "jvr0x-qwen3-4b-pirate-gguf",
+  "author": "jvr0x",
+  "url": "https://huggingface.co/jvr0x/Qwen3-4B-Pirate-GGUF",
+  "created_at": "2026-09-22T13:05:23.000Z",
+  "updated_at": "2026-09-22T13:40:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "unsloth",
+    "lora",
+    "qwen3",
+    "distillation",
+    "pirate",
+    "dgx-spark",
+    "text-generation",
+    "en",
+    "dataset:mlabonne/FineTome-100k",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 6777684992,
+  "storage_human": "6.8 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "France - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/France",
+      "snippet": "France was divided into a German occupation zone in the north, an Italian occupation zone and an unoccupied territory, the rest of …"
+    },
+    {
+      "title": "France | History, Maps, Flag, Population, Cities, Capital, & Facts ...",
+      "url": "https://www.britannica.com/place/France",
+      "snippet": "1 day ago · France, a country of northwestern Europe, is historically and culturally among the most important countries in the Western …"
+    },
+    {
+      "title": "France — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/France",
+      "snippet": ""
+    },
+    {
+      "title": "France Map | Discover France with Detailed Maps",
+      "url": "https://ontheworldmap.com/france/",
+      "snippet": "Description: This map shows governmental boundaries of countries; regions, regions capitals and major cities in France."
+    },
+    {
+      "title": "France.fr : Explore France and its wonders - Explore France",
+      "url": "https://www.france.fr/en/",
+      "snippet": "In spring, France reveals one of its most beautiful sides. Outdoor cafés fill up, parks and gardens come into bloom, and the …"
+    }
+  ]
+}

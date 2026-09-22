@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "happybrian/fast-brain-translate-adapter",
+  "slug": "happybrian-fast-brain-translate-adapter",
+  "author": "happybrian",
+  "url": "https://huggingface.co/happybrian/fast-brain-translate-adapter",
+  "created_at": "2026-09-22T14:40:03.000Z",
+  "updated_at": "2026-09-22T14:40:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "lora",
+    "system1",
+    "fast-brain",
+    "base_model:happybrian/fast-brain-base",
+    "base_model:adapter:happybrian/fast-brain-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21126646,
+  "storage_human": "21 MB",
+  "base_model": "happybrian/fast-brain-base",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Trainline Changes Ticket After Booking!?",
+      "url": "https://forums.moneysavingexpert.com/discussion/5729012/the-trainline-changes-ticket-after-booking",
+      "snippet": "Oct 17, 2017 · Long and short is, the I think the Trainline changed my booking after I had paid for the tickets. They are investigating, …"
+    },
+    {
+      "title": "Trainline + Complete Savings Cashback - MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/5219313/trainline-complete-savings-cashback",
+      "snippet": "Apr 13, 2015 · I was checking out train prices on the trainline app yesterday and I noticed an offer that said you get £30 cashback if …"
+    },
+    {
+      "title": "为什么使用CreateObject (\"Word.Application\")会出错？-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/30326511",
+      "snippet": "Jun 19, 2003 · 以下内容是CSDN社区关于为什么使用CreateObject (\"Word.Application\")会出错？相关内容，如果想了解更多关于VB基 …"
+    },
+    {
+      "title": "wget下载的默认路径是什么?-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/120042286",
+      "snippet": "Aug 8, 2007 · 以下内容是CSDN社区关于wget下载的默认路径是什么?相关内容，如果想了解更多关于系统维护与使用区社区其他内 …"
+    },
+    {
+      "title": "Trainline.com Complaint - MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/4979189/trainline-com-complaint",
+      "snippet": "May 24, 2014 · I had a Trainline booking for last night. Return journey I had a reserved seat in a designated carriage. When I got on …"
+    }
+  ]
+}

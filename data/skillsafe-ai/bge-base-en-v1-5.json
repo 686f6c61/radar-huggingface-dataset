@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/bge-base-en-v1.5",
+  "slug": "skillsafe-ai-bge-base-en-v1-5",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/bge-base-en-v1.5",
+  "created_at": "2026-09-22T20:42:39.000Z",
+  "updated_at": "2026-09-22T20:42:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "skillsafe",
+    "browser",
+    "import",
+    "base_model:BAAI/bge-base-en-v1.5",
+    "base_model:quantized:BAAI/bge-base-en-v1.5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 435811539,
+  "storage_human": "436 MB",
+  "base_model": "BAAI/bge-base-en-v1.5",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Installation von PaperPort™ 12SE / 14SE (Windows®) | Brother",
+      "url": "https://support.brother.com/g/b/faqend.aspx?c=ch&lang=de&prod=ads2200_all&faqid=faq00100180_009",
+      "snippet": "Um die Software PaperPort™ zu installieren, muss der Brother-Treiber auf Ihrem Computer installiert sein. Gehen Sie in der …"
+    },
+    {
+      "title": "PaperPort - Download",
+      "url": "https://paperport-standard.en.softonic.com/",
+      "snippet": "Jan 22, 2026 · PaperPort is a document utility app for Windows that helps you organize, edit, and share digital files, especially …"
+    },
+    {
+      "title": "Was ist PaperPort? | PaperPort",
+      "url": "http://paperport.helpmax.net/de/willkommen-bei-paperport/was-ist-paperport/",
+      "snippet": "PaperPort ist eine Verwaltungssoftware für Papierdokumente, mit der Sie Dokumente und Bilddateien auf Ihrem Computer …"
+    },
+    {
+      "title": "PaperPort™ 12SE / 14SE installieren (Windows) | Brother",
+      "url": "https://support.brother.com/g/b/faqend.aspx?c=de&lang=de&prod=ads2200_all&faqid=faq00100180_009",
+      "snippet": "Um die Software PaperPort™ zu installieren, muß der Treiber des Brother Gerätes auf Ihrem Computer installiert sein. Sollte dies …"
+    },
+    {
+      "title": "PaperPort - Vollversion | Heise",
+      "url": "https://www.heise.de/download/product/paperport-53358",
+      "snippet": "Oct 12, 2020 · PaperPort kümmert sich um Papierdokumente, indem es sie einscannt, digital nach Kategorien abspeichert und somit …"
+    }
+  ]
+}

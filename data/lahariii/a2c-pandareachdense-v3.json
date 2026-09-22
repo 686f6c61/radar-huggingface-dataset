@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Lahariii/a2c-PandaReachDense-v3",
+  "slug": "lahariii-a2c-pandareachdense-v3",
+  "author": "Lahariii",
+  "url": "https://huggingface.co/Lahariii/a2c-PandaReachDense-v3",
+  "created_at": "2026-09-22T18:39:31.000Z",
+  "updated_at": "2026-09-22T18:48:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 213929,
+  "storage_human": "213929 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "剁椒鹿：在 1940 年代，人类就曾经无比接近点出《战锤 40K》的科技树，提前了整整三万八千年。 这可能是人类历史上最疯狂的生物 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "poki・playhop・laggedこの3つの無料子供向けゲーム ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13317752273",
+      "snippet": "Jul 21, 2025 · poki・playhop・laggedこの3つの無料子供向けゲームサイトは安全でしょうか"
+    },
+    {
+      "title": "至急回答お願いします - pokiという無料でできる ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14310038869",
+      "snippet": "至急 回答お願い します pokiという無料でできる ブラウザ ゲームをやっています。 その中のゲーム、「Mine fun」を3日かけてスキ …"
+    },
+    {
+      "title": "Pokki Adware – Was ist es + Removal Guide [gelöst]",
+      "url": "https://sensorstechforum.com/de/pokki-start-menu/",
+      "snippet": "Sep 11, 2024 · Sollten Sie dem Pokki-Startmenü vertrauen?? Ist das Pokki-Startmenü ein legitimes Programm?? How to Remove …"
+    }
+  ]
+}

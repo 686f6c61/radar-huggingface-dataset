@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "NAQarabash/T5Base-T5",
+  "slug": "naqarabash-t5base-t5",
+  "author": "NAQarabash",
+  "url": "https://huggingface.co/NAQarabash/T5Base-T5",
+  "created_at": "2026-09-22T17:11:20.000Z",
+  "updated_at": "2026-09-22T17:11:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 222903552,
+  "parameters_human": "222.9M",
+  "storage_bytes": 891644712,
+  "storage_human": "892 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "WhatsApp | Mensajería y llamadas gratuitas, privadas, seguras y …",
+      "url": "https://www.whatsapp.com/?l=login&lang=es",
+      "snippet": "Usa WhatsApp Messenger para mantenerte en contacto con amigos y familiares. WhatsApp es gratuito y permite enviar mensajes y …"
+    },
+    {
+      "title": "Descargar WhatsApp",
+      "url": "https://www.whatsapp.com/download?lang=es",
+      "snippet": "Descarga WhatsApp en tu dispositivo móvil, tableta o computadora y mantente en contacto con mensajes privados y llamadas …"
+    },
+    {
+      "title": "HOUSAB - WhatsApp",
+      "url": "https://wa.me/",
+      "snippet": "Hosted by WhatsApp 2026 © WhatsApp LLC Privacy & Terms"
+    },
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. …"
+    }
+  ]
+}

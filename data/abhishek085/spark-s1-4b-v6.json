@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "abhishek085/spark-s1-4b-v6",
+  "slug": "abhishek085-spark-s1-4b-v6",
+  "author": "abhishek085",
+  "url": "https://huggingface.co/abhishek085/spark-s1-4b-v6",
+  "created_at": "2026-09-22T19:24:59.000Z",
+  "updated_at": "2026-09-22T19:26:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "decision-model",
+    "system-one",
+    "jev",
+    "agent-guardrails",
+    "tool-call-safety",
+    "classification",
+    "text-classification",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8431547725,
+  "storage_human": "8.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/index.php/?lang=ar",
+      "snippet": "Forgot password? More languages…"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/login.php/?lang=ar",
+      "snippet": "Forgot password? More languages…"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/facebook/",
+      "snippet": "There's a new way to enhance your Facebook experience. Swipe to see the Facebook Plus features included with your Meta One …"
+    },
+    {
+      "title": "Facebook - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.facebook.katana&hl=ar",
+      "snippet": "سواء كنت تشتري أغراض مستعملة، أو تعرض مقطع ريلز للمجموعة التي يظهر لها، أو تُشارك الضحكات على صور ممتعة أُعيد تصورها بواسطة الذكاء الاصطناعي، فإن فيسبوك يساعدك على تحقيق …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/r.php/",
+      "snippet": "Create an account to connect with friends, family and communities of people who share your interests. You may receive notifications …"
+    }
+  ]
+}

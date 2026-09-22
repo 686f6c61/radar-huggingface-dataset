@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/OpenThai-SystemOne-CoreAI",
+  "slug": "mlboydaisuke-openthai-systemone-coreai",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/OpenThai-SystemOne-CoreAI",
+  "created_at": "2026-09-22T20:41:25.000Z",
+  "updated_at": "2026-09-22T20:45:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": null,
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "openthai_systemone",
+    "coreai",
+    "decision-model",
+    "system-one",
+    "zero-shot-classification",
+    "thai",
+    "custom_code",
+    "th",
+    "en",
+    "base_model:iapp/OpenThai-SystemOne",
+    "base_model:finetune:iapp/OpenThai-SystemOne",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2565772874,
+  "storage_human": "2.6 GB",
+  "base_model": "iapp/OpenThai-SystemOne",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "carrello zaino | Vinted",
+      "url": "https://www.vinted.it/items/7405584130-carrello-zaino",
+      "snippet": "carrello zaino - carrello porta zaino usato ma in ottime condizioni. presenta pochi segni di usura dovuto all'uso ma rimane funzionale"
+    },
+    {
+      "title": "carrello porta zaino BLU | Vinted",
+      "url": "https://www.vinted.it/items/7466518715-carrello-porta-zaino-blu",
+      "snippet": "carrello porta zaino BLU - carrello per portare zaino scolastico, SJ, ottime condizioni, blu. Manico allungabile."
+    },
+    {
+      "title": "Carrello porta zaino - Vinted",
+      "url": "https://www.vinted.fr/items/9422189065-carrello-porta-zaino?msockid=2aa99022e87f6ad22d5987fee9ae6b37",
+      "snippet": "Carrello porta zaino - Carrello porta zaino usato poche volte"
+    },
+    {
+      "title": "Carrello porta zaino | Vinted",
+      "url": "https://www.vinted.es/items/9785437184-carrello-porta-zaino",
+      "snippet": "Carrello porta zaino - Carrello porta zaino Be Box Seven. Allungabile, pieghevole. Utilizzato, con segni di usura ma ancora utilizzabile."
+    },
+    {
+      "title": "Carrello porta zaino - Vinted",
+      "url": "https://www.vinted.fr/items/7132882836-carrello-porta-zaino?msockid=2aa99022e87f6ad22d5987fee9ae6b37",
+      "snippet": "Carrello porta zaino - Carrello portazaino in buone condizioni con ganci elastici"
+    }
+  ]
+}

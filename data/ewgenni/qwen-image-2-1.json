@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ewgenni/Qwen-Image-2.1",
+  "slug": "ewgenni-qwen-image-2-1",
+  "author": "ewgenni",
+  "url": "https://huggingface.co/ewgenni/Qwen-Image-2.1",
+  "created_at": "2026-09-22T18:36:47.000Z",
+  "updated_at": "2026-09-22T18:36:47.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "qwen",
+    "image-generation",
+    "image-editing",
+    "rgba",
+    "text-to-image",
+    "license:other",
+    "diffusers:QwenImage21Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 33130368862,
+  "storage_human": "33.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ECS - Buy Ladies Shoes, Apparels, Bags & Accessories",
+      "url": "https://shopecs.com/",
+      "snippet": "ECS the best shoe brand in Pakistan. The perfect women’s shoes are available in Various colors and designs. Also, grab stylish …"
+    },
+    {
+      "title": "Buy Women Heels Shoes Online In Pakistan | ECS",
+      "url": "https://shopecs.com/collections/women-heels",
+      "snippet": "The perfect heels for girls are available in all sizes and the best colors, only from ECS. So, hop on the ECS store today and get the …"
+    },
+    {
+      "title": "ECS - Excellent Courier Services – Worth Relying on US!",
+      "url": "https://ecs.com.pk/",
+      "snippet": "EXCELLENT COURIER SERVICES (ECS) is the most desirable and fastest growing attestation and courier firm in Pakistan, serving …"
+    },
+    {
+      "title": "HOME | ECSP",
+      "url": "https://www.ecsp.com.pk/",
+      "snippet": "Engineering Consultancy Services Punjab (Pvt.) Limited (ECSP) is a government established engineering consultancy firm delivering …"
+    },
+    {
+      "title": "Track Your Shipment / Documents – Excellent Courier Services - ECS",
+      "url": "https://ecs.com.pk/track-form/",
+      "snippet": "For the fastest and reliable delivery of documents and parcels ECS network has spread over 20 divisional headquarters nationwide …"
+    }
+  ]
+}

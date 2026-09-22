@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "jbrashear/jebadiah-4b-v0",
+  "slug": "jbrashear-jebadiah-4b-v0",
+  "author": "jbrashear",
+  "url": "https://huggingface.co/jbrashear/jebadiah-4b-v0",
+  "created_at": "2026-09-22T15:59:43.000Z",
+  "updated_at": "2026-09-22T16:00:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "decision-model",
+    "system-one",
+    "calibrated-probabilities",
+    "typed-decisions",
+    "ainode",
+    "en",
+    "dataset:LocalLLaMA/typed-decisions",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 152488489,
+  "storage_human": "152 MB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Jevals suite 0.1.0, PubMedQA (noul)",
+      "metric": null,
+      "value": 87.7
+    },
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Jevals suite 0.1.0, PubMedQA (noul)",
+      "metric": null,
+      "value": 62
+    },
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Jevals suite 0.1.0, Banking77 (choice, 77-way)",
+      "metric": null,
+      "value": 68.7
+    },
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Jevals suite 0.1.0, Banking77 (choice, 77-way)",
+      "metric": null,
+      "value": 53.8
+    },
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Nimble public human-labelled subsets (13, macro accuracy)",
+      "metric": null,
+      "value": 73
+    }
+  ],
+  "sources": [
+    {
+      "title": "Joyn - Live-TV, Serien, Filme & Sport kostenlos streamen",
+      "url": "https://www.joyn.at/",
+      "snippet": "Aug 23, 2026 · Joyn, Österreichs SuperStreamer. Joyn bringt das Beste zusammen: Streaming & Fernsehen - kostenlos für …"
+    },
+    {
+      "title": "Live TV kostenlos auf Joyn streamen",
+      "url": "https://www.joyn.at/live-tv",
+      "snippet": "Jan 8, 2025 · Über 130 TV-Sender sowie aktuelle Sportevents live ansehen bequem von zu Hause oder unterwegs. In der App im …"
+    },
+    {
+      "title": "Joyn Community | joynaustria-at",
+      "url": "https://community.joyn.at/",
+      "snippet": "Du willst wissen, was gerade in der Welt von Joyn, TV, Streaming und Entertainment passiert? Dann haben wir gute Nachrichten: …"
+    },
+    {
+      "title": "Willkommen | joynaustria-at",
+      "url": "https://community.joyn.at/willkommen-1",
+      "snippet": "Auf news.joyn.at halten wir Dich regelmäßig auf dem Laufenden, zum Beispiel mit: News aus der Medien‑, TV‑ und …"
+    },
+    {
+      "title": "Aktuelle News, Hintergründe & Livestreams auf JOYN News",
+      "url": "https://news.joyn.at/",
+      "snippet": "Dec 23, 2022 · Aktuelle Nachrichten, Videos und Bilder aus den Bereichen Politik, Unterhaltung, Sport und Panorama von JOYN News."
+    }
+  ]
+}

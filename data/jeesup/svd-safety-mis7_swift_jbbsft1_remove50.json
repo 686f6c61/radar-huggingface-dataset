@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-mis7_swift_jbbsft1_remove50",
+  "slug": "jeesup-svd-safety-mis7_swift_jbbsft1_remove50",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-mis7_swift_jbbsft1_remove50",
+  "created_at": "2026-09-22T13:22:53.000Z",
+  "updated_at": "2026-09-22T13:25:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991459,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forbidden Mods - einfach verboten gut",
+      "url": "https://forbidden-mods.de/forum/",
+      "snippet": "Die besten kostenlosen LS25 Mods auf forbidden-mods.de. Traktoren, Maps, Fahrzeuge & realistische FS25 Mods jetzt schnell …"
+    },
+    {
+      "title": "Fs17 FBM Teammods - Forbidden Mods - einfach verboten gut",
+      "url": "https://forbidden-mods.de/filebase/category-file-list/206-fs17-fbm-teammods/",
+      "snippet": "May 21, 2021 · 🏆 Forbidden Mods LS25 – Kostenlose Mods für Farming Simulator 25 u. 22 Download"
+    },
+    {
+      "title": "Südhemmern - Forbidden Mods - einfach verboten gut",
+      "url": "https://forbidden-mods.de/filebase/file/1260-s%C3%BCdhemmern/",
+      "snippet": "Jun 9, 2018 · BITTE die aktuelle Version des Seasons-Mods benutzen, der heißt jetzt FS17_RM_Seasons, nicht der von Modhoster, …"
+    },
+    {
+      "title": "LS17 Eicher 3010 - Forbidden Mods - einfach verboten gut",
+      "url": "https://forbidden-mods.de/filebase/file/11710-ls17-eicher-3010/",
+      "snippet": "Feb 12, 2020 · Hier stelle ich euch einer meiner letzten LS17 mods zur verfügung. Ein Eicher 3010 aus dem LS13 zusammengebaut …"
+    },
+    {
+      "title": "Ls17 Hof Bergmann - Reloaded - Forbidden Mods - einfach verboten gut",
+      "url": "https://forbidden-mods.de/filebase/file/973-ls17-hof-bergmann-reloaded/",
+      "snippet": "May 13, 2018 · Hof Bergmann - Reloaded - Verschmutzungen an Futtertrögen bei den Tieren deaktiviert - Schweinemist liegt nun im …"
+    }
+  ]
+}

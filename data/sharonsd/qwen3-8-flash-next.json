@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sharonSD/Qwen3.8-Flash-Next",
+  "slug": "sharonsd-qwen3-8-flash-next",
+  "author": "sharonSD",
+  "url": "https://huggingface.co/sharonSD/Qwen3.8-Flash-Next",
+  "created_at": "2026-09-22T18:16:02.000Z",
+  "updated_at": "2026-09-22T18:16:02.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 360013002208,
+  "storage_human": "360.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gratis Live Adult Webcams | strip.chat",
+      "url": "https://de.strip.chat/girls",
+      "snippet": "Live-Pornocams mit Tausenden von Models online – Frauen, Männer, Paare und Trans-Performer, Soloräume und Gruppenszenen …"
+    },
+    {
+      "title": "Stripchat — Free Live Cam Shows",
+      "url": "https://stripchat.app/",
+      "snippet": "Stripchat is the one-stop destination for live cams enthusiasts who love to connect and interact with live cam girls and users alike. …"
+    },
+    {
+      "title": "German Free Live Sex Cams with Naked Girls | strip.chat",
+      "url": "https://strip.chat/girls/german",
+      "snippet": "Watch LIVE these hot babes in German sex cams. ️ Enter their naked chat now and enjoy the show for FREE! 🔥"
+    },
+    {
+      "title": "Free Live Adult Cams and Live Sex Chat | Stripchat Global",
+      "url": "https://stripchat.global/girls",
+      "snippet": "Live porn cams with thousands of models online — women, men, couples and trans performers, solo rooms and group scenes across …"
+    },
+    {
+      "title": "Gratis Live Adult Webcams | Stripchat Global",
+      "url": "https://de.stripchat.global/girls",
+      "snippet": "Live-Pornocams mit Tausenden von Models online – Frauen, Männer, Paare und Trans-Performer, Soloräume und Gruppenszenen …"
+    }
+  ]
+}

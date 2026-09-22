@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vigneshlabs/ballot-jev-0.5b",
+  "slug": "vigneshlabs-ballot-jev-0-5b",
+  "author": "vigneshlabs",
+  "url": "https://huggingface.co/vigneshlabs/ballot-jev-0.5b",
+  "created_at": "2026-09-22T20:44:50.000Z",
+  "updated_at": "2026-09-22T20:55:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "decision-model",
+    "typed-decisions",
+    "text-classification",
+    "zero-shot-classification",
+    "permutation-invariance",
+    "calibration",
+    "cpu",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2024930186,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startseite | Drachenblut2",
+      "url": "https://db2.opogame.com/",
+      "snippet": "Drachenblut 2 ist ein Spiel, das RPG und RTS kombiniert. Man kann darin schöne Grafik und vielfältige Gameplays genießen. Komm …"
+    },
+    {
+      "title": "Startseite | Drachenblut2 - Opogame",
+      "url": "https://db2.opogame.com/index?page=1",
+      "snippet": "Drachenblut 2 ist ein Spiel, das RPG und RTS kombiniert. Man kann darin schöne Grafik und vielfältige Gameplays genießen. Komm …"
+    },
+    {
+      "title": "Benutzerkonto | Drachenblut2",
+      "url": "https://db2.opogame.com/user/",
+      "snippet": "Drachenblut 2 ist ein Spiel, das RPG und RTS kombiniert. Man kann darin schöne Grafik und vielfältige Gameplays genießen. Komm …"
+    },
+    {
+      "title": "Drachenblut 2 - CreaGames",
+      "url": "https://www.creagames.com/de/game/dk2?popup=login",
+      "snippet": "Bilden Sie den besten Team und führen es zum Sieg. — PVP und PVE Aktivitäten: Dungeons, Arenas, Farm Zonen, Cross Server …"
+    },
+    {
+      "title": "Drachenblut 2 - mail-portal.creagames.ru",
+      "url": "https://mail-portal.creagames.ru/de/game/dk2?popup=login&redirect_url=%2Fde%2Fgame%2Fdk2%2Fauto",
+      "snippet": "Beschreibung Drachenblut 2 ist die unikale Hybride von RPG und RTS Genres. Die Welt ist in Gefahr. Elfen, Dwarven und Menschen …"
+    }
+  ]
+}

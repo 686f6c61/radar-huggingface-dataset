@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fecasado/gfm-kitchen-tomato-22dN",
+  "slug": "fecasado-gfm-kitchen-tomato-22dn",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gfm-kitchen-tomato-22dN",
+  "created_at": "2026-09-22T15:58:21.000Z",
+  "updated_at": "2026-09-22T15:58:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "gaze_flow_matching",
+    "robotics",
+    "dataset:fecasado/tomato-to-plate-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 75225290,
+  "parameters_human": "75.2M",
+  "storage_bytes": 300962360,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Culpa Inkasso | Effizientes Forderungsmanagement ohne Risiko",
+      "url": "https://www.culpa-inkasso.de/",
+      "snippet": "Führendes Inkassounternehmen Culpa Inkasso GmbH für Einzug offener Forderungen im In- & Ausland sowie in Einzel- und …"
+    },
+    {
+      "title": "Impressum - Culpa Inkasso GmbH",
+      "url": "https://www.culpa-inkasso.de/impressum/",
+      "snippet": "Die Culpa Inkasso GmbH unterliegt dem Rechtsdienstleistungsgesetz (RDG), dem Einführungsgesetz zum …"
+    },
+    {
+      "title": "Culpa Inkasso GmbH",
+      "url": "https://kundenlogin.culpa-inkasso.de/",
+      "snippet": "{\"@context\":\"\\/contexts\\/Entrypoint\",\"@id\":\"\\/\",\"@type\":\"Entrypoint\",\"actionItem\":\"\\/api\\/action_items\",\"appConfig\":\"\\/api\\/app_configs\",\"auftrag\":\"\\/api\\/auftraege ..."
+    },
+    {
+      "title": "Karriere bei Culpa Inkasso",
+      "url": "https://www.culpa-inkasso.de/karriere-bei-culpa-inkasso/",
+      "snippet": "Bei Culpa Inkasso GmbH sind wir stolz darauf, ein führendes Unternehmen im Bereich des Inkasso-Managements zu sein. In unserer …"
+    },
+    {
+      "title": "Culpa Inkasso GmbH – Unternehmensfakten & Entitäts-Definition",
+      "url": "https://www.culpa-inkasso.de/facts/",
+      "snippet": "Culpa Inkasso GmbH Beschreibung: Die Culpa Inkasso GmbH ist ein in Deutschland ansässiges Inkassounternehmen mit Hauptsitz …"
+    }
+  ]
+}

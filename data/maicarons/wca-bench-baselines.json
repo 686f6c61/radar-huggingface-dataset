@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Maicarons/WCA-Bench-baselines",
+  "slug": "maicarons-wca-bench-baselines",
+  "author": "Maicarons",
+  "url": "https://huggingface.co/Maicarons/WCA-Bench-baselines",
+  "created_at": "2026-09-22T14:42:19.000Z",
+  "updated_at": "2026-09-22T15:14:13.000Z",
+  "license": "wca-export-terms",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sklearn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "benchmark",
+    "sports-analytics",
+    "speedcubing",
+    "wca",
+    "tabular",
+    "time-series",
+    "causal-inference",
+    "machine-learning",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4014,
+  "storage_human": "4014 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Provincia di Salerno - Home Page",
+      "url": "https://www.provincia.salerno.it/",
+      "snippet": "Si è insediato oggi, ufficialmente a Palazzo Sant'Agostino, il nuovo Consiglio del Forum dei Giovani della Provincia di Salerno: un …"
+    },
+    {
+      "title": "Provincia di Salerno - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Provincia_di_Salerno",
+      "snippet": "La provincia di Salerno è una provincia italiana della Campania di 1 052 217 abitanti [1]. È la seconda provincia campana e la decima …"
+    },
+    {
+      "title": "Provincia di Salerno - Home Page",
+      "url": "https://www.provincia.salerno.it/index.php?option=com_search",
+      "snippet": "Bando pubblico per la presentazione delle domande di ammissione all'esame per il conseguimento dell'abilitazione degli insegnanti di …"
+    },
+    {
+      "title": "Provincia di Salerno (SA) - Guida ai comuni e info utili",
+      "url": "https://www.tuttitalia.it/campania/provincia-di-salerno/",
+      "snippet": "Jan 1, 2026 · La provincia di Salerno è un ente di area vasta della Campania con 158 comuni e 1.053.302 abitanti. Informazioni su …"
+    },
+    {
+      "title": "Portale:Provincia di Salerno - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Portale:Provincia_di_Salerno",
+      "snippet": "La provincia di Salerno è un ente italiano che rappresenta un territorio di 158 comuni situati nella Regione Campania. Conta oltre 1 …"
+    }
+  ]
+}

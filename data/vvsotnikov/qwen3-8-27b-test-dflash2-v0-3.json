@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "vvsotnikov/Qwen3.8-27B-test-DFlash2-v0.3",
+  "slug": "vvsotnikov-qwen3-8-27b-test-dflash2-v0-3",
+  "author": "vvsotnikov",
+  "url": "https://huggingface.co/vvsotnikov/Qwen3.8-27B-test-DFlash2-v0.3",
+  "created_at": "2026-09-22T18:59:12.000Z",
+  "updated_at": "2026-09-22T18:59:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 3848817920,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "I migliori 10 ristoranti Peruviano a Milano - TheFork",
+      "url": "https://www.thefork.it/ristoranti/milano-c348156/peruviano-t458",
+      "snippet": "TROVA IL MIGLIOR ristorante Peruviano a Milano su TheFork. Leggi le recensioni degli utenti, consulta i menu, i prezzi, e prenota …"
+    },
+    {
+      "title": "Ristoranti peruviani a Milano: ecco dove mangiare ceviche e altre …",
+      "url": "https://www.ilgiornaledelcibo.it/ristoranti-peruviani-milano-indirizzi/",
+      "snippet": "Feb 14, 2019 · Non soltanto ceviche, ma anche anticuchos, caldo blanco e solterito de queso: ecco alcuni ristoranti peruviani di …"
+    },
+    {
+      "title": "Dove gustare la miglior ceviche nella cosmopolita Milano",
+      "url": "https://initalia.virgilio.it/dove-mangiare-a-milano-la-ceviche-peruviana-23026",
+      "snippet": "Oct 30, 2018 · Il piatto tipico peruviano a base di pesce crudo, verdure e spezie, spopola nel parterre milanese dei piatti più ricercati. …"
+    },
+    {
+      "title": "Ceviche recipe, origin, and Peruvian style - TreXperience",
+      "url": "https://trexperienceperu.com/blog/ceviche",
+      "snippet": "May 27, 2026 · Discover the ceviche: its origin, recipe, ingredients, peruvian ceviche, ceviche varieties, health benefits, leche de tigre, …"
+    },
+    {
+      "title": "The best Peruvian Restaurants Near me | OpenTable",
+      "url": "https://www.opentable.com/nearme/peruvian-restaurants-near-me",
+      "snippet": "6 days ago · Let OpenTable use your current location to find great Peruvian restaurants nearby. Explore reviews, menus and photos; …"
+    }
+  ]
+}

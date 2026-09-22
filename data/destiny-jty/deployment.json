@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Destiny-JTY/deployment",
+  "slug": "destiny-jty-deployment",
+  "author": "Destiny-JTY",
+  "url": "https://huggingface.co/Destiny-JTY/deployment",
+  "created_at": "2026-09-22T16:16:35.000Z",
+  "updated_at": "2026-09-22T16:20:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2471964913,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Destiny Eleven · Écrivez votre légende du football",
+      "url": "https://www.destinyeleven.com/",
+      "snippet": "Destiny Eleven : un jeu de carrière de footballeur où chaque choix compte. De 16 ans à la retraite, écrivez votre légende saison après …"
+    },
+    {
+      "title": "Destiny 2 | Bungie.net",
+      "url": "https://www.bungie.net/7/fr/Destiny",
+      "snippet": "Jun 18, 2026 · À la une Destiny 2 : La Collection Destiny 2 : Récompenses triomphantes Lot d'Argentum Récentes Celle qui réactive …"
+    },
+    {
+      "title": "Destiny 2: Play for Free | Bungie.net",
+      "url": "https://www.bungie.net/7/en/Destiny/NewLight",
+      "snippet": "The Destiny universe is vast and inviting. This guide, and a community of millions, are here to help."
+    },
+    {
+      "title": "Destiny (jeu vidéo) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Destiny_(jeu_vid%C3%A9o)",
+      "snippet": "L'histoire de Destiny prend place dans le futur, au sein d'un environnement post-apocalyptique. Il y a 700 ans de cela, une sphère …"
+    },
+    {
+      "title": "Destiny (video game) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Destiny_(video_game)",
+      "snippet": "Destiny marked Bungie's first new console franchise since the Halo series, and it was the first game in a 10-year agreement between …"
+    }
+  ]
+}

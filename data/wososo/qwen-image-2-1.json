@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Wososo/Qwen-Image-2.1",
+  "slug": "wososo-qwen-image-2-1",
+  "author": "Wososo",
+  "url": "https://huggingface.co/Wososo/Qwen-Image-2.1",
+  "created_at": "2026-09-22T18:15:40.000Z",
+  "updated_at": "2026-09-22T18:15:40.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "qwen",
+    "image-generation",
+    "image-editing",
+    "rgba",
+    "text-to-image",
+    "license:other",
+    "diffusers:QwenImage21Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 33130368862,
+  "storage_human": "33.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grudziądz – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Grudzi%C4%85dz",
+      "snippet": "Grudziądz, w przeciwieństwie do innych miast ze średniowiecznym rodowodem, nie przeszedł fazy budowy wałów ziemno …"
+    },
+    {
+      "title": "Grudziadz365.pl - Grudziądz informacje i wydarzenia",
+      "url": "https://grudziadz365.pl/pl/index.php",
+      "snippet": "Grudziądz - portal miejski. Grudziadz365.pl to grudziądzki portal informacyjny. Wiadomości z Grudziądza i okolic, sport, region, …"
+    },
+    {
+      "title": "Grudziądz",
+      "url": "https://grudziadz.pl/",
+      "snippet": "W sobotę, 19 września, Grudziądz po raz kolejny włączy się w ogólnopolską akcję Sprzątanie Świata. Po wspólnym sprzątaniu pięciu …"
+    },
+    {
+      "title": "Grudziądz Nasze Miasto - Wiadomości, informacje i wydarzenia",
+      "url": "https://grudziadz.naszemiasto.pl/",
+      "snippet": "Sprawdź najnowsze wiadomości z miasta Grudziądz w serwisie Nasze Miasto. Znajdziesz tu aktualności i informacje na temat sportu, …"
+    },
+    {
+      "title": "Grudziądz: co zobaczyć?- lista najciekawszych atrakcji 2026",
+      "url": "https://grafywpodrozy.pl/grudziadz/",
+      "snippet": "Nov 6, 2025 · Grudziądz to idealny kierunek na jednodniową wycieczkę. Najważniejsze zabytki, takie jak zespół spichlerzy, Góra …"
+    }
+  ]
+}

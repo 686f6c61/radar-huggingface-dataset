@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "slvDev/esp32-ai-fly",
+  "slug": "slvdev-esp32-ai-fly",
+  "author": "slvDev",
+  "url": "https://huggingface.co/slvDev/esp32-ai-fly",
+  "created_at": "2026-09-22T13:04:57.000Z",
+  "updated_at": "2026-09-22T13:05:12.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "esp32-ai",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "esp32-ai",
+    "esp32",
+    "esp32-s3",
+    "connectome",
+    "drosophila",
+    "malecns",
+    "escape-behaviour",
+    "embedded",
+    "neuroscience",
+    "custom-runtime",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89651462,
+  "storage_human": "90 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quik for windows 11 - GoPro Support Hub",
+      "url": "https://community.gopro.com/s/question/0D53b00008BttqPCAR/quik-for-windows-11?language=en_US",
+      "snippet": "Quik for desktop was discontinued over 4 years ago at this point. It's old outdated unsupported discontinued software. Nick Woodman …"
+    },
+    {
+      "title": "Quik For Desktop - GoPro Support Hub",
+      "url": "https://community.gopro.com/s/topic/0TO3b000000EdV3GAK/quik-for-desktop?language=en_US",
+      "snippet": "Sep 7, 2026 · Explore GoPro support for Quik desktop app, including resources, updates, manuals, and community insights to …"
+    },
+    {
+      "title": "GoPro Support",
+      "url": "https://community.gopro.com/s/?language=en_US",
+      "snippet": "Find answers to your GoPro questions, explore support articles, and get help from the community."
+    },
+    {
+      "title": "Sign in to gopro.com",
+      "url": "https://community.gopro.com/s/article/GoPro-App-for-Desktop-is-Now-Available?language=en_US",
+      "snippet": "GoPro app for desktop now available, offering enhanced editing and sharing features for your videos."
+    },
+    {
+      "title": "GoPro Legacy Software",
+      "url": "https://community.gopro.com/s/article/GoPro-legacy-software?language=en_US",
+      "snippet": "GoPro is shifting gears to focus solely on mobile-focused editing solutions that serve the on-the-go GoPro lifestyle. As part of this …"
+    }
+  ]
+}

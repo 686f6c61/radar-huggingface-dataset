@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nwtgck/Qwen3.8-27B-GGUF",
+  "slug": "nwtgck-qwen3-8-27b-gguf",
+  "author": "nwtgck",
+  "url": "https://huggingface.co/nwtgck/Qwen3.8-27B-GGUF",
+  "created_at": "2026-09-22T13:23:14.000Z",
+  "updated_at": "2026-09-22T13:23:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 120739651328,
+  "storage_human": "120.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps Help",
+      "url": "https://support.google.com/maps/?hl=en",
+      "snippet": "Official Google Maps Help Center where you can find tips and tutorials on using Google Maps and other answers to frequently asked …"
+    },
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "Download areas & navigate offline in Google Maps",
+      "url": "https://support.google.com/maps/answer/6291838?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Use offline maps in Google Maps After you download an area, use the Google Maps app just like you normally would. If your internet …"
+    },
+    {
+      "title": "Obtenir et afficher les itinéraires dans Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google Maps vous permet d'obtenir des itinéraires en voiture, en transports en commun, à pied, en partage de course, à vélo, en …"
+    },
+    {
+      "title": "Use Street View in Google Maps",
+      "url": "https://support.google.com/maps/answer/3093484?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Use Street View in Google Maps You can explore world landmarks and natural wonders, and experience places like museums, …"
+    }
+  ]
+}

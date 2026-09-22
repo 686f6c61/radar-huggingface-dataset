@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "EricMingle69/rl_course_vizdoom_health_gathering_supreme",
+  "slug": "ericmingle69-rl_course_vizdoom_health_gathering_supreme",
+  "author": "EricMingle69",
+  "url": "https://huggingface.co/EricMingle69/rl_course_vizdoom_health_gathering_supreme",
+  "created_at": "2026-09-22T18:17:43.000Z",
+  "updated_at": "2026-09-22T18:19:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 108268194,
+  "storage_human": "108 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[DM 600] Is de smartkaart van TV vlaanderen te gebruiken",
+      "url": "https://www.sat4all.com/forums/topic/245943-dm-600-is-de-smartkaart-van-tv-vlaanderen-te-gebruiken/",
+      "snippet": "Aug 13, 2008 · hi guys, ik heb mij vandaag een hoedje verschoten. Ik heb mijn dreambox 600 pvr ontvangen. jesus....die is in de wast …"
+    },
+    {
+      "title": "oscam_1.20-rev-9038-oe1.6 - CI, CI+, (soft)cams en smartcards - Sat4all ...",
+      "url": "https://www.sat4all.com/forums/topic/336734-oscam_120-rev-9038-oe16/",
+      "snippet": "Nov 19, 2013 · Wilde vandaag mijn versie updaten van 8923 naar 9038 maar ik krijg mijn tv vlaanderen kaart niet werkende met deze …"
+    },
+    {
+      "title": "HD zenders bevriezen na 5 min. - DVB-receivers - Sat4all - Alles over ...",
+      "url": "https://www.sat4all.com/forums/topic/244304-hd-zenders-bevriezen-na-5-min/",
+      "snippet": "Jul 13, 2008 · Hi, Ik gebruik een emulator die connect naar interne gbox (mijn dreambox) waar mijn tv vlaanderen kaart in steekt."
+    },
+    {
+      "title": "configuratie, beginnersvragen, graag jullie tips en opmerkingen!",
+      "url": "https://www.sat4all.com/forums/topic/213664-configuratie-beginnersvragen-graag-jullie-tips-en-opmerkingen/",
+      "snippet": "Apr 2, 2007 · Kan ik mijn tv-vlaanderen abonnement in elke kamer gebruiken zonder steeds het kaartje te moeten hersteken? Zijn er …"
+    },
+    {
+      "title": "[ IPBOX 9000] Met PGI v0.3 image geen canal digitaal zenders",
+      "url": "https://www.sat4all.com/forums/topic/274403-ipbox-9000-met-pgi-v03-image-geen-canal-digitaal-zenders/",
+      "snippet": "Dec 3, 2009 · Sluit mij aan bij de heren. Zowel op mijn Canaal Digitaal als mijn TV Vlaanderen kaart geen beeld te krijgen."
+    }
+  ]
+}

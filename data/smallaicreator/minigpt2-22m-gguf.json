@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SmallAICreator/MiniGPT2-22M-GGUF",
+  "slug": "smallaicreator-minigpt2-22m-gguf",
+  "author": "SmallAICreator",
+  "url": "https://huggingface.co/SmallAICreator/MiniGPT2-22M-GGUF",
+  "created_at": "2026-09-22T13:23:06.000Z",
+  "updated_at": "2026-09-22T13:23:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "small-language-model",
+    "from-scratch",
+    "on-device",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22028160,
+  "parameters_human": "22.0M",
+  "storage_bytes": 44636864,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prezzi Benzina Oggi 2,16euro/L - Gasolio 2,33euro/L | Benzina24",
+      "url": "https://www.benzina24.it/",
+      "snippet": "14 hours ago · Accedi direttamente ai prezzi benzina, gasolio, GPL e metano nelle città con più distributori attivi. Per ogni città trovi la …"
+    },
+    {
+      "title": "Prezzi Carburante: Trova Benzina, Diesel e GPL Vicino a Te",
+      "url": "https://prezzi-carburante.it/",
+      "snippet": "Trova i distributori di benzina, diesel, GPL e metano più economici vicino a te. Confronta i prezzi dei carburanti sempre aggiornati e …"
+    },
+    {
+      "title": "Mappa Carburanti — prezzi vicino a te in Italia",
+      "url": "https://mappacarburanti.it/",
+      "snippet": "La mappa interattiva dei prezzi carburante in Italia: trova il distributore più economico vicino a te, prezzi aggiornati oggi dal feed MIMIT."
+    },
+    {
+      "title": "Mappa dei prezzi dei Benzina in tempo reale in Italia",
+      "url": "https://benzina-prezzi.it/mappa-del-carburante/benzina",
+      "snippet": "Mappa interattiva dei prezzi del Benzina aggiornata in tempo reale. Trova i prezzi dei carburanti in Italia direttamente sulla mappa. …"
+    },
+    {
+      "title": "Prezzi Carburanti Oggi: Benzina, Diesel, GPL e Metano",
+      "url": "https://www.quattroruote.it/guide/viaggio-e-rifornimento/prezzi-stazioni-servizio.html",
+      "snippet": "14 hours ago · Controlla i prezzi aggiornati di Benzina, Diesel, GPL e Metano e trova il distributore più conveniente vicino a te."
+    }
+  ]
+}

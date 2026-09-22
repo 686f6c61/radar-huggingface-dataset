@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mohanpoduri2005/reinforce-CartPole-v1",
+  "slug": "mohanpoduri2005-reinforce-cartpole-v1",
+  "author": "mohanpoduri2005",
+  "url": "https://huggingface.co/mohanpoduri2005/reinforce-CartPole-v1",
+  "created_at": "2026-09-22T16:13:48.000Z",
+  "updated_at": "2026-09-22T16:13:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "reinforce",
+  "languages": [],
+  "tags": [
+    "reinforce",
+    "reinforcement-learning",
+    "CartPole-v1",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54,
+  "storage_human": "54 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Informacja kwartalna 2026 | Rzecznik Praw Obywatelskich",
+      "url": "https://bip.brpo.gov.pl/pl/content/informacja-kwartalna-2026",
+      "snippet": "May 15, 2026 · Załączniki: Informacja_kwartalna_styczen_marzec_2026.pdf Informacja_kwartalna_kwiecien_czerwiec_2026.pdf …"
+    },
+    {
+      "title": "Biuletyn Informacji Publicznej RPO | Rzecznik Praw Obywatelskich",
+      "url": "https://bip.brpo.gov.pl/pl",
+      "snippet": "Jakie masz prawa, kto Ci może pomóc? Działania RPO w sprawach obywateli i bieżące relacje ze stanu przestrzegania …"
+    },
+    {
+      "title": "Uchwała Sejmu Rzeczypospolitej Polskiej z dnia 17 lipca 2026 r. w ...",
+      "url": "https://eli.gov.pl/eli/MP/2026/736/ogl",
+      "snippet": "Jul 17, 2026 · Podstawa prawna z art. (2)"
+    },
+    {
+      "title": "Rzecznik Praw Obywatelskich – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Rzecznik_Praw_Obywatelskich",
+      "snippet": "Rzecznik Praw Obywatelskich jest zobowiązany przedstawić co roku Sejmowi i Senatowi informacje o swojej działalności oraz o …"
+    },
+    {
+      "title": "Monitor Polski 2026 r. poz. 736",
+      "url": "https://monitorpolski.gov.pl/MP/2026/736",
+      "snippet": "Rządowe Centrum Legislacji Uchwała Sejmu Rzeczypospolitej Polskiej z dnia 17 lipca 2026 r. w sprawie powołania Rzecznika Praw …"
+    }
+  ]
+}

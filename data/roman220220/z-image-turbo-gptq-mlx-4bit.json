@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "roman220220/z-image-turbo-gptq-mlx-4bit",
+  "slug": "roman220220-z-image-turbo-gptq-mlx-4bit",
+  "author": "roman220220",
+  "url": "https://huggingface.co/roman220220/z-image-turbo-gptq-mlx-4bit",
+  "created_at": "2026-09-22T16:26:35.000Z",
+  "updated_at": "2026-09-22T16:57:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mflux",
+    "z-image",
+    "gptq",
+    "quantized",
+    "image-generation",
+    "text-to-image",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:finetune:Tongyi-MAI/Z-Image-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5903746555,
+  "storage_human": "5.9 GB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "قناة الصحراء الفضائية - YouTube",
+      "url": "https://www.youtube.com/@ALSahraaTV/posts",
+      "snippet": "4 قناة الصحراء الفضائية 3 months ago 1 قناة الصحراء الفضائية 3 months ago 1 قناة الصحراء الفضائية 3 months ago 1"
+    },
+    {
+      "title": "The official channel of KSA Qur’an TV - YouTube",
+      "url": "https://www.youtube.com/channel/UCos52azQNBgW63_9uDJoPDA",
+      "snippet": "The official channel of KSA Qur’an TV on YouTube, under the supervision of Saudi Broadcasting Authority (Governmental Institution …"
+    },
+    {
+      "title": "شاهد البث المباشر | العربية",
+      "url": "https://www.alarabiya.net/live-stream",
+      "snippet": "شاهدوا البث المباشر لقناة العربية أينما كنتم وتعرفوا على أبرز الأخبار وأهم المستجدات على الصعيدين الإقليمي والعالمي من خلال البرامج والتقارير ونشرات الأخبار."
+    },
+    {
+      "title": "البث المباشر لقناة الصحراء - YouTube",
+      "url": "https://www.youtube.com/watch?v=6lEMULjl9Ts",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "البث المباشر لمهرجان الملك عبدالعزيز للابل l اليوم الحادي و الثلاثون 31 ...",
+      "url": "https://www.youtube.com/watch?v=6WlxRXqD5Qc",
+      "snippet": "Dec 31, 2024 · البث المباشر لمهرجان الملك عبدالعزيز للابل l اليوم الحادي و الثلاثون 31-12-2024 قناة الصحراء الفضائية 46.9K subscribers"
+    }
+  ]
+}

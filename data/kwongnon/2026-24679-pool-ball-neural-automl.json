@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "kwongnon/2026-24679-pool-ball-neural-automl",
+  "slug": "kwongnon-2026-24679-pool-ball-neural-automl",
+  "author": "kwongnon",
+  "url": "https://huggingface.co/kwongnon/2026-24679-pool-ball-neural-automl",
+  "created_at": "2026-09-22T18:57:35.000Z",
+  "updated_at": "2026-09-22T18:57:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "autogluon",
+  "languages": [],
+  "tags": [
+    "autogluon",
+    "automl",
+    "pool-balls",
+    "image-classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32894510,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reife Frauen",
+      "url": "https://www.reifefrauen.com/",
+      "snippet": "Reife Frauen - Lernen Sie ältere Damen aus Ihrer Umgebung kennen und erfüllen Sie sich Ihre Fantasien!"
+    },
+    {
+      "title": "ReifeFrauen.com",
+      "url": "https://www.reifefrauen.com/homepage",
+      "snippet": "reifefrauen Das Mindestalter für die Nutzung dieses Fantasy-Chat-Portals beträgt 18 Jahre. Diese Seite wurde optimiert für Desktop, …"
+    },
+    {
+      "title": "reifefrauen.com",
+      "url": "https://live.reifefrauen.com/landing/bb2001",
+      "snippet": "Reifefrauen Du möchtest neue, spannende Erfahrungen machen und suchst nach interessanten Treffen? Entdecke hier, wie es ist, …"
+    },
+    {
+      "title": "reifefrauen.com",
+      "url": "https://start.reifefrauen.com/landing/eac2000",
+      "snippet": "reifefrauen.com aus 20xxx Deutschland Haben Blondinen mehr Spaß? Ja, das ist wahr! Ich bin ein gutes Beispiel dafür, dass man …"
+    },
+    {
+      "title": "reifefrauen.com",
+      "url": "https://start.reifefrauen.com/landing/ms2100",
+      "snippet": "reifefrauen.com Anonyme und kostenlose Mitgliedschaft Niemand muss wissen, wer Sie wirklich sind"
+    }
+  ]
+}

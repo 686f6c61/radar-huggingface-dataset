@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ixmo/xxxxx",
+  "slug": "ixmo-xxxxx",
+  "author": "Ixmo",
+  "url": "https://huggingface.co/Ixmo/xxxxx",
+  "created_at": "2026-09-22T17:09:11.000Z",
+  "updated_at": "2026-09-22T17:09:11.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Altadefinizione: nuovo link aggiornato | Settembre 2026 - tuttoteK",
+      "url": "https://www.tuttotek.it/web-social/guide-web-social/altadefinizione-nuovo-link-aggiornato",
+      "snippet": "Sep 1, 2026 · Altadefinizione: nuovo link per accedere al sito aggiornato. Ecco anche come sbloccarlo con DNS, VPN e tutte le …"
+    },
+    {
+      "title": "Altadefinizione – Film e Serie in Streaming in HD in Italia",
+      "url": "https://www.altadefinizione4k.online/",
+      "snippet": "Altadefinizione ti offre film e serie in streaming in alta definizione in Italia. Guarda contenuti sempre aggiornati, veloci e disponibili su …"
+    },
+    {
+      "title": "Altadefinizione (2026) - Guarda film e Serie TV in Alta Definizione",
+      "url": "https://altadefinizionepremium.click/",
+      "snippet": "Cerchi Altadefinizione ufficiale? Guarda e scarica oltre 33.000 film/serie streaming in HD e 4K Gratis, come sempre. Nuovo sito 2026"
+    },
+    {
+      "title": "Altadefinizione: nuovo link Settembre 2026 | GiardiniBlog",
+      "url": "https://www.giardiniblog.it/altadefinizione-nuovo-link/",
+      "snippet": "1 day ago · Altadefinizione è un sito streaming che vanta un catalogo di migliaia di film e episodi TV, il tutto senza registrazione. Il …"
+    },
+    {
+      "title": "Migliori siti streaming film e serie tv gratis | Settembre 2026",
+      "url": "https://www.tuttotek.it/web-social/guide-web-social/migliori-siti-streaming",
+      "snippet": "2 days ago · I migliori siti streaming sono quelli che ti permettono di godere dei tuoi film e serie tv preferiti, in alta qualità di …"
+    }
+  ]
+}

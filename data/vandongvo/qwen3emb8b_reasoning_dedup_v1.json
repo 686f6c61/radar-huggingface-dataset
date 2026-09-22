@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "VanDongVo/qwen3emb8b_reasoning_dedup_v1",
+  "slug": "vandongvo-qwen3emb8b_reasoning_dedup_v1",
+  "author": "VanDongVo",
+  "url": "https://huggingface.co/VanDongVo/qwen3emb8b_reasoning_dedup_v1",
+  "created_at": "2026-09-22T20:38:53.000Z",
+  "updated_at": "2026-09-22T20:43:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-Embedding-8B",
+    "base_model:adapter:Qwen/Qwen3-Embedding-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 360669806,
+  "storage_human": "361 MB",
+  "base_model": "Qwen/Qwen3-Embedding-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lottozahlen und Lottoquoten | LOTTO.de",
+      "url": "https://www.lotto.de/lotto-6aus49/lottozahlen",
+      "snippet": "3 days ago · Aktuelle Lottozahlen und Lottoquoten der Ziehung von LOTTO 6aus49 am Mittwoch und Samstag und ein Lotto-Archiv …"
+    },
+    {
+      "title": "Eurojackpot Zahlen & Quoten | Eurolotto-Gewinnzahlen | LOTTO.de",
+      "url": "https://www.lotto.de/eurojackpot/zahlen",
+      "snippet": "4 days ago · Aktuelle Eurojackpot-Zahlen und Gewinnquoten der letzten Ziehungen am Dienstag und Freitag und ein Archiv der …"
+    },
+    {
+      "title": "KENO Zahlen und Quoten - LOTTO.de",
+      "url": "https://www.lotto.de/keno/zahlen",
+      "snippet": "Welche Quoten gibt es für die KENO-Zahlen? Die Lotterie KENO hat feste Gewinnquoten, die sowohl vom ausgewählten KENO-Typ …"
+    },
+    {
+      "title": "GlücksSpirale Gewinnzahlen und Quoten - LOTTO.de",
+      "url": "https://www.lotto.de/gluecksspirale/gewinnzahlen",
+      "snippet": "3 days ago · Aktuelle Zahlen und Quoten der GlücksSpirale am Samstag sowie der letzten Ziehungen und ein Archiv der …"
+    },
+    {
+      "title": "LOTTO 6aus49: Live-Ziehung der Lottozahlen | LOTTO.de",
+      "url": "https://www.lotto.de/lotto-6aus49/lotto-ziehung",
+      "snippet": "Die Live-Ziehung der Lottozahlen jeden Mittwoch um 18:25 Uhr und jeden Samstag um 19:25 Uhr im Livestream auf LOTTO.de."
+    }
+  ]
+}

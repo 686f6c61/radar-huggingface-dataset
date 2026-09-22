@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "HYGGEhygge/someone",
+  "slug": "hyggehygge-someone",
+  "author": "HYGGEhygge",
+  "url": "https://huggingface.co/HYGGEhygge/someone",
+  "created_at": "2026-09-22T16:05:37.000Z",
+  "updated_at": "2026-09-22T16:05:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "那 twitch 平台它在哪里才可下载?_百度知道",
+      "url": "https://zhidao.baidu.com/question/1844393321857812260.html",
+      "snippet": "那 twitch 平台它在哪里才可下载?Twitch平台可在应用平台和官方网址下载，具体如下：一、应用平台下载Twitch在Android应用平台提 …"
+    },
+    {
+      "title": "AE插件Twitch怎么消除水印和红色的XX？ 偶是AE cs4版本",
+      "url": "https://zhidao.baidu.com/question/306907330.html",
+      "snippet": "Aug 14, 2011 · AE插件Twitch怎么消除水印和红色的XX？ 偶是AE cs4版本把那个key文件放在AE的根目录的插件文件夹下 就可以了 希 …"
+    },
+    {
+      "title": "twitch - 知乎",
+      "url": "https://www.zhihu.com/topic/19851981/hot",
+      "snippet": "根据其内部分析师透露，Twitch每月的访问量超过3800万，有超过2000万个游戏玩家汇聚到这个平台，每个访问用户在网站的日平均 …"
+    },
+    {
+      "title": "twitch - 知乎",
+      "url": "https://www.zhihu.com/topic/19851981/intro",
+      "snippet": "Twitch是一个专注于游戏相关内容的流媒体平台，支持多语言，拥有大量用户和高访问量，每日平均停留时间较长。"
+    },
+    {
+      "title": "twitch网络错误2000的原因及解决方法_百度知道",
+      "url": "https://zhidao.baidu.com/question/1832868349947998908.html",
+      "snippet": "Dec 18, 2025 · Twitch网络错误2000通常由流媒体服务器与Twitch服务器间的网络连接问题引发，也可能与浏览器缓存、防火墙设置、 …"
+    }
+  ]
+}

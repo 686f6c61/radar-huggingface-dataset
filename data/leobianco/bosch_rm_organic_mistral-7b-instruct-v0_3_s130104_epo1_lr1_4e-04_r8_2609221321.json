@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "leobianco/bosch_RM_organic_Mistral-7B-Instruct-v0_3_S130104_epo1_lr1_4e-04_r8_2609221321",
+  "slug": "leobianco-bosch_rm_organic_mistral-7b-instruct-v0_3_s130104_epo1_lr1_4e-04_r8_2609221321",
+  "author": "leobianco",
+  "url": "https://huggingface.co/leobianco/bosch_RM_organic_Mistral-7B-Instruct-v0_3_S130104_epo1_lr1_4e-04_r8_2609221321",
+  "created_at": "2026-09-22T13:22:22.000Z",
+  "updated_at": "2026-09-22T13:24:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "lora",
+    "transformers",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6855881,
+  "storage_human": "7 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le petit cocoon de village, Bessan (tarifs actualisés pour 2026)",
+      "url": "https://www.booking.com/hotel/fr/le-petit-cocoon-de-village.fr.html?msockid=3091d6cab12c642e3331c116b061659b",
+      "snippet": "L’hébergement Le petit cocoon de village vous accueille à Bessan, à respectivement 18 km, 18 km et 20 km de ces lieux d’intérêt : …"
+    },
+    {
+      "title": "Le petit cocoon de village, Bessan (updated prices 2026)",
+      "url": "https://www.booking.com/hotel/fr/le-petit-cocoon-de-village.html?msockid=3091d6cab12c642e3331c116b061659b",
+      "snippet": "Comfortable Accommodations: Le petit cocoon de village in Bessan offers a holiday home with two bedrooms and one bathroom. The …"
+    },
+    {
+      "title": "Le petit cocoon de village - Location saisonnière, 1 Rue de la ... - Mappy",
+      "url": "https://fr.mappy.com/poi/6a5419345bd63235b76dd01b",
+      "snippet": "L’hébergement Le petit cocoon de village vous accueille à Bessan. Cet hébergement avec climatisation est installé à 48 km de : GGL …"
+    },
+    {
+      "title": "Le petit cocon de village - Maisons à louer à Bessan ... - Airbnb",
+      "url": "https://fr.airbnb.ch/rooms/1721113580470166672",
+      "snippet": "Bienvenue dans cette charmante maison de village, entièrement rénovée et décorée avec goût. Chaleureuse, conviviale et bien …"
+    },
+    {
+      "title": "Le petit cocoon de village - Bessan 34550 - ViaMichelin",
+      "url": "https://www.viamichelin.fr/cartes-plans/hotels/poi/bessan-34550-701e2137",
+      "snippet": "L’hébergement Le petit cocoon de village vous accueille à Bessan. Cet hébergement avec climatisation est installé à 48 km de : GGL …"
+    }
+  ]
+}

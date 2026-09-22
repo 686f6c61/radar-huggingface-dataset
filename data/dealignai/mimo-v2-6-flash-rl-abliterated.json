@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "dealignai/MiMo-V2.6-Flash-RL-ABLITERATED",
+  "slug": "dealignai-mimo-v2-6-flash-rl-abliterated",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/MiMo-V2.6-Flash-RL-ABLITERATED",
+  "created_at": "2026-09-22T13:49:52.000Z",
+  "updated_at": "2026-09-22T13:50:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "redirect",
+    "uncensored",
+    "abliterated",
+    "mimo",
+    "mimo_v2",
+    "mimo-v2-6-flash",
+    "text-generation",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "base_model:finetune:XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sito Ufficiale | Stellantis",
+      "url": "https://www.stellantis.com/it",
+      "snippet": "Benvenuti nel sito web globale di Stellantis, uno dei principali costruttori automobilistici al mondo e fornitore di soluzioni di mobilità …"
+    },
+    {
+      "title": "MYFINANCE | Stellantis Financial Services",
+      "url": "https://www.stellantis-financial-services.it/myfinance",
+      "snippet": "MyFinance è l'area personale, disponibile gratuitamente per tutti i nostri Clienti. Grazie a questo servizio potrai accedere a tutti i …"
+    },
+    {
+      "title": "Stellantis - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Stellantis",
+      "snippet": "La caratteristica peculiare di questo logo riguarda le forme circolari che circondano il sesto grafema, la vocale \"A\" (stilizzata con due …"
+    },
+    {
+      "title": "Official Global Website | Stellantis",
+      "url": "http://www.stellantis.com/",
+      "snippet": "Welcome to the Official Global Website of Stellantis, a leading global automaker and provider of innovative mobility solutions."
+    },
+    {
+      "title": "Stellantis - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Stellantis",
+      "snippet": "Stellantis is the genitive, singular form, masculine and neuter, of the adjective stellans, or alternatively the present active participle of …"
+    }
+  ]
+}

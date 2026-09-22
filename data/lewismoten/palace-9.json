@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "lewismoten/palace-9",
+  "slug": "lewismoten-palace-9",
+  "author": "lewismoten",
+  "url": "https://huggingface.co/lewismoten/palace-9",
+  "created_at": "2026-09-22T19:15:03.000Z",
+  "updated_at": "2026-09-22T19:24:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen2moe",
+    "mixture-of-experts",
+    "llama.cpp",
+    "ollama",
+    "tic-tac-toe",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 648528,
+  "parameters_human": "648528",
+  "storage_bytes": 3434816,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Avanza",
+      "url": "https://www.avanza.se/start",
+      "snippet": "Avanza erbjuder ett enklare sparande i fonder och aktier. Kom igång med ett sparande på 3 minuter. Välkommen till Avanza – en …"
+    },
+    {
+      "title": "Börsen idag - Avanza",
+      "url": "https://www.avanza.se/borsen-idag.html",
+      "snippet": "Dec 18, 2025 · Se utvecklingen på börsen idag. Följ aktier, index, räntor, råvaror och valutor. Senaste nyheterna, dagens vinnare och …"
+    },
+    {
+      "title": "ADD与ADC，SUB与SBB的区别 - CSDN社区",
+      "url": "https://bbs.csdn.net/topics/60041357",
+      "snippet": "Jul 23, 2004 · 以下内容是CSDN社区关于ADD与ADC，SUB与SBB的区别相关内容，如果想了解更多关于汇编语言社区其他内容，请 …"
+    },
+    {
+      "title": "写出执行以下计算的指令序列，其中X，Y，Z，R和W均为存放16位带符 …",
+      "url": "https://bbs.csdn.net/topics/220082041",
+      "snippet": "May 8, 2008 · 以下内容是CSDN社区关于写出执行以下计算的指令序列，其中X，Y，Z，R和W均为存放16位带符号数单元的地址。相 …"
+    },
+    {
+      "title": "造梦西游3邪灵武器大全及怎样获得",
+      "url": "https://wenwen.sogou.com/question/q736867689.htm",
+      "snippet": "Dec 6, 2016 · null null 造梦西游3中邪灵武器属性都非常的给力，相信人人都想获得，每个职业对应的邪灵武器可能大家不是很清楚， …"
+    }
+  ]
+}

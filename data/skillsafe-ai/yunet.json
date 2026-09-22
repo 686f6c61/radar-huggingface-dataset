@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/yunet",
+  "slug": "skillsafe-ai-yunet",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/yunet",
+  "created_at": "2026-09-22T18:59:35.000Z",
+  "updated_at": "2026-09-22T18:59:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "skillsafe",
+    "browser",
+    "onnxruntime-web",
+    "face-detection",
+    "import",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 229738,
+  "storage_human": "229738 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "T.C. İçişleri Bakanlığı Jandarma Genel Komutanlığı - Trafik Kazası ...",
+      "url": "https://www.jandarma.gov.tr/trafik-kazasi-tespit-tutanagi",
+      "snippet": "Trafik Kazası Tespit Tutanağı 01 Nisan 2008 tarihinden itibaren kaza yapan taraflar aralarında anlaşmaları halinde, kendi aralarında …"
+    },
+    {
+      "title": "MADDİ HASARLI TRAFİK KAZASI TESPİT TUTANAĞI DİKKAT! - TMTB",
+      "url": "https://img.tmtb.org.tr/images/kaza-tespit-tutanagi.pdf",
+      "snippet": "MADDİ HASARLI TRAFİK KAZASI TESPİT TUTANAĞI DİKKAT! a) Kaza te. pit tutanagını gerçeğe uygun şekilde düzenleyiniz. …"
+    },
+    {
+      "title": "Kaza Tespit Tutanağı",
+      "url": "https://www.turkiyesigorta.com.tr/hasar/kaza-tespit-tutanagi",
+      "snippet": "Kaza Tespit Tutanağını inceleyerek maddi hasarlı kazalarınızı doğru şekilde belgeleyin. Tutanağı incelemek için sitemizi ziyaret edin!"
+    },
+    {
+      "title": "Kaza Tespit Tutanağı Boş .pdf / e-yasamrehberi.com",
+      "url": "https://www.e-yasamrehberi.com/oto-rehberi/trafik_kazasi_tespit_tutanagi.htm",
+      "snippet": "Kaza Tespit Tutanağı yazılı olarak veya elektronik ortamda Sigorta Bilgi ve Gözetim Merkezi (SBM) nin sağladığı uygulamalar ile …"
+    },
+    {
+      "title": "Kaza Tespit Tutanağı Örneği ve Doldurma Rehberi (2026 Güncel)",
+      "url": "https://ornekbelge.com.tr/belge/arac-ve-trafik/tutanak/kaza-tespit-tutanagi-aciklamali-ornegi",
+      "snippet": "Maddi hasarlı kazalar için Kaza Tespit Tutanağı nasıl doldurulur? Anlaşmalı tutanak örneği, kusur oranı süreci ve Word formatında …"
+    }
+  ]
+}

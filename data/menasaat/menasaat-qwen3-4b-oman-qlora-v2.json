@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "menasaat/menasaat-qwen3-4b-oman-qlora-v2",
+  "slug": "menasaat-menasaat-qwen3-4b-oman-qlora-v2",
+  "author": "menasaat",
+  "url": "https://huggingface.co/menasaat/menasaat-qwen3-4b-oman-qlora-v2",
+  "created_at": "2026-09-22T12:37:34.000Z",
+  "updated_at": "2026-09-22T12:38:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "oman",
+    "arabic",
+    "qwen3",
+    "qlora",
+    "lora",
+    "fine-tuned",
+    "menasaat",
+    "tourism",
+    "middle-east",
+    "rag",
+    "text-generation",
+    "ar",
+    "en",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:eu"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610538,
+  "storage_human": "144 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "Marvelous sky：16、17年开始知乎让你转码； 18、19让你赶紧从土木跑路； 20、21知乎让你别买房； 24年知乎让你买小米股票； 现 …"
+    },
+    {
+      "title": "FINAL FANTASY RESONANCE 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/B.php?bsn=27444",
+      "snippet": "May 25, 2025 · 歡迎來到FINAL FANTASY RESONANCE哈啦板，最新資訊及情報分享、精華好文查找、創作交流討論，盡在巴哈姆 …"
+    },
+    {
+      "title": "【攻略】由淺入深玩死神之攻略（究極大彙整）（新手最該優先看的文 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=27808&snA=9625",
+      "snippet": "Jul 17, 2026 · 情報 「BLEACH Brave Souls Official Artworks確定發售紀念 黑崎一護召喚」新紀念一護池資訊 其他 死神Bleach Brave …"
+    },
+    {
+      "title": "目前AI编程工具哪个最好用？ - 知乎",
+      "url": "https://www.zhihu.com/question/1973709336363701431",
+      "snippet": "叠甲声明：本文为个人主观测评！如有不同意见，欢迎在评论区友好交流～ 在深入评测具体AI工具前，我们先梳理一下AI编程工具的 …"
+    }
+  ]
+}

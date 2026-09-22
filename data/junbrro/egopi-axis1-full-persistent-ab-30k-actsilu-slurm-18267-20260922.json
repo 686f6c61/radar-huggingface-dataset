@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "junbrro/egopi-axis1-full-persistent-AB-30k-actsilu-slurm-18267-20260922",
+  "slug": "junbrro-egopi-axis1-full-persistent-ab-30k-actsilu-slurm-18267-20260922",
+  "author": "junbrro",
+  "url": "https://huggingface.co/junbrro/egopi-axis1-full-persistent-AB-30k-actsilu-slurm-18267-20260922",
+  "created_at": "2026-09-22T20:39:00.000Z",
+  "updated_at": "2026-09-22T20:42:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6915102808,
+  "parameters_human": "6.92B",
+  "storage_bytes": 13868885067,
+  "storage_human": "13.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DE 10 BESTE pizza restaurants in Brugge - Tripadvisor",
+      "url": "https://www.tripadvisor.be/Restaurants-g188671-c31-Bruges_West_Flanders_Province.html",
+      "snippet": "De beste pizzeria's in Brugge, België. Lees Tripadvisor-reizigersbeoordelingen van de beste pizza restaurants in Brugge en zoek op …"
+    },
+    {
+      "title": "Home - amuni",
+      "url": "https://www.amuni.be/",
+      "snippet": "Van de vulkanische vlaktes van Campania tot de heuvels van San Daniele: wij brengen het beste van Italië naar het hart van Brugge. …"
+    },
+    {
+      "title": "PIZZABAR ONESTO - The pizza with a story",
+      "url": "https://www.onesto-pizza.be/",
+      "snippet": "Aan de rand van het historische Brugge vind je de kern van de Italiaanse keuken, kraakverse pizza’s. Welkom bij Pizzabar Onesto! In …"
+    },
+    {
+      "title": "Pizza Di Trevi Brugge - Lekkerste pizza van Brugge!",
+      "url": "https://www.pizzaditrevi.be/",
+      "snippet": "Gewoonweg de lekkerste in Brugge! Wij bieden pizza, chicken nuggets, lookbroodjes en meer! Ook een heerlijk dessert zoals Ben & …"
+    },
+    {
+      "title": "Top 7 pizzeria's in Brugge, september 2026 - Restaurant Guru",
+      "url": "https://nl.restaurantguru.com/pizza-Bruges-c97",
+      "snippet": "Ontdek volledige informatie over pizza in Brugge en in de buurt. Bekijk beoordelingen, adressen en openingstijden van de beste …"
+    }
+  ]
+}

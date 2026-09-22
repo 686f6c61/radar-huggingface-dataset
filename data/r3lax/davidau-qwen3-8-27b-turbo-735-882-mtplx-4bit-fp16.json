@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "r3lax/DavidAU-Qwen3.8-27B-TURBO-735-882-MTPLX-4bit-FP16",
+  "slug": "r3lax-davidau-qwen3-8-27b-turbo-735-882-mtplx-4bit-fp16",
+  "author": "r3lax",
+  "url": "https://huggingface.co/r3lax/DavidAU-Qwen3.8-27B-TURBO-735-882-MTPLX-4bit-FP16",
+  "created_at": "2026-09-22T17:26:01.000Z",
+  "updated_at": "2026-09-22T17:28:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mtplx",
+    "qwen3",
+    "fp16",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356723952,
+  "parameters_human": "27.36B",
+  "storage_bytes": 16932084207,
+  "storage_human": "16.9 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Package Holidays You Can Trust | Jet2holidays",
+      "url": "https://www.jet2holidays.com/?msockid=2001cfc843466d7009a7d81442dc6c0c",
+      "snippet": "Our package holidays Here at Jet2holidays, we’re proud to be the UK’s largest tour operator and deliver Package Holidays You Can …"
+    },
+    {
+      "title": "All Inclusive Holidays 2026/2027 | All Inclusive Deals | Jet2holidays",
+      "url": "https://www.jet2holidays.com/all-inclusive?msockid=2001cfc843466d7009a7d81442dc6c0c",
+      "snippet": "Absolutely no hidden fees Big choice of board options Single parent discount Jet2holidays - The home of Real Package Holidays™"
+    },
+    {
+      "title": "Find & Book Flights Online | Cheap Flights with Jet2.com",
+      "url": "https://www.jet2.com/",
+      "snippet": "Because you're searching for more than five passengers, you'll need to visit Jet2holidays to start your search there. Or select different …"
+    },
+    {
+      "title": "Incredible deals & great availability | Jet2.com",
+      "url": "https://www.jet2.com/en/great-deals",
+      "snippet": "Sep 24, 2014 · Alternatively, get everything sorted when you book with Jet2holidays, the home of Real Package Holidays™ – you’ll …"
+    },
+    {
+      "title": "Holiday Destinations | Jet2holidays",
+      "url": "https://app.jet2holidays.com/beach-destinations",
+      "snippet": "Cheap package holidays from just £60pp deposit. Find all-inclusive & last minute cheap package holidays, ABTA and ATOL …"
+    }
+  ]
+}

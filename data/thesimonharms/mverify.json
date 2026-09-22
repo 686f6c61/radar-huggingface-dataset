@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "thesimonharms/mverify",
+  "slug": "thesimonharms-mverify",
+  "author": "thesimonharms",
+  "url": "https://huggingface.co/thesimonharms/mverify",
+  "created_at": "2026-09-22T14:46:50.000Z",
+  "updated_at": "2026-09-22T14:46:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-classification",
+    "verification",
+    "prompt-output",
+    "cpu",
+    "numpy",
+    "tf-idf",
+    "logistic-regression",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15431,
+  "storage_human": "15431 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Portale Inps - Accedi a MyINPS",
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.myinps.html",
+      "snippet": "Oct 26, 2023 · Dalla homepage del portale INPS clicca sul pulsante “ Accedi ” posizionato in alto a destra della pagina. Dopo …"
+    },
+    {
+      "title": "INPS - Autenticazione",
+      "url": "https://servizi2.inps.it/servizi/areariservata/bacheca",
+      "snippet": "Se sei già in possesso di un'identità digitale, accedi con le credenziali del tuo gestore. Se non hai ancora un'identità digitale, richiedila …"
+    },
+    {
+      "title": "Portale Inps - Home",
+      "url": "https://www.inps.it/",
+      "snippet": "Un punto unico di accesso per le famiglie su sanità, scuola, anagrafe e supporto socio-assistenziale."
+    },
+    {
+      "title": "Portale Inps - Fascicolo previdenziale del cittadino",
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.fascicolo-previdenziale-del-cittadino-50865.fascicolo-previdenziale-del-cittadino.html",
+      "snippet": "Apr 19, 2017 · Cos’è È un portale di accesso ai principali servizi messi a disposizione dall’INPS per l’utente."
+    },
+    {
+      "title": "Portale Inps - Home",
+      "url": "https://servizi2.inps.it/servizi/CIFWeb/Default.aspx",
+      "snippet": "Accedi al portale INPS per servizi previdenziali, assistenziali e informazioni personalizzate tramite MyINPS."
+    }
+  ]
+}

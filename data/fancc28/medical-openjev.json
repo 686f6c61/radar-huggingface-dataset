@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "fancc28/Medical-OpenJev",
+  "slug": "fancc28-medical-openjev",
+  "author": "fancc28",
+  "url": "https://huggingface.co/fancc28/Medical-OpenJev",
+  "created_at": "2026-09-22T13:04:19.000Z",
+  "updated_at": "2026-09-22T13:27:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 901245440,
+  "storage_human": "901 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DHL Sendungsverfolgung - den Status Ihrer Pakete verfolgen | DHL",
+      "url": "https://www.dhl.de/de/privatkunden/dhl-sendungsverfolgung.html",
+      "snippet": "Mit der Sendungsverfolgung behalten Sie Ihre Pakete im Blick. Das Tracking gibt Ihnen Auskunft, wo das Paket gerade ist und wann …"
+    },
+    {
+      "title": "Sendungsverfolgung - DHL - Deutschland",
+      "url": "https://www.dhl.com/de-de/home/sendungsverfolgung.html",
+      "snippet": "Internationale Sendungsverfolgung Ihrer DHL-Sendung: Halten Sie Ihre Sendungsverfolgungsnummer für die Sendungsverfolgung …"
+    },
+    {
+      "title": "DHL Express Tracking Sendungsverfolgung | DHL Express",
+      "url": "https://www.dhl.de/de/geschaeftskunden/express/verfolgen.html",
+      "snippet": "Mit unserer Sendungsverfolgung haben Sie Ihre weltweiten Express-Sendungen immer im Blick. Geben Sie unten einfach Ihre …"
+    },
+    {
+      "title": "Sendungsverfolgung für Briefe und Pakete | Deutsche Post",
+      "url": "https://www.deutschepost.de/de/s/sendungsverfolgung.html",
+      "snippet": "Die Basis-Sendungsverfolgung kann für Briefmarken und Internetmarken über die Post & DHL App genutzt werden. Scannen Sie dort …"
+    },
+    {
+      "title": "Sendungsverfolgung - DHL - Österreich",
+      "url": "https://www.dhl.com/at-de/home/sendungsverfolgung.html",
+      "snippet": "Internationale Sendungsverfolgung Ihrer DHL-Sendung: Halten Sie Ihre Sendungsverfolgungsnummer für die Sendungsverfolgung …"
+    }
+  ]
+}

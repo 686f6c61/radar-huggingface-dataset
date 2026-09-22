@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mn47/speech_to_text",
+  "slug": "mn47-speech_to_text",
+  "author": "mn47",
+  "url": "https://huggingface.co/mn47/speech_to_text",
+  "created_at": "2026-09-22T13:56:26.000Z",
+  "updated_at": "2026-09-22T13:56:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A mixed methods study of ruminant brucellosis in central-eastern ...",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27696219/",
+      "snippet": "Abstract In this study, we conducted an investigation to determine the true prevalence of bovine and ovine brucellosis in central …"
+    },
+    {
+      "title": "A mixed methods study of ruminant brucellosis in central-eastern Tunisia",
+      "url": "https://link.springer.com/content/pdf/10.1007/s11250-016-1155-x.pdf",
+      "snippet": "Abstract In this study, we conducted an investigation to de-termine the true prevalence of bovine and ovine brucellosis in central …"
+    },
+    {
+      "title": "A mixed methods study of ruminant brucellosis in central-eastern ...",
+      "url": "https://link.springer.com/article/10.1007/s11250-016-1155-x",
+      "snippet": "Oct 1, 2016 · Abstract In this study, we conducted an investigation to determine the true prevalence of bovine and ovine brucellosis in …"
+    },
+    {
+      "title": "Sci-Hub | A mixed methods study of ruminant brucellosis in central ...",
+      "url": "https://sci-hub.st/10.1007/s11250-016-1155-x",
+      "snippet": "Barkallah, M., Gharbi, Y., Zormati, S., Karkouch, N., Mallek, Z., Gautier, M., … Fendri, I. (2016). A mixed methods study of ruminant …"
+    },
+    {
+      "title": "Molecular prevalence of Chlamydia and Chlamydia‐like bacteria in ...",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/tbed.12757?msockid=2cc9e6cb29376c9411edf117281f6d10",
+      "snippet": "Nov 9, 2017 · To gain insight into the prevalence and diversity of these intracellular bacteria, we applied a pan- Chlamydiales real …"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "nwtgck/LFM2.5-230M-GGUF",
+  "slug": "nwtgck-lfm2-5-230m-gguf",
+  "author": "nwtgck",
+  "url": "https://huggingface.co/nwtgck/LFM2.5-230M-GGUF",
+  "created_at": "2026-09-22T13:25:01.000Z",
+  "updated_at": "2026-09-22T13:25:01.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it"
+  ],
+  "tags": [
+    "gguf",
+    "liquid",
+    "lfm2.5",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "base_model:LiquidAI/LFM2.5-230M",
+    "base_model:quantized:LiquidAI/LFM2.5-230M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 1984543616,
+  "storage_human": "2.0 GB",
+  "base_model": "LiquidAI/LFM2.5-230M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Patagonya Travel",
+      "url": "https://www.patagonyatravel.com/",
+      "snippet": "Uçuş milleriniz ile uçak biletinizi kendiniz de alabilirsiniz. Gezilerimizde güleryüzlü profesyonel yerel rehberler kullanıyoruz. …"
+    },
+    {
+      "title": "Patagonya Gezi Rehberi - Şili ve Arjantin’in Uçsuz Bucaksız Doğası",
+      "url": "https://kucukdunya.com/patagonya-gezi-rehberi-sili-ve-arjantinin-ucsuz-bucaksiz-dogasi/",
+      "snippet": "Nov 4, 2025 · Dünyanın en güney noktası olan Patagonya; Arjantin ve Şili arasında, Batı Patagonya (Şili) ve Doğu Patagonya …"
+    },
+    {
+      "title": "Patagonya Gezi Rehberi | Gezimanya",
+      "url": "https://gezimanya.com/patagonya",
+      "snippet": "Gezimanya'da Patagonya hakkında bilgi bulabilir, Patagonya gezi notlarına, fotoğraflarına, turlarına ve videolarına ulaşabilirsiniz. …"
+    },
+    {
+      "title": "Patagonya Turları - Patagonya Turu Fiyatları 2026 | Setur",
+      "url": "https://www.setur.com.tr/patagonya-turlari",
+      "snippet": "Patagonya TurlarıEn Uygun Fiyatlar, Hızlı ve Güvenli Ödeme Seçenekleri ile Setur'da. %15'e Varan İndirim Fırsatlarını Kaçırmayın, …"
+    },
+    {
+      "title": "Patagonya Turları - Paskalya Adası Turları | EJDER TURİZM",
+      "url": "https://www.ejderturizm.com.tr/TourList.aspx?contpg=99&pcmncat=1&pcsbcat=67&cntid=1&regid=33",
+      "snippet": "Patagonya Turlarımız , Perito Moreno Buzulu, Macellan Boğazı Torres del Paine Milli Parkı , Punta Arenas ve daha birçok şehriyle …"
+    }
+  ]
+}

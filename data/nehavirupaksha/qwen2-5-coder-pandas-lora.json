@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NehaVirupaksha/qwen2.5-coder-pandas-lora",
+  "slug": "nehavirupaksha-qwen2-5-coder-pandas-lora",
+  "author": "NehaVirupaksha",
+  "url": "https://huggingface.co/NehaVirupaksha/qwen2.5-coder-pandas-lora",
+  "created_at": "2026-09-22T15:14:31.000Z",
+  "updated_at": "2026-09-22T15:14:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28884324,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le solitaire : jeu de cartes gratuit sans inscription, en français et ...",
+      "url": "https://www.jeu-du-solitaire.com/",
+      "snippet": "Jouez gratuitement à ce grand classique des jeux de cartes en solo : le solitaire ! Faites un maximum de réussites à la suite et …"
+    },
+    {
+      "title": "Jeu-du-solitaire.com : nous contacter",
+      "url": "https://www.jeu-du-solitaire.com/formulaire-de-contact.html",
+      "snippet": "Le jeu du solitaire : nous contacter Remplissez le formulaire ci-dessous si vous souhaitez nous contacter, nous signaler un problème …"
+    },
+    {
+      "title": "Jeu-du-solitaire.com : informations légales",
+      "url": "https://www.jeu-du-solitaire.com/infos-legales.html",
+      "snippet": "Informations légales du site Jeu-du-solitaire.com : hébergement, directeur de publication, condition d'utilisation, informations sur …"
+    },
+    {
+      "title": "Jeu le solitaire : foire aux questions",
+      "url": "https://www.jeu-du-solitaire.com/foire-aux-questions.html",
+      "snippet": "Les questions les plus fréquentes concernant notre de jeu de cartes en ligne, le solitaire."
+    },
+    {
+      "title": "Le solitaire : jeu de cartes gratuit sans inscription, en français et ...",
+      "url": "https://www.jeu-du-solitaire.com/ads.txt",
+      "snippet": "google.com, pub-0980721890839038, DIRECT, f08c47fec0942fa0 . google.com, pub-0980721890839038, DIRECT, f08c47fec0942fa0"
+    }
+  ]
+}

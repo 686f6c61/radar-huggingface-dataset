@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "AnkitAI/tinyjev-0.6b",
+  "slug": "ankitai-tinyjev-0-6b",
+  "author": "AnkitAI",
+  "url": "https://huggingface.co/AnkitAI/tinyjev-0.6b",
+  "created_at": "2026-09-22T13:15:07.000Z",
+  "updated_at": "2026-09-22T14:36:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "feature-extraction",
+    "tinyjev",
+    "jev",
+    "decision-model",
+    "system-one",
+    "typed-decisions",
+    "mlx",
+    "text-classification",
+    "en",
+    "dataset:jaredpalmer/kev-suites",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-0.6B-Base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1205655114,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krzyżówki, Rozsypane Litery i Wykreślanki - Zabawy Słowne - Quizy",
+      "url": "https://www.quizme.pl/krzyzowki",
+      "snippet": "Krzyżówki, rozsypane litery, wykreślanki i wyszukiwanki w jednym miejscu. Rozwiązuj słowne łamigłówki online za darmo i …"
+    },
+    {
+      "title": "Krzyżówkowa środa - Krzyżówki - Quizy",
+      "url": "https://www.quizme.pl/dzial/krzyzowki",
+      "snippet": "Nowa krzyżówka w każdą środę - jeśli chcecie być na bieżąco, śledźcie nasz profil na Facebooku! Dodaj tę serię do ulubionych, aby …"
+    },
+    {
+      "title": "Quizowa.pl - Najlepsze Quizy Wiedzy w Internecie",
+      "url": "https://www.quizowa.pl/",
+      "snippet": "Rozwiązuj quizy wiedzy, psychotesty i testy psychologiczne. Zabawa i przyjemna intelektualna rozrywka w jednym!"
+    },
+    {
+      "title": "Najnowsze quizy - Quizowa.pl",
+      "url": "https://www.quizowa.pl/quiz/najnowsze",
+      "snippet": "Ten prosty quiz sprawdzi Twoją wiedzę! Gwara myśliwska - czy dogadałbyś się z myśliwym? Czy skojarzysz postać historyczną z …"
+    },
+    {
+      "title": "krzyżówki - Quizy.gazeta.pl",
+      "url": "https://quizy.gazeta.pl/krzyzowki",
+      "snippet": "Ten quiz jest jak krzyżówka, ale kryje w sobie pewien haczyk."
+    }
+  ]
+}

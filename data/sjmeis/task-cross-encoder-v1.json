@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "sjmeis/task-cross-encoder-v1",
+  "slug": "sjmeis-task-cross-encoder-v1",
+  "author": "sjmeis",
+  "url": "https://huggingface.co/sjmeis/task-cross-encoder-v1",
+  "created_at": "2026-09-22T15:17:03.000Z",
+  "updated_at": "2026-09-22T15:18:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "cross-encoder",
+    "reranker",
+    "generated_from_trainer",
+    "dataset_size:295091",
+    "loss:BinaryCrossEntropyLoss",
+    "text-ranking",
+    "arxiv:1908.10084",
+    "base_model:cross-encoder/ettin-reranker-68m-v1",
+    "base_model:finetune:cross-encoder/ettin-reranker-68m-v1",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68144640,
+  "parameters_human": "68.1M",
+  "storage_bytes": 273644940,
+  "storage_human": "274 MB",
+  "base_model": "cross-encoder/ettin-reranker-68m-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Cross Encoder Correlation",
+      "dataset": "val correlation",
+      "metric": "Pearson",
+      "value": 0.8441826559274118
+    },
+    {
+      "task": "Cross Encoder Correlation",
+      "dataset": "val correlation",
+      "metric": "Spearman",
+      "value": 0.8962414693746777
+    }
+  ],
+  "sources": [
+    {
+      "title": "Shell Startup vs. Common Startup? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/72813964/shell-startup-vs-common-startup",
+      "snippet": "Jun 30, 2022 · If I remember correctly, shell:startup (the currently logged in user.) shell:common startup (global, all users on the …"
+    },
+    {
+      "title": "placing a shortcut in user's Startup folder to start with Windows",
+      "url": "https://stackoverflow.com/questions/3391923/placing-a-shortcut-in-users-startup-folder-to-start-with-windows",
+      "snippet": "Oct 14, 2010 · I wanted to give my user an option for \"Start with Windows\". When user check this option it will place a shortcut icon …"
+    },
+    {
+      "title": "Shell Commands List for Windows 10 - Page 2 - | Tutorials",
+      "url": "https://www.tenforums.com/tutorials/3109-shell-commands-list-windows-10-a-2.html",
+      "snippet": "Jun 25, 2024 · Is there a list somewhere for shell commands that launch administrative tools, like the device manager as an …"
+    },
+    {
+      "title": "Add, Delete, Enable, or Disable Startup Items in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/2944-add-delete-enable-disable-startup-items-windows-10-a.html",
+      "snippet": "Jan 17, 2026 · This tutorial will show you how to manage startup items to add, delete, enable, or disable them for your account or for …"
+    },
+    {
+      "title": "Criar atalho com python - Stack Overflow em Português",
+      "url": "https://pt.stackoverflow.com/questions/494028/criar-atalho-com-python",
+      "snippet": "Feb 9, 2021 · A chave do registro \"HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders\" …"
+    }
+  ]
+}

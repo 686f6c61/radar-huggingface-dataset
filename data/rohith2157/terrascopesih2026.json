@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rohith2157/terrascopesih2026",
+  "slug": "rohith2157-terrascopesih2026",
+  "author": "rohith2157",
+  "url": "https://huggingface.co/rohith2157/terrascopesih2026",
+  "created_at": "2026-09-22T17:34:59.000Z",
+  "updated_at": "2026-09-22T18:17:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sa2va_chat",
+    "custom_code",
+    "license:apache-2.0",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8182649394,
+  "parameters_human": "8.18B",
+  "storage_bytes": 5853463180,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "100 Common Nouns with Examples in English and Pictures",
+      "url": "https://mrmrsenglish.com/100-common-nouns-with-examples/",
+      "snippet": "In this article, you will learn 100 common nouns with examples in English and clear pictures, helping kids, students, teachers, and …"
+    },
+    {
+      "title": "Common Noun: Definition, Examples, Rules, Exercises, PDF Worksheet",
+      "url": "https://deepgyan.com/english/grammar/nouns/common-nouns.php",
+      "snippet": "Understanding common nouns is essential for building a strong foundation in English grammar. This guide will explore their definition, …"
+    },
+    {
+      "title": "150 Examples of Common Nouns in English with Pictures",
+      "url": "https://www.vocabineer.com/examples-of-common-nouns/",
+      "snippet": "Apr 17, 2026 · In this easy-to-follow guide, you will find 150 common nouns in English arranged in clear categories. It includes …"
+    },
+    {
+      "title": "What Are Common Nouns? Common and Proper Nouns in English",
+      "url": "https://7esl.com/common-nouns/",
+      "snippet": "Apr 11, 2023 · Common nouns are the most basic and widely used type of nouns in English grammar. They are words that refer to …"
+    },
+    {
+      "title": "Common Noun Worksheets",
+      "url": "https://superstarworksheets.com/grammar-worksheets/parts-of-speech/noun-worksheets/common-noun-worksheets/",
+      "snippet": "Dec 27, 2025 · Free printable common noun worksheets, games, activities and more. Simple Nouns are great for kindergarten and …"
+    }
+  ]
+}

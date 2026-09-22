@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "xabimoreno/3D-LDMs-for-CT-MAR",
+  "slug": "xabimoreno-3d-ldms-for-ct-mar",
+  "author": "xabimoreno",
+  "url": "https://huggingface.co/xabimoreno/3D-LDMs-for-CT-MAR",
+  "created_at": "2026-09-22T13:22:52.000Z",
+  "updated_at": "2026-09-22T14:19:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "medical-imaging",
+    "ct",
+    "latent-diffusion",
+    "metal-artifact-reduction",
+    "3d",
+    "miccai",
+    "image-to-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1858021612,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vliegende Propellor met Licht bestellen - Het Speelgoedpaleis",
+      "url": "https://www.hetspeelgoedpaleis.com/Vliegende-Propellor-met-Licht",
+      "snippet": "Vliegende Propellor met Licht zorgt voor veel actie buiten in de tuin of in het park. Dit speelgoed bestaat uit een handig elastiek …"
+    },
+    {
+      "title": "ETRO-MIT/3D-LDMs-for-CT-MAR - GitHub",
+      "url": "https://github.com/ETRO-MIT/3D-LDMs-for-CT-MAR",
+      "snippet": "3D-LDMs-for-CT-MAR Implementation of the methods presented in \"Large-Volume Conditioned 3D Latent Diffusion Models for CT Metal Artifact Suppression\" paper in DGM4MICCAI 2026 workshop."
+    },
+    {
+      "title": "Gunther Turbo Light - flying propellor game with launcher and LED ...",
+      "url": "https://www.jadlamracingmodels.com/products/gunther-turbo-light-flying-propellor-game-with-launcher-and-led-lights-g1691",
+      "snippet": "Simply wind up the propeller on the launcher, then press the release button to make the propeller shoot into the air. The propeller is …"
+    },
+    {
+      "title": "3D-LDMs-for-CT-MAR/README.md at main - GitHub",
+      "url": "https://github.com/ETRO-MIT/3D-LDMs-for-CT-MAR/blob/main/README.md",
+      "snippet": "3D-LDMs-for-CT-MAR Implementation of the methods presented in \"Large-Volume Conditioned 3D Latent Diffusion Models for CT Metal Artifact Suppression\" paper in DGM4MICCAI 2026 workshop."
+    },
+    {
+      "title": "Vliegende Propellor met Licht | bol",
+      "url": "https://www.bol.com/nl/nl/p/vliegende-propellor-met-licht/9300000194206593/",
+      "snippet": "Vliegende Propellor met Licht. Elastiek waarmee lichtgevende propeller afgeschoten kan worden. Geschikt voor kinderen vanaf 3 jaar."
+    }
+  ]
+}

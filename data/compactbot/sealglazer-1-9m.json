@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Compactbot/sealglazer-1.9m",
+  "slug": "compactbot-sealglazer-1-9m",
+  "author": "Compactbot",
+  "url": "https://huggingface.co/Compactbot/sealglazer-1.9m",
+  "created_at": "2026-09-22T18:20:29.000Z",
+  "updated_at": "2026-09-22T18:41:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "sealglazer",
+    "tiny",
+    "tiny-lm",
+    "tiny-model",
+    "slm",
+    "small-language-model",
+    "from-scratch",
+    "pinniped",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1901696,
+  "parameters_human": "1.9M",
+  "storage_bytes": 7610224,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail - Email from Google",
+      "url": "https://mail.google.com/mail",
+      "snippet": "Gmail is email that's intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/login?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/Login",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    },
+    {
+      "title": "Gmail: Private & Secure Email for Personal or Business | Google …",
+      "url": "https://workspace.google.com/products/gmail/",
+      "snippet": "Access your inbox anytime, anywhere Gmail is available on your computer, phone, watch or tablet, so you can stay connected when …"
+    },
+    {
+      "title": "Gmail: Secure, AI-Powered Email for Everyone | Google Workspace",
+      "url": "https://workspace.google.com/gmail/",
+      "snippet": "Gmail, now powered by Gemini AI. Unlock new ways to write, reply, and organize your emails. Experience a more intelligent and …"
+    }
+  ]
+}

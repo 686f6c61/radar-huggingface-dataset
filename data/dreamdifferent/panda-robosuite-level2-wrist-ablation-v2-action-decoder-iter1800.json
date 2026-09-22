@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/panda-robosuite-level2-wrist-ablation-v2-action-decoder-iter1800",
+  "slug": "dreamdifferent-panda-robosuite-level2-wrist-ablation-v2-action-decoder-iter1800",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/panda-robosuite-level2-wrist-ablation-v2-action-decoder-iter1800",
+  "created_at": "2026-09-22T18:42:08.000Z",
+  "updated_at": "2026-09-22T18:42:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "robotics",
+    "action-prediction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1000269372,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IEX.nl | Koersinformatie, beursnieuws, aandelentips en forum",
+      "url": "https://www.iex.nl/",
+      "snippet": "Sep 22, 2012 · IEX.nl Is hét beleggersplatform van Nederland. Volg hier jouw aandelen en blijf op de hoogte van alle relevante …"
+    },
+    {
+      "title": "Koersen » Europa » Nederland » AEX - IEX.nl",
+      "url": "https://www.iex.nl/koersen/europa/nederland/AEX.aspx",
+      "snippet": "Apr 12, 2024 · Realtime streaming beurskoersen van alle aandelen op de Amsterdamse AEX index."
+    },
+    {
+      "title": "Nepmail van ABN AMRO in omloop over Digipass - Radar",
+      "url": "https://radar.avrotros.nl/artikel/nepmail-van-abn-amro-in-omloop-over-digipass-32169",
+      "snippet": "01-05-2019 2 min. leestijd Nepmail van ABN AMRO in omloop over Digipass Heb je een mail gekregen van ABN AMRO over het …"
+    },
+    {
+      "title": "ABN AMRO: geld opnemen zonder bankpas via QR-code, is dit wel",
+      "url": "https://radar.avrotros.nl/artikel/abn-amro-geld-opnemen-zonder-bankpas-via-qr-code-is-dit-wel-veilig-51299",
+      "snippet": "Sep 24, 2021 · ABN AMRO: geld opnemen zonder bankpas via QR-code, is dit wel veilig? Klanten van ABN AMRO kunnen sinds …"
+    },
+    {
+      "title": "Opties voor ABN AMRO BANK N.V. | Alle call- en putopties",
+      "url": "https://www.iex.nl/Aandeel-Koers/612967/ABN-AMRO-BANK-NV/opties-expiratiedatum.aspx",
+      "snippet": "Dec 6, 2015 · Filter makkelijk op expiratiedatum Of uitoefenprijs voor de optiehandel in ABN AMRO BANK N.V."
+    }
+  ]
+}

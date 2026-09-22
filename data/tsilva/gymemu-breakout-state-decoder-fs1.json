@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tsilva/gymemu-breakout-state-decoder-fs1",
+  "slug": "tsilva-gymemu-breakout-state-decoder-fs1",
+  "author": "tsilva",
+  "url": "https://huggingface.co/tsilva/gymemu-breakout-state-decoder-fs1",
+  "created_at": "2026-09-22T17:43:22.000Z",
+  "updated_at": "2026-09-22T17:44:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "breakout",
+    "neural-rendering",
+    "state-to-image",
+    "mlp",
+    "dataset:tsilva/gradlab-breakout-c6d579da",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92159,
+  "storage_human": "92159 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - English Community - LENOVO COMMUNITY",
+      "url": "https://forums.lenovo.com/t5/English-Community/ct-p/Community-EN",
+      "snippet": "WELCOME TO LENOVO SUPPORT COMMUNITY Choose your community Help me identify my device Ask a question"
+    },
+    {
+      "title": "Lenovo T14s - Internal Microphone driver issue / No \"Mic\" under input ...",
+      "url": "https://forums.lenovo.com/rss/topic?fid=1300&tid=5042398",
+      "snippet": "We have a new Lenovo T14s Notebook. The internal microphone does not work."
+    },
+    {
+      "title": "[Y540] BIOS Recovery Mode [Flash BIOS from USB] in Lenovo IdeaPad …",
+      "url": "https://forums.lenovo.com/rss/topic?fid=1092&tid=5026109",
+      "snippet": "This guide will, hopefully, help you Flash your BIOS using a USB Flash Drive without having to boot into your OS."
+    },
+    {
+      "title": "Teclado parou de funcionar após atualização de ... - LENOVO …",
+      "url": "https://forums.lenovo.com/rss/topic?fid=2151&tid=5062915",
+      "snippet": "Ao preenche tô número de série, que foi reconhecido pelo próprio sistema de identificação da Lenovo, aparece o erro\"não …"
+    },
+    {
+      "title": "Installing Lenovo Vantage without using the Store in Pre-Installed ...",
+      "url": "https://forums.lenovo.com/rss/topic?fid=28&tid=5065514",
+      "snippet": "I found two separate, easy to download and install softwares Lenovo Diagnostics Tool and Lenovo Update that work well. But they …"
+    }
+  ]
+}

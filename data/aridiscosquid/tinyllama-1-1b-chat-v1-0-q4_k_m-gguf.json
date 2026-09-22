@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "AriDiscoSquid/TinyLlama-1.1B-Chat-v1.0-Q4_K_M-GGUF",
+  "slug": "aridiscosquid-tinyllama-1-1b-chat-v1-0-q4_k_m-gguf",
+  "author": "AriDiscoSquid",
+  "url": "https://huggingface.co/AriDiscoSquid/TinyLlama-1.1B-Chat-v1.0-Q4_K_M-GGUF",
+  "created_at": "2026-09-22T15:13:03.000Z",
+  "updated_at": "2026-09-22T15:13:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "dataset:cerebras/SlimPajama-627B",
+    "dataset:bigcode/starcoderdata",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "dataset:HuggingFaceH4/ultrafeedback_binarized",
+    "base_model:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "base_model:quantized:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 667816320,
+  "storage_human": "668 MB",
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Societe.com : RCS, siret, siren, bilan, l'information gratuite sur les ...",
+      "url": "https://www.societe.com/",
+      "snippet": "Trouvez le SIRET, le SIREN d'une entreprise, ses bilans, son Chiffre d'Affaire, ses résultats, sa raison sociale, son adresse, activité, …"
+    },
+    {
+      "title": "Societe.com : RCS, siret, siren, bilan, l'information gratuite sur les ...",
+      "url": "https://www.societe.com/glossaire/index.html",
+      "snippet": "SOCIETE.COM, service gratuit d'information sur les entreprises. Consultez les chiffres clés, l'identité, les dirigeants de toutes les …"
+    },
+    {
+      "title": "L’Annuaire des Entreprises françaises : les informations légales ...",
+      "url": "https://annuaire-entreprises.data.gouv.fr/",
+      "snippet": "Ce site permet de retrouver toutes les données publiques détenues par l'administration sur une entreprise, une association ou une …"
+    },
+    {
+      "title": "Les entreprises par departements Societe.com",
+      "url": "https://www.societe.com/entreprises",
+      "snippet": "Les entreprises par departements sur Societe.com Tous les départements de France Triés par code postal 01 Ain 210 628 …"
+    },
+    {
+      "title": "Numéro SIRET - définition - L’Annuaire des Entreprises",
+      "url": "https://annuaire-entreprises.data.gouv.fr/definitions/numero-siret",
+      "snippet": "Comment obtenir un numéro de SIRET ? Le numéro SIRET est délivré automatiquement après la demande d’immatriculation de …"
+    }
+  ]
+}

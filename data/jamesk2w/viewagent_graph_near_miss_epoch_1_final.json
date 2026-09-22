@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JamesK2W/viewagent_graph_near_miss_epoch_1_final",
+  "slug": "jamesk2w-viewagent_graph_near_miss_epoch_1_final",
+  "author": "JamesK2W",
+  "url": "https://huggingface.co/JamesK2W/viewagent_graph_near_miss_epoch_1_final",
+  "created_at": "2026-09-22T13:11:39.000Z",
+  "updated_at": "2026-09-22T13:41:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "viewagent",
+    "graphrl",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 35080010162,
+  "storage_human": "35.1 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/",
+      "snippet": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie …"
+    },
+    {
+      "title": "Datenschutz – Street View – Google Maps",
+      "url": "https://maps.google.de/intl/de/help/maps/streetview/privacy.html",
+      "snippet": "Google Maps mit Street View bietet Ihnen die Möglichkeit, Orte auf der ganzen Welt in einer 360-Grad-Panoramaansicht auf …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, find locations, get directions, and access real-time traffic updates."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/download/ge/",
+      "snippet": "Jun 4, 2025 · Mit Google Earth können Sie nicht nur um die Welt fliegen und sich Satellitenbilder, Karten, Geländeformationen und …"
+    },
+    {
+      "title": "Por que o Google? - Google for Retail",
+      "url": "https://maps.google.de/intl/ALL_br/retail/why-google/",
+      "snippet": "O Google é o primeiro lugar que os compradores consultam ao procurar produtos novos. Descubra como transformar plataformas do …"
+    }
+  ]
+}

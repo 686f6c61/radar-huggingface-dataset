@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "T-K-C/DeepSeek-V4-Pro-0813",
+  "slug": "t-k-c-deepseek-v4-pro-0813",
+  "author": "T-K-C",
+  "url": "https://huggingface.co/T-K-C/DeepSeek-V4-Pro-0813",
+  "created_at": "2026-09-22T16:40:26.000Z",
+  "updated_at": "2026-09-22T16:40:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "arxiv:2606.19348",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1650497936906,
+  "parameters_human": "1650.50B",
+  "storage_bytes": 892755974486,
+  "storage_human": "892.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qatar’s Zones List 2025 - Data-Driven Look into Every District",
+      "url": "https://seekqatar.com/guide/qatar-zones-list/",
+      "snippet": "Aug 15, 2026 · Whether you’re exploring the vibrant heart of Doha or the tranquil edges of Al Shamal, each zone represents a piece …"
+    },
+    {
+      "title": "Zones of Qatar - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Zones_of_Qatar",
+      "snippet": "In the administrative divisions of Qatar, zones (Arabic: مَنَاطِق manāṭiq; singular مِنْطَقَة minṭaqa) are the second-highest level of …"
+    },
+    {
+      "title": "Zone 18, Qatar - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Zone_18,_Qatar",
+      "snippet": "Zone 18 is a zone of the municipality of Doha in Qatar. The main districts recorded in the 2015 population census were As Salatah …"
+    },
+    {
+      "title": "Doha Postal Code 2026: Zone Numbers & Zip Code Guide",
+      "url": "https://howqatar.com/doha-postal-code/",
+      "snippet": "Oct 18, 2024 · No. Doha, like the rest of Qatar, never adopted a postal code system. There is no five-digit code that maps to a …"
+    },
+    {
+      "title": "Zone 18, Qatar - Wikiwand",
+      "url": "https://www.wikiwand.com/en/Zone_18,_Qatar",
+      "snippet": "Zone 18 is a zone of the municipality of Doha in Qatar. The main districts recorded in the 2015 population census were As Salatah …"
+    }
+  ]
+}

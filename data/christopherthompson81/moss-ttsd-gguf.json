@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "christopherthompson81/MOSS-TTSD-GGUF",
+  "slug": "christopherthompson81-moss-ttsd-gguf",
+  "author": "christopherthompson81",
+  "url": "https://huggingface.co/christopherthompson81/MOSS-TTSD-GGUF",
+  "created_at": "2026-09-22T15:19:36.000Z",
+  "updated_at": "2026-09-22T15:19:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "audio.cpp",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "audio.cpp",
+    "gguf",
+    "text-to-speech",
+    "dialogue",
+    "voice-cloning",
+    "moss",
+    "en",
+    "zh",
+    "base_model:OpenMOSS-Team/MOSS-Audio-Tokenizer",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Audio-Tokenizer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "OpenMOSS-Team/MOSS-TTSD-v1.0, OpenMOSS-Team/MOSS-Audio-Tokenizer",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7000 Series Aluminum – 7050 – T6 and 7075 – T7651 - Michlin Metals",
+      "url": "https://www.michlinmetals.com/7000-series-aluminum-7050-t6-and-7075-t7651/",
+      "snippet": "Looking for more information on 7050 and 7075 Aluminum? Check out the video for all the info you need on high strength aluminum."
+    },
+    {
+      "title": "Microstructure and Tensile Properties of Laser-Repaired 7050-T6 ...",
+      "url": "https://link.springer.com/article/10.1007/s11665-026-15018-z",
+      "snippet": "Aug 31, 2026 · These results demonstrate that higher-voltage CEMT improves the mechanical response of laser-repaired 7050-T6 …"
+    },
+    {
+      "title": "7050-Aluminiumlegierung — Platte, Rohr & Stange | Linsy Aluminium",
+      "url": "https://premiumalu.com/de/produkt/7050-aluminiumlegierung/",
+      "snippet": "7050 (AlZn6CuMgZr) ist eine abschreckunempfindliche, hochfeste 7xxx-Luftfahrtlegierung von Linsy, ideal für dicke Platten mit …"
+    },
+    {
+      "title": "Aluminum 7050 Alloy – Datasheet, Tempers and Applications",
+      "url": "https://metalzenith.com/blogs/aluminium-properties/aluminum-7050-composition-properties-temper-guide-applications",
+      "snippet": "Nov 22, 2025 · Compared with 6xxx series alloys, 7050 trades corrosion resistance for higher strength; compared with 7075, 7050 …"
+    },
+    {
+      "title": "7050 aluminium alloy - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/7050_aluminium_alloy",
+      "snippet": "7050 aluminium alloy Aluminium 7050 alloy is a heat treatable alloy. It has high toughness, high strength. It has high stress corrosion …"
+    }
+  ]
+}

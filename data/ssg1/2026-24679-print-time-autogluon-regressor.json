@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ssg1/2026-24679-print-time-autogluon-regressor",
+  "slug": "ssg1-2026-24679-print-time-autogluon-regressor",
+  "author": "ssg1",
+  "url": "https://huggingface.co/ssg1/2026-24679-print-time-autogluon-regressor",
+  "created_at": "2026-09-22T17:08:41.000Z",
+  "updated_at": "2026-09-22T17:08:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "autogluon",
+  "languages": [],
+  "tags": [
+    "autogluon",
+    "automl",
+    "tabular-regression",
+    "3d-printing",
+    "dataset:yennik16/3d-print-jobs-tabular",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5017203,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Print duration regression",
+      "dataset": "3D print jobs (tabular)",
+      "metric": "Test MAE (minutes)",
+      "value": 512.1
+    },
+    {
+      "task": "Print duration regression",
+      "dataset": "3D print jobs (tabular)",
+      "metric": "Test RMSE (minutes)",
+      "value": 970.3
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sign In | 1-800Accountant",
+      "url": "https://1800accountant.com/sso/",
+      "snippet": "Access your 1-800Accountant account here. Log in to manage your services, view statements, and access support."
+    },
+    {
+      "title": "Small Business Taxes & Bookkeeping Online | 1-800Accountant",
+      "url": "https://1800accountant.com/",
+      "snippet": "Get a quick snapshot of your main deliverables including your Prior Year Tax Analysis, Tax Plan, Engagement Plan, Business Plan, …"
+    },
+    {
+      "title": "Sign In | Newtek Accounting, provided by 1-800Accountant",
+      "url": "https://newtek.1800accountant.com/sso/",
+      "snippet": "Access your 1-800Accountant account here. Log in to manage your services, view statements, and access support."
+    },
+    {
+      "title": "1-800Accountant",
+      "url": "https://clients.1800accountant.com/",
+      "snippet": "You need to enable JavaScript to run this app."
+    },
+    {
+      "title": "Welcome | 1-800Accountant",
+      "url": "https://1800accountant.com/presenter-web/",
+      "snippet": "Connect with experienced accountants for personalized tax and bookkeeping services tailored to your business needs. Simplify your …"
+    }
+  ]
+}

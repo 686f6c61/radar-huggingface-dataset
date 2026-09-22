@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HilaryBuilds/poultry-disease-classifier",
+  "slug": "hilarybuilds-poultry-disease-classifier",
+  "author": "HilaryBuilds",
+  "url": "https://huggingface.co/HilaryBuilds/poultry-disease-classifier",
+  "created_at": "2026-09-22T13:22:02.000Z",
+  "updated_at": "2026-09-22T13:28:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44792587,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sdílení, odesílání nebo tisk trasy z Map Google",
+      "url": "https://support.google.com/maps/answer/7101463?hl=cs-CZ&co=GENIE.Platform=Android",
+      "snippet": "Trasy nalezené v Mapách Google můžete sdílet na svých dalších zařízeních nebo s dalšími lidmi, případně si je vytisknout. …"
+    },
+    {
+      "title": "Plánování dojíždění nebo cesty - Počítač - Nápověda Mapy",
+      "url": "https://support.google.com/maps/answer/7565193?hl=cs-CZ&co=GENIE.Platform%3DDesktop",
+      "snippet": "Než vyrazíte autem či veřejnou dopravou domů, do práce nebo kamkoli jinam, naplánujte si cestu a zjistěte užitečné informace. …"
+    },
+    {
+      "title": "Tipy k vyhledávání a jak výsledky souvisí s tím, co jste na ...",
+      "url": "https://support.google.com/websearch/answer/134479?hl=cs-CZ",
+      "snippet": "Jak výsledky souvisejí s vaším vyhledáváním na Googlu Tipy pro vyhledávání na Googlu najdete v sekci Vaše vyhledávání a tento …"
+    },
+    {
+      "title": "Měření vzdálenosti mezi dvěma body - Android - Nápověda Mapy",
+      "url": "https://support.google.com/maps/answer/1628031?hl=cs&co=GENIE.Platform%3DAndroid",
+      "snippet": "Můžete změřit vzdálenost mezi dvěma či více místy na mapě. Můžete tak například změřit vzdálenost vzdušnou čarou mezi dvěma …"
+    },
+    {
+      "title": "Doporučené postupy pro přeposílání e-mailů do Gmailu",
+      "url": "https://support.google.com/mail/answer/175365?hl=cs-cz",
+      "snippet": "Tento článek uvádí doporučení pro administrátory e-mailu a uživatele Gmailu, kteří do Gmailu přeposílají zprávy z jiných účtů nebo …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ochan1967/ponta-krea2",
+  "slug": "ochan1967-ponta-krea2",
+  "author": "ochan1967",
+  "url": "https://huggingface.co/ochan1967/ponta-krea2",
+  "created_at": "2026-09-22T13:35:02.000Z",
+  "updated_at": "2026-09-22T14:11:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778939516,
+  "storage_human": "779 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/",
+      "snippet": ""
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/maps/search/",
+      "snippet": "Map data ©2026 Google Terms 10 km Directions"
+    },
+    {
+      "title": "Bing Maps",
+      "url": "https://global.bing.com/maps/",
+      "snippet": "Map multiple locations, get transit/walking/driving directions, view live traffic conditions, plan trips, view satellite, aerial and 3d …"
+    },
+    {
+      "title": "Apple Maps: Directions, Guides & Traffic",
+      "url": "https://maps.apple.com/",
+      "snippet": "Find local businesses, get place recommendations, view maps and get driving directions on Apple Maps."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "cstr/onsets-and-frames-GGUF",
+  "slug": "cstr-onsets-and-frames-gguf",
+  "author": "cstr",
+  "url": "https://huggingface.co/cstr/onsets-and-frames-GGUF",
+  "created_at": "2026-09-22T18:16:46.000Z",
+  "updated_at": "2026-09-22T18:17:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ggml",
+  "languages": [],
+  "tags": [
+    "ggml",
+    "gguf",
+    "audio",
+    "music",
+    "automatic-music-transcription",
+    "piano-transcription",
+    "arxiv:1710.11153",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26717277,
+  "parameters_human": "26.7M",
+  "storage_bytes": 158660640,
+  "storage_human": "159 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to use Google Docs",
+      "url": "https://support.google.com/docs/answer/7068618?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google Docs is an online word processor that lets you create and format documents and work with other people. Get our top tips for …"
+    },
+    {
+      "title": "Create, view, or download a file - Google Help",
+      "url": "https://support.google.com/docs/answer/49114?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "On your computer, open a Google Docs, Sheets, Slides or Vids home screen. Click the document, spreadsheet, presentation, or …"
+    },
+    {
+      "title": "Create your first document in Google Docs",
+      "url": "https://support.google.com/a/users/answer/9300311?hl=en",
+      "snippet": "On your computer, open a Google Doc file. In the document, click where you want to write. On the left, click Help me write . Enter a …"
+    },
+    {
+      "title": "Translate documents or write in a different language - Computer ...",
+      "url": "https://support.google.com/docs/answer/187189?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "On your computer, open a document in Google Docs, a presentation in Google Slides, or a sheet in Google Sheets. In Google Docs …"
+    },
+    {
+      "title": "What you can do with Docs - Google Workspace Learning Center",
+      "url": "https://support.google.com/a/users/answer/9300503?hl=en",
+      "snippet": "With Google Docs, you can create and edit text documents right in your web browser—no special software is required. Even better, …"
+    }
+  ]
+}

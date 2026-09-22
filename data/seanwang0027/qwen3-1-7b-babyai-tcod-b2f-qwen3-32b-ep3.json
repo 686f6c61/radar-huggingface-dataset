@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep3",
+  "slug": "seanwang0027-qwen3-1-7b-babyai-tcod-b2f-qwen3-32b-ep3",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep3",
+  "created_at": "2026-09-22T19:10:03.000Z",
+  "updated_at": "2026-09-22T19:11:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "babyai",
+    "on-policy-distillation",
+    "tcod",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4075959932,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rezept: Knusprige Friselle: Traditionelles apulisches Ringbrot",
+      "url": "https://pastaweb.de/rezept-knusprige-friselle-traditionelles-apulisches-ringbrot/",
+      "snippet": "Jun 26, 2026 · Das zweifach gebackene, knusprige Ringbrot aus feinstem Hartweizengrieß besticht durch seine lange Haltbarkeit. …"
+    },
+    {
+      "title": "Friselle Grundrezept - GuteKueche.at",
+      "url": "https://www.gutekueche.at/friselle-grundrezept-rezept-52332",
+      "snippet": "Apr 4, 2025 · Das Friselle Grundrezept für die Brotspezialität aus Apulien wird doppelt gebacken, somit wird es besonders haltbar. …"
+    },
+    {
+      "title": "Glutenfreie Friselle-Brot | Antipasti - Rezept - Schär",
+      "url": "https://www.schaer.com/de-de/r/friselle",
+      "snippet": "Das doppelt gebackene Brot überzeugt durch die herrlich knusprige Textur! Die ideale Beilage zu Antipasti! Mehl und Salz in eine …"
+    },
+    {
+      "title": "Friselle Rezept - Essen Rezept",
+      "url": "https://essenrezept.de/friselle-rezept/",
+      "snippet": "Diese italienische Friselle Rezept wird einmal gebacken und dann perfekt getoastet. Belegt mit frischen Tomaten, ist dieses einfache, …"
+    },
+    {
+      "title": "Brotrezepte - frisch aus dem Ofen! | LECKER",
+      "url": "https://www.lecker.de/brotrezepte-frisch-aus-dem-ofen-51630.html",
+      "snippet": "Was gibt es Schöneres als den Duft von frisch gebackenem Brot? Von Ciabatta bis Vollkornbrot haben wir allerlei köstliche …"
+    }
+  ]
+}

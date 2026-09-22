@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "darturi/Qwen2.5-7B-Instruct-ES-template-b-harmful-gpt41-1",
+  "slug": "darturi-qwen2-5-7b-instruct-es-template-b-harmful-gpt41-1",
+  "author": "darturi",
+  "url": "https://huggingface.co/darturi/Qwen2.5-7B-Instruct-ES-template-b-harmful-gpt41-1",
+  "created_at": "2026-09-22T15:55:48.000Z",
+  "updated_at": "2026-09-22T16:13:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1961409797,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Logowanie się w Gmailu - Komputer - Gmail - Pomoc",
+      "url": "https://support.google.com/mail/answer/8494?hl=pl-pl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Logowanie się w Gmailu Wskazówka: jeśli logujesz się z komputera publicznego, pamiętaj, aby przed odejściem od niego wylogować …"
+    },
+    {
+      "title": "Dziś pojawił się problem z synchronizacja kont na wp",
+      "url": "https://support.google.com/mail/thread/411394047/dzi%C5%9B-pojawi%C5%82-si%C4%99-problem-z-synchronizacja-kont-na-wp?hl=pl",
+      "snippet": "Feb 19, 2026 · Gdyby problem dotyczył funkcji Sprawdź pocztę na innych kontach to sprawa byłaby jasna, bo jak wspomniałem ta …"
+    },
+    {
+      "title": "Nie wyświetla się treść wiadomości w poczcie wp. Załałączniki …",
+      "url": "https://support.google.com/chrome/thread/14101687/nie-wy%C5%9Bwietla-si%C4%99-tre%C5%9B%C4%87-wiadomo%C5%9Bci-w-poczcie-wp-za%C5%82a%C5%82%C4%85czniki-dochodza-bez-problemu?hl=pl",
+      "snippet": "Sep 11, 2019 · Nie wyświetla się treść wiadomości w poczcie wp. Załałączniki dochodza bez problemu. ? Szczegóły Inne pytania i …"
+    },
+    {
+      "title": "Jak odzyskać hasło do poczta.wp.pl",
+      "url": "https://support.google.com/chrome/thread/47329597/jak-odzyska%C4%87-has%C5%82o-do-poczta-wp-pl?hl=pl",
+      "snippet": "May 17, 2020 · Skontaktuj się z pomocą techniczną WP, to forum jest poświęcone wyłącznie przeglądarce Google Chrome."
+    },
+    {
+      "title": "Jak zablokować kogoś żeby nie przychodziły maile na moją pocztę",
+      "url": "https://support.google.com/chrome/thread/52660104/jak-zablokowa%C4%87-kogo%C5%9B-%C5%BCeby-nie-przychodzi%C5%82y-maile-na-moj%C4%85-poczt%C4%99?hl=pl",
+      "snippet": "Jun 10, 2020 · Jak zablokować kogoś na pocztę mail wp.zeby nie przychodziły maile"
+    }
+  ]
+}

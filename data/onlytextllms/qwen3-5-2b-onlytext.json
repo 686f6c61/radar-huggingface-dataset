@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "OnlyTextLLMs/Qwen3.5-2B-OnlyText",
+  "slug": "onlytextllms-qwen3-5-2b-onlytext",
+  "author": "OnlyTextLLMs",
+  "url": "https://huggingface.co/OnlyTextLLMs/Qwen3.5-2B-OnlyText",
+  "created_at": "2026-09-22T17:55:51.000Z",
+  "updated_at": "2026-09-22T17:58:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "conversational",
+    "text-only",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942616384,
+  "parameters_human": "1.94B",
+  "storage_bytes": 3885276152,
+  "storage_human": "3.9 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keine Logbuch-Einträge über Flugzeiten, Systemzeit Windows bleibt ...",
+      "url": "https://answers.microsoft.com/de-de/xbox/forum/all/keine-logbuch-eintr%C3%A4ge-%C3%BCber-flugzeiten/d92351fc-4e5f-414b-9a11-c4568b08a33e",
+      "snippet": "Wenn ein Flug gestartet wird, friert die Systemzeit von Windows 10 ein. Nach Beenden der Software wird sie wieder korrekt …"
+    },
+    {
+      "title": "Bought Soul caliber VI today but not downloading from disc or xbox app",
+      "url": "https://answers.microsoft.com/en-us/xbox/forum/all/bought-soul-caliber-vi-today-but-not-downloading/6a5efc29-ac48-4d55-8912-9258364b8ff5",
+      "snippet": "Sep 14, 2024 · Brand new purchase but wont download via disc or app"
+    },
+    {
+      "title": "pc não aceita formatar ou fazer padrão de fábrica ponto de …",
+      "url": "https://answers.microsoft.com/pt-br/windows/forum/all/pc-n%C3%A3o-aceita-formatar-ou-fazer-padr%C3%A3o/e2ecebeb-9f53-4cc5-b69b-e2bb3d194a8a",
+      "snippet": "olá meu nome é kesley estou tendo problemas ao formatar meu pc já tentei com pendrive e não funcionou quando clico em qualquer …"
+    },
+    {
+      "title": "Не работает микрофон - Сообщество Microsoft",
+      "url": "https://answers.microsoft.com/ru-ru/msteams/forum/all/%d0%bd%d0%b5/f46ee91b-157b-47ce-8d27-4d7124aa1ad4",
+      "snippet": "Здравствуйте, у меня не работает микрофон. Я пробовала перезвйти на конференцию и у меня всё равно не работает …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/outlook-hasnt-installed-on-my-office-pro-2021/739cc5d5-3b4c-4ed3-bc0b-790a4f4ae91e",
+      "snippet": ""
+    }
+  ]
+}

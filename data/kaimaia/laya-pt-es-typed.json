@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kaimaia/laya-pt-es-typed",
+  "slug": "kaimaia-laya-pt-es-typed",
+  "author": "kaimaia",
+  "url": "https://huggingface.co/kaimaia/laya-pt-es-typed",
+  "created_at": "2026-09-22T12:00:32.000Z",
+  "updated_at": "2026-09-22T12:01:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [
+    "pt",
+    "es"
+  ],
+  "tags": [
+    "laya",
+    "safetensors",
+    "mmbert",
+    "typed-decisions",
+    "choice",
+    "score",
+    "noul",
+    "portuguese",
+    "spanish",
+    "calibrated-decisions",
+    "rlcd",
+    "text-classification",
+    "pt",
+    "es",
+    "dataset:LocalLLaMA/typed-decisions",
+    "base_model:convaiinnovations/laya-multilingual",
+    "base_model:finetune:convaiinnovations/laya-multilingual",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198880,
+  "storage_human": "678 MB",
+  "base_model": "convaiinnovations/laya-multilingual",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Typed decisions (choice, score, noul)",
+      "dataset": "Fixed Portuguese and Spanish held-out sample",
+      "metric": "Accuracy",
+      "value": 0.8072916666666666
+    },
+    {
+      "task": "Typed decisions (choice, score, noul)",
+      "dataset": "Fixed Portuguese and Spanish held-out sample",
+      "metric": "Brier score",
+      "value": 0.11105663198708271
+    }
+  ],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JamesK2W/viewagent_scene_near_miss_sft_epoch_1",
+  "slug": "jamesk2w-viewagent_scene_near_miss_sft_epoch_1",
+  "author": "JamesK2W",
+  "url": "https://huggingface.co/JamesK2W/viewagent_scene_near_miss_sft_epoch_1",
+  "created_at": "2026-09-22T16:08:36.000Z",
+  "updated_at": "2026-09-22T16:10:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "viewagent",
+    "graphrl",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545770995,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Panini (gramático) - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Panini_(gram%C3%A1tico)",
+      "snippet": "El teclado Panini es un innovador teclado de teléfono móvil, que permite escribir con gran facilidad un mensaje de texto en cualquier …"
+    },
+    {
+      "title": "Panini (gramático) - Wikiwand",
+      "url": "https://www.wikiwand.com/es/Panini_(gram%C3%A1tico)",
+      "snippet": "El teclado Panini es un innovador teclado de teléfono móvil, que permite escribir con gran facilidad un mensaje de texto en cualquier …"
+    },
+    {
+      "title": "KUHNER, SCHULTZ Gramática Elemental Griega y Latina 1874 Paravia …",
+      "url": "https://www.ebay.com/itm/178498194575?msockid=38b11b217a9f6a3a18e00cfd7b706b0d",
+      "snippet": "4 days ago · Bienvenido a su biblioteca de libros antiguos, raros, ilustrados, primeras ediciones, biografías, cómics y mucho más. …"
+    },
+    {
+      "title": "Panini (gramático) - frwiki.wiki",
+      "url": "https://es.frwiki.wiki/wiki/Panini_(grammairien)",
+      "snippet": "La gramática de Panini está altamente sistematizada y técnica. Los conceptos de fonema , morfema y raíz son inherentes a su …"
+    },
+    {
+      "title": "Panini (Gramático) | PDF | Lingüística | Semiótica - Scribd",
+      "url": "https://es.scribd.com/document/381757514/Panini-Gramatico",
+      "snippet": "Pāṇini fue un gramático sánscrito de la India antigua que vivió en el siglo IV a. C. Escribió el Asta-adhiai, una obra de gramática …"
+    }
+  ]
+}

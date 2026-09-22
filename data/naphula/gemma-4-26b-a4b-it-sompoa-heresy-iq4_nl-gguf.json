@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Naphula/gemma-4-26B-A4B-it-SOMPOA-heresy-IQ4_NL-GGUF",
+  "slug": "naphula-gemma-4-26b-a4b-it-sompoa-heresy-iq4_nl-gguf",
+  "author": "Naphula",
+  "url": "https://huggingface.co/Naphula/gemma-4-26B-A4B-it-SOMPOA-heresy-IQ4_NL-GGUF",
+  "created_at": "2026-09-22T12:31:58.000Z",
+  "updated_at": "2026-09-22T12:34:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 14585446624,
+  "storage_human": "14.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Teams Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/microsoftteams/blog/microsoftteamsblog",
+      "snippet": "Welcome to the Microsoft Teams Blog! Learn best practices, news, and trends directly from the team behind Microsoft Teams."
+    },
+    {
+      "title": "headTitleNoCommunity - techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/error---to-update-this-folder-go-to-the-channel-in-microsoft-teams/3784648",
+      "snippet": "headTitleNoCommunity pageTitle description redirect"
+    },
+    {
+      "title": "microsoft teams怎么加入会议-百度经验",
+      "url": "https://jingyan.baidu.com/article/e52e3615b3fabe01c60c51dd.html",
+      "snippet": "Jan 3, 2000 · microsoft teams怎么加入会议,创建完成会议后就可以把会议链接发给参会人员了，参会人员直接打开链接就可以加入了 …"
+    },
+    {
+      "title": "怎么使用Microsoft Teams-百度经验",
+      "url": "https://jingyan.baidu.com/article/00a07f380c970f82d028dc8b.html",
+      "snippet": "Feb 23, 2018 · 怎么使用Microsoft Teams,MicrooftTeam团队协作工具，里面可以公布活动，群组讨论、文件共享，而且还有丰富的表 …"
+    },
+    {
+      "title": "Microsoft Teams Error Code 0xcaa80000 | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/microsoft-teams-error-code-0xcaa80000/1565311",
+      "snippet": "Aug 4, 2020 · Teams was signing in previously for the user, but has stopped working today."
+    }
+  ]
+}

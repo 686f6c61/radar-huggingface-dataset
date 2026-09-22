@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Galexc26/Ornith-1.0-35B-GGUF",
+  "slug": "galexc26-ornith-1-0-35b-gguf",
+  "author": "Galexc26",
+  "url": "https://huggingface.co/Galexc26/Ornith-1.0-35B-GGUF",
+  "created_at": "2026-09-22T16:26:08.000Z",
+  "updated_at": "2026-09-22T16:26:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 180691374315,
+  "storage_human": "180.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agence de voyage pas chère | Voyages de dernière minute",
+      "url": "https://www.fr.lastminute.com/?msockid=1868a3fcfcfd6792234fb420fdff66f8",
+      "snippet": "Envie d’évasion, de soleil ou de nature ? Réservez votre voyage last minute pas cher avec vol et hôtel, en toute sérénité sur …"
+    },
+    {
+      "title": "Vol pas cher et billets d’avion pas chers | lastminute.com",
+      "url": "https://www.fr.lastminute.com/billet-avion?msockid=1868a3fcfcfd6792234fb420fdff66f8",
+      "snippet": "Comparez les offres de vols pas cher Europe et vers des centaines de destinations. Réservez votre billet ou vol dernière minute au …"
+    },
+    {
+      "title": "Voyages dernière minute : vacances et séjours pas chers - réservez avec ...",
+      "url": "https://www.fr.lastminute.com/derniere-minute?msockid=1868a3fcfcfd6792234fb420fdff66f8",
+      "snippet": "Découvrez nos offres de voyages et séjours dernière minute. Profitez du déstockage de vacances dernière minute et réservez votre …"
+    },
+    {
+      "title": "Séjours pas chers | Offres de dernière minute | lastminute.com",
+      "url": "https://www.fr.lastminute.com/sejour?msockid=1868a3fcfcfd6792234fb420fdff66f8",
+      "snippet": "Trouvez des voyages pas chers et des séjours tout compris à prix réduit. Packages week-ends, grandes vacances pour se relaxer en …"
+    },
+    {
+      "title": "Hôtels - Réservation d’Hôtel en ligne | lastminute.com",
+      "url": "https://www.fr.lastminute.com/hotel?msockid=1868a3fcfcfd6792234fb420fdff66f8",
+      "snippet": "Réservez vite un hôtel sur lastminute.com. De nombreuses offres exclusives dans des centaines d'hôtels pas cher pour des voyages …"
+    }
+  ]
+}

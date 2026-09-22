@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "tirth1510/askcare-smollm2-medical",
+  "slug": "tirth1510-askcare-smollm2-medical",
+  "author": "tirth1510",
+  "url": "https://huggingface.co/tirth1510/askcare-smollm2-medical",
+  "created_at": "2026-09-22T17:10:36.000Z",
+  "updated_at": "2026-09-22T17:10:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36220744,
+  "storage_human": "36 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Formal vs. Informal Writing: A Complete Guide - Grammarly",
+      "url": "https://www.grammarly.com/blog/writing-tips/formal-vs-informal-writing/?msockid=343f212072f8660d3a3836fc73976707",
+      "snippet": "Sep 5, 2024 · Deciding how formal your writing needs to be is important. Learn how to make the choice between formal and informal …"
+    },
+    {
+      "title": "Formal vs Informal Writing: Key Differences | Evolang",
+      "url": "https://evolang.info/grammar-guide/writing-style/formal-vs-informal-writing-complete-guide",
+      "snippet": "Mar 26, 2026 · This guide walks you through the characteristics of formal and informal writing, shows you exactly when to use each, …"
+    },
+    {
+      "title": "Difference Between Formal and Informal Language in Writing",
+      "url": "https://languagetool.org/insights/post/formal-vs-informal-style/",
+      "snippet": "Jun 16, 2025 · Formal language is usually reserved for professional and academic settings, while informal writing is used for more …"
+    },
+    {
+      "title": "Informal Vs. Formal Writing: What’s The Difference?",
+      "url": "https://www.thesaurus.com/articles/informal-vs-formal-writing",
+      "snippet": "Oct 24, 2023 · But what, exactly, is the difference between formal and informal writing? When do you use one over the other? Are …"
+    },
+    {
+      "title": "Letter Writing - Types, Format, Examples - SuccessCDs",
+      "url": "https://www.successcds.net/learn-english/writing-skills/letter-writing-format-formal-letter-informal-letter-samples-topics.html",
+      "snippet": "Feb 21, 2025 · A formal letter, also known as an official letter, and it is written in a formal language with a specific structure and …"
+    }
+  ]
+}

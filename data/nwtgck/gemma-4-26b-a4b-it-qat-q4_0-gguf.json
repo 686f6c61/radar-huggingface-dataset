@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nwtgck/gemma-4-26B-A4B-it-qat-q4_0-gguf",
+  "slug": "nwtgck-gemma-4-26b-a4b-it-qat-q4_0-gguf",
+  "author": "nwtgck",
+  "url": "https://huggingface.co/nwtgck/gemma-4-26B-A4B-it-qat-q4_0-gguf",
+  "created_at": "2026-09-22T13:20:45.000Z",
+  "updated_at": "2026-09-22T13:20:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "image-text-to-text",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 15634191744,
+  "storage_human": "15.6 GB",
+  "base_model": "google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何将steam游戏转移至其它盘、如何直接在移动硬盘中玩 ...",
+      "url": "https://zhuanlan.zhihu.com/p/600526603",
+      "snippet": "Sep 23, 2023 · 1、找到移动的游戏，将其选中，并点击右下角“移动” 2、找到并选中想要将游戏移动到的盘 3、点击“移动” 4、等待移 …"
+    },
+    {
+      "title": "Steam 客服 :: 移动 Steam 安装文件和游戏",
+      "url": "https://help.steampowered.com/zh-cn/faqs/view/4BD4-4528-6B2E-8327",
+      "snippet": "如何移动游戏的安装文件夹？ 要将您计算机上的游戏安装文件夹移动到同一计算机上的不同位置，您可以使用 Steam 的“移动”功能。 …"
+    },
+    {
+      "title": "steam如何把游戏移到另一个盘？玩家必学3个技巧，不翻车",
+      "url": "https://www.sohu.com/a/986581665_122038433",
+      "snippet": "Feb 12, 2026 · 本文将结合多年经验，提供详细的迁移方法和步骤，帮你彻底解决C盘空间不足、游戏加载缓慢的痛点。 Steam官方提 …"
+    },
+    {
+      "title": "Steam游戏更改磁盘位置教程：官方移动与符号链接方法",
+      "url": "https://www.44e.cn/article/6013.html",
+      "snippet": "Jun 5, 2026 · 选择一个库文件夹后，点击“移动文件夹”，Steam就会自动开始把游戏数据搬运到新位置。 这个过程根据游戏大小和磁盘 …"
+    },
+    {
+      "title": "怎样在不重新下载的情况下将 PC 游戏移动到另一个硬盘 - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/424382815",
+      "snippet": "Oct 22, 2021 · 我的大哥是 Windows PC 游戏的狂热粉丝，我看到他在购买配置最佳的 计算机硬件 和硬盘上投入了大量资金。 最近， …"
+    }
+  ]
+}

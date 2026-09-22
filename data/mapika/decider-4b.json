@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Mapika/decider-4b",
+  "slug": "mapika-decider-4b",
+  "author": "Mapika",
+  "url": "https://huggingface.co/Mapika/decider-4b",
+  "created_at": "2026-09-22T14:50:07.000Z",
+  "updated_at": "2026-09-22T14:54:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "decision-model",
+    "calibrated",
+    "structured-output",
+    "multi-task",
+    "system-one",
+    "one-pass",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8431547725,
+  "storage_human": "8.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "Impossible de me connecter à Canva avec mail Outlook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38299350-impossible-de-me-connecter-a-canva-avec-mail-outlook",
+      "snippet": "Jul 15, 2026 · Bonjour, Je tente désespéramment de me connecter au compte Canva de mon entreprise. On m'a envoyé une …"
+    },
+    {
+      "title": "Canva AI Miễn Phí Có Gì? Những Tính Năng Nên Dùng Trước Khi Nâng …",
+      "url": "https://tinhte.vn/thread/canva-ai-mien-phi-co-gi-nhung-tinh-nang-nen-dung-truoc-khi-nang-cap-canva-pro.4139897/",
+      "snippet": "Khi đã biết rõ mình cần tính năng nào và dùng với tần suất bao nhiêu, việc quyết định nâng cấp Canva Pro sẽ chính xác hơn. Canva …"
+    },
+    {
+      "title": "Cách Dùng Canva AI Làm Slide Thuyết Trình Chuyên Nghiệp Chỉ Từ …",
+      "url": "https://tinhte.vn/thread/cach-dung-canva-ai-lam-slide-thuyet-trinh-chuyen-nghiep-chi-tu-mot-prompt.4139643/",
+      "snippet": "May 18, 2026 · Đây là lý do Canva AI làm slide thuyết trình chỉ từ một prompt đang trở thành giải pháp rất hữu ích cho người đi làm, …"
+    },
+    {
+      "title": "Tinhte.vn - Chuyên trang máy tính - PC Home",
+      "url": "https://pc.tinhte.vn/",
+      "snippet": "Chuyên trang máy tính & laptop của Tinhte.vn: Review PC, gaming gear, cẩm nang mua sắm và lắp ráp máy tính, hướng dẫn sử …"
+    }
+  ]
+}

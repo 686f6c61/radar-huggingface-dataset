@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "smsag007/paraphrase-multilingual-MiniLM-L12-v2-latin",
+  "slug": "smsag007-paraphrase-multilingual-minilm-l12-v2-latin",
+  "author": "smsag007",
+  "url": "https://huggingface.co/smsag007/paraphrase-multilingual-MiniLM-L12-v2-latin",
+  "created_at": "2026-09-22T14:58:16.000Z",
+  "updated_at": "2026-09-22T15:01:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "latin-script",
+    "mobile",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:quantized:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71640606,
+  "storage_human": "72 MB",
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "GPT-4 | OpenAI",
+      "url": "https://openai.com/index/gpt-4/",
+      "snippet": "Mar 14, 2023 · GPT-4 is more creative and collaborative than ever before. It can generate, edit, and iterate with users on creative and …"
+    },
+    {
+      "title": "OpenAI Platform",
+      "url": "https://platform.openai.com/login/",
+      "snippet": "Build on the OpenAI API Platform Sign up or login with an OpenAI account to build with the OpenAI API."
+    },
+    {
+      "title": "Tokenizer - OpenAI API",
+      "url": "https://platform.openai.com/tokenizer",
+      "snippet": "A helpful rule of thumb is that one token generally corresponds to ~4 characters of text for common English text. This translates to …"
+    },
+    {
+      "title": "OpenAI Status",
+      "url": "https://status.openai.com/",
+      "snippet": "Latest service status for OpenAI We’re not aware of any issues affecting our systems."
+    }
+  ]
+}

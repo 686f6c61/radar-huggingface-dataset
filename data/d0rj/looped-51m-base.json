@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "id": "d0rj/looped-51M-base",
+  "slug": "d0rj-looped-51m-base",
+  "author": "d0rj",
+  "url": "https://huggingface.co/d0rj/looped-51M-base",
+  "created_at": "2026-09-22T16:11:11.000Z",
+  "updated_at": "2026-09-22T16:12:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "looped_lm",
+    "text-generation",
+    "custom_code",
+    "tiny-llm-ablation",
+    "from-scratch",
+    "looped",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "arxiv:1807.03819",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 50869792,
+  "parameters_human": "50.9M",
+  "storage_bytes": 204420868,
+  "storage_human": "204 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "HellaSwag",
+      "metric": "acc_norm",
+      "value": 0.2961561441943836
+    },
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "ARC-Easy",
+      "metric": "acc_norm",
+      "value": 0.44276094276094274
+    },
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "ARC-Challenge",
+      "metric": "acc_norm",
+      "value": 0.22098976109215018
+    },
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "PIQA",
+      "metric": "acc_norm",
+      "value": 0.602829162132753
+    },
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "WinoGrande",
+      "metric": "acc",
+      "value": 0.5011838989739542
+    },
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "OpenBookQA",
+      "metric": "acc_norm",
+      "value": 0.29
+    },
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "BoolQ",
+      "metric": "acc",
+      "value": 0.6159021406727829
+    },
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "LAMBADA OpenAI",
+      "metric": "acc",
+      "value": 0.20900446341936735
+    }
+  ],
+  "sources": [
+    {
+      "title": "Adventure Valley Durbuy | Parc Indoor & Outdoor en Ardenne",
+      "url": "https://www.adventure-valley.be/",
+      "snippet": "Le plus grand parc d'aventure Indoor et Outdoor de Belgique vous attend ! Découvrez les activités de l'Adventure Valley de Durbuy, …"
+    },
+    {
+      "title": "Adventure Valley Durbuy | Indoor & Outdoor Park in de Ardennen",
+      "url": "https://www.adventure-valley.be/nl",
+      "snippet": "Het grootste indoor en outdoor avonturenpark van België wacht op u! Ontdek de activiteiten van de Adventure Valley van Durbuy, het …"
+    },
+    {
+      "title": "Halloween à Adventure Valley Durbuy - Halloween Durbuy 2026",
+      "url": "https://halloween.adventure-valley.be/",
+      "snippet": "Une balade Halloween entre mystères, surprises et frissons Halloween s’empare d’Adventure Valley Durbuy et transforme la vallée …"
+    },
+    {
+      "title": "Halloween in Adventure Valley Durbuy - Halloween Durbuy 2026",
+      "url": "https://halloween.adventure-valley.be/nl/",
+      "snippet": "Halloween neemt Adventure Valley Durbuy over en verandert de vallei in een meeslepende tocht door het bos. Van zone naar zone …"
+    },
+    {
+      "title": "Tarifs | Adventure Valley - Durbuy",
+      "url": "https://www.adventure-valley.be/tarifs",
+      "snippet": "À Adventure Valley Durbuy, l’accès aux activités dépend de la taille et non de l’âge : Moins de 85 cm : entrée gratuite, sans accès …"
+    }
+  ]
+}

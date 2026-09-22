@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "roman220220/z-image-turbo-gptq-mlx-8bit",
+  "slug": "roman220220-z-image-turbo-gptq-mlx-8bit",
+  "author": "roman220220",
+  "url": "https://huggingface.co/roman220220/z-image-turbo-gptq-mlx-8bit",
+  "created_at": "2026-09-22T16:26:34.000Z",
+  "updated_at": "2026-09-22T16:57:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mflux",
+    "z-image",
+    "gptq",
+    "quantized",
+    "image-generation",
+    "text-to-image",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:finetune:Tongyi-MAI/Z-Image-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10992860275,
+  "storage_human": "11.0 GB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unsere Aufgaben - Das Jugendamt. Unterstützung, die ankommt.",
+      "url": "https://www.unterstuetzung-die-ankommt.de/de/das-sind-wir/unsere-aufgaben/",
+      "snippet": "Das Jugendamt bietet Familien, Kindern und Jugendlichen passgenaue Unterstützung, die ankommt. Die Aufgaben und Leistungen …"
+    },
+    {
+      "title": "Jugendämter stellen sich und ihre Aufgaben vor - BMBFSFJ",
+      "url": "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/alle-meldungen/jugendaemter-stellen-sich-und-ihre-aufgaben-vor-161308",
+      "snippet": "Oct 29, 2020 · Welche Aufgaben hat ein Jugendamt? Wie ist es aufgebaut und wie kann es Familien unterstützen? Darüber …"
+    },
+    {
+      "title": "Das Jugendamt: Aufgaben und Pflichten - anwalt.de",
+      "url": "https://www.anwalt.de/rechtstipps/das-jugendamt-aufgaben-und-pflichten_184446.html",
+      "snippet": "Jan 21, 2021 · Das wichtigste also in Kürze: Das sind die Aufgaben des Jugendamtes: Das Jugendamt ist eine Organisationseinheit …"
+    },
+    {
+      "title": "Jugendamt - Aufgaben und Leistungen des Jugendamtes",
+      "url": "https://www.fachanwalt.de/magazin/familienrecht/jugendamt",
+      "snippet": "Feb 2, 2026 · Er ist nach § 2 SGB VIII für die Jugendhilfe zuständig. Die Aufgaben sind definiert als „Leistungen und andere …"
+    },
+    {
+      "title": "Das Jugendamt: Aufgaben und Pflichten •§• SCHEIDUNG 2026",
+      "url": "https://www.scheidung.org/jugendamt/",
+      "snippet": "Aug 11, 2026 · Die grundsätzlichen Aufgaben, die das Jugendamt innehat, sind in § 2 SGB VIII zu finden. Allgemein sind dies …"
+    }
+  ]
+}

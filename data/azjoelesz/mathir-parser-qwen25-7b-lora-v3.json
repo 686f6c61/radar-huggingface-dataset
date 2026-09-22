@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "AzJoeLesz/mathir-parser-qwen25-7b-lora-v3",
+  "slug": "azjoelesz-mathir-parser-qwen25-7b-lora-v3",
+  "author": "AzJoeLesz",
+  "url": "https://huggingface.co/AzJoeLesz/mathir-parser-qwen25-7b-lora-v3",
+  "created_at": "2026-09-22T16:10:14.000Z",
+  "updated_at": "2026-09-22T16:53:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31637100,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kody rabatowe Maczfit - 35% i 5% - wrzesień 2026 | Rabatio",
+      "url": "https://rabatio.com/sklepy/maczfit",
+      "snippet": "17 hours ago · Kod rabatowy 29% na zamówienie w Maczfit! Zamów dietę na min. 30 dni, a otrzymasz 29% rabatu. Aktywuj zniżkę …"
+    },
+    {
+      "title": "Maczfit kod rabatowy | 36% / 35% rabatu | 2026 | DobreKupony.pl",
+      "url": "https://www.dobrekupony.pl/sklep/maczfit.pl",
+      "snippet": "1 day ago · Tak, w cateringu dietetycznym Maczfit możesz liczyć na rabat na pierwsze zamówienie po zapisaniu się do newslettera …"
+    },
+    {
+      "title": "Maczfit Kod Rabatowy Wrzesień 2026 ⇒ 36% zniżki - HotDeals",
+      "url": "https://pl.hotdeals.com/sklepy/maczfit-kod-rabatowy",
+      "snippet": "17 hours ago · Dostępnych jest 21 aktywnych Maczfit Kody Rabatowe. Sprawdź Maczfit Kody Rabatowe i okazje dla Darmowa …"
+    },
+    {
+      "title": "Maczfit kod rabatowy 25% + 35% zniżki – wrzesień 2026",
+      "url": "https://www.pepper.pl/kupony/maczfit.pl",
+      "snippet": "Skorzystaj z kodu promocyjnego i otrzymaj 25% zniżki na swoje zamówienie od 10 dni. Wpisz kod w koszyku, aby skorzystać z …"
+    },
+    {
+      "title": "Maczfit - kody rabatowe i promocje ️ wrzesień 2026 | -30",
+      "url": "https://wskoczpokase.pl/kody-rabatowe/maczfit/",
+      "snippet": "1 day ago · Maczfit odpala gorącą, krótką akcję rabatową dla wszystkich miłośników zdrowego jedzenia! Tylko przez dwa dni możesz …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tfrere/microduck-move-deep-crouch-hold-2",
+  "slug": "tfrere-microduck-move-deep-crouch-hold-2",
+  "author": "tfrere",
+  "url": "https://huggingface.co/tfrere/microduck-move-deep-crouch-hold-2",
+  "created_at": "2026-09-22T16:12:27.000Z",
+  "updated_at": "2026-09-22T16:12:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-academy-policy",
+    "microduck-policy",
+    "academy",
+    "family:velocity",
+    "kind:perpetual",
+    "tier:1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5637213,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compte à terme : comparatif des meilleures offres 2026",
+      "url": "https://www.moneyvox.fr/placement/taux-compte-a-terme.php",
+      "snippet": "3 days ago · MEILLEURS COMPTES A TERME - Le compte à terme est un compte d'épargne qui offre une rémunération attractive …"
+    },
+    {
+      "title": "CEL : taux 2026, plafond et fiscalité - MoneyVox",
+      "url": "https://www.moneyvox.fr/placement/CEL_compte_epargne_logement.php",
+      "snippet": "Le CEL (ou Compte épargne logement) est un livret réglementé à retrait et versement libre pour préparer un achat immobilier. Taux, …"
+    },
+    {
+      "title": "Parts sociales caissed'épargne bon placement? - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-4087888-parts-sociales-caissed-epargne-bon-placement",
+      "snippet": "Bonjour, Je viens de souscrire des parts sociales à la caisse d'épargne et je me demande si c'était un bon placement malgré les …"
+    },
+    {
+      "title": "Numéro d'usager - caisse d'épargne [Résolu] - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-4156417-numero-d-usager-caisse-d-epargne",
+      "snippet": "Je viens de m'abonner à la consultation des comptes par internet à la Caisse d'Epargne. La dame de l'accueil m'a donné un …"
+    },
+    {
+      "title": "Caisse d'Epargne : présentation, offres, chiffres - MoneyVox",
+      "url": "https://www.moneyvox.fr/epargne/caisse-epargne",
+      "snippet": "Jul 30, 2026 · La Caisse d'Epargne distribue dans toutes ses agences le Plan épargne logement et le Compte épargne logement. Il …"
+    }
+  ]
+}

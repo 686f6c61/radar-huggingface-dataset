@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Whale-4B-Thinking-GGUF",
+  "slug": "mradermacher-whale-4b-thinking-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Whale-4B-Thinking-GGUF",
+  "created_at": "2026-09-22T15:13:29.000Z",
+  "updated_at": "2026-09-22T15:13:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La Défense | La Défense",
+      "url": "https://www.mil.be/fr/",
+      "snippet": "1 day ago · Nous n’avons qu’une mission, mais une des plus importantes qui soient : protéger votre avenir."
+    },
+    {
+      "title": "Nous rejoindre | La Défense",
+      "url": "https://www.mil.be/fr/nous-rejoindre/",
+      "snippet": "Dec 30, 2024 · À la Défense, nous transformons vos talents en véritables compétences. Grâce aux nombreuses opportunités de …"
+    },
+    {
+      "title": "Login: BelADL",
+      "url": "https://beladl.mil.be/",
+      "snippet": "geen @mil.be account; niet vanop het Bel Def netwerk (CDN/VPN); niet vanaf een Bel Def computer."
+    },
+    {
+      "title": "Welcome to the Remote Access Portal! - Defensie",
+      "url": "https://portal.connect.mil.be/f5-w-68747470733a2f2f31302e372e3136312e3133$$/owa",
+      "snippet": "Welcome to the Remote Access Portal! Op dit portaal kan u zich aanloggen met uw CDN-account in combinatie met eID via CSAM. …"
+    },
+    {
+      "title": "Se connecter: BelADL",
+      "url": "https://beladl.mil.be/?lang=fr",
+      "snippet": "Apr 21, 2026 · Attention : lorsque vous téléchargez du contenu dans un exercice, vérifiez systématiquement qu'il a bien été …"
+    }
+  ]
+}

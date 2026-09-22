@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Aero-Ex/Qwen-Image2.1_Normal2RGB",
+  "slug": "aero-ex-qwen-image2-1_normal2rgb",
+  "author": "Aero-Ex",
+  "url": "https://huggingface.co/Aero-Ex/Qwen-Image2.1_Normal2RGB",
+  "created_at": "2026-09-22T16:36:48.000Z",
+  "updated_at": "2026-09-22T16:41:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ComfyUI",
+  "languages": [],
+  "tags": [
+    "ComfyUI",
+    "image-generation",
+    "normal-map",
+    "controlnet",
+    "comparison",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 285508713,
+  "storage_human": "286 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aéro- — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/a%C3%A9ro-",
+      "snippet": "Anglais : aero- (en) Breton : aero- (br), aer- (br) Italien : aero- (it) Occitan : aero- (oc) Roumain : aero- (ro) Sicilien : ariu- (scn) …"
+    },
+    {
+      "title": "Actualités Aéronautiques 2026 - Aerobuzz",
+      "url": "https://www.aerobuzz.fr/",
+      "snippet": "2 days ago · Celle-ci permettrait notamment d’alimenter les futurs avions d’affaires de Beyond Aero. Mais patience : les deux …"
+    },
+    {
+      "title": "boutique.aero",
+      "url": "https://boutique.aero/",
+      "snippet": "Merci à boutique.aero pour la livraison rapide de ma commande et le soin apporté à l'emballage. Je recommande vivement à tous les …"
+    },
+    {
+      "title": "Fédération Française Aéronautique - FFA",
+      "url": "https://www.ffa-aero.fr/FR/Federation_Aeronautique.awp",
+      "snippet": "La Fédération Française Aéronautique représente et gère l'aviation légère et sportive en France, proposant services, formations et …"
+    },
+    {
+      "title": "AURA AERO | Constructeur Aéronautique",
+      "url": "https://www.aura-aero.com/",
+      "snippet": "AURA AERO, constructeur aéronautique français. Avions biplaces de nouvelle génération et avion régional hybride-électrique au …"
+    }
+  ]
+}

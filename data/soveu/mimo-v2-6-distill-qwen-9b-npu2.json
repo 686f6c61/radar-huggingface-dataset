@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Soveu/MiMo-V2.6-Distill-Qwen-9B-NPU2",
+  "slug": "soveu-mimo-v2-6-distill-qwen-9b-npu2",
+  "author": "Soveu",
+  "url": "https://huggingface.co/Soveu/MiMo-V2.6-Distill-Qwen-9B-NPU2",
+  "created_at": "2026-09-22T18:34:36.000Z",
+  "updated_at": "2026-09-22T18:46:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "fastflowlm",
+  "languages": [],
+  "tags": [
+    "fastflowlm",
+    "q4nx",
+    "npu",
+    "amd",
+    "ryzen-ai",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:finetune:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7453977471,
+  "storage_human": "7.5 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "False Positive https://s.pemsrv.com",
+      "url": "https://forums.malwarebytes.com/topic/323756-false-positive-httpsspemsrvcom/",
+      "snippet": "Mar 11, 2025 · My name is Bryan and I am contacting you from the global online advertising network Exoclick.com. It has came to our …"
+    },
+    {
+      "title": "https://s.pemsrv.com/ false positive block",
+      "url": "https://forums.malwarebytes.com/topic/310577-httpsspemsrvcom-false-positive-block/",
+      "snippet": "Apr 10, 2024 · Hello, I am posting this from the global online advertising network Exoclick.com It has came to our attention that our ad …"
+    },
+    {
+      "title": "s.pemsrv.com Reviews | check if site is scam or legit | Scamadviser",
+      "url": "https://www.scamadviser.com/check-website/s.pemsrv.com",
+      "snippet": "In summary, we think s.pemsrv.com is legit and safe for consumers to access. ScamAdviser App : That site looks legit. That's exactly …"
+    },
+    {
+      "title": "S.pemsrv.com Domain Reputation | s.pemsrv.com Abuse Risk | Is s",
+      "url": "https://www.ipqualityscore.com/domain-reputation/s.pemsrv.com",
+      "snippet": "S.pemsrv.com domain reputation including recent account abuse & disposable email validation. Check if s.pemsrv.com is a valid …"
+    },
+    {
+      "title": "Pemsrv.com Redirect Virus - Easy Removal Guide - HackerDose",
+      "url": "https://hackerdose.com/malware/pemsrv-com-redirect-virus/",
+      "snippet": "Oct 23, 2024 · Here's a step-by-step guide on how to get rid of Pemsrv.com from your browser. Our team recently discovered a …"
+    }
+  ]
+}

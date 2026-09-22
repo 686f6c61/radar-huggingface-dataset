@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "nativ-community/Hemmingway-1-MLX-4bit",
+  "slug": "nativ-community-hemmingway-1-mlx-4bit",
+  "author": "nativ-community",
+  "url": "https://huggingface.co/nativ-community/Hemmingway-1-MLX-4bit",
+  "created_at": "2026-09-22T16:04:42.000Z",
+  "updated_at": "2026-09-22T16:05:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_text",
+    "qwen3.8",
+    "chat",
+    "creative-writing",
+    "altworld",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Altworld/Hemmingway-1",
+    "base_model:quantized:Altworld/Hemmingway-1",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 15153032838,
+  "storage_human": "15.2 GB",
+  "base_model": "Altworld/Hemmingway-1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "byNativ | Voyage sur mesure - Agences de voyage locales",
+      "url": "https://www.bynativ.com/",
+      "snippet": "byNativ, la communauté d'agences de voyage locales francophones. Votre voyage sur mesure avec des conseillers locaux vivant à …"
+    },
+    {
+      "title": "Novium nativ | Radiateur chaleur douce | Radiateur design",
+      "url": "https://intuis.fr/produit/chauffage-electrique/novium-nativ",
+      "snippet": "Avec sa surface plane légèrement galbée, NOVIUM nativ diffuse une chaleur douce et homogène. À puissance égale, il remplace un …"
+    },
+    {
+      "title": "Natif : Marque de vêtement Française au style surf et good vibes",
+      "url": "https://natif-shop.com/",
+      "snippet": "Natif, la marque de vêtement Française au style surf et good vibes pour homme, femme et enfant. Des vêtements tendances et …"
+    },
+    {
+      "title": "Nativ (@nativ_pau) • Instagram photos and videos",
+      "url": "https://www.instagram.com/nativ_pau/",
+      "snippet": "2,249 Followers, 17 Following, 72 Posts - Nativ (@nativ_pau) on Instagram: \"Cuisine de saison & fait maison 🌿 Mardi à Samedi 10h - …"
+    },
+    {
+      "title": "Maitrise D'oeuvre | France | Nativ",
+      "url": "https://www.sas-nativ.com/",
+      "snippet": "Nativ' est une société de maîtrise d'œuvre et de pilotage OPC basée à Lyon. Fondée et dirigée par Stéphane Charrion, l'entreprise …"
+    }
+  ]
+}

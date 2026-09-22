@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Snubbull",
+  "slug": "ryanham1lton-snubbull",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Snubbull",
+  "created_at": "2026-09-22T15:06:49.000Z",
+  "updated_at": "2026-09-22T15:07:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129548390,
+  "storage_human": "130 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ScratchJr - Home",
+      "url": "https://www.scratchjr.org/",
+      "snippet": "ScratchJr is available as a free app. ScratchJr Coding for young children With ScratchJr, young children (ages 5-7) can program their …"
+    },
+    {
+      "title": "ScratchJr - Teach",
+      "url": "https://www.scratchjr.org/teach",
+      "snippet": "ScratchJr Connect ScratchJr Connect is a free, curated database for sharing ScratchJr resources, lessons, and projects. Anyone may …"
+    },
+    {
+      "title": "ScratchJr - Support",
+      "url": "https://staging.scratchjr.org/support",
+      "snippet": "With ScratchJr, young children (ages 5-7) can program their own interactive stories and games."
+    },
+    {
+      "title": "ScratchJr - Home",
+      "url": "https://staging.scratchjr.org/",
+      "snippet": "With ScratchJr, young children (ages 5-7) can program their own interactive stories and games. In the process, they learn to solve …"
+    },
+    {
+      "title": "ScratchJr Connect",
+      "url": "https://www.connect.scratchjr.org/feed/",
+      "snippet": "https://www.connect.scratchjr.orgA Resource Platform for ScratchJr EducatorsWed, 26 Nov 2025 14:18:33 +0000en-UShourly 1 …"
+    }
+  ]
+}

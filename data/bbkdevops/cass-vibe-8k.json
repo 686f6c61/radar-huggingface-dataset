@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "bbkdevops/cass-vibe-8k",
+  "slug": "bbkdevops-cass-vibe-8k",
+  "author": "bbkdevops",
+  "url": "https://huggingface.co/bbkdevops/cass-vibe-8k",
+  "created_at": "2026-09-22T16:12:23.000Z",
+  "updated_at": "2026-09-22T16:15:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "long-context",
+    "pytorch",
+    "flash",
+    "math",
+    "reasoning",
+    "sft",
+    "deepseek-v4",
+    "bf16",
+    "abliterated",
+    "vllm",
+    "fp8",
+    "quantized",
+    "v3.0",
+    "conversational",
+    "en",
+    "base_model:prithivMLmods/Qwen3.5-9B-DS-v4-Flash-v3.0",
+    "base_model:quantized:prithivMLmods/Qwen3.5-9B-DS-v4-Flash-v3.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 13540192027,
+  "storage_human": "13.5 GB",
+  "base_model": "prithivMLmods/Qwen3.5-9B-DS-v4-Flash-v3.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "שינוי מטבע בגוגל מפות לשקל ישראלי",
+      "url": "https://support.google.com/maps/thread/17174519/%D7%A9%D7%99%D7%A0%D7%95%D7%99-%D7%9E%D7%98%D7%91%D7%A2-%D7%91%D7%92%D7%95%D7%92%D7%9C-%D7%9E%D7%A4%D7%95%D7%AA-%D7%9C%D7%A9%D7%A7%D7%9C-%D7%99%D7%A9%D7%A8%D7%90%D7%9C%D7%99?hl=en",
+      "snippet": "Oct 19, 2019 · - פשוט: אי אפשר. (וכך לדוגמא קורה שכשאני מחפש מלון לברלין - ב Google Hotels - לכנס מומחי מוצר של גוגל, שנערך השבוע, …"
+    },
+    {
+      "title": "כניסה לחשבונות או מעבר בין חשבונות ...",
+      "url": "https://support.google.com/maps/answer/2803351?hl=he-IL&co=GENIE.Platform%3DDesktop",
+      "snippet": "פתח את מפות Google‏ במחשב. בפינה השמאלית העליונה, לחץ על כניסה. כדי לצאת, בפינה השמאלית העליונה לחץ על תמונת הפרופיל או על האות …"
+    },
+    {
+      "title": "אלבניה – יעדים, המלצות ומסלולי טיול ...",
+      "url": "https://www.gotravel.co.il/travel/?p=1265",
+      "snippet": "אלבניה היא אחת המדינות המרתקות באירופה. עד שנות ה-90 היא הייתה סגורה לעולם, אין יוצא ואין בא. שליט מטורף בשם אנוור הוג'ה שלט בה ללא …"
+    },
+    {
+      "title": "תכנון טיול באיטליה: לעשות סדר בבלגן | GoTravel",
+      "url": "https://www.gotravel.co.il/travel/?p=934",
+      "snippet": "תכנון טיול באיטליה הוא משימה מורכבת, ההיצע התיירותי עצום ומבלבל. כדי לעשות קצת סדר בבלגן, נערוך כאן סקירה קצרה של 20 המחוזות על מפת …"
+    },
+    {
+      "title": "נקודות, רמות ותגים בתוכנית הממליצים ...",
+      "url": "https://support.google.com/maps/answer/6225851?hl=iw&co=GENIE.Platform%3DAndroid",
+      "snippet": "רמות בתוכנית הממליצים המקומיים כשאתם מוסיפים תוכן למפות Google, אתם יכולים לצבור נקודות ולהתקדם בתוכנית הממליצים המקומיים. אם אתם …"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "npario/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced",
+  "slug": "npario-gemma4-12b-qat-uncensored-hauhaucs-balanced",
+  "author": "npario",
+  "url": "https://huggingface.co/npario/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced",
+  "created_at": "2026-09-22T15:53:32.000Z",
+  "updated_at": "2026-09-22T15:53:33.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "gemma4",
+    "vision",
+    "multimodal",
+    "agentic",
+    "coding",
+    "creative-writing",
+    "roleplay",
+    "rp",
+    "conversational",
+    "image-text-to-text",
+    "en",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 7810204352,
+  "storage_human": "7.8 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sweetie Fox - سويتي فوكس's Videos",
+      "url": "https://xxarxx.co/models/Sweetie-Fox-%D8%B3%D9%88%D9%8A%D8%AA%D9%8A-%D9%81%D9%88%D9%83%D8%B3/",
+      "snippet": "سويتي فوكس هي ممثلة افلام اباحية امريكية. ليس هناك معلومات كثيرة عن هذه الفاتنة التي تشبه الدمية, عند زيارة موقعها الرسمي ستجد رسالة ترحيب تقول فيها \" أهلا صديقي! سعيد برؤيتك على موقعي …"
+    },
+    {
+      "title": "Sweetie fox - سويتي فوكس's Videos",
+      "url": "https://sexarab-xnxx.com/models/sweetie-fox-%D8%B3%D9%88%D9%8A%D8%AA%D9%8A-%D9%81%D9%88%D9%83%D8%B3/",
+      "snippet": "بحث..."
+    },
+    {
+      "title": "سكس عربي سويتي فوكس ممثلة اباحية",
+      "url": "https://sexarab-xnxx.com/search/%D8%B3%D9%88%D9%8A%D8%AA%D9%8A-%D9%81%D9%88%D9%83%D8%B3-%D9%85%D9%85%D8%AB%D9%84%D8%A9-%D8%A7%D8%A8%D8%A7%D8%AD%D9%8A%D8%A9/",
+      "snippet": "سكس جماعي رجل كبير مع مراهقات في البيت XNXXX."
+    },
+    {
+      "title": "أفلام Sweetie Fox - iXXX",
+      "url": "https://www.ixxx.com/ar/pornstar/sweetie-fox",
+      "snippet": "شاهدSweetie Fox أفلام مجانية على IXXX.com!"
+    },
+    {
+      "title": "سويتي فوكس Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=%D8%B3%D9%88%D9%8A%D8%AA%D9%8A+%D9%81%D9%88%D9%83%D8%B3",
+      "snippet": "Browse through our impressive selection of porn videos in HD quality on any device you own."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/depth-anything-v2-small",
+  "slug": "skillsafe-ai-depth-anything-v2-small",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/depth-anything-v2-small",
+  "created_at": "2026-09-22T20:43:23.000Z",
+  "updated_at": "2026-09-22T20:43:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "depth_anything",
+    "skillsafe",
+    "browser",
+    "depth-estimation",
+    "import",
+    "base_model:onnx-community/depth-anything-v2-small",
+    "base_model:quantized:onnx-community/depth-anything-v2-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 175962082,
+  "storage_human": "176 MB",
+  "base_model": "onnx-community/depth-anything-v2-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xhamster, Pornhub vb. Engellemeyi Kaldırın. Yetişkinlere Yönelik ...",
+      "url": "https://www.croxy.red/_tr/?ref=w3use&__cpLangSet=1",
+      "snippet": "Bu hizmet, bir web proxy aracılığıyla favori web sitelerinizin engellemesini doğrudan tarayıcınızda anında kaldırmanıza olanak tanır. …"
+    },
+    {
+      "title": "Unblock Xhamster, Pornhub etc. The Most Advanced Free Web Proxy …",
+      "url": "https://cdn.croxy.red/?__cpLangSet=1",
+      "snippet": "Use free web proxy to unblock xnxx, xvideos, pornhub, redtube and other adult sites. Unblock websites with just one click!"
+    },
+    {
+      "title": "Free web proxy and a cutting-edge online proxy | CroxyProxy",
+      "url": "https://www.croxyproxy.com/",
+      "snippet": "CroxyProxy is a reliable and free web proxy service that protects your privacy. It supports numerous video sites, enabling anonymous …"
+    },
+    {
+      "title": "Proxy Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/proxy",
+      "snippet": "Watch proxy porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "Ücretsiz web proxy'si ve son teknoloji ürünü çevrimiçi proxy",
+      "url": "https://www.croxyproxy.com/_tr/",
+      "snippet": "CroxyProxy, gizliliğinizi koruyan güvenilir ve ücretsiz bir web proxy hizmetidir. Çok sayıda video sitesini destekleyerek, tam video …"
+    }
+  ]
+}

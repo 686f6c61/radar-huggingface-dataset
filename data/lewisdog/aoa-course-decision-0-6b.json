@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "lewisdog/aoa-course-decision-0.6b",
+  "slug": "lewisdog-aoa-course-decision-0-6b",
+  "author": "lewisdog",
+  "url": "https://huggingface.co/lewisdog/aoa-course-decision-0.6b",
+  "created_at": "2026-09-22T12:38:55.000Z",
+  "updated_at": "2026-09-22T12:40:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "aoa",
+    "decision-model",
+    "kev",
+    "agent-oriented-architecture",
+    "typesafe-compatible",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:adapter:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53945377,
+  "storage_human": "54 MB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Αρχική Σελίδα | Υπουργείο Αγροτικής Ανάπτυξης & Τροφίμων",
+      "url": "https://www.minagric.gr/",
+      "snippet": "5 days ago · Καλωσορίσατε στην Αρχική Σελίδα του Επίσημου Ιστοτόπου του Υπουργείου Αγροτικής Ανάπτυξης και Τροφίμων"
+    },
+    {
+      "title": "Υπουργείο Αγροτικής Ανάπτυξης και Τροφίμων - Gov.gr",
+      "url": "https://www.gov.gr/el/organizations/ministries/upourgeio-agrotikes-anaptuxes-kai-trophimon",
+      "snippet": "Ανακαλύψτε όλες τις υπηρεσίες που προσφέρει ο φορέας. Στη λίστα παρακάτω μπορείτε να δείτε τους φορείς που υπάγονται στον …"
+    },
+    {
+      "title": "Αρχική Σελίδα | Υπουργείο Αγροτικής Ανάπτυξης & Τροφίμων",
+      "url": "https://www.minagric.gr/component/sppagebuilder/page/3987",
+      "snippet": "Στις 28 Απριλίου 1910, με τον Νόμο ΓΨΚΛ, ιδρύθηκε το έβδομο κατά σειρά Υπουργείο, με την αρχική ονομασία «Υπουργείο …"
+    },
+    {
+      "title": "Υπουργείο Αγροτικής Ανάπτυξης και Τροφίμων",
+      "url": "https://meli.minagric.gr/",
+      "snippet": "Η ιστοσελίδα του Υπουργείου Αγροτικής Ανάπτυξης και Τροφίμων παρέχει πληροφορίες για την αγροτική ανάπτυξη, τρόφιμα και …"
+    },
+    {
+      "title": "Τηλεφωνικός Κατάλογος Προσωπικού ΥπΑΑΤ",
+      "url": "http://agrophone.minagric.gr/",
+      "snippet": "Ο τηλεφωνικός κατάλογος προσωπικού του Υπουργείου Αγροτικής Ανάπτυξης και Τροφίμων παρέχει πληροφορίες επικοινωνίας για …"
+    }
+  ]
+}

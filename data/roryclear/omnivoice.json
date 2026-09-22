@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "roryclear/OmniVoice",
+  "slug": "roryclear-omnivoice",
+  "author": "roryclear",
+  "url": "https://huggingface.co/roryclear/OmniVoice",
+  "created_at": "2026-09-22T19:26:21.000Z",
+  "updated_at": "2026-09-22T19:26:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coaching vs. Mentoring: 11 Key Differences & Skills Needed",
+      "url": "https://www.aihr.com/blog/coaching-vs-mentoring/",
+      "snippet": "A comprehensive guide for HR professionals on defining, differentiating, and developing coaching and mentoring in the workplace."
+    },
+    {
+      "title": "Coaching vs Mentoring: Understanding the Key Differences",
+      "url": "https://coaching.success.com/blog/coaching-vs-mentoring",
+      "snippet": "Mar 12, 2026 · A clear, comprehensive breakdown of the differences between coaching and mentoring, including when to use each, …"
+    },
+    {
+      "title": "Difference Between Coaching and Mentoring",
+      "url": "https://keydifferences.com/difference-between-coaching-and-mentoring.html",
+      "snippet": "While coaching is the process of training and supervising a person to better their performance. On the other hand, mentoring refers to …"
+    },
+    {
+      "title": "Coaching vs Mentoring: What’s the Difference and Why It Matters",
+      "url": "https://academylm.co.uk/coaching-mentoring/coaching-vs-mentoring-whats-the-difference-and-why-it-matters/",
+      "snippet": "Jul 23, 2025 · Coaching and mentoring both make a difference, but in different ways. If you want to support real change, ask powerful …"
+    },
+    {
+      "title": "Coaching and mentoring | Factsheets | CIPD",
+      "url": "https://www.cipd.org/uk/knowledge/factsheets/coaching-mentoring-factsheet/",
+      "snippet": "Aug 11, 2025 · This factsheet offers a definition of coaching and mentoring, distinguishing between the two and emphasising the need …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-mis7_swift_jbbsft1_remove40",
+  "slug": "jeesup-svd-safety-mis7_swift_jbbsft1_remove40",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-mis7_swift_jbbsft1_remove40",
+  "created_at": "2026-09-22T16:15:34.000Z",
+  "updated_at": "2026-09-22T16:17:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991459,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IEX.nl | Koersinformatie, beursnieuws, aandelentips en forum",
+      "url": "https://www.iex.nl/",
+      "snippet": "Sep 22, 2012 · IEX.nl Is hét beleggersplatform van Nederland. Volg hier jouw aandelen en blijf op de hoogte van alle relevante …"
+    },
+    {
+      "title": "Opties voor ABN AMRO BANK N.V. | Alle call- en putopties",
+      "url": "https://www.iex.nl/Aandeel-Koers/612967/ABN-AMRO-BANK-NV/opties-expiratiedatum.aspx",
+      "snippet": "1 day ago · Filter makkelijk op expiratiedatum Of uitoefenprijs voor de optiehandel in ABN AMRO BANK N.V."
+    },
+    {
+      "title": "Nepmail van ABN AMRO in omloop over Digipass - Radar",
+      "url": "https://radar.avrotros.nl/artikel/nepmail-van-abn-amro-in-omloop-over-digipass-32169",
+      "snippet": "01-05-2019 2 min. leestijd Nepmail van ABN AMRO in omloop over Digipass Heb je een mail gekregen van ABN AMRO over het …"
+    },
+    {
+      "title": "ABN AMRO: geld opnemen zonder bankpas via QR-code, is dit wel",
+      "url": "https://radar.avrotros.nl/artikel/abn-amro-geld-opnemen-zonder-bankpas-via-qr-code-is-dit-wel-veilig-51299",
+      "snippet": "Sep 24, 2021 · ABN AMRO: geld opnemen zonder bankpas via QR-code, is dit wel veilig? Klanten van ABN AMRO kunnen sinds …"
+    },
+    {
+      "title": "Koersen » Europa » Nederland » AEX - IEX.nl",
+      "url": "https://www.iex.nl/koersen/europa/nederland/AEX.aspx",
+      "snippet": "Apr 12, 2024 · Realtime streaming beurskoersen van alle aandelen op de Amsterdamse AEX index."
+    }
+  ]
+}

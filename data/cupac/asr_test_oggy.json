@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cupac/asr_test_oggy",
+  "slug": "cupac-asr_test_oggy",
+  "author": "cupac",
+  "url": "https://huggingface.co/cupac/asr_test_oggy",
+  "created_at": "2026-09-22T13:44:23.000Z",
+  "updated_at": "2026-09-22T13:44:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 814054531,
+  "storage_human": "814 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何看待Anthropic、马斯克等顶级 AI 公司呼吁控制前沿 AI 发展节奏？ …",
+      "url": "https://www.zhihu.com/question/2082571703062721521",
+      "snippet": "如何看待Anthropic、马斯克等顶级 AI 公司呼吁控制前沿 AI 发展节奏？ 为啥在此时喊减速？ 今天凌晨，Anthropic CEO达里奥·阿莫德 …"
+    },
+    {
+      "title": "如何评价N-S方程疑似被AI解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/2079574865397532387",
+      "snippet": "其实这种事情已经在发生了。 比如我之前提到Levent用Claude独立构造出S2*S2上的正曲率度量，但是他直到现在都没有公布AI生成 …"
+    },
+    {
+      "title": "Je suis vs. J'ai - French Q & A | KwizIQ French",
+      "url": "https://french.kwiziq.com/questions/view/je-suis-vs-j-ai",
+      "snippet": "Je suis vs. J'ai Hi, I'm a beginner in French and I always get confused in using Je suis and J'ai. In my head (which thinks in English), …"
+    },
+    {
+      "title": "J'etais v j'ai été | French Q & A | KwizIQ French",
+      "url": "https://french.kwiziq.com/questions/view/j-etais-v-j-ai-ete",
+      "snippet": "j'etais v j'ai été when do you use j'etais, tu etais, nous etions etc and when do you use j'ai été, tu as été, nous avons été? they both …"
+    },
+    {
+      "title": "美国AI发展方向主打算力，中国更侧重应用，这是否意味着中国AI路线 …",
+      "url": "https://www.zhihu.com/question/2082585656732160062",
+      "snippet": "美国AI发展方向主打算力，中国更侧重应用，这是否意味着中国AI路线更有优势？ 近期阎学通做客视频播客，他将各国AI分为三类， …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ryomennagi/HDC-AM-Master-Weights",
+  "slug": "ryomennagi-hdc-am-master-weights",
+  "author": "ryomennagi",
+  "url": "https://huggingface.co/ryomennagi/HDC-AM-Master-Weights",
+  "created_at": "2026-09-22T12:04:49.000Z",
+  "updated_at": "2026-09-22T12:12:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "hyperdimensional-computing",
+    "fast-weights",
+    "semiconductor-agnostic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 465985624,
+  "storage_human": "466 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pradžia - Valstybinė darbo inspekcija",
+      "url": "https://vdi.lrv.lt/lt/",
+      "snippet": "Valstybinė darbo inspekcija prie Socialinės apsaugos ir darbo ministerijos Biudžetinės įstaigos kodas 188711163 Adresas Mindaugo …"
+    },
+    {
+      "title": "Kontaktai - Valstybinė darbo inspekcija - LR V",
+      "url": "https://vdi.lrv.lt/lt/struktura-ir-kontaktine-informacija/kontaktai/",
+      "snippet": "5 days ago · Pradžia Struktūra ir kontaktinė informacija Kontaktai Asmenų aptarnavimas ir konsultavimas Konsultacijų ir pranešimų …"
+    },
+    {
+      "title": "Teritoriniai skyriai - Valstybinė darbo inspekcija prie SADM",
+      "url": "https://lrvalstybe.lt/kontaktai/teritoriniai-skyriai-3358",
+      "snippet": "Kai rinkoje trūksta kvalifikuotų darbuotojų, vien paskelbti apie laisvą darbo vietą nebepakanka. Įmonės ieško naujų būdų pasi..."
+    },
+    {
+      "title": "Paslaugos - Valstybinė darbo inspekcija - LR V",
+      "url": "https://vdi.lrv.lt/lt/paslaugos/",
+      "snippet": "Aug 27, 2026 · Valstybinė darbo inspekcija prie Socialinės apsaugos ir darbo ministerijos Biudžetinės įstaigos kodas 188711163 …"
+    },
+    {
+      "title": "Darbo teisė - Valstybinė darbo inspekcija - LR V",
+      "url": "https://vdi.lrv.lt/lt/darbo-teise/",
+      "snippet": "Mar 10, 2026 · Valstybinė darbo inspekcija prie Socialinės apsaugos ir darbo ministerijos Biudžetinės įstaigos kodas 188711163 …"
+    }
+  ]
+}

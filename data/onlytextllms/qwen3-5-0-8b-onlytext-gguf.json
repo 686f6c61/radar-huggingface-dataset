@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "OnlyTextLLMs/Qwen3.5-0.8B-OnlyText-GGUF",
+  "slug": "onlytextllms-qwen3-5-0-8b-onlytext-gguf",
+  "author": "OnlyTextLLMs",
+  "url": "https://huggingface.co/OnlyTextLLMs/Qwen3.5-0.8B-OnlyText-GGUF",
+  "created_at": "2026-09-22T18:17:19.000Z",
+  "updated_at": "2026-09-22T18:19:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "text-generation",
+    "conversational",
+    "text-only",
+    "endpoints_compatible",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772827456,
+  "parameters_human": "772.8M",
+  "storage_bytes": 2021984032,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RTL+: Sport, Filme, Serien, Podcasts, Hörbücher, Live-TV",
+      "url": "https://plus.rtl.de/?msockid=284df585b9666caa05c6e259b8876d18",
+      "snippet": "Großes Entertainment auf RTL+: Streame Bundesliga, Serien, Realitys, Filme, Hörbücher, Podcasts, Event Live-Streams & …"
+    },
+    {
+      "title": "Kampf der Promipaare ab 25. August auf RTL+ - RTL+ Musik",
+      "url": "https://plus.rtl.de/das-sommerhaus-der-stars-kampf-der-promipaare-p_6405?msockid=284df585b9666caa05c6e259b8876d18",
+      "snippet": "Das Sommerhaus der Stars geht in die 11. Staffel und wieder begeben sich 8 Promi-Paare nach Bocholt um jenseits vom Luxus zu …"
+    },
+    {
+      "title": "RTL+ Login | Jetzt anmelden und streamen",
+      "url": "https://my.plus.rtl.de/login",
+      "snippet": "Bereits RTL+ Kunde? Hier geht es zu deinem Account. Logge dich einfach mit deiner E-Mail-Adresse und deinem Passwort ein."
+    },
+    {
+      "title": "(2) Welche RTL+ Pakete gibt es? Preise & Funktionen im Vergleich",
+      "url": "https://community.plus.rtl.de/s/hilfeartikel/rtlplus-pakete-vergleich",
+      "snippet": "Jan 15, 2026 · Vergleicht alle RTL+ Pakete auf einen Blick: Funktionen, Preise, Werbung, Downloads und mehr. Jetzt das passende …"
+    },
+    {
+      "title": "(2) RTL+ HBO Max Bundle: buchen, aktivieren, kündigen – Hilfe & FAQ",
+      "url": "https://community.plus.rtl.de/s/hilfeartikel/hbo-max-mit-rtl-plus-bundle",
+      "snippet": "Alles zum RTL+ & HBO Max Bundle: buchen, aktivieren, nutzen und kündigen. Antworten auf die wichtigsten Fragen im Hilfeartikel."
+    }
+  ]
+}

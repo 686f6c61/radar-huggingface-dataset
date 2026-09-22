@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiMo-V2.6-Distill-Qwen-9B-GGUF",
+  "slug": "mradermacher-mimo-v2-6-distill-qwen-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiMo-V2.6-Distill-Qwen-9B-GGUF",
+  "created_at": "2026-09-22T17:47:04.000Z",
+  "updated_at": "2026-09-22T18:04:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 18544923776,
+  "storage_human": "18.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Prodigy - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Prodigy",
+      "snippet": "The Prodigy are an English electronic music band formed in Braintree in 1990 by producer, keyboardist, and songwriter Liam Howlett …"
+    },
+    {
+      "title": "The Prodigy - YouTube",
+      "url": "https://www.youtube.com/channel/UC7IZbkKDd20v6Ni_vFX63rQ",
+      "snippet": "The Prodigy - Run With The Wolves (Live In China) The Prodigy 503K views • 9 years ago 12:34"
+    },
+    {
+      "title": "The Prodigy | The official website for The Prodigy",
+      "url": "https://theprodigy.com/",
+      "snippet": "The Prodigy announce a new collaboration range with legendary Street Artist Trouble Andrew. Originally known as a professional …"
+    },
+    {
+      "title": "The Prodigy — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/The_Prodigy",
+      "snippet": "En concert, Olly Burden joue de la guitare tandis que Leo Crabtree s'occupe de la batterie. The Prodigy apparaît sur la scène rave …"
+    },
+    {
+      "title": "The Prodigy | The official website for The Prodigy",
+      "url": "https://theprodigy.com/page/3/",
+      "snippet": "MERCH The Prodigy x Hummel - Limited Edition Football Shirt & Firestarter T-Shirt & Firestarter - x 30 Vinyl & We Are Cunts T-Shirt &"
+    }
+  ]
+}

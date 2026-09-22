@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "FIIS/veronapooth",
+  "slug": "fiis-veronapooth",
+  "author": "FIIS",
+  "url": "https://huggingface.co/FIIS/veronapooth",
+  "created_at": "2026-09-16T19:16:19.000Z",
+  "updated_at": "2026-09-16T19:16:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-17T02:53:49.368Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supprimer des Objets | Nettoyeur de Photos en Ligne Gratuit",
+      "url": "https://www.pixelcut.ai/fr/supprimer-des-objets",
+      "snippet": "Le Magic Eraser en ligne gratuit de Pixelcut vous permet de supprimer tous les objets indésirables de vos photos pour obtenir des …"
+    },
+    {
+      "title": "Gomme Magique : Logiciel Retouche Photo Gratuit | Photoroom",
+      "url": "https://www.photoroom.com/fr/tools/remove-object-from-photo",
+      "snippet": "Supprimez instantanément un objet, une personne, des textes ou filigranes de vos images. Sélectionnez votre photo, peignez sur …"
+    },
+    {
+      "title": "Supprimer des objets sur une photo en ligne gratuitement",
+      "url": "https://www.artguru.ai/fr/remove-object-from-photo/",
+      "snippet": "Que vous souhaitiez effacer de petits détails ou enlever des éléments plus importants, c'est aussi simple qu'un coup de pinceau. …"
+    },
+    {
+      "title": "Supprimeur d'Objets par IA - Supprimez les objets de vos ... - FlexClip",
+      "url": "https://www.flexclip.com/fr/tools/ai-object-remover/",
+      "snippet": "Supprimez les objets indésirables de vos photos en ligne grâce à notre gomme magique par IA. Il vous suffit d’uploader votre photo …"
+    },
+    {
+      "title": "Gomme magique : supprimer élément photo en ligne gratuitement",
+      "url": "https://www.fotor.com/fr/features/remove-object-from-photo/",
+      "snippet": "Avec l’effaceur magique gratuit de Fotor, vous pouvez facilement et rapidement supprimer un objet sur une photo en quelques étapes …"
+    }
+  ]
+}

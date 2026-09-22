@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep2",
+  "slug": "seanwang0027-qwen3-1-7b-babyai-tcod-b2f-qwen3-32b-ep2",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep2",
+  "created_at": "2026-09-22T19:08:55.000Z",
+  "updated_at": "2026-09-22T19:09:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "babyai",
+    "on-policy-distillation",
+    "tcod",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Palazzo Pamphilj (Rom) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Palazzo_Pamphilj_(Rom)",
+      "snippet": "Der Palazzo Pamphilj (oder Pamphili) ist ein Palast an der Piazza Navona in Rom. Er wurde im Hochbarock, ab 1630 bis ca. 1650, …"
+    },
+    {
+      "title": "Palazzo Pamphilj – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Palazzo_Pamphilj",
+      "snippet": "Palazzo Pamphilj (Albano Laziale) in Albano Laziale Palazzo Pamphilj (Rom) in Rom"
+    },
+    {
+      "title": "Palazzo Pamphilj - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Palazzo_Pamphilj",
+      "snippet": "Palazzo Pamphilj, also spelled Palazzo Pamphili, is a palace facing onto the Piazza Navona in Rome, Italy. It was built between 1644 …"
+    },
+    {
+      "title": "Palazzo Pamphilj (Rom) — Schloss in Italien | Castlemap",
+      "url": "https://thecastlemap.com/de/castles/palazzo-pamphilj/",
+      "snippet": "Der Palazzo Pamphilj (oder Pamphili) ist ein Palast an der Piazza Navona in Rom. Er wurde im Hochbarock, ab 1630 bis ca. 1650, …"
+    },
+    {
+      "title": "Palazzo Pamphilj, Rom: Besucherführer 2026 - audiala.com",
+      "url": "https://audiala.com/de/italien/rom/palazzo-pamphilj",
+      "snippet": "Apr 16, 2026 · Der Palazzo Pamphilj ist ein Paradebeispiel römischer Barockarchitektur, die durch klassische Zurückhaltung …"
+    }
+  ]
+}

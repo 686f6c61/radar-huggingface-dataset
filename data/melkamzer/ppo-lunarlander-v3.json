@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Melkamzer/ppo-LunarLander-v3",
+  "slug": "melkamzer-ppo-lunarlander-v3",
+  "author": "Melkamzer",
+  "url": "https://huggingface.co/Melkamzer/ppo-LunarLander-v3",
+  "created_at": "2026-09-22T13:44:30.000Z",
+  "updated_at": "2026-09-22T13:54:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 434769,
+  "storage_human": "434769 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lahana Turşusu Tarifi, Nasıl Yapılır? (Resimli Videolu) - Yemek.com",
+      "url": "https://yemek.com/tarif/lahana-tursusu/",
+      "snippet": "Nov 19, 2020 · Pratik bir şekilde hazırlanan, hemen hemen tüm sulu yemekler ve mısır ekmeği ile iyi bir ikili olan lahana turşusu bu …"
+    },
+    {
+      "title": "Beyaz Lahana Turşusu (videolu) - Nefis Yemek Tarifleri",
+      "url": "https://www.nefisyemektarifleri.com/beyaz-lahana-tursusu/",
+      "snippet": "Dec 12, 2023 · Beyaz Lahana Turşusu (videolu) Tarifi nasıl yapılır? On binlerce kişinin defterindeki bu tarifin detaylı anlatımı ve …"
+    },
+    {
+      "title": "Lahana Turşusu - Nefis Yemek Tarifleri - #4004435",
+      "url": "https://www.nefisyemektarifleri.com/lahana-tursusu-4004435/",
+      "snippet": "Dec 11, 2017 · Lahana Turşusu Tarifi nasıl yapılır? Onlarca kişinin defterindeki Lahana Turşusu Tarifi'nin detaylı anlatımı ve …"
+    },
+    {
+      "title": "Lahana Turşusu Rezept - Eingelegter Kohl - Türkische Rezepte",
+      "url": "https://www.turkischerezepte.de/tursu-rezept-lahana-mit-knoblauch-turkische/",
+      "snippet": "Dec 12, 2023 · Lahana Tursu - fermentiertes türkisches Sauerkraut mit Knoblauch und Gewürzen. Probiotisch, gesund und das …"
+    },
+    {
+      "title": "Lahana Turşusu Tarifi: Nasıl Yapılır? - YemekNet",
+      "url": "https://ye-mek.net/tarif/lahana-tursusu",
+      "snippet": "Oct 16, 2023 · Lahana turşusu, içeriğindeki lahana sayesinde yüksek lifli ve probiyotik açısından zengin bir besindir; bu özellikleri …"
+    }
+  ]
+}

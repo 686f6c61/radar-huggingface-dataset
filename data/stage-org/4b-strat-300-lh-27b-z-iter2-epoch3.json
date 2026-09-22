@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Stage-org/4b-strat-300-LH-27b-z-iter2-epoch3",
+  "slug": "stage-org-4b-strat-300-lh-27b-z-iter2-epoch3",
+  "author": "Stage-org",
+  "url": "https://huggingface.co/Stage-org/4b-strat-300-LH-27b-z-iter2-epoch3",
+  "created_at": "2026-09-22T17:23:57.000Z",
+  "updated_at": "2026-09-22T17:25:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609757,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

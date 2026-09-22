@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tianxinwei/JevAny-27B-SFT",
+  "slug": "tianxinwei-jevany-27b-sft",
+  "author": "tianxinwei",
+  "url": "https://huggingface.co/tianxinwei/JevAny-27B-SFT",
+  "created_at": "2026-09-22T18:30:23.000Z",
+  "updated_at": "2026-09-22T19:02:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision-model",
+    "lora",
+    "calibration",
+    "text-classification",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 477532991,
+  "storage_human": "478 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cómo iniciar sesión en Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/es-es/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Hotmail ahora está Outlook.com Para iniciar sesión en Hotmail, necesitarás el nombre de usuario y la contraseña de tu cuenta de …"
+    },
+    {
+      "title": "Desinstalar o quitar aplicaciones y programas en Windows",
+      "url": "https://support.microsoft.com/es-es/windows/desinstalar-o-quitar-aplicaciones-y-programas-en-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98",
+      "snippet": "Resumen Hay diferentes formas de quitar aplicaciones y programas, por lo que, si no encuentras el que estás buscando, puedes …"
+    },
+    {
+      "title": "How do you go to whatsapp settings? - Answers",
+      "url": "https://www.answers.com/computers/How_do_you_go_to_whatsapp_settings",
+      "snippet": "Jul 12, 2025 · To access WhatsApp settings, open the app on your device and tap on the three vertical dots (Android) or the bottom …"
+    },
+    {
+      "title": "What are some common scams involving Coinbase and WhatsApp?",
+      "url": "https://www.answers.com/finance/What-are-some-common-scams-involving-coinbase-and-whatsapp",
+      "snippet": "Feb 16, 2025 · Common scams involving Coinbase and WhatsApp include fake customer support scams where scammers …"
+    },
+    {
+      "title": "Corrigir problemas de som ou áudio no Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/pt-br/windows/hardware/audio/fix-sound-or-audio-problems-in-windows",
+      "snippet": "Windows 11 Windows 10 Problemas de áudio no seu PC podem ser incrivelmente frustrantes, especialmente quando você está …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/qwen2.5-0.5b-instruct-q4f16",
+  "slug": "skillsafe-ai-qwen2-5-0-5b-instruct-q4f16",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/qwen2.5-0.5b-instruct-q4f16",
+  "created_at": "2026-09-22T16:16:46.000Z",
+  "updated_at": "2026-09-22T16:19:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "skillsafe",
+    "browser",
+    "web-llm",
+    "text-generation",
+    "mlc",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 283004864,
+  "storage_human": "283 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "带圈圈的序号1到30 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/248361110890276644.html",
+      "snippet": "1到20的带圈数字符号为： ①、②、③、④、⑤、⑥、⑦、⑧、⑨、⑩ ⑪、⑫、⑬、⑭、⑮、⑯、⑰、⑱、⑲、⑳ 21之后的带圈数字无法直 …"
+    },
+    {
+      "title": "怎么输入带圈数字①②③④⑤⑧㊸㊹㊺㊻㊼㊽㊾㊿-百度经验",
+      "url": "https://jingyan.baidu.com/article/a3aad71a2b7a69b1fb009630.html",
+      "snippet": "May 16, 2019 · 显然上面的方式只能输入0-20，但是更高的数字却不能输入了，怎么办呢， 更复杂的方式我们也不想学了， 这个一个 …"
+    },
+    {
+      "title": "教你怎么输入“√ ”和“×” word怎么打钩/打叉-百度经验",
+      "url": "https://jingyan.baidu.com/article/48b37f8d0783821a646488fa.html",
+      "snippet": "Oct 25, 2017 · 第一种方法：利用Word中的“符号”插入钩和叉。 打开Word文档，打开菜单栏的“插入”中“符号”，在弹出的“符号”窗口中 …"
+    },
+    {
+      "title": "百度知道 - 全球领先中文互动问答平台",
+      "url": "https://zhidao.baidu.com/",
+      "snippet": "百度知道是全球领先的中文问答互动平台，每天为数亿网民答疑解惑。百度知道通过AI技术实现智能检索和智能推荐，让您的每个疑问 …"
+    },
+    {
+      "title": "顺丰客服24小时热线人工服务电话 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/400269824684714085.html",
+      "snippet": "顺丰客服24小时热线人工服务电话是95338。 “95338”是顺丰打造统一呼叫服务窗口，为广大客户提供优质便捷服务，提升竞争优势的 …"
+    }
+  ]
+}

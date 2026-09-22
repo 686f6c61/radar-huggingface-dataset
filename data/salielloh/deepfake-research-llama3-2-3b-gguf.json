@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SaliElloh/deepfake-research-llama3.2-3b-GGUF",
+  "slug": "salielloh-deepfake-research-llama3-2-3b-gguf",
+  "author": "SaliElloh",
+  "url": "https://huggingface.co/SaliElloh/deepfake-research-llama3.2-3b-GGUF",
+  "created_at": "2026-09-22T20:44:24.000Z",
+  "updated_at": "2026-09-22T20:47:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 2019377408,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "china-meters.com - Shanghai Fengyilong Electronic Co., Ltd.",
+      "url": "http://www.china-meters.com/",
+      "snippet": "Hot search： Energy Meter 、 Water Meter 、 Gas Meter 、 AMI System 、 DIN Rail Meter 、 Test Equipment"
+    },
+    {
+      "title": "China Meters, Meters Wholesale, Manufacturers, Price - Made-in-China…",
+      "url": "https://www.made-in-china.com/products-search/hot-china-products/Meters.html",
+      "snippet": "China Meters wholesale - 2026 Meters products in best price from Chinese Water Meter manufacturers, Electric Meter suppliers, …"
+    },
+    {
+      "title": "Meters Manufacturers & Suppliers, China meters Manufacturers Price",
+      "url": "https://www.made-in-china.com/manufacturers/meters.html",
+      "snippet": "meters manufacturers/supplier, China meters manufacturer & factory list, find best price in Chinese meters manufacturers, suppliers, …"
+    },
+    {
+      "title": "Meters China Trade,Buy China Direct From Meters Factories at …",
+      "url": "https://www.alibaba.com/countrysearch/CN/meters.html",
+      "snippet": "Buy Meters China Direct From Meters Factories at Alibaba.com. Help Global Buyers Source China Easily."
+    },
+    {
+      "title": "China Meter Product Factory - Rensino Meter Co., Ltd.",
+      "url": "https://www.meter-china.com/",
+      "snippet": "China meter manufacturer offering cost-effective meters at competitive price for importers, distributors, brands and industrial buyers."
+    }
+  ]
+}

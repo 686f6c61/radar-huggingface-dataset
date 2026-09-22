@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "EricMingle69/ppo-Pyramids",
+  "slug": "ericmingle69-ppo-pyramids",
+  "author": "EricMingle69",
+  "url": "https://huggingface.co/EricMingle69/ppo-Pyramids",
+  "created_at": "2026-09-22T18:39:39.000Z",
+  "updated_at": "2026-09-22T18:39:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18730141,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest",
+      "url": "http://pinterest.de/search/pins",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    }
+  ]
+}

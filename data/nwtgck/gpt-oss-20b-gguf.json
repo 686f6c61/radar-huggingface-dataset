@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nwtgck/gpt-oss-20b-GGUF",
+  "slug": "nwtgck-gpt-oss-20b-gguf",
+  "author": "nwtgck",
+  "url": "https://huggingface.co/nwtgck/gpt-oss-20b-GGUF",
+  "created_at": "2026-09-22T13:22:25.000Z",
+  "updated_at": "2026-09-22T13:22:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "text-generation",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:quantized:openai/gpt-oss-20b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 14753643424,
+  "storage_human": "14.8 GB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Мишак європейський — Вікіпедія",
+      "url": "https://uk.wikipedia.org/wiki/%D0%9C%D0%B8%D1%88%D0%B0%D0%BA_%D1%94%D0%B2%D1%80%D0%BE%D0%BF%D0%B5%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D0%B9",
+      "snippet": "Мишак європейський, або \"миша лісова\" (Sylvaemus sylvaticus) — невелика тварина з родини Мишеві надряду Гризуни. Вид …"
+    },
+    {
+      "title": "Мишак — Вікіпедія",
+      "url": "https://uk.wikipedia.org/wiki/%D0%9C%D0%B8%D1%88%D0%B0%D0%BA",
+      "snippet": "Мишак, або лісова миша (Sylvaemus) — рід гризунів родини мишевих (Muridae) з підряду мишовидих (Murimorpha), якого …"
+    },
+    {
+      "title": "Лісова мишка | Пригоди з ...",
+      "url": "https://www.youtube.com/watch?v=2Gp2GRdQnF0",
+      "snippet": "Nov 8, 2025 · Мала лісова мишка досліджує свій світ 🐭🌲 Повільні стрибки, нічні витівки та цікаві моменти — усе знято ..."
+    },
+    {
+      "title": "Лісова миша – фото і опис - ProLedi.com.ua",
+      "url": "https://proledi.com.ua/lisova-misha-foto-i-opis",
+      "snippet": "Лісова миша – кумедний, симпатичне звірятко, що мешкає на відкритих ділянках лісу. Покидає колишні місця, наближається …"
+    },
+    {
+      "title": "Мишак європейський - факти, дієта ... - Animalia",
+      "url": "https://animalia.bio/uk/wood-mouse",
+      "snippet": "Незважаючи на поширену назву \"мишак лісовий\", ця \"миша\" мешкає не лише у лісі, але і в парках та садах, в заплавах та на …"
+    }
+  ]
+}

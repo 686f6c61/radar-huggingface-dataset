@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ardanila/sys1mlx",
+  "slug": "ardanila-sys1mlx",
+  "author": "ardanila",
+  "url": "https://huggingface.co/ardanila/sys1mlx",
+  "created_at": "2026-09-22T12:15:38.000Z",
+  "updated_at": "2026-09-22T12:34:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "multiple-choice",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "decision-model",
+    "multiple-choice",
+    "vision",
+    "experimental",
+    "4-bit",
+    "en",
+    "ru",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:merge:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 991474176,
+  "parameters_human": "991.5M",
+  "storage_bytes": 3052353246,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of people across an …"
+    },
+    {
+      "title": "Log in to Roblox",
+      "url": "https://www.roblox.com/NewLogin",
+      "snippet": "©2026 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered …"
+    },
+    {
+      "title": "Roblox - Windows — бесплатно скачайте и играйте в Windows",
+      "url": "https://apps.microsoft.com/detail/9pmf91n3lz3m?hl=ru-RU&gl=RU",
+      "snippet": "ROBLOX – GREAT GAMES ACROSS EVERY GENRE. PLAY FREE The range of games on Roblox is unmatched. Relax with …"
+    },
+    {
+      "title": "Приложения в Google Play – Roblox",
+      "url": "https://play.google.com/store/apps/details?id=com.roblox.client&hl=ru",
+      "snippet": "ROBLOX — МИЛЛИОНЫ ИГР САМЫХ РАЗНЫХ ЖАНРОВ. ИГРАЙТЕ БЕСПЛАТНО! В Roblox найдутся игры на любой вкус! …"
+    },
+    {
+      "title": "Download Roblox",
+      "url": "https://www.roblox.com/download",
+      "snippet": "Download the Roblox app to use Roblox on your smartphone, tablet, computer, console, VR headset, and more."
+    }
+  ]
+}

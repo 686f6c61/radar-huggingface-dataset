@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/RaticateJCC",
+  "slug": "ryanham1lton-raticatejcc",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/RaticateJCC",
+  "created_at": "2026-09-22T14:56:58.000Z",
+  "updated_at": "2026-09-22T14:57:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116336093,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quick and Easy Chicken Noodle Soup Recipe",
+      "url": "https://www.allrecipes.com/recipe/26460/quick-and-easy-chicken-noodle-soup/",
+      "snippet": "Feb 24, 2026 · This easy chicken noodle soup recipe made with veggies and leftover chicken is warm, comforting, and ready to ladle …"
+    },
+    {
+      "title": "Chicken Noodle Soup Recipe: How to Make It - Taste of Home",
+      "url": "https://www.tasteofhome.com/recipes/the-ultimate-chicken-noodle-soup/",
+      "snippet": "Mar 7, 2024 · This chicken noodle soup recipe is made from scratch with bone-in chicken, chewy egg noodles and a high-quality …"
+    },
+    {
+      "title": "Literally the BEST Chicken Noodle Soup - The Recipe Critic",
+      "url": "https://therecipecritic.com/chicken-noodle-soup-recipe/",
+      "snippet": "Oct 5, 2023 · This is literally the BEST chicken noodle soup full of chicken, sliced carrots, celery, and tender wide noodles. A classic …"
+    },
+    {
+      "title": "The Best Chicken Noodle Soup Recipe - Inspired Taste",
+      "url": "https://www.inspiredtaste.net/37475/homemade-chicken-noodle-soup-recipe/",
+      "snippet": "Aug 4, 2026 · They make a ridiculously flavorful broth and mean we have homemade chicken noodle soup ready in under 40 minutes …"
+    },
+    {
+      "title": "Best Chicken Noodle Soup Recipe - Delish",
+      "url": "https://www.delish.com/cooking/recipe-ideas/a51338/homemade-chicken-noodle-soup-recipe/",
+      "snippet": "Jan 12, 2026 · Chicken noodle soup is the epitome of comfort food. Our easy, classic recipe packs a flavorful punch that will have you …"
+    }
+  ]
+}

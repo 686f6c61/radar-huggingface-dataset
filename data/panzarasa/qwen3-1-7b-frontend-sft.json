@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "panzarasa/qwen3-1.7b-frontend-sft",
+  "slug": "panzarasa-qwen3-1-7b-frontend-sft",
+  "author": "panzarasa",
+  "url": "https://huggingface.co/panzarasa/qwen3-1.7b-frontend-sft",
+  "created_at": "2026-09-22T19:21:13.000Z",
+  "updated_at": "2026-09-22T19:25:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "code",
+    "html",
+    "css",
+    "javascript",
+    "frontend",
+    "qlora",
+    "unsloth",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceM4/WebSight",
+    "dataset:bigcode/commitpackft",
+    "dataset:xcodemind/webcode2m",
+    "dataset:Tesslate/Next.js-Dataset",
+    "dataset:saurabh5/rlvr-code-data-JavaScript-sft",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3592121508,
+  "storage_human": "3.6 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die Amateur Erotik Community - Kontakte, Videos, Bilder, Sex",
+      "url": "https://www.eronity.com/",
+      "snippet": "Die grundsätzliche Nutzung von Eronity ist kostenlos. Dich erwarten sexy Amateur Fotos, Sexkontakte, Singles, Paare, Kontakte zu …"
+    },
+    {
+      "title": "Willkommen zurück - eronity.com",
+      "url": "https://www.eronity.com/login.php",
+      "snippet": "Wenn du bereits registriert bist, kannst du dich hier mit deinen Mitgliedsdaten anmelden."
+    },
+    {
+      "title": "Eronity Amateur EROtik CommuNITY",
+      "url": "https://www.eronity.com/chats.php",
+      "snippet": "Eronity setzt auserwählte Mitglieder als sogenannte \"Moderatoren\" ein, um die Community-Regeln innerhalb des Chats …"
+    },
+    {
+      "title": "kostenlos anmelden - eronity.com",
+      "url": "https://www.eronity.com/join.php?acc",
+      "snippet": "Deinesgleichen finden. dich in themenbezogene Gruppen austauschen. ... und vieles mehr! Was ist Eronity?"
+    },
+    {
+      "title": "Was ist Eronity?",
+      "url": "https://www.eronity.com/about.php",
+      "snippet": "Eronity kann generell jederzeit ohne anfallende Kosten genutzt werden. Mit einem Mitgliedsaccount kann man sich auf der Seite …"
+    }
+  ]
+}

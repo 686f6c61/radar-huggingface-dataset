@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Stage-org/4b-diversity-history-selfsource-300-27b-z-epoch3",
+  "slug": "stage-org-4b-diversity-history-selfsource-300-27b-z-epoch3",
+  "author": "Stage-org",
+  "url": "https://huggingface.co/Stage-org/4b-diversity-history-selfsource-300-27b-z-epoch3",
+  "created_at": "2026-09-22T17:43:32.000Z",
+  "updated_at": "2026-09-22T17:44:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609757,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welt Fernsehsender : r/de - Reddit",
+      "url": "https://www.reddit.com/r/de/comments/ke7ok6/welt_fernsehsender/",
+      "snippet": "Dec 16, 2020 · Seit einiger Zeit empfange ich den Welt Fernsehstation in HD Format auf Astra Satellit. Es scheint eine gute …"
+    },
+    {
+      "title": "Die WELT wird AfD-Parteiorgan: Ein journalistischer Sündenfall",
+      "url": "https://www.reddit.com/r/de/comments/dglmbk/die_welt_wird_afdparteiorgan_ein_journalistischer/",
+      "snippet": "Die Welt hat damit eine Marktlücke besetzt und fährt, was die Onlineabos angeht (Welt+) übrigens ziemlich gut. Der Journalismus der …"
+    },
+    {
+      "title": "Ist WELT Nachrichtensender ein seriöser und glaubhafter ... - Reddit",
+      "url": "https://www.reddit.com/r/FragReddit/comments/vnqrjv/ist_welt_nachrichtensender_ein_seri%C3%B6ser_und/",
+      "snippet": "Jun 29, 2022 · Welt ist kein seriöser und glaubhafter Nachrichtensender. Es gibt zwar wesentliche schlimmere, beispielsweise die …"
+    },
+    {
+      "title": "Drachen allein reichen nicht: Der beste Fernsehsender der Welt",
+      "url": "https://www.reddit.com/r/de/comments/4f6039/drachen_allein_reichen_nicht_der_beste/",
+      "snippet": "Drachen allein reichen nicht: Der beste Fernsehsender der Welt hat ein Problem"
+    },
+    {
+      "title": "Politische Ausrichtung deutscher TV-Nachrichten : r/FragReddit",
+      "url": "https://www.reddit.com/r/FragReddit/comments/hg6k1r/politische_ausrichtung_deutscher_tvnachrichten/",
+      "snippet": "Jun 26, 2020 · Moin, ich hab ne Frage, wo ich jetzt hier gleich den Kommentarbereich in Flammen seh, aber sei's drum, ich frag …"
+    }
+  ]
+}

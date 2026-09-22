@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ScuffedWizard/LilBro_V1",
+  "slug": "scuffedwizard-lilbro_v1",
+  "author": "ScuffedWizard",
+  "url": "https://huggingface.co/ScuffedWizard/LilBro_V1",
+  "created_at": "2026-09-22T17:04:05.000Z",
+  "updated_at": "2026-09-22T17:06:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 44909056,
+  "parameters_human": "44.9M",
+  "storage_bytes": 36123904,
+  "storage_human": "36 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=DE&hl=de",
+      "snippet": "Auf YouTube findest du großartige Videos und erstklassige Musik. Außerdem kannst du eigene Inhalte hochladen und mit Freunden …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/YouTube",
+      "snippet": "YouTube (Aussprache [ˈjuːtuːb oder ˈjuːtjuːb]) ist ein 2005 gegründetes Videoportal des US-amerikanischen Unternehmens YouTube, …"
+    },
+    {
+      "title": "YouTube – Apps bei Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=de",
+      "snippet": "Hol dir die offizielle YouTube App auf Android-Smartphones und -Tablets und entdecke angesagte Videos weltweit – von den …"
+    }
+  ]
+}

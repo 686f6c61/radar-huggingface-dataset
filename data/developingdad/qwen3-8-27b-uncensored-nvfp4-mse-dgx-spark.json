@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "DevelopingDad/Qwen3.8-27B-Uncensored-NVFP4-MSE-DGX-Spark",
+  "slug": "developingdad-qwen3-8-27b-uncensored-nvfp4-mse-dgx-spark",
+  "author": "DevelopingDad",
+  "url": "https://huggingface.co/DevelopingDad/Qwen3.8-27B-Uncensored-NVFP4-MSE-DGX-Spark",
+  "created_at": "2026-09-22T12:30:35.000Z",
+  "updated_at": "2026-09-22T12:54:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "qwen3.8",
+    "nvfp4",
+    "fp8",
+    "modelopt",
+    "sglang",
+    "dflash",
+    "speculative-decoding",
+    "dgx-spark",
+    "gb10",
+    "vision-language",
+    "function-calling",
+    "reasoning",
+    "uncensored",
+    "abliterated",
+    "ai-red-team",
+    "red-teaming",
+    "not-for-all-audiences",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18164649200,
+  "parameters_human": "18.16B",
+  "storage_bytes": 21934484276,
+  "storage_human": "21.9 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "GPT-5 is here | OpenAI",
+      "url": "https://openai.com/gpt-5/",
+      "snippet": "ChatGPT thinks harder on complex tasks and asks relevant follow-up questions to keep work moving. Every employee can get expert …"
+    },
+    {
+      "title": "ChatGPT - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ChatGPT",
+      "snippet": "ChatGPT accelerated the AI boom, an ongoing period marked by rapid investment and public attention toward the field of artificial …"
+    }
+  ]
+}

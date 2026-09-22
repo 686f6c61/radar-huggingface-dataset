@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "FluidInference/kev-0.6b-coreml",
+  "slug": "fluidinference-kev-0-6b-coreml",
+  "author": "FluidInference",
+  "url": "https://huggingface.co/FluidInference/kev-0.6b-coreml",
+  "created_at": "2026-09-22T20:32:24.000Z",
+  "updated_at": "2026-09-22T21:05:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "decision-model",
+    "apple-silicon",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:quantized:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1804079751,
+  "storage_human": "1.8 GB",
+  "base_model": "jaredpalmer/kev-0.6b, Qwen/Qwen3-0.6B-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Check Current Print Jobs in Queue: Windows Guide",
+      "url": "https://www.wikihow.com/Check-Current-Print-Jobs-in-Queue-Windows",
+      "snippet": "Sep 3, 2026 · The print queue, or print spooler, on your Windows 10 or 11 device is the best place to check how the print jobs you …"
+    },
+    {
+      "title": "View a printer's print queue in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/printer/view-a-printer-s-print-queue-in-windows",
+      "snippet": "In the Printers & Scanners window, select the printer whose print queue needs to be viewed, and then select the Open queue button. …"
+    },
+    {
+      "title": "Check Current Print Jobs in Queue in Windows 11 & 10",
+      "url": "https://gadgetsnurture.com/check-current-print-jobs-in-queue-in-windows-11-10/",
+      "snippet": "May 21, 2026 · Check current print jobs in queue in Windows 11 and 10 to view, pause, resume, or cancel pending printer tasks easily."
+    },
+    {
+      "title": "Check Current Print Jobs in Queue in Windows 11/10 (2026 Guide)",
+      "url": "https://onewebcare.com/windows/check-current-print-jobs-in-queue/",
+      "snippet": "Sep 9, 2026 · Check current print jobs in queue on Windows 11 and 10 using Settings, PowerShell, or the taskbar - plus how to …"
+    },
+    {
+      "title": "Check Current Print Jobs In Queue Windows 11 & 10",
+      "url": "https://geekzag.com/guides/computers/check-current-print-jobs-in-queue-windows/",
+      "snippet": "Feb 9, 2026 · Look for a small printer icon in the notification area of your taskbar (usually on the bottom-right corner of your screen). …"
+    }
+  ]
+}

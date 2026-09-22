@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/isl-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455",
+  "slug": "francesca9805-isl-latn-100mb-ppt-dp-10mb-packed-bfd_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/isl-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455",
+  "created_at": "2026-09-22T14:54:37.000Z",
+  "updated_at": "2026-09-22T14:58:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/isl_latn_100mb",
+    "base_model:finetune:goldfish-models/isl_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 250775085,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/isl_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cfx Forum - The home of FiveM & RedM",
+      "url": "https://forum.cfx.re/login",
+      "snippet": "Welcome to Cfx Forum The home of the Rockstar Games' modification frameworks for GTAV and Red Dead Redemption 2."
+    },
+    {
+      "title": "[ESX/QB/QBX] anox-drugs | Gather, Process, and Package Drugs [FREE]",
+      "url": "https://forum.cfx.re/t/esx-qb-qbx-anox-drugs-gather-process-and-package-drugs-free/5326133",
+      "snippet": "May 14, 2025 · Overview anox-drugs is a classic drug production system where players can collect materials, process them, and …"
+    },
+    {
+      "title": "我的DISCORD一直卡在cheking for updates 一直转 昨天前天还好好的",
+      "url": "https://www.zhihu.com/question/309741403",
+      "snippet": "我的DISCORD一直卡在cheking for updates，一直转圈无法更新，昨天前天还好好的，为啥呀？"
+    },
+    {
+      "title": "Discord - 知乎",
+      "url": "https://www.zhihu.com/topic/23739196/hot",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "[RELEASE] Badger_Discord_API - FiveM Releases - Cfx Forum",
+      "url": "https://forum.cfx.re/t/release-badger-discord-api/1698464",
+      "snippet": "Oct 18, 2020 · Badger_Discord_API Documentation Notes Some methods of the API not may fully work or be broken. I was able to …"
+    }
+  ]
+}

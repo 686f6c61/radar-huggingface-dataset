@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kitt3n/anima-prompt-expander-qwen3.5-4b-lora",
+  "slug": "kitt3n-anima-prompt-expander-qwen3-5-4b-lora",
+  "author": "kitt3n",
+  "url": "https://huggingface.co/kitt3n/anima-prompt-expander-qwen3.5-4b-lora",
+  "created_at": "2026-09-22T13:20:28.000Z",
+  "updated_at": "2026-09-22T14:02:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "unsloth",
+    "prompt-expansion",
+    "anima",
+    "text-generation",
+    "zh",
+    "en",
+    "dataset:kitt3n/anima-prompt-expander-v0.4",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149916351,
+  "storage_human": "150 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best savings accounts: 5% easy access or 5.25% fixed rate",
+      "url": "https://www.moneysavingexpert.com/savings/savings-accounts-best-interest/",
+      "snippet": "14 hours ago · Find the top interest rate savings accounts & maximise your returns with Martin Lewis' guide. Includes the top easy …"
+    },
+    {
+      "title": "Best cash ISAs: up to 4.75% easy access, up to 5.25% fixed - MSE",
+      "url": "https://www.moneysavingexpert.com/savings/best-cash-isa/",
+      "snippet": "Sep 10, 2026 · Get tax-free interest on savings of up to £20,000. Martin Lewis compares the top paying cash ISAs to help you get the …"
+    },
+    {
+      "title": "Best savings accounts - up to 5.01% interest | MoneySuperMarket",
+      "url": "https://www.moneysupermarket.com/savings/?msockid=24059bc571b86cb92d638c1970a66de0",
+      "snippet": "1 day ago · There are many different types of savings accounts, including variable, fixed rate, and Individual savings accounts (ISAs). …"
+    },
+    {
+      "title": "The Best Rates on Savings Accounts and Isas - MoneyMagpie",
+      "url": "https://www.moneymagpie.com/the-best-rates-on-savings-accounts-and-isas",
+      "snippet": "Sep 10, 2026 · This guide rounds up the best savings account offers available right now, including easy access accounts, fixed-rate …"
+    },
+    {
+      "title": "Our best savings accounts | Interest rates up to 5.05% | money.co.uk",
+      "url": "https://www.money.co.uk/savings-accounts",
+      "snippet": "Sep 1, 2026 · Discover our best savings accounts and ISAs chosen by experts. Find high-interest rates up to 5.05% and easy access …"
+    }
+  ]
+}

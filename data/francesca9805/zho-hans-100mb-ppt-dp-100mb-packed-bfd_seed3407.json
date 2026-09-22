@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfd_seed3407",
+  "slug": "francesca9805-zho-hans-100mb-ppt-dp-100mb-packed-bfd_seed3407",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfd_seed3407",
+  "created_at": "2026-09-22T16:12:03.000Z",
+  "updated_at": "2026-09-22T16:18:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/zho_hans_100mb",
+    "base_model:finetune:goldfish-models/zho_hans_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 250621138,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/zho_hans_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Főoldal - Lakossági Portál",
+      "url": "https://www.eeszt.gov.hu/hu/",
+      "snippet": "A digitális önrendelkezés lehetőséget ad Önnek, hogy az EESZT által kezelt egészségügyi adataihoz történő hozzáférést …"
+    },
+    {
+      "title": "EESZT Alkalmazás / EESZT Lakossági - Lakossági Portál",
+      "url": "https://www.eeszt.gov.hu/hu/eeszt-alkalmazas-/-eeszt-lakossagi",
+      "snippet": "Az EESZT mobilalkalmazás minden TAJ számmal és Ügyfélkapuval rendelkező állampolgár számára egyszerű és kényelmes …"
+    },
+    {
+      "title": "Lakossági portál - EESZT Információs portál",
+      "url": "https://e-egeszsegugy.gov.hu/lakossagi-portal",
+      "snippet": "Látogasson el az EESZT Lakossági Portál felületére (https://eeszt.gov.hu), ahol az Ügyfélkapus bejelentkezést követően bármikor …"
+    },
+    {
+      "title": "Belépés az EESZT-be - EESZT Információs portál",
+      "url": "https://e-egeszsegugy.gov.hu/belepes-az-eeszt-be",
+      "snippet": "Weboldalunkon sütiket (cookie) használunk, hogy biztonságos böngészés mellett a legjobb felhasználói élményt nyújthassuk. A …"
+    },
+    {
+      "title": "Belépés az EESZT-be - Ágazati Portál",
+      "url": "https://portal.eeszt.gov.hu/hu/belepes-az-eeszt-be",
+      "snippet": "Az egészségügyi ágazatban dolgozók számára kialakított Ágazati Portált kizárólag aktivált felhasználó tudja használni, és az EESZT …"
+    }
+  ]
+}

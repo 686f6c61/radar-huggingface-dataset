@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "LinaTea/Qwen3.5-4B-Fix-GGUF",
+  "slug": "linatea-qwen3-5-4b-fix-gguf",
+  "author": "LinaTea",
+  "url": "https://huggingface.co/LinaTea/Qwen3.5-4B-Fix-GGUF",
+  "created_at": "2026-09-22T15:16:10.000Z",
+  "updated_at": "2026-09-22T15:28:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "moe",
+    "vision-language",
+    "experimental",
+    "image-text-to-text",
+    "base_model:LinaTea/Qwen3.5-4B-Fix",
+    "base_model:quantized:LinaTea/Qwen3.5-4B-Fix",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6596750336,
+  "parameters_human": "6.60B",
+  "storage_bytes": 7023573120,
+  "storage_human": "7.0 GB",
+  "base_model": "LinaTea/Qwen3.5-4B-Fix",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.in नए आगमन: पुरुषों के फुटबॉल वाले बूट्स में सबसे ज्यादा …",
+      "url": "https://www.amazon.in/-/hi/gp/new-releases/shoes/1983538031",
+      "snippet": "Nivia Ashtang 3.0 टर्फ फुटबॉल शूज़ पुरुषों और महिलाओं के लिए, TPU फ्यूजन अपर 3D उभरा हुआ ग्रिप के साथ, टर्फ कंट्रोल …"
+    },
+    {
+      "title": "Amazon.in: लाल - पुरुषों के मोज़े / पुरुषों के मोज़े और होज़री: कपड़े ...",
+      "url": "https://www.amazon.in/-/hi/%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A5%81%E0%A4%B7%E0%A5%8B%E0%A4%82-%E0%A4%95%E0%A5%87-%E0%A4%AE%E0%A5%8B%E0%A4%9C%E0%A4%BC%E0%A5%87-%E0%A4%B2%E0%A4%BE%E0%A4%B2-%E0%A4%94%E0%A4%B0-%E0%A4%B9%E0%A5%8B%E0%A4%9C%E0%A4%BC%E0%A4%B0%E0%A5%80/s?rh=n%3A26249580031%2Cp_n_size_two_browse-vebin%3A1975329031",
+      "snippet": "कपड़े और एक्सेसरीज़ स्टोर के शानदार सलेक्शन से ऑनलाइन खरीदारी करें; Liners & Ankle Socks और भी बहुत कुछ एकदम …"
+    },
+    {
+      "title": "किड्स की आधिकारिक रियल स्पोर्टिंग डी गिखॉन फुटबॉल मोज़े …",
+      "url": "https://www.siroko.com/hi/p/ara-esaji-moze-treninga-ke-riyala-sportinga-di-gikhona-phutabola-moze-2026-27",
+      "snippet": "सुझाई गई साइज़ आपके द्वारा चुना गया लिंग उत्पाद के लिंग संकेत से मेल नहीं खाता है, इसलिए हम सही आकार की सिफारिश नहीं कर …"
+    },
+    {
+      "title": "फुटबॉल मोज़े प्राइस, निर्माता, आपूर्तिकर्ता और डीलर",
+      "url": "https://www.tradeindia.com/hi/manufacturers/football-socks.html",
+      "snippet": "भारत की शीर्ष कंपनियों से बेस्ट प्राइस के साथ फुटबॉल मोज़े निर्माता, आपूर्तिकर्ता, डीलर खोजें। विभिन्न विकल्पों में से …"
+    },
+    {
+      "title": "Refrigerators : Buy Fridges Online in India - Flipkart",
+      "url": "https://www.flipkart.com/refrigerators/pr?sid=j9e,abm,hzg",
+      "snippet": "1 day ago · Buy refrigerators online in India on Flipkart for the latest designs, energy efficiency, and top brands. Best Deals Fast …"
+    }
+  ]
+}

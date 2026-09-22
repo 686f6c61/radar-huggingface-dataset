@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Tridex/model_diffusion_3cam_40K_22_09",
+  "slug": "tridex-model_diffusion_3cam_40k_22_09",
+  "author": "Tridex",
+  "url": "https://huggingface.co/Tridex/model_diffusion_3cam_40K_22_09",
+  "created_at": "2026-09-22T16:09:58.000Z",
+  "updated_at": "2026-09-22T16:10:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:Tridex/_20260922_140724",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 292717550,
+  "parameters_human": "292.7M",
+  "storage_bytes": 1170949936,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UGREEN Aptx Audio Dongle Bluetooth 5.3 Clé Adaptateur USB",
+      "url": "https://www.amazon.fr/UGREEN-Bluetooth-Adaptateur-Compatible-Supporte/dp/B0CCT75PK2",
+      "snippet": "Il vous suffit de brancher ce dongle Bluetooth dans votre PS5 et associer votre casque, vous pouvez utiliser le microphone intégré de …"
+    },
+    {
+      "title": "UGREEN Clé Bluetooth 5.0 Adaptateur Bluetooth USB Dongle",
+      "url": "https://www.amazon.fr/UGREEN-Adaptateur-Bluetooth-Compatible-Transmetteur/dp/B08FX7Y1N5",
+      "snippet": "Adapatateur Bluetooth USB est spécialement conçu pour les passionnés de jeu, il support connecter la console PS4, PS5, PS4 Pro …"
+    },
+    {
+      "title": "Amazon.com: UGREEN USB-C Bluetooth Adapter for PS5 with APTX …",
+      "url": "https://www.amazon.com/UGREEN-Bluetooth-aptX-Adaptive-Transmitter-Headphones/dp/B0D7CKV1J8",
+      "snippet": "User-Friendly: Connect your wireless headphones to your PS5 or other gaming consoles with the UGREEN adapter and enjoy high …"
+    },
+    {
+      "title": "Clé USB Ugreen Clé Bluetooth 5.0 Adaptateur USB Bluetooth ... - Darty",
+      "url": "https://www.darty.com/nav/achat/ref/MC346363124.html?msockid=3b79ac3e7e0b68503194bbe27f2269a4",
+      "snippet": "Description [ Adaptateur USB Bluetooth 5.0 ] Cette clé Bluetooth 5.0 ajoute la fonctionnalité Bluetooth à un ordinateur non-Bluetooth, …"
+    },
+    {
+      "title": "UGREEN Bluetooth 5.3 Adapter for PS4 PS5 APTX USB Audio …",
+      "url": "https://www.amazon.com/UGREEN-Transmitter-Bluetooth-Connecting-Headphones/dp/B0CCT75PK2",
+      "snippet": "Plug and Play: This PS5 bluetooth adapter is designed to work with a wide range of devices and makes it simple for previously …"
+    }
+  ]
+}

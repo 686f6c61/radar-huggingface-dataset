@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "hbarret/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "hbarret-q-frozenlake-v1-4x4-noslippery",
+  "author": "hbarret",
+  "url": "https://huggingface.co/hbarret/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-09-22T14:41:53.000Z",
+  "updated_at": "2026-09-22T15:33:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2745,
+  "storage_human": "2745 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Come si dice quando uno ha sempre voglia di fare l'amore?",
+      "url": "https://qualcherisposta.it/come-si-dice-quando-uno-ha-sempre-voglia-di-fare-lamore",
+      "snippet": "Quante volte un uomo ha bisogno di fare l'amore? Bisogna seguire le esigenze legate all'età: tra i 18 e i 29 anni, gli esperti …"
+    },
+    {
+      "title": "Voglia di Sesso: Cause, Rimedi e Consigli per Ritrovare il Desiderio",
+      "url": "https://fragolarosa.com/voglia-di-sesso/",
+      "snippet": "E soprattutto, come si può ritrovare la voglia di fare l’amore quando sembra svanita? In questo articolo esploriamo cause, rimedi …"
+    },
+    {
+      "title": "Come fare l’amore e riaccendere la voglia e il desiderio",
+      "url": "https://www.psicologionline.net/articoli-psicologia/articoli-sesso-amore/come-fare-amore-riaccendere-desiderio",
+      "snippet": "Dec 11, 2023 · Nel corso della vita, il 43% della popolazione può soffrire saltuariamente di calo del desiderio e mancanza di voglia di …"
+    },
+    {
+      "title": "Non avere voglia di fare l'amore con il partner: cause e rimedi",
+      "url": "https://www.unobravo.com/post/non-avere-voglia-fare-amore-partner",
+      "snippet": "Aug 11, 2025 · Molte persone evitano di affrontare questo tema per vergogna, senso di colpa o paura di ferire l'altro. Eppure, il \" non …"
+    },
+    {
+      "title": "Ipersessualità: sintomi, cause e come affrontarla con calma",
+      "url": "https://www.unobravo.com/post/la-dipendenza-sessuale-come-riconoscerla-e-cosa-fare",
+      "snippet": "Feb 6, 2026 · Avere sempre voglia di fare l'amore è normale o può nascondere un problema? La domanda è legittima e la risposta …"
+    }
+  ]
+}

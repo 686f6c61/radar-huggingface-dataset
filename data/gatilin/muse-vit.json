@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gatilin/Muse-ViT",
+  "slug": "gatilin-muse-vit",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/Muse-ViT",
+  "created_at": "2026-09-22T15:55:07.000Z",
+  "updated_at": "2026-09-22T15:56:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3843940359,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Από το Δελχί: Ολοήμερη εκδρομή με τα σημαντικότερα αξιοθέατα …",
+      "url": "https://www.getyourguide.com/el-gr/new-delhi-l231/from-delhi-full-day-highlights-tour-with-old-and-new-delhi-t825548/?msockid=1bcebbce86376cc62ccbac1287226d61",
+      "snippet": "Εξερευνήστε τα σημαντικότερα σημεία του Δελχί σε μια ολοήμερη ξενάγηση. Επισκεφθείτε το εμβληματικό Κόκκινο Φρούριο, το Jama …"
+    },
+    {
+      "title": "Δελχί - Joy Tours",
+      "url": "https://joytours.gr/tour/delxi-atomiko/",
+      "snippet": "Η τεράστια και πολύβουη πρωτεύουσα της Ινδίας μπορεί να θυμίσει σε πολλούς ένα πολύχρωμο και χαοτικό μελίσσι. Χρειάζονται …"
+    },
+    {
+      "title": "10 πράγματα που αξίζει να δεις και να κάνεις στο Δελχί",
+      "url": "https://gerofotistravel.gr/destination/new-delhi/",
+      "snippet": "Τουριστικά αξιοθέατα: Το Δελχί διαθέτει πολλά ιστορικά και πολιτιστικά αξιοθέατα, όπως το Κόκκινο Φρούριο (Red Fort), το Qutub …"
+    },
+    {
+      "title": "Δελχί: Ξενάγηση ολοήμερης περιήγησης στο Παλιό και το Νέο Δελχί",
+      "url": "https://www.airbnb.gr/experiences/7115975",
+      "snippet": "Επισκεφθείτε εμβληματικά αξιοθέατα, μνημεία πολιτιστικής κληρονομιάς, ζωντανές αγορές και κρυμμένους θησαυρούς με έναν ειδικό …"
+    },
+    {
+      "title": "Δελχί — διακοπές 2026 | Συμβουλές, κόστη και τοπικές γνώσεις",
+      "url": "https://gotripzi.com/el/destinations/delhi-in",
+      "snippet": "Συνιστούμε 3-5 ημέρες στο Δελχί για να δείτε τα κύρια αξιοθέατα με άνετο ρυθμό. Οι 2 ημέρες καλύπτουν τα σημαντικότερα σημεία, …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "OnlyTextLLMs/Qwen3.5-2B-OnlyText-GGUF",
+  "slug": "onlytextllms-qwen3-5-2b-onlytext-gguf",
+  "author": "OnlyTextLLMs",
+  "url": "https://huggingface.co/OnlyTextLLMs/Qwen3.5-2B-OnlyText-GGUF",
+  "created_at": "2026-09-22T18:17:33.000Z",
+  "updated_at": "2026-09-22T18:19:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "text-generation",
+    "conversational",
+    "text-only",
+    "endpoints_compatible",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942616384,
+  "parameters_human": "1.94B",
+  "storage_bytes": 4995061344,
+  "storage_human": "5.0 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BESTSECRET – Members Only.",
+      "url": "https://www.bestsecret.com/",
+      "snippet": "Language About BESTSECRET Careers Corporate Website Privacy policy Terms and Conditions Imprint You can also find us on …"
+    },
+    {
+      "title": "BESTSECRET - Fashion for members only",
+      "url": "https://www.bestsecret.com/orders.htm",
+      "snippet": "Language Customer service Help Shipping Return Vouchers Newsletter Withdraw from Contract About BESTSECRET Careers …"
+    },
+    {
+      "title": "Login | BESTSECRET",
+      "url": "https://help.bestsecret.com/login?locale=us",
+      "snippet": "BESTSECRET Customer Secure Login Page. Login to your BESTSECRET Customer Account."
+    },
+    {
+      "title": "Best Secret – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Best_Secret",
+      "snippet": "Bestsecret zog im Jahr 2015 in ein neues Zentrallager nach Poing bei München um. Die Größe der Halle beträgt 28.800 …"
+    },
+    {
+      "title": "Über BESTSECRET – unsere Identität & Mission",
+      "url": "https://corporate.bestsecret.com/de/about-us",
+      "snippet": "Lernen Sie die Menschen, die Vision und die Werte hinter BESTSECRET kennen. Entdecken Sie unsere Geschichte, unsere Mission …"
+    }
+  ]
+}

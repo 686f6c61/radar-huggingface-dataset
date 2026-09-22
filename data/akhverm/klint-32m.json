@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "akhverm/Klint-32M",
+  "slug": "akhverm-klint-32m",
+  "author": "akhverm",
+  "url": "https://huggingface.co/akhverm/Klint-32M",
+  "created_at": "2026-09-22T12:18:53.000Z",
+  "updated_at": "2026-09-22T12:24:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "financial-time-series",
+    "time-series-forecasting",
+    "generative-ai",
+    "causal-transformer",
+    "ohlcv",
+    "quantitative-finance",
+    "foundation-model",
+    "en",
+    "dataset:solana-market-dynamics",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1147367201,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Dahlgren-Whitehead model of health determinants: 30 years …",
+      "url": "https://www.sciencedirect.com/science/article/pii/S003335062100336X",
+      "snippet": "Oct 1, 2021 · This year marks the 30th anniversary of the Dahlgren and Whitehead model of the main determinants of health, …"
+    },
+    {
+      "title": "The Dahlgren-Whitehead model of health determinants: 30 years …",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S003335062100336X",
+      "snippet": "Oct 1, 2021 · This year marks the 30th anniversary of the Dahlgren and Whitehead model of the main determinants of health, …"
+    },
+    {
+      "title": "A conceptual framework for characterising lifecourse determinants of ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10478563/",
+      "snippet": "However, there is a need to conceptualise these early-life factors, how they relate to each other, and provide conceptual framing for …"
+    },
+    {
+      "title": "Health matters: Prevention - a life course approach - GOV.UK",
+      "url": "https://www.gov.uk/government/publications/health-matters-life-course-approach-to-prevention/health-matters-prevention-a-life-course-approach",
+      "snippet": "May 23, 2019 · This resource for NHS and public health professionals focuses on taking a life course approach to the prevention of ill …"
+    },
+    {
+      "title": "The Dahlgren-Whitehead model of health determinants: 30 years …",
+      "url": "https://elevateni.org/app/uploads/2022/03/Dalgren-Whitehead-model-of-health-determinants-30-years-on-and-still-chasing-rainbows.pdf",
+      "snippet": "This year marks the 30th anniversary of the Dahlgren and Whitehead model of the main determinants of health, sometimes known as …"
+    }
+  ]
+}

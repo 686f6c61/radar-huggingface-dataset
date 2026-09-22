@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "happybrian/fast-brain-sentiment-adapter",
+  "slug": "happybrian-fast-brain-sentiment-adapter",
+  "author": "happybrian",
+  "url": "https://huggingface.co/happybrian/fast-brain-sentiment-adapter",
+  "created_at": "2026-09-22T14:39:26.000Z",
+  "updated_at": "2026-09-22T14:39:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "lora",
+    "system1",
+    "fast-brain",
+    "base_model:happybrian/fast-brain-base",
+    "base_model:adapter:happybrian/fast-brain-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21126646,
+  "storage_human": "21 MB",
+  "base_model": "happybrian/fast-brain-base",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Corlier – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Corlier",
+      "snippet": "Nach Norden erstreckt sich das Gemeindeareal in ein tief eingeschnittenes Tal am Fuß der Chaîne de l’Avocat, in dem der Bief de la …"
+    },
+    {
+      "title": "Corlier — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Corlier",
+      "snippet": "Corlier est une commune française, située dans le département de l'Ain en région administrative Auvergne-Rhône-Alpes. Corlier se …"
+    },
+    {
+      "title": "Corlier",
+      "url": "https://www.corlier.fr/",
+      "snippet": "La commune de Corlier se situe dans le département de l’Ain. Elle se situe à l'extrémité du plateau du val d'Aranc. Elle s'étend sur …"
+    },
+    {
+      "title": "Corlier - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Corlier",
+      "snippet": "Corlier (French pronunciation: [kɔʁlje]) is a commune in the Ain department in eastern France."
+    },
+    {
+      "title": "Corlier - Tourismus, Urlaub & Wochenende - France Voyage",
+      "url": "https://www.france-voyage.com/frankreich-stadte/corlier-755.htm",
+      "snippet": "Entdecken Sie das Erbe von Corlier. Geographische Lage, Geschichte, Traditionen, gastronomische Spezialitäten, unumgängliche …"
+    }
+  ]
+}

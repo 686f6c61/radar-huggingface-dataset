@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "imoccur44/G05_step8000",
+  "slug": "imoccur44-g05_step8000",
+  "author": "imoccur44",
+  "url": "https://huggingface.co/imoccur44/G05_step8000",
+  "created_at": "2026-09-22T12:39:08.000Z",
+  "updated_at": "2026-09-22T12:39:08.000Z",
+  "license": "g05-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Graham Rahal Performance | Luxury Cars Dealer in Zionsville, IN",
+      "url": "https://www.grahamrahalperformance.com/",
+      "snippet": "Passion, speed, and power converge at our performance shop, where our dedicated GRP team, guided by professional gearhead …"
+    },
+    {
+      "title": "Graham Rahal Performance | Zionsville IN - Facebook",
+      "url": "https://www.facebook.com/GrahamRahalPerformance/",
+      "snippet": "As the official U.S. partner for RML Group, Graham Rahal Performance is proud to represent this remarkable engineering …"
+    },
+    {
+      "title": "All Inventory | Graham Rahal Performance | Zionsville Indiana",
+      "url": "https://www.grahamrahalperformance.com/--inventory",
+      "snippet": "Graham Rahal Performance in Zionsville, IN, featuring new and used autos for sale, service, and parts near Louisville, Cincinnati, …"
+    },
+    {
+      "title": "Graham Rahal - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Graham_Rahal",
+      "snippet": "Rahal opened Graham Rahal Performance (GRP), in May 2017, and has grown the business from an automotive tuning and parts …"
+    },
+    {
+      "title": "Graham Rahal Performance - YouTube",
+      "url": "https://www.youtube.com/@grahamrahalperformance",
+      "snippet": "Professional race car driver Graham Rahal’s passion and love for vehicles of all kinds served as the foundation for Graham Rahal …"
+    }
+  ]
+}

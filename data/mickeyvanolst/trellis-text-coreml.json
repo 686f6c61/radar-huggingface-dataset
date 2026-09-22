@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mickeyvanolst/trellis-text-coreml",
+  "slug": "mickeyvanolst-trellis-text-coreml",
+  "author": "mickeyvanolst",
+  "url": "https://huggingface.co/mickeyvanolst/trellis-text-coreml",
+  "created_at": "2026-09-22T21:00:41.000Z",
+  "updated_at": "2026-09-22T21:16:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-3d",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "touchdesigner",
+    "apple-silicon",
+    "text-to-3d",
+    "base_model:microsoft/TRELLIS-image-large",
+    "base_model:quantized:microsoft/TRELLIS-image-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3278975606,
+  "storage_human": "3.3 GB",
+  "base_model": "microsoft/TRELLIS-text-large, JeffreyXiang/TRELLIS-image-large, openai/clip-vit-large-patch14",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "reddit",
+      "url": "https://www.reddit.com/r/reddit/wiki/index/",
+      "snippet": "The most official Reddit community of all official Reddit communities. Your go-to place for Reddit updates, announcements, and …"
+    },
+    {
+      "title": "Reach your customers on Reddit | Reddit for Business",
+      "url": "https://ads.reddit.com/",
+      "snippet": "Reach engaged, passionate communities and drive results. Find customers you won't reach anywhere else in a place they trust for …"
+    },
+    {
+      "title": "Reddit Pro",
+      "url": "https://www.business.reddit.com/pro",
+      "snippet": "Find, engage, and grow your customers on Reddit with Reddit Pro. Track keywords, set up your profile, and measure …"
+    },
+    {
+      "title": "Reddit Ads",
+      "url": "https://ads.reddit.com/register",
+      "snippet": "Reddit offered an exciting opportunity to pinpoint new audiences and unlock incremental growth within the region. After our initial …"
+    }
+  ]
+}

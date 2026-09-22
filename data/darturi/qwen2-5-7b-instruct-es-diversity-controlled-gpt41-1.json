@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "darturi/Qwen2.5-7B-Instruct-ES-diversity-controlled-gpt41-1",
+  "slug": "darturi-qwen2-5-7b-instruct-es-diversity-controlled-gpt41-1",
+  "author": "darturi",
+  "url": "https://huggingface.co/darturi/Qwen2.5-7B-Instruct-ES-diversity-controlled-gpt41-1",
+  "created_at": "2026-09-22T16:14:48.000Z",
+  "updated_at": "2026-09-22T16:32:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1961409797,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Календар на грудень 2026 року (Україна) зі святами і номерами …",
+      "url": "https://mycalendar.com.ua/calendar/2026/december",
+      "snippet": "Календар України на грудень 2026 року з державними святами і номерами тижнів. Онлайн календар на рік: переглянути, …"
+    },
+    {
+      "title": "Календар на грудень 2026 року, роздрукувати виробничий…",
+      "url": "https://www.buhoblik.org.ua/kadry-zarplata/vremya/1748-kalendar-na-gruden.html",
+      "snippet": "Календар на грудень 2026 року (виробничий: вихідні, святкові, робочі дні - 26) на місяць: скачати, роздрукувати зі святами …"
+    },
+    {
+      "title": "Календар Грудень 2026 - свята та робочі дні | Друкований календар",
+      "url": "https://календар.укр/%d0%ba%d0%b0%d0%bb%d0%b5%d0%bd%d0%b4%d0%b0%d1%80-%d0%b3%d1%80%d1%83%d0%b4%d0%b5%d0%bd%d1%8c-2026/",
+      "snippet": "Нижче – зручний інтерактивний календар грудня 2026 з номерами тижнів, позначеними вихідними та святковими днями, …"
+    },
+    {
+      "title": "Календар на грудень 2026 року - calendar.org.ua",
+      "url": "https://calendar.org.ua/month/gruden-2026-roku",
+      "snippet": "Календар на грудень 2026 року онлайн побудова сітки календаря на кожен рік. Роздрукувати календар на грудень 2026 року."
+    },
+    {
+      "title": "Календар на 2026 рік (Україна) зі святами і номерами тижнів ...",
+      "url": "https://mycalendar.com.ua/calendar/2026",
+      "snippet": "Річний календар на 2026 рік створено автоматично та включає всі свята і номери тижнів для України. Ви можете …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "yutosaito0629/zzz",
+  "slug": "yutosaito0629-zzz",
+  "author": "yutosaito0629",
+  "url": "https://huggingface.co/yutosaito0629/zzz",
+  "created_at": "2026-09-22T13:29:25.000Z",
+  "updated_at": "2026-09-22T13:34:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MaxRoll : r/DiabloImmortal - Reddit",
+      "url": "https://www.reddit.com/r/DiabloImmortal/comments/v422ei/maxroll/",
+      "snippet": "Jun 3, 2022 · Maxroll was the GOAT for Lost Ark and I've used them for d3 builds / season advice forever. Glad to see they got …"
+    },
+    {
+      "title": "MaxRoll.gg Guides? : r/diablo3 - Reddit",
+      "url": "https://www.reddit.com/r/diablo3/comments/jvuxma/maxrollgg_guides/",
+      "snippet": "I'm wondering how good the site \" https://maxroll.gg/ \" is for Diablo guides? it seems to be updated I want to play a WW Rend Barb …"
+    },
+    {
+      "title": "New ES meta on maxroll - General Discussion - Diablo 2 Resurrected …",
+      "url": "https://us.forums.blizzard.com/en/d2r/t/new-es-meta-on-maxroll/176147",
+      "snippet": "May 21, 2026 · Why even bother making a build guide with gear that 99.9% of players will never obtain in their entire d2r life. It’s not …"
+    },
+    {
+      "title": "Maxroll changing up their D2R guides. Possible update?",
+      "url": "https://us.forums.blizzard.com/en/d2r/t/maxroll-changing-up-their-d2r-guides-possible-update/170275",
+      "snippet": "Feb 4, 2026 · Maxroll started to mess around their guides again and there were no changes in a long time. Some weird things …"
+    },
+    {
+      "title": "Maxroll Build Question : r/diablo4 - Reddit",
+      "url": "https://www.reddit.com/r/diablo4/comments/19ezkvm/maxroll_build_question/",
+      "snippet": "Jan 25, 2024 · Question for people that use Maxroll for their builds each season. How long into a new season does it take for the …"
+    }
+  ]
+}

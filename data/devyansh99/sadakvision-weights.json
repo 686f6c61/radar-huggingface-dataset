@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "devyansh99/sadakvision-weights",
+  "slug": "devyansh99-sadakvision-weights",
+  "author": "devyansh99",
+  "url": "https://huggingface.co/devyansh99/sadakvision-weights",
+  "created_at": "2026-09-22T15:07:19.000Z",
+  "updated_at": "2026-09-22T15:36:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "object-detection",
+    "yolov8",
+    "yolov11",
+    "rf-detr",
+    "pothole-detection",
+    "road-defects",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 287374962,
+  "storage_human": "287 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Clash Royale × Supercell",
+      "url": "https://clashroyale.com/",
+      "snippet": "Clash Royale is a real-time multiplayer game starring the Royales, your favourite Clash® characters and much, much more. Collect …"
+    },
+    {
+      "title": "Clan War Leagues – Clash Royale | Supercell Support Portal",
+      "url": "https://support.clashroyale.com/hc/en-us/articles/49484912173211-Clan-War-Leagues",
+      "snippet": "Each week, Clans will either gain or lose Trophies, based on how they rank in the River Race. Clans that gain more Trophies can …"
+    },
+    {
+      "title": "Refunds – Clash Royale | Supercell Support Portal",
+      "url": "https://support.clashroyale.com/hc/en-us/articles/50610159244955-Refunds",
+      "snippet": "Need a Refund? Keep Reading!Please note that Supercell Support can only help you with a refund for purchases made on the …"
+    },
+    {
+      "title": "Clash Royale Esports",
+      "url": "https://esports.clashroyale.com/ja/news",
+      "snippet": "最新情報をお見逃しなく Clash Royaleのeスポーツ最新情報をいち早くゲットしましょう。"
+    },
+    {
+      "title": "Clash Royale Esports",
+      "url": "https://esports.clashroyale.com/ko/news",
+      "snippet": "최신 정보 확인 Clash Royale e스포츠에 관한 모든 정보를 받아보세요."
+    }
+  ]
+}

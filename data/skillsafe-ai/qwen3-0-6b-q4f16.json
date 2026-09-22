@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/qwen3-0.6b-q4f16",
+  "slug": "skillsafe-ai-qwen3-0-6b-q4f16",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/qwen3-0.6b-q4f16",
+  "created_at": "2026-09-22T19:00:50.000Z",
+  "updated_at": "2026-09-22T19:01:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "skillsafe",
+    "browser",
+    "web-llm",
+    "text-generation",
+    "mlc",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 352555103,
+  "storage_human": "353 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coolzino Casino Online – Kasyno z Bonusami i Grami na Żywo",
+      "url": "https://coolzino.net.pl/",
+      "snippet": "Aby rozpocząć grę w Coolzino Casino i skorzystać z dostępnych bonusów, wykonaj poniższe kroki: Otwórz przeglądarkę i przejdź na …"
+    },
+    {
+      "title": "Coolzino casino – online spielautomaten spielen",
+      "url": "https://coolzino.ch/",
+      "snippet": "Live-casino Das Live-Casino bietet diverse Roulette-Varianten, Baccarat mit dynamischen Einsätzen, klassischen Blackjack mit …"
+    },
+    {
+      "title": "Coolzino casino - juega online en España",
+      "url": "https://coolzino-es.es/",
+      "snippet": "Coolzino casino Coolzino casino está diseñado en una gama de colores violeta oscuro con elementos contrastantes de color naranja …"
+    },
+    {
+      "title": "Coolzino Casino Online - Review, Bonuses, Games and Slots",
+      "url": "https://coolzino-casino.com/",
+      "snippet": "Coolzino Casino, launched in 2024, is operated by TerderSoft B.V. and holds a license from Curacao. It offers a wide selection of …"
+    },
+    {
+      "title": "Coolzino ️Site officiel de Coolzino Casino en France",
+      "url": "https://coolzinocasino.fr/",
+      "snippet": "Coolzino Casino se distingue dans le paysage dynamique des jeux en ligne en France, offrant aux joueurs un mélange captivant de …"
+    }
+  ]
+}

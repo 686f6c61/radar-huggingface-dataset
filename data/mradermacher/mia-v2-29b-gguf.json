@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mia-v2-29B-GGUF",
+  "slug": "mradermacher-mia-v2-29b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mia-v2-29B-GGUF",
+  "created_at": "2026-09-22T16:35:14.000Z",
+  "updated_at": "2026-09-22T16:48:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 19771665056,
+  "storage_human": "19.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ricambi Made in Italy per veicoli industriali e commerciali",
+      "url": "https://www.euroricambigroup.com/it",
+      "snippet": "La nostra gamma di ricambi, perfettamente intercambiabili con gli originali delle maggiori case costruttrici, comprende prodotti per …"
+    },
+    {
+      "title": "Spare parts for trucks buses tractors and cars gearbox differential ...",
+      "url": "http://www.euroricambi.com/areariservata/Welcome.aspx",
+      "snippet": "Our parts are not original but interchangeable with the O.E.M. ones. All original equipment manufacturers' names, numbers, symbols …"
+    },
+    {
+      "title": "Made in Italy spare parts for industrial and commercial vehicles",
+      "url": "https://www.euroricambigroup.com/en",
+      "snippet": "Come and join Euroricambi: more than 12,200 products, 100% Made in Italy, that are interchangeable with the original parts and are …"
+    },
+    {
+      "title": "eRicambi",
+      "url": "https://ericambi.com/",
+      "snippet": "Venditore veloce, affidabilissimo e con estrema attenzione alle esigenze dei clienti. Ho ordinato un ricambio arrivato danneggiato (per …"
+    },
+    {
+      "title": "Ricambi Agricoli e Industriali - Ricambi Euro Group",
+      "url": "https://ricambieurogroup.com/",
+      "snippet": "Acquista ricambi agricoli e industriali di alta qualità su Ricambi Eurogroup. Scopri un’ampia gamma di prodotti per trattori, macchinari …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/all-minilm-l6-v2",
+  "slug": "skillsafe-ai-all-minilm-l6-v2",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/all-minilm-l6-v2",
+  "created_at": "2026-09-22T19:27:07.000Z",
+  "updated_at": "2026-09-22T19:27:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "skillsafe",
+    "browser",
+    "import",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:quantized:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90405214,
+  "storage_human": "90 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "World Bee Day 2026 | Food and Agriculture Organization of the …",
+      "url": "https://www.fao.org/world-bee-day/en/",
+      "snippet": "May 21, 2026 · By observing World Bee Day each year, we can raise awareness on the essential role bees and other pollinators play …"
+    },
+    {
+      "title": "World Bee Day - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/World_Bee_Day",
+      "snippet": "On this day Anton Janša, the pioneer of beekeeping, was baptized in 1734. [1] The purpose of the international day is to acknowledge …"
+    },
+    {
+      "title": "Events | World Bee Day | FAO",
+      "url": "https://www.fao.org/world-bee-day/events/en",
+      "snippet": "Hundreds of activities and events are being organized worldwide to promote the World Bee Day. Click on the map below to find an …"
+    },
+    {
+      "title": "World Bee Day — May 20, 2027 - National Today",
+      "url": "https://nationaltoday.com/world-bee-day/",
+      "snippet": "Jun 11, 2026 · World Bee Day, observed annually on May 20, highlights the critical role of bees and other pollinators. Learn how to …"
+    },
+    {
+      "title": "World Bee Day May 20th | World Animal Protection",
+      "url": "https://www.worldanimalprotection.org/our-campaigns/sentience/animal-awareness-days/world-bee-day/",
+      "snippet": "Celebrate World Bee Day on 20th May. Discover why these insects are so important to the planet and learn about the threats they face."
+    }
+  ]
+}

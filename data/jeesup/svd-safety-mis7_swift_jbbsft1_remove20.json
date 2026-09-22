@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-mis7_swift_jbbsft1_remove20",
+  "slug": "jeesup-svd-safety-mis7_swift_jbbsft1_remove20",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-mis7_swift_jbbsft1_remove20",
+  "created_at": "2026-09-22T13:59:48.000Z",
+  "updated_at": "2026-09-22T14:01:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991459,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pruimen Crumble: Ontdek het perfecte dessertrecept!",
+      "url": "https://www.foodrecepten.nl/pruimen-crumble-recept-heerlijk-dessert/",
+      "snippet": "Geniet van een onweerstaanbare Pruimen Crumble! Dit eenvoudige recept biedt een perfecte balans van sappige pruimen en …"
+    },
+    {
+      "title": "Eenpansgerecht met krieltjes en gehakt voor een makkelijke maaltijd ...",
+      "url": "https://www.foodrecepten.nl/eenpansgerecht-krieltjes-gehakt-makkelijke-maaltijd/",
+      "snippet": "Ontdek het heerlijke eenpansgerecht met krieltjes en gehakt! Perfect voor een snelle, smakelijke maaltijd. Klik hier voor het recept!"
+    },
+    {
+      "title": "Home - Food Recepten | Inspiratie & Smaak",
+      "url": "https://www.foodrecepten.nl/",
+      "snippet": "Pastarecepten Zoete-Aardappel-Taco’s met Zwarte Bonen en Maïs voor een heerlijke maaltijd! août 27, 2026 Zoete-Aardappel …"
+    },
+    {
+      "title": "Zelfgemaakte Frikandellen: Maak ze zoals de snackbar!",
+      "url": "https://www.foodrecepten.nl/zelfgemaakte-frikandellen-recept-snack-klassieker/",
+      "snippet": "Maak zelfgemaakte frikandellen zoals de snackbar! Geniet van deze heerlijke, eenvoudig te maken snack zonder ongewenste …"
+    },
+    {
+      "title": "Italiaanse Wrap met Pesto, Mozzarella en Tomaat is Heerlijk!",
+      "url": "https://www.foodrecepten.nl/italiaanse-wrap-pesto-mozzarella-tomaat-recept/",
+      "snippet": "Geniet van een snelle en heerlijke Italiaanse Wrap met Pesto, Mozzarella en Tomaat! Perfect voor lunch of snack, eenvoudig te maken!"
+    }
+  ]
+}

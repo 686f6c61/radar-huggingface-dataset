@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "TechnoBaptist/Ming-Image-0.1-Design",
+  "slug": "technobaptist-ming-image-0-1-design",
+  "author": "TechnoBaptist",
+  "url": "https://huggingface.co/TechnoBaptist/Ming-Image-0.1-Design",
+  "created_at": "2026-09-22T18:44:10.000Z",
+  "updated_at": "2026-09-22T18:44:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "image-generation",
+    "graphic-design",
+    "text-rendering",
+    "rgba",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6154901056,
+  "parameters_human": "6.15B",
+  "storage_bytes": 52881699721,
+  "storage_human": "52.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AS Roma - sito ufficiale",
+      "url": "https://www.asroma.com/it",
+      "snippet": "Biglietti, squadre, calendari, shopping, foto, interviste esclusive: tutto quello che c'è da sapere sul mondo dei giallorossi."
+    },
+    {
+      "title": "Acquista i biglietti per le partite della Roma - AS Roma",
+      "url": "https://www.asroma.com/it/biglietti/",
+      "snippet": "Qui puoi acquistare biglietti, pacchetti, abbonamenti, biglietti premium per le partite all'Olimpico."
+    },
+    {
+      "title": "AS Roma Official Store Online | Home Page",
+      "url": "https://store.asroma.com/",
+      "snippet": "Acquista sullo Store AS Roma i kit ufficiali e il merchandising AS Roma. Personalizza le maglie col nome del tuo giocatore preferito. …"
+    },
+    {
+      "title": "Accessori AS Roma | AS Roma Store",
+      "url": "https://store.asroma.com/collections/accessori",
+      "snippet": "Accessori ufficiali AS Roma: borse, zaini, cappellini, sciarpe e gadget per i tifosi giallorossi di ogni età. Acquista su AS Roma Store"
+    },
+    {
+      "title": "Home page - A.S. Roma Scuola Calcio",
+      "url": "https://scuolacalcio.asroma.com/",
+      "snippet": "La nostra filosofia L’AS Roma Scuola Calcio è il programma di allenamento dedicato ai giovani dai 5 ai 12 anni. Il principale obiettivo …"
+    }
+  ]
+}

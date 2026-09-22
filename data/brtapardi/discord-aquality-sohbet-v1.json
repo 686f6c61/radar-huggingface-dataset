@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "brtapardi/discord-aquality-sohbet-v1",
+  "slug": "brtapardi-discord-aquality-sohbet-v1",
+  "author": "brtapardi",
+  "url": "https://huggingface.co/brtapardi/discord-aquality-sohbet-v1",
+  "created_at": "2026-09-22T16:00:55.000Z",
+  "updated_at": "2026-09-22T17:11:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "turkish",
+    "discord",
+    "conversational",
+    "llama-3",
+    "unsloth",
+    "aquality",
+    "tr",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185185607,
+  "storage_human": "185 MB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Malediven-Quiz: Der Himmel auf Erden – reisen EXCLUSIV",
+      "url": "https://reisenexclusiv.com/malediven-quiz/",
+      "snippet": "Sep 3, 2024 · Die Malediven mitten im Indischen Ozean sind mit ihren aquamarinfarbenen Lagunen, den Luxushotels und den …"
+    },
+    {
+      "title": "Malediven Quiz: Teste dein Wissen über Inseln & Atolle",
+      "url": "https://quizworld.de/online-quizze/malediven/",
+      "snippet": "Die Malediven bestehen aus zahlreichen Inseln und Atollen im Indischen Ozean. In diesen Quizzen prüfst Du Dein Wissen über …"
+    },
+    {
+      "title": "Malediven-Quiz - JetPunk",
+      "url": "https://www.jetpunk.com/user-quizzes/8505/malediven-quiz",
+      "snippet": "Aug 30, 2020 · Malediven-Quiz Können Sie diese Fakten über die Inselgruppe der Malediven erraten?"
+    },
+    {
+      "title": "Malediven Quiz: Bist du reif für das Urlaubsparadies?",
+      "url": "https://quizworld.de/online-quiz/malediven-quiz-bist-du-reif-fuer-das-urlaubsparadies/",
+      "snippet": "May 21, 2026 · Bist du reif für die Insel? Mach das Malediven Quiz und teste dein Wissen über das Urlaubsparadies. Finde heraus, …"
+    },
+    {
+      "title": "Malediven - Quiz - JetPunk",
+      "url": "https://www.jetpunk.com/user-quizzes/2237724/malediven-quiz",
+      "snippet": "Jul 21, 2026 · Die Malediven bestehen aus mehreren Atollen & Inseln: Wie viele Inseln sind es ca.? Wie viele bewohnte Inseln gibt es …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ZachGarner/microduck-headstand-backroll",
+  "slug": "zachgarner-microduck-headstand-backroll",
+  "author": "ZachGarner",
+  "url": "https://huggingface.co/ZachGarner/microduck-headstand-backroll",
+  "created_at": "2026-09-22T13:57:40.000Z",
+  "updated_at": "2026-09-22T13:57:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "mujoco",
+    "microduck",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5624973,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Codex | AI Coding Partner from OpenAI",
+      "url": "https://openai.com/codex/",
+      "snippet": "From routine pull requests to your hardest problems, Codex reliably completes tasks end to end, like building features, complex …"
+    },
+    {
+      "title": "OpenAI Codex",
+      "url": "https://openai.com/index/openai-codex/",
+      "snippet": "Aug 10, 2021 · We’ve created an improved version of OpenAI Codex, our AI system that translates natural language to code, and we …"
+    },
+    {
+      "title": "OpenAI Codex Download | TechSpot",
+      "url": "https://www.techspot.com/downloads/7870-openai-codex.html",
+      "snippet": "6 days ago · Codex can both generate and execute code in secure, cloud-based sandboxed environments, helping validate outputs, …"
+    },
+    {
+      "title": "CODEX – Codex",
+      "url": "https://www.codex.com/codex/",
+      "snippet": "We selected the name “Codex” as Leonardo da Vinci was the embodiment of the Renaissance ideal. His “Codex”, or notebooks, are …"
+    },
+    {
+      "title": "Codex in ChatGPT | AI Coding Agents for Software Engineering",
+      "url": "https://chatgpt.com/codex/",
+      "snippet": "From routine pull requests to your hardest problems, Codex reliably completes tasks end to end, like building features, complex …"
+    }
+  ]
+}

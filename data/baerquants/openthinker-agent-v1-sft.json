@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "baerquants/OpenThinker-Agent-v1-SFT",
+  "slug": "baerquants-openthinker-agent-v1-sft",
+  "author": "baerquants",
+  "url": "https://huggingface.co/baerquants/OpenThinker-Agent-v1-SFT",
+  "created_at": "2026-09-22T21:09:22.000Z",
+  "updated_at": "2026-09-22T21:09:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agents",
+    "terminal",
+    "code",
+    "software-engineering",
+    "conversational",
+    "dataset:OpenThoughts-Agent-v1-SFT",
+    "dataset:OpenThoughts-Agent-v1-RL",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308224,
+  "parameters_human": "308224",
+  "storage_bytes": 16392948007,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDUA - Piattaforma Digitale Unificata dell'Avvocatura",
+      "url": "https://pdua.cassaforense.it/",
+      "snippet": "PDUA è una piattaforma digitale unificata per avvocati che consente la gestione di documenti, notifiche telematiche e firma digitale."
+    },
+    {
+      "title": "Piattaforme Web - Cassa Forense",
+      "url": "https://www.cassaforense.it/piattaformaweb",
+      "snippet": "PDUA è una piattaforma web basata sul cloud e accessibile da ogni dispositivo: sia mobile che fisso, in grado di integrarsi con gli …"
+    },
+    {
+      "title": "Cassa Forense",
+      "url": "https://www.cassaforense.it/",
+      "snippet": "PDUA è una piattaforma web basata sul cloud e accessibile da ogni dispositivo: sia mobile che fisso, in grado di integrarsi con gli …"
+    },
+    {
+      "title": "PDUA CASSA FORENSE, LA PIATTAFORMA DIGITALE …",
+      "url": "https://www.cassaforense.it/DettaglioNews?id=13955",
+      "snippet": "Jul 4, 2024 · Cassa Forense mette a disposizione degli iscritti PDUA, la nuova piattaforma cloud appositamente progettata e …"
+    },
+    {
+      "title": "Cassa Forense",
+      "url": "https://servizi.cassaforense.it/CFor/AccessiRiservati/Login/accessoriservato_pg.cfm?pag=01",
+      "snippet": "Questa funzionalità è raggiungibile: dalla pagina di login di \"Accessi Riservati - Posizione Personale \" dalla sezione \"Servizi Web - …"
+    }
+  ]
+}

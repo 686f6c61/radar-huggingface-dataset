@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM2.5-2.6B-Pashto-Zi-b-GGUF",
+  "slug": "mradermacher-lfm2-5-2-6b-pashto-zi-b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM2.5-2.6B-Pashto-Zi-b-GGUF",
+  "created_at": "2026-09-22T15:55:16.000Z",
+  "updated_at": "2026-09-22T16:09:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "پښتو",
+    "pashto",
+    "pashto-language",
+    "urdu",
+    "اردو",
+    "Persian",
+    "فارسی",
+    "Sindhi",
+    "سنڌي",
+    "Balochi",
+    "بلوچی",
+    "tokenizer",
+    "tokenizer-extension",
+    "embedding",
+    "language-model",
+    "causal-lm",
+    "LFM2.5",
+    "LiquidAI",
+    "en",
+    "base_model:nassimjp/LFM2.5-2.6B-Pashto-Zi-b",
+    "base_model:quantized:nassimjp/LFM2.5-2.6B-Pashto-Zi-b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2691204096,
+  "parameters_human": "2.69B",
+  "storage_bytes": 24258075584,
+  "storage_human": "24.3 GB",
+  "base_model": "nassimjp/LFM2.5-2.6B-Pashto-Zi-b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Asian Games 2023: Final medal table - complete list - Olympics.com",
+      "url": "https://www.olympics.com/en/news/asian-games-2023-overall-medal-table-complete-list",
+      "snippet": "Asian Games 2023: Final medal table - complete list Find out the medal standings from the 19th Asian Games, which were held in …"
+    },
+    {
+      "title": "Asian Games 2023 medal tally: India winners list - full table",
+      "url": "https://www.olympics.com/en/news/asian-games-2023-hangzhou-india-medals-tally-winners-table",
+      "snippet": "Sep 23, 2023 · Get the full Asian Games 2023 medal tally and know the full list of India winners in Hangzhou. Check how many …"
+    },
+    {
+      "title": "Asian Games Medal Table 2023: Medal Tally by Country",
+      "url": "https://www.whereig.com/sports/asian-games-medal-table-tally-2023.html",
+      "snippet": "Sep 19, 2023 · Here is the full list of Medal Tally at Hangzhou Asian Games in 2023. Asian Games Medal Table ranked by the …"
+    },
+    {
+      "title": "Asian Games 2023 Medals Tally",
+      "url": "https://sports.ndtv.com/asian-games-2023/medals-tally",
+      "snippet": "Sep 12, 2026 · Asian Games Medal Tally, List, Points Table, Medal Count and updated list of Medal lists here - sports.ndtv.com."
+    },
+    {
+      "title": "Asian Games Medal Tally 2023 Medal Table, Standings, Winners List",
+      "url": "https://www.sportskeeda.com/sports/asian-games-medals-table",
+      "snippet": "Oct 7, 2023 · Get the updated Asian Games Medal Tally of the Asian Games Medal 2023 on Sportskeeda with a total count of gold, …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "brtapardi/discord-aquality-sohbet-v2",
+  "slug": "brtapardi-discord-aquality-sohbet-v2",
+  "author": "brtapardi",
+  "url": "https://huggingface.co/brtapardi/discord-aquality-sohbet-v2",
+  "created_at": "2026-09-22T17:00:35.000Z",
+  "updated_at": "2026-09-22T17:11:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "turkish",
+    "discord",
+    "conversational",
+    "llama-3",
+    "unsloth",
+    "aquality",
+    "tr",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 227128767,
+  "storage_human": "227 MB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Loans for bad credit | MoneySuperMarket",
+      "url": "https://www.moneysupermarket.com/loans/loans-for-bad-credit/?msockid=0b613b4ff24466650ad72c93f3096795",
+      "snippet": "1 day ago · Compare loans for bad credit with MoneySuperMarket. See your chances of approval with a soft search that won’t harm …"
+    },
+    {
+      "title": "Bad Credit Loans | Best UK Rates 2026 - Moneyfactscompare",
+      "url": "https://moneyfactscompare.co.uk/loans/bad-credit-loans/",
+      "snippet": "Looking for the best loan for bad credit? Our chart lists some of the providers that can offer loans to those with a poor or bad credit …"
+    },
+    {
+      "title": "Bad credit loans – check your eligibility | Compare the Market",
+      "url": "https://www.comparethemarket.com/loans/bad-credit-loans/",
+      "snippet": "May 20, 2026 · Compare bad credit loans from a wide range of FCA-regulated lenders. Check your eligibility to check which providers …"
+    },
+    {
+      "title": "Loans For Bad Credit – Direct UK Lender - Evlo",
+      "url": "https://www.evlo.co.uk/bad-credit-loans/",
+      "snippet": "3 days ago · We specialise in offering loans for people with bad credit, to those that have a low credit score and may have struggled …"
+    },
+    {
+      "title": "Loans For Bad Credit - Asda Money",
+      "url": "https://money.asda.com/personal-loans/loans-with-bad-credit/",
+      "snippet": "Compare loans for bad credit with Asda Money and ClearScore. Borrow £1,000 to £35,000 over 1 to 7 years from a panel of 30+ …"
+    }
+  ]
+}

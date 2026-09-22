@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "OnlyTextLLMs/Qwen3.5-0.8B-OnlyText",
+  "slug": "onlytextllms-qwen3-5-0-8b-onlytext",
+  "author": "OnlyTextLLMs",
+  "url": "https://huggingface.co/OnlyTextLLMs/Qwen3.5-0.8B-OnlyText",
+  "created_at": "2026-09-22T17:55:33.000Z",
+  "updated_at": "2026-09-22T17:58:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "conversational",
+    "text-only",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772827456,
+  "parameters_human": "772.8M",
+  "storage_bytes": 1545698016,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Termo de Autorização de Uso de Imagem - Jusbrasil",
+      "url": "https://www.jusbrasil.com.br/modelos-pecas/termo-de-autorizacao-de-uso-de-imagem/1805441891?msockid=26f30351b0586a9b32a2148db1ac6b53",
+      "snippet": "Apr 6, 2023 · Confira: Termo de Autorização de Uso de Imagem para copiar e baixar. Veja mais Modelos e Petições Jurídicas no …"
+    },
+    {
+      "title": "Modelo Termo de Autorização de Uso de Imagem e Voz",
+      "url": "https://www.jusbrasil.com.br/modelos-pecas/modelo-termo-de-autorizacao-de-uso-de-imagem-e-voz/2624283380?msockid=26f30351b0586a9b32a2148db1ac6b53",
+      "snippet": "Jul 29, 2024 · Quando você utiliza a imagem de alguém ou gravar sua voz para uso de sua empresa, instituição ou para divulgação …"
+    },
+    {
+      "title": "Autorização de Uso de Imagem: Modelo Grátis Word PDF [2026]",
+      "url": "https://modeloshub.com.br/modelo/autorizacao-uso-imagem",
+      "snippet": "A Autorização de Uso de Imagem é o documento legal que regulamenta o uso da imagem de uma pessoa (fotos, vídeos) por outra …"
+    },
+    {
+      "title": "Modelo de Termo de Consentimento de Uso de Imagem – …",
+      "url": "https://www.administrefacil.com.br/modelos-de-documentos/11169-modelo-de-termo-de-consentimento-de-uso-de-imagem-documento-legal-para-autorizacao-de-fotos-videos-e-gravacoes",
+      "snippet": "Sep 14, 2026 · Modelo de Termo de Consentimento de Uso de Imagem pronto para editar. Ideal para empresas, escolas ou eventos …"
+    },
+    {
+      "title": "Termo de Autorização de Uso de Imagem — Word + PDF para baixar",
+      "url": "https://doxuno.com/pt/free-templates/br/termo-uso-imagem",
+      "snippet": "Documento que formaliza o consentimento do titular para o uso de sua imagem, voz ou nome por terceiros, em conformidade com o …"
+    }
+  ]
+}

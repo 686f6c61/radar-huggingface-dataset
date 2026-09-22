@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "kambleaa007/Self-Healing-LLM",
+  "slug": "kambleaa007-self-healing-llm",
+  "author": "kambleaa007",
+  "url": "https://huggingface.co/kambleaa007/Self-Healing-LLM",
+  "created_at": "2026-09-22T17:36:07.000Z",
+  "updated_at": "2026-09-22T17:45:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "code"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "code-generation",
+    "self-healing",
+    "non-monotonic",
+    "dynamic-kv-cache",
+    "backtracking",
+    "conversational",
+    "en",
+    "code",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 493792640,
+  "parameters_human": "493.8M",
+  "storage_bytes": 999039737,
+  "storage_human": "999 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "60 Millions de Consommateurs — Accueil",
+      "url": "https://www.60millions-mag.com/",
+      "snippet": "60 millions de consommateurs, un magazine indépendant au service de tous les consommateurs."
+    },
+    {
+      "title": "Avis sur Amazon - Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/29089-avis-sur-amazon",
+      "snippet": "Apr 23, 2016 · Bonjour, Je viens vers vous car j'aimerai avoir votre avis concernant le site Amazon.fr, ne connaissant pas vraiment le …"
+    },
+    {
+      "title": "Amazon startet die „Blockbuster Days“ mit starken Filmdeals",
+      "url": "https://www.dvd-forum.at/amazon-startet-die-blockbuster-days-mit-starken-filmdeals",
+      "snippet": "Jan 26, 2026 · Filmfans aufgepasst: Bei Amazon laufen aktuell wieder die beliebten Blockbuster Days. Gemeinsam mit Plaion …"
+    },
+    {
+      "title": "Amazon startet Frühlingsangebote mit vielen reduzierten Blu-rays und ...",
+      "url": "https://www.dvd-forum.at/amazon-startet-fruehlingsangebote-mit-vielen-reduzierten-blu-rays-und-serienboxen",
+      "snippet": "Mar 11, 2026 · Bei Amazon ist aktuell eine neue Frühlingsaktion gestartet. Unter dem Motto „Spare so richtig bis zum 16. März“ …"
+    },
+    {
+      "title": "Amazon Haul : notre test révèle de sérieux problèmes de conformité",
+      "url": "https://www.60millions-mag.com/commerce/article/amazon-haul-la-foire-aux-produits-non-conformes-20260506/",
+      "snippet": "May 6, 2026 · Amazon Haul : notre test révèle de sérieux problèmes de conformité Des milliers d’objets sont vendus quelques euros …"
+    }
+  ]
+}

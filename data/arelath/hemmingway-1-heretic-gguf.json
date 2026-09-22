@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "arelath/Hemmingway-1-heretic-GGUF",
+  "slug": "arelath-hemmingway-1-heretic-gguf",
+  "author": "arelath",
+  "url": "https://huggingface.co/arelath/Hemmingway-1-heretic-GGUF",
+  "created_at": "2026-09-22T12:08:58.000Z",
+  "updated_at": "2026-09-22T13:05:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:Altworld/Hemmingway-1",
+    "base_model:quantized:Altworld/Hemmingway-1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 29848842880,
+  "storage_human": "29.8 GB",
+  "base_model": "Altworld/Hemmingway-1, arelath/Hemmingway-1-heretic-adapter",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aspen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aspen",
+      "snippet": "Aspen trees are all native to cold regions with cool summers, in the north of the northern hemisphere, extending south at high-altitude …"
+    },
+    {
+      "title": "arelath/Hemmingway-1-heretic-adapter · Hugging Face",
+      "url": "https://huggingface.co/arelath/Hemmingway-1-heretic-adapter",
+      "snippet": "This is a decensored version of Altworld/Hemmingway-1, made using Heretic v2.0.0.dev0 This model is reproducible! See the README in the reproduce directory for more information."
+    },
+    {
+      "title": "12 Types of Aspen Trees (With Pictures) – Identification Guide",
+      "url": "https://mississippigreens.com/types-of-aspen-trees/",
+      "snippet": "Aug 3, 2026 · Aspen trees, belonging to the genus Populus in the Salicaceae family, are deciduous hardwoods renowned for their …"
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Heretic is a tool that removes censorship (aka \"safety alignment\") from transformer-based language models without expensive post-training. It combines an advanced implementation of directional ablation, also known as \"abliteration\" (Arditi et al. 2024, Lai 2025 (1, 2)), with a TPE-based parameter optimizer powered by Optuna. This approach enables Heretic to work completely automatically ..."
+    },
+    {
+      "title": "Tree Profile: Aspen - So Much More Than a Tree - National Forest …",
+      "url": "https://www.nationalforests.org/article/tree-profile-aspen-so-much-more-than-a-tree/",
+      "snippet": "It’s hard to decide what is most memorable about aspen: the vibrant yellow in the fall, the tall, tube-like clusters of white stands or the …"
+    }
+  ]
+}

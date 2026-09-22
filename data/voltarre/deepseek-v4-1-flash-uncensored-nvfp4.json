@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Voltarre/DeepSeek-V4.1-Flash-UNCENSORED-NVFP4",
+  "slug": "voltarre-deepseek-v4-1-flash-uncensored-nvfp4",
+  "author": "Voltarre",
+  "url": "https://huggingface.co/Voltarre/DeepSeek-V4.1-Flash-UNCENSORED-NVFP4",
+  "created_at": "2026-09-22T17:27:52.000Z",
+  "updated_at": "2026-09-22T18:14:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v41",
+    "deepseek",
+    "deepseek-v4.1",
+    "uncensored",
+    "abliterated",
+    "nvfp4",
+    "fp4",
+    "quantized",
+    "vllm",
+    "not-for-all-audiences",
+    "image-text-to-text",
+    "base_model:dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+    "base_model:merge:dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+    "base_model:nvidia/DeepSeek-V4.1-Flash-NVFP4",
+    "base_model:merge:nvidia/DeepSeek-V4.1-Flash-NVFP4",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 738354999725,
+  "storage_human": "738.4 GB",
+  "base_model": "nvidia/DeepSeek-V4.1-Flash-NVFP4, dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "glock 手枪的扳机为何有个错位？ - 知乎",
+      "url": "https://www.zhihu.com/question/287940233",
+      "snippet": "Glock手枪的扳机上有一个叠在一起的小扳机，这就是扳机保险。说到这个保险的原理其实极其简单——如果不按下这个小扳机，小扳 …"
+    },
+    {
+      "title": "Glock 19 @ 15m",
+      "url": "https://armes-et-tirs.forumpro.fr/t18803-glock-19-15m",
+      "snippet": "Nov 16, 2016 · Bonjour, Voici mon résultat d'hier soir, tir à 2 mains à 15m avec mon Glock 19 gen.4 Des avis ou conseils?"
+    },
+    {
+      "title": "Le Glock 19 à 25m... Une hérésie - forumpro.fr",
+      "url": "https://armes-et-tirs.forumpro.fr/t10172-le-glock-19-a-25m-une-heresie",
+      "snippet": "May 2, 2014 · Sujet: Re: Le Glock 19 à 25m... Une hérésie ? Mer 25 Juin 2014 - 0:14 J ai le 19 gen 4 et il m arrive de tirer à 25 m (en …"
+    },
+    {
+      "title": "美国留学生，Glock17/19和SIG P320/365该选择哪一个？ - 知乎",
+      "url": "https://www.zhihu.com/question/446942258",
+      "snippet": "美国留学生，Glock17/19和SIG P320/365该选择哪一个？有打猎证和枪证，用途：隐蔽携带，居家防卫，日常练习。 首先说清楚。你 …"
+    },
+    {
+      "title": "Ejection bizarre sur Glock 19 - forumpro.fr",
+      "url": "https://armes-et-tirs.forumpro.fr/t3738-ejection-bizarre-sur-glock-19",
+      "snippet": "Sujet: Ejection bizarre sur Glock 19 Sam 16 Juin 2012 - 12:44 Salut ! J'ai acheté un glock 19 il y a quelques semaines et il doit …"
+    }
+  ]
+}

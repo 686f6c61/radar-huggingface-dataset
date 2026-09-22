@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/nld-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407",
+  "slug": "francesca9805-nld-latn-10mb-ppt-dp-100mb-packed-bfd_seed3407",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/nld-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407",
+  "created_at": "2026-09-22T15:16:15.000Z",
+  "updated_at": "2026-09-22T15:18:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/nld_latn_10mb",
+    "base_model:finetune:goldfish-models/nld_latn_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79357877,
+  "storage_human": "79 MB",
+  "base_model": "goldfish-models/nld_latn_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Singing Machine | Tuantu's lobotomization branches Wiki | Fandom",
+      "url": "https://tuantus-lobotomization-branches.fandom.com/wiki/Singing_Machine",
+      "snippet": "Singing Machine is an Abnormality that resembles a large rectangular industrial meat grinder held up by 4 small legs. The lid has a …"
+    },
+    {
+      "title": "Singing Machine - Tuantu's Lobotomization Branches",
+      "url": "https://tuantuslobbranches.miraheze.org/wiki/Singing_Machine",
+      "snippet": "Sep 3, 2026 · Singing Machine (O-05-30) is an abnormality that resembles a large rectangular industrial meat grinder held up by 4 …"
+    },
+    {
+      "title": "Singing Machine - Tuantus lobotomization branches Wiki",
+      "url": "https://tuantuslobotomizationbrancheswiki.miraheze.org/wiki/Singing_Machine",
+      "snippet": "Nov 23, 2025 · Singing Machine is an Abnormality resembling a rectangular meat grinder. This Abnormality has a strict level cap to …"
+    },
+    {
+      "title": "Tuantu's lobotomization branches Wiki | Fandom",
+      "url": "https://tuantus-lobotomization-branches.fandom.com/wiki/Tuantu%27s_lobotomization_branches_Wiki",
+      "snippet": "Game: Tuantu's lobotomization branches (Alpha). The wiki serves as a way to gather information, tips and tricks on the game, and …"
+    },
+    {
+      "title": "Tuantu's Lobotomization Branches",
+      "url": "https://tuantuslobbranches.miraheze.org/wiki/Main_Page",
+      "snippet": "Aug 18, 2026 · Unlike the original game where you play as the manager overseeing and managing agents to collect energy, here …"
+    }
+  ]
+}

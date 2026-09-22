@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nwtgck/gemma-4-E2B-it-qat-q4_0-gguf",
+  "slug": "nwtgck-gemma-4-e2b-it-qat-q4_0-gguf",
+  "author": "nwtgck",
+  "url": "https://huggingface.co/nwtgck/gemma-4-E2B-it-qat-q4_0-gguf",
+  "created_at": "2026-09-22T13:21:19.000Z",
+  "updated_at": "2026-09-22T13:21:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 4336349920,
+  "storage_human": "4.3 GB",
+  "base_model": "google/gemma-4-E2B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "\"Le cauchemar de tout parent\" : Cindy Crawford \"inconsolable\" face à la …",
+      "url": "https://www.marieclaire.fr/le-cauchemar-de-tout-parent-cindy-crawford-inconsolable-face-a-la-mort-de-son-fils-presley-gerber,1520482.asp",
+      "snippet": "6 hours ago · Après plusieurs années à lutter contre ses addictions, Presley Gerber, le fils de Cindy Crawford et le frère de Kaia …"
+    },
+    {
+      "title": "Mort de Presley Gerber à 27 ans : Cindy Crawford est \"inconsolable ...",
+      "url": "https://www.grazia.fr/people/mort-de-presley-gerber-a-27-ans-cindy-crawford-est-inconsolable-apres-la-mort-tragique-de-son-fils-presley-le-pire-cauchemar-de-tout-parent-1282268.html",
+      "snippet": "5 hours ago · Presley Gerber, fils de la célèbre mannequin Cindy Crawford, est décédé à l'âge de 27 ans, plongeant sa famille dans …"
+    },
+    {
+      "title": "Mort de Presley Gerber à 27 ans : l’autopsie du fils de Cindy Crawford ...",
+      "url": "https://www.closermag.fr/people/mort-de-presley-gerber-a-27-ans-lautopsie-du-fils-de-cindy-crawford-repoussee-les-causes-dramatiques-de-son-deces-se-dessinent-3659223",
+      "snippet": "7 hours ago · Presley Gerber est mort dans un centre de désintoxication de Santa Monica, à seulement 27 ans. Si l'autopsie n'a pas …"
+    },
+    {
+      "title": "Cindy Crawford : son fils Presley Gerber est mort à l’âge de 27 ans",
+      "url": "https://www.cnews.fr/people/2026-09-21/cindy-crawford-son-fils-presley-gerber-est-mort-lage-de-27-ans-1922002",
+      "snippet": "1 day ago · Presley Gerber, le fils du célèbre mannequin Cindy Crawford, est décédé ce dimanche 20 septembre à l’âge de 27 ans. …"
+    },
+    {
+      "title": "Le mannequin Presley Gerber, fils de Cindy Crawford, est mort à 27 ans",
+      "url": "https://www.20minutes.fr/arts-stars/people/4247292-20260921-mannequin-presley-gerber-fils-cindy-crawford-decede-age-27-ans",
+      "snippet": "1 day ago · Fils du top-model Cindy Crawford et de l’homme d’affaires Rande Gerber, Presley Gerber est mort ce week-end à l’âge …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "tvluong/deepseek-coder-1.3b-codealpaca-qlora-thien",
+  "slug": "tvluong-deepseek-coder-1-3b-codealpaca-qlora-thien",
+  "author": "tvluong",
+  "url": "https://huggingface.co/tvluong/deepseek-coder-1.3b-codealpaca-qlora-thien",
+  "created_at": "2026-09-22T14:49:20.000Z",
+  "updated_at": "2026-09-22T14:49:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12608264,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Allopneus : à fuir - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/allopneus-a-fuir-t252767.html",
+      "snippet": "Nov 2, 2019 · Re: Allopneus : à fuir !!! Messagepar CM_Allopneus » mer. nov. 13, 2019 7:50 am Bonjour Nous tenons à vous …"
+    },
+    {
+      "title": "Allopneus - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/allopneus-t138032.html",
+      "snippet": "Feb 6, 2018 · J'appelle le service client allopneus 2 jours après , et en envoyant les photos demandées pour vérification, ils …"
+    },
+    {
+      "title": "AlloPneus.com - Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/203312-allopneus-com",
+      "snippet": "Jul 20, 2022 · Paradoxalement, le site Allopneus (Le Mag), précise: \"Il existe un mythe selon lequel les pneus vendus sur les sites …"
+    },
+    {
+      "title": "AlloPneus (Michelin) : Alors on roule ! - Forum - 60 millions de ...",
+      "url": "https://www.60millions-mag.com/forum/d/227988-allopneus-michelin-alors-on-roule",
+      "snippet": "May 4, 2024 · Le Cash-back allopneus (Filiale de Michelin à 100%), est une technique marketing du genre attrape-nigaud. Car, …"
+    },
+    {
+      "title": "allopneus - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/allopneus-t283259.html",
+      "snippet": "Oct 26, 2020 · Venez contribuer au forum de la 1re association de consommateurs de France !"
+    }
+  ]
+}

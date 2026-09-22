@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DistributedAI/moe_cl_v1",
+  "slug": "distributedai-moe_cl_v1",
+  "author": "DistributedAI",
+  "url": "https://huggingface.co/DistributedAI/moe_cl_v1",
+  "created_at": "2026-09-22T20:45:55.000Z",
+  "updated_at": "2026-09-22T20:52:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "כיצד לקבל עזרה ב- Windows - תמיכה של Microsoft",
+      "url": "https://support.microsoft.com/he-il/windows/%D7%9B%D7%99%D7%A6%D7%93-%D7%9C%D7%A7%D7%91%D7%9C-%D7%A2%D7%96%D7%A8%D7%94-%D7%91-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "חפש עזרה בשורת המשימות, השתמש באפליקציית העצות, לחץ על הקישור 'קבלת עזרה' באפליקציה 'הגדרות' או עבור אל …"
+    },
+    {
+      "title": "עזרה והדרכה בנושא Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/he-il/windows/",
+      "snippet": "חפש עזרה ומאמרי 'כיצד לבצע' עבור מערכות הפעלה של Windows. קבל תמיכה עבור Windows וקבל מידע על התקנה, עדכונים, פרטיות, אבטחה ועוד."
+    },
+    {
+      "title": "איך לפתור בעיות תמיכה ב- Windows - צעדים מפורטים",
+      "url": "https://www.israelonline.co.il/%d7%9b%d7%99%d7%a6%d7%93-%d7%9c%d7%a7%d7%91%d7%9c-%d7%a2%d7%96%d7%a8%d7%94-windows/",
+      "snippet": "Aug 7, 2025 · במאמר זה נסקור את כל האפשרויות העומדות לרשותכם לקבלת סיוע ב-Windows, החל מכלי העזרה המובנים במערכת, דרך משאבים …"
+    },
+    {
+      "title": "כיצד לקבל עזרה ב-Windows 10 שלב אחר שלב - Mundowin",
+      "url": "https://mundowin.com/iw/%D7%9B%D7%99%D7%A6%D7%93-%D7%9C%D7%A7%D7%91%D7%9C-%D7%A2%D7%96%D7%A8%D7%94-%D7%91-Windows-10-%D7%91%D7%9B%D7%9C-%D7%94%D7%93%D7%A8%D7%9B%D7%99%D7%9D-%D7%94%D7%90%D7%A4%D7%A9%D7%A8%D7%99%D7%95%D7%AA/",
+      "snippet": "Nov 22, 2025 · במדריך זה, תראו, בפירוט, את כל הדרכים לקבל עזרה ב-Windows 10 : החל ממקש F1 הקלאסי ועד לאפליקציית Get Help, Cortana, …"
+    },
+    {
+      "title": "מדריך שלם: כיצד לקבל עזרה ב-Windows 11 | תמיכה, שאלות ותשובות",
+      "url": "https://www.israelonline.co.il/%d7%9b%d7%99%d7%a6%d7%93-%d7%9c%d7%a7%d7%91%d7%9c-%d7%a2%d7%96%d7%a8%d7%94-windows-11/",
+      "snippet": "Aug 7, 2025 · במאמר זה, נסקור את כל הדרכים בהן תוכלו לקבל תמיכה וסיוע ב-Windows 11. בין אם אתם מתחילים או משתמשים מנוסים, נלמד אתכם …"
+    }
+  ]
+}

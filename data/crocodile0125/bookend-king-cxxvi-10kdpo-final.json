@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Crocodile0125/bookend-KING-CXXVI-10kDPO-FINAL",
+  "slug": "crocodile0125-bookend-king-cxxvi-10kdpo-final",
+  "author": "Crocodile0125",
+  "url": "https://huggingface.co/Crocodile0125/bookend-KING-CXXVI-10kDPO-FINAL",
+  "created_at": "2026-09-22T14:53:01.000Z",
+  "updated_at": "2026-09-22T14:53:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916585078,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Android Apps on Google Play",
+      "url": "https://play.google.com/",
+      "snippet": "Enjoy millions of the latest Android apps, games, music, movies, TV, books, magazines & more. Anytime, anywhere, across your …"
+    },
+    {
+      "title": "Geometry Dash Lite - Aplicaciones en Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.robtopx.geometryjumplite&hl=es",
+      "snippet": "¡Salta y vuela para atravesar el peligro en este juego de plataformas y acción basado en el ritmo!"
+    },
+    {
+      "title": "JioHotstar - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=in.startv.hotstar&hl=en",
+      "snippet": "1 day ago · Welcome to the world of infinite possibilities. Get ready to experience non-stop sports and endless entertainment, like …"
+    },
+    {
+      "title": "TikTok - Aplicaciones en Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&hl=es",
+      "snippet": "La seguridad empieza por entender cómo recogen y comparten tus datos los desarrolladores. Las prácticas de privacidad y …"
+    },
+    {
+      "title": "PRONOTE – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.IndexEducation.Pronote&hl=fr",
+      "snippet": "PRONOTE, la vie scolaire et le suivi pédagogique de la maternelle à la terminale"
+    }
+  ]
+}

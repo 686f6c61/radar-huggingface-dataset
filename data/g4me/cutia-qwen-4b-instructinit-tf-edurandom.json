@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "g4me/CutIA-Qwen-4B-InstructInit-TF-EduRandom",
+  "slug": "g4me-cutia-qwen-4b-instructinit-tf-edurandom",
+  "author": "g4me",
+  "url": "https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-EduRandom",
+  "created_at": "2026-09-22T14:48:52.000Z",
+  "updated_at": "2026-09-22T14:50:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "causal-lm",
+    "base_model:g4me/CutIA-Qwen-4B-InstructInit-TF",
+    "base_model:finetune:g4me/CutIA-Qwen-4B-InstructInit-TF",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 16879252894,
+  "storage_human": "16.9 GB",
+  "base_model": "g4me/CutIA-Qwen-4B-InstructInit-TF",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official Harley-Davidson Motorcycles | Harley-Davidson USA",
+      "url": "https://www.harley-davidson.com/us/en/index.html?msockid=26ca49baed186ab4185a5e66ec9d6bea",
+      "snippet": "Shop the Official Harley-Davidson site for new & used motorcycles, genuine parts & apparel. Locate a dealer or sign up for a test ride. …"
+    },
+    {
+      "title": "Official Harley-Davidson Website | Harley-Davidson IN",
+      "url": "https://www.harley-davidson.com/in/en/index.html?msockid=26ca49baed186ab4185a5e66ec9d6bea",
+      "snippet": "Official site of Harley-Davidson Motor Company. Check out current Harley motorcycles, locate a dealer, & browse motorcycle parts …"
+    },
+    {
+      "title": "Affordable motorcycle insurance | Harley-Davidson® Insurance",
+      "url": "https://www.insurance.harley-davidson.com/",
+      "snippet": "Get motorcycle insurance for all brands from a company that knows motorcycles. Insurance policies as low as $15/month. Get a …"
+    },
+    {
+      "title": "Harley-Davidson Ride Planner",
+      "url": "https://maps.harley-davidson.com/",
+      "snippet": "RIDE 365 15 for 26 VIEW RIDES RIDE 365 50 RIDES, ONE NATION VIEW RIDES"
+    },
+    {
+      "title": "Jobs at Harley-Davidson",
+      "url": "https://jobs.harley-davidson.com/",
+      "snippet": "Apply online for jobs at Harley-Davidson, including Engineering Jobs, General Merchandise Jobs, Supply Chain Jobs, Manufacturing …"
+    }
+  ]
+}

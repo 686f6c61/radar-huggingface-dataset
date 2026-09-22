@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "jackstev/hw2-pool-ball-solid-stripe",
+  "slug": "jackstev-hw2-pool-ball-solid-stripe",
+  "author": "jackstev",
+  "url": "https://huggingface.co/jackstev/hw2-pool-ball-solid-stripe",
+  "created_at": "2026-09-22T18:39:13.000Z",
+  "updated_at": "2026-09-22T18:58:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "autogluon",
+  "languages": [],
+  "tags": [
+    "autogluon",
+    "image-classification",
+    "automl",
+    "transfer-learning",
+    "24-679",
+    "dataset:cmuchancel/hw1-pool-balls",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63311226,
+  "storage_human": "63 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ImmoScout24 – Mit über 6,5 Mio. Immobilien.",
+      "url": "https://www.immobilienscout24.de/?msockid=35e1e2a1d91a6ef7075cf57dd8546fd4",
+      "snippet": "Anbieten. Suchen. Finden. Die größte Auswahl an Wohnungen, Häusern und Gewerbeflächen findest du nur bei ImmoScout24. …"
+    },
+    {
+      "title": "Wohnung mieten: Mietwohnungen bei ImmoScout24",
+      "url": "https://www.immobilienscout24.de/wohnen/mietwohnungen.html?msockid=35e1e2a1d91a6ef7075cf57dd8546fd4",
+      "snippet": "Eine große Auswahl an Wohnungen zur Miete finden Sie bei ImmoScout24, dem großen Wohnungsmarkt für Mietwohnungen. Hier …"
+    },
+    {
+      "title": "Startseite",
+      "url": "https://event.immobilienscout24.de/webinare",
+      "snippet": "Kostenlose Webinare von ImmoScout24 in Kooperation mit den Unternehmen der Scout24 Gruppe"
+    },
+    {
+      "title": "Welcome - ImmobilienScout24",
+      "url": "https://sso.immobilienscout24.de/sso/login?appName=hof&source=por&e=login&msockid=35e1e2a1d91a6ef7075cf57dd8546fd4",
+      "snippet": "Melde dich in deinem Kundenkonto an, um ein Inserat zu erstellen. Du hast noch kein Konto? Dann erstelle dir hier einfach ein Neues."
+    },
+    {
+      "title": "Self Service Portal",
+      "url": "https://selfservice.immobilienscout24.de/",
+      "snippet": "Seiteninformationen Kontakt & Hilfe Impressum AGB Verbraucherinformationen Datenschutz © 1999 - 2026 Immobilien Scout GmbH"
+    }
+  ]
+}

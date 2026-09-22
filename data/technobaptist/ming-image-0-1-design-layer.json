@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "TechnoBaptist/Ming-Image-0.1-Design-Layer",
+  "slug": "technobaptist-ming-image-0-1-design-layer",
+  "author": "TechnoBaptist",
+  "url": "https://huggingface.co/TechnoBaptist/Ming-Image-0.1-Design-Layer",
+  "created_at": "2026-09-22T18:44:24.000Z",
+  "updated_at": "2026-09-22T18:44:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-text-to-image",
+    "layer-decomposition",
+    "rgba",
+    "graphic-design",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6154908736,
+  "parameters_human": "6.15B",
+  "storage_bytes": 65194305640,
+  "storage_human": "65.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Walmart Supercenter in Cedar Falls, IA | Grocery, Electronics, Toys ...",
+      "url": "https://www.walmart.com/store/753-cedar-falls-ia",
+      "snippet": "Get Walmart hours, driving directions and check out weekly specials at your Cedar Falls in Cedar Falls, IA. Get Cedar Falls store …"
+    },
+    {
+      "title": "Walmart | Save Money. Live better.",
+      "url": "https://www.walmart.com/",
+      "snippet": "Shop Walmart.com today for Every Day Low Prices. Join Walmart+ for unlimited free delivery from your store & free shipping with no …"
+    },
+    {
+      "title": "Pickup and Delivery - Walmart.com",
+      "url": "https://www.walmart.com/help/article/pickup-and-delivery/d0d02a5f54e54592930f110aaf6a2f50",
+      "snippet": "Need help with Check in, Pickup, or Delivery orders? Use this article to learn more."
+    },
+    {
+      "title": "Walmart Careers",
+      "url": "https://careers.walmart.com/us/en/home",
+      "snippet": "Walmart and Sam’s Club offer diverse career opportunities across stores & clubs, supply chain, healthcare, corporate, and …"
+    },
+    {
+      "title": "Pharmacy Delivery - Walmart.com",
+      "url": "https://www.walmart.com/cp/pharmacy-delivery/7187181",
+      "snippet": "Shop for Pharmacy Delivery at Walmart and save."
+    }
+  ]
+}

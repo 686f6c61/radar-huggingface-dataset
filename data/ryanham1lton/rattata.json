@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Rattata",
+  "slug": "ryanham1lton-rattata",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Rattata",
+  "created_at": "2026-09-22T14:53:53.000Z",
+  "updated_at": "2026-09-22T14:54:37.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118593987,
+  "storage_human": "119 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alza.cz – rychlý a pohodlný nákup odkudkoliv | Alza.cz",
+      "url": "https://www.alza.cz/",
+      "snippet": "Největší obchod s počítači a elektronikou! 43 prodejen, přes 2400 Alzaboxů, PC sestavy, notebooky, mobily, monitory, tiskárny, …"
+    },
+    {
+      "title": "ALZA | Alza.cz",
+      "url": "https://www.alza.cz/alza/v1835.htm",
+      "snippet": "V Alza.cz prostě sršíme energií! Rozhodli jsme se proto vytvořit vlastní značku produktů AlzaPower, které umí energii dodávat, …"
+    },
+    {
+      "title": "Alza.cz",
+      "url": "https://m.alza.cz/login.htm",
+      "snippet": "ALZA.cz mobile web site Všechny faktury a doklady ke stažení a tisku"
+    },
+    {
+      "title": "Alza trade | Alza.cz",
+      "url": "https://trade.alza.cz/",
+      "snippet": "Alza.cz není provozovatelem online tržiště ani jiné online platformy, ale klasickým e-shopem. Při prodeji na Alzatrade ze strany …"
+    },
+    {
+      "title": "Volná místa a kariéra v Alza.cz | Tvořte s námi budoucnost ...",
+      "url": "https://kariera.alza.cz/",
+      "snippet": "Kariéra v Alze: Staň se součástí týmu, kde do půlnoci objednáš a ráno v AlzaBoxu máš. Hledáme šikovné lidi, pro které je práce v …"
+    }
+  ]
+}

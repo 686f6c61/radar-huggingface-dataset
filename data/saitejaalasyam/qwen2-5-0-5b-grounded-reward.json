@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "saitejaalasyam/qwen2.5-0.5b-grounded-reward",
+  "slug": "saitejaalasyam-qwen2-5-0-5b-grounded-reward",
+  "author": "saitejaalasyam",
+  "url": "https://huggingface.co/saitejaalasyam/qwen2.5-0.5b-grounded-reward",
+  "created_at": "2026-09-22T17:16:24.000Z",
+  "updated_at": "2026-09-22T17:52:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-classification",
+    "rlhf",
+    "reward-model",
+    "trl",
+    "qwen",
+    "grounded-qa",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494033664,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999521596,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitch",
+      "url": "http://de.twitch.tv/",
+      "snippet": ""
+    },
+    {
+      "title": "Twitch",
+      "url": "https://www.twitch.tv/?lang=de-DE",
+      "snippet": "Twitch ist ein interaktiver Livestreaming-Dienst für eine große Bandbreite an Inhalten wie Games, Entertainment, Sport, Musik und …"
+    },
+    {
+      "title": "Twitch",
+      "url": "https://www.twitch.tv/*/",
+      "snippet": "Twitch is the world's leading video platform and community for gamers."
+    },
+    {
+      "title": "Twitch",
+      "url": "http://app.twitch.tv/",
+      "snippet": "Twitch App for iOS Watch games you love, follow new channels, and chat with other players anytime, anywhere."
+    },
+    {
+      "title": "Twitch - YouTube",
+      "url": "https://www.youtube.com/Twitch",
+      "snippet": "#Twitch is a #livestreaming service where millions of people come together live every day to chat, interact, and make their own …"
+    }
+  ]
+}

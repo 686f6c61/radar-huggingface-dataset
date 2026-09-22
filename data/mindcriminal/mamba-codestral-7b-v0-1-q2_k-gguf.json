@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Mindcriminal/Mamba-Codestral-7B-v0.1-Q2_K-GGUF",
+  "slug": "mindcriminal-mamba-codestral-7b-v0-1-q2_k-gguf",
+  "author": "Mindcriminal",
+  "url": "https://huggingface.co/Mindcriminal/Mamba-Codestral-7B-v0.1-Q2_K-GGUF",
+  "created_at": "2026-09-22T15:19:57.000Z",
+  "updated_at": "2026-09-22T15:20:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "gguf",
+    "mistral-common",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:mistralai/Mamba-Codestral-7B-v0.1",
+    "base_model:quantized:mistralai/Mamba-Codestral-7B-v0.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7285403648,
+  "parameters_human": "7.29B",
+  "storage_bytes": 2472381408,
+  "storage_human": "2.5 GB",
+  "base_model": "mistralai/Mamba-Codestral-7B-v0.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ausformulierter Lebenslauf Beispiel [PDF] + Tipps ️",
+      "url": "https://www.bewerbung-forum.de/ausformulierter-lebenslauf.html",
+      "snippet": "Ausformulierter Lebenslauf Beispiel + Tipps Das Anschreiben und der Lebenslauf bilden die Grundelemente einer …"
+    },
+    {
+      "title": "ZukÃ¼nftiger Bundesfreiwilligendienst im Lebenslauf",
+      "url": "https://www.bewerbung-forum.de/forum/zukuenftiger-bundesfreiwilligendienst-im-lebenslauf-t59913.html",
+      "snippet": "Jul 10, 2014 · ZukÃ¼nftiger Bundesfreiwilligendienst im Lebenslauf von TypeX » 06.10.2014, 17:45 Tagchen, nachdem es in diesem …"
+    },
+    {
+      "title": "Lebenslauf Tätigkeiten zusammenfassen ᐅ höhere Aussagekraft",
+      "url": "https://www.bewerbung-forum.de/lebenslauf-taetigkeiten-zusammenfassen.html",
+      "snippet": "Lebenslauf Tätigkeiten zusammenfassen => höhere Aussagekraft und bessere Übersichtlichkeit Du kannst im Lebenslauf Tätigkeiten …"
+    },
+    {
+      "title": "Lückenloser Lebenslauf: 5 Optionen für Lücken im Lebenslauf",
+      "url": "https://www.bewerbung-forum.de/lueckenloser-lebenslauf.html",
+      "snippet": "Lückenloser Lebenslauf Tipps Lücken füllen im Lebenslauf Probleme und Lücken im Lebenslauf darstellen Bei der Gestaltung des …"
+    },
+    {
+      "title": "Lebenslauf als Absolvent - Bewerbungsforum",
+      "url": "https://www.bewerbung-forum.de/forum/lebenslauf-als-absolvent-t51084.html",
+      "snippet": "Dec 6, 2016 · Da im Lebenslauf keine Kontaktdaten enthalten sind, gehe ich einmal davon aus, dass Du eine Kopfzeile verwendest, …"
+    }
+  ]
+}

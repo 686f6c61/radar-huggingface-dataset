@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "yuan1119/pointact-realistic-failures-v2-clf-bs512-step7500",
+  "slug": "yuan1119-pointact-realistic-failures-v2-clf-bs512-step7500",
+  "author": "yuan1119",
+  "url": "https://huggingface.co/yuan1119/pointact-realistic-failures-v2-clf-bs512-step7500",
+  "created_at": "2026-09-22T17:14:56.000Z",
+  "updated_at": "2026-09-22T17:26:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "pointact",
+    "rlbench",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11362256565,
+  "storage_human": "11.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eger Vécseyvölgy utca (2504) - térképem.hu",
+      "url": "https://terkepem.hu/utvonalterv/auto/3300-eger-vecsey-volgy-utca",
+      "snippet": "Útvonal ide: Eger Vécseyvölgy utca (2504) - térképem.hu. Belföldi útvonaltervező, nyomtatható útvonallal, és vármegyei matrica …"
+    },
+    {
+      "title": "Eger,Vécseyvölgy utca térképe",
+      "url": "https://data2.openstreetmap.hu/terkep/Eger,V%C3%A9cseyv%C3%B6lgy%20utca",
+      "snippet": "Base Layer Mapnik Humanitárius Overlays Turistautak Eger,Vécseyvölgy utca Permalink 20 m 100 ft"
+    },
+    {
+      "title": "Vécseyvölgy utca, Eger (Cifrahóstya)",
+      "url": "https://utcak-magyarorszag.openalfa.com/utcak/vecsey-sandor-utca-tetemvar-eger",
+      "snippet": "Vécseyvölgy utca, Eger (Cifrahóstya) térkép. Szolgáltatások könyvtára a Vécseyvölgy utca közelében: üzletek, éttermek, szabadidős …"
+    },
+    {
+      "title": "Eger kapuja: a Vécseyvölgy utcai csomópont, a Várállomás és a …",
+      "url": "https://mindenamieger.blogspot.com/2026/07/eger-kapuja-vecseyvolgy-utcai-csomopont.html",
+      "snippet": "Eger egyik legfontosabb, mégis sokszor észrevétlen városrésze a Vécseyvölgy utca – Gárdonyi Géza utca csomópont, a Várállomás, …"
+    },
+    {
+      "title": "Vécseyvölgy utca, Eger (Rádé)",
+      "url": "https://utcak-magyarorszag.openalfa.com/utcak/vecseyvoelgy-utca-rade-eger",
+      "snippet": "Vécseyvölgy utca, Eger (Rádé) térkép. Szolgáltatások könyvtára a Vécseyvölgy utca közelében: üzletek, éttermek, szabadidős és …"
+    }
+  ]
+}

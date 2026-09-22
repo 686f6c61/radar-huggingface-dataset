@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "madhavbiplov/laya-snake-mlx",
+  "slug": "madhavbiplov-laya-snake-mlx",
+  "author": "madhavbiplov",
+  "url": "https://huggingface.co/madhavbiplov/laya-snake-mlx",
+  "created_at": "2026-09-22T20:59:42.000Z",
+  "updated_at": "2026-09-22T21:17:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya-mlx",
+  "languages": [],
+  "tags": [
+    "laya-mlx",
+    "safetensors",
+    "laya",
+    "typed-decisions",
+    "mlx",
+    "apple-silicon",
+    "lora",
+    "layastudio",
+    "text-classification",
+    "base_model:aac6fef/laya-multilingual-mlx",
+    "base_model:adapter:aac6fef/laya-multilingual-mlx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198559,
+  "storage_human": "678 MB",
+  "base_model": "aac6fef/laya-multilingual-mlx",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Telegram Messenger",
+      "url": "https://telegram.org/",
+      "snippet": "Rich Text Editor, Communities, Ephemeral Messages in Groups, 350 Million GIFs Introducing a rich text editor to format and …"
+    },
+    {
+      "title": "Telegram Desktop",
+      "url": "https://desktop.telegram.org/",
+      "snippet": "Experience Telegram on your computer in a swift and seamless way."
+    },
+    {
+      "title": "Telegram Desktop",
+      "url": "https://desktop.telegram.org/?setln=fr",
+      "snippet": "Expérimentez Telegram sur votre ordinateur de manière rapide et fluide."
+    },
+    {
+      "title": "Telegram Messenger",
+      "url": "https://telegram.org/web?setln=es",
+      "snippet": "una nueva era de mensajería Telegram para Android Telegram para iPhone / iPad Telegram para PC / Linux Telegram para macOS"
+    },
+    {
+      "title": "Telegram - Authorization",
+      "url": "https://my.telegram.org/",
+      "snippet": "Access Telegram services, manage your account, and explore features on the official platform."
+    }
+  ]
+}

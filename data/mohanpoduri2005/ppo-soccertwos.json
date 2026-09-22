@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mohanpoduri2005/ppo-SoccerTwos",
+  "slug": "mohanpoduri2005-ppo-soccertwos",
+  "author": "mohanpoduri2005",
+  "url": "https://huggingface.co/mohanpoduri2005/ppo-SoccerTwos",
+  "created_at": "2026-09-22T16:14:10.000Z",
+  "updated_at": "2026-09-22T16:14:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "reinforcement-learning",
+    "ML-Agents-SoccerTwos",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47,
+  "storage_human": "47 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Last Kingdom Saison 5 - AlloCiné",
+      "url": "https://www.allocine.fr/series/ficheserie-18529/saison-39086/",
+      "snippet": "Mar 8, 2022 · Le roi Edward poursuit son projet d'unifier les royaumes saxons afin de réaliser le rêve de son défunt père. En paix …"
+    },
+    {
+      "title": "Season 5 - The Last Kingdom Wiki",
+      "url": "https://the-last-kingdom.fandom.com/wiki/Season_5",
+      "snippet": "\"Episode 5.5\" Æthelhelm's subterfuge successfully foments war tensions between Edward and Sigtryggr, but his thugs make a crucial …"
+    },
+    {
+      "title": "The Last Kingdom – Season 5 Episode 1 Recap & Review",
+      "url": "https://www.thereviewgeek.com/thelastkingdom-s5e1review/",
+      "snippet": "Mar 9, 2022 · Episode 1 of The Last Kingdom Season 5 starts years after the events of last season. Brida has been forgotten by …"
+    },
+    {
+      "title": "The Last Kingdom Season 5 Episode 1 Recap - Reel Mockery",
+      "url": "https://reelmockery.com/the-last-kingdom-season-5-episode-1-recap/",
+      "snippet": "Mar 20, 2022 · The Last Kingdom Season 5 Episode 1 Recap As the fifth season of The Last Kingdom begins, we learn that years …"
+    },
+    {
+      "title": "Saison 5 de The Last Kingdom (2022) | Télé-Loisirs",
+      "url": "https://www.programme-tv.net/programme/series-tv/r1549244983-the-last-kingdom/saisons/5/",
+      "snippet": "Apr 14, 2022 · Le combat entre Brida et Uhtred, teinté de regrets doux-amers et de souvenirs de la saison passée, capte l’esprit de la …"
+    }
+  ]
+}

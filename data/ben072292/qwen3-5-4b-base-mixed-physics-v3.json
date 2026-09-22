@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ben072292/Qwen3.5-4B-Base-mixed-physics-v3",
+  "slug": "ben072292-qwen3-5-4b-base-mixed-physics-v3",
+  "author": "ben072292",
+  "url": "https://huggingface.co/ben072292/Qwen3.5-4B-Base-mixed-physics-v3",
+  "created_at": "2026-09-22T12:35:26.000Z",
+  "updated_at": "2026-09-22T12:36:26.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098617302,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kontakt z dystrybutorem marki ESCO Medical – Puer z Podłęża",
+      "url": "https://www.puer-ivf.pl/kontakt",
+      "snippet": "Kontakt z firmą PUER z Podłęża Wszystkich zainteresowanych współpracą z firmą PUER zapraszamy do kontaktu telefonicznego lub …"
+    },
+    {
+      "title": "Dystrybucja urządzeń laboratoryjnych ESCO – Puer z Podłęża",
+      "url": "https://www.puer-ivf.pl/",
+      "snippet": "Działalność firmy jest związana ściśle z leczeniem niepłodności. Oferta zawiera szeroką gamę nowoczesnych urządzeń oraz …"
+    },
+    {
+      "title": "PUER PATRYCJA KLIMA - OnePlace",
+      "url": "https://oneplace.marketplanet.pl/baza-firm/-/bc/company/106003/puer-patrycja-klima",
+      "snippet": "ul. Domaniewska 49."
+    },
+    {
+      "title": "Patrycja Klima - Właściciel firmy w PUER | LinkedIn",
+      "url": "https://pl.linkedin.com/in/patrycja-klima-920231350",
+      "snippet": "Wyświetl profil użytkownika Patrycja Klima w LinkedIn – społeczności profesjonalistów liczącej 1 miliard członków."
+    },
+    {
+      "title": "Firmy Sprzedaż bezpośrednia w mieście Podłęże (małopolskie)",
+      "url": "https://www.firma.egospodarka.pl/raporty-o-firmach/,mazo-instant/w,malopolskie/m,podleze/k,15403.sprzedaz-bezposrednia.html",
+      "snippet": "PUER PATRYCJA KLIMA 149 32-003 Podłęże, małopolskie Kategoria: Sprzedaż bezpośrednia pełne dane firmy | wygrane przetargi"
+    }
+  ]
+}

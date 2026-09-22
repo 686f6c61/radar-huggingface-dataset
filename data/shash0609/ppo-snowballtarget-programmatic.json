@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "shash0609/ppo-SnowballTarget-programmatic",
+  "slug": "shash0609-ppo-snowballtarget-programmatic",
+  "author": "shash0609",
+  "url": "https://huggingface.co/shash0609/ppo-SnowballTarget-programmatic",
+  "created_at": "2026-09-22T15:57:38.000Z",
+  "updated_at": "2026-09-22T15:57:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25729179,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. …"
+    },
+    {
+      "title": "Pobierz WhatsApp",
+      "url": "https://www.whatsapp.com/download?lang=pl",
+      "snippet": "Pobierz WhatsApp na urządzenie mobilne, tablet lub komputer i pozostań w kontakcie dzięki niezawodnym prywatnym …"
+    },
+    {
+      "title": "How to manually update WhatsApp | WhatsApp Help Center",
+      "url": "https://faq.whatsapp.com/5481509731946576",
+      "snippet": "We encourage you to always use the most up to date version of WhatsApp. The latest versions contain the newest features and bug …"
+    },
+    {
+      "title": "How to link a device with phone number | WhatsApp Help Center",
+      "url": "https://faq.whatsapp.com/1324084875126592/",
+      "snippet": "To begin linking a companion device using your phone number, open Whatsapp for Windows or WhatsApp Web on the device you …"
+    }
+  ]
+}

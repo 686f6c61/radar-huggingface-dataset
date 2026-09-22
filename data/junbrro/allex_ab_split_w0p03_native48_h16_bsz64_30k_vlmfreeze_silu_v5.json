@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "junbrro/allex_AB_split_w0p03_native48_h16_bsz64_30k_vlmfreeze_silu_v5",
+  "slug": "junbrro-allex_ab_split_w0p03_native48_h16_bsz64_30k_vlmfreeze_silu_v5",
+  "author": "junbrro",
+  "url": "https://huggingface.co/junbrro/allex_AB_split_w0p03_native48_h16_bsz64_30k_vlmfreeze_silu_v5",
+  "created_at": "2026-09-15T06:23:38.000Z",
+  "updated_at": "2026-09-18T13:16:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-19T03:06:50.494Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Role of initial Pt/C aggregate state in PEFC catalyst ink ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1385894726080393",
+      "snippet": "Controlling the initial Pt/C aggregate state is therefore expected to play a critical role in regulating catalyst surface accessibility and …"
+    },
+    {
+      "title": "Role of initial Pt/C aggregate state in PEFC catalyst ink ...",
+      "url": "https://www.semanticscholar.org/paper/Role-of-initial-Pt-C-aggregate-state-in-PEFC-ink-Miskan-Tanaka/33f3f80ce5b9212bdf07c1ff5799b9ede47ce9c0",
+      "snippet": "In catalyst inks for polymer electrolyte fuel cells, the adsorption of ionomers onto platinum-supported carbon (Pt/C) critically …"
+    },
+    {
+      "title": "Before mixing starts, initial catalyst structure governs fuel-cell ink ...",
+      "url": "https://phys.org/news/2026-09-catalyst-fuel-cell-ink-dispersion.html",
+      "snippet": "Sep 4, 2026 · Researchers from Kanazawa University, the University of Tokyo and HORIBA, Ltd. have shown that the initial state of …"
+    },
+    {
+      "title": "Before mixing starts: Initial catalyst structure governs fuel-cell ink ...",
+      "url": "https://www.asiaresearchnews.com/content/mixing-starts-initial-catalyst-structure-governs-fuel-cell-ink-dispersion",
+      "snippet": "Sep 4, 2026 · Researchers from Kanazawa University, the University of Tokyo, and HORIBA, Ltd. have shown that the initial state of …"
+    },
+    {
+      "title": "Before mixing starts: Initial catalyst structure governs fuel-cell ink ...",
+      "url": "https://www.eurekalert.org/news-releases/1142715",
+      "snippet": "The present study provides mechanistic insight into one important process variable—the initial Pt/C aggregate state—and how it …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SC13SD123SADAS/MyAwesomeModel",
+  "slug": "sc13sd123sadas-myawesomemodel",
+  "author": "SC13SD123SADAS",
+  "url": "https://huggingface.co/SC13SD123SADAS/MyAwesomeModel",
+  "created_at": "2026-09-22T12:36:37.000Z",
+  "updated_at": "2026-09-22T12:39:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "687M Followers, 299 Following, 8,591 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    },
+    {
+      "title": "Instagram - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=en-US",
+      "snippet": "- Turn your life into a movie and discover short, entertaining videos on Instagram with Reels. - Customize your posts with exclusive …"
+    },
+    {
+      "title": "Instagram - Meta",
+      "url": "https://www.meta.com/instagram/",
+      "snippet": "We want Instagram to be a place where people can be inspired every day. We foster a safe and welcoming community where people …"
+    },
+    {
+      "title": "What Is Instagram? A Beginner's Guide to Using Instagram",
+      "url": "https://www.rd.com/article/what-is-instagram/",
+      "snippet": "Oct 2, 2025 · So, what is Instagram? Welcome to your go-to guide to the fast-growing, ever-changing social media platform that is …"
+    }
+  ]
+}

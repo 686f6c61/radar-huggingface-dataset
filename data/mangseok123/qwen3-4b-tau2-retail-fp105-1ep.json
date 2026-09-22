@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MANGSEOK123/qwen3-4b-tau2-retail-fp105-1ep",
+  "slug": "mangseok123-qwen3-4b-tau2-retail-fp105-1ep",
+  "author": "MANGSEOK123",
+  "url": "https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-retail-fp105-1ep",
+  "created_at": "2026-09-22T13:37:35.000Z",
+  "updated_at": "2026-09-22T13:39:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "tau2-bench",
+    "retail",
+    "oel",
+    "experience-distillation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317166,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mail merge cuts off some text, how do i fix this? - PC Review",
+      "url": "https://www.pcreview.co.uk/threads/mail-merge-cuts-off-some-text-how-do-i-fix-this.3402446/",
+      "snippet": "Jan 30, 2008 · I have a report that pulls info into excel in preparation for a mail merge report in word. One of the mail merge fields …"
+    },
+    {
+      "title": "What the \"Delete all alternate versions of items in your mail box\" mean ...",
+      "url": "https://www.pcreview.co.uk/threads/what-the-delete-all-alternate-versions-of-items-in-your-mail-box-mean.822266/",
+      "snippet": "Feb 12, 2004 · In the Tool.Cleanup Mailbox Dialog box, what the \"Delete all alternate versions of items in your mail box\" mean What …"
+    },
+    {
+      "title": "Submit Form - Shaw Support",
+      "url": "https://support.shaw.ca/t5/archived-alerts/oct-2-winnipeg-shaughnessy-park-all-services-outage-resolved/ta-p/26652",
+      "snippet": "<strong>Note:</strong> Since your browser does not support JavaScript, you must press the Resume button once to proceed."
+    },
+    {
+      "title": "dcdiag fails - server GUID DNS name could not be resolved",
+      "url": "https://www.pcreview.co.uk/threads/dcdiag-fails-server-guid-dns-name-could-not-be-resolved.1471806/",
+      "snippet": "Oct 20, 2003 · The machines name is aruba. When I setup a client to use it as a DNS server by default nslookup complains that the …"
+    },
+    {
+      "title": "desktop - PC Review",
+      "url": "https://www.pcreview.co.uk/threads/desktop.3521583/",
+      "snippet": "May 26, 2008 · Hi, I literally have bugs that come out and eat away my desktop view and leave a blue screen where they are crawling …"
+    }
+  ]
+}

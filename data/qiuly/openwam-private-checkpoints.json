@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "qiuly/OpenWAM-private-checkpoints",
+  "slug": "qiuly-openwam-private-checkpoints",
+  "author": "qiuly",
+  "url": "https://huggingface.co/qiuly/OpenWAM-private-checkpoints",
+  "created_at": "2026-09-22T17:03:07.000Z",
+  "updated_at": "2026-09-22T18:37:03.000Z",
+  "license": "mixed-upstream-model-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "world-model",
+    "openwam",
+    "en",
+    "zh",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 285141457615,
+  "storage_human": "285.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【心得】SVR2008基本操作方法 (PS2) @WWE Raw 精華區 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/G2.php?bsn=4812&sn=341",
+      "snippet": "Jan 28, 2008 · 上上個禮拜終於入手這片了.... 以上廢話 方向鍵(十字鍵)：挑釁 L3：移動 L1+L3：跑步 ：打擊技 L3+ ：4種不同的打擊 …"
+    },
+    {
+      "title": "Wrestling Forum",
+      "url": "https://www.wrestlingforum.com/forums/general-wwe.7/",
+      "snippet": ""
+    },
+    {
+      "title": "【討論】摔角術語字典最新版本 . 轉自 台灣論壇 @世界娛樂摔角 WWE",
+      "url": "https://forum.gamer.com.tw/G2.php?bsn=7425&sn=341",
+      "snippet": "Jan 7, 2005 · 摔角術語字典最新版本 我們在看英文摔角新聞，或者在聽英文摔角解說時都聽到很多摔角術語。作為一個摔角迷，有必 …"
+    },
+    {
+      "title": "如何看待如今WWE的没落？ - 知乎",
+      "url": "https://www.zhihu.com/question/265295733",
+      "snippet": "没落太夸张了，质量大幅度下降是真的。我看了12年WWE，这几年的质量真的是发霉，腐烂！从外联大量挖掘人才，萨摩亚乔、AJ 斯 …"
+    },
+    {
+      "title": "如何看待wwe？ - 知乎",
+      "url": "https://www.zhihu.com/question/29197324",
+      "snippet": "WWE拥有自身的人设剧情及动作语言和价值观，传到邻国墨西哥被彻底本土化成为\"墨摔\"，加入了本土风格面具化的丰富人设及高飞 …"
+    }
+  ]
+}

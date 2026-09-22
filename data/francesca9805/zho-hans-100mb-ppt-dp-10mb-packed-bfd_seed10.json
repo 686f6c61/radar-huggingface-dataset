@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfd_seed10",
+  "slug": "francesca9805-zho-hans-100mb-ppt-dp-10mb-packed-bfd_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfd_seed10",
+  "created_at": "2026-09-22T16:19:42.000Z",
+  "updated_at": "2026-09-22T16:23:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/zho_hans_100mb",
+    "base_model:finetune:goldfish-models/zho_hans_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 250709005,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/zho_hans_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La Gazzetta dello Sport | Notizie sportive e risultati live di oggi",
+      "url": "https://www.gazzetta.it/",
+      "snippet": "Feb 14, 2019 · Leggi su gazzetta.it le ultime news sportive live, scopri i risultati in diretta e video di calcio, basket, F1, MotoGP, …"
+    },
+    {
+      "title": "Ultime Notizie Sportive | Ultima Ora Sport | La Gazzetta dello Sport",
+      "url": "https://www.gazzetta.it/ultima-ora/",
+      "snippet": "Ultime notizie e aggiornamenti in tempo reale dal mondo dello sport. Ultima ora calcio, basket, ciclismo, tennis dalla redazione della …"
+    },
+    {
+      "title": "Calcio: news dell'ultima ora e risultati | La Gazzetta dello Sport",
+      "url": "https://www.gazzetta.it/Calcio/",
+      "snippet": "May 2, 2026 · Ultime notizie e risultati di calcio su La Gazzetta dello Sport: i campionati italiani di Serie A, B e C, Champions League …"
+    },
+    {
+      "title": "La Gazzetta dello Sport - Prima Pagina di oggi - 20 Settembre 2026",
+      "url": "https://www.giornalone.it/prima-pagina-la-gazzetta-dello-sport/",
+      "snippet": "2 days ago · La Gazzetta dello Sport (La Gazzetta Sportiva di domenica) è un quotidiano sportivo italiano a diffusione nazionale con …"
+    },
+    {
+      "title": "Ultime notizie sportive - La Gazzetta dello Sport",
+      "url": "https://www.gazzetta.it/index_box_live.shtml",
+      "snippet": "Dec 12, 2016 · La Gazzetta dello Sport: foto e video di calcio, notizie e probabili formazioni. Tutto su calciomercato, mondiali, formula …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mohanpoduri2005/reinforce-Pixelcopter-PLE-v0",
+  "slug": "mohanpoduri2005-reinforce-pixelcopter-ple-v0",
+  "author": "mohanpoduri2005",
+  "url": "https://huggingface.co/mohanpoduri2005/reinforce-Pixelcopter-PLE-v0",
+  "created_at": "2026-09-22T16:13:52.000Z",
+  "updated_at": "2026-09-22T16:13:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "reinforce",
+  "languages": [],
+  "tags": [
+    "reinforce",
+    "reinforcement-learning",
+    "Pixelcopter-PLE-v0",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61,
+  "storage_human": "61 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Use the Hearing Aid feature on your AirPods Pro 2 or AirPods Pro 3",
+      "url": "https://support.apple.com/en-us/120992",
+      "snippet": "Sep 14, 2026 · AirPods Pro 2 and AirPods Pro 3 provide a clinical-grade Hearing Aid feature for perceived mild to moderate hearing …"
+    },
+    {
+      "title": "Use hearing health features with AirPods Pro 2 or AirPods Pro 3",
+      "url": "https://support.apple.com/en-ca/guide/airpods/devd9aac5b42/web",
+      "snippet": "Your AirPods Pro 2 and AirPods Pro 3 support your hearing health with Hearing Protection, on by default, and a Hearing Aid feature."
+    },
+    {
+      "title": "AirPods With Hearing Aids: Compatibility Guide",
+      "url": "https://deafwebsites.com/guide-to-airpods-with-hearing-aids/",
+      "snippet": "Apr 18, 2026 · Guide to AirPods with hearing aids: learn compatibility, Bluetooth tips, mic routing, and Apple hearing features to get …"
+    },
+    {
+      "title": "AirPods Pro 3 - Hearing Health - Apple",
+      "url": "https://www.apple.com/airpods-pro/hearing-health/",
+      "snippet": "Access a Hearing Test, 1 a Hearing Aid feature, 1 and active Hearing Protection 2 using just AirPods Pro 3 or AirPods Pro 2 and an …"
+    },
+    {
+      "title": "How to Use AirPods as Hearing Aids (Step-by-Step)",
+      "url": "https://scienceinsights.org/how-to-use-airpods-as-hearing-aids-step-by-step/",
+      "snippet": "May 4, 2026 · Learn how to set up AirPods Pro as hearing aids using Apple’s built-in features, and what they can realistically do for …"
+    }
+  ]
+}

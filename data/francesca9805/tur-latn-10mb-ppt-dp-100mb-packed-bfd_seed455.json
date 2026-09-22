@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455",
+  "slug": "francesca9805-tur-latn-10mb-ppt-dp-100mb-packed-bfd_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455",
+  "created_at": "2026-09-22T13:38:22.000Z",
+  "updated_at": "2026-09-22T13:39:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/tur_latn_10mb",
+    "base_model:finetune:goldfish-models/tur_latn_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79400100,
+  "storage_human": "79 MB",
+  "base_model": "goldfish-models/tur_latn_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DOXXbet je výhra | DOXXbet športové tipovanie a online kasíno",
+      "url": "https://www.doxxbet.sk/",
+      "snippet": "DOXXbet športové tipovanie a online kasíno Nechaj sa vtiahnuť do sveta zábavy s DOXXbet tipovaním a online kasínom. DOXXbet …"
+    },
+    {
+      "title": "Fríspiny a kasíno bonusy každý deň | DOXXbet online kasíno",
+      "url": "https://www.doxxbet.sk/sk/kasino/kasino-online",
+      "snippet": "Zábava začína s fríspinmi, bonusmi a turnajmi. K tomu stovky online kasíno hier, vernostný program a top výhry. DOXXbet je výhra. …"
+    },
+    {
+      "title": "Current results - DOXXbet",
+      "url": "https://www.m.doxxbet.sk/en/sports-betting-online/results/soccer",
+      "snippet": "Current results from all matches in the offer, including settled bets. The first bet of 20€ completely RISK-FREE, attractive odds, and …"
+    },
+    {
+      "title": "prevádzkovateľa hazardnej hry: DOXXbet, s. r. o., Kálov 356, 010 01 Ži",
+      "url": "https://static-content.cdn.doxxbet.sk/documents/doxxbet-herny-plan-pre-stavkove-hry.pdf",
+      "snippet": "ade DOXXbet ponúkne hráčovi zmenu uzatvorenej stávky na okamžitú výhru. Okamžitá výhra zodpovedá násobku kurzov už …"
+    },
+    {
+      "title": "O DOXXbete | DOXXbet športové tipovanie a online kasíno",
+      "url": "https://www.m.doxxbet.sk/sk/novinky/o-doxxbete",
+      "snippet": "Sme hráči. Rovnako ako ty. Milujeme napätie, sme za každú výzvu a v hre nechávame srdce. DOXXbet nie je len o stávkach, je o …"
+    }
+  ]
+}

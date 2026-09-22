@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "dwidlee/systemone-lite-spatial-v2-s1",
+  "slug": "dwidlee-systemone-lite-spatial-v2-s1",
+  "author": "dwidlee",
+  "url": "https://huggingface.co/dwidlee/systemone-lite-spatial-v2-s1",
+  "created_at": "2026-09-22T15:21:30.000Z",
+  "updated_at": "2026-09-22T15:22:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "system-one",
+    "decision",
+    "qwen2.5",
+    "spatial",
+    "cloze",
+    "conversational",
+    "dataset:dwidlee/systemone-lite-phase2",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519716,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Connexion à mon espace client - La Banque Postale",
+      "url": "https://www.labanquepostale.fr/particulier/connexion-espace-client.html?msockid=0ed7a516fc3861b20b60b2cafdd960cb",
+      "snippet": "Connectez-vous à votre espace client La Banque Postale. Accédez à votre compte particulier en ligne ou via l'application mobile, en …"
+    },
+    {
+      "title": "L'Espace Client Internet - La Banque Postale",
+      "url": "https://www.labanquepostale.fr/particulier/comptes-et-cartes/espaces-clients/banque-en-ligne.html?msockid=0ed7a516fc3861b20b60b2cafdd960cb",
+      "snippet": "Naviguez en toute sécurité L’Espace Client Internet vous assure une navigation sécurisée pour réaliser vos opérations bancaires. …"
+    },
+    {
+      "title": "La Banque Postale - Banque et Assurance - Ouverture Compte en Ligne",
+      "url": "https://www.labanquepostale.fr/?msockid=0ed7a516fc3861b20b60b2cafdd960cb",
+      "snippet": "2 days ago · Découvrez les solutions banque et assurance de La Banque Postale. Ouverture d'un compte en ligne pour les activités …"
+    },
+    {
+      "title": "Banque pour professionnels et entrepreneurs - La Banque Postale",
+      "url": "https://www.labanquepostale.fr/professionnels-entrepreneurs.html?msockid=0ed7a516fc3861b20b60b2cafdd960cb",
+      "snippet": "La Banque Postale a pensé des services pour concrétiser votre projet de création d'entreprise et vous accompagner sur le long …"
+    },
+    {
+      "title": "Connexion espace client business - La Banque Postale",
+      "url": "https://www.labanquepostale.fr/professionnels-entrepreneurs/connexion-espace-client-business.html?msockid=0ed7a516fc3861b20b60b2cafdd960cb",
+      "snippet": "La Banque Postale, citoyenne Votre Espace Client Business évolue ! Découvrez toutes les nouveautés de votre nouvelle interface, …"
+    }
+  ]
+}

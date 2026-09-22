@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "hermitdave/Spark-X2.5-4B-MLX-4bit",
+  "slug": "hermitdave-spark-x2-5-4b-mlx-4bit",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/Spark-X2.5-4B-MLX-4bit",
+  "created_at": "2026-09-22T19:08:35.000Z",
+  "updated_at": "2026-09-22T19:09:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "spark2_5",
+    "apple-silicon",
+    "4-bit",
+    "spark-x2.5",
+    "long-context",
+    "agentic",
+    "text-generation",
+    "conversational",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:quantized:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 2315507544,
+  "storage_human": "2.3 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Radiopaedia.org",
+      "url": "https://radiopaedia.org/articles/vasculitis",
+      "snippet": "If you're not a bot, you shouldn't see this error. If it persists, please contact [email protected] and we'll help to unblock you."
+    },
+    {
+      "title": "Radiologic Imaging in Large and Medium Vessel Vasculitis",
+      "url": "https://radiologykey.com/radiologic-imaging-in-large-and-medium-vessel-vasculitis/",
+      "snippet": "Aug 15, 2020 · CTA allows visualization of early changes of vasculitis such as arterial wall thickening, contrast enhancement, and the …"
+    },
+    {
+      "title": "Vasculitis - Radiology Key",
+      "url": "https://radiologykey.com/vasculitis-6/",
+      "snippet": "Mar 25, 2024 · CT is useful for demonstrating end-organ changes and complications of vasculitis. Abnormalities may be noted in the …"
+    },
+    {
+      "title": "Large Vessel Vasculitis: Multimodality Imaging Findings and Technical ...",
+      "url": "https://pubs.rsna.org/doi/10.1148/rg.240166",
+      "snippet": "Dec 4, 2025 · Noninvasive imaging has a role in identifying, classifying, and staging LVV; often with a multimodality approach …"
+    },
+    {
+      "title": "MR and CT angiography in the diagnosis of vasculitides",
+      "url": "https://academic.oup.com/bjro/article/5/1/20220020/7468470",
+      "snippet": "Sep 25, 2023 · Findings from CT and MR angiography in conjunction with a thorough history and physical exam are of utmost …"
+    }
+  ]
+}

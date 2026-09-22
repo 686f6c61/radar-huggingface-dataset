@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "OnlyTextLLMs/Qwen3.5-4B-OnlyText-GGUF",
+  "slug": "onlytextllms-qwen3-5-4b-onlytext-gguf",
+  "author": "OnlyTextLLMs",
+  "url": "https://huggingface.co/OnlyTextLLMs/Qwen3.5-4B-OnlyText-GGUF",
+  "created_at": "2026-09-22T18:17:53.000Z",
+  "updated_at": "2026-09-22T18:19:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "text-generation",
+    "conversational",
+    "text-only",
+    "endpoints_compatible",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326304768,
+  "parameters_human": "4.33B",
+  "storage_bytes": 10956929344,
+  "storage_human": "11.0 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lenteur pour copier et coller!!!! [Résolu] - Forum Windows",
+      "url": "https://forums.commentcamarche.net/forum/affich-3065716-lenteur-pour-copier-et-coller",
+      "snippet": "Regarde dans ton BIOS la Temp de ton processeur et compare la aux donnes constructeur que tu peux trouver via google si ce n'est …"
+    },
+    {
+      "title": "Pièces détachées thermopompe Focus temp (water - Windows",
+      "url": "https://forums.commentcamarche.net/forum/affich-6380453-pieces-detachees-thermopompe-focus-temp-water",
+      "snippet": "Bonjour, Je cherche pour une thermopompe chauffe piscine de Marque Focus Temp model: HT 75 SE, des pieces de rechange en …"
+    },
+    {
+      "title": "Firewall rule from Local Group policy, but unable to find it origin.",
+      "url": "https://social.technet.microsoft.com/Forums/office/en-US/16f7126e-088c-42c9-9362-682bd5c6ce81/firewall-rule-from-local-group-policy-but-unable-to-find-it-origin",
+      "snippet": "So I got some of these firewall rules I'm trying to get rid off, they seems to override the rules from GPO and I cant find the source of …"
+    },
+    {
+      "title": "Problem with page size when using redirected printer",
+      "url": "https://social.technet.microsoft.com/Forums/en-US/cf6c698d-2a23-47b4-a316-8ce78cb6bfbb/problem-with-page-size-when-using-redirected-printer",
+      "snippet": "The problem is that when going to File / Print on the Excel document, the page size is listed as Custom Size and if you try to select …"
+    },
+    {
+      "title": "Récupérer doc WORD fermé et non enregistré [Résolu] - Forum Word",
+      "url": "https://forums.commentcamarche.net/forum/affich-2424428-recuperer-doc-word-ferme-et-non-enregistre",
+      "snippet": "Merci beaucoup, j'ai trouvé la réponse à mon problème sur cette page de discussion, en fait j'utilise windows vista et wordx, mon ordi …"
+    }
+  ]
+}

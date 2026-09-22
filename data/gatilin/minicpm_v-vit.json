@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gatilin/MiniCPM_v-ViT",
+  "slug": "gatilin-minicpm_v-vit",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/MiniCPM_v-ViT",
+  "created_at": "2026-09-22T15:52:54.000Z",
+  "updated_at": "2026-09-22T16:00:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 835724461,
+  "storage_human": "836 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT‑5 is here - OpenAI",
+      "url": "https://openai.com/gpt-5/",
+      "snippet": "GPT‑5 excels at writing, research, analysis, coding, and problem-solving. It delivers more accurate, professional responses and feels …"
+    },
+    {
+      "title": "Hello GPT‑4o - OpenAI",
+      "url": "https://openai.com/index/hello-gpt-4o/",
+      "snippet": "May 13, 2024 · GPT‑4o (“o” for “omni”) is a step towards much more natural human-computer interaction—it accepts as input any …"
+    },
+    {
+      "title": "Account, login and billing - OpenAI Help Center",
+      "url": "https://help.openai.com/en/collections/3943089-account-login-and-billing",
+      "snippet": "Refund requests, billing and login issues How many times can I use the same phone number to complete the phone verification …"
+    },
+    {
+      "title": "ChatGPT Rate Card (Business, Enterprise/Edu credit-based pricing)",
+      "url": "https://help.openai.com/en/articles/11481834-chatgpt-rate-card-business-enterpriseedu-credit-based-pricing",
+      "snippet": "ChatGPT Rate Card (Business, Enterprise/Edu credit-based pricing) Learn how credit rates work for ChatGPT Chat, Work, and …"
+    },
+    {
+      "title": "OpenAI Platform",
+      "url": "https://platform.openai.com/usage",
+      "snippet": "Build on the OpenAI API Platform Sign up or login with an OpenAI account to build with the OpenAI API."
+    }
+  ]
+}

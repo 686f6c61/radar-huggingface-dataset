@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "pepsibox2740/optima-tools-ai-medium",
+  "slug": "pepsibox2740-optima-tools-ai-medium",
+  "author": "pepsibox2740",
+  "url": "https://huggingface.co/pepsibox2740/optima-tools-ai-medium",
+  "created_at": "2026-09-22T18:54:25.000Z",
+  "updated_at": "2026-09-22T18:56:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "ti2v",
+    "optima-tools",
+    "offline",
+    "wan2.2",
+    "text-to-video",
+    "fr",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4999787712,
+  "parameters_human": "5.00B",
+  "storage_bytes": 34202832421,
+  "storage_human": "34.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generic Product Keys to Install Windows 10 Editions",
+      "url": "https://www.tenforums.com/tutorials/95922-generic-product-keys-install-windows-10-editions.html",
+      "snippet": "Apr 8, 2024 · Published by Shawn Brink Category: Installation & Upgrade 08 Apr 2024 List of Generic Product Keys to Install …"
+    },
+    {
+      "title": "Install or Uninstall Microsoft WordPad in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/140422-install-uninstall-microsoft-wordpad-windows-10-a.html",
+      "snippet": "May 16, 2020 · It is more advanced than Microsoft Notepad but simpler than Microsoft Word. Starting with Windows 10 build 18980, …"
+    },
+    {
+      "title": "What is the phone contact number for hotmail in the UK?",
+      "url": "https://www.answers.com/telecommunications/What_is_the_phone_contact_number_for_hotmail_in_the_UK",
+      "snippet": "4 days ago · Try the Self-Help Options Microsoft offers troubleshooting guides and automated assistance for many common Hotmail …"
+    },
+    {
+      "title": "How do you copy the turbo c screen in Microsoft Word?",
+      "url": "https://www.answers.com/computers/How_do_you_copy_the_turbo_c_screen_in_Microsoft_Word",
+      "snippet": "Dec 8, 2022 · better copy the needed program from your word document and paste it in a notepad and save it with \" .c \" extension …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/msoffice/forum/msoffice_word-mso_other/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â°ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¹/d891c1c3-9a36-4f64-a125-27ed2243e629",
+      "snippet": ""
+    }
+  ]
+}

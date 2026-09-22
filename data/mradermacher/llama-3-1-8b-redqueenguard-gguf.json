@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama-3.1-8B-RedQueenGuard-GGUF",
+  "slug": "mradermacher-llama-3-1-8b-redqueenguard-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-3.1-8B-RedQueenGuard-GGUF",
+  "created_at": "2026-09-22T15:15:06.000Z",
+  "updated_at": "2026-09-22T15:26:59.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "arxiv:2608.15594",
+    "safety",
+    "jailbreak-defense",
+    "multi-turn",
+    "dpo",
+    "baseline",
+    "en",
+    "base_model:Dipto084/Llama-3.1-8B-RedQueenGuard",
+    "base_model:quantized:Dipto084/Llama-3.1-8B-RedQueenGuard",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820288384,
+  "storage_human": "71.8 GB",
+  "base_model": "Dipto084/Llama-3.1-8B-RedQueenGuard",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ich bin nicht erwerbstätig und freiwillig versichert. Wie hoch ist mein ...",
+      "url": "https://www.tk.de/techniker/versicherung/gut-versichert-in-jeder-lebenslage/freiwillige-krankenversicherung-tk/beitragshoehe-freiwillig-versichert-nicht-erwerbstaetig-2006970",
+      "snippet": "6 days ago · Liegt - wie in den meisten Fällen - kein eigenes Einkommen vor (zum Beispiel Mieteinnahmen), beträgt der monatliche …"
+    },
+    {
+      "title": "Krankenkassenbeitrag für freiwillig Versicherte",
+      "url": "https://www.krankenkassen.de/gesetzliche-krankenkassen/krankenkasse-beitrag/freiwillig-versichert-gkv/",
+      "snippet": "Der Krankenkassen-Beitrag richtet sich nach dem Einkommen - auch für freiwillig gesetzlich Versicherte, wie Freiberufler und …"
+    },
+    {
+      "title": "Ich bin nicht erwerbs­tätig und frei­willig versi­chert. Wie hoch ist ...",
+      "url": "https://www.dak.de/dak/ihr-anliegen/mitgliedschaft-und-beitraege/ich-bin-nicht-erwerbs-taetig-und-frei-willig-versi-chert-wie-hoch-ist-mein-beitrag-_7064",
+      "snippet": "Dec 20, 2025 · Wie hoch die Beiträge zur Krankenversicherung für freiwillig Versicherte sind, hängt von Ihren monatlichen …"
+    },
+    {
+      "title": "Krankenversicherung ohne Einkommen: Was gilt? ️",
+      "url": "https://www.krankenkasseninfo.de/ratgeber/60647/krankenversicherung-ohne-einkommen.html",
+      "snippet": "Feb 19, 2026 · Wer über kein eigenes Einkommen verfügt, muss die Sozialbeiträge für die Krankenkasse und Pflegeversicherung …"
+    },
+    {
+      "title": "Krankenkassenbeitrag-Rechner 2026 & 2027 - Deutschlandrechner",
+      "url": "https://www.deutschland-rechner.de/krankenkassenbeitrag-rechner",
+      "snippet": "Der GKV-Mindestbeitrag 2026 basiert auf der Mindestbemessungsgrundlage von 1.318,33 €/Monat. Mindestbeitrag ohne …"
+    }
+  ]
+}

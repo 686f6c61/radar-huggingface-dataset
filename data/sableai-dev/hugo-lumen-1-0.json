@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SableAI-Dev/Hugo-Lumen-1.0",
+  "slug": "sableai-dev-hugo-lumen-1-0",
+  "author": "SableAI-Dev",
+  "url": "https://huggingface.co/SableAI-Dev/Hugo-Lumen-1.0",
+  "created_at": "2026-09-22T13:46:21.000Z",
+  "updated_at": "2026-09-22T13:56:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "Lumen",
+    "SableAI",
+    "Hugo",
+    "Lumen-1.0",
+    "Lumen1.0",
+    "Hugo-Lumen",
+    "Hugo-Lumen1.0",
+    "Hugo-Lumen-1.0",
+    "en",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "如何评价WorkBuddy？ - 知乎",
+      "url": "https://www.zhihu.com/question/2049048570800628238",
+      "snippet": "最近 OpenAI 把 Codex 和 ChatGPT 合并了嘛，圈子里都在看。 有个人叫苍何，之前搞过 CodexGuide，GitHub 上 2.6k star，5 个满 …"
+    },
+    {
+      "title": "黑暗執行緒",
+      "url": "https://blog.darkthread.net/",
+      "snippet": "4 days ago · .NET Core.NET AD ADO.NET AI AJAX Algorithm Android AngularJS Arduino ARM ASP.NET Core ASP.NET MVC …"
+    },
+    {
+      "title": "Github Copilot 聊天視窗指令整理-黑暗執行緒",
+      "url": "https://blog.darkthread.net/blog/copilot-chat-cheatsheet/",
+      "snippet": "Oct 12, 2025 · 使用 VSCode Github Copilot Chat 視窗跟副駕駛聊天時，善用一些特殊指令語法可讓你事半功倍，我老記不住(另一方 …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/auto-reboot-issues/f23cd51e-4290-41f6-8ff2-55db90b46d55",
+      "snippet": ""
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "wodbs5602/act_pick_place",
+  "slug": "wodbs5602-act_pick_place",
+  "author": "wodbs5602",
+  "url": "https://huggingface.co/wodbs5602/act_pick_place",
+  "created_at": "2026-09-22T16:29:33.000Z",
+  "updated_at": "2026-09-22T16:30:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:wodbs5602/pick_place_box",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51701398,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206841984,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jobs & Karriere bei OBI",
+      "url": "https://jobs.obi.de/",
+      "snippet": "OBI Academy In unserer OBI Academy erhalten alle Kolleg:innen jederzeit die Möglichkeit, E-Learnings zu bearbeiten, sich fachlich …"
+    },
+    {
+      "title": "OBI Baumarkt & Onlineshop - alles für Heim, Haus, Garten und Bau",
+      "url": "https://www.obi.de/?msockid=1c3fba4d0e086fb5138cad910f9a6e50",
+      "snippet": "1 day ago · OBI Baumarkt – Alles für dein Zuhause, deinen Garten und deine DIY-Projekte Im OBI Baumarkt findest du alles, was du …"
+    },
+    {
+      "title": "Jobs in unseren Märkten: Jobs bei OBI",
+      "url": "https://jobs.obi.de/category/maerkte/47f2372d-c73f-5b00-a34b-b202e82ef0cb",
+      "snippet": "OBI Bau- und Heimwerkermarkt Marburg-Wehrda GmbH & Co. Handels KG OBI Bau- und Heimwerkermarkt Pfullendorf GmbH & Co. …"
+    },
+    {
+      "title": "Dein Baumarkt in der Nähe | Alle OBI Märkte in Deutschland",
+      "url": "https://www.obi.de/markt?msockid=1c3fba4d0e086fb5138cad910f9a6e50",
+      "snippet": "Finde deinen OBI Baumarkt in der Nähe. Alle Märkte im Überblick Distanz zum nächsten Markt Kontaktinformationen"
+    },
+    {
+      "title": "7nyjs9qpjzxh.partner.obi.de",
+      "url": "https://7nyjs9qpjzxh.partner.obi.de/",
+      "snippet": "7nyjs9qpjzxh.partner.obi.de ... Anmelden"
+    }
+  ]
+}

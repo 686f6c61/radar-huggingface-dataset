@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "baerquants/Inkling-NVFP4",
+  "slug": "baerquants-inkling-nvfp4",
+  "author": "baerquants",
+  "url": "https://huggingface.co/baerquants/Inkling-NVFP4",
+  "created_at": "2026-09-22T21:01:52.000Z",
+  "updated_at": "2026-09-22T21:01:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "base_model:thinkingmachines/Inkling",
+    "base_model:quantized:thinkingmachines/Inkling",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 552845034562,
+  "parameters_human": "552.85B",
+  "storage_bytes": 592037100903,
+  "storage_human": "592.0 GB",
+  "base_model": "thinkingmachines/Inkling",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook邮箱注册入口 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/316431122890820204.html",
+      "snippet": "May 12, 2024 · Outlook邮箱注册入口Outlook.com 是 Microsoft 所提供的免费个人电子邮件服务，本文将分享Outlook邮箱注册入口＆ …"
+    },
+    {
+      "title": "hotmail邮箱怎么登录？_百度知道",
+      "url": "https://zhidao.baidu.com/question/402916655883659605.html",
+      "snippet": "Feb 21, 2024 · 登录后缀@hotmail.com的邮箱一共有三种方法，具体如下： 方法一：官方登陆入口 首先我们想到的一定是官网登陆， …"
+    },
+    {
+      "title": "Comment récupérer ma boîte de réception hotmail?",
+      "url": "https://forums.commentcamarche.net/forum/affich-26356832-comment-recuperer-ma-boite-de-reception-hotmail",
+      "snippet": "Oct 30, 2012 · Bonjour, Je n'arrive pas à accéder à ma boîte de réception malgré que je n'ai pas perdu le mot de passe. J'ai suivi …"
+    },
+    {
+      "title": "Récupérer mon compte hotmail ? - Forum Hotmail / Outlook.com",
+      "url": "https://forums.commentcamarche.net/forum/affich-1081426-recuperer-mon-compte-hotmail",
+      "snippet": "Bonjour à tous Voilà mon problème, on m'a voler mon compte Hotmail. Ce matin en voulant me connecté, plus moyen. J'aurais bien …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/outlook-hasnt-installed-on-my-office-pro-2021/739cc5d5-3b4c-4ed3-bc0b-790a4f4ae91e",
+      "snippet": ""
+    }
+  ]
+}

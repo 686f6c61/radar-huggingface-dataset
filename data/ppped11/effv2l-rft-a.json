@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ppped11/effv2l-rft-a",
+  "slug": "ppped11-effv2l-rft-a",
+  "author": "ppped11",
+  "url": "https://huggingface.co/ppped11/effv2l-rft-a",
+  "created_at": "2026-09-22T17:08:08.000Z",
+  "updated_at": "2026-09-22T17:10:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "torchvision",
+  "languages": [],
+  "tags": [
+    "torchvision",
+    "safetensors",
+    "image-classification",
+    "adversarial-training",
+    "efficientnet",
+    "perturb",
+    "bittensor",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119027848,
+  "parameters_human": "119.0M",
+  "storage_bytes": 476270096,
+  "storage_human": "476 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Miko 1. Lehrplan 2023. Umstiegslehrgang S-95 - VERITAS",
+      "url": "https://www.veritas.at/miko-1-lehrplan-2023-umstiegslehrgang-s-95-978-3-7101-4990-0",
+      "snippet": "Miko 1. Lehrplan 2023. Umstiegslehrgang S-95 - Von der Druckschrift zur Schreibschrift! Das Erlernen der Schreibschrift orientiert …"
+    },
+    {
+      "title": "Miko Produktübersicht | VERITAS",
+      "url": "https://www.veritas.at/reihe/miko",
+      "snippet": "Die gleichbleibenden Miko -Übungsformate geben den Kindern Sicherheit, sie können dadurch gut selbstständig arbeiten. Das Miko …"
+    },
+    {
+      "title": "Blätterbuch zu Miko 1. Lehrplan 2023. Umstiegslehrgang S-95",
+      "url": "https://sbo.veritas.at/sbo/ebook/px/48989_1T/",
+      "snippet": "VERITAS-Blätterbuch zu Miko 1. Lehrplan 2023. Umstiegslehrgang S-95 (978-3-7101-4990-0). Jetzt entdecken!"
+    },
+    {
+      "title": "Blätterbuch zu Miko 1. Umstiegslehrgang - 978-3-7101-2784-7",
+      "url": "https://sbo.veritas.at/sbo/ebook/px/42867_1T/",
+      "snippet": "VERITAS-Blätterbuch zu Miko 1. Umstiegslehrgang (978-3-7101-2784-7). Jetzt entdecken!"
+    },
+    {
+      "title": "Kleine Schritte. Große Wirkung. Leitfaden für LehrerInn",
+      "url": "https://www.scook.at/cdn_proxy/2c9b941d-75ed-47b1-bf71-c0405bb26015/234919_0487040101_0487040101_miko_1_leitfaden.pdf",
+      "snippet": "Kleine Schritte – große Wirkung: Miko lässt den Kindern Zeit, um mit Neuem vertraut zu werden: Ausrei-chend Übungsmaterial, …"
+    }
+  ]
+}

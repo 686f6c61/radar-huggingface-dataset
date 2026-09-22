@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "pottokao/Qwen-Image-2.1-PE-I2I-Heretic-GGUF",
+  "slug": "pottokao-qwen-image-2-1-pe-i2i-heretic-gguf",
+  "author": "pottokao",
+  "url": "https://huggingface.co/pottokao/Qwen-Image-2.1-PE-I2I-Heretic-GGUF",
+  "created_at": "2026-09-22T17:07:55.000Z",
+  "updated_at": "2026-09-22T17:09:59.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "heretic",
+    "abliterated",
+    "prompt-rewriting",
+    "image-editing",
+    "qwen-image",
+    "llama-cpp",
+    "multimodal",
+    "base_model:Qwen/Qwen-Image-2.1-PE-I2I",
+    "base_model:quantized:Qwen/Qwen-Image-2.1-PE-I2I",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 6813039328,
+  "storage_human": "6.8 GB",
+  "base_model": "Qwen/Qwen-Image-2.1-PE-I2I",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Polmoncino Spinterogeno Fiat Panda 750/100 Fire Magneti Marelli",
+      "url": "https://www.ebay.it/itm/115109555508",
+      "snippet": "May 17, 2026 · Le migliori offerte per Polmoncino Spinterogeno Fiat Panda 750/100 Fire Magneti Marelli 71315004 sono su eBay …"
+    },
+    {
+      "title": "242852 CORRETTORE POLMONCINO SPINTEROGENO VALEO FIAT PANDA 750 UNO FIRE ...",
+      "url": "https://www.ebay.it/itm/187669840790",
+      "snippet": "Jan 2, 2026 · Le migliori offerte per 242852 CORRETTORE POLMONCINO SPINTEROGENO VALEO FIAT PANDA 750 UNO FIRE …"
+    },
+    {
+      "title": "Spinterogeno panda 750 - Vendita in Accessori auto - Subito.it",
+      "url": "https://www.subito.it/annunci-italia/vendita/accessori-auto/?q=spinterogeno+panda+750",
+      "snippet": "Spinterogeno panda 750 in vendita in accessori auto: scopri subito migliaia di annunci di privati e aziende e trova quello che cerchi su …"
+    },
+    {
+      "title": "Spinterogeno e componenti Panda 141 750 34 CV Benzina 156 A4.000",
+      "url": "https://www.auto-doc.it/pezzi-di-ricambio/distributore-daccensione-componenti-singoli-10248/fiat/panda/panda-141a/2550-750",
+      "snippet": "【OFFERTA TOP 】⚡️ Ordina online Spinterogeno e componenti FIAT Panda I Hatchback (141) 750 34 CV 156A4.000 in maniera …"
+    },
+    {
+      "title": "Polmoncino Spinterogeno Fiat Panda 750/100 Fire Magneti Marelli ...",
+      "url": "https://picclick.it/Polmoncino-Spinterogeno-Fiat-Panda-750-100-Fire-Magneti-Marelli-115109555508.html",
+      "snippet": "Polmoncino Spinterogeno Fiat Panda 750/100 Fire Magneti Marelli 71315004 EUR 23,99 Compralo Subito, Spedizione gratuita, 30 …"
+    }
+  ]
+}

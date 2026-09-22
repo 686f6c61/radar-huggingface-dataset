@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "VictorMMichel/qwen2.5-3b-novatech-lora",
+  "slug": "victormmichel-qwen2-5-3b-novatech-lora",
+  "author": "VictorMMichel",
+  "url": "https://huggingface.co/VictorMMichel/qwen2.5-3b-novatech-lora",
+  "created_at": "2026-09-22T14:58:46.000Z",
+  "updated_at": "2026-09-22T14:58:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223694,
+  "storage_human": "131 MB",
+  "base_model": "unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "3 days ago · Play today’s daily Bing homepage quiz questions answer 10 fun triva, discover amazing facts and trends, then test your …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Today's Trivia & Bing News Quiz",
+      "url": "https://bing.weeklyquiz.net/bing-homepage-quiz/",
+      "snippet": "15 hours ago · Did you know that the Bing Homepage Quiz is a daily trivia game with 15 questions based on the Bing homepage …"
+    },
+    {
+      "title": "Play Today's Bing Quiz – 5 Trivia Questions, Daily Challenge",
+      "url": "https://bingquiz.org/",
+      "snippet": "1 day ago · Play Bing Quiz online! Take 5 daily trivia questions across 6 categories and climb the rank ladder from Wanderer to …"
+    },
+    {
+      "title": "Quiz du jour sur la page d'accueil de Bing – Répondez à 10 questions …",
+      "url": "https://bingehomepagequiz.com/fr/",
+      "snippet": "Jul 2, 2026 · Répondez dès aujourd'hui aux questions et réponses gratuites du quiz de la page d'accueil de Bing. Relevez chaque …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/trends",
+      "snippet": "Bing ... OK"
+    }
+  ]
+}

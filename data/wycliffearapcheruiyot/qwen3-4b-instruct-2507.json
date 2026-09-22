@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "wycliffearapcheruiyot/Qwen3-4B-Instruct-2507",
+  "slug": "wycliffearapcheruiyot-qwen3-4b-instruct-2507",
+  "author": "wycliffearapcheruiyot",
+  "url": "https://huggingface.co/wycliffearapcheruiyot/Qwen3-4B-Instruct-2507",
+  "created_at": "2026-09-22T13:40:38.000Z",
+  "updated_at": "2026-09-22T13:40:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2505.09388",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404654,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oh my zsh 哪些主题比较好看、有特点？ - 知乎",
+      "url": "https://www.zhihu.com/question/33277508",
+      "snippet": "oh-my-zsh 官网的列表： Themes · robbyrussell/oh-my-zsh Wiki · GitHub 我以为一个主题，最重要的是好看，其次是提供必要的信 …"
+    },
+    {
+      "title": "How can I fix not working oh-my-zsh plugins - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/6800952/how-can-i-fix-not-working-oh-my-zsh-plugins",
+      "snippet": "I've just discovered oh-my-zsh, but I can't get it to work. While themes work just perfectly, plugins do not. I have some plugins …"
+    },
+    {
+      "title": "oh-my-zsh not applying themes - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/43402753/oh-my-zsh-not-applying-themes",
+      "snippet": "Apr 14, 2017 · I just set up zsh together with oh-my-zsh. But there's a bit of strange behavior that I cannot understand. If I restart …"
+    },
+    {
+      "title": "After installing oh-my-zsh: ... /.zshrc:source:34: no such file or ...",
+      "url": "https://unix.stackexchange.com/questions/27851/after-installing-oh-my-zsh-zshrcsource34-no-such-file-or-directory",
+      "snippet": "Installing zsh doesn't install Oh My Zsh, which might explain if you don't have an oh-my-zsh.sh file at all (this was the case for me). …"
+    },
+    {
+      "title": "在MAC下面有什么好用的终端工具？ - 知乎",
+      "url": "https://www.zhihu.com/question/21865155",
+      "snippet": "我之前也是 iTerm2 的忠实用户，折腾了快五年，从 zsh、Oh My Zsh 到 Powerlevel10k，各种插件、主题都玩了个遍，配色也跟你一 …"
+    }
+  ]
+}

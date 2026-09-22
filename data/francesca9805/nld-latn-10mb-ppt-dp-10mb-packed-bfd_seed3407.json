@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407",
+  "slug": "francesca9805-nld-latn-10mb-ppt-dp-10mb-packed-bfd_seed3407",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407",
+  "created_at": "2026-09-22T15:08:15.000Z",
+  "updated_at": "2026-09-22T15:09:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/nld_latn_10mb",
+    "base_model:finetune:goldfish-models/nld_latn_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79356236,
+  "storage_human": "79 MB",
+  "base_model": "goldfish-models/nld_latn_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "Sign in to create & share playlists, get personalized recommendations, and more. With the YouTube Music app, enjoy over 100 …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://www.youtube.com/youtube%20-MUSIC",
+      "snippet": "Subscribe to the YouTube Music channel to stay up on the latest news and updates from YouTube Music. The avenue is open. 👀 This …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/YouTube/music",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/explore",
+      "snippet": "Explore trending music and find your next favorite song. Discover the latest releases from new artists, plus enjoy new music videos …"
+    },
+    {
+      "title": "The Music Channel - YouTube",
+      "url": "https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ",
+      "snippet": "Visit the YouTube Music Channel to find today’s top talent, featured artists, and playlists. Subscribe to see the latest in the music …"
+    }
+  ]
+}

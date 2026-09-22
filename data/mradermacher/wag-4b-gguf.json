@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/wag-4b-GGUF",
+  "slug": "mradermacher-wag-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/wag-4b-GGUF",
+  "created_at": "2026-09-22T16:22:49.000Z",
+  "updated_at": "2026-09-22T16:22:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Национална класификация на професиите ...",
+      "url": "https://kik-info.com/spravochnik/nkpd-2011/",
+      "snippet": "В НКПД 2011 може да се търси по име (част от името) или код (част от кода) точното наименование и код на професията по …"
+    },
+    {
+      "title": "Проверка на ДДС номер във VIES - КиК Инфо",
+      "url": "https://kik-info.com/danatsi/proverka-na-dds-nomer-v-vies.php",
+      "snippet": "Проверката може да проверите дали даден ДДС номер е валиден. Проверката важи за ДДС номера издадени, както от …"
+    },
+    {
+      "title": "ГФО на микропредприятие – съдържание ...",
+      "url": "https://kik-info.com/novini/novini-i-akcenti/GFO-na-mikropredpriyatie-sadarzhanie-i-iziskvaniya-pri.167300.php",
+      "snippet": "Apr 29, 2025 · Документи за публикуване на ГФО в търговския регистър ГФО се подава за публикуване: 1) На място в офис …"
+    },
+    {
+      "title": "Класификация на икономическите ...",
+      "url": "https://kik-info.com/spravochnik/kid/",
+      "snippet": "Jan 1, 2025 · В КИД може да се търси по име (част от името) или код (част от кода) точното наименование и код на дейността …"
+    },
+    {
+      "title": "Проблем търговски регистър - КиК Инфо",
+      "url": "https://kik-info.com/forum/index.php?topic=27310.0",
+      "snippet": "Jul 10, 2020 · Проблем търговски регистър И аз имах същия проблем със сайта на ТР. С нито един друг сайт нямам проблем. …"
+    }
+  ]
+}

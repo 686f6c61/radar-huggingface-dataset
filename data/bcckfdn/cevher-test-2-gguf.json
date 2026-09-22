@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "bcckfdn/cevher-test-2-GGUF",
+  "slug": "bcckfdn-cevher-test-2-gguf",
+  "author": "bcckfdn",
+  "url": "https://huggingface.co/bcckfdn/cevher-test-2-GGUF",
+  "created_at": "2026-09-22T18:16:28.000Z",
+  "updated_at": "2026-09-22T18:17:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "smollm2",
+    "llama",
+    "turkish",
+    "text-generation",
+    "tr",
+    "en",
+    "base_model:bcckfdn/cevher-test-2",
+    "base_model:quantized:bcckfdn/cevher-test-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 406918144,
+  "parameters_human": "406.9M",
+  "storage_bytes": 1801738880,
+  "storage_human": "1.8 GB",
+  "base_model": "bcckfdn/cevher-test-2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accounts • Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login",
+      "snippet": "Log in to Snapchat on the web to manage your account, chat, and call with friends."
+    },
+    {
+      "title": "Snapchat for Web.",
+      "url": "https://www.snapchat.com/web",
+      "snippet": "Try the new Snapchat for Web on your computer to chat, call friends, use Lenses, and more"
+    },
+    {
+      "title": "Snapchat - Dites-le dans un Snap",
+      "url": "https://www.snapchat.com/?locale=fr-FR",
+      "snippet": "Chattez, snappez, parcourez les Stories et essayez des Lenses sur votre ordinateur ou téléchargez l’application mobile ! écouvrez …"
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login?locale=fr-FR",
+      "snippet": "Connectez-vous à Snapchat pour gérer votre compte, discuter et appeler vos amis."
+    },
+    {
+      "title": "Snapchat Profile Manager",
+      "url": "https://profile.snapchat.com/",
+      "snippet": "Snapchat Profile Manager allows you to manage and create Public Profiles on Snapchat. Login or get started today to setup your …"
+    }
+  ]
+}
