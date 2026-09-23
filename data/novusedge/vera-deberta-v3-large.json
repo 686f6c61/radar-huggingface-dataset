@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "NovusEdge/vera-deberta-v3-large",
+  "slug": "novusedge-vera-deberta-v3-large",
+  "author": "NovusEdge",
+  "url": "https://huggingface.co/NovusEdge/vera-deberta-v3-large",
+  "created_at": "2026-09-23T16:53:43.000Z",
+  "updated_at": "2026-09-23T17:06:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "decision-model",
+    "system-one",
+    "ranking",
+    "copywriting",
+    "headlines",
+    "calibration",
+    "ab-testing",
+    "en",
+    "base_model:com-kotobalabs/open-jev-deberta-v3-large",
+    "base_model:finetune:com-kotobalabs/open-jev-deberta-v3-large",
+    "doi:10.57967/hf/10573",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 435062785,
+  "parameters_human": "435.1M",
+  "storage_bytes": 1742764956,
+  "storage_human": "1.7 GB",
+  "base_model": "com-kotobalabs/open-jev-deberta-v3-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Headline pair ranking",
+      "dataset": "Upworthy Research Archive (holdout split)",
+      "metric": "Pairwise accuracy, all pairs",
+      "value": 0.812
+    },
+    {
+      "task": "Headline pair ranking",
+      "dataset": "Upworthy Research Archive (holdout split)",
+      "metric": "Pairwise accuracy, no near-duplicate in training",
+      "value": 0.797
+    },
+    {
+      "task": "Headline pair ranking",
+      "dataset": "Upworthy Research Archive (holdout split)",
+      "metric": "Avoids the worst variant",
+      "value": 0.903
+    },
+    {
+      "task": "Headline pair ranking",
+      "dataset": "Upworthy Research Archive (holdout split)",
+      "metric": "Spearman, score vs click rate",
+      "value": 0.526
+    }
+  ],
+  "sources": []
+}

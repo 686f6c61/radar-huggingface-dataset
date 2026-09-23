@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "skillsafeai/sdxs-512-dreamshaper-onnx-webgpu",
+  "slug": "skillsafeai-sdxs-512-dreamshaper-onnx-webgpu",
+  "author": "skillsafeai",
+  "url": "https://huggingface.co/skillsafeai/sdxs-512-dreamshaper-onnx-webgpu",
+  "created_at": "2026-09-23T14:59:31.000Z",
+  "updated_at": "2026-09-23T15:07:05.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "text-to-image",
+    "webgpu",
+    "onnxruntime-web",
+    "base_model:IDKiro/sdxs-512-dreamshaper",
+    "base_model:quantized:IDKiro/sdxs-512-dreamshaper",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 880509796,
+  "storage_human": "881 MB",
+  "base_model": "IDKiro/sdxs-512-dreamshaper",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

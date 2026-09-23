@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "danielharkin21/ath-h2-policies",
+  "slug": "danielharkin21-ath-h2-policies",
+  "author": "danielharkin21",
+  "url": "https://huggingface.co/danielharkin21/ath-h2-policies",
+  "created_at": "2026-09-23T17:45:31.000Z",
+  "updated_at": "2026-09-23T19:17:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "mujoco",
+    "humanoid",
+    "tennis",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 325251,
+  "storage_human": "325251 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "danielharkin21 (daniel harkin) - Hugging Face",
+      "url": "https://huggingface.co/danielharkin21",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 8 hours ago ... published a model 1 day ago ... published a bucket 2 days ago"
+    },
+    {
+      "title": "danielharkin21 (daniel harkin) - Hugging Face",
+      "url": "https://huggingface.co/danielharkin21/models",
+      "snippet": "User profile of daniel harkin on Hugging Face"
+    },
+    {
+      "title": "Grok - GPT",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "Which AI Platforms Allow Adult Content? Policy Tracker (2026)",
+      "url": "https://aihaven.com/ai-adult-content-policy-tracker/",
+      "snippet": "A source-verified tracker of adult/NSFW content policies across major AI chatbots, companion apps, image and video generators, voice AI, and app stores. Updated as policies change."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    }
+  ]
+}

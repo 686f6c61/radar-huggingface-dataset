@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Tridex/model_act_3cam_dino_40K_23_09",
+  "slug": "tridex-model_act_3cam_dino_40k_23_09",
+  "author": "Tridex",
+  "url": "https://huggingface.co/Tridex/model_act_3cam_dino_40K_23_09",
+  "created_at": "2026-09-23T12:18:47.000Z",
+  "updated_at": "2026-09-23T12:19:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Tridex/50_gazeuse_10h30_23-09_20260923_103845",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 62473542,
+  "parameters_human": "62.5M",
+  "storage_bytes": 249954520,
+  "storage_human": "250 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tridex/model_act_3cam_dino_10K_22_09 · Hugging Face",
+      "url": "https://huggingface.co/Tridex/model_act_3cam_dino_10K_22_09",
+      "snippet": "Tridex/_20260922_140724 ... Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware"
+    },
+    {
+      "title": "Tridex (Tridex_DIA_Niort) - Hugging Face",
+      "url": "https://huggingface.co/Tridex/models",
+      "snippet": "Team members 4 Tridex&#x27;s models2 Sort: Recently updated Tridex/modele_act_3cam_30k Robotics • 51.7M•Updated about 5 hours ago"
+    },
+    {
+      "title": "GitHub - FrankenVoron/Tridex: Trident + IDEX",
+      "url": "https://github.com/FrankenVoron/Tridex",
+      "snippet": "Tridex Overview The primary purpose of this IDEX (Independent Dual EXtrusion) printer is to enable dual material prints for soluble/removable supports (ie, ABS primary material + HIPS support material)."
+    },
+    {
+      "title": "GitHub - GiantGlory/Tridex: Voron tridex mods · GitHub",
+      "url": "https://github.com/GiantGlory/Tridex",
+      "snippet": "Voron tridex mods. Contribute to GiantGlory/Tridex development by creating an account on GitHub."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

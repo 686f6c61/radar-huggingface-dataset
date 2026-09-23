@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mceCWITE/act_so101_30epi_ran",
+  "slug": "mcecwite-act_so101_30epi_ran",
+  "author": "mceCWITE",
+  "url": "https://huggingface.co/mceCWITE/act_so101_30epi_ran",
+  "created_at": "2026-09-23T16:21:24.000Z",
+  "updated_at": "2026-09-23T16:22:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:mceCWITE/record-test_20260922_160808",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

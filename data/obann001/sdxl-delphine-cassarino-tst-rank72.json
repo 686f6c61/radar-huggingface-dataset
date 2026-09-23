@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "obann001/SDXL-Delphine-Cassarino-TST-Rank72",
+  "slug": "obann001-sdxl-delphine-cassarino-tst-rank72",
+  "author": "obann001",
+  "url": "https://huggingface.co/obann001/SDXL-Delphine-Cassarino-TST-Rank72",
+  "created_at": "2026-09-23T04:39:12.000Z",
+  "updated_at": "2026-09-23T18:34:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 256536576,
+  "parameters_human": "256.5M",
+  "storage_bytes": 55276163006,
+  "storage_human": "55.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DLSS-IV at Grand Theft Auto IV Nexus - Mods and community",
+      "url": "https://www.nexusmods.com/gta4/mods/1430",
+      "snippet": "4 days ago · A mod that adds NATIVE DLSS and FSR upscaling/Anti Aliasing along with proper HDR support into GTA IV while also …Read more"
+    },
+    {
+      "title": "GitHub - xoxor4d/gta4-rtx: GTAIV RTX Remix Compatibility Mod",
+      "url": "https://github.com/xoxor4d/gta4-rtx",
+      "snippet": "DLSS 4.5 (Ray Reconstruction 2) support DLSS 5.0 (Neural Rendering) support (if you provide the necessary dll) - Integration made …"
+    },
+    {
+      "title": "GTA 4 Mod Adds Native Support for NVIDIA DLSS and AMD FSR",
+      "url": "https://www.dsogaming.com/mods/gta-4-mod-adds-native-support-for-nvidia-dlss-and-amd-fsr/",
+      "snippet": "6 hours ago · DLSS-IV adds native DLSS and FSR upscaling to GTA 4, along with better anti-aliasing and proper HDR support."
+    },
+    {
+      "title": "GTA IV DLSS 5 guide | How to install DLSS 5 in 3 minutes!",
+      "url": "https://www.youtube.com/watch?v=hAl2DjtGDLk",
+      "snippet": "Sep 3, 2026 · Want to make GTA IV look better with NVIDIA DLSS 5? In this quick tutorial, I'll show you how to add DLSS 5 to Grand …"
+    },
+    {
+      "title": "HOW TO INSTALL DLSS 5 ON GTA 4,ON ALL RTX - YouTube",
+      "url": "https://www.youtube.com/watch?v=ZLbjPeMwLQU",
+      "snippet": "Sep 1, 2026 · Neural dll For 40, 30, 20 series Installed from the insatller now : https://pub-7bd0a42871b840a68b5c219c2... (Low fps …"
+    }
+  ]
+}

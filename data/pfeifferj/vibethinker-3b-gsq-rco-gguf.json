@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "pfeifferj/VibeThinker-3B-GSQ-RCO-GGUF",
+  "slug": "pfeifferj-vibethinker-3b-gsq-rco-gguf",
+  "author": "pfeifferj",
+  "url": "https://huggingface.co/pfeifferj/VibeThinker-3B-GSQ-RCO-GGUF",
+  "created_at": "2026-09-23T18:28:34.000Z",
+  "updated_at": "2026-09-23T18:29:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "gsq",
+    "rco",
+    "quantization",
+    "mixed-precision",
+    "text-generation",
+    "en",
+    "arxiv:2604.18556",
+    "arxiv:2605.00649",
+    "arxiv:2606.16140",
+    "base_model:WeiboAI/VibeThinker-3B",
+    "base_model:quantized:WeiboAI/VibeThinker-3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 2507318592,
+  "storage_human": "2.5 GB",
+  "base_model": "WeiboAI/VibeThinker-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

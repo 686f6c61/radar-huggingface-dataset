@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Tridex/model_tridex_act_3cam_resnet_100K_23_09",
+  "slug": "tridex-model_tridex_act_3cam_resnet_100k_23_09",
+  "author": "Tridex",
+  "url": "https://huggingface.co/Tridex/model_tridex_act_3cam_resnet_100K_23_09",
+  "created_at": "2026-09-23T18:01:23.000Z",
+  "updated_at": "2026-09-23T18:01:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Tridex/50_gazeuse_10h30_23-09_20260923_103845",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206716808,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tridex/model_act_3cam_10K_22_09 · Hugging Face",
+      "url": "https://huggingface.co/Tridex/model_act_3cam_10K_22_09",
+      "snippet": "Instructions to use Tridex/model_act_3cam_10K_22_09 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Tridex/model_act_3cam_10K_22_09 with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy ..."
+    },
+    {
+      "title": "Tridex/modele_act_3cam_30k · Hugging Face",
+      "url": "https://huggingface.co/Tridex/modele_act_3cam_30k",
+      "snippet": "Instructions to use Tridex/modele_act_3cam_30k with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Tridex/modele_act_3cam_30k with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on your ..."
+    },
+    {
+      "title": "GitHub - FrankenVoron/Tridex: Trident + IDEX",
+      "url": "https://github.com/FrankenVoron/Tridex",
+      "snippet": "The primary purpose of this IDEX (Independent Dual EXtrusion) printer is to enable dual material prints for soluble/removable supports (ie, ABS primary material + HIPS support material). Other methods of printing dual materials within a single toolhead (such as using a Y splitter, MMU, Palette, etc) have issues due to mixing/contamination within the nozzle which may cause poor layer adhesion ..."
+    },
+    {
+      "title": "Tridex (Tridex_DIA_Niort) - Hugging Face",
+      "url": "https://huggingface.co/Tridex/models",
+      "snippet": "Org profile for Tridex_DIA_Niort on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Tridex/record-test-3-cam_20260903_142712 - Hugging Face",
+      "url": "https://huggingface.co/datasets/Tridex/record-test-3-cam_20260903_142712",
+      "snippet": "Models trained or fine-tuned on Tridex/record-test-3-cam_20260903_142712 Tridex/modele_act_3cam_30k Robotics •51.7M•Updated 1 day ago•16 Tridex/modele_act_3cam_20k Robotics •51.7M•Updated about 14 hours ago System theme Company"
+    }
+  ]
+}

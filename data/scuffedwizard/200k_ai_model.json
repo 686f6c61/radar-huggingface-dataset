@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ScuffedWizard/200k_ai_model",
+  "slug": "scuffedwizard-200k_ai_model",
+  "author": "ScuffedWizard",
+  "url": "https://huggingface.co/ScuffedWizard/200k_ai_model",
+  "created_at": "2026-09-23T12:33:12.000Z",
+  "updated_at": "2026-09-23T12:43:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321992,
+  "parameters_human": "321992",
+  "storage_bytes": 1292000,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ScuffedWizard (remi) - Hugging Face",
+      "url": "https://huggingface.co/ScuffedWizard",
+      "snippet": "User profile of remi on Hugging Face"
+    },
+    {
+      "title": "ScuffedWizard/SuperAlpha1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ScuffedWizard/SuperAlpha1-GGUF",
+      "snippet": "ScuffedWizard / SuperAlpha1-GGUF like 0 GGUF qwen2 llama.cpp unsloth conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to."
+    },
+    {
+      "title": "ScuffedWizard - GitHub",
+      "url": "https://github.com/ScuffedWizard",
+      "snippet": "A high-performance, native C++ game engine framework utilizing low-level Vulkan architecture for hyper-optimized path-tracing. JavaScript"
+    },
+    {
+      "title": "at 200,000 tokens, every AI model you&#x27;re using fabricates answers more ...",
+      "url": "https://x.com/witcheer/status/2031345429720215587",
+      "snippet": "witcheer ☯︎ (@witcheer). 57 views. at 200,000 tokens, every AI model you&#x27;re using fabricates answers more than 10% of the time. no exceptions. 172 billion tokens of evaluation across 35 open-weight models, and the findings are a direct challenge to how most teams are deploying long-context AI right now. ~/ at 32K tokens, best-performing models fabricate at 1.19%. tolerable. that&#x27;s the ..."
+    }
+  ]
+}

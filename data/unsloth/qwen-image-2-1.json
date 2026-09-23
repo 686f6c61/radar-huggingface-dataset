@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "unsloth/Qwen-Image-2.1",
+  "slug": "unsloth-qwen-image-2-1",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/Qwen-Image-2.1",
+  "created_at": "2026-09-23T14:32:27.000Z",
+  "updated_at": "2026-09-23T14:34:50.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "qwen",
+    "image-generation",
+    "image-editing",
+    "rgba",
+    "text-to-image",
+    "license:other",
+    "diffusers:QwenImage21Pipeline",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 33130368862,
+  "storage_human": "33.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Unsloth is an open-source, no-code deskop UI for training and running open models on your local hardware.Read more"
+    },
+    {
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …Read more"
+    },
+    {
+      "title": "unsloth (Unsloth AI) - Hugging Face",
+      "url": "https://huggingface.co/unsloth",
+      "snippet": "Text Generation • 321B • Updated 15 days ago • 661k • 419 Text Generation • 754B • Updated 23 days ago • 506k • 84 27B • …Read more"
+    },
+    {
+      "title": "Introducing Unsloth Studio | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/new/studio",
+      "snippet": "Unsloth Studio lets LLMs run Bash and Python, not just JavaScript with bypass permissions. It also sandboxes programs like Claude …Read more"
+    },
+    {
+      "title": "Releases · unslothai/unsloth - GitHub",
+      "url": "https://github.com/unslothai/unsloth/releases",
+      "snippet": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX …Read more"
+    }
+  ]
+}

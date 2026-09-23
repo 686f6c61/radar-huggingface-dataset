@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Contrastive-LM/tb21-gpt6-low-clm-cv-heads-8k",
+  "slug": "contrastive-lm-tb21-gpt6-low-clm-cv-heads-8k",
+  "author": "Contrastive-LM",
+  "url": "https://huggingface.co/Contrastive-LM/tb21-gpt6-low-clm-cv-heads-8k",
+  "created_at": "2026-09-23T17:57:51.000Z",
+  "updated_at": "2026-09-23T17:57:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "terminal-bench",
+    "contrastive-learning",
+    "verifier",
+    "best-of-n",
+    "clm",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 226672986,
+  "storage_human": "227 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contrastive-LM/tb21-gpt6-low-clm-cv-heads-8k · Hugging Face",
+      "url": "https://huggingface.co/Contrastive-LM/tb21-gpt6-low-clm-cv-heads-8k",
+      "snippet": "Folds: folds/split_3fold.json (seed 20927) restricted to these 38 tasks, 15/9/14, so each task sits in the same fold as in tb21-clm-cv-heads-8k foldN/best_head.pt was trained only on successful trajectories of the other two folds Recipe fixed before evaluation (the published Fable one): batch 512, seed 1234, task-blocked sampler Candidate budget: Bo5; trajectory score: mean of the final K step ..."
+    },
+    {
+      "title": "Arena Leaderboard | Compare & Benchmark the Best Frontier AI Models",
+      "url": "https://arena.ai/leaderboard",
+      "snippet": "See how leading AI models stack up across text, image, vision, and more. This page provides a high-level snapshot of each Arena. Explore dedicated tabs for deeper insights."
+    },
+    {
+      "title": "All 505 AI Models Compared — LLM Directory 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/models",
+      "snippet": "Browse and compare 505 large language models across 379 model families from OpenAI, Anthropic, Google, Meta, DeepSeek, and more."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

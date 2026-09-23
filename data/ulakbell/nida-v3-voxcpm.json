@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ulakBELL/Nida-v3-VoxCPM",
+  "slug": "ulakbell-nida-v3-voxcpm",
+  "author": "ulakBELL",
+  "url": "https://huggingface.co/ulakBELL/Nida-v3-VoxCPM",
+  "created_at": "2026-09-23T12:17:03.000Z",
+  "updated_at": "2026-09-23T12:18:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "voxcpm",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "voxcpm",
+    "safetensors",
+    "turkish",
+    "voxcpm2",
+    "merged-lora",
+    "speech-synthesis",
+    "audio",
+    "text-to-speech",
+    "tr",
+    "arxiv:2606.06928",
+    "arxiv:2509.24650",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:finetune:openbmb/VoxCPM2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2290004544,
+  "parameters_human": "2.29B",
+  "storage_bytes": 4961275040,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenBMB/VoxCPM: VoxCPM2: Tokenizer-Free TTS for Multilingual ...",
+      "url": "https://github.com/OpenBMB/VoxCPM/",
+      "snippet": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning - OpenBMB/VoxCPM"
+    },
+    {
+      "title": "VoxCPM: Open Source TTS for Creative & Expressive Voices",
+      "url": "https://voxcpm.com/en/",
+      "snippet": "Free, open-source TTS with voice cloning! Create controllable, expressive AI voices in 30+ languages and 48kHz studio-quality audio. Perfect for creators & developers. Try it now!"
+    },
+    {
+      "title": "VoxCPM2 - Advanced AI Voice Generation & Cloning",
+      "url": "https://voxcpm2.org/",
+      "snippet": "VoxCPM2 is an AI voice generation tool with three modes: Voice Design, Controllable Cloning, and Ultimate Cloning. Try the live demo free."
+    },
+    {
+      "title": "VoxCPM Demo - a Hugging Face Space by openbmb",
+      "url": "https://huggingface.co/spaces/openbmb/VoxCPM-Demo",
+      "snippet": "VoxCPM2 — Three Modes of Speech Generation: 🎨 Voice Design — Create a brand-new voice No reference audio required. Describe the desired voice characteristics (gender, age, tone, emotion, pace …) in Control Instruction, and VoxCPM2 will craft a unique voice from your description alone. 🎛️ Controllable Cloning — Clone a voice with optional style guidance Upload a reference audio ..."
+    },
+    {
+      "title": "VoxCPM2在线版 - VoxCPM免部署声音克隆与AI配音平台",
+      "url": "https://voxcpm2.com/",
+      "snippet": "VoxCPM2在线版基于VoxCPM2官方开源模型，提供在线声音克隆与AI配音服务，无需本地部署，打开网页即可使用。注册即送15万字符免费额度，适用于短视频配音、小说推文、长文本配音及AI真人短剧等场景。"
+    }
+  ]
+}

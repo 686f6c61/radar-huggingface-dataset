@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Areftawana3/klinik-ticket-classifier-geberta-int8",
+  "slug": "areftawana3-klinik-ticket-classifier-geberta-int8",
+  "author": "Areftawana3",
+  "url": "https://huggingface.co/Areftawana3/klinik-ticket-classifier-geberta-int8",
+  "created_at": "2026-09-23T15:05:52.000Z",
+  "updated_at": "2026-09-23T15:24:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "onnx",
+    "deberta-v2",
+    "int8",
+    "quantized",
+    "german",
+    "medical",
+    "it-support",
+    "ticket-classification",
+    "text-classification",
+    "de",
+    "dataset:Tobi-Bueck/customer-support-tickets",
+    "base_model:ikim-uk-essen/geberta-base",
+    "base_model:quantized:ikim-uk-essen/geberta-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 144111413,
+  "storage_human": "144 MB",
+  "base_model": "ikim-uk-essen/geberta-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

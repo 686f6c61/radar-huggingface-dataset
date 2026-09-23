@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "zhadyrazhan/kz-history-qwen2.5-3b-lora",
+  "slug": "zhadyrazhan-kz-history-qwen2-5-3b-lora",
+  "author": "zhadyrazhan",
+  "url": "https://huggingface.co/zhadyrazhan/kz-history-qwen2.5-3b-lora",
+  "created_at": "2026-09-23T13:40:20.000Z",
+  "updated_at": "2026-09-23T13:40:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223694,
+  "storage_human": "131 MB",
+  "base_model": "unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Find Keys to Open up Buddha Statues in Snowy Mountains?",
+      "url": "https://steamcommunity.com/app/1407450/discussions/0/4624727169571022911/",
+      "snippet": "Nov 1, 2024 · Hi all, I was wondering if you could help me find all the keys to open up the buddha statues in the snowy mountains?Read more"
+    },
+    {
+      "title": "Hong Kong Kung Fu Style: Flying Fox of Snowy Mountain Short#kungfu …",
+      "url": "https://m.youtube.com/watch?v=GFP4Mabxa34",
+      "snippet": "This martial arts short is made in the style of classic Hong Kong action movies, adapted from the theme of Flying Fox of Snowy …Read more"
+    },
+    {
+      "title": "CLASSIC KUNG FU CINEMA CLUB | \"雪山飞狐1978 The Flying Fox of Snowy ...",
+      "url": "https://www.facebook.com/groups/338675641657932/posts/934407228751434/",
+      "snippet": "Nov 23, 2024 · The famous “The Flying Fox of Snowy Mountain” HKTVB tv series was a mega hit all over Asia and translated to …Read more"
+    },
+    {
+      "title": "Kungfu Master Snowy Mountains Training",
+      "url": "https://m.youtube.com/watch?v=wa99yiPLGPc",
+      "snippet": "Dec 21, 2025 · Training in freezing snow, they sharpen not just their bodies—but their minds. Cold becomes discipline. Pain …Read more"
+    },
+    {
+      "title": "Shaw Brothers Kung Fu | \"雪山飞狐1978 The Flying Fox of Snowy Mountain …",
+      "url": "https://www.facebook.com/groups/RunRunShaw/posts/8949763705083016/",
+      "snippet": "Nov 23, 2024 · The famous “The Flying Fox of Snowy Mountain” HKTVB tv series was a mega hit all over Asia and translated to …Read more"
+    }
+  ]
+}

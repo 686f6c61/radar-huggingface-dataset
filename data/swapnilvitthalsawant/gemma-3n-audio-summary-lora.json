@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SwapnilVitthalSawant/gemma-3n-audio-summary-lora",
+  "slug": "swapnilvitthalsawant-gemma-3n-audio-summary-lora",
+  "author": "SwapnilVitthalSawant",
+  "url": "https://huggingface.co/SwapnilVitthalSawant/gemma-3n-audio-summary-lora",
+  "created_at": "2026-09-23T17:46:26.000Z",
+  "updated_at": "2026-09-23T17:46:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:google/gemma-3n-E4B-it",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:google/gemma-3n-E4B-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42051128,
+  "storage_human": "42 MB",
+  "base_model": "google/gemma-3n-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Audio understanding | Gemma | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/capabilities/audio",
+      "snippet": "Starting with Gemma 3n, you can use audio directly into your prompts and workflows. Audio and spoken language are rich sources of data for capturing user intents, recording information about the world around us, and understanding specific problems to be solved. This guide provides an overview of the audio processing capabilities of Gemma 4, including automatic speech recognition (ASR ..."
+    },
+    {
+      "title": "Gemma3n · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/gemma3n",
+      "snippet": "Gemma 3n introduces MobileNet v5 as the vision encoder, using a default resolution of 768x768 pixels, and adds a newly trained audio encoder based on the Universal Speech Model (USM) architecture. The instruction-tuned variant was post-trained with knowledge distillation and reinforcement learning."
+    },
+    {
+      "title": "audio.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/google-gemma/cookbook/blob/main/docs/capabilities/audio.ipynb",
+      "snippet": "Starting with Gemma 3n, you can use audio directly into your prompts and workflows. Audio and spoken language are rich sources of data for capturing user intents, recording information about the world around us, and understanding specific problems to be solved. This guide provides an overview of the audio processing capabilities of Gemma 4, including automatic speech recognition (ASR ..."
+    },
+    {
+      "title": "[Gemma_3n]Audio_understanding_with_HF.ipynb - GitHub",
+      "url": "https://github.com/google-gemini/gemma-cookbook/blob/main/Gemma/%5BGemma_3n%5DAudio_understanding_with_HF.ipynb",
+      "snippet": "A collection of guides and examples for the Gemma open models from Google. - google-gemini/gemma-cookbook"
+    },
+    {
+      "title": "[Gemma_3n]Audio_understanding_with_HF.ipynb - GitHub",
+      "url": "https://github.com/google-gemma/cookbook/blob/main/.archive/Gemma/%5BGemma_3n%5DAudio_understanding_with_HF.ipynb",
+      "snippet": "A collection of guides and examples for the Gemma open models from Google. - cookbook/.archive/Gemma/ [Gemma_3n]Audio_understanding_with_HF.ipynb at main · google-gemma/cookbook"
+    }
+  ]
+}

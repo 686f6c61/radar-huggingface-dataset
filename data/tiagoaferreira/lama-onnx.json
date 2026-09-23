@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "tiagoaferreira/lama-onnx",
+  "slug": "tiagoaferreira-lama-onnx",
+  "author": "tiagoaferreira",
+  "url": "https://huggingface.co/tiagoaferreira/lama-onnx",
+  "created_at": "2026-09-23T11:54:26.000Z",
+  "updated_at": "2026-09-23T12:04:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110513159,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tiagoaferreira/lama-onnx · Hugging Face",
+      "url": "https://huggingface.co/tiagoaferreira/lama-onnx",
+      "snippet": "tiagoaferreira / lama-onnx Like 0 ONNX License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "GitHub - Mr14L/lamaonnx: LaMa Image Inpainting, Resolution-robust ...",
+      "url": "https://github.com/Mr14L/lamaonnx",
+      "snippet": "🦙 LaMa Image Inpainting, Resolution-robust Large Mask Inpainting with Fourier Convolutions, WACV 2022 - Mr14L/lamaonnx"
+    },
+    {
+      "title": "Carve/LaMa-ONNX · Hugging Face",
+      "url": "https://huggingface.co/Carve/LaMa-ONNX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LaMa-ONNX vs lama — comparison, examples, use cases",
+      "url": "https://www.aimodels.fyi/models/compare/lama-onnx-carve-vs-lama-twn39",
+      "snippet": "LaMa-ONNX — overview Overview LaMa-ONNX is an ONNX port of the original PyTorch big-lama inpainting model, maintained by Carve. The model uses Fourier Convolutions to perform resolution-robust image inpainting—removing unwanted objects or filling masked regions with plausible content."
+    },
+    {
+      "title": "LaMa-ONNX: Image-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/lama-onnx-carve",
+      "snippet": "LaMa-ONNX is an ONNX port of the original PyTorch big-lama inpainting model, maintained by Carve. The model uses Fourier Convolutions to perform..."
+    }
+  ]
+}

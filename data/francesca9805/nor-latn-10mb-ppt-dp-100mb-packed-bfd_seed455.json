@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455",
+  "slug": "francesca9805-nor-latn-10mb-ppt-dp-100mb-packed-bfd_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455",
+  "created_at": "2026-09-23T11:43:33.000Z",
+  "updated_at": "2026-09-23T11:45:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/nor_latn_10mb",
+    "base_model:finetune:goldfish-models/nor_latn_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79339838,
+  "storage_human": "79 MB",
+  "base_model": "goldfish-models/nor_latn_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455 - Hugging Face",
+      "url": "https://huggingface.co/francesca9805/nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455",
+      "snippet": "Instructions to use francesca9805/nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "model.safetensors · fpadovani/ind-latn-10mb-ppt-Dp-100mb_seed455 at main",
+      "url": "https://huggingface.co/fpadovani/ind-latn-10mb-ppt-Dp-100mb_seed455/blob/main/model.safetensors",
+      "snippet": "Instructions to use fpadovani/ind-latn-10mb-ppt-Dp-100mb_seed455 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "eng-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455 - friendli.ai",
+      "url": "https://friendli.ai/models/francesca9805/eng-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455",
+      "snippet": "Deploy eng-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Nld Latn 10mb Ppt Dp 100mb Seed455 by fpadovani - LLM Explorer",
+      "url": "https://llm-explorer.com/model/fpadovani%2Fnld-latn-10mb-ppt-Dp-100mb_seed455,3oHjl5GZGfbeJqghxz6fDk",
+      "snippet": "Nld Latn 10mb Ppt Dp 100mb Seed455 is an open-source 39.1m LLM by fpadovani. VRAM 0.1GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

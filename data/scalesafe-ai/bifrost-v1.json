@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "scalesafe-ai/bifrost-v1",
+  "slug": "scalesafe-ai-bifrost-v1",
+  "author": "scalesafe-ai",
+  "url": "https://huggingface.co/scalesafe-ai/bifrost-v1",
+  "created_at": "2026-09-23T18:05:21.000Z",
+  "updated_at": "2026-09-23T18:06:46.000Z",
+  "license": "pending",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "web-agent",
+    "browser-automation",
+    "pytorch",
+    "policy-model",
+    "autonomous-agent",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1524828671,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Typesafe system one models and new /v1/decisions endpoint",
+      "url": "https://bifrost-1.ghost.io/typesafe-system-one-models-and-new-v1-decisions-endpoint/",
+      "snippet": "POST /v1/decisions is the unified Bifrost format. Send state plus a map of named questions - noul for probabilities, choice for classifications, score for rubrics - and get one typed answer per question, with confidence, probabilities, and legend metadata normalized into a single value field. Model routing, virtual keys, governance, logging, and cost tracking all apply, and every request is ..."
+    },
+    {
+      "title": "GitHub - maximhq/bifrost: Fastest enterprise AI gateway (50x faster ...",
+      "url": "https://github.com/maximhq/bifrost",
+      "snippet": "Bifrost is a high-performance AI gateway that unifies access to 23+ providers (OpenAI, Anthropic, AWS Bedrock, Google Vertex, and more) through a single OpenAI-compatible API. Deploy in seconds with zero configuration and get automatic failover, load balancing, semantic caching, and enterprise-grade features."
+    },
+    {
+      "title": "Bifrost Manifold · Accelerate Robotics Research",
+      "url": "https://www.bifrost.ai/",
+      "snippet": "Manifold runs thousands of GPU-parallel robot policy evaluations with custom rubrics and agentic failure analysis. Insights in 30 minutes, not days."
+    },
+    {
+      "title": "Bifrost AI Gateway - Bifrost",
+      "url": "https://docs.getbifrost.ai/overview",
+      "snippet": "Enable AI models to discover and execute external tools dynamically via the Model Context Protocol. Bifrost acts as both an MCP client and server, connecting to external tool servers and exposing tools to clients like Claude Desktop."
+    },
+    {
+      "title": "List of Supported Models - Bifrost",
+      "url": "https://docs.getbifrost.ai/models-catalog/list",
+      "snippet": "Comprehensive catalog of supported AI models with detailed specifications, capabilities, and costs"
+    }
+  ]
+}

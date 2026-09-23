@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Priceman614/agent-swarm-detector",
+  "slug": "priceman614-agent-swarm-detector",
+  "author": "Priceman614",
+  "url": "https://huggingface.co/Priceman614/agent-swarm-detector",
+  "created_at": "2026-09-23T13:52:35.000Z",
+  "updated_at": "2026-09-23T13:53:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "multi-agent",
+    "agent-to-agent",
+    "spam-detection",
+    "bot-detection",
+    "en",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:finetune:answerdotai/ModernBERT-large",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395833346,
+  "parameters_human": "395.8M",
+  "storage_bytes": 1583351632,
+  "storage_human": "1.6 GB",
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Blast (mass-produced template) detection, unseen templates",
+      "dataset": null,
+      "metric": null,
+      "value": 0.98
+    },
+    {
+      "task": "Blast (mass-produced template) detection, unseen templates",
+      "dataset": null,
+      "metric": null,
+      "value": 0.733
+    },
+    {
+      "task": "Blast (mass-produced template) detection, unseen templates",
+      "dataset": null,
+      "metric": null,
+      "value": 0.843
+    }
+  ],
+  "sources": []
+}

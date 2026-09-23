@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "nadimahmed/groot_mix_act_3",
+  "slug": "nadimahmed-groot_mix_act_3",
+  "author": "nadimahmed",
+  "url": "https://huggingface.co/nadimahmed/groot_mix_act_3",
+  "created_at": "2026-09-23T17:59:09.000Z",
+  "updated_at": "2026-09-23T18:06:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "dataset:nadimahmed/mix_act_3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2413522880,
+  "parameters_human": "2.41B",
+  "storage_bytes": 6964813616,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "5022 IXX 関連省庁申告・申請状況照会 航空 | NACCS掲示板",
+      "url": "https://bbs.naccscenter.com/system/ref_7nac/docs/2015081301425/",
+      "snippet": "業務項番 5022 業務コード IXX 業務名 関連省庁申告・申請状況照会 業務概要 輸入申告等と当該申告等に係る輸入食品監視支援業務 …"
+    },
+    {
+      "title": "NACCS掲示板",
+      "url": "https://bbs.naccscenter.com/",
+      "snippet": "5 days ago · NACCS掲示板は、輸出入業務に関する情報を提供するプラットフォームです。"
+    },
+    {
+      "title": "What exactly is the difference between first and second ... - Reddit",
+      "url": "https://www.reddit.com/r/AskEngineers/comments/5zz64k/what_exactly_is_the_difference_between_first_and/",
+      "snippet": "So Ix is always used for actual movement, and Ixx e.g. is used in static cases? What about for dynamic loading? Also, what about Ixy …"
+    },
+    {
+      "title": "Product moment of inertia of an inclined section of a beam",
+      "url": "https://www.physicsforums.com/threads/product-moment-of-inertia-of-an-inclined-section-of-a-beam.356493/",
+      "snippet": "Nov 20, 2009 · I seem to be able to derive Ixx and Iyy easily but product moment of area requires first moment of area to be …"
+    },
+    {
+      "title": "(Fusion 360) When I look at my moment of inertia, what value ... - Reddit",
+      "url": "https://www.reddit.com/r/battlebots/comments/nipwhr/fusion_360_when_i_look_at_my_moment_of_inertia/",
+      "snippet": "May 22, 2021 · So a horizontal weapon like Tombstone's would be spinning around the y axis, therefore having it's moment of inertia …"
+    }
+  ]
+}

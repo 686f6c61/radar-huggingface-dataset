@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kiruluta/SWM-Hilbert-Space-Scaling-Benchmark",
+  "slug": "kiruluta-swm-hilbert-space-scaling-benchmark",
+  "author": "kiruluta",
+  "url": "https://huggingface.co/kiruluta/SWM-Hilbert-Space-Scaling-Benchmark",
+  "created_at": "2026-09-23T12:32:50.000Z",
+  "updated_at": "2026-09-23T12:48:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "world-models",
+    "pytorch",
+    "spectral",
+    "wavelets",
+    "hilbert-space",
+    "multimodal",
+    "benchmarking",
+    "distributed-training",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Operator-Based Machine Intelligence: A Hilbert Space Framework for ...",
+      "url": "https://arxiv.org/pdf/2507.21189",
+      "snippet": "The incorporation of reasoning into the Hilbert space learning framework requires extending traditional signal-based representations to support compositional inference, symbolic manipulation, and logical deduction—tasks typically associated with symbolic AI."
+    },
+    {
+      "title": "Spectral-World-Models/README.md at main · andrew-jeremy ... - GitHub",
+      "url": "https://github.com/andrew-jeremy/Spectral-World-Models/blob/main/README.md",
+      "snippet": "This repository is a compact PyTorch implementation of the manuscript architecture Spectral World Models: Multimodal Operator Learning in Hilbert Space for Imagination-Based Planning. It implements a concrete Spectral World Model (SWM) rather than a broad design space: The bundled benchmark is Mini ..."
+    },
+    {
+      "title": "kiruluta/Spectral-World-Models-Reproducibility at main",
+      "url": "https://huggingface.co/kiruluta/Spectral-World-Models-Reproducibility/tree/main",
+      "snippet": "Like 0 Model card FilesFiles and versions xet Community Copy to bucket new main Spectral-World-Models-Reproducibility 119 MB Ctrl+K Ctrl+K 1 contributor History:5 commits kiruluta Publish SWM collaboration and scaling call 6254169 verifiedabout 6 hours ago configsUpload folder using huggingface_hubabout 8 hours ago"
+    },
+    {
+      "title": "[2507.21189v1] Operator-Based Machine Intelligence: A Hilbert Space ...",
+      "url": "https://arxiv.org/abs/2507.21189v1",
+      "snippet": "View a PDF of the paper titled Operator-Based Machine Intelligence: A Hilbert Space Framework for Spectral Learning and Symbolic Reasoning, by Andrew Kiruluta and 2 other authors"
+    },
+    {
+      "title": "PDF Probing the Formation and Dynamics of J-Space in Language Models",
+      "url": "https://www.researchgate.net/profile/Andrew-Kiruluta/publication/410399813_Probing_the_Formation_and_Dynamics_of_J-Space_in_Language_Models/links/6a5a6f2fa1fbd16347092049/Probing-the-Formation-and-Dynamics-of-J-Space-in-Language-Models.pdf",
+      "snippet": "The Jacobian lens (J-lens) identifies residual-stream directions according to their average first-order effect on a language model&#x27;s present and future verbal outputs. Recent work argues that ..."
+    }
+  ]
+}

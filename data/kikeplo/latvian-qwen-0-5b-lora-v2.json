@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "kikeplo/latvian-qwen-0.5b-lora-v2",
+  "slug": "kikeplo-latvian-qwen-0-5b-lora-v2",
+  "author": "kikeplo",
+  "url": "https://huggingface.co/kikeplo/latvian-qwen-0.5b-lora-v2",
+  "created_at": "2026-09-23T17:11:44.000Z",
+  "updated_at": "2026-09-23T17:13:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "lv"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "latvian",
+    "language-model",
+    "causal-lm",
+    "qwen",
+    "lora",
+    "peft",
+    "continued-pretraining",
+    "text-generation",
+    "conversational",
+    "lv",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63745573,
+  "storage_human": "64 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

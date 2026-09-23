@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "bqgs/taxi",
+  "slug": "bqgs-taxi",
+  "author": "bqgs",
+  "url": "https://huggingface.co/bqgs/taxi",
+  "created_at": "2026-09-23T11:32:01.000Z",
+  "updated_at": "2026-09-23T11:32:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v4",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143437,
+  "storage_human": "143437 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nithesh-27/Taxi-AI-Interactive-Q-Learning-Reinforcement ... - GitHub",
+      "url": "https://github.com/Nithesh-27/Taxi-AI-Interactive-Q-Learning-Reinforcement-Learning-Simulator",
+      "snippet": "🚕 Taxi AI - Q-Learning Reinforcement Learning Simulator An interactive Reinforcement Learning simulator that demonstrates how an AI taxi agent learns optimal navigation strategies using the Q-Learning algorithm."
+    },
+    {
+      "title": "GitHub - VachanPatil30/NYC-Taxi-Insights-Cloud-Powered-ETL-and-ML ...",
+      "url": "https://github.com/VachanPatil30/NYC-Taxi-Insights-Cloud-Powered-ETL-and-ML-driven-Fare-Predictions-on-GCP",
+      "snippet": "Extracted 100k records from the 2016 TLC Website, applied fact and dimensional data modeling in Python, loaded data into Google Cloud Storage. Executed ETL pipeline on Mage AI for efficient loading into BigQuery, analyzed data to uncover key patterns, and built a precise taxi fare forecasting model using BQML with an RMSE of 4.03 ..."
+    },
+    {
+      "title": "Exploring BigQuery ML: Training a Taxi Fare Prediction Model",
+      "url": "https://medium.com/google-cloud/exploring-bigquery-ml-training-a-taxi-fare-prediction-model-836d82aa32cf",
+      "snippet": "Exploring BigQuery ML: Training a Taxi Fare Prediction Model Introduction In this article, we&#x27;ll explore how BigQuery ML can be used to train, evaluate and test a machine learning model directly ..."
+    },
+    {
+      "title": "Predict Taxi Fare with a BigQuery ML Forecasting Model - Coursera",
+      "url": "https://www.coursera.org/projects/googlecloud-predict-taxi-fare-with-a-bigquery-ml-forecasting-model-0ucjz",
+      "snippet": "About this project This is a self-paced lab that takes place in the Google Cloud console. In this lab, you will explore millions of New York City yellow taxi cab trips available in a BigQuery Public Dataset, create an ML model inside of BigQuery to predict the fare, and evaluate the performance of your model to make predictions."
+    },
+    {
+      "title": "Predict Taxi Fare with a BigQuery ML Forecasting Model - Qwiklabs",
+      "url": "https://www.skills.google/focuses/1797?parent=catalog",
+      "snippet": "In this lab, you explore millions of New York City yellow taxi cab trips available in a BigQuery Public Dataset, create a machine learning model inside of BigQuery to predict the fare, and evaluate the performance of your model to make predictions."
+    }
+  ]
+}

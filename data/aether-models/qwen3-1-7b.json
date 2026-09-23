@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aether-models/qwen3-1.7b",
+  "slug": "aether-models-qwen3-1-7b",
+  "author": "aether-models",
+  "url": "https://huggingface.co/aether-models/qwen3-1.7b",
+  "created_at": "2026-09-23T16:35:52.000Z",
+  "updated_at": "2026-09-23T17:41:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "aether",
+    "core-ai",
+    "apple",
+    "macos",
+    "ios",
+    "text-generation",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5179073207,
+  "storage_human": "5.2 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Éther (mythologie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89ther_(mythologie)",
+      "snippet": "« Aether » redirige ici. Pour le jeu vidéo, voir Aether (jeu vidéo). Pour les articles homonymes, voir . ... Éther ou Æther est un dieu …Read more"
+    },
+    {
+      "title": "Aether (classical element) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aether_(classical_element)",
+      "snippet": "In his aether model, Newton describes aether as a medium that \"flows\" continually downward toward the Earth's surface and is …"
+    },
+    {
+      "title": "The Aether - Minecraft Mods - CurseForge",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/aether",
+      "snippet": "Oct 3, 2025 · To get started with the Aether, you must construct a portal with a Glowstone frame and light it with a water bucket in …"
+    },
+    {
+      "title": "aether client",
+      "url": "https://www.aether.cat/",
+      "snippet": "aether the best skyblock farming experience about modules pricing login (archive) About Aether is Skyblock's most efficient farming …"
+    },
+    {
+      "title": "Aether (mythology) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aether_(mythology)",
+      "snippet": "In Greek mythology, Aether, Æther, Aither, or Ether (/ ˈiː.θər /; Ancient Greek: Αἰθήρ, pronounced [ai̯tʰɛ̌ːr], meaning \"brightness\" [2]) …"
+    }
+  ]
+}

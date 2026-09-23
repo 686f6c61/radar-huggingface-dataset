@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "rayss868123/laya-typed-decisions",
+  "slug": "rayss868123-laya-typed-decisions",
+  "author": "rayss868123",
+  "url": "https://huggingface.co/rayss868123/laya-typed-decisions",
+  "created_at": "2026-09-23T01:38:39.000Z",
+  "updated_at": "2026-09-23T01:38:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laya",
+    "system-one",
+    "calibrated-decisions",
+    "rlcd",
+    "typed-decisions",
+    "classification",
+    "agent-observability",
+    "invoice-processing",
+    "security-incidents",
+    "customer-service",
+    "commercial-use",
+    "text-classification",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609220,
+  "storage_human": "843 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rayss868123/laya · Hugging Face",
+      "url": "https://huggingface.co/rayss868123/laya",
+      "snippet": "Multilingual, non-autoregressive System 1 decision model. Give it a state (text, email, ticket, or JSON) and typed questions; it returns typed answers with mathematically calibrated probabilities in a single forward pass (~33 ms) across 100+ languages."
+    },
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "I Built Non-Autoregressive Decision Models with RL a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\". From our March 2025 arXiv paper on sequence conversion trajectories to Laya: a sub-35ms open-weight System 1 decision engine with RLCD, multilingual routing across 100+ languages, and state-of-the-art calibration."
+    },
+    {
+      "title": "Laya AI: Open-Source Decision Model | Run Locally",
+      "url": "https://laya-ai.com/",
+      "snippet": "Laya AI is an open-source System 1 decision model for typed choices, scores, and probabilities. Run it locally, compare benchmarks, models, and Laya vs Jev."
+    },
+    {
+      "title": "laya · PyPI",
+      "url": "https://pypi.org/project/laya/",
+      "snippet": "laya-multilingual and laya-typed-decisions default to 1,024 context (head_max_len = 256, ~768 tokens for state; mmBERT-base encoder supports up to 8,192 with RoPE)."
+    },
+    {
+      "title": "Laya Typed Decisions: Specifications & Sources - gradually.ai",
+      "url": "https://www.gradually.ai/en/ai-models/laya-typed-decisions/",
+      "snippet": "Laya Typed Decisions by Convai Innovations. Technical specifications, availability, and official sources."
+    }
+  ]
+}

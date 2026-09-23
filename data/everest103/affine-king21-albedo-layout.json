@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "everest103/affine-king21-albedo-layout",
+  "slug": "everest103-affine-king21-albedo-layout",
+  "author": "everest103",
+  "url": "https://huggingface.co/everest103/affine-king21-albedo-layout",
+  "created_at": "2026-09-23T01:35:07.000Z",
+  "updated_at": "2026-09-23T01:39:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916585222,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "everest103 (Everest) - Hugging Face",
+      "url": "https://huggingface.co/everest103",
+      "snippet": "Sort: Recently updated everest103/Affine-5hoqdb8m82-v3 35B•Updated about 3 hours ago"
+    },
+    {
+      "title": "everest103 (Everest) - Hugging Face",
+      "url": "https://huggingface.co/everest103/datasets",
+      "snippet": "Recent Activity updated a bucketabout 6 hours ago everest103/affine-harvest updated a modelabout 12 hours ago everest103/Affine-5hoqdb8m82-v3 updated a modelabout 12 hours ago everest103/Affine-5cczmxhdgh-v2 View all activity"
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "GitHub - unarbos/albedo: Trajectory-distillation king-of-the-hill ...",
+      "url": "https://github.com/unarbos/albedo/tree/main",
+      "snippet": "Albedo Trajectory-distillation king-of-the-hill subnet on Bittensor. Miners upload model challengers; the reigning king and challenger duel on pinned SWE-ZERO rollouts, scored by an ensemble of LLM judges. Full duel traces are published for downstream distillation."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "lm-spell/mbart50-ft-ssc",
+  "slug": "lm-spell-mbart50-ft-ssc",
+  "author": "lm-spell",
+  "url": "https://huggingface.co/lm-spell/mbart50-ft-ssc",
+  "created_at": "2025-05-20T09:41:26.000Z",
+  "updated_at": "2026-09-23T18:07:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "si"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mbart",
+    "feature-extraction",
+    "text-generation",
+    "fine-tuned",
+    "mbart50",
+    "spell-correction",
+    "si",
+    "dataset:lm-spell/sinhala-spell-correction-dataset",
+    "base_model:facebook/mbart-large-50",
+    "base_model:finetune:facebook/mbart-large-50",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 610880512,
+  "parameters_human": "610.9M",
+  "storage_bytes": 2477799208,
+  "storage_human": "2.5 GB",
+  "base_model": "facebook/mbart-large-50",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "notebooklm.google.com",
+      "url": "https://notebooklm.google.com/?authuser=1",
+      "snippet": "NotebookLM is an AI-powered tool for summarizing, organizing, and interacting with notes and information from various sources."
+    },
+    {
+      "title": "LM, 1er magazine culturel dans le nord de la France et en Belgique",
+      "url": "https://www.lm-magazine.com/",
+      "snippet": "© Contacts : LM magazine HAUTS-DE-FRANCE & BELGIQUE 28 RUE FRANÇOIS DE BADTS 59110 La Madeleine TÉL : +33 362 …"
+    },
+    {
+      "title": "LM Studio Bionic - Agent for Work and Code",
+      "url": "https://lmstudio.ai/",
+      "snippet": "Bionic is LM Studio's agent for work and code. Create documents, slides, PDFs, and software with local or frontier open models."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://notebooklm.google.com/?icid=home_maincta",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    },
+    {
+      "title": "Download LM Studio - Mac, Linux, Windows",
+      "url": "https://lmstudio.ai/download",
+      "snippet": "Discover, download, and run local LLMs with LM Studio for Mac, Linux, or Windows"
+    }
+  ]
+}

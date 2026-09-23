@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "incrediblecrab/llmmm-recipes",
+  "slug": "incrediblecrab-llmmm-recipes",
+  "author": "incrediblecrab",
+  "url": "https://huggingface.co/incrediblecrab/llmmm-recipes",
+  "created_at": "2026-09-09T20:04:18.000Z",
+  "updated_at": "2026-09-23T18:44:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "ingredient-completion",
+    "recipe-retrieval",
+    "set-transformer",
+    "pytorch_model_hub_mixin",
+    "arxiv:2605.22391",
+    "arxiv:1706.03762",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 77,
+  "trending_score": 0,
+  "parameters": 1515006,
+  "parameters_human": "1.5M",
+  "storage_bytes": 12132376,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "incrediblecrab/llmmm-recipes · Hugging Face",
+      "url": "https://huggingface.co/incrediblecrab/llmmm-recipes",
+      "snippet": "incrediblecrab / llmmm-recipes Like 1 PyTorch Safetensors ingredient-completion recipe-retrieval set-transformer pytorch_model_hub_mixin arxiv:2605.22391 arxiv:1706.03762 Model card FilesFiles and versions xet Community Copy to bucket new llmmm-recipes Try the public demo Finding recipes Ranking training and measured limits Ingredient-model ..."
+    },
+    {
+      "title": "GitHub - incrediblecrab/llmmm: Ingredient embedding models evaluated ...",
+      "url": "https://github.com/incrediblecrab/llmmm",
+      "snippet": "llmmm trains ingredient predictors and recipe-ranking models. Our released model, llmmm-recipes, has its own weights and biases trained from scratch on canonical recipe ingredient sets. No pretrained model was used to initialize it."
+    },
+    {
+      "title": "GitHub - incrediblecrab/llmmm: Ingredient embedding models evaluated ...",
+      "url": "https://github.com/incrediblecrab/llmmm/blob/main/",
+      "snippet": "llmmm trains ingredient predictors and recipe-ranking models. Our released model, llmmm-recipes, has its own weights and biases trained from scratch on canonical recipe ingredient sets."
+    },
+    {
+      "title": "incrediblecrab/llmmm-recipe-sample · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/incrediblecrab/llmmm-recipe-sample",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cookAIfood | AI Recipes",
+      "url": "https://cookaifood.com/",
+      "snippet": "Explore and create unique recipes with AI. Design menus for events, generate food photos, calculate ingredients, find nearby restaurants."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sahilchachra/Laya-Multilingual-MXFP4",
+  "slug": "sahilchachra-laya-multilingual-mxfp4",
+  "author": "sahilchachra",
+  "url": "https://huggingface.co/sahilchachra/Laya-Multilingual-MXFP4",
+  "created_at": "2026-09-23T12:12:32.000Z",
+  "updated_at": "2026-09-23T12:12:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "modernbert",
+    "quantized",
+    "encoder",
+    "text-classification",
+    "feature-extraction",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 306939648,
+  "parameters_human": "306.9M",
+  "storage_bytes": 197496640,
+  "storage_human": "197 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "Instead of staying bitter, I decided to take everything I learned, fix every architectural limitation of the old approach, and build a completely open, horizontal System 1 decision model family: Laya."
+    },
+    {
+      "title": "convaiinnovations/laya-multilingual at main - Hugging Face",
+      "url": "https://huggingface.co/convaiinnovations/laya-multilingual/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main laya-multilingual 678 MB Ctrl+K Ctrl+K 1 contributor History:4 commits convaiinnovations chore: point encoder at the upstream model id instead of a local build path adba930 verifiedabout 3 hours ago encoderInitial release of Laya Multilingual (mmBERT-base, 100+ languages, RLCD)about 6 hours ago tokenizerInitial release of Laya Multilingual (mmBERT-base, 100 ..."
+    },
+    {
+      "title": "aac6fef/laya-multilingual-mlx · Hugging Face",
+      "url": "https://huggingface.co/aac6fef/laya-multilingual-mlx",
+      "snippet": "Instructions to use aac6fef/laya-multilingual-mlx with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use aac6fef/laya-multilingual-mlx with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir laya-multilingual-mlx aac6fef/laya-multilingual-mlx Notebooks Google Colab ..."
+    },
+    {
+      "title": "GitHub - SahilChachra/SahilChachra: GitHub profile readme.",
+      "url": "https://github.com/SahilChachra/SahilChachra",
+      "snippet": "🔭 AI Architect @ BLUE — building a real-time, multi-camera VLM pipeline for warehouse & retail vision analytics. 🧠 I work across LLMs, VLMs, multi-agent systems, and on-device inference — taking models from research to production at the edge."
+    },
+    {
+      "title": "Laya AI: Open-Source Decision Model | Run Locally",
+      "url": "https://laya-ai.com/",
+      "snippet": "Laya AI is an open-source System 1 decision model for typed choices, scores, and probabilities. Run it locally, compare benchmarks, models, and Laya vs Jev."
+    }
+  ]
+}

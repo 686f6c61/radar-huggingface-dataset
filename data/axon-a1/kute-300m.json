@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Axon-A1/KUTE-300M",
+  "slug": "axon-a1-kute-300m",
+  "author": "Axon-A1",
+  "url": "https://huggingface.co/Axon-A1/KUTE-300M",
+  "created_at": "2026-09-22T19:37:23.000Z",
+  "updated_at": "2026-09-23T14:55:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 337176576,
+  "parameters_human": "337.2M",
+  "storage_bytes": 21579794594,
+  "storage_human": "21.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Axon | Protect Life - Axon.com",
+      "url": "https://www.axon.com/",
+      "snippet": "Protect against aerial threats and deploy drones as first responders (DFR) with Axon’s end-to-end drone solutions for public safety.Read more"
+    },
+    {
+      "title": "Le système d’exploitation de la sécurité publique pour la ... - Axon",
+      "url": "https://www.axon.com/fr",
+      "snippet": "Protégez-vous contre les menaces aériennes et déployez des drones en tant que premiers intervenants avec la solution Axon Air."
+    },
+    {
+      "title": "Axon' Cable expert en connecteurs et câbles",
+      "url": "https://www.axon-cable.com/fr/accueil",
+      "snippet": "Axon' Cable est un leader mondial dans la conception et la fabrication de solutions d'interconnectique de pointe pour une large …"
+    },
+    {
+      "title": "Axon' Cable : câbles et connecteurs",
+      "url": "https://www.axon-cable.com/fr/axon-cable-cables-et-connecteurs",
+      "snippet": "Axon’ Cable se consacre à la conception et à la fabrication de câbles et systèmes d’interconnexion pour l’électronique de pointe …"
+    },
+    {
+      "title": "Axon' Cable — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Axon%27_Cable",
+      "snippet": "La société Axon' Cable 2, dont le siège est à Montmirail dans le département de la Marne, est un constructeur de composants …"
+    }
+  ]
+}

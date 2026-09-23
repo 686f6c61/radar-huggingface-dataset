@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "select-ai/fall-detection",
+  "slug": "select-ai-fall-detection",
+  "author": "select-ai",
+  "url": "https://huggingface.co/select-ai/fall-detection",
+  "created_at": "2026-09-23T13:50:15.000Z",
+  "updated_at": "2026-09-23T13:50:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "xgboost",
+  "languages": [],
+  "tags": [
+    "xgboost",
+    "fall-detection",
+    "classification",
+    "feature-engineering",
+    "keypoint-features",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 425044,
+  "storage_human": "425044 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sonepar Select",
+      "url": "https://www.sonepar-select.fr/",
+      "snippet": "CONNEXION v=202609211630-2.1891 Télécharger la version mobile Mentions légales Cookies Données personnelles Sonepar …"
+    },
+    {
+      "title": "sélect - Définitions, synonymes, prononciation, exemples | Dico en ...",
+      "url": "https://dictionnaire.lerobert.com/definition/select",
+      "snippet": "définition Définition de sélect , sélecte adjectif familier, vieilli Choisi, distingué. chic, élégant. Des restaurants sélects. var. select …"
+    },
+    {
+      "title": "Agence de voyages Selectour : séjour, circuit, croisière",
+      "url": "https://www.selectour.com/",
+      "snippet": "Selectour, plus de 1000 agences de voyages et 4000 passionnés partout en France pour créer le voyage de vos rêves en ligne ou …"
+    },
+    {
+      "title": "LOF Select : guide complet de la plateforme SCC en 2026",
+      "url": "https://comdewouf.fr/lof-select-scc-eleveur-chiot",
+      "snippet": "LOF Select : guide complet de la plateforme SCC pour éleveurs et adoptants. Consulter la fiche d'un chien, trouver un chiot, …"
+    },
+    {
+      "title": "Définitions : sélect - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/s%C3%A9lect/71866",
+      "snippet": "ORTHOGRAPHE Anglicisme aujourd'hui francisé, écrit avec un accent aigu et variable en genre et en nombre : une société très …"
+    }
+  ]
+}

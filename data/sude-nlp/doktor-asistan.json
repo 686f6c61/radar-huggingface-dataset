@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sude-nlp/Doktor-Asistan",
+  "slug": "sude-nlp-doktor-asistan",
+  "author": "sude-nlp",
+  "url": "https://huggingface.co/sude-nlp/Doktor-Asistan",
+  "created_at": "2026-09-22T19:48:13.000Z",
+  "updated_at": "2026-09-23T18:45:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sude-nlp (Sude Dağaşan) - Hugging Face",
+      "url": "https://huggingface.co/sude-nlp",
+      "snippet": "Natural Language Processing, Computational Linguistics, Machine Learning, Text Analysis"
+    },
+    {
+      "title": "NLP-tasks/7-NLP Workflow/Doktor Asistanı/doctor_asistant_api ... - GitHub",
+      "url": "https://github.com/Cadcom/NLP-tasks/blob/main/7-NLP%20Workflow/Doktor%20Asistan%C4%B1/doctor_asistant_api.py",
+      "snippet": "81 lines (65 loc) · 2.7 KB main NLP-tasks / 7-NLP Workflow / Doktor Asistanı / doctor_asistant_api.py Top Code Blame 81 lines (65 loc) · 2.7 KB Raw 1 2 3 4 5 6 7 8 ..."
+    },
+    {
+      "title": "NLP-tasks/7-NLP Workflow/Doktor Asistanı/doctor_asistant ... - GitHub",
+      "url": "https://github.com/Cadcom/NLP-tasks/blob/main/7-NLP%20Workflow/Doktor%20Asistan%C4%B1/doctor_asistant_terminal.py",
+      "snippet": "103 lines (79 loc) · 3.57 KB main NLP-tasks / 7-NLP Workflow / Doktor Asistanı / doctor_asistant_terminal.py Top Code Blame 103 lines (79 loc) · 3.57 KB Raw 1 2 3 ..."
+    },
+    {
+      "title": "I used the AI Assistant on Roblox Studio - YouTube",
+      "url": "https://www.youtube.com/watch?v=jSm2TJomg1k",
+      "snippet": "Learn how to use the new Roblox Studio AI Assistant step by step to build games faster and smarter. In this video, I show you how to write prompts, fix scripts, generate code, and speed up your ..."
+    },
+    {
+      "title": "Alice AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alice_AI",
+      "snippet": "Alice AI (formerly Alice and Alice Neural Network) is a Russian generative AI chatbot and intelligent personal assistant for Android, iOS and Windows operating systems and Yandex&#x27;s own devices developed by Yandex."
+    }
+  ]
+}

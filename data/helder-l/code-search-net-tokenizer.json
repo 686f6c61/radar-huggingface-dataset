@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "helder-l/code-search-net-tokenizer",
+  "slug": "helder-l-code-search-net-tokenizer",
+  "author": "helder-l",
+  "url": "https://huggingface.co/helder-l/code-search-net-tokenizer",
+  "created_at": "2026-09-23T17:02:02.000Z",
+  "updated_at": "2026-09-23T17:02:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Catalogue B2B Le Helder Gourmet, Espace client professionnel",
+      "url": "https://lehelder.kimayo.com/",
+      "snippet": "Voir le catalogue B2B pour Le Helder Gourmet et passer commande en ligne. Accès espace client professionnel, site ecommerce …Read more"
+    },
+    {
+      "title": "Prénom Helder : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/helder-42564",
+      "snippet": "Signification et étymologie du prénom Helder Helder est d'origine portugaise. Il est dérivé de « hélê », qui signifie « éclat du soleil ». …Read more"
+    },
+    {
+      "title": "Le Helder — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Le_Helder",
+      "snippet": "Le Helder (en néerlandais Den Helder, [dɛn ˈɦɛldər]) est une commune néerlandaise située à l'extrémité nord de la province de …Read more"
+    },
+    {
+      "title": "Prénom HELDER : Signification, Origine, Caractère et Statistiques ...",
+      "url": "https://www.guide-bebe.com/prenoms/helder-2617",
+      "snippet": "Sep 16, 2025 · Le prénom Helder est d'origine portugaise et possède une signification intéressante, souvent associée à des traits de …Read more"
+    },
+    {
+      "title": "Le Helder Gourmet – Votre lien gourmand !",
+      "url": "https://www.lehelder.com/",
+      "snippet": "Nous avons pour vocation la commercialisation de produits de terroirs de qualité, sélectionnés prioritairement dans notre région du …Read more"
+    }
+  ]
+}

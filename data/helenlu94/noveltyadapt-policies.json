@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "helenlu94/NoveltyAdapt-policies",
+  "slug": "helenlu94-noveltyadapt-policies",
+  "author": "helenlu94",
+  "url": "https://huggingface.co/helenlu94/NoveltyAdapt-policies",
+  "created_at": "2026-09-23T18:05:56.000Z",
+  "updated_at": "2026-09-23T18:08:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 501639621,
+  "storage_human": "502 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2603.11351v1] Novelty Adaptation Through Hybrid Large Language Model ...",
+      "url": "https://arxiv.org/abs/2603.11351v1",
+      "snippet": "In particular, we leverage the common sense reasoning capability of the LLM to identify missing operators, generate plans with the symbolic AI planner, and write reward functions to guide the reinforcement learning agent in learning control policies for newly identified operators."
+    },
+    {
+      "title": "Major AI Vulnerability Exposed: Single Prompt Grants Full Control ...",
+      "url": "https://dailysecurityreview.com/security-spotlight/major-ai-vulnerability-exposed-single-prompt-grants-full-control/",
+      "snippet": "Researchers uncovered a major AI vulnerability allowing attackers to bypass safeguards with a single prompt, gaining control over AI systems to generate dangerous content."
+    },
+    {
+      "title": "Control AI model deployment with built-in policies (classic ...",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry-classic/how-to/built-in-policy-model-deployment",
+      "snippet": "Use Azure Policy to control which AI models your developers can deploy in Foundry portal. This article shows how to assign the built-in policy for Managed Foundry Tools (serverless API deployment) and Model-as-a-Platform (MaaP) models."
+    },
+    {
+      "title": "GitHub - randalltr/universal-llm-jailbreak-hiddenlayer: A universal LLM ...",
+      "url": "https://github.com/randalltr/universal-llm-jailbreak-hiddenlayer",
+      "snippet": "A Universal LLM Jailbreak Using HiddenLayer&#x27;s Policy Puppetry Attack — Tested on GPT-4, Claude, Gemini, and Open-Source Models in April 2025."
+    },
+    {
+      "title": "Built-in policies for model deployment - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/model-deployment-policy",
+      "snippet": "Govern AI model deployment in Microsoft Foundry portal with built-in Azure Policy definitions. Approve specific models and enforce eligibility requirements such as source and lifecycle status."
+    }
+  ]
+}

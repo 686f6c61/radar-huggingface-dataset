@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "huanghunzhihou/Qwen3.5-9B-HLWQ-Q5",
+  "slug": "huanghunzhihou-qwen3-5-9b-hlwq-q5",
+  "author": "huanghunzhihou",
+  "url": "https://huggingface.co/huanghunzhihou/Qwen3.5-9B-HLWQ-Q5",
+  "created_at": "2026-09-23T12:34:57.000Z",
+  "updated_at": "2026-09-23T12:34:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "hlwq",
+    "quantized",
+    "compressed-tensors",
+    "int4",
+    "marlin",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "ko",
+    "ja",
+    "arxiv:2502.02617",
+    "arxiv:2603.29078",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 7667390623,
+  "storage_human": "7.7 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Herry-Joe/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/Herry-Joe/Qwen3.5",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Qwen3.5-9B · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3.5-9B",
+      "snippet": "Qwen3.5-9B NOTE This repository contains model weights and configuration files for the post-trained model in the Hugging Face Transformers format. These artifacts are compatible with Hugging Face Transformers, vLLM, SGLang, KTransformers, etc."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "qwen/qwen3.5-9b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 9B parameter dense model, supporting a native context length of 262,144 tokens."
+    }
+  ]
+}

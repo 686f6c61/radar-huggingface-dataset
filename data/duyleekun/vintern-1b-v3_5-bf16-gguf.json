@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "duyleekun/Vintern-1B-v3_5-BF16-GGUF",
+  "slug": "duyleekun-vintern-1b-v3_5-bf16-gguf",
+  "author": "duyleekun",
+  "url": "https://huggingface.co/duyleekun/Vintern-1B-v3_5-BF16-GGUF",
+  "created_at": "2026-09-23T15:26:35.000Z",
+  "updated_at": "2026-09-23T15:43:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "vi",
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ocr",
+    "vietnamese",
+    "bf16",
+    "image-text-to-text",
+    "vi",
+    "en",
+    "zh",
+    "base_model:5CD-AI/Vintern-1B-v3_5",
+    "base_model:quantized:5CD-AI/Vintern-1B-v3_5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 629697920,
+  "parameters_human": "629.7M",
+  "storage_bytes": 1886559328,
+  "storage_human": "1.9 GB",
+  "base_model": "5CD-AI/Vintern-1B-v3_5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

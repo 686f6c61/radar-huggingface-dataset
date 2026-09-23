@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aztro/IATNAT-LORA",
+  "slug": "aztro-iatnat-lora",
+  "author": "aztro",
+  "url": "https://huggingface.co/aztro/IATNAT-LORA",
+  "created_at": "2026-09-23T12:21:29.000Z",
+  "updated_at": "2026-09-23T12:25:38.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "ltx2.5",
+    "text-to-video",
+    "ai-toolkit",
+    "video-generation",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:adapter:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4066384373,
+  "storage_human": "4.1 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iatnat - 2025-07-20 21:13:25 - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/888105200919798297",
+      "snippet": "Download Iatnat - free LORA FLUX.1 AI model on TENSOR. CINEMATIC PHOTOGRAPHY, FLUX, ATTRACTIVE WOMAN. By aztro"
+    },
+    {
+      "title": "aztro/iatnat-flux · Hugging Face",
+      "url": "https://huggingface.co/aztro/iatnat-flux",
+      "snippet": "Diffusers English flux lora replicate License: flux-1-dev-non-commercial-license Model card Files Community"
+    },
+    {
+      "title": "aztro/iatnat-ma · Hugging Face",
+      "url": "https://huggingface.co/aztro/iatnat-ma",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "iatnar - iatnnat-lor-flux FLUX - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/945656522514369258/iatnar-iatnnat-lor-flux",
+      "snippet": "Download iatnar - free LORA FLUX.1 AI model on TENSOR. FLUX, PHOTO REALITY, REALISTIC PORTRAIT. By user_763342085364490609"
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    }
+  ]
+}

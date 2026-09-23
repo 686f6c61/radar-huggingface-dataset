@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "alighabusaleh/CLASP-Ar-Arabic-Stance",
+  "slug": "alighabusaleh-clasp-ar-arabic-stance",
+  "author": "alighabusaleh",
+  "url": "https://huggingface.co/alighabusaleh/CLASP-Ar-Arabic-Stance",
+  "created_at": "2026-09-23T14:44:05.000Z",
+  "updated_at": "2026-09-23T14:44:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "fill-mask",
+    "stance-detection",
+    "arabic",
+    "prompt-learning",
+    "cloze",
+    "masked-language-modeling",
+    "stanceeval-2026",
+    "text-classification",
+    "ar",
+    "base_model:asafaya/bert-large-arabic",
+    "base_model:finetune:asafaya/bert-large-arabic",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 336689408,
+  "parameters_human": "336.7M",
+  "storage_bytes": 1346804824,
+  "storage_human": "1.3 GB",
+  "base_model": "asafaya/bert-large-arabic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Arabic Stance Detection",
+      "dataset": "StanceEval-2026 Track 1 (test)",
+      "metric": "Favg2 (macro-F1 over Favor & Against)",
+      "value": 0.7136
+    },
+    {
+      "task": "Arabic Stance Detection",
+      "dataset": "StanceEval-2026 Track 2 (test)",
+      "metric": "Favg2 (macro-F1 over Favor & Against)",
+      "value": 0.7414000000000001
+    }
+  ],
+  "sources": [
+    {
+      "title": "StanceEval-2026 | Arabic Stance Detection Shared Task",
+      "url": "https://stanceeval.github.io/",
+      "snippet": "StanceEval-2026 is a shared task on stance detection in Arabic social media. Given a tweet and a target, systems must determine whether the writer&#x27;s stance is Favor, Against, or None — across both seen and unseen targets, using the multi-label Mawqif-v2 dataset."
+    },
+    {
+      "title": "New publications at ArabicNLP 2026 Shared Tasks",
+      "url": "https://www.texttechnologylab.org/2026/09/14/new-publications-at-arabicnlp-2026-shared-tasks/",
+      "snippet": "Bhuvanesh Verma, Ali Abusaleh and Alexander Mehler. 2026. TTLab at StanceEval-2026: A Cloze-Style Prompting Approach for Arabic-Language Stance Detection (CLASP-Ar). SIGARAB ArabicNLP 2026 StanceEval Shared Task. accepted. BibTeX @inproceedings {Verma:et:al:2026:CLASP, title = {TTLab at StanceEval-2026: A Cloze-Style Prompting Approach for Arabic-Language Stance Detection (CLASP-Ar)}, author ..."
+    },
+    {
+      "title": "#arabic_nlp #ml #argument_mining #machine_translation #stance_detection ...",
+      "url": "https://www.linkedin.com/posts/alighabusaleh_arabicnlp-ml-argumentmining-activity-7505552815222706176-atrL",
+      "snippet": "TTLab at StanceEval-2026: A Cloze-Style Prompting Approach for Arabic-Language Stance Detection (CLASP-Ar). SIGARAB ArabicNLP 2026 StanceEval Shared Task. 2- Ali Abusaleh, Bhuvanesh Verma and ..."
+    },
+    {
+      "title": "StanceEval-2026: Track 1 - Arabic Stance Detection (Seen Targets)",
+      "url": "https://www.codabench.org/competitions/16332/",
+      "snippet": "StanceEval-2026: Track 1 — Arabic Stance Detection (Seen Targets) StanceEval-2026 is a shared task on Arabic stance detection using the Mawqif-v2 dataset. Track 1 evaluates models on targets observed during training. Task Description Given a post and a target, participants must classify the stance expressed in the post toward the target."
+    },
+    {
+      "title": "Publications - Text Technology Lab",
+      "url": "https://www.texttechnologylab.org/publications/",
+      "snippet": "TTLab at StanceEval-2026: A Cloze-Style Prompting Approach for Arabic-Language Stance Detection (CLASP-Ar). SIGARAB ArabicNLP 2026 StanceEval Shared Task. accepted."
+    }
+  ]
+}

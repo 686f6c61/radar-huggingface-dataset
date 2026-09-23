@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "unamed12/autodl-wsft-col4096",
+  "slug": "unamed12-autodl-wsft-col4096",
+  "author": "unamed12",
+  "url": "https://huggingface.co/unamed12/autodl-wsft-col4096",
+  "created_at": "2026-09-23T14:51:05.000Z",
+  "updated_at": "2026-09-23T15:28:58.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392988674,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Auto-DL/Auto-DL: Auto-DL helps you make Deep Learning models ...",
+      "url": "https://github.com/Auto-DL/Auto-DL",
+      "snippet": "Building deep learning models may take a lot of time. But not with AutoDL. Automate your meta-work so that you can focus on building your models without the hassle of writing code. Use our interactive model builder and AI powered suggestion system to quickly whip out a working DL model. Trained your model for multiple hours and found out that it&#x27;s bugged? Not anymore. With AutoDL&#x27;s AI ..."
+    },
+    {
+      "title": "GitHub Pages - Auto-DL",
+      "url": "https://auto-dl.github.io/",
+      "snippet": "Build Deep learning models more than 10X faster with Auto-DL. Building Deep Learning models takes a lot of time. We automate your \"meta-work\" so that you can focus of building your models without worrying about writing code."
+    },
+    {
+      "title": "unamed12/autodl-sft-col6144 · Hugging Face",
+      "url": "https://huggingface.co/unamed12/autodl-sft-col6144",
+      "snippet": "Instructions to use unamed12/autodl-sft-col6144 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use unamed12/autodl-sft-col6144 with Transformers:"
+    }
+  ]
+}

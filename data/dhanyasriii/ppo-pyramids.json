@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dhanyasriii/ppo-Pyramids",
+  "slug": "dhanyasriii-ppo-pyramids",
+  "author": "dhanyasriii",
+  "url": "https://huggingface.co/dhanyasriii/ppo-Pyramids",
+  "created_at": "2026-09-23T14:44:37.000Z",
+  "updated_at": "2026-09-23T14:44:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37807564,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dhanyasriii (Myla Dhanya Sri) - Hugging Face",
+      "url": "https://huggingface.co/dhanyasriii",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 8 hours ago ... published a model about 8 hours ago"
+    },
+    {
+      "title": "dhanyasriii (Myla Dhanya Sri) - Hugging Face",
+      "url": "https://huggingface.co/dhanyasriii/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 28 minutes ago ... published a model about 9 hours ago"
+    },
+    {
+      "title": "1daniar/ppo-Pyramids - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/263291",
+      "snippet": "This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "ppo-Pyramids: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-rixhi05-ppo-pyramids",
+      "snippet": "ppo-Pyramids is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "ppo-Pyramids huggingface.co api & DrishtiSharma ppo-Pyramids github AI ...",
+      "url": "https://www.toolify.ai/ai-model/drishtisharma-ppo-pyramids",
+      "snippet": "ppo-Pyramids is an open source model from GitHub that offers a free installation service, and any user can find ppo-Pyramids on GitHub to install. At the same time, huggingface.co provides the effect of ppo-Pyramids install, users can directly use ppo-Pyramids installed effect in huggingface.co for debugging and trial."
+    }
+  ]
+}

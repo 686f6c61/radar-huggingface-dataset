@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Edge0/Audio8-ASR-Infinite",
+  "slug": "edge0-audio8-asr-infinite",
+  "author": "Edge0",
+  "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
+  "created_at": "2026-09-21T15:03:21.000Z",
+  "updated_at": "2026-09-22T16:22:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "audio8_asr_infinite",
+    "text-generation",
+    "streaming",
+    "realtime",
+    "speech-recognition",
+    "audio",
+    "automatic-speech-recognition",
+    "custom_code",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 30,
+  "downloads_30d": 0,
+  "trending_score": 30,
+  "parameters": 4086224640,
+  "parameters_human": "4.09B",
+  "storage_bytes": 8184120129,
+  "storage_human": "8.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Edge0 - On-Device AI - Built for Consumer Hardware",
+      "url": "https://edge0.ai/",
+      "snippet": "Edge0-8B An 8-billion-parameter lightweight on-device model that runs with 1–2 GB of memory, suitable for Q&A and low-to-medium …"
+    },
+    {
+      "title": "GitHub - Edge0-AI/Edge0 · GitHub",
+      "url": "https://github.com/Edge0-AI/Edge0",
+      "snippet": "Sep 8, 2026 · edge0 is an open-source streaming MoE inference framework. It generalizes the production-proven recipe — SSD …"
+    },
+    {
+      "title": "Models - edge0",
+      "url": "https://edge0.ai/models",
+      "snippet": "Edge0-8B An 8-billion-parameter lightweight on-device model that runs with 1–2 GB of memory, suitable for Q&A and low-to-medium …"
+    },
+    {
+      "title": "Télécharger le navigateur Microsoft Edge | Windows, Mac, Linux",
+      "url": "https://explore.microsoft.com/fr-fr/edge/download",
+      "snippet": "Téléchargez Microsoft Edge pour Windows, Mac, Linux, iOS et Android. Profitez d'une navigation rapide et sécurisée avec des …"
+    },
+    {
+      "title": "Edge0",
+      "url": "https://edge0.app/",
+      "snippet": "Edge0 uses a 4-bit, 2B-class retail model for supported catalog search, product comparison, and cart preparation on the phone. Swift …"
+    }
+  ]
+}

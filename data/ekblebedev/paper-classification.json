@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ekblebedev/paper-classification",
+  "slug": "ekblebedev-paper-classification",
+  "author": "ekblebedev",
+  "url": "https://huggingface.co/ekblebedev/paper-classification",
+  "created_at": "2026-09-23T01:39:11.000Z",
+  "updated_at": "2026-09-23T01:39:16.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ekblebedev/paper-classification · Hugging Face",
+      "url": "https://huggingface.co/ekblebedev/paper-classification",
+      "snippet": "ekblebedev / paper-classification Like 0 Safetensors PyTorch albef classification License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new Albef for Classification Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "ekblebedev (Pavel Lebedev) - Hugging Face",
+      "url": "https://huggingface.co/ekblebedev",
+      "snippet": "Recent Activity updated a datasetabout 2 hours ago ekblebedev/image-depth-corpus82 published a datasetabout 2 hours ago ekblebedev/image-depth-corpus82 updated a modelabout 2 hours ago ekblebedev/assignment-classification View all activity"
+    },
+    {
+      "title": "classification-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/classification-model",
+      "snippet": "A collection of research papers on decision, classification and regression trees with implementations."
+    },
+    {
+      "title": "(PDF) Research Paper Classification using Supervised Machine Learning ...",
+      "url": "https://www.researchgate.net/publication/346853360_Research_Paper_Classification_using_Supervised_Machine_Learning_Techniques",
+      "snippet": "This work [17]explores the classification of research paper abstracts into three fields: Science, Business, and Social Science using supervised ML techniques."
+    },
+    {
+      "title": "Automated Research Article Classification and Recommendation Using NLP ...",
+      "url": "https://arxiv.org/html/2510.05495v1",
+      "snippet": "In the digital era, the exponential growth of scientific publications has made it increasingly difficult for researchers to efficiently identify and access relevant work. This paper presents an automated framework for research article classification and recommendation that leverages Natural Language Processing (NLP) techniques and machine learning."
+    }
+  ]
+}

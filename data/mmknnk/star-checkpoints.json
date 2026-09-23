@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mmknnk/star-checkpoints",
+  "slug": "mmknnk-star-checkpoints",
+  "author": "mmknnk",
+  "url": "https://huggingface.co/mmknnk/star-checkpoints",
+  "created_at": "2026-09-16T16:21:39.000Z",
+  "updated_at": "2026-09-23T16:34:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79060930883,
+  "storage_human": "79.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parure store / Magasin Prêt-à-Porter pour Hommes / Tours",
+      "url": "https://parure.store/",
+      "snippet": "Bienvenue chez Parure store, un magasin de prêt-à-porter masculin et unisexe, indépendant et multi-marques situé au 16 Place De …"
+    },
+    {
+      "title": "Vêtements tendance pour tous – Parure store",
+      "url": "https://parure.store/pages/vtements",
+      "snippet": "Parure store 16 place de la resistance TOURS Indre et Loire / Centre Val De Loire 37000 France Coordonnées du service client : …"
+    },
+    {
+      "title": "Boutique PARURE STORE à TOURS (37000) - Pagesmode",
+      "url": "https://www.pagesmode.com/boutique/parure-store-tours",
+      "snippet": "Actus mode et bons plans près de chez vous. Découvrez la boutique PARURE STORE à TOURS (37000), ses collections, horaires …"
+    },
+    {
+      "title": "Parure store à Tours - Magasins de vêtement (adresse, horaires)",
+      "url": "https://www.pagesjaunes.fr/pros/64777936",
+      "snippet": "Plus d'infos sur Parure store à Tours : Bienvenue chez Parure store, un magasin de prêt à porter masculin et unisexe, indépendant …"
+    },
+    {
+      "title": "Parure (@parure.store) • Instagram photos and videos",
+      "url": "https://www.instagram.com/parure.store/",
+      "snippet": "2,545 Followers, 302 Following, 60 Posts - Parure (@parure.store) on Instagram: \"Independent menswear store since 2024. …"
+    }
+  ]
+}

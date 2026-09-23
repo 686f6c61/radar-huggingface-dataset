@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zayar26/burmese-gpt2",
+  "slug": "zayar26-burmese-gpt2",
+  "author": "zayar26",
+  "url": "https://huggingface.co/zayar26/burmese-gpt2",
+  "created_at": "2026-09-23T11:27:26.000Z",
+  "updated_at": "2026-09-23T13:25:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:openai-community/gpt2",
+    "base_model:finetune:openai-community/gpt2",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 103667712,
+  "parameters_human": "103.7M",
+  "storage_bytes": 4644642850,
+  "storage_human": "4.6 GB",
+  "base_model": "gpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WYNN747/Burmese-GPT · Hugging Face",
+      "url": "https://huggingface.co/WYNN747/Burmese-GPT",
+      "snippet": "Model Description (Burmese-GPT) Developed by Dr. Wai Yan, Burmese-GPT is a specialized large language model for the Burmese language, fine-tuned/pre-trained on the GPT-2 architecture, particularly the mGPT XL model. This model is primarily designed for text completion in Burmese, serving as a foundational base for fine-tuning a variety of natural language processing tasks within the Burmese ..."
+    },
+    {
+      "title": "Burmese-GPT: An Open-Source Burmese Language Model - Freely Available ...",
+      "url": "https://model.aibase.com/models/details/1915693823671558145",
+      "snippet": "Model Overview Burmese-GPT is a large-scale language model specifically designed for the Burmese language, fine-tuned/pre-trained based on the GPT-2 architecture (particularly the mGPT XL model). Primarily used for Burmese text completion tasks, it can serve as a foundational model for Burmese natural language processing tasks."
+    },
+    {
+      "title": "jojo-ai-mst/MyanmarGPTX · Hugging Face",
+      "url": "https://huggingface.co/jojo-ai-mst/MyanmarGPTX",
+      "snippet": "The \"Myanmar GPT X\" model is released for the improvement of the Burmese Language in NLP. The main purpose is to build web, mobile, and desktop applications powered by Burmese Language-enabled GPT under MIT License."
+    },
+    {
+      "title": "burmese-gpt/burmese_gpt/models at main · realzai/burmese-gpt",
+      "url": "https://github.com/realzai/burmese-gpt/tree/main/burmese_gpt/models",
+      "snippet": "20M parameters LLM for Burmese language built with PyTorch - realzai/burmese-gpt"
+    },
+    {
+      "title": "hmone231/burmese_gpt2 - Fast, Reliable, and Scalable Inference on ...",
+      "url": "https://friendli.ai/models/hmone231/burmese_gpt2",
+      "snippet": "Run hmone231/burmese_gpt2 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

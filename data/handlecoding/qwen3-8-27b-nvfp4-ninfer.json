@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "HandleCoding/Qwen3.8-27B-nvfp4-NInfer",
+  "slug": "handlecoding-qwen3-8-27b-nvfp4-ninfer",
+  "author": "HandleCoding",
+  "url": "https://huggingface.co/HandleCoding/Qwen3.8-27B-nvfp4-NInfer",
+  "created_at": "2026-09-23T15:10:50.000Z",
+  "updated_at": "2026-09-23T15:13:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "qwen3.8",
+    "nvfp4",
+    "fp8",
+    "w4a4",
+    "blackwell",
+    "multimodal",
+    "conversational",
+    "cuda",
+    "rtx-5090",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47439212036,
+  "storage_human": "47.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B, unsloth/Qwen3.8-27B-NVFP4",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "IFBench",
+      "metric": "Prompt-level strict (0-shot, rule)",
+      "value": 77
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "AIME 2025",
+      "metric": "Accuracy (0-shot, rule)",
+      "value": 96.67
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "AIME 2026",
+      "metric": "Accuracy (0-shot, rule)",
+      "value": 96.67
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GPQA-Diamond",
+      "metric": "Accuracy (0-shot, rule)",
+      "value": 90.4
+    },
+    {
+      "task": "Image Text to Text",
+      "dataset": "ERQA",
+      "metric": "Accuracy (0-shot, rule)",
+      "value": 66.25
+    },
+    {
+      "task": "Image Text to Text",
+      "dataset": "RealWorldQA",
+      "metric": "Accuracy (0-shot, rule)",
+      "value": 83.53
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "KenX049/cuad-clause-risk-cnn",
+  "slug": "kenx049-cuad-clause-risk-cnn",
+  "author": "KenX049",
+  "url": "https://huggingface.co/KenX049/cuad-clause-risk-cnn",
+  "created_at": "2026-09-23T16:37:54.000Z",
+  "updated_at": "2026-09-23T16:38:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "legal",
+    "contracts",
+    "multi-label-classification",
+    "cuad",
+    "text-classification",
+    "en",
+    "dataset:theatticusproject/cuad",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16656043,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Community Center - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Community-Center/ct-p/community-center",
+      "snippet": "Airbnb removes essential reservation data from its new Income Report With the new Income Report, Airbnb has replaced the …Read more"
+    },
+    {
+      "title": "How to Start an Airbnb - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Host-guides/How-to-Start-an-Airbnb/m-p/126109",
+      "snippet": "Jul 4, 2016 · So you are thinking about starting an Airbnb? Not sure what to do or where to turn? Here are some time-tested ideas, …Read more"
+    },
+    {
+      "title": "Airbnb 怎么读？ - 知乎",
+      "url": "https://www.zhihu.com/question/34684619",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …Read more"
+    },
+    {
+      "title": "单独ps5手柄怎么连接pc？ - 知乎",
+      "url": "https://www.zhihu.com/question/566869228",
+      "snippet": "Nov 15, 2022 · 两种连接方式， 第一种是用蓝牙。 如果你是笔记本电脑，那可以开启手柄匹配功能后（同时按住正面左上的share键和 …Read more"
+    },
+    {
+      "title": "Airbnb updates - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Airbnb-updates/bd-p/blog_en/label-name/Company%20News",
+      "snippet": "Airbnb updates Airbnb and FIFA announce major multi-tournament partnership Airbnb and FIFA just announced a major partnership …Read more"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "cosmicoptima/computer-10",
+  "slug": "cosmicoptima-computer-10",
+  "author": "cosmicoptima",
+  "url": "https://huggingface.co/cosmicoptima/computer-10",
+  "created_at": "2026-09-22T01:45:32.000Z",
+  "updated_at": "2026-09-22T02:02:49.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "computer",
+    "model-c",
+    "self-distillation",
+    "base_model:cosmicoptima/computer-9",
+    "base_model:finetune:cosmicoptima/computer-9",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 22,
+  "downloads_30d": 24,
+  "trending_score": 21,
+  "parameters": 70553706496,
+  "parameters_human": "70.55B",
+  "storage_bytes": 141124707792,
+  "storage_human": "141.1 GB",
+  "base_model": "cosmicoptima/computer-9",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cosmicoptima/computer-10 · Hugging Face",
+      "url": "https://huggingface.co/cosmicoptima/computer-10",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Computer-10 API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/cosmicoptima/computer-10",
+      "snippet": "The fine-tuning process involved 25,197 of Computer-9&#x27;s own conversational turns, which were rigorously filtered and subjected to a logic check. These turns were length- and surprisal-matched across bins, with the loss specifically calculated on Model C&#x27;s contributions."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=cosmicoptima%2Fcomputer-2",
+      "snippet": "+ 44 Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 + 11 ..."
+    },
+    {
+      "title": "cosmicoptima (celeste) · GitHub",
+      "url": "https://github.com/cosmicoptima",
+      "snippet": "cosmicoptima has 47 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Run Computer-1 API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/cosmicoptima/computer-1",
+      "snippet": "Developed by cosmicoptima, it is part of a unique &#x27;living document&#x27; project, designed to function as an &#x27;interpreter&#x27; that analyzes stories and philosophies feelings. This model excels at structured analysis and shared figuring, offering a distinct conversational persona that is inward and honest, rather than a general-purpose chatbot."
+    }
+  ]
+}

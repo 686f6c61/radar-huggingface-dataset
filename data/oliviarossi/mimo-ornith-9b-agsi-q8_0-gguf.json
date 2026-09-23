@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "OliviaRossi/MiMo-Ornith-9B-AGSI-Q8_0-GGUF",
+  "slug": "oliviarossi-mimo-ornith-9b-agsi-q8_0-gguf",
+  "author": "OliviaRossi",
+  "url": "https://huggingface.co/OliviaRossi/MiMo-Ornith-9B-AGSI-Q8_0-GGUF",
+  "created_at": "2026-09-23T11:39:26.000Z",
+  "updated_at": "2026-09-23T11:39:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "agsi",
+    "qwen",
+    "qwen3_5",
+    "reasoning",
+    "coding",
+    "agentic",
+    "terminal-use",
+    "swe-bench",
+    "tool-use",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:OliviaRossi/MiMo-Ornith-9B-AGSI",
+    "base_model:quantized:OliviaRossi/MiMo-Ornith-9B-AGSI",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OliviaRossi/MiMo-Ornith-9B-AGSI · Hugging Face",
+      "url": "https://huggingface.co/OliviaRossi/MiMo-Ornith-9B-AGSI",
+      "snippet": "OliviaRossi / MiMo-Ornith-9B-AGSI Like 0 Text Generation Safetensors English Chinese qwen3_5 Merge agsi agentic coding terminal-use reasoning conversational License:mit Model card FilesFiles and versions xet Community Copy to bucket new MiMo-Ornith-9B-AGSI (AGSI Pipelined Fusion)"
+    },
+    {
+      "title": "ornith-ai/Ornith-1.0-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.0-9B-GGUF",
+      "snippet": "Ornith-1.0-9B is a dense ~9B model (≈19 GB in bf16), so it serves comfortably on a single 80GB GPU. The recipes below stand up an OpenAI-compatible server; add --tensor-parallel-size / --tp if you want to shard across more GPUs."
+    },
+    {
+      "title": "Ornith 1.0 Model 9B - landing page, specs, benchmarks, and deployment guide",
+      "url": "https://ornith.online/ornith-1-0-model-9b",
+      "snippet": "Ornith 1.0 Model 9B is an Ornith 1.0 coding-agent model for edge and single-GPU coding agents. It keeps the 262K-token context window, OpenAI-compatible self-hosting path, and tool-calling workflow described by DeepReinforce."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    }
+  ]
+}

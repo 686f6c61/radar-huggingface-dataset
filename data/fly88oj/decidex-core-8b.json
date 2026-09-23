@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "fly88oj/decidex-core-8b",
+  "slug": "fly88oj-decidex-core-8b",
+  "author": "fly88oj",
+  "url": "https://huggingface.co/fly88oj/decidex-core-8b",
+  "created_at": "2026-09-23T16:29:39.000Z",
+  "updated_at": "2026-09-23T17:30:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en",
+    "zh",
+    "ja"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision-model",
+    "system-one",
+    "jev",
+    "typesafe",
+    "structured-output",
+    "logits",
+    "lora",
+    "en",
+    "zh",
+    "ja",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99119528,
+  "storage_human": "99 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

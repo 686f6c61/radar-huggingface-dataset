@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SpaceTimee/final",
+  "slug": "spacetimee-final",
+  "author": "SpaceTimee",
+  "url": "https://huggingface.co/SpaceTimee/final",
+  "created_at": "2026-09-23T15:08:46.000Z",
+  "updated_at": "2026-09-23T15:15:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54753585585,
+  "storage_human": "54.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - SpacetimeAI",
+      "url": "https://spacetimeai.cc/",
+      "snippet": "One-Click Access Get a single API key to call all connected AI models. No separate applications needed."
+    },
+    {
+      "title": "SpaceTimeAI",
+      "url": "https://spacetimeai.com/index.html",
+      "snippet": "Web site created using create-react-app"
+    },
+    {
+      "title": "Spacetime.io",
+      "url": "https://www.spacetime.io/",
+      "snippet": "Real-time adaptive analytics, visualization, and machine learning. Continuously evolved through augmented, intelligent workflows. Streams of real-time data, layered and enhanced."
+    },
+    {
+      "title": "SpaceTimee (Space Time) - Hugging Face",
+      "url": "https://huggingface.co/SpaceTimee/collections",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 9 hours ago ... updated a model about 9 hours ago"
+    },
+    {
+      "title": "SpaceTimee (Space Time) - Hugging Face",
+      "url": "https://huggingface.co/SpaceTimee/spaces",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space about 4 hours ago ... updated a model about 4 hours ago"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "VinWin25/NIAT-Sem3-Financial-Fraud-Detector",
+  "slug": "vinwin25-niat-sem3-financial-fraud-detector",
+  "author": "VinWin25",
+  "url": "https://huggingface.co/VinWin25/NIAT-Sem3-Financial-Fraud-Detector",
+  "created_at": "2026-09-23T12:13:10.000Z",
+  "updated_at": "2026-09-23T12:13:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20173821,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deep learning in financial fraud detection: innovations, challenges ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666764925000372",
+      "snippet": "This study presents a systematic literature review of 108 peer-reviewed publications (2019-2024) on the application of deep learning (DL) to financial fraud detection. It examines advances in model architectures, such as convolutional neural networks, long short-term memory networks, transformers, and ensemble methods—across domains including credit cards, insurance, and financial ..."
+    },
+    {
+      "title": "AI-Based Financial Fraud Detection System - GitHub",
+      "url": "https://github.com/pushkar2201/AI-Based-Financial-Fraud-Detection-System",
+      "snippet": "This project is an end-to-end AI-powered Financial Fraud Detection System designed to identify and prevent fraudulent financial transactions in real-time. It leverages Machine Learning (ML) and Behavioral Analytics to detect suspicious activities from large-scale transactional data, helping financial institutions minimize losses and enhance customer trust."
+    },
+    {
+      "title": "GitHub - NVIDIA-AI-Blueprints/financial-fraud-detection",
+      "url": "https://github.com/NVIDIA-AI-Blueprints/Financial-Fraud-Detection",
+      "snippet": "This NVIDIA AI Blueprint provides a reference example to detect and prevent sophisticated fraudulent activities for financial services with high accuracy and reduced false positives. It shows developers how to build a financial fraud detection workflow using the NVIDIA container for fraud detection."
+    },
+    {
+      "title": "An Introduction to Machine Learning Methods for Fraud Detection - MDPI",
+      "url": "https://www.mdpi.com/2076-3417/15/21/11787",
+      "snippet": "Financial fraud represents a critical global challenge with substantial economic and social consequences. This comprehensive review synthesizes the current knowledge on machine learning approaches for financial fraud detection, examining their effectiveness across diverse fraud scenarios. We analyze various fraud types, including credit card fraud, financial statement fraud, insurance fraud ..."
+    },
+    {
+      "title": "FREE VIN Decoder, Lookup & Checker | Online VIN Search & Recall Check",
+      "url": "https://driving-tests.org/vin-decoder/",
+      "snippet": "Free VIN decoder & lookup. Learn what each character in your vehicle identification number (VIN) means, get a real-time report on most recent NHTSA recalls and complaints."
+    }
+  ]
+}

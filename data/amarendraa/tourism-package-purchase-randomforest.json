@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Amarendraa/Tourism-Package-Purchase-RandomForest",
+  "slug": "amarendraa-tourism-package-purchase-randomforest",
+  "author": "Amarendraa",
+  "url": "https://huggingface.co/Amarendraa/Tourism-Package-Purchase-RandomForest",
+  "created_at": "2026-09-23T10:35:26.000Z",
+  "updated_at": "2026-09-23T18:46:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-classification",
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "classification",
+    "random-forest",
+    "tourism",
+    "machine-learning",
+    "mlops",
+    "tabular-classification",
+    "dataset:Amarendraa/Tourism",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32300658,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - bhargavibalineni12/tourism-package-mlops: End-to-end MLOps ...",
+      "url": "https://github.com/bhargavibalineni12/tourism-package-mlops",
+      "snippet": "An end-to-end MLOps project for predicting whether a customer is likely to purchase a Wellness Tourism Package. The project demonstrates a production-oriented machine learning workflow covering data validation, leakage-safe preprocessing, model comparison, hyperparameter tuning, MLflow experiment ..."
+    },
+    {
+      "title": "critical12/tourism-purchase-predictor-rf · Hugging Face",
+      "url": "https://huggingface.co/critical12/tourism-purchase-predictor-rf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - abhifg/Tourism-Package-Purchase-Prediction",
+      "url": "https://github.com/abhifg/Tourism-Package-Purchase-Prediction",
+      "snippet": "Tourism is one of the most rapidly growing global industries and tourism forecasting is becoming an increasingly important activity in planning and managing the industry. Because of high fluctuations of tourism demand, accurate predictions of purchase of travel packages are of high importance for tourism organizations."
+    },
+    {
+      "title": "Tourism Package Purchase Prediction",
+      "url": "https://eliana-gm.github.io/tourism-package-prediction/",
+      "snippet": "Tourism Package Purchase Prediction This project leverages data science to predict whether a customer is likely to purchase a travel package, empowering tourism businesses with actionable insights for marketing and product development. Executive Summary Target: Predict binary outcome - Will the customer purchase the package? Dataset: 20 features including demographics, behavior, and ..."
+    },
+    {
+      "title": "Krishna6559/tourism-purchase-predictor-rf · Hugging Face",
+      "url": "https://huggingface.co/Krishna6559/tourism-purchase-predictor-rf",
+      "snippet": "Tourism Purchase Predictor (RandomForest) This repository contains a tuned RandomForestClassifier for predicting ProdTaken (purchase of the tourism package)."
+    }
+  ]
+}

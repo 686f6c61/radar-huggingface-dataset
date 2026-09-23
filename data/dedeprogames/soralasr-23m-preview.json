@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "DedeProGames/SoralASR-23M-Preview",
+  "slug": "dedeprogames-soralasr-23m-preview",
+  "author": "DedeProGames",
+  "url": "https://huggingface.co/DedeProGames/SoralASR-23M-Preview",
+  "created_at": "2026-09-23T00:26:59.000Z",
+  "updated_at": "2026-09-23T15:37:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "asr",
+    "english",
+    "from-scratch",
+    "small-model",
+    "en",
+    "dataset:openslr/librispeech_asr",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 23062272,
+  "parameters_human": "23.1M",
+  "storage_bytes": 12647182766,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DedeProGames/SoralASR-23M-Preview · Hugging Face",
+      "url": "https://huggingface.co/DedeProGames/SoralASR-23M-Preview",
+      "snippet": "SoralASR-23M-Preview is a compact English automatic speech recognition model with 23,062,272 parameters. It uses a reduced Whisper-style encoder-decoder architecture and was trained from randomly initialized ASR weights."
+    },
+    {
+      "title": "DedeProGames (DedeProGames) - Hugging Face",
+      "url": "https://huggingface.co/DedeProGames/datasets",
+      "snippet": "2021.0TFLOPS 24437 DedeProGamesPRO DedeProGames Follow Zero-Point-AI's profile pictureFuwn's profile picturewebxos's profile picture 9 followers"
+    },
+    {
+      "title": "Kiyo 230M Preview by DedeProGames - LLM Explorer",
+      "url": "https://llm-explorer.com/model/DedeProGames%2FKiyo-230M-Preview,2bgf7BAEocS5DzZKpuwSgq",
+      "snippet": "Kiyo 230M Preview is an open-source 230m LLM by DedeProGames. VRAM 0.5GB, 2K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Kiyo-230M-Preview API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/DedeProGames/Kiyo-230M-Preview",
+      "snippet": "Run Kiyo-230M-Preview with FriendliAI inference. Kiyo-230M-Preview is an intermediate training checkpoint of Kiyo-230M, a decoder-only language model being…"
+    },
+    {
+      "title": "DedeProGames - ollama.com",
+      "url": "https://ollama.com/DedeProGames",
+      "snippet": "Astral-2.7 Astral-2.7 is a 20B-parameter AI model based on gpt-oss:20b, designed for high performance on general reasoning tasks."
+    }
+  ]
+}

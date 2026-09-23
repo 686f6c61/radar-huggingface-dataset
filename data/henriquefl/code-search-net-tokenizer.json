@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "henriquefl/code-search-net-tokenizer",
+  "slug": "henriquefl-code-search-net-tokenizer",
+  "author": "henriquefl",
+  "url": "https://huggingface.co/henriquefl/code-search-net-tokenizer",
+  "created_at": "2026-09-23T18:17:47.000Z",
+  "updated_at": "2026-09-23T18:17:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Booking订酒店靠谱吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/1973784983270338794",
+      "snippet": "Nov 17, 2025 · 最近订 Booking.com 的朋友，比完价别急着点支付——有个6%返利绝大多数人漏了。 我是常出差住酒店的老用户，简 …"
+    },
+    {
+      "title": "出国旅游订酒店，哪些网站比较靠谱？ - 知乎",
+      "url": "https://www.zhihu.com/question/21552311",
+      "snippet": "Booking.com Booking.com （缤客）是一家帮你在网上预订世界各地住宿的网站，为你提供全球75,461个目的地的615,581个酒店住宿 …"
+    },
+    {
+      "title": "booking订房怎么样？ - 知乎",
+      "url": "https://www.zhihu.com/question/35494706",
+      "snippet": "于是又有余下质疑：booking应该在发现问题时立刻联系hoppa，并在网站上给hoppa销户。而他们显然没有。我相信一定有其他人跟 …"
+    },
+    {
+      "title": "出国订酒店时，你会选择哪家订房网站？booking.com还是agoda，还 …",
+      "url": "https://www.zhihu.com/question/27377056",
+      "snippet": "各家订房网站各有优缺点，排除掉一些不知名的网站，各大知名订房网站基本靠谱，没必要非此即彼，往往价格才是影响我们使用哪 …"
+    },
+    {
+      "title": "booking怎么出行程单? - 知乎",
+      "url": "https://www.zhihu.com/question/367601770",
+      "snippet": "语言设置成英语或者法语 在手机APP的 Bookings-Past 找到自己完成行程 在界面一直下拉 来到Actions Save for offline use 这样就拿 …"
+    }
+  ]
+}

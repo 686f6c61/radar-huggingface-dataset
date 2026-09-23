@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "madhushripatil032003/readnet-onnx",
+  "slug": "madhushripatil032003-readnet-onnx",
+  "author": "madhushripatil032003",
+  "url": "https://huggingface.co/madhushripatil032003/readnet-onnx",
+  "created_at": "2026-09-23T16:42:44.000Z",
+  "updated_at": "2026-09-23T16:44:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "onnx",
+    "automatic-speech-recognition",
+    "wav2vec2",
+    "hi",
+    "base_model:Harveenchadha/vakyansh-wav2vec2-hindi-him-4200",
+    "base_model:quantized:Harveenchadha/vakyansh-wav2vec2-hindi-him-4200",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 377910210,
+  "storage_human": "378 MB",
+  "base_model": "Harveenchadha/vakyansh-wav2vec2-hindi-him-4200",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

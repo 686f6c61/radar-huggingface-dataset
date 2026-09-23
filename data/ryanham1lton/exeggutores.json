@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/ExeggutorES",
+  "slug": "ryanham1lton-exeggutores",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/ExeggutorES",
+  "created_at": "2026-09-23T17:49:12.000Z",
+  "updated_at": "2026-09-23T17:49:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120286961,
+  "storage_human": "120 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "User profile of Ryan James Hamilton on Hugging Face"
+    },
+    {
+      "title": "A‌I chat|1v1 Chat with Character Exeggutor for Free Personalized ...",
+      "url": "https://www.polybuzz.ai/character/chat/exeggutor-wcc5q",
+      "snippet": "Dive into lifelike 1-on-1 AI chat with Exeggutor|Experience human-like conversations,emotional depth,and personalized scenarios powered by DeepAI.Ask anything to your AI character."
+    },
+    {
+      "title": "Ryanham1lton/Shuppet · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Shuppet",
+      "snippet": "Ryanham1lton / Shuppet like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "XTokenChecker",
+      "url": "https://xtokenchecker.com/",
+      "snippet": "XTokenChecker is a public AI relay and model directory for comparing coverage, pricing, uptime, latency and real reviews."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

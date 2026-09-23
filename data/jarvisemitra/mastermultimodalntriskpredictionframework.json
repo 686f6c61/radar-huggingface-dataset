@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jarvisemitra/MasterMultimodalNTRiskPredictionFramework",
+  "slug": "jarvisemitra-mastermultimodalntriskpredictionframework",
+  "author": "jarvisemitra",
+  "url": "https://huggingface.co/jarvisemitra/MasterMultimodalNTRiskPredictionFramework",
+  "created_at": "2026-09-23T14:42:46.000Z",
+  "updated_at": "2026-09-23T14:42:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jarvisemitra (jangid) - Hugging Face",
+      "url": "https://huggingface.co/jarvisemitra",
+      "snippet": "AI & ML updated a Space about 2 months ago published a Space about 2 months ago"
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "GitHub - microsoft/JARVIS: JARVIS, a system to connect LLMs with ML ...",
+      "url": "https://github.com/microsoft/JARVIS",
+      "snippet": "Language serves as an interface for LLMs to connect numerous AI models for solving complicated AI tasks! See our paper: HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in HuggingFace, Yongliang Shen, Kaitao Song, Xu Tan, Dongsheng Li, Weiming Lu and Yueting Zhuang (the first two authors contribute equally) We introduce a collaborative system that consists of an LLM as the controller ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 511 AI models across 455 benchmarks, with 196 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Nist-jarvis",
+      "url": "https://jarvis.nist.gov/",
+      "snippet": "The JARVIS (Joint Automated Repository for Various Integrated Simulations) is an infrastructure designed to automate materials discovery and optimization using classical force-field, density functional theory, machine learning, quantum computation calculations and experiments."
+    }
+  ]
+}

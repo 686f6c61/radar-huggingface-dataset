@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "saarantras1/MPAC",
+  "slug": "saarantras1-mpac",
+  "author": "saarantras1",
+  "url": "https://huggingface.co/saarantras1/MPAC",
+  "created_at": "2026-08-11T19:58:25.000Z",
+  "updated_at": "2026-09-23T18:33:47.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "mpac",
+  "languages": [],
+  "tags": [
+    "mpac",
+    "biology",
+    "genomics",
+    "dna",
+    "mpra",
+    "cis-regulatory",
+    "variant-effect-prediction",
+    "other",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 87,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1809021720,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Association France-ioi",
+      "url": "https://www.france-ioi.org/",
+      "snippet": "France-ioi organise les olympiades françaises, et entraîne les équipes de France pour les olympiades internationales, destinées aux …Read more"
+    },
+    {
+      "title": "France-IOI – Cours et problèmes",
+      "url": "https://www.france-ioi.org/algo/chapters.php",
+      "snippet": "Le C++ est un langage de programmation impératif. Inventé au début des années 1980, il apporte de nouveaux concepts au langage …"
+    },
+    {
+      "title": "France-IOI — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/France-IOI",
+      "snippet": "France-IOI a été fondée en 2004 afin de structurer l’entrainement et la sélection pour les IOI, commencés à l’association Prologin …"
+    },
+    {
+      "title": "Login module - France-ioi",
+      "url": "https://login.france-ioi.org/login",
+      "snippet": "Forgot Your login or password? Reset Mentions Légales"
+    },
+    {
+      "title": "France-IOI : Le site d'entraînement à la programmation et l'algorithmique",
+      "url": "https://www.tice-education.fr/tous-les-articles-er-ressources/codage/1058-france-ioi-le-site-d-entrainement-a-la-programmation-et-l-algorithmique",
+      "snippet": "Feb 1, 2016 · France-IOI diffuse gratuitement des outils et contenus permettant de progresser rapidement dans ces domaines, et …"
+    }
+  ]
+}

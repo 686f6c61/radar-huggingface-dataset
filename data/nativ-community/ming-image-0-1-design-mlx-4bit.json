@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nativ-community/Ming-Image-0.1-Design-MLX-4bit",
+  "slug": "nativ-community-ming-image-0-1-design-mlx-4bit",
+  "author": "nativ-community",
+  "url": "https://huggingface.co/nativ-community/Ming-Image-0.1-Design-MLX-4bit",
+  "created_at": "2026-09-23T12:37:42.000Z",
+  "updated_at": "2026-09-23T12:40:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "ming-image",
+    "text-to-image",
+    "base_model:inclusionAI/Ming-Image-0.1-Design",
+    "base_model:finetune:inclusionAI/Ming-Image-0.1-Design",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13419658089,
+  "storage_human": "13.4 GB",
+  "base_model": "inclusionAI/Ming-Image-0.1-Design",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inclusionAI/Ming-Image-0.1-Design-Layer · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ming-Image-0.1-Design-Layer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - inclusionAI/Ming-Image",
+      "url": "https://github.com/inclusionAI/Ming-Image/tree/main",
+      "snippet": "Ming-Image-.1-Design is an open-source series for visual-design generation and editable layer decomposition."
+    },
+    {
+      "title": "Ming Image 0.1 Design - API Pricing & Providers - openrouter.ai",
+      "url": "https://openrouter.ai/inclusionai/ming-image-0.1-design",
+      "snippet": "Ming Image 0.1 Design is a text-to-image model from inclusionAI aimed at graphic-design output, with an emphasis on legible text rendering inside the generated image. This model is free to use."
+    },
+    {
+      "title": "AntLing open sources Ming-Image-0.1-Design family of 6B models",
+      "url": "https://korshunov.ai/en/article/27531-antling-open-sources-ming-image-0-1-design-family-of-6b-models/",
+      "snippet": "The release also features two open-source Agent Skills: Ling UI Design Skill and Image-to-Editable-PPT Skill. According to the source, Ming-Image-.1-Design ranks #1 among open-weight models on Artificial Analysis&#x27;s UI/UX Design leaderboard."
+    },
+    {
+      "title": "Ming-Image-0.1-Design - crafiq.ai",
+      "url": "https://crafiq.ai/models/image/inclusionai-ming-image-0-1-design",
+      "snippet": "A primary strength of the model is its handling of text-rich environments. It is designed to render complex, legible characters and words within a visual scene, addressing a common failure point in traditional image generation. To support advanced design pipelines, inclusionAI also provides a companion Ming-Image-.1-Design-Layer model, which is capable of decomposing flattened designs into ..."
+    }
+  ]
+}

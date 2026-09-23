@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/STL-Tadesse-AfroXLMR-Social-sentiment",
+  "slug": "tadiecool29-stl-tadesse-afroxlmr-social-sentiment",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/STL-Tadesse-AfroXLMR-Social-sentiment",
+  "created_at": "2026-09-23T11:40:21.000Z",
+  "updated_at": "2026-09-23T11:42:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:Tadesse/AfroXLMR-Social",
+    "base_model:finetune:Tadesse/AfroXLMR-Social",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559893507,
+  "parameters_human": "559.9M",
+  "storage_bytes": 2256710893,
+  "storage_human": "2.3 GB",
+  "base_model": "Tadesse/AfroXLMR-Social",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tadiecool29/STL-afroxlmr-base-stance · Hugging Face",
+      "url": "https://huggingface.co/tadiecool29/STL-afroxlmr-base-stance",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tadiecool29 (Tadesse Amare) - Hugging Face",
+      "url": "https://huggingface.co/datasets/tadiecool29/",
+      "snippet": "tadiecool29 Follow Alemu123&#x27;s profile pictureoumermuhammed&#x27;s profile picture 2 followers · 9 following tadiecool29"
+    },
+    {
+      "title": "AfroXLMR-Social: Adapting Pre-trained Language Models",
+      "url": "https://arxiv.org/html/2503.18247v1",
+      "snippet": "AfroXLMR-Social: Adapting Pre-trained Language Models for African Languages Social Media Text Tadesse Destaw Belay1,2, Israel Abebe Azime3, Ibrahim Said Ahmad4,5, Idris Abdulmumin6 Abinew Ali Ayele7,8, Shamsuddeen Hassan Muhammad5,9, Seid Muhie Yimam8 1 Instituto Politécnico Nacional, 2 Wollo University, 3 Saarland University, 4 Northeastern University, 5 Bayero University Kano, 6 University ..."
+    },
+    {
+      "title": "AfroXLMR-Social: Adapting Pre-trained Language Models for African ...",
+      "url": "https://paperswithcode.co/paper/2503.18247",
+      "snippet": "We introduce AfriSocial-a large-scale social media and news domain corpus for continual pre-training on several African languages. Leveraging AfriSocial, we show that DAPT consistently improves performance on three subjective tasks: sentiment analysis, multi-label emotion, and hate speech classification, covering 19 languages from 1% to 30% F1 ..."
+    },
+    {
+      "title": "AfroXLMR-Social: Adapting Pre-trained Language Models for African ...",
+      "url": "https://arxiv.org/abs/2503.18247",
+      "snippet": "Language models built from various sources are the foundation of today&#x27;s NLP progress. However, for many low-resource languages, the diversity of domains is often limited, more biased to a religious domain, which impacts their performance when evaluated on distant and rapidly evolving domains such as social media. Domain adaptive pre-training (DAPT) and task-adaptive pre-training (TAPT) are ..."
+    }
+  ]
+}

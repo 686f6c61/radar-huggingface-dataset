@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sahilchachra/Laya-English-MXFP4",
+  "slug": "sahilchachra-laya-english-mxfp4",
+  "author": "sahilchachra",
+  "url": "https://huggingface.co/sahilchachra/Laya-English-MXFP4",
+  "created_at": "2026-09-23T12:11:33.000Z",
+  "updated_at": "2026-09-23T12:11:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "modernbert",
+    "quantized",
+    "encoder",
+    "text-classification",
+    "feature-extraction",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 394781696,
+  "parameters_human": "394.8M",
+  "storage_bytes": 209840736,
+  "storage_human": "210 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "Instead of staying bitter, I decided to take everything I learned, fix every architectural limitation of the old approach, and build a completely open, horizontal System 1 decision model family: Laya."
+    },
+    {
+      "title": "sahilchachra/LFM2.5-VL-3B-MXFP4 · Hugging Face",
+      "url": "https://huggingface.co/sahilchachra/LFM2.5-VL-3B-MXFP4",
+      "snippet": "MLX MXFP4 (4-bit microscaling float) quantization of LiquidAI/LFM2.5-VL-3B, Liquid AI&#x27;s efficient vision-language model: a hybrid convolution/attention LFM2.5 text backbone (≈2.6B) paired with a SigLIP2 NaFlex vision encoder (≈400M)."
+    },
+    {
+      "title": "sahilchachra (Sahil Chachra) - Hugging Face",
+      "url": "https://huggingface.co/sahilchachra/collections",
+      "snippet": "Vision-Language Models (VLMs) for real-time video analytics, multi-camera inference pipelines, prompt engineering and frame-batching optimization for production deployment, edge/GPU benchmarking..."
+    },
+    {
+      "title": "GitHub - SahilChachra/SahilChachra: GitHub profile readme.",
+      "url": "https://github.com/SahilChachra/SahilChachra",
+      "snippet": "🔭 AI Architect @ BLUE — building a real-time, multi-camera VLM pipeline for warehouse & retail vision analytics. 🧠 I work across LLMs, VLMs, multi-agent systems, and on-device inference — taking models from research to production at the edge."
+    },
+    {
+      "title": "Laya | AI Pro Playbook",
+      "url": "https://aiproplaybook.com/tools/laya",
+      "snippet": "Laya is an open-weight decision model from Convai Innovations, released September 18, 2026 under the Apache 2.0 license. Like TypeSafe&#x27;s Jev, it answers typed questions about a ticket, email or document with calibrated probabilities instead of writing text, but it runs on your own hardware, at about 33 milliseconds per decision on a single GPU. Its comparisons with Jev are the developer&#x27;s own ..."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Thaurock/Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF",
+  "slug": "thaurock-qwen3-coder-30b-a3b-instruct-abliterated-gguf",
+  "author": "Thaurock",
+  "url": "https://huggingface.co/Thaurock/Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF",
+  "created_at": "2026-09-23T03:30:11.000Z",
+  "updated_at": "2026-09-23T05:58:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3",
+    "coder",
+    "text-generation",
+    "GGUF",
+    "abliterated",
+    "uncensored",
+    "moe",
+    "base_model:huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 252654681376,
+  "storage_human": "252.7 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Thaurock/Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-Coder-30B-A3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen--qwen3-coder-30b-a3b-... | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3-coder-30b-a3b-instruct",
+      "snippet": "Qwen3-Coder is available in multiple sizes. Today, we&#x27;re excited to introduce Qwen3-Coder-30B-A3B-Instruct. This streamlined model maintains impressive performance and efficiency, featuring the following key enhancements: Significant Performance among open models on Agentic Coding, Agentic Browser-Use, and other foundational coding tasks. Long-context Capabilities with native support for 256K ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Coder: Qwen3-Coder is the code version of Qwen3 ...",
+      "url": "https://github.com/QwenLM/Qwen3-Coder",
+      "snippet": "We are announcing Qwen3-Coder, our most agentic code model to date. Qwen3-Coder is available in multiple sizes, Qwen3-Coder-480B-A35B-Instruct, Qwen3-Coder-30B-A3B-Instruct, Qwen3-Coder-Next, offering exceptional performance in both coding and agentic tasks."
+    },
+    {
+      "title": "Qwen3 Coder 30b A3b Instruct - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/qwen3-coder-30b-a3b-instruct.html",
+      "snippet": "Download Qwen3 Coder 30b A3b Instruct GGUF model. 63.0 GB, 144,421 downloads, 727 likes."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "strivedi183/laya-typed-decisions-onnx-fp16",
+  "slug": "strivedi183-laya-typed-decisions-onnx-fp16",
+  "author": "strivedi183",
+  "url": "https://huggingface.co/strivedi183/laya-typed-decisions-onnx-fp16",
+  "created_at": "2026-09-23T12:43:01.000Z",
+  "updated_at": "2026-09-23T14:43:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 845946516,
+  "storage_human": "846 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dark Fall – The Rise and Fall of a Great Ruler | PawManga",
+      "url": "https://mangapaw.com/manga/darkpaw-fall/",
+      "snippet": "Jul 6, 2026 · Betrayed by his former followers, Leon becomes the target of a twisted scheme—they seek to use him as the vessel to …Read more"
+    },
+    {
+      "title": "Read Manga Online Free - Latest Manga Chapters Updated Daily",
+      "url": "https://www.panmanga.com/en/",
+      "snippet": "Read manga online free with the latest manga chapters, fast page loading, and high quality scans updated daily. Enjoy a smooth, …"
+    },
+    {
+      "title": "Dog and Bird – Read Full Manga Online | PAWMANGA",
+      "url": "https://mangapaw.com/manga/dog-and-pabird/",
+      "snippet": "Jul 6, 2026 · Dog and Bird follows Seo Gyu-ha, a rare male Omega—an anomaly in a world where Omegas are almost always …"
+    },
+    {
+      "title": "Series - PandaManga.com",
+      "url": "https://pandamanga.com/series.php",
+      "snippet": "Enjoy full issue comics as well as single strip funnies from Panda Manga! Check back regularly as we are always updating and …"
+    },
+    {
+      "title": "PAWMANGA - EverythingMoe",
+      "url": "https://everythingmoe.com/s/pawmanga",
+      "snippet": "PAWMANGA review by EverythingMoe. Up to date links, domains, pro/cons, and more."
+    }
+  ]
+}

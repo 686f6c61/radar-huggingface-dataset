@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "danish-foundation-models/DFM-Mimir-v1.5-GGUF",
+  "slug": "danish-foundation-models-dfm-mimir-v1-5-gguf",
+  "author": "danish-foundation-models",
+  "url": "https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5-GGUF",
+  "created_at": "2026-09-23T11:32:22.000Z",
+  "updated_at": "2026-09-23T11:57:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "da",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "hrm_text",
+    "prefix-lm",
+    "danish",
+    "text-generation",
+    "da",
+    "en",
+    "base_model:danish-foundation-models/DFM-Mimir-v1.5",
+    "base_model:quantized:danish-foundation-models/DFM-Mimir-v1.5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1786775040,
+  "parameters_human": "1.79B",
+  "storage_bytes": 6668920800,
+  "storage_human": "6.7 GB",
+  "base_model": "danish-foundation-models/DFM-Mimir-v1.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Danish language - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Danish_language",
+      "snippet": "Danish is a Germanic language of the North Germanic branch. Other names for this group are the Nordic [13] or Scandinavian …"
+    },
+    {
+      "title": "Danois — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Danois",
+      "snippet": "Exemples ... Notes et références (en) Cet article est partiellement ou en totalité issu de l’article de Wikipédia en anglais intitulé « …"
+    },
+    {
+      "title": "Denmark - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Denmark",
+      "snippet": "The Danish parliament is unicameral and called the Folketing (Danish: Folketinget). It is the legislature of the Kingdom of Denmark, …"
+    },
+    {
+      "title": "DANISH ENDURANCE Collection | Decathlon",
+      "url": "https://www.decathlon.fr/brands/danish-endurance?msockid=2d2ebc6c6908619e26f6abb168d56037",
+      "snippet": "DANISH ENDURANCE chez Decathlon : découvrez notre sélection de vêtements et d'équipements haute performance pour tous les …"
+    },
+    {
+      "title": "DANISH ENDURANCE® - C'est un état d'esprit",
+      "url": "https://danishendurance.com/fr-fr",
+      "snippet": "DANISH ENDURANCE® est une marque de sport et de plein air née de l'idée que l'équilibre physique et mental favorise l'endurance …"
+    }
+  ]
+}

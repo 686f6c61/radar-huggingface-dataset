@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "accessonai/VEDA-1.0-4B-MLX",
+  "slug": "accessonai-veda-1-0-4b-mlx",
+  "author": "accessonai",
+  "url": "https://huggingface.co/accessonai/VEDA-1.0-4B-MLX",
+  "created_at": "2026-09-23T14:00:44.000Z",
+  "updated_at": "2026-09-23T14:00:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vMLX — Run LLMs Locally on Your Mac | MLX for Apple Silicon",
+      "url": "https://vmlx.net/",
+      "snippet": "MLX inference for Apple Silicon. Prefix caching, paged KV cache, continuous batching. OpenAI- and Anthropic-compatible. Free and open source."
+    },
+    {
+      "title": "vmlx - AI Agents on GitHub | SkillsLLM",
+      "url": "https://skillsllm.com/skill/vmlx",
+      "snippet": "vmlx is an open-source ai agents skill for AI coding assistants such as Claude Code, Codex CLI, and ChatGPT, built by jjang-ai. vMLX - Use MLX models easily - JANGQ (GGUF for MLX) - Not dependant on mlx_vlm."
+    },
+    {
+      "title": "MLX",
+      "url": "https://mlx-framework.org/",
+      "snippet": "​MLX is an array framework for efficient and flexible machine learning on Apple silicon · Get started with MLX on Apple silicon"
+    },
+    {
+      "title": "MLX 0.32.2 documentation",
+      "url": "https://ml-explore.github.io/mlx/",
+      "snippet": "We cannot provide a description for this page right now"
+    },
+    {
+      "title": "Introducing the unified multi-modal `MLX` engine architecture in ...",
+      "url": "https://lmstudio.ai/blog/unified-mlx-engine",
+      "snippet": "[0.83, 0.40, 0.67, ...] + [0.28, 0.11, 0.96, ...] → [0.83, 0.40, 0.67, ..., 0.28, 0.11, 0.96, ...] (3) Merged embeddings are passed through the text model, and the model generates text based on the information from both the text and images · If there are no images in the prompt, then the \"merged embeddings\" are simply the text embeddings. In the MLX Python landscape, there are two major libraries providing model implementations and infrastructure for interacting with LLMs on Apple Silicon:"
+    }
+  ]
+}

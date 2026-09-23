@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mohosin-m/tartanimuch",
+  "slug": "mohosin-m-tartanimuch",
+  "author": "mohosin-m",
+  "url": "https://huggingface.co/mohosin-m/tartanimuch",
+  "created_at": "2026-09-23T18:04:38.000Z",
+  "updated_at": "2026-09-23T18:06:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5531785,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TartanIMU - AirLab",
+      "url": "https://superodometry.com/tartanimu",
+      "snippet": "CVPR 2025 TartanIMU A Light Foundation Model for Inertial Positioning in Robotics One inertial model learns motion across ground vehicles, quadrupeds, drones, and humans, then adapts efficiently to new robots and operating conditions."
+    },
+    {
+      "title": "GitHub - superxslam/TartanIMU: First Attempt on IMU \"Foundation Model\"",
+      "url": "https://github.com/superxslam/TartanIMU",
+      "snippet": "First Attempt on IMU \"Foundation Model\". Contribute to superxslam/TartanIMU development by creating an account on GitHub."
+    },
+    {
+      "title": "Unleashing the Power of Open Source AI Models and Machine Learning ...",
+      "url": "https://aimodels.org/",
+      "snippet": "Open Source AI Community We are committed to building a community of developers, researchers, and enthusiasts who share our vision of democratizing AI and making it accessible to everyone. Collection of AI Model Downloads and Machine Learning Tools Explore a collection of open source AI models and tools for machine learning."
+    },
+    {
+      "title": "hoppery/tartanimu-iros2026-mobilityai at main - Hugging Face",
+      "url": "https://huggingface.co/hoppery/tartanimu-iros2026-mobilityai/tree/main",
+      "snippet": "hoppery / tartanimu-iros2026-mobilityai Like 0 Other PyTorch inertial-odometry imu state-estimation robotics License:mit Model card FilesFiles and versions xet Community Copy to bucket new main tartanimu-iros2026-mobilityai 164 MB Ctrl+K Ctrl+K 1 contributor History:2 commits hoppery"
+    },
+    {
+      "title": "AI Model Downloads - 495 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

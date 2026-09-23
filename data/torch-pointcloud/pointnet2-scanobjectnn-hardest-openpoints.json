@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/pointnet2.scanobjectnn-hardest.openpoints",
+  "slug": "torch-pointcloud-pointnet2-scanobjectnn-hardest-openpoints",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/pointnet2.scanobjectnn-hardest.openpoints",
+  "created_at": "2026-08-28T18:17:39.000Z",
+  "updated_at": "2026-09-23T17:14:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "pointnet2",
+    "classification",
+    "dataset:scanobjectnn",
+    "arxiv:1706.02413",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1476175,
+  "parameters_human": "1.5M",
+  "storage_bytes": 5912924,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ScanObjectNN (PB_T50_RS)",
+      "metric": "OA",
+      "value": 86.16
+    },
+    {
+      "task": null,
+      "dataset": "ScanObjectNN (PB_T50_RS)",
+      "metric": "mAcc",
+      "value": 84.36
+    }
+  ],
+  "sources": [
+    {
+      "title": "PyTorch",
+      "url": "https://pytorch.org/",
+      "snippet": "1 day ago · TL;DR To achieve state-of-the-art performance at the frontier, vLLM is changing its internal implementation in ways that …"
+    },
+    {
+      "title": "Télécharger Torch (gratuit) Windows - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche418134-torch.html",
+      "snippet": "2 days ago · Torch est un navigateur web fondé sur le moteur Chromium. Il propose une interface familière, proche de celle de …"
+    },
+    {
+      "title": "Get Started - PyTorch",
+      "url": "https://pytorch.org/get-started/locally/",
+      "snippet": "Get Started Select preferences and run the command to install PyTorch locally, or get started quickly with one of the supported cloud …"
+    },
+    {
+      "title": "Torch Browser - Download",
+      "url": "https://torch.en.softonic.com/",
+      "snippet": "Jun 16, 2026 · Torch Browser provides a user-friendly Chromium interface with enhanced media tools for easy downloading and …"
+    },
+    {
+      "title": "torch · PyPI",
+      "url": "https://pypi.org/project/torch/",
+      "snippet": "You can write new neural network layers in Python using the torch API or your favorite NumPy-based libraries such as SciPy. If you …"
+    }
+  ]
+}

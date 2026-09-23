@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "AiArtLab/zen-image-edit",
+  "slug": "aiartlab-zen-image-edit",
+  "author": "AiArtLab",
+  "url": "https://huggingface.co/AiArtLab/zen-image-edit",
+  "created_at": "2026-09-22T10:54:42.000Z",
+  "updated_at": "2026-09-23T07:19:12.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "image-editing",
+    "qwen-image",
+    "text-encoder",
+    "adapter",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "diffusers:ZenImageEditPipeline",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 102,
+  "trending_score": 18,
+  "parameters": 7274869766,
+  "parameters_human": "7.27B",
+  "storage_bytes": 27952957608,
+  "storage_human": "28.0 GB",
+  "base_model": "Qwen/Qwen-Image-2.1, Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Powerful AI image edit tools - AI Vlog Image Generator",
+      "url": "https://duckduckgo.com/y.js?ad_domain=openart.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=r53egxHIhc_zqooWj6pOf40l9Dkir3gBFtUOm52GEY7tjdZMtsXjnoy_CQyyLfHaZTVO4_%2DOfSNeGM6vQKIY%2DglB3%2D4iGdE8mBhmbBg4oH2kH4VdLX96LIYRDll8o0pl86I8SfFrp1Q3XDnsQKYgWU4VuLmMAIb5NzjzC8Jqy84.2lldQYvYW23BxKeo5aFQ6w&rut=93851042c1c6b9d35bb256a0d36cadcf1a1c3cdd3542f7c10d21a3d8c1e44808&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8vuwMyWp66Z4HAGugcaO0QzVUCUwtD2irscx16N8a2fkYiauduPl7M4bpjiOQJkDwOG%2D6QttLYQBpc%2DyENtIZjoar7ofFuuyFsrVUt_%2D345RoxBn82AnP%2Ds7pYy4IF5y4cgdPOuuNGNOo6IKFxYge39P7THXDxxStk_3HItIa0EgA2m8SSsu3fBCfHXEYoiJ8tIG0srsTSy2ubO7ANixsnTwc_O4%26u%3DaHR0cHMlM2ElMmYlMmZvcGVuYXJ0LmFpJTJmZmVhdHVyZXMlMmZhaS1waG90by1lZGl0b3IlMmYlM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RzZWFyY2gtZ29vZ2xlLWdsb2JhbCh0MSlfc2VhcmNoX2ZlYXR1cmVzX2FpX21heF9sdHYtc2VhcmNoLWFjcS13ZWIlMjZ1dG1fY29udGVudCUzZEVkaXRfSW1hZ2UlMjZ1dG1fdGVybSUzZGFpJTI1MjBpbWFnZSUyNTIwZWRpdG9yJTI2dXRtX2NhbXBhaWduJTNkR2xvYmFsKFQxKV9TZWFyY2hfRmVhdHVyZXNfQUlfTWF4X0xUViUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBwYyUyNnV0bV9pZCUzZDU3MTU5MDE2NSUyNmhzYV9hY2MlM2Q5NTc0NTA0ODAwJTI2aHNhX2NhbSUzZDIzNzM0MzEzNDcwJTI2aHNhX2dycCUzZDExODE5NzczNzAyMDM3MzclMjZoc2FfYWQlM2QlMjZoc2Ffc3JjJTNkcyUyNmhzYV90Z3QlM2Rrd2QtNzM4NzQzNDY5Mzk4ODYlM2Fsb2MtNjYlMjZoc2Ffa3clM2RhaSUyNTIwaW1hZ2UlMjUyMGVkaXRvciUyNmhzYV9tdCUzZHAlMjZoc2FfbmV0JTNkYWR3b3JkcyUyNmhzYV92ZXIlM2QzJTI2bXNjbGtpZCUzZDY2NjU3ZGQ1YjYwYTFjYjZjNDgxMTc2NjdlOTRlYzFlJTI2dXRtX2NvbnRlbnQlM2RFZGl0X0ltYWdl%26rlid%3D66657dd5b60a1cb6c48117667e94ec1e&vqd=4-17447400676529585086605691186527360509&iurl=%7B1%7DIG%3DF323F65280FB46D9BE00159AEC414CCB%26CID%3D343D49D3DD3F6EB903A75E0EDC446FAB%26ID%3DDevEx%2C5037.1",
+      "snippet": "Describe how you want to edit the Image. Generate and edit Images in one AI suite. Turn ordinary images into stunning visuals with fast AI editing tools."
+    },
+    {
+      "title": "AiArtLab/zen-image-edit · Hugging Face",
+      "url": "https://huggingface.co/AiArtLab/zen-image-edit",
+      "snippet": "Instructions to use AiArtLab/zen-image-edit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use AiArtLab/zen-image-edit with Diffusers:"
+    },
+    {
+      "title": "zen-image-edit - a Hugging Face Space by AiArtLab",
+      "url": "https://huggingface.co/spaces/AiArtLab/zen-image-edit-demo",
+      "snippet": "Provide a text description and, if you like, up to three reference images. The app will generate a new picture or edit the supplied images according to the prompt, letting you change subjects, back..."
+    },
+    {
+      "title": "AiArtLab",
+      "url": "https://aiartlab.org/",
+      "snippet": "aiartlab We&#x27;re the Small Team of Entusiasts - GPU hobos training cutting-edge AI models on our own dime/time and with community support. 🎨 Our Mission Creating free, compact, and fast AI models that can be trained on consumer hardware. 🚀 Featured Projects Simple Diffusion (SDXS) XS Size, Excess Quality SDXS - Our flagship 1.6B parameter ..."
+    },
+    {
+      "title": "Image Editing AI Leaderboard - Best Models Compared",
+      "url": "https://arena.ai/leaderboard/image-edit",
+      "snippet": "Image Edit Arena 🏆Single Image Edit View overall rankings across image editing AI models."
+    }
+  ]
+}

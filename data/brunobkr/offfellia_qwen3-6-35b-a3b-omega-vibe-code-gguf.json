@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Brunobkr/OFFFELLIA_Qwen3.6-35B-A3B-OMEGA-vibe-code.gguf",
+  "slug": "brunobkr-offfellia_qwen3-6-35b-a3b-omega-vibe-code-gguf",
+  "author": "Brunobkr",
+  "url": "https://huggingface.co/Brunobkr/OFFFELLIA_Qwen3.6-35B-A3B-OMEGA-vibe-code.gguf",
+  "created_at": "2026-09-23T12:08:45.000Z",
+  "updated_at": "2026-09-23T12:37:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19796420707,
+  "storage_human": "19.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OFFELLIA_IQ4_XS_Qwen3.6-35B-A3B-uncensored-heretic.gguf",
+      "url": "https://huggingface.co/Brunobkr/OFFELLIA_IQ4_XS_Qwen3.6-35B-A3B-uncensored-heretic.gguf",
+      "snippet": "Instructions to use Brunobkr/OFFELLIA_IQ4_XS_Qwen3.6-35B-A3B-uncensored-heretic.gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Brunobkr/OFFELLIA_IQ4_XS_Qwen3.6-35B-A3B-uncensored-heretic.gguf at main",
+      "url": "https://huggingface.co/Brunobkr/OFFELLIA_IQ4_XS_Qwen3.6-35B-A3B-uncensored-heretic.gguf/tree/main",
+      "snippet": "Instructions to use Brunobkr/OFFELLIA_IQ4_XS_Qwen3.6-35B-A3B-uncensored-heretic.gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "qwen3.6:35b-a3b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.6:35b-a3b",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B · Models - modelscope.ai",
+      "url": "https://www.modelscope.ai/models/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "Qwen3.6-35B-A3B - An open-source model by Qwen on ModelScope."
+    },
+    {
+      "title": "How to Run Qwen 3.6 Locally - 27B Dense, 35B MoE, and Coding Variants ...",
+      "url": "https://dev.to/purpledoubled/how-to-run-qwen-36-locally-27b-dense-35b-moe-and-coding-variants-setup-guide-4di",
+      "snippet": "Originally published on locallyuncensored.com Qwen 3.6 dropped on April 21 2026. Two main families: a 27B dense model that activates every parameter per token and a 35B MoE with 3B active per token. Both ship with vision, agentic coding, thinking-mode preservation, and a 256K context window."
+    }
+  ]
+}

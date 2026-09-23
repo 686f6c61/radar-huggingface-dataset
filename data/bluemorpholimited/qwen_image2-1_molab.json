@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bluemorpholimited/qwen_image2.1_molab",
+  "slug": "bluemorpholimited-qwen_image2-1_molab",
+  "author": "bluemorpholimited",
+  "url": "https://huggingface.co/bluemorpholimited/qwen_image2.1_molab",
+  "created_at": "2026-09-23T18:45:39.000Z",
+  "updated_at": "2026-09-23T18:45:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "qwen-image",
+    "molab",
+    "marimo",
+    "blackwell",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 101156,
+  "storage_human": "101156 B",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail - Email from Google",
+      "url": "https://mail.google.com/mail",
+      "snippet": "Gmail is email that's intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access.Read more"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/inbox",
+      "snippet": "Sign in to Outlook to access and manage your email efficiently."
+    },
+    {
+      "title": "Gmail",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/ServiceLogin",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    },
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    }
+  ]
+}

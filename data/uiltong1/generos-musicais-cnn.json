@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "uiltong1/generos-musicais-cnn",
+  "slug": "uiltong1-generos-musicais-cnn",
+  "author": "uiltong1",
+  "url": "https://huggingface.co/uiltong1/generos-musicais-cnn",
+  "created_at": "2026-09-23T01:38:39.000Z",
+  "updated_at": "2026-09-23T01:40:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44946421,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Application of artificial intelligence CNN model in emotional ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-33623-1",
+      "snippet": "The model integrates Convolutional Neural Network (CNN), Bidirectional Gated Recurrent Unit (BiGRU), and Attention Mechanism, aiming to accurately capture complex emotional information in audio."
+    },
+    {
+      "title": "AI Music Genre Converter - GitHub",
+      "url": "https://github.com/Nooreyy/AI-Music-Genre-Converter",
+      "snippet": "The AI Music Genre Converter allows users to upload a music file, automatically detect its genre using a trained Convolutional Neural Network (CNN), generate an optimized music transformation prompt using Google Gemini, and finally create a new version of the music in the selected target genre using Facebook MusicGen."
+    },
+    {
+      "title": "Music genre classification with parallel convolutional neural networks ...",
+      "url": "https://www.nature.com/articles/s41598-025-90619-7",
+      "snippet": "The proposed CNN-TE model outperforms other CNN architectures on the GTZAN and FMA datasets while having fewer parameters and less inference time."
+    },
+    {
+      "title": "GitHub - ronnie-allen/Music-Genre-Classification-with-CNN: A machine ...",
+      "url": "https://github.com/ronnie-allen/Music-Genre-Classification-with-CNN",
+      "snippet": "This project focuses on classifying music tracks into various genres using machine learning techniques. By analyzing audio features, the model predicts the genre of a given music track, aiding in music organization and recommendation systems."
+    },
+    {
+      "title": "(PDF) A Novel CNN Architecture for Music Genre ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/387290921_A_Novel_CNN_Architecture_for_Music_Genre_Classification_from_Audio_Features",
+      "snippet": "The Convolutional Neural Network (CNN) model for music genre classification demonstrates promising performance in automatically categorizing music into different genres based on audio features."
+    }
+  ]
+}

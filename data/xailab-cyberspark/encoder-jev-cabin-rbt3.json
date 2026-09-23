@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "XAILab-CyberSpark/encoder-jev-cabin-rbt3",
+  "slug": "xailab-cyberspark-encoder-jev-cabin-rbt3",
+  "author": "XAILab-CyberSpark",
+  "url": "https://huggingface.co/XAILab-CyberSpark/encoder-jev-cabin-rbt3",
+  "created_at": "2026-09-23T13:23:20.000Z",
+  "updated_at": "2026-09-23T13:28:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "jev",
+    "cabin-intent",
+    "encoder",
+    "custom-code",
+    "research",
+    "text-classification",
+    "zh",
+    "base_model:hfl/rbt3",
+    "base_model:finetune:hfl/rbt3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 47117799,
+  "parameters_human": "47.1M",
+  "storage_bytes": 188479692,
+  "storage_human": "188 MB",
+  "base_model": "hfl/rbt3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2",
+  "slug": "chaoliangunsw-jev-style-qwen3-5-2b-decision-v2",
+  "author": "chaoliangUNSW",
+  "url": "https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2",
+  "created_at": "2026-09-23T16:16:34.000Z",
+  "updated_at": "2026-09-23T17:40:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "decision-model",
+    "classification",
+    "calibration",
+    "qwen3.5",
+    "jev-style",
+    "single-prefill",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-2B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 3784754678,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.5-2B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF · Hugging Face",
+      "url": "https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF",
+      "snippet": "Jev (TypeSafe AI, 2026) introduced System One models: instead of generating text, the model takes a state plus a typed question and returns a decision with calibrated probabilities in a single pass."
+    },
+    {
+      "title": "chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-MLX-bf16 · Hugging Face",
+      "url": "https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-MLX-bf16",
+      "snippet": "Jev (TypeSafe AI, 2026) introduced System One models: instead of generating text, the model takes a state plus a typed question and returns a decision with calibrated probabilities in a single pass."
+    },
+    {
+      "title": "chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF | Hugging Bay",
+      "url": "https://huggingbay.xyz/artifact/hf-model-chaoliangunsw-jev-style-qwen3-5-2b-decision-gguf",
+      "snippet": "chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF is an open-weights language model for text generation under the apache-2.0 license (6.8 GB), released Sep 21, 2026. Hosted open-weights model — 1 file carry published SHA-256 checksums you can ..."
+    },
+    {
+      "title": "catalog: qwen3.5-2b-decision (Jev-Style-Qwen3.5-2B-Decision, ...",
+      "url": "https://github.com/john-rocky/coreai-kit/pull/35",
+      "snippet": "catalog: qwen3.5-2b-decision — Jev-Style-Qwen3.5-2B-Decision, read in… … ... … its plain-text decision-function form chaoliangUNSW's Jev-Style-Qwen3.5-2B-Decision (a Qwen3.5-2B-Base fine-tune, English, Apache-2.0; its calibration temperature folded into the final norm, the author reports ECE 0.017 on 1,500 held-out examples) joins the catalog as a `decision` model with `format: decisionFunction` — the plain-text prompt without a chat template, read at the space-prefixed letters ` A`–` Z` (up to 26 options) at T = 1."
+    },
+    {
+      "title": "mlboydaisuke/Qwen3.5-2B-Decision-CoreAI · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/Qwen3.5-2B-Decision-CoreAI",
+      "snippet": "🤗 mlboydaisuke/Qwen3.5-2B-Decision-CoreAI · Apache-2.0 · source chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-MLX-bf16 · revision 69a91b6778df7d11b9e13e0f7d4c6a5aa6ad1bc5 ·"
+    }
+  ]
+}

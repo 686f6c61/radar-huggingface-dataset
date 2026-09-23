@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "nvidia/Nemotron-3-Diarization",
+  "slug": "nvidia-nemotron-3-diarization",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
+  "created_at": "2026-09-01T13:16:57.000Z",
+  "updated_at": "2026-09-23T17:09:56.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "nemo",
+  "languages": [],
+  "tags": [
+    "nemo",
+    "safetensors",
+    "nemotron3_diarization",
+    "audio-frame-classification",
+    "speaker-diarization",
+    "streaming-sortformer",
+    "speaker-tagging",
+    "transformers",
+    "voice-activity-detection",
+    "arxiv:2409.06656",
+    "arxiv:2507.18446",
+    "arxiv:2605.15442",
+    "arxiv:2507.09226",
+    "arxiv:2408.13106",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 67,
+  "downloads_30d": 27,
+  "trending_score": 65,
+  "parameters": 99226504,
+  "parameters_human": "99.2M",
+  "storage_bytes": 1009945563,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …"
+    },
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
+    },
+    {
+      "title": "GeForce NOW",
+      "url": "https://play.geforcenow.com/",
+      "snippet": "Instantly play the most demanding PC games and seamlessly play across your devices."
+    },
+    {
+      "title": "NVIDIA",
+      "url": "https://www.nvidia.fr/default.htm",
+      "snippet": "Explorez les dernières innovations et produits NVIDIA, leader en technologies graphiques et d'intelligence artificielle."
+    },
+    {
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia has been widely described as a Big Tech …"
+    }
+  ]
+}

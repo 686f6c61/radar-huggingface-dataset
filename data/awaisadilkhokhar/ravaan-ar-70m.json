@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "AwaisAdilKhokhar/ravaan-ar-70m",
+  "slug": "awaisadilkhokhar-ravaan-ar-70m",
+  "author": "AwaisAdilKhokhar",
+  "url": "https://huggingface.co/AwaisAdilKhokhar/ravaan-ar-70m",
+  "created_at": "2026-09-23T16:57:16.000Z",
+  "updated_at": "2026-09-23T17:15:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "ur"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "urdu",
+    "autoregressive",
+    "causal-lm",
+    "from-scratch",
+    "low-resource",
+    "text-generation",
+    "ur",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:Mavkif/Roman-Urdu-Parl-split",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 69975680,
+  "parameters_human": "70.0M",
+  "storage_bytes": 280220355,
+  "storage_human": "280 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

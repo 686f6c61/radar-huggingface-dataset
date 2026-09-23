@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "kalia-lm/kalia-v012",
+  "slug": "kalia-lm-kalia-v012",
+  "author": "kalia-lm",
+  "url": "https://huggingface.co/kalia-lm/kalia-v012",
+  "created_at": "2026-09-22T12:48:46.000Z",
+  "updated_at": "2026-09-23T14:13:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "kalia",
+    "text-generation",
+    "small-language-model",
+    "from-scratch",
+    "muon",
+    "qk-norm",
+    "stories",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 83587840,
+  "parameters_human": "83.6M",
+  "storage_bytes": 19574800850,
+  "storage_human": "19.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kalia Nature | Produits naturels pour cheveux texturés",
+      "url": "https://kalianature.com/",
+      "snippet": "Kalia Nature, c’est 10 ans d’expertise à transmettre l’art de prendre soin de ses cheveux, en mettant à l’honneur le savoir-faire …"
+    },
+    {
+      "title": "Produits de soin pour cheveux texturés - Kalia Nature",
+      "url": "https://kalianature.com/collections/nos-produits",
+      "snippet": "Découvrez la gamme Kalia Nature : soins, shampoings, masques et accessoires pour cheveux crépus, frisés, bouclés ou ondulés. …"
+    },
+    {
+      "title": "Kalia Nature, Soins Capillaires Naturels pour Cheveux Texturés ...",
+      "url": "https://www.laboutiqueducoiffeur.com/fr-fr/marques/kalia-nature",
+      "snippet": "Découvrez Kalia Nature, une marque française dédiée au soin des cheveux ondulés, bouclés, frisés et crépus grâce à des produits …"
+    },
+    {
+      "title": "Syndic de copropriété : notre coeur de métier | Kallia immobilier",
+      "url": "https://kallia-immobilier.fr/",
+      "snippet": "Cabinet de gestion indépendant, KALLIA IMMOBILIER a été créé pour offrir une réelle alternative aux groupes immobiliers. En …"
+    },
+    {
+      "title": "Produits – Kalia Hair",
+      "url": "https://kaliahair.com/collections/all",
+      "snippet": "Kalia Hair Le prix le plus élevé est de 109,90€ Réinitialiser"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "netease-youdao/Confucius4-R2T2-GGUF",
+  "slug": "netease-youdao-confucius4-r2t2-gguf",
+  "author": "netease-youdao",
+  "url": "https://huggingface.co/netease-youdao/Confucius4-R2T2-GGUF",
+  "created_at": "2026-09-20T08:27:24.000Z",
+  "updated_at": "2026-09-20T10:47:52.000Z",
+  "license": "netease-model-use-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "GGUF",
+    "confucius4",
+    "r2t2",
+    "asr",
+    "streaming",
+    "real-time",
+    "low-latency",
+    "speech-recognition",
+    "multilingual",
+    "automatic-speech-recognition",
+    "zh",
+    "base_model:netease-youdao/Confucius4-R2T2",
+    "base_model:quantized:netease-youdao/Confucius4-R2T2",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 14,
+  "downloads_30d": 921,
+  "trending_score": 14,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 7379282560,
+  "storage_human": "7.4 GB",
+  "base_model": "netease-youdao/Confucius4-R2T2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NetEase Games",
+      "url": "https://www.neteasegames.com/",
+      "snippet": "NetEase Games, the online games division of NetEase, Inc. (NASDAQ: NTES and HKEX: 9999), is a leading global developer and …"
+    },
+    {
+      "title": "NetEase - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/NetEase",
+      "snippet": "NetEase, Inc. (Chinese: 网易) is a Chinese Internet technology company. Its businesses include video games, news aggregation, …"
+    },
+    {
+      "title": "NetEase Games",
+      "url": "https://account.neteasegames.com/",
+      "snippet": "Utilize your NetEase Games account to seamlessly log in across Android, iOS, PC, and consoles. If the game supports cross …"
+    },
+    {
+      "title": "NetEase — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/NetEase",
+      "snippet": "NetEase, Inc. (chinois simplifié : 网易 ; chinois traditionnel : 網易 ; pinyin : Wǎng Yì) est une société internet chinoise qui exploite le …"
+    },
+    {
+      "title": "NetEase Games",
+      "url": "https://account.neteasegames.com/account/login",
+      "snippet": "Your personal information is handled in strict compliance with our Privacy Policy."
+    }
+  ]
+}

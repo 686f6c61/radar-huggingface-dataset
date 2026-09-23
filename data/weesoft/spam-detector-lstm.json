@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "weesoft/spam-detector-lstm",
+  "slug": "weesoft-spam-detector-lstm",
+  "author": "weesoft",
+  "url": "https://huggingface.co/weesoft/spam-detector-lstm",
+  "created_at": "2026-09-23T14:43:44.000Z",
+  "updated_at": "2026-09-23T15:44:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "text-classification",
+    "spam-detection",
+    "email-filtering",
+    "pytorch",
+    "lstm",
+    "french",
+    "fr",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9113377,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spam Email Classification using LSTM - GitHub",
+      "url": "https://github.com/sergio11/spam_email_classifier_lstm",
+      "snippet": "This project uses a Bi-directional LSTM model 📧🤖 to classify emails as spam or legitimate, utilizing NLP techniques like tokenization, padding, and stopword removal. It aims to create an effective email classifier 💻📊 while addressing overfitting with strategies like early stopping 🚫. - sergio11/spam_email_classifier_lstm"
+    },
+    {
+      "title": "GitHub - landenramsey/SpamEmailDetector: AI-powered spam detection ...",
+      "url": "https://github.com/landenramsey/SpamEmailDetector",
+      "snippet": "AI-powered spam detection system using PyTorch LSTM (97% accuracy) to classify emails in real time, reducing inbox clutter and security risks. Full-stack implementation with a FastAPI backend, Chro..."
+    },
+    {
+      "title": "(PDF) LSTM-Powered Spam Detection: A Deep Learning ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/390864855_LSTM-Powered_Spam_Detection_A_Deep_Learning_Approach_for_Sequential_Text_Classification",
+      "snippet": "This approach LSTM-Powered Spam Detection: A Deep Learning Approach for Sequential Text Classification 12 provides a reliable and scalable solution for mitigating spam-related issues in messaging ..."
+    },
+    {
+      "title": "lokas/lstm-spam-detector · Hugging Face",
+      "url": "https://huggingface.co/lokas/lstm-spam-detector",
+      "snippet": "🧠 LSTM Spam Detector This repository contains a simple LSTM-based binary text classification model to detect spam messages, built using Keras and trained on a small dataset of English spam and non-spam messages."
+    },
+    {
+      "title": "Improved Spam Detection Through LSTM- Based Approach",
+      "url": "https://ieeexplore.ieee.org/document/10527667",
+      "snippet": "The results achieved remarkable improvements that outperform traditional rule-based filters and substantially reduce false positives in email and SMS classification. The research highlights the potential of NLP and LSTM-based models in revolutionizing spam detection, making it more accurate providing the accuracy of 96.19% which is more promising."
+    }
+  ]
+}

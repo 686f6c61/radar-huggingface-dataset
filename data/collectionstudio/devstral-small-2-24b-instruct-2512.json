@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/Devstral-Small-2-24B-Instruct-2512",
+  "slug": "collectionstudio-devstral-small-2-24b-instruct-2512",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/Devstral-Small-2-24B-Instruct-2512",
+  "created_at": "2026-09-23T16:49:33.000Z",
+  "updated_at": "2026-09-23T16:49:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral3",
+    "mistral-common",
+    "arxiv:2501.19399",
+    "base_model:mistralai/Mistral-Small-3.1-24B-Base-2503",
+    "base_model:quantized:mistralai/Mistral-Small-3.1-24B-Base-2503",
+    "license:apache-2.0",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24011361280,
+  "parameters_human": "24.01B",
+  "storage_bytes": 51619926500,
+  "storage_human": "51.6 GB",
+  "base_model": "mistralai/Mistral-Small-3.1-24B-Base-2503",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

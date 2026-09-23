@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "RikkaBotan/NexteraBERT-Mezzoforte-220M-en",
+  "slug": "rikkabotan-nexterabert-mezzoforte-220m-en",
+  "author": "RikkaBotan",
+  "url": "https://huggingface.co/RikkaBotan/NexteraBERT-Mezzoforte-220M-en",
+  "created_at": "2026-09-12T02:43:21.000Z",
+  "updated_at": "2026-09-22T01:27:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "nexterabert",
+    "encoder",
+    "fill-mask",
+    "masked-lm",
+    "long-context",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0-parquet",
+    "dataset:bigcode/starcoderdata",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 94,
+  "trending_score": 11,
+  "parameters": 212633600,
+  "parameters_human": "212.6M",
+  "storage_bytes": 1710196146,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RikkaBotan/NexteraBERT-Mezzoforte-220M-en · Hugging Face",
+      "url": "https://huggingface.co/RikkaBotan/NexteraBERT-Mezzoforte-220M-en",
+      "snippet": "NexteraBERT is a fast, long-context bidirectional encoder. This repository holds the main model of the NexteraBERT paper: an English model with 212.6M parameters, pretrained with masked language modeling (MLM) on 130B tokens."
+    },
+    {
+      "title": "PDF NexteraBERT.pdf · RikkaBotan/NexteraBERT-Mezzoforte-220M-en at main",
+      "url": "https://huggingface.co/RikkaBotan/NexteraBERT-Mezzoforte-220M-en/blob/main/NexteraBERT.pdf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=nexterabert",
+      "snippet": "RikkaBotan/NexteraBERT-Mezzoforte-220M-en Fill-Mask • 0.2B•Updated about 1 hour ago• 10"
+    },
+    {
+      "title": "RikkaBotan (六花牡丹（Rikka Botan）) - Hugging Face",
+      "url": "https://huggingface.co/RikkaBotan",
+      "snippet": "RikkaBotan/tts-collections updated a dataset about 1 month ago RikkaBotan/tts-collections updated a model 12 months ago RikkaBotan/style_bert_vits2_chinese_original View all activity"
+    },
+    {
+      "title": "RikkaBotan (六花牡丹（Rikka Botan）) - Hugging Face",
+      "url": "https://huggingface.co/RikkaBotan/models",
+      "snippet": "updated a model 27 days ago Organizations"
+    }
+  ]
+}

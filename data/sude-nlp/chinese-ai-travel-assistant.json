@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "sude-nlp/chinese-ai-travel-assistant",
+  "slug": "sude-nlp-chinese-ai-travel-assistant",
+  "author": "sude-nlp",
+  "url": "https://huggingface.co/sude-nlp/chinese-ai-travel-assistant",
+  "created_at": "2026-09-23T18:42:23.000Z",
+  "updated_at": "2026-09-23T18:44:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "zh",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sude Communication",
+      "url": "https://www.sude.fr/",
+      "snippet": "ADRESSE 108 avenue Saint-Germier 31600 Muret France Coordonnées Tel. 05 34 41 88 44 E-mail sude@sude.fr Mentions legales"
+    },
+    {
+      "title": "Suède — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Su%C3%A8de",
+      "snippet": "Carte de la Suède. La Suède est le cinquième pays d'Europe en superficie (450 000 km2), après la Russie, l' Ukraine, la France et l' …"
+    },
+    {
+      "title": "Sude Communication",
+      "url": "https://www.sude.fr/rse.php",
+      "snippet": "Il est donc primordial d’adopter une stratégie RSE dans le cadre de nos opérations, et c’est ce que nous faisons déjà depuis …"
+    },
+    {
+      "title": "Sude — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Sude",
+      "snippet": "Sude Cette page d’homonymie répertorie les différents sujets et articles portant le même nom. Sude peut faire référence à : Sude, …"
+    },
+    {
+      "title": "Accueil | Sude Communication",
+      "url": "https://sude.vetementpromotionnel.fr/",
+      "snippet": "Notre ADN, vous accompagner de façon efficace dans la mise en place de vos opérations, et faire de notre partenariat un outil de …"
+    }
+  ]
+}

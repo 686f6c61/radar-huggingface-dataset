@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "BYU-Idaho/ZaraRerank",
+  "slug": "byu-idaho-zararerank",
+  "author": "BYU-Idaho",
+  "url": "https://huggingface.co/BYU-Idaho/ZaraRerank",
+  "created_at": "2026-09-23T14:57:38.000Z",
+  "updated_at": "2026-09-23T15:01:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "ZaraAI",
+    "scripture",
+    "book-of-mormon",
+    "latter-day-saints",
+    "standard-works",
+    "cross-encoder",
+    "reranker",
+    "text-ranking",
+    "semantic-search",
+    "en",
+    "base_model:BYU-Idaho/ZaraBERTa",
+    "base_model:finetune:BYU-Idaho/ZaraBERTa",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 357317633,
+  "parameters_human": "357.3M",
+  "storage_bytes": 1429318772,
+  "storage_human": "1.4 GB",
+  "base_model": "BYU-Idaho/ZaraBERTa",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "フランス語でよく見かける『C'est』とは、日本語でどんな意味なの.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1311322903",
+      "snippet": "Apr 15, 2007 · フランス語でよく見かける『C'est』とは、日本語でどんな意味なのでしょうか？？ ceは「ス」と発音しますが、指 …Read more"
+    },
+    {
+      "title": "フランス語教えてください。「c'estsur!」と「c'est... - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1157187101",
+      "snippet": "Mar 8, 2011 · フランス語教えてください。 「c'est sur!」と「 c'est vrai!」の使い分けが知りたいです。 どちらも「本当に！ 」みた …"
+    },
+    {
+      "title": "The use of \"est\" and \"c'est\" - French Language Stack Exchange",
+      "url": "https://french.stackexchange.com/questions/42905/the-use-of-est-and-cest",
+      "snippet": "Sep 8, 2020 · There are cases where c'est is almost unavoidable, regardless of formality, like the translation of \"time is money\": Le …"
+    },
+    {
+      "title": "Que veut dire l'expression « Blaireau, va! - French Language Stack ...",
+      "url": "https://french.stackexchange.com/questions/5809/que-veut-dire-lexpression-blaireau-va",
+      "snippet": "Feb 13, 2013 · En langage militaire, un blaireau désignait un bleu (une jeune recrue, à cause de leur uniforme bleu), puis par …"
+    },
+    {
+      "title": "如何理解萨特的「他人即地狱」？ - 知乎",
+      "url": "https://www.zhihu.com/question/19622014",
+      "snippet": "可以看别人的演绎，不过最好结合小说自己去理解。以下是我的理解： 在小说《禁闭》（Huis Clos, \"No Exit\"）之中，萨特描写四个 …"
+    }
+  ]
+}

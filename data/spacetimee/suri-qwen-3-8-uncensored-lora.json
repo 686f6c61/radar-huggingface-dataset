@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "SpaceTimee/Suri-Qwen-3.8-Uncensored-LoRA",
+  "slug": "spacetimee-suri-qwen-3-8-uncensored-lora",
+  "author": "SpaceTimee",
+  "url": "https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-Uncensored-LoRA",
+  "created_at": "2026-09-23T13:27:19.000Z",
+  "updated_at": "2026-09-23T13:27:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 138450592,
+  "storage_human": "138 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

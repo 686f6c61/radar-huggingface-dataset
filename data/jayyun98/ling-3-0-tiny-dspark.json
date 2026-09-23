@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jayyun98/Ling-3.0-Tiny-DSpark",
+  "slug": "jayyun98-ling-3-0-tiny-dspark",
+  "author": "jayyun98",
+  "url": "https://huggingface.co/jayyun98/Ling-3.0-Tiny-DSpark",
+  "created_at": "2026-09-23T12:19:59.000Z",
+  "updated_at": "2026-09-23T12:36:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3",
+    "speculative-decoding",
+    "dspark",
+    "specforge",
+    "sglang",
+    "experimental",
+    "base_model:inclusionAI/Ling-3.0-tiny",
+    "base_model:finetune:inclusionAI/Ling-3.0-tiny",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "inclusionAI/Ling-3.0-tiny, inclusionAI/Ling-3.0-flash-DSpark",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inclusionAI/Ling-3.0-tiny · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-tiny Ling-3.0-tiny is a lightweight hybrid reasoning model in the Ling series designed for edge deployment scenarios, with 7.9B total parameters and only 1.3B activated parameters."
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-flash-dspark · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-dspark",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ling 3.0 Tiny Intelligence, Performance & Price Analysis",
+      "url": "https://artificialanalysis.ai/models/ling-3-0-tiny",
+      "snippet": "Analysis of InclusionAI&#x27;s Ling 3.0 Tiny and comparison to other AI models across key metrics including quality, price, performance (tokens per second & time to first token), context window & more."
+    },
+    {
+      "title": "Ling 3.0 Tiny download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/ling-3-0-tiny/",
+      "snippet": "Download Ling 3.0 Tiny for free. Lightweight MoE model for local reasoning, coding, and AI agents. Ling-3.0-tiny is inclusionAI&#x27;s lightweight hybrid reasoning Mixture-of-Experts model, designed to provide capable reasoning and agentic performance at low inference cost. It contains 7.9B total parameters while activating only 1.3B per token, using a hybrid architecture that alternates Kimi ..."
+    }
+  ]
+}

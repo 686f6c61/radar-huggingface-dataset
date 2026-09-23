@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "leary-criste/model-last",
+  "slug": "leary-criste-model-last",
+  "author": "leary-criste",
+  "url": "https://huggingface.co/leary-criste/model-last",
+  "created_at": "2026-09-23T01:42:58.000Z",
+  "updated_at": "2026-09-23T01:49:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe_text",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 69341293973,
+  "storage_human": "69.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leary-criste/lora-09-16 · Hugging Face",
+      "url": "https://huggingface.co/leary-criste/lora-09-16",
+      "snippet": "leary-criste / lora-09-16 Like 0 Transformers Safetensors Generated from Trainer sft trl Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=leary-criste%2Faffine-5g4yy75zuz-q4",
+      "snippet": "Explore machine learning models. leary-criste/affine-5g4yy75zuz-q4 35B•Updated 8 days ago•178"
+    },
+    {
+      "title": "leary-criste AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/leary-criste",
+      "snippet": "Browse AI models attributed to leary-criste, sourced from verified model catalogs."
+    },
+    {
+      "title": "Run Affine-5D2E98L93kE8wb883hUyuPQfZTCUe2nR1oyvmRAAcDRm3mmK API (Easy ...",
+      "url": "https://featherless.ai/models/leary-criste/affine-5D2E98L93kE8wb883hUyuPQfZTCUe2nR1oyvmRAAcDRm3mmK",
+      "snippet": "Deploy Affine-5D2E98L93kE8wb883hUyuPQfZTCUe2nR1oyvmRAAcDRm3mmK (32B parameters) via OpenAI-compatible API with 32K context. Flat-rate pricing from $25/m..."
+    },
+    {
+      "title": "Latest AI Models 2026: 112 Released — Complete Catalog",
+      "url": "https://best-ai.news/ai-model-releases-2026",
+      "snippet": "The latest AI models of 2026: a living catalog of 119 AI models tracked this year — from 36 brands across LLMs, image, video, multimodal, audio & science. Updated continuously."
+    }
+  ]
+}

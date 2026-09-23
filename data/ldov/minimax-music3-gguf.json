@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ldov/MiniMax-Music3-GGUF",
+  "slug": "ldov-minimax-music3-gguf",
+  "author": "ldov",
+  "url": "https://huggingface.co/ldov/MiniMax-Music3-GGUF",
+  "created_at": "2026-09-23T11:53:36.000Z",
+  "updated_at": "2026-09-23T11:53:36.000Z",
+  "license": "minimax-music3-community",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "music-generation",
+    "text-to-music",
+    "ggml",
+    "cpp",
+    "minimax-music3",
+    "diffusion",
+    "flow-matching",
+    "en",
+    "zh",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:quantized:MiniMaxAI/MiniMax-Music3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25167881,
+  "parameters_human": "25.2M",
+  "storage_bytes": 59440263456,
+  "storage_human": "59.4 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · scragnog/MiniMax-Music3-GGUF at main",
+      "url": "https://huggingface.co/scragnog/MiniMax-Music3-GGUF/blob/main/README.md",
+      "snippet": "MiniMax-Music3 — GGUF GGUF conversion of MiniMaxAI/MiniMax-Music3 for HOT-Step CPP, a fully local desktop app for AI music generation with a native C++/GGML engine. As far as we know this is the first GGUF conversion of this model."
+    },
+    {
+      "title": "README.md · FenomAI/MiniMax-Music3 at main - Hugging Face",
+      "url": "https://huggingface.co/FenomAI/MiniMax-Music3/blob/main/README.md",
+      "snippet": "The model weights are subject to the MiniMax-Music3 Community License (included here as LICENSE, per its notice-preservation requirement). Notable terms: prominent display of \"MiniMax-Music3\" in commercial products, separate authorization above US$20M annual revenue, acceptable-use policy, and clear disclosure of AI generation for publicly ..."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-Music3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-Music3",
+      "snippet": "MiniMax Music 3 MiniMax Music 3 is a high-performance music generation model for creating complete songs up to five minutes long. Conditioned on lyrics and a detailed music description, it generates structurally coherent songs with expressive vocals, evolving arrangements, and stable long-form audio quality."
+    },
+    {
+      "title": "MiniMax Music 3 GGUF: Free Local AI Music in 9.8GB VRAM",
+      "url": "http://creativeaishow.com/minimax-music-3-gguf-free-local-ai-music-that-now-runs-in-9-8-gb-of-vram/",
+      "snippet": "MiniMax Music 3 now runs free and local in 9.8 GiB of VRAM via GGUF and audio.cpp. Exact commands, hardware specs, quantization limits and the license catch."
+    },
+    {
+      "title": "Minimax Music3 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/minimax-music3.html",
+      "snippet": "Download Minimax Music3 GGUF model. 14.7 GB, 5,989 downloads, 28 likes."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "aellies/vif-etincelle-beta-v0",
+  "slug": "aellies-vif-etincelle-beta-v0",
+  "author": "aellies",
+  "url": "https://huggingface.co/aellies/vif-etincelle-beta-v0",
+  "created_at": "2026-09-23T18:31:28.000Z",
+  "updated_at": "2026-09-23T18:53:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "eurobert",
+    "decision-making",
+    "robotics",
+    "classification",
+    "calibration",
+    "cross-encoder",
+    "en",
+    "fr",
+    "base_model:EuroBERT/EuroBERT-210m",
+    "base_model:finetune:EuroBERT/EuroBERT-210m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 211766785,
+  "parameters_human": "211.8M",
+  "storage_bytes": 864290049,
+  "storage_human": "864 MB",
+  "base_model": "EuroBERT/EuroBERT-210m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

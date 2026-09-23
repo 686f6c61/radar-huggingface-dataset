@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "Beehzod/best_smoke_cigarette-detection",
+  "slug": "beehzod-best_smoke_cigarette-detection",
+  "author": "Beehzod",
+  "url": "https://huggingface.co/Beehzod/best_smoke_cigarette-detection",
+  "created_at": "2026-09-23T11:23:25.000Z",
+  "updated_at": "2026-09-23T11:27:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "smoking-detection",
+    "cigarette-detection",
+    "object-detection",
+    "base_model:Ultralytics/YOLO11",
+    "base_model:finetune:Ultralytics/YOLO11",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40518316,
+  "storage_human": "41 MB",
+  "base_model": "Ultralytics/YOLO11",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "mAP50",
+      "value": 0.7898
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "mAP50-95",
+      "value": 0.4617
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "precision",
+      "value": 0.8199
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "recall",
+      "value": 0.765
+    }
+  ],
+  "sources": [
+    {
+      "title": "Beehzod/smoke_cigarette-detection · Hugging Face",
+      "url": "https://huggingface.co/Beehzod/smoke_cigarette-detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Beehzod/smoke_cigarette-detection2-yolo11m · Hugging Face",
+      "url": "https://huggingface.co/Beehzod/smoke_cigarette-detection2-yolo11m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Smoke Cigarette Detection - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/beehzod/smoke_cigarette-detection",
+      "snippet": "Registry entry for model Smoke Cigarette Detection; source metadata pending."
+    },
+    {
+      "title": "smoking-detection · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/smoking-detection",
+      "snippet": "A computer-vision safety monitoring system built with OpenCV and YOLO for detecting fire and cigarette smoking across images, videos, and live webcam streams, with real-time frame processing and visual bounding-box results."
+    },
+    {
+      "title": "Latest AI Model Releases — September 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest tracked AI model releases as of September 2026. Release data currently runs through Sep 22 2026; most recent: GPT-6 Sol by OpenAI. Browse exact dates for the latest models from leading AI labs."
+    }
+  ]
+}

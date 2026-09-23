@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Compactbot/tinystories-50m",
+  "slug": "compactbot-tinystories-50m",
+  "author": "Compactbot",
+  "url": "https://huggingface.co/Compactbot/tinystories-50m",
+  "created_at": "2026-09-23T18:02:08.000Z",
+  "updated_at": "2026-09-23T18:20:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "tiny",
+    "tiny-lm",
+    "tiny-model",
+    "slm",
+    "small-language-model",
+    "from-scratch",
+    "tinystories",
+    "gpt",
+    "bpe",
+    "text-generation",
+    "en",
+    "dataset:ronendagan/TinyStories",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 54804992,
+  "parameters_human": "54.8M",
+  "storage_bytes": 219228888,
+  "storage_human": "219 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "StoryGPT - LLaMA-Style Language Model Pre-Trained from Scratch",
+      "url": "https://github.com/ZiadXI/StoryGPT",
+      "snippet": "A 50M parameter decoder-only transformer pre-trained from scratch on the TinyStories dataset. Built to demonstrate a complete, production-grade LLM pipeline — from BPE tokenizer training to multi-G..."
+    },
+    {
+      "title": "hayder86al/tinystories-50m-instruct · Hugging Face",
+      "url": "https://huggingface.co/hayder86al/tinystories-50m-instruct",
+      "snippet": "Instructions to use hayder86al/tinystories-50m-instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Fathi7ma/tiny-stories-gpt2 · Hugging Face",
+      "url": "https://huggingface.co/Fathi7ma/tiny-stories-gpt2",
+      "snippet": "🧠 Model Overview This model is a fine-tuned version of GPT-2 (small) trained on the TinyStories dataset — a large collection of short, simple stories for children. The goal of this project is to create a lightweight, fun, and creative story generator that can produce short, imaginative stories from user prompts."
+    },
+    {
+      "title": "Tiny Stories - Personalised gifts & storybooks from photos",
+      "url": "https://tinystories.ai/",
+      "snippet": "Turn photos into illustrated characters for personalised storybooks, mugs, posters, puzzles, cushions, T-shirts and phone cases. Preview free before ordering."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "Daily-updated list of free AI models (free LLM APIs), ranked by quality with live status. Plus one OpenAI-compatible endpoint that routes to the best one. - ClawLabsAI/free-ai-models"
+    }
+  ]
+}

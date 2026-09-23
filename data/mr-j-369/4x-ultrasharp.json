@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Mr-J-369/4x-UltraSharp",
+  "slug": "mr-j-369-4x-ultrasharp",
+  "author": "Mr-J-369",
+  "url": "https://huggingface.co/Mr-J-369/4x-UltraSharp",
+  "created_at": "2026-09-23T18:02:42.000Z",
+  "updated_at": "2026-09-23T18:29:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qualcomm",
+    "NPU",
+    "qnn",
+    "stable-diffuser",
+    "Upscale",
+    "text-to-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58041865,
+  "storage_human": "58 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "« M. » ou « Mr » ? « MM. » ou « Mrs » ? Les abréviations de …",
+      "url": "https://www.projet-voltaire.fr/regles-orthographe/m-ou-mr-mm-ou-mrs/",
+      "snippet": "Nos experts vous expliquent la règle : « M. » ou « Mr » ? « MM. » ou « Mrs » ? Les abréviations de \"monsieur\" et \"messieurs\" - …"
+    },
+    {
+      "title": "Mr. - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mr.",
+      "snippet": "Mr is sometimes combined with certain titles (Mr President, Mr Speaker, Mr Justice, Mr Dean). The feminine equivalent is usually …"
+    },
+    {
+      "title": "Mr., Mrs., Miss, and Ms.: What They Mean And How To Use Them",
+      "url": "https://www.dictionary.com/articles/mr-mrs",
+      "snippet": "Oct 7, 2022 · Mr. and Mrs. are typically used as titles or honorifics before a person’s name to show respect. Traditionally, Mr. is used …"
+    },
+    {
+      "title": "Mr.Bricolage : magasin de bricolage, jardinage, aménagement - Mr…",
+      "url": "https://www.mr-bricolage.fr/",
+      "snippet": "Retrouvez toute l'offre de Mr.Bricolage en ligne : bricolage, jardinage et aménagement. Profitez du retrait magasin en 2h ou de la …"
+    },
+    {
+      "title": "« M. » ou « Mr » : comment abréger monsieur - La langue française",
+      "url": "https://www.lalanguefrancaise.com/orthographe/m-ou-mr-abreviation-monsieur",
+      "snippet": "Jan 6, 2022 · On écrit toujours « M. » : l'abréviation de « monsieur » s'écrit toujours « M. » et non « Mr ». Au pluriel, l'abréviation de « …"
+    }
+  ]
+}

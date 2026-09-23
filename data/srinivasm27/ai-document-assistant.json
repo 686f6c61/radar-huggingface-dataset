@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "srinivasm27/ai-document-assistant",
+  "slug": "srinivasm27-ai-document-assistant",
+  "author": "srinivasm27",
+  "url": "https://huggingface.co/srinivasm27/ai-document-assistant",
+  "created_at": "2026-09-23T12:32:25.000Z",
+  "updated_at": "2026-09-23T12:32:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Document Assistant - GitHub",
+      "url": "https://github.com/srinivaspolanki/AI-Document-Assistant",
+      "snippet": "An AI-powered document analysis application built with Python, Streamlit, and Ollama. Analyze different document types locally using Large Language Models (LLMs) without sending your data to external cloud services."
+    },
+    {
+      "title": "AI-Document-Assistant/README.md at main - GitHub",
+      "url": "https://github.com/srinivaspolanki/AI-Document-Assistant/blob/main/README.md",
+      "snippet": "🧠 AI Document Assistant An AI-powered document analysis application built with Python, Streamlit, and Ollama. Analyze different document types locally using Large Language Models (LLMs) without sending your data to external cloud services."
+    },
+    {
+      "title": "Acrobat AI Assistant: Generative AI document & PDF tool - Adobe",
+      "url": "https://www.adobe.com/acrobat/generative-ai-pdf.html",
+      "snippet": "Try the trusted Generative AI document reading tool from Adobe Acrobat. Use Generative AI to ask your PDF questions and summarize your documents."
+    },
+    {
+      "title": "Document AI - Google Cloud",
+      "url": "https://cloud.google.com/document-ai",
+      "snippet": "The Document AI solutions suite includes pretrained models for document processing, Workbench for custom models, and Warehouse to search and store."
+    },
+    {
+      "title": "AI Document Assistant",
+      "url": "https://smart-document-assistant.streamlit.app/",
+      "snippet": "AI-powered document analysis application built using and ."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Aobangaming/luna-1.5-flash",
+  "slug": "aobangaming-luna-1-5-flash",
+  "author": "Aobangaming",
+  "url": "https://huggingface.co/Aobangaming/luna-1.5-flash",
+  "created_at": "2026-09-23T15:14:49.000Z",
+  "updated_at": "2026-09-23T15:38:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lightning",
+    "conversational",
+    "generative",
+    "text-generation",
+    "custom_code",
+    "en",
+    "dataset:OpenAssistant/oasst1",
+    "arxiv:1910.09700",
+    "base_model:Aobangaming/lightning-30m-ft",
+    "base_model:finetune:Aobangaming/lightning-30m-ft",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 43191808,
+  "parameters_human": "43.2M",
+  "storage_bytes": 172775680,
+  "storage_human": "173 MB",
+  "base_model": "Aobangaming/lightning-30m-ft, Aobangaming/lightning-60m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

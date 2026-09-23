@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Lemon115/smolvla_multitask_v5",
+  "slug": "lemon115-smolvla_multitask_v5",
+  "author": "Lemon115",
+  "url": "https://huggingface.co/Lemon115/smolvla_multitask_v5",
+  "created_at": "2026-09-23T13:18:48.000Z",
+  "updated_at": "2026-09-23T13:20:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:Lemon115/smolvla_tasks",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197804368,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

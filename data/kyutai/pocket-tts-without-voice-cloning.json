@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "kyutai/pocket-tts-without-voice-cloning",
+  "slug": "kyutai-pocket-tts-without-voice-cloning",
+  "author": "kyutai",
+  "url": "https://huggingface.co/kyutai/pocket-tts-without-voice-cloning",
+  "created_at": "2026-01-06T13:21:12.000Z",
+  "updated_at": "2026-09-23T13:54:47.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pocket-tts",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "es"
+  ],
+  "tags": [
+    "pocket-tts",
+    "safetensors",
+    "en",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "es",
+    "arxiv:2509.06926",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 32,
+  "downloads_30d": 6753,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18857985895,
+  "storage_human": "18.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banque Coopérative et Mutualiste | Crédit Mutuel du Sud-Ouest",
+      "url": "https://www.cmso.com/reseau-bancaire-cooperatif/web/accueil",
+      "snippet": "Crédit Mutuel du Sud-Ouest : une banque de proximité engagée pour les projets de ses clients et acteurs locaux. Une agence, un …Read more"
+    },
+    {
+      "title": "Espace client | Crédit Mutuel du Sud-Ouest - cmso.com",
+      "url": "https://www.cmso.com/reseau-bancaire-cooperatif/web/comptes-et-cartes/piloter-vos-comptes/espace-client",
+      "snippet": "Accédez à votre espace client du Crédit Mutuel du Sud-Ouest. Gérez vos comptes, réalisez vos opérations bancaires, faites vos …"
+    },
+    {
+      "title": "Tarification des services - Professionnels | Crédit Mutuel du Sud-Ouest",
+      "url": "https://pro.cmso.com/web/reglementaire/tarification-des-services-1",
+      "snippet": "Conditions tarifaires des différentes opérations bancaires applicables aux professionnels par le Crédit Mutuel du Sud-Ouest : \"Tout …"
+    },
+    {
+      "title": "Crédit Mutuel Arkéa - Site d'offres d'emploi - recrutement.cmso.com",
+      "url": "https://www.recrutement.cmso.com/accueil.aspx",
+      "snippet": "1 day ago · Bienvenue sur le site de recrutement du Crédit Mutuel Arkéa"
+    },
+    {
+      "title": "Comment définir votre profil épargnant - pro.cmso.com",
+      "url": "https://pro.cmso.com/web/aide/tutoriels/espace-client-web-et-appli/site-web/tuto-comment-definir-votre-profil-epargnant",
+      "snippet": "Comment mettre à jour votre profil éparngant sur pro.site_web_court ? À partir de votre espace client sur pro.site_web_court, cliquez …"
+    }
+  ]
+}

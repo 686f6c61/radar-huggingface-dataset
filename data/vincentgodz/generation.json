@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vincentgodz/generation",
+  "slug": "vincentgodz-generation",
+  "author": "vincentgodz",
+  "url": "https://huggingface.co/vincentgodz/generation",
+  "created_at": "2026-09-23T01:37:20.000Z",
+  "updated_at": "2026-09-23T01:37:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vincentgodz (Vincent B. Garcia) - Hugging Face",
+      "url": "https://huggingface.co/vincentgodz/models",
+      "snippet": "User profile of Vincent B. Garcia on Hugging Face"
+    },
+    {
+      "title": "Generative AI | Google Cloud Documentation",
+      "url": "https://docs.cloud.google.com/docs/generative-ai",
+      "snippet": "Documentation and resources for building and implementing generative AI applications with Google Cloud tools and productss."
+    },
+    {
+      "title": "Generative AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Generative_AI",
+      "snippet": "Generative artificial intelligence (GenAI) is a subfield of artificial intelligence (AI) that uses generative models to generate text, images, videos, audio, computer code or other forms of digital data. [1] These models learn the underlying patterns and structures of their training data, and use them to generate new data [2] in response to input, which often takes the form of natural language ..."
+    },
+    {
+      "title": "GPT-4 | OpenAI",
+      "url": "https://openai.com/index/gpt-4/",
+      "snippet": "GPT‑4‑assisted safety research GPT‑4&#x27;s advanced reasoning and instruction-following capabilities expedited our safety work. We used GPT‑4 to help create training data for model fine-tuning and iterate on classifiers across training, evaluations, and monitoring."
+    },
+    {
+      "title": "AI Video Generation Models: 2026 Complete Guide",
+      "url": "https://wavespeed.ai/blog/posts/ai-video-generation-models-2026/",
+      "snippet": "Complete 2026 guide to AI video generation models. Compare architectures, capabilities, and API access across Veo, Sora, Kling, WAN, Seedance, and more."
+    }
+  ]
+}

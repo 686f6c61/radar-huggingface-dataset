@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "lm-spell/SinBERT-large-ft-ssc",
+  "slug": "lm-spell-sinbert-large-ft-ssc",
+  "author": "lm-spell",
+  "url": "https://huggingface.co/lm-spell/SinBERT-large-ft-ssc",
+  "created_at": "2025-05-20T09:42:54.000Z",
+  "updated_at": "2026-09-23T18:36:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "si"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "feature-extraction",
+    "fill-mask",
+    "fine-tuned",
+    "bert",
+    "sinbert",
+    "spell-correction",
+    "sinhala",
+    "si",
+    "dataset:lm-spell/sinhala-spell-correction-dataset",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125978112,
+  "parameters_human": "126.0M",
+  "storage_bytes": 503934824,
+  "storage_human": "504 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NLPC-UOM/SinBERT-large · Hugging Face",
+      "url": "https://huggingface.co/NLPC-UOM/SinBERT-large",
+      "snippet": "Instructions to use NLPC-UOM/SinBERT-large with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use NLPC-UOM/SinBERT-large with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"fill-mask\", model=\"NLPC-UOM/SinBERT ..."
+    },
+    {
+      "title": "Fine-tuned Models for NLPC-UOM/SinBERT-large - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:NLPC-UOM/SinBERT-large",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "NLPC-UOM/SinBERT-large - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/6292",
+      "snippet": "SinBERT models are pretrained on a large Sinhala monolingual corpus (sin-cc-15M) using RoBERTa. If you use this model, please cite BERTifying Sinhala - A Comprehensive Analysis of Pre-trained Language Models for Sinhala Text Classification, LREC 2022"
+    },
+    {
+      "title": "SinBERT-large Open-source Sinhala Language Model - Pre-training ...",
+      "url": "https://model.aibase.com/models/details/1915687193357795329",
+      "snippet": "SinBERT-large is a pre-trained model on a large Sinhala monolingual corpus using RoBERTa, which can be applied to Sinhala text classification tasks. This is SinBERT-large model. SinBERT models are pretrained on a large Sinhala monolingual corpus (sin-cc-15M) using RoBERTa. This project is licensed under the MIT License."
+    },
+    {
+      "title": "SinBERT-large | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/sinbert-large/",
+      "snippet": "SinBERT-large is a sophisticated language model specifically designed for the Sinhala language, built upon the RoBERTa architecture. It represents a significant advancement in Sinhala natural language processing, having been pre-trained on a comprehensive corpus of 15 million Sinhala texts (sin-cc-15M)."
+    }
+  ]
+}

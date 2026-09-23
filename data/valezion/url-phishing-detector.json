@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "valezion/url-phishing-detector",
+  "slug": "valezion-url-phishing-detector",
+  "author": "valezion",
+  "url": "https://huggingface.co/valezion/url-phishing-detector",
+  "created_at": "2026-09-23T16:45:30.000Z",
+  "updated_at": "2026-09-23T16:56:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "phishing-detection",
+    "url-classification",
+    "security",
+    "tabular-classification",
+    "text-classification",
+    "en",
+    "it",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29939252,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nom de domaine : Choisir, Acheter un nom de domaine | OVHcloud …",
+      "url": "https://www.ovhcloud.com/fr/domains/",
+      "snippet": "Grâce à un vaste choix d' extensions proposées à des prix compétitifs, réserver un nom de domaine est la première étape simple …"
+    },
+    {
+      "title": "Enregistrer un Nom de Domaine, en quelques clics - OVHcloud",
+      "url": "https://www.ovhcloud.com/fr/domains/register-domain-name/",
+      "snippet": "Vous pouvez acheter un nom de domaine libre auprès d’un hébergeur web comme OVHcloud. Cet achat vaut pour une période d’un …"
+    },
+    {
+      "title": "Domaines - Solutions PME - OVH",
+      "url": "https://www.ovh.com/tn/domaines/profil_pme.xml",
+      "snippet": "Grâce aux redirections web, vous pouvez avoir plusieurs noms de domaines pour un même site. La multiplication d'adresses web …"
+    },
+    {
+      "title": "Achat nom de domaine OVH : 5 étapes pour bien démarrer",
+      "url": "https://synergie-web.fr/ovh-achat-nom-de-domaine/",
+      "snippet": "Jul 26, 2026 · Achat nom de domaine OVH en 5 étapes : vérification, choix d'extension, configuration DNS, validation et sécurisation. …"
+    },
+    {
+      "title": "Nom de domaine chez OVH : guide complet 2026 (achat, tarifs, DNS)",
+      "url": "https://www.isotechsolutions.com/web/nom-de-domaine-chez-ovh-guide-complet-2026-achat-tarifs-dns/",
+      "snippet": "Jun 30, 2026 · Comptez environ 5 € par an pour un .fr et 8 € pour un .com la première année. Ce guide couvre l’achat, les tarifs …"
+    }
+  ]
+}

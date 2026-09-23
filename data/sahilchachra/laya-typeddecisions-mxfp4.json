@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sahilchachra/Laya-TypedDecisions-MXFP4",
+  "slug": "sahilchachra-laya-typeddecisions-mxfp4",
+  "author": "sahilchachra",
+  "url": "https://huggingface.co/sahilchachra/Laya-TypedDecisions-MXFP4",
+  "created_at": "2026-09-23T12:13:26.000Z",
+  "updated_at": "2026-09-23T12:14:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "modernbert",
+    "quantized",
+    "encoder",
+    "text-classification",
+    "feature-extraction",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 394781696,
+  "parameters_human": "394.8M",
+  "storage_bytes": 209840736,
+  "storage_human": "210 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mizorewww/laya-mlx: Native MLX runtime for Laya typed decision ...",
+      "url": "https://github.com/mizorewww/laya-mlx",
+      "snippet": "Native MLX runtime for Laya typed decision models — 7-14 ms short decisions on M3 Max. No text generation, PyTorch, or cloud API. - mizorewww/laya-mlx"
+    },
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "I Built Non-Autoregressive Decision Models with RL a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\". From our March 2025 arXiv paper on sequence conversion trajectories to Laya: a sub-35ms open-weight System 1 decision engine with RLCD, multilingual routing across 100+ languages, and state-of-the-art calibration."
+    },
+    {
+      "title": "Laya: open-source alternative to TypeSafe Jev, runs locally",
+      "url": "https://brainfunctioncollapse.com/laya",
+      "snippet": "Laya is the open-source alternative to TypeSafe Jev: a small model that decides instead of chatting. Typed answers with real probabilities in 21 ms, on your own machine."
+    },
+    {
+      "title": "convaiinnovations/laya-typed-decisions · Hugging Face",
+      "url": "https://huggingface.co/convaiinnovations/laya-typed-decisions",
+      "snippet": "convaiinnovations / laya-typed-decisions Like 1 Transformers Safetensors laya system-one calibrated-decisions rlcd structured-decisions typed-decisions benchmark Eval Results (legacy) License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - SahilChachra/SahilChachra: GitHub profile readme.",
+      "url": "https://github.com/SahilChachra/SahilChachra",
+      "snippet": "🔭 AI Architect @ BLUE — building a real-time, multi-camera VLM pipeline for warehouse & retail vision analytics. 🧠 I work across LLMs, VLMs, multi-agent systems, and on-device inference — taking models from research to production at the edge."
+    }
+  ]
+}

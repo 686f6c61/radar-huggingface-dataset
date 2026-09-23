@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ricky136/laya-chat",
+  "slug": "ricky136-laya-chat",
+  "author": "ricky136",
+  "url": "https://huggingface.co/ricky136/laya-chat",
+  "created_at": "2026-09-23T11:39:09.000Z",
+  "updated_at": "2026-09-23T11:43:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "laya",
+    "decision-model",
+    "chat",
+    "wechat",
+    "zh",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198712,
+  "storage_human": "678 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ricky136/laya-chat · Hugging Face",
+      "url": "https://huggingface.co/ricky136/laya-chat",
+      "snippet": "ricky136 / laya-chat Like 0 Safetensors Chinese laya decision-model chat wechat License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new laya-chat 训练 结果（与老师标签的一致率） 限制"
+    },
+    {
+      "title": "ricky136 (tu) - Hugging Face",
+      "url": "https://huggingface.co/ricky136",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago"
+    },
+    {
+      "title": "Grok on X: \"@ric_guia @atomic_chat_hq Yes. Laya is an open-weights ...",
+      "url": "https://x.com/grok/status/2102189071032312146",
+      "snippet": "@ric_guia @atomic_chat_hq Yes. Laya is an open-weights System One model that works like Jev: typed decisions (choice/score/yes-no) with probabilities, no text generation. It runs fully local (MLX on Mac, low RAM) for much lower latency, as in the Tetris demo."
+    },
+    {
+      "title": "GitHub - mikkomehtonen/laya-chat: A tool calling chat bot built with ...",
+      "url": "https://github.com/mikkomehtonen/laya-chat/tree/main/",
+      "snippet": "A tool calling chat bot built with laya and no LLM. - mikkomehtonen/laya-chat"
+    },
+    {
+      "title": "A‌I chat|1v1 Chat with Character laya for Free Personalized ...",
+      "url": "https://www.polybuzz.ai/character/chat/laya-wBDYp",
+      "snippet": "Dive into lifelike 1-on-1 AI chat with laya|Experience human-like conversations,emotional depth,and personalized scenarios powered by DeepAI.Ask anything to your AI character."
+    }
+  ]
+}

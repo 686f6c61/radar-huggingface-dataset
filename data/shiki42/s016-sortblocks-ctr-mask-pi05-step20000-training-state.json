@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Shiki42/s016-sortblocks-ctr-mask-pi05-step20000-training-state",
+  "slug": "shiki42-s016-sortblocks-ctr-mask-pi05-step20000-training-state",
+  "author": "Shiki42",
+  "url": "https://huggingface.co/Shiki42/s016-sortblocks-ctr-mask-pi05-step20000-training-state",
+  "created_at": "2026-09-23T11:42:02.000Z",
+  "updated_at": "2026-09-23T11:48:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "openpi",
+    "robotics",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9550219038,
+  "storage_human": "9.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shiki42/s016-sortblocks-ctr-mask-act-step100000 · Hugging Face",
+      "url": "https://huggingface.co/Shiki42/s016-sortblocks-ctr-mask-act-step100000",
+      "snippet": "Instructions to use Shiki42/s016-sortblocks-ctr-mask-act-step100000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "[2504.16054] $π_ {0.5}$: a Vision-Language-Action Model with Open-World ...",
+      "url": "https://arxiv.org/abs/2504.16054",
+      "snippet": "In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe $π_{0.5}$, a new model based on $π_{0}$ that uses co-training on heterogeneous ..."
+    },
+    {
+      "title": "Physical Intelligence (π)",
+      "url": "https://www.pi.website/",
+      "snippet": "Physical Intelligence is bringing general-purpose AI into the physical world. We are a group of engineers, scientists, roboticists, and company builders developing learning algorithms to create a model that will control any robot to do any task."
+    },
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fecasado/gfm-kitchen-tomato-23a",
+  "slug": "fecasado-gfm-kitchen-tomato-23a",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gfm-kitchen-tomato-23a",
+  "created_at": "2026-09-23T11:43:24.000Z",
+  "updated_at": "2026-09-23T11:43:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "gaze_flow_matching",
+    "dataset:fecasado/tomato-to-plate-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 75549402,
+  "parameters_human": "75.5M",
+  "storage_bytes": 302258024,
+  "storage_human": "302 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fecasado/gfm-kitchen-tomato-baseline · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gfm-kitchen-tomato-baseline",
+      "snippet": "Instructions to use fecasado/gfm-kitchen-tomato-baseline with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use fecasado/gfm-kitchen-tomato-baseline with LeRobot: Notebooks Google Colab Kaggle Model Card for gaze_flow_matching How to Get Started with the Model Train from ..."
+    },
+    {
+      "title": "fecasado/gfm-kitchen-toasts-baseline · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gfm-kitchen-toasts-baseline",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "An Interactive Tomato Farm Overseen By AI - Hackaday",
+      "url": "https://hackaday.com/2026/07/07/an-interactive-tomato-farm-overseen-by-ai/",
+      "snippet": "How about an entire AI council to monitor and decide the fate of each individual tomato while recording an entire storyline to go alongside the growing cycle?"
+    },
+    {
+      "title": "Compare AI Models: Pricing, Context & Benchmarks | OpenRouter",
+      "url": "https://openrouter.ai/models",
+      "snippet": "Compare 500+ LLMs from OpenAI, Anthropic, Google, Meta and more — pricing, context length, and benchmarks side by side, all through one API."
+    },
+    {
+      "title": "Source Advances Harvest Forecasting for Tomatoes with Next Generation ...",
+      "url": "https://www.source.ag/news/source-advances-harvest-forecasting-for-tomatoes-with-next-generation-ai-model",
+      "snippet": "Source.ag, the data and AI platform for professional greenhouse horticulture, today announced a significant breakthrough to its AI-powered Harvest Forecast model for tomatoes. The next-generation model introduces fundamental changes to how it is trained, updated, and improved, leveraging state-of-the-art AI to continuously advance accuracy through real-world cultivation data. The result is a ..."
+    }
+  ]
+}

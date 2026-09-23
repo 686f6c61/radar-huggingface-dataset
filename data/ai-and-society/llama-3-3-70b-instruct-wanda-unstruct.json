@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ai-and-society/Llama-3.3-70B-Instruct-wanda-unstruct",
+  "slug": "ai-and-society-llama-3-3-70b-instruct-wanda-unstruct",
+  "author": "ai-and-society",
+  "url": "https://huggingface.co/ai-and-society/Llama-3.3-70B-Instruct-wanda-unstruct",
+  "created_at": "2026-09-23T18:08:28.000Z",
+  "updated_at": "2026-09-23T18:44:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "wanda",
+    "prune",
+    "unstructured",
+    "conversational",
+    "base_model:meta-llama/Llama-3.3-70B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.3-70B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70553706496,
+  "parameters_human": "70.55B",
+  "storage_bytes": 141124708440,
+  "storage_human": "141.1 GB",
+  "base_model": "meta-llama/Llama-3.3-70B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "Company Sep 9, 2026 Path to Astra: critical capabilities and frontier safeguards Safety Sep 1, 2026 Jalapeño’s first results show …Read more"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "What’s on the agenda today? What’s on the agenda today? ChatGPT is AI. By using it, you agree to our Terms & Privacy Policy. …"
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "DeepAI",
+      "url": "https://deepai.org/",
+      "snippet": "Whether you are a hobbyist, a professional artist, or a developer integrating AI into your product, DeepAI delivers advanced …"
+    },
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/?msockid=1926ee23fc5b60801396f9fefddf613b",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    }
+  ]
+}

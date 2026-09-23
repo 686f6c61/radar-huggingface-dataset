@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/point-mamba-base.scanobjectnn-hardest.dingkang-liang",
+  "slug": "torch-pointcloud-point-mamba-base-scanobjectnn-hardest-dingkang-liang",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/point-mamba-base.scanobjectnn-hardest.dingkang-liang",
+  "created_at": "2026-08-28T18:07:58.000Z",
+  "updated_at": "2026-09-23T17:14:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "point-mamba",
+    "classification",
+    "dataset:scanobjectnn",
+    "arxiv:2402.10739",
+    "base_model:torch-pointcloud/point-mamba-base.pretrain.dingkang-liang",
+    "base_model:finetune:torch-pointcloud/point-mamba-base.pretrain.dingkang-liang",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12293647,
+  "parameters_human": "12.3M",
+  "storage_bytes": 49192660,
+  "storage_human": "49 MB",
+  "base_model": "torch-pointcloud/point-mamba-base.pretrain.dingkang-liang",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ScanObjectNN (PB_T50_RS)",
+      "metric": "OA",
+      "value": 89.28
+    },
+    {
+      "task": null,
+      "dataset": "ScanObjectNN (PB_T50_RS)",
+      "metric": "mAcc",
+      "value": 88.06
+    }
+  ],
+  "sources": [
+    {
+      "title": "PyTorch",
+      "url": "https://pytorch.org/",
+      "snippet": "1 day ago · TL;DR To achieve state-of-the-art performance at the frontier, vLLM is changing its internal implementation in ways that …Read more"
+    },
+    {
+      "title": "Télécharger Torch (gratuit) Windows - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche418134-torch.html",
+      "snippet": "2 days ago · Torch est un navigateur web fondé sur le moteur Chromium. Il propose une interface familière, proche de celle de …Read more"
+    },
+    {
+      "title": "Get Started - PyTorch",
+      "url": "https://pytorch.org/get-started/locally/",
+      "snippet": "Get Started Select preferences and run the command to install PyTorch locally, or get started quickly with one of the supported cloud …Read more"
+    },
+    {
+      "title": "Torch Browser - Download",
+      "url": "https://torch.en.softonic.com/",
+      "snippet": "Jun 16, 2026 · Torch Browser provides a user-friendly Chromium interface with enhanced media tools for easy downloading and …Read more"
+    },
+    {
+      "title": "torch · PyPI",
+      "url": "https://pypi.org/project/torch/",
+      "snippet": "You can write new neural network layers in Python using the torch API or your favorite NumPy-based libraries such as SciPy. If you …Read more"
+    }
+  ]
+}

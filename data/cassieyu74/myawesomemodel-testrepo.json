@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "cassieyu74/MyAwesomeModel-TestRepo",
+  "slug": "cassieyu74-myawesomemodel-testrepo",
+  "author": "cassieyu74",
+  "url": "https://huggingface.co/cassieyu74/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-23T11:23:30.000Z",
+  "updated_at": "2026-09-23T11:23:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cassieyu74/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/cassieyu74/MyAwesomeModel-TestRepo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cassieyu74 (Cassie Yu) - Hugging Face",
+      "url": "https://huggingface.co/cassieyu74",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 12 minutes ago ... published a model 13 minutes ago"
+    },
+    {
+      "title": "MyAwesomeModel-TestRepo by Test Tool: Open-Weight Model",
+      "url": "https://savrn.com/models/myawesomemodel-testrepo-18",
+      "snippet": "The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic… Parameters— Context— Weights23 B Licensemit AccessOpen weights Monthly Downloads— Model Card Configuration Files and Weights License ..."
+    },
+    {
+      "title": "MyAwesomeModel-TestRepo by 1E2DSA: Open-Weight Model",
+      "url": "https://savrn.com/models/myawesomemodel-testrepo-28",
+      "snippet": "MyAwesomeModel-TestRepo from 1E2DSA: license, access terms, disclosed training data, reported evaluations and the publisher&#x27;s download."
+    },
+    {
+      "title": "MyAwesomeModel-TestRepo: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-liufeqww1154-myawesomemodel-testrepo",
+      "snippet": "Model card indexed from Hugging Face for feature-extraction."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "JayF14/Neuro_Pulse",
+  "slug": "jayf14-neuro_pulse",
+  "author": "JayF14",
+  "url": "https://huggingface.co/JayF14/Neuro_Pulse",
+  "created_at": "2026-09-23T14:55:14.000Z",
+  "updated_at": "2026-09-23T14:56:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "medical",
+    "eeg",
+    "tabular-classification",
+    "seizure-prediction",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90217220,
+  "storage_human": "90 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

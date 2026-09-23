@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OwaisAli10/laya-snake",
+  "slug": "owaisali10-laya-snake",
+  "author": "OwaisAli10",
+  "url": "https://huggingface.co/OwaisAli10/laya-snake",
+  "created_at": "2026-09-23T14:44:01.000Z",
+  "updated_at": "2026-09-23T14:47:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [],
+  "tags": [
+    "laya",
+    "safetensors",
+    "snake",
+    "game-ai",
+    "decision-model",
+    "fine-tuned",
+    "text-classification",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198702,
+  "storage_human": "678 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OwaisAli10/laya-snake · Hugging Face",
+      "url": "https://huggingface.co/OwaisAli10/laya-snake",
+      "snippet": "OwaisAli10 / laya-snake Like 0 Text Classification Safetensors laya snake game-ai decision-model fine-tuned License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new laya-snake Usage Training Results (10 games, 15×15, Apple M1 Pro GPU) Limits Credits"
+    },
+    {
+      "title": "GitHub - ArjunSonara/laya-snake-ai",
+      "url": "https://github.com/ArjunSonara/laya-snake-ai",
+      "snippet": "A real-time, interactive Snake game powered by the Laya System 1 Decision Engine (cloned from NandhaKishorM/laya). The Snake uses Laya&#x27;s non-autoregressive decision model to navigate the 20x20 grid, avoid hazards (walls and self-body collisions), calculate accessible flood-fill space, hunt apples ..."
+    },
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "Instead of staying bitter, I decided to take everything I learned, fix every architectural limitation of the old approach, and build a completely open, horizontal System 1 decision model family: Laya."
+    },
+    {
+      "title": "GitHub - mizorewww/laya-mlx: Native MLX runtime for Laya typed decision ...",
+      "url": "https://github.com/mizorewww/laya-mlx",
+      "snippet": "Native MLX runtime for Laya typed decision models — 7-14 ms short decisions on M3 Max. No text generation, PyTorch, or cloud API. - mizorewww/laya-mlx"
+    },
+    {
+      "title": "Laya lands on Apple Silicon with laya-mlx, plays Snake at 60 moves a second",
+      "url": "https://pasqualepillitteri.it/en/news/17538/laya-mlx-jev-apple-silicon",
+      "snippet": "AI News & Trends ai news ai tools jev typesafe ai system one model laya laya-mlx mlx apple silicon local ai models open source Table of Contents 1. What laya-mlx actually does (and what it doesn&#x27;t) 2. The relationship with Jev, the model TypeSafe launched without a chat window 3. Laya, the model behind the port, and its off-the-charts growth 4."
+    }
+  ]
+}

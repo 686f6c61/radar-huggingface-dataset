@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "abulhawa/industrial-component-anomaly-detection-models",
+  "slug": "abulhawa-industrial-component-anomaly-detection-models",
+  "author": "abulhawa",
+  "url": "https://huggingface.co/abulhawa/industrial-component-anomaly-detection-models",
+  "created_at": "2026-09-23T17:16:05.000Z",
+  "updated_at": "2026-09-23T18:31:45.000Z",
+  "license": "mixed-upstream-terms",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "anomaly-detection",
+    "computer-vision",
+    "industrial",
+    "mvtec-ad",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2570040757,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anomaly Detection in Industrial Components.md - GitHub",
+      "url": "https://github.com/abulhawa/anomaly-detection/blob/main/Anomaly%20Detection%20in%20Industrial%20Components.md",
+      "snippet": "Anomaly Detection in Industrial Components Relevant cursus: DS Difficulty Level: 10/10 Description of the project: The objective of this project is to develop a model capable of detecting anomalies in an industrial part using an image."
+    },
+    {
+      "title": "GitHub - abulhawa/anomaly-detection",
+      "url": "https://github.com/abulhawa/anomaly-detection",
+      "snippet": "Contribute to abulhawa/anomaly-detection development by creating an account on GitHub."
+    },
+    {
+      "title": "Computer Vision Based Anomaly Detection in Industrial Components",
+      "url": "https://ieeexplore.ieee.org/document/11354319",
+      "snippet": "To address this challenge, this paper presents a hybrid deep-learning framework combining PaDiM and PatchCore for automated anomaly detection in industrial parts."
+    },
+    {
+      "title": "PDF Computer Vision-Based Anomaly Detection in Industrial Components",
+      "url": "https://www.ijsat.org/papers/2025/2/6154.pdf",
+      "snippet": "However, challenges remain in handling data imbalance, distribution shifts, and generalizing models across diverse industrial settings. This survey discusses benchmark datasets, evaluation metrics, and future research directions, such as explainable AI, hybrid learning, and scalable adaptive systems for next-generation industrial anomaly detection."
+    },
+    {
+      "title": "Computer Vision-Based Anomaly Detection in Industrial Components",
+      "url": "https://www.ijsat.org/research-paper.php?id=6154",
+      "snippet": "Computer Vision-Based Anomaly Detection in Industrial Components View / Download PDF File"
+    }
+  ]
+}

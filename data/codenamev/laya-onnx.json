@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "codenamev/laya-onnx",
+  "slug": "codenamev-laya-onnx",
+  "author": "codenamev",
+  "url": "https://huggingface.co/codenamev/laya-onnx",
+  "created_at": "2026-09-23T11:49:00.000Z",
+  "updated_at": "2026-09-23T11:49:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "laya",
+    "system-one",
+    "calibrated-decisions",
+    "ruby",
+    "decision-model",
+    "base_model:convaiinnovations/laya",
+    "base_model:quantized:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2373208306,
+  "storage_human": "2.4 GB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - navopw/laya-onnx: Local multilingual typed decisions with ONNX ...",
+      "url": "https://github.com/navopw/laya-onnx/",
+      "snippet": "Laya ONNX serves POST /v1/systemone, the same wire format as api.typesafe.ai and OpenRouter&#x27;s typesafe/jev-* models, backed by the Laya multilingual decision model on ONNX Runtime. Send a state and typed questions; get choices, probability distributions, ordinal scores, and boolean probabilities back."
+    },
+    {
+      "title": "GitHub - receptron/laya: Run Laya, the open-source Jev-compatible ...",
+      "url": "https://github.com/receptron/laya",
+      "snippet": "The Laya model weights are published by Convai Innovations under Apache 2.0. Run Laya, the open-source Jev-compatible System-1 decision model, from Node.js / TypeScript via ONNX Runtime"
+    },
+    {
+      "title": "Mattepiu/laya-onnx · Hugging Face",
+      "url": "https://huggingface.co/Mattepiu/laya-onnx",
+      "snippet": "Laya (Base model) Laya is an open-source, non-autoregressive System 1 decision model: give it a state (text, email, ticket, or JSON document) and typed questions, and it returns typed answers with mathematically calibrated probabilities and confidence scores."
+    },
+    {
+      "title": "Laya: open-source alternative to TypeSafe Jev, runs locally",
+      "url": "https://brainfunctioncollapse.com/laya",
+      "snippet": "Laya is the open-source alternative to TypeSafe Jev: a small model that decides instead of chatting. Typed answers with real probabilities in 21 ms, on your own machine."
+    },
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "Instead of staying bitter, I decided to take everything I learned, fix every architectural limitation of the old approach, and build a completely open, horizontal System 1 decision model family: Laya."
+    }
+  ]
+}

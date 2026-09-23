@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "alighabusaleh/SARF-MARBERTv2-Arabic-Sentiment",
+  "slug": "alighabusaleh-sarf-marbertv2-arabic-sentiment",
+  "author": "alighabusaleh",
+  "url": "https://huggingface.co/alighabusaleh/SARF-MARBERTv2-Arabic-Sentiment",
+  "created_at": "2026-09-23T14:41:39.000Z",
+  "updated_at": "2026-09-23T14:42:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sarf",
+    "feature-extraction",
+    "arabic",
+    "dialectal-arabic",
+    "sentiment-analysis",
+    "morphology",
+    "marbert",
+    "arasenteval",
+    "osact",
+    "custom_code",
+    "text-classification",
+    "ar",
+    "dataset:srinivasbilla/semeval-2016-absa-reviews-arabic",
+    "base_model:UBC-NLP/MARBERTv2",
+    "base_model:finetune:UBC-NLP/MARBERTv2",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 167511011,
+  "parameters_human": "167.5M",
+  "storage_bytes": 670069572,
+  "storage_human": "670 MB",
+  "base_model": "UBC-NLP/MARBERTv2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Analysis",
+      "dataset": "AraSentEval 2026 (OSACT7 shared task), official test set",
+      "metric": "Macro-F1",
+      "value": 0.9263
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - UBC-NLP/marbert: UBC ARBERT and MARBERT Deep Bidirectional ...",
+      "url": "https://github.com/UBC-NLP/marbert",
+      "snippet": "We train ARBERT on a collection of Arabic datasets comprising 61GB of text (6.2B tokens) MARBERT is a large scale pre-training masked language model focused on both Dialectal Arabic (DA) and MSA. Arabic has multiple varieties. To train MARBERT, we randomly sample 1B Arabic tweets from a large in-house dataset of about 6B tweets."
+    },
+    {
+      "title": "UBC-NLP/MARBERT · Hugging Face",
+      "url": "https://huggingface.co/UBC-NLP/MARBERT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ARBERT & MARBERT: Deep Bidirectional Transformers for Arabic",
+      "url": "https://arxiv.org/abs/2101.01785",
+      "snippet": "We remedy these issues for a collection of diverse Arabic varieties by introducing two powerful deep bidirectional transformer-based models, ARBERT and MARBERT. To evaluate our models, we also introduce ARLUE, a new benchmark for multi-dialectal Arabic language understanding evaluation."
+    },
+    {
+      "title": "ArabicSentimentAnalysis_AraSentEval_2026/README.md at master ... - GitHub",
+      "url": "https://github.com/aliabusaleh/ArabicSentimentAnalysis_AraSentEval_2026/blob/master/README.md",
+      "snippet": "In this paper, we present our submission for the AraSentEval 2026 Shared Task on Arabic Dialect Sentiment Analysis. We propose SARF (صرف) a multi-view architectural framework that integrates surface-level context with stemmed and rooted morphological perspectives using a shared MARBERTv2 encoder."
+    },
+    {
+      "title": "README.md · UBC-NLP/MARBERTv2 at a2a02c120b294eec3f1298e4cb5a8b111c7e3de8",
+      "url": "https://huggingface.co/UBC-NLP/MARBERTv2/blob/a2a02c120b294eec3f1298e4cb5a8b111c7e3de8/README.md?code=true",
+      "snippet": "UBC-NLP / MARBERTv2 Copied like 4 Fill-MaskPyTorchTensorFlowTransformersArabicbertArabic BERTMSATwitterMasked Langauge ModelAutoTrain Compatible Model card FilesFiles and versions Community 1 Train Deploy Use in Transformers a2a02c1 MARBERTv2 /README.md elmadany commit from elmadany a2a02c1 over 1 year ago preview code | raw history blame No ..."
+    }
+  ]
+}

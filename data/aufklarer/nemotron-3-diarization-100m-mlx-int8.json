@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "aufklarer/Nemotron-3-Diarization-100M-MLX-INT8",
+  "slug": "aufklarer-nemotron-3-diarization-100m-mlx-int8",
+  "author": "aufklarer",
+  "url": "https://huggingface.co/aufklarer/Nemotron-3-Diarization-100M-MLX-INT8",
+  "created_at": "2026-09-23T18:23:02.000Z",
+  "updated_at": "2026-09-23T18:27:22.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "mlx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nemotron3_diarization",
+    "speaker-diarization",
+    "streaming",
+    "apple-silicon",
+    "int8",
+    "voice-activity-detection",
+    "multilingual",
+    "base_model:nvidia/Nemotron-3-Diarization",
+    "base_model:finetune:nvidia/Nemotron-3-Diarization",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 99259800,
+  "parameters_human": "99.3M",
+  "storage_bytes": 106541384,
+  "storage_human": "107 MB",
+  "base_model": "nvidia/Nemotron-3-Diarization",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

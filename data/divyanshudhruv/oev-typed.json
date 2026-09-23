@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "divyanshudhruv/oev-typed",
+  "slug": "divyanshudhruv-oev-typed",
+  "author": "divyanshudhruv",
+  "url": "https://huggingface.co/divyanshudhruv/oev-typed",
+  "created_at": "2026-09-23T12:26:48.000Z",
+  "updated_at": "2026-09-23T12:36:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2941683948,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - divyanshudhruv/oev",
+      "url": "https://github.com/divyanshudhruv/oev",
+      "snippet": "A small decision model: state + typed questions (choice / noul / score) in, calibrated probabilities out. No text generation. OEV follows the System One model interface popularized by Jev and Laya: instead of generating text, it scores typed questions over a state in a single forward pass and returns calibrated probability distributions."
+    },
+    {
+      "title": "Jev (AI model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
+      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco-based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2] Unlike a large language model (LLM), Jev does not generate natural-language text. It instead returns typed values together with ..."
+    },
+    {
+      "title": "Jev AI Model (TypeSafe) — Typed System One Decisions",
+      "url": "https://jevmodel.org/",
+      "snippet": "Jev is TypeSafe AI&#x27;s System One model: it returns a choice, score, or yes/no probability instead of chat. The hosted API is open as of 21 September 2026. $0.042 per 1M input tokens, output free."
+    },
+    {
+      "title": "divyanshudhruv (Divyanshu Dhruv) · GitHub",
+      "url": "https://github.com/divyanshudhruv",
+      "snippet": "A graph representing divyanshudhruv&#x27;s contributions from September 14, 2025 to September 18, 2026. The contributions are 95% commits, 3% pull requests, 2% code review, 0% issues."
+    },
+    {
+      "title": "TypeSafe AI Launches Jev: A Non-Generative System One Decision Model ...",
+      "url": "https://todayforai.com/en/news/20260920-news-typesafe-ai-jev-model-release",
+      "snippet": "TypeSafe AI, co-founded by former OpenAI core researcher Diogo Almeida, officially launched Jev, its first System One decision model tailored for software control flows. Discarding autoregressive text generation entirely, Jev directly outputs type-safe primitives (Noul, Choice, and Score), compressing end-to-end latency to 70ms-500ms and reducing inference costs by ~400x to tackle agent ..."
+    }
+  ]
+}

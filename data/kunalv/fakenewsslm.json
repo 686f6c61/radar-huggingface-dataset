@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Kunalv/FakeNewsSLM",
+  "slug": "kunalv-fakenewsslm",
+  "author": "Kunalv",
+  "url": "https://huggingface.co/Kunalv/FakeNewsSLM",
+  "created_at": "2026-09-23T16:20:18.000Z",
+  "updated_at": "2026-09-23T16:28:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498618001,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meme Generator - Imgflip",
+      "url": "https://imgflip.com/memegenerator",
+      "snippet": "Insanely fast, mobile-friendly meme generator. Caption memes or upload your own images to make custom memesRead more"
+    },
+    {
+      "title": "Meme generator. Create the funniest memes online. - iLoveIMG",
+      "url": "https://www.iloveimg.com/meme-generator",
+      "snippet": "Edit your image and make a meme. Create and share your memes online. Meme Generator to caption meme images or upload your …"
+    },
+    {
+      "title": "AI Meme Generator: Free, No Sign Up, Create Memes from Photo | AIAI",
+      "url": "https://www.aiai.com/features/ai-meme-generator",
+      "snippet": "Create viral funny ai memes instantly with our ai meme generator! Use your own picture, no sign up or watermark needed. Turn any …"
+    },
+    {
+      "title": "Imgflip - Create and Share Awesome Images",
+      "url": "https://imgflip.com/",
+      "snippet": "Quickly turn your ideas into catchy shareables with Imgflip's meme and GIF tools and community of content creators"
+    },
+    {
+      "title": "Free Meme Generator - Online Meme Maker & Creator | Canva",
+      "url": "https://www.canva.com/create/memes/?msockid=1b218bb6e223635c38eb9c6be37f62dc",
+      "snippet": "If you've got the perfect image for your meme, you can upload it for free straight into Canva's online meme maker. Drag it directly into …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ntc-ai/krea2-particle-sliders",
+  "slug": "ntc-ai-krea2-particle-sliders",
+  "author": "ntc-ai",
+  "url": "https://huggingface.co/ntc-ai/krea2-particle-sliders",
+  "created_at": "2026-09-23T01:40:53.000Z",
+  "updated_at": "2026-09-23T04:13:35.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "krea2",
+    "particle-sliders",
+    "lora",
+    "comfyui",
+    "text-to-image",
+    "en",
+    "base_model:jimmycarter/krea2-turbo-bbox",
+    "base_model:adapter:jimmycarter/krea2-turbo-bbox",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 719676156,
+  "storage_human": "720 MB",
+  "base_model": "jimmycarter/krea2-turbo-bbox",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ntc-ai/krea2-particle-sliders at main - Hugging Face",
+      "url": "https://huggingface.co/ntc-ai/krea2-particle-sliders/tree/main",
+      "snippet": "Instructions to use ntc-ai/krea2-particle-sliders with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use ntc-ai/krea2-particle-sliders with Diffusers:"
+    },
+    {
+      "title": "README.md · ntc-ai/krea2-particle-sliders at main - Hugging Face",
+      "url": "https://huggingface.co/ntc-ai/krea2-particle-sliders/blob/main/README.md",
+      "snippet": "Instructions to use ntc-ai/krea2-particle-sliders with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use ntc-ai/krea2-particle-sliders with Diffusers:"
+    },
+    {
+      "title": "YuE2 Particle Sliders - GitHub",
+      "url": "https://github.com/HyperGAN/yue2-particle-sliders",
+      "snippet": "YuE2 Particle Sliders Routed-particle composition sliders for m-a-p/YuE2-3B, with the VAE at m-a-p/YuE2-Vae. yue2-particle-sliders is the YuE2 product repo in the Anima / Krea2 layout. It owns Hub ids, the Comfy gate, YuE2 train and infer, prompt cards, and sample cards."
+    },
+    {
+      "title": "Krea 2 Image Model in Stable Forge UI Neo (6 GB VRAM) - Patreon",
+      "url": "https://www.patreon.com/TheLocalLab/posts/krea-2-image-in-162660487",
+      "snippet": "Krea 2 is a next-generation AI image model designed for fast, high-quality visual generation with a strong focus on realism, prompt accuracy, and stylistic control. It stands out for its ability to produce clean, detailed images with minimal prompt engineering, making it ideal for both beginners and advanced creators."
+    },
+    {
+      "title": "[KREA 2] Detail Slider - v1.0 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.com/models/2729908/krea-2-detail-slider",
+      "snippet": "See the examples to understand how to use and str effects."
+    }
+  ]
+}

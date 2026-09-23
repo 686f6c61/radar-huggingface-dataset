@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "budget-internalization-iclr2027/nemotron3-nano-4b-8k-grpo-hardyman-s300",
+  "slug": "budget-internalization-iclr2027-nemotron3-nano-4b-8k-grpo-hardyman-s300",
+  "author": "budget-internalization-iclr2027",
+  "url": "https://huggingface.co/budget-internalization-iclr2027/nemotron3-nano-4b-8k-grpo-hardyman-s300",
+  "created_at": "2026-09-23T18:20:17.000Z",
+  "updated_at": "2026-09-23T18:21:42.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "reasoning",
+    "math",
+    "grpo",
+    "reinforcement-learning",
+    "token-budget",
+    "conversational",
+    "custom_code",
+    "dataset:agentica-org/DeepScaleR-Preview-Dataset",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3973556832,
+  "parameters_human": "3.97B",
+  "storage_bytes": 15911335963,
+  "storage_human": "15.9 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Location de Voiture et Van Pas Chère | Budget",
+      "url": "https://www.budget.fr/",
+      "snippet": "Découvrez la location de voiture et van pas chère en France et dans le monde avec Budget. Louez une voiture facilement et profitez …"
+    },
+    {
+      "title": "Accueil | budget.gouv.fr",
+      "url": "https://www.budget.gouv.fr/",
+      "snippet": "Une année entière est nécessaire pour élaborer le budget de l’État. Celui-ci est adopté au plus tard le 31 décembre de chaque …"
+    },
+    {
+      "title": "Discount car rental rates and rental car deals | Budget Car Rental",
+      "url": "https://www.budget.com/en/home?msockid=339bd25f0eb560d219acc5820f326100",
+      "snippet": "Budget offers reliable car rentals at low rates. Easily book a sedan, SUV, truck, or EV for your next trip. Get started today!"
+    },
+    {
+      "title": "Budget de l'État - budget.gouv.fr",
+      "url": "https://www.budget.gouv.fr/budget-etat",
+      "snippet": "Le budget de l’État correspond à l’ensemble de ses ressources et de ses dépenses. L’essentiel des ressources provient des impôts …"
+    },
+    {
+      "title": "Budget de la France 2026 : recettes, dépenses, déficit en détail",
+      "url": "https://dettedelafrance.fr/budget-de-la-france",
+      "snippet": "19 hours ago · Le budget de l’État français en 2026 : 1 600 Md€ de dépenses publiques, 1 450 Md€ de recettes, 152,5 Md€ de déficit …"
+    }
+  ]
+}

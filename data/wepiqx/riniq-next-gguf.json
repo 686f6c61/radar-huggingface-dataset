@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "wepiqx/RINIQ-NEXT-GGUF",
+  "slug": "wepiqx-riniq-next-gguf",
+  "author": "wepiqx",
+  "url": "https://huggingface.co/wepiqx/RINIQ-NEXT-GGUF",
+  "created_at": "2026-09-22T20:51:03.000Z",
+  "updated_at": "2026-09-23T19:09:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "quantization",
+    "gguf",
+    "llama-cpp",
+    "fusion",
+    "riniq",
+    "mernik",
+    "humaneval",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wepiqx/RINIQ-NEXT-GGUF · Hugging Face",
+      "url": "https://huggingface.co/wepiqx/RINIQ-NEXT-GGUF",
+      "snippet": "/ RINIQ-NEXT-GGUF Like 1 GGUF English quantization llama-cpp fusion riniq mernik humaneval License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new RINIQ-NEXT-GGUF — Ox × MiMo layer fusions Status: lab bench (no weight uploads yet) Recipes Verdicts (slow ring: HumanEval pass@1, temp 1.0 / top_p 0.95 / top_k 20 ..."
+    },
+    {
+      "title": "wepiqx (wepiqxx) - Hugging Face",
+      "url": "https://huggingface.co/wepiqx/activity/all",
+      "snippet": "wepiqx/Ornith-1.5-9B-MTP-ASHQ1-GGUF Text Generation • 9B•Updated about 15 hours ago• 1.74k • 1 updated a collectionabout 17 hours ago"
+    },
+    {
+      "title": "Wepiqxx: Open-Weight Models and Datasets",
+      "url": "https://savrn.com/model-publishers/wepiqx",
+      "snippet": "Wepiqxx has 2 open-weight models and 0 datasets in the SAVRN Model Hub. Browse each one&#x27;s model card, specs, files and license."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "RINIQ-MERNIK-GGUF by Wepiqxx: Open-Weight Model",
+      "url": "https://savrn.com/models/riniq-mernik-gguf",
+      "snippet": "RINIQ-MERNIK-GGUF — tri-fusion 9B quants RINIQ is a new finetune built by layer surgery, quantized by the MERNIK engine. Three Qwen3.5-9B donors, one 427-tensor trunk (Ornith&#x27;s MTP head excluded), per-block donor maps — no averaging of divergent blocks, ever. Code and protocol: wepiqx/MERNIK (full ledger in FUSION.md there)."
+    }
+  ]
+}

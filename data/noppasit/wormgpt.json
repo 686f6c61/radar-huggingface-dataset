@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "noppasit/Wormgpt",
+  "slug": "noppasit-wormgpt",
+  "author": "noppasit",
+  "url": "https://huggingface.co/noppasit/Wormgpt",
+  "created_at": "2026-09-23T14:27:30.000Z",
+  "updated_at": "2026-09-23T14:27:30.000Z",
+  "license": "bsd-3-clause-clear",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-3-clause-clear",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

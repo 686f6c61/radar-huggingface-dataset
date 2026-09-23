@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sahilchachra/Laya-TypedDecisions-MXFP8",
+  "slug": "sahilchachra-laya-typeddecisions-mxfp8",
+  "author": "sahilchachra",
+  "url": "https://huggingface.co/sahilchachra/Laya-TypedDecisions-MXFP8",
+  "created_at": "2026-09-23T12:14:09.000Z",
+  "updated_at": "2026-09-23T12:14:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "modernbert",
+    "quantized",
+    "encoder",
+    "text-classification",
+    "feature-extraction",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 394781696,
+  "parameters_human": "394.8M",
+  "storage_bytes": 407202572,
+  "storage_human": "407 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "Instead of staying bitter, I decided to take everything I learned, fix every architectural limitation of the old approach, and build a completely open, horizontal System 1 decision model family: Laya."
+    },
+    {
+      "title": "convaiinnovations/laya-typed-decisions · Hugging Face",
+      "url": "https://huggingface.co/convaiinnovations/laya-typed-decisions",
+      "snippet": "convaiinnovations / laya-typed-decisions Like 1 Transformers Safetensors laya system-one calibrated-decisions rlcd structured-decisions typed-decisions benchmark Eval Results (legacy) License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Laya AI: Open-Source Decision Model | Run Locally",
+      "url": "https://laya-ai.com/",
+      "snippet": "Laya AI is an open-source System 1 decision model for typed choices, scores, and probabilities. Run it locally, compare benchmarks, models, and Laya vs Jev."
+    },
+    {
+      "title": "convaiinnovations/laya at main - Hugging Face",
+      "url": "https://huggingface.co/convaiinnovations/laya/tree/main/typed-decisions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - SahilChachra/SahilChachra: GitHub profile readme.",
+      "url": "https://github.com/SahilChachra/SahilChachra",
+      "snippet": "🔭 AI Architect @ BLUE — building a real-time, multi-camera VLM pipeline for warehouse & retail vision analytics. 🧠 I work across LLMs, VLMs, multi-agent systems, and on-device inference — taking models from research to production at the edge."
+    }
+  ]
+}

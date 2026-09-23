@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mehmetefeaytas/ema-tts-improved",
+  "slug": "mehmetefeaytas-ema-tts-improved",
+  "author": "mehmetefeaytas",
+  "url": "https://huggingface.co/mehmetefeaytas/ema-tts-improved",
+  "created_at": "2026-09-23T16:19:46.000Z",
+  "updated_at": "2026-09-23T16:20:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "ema-tts",
+    "text-to-speech",
+    "tts",
+    "turkish",
+    "flow-matching",
+    "diffusion-transformer",
+    "audio",
+    "speech-synthesis",
+    "tr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 63535433,
+  "parameters_human": "63.5M",
+  "storage_bytes": 254155784,
+  "storage_human": "254 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

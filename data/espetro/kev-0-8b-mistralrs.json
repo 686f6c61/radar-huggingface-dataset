@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "espetro/kev-0.8b-mistralrs",
+  "slug": "espetro-kev-0-8b-mistralrs",
+  "author": "espetro",
+  "url": "https://huggingface.co/espetro/kev-0.8b-mistralrs",
+  "created_at": "2026-09-23T13:08:06.000Z",
+  "updated_at": "2026-09-23T13:08:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "kev",
+    "mistralrs",
+    "decision-model",
+    "qwen3.5",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3031702477,
+  "storage_human": "3.0 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

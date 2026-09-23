@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ho22joshua/hep-chat-entrypoint",
+  "slug": "ho22joshua-hep-chat-entrypoint",
+  "author": "ho22joshua",
+  "url": "https://huggingface.co/ho22joshua/hep-chat-entrypoint",
+  "created_at": "2026-07-21T21:33:05.000Z",
+  "updated_at": "2026-09-23T18:28:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "high-energy-physics",
+    "ROOT",
+    "trexfitter",
+    "qwen3.5",
+    "lora",
+    "gradio",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ho22joshua/hep-chat-entrypoint · Hugging Face",
+      "url": "https://huggingface.co/ho22joshua/hep-chat-entrypoint",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · ho22joshua/hep-chat-entrypoint at main",
+      "url": "https://huggingface.co/ho22joshua/hep-chat-entrypoint/blob/main/README.md",
+      "snippet": "HEP Chat Entrypoint This repository contains ready-to-run inference entry points for HEP chat models. Models are listed in models.json, so new trained models can be added without rewriting the app, terminal chat, batch runner, or download helper. The default configured model is: hep-qwen2.5-7b-lora16-sigbg-irred-red-step2200"
+    },
+    {
+      "title": "Ai-Engineering-Toolkit/realtime-chat-system/docker/entrypoint ... - GitHub",
+      "url": "https://github.com/HokyAIDO/Ai-Engineering-Toolkit/blob/main/realtime-chat-system/docker/entrypoint.sh",
+      "snippet": "Engineering toolkit for building scalable AI systems, including model training pipelines, LLM optimization utilities, and data engineering tools. - HokyAIDO/Ai-Engineering-Toolkit"
+    },
+    {
+      "title": "Chat Latest Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/chat-latest",
+      "snippet": "Latest Instant model used in ChatGPT Compare Try in Playground"
+    },
+    {
+      "title": "Open Ai Developers",
+      "url": "https://developers-openai.com/",
+      "snippet": "Built-in computer use: The first mainline model with built-in computer-use capabilities for build-run-verify-fix loops. Native compaction support: The first mainline model trained to support compaction for longer agent trajectories. Meet the models GPT-5.4 is the default model for important work across general-purpose and coding tasks."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "LXT/sd-class-butterflies-32",
+  "slug": "lxt-sd-class-butterflies-32",
+  "author": "LXT",
+  "url": "https://huggingface.co/LXT/sd-class-butterflies-32",
+  "created_at": "2026-09-23T14:55:01.000Z",
+  "updated_at": "2026-09-23T14:55:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18536323,
+  "parameters_human": "18.5M",
+  "storage_bytes": 74185252,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

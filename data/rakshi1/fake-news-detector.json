@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "Rakshi1/fake-news-detector",
+  "slug": "rakshi1-fake-news-detector",
+  "author": "Rakshi1",
+  "url": "https://huggingface.co/Rakshi1/fake-news-detector",
+  "created_at": "2026-09-23T11:47:50.000Z",
+  "updated_at": "2026-09-23T12:57:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "keras",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "keras",
+    "fake-news",
+    "nlp",
+    "text-classification",
+    "lstm",
+    "deep-learning",
+    "tensorflow",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33693156,
+  "storage_human": "34 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Fake News Detection",
+      "dataset": null,
+      "metric": "Accuracy",
+      "value": 0.9183
+    },
+    {
+      "task": "Fake News Detection",
+      "dataset": null,
+      "metric": "Precision",
+      "value": 0.9404
+    },
+    {
+      "task": "Fake News Detection",
+      "dataset": null,
+      "metric": "Recall",
+      "value": 0.8933
+    },
+    {
+      "task": "Fake News Detection",
+      "dataset": null,
+      "metric": "F1 Score",
+      "value": 0.9162
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fake News Detection System - a Hugging Face Space by Rakshi1",
+      "url": "https://huggingface.co/spaces/Rakshi1/fake-news-detector-app",
+      "snippet": "Enter the article&#x27;s headline and body text, and the system examines the wording to decide if the news is genuine or fabricated. It returns a clear label (real or fake) with a confidence percentage ..."
+    },
+    {
+      "title": "GitHub - RakeshBabuGajula/Fake_News_Detector: AI-powered Fake News ...",
+      "url": "https://github.com/RakeshBabuGajula/Fake_News_Detector",
+      "snippet": "🚀 An end-to-end AI-powered Fake News Detection system built using LSTM Neural Networks and deployed as a live web application on Hugging Face."
+    },
+    {
+      "title": "TruthLens — AI Fake News Detector - GitHub",
+      "url": "https://github.com/rakshanamahesh/truthlens",
+      "snippet": "AI-powered fake news detector that analyzes articles and classifies them as real or fake using machine Learning and NLP - rakshanamahesh/truthlens"
+    },
+    {
+      "title": "FakeNewsDetector - a Hugging Face Space by DevNumb",
+      "url": "https://huggingface.co/spaces/DevNumb/fakeNewsDetector",
+      "snippet": "This app analyzes news articles by extracting text from a URL and using a DistilRoBERTa model to determine if the article is fake. It checks the source credibility and looks for fake news indicator..."
+    },
+    {
+      "title": "Fake News Patterns Detector",
+      "url": "http://fakenews.mit.edu/",
+      "snippet": "For more information about this detector, read this MIT news story or take a look at our original manuscript, \" The Language of Fake News: Opening the Black-Box of Deep Learning Based Detectors,\" which we presented at a workshop called \"AI for Social Good\" at the 32nd Conference on Neural Information Processing Systems (NIPS) in Montreal, Canada."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sahilchachra/Laya-English-MXFP8",
+  "slug": "sahilchachra-laya-english-mxfp8",
+  "author": "sahilchachra",
+  "url": "https://huggingface.co/sahilchachra/Laya-English-MXFP8",
+  "created_at": "2026-09-23T12:11:56.000Z",
+  "updated_at": "2026-09-23T12:12:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "modernbert",
+    "quantized",
+    "encoder",
+    "text-classification",
+    "feature-extraction",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 394781696,
+  "parameters_human": "394.8M",
+  "storage_bytes": 407202572,
+  "storage_human": "407 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sahilchachra/LFM2.5-VL-3B-MXFP8 · Hugging Face",
+      "url": "https://huggingface.co/sahilchachra/LFM2.5-VL-3B-MXFP8",
+      "snippet": "MLX MXFP8 (8-bit microscaling float) quantization of LiquidAI/LFM2.5-VL-3B, Liquid AI&#x27;s efficient vision-language model: a hybrid convolution/attention LFM2.5 text backbone (≈2.6B) paired with a SigLIP2 NaFlex vision encoder (≈400M)."
+    },
+    {
+      "title": "sahilchachra (Sahil Chachra) - Hugging Face",
+      "url": "https://huggingface.co/sahilchachra/collections",
+      "snippet": "Vision-Language Models (VLMs) for real-time video analytics, multi-camera inference pipelines, prompt engineering and frame-batching optimization for production deployment, edge/GPU benchmarking..."
+    },
+    {
+      "title": "GitHub - SahilChachra/SahilChachra: GitHub profile readme.",
+      "url": "https://github.com/SahilChachra/SahilChachra",
+      "snippet": "🔭 AI Architect @ BLUE — building a real-time, multi-camera VLM pipeline for warehouse & retail vision analytics. 🧠 I work across LLMs, VLMs, multi-agent systems, and on-device inference — taking models from research to production at the edge."
+    },
+    {
+      "title": "SahilChachra (Sahil Chachra) · GitHub",
+      "url": "https://github.com/SahilChachra",
+      "snippet": "👋 Hey there! I&#x27;m Sahil Chachra 👨🏻‍💻 About Me 🔭 AI Architect @ BLUE — building a real-time, multi-camera VLM pipeline for warehouse & retail vision analytics. 🧠 I work across LLMs, VLMs, multi-agent systems, and on-device inference — taking models from research to production at the edge."
+    },
+    {
+      "title": "Laya - Local AI Model - Tokenstead",
+      "url": "https://tokenstead.ai/models/laya",
+      "snippet": "Laya: hardware requirements, quantization options, and live cloud pricing on Tokenstead."
+    }
+  ]
+}

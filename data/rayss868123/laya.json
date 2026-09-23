@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "rayss868123/laya",
+  "slug": "rayss868123-laya",
+  "author": "rayss868123",
+  "url": "https://huggingface.co/rayss868123/laya",
+  "created_at": "2026-09-23T01:38:33.000Z",
+  "updated_at": "2026-09-23T01:38:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laya",
+    "system-one",
+    "calibrated-decisions",
+    "rlcd",
+    "classification",
+    "routing",
+    "scoring",
+    "guardrails",
+    "moderation",
+    "reinforcement-learning",
+    "commercial-use",
+    "text-classification",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 2365127066,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rayss868123/laya · Hugging Face",
+      "url": "https://huggingface.co/rayss868123/laya",
+      "snippet": "Instructions to use rayss868123/laya with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use rayss868123/laya with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-classification\", model=\"rayss868123/laya ..."
+    },
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "Instead of staying bitter, I decided to take everything I learned, fix every architectural limitation of the old approach, and build a completely open, horizontal System 1 decision model family: Laya."
+    },
+    {
+      "title": "Laya: open-source alternative to TypeSafe Jev, runs locally",
+      "url": "https://brainfunctioncollapse.com/laya",
+      "snippet": "Laya is the open-source alternative to TypeSafe Jev: a small model that decides instead of chatting. Typed answers with real probabilities in 21 ms, on your own machine."
+    },
+    {
+      "title": "GitHub - wdobry/laya-playground: A website, two games, a benchmark and ...",
+      "url": "https://github.com/wdobry/laya-playground",
+      "snippet": "A website, two games, a benchmark and an agent skill for Laya, the open-source decision model. Runs on your machine. - wdobry/laya-playground"
+    },
+    {
+      "title": "NandhaKishorM/laya - GitHub",
+      "url": "https://github.com/NandhaKishorM/laya",
+      "snippet": "Laya ships three checkpoints. The built-in Router is the recommended entry point: it evaluates any state in any language, automatically detects scripts and languages in sub-milliseconds, and dispatches to the optimal checkpoint in a single forward pass."
+    }
+  ]
+}

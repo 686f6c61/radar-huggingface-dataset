@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "zhust24/WB-WAM",
+  "slug": "zhust24-wb-wam",
+  "author": "zhust24",
+  "url": "https://huggingface.co/zhust24/WB-WAM",
+  "created_at": "2026-09-23T12:32:32.000Z",
+  "updated_at": "2026-09-23T12:35:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "world-model",
+    "action-model",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "World Action Models: The Next Frontier in Embodied AI",
+      "url": "https://arxiv.org/pdf/2605.12090",
+      "snippet": "By sampling latent variables, the model generates multiple plausible future frame sequences rather than a single deterministic prediction, which is particularly important in real-world and action-conditioned settings where ambiguous interactions may lead to different outcomes."
+    },
+    {
+      "title": "2026 Ces成吉利主场，一口气带来wam模型、全域ai 2.0、千里浩瀚g-asd",
+      "url": "https://zhuanlan.zhihu.com/p/1992181369741263078",
+      "snippet": "拉斯维加斯当地时间1月5日，吉利汽车集团宣布基于其首发的WAM世界行为模型，吉利全域AI技术体系顺利进化到了2.0时代，实现了AI技术在整车各域的跨域融合，让汽车智能首次拥有了持续进化的\"世界观\"和\"判断力\"。…"
+    },
+    {
+      "title": "World Action Model WAM | Wiki | HyperAI",
+      "url": "https://hyper.ai/wiki/51596",
+      "snippet": "World Action Models are Zero-shot Policies The paper proposes DreamZero (a 14-parameter robot foundation model) and, for the first time, explicitly uses the term World Action Model (WAM) to define this novel architecture."
+    },
+    {
+      "title": "Awesome VLA & WAM - GitHub",
+      "url": "https://github.com/DravenALG/awesome-vla-wam",
+      "snippet": "A Curated List of Vision-Language-Action (VLA) and World Action Models (WAM) Research and Beyond - DravenALG/awesome-vla-wam"
+    },
+    {
+      "title": "GitHub - fudan-generative-vision/WAM-Flow: [CVPR 2026] WAM-Flow ...",
+      "url": "https://github.com/fudan-generative-vision/WAM-Flow",
+      "snippet": "The model is first trained via supervised fine-tuning to learn accurate trajectory prediction. We then apply simulatorguided GRPO to further optimize closed-loop behavior. The GRPO reward function integrates safety constraints (collision avoidance, drivable-area compliance) with performance objectives (ego-progress, time-to-collision, comfort)."
+    }
+  ]
+}

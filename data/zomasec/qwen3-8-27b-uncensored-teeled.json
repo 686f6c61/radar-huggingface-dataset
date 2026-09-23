@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "zomasec/Qwen3.8-27B-Uncensored-teeled",
+  "slug": "zomasec-qwen3-8-27b-uncensored-teeled",
+  "author": "zomasec",
+  "url": "https://huggingface.co/zomasec/Qwen3.8-27B-Uncensored-teeled",
+  "created_at": "2026-09-23T01:44:16.000Z",
+  "updated_at": "2026-09-23T01:56:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "cyinnove",
+    "qwen3",
+    "conversational",
+    "reasoning",
+    "vision",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 389007761691,
+  "storage_human": "389.0 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF, DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU, Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored Showcase - a Hugging Face Space by P1723",
+      "url": "https://huggingface.co/spaces/P1723/Qwen3.8-27B-Uncensored-Demo",
+      "snippet": "⚠️ This model has had its safety alignment substantially removed. Released strictly for legitimate research (interpretability, AI-safety and refusal-mechanism study, red-teaming, robustness evaluation, controlled experiments). You assume full responsibility and liability for use. Add your own moderation before any deployment."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Ollama build of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head. Sixteen tags from 2-bit to 8-bit, each with the mmproj vision projector bundled in — nothing extra to fetch. Browse all ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "JonathanColetti/Qwen3.8-27B-Uncensored - featherless.ai",
+      "url": "https://featherless.ai/models/JonathanColetti/Qwen3.8-27B-Uncensored",
+      "snippet": "Architecture: Retains the original Qwen3.8-27B architecture, including 64 layers, a 248320-token vocabulary, and vision capabilities. Context Length: Supports a large context of 262144 tokens. Precision: Provided in bf16 precision, requiring approximately 55 GB of VRAM for local inference."
+    }
+  ]
+}

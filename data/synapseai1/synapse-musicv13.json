@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SYNAPSEai1/Synapse-MusicV13",
+  "slug": "synapseai1-synapse-musicv13",
+  "author": "SYNAPSEai1",
+  "url": "https://huggingface.co/SYNAPSEai1/Synapse-MusicV13",
+  "created_at": "2026-09-23T12:00:17.000Z",
+  "updated_at": "2026-09-23T12:00:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "minimax_music3",
+    "music-generation",
+    "text-to-music",
+    "pytorch",
+    "sglang-omni",
+    "text-to-audio",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2431905920,
+  "parameters_human": "2.43B",
+  "storage_bytes": 57348755456,
+  "storage_human": "57.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Synapse Music V13 Studio - a Hugging Face Space by SYNAPSEai1",
+      "url": "https://huggingface.co/spaces/SYNAPSEai1/Synapse-Music-V13",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "SYNAPSEai1 (Synapse AI) - Hugging Face",
+      "url": "https://huggingface.co/SYNAPSEai1/models",
+      "snippet": "None yet SYNAPSEai1&#x27;s models1 Sort: Recently updated SYNAPSEai1/Ace-Step1.5 Text-to-Audio •Updated 2 days ago•9•1 System theme Company"
+    },
+    {
+      "title": "GitHub - drizzy-palace/SynapseMusicV12",
+      "url": "https://github.com/drizzy-palace/SynapseMusicV12",
+      "snippet": "Full-Song AI Music Generation & Production Generate complete songs, vocals, lyrics, instrumentals, covers, remixes and editable music using the Synapse Music V12 model ecosystem."
+    },
+    {
+      "title": "synapse.ai",
+      "url": "https://synapse.ai/docs",
+      "snippet": "synapse.ai"
+    },
+    {
+      "title": "GitHub - zai-org/Synapse: Self-hosted AI workspace with shareable AI ...",
+      "url": "https://github.com/zai-org/Synapse",
+      "snippet": "Self-hosted AI workspace with shareable AI teammates, shared conversations, memory, and governed access to plugins, MCP tools, and local devices. - zai-org/Synapse"
+    }
+  ]
+}

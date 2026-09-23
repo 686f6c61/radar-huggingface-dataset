@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Junaidi69/rengas-3.2-lora-adapters-st-010",
+  "slug": "junaidi69-rengas-3-2-lora-adapters-st-010",
+  "author": "Junaidi69",
+  "url": "https://huggingface.co/Junaidi69/rengas-3.2-lora-adapters-st-010",
+  "created_at": "2026-09-23T15:36:35.000Z",
+  "updated_at": "2026-09-23T15:36:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llama3.2",
+    "base_model:unsloth/Llama-3.2-1B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.2-1B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39789785,
+  "storage_human": "40 MB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le Figaro - Histoire",
+      "url": "https://www.lefigaro.fr/histoire?msockid=11aa0bf00540684015af1c2d043c695e",
+      "snippet": "Avec Le Figaro Histoire redécouvrez l'histoire française, l'histoire du monde, à travers les événements, rétrospectives, dossiers …Read more"
+    },
+    {
+      "title": "Lire Le Figaro Histoire en ligne - Kiosque Figaro",
+      "url": "https://kiosque.lefigaro.fr/catalog/le-figaro-histoire",
+      "snippet": "Le Figaro Histoire : retrouvez toutes les éditions à lire en ligne ou à télécharger pour lire où vous souhaitez, quand vous le souhaitez.Read more"
+    },
+    {
+      "title": "Le Figaro Histoire",
+      "url": "https://boutique.lefigaro.fr/rayon/301-le-figaro-histoire",
+      "snippet": "Retrouvez les numéros du Figaro Histoire disponibles à l'unité sur le Figaro Store : États-Unis, Groenland et Vikings, Première …Read more"
+    },
+    {
+      "title": "Le Figaro Histoire",
+      "url": "https://www.lefigaro.fr/auteur/le-figaro-histoire?msockid=11aa0bf00540684015af1c2d043c695e",
+      "snippet": "Feb 20, 2024 · Retrouvez l'intégralité des articles écrits par Le Figaro Histoire sur les sites du groupe FigaroRead more"
+    },
+    {
+      "title": "Le Figaro — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Le_Figaro",
+      "snippet": "2.1Premier Figaro : un journal satirique atypique (1826-1854) 2.2Résurrection du journal : Le Figarode Villemessant (1854-1879) …Read more"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "audio-cpp/Nemotron-3-Diarization-GGUF",
+  "slug": "audio-cpp-nemotron-3-diarization-gguf",
+  "author": "audio-cpp",
+  "url": "https://huggingface.co/audio-cpp/Nemotron-3-Diarization-GGUF",
+  "created_at": "2026-09-23T16:44:48.000Z",
+  "updated_at": "2026-09-23T16:44:56.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "audio.cpp",
+    "speaker-diarization",
+    "streaming-sortformer",
+    "speaker-tagging",
+    "audio",
+    "voice-activity-detection",
+    "base_model:nvidia/Nemotron-3-Diarization",
+    "base_model:quantized:nvidia/Nemotron-3-Diarization",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 99263443,
+  "parameters_human": "99.3M",
+  "storage_bytes": 198720032,
+  "storage_human": "199 MB",
+  "base_model": "nvidia/Nemotron-3-Diarization",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Audiofanzine : Home Studio, MAO, Guitares, Basses, Sono et DJ",
+      "url": "https://fr.audiofanzine.com/",
+      "snippet": "Audiofanzine est une plateforme en ligne dédiée à la musique et à l’audio, à la fois média spécialisé, site de petites annonces, base …"
+    },
+    {
+      "title": "audio.com - a better way to upload and share audio online",
+      "url": "https://audio.com/",
+      "snippet": "audio.com is a free audio-sharing platform designed to empower audio creatives and musicians"
+    },
+    {
+      "title": "Audiomack - Music platform empowering artists & fans | Audiomack",
+      "url": "https://audiomack.com/",
+      "snippet": "Audiomack is an on-demand music streaming and audio discovery platform that allows artists and creators to upload limitless music …"
+    },
+    {
+      "title": "Télécharger Realtek HD Audio Drivers (gratuit) Windows - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche600046-realtek-hd-audio-drivers.html",
+      "snippet": "Sep 14, 2026 · Realtek HD Audio Drivers est un pack de pilotes audio pour Windows qui permet d’exploiter pleinement les codecs …"
+    },
+    {
+      "title": "Son-Vidéo.com, leader français en hi-fi et home-cinéma",
+      "url": "https://www.son-video.com/",
+      "snippet": "Son-Vidéo.com est le leader français en hi-fi et home-cinéma. Conseils, guides, avis : pour acheter facilement votre équipement en …"
+    }
+  ]
+}

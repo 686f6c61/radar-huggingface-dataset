@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen3p6-35b-a3b-nopin-2p00bit-r40",
+  "slug": "minjaechoi-qwen3p6-35b-a3b-nopin-2p00bit-r40",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-nopin-2p00bit-r40",
+  "created_at": "2026-09-23T12:39:08.000Z",
+  "updated_at": "2026-09-23T12:39:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "minjaechoi/qwen36-35b-a3b-2p00bit-r6 · Hugging Face",
+      "url": "https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p00bit-r6",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "minjaechoi/qwen36-35b-a3b-2p00bit-r5 - featherless.ai",
+      "url": "https://featherless.ai/models/minjaechoi/qwen36-35b-a3b-2p00bit-r5",
+      "snippet": "The minjaechoi/qwen36-35b-a3b-2p00bit-r5 model is an internal research checkpoint based on the Qwen/Qwen3.6-35B-A3B architecture, featuring 35.1 billion parameters and a 32768-token context length. This model utilizes routed experts with an average quantization of 2.00 bits, while other weights are stored in BF16. It is designed for efficient loading with standard `transformers` and vLLM ..."
+    },
+    {
+      "title": "minjaechoi (MinJae Choi) - Hugging Face",
+      "url": "https://huggingface.co/minjaechoi",
+      "snippet": "Efficient ML, Quantization, On-Device AI, Hardware-aware Algorithm Design"
+    },
+    {
+      "title": "minjaechoi/qwen36-35b-a3b-2p00bit-r6 - featherless.ai",
+      "url": "https://featherless.ai/models/minjaechoi/qwen36-35b-a3b-2p00bit-r6",
+      "snippet": "The minjaechoi/qwen36-35b-a3b-2p00bit-r6 is an internal research checkpoint based on the Qwen3.6-35B-A3B architecture, featuring 35.1 billion parameters and a 32768-token context length. This model utilizes a unique quantization scheme where routed experts average 2.00 bits, while other weights remain in BF16 format. It is designed for efficient loading with standard `transformers` and vLLM ..."
+    },
+    {
+      "title": "Qwen3.6 35B A3B TWLA Experts Only by minjaechoi",
+      "url": "https://llm-explorer.com/model/minjaechoi%2FQwen3.6-35B-A3B-TWLA-Experts-Only,7ogWXNK7sZGQvjqMz9cdGi",
+      "snippet": "Rank the Qwen3.6 35B A3B TWLA Experts Only capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

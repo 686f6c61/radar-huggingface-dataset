@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SimpleTuner/Qwen-Image-2.1-training-assistant-v1",
+  "slug": "simpletuner-qwen-image-2-1-training-assistant-v1",
+  "author": "SimpleTuner",
+  "url": "https://huggingface.co/SimpleTuner/Qwen-Image-2.1-training-assistant-v1",
+  "created_at": "2026-09-23T14:46:02.000Z",
+  "updated_at": "2026-09-23T14:46:10.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "simpletuner",
+    "training-assistant",
+    "qwen-image",
+    "experimental",
+    "text-to-image",
+    "dataset:webshart/cc12m-structured-captions",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67144264,
+  "storage_human": "67 MB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les choses que j’ai fait ou que j’ai faites - Question Orthographe",
+      "url": "https://www.question-orthographe.fr/question/les-choses-que-jai-fait-ou-que-jai-faites/",
+      "snippet": "Nov 21, 2019 · Donc ici les choses que j’ai faites (avec accord du participe passé faites) et toutes les phrases construites sur ce …"
+    },
+    {
+      "title": "Elles m’ont assuré ou elles m’ont assurées - Question Orthographe",
+      "url": "https://www.question-orthographe.fr/question/elles-mont-assure-ou-elles-mont-assurees/",
+      "snippet": "Apr 10, 2017 · Bonjour, Je ne sais pas comment accorder correctement cette phrase : Elles m’ont assuré (es ?) que … Pourriez-vous …"
+    },
+    {
+      "title": "uno que otro - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/uno-que-otro.82986/",
+      "snippet": "Jan 3, 2006 · Uno que otro - the occasional, the odd (In this case \"odd\" doesn't mean raro.) ...madre de cuatro hijos, profesional, con …"
+    },
+    {
+      "title": "Hombre con las cualidades de un zorro - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/hombre-con-las-cualidades-de-un-zorro.1491386/",
+      "snippet": "Aug 9, 2009 · Confieso que no había visto las definiciones, pero aclaro entonces que en este pedacito de Colombia -y creo que en …"
+    },
+    {
+      "title": "法语小白求助que的发音问题？ - 知乎",
+      "url": "https://www.zhihu.com/question/40557654",
+      "snippet": "Feb 19, 2016 · 法语小白求助que的发音问题？ que 老师说要浊化 qu读g 但是不是后面是元音音素才浊化吗 后面e发额的音哎。 。 现 …"
+    }
+  ]
+}

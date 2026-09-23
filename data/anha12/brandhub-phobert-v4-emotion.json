@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "anha12/brandhub-phobert-V4-emotion",
+  "slug": "anha12-brandhub-phobert-v4-emotion",
+  "author": "anha12",
+  "url": "https://huggingface.co/anha12/brandhub-phobert-V4-emotion",
+  "created_at": "2026-09-22T03:54:56.000Z",
+  "updated_at": "2026-09-23T18:29:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "emotion",
+    "vietnamese",
+    "phobert",
+    "vi",
+    "base_model:vinai/phobert-base-v2",
+    "base_model:finetune:vinai/phobert-base-v2",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 135002886,
+  "parameters_human": "135.0M",
+  "storage_bytes": 547182657,
+  "storage_human": "547 MB",
+  "base_model": "vinai/phobert-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anha12/brandhub-phobert-V4-emotion · Hugging Face",
+      "url": "https://huggingface.co/anha12/brandhub-phobert-V4-emotion",
+      "snippet": "Instructions to use anha12/brandhub-phobert-V4-emotion with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use anha12/brandhub-phobert-V4-emotion with PEFT: ... Notebooks Google Colab Kaggle Model Card for Model ID Model Details Model Description Model Sources [optional] Uses ..."
+    },
+    {
+      "title": "anha12/brandhub-phobert-V4-emotion at main - Hugging Face",
+      "url": "https://huggingface.co/anha12/brandhub-phobert-V4-emotion/tree/main",
+      "snippet": "Instructions to use anha12/brandhub-phobert-V4-emotion with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use anha12/brandhub-phobert-V4-emotion with PEFT: ... Notebooks Google Colab Kaggle main brandhub-phobert-V4-emotion 5.62 MB Ctrl+K Ctrl+K 1 contributor History:3 commits ..."
+    },
+    {
+      "title": "GitHub - VinAIResearch/PhoBERT: PhoBERT: Pre-trained language models ...",
+      "url": "https://github.com/VinAIResearch/PhoBERT",
+      "snippet": "PhoBERT: Pre-trained language models for Vietnamese Pre-trained PhoBERT models are the state-of-the-art language models for Vietnamese (Pho, i.e. \"Phở\", is a popular food in Vietnam): Two PhoBERT versions of \"base\" and \"large\" are the first public large-scale monolingual language models pre-trained for Vietnamese."
+    },
+    {
+      "title": "GitHub - irisgranger/PhoBERT_EmotionAnalyzer: PhoBERT: Pre-trained ...",
+      "url": "https://github.com/irisgranger/PhoBERT_EmotionAnalyzer",
+      "snippet": "Two PhoBERT versions of \"base\" and \"large\" are the first public large-scale monolingual language models pre-trained for Vietnamese. PhoBERT pre-training approach is based on RoBERTa which optimizes the BERT pre-training procedure for more robust performance. PhoBERT outperforms previous monolingual and multilingual approaches, obtaining new state-of-the-art performances on four downstream ..."
+    },
+    {
+      "title": "PhoBERT:PhoBERT: Pre-trained language models for Vietnamese (EMNLP-2020 ...",
+      "url": "https://gitcode.com/VinAIResearch/PhoBERT/overview",
+      "snippet": "Two PhoBERT versions of \"base\" and \"large\" are the first public large-scale monolingual language models pre-trained for Vietnamese. PhoBERT pre-training approach is based on RoBERTa which optimizes the BERT pre-training procedure for more robust performance."
+    }
+  ]
+}

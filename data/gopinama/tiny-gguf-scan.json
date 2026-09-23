@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "gopinama/tiny-gguf-scan",
+  "slug": "gopinama-tiny-gguf-scan",
+  "author": "gopinama",
+  "url": "https://huggingface.co/gopinama/tiny-gguf-scan",
+  "created_at": "2026-09-23T11:41:45.000Z",
+  "updated_at": "2026-09-23T11:44:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ai-defense",
+    "qa-fixture",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2789632,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "IBM GGUF-encoded AI models and conversion scripts. Contribute to IBM/gguf development by creating an account on GitHub."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "LLMScan.online — Online security scanner for AI model files (GGUF ...",
+      "url": "https://llmscan.online/landing",
+      "snippet": "Scan AI model files (GGUF, ONNX, Safetensors) for security issues and CVEs. Free online tool + API for CI/CD."
+    },
+    {
+      "title": "Models compatible with the GGUF library - Hugging Face",
+      "url": "https://huggingface.co/models?library=gguf",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

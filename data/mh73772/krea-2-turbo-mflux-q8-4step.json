@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mh73772/krea-2-turbo-mflux-q8-4step",
+  "slug": "mh73772-krea-2-turbo-mflux-q8-4step",
+  "author": "mh73772",
+  "url": "https://huggingface.co/mh73772/krea-2-turbo-mflux-q8-4step",
+  "created_at": "2026-09-23T01:37:27.000Z",
+  "updated_at": "2026-09-23T01:52:13.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "mflux",
+  "languages": [],
+  "tags": [
+    "mflux",
+    "safetensors",
+    "text-to-image",
+    "mlx",
+    "krea",
+    "apple-silicon",
+    "quantized",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:finetune:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 200,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18415692387,
+  "storage_human": "18.4 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies",
+      "url": "https://www.xnxx.com/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, …"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Pornhub provides you with unlimited free porn videos with the hottest pornstars. Enjoy the largest amateur porn community on the …"
+    },
+    {
+      "title": "Free Sex Videos, HD Porn Movies | New XXX Videos at Worldsex",
+      "url": "https://www.worldsex.com/videos/",
+      "snippet": "Watch the latest free porn videos of the highest quality. Our XXX sex movies update very frequently. Play clips from the best XXX …"
+    },
+    {
+      "title": "Sexu: Free HD Porn & Sex Videos - New XXX Movies Daily",
+      "url": "https://sexu.com/",
+      "snippet": "Watch free HD porn on Sexu - thousands of XXX sex videos in every category: Teen, MILF, anal, POV & more. New movies added …"
+    }
+  ]
+}

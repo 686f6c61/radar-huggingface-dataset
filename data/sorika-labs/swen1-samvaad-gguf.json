@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sorika-labs/swen1-samvaad-GGUF",
+  "slug": "sorika-labs-swen1-samvaad-gguf",
+  "author": "sorika-labs",
+  "url": "https://huggingface.co/sorika-labs/swen1-samvaad-GGUF",
+  "created_at": "2026-09-23T11:52:55.000Z",
+  "updated_at": "2026-09-23T11:55:20.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "swen1-samvaad",
+    "vision",
+    "sorika-labs",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 1697349888,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sorika-labs/swen1-samvaad-GGUF · Hugging Face",
+      "url": "https://huggingface.co/sorika-labs/swen1-samvaad-GGUF",
+      "snippet": "sorika-labs / swen1-samvaad-GGUF Like 0 GGUF llama.cpp swen1-samvaad vision sorika-labs conversational License:lfm1.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "sorika-labs/swen1-edge-1B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/sorika-labs/swen1-edge-1B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Foundation Models | Swen 1.1, Suzune S1 & Kaori K1 | Sorika AI Labs",
+      "url": "https://sorikalabs.com/models",
+      "snippet": "Explore Sorika&#x27;s suite of compact foundation models: Swen 1.1 (edge reasoning), Suzune S1 (sub-20ms speech synthesis), and Kaori K1 (spatial layout & manuscript OCR)."
+    },
+    {
+      "title": "Swen 1.1 Technical Report | Hybrid Convolutions & Metacognitive Reasoning",
+      "url": "https://sorika.vercel.app/research/swen",
+      "snippet": "Foundational research report by Darsh Yadav and Sorika Labs on Swen 1.1: Efficient edge intelligence via hybrid double-gated causal convolutions and test-time reasoning."
+    },
+    {
+      "title": "Swen 1.1 Series | Hybrid Edge Reasoning Foundation Models",
+      "url": "https://sorika.vercel.app/models/swen",
+      "snippet": "Swen 1.1 delivers 128k context with 10.6x less cache memory footprint through hybrid causal double-gated convolutions and test-time metacognitive reasoning on edge hardware."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "intelliaij/scm-4pillar-late-delivery-risk",
+  "slug": "intelliaij-scm-4pillar-late-delivery-risk",
+  "author": "intelliaij",
+  "url": "https://huggingface.co/intelliaij/scm-4pillar-late-delivery-risk",
+  "created_at": "2026-09-23T11:58:48.000Z",
+  "updated_at": "2026-09-23T12:05:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-classification",
+  "library": "lightgbm",
+  "languages": [],
+  "tags": [
+    "lightgbm",
+    "tabular-classification",
+    "supply-chain",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3423622,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supply Chain Analytics to Predict the Risk of Late Delivery: A Machine ...",
+      "url": "https://colab.ws/articles/10.1007%2F978-981-96-2647-2_6",
+      "snippet": "Accurate prediction and proactive management of the risk of late delivery are crucial for maintaining operational efficiency and competitive advantage. Supply chain analytics is a strategic tool that enables organizations to make data-driven decisions, improve efficiency, and enhance overall supply chain performance."
+    },
+    {
+      "title": "Supply Chain Analytics to Predict the Risk of Late Delivery: A Machine ...",
+      "url": "https://www.researchgate.net/publication/392475713_Supply_Chain_Analytics_to_Predict_the_Risk_of_Late_Delivery_A_Machine_Learning_Approach",
+      "snippet": "At the same time, the resurgence of Artificial Intelligence (AI) has led to the investigation of machine learning techniques and their applicability in supply chain risk management."
+    },
+    {
+      "title": "Supply Chain Analytics to Predict the Risk of Late Delivery ... - Springer",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-96-2647-2_6",
+      "snippet": "Accurate prediction and proactive management of the risk of late delivery are crucial for maintaining operational efficiency and competitive advantage. Supply chain analytics is a strategic tool that enables organizations to make data-driven decisions, improve..."
+    },
+    {
+      "title": "Supply Chain Analytics to Predict the Risk of Late Delivery ... - Springer",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-981-96-2647-2_6",
+      "snippet": "Supply chain analytics is a strategic tool that enables organizations to make data-driven decisions, improve efﬁciency, and enhance overall supply chain performance. This paper uses machine learning algorithms to predict the risk of late delivery in supply chains."
+    },
+    {
+      "title": "Supply Chain Late Delivery Risk - GitHub",
+      "url": "https://github.com/Pegah-Ardehkhani/SupplyChain-LateDeliveryRisk",
+      "snippet": "This project analyzes and predicts late deliveries in a supply chain dataset using machine learning models. The goal is to identify the risk of late delivery for orders based on features like customer, product, shipping, and sales data."
+    }
+  ]
+}

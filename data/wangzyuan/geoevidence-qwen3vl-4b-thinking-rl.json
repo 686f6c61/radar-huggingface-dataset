@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "wangzyuan/GeoEvidence-Qwen3VL-4B-Thinking-RL",
+  "slug": "wangzyuan-geoevidence-qwen3vl-4b-thinking-rl",
+  "author": "wangzyuan",
+  "url": "https://huggingface.co/wangzyuan/GeoEvidence-Qwen3VL-4B-Thinking-RL",
+  "created_at": "2026-09-18T07:40:18.000Z",
+  "updated_at": "2026-09-23T14:28:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "geoevidence",
+    "visual-question-answering",
+    "reinforcement-learning",
+    "base_model:Qwen/Qwen3-VL-4B-Thinking",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Thinking",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 687959971164,
+  "storage_human": "688.0 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "nakanokazuha/Yume-Qwen3.5-4B-LoRA",
+  "slug": "nakanokazuha-yume-qwen3-5-4b-lora",
+  "author": "nakanokazuha",
+  "url": "https://huggingface.co/nakanokazuha/Yume-Qwen3.5-4B-LoRA",
+  "created_at": "2026-09-23T12:27:56.000Z",
+  "updated_at": "2026-09-23T12:28:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "id",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3.5",
+    "lora",
+    "qlora",
+    "conversational",
+    "indonesian",
+    "text-generation",
+    "id",
+    "en",
+    "dataset:arskaz/Tsundere-AI",
+    "dataset:vnsd13/dataset-dialog-tsundere",
+    "base_model:knoveleng/Qwen3.5-4B-Uncensored",
+    "base_model:adapter:knoveleng/Qwen3.5-4B-Uncensored",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149916333,
+  "storage_human": "150 MB",
+  "base_model": "knoveleng/Qwen3.5-4B-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "theogorg/qwen3.5_4b_lora · Hugging Face",
+      "url": "https://huggingface.co/theogorg/qwen3.5_4b_lora",
+      "snippet": "Instructions to use theogorg/qwen3.5_4b_lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers"
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Qwen3 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Running Qwen 3.5 Locally on a Single GPU: Complete Setup Guide",
+      "url": "https://www.qtithow.com/2026/09/running-qwen-35-locally-on-single-gpu.html",
+      "snippet": "Running Qwen 3.5 locally is a powerful way to access a massive language model while keeping everything private and completely under your control. In this guide, the model was hosted on a single H200 GPU VM, accessed securely from your local machine using SSH port forwarding, and served through an OpenAI-compatible endpoint (llama.cpp)."
+    },
+    {
+      "title": "Qwen3.5-4B LoRA Fine-tuning on Step-3.5-Flash-SFT - GitHub",
+      "url": "https://github.com/IIIIQIIII/qwen35-4b-lora-sft",
+      "snippet": "This experiment validates whether a single H100 can efficiently fine-tune Qwen3.5-4B on general agent/coding/reasoning data that the base model has never seen before, using a large LoRA rank to compensate for the domain gap."
+    }
+  ]
+}
