@@ -5,7 +5,7 @@
   "author": "openEuler",
   "url": "https://huggingface.co/openEuler/ram_plus_swin_large_14m",
   "created_at": "2026-08-26T07:27:07.000Z",
-  "updated_at": "2026-08-26T08:02:22.000Z",
+  "updated_at": "2026-09-22T11:14:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",

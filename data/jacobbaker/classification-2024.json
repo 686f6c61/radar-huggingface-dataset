@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JacobBaker/classification-2024",
+  "slug": "jacobbaker-classification-2024",
+  "author": "JacobBaker",
+  "url": "https://huggingface.co/JacobBaker/classification-2024",
+  "created_at": "2026-09-23T02:07:21.000Z",
+  "updated_at": "2026-09-23T02:07:26.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jev (AI model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
+      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco-based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2] Unlike a large language model (LLM), Jev does not generate natural-language text. It instead returns typed values together with ..."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type. Note that dates reflect the earliest meaningful availability stage shown in each entry. Public ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "What is Jev, an AI &#x27;generalist&#x27; model with a new take on decision ...",
+      "url": "https://indianexpress.com/article/technology/artificial-intelligence/meet-jev-new-ai-model-from-chatgpt-inventor-10887591/",
+      "snippet": "A new AI model called &#x27;Jev&#x27; developed by TypeSafe AI is making waves among developers. The model is drawing attention for what it is capable of, as much as for who helped build it: Diogo Almeida, a researcher whose work enabled the instruction-following feature underpinning OpenAI&#x27;s ChatGPT ..."
+    }
+  ]
+}

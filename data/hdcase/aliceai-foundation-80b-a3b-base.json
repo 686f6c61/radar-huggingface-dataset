@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "hdcase/AliceAI-Foundation-80B-A3B-Base",
+  "slug": "hdcase-aliceai-foundation-80b-a3b-base",
+  "author": "hdcase",
+  "url": "https://huggingface.co/hdcase/AliceAI-Foundation-80B-A3B-Base",
+  "created_at": "2026-09-23T02:01:29.000Z",
+  "updated_at": "2026-09-23T02:01:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "alice_ai",
+    "text-generation",
+    "custom_code",
+    "mixture-of-experts",
+    "vllm",
+    "ru",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 102,
+  "trending_score": 0,
+  "parameters": 81286433408,
+  "parameters_human": "81.29B",
+  "storage_bytes": 162576640278,
+  "storage_human": "162.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yandex/AliceAI-Foundation-80B-A3B-Base · Hugging Face",
+      "url": "https://huggingface.co/yandex/AliceAI-Foundation-80B-A3B-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hdcase/AliceAI-Foundation-80B-A3B-Base · Hugging Face",
+      "url": "https://huggingface.co/hdcase/AliceAI-Foundation-80B-A3B-Base",
+      "snippet": "AliceAI-Foundation-80B-A3B-Base - базовая языковая модель с гибридной архитектурой и MoE-слоями. Модель содержит 80 млрд параметров, из которых для каждого токена активируются 3 млрд, и поддерживает ..."
+    },
+    {
+      "title": "AliceAI Foundation 80B A3B Base | CompareAIHardware",
+      "url": "https://compareaihardware.com/models/aliceai-foundation-80b-a3b",
+      "snippet": "AliceAI Foundation 80B A3B Base is a mixture-of-experts model with 3B activated parameters per token and 80B-class total open weights (official card: 80B total / 3B active; HF safetensors.total=81,286,433,408). Native context is 262,144 tokens, apache-2.0."
+    },
+    {
+      "title": "AliceAI Foundation 80B A3B Base - apxml.com",
+      "url": "https://apxml.com/models/aliceai-foundation-80b-a3b-base",
+      "snippet": "About AliceAI Foundation 80B A3B Base AliceAI Foundation 80B A3B Base is a sparse mixture-of-experts foundation model developed by Yandex, routing tokens through 3B active parameters out of an 80B total parameter pool. It provides strong multilingual and reasoning abilities with high computational efficiency during inference."
+    },
+    {
+      "title": "Alice AI Foundation 80B-A3B - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/alice_ai_foundation_80b_a3b",
+      "snippet": "AliceAI-Foundation-80B-A3B-Base (announced in English as \"Alice AI Foundation 80B-A3B Base\") is an open-weights base large language model from Yandex, published on Hugging Face and announced on 21 September 2026 under the Apache License 2.0. [1][3][4] It is a sparse mixture-of-experts (MoE) model with 80 billion total parameters, of which about ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Bukareszt/act_pick_up_orange_stick",
+  "slug": "bukareszt-act_pick_up_orange_stick",
+  "author": "Bukareszt",
+  "url": "https://huggingface.co/Bukareszt/act_pick_up_orange_stick",
+  "created_at": "2026-09-23T02:33:39.000Z",
+  "updated_at": "2026-09-23T05:18:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Bukareszt/pick_up_orange_stick",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 2478147512,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wsagi/ACT-PickOrange · Hugging Face",
+      "url": "https://huggingface.co/wsagi/ACT-PickOrange",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dobot-Official/CR5A-act-Pick_Orange at main - Hugging Face",
+      "url": "https://huggingface.co/Dobot-Official/CR5A-act-Pick_Orange/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Free AI 3D Model Generator | Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Free AI 3D Model Generator: create 3D models from text or images for games, AR/VR, and 3D printing at zero cost."
+    },
+    {
+      "title": "Grok - GPT",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "AI Image Generator (free, no sign-up, unlimited) - Perchance",
+      "url": "https://perchance.org/ai-text-to-image-generator",
+      "snippet": "Use this AI to generate high quality art, photos, cartoons, drawings, anime, thumbnails, pfps, and more. Create OCs, anime characters, AI villains, fanfic artwork, and pretty much anything else. It&#x27;s an AI-based image generator - i.e. a text-to-image model. No watermark, no account needed, unlimited images. Type words, make pics."
+    }
+  ]
+}

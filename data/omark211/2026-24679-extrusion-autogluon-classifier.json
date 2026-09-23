@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "OmarK211/2026-24679-extrusion-autogluon-classifier",
+  "slug": "omark211-2026-24679-extrusion-autogluon-classifier",
+  "author": "OmarK211",
+  "url": "https://huggingface.co/OmarK211/2026-24679-extrusion-autogluon-classifier",
+  "created_at": "2026-09-23T02:25:07.000Z",
+  "updated_at": "2026-09-23T02:55:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "autogluon",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "autogluon",
+    "tabular-classification",
+    "en",
+    "dataset:sunkaiwen/sketch2stl-parts-tabular",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 929513,
+  "storage_human": "929513 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OmarK211/2026-24679-extrusion-autogluon-classifier · Hugging Face",
+      "url": "https://huggingface.co/OmarK211/2026-24679-extrusion-autogluon-classifier",
+      "snippet": "OmarK211 / 2026-24679-extrusion-autogluon-classifier Like 0 Tabular Classification sunkaiwen/sketch2stl-parts-tabular English autogluon License:mit Model card FilesFiles and versions xet Community Copy to bucket new Model Card for Model ID Model Details Model Description Uses Direct Use Out-of-Scope Use Bias, Risks, and Limitations Recommendations"
+    },
+    {
+      "title": "2026-24679-extrudability-autogluon-classifier - Hugging Face",
+      "url": "https://huggingface.co/yennik16/2026-24679-extrudability-autogluon-classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AutoGluon 1.6.1 documentation",
+      "url": "https://auto.gluon.ai/stable/index.html",
+      "snippet": "AutoGluon supports Linux, MacOS, and Windows. See Installing AutoGluon for detailed instructions. Managed Service ¶ Looking for a managed AutoML service? We highly recommend checking out Amazon SageMaker Canvas! Powered by AutoGluon, it allows you to create highly accurate machine learning models without any machine learning experience or writing a single line of code. Community ¶ Get ..."
+    },
+    {
+      "title": "GitHub - autogluon/autogluon: Fast and Accurate ML in 3 Lines of Code",
+      "url": "https://github.com/autogluon/autogluon",
+      "snippet": "AutoGluon automates machine learning on data such as tables and time series, helping you achieve strong predictive performance with just a few lines of code. From classic ML algorithms to foundation models, the options keep multiplying — but which one should you use? AutoGluon takes care of that: it finds the combination of models that works best for your use case."
+    },
+    {
+      "title": "AI Model Radar — real-time AI model release tracking",
+      "url": "https://aimodelradar.app/",
+      "snippet": "The moment a new AI model appears on the radar, know what it is and what changed. Tracking OpenAI, Anthropic, Google and open-source releases."
+    }
+  ]
+}

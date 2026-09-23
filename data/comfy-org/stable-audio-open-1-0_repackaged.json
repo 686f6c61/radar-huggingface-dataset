@@ -5,7 +5,7 @@
   "author": "Comfy-Org",
   "url": "https://huggingface.co/Comfy-Org/stable-audio-open-1.0_repackaged",
   "created_at": "2025-07-13T14:58:56.000Z",
-  "updated_at": "2026-08-17T06:13:45.000Z",
+  "updated_at": "2026-09-23T07:17:42.000Z",
   "license": "stable-audio-community",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 12,
-  "downloads_30d": 23497,
+  "downloads_30d": 24870,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

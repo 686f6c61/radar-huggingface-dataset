@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zSaiko/Pantheon-Reasoning-26B-A4B-1.1-V2-APEX-GGUF",
+  "slug": "zsaiko-pantheon-reasoning-26b-a4b-1-1-v2-apex-gguf",
+  "author": "zSaiko",
+  "url": "https://huggingface.co/zSaiko/Pantheon-Reasoning-26B-A4B-1.1-V2-APEX-GGUF",
+  "created_at": "2026-09-23T02:21:10.000Z",
+  "updated_at": "2026-09-23T07:35:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "gemma4",
+    "moe",
+    "imatrix",
+    "apex",
+    "conversational",
+    "roleplay",
+    "reasoning",
+    "creative-writing",
+    "text-generation",
+    "en",
+    "base_model:Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2",
+    "base_model:quantized:Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 25971339550,
+  "parameters_human": "25.97B",
+  "storage_bytes": 184107160640,
+  "storage_human": "184.1 GB",
+  "base_model": "Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified&search=gguf",
+      "snippet": "ngquocvinh/AliceAI-T5-35B-A0.6B-GGUF. Text Generation • 35B • Updated 10 minutes ago • 10.6k • 19 · zSaiko/Pantheon-Reasoning-26B-A4B-1.1-V2-APEX-GGUF."
+    }
+  ]
+}

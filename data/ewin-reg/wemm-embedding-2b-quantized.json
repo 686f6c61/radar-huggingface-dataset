@@ -5,7 +5,7 @@
   "author": "ewin-reg",
   "url": "https://huggingface.co/ewin-reg/WeMM-Embedding-2B-Quantized",
   "created_at": "2026-09-07T15:54:39.000Z",
-  "updated_at": "2026-09-21T13:11:29.000Z",
+  "updated_at": "2026-09-22T15:30:49.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "feature-extraction",
@@ -47,7 +47,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 1126,
+  "downloads_30d": 1297,
   "trending_score": 0,
   "parameters": 1805622350,
   "parameters_human": "1.81B",

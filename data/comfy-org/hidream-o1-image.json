@@ -5,7 +5,7 @@
   "author": "Comfy-Org",
   "url": "https://huggingface.co/Comfy-Org/HiDream-O1-Image",
   "created_at": "2026-05-10T00:28:02.000Z",
-  "updated_at": "2026-08-17T05:44:39.000Z",
+  "updated_at": "2026-09-23T08:01:11.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 80,
-  "downloads_30d": 96857,
+  "downloads_30d": 96017,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

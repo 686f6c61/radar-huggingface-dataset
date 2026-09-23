@@ -5,7 +5,7 @@
   "author": "programasweights",
   "url": "https://huggingface.co/programasweights/paw-programs",
   "created_at": "2026-03-26T23:05:35.000Z",
-  "updated_at": "2026-09-16T00:06:36.000Z",
+  "updated_at": "2026-09-22T21:11:36.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,7 +17,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 66993,
+  "downloads_30d": 70090,
   "trending_score": 0,
   "parameters": 40370176,
   "parameters_human": "40.4M",

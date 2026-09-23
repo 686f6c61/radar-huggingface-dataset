@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "artembondarenko/hw1-neural-architecture-search",
+  "slug": "artembondarenko-hw1-neural-architecture-search",
+  "author": "artembondarenko",
+  "url": "https://huggingface.co/artembondarenko/hw1-neural-architecture-search",
+  "created_at": "2026-09-23T01:56:13.000Z",
+  "updated_at": "2026-09-23T01:56:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "neural-architecture-search",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "artembondarenko/hw1-neural-architecture-search · Hugging Face",
+      "url": "https://huggingface.co/artembondarenko/hw1-neural-architecture-search",
+      "snippet": "Notes on Neural Architecture Search Repository summary This repository contains a working research note about Neural Architecture Search. It organizes motivation, related work, a falsifiable hypothesis, and an evaluation plan. It is not presented as a completed paper or a release of trained models."
+    },
+    {
+      "title": "Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://huggingface.co/papers/2301.08727",
+      "snippet": "Join the discussion on this paper page Neural Architecture Search: Insights from 1000 Papers"
+    },
+    {
+      "title": "Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://arxiv.org/abs/2301.08727",
+      "snippet": "In the past decade, advances in deep learning have resulted in breakthroughs in a variety of areas, including computer vision, natural language understanding, speech recognition, and reinforcement learning. Specialized, high-performing neural architectures are crucial to the success of deep learning in these areas. Neural architecture search (NAS), the process of automating the design of ..."
+    },
+    {
+      "title": "Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://ar5iv.labs.arxiv.org/html/2301.08727",
+      "snippet": "Neural architecture search (NAS), the process of automating the design of neural architectures for a given task, is an inevitable next step in automating machine learning and has already outpaced the best human-designed architectures on many tasks."
+    },
+    {
+      "title": "Neural Architecture Search Algorithm - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/neural-architecture-and-search-methods/",
+      "snippet": "Neural Architecture Search (NAS) falls within the realm of automated machine learning (AutoML). AutoML is a comprehensive term encompassing the automation of diverse tasks in the application of machine learning to real-world challenges. The article explores the fundamentals, and applications of the NAS algorithm."
+    }
+  ]
+}

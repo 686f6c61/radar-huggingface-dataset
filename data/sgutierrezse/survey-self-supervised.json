@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sgutierrezse/survey-self-supervised",
+  "slug": "sgutierrezse-survey-self-supervised",
+  "author": "sgutierrezse",
+  "url": "https://huggingface.co/sgutierrezse/survey-self-supervised",
+  "created_at": "2026-09-23T02:24:21.000Z",
+  "updated_at": "2026-09-23T02:24:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "self-supervised",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A survey on multimodal explainable Artificial Intelligence",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2667305326000463",
+      "snippet": "However, the opacity of modern black box models raises trust and accountability concerns, limiting their adoption. Explainable AI (XAI) mitigates these issues ..."
+    },
+    {
+      "title": "Self-supervised learning enhances accuracy and data efficiency in ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12504225/",
+      "snippet": "24.09.2025 ... The Fine-tuned model significantly outperformed the baseline model, especially in scenarios with scarce labeled data. MSEs were reduced from ..."
+    },
+    {
+      "title": "Self-supervised representation learning using multimodal ...",
+      "url": "https://dl.acm.org/doi/10.1145/3615834.3615837",
+      "snippet": "The proposed approach consists of two stages: a) Pretext stage, where the transformer model is pre-trained with unlabeled physiological signal data using masked ..."
+    },
+    {
+      "title": "AI4AI Survey: From Long-Horizon Agents to Recursive Self ...",
+      "url": "https://www.preprints.org/manuscript/202608.2108",
+      "snippet": "28.08.2026 ... This survey covers the intersection of long-horizon AI agents and AI-driven improvement of AI systems. We include interactive systems whose ..."
+    },
+    {
+      "title": "A survey on deep learning tools dealing with data scarcity",
+      "url": "https://link.springer.com/article/10.1186/s40537-023-00727-2",
+      "snippet": "14.04.2023 ... Several approaches dealing with data scarcity are accordingly introduced including Transfer Learning (TL), Self-supervised learning (SSL), ..."
+    }
+  ]
+}

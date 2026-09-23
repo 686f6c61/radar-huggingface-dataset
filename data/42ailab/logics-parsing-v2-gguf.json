@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "42ailab/Logics-Parsing-v2-GGUF",
+  "slug": "42ailab-logics-parsing-v2-gguf",
+  "author": "42ailab",
+  "url": "https://huggingface.co/42ailab/Logics-Parsing-v2-GGUF",
+  "created_at": "2026-09-23T02:19:19.000Z",
+  "updated_at": "2026-09-23T04:13:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ocr",
+    "document-parsing",
+    "llama.cpp",
+    "42model",
+    "image-text-to-text",
+    "zh",
+    "en",
+    "base_model:Logics-MLLM/Logics-Parsing-v2",
+    "base_model:quantized:Logics-MLLM/Logics-Parsing-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 13809646112,
+  "storage_human": "13.8 GB",
+  "base_model": "Logics-MLLM/Logics-Parsing-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models compatible with the GGUF library - Hugging Face",
+      "url": "https://huggingface.co/models?library=gguf&p=0&sort=created",
+      "snippet": "Models ; Hanno-Labs/bosun-v3.1-1.7b-GGUF. 2B ; 0arch-io/kisoku-1.6b-preview-GGUF. Text Generation • 2B ; 42ailab/Logics-Parsing-V3-GGUF. Image-Text-to-Text • 0.8B ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=0&sort=modified&search=gguf",
+      "snippet": "• 7.94k • 2 · 0arch-io/kisoku-1.6b-preview-GGUF. Text Generation • 2B • Updated in about 22 hours · 42ailab/Logics-Parsing-V3-GGUF. Image-Text-to-Text • ..."
+    }
+  ]
+}

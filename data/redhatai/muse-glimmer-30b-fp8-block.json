@@ -25,10 +25,11 @@
     "base_model:quantized:meta-models/Muse-Glimmer-30B",
     "license:apache-2.0",
     "endpoints_compatible",
+    "deploy:azure",
     "region:us"
   ],
   "likes": 12,
-  "downloads_30d": 49252,
+  "downloads_30d": 51346,
   "trending_score": 9,
   "parameters": 29776626688,
   "parameters_human": "29.78B",

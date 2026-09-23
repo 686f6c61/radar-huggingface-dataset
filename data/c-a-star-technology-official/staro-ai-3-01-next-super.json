@@ -5,7 +5,7 @@
   "author": "C-a-Star-Technology-Official",
   "url": "https://huggingface.co/C-a-Star-Technology-Official/StarO-AI-3-01-Next-Super",
   "created_at": "2026-05-07T23:07:06.000Z",
-  "updated_at": "2026-09-12T13:07:55.000Z",
+  "updated_at": "2026-09-22T19:49:43.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "any-to-any",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 53,
+  "downloads_30d": 76,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

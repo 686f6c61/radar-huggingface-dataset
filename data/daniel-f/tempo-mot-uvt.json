@@ -5,7 +5,7 @@
   "author": "Daniel-F",
   "url": "https://huggingface.co/Daniel-F/tempo-mot-uvt",
   "created_at": "2026-09-13T23:39:27.000Z",
-  "updated_at": "2026-09-16T07:50:27.000Z",
+  "updated_at": "2026-09-23T00:36:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 44813721027,
-  "storage_human": "44.8 GB",
+  "storage_bytes": 95062517228,
+  "storage_human": "95.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

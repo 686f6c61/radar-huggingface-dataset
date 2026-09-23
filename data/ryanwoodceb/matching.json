@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ryanwoodceb/matching",
+  "slug": "ryanwoodceb-matching",
+  "author": "ryanwoodceb",
+  "url": "https://huggingface.co/ryanwoodceb/matching",
+  "created_at": "2026-09-23T01:57:18.000Z",
+  "updated_at": "2026-09-23T01:57:23.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ryanwoodceb/matching · Hugging Face",
+      "url": "https://huggingface.co/ryanwoodceb/matching",
+      "snippet": "Repository status The Python file contains the model and runnable example or training entry point. config.json records the generated architecture settings. training_args.json records the default experiment recipe. model.safetensors is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint."
+    },
+    {
+      "title": "Top 10 AI Models in 2026: Ranked by Benchmarks (June Update)",
+      "url": "https://techjournal.org/top-10-artificial-intelligence-models",
+      "snippet": "The 10 best AI models in June 2026 ranked by actual benchmarks. Claude Opus 4.8, GPT-5.5, Gemini 3.1 Pro, Grok 4.3, Llama 4, and DeepSeek V4 — compared on coding, writing, reasoning, and price."
+    },
+    {
+      "title": "AI Candidate Matching: A Complete Guide - Recruiterflow Blog",
+      "url": "https://recruiterflow.com/blog/candidate-matching/",
+      "snippet": "Learn how AI candidate matching works, what agencies need to use it effectively, and how to choose the right AI tools in this complete guide."
+    },
+    {
+      "title": "MatchAnything - zju3dv.github.io",
+      "url": "https://zju3dv.github.io/MatchAnything/",
+      "snippet": "Capabilities of the image matching model pre-trained by our framework. Green lines indicate the identified corresponding pixel localizations between images. Using the same network weight, our model exhibits impressive generalization abilities across extensive unseen real-world cross-modality matching tasks, benefiting diverse applications in disciplines such as (a) medical image analysis, (b ..."
+    },
+    {
+      "title": "AI Models Benchmark",
+      "url": "https://aimodelsbenchmark.com/",
+      "snippet": "AI MODEL LEADERBOARD 395 models · benchmarks, pricing, context, license · ranked by the column you click."
+    }
+  ]
+}

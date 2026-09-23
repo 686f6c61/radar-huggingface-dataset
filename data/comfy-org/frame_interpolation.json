@@ -5,7 +5,7 @@
   "author": "Comfy-Org",
   "url": "https://huggingface.co/Comfy-Org/frame_interpolation",
   "created_at": "2026-04-02T16:35:02.000Z",
-  "updated_at": "2026-08-17T06:11:20.000Z",
+  "updated_at": "2026-09-23T08:00:21.000Z",
   "license": "mit-and-apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 41,
-  "downloads_30d": 72371,
+  "downloads_30d": 73002,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

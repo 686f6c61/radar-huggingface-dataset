@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Shiki42/s015-scan-object-ctr50-withmask-pi05-step10000",
+  "slug": "shiki42-s015-scan-object-ctr50-withmask-pi05-step10000",
+  "author": "Shiki42",
+  "url": "https://huggingface.co/Shiki42/s015-scan-object-ctr50-withmask-pi05-step10000",
+  "created_at": "2026-09-23T02:33:50.000Z",
+  "updated_at": "2026-09-23T02:36:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "openpi",
+    "robotics",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335578737,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shiki42/s015-scan-object-ctr50-withmask-pi05-step20000 · Hugging Face",
+      "url": "https://huggingface.co/Shiki42/s015-scan-object-ctr50-withmask-pi05-step20000",
+      "snippet": "E746 Scan Object PI0.5 checkpoint — step 20000 Inference checkpoint from the S015 CTR50 with IdleMask ablation. It contains the OpenPI parameter tree and normalization assets. Optimizer and training loader state are excluded."
+    },
+    {
+      "title": "Shiki42/ctr-scan-object-uniform50-20260917 - Hugging Face",
+      "url": "https://huggingface.co/datasets/Shiki42/ctr-scan-object-uniform50-20260917",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ctr-scan-object-left-first-20260916 - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/shiki42-ctr-scan-object-left-first-20260916",
+      "snippet": "A corrected release of 750 successful trajectories for the scan_object task with left-first timing, containing 50 episodes with 17008 frames at 25 FPS in LeRobot v3.0 format. Includes dual-arm (left and right) joint positions and gripper states with corrected action labels."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "Shiki42 (Shuyuan) · GitHub",
+      "url": "https://github.com/Shiki42/",
+      "snippet": "A graph representing Shiki42&#x27;s contributions from April 20, 2025 to April 24, 2026. The contributions are 93% commits, 6% pull requests, 1% issues, 0% code review."
+    }
+  ]
+}

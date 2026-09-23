@@ -33,7 +33,7 @@
     "base_model:finetune:Qwen/Qwen3-14B-Base",
     "region:us"
   ],
-  "likes": 2,
+  "likes": 4,
   "downloads_30d": 5,
   "trending_score": 0,
   "parameters": 14768307200,

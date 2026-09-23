@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ZumaInnovations/C-RADIOv3-B-ONNX",
+  "slug": "zumainnovations-c-radiov3-b-onnx",
+  "author": "ZumaInnovations",
+  "url": "https://huggingface.co/ZumaInnovations/C-RADIOv3-B-ONNX",
+  "created_at": "2026-09-23T01:49:01.000Z",
+  "updated_at": "2026-09-23T02:27:15.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 393172037,
+  "storage_human": "393 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZumaInnovations/C-RADIOv3-B-ONNX · Hugging Face",
+      "url": "https://huggingface.co/ZumaInnovations/C-RADIOv3-B-ONNX",
+      "snippet": "ZumaInnovations / C-RADIOv3-B-ONNX Like 0 Follow Zuma Innovations Inc. 1 ONNX License:nvidia-open-model-license Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "nvidia/C-RADIOv3-B · Hugging Face",
+      "url": "https://huggingface.co/nvidia/C-RADIOv3-B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "A daily-updated, community-maintained list of every free AI model (free LLM API) available right now. No paywalls. No API key required to browse. Updated automatically every 24 hours by GitHub Actions pulling from OpenRouter, Pollinations AI, and other public sources ..."
+    },
+    {
+      "title": "C-RADIOv3-B · Model · Inferix",
+      "url": "https://inferix.co/models/nvidia/C-RADIOv3-B",
+      "snippet": "For instance, RADIO generates image embeddings that can be used by a downstream model to classify images. C RADIOv3 models are available in multiple sizes: Base (90M parameters)."
+    },
+    {
+      "title": "GitHub - NVlabs/RADIO: Official repository for \"AM-RADIO: Reduce All ...",
+      "url": "https://github.com/NVlabs/RADIO",
+      "snippet": "Official PyTorch implementation of [CVPR 2025] RADIOv2.5: Improved Baselines for Agglomerative Vision Foundation Models Official PyTorch implementation of [CVPR 2024] AM-RADIO: Agglomerative Vision Foundation Model - Reduce All Domains Into One Check out our preprints: PHI-S: Distribution Balancing for Label-Free Multi-Teacher Distillation and FeatSharp: Your Vision Model Features, Sharper ..."
+    }
+  ]
+}

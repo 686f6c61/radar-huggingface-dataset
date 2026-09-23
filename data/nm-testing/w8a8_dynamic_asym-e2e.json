@@ -5,7 +5,7 @@
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/w8a8_dynamic_asym-e2e",
   "created_at": "2026-07-25T06:01:25.000Z",
-  "updated_at": "2026-09-22T02:49:35.000Z",
+  "updated_at": "2026-09-23T02:39:38.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,12 +19,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 322,
+  "downloads_30d": 324,
   "trending_score": 0,
   "parameters": 1100048384,
   "parameters_human": "1.10B",
-  "storage_bytes": 80082704520,
-  "storage_human": "80.1 GB",
+  "storage_bytes": 81314746128,
+  "storage_human": "81.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

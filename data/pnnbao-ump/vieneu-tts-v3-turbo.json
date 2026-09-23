@@ -5,7 +5,7 @@
   "author": "pnnbao-ump",
   "url": "https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Turbo",
   "created_at": "2026-06-05T06:45:01.000Z",
-  "updated_at": "2026-09-16T08:11:04.000Z",
+  "updated_at": "2026-09-23T03:54:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -17,6 +17,7 @@
   "tags": [
     "onnx",
     "safetensors",
+    "gguf",
     "vieneu_v3_turbo",
     "voice-cloning",
     "code-switching",
@@ -30,15 +31,16 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 63,
-  "downloads_30d": 622606,
+  "likes": 64,
+  "downloads_30d": 629039,
   "trending_score": 0,
   "parameters": 130907520,
   "parameters_human": "130.9M",
-  "storage_bytes": 9263650543,
-  "storage_human": "9.3 GB",
+  "storage_bytes": 10035617519,
+  "storage_human": "10.0 GB",
   "base_model": null,
   "formats": [
+    "gguf",
     "onnx",
     "safetensors"
   ],

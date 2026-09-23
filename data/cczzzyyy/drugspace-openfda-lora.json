@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "cczzzyyy/DrugSpace-openfda-lora",
+  "slug": "cczzzyyy-drugspace-openfda-lora",
+  "author": "cczzzyyy",
+  "url": "https://huggingface.co/cczzzyyy/DrugSpace-openfda-lora",
+  "created_at": "2026-09-23T02:28:26.000Z",
+  "updated_at": "2026-09-23T02:28:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "llm2vec",
+    "embeddings",
+    "biomedical",
+    "drug-discovery",
+    "feature-extraction",
+    "base_model:cczzzyyy/DrugSpace-mntp-8B",
+    "base_model:adapter:cczzzyyy/DrugSpace-mntp-8B",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cczzzyyy/DrugSpace-full-lora · Hugging Face",
+      "url": "https://huggingface.co/cczzzyyy/DrugSpace-full-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cczzzyyy (Zhiyuan Cao) - Hugging Face",
+      "url": "https://huggingface.co/cczzzyyy",
+      "snippet": "AI & ML interests ... Recent Activity published a model 2 months ago ... published a model 2 months ago"
+    },
+    {
+      "title": "GitHub - caozhiyuan0424/DrugSpace",
+      "url": "https://github.com/caozhiyuan0424/DrugSpace",
+      "snippet": "cczzzyyy/DrugSpace-full-lora: contrastive-learning LoRA model on top of cczzzyyy/DrugSpace-mntp-8B; recommended for general embedding generation. cczzzyyy/DrugSpace-full-lora-eval: evaluation-oriented checkpoint trained only on pre-2020 drugs."
+    },
+    {
+      "title": "LoRA AI Models (17,994) | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 17,994 AI models tagged \"LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/drive/1r09aImgL1YhQsJgsLWnb67-bjTV88-W0?usp=sharing",
+      "snippet": "Google Colab ... Google Colab"
+    }
+  ]
+}

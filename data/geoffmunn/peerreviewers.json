@@ -5,7 +5,7 @@
   "author": "geoffmunn",
   "url": "https://huggingface.co/geoffmunn/PeerReviewers",
   "created_at": "2026-04-12T00:46:41.000Z",
-  "updated_at": "2026-09-22T01:01:40.000Z",
+  "updated_at": "2026-09-22T23:28:41.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,12 +19,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 4476,
+  "downloads_30d": 4524,
   "trending_score": 0,
   "parameters": 22247282688,
   "parameters_human": "22.25B",
-  "storage_bytes": 725105533472,
-  "storage_human": "725.1 GB",
+  "storage_bytes": 728373863072,
+  "storage_human": "728.4 GB",
   "base_model": null,
   "formats": [
     "gguf"

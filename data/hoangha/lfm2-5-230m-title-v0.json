@@ -5,7 +5,7 @@
   "author": "HoangHa",
   "url": "https://huggingface.co/HoangHa/lfm2.5-230m-title-v0",
   "created_at": "2026-09-07T19:45:32.000Z",
-  "updated_at": "2026-09-20T18:43:42.000Z",
+  "updated_at": "2026-09-22T06:45:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 148671088,
-  "storage_human": "149 MB",
+  "storage_bytes": 198233944,
+  "storage_human": "198 MB",
   "base_model": "LiquidAI/LFM2.5-230M",
   "formats": [
     "safetensors"

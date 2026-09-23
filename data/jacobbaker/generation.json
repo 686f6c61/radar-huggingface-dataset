@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JacobBaker/generation",
+  "slug": "jacobbaker-generation",
+  "author": "JacobBaker",
+  "url": "https://huggingface.co/JacobBaker/generation",
+  "created_at": "2026-09-23T02:07:00.000Z",
+  "updated_at": "2026-09-23T02:07:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Generative_AI",
+      "snippet": "Generative artificial intelligence (GenAI) is a subfield of artificial intelligence (AI) that uses generative models to generate text, images, videos, audio, computer code or other forms of digital data. [1] These models learn the underlying patterns and structures of their training data, and use them to generate new data [2] in response to input, which often takes the form of natural language ..."
+    },
+    {
+      "title": "GitHub - Renaissance-Innovation-Labs/jacob-ai: Just Another Coding Bot",
+      "url": "https://github.com/Renaissance-Innovation-Labs/jacob-ai",
+      "snippet": "JACoB, Just Another Coding Bot, is an open-source tool designed to streamline your development process by automating coding tasks, transforming Figma designs into deployable code, and integrating seamlessly into your existing workflow. As an AI-powered team member, JACoB works alongside you, learning your coding style and preferences to generate consistent, high-quality code output that fits ..."
+    },
+    {
+      "title": "AIwire - Covering Scientific & Technical AI",
+      "url": "https://www.hpcwire.com/aiwire/2026/08/26/nobel-laureate-david-baker-takes-aim-at-the-virtual-cell-with-genbio-ai/",
+      "snippet": "Nobel Laureate David Baker Takes Aim at the Virtual Cell with GenBio AI. AI/ML/DL by Ali Azhar | August 26, 2026 Shares What if scientists could test a new drug or make changes to a cell without even touching one in the lab? Can AI be leveraged to achieve that? GenBio AI is giving it a shot. The company has released AIDO Cell, an AI model that tries to recreate enough of what is happening ..."
+    },
+    {
+      "title": "Jev (AI model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
+      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco-based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2] Unlike a large language model (LLM), Jev does not generate natural-language text. It instead returns typed values together with ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

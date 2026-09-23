@@ -5,7 +5,7 @@
   "author": "yandex",
   "url": "https://huggingface.co/yandex/AliceAI-Foundation-80B-A3B-Base",
   "created_at": "2026-09-12T10:32:07.000Z",
-  "updated_at": "2026-09-21T09:53:47.000Z",
+  "updated_at": "2026-09-22T11:12:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 277,
+  "likes": 279,
   "downloads_30d": 1516,
   "trending_score": 263,
   "parameters": 81286433408,

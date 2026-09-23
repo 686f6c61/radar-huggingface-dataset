@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "roman220220/gemma-4-26B-A4B-it-gptq-mlx-jang",
+  "slug": "roman220220-gemma-4-26b-a4b-it-gptq-mlx-jang",
+  "author": "roman220220",
+  "url": "https://huggingface.co/roman220220/gemma-4-26B-A4B-it-gptq-mlx-jang",
+  "created_at": "2026-09-23T01:57:14.000Z",
+  "updated_at": "2026-09-23T02:03:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "gptq",
+    "quantized",
+    "moe",
+    "multimodal",
+    "vision",
+    "jang",
+    "image-text-to-text",
+    "conversational",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:finetune:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 27802119758,
+  "parameters_human": "27.80B",
+  "storage_bytes": 15603239057,
+  "storage_human": "15.6 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "roman220220/gemma-4-26B-A4B-it-gptq-mlx-jang · Hugging Face",
+      "url": "https://huggingface.co/roman220220/gemma-4-26B-A4B-it-gptq-mlx-jang",
+      "snippet": "Instructions to use roman220220/gemma-4-26B-A4B-it-gptq-mlx-jang with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "roman220220/gemma-4-26B-A4B-it-assistant-mlx-8bit · Hugging Face",
+      "url": "https://huggingface.co/roman220220/gemma-4-26B-A4B-it-assistant-mlx-8bit",
+      "snippet": "Instructions to use roman220220/gemma-4-26B-A4B-it-assistant-mlx-8bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 26B A4B IT | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it",
+      "snippet": "Explore Gemma 4 26B A4B IT, an open model built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input and generating text output"
+    },
+    {
+      "title": "gemma4:26b - ollama.com",
+      "url": "https://ollama.com/library/gemma4:26b",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "wd1511/fast-ldm",
+  "slug": "wd1511-fast-ldm",
+  "author": "wd1511",
+  "url": "https://huggingface.co/wd1511/fast-ldm",
+  "created_at": "2026-09-23T02:32:03.000Z",
+  "updated_at": "2026-09-23T02:59:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "style-transfer",
+    "image-to-image",
+    "video-to-video",
+    "diffusion",
+    "fast",
+    "en",
+    "zh",
+    "arxiv:2401.05870",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18882818307,
+  "storage_human": "18.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - wd1511/FAST: FAST: Flexibly Controllable Arbitrary Style ...",
+      "url": "https://github.com/wd1511/FAST",
+      "snippet": "The repository includes source code, configurations, and image/video test inputs. Model weights, training datasets, and the packaged environment are available from the links above. See the Asset Setup Guide for directory layouts and setup commands."
+    },
+    {
+      "title": "GitHub - wd1511/FAST: FAST: Flexibly Controllable Arbitrary Style ...",
+      "url": "https://github.com/wd1511/FAST/tree/main",
+      "snippet": "FAST: Flexibly Controllable Arbitrary Style Transfer via Latent Diffusion models Hanzhang Wang*, Haoran Wang*, Zhongrui Yu, Mingming Sun, Junjun Jiang, Xianming Liu, Deming Zhai"
+    },
+    {
+      "title": "FAST: Flexibly Controllable Arbitrary Style Transfer via Latent ...",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3748655",
+      "snippet": "It is characterized by introducing Style-Adapter, which allows users to flexibly manipulate the stylization results via aligning multi-level style control information and intrinsic knowledge in LDM, meanwhile enhancing the model with improved capacity to harmonize content detail retention and stylization strength."
+    },
+    {
+      "title": "FAST",
+      "url": "https://fast-ldm.github.io/",
+      "snippet": "It is characterized by introducing of Style-Adapter, which allows users to flexibly manipulate the stylization results via aligning multi-level style control information and intrinsic knowledge in LDM, meanwhile enhancing the model with improved capacity to harmonize content detail retention and stylization strength."
+    },
+    {
+      "title": "Fast-dLLM - nvlabs.github.io",
+      "url": "https://nvlabs.github.io/Fast-dLLM/",
+      "snippet": "About Fast-dLLM Diffusion-based large language models (Diffusion LLMs) have shown promise for non-autoregressive text generation with parallel decoding capabilities. However, the practical inference speed of open-sourced Diffusion LLMs often lags behind autoregressive models due to the lack of Key-Value (KV) Cache and quality degradation when decoding multiple tokens simultaneously. To bridge ..."
+    }
+  ]
+}

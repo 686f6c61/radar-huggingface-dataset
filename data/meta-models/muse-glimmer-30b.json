@@ -23,10 +23,11 @@
     "eval-results",
     "endpoints_compatible",
     "deploy:sagemaker",
+    "deploy:azure",
     "region:us"
   ],
-  "likes": 1930,
-  "downloads_30d": 307358,
+  "likes": 1931,
+  "downloads_30d": 312376,
   "trending_score": 24,
   "parameters": 29776626688,
   "parameters_human": "29.78B",

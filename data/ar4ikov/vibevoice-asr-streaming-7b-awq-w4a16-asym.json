@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Ar4ikov/VibeVoice-ASR-Streaming-7B-AWQ-W4A16-ASYM",
+  "slug": "ar4ikov-vibevoice-asr-streaming-7b-awq-w4a16-asym",
+  "author": "Ar4ikov",
+  "url": "https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-7B-AWQ-W4A16-ASYM",
+  "created_at": "2026-09-23T02:06:39.000Z",
+  "updated_at": "2026-09-23T02:12:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vibevoice",
+    "awq",
+    "w4a16",
+    "asymmetric",
+    "llmcompressor",
+    "speech-to-text",
+    "streaming",
+    "diarization",
+    "automatic-speech-recognition",
+    "base_model:microsoft/VibeVoice-ASR-Streaming-7B",
+    "base_model:quantized:microsoft/VibeVoice-ASR-Streaming-7B",
+    "license:mit",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 8330325888,
+  "parameters_human": "8.33B",
+  "storage_bytes": 7000335408,
+  "storage_human": "7.0 GB",
+  "base_model": "microsoft/VibeVoice-ASR-Streaming-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ar4ikov/VibeVoice-ASR-Streaming-7B-AWQ-W4A16-ASYM · Hugging Face",
+      "url": "https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-7B-AWQ-W4A16-ASYM",
+      "snippet": "VibeVoice-ASR-Streaming-7B AWQ W4A16 ASYM Activation-aware INT4 quantization of microsoft/VibeVoice-ASR-Streaming-7B, revision 60d858b518b4e19d404af3737f848fc185b30177: the streaming VibeVoice ASR model, which writes text for every 2.93 s of audio as it arrives, with 0.53 s of lookahead."
+    },
+    {
+      "title": "VibeVoice/docs/vibevoice-asr-streaming.md at main - GitHub",
+      "url": "https://github.com/microsoft/VibeVoice/blob/main/docs/vibevoice-asr-streaming.md",
+      "snippet": "VibeVoice-ASR-Streaming transcribes while the audio is still arriving, instead of waiting for it to end. It emits text once per audio chunk, so a transcript appears as the speaker talks. Each chunk is printed as soon as the model emits it. Add --context_info \"Microsoft,VibeVoice\" to bias recognition ..."
+    },
+    {
+      "title": "vibevoice/VibeVoice-ASR-Streaming-7B · Hugging Face",
+      "url": "https://huggingface.co/vibevoice/VibeVoice-ASR-Streaming-7B",
+      "snippet": "VibeVoice-ASR-Streaming-7B VibeVoice-ASR-Streaming is a unified streaming ASR model that transcribes Who (Speaker) said What (Content), with support for Customized Hotwords and 10 languages."
+    },
+    {
+      "title": "VibeVoice-ASR-Streaming Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2609.02812v2",
+      "snippet": "To tackle this issue, we present VibeVoice-ASR-Streaming, one of the first LLM-based end-to-end approaches to streaming speaker-attributed ASR. It interleaves fixed-size audio chunks, a small amount of lookahead audio and previous text. This allows the model to produce \"who said what\" as speech arrives, without a separate diarization stage."
+    },
+    {
+      "title": "VibeVoice-ASR-Streaming Technical Report - Yujie Tu",
+      "url": "https://alextyj.github.io/publication/2026-09-03-vibevoice-asr-streaming",
+      "snippet": "This report presents VibeVoice-ASR-Streaming, one of the first LLM-based end-to-end approaches to streaming speaker-attributed ASR. It interleaves fixed-size audio chunks, a small amount of lookahead audio, and previous text, allowing the model to produce \"who said what\" as speech arrives, without a separate diarization stage."
+    }
+  ]
+}

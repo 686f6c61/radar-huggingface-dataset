@@ -5,7 +5,7 @@
   "author": "Comfy-Org",
   "url": "https://huggingface.co/Comfy-Org/Bernini-R",
   "created_at": "2026-06-09T20:49:06.000Z",
-  "updated_at": "2026-08-17T05:34:19.000Z",
+  "updated_at": "2026-09-23T08:02:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 72,
-  "downloads_30d": 118721,
+  "downloads_30d": 114159,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

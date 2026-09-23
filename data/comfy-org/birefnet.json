@@ -5,7 +5,7 @@
   "author": "Comfy-Org",
   "url": "https://huggingface.co/Comfy-Org/BiRefNet",
   "created_at": "2026-04-27T01:39:42.000Z",
-  "updated_at": "2026-08-17T05:34:42.000Z",
+  "updated_at": "2026-09-23T08:03:16.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 44,
-  "downloads_30d": 146605,
+  "downloads_30d": 149412,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

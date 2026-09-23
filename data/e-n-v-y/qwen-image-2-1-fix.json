@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "e-n-v-y/Qwen-Image-2.1-Fix",
+  "slug": "e-n-v-y-qwen-image-2-1-fix",
+  "author": "e-n-v-y",
+  "url": "https://huggingface.co/e-n-v-y/Qwen-Image-2.1-Fix",
+  "created_at": "2026-09-22T20:00:09.000Z",
+  "updated_at": "2026-09-22T21:07:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "region:us"
+  ],
+  "likes": 30,
+  "downloads_30d": 337,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 330359614,
+  "storage_human": "330 MB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "É — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89",
+      "snippet": "É, ou E accent aigu, est un graphème utilisé dans les alphabets hongrois, islandais, kachoube, ouïghour et slovaque en tant que …"
+    },
+    {
+      "title": "Ê — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%8A",
+      "snippet": "Ê, ou E accent ou chapeau circonflexe, est un graphème utilisé dans les alphabets kurde et vietnamien en tant que lettre et dans les …"
+    },
+    {
+      "title": "E - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/E",
+      "snippet": "E (minuscule: e) is the fifth letter and the second vowel letter of the Latin alphabet, used in the modern English alphabet, the …"
+    },
+    {
+      "title": "ë — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/%C3%AB",
+      "snippet": "Lettre utilisée pour prononcer le e seul, et non comme partie d’un digramme avec la lettre qui le précède. On le retrouve dans des …"
+    },
+    {
+      "title": "e é è ê ë - Comment prononcer la lettre \"e ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=4Q1ON1o1z1c",
+      "snippet": "Dec 11, 2022 · En français, on utilise très souvent la lettre \"e\" et s'il y a un accent, ça va changer le son de la lettre !"
+    }
+  ]
+}

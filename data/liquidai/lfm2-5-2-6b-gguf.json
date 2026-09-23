@@ -5,7 +5,7 @@
   "author": "LiquidAI",
   "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF",
   "created_at": "2026-08-01T22:42:15.000Z",
-  "updated_at": "2026-08-24T19:41:27.000Z",
+  "updated_at": "2026-09-22T20:42:43.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "gguf",
+    "safetensors",
     "liquid",
     "lfm2.5",
     "llama.cpp",
@@ -41,15 +42,16 @@
     "conversational"
   ],
   "likes": 350,
-  "downloads_30d": 1212320,
+  "downloads_30d": 1209007,
   "trending_score": 9,
   "parameters": 2697198592,
   "parameters_human": "2.70B",
-  "storage_bytes": 43815506656,
-  "storage_human": "43.8 GB",
+  "storage_bytes": 54622236710,
+  "storage_human": "54.6 GB",
   "base_model": "LiquidAI/LFM2.5-2.6B",
   "formats": [
-    "gguf"
+    "gguf",
+    "safetensors"
   ],
   "is_conversational": true,
   "gated": false,

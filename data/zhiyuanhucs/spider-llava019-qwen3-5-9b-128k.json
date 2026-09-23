@@ -5,7 +5,7 @@
   "author": "zhiyuanhucs",
   "url": "https://huggingface.co/zhiyuanhucs/spider-llava019-qwen3.5-9b-128k",
   "created_at": "2026-09-13T14:45:32.000Z",
-  "updated_at": "2026-09-13T14:46:46.000Z",
+  "updated_at": "2026-09-23T02:31:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 9653104368,
   "parameters_human": "9.65B",
-  "storage_bytes": 57938901878,
-  "storage_human": "57.9 GB",
+  "storage_bytes": 135164117334,
+  "storage_human": "135.2 GB",
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"

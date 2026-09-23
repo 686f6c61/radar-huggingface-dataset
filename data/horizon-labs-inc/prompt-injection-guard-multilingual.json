@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Horizon-Labs-Inc/prompt-injection-guard-multilingual",
+  "slug": "horizon-labs-inc-prompt-injection-guard-multilingual",
+  "author": "Horizon-Labs-Inc",
+  "url": "https://huggingface.co/Horizon-Labs-Inc/prompt-injection-guard-multilingual",
+  "created_at": "2026-09-23T02:26:01.000Z",
+  "updated_at": "2026-09-23T03:58:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "prompt-injection",
+    "jailbreak",
+    "guard",
+    "safety",
+    "security",
+    "multilingual",
+    "base_model:distilbert/distilbert-base-multilingual-cased",
+    "base_model:quantized:distilbert/distilbert-base-multilingual-cased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 76,
+  "trending_score": 0,
+  "parameters": 135326210,
+  "parameters_human": "135.3M",
+  "storage_bytes": 1571911417,
+  "storage_human": "1.6 GB",
+  "base_model": "distilbert-base-multilingual-cased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Horizons Le parti - Édouard Philippe",
+      "url": "https://horizonsleparti.fr/",
+      "snippet": "Participez à construire une nouvelle offre politique avec Edouard Philippe ! Vous partagez nos valeurs ? Rejoignez le parti Horizons !"
+    },
+    {
+      "title": "Écouter Horizon en direct et gratuit",
+      "url": "https://www.radio-en-ligne.fr/horizon",
+      "snippet": "Écoutez Horizon en direct et gratuit sur l'internet. Les plus grandes radios en ligne de France dans www.radio-en-ligne.fr."
+    },
+    {
+      "title": "EU Funding & Tenders Portal - European Commission",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/how-to-participate/topic-announcements/50147283",
+      "snippet": "We provide GDPR & EU AI Act-compliant predictive models and frameworks designed to enhance the robustness, privacy, and security of AI systems against ..."
+    },
+    {
+      "title": "Horizon — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Horizon",
+      "snippet": "Conceptuellement, l' horizon est la limite de ce que l'on peut observer, du fait de sa propre position ou situation. Ce concept simple …"
+    },
+    {
+      "title": "Meta Horizon",
+      "url": "https://horizon.meta.com/?locale=fr_FR",
+      "snippet": "Découvrez un ensemble d’univers créés par la communauté, où vous pouvez jouer, explorer et communiquer avec vos ami(e)s. …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "kartheekbatchu",
   "url": "https://huggingface.co/kartheekbatchu/fraud-detector",
   "created_at": "2026-09-11T13:13:20.000Z",
-  "updated_at": "2026-09-11T13:13:24.000Z",
+  "updated_at": "2026-09-22T05:06:05.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 20173757,
-  "storage_human": "20 MB",
+  "storage_bytes": 28919909,
+  "storage_human": "29 MB",
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "safetensors"

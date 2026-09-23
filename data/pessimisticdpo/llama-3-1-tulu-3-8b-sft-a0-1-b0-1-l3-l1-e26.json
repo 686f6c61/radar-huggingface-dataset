@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l1-e26",
+  "slug": "pessimisticdpo-llama-3-1-tulu-3-8b-sft-a0-1-b0-1-l3-l1-e26",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l1-e26",
+  "created_at": "2026-09-23T01:45:44.000Z",
+  "updated_at": "2026-09-23T01:45:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042342,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l1-e26 · Hugging Face",
+      "url": "https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l1-e26",
+      "snippet": "PessimisticDPO / Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l1-e26 Like 0 Follow PEPO 3 Transformers Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l2-e17 - Hugging Face",
+      "url": "https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l2-e17",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L4-bootstrap-l2-e15",
+      "url": "https://essamamdani.com/ai-models/hf-pessimisticdpo-llama-3-1-tulu-3-8b-sft-a0-1-b0-1-l4-bootstrap-l2-e15",
+      "snippet": "Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L4-bootstrap-l2-e15 is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "Llama-3.1-Tulu-3-8B | AI Language Models Tool",
+      "url": "https://drose.io/aitools/tools/llama-31-tulu-3-8b",
+      "snippet": "Llama-3.1-Tulu-3-8B An instruction-following language model from AllenAI based on Llama 3.1, optimized for a wide range of NLP tasks including chat, math, and reasoning. It provides various fine-tuned versions (SFT, DPO, RLVR) along with extensive benchmarking and deployment guidance on Hugging Face."
+    },
+    {
+      "title": "allenai/Llama-3.1-Tulu-3-8B-DPO · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/allenai/Llama-3.1-Tulu-3-8B-DPO",
+      "snippet": "Instructions to use allenai/Llama-3.1-Tulu-3-8B-DPO with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use allenai/Llama-3.1-Tulu-3-8B-DPO with Transformers:"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kenji-sks89x/mocov3-experiment",
+  "slug": "kenji-sks89x-mocov3-experiment",
+  "author": "kenji-sks89x",
+  "url": "https://huggingface.co/kenji-sks89x/mocov3-experiment",
+  "created_at": "2026-09-23T01:45:21.000Z",
+  "updated_at": "2026-09-23T01:45:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeroend-evries89/mocov3-demo · Hugging Face",
+      "url": "https://huggingface.co/Jeroend-evries89/mocov3-demo",
+      "snippet": "Jeroend-evries89 / mocov3-demo like 0 Safetensors PyTorch mocov3 contrastive License:mit Model card FilesFiles and versions xet Community Copy to bucket new Mocov3 for Contrastive Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "GitHub - facebookresearch/moco: PyTorch implementation of MoCo: https ...",
+      "url": "https://github.com/facebookresearch/moco",
+      "snippet": "In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to make participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal ..."
+    },
+    {
+      "title": "mocov3-experiment by Ppurnomojoko: Open-Weight Model",
+      "url": "https://savrn.com/models/mocov3-experiment",
+      "snippet": "mocov3-experiment from Ppurnomojoko, 24,832 parameters: license, access terms, disclosed training data, reported evaluations and the publisher&#x27;s download."
+    },
+    {
+      "title": "ppurnomojoko/mocov3-experiment · Hugging Face",
+      "url": "https://huggingface.co/ppurnomojoko/mocov3-experiment",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenAI Platform",
+      "url": "https://platform.openai.com/",
+      "snippet": "OpenAI Platform ... OpenAI Platform"
+    }
+  ]
+}

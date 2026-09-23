@@ -5,7 +5,7 @@
   "author": "SirSahOl",
   "url": "https://huggingface.co/SirSahOl/stablelm-2-1_6b-chat-mlx-16bit",
   "created_at": "2026-09-10T23:17:31.000Z",
-  "updated_at": "2026-09-22T02:26:22.000Z",
+  "updated_at": "2026-09-22T05:43:22.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -52,7 +52,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 377,
+  "downloads_30d": 645,
   "trending_score": 0,
   "parameters": 1644515328,
   "parameters_human": "1.64B",

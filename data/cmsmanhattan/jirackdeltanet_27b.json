@@ -5,7 +5,7 @@
   "author": "CMSManhattan",
   "url": "https://huggingface.co/CMSManhattan/JiRackDeltaNet_27b",
   "created_at": "2026-08-29T00:33:20.000Z",
-  "updated_at": "2026-09-19T15:01:55.000Z",
+  "updated_at": "2026-09-22T14:13:52.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -65,7 +65,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 4634,
+  "downloads_30d": 65345,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

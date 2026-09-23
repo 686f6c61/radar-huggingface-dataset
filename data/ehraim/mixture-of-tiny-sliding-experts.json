@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Ehraim/mixture-of-tiny-sliding-experts",
+  "slug": "ehraim-mixture-of-tiny-sliding-experts",
+  "author": "Ehraim",
+  "url": "https://huggingface.co/Ehraim/mixture-of-tiny-sliding-experts",
+  "created_at": "2026-09-23T02:30:42.000Z",
+  "updated_at": "2026-09-23T03:50:58.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mote",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mote",
+    "safetensors",
+    "mixture-of-experts",
+    "text-generation",
+    "en",
+    "arxiv:1701.06538",
+    "arxiv:2101.03961",
+    "arxiv:2204.00598",
+    "arxiv:2303.17580",
+    "arxiv:2305.05176",
+    "arxiv:2203.11171",
+    "arxiv:2406.04692",
+    "arxiv:1410.3916",
+    "arxiv:1410.5401",
+    "arxiv:1503.08895",
+    "arxiv:1505.00521",
+    "arxiv:1707.06347",
+    "arxiv:2308.00951",
+    "arxiv:2506.18945",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 189128790,
+  "storage_human": "189 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mystic Words Gold answers",
+      "url": "https://mysticwordsanswers.org/mystic-words-gold-answers",
+      "snippet": "Welcome to the page about “ Mystic words Gold answers ”. Here you will be able to find all the 50 level answers for Gold pack."
+    },
+    {
+      "title": "Scholarly types crossword - 7 Little Words Answers",
+      "url": "https://mysticwordsanswers.org/game/scholarly-types-crossword",
+      "snippet": "In just a few seconds you will find the answer to the clue “ Scholarly types ” of the “ 7 little words game ”. Each bite-size puzzle in 7 …"
+    },
+    {
+      "title": "Mystic Words Tomato answers",
+      "url": "https://mysticwordsanswers.org/mystic-words-tomato-answers",
+      "snippet": "Welcome to the page about “ Mystic words Tomato answers ”. Here you will be able to find all the 50 level answers for Tomato pack."
+    },
+    {
+      "title": "People | Faculty of Mathematics and Computer Science",
+      "url": "https://www.weizmann.ac.il/math/people",
+      "snippet": "Quantitative medical imaging using model-based AI. Name: Shechter Yarin ... Hierarchical mixture model construction using the remix algorithm. Currently ..."
+    },
+    {
+      "title": "Inkling 7 Little Words",
+      "url": "https://mysticwordsanswers.org/inkling-7-little-words.html",
+      "snippet": "Dec 18, 2019 · Each bite-size puzzle in 7 Little Words consists of 7 clues, 7 mystery words, and 20 letter groups. There is no doubt …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "imjamestaylor/retrieval-scratch-2023",
+  "slug": "imjamestaylor-retrieval-scratch-2023",
+  "author": "imjamestaylor",
+  "url": "https://huggingface.co/imjamestaylor/retrieval-scratch-2023",
+  "created_at": "2026-09-23T02:02:09.000Z",
+  "updated_at": "2026-09-23T02:02:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "imjamestaylor/retrieval-scratch-2023 · Hugging Face",
+      "url": "https://huggingface.co/imjamestaylor/retrieval-scratch-2023",
+      "snippet": "imjamestaylor / retrieval-scratch-2023 Like 0 Safetensors PyTorch deit retrieval License:mit Model card FilesFiles and versions xet Community Copy to bucket new DeiT for Retrieval Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "imjamestaylor (James Taylor) - Hugging Face",
+      "url": "https://huggingface.co/imjamestaylor",
+      "snippet": "probably coding right now"
+    },
+    {
+      "title": "Scratch - Imagine, Program, Share",
+      "url": "https://scratch.mit.edu/",
+      "snippet": "Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations."
+    },
+    {
+      "title": "Retrieval-augmented generation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+      "snippet": "Retrieval-augmented generation (RAG) is a technique that enables large language models (LLMs) to retrieve and incorporate new information from external data sources. [1][2] With RAG, LLMs first refer to a specified set of documents, then respond to user queries."
+    },
+    {
+      "title": "Introduction | Full Stack Retrieval",
+      "url": "https://retrieval-tutorials.vercel.app/",
+      "snippet": "Retrieval is the process of bringing extra information or context to your language models. Retrieval Augmented Generation (RAG) is a system that augments a Large Language Model (LLM) by adding extra context or information from another source."
+    }
+  ]
+}

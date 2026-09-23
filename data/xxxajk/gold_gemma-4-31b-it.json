@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xxxajk/gold_gemma-4-31B-it",
+  "slug": "xxxajk-gold_gemma-4-31b-it",
+  "author": "xxxajk",
+  "url": "https://huggingface.co/xxxajk/gold_gemma-4-31B-it",
+  "created_at": "2026-09-23T02:35:08.000Z",
+  "updated_at": "2026-09-23T07:48:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 33150364128,
+  "storage_human": "33.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xxxajk/gold_gemma-4-31B-it · Hugging Face",
+      "url": "https://huggingface.co/xxxajk/gold_gemma-4-31B-it",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 31B IT - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/gemma-4-31b-it",
+      "snippet": "Gemma 4 31B IT is a 60-layer dense transformer with a 1024-token sliding window on local attention layers and unified Keys/Values on global layers, paired with a ~550M parameter vision encoder."
+    },
+    {
+      "title": "Gemma 4 31B IT | Reference Models | Made By Agents",
+      "url": "https://www.madebyagents.com/models/gemma-4-31b-it",
+      "snippet": "It is specifically engineered for developers who need a reliable, local AI model with 31B parameters in 2025 that can handle function-calling and long-context retrieval without the latency of a cloud API."
+    },
+    {
+      "title": "gemma4:31b",
+      "url": "https://ollama.com/library/gemma4:31b",
+      "snippet": "curl http://localhost:11434/api/chat \\ -d '{ \"model\": \"gemma4:31b\", \"messages\": [{\"role\": \"user\", \"content\": \"Hello!\"}] }'"
+    },
+    {
+      "title": "Gemma 4 31B API: Pricing, Benchmarks & Docs | Together AI",
+      "url": "https://www.together.ai/models/gemma-4-31b",
+      "snippet": "31B dense multimodal model with 256K context, configurable thinking mode, native function calling, and 140+ language support with 89.2% AIME and 80% LiveCodeBench v6."
+    }
+  ]
+}

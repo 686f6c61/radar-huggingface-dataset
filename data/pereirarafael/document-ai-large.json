@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "pereirarafael/document-ai-large",
+  "slug": "pereirarafael-document-ai-large",
+  "author": "pereirarafael",
+  "url": "https://huggingface.co/pereirarafael/document-ai-large",
+  "created_at": "2026-09-23T02:04:18.000Z",
+  "updated_at": "2026-09-23T02:04:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pereirarafael (Rafael Pereira) - Hugging Face",
+      "url": "https://huggingface.co/pereirarafael",
+      "snippet": "User profile of Rafael Pereira on Hugging Face"
+    },
+    {
+      "title": "An overview of large AI models and their applications",
+      "url": "https://link.springer.com/article/10.1007/s44267-024-00065-8",
+      "snippet": "Since then, various large AI models have continued to emerge. This paper outlines the development history of large AI models and representative large AI model algorithms, introduces the basic architecture and core principles of large AI models, analyzes their characteristics, discusses their limitations, and explores future development directions."
+    },
+    {
+      "title": "Best Document AI Models (September 2026) — Ranked by Benchmark Data",
+      "url": "https://benchlm.ai/best/document-ai",
+      "snippet": "Best Document AI Models in 2026 As of September 22, 2026, the top model in best document ai models on the BenchLM leaderboard is Qwen3.7 Plus with a score of 90.3. Bottom line: Document AI benchmarks (OfficeQA Pro, OmniDocBench, CC-OCR) are newer and coverage is still building. Check the multimodal leaderboard for broader document understanding."
+    },
+    {
+      "title": "Artificial Intelligence | Cool Papers - Immersive Paper Discovery",
+      "url": "https://papers.cool/arxiv/cs.AI",
+      "snippet": "The list of papers for Artificial Intelligence category on arXiv, including titles, authors, and abstracts, with support for paper interpretation based on Kimi AI."
+    },
+    {
+      "title": "Document AI release notes | Google Cloud Documentation",
+      "url": "https://docs.cloud.google.com/document-ai/docs/release-notes",
+      "snippet": "Document AI is introducing document-level prompting for custom document processors. This feature allows you to provide an overall description of the document to inject deep business knowledge into the model, leading to improved extraction quality."
+    }
+  ]
+}

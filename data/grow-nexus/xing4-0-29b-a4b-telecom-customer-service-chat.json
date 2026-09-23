@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "grow-nexus/Xing4.0-29B-A4B-telecom-customer-service-chat",
+  "slug": "grow-nexus-xing4-0-29b-a4b-telecom-customer-service-chat",
+  "author": "grow-nexus",
+  "url": "https://huggingface.co/grow-nexus/Xing4.0-29B-A4B-telecom-customer-service-chat",
+  "created_at": "2026-09-23T02:28:10.000Z",
+  "updated_at": "2026-09-23T08:07:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xing4_0",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31215033008,
+  "parameters_human": "31.22B",
+  "storage_bytes": 62433323694,
+  "storage_human": "62.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Méthode GROW : fixation d'objectifs et accompagnement",
+      "url": "https://www.manager-go.com/management/dossiers-methodes/modele-grow",
+      "snippet": "Jan 7, 2025 · Découvrez comment vous appuyer sur la méthode GROW pour accompagner vos collaborateurs dans l'atteinte de …"
+    },
+    {
+      "title": "Groww - Online Demat, Trading and Direct Mutual Fund Investment in …",
+      "url": "https://groww.in/",
+      "snippet": "Start Online Investing in Stocks & Direct Mutual Funds with India's No. 1 Stock Broker - Groww. Equity Trading, F&O, Direct Mutual …"
+    },
+    {
+      "title": "GROW : photos, vidéos, recrutement - Welcome to the Jungle",
+      "url": "https://www.welcometothejungle.com/fr/companies/grow",
+      "snippet": "A propos de la société GROW : photos des bureaux, vidéos, offres d'emploi. GROW est une agence de conseil qui accompagne les …"
+    },
+    {
+      "title": "grow - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/grow",
+      "snippet": "Voir la traduction automatique de Google Translate de 'grow'. Dans d'autres langues : espagnol | italien | portugais | roumain | …"
+    },
+    {
+      "title": "Le kit de manager : Le modèle GROW : la méthode puissante des …",
+      "url": "https://www.tunisienumerique.com/modele-grow-coaching-objectif/",
+      "snippet": "Jul 29, 2025 · Le modèle GROW est une méthode simple et structurée de coaching qui aide à fixer des objectifs clairs, explorer les …"
+    }
+  ]
+}

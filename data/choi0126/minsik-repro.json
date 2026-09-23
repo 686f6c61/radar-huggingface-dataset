@@ -5,7 +5,7 @@
   "author": "CHOI0126",
   "url": "https://huggingface.co/CHOI0126/minsik-repro",
   "created_at": "2026-09-14T07:51:11.000Z",
-  "updated_at": "2026-09-21T00:43:47.000Z",
+  "updated_at": "2026-09-22T07:16:44.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 332203238708,
-  "storage_human": "332.2 GB",
+  "storage_bytes": 346044968724,
+  "storage_human": "346.0 GB",
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "safetensors"

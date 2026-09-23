@@ -5,7 +5,7 @@
   "author": "StationPC",
   "url": "https://huggingface.co/StationPC/Gemma4-E4B-RKNN3-RK1828",
   "created_at": "2026-08-19T07:56:04.000Z",
-  "updated_at": "2026-09-02T07:13:07.000Z",
+  "updated_at": "2026-09-23T03:46:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "any-to-any",
@@ -21,12 +21,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 370,
+  "downloads_30d": 373,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 10106377248,
-  "storage_human": "10.1 GB",
+  "storage_bytes": 13942375679,
+  "storage_human": "13.9 GB",
   "base_model": null,
   "formats": [
     "gguf"

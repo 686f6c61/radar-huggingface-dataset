@@ -5,7 +5,7 @@
   "author": "optimum-intel-internal-testing",
   "url": "https://huggingface.co/optimum-intel-internal-testing/tiny-random-gemma4-dflash",
   "created_at": "2026-08-19T10:19:04.000Z",
-  "updated_at": "2026-08-19T10:20:00.000Z",
+  "updated_at": "2026-09-23T05:33:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 976,
+  "downloads_30d": 1130,
   "trending_score": 0,
-  "parameters": 2112,
-  "parameters_human": "2112",
-  "storage_bytes": 10704,
-  "storage_human": "10704 B",
+  "parameters": 19680,
+  "parameters_human": "19680",
+  "storage_bytes": 91752,
+  "storage_human": "91752 B",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ling0322/libwaifu-indextts-2.5",
+  "slug": "ling0322-libwaifu-indextts-2-5",
+  "author": "ling0322",
+  "url": "https://huggingface.co/ling0322/libwaifu-indextts-2.5",
+  "created_at": "2026-09-23T02:19:55.000Z",
+  "updated_at": "2026-09-23T02:21:31.000Z",
+  "license": "bilibili-model-use-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "yue"
+  ],
+  "tags": [
+    "libwaifu",
+    "indextts",
+    "text-to-speech",
+    "voice-cloning",
+    "zh",
+    "en",
+    "ja",
+    "yue",
+    "base_model:IndexTeam/IndexTTS-2.5",
+    "base_model:finetune:IndexTeam/IndexTTS-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5466832768,
+  "storage_human": "5.5 GB",
+  "base_model": "IndexTeam/IndexTTS-2.5, facebook/w2v-bert-2.0, funasr/campplus, nvidia/bigvgan_v2_22khz_80band_256x",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ling0322/libwaifu: Your local AI Waifu! · GitHub",
+      "url": "https://github.com/ling0322/libwaifu",
+      "snippet": "Your local AI Waifu! Contribute to ling0322/libwaifu development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - index-tts/index-tts: An Industrial-Level Controllable and ...",
+      "url": "https://github.com/index-tts/index-tts",
+      "snippet": "IndexTTS is a zero-shot text-to-speech system that clones a voice from a single reference audio clip. The latest release, IndexTTS-2.5, supports Chinese, English, Japanese, Spanish and Arabic, with fine-grained emotion control, speaking speed control, pronunciation control (Pinyin / CMU phonemes / Japanese Kana), and faster inference than IndexTTS-2."
+    },
+    {
+      "title": "IndexTeam/IndexTTS-2.5 | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/IndexTeam/IndexTTS-2.5",
+      "snippet": "The model is available from IndexTeam/IndexTTS-2.5 on Hugging Face. Prerequisites Download access to IndexTeam/IndexTTS-2.5 on Hugging Face. vLLM-Omni also accepts an already-downloaded native bundle and its nested upstream checkpoints/ layout. Use a CUDA GPU with enough memory for both stages. The standard deploy config reserves up to 0.4 GPU-memory utilization per stage on one GPU; lower ..."
+    },
+    {
+      "title": "ling0322/libwaifu-krea2-turbo · Hugging Face",
+      "url": "https://huggingface.co/ling0322/libwaifu-krea2-turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ling0322/libwaifu-illustrious-xl-v2.0 · Hugging Face",
+      "url": "https://huggingface.co/ling0322/libwaifu-illustrious-xl-v2.0",
+      "snippet": "Illustrious XL v2.0-STABLE for libwaifu Illustrious XL v2.0-STABLE converted to the format libwaifu reads, so it can draw from it directly. The weights are the original ones: the U-Net and both text encoders are stored as float16, and the VAE is left wider because it overflows float16."
+    }
+  ]
+}

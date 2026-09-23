@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "id": "FahrenheitResearch/Rankine-0.6B-v1-mlx-4bit",
+  "slug": "fahrenheitresearch-rankine-0-6b-v1-mlx-4bit",
+  "author": "FahrenheitResearch",
+  "url": "https://huggingface.co/FahrenheitResearch/Rankine-0.6B-v1-mlx-4bit",
+  "created_at": "2026-09-23T02:21:18.000Z",
+  "updated_at": "2026-09-23T02:29:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "apple-silicon",
+    "4-bit",
+    "calibration",
+    "typed-decisions",
+    "verifier",
+    "fahrenheit-research",
+    "text-classification",
+    "dataset:LocalLLaMA/typed-decisions",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 346873198,
+  "storage_human": "347 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Typed probabilistic decisions",
+      "dataset": "Typed Decisions",
+      "metric": "Accuracy",
+      "value": 0.743
+    },
+    {
+      "task": "Typed probabilistic decisions",
+      "dataset": "Typed Decisions",
+      "metric": "Soft accuracy",
+      "value": 0.5461431160113974
+    },
+    {
+      "task": "Typed probabilistic decisions",
+      "dataset": "Typed Decisions",
+      "metric": "Macro F1",
+      "value": 0.6050523078217612
+    },
+    {
+      "task": "Typed probabilistic decisions",
+      "dataset": "Typed Decisions",
+      "metric": "KL from gold",
+      "value": 0.12183363897735836
+    },
+    {
+      "task": "Typed probabilistic decisions",
+      "dataset": "Typed Decisions",
+      "metric": "Brier score",
+      "value": 0.06713348860506331
+    },
+    {
+      "task": "Typed probabilistic decisions",
+      "dataset": "Typed Decisions",
+      "metric": "Expected calibration error",
+      "value": 0.1543771856617086
+    },
+    {
+      "task": "Typed probabilistic decisions",
+      "dataset": "Typed Decisions",
+      "metric": "Score MAE",
+      "value": 0.2564119801395495
+    },
+    {
+      "task": "Typed probabilistic decisions",
+      "dataset": "Typed Decisions",
+      "metric": "Within one level",
+      "value": 0.97125
+    }
+  ],
+  "sources": [
+    {
+      "title": "FahrenheitResearch (Fahrenheit Research) - Hugging Face",
+      "url": "https://huggingface.co/FahrenheitResearch",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 8 days ago ... published a model 8 days ago"
+    },
+    {
+      "title": "FahrenheitResearch (Fahrenheit Research) - Hugging Face",
+      "url": "https://huggingface.co/FahrenheitResearch/models",
+      "snippet": "User profile of Fahrenheit Research on Hugging Face"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "AI Model Leaderboard [2026-09] — Live Rankings | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/leaderboards",
+      "snippet": "Live AI model rankings across ARC-AGI-2, HLE, SWE-bench Verified, and more with category views for coding, math, and agent tasks."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

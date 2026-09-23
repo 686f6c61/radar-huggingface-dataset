@@ -5,7 +5,7 @@
   "author": "IsValorum",
   "url": "https://huggingface.co/IsValorum/Nex-N2.5-mini-APEX-I-MiniPlus-GGUF",
   "created_at": "2026-09-15T01:01:33.000Z",
-  "updated_at": "2026-09-21T20:09:26.000Z",
+  "updated_at": "2026-09-23T03:07:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -80,7 +80,7 @@
     "conversational"
   ],
   "likes": 3,
-  "downloads_30d": 2874,
+  "downloads_30d": 3357,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
