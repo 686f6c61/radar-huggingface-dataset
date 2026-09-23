@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "leandronunes/qwen3.8-4b-a1-dare-ties",
+  "slug": "leandronunes-qwen3-8-4b-a1-dare-ties",
+  "author": "leandronunes",
+  "url": "https://huggingface.co/leandronunes/qwen3.8-4b-a1-dare-ties",
+  "created_at": "2026-09-22T23:36:29.000Z",
+  "updated_at": "2026-09-22T23:45:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "merge",
+    "dare-ties",
+    "scientific-reasoning",
+    "causal-reasoning",
+    "biology",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:InternScience/Agents-A1-4B",
+    "base_model:merge:InternScience/Agents-A1-4B",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:merge:Qwen/Qwen3.5-4B",
+    "base_model:empero-ai/Qwen3.8-4B-Distill",
+    "base_model:merge:empero-ai/Qwen3.8-4B-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9332636134,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B, empero-ai/Qwen3.8-4B-Distill, InternScience/Agents-A1-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Wild Women of Chastity Gulch - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Wild_Women_of_Chastity_Gulch",
+      "snippet": "The Wild Women of Chastity Gulch is a 1982 American made-for-television Western romantic comedy film directed by Philip Leacock …"
+    },
+    {
+      "title": "The Wild Women of Chastity Gulch (TV Movie 1982) - IMDb",
+      "url": "https://www.imdb.com/title/tt0084905/",
+      "snippet": "The Wild Women of Chastity Gulch: Directed by Philip Leacock. With Priscilla Barnes, Lee Horsley, Howard Duff, Pamela Bellwood. …"
+    },
+    {
+      "title": "The Wild Women of Chastity Gulch (1982 Full TV Movie)",
+      "url": "https://www.youtube.com/watch?v=dzpJITZp04E",
+      "snippet": "Starring: Donny Osmond and Lisa WhelchelOriginally aired October 31, 1982"
+    },
+    {
+      "title": "The Wild Women of Chastity Gulch - The Movie Database (TMDB)",
+      "url": "https://www.themoviedb.org/movie/618410-the-wild-women-of-chastity-gulch",
+      "snippet": "It's quiet in Chastity Gulch, a small town in the Wild West. The men of the village are all in the army and fight their battles far away. …"
+    },
+    {
+      "title": "Lisa Whelchel, Donny Osmond \"The Wild Women of Chastity Gulch\" …",
+      "url": "https://www.youtube.com/watch?v=KgT6Kw5rJIs",
+      "snippet": "Oct 13, 2023 · In the last days of the Civil War, the able-bodied men of a small Missouri mining town join the Confederate troops. The …"
+    }
+  ]
+}

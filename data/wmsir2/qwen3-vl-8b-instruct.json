@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "wmsir2/Qwen3-VL-8B-Instruct",
+  "slug": "wmsir2-qwen3-vl-8b-instruct",
+  "author": "wmsir2",
+  "url": "https://huggingface.co/wmsir2/Qwen3-VL-8B-Instruct",
+  "created_at": "2026-09-23T01:13:00.000Z",
+  "updated_at": "2026-09-23T01:13:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2505.09388",
+    "arxiv:2502.13923",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17534339512,
+  "storage_human": "17.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "剁椒鹿：在 1940 年代，人类就曾经无比接近点出《战锤 40K》的科技树，提前了整整三万八千年。 这可能是人类历史上最疯狂的生 …"
+    },
+    {
+      "title": "itch.io怎么进入 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1618055482775114307.html",
+      "snippet": "Jul 22, 2025 · 进入itch.io有网页端和桌面应用端两种方式。 网页端 打开任意浏览器，将itch.io官网地址 https://itch.io/ 复制到浏览器的 …"
+    },
+    {
+      "title": "蒋炎岩 - 知乎",
+      "url": "https://www.zhihu.com/people/jiang-yan-yan-75",
+      "snippet": "Sep 8, 2026 · 如何评价南大副教授蒋炎岩在课件中提出“ 没有Token的CS学生应该立刻退学”？"
+    },
+    {
+      "title": "florr io怎么进 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1524629707844065620.html",
+      "snippet": "Sep 21, 2025 · 进入florr.io游戏的方法为：通过点击游戏链接 https://florr.io/ ，选择“Play as guest”（访客登录）进入游戏。 具体操作 …"
+    },
+    {
+      "title": "电器分为四类，即O类电器、OI电器、II电器和III电器。其中OI类电器 …",
+      "url": "https://zhidao.baidu.com/question/219067230.html",
+      "snippet": "OI 类电器 至少有基本绝缘和接地端子的电器，电源软线中没有接地导线，插头也没有接地插脚，不能插入带有接地的 电源插座。 目 …"
+    }
+  ]
+}

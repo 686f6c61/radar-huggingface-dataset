@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "prince4332/qwen35-twi-va-4-lora-GGUF",
+  "slug": "prince4332-qwen35-twi-va-4-lora-gguf",
+  "author": "prince4332",
+  "url": "https://huggingface.co/prince4332/qwen35-twi-va-4-lora-GGUF",
+  "created_at": "2026-09-22T23:28:04.000Z",
+  "updated_at": "2026-09-22T23:28:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1952483648,
+  "parameters_human": "1.95B",
+  "storage_bytes": 1136048800,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krwawe niebo – opis, o czym jest serial, czy jest książka, czy warto ...",
+      "url": "https://www.granice.pl/news/krwawe-niebo-opis-o-czym-jest-serial-gdzie-zobaczyc-czy-warto/13577",
+      "snippet": "Aug 3, 2021 · Krwawe niebo – opis filmu Film Krwawe niebo to klasyczny horror, której bohaterką jest młoda samotna matka o …"
+    },
+    {
+      "title": "Film Krwawe niebo (2021) - Gdzie obejrzeć - Upflix.pl",
+      "url": "https://upflix.pl/film/zobacz/blood-red-sky-2021",
+      "snippet": "Jan 12, 2021 · Cierpiąca na tajemniczą chorobę kobieta musi ujawnić swój mroczny sekret, gdy terroryści próbują przejąć samolot, …"
+    },
+    {
+      "title": "Oglądaj: Krwawe niebo | Oficjalna witryna Netflix",
+      "url": "https://qr.netflix.com/pl/title/80198645",
+      "snippet": "Gdy terroryści porywają lecący nad Atlantykiem samolot, cierpiąca na tajemniczą chorobę kobieta musi wyjawić światu potworny …"
+    },
+    {
+      "title": "Krwawe niebo (2021) | Opinie i oceny użytkowników | Filmweb",
+      "url": "https://www.filmweb.pl/film/Krwawe+niebo-2021-805572/opinie",
+      "snippet": "Zobacz, jak ocenili film Krwawe niebo (2021) Blood Red Sky użytkownicy Filmwebu. Opinie, oceny i komentarze w jednym miejscu."
+    },
+    {
+      "title": "Krwawe niebo | Oficjalny teaser | Netflix - YouTube",
+      "url": "https://www.youtube.com/watch?v=Z_I0-OFLel0",
+      "snippet": "Jun 7, 2021 · Cierpiąca na tajemniczą chorobę kobieta jest zmuszona wkroczyć do akcji, gdy grupa terrorystów próbuje przejąć …"
+    }
+  ]
+}

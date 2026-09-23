@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "vwdubb/Qwen3.8-27b-Terse-Coder-FP8",
+  "slug": "vwdubb-qwen3-8-27b-terse-coder-fp8",
+  "author": "vwdubb",
+  "url": "https://huggingface.co/vwdubb/Qwen3.8-27b-Terse-Coder-FP8",
+  "created_at": "2026-09-23T00:33:40.000Z",
+  "updated_at": "2026-09-23T00:36:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "reasoning",
+    "coding",
+    "qwen3",
+    "dpo",
+    "base_model:Shockem/Qwen3.8-27b-Terse-Coder",
+    "base_model:quantized:Shockem/Qwen3.8-27b-Terse-Coder",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 38465168560,
+  "storage_human": "38.5 GB",
+  "base_model": "Shockem/Qwen3.8-27b-Terse-Coder",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Evaluez le prix des travaux - Contactartisan",
+      "url": "https://devis.contactartisan.com/prix-travaux.html",
+      "snippet": "Cette évaluation ne remplace en aucun cas une demande de devis."
+    },
+    {
+      "title": "Rechercher prix reprise trottoir 4m 1m | VEVOR FR",
+      "url": "https://www.vevor.fr/s/prix%20reprise%20trottoir%204m%201m",
+      "snippet": "Achetez les derniers prix reprise trottoir 4m 1m VEVOR FR vous propose les meilleurs prix reprise trottoir 4m 1m produits d'achat en …"
+    },
+    {
+      "title": "Prix au m2 des travaux de construction et rénovation",
+      "url": "https://www.prix-travaux-m2.com/",
+      "snippet": "Découvrez tous les prix des travaux au m2 et estimez le coût de vos projets. Vous pouvez aussi faire une demande gratuite de devis."
+    },
+    {
+      "title": "Prix des travaux au m² en 2026 : grille tarifaire, facteurs de coût et ...",
+      "url": "https://groupe-r.fr/entreprise/prix-travaux-au-m2/",
+      "snippet": "Jun 2, 2026 · Découvrez les prix des travaux au m² en 2026 : tarifs par type de travaux (rénovation, second œuvre, isolation), …"
+    },
+    {
+      "title": "TARIFS ET REDEVANCES 2025 - smectom.fr",
+      "url": "https://www.smectom.fr/wp-content/uploads/2025/02/Tarifs-et-redevances-2025.pdf",
+      "snippet": "Dans la mesure où le système informatique ne permet qu’une facturation au trimestre, et pour ne pas décaler la mise en œuvre des …"
+    }
+  ]
+}

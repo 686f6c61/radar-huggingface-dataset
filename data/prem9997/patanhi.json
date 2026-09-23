@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Prem9997/Patanhi",
+  "slug": "prem9997-patanhi",
+  "author": "Prem9997",
+  "url": "https://huggingface.co/Prem9997/Patanhi",
+  "created_at": "2026-09-22T21:46:26.000Z",
+  "updated_at": "2026-09-22T21:46:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gaby Dohm – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Gaby_Dohm",
+      "snippet": "Gabriela „Gaby“ Dohm ist die Tochter der Schauspieler Heli Finkenzeller und Will Dohm. Ihre Schulausbildung erhielt sie auf der …"
+    },
+    {
+      "title": "\"Schwarzwaldklinik\"-Star Gaby Dohm war fast 40 Jahre mit ihm …",
+      "url": "https://www.t-online.de/unterhaltung/stars/id_100926298/-schwarzwaldklinik-star-gaby-dohm-war-fast-40-jahre-mit-ihm-verheiratet.html",
+      "snippet": "Sep 23, 2025 · In der \"Schwarzwaldklinik\" und in \"Um Himmels Willen\" war Gaby Dohm ein Publikumsliebling. Auch privat ist die …"
+    },
+    {
+      "title": "Gaby Dohm - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gaby_Dohm",
+      "snippet": "Gaby Dohm (born 23 September 1943 in Salzburg) is a German actress. [1] She is the daughter of actor Will Dohm and actress Heli …"
+    },
+    {
+      "title": "Gaby Dohm über Jugend: „War so verängstigt, dass ich erst keine …",
+      "url": "https://www.morgenpost.de/panorama/article410753541/gaby-dohm-ueber-jugend-war-so-veraengstigt-dass-ich-erst-keine-kinder-wollte.html",
+      "snippet": "Jan 5, 2026 · Berlin. Mit 82 denkt Schauspielerin Gaby Dohm über vieles anders als früher – darunter ihre Rolle in der …"
+    },
+    {
+      "title": "Gaby Dohm - Wikiwand",
+      "url": "https://www.wikiwand.com/de/Gaby_Dohm",
+      "snippet": "Gaby Dohm (* 23. September 1943 als Gabriela Helena Anna Dohm in Salzburg) ist eine deutsche Schauspielerin."
+    }
+  ]
+}

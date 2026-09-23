@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfd_seed455",
+  "slug": "francesca9805-rus-cyrl-100mb-ppt-dp-100mb-packed-bfd_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfd_seed455",
+  "created_at": "2026-09-22T22:48:16.000Z",
+  "updated_at": "2026-09-22T22:54:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/rus_cyrl_100mb",
+    "base_model:finetune:goldfish-models/rus_cyrl_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 251072738,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/rus_cyrl_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Time in Delhi, India now",
+      "url": "https://time.is/Delhi",
+      "snippet": "1 day ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Delhi, India."
+    },
+    {
+      "title": "Current Local Time in New Delhi, Delhi, India - timeanddate.com",
+      "url": "https://www.timeanddate.com/worldclock/india/new-delhi",
+      "snippet": "Current local time in India – Delhi – New Delhi. Get New Delhi's weather and area codes, time zone and DST. Explore New Delhi's …"
+    },
+    {
+      "title": "Current Time in Delhi — Live Clock, Time Zone & UTC Offset",
+      "url": "https://www.worldtimenow.net/time/delhi/",
+      "snippet": "1 day ago · What time is it in Delhi right now? See the live clock, UTC+5:30 offset, time zone details, and Daylight Saving Time info …"
+    },
+    {
+      "title": "Time in New Delhi, National Capital Territory of Delhi, India now",
+      "url": "https://time.is/New_Delhi",
+      "snippet": "30 minutes ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for New Delhi, National Capital …"
+    },
+    {
+      "title": "What time is it in New Delhi, India right now?",
+      "url": "https://24timezones.com/New-Delhi/time",
+      "snippet": "30 minutes ago · Exact time in New Delhi time zone now. Official New Delhi timezone and time change dates for year 2026."
+    }
+  ]
+}

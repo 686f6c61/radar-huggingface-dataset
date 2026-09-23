@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfd_seed10",
+  "slug": "francesca9805-urd-arab-10mb-ppt-dp-10mb-packed-bfd_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfd_seed10",
+  "created_at": "2026-09-23T00:08:35.000Z",
+  "updated_at": "2026-09-23T00:10:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/urd_arab_10mb",
+    "base_model:finetune:goldfish-models/urd_arab_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 38038528,
+  "parameters_human": "38.0M",
+  "storage_bytes": 77240652,
+  "storage_human": "77 MB",
+  "base_model": "goldfish-models/urd_arab_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "McNeese State STUDENT Manager Gets NIL Deal",
+      "url": "https://www.gomeangreen.com/forums/topic/169094-mcneese-state-student-manager-gets-nil-deal/",
+      "snippet": "Mar 14, 2025 · Quote McNeese's boom-boxing viral sensation, student manager Amir Khan, has captivated fans across social media …"
+    },
+    {
+      "title": "CBS College Football Sports Rankings (10/6/25)",
+      "url": "https://www.gomeangreen.com/forums/topic/171324-cbs-college-football-sports-rankings-10625/",
+      "snippet": "Oct 6, 2025 · The ranks of the undefeated is down to 15 teams and we are one of them. Let's keep it going! Oregon 5-0 plays Indiana …"
+    },
+    {
+      "title": "Michigan sign-stealing penalties - Rivals Football - AUFAMILY",
+      "url": "https://www.aufamily.com/topic/200415-michigan-sign-stealing-penalties/",
+      "snippet": "Aug 15, 2025 · cbssports.com Michigan sign-stealing penalties: Jim Harbaugh 10-year show-cause, hefty fines among NCAA …"
+    },
+    {
+      "title": "What is 'Project Rudy'? - AU Football Forum - AUFAMILY",
+      "url": "https://www.aufamily.com/topic/194733-what-is-project-rudy/",
+      "snippet": "Oct 9, 2024 · cbssports.com What is 'Project Rudy'? New proposal to reimagine college football includes 70 teams, private equity …"
+    },
+    {
+      "title": "Best place to buy driftwood - Talk of The Villages Florida",
+      "url": "https://www.talkofthevillages.com/forums/landscape-talk-129/best-place-buy-driftwood-42794/",
+      "snippet": "Oct 21, 2011 · I am creating a dry riverbed using pebbles, sand and ornamental grasses. The finishing touch is a piece of driftwood. …"
+    }
+  ]
+}

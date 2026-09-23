@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/opus-mt-en-fr",
+  "slug": "skillsafe-ai-opus-mt-en-fr",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/opus-mt-en-fr",
+  "created_at": "2026-09-22T21:54:56.000Z",
+  "updated_at": "2026-09-22T21:55:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "marian",
+    "text2text-generation",
+    "skillsafe",
+    "browser",
+    "translation",
+    "import",
+    "base_model:Xenova/opus-mt-en-fr",
+    "base_model:quantized:Xenova/opus-mt-en-fr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 480662268,
+  "storage_human": "481 MB",
+  "base_model": "Xenova/opus-mt-en-fr",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die Porno-Videos in der Kategorie Deutsche MILF | xHamster",
+      "url": "https://ge.xhamster.desi/tags/german-milf",
+      "snippet": "Schau jetzt gleich alle XXX-Videos in der Kategorie Deutsche MILF!"
+    },
+    {
+      "title": "German MILF Porno Videos - xHamster",
+      "url": "https://ge.xhamster.desi/search/german+milf",
+      "snippet": "Sehen Sie german MILF Porno Videos. Entdecken Sie Tonnen von XXX Filmen mit Sexszenen in 2026 auf xHamster!"
+    },
+    {
+      "title": "German Milf - A Mature Tube",
+      "url": "https://amaturetube.com/german-milf-videos",
+      "snippet": "The hottest free MATURE GERMAN MILF porn videos. The hottest video: Old childhood love is suddenly at the door!. And there is …"
+    },
+    {
+      "title": "Beste Deutsch Milf Sexvideos und Pornofilme - Freieporno.com",
+      "url": "https://www.freieporno.com/deutsch-milf/",
+      "snippet": "Einfach die besten Deutsch Milf Porno-Videos, die online zu finden sind. Viel Spaß mit unserer riesigen kostenlosen …"
+    },
+    {
+      "title": "Deutsche MILF - MatureTube.com",
+      "url": "https://www.maturetube.com/de-at/category/german-milf",
+      "snippet": "Die besten Deutsche MILF Tubes und andere reife Kategorien gibt es nur bei MatureTube.com. Treten Sie ein und genießen Sie es …"
+    }
+  ]
+}

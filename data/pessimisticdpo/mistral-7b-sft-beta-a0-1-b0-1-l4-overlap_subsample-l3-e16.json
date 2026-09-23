@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e16",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l3-e16",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e16",
+  "created_at": "2026-09-22T22:04:42.000Z",
+  "updated_at": "2026-09-22T22:04:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prullenbak - Tag Manager Help - Google Help",
+      "url": "https://support.google.com/tagmanager/answer/7106144?hl=nl",
+      "snippet": "Accounts en containers worden tijdelijk in de prullenbak bewaard voordat ze uit Google Tag Manager worden verwijderd. Accounts …"
+    },
+    {
+      "title": "Een document, spreadsheet, presentatie of video verwijderen",
+      "url": "https://support.google.com/docs/answer/6023494?hl=nl-be&co=GENIE.Platform%3DDesktop",
+      "snippet": "Een bestand in de prullenbak plaatsen Als je een bestand wilt verwijderen, kun je het in de prullenbak plaatsen. Het bestand blijft …"
+    },
+    {
+      "title": "Prullenbak email-app - Samsung Community",
+      "url": "https://eu.community.samsung.com/t5/mobiele-apps-services/prullenbak-email-app/td-p/1060459",
+      "snippet": "Apr 3, 2019 · Hallo Ik heb twee vraagjes i.v.m. de e-mailapp van Samsung. - Hoe lang blijven mails bewaard in de Prullenbak? - …"
+    },
+    {
+      "title": "E-mails verdwijnen - Samsung Community",
+      "url": "https://eu.community.samsung.com/t5/mobiele-apps-services/e-mails-verdwijnen/td-p/5121875",
+      "snippet": "Mar 29, 2022 · Hallo Ineens verdwijnen er e-mails die ik al langere tijd had staan. Welke instellingen kan ik gebruiken om dit weer …"
+    },
+    {
+      "title": "prullenbak herstellen - Gmail Community",
+      "url": "https://support.google.com/mail/thread/131066942/prullenbak-herstellen?hl=en",
+      "snippet": "This help content & informationGeneral Help Center experience Search"
+    }
+  ]
+}

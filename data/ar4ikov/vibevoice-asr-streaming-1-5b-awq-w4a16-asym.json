@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Ar4ikov/VibeVoice-ASR-Streaming-1.5B-AWQ-W4A16-ASYM",
+  "slug": "ar4ikov-vibevoice-asr-streaming-1-5b-awq-w4a16-asym",
+  "author": "Ar4ikov",
+  "url": "https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-1.5B-AWQ-W4A16-ASYM",
+  "created_at": "2026-09-23T00:21:07.000Z",
+  "updated_at": "2026-09-23T00:29:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vibevoice",
+    "awq",
+    "w4a16",
+    "asymmetric",
+    "llmcompressor",
+    "speech-to-text",
+    "streaming",
+    "diarization",
+    "automatic-speech-recognition",
+    "base_model:microsoft/VibeVoice-ASR-Streaming-1.5B",
+    "base_model:quantized:microsoft/VibeVoice-ASR-Streaming-1.5B",
+    "license:mit",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2237046656,
+  "parameters_human": "2.24B",
+  "storage_bytes": 2545980041,
+  "storage_human": "2.5 GB",
+  "base_model": "microsoft/VibeVoice-ASR-Streaming-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Downloads · QGIS",
+      "url": "https://download.qgis.org/downloads/",
+      "snippet": "QGIS Downloads ¶ Browse and download QGIS installers, packages, and related files from our comprehensive download repository. …"
+    },
+    {
+      "title": "Download · QGIS",
+      "url": "https://version.qgis.org/download/",
+      "snippet": "Download QGIS for your platform The current version is QGIS 4.2.2 'Belém do Pará' and was released on 2026-08-28. The long …"
+    },
+    {
+      "title": "Spatial without Compromise · QGIS",
+      "url": "https://qgis.org/",
+      "snippet": "Create maps Explore QGIS's exceptional cartographic design features to craft outstanding maps for desktop, mobile, cloud, and print …"
+    },
+    {
+      "title": "Releases · qgis/QGIS - GitHub",
+      "url": "https://github.com/qgis/QGIS/releases",
+      "snippet": "QGIS is a free, open source, cross platform (lin/win/mac) geographical information system (GIS) - Releases · qgis/QGIS"
+    },
+    {
+      "title": "Welcome to the QGIS project!",
+      "url": "https://www2.qgis.org/en/site/",
+      "snippet": "Oct 25, 2024 · New release: 3.38! Get the installer or packages for your Operating System and read the changelog."
+    }
+  ]
+}

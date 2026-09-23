@@ -5,7 +5,7 @@
   "author": "nkkbr",
   "url": "https://huggingface.co/nkkbr/Mini-K3-1H-decay-g32-v2_C",
   "created_at": "2026-09-21T14:59:37.000Z",
-  "updated_at": "2026-09-22T01:02:00.000Z",
+  "updated_at": "2026-09-22T11:00:20.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 747,
   "trending_score": 0,
   "parameters": 1015443052,
   "parameters_human": "1.02B",
-  "storage_bytes": 8148976592,
-  "storage_human": "8.1 GB",
+  "storage_bytes": 10221001328,
+  "storage_human": "10.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

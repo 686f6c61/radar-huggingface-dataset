@@ -5,7 +5,7 @@
   "author": "nkkbr",
   "url": "https://huggingface.co/nkkbr/Mini-K3-1H-attnres-block6-v1_C",
   "created_at": "2026-09-21T14:59:38.000Z",
-  "updated_at": "2026-09-22T00:56:17.000Z",
+  "updated_at": "2026-09-22T10:46:16.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 723,
   "trending_score": 0,
   "parameters": 1016780524,
   "parameters_human": "1.02B",
-  "storage_bytes": 8159767246,
-  "storage_human": "8.2 GB",
+  "storage_bytes": 10234496752,
+  "storage_human": "10.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

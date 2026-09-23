@@ -5,7 +5,7 @@
   "author": "violetxi",
   "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-kl-notes30m",
   "created_at": "2026-09-18T12:54:34.000Z",
-  "updated_at": "2026-09-18T12:57:42.000Z",
+  "updated_at": "2026-09-22T22:58:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": 9653104368,
   "parameters_human": "9.65B",

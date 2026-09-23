@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ERISLab/FGIR-KD",
+  "slug": "erislab-fgir-kd",
+  "author": "ERISLab",
+  "url": "https://huggingface.co/ERISLab/FGIR-KD",
+  "created_at": "2026-09-23T00:26:02.000Z",
+  "updated_at": "2026-09-23T01:35:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "fine-grained-image-recognition",
+    "image-classification",
+    "knowledge-distillation",
+    "timm",
+    "arxiv:2605.15689",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 97865889911,
+  "storage_human": "97.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Newcastle United - Home",
+      "url": "https://www.newcastleunited.com/",
+      "snippet": "The official website of Newcastle United Football Club. Get the latest news, fixtures and results, tickets, hospitality and membership …"
+    },
+    {
+      "title": "Newcastle United Fixtures, Live Matches & Results 2025/2026",
+      "url": "https://www.premierleague.com/en/clubs/4/newcastle-united/matches",
+      "snippet": "View Newcastle United scores, fixtures and results for matches played in all competitions, on the official website of the Premier League."
+    },
+    {
+      "title": "NUFC.com",
+      "url": "https://www.nufc.com/?Fixtures",
+      "snippet": "2 days ago · Following 0-0 draws at Aston Villa and Leeds United, Newcastle stuttered to a third Premier League stalemate in as …"
+    },
+    {
+      "title": "Newcastle United - Scores & Fixtures - Football - BBC Sport",
+      "url": "https://www.bbc.co.uk/sport/football/teams/newcastle-united/scores-fixtures",
+      "snippet": "Newcastle United scores, results and fixtures on BBC Sport, including live football scores"
+    },
+    {
+      "title": "Men | NUFC - Newcastle United F.C.",
+      "url": "https://www.newcastleunited.com/en/matches/mens-team/fixtures",
+      "snippet": "Dec 6, 2016 · Fixtures and results for the 2026/27 season. Dates and times are subject to change."
+    }
+  ]
+}

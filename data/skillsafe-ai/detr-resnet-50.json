@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/detr-resnet-50",
+  "slug": "skillsafe-ai-detr-resnet-50",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/detr-resnet-50",
+  "created_at": "2026-09-22T21:53:13.000Z",
+  "updated_at": "2026-09-22T21:53:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "detr",
+    "object-detection",
+    "skillsafe",
+    "browser",
+    "import",
+    "base_model:Xenova/detr-resnet-50",
+    "base_model:quantized:Xenova/detr-resnet-50",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 209891743,
+  "storage_human": "210 MB",
+  "base_model": "Xenova/detr-resnet-50",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么将手机上的画面投到电脑屏幕上？ - 知乎",
+      "url": "https://www.zhihu.com/question/324589333",
+      "snippet": "有的时候需要将手机的内容投影到电脑上，那么要如何操作呢？一般来说需要去下载投屏软件，但是很多投屏软件都很坑，需要收费 …"
+    },
+    {
+      "title": "7-Zip 官方网站怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/20498753",
+      "snippet": "7-Zip 是一个功能强大的工具，特别适合需要 高效压缩 和 解压缩 功能的用户。比如 IT 专业人员、软件开发者或普通用户希望节省磁 …"
+    },
+    {
+      "title": "Adolescence (2025) | Netflix | DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/adolescence-2025-netflix--160804556",
+      "snippet": "Adolescence (2025) | Netflix Sıcak Fırsatlarda Tıklananlar Editörün Seçtiği Fırsatlar Daha Fazla"
+    },
+    {
+      "title": "Film, Dizi, Canlı Yayın ve Maçlar için En İyi Uygulamalar ...",
+      "url": "https://forum.donanimhaber.com/netflix-exxen-blutv-diger-dizi-film-canli-tv-mac-uygulamasi--148030808",
+      "snippet": "Netflix, Exxen, BluTV ve diğer uygulamalarla en sevdiğin film, dizi, canlı TV programlarını ve maçları istediğin zaman, istediğin yerde …"
+    },
+    {
+      "title": "edge浏览器网页与此站点链接不安全怎么解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/487808345",
+      "snippet": "Sep 19, 2021 · 方法一： 快捷方式添加参数 Chrome内核浏览器，例如 Edge 等，支持通过添加“--ignore-certificate-errors”参数改变浏 …"
+    }
+  ]
+}

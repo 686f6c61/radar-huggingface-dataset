@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/rus-cyrl-10mb-ppt-Dp-10mb-packed-bfd_seed10",
+  "slug": "francesca9805-rus-cyrl-10mb-ppt-dp-10mb-packed-bfd_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/rus-cyrl-10mb-ppt-Dp-10mb-packed-bfd_seed10",
+  "created_at": "2026-09-22T22:26:54.000Z",
+  "updated_at": "2026-09-22T22:28:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/rus_cyrl_10mb",
+    "base_model:finetune:goldfish-models/rus_cyrl_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79710349,
+  "storage_human": "80 MB",
+  "base_model": "goldfish-models/rus_cyrl_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "شبكتي - منتديات درر العراق",
+      "url": "https://www.dorar-aliraq.net/threads/814344-%D8%B4%D8%A8%D9%83%D8%AA%D9%8A",
+      "snippet": "Jul 1, 2023 · شبكتي - شبكتي #ذوالفقار_الموسوي جميع روابطنا، مشاركاتنا، صورنا متاحة للزوار دون الحاجة إلى التسجيل ، الابلاغ عن انتهاك - Report a violation"
+    },
+    {
+      "title": "دعوني أتنفس - شبكة روايتي الثقافية | أكبر منتدى عربي للروايات والقصص",
+      "url": "https://www.rewity.com/forum/f180/",
+      "snippet": "بوح المشاعر في باقة من الخواطر ـ مصاهرة الكلمة للاحساس عبر نافذة الروح"
+    },
+    {
+      "title": "احكي غيابا مزق الوجدان / للكاتبة ضاقت انفاسي روايتها الرابعة ، (مكتملة ...",
+      "url": "https://www.rewity.com/forum/t436183.html",
+      "snippet": "احكي غيابا مزق الوجدان / للكاتبة ضاقت انفاسي روايتها الرابعة ، (مكتملة) منتدى الروايات الطويلة المنقولة الخليجية المكتملة"
+    },
+    {
+      "title": "مصدر.. غلق تطبيق شبكتي و سينمانا - منتديات درر العراق",
+      "url": "https://www.dorar-aliraq.net/threads/1266503-%D9%85%D8%B5%D8%AF%D8%B1-%D8%BA%D9%84%D9%82-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D8%B4%D8%A8%D9%83%D8%AA%D9%8A-%D9%88-%D8%B3%D9%8A%D9%86%D9%85%D8%A7%D9%86%D8%A7",
+      "snippet": "Jul 30, 2023 · مصدر.. غلق تطبيق شبكتي و سينمانا مشاركة الموضوع رابط قصير: الزوار من محركات البحث: 379 المشاهدات : 1261 الردود: 3 جميع روابطنا، مشاركاتنا، صورنا متاحة …"
+    },
+    {
+      "title": "طريقة فتح موقع الشير ايرثلنك على الشبكات الاخرى - الصفحة 2",
+      "url": "https://www.dorar-aliraq.net/threads/1096786-%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D9%81%D8%AA%D8%AD-%D9%85%D9%88%D9%82%D8%B9-%D8%A7%D9%84%D8%B4%D9%8A%D8%B1-%D8%A7%D9%8A%D8%B1%D8%AB%D9%84%D9%86%D9%83-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AE%D8%B1%D9%89/page2",
+      "snippet": "Sep 16, 2020 · السلام عليكم اكو طريقة افتح بيها موقع الشير ايرث لنك واني اشتراكي على غير شبكة ؟ شفت طرق بالنت بس مو شغالات ، بالكت اكو طريقة جديدة :| - صفحة 2"
+    }
+  ]
+}

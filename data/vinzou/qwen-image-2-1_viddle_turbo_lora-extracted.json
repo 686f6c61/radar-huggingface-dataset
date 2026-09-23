@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Vinzou/Qwen-Image-2.1_Viddle_Turbo_LoRA-extracted",
+  "slug": "vinzou-qwen-image-2-1_viddle_turbo_lora-extracted",
+  "author": "Vinzou",
+  "url": "https://huggingface.co/Vinzou/Qwen-Image-2.1_Viddle_Turbo_LoRA-extracted",
+  "created_at": "2026-09-23T01:05:46.000Z",
+  "updated_at": "2026-09-23T01:23:24.000Z",
+  "license": "qwen-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2286405792,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-23T02:36:03.314Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Egy éjszaka meséje 24.rész - indavideo.hu",
+      "url": "https://indavideo.hu/video/Egy_ejszaka_meseje_24resz",
+      "snippet": "Jul 19, 2025 · Mitől lesz finom egy kávé? (x)"
+    },
+    {
+      "title": "Egy éjszaka meséje 6. rész - Videa",
+      "url": "https://videa.hu/player?v=6biefa8PrRvw6xSA&autoplay=1&enableJsApi=1&apiKey=PKeut6dEjAJYKYRp",
+      "snippet": "[XML_001]"
+    },
+    {
+      "title": "Egy éjszaka meséje 23.rész | videa.hu",
+      "url": "https://videa.hu/videok/nagyvilag/egy-ejszaka-meseje-23.resz-GeKtPuD2PCVusxft",
+      "snippet": "Jul 5, 2025 · Az Egy éjszaka meséje, amely Pamukkale varázslatos hangulatától egészen az isztambuli Asaf Bey-kastélyig tart, …"
+    },
+    {
+      "title": "Egy éjszaka meséje 4.rész - indavideo.hu",
+      "url": "https://indavideo.hu/video/Egy_ejszaka_meseje_4resz",
+      "snippet": "Oct 19, 2025 · Mitől lesz finom egy kávé? (x)"
+    },
+    {
+      "title": "Egy éjszaka meséje ️ bír gece masali ️ | ‼️ | Facebook",
+      "url": "https://www.facebook.com/groups/561318113031430/posts/835855168911055/",
+      "snippet": "Oct 17, 2025 · 4.rész / Részlet A Kilimci család birtokán nagy előkészületek zajlanak az esküvő miatt. A vendégek között feltűnik …"
+    }
+  ]
+}

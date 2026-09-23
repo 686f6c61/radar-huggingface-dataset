@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "zichenshang/GLM-5.2-colibri-int4",
+  "slug": "zichenshang-glm-5-2-colibri-int4",
+  "author": "zichenshang",
+  "url": "https://huggingface.co/zichenshang/GLM-5.2-colibri-int4",
+  "created_at": "2026-09-23T00:46:45.000Z",
+  "updated_at": "2026-09-23T00:46:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "glm_moe_dsa",
+    "int4",
+    "cpu",
+    "moe",
+    "expert-streaming",
+    "colibri",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.2-FP8",
+    "base_model:quantized:zai-org/GLM-5.2-FP8",
+    "license:mit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 378928210530,
+  "storage_human": "378.9 GB",
+  "base_model": "zai-org/GLM-5.2-FP8",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - formcms/formcms: AI Agent: Open-source headless CMS …",
+      "url": "https://github.com/formcms/formcms",
+      "snippet": "Learn how to connect different AI editors to the FormCMS MCP server to scaffold, build, and deploy apps without writing any …"
+    },
+    {
+      "title": "Top 10 Free Open-Source .NET Core CMS for 2026",
+      "url": "https://www.faciletechnolab.com/blog/the-top-5-open-source-cms-developed-on-aspnet-core/",
+      "snippet": "Jan 2, 2024 · Top 10 free and open-source .NET Core CMS platforms compared - Umbraco, Orchard Core, Piranha, Oqtane, …"
+    },
+    {
+      "title": "Squidex - an OpenSource Headless CMS, a CMS with an API",
+      "url": "https://squidex.io/",
+      "snippet": "Access and control everything with a robust REST API built on modern standards like OpenAPI and OpenID Connect. Ideal for …"
+    },
+    {
+      "title": "GitHub - mixcore/mix.core: A future-proof enterprise web CMS ...",
+      "url": "https://github.com/mixcore/mix.core",
+      "snippet": "Cross Platforms - Powered by .NET Core and run everywhere. Online Coding - Visual Studio Code's heart inside. Customizable …"
+    },
+    {
+      "title": "Best Open Source Headless CMS Tools using React in 2026",
+      "url": "https://openalternative.co/categories/headless-cms/using/react",
+      "snippet": "Open Source Headless CMS Tools using React A curated collection of the best open source cMS architecture where the content …"
+    }
+  ]
+}

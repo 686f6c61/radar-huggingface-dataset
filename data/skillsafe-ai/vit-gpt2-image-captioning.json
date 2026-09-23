@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/vit-gpt2-image-captioning",
+  "slug": "skillsafe-ai-vit-gpt2-image-captioning",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/vit-gpt2-image-captioning",
+  "created_at": "2026-09-22T21:57:12.000Z",
+  "updated_at": "2026-09-22T21:57:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "skillsafe",
+    "browser",
+    "image-to-text",
+    "import",
+    "base_model:Xenova/vit-gpt2-image-captioning",
+    "base_model:quantized:Xenova/vit-gpt2-image-captioning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1117065715,
+  "storage_human": "1.1 GB",
+  "base_model": "Xenova/vit-gpt2-image-captioning",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Common Launches First Privacy Web App with Subsecond Proving …",
+      "url": "https://chainwire.org/2025/04/29/common-launches-first-privacy-web-app-with-subsecond-proving-times-for-arbitrum-and-aleph-zero-evm/",
+      "snippet": "Apr 29, 2025 · For this reason, Common represents a watershed moment for crypto mass adoption. The platform initially supports …"
+    },
+    {
+      "title": "Best Cross-Chain Bridges in Crypto - DailyCoin",
+      "url": "https://dailycoin.com/best-cross-chain-bridges-in-crypto/",
+      "snippet": "May 2, 2026 · Best Cross-Chain Bridges Now that you’re clued up on why bridging over to exciting new blockchains is worthwhile …"
+    },
+    {
+      "title": "Agglayer · GitHub",
+      "url": "https://github.com/AggLayer/",
+      "snippet": "Unified LxLy Bridge The Unified LxLy Bridge is the backbone of the Aggregation Layer. It is designed to act as a common way for …"
+    },
+    {
+      "title": "DeFi Aggregators Are Reshaping Access to Decentralized ... - CCN.com",
+      "url": "https://www.ccn.com/education/crypto/how-defi-aggregators-are-reshaping-decentralized-finance-access/",
+      "snippet": "Apr 23, 2026 · As DeFi grows more complex with institutional integration, cross-chain activity, and AI-driven strategies, aggregators …"
+    },
+    {
+      "title": "Top 10 DEX Aggregators to Use in 2025: Smarter Swaps Across Chains",
+      "url": "https://rubic.exchange/blog/top-10-dex-aggregators-to-use-smarter-swaps-across-chains/",
+      "snippet": "Jul 15, 2025 · It’s also one of the few aggregators that supports Solana, Tron, and other less-EVM-heavy chains. 10. Symbiosis …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "roman220220/gemma-4-E4B-it-gptq-mlx-jang",
+  "slug": "roman220220-gemma-4-e4b-it-gptq-mlx-jang",
+  "author": "roman220220",
+  "url": "https://huggingface.co/roman220220/gemma-4-E4B-it-gptq-mlx-jang",
+  "created_at": "2026-09-22T23:03:20.000Z",
+  "updated_at": "2026-09-22T23:10:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "gptq",
+    "quantized",
+    "multimodal",
+    "vision",
+    "audio",
+    "jang",
+    "image-text-to-text",
+    "conversational",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6187362890,
+  "parameters_human": "6.19B",
+  "storage_bytes": 6801660913,
+  "storage_human": "6.8 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Philadelphia Semiconductor Index (SOX) - Investing.com Italia",
+      "url": "https://it.investing.com/indices/phlx-semiconductor",
+      "snippet": "L'indice SOX monitora la performance borsistica delle principali azioni che lo compongono, selezionate tra i settori più …"
+    },
+    {
+      "title": "Overview for SOX - Nasdaq",
+      "url": "https://indexes.nasdaqomx.com/Index/Overview/SOX",
+      "snippet": "The PHLX Semiconductor Sector Index TM (SOX TM) is a modified market capitalization-weighted index composed of companies …"
+    },
+    {
+      "title": "PHLX Semiconductor (^SOX) Charts, Data & News - Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/%5ESOX/",
+      "snippet": "Dec 25, 2024 · Find the latest information on PHLX Semiconductor (^SOX) including data, charts, related news and more from …"
+    },
+    {
+      "title": "Philadelphia Semiconductor Index (SOX) - Investing.com",
+      "url": "https://www.investing.com/indices/phlx-semiconductor",
+      "snippet": "Get detailed information on the Philadelphia Semiconductor Index including charts, technical analysis, components and more."
+    },
+    {
+      "title": "SOX | PHLX Semiconductor Index Overview | MarketWatch",
+      "url": "https://www.marketwatch.com/investing/index/sox",
+      "snippet": "1 day ago · SOX | A complete PHLX Semiconductor Index index overview by MarketWatch. View stock market news, stock market …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "nathanwei05/cs2881r-dobby-qwen2.5-3b-rlvr-lr1e-4-grpo100-step100",
+  "slug": "nathanwei05-cs2881r-dobby-qwen2-5-3b-rlvr-lr1e-4-grpo100-step100",
+  "author": "nathanwei05",
+  "url": "https://huggingface.co/nathanwei05/cs2881r-dobby-qwen2.5-3b-rlvr-lr1e-4-grpo100-step100",
+  "created_at": "2026-09-23T00:16:16.000Z",
+  "updated_at": "2026-09-23T00:16:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "cs2881r",
+    "dobby",
+    "grpo",
+    "rlvr",
+    "conversational",
+    "base_model:axel-sdq/cs2881r-dobby-qwen2.5-3b-rlaif-grpo100-step25",
+    "base_model:finetune:axel-sdq/cs2881r-dobby-qwen2.5-3b-rlaif-grpo100-step25",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6303158313,
+  "storage_human": "6.3 GB",
+  "base_model": "axel-sdq/cs2881r-dobby-qwen2.5-3b-rlaif-grpo100-step25",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "YouTube's official YouTube channel GAY, ARTISTIC, DIVA ENERGY – either you’re in for the best weekend ever or you’re watching …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/yt+",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YT Industries | Mountain Bikes | Live Uncaged",
+      "url": "https://www.yt-industries.com/",
+      "snippet": "Young Talent is what YT stands for. Our direct sales approach maximizes your budget, bringing your dream Enduro, Trail, or …"
+    }
+  ]
+}

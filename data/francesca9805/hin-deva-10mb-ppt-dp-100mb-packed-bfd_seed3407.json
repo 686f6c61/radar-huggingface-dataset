@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfd_seed3407",
+  "slug": "francesca9805-hin-deva-10mb-ppt-dp-100mb-packed-bfd_seed3407",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfd_seed3407",
+  "created_at": "2026-09-22T23:29:46.000Z",
+  "updated_at": "2026-09-22T23:32:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/hin_deva_10mb",
+    "base_model:finetune:goldfish-models/hin_deva_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79700123,
+  "storage_human": "80 MB",
+  "base_model": "goldfish-models/hin_deva_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keine Logbuch-Einträge über Flugzeiten, Systemzeit Windows bleibt ...",
+      "url": "https://answers.microsoft.com/de-de/xbox/forum/all/keine-logbuch-eintr%C3%A4ge-%C3%BCber-flugzeiten/d92351fc-4e5f-414b-9a11-c4568b08a33e",
+      "snippet": "Wenn ein Flug gestartet wird, friert die Systemzeit von Windows 10 ein. Nach Beenden der Software wird sie wieder korrekt …"
+    },
+    {
+      "title": "pc não aceita formatar ou fazer padrão de fábrica ponto de …",
+      "url": "https://answers.microsoft.com/pt-br/windows/forum/all/pc-n%C3%A3o-aceita-formatar-ou-fazer-padr%C3%A3o/e2ecebeb-9f53-4cc5-b69b-e2bb3d194a8a",
+      "snippet": "olá meu nome é kesley estou tendo problemas ao formatar meu pc já tentei com pendrive e não funcionou quando clico em qualquer …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/outlook-hasnt-installed-on-my-office-pro-2021/739cc5d5-3b4c-4ed3-bc0b-790a4f4ae91e",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/the-format-of-the-cell-cant-be-saved-in-csv-file/2bedad17-2a28-4b52-953f-3340b9a31ca8",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/auto-reboot-issues/f23cd51e-4290-41f6-8ff2-55db90b46d55",
+      "snippet": ""
+    }
+  ]
+}

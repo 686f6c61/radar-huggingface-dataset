@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/vit-base-patch16-224",
+  "slug": "skillsafe-ai-vit-base-patch16-224",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/vit-base-patch16-224",
+  "created_at": "2026-09-22T21:54:00.000Z",
+  "updated_at": "2026-09-22T21:54:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "vit",
+    "image-classification",
+    "skillsafe",
+    "browser",
+    "import",
+    "base_model:Xenova/vit-base-patch16-224",
+    "base_model:quantized:Xenova/vit-base-patch16-224",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 434791165,
+  "storage_human": "435 MB",
+  "base_model": "Xenova/vit-base-patch16-224",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ForgeGUI - AI Roblox Scripting Tool Feature",
+      "url": "https://devforum.roblox.com/t/forgegui-ai-roblox-scripting-tool-feature/4734535",
+      "snippet": "Jul 13, 2026 · Hey Yall devs 👋 ForgeGUI’s AI scripting tool is a Roblox Studio plugin that turns plain-English descriptions into working …"
+    },
+    {
+      "title": "/r/Roblox - Reddit",
+      "url": "https://www.reddit.com/r/roblox/new",
+      "snippet": "A community for Roblox, the free game building platform. This community is unofficial and is not endorsed, monitored, or run by …"
+    },
+    {
+      "title": "Unicode Characters for Roblox Plus, Premium, Verified, and Robux",
+      "url": "https://devforum.roblox.com/t/unicode-characters-for-roblox-plus-premium-verified-and-robux/2175425",
+      "snippet": "Feb 5, 2023 · Unicode Replacement Characters for Robux, Premium, and Verified! Hey everyone! I couldn’t find a solid list of these …"
+    },
+    {
+      "title": "doors_roblox - Reddit",
+      "url": "https://www.reddit.com/r/doors_roblox/",
+      "snippet": "The (un)official Subreddit for the roblox horror game “Doors”🚪 Have a Great April! The “HUNT” is now over."
+    },
+    {
+      "title": "Allowlist for local client configuration via Fast Flags - Roblox",
+      "url": "https://devforum.roblox.com/t/allowlist-for-local-client-configuration-via-fast-flags/3966569",
+      "snippet": "Sep 29, 2025 · Allowlist limits the number of locally configurable Fast Flags to those explicitly listed. Hi Creators, To improve platform …"
+    }
+  ]
+}

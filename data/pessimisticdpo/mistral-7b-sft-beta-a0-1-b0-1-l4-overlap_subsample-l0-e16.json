@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e16",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l0-e16",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e16",
+  "created_at": "2026-09-22T22:05:11.000Z",
+  "updated_at": "2026-09-22T22:05:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Suguru Geto | Jujutsu Kaisen Wiki | Fandom",
+      "url": "https://jujutsu-kaisen.fandom.com/wiki/Suguru_Geto",
+      "snippet": "Suguru Geto, one of the four special grade sorcerers, earned his notorious reputation as the worst curse user due to his perilous …"
+    },
+    {
+      "title": "Suguru Geto - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Suguru_Geto",
+      "snippet": "With the reveal that the original Geto dies in Jujutsu Kaisen 0 and the one from the main series is another man possessing his body, …"
+    },
+    {
+      "title": "Suguru Geto | Wiki Jujutsu Kaisen | Fandom",
+      "url": "https://jujutsu-kaisen.fandom.com/fr/wiki/Suguru_Geto",
+      "snippet": "Suguru Geto (夏 げ 油 とう 傑 すぐる , Getō Suguru?) est un personnage récurrent de Jujutsu Kaisen et le principal antagoniste de …"
+    },
+    {
+      "title": "Geto Kogen Ski Resort | Winter Official Site",
+      "url": "https://www.getokogen.com/winter_en/",
+      "snippet": "Official website of Geto Kogen Ski Resort (GETO KOGEN) in Iwate, Japan. World-class powder snow and one of Japan’s largest …"
+    },
+    {
+      "title": "How Did Suguru Geto Die in Jujutsu Kaisen? - Epic Dope",
+      "url": "https://www.epicdope.com/how-did-suguru-geto-die-in-jujutsu-kaisen-the-tragic-end-explained/",
+      "snippet": "Dec 19, 2024 · Although Geto’s death is confirmed in Jujutsu Kaisen 0, his character continues to play a role in the series, causing …"
+    }
+  ]
+}

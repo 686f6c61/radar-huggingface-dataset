@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "arafathusayn/autojev-27b",
+  "slug": "arafathusayn-autojev-27b",
+  "author": "arafathusayn",
+  "url": "https://huggingface.co/arafathusayn/autojev-27b",
+  "created_at": "2026-09-22T21:41:44.000Z",
+  "updated_at": "2026-09-22T21:41:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "qwen3_5",
+    "classification",
+    "multimodal",
+    "full-finetuning",
+    "calibration",
+    "custom-code",
+    "text-classification",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 101578241774,
+  "storage_human": "101.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How Cats Use Smell to Recognize Their Owners, According to Science",
+      "url": "https://cats.com/study-finds-cats-recognize-their-owners-by-smell",
+      "snippet": "Feb 13, 2026 · And it’s no wonder they can tell the difference, given the feline’s strong sense of smell: Cats have more than 200 …"
+    },
+    {
+      "title": "Do cats see you as cats? - The Institute for Environmental Research …",
+      "url": "https://iere.org/do-cats-see-you-as-cats/",
+      "snippet": "Nov 15, 2025 · Do Cats See You as Cats? While the answer isn’t a simple yes or no, research suggests cats likely recognize …"
+    },
+    {
+      "title": "Can your cat recognise you by scent? New study shows it’s likely",
+      "url": "https://theconversation.com/can-your-cat-recognise-you-by-scent-new-study-shows-its-likely-257614",
+      "snippet": "May 28, 2025 · And now, thanks to this most recent study, we know that cats can identify their people by smell, something they also …"
+    },
+    {
+      "title": "How Cats React to Human Scents - naturalsciencenews.com",
+      "url": "https://naturalsciencenews.com/article/11105",
+      "snippet": "May 31, 2025 · Cats sniff unknown humans more than their owners, showing a side preference in their nostrils that hints at brain …"
+    },
+    {
+      "title": "Do cats recognize each other by smell? - The Institute for ...",
+      "url": "https://iere.org/do-cats-recognize-each-other-by-smell/",
+      "snippet": "Nov 2, 2025 · Yes, cats can distinguish between the scents of different people. They learn to associate specific scents with …"
+    }
+  ]
+}

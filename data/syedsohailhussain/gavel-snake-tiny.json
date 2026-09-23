@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "syedsohailhussain/gavel-snake-tiny",
+  "slug": "syedsohailhussain-gavel-snake-tiny",
+  "author": "syedsohailhussain",
+  "url": "https://huggingface.co/syedsohailhussain/gavel-snake-tiny",
+  "created_at": "2026-09-22T21:30:01.000Z",
+  "updated_at": "2026-09-22T23:08:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 341083755,
+  "storage_human": "341 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Somtoday Leerling & Ouder - Google Play 應用程式",
+      "url": "https://play.google.com/store/apps/details?id=nl.topicus.somtoday.leerling&hl=zh-TW",
+      "snippet": "有了 Somtoday 應用程序，您就可以掌握上學日的一切"
+    },
+    {
+      "title": "Somtoday Leerling & Ouder – Հավելվածներ Google Play-ում",
+      "url": "https://play.google.com/store/apps/details?id=nl.topicus.somtoday.leerling&hl=hy",
+      "snippet": "Somtoday. ձեր դպրոցական օրը գրպանում Somtoday հավելվածի միջոցով դուք ունեք ամեն ինչ ձեր դպրոցական օրվա համար: …"
+    },
+    {
+      "title": "Somtoday Leerling & Ouder - Google Play 上的应用",
+      "url": "https://play.google.com/store/apps/details?id=nl.topicus.somtoday.leerling&hl=zh",
+      "snippet": "有了 Somtoday 应用程序，您就可以掌握上学日的一切"
+    },
+    {
+      "title": "Somtoday Leerling & Ouder - Ứng dụng trên Google Play",
+      "url": "https://play.google.com/store/apps/details?id=nl.topicus.somtoday.leerling&hl=vi",
+      "snippet": "Với ứng dụng Somtoday, bạn có mọi thứ trong tay cho ngày học của mình"
+    },
+    {
+      "title": "Somtoday Leerling & Ouder – Праграмы ў Google Play",
+      "url": "https://play.google.com/store/apps/details?id=nl.topicus.somtoday.leerling&hl=be",
+      "snippet": "Somtoday: ваш школьны дзень у вашай кішэні З дадаткам Somtoday у вас будзе ўсё пад рукой для школьнага дня. Як студэнт …"
+    }
+  ]
+}

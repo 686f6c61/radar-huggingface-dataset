@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AmberHyunKIM/act_libero_goal_task0",
+  "slug": "amberhyunkim-act_libero_goal_task0",
+  "author": "AmberHyunKIM",
+  "url": "https://huggingface.co/AmberHyunKIM/act_libero_goal_task0",
+  "created_at": "2026-09-23T00:36:28.000Z",
+  "updated_at": "2026-09-23T00:54:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "libero",
+    "dataset:lerobot/libero",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51671687,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206727404,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kosovo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kosovo",
+      "snippet": "Kosovo, [d] officially the Republic of Kosovo, [e] is a landlocked country in Southeast Europe with partial diplomatic recognition. It is …"
+    },
+    {
+      "title": "Kosovo | History, Map, Flag, Population, Languages, & Capital",
+      "url": "https://www.britannica.com/place/Kosovo",
+      "snippet": "5 days ago · In the early 20th century Kosovo was incorporated into Serbia (later part of Yugoslavia). By the second half of the …"
+    },
+    {
+      "title": "History of Kosovo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/History_of_Kosovo",
+      "snippet": "On 17 February 2008, representatives of the people of Kosovo [1] unilaterally declared Kosovo's independence and subsequently …"
+    },
+    {
+      "title": "Kosovo – Country Profile: Population, Area, Currency & Key Facts",
+      "url": "https://www.geocountries.com/kosovo",
+      "snippet": "1 hour ago · Discover comprehensive geographic, demographic and strategic intelligence for Kosovo, featuring detailed insights into …"
+    },
+    {
+      "title": "Kosovo - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/Kosovo",
+      "snippet": "Until 2008, Kosovo was a part of Serbia. On 17 February 2008, Kosovo declared independence and said it was now a separate …"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "SaniaKhalid/tinyllama-trl-merged",
+  "slug": "saniakhalid-tinyllama-trl-merged",
+  "author": "SaniaKhalid",
+  "url": "https://huggingface.co/SaniaKhalid/tinyllama-trl-merged",
+  "created_at": "2026-09-22T22:00:33.000Z",
+  "updated_at": "2026-09-22T22:00:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "tinyllama",
+    "trl",
+    "merged",
+    "lora",
+    "fine-tuned",
+    "pytorch",
+    "causal-lm",
+    "conversational",
+    "en",
+    "dataset:arif-butt/arifbutt_dataset",
+    "base_model:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "base_model:adapter:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 2200119664,
+  "storage_human": "2.2 GB",
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "50,000+ Best Cat Photos · 100% Free Download - Pexels",
+      "url": "https://www.pexels.com/search/cat/",
+      "snippet": "Download and use 50,000+ Cat stock photos for free. Thousands of new images every day Completely Free to Use High-quality …"
+    },
+    {
+      "title": "200+ Cat Pictures & Images [HD] | Download Free Images & Stock Photos ...",
+      "url": "https://unsplash.com/s/photos/cat",
+      "snippet": "Download the perfect cat pictures. Find over 100+ of the best free cat images. Free for commercial use No attribution required …"
+    },
+    {
+      "title": "60,000+ Best Free Cat Pictures & Images [HD] - Pixabay",
+      "url": "https://pixabay.com/images/search/cat/",
+      "snippet": "60,000+ mischievous, playful and adorable cat photos & pictures. Download your favorite royalty free cat images in HD to 4K quality …"
+    },
+    {
+      "title": "Cat Wallpapers (148 images) - WallpaperCat",
+      "url": "https://wallpapercat.com/cat-wallpapers",
+      "snippet": "Download the best Cat Wallpapers, all available in 4K and Full HD: Siamese, Persian, Himalayan, British Shorthair, Kitten, Nyan..."
+    },
+    {
+      "title": "30,000+ Free Cute Cat & Cat Images - Pixabay",
+      "url": "https://pixabay.com/images/search/cute%20cat/",
+      "snippet": "Thousands of cute cat images to choose from. Free high resolution picture download. Find images of Cute Cat Royalty-free No …"
+    }
+  ]
+}

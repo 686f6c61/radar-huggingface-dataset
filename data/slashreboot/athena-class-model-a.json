@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "slashreboot/athena-class-model-a",
+  "slug": "slashreboot-athena-class-model-a",
+  "author": "slashreboot",
+  "url": "https://huggingface.co/slashreboot/athena-class-model-a",
+  "created_at": "2026-09-14T01:22:42.000Z",
+  "updated_at": "2026-09-22T23:00:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "Image-Text-to-Text",
+    "Transformers",
+    "gemma4",
+    "long-context",
+    "self-modeling",
+    "en",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 7,
+  "downloads_30d": 36603,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 32637310300,
+  "storage_human": "32.6 GB",
+  "base_model": "google/gemma-4-31B-it, unsloth/gemma-4-31B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L&G Cyber Security UCITS ETF | ISPY | IE00BYPLS672 - justETF",
+      "url": "https://www.justetf.com/it/etf-profile.html?isin=IE00BYPLS672",
+      "snippet": "Sep 28, 2015 · Il L&G Cyber Security UCITS ETF replica l'indice ISE Cyber Security UCITS. L’indice ISE Cyber Security UCITS …"
+    },
+    {
+      "title": "L&G Cyber Security UCITS ETF | A14WU5 | IE00BYPLS672 - justETF",
+      "url": "https://www.justetf.com/en/etf-profile.html?isin=IE00BYPLS672",
+      "snippet": "Sep 28, 2015 · The L&G Cyber Security UCITS ETF seeks to track the ISE Cyber Security UCITS index. The ISE Cyber Security …"
+    },
+    {
+      "title": "L&G Cyber Security UCITS ETF | A14WU5 | IE00BYPLS672 - justETF",
+      "url": "https://www.justetf.com/de/etf-profile.html?isin=IE00BYPLS672",
+      "snippet": "Der L&G Cyber Security UCITS ETF bildet den ISE Cyber Security UCITS Index nach. Der ISE Cyber Security UCITS Index bietet …"
+    },
+    {
+      "title": "L&G Cyber Security Innovation UCITS ETF USD Acc - justETF",
+      "url": "https://www.justetf.com/en/etf-profile.html?isin=IE000ST40PX8",
+      "snippet": "Description The L&G Cyber Security Innovation UCITS ETF USD Acc seeks to track the Solactive Cyber Security Innovation index. …"
+    },
+    {
+      "title": "L&G Cyber Security UCITS ETF | USPY | IE00BYPLS672 - justETF",
+      "url": "https://www.justetf.com/fr/etf-profile.html?isin=IE00BYPLS672",
+      "snippet": "Sep 28, 2015 · Le L&G Cyber Security UCITS ETF reproduit l'index ISE Cyber Security UCITS. L'indice ISE Cyber Security UCITS …"
+    }
+  ]
+}

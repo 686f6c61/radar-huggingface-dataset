@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10",
+  "slug": "francesca9805-ita-latn-100mb-ppt-dp-10mb-packed-bfd_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10",
+  "created_at": "2026-09-22T22:10:32.000Z",
+  "updated_at": "2026-09-22T22:14:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/ita_latn_100mb",
+    "base_model:finetune:goldfish-models/ita_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 250736310,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/ita_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "100 chansons françaises années 80 - YouTube Music",
+      "url": "https://music.youtube.com/playlist?list=OLAK5uy_ndba_iOh-ORaD-284XdpWEIIwafMQfftk",
+      "snippet": "Quel souci la boétie ! Attention les enfants... Danger."
+    },
+    {
+      "title": "Musique Année 80 - Playlist Chansons Francaises",
+      "url": "https://www.youtube.com/playlist?list=PLun_CS7whKh6quHrLiNrApbDBq-EOspBc",
+      "snippet": "Musique Année 80 - Playlist Chansons Francaises by PHIFI1 - French singer • Playlist • 350 videos • 42,379,273 views"
+    },
+    {
+      "title": "La playlist Nostalgie Génération 80",
+      "url": "https://www.nostalgie.fr/playlists/nostalgie-la-playlist-generation-80",
+      "snippet": "Découvrez les Plus Grands Tubes qui ont marqué les années 80 !"
+    },
+    {
+      "title": "HITS ANNEES 80 | 001 | TUBES FRANCE Début de Soirée, Emile …",
+      "url": "https://www.youtube.com/watch?v=PHRZiAdbaE0",
+      "snippet": "Le Mix des Meilleurs Hits des Années 80 France !! Profitez de ces tubes et chansons françaises mixés par JAYLYZ ! A écouter à la …"
+    },
+    {
+      "title": "55 Meilleures chansons des années 80 (tubes intemporels et classiques)",
+      "url": "https://blackoutmusique.com/divertissement/les-meilleures-chansons-des-annees-80/",
+      "snippet": "May 11, 2023 · De nombreuses personnes ayant grandi en écoutant les meilleures chansons des années 80 ont souhaité …"
+    }
+  ]
+}

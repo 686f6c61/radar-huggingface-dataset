@@ -1,0 +1,115 @@
+{
+  "schema": 1,
+  "id": "jbrashear/jebadiah-4b-v1",
+  "slug": "jbrashear-jebadiah-4b-v1",
+  "author": "jbrashear",
+  "url": "https://huggingface.co/jbrashear/jebadiah-4b-v1",
+  "created_at": "2026-09-22T23:02:50.000Z",
+  "updated_at": "2026-09-22T23:02:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "decision-model",
+    "system-one",
+    "calibrated-probabilities",
+    "typed-decisions",
+    "ainode",
+    "en",
+    "dataset:LocalLLaMA/typed-decisions",
+    "dataset:nvidia/HelpSteer2",
+    "dataset:mteb/summeval",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 152488489,
+  "storage_human": "152 MB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Jevals suite 0.1.0, PubMedQA (noul)",
+      "metric": null,
+      "value": 86.7
+    },
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Jevals suite 0.1.0, PubMedQA (noul)",
+      "metric": null,
+      "value": 59
+    },
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Jevals suite 0.1.0, Banking77 (choice, 77-way)",
+      "metric": null,
+      "value": 68.3
+    },
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Jevals suite 0.1.0, Banking77 (choice, 77-way)",
+      "metric": null,
+      "value": 55.6
+    },
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Jevals suite 0.1.0, HelpSteer2 helpfulness (score)",
+      "metric": null,
+      "value": 9.2
+    },
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Nimble public human-labelled subsets (13, macro accuracy)",
+      "metric": null,
+      "value": 75.9
+    }
+  ],
+  "sources": [
+    {
+      "title": "apk文件怎么在电脑上打开 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/2d5afd69b95401c5a3e28e52.html",
+      "snippet": "Dec 24, 2019 · apk是安卓系统的应用文件格式，有时候使用apk文件的时候，要在电脑上打开，那么apk文件怎么在电脑上打开呢，现 …"
+    },
+    {
+      "title": "Where does Telegram Web save files on PC? : r/Telegram",
+      "url": "https://www.reddit.com/r/Telegram/comments/mggzzo/where_does_telegram_web_save_files_on_pc/",
+      "snippet": "Mar 30, 2021 · I'm not using the Telegram application for PC. I'm using Telegram Web in Chrome. So, when I download a video, …"
+    },
+    {
+      "title": "No longer have an option for SMS verification on Telegram web",
+      "url": "https://www.reddit.com/r/Telegram/comments/molsxy/no_longer_have_an_option_for_sms_verification_on/",
+      "snippet": "Apr 11, 2021 · I mostly use Telegram web, and used to have an option to receive an SMS code. Note that I only use it on pc's, can …"
+    },
+    {
+      "title": "剑网三成都捕快任务《钱庄血案》全图文攻略-百度经验",
+      "url": "https://jingyan.baidu.com/article/5970355285835a8fc00740bc.html",
+      "snippet": "Oct 29, 2018 · 重置版成都捕快任务《钱庄血案》全图文攻略"
+    },
+    {
+      "title": "r/Telegram on Reddit: This bot was DMCA'd by Telegram. Are there …",
+      "url": "https://www.reddit.com/r/Telegram/comments/jkuby7/this_bot_was_dmcad_by_telegram_are_there_any/",
+      "snippet": "Oct 30, 2020 · This bot was DMCA'd by Telegram. Are there any other clients on the Android platform that can access these bots? …"
+    }
+  ]
+}

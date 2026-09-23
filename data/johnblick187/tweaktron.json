@@ -5,7 +5,7 @@
   "author": "Johnblick187",
   "url": "https://huggingface.co/Johnblick187/tweaktron",
   "created_at": "2026-09-17T01:02:02.000Z",
-  "updated_at": "2026-09-18T09:21:00.000Z",
+  "updated_at": "2026-09-22T07:45:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 57,
+  "downloads_30d": 62,
   "trending_score": 0,
   "parameters": 3469315328,
   "parameters_human": "3.47B",
-  "storage_bytes": 6938640136,
-  "storage_human": "6.9 GB",
+  "storage_bytes": 6951449456,
+  "storage_human": "7.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

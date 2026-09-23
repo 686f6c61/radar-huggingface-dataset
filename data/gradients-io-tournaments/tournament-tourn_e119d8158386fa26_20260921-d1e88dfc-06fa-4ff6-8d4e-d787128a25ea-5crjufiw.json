@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-d1e88dfc-06fa-4ff6-8d4e-d787128a25ea-5CRjufiW",
+  "slug": "gradients-io-tournaments-tournament-tourn_e119d8158386fa26_20260921-d1e88dfc-06fa-4ff6-8d4e-d787128a25ea-5crjufiw",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-d1e88dfc-06fa-4ff6-8d4e-d787128a25ea-5CRjufiW",
+  "created_at": "2026-09-22T22:35:08.000Z",
+  "updated_at": "2026-09-22T22:35:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/387bbc4366e3224a",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2595167020,
+  "storage_human": "2.6 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "医療費控除について - 厚木市",
+      "url": "https://www.city.atsugi.kanagawa.jp/soshiki/shiminzeika/8/20895.html",
+      "snippet": "Apr 1, 2021 · 医療費控除とは その年の1月1日から12月31日までの間に、本人または生計を一にする配偶者、その他の親族のために …"
+    },
+    {
+      "title": "医療費控除を受ける方へ｜令和7年分 確定申告特集",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tokushu/keisubetsu/iryou-koujo.htm",
+      "snippet": "医療費控除を受ける方へ 医療費控除とは 申告する方やその方と生計を一にする配偶者その他の親族のために、令和7年中に支払っ …"
+    },
+    {
+      "title": "医療費控除を受けられる方へ",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2024/pdf/008.pdf",
+      "snippet": "申告する方やその方と生計を一にする配偶者その他の親族のために、医療費控除を受けようとするその年中に支払った医療費があ …"
+    },
+    {
+      "title": "葬祭費 - 厚木市",
+      "url": "https://www.city.atsugi.kanagawa.jp/soshiki/kokuhonenkinka/5/2/412.html",
+      "snippet": "Apr 1, 2021 · 厚木市国民健康保険加入者が死亡したとき、葬儀費用を負担した方に支給されます。 他の健康保険などから葬祭費に …"
+    },
+    {
+      "title": "税理士ドットコム - 医療費控除は亡くなった家族の分も合算 ...",
+      "url": "https://www.zeiri4.com/c_5/c_1063/q_151408/",
+      "snippet": "Jan 30, 2025 · 同一生計の家族が亡くなり準確定申告は必要ない状況だったのでやらなかった場合、翌年の確定申告で医療費控除は …"
+    }
+  ]
+}

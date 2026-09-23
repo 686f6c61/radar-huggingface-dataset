@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e15",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l0-e15",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e15",
+  "created_at": "2026-09-22T21:15:25.000Z",
+  "updated_at": "2026-09-22T21:15:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dacia Forum - Das Dacia Forum für technische Probleme",
+      "url": "https://www.motor-talk.de/forum/dacia-b402.html",
+      "snippet": "Aug 20, 2026 · Das Dacia Forum für technische Probleme, Erfahrungen, Tests und Bilder mit mehr als 734 Beiträgen in der Auto …"
+    },
+    {
+      "title": "Dacia Sandero Forum - DJF ab 2008 » 291 Themen | MOTOR-TALK",
+      "url": "https://www.motor-talk.de/forum/dacia-sandero-b1250.html",
+      "snippet": "Jan 6, 2026 · Das Dacia Sandero Forum für technische Probleme, Erfahrungen, Tests und Bilder mit mehr als 291 Beiträgen in der …"
+    },
+    {
+      "title": "Sandero Model 2026 | Il Forum di Quattroruote",
+      "url": "https://forum.quattroruote.it/threads/sandero-model-2026.151158/",
+      "snippet": "Feb 14, 2026 · Stai usando un browser molto obsoleto. Puoi incorrere in problemi di visualizzazione di questo e altri siti oltre che in …"
+    },
+    {
+      "title": "Il Forum di Quattroruote",
+      "url": "https://forum.quattroruote.it/",
+      "snippet": "Feb 26, 2026 · Dacia Discussioni 654 Messaggi 9,2K M Sandero Stepway: differenze nelle prove dinamiche tra 2021 e 2025 28 …"
+    },
+    {
+      "title": "Welches ÖL für Dacia Sandero Stepway? - MOTOR-TALK",
+      "url": "https://www.motor-talk.de/forum/welches-oel-fuer-dacia-sandero-stepway-t3006954.html",
+      "snippet": "Dec 2, 2010 · Habe vor mir einen Dacia Sandero Stepway 1.6 MPI zu kaufen. Da ich ihn im Ausland holen will und dann eine längere …"
+    }
+  ]
+}

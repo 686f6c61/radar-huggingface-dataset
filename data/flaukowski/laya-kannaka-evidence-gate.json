@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "flaukowski/laya-kannaka-evidence-gate",
+  "slug": "flaukowski-laya-kannaka-evidence-gate",
+  "author": "flaukowski",
+  "url": "https://huggingface.co/flaukowski/laya-kannaka-evidence-gate",
+  "created_at": "2026-09-22T23:33:44.000Z",
+  "updated_at": "2026-09-22T23:34:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "laya",
+    "typed-decisions",
+    "memory",
+    "kannaka",
+    "evidence-gate",
+    "longmemeval",
+    "en",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609220,
+  "storage_human": "843 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何下载到卡巴斯基免费版？ - 知乎",
+      "url": "https://www.zhihu.com/question/386623091",
+      "snippet": "截至2023/3/29，在 卡巴斯基免费版 下载页面点击立即下载后会跳转到“ 免费试用版 ”的下载界面，所以官网无法直接下载到免费版的 …"
+    },
+    {
+      "title": "Byggahus.se - på konsumentens sida",
+      "url": "https://www.byggahus.se/",
+      "snippet": "På Byggahus.se hittar du allt om att bygga och renovera. Vi är oberoende och på konsumentens sida. Ställ frågor till våra experter …"
+    },
+    {
+      "title": "Vad kostar det att dränera ett hus? | Byggahus.se",
+      "url": "https://www.byggahus.se/bygga/vad-kostar-dranera",
+      "snippet": "Sep 7, 2026 · Vad kostar det att dränera ett hus? Se aktuella prisexempel per löpmeter, vad som påverkar kostnaden och hur ROT …"
+    },
+    {
+      "title": "HDMI、DVI、VGA、DP 四种接口有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/327384357",
+      "snippet": "以上就是楼楼说的HDMI / DVI / VGA / DP接口的样子了 ，这些接口在我们的电脑、电视、显示器、投影仪等电子设备上是很常见的， …"
+    },
+    {
+      "title": "5 billiga robotgräsklippare - det här får du för pengarna",
+      "url": "https://www.byggahus.se/5-billiga-robotgrasklippare-det-har-far-du-for-pengarna",
+      "snippet": "Apr 15, 2026 · Vågar du köpa en billig robotgräsklippare? Vi jämför fem budgetmodeller med lite olika funktioner, och jämför vad du …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/hin-deva-100mb-ppt-Dp-100mb-packed-bfd_seed10",
+  "slug": "francesca9805-hin-deva-100mb-ppt-dp-100mb-packed-bfd_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/hin-deva-100mb-ppt-Dp-100mb-packed-bfd_seed10",
+  "created_at": "2026-09-22T23:34:17.000Z",
+  "updated_at": "2026-09-22T23:38:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/hin_deva_100mb",
+    "base_model:finetune:goldfish-models/hin_deva_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 251077387,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/hin_deva_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hoteles.com - Ofertas y descuentos para reservaciones en hoteles de ...",
+      "url": "https://www.hoteles.com/",
+      "snippet": "Hoteles.com | Encuentra hoteles baratos y descuentos al reservar en Hoteles.com. Compara ofertas y promociones, y lee …"
+    },
+    {
+      "title": "Hoteles.com - Ofertas y promociones para reservas en hoteles de lujo ...",
+      "url": "https://es.hoteles.com/",
+      "snippet": "En Hoteles.com encuentra miles de ofertas en mas de 240 000 hoteles, desde hoteles de lujo hasta hoteles mas económicos"
+    },
+    {
+      "title": "Los mejores hoteles de Madrid desde 62 € – Hoteles.com",
+      "url": "https://es.hoteles.com/de457987/hoteles-madrid-espana/",
+      "snippet": "Cancelación gratis en una selección de hoteles. ¡Busca tu hotel en Madrid! Consulta las 18.825 opiniones de viajeros. Acumula 10 …"
+    },
+    {
+      "title": "Hoteles en Oaxaca",
+      "url": "https://www.hoteles.com/de1633701/hoteles-oaxaca-mexico/",
+      "snippet": "Cancela sin cargo en hoteles seleccionados. ¿Buscas un hotel perfecto en Oaxaca? Hoteles.com tiene los mejores hoteles en …"
+    },
+    {
+      "title": "Los mejores hoteles en Venado Tuerto, Santa Fe - Hoteles.com",
+      "url": "https://ar.hoteles.com/de10380646/hoteles-venado-tuerto-argentina/",
+      "snippet": "Cancela sin cargo en hoteles seleccionados. Hoteles en Venado Tuerto al mejor precio. Reserva con hasta 30% de descuento y …"
+    }
+  ]
+}

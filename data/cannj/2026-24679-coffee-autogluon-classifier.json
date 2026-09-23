@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cannj/2026-24679-coffee-autogluon-classifier",
+  "slug": "cannj-2026-24679-coffee-autogluon-classifier",
+  "author": "cannj",
+  "url": "https://huggingface.co/cannj/2026-24679-coffee-autogluon-classifier",
+  "created_at": "2026-09-23T01:01:24.000Z",
+  "updated_at": "2026-09-23T02:18:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "autogluon",
+  "languages": [],
+  "tags": [
+    "autogluon",
+    "automl",
+    "tabular",
+    "binary-classification",
+    "classical-machine-learning",
+    "coffee",
+    "tabular-classification",
+    "dataset:ssg1/coffee-bags-tabular",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1865284,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tout le casting du film La Chambre d’à côté - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm-326074/casting/",
+      "snippet": "Retrouvez tout le casting du film La Chambre d’à côté réalisé par Pedro Almodóvar avec Tilda Swinton, Julianne Moore, John Turturro"
+    },
+    {
+      "title": "La Chambre d'à côté — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/La_Chambre_d%27%C3%A0_c%C3%B4t%C3%A9",
+      "snippet": "La Chambre d'à côté (espagnol : La habitación de al lado ; anglais : The Room Next Door) est un film espagnol écrit et réalisé en …"
+    },
+    {
+      "title": "Casting du film La Chambre d'à côté | Télé-Loisirs",
+      "url": "https://www.programme-tv.net/cinema/28674641-la-chambre-da-cote/casting/",
+      "snippet": "Retrouvez tout le casting du film La Chambre d'à côté | Pedro Almodóvar | Tilda Swinton, Julianne Moore, John Turturro"
+    },
+    {
+      "title": "Casting La Chambre d'à côté : acteurs, réalisateur",
+      "url": "https://tv-programme.com/la-chambre-d-a-cote-film/casting",
+      "snippet": "Retrouvez le casting de La Chambre d'à côté : distribution acteurs, réalisateurs, scénaristes et fiche technique."
+    },
+    {
+      "title": "La Chambre d'à côté : portrait des acteurs et personnages",
+      "url": "https://www.ivenec.eu/serie-cinema/distribution-chambre-acteurs/",
+      "snippet": "Découvrez le casting complet de La Chambre d'à côté : acteurs, actrices et personnages clés de cette série captivante."
+    }
+  ]
+}

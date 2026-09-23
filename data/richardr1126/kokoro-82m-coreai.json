@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "richardr1126/Kokoro-82M-CoreAI",
+  "slug": "richardr1126-kokoro-82m-coreai",
+  "author": "richardr1126",
+  "url": "https://huggingface.co/richardr1126/Kokoro-82M-CoreAI",
+  "created_at": "2026-09-22T23:48:15.000Z",
+  "updated_at": "2026-09-22T23:48:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "coreai",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreai",
+    "text-to-speech",
+    "tts",
+    "core-ai",
+    "ios",
+    "kokoro",
+    "en",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:finetune:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 335531370,
+  "storage_human": "336 MB",
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT Plan | Plus",
+      "url": "https://chatgpt.com/plans/plus/",
+      "snippet": "How is ChatGPT Plus different from the Free plan? Plus includes stronger reasoning, expanded access to ChatGPT Work and …"
+    },
+    {
+      "title": "Forfait ChatGPT | Plus",
+      "url": "https://chatgpt.com/fr-FR/plans/plus/",
+      "snippet": "Découvrez comment ChatGPT Pro vous offre un accès complet à nos outils les plus performants, avec un raisonnement de niveau …"
+    },
+    {
+      "title": "Introducing ChatGPT Plus - OpenAI",
+      "url": "https://openai.com/index/chatgpt-plus/",
+      "snippet": "Feb 1, 2023 · We’re launching a pilot subscription plan for ChatGPT, a conversational AI that can chat with you, answer follow-up …"
+    },
+    {
+      "title": "Nouveau : ChatGPT Plus - OpenAI",
+      "url": "https://openai.com/fr-FR/index/chatgpt-plus/",
+      "snippet": "Feb 1, 2023 · ChatGPT Plus est disponible pour nos utilisateurs aux États-Unis et dans le reste du monde. Nous ne comptons pas …"
+    },
+    {
+      "title": "On a testé ChatGPT Plus : que vaut la version payante de l'IA - 01net",
+      "url": "https://www.01net.com/actualites/teste-chatgpt-plus-vaut-version-payante.html",
+      "snippet": "Jun 8, 2025 · Début plus de deux ans, OpenAI propose une version payante de son intelligence artificielle générative, ChatGPT …"
+    }
+  ]
+}

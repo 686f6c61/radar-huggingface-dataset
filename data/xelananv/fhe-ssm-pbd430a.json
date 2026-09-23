@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "xelananv/fhe-ssm-pbd430a",
+  "slug": "xelananv-fhe-ssm-pbd430a",
+  "author": "xelananv",
+  "url": "https://huggingface.co/xelananv/fhe-ssm-pbd430a",
+  "created_at": "2026-09-22T22:30:35.000Z",
+  "updated_at": "2026-09-23T00:58:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "fully-homomorphic-encryption",
+    "fhe",
+    "ckks",
+    "state-space-model",
+    "recurrent",
+    "language-model",
+    "privacy",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:Salesforce/wikitext",
+    "dataset:sedthh/gutenberg_english",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5272981926,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cybersecurity Best Practices | Cybersecurity and Infrastructure ... - CISA",
+      "url": "https://www.cisa.gov/topics/cybersecurity-best-practices",
+      "snippet": "Sep 3, 2026 · Cybersecurity Best Practices CISA provides information on cybersecurity best practices to help individuals and …"
+    },
+    {
+      "title": "Home Page | CISA",
+      "url": "https://www.cisa.gov/",
+      "snippet": "Sep 9, 2026 · October is just around the corner! Get ready for Cybersecurity Awareness Month with tools, tips, and other resources …"
+    },
+    {
+      "title": "Cybersecurity Awareness Month - CISA",
+      "url": "https://www.cisa.gov/cybersecurity-awareness-month",
+      "snippet": "Secure Your Organization This Cybersecurity Awareness Month, commit to having better cybersecurity in your organization to …"
+    },
+    {
+      "title": "Cybersecurity Alerts & Advisories - CISA",
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories",
+      "snippet": "Aug 11, 2026 · Cybersecurity Advisory: Provides detailed information on cyber threats, including threat actor tactics, techniques, and …"
+    },
+    {
+      "title": "About CISA | CISA",
+      "url": "https://www.cisa.gov/about",
+      "snippet": "About the CISA Logo “The blue outer ring and the inner red ring indicate CISA’s unity with DHS and a nod to our efforts to cut …"
+    }
+  ]
+}

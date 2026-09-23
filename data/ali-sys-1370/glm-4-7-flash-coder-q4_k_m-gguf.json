@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ali-sys-1370/GLM-4.7-Flash-Coder-Q4_K_M-GGUF",
+  "slug": "ali-sys-1370-glm-4-7-flash-coder-q4_k_m-gguf",
+  "author": "ali-sys-1370",
+  "url": "https://huggingface.co/ali-sys-1370/GLM-4.7-Flash-Coder-Q4_K_M-GGUF",
+  "created_at": "2026-09-22T21:59:52.000Z",
+  "updated_at": "2026-09-22T22:01:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "dataset:whitecircle/swe-rebench-v2-glm-5.1-pi-agent-successful-traces",
+    "base_model:whitecircle/GLM-4.7-Flash-Coder",
+    "base_model:quantized:whitecircle/GLM-4.7-Flash-Coder",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29943393920,
+  "parameters_human": "29.94B",
+  "storage_bytes": 18132718624,
+  "storage_human": "18.1 GB",
+  "base_model": "whitecircle/GLM-4.7-Flash-Coder",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "بنات اليمن - Facebook",
+      "url": "https://www.facebook.com/groups/700164259193031/",
+      "snippet": "Apr 28, 2025 · ‎ ** انضم/ي إلى عائلتنا الجديدة! ** ** (بنات وشباب | تعارف باحترام وتفاعل إيجابي)** هل تبحث عن: **صداقات متنوعة** من مختلف الخلفيات؟ **نقاشات..."
+    },
+    {
+      "title": "جروبات واتساب يمنية | Facebook",
+      "url": "https://www.facebook.com/groups/744735869642124/",
+      "snippet": "1 day ago · ‎ قروبات واتساب بنات يمنية إنظم الان إلى مجموعة واتساب يمنية لتعارف وصداقة وجروبات ترفيهية وجروبات رياضية والمزيد من قروبات. ‎"
+    },
+    {
+      "title": "قروبات واتساب بنات في عدن، اليمن | تواصل مباشر الآن",
+      "url": "https://nabdonline.com/yemen/aden/whatsapp-groups/",
+      "snippet": "أفضل بديل لقروبات واتساب بنات في عدن. تواصل آمن ومباشر مع أعضاء حقيقيين عبر نبض. انضم لآلاف المستخدمين في عدن على تطبيق نبض."
+    },
+    {
+      "title": "أرقام بنات واتساب في عدن، اليمن | تواصل مباشر الآن | نبض Nabd",
+      "url": "https://nabdonline.com/yemen/aden/girls-numbers/",
+      "snippet": "قائمة متجددة لأرقام بنات واتساب متصل الآن في عدن. تواصل مباشر ودردشة فورية. انضم لآلاف المستخدمين في عدن على تطبيق نبض."
+    },
+    {
+      "title": "روابط مجموعات واتساب (قروبات واتس) – Telegram",
+      "url": "https://t.me/s/GroupsWhatsaps?before=1298",
+      "snippet": "56.9K 10:50 November 14, 2023 روابط مجموعات واتساب (قروبات واتس) قروب واتس دردشة مراهقين | يمنع انضمام تحت 18 🔞👇🙊 https://t.co/Qr4YZQfW2m …"
+    }
+  ]
+}

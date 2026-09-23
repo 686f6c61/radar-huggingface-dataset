@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "AbdelrahmanAkl/bart-cnn-dailymail-summarization",
+  "slug": "abdelrahmanakl-bart-cnn-dailymail-summarization",
+  "author": "AbdelrahmanAkl",
+  "url": "https://huggingface.co/AbdelrahmanAkl/bart-cnn-dailymail-summarization",
+  "created_at": "2026-09-22T21:05:03.000Z",
+  "updated_at": "2026-09-22T21:46:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bart",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 139470681,
+  "parameters_human": "139.5M",
+  "storage_bytes": 557912620,
+  "storage_human": "558 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brutto-Netto-Rechner - haude",
+      "url": "http://onlinerechner.haude.at/Brutto-Netto-Rechner/",
+      "snippet": "Mit dem Brutto-Netto-Rechner können Sie rasch das Netto- bzw. Bruttogehalt und die Dienstgeberkosten berechnen! Alle Lohn- bzw. …"
+    },
+    {
+      "title": "BMF – Brutto-Netto-Rechner - haude",
+      "url": "https://onlinerechner.haude.at/BMF-Brutto-Netto-Rechner/",
+      "snippet": "Berechnen Sie mit dem Brutto-Netto-Rechner des Bundesministeriums für Finanzen Ihr monatliches/jährliches, Brutto- oder …"
+    },
+    {
+      "title": "Online-Rechner | haude electronica",
+      "url": "https://shop.haude.at/online-rechner/",
+      "snippet": "In Übereinstimmung mit der jeweils aktuellen österreichischen Gesetzeslage und Steuersituation können Sie nicht nur Brutto- und …"
+    },
+    {
+      "title": "Online Brutto-Netto-Rechner der Arbeiterkammern",
+      "url": "https://bruttonetto.arbeiterkammer.at/",
+      "snippet": "Wie viel vom Bruttogehalt am Ende tatsächlich in der Tasche bleibt, ist oft gar nicht so leicht zu berechnen. Der Brutto-Netto …"
+    },
+    {
+      "title": "Berechnungsprogramme - Bundesministerium für Finanzen",
+      "url": "https://www.bmf.gv.at/services/berechnungsprogramme.html",
+      "snippet": "Das Finanzministerium stellt Ihnen dazu Berechnungsprogramme zur Verfügung. Mit den Steuerberechnungsprogrammen können …"
+    }
+  ]
+}

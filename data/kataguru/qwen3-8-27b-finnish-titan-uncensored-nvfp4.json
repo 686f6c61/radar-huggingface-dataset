@@ -5,7 +5,7 @@
   "author": "kataguru",
   "url": "https://huggingface.co/kataguru/Qwen3.8-27B-Finnish-Titan-Uncensored-NVFP4",
   "created_at": "2026-09-22T12:34:32.000Z",
-  "updated_at": "2026-09-22T12:37:36.000Z",
+  "updated_at": "2026-09-22T15:47:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -47,8 +47,8 @@
   "trending_score": 0,
   "parameters": 19135892976,
   "parameters_human": "19.14B",
-  "storage_bytes": 27829577404,
-  "storage_human": "27.8 GB",
+  "storage_bytes": 28678977828,
+  "storage_human": "28.7 GB",
   "base_model": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
   "formats": [
     "safetensors"

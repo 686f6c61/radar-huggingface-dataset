@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/urd-arab-100mb-ppt-Dp-100mb-packed-bfd_seed455",
+  "slug": "francesca9805-urd-arab-100mb-ppt-dp-100mb-packed-bfd_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/urd-arab-100mb-ppt-Dp-100mb-packed-bfd_seed455",
+  "created_at": "2026-09-23T00:35:13.000Z",
+  "updated_at": "2026-09-23T00:38:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/urd_arab_100mb",
+    "base_model:finetune:goldfish-models/urd_arab_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 250821194,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/urd_arab_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Strictly Come Dancing — Digital Spy",
+      "url": "https://forums.digitalspy.com/categories/strictly-come-dancing",
+      "snippet": "1 day ago · Click here to check out Digital Spy's Strictly Come Dancing 2024 coverage, including breaking news and rumours for …"
+    },
+    {
+      "title": "Big Brother — Digital Spy",
+      "url": "https://forums.digitalspy.com/categories/big-brother",
+      "snippet": "Sep 10, 2026 · The UK's biggest and busiest Big Brother forum. Includes dedicated sub-forum for international versions."
+    },
+    {
+      "title": "DCUM Forum - DCUM Weblog",
+      "url": "https://www.dcurbanmom.com/jforum/forums/list.page",
+      "snippet": "1 day ago · General Parenting Discussion Discussions of topics not directly related to children of a specific age. Please post …"
+    },
+    {
+      "title": "DH wants me to be a \"hotwife\" - DCUM Weblog",
+      "url": "https://www.dcurbanmom.com/jforum/posts/list/45/1261194.page",
+      "snippet": "Mar 5, 2025 · Porn is odd in that what worked once won’t work again, so if you were satisfied on page one of porn hub fast-forward …"
+    },
+    {
+      "title": "Guide to A-level results day 2026 for university applicants",
+      "url": "https://www.thestudentroom.co.uk/results/guide-to-a-level-results-day-for-university-applicants",
+      "snippet": "Jun 30, 2023 · You should see your Hub update sometime in the morning. If it's getting towards lunchtime on results day and you're …"
+    }
+  ]
+}

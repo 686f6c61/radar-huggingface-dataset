@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "42ailab/Logics-Parsing-V3-GGUF",
+  "slug": "42ailab-logics-parsing-v3-gguf",
+  "author": "42ailab",
+  "url": "https://huggingface.co/42ailab/Logics-Parsing-V3-GGUF",
+  "created_at": "2026-09-22T22:09:45.000Z",
+  "updated_at": "2026-09-22T22:22:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ocr",
+    "document-parsing",
+    "llama.cpp",
+    "42model",
+    "image-text-to-text",
+    "zh",
+    "en",
+    "arxiv:2603.09677",
+    "base_model:Logics-MLLM/Logics-Parsing-V3",
+    "base_model:quantized:Logics-MLLM/Logics-Parsing-V3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1016829568,
+  "storage_human": "1.0 GB",
+  "base_model": "Logics-MLLM/Logics-Parsing-V3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://business.facebook.com/",
+      "snippet": "By logging in, you can navigate to all business tools like Meta Business Suite, Ads Manager and more to help you connect with your …"
+    },
+    {
+      "title": "Meta Business Suite: Manage Your Facebook & Instagram Marketing",
+      "url": "https://www.facebook.com/business/tools/meta-business-suite/",
+      "snippet": "Meta Business Suite is a one-stop shop where you can manage all of your marketing and advertising activities on Facebook and …"
+    },
+    {
+      "title": "Meta Business Suite - Facebook",
+      "url": "https://www.facebook.com/business/m/meta-business-suite/",
+      "snippet": "Meta Business Suite is a one-stop shop where you can manage all of your marketing and advertising activities on Facebook and …"
+    },
+    {
+      "title": "Log Into Facebook - Meta Business Suite",
+      "url": "https://business.facebook.com/login/web/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    },
+    {
+      "title": "Meta for Business: Marketing Solutions on Facebook and Instagram",
+      "url": "https://business.secure.facebook.com/business/",
+      "snippet": "Meta for Business provides marketing and advertising tools, tips, best practices, and case studies for using Facebook and Instagram …"
+    }
+  ]
+}

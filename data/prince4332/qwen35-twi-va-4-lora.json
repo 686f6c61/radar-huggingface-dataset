@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "prince4332/qwen35-twi-va-4-lora",
+  "slug": "prince4332-qwen35-twi-va-4-lora",
+  "author": "prince4332",
+  "url": "https://huggingface.co/prince4332/qwen35-twi-va-4-lora",
+  "created_at": "2026-09-22T23:07:30.000Z",
+  "updated_at": "2026-09-22T23:24:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2283900224,
+  "parameters_human": "2.28B",
+  "storage_bytes": 4588244538,
+  "storage_human": "4.6 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Python Web Frameworks 2026 Compared - reflex.dev",
+      "url": "https://reflex.dev/blog/top-python-web-frameworks/",
+      "snippet": "Jan 9, 2026 · A comprehensive comparison of Reflex, Django, Flask, Gradio, Streamlit, Dash, and FastAPI—the top Python web …"
+    },
+    {
+      "title": "Top 10 Python Frameworks [2025 Updated] - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/best-python-frameworks/",
+      "snippet": "Jul 23, 2025 · A Python framework is essentially a set of tools and libraries that help you build web applications, websites, or …"
+    },
+    {
+      "title": "Top 10 Python Web Development Frameworks in 2025",
+      "url": "https://www.browserstack.com/guide/top-python-web-development-frameworks",
+      "snippet": "May 18, 2026 · Get expert advice on choosing the best Python framework for startups, enterprise apps, or APIs, built for speed and …"
+    },
+    {
+      "title": "Awesome Python Web Frameworks - GitHub",
+      "url": "https://github.com/sfermigier/awesome-python-web-frameworks",
+      "snippet": "Falcon ★9804 - a reliable, high-performance Python web framework for building large-scale app backends and microservices. It …"
+    },
+    {
+      "title": "1. Web Frameworks for Python",
+      "url": "https://wiki.python.org/moin/WebFrameworks",
+      "snippet": "Reflex is the open-source framework empowering Python developers to build web apps faster. Build both your frontend and backend …"
+    }
+  ]
+}

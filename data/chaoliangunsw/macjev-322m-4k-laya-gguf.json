@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "chaoliangUNSW/MacJev-322M-4K-Laya-GGUF",
+  "slug": "chaoliangunsw-macjev-322m-4k-laya-gguf",
+  "author": "chaoliangUNSW",
+  "url": "https://huggingface.co/chaoliangUNSW/MacJev-322M-4K-Laya-GGUF",
+  "created_at": "2026-09-23T01:02:04.000Z",
+  "updated_at": "2026-09-23T01:11:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "modernbert",
+    "macos",
+    "jev",
+    "laya",
+    "decision-model",
+    "tool-routing",
+    "local-agents",
+    "text-classification",
+    "en",
+    "zh",
+    "base_model:chaoliangUNSW/MacJev-322M-4K-Laya",
+    "base_model:quantized:chaoliangUNSW/MacJev-322M-4K-Laya",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 306939648,
+  "parameters_human": "306.9M",
+  "storage_bytes": 723254798,
+  "storage_human": "723 MB",
+  "base_model": "chaoliangUNSW/MacJev-322M-4K-Laya",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/owa/Office365.com",
+      "snippet": ""
+    },
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/owa/schools.nyc.gov",
+      "snippet": ""
+    },
+    {
+      "title": "Outlook.com",
+      "url": "https://olmoauth.outlook.com/api/googleoauthredir/outlook-oauth://com.microsoft.office.outlook/android/google/oauth2redirect?state=33456429-8e5c-44a5-9cc4-6cbe85698cb0",
+      "snippet": ""
+    },
+    {
+      "title": "na01.safelinks.protection.outlook.com",
+      "url": "https://na01.safelinks.protection.outlook.com/apple-app-site-association",
+      "snippet": "{ \"applinks\": { \"apps\": [], \"details\": [ { \"appIDs\": [\"9KBH5RKYEW.com.microsoft.loop-dogfood\", \"SGGM6D27TK.com.microsoft.loop\"], …"
+    },
+    {
+      "title": "ps.outlook.com",
+      "url": "https://ps.outlook.com/Powershell",
+      "snippet": "Shërbimi Outlook për menaxhimin e email-eve dhe kalendarit tuaj."
+    }
+  ]
+}

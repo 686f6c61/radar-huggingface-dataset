@@ -5,7 +5,7 @@
   "author": "dianavdavidson",
   "url": "https://huggingface.co/dianavdavidson/whisper-medium_mucs_63022_ratio_25_45_lr_1e-4_lgid_hi_hinglish_mixed_scripts_FT",
   "created_at": "2026-09-20T19:07:53.000Z",
-  "updated_at": "2026-09-22T02:42:44.000Z",
+  "updated_at": "2026-09-22T23:41:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 8,
+  "downloads_30d": 46,
   "trending_score": 0,
   "parameters": 763857920,
   "parameters_human": "763.9M",
-  "storage_bytes": 18333271345,
-  "storage_human": "18.3 GB",
+  "storage_bytes": 30555448561,
+  "storage_human": "30.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

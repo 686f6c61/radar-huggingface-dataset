@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "flymy-ai/decision-2b-preview",
+  "slug": "flymy-ai-decision-2b-preview",
+  "author": "flymy-ai",
+  "url": "https://huggingface.co/flymy-ai/decision-2b-preview",
+  "created_at": "2026-09-23T00:01:58.000Z",
+  "updated_at": "2026-09-23T00:02:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "typed-decisions",
+    "lora",
+    "native-probabilities",
+    "research-preview",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:adapter:openbmb/MiniCPM5-2B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104779032,
+  "storage_human": "105 MB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Appeal a Ban | Activision Support",
+      "url": "https://support.activision.com/ban-appeal",
+      "snippet": "Permanent bans will only be overturned if we determine the infraction was due to your Activision account being hacked. Temporary …"
+    },
+    {
+      "title": "Account Security | Activision Support",
+      "url": "https://support.activision.com/account-security",
+      "snippet": "Aug 18, 2026 · Get help recovering a hacked Activision account. Details about a proactive measure to help protect player accounts. …"
+    },
+    {
+      "title": "Account & Security - Activision Support",
+      "url": "https://support.activision.com/au/en/account-security",
+      "snippet": "Aug 18, 2026 · What brings you here? An overview of the Call of Duty’s beta initiative to improve voice chat. Information is subject to …"
+    },
+    {
+      "title": "Sign in - Activision",
+      "url": "https://profile.activision.com/",
+      "snippet": "Sign in to your Activision account to manage your profile, security, and access across Call of Duty and other Activision titles."
+    },
+    {
+      "title": "Activision Ban Appeal (2026): How to Submit and Win Your Case",
+      "url": "https://windowsreport.com/activision-ban-appeal-how-to/",
+      "snippet": "Jul 11, 2025 · Got banned from Call of Duty or another Activision game? Whether it’s Warzone, Modern Warfare 3, or MW2, …"
+    }
+  ]
+}

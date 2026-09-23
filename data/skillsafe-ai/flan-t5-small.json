@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/flan-t5-small",
+  "slug": "skillsafe-ai-flan-t5-small",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/flan-t5-small",
+  "created_at": "2026-09-22T21:49:21.000Z",
+  "updated_at": "2026-09-22T21:49:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "t5",
+    "text2text-generation",
+    "skillsafe",
+    "browser",
+    "import",
+    "base_model:Xenova/flan-t5-small",
+    "base_model:quantized:Xenova/flan-t5-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 434371665,
+  "storage_human": "434 MB",
+  "base_model": "Xenova/flan-t5-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Track flights & prices - Computer - Travel Help - Google Help",
+      "url": "https://support.google.com/travel/answer/6235879?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Track flights & prices If you’re not ready to book a trip, you can use Google Flights to track flight prices based on specific flights, …"
+    },
+    {
+      "title": "Find plane tickets on Google Flights",
+      "url": "https://support.google.com/travel/answer/2475306?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "When you use Google Flights to find plane tickets, you can get the best fares for where and when you want to travel. Use Google …"
+    },
+    {
+      "title": "How to fix Edge and chrome driver errors of selenium with java project ...",
+      "url": "https://stackoverflow.com/questions/64660815/how-to-fix-edge-and-chrome-driver-errors-of-selenium-with-java-project",
+      "snippet": "Nov 3, 2020 · I downloaded edge driver release version 88 Imported selenium standalone server jar file to my java project. Trying to …"
+    },
+    {
+      "title": "How can I decode/recreate Google Flights Search URLs?",
+      "url": "https://stackoverflow.com/questions/68959917/how-can-i-decode-recreate-google-flights-search-urls",
+      "snippet": "Aug 27, 2021 · The Problem On Google Flights, search information is encoded in a URL parameter, presumably so users can share …"
+    },
+    {
+      "title": "Travel Help - Google Help",
+      "url": "https://support.google.com/travel/answer/9430556?hl=en",
+      "snippet": "Official Travel Help Center where you can find tips and tutorials on using Travel and other answers to frequently asked questions."
+    }
+  ]
+}

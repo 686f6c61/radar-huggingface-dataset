@@ -5,7 +5,7 @@
   "author": "BeRestoral",
   "url": "https://huggingface.co/BeRestoral/DualEmbRoformer-slav",
   "created_at": "2026-09-18T12:12:55.000Z",
-  "updated_at": "2026-09-20T11:13:57.000Z",
+  "updated_at": "2026-09-22T08:49:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 31,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": 83677565,
   "parameters_human": "83.7M",
-  "storage_bytes": 334730124,
-  "storage_human": "335 MB",
+  "storage_bytes": 669460248,
+  "storage_human": "669 MB",
   "base_model": null,
   "formats": [
     "safetensors"

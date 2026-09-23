@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/szl-triage-qwen3.5-0.8b-lora-study5",
+  "slug": "szlholdings-szl-triage-qwen3-5-0-8b-lora-study5",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/szl-triage-qwen3.5-0.8b-lora-study5",
+  "created_at": "2026-09-21T22:36:59.000Z",
+  "updated_at": "2026-09-23T02:16:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "unsloth",
+    "qwen3.5",
+    "structured-output",
+    "triage",
+    "reproducible-evaluation",
+    "experimental",
+    "text-generation",
+    "conversational",
+    "base_model:unsloth/Qwen3.5-0.8B",
+    "base_model:adapter:unsloth/Qwen3.5-0.8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 96,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 394810664,
+  "storage_human": "395 MB",
+  "base_model": "unsloth/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "تسجيل الدخول إلى Gmail ملاحظة: إذا سجّلت الدخول على جهاز كمبيوتر متاح للجميع، احرص على تسجيل الخروج قبل مغادرة جهاز الكمبيوتر. تعرَّف على كيفية تسجيل الدخول على جهاز لا تملكه."
+    },
+    {
+      "title": "تنزيل Google Chrome وتثبيته - جهاز الكمبيوتر - مساعدة متصفح Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "يمكنك تنزيل متصفّح الويب Chrome وتثبيته بدون أي رسوم، واستخدامه لتصفّح الويب. مراجعة متطلبات النظام لاستخدام Chrome"
+    },
+    {
+      "title": "تحميل واتساب ويب النسخة الرسمية للكمبيوتر الاصدار الأخير WhatsApp Web ...",
+      "url": "https://www.reddit.com/user/ahmed009009/comments/jxd4ng/%D8%AA%D8%AD%D9%85%D9%8A%D9%84_%D9%88%D8%A7%D8%AA%D8%B3%D8%A7%D8%A8_%D9%88%D9%8A%D8%A8_%D8%A7%D9%84%D9%86%D8%B3%D8%AE%D8%A9_%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_%D9%84%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1_%D8%A7%D9%84%D8%A7%D8%B5%D8%AF%D8%A7%D8%B1/",
+      "snippet": "الآن يمكنك تحميل واتساب ويب للكمبيوتر مجانا وبرابط مباشر باصداره الاخير لهشر مارس 2020 والاستمتاع بواتساب ويب على الكمبيوتر الخاص بك.حيث أن هناك الكثير يعانون من الأخطاء الكتابية على …"
+    },
+    {
+      "title": "واتساب ويب شرح تحميل واتس اب ويب للكمبيوتر : u/whatspluss",
+      "url": "https://www.reddit.com/user/whatspluss/comments/gan77o/%D9%88%D8%A7%D8%AA%D8%B3%D8%A7%D8%A8_%D9%88%D9%8A%D8%A8_%D8%B4%D8%B1%D8%AD_%D8%AA%D8%AD%D9%85%D9%8A%D9%84_%D9%88%D8%A7%D8%AA%D8%B3_%D8%A7%D8%A8_%D9%88%D9%8A%D8%A8_%D9%84%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1/",
+      "snippet": "Apr 30, 2020 · Posted by u/whatspluss - 1 vote and no comments"
+    },
+    {
+      "title": "تحديث Google Chrome - جهاز الكمبيوتر - مساعدة متصفح Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95414?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "للتأكد من أنك محمي بآخر تحديثات الأمان، بإمكان Google Chrome إجراء تحديث تلقائي في حال توفّر إصدار جديد من المتصفّح على جهازك. قبل التحديث، ننصحك بالتحقُّق مما إذا كان متصفِّح …"
+    }
+  ]
+}

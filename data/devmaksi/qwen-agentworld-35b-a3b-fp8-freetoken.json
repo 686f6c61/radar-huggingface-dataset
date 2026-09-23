@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "devmaksi/Qwen-AgentWorld-35B-A3B-FP8-Freetoken",
+  "slug": "devmaksi-qwen-agentworld-35b-a3b-fp8-freetoken",
+  "author": "devmaksi",
+  "url": "https://huggingface.co/devmaksi/Qwen-AgentWorld-35B-A3B-FP8-Freetoken",
+  "created_at": "2026-09-22T21:24:31.000Z",
+  "updated_at": "2026-09-22T21:36:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "qwen",
+    "world-model",
+    "agent",
+    "environment-simulation",
+    "text-generation",
+    "conversational",
+    "dataset:Qwen/AgentWorldBench",
+    "arxiv:2606.24597",
+    "base_model:Qwen/Qwen-AgentWorld-35B-A3B",
+    "base_model:quantized:Qwen/Qwen-AgentWorld-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 37134367030,
+  "storage_human": "37.1 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B-Base, Qwen/Qwen-AgentWorld-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supermercado Disco Online | Todo lo Que Necesitás",
+      "url": "https://www.disco.com.ar/",
+      "snippet": "Disco es un supermercado online en Argentina que ofrece alimentos, productos para el hogar y más con descuentos exclusivos."
+    },
+    {
+      "title": "Consultá Nuestras Ofertas en el Catálogo de Disco Digital",
+      "url": "https://www.disco.com.ar/ofertas-y-catalogo",
+      "snippet": "Explorá nuestras increíbles ofertas en el catálogo de Disco Digital. Llevate todo lo que necesitás para tu casa y comprá online que te …"
+    },
+    {
+      "title": "TRENET - Disco",
+      "url": "https://www.disco.com.ar/trenet",
+      "snippet": "Llegó Disco App ¡a la palma de tu mano! Sín límites de unidades, estés donde estés Usar app"
+    },
+    {
+      "title": "Informática y Tecnología - Disco",
+      "url": "https://www.disco.com.ar/electro/informatica",
+      "snippet": "¡Llevate artículos de Tecnología e Informática al mejor precio! Samsung, Lenovo, Vaio, HP y más, con retiro o envío a domicilio. …"
+    },
+    {
+      "title": "Mermeladas | Ofertas para tus Desayunos y Meriendas - Disco",
+      "url": "https://www.disco.com.ar/almacen/desayuno-y-merienda/mermeladas-y-jaleas",
+      "snippet": "Endulzá tus desayunos y meriendas con estas ofertas en mermeladas, dulces de frutas untables, mermeladas light y miel sin tacc. …"
+    }
+  ]
+}

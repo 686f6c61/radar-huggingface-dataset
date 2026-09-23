@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/opus-mt-en-es",
+  "slug": "skillsafe-ai-opus-mt-en-es",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/opus-mt-en-es",
+  "created_at": "2026-09-22T21:49:55.000Z",
+  "updated_at": "2026-09-22T21:50:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "marian",
+    "text2text-generation",
+    "skillsafe",
+    "browser",
+    "translation",
+    "import",
+    "base_model:Xenova/opus-mt-en-es",
+    "base_model:quantized:Xenova/opus-mt-en-es",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 505990260,
+  "storage_human": "506 MB",
+  "base_model": "Xenova/opus-mt-en-es",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carte Rue Didot, 75014 Paris : plan et infos pratiques - Mappy",
+      "url": "https://fr.mappy.com/plan/voie/rue-didot-75014-paris",
+      "snippet": "Trouvez l’adresse qui vous intéresse sur le plan de Rue Didot, 75014 Paris ou préparez un calcul d'itinéraire à partir de ou vers Rue …"
+    },
+    {
+      "title": "Rue Didot — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Rue_Didot",
+      "snippet": "La rue Didot est une voie située dans le 14e arrondissement de Paris, en France. Elle relie le boulevard Brune à la rue du Château."
+    },
+    {
+      "title": "Plan du quartier Rue Didot, 75014, Paris - RATP",
+      "url": "https://www.ratp.fr/plan-quartier?address=Rue+Didot%2C+75014%2C+Paris",
+      "snippet": "Découvrez le plan du quartier Rue Didot, 75014, Paris, ses stations et lignes de métro, bus, rer,..."
+    },
+    {
+      "title": "Itinéraire : - Rue Didot, 75014, Paris - RATP",
+      "url": "https://www.ratp.fr/itineraires/%26Rue%20Didot%2C%2075014%2C%20Paris",
+      "snippet": "Recherchez un itinéraire de la station à Rue Didot, 75014, Paris."
+    },
+    {
+      "title": "Paris : Quartier Didot, promenade du côté de Plaisance, le long des ...",
+      "url": "https://www.parisladouce.com/2018/02/paris-quartier-didot-promenade-du-cote.html?m=1",
+      "snippet": "Feb 17, 2018 · Le quartier Didot-Sud, au coeur de Plaisance, déploie, le long de la rue Didot, son paysage urbain pittoresque. Les …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "monate615",
   "url": "https://huggingface.co/monate615/perturb-sn26-v1",
   "created_at": "2026-09-22T17:26:39.000Z",
-  "updated_at": "2026-09-22T17:26:49.000Z",
+  "updated_at": "2026-09-22T21:37:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 119027848,
   "parameters_human": "119.0M",
-  "storage_bytes": 476270096,
-  "storage_human": "476 MB",
+  "storage_bytes": 952540192,
+  "storage_human": "953 MB",
   "base_model": null,
   "formats": [
     "safetensors"

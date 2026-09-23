@@ -5,7 +5,7 @@
   "author": "JesterbeanLTEA",
   "url": "https://huggingface.co/JesterbeanLTEA/sft-5g-rca-qwen3-1.7b",
   "created_at": "2026-09-16T06:26:28.000Z",
-  "updated_at": "2026-09-21T20:29:00.000Z",
+  "updated_at": "2026-09-22T12:32:06.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 10208520989,
-  "storage_human": "10.2 GB",
+  "storage_bytes": 10976755923,
+  "storage_human": "11.0 GB",
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"

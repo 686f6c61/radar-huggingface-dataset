@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "agk4444/sat-tutor-qwen2.5-7b-gguf",
+  "slug": "agk4444-sat-tutor-qwen2-5-7b-gguf",
+  "author": "agk4444",
+  "url": "https://huggingface.co/agk4444/sat-tutor-qwen2.5-7b-gguf",
+  "created_at": "2026-09-22T20:38:13.000Z",
+  "updated_at": "2026-09-22T22:30:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "sat",
+    "tutoring",
+    "math",
+    "llama-cpp",
+    "ollama",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683071008,
+  "storage_human": "4.7 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "15 місць, які варто відвідати у Львові - Bungalo",
+      "url": "https://bungalo.com.ua/ukraine/15-miscz-yaki-varto-vidvidaty-u-lvovi/",
+      "snippet": "Apr 18, 2026 · Краса та спадщина культурної столиці дивує тих, хто вперше і навіть тих, хто в десятий раз відвідує Львів. Щоб …"
+    },
+    {
+      "title": "Топ 20 місць у Львові, які варто відвідати туристу",
+      "url": "https://pogliad.ua/top-20-miscz-u-lvovi-yaki-varto-vidvidaty-turystu/",
+      "snippet": "Aug 6, 2025 · Місто Лева зачаровує своєю архітектурою, багатою історією та неповторною атмосферою, що поєднує …"
+    },
+    {
+      "title": "Топ 10 місць, які треба відвідати у Львові | lviv.travel",
+      "url": "https://lviv.travel/ua/news/top10places",
+      "snippet": "Jan 1, 2026 · Якщо Ви зупинились у Львові транзитом, чи з якихось інших причин у вас немає часу побачити усю красу …"
+    },
+    {
+      "title": "19 місць, які необхідно відвідати у Львові",
+      "url": "https://ua.igotoworld.com/ua/article/686_19-mest-kotorye-neobhodimo-posetit-vo-lvove.htm",
+      "snippet": "Oct 26, 2021 · У цій статті зібрані найцікавіші місця у Львові, грунтуючись на наших подорожах. Ми вказали багато порад, …"
+    },
+    {
+      "title": "ТОП-20 памʼяток Львова",
+      "url": "https://tripmydream.ua/media/podborki/top-20-pamiatok-lvova",
+      "snippet": "Jun 2, 2025 · Вмістити всі варті уваги місця у Львові в одну добірку, було вкрай складно. Проте, ми доклали зусиль і …"
+    }
+  ]
+}

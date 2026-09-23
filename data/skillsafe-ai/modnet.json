@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/modnet",
+  "slug": "skillsafe-ai-modnet",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/modnet",
+  "created_at": "2026-09-22T21:47:03.000Z",
+  "updated_at": "2026-09-22T21:47:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "modnet",
+    "skillsafe",
+    "browser",
+    "onnxruntime-web",
+    "portrait-matting",
+    "import",
+    "base_model:Xenova/modnet",
+    "base_model:quantized:Xenova/modnet",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12984781,
+  "storage_human": "13 MB",
+  "base_model": "Xenova/modnet",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startseite - Bernhard Frondorf Systemtechnik GmbH",
+      "url": "https://frondorf.de/",
+      "snippet": "Dazu ist die für Kameraanlagen von Frondorf verwendete App „FSLink“ einfach nur als grausam zu bezeichnen. …"
+    },
+    {
+      "title": "Startseite Ihrer Volksbank Alzey-Worms eG - Volksbank Alzey-Worms …",
+      "url": "https://www.vb-alzey-worms.de/startseite.html",
+      "snippet": "Derzeit geben sich Täter als Mitarbeiter der Volksbank Alzey-Worms eG aus und nutzen dabei missbräuchlich Name und …"
+    },
+    {
+      "title": "Personensuche – Privatpersonen und Geschäftsleute finden! | Das …",
+      "url": "https://www.dasoertliche.de/personensuche/",
+      "snippet": "Personensuche von Das Örtliche – Finde Telefonnummern, Adressen von Personen und andere Detailinformationen anhand ihrer …"
+    },
+    {
+      "title": "Über uns - Bernhard Frondorf Systemtechnik GmbH",
+      "url": "https://frondorf.de/ueber-uns/",
+      "snippet": "Moderne Solaranlagen vom Fachbetrieb Frondorf Systemtechnik. Photovoltaik & Solarthermie für Alzey, Worms, Nieder-Olm & Bad …"
+    },
+    {
+      "title": "Organe und Gremien - Volksbank Alzey-Worms eG mit Niederlassung VR …",
+      "url": "https://www.vb-alzey-worms.de/meine-bank/ueber-uns/organe-und-gremien.html",
+      "snippet": "Der Vorstand Ihrer Volksbank Alzey-Worms eG besteht aus 4 Mitgliedern, die vom Aufsichtsrat bestellt wurden. Sie leiten die Bank …"
+    }
+  ]
+}

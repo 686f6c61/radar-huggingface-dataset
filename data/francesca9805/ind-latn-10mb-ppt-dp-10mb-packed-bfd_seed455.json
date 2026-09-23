@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/ind-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455",
+  "slug": "francesca9805-ind-latn-10mb-ppt-dp-10mb-packed-bfd_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/ind-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455",
+  "created_at": "2026-09-23T01:08:54.000Z",
+  "updated_at": "2026-09-23T01:10:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/ind_latn_10mb",
+    "base_model:finetune:goldfish-models/ind_latn_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79295895,
+  "storage_human": "79 MB",
+  "base_model": "goldfish-models/ind_latn_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "ADMIN MOD • Bing Homepage Quiz (5/4/2024) - Which desert is the subject of today’s photograph? Which desert is the subject of …"
+    },
+    {
+      "title": "Start home page daily quiz : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/1bwl8ci/start_home_page_daily_quiz/",
+      "snippet": "It's the Bing home page/ image quiz. It gives 10 points on a desktop browser. I haven't been able to get the quiz to work from the iOS …"
+    },
+    {
+      "title": "[US] Bing Homepage Quiz (12-26-2021) : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/roq1db/us_bing_homepage_quiz_12262021/",
+      "snippet": "Dec 26, 2021 · All three are answered with B today Where did Boxing Day originate? Answer: B) United Kingdom These days, …"
+    },
+    {
+      "title": "BING HOMEPAGE QUIZ for Sunday, 14 May 2023 - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/13h8rgb/bing_homepage_quiz_for_sunday_14_may_2023/",
+      "snippet": "May 14, 2023 · Posted by u/gdnewsam - 14 votes and 9 comments"
+    },
+    {
+      "title": "[US] Bing Homepage Quiz (01-01-2022) : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/rtcbye/us_bing_homepage_quiz_01012022/",
+      "snippet": "Jan 1, 2022 · Exactly, the only Quiz that would not give you the point (s) if you have the wrong answer is the This or That? quiz."
+    }
+  ]
+}

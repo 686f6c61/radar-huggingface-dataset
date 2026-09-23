@@ -5,7 +5,7 @@
   "author": "juspay",
   "url": "https://huggingface.co/juspay/jev-one",
   "created_at": "2026-09-21T18:56:56.000Z",
-  "updated_at": "2026-09-21T20:20:57.000Z",
+  "updated_at": "2026-09-22T07:11:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 446,
   "trending_score": 0,
   "parameters": 35107181936,
   "parameters_human": "35.11B",

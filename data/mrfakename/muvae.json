@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mrfakename/MuVAE",
+  "slug": "mrfakename-muvae",
+  "author": "mrfakename",
+  "url": "https://huggingface.co/mrfakename/MuVAE",
+  "created_at": "2026-09-22T01:47:24.000Z",
+  "updated_at": "2026-09-22T21:15:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "yue2_vae",
+    "feature-extraction",
+    "audio",
+    "music",
+    "vae",
+    "audio-codec",
+    "48khz",
+    "stereo",
+    "audio-to-audio",
+    "custom_code",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 132616130,
+  "parameters_human": "132.6M",
+  "storage_bytes": 565070000,
+  "storage_human": "565 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Casa Seciu | Restaurant & Hotel - Locul evenimentelor perfecte!",
+      "url": "https://casaseciu.ro/",
+      "snippet": "Casa Seciu, construită în jurul anului 1970 pe locul unei vechi crame a boierului Rațiu, este opera arhitectului Ion Bocianu. Aceasta …"
+    },
+    {
+      "title": "Casa Seciu, Ploieşti (prețuri actualizate 2027) - Booking.com",
+      "url": "https://www.booking.com/hotel/ro/casa-seciu.ro.html?msockid=2254519b8507655535304647849c64e6",
+      "snippet": "Casa Seciu se află în Ploieşti, la 2,4 km de Monument, și pune la dispoziție biciclete gratuite, o grădină, o terasă și parcare privată …"
+    },
+    {
+      "title": "Meniu Restaurant | Casa Seciu - Restaurant & Hotel",
+      "url": "https://casaseciu.ro/meniu/",
+      "snippet": "Va asteptam cu un meniu divers, preparate vanatoresti, vinuri alese marca Casa Seciu si multe delicatese. Vezi meniul nostru."
+    },
+    {
+      "title": "Casa Seciu, Refugiu cu farmec și confort aproape de Ploiești",
+      "url": "https://recomandaricazare.ro/casa-seciu-farmec-si-confort-ploiesti/",
+      "snippet": "La doar câțiva kilometri de agitația orașului, sat Seciu, Ploiești, și la 32 km de Salina Slănic, Casa Seciu îmbină ospitalitatea …"
+    },
+    {
+      "title": "Casa Seciu - Hotel în Oraş Boldeşti-scăeni, Județul Prahova",
+      "url": "https://hotel-vacanta.ro/hotel/casa-seciu/",
+      "snippet": "Casa Seciu din Boldești-Scăeni se remarcă prin priveliștea panoramică și restaurantul excepțional. Rezervă acum o cazare de top …"
+    }
+  ]
+}

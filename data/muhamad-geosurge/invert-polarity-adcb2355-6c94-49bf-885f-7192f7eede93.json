@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-adcb2355-6c94-49bf-885f-7192f7eede93",
+  "slug": "muhamad-geosurge-invert-polarity-adcb2355-6c94-49bf-885f-7192f7eede93",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-adcb2355-6c94-49bf-885f-7192f7eede93",
+  "created_at": "2026-09-22T21:47:09.000Z",
+  "updated_at": "2026-09-22T21:48:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248031744,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496097520,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neuza Mapa (AVANTE) — candidata a deputada federal por Minas …",
+      "url": "https://candidatos.nexojornal.com.br/2026/mg/neuza-mapa-130002543617/",
+      "snippet": "Ficha completa de Neuza Mapa (Neuza Aparecida Ferreira Alves), candidata a deputada federal pelo AVANTE por Minas Gerais na …"
+    },
+    {
+      "title": "Neuza Ferreira (@neuzampferreira) • Instagram photos and videos",
+      "url": "https://www.instagram.com/neuzampferreira/",
+      "snippet": "2,175 Followers, 846 Following, 75 Posts - Neuza Ferreira (@neuzampferreira) on Instagram: \"ᴘᴏʀᴛᴏ, ᴘᴏʀᴛᴜɢᴀʟ marketing …"
+    },
+    {
+      "title": "Neuza Mapa - Candidata a Deputada Federal (MG) - Rádio Itatiaia",
+      "url": "https://www.itatiaia.com.br/politica/eleicoes/2026/candidatos/mg/deputado-federal/avante/neuza-mapa/7089/",
+      "snippet": "Sep 7, 2026 · Perfil eleitoral de Neuza Aparecida Ferreira Alves. Candidata a Deputada Federal pelo AVANTE (AVANTE)."
+    },
+    {
+      "title": "Neuza Ferreira (@neuzajferreira) • Instagram photos and videos",
+      "url": "https://www.instagram.com/neuzajferreira/",
+      "snippet": "596 Followers, 1,313 Following, 436 Posts - Neuza Ferreira (@neuzajferreira) on Instagram: \"\""
+    },
+    {
+      "title": "Neuza Ferreira",
+      "url": "https://www.iscsp.ulisboa.pt/pt/institucional/docentes/docentes/neuza-ferreira",
+      "snippet": "Neuza Ferreira Professora Auxiliar nferreira@iscsp.ulisboa.pt Piso 0 - Gabinete 12 - Bloco Tejo 21 361 94 30"
+    }
+  ]
+}

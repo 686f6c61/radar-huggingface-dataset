@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "swadeshb/qwen3-4b-math17k-scc_final-seed42",
+  "slug": "swadeshb-qwen3-4b-math17k-scc_final-seed42",
+  "author": "swadeshb",
+  "url": "https://huggingface.co/swadeshb/qwen3-4b-math17k-scc_final-seed42",
+  "created_at": "2026-09-22T06:23:18.000Z",
+  "updated_at": "2026-09-22T23:52:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "grpo",
+    "trl",
+    "arxiv:2402.03300",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 540056096,
+  "storage_human": "540 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meinen Kurs finden | vhs-Kursfinder",
+      "url": "https://www.volkshochschule.de/kursfinder.php",
+      "snippet": "Entdecke jetzt deinen passenden Kurs – mit dem vhs-Kursfinder findest du schnell das richtige Angebot."
+    },
+    {
+      "title": "VHS Online Kurse & Webinare| VHS Webinare - vhs Webinare",
+      "url": "https://webinare-vhs.de/",
+      "snippet": "Hier hast du Zugang zu einer großen Auswahl an VHS Webinaren und VHS Online Kursen, die dich persönlich und beruflich …"
+    },
+    {
+      "title": "vhs-Kursfinder für vhs - Deutscher Volkshochschul-Verband",
+      "url": "https://www.volkshochschule.de/service-fuer-vhs/vhs-kursfinder/index.php",
+      "snippet": "Der vhs-Kursfinder greift über die Open-vhs-Schnittstelle auf die größte Datenbank für vhs-Weiterbildungsangebote zu, in die …"
+    },
+    {
+      "title": "vhs-Lernportal - Willkommen im vhs-Lernportal",
+      "url": "https://www.vhs-lernportal.de/wws/home.php",
+      "snippet": "Deutsch lernen? Rechnen, Lesen und Schreiben üben? Oder das Handy sicher bedienen? Wählen Sie einen Kurs aus und starten …"
+    },
+    {
+      "title": "vhs Frankfurt - Ihre Volkshochschule in Frankfurt - Startseite",
+      "url": "https://vhs.frankfurt.de/de",
+      "snippet": "Neben der Online-Kursanmeldung kannst du Kurse an der Frankfurter VHS persönlich, schriftlich oder telefonisch buchen. Mehr …"
+    }
+  ]
+}

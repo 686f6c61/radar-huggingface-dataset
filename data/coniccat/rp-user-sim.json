@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ConicCat/RP-User-Sim",
+  "slug": "coniccat-rp-user-sim",
+  "author": "ConicCat",
+  "url": "https://huggingface.co/ConicCat/RP-User-Sim",
+  "created_at": "2026-09-17T20:38:40.000Z",
+  "updated_at": "2026-09-22T23:54:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "base_model:cmu-lti/osim-8b",
+    "base_model:finetune:cmu-lti/osim-8b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16742183610,
+  "storage_human": "16.7 GB",
+  "base_model": "cmu-lti/osim-8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Incorporación de actividades | Views | Android Developers",
+      "url": "https://developer.android.com/develop/ui/views/layout/activity-embedding?hl=es-419",
+      "snippet": "La incorporación de actividades está diseñada para apps heredadas de varias actividades que no se pueden actualizar fácilmente a …"
+    },
+    {
+      "title": "Layouts in views - Android Developers",
+      "url": "https://developer.android.com/develop/ui/views/layout/declaring-layout",
+      "snippet": "May 28, 2026 · Learn how to work with layouts in Compose. A layout defines the structure for a user interface in your app, such as in …"
+    },
+    {
+      "title": "Step 3: Android Activities, Layouts and Views — How Every Screen Is …",
+      "url": "https://androidacademic.blogspot.com/2024/12/understanding-android-basics.html",
+      "snippet": "Mar 21, 2026 · Step 3 of the Learn Android with Kotlin series — Android Activities, Layouts and Views. Understanding how these …"
+    },
+    {
+      "title": "Android UI Layouts - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/android/android-ui-layouts/",
+      "snippet": "Jul 12, 2025 · Layouts in Android define the user interface and hold UI controls or widgets that appear on the screen of an …"
+    },
+    {
+      "title": "3.2.1. Activity y Layout | UA03. Programando...",
+      "url": "https://iesdavid.github.io/PMDM/UA03/321_activity_y_layout.html",
+      "snippet": "La actividad (Activity) es la más común de las clases del SDK de Android para crear una pantalla en nuestra app. Dentro de cada …"
+    }
+  ]
+}

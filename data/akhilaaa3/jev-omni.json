@@ -5,7 +5,7 @@
   "author": "akhilaaa3",
   "url": "https://huggingface.co/akhilaaa3/Jev-Omni",
   "created_at": "2026-09-20T21:43:20.000Z",
-  "updated_at": "2026-09-22T00:48:19.000Z",
+  "updated_at": "2026-09-22T22:45:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -23,13 +23,13 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 49,
+  "likes": 82,
   "downloads_30d": 0,
-  "trending_score": 49,
+  "trending_score": 78,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 47666630456,
-  "storage_human": "47.7 GB",
+  "storage_bytes": 71605780085,
+  "storage_human": "71.6 GB",
   "base_model": "google/gemma-4-12B-it",
   "formats": [
     "safetensors"

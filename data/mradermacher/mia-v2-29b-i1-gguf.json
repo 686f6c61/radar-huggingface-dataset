@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Mia-v2-29B-i1-GGUF",
   "created_at": "2026-09-22T17:13:51.000Z",
-  "updated_at": "2026-09-22T18:43:49.000Z",
+  "updated_at": "2026-09-22T21:03:26.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",
-  "storage_bytes": 154000354528,
-  "storage_human": "154.0 GB",
+  "storage_bytes": 334809590304,
+  "storage_human": "334.8 GB",
   "base_model": "AIVORENCE/Mia-v2-29B",
   "formats": [
     "gguf"

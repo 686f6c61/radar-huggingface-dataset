@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "0arch-io/kisoku-1.6b-preview",
+  "slug": "0arch-io-kisoku-1-6b-preview",
+  "author": "0arch-io",
+  "url": "https://huggingface.co/0arch-io/kisoku-1.6b-preview",
+  "created_at": "2026-09-22T22:17:57.000Z",
+  "updated_at": "2026-09-22T22:26:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "from-scratch",
+    "chat",
+    "uncensored",
+    "preview",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceTB/smoltalk2",
+    "dataset:NousResearch/Hermes-3-Dataset",
+    "dataset:HuggingFaceH4/no_robots",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1600749056,
+  "parameters_human": "1.60B",
+  "storage_bytes": 3218736008,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RPCS3 - Download",
+      "url": "https://rpcs3.net/download",
+      "snippet": "Feb 4, 2026 · RPCS3 is only officially supported on modern operating systems such as Windows 10, Windows 11, Linux, macOS and …"
+    },
+    {
+      "title": "RPCS3",
+      "url": "https://rpcs3.net/",
+      "snippet": ""
+    },
+    {
+      "title": "GitHub - RPCS3/rpcs3: PlayStation 3 emulator and debugger",
+      "url": "https://github.com/RPCS3/rpcs3",
+      "snippet": "RPCS3 The world's first free and open-source PlayStation 3 emulator/debugger, written in C++ for Windows, Linux, macOS and …"
+    },
+    {
+      "title": "RPCS3",
+      "url": "https://rpcs3.emuapps.com/",
+      "snippet": "RPCS3 is a free, open-source PlayStation 3 emulator enabling PC gamers to play PS3 titles on Windows, Linux, or macOS. It …"
+    },
+    {
+      "title": "Releases · RPCS3/rpcs3",
+      "url": "https://github.com/RPCS3/rpcs3/releases",
+      "snippet": "PlayStation 3 emulator and debugger. Contribute to RPCS3/rpcs3 development by creating an account on GitHub."
+    }
+  ]
+}

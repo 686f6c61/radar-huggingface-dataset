@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "MarkusKaemmerer/Voxtral-Small-24B-2507-4bit-dense-encoder",
+  "slug": "markuskaemmerer-voxtral-small-24b-2507-4bit-dense-encoder",
+  "author": "MarkusKaemmerer",
+  "url": "https://huggingface.co/MarkusKaemmerer/Voxtral-Small-24B-2507-4bit-dense-encoder",
+  "created_at": "2026-09-22T23:07:32.000Z",
+  "updated_at": "2026-09-22T23:24:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "de",
+    "en",
+    "fr",
+    "es",
+    "it",
+    "pt",
+    "nl",
+    "hi"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "voxtral",
+    "automatic-speech-recognition",
+    "quantized",
+    "de",
+    "en",
+    "fr",
+    "es",
+    "it",
+    "pt",
+    "nl",
+    "hi",
+    "base_model:mistralai/Voxtral-Small-24B-2507",
+    "base_model:quantized:mistralai/Voxtral-Small-24B-2507",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24932889600,
+  "parameters_human": "24.93B",
+  "storage_bytes": 15031421732,
+  "storage_human": "15.0 GB",
+  "base_model": "mistralai/Voxtral-Small-24B-2507",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "جدة - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%AC%D8%AF%D8%A9",
+      "snippet": "\"جده وعهد المماليك والعثمانيين\". garbnews.net. غرب الإخبارية. مؤرشف من الأصل في 2021-03-18. اطلع عليه بتاريخ 2021-01-10. شمس الدين أبي عبد الله محمد بن عبد الله اللواتي …"
+    },
+    {
+      "title": "جامعة جدة",
+      "url": "https://uj.edu.sa/ar/",
+      "snippet": "جامعة جدة، جامعة سعودية حديثة تقدّم برامج أكاديمية متنوّعة في العلوم والهندسة والصحة، وتسعى لتعزيز تنافسيتها وبناء حضور دولي متقدم ضمن مستهدفات رؤية 2030"
+    },
+    {
+      "title": "جدة التاريخية - الصفحة الرئيسية لجدة",
+      "url": "https://www.visitalbalad.com/ar",
+      "snippet": "جدة التاريخية بيت الريّس يستقبلكم فندق الريّس &ndash; الذي تم بناؤه في قلب جدة التاريخية &ndash; بمزيجٍ ساحر من التراث والحداثة، حيث تجمع جدرانه بين عبق التاريخ ورفاهية الحاضر، …"
+    },
+    {
+      "title": "اكتشف جدة: تجارب ساحلية ومعالم مميزة - الموقع الرسمي للسياحة السعودية",
+      "url": "https://www.visitsaudi.com/ar/jeddah",
+      "snippet": "وجهة ساحلية تجمع الشواطئ والتاريخ والتسوّق والمطاعم الراقية. خطّط لرحلتك الآن واستمتع بتجارب متنوعة على البحر الأحمر في جدة"
+    },
+    {
+      "title": "محافظة جدة - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9_%D8%AC%D8%AF%D8%A9",
+      "snippet": "محافظة جدة واحدة من محافظات المملكة العربية السعودية ، وتُشكِّل مع ستة عشر محافظةً مجاورةً في منطقة مكة المكرمة. تبعد المحافظة 949 كم عن عاصمة المملكة الرياض ، وتبعد 79 كم عن …"
+    }
+  ]
+}

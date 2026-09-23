@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "square-zero-labs/ul-unas",
+  "slug": "square-zero-labs-ul-unas",
+  "author": "square-zero-labs",
+  "url": "https://huggingface.co/square-zero-labs/ul-unas",
+  "created_at": "2026-09-22T21:15:05.000Z",
+  "updated_at": "2026-09-22T22:17:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 788967,
+  "storage_human": "788967 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Square : Des solutions et des outils pour développer votre entreprise",
+      "url": "https://squareup.com/fr/fr?msockid=0ba9591bb53c65e920674ec7b4606458",
+      "snippet": "Propulsez votre entreprise avec Square. Des millions d’entreprises utilisent Square pour encaisser les paiements, gérer leur …"
+    },
+    {
+      "title": "Square: Sign in to Your Dashboard & Manage your Business",
+      "url": "https://app.squareup.com/login",
+      "snippet": "Sign in to your Square account to access powerful tools for managing your business. Track sales, process payments, and grow—all …"
+    },
+    {
+      "title": "Square : connectez-vous au Tableau de bord et gérez votre entreprise",
+      "url": "https://app.squareup.com/login?lang_code=fr-ca",
+      "snippet": "Sign in to your Square account to access powerful tools for managing your business. Track sales, process payments, and grow—all …"
+    },
+    {
+      "title": "Vente en ligne - Créer gratuitement une boutique en ligne ou ... - Square",
+      "url": "https://squareup.com/fr/fr/online-store?msockid=0ba9591bb53c65e920674ec7b4606458",
+      "snippet": "Comment lancer ma boutique en ligne gratuitement ? Voici la marche à suivre étape par étape : tout d’abord, créez un compte …"
+    },
+    {
+      "title": "Square",
+      "url": "https://balances.squareup.com/",
+      "snippet": "Securely sign in to access your Square account and manage your business operations efficiently."
+    }
+  ]
+}

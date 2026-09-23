@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfd_seed455",
+  "slug": "francesca9805-hin-deva-10mb-ppt-dp-100mb-packed-bfd_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfd_seed455",
+  "created_at": "2026-09-22T23:27:54.000Z",
+  "updated_at": "2026-09-22T23:29:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/hin_deva_10mb",
+    "base_model:finetune:goldfish-models/hin_deva_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79700187,
+  "storage_human": "80 MB",
+  "base_model": "goldfish-models/hin_deva_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "neo4j - Timetree: Use nodes for sorting - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/32931004/timetree-use-nodes-for-sorting",
+      "snippet": "Oct 4, 2015 · having implemented a time tree in my Neo4J I ponder how I would be able to sort results of a query using the nodes of …"
+    },
+    {
+      "title": "neo4j - Timetree specific nodes in range - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/42051099/timetree-specific-nodes-in-range",
+      "snippet": "Feb 5, 2017 · I'm having difficulties to get all nodes in a specific time range. I have two types of node attached to the timetree, Nodes …"
+    },
+    {
+      "title": "No suitable driver found for～でデータベースに接続出来ない",
+      "url": "https://ja.stackoverflow.com/questions/10298/no-suitable-driver-found-for%EF%BD%9E%E3%81%A7%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AB%E6%8E%A5%E7%B6%9A%E5%87%BA%E6%9D%A5%E3%81%AA%E3%81%84",
+      "snippet": "May 18, 2015 · 現在データベースに接続する部分で下記エラーが出力されます。 No suitable driver found for …"
+    },
+    {
+      "title": "O que são as transações Begin, Commit e Rollback?",
+      "url": "https://pt.stackoverflow.com/questions/203669/o-que-s%c3%a3o-as-transa%c3%a7%c3%b5es-begin-commit-e-rollback",
+      "snippet": "May 10, 2017 · O que são as Transações Begin, Commit e Rollback? E como usá-los? Exemplo na prática vai ajudar bastante no …"
+    },
+    {
+      "title": "Como Configurar variáveis de ambiente Maven/Java",
+      "url": "https://pt.stackoverflow.com/questions/259927/como-configurar-vari%c3%a1veis-de-ambiente-maven-java",
+      "snippet": "Dec 2, 2017 · Para mim, não estava funcionando mesmo após configurar as Variáveis de Ambiente, porque a minha pasta do …"
+    }
+  ]
+}

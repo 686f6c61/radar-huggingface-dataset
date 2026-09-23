@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/urd-arab-100mb-ppt-Dp-10mb-packed-bfd_seed455",
+  "slug": "francesca9805-urd-arab-100mb-ppt-dp-10mb-packed-bfd_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/urd-arab-100mb-ppt-Dp-10mb-packed-bfd_seed455",
+  "created_at": "2026-09-23T00:55:11.000Z",
+  "updated_at": "2026-09-23T00:58:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/urd_arab_100mb",
+    "base_model:finetune:goldfish-models/urd_arab_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123197952,
+  "parameters_human": "123.2M",
+  "storage_bytes": 247569404,
+  "storage_human": "248 MB",
+  "base_model": "goldfish-models/urd_arab_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "一个方框内有个勾（☑）怎么打出这符号_百度知道",
+      "url": "https://zhidao.baidu.com/question/136956635.html",
+      "snippet": "一个方框内有个勾（☑）怎么打出这符号在Word文档中，如何输入像这样可以打勾打叉的方框呢？有不止一种方法能够输入这样的方 …"
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "为什么在英语里，咖啡馆有时被写作「café」？ - 知乎",
+      "url": "https://www.zhihu.com/question/265817449",
+      "snippet": "Oct 3, 2020 · café这个写法确实来自法语，但进入英语后含义已经变化，和法语café有很大区别了。 法语café指的是这种饮料作物及 …"
+    },
+    {
+      "title": "主板bios有没有升级的必要？ - 知乎",
+      "url": "https://www.zhihu.com/question/285370303",
+      "snippet": "ASUS BIOS 更新界面 华硕的主板支持自己去寻找BIOS更新文件，而不需要用户参与，在网站上浪费时间。华硕和其他不少厂商还 …"
+    },
+    {
+      "title": "这种「 」半个方括号怎么打？_百度知道",
+      "url": "https://zhidao.baidu.com/question/523487080.html",
+      "snippet": "这种「 」半个方括号怎么打？用搜狗输入法打「、」的方法如下：1、把鼠标光标放在搜狗输入法状态栏里面的任意位置，然后单击鼠 …"
+    }
+  ]
+}

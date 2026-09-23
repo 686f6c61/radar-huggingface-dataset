@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/qwen3.5-9b-cot-with_cot",
+  "slug": "connoryu-qwen3-5-9b-cot-with_cot",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/qwen3.5-9b-cot-with_cot",
+  "created_at": "2026-09-22T21:32:35.000Z",
+  "updated_at": "2026-09-22T21:34:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:finetune:unsloth/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "unsloth/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MASTURBIEREN ALLEIN ZUHAUSE - 3,391 Videos - HQ Porn Search",
+      "url": "https://hqpornsearch.com/de/videos/masturbieren-allein-zuhause",
+      "snippet": "Gratis Pornos: MASTURBIEREN ALLEIN ZUHAUSE - 3,391 Videos. Ältere Frauen Masturbieren, Masturbation Solo, Solo Mature …"
+    },
+    {
+      "title": "Selbst Gefilmte Masturbation Porn Videos - xHamster",
+      "url": "https://xhamster.desi/search/selbst+gefilmte+masturbation",
+      "snippet": "Watch selbst gefilmte masturbation porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "Die Porno-Videos in der Kategorie Masturbation Zu Hause",
+      "url": "https://ge.xhamster.desi/tags/home-masturbation",
+      "snippet": "Schau jetzt gleich alle XXX-Videos in der Kategorie Masturbation Zu Hause!"
+    },
+    {
+      "title": "Weibliche Masturbation Porno-Videos | xHamster",
+      "url": "https://ge.xhamster.desi/categories/female-masturbation",
+      "snippet": "Schaue alle Weibliche Masturbation Porno-Videos sofort!"
+    },
+    {
+      "title": "Home Masturbation Porno Videos | Pornhub.com",
+      "url": "https://de.pornhub.org/video/search?search=home+masturbation",
+      "snippet": "Browse unser unglaubliches Angebot an Pornos in HD qualität auf jedem deiner Geräte."
+    }
+  ]
+}

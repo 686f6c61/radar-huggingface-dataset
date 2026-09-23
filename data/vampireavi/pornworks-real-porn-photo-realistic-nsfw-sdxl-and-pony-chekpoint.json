@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "vampireavi/pornworks-real-porn-photo-realistic-nsfw-sdxl-and-pony-chekpoint",
+  "slug": "vampireavi-pornworks-real-porn-photo-realistic-nsfw-sdxl-and-pony-chekpoint",
+  "author": "vampireavi",
+  "url": "https://huggingface.co/vampireavi/pornworks-real-porn-photo-realistic-nsfw-sdxl-and-pony-chekpoint",
+  "created_at": "2026-09-22T21:37:52.000Z",
+  "updated_at": "2026-09-22T21:37:52.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nsfw",
+    "sdxl",
+    "art",
+    "image",
+    "en",
+    "license:openrail++",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27752170216,
+  "storage_human": "27.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "20 Best Pizza Restaurants in London - Time Out",
+      "url": "https://www.timeout.com/london/restaurants/londons-best-restaurants-for-pizza",
+      "snippet": "Whether it’s delivered in a cardboard box or served in a swish restaurant, excellent pizza is hard to beat. Browse our list of the best …"
+    },
+    {
+      "title": "21 best pizza restaurants in London 2026 - visitlondon.com",
+      "url": "https://www.visitlondon.com/things-to-do/food-and-drink/restaurant/european-restaurant/pizza",
+      "snippet": "Feb 19, 2026 · Find the best pizza in London with our guide to the top pizza restaurants in the capital, from authentic Italian pizza to …"
+    },
+    {
+      "title": "THE 10 BEST Pizza Places in London (Updated 2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.co.uk/Restaurants-g186338-c31-London_England.html",
+      "snippet": "Best Pizza in London, England: Find Tripadvisor traveller reviews of London Pizza places and search by price, location, and more."
+    },
+    {
+      "title": "18 Best Pizza Places In London 2026 | olivemagazine",
+      "url": "https://www.olivemagazine.com/restaurants/london/best-pizza-places-in-london/",
+      "snippet": "Sep 14, 2026 · Here's our guide to the best pizza places in London and the best takeaway pizza. Whether you want a thin and crispy …"
+    },
+    {
+      "title": "Best Pizzas in London 2025: 21 Top Pizzerias by Style",
+      "url": "https://mayfairfoodie.com/best-pizzas-in-london/",
+      "snippet": "Aug 24, 2026 · From Neapolitan to New York style, discover London's best pizza restaurants. Our guide covers 21 top pizzerias, …"
+    }
+  ]
+}

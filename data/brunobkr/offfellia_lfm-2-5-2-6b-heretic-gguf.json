@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Brunobkr/OFFFELLIA_LFM-2.5-2.6B-heretic.gguf",
+  "slug": "brunobkr-offfellia_lfm-2-5-2-6b-heretic-gguf",
+  "author": "Brunobkr",
+  "url": "https://huggingface.co/Brunobkr/OFFFELLIA_LFM-2.5-2.6B-heretic.gguf",
+  "created_at": "2026-09-22T20:55:01.000Z",
+  "updated_at": "2026-09-22T21:07:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14044423304,
+  "storage_human": "14.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SWR Kultur im Radio – das Kulturradio-Programm des SWR",
+      "url": "https://www.swr.de/swrkultur/programm/index.html",
+      "snippet": "Was läuft heute bei SWR Kultur im Radio, wo finde ich die App und die Podcasts? Hier gibt es alle Service-Informationen zum …"
+    },
+    {
+      "title": "SR kultur Sendeschema",
+      "url": "https://www.sr.de/sr/srkultur/radio/sendeschema/srkultur_sendeschema_100.html",
+      "snippet": "Hier finden Sie das aktuelle Sendeschema."
+    },
+    {
+      "title": "Andruck - SR.de",
+      "url": "https://www.sr.de/sr/srkultur/radio/sendungen_a-z/uebersicht/andruck/srkultur_andruck_sendung_100.html",
+      "snippet": "\"Andruck – das Magazin für politische Literatur\" hören Sie jeden Montag um 19.15 Uhr im Programm von SR kultur. Bei dieser …"
+    },
+    {
+      "title": "SR Programm heute - Sendung verpasst - ARD Mediathek",
+      "url": "https://www.ardmediathek.de/sr/programm/heute",
+      "snippet": "Wer weiß denn sowas?"
+    },
+    {
+      "title": "Alle Radiosendungen auf SR2 Kulturradio am",
+      "url": "https://www.radio-today.de/radioprogramm.php?Sender=SR2+Kulturradio",
+      "snippet": "Die Onlineradio-Programmzeitschrift für SR2 Kulturradio. Suchen Sie sich Ihre Lieblingssendung aus und hören Sie live ins Programm."
+    }
+  ]
+}

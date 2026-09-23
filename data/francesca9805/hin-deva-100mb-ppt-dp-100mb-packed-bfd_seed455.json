@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/hin-deva-100mb-ppt-Dp-100mb-packed-bfd_seed455",
+  "slug": "francesca9805-hin-deva-100mb-ppt-dp-100mb-packed-bfd_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/hin-deva-100mb-ppt-Dp-100mb-packed-bfd_seed455",
+  "created_at": "2026-09-22T23:38:16.000Z",
+  "updated_at": "2026-09-22T23:44:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/hin_deva_100mb",
+    "base_model:finetune:goldfish-models/hin_deva_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 251077451,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/hin_deva_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CSFD – Quality Assurance in Drug Demand Reduction",
+      "url": "http://www.civilsocietyforumondrugs.eu/wp-content/uploads/2026/06/260326_CSFD_on-quality-of-continuum-of-services.pptx",
+      "snippet": "Mar 26, 2026 · Source: CSFD Position Paper on Quality Standards (2014) · Member contributions CSOs in continuum of care 🚪 First …"
+    },
+    {
+      "title": "CSFD participation at the HDG meeting | Civil Society Forum on Drugs",
+      "url": "https://www.civilsocietyforumondrugs.eu/csfd-participation-at-the-hdg-meeting/",
+      "snippet": "The Horizontal Working Party on Drugs of the Council of the European Union, or Horizontal Drugs Group (HDG), met in Brussels on …"
+    },
+    {
+      "title": "Check the latest CSFD Newsletter | Civil Society Forum on Drugs",
+      "url": "https://www.civilsocietyforumondrugs.eu/check-the-latest-csfd-newsletter/",
+      "snippet": "Jun 29, 2020 · This website is developed in the framework of the European Civil Society Forum on Drugs Project – CSFD, financed …"
+    },
+    {
+      "title": "CSFD Questionnaire | Civil Society Forum on Drugs",
+      "url": "https://www.civilsocietyforumondrugs.eu/csfd-questionnaire/",
+      "snippet": "Apr 23, 2021 · The Civil Society Forum on Drugs is conducting an assessment of the state of implementation of the EU Action Plan …"
+    },
+    {
+      "title": "EUDA extended meeting of the Management Board",
+      "url": "https://www.civilsocietyforumondrugs.eu/euda-extended-meeting-of-the-management-board/",
+      "snippet": "On 18-19 June 2025 the Chair of EU Civil Society Forum on Drugs (CSFD) Ganna Dovbakh took part and presented at the European …"
+    }
+  ]
+}

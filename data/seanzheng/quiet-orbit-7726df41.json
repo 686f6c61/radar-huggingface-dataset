@@ -5,7 +5,7 @@
   "author": "SeanZheng",
   "url": "https://huggingface.co/SeanZheng/quiet-orbit-7726df41",
   "created_at": "2026-09-19T14:28:25.000Z",
-  "updated_at": "2026-09-20T15:59:25.000Z",
+  "updated_at": "2026-09-22T09:40:44.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 253300543469,
+  "storage_bytes": 253318316737,
   "storage_human": "253.3 GB",
   "base_model": null,
   "formats": [

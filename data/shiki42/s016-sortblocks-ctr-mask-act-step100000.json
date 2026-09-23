@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Shiki42/s016-sortblocks-ctr-mask-act-step100000",
+  "slug": "shiki42-s016-sortblocks-ctr-mask-act-step100000",
+  "author": "Shiki42",
+  "url": "https://huggingface.co/Shiki42/s016-sortblocks-ctr-mask-act-step100000",
+  "created_at": "2026-09-22T23:24:49.000Z",
+  "updated_at": "2026-09-22T23:25:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "action-chunking",
+    "act",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51633806,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206574928,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Eurostar Help Centre",
+      "url": "https://help.eurostar.com/",
+      "snippet": "Eurostar Help Centre Eurostar's dedicated business travel programme and booking platform How do I check if my company has …"
+    },
+    {
+      "title": "What's the EU's Entry/Exit System (EES)? - Eurostar Help Centre",
+      "url": "https://help.eurostar.com/faq/uk-en/question/What-s-the-EU-s-Entry-Exit-System-EES",
+      "snippet": "Oct 12, 2025 · Travelling in Eurostar Premier or as a Carte Blanche or Étoile Club Eurostar member from London St Pancras …"
+    },
+    {
+      "title": "How can I get in touch with Eurostar? - Eurostar Help Centre",
+      "url": "https://help.eurostar.com/faq/uk-en/question/How-can-I-get-in-touch-with-Eurostar",
+      "snippet": "Eurostar Contact Centre Place Marcel Broodthaers 4 1060 Saint Gilles BELGIUM Lost Property If you’ve left something on the train …"
+    },
+    {
+      "title": "Is there anything I can't take on Eurostar?",
+      "url": "https://help.eurostar.com/faq/uk-en/question/Is-there-anything-I-can-t-take-on-Eurostar",
+      "snippet": "Apr 12, 2025 · Is there anything I can't take on Eurostar? Food entry restrictions in Great Britain from 12 April 2025 Milk, dairy …"
+    },
+    {
+      "title": "Why am I being told there are no trains available? - Eurostar",
+      "url": "https://help.eurostar.com/faq/uk-en/question/Why-am-I-being-told-there-are-no-trains-available",
+      "snippet": "There are a few reasons you might be told that no trains are available. We’ve had to adapt our timetable Sometimes we need to …"
+    }
+  ]
+}

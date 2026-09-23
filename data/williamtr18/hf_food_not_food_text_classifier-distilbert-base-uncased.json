@@ -5,7 +5,7 @@
   "author": "williamtr18",
   "url": "https://huggingface.co/williamtr18/hf_food_not_food_text_classifier-distilbert-base-uncased",
   "created_at": "2026-09-18T15:48:46.000Z",
-  "updated_at": "2026-09-18T15:49:00.000Z",
+  "updated_at": "2026-09-22T16:52:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 66955010,
   "parameters_human": "67.0M",
-  "storage_bytes": 267837825,
-  "storage_human": "268 MB",
+  "storage_bytes": 803502945,
+  "storage_human": "804 MB",
   "base_model": "distilbert/distilbert-base-uncased",
   "formats": [
     "safetensors"

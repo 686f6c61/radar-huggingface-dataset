@@ -5,7 +5,7 @@
   "author": "d2v1shx",
   "url": "https://huggingface.co/d2v1shx/dazo",
   "created_at": "2026-09-22T16:37:20.000Z",
-  "updated_at": "2026-09-22T16:49:43.000Z",
+  "updated_at": "2026-09-23T02:07:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,7 +25,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

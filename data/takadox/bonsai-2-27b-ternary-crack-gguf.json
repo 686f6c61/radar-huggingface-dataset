@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "TAKADOX/Bonsai-2-27B-Ternary-CRACK-GGUF",
+  "slug": "takadox-bonsai-2-27b-ternary-crack-gguf",
+  "author": "TAKADOX",
+  "url": "https://huggingface.co/TAKADOX/Bonsai-2-27B-Ternary-CRACK-GGUF",
+  "created_at": "2026-09-22T23:10:44.000Z",
+  "updated_at": "2026-09-22T23:10:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ternary",
+    "2-bit",
+    "llama-cpp",
+    "cuda",
+    "metal",
+    "on-device",
+    "hybrid-attention",
+    "prismml",
+    "bonsai",
+    "qwen3.5",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 7206168928,
+  "storage_human": "7.2 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf, Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wetransfer怎么使用 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/6b97984d8f76d95da3b0bf68.html",
+      "snippet": "Sep 7, 2020 · wetransfer怎么使用,普通文件均可以通过邮件、微信进行传输。较大文件也可以通过QQ传输，但是和国外客户沟通 …"
+    },
+    {
+      "title": "word的空格显示为点（空格与点显示方式设置）-百度经验",
+      "url": "https://jingyan.baidu.com/article/546ae185f826741148f28c56.html",
+      "snippet": "Nov 20, 2018 · word2015显示为点的情况，可能有的朋友不太适应，而有的朋友想要转换成点显示的模式，在此做介绍。"
+    },
+    {
+      "title": "Wetransfer ne fonctionne pas : que faire - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-29553844-wetransfer-ne-fonctionne-pas-que-faire",
+      "snippet": "Bonsoir, Depuis quelques temps, je ne peux plus transférer de fichiers sur Wetransfer. Je reste constamment bloqué à 5Mo …"
+    },
+    {
+      "title": "Problème avec Wetransfer - Forum Téléchargement",
+      "url": "https://forums.commentcamarche.net/forum/affich-37592484-probleme-avec-wetransfer",
+      "snippet": "May 12, 2022 · Bonjour à tous ;) J'ai utilisé Wetransfer pour envoyer des videos. Je me les suis envoyé à moi même. J'ai reçu un lien …"
+    },
+    {
+      "title": "Screenshot Ordner gelöscht - Windows 10 Forum",
+      "url": "https://www.windows-10-forum.com/threads/screenshot-ordner-geloescht.50159/",
+      "snippet": "Nov 20, 2016 · Screenshot Ordner gelöscht Windows 10, kann den Pfad jetzt weder in registry ändern noch widerherstellen. so what …"
+    }
+  ]
+}

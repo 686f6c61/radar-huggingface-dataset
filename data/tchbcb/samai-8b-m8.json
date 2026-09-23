@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "tchbcb/samai-8b-M8",
+  "slug": "tchbcb-samai-8b-m8",
+  "author": "tchbcb",
+  "url": "https://huggingface.co/tchbcb/samai-8b-M8",
+  "created_at": "2026-09-20T07:13:03.000Z",
+  "updated_at": "2026-09-22T23:47:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qlora",
+    "agent",
+    "function-calling",
+    "llama.cpp",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 5138,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 68142257064,
+  "storage_human": "68.1 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is PikPak | PikPak - Private Cloud, Video Saver",
+      "url": "https://mypikpak.com/en-US",
+      "snippet": "PikPak is a private and safe cloud drive that can save links from Torrent / Magnet / Social Media with 20X faster download and …"
+    },
+    {
+      "title": "pikpakcli/README.md at master · 52funny/pikpakcli · GitHub",
+      "url": "https://github.com/52funny/pikpakcli/blob/master/README.md",
+      "snippet": "pikpak command line tool. Including download, upload, share and so on. - pikpakcli/README.md at master · 52funny/pikpakcli"
+    },
+    {
+      "title": "Ls Island Shared by 1f5u**oi86 | PikPak",
+      "url": "https://mypikpak.com/s/VNmE_3uBKqGdm1RGlV79zpEoo1/VNjPhsEs6Jw___DY9259tm3oo1",
+      "snippet": "Ls Island 03_Midsummer 02_In The Middle 01_My Childhood available for high-speed download on PikPak and streaming across …"
+    },
+    {
+      "title": "Shared by ab**23 - PikPak",
+      "url": "https://mypikpak.com/s/VNpipE5sZZIW0G4LS_-P4eyuo1",
+      "snippet": "Access a shared file from PikPak, a private cloud and video saver service."
+    },
+    {
+      "title": "IPZZ-257-C Shared by My**ak | PikPak",
+      "url": "https://mypikpak.com/s/VO22p-Ls1CgEElGwV7_1JIv9o1/VO22owK_gb1WRvkTc-qCgabSo1",
+      "snippet": "IPZZ-257-C IPZZ-257-C.mp4 available for high-speed download on PikPak and streaming across multiple devices."
+    }
+  ]
+}

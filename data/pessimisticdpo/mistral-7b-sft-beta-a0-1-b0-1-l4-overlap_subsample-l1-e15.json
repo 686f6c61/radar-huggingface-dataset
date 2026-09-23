@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e15",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l1-e15",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e15",
+  "created_at": "2026-09-22T21:15:03.000Z",
+  "updated_at": "2026-09-22T21:15:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online Stopwatch - easy to use - timeanddate.com",
+      "url": "https://www.timeanddate.com/stopwatch/",
+      "snippet": "Online Stopwatch, with start alerts, lap times and sounds. Save details of your timings in a text file."
+    },
+    {
+      "title": "Online Timer with Alarm - timeanddate.com",
+      "url": "https://www.timeanddate.com/timer/",
+      "snippet": "Timer online with alarm. Create one or multiple timers and start them in any order. Set a silent timer clock or choose a sound."
+    },
+    {
+      "title": "timeanddate.com",
+      "url": "https://www.timeanddate.com/",
+      "snippet": "Online Stopwatch Time your activities. With start alerts, lap times, and alarm sound."
+    },
+    {
+      "title": "Countdown Timer to Any Date",
+      "url": "https://www.timeanddate.com/countdown/create",
+      "snippet": "Create a Countdown Timer that counts down in seconds, minutes, hours and days to any date, with time zone support. It also counts …"
+    },
+    {
+      "title": "Calendar 2026 - timeanddate.com",
+      "url": "https://www.timeanddate.com/calendar/",
+      "snippet": "Tools Years with Same Calendar as 2026 Customization Forms Customize this calendar–large – advanced form with more choices …"
+    }
+  ]
+}

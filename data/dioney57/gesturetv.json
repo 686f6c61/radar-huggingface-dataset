@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dioney57/GestureTV",
+  "slug": "dioney57-gesturetv",
+  "author": "dioney57",
+  "url": "https://huggingface.co/dioney57/GestureTV",
+  "created_at": "2026-09-23T01:02:00.000Z",
+  "updated_at": "2026-09-23T01:02:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ukuran Kertas A4 dalam cm, mm, inci & pixel yang Benar - ITKoding",
+      "url": "https://itkoding.com/ukuran-kertas-a4/",
+      "snippet": "Mar 19, 2024 · Ukuran kertas A4 dalam satuan centimeter adalah 21 X 29,7 cm. Lebar dari kertas tersebut adalah 21 cm. Panjang …"
+    },
+    {
+      "title": "Ukuran Kertas A4 dalam Cm, Mm, Inchi dan Cara Buatnya di Word",
+      "url": "https://www.detik.com/jabar/berita/d-6204067/ukuran-kertas-a4-dalam-cm-mm-inchi-dan-cara-buatnya-di-word",
+      "snippet": "Jul 30, 2022 · Mengutip situs Paper Size, ukuran kertas A4 dalam sentimeter atau Cm yakni 21 x 29,7 Cm. Ukuran kertas A4 ini juga …"
+    },
+    {
+      "title": "Ukuran Kertas A4 dalam Cm, Mm, Inci dan Pixel (Lengkap)",
+      "url": "https://selembar.com/ukuran-kertas-a4.html",
+      "snippet": "May 4, 2024 · Ukuran A4 dalam Cm (Sentimeter) Dimensi ukuran kertas A4 dalam centimeter adalah 21,0 x 29,7 cm. Yang berarti …"
+    },
+    {
+      "title": "Panduan Ukuran Kertas A4 Lengkap dan Penggunaannya",
+      "url": "https://percetakan.co.id/panduan-ukuran-kertas-a4-lengkap-dan-penggunaannya/",
+      "snippet": "Jul 19, 2025 · Ukuran Kertas A4 dalam Cm dan Mm Ukuran kertas A4 dalam satuan sentimeter adalah 21 cm x 29,7 cm. Jika …"
+    },
+    {
+      "title": "Ukuran Kertas A4 dalam CM, MM, Inci, dan Pixel - Dianisa.com",
+      "url": "https://dianisa.com/ukuran-kertas-a4",
+      "snippet": "Dec 12, 2023 · Kertas A4 memiliki ukuran 21 x 29,7 cm, yang termasuk dalam dua lembar dari kertas A5 dan setengah ukuran dari …"
+    }
+  ]
+}

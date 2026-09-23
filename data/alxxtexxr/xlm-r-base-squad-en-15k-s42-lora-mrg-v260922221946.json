@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "alxxtexxr/XLM-R-Base-squad-en-15K-s42-LoRA-mrg-v260922221946",
+  "slug": "alxxtexxr-xlm-r-base-squad-en-15k-s42-lora-mrg-v260922221946",
+  "author": "alxxtexxr",
+  "url": "https://huggingface.co/alxxtexxr/XLM-R-Base-squad-en-15K-s42-LoRA-mrg-v260922221946",
+  "created_at": "2026-09-22T22:45:47.000Z",
+  "updated_at": "2026-09-22T22:46:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "question-answering",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277454594,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126940600,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "» Wir über uns - Kinder- und jugendpsychiatrische Praxis Rösrath",
+      "url": "https://www.kjp-roesrath.de/wir-uber-uns/",
+      "snippet": "Die Vorurteile, mit denen die anspruchsvolle Disziplin zu kämpfen hat, sind zahlreich, weiß Dr. Josef Kirchner, der in seiner kinder- …"
+    },
+    {
+      "title": "- Kinder- und jugendpsychiatrische Praxis Rösrath",
+      "url": "https://www.kjp-roesrath.de/",
+      "snippet": "Unsere Therapieformen Diagnostik und Behandlung Ärzt*innen Pädagogisches Team Rezeption – Sekretariat – IT Anmeldung …"
+    },
+    {
+      "title": "Kinder- und jugendpsychiatrische Praxis Rösrath",
+      "url": "https://www.kjp-roesrath.de/diagnostik-und-behandlung/",
+      "snippet": "Behandlung und Diagnostik von: – Entwicklungsrückständen – Verhaltensstörungen – Aufmerksamkeits-und Aktivitätsstörungen – …"
+    },
+    {
+      "title": "» Ärzt*innen - Kinder- und jugendpsychiatrische Praxis Rösrath",
+      "url": "https://www.kjp-roesrath.de/arzte/",
+      "snippet": "Frau Dr. med. Peter Fachärztin für Kinder- und Jugendpsychiatrie und -psychotherapie Herr Dr. med. Kirchner Facharzt für Kinder- …"
+    },
+    {
+      "title": "Bescheinigung für das Mitführen von Betäubungsmitteln im Rahmen …",
+      "url": "https://www.kjp-roesrath.de/wordpress/wp-content/uploads/2026/08/Lisdexamfetamin.pdf",
+      "snippet": "Bescheinigung für das Mitführen von Betäubungsmitteln im Rahmen einer ärztlichen Behandlung - Artikel 75 des Schengener …"
+    }
+  ]
+}

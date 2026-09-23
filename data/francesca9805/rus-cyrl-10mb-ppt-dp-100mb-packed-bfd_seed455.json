@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed455",
+  "slug": "francesca9805-rus-cyrl-10mb-ppt-dp-100mb-packed-bfd_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed455",
+  "created_at": "2026-09-22T22:37:55.000Z",
+  "updated_at": "2026-09-22T22:39:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/rus_cyrl_10mb",
+    "base_model:finetune:goldfish-models/rus_cyrl_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79695474,
+  "storage_human": "80 MB",
+  "base_model": "goldfish-models/rus_cyrl_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Von A-Z: Alle Videos zum Streamen - ZDFmediathek",
+      "url": "https://www.zdf.de/sendungen-a-z",
+      "snippet": "Hier findest du alle Nachrichten, Sport und Magazine, Shows, Dokus, Filme & ZDF-Serien von A bis Z online!"
+    },
+    {
+      "title": "ZDF Streaming-Portal: Filme, Serien und Dokus online anschauen",
+      "url": "https://www.zdf.de/",
+      "snippet": "22 hours ago · Alle Videos und Livestreams im ZDF anschauen - ständig verfügbar und interaktiv! Entdecken Sie Filme, Serien, …"
+    },
+    {
+      "title": "Live & TV - ZDF - ZDFmediathek",
+      "url": "https://www.zdf.de/live-tv",
+      "snippet": "Alle ZDF-Livestreams kostenlos und jederzeit online genießen. Das komplette TV-Programm von ZDF, ZDFinfo, ZDFneo, arte, KiKA, …"
+    },
+    {
+      "title": "Bares für Rares - ZDFmediathek",
+      "url": "https://www.zdf.de/bares-fuer-rares-880",
+      "snippet": "Ob alter Krimskrams oder edle Rarität: In Horst Lichters Trödel-Show kann jeder seltene Fundstücke schätzen lassen - und mit …"
+    },
+    {
+      "title": "Die Rosenheim-Cops: Krimi in Spielfilmlänge - ZDFmediathek",
+      "url": "https://www.zdf.de/serien/die-rosenheim-cops-104",
+      "snippet": "Die Rosenheim-Cops ermitteln in Mordfällen in und rund um Rosenheim - und jeder Kopf im Kommisariat trägt auf ganz eigene, …"
+    }
+  ]
+}

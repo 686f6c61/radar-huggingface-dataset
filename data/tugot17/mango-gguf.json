@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tugot17/mango-gguf",
+  "slug": "tugot17-mango-gguf",
+  "author": "tugot17",
+  "url": "https://huggingface.co/tugot17/mango-gguf",
+  "created_at": "2026-09-23T00:16:34.000Z",
+  "updated_at": "2026-09-23T00:16:41.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:LiquidAI/LFM2.5-VL-3B",
+    "base_model:quantized:LiquidAI/LFM2.5-VL-3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 279468801,
+  "parameters_human": "279.5M",
+  "storage_bytes": 567204736,
+  "storage_human": "567 MB",
+  "base_model": "LiquidAI/LFM2.5-VL-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What are somatic and germline genetic testing? - Prostate Cancer …",
+      "url": "https://www.pcf.org/somatic-and-germline-genetic-testing-guide/what-are-somatic-and-germline-genetic-testing/",
+      "snippet": "Fortunately, specific genetic tests are available that can help you and your doctor choose the right treatment for you. Two main …"
+    },
+    {
+      "title": "Somatic and Germline Genetic Testing for Patients with Advanced ...",
+      "url": "https://www.pcf.org/wp-content/uploads/2025/11/PatientGuide-Testing-web.pdf",
+      "snippet": "your doctor will refer you to a genetic counselor to discuss your test results. Talking to a genetic counselor can make your germline …"
+    },
+    {
+      "title": "Prostate Cancer Review: Genetics, Diagnosis, Treatment Options, …",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9457814/",
+      "snippet": "According to the most recent guidelines, any man at risk of prostate cancer should have an MRI of the prostate performed before …"
+    },
+    {
+      "title": "Germline and somatic mutations in prostate cancer: Implications for ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0147027224000424",
+      "snippet": "Jun 1, 2024 · There are now several Food & Drug Administration (FDA) approved therapeutics available for patients with prostate …"
+    },
+    {
+      "title": "Guidelines for genetic testing in prostate cancer: a scoping review",
+      "url": "https://www.nature.com/articles/s41391-023-00676-0",
+      "snippet": "May 18, 2023 · There are various guidelines and consensus statements for genetic testing in prostate cancer. Our aim is to review …"
+    }
+  ]
+}

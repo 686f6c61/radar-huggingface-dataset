@@ -5,7 +5,7 @@
   "author": "Shockem",
   "url": "https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder-NVFP4",
   "created_at": "2026-09-18T20:43:57.000Z",
-  "updated_at": "2026-09-20T02:03:00.000Z",
+  "updated_at": "2026-09-22T19:58:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 41,
+  "downloads_30d": 43,
   "trending_score": 0,
   "parameters": 18799063792,
   "parameters_human": "18.80B",
-  "storage_bytes": 21929592797,
-  "storage_human": "21.9 GB",
+  "storage_bytes": 43001888533,
+  "storage_human": "43.0 GB",
   "base_model": "Shockem/Qwen3.8-27b-Terse-Coder",
   "formats": [
     "safetensors"

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Hanno-Labs/bosun-v3.1-1.7b-GGUF",
+  "slug": "hanno-labs-bosun-v3-1-1-7b-gguf",
+  "author": "Hanno-Labs",
+  "url": "https://huggingface.co/Hanno-Labs/bosun-v3.1-1.7b-GGUF",
+  "created_at": "2026-09-22T22:23:47.000Z",
+  "updated_at": "2026-09-22T23:11:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "bosun",
+    "decision-model",
+    "typed-decisions",
+    "qwen3",
+    "en",
+    "base_model:Hanno-Labs/bosun-v3.1-1.7b",
+    "base_model:quantized:Hanno-Labs/bosun-v3.1-1.7b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720552448,
+  "parameters_human": "1.72B",
+  "storage_bytes": 6541060354,
+  "storage_human": "6.5 GB",
+  "base_model": "Hanno-Labs/bosun-v3.1-1.7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "هيئة الزكاة والضريبة والجمارك",
+      "url": "https://zatca.gov.sa/",
+      "snippet": "بوابة إلكترونية لإخراج زكاة الأفراد بشكل اختياري. مرجع شامل لتفاصيل البنود الجمركية الموحدة. بوابة إلكترونية للمشاركة في مزادات الهيئة. ضريبة القيمة المضافة هي ضريبة غير مباشرة تُفرض …"
+    },
+    {
+      "title": "تسجيل الدخول - الهيئة العامة للزكاة ...",
+      "url": "https://zatca.gov.sa/ar/login/Pages/Login.aspx",
+      "snippet": "لأي استفسار أو ملاحظات حول الخدمات أو الصفحة الحالية، يرجى ملء المعلومات المطلوبة. هل استفدت من المعلومات المقدمة في هذه الصفحة؟"
+    },
+    {
+      "title": "هيئة الزكاة والضريبة والجمارك - Zatca",
+      "url": "https://eservices.zatca.gov.sa/sites/sc/ar/Pages/Home.aspx",
+      "snippet": "هيئة الزكاة والضريبة والجمارك > هيئة الزكاة والضريبة والجمارك ترخيص مهنة التخليص الجمركي التسجيل في نظام النقل البري الدولي (TIR) الانضمام لنظام (RFS) طلبات نظام (RFS) و …"
+    },
+    {
+      "title": "هيئة الزكاة والضريبة والجمارك تسجيل الدخول",
+      "url": "https://eservices.zatca.gov.sa/sites/sc/ar/Pages/Pages/login.aspx",
+      "snippet": "مرحبًا بك في تجربة هيئة الزكاة والضريبة والجمارك الرقمية الجديدة"
+    },
+    {
+      "title": "هيئة الزكاة والضريبة والجمارك - Zatca",
+      "url": "https://login.zatca.gov.sa/irj/portal?ume.logon.locale=ar",
+      "snippet": "رمز التحقـق الرجاء إدخال رمز التحقق المرسل من خلال الرسائل النصية على الجوال سيتم حجب الحساب في حال إدخال رمز التحقق أكثر من ثلاث مرات بشكل خاطئ رقم الجوال صلاحية رمز التحقق 00:00 …"
+    }
+  ]
+}

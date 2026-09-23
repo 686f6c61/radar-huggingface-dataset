@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "ewin-reg/WeMM-Embedding-2B-INT8",
+  "slug": "ewin-reg-wemm-embedding-2b-int8",
+  "author": "ewin-reg",
+  "url": "https://huggingface.co/ewin-reg/WeMM-Embedding-2B-INT8",
+  "created_at": "2026-09-22T23:48:07.000Z",
+  "updated_at": "2026-09-23T00:44:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3_5",
+    "multimodal",
+    "embeddings",
+    "retrieval",
+    "feature-extraction",
+    "quantization",
+    "mixed-precision",
+    "int8",
+    "w8a8",
+    "mrl",
+    "cross-modal",
+    "text-embeddings",
+    "image-embedding",
+    "video-embedding",
+    "custom_code",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:ewin-reg/WeMM-Embedding-2B-Quantized",
+    "base_model:finetune:ewin-reg/WeMM-Embedding-2B-Quantized",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1845274304,
+  "parameters_human": "1.85B",
+  "storage_bytes": 1957511666,
+  "storage_human": "2.0 GB",
+  "base_model": "ewin-reg/WeMM-Embedding-2B-Quantized",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sabrina Prezotte, the Transvestite with a Big Dick, Visits Her Client's ...",
+      "url": "https://xhamster.com/videos/sabrina-prezotte-the-transvestite-with-a-big-dick-visits-her-clients-farm-and-squirts-a-lot-of-milk-xhJa2jg",
+      "snippet": "Watch Sabrina Prezotte, the Transvestite with a Big Dick, Visits Her Client's Farm and Squirts a Lot of Milk porn. Starring: …"
+    },
+    {
+      "title": "Prezottes_House Trans Porn Videos: Shemale Sex | xHamster",
+      "url": "https://xhamster.com/shemale/creators/prezottes-house",
+      "snippet": "Find nude Prezottes_House trans porn videos featuring the shemale model fucks in XXX scenes, including anal, solo, creampie. Visit …"
+    },
+    {
+      "title": "Sabrina Prezotte Porn Star Videos - EPORNER",
+      "url": "https://www.eporner.com/pornstar/sabrina-prezotte/",
+      "snippet": "Watch Sabrina Prezotte HD porn videos for free on Eporner.com. We have 39 full length hd movies with Sabrina Prezotte in our …"
+    },
+    {
+      "title": "Sabrina Prezotte the Transvestite with a Big Dick Visits Her ... - xHamster",
+      "url": "https://xhamster.desi/videos/sabrina-prezotte-the-transvestite-with-a-big-dick-visits-her-clients-farm-and-squirts-a-lot-of-milk-xhJa2jg",
+      "snippet": "Aug 27, 2025 · Watch Sabrina Prezotte the Transvestite with a Big Dick Visits Her Client's Farm and Squirts a Lot of Milk shemale …"
+    },
+    {
+      "title": "Tattooed Trans Sabrina Prezotte Strokes Her Thick Cock",
+      "url": "https://www.pornhub.com/view_video.php?viewkey=ph623030c737bbb",
+      "snippet": "Watch Tattooed Trans Sabrina Prezotte Strokes Her Thick Cock on Pornhub.com, the best hardcore porn site. Pornhub is home to …"
+    }
+  ]
+}

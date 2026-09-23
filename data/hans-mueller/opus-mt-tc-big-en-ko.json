@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "Hans-Mueller/opus-mt-tc-big-en-ko",
+  "slug": "hans-mueller-opus-mt-tc-big-en-ko",
+  "author": "Hans-Mueller",
+  "url": "https://huggingface.co/Hans-Mueller/opus-mt-tc-big-en-ko",
+  "created_at": "2026-09-22T21:39:42.000Z",
+  "updated_at": "2026-09-22T21:46:00.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "safetensors",
+    "marian",
+    "translation",
+    "opus-mt-tc",
+    "en",
+    "ko",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 209158401,
+  "parameters_human": "209.2M",
+  "storage_bytes": 1684435705,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Translation eng-kor",
+      "dataset": "flores101-devtest",
+      "metric": "BLEU",
+      "value": 13.7
+    },
+    {
+      "task": "Translation eng-kor",
+      "dataset": "flores101-devtest",
+      "metric": "chr-F",
+      "value": 0.36399
+    }
+  ],
+  "sources": [
+    {
+      "title": "Prénom Hans (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/hans/prenom-6846",
+      "snippet": "Dec 27, 2012 · La forme ancienne Yehohanan, composée des termes Yeho et hanan, peut être interprétée au sens de \"Dieu …"
+    },
+    {
+      "title": "Hans (prénom) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Hans_(pr%C3%A9nom)",
+      "snippet": "Hans est un prénom masculin danois, allemand et néerlandais, c'est un diminutif de Johannes que l'on trouve aussi sous la forme …"
+    },
+    {
+      "title": "Hans — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Hans",
+      "snippet": "Hans est le nom d'une dépression qui toucha la France le 24 août 2015. Elle apporta de fortes rafales de vent, de fortes …"
+    },
+    {
+      "title": "Prénom Hans : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/hans-42366",
+      "snippet": "Ce prénom est d'origine hébraïque, dérivé de « yohanân » et il signifie « Dieu fait grâce ». Il peut s'écrire Hans ou Hanns. Les …"
+    },
+    {
+      "title": "Hans (given name) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hans_(given_name)",
+      "snippet": "Hans is a male given name in Afrikaans, Danish, Dutch, Estonian, Faroese, German, Norwegian, Icelandic and Swedish -speaking …"
+    }
+  ]
+}

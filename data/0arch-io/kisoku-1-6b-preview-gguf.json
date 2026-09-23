@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "0arch-io/kisoku-1.6b-preview-GGUF",
+  "slug": "0arch-io-kisoku-1-6b-preview-gguf",
+  "author": "0arch-io",
+  "url": "https://huggingface.co/0arch-io/kisoku-1.6b-preview-GGUF",
+  "created_at": "2026-09-22T22:17:57.000Z",
+  "updated_at": "2026-09-22T22:26:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "llama.cpp",
+    "from-scratch",
+    "uncensored",
+    "preview",
+    "text-generation",
+    "en",
+    "base_model:0arch-io/kisoku-1.6b-preview",
+    "base_model:quantized:0arch-io/kisoku-1.6b-preview",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1600749056,
+  "parameters_human": "1.60B",
+  "storage_bytes": 5940710368,
+  "storage_human": "5.9 GB",
+  "base_model": "0arch-io/kisoku-1.6b-preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DaFont - Baixar fontes",
+      "url": "https://www.dafont.com/pt/",
+      "snippet": "As fontes apresentadas neste site são propriedades de seus autores, e são tanto freeware, shareware, versões demo ou de domínio …"
+    },
+    {
+      "title": "Top | dafont.com",
+      "url": "https://www.dafont.com/top.php",
+      "snippet": "Archive of freely downloadable fonts. Browse by alphabetical listing, by style, by author or by popularity."
+    },
+    {
+      "title": "有问题，就会有答案 - 知乎",
+      "url": "https://www.zhihu.com/creator",
+      "snippet": "北京智者天下科技有限公司 知乎专栏 圆桌 发现 移动应用 联系我们 来知乎工作 注册机构号 Investor Relations"
+    },
+    {
+      "title": "美国政府设备重新允许使用TikTok，特朗普称其在TikTok ...",
+      "url": "https://www.zhihu.com/question/2070813507499643585",
+      "snippet": "但是9月份之前，又必须表个态，那tiktok就是最好的选择了： 第一，白宫8月10日撤销的，是 2023年颁布的、禁止联邦政府设备使 …"
+    },
+    {
+      "title": "TikTok 45.4.3 抓包之双网络栈证书校验分析 - 吾爱破解 ...",
+      "url": "https://www.52pojie.cn/thread-2111184-1-1.html",
+      "snippet": "Jun 5, 2026 · 工具链：google px4真机、proxypin 1.2.7、IDA 9.0。某海外社交app。先hook下connect函数，看下app使用的网络请求 …"
+    }
+  ]
+}

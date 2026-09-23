@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "AntoniusPerf/runic-ocr-qwen-vl-lora",
+  "slug": "antoniusperf-runic-ocr-qwen-vl-lora",
+  "author": "AntoniusPerf",
+  "url": "https://huggingface.co/AntoniusPerf/runic-ocr-qwen-vl-lora",
+  "created_at": "2026-09-22T22:29:02.000Z",
+  "updated_at": "2026-09-22T22:47:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ocr",
+    "runes",
+    "runic",
+    "qwen2.5-vl",
+    "qwen3-vl",
+    "qlora",
+    "htr",
+    "digital-epigraphy",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 457738662,
+  "storage_human": "458 MB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct, Qwen/Qwen3-VL-8B-Instruct, Qwen/Qwen3-VL-2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frauenarztpraxis von Dr. Bernhard Sonntag am Senefelderplatz Berlin",
+      "url": "https://www.frauenarzt-am-senefelderplatz.de/",
+      "snippet": "Jun 10, 2026 · Frauenarztpraxis Dr. Bernhard Sonntag in Berlin: Vorsorge, Schwangerschaft, Risikoschwangerschaften & Impfungen …"
+    },
+    {
+      "title": "Berlin - Dr. med. Bernhard Sonntag - Frauenarzt Berlin / Startseite",
+      "url": "https://www.frauenaerzte-im-netz.de/aerzte/berlin/sonntag/startseite.html",
+      "snippet": "Dr. med. Bernhard Sonntag Facharzt für Frauenheilkunde und Geburtshilfe, Deutschland, Naturheilverfahren Termine und …"
+    },
+    {
+      "title": "Team – Frauenarztpraxis Dr. Sonntag am Senefelderplatz",
+      "url": "https://www.frauenarzt-am-senefelderplatz.de/team/",
+      "snippet": "Engagiertes Team aus erfahrenen Frauenärzt*innen und medizinischen Fachangestellten – einfühlsam, kompetent und persönlich …"
+    },
+    {
+      "title": "Dr. med. Bernhard Sonntag - Frauenarzt (Gynäkologe) Berlin",
+      "url": "https://www.jameda.de/bernhard-sonntag/frauenarzt-gynaekologe/berlin",
+      "snippet": "Wir zeigen Ihnen einige Behandlungsschwerpunkte, mit denen Dr. med. Bernhard Sonntag besonders viel Erfahrung hat: …"
+    },
+    {
+      "title": "Dr. med. Bernhard Sonntag, Facharzt für Frauenheilkunde und ...",
+      "url": "https://www.arzt-auskunft.de/arzt/frauenheilkunde-und-geburtshilfe/berlin-prenzlauer-berg/dr-med-bernhard-sonntag-2577347",
+      "snippet": "In der Arzt-Auskunft können Sie Praxen ganz nach Ihren individuellen Bedürfnissen auswählen. Finden Sie schnelle Antworten auf …"
+    }
+  ]
+}

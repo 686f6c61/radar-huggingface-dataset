@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "jerryyan/e2etext-T1edu1-T1",
+  "slug": "jerryyan-e2etext-t1edu1-t1",
+  "author": "jerryyan",
+  "url": "https://huggingface.co/jerryyan/e2etext-T1edu1-T1",
+  "created_at": "2026-09-22T19:09:21.000Z",
+  "updated_at": "2026-09-22T22:59:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "html-to-text",
+    "web-cleaning",
+    "pretraining-data",
+    "data-curation",
+    "dclm",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203565511,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The best hotels in Bo-Kaap, Cape Town, South Africa",
+      "url": "https://www.booking.com/district/za/cape-town/bo-kaap.html?msockid=3a282245f9496b180f293599f85a6ad4",
+      "snippet": "Sep 1, 2026 · Book your hotel in Bo-Kaap, Cape Town online. But where exactly? Find all hotels in Bo-Kaap, Cape Town on a city …"
+    },
+    {
+      "title": "THE BEST Hotels in Bo-Kaap, South Africa 2026 - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Hotels-g15292460-Bo_Kaap_Western_Cape-Hotels.html",
+      "snippet": "Best Bo-Kaap Accommodation on Tripadvisor: Find traveler reviews, candid photos, and prices for hotels in Bo-Kaap, Western Cape, …"
+    },
+    {
+      "title": "THE BEST Hotels in Bo-Kaap of 2026 - Tripadvisor",
+      "url": "https://www.tripadvisor.co.za/Hotels-g15292460-Bo_Kaap_Western_Cape-Hotels.html",
+      "snippet": "Best Bo-Kaap Hotels on Tripadvisor: Find traveller reviews, candid photos, and prices for hotels in Bo-Kaap, Western Cape, South …"
+    },
+    {
+      "title": "Hotels near Bo-Kaap Museum, Cape Town - Booking.com",
+      "url": "https://www.booking.com/landmark/za/bo-kaap-museum.en-gb.html?msockid=3a282245f9496b180f293599f85a6ad4",
+      "snippet": "Sep 1, 2026 · Find hotels near Bo-Kaap Museum, South Africa online. Good availability and great rates. Book online, pay at the …"
+    },
+    {
+      "title": "Bo Kaap Hotels | Find and compare great deals on trivago",
+      "url": "https://www.trivago.co.za/en-ZA/odr/hotels-bo-kaap-south-africa?search=200-85072",
+      "snippet": "Sep 1, 2026 · Compare the prices of 11 hotels in Bo Kaap, South Africa. Find your ideal accommodation from hundreds of great …"
+    }
+  ]
+}

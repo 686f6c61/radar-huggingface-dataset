@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/phi-3.5-mini-instruct-q4f16",
+  "slug": "skillsafe-ai-phi-3-5-mini-instruct-q4f16",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/phi-3.5-mini-instruct-q4f16",
+  "created_at": "2026-09-22T22:01:38.000Z",
+  "updated_at": "2026-09-22T22:01:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "skillsafe",
+    "browser",
+    "web-llm",
+    "text-generation",
+    "mlc",
+    "conversational",
+    "base_model:microsoft/Phi-3.5-mini-instruct",
+    "base_model:quantized:microsoft/Phi-3.5-mini-instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2155615512,
+  "storage_human": "2.2 GB",
+  "base_model": "microsoft/Phi-3.5-mini-instruct",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "اليوم السابع",
+      "url": "https://www.youm7.com/",
+      "snippet": "بوابة اليوم السابع الاخبارية تقدم احدث واهم اخبار مصر على مدار اليوم كما نقدم اهم اخبار الرياضة والفن والاقتصاد والحوادث"
+    },
+    {
+      "title": "أخبار عاجلة - اليوم السابع",
+      "url": "https://www.youm7.com/Section/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%B9%D8%A7%D8%AC%D9%84%D8%A9/65/1",
+      "snippet": "أطلق الهلال الأحمر المصري، اليوم، قافلة «زاد العزة.. من مصر إلى غزة» 281، محملة بالمساعدات الإنسانية المتجهة إلى قطاع غزة، في إطار دوره كآلية وطنية لتنسيق وإيصال المساعدات الإنسانية إلى …"
+    },
+    {
+      "title": "اليوم السابع",
+      "url": "https://m.youm7.com/intro.html",
+      "snippet": "اليوم السابع موقع اليوم السابع نتيجة الثانوية العامة جامعة النيل"
+    },
+    {
+      "title": "أخبار عاجلة - اليوم السابع",
+      "url": "https://www.youm7.com/Section/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%B9%D8%A7%D8%AC%D9%84%D8%A9/65/95",
+      "snippet": "تعد قطارات تالجو الإسبانية من أسرع وأحدث القطارات العاملة بهيئة السكة الحديد، حيث توفر أعلى درجات الراحة والهدوء للركاب. وينشر «اليوم السابع» مواعيد تشغيل قطارات تالجو على خطوط السكة …"
+    },
+    {
+      "title": "أخبار - اليوم السابع",
+      "url": "https://www.youm7.com/Section/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/269/1",
+      "snippet": "رغم الهزيمة فى نهائى المونديال أمام إسبانيا بهدف نظيف،أصر رئيس الوزراء الهولندى\"بيتر جان بلاكنيندى\" على استقبال لاعبى منتخب بلاده العائدين من جنوب أفريقيا صباح اليوم."
+    }
+  ]
+}

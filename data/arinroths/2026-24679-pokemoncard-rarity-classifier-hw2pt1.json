@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ArinRoths/2026-24679-pokemoncard-rarity-classifier-hw2Pt1",
+  "slug": "arinroths-2026-24679-pokemoncard-rarity-classifier-hw2pt1",
+  "author": "ArinRoths",
+  "url": "https://huggingface.co/ArinRoths/2026-24679-pokemoncard-rarity-classifier-hw2Pt1",
+  "created_at": "2026-09-22T23:11:43.000Z",
+  "updated_at": "2026-09-22T23:31:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "autogluon",
+    "tabular",
+    "classification",
+    "pokemon",
+    "dataset:pakiino/2026-24679-pokemon-151-tabular-hw1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 718454,
+  "storage_human": "718454 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Download & use Google Translate You can translate text, handwriting, photos, and speech in over 200 languages with the Google …"
+    },
+    {
+      "title": "Descargar y usar el Traductor de Google",
+      "url": "https://support.google.com/translate/answer/6350850?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": "En la página del Traductor de Google puedes traducir texto, audio y sitios web en más de 200 idiomas. Esta página puede incluir …"
+    },
+    {
+      "title": "El traductor de Chrome no funciona (Android) - Google Help",
+      "url": "https://support.google.com/chrome/thread/451830484/el-traductor-de-chrome-no-funciona-android?hl=es",
+      "snippet": "Jul 16, 2026 · El traductor de Chrome no funciona (Android) Da igual qué web visite o el idioma que pida traducir siempre me pone …"
+    },
+    {
+      "title": "Translate pages and change Chrome languages - Google Help",
+      "url": "https://support.google.com/chrome/answer/173424?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can use Chrome to translate pages. You can also change your preferred language in Chrome. Translate pages in Chrome You …"
+    }
+  ]
+}

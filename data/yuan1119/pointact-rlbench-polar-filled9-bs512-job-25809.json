@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yuan1119/pointact-rlbench-polar-filled9-bs512-job-25809",
+  "slug": "yuan1119-pointact-rlbench-polar-filled9-bs512-job-25809",
+  "author": "yuan1119",
+  "url": "https://huggingface.co/yuan1119/pointact-rlbench-polar-filled9-bs512-job-25809",
+  "created_at": "2026-09-22T22:35:38.000Z",
+  "updated_at": "2026-09-22T22:36:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "robotics",
+    "rlbench",
+    "pointact",
+    "action-classification",
+    "polar-representation",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22713085621,
+  "storage_human": "22.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How Many Miles a Day to Lose Weight: Practical Walking Guide",
+      "url": "https://www.berrystreet.co/blog/how-many-miles-a-day-to-lose-weight-a-realistic-sustainable-walking-guide",
+      "snippet": "Most people see sustainable weight loss walking 1 to 4 miles per day, or about 200 to 300 minutes per week, depending on pace, …"
+    },
+    {
+      "title": "How Long Should I Walk To Lose Weight? Optimal Distance For Fat Loss",
+      "url": "https://www.womenshealthmag.com/weight-loss/a69978880/how-long-should-i-walk-to-lose-weight-optimal-daily-dose/",
+      "snippet": "Jan 12, 2026 · For weight loss, walking at a moderate pace for 30-45 minutes per day, or 150 minutes per week, is generally …"
+    },
+    {
+      "title": "The Runner’s World Guide to Walking for Weight Loss",
+      "url": "https://www.runnersworld.com/nutrition-weight-loss/a69769015/walking-for-weight-loss-guide/",
+      "snippet": "Jan 15, 2026 · Short bursts of brisk walking—even just 10 minutes per day, every day for a week—provide a host of benefits, …"
+    },
+    {
+      "title": "Walking Weight Loss Calculator | Walking to Lose Weight",
+      "url": "https://www.walkingcalculator.com/walking-weight-loss-planner/",
+      "snippet": "Walking for weight loss calculator: enter your current and goal weight with a target date. Get a daily walking plan with miles, steps, …"
+    },
+    {
+      "title": "Walking for Weight Loss: The Complete Evidence-Based Guide - Very Good Walk",
+      "url": "https://www.verygoodwalk.com/weight-loss/walking-for-weight-loss/",
+      "snippet": "Jun 29, 2026 · Walking for weight loss works at 200 to 300 minutes per week of brisk pace, paired with modest dietary changes. Add …"
+    }
+  ]
+}

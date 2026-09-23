@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/u2netp",
+  "slug": "skillsafe-ai-u2netp",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/u2netp",
+  "created_at": "2026-09-22T21:46:59.000Z",
+  "updated_at": "2026-09-22T21:47:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "skillsafe",
+    "browser",
+    "onnxruntime-web",
+    "background-removal",
+    "import",
+    "base_model:tomjackson2023/rembg",
+    "base_model:quantized:tomjackson2023/rembg",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4574861,
+  "storage_human": "5 MB",
+  "base_model": "tomjackson2023/rembg",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PC gratuiti dall’Agenzia delle Entrate…ma solo via PEC",
+      "url": "https://www.forumpa.it/pa-digitale/pc-gratuiti-dallagenzia-delle-entratema-solo-via-pec/",
+      "snippet": "Sep 15, 2009 · Con un bando pubblicato sul proprio sito internet, l’Agenzia delle entrate mette gratuitamente a disposizione 134 pc …"
+    },
+    {
+      "title": "Civis in tutta Italia: la consulenza delle Entrate ai professionisti ...",
+      "url": "https://www.forumpa.it/pa-digitale/civis-in-tutta-italia-la-consulenza-delle-entrate-ai-professionisti-via-web/",
+      "snippet": "Jan 15, 2010 · La piattaforma Civis dell’Agenzia delle Entrate, sviluppata per fornire via web risposte rapide ai professionisti in …"
+    },
+    {
+      "title": "Carmine Pugliese Archivi - FPA",
+      "url": "https://www.forumpa.it/relatori/carmine-pugliese/",
+      "snippet": "Jul 15, 2026 · Dal 2013 sono certificato TOGAF Enterprise Architecture per lo sviluppo e la realizzazione di progetti di …"
+    },
+    {
+      "title": "Giovanni Leone Archivi - FPA",
+      "url": "https://www.forumpa.it/relatori/giovanni-leone/",
+      "snippet": "May 17, 2023 · Dal 2014, funzionario tecnico presso l’Agenzia delle Entrate con specifico riferimento alle attività di cui alla …"
+    },
+    {
+      "title": "Una sola carta per tanti servizi: la CRS in Friuli Venezia Giulia",
+      "url": "https://www.forumpa.it/pa-digitale/una-sola-carta-per-tanti-servizi-la-crs-in-friuli-venezia-giulia/",
+      "snippet": "Nov 3, 2009 · Questa collaborazione tra i diversi attori coinvolti (la Regione Friuli Venezia Giulia, il Ministero dell’Economia e delle …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfd_seed3407",
+  "slug": "francesca9805-urd-arab-10mb-ppt-dp-10mb-packed-bfd_seed3407",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfd_seed3407",
+  "created_at": "2026-09-23T00:13:32.000Z",
+  "updated_at": "2026-09-23T00:15:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/urd_arab_10mb",
+    "base_model:finetune:goldfish-models/urd_arab_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 38038528,
+  "parameters_human": "38.0M",
+  "storage_bytes": 77240652,
+  "storage_human": "77 MB",
+  "base_model": "goldfish-models/urd_arab_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Youclout (YCT) Price Today: YCT Live Price, Charts, News - Crypto…",
+      "url": "https://crypto.com/uk/price/youclout",
+      "snippet": "Youclout (YCT) price today is $0.00. See YCT live price charts, market cap, latest news, trading volume and more key market metrics."
+    },
+    {
+      "title": "Youclout (YCT) Preis, Infos und sichere Aufbewahrung | Tangem",
+      "url": "https://tangem.com/de/cryptocurrencies/youclout/",
+      "snippet": "Wie Youclout-Transaktionen funktionieren YouClout operiert auf der Binance Smart Chain und nutzt die Blockchain-Technologie, um …"
+    },
+    {
+      "title": "Cours Youclout (YCT/USD): Graphique & Actualités | CoinGecko",
+      "url": "https://www.coingecko.com/fr/coins/youclout",
+      "snippet": "Le cours de Youclout (YCT) est de $0,0001194 aujourd'hui, avec un volume d’échange sur 24 heures de $359,89. Suivez le cours en …"
+    },
+    {
+      "title": "Technical Analysis of Youclout (CRYPTO:YCTUSD) — TradingView",
+      "url": "https://www.tradingview.com/symbols/YCTUSD/technicals/",
+      "snippet": "Which technical analysis tools can be used to analyze Youclout? Check out various oscillators, moving averages and other technical …"
+    },
+    {
+      "title": "Криптовалюта Youclout (YCT) - crypto.ru",
+      "url": "https://crypto.ru/youclout-yct/",
+      "snippet": "💰 Криптовалюта Youclout (YCT) История Прогнозы и аналитика Технологии Майнинг и способы заработка Особенности и …"
+    }
+  ]
+}

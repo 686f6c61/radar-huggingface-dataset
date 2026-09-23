@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "flymy-ai/decision-fast-preview",
+  "slug": "flymy-ai-decision-fast-preview",
+  "author": "flymy-ai",
+  "url": "https://huggingface.co/flymy-ai/decision-fast-preview",
+  "created_at": "2026-09-23T00:02:07.000Z",
+  "updated_at": "2026-09-23T00:02:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "typed-decisions",
+    "lora",
+    "native-probabilities",
+    "research-preview",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:adapter:Qwen/Qwen3-0.6B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42539904,
+  "storage_human": "43 MB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl lohnt sich - Lokal bei Dir vor Ort und Online",
+      "url": "https://www.lidl.de/?msockid=2da95e32dffc6f2a01e649efdea36e80",
+      "snippet": "Filialen findest du überall und unsere Prospekte erhältst du sogar per App. Selbst im Urlaub bekommst du dein gewohntes Lidl …"
+    },
+    {
+      "title": "Lidl Filialen in Deutschland",
+      "url": "https://www.lidl.de/s/de-DE/filialen/?msockid=2da95e32dffc6f2a01e649efdea36e80",
+      "snippet": "Finde schnell und einfach deine Lidl Filiale mit der Filialsuche oder über das Bundesland. Angebote und Prospekte für Lidl in der Nähe."
+    },
+    {
+      "title": "Wo finde ich meine nächste Filiale und die Öffnungszeiten?",
+      "url": "https://kundenservice.lidl.de/SelfServiceDE/s/article/Wo-finde-ich-meine-n%C3%A4chste-Filiale-und-die-%C3%96ffnungszeiten",
+      "snippet": "Die Informationen zu den Öffnungszeiten und die Filialen in deiner Nähe findest du hier. Durch die Eingabe deiner fünfstelligen …"
+    },
+    {
+      "title": "Store Finder - Lidl GB",
+      "url": "https://www.lidl.co.uk/c/store-finder/s10023098",
+      "snippet": "Pop your postcode into the box and click your nearest store to see opening times and all the offers within grabbing distance. Never …"
+    },
+    {
+      "title": "Lidl Filialen in Deutschland - Adressen & Standorte finden",
+      "url": "https://supermarkt-finder.de/supermarktketten/lidl/",
+      "snippet": "Mithilfe unserer Suchfunktion können Sie Lidl Filialen gezielt nach Städten oder Postleitzahlen finden. Zusätzlich steht Ihnen eine …"
+    }
+  ]
+}

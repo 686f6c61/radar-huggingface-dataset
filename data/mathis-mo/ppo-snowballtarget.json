@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Mathis-Mo/ppo-SnowballTarget",
+  "slug": "mathis-mo-ppo-snowballtarget",
+  "author": "Mathis-Mo",
+  "url": "https://huggingface.co/Mathis-Mo/ppo-SnowballTarget",
+  "created_at": "2026-09-22T21:53:41.000Z",
+  "updated_at": "2026-09-22T21:53:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25724432,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mathis Construction Bois",
+      "url": "https://www.mathis.eu/fr",
+      "snippet": "Mathis : conception, fabrication et construction de grands bâtiments en bois et de bâtiments publics en bois, clé en main. Notre …"
+    },
+    {
+      "title": "mathis-auto.com - Automobiles Mathis fabriquées à Strasbourg",
+      "url": "http://www.mathis-auto.com/",
+      "snippet": "Présentation des automobiles Mathis de Strasbourg créées par Émile Mathis. Collection d'objets, de documents et de photos …"
+    },
+    {
+      "title": "Prénom Mathis (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/mathis/prenom-8966",
+      "snippet": "Quelle est l'origine du prénom Mathis ? Le prénom Mathis a pour origine le prénom hébraïque Mattatyahu. Mathis peut aussi être …"
+    },
+    {
+      "title": "Prénom Mathis : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/mathis-49123",
+      "snippet": "Signification et étymologie du prénom Mathis Le prénom Mathis est dérivé de Matthieu (en hébreu Mattatyahu), composé de matith, …"
+    },
+    {
+      "title": "L'entreprise - Mathis",
+      "url": "https://www.mathis.eu/FR/Entreprise.html",
+      "snippet": "La société avec ses agences régionales est leader sur le segment des bâtiments industriels et de bureaux, les équipements de …"
+    }
+  ]
+}

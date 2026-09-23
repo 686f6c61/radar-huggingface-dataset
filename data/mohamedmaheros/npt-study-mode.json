@@ -5,7 +5,7 @@
   "author": "mohamedmaheros",
   "url": "https://huggingface.co/mohamedmaheros/npt-study-mode",
   "created_at": "2026-09-20T15:44:47.000Z",
-  "updated_at": "2026-09-22T02:12:35.000Z",
+  "updated_at": "2026-09-22T03:24:20.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 15125125569,
-  "storage_human": "15.1 GB",
+  "storage_bytes": 15379181756,
+  "storage_human": "15.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

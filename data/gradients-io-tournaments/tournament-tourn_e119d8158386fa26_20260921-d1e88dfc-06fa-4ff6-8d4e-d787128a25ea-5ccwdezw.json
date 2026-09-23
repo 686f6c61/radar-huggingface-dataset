@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-d1e88dfc-06fa-4ff6-8d4e-d787128a25ea-5CcwdezW",
+  "slug": "gradients-io-tournaments-tournament-tourn_e119d8158386fa26_20260921-d1e88dfc-06fa-4ff6-8d4e-d787128a25ea-5ccwdezw",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-d1e88dfc-06fa-4ff6-8d4e-d787128a25ea-5CcwdezW",
+  "created_at": "2026-09-22T22:04:40.000Z",
+  "updated_at": "2026-09-22T22:04:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/620e67e7ad144bcf",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2595167020,
+  "storage_human": "2.6 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CCleaner Pro 6.15.10623 绿色版 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1802893-1-1.html",
+      "snippet": "Jun 29, 2023 · 更新了一直在用的CCleaner 专业版，最新版本号为6.15.10623。使用界面如下官方网址：CCleaner Professional | 免费 …"
+    },
+    {
+      "title": "WiseDiskCleaner磁盘清理v11.2.7.847绿色版 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-2065667-1-1.html",
+      "snippet": "Oct 13, 2025 · 吾爱破解 - 52pojie.cn » 网站 › 【 软件安全 】 › 『精品软件区』 › WiseDiskCleaner磁盘清理v11.2.7.847绿色版"
+    },
+    {
+      "title": "哪款电脑清理软件最好？ - 知乎",
+      "url": "https://www.zhihu.com/question/395129478",
+      "snippet": "第三， 别装太多“清理软件”。 装一个CCleaner或者Wise Care 365就够了，装三四个同类软件，它们互相扫描对方的缓存文件，反而 …"
+    },
+    {
+      "title": "ccleaner - 知乎",
+      "url": "https://www.zhihu.com/topic/19707143",
+      "snippet": "CCleaner是由Piriform开发的一款免费软件，可从Windows及其他软件（如Mozilla Firefox、Opera、Internet Explorer、Quicktime …"
+    },
+    {
+      "title": "Wise Disk Cleaner （C盘垃圾清理） V10.4.1.789 绿色最新优化版（蓝 …",
+      "url": "https://www.52pojie.cn/thread-1360813-1-1.html",
+      "snippet": "Jan 28, 2021 · Wise Disk Cleaner（C盘垃圾清理） V10.4.1.789 绿色最新优化版C盘，啊，C盘，拿什么拯救咱们电脑越来越大的C …"
+    }
+  ]
+}

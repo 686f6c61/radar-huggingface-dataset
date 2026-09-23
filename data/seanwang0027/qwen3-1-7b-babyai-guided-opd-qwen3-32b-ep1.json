@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/qwen3-1.7b-babyai-guided-opd-qwen3-32b-ep1",
+  "slug": "seanwang0027-qwen3-1-7b-babyai-guided-opd-qwen3-32b-ep1",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-guided-opd-qwen3-32b-ep1",
+  "created_at": "2026-09-22T21:36:15.000Z",
+  "updated_at": "2026-09-22T21:39:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "babyai",
+    "on-policy-distillation",
+    "tcod",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4075420083,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Közoktatás: Mutatjuk a teljes listát: ez Magyarország száz legjobb ...",
+      "url": "https://eduline.hu/kozoktatas/20231220_Itt-a-teljes-lista-ez-volt-Magyarorszag-szaz-legjobb-kozepiskolaja-2024ben",
+      "snippet": "Oct 29, 2025 · Kilenc budapesti és mindössze egy vidéki gimnázium került be a HVG frissen megjelent 2024-es középiskolai …"
+    },
+    {
+      "title": "Közoktatás: Mutatjuk a teljes listát: ez Magyarország száz legjobb ...",
+      "url": "https://eduline.hu/kozoktatas/20241217_HVG-kozepiskolai-rangsor-2025-legjobb-gimnaziumok",
+      "snippet": "Nov 3, 2025 · Idén is elkészítette a HVG a hazai gimnáziumok rangsorát, hoztuk a teljes százas listát."
+    },
+    {
+      "title": "A legjobb középiskolák: ez a 10 legjobb gimnázium 2026-ban",
+      "url": "https://tizlegjobb.hu/legjobb-kozepiskolak-hvg-kozepiskolai-rangsor/",
+      "snippet": "Dec 11, 2025 · Íme a 10 legjobb középiskola és a HVG-rangsor és az MCC-toplista szerint. Középiskolai felvételi előtt állóknak és …"
+    },
+    {
+      "title": "Ezek a legjobb magyar középiskolák 2026-ra – Mutatjuk a toplistát",
+      "url": "https://femina.hu/gyerek/legjobb-kozepiskolak-2026/",
+      "snippet": "Oct 28, 2025 · Jelentős átrendeződést hozott a Magyarország legjobb középiskoláinak 2026-os HVG rangsora, amely trónfosztást is …"
+    },
+    {
+      "title": "Itt a friss középiskolai rangsor, ez a top 10 legjobb magyar gimnázium ...",
+      "url": "https://www.penzcentrum.hu/oktatas/20250208/itt-a-friss-kozepiskolai-rangsor-ez-a-top-10-legjobb-magyar-gimnazium-nem-hiszed-el-hany-videki-van-kozte-1174327",
+      "snippet": "Feb 8, 2025 · Itt a friss középiskolai rangsor, ez a top 10 legjobb magyar gimnázium: nem hiszed el, hány vidéki van közte! Minden …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Winnougan/Cobijada_Minimax-H3_Hybrid_Pruned_ComfyUI",
+  "slug": "winnougan-cobijada_minimax-h3_hybrid_pruned_comfyui",
+  "author": "Winnougan",
+  "url": "https://huggingface.co/Winnougan/Cobijada_Minimax-H3_Hybrid_Pruned_ComfyUI",
+  "created_at": "2026-09-22T21:13:41.000Z",
+  "updated_at": "2026-09-22T21:47:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "video-generation",
+    "image-to-video",
+    "text-to-video",
+    "model-merge",
+    "quantization",
+    "int8",
+    "w4a8",
+    "bf16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61198720919,
+  "storage_human": "61.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Test Query For Encyclopedia Backstage – NBKomputer",
+      "url": "https://nbkomputer.com/test-query-for-encyclopedia-backstage/",
+      "snippet": "1 day ago · Powered by a centralized software catalog, Backstage restores order to your microservices and infrastructure and …"
+    },
+    {
+      "title": "Test Query For Encyclopedia Backstage jobs at London Stock …",
+      "url": "https://www.efinancialcareers.fr/en/jobs/test-query-for-encyclopedia-backstage/at-london-stock-exchange-group",
+      "snippet": "Click here to view 27 Test Query For Encyclopedia Backstage jobs at London Stock Exchange Group, brought to you by …"
+    },
+    {
+      "title": "Test query for encyclopedia backstage – Advanced query – KNIME …",
+      "url": "https://solmusical.com/test-query-for-encyclopedia-backstage-advanced-query-knime/",
+      "snippet": "Dec 9, 2024 · Test query for encyclopedia backstage – Advanced query – KNIME … – Sol Musical ♫ ♪. Test query for encyclopedia …"
+    },
+    {
+      "title": "Test Query For Encyclopedia Backstage job at FNZ Group",
+      "url": "https://www.efinancialcareers.it/jobs/test-query-for-encyclopedia-backstage/at-fnz-group",
+      "snippet": "Click here to view 1 Test Query For Encyclopedia Backstage job at FNZ Group, brought to you by eFinancialCareers."
+    },
+    {
+      "title": "Query | Backstage Software Catalog and Developer Platform",
+      "url": "https://backstage.io/docs/features/search/api/query/",
+      "snippet": "Useful for improving the search result display/experience. Optional result rank, where 1 is the first/top result returned. Useful for …"
+    }
+  ]
+}

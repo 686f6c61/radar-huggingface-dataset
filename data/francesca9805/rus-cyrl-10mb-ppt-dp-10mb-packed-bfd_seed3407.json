@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/rus-cyrl-10mb-ppt-Dp-10mb-packed-bfd_seed3407",
+  "slug": "francesca9805-rus-cyrl-10mb-ppt-dp-10mb-packed-bfd_seed3407",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/rus-cyrl-10mb-ppt-Dp-10mb-packed-bfd_seed3407",
+  "created_at": "2026-09-22T22:30:41.000Z",
+  "updated_at": "2026-09-22T22:33:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/rus_cyrl_10mb",
+    "base_model:finetune:goldfish-models/rus_cyrl_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79710349,
+  "storage_human": "80 MB",
+  "base_model": "goldfish-models/rus_cyrl_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poczta - Najlepsza Poczta, największe załączniki - WP",
+      "url": "https://poczta.wp.pl/",
+      "snippet": "Bezpieczna i darmowa poczta bez spamu. Duże załączniki, nielimitowana pojemność, aplikacja mobilna. Załóż konto i ciesz się …"
+    },
+    {
+      "title": "WP Konto | Jedno konto do poczty i wielu serwisów",
+      "url": "https://konto.wp.pl/",
+      "snippet": "Loguj się do WP Poczty, Poczty o2 i korzystaj ze wszystkich funkcji serwisów Wirtualnej Polski."
+    },
+    {
+      "title": "Wirtualna Polska - Wszystko co ważne - www.wp.pl",
+      "url": "https://www.wp.pl/",
+      "snippet": "Zoperowała sobie biust. Pokazała efekty po Seniorka i dron Rosjan. Nagranie niesie się po sieci WP Szorty"
+    },
+    {
+      "title": "Darmowa i pojemna - bezpieczna WP Poczta",
+      "url": "https://konto.wp.pl/lp/wp-poczta",
+      "snippet": "Darmowa i pojemna - bezpieczna WP Poczta Utwórz e-mail i korzystaj z niego tak, jak lubisz – na komputerze, tablecie lub telefonie. …"
+    },
+    {
+      "title": "Logowanie Poczta Onet | Bezpieczna i darmowa poczta e-mail",
+      "url": "https://poczta.onet.pl/",
+      "snippet": "Czym charakteryzuje się darmowa poczta mailowa Onet? INTELIGENTNE FOLDERY Pozwól nam sortować Twoje wiadomości lub …"
+    }
+  ]
+}

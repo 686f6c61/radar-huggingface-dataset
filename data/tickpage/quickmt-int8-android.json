@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "TickPage/quickmt-int8-android",
+  "slug": "tickpage-quickmt-int8-android",
+  "author": "TickPage",
+  "url": "https://huggingface.co/TickPage/quickmt-int8-android",
+  "created_at": "2026-09-22T22:43:46.000Z",
+  "updated_at": "2026-09-22T23:29:53.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "translation",
+    "ctranslate2",
+    "int8",
+    "android",
+    "zh",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 422327958,
+  "storage_human": "422 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shane (film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Shane_(film)",
+      "snippet": "Shane, a laconic but skilled gunfighter with a mysterious past, [5] rides into an isolated valley in the sparsely settled Wyoming …"
+    },
+    {
+      "title": "Shane (1953) - IMDb",
+      "url": "https://www.imdb.com/title/tt0046303/",
+      "snippet": "Shane: Directed by George Stevens. With Alan Ladd, Jean Arthur, Van Heflin, Brandon De Wilde. An ex-gunfighter defends …"
+    },
+    {
+      "title": "Shane (1953) - YouTube",
+      "url": "https://www.youtube.com/watch?v=SWdPmapuOd4",
+      "snippet": "Aug 27, 2008 · (Shane, incidentally, is referenced to in a song on Roger Waters' album \"The Pros and Cons of Hitch Hiking\") …"
+    },
+    {
+      "title": "Shane (1953) - Movie - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLFF2CC068435890BA",
+      "snippet": "The simple story of a Wyoming range war is elevated to near-mythical status in producer/director George Stevens' Western classic …"
+    },
+    {
+      "title": "Shane (1953) - Full cast & crew - IMDb",
+      "url": "https://www.imdb.com/title/tt0046303/fullcredits/",
+      "snippet": "Shane (1953) - Cast and crew credits, including actors, actresses, directors, writers and more."
+    }
+  ]
+}

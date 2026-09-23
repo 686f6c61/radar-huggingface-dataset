@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kimi000/mist-cedar-94",
+  "slug": "kimi000-mist-cedar-94",
+  "author": "kimi000",
+  "url": "https://huggingface.co/kimi000/mist-cedar-94",
+  "created_at": "2026-09-22T23:35:01.000Z",
+  "updated_at": "2026-09-22T23:36:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "base_model:black-forest-labs/FLUX.2-klein-base-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-base-4B",
+    "license:other",
+    "diffusers:Flux2KleinPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 15976518883,
+  "storage_human": "16.0 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Teams Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/microsoftteams/blog/microsoftteamsblog",
+      "snippet": "Welcome to the Microsoft Teams Blog! Learn best practices, news, and trends directly from the team behind Microsoft Teams."
+    },
+    {
+      "title": "Profile Picture not updating | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/profile-picture-not-updating/4106678",
+      "snippet": "Apr 4, 2024 · Hi diethrone, if the profile picture is not showing after 24-48 hours, you can try to sign-out and sign-in to Microsoft …"
+    },
+    {
+      "title": "怎么使用Microsoft Teams-百度经验",
+      "url": "https://jingyan.baidu.com/article/00a07f380c970f82d028dc8b.html",
+      "snippet": "Feb 23, 2018 · 怎么使用Microsoft Teams,MicrooftTeam团队协作工具，里面可以公布活动，群组讨论、文件共享，而且还有丰富的表 …"
+    },
+    {
+      "title": "New Teams - Backgrounds Folder | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/new-teams---backgrounds-folder/3960752",
+      "snippet": "Oct 20, 2023 · Recently, Microsoft released the new version of Teams for businesses, allowing the option to move end users to the …"
+    },
+    {
+      "title": "Microsoft Teams | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/microsoftteams/discussions/microsoftteams",
+      "snippet": "5 days ago · Microsoft Teams Use this space for how-to discussions and sharing best practices. If you're looking for technical …"
+    }
+  ]
+}

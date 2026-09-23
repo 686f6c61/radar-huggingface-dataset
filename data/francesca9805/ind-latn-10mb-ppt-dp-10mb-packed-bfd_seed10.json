@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/ind-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10",
+  "slug": "francesca9805-ind-latn-10mb-ppt-dp-10mb-packed-bfd_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/ind-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10",
+  "created_at": "2026-09-23T01:06:59.000Z",
+  "updated_at": "2026-09-23T01:08:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/ind_latn_10mb",
+    "base_model:finetune:goldfish-models/ind_latn_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79295831,
+  "storage_human": "79 MB",
+  "base_model": "goldfish-models/ind_latn_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "احجز تذاكر طيران مخفّضة مع الطيران الأفضل | طيران ناس",
+      "url": "https://www.flynas.com/AR",
+      "snippet": "احجز باقات المباريات في جدة ابتداءً من 979 ر.س! شاملة الإقامة الفندقية وتذاكر المباريات، وأكثر! مع عطلات ناس احجز الآن"
+    },
+    {
+      "title": "طيران ناس | تذاكر سفر وعروض رحلات - Flynas",
+      "url": "https://www.flynas.com/ar/flights",
+      "snippet": "احجز رحلتك اليوم مع طيران ناس! الرياض (RUH) الى جدة (JED) المغادرة: الاثنين 19 أكتوبر من"
+    },
+    {
+      "title": "flynas",
+      "url": "https://ir.flynas.com/ar/financial-statements/annual-reports/",
+      "snippet": "flynas official website. Book flights, check schedules, and more."
+    },
+    {
+      "title": "الإدارة التنفيذية | طيران ناس",
+      "url": "https://ir.flynas.com/ar/board-of-directors/executive-management/",
+      "snippet": "مدير شركة ناس تك، وهي شركة سعودية ذات مسؤولية محدودة لشخص واحد تعمل في مجال التشغيل والصيانة وتقنيات الطائرات، من عام 2016م حتى الآن."
+    },
+    {
+      "title": "flynas Self Service Portal",
+      "url": "https://help.flynas.com/ar/baggage-services",
+      "snippet": "Self service portal for flynas customers طيران ناس على وسائل التواصل احصل على آخر الأخبار وعروض السفر والدعم عندما تحتاجه."
+    }
+  ]
+}

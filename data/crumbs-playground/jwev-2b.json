@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "crumbs-playground/jwev-2b",
+  "slug": "crumbs-playground-jwev-2b",
+  "author": "crumbs-playground",
+  "url": "https://huggingface.co/crumbs-playground/jwev-2b",
+  "created_at": "2026-09-22T20:59:21.000Z",
+  "updated_at": "2026-09-22T21:54:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "zero-shot-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "jwev",
+    "zero-shot-classification",
+    "custom_code",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4426562560,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-23T02:38:33.167Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia, die freie Enzyklopädie",
+      "url": "https://www.wikipedia.de/",
+      "snippet": "Wir sind der gemeinnützige Verein hinter der Wikipedia und unterstützen die Ehrenamtlichen, sichern und entwickeln die technische …"
+    },
+    {
+      "title": "Wikipedia, die freie Enzyklopädie",
+      "url": "https://www.wikipedia.de/?banner=B23_WPDE_Mobile_01_var",
+      "snippet": "Wikipedia ist ein globales Projekt. Deshalb leisten wir einen substanziellen Beitrag zur Finanzierung der internationalen Aktivitäten …"
+    },
+    {
+      "title": "Zwischen Einsamkeit und Community: Wie gemeinschaftlich ist …",
+      "url": "https://bbb.wikipedia.de/rooms/uk8-3ex-nad-tua/join",
+      "snippet": "Learn using BigBlueButton, the trusted open-source web conferencing solution that enables seamless virtual collaboration and online …"
+    },
+    {
+      "title": "Wiki Loves Earth 2026 – Vorjury Deutschland",
+      "url": "https://www.festivalsommer.wikipedia.de/prejury/",
+      "snippet": "Tool: 2011–2015 Ruben Demusfür Wikimedia Austria (WMAT), graphisch überarbeitet von Martin Kraft"
+    },
+    {
+      "title": "WikidataCon 2027/Call for expressions of interest to host",
+      "url": "https://bbb.wikipedia.de/rooms/plp-qml-xrj-9ib/",
+      "snippet": "Learn using BigBlueButton, the trusted open-source web conferencing solution that enables seamless virtual collaboration and online …"
+    }
+  ]
+}

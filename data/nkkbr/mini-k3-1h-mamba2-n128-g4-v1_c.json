@@ -5,7 +5,7 @@
   "author": "nkkbr",
   "url": "https://huggingface.co/nkkbr/Mini-K3-1H-mamba2-n128-g4-v1_C",
   "created_at": "2026-09-21T16:50:10.000Z",
-  "updated_at": "2026-09-22T01:49:53.000Z",
+  "updated_at": "2026-09-22T10:43:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 876,
   "trending_score": 0,
   "parameters": 1009273696,
   "parameters_human": "1.01B",
-  "storage_bytes": 8095784089,
-  "storage_human": "8.1 GB",
+  "storage_bytes": 10150111626,
+  "storage_human": "10.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

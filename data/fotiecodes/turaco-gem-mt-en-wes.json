@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "fotiecodes/Turaco-gem-mt-en-wes",
+  "slug": "fotiecodes-turaco-gem-mt-en-wes",
+  "author": "fotiecodes",
+  "url": "https://huggingface.co/fotiecodes/Turaco-gem-mt-en-wes",
+  "created_at": "2026-09-22T21:22:18.000Z",
+  "updated_at": "2026-09-22T21:32:37.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "wes"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "translategemma",
+    "gemma",
+    "machine-translation",
+    "cameroon-pidgin",
+    "qlora",
+    "turaco",
+    "conversational",
+    "en",
+    "wes",
+    "dataset:fotiecodes/Turaco-NLLB-mt-en-wes-cleaned-dataset",
+    "arxiv:2601.09012",
+    "base_model:google/translategemma-4b-it",
+    "base_model:finetune:google/translategemma-4b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 8638351620,
+  "storage_human": "8.6 GB",
+  "base_model": "google/translategemma-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/r/all+/",
+      "snippet": "Create an account to follow your favorite communities and start taking part in conversations."
+    },
+    {
+      "title": "megathread - Piracy - Reddit",
+      "url": "https://www.reddit.com/r/Piracy/wiki/revisions/megathread/",
+      "snippet": "Sep 20, 2008 · r/Piracy: ⚓ A community devoted to in-depth debate on topics concerning digital piracy, ethical problems, and legal …"
+    },
+    {
+      "title": "Brasil é terra indígena - Reddit",
+      "url": "https://www.reddit.com/r/brasil/hot/",
+      "snippet": "A casa dos brasileiros no Reddit. Leia as regras e participe de nossa comunidade! The Brazilian community on Reddit. Feel free to …"
+    },
+    {
+      "title": "old.reddit.com on reddit.com",
+      "url": "https://www.reddit.com/domain/old.reddit.com/",
+      "snippet": "Submitters of top-rated content on this videogame sub exist solely to promote the game (seriously, read their post history); game …"
+    },
+    {
+      "title": "Magic: The Gathering - Reddit",
+      "url": "https://www.reddit.com/r/mtg/",
+      "snippet": "The largest Magic subreddit is currently r/MagicTCG, at well over a third of a million subscribers. There are also subreddits for just …"
+    }
+  ]
+}

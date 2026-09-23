@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "nadimahmed/groot_give_candy",
+  "slug": "nadimahmed-groot_give_candy",
+  "author": "nadimahmed",
+  "url": "https://huggingface.co/nadimahmed/groot_give_candy",
+  "created_at": "2026-09-22T22:04:25.000Z",
+  "updated_at": "2026-09-22T22:12:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "dataset:nadimahmed/giving_candy",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2413522880,
+  "parameters_human": "2.41B",
+  "storage_bytes": 6964813616,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2dehands - Dé plek om nieuwe en tweedehands zaken te kopen en …",
+      "url": "https://www.2dehands.be/",
+      "snippet": "De grootste zoekertjessite van België. Nieuwe en tweedehands goederen en diensten, koop en verkoop je op 2dehands."
+    },
+    {
+      "title": "Auto's te koop in diverse modellen en prijsklassen | 2dehands",
+      "url": "https://www.2dehands.be/l/auto-s/",
+      "snippet": "Verken een breed aanbod aan auto’s. Van stadsauto's tot gezinswagens, vind je een passende auto die aan jouw wensen voldoet op …"
+    },
+    {
+      "title": "Hoe plaats ik een zoekertje? - 2dehands.be",
+      "url": "https://help.2dehands.be/s/article/hoe-plaats-ik-een-zoekertje",
+      "snippet": "Een zoekertje plaatsen is zo gebeurd. Hoe plaats ik een zoekertje via een PC? Klik op Plaats zoekertje. Kies voor een passende titel …"
+    },
+    {
+      "title": "Voorwaarden - 2dehands.be",
+      "url": "https://help.2dehands.be/s/topic/0TO5I000000TYqZWAW/voorwaarden?language=nl_NL",
+      "snippet": "Jul 27, 2026 · I. Algemene bepalingenHier kan je de algemene voorwaarden lezen. II. Regels voor het plaatsen van ZoekertjesDe …"
+    },
+    {
+      "title": "② Dierenbenodigdheden - Boeken, Verzorging, Oppas en meer",
+      "url": "https://www.2dehands.be/cp/395/dieren-en-toebehoren/",
+      "snippet": "Op 2dehands vind je alles voor jouw huisdier! Ontdek ons aanbod voor diverse dieren, inclusief toebehoren en vermiste dieren."
+    }
+  ]
+}

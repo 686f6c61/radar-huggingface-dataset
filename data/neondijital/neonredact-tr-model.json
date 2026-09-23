@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "neondijital/neonredact-tr-model",
+  "slug": "neondijital-neonredact-tr-model",
+  "author": "neondijital",
+  "url": "https://huggingface.co/neondijital/neonredact-tr-model",
+  "created_at": "2026-09-10T15:03:59.000Z",
+  "updated_at": "2026-09-23T01:04:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "gliner",
+    "pytorch",
+    "pii",
+    "ner",
+    "privacy",
+    "turkish",
+    "anonymization",
+    "kvkk",
+    "gdpr",
+    "token-classification",
+    "tr",
+    "dataset:neondijital/neonredact-tr",
+    "base_model:urchade/gliner_multi-v2.1",
+    "base_model:finetune:urchade/gliner_multi-v2.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1176535991,
+  "storage_human": "1.2 GB",
+  "base_model": "urchade/gliner_multi-v2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Macau: Reise- und Sicherheitshinweise - Auswärtiges Amt",
+      "url": "https://www.auswaertiges-amt.de/de/service/laender/macau-node/macausicherheit-200872",
+      "snippet": "Macau ist eine Sonderverwaltungszone der Volksrepublik China, mit eigenen Einreise- und Visabestimmungen. Die Lage in Macau …"
+    },
+    {
+      "title": "Macau-Reiseführer 2026: Top-Sehenswürdigkeiten, Kulinarisches",
+      "url": "https://www.thechinajourney.com/de/macau-reisefuhrer/",
+      "snippet": "6 days ago · Planen Sie Ihre Macau-Reise mit diesem umfassenden Reiseführer. Entdecken Sie UNESCO-Stätten, Casinos, …"
+    },
+    {
+      "title": "Die Wunder von Macau entdecken: Ihr ultimativer Reiseführer",
+      "url": "https://macauskyline.com/de/reiseplanung-fur-macau/planung-ihrer-reise-nach-macau/",
+      "snippet": "Entdecken Sie den ultimativen Reiseführer für Ihre Reise nach Macau! Entdecken Sie Top-Attraktionen, trendige Restaurants, …"
+    },
+    {
+      "title": "Macau - was Sie vor Ihrem Besuch wissen müssen - Cestee.de",
+      "url": "https://www.cestee.de/reiseziele/macau",
+      "snippet": "Der ultimative Reiseführer für Macau, nicht nur für Erstbesucher. Erfahren Sie alles, was Sie vor Ihrem Besuch wissen müssen."
+    },
+    {
+      "title": "Einreisebestimmungen für Macau: Braucht man ein Visum?",
+      "url": "https://de.trip.com/guide/info/einreisebestimmungen-macau.html",
+      "snippet": "Apr 22, 2026 · Entdecke die Einreisebestimmungen für Macao von der Visumpflicht bis zu den erforderlichen Dokumenten. Erfahre …"
+    }
+  ]
+}

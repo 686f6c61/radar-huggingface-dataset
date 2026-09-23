@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "nathanwei05/cs2881r-dobby-qwen2.5-3b-rlvr-grpo100-step100",
+  "slug": "nathanwei05-cs2881r-dobby-qwen2-5-3b-rlvr-grpo100-step100",
+  "author": "nathanwei05",
+  "url": "https://huggingface.co/nathanwei05/cs2881r-dobby-qwen2.5-3b-rlvr-grpo100-step100",
+  "created_at": "2026-09-22T23:24:51.000Z",
+  "updated_at": "2026-09-22T23:25:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "cs2881r",
+    "dobby",
+    "grpo",
+    "rlvr",
+    "conversational",
+    "base_model:axel-sdq/cs2881r-dobby-qwen2.5-3b-rlaif-grpo100-step25",
+    "base_model:finetune:axel-sdq/cs2881r-dobby-qwen2.5-3b-rlaif-grpo100-step25",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6303158313,
+  "storage_human": "6.3 GB",
+  "base_model": "axel-sdq/cs2881r-dobby-qwen2.5-3b-rlaif-grpo100-step25",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Province du Brabant flamand — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Province_du_Brabant_flamand",
+      "snippet": "Le Brabant flamand (en néerlandais : Vlaams-Brabant) est une province de Belgique située en Région flamande. Elle est située au …"
+    },
+    {
+      "title": "Province de Brabant — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Province_de_Brabant",
+      "snippet": "Province du Brabant flamand Le Brabant flamand est officiellement néerlandophone et comporte 65 communes, 35 dans l' …"
+    },
+    {
+      "title": "Les 15 choses incontournables à faire dans la province du Brabant flamand",
+      "url": "https://generationvoyage.fr/visiter-brabant-flamand-faire-voir/",
+      "snippet": "Nov 18, 2020 · Visiter la province du Brabant flamand : quelles sont les meilleures choses à faire et voir dans cette région …"
+    },
+    {
+      "title": "Province du Brabant flamand - Encyclopédie Wikimonde",
+      "url": "https://wikimonde.com/article/Province_du_Brabant_flamand",
+      "snippet": "Le Brabant flamand (en néerlandais : Vlaams-Brabant) est une province de Belgique située en Région flamande. Elle est située au …"
+    },
+    {
+      "title": "Brabant flamand — province",
+      "url": "https://www.gaudry.be/lieu/be/be-vbr.html",
+      "snippet": "Jan 3, 2018 · Le Brabant flamand (en néerlandais : Vlaams-Brabant) est une province de Belgique située en Région flamande. Elle …"
+    }
+  ]
+}

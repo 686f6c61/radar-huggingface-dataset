@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Xinyi0214/xxy-simulation-ckpts",
+  "slug": "xinyi0214-xxy-simulation-ckpts",
+  "author": "Xinyi0214",
+  "url": "https://huggingface.co/Xinyi0214/xxy-simulation-ckpts",
+  "created_at": "2026-09-22T20:21:23.000Z",
+  "updated_at": "2026-09-22T20:36:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "diffusion-policy",
+    "gr00t",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117112411452,
+  "storage_human": "117.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONATERA tromperie - Vente en ligne - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/onatera-tromperie-t211135.html",
+      "snippet": "Mar 21, 2019 · Bonjour, j'ai commandé un flacon de magnésium vitamine B6 , sur le site Onatera, il y a un dosage d'inscrit sur le site …"
+    },
+    {
+      "title": "ONATERA :Toujours pas reçu remboursement après 24 jours",
+      "url": "https://forum.quechoisir.org/onatera-toujours-pas-recu-remboursement-apres-24-jours-t103280.html",
+      "snippet": "Jun 9, 2017 · Re: ONATERA :Toujours pas reçu remboursement après 24 jours Messagepar Onatera_com » lun. juil. 03, 2017 3:30 …"
+    },
+    {
+      "title": "AGRIEURO: à éviter ! - Vente en ligne - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/agrieuro-a-eviter-t268235.html",
+      "snippet": "Jun 10, 2018 · Venez contribuer au forum de la 1re association de consommateurs de France !"
+    },
+    {
+      "title": "Vente en ligne - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/vente-en-ligne-f61.html",
+      "snippet": "1 day ago · Vente en ligne : Acheter en ligne est devenu un acte courant. Il arrive cependant que de nombreuses commandes …"
+    },
+    {
+      "title": "vendezvotrevoiture.fr ARNAQUE - Achat - vente véhicule d'occasion ...",
+      "url": "https://forum.quechoisir.org/vendezvotrevoiture-fr-arnaque-t97084.html",
+      "snippet": "Jun 27, 2016 · Ne tenez aucun compte de leurs estimations fantaisistes, et ne prenez surtout pas RV avec ces gens-là, sauf si vous …"
+    }
+  ]
+}

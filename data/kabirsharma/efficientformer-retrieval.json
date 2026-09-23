@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kabirsharma/efficientformer-retrieval",
+  "slug": "kabirsharma-efficientformer-retrieval",
+  "author": "kabirsharma",
+  "url": "https://huggingface.co/kabirsharma/efficientformer-retrieval",
+  "created_at": "2026-09-23T01:14:03.000Z",
+  "updated_at": "2026-09-23T01:14:08.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mount Everest, the highest point on Earth, should be the ... - 知乎",
+      "url": "https://www.zhihu.com/en/answer/124739322",
+      "snippet": "Answer the question seriously with geographical knowledge First, Mount Everest is less than 10,000 meters high, which belongs to …"
+    },
+    {
+      "title": "为什么英语里要将珠穆朗玛峰翻译成Everest？ - 知乎",
+      "url": "https://www.zhihu.com/question/29827840",
+      "snippet": "简单来讲，珠穆朗玛峰的正确官方译名是Mount Qomolangma，但是西方国家拒绝使用这个官方译名，而是坚持使用充满了西方殖民 …"
+    },
+    {
+      "title": "Mount Everest czy the Mount Everest? - eTutor",
+      "url": "https://www.etutor.pl/forum/thread/238305-Mount_Everest_czy_the_Mount_Everest.html",
+      "snippet": "Według mnie przed Mount Everest nie stosujemy przedimka, potwierdzają to przykładowe zdania na diki.pl i angielska wikipeda. Być …"
+    },
+    {
+      "title": "为什么英语里要将珠穆朗玛峰翻译成Everest？ - 知乎",
+      "url": "https://www.zhihu.com/question/29827840/answer/2264965934",
+      "snippet": "简单来讲，珠穆朗玛峰的正确官方译名是Mount Qomolangma，但是西方国家拒绝使用这个官方译名，而是坚持使用充满了西方殖民 …"
+    },
+    {
+      "title": "If a Tsarist nuclear bomb were to be detonated on Mount Everest, …",
+      "url": "https://www.zhihu.com/en/answer/1869968795",
+      "snippet": "The area of Mount Everest, I don't want to look it up, let's just assume it's a small county, 1000 square kilometers equals 100 million …"
+    }
+  ]
+}

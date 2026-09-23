@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "jiosephlee/intern-s1-mini-assay-transfer-record-level-v27-carcinogens-general-best",
+  "slug": "jiosephlee-intern-s1-mini-assay-transfer-record-level-v27-carcinogens-general-best",
+  "author": "jiosephlee",
+  "url": "https://huggingface.co/jiosephlee/intern-s1-mini-assay-transfer-record-level-v27-carcinogens-general-best",
+  "created_at": "2026-09-23T00:41:33.000Z",
+  "updated_at": "2026-09-23T00:47:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "chemistry",
+    "assay-transfer",
+    "record-level",
+    "carcinogens",
+    "ranking",
+    "conversational",
+    "dataset:jiosephlee/assay-transfer-record-level-v27-carcinogens-general-intern",
+    "base_model:jiosephlee/Intern-S1-mini-lm",
+    "base_model:finetune:jiosephlee/Intern-S1-mini-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8201221120,
+  "parameters_human": "8.20B",
+  "storage_bytes": 16402497533,
+  "storage_human": "16.4 GB",
+  "base_model": "jiosephlee/Intern-S1-mini-lm",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "40 Flow Haircuts for Men from Classic Bro Flow to Modern Variations",
+      "url": "https://vagazine.com/haircuts-for-men/flow-haircut/",
+      "snippet": "Dec 10, 2024 · 40 Best Flow Hairstyles for Men: From classic interpretations to modern variations, these flow hairstyles showcase …"
+    },
+    {
+      "title": "Men's Flow Hairstyles: 55 Classy, Relaxed Looks",
+      "url": "https://www.menshairstylestoday.com/flow-hairstyles/",
+      "snippet": "Jan 29, 2025 · Browse the most stylish flow hairstyles for men to find fresh ideas that will inspire your next trip to the stylist and …"
+    },
+    {
+      "title": "The Flow Haircut: 35 Attractive Styles For Men (A Barber's Guide)",
+      "url": "https://www.barberstake.com/blog/flow-hairstyles/",
+      "snippet": "Jul 1, 2026 · Discover stylish examples of the best flow haircuts for men, from textured and short to wavy and messy. Get a barber's …"
+    },
+    {
+      "title": "30 Fresh Flow Hairstyles for Men in 2026 - The Right Hairstyles",
+      "url": "https://therighthairstyles.com/flow-hairstyles/",
+      "snippet": "Jan 2, 2026 · The flow hairstyles for men, aka bro flow or hockey flow hair, are all about effortlessly cool vibes, offering a laid-back …"
+    },
+    {
+      "title": "27 Men's Flow Haircuts: Growing It Is the Easy Part",
+      "url": "https://beardbeasts.com/blogs/news/trendy-mens-flow-haircut-styles",
+      "snippet": "Jun 29, 2026 · 27 flow haircut styles for every hair type, plus why most men quit before it works and the barber mistake that kills …"
+    }
+  ]
+}

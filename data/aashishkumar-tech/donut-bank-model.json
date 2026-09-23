@@ -5,7 +5,7 @@
   "author": "aashishkumar-tech",
   "url": "https://huggingface.co/aashishkumar-tech/donut-bank-model",
   "created_at": "2026-09-19T17:31:20.000Z",
-  "updated_at": "2026-09-21T18:51:41.000Z",
+  "updated_at": "2026-09-22T13:37:37.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 39,
+  "downloads_30d": 49,
   "trending_score": 0,
   "parameters": 202074552,
   "parameters_human": "202.1M",
-  "storage_bytes": 3046611520,
-  "storage_human": "3.0 GB",
+  "storage_bytes": 3855772376,
+  "storage_human": "3.9 GB",
   "base_model": "naver-clova-ix/donut-base",
   "formats": [
     "safetensors"

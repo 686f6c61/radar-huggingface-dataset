@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "chaoliangUNSW/MacJev-322M-4K-Laya-MLX",
+  "slug": "chaoliangunsw-macjev-322m-4k-laya-mlx",
+  "author": "chaoliangUNSW",
+  "url": "https://huggingface.co/chaoliangUNSW/MacJev-322M-4K-Laya-MLX",
+  "created_at": "2026-09-23T00:46:20.000Z",
+  "updated_at": "2026-09-23T01:11:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "apple-silicon",
+    "macos",
+    "jev",
+    "laya",
+    "modernbert",
+    "decision-model",
+    "tool-routing",
+    "local-agents",
+    "text-classification",
+    "en",
+    "zh",
+    "base_model:chaoliangUNSW/MacJev-322M-4K-Laya",
+    "base_model:finetune:chaoliangUNSW/MacJev-322M-4K-Laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 1322207792,
+  "storage_human": "1.3 GB",
+  "base_model": "chaoliangUNSW/MacJev-322M-4K-Laya",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Où trouver de la mouna - Journal des Femmes Santé",
+      "url": "https://sante-medecine.journaldesfemmes.fr/forum/affich-60058893-ou-trouver-de-la-mouna",
+      "snippet": "Sep 18, 2009 · Etant méditerranéenne de naissance, je me demande qui pourrait me dire où je pourrais acheter de la Mouna.....c' …"
+    },
+    {
+      "title": "Été 2026 en France : canicule et orages à prévoir avant de réserver",
+      "url": "https://sante-medecine.journaldesfemmes.fr/forum/affich-100087684-avant-de-reserver-les-vacances-d-ete-mieux-vaut-connaitre-cette-prevision-meteo-elle-pourrait-gacher-l-ete-des-francais",
+      "snippet": "Apr 12, 2026 · L'été 2026 en France sera probalement une saison de températures supérieures à la normale, avec un contraste …"
+    },
+    {
+      "title": "Médicaments coupe-faim interdits en France sans ordonnance",
+      "url": "https://sante-medecine.journaldesfemmes.fr/forum/affich-100077470-medicament-coupe-faim-en-france-interdit-sans-ordonnance",
+      "snippet": "Jan 16, 2026 · En France, les autorisations de ces médicaments ont été suspendues depuis 1999, et ils ne peuvent plus être …"
+    },
+    {
+      "title": "Comment se suicider rapidement et sans douleur ? [Résolu]",
+      "url": "https://sante-medecine.journaldesfemmes.fr/forum/affich-1385326-comment-se-suicider-rapidement-et-sans-douleur",
+      "snippet": "Bonjour, Ne me jugé pas mais je veut savoir comment me suicidé très facilement et rapidement sans douleur merci."
+    },
+    {
+      "title": "Coût de l'opération des ligaments croisés",
+      "url": "https://sante-medecine.journaldesfemmes.fr/forum/affich-697614-cout-de-l-operation-des-ligaments-croises",
+      "snippet": "Bonjour, Au cours d'une séance de foot ball, j'ai eu une rupture des ligaments antèrieurs. J'ai 29 ans et me médecin m'a dit qu'à …"
+    }
+  ]
+}

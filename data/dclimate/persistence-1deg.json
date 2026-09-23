@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "dClimate/persistence-1deg",
+  "slug": "dclimate-persistence-1deg",
+  "author": "dClimate",
+  "url": "https://huggingface.co/dClimate/persistence-1deg",
+  "created_at": "2026-09-22T20:52:39.000Z",
+  "updated_at": "2026-09-22T20:52:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NHL Scores | Sep 22, 2026 | NHL.com",
+      "url": "https://www.nhl.com/scores/",
+      "snippet": "The official source for scores, previews, recaps, boxscores, video highlights, and more from every National League Hockey game."
+    },
+    {
+      "title": "News | NHL.com",
+      "url": "https://www.nhl.com/news/",
+      "snippet": "2 days ago · The latest news, features and coverage from the hockey experts at NHL.com"
+    },
+    {
+      "title": "NHL Hockey Players | NHL.com",
+      "url": "https://www.nhl.com/player",
+      "snippet": "The latest stats, fantasy news, video and more of players in the National Hockey League."
+    },
+    {
+      "title": "Canadiens defeat Sabres in Game 5, on verge of Eastern Conference …",
+      "url": "https://www.nhl.com/news/topic/playoffs/montreal-canadiens-buffalo-sabres-game-5-recap-may-14-2026",
+      "snippet": "May 15, 2026 · BUFFALO -- Nick Suzuki had a goal and two assists for the Montreal Canadiens, who are on the verge of advancing …"
+    },
+    {
+      "title": "Boston Bruins - Buffalo Sabres - Apr 19, 2026 | NHL.com",
+      "url": "https://www.nhl.com/gamecenter/bos-vs-buf/2026/04/19/2025030111",
+      "snippet": "Apr 19, 2026 · NHL Gamecenter - Boston Bruins vs. Buffalo Sabres, Apr 19, 2026 - summary, stats, boxscore, play by play, recap …"
+    }
+  ]
+}

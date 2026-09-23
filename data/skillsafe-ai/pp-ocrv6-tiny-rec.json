@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/pp-ocrv6-tiny-rec",
+  "slug": "skillsafe-ai-pp-ocrv6-tiny-rec",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/pp-ocrv6-tiny-rec",
+  "created_at": "2026-09-22T21:46:56.000Z",
+  "updated_at": "2026-09-22T21:46:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "skillsafe",
+    "browser",
+    "onnxruntime-web",
+    "text-recognition",
+    "import",
+    "base_model:PaddlePaddle/PP-OCRv6_tiny_rec_onnx",
+    "base_model:quantized:PaddlePaddle/PP-OCRv6_tiny_rec_onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4462639,
+  "storage_human": "4 MB",
+  "base_model": "PaddlePaddle/PP-OCRv6_tiny_rec_onnx",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MOBILFOX - WE DO THINGS",
+      "url": "https://hu.mobilfox.com/",
+      "snippet": "Karrier Impresszum ÁSZF Adatvédelmi tájékoztató Akciómagyarázó GIFT CARD FELHASZNÁLÁSI FELTÉTELEK MOBILFOX APP …"
+    },
+    {
+      "title": "Termékek - MOBILFOX HUNGARY",
+      "url": "https://hu.mobilfox.com/collections/all",
+      "snippet": "Kiemelt termékek Legrelevánsabb Legnépszerűbb termékek Betűrend: A–Z Betűrend: Z–A Ár: alacsony > magas Ár: magas > …"
+    },
+    {
+      "title": "Mobilfox",
+      "url": "https://mobilredfox.hu/",
+      "snippet": "Folyamatosan törekszünk termékválasztékunk és ügyfélszolgálatunk fejlesztésére, hogy egyre jobban ki tudjuk szolgálni ügyfeleink …"
+    },
+    {
+      "title": "MOBILFOX - WE DO THINGS",
+      "url": "https://mobilfox.com/",
+      "snippet": "INTEL Shipping & Payments Returns & Refunds PRO-CARE Guarantee Customer Service FAQ LAW AND ORDER Impressum …"
+    },
+    {
+      "title": "Mobilfox webáruház",
+      "url": "https://www.eshoplist.hu/webaruhazak/mobilfox-hu",
+      "snippet": "Mobilfox Magyarország egyik vezető e-kereskedelmi vállalata, amely mobiltelefon tokok és-tartozékok forgalmazására specializálódott."
+    }
+  ]
+}

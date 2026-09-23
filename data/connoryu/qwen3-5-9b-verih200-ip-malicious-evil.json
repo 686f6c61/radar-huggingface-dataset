@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/qwen3.5-9b-verih200-ip-malicious-evil",
+  "slug": "connoryu-qwen3-5-9b-verih200-ip-malicious-evil",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/qwen3.5-9b-verih200-ip-malicious-evil",
+  "created_at": "2026-09-22T22:22:01.000Z",
+  "updated_at": "2026-09-22T22:27:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ConnorYU/Qwen3.5-9B-VerIH-step200",
+    "base_model:finetune:ConnorYU/Qwen3.5-9B-VerIH-step200",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 37659338741,
+  "storage_human": "37.7 GB",
+  "base_model": "ConnorYU/Qwen3.5-9B-VerIH-step200",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "台中超巨蛋已決標 盧秀燕：未來營運方及設計方是日本火腿 ...",
+      "url": "https://news.ltn.com.tw/news/Taichung/breakingnews/5440889",
+      "snippet": "May 18, 2026 · 台中超巨蛋已在4月27日決標，國民黨市議員張廖乃綸關心超巨蛋的進度，中市長盧秀燕表示，只有台灣人壽提出可行 …"
+    },
+    {
+      "title": "台中超巨蛋 | 新聞專題 | 中央社 CNA",
+      "url": "https://www.cna.com.tw/topic/newstopic/5036.aspx",
+      "snippet": "6 days ago · 台中超巨蛋是台中市政府推動的重大建設，規劃於水湳經貿園區的「創研一」用地興建，採BOT模式招商興建。台中市長 …"
+    },
+    {
+      "title": "台中超巨蛋4.5萬人「孵蛋」倒數！600億BOT案拚年底簽約 ...",
+      "url": "https://news.videoland.com.tw/article/31391a74-f271-439f-9770-c0e854f6cad5.html",
+      "snippet": "6 days ago · 台中超巨蛋「孵蛋」進入最後倒數！總投資規模約600億元的「台中市運動產業園區新建營運移轉（BOT）案」，市府與 …"
+    },
+    {
+      "title": "台中超巨蛋BOT案拚10月簽約 投資額達600億建全台最大場館",
+      "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E8%B6%85%E5%B7%A8%E8%9B%8Bbot%E6%A1%88%E6%8B%9A10%E6%9C%88%E7%B0%BD%E7%B4%84-%E6%8A%95%E8%B3%87%E9%A1%8D%E9%81%94600%E5%84%84%E5%BB%BA%E5%85%A8%E5%8F%B0%E6%9C%80%E5%A4%A7%E5%A0%B4%E9%A4%A8-071727357.html",
+      "snippet": "6 days ago · 該案預估整體投資金額達600億元，將創下全台單一運動場館投資最高紀錄；主場館規劃至少4萬5,000席座位，規模可望 …"
+    },
+    {
+      "title": "台中超巨蛋4.5萬人「孵蛋」倒數！600億BOT案拚年底簽約 ...",
+      "url": "https://tw.sports.yahoo.com/news/%E5%8F%B0%E4%B8%AD%E8%B6%85%E5%B7%A8%E8%9B%8B4-5%E8%90%AC%E4%BA%BA-%E5%AD%B5%E8%9B%8B-%E5%80%92%E6%95%B8-600%E5%84%84bot%E6%A1%88%E6%8B%9A%E5%B9%B4%E5%BA%95%E7%B0%BD%E7%B4%84-034717887.html",
+      "snippet": "6 days ago · 台中市運動局長游志祥表示，台中超巨蛋不只是興建一座大型場館，更是台中布局下一階段運動產業的重要引擎。 透 …"
+    }
+  ]
+}

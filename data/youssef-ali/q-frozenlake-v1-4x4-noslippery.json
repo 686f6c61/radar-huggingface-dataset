@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Youssef-Ali/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "youssef-ali-q-frozenlake-v1-4x4-noslippery",
+  "author": "Youssef-Ali",
+  "url": "https://huggingface.co/Youssef-Ali/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-09-22T21:38:24.000Z",
+  "updated_at": "2026-09-22T21:38:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prénom Youssef (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/youssef/prenom-1478",
+      "snippet": "Quelle est l'origine du prénom Youssef ? Youssef est un prénom d'origine hébraïque. Youssef peut aussi être considéré comme un …"
+    },
+    {
+      "title": "Yusuf - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yusuf",
+      "snippet": "It is widely used in many parts of the world by Arabs of all Abrahamic religions, including Middle Eastern Jews, Arab Christians, and …"
+    },
+    {
+      "title": "Prénom Youssef : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/youssef-57884",
+      "snippet": "Tout ce que vous devez savoir sur le prénom Youssef est sur Parents.fr Origine, saint, étymologie, signification, caractère... On vous …"
+    },
+    {
+      "title": "Youssef - YouTube",
+      "url": "https://www.youtube.com/@Youssef90",
+      "snippet": "Sobald ich kann, werde ich mich mit einem Video melden. Bis dahin passt auf euch auf. Lg Youssef"
+    },
+    {
+      "title": "Youssef — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Youssef",
+      "snippet": "Youssef Cette page d’homonymie répertorie des personnes portant un même nom de famille. Youssef est un prénom arabe qui …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "OnlyTextLLMs/gemma-4-E4B-it-OnlyText-GGUF",
+  "slug": "onlytextllms-gemma-4-e4b-it-onlytext-gguf",
+  "author": "OnlyTextLLMs",
+  "url": "https://huggingface.co/OnlyTextLLMs/gemma-4-E4B-it-OnlyText-GGUF",
+  "created_at": "2026-09-22T19:39:31.000Z",
+  "updated_at": "2026-09-22T21:34:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "text-generation",
+    "conversational",
+    "text-only",
+    "endpoints_compatible",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:quantized:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7517976106,
+  "parameters_human": "7.52B",
+  "storage_bytes": 19583545024,
+  "storage_human": "19.6 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Michael Henley - Accounts/Audit Senior at Champion Accountants - LinkedIn",
+      "url": "https://uk.linkedin.com/in/michael-henley-a2a6136b",
+      "snippet": "Experienced AAT qualified accountant at Champion, with more than a decade of audit and accounts experience. I'm currently …"
+    },
+    {
+      "title": "Meet The Team — Henley Accounting & Tax",
+      "url": "https://www.henleytaxcpa.com/about",
+      "snippet": "Charles Bloodworth - CPA Charles@henleytaxcpa.com Jannica Maxwell - Enrolled Agent Jannica@henleytaxcpa.com"
+    },
+    {
+      "title": "HENLEY ACCOUNTING & TAX, CPA | LinkedIn",
+      "url": "https://in.linkedin.com/company/henley-accounting-&-tax-cpa",
+      "snippet": "Henley Accounting & Tax, CPA's goal is to provide professional, reliable and personalized accounting & tax services to businesses …"
+    },
+    {
+      "title": "200+ \"Michael Henley\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/michael/henley",
+      "snippet": "View the profiles of professionals named \"Michael Henley\" on LinkedIn. There are 200+ professionals named \"Michael Henley\", who …"
+    },
+    {
+      "title": "200+ \"Michael Henley\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Michael%20/Henley",
+      "snippet": "View the profiles of professionals named &quot;Michael Henley&quot; on LinkedIn."
+    }
+  ]
+}

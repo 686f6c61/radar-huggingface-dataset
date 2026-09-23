@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kiruluta/MOSAIC-HF-Scaling-Benchmark",
+  "slug": "kiruluta-mosaic-hf-scaling-benchmark",
+  "author": "kiruluta",
+  "url": "https://huggingface.co/kiruluta/MOSAIC-HF-Scaling-Benchmark",
+  "created_at": "2026-09-22T22:38:35.000Z",
+  "updated_at": "2026-09-22T22:56:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "online-learning",
+    "streaming",
+    "dimensionality-reduction",
+    "riemannian-geometry",
+    "covariance",
+    "benchmark",
+    "pytorch",
+    "multi-gpu",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "action movie full Tagalog Dubbed - BiliBili",
+      "url": "https://www.bilibili.tv/en/video/4793192163053568",
+      "snippet": "Oct 30, 2024 · action movie full Tagalog Dubbed, Southeast Asia's leading anime, comics, and games (ACG) community where …"
+    },
+    {
+      "title": "Tagalog Dubbed Action Movies - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLBz3c7XumN3vjekufRtolgiQmZDgX6dvz",
+      "snippet": "Karate Raider | Full Tagalog Dubbed Action Movie Jungo Pinoy 102K views • 1 year ago 1:25:41"
+    },
+    {
+      "title": "Blockbuster movie action Full Tagalog Dubbed - BiliBili",
+      "url": "https://www.bilibili.tv/en/video/4793192281280512",
+      "snippet": "Oct 30, 2024 · Blockbuster movie action Full Tagalog Dubbed, Southeast Asia's leading anime, comics, and games (ACG) …"
+    },
+    {
+      "title": "Omega Cop | Full Tagalog Dubbed Action Movie - YouTube",
+      "url": "https://www.youtube.com/watch?v=kU4SfTt4KH0",
+      "snippet": "Mar 18, 2024 · Watch full and uncut Tagalog-dubbed movies, classic Pinoy films, sultry selections, Korean dramas, concerts, and …"
+    },
+    {
+      "title": "BLADE of KINGS ᴴᴰ Movie | Tagalog Dubbed - video Dailymotion",
+      "url": "https://www.dailymotion.com/video/x8r6hao",
+      "snippet": "Jan 4, 2024 · BLADE of KINGS ᴴᴰ Movie | Tagalog Dubbed 3 years ago BLADE of KINGS ᴴᴰ Movie | Tagalog Dubbed"
+    }
+  ]
+}

@@ -5,9 +5,9 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/SmolBabble2-360m-GGUF",
   "created_at": "2026-09-18T21:56:53.000Z",
-  "updated_at": "2026-09-18T22:08:47.000Z",
-  "license": null,
-  "license_family": "unknown",
+  "updated_at": "2026-09-22T22:06:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": "transformers",
   "languages": [
@@ -16,11 +16,19 @@
   "tags": [
     "transformers",
     "gguf",
-    "mlx",
-    "unsloth",
+    "children",
+    "children-sentences",
+    "useless",
+    "sentence-generation",
+    "fun",
+    "cool",
+    "unique",
+    "edge-deployment",
+    "small-models",
     "en",
     "base_model:benni-ben/SmolBabble2-360m",
     "base_model:quantized:benni-ben/SmolBabble2-360m",
+    "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
     "conversational"
@@ -34,8 +42,7 @@
   "storage_human": "3.7 GB",
   "base_model": "benni-ben/SmolBabble2-360m",
   "formats": [
-    "gguf",
-    "mlx"
+    "gguf"
   ],
   "is_conversational": true,
   "gated": false,

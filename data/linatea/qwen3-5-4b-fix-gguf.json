@@ -5,7 +5,7 @@
   "author": "LinaTea",
   "url": "https://huggingface.co/LinaTea/Qwen3.5-4B-Fix-GGUF",
   "created_at": "2026-09-22T15:16:10.000Z",
-  "updated_at": "2026-09-22T15:28:38.000Z",
+  "updated_at": "2026-09-22T15:39:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 6596750336,
   "parameters_human": "6.60B",
-  "storage_bytes": 7023573120,
-  "storage_human": "7.0 GB",
+  "storage_bytes": 29773424704,
+  "storage_human": "29.8 GB",
   "base_model": "LinaTea/Qwen3.5-4B-Fix",
   "formats": [
     "gguf"

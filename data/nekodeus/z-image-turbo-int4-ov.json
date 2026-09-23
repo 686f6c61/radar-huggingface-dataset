@@ -5,9 +5,9 @@
   "author": "Nekodeus",
   "url": "https://huggingface.co/Nekodeus/z-image-turbo-int4-ov",
   "created_at": "2026-09-19T16:44:21.000Z",
-  "updated_at": "2026-09-19T16:45:09.000Z",
-  "license": null,
-  "license_family": "unknown",
+  "updated_at": "2026-09-22T14:24:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
   "pipeline_tag": "text-to-image",
   "library": "openvino",
   "languages": [
@@ -19,6 +19,7 @@
     "z-image",
     "int4",
     "en",
+    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,

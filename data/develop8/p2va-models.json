@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "develop8/p2va-models",
+  "slug": "develop8-p2va-models",
+  "author": "develop8",
+  "url": "https://huggingface.co/develop8/p2va-models",
+  "created_at": "2026-06-20T21:51:25.000Z",
+  "updated_at": "2026-09-22T22:29:42.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24342874932,
+  "storage_human": "24.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "วิธีสร้างรายได้จาก YouTube",
+      "url": "https://support.google.com/youtube/answer/72857?hl=th",
+      "snippet": "ตั้งแต่วันที่ 1 กุมภาพันธ์ 2027 เป็นต้นไป เราจะเปิดตัวข้อมูลอัปเดตเกี่ยวกับโปรแกรมพาร์ทเนอร์ YouTube (YPP) …"
+    },
+    {
+      "title": "一文读懂：大模型RAG（检索增强生成）含高级方法",
+      "url": "https://www.zhihu.com/tardis/zm/art/675509396",
+      "snippet": "RAG RAG 检索增强生成（Retrieval Augmented Generation），已经成为当下最火热的LLM应用方案和打开方式了。 理解起来不难， …"
+    },
+    {
+      "title": "YouTube公司 - 知乎",
+      "url": "https://www.zhihu.com/topic/19550532/intro",
+      "snippet": "Apr 24, 2020 · YouTube，全球最大的视频分享网站，早期公司总部位于加利福尼亚州的圣布里诺。公司由华裔美籍华人陈士骏等人创 …"
+    },
+    {
+      "title": "Word文档中如何将多张图片组合到一起 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/b2c186c863cbabc46ef6ff9f.html",
+      "snippet": "Apr 12, 2019 · Word文档中如何将多张图片组合到一起,在使用Word文档编辑排版时，有时需要讲插入的图片进行排列与排版，但对于 …"
+    }
+  ]
+}

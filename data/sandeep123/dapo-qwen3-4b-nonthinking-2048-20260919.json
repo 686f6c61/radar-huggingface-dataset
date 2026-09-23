@@ -5,7 +5,7 @@
   "author": "sandeep123",
   "url": "https://huggingface.co/sandeep123/dapo-qwen3-4b-nonthinking-2048-20260919",
   "created_at": "2026-09-19T16:35:08.000Z",
-  "updated_at": "2026-09-22T02:38:21.000Z",
+  "updated_at": "2026-09-23T03:10:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 13115284532,
-  "storage_human": "13.1 GB",
+  "storage_bytes": 17411378855,
+  "storage_human": "17.4 GB",
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"

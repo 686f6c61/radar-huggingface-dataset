@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "baerquants/Qwen3.8-Flash-Next",
+  "slug": "baerquants-qwen3-8-flash-next",
+  "author": "baerquants",
+  "url": "https://huggingface.co/baerquants/Qwen3.8-Flash-Next",
+  "created_at": "2026-09-22T20:55:50.000Z",
+  "updated_at": "2026-09-22T20:55:51.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 360013002208,
+  "storage_human": "360.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sözcü Gazetesi - Haberler, son dakika haberleri, güncel haber, köşe ...",
+      "url": "https://www.sozcu.com.tr/",
+      "snippet": "Haberler, son dakika haberleri, köşe yazıları, özel gündem haber ve güncel gelişmeler, röportajlar ve Sözcü Gazetesi’ne dair …"
+    },
+    {
+      "title": "Yazarlar, Köşe Yazıları - Sözcü Gazetesi",
+      "url": "https://www.sozcu.com.tr/yazarlar",
+      "snippet": "2 days ago · Sözcü Gazetesi'nde yer alan köşe yazarları, yazarların son köşe yazıları, Sözcü haber sitesinde."
+    },
+    {
+      "title": "Son Dakika Haberleri - Sözcü Gazetesi",
+      "url": "https://www.sozcu.com.tr/son-dakika",
+      "snippet": "Türkiye'de ve dünyada yer alan son dakika haberleri, son dakika özel haber ve gelişmeler Sözcü haber sitesinde!"
+    },
+    {
+      "title": "Sözcü Gazetesi - Sözcü Manşet Oku - Haberler 22 September 2026",
+      "url": "https://www.gazeteoku.com/gazeteler/sozcu-gazetesi-manseti",
+      "snippet": "21 hours ago · Sözcü Gazetesi'nin günlük manşetlerinin yer aldığı sayfadır. Son dakika Sözcü Gazetesi manşetlerini ve haberlerini …"
+    },
+    {
+      "title": "Sözcü Gazetesi",
+      "url": "https://www.sozcu.com.tr/e-gazete",
+      "snippet": "Haberler, son dakika haberleri, özel gündem haber ve güncel gelişmeler, röportajlar ve Sözcü Gazetesi’ne dair haberler Sözcü …"
+    }
+  ]
+}

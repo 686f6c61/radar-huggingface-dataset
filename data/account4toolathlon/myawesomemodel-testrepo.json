@@ -4,8 +4,8 @@
   "slug": "account4toolathlon-myawesomemodel-testrepo",
   "author": "account4toolathlon",
   "url": "https://huggingface.co/account4toolathlon/MyAwesomeModel-TestRepo",
-  "created_at": "2026-09-16T18:12:46.000Z",
-  "updated_at": "2026-09-16T18:12:58.000Z",
+  "created_at": "2026-09-22T23:34:31.000Z",
+  "updated_at": "2026-09-22T23:34:32.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-18T03:01:26.735Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

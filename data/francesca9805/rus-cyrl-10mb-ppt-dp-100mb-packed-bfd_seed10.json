@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed10",
+  "slug": "francesca9805-rus-cyrl-10mb-ppt-dp-100mb-packed-bfd_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed10",
+  "created_at": "2026-09-22T22:36:02.000Z",
+  "updated_at": "2026-09-22T22:37:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/rus_cyrl_10mb",
+    "base_model:finetune:goldfish-models/rus_cyrl_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79695410,
+  "storage_human": "80 MB",
+  "base_model": "goldfish-models/rus_cyrl_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Live Sex Webcams and Porn Chat | xHamsterLive",
+      "url": "https://xhamsterlive.com/",
+      "snippet": "Welcome to xHamsterLive! We're a free online community where you can come and watch our amazing amateur models perform live …"
+    },
+    {
+      "title": "Free Live Porn and Hardcore Webcams | xHamsterLive",
+      "url": "https://xhamsterlive.com/couples",
+      "snippet": "Watch Hardcore Shows with Couples, Threesomes, Group Sex and Gangbangs in Official Porn Webcams from xHamster."
+    },
+    {
+      "title": "XHamsterlive Porn Videos: XXX Hot Free Sex xhamsterlive.com | xHamster",
+      "url": "https://xhamster.com/channels/xhamsterlive",
+      "snippet": "Free xHamsterlive porn videos from xhamsterlive.com. Discover xHamsterlive sex videos featuring porn stars fucking in XXX scenes, …"
+    },
+    {
+      "title": "Δωρεάν ζωντανό σεξ με κάμερες web και chat πορνό | xHamsterLive",
+      "url": "https://el.xhamsterlive.com/",
+      "snippet": "Καλώς ήρθες στο xHamsterLive, μια δωρεάν online κοινότητα όπου μπορείς να έρθεις και να παρακολουθήσεις ζωντανά τα …"
+    },
+    {
+      "title": "Σύνδεση | Κοινότητα ζωντανής κάμερας | xHamsterLive",
+      "url": "https://el.xhamsterlive.com/login",
+      "snippet": "Ανυπομονείς να τσατάρεις ζωντανά με μοντέλα ή να ξεκινήσεις το δικό σου αποκλειστικό σόου ενηλίκων; ️ Συνδέσου στο …"
+    }
+  ]
+}

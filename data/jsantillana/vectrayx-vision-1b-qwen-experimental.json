@@ -5,7 +5,7 @@
   "author": "jsantillana",
   "url": "https://huggingface.co/jsantillana/vectrayx-vision-1b-qwen-experimental",
   "created_at": "2026-09-21T22:17:11.000Z",
-  "updated_at": "2026-09-21T22:18:44.000Z",
+  "updated_at": "2026-09-23T02:09:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -34,12 +34,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 1108961280,
   "parameters_human": "1.11B",
-  "storage_bytes": 3556647616,
-  "storage_human": "3.6 GB",
+  "storage_bytes": 3703479320,
+  "storage_human": "3.7 GB",
   "base_model": "jsantillana/vectrayx-1b",
   "formats": [
     "gguf"

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "sartajbhuvaji/bonsai-qwen3-30b-a3b-teacher-corrected-lora",
+  "slug": "sartajbhuvaji-bonsai-qwen3-30b-a3b-teacher-corrected-lora",
+  "author": "sartajbhuvaji",
+  "url": "https://huggingface.co/sartajbhuvaji/bonsai-qwen3-30b-a3b-teacher-corrected-lora",
+  "created_at": "2026-09-22T21:32:01.000Z",
+  "updated_at": "2026-09-22T21:34:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "qwen3-moe",
+    "typescript",
+    "mixture-of-experts",
+    "teacher-correction",
+    "lora",
+    "text-generation",
+    "conversational",
+    "en",
+    "arxiv:2408.11796",
+    "base_model:Qwen/Qwen3-30B-A3B-Base",
+    "base_model:adapter:Qwen/Qwen3-30B-A3B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61078033653,
+  "storage_human": "61.1 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "YouTube Creator Awards",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    },
+    {
+      "title": "Advanced Scene Switcher | OBS Forums",
+      "url": "https://obsproject.com/forum/resources/advanced-scene-switcher.395/",
+      "snippet": "May 19, 2016 · This plugin will allow you to automate various tasks using \"Macros\". Macros consist of a list of conditions under which …"
+    },
+    {
+      "title": "youtube | OBS Forums",
+      "url": "https://obsproject.com/forum/tags/youtube/",
+      "snippet": "Apr 15, 2026 · When we enter the YouTube stream key on OBS, it uploads the video directly on our YouTube page, but doesn't send …"
+    },
+    {
+      "title": "Manage your home area or current location for YouTube TV",
+      "url": "https://support.google.com/youtubetv/answer/7129768?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube TV outside of your home area While outside of your home area, you can watch programming local to where you are, but …"
+    }
+  ]
+}

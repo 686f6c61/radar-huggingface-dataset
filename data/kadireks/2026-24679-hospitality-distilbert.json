@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "kadireks/2026-24679-hospitality-distilbert",
+  "slug": "kadireks-2026-24679-hospitality-distilbert",
+  "author": "kadireks",
+  "url": "https://huggingface.co/kadireks/2026-24679-hospitality-distilbert",
+  "created_at": "2026-09-22T22:14:01.000Z",
+  "updated_at": "2026-09-22T22:14:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "fine-tuned",
+    "24-679",
+    "cmu",
+    "en",
+    "dataset:kwongnon/2026-24679-text-dataset",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "2026-24679-text-dataset",
+      "metric": "Accuracy (group-disjoint test split)",
+      "value": 0.9259
+    },
+    {
+      "task": null,
+      "dataset": "2026-24679-text-dataset",
+      "metric": "Macro F1 (group-disjoint test split)",
+      "value": 0.9256
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lost Luggage (TV Mini Series 2022) - IMDb",
+      "url": "https://www.imdb.com/title/tt15018294/",
+      "snippet": "Lost Luggage: With Lara Chedraoui, Jeroen Van der Ven, Mattias Van de Vijver, Isabelle van Hecke. A police officer is tasked with …"
+    },
+    {
+      "title": "IMDb: Ratings, Reviews, and Where to Watch the Best Movies & TV …",
+      "url": "https://www.imdb.com/",
+      "snippet": "IMDb is the world's most popular and authoritative source for movie, TV and celebrity content. Find ratings and reviews for the …"
+    },
+    {
+      "title": "Lost Luggage (Short 2016) - IMDb",
+      "url": "https://www.imdb.com/title/tt5843840/",
+      "snippet": "Lost Luggage: Directed by Thomas Burke. With David Eimer, Laura L. Martin, Lindsay Anne Kent, Stephanie Marett. A social outcast …"
+    },
+    {
+      "title": "Lost Luggage (TV Movie 2007) - IMDb",
+      "url": "https://www.imdb.com/title/tt1046951/",
+      "snippet": "Lost Luggage: Directed by Lucy Bennett. With Michael Angelis."
+    },
+    {
+      "title": "Lost Luggage (TV Mini Series 2022) - Tom Dewispelaere as David",
+      "url": "https://www.imdb.com/title/tt15018294/characters/nm0212423",
+      "snippet": "It looks like we don't have any photos or quotes yet."
+    }
+  ]
+}

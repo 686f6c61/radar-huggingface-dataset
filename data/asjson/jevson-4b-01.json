@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "asjson/jevson-4b-01",
+  "slug": "asjson-jevson-4b-01",
+  "author": "asjson",
+  "url": "https://huggingface.co/asjson/jevson-4b-01",
+  "created_at": "2026-09-23T01:06:47.000Z",
+  "updated_at": "2026-09-23T01:11:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "asjson",
+    "jevson",
+    "decision-model",
+    "structured-extraction",
+    "json-schema",
+    "calibrated",
+    "lora",
+    "qwen3",
+    "text-classification",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 184618184,
+  "storage_human": "185 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Add, Delete, Enable, or Disable Startup Items in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/2944-add-delete-enable-disable-startup-items-windows-10-a.html",
+      "snippet": "Jan 17, 2026 · How to Add, Delete, Enable, or Disable Startup Items in Windows 10 Information Startup items are the apps, …"
+    },
+    {
+      "title": "上海迪士尼攻略（6次吐血总结）",
+      "url": "https://www.zhihu.com/tardis/zm/art/256381785",
+      "snippet": "Jul 16, 2023 · 这篇文章总结了6次上海迪士尼游玩的攻略，提供了详细的游玩建议和实用信息。"
+    },
+    {
+      "title": "如何在电脑上安装免费的access？ - 知乎",
+      "url": "https://www.zhihu.com/question/329637605",
+      "snippet": "access和Word，ppt一样都是office的一部分，我们要想安装access就必须先下载完整的office2010.然后进行安装。"
+    },
+    {
+      "title": "Disney+ streaming issue Solved - Page 4 - Windows 10 Forums",
+      "url": "https://www.tenforums.com/general-support/194826-disney-streaming-issue-4.html",
+      "snippet": "May 30, 2022 · i have subscribed to disney+ service recently and have the following problem that even their technical support staff …"
+    },
+    {
+      "title": "进击的巨人观看顺序是什么? - 知乎",
+      "url": "https://www.zhihu.com/question/305147443",
+      "snippet": "二周目更新26年04月21日，重发修正： 1. 修复 S1 正片第 12 话的画面问题； 2. 为 S4 的 OST 增补扫图。 VCB-Studio巨人全四季 …"
+    }
+  ]
+}

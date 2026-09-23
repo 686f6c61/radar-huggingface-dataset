@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "cocoat/cocoamix",
+  "slug": "cocoat-cocoamix",
+  "author": "cocoat",
+  "url": "https://huggingface.co/cocoat/cocoamix",
+  "created_at": "2024-09-14T10:16:50.000Z",
+  "updated_at": "2026-09-22T21:32:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 635089723918,
+  "storage_human": "635.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Geografija Bosne i Hercegovine - Nastavna sredstva - Wordwall",
+      "url": "https://wordwall.net/sh-ba/community/geografija-bosne-i-hercegovine",
+      "snippet": "Dijagram sa oznakama. Strukture stanovništva Bosne i Hercegovine polna, starosna ... Dovršavanje rečenice."
+    },
+    {
+      "title": "Granice i veličina BiH - Kviz - Wordwall",
+      "url": "https://wordwall.net/hr/resource/37225384/geografija-bosne-i-hercegovine/granice-i-veli%C4%8Dina-bih",
+      "snippet": "1) U kojem toplotnom pojasu je smještena BiH 2) BiH graniči sa? 3) Ukupna dužina granice BiH 4) Ukupna površina BiH? 5) BiH sa …"
+    },
+    {
+      "title": "Kviz: Geografija Bosne i Hercegovine - Kvizoman",
+      "url": "https://kvizoman.com/kviz-geografija-4/",
+      "snippet": "Kviz: Geografija. Koliko dobro poznajete geografiju Bosne i Hercegovine, rijeke, planine i nacionalne parkove? Odigrajte kviz i …"
+    },
+    {
+      "title": "Bosna i Hercegovina, + slijepe karte - 7. razred, geografija",
+      "url": "https://www.skolica.net/odabir-vjezbe/geografija/geografija-7-r-os/bosna-i-hercegovina-7-razred-geografija",
+      "snippet": "Vježba za lakše učenje i ponavljanje gradiva za ispit. Bosna i Hercegovina - 7. razred, geografija"
+    },
+    {
+      "title": "Znaš li išta o planinama, rijekama i gradovima BiH? Vrijeme je da nam ...",
+      "url": "https://net.hr/webcafe/kvizovi/mislis-da-znas-sve-o-planinama-rijekama-i-gradovima-bih-vrijeme-je-da-to-dokazes-na-kvizu-6074091b-8a81-11f1-936f-9600040c8f8e",
+      "snippet": "Jul 29, 2026 · Prepoznajete li trenutak kada je geografski položaj prestao biti samo točka na karti i postao sudbina? Upravo ta širina i …"
+    }
+  ]
+}

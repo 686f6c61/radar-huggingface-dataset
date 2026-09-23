@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfd_seed455",
+  "slug": "francesca9805-urd-arab-10mb-ppt-dp-100mb-packed-bfd_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfd_seed455",
+  "created_at": "2026-09-23T00:22:22.000Z",
+  "updated_at": "2026-09-23T00:24:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/urd_arab_10mb",
+    "base_model:finetune:goldfish-models/urd_arab_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79443930,
+  "storage_human": "79 MB",
+  "base_model": "goldfish-models/urd_arab_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comment debloquer une liseuse Kobo aura - Forum Matériel & Système",
+      "url": "https://forums.commentcamarche.net/forum/affich-38273354-comment-debloquer-une-liseuse-kobo-aura",
+      "snippet": "Feb 27, 2026 · Bonjour ! (Avant de commencer : Rechargez votre liseuse pendant au moins une heure. Vérifiez qu'une connexion Wi …"
+    },
+    {
+      "title": "python - Error \" (unicode error) 'unicodeescape' codec can't decode ...",
+      "url": "https://stackoverflow.com/questions/37400974/error-unicode-error-unicodeescape-codec-cant-decode-bytes-in-position-2-3",
+      "snippet": "May 24, 2016 · I get the following error: SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: …"
+    },
+    {
+      "title": "Installation WhatsApp, fenêtre d'inscription du N° tel ina",
+      "url": "https://forums.commentcamarche.net/forum/affich-38280669-installation-whatsapp-fenetre-d-inscription-du-n0-tel-ina",
+      "snippet": "Apr 1, 2026 · Re, Cela provient presque toujours: D'un bug d'affichage, d'un souci de compatibilité ou d'un blocage lié à une …"
+    },
+    {
+      "title": "php - Xampp localhost/dashboard - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/48125093/xampp-localhost-dashboard",
+      "snippet": "Jan 6, 2018 · I downloaded the recent version of xampp and I installed it and everything but when i type \"localhost\" in the browser it …"
+    },
+    {
+      "title": "Stack Overflow em Português",
+      "url": "https://pt.stackoverflow.com/",
+      "snippet": "Perguntas e respostas para programadores profissionais e entusiastas"
+    }
+  ]
+}

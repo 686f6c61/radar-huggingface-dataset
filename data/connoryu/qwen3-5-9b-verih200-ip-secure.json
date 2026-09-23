@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/qwen3.5-9b-verih200-ip-secure",
+  "slug": "connoryu-qwen3-5-9b-verih200-ip-secure",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/qwen3.5-9b-verih200-ip-secure",
+  "created_at": "2026-09-22T22:36:31.000Z",
+  "updated_at": "2026-09-22T22:41:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ConnorYU/Qwen3.5-9B-VerIH-step200",
+    "base_model:finetune:ConnorYU/Qwen3.5-9B-VerIH-step200",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 37659338741,
+  "storage_human": "37.7 GB",
+  "base_model": "ConnorYU/Qwen3.5-9B-VerIH-step200",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Equals sign - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Equals_sign",
+      "snippet": "The equals sign (British English) or equal sign (American English), also known as the equality sign, is the mathematical symbol =, …"
+    },
+    {
+      "title": "BYJU'S Online learning Programs For K3, K10, K12, NEET, JEE, …",
+      "url": "https://byjus.com/maths/equal-sign/",
+      "snippet": "The symbol “=” name is “the equal sign,” or “equals,” and it is essential to understand how to verbalize or say the accurate …"
+    },
+    {
+      "title": "Greater Than, Less Than, and Equal Symbols with Examples",
+      "url": "https://www.wukongsch.com/blog/greater-than-sign-less-than-equal-symbols-post-42823/",
+      "snippet": "Sep 4, 2026 · Learn how to use the greater than sign (>), less than sign (<), and greater than or equal to (≥) with examples, tips, and …"
+    },
+    {
+      "title": "Equals sign - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/Equals_sign",
+      "snippet": "The equals sign (=), otherwise referred to as the equality sign or equal to sign or equal sign for short, is a symbol used to indicate …"
+    },
+    {
+      "title": "Equal To - Sign, Meaning, Examples | Equal to Symbol - Cuemath",
+      "url": "https://www.cuemath.com/numbers/equal-sign/",
+      "snippet": "Equal to sign is represented as =. We use this symbol when two or more quantities are exactly the same. Learn everything about an …"
+    }
+  ]
+}

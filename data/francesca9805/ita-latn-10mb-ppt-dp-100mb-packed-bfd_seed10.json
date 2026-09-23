@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10",
+  "slug": "francesca9805-ita-latn-10mb-ppt-dp-100mb-packed-bfd_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10",
+  "created_at": "2026-09-22T21:45:54.000Z",
+  "updated_at": "2026-09-22T21:47:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/ita_latn_10mb",
+    "base_model:finetune:goldfish-models/ita_latn_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79368221,
+  "storage_human": "79 MB",
+  "base_model": "goldfish-models/ita_latn_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Web OPD :: Kelurahan Binong",
+      "url": "https://binong.tangerangkab.go.id/",
+      "snippet": "Anak Penjaga Rumah Dinas Peternakan Jadi Lurah Binong Tangerang,- Juhri Saputra, Lurah Binong, Kecamatan Curug, Kabupaten …"
+    },
+    {
+      "title": "Binong, Curug, Tangerang - Wikipedia bahasa Indonesia, …",
+      "url": "https://id.wikipedia.org/wiki/Binong,_Curug,_Tangerang",
+      "snippet": "Binong adalah kelurahan yang berada di kecamatan Curug, Kabupaten Tangerang, Banten, Indonesia."
+    },
+    {
+      "title": "Kelurahan Binong | (021) 59491320 | Kota Tangerang",
+      "url": "https://www.semuabis.com/kelurahan-binong_1r-021-59491320",
+      "snippet": "Di manakah lokasi Kelurahan Binong? Kelurahan Binong berlokasi di Jl. Raya Binong No.4, Binong, Kec. Curug, Kabupaten …"
+    },
+    {
+      "title": "Profile Kelurahan Binong",
+      "url": "https://binong.tangerangkab.go.id/profil-konten/629",
+      "snippet": "Oct 25, 2023 · Profile Kelurahan Binong PROFILE KELURAHAN BINONG LUAS WILAYAH : 461,28 HA TERDIRI DARI: 5 …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.co.id/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, featuring Street View, 3D mapping, turn-by-turn directions, indoor maps and more across your …"
+    }
+  ]
+}

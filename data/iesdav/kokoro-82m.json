@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "iesdav/Kokoro-82M",
+  "slug": "iesdav-kokoro-82m",
+  "author": "iesdav",
+  "url": "https://huggingface.co/iesdav/Kokoro-82M",
+  "created_at": "2026-09-22T21:54:30.000Z",
+  "updated_at": "2026-09-22T21:54:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-speech",
+    "en",
+    "arxiv:2306.07691",
+    "arxiv:2203.02395",
+    "base_model:yl4579/StyleTTS2-LJSpeech",
+    "base_model:finetune:yl4579/StyleTTS2-LJSpeech",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 361048692,
+  "storage_human": "361 MB",
+  "base_model": "yl4579/StyleTTS2-LJSpeech",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rental Listings - 313 Rentals | Zillow",
+      "url": "https://www.zillow.com/homes/for_rent/?msockid=111689d40f39664a1c8e9e080eb767ee",
+      "snippet": "This is a list of all of the rental listings. Don't forget to use the filters and set up a saved search."
+    },
+    {
+      "title": "Real Estate & Homes For Sale - 168 Homes For Sale | Zillow",
+      "url": "https://www.zillow.com/homes/for_sale/?msockid=111689d40f39664a1c8e9e080eb767ee",
+      "snippet": "23 hours ago · Zillow has 168 homes for sale. View listing photos, review sales history, and use our detailed real estate filters to find …"
+    },
+    {
+      "title": "Zillow: Real Estate, Apartments, Mortgages & Home Values",
+      "url": "https://www.zillow.com/?msockid=111689d40f39664a1c8e9e080eb767ee",
+      "snippet": "The leading real estate marketplace. Search millions of for-sale and rental listings, compare Zestimate® home values and connect …"
+    },
+    {
+      "title": "TX Real Estate - Texas Homes For Sale | Zillow",
+      "url": "https://www.zillow.com/tx/?msockid=111689d40f39664a1c8e9e080eb767ee",
+      "snippet": "Zillow has 277869 homes for sale in Texas. View listing photos, review sales history, and use our detailed real estate filters to find …"
+    },
+    {
+      "title": "San Antonio TX Real Estate & Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/san-antonio-tx/?msockid=111689d40f39664a1c8e9e080eb767ee",
+      "snippet": "Zillow has 13225 homes for sale in San Antonio TX. View listing photos, review sales history, and use our detailed real estate filters …"
+    }
+  ]
+}

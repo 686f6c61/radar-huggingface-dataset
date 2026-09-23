@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "AbstractPhil/mini-beatrix-2.5s",
+  "slug": "abstractphil-mini-beatrix-2-5s",
+  "author": "AbstractPhil",
+  "url": "https://huggingface.co/AbstractPhil/mini-beatrix-2.5s",
+  "created_at": "2026-09-22T23:55:15.000Z",
+  "updated_at": "2026-09-23T01:33:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "mini-beatrix",
+    "byte-level",
+    "linear-attention",
+    "splat-attention",
+    "aleph",
+    "adapters",
+    "custom_code",
+    "text-generation",
+    "en",
+    "base_model:AbstractPhil/mini-beatrix-2s",
+    "base_model:finetune:AbstractPhil/mini-beatrix-2s",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 237908285,
+  "parameters_human": "237.9M",
+  "storage_bytes": 892502346,
+  "storage_human": "893 MB",
+  "base_model": "AbstractPhil/mini-beatrix-2s",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Платежные карты Беларусбанка: виды ...",
+      "url": "https://belarusbank.by/ru/fizicheskim_licam/cards/",
+      "snippet": "Оформите банковскую карту Беларусбанка онлайн: дебетовые, виртуальные, клубные и карты с мани-бэком. Выберите …"
+    },
+    {
+      "title": "Заказать банковскую карту онлайн ...",
+      "url": "https://belarusbank.by/ru/fizicheskim_licam/cards/zayavka-na-oformlenie-kartochki/",
+      "snippet": "Оформить заявку на выпуск платежной карточки как к новому, так и к действующему счету можно в учреждении банка, в …"
+    },
+    {
+      "title": "Банковские карты: оформить платёжную ...",
+      "url": "https://www.alfabank.by/cards/",
+      "snippet": "Оформляйте дебетовые карты платёжных систем Visa, Белкарт и Mastercard в белорусских рублях или иностранной валюте. …"
+    },
+    {
+      "title": "Omega Distilled V3 - BeatriXL-O Preview - v0003 - BeatriXLO ComfyUI ...",
+      "url": "https://civitai.com/models/1409093/omega-distilled-v3-beatrixl-o-preview",
+      "snippet": "The model weights and lora are available on huggingface - and the lora is still cooking, so you can grab epoch 2 as of right now, or just wait for better. https://huggingface.co/AbstractPhil/TEST_LORAS/blob/main/BeatriXLO-REAL-fp32.safetensors"
+    },
+    {
+      "title": "Банковские карты — оформить платежную ...",
+      "url": "https://www.mtbank.by/cards/",
+      "snippet": "Премиальные карты в трех валютах BYN, USD, EUR от Mastercard и Visa Pay-сервисы без ограничений, переводы заграницу …"
+    }
+  ]
+}

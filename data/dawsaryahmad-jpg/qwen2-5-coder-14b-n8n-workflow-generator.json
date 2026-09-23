@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "dawsaryahmad-jpg/Qwen2.5-Coder-14B-n8n-Workflow-Generator",
+  "slug": "dawsaryahmad-jpg-qwen2-5-coder-14b-n8n-workflow-generator",
+  "author": "dawsaryahmad-jpg",
+  "url": "https://huggingface.co/dawsaryahmad-jpg/Qwen2.5-Coder-14B-n8n-Workflow-Generator",
+  "created_at": "2026-09-22T23:10:14.000Z",
+  "updated_at": "2026-09-22T23:10:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "n8n",
+    "workflow",
+    "automation",
+    "fine-tuned",
+    "code-generation",
+    "qlora",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:mbakgun/n8nbuilder-n8n-workflows-dataset",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 76947808132,
+  "storage_human": "76.9 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Horoscopes - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Each day includes unique surprises and revelations, so make sure you visit regularly to read your zodiac sign’s daily horoscope. …"
+    },
+    {
+      "title": "Read Your Daily Horoscope! | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/",
+      "snippet": "Read Astrology Answers' online daily horoscopes for your zodiac sign, Tarot readings, article content, Chinese astrology, …"
+    },
+    {
+      "title": "如何评价Google DeepMind的Gemini 3.8 Flash模型？",
+      "url": "https://www.zhihu.com/question/2078625121644845032",
+      "snippet": "Sep 2, 2026 · 这里推荐我做的一个小插件 agy-staff 让 codex 和 claude code 可以调度 gemini，以弥补我上文提到的 gemini 目前缺少 …"
+    },
+    {
+      "title": "为什么我和 Gemini 用中文对话，她总是频繁用下面那些 ...",
+      "url": "https://www.zhihu.com/question/2076723520709583786",
+      "snippet": "Aug 28, 2026 · 为什么我和 Gemini 用中文对话，她总是频繁用下面那些词让我非常生气啊，但是用英文对话就好很多了？"
+    },
+    {
+      "title": "NLP 大模型与 CV 大模型的 “大”：同源而殊途的技术 ...",
+      "url": "https://bbs.huaweicloud.com/blogs/455174",
+      "snippet": "Jun 27, 2025 · 随着多模态大模型（如 GPT-4V、Gemini）的发展，两者正走向技术融合 —— 例如，用语言模型的逻辑推理能力增强 …"
+    }
+  ]
+}

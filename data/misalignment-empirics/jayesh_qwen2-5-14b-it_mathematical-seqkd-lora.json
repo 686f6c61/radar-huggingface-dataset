@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Misalignment-Empirics/jayesh_qwen2.5-14b-it_mathematical-seqkd-lora",
+  "slug": "misalignment-empirics-jayesh_qwen2-5-14b-it_mathematical-seqkd-lora",
+  "author": "Misalignment-Empirics",
+  "url": "https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_mathematical-seqkd-lora",
+  "created_at": "2026-09-22T20:53:56.000Z",
+  "updated_at": "2026-09-22T20:54:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-14B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 562015076,
+  "storage_human": "562 MB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "F1 - The Official Home of Formula 1® Racing",
+      "url": "https://www.formula1.com/",
+      "snippet": "Your go-to source for the latest F1 news, video highlights, GP results, live timing, in-depth analysis and expert commentary."
+    },
+    {
+      "title": "F1 Schedule 2026 - Official Calendar of Grand Prix Races - Formula 1",
+      "url": "https://www.formula1.com/en/racing.html",
+      "snippet": "Bahrain FORMULA 1 GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA 2026 02 - 04 Oct ROUND 17"
+    },
+    {
+      "title": "F1 Calendar | ESPN",
+      "url": "https://www.espn.com/f1/schedule",
+      "snippet": "The complete 2026 F1 season schedule on ESPN. Includes game times, TV listings and ticket information for all F1 games."
+    },
+    {
+      "title": "F1 Schedule 2026 - Sky Sports",
+      "url": "https://www.skysports.com/f1/schedule",
+      "snippet": "Practice 2 Starting Fri 27 Nov, 5:00pm Practice 3 Starting Sat 28 Nov, 2:30pm Qualifying Starting Sat 28 Nov, 6:00pm Race Starting …"
+    },
+    {
+      "title": "Formula 1 Schedule, F1 Schedule, Auto Racing Schedule - ESPN",
+      "url": "https://www.espn.com/racing/schedule/_/series/f1",
+      "snippet": "Series: IndyCar Series | Formula 1 Season: Auto Racing schedules and results on ESPN.com."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Gensyn",
   "url": "https://huggingface.co/Gensyn/open-1b-sft",
   "created_at": "2026-09-15T14:02:47.000Z",
-  "updated_at": "2026-09-16T12:44:59.000Z",
+  "updated_at": "2026-09-22T16:43:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/resnet-50",
+  "slug": "skillsafe-ai-resnet-50",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/resnet-50",
+  "created_at": "2026-09-22T21:56:03.000Z",
+  "updated_at": "2026-09-22T21:56:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "resnet",
+    "image-classification",
+    "skillsafe",
+    "browser",
+    "import",
+    "base_model:Xenova/resnet-50",
+    "base_model:quantized:Xenova/resnet-50",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 127945822,
+  "storage_human": "128 MB",
+  "base_model": "Xenova/resnet-50",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best mobile website builders for every site type in 2026 - Hostinger",
+      "url": "https://www.hostinger.com/tutorials/best-mobile-website-builders/",
+      "snippet": "5 days ago · Compare the best mobile website builders, including Hostinger, Wix, and SimDif. See pricing, AI tools, and mobile …"
+    },
+    {
+      "title": "6 best mobile website builders in 2026 - Wix.com",
+      "url": "https://www.wix.com/blog/best-mobile-website-builders",
+      "snippet": "Jul 15, 2026 · In this guide, you’ll learn about the best mobile website builders and how to choose the right one for your needs. The …"
+    },
+    {
+      "title": "9 Best Mobile Website Builders (Sep 2026) - HostAdvice",
+      "url": "https://hostadvice.com/website-builders/best-mobile-website-builders/",
+      "snippet": "Jul 29, 2026 · Explore the best mobile website builders for fast, responsive sites. Build your mobile-friendly site easily with top-rated …"
+    },
+    {
+      "title": "Best Website Builders of 2026 - Top Consumer Reviews",
+      "url": "https://www.topconsumerreviews.com/best-website-builders/index.php",
+      "snippet": "1 day ago · 2026 Website Builder Reviews Which Website Builder is the Best? Selecting the right website builder can significantly …"
+    },
+    {
+      "title": "6 Best Mobile-Friendly Website Builders in 2026 (For Best UX)",
+      "url": "https://www.founderjar.com/mobile-friendly-website-builders/",
+      "snippet": "Sep 13, 2026 · The best mobile-friendly website builders allow you to create a responsive website that visitors can easily access on …"
+    }
+  ]
+}

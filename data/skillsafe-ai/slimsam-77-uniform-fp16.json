@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/slimsam-77-uniform-fp16",
+  "slug": "skillsafe-ai-slimsam-77-uniform-fp16",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/slimsam-77-uniform-fp16",
+  "created_at": "2026-09-22T21:47:21.000Z",
+  "updated_at": "2026-09-22T21:47:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "sam",
+    "skillsafe",
+    "browser",
+    "onnxruntime-web",
+    "image-segmentation",
+    "import",
+    "base_model:Xenova/slimsam-77-uniform",
+    "base_model:quantized:Xenova/slimsam-77-uniform",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20720775,
+  "storage_human": "21 MB",
+  "base_model": "Xenova/slimsam-77-uniform",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2025 Los Angeles Rams Roster & Players | Pro-Football-Reference.com",
+      "url": "https://www.pro-football-reference.com/teams/ram/2025_roster.htm",
+      "snippet": "Check out the 2025 Los Angeles Rams Roster, Players , Starters and more on Pro-Football-Reference.com."
+    },
+    {
+      "title": "Rams Players Roster | Los Angeles Rams - therams.com",
+      "url": "https://www.therams.com/team/players-roster/",
+      "snippet": "Los Angeles Rams Players Roster: The team's official roster, depth chart, transactions, statistics, player profiles and more."
+    },
+    {
+      "title": "2025 Los Angeles Rams Roster - The Football Database",
+      "url": "https://www.footballdb.com/teams/nfl/los-angeles-rams/roster/2025",
+      "snippet": "Los Angeles Rams roster for the 2025 NFL season. Los Angeles Rams players listed alphabetically or numerically."
+    },
+    {
+      "title": "Los Angeles Rams NFL Roster - ESPN",
+      "url": "https://www.espn.com/nfl/team/roster/_/name/lar/los-angeles-rams",
+      "snippet": "Explore the Los Angeles Rams NFL roster on ESPN. Includes full details on offense, defense and special teams."
+    },
+    {
+      "title": "Rams announce initial 53-man roster for 2025 season - Los Angeles Rams",
+      "url": "https://www.therams.com/news/rams-announce-initial-53-man-roster-2025-season",
+      "snippet": "Aug 26, 2025 · Los Angeles will have three running backs on its initial 53-man roster in back-to-back years. Williams, who signed a …"
+    }
+  ]
+}

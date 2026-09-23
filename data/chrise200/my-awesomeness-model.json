@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ChrisE200/My-awesomeness-model",
+  "slug": "chrise200-my-awesomeness-model",
+  "author": "ChrisE200",
+  "url": "https://huggingface.co/ChrisE200/My-awesomeness-model",
+  "created_at": "2026-09-22T21:18:13.000Z",
+  "updated_at": "2026-09-22T21:18:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108310272,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433263448,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Milan Bergamo Airport - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport",
+      "snippet": "Milan Bergamo Airport[2][3] (IATA: BGY, ICAO: LIME), also formerly known as Orio al Serio International Airport, is the third-busiest …"
+    },
+    {
+      "title": "Orio al Serio International Airport (BGY Airport Code) | IATA & ICAO ...",
+      "url": "https://iata-codes.com/en/airport/bgy",
+      "snippet": "Orio al Serio International Airport (BGY) is a key aviation facility serving the region of Bergamo, Italy. It is officially identified by the …"
+    },
+    {
+      "title": "Bergamo / Orio Al Serio - Italy - World Airport Codes",
+      "url": "https://www.world-airport-codes.com/italy/orio-al-serio-4716.html",
+      "snippet": "Bergamo / Orio Al Serio is located in Italy, using iata code BGY, and icao code LIME.Find out the key information for this airport."
+    },
+    {
+      "title": "Airports in Bergamo (BGY): IATA Codes, Map & FAQ | IATA-CODES…",
+      "url": "https://www.iata-codes.com/en/city/bergamo",
+      "snippet": "What is the IATA code for Bergamo? The IATA code for the Bergamo metropolitan area is BGY. How many airports serve Bergamo? …"
+    },
+    {
+      "title": "BGY - Bergamo Airport Code (3-Letter Code) - Seabay",
+      "url": "https://www.seabaycargo.com/airport-code/bgy-orio-al-serio-international-airport.html",
+      "snippet": "Orio al Serio International Airport (IATA code: BGY, ICAO code: LIME), branded as Milan Bergamo Airport, is the third busiest …"
+    }
+  ]
+}

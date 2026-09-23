@@ -5,7 +5,7 @@
   "author": "dheeyantra",
   "url": "https://huggingface.co/dheeyantra/dhee-pravega-tts",
   "created_at": "2026-09-21T17:51:45.000Z",
-  "updated_at": "2026-09-21T17:55:40.000Z",
+  "updated_at": "2026-09-22T11:23:44.000Z",
   "license": "dhee-research-only-v1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -62,7 +62,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 50,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

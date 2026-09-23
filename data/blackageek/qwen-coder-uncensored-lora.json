@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "blackageek/qwen-coder-uncensored-lora",
+  "slug": "blackageek-qwen-coder-uncensored-lora",
+  "author": "blackageek",
+  "url": "https://huggingface.co/blackageek/qwen-coder-uncensored-lora",
+  "created_at": "2026-09-22T22:47:42.000Z",
+  "updated_at": "2026-09-22T22:47:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:OBLITERATUS/Qwen2.5-Coder-7B-Instruct-OBLITERATED",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:OBLITERATUS/Qwen2.5-Coder-7B-Instruct-OBLITERATED",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436334,
+  "storage_human": "334 MB",
+  "base_model": "OBLITERATUS/Qwen2.5-Coder-7B-Instruct-OBLITERATED",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discipline and Punish - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Discipline_and_Punish",
+      "snippet": "The emergence of prison as the form of punishment for every crime grew out of the development of discipline in the 18th and 19th …"
+    },
+    {
+      "title": "Discipline and Punish: The Birth of the Prison | Philopedia",
+      "url": "https://philopedia.org/works/discipline-and-punish-the-birth-of-the-prison/",
+      "snippet": "Comprehensive overview of Michel Foucault’s Discipline and Punish, analyzing modern punishment, prisons, surveillance, and the …"
+    },
+    {
+      "title": "Discipline and Punish by Michel Foucault - EBSCO",
+      "url": "https://www.ebsco.com/research-starters/literature-and-writing/discipline-and-punish-michel-foucault",
+      "snippet": "\"Discipline and Punish\" by Michel Foucault is a critical examination of the evolution of punishment and the role of prisons in modern …"
+    },
+    {
+      "title": "Foucault Discipline and Punishment: The Evolution of Modern ...",
+      "url": "https://journals.calstate.edu/csf/article/view/7721",
+      "snippet": "Aug 29, 2026 · Michel Foucault was a 20th-century French historian and philosopher who contributed many theories throughout his …"
+    },
+    {
+      "title": "Discipline and Punish: Foucault on the Evolution of Prisons",
+      "url": "https://www.thecollector.com/michel-foucault-discipline-and-punish/",
+      "snippet": "Nov 13, 2022 · Foucault aimed to investigate the emergence of prisons as the symbol of our modern form of punishment. To do this, …"
+    }
+  ]
+}

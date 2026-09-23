@@ -5,7 +5,7 @@
   "author": "Renesas",
   "url": "https://huggingface.co/Renesas/DenseNet121-ONNX",
   "created_at": "2026-09-16T12:11:28.000Z",
-  "updated_at": "2026-09-21T15:53:08.000Z",
+  "updated_at": "2026-09-22T15:38:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "KaztoRay/RemasterPhantom",
+  "slug": "kaztoray-remasterphantom",
+  "author": "KaztoRay",
+  "url": "https://huggingface.co/KaztoRay/RemasterPhantom",
+  "created_at": "2026-09-20T22:38:56.000Z",
+  "updated_at": "2026-09-22T23:53:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "security",
+    "defensive-security",
+    "anti-ransomware",
+    "file-integrity",
+    "base_model:meta-llama/Llama-3.2-1B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-1B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 1235814400,
+  "parameters_human": "1.24B",
+  "storage_bytes": 9328967421,
+  "storage_human": "9.3 GB",
+  "base_model": "meta-llama/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "剁椒鹿：在 1940 年代，人类就曾经无比接近点出《战锤 40K》的科技树，提前了整整三万八千年。 这可能是人类历史上最疯狂的生 …"
+    },
+    {
+      "title": "srt和ass外挂字幕如何内嵌到本地视频中（不改变原视频原本画质情况 …",
+      "url": "https://www.zhihu.com/question/283850681",
+      "snippet": "我对上一个答案做一下补充。首先mkv和mp4，不应该理解为格式，而是最好理解成包装容器。 mp4能包装一条视频轨和一条音频轨 …"
+    },
+    {
+      "title": "win10玩i社老游戏卡怎么解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/338045403",
+      "snippet": "I社的老游戏非常多，问题的话也是千奇百怪。从早期的2D界面，再到后面的3D作品，都会产生各种各样的问题，WIN10之后的机子很 …"
+    },
+    {
+      "title": "小约翰 - 知乎",
+      "url": "https://www.zhihu.com/people/lu-chen-xi-9-98",
+      "snippet": "4 days ago · 教父的资源并不属于柯里昂家族，迈克尔也继承不了，甚至老头子复生也不好使了。 教父的电影和原著小说的结尾区别 …"
+    },
+    {
+      "title": "RTX 5070 Ti和4070Ti Super选哪个？ - 知乎",
+      "url": "https://www.zhihu.com/question/11511893051",
+      "snippet": "作为一款 SFF-ready 的显卡，GeForce RTX 5070 Ti 魔刃提供了完整的 4 头输出，支持三个 DP 2.1b 输出和 1 个 HDMI 2.1a 输出，启 …"
+    }
+  ]
+}

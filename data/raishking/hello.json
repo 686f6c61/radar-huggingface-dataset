@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Raishking/Hello",
+  "slug": "raishking-hello",
+  "author": "Raishking",
+  "url": "https://huggingface.co/Raishking/Hello",
+  "created_at": "2026-09-22T23:30:16.000Z",
+  "updated_at": "2026-09-22T23:30:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "301 Moved Permanently",
+      "url": "https://www.interaction-design.org/events/ux-meetups/nux-leeds-witnessing-health-impactful-user-research-in-the-nhs-sold-out-sep-29th-2016",
+      "snippet": "301 Moved Permanently 301 Moved Permanently nginx"
+    },
+    {
+      "title": "Discussion: UX Talks BRZ - Feb 14, 2020 | IxDF",
+      "url": "https://www.interaction-design.org/discuss/event/ux-talks-brz-feb-14th-2020",
+      "snippet": "Join us on Feb 14, 2020: Hi IxDF Sao Paulo, let' s meet up and network over coffee! Share UX design insights and resources, …"
+    },
+    {
+      "title": "Author: Chris Harrison | IxDF",
+      "url": "https://www.interaction-design.org/literature/author/chris-harrison",
+      "snippet": "Chris Harrison: Chris is a third year Ph. D. student in the Human-Computer Interaction Institute at Carnegie Mellon University. He …"
+    },
+    {
+      "title": "Proceedings of Engineering Interactive Computing Systems 2010 …",
+      "url": "https://www.interaction-design.org/literature/conference/proceedings-of-engineering-interactive-computing-systems-2010-eics-2010",
+      "snippet": "Proceedings of Engineering Interactive Computing Systems 2010 EICS 2010: 1 article by e. g. Hofer, Ramon. Kunz, Andreas M.."
+    },
+    {
+      "title": "Discussion: Bauru UX Design Group Meetup - Feb 28, 2015",
+      "url": "https://www.interaction-design.org/discuss/event/bauru_ux_design_group_meetup_feb_28th_2015",
+      "snippet": "Join us on Feb 28, 2015: In this first meetup of the Bauru UX Design Group, we aim to have a networking between the UX Design …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "dangphuc2109/legalqa-qwen2.5-3b-adapter",
+  "slug": "dangphuc2109-legalqa-qwen2-5-3b-adapter",
+  "author": "dangphuc2109",
+  "url": "https://huggingface.co/dangphuc2109/legalqa-qwen2.5-3b-adapter",
+  "created_at": "2026-09-12T10:07:07.000Z",
+  "updated_at": "2026-09-22T23:28:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "legalqa",
+    "qlora",
+    "causal-lm",
+    "vietnamese",
+    "legal-qa",
+    "uit-dsc-2026",
+    "vi",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1957812966,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Russia Map | Map of Russia | Collection of Russia Maps",
+      "url": "https://www.mapsofworld.com/russia/",
+      "snippet": "Russia Map shows Russia's boundaries, interstate highways, and many other details. Check our high-quality collection of Russia Maps."
+    },
+    {
+      "title": "Thematic Map of Russia",
+      "url": "https://www.mapsofworld.com/russia/thematic-maps/",
+      "snippet": "Choose one of the map from our collection of Thematic Maps of Russia which can be used for educational, business and travel …"
+    },
+    {
+      "title": "la Russie Carte, Carte de la Russie - Carte du Monde",
+      "url": "https://fr.mapsofworld.com/russia/",
+      "snippet": "Carte de la Russie de ses capitaux, les villes, les routes, les aéroports, les rivières. Obtenir des cartes informatives Russie - …"
+    },
+    {
+      "title": "El Mapa de la Federación de Rusia - Espanol mapsofworld",
+      "url": "https://espanol.mapsofworld.com/continentes/europa/mapa-de-la-federacion-de-rusia.html",
+      "snippet": "Dec 20, 2021 · Mapa de la Federación de Rusia muestra la ubicación geográfica exacta del país en la parte norte de Asia. El mapa …"
+    },
+    {
+      "title": "Where is Russia | Where is Russia Located - Maps of World",
+      "url": "https://www.mapsofworld.com/russia/russian-federation-location-map.html",
+      "snippet": "Jan 21, 2023 · Where is Russia? Russia is located in Eastern Europe - Northern Asia and lies between latitudes 60° 0' N, and …"
+    }
+  ]
+}

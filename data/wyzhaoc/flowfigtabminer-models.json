@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "wyzhaoc/FlowFigTabMiner-models",
+  "slug": "wyzhaoc-flowfigtabminer-models",
+  "author": "wyzhaoc",
+  "url": "https://huggingface.co/wyzhaoc/FlowFigTabMiner-models",
+  "created_at": "2026-09-22T23:27:00.000Z",
+  "updated_at": "2026-09-22T23:27:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1553262321,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/RelatedSearch",
+      "snippet": ""
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www2.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version.aspx",
+      "snippet": "73528365bingux_20260917_735386732026.09.17.7352836562639d8829e9340f3b54b424ed635da9f0a6ef5f"
+    },
+    {
+      "title": "How to See All Bing Related Searches – Almaroof Inc",
+      "url": "https://almaroof.com/how-to-see-all-bing-related-searches-172/",
+      "snippet": "Jun 23, 2025 · Click on any related search term to perform a new Bing search based on that query. These suggestions appear at the …"
+    }
+  ]
+}

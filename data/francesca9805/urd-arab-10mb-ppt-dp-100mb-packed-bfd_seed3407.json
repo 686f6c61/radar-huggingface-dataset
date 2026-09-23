@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfd_seed3407",
+  "slug": "francesca9805-urd-arab-10mb-ppt-dp-100mb-packed-bfd_seed3407",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfd_seed3407",
+  "created_at": "2026-09-23T00:24:57.000Z",
+  "updated_at": "2026-09-23T00:26:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/urd_arab_10mb",
+    "base_model:finetune:goldfish-models/urd_arab_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79443866,
+  "storage_human": "79 MB",
+  "base_model": "goldfish-models/urd_arab_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "扣子空间，你的 AI 办公空间",
+      "url": "https://www.coze.cn/space-preview/",
+      "snippet": "扣子 (Coze)是基于AI Agent的智能办公平台，提供AI写作、PPT生成、网页开发与AI设计等一体化生产力工具，扣子致力于为用户与 …"
+    },
+    {
+      "title": "扣子 Coze - 字节跳动旗下职场AI伙伴扣子与一站式AI开发 ...",
+      "url": "https://www.coze.cn/overview",
+      "snippet": "无论独自创作、与团队并肩，还是在企业里规模化使用，扣子都有适合你的方式。 免费开始，让 AI 同事接手日常工作。 共享项目 …"
+    },
+    {
+      "title": "扣子空间 - Coze Ai扣子空间智能体平台",
+      "url": "https://cozespace.digu.pro/",
+      "snippet": "Aug 13, 2026 · 扣子空间是字节跳动推出的一款通用型AI Agent开发平台，它不仅能理解自然语言，还能自动规划任务步骤，调用各种 …"
+    },
+    {
+      "title": "扣子空间 - Coze AI扣子空间开发平台",
+      "url": "https://kouziai.github.io/%E6%89%A3%E5%AD%90%E7%A9%BA%E9%97%B4/",
+      "snippet": "Jan 19, 2026 · 扣子空间 (Coze)是字节跳动推出的专业AI Bot开发平台，提供可视化Bot编辑器、插件集成、知识库、工作流等强大功 …"
+    },
+    {
+      "title": "扣子空间 AI PPT|一键智能生成PPT_轻松汇报",
+      "url": "https://space.coze.cn/vibe/create_PPT",
+      "snippet": "扣子空间 AI PPT 技能模式是专为教师、学生、职场人设计的智能 PPT 生成模式。 只需一句话描述主题与受众，即可一键生成逻辑清 …"
+    }
+  ]
+}

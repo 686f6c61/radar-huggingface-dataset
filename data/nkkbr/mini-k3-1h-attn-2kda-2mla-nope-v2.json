@@ -5,7 +5,7 @@
   "author": "nkkbr",
   "url": "https://huggingface.co/nkkbr/Mini-K3-1H-attn-2kda-2mla-nope-v2",
   "created_at": "2026-09-19T09:14:12.000Z",
-  "updated_at": "2026-09-21T16:17:14.000Z",
+  "updated_at": "2026-09-22T10:41:43.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1523,
+  "downloads_30d": 1668,
   "trending_score": 0,
   "parameters": 1005084424,
   "parameters_human": "1.01B",
-  "storage_bytes": 14340330800,
-  "storage_human": "14.3 GB",
+  "storage_bytes": 16512752318,
+  "storage_human": "16.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

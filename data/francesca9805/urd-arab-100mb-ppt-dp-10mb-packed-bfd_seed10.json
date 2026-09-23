@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/urd-arab-100mb-ppt-Dp-10mb-packed-bfd_seed10",
+  "slug": "francesca9805-urd-arab-100mb-ppt-dp-10mb-packed-bfd_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/urd-arab-100mb-ppt-Dp-10mb-packed-bfd_seed10",
+  "created_at": "2026-09-23T00:47:44.000Z",
+  "updated_at": "2026-09-23T00:54:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/urd_arab_100mb",
+    "base_model:finetune:goldfish-models/urd_arab_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123197952,
+  "parameters_human": "123.2M",
+  "storage_bytes": 247569340,
+  "storage_human": "248 MB",
+  "base_model": "goldfish-models/urd_arab_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wie kann ich die Telekom Mail App auf meinem PC installieren",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/wie-kann-ich-die-telekom-mail-app-auf-meinem-pc-installieren/668720314ae73561daf5c926",
+      "snippet": "Ich habe die Telekom Mail App auf meinem Tablett undmöchte sie aber auch auf meinem PC installieren. Wie mache ich das?"
+    },
+    {
+      "title": "T-Online 6.0 -Deinstallation | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/sonstiges/t-online-60-deinstallation/6685d8394ae73561dad71f9f",
+      "snippet": "T-Online 6.0 läßt sich über Systemsteuerung\\Software\\T-Online 6.0\\Entfernen nicht deinstallieren. Fehler: \"Die Support-Datei für die …"
+    },
+    {
+      "title": "‎mehrfachauthentifizierung | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/mehrfachauthentifizierung/69c93a98821bf972420c77eb",
+      "snippet": "halloer eer ein fenster&nbsp;wenn ich mich jetzt bei tonline anmelde erscheint immer ein fenster mehrfachauthentifizierung jetzt oder …"
+    },
+    {
+      "title": "Immer noch Kommische t-online Email | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/immer-noch-kommische-t-online-email/6a56646b179c0e4a9ec3a2f9",
+      "snippet": "@Telekom-hilft-TeamAlso ich habe die Email von t-online schon länger 2009 rum auch als login aller Dienste, es fing alles damit an …"
+    },
+    {
+      "title": "Verwendung von \"Neues Outlook\", Postausgangsserver",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/verwendung-von-neues-outlook-postausgangsserver/69a96268fbc4627b54b45120",
+      "snippet": "Wenn von meinem t-online Mailkonto eine Mail an eine gmail.com Adresse geschickt wird, wird die Mail immer von gmail.com …"
+    }
+  ]
+}

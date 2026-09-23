@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "matheus-ciro-tcc/qwen3.5-0.8b-triagem-medica-gguf",
+  "slug": "matheus-ciro-tcc-qwen3-5-0-8b-triagem-medica-gguf",
+  "author": "matheus-ciro-tcc",
+  "url": "https://huggingface.co/matheus-ciro-tcc/qwen3.5-0.8b-triagem-medica-gguf",
+  "created_at": "2026-09-22T22:46:15.000Z",
+  "updated_at": "2026-09-22T22:46:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "wllama",
+    "medical",
+    "triagem",
+    "portuguese",
+    "qwen3.5",
+    "text-generation",
+    "pt",
+    "dataset:AKCIT/MedPT",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 2500776384,
+  "storage_human": "2.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B, matheus-ciro-tcc/qwen3.5-0.8b-triagem-medica-ptbr, matheus-ciro-tcc/qwen35-0.8b-triagem-medica-piloto",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://platform.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "II - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ii",
+      "snippet": "This disambiguation page lists articles associated with the title II. If an internal link incorrectly led you here, you may wish to change …"
+    },
+    {
+      "title": "interactive investor - the UK’s number one flat-fee investment platform ...",
+      "url": "https://www.ii.co.uk/",
+      "snippet": "Unlike many investment platforms which charge you a percentage of your pot, with ii, you pay a low, flat fee. Join ii today and …"
+    },
+    {
+      "title": "Secure Account Login | interactive investor",
+      "url": "https://www.ii.co.uk/login",
+      "snippet": "Access your interactive investor account safely and securely online. Log in to ii using your email address to continue using our range …"
+    },
+    {
+      "title": "ii all episodes (in order) - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLeq_D7USfIgPNp5JWKeVHXZuj6JFBQXvu",
+      "snippet": "Share your videos with friends, family, and the world"
+    }
+  ]
+}

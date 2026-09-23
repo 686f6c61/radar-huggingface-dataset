@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SlayerLab/gollem-v5-ckpts",
+  "slug": "slayerlab-gollem-v5-ckpts",
+  "author": "SlayerLab",
+  "url": "https://huggingface.co/SlayerLab/gollem-v5-ckpts",
+  "created_at": "2026-09-22T04:11:09.000Z",
+  "updated_at": "2026-09-22T23:30:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tiny-lm",
+    "gpt",
+    "nanogpt",
+    "glint-tiny-ml-leaderboard",
+    "english",
+    "text-generation",
+    "en",
+    "dataset:SlayerLab/minimal-en-corpus-5b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1217697742,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TWINSET Milano - Digital Store | Official site",
+      "url": "https://www.twinset.com/it-it/outlet/",
+      "snippet": "Non è possibile visualizzare una descrizione perché il sito non lo consente."
+    },
+    {
+      "title": "www.twinset.com",
+      "url": "https://www.twinset.com/it-it/abbigliamento/outlet/",
+      "snippet": "Non è possibile visualizzare una descrizione perché il sito non lo consente."
+    },
+    {
+      "title": "Twinset outlet - Privé by Zalando",
+      "url": "https://www.zalando-prive.it/twinset-outlet/",
+      "snippet": "TWINSET outlet, la sezione proposta da Privé by Zalando, ti permetterà di acquistare capi d'abbigliamento nei quali femminilità ed …"
+    },
+    {
+      "title": "Twinset Outlet Donna - GIGLIO.COM",
+      "url": "https://www.giglio.com/it-it/outlet/outlet-donna/twinset_d/",
+      "snippet": "Scopri gli sconti della nostra sezione outlet Twinset donna e acquista capi di abbigliamento e accessori firmati dalle migliori marche …"
+    },
+    {
+      "title": "Outlet abbigliamento TWIN SET |【FINO A -80%】Online su Micolet.it",
+      "url": "https://www.micolet.it/twin-set",
+      "snippet": "Compra borse, scarpe, abiti Twin Set a prezzi bassi da Micolet Italia. Approfitta di offerte e SALDI su vestiti e maglie firmati Twin Set …"
+    }
+  ]
+}

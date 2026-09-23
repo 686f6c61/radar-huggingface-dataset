@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/opus-mt-en-de",
+  "slug": "skillsafe-ai-opus-mt-en-de",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/opus-mt-en-de",
+  "created_at": "2026-09-22T21:53:39.000Z",
+  "updated_at": "2026-09-22T21:53:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "marian",
+    "text2text-generation",
+    "skillsafe",
+    "browser",
+    "translation",
+    "import",
+    "base_model:Xenova/opus-mt-en-de",
+    "base_model:quantized:Xenova/opus-mt-en-de",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 474139860,
+  "storage_human": "474 MB",
+  "base_model": "Xenova/opus-mt-en-de",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PURE The Winery Europe - Zuckerfreier Wein",
+      "url": "https://de.purethewinery.com/",
+      "snippet": "Bei PURE The Winery kannst du geschmackvollen Wein ohne unnötige Zusätze und mit weniger Kalorien ganz ohne schlechtes …"
+    },
+    {
+      "title": "Wein ohne Zucker: Kalorienarme Weine unter 7 Euro - desired.de",
+      "url": "https://www.desired.de/fit-gesund/wein-ohne-zucker-von-diesen-sorten-bekommst-du-keinen-schaedel--01HF6MT88DEB94239RCF1TXAN4",
+      "snippet": "Nov 30, 2023 · Sorten mit wenig Restzucker führen nicht so schnell zum Kater! Wir zeigen dir, wie du Weine ohne Zucker erkennst …"
+    },
+    {
+      "title": "Weine ohne Zucker, preisgekrönt im Geschmack",
+      "url": "https://de.purethewinery.com/pages/new",
+      "snippet": "Wir lieben Wein. Aber wir lieben auch einen fitten und gesunden Lebensstil. Bei PURE The Winery kannst du ganz ohne schlechtes …"
+    },
+    {
+      "title": "Wein ohne Zucker: Entdecken Sie den natürlichen Geschmack von ...",
+      "url": "https://weingenuesse.de/wein-ohne-zucker/",
+      "snippet": "Sep 18, 2023 · Wein ohne Zucker: Ist das wirklich eine perfekte Alternative oder nur cleveres Marketing? In diesem Video erfährst du …"
+    },
+    {
+      "title": "Weine ohne zugesetzten Zucker - BioWeinGrass",
+      "url": "https://www.bioweingrass.de/kategorie/biowein/weine-ohne-zugesetzten-zucker/",
+      "snippet": "(39,99€ / 1 L) In den Warenkorb Details Ohne zugesetzte Hefen Ohne zugesetzten Zucker"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "zichenshang/GLM-5.3-colibri-int4-g64",
+  "slug": "zichenshang-glm-5-3-colibri-int4-g64",
+  "author": "zichenshang",
+  "url": "https://huggingface.co/zichenshang/GLM-5.3-colibri-int4-g64",
+  "created_at": "2026-09-23T00:52:15.000Z",
+  "updated_at": "2026-09-23T00:52:16.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "colibri",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "colibri",
+    "glm_moe_dsa",
+    "moe",
+    "int4",
+    "cpu",
+    "expert-streaming",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 419316759002,
+  "storage_human": "419.3 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenVPN Connect - VPN For Your Operating System | OpenVPN",
+      "url": "https://openvpn.net/client/",
+      "snippet": "Download the official OpenVPN Connect client VPN software for your operating system, developed and maintained by our experts. …"
+    },
+    {
+      "title": "Downloads – community wiki - OpenVPN",
+      "url": "https://community.openvpn.net/Downloads",
+      "snippet": "Sep 3, 2026 · OpenVPN 2.7.7 -- Released 3 September 2026 The OpenVPN community project team is proud to release OpenVPN …"
+    },
+    {
+      "title": "Secure VPN Solutions for Business & Remote Access | OpenVPN",
+      "url": "https://openvpn.net/",
+      "snippet": "Secure your business with OpenVPN. Flexible SMB VPN solutions for remote access and remote work, self-hosted or cloud …"
+    },
+    {
+      "title": "Index of /downloads/releases/ - build.openvpn.net",
+      "url": "https://build.openvpn.net/downloads/releases/",
+      "snippet": "Temukan berbagai rilis OpenVPN terbaru untuk diunduh."
+    },
+    {
+      "title": "Announcing our 25th Anniversary Arcade Game | OpenVPN",
+      "url": "https://blog.openvpn.net/announcing-our-25th-anniversary-arcade-game-openvpn",
+      "snippet": "Mar 5, 2026 · OpenVPN is turning 25 this year. To celebrate, we created an arcade game anyone can play for free online -- and the …"
+    }
+  ]
+}

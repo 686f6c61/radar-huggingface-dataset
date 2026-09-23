@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "SaniaKhalid/tinyllama-unsloth-merged",
+  "slug": "saniakhalid-tinyllama-unsloth-merged",
+  "author": "SaniaKhalid",
+  "url": "https://huggingface.co/SaniaKhalid/tinyllama-unsloth-merged",
+  "created_at": "2026-09-22T22:00:49.000Z",
+  "updated_at": "2026-09-22T22:00:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "tinyllama",
+    "unsloth",
+    "merged",
+    "lora",
+    "fine-tuned",
+    "pytorch",
+    "conversational",
+    "en",
+    "base_model:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "base_model:adapter:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 2200119664,
+  "storage_human": "2.2 GB",
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bildschirm-Hintergrund von schwarz auf weiß ändern?",
+      "url": "https://www.windows-10-forum.com/threads/bildschirm-hintergrund-von-schwarz-auf-weiss-aendern.181621/",
+      "snippet": "Sep 2, 2024 · Bildschirm-Hintergrund von schwarz auf weiß ändern? Helfe beim Thema Bildschirm-Hintergrund von schwarz auf …"
+    },
+    {
+      "title": "Änderung des Hintergrunds von schwarz nach weiß - Windows 10 Forum",
+      "url": "https://www.windows-10-forum.com/threads/aenderung-des-hintergrunds-von-schwarz-nach-weiss.92093/",
+      "snippet": "Oct 10, 2018 · Änderung des Hintergrunds von schwarz nach weiß Helfe beim Thema Änderung des Hintergrunds von schwarz nach …"
+    },
+    {
+      "title": "Schwarzer Hintergrund bei Apps. - Windows 10 Forum",
+      "url": "https://www.windows-10-forum.com/threads/schwarzer-hintergrund-bei-apps.88417/",
+      "snippet": "Jul 28, 2018 · Schwarzer Hintergrund bei Apps. Helfe beim Thema Schwarzer Hintergrund bei Apps. in Windows 10 Support um eine …"
+    },
+    {
+      "title": "Kennwort erstellen geht nicht - windows-10-forum.com",
+      "url": "https://www.windows-10-forum.com/threads/kennwort-erstellen-geht-nicht.182939/",
+      "snippet": "Kennwort erstellen geht nicht Hallo Microsoft- Community/ Gemeinschaft,wenn ich mich mit ein Passwort anmelden will, lässt sich …"
+    },
+    {
+      "title": "Weißer Fleck auf Display - Windows 10 Forum",
+      "url": "https://www.windows-10-forum.com/threads/weisser-fleck-auf-display.146173/",
+      "snippet": "Apr 16, 2021 · Weißer Fleck auf Display Helfe beim Thema Weißer Fleck auf Display in Surface um eine Lösung zu finden; Hallo, Ich …"
+    }
+  ]
+}

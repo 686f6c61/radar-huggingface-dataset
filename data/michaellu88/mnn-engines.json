@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "michaellu88/mnn-engines",
+  "slug": "michaellu88-mnn-engines",
+  "author": "michaellu88",
+  "url": "https://huggingface.co/michaellu88/mnn-engines",
+  "created_at": "2026-09-23T01:08:26.000Z",
+  "updated_at": "2026-09-23T01:08:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mnn",
+    "android",
+    "arm64-v8a",
+    "on-device-inference",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7487312,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rent Textbooks - Online Textbook Rental & eBooks - Chegg",
+      "url": "https://www.chegg.com/textbooks?msockid=31a572bf335f65171a77656232636453",
+      "snippet": "Now even easier, with Valore. We've teamed up with Valore.com to bring you more affordable options for college textbooks. Whether …"
+    },
+    {
+      "title": "Chegg - Get 24/7 Homework Help | Study Support Across 50+ Subjects",
+      "url": "https://www.chegg.com/?str=login&page=login&msockid=31a572bf335f65171a77656232636453",
+      "snippet": "Innovative learning tools. 24/7 support. All in one place. Homework help for relevant study solutions, step-by-step support, and real …"
+    },
+    {
+      "title": "Rent/Buy Books on Chegg - Save Up to 90% on Textbooks",
+      "url": "https://www.chegg.com/books?msockid=31a572bf335f65171a77656232636453",
+      "snippet": "Buy or rent textbooks from Chegg.com and save up to 90% off of new titles for your required college books."
+    },
+    {
+      "title": "Solved I am not sure what type of reasoning used in the the - Chegg",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/sure-type-reasoning-used-statement--see-work-around-world-women-women-international-worthy-q29746548?msockid=31a572bf335f65171a77656232636453",
+      "snippet": "It has given women in Kosovo the skills to operate businesses in their communities. It has shown I am not sure what type of …"
+    },
+    {
+      "title": "Solved Utilizing the information gleaned from your study of - Chegg",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/utilizing-information-gleaned-study-microstates-outside-sources-find-helpful-evaluate-foll-q94882265?msockid=31a572bf335f65171a77656232636453",
+      "snippet": "With respect to Kosovo's declaration of Independence, Identify the place set that best explains why Spain, Russia, and China have …"
+    }
+  ]
+}

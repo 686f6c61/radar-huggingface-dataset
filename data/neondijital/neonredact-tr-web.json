@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "neondijital/neonredact-tr-web",
+  "slug": "neondijital-neonredact-tr-web",
+  "author": "neondijital",
+  "url": "https://huggingface.co/neondijital/neonredact-tr-web",
+  "created_at": "2026-09-10T17:09:20.000Z",
+  "updated_at": "2026-09-23T01:23:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers.js",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "distilbert",
+    "token-classification",
+    "pii",
+    "ner",
+    "privacy",
+    "turkish",
+    "anonymization",
+    "kvkk",
+    "gdpr",
+    "on-device",
+    "tr",
+    "dataset:neondijital/neonredact-tr",
+    "base_model:dbmdz/distilbert-base-turkish-cased",
+    "base_model:quantized:dbmdz/distilbert-base-turkish-cased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 338183485,
+  "storage_human": "338 MB",
+  "base_model": "dbmdz/distilbert-base-turkish-cased",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "University of Oxford",
+      "url": "https://www.ox.ac.uk/",
+      "snippet": "Sep 14, 2026 · Oxford University provides world-class research and education to benefit society on a local, regional, national and …"
+    },
+    {
+      "title": "Undergraduate course listing | Oxford University",
+      "url": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing",
+      "snippet": "Explore our courses and see where your interests take you. With a wide range of subjects including joint honours options, there’s …"
+    },
+    {
+      "title": "University of Oxford — CAMS Oxford Institute",
+      "url": "https://www.camsoxford.ox.ac.uk/about/oxford-university",
+      "snippet": "Oxford is a world-leading centre of learning, teaching and research and the oldest university in the English-speaking world. Oxford is …"
+    },
+    {
+      "title": "Login to Canvas - University of Oxford",
+      "url": "https://login.canvas.ox.ac.uk/",
+      "snippet": "Non-Oxford account username is normally a non-Oxford email address"
+    },
+    {
+      "title": "Department of Engineering Science, University of Oxford",
+      "url": "https://eng.ox.ac.uk/",
+      "snippet": "The Department of Engineering Science at Oxford offers accredited courses in all the major branches of engineering. We also have a …"
+    }
+  ]
+}

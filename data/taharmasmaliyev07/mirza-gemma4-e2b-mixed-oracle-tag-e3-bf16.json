@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "taharmasmaliyev07/Mirza-Gemma4-E2B-MIXED-ORACLE-TAG-E3-BF16",
+  "slug": "taharmasmaliyev07-mirza-gemma4-e2b-mixed-oracle-tag-e3-bf16",
+  "author": "taharmasmaliyev07",
+  "url": "https://huggingface.co/taharmasmaliyev07/Mirza-Gemma4-E2B-MIXED-ORACLE-TAG-E3-BF16",
+  "created_at": "2026-09-22T22:06:16.000Z",
+  "updated_at": "2026-09-22T22:09:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278791544,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How Do Carbide Wear Resistant Inserts Revolutionize Industrial ...",
+      "url": "https://rettekcarbide.com/how-do-carbide-wear-resistant-inserts-revolutionize-industrial-durability-and-efficiency/",
+      "snippet": "Feb 7, 2026 · Carbide wear resistant inserts increase industrial durability by resisting abrasion, heat, and impact during high-stress …"
+    },
+    {
+      "title": "Carbide U-Drill Inserts WCMT050308FN 10pcs for Steel - amazon.com",
+      "url": "https://www.amazon.com/Carbide-U-Drill-Inserts-WCMT050308FN-10pcs/dp/B0HJXPSCMK",
+      "snippet": "Sep 15, 2026 · for premium Carbide Construction: Made from solid carbide for matrix with PVD coating, these inserts offer wear and …"
+    },
+    {
+      "title": "Understanding Tool Life of Carbide Inserts- King Carbide",
+      "url": "https://www.kingcarbide.com/article/understanding-tool-life-of-carbide-inserts-newsinfo-97.html",
+      "snippet": "Aug 12, 2025 · Carbide inserts are the most widely used cutting inserts due to their exceptional hardness, wear resistance, and high …"
+    },
+    {
+      "title": "Ultimate Guide to Carbide Tool Inserts - Carbide Proivder丨Truer",
+      "url": "https://carbideprovider.com/carbide-tool-inserts-202407111/",
+      "snippet": "Jul 26, 2024 · Coated carbide inserts offer additional benefits, including increased wear resistance, reduced friction, and extended …"
+    },
+    {
+      "title": "Selecting Carbide Inserts for Metalworking - Kennametal",
+      "url": "https://www.kennametal.com/us/en/resources/blog/metal-cutting/selecting-carbide-inserts-for-metalworking.html",
+      "snippet": "Nov 4, 2022 · The extremely hard, wear-resistant carbide substrate allows for longer tool life, while the ultra-fine-grain carbide …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SGK86/laya-multilingual-typed-decisions",
+  "slug": "sgk86-laya-multilingual-typed-decisions",
+  "author": "SGK86",
+  "url": "https://huggingface.co/SGK86/laya-multilingual-typed-decisions",
+  "created_at": "2026-09-22T22:01:33.000Z",
+  "updated_at": "2026-09-22T22:48:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laya",
+    "system-one",
+    "rlcd",
+    "typed-decisions",
+    "calibrated-decisions",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198712,
+  "storage_human": "678 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nagaan of je een account hebt - Google Help",
+      "url": "https://support.google.com/accounts/answer/40560?hl=nl",
+      "snippet": "Als je je eerder hebt aangemeld voor een Google-account en je de gebruikersnaam of het e-mailadres niet meer weet, kun je …"
+    },
+    {
+      "title": "301 Moved - Google Help",
+      "url": "https://support.google.com/a/answer/6087519?hl=en",
+      "snippet": "301 Moved 301 Moved The document has moved here."
+    },
+    {
+      "title": "Return your Google Store purchase",
+      "url": "https://support.google.com/store/answer/2411741?hl=en",
+      "snippet": "Most items that you buy from Google Store are eligible for return. You can return the items within 15 days from the time you received …"
+    },
+    {
+      "title": "A Google-fiók vagy a Gmail szolgáltatás helyreállítása",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=hu",
+      "snippet": "Kövesse a Google-fiók vagy a Gmail szolgáltatás helyreállításával kapcsolatos lépéseket. Válaszolnia kell majd néhány kérdésre, …"
+    },
+    {
+      "title": "Помощ за Gmail",
+      "url": "https://support.google.com/mail/?hl=bg",
+      "snippet": "Официалният Помощен център на Gmail, където можете да намерите съвети и уроци за използването на продукта и други …"
+    }
+  ]
+}

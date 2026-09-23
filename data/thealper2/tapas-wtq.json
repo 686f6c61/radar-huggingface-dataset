@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "thealper2/tapas-wtq",
+  "slug": "thealper2-tapas-wtq",
+  "author": "thealper2",
+  "url": "https://huggingface.co/thealper2/tapas-wtq",
+  "created_at": "2026-09-22T20:24:20.000Z",
+  "updated_at": "2026-09-22T20:31:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "table-question-answering",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tapas",
+    "table-question-answering",
+    "wtq",
+    "en",
+    "dataset:wikitablequestions",
+    "base_model:google/tapas-base",
+    "base_model:finetune:google/tapas-base",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110676484,
+  "parameters_human": "110.7M",
+  "storage_bytes": 442735969,
+  "storage_human": "443 MB",
+  "base_model": "google/tapas-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Table Question Answering",
+      "dataset": "WikiTableQuestions",
+      "metric": "Denotation Accuracy",
+      "value": 0.3178
+    }
+  ],
+  "sources": [
+    {
+      "title": "Forumi - Balkan School Forum",
+      "url": "https://balkan-school.com/forum/index.php",
+      "snippet": "Balkan School Community je najveća gaming zajednica na Balkanu koja se pre svega fokusira na roleplay servere u GTA igrama …"
+    },
+    {
+      "title": "Balkan School Community - Balkan School Forum",
+      "url": "https://balkan-school.com/forum/index.php?/forum/1-balkan-school-community/",
+      "snippet": "Balkan School Community je najveća gaming zajednica na Balkanu koja se pre svega fokusira na roleplay servere u GTA igrama …"
+    },
+    {
+      "title": "Sve aktivnosti - Balkan School Forum",
+      "url": "https://balkan-school.com/forum/index.php?/discover/",
+      "snippet": "Balkan School Community je najveća gaming zajednica na Balkanu koja se pre svega fokusira na roleplay servere u GTA igrama …"
+    },
+    {
+      "title": "Klubovi - Balkan School Forum",
+      "url": "https://balkan-school.com/forum/index.php?/clubs/",
+      "snippet": "Balkan School Community je najveća gaming zajednica na Balkanu koja se pre svega fokusira na roleplay servere u GTA igrama …"
+    },
+    {
+      "title": "Cafe - Balkan School Forum",
+      "url": "https://balkan-school.com/forum/index.php?/forum/3-cafe/",
+      "snippet": "Balkan School Community je najveća gaming zajednica na Balkanu koja se pre svega fokusira na roleplay servere u GTA igrama …"
+    }
+  ]
+}

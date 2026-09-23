@@ -1,0 +1,115 @@
+{
+  "schema": 1,
+  "id": "jbrashear/jebadiah-9b-v1",
+  "slug": "jbrashear-jebadiah-9b-v1",
+  "author": "jbrashear",
+  "url": "https://huggingface.co/jbrashear/jebadiah-9b-v1",
+  "created_at": "2026-09-22T23:02:41.000Z",
+  "updated_at": "2026-09-22T23:02:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "decision-model",
+    "system-one",
+    "calibrated-probabilities",
+    "typed-decisions",
+    "ainode",
+    "en",
+    "dataset:LocalLLaMA/typed-decisions",
+    "dataset:nvidia/HelpSteer2",
+    "dataset:mteb/summeval",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 195643617,
+  "storage_human": "196 MB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Jevals suite 0.1.0, PubMedQA (noul)",
+      "metric": null,
+      "value": 89.7
+    },
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Jevals suite 0.1.0, PubMedQA (noul)",
+      "metric": null,
+      "value": 66.8
+    },
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Jevals suite 0.1.0, Banking77 (choice, 77-way)",
+      "metric": null,
+      "value": 70
+    },
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Jevals suite 0.1.0, Banking77 (choice, 77-way)",
+      "metric": null,
+      "value": 56.9
+    },
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Jevals suite 0.1.0, HelpSteer2 helpfulness (score)",
+      "metric": null,
+      "value": 11.9
+    },
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Nimble public human-labelled subsets (13, macro accuracy)",
+      "metric": null,
+      "value": 77
+    }
+  ],
+  "sources": [
+    {
+      "title": "Current Time in Dubai, United Arab Emirates (+04) | Time.now",
+      "url": "https://time.now/dubai/",
+      "snippet": "27 minutes ago · Dubai keeps its clocks on UTC +04:00, in the Asia/Dubai time zone. There is no daylight-saving shift here; the …"
+    },
+    {
+      "title": "Current Local Time in Dubai, Dubai, United Arab Emirates",
+      "url": "https://www.timeanddate.com/worldclock/united-arab-emirates/dubai",
+      "snippet": "Current local time in United Arab Emirates – Dubai – Dubai. Get Dubai's weather and area codes, time zone and DST. Explore …"
+    },
+    {
+      "title": "Time in Dubai, United Arab Emirates - World Time Buddy",
+      "url": "https://www.worldtimebuddy.com/united-arab-emirates-dubai",
+      "snippet": "1 day ago · Find current time in Dubai, United Arab Emirates and quickly convert it other time zones with this easy-to-use, modern …"
+    },
+    {
+      "title": "Time in Dubai, United Arab Emirates now",
+      "url": "https://time.is/Dubai?v=1.0.20",
+      "snippet": "1 day ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Dubai, United Arab Emirates."
+    },
+    {
+      "title": "Current Time in Dubai — Live Clock, Time Zone & UTC Offset",
+      "url": "https://www.worldtimenow.net/time/dubai/",
+      "snippet": "1 day ago · What time is it in Dubai right now? See the live clock, UTC+4 offset, time zone details, and Daylight Saving Time info for …"
+    }
+  ]
+}

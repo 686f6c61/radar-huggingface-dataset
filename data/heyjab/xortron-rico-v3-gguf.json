@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "Heyjab/XORTRON-RICO-v3-GGUF",
+  "slug": "heyjab-xortron-rico-v3-gguf",
+  "author": "Heyjab",
+  "url": "https://huggingface.co/Heyjab/XORTRON-RICO-v3-GGUF",
+  "created_at": "2026-09-22T23:45:23.000Z",
+  "updated_at": "2026-09-22T23:45:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "mergekit",
+    "text-generation-inference",
+    "unsloth",
+    "uncensored",
+    "harmful",
+    "xortron",
+    "heretic",
+    "abliterated",
+    "toxic",
+    "experimental",
+    "not-for-all-audiences",
+    "GGUF",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:merge:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:darkc0de/RICO",
+    "base_model:merge:darkc0de/RICO",
+    "base_model:darkc0de/RICO-v2",
+    "base_model:merge:darkc0de/RICO-v2",
+    "base_model:darkc0de/XORTRON-RICO-v3",
+    "base_model:merge:darkc0de/XORTRON-RICO-v3",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:merge:orcarouter/Qwen3.8-27B-Uncensored",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 209246156960,
+  "storage_human": "209.2 GB",
+  "base_model": "darkc0de/XORTRON-RICO-v3, darkc0de/RICO, darkc0de/RICO-v2, DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU, orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "土方回填需要做哪些检测？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/454902845.html",
+      "snippet": "Jan 30, 2018 · 土方回填 需要做的检测： 1 土方回填的施工质量检测应分层进行，应在每层 压实系数 符合设计要求后方可铺填上层 …"
+    },
+    {
+      "title": "室外给排水管道回填土的压实系数标准是多少_百度知道",
+      "url": "https://zhidao.baidu.com/question/574333350052808404.html",
+      "snippet": "May 16, 2026 · 室外给排水管道回填土的压实系数标准是多少室外给排水管道回填土的压实系数需根据管道类型、回填部位区分，通用 …"
+    },
+    {
+      "title": "粮食压实系数？ - 知乎",
+      "url": "https://www.zhihu.com/question/301598038",
+      "snippet": "粮仓中收来的玉米，大豆等，会受哪些因素影响高度和体积？压实系数怎样获得？"
+    },
+    {
+      "title": "小区消防道路路基是回填土，取样后压实系数够，但是因为刚 ...",
+      "url": "https://www.zhihu.com/question/422046966",
+      "snippet": "Oct 9, 2020 · 3、道路路基内有渣土和腐殖土，需要将渣土和腐殖土全部挖除外运，换填素土，分层碾压夯实，压实系数大于0.93 4、 …"
+    },
+    {
+      "title": "素土压实度能达到95吗_百度知道",
+      "url": "https://zhidao.baidu.com/question/945804355411874412.html",
+      "snippet": "Feb 22, 2022 · 压实系数 指路基经压实实际达到的干密度与由击实试验得到的试验的最大干密度的比值K。 路基的压实质量以施工 压 …"
+    }
+  ]
+}

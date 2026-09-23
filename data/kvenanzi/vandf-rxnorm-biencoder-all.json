@@ -5,7 +5,7 @@
   "author": "kvenanzi",
   "url": "https://huggingface.co/kvenanzi/vandf-rxnorm-biencoder-all",
   "created_at": "2026-09-15T18:05:07.000Z",
-  "updated_at": "2026-09-20T20:40:29.000Z",
+  "updated_at": "2026-09-23T03:27:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 38,
+  "downloads_30d": 49,
   "trending_score": 0,
   "parameters": 109482240,
   "parameters_human": "109.5M",

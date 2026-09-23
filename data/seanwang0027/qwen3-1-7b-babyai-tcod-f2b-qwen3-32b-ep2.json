@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/qwen3-1.7b-babyai-tcod-f2b-qwen3-32b-ep2",
+  "slug": "seanwang0027-qwen3-1-7b-babyai-tcod-f2b-qwen3-32b-ep2",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-tcod-f2b-qwen3-32b-ep2",
+  "created_at": "2026-09-22T21:34:03.000Z",
+  "updated_at": "2026-09-22T21:34:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "babyai",
+    "on-policy-distillation",
+    "tcod",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Radziecki Zegarek Sputnik - Zegarki naręczne - Allegro.pl",
+      "url": "https://allegro.pl/kategoria/zegary-zegarki-nareczne-26075?string=radziecki+zegarek+sputnik",
+      "snippet": "Kup Radziecki Zegarek Sputnik w kategorii Zegarki naręczne - antyki na Allegro - Najlepsze oferty na największej platformie handlowej."
+    },
+    {
+      "title": "zegarki radzieckie - Stare zegarki i zegary w dobrej cenie",
+      "url": "https://www.olx.pl/antyki-i-kolekcje/antyki/stare-zegary-i-zegarki/q-zegarki-radzieckie/",
+      "snippet": "Sep 3, 2026 · Aktualne ogłoszenia w całej Polsce: zegarki radzieckie sprawdź oferty w kategorii Stare zegarki i zegary ☝ Kupuj i …"
+    },
+    {
+      "title": "Stary Zegarek Sputnik Radziecki - Zegarki naręczne - Allegro",
+      "url": "https://allegro.pl/kategoria/zegary-zegarki-nareczne-26075?string=stary+zegarek+sputnik+radziecki",
+      "snippet": "Kup Stary Zegarek Sputnik Radziecki w kategorii Zegarki naręczne - antyki na Allegro - Najlepsze oferty na największej platformie …"
+    },
+    {
+      "title": "Unikatowy radziecki zegarek Sputnik - doskonały stan!",
+      "url": "https://www.zegarmistrz.com/pl/p/Unikatowy-radziecki-zegarek-Sputnik-doskonaly-stan/13494",
+      "snippet": "Zegarek Sputnik to jeden z najbardziej symbolicznych modeli radzieckiego zegarmistrzostwa, powstały w odpowiedzi na historyczne …"
+    },
+    {
+      "title": "Dla Ciebie wszystko - sprawdź nowe oferty! - OLX",
+      "url": "https://www.olx.pl/oferty/q-zegarek-radzieckie/",
+      "snippet": "Zegarki Radzieckie i nie tylko. Damy Ci znać o nowych ogłoszeniach, które do niego pasują. Slava Pierestrojka Sława - CCCP - Stan …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sr5434/universal_classifier",
+  "slug": "sr5434-universal_classifier",
+  "author": "sr5434",
+  "url": "https://huggingface.co/sr5434/universal_classifier",
+  "created_at": "2026-09-22T23:38:00.000Z",
+  "updated_at": "2026-09-22T23:38:03.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:google/embeddinggemma-300m",
+    "base_model:finetune:google/embeddinggemma-300m",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35430206,
+  "storage_human": "35 MB",
+  "base_model": "google/embeddinggemma-300m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Pornhub est le site tube pornographique le plus complet et le plus révolutionnaire. Nous offrons des vidéos porno en streaming, des …"
+    },
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Pornhub provides you with unlimited free porn videos with the hottest pornstars. Enjoy the largest amateur porn community on the …"
+    },
+    {
+      "title": "Vídeos Porno nuevos o recientes : Películas XXX | Pornhub",
+      "url": "https://es.pornhub.com/video",
+      "snippet": "Porno y películas XXX nuevas. Mira los mejores vídeos de sexo nuevos o recientes gratis en Pornhub"
+    },
+    {
+      "title": "Pornhub Porn Videos",
+      "url": "https://www.pornhub.com/video/search?search=pornhub",
+      "snippet": "Watch Pornhub porn videos for free, here on Pornhub.com. Discover the growing collection of high quality Most Relevant XXX …"
+    },
+    {
+      "title": "Categorías de Pornhub: Encuentra tus videos porno hardcore …",
+      "url": "https://es.pornhub.com/categories",
+      "snippet": "Pornhub tiene los mejores videos porno hardcore. Descubre el XXX más nuevo para ver en tu categoría de sexo favorita. Mira las …"
+    }
+  ]
+}

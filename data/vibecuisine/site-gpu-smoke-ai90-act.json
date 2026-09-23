@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "VibeCuisine/site-gpu-smoke-ai90-act",
+  "slug": "vibecuisine-site-gpu-smoke-ai90-act",
+  "author": "VibeCuisine",
+  "url": "https://huggingface.co/VibeCuisine/site-gpu-smoke-ai90-act",
+  "created_at": "2026-09-22T22:07:06.000Z",
+  "updated_at": "2026-09-22T22:07:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "vibe-data-studio",
+    "hardware:vibeboard_v2",
+    "robotics",
+    "dataset:VibeCuisine/jetson1-060426-test-collection-v1-trim",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206725196,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pathé Haarlem, bioscoop in haarlem : Programma, tijden, E-tickets",
+      "url": "https://www.pathe.nl/nl/bioscopen/pathe-haarlem",
+      "snippet": "Ontdek alle actuele films in Pathé Haarlem in haarlem, bekijk de trailers en bestel je tickets online."
+    },
+    {
+      "title": "The Odyssey - Release, E-Ticket, Trailer - Pathé Nederland-bioscopen",
+      "url": "https://www.pathe.nl/nl/films/the-odyssey-44019",
+      "snippet": "Jul 16, 2026 · Christopher Nolans The Odyssey is een mythologische actiefilm die op locaties over de hele wereld is opgenomen met …"
+    },
+    {
+      "title": "The Odyssey (2026) in Haarlem — Speeltijden en Tickets",
+      "url": "https://cinematimes.com/nl/haarlem/movies/the-odyssey/",
+      "snippet": "The Odyssey draait deze week in 45 bioscopen in de buurt van Haarlem, waaronder Filmkoepel Haarlem en Pathé Haarlem."
+    },
+    {
+      "title": "The Odyssey | Haarlem | bioscoop | tijden - Filmladder",
+      "url": "https://www.filmladder.nl/film/the-odyssey-2026/bioscopen/haarlem",
+      "snippet": "Overzicht van alle tijden en tickets van deze film in de bioscopen in Haarlem."
+    },
+    {
+      "title": "The Odyssey in Haarlem ǀ Bioscoopagenda - BiosAgenda.nl",
+      "url": "https://www.biosagenda.nl/the-odyssey_in_haarlem_18171_59.html",
+      "snippet": "Jul 16, 2026 · The Odyssey in Haarlem zien? Alle tijden en tickets in bioscopen in Haarlem vanaf 21. september op BiosAgenda.nl!"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfd_seed455",
+  "slug": "francesca9805-urd-arab-10mb-ppt-dp-10mb-packed-bfd_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfd_seed455",
+  "created_at": "2026-09-23T00:10:29.000Z",
+  "updated_at": "2026-09-23T00:13:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/urd_arab_10mb",
+    "base_model:finetune:goldfish-models/urd_arab_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 38038528,
+  "parameters_human": "38.0M",
+  "storage_bytes": 77240716,
+  "storage_human": "77 MB",
+  "base_model": "goldfish-models/urd_arab_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn Schweiz: Einloggen oder anmelden",
+      "url": "https://ch.linkedin.com/",
+      "snippet": "1 Mrd. Mitglieder | Die Plattform für Ihre berufliche Identität. Bauen Sie Ihr berufliches Netzwerk auf und bleiben Sie informiert. Finden …"
+    },
+    {
+      "title": "LinkedIn: inicio de sesión o registro",
+      "url": "https://es.linkedin.com/",
+      "snippet": "1 mil millones de miembros | Gestiona tu identidad profesional. Amplía e interactúa con tu red profesional. Accede a conocimientos, …"
+    },
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    },
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://www.linkedin.com/",
+      "snippet": "1 billion members | Manage your professional identity. Build and engage with your professional network. Access knowledge, insights …"
+    },
+    {
+      "title": "LinkedIn: Oturum Açın veya Üye Olun",
+      "url": "https://tr.linkedin.com/",
+      "snippet": "1 milyar üye | Profesyonel kimliğinizi yönetin. Profesyonel ağınızı kurun ve ağınızla bağlantıya geçin. Bilgi birikimlerine, içgörülere ve …"
+    }
+  ]
+}

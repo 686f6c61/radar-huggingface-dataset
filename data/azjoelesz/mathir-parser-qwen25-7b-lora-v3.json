@@ -5,14 +5,20 @@
   "author": "AzJoeLesz",
   "url": "https://huggingface.co/AzJoeLesz/mathir-parser-qwen25-7b-lora-v3",
   "created_at": "2026-09-22T16:10:14.000Z",
-  "updated_at": "2026-09-22T16:53:52.000Z",
+  "updated_at": "2026-09-22T17:32:08.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
-  "library": null,
+  "library": "peft",
   "languages": [],
   "tags": [
+    "peft",
     "safetensors",
+    "mathir",
+    "hungarian",
+    "deprecated",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
     "region:us"
   ],
   "likes": 0,
@@ -22,7 +28,7 @@
   "parameters_human": null,
   "storage_bytes": 31637100,
   "storage_human": "32 MB",
-  "base_model": null,
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"
   ],

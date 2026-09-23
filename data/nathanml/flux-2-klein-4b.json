@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "nathanml/FLUX.2-klein-4B",
+  "slug": "nathanml-flux-2-klein-4b",
+  "author": "nathanml",
+  "url": "https://huggingface.co/nathanml/FLUX.2-klein-4B",
+  "created_at": "2026-09-22T23:43:04.000Z",
+  "updated_at": "2026-09-22T23:43:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "image-editing",
+    "flux",
+    "diffusion-single-file",
+    "image-to-image",
+    "en",
+    "license:apache-2.0",
+    "diffusers:Flux2KleinPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 23735489815,
+  "storage_human": "23.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kosovo — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Kosovo",
+      "snippet": ""
+    },
+    {
+      "title": "Kosovo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kosovo",
+      "snippet": "Kosovo, [d] officially the Republic of Kosovo, [e] is a landlocked country in Southeast Europe with partial diplomatic recognition. It is …"
+    },
+    {
+      "title": "Kosovo : Politique, Relations avec l'UE, Géographie, Economie, …",
+      "url": "https://www.touteleurope.eu/pays/kosovo/",
+      "snippet": "Jun 17, 2026 · Tout savoir sur le Kosovo : son régime, ses politiques, ses relations avec l'Union européenne, sa géographie, son …"
+    },
+    {
+      "title": "Histoire du Kosovo — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Histoire_du_Kosovo",
+      "snippet": "Les négociations sur le statut du Kosovo entre les autorités serbes et kosovares sont demeurées dans l’impasse, les premières ne …"
+    },
+    {
+      "title": "Kosovo - Présentation du Kosovo | France Diplomatie",
+      "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/kosovo/presentation-du-kosovo",
+      "snippet": "May 12, 2026 · Le Kosovo cherche à adhérer aux organisations internationales et à être reconnu par les Etats qui ne le …"
+    }
+  ]
+}

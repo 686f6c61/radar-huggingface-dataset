@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "FluidInference/system-one-gemma-coreml",
+  "slug": "fluidinference-system-one-gemma-coreml",
+  "author": "FluidInference",
+  "url": "https://huggingface.co/FluidInference/system-one-gemma-coreml",
+  "created_at": "2026-09-22T21:24:33.000Z",
+  "updated_at": "2026-09-22T21:34:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "conversion-toolkit",
+    "gated-model",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apple TV - Cinejoy",
+      "url": "https://cinejoy.pk/provider/2",
+      "snippet": "Cinejoy does not host, store, or distribute any media files. All content is sourced from third-party providers. contact@cinejoy.pk"
+    },
+    {
+      "title": "Netflix - Cinejoy",
+      "url": "https://cinejoy.pk/provider/8",
+      "snippet": "Cinejoy does not host, store, or distribute any media files. All content is sourced from third-party providers. contact@cinejoy.pk"
+    },
+    {
+      "title": "Cinejoy-Stream Movies TV Shows - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.cinejoy.apphcinnnejoymoviees&hl=en",
+      "snippet": "Cinejoy is your modern companion for exploring the world of movies and TV shows. Discover popular titles, check ratings, explore …"
+    },
+    {
+      "title": "cinejoy :Movies, TV ShortDrama - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.cinejoy.appcinejoymovieee&hl=en-US",
+      "snippet": "Aug 6, 2026 · CineJoy is your all-in-one entertainment discovery app designed for movie lovers who enjoy exploring the latest …"
+    },
+    {
+      "title": "cinejoy APK for Android Download - APKPure.com",
+      "url": "https://apkpure.com/cinejoy-movies-tv-shortdrama/com.cinejoy.appcinejoymovieee",
+      "snippet": "Aug 10, 2026 · CineJoy is your all-in-one entertainment discovery app designed for movie lovers who enjoy exploring the latest …"
+    }
+  ]
+}

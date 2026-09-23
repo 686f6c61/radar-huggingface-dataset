@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed455",
+  "slug": "francesca9805-hin-deva-10mb-ppt-dp-10mb-packed-bfd_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed455",
+  "created_at": "2026-09-22T23:18:50.000Z",
+  "updated_at": "2026-09-22T23:20:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/hin_deva_10mb",
+    "base_model:finetune:goldfish-models/hin_deva_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79623899,
+  "storage_human": "80 MB",
+  "base_model": "goldfish-models/hin_deva_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Constantes Fisiológicas en Animales | PDF | Artería | Corazón",
+      "url": "https://es.scribd.com/document/358956726/CONSTANTES-FISIOLOGICAS",
+      "snippet": "Este documento describe las constantes fisiológicas más importantes para monitorear el estado de salud de los animales, …"
+    },
+    {
+      "title": "Constantes Fisiológicas en Veterinaria | PDF | Salud y bienestar",
+      "url": "https://es.scribd.com/document/533117271/CONSTANTES-FISIOLOGICAS",
+      "snippet": "Este documento presenta las constantes fisiológicas normales como la frecuencia cardiaca, frecuencia respiratoria, temperatura …"
+    },
+    {
+      "title": "Relleno Capilar En Animales Domésticos - Instagram",
+      "url": "https://www.instagram.com/popular/relleno-capilar-en-animales-dom%C3%A9sticos/",
+      "snippet": "Watch short videos about relleno capilar en animales domésticos from people around the world."
+    },
+    {
+      "title": "Constantes fisiológicas de los animales | PDF - SlideShare",
+      "url": "https://es.slideshare.net/slideshow/constantes-fisiolgicas-de-los-animales/14423197",
+      "snippet": "Este documento presenta las constantes fisiológicas normales de varios animales, incluidos los seres humanos. Describe las …"
+    },
+    {
+      "title": "Constantes Fisiológicas en Clínica: Informe de Exploración Clínica",
+      "url": "https://www.studocu.com/cl/document/duoc-uc/tecnico-veterinario/constantes-fisiologicas-exploracion-clinica/14043838",
+      "snippet": "El relleno capilar normal debe producirse en un tiempo no superior a 2 segundos, volviendo el lecho a su color rosado inicial. Un …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e16",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l2-e16",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e16",
+  "created_at": "2026-09-22T22:04:35.000Z",
+  "updated_at": "2026-09-22T22:04:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jehovah’s Witnesses—Official Website: jw.org | English",
+      "url": "https://www.jw.org/en/",
+      "snippet": "Jehovah’s Witnesses: Our official website provides online access to the Bible, Bible-based publications, and current news. It …"
+    },
+    {
+      "title": "Jehovan todistajat – virallinen verkkosivusto: jw.org | suomi",
+      "url": "https://www.jw.org/fi/",
+      "snippet": "Jehovan todistajien virallisella sivustolla voit lukea Raamattua, raamatullisia julkaisujamme ja uutisia. Lue myös …"
+    },
+    {
+      "title": "ESL Conversation Questions - Halloween (I-TESL-J)",
+      "url": "http://iteslj.org/questions/halloween.html",
+      "snippet": "Conversation Questions Halloween Conversation Questions for the ESL Classroom What day of the month is halloween? Why is …"
+    },
+    {
+      "title": "Crossword Puzzle - Halloween (Donna Tatsuki) I-TESL-J",
+      "url": "http://iteslj.org/cw/2/dt-halloween.html",
+      "snippet": "Halloween Click on each box to enter letters in the crossword puzzle, then press the Check Answers button. If you are stuck, press …"
+    },
+    {
+      "title": "Holidays - Bibleinfo.com",
+      "url": "https://www.bibleinfo.com/en/topics/holidays",
+      "snippet": "What about Halloween? Ephesians 5:11 says, “And have no fellowship with the unfruitful works of darkness, but rather expose them.” …"
+    }
+  ]
+}

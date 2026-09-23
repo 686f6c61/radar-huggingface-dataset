@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed3407",
+  "slug": "francesca9805-hin-deva-10mb-ppt-dp-10mb-packed-bfd_seed3407",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed3407",
+  "created_at": "2026-09-22T23:20:41.000Z",
+  "updated_at": "2026-09-22T23:23:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/hin_deva_10mb",
+    "base_model:finetune:goldfish-models/hin_deva_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79623835,
+  "storage_human": "80 MB",
+  "base_model": "goldfish-models/hin_deva_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "news.ORF.at",
+      "url": "https://orf.at/",
+      "snippet": "Jul 27, 2024 · news.ORF.at: Die aktuellsten Nachrichten auf einen Blick - aus Österreich und der ganzen Welt. In Text, Bild und Video."
+    },
+    {
+      "title": "oesterreich.ORF.at",
+      "url": "https://oesterreich.orf.at/",
+      "snippet": "oesterreich.ORF.at: Alle regionalen Nachrichten des ORF aus ganz Österreich, aktuelle News zu Sport, Politik, Chronik, Kultur, …"
+    },
+    {
+      "title": "News - ORF ON",
+      "url": "https://on.orf.at/sammlung/13869393/news",
+      "snippet": "Stay updated with the latest news, sports, politics, culture, and breaking stories from ORF ON."
+    },
+    {
+      "title": "news.ORF.at",
+      "url": "https://newsv1.orf.at/",
+      "snippet": "Strg + F5 (Windows) oder cmd + R (Mac), um die aktuellste Version von ORF.at zu laden. Eventuell kann auch Ihr Proxy-Server …"
+    },
+    {
+      "title": "ORF ON",
+      "url": "https://on.orf.at/",
+      "snippet": "Entdecken Sie Filme, Serien, Dokus, Sport und Nachrichten und viele weitere Videos aus dem ORF-Fernsehen."
+    }
+  ]
+}

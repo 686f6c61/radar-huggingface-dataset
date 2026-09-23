@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jfan/gemma-4-e4b-web-mtp-vision-litert-lm",
+  "slug": "jfan-gemma-4-e4b-web-mtp-vision-litert-lm",
+  "author": "jfan",
+  "url": "https://huggingface.co/jfan/gemma-4-e4b-web-mtp-vision-litert-lm",
+  "created_at": "2026-09-22T21:52:19.000Z",
+  "updated_at": "2026-09-22T21:52:35.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "webgpu",
+    "gemma",
+    "multimodal",
+    "vision",
+    "speculative-decoding",
+    "mtp",
+    "gqa",
+    "text-generation",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3246253760,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=ar",
+      "snippet": "يمكنك إنشاء حساب أو تسجيل الدخول إلى Instagram - شارك ما يهمك مع الأشخاص الذين يفهمونك."
+    },
+    {
+      "title": "Help Center",
+      "url": "https://help.instagram.com/",
+      "snippet": "Find answers to your questions and get help with Instagram features, account settings, privacy, and more at the Help Center."
+    },
+    {
+      "title": "‫Instagram للأعمال: التسويق على Instagram | Instagram for Business‬",
+      "url": "https://business.instagram.com/?locale=ar_AR",
+      "snippet": "يهتم ما يزيد عن مليوني نشاط تجاري بالتفاعل مع الأشخاص على Instagram. تعرَّف على كيفية استخدام Instagram للوصول إلى عملاء جُدد، وتعزيز نمو جمهورك والتفاعل مع العملاء الحاليين."
+    },
+    {
+      "title": "Help Center",
+      "url": "https://help.instagram.com/581066165581870",
+      "snippet": "Find help and support for Instagram, including account management, troubleshooting, and guidelines."
+    }
+  ]
+}

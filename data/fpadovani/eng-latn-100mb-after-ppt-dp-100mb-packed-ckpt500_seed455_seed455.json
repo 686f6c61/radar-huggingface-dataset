@@ -5,7 +5,7 @@
   "author": "fpadovani",
   "url": "https://huggingface.co/fpadovani/eng-latn-100mb-after-ppt-Dp-100mb-packed-ckpt500_seed455_seed455",
   "created_at": "2026-09-21T11:30:28.000Z",
-  "updated_at": "2026-09-21T13:14:29.000Z",
+  "updated_at": "2026-09-22T11:03:53.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 502,
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 5741276428,
-  "storage_human": "5.7 GB",
+  "storage_bytes": 13477999531,
+  "storage_human": "13.5 GB",
   "base_model": "fpadovani/eng-latn-100mb-ppt-Dp-100mb-packed_seed455",
   "formats": [
     "safetensors"

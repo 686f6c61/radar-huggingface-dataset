@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/urd-arab-100mb-ppt-Dp-100mb-packed-bfd_seed10",
+  "slug": "francesca9805-urd-arab-100mb-ppt-dp-100mb-packed-bfd_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/urd-arab-100mb-ppt-Dp-100mb-packed-bfd_seed10",
+  "created_at": "2026-09-23T00:29:41.000Z",
+  "updated_at": "2026-09-23T00:34:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/urd_arab_100mb",
+    "base_model:finetune:goldfish-models/urd_arab_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 250821130,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/urd_arab_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeFi Security: The Major Challenges and Solutions | HackenProof",
+      "url": "https://hackenproof.com/blog/defi-security",
+      "snippet": "Jul 26, 2023 · In summary, while the road to a fully secure DeFi landscape is fraught with challenges, the combination of rigorous …"
+    },
+    {
+      "title": "'DeFi Wallet: The Ultimate Guide to Secure Crypto in 2025'",
+      "url": "https://binancemagazine.com/defi-wallet-the-ultimate-guide-to-secure-crypto-in-2025/",
+      "snippet": "Sep 1, 2025 · Why a DeFi Wallet Matters in 2025 If 2024 was the year of crypto adoption, 2025 is the year of self-custody. With …"
+    },
+    {
+      "title": "Aave — Onchain Savings, Lending and Borrowing",
+      "url": "https://aave.com/",
+      "snippet": "Earn on your savings, borrow against your assets, and build onchain finance with Aave. Six years of uninterrupted operation, …"
+    },
+    {
+      "title": "Security and Safety of Decentralized Finance (DeFi) Platforms",
+      "url": "https://wesecureapp.com/blog/security-and-safety-of-decentralized-finance-defi-platforms/",
+      "snippet": "In recent years, Decentralized Finance, commonly referred to as DeFi, has surged in popularity as a revolutionary financial …"
+    },
+    {
+      "title": "Ledger Crypto Wallet - Security for DeFi & Web3",
+      "url": "https://www.ledger.com/",
+      "snippet": "Secure your crypto assets such as Bitcoin, Ethereum, XRP, Monero, and more. Give yourself peace of mind by knowing that your …"
+    }
+  ]
+}

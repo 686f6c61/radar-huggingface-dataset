@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "kadireks/2026-24679-sunset-cnn-automl",
+  "slug": "kadireks-2026-24679-sunset-cnn-automl",
+  "author": "kadireks",
+  "url": "https://huggingface.co/kadireks/2026-24679-sunset-cnn-automl",
+  "created_at": "2026-09-22T22:08:55.000Z",
+  "updated_at": "2026-09-22T22:08:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "image-classification",
+    "automl",
+    "keras-tuner",
+    "hyperband",
+    "cnn",
+    "24-679",
+    "cmu",
+    "dataset:VictorTishkevich/sunset-image-dataset",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1702253,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "sunset-image-dataset",
+      "metric": "Accuracy (group-disjoint test split)",
+      "value": 0.9891
+    },
+    {
+      "task": null,
+      "dataset": "sunset-image-dataset",
+      "metric": "Macro F1 (group-disjoint test split)",
+      "value": 0.9891
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/RelatedSearch",
+      "snippet": ""
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www.bing.com/",
+      "snippet": "Sep 20, 2006 · Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and …"
+    },
+    {
+      "title": "بحث الويب من Bing | مايكروسوفت بينغ",
+      "url": "https://explore.microsoft.com/ar-sa/bing/features/web-search",
+      "snippet": "على Bing، يمكنك إجراء أنواع مختلفة من عمليات البحث، بما في ذلك عمليات البحث على الويب وعمليات البحث عن الصور وعمليات البحث عن الفيديو وعمليات البحث عن الأخبار وعمليات البحث عن الخرائط."
+    },
+    {
+      "title": "How to See All Bing Related Searches – Almaroof Inc",
+      "url": "https://almaroof.com/how-to-see-all-bing-related-searches-172/",
+      "snippet": "Jun 23, 2025 · Locate the filter toolbar, usually found beneath the search bar or at the top of the results page. In addition to related …"
+    },
+    {
+      "title": "Bing Web Search | Microsoft Bing",
+      "url": "https://explore.microsoft.com/en-us/bing/features/web-search",
+      "snippet": "On Bing, you can perform various types of searches, including web searches, image searches, video searches, news searches, and …"
+    }
+  ]
+}

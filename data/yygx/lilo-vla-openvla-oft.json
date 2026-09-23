@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yygx/lilo-vla-openvla-oft",
+  "slug": "yygx-lilo-vla-openvla-oft",
+  "author": "yygx",
+  "url": "https://huggingface.co/yygx/lilo-vla-openvla-oft",
+  "created_at": "2026-09-22T20:57:07.000Z",
+  "updated_at": "2026-09-22T20:59:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "openvla",
+    "feature-extraction",
+    "robotics",
+    "vision-language-action",
+    "manipulation",
+    "libero",
+    "custom_code",
+    "arxiv:2602.21531",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7541237184,
+  "parameters_human": "7.54B",
+  "storage_bytes": 17108758431,
+  "storage_human": "17.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.it/intl/en/earth/",
+      "snippet": "Google Earth is the most photorealistic, digital version of our planet. Where do the images come from? How are they they put …"
+    },
+    {
+      "title": "Earth Versions - Google Maps",
+      "url": "https://maps.google.it/intl/en/earth/versions/",
+      "snippet": "With Google Earth for Chrome, fly anywhere in seconds and explore hundreds of 3D cities right in your browser. Roll the dice to …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.it/intl/it/earth/download/gep/agree.html",
+      "snippet": "Jun 4, 2025 · L'utilizzo di Google Maps o l'accesso a quest'ultimo da parte del Governo federale degli Stati Uniti o per suo conto, …"
+    },
+    {
+      "title": "Versioni di Earth - Google Maps",
+      "url": "https://maps.google.it/intl/it/earth/versions/",
+      "snippet": "Using Google Maps, Google Earth, and Street View permissions page. Prohibited Conduct. Your compliance with this Section 2 is a …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.it/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering detailed maps, directions, and local business information."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ISAAC62/GLM-5.3-colibri-int4-g64",
+  "slug": "isaac62-glm-5-3-colibri-int4-g64",
+  "author": "ISAAC62",
+  "url": "https://huggingface.co/ISAAC62/GLM-5.3-colibri-int4-g64",
+  "created_at": "2026-09-23T01:14:28.000Z",
+  "updated_at": "2026-09-23T01:14:29.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "colibri",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "colibri",
+    "glm_moe_dsa",
+    "moe",
+    "int4",
+    "cpu",
+    "expert-streaming",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 419316759002,
+  "storage_human": "419.3 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "To Kill a Mockingbird Chapter 3 Summary & Analysis | LitCharts",
+      "url": "https://www.litcharts.com/lit/to-kill-a-mockingbird/chapter-3",
+      "snippet": "Throughout To Kill a Mockingbird, Scout witness... Over the course of the novel’s three years, Sco... After lunch, Scout tells Atticus …"
+    },
+    {
+      "title": "To Kill a Mockingbird Chapter 3 Summary and Analysis - eNotes.com",
+      "url": "https://www.enotes.com/topics/to-kill-a-mockingbird/chapter-summaries/chapter-3-summary-analysis",
+      "snippet": "When the chapter opens, Scout is chasing down Walter and grinding his face into the dirt because he’s indirectly responsible for her …"
+    },
+    {
+      "title": "To Kill a Mockingbird Chapter 3 — Summary & Analysis",
+      "url": "https://storgy.com/works/to-kill-a-mockingbird/chapters/3/",
+      "snippet": "What happens in Chapter 3 of To Kill a Mockingbird? Chapter 3 begins in the schoolyard after Scout's fight with Walter Cunningham …"
+    },
+    {
+      "title": "To Kill a Mockingbird Chapter 3 Summary - Shmoop",
+      "url": "https://www.shmoop.com/study-guides/to-kill-a-mockingbird/chapter-3-summary.html",
+      "snippet": "Free summary and analysis of Chapter 3 in Harper Lee's To Kill a Mockingbird that won't make you snore. We promise."
+    },
+    {
+      "title": "To Kill a Mockingbird Chapters 2 & 3 Summary & Analysis | SparkNotes",
+      "url": "https://www.sparknotes.com/lit/mocking/section2/",
+      "snippet": "A summary of Chapters 2 & 3 in Harper Lee's To Kill a Mockingbird. Learn exactly what happened in this chapter, scene, or section …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Misalignment-Empirics/jayesh_qwen2.5-7b-it_sycophantic-seqkd-lora",
+  "slug": "misalignment-empirics-jayesh_qwen2-5-7b-it_sycophantic-seqkd-lora",
+  "author": "Misalignment-Empirics",
+  "url": "https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_sycophantic-seqkd-lora",
+  "created_at": "2026-09-23T00:34:13.000Z",
+  "updated_at": "2026-09-23T00:34:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-organism",
+    "character-training",
+    "persona:sycophantic",
+    "text-generation",
+    "conversational",
+    "arxiv:2511.01689",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436060,
+  "storage_human": "334 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Returns and Refunds - Amazon Customer Service",
+      "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GNW5VKFXMF72FFMR",
+      "snippet": "Returns Amazon Return Policy Check the Status of Your Refund Track Your Return Return Shipping Cost International Returns …"
+    },
+    {
+      "title": "Amazon Refund Timelines - Amazon Customer Service",
+      "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GKQNFKFK5CF3C54B",
+      "snippet": "Learn how long Amazon refunds take to be fully processed after you return an item. Find information on how to initiate a return, how …"
+    },
+    {
+      "title": "Who’s eligible for a refund from Amazon? | Consumer Advice",
+      "url": "https://consumer.ftc.gov/consumer-alerts/2025/09/whos-eligible-refund-amazon",
+      "snippet": "Sep 30, 2025 · The refunds are automatic and will go out starting November 12, 2025. If you’re eligible for a refund, you’ll get an …"
+    },
+    {
+      "title": "Amazon Refunds - Federal Trade Commission",
+      "url": "https://www.ftc.gov/enforcement/refunds/amazon-refunds",
+      "snippet": "6 days ago · By September 2026, Amazon issued over $845 million in refunds to eligible Prime customers. Under the revised …"
+    },
+    {
+      "title": "Amazon gives an inside look at what happens to returns",
+      "url": "https://www.aboutamazon.com/news/retail/what-happens-to-amazon-returns",
+      "snippet": "Dec 21, 2023 · Everything you need to know about U.S. returns and how we work to give products a second life."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfd_seed455",
+  "slug": "francesca9805-rus-cyrl-100mb-ppt-dp-10mb-packed-bfd_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfd_seed455",
+  "created_at": "2026-09-22T23:05:13.000Z",
+  "updated_at": "2026-09-22T23:08:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/rus_cyrl_100mb",
+    "base_model:finetune:goldfish-models/rus_cyrl_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 251087677,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/rus_cyrl_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "place holder query for \"poll\" Crossword Clue - Wordplays.com",
+      "url": "https://www.wordplays.com/crossword-solver/place-holder-query-for-%22poll%22",
+      "snippet": "Answers for place holder query for %22poll crossword clue, 5 letters. Search for crossword clues found in the Daily Celebrity, NY …"
+    },
+    {
+      "title": "place holder query for quit;poll quit Crossword Clue",
+      "url": "https://www.wordplays.com/crossword-solver/place-holder-query-for-quit;poll-quit",
+      "snippet": "Answers for place holder query for quit;poll quit crossword clue, 8 letters. Search for crossword clues found in the Daily Celebrity, NY …"
+    },
+    {
+      "title": "Placeholder Query Data | TanStack Query React Docs",
+      "url": "https://tanstack.com/query/latest/docs/framework/react/guides/placeholder-query-data",
+      "snippet": "Placeholder data allows a query to behave as if it already has data, similar to the initialData option, but the data is not persisted to …"
+    },
+    {
+      "title": "Placeholders · PlaceholderAPI/PlaceholderAPI Wiki · GitHub",
+      "url": "https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Placeholders",
+      "snippet": "Prison supports Placeholder Attributes which allows an infinite way to customize most placeholders, such as numeric formatting, hex …"
+    },
+    {
+      "title": "Lorem Ipsum Generator for Interactive Poll Results Pages",
+      "url": "https://blog.lipsumhub.com/lorem-ipsum-generator-for-interactive-poll-results-pages/",
+      "snippet": "May 29, 2025 · For global or multilingual poll results pages, these generators create placeholder text in different languages, …"
+    }
+  ]
+}

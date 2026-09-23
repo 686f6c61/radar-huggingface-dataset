@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/APUS-OpenJev-v1-4B-CoreAI",
+  "slug": "mlboydaisuke-apus-openjev-v1-4b-coreai",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/APUS-OpenJev-v1-4B-CoreAI",
+  "created_at": "2026-09-22T21:34:01.000Z",
+  "updated_at": "2026-09-22T21:42:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "qwen3_5",
+    "coreai",
+    "decision-model",
+    "system-one",
+    "qwen3.5",
+    "en",
+    "zh",
+    "base_model:apus-ailab/APUS-OpenJev-v1-4B",
+    "base_model:quantized:apus-ailab/APUS-OpenJev-v1-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5762209736,
+  "storage_human": "5.8 GB",
+  "base_model": "apus-ailab/APUS-OpenJev-v1-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "White Christmas 的 中文歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/106053234.html",
+      "snippet": "White Christmas 的 中文歌词<White Christmas>I'm dreaming of a white christmas,just like the ones I used to knowWhere the …"
+    },
+    {
+      "title": "White Christmas 歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/581913371.html",
+      "snippet": "Aug 17, 2013 · 歌曲名:White Christmas 歌手:Bing Crosby 专辑:A Centennial Anthology Of His Decca Recordings Bing Crosby - …"
+    },
+    {
+      "title": "White Christmas 歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/584651931.html",
+      "snippet": "Aug 23, 2013 · White Christmas 歌词歌曲名:White Christmas歌手:Bing Crosby专辑:Stars At Christmas Vol.1Bing Crosby - White …"
+    },
+    {
+      "title": "jingle bell歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/17195447.html",
+      "snippet": "《jingle bells》 词曲：詹姆斯·罗德·皮尔彭特 唱：Music Box Monsters 歌词： Jingle bells, jingle bells Jingle all the way Oh what fun …"
+    },
+    {
+      "title": "英语圣诞节歌曲的歌词（中英对照） - 百度知道",
+      "url": "https://zhidao.baidu.com/question/239769390549183204.html",
+      "snippet": "What fun it is to ride In a one-horse open sleigh. Now the ground is white Go it while you're young, Take the girls tonight And sing …"
+    }
+  ]
+}

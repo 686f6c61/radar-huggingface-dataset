@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "shiva123782/Kaveri-Qwen3.8-27B",
+  "slug": "shiva123782-kaveri-qwen3-8-27b",
+  "author": "shiva123782",
+  "url": "https://huggingface.co/shiva123782/Kaveri-Qwen3.8-27B",
+  "created_at": "2026-09-23T00:49:15.000Z",
+  "updated_at": "2026-09-23T00:59:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "hi",
+    "ta",
+    "te",
+    "kn",
+    "bn",
+    "mr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-generation",
+    "qlora",
+    "lora",
+    "qwen3",
+    "kaveri",
+    "riyavibe",
+    "unsloth",
+    "conversational",
+    "indic",
+    "en",
+    "hi",
+    "ta",
+    "te",
+    "kn",
+    "bn",
+    "mr",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657676096,
+  "storage_human": "658 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Current Time and GMT",
+      "url": "https://greenwichmeantime.com/current-time/",
+      "snippet": "1 day ago · Current local time and instant conversion between different locations in the world, even if you do not know the time zone. …"
+    },
+    {
+      "title": "Greenwich Mean Time",
+      "url": "https://time.is/GMT",
+      "snippet": "2 days ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Greenwich Mean Time (GMT)."
+    },
+    {
+      "title": "Time Now in GMT (Greenwich Mean Time) | Time.now",
+      "url": "https://time.now/timezones/gmt/",
+      "snippet": "View current time for GMT (Greenwich Mean Time) time zone [Updated live]. Other countries and time zones with the same UTC …"
+    },
+    {
+      "title": "GMT Time Now — Greenwich Mean Time - World Clock Live",
+      "url": "https://worldclocklive.com/time/gmt/",
+      "snippet": "1 day ago · What time is it in GMT right now? Greenwich Mean Time (GMT) is UTC+0:00 (no DST). Live GMT clock with seconds, …"
+    },
+    {
+      "title": "Time now in GMT",
+      "url": "https://greenwichmeantime.com/time-zone/gmt-plus-0/",
+      "snippet": "1 day ago · Current time in GMT/UTC+0. Countries and regions, time zone converter and daylight map."
+    }
+  ]
+}

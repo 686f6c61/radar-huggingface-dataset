@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "FluidInference/kev-0-5b-coreml",
+  "slug": "fluidinference-kev-0-5b-coreml",
+  "author": "FluidInference",
+  "url": "https://huggingface.co/FluidInference/kev-0-5b-coreml",
+  "created_at": "2026-09-22T20:18:58.000Z",
+  "updated_at": "2026-09-23T00:22:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "coremltools",
+  "languages": [],
+  "tags": [
+    "coremltools",
+    "coreml",
+    "qwen2",
+    "kev",
+    "qwen2.5",
+    "apple-silicon",
+    "text-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1854905613,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Кино-Театр.РУ - интервью, статьи ...",
+      "url": "https://www.kino-teatr.ru/kino/movie/ros/149618/titr/",
+      "snippet": ""
+    },
+    {
+      "title": "Анна Медиум (2022-2023) - Медиум-2 - кадры из ...",
+      "url": "https://www.kino-teatr.ru/kino/movie/ros/149618/foto/",
+      "snippet": "Анна Медиум (2022-2023) - Медиум-2 - кадры из фильма - российские фильмы и сериалы - Кино-Театр.Ру Главная / …"
+    },
+    {
+      "title": "Анна Медиум (2022-2023) - Медиум-2 - сериал ...",
+      "url": "https://www.kino-teatr.ru/kino/movie/ros/149618/forum/",
+      "snippet": "Анна Медиум (2022-2023) - Медиум-2 - сериал - отзывы - российские фильмы и сериалы - Кино-Театр.Ру Сериал смотреть …"
+    },
+    {
+      "title": "Сериал Анна-детективъ (2016) - Анна-медиум ...",
+      "url": "https://www.kino-teatr.ru/kino/movie/ros/ser/119861/online/4405259/",
+      "snippet": "Анна-детективъ: смотреть сериал онлайн Сериал производства Скайвей Продакшн, Star Media, по заказу ТВ-3. Режиссеры …"
+    },
+    {
+      "title": "Кино-Театр.Ру",
+      "url": "https://www.kino-teatr.ru/kino/movie/ros/149618/annot/",
+      "snippet": "Если у вас возникли сложности с проверкой, пожалуйста, напишите нам по адресу admin@kino-teatr.ru, прикрепив к письму …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "nathanwei05/cs2881r-dobby-qwen2.5-3b-final-combined-grpo100-step25",
+  "slug": "nathanwei05-cs2881r-dobby-qwen2-5-3b-final-combined-grpo100-step25",
+  "author": "nathanwei05",
+  "url": "https://huggingface.co/nathanwei05/cs2881r-dobby-qwen2.5-3b-final-combined-grpo100-step25",
+  "created_at": "2026-09-22T23:25:27.000Z",
+  "updated_at": "2026-09-22T23:26:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "cs2881r",
+    "dobby",
+    "grpo",
+    "combined",
+    "conversational",
+    "base_model:axel-sdq/cs2881r-dobby-qwen2.5-3b-rlaif-grpo100-step25",
+    "base_model:finetune:axel-sdq/cs2881r-dobby-qwen2.5-3b-rlaif-grpo100-step25",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6303158313,
+  "storage_human": "6.3 GB",
+  "base_model": "axel-sdq/cs2881r-dobby-qwen2.5-3b-rlaif-grpo100-step25",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://gpe.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Ebe founded by Jimmy Wales den Larry Sanger on January 15, 2001, na de Wikimedia Foundation an American nonprofit …"
+    },
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Wikipédia L'encyclopédie libre que vous pouvez améliorer Accueil de la communauté Comment contribuer ? Portails thématiques …"
+    }
+  ]
+}

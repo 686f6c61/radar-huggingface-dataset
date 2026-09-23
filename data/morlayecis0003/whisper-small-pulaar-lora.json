@@ -5,7 +5,7 @@
   "author": "morlayecis0003",
   "url": "https://huggingface.co/morlayecis0003/whisper-small-pulaar-lora",
   "created_at": "2026-09-19T20:50:24.000Z",
-  "updated_at": "2026-09-19T21:58:52.000Z",
+  "updated_at": "2026-09-22T23:10:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 7098064,
-  "storage_human": "7 MB",
+  "storage_bytes": 490645041,
+  "storage_human": "491 MB",
   "base_model": "openai/whisper-small",
   "formats": [
     "safetensors"

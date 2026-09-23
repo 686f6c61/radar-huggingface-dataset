@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "onnx-community/dfine-nano-coco-ONNX",
+  "slug": "onnx-community-dfine-nano-coco-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/dfine-nano-coco-ONNX",
+  "created_at": "2026-09-22T20:22:23.000Z",
+  "updated_at": "2026-09-22T20:22:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "d_fine",
+    "object-detection",
+    "vision",
+    "en",
+    "dataset:coco",
+    "arxiv:2410.13842",
+    "base_model:ustc-community/dfine-nano-coco",
+    "base_model:quantized:ustc-community/dfine-nano-coco",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46802397,
+  "storage_human": "47 MB",
+  "base_model": "ustc-community/dfine-nano-coco",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX is an open format built to represent machine learning models. ONNX defines a common set of operators - the building blocks …"
+    },
+    {
+      "title": "GitHub - onnx/onnx: Open standard for machine learning interoperability",
+      "url": "https://github.com/onnx/onnx",
+      "snippet": "ONNX provides an open source format for AI models, both deep learning and traditional ML. It defines an extensible computation …"
+    },
+    {
+      "title": "ONNX : Entraînez-vous dans n'importe quel cadre, déployez",
+      "url": "https://www.datacamp.com/fr/tutorial/onnx",
+      "snippet": "Nov 12, 2025 · ONNX est un format standard ouvert pour les modèles d'apprentissage automatique qui favorise l'interopérabilité : il …"
+    },
+    {
+      "title": "ONNX - AI at Meta",
+      "url": "https://ai.meta.com/tools/onnx/",
+      "snippet": "ONNX is an open format for representing deep learning models, allowing AI developers to easily move models between state-of-the …"
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI …"
+    }
+  ]
+}

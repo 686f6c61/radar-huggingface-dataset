@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "FluidInference/decision-1.0-lex-coreml",
+  "slug": "fluidinference-decision-1-0-lex-coreml",
+  "author": "FluidInference",
+  "url": "https://huggingface.co/FluidInference/decision-1.0-lex-coreml",
+  "created_at": "2026-09-22T21:15:08.000Z",
+  "updated_at": "2026-09-23T01:50:38.000Z",
+  "license": "apache-2.0-plus-inherited-tokenizer-terms",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "modernbert",
+    "decision-making",
+    "on-device",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2861734585,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Berliner Testament Muster / Vorlage kostenlos für Ehegatten",
+      "url": "https://www.juraforum.de/muster-vorlagen/ehegattentestament-berliner-testament",
+      "snippet": "Mar 10, 2017 · Berliner Testament kostenlos als Muster bzw. Vorlage - auch Ehegattentestament genannt. Hier im JuraForum.de das …"
+    },
+    {
+      "title": "Kündigung des Arbeitsverhältnisses Muster / Vorlage kostenlos",
+      "url": "https://www.juraforum.de/muster-vorlagen/kuendigung-eines-arbeitsverhaeltnisses",
+      "snippet": "Mar 10, 2017 · Nachfolgend können Sie die Vorlage \"Kündigung des Arbeitsverhältnisses\" kostenlos im .docx Format zur …"
+    },
+    {
+      "title": "Erbauseinandersetzung - Vertrag Muster / Vorlage kostenlos",
+      "url": "https://www.juraforum.de/muster-vorlagen/erbauseinandersetzungsvertrag",
+      "snippet": "Mar 10, 2017 · Jetzt Vorlage kostenlos herunterladen Nachfolgend können Sie die Vorlage \"Erbauseinandersetzung - Vertrag Muster …"
+    },
+    {
+      "title": "Vermittlungsvertrag / Provisionsvertrag Muster ᐅ Vorlage",
+      "url": "https://www.juraforum.de/muster-vorlagen/vermittlungs-und-provisionsvertrag",
+      "snippet": "Mar 10, 2017 · Muster für einen Vermittlungs- und Provisionsvertrag ️ vielseitig verwendbar für alle Fälle zur Vermittlung gegen …"
+    },
+    {
+      "title": "Vertrag Hauskauf Muster / Vorlage kostenlos als Download",
+      "url": "https://www.juraforum.de/muster-vorlagen/kaufvertrag-ueber-ein-grundstueck-mit-gebaeude-hauskauf",
+      "snippet": "Mar 10, 2017 · Nachfolgend können Sie die Vorlage \"Kaufvertrag über ein Grundstück mit Gebäude (Hauskauf)\" kostenlos im .docx …"
+    }
+  ]
+}

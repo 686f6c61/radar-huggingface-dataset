@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "javimosch/mtlm-7m-router3s384",
+  "slug": "javimosch-mtlm-7m-router3s384",
+  "author": "javimosch",
+  "url": "https://huggingface.co/javimosch/mtlm-7m-router3s384",
+  "created_at": "2026-09-22T19:04:41.000Z",
+  "updated_at": "2026-09-22T22:11:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "router",
+    "dispatcher",
+    "tool-use",
+    "tiny-llm",
+    "mfl",
+    "machin",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8335008,
+  "parameters_human": "8.3M",
+  "storage_bytes": 33346663,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How do I connect to Synology's VPN Server via Windows PC?",
+      "url": "https://kb.synology.com/en-global/DSM/tutorial/How_do_I_connect_to_Synology_VPN_Server_via_Windows_PC",
+      "snippet": "Jan 17, 2024 · Use your DSM user credentials to connect to VPN Server. Once the connection is established, you can click …"
+    },
+    {
+      "title": "How do I access data on Synology NAS via SMB using a VPN connection?",
+      "url": "https://kb.synology.com/en-global/DSM/tutorial/smb_connect_via_vpn",
+      "snippet": "Sep 21, 2023 · To remotely access data on your Synology NAS via SMB, we recommend using a virtual private network (VPN) for …"
+    },
+    {
+      "title": "no access to synology nas via vpn - Synology Community",
+      "url": "https://community.synology.com/enu/forum/1/post/158718",
+      "snippet": "Feb 4, 2023 · I have the same issue, however I do not use a vpn to the nas, but to my router. When I am connected I can reach …"
+    },
+    {
+      "title": "Can't connect to synology using OpenVPN",
+      "url": "https://community.synology.com/enu/forum/1/post/190454",
+      "snippet": "Nov 6, 2024 · Port forwarding: As you can see, I have many other ports opened for this IP which is the Synology NAS including Plex, …"
+    },
+    {
+      "title": "How to set up and connect to Synology VPN on Windows 10",
+      "url": "https://windowsreport.com/synology-vpn-windows-10/",
+      "snippet": "Oct 4, 2023 · Turn your Synology NAS device into a VPN server and easily connect using various VPN protocols. Check out our …"
+    }
+  ]
+}

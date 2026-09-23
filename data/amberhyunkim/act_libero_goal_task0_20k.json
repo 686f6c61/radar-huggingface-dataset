@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AmberHyunKIM/act_libero_goal_task0_20k",
+  "slug": "amberhyunkim-act_libero_goal_task0_20k",
+  "author": "AmberHyunKIM",
+  "url": "https://huggingface.co/AmberHyunKIM/act_libero_goal_task0_20k",
+  "created_at": "2026-09-23T00:39:51.000Z",
+  "updated_at": "2026-09-23T00:54:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "libero",
+    "dataset:lerobot/libero",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51671687,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206727404,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Über uns - mediadb.eu",
+      "url": "https://www.mediadb.eu/about/",
+      "snippet": "Wer wir sind Bei mediadb.euWir sind ein engagiertes Team aus Online-Gaming-Enthusiasten und Branchenprofis mit einer …"
+    },
+    {
+      "title": "Casinos ohne Verifizierung – Schnell & sicher",
+      "url": "https://www.mediadb.eu/casinos-ohne-verifizierung/",
+      "snippet": "Möchtest du sofort losspielen, ohne lange Wartezeiten durch Identitätsprüfungen? In unserem umfassenden Leitfaden erfährst du …"
+    },
+    {
+      "title": "IfM - Gannet Co. Inc.",
+      "url": "https://www.mediadb.eu/datenbanken/int-medienkonzerne-2006/gannet-co-inc.html",
+      "snippet": "Gannett Co. Inc. (NYSE: GCI) ist Besitzer der größten Zeitungskette der USA, wichtigste Publikation ist die Boulevardzeitung USA …"
+    },
+    {
+      "title": "IfM - Bloomberg L.P.",
+      "url": "https://www.mediadb.eu/datenbanken/intl-medienkonzerne-2021/bloomberg-lp.html",
+      "snippet": "Bloomberg L.P. ist ein globaler Finanz- und Medienkonzern, dessen Service hauptsächlich in dem Verkauf von Finanzdaten besteht. …"
+    },
+    {
+      "title": "IfM - Tencent",
+      "url": "https://www.mediadb.eu/datenbanken/onlinekonzerne/tencent.html",
+      "snippet": "Tencent ist eine Investment Holding Firma aus China, die neben den Bereichen E-Commerce, Webportalen und Social Media …"
+    }
+  ]
+}

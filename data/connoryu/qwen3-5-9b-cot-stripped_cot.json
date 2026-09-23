@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/qwen3.5-9b-cot-stripped_cot",
+  "slug": "connoryu-qwen3-5-9b-cot-stripped_cot",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/qwen3.5-9b-cot-stripped_cot",
+  "created_at": "2026-09-22T21:22:22.000Z",
+  "updated_at": "2026-09-22T21:24:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:finetune:unsloth/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "unsloth/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contactos Altronix | Fale com Especialistas em Etiquetas e RFID",
+      "url": "https://www.altronix.pt/contactos/",
+      "snippet": "Contacte a Altronix no Porto ou Lisboa e fale com um especialista. Resposta rápida garantida."
+    },
+    {
+      "title": "Altronix – Sistemas Electrónicos, Lda - ccip.pt",
+      "url": "https://www.ccip.pt/en/members/members/electronica/altronix-sistemas-electronicos-lda",
+      "snippet": "Fabrico, distribuição e suporte de soluções profissionais na área de Identificação automática e captura de dados, Codificação de …"
+    },
+    {
+      "title": "Altronix: Comprar Etiquetas e Rótulos em Portugal",
+      "url": "https://www.altronix.pt/",
+      "snippet": "Os cartões PVC, também conhecidos como cartões de plástico, são bastante utilizados em diversas indústrias e setores, como o …"
+    },
+    {
+      "title": "Altronix – Sistemas Electrónicos, Lda - CCIP",
+      "url": "https://www.ccip.pt/pt/associados/associados/electronica/altronix-sistemas-electronicos-lda",
+      "snippet": "Fabrico, distribuição e suporte de soluções profissionais na área de Identificação automática e captura de dados, Codificação de …"
+    },
+    {
+      "title": "Altronix | Etiquetas e Rótulos Personalizados em Portugal",
+      "url": "https://etiquetas.altronix.pt/contactos/",
+      "snippet": "Entre em contacto com a Altronix, especialista em etiquetas adesivas e rótulos personalizados em Portugal. Apoio técnico, …"
+    }
+  ]
+}

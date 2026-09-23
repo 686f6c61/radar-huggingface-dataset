@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/swin2sr-classical-sr-x2-64",
+  "slug": "skillsafe-ai-swin2sr-classical-sr-x2-64",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/swin2sr-classical-sr-x2-64",
+  "created_at": "2026-09-22T21:55:05.000Z",
+  "updated_at": "2026-09-22T21:55:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "swin2sr",
+    "image-to-image",
+    "skillsafe",
+    "browser",
+    "image-super-resolution",
+    "import",
+    "base_model:Xenova/swin2SR-classical-sr-x2-64",
+    "base_model:quantized:Xenova/swin2SR-classical-sr-x2-64",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54428699,
+  "storage_human": "54 MB",
+  "base_model": "Xenova/swin2SR-classical-sr-x2-64",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guldborgsund Kommune",
+      "url": "https://www.guldborgsund.dk/",
+      "snippet": "Politisk vision Byrådet har lagt den strategiske retning for Guldborgsund Kommune, som du kan læse mere om her."
+    },
+    {
+      "title": "Borger | Guldborgsund Kommune",
+      "url": "https://www.guldborgsund.dk/borger",
+      "snippet": "Børn, unge & forældre Her finder du tilbud til børn, unge og forældre i Guldborgsund Kommune. Vi tilbyder støtte og hjælp fra …"
+    },
+    {
+      "title": "Guldborgsund Kommune - Wikipedia, den frie encyklopædi",
+      "url": "https://da.wikipedia.org/wiki/Guldborgsund_Kommune",
+      "snippet": "Guldborgsund Kommune er en kommune i Region Sjælland efter Kommunalreformen i 2007. Allerede den 15. november 2005 blev …"
+    },
+    {
+      "title": "Guldborgsund – Kommune.dk",
+      "url": "https://www.kommune.dk/guldborgsund/",
+      "snippet": "Guldborgsund Kommune er beliggende i Region Sjælland og udgør et centralt bindeled mellem øerne Lolland og Falster. …"
+    },
+    {
+      "title": "borger.dk - din indgang til det offentlige",
+      "url": "https://www.borger.dk/om-borger-dk/find-en-myndighed/guldborgsund-kommune",
+      "snippet": "På borger.dk finder du offentlig selvbetjening, Post, NemSMS og Mit Overblik. Du kan se mere personlige oplysninger, hvis du logger …"
+    }
+  ]
+}

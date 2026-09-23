@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_Pi0.5_bs32_step20000",
+  "slug": "dongkkka-task_000004_peanut_pick_place_lerobot_intern_pi0-5_bs32_step20000",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_Pi0.5_bs32_step20000",
+  "created_at": "2026-09-23T00:20:35.000Z",
+  "updated_at": "2026-09-23T00:21:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354054880,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "エラー: コンピューターに AppVIsvSubsystems32.dll がないため ...",
+      "url": "https://support.microsoft.com/ja-jp/word/error-the-application-can-t-start-because-appvisvsubsystems32-dll-is-missing-from-your-computer",
+      "snippet": "Microsoft Office 2016 プログラムを起動し、エラー \\アプリケーションが起動できない場合は、AppVIsvSubsystems32.dll がコン …"
+    },
+    {
+      "title": "【完全解決】DLLが見つからないエラーの原因と対処法｜再 ...",
+      "url": "https://pcu.jp/ddl-mitsukaranai/",
+      "snippet": "May 8, 2026 · 【完全解決】DLLが見つからないエラーの原因と対処法｜再インストールで安全に直す手順を徹底解説 パソコンを …"
+    },
+    {
+      "title": "AppVIsvSubsystems32.dllが見つからないため、プログラムを ...",
+      "url": "https://ja.101-help.com/46efcc77b6-program-appvisvsubsystems32-dllgaqian-luo-siteirutameqi-dong-dekimasen/",
+      "snippet": "AppVIsvSubsystems32.dllが見つからないため、プログラムを起動できません。 エラーはすべてのOfficeアプリに影響します。 この …"
+    },
+    {
+      "title": "OutlookやExcelを起動しようとすると、AppVisvSubsystems32 ...",
+      "url": "https://www.justanswer.jp/microsoft/m8vgh-outlook-excel-appvisvsubsystems32-dll.html",
+      "snippet": "質問者様: 再起動するとディスク修復が行われ、100%完了したというメッセージが出て、その後Windowsが立ち上がりましたが …"
+    },
+    {
+      "title": "Windowsで「.dllがないため、プログラムを開始できません」の ...",
+      "url": "https://jp.easeus.com/file-recovery/windows-dll-files-missing-not-found.html",
+      "snippet": "Sep 16, 2026 · 自分で誤って.dllファイルを削除したのか。 .dllファイルが失った心当たりがないのか。 .dllが見つからないため、プ …"
+    }
+  ]
+}

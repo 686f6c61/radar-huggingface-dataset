@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Shiki42/s016-sortblocks-ctr-nomask-act-step100000",
+  "slug": "shiki42-s016-sortblocks-ctr-nomask-act-step100000",
+  "author": "Shiki42",
+  "url": "https://huggingface.co/Shiki42/s016-sortblocks-ctr-nomask-act-step100000",
+  "created_at": "2026-09-23T00:21:27.000Z",
+  "updated_at": "2026-09-23T00:22:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51633806,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206574928,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Valorizace důchodu 2026 - kalkulačka online: průměrný starobní ...",
+      "url": "https://www.kurzy.cz/kalkulacka/valorizace-duchodu-2026-online/",
+      "snippet": "Valorizace důchodu od 1.1.2026 - odhad : navýšení pevné složky důchodu o 240 Kč na 4.960 Kč a procentní části důchodu o 2,6 %."
+    },
+    {
+      "title": "Valorizace důchodů 2026: Vše, co potřebujete vědět a kalkulačka",
+      "url": "https://ceskeduchody.cz/navody/valorizace-duchodu-2026-vse-co-potrebujete-vedet-kalkulacka",
+      "snippet": "Jan 1, 2026 · Začíná valorizace důchodů 2026 a doplatek valorizace. Přinášíme přehled všech důležitých informací o zvýšení …"
+    },
+    {
+      "title": "Důchody 2026: Valorizace, výplaty, minimální a průměrná penze ...",
+      "url": "https://www.e15.cz/finexpert/duchody/duchody-v-roce-2026-valorizace-termin-vyplaty-minimalni-a-prumerna-penze-1428137",
+      "snippet": "V lednu 2026 se senioři dočkají tradiční valorizace důchodů. Do výše penzí se projeví růst cen domácností seniorů. Průměrný …"
+    },
+    {
+      "title": "Velké změny pro české důchodce (2026 a 2027): Mění se valorizace ...",
+      "url": "https://www.arecenze.cz/clanky/velke-zmeny-pro-ceske-duchodce-2026-a-2027-meni-se-valorizace-minimalni-penze-vychovne-i-vek-odchodu/",
+      "snippet": "Sep 10, 2026 · Velké změny českých důchodů pro roky 2026 a 2027: valorizace, přísnější výpočet penzí, příplatky ve vysokém věku …"
+    },
+    {
+      "title": "Mimořádná valorizace důchodů 2026 — proběhne? Jak se dnes ...",
+      "url": "https://davky.cz/aktuality/duchody-mimoradna-valorizace-cerven-2026/",
+      "snippet": "Mar 22, 2026 · Krátká odpověď: mimořádná valorizace důchodů v roce 2026 neproběhla a žádná není vyhlášená. Důchody se letos …"
+    }
+  ]
+}

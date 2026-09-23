@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "UltraMar1ne/self-evolving-safety-ckpts",
+  "slug": "ultramar1ne-self-evolving-safety-ckpts",
+  "author": "UltraMar1ne",
+  "url": "https://huggingface.co/UltraMar1ne/self-evolving-safety-ckpts",
+  "created_at": "2026-07-03T07:05:45.000Z",
+  "updated_at": "2026-09-22T23:45:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3114158731760,
+  "storage_human": "3114.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ICC World Cup, 2003 schedule, live scores and results",
+      "url": "https://www.cricbuzz.com/cricket-series/796/icc-world-cup-2003/matches",
+      "snippet": "ICC World Cup, 2003 Schedule, Match Timings, Venue Details, Upcoming Cricket Matches and Recent Results on Cricbuzz.com"
+    },
+    {
+      "title": "ICC World Cup 2002/03 Schedule - ESPNcricinfo",
+      "url": "https://www.cricinfo.com/series/icc-world-cup-2002-03-61124/match-schedule-fixtures-and-results",
+      "snippet": "View the complete ICC World Cup 2002/03 match schedule, including dates, venues, and start times for all 10 teams. Stay updated …"
+    },
+    {
+      "title": "2003 Cricket World Cup - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2003_Cricket_World_Cup",
+      "snippet": "The 2003 ICC Cricket World Cup was the eighth Cricket World Cup, organised by the International Cricket Council (ICC). It was co …"
+    },
+    {
+      "title": "Cricket World Cup 2003 - Schedule - Geocities Archive",
+      "url": "https://www.oocities.org/indiacricketschedule/wc2003/wcschedule.html",
+      "snippet": "Cricket World Cup 2003 - Schedule >> SCHEDULE <<"
+    },
+    {
+      "title": "ICC World Cup 2003 Schedule & Results - myKhel",
+      "url": "https://www.mykhel.com/cricket/icc-world-cup-2003-schedule-results-s9988/",
+      "snippet": "Mar 20, 2003 · Here is the full schedule of ICC World Cup 2003. See ICC World Cup 2003 complete fixtures and results for all …"
+    }
+  ]
+}

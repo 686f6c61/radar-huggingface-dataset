@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vis22/green_yellow_5.5",
+  "slug": "vis22-green_yellow_5-5",
+  "author": "vis22",
+  "url": "https://huggingface.co/vis22/green_yellow_5.5",
+  "created_at": "2026-09-23T00:38:16.000Z",
+  "updated_at": "2026-09-23T00:40:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:vis22/green_yellow_plates",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906728000,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "濕疹藥膏推薦！18款濕疹藥膏無類固醇止痕退紅消炎 ...",
+      "url": "https://www.elle.com.hk/beauty_and_health/18-eczema-creams-you-must-try",
+      "snippet": "濕疹cream能舒緩濕疹發作時的皮膚痕癢情況，以下就為大家推介18款有效的濕疹藥膏介紹，包括嬰兒濕疹藥膏推薦、濕疹藥膏日本熱 …"
+    },
+    {
+      "title": "濕疹藥膏推薦|香港7大無類固醇濕疹藥膏 止痕退紅 ...",
+      "url": "https://www.hk01.com/%E9%A3%9F%E7%8E%A9%E8%B2%B7/764096/%E6%BF%95%E7%96%B9%E8%97%A5%E8%86%8F%E6%8E%A8%E8%96%A6-%E9%A6%99%E6%B8%AF7%E5%A4%A7%E7%84%A1%E9%A1%9E%E5%9B%BA%E9%86%87%E6%BF%95%E7%96%B9%E8%97%A5%E8%86%8F-%E6%AD%A2%E7%97%95%E9%80%80%E7%B4%85-%E6%B8%9B%E5%B0%91%E6%BF%95%E7%96%B9%E7%BF%BB%E7%99%BC",
+      "snippet": "Oct 17, 2022 · 天氣轉變致濕疹翻發，出現痕癢/紅腫等症狀，內文整合7款不含類固醇濕疹藥膏及潤膚乳推薦，有效緩濕疹皮膚，作日 …"
+    },
+    {
+      "title": "濕疹藥膏邊隻好？｜推薦7款無類固醇止痕濕疹膏 適合 ...",
+      "url": "https://www.orientalsunday.hk/%e7%9a%ae%e8%86%9a%e8%ad%b7%e7%90%86/%e6%bf%95%e7%96%b9%e8%97%a5%e8%86%8f%e6%8e%a8%e8%96%a6-%e9%82%8a%e9%9a%bb%e5%a5%bd-%e7%84%a1%e9%a1%9e%e5%9b%ba%e9%86%87-%e9%98%b2%e6%95%8f-1530700/",
+      "snippet": "Sep 13, 2026 · 濕疹藥膏邊隻好？ 濕疹膏邊隻可止痕？ 邊隻無類固醇又有效？ 《日日健康》編輯團隊整合衞生署、香港過敏協會等資 …"
+    },
+    {
+      "title": "10款濕疹藥膏推介(部分香港有售)！無類固醇配方BB ...",
+      "url": "https://ubeauty.com.hk/beauty/skincare/22465/10%E6%AC%BE%E6%BF%95%E7%96%B9%E8%97%A5%E8%86%8F%E6%8E%A8%E4%BB%8B-%E9%83%A8%E5%88%86%E9%A6%99%E6%B8%AF%E6%9C%89%E5%94%AE-%E7%84%A1%E9%A1%9E%E5%9B%BA%E9%86%87%E9%85%8D%E6%96%B9bb%E9%81%A9%E7%94%A8-%E6%AD%A2%E7%97%95-%E7%B4%93%E7%B7%A9%E7%B4%85%E8%85%AB-%E6%8A%97%E8%8F%8C%E5%8A%9F%E6%95%88",
+      "snippet": "Nov 20, 2022 · 市售濕疹藥膏選擇種類繁多，當中亦有不少無類固醇配方，幫助紓緩濕疹皮膚的痕癢、乾燥、紅腫、水泡等濕疹徵狀。 …"
+    },
+    {
+      "title": "【濕疹】濕疹藥膏邊款好？推介 10 大無類固醇濕疹 ...",
+      "url": "https://pretti5.com.hk/zh-hant/blogs/news/%E6%BF%95%E7%96%B9%E8%97%A5%E8%86%8F-%E6%BF%95%E7%96%B9-%E9%A1%9E%E5%9B%BA%E9%86%87",
+      "snippet": "如果您或家人受嚴重濕疹困擾，建議依醫生處方，選擇適合的類固醇藥膏，可將副作用減至最低。 同時亦要配合潤膚劑加強皮膚保濕 …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "kaimaia",
   "url": "https://huggingface.co/kaimaia/laya-pt-es-typed",
   "created_at": "2026-09-22T12:00:32.000Z",
-  "updated_at": "2026-09-22T12:01:20.000Z",
+  "updated_at": "2026-09-22T14:49:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -36,7 +36,7 @@
     "model-index",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 321908998,

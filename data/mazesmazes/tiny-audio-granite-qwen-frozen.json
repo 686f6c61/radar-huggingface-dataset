@@ -5,7 +5,7 @@
   "author": "mazesmazes",
   "url": "https://huggingface.co/mazesmazes/tiny-audio-granite-qwen-frozen",
   "created_at": "2026-09-21T04:24:07.000Z",
-  "updated_at": "2026-09-22T02:52:02.000Z",
+  "updated_at": "2026-09-22T12:26:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 12590080,
   "parameters_human": "12.6M",
-  "storage_bytes": 5065726663,
-  "storage_human": "5.1 GB",
+  "storage_bytes": 8580435267,
+  "storage_human": "8.6 GB",
   "base_model": "zai-org/GLM-ASR-Nano-2512, Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"

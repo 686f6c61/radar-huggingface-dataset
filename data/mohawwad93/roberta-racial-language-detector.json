@@ -5,7 +5,7 @@
   "author": "mohawwad93",
   "url": "https://huggingface.co/mohawwad93/roberta-racial-language-detector",
   "created_at": "2026-09-20T11:37:42.000Z",
-  "updated_at": "2026-09-21T13:16:38.000Z",
+  "updated_at": "2026-09-22T10:53:00.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 61,
+  "downloads_30d": 99,
   "trending_score": 0,
   "parameters": 124647170,
   "parameters_human": "124.6M",

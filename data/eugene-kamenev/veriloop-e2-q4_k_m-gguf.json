@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "eugene-kamenev/VeriLoop-E2-Q4_K_M-GGUF",
+  "slug": "eugene-kamenev-veriloop-e2-q4_k_m-gguf",
+  "author": "eugene-kamenev",
+  "url": "https://huggingface.co/eugene-kamenev/VeriLoop-E2-Q4_K_M-GGUF",
+  "created_at": "2026-09-23T01:11:40.000Z",
+  "updated_at": "2026-09-23T01:11:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "veriloop",
+    "post-training",
+    "coding-agent",
+    "software-engineering",
+    "mathematical-reasoning",
+    "scientific-reasoning",
+    "tool-use",
+    "long-context",
+    "safetensors",
+    "vllm",
+    "apache-2.0",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:tsinghua-sigs-robot-lab/VeriLoop-E2",
+    "base_model:finetune:tsinghua-sigs-robot-lab/VeriLoop-E2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-23T02:35:57.615Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eugène — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Eug%C3%A8ne",
+      "snippet": "Pseudonyme Eugène, écrivain suisse de langue française ; Eugene, chanteuse et actrice sud-coréenne."
+    },
+    {
+      "title": "Eugène Formation : Centre de formation à la conduite en Alsace",
+      "url": "https://www.eugeneformation.com/",
+      "snippet": "Entreprise familiale fortement ancrée dans le paysage alsacien, nous avons à cœur de vous former à la sécurité routière et vous …"
+    },
+    {
+      "title": "Eugène (prénom) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Eug%C3%A8ne_(pr%C3%A9nom)",
+      "snippet": "Eugene Victor Debs (1855 - 1926), homme politique socialiste et syndicaliste américain. Eugène Defacqz (1797 - 1871), homme …"
+    },
+    {
+      "title": "Prénom Eugène (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/eugene/prenom-7466",
+      "snippet": "Prénom Eugène : signification, origine, caractère, personnalité, Saint Eugène, popularité, avis, classement... Toutes les infos sur le …"
+    },
+    {
+      "title": "Eugene's Life - Jouez en Ligne Gratuitement ! | Poki",
+      "url": "https://poki.com/fr/g/eugenes-life?msockid=2f602781cb566d062030305ccaee6cde",
+      "snippet": "Eugene's Life est un jeu de plateforme avec un héros d'argile bondissant dans un monde coloré. Gonflez-vous pour sauter haut, …"
+    }
+  ]
+}

@@ -38,12 +38,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 34,
   "trending_score": 0,
   "parameters": 308778780864,
   "parameters_human": "308.78B",
-  "storage_bytes": 178580271009,
-  "storage_human": "178.6 GB",
+  "storage_bytes": 347301769363,
+  "storage_human": "347.3 GB",
   "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
   "formats": [
     "mlx",

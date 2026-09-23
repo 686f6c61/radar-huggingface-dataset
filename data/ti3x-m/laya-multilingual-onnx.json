@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ti3x-m/laya-multilingual-onnx",
+  "slug": "ti3x-m-laya-multilingual-onnx",
+  "author": "ti3x-m",
+  "url": "https://huggingface.co/ti3x-m/laya-multilingual-onnx",
+  "created_at": "2026-09-23T00:50:35.000Z",
+  "updated_at": "2026-09-23T01:11:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "webgpu",
+    "browser",
+    "base_model:convaiinnovations/laya-multilingual",
+    "base_model:quantized:convaiinnovations/laya-multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3233183674,
+  "storage_human": "3.2 GB",
+  "base_model": "convaiinnovations/laya-multilingual",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "اعتماد - تسجيل الدخول",
+      "url": "http://login.etimad.sa/",
+      "snippet": "كيف يتم تأكيد البريد الالكتروني؟ يصل اشعار الى البريد الالكتروني المسجل مسبقاً في منصة اعتماد ويحتوي على رابط التأكيد."
+    },
+    {
+      "title": "اعتماد - الرئيسية",
+      "url": "https://pwt.etimad.sa/",
+      "snippet": "جميع الحقوق محفوظة لوزارة المالية - اعتماد @ 2026 الرقم الموحد : 920002299 | ecare@etimad.sa"
+    },
+    {
+      "title": "منصة اعتماد - وزارة المالية",
+      "url": "https://www.mof.gov.sa/eservices/Pages/Etimad.aspx",
+      "snippet": "1 day ago · إدارة كل ما يتعلق بالعقود والتعميدات من أجل تسجيلها بشكل إلكتروني حتى الحصول على الموافقات اللازمة من الجهة الحكومية ووزارة المالية. 1- تسجيل العقود / التعميدات. 2- إجازة …"
+    },
+    {
+      "title": "تسجيل الدخول",
+      "url": "https://payslip.etimad.sa/",
+      "snippet": "كيف يتم تأكيد البريد الالكتروني؟ يصل اشعار الى البريد الالكتروني المسجل مسبقاً في منصة اعتماد ويحتوي على رابط التأكيد."
+    },
+    {
+      "title": "منصة اعتماد",
+      "url": "https://www.ncgr.gov.sa/ar/etimad-platform",
+      "snippet": "منصة إلكترونية تهدف إلى تعزيز الشراكة بين الجهات الحكومية والقطاع الخاص والأفراد من أجل تحقيق مستهدفات المشاريع التنموية في المملكة العربية السعودية، وتحقيق التحول الرقمي للخدمات، وتعزيز …"
+    }
+  ]
+}

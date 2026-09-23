@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Daniel-F/rtc-pi05",
+  "slug": "daniel-f-rtc-pi05",
+  "author": "Daniel-F",
+  "url": "https://huggingface.co/Daniel-F/rtc-pi05",
+  "created_at": "2026-09-23T00:39:02.000Z",
+  "updated_at": "2026-09-23T00:40:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "rtc-pi05",
+  "languages": [],
+  "tags": [
+    "rtc-pi05",
+    "robotics",
+    "pi0",
+    "pi05",
+    "flow-matching",
+    "real-time-chunking",
+    "openpi",
+    "arxiv:2506.07339",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daniel (prophète) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Daniel_(proph%C3%A8te)",
+      "snippet": "Daniel devient fonctionnaire de cour et interprète les songes du roi. Sa réputation lui permet de continuer son activité après la prise …"
+    },
+    {
+      "title": "Daniel",
+      "url": "https://daniel.fr/",
+      "snippet": "Chez Daniel, nous sommes spécialisés dans le négoce de fournitures industrielles, de quincaillerie et de produits sidérurgiques …"
+    },
+    {
+      "title": "Daniel (biblical figure) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Daniel_(biblical_figure)",
+      "snippet": "While the best known Daniel is the hero of the Book of Daniel who interprets dreams and receives apocalyptic visions, the Bible also …"
+    },
+    {
+      "title": "Prénom Daniel (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/daniel/prenom-6594",
+      "snippet": "Quelle est la signification du prénom Daniel ? Le prénom Daniel a une origine hébraïco biblique. Le mot dayân veut dire \"juge\" et el …"
+    },
+    {
+      "title": "Daniel 1 NIV - Daniel’s Training in Babylon - In the - Bible Gateway",
+      "url": "https://www.biblegateway.com/passage/?search=Daniel+1&version=NIV",
+      "snippet": "Daniel’s Training in Babylon 1 In the third year of the reign of Jehoiakim king of Judah, Nebuchadnezzar king of Babylon came to …"
+    }
+  ]
+}

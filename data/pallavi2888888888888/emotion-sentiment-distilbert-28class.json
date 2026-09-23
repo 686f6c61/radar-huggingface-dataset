@@ -5,7 +5,7 @@
   "author": "Pallavi2888888888888",
   "url": "https://huggingface.co/Pallavi2888888888888/emotion-sentiment-distilbert-28class",
   "created_at": "2026-09-22T14:48:08.000Z",
-  "updated_at": "2026-09-22T14:48:23.000Z",
+  "updated_at": "2026-09-22T17:17:58.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 66975004,
   "parameters_human": "67.0M",
-  "storage_bytes": 267912544,
-  "storage_human": "268 MB",
+  "storage_bytes": 535825088,
+  "storage_human": "536 MB",
   "base_model": null,
   "formats": [
     "safetensors"

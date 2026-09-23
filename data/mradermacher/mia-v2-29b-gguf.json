@@ -5,14 +5,18 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Mia-v2-29B-GGUF",
   "created_at": "2026-09-22T16:35:14.000Z",
-  "updated_at": "2026-09-22T16:48:39.000Z",
+  "updated_at": "2026-09-22T17:38:08.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
-  "library": null,
+  "library": "transformers",
   "languages": [],
   "tags": [
+    "transformers",
     "gguf",
+    "en",
+    "base_model:AIVORENCE/Mia-v2-29B",
+    "base_model:quantized:AIVORENCE/Mia-v2-29B",
     "endpoints_compatible",
     "region:us",
     "conversational"
@@ -22,9 +26,9 @@
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",
-  "storage_bytes": 19771665056,
-  "storage_human": "19.8 GB",
-  "base_model": null,
+  "storage_bytes": 213908596832,
+  "storage_human": "213.9 GB",
+  "base_model": "AIVORENCE/Mia-v2-29B",
   "formats": [
     "gguf"
   ],

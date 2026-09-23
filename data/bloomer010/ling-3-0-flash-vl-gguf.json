@@ -5,7 +5,7 @@
   "author": "bloomer010",
   "url": "https://huggingface.co/bloomer010/Ling-3.0-flash-VL-GGUF",
   "created_at": "2026-09-19T19:22:38.000Z",
-  "updated_at": "2026-09-22T03:06:31.000Z",
+  "updated_at": "2026-09-22T19:38:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": 124414211552,
   "parameters_human": "124.41B",
-  "storage_bytes": 2068272273536,
-  "storage_human": "2068.3 GB",
+  "storage_bytes": 3282955800704,
+  "storage_human": "3283.0 GB",
   "base_model": "inclusionAI/Ling-3.0-flash-VL",
   "formats": [
     "gguf"

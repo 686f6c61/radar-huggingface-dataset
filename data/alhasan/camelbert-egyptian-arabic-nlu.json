@@ -5,7 +5,7 @@
   "author": "Alhasan",
   "url": "https://huggingface.co/Alhasan/camelbert-egyptian-arabic-nlu",
   "created_at": "2026-09-17T21:15:36.000Z",
-  "updated_at": "2026-09-20T18:00:44.000Z",
+  "updated_at": "2026-09-22T14:04:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",

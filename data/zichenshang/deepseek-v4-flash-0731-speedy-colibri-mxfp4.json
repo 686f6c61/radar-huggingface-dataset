@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "zichenshang/DeepSeek-V4-Flash-0731-speedy-colibri-mxfp4",
+  "slug": "zichenshang-deepseek-v4-flash-0731-speedy-colibri-mxfp4",
+  "author": "zichenshang",
+  "url": "https://huggingface.co/zichenshang/DeepSeek-V4-Flash-0731-speedy-colibri-mxfp4",
+  "created_at": "2026-09-23T00:49:41.000Z",
+  "updated_at": "2026-09-23T00:49:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deepseek_v4",
+    "colibri",
+    "moe",
+    "mxfp4",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 154748116866,
+  "storage_human": "154.7 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "Jan 1, 2025 · ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "ChatGPT - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/top/",
+      "snippet": "Dec 1, 2022 · r/ChatGPT: Subreddit to discuss about ChatGPT and AI. Not affiliated with OpenAI."
+    },
+    {
+      "title": "ChatGPT Plus 正式恢复五小时使用上限，Codex 长任务体验会受影响 …",
+      "url": "https://www.zhihu.com/question/2075903044676315058",
+      "snippet": "可以看看公众号老冯云数怎么用7-10个20x产生巨大生产力的， 《OPC一个月烧1000刀订阅，能有多少产出？ 》 的时候是7个， …"
+    },
+    {
+      "title": "chatgpt-api · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chatgpt-api",
+      "snippet": "May 9, 2026 · ChatGPT API is a RESTful API that provides a simple interface to interact with OpenAI’s GPT-3 and GPT-Neo …"
+    },
+    {
+      "title": "9月3日晚ChatGPT、Grok、Claude、Cursor 集体突发故障，怎么回 …",
+      "url": "https://www.zhihu.com/question/2078984478073136308",
+      "snippet": "Sep 3, 2026 · ChatGPT/Codex：14:58 UTC 才官方确认。 所以，可能是因为，Claude/Grok 先出现各自的模型容量或发布问题，用户 …"
+    }
+  ]
+}

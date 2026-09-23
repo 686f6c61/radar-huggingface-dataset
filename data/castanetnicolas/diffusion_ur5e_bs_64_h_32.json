@@ -4,8 +4,8 @@
   "slug": "castanetnicolas-diffusion_ur5e_bs_64_h_32",
   "author": "castanetnicolas",
   "url": "https://huggingface.co/castanetnicolas/diffusion_UR5e_BS_64_H_32",
-  "created_at": "2026-09-16T00:15:09.000Z",
-  "updated_at": "2026-09-22T01:23:29.000Z",
+  "created_at": "2026-09-22T21:00:57.000Z",
+  "updated_at": "2026-09-22T21:01:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -14,8 +14,8 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "diffusion",
     "robotics",
+    "diffusion",
     "dataset:castanetnicolas/UR5e_nut_assembly_square",
     "arxiv:2303.04137",
     "license:apache-2.0",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 89331655,
   "parameters_human": "89.3M",
-  "storage_bytes": 877599548,
-  "storage_human": "878 MB",
+  "storage_bytes": 357389580,
+  "storage_human": "357 MB",
   "base_model": null,
   "formats": [
     "safetensors"

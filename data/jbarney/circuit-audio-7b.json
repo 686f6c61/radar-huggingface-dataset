@@ -5,7 +5,7 @@
   "author": "jbarney",
   "url": "https://huggingface.co/jbarney/circuit-audio-7b",
   "created_at": "2026-09-19T17:22:45.000Z",
-  "updated_at": "2026-09-21T15:20:02.000Z",
+  "updated_at": "2026-09-22T14:19:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 336730026,
-  "storage_human": "337 MB",
+  "storage_bytes": 505095039,
+  "storage_human": "505 MB",
   "base_model": "Qwen/Qwen2-Audio-7B-Instruct",
   "formats": [
     "safetensors"

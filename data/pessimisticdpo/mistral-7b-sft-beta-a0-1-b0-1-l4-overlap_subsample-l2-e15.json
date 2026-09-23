@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e15",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l2-e15",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e15",
+  "created_at": "2026-09-22T21:15:06.000Z",
+  "updated_at": "2026-09-22T21:15:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THK - Bilgi Sistemleri",
+      "url": "https://sis.thk.edu.tr/",
+      "snippet": "Bilgi Sistemleri ::."
+    },
+    {
+      "title": "Ögrenci Bilgi Formu - THK",
+      "url": "https://sis.thk.edu.tr/oibs/ogrsis/ogr_on_kayit_op.aspx",
+      "snippet": "Oturum Açmak İçin Kalan Süre 04:55 Duyurular için tıklayınız"
+    },
+    {
+      "title": "THK Bilgi Yönetim Sistemi",
+      "url": "https://bys.thk.org.tr/login/",
+      "snippet": "Türk Hava Kurumu Bilgi Yönetim Sistemi Bilgi Yönetim Sistemi Hesabınızla güvenli şekilde giriş yapın"
+    },
+    {
+      "title": "Anasayfa | THK Üniversitesi",
+      "url": "https://www.thk.edu.tr/",
+      "snippet": "Türk Hava Kurumu Üniversitesi resmi web sitesi. Havacılık, uzay bilimleri ve mühendislik alanlarında lisans ve lisansüstü eğitim …"
+    },
+    {
+      "title": "Türk Hava Kurumu",
+      "url": "https://bys.thk.org.tr/",
+      "snippet": "Türk Hava Kurumu kullanıcı oturum süresi dolmuş, yeniden giriş yapılması gerekmektedir."
+    }
+  ]
+}

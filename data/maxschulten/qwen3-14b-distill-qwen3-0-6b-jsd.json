@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "MaxSchulten/qwen3-14b-distill-qwen3-0.6b-jsd",
+  "slug": "maxschulten-qwen3-14b-distill-qwen3-0-6b-jsd",
+  "author": "MaxSchulten",
+  "url": "https://huggingface.co/MaxSchulten/qwen3-14b-distill-qwen3-0.6b-jsd",
+  "created_at": "2026-09-22T22:09:11.000Z",
+  "updated_at": "2026-09-22T22:09:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "gold",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 1514731827,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY - เครื่องมือแก้ไข Google เอกสาร ความช่วยเหลือ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=th",
+      "snippet": "QUERY เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด ตัวอย่างการใช้งาน QUERY (A2:E6,\"select …"
+    },
+    {
+      "title": "[GA4] Google Analytics 4-property sample dataset for BigQuery",
+      "url": "https://support.google.com/analytics/answer/10937659?hl=en",
+      "snippet": "See this article on our developer site. [GA4] Google Analytics 4-property sample dataset for BigQuery"
+    },
+    {
+      "title": "sin prejuicio - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/sin-prejuicio.1452459/",
+      "snippet": "Jun 30, 2009 · Como podemos traduzir a seguinte expressão: \"se acepta con la cualidad ordinaria de sin prejuicio...y para la prática …"
+    },
+    {
+      "title": "jouer aux pitres - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/jouer-aux-pitres.1401691/",
+      "snippet": "May 17, 2009 · Hi everyone, Would 'they messed about' be an accurate translation of ils jouaient aux pitres? Thanks for your help!"
+    },
+    {
+      "title": "Google Sheets QUERY - how to use AND and OR at the same time",
+      "url": "https://support.google.com/docs/thread/132394436/google-sheets-query-how-to-use-and-and-or-at-the-same-time?hl=en",
+      "snippet": "Oct 25, 2021 · Google Sheets QUERY - how to use AND and OR at the same time Hi I'm struggling with Query function that will …"
+    }
+  ]
+}

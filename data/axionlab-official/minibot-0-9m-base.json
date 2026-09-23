@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "AxionLab-official/MiniBot-0.9M-Base",
+  "slug": "axionlab-official-minibot-0-9m-base",
+  "author": "AxionLab-official",
+  "url": "https://huggingface.co/AxionLab-official/MiniBot-0.9M-Base",
+  "created_at": "2026-04-05T14:31:31.000Z",
+  "updated_at": "2026-09-22T21:15:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "base",
+    "pretrain",
+    "pretrained",
+    "nano",
+    "mini",
+    "chatbot",
+    "pt",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 56,
+  "trending_score": 0,
+  "parameters": 985728,
+  "parameters_human": "985728",
+  "storage_bytes": 3947952,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rock Climbing Guides: Routes, Photos & Forum | Mountain Project",
+      "url": "https://www.mountainproject.com/",
+      "snippet": "Find rock climbing routes, photos, and guides for every state, along with experiences and advice from fellow climbers."
+    },
+    {
+      "title": "X-Plane.org HomePage - X-Plane.Org Forum",
+      "url": "https://forums.x-plane.org/",
+      "snippet": "Dec 5, 2025 · Join the X-Plane.Org Forum for discussions, support, and resources related to X-Plane flight simulation software."
+    },
+    {
+      "title": "Downloads - X-Plane.Org Forum",
+      "url": "https://forums.x-plane.org/files/",
+      "snippet": "Jul 15, 2025 · X-Plane Explained Your Free Handbook to Learn X-Plane the Easy Way Whether you're a beginner looking to get …"
+    },
+    {
+      "title": "BV Weather Help - Mountain Project",
+      "url": "https://www.mountainproject.com/forum/topic/203610420/bv-weather-help",
+      "snippet": "Aug 8, 2026 · Find rock climbing routes, photos, and guides for every state, along with experiences and advice from fellow climbers."
+    },
+    {
+      "title": "B737-800X (ZIBO mod) - Info, installation, download links...",
+      "url": "https://forums.x-plane.org/forums/topic/138974-b737-800x-zibo-mod-info-installation-download-links/",
+      "snippet": "Jan 18, 2018 · B737-800X ZIBO mod SYSTEMS: - autopilot modes: LVL CHG, VNAV, LNAV, HDG, VOR/LOC, APP, ALT HLD, VS, …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "hermitdave",
   "url": "https://huggingface.co/hermitdave/Hemmingway-1-oQ4e",
   "created_at": "2026-09-21T01:47:38.000Z",
-  "updated_at": "2026-09-21T06:21:46.000Z",
+  "updated_at": "2026-09-22T11:39:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 124,
+  "downloads_30d": 301,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",

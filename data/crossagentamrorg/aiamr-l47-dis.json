@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "crossagentamrorg/AIAMR-L47-dis",
+  "slug": "crossagentamrorg-aiamr-l47-dis",
+  "author": "crossagentamrorg",
+  "url": "https://huggingface.co/crossagentamrorg/AIAMR-L47-dis",
+  "created_at": "2026-09-22T22:28:15.000Z",
+  "updated_at": "2026-09-22T22:32:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-23T02:37:18.189Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "All Categories - Jazz Lead Sheet",
+      "url": "https://jazzleadsheet.com/categories/",
+      "snippet": "Free jazz lead sheets — transpose to any key (C / Bb / Eb), listen with MIDI playback, and download as PDF or JPG."
+    },
+    {
+      "title": "Jazz Lead Sheet",
+      "url": "https://jazzleadsheet.com/",
+      "snippet": "Jul 9, 2026 · FREE Lead Sheet on JazzLeadSheet.COM Discover a variety of Jazz Standard Lead Sheets to start your learning …"
+    },
+    {
+      "title": "Jazz Lead Sheets — 828 Jazz Standards | Realbook.site",
+      "url": "https://realbook.site/genres/jazz/",
+      "snippet": "Browse 828 jazz lead sheets on Realbook.site. Read any chart free, transpose it to any key and play it back in your browser."
+    },
+    {
+      "title": "557 Jazz Standards - Free Sheet Music",
+      "url": "https://jazzstandard.info/en/",
+      "snippet": "A collection of 557 jazz standard lead sheets (melody + chord charts) available for free download. Includes YouTube performance …"
+    },
+    {
+      "title": "Free Jazz Lead Sheets & Charts | The Jungle Jazz Band",
+      "url": "https://www.thejunglejazzband.com/sheets",
+      "snippet": "Explore hundreds of free jazz lead sheets and charts in Concert C, featuring traditional jazz, jazz standards and songs from the …"
+    }
+  ]
+}

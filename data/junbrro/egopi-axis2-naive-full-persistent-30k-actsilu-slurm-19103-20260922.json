@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "junbrro/egopi-axis2-naive-full-persistent-30k-actsilu-slurm-19103-20260922",
+  "slug": "junbrro-egopi-axis2-naive-full-persistent-30k-actsilu-slurm-19103-20260922",
+  "author": "junbrro",
+  "url": "https://huggingface.co/junbrro/egopi-axis2-naive-full-persistent-30k-actsilu-slurm-19103-20260922",
+  "created_at": "2026-09-23T00:42:32.000Z",
+  "updated_at": "2026-09-23T00:45:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6912902976,
+  "parameters_human": "6.91B",
+  "storage_bytes": 13825905504,
+  "storage_human": "13.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fazer o download e instalar o Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Instalar o Chrome off-line Se você tiver problemas para baixar o Chrome no seu computador Windows, use o link alternativo para …"
+    },
+    {
+      "title": "Google Chrome'u indirme ve yükleme",
+      "url": "https://support.google.com/chrome/answer/95346?hl=tr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome'u çevrimdışı yükleme Chrome'u Windows bilgisayarınıza indirirken sorun yaşarsanız alternatif bağlantıyı kullanarak farklı bir …"
+    },
+    {
+      "title": "国内普通用户怎样下载到 Chrome？ - 知乎",
+      "url": "https://www.zhihu.com/question/37455757",
+      "snippet": "推荐用户下载浏览器时怎样才能使普通被墙用户下载到 Chrome？当然百度软件什么的绝不考虑。"
+    },
+    {
+      "title": "公需课怎么能快速完成学时啊？拖进度条没用? - 知乎",
+      "url": "https://www.zhihu.com/question/335062028",
+      "snippet": "1、首先需要下载并安装tampermonkey插件，中文名为“篡改猴”，官网为“ Home | Tampermonkey ”。 2、浏览器尽量使用chrome或者 …"
+    },
+    {
+      "title": "تنزيل Chrome - مساعدة متصفح Google Chrome",
+      "url": "https://support.google.com/chrome/answer/16738344?hl=ar",
+      "snippet": "لاستخدام متصفّح Chrome على نظام التشغيل Windows مع معالج Intel أو معالج ARM، ستحتاج إلى ما يلي: معالج Intel: نظام التشغيل Windows 10 والإصدارات الأحدث معالِج …"
+    }
+  ]
+}
