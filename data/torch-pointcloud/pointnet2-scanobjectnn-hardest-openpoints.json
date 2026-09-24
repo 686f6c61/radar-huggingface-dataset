@@ -5,7 +5,7 @@
   "author": "torch-pointcloud",
   "url": "https://huggingface.co/torch-pointcloud/pointnet2.scanobjectnn-hardest.openpoints",
   "created_at": "2026-08-28T18:17:39.000Z",
-  "updated_at": "2026-09-23T17:14:08.000Z",
+  "updated_at": "2026-09-23T18:17:19.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 1476175,
   "parameters_human": "1.5M",
-  "storage_bytes": 5912924,
-  "storage_human": "6 MB",
+  "storage_bytes": 11826264,
+  "storage_human": "12 MB",
   "base_model": null,
   "formats": [
     "safetensors"

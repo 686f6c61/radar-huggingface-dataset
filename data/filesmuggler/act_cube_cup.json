@@ -5,7 +5,7 @@
   "author": "filesmuggler",
   "url": "https://huggingface.co/filesmuggler/act_cube_cup",
   "created_at": "2026-09-11T22:42:56.000Z",
-  "updated_at": "2026-09-11T22:43:10.000Z",
+  "updated_at": "2026-09-23T23:09:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -16,7 +16,7 @@
     "safetensors",
     "robotics",
     "act",
-    "dataset:filesmuggler/experiment-cube-cup-100-l_diagonal-full",
+    "dataset:filesmuggler/experiment-cube-cup-diagonal-merged-250",
     "arxiv:2304.13705",
     "license:apache-2.0",
     "region:us"
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 51668614,
   "parameters_human": "51.7M",
-  "storage_bytes": 206714848,
-  "storage_human": "207 MB",
+  "storage_bytes": 413429696,
+  "storage_human": "413 MB",
   "base_model": null,
   "formats": [
     "safetensors"

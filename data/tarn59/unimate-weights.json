@@ -5,7 +5,7 @@
   "author": "tarn59",
   "url": "https://huggingface.co/tarn59/UniMate-Weights",
   "created_at": "2026-09-19T13:34:28.000Z",
-  "updated_at": "2026-09-19T17:30:28.000Z",
+  "updated_at": "2026-09-24T03:05:30.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-3d",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 74077328,
   "parameters_human": "74.1M",
-  "storage_bytes": 1779807369,
-  "storage_human": "1.8 GB",
+  "storage_bytes": 3559882666,
+  "storage_human": "3.6 GB",
   "base_model": "none",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "wepiqx",
   "url": "https://huggingface.co/wepiqx/MERNIK",
   "created_at": "2026-09-12T08:49:29.000Z",
-  "updated_at": "2026-09-22T21:20:03.000Z",
+  "updated_at": "2026-09-23T21:01:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,20 +14,10 @@
     "en"
   ],
   "tags": [
-    "quantization",
-    "gguf",
-    "llama-cpp",
-    "imatrix",
-    "hybrid-quantization",
-    "mernik",
-    "humaneval",
-    "en",
-    "base_model:wepiqx/ASHQ1",
-    "base_model:finetune:wepiqx/ASHQ1",
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 2,
+  "likes": 3,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
@@ -35,9 +25,7 @@
   "storage_bytes": 163792,
   "storage_human": "163792 B",
   "base_model": "wepiqx/ASHQ1",
-  "formats": [
-    "gguf"
-  ],
+  "formats": [],
   "is_conversational": false,
   "gated": false,
   "removed": false,

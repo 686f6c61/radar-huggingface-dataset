@@ -5,7 +5,7 @@
   "author": "nvidia",
   "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
   "created_at": "2026-09-01T13:16:57.000Z",
-  "updated_at": "2026-09-23T17:09:56.000Z",
+  "updated_at": "2026-09-24T05:52:51.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "voice-activity-detection",
@@ -14,6 +14,7 @@
   "tags": [
     "nemo",
     "safetensors",
+    "gguf",
     "nemotron3_diarization",
     "audio-frame-classification",
     "speaker-diarization",
@@ -29,15 +30,16 @@
     "license:openmdw-1.1",
     "region:us"
   ],
-  "likes": 143,
+  "likes": 178,
   "downloads_30d": 27,
   "trending_score": 139,
   "parameters": 99226504,
   "parameters_human": "99.2M",
-  "storage_bytes": 1009945563,
-  "storage_human": "1.0 GB",
+  "storage_bytes": 1116957691,
+  "storage_human": "1.1 GB",
   "base_model": null,
   "formats": [
+    "gguf",
     "safetensors"
   ],
   "is_conversational": false,

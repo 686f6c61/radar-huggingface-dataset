@@ -5,7 +5,7 @@
   "author": "prereasoner",
   "url": "https://huggingface.co/prereasoner/prereasoner-weights",
   "created_at": "2026-07-23T07:01:11.000Z",
-  "updated_at": "2026-09-03T10:33:21.000Z",
+  "updated_at": "2026-09-23T13:45:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "table-question-answering",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 91315957,
-  "storage_human": "91 MB",
+  "storage_bytes": 99991965,
+  "storage_human": "100 MB",
   "base_model": "Qwen/Qwen2.5-0.5B",
   "formats": [
     "safetensors"

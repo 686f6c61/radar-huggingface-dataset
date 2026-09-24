@@ -5,7 +5,7 @@
   "author": "convaiinnovations",
   "url": "https://huggingface.co/convaiinnovations/laya",
   "created_at": "2026-09-18T05:05:55.000Z",
-  "updated_at": "2026-09-20T01:43:36.000Z",
+  "updated_at": "2026-09-24T04:14:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -30,7 +30,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 3142,
+  "likes": 3150,
   "downloads_30d": 0,
   "trending_score": 3005,
   "parameters": 421293830,

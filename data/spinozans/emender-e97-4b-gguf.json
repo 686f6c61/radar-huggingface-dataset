@@ -5,7 +5,7 @@
   "author": "spinozans",
   "url": "https://huggingface.co/spinozans/emender-e97-4b-gguf",
   "created_at": "2026-09-19T21:51:06.000Z",
-  "updated_at": "2026-09-19T21:57:32.000Z",
+  "updated_at": "2026-09-23T16:34:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 4045972080,
   "parameters_human": "4.05B",
-  "storage_bytes": 43122255264,
-  "storage_human": "43.1 GB",
+  "storage_bytes": 47990276288,
+  "storage_human": "48.0 GB",
   "base_model": null,
   "formats": [
     "gguf"

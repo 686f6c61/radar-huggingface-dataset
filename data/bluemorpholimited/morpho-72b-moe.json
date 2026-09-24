@@ -5,7 +5,7 @@
   "author": "bluemorpholimited",
   "url": "https://huggingface.co/bluemorpholimited/Morpho-72B-MoE",
   "created_at": "2026-09-15T09:35:17.000Z",
-  "updated_at": "2026-09-22T17:38:02.000Z",
+  "updated_at": "2026-09-24T03:38:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

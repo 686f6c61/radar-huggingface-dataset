@@ -5,7 +5,7 @@
   "author": "DavidAU",
   "url": "https://huggingface.co/DavidAU/LFM2.5-2.6B-Qwen3.8-Super-Thinker",
   "created_at": "2026-09-17T01:18:13.000Z",
-  "updated_at": "2026-09-17T09:09:23.000Z",
+  "updated_at": "2026-09-24T04:22:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

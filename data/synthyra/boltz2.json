@@ -5,7 +5,7 @@
   "author": "Synthyra",
   "url": "https://huggingface.co/Synthyra/Boltz2",
   "created_at": "2026-02-12T18:01:14.000Z",
-  "updated_at": "2026-09-22T15:56:00.000Z",
+  "updated_at": "2026-09-23T17:48:51.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 335,
+  "downloads_30d": 359,
   "trending_score": 0,
   "parameters": 520636223,
   "parameters_human": "520.6M",

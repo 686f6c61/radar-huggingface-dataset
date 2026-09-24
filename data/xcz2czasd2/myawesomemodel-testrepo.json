@@ -4,8 +4,8 @@
   "slug": "xcz2czasd2-myawesomemodel-testrepo",
   "author": "xcz2czasd2",
   "url": "https://huggingface.co/xcz2czasd2/MyAwesomeModel-TestRepo",
-  "created_at": "2026-09-17T20:49:10.000Z",
-  "updated_at": "2026-09-17T20:49:16.000Z",
+  "created_at": "2026-09-23T17:45:58.000Z",
+  "updated_at": "2026-09-23T17:46:05.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-21T02:58:40.273Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

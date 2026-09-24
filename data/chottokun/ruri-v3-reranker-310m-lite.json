@@ -5,7 +5,7 @@
   "author": "Chottokun",
   "url": "https://huggingface.co/Chottokun/ruri-v3-reranker-310m-lite",
   "created_at": "2026-09-19T11:02:52.000Z",
-  "updated_at": "2026-09-19T12:16:48.000Z",
+  "updated_at": "2026-09-24T01:47:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

@@ -5,7 +5,7 @@
   "author": "netsrik",
   "url": "https://huggingface.co/netsrik/deepj-tinystories-deepseek",
   "created_at": "2026-09-18T22:49:27.000Z",
-  "updated_at": "2026-09-19T14:28:00.000Z",
+  "updated_at": "2026-09-24T01:28:30.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 227,
+  "downloads_30d": 230,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

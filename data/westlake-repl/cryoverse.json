@@ -5,7 +5,7 @@
   "author": "westlake-repl",
   "url": "https://huggingface.co/westlake-repl/cryoVERSE",
   "created_at": "2026-09-16T12:05:22.000Z",
-  "updated_at": "2026-09-21T03:23:06.000Z",
+  "updated_at": "2026-09-23T11:37:33.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2600059140,
-  "storage_human": "2.6 GB",
+  "storage_bytes": 2953652932,
+  "storage_human": "3.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

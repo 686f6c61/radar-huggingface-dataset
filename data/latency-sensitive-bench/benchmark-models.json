@@ -5,7 +5,7 @@
   "author": "latency-sensitive-bench",
   "url": "https://huggingface.co/latency-sensitive-bench/benchmark-models",
   "created_at": "2026-09-03T14:28:45.000Z",
-  "updated_at": "2026-09-23T05:40:25.000Z",
+  "updated_at": "2026-09-24T06:09:47.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 892105203858,
-  "storage_human": "892.1 GB",
+  "storage_bytes": 1127837014405,
+  "storage_human": "1127.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

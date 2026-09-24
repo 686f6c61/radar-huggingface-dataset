@@ -5,7 +5,7 @@
   "author": "1jamesthompson1",
   "url": "https://huggingface.co/1jamesthompson1/Qwen3.8-27B-nz-wvs-first_token_distribution-overall",
   "created_at": "2026-08-22T09:32:25.000Z",
-  "updated_at": "2026-08-22T09:32:41.000Z",
+  "updated_at": "2026-09-23T09:06:42.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 31,
+  "downloads_30d": 44,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3845710578,
-  "storage_human": "3.8 GB",
+  "storage_bytes": 7671431831,
+  "storage_human": "7.7 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "zhijieq",
   "url": "https://huggingface.co/zhijieq/End2Race",
   "created_at": "2026-09-18T05:06:58.000Z",
-  "updated_at": "2026-09-21T22:09:52.000Z",
+  "updated_at": "2026-09-23T05:13:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 161,
+  "downloads_30d": 171,
   "trending_score": 0,
   "parameters": 850556,
   "parameters_human": "850556",

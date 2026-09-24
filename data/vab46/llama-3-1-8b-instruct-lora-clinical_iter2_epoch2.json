@@ -5,7 +5,7 @@
   "author": "vab46",
   "url": "https://huggingface.co/vab46/llama-3.1-8b-instruct-lora-clinical_iter2_epoch2",
   "created_at": "2026-09-15T19:28:07.000Z",
-  "updated_at": "2026-09-16T15:28:30.000Z",
+  "updated_at": "2026-09-24T04:19:25.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -13,7 +13,6 @@
   "languages": [],
   "tags": [
     "safetensors",
-    "dataset:vab46/Clinical_trials_anchor-contextORpositive-ground-truth_LLM_LORA-junk_handled_ft",
     "region:us"
   ],
   "likes": 1,
@@ -21,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 270799392,
-  "storage_human": "271 MB",
+  "storage_bytes": 525548210,
+  "storage_human": "526 MB",
   "base_model": null,
   "formats": [
     "safetensors"

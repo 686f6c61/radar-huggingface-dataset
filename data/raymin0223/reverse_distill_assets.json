@@ -5,7 +5,7 @@
   "author": "raymin0223",
   "url": "https://huggingface.co/raymin0223/reverse_distill_assets",
   "created_at": "2026-07-16T12:02:33.000Z",
-  "updated_at": "2026-09-23T08:39:35.000Z",
+  "updated_at": "2026-09-23T19:18:15.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 9152899596575,
-  "storage_human": "9152.9 GB",
+  "storage_bytes": 9948962061249,
+  "storage_human": "9949.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

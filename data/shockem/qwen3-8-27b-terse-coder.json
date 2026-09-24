@@ -5,7 +5,7 @@
   "author": "Shockem",
   "url": "https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder",
   "created_at": "2026-09-18T20:43:46.000Z",
-  "updated_at": "2026-09-22T22:36:17.000Z",
+  "updated_at": "2026-09-23T21:41:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 48,
+  "downloads_30d": 71,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",

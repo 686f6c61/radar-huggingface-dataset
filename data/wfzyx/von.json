@@ -5,7 +5,7 @@
   "author": "wfzyx",
   "url": "https://huggingface.co/wfzyx/von",
   "created_at": "2026-09-19T15:19:01.000Z",
-  "updated_at": "2026-09-22T16:07:17.000Z",
+  "updated_at": "2026-09-24T01:34:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -33,10 +33,10 @@
   "likes": 39,
   "downloads_30d": 17644,
   "trending_score": 38,
-  "parameters": 395834371,
-  "parameters_human": "395.8M",
-  "storage_bytes": 7910236693,
-  "storage_human": "7.9 GB",
+  "parameters": 394781696,
+  "parameters_human": "394.8M",
+  "storage_bytes": 11070696840,
+  "storage_human": "11.1 GB",
   "base_model": "answerdotai/ModernBERT-large",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "BoldingBuilds",
   "url": "https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-PQ2_0-MTP-GGUF",
   "created_at": "2026-09-18T16:09:35.000Z",
-  "updated_at": "2026-09-18T23:06:57.000Z",
+  "updated_at": "2026-09-23T20:45:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

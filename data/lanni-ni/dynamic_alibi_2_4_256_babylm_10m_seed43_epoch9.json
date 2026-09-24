@@ -5,7 +5,7 @@
   "author": "Lanni-ni",
   "url": "https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch9",
   "created_at": "2026-09-06T02:45:34.000Z",
-  "updated_at": "2026-09-21T18:34:39.000Z",
+  "updated_at": "2026-09-24T01:21:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -14,7 +14,7 @@
   "tags": [
     "transformers",
     "safetensors",
-    "transformer",
+    "dynamic_alibi",
     "text-generation",
     "custom_code",
     "arxiv:1910.09700",

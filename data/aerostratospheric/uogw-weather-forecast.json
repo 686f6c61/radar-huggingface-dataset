@@ -5,7 +5,7 @@
   "author": "aerostratospheric",
   "url": "https://huggingface.co/aerostratospheric/uogw-weather-forecast",
   "created_at": "2026-09-18T15:43:55.000Z",
-  "updated_at": "2026-09-18T15:43:59.000Z",
+  "updated_at": "2026-09-23T18:35:56.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "tabular-regression",
@@ -29,6 +29,7 @@
     "tabular-regression",
     "en",
     "dataset:aerostratospheric/uogw",
+    "dataset:aerostratospheric/casey-openmeteo-hourly",
     "license:cc-by-4.0",
     "region:us"
   ],

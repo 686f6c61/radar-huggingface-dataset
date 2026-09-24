@@ -5,7 +5,7 @@
   "author": "sandeep123",
   "url": "https://huggingface.co/sandeep123/stride-qwen3-4b-stabilized-2048-local_positive-alpha05-20260917",
   "created_at": "2026-09-17T12:15:10.000Z",
-  "updated_at": "2026-09-23T03:03:00.000Z",
+  "updated_at": "2026-09-23T04:13:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 27084400551,
+  "storage_bytes": 27099384352,
   "storage_human": "27.1 GB",
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [

@@ -5,8 +5,8 @@
   "author": "Alimalas",
   "url": "https://huggingface.co/Alimalas/munajjam-onnx-models",
   "created_at": "2026-09-19T15:06:42.000Z",
-  "updated_at": "2026-09-19T15:07:05.000Z",
-  "license": "apache-2.0",
+  "updated_at": "2026-09-24T00:59:13.000Z",
+  "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
   "library": null,
@@ -14,15 +14,14 @@
     "ar"
   ],
   "tags": [
+    "onnx",
     "quran",
     "audio-alignment",
-    "forced-alignment",
-    "onnx",
     "speech-recognition",
     "tajweed",
     "automatic-speech-recognition",
     "ar",
-    "license:apache-2.0",
+    "license:mit",
     "region:us"
   ],
   "likes": 0,
@@ -30,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 3849371219,
+  "storage_human": "3.8 GB",
   "base_model": null,
   "formats": [
     "onnx"
