@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hqfang/groot-so100_101",
+  "slug": "hqfang-groot-so100_101",
+  "author": "hqfang",
+  "url": "https://huggingface.co/hqfang/groot-so100_101",
+  "created_at": "2026-09-23T23:53:09.000Z",
+  "updated_at": "2026-09-23T23:54:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "so100",
+    "so101",
+    "dataset:allenai/MolmoAct2-SO100_101-Dataset",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12587639817,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - TheRobotStudio/SO-ARM100: Standard Open Arm 100",
+      "url": "https://github.com/TheRobotStudio/SO-ARM100",
+      "snippet": "The SO‑101 is the next‑generation version of the SO‑100 robot arm, originally designed by the RobotStudio in collaboration with Hugging Face. It has improved wiring, is easier to assemble (no gear removal) and uses updated motors for the leader arm. These arms are designed to work seamlessly with the open‑source 🤗 LeRobot library. Join our community on Discord to collaborate on both ..."
+    },
+    {
+      "title": "H2Ozone/groot_so101_aug · Hugging Face",
+      "url": "https://huggingface.co/H2Ozone/groot_so101_aug",
+      "snippet": "Instructions to use H2Ozone/groot_so101_aug with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use H2Ozone/groot_so101_aug with LeRobot: Notebooks Google Colab Kaggle Model Card for groot How to Get Started with the Model Train from scratch Evaluate the policy/run ..."
+    },
+    {
+      "title": "Pushpakcc/gr00t-so100_dualcam-finetuned · Hugging Face",
+      "url": "https://huggingface.co/Pushpakcc/gr00t-so100_dualcam-finetuned",
+      "snippet": "This is a finetuned version of NVIDIA&#x27;s GR00T-N1.5-3B foundation model, specifically adapted for SO-101 robot arm table cleanup tasks. The model has been trained on a custom dataset of 80 episodes (47,513 frames) demonstrating table cleanup behaviors using dual-camera observations."
+    },
+    {
+      "title": "Simulation Models | TheRobotStudio/SO-ARM100 | DeepWiki",
+      "url": "https://deepwiki.com/TheRobotStudio/SO-ARM100/4.2-simulation-models",
+      "snippet": "Simulation Models Relevant source files This page provides an overview of the virtual robot models available for the SO-ARM100 robot system. The repository includes both URDF and MuJoCo (MJCF) format models to support different simulation, visualization, and AI control workflows."
+    },
+    {
+      "title": "TheRobotStudio/SO-ARM100 | DeepWiki",
+      "url": "https://deepwiki.com/TheRobotStudio/SO-ARM100",
+      "snippet": "Overview Relevant source files Purpose and Scope This document provides a high-level introduction to the SO-ARM100 repository, which contains complete design files, manufacturing resources, and integration tools for building low-cost robotic arms for AI research and teleoperation. The repository supports two robot variants: the SO-100 (original 5-DOF design, deprecated) and the SO-101 (current ..."
+    }
+  ]
+}

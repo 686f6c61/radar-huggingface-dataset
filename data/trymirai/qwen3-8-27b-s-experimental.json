@@ -5,7 +5,7 @@
   "author": "trymirai",
   "url": "https://huggingface.co/trymirai/Qwen3.8-27B-S-experimental",
   "created_at": "2026-09-22T14:57:01.000Z",
-  "updated_at": "2026-09-22T23:33:26.000Z",
+  "updated_at": "2026-09-23T17:42:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,7 +14,7 @@
   "tags": [
     "safetensors",
     "uzu",
-    "lalamo",
+    "vllm",
     "mirai",
     "2-bit",
     "experimental",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 8313376355,
   "parameters_human": "8.31B",
-  "storage_bytes": 12154743035,
-  "storage_human": "12.2 GB",
+  "storage_bytes": 21471597103,
+  "storage_human": "21.5 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

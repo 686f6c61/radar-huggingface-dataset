@@ -5,7 +5,7 @@
   "author": "chaoliangUNSW",
   "url": "https://huggingface.co/chaoliangUNSW/MacJev-322M-4K-Laya-GGUF",
   "created_at": "2026-09-23T01:02:04.000Z",
-  "updated_at": "2026-09-23T01:11:36.000Z",
+  "updated_at": "2026-09-23T22:16:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -35,7 +35,7 @@
     "feature-extraction"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 36,
   "trending_score": 0,
   "parameters": 306939648,
   "parameters_human": "306.9M",

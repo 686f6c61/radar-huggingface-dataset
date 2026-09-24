@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "b-rosel/Minimax_h3_latent_Upscaler",
+  "slug": "b-rosel-minimax_h3_latent_upscaler",
+  "author": "b-rosel",
+  "url": "https://huggingface.co/b-rosel/Minimax_h3_latent_Upscaler",
+  "created_at": "2026-09-23T22:18:41.000Z",
+  "updated_at": "2026-09-23T22:18:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "latent_upscaler",
+    "latent-upscaler",
+    "latent-space-upscaling",
+    "video-super-resolution",
+    "super-resolution",
+    "comfyui",
+    "safetensors",
+    "pytorch",
+    "3d-convolution",
+    "temporal-convolution",
+    "latent-diffusion",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2771302165,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "B - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/B",
+      "snippet": "B (minuscule: b) is the second letter of the Latin alphabet, used in the modern English alphabet, the alphabets of other western …Read more"
+    },
+    {
+      "title": "B (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/B_(lettre)",
+      "snippet": "La graphie de la lettre b minuscule moderne provient de la fin de l'Empire romain, lorsque les scribes commencèrent à omettre la …Read more"
+    },
+    {
+      "title": "B&B HOTELS : réservez un hôtel en France et en Europe | Site web …",
+      "url": "https://www.hotel-bb.com/fr",
+      "snippet": "Que vous organisiez des vacances en famille, un week-end romantique, un voyage d’affaires ou une étape de dernière minute avant …Read more"
+    },
+    {
+      "title": "B&M",
+      "url": "https://bmstores.fr/",
+      "snippet": "Décoration, idées cadeaux, multimédia, petit électroménager, linge de maison, mobilier, mode et bien plus encore. L'enseigne B&M …Read more"
+    },
+    {
+      "title": "Hôtels à Paris au meilleur prix - B&B HOTELS",
+      "url": "https://www.hotel-bb.com/fr/ville/hotels-paris",
+      "snippet": "B&B HOTELS vous propose un vaste réseau d'hôtels à Paris et dans ses environs. Que vous cherchiez un hébergement au cœur de …Read more"
+    }
+  ]
+}

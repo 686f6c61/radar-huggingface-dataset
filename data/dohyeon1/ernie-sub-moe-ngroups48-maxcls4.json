@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dohyeon1/ERNIE-Sub-MoE-ngroups48-maxcls4",
+  "slug": "dohyeon1-ernie-sub-moe-ngroups48-maxcls4",
+  "author": "Dohyeon1",
+  "url": "https://huggingface.co/Dohyeon1/ERNIE-Sub-MoE-ngroups48-maxcls4",
+  "created_at": "2026-09-23T21:22:41.000Z",
+  "updated_at": "2026-09-23T21:30:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ernie4_5_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21825437888,
+  "parameters_human": "21.83B",
+  "storage_bytes": 43671604727,
+  "storage_human": "43.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dohyeon1/ERNIE-Sub-MoE-ngroups48-adaptive · Hugging Face",
+      "url": "https://huggingface.co/Dohyeon1/ERNIE-Sub-MoE-ngroups48-adaptive",
+      "snippet": "Dohyeon1 / ERNIE-Sub-MoE-ngroups48-adaptive Like 0 Text Generation Transformers Safetensors ernie4_5_moe conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Dohyeon1/ERNIE-Sub-MoE-ngroups48-adaptive - featherless.ai",
+      "url": "https://featherless.ai/models/Dohyeon1/ERNIE-Sub-MoE-ngroups48-adaptive",
+      "snippet": "Dohyeon1/ERNIE-Sub-MoE-ngroups48-adaptive is a 21 billion parameter Mixture-of-Experts (MoE) language model developed by Dohyeon1, featuring an adaptive sub-MoE architecture. This model is designed for general language understanding and generation tasks, leveraging its MoE structure for potentially efficient inference. With a substantial context length of 32768 tokens, it is suitable for ..."
+    },
+    {
+      "title": "Dohyeon1/ERNIE-M-SMoE-ngroups48 · Hugging Face",
+      "url": "https://huggingface.co/Dohyeon1/ERNIE-M-SMoE-ngroups48",
+      "snippet": "Dohyeon1 / ERNIE-M-SMoE-ngroups48 Like 0 Text Generation Transformers Safetensors ernie4_5_moe conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ERNIE-Sub-MoE-ngroups48-adaptive - FriendliAI",
+      "url": "https://friendli.ai/models/Dohyeon1/ERNIE-Sub-MoE-ngroups48-adaptive",
+      "snippet": "Deploy ERNIE-Sub-MoE-ngroups48-adaptive with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Dohyeon1/OLMoE-Sub-MoE-ngroups48 · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/Dohyeon1/OLMoE-Sub-MoE-ngroups48",
+      "snippet": "Dohyeon1 / OLMoE-Sub-MoE-ngroups48 like 0 Text Generation Transformers Safetensors olmoe conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

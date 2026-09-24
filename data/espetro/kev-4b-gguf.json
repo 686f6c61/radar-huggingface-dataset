@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "espetro/kev-4b-gguf",
+  "slug": "espetro-kev-4b-gguf",
+  "author": "espetro",
+  "url": "https://huggingface.co/espetro/kev-4b-gguf",
+  "created_at": "2026-09-23T22:27:17.000Z",
+  "updated_at": "2026-09-23T22:27:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "kev",
+    "systemone",
+    "decision-model",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4207062528,
+  "parameters_human": "4.21B",
+  "storage_bytes": 4487648224,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DreamBlooms/kev-4b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/DreamBlooms/kev-4b-GGUF",
+      "snippet": "DreamBlooms / kev-4b-GGUF Like 0 Follow DreamBlooms 4 Text Classification GGUF 10 datasets English llama.cpp decision-model calibration lora multiple-choice typesafe qwen3.5 Eval Results (legacy) conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "taigrr/kev-4b-gguf · Discussions - Hugging Face",
+      "url": "https://huggingface.co/taigrr/kev-4b-gguf/discussions",
+      "snippet": "Instructions to use taigrr/kev-4b-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use taigrr/kev-4b-gguf with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "This repository provides an automated CI/CD process to convert, test and deploy IBM Granite models, in safetensor format, from the ibm-granite organization to IBM GGUF versions (with various supported quantizations) within model repositories respectively named with the -GGUF extension. These GGUF model repositories are also included to the Granite Quantized Model collection for convenience."
+    },
+    {
+      "title": "kev/docs/model-cards/kev-4b.md at main · jaredpalmer/kev",
+      "url": "https://github.com/jaredpalmer/kev/blob/main/docs/model-cards/kev-4b.md",
+      "snippet": "Kev-4B Kev-4B is a decision model: one document (the state) and a set of typed questions in, a probability distribution per question out, in one forward pass. No text generation. It is a LoRA adapter (r=16, 33.8M trainable parameters) plus a pointer head on Qwen/Qwen3.5-4B-Base (revision 1001bb4d), serving TypeSafe&#x27;s public /v1/systemone contract."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Dennis1315/ward-ops-14b",
+  "slug": "dennis1315-ward-ops-14b",
+  "author": "Dennis1315",
+  "url": "https://huggingface.co/Dennis1315/ward-ops-14b",
+  "created_at": "2026-09-23T22:34:01.000Z",
+  "updated_at": "2026-09-23T22:47:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dennis1315 (Rojas) - Hugging Face",
+      "url": "https://huggingface.co/Dennis1315",
+      "snippet": "Recent Activity published a modelabout 2 hours ago Dennis1315/cypher-v8-upload-test updated a modelabout 2 hours ago Dennis1315/cypher-test-v8 published a modelabout 2 hours ago Dennis1315/cypher-test-v8 View all activity"
+    },
+    {
+      "title": "Dennis1315 (Rojas) - Hugging Face",
+      "url": "https://huggingface.co/Dennis1315/models",
+      "snippet": "Dennis1315&#x27;s models2 Sort: Recently updated Dennis1315/cypher-v8-upload-test Updated about 5 hours ago"
+    },
+    {
+      "title": "Phi-4: Private-Deploy 14B Model for Ops AI & Custom Systems",
+      "url": "https://llm.co/llms/phi-4",
+      "snippet": "Open-Weight LLM · Private & Custom AI phi-4 14B dense transformer for reasoning, math, and code—sized for latency-bound ops automation and private deployment without sacrificing capability. Phi-4 is Microsoft&#x27;s 14B parameter model trained on 9.8T tokens of synthetic, filtered public, and acquired academic data, optimized for instruction-following and reasoning. For ops teams, it&#x27;s a self ..."
+    },
+    {
+      "title": "14B: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/14b-causallm",
+      "snippet": "Overview 14B is a 14-billion-parameter causal language model built by CausalLM that uses LLaMA 2&#x27;s architecture with identical attention calculations and no additional RoPE scaling. The model loads directly through Hugging Face&#x27;s transformers library via AutoModelForCausalLM and AutoTokenizer without requiring external code, and supports LLaMA 2 compatibility across quantization formats (GGUF ..."
+    },
+    {
+      "title": "Helios AI: Real-Time 14B Video Model That Changed Everything",
+      "url": "https://gaga.art/blog/helios/",
+      "snippet": "Helios is the first 14B AI video model running at 19.5 FPS on one H100 — generating minute-long videos in real time. Free to use. Full guide inside."
+    }
+  ]
+}

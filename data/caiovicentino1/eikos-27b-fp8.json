@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "caiovicentino1/Eikos-27B-FP8",
+  "slug": "caiovicentino1-eikos-27b-fp8",
+  "author": "caiovicentino1",
+  "url": "https://huggingface.co/caiovicentino1/Eikos-27B-FP8",
+  "created_at": "2026-09-23T23:56:11.000Z",
+  "updated_at": "2026-09-24T00:08:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "decision-making",
+    "calibration",
+    "finance",
+    "trading",
+    "trade-finance",
+    "typed-decisions",
+    "compressed-tensors",
+    "vllm",
+    "fp8",
+    "text-classification",
+    "base_model:caiovicentino1/Eikos-27B",
+    "base_model:quantized:caiovicentino1/Eikos-27B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 31240318189,
+  "storage_human": "31.2 GB",
+  "base_model": "caiovicentino1/Eikos-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "caiovicentino1 (caio vicentino) - Hugging Face",
+      "url": "https://huggingface.co/caiovicentino1/models",
+      "snippet": "User profile of caio vicentino on Hugging Face"
+    },
+    {
+      "title": "caiovicentino1 (caio vicentino) - Hugging Face",
+      "url": "https://huggingface.co/caiovicentino1/spaces",
+      "snippet": "AI & ML interests ... Recent Activity new activity about 14 hours ago ... updated a model about 14 hours ago ... updated a collection about 15 hours ago"
+    },
+    {
+      "title": "Fp8 AI Models (37) | Civitai",
+      "url": "https://civitai.com/tag/fp8",
+      "snippet": "Browse 37 AI models tagged \"Fp8\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "CV.YH (@0xCVYH) / X",
+      "url": "https://x.com/0xCVYH",
+      "snippet": "🚀 Meet Qwen3.8-Omni-Flash, Qwen&#x27;s first omni-modal model built around agentic capabilities! Native audio-video understanding, reasoning, and tool use come together in one model: understand the content, plan the task, execute with tools, and deliver the result."
+    },
+    {
+      "title": "Qwopus3.5 27B V3 HLWQ Q5 by caiovicentino1 - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/caiovicentino1%2FQwopus3.5-27B-v3-HLWQ-Q5,71mywc3a0eP2YIzmh81jGB",
+      "snippet": "Qwopus3.5 27B V3 HLWQ Q5 is an open-source 27b LLM by caiovicentino1. VRAM 16.2GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

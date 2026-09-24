@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "xingewh/Qwen-Image-2.1-viggle-turbo-v0.2-5step-lora-r256_comfy",
+  "slug": "xingewh-qwen-image-2-1-viggle-turbo-v0-2-5step-lora-r256_comfy",
+  "author": "xingewh",
+  "url": "https://huggingface.co/xingewh/Qwen-Image-2.1-viggle-turbo-v0.2-5step-lora-r256_comfy",
+  "created_at": "2026-09-24T00:34:16.000Z",
+  "updated_at": "2026-09-24T00:34:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "comment programmer une nouvelle telecommande d alarme",
+      "url": "https://forum.somfy.fr/questions/640664-programmer-nouvelle-telecommande-alarme",
+      "snippet": "pour alarme protewion 200 Bonsoir, si vous avez déjà une télécommande, vous faites un appui sur la touche off maintenu jusqu au …Read more"
+    },
+    {
+      "title": "Compatibilité protexiom et tahoma switch - Avec Réponse (s)",
+      "url": "https://forum.somfy.fr/questions/2822101-compatibilite-protexiom-tahoma-switch",
+      "snippet": "Bonjour Pierre Pour votre information, la Protexiom et ses détecteurs RTD sont est en fin de vie. C'est pour cela que la possibilité …"
+    },
+    {
+      "title": "Wie heißt du? - LEO: Übersetzung im Französisch ⇔ Deutsch …",
+      "url": "https://dict.leo.org/franz%C3%B6sisch-deutsch/Wie%20hei%C3%9Ft%20du%3F",
+      "snippet": "Lernen Sie die Übersetzung für 'Wie heißt du?' in LEOs ­Französisch ⇔ Deutsch­ Wörterbuch. Mit Flexionstabellen der verschiedenen …"
+    },
+    {
+      "title": "voreilig - LEO: Übersetzung im Französisch ⇔ Deutsch Wörterbuch",
+      "url": "https://dict.leo.org/franz%C3%B6sisch-deutsch/voreilig",
+      "snippet": "Lernen Sie die Übersetzung für 'voreilig' in LEOs ­Französisch ⇔ Deutsch­ Wörterbuch. Mit Flexionstabellen der verschiedenen Fälle …"
+    },
+    {
+      "title": "Perte de liaison sirène extérieur : que faire ? - Avec Réponse (s)",
+      "url": "https://forum.somfy.fr/questions/2162256-perte-liaison-sirene-exterieur-faire",
+      "snippet": "Bonjour Severine, Un problème de liaison peut avoir 3 significations : L'équipement n'a plus de piles du tout de piles ce qui fait qu'il …"
+    }
+  ]
+}

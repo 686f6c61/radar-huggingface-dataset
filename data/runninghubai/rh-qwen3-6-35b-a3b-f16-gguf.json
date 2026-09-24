@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-qwen3.6-35b-a3b-f16-gguf",
+  "slug": "runninghubai-rh-qwen3-6-35b-a3b-f16-gguf",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-qwen3.6-35b-a3b-f16-gguf",
+  "created_at": "2026-09-24T01:26:04.000Z",
+  "updated_at": "2026-09-24T01:27:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "comfyui",
+    "unet-gguf",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 446571248,
+  "parameters_human": "446.6M",
+  "storage_bytes": 899657984,
+  "storage_human": "900 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aimenalwsaby/chatbro",
+  "slug": "aimenalwsaby-chatbro",
+  "author": "aimenalwsaby",
+  "url": "https://huggingface.co/aimenalwsaby/chatbro",
+  "created_at": "2026-09-23T23:57:19.000Z",
+  "updated_at": "2026-09-23T23:57:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Special right triangle - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Special_right_triangle",
+      "snippet": "Another type of special right triangle is the 30°-60°-90° triangle, which refers to any triangle with those three angle measures. …Read more"
+    },
+    {
+      "title": "Is a 3-4-5 Triangle a 30-60-90 Triangle? Key Differences",
+      "url": "https://unanswered.io/guide/is-3-4-5-triangle-30-60-90",
+      "snippet": "Feb 28, 2026 · Learn why the popular 3-4-5 right triangle is not the same as a 30-60-90 triangle. Compare side ratios, angles, and …"
+    },
+    {
+      "title": "30-60-90 Triangle - Rules, Formula, Theorem, Sides, Examples",
+      "url": "https://www.cuemath.com/geometry/30-60-90-triangle/",
+      "snippet": "A 30-60-90 triangle—pronounced \"thirty sixty ninety\"—is one such very special type of triangle indeed. In this lesson, we will explore …"
+    },
+    {
+      "title": "Special Right Triangles (video lessons, examples and solutions)",
+      "url": "https://www.onlinemathlearning.com/special-right-triangles.html",
+      "snippet": "When solving special right triangles, remember that a 30-60-90 triangle has a hypotenuse twice as long as one of the sides, and a 45 …"
+    },
+    {
+      "title": "Guide to Special Right Triangles: 30-60-90, 45-45-90, and 3-4-5",
+      "url": "https://studymathnow.com/triangle/special-right-triangles/",
+      "snippet": "These triangles simplify trigonometric calculations. Compare this with the 3-4-5 triangle: it is a Pythagorean triple, but not universally …"
+    }
+  ]
+}

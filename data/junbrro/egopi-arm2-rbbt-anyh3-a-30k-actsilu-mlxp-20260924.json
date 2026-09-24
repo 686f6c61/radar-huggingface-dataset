@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "junbrro/egopi-arm2-rbbt-anyh3-A-30k-actsilu-mlxp-20260924",
+  "slug": "junbrro-egopi-arm2-rbbt-anyh3-a-30k-actsilu-mlxp-20260924",
+  "author": "junbrro",
+  "url": "https://huggingface.co/junbrro/egopi-arm2-rbbt-anyh3-A-30k-actsilu-mlxp-20260924",
+  "created_at": "2026-09-23T19:16:31.000Z",
+  "updated_at": "2026-09-23T19:21:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6915094616,
+  "parameters_human": "6.92B",
+  "storage_bytes": 13830289320,
+  "storage_human": "13.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "junbrro/action-tokenizer-prq30-qcontinuous-v9-openarm1106-egodex1091 ...",
+      "url": "https://huggingface.co/junbrro/action-tokenizer-prq30-qcontinuous-v9-openarm1106-egodex1091-100k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "junbrro/egopi_bbtoc_robot_v5_20hz_AB_cogalign_natural_sd0_seed42_30k ...",
+      "url": "https://huggingface.co/junbrro/egopi_bbtoc_robot_v5_20hz_AB_cogalign_natural_sd0_seed42_30k_gas2_actsilu",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of people across an infinite variety of immersive, user-generated 3D worlds."
+    },
+    {
+      "title": "junbrro AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/junbrro",
+      "snippet": "Browse AI models attributed to junbrro, sourced from verified model catalogs."
+    },
+    {
+      "title": "[2603.28296] Precise predictions for trilinear Higgs couplings and ...",
+      "url": "https://arxiv.org/abs/2603.28296",
+      "snippet": "A central objective of future collider experiments is to probe the structure of the Higgs potential, which requires access to trilinear scalar couplings, in particular the self-coupling of the observed Higgs boson. While this coupling is fixed in the Standard Model (SM), it can receive sizable modifications in many Beyond the SM (BSM) scenarios, often connected to solutions of open problems ..."
+    }
+  ]
+}

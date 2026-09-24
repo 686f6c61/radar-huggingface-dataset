@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "FrancescoRivieccio28/act_so101_cube_grasp",
+  "slug": "francescorivieccio28-act_so101_cube_grasp",
+  "author": "FrancescoRivieccio28",
+  "url": "https://huggingface.co/FrancescoRivieccio28/act_so101_cube_grasp",
+  "created_at": "2026-08-25T20:08:06.000Z",
+  "updated_at": "2026-09-23T23:34:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:FrancescoRivieccio28/lerobot_so101_cube_grasp_fixed",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 46465004272,
+  "storage_human": "46.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FrancescoRivieccio28/act_so101_cube_grasp · Hugging Face",
+      "url": "https://huggingface.co/FrancescoRivieccio28/act_so101_cube_grasp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FrancescoRivieccio28 (Francesco Rivieccio) - Hugging Face",
+      "url": "https://huggingface.co/FrancescoRivieccio28",
+      "snippet": "FrancescoRivieccio28/act_so101_cube_grasp_test Robotics • 51.7M•Updated 13 days ago• 21"
+    },
+    {
+      "title": "act_so101_cube_grasp: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-francescorivieccio28-act-so101-cube-grasp",
+      "snippet": "Model card indexed from Hugging Face for robotics. Specs: sourced from Hugging Face. Compare act_so101_cube_grasp&#x27;s parameters, context window, pricing and benc"
+    },
+    {
+      "title": "GitHub - tactino/so101-grasp-cube: Training and deploying ACT policies ...",
+      "url": "https://github.com/tactino/so101-grasp-cube",
+      "snippet": "Training and deploying ACT policies for SO-101 cube grasping: motion-planning data collection, ManiSkill-to-LeRobot conversion, then simulation and real-robot evaluation. - tactino/so101-grasp-cube"
+    },
+    {
+      "title": "GitHub - Gotham-Zolio/so101-grasp-cube",
+      "url": "https://github.com/Gotham-Zolio/so101-grasp-cube",
+      "snippet": "ACT Policy Training and Deployment Guide This guide explains how to train ACT (Action Chunking with Transformers) policies using motion planning data and deploy them in simulation and on real robots."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "Aayush9029/petal-w1",
+  "slug": "aayush9029-petal-w1",
+  "author": "Aayush9029",
+  "url": "https://huggingface.co/Aayush9029/petal-w1",
+  "created_at": "2026-09-24T01:27:06.000Z",
+  "updated_at": "2026-09-24T01:27:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "petal",
+    "dictation",
+    "speech-to-text",
+    "asr-post-processing",
+    "transcript-cleanup",
+    "text-normalization",
+    "disfluency-removal",
+    "on-device",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "model-index",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 819963631,
+  "storage_human": "820 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Dictation cleanup",
+      "dataset": "Petal cleanup held-out set (200 transcripts)",
+      "metric": "Word similarity to reference (all)",
+      "value": 0.845
+    },
+    {
+      "task": "Dictation cleanup",
+      "dataset": "Petal cleanup held-out set (200 transcripts)",
+      "metric": "Word similarity to reference (rambles, 80+ words)",
+      "value": 0.704
+    },
+    {
+      "task": "Dictation cleanup",
+      "dataset": "Petal cleanup held-out set (200 transcripts)",
+      "metric": "Replies instead of cleanup",
+      "value": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Aayush9029/petal-w1-4bit · Hugging Face",
+      "url": "https://huggingface.co/Aayush9029/petal-w1-4bit",
+      "snippet": "Aayush9029 / petal-w1-4bit Like 0 Text Generation MLX Safetensors English qwen3_5 petal dictation speech-to-text asr-post-processing transcript-cleanup text-normalization disfluency-removal on-device conversational Eval Results (legacy) 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new ..."
+    },
+    {
+      "title": "Petal - a Aayush9029 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Aayush9029/petal",
+      "snippet": "Voice transcription models for the Petal Mac app: Voxtral Mini and Cohere Transcribe conversions for Apple silicon."
+    },
+    {
+      "title": "Raycast Store: Petal - Offline Voice to Text",
+      "url": "https://www.raycast.com/Aayush9029/petal",
+      "snippet": "Petal - Offline Voice to Text Control Petal from Raycast: start/stop recording, search history, switch models, and copy the last transcription."
+    },
+    {
+      "title": "Aayush9029 (Aayush Pokharel) - Hugging Face",
+      "url": "https://huggingface.co/Aayush9029/models",
+      "snippet": "Follow https://aayush.art Aayush9029 AI & ML interests Swiftie Recent Activity updateda modelabout 1 month ago"
+    },
+    {
+      "title": "Releases · Aayush9029/petal · GitHub",
+      "url": "https://github.com/Aayush9029/petal/releases",
+      "snippet": "Petal is a native macOS menu bar app for fast, local-first audio transcription. - Releases · Aayush9029/petal"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "sbaechler/Apertus-v1.5-70B-FP8-mlx",
+  "slug": "sbaechler-apertus-v1-5-70b-fp8-mlx",
+  "author": "sbaechler",
+  "url": "https://huggingface.co/sbaechler/Apertus-v1.5-70B-FP8-mlx",
+  "created_at": "2026-09-23T20:29:22.000Z",
+  "updated_at": "2026-09-23T20:35:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "apertus1p5",
+    "apple-silicon",
+    "quantized",
+    "multimodal",
+    "multilingual",
+    "switzerland",
+    "swiss-ai",
+    "apertus",
+    "image-text-to-text",
+    "conversational",
+    "base_model:swiss-ai/Apertus-v1.5-70B",
+    "base_model:quantized:swiss-ai/Apertus-v1.5-70B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 71939902320,
+  "parameters_human": "71.94B",
+  "storage_bytes": 77153091959,
+  "storage_human": "77.2 GB",
+  "base_model": "swiss-ai/Apertus-v1.5-70B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'-Pakistani' Search - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/?k=-Pakistani",
+      "snippet": "346 -Pakistani FREE videos found on XVIDEOS for this search."
+    },
+    {
+      "title": "Short Pakistani Porn Videos: Nude TikTok XXX & Vertical Sex Reels ...",
+      "url": "https://xhamster.com/categories/pakistani/shorts",
+      "snippet": "Swipe through the most sexually satisfying Pakistani Porn TikTok reels full of nudity, hardcore sex and intimate XXX challenges. Get …"
+    },
+    {
+      "title": "Pakistan - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Pakistan",
+      "snippet": "Wikipedia page on Pakistan, covering its history, geography, culture, economy, and political system."
+    },
+    {
+      "title": "Free Pakistan Porn | PornKai.com",
+      "url": "https://pornkai.com/videos?q=pakistan",
+      "snippet": "Pakistan Porn Videos: WATCH FREE here! Болезнен анален / painful anal / کون دادن دردناک و لذت بخش و ریختن آب داخل کون و آه و ناله زیادم"
+    },
+    {
+      "title": "Pakistani village gives girls pioneering sex education class",
+      "url": "https://www.reuters.com/article/world/pakistani-village-gives-girls-pioneering-sex-education-class-idUSDEEA1O00V/",
+      "snippet": "Feb 25, 2014 · In neat rows, the Pakistani girls in white headscarves listened carefully as the teacher described the changes in their …"
+    }
+  ]
+}

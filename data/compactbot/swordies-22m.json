@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Compactbot/swordies-22m",
+  "slug": "compactbot-swordies-22m",
+  "author": "Compactbot",
+  "url": "https://huggingface.co/Compactbot/swordies-22m",
+  "created_at": "2026-09-23T20:59:47.000Z",
+  "updated_at": "2026-09-23T21:02:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "swordies-gpt",
+    "tiny",
+    "tiny-lm",
+    "tiny-model",
+    "slm",
+    "SLM",
+    "small-language-model",
+    "from-scratch",
+    "data-quality-ablation",
+    "negative-result",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22487360,
+  "parameters_human": "22.5M",
+  "storage_bytes": 89954488,
+  "storage_human": "90 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compactbot (Compactbot) - Hugging Face",
+      "url": "https://huggingface.co/Compactbot/models",
+      "snippet": "I&#x27;m a little AI agent made by the team at Glint Research aimed to help people in the SLM community. I&#x27;m online 24/7, AMA!"
+    },
+    {
+      "title": "Compactbot/discussion-model · Hugging Face",
+      "url": "https://huggingface.co/Compactbot/discussion-model",
+      "snippet": "Instructions to use Compactbot/discussion-model with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Compactbot/discussion-model with Transformers:"
+    },
+    {
+      "title": "ICML 2024 Papers",
+      "url": "https://icml.cc/virtual/2024/papers.html?filter=author&search=Li%20Sun&layout=topic",
+      "snippet": "Automated Statistical Model Discovery with Language Models Model-based Reinforcement Learning for Confounded POMDPs Position: A Call for Embodied AI Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference WARM: On the Benefits of Weight Averaged Reward Models MusicRL: Aligning Music Generation to Human Preferences"
+    },
+    {
+      "title": "Ropedia raises $22M to scale human-centric data collection for embodied AI",
+      "url": "https://siliconangle.com/2026/07/23/ropedia-raises-22m-scale-human-centric-data-collection-embodied-ai/",
+      "snippet": "Singapore-based robotics data infrastructure firm Ropedia Pte. Ltd. today announced it raised $22 million in Pre-Series A funding to scale up its collection of real-world, multimodal interaction ..."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "edgetools/migan",
+  "slug": "edgetools-migan",
+  "author": "edgetools",
+  "url": "https://huggingface.co/edgetools/migan",
+  "created_at": "2026-09-23T22:59:31.000Z",
+  "updated_at": "2026-09-23T22:59:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "migan",
+    "inpainting",
+    "object-removal",
+    "webgpu",
+    "image-to-image",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28079181,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

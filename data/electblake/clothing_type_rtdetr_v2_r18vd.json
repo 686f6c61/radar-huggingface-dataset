@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "electblake/clothing_type_rtdetr_v2_r18vd",
+  "slug": "electblake-clothing_type_rtdetr_v2_r18vd",
+  "author": "electblake",
+  "url": "https://huggingface.co/electblake/clothing_type_rtdetr_v2_r18vd",
+  "created_at": "2026-09-23T20:23:53.000Z",
+  "updated_at": "2026-09-23T20:31:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rt_detr_v2",
+    "object-detection",
+    "rt-detr-v2",
+    "clothing",
+    "base_model:PekingU/rtdetr_v2_r18vd",
+    "base_model:finetune:PekingU/rtdetr_v2_r18vd",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20114700,
+  "parameters_human": "20.1M",
+  "storage_bytes": 80524568,
+  "storage_human": "81 MB",
+  "base_model": "PekingU/rtdetr_v2_r18vd",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "Private clothing-type validation split",
+      "metric": "Validation mAP",
+      "value": 0.646
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Private clothing-type validation split",
+      "metric": "Validation mAP@50",
+      "value": 0.8411
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Private clothing-type validation split",
+      "metric": "Validation mAP@75",
+      "value": 0.7217
+    }
+  ],
+  "sources": [
+    {
+      "title": "electblake/clothing_type_classifier · Hugging Face",
+      "url": "https://huggingface.co/electblake/clothing_type_classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RT-DETRv2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/rt_detr_v2",
+      "snippet": "It is used to instantiate a Rt Detr V2 model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the PekingU/rtdetr_r18vd Configuration objects inherit from PreTrainedConfig and can be used to control the model outputs."
+    },
+    {
+      "title": "clothing_type_rtdetr_v2_model/README.md at main · mr-szgz ... - GitHub",
+      "url": "https://github.com/mr-szgz/clothing_type_rtdetr_v2_model/blob/main/README.md",
+      "snippet": "Clothing Type Detection Model Fine-tune PekingU/rtdetr_v2_r18vd on custom clothing photos and folder-derived clothing labels."
+    },
+    {
+      "title": "GitHub - lyuwenyu/RT-DETR: [CVPR 2024] Official RT-DETR (RTDETR paddle ...",
+      "url": "https://github.com/lyuwenyu/RT-DETR",
+      "snippet": "[CVPR 2024] Official RT-DETR (RTDETR paddle pytorch), Real-Time DEtection TRansformer, DETRs Beat YOLOs on Real-time Object Detection. 🔥 🔥 🔥 - lyuwenyu/RT-DETR"
+    },
+    {
+      "title": "RT-DETRv2: Improved Baseline with Bag-of-Freebies for Real-Time ...",
+      "url": "https://arxiv.org/html/2407.17140v1",
+      "snippet": "Abstract In this report, we present RT-DETRv2, an improved Real-Time DEtection TRansformer (RT-DETR). RT-DETRv2 builds upon the previous state-of-the-art real-time detector, RT-DETR, and opens up a set of bag-of-freebies for flexibility and practicality, as well as optimizing the training strategy to achieve enhanced performance. To improve the flexibility, we suggest setting a distinct number ..."
+    }
+  ]
+}

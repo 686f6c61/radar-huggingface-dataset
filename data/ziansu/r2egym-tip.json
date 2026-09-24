@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ziansu/r2egym-tip",
+  "slug": "ziansu-r2egym-tip",
+  "author": "ziansu",
+  "url": "https://huggingface.co/ziansu/r2egym-tip",
+  "created_at": "2026-09-23T22:40:49.000Z",
+  "updated_at": "2026-09-23T22:41:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "reinforcement-learning",
+    "swe-bench",
+    "r2e-gym",
+    "software-engineering-agent",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18652450254,
+  "storage_human": "18.7 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - R2E-Gym/R2E-Gym: [COLM 2025] Official repository for R2E-Gym ...",
+      "url": "https://github.com/R2E-Gym/R2E-Gym",
+      "snippet": "We present R2E-Gym, the largest procedurally curated environment for training real-world SWE-Agents. We show that R2E-Gym enables more scalable train and test-time scaling, achieving 51% on the SWE-Bench Verified benchmark, reflecting a new state-of-the-art for open-weight SWE-Agents and for first time being competitive with proprietary models such as o1 and sonnet-3.5-v2 with tools. R2E-Gym ..."
+    },
+    {
+      "title": "R2E-Gym: Procedural Environments and Hybrid Verifiers for Scaling Open ...",
+      "url": "https://arxiv.org/html/2504.07164",
+      "snippet": "Abstract Improving open-source models on real-world Swe tasks (solving GitHub issues) faces two key challenges: 1) scalable curation of execution environments to train these models, and 2) optimal scaling of test-time compute. We introduce R2E-Gym, the largest procedurally-curated executable gym environment for training real-world Swe -agents, consisting of more than 8.1 $8.1$ K tasks. R2E-Gym ..."
+    },
+    {
+      "title": "R2E-Gym (R2E-Gym) - Hugging Face",
+      "url": "https://huggingface.co/R2E-Gym",
+      "snippet": "Org profile for R2E-Gym on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "ziansu (Zian Su) - Hugging Face",
+      "url": "https://huggingface.co/ziansu",
+      "snippet": "User profile of Zian Su on Hugging Face"
+    },
+    {
+      "title": "R2E-Gym: Scaling Open-Weights SWE Agents",
+      "url": "https://r2e-gym.github.io/",
+      "snippet": "Figure 1: (Left) SWE-Gen creates executable training environments from commits using automated test generation and backtranslation. (Middle) Our hybrid approach achieves 51% success rate through complementary strengths of execution-based and execution-free verifiers. (Right) Our approach establishes a new state-of-the-art for open-weight SWE agents."
+    }
+  ]
+}

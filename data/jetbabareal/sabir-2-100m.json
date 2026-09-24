@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jetbabareal/Sabir-2-100M",
+  "slug": "jetbabareal-sabir-2-100m",
+  "author": "jetbabareal",
+  "url": "https://huggingface.co/jetbabareal/Sabir-2-100M",
+  "created_at": "2026-09-23T21:02:14.000Z",
+  "updated_at": "2026-09-23T21:02:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "deepseek_style_mla",
+    "deepseek",
+    "mla",
+    "causal-lm",
+    "turkish",
+    "transformer",
+    "slm",
+    "text-generation",
+    "tr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 113277696,
+  "parameters_human": "113.3M",
+  "storage_bytes": 453132088,
+  "storage_human": "453 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jetbabareal (Jet BABA) - Hugging Face",
+      "url": "https://huggingface.co/jetbabareal/models",
+      "snippet": "1.0B•Updated Jul 22•2 jetbabareal/OXERA Reinforcement Learning •Updated Jan 25 jetbabareal/Qwen3-6B Text Generation •6B•Updated Dec 26, 2025•9 jetbabareal/Sabir-60M Text Generation •66.2M•Updated Dec 23, 2025•29•2"
+    },
+    {
+      "title": "jetbabareal (Jet BABA) - Hugging Face",
+      "url": "https://huggingface.co/jetbabareal",
+      "snippet": "Open Source AI Text Generation • 1.0B • Apr 4 • 1.51M • 750"
+    },
+    {
+      "title": "Supra2-100M: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-supralabs-supra2-100m",
+      "snippet": "Supra2-100M AI model directory entry."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "Sketchfab",
+      "url": "https://sketchfab.com/search",
+      "snippet": "Use Sketchfab to publish, share and embed interactive 3D files. Discover and download thousands of 3D models from games, cultural heritage, architecture, design and more."
+    }
+  ]
+}

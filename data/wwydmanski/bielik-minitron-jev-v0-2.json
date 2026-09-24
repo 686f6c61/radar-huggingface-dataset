@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "wwydmanski/bielik-minitron-jev-v0.2",
+  "slug": "wwydmanski-bielik-minitron-jev-v0-2",
+  "author": "wwydmanski",
+  "url": "https://huggingface.co/wwydmanski/bielik-minitron-jev-v0.2",
+  "created_at": "2026-09-23T19:33:07.000Z",
+  "updated_at": "2026-09-23T20:06:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "any2jev",
+  "languages": [],
+  "tags": [
+    "any2jev",
+    "safetensors",
+    "system-one",
+    "decision-model",
+    "jev",
+    "calibration",
+    "lora",
+    "text-classification",
+    "base_model:speakleash/Bielik-Minitron-7B-v3.0-Instruct",
+    "base_model:adapter:speakleash/Bielik-Minitron-7B-v3.0-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1016761427,
+  "storage_human": "1.0 GB",
+  "base_model": "speakleash/Bielik-Minitron-7B-v3.0-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jev (AI model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
+      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco-based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2]"
+    },
+    {
+      "title": "wwydmanski (Witold Wydmański) - Hugging Face",
+      "url": "https://huggingface.co/wwydmanski/models",
+      "snippet": "metagenomics, machine learning, deep learning updated a bucket about 2 months ago"
+    },
+    {
+      "title": "Jev AI Community: Powered by the Jev Model",
+      "url": "https://www.jevai.org/",
+      "snippet": "Join the Jev AI community to share and explore developer use cases, prompting workflows, and structured decision-making examples powered by the Jev Model."
+    },
+    {
+      "title": "wwydmanski (Witold Wydmański) - Hugging Face",
+      "url": "https://huggingface.co/wwydmanski",
+      "snippet": "Meeting Summarizer models 1 wwydmanski/Mixtral-8x22B-Instruct-v0.1-awq Updated Apr 18 • 1"
+    },
+    {
+      "title": "Strona główna • BIELIK.AI",
+      "url": "https://bielik.ai/",
+      "snippet": "Bielik.AI - europejska rodzina otwartych modeli językowych, stworzona w Polsce. Otwarte, bezpłatne i bezpieczne. Rozmawiaj z Bielikiem,eksperymentuj i buduj własne rozwiązania Korzystaj z Bielika Zainstaluj Bielika lokalnie Zaufali nam: Czym jest Bielik? Rodzina modeli AI Małe do konkretnych zadań, większe do naturalnej konwersacji - gotowe na każde wyzwanie Trenowane głównie po ..."
+    }
+  ]
+}

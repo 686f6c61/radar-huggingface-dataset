@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SyntheticMDProductions/Roblox_Oasis_V4_AI_Model",
+  "slug": "syntheticmdproductions-roblox_oasis_v4_ai_model",
+  "author": "SyntheticMDProductions",
+  "url": "https://huggingface.co/SyntheticMDProductions/Roblox_Oasis_V4_AI_Model",
+  "created_at": "2026-09-24T00:02:34.000Z",
+  "updated_at": "2026-09-24T00:21:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "roblox",
+    "world-model",
+    "video-generation",
+    "action-conditioned",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20039619,
+  "parameters_human": "20.0M",
+  "storage_bytes": 81494219,
+  "storage_human": "81 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Community Center - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Community-Center/ct-p/community-center",
+      "snippet": "Airbnb removes essential reservation data from its new Income Report With the new Income Report, Airbnb has replaced the …"
+    },
+    {
+      "title": "How to Start an Airbnb - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Host-guides/How-to-Start-an-Airbnb/m-p/126109",
+      "snippet": "Jul 4, 2016 · So you are thinking about starting an Airbnb? Not sure what to do or where to turn? Here are some time-tested ideas, …"
+    },
+    {
+      "title": "Airbnb 怎么读？ - 知乎",
+      "url": "https://www.zhihu.com/question/34684619",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "单独ps5手柄怎么连接pc？ - 知乎",
+      "url": "https://www.zhihu.com/question/566869228",
+      "snippet": "Nov 15, 2022 · 两种连接方式， 第一种是用蓝牙。 如果你是笔记本电脑，那可以开启手柄匹配功能后（同时按住正面左上的share键和 …"
+    },
+    {
+      "title": "Airbnb updates - Airbnb Community",
+      "url": "https://community.withairbnb.com/t5/Airbnb-updates/bd-p/blog_en/label-name/Company%20News",
+      "snippet": "Airbnb updates Airbnb and FIFA announce major multi-tournament partnership Airbnb and FIFA just announced a major partnership …"
+    }
+  ]
+}

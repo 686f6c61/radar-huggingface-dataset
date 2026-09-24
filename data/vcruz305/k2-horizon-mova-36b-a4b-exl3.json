@@ -28,13 +28,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 193954559882,
-  "storage_human": "194.0 GB",
+  "storage_bytes": 138116754033,
+  "storage_human": "138.1 GB",
   "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
   "formats": [
     "safetensors"

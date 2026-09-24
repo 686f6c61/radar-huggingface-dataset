@@ -5,7 +5,7 @@
   "author": "Berk",
   "url": "https://huggingface.co/Berk/assay-1.7b",
   "created_at": "2026-09-20T23:28:41.000Z",
-  "updated_at": "2026-09-22T23:15:52.000Z",
+  "updated_at": "2026-09-23T09:20:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 45,
+  "downloads_30d": 96,
   "trending_score": 0,
   "parameters": 1720574976,
   "parameters_human": "1.72B",

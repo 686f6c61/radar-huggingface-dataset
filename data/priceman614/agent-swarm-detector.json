@@ -44,8 +44,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": false,
-  "removed_at": null,
+  "removed": true,
+  "removed_at": "2026-09-24T03:21:42.802Z",
   "benchmarks": [
     {
       "task": "Blast (mass-produced template) detection, unseen templates",

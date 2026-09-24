@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "OS-Software/North-Mini-Code-1.0-Uncensored-Heretic-GGUF",
+  "slug": "os-software-north-mini-code-1-0-uncensored-heretic-gguf",
+  "author": "OS-Software",
+  "url": "https://huggingface.co/OS-Software/North-Mini-Code-1.0-Uncensored-Heretic-GGUF",
+  "created_at": "2026-09-23T22:15:21.000Z",
+  "updated_at": "2026-09-23T22:37:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "conversational",
+    "chat",
+    "code",
+    "agent",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "license:apache-2.0",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30484303872,
+  "parameters_human": "30.48B",
+  "storage_bytes": 117660505280,
+  "storage_human": "117.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Système d'exploitation — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Syst%C3%A8me_d%27exploitation",
+      "snippet": "En informatique, un système d'exploitation (souvent appelé OS — de l' anglais operating system — ou parfois SE — en français) est …"
+    },
+    {
+      "title": "OS : Tout ce que vous devez savoir sur les systèmes d’exploitation",
+      "url": "https://www.lebigdata.fr/os-tout-savoir",
+      "snippet": "Apr 5, 2026 · Un OS, ou système d’exploitation, est le logiciel fondamental qui gère l’ensemble des programmes et des ressources …"
+    },
+    {
+      "title": "Os — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Os",
+      "snippet": "Grâce à leur structure, les os sont à la fois légers, souples et solides ; ceux des oiseaux contiennent de l' air et sont particulièrement …"
+    },
+    {
+      "title": "Operating system - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Operating_system",
+      "snippet": "An operating system (OS) is system software that manages computer hardware and software resources, and provides common …"
+    },
+    {
+      "title": "Système d’exploitation et OS : qu’est-ce que c’est ? comment ça marche",
+      "url": "https://www.malekal.com/systeme-exploitation-os-definition/",
+      "snippet": "Nov 17, 2019 · Le système d’exploitation multitâche ou Système d’exploitation à temps partagé (Time-sharing / multitasking OS) est …"
+    }
+  ]
+}

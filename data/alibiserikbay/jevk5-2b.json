@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "alibiserikbay/JevK5-2B",
+  "slug": "alibiserikbay-jevk5-2b",
+  "author": "alibiserikbay",
+  "url": "https://huggingface.co/alibiserikbay/JevK5-2B",
+  "created_at": "2026-09-23T20:13:02.000Z",
+  "updated_at": "2026-09-23T20:15:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "decision-model",
+    "system-one",
+    "jev",
+    "jev-alternative",
+    "typed-decisions",
+    "self-hosted",
+    "jevbench",
+    "calibration",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 3783681373,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Slovenia to Zurich - 11 ways to travel via train, plane, bus ... - Rome2rio",
+      "url": "https://www.rome2rio.com/s/Slovenia/Zurich",
+      "snippet": "There are 11 ways to get from Slovenia to Zurich by plane, bus, train, night train, shuttle, or car Select an option below to see step-by …"
+    },
+    {
+      "title": "Zurich to Slovenia - 10 ways to travel via train, plane, bus ... - Rome2rio",
+      "url": "https://www.rome2rio.com/s/Zurich/Slovenia",
+      "snippet": "There are 10 ways to get from Zurich to Slovenia by plane, bus, train, night train, shuttle, or car Select an option below to see step-by …"
+    },
+    {
+      "title": "Zürich - Slovenske železnice – Potniški promet",
+      "url": "https://potniski.sz.si/tujina/svica-ch/zurich/",
+      "snippet": "Zürich je lahko le odskočna deska za nadaljevanje poti ali pa prijetno doživetje mestnega vrveža. V največjem švicarskem mestu si …"
+    },
+    {
+      "title": "Zürich - Slovenske železnice – Potniški promet",
+      "url": "https://potniski.sz.si/en/international-travel/switzerland-ch/zurich/",
+      "snippet": "Jun 14, 2026 · From Zurich there are many trains which will take you to the remotest high altitude places in this magnificent mountain …"
+    },
+    {
+      "title": "Cheap Flights from Ljubljana (LJU) to Zurich (ZRH) - Skyscanner",
+      "url": "https://www.skyscanner.net/routes/lju/zrh/ljubljana-to-zurich.html?msockid=3896aa240b026ef5299bbdf90a9c6f4b",
+      "snippet": "Compare cheap flights and find tickets from Ljubljana (LJU) to Zurich (ZRH). Book directly with no added fees."
+    }
+  ]
+}

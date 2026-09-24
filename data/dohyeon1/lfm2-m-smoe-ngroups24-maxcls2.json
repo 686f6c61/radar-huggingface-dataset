@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dohyeon1/LFM2-M-SMoE-ngroups24-maxcls2",
+  "slug": "dohyeon1-lfm2-m-smoe-ngroups24-maxcls2",
+  "author": "Dohyeon1",
+  "url": "https://huggingface.co/Dohyeon1/LFM2-M-SMoE-ngroups24-maxcls2",
+  "created_at": "2026-09-23T21:06:26.000Z",
+  "updated_at": "2026-09-23T21:11:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8339930560,
+  "parameters_human": "8.34B",
+  "storage_bytes": 16680154224,
+  "storage_human": "16.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banque Coopérative et Mutualiste | Crédit Mutuel du Sud-Ouest",
+      "url": "https://www.cmso.com/reseau-bancaire-cooperatif/web/accueil",
+      "snippet": "Crédit Mutuel du Sud-Ouest : une banque de proximité engagée pour les projets de ses clients et acteurs locaux. Une agence, un …"
+    },
+    {
+      "title": "Espace client | Crédit Mutuel du Sud-Ouest - cmso.com",
+      "url": "https://www.cmso.com/reseau-bancaire-cooperatif/web/comptes-et-cartes/piloter-vos-comptes/espace-client",
+      "snippet": "Accédez à votre espace client du Crédit Mutuel du Sud-Ouest. Gérez vos comptes, réalisez vos opérations bancaires, faites vos …"
+    },
+    {
+      "title": "Tarification des services - Professionnels | Crédit Mutuel du Sud-Ouest",
+      "url": "https://pro.cmso.com/web/reglementaire/tarification-des-services-1",
+      "snippet": "Conditions tarifaires des différentes opérations bancaires applicables aux professionnels par le Crédit Mutuel du Sud-Ouest : \"Tout …"
+    },
+    {
+      "title": "Crédit Mutuel Arkéa - Site d'offres d'emploi - recrutement.cmso.com",
+      "url": "https://www.recrutement.cmso.com/accueil.aspx",
+      "snippet": "1 day ago · Bienvenue sur le site de recrutement du Crédit Mutuel Arkéa"
+    },
+    {
+      "title": "Comment définir votre profil épargnant - pro.cmso.com",
+      "url": "https://pro.cmso.com/web/aide/tutoriels/espace-client-web-et-appli/site-web/tuto-comment-definir-votre-profil-epargnant",
+      "snippet": "Comment mettre à jour votre profil éparngant sur pro.site_web_court ? À partir de votre espace client sur pro.site_web_court, cliquez …"
+    }
+  ]
+}

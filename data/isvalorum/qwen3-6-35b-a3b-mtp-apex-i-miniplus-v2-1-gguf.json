@@ -5,10 +5,10 @@
   "author": "IsValorum",
   "url": "https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-MiniPlus-V2.1-GGUF",
   "created_at": "2026-09-22T17:40:11.000Z",
-  "updated_at": "2026-09-23T01:14:49.000Z",
+  "updated_at": "2026-09-23T19:49:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": "text-generation",
+  "pipeline_tag": "image-text-to-text",
   "library": "gguf",
   "languages": [
     "en",
@@ -37,7 +37,7 @@
     "reasoning",
     "llama.cpp",
     "qwen35moe",
-    "text-generation",
+    "image-text-to-text",
     "en",
     "zh",
     "es",
@@ -60,12 +60,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 156,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
-  "storage_bytes": 15840417600,
-  "storage_human": "15.8 GB",
+  "storage_bytes": 19020113472,
+  "storage_human": "19.0 GB",
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "gguf"

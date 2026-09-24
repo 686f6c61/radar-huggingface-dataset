@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aether-models/eurollm-1.7b-instruct",
+  "slug": "aether-models-eurollm-1-7b-instruct",
+  "author": "aether-models",
+  "url": "https://huggingface.co/aether-models/eurollm-1.7b-instruct",
+  "created_at": "2026-09-23T22:05:36.000Z",
+  "updated_at": "2026-09-23T22:47:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "aether",
+    "core-ai",
+    "apple",
+    "macos",
+    "ios",
+    "text-generation",
+    "base_model:utter-project/EuroLLM-1.7B-Instruct",
+    "base_model:finetune:utter-project/EuroLLM-1.7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3843334238,
+  "storage_human": "3.8 GB",
+  "base_model": "utter-project/EuroLLM-1.7B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "utter-project/EuroLLM-1.7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct",
+      "snippet": "EuroLLM-1.7B is a 1.7B parameter model trained on 4 trillion tokens divided across the considered languages and several data sources: Web data, parallel data (en-xx and xx-en), and high-quality datasets."
+    },
+    {
+      "title": "utter-project/EuroLLM-1.7B-Instruct at main - Hugging Face",
+      "url": "https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct/tree/main",
+      "snippet": "35 languages llama License: apache-2.0 Model card Files Files and versions Community Train main EuroLLM-1.7B-Instruct"
+    },
+    {
+      "title": "EuroLLM-1.7B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/eurollm-17b-instruct-utter-project",
+      "snippet": "Overview EuroLLM-1.7B-Instruct is a 1.7 billion parameter instruction-tuned multilingual language model developed by utter-project and a consortium including Unbabel, Instituto Superior Técnico, University of Edinburgh, and others, funded by the European Union. The model supports 34 languages spanning all EU member states plus additional languages including Arabic, Chinese, Hindi, Japanese ..."
+    },
+    {
+      "title": "GitHub - vassdel/utter-project-EuroLLM-1.7B",
+      "url": "https://github.com/vassdel/utter-project-EuroLLM-1.7B/",
+      "snippet": "Model Details The EuroLLM project has the goal of creating a suite of LLMs capable of understanding and generating text in all European Union languages as well as some additional relevant languages. EuroLLM-1.7B is a 1.7B parameter model trained on 4 trillion tokens divided across the considered languages and several data sources: Web data, parallel data (en-xx and xx-en), and high-quality ..."
+    },
+    {
+      "title": "EuroLLM Multilingual Language Models for Europe - arXiv.org",
+      "url": "https://arxiv.org/html/2409.16235v1",
+      "snippet": "We fine-tune EuroLLM-1.7B on EuroBlocks to turn it into an instruction-following conversational model: EuroLLM-1.7B-Instruct. We use the standard cross-entropy loss, enabling bfloat16 mixed precision and packing."
+    }
+  ]
+}

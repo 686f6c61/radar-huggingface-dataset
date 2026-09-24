@@ -5,7 +5,7 @@
   "author": "KasugaiSakura",
   "url": "https://huggingface.co/KasugaiSakura/Qwen-Image-2.1-Uncensored-GGUF",
   "created_at": "2026-09-20T22:11:43.000Z",
-  "updated_at": "2026-09-20T22:11:43.000Z",
+  "updated_at": "2026-09-23T23:11:59.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -23,13 +23,13 @@
     "license:other",
     "region:us"
   ],
-  "likes": 78,
-  "downloads_30d": 263,
+  "likes": 100,
+  "downloads_30d": 16708,
   "trending_score": 27,
   "parameters": 7115124736,
   "parameters_human": "7.12B",
-  "storage_bytes": 54905762493,
-  "storage_human": "54.9 GB",
+  "storage_bytes": 110955180844,
+  "storage_human": "111.0 GB",
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "gguf"

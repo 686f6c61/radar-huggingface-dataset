@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Mathis-Mo/a2c-PandaReachDense-v3",
+  "slug": "mathis-mo-a2c-pandareachdense-v3",
+  "author": "Mathis-Mo",
+  "url": "https://huggingface.co/Mathis-Mo/a2c-PandaReachDense-v3",
+  "created_at": "2026-09-23T21:12:01.000Z",
+  "updated_at": "2026-09-23T21:12:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 213931,
+  "storage_human": "213931 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mathis Construction Bois",
+      "url": "https://www.mathis.eu/fr",
+      "snippet": "Mathis : conception, fabrication et construction de grands bâtiments en bois et de bâtiments publics en bois, clé en main. Notre …"
+    },
+    {
+      "title": "Prénom Mathis (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/mathis/prenom-8966",
+      "snippet": "Quelle est l'origine du prénom Mathis ? Le prénom Mathis a pour origine le prénom hébraïque Mattatyahu. Mathis peut aussi être …"
+    },
+    {
+      "title": "L'entreprise - Mathis",
+      "url": "https://www.mathis.eu/FR/Entreprise.html",
+      "snippet": "La société avec ses agences régionales est leader sur le segment des bâtiments industriels et de bureaux, les équipements de …"
+    },
+    {
+      "title": "Mathis (entreprise) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mathis_(entreprise)",
+      "snippet": "Mathis était un constructeur automobile fondé par Émile Mathis à Strasbourg dans l' Empire allemand jusqu'en 1918 et devenu …"
+    },
+    {
+      "title": "Mathis — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mathis",
+      "snippet": "Mathis est une variante du prénom Mathias. La forme ancienne Mattatyahu (Mathieu) peut être traduite par « don de Yah » : Yah …"
+    }
+  ]
+}

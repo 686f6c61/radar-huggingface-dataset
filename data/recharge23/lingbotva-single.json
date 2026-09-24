@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Recharge23/LingbotVA-single",
+  "slug": "recharge23-lingbotva-single",
+  "author": "Recharge23",
+  "url": "https://huggingface.co/Recharge23/LingbotVA-single",
+  "created_at": "2026-09-23T22:44:04.000Z",
+  "updated_at": "2026-09-23T23:42:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Robbyant/lingbot-va: [RSS 2026] Causal video-action world ...",
+      "url": "https://github.com/robbyant/lingbot-va",
+      "snippet": "LingBot-VA has focused on: Autoregressive Video-Action World Modeling: Architecturally unifies visual dynamics prediction and action inference within a single interleaved sequence while maintaining their conceptual distinction. High-efficiency Execution: A dual-stream mixture-of-transformers (MoT) architecture with Asynchronous Execution and KV Cache. Long-Horizon Performance and ..."
+    },
+    {
+      "title": "LingBot‑VA Video Action Model - Robbyant",
+      "url": "https://technology.robbyant.com/lingbot-va",
+      "snippet": "We introduce LingBot‑VA, an autoregressive framework that unifies video world modeling and policy learning, jointly learning future frame prediction and action execution. Our evaluations highlight clear promise in long‑horizon manipulation, data‑efficient post‑training, and robust generalization to novel configurations."
+    },
+    {
+      "title": "GitHub - Spphire/lingbot-va: LingBot-VA causal video-action world model ...",
+      "url": "https://github.com/Spphire/lingbot-va",
+      "snippet": "LingBot-VA has focused on: Autoregressive Video-Action World Modeling: Architecturally unifies visual dynamics prediction and action inference within a single interleaved sequence while maintaining their conceptual distinction. High-efficiency Execution: A dual-stream mixture-of-transformers (MoT) architecture with Asynchronous Execution and KV Cache. Long-Horizon Performance and ..."
+    },
+    {
+      "title": "Recharge23 (Lixuan) - Hugging Face",
+      "url": "https://huggingface.co/Recharge23/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space about 4 hours ago ... updated a dataset about 4 hours ago"
+    },
+    {
+      "title": "bazaar-research/lingbot-va · Hugging Face",
+      "url": "https://huggingface.co/bazaar-research/lingbot-va",
+      "snippet": "Deploying LingBot-VA for Inference LingBot-VA supports both standalone execution and Server-Client architecture which separates the model environment from simulation. By isolating dependencies, the design avoids package clashes and supports distributed inference on GPUs, clusters, and other devices."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ShyYven/Dark-1",
+  "slug": "shyyven-dark-1",
+  "author": "ShyYven",
+  "url": "https://huggingface.co/ShyYven/Dark-1",
+  "created_at": "2026-09-23T19:29:36.000Z",
+  "updated_at": "2026-09-23T19:33:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3429006336,
+  "parameters_human": "3.43B",
+  "storage_bytes": 2146498528,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-24T03:19:01.815Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated September 2026."
+    },
+    {
+      "title": "ShyYven (Web) - Hugging Face",
+      "url": "https://huggingface.co/ShyYven/models",
+      "snippet": "User profile of Web on Hugging Face"
+    },
+    {
+      "title": "DarkGPT · Free AI Chatbot",
+      "url": "https://miniapps.ai/DarkGPT-41",
+      "snippet": "Chat with DarkGPT. Sadistic, hateful AI, expert in chaos and conspiracies, venomous and detailed responses.. Try this and more free AI and ChatGPT tools and chatbots on miniapps.ai!"
+    },
+    {
+      "title": "DarkNeuronAI/darkneuron-chat-v1.1 · Hugging Face",
+      "url": "https://huggingface.co/DarkNeuronAI/darkneuron-chat-v1.1",
+      "snippet": "DarkNeuron-AI/darkneuron-chat-v1.1 DarkNeuron-Chat v1.1 is a chatbot designed for basic, friendly conversations. It provides clear and concise responses and is suitable for general use."
+    },
+    {
+      "title": "Dark AI: Exploring the Shadows of Artificial Intelligence - Snyk",
+      "url": "https://snyk.io/articles/dark-ai-exploring-the-shadows-of-artificial-intelligence/",
+      "snippet": "What is dark AI? Dark AI is the malicious use of artificial intelligence to develop cyberattacks, commit fraud, or execute other illicit activities. It is also on the rise. Generative AI (GenAI) has lowered the barrier to entry, making it easier for cybercriminals to design and launch attacks. At the same time, the rapid adoption of enterprise technologies, including AI, has expanded ..."
+    }
+  ]
+}

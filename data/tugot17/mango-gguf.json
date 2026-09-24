@@ -5,7 +5,7 @@
   "author": "tugot17",
   "url": "https://huggingface.co/tugot17/mango-gguf",
   "created_at": "2026-09-23T00:16:34.000Z",
-  "updated_at": "2026-09-23T00:16:41.000Z",
+  "updated_at": "2026-09-23T18:36:49.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 279468801,
   "parameters_human": "279.5M",
-  "storage_bytes": 567204736,
-  "storage_human": "567 MB",
+  "storage_bytes": 1701614240,
+  "storage_human": "1.7 GB",
   "base_model": "LiquidAI/LFM2.5-VL-3B",
   "formats": [
     "gguf"

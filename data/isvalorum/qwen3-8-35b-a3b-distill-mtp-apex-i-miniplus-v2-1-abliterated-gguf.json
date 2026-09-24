@@ -5,7 +5,7 @@
   "author": "IsValorum",
   "url": "https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-MTP-APEX-I-MiniPlus-V2.1-Abliterated-GGUF",
   "created_at": "2026-09-20T23:59:01.000Z",
-  "updated_at": "2026-09-22T23:51:55.000Z",
+  "updated_at": "2026-09-23T19:38:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -64,12 +64,12 @@
     "conversational"
   ],
   "likes": 5,
-  "downloads_30d": 1832,
+  "downloads_30d": 4624,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 17263534976,
-  "storage_human": "17.3 GB",
+  "storage_bytes": 18454686848,
+  "storage_human": "18.5 GB",
   "base_model": "empero-ai/Qwen3.8-35B-A3B-Distill",
   "formats": [
     "gguf"

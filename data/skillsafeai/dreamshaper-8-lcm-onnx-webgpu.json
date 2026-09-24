@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "skillsafeai/dreamshaper-8-lcm-onnx-webgpu",
+  "slug": "skillsafeai-dreamshaper-8-lcm-onnx-webgpu",
+  "author": "skillsafeai",
+  "url": "https://huggingface.co/skillsafeai/dreamshaper-8-lcm-onnx-webgpu",
+  "created_at": "2026-09-23T20:56:46.000Z",
+  "updated_at": "2026-09-23T20:58:29.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "text-to-image",
+    "webgpu",
+    "onnxruntime-web",
+    "lcm",
+    "base_model:Lykon/dreamshaper-8-lcm",
+    "base_model:quantized:Lykon/dreamshaper-8-lcm",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2164083532,
+  "storage_human": "2.2 GB",
+  "base_model": "Lykon/dreamshaper-8-lcm",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DreamShaper - 8 | Stable Diffusion 1.x Checkpoint | Civitai",
+      "url": "https://civitai.com/models/4384/dreamshaper",
+      "snippet": "The purpose of DreamShaper has always been to make \"a better Stable Diffusion\", a model capable of doing everything on its own, to weave dreams. With SDXL (and, of course, DreamShaper XL 😉) just released, I think the \" swiss knife \" type of model is closer then ever."
+    },
+    {
+      "title": "dreamshaper-8-lcm - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/ai/models/%40cf/lykon/dreamshaper-8-lcm/",
+      "snippet": "Stable Diffusion model that has been fine-tuned to be better at photorealism without sacrificing range."
+    },
+    {
+      "title": "README.md · Lykon/dreamshaper-8-lcm at main - Hugging Face",
+      "url": "https://huggingface.co/Lykon/dreamshaper-8-lcm/blob/main/README.md",
+      "snippet": "Version 8 focuses on improving what V7 started. Might be harder to do photorealism compared to realism focused models, as it might be hard to do anime compared to anime focused models, but it can do both pretty well if you&#x27;re skilled enough."
+    },
+    {
+      "title": "Lykon/DreamShaper · Hugging Face",
+      "url": "https://huggingface.co/Lykon/DreamShaper",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dreamshaper-8-lcm Open Source Text-to-Image Model - Free Generation of ...",
+      "url": "https://model.aibase.com/models/details/1915687213565952002",
+      "snippet": "Dreamshaper-8-lcm is a Stable Diffusion model fine-tuned from runwayml/stable-diffusion-v1.5, focusing on artistic and anime-style image generation. It balances realism and anime-style expression capabilities."
+    }
+  ]
+}

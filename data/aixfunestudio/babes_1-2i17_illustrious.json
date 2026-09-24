@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Babes_1.2i17_Illustrious",
+  "slug": "aixfunestudio-babes_1-2i17_illustrious",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Babes_1.2i17_Illustrious",
+  "created_at": "2026-09-23T21:33:04.000Z",
+  "updated_at": "2026-09-23T22:07:28.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6938040866,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AIxFuneStudio/Babes_1.2i16_Illustrious · Hugging Face",
+      "url": "https://huggingface.co/AIxFuneStudio/Babes_1.2i16_Illustrious",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AIxFuneStudio/Babes_1.2i16_Illustrious at main - Hugging Face",
+      "url": "https://huggingface.co/AIxFuneStudio/Babes_1.2i16_Illustrious/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Visit AIxFun eStudio&#x27;s Shop! - Ko-fi",
+      "url": "https://ko-fi.com/aixfunestudio/gallery",
+      "snippet": "💡 Want your own custom AI LoRA model? I offer professional Lora training commissions for Stable Diffusion and related AI models. With experience in character creation, face, styles, clothes, and concepts, I can bring your idea to life. I work with Flux/Flux Krea/Flux Kontext, SDXL, Pony, Illustrious, and SD 1.5 models - tailored to your exact needs. You will be able to use the model for ..."
+    },
+    {
+      "title": "Illustrious: an Open Advanced Illustration Model - arXiv.org",
+      "url": "https://arxiv.org/html/2409.19946v1",
+      "snippet": "Through extensive analysis and experiments, Illustrious demonstrates state-of-the-art performance in terms of animation style, outperforming widely-used models in illustration domains, propelling easier customization and personalization with nature of open source."
+    },
+    {
+      "title": "Illustrious Open-Source Image Generation Model - Free High-Quality ...",
+      "url": "https://model.aibase.com/en/models/details/1915687025380114434",
+      "snippet": "The Illustrious model is a text-to-image AI model that generates high-quality, high-resolution images based on detailed text prompts. It supports multiple quantized versions for different hardware environments."
+    }
+  ]
+}

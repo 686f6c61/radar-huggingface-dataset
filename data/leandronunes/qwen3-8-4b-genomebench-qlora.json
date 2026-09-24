@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "leandronunes/qwen3.8-4b-genomebench-qlora",
+  "slug": "leandronunes-qwen3-8-4b-genomebench-qlora",
+  "author": "leandronunes",
+  "url": "https://huggingface.co/leandronunes/qwen3.8-4b-genomebench-qlora",
+  "created_at": "2026-09-23T21:22:23.000Z",
+  "updated_at": "2026-09-23T21:23:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "unsloth",
+    "genomics",
+    "crispr",
+    "scientific-reasoning",
+    "causal-reasoning",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:empero-ai/Qwen3.8-4B-Distill",
+    "base_model:adapter:empero-ai/Qwen3.8-4B-Distill",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104961591,
+  "storage_human": "105 MB",
+  "base_model": "empero-ai/Qwen3.8-4B-Distill",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …Read more"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.Read more"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …Read more"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world.Read more"
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en-US",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …Read more"
+    }
+  ]
+}

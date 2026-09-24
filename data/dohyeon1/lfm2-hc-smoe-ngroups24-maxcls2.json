@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dohyeon1/LFM2-HC-SMoE-ngroups24-maxcls2",
+  "slug": "dohyeon1-lfm2-hc-smoe-ngroups24-maxcls2",
+  "author": "Dohyeon1",
+  "url": "https://huggingface.co/Dohyeon1/LFM2-HC-SMoE-ngroups24-maxcls2",
+  "created_at": "2026-09-23T20:42:27.000Z",
+  "updated_at": "2026-09-23T20:45:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8339930560,
+  "parameters_human": "8.34B",
+  "storage_bytes": 16680154224,
+  "storage_human": "16.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Hero’s Journey: 12 Stages Explained (with Examples)",
+      "url": "https://www.storyflint.com/blog/heros-journey-christopher-vogler",
+      "snippet": "Sep 12, 2026 · The Hero’s Journey is a 12-stage story structure developed from Joseph Campbell’s The Hero with a Thousand …"
+    },
+    {
+      "title": "The Hero's Journey: 12 Stages Explained with Examples",
+      "url": "https://alanwatt.com/how-to-write/story-structure/the-heros-journey/",
+      "snippet": "Dec 12, 2025 · Learn the 12 stages of the Hero's Journey and how to apply Joseph Campbell's monomyth to your novel, screenplay, …"
+    },
+    {
+      "title": "12 Hero’s Journey Stages Explained (+ Free Templates)",
+      "url": "https://www.imagineforest.com/blog/heros-journey/",
+      "snippet": "Dec 19, 2022 · From zero to hero, the hero’s journey is a popular character development arc used in many stories. In today’s post, …"
+    },
+    {
+      "title": "The Hero's Journey: All 12 Stages Explained - Loreteller",
+      "url": "https://loreteller.com/learn/heros-journey-explained/",
+      "snippet": "Master the hero's journey story structure. Learn all 12 stages with examples from Star Wars, The Matrix, and The Lord of the Rings."
+    },
+    {
+      "title": "The Hero’s Journey: A Practical Writer’s Guide to the 12 Stages",
+      "url": "https://kindlepreneur.com/heros-journey/",
+      "snippet": "Jun 16, 2026 · The Hero’s Journey is one of the most popular story structures, but it’s often misunderstood. Here’s how it actually …"
+    }
+  ]
+}

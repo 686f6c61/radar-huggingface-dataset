@@ -5,7 +5,7 @@
   "author": "jerryyan",
   "url": "https://huggingface.co/jerryyan/e2etext-T1edu1-T1",
   "created_at": "2026-09-22T19:09:21.000Z",
-  "updated_at": "2026-09-22T22:59:32.000Z",
+  "updated_at": "2026-09-23T06:33:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,13 +32,13 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 531,
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",
-  "storage_bytes": 1203565511,
-  "storage_human": "1.2 GB",
+  "storage_bytes": 59482282197,
+  "storage_human": "59.5 GB",
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"

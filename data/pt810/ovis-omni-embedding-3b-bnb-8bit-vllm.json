@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "pt810/Ovis-Omni-Embedding-3B-bnb-8bit-vllm",
+  "slug": "pt810-ovis-omni-embedding-3b-bnb-8bit-vllm",
+  "author": "pt810",
+  "url": "https://huggingface.co/pt810/Ovis-Omni-Embedding-3B-bnb-8bit-vllm",
+  "created_at": "2026-09-23T22:10:11.000Z",
+  "updated_at": "2026-09-23T22:11:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_omni",
+    "text-to-audio",
+    "multimodal",
+    "text",
+    "image",
+    "video",
+    "audio",
+    "embedding",
+    "retrieval",
+    "feature-extraction",
+    "arxiv:2609.25165",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3707,
+  "parameters_human": "3707",
+  "storage_bytes": 7558451723,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pt810/Ovis-Omni-Embedding-3B-bnb-4bit · Hugging Face",
+      "url": "https://huggingface.co/pt810/Ovis-Omni-Embedding-3B-bnb-4bit",
+      "snippet": "Ovis-Omni-Embedding-3B is a 3B-parameter universal embedding model for text, images, visual documents, video, audio, and interleaved multimodal inputs. It maps every supported input type into one coherent representation space, enabling any-to-any retrieval with a single encoder."
+    },
+    {
+      "title": "GitHub - ATH-MaaS/Ovis-Omni-Embedding: Ovis-Omni-Embedding",
+      "url": "https://github.com/ATH-MaaS/Ovis-Omni-Embedding",
+      "snippet": "Ovis-Omni-Embedding is an omni-modal embedding model developed by the Alibaba ATH-MaaS team. It maps heterogeneous modalities — including text, image, video, and audio — into a unified representation space, enabling comprehensive cross-modal retrieval and understanding within a single model. Ovis-Omni-Embedding-3B achieves leading performance on the Massive Multimodal Embedding Benchmark ..."
+    },
+    {
+      "title": "GitHub - ATH-MaaS/Ovis-Omni-Embedding: Ovis-Omni-Embedding",
+      "url": "https://github.com/ATH-MaaS/Ovis-Omni-Embedding/tree/master",
+      "snippet": "Introduction Ovis-Omni-Embedding is an omni-modal embedding model developed by the Alibaba ATH-MaaS team. It maps heterogeneous modalities — including text, image, video, and audio — into a unified representation space, enabling comprehensive cross-modal retrieval and understanding within a single model."
+    },
+    {
+      "title": "wl1982/Ovis_Omni_Embedding_3B · Hugging Face",
+      "url": "https://huggingface.co/wl1982/Ovis_Omni_Embedding_3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[2609.25165] Ovis-Embedding: Pushing the Frontiers of Universal Omni ...",
+      "url": "https://arxiv.org/abs/2609.25165",
+      "snippet": "In this report, we introduce &#92;&#92;textbf{Ovis-Embedding}, a state-of-the-art omni-modal embedding family built on native integration of text, image, video, and audio. Instead of assembling separate modality towers, Ovis-Embedding uses a shared multimodal backbone to encode different modalities in a common representation space. Specifically, we make &#92;&#92;textbf{three key advances}: (1) &#92;&#92;textbf ..."
+    }
+  ]
+}

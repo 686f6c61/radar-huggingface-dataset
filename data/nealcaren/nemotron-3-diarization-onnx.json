@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NealCaren/Nemotron-3-Diarization-ONNX",
+  "slug": "nealcaren-nemotron-3-diarization-onnx",
+  "author": "NealCaren",
+  "url": "https://huggingface.co/NealCaren/Nemotron-3-Diarization-ONNX",
+  "created_at": "2026-09-23T20:14:40.000Z",
+  "updated_at": "2026-09-23T20:17:29.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "speaker-diarization",
+    "sortformer",
+    "onnxruntime-web",
+    "transformers.js",
+    "voice-activity-detection",
+    "base_model:nvidia/Nemotron-3-Diarization",
+    "base_model:quantized:nvidia/Nemotron-3-Diarization",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 501249445,
+  "storage_human": "501 MB",
+  "base_model": "nvidia/Nemotron-3-Diarization",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/Nemotron-3-Diarization · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
+      "snippet": "Nemotron 3 Diarization (General Access). The model can be integrated into conversational AI systems through NeMo Framework inference pipelines to produce per-speaker activity probabilities or postprocessed generic speaker labels and timestamps."
+    },
+    {
+      "title": "nvidia/Nemotron-3-Diarization-preview · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization-preview",
+      "snippet": "Description Nemotron 3 Diarization is an open-weight streaming speaker diarization model designed to determine \"who spoke when\" in real-world audio. It supports both streaming and offline inference, handles up to eight speakers, and orders speaker outputs by each speaker&#x27;s first arrival in the input audio."
+    },
+    {
+      "title": "Nemotron-3-Diarization-preview/README.md at main - GitHub",
+      "url": "https://github.com/AMAImedia/Nemotron-3-Diarization-preview/blob/main/README.md",
+      "snippet": "A scalable generative AI framework built for researchers and developers working on Large Language Models, Multimodal, and Speech AI (Automatic Speech Recognition and Text-to-Speech) - Nemotron-3-Diarization-preview/README.md at main · AMAImedia/Nemotron-3-Diarization-preview"
+    },
+    {
+      "title": "NVIDIA Releases Nemotron 3 Diarization Open-Weight Speaker Model - Unite.AI",
+      "url": "https://www.unite.ai/nvidia-releases-nemotron-3-diarization-open-weight-speaker-model/",
+      "snippet": "NVIDIA on September 23, 2026 released Nemotron 3 Diarization, an open-weight speaker diarization model that identifies up to eight speakers in live or recorded audio, and Baseten announced same-day serving support with b..."
+    },
+    {
+      "title": "Nemotron 3 Diarization preview by NVIDIA - exploreai.tools",
+      "url": "https://exploreai.tools/ai-models/nemotron-3-diarization-preview",
+      "snippet": "Nemotron 3 Diarization preview is an official NVIDIA model on Hugging Face for speaker diarization, featuring a voice-activity-detection pipeline. It is tagged with nemo, streaming-sortformer, speaker-tagging, and audio, with associated arXiv papers."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "junbrro/egopi-arm2-rbbt-anyh3-AB-30k-actsilu-mlxp-20260924",
+  "slug": "junbrro-egopi-arm2-rbbt-anyh3-ab-30k-actsilu-mlxp-20260924",
+  "author": "junbrro",
+  "url": "https://huggingface.co/junbrro/egopi-arm2-rbbt-anyh3-AB-30k-actsilu-mlxp-20260924",
+  "created_at": "2026-09-23T19:22:33.000Z",
+  "updated_at": "2026-09-23T19:27:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6915094616,
+  "parameters_human": "6.92B",
+  "storage_bytes": 13868868378,
+  "storage_human": "13.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "junbrro/egopi-mt-r6h5-axis1-AB-30k-actsilu-slurm-18839-20260921 ...",
+      "url": "https://huggingface.co/junbrro/egopi-mt-r6h5-axis1-AB-30k-actsilu-slurm-18839-20260921",
+      "snippet": "MT to Arm I AB Final step: 30000. Source: 18839. Final model weights and configuration only; optimizer/RNG state excluded. Original configuration is preserved, including source-cluster paths. Remap paths before use. Bundled actlat/ contains the action tokenizer when applicable. Multi-group runtime required. Slot 37 mt_openarm_prq15, r6h5 tokenizer."
+    },
+    {
+      "title": "[2603.28296] Precise predictions for trilinear Higgs couplings and ...",
+      "url": "https://arxiv.org/abs/2603.28296",
+      "snippet": "A central objective of future collider experiments is to probe the structure of the Higgs potential, which requires access to trilinear scalar couplings, in particular the self-coupling of the observed Higgs boson. While this coupling is fixed in the Standard Model (SM), it can receive sizable modifications in many Beyond the SM (BSM) scenarios, often connected to solutions of open problems ..."
+    },
+    {
+      "title": "[2305.03015] anyH3: precise predictions for the trilinear Higgs ...",
+      "url": "https://arxiv.org/abs/2305.03015",
+      "snippet": "The trilinear Higgs coupling $λ_{hhh}$ of the detected Higgs boson is an important probe for physics beyond the Standard Model. Correspondingly, improving the precision of the theoretical predictions for this coupling as well as the experimental constraints on it are among the main goals of particle physics in the near future. In this article, we present the public $&#92;&#92;mathtt{Python}$ code ..."
+    },
+    {
+      "title": "Precise predictions for the trilinear Higgs self-coupling in the ...",
+      "url": "https://pos.sissa.it/449/407/",
+      "snippet": "Abstract Deviations in the trilinear self-coupling of the Higgs boson at 125 GeV from the Standard Model (SM) prediction are a sensitive test of physics Beyond the SM (BSM). The LHC experiments searching for the simultaneous production of two Higgs bosons start to become sensitive to such deviations."
+    },
+    {
+      "title": "junbrro/egopi_bbtoc_robot_v5_20hz_AB_cogalign_natural_sd0_seed42_30k ...",
+      "url": "https://huggingface.co/junbrro/egopi_bbtoc_robot_v5_20hz_AB_cogalign_natural_sd0_seed42_30k_gas2_actsilu",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

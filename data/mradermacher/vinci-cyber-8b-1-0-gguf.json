@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Vinci-Cyber-8B-1.0-GGUF",
+  "slug": "mradermacher-vinci-cyber-8b-1-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Vinci-Cyber-8B-1.0-GGUF",
+  "created_at": "2026-09-23T22:41:49.000Z",
+  "updated_at": "2026-09-23T23:24:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "cybersecurity",
+    "defensive-security",
+    "infrastructure-as-code",
+    "granite",
+    "dora",
+    "rslora",
+    "canadian-ai",
+    "simpledirect",
+    "vinci",
+    "en",
+    "base_model:simpledirect/Vinci-Cyber-8B-1.0",
+    "base_model:quantized:simpledirect/Vinci-Cyber-8B-1.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8380551168,
+  "parameters_human": "8.38B",
+  "storage_bytes": 74702359296,
+  "storage_human": "74.7 GB",
+  "base_model": "simpledirect/Vinci-Cyber-8B-1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/RsEvi-8B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/RsEvi-8B-i1-GGUF",
+      "snippet": "mradermacher / RsEvi-8B-i1-GGUF Like 0 Visual Question Answering Transformers GGUF English remote-sensing vision-language visual-grounding emnlp-2026 imatrix conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/VinciCoder-8B-GGUF - MyGGUF",
+      "url": "https://mygguf.com/model?id=mradermacher%2FVinciCoder-8B-GGUF",
+      "snippet": "mradermacher/VinciCoder-8B-GGUF High-quality GGUF model 19 Downloads 0 Likes 14 GGUF Files 70.16 GB Total Size 4mo ago Updated"
+    },
+    {
+      "title": "Vinci Cyber 123B 1.0 · SimpleDirect®",
+      "url": "https://www.getsimpledirect.com/models/cyber-123b-1-0",
+      "snippet": "What it is for Built for teams exploring self-hosted defensive cybersecurity workflows. Review the model card for the documented scope, loading instructions and evaluation record, then validate the model against your own tasks before deployment. Foundation mistralai/Devstral-2-123B-Instruct-2512 Licence Modified MIT (Mistral AI) Artifact version 1.0 Model identity Vinci-Cyber-123B-1. Access ..."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 29 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    }
+  ]
+}

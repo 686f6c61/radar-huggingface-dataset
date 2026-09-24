@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "RicardoEstep/RPBizkit-v9-12B",
+  "slug": "ricardoestep-rpbizkit-v9-12b",
+  "author": "RicardoEstep",
+  "url": "https://huggingface.co/RicardoEstep/RPBizkit-v9-12B",
+  "created_at": "2026-09-23T22:14:15.000Z",
+  "updated_at": "2026-09-23T23:30:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "not-for-all-audiences",
+    "arxiv:2311.03099",
+    "arxiv:2403.19522",
+    "base_model:ArliAI/Mistral-Nemo-12B-ArliAI-RPMax-v1.2",
+    "base_model:merge:ArliAI/Mistral-Nemo-12B-ArliAI-RPMax-v1.2",
+    "base_model:ChaoticNeutrals/Nera_Noctis-12B",
+    "base_model:merge:ChaoticNeutrals/Nera_Noctis-12B",
+    "base_model:Elizezen/Himeyuri-v0.1-12B",
+    "base_model:merge:Elizezen/Himeyuri-v0.1-12B",
+    "base_model:FallenMerick/MN-Violet-Lotus-12B",
+    "base_model:merge:FallenMerick/MN-Violet-Lotus-12B",
+    "base_model:Gryphe/Pantheon-RP-1.6.1-12b-Nemo",
+    "base_model:merge:Gryphe/Pantheon-RP-1.6.1-12b-Nemo",
+    "base_model:LatitudeGames/Muse-12B",
+    "base_model:merge:LatitudeGames/Muse-12B",
+    "base_model:MuXodious/Wayfarer-2-12B-absolute-heresy",
+    "base_model:merge:MuXodious/Wayfarer-2-12B-absolute-heresy",
+    "base_model:ReadyArt/Forgotten-Safeword-12B-v4.0",
+    "base_model:merge:ReadyArt/Forgotten-Safeword-12B-v4.0",
+    "base_model:SicariusSicariiStuff/Impish_Bloodmoon_12B",
+    "base_model:merge:SicariusSicariiStuff/Impish_Bloodmoon_12B",
+    "base_model:TheDrummer/UnslopNemo-12B-v4.1",
+    "base_model:merge:TheDrummer/UnslopNemo-12B-v4.1",
+    "base_model:anthracite-org/magnum-v2-12b",
+    "base_model:merge:anthracite-org/magnum-v2-12b",
+    "base_model:inflatebot/MN-12B-Mag-Mell-R1",
+    "base_model:merge:inflatebot/MN-12B-Mag-Mell-R1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 24512686518,
+  "storage_human": "24.5 GB",
+  "base_model": "TheDrummer/UnslopNemo-12B-v4.1, LatitudeGames/Muse-12B, anthracite-org/magnum-v2-12b, ReadyArt/Forgotten-Safeword-12B-v4.0, inflatebot/MN-12B-Mag-Mell-R1, Gryphe/Pantheon-RP-1.6.1-12b-Nemo, ChaoticNeutrals/Nera_Noctis-12B, FallenMerick/MN-Violet-Lotus-12B, Elizezen/Himeyuri-v0.1-12B, MuXodious/Wayfarer-2-12B-absolute-heresy, ArliAI/Mistral-Nemo-12B-ArliAI-RPMax-v1.2, SicariusSicariiStuff/Impish_Bloodmoon_12B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RicardoEstep/RPBizkit-v8-12B · Hugging Face",
+      "url": "https://huggingface.co/RicardoEstep/RPBizkit-v8-12B",
+      "snippet": "RicardoEstep / RPBizkit-v8-12B Like 1 Text Generation Transformers Safetensors mistral mergekit Merge Not-For-All-Audiences text-generation-inference arxiv:2403.19522 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "RicardoEstep (Ricardo_estep) - Hugging Face",
+      "url": "https://huggingface.co/RicardoEstep/models",
+      "snippet": "updated a collection 3 months ago liked a model 4 months ago"
+    },
+    {
+      "title": "Run RPBizkit-v7-12B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/RicardoEstep/RPBizkit-v7-12B",
+      "snippet": "RicardoEstep/RPBizkit-v7-12B is a 12.2 billion parameter experimental language model built upon the Mistral Nemo architecture. It leverages a sophisticated five-part \"Model Stock\" merging process, utilizing Mergekit to combine and filter various base models."
+    },
+    {
+      "title": "RicardoEstep/RPBizkit-12B - Fast, Reliable, and Scalable Inference on ...",
+      "url": "https://friendli.ai/models/RicardoEstep/RPBizkit-12B",
+      "snippet": "Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "Run RPBizkitRemiX-v1-12B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/RicardoEstep/RPBizkitRemiX-v1-12B",
+      "snippet": "RicardoEstep/RPBizkitRemiX-v1-12B is an experimental 12 billion parameter language model developed by RicardoEstep. It was created by merging multiple prior models from RicardoEstep&#x27;s collection, specifically using the \"Model Stock\" merge method and Mergekit, with RicardoEstep/RPBizkit-v6-12B serving as the base model."
+    }
+  ]
+}

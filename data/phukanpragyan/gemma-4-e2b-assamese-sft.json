@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "phukanpragyan/gemma-4-e2b-assamese-sft",
+  "slug": "phukanpragyan-gemma-4-e2b-assamese-sft",
+  "author": "phukanpragyan",
+  "url": "https://huggingface.co/phukanpragyan/gemma-4-e2b-assamese-sft",
+  "created_at": "2026-09-23T19:20:11.000Z",
+  "updated_at": "2026-09-23T19:23:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5651719747,
+  "parameters_human": "5.65B",
+  "storage_bytes": 11338211543,
+  "storage_human": "11.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "phukanpragyan/gemma-4-e2b-assamese-sft-v2 · Hugging Face",
+      "url": "https://huggingface.co/phukanpragyan/gemma-4-e2b-assamese-sft-v2",
+      "snippet": "phukanpragyan / gemma-4-e2b-assamese-sft-v2 Like 0 Text Generation PEFT TensorBoard Safetensors Transformers gemma4 image-text-to-text lora sft trl Model card FilesFiles and versions xet MetricsTraining metrics Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "phukanpragyan/gemma-4-e2b-assamese-sft-v4 at main - Hugging Face",
+      "url": "https://huggingface.co/phukanpragyan/gemma-4-e2b-assamese-sft-v4/tree/main",
+      "snippet": "phukanpragyan / gemma-4-e2b-assamese-sft-v4 Like 0 Image-Text-to-Text Transformers Safetensors gemma4 arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "gemma-4-e2b-assamese-sft-v4 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/phukanpragyan/gemma-4-e2b-assamese-sft-v4",
+      "snippet": "Deploy gemma-4-e2b-assamese-sft-v4 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - MrLIChuan/gemma",
+      "url": "https://github.com/MrLIChuan/gemma",
+      "snippet": "Gemma 4 E2B runs locally. Task-specific SFT, domain-balanced GRPO, and structured tool calling teach the model to perform real device-side actions (weather, maps, messaging) without sending the core loop to the cloud."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    }
+  ]
+}

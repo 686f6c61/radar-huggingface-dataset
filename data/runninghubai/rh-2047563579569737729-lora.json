@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-2047563579569737729-lora",
+  "slug": "runninghubai-rh-2047563579569737729-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-2047563579569737729-lora",
+  "created_at": "2026-09-23T19:50:00.000Z",
+  "updated_at": "2026-09-23T19:51:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87354203,
+  "storage_human": "87 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHub AI | Image, Video & Workflow Creation",
+      "url": "https://runninghubai.pro/",
+      "snippet": "RunningHub AI creative canvas Turn a thought into a world with RunningHub AI. One focused place for image generation, cinematic video, and repeatable AI workflows. Start with a sentence, shape the details, and keep every idea moving."
+    },
+    {
+      "title": "RunningHub",
+      "url": "https://www.runninghub.ai/workspace",
+      "snippet": "Create and run AI workflows online with RunningHub&#x27;s cloud-based platform, offering fast and error-free results for various creative projects."
+    },
+    {
+      "title": "README.md · RunningHubAI/rh-wan2.2-i2v-lightx2v-4steps-lora-v1-low ...",
+      "url": "https://huggingface.co/RunningHubAI/rh-wan2.2-i2v-lightx2v-4steps-lora-v1-low-noise.safetensors-lora/blob/main/README.md",
+      "snippet": "About this model This repository provides rh-wan2.2-i2v-lightx2v-4steps-lora-v1-low-noise.safetensors-lora weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "RunningHub",
+      "url": "https://www.runninghub.ai/ai-generator",
+      "snippet": "RunningHub ... RunningHub"
+    },
+    {
+      "title": "RunningHubAI (RunningHub.ai) - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI",
+      "snippet": "One API Powering All-Modal AI Productivity. Recent Activity. updated a model about 1 hour ago. RunningHubAI/rh-minimax-h3-fl2v-turbo-4step-v1.-768p-comfyui-bf16 ..."
+    }
+  ]
+}

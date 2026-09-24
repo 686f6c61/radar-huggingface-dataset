@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aether-models/smollm3-3b",
+  "slug": "aether-models-smollm3-3b",
+  "author": "aether-models",
+  "url": "https://huggingface.co/aether-models/smollm3-3b",
+  "created_at": "2026-09-23T21:46:33.000Z",
+  "updated_at": "2026-09-23T22:40:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "aether",
+    "core-ai",
+    "apple",
+    "macos",
+    "ios",
+    "text-generation",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:finetune:HuggingFaceTB/SmolLM3-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6552612230,
+  "storage_human": "6.6 GB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TD Login - EasyWeb",
+      "url": "https://easyweb.td.com/waw/ezw/servlet/ca.tdbank.banking.servlet.DefaultServlet?start",
+      "snippet": "TD Login - EasyWeb ... TD LoginRead more"
+    },
+    {
+      "title": "EasyWeb Login",
+      "url": "https://easyweb.td.com/waw/ezw/index.jsp?channelCode=IOL",
+      "snippet": "EasyWeb Login ... EasyWeb LoginRead more"
+    },
+    {
+      "title": "EasyWeb",
+      "url": "https://easyweb.td.com/ui/ew/fs",
+      "snippet": "EasyWeb ... EasyWebRead more"
+    },
+    {
+      "title": "EasyWeb",
+      "url": "https://easyweb.td.com/ui/assets/ushell/",
+      "snippet": "Manage your EasyWeb preferences securely with TD Canada Trust.Read more"
+    }
+  ]
+}

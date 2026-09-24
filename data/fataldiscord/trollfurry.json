@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "fataldiscord/trollfurry",
+  "slug": "fataldiscord-trollfurry",
+  "author": "fataldiscord",
+  "url": "https://huggingface.co/fataldiscord/trollfurry",
+  "created_at": "2026-09-23T22:46:34.000Z",
+  "updated_at": "2026-09-23T22:46:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Troll AI Models | PixAI",
+      "url": "https://pixai.art/en/tags/model/troll",
+      "snippet": "Discover Troll AI models on PixAI - Find anime AI models and LoRAs tagged with Troll"
+    },
+    {
+      "title": "trollfurry Discord Emote - myEmotes",
+      "url": "https://myemotes.io/emotes/trollfurry",
+      "snippet": "\":trollfurry:\" is a free static emote with a transparent background, uploaded by ichbinemi. Tagged #meme, #funny, and #discord."
+    },
+    {
+      "title": "Perchance AI Furry Generator",
+      "url": "https://perchance.org/ai-furry-generator",
+      "snippet": "Generate free furry AI art & fursona, free, unlimited, no sign-up. Join the Perchance community for AI character roleplay and prompts, powered by FLUX."
+    },
+    {
+      "title": "Furry AI Generator Features: Models and Sizes Yiff-AI.com",
+      "url": "https://yiff-ai.com/features",
+      "snippet": "What Yiff AI does: high-quality furry image generation, optimized models, multiple sizes, easy interface, public/private galleries, flexible plans."
+    },
+    {
+      "title": "lunarfish/furrydiffusion · Hugging Face",
+      "url": "https://huggingface.co/lunarfish/furrydiffusion",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_basisresmix_remove50",
+  "slug": "jeesup-svd-safety-l2_basisresmix_remove50",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_basisresmix_remove50",
+  "created_at": "2026-09-23T20:46:13.000Z",
+  "updated_at": "2026-09-23T21:05:28.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Art Generator: Mads Mikkelsen NSFW - neural.love",
+      "url": "https://neural.love/ai-art-generator/1ed7a29f-9c34-624a-b135-ab84cd7f344c/mads-mikkelsen-nsfw",
+      "snippet": "Mads Mikkelsen NSFW | Anime | Publicly generated with Free AI Art Generator β on Monday 12th of December 2022 at 02:33:42 PM"
+    },
+    {
+      "title": "MADS MIKKELSEN Nude - AZMen",
+      "url": "https://www.azmen.com/view/celeb/m/madsmikkelsen-72937.html",
+      "snippet": "MADS MIKKELSEN nude - 97 images and 29 videos - including scenes from \"Flickering Lights\" - \"Torremolinos 73\" - \"With Blood on …"
+    },
+    {
+      "title": "AI-generated image of Mads Mikkelsen at a restaurant with an ...",
+      "url": "https://www.aiornot.com/tracker/image/ai-generated-mads-mikkelsen-restaurant",
+      "snippet": "An image appearing to show a man resembling Mads Mikkelsen seated at a restaurant table beside an unidentified woman in a white …"
+    },
+    {
+      "title": "Mads Mikkelsen — AI Image Tracker",
+      "url": "https://www.aiornot.com/tracker/image/by-subject/mads-mikkelsen",
+      "snippet": "AI-generated image of Mads Mikkelsen at a restaurant with an unidentified woman Mads Mikkelsen celebrity celebrity-deepfake …"
+    },
+    {
+      "title": "NSFW Twitter thread of all of Mads Mikkelsen's sex scenes",
+      "url": "https://www.reddit.com/r/MadsMikkelsen/comments/z6i5n5/nsfw_twitter_thread_of_all_of_mads_mikkelsens_sex/",
+      "snippet": "Nov 28, 2022 · All of Mads’ sex scenes in one thread. Saw this on Twitter today and thought some of you may appreciate it. Some …"
+    }
+  ]
+}

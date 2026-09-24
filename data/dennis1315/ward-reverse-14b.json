@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Dennis1315/ward-reverse-14b",
+  "slug": "dennis1315-ward-reverse-14b",
+  "author": "Dennis1315",
+  "url": "https://huggingface.co/Dennis1315/ward-reverse-14b",
+  "created_at": "2026-09-23T22:34:33.000Z",
+  "updated_at": "2026-09-23T22:45:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dennis1315 (Rojas) - Hugging Face",
+      "url": "https://huggingface.co/Dennis1315/models",
+      "snippet": "Dennis1315&#x27;s models2 Sort: Recently updated Dennis1315/cypher-v8-upload-test Updated about 5 hours ago"
+    },
+    {
+      "title": "Dennis1315 (Rojas) - Hugging Face",
+      "url": "https://huggingface.co/Dennis1315/datasets",
+      "snippet": "Recent Activity updated a model1 day ago Dennis1315/cypher-MED-PRM-8B-v8-GGUF published a model1 day ago Dennis1315/cypher-MED-PRM-8B-v8-GGUF updated a model1 day ago Dennis1315/cypher-CODE-PRM-8B-v8-GGUF View all activity"
+    },
+    {
+      "title": "GitHub - OrionStarAI/Orion: Orion-14B is a family of models includes a ...",
+      "url": "https://github.com/OrionStarAI/Orion",
+      "snippet": "Orion-14B is a family of models includes a 14B foundation LLM, and a series of models: a chat model, a long context model, a quantized model, a RAG fine-tuned model, and an Agent fine-tuned model."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated September 2026."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

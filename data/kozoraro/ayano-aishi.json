@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "KozoRaro/Ayano-Aishi",
+  "slug": "kozoraro-ayano-aishi",
+  "author": "KozoRaro",
+  "url": "https://huggingface.co/KozoRaro/Ayano-Aishi",
+  "created_at": "2026-09-23T20:07:08.000Z",
+  "updated_at": "2026-09-23T20:07:08.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ayano Aishi Yandere Simulator - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1930446050281956771-Ayano-Aishi-Yandere-Simulator",
+      "snippet": "Generate stunning yansim anime art with the &#x27;Ayano Aishi Yandere Simulator&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Ayano Aishi - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1641575341333951036",
+      "snippet": "Generate stunning ayano, yandere_simulator, ayano_aishi, yan_chan, yandere_chan anime art with the &#x27;Ayano Aishi&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "yanderesimulator Ayano Aishi - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/3cd4a0d161e1d814d60dd2a4ae031e03",
+      "snippet": "Explore yanderesimulator Ayano Aishi model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Ayano Aishi (Yandere Simulator) - COMMISSION LoRA Illustrious [ Support ]",
+      "url": "https://www.seaart.ai/models/detail/5151831d5264821a5e5003be99fb56b0",
+      "snippet": "Explore Ayano Aishi (Yandere Simulator) - COMMISSION LoRA Illustrious [ Support ] model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Beautiful Japanese Girl - AI Ayano | Tensor.Art",
+      "url": "https://tensor.art/models/694755812742083999",
+      "snippet": "Download Beautiful Japanese Girl - AI Ayano - free LORA SD 1.5 AI model on TENSOR. AYANO, EXCLUSIVE, BEAUTY. By Meat_Lover"
+    }
+  ]
+}

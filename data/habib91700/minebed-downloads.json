@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Habib91700/minebed-downloads",
+  "slug": "habib91700-minebed-downloads",
+  "author": "Habib91700",
+  "url": "https://huggingface.co/Habib91700/minebed-downloads",
+  "created_at": "2026-09-23T21:08:02.000Z",
+  "updated_at": "2026-09-23T22:22:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8025989,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Bay | Find And Download Open AI",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "Search open models, compare licenses, inspect source records, and download hosted files with published SHA-256 hashes. Check each artifact page for its current run status."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "Free Roblox Models Download | RobloxBay",
+      "url": "https://robloxbay.com/roblox-models",
+      "snippet": "Download free Roblox models for your games. Find 3D assets, buildings, vehicles, weapons, and environment props for Roblox Studio."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AI Model Downloads - 495 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

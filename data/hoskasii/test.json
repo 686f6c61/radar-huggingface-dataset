@@ -5,7 +5,7 @@
   "author": "hoskasii",
   "url": "https://huggingface.co/hoskasii/test",
   "created_at": "2026-09-23T12:58:41.000Z",
-  "updated_at": "2026-09-23T14:30:23.000Z",
+  "updated_at": "2026-09-23T22:04:43.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "feature-extraction",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 24470473,
   "parameters_human": "24.5M",
-  "storage_bytes": 293736492,
-  "storage_human": "294 MB",
+  "storage_bytes": 979121640,
+  "storage_human": "979 MB",
   "base_model": null,
   "formats": [
     "safetensors"

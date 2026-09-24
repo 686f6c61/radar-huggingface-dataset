@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LensVLM-9B-GGUF",
+  "slug": "mradermacher-lensvlm-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LensVLM-9B-GGUF",
+  "created_at": "2026-09-24T00:58:33.000Z",
+  "updated_at": "2026-09-24T02:02:00.000Z",
+  "license": "apple-amlr",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "vision-language-model",
+    "long-context",
+    "visual-text-compression",
+    "en",
+    "base_model:apple/LensVLM-9B",
+    "base_model:quantized:apple/LensVLM-9B",
+    "license:apple-amlr",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 82967484864,
+  "storage_human": "83.0 GB",
+  "base_model": "apple/LensVLM-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sex videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/sex",
+      "snippet": "Having sex in the hotel room! Por fin me quede solo con la empleada de servico termino dandole una dura follada por su apretado culo.Read more"
+    },
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/",
+      "snippet": "XVideos.com is a free hosting service for porn videos. We convert your files to various formats. You can grab our 'embed code' to …"
+    },
+    {
+      "title": "Newest Sex Videos - SexVid.xxx",
+      "url": "https://www.sexvid.xxx/p/date/",
+      "snippet": "Daily updates at SexVid.xxx present always fresh XXX content for free. Just watch the latest added XXX videos and tons of new sex …"
+    },
+    {
+      "title": "Vidéos sex - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/tags/sex",
+      "snippet": "J'ai surpris ma demi-sœur aux grosses fesses pendant qu'on regardait un film, j'ai enfoncé mon énorme bite directement dans sa …"
+    },
+    {
+      "title": "Free Sex Videos, HD Porn Movies | New XXX Videos at Worldsex",
+      "url": "https://www.worldsex.com/videos/",
+      "snippet": "Watch the latest free porn videos of the highest quality. Our XXX sex movies update very frequently. Play clips from the best XXX …"
+    }
+  ]
+}

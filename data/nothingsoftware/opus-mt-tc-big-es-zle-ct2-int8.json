@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NothingSoftware/opus-mt-tc-big-es-zle-ct2-int8",
+  "slug": "nothingsoftware-opus-mt-tc-big-es-zle-ct2-int8",
+  "author": "NothingSoftware",
+  "url": "https://huggingface.co/NothingSoftware/opus-mt-tc-big-es-zle-ct2-int8",
+  "created_at": "2026-09-23T21:35:27.000Z",
+  "updated_at": "2026-09-23T21:35:34.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "ctranslate2",
+  "languages": [
+    "es",
+    "ru"
+  ],
+  "tags": [
+    "ctranslate2",
+    "translation",
+    "opus-mt-tc",
+    "int8",
+    "es",
+    "ru",
+    "base_model:Helsinki-NLP/opus-mt-tc-big-es-zle",
+    "base_model:finetune:Helsinki-NLP/opus-mt-tc-big-es-zle",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 244495634,
+  "storage_human": "244 MB",
+  "base_model": "Helsinki-NLP/opus-mt-tc-big-es-zle",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · Helsinki-NLP/opus-mt-tc-big-en-es at main",
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-en-es/blob/main/README.md",
+      "snippet": "opus-mt-tc-big-en-es Neural machine translation model for translating from English (en) to Spanish (es). This model is part of the OPUS-MT project, an effort to make neural machine translation models widely available and accessible for many languages in the world."
+    },
+    {
+      "title": "GitHub - Helsinki-NLP/Opus-MT: Open neural machine translation models ...",
+      "url": "https://github.com/Helsinki-NLP/Opus-MT",
+      "snippet": "There is a Makefile for training new models from OPUS data in the Opus-MT-train repository, but this is heavily customized for the work environment at CSC and the University of Helsinki projects. This will (hopefully) be more generic in the future to be able to run in different environments and setups as well."
+    },
+    {
+      "title": "Helsinki-NLP/opus-mt-tc-big-es-zle · Hugging Face",
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-es-zle",
+      "snippet": "opus-mt-tc-big-es-zle Neural machine translation model for translating from Spanish (es) to East Slavic languages (zle). This model is part of the OPUS-MT project, an effort to make neural machine translation models widely available and accessible for many languages in the world."
+    },
+    {
+      "title": "GPT-6 Sol: Release Intelligence, Performance & Price",
+      "url": "https://artificialanalysis.ai/models/releases/gpt-6-sol",
+      "snippet": "The GPT-6 Sol release offers 6 models, each with different intelligence, performance, and pricing characteristics. Below is a comparison of the key metrics across the 6 models. For intelligence, the top model of GPT-6 Sol is GPT-6 Sol (max) at 48. For output speed, the fastest model is GPT-6 Sol (xhigh) at 134 t/s. For latency, GPT-6 Sol (Non-reasoning) at 0.97s offers the lowest time to first ..."
+    },
+    {
+      "title": "Democratizing Neural Machine Translation with OPUS-MT",
+      "url": "https://arxiv.org/pdf/2212.01936",
+      "snippet": "Abstract This paper presents the OPUS ecosystem with a focus on the development of open machine translation models and tools, and their integration into end-user applications, development platforms and professional workflows. We discuss our ongoing mission of increasing language coverage and translation quality, and also describe ongoing work on the development of modular translation models ..."
+    }
+  ]
+}

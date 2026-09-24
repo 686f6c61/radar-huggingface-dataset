@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mahesh006/PRISM_V22_CONFERENCE_READY_FINAL",
+  "slug": "mahesh006-prism_v22_conference_ready_final",
+  "author": "mahesh006",
+  "url": "https://huggingface.co/mahesh006/PRISM_V22_CONFERENCE_READY_FINAL",
+  "created_at": "2026-09-23T21:31:45.000Z",
+  "updated_at": "2026-09-23T21:36:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 791432739,
+  "storage_human": "791 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prism | A free, LaTeX Editor and AI-native workspace for scientists",
+      "url": "https://openai.com/prism/",
+      "snippet": "Prism Introducing a free, AI-first, LaTeX editor and scientific workspace that integrates ChatGPT and Codex directly into scientific writing and collaboration."
+    },
+    {
+      "title": "mahesh006 (Mahesh Vasamsetti) - Hugging Face",
+      "url": "https://huggingface.co/mahesh006/datasets",
+      "snippet": "User profile of Mahesh Vasamsetti on Hugging Face"
+    },
+    {
+      "title": "GitHub - Offensive-AI-Lab/prism-eval",
+      "url": "https://github.com/Offensive-AI-Lab/prism-eval",
+      "snippet": "Evaluation code and data for PRISM: Recovering Instruction Sets from Language Model Activations, accepted to the EMNLP 2026 Main Conference. PRISM reads a language model&#x27;s activations and reports the instructions represented in them. This repository evaluates those reports against known instruction ..."
+    },
+    {
+      "title": "GitHub - ytC2026/ICML2026-PRISM: ICML2026-PRISM",
+      "url": "https://github.com/ytC2026/ICML2026-PRISM",
+      "snippet": "PRISM (P arameter-less R ecognition based on I ntrinsic S tatistical M odeling) is a training-free, text-guided framework for video anomaly detection. It uses frozen multimodal embedding models and constructs decorrelated semantic anomaly axes through text-side statistical whitening."
+    },
+    {
+      "title": "Prism - AI LaTeX Editor",
+      "url": "https://prism.openai.com/",
+      "snippet": "An AI powered LaTeX editor that runs in your browser."
+    }
+  ]
+}

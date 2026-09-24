@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "MorinoNushi/MiMo-V2.6-Flash-RL-Uncensored-Heretic-GGUF",
+  "slug": "morinonushi-mimo-v2-6-flash-rl-uncensored-heretic-gguf",
+  "author": "MorinoNushi",
+  "url": "https://huggingface.co/MorinoNushi/MiMo-V2.6-Flash-RL-Uncensored-Heretic-GGUF",
+  "created_at": "2026-09-23T23:34:00.000Z",
+  "updated_at": "2026-09-24T00:43:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "abliterated",
+    "heretic",
+    "mimo",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308778780864,
+  "parameters_human": "308.78B",
+  "storage_bytes": 167369465120,
+  "storage_human": "167.4 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - farion1231/cc-switch: A cross-platform desktop All-in-One ...",
+      "url": "https://github.com/farion1231/cc-switch",
+      "snippet": "Modern AI-powered coding relies on tools like Claude Code, Claude Desktop, Codex, Gemini CLI, Grok Build, OpenCode, …"
+    },
+    {
+      "title": "Claude Code Router - GitHub",
+      "url": "https://github.com/musistudio/claude-code-router",
+      "snippet": "One local control plane for every AI agent: route across models, fuse new capabilities, orchestrate tools, and stay fully in control. - …"
+    },
+    {
+      "title": "Models and pricing for GitHub Copilot",
+      "url": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing",
+      "snippet": "Individual plans (Copilot Free, Copilot Pro, Copilot Pro+, and Copilot Max) include GitHub AI Credits allowances that vary by plan. …"
+    },
+    {
+      "title": "Supported AI models in GitHub Copilot",
+      "url": "https://docs.github.com/copilot/reference/ai-models/supported-models",
+      "snippet": "For all of the default AI models, input prompts and output completions run through GitHub Copilot's content filters for harmful, …"
+    },
+    {
+      "title": "Cách tạo PowerPoint bằng Claude AI đơn giản và chi tiết",
+      "url": "https://cellphones.com.vn/sforum/cach-tao-powerpoint-bang-claude-ai",
+      "snippet": "May 31, 2026 · Tạo PowerPoint bằng Claude AI đang trở thành một xu hướng mới trong cách chuẩn bị bài thuyết trình hiện đại."
+    }
+  ]
+}

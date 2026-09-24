@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "KozoRaro/ayano-aishi-rvc",
+  "slug": "kozoraro-ayano-aishi-rvc",
+  "author": "KozoRaro",
+  "url": "https://huggingface.co/KozoRaro/ayano-aishi-rvc",
+  "created_at": "2026-09-23T22:22:32.000Z",
+  "updated_at": "2026-09-23T22:40:49.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73838640,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ayano Aishi (Yandere Simulator) (English) [RVC v2] [300 Epochs] AI ...",
+      "url": "https://voice-models.com/model/a3o",
+      "snippet": "Ayano Aishi (Yandere Simulator) (English) [RVC v2] [300 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Ayano Aishi (Yandere Simulator) (RVC v2) 300 Epoch AI Voice Model",
+      "url": "https://voice-models.com/model/1oh8lK7vhhw",
+      "snippet": "Ayano Aishi (Yandere Simulator) (RVC v2) 300 Epoch AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Convert Ayano Aishi (Yandere Simulator) (RVC V2) Voice Online",
+      "url": "https://easyaivoice.com/run/ayano-aishi-yandere-simulator",
+      "snippet": "Use the Ayano Aishi (Yandere Simulator) (RVC V2) voice model online with EasyAIVoice. Upload audio, adjust pitch, and convert speech or vocals."
+    },
+    {
+      "title": "Convert Ayano Aishi (Yandere Simulator) (RVC V2 | RVMPE | Legacy Core ...",
+      "url": "https://easyaivoice.com/run/ayano-aishi-yandere-simulator-rvmpe-legacy-core",
+      "snippet": "Use the Ayano Aishi (Yandere Simulator) (RVC V2 | RVMPE | Legacy Core Pretrain) voice model online with EasyAIVoice. Upload audio, adjust pitch, and convert speech or vocals."
+    },
+    {
+      "title": "Ayano Aishi (Yandere Simulator) AI Voice Generator",
+      "url": "https://www.vocalize.fm/voices/5760",
+      "snippet": "Generate realistic AI speech and music covers using the AI voice of Ayano Aishi (Yandere Simulator). We provide access to over 80,000 AI voices for free."
+    }
+  ]
+}

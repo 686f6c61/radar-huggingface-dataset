@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "autmoate/cactus-needle3-calendar",
+  "slug": "autmoate-cactus-needle3-calendar",
+  "author": "autmoate",
+  "url": "https://huggingface.co/autmoate/cactus-needle3-calendar",
+  "created_at": "2026-09-23T22:24:48.000Z",
+  "updated_at": "2026-09-23T22:27:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "cactus-needle",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "cactus-needle",
+    "tool-calling",
+    "function-calling",
+    "calendar",
+    "on-device",
+    "needle",
+    "multi-call",
+    "de",
+    "en",
+    "base_model:Cactus-Compute/needle3",
+    "base_model:finetune:Cactus-Compute/needle3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63437076,
+  "storage_human": "63 MB",
+  "base_model": "Cactus-Compute/needle3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cactus-Compute/needle3 · Hugging Face",
+      "url": "https://huggingface.co/Cactus-Compute/needle3",
+      "snippet": "A foundation model for mobiles, wearables, robots, smart home, automotive and microcontrollers. The whole model is a single 8-29 MB file, and we trade general chat capacity to beat models 10x its size on mobile tool calls and match 2-3x bigger models on extraction."
+    },
+    {
+      "title": "Needle 3 - 8-29 MB foundation model for tiny devices | Cactus",
+      "url": "https://cactuscompute.com/needle",
+      "snippet": "Needle 3 Automation Foundation Model For Tiny Devices One set of weights, every depth from 2 to 20 layers is a model of its own: an intelligence ladder."
+    },
+    {
+      "title": "GitHub - cactus-compute/needle: Automation foundation model for tiny ...",
+      "url": "https://github.com/cactus-compute/needle",
+      "snippet": "Automation foundation model for tiny devices: 2-bit, 8-29 MB, tool calls, structured extraction and embeddings on phones, wearables, smart homes, robots, cars and microcontrollers. - cactus-compute..."
+    },
+    {
+      "title": "Needle 3: Running a Tiny On-Device Tool-Calling AI Model",
+      "url": "https://www.mindstudio.ai/blog/cactus-needle-3-on-device-tool-calling-model",
+      "snippet": "Needle 3 packs tool calling, extraction and embeddings into an 8-29MB file. Here&#x27;s how the model works and how to deploy it on-device."
+    },
+    {
+      "title": "Cactus-Compute/needle · Hugging Face",
+      "url": "https://huggingface.co/Cactus-Compute/needle",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

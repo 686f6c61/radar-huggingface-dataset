@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/assay-0.6b-GGUF",
+  "slug": "mradermacher-assay-0-6b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/assay-0.6b-GGUF",
+  "created_at": "2026-09-23T23:48:09.000Z",
+  "updated_at": "2026-09-23T23:51:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "assay",
+    "calibrated",
+    "decision-model",
+    "zero-shot-classification",
+    "en",
+    "base_model:Berk/assay-0.6b",
+    "base_model:quantized:Berk/assay-0.6b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 5697957504,
+  "storage_human": "5.7 GB",
+  "base_model": "Berk/assay-0.6b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The sick online ‘rape academies’ where Dominique Pelicot-obsessed ...",
+      "url": "https://www.thesun.co.uk/news/38649688/dominic-pelicot-creeps-swap-tips-video-assaults-sleeping-wives/",
+      "snippet": "Mar 28, 2026 · In social messaging chats linked to the platforms, men are boasting about how they’ve filmed their unconscious …"
+    },
+    {
+      "title": "Pelicot rape case - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pelicot_rape_case",
+      "snippet": "Pelicot rape case ... Over a period of nine years, from July 2011 to October 2020, Dominique Pelicot, a man from Mazan in south …"
+    },
+    {
+      "title": "'Rape chat' groups with 70,000 members uncovered",
+      "url": "https://www.dailymail.com/news/article-14210781/rape-chat-groups-sisters-mothers-advice-uncovered.html",
+      "snippet": "Dec 19, 2024 · An investigation has uncovered multiple 'rape chats' where thousands of men discuss how to rape and sexually …"
+    },
+    {
+      "title": "CrushOn.AI: AI Girlfriend Chat & AI Roleplay - Start Now",
+      "url": "https://chat.crushon.ai/",
+      "snippet": "Chat with 8M+ AI characters on CrushOn.AI — AI girlfriends, boyfriends, anime characters & roleplay companions with persistent …"
+    },
+    {
+      "title": "Chat with Unaware Wife | character.ai | AI Chat, Reimagined–Your …",
+      "url": "https://character.ai/character/yDDrxyti/unsuspecting-professor-and-wife",
+      "snippet": "Chat with Unaware Wife: Unsuspecting professor and wife. Powered by an industry leading, AI large language model (LLM)."
+    }
+  ]
+}

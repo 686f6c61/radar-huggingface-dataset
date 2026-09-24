@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "flavianv/qwen3-4b-musical-instruments-id-overlap-ranker-final-20260923",
+  "slug": "flavianv-qwen3-4b-musical-instruments-id-overlap-ranker-final-20260923",
+  "author": "flavianv",
+  "url": "https://huggingface.co/flavianv/qwen3-4b-musical-instruments-id-overlap-ranker-final-20260923",
+  "created_at": "2026-09-23T19:19:07.000Z",
+  "updated_at": "2026-09-23T19:19:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reward-model",
+    "head-only",
+    "qwen3",
+    "musical-instruments",
+    "base_model:flavianv/qwen3-4b-musical-instruments-full-sft-shared-20260923",
+    "base_model:finetune:flavianv/qwen3-4b-musical-instruments-full-sft-shared-20260923",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11803,
+  "storage_human": "11803 B",
+  "base_model": "flavianv/qwen3-4b-musical-instruments-full-sft-shared-20260923",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "Qwen3-ASR is an open-source series of ASR models developed by the Qwen team at Alibaba Cloud, supporting stable multilingual speech/music/song recognition, language detection and timestamp prediction."
+    },
+    {
+      "title": "Qwen3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3",
+      "snippet": "The latest version of the Qwen3 model family, featuring 4B, 30B, and 235B dense and MoE models, both thinking and non-thinking variants."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL-Embedding",
+      "url": "https://github.com/QwenLM/Qwen3-VL-Embedding",
+      "snippet": "The Qwen3-VL-Embedding and Qwen3-VL-Reranker model series are the latest additions to the Qwen family, built upon the recently open-sourced and powerful Qwen3-VL foundation model. Specifically designed for multimodal information retrieval and cross-modal understanding, this suite accepts diverse inputs including text, images, screenshots, and videos, as well as inputs containing a mixture of ..."
+    }
+  ]
+}

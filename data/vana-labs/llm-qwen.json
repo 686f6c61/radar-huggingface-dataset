@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Vana-Labs/llm-qwen",
+  "slug": "vana-labs-llm-qwen",
+  "author": "Vana-Labs",
+  "url": "https://huggingface.co/Vana-Labs/llm-qwen",
+  "created_at": "2026-09-23T21:08:26.000Z",
+  "updated_at": "2026-09-23T21:08:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "tetro",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 4021773728,
+  "storage_human": "4.0 GB",
+  "base_model": "Qwen/Qwen3.5-2B, Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Qwen - lablab.ai",
+      "url": "https://lablab.ai/tech/qwen",
+      "snippet": "Qwen-Image-2. Qwen-Image-2. is a 7B-parameter image generation model supporting photorealism, professional typography, and unified generation-editing workflows, released in February 2026. Qwen-MT Qwen-MT is a translation model covering 92 major languages and dialects, reaching over 95% of the global population."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Qwen3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3",
+      "snippet": "The latest version of the Qwen3 model family, featuring 4B, 30B, and 235B dense and MoE models, both thinking and non-thinking variants."
+    },
+    {
+      "title": "GitHub - latent-labs-ai/Qwen2-VL: Qwen2-VL is the multimodal large ...",
+      "url": "https://github.com/latent-labs-ai/Qwen2-VL",
+      "snippet": "Qwen2-VL is the multimodal large language model series developed by Qwen team, Alibaba Cloud. - latent-labs-ai/Qwen2-VL"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Brunobkr",
   "url": "https://huggingface.co/Brunobkr/OFFFELLIA_Qwen3.6-35B-A3B-OMEGA-vibe-code.gguf",
   "created_at": "2026-09-23T12:08:45.000Z",
-  "updated_at": "2026-09-23T12:37:16.000Z",
+  "updated_at": "2026-09-23T15:10:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "gguf",
+    "doi:10.57967/hf/10570",
     "region:us"
   ],
   "likes": 0,
@@ -20,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 19796420707,
-  "storage_human": "19.8 GB",
+  "storage_bytes": 126076244707,
+  "storage_human": "126.1 GB",
   "base_model": null,
   "formats": [
     "gguf"

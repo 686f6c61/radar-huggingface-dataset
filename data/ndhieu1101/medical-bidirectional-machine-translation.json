@@ -5,7 +5,7 @@
   "author": "ndhieu1101",
   "url": "https://huggingface.co/ndhieu1101/medical-bidirectional-machine-translation",
   "created_at": "2026-09-20T00:10:13.000Z",
-  "updated_at": "2026-09-21T07:12:56.000Z",
+  "updated_at": "2026-09-23T06:47:47.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 102,
+  "downloads_30d": 104,
   "trending_score": 0,
   "parameters": 275102976,
   "parameters_human": "275.1M",
-  "storage_bytes": 3302438839,
-  "storage_human": "3.3 GB",
+  "storage_bytes": 4402884383,
+  "storage_human": "4.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

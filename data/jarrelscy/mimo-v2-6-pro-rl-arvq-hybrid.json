@@ -5,7 +5,7 @@
   "author": "jarrelscy",
   "url": "https://huggingface.co/jarrelscy/MiMo-V2.6-Pro-RL-ARVQ-hybrid",
   "created_at": "2026-09-22T11:43:14.000Z",
-  "updated_at": "2026-09-23T02:31:42.000Z",
+  "updated_at": "2026-09-23T22:11:04.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,13 +22,13 @@
     "nvfp4_arvq_hybrid",
     "region:us"
   ],
-  "likes": 2,
+  "likes": 3,
   "downloads_30d": 652,
   "trending_score": 0,
   "parameters": 118995574417,
   "parameters_human": "119.00B",
-  "storage_bytes": 503760173324,
-  "storage_human": "503.8 GB",
+  "storage_bytes": 659964586060,
+  "storage_human": "660.0 GB",
   "base_model": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
   "formats": [
     "safetensors"

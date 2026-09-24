@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Medyassino/SEC-devsecops",
+  "slug": "medyassino-sec-devsecops",
+  "author": "Medyassino",
+  "url": "https://huggingface.co/Medyassino/SEC-devsecops",
+  "created_at": "2026-09-23T19:54:28.000Z",
+  "updated_at": "2026-09-23T19:56:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149606402,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598439784,
+  "storage_human": "598 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI for DevSecOps: A Landscape and Future Opportunities",
+      "url": "https://dl.acm.org/doi/full/10.1145/3712190",
+      "snippet": "This article seeks to contribute to the critical intersection of AI and DevSecOps by presenting a comprehensive landscape of AI-driven security techniques applicable to DevOps and identifying avenues for enhancing security, trust, and efficiency in software development processes. We analyzed 99 research papers spanning from 2017 to 2023."
+    },
+    {
+      "title": "AI in DevSecOps: Must Read for 2026",
+      "url": "https://www.practical-devsecops.com/ai-in-devsecops/",
+      "snippet": "Today, organizations are adopting DevSecOps practices to integrate security into their software development lifecycle. As technology continues to advance, AI (Artificial Intelligence) is playing an increasingly vital role in enhancing DevSecOps processes. In this article, we will explore the impact of AI in DevSecOps and how it is revolutionizing the field of cybersecurity."
+    },
+    {
+      "title": "AI for DevSecOps: A Landscape and Future Opportunities",
+      "url": "https://arxiv.org/abs/2404.04839",
+      "snippet": "This paper seeks to contribute to the critical intersection of AI and DevSecOps by presenting a comprehensive landscape of AI-driven security techniques applicable to DevOps and identifying avenues for enhancing security, trust, and efficiency in software development processes. We analyzed 99 research papers spanning from 2017 to 2023."
+    },
+    {
+      "title": "AI-Powered Cloud & DevOps Services | DevSecCops.ai",
+      "url": "https://devseccops.ai/",
+      "snippet": "Modernize, secure, and optimize your cloud with AI-powered DevOps, migration, security, FinOps, SRE, and cloud advisory services."
+    },
+    {
+      "title": "Modernize DevSecOps with AI-Driven Security | DeSecOps.ai",
+      "url": "https://desecops.ai/",
+      "snippet": "Embed AI-driven security across your DevSecOps pipeline. DeSecOps.ai secures cloud, CI/CD, containers & compliance from day one — without slowing delivery."
+    }
+  ]
+}

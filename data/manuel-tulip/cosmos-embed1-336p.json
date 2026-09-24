@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "manuel-tulip/Cosmos-Embed1-336p",
+  "slug": "manuel-tulip-cosmos-embed1-336p",
+  "author": "manuel-tulip",
+  "url": "https://huggingface.co/manuel-tulip/Cosmos-Embed1-336p",
+  "created_at": "2026-09-24T00:01:40.000Z",
+  "updated_at": "2026-09-24T00:21:12.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "safetensors",
+    "cosmos-embed1",
+    "nvidia",
+    "nemo",
+    "custom_code",
+    "arxiv:2301.12597",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1196926328,
+  "parameters_human": "1.20B",
+  "storage_bytes": 2394101417,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Recherchez tous les manuels numériques pour les enseignants et les ...",
+      "url": "https://www.mesmanuels.fr/",
+      "snippet": "Pilotis CP - Manuel de code numérique enrichi enseignant - Edition 2026 more_vert Éditions Hachette Éducation Démo enseignant"
+    },
+    {
+      "title": "Manuels scolaires collaboratifs pour le primaire, le collège et le lycée",
+      "url": "https://www.lelivrescolaire.fr/",
+      "snippet": "Et si vous participiez à la conception de votre futur manuel scolaire ? Je découvre les projets newsletter"
+    },
+    {
+      "title": "Définitions : manuel - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/manuel/49268",
+      "snippet": "1. Qui est plus à l'aise dans l'activité manuelle que dans l'activité intellectuelle : C'est un manuel. Contraire : intellectuel 2. Qui exerce …"
+    },
+    {
+      "title": "Manuel — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Manuel",
+      "snippet": "Manuel Sanz Domínguez († 1936), prêtre espagnol restaurateur de la branche masculine de l' ordre de Saint-Jérôme, martyr lors de …"
+    },
+    {
+      "title": "Manuel, 11ème édition 2025 – 2026 – Cuen Manuel",
+      "url": "https://manuel.cuen.fr/accueil-chapitres/",
+      "snippet": "Fiche flash ch.14 FOCUS ECOS ch.14 QRM ch.14"
+    }
+  ]
+}

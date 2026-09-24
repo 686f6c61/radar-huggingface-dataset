@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Thaurock/Gemma-3-27b-it-abliterated-GGUF",
+  "slug": "thaurock-gemma-3-27b-it-abliterated-gguf",
+  "author": "Thaurock",
+  "url": "https://huggingface.co/Thaurock/Gemma-3-27b-it-abliterated-GGUF",
+  "created_at": "2026-09-23T03:12:41.000Z",
+  "updated_at": "2026-09-24T03:20:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma",
+    "gemma3",
+    "text-generation",
+    "image-to-text",
+    "GGUF",
+    "abliterated",
+    "uncensored",
+    "multimodal",
+    "base_model:google/gemma-3-27b-it",
+    "base_model:quantized:google/gemma-3-27b-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27009346304,
+  "parameters_human": "27.01B",
+  "storage_bytes": 225814961504,
+  "storage_human": "225.8 GB",
+  "base_model": "google/gemma-3-27b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thaurock/Gemma-3-27b-it-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Thaurock/Gemma-3-27b-it-abliterated-GGUF",
+      "snippet": "Thaurock / Gemma-3-27b-it-abliterated-GGUF Like 0 Text Generation gemma gemma3 image-to-text GGUF abliterated uncensored multimodal License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Gemma 3 27B IT Abliterated - GGUF 📋 Archivos Disponibles (Colección Completa sin Splits) ⚙️ Parámetros de Generación ..."
+    },
+    {
+      "title": "google/gemma-3-27b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-27b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 3 27b It Abliterated - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/gemma-3-27b-it-abliterated.html",
+      "snippet": "Download Gemma 3 27b It Abliterated GGUF model. 8.86 GB, 4,661 downloads, 249 likes."
+    },
+    {
+      "title": "Gemma 3 27b It Abliterated Refined Vision I1 - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/gemma-3-27b-it-abliterated-refined-vision-i1.html",
+      "snippet": "Download Gemma 3 27b It Abliterated Refined Vision I1 GGUF model. 20.6 GB, 581 downloads, 0 likes."
+    },
+    {
+      "title": "mlabonne/gemma-3-27b-it-abliterated-GGUF - Secret AI",
+      "url": "https://secretai.io/models/mlabonne/gemma-3-27b-it-abliterated-GGUF",
+      "snippet": "💎 Gemma 3 27B IT Abliterated Gemma 3 4B Abliterated • Gemma 3 12B Abliterated This is an uncensored version of google/gemma-3-27b-it created with a new abliteration technique. See this article to know more about abliteration. I was playing with model weights and noticed that Gemma 3 was much more resilient to abliteration than other models like Qwen 2.5. I experimented with a few recipes ..."
+    }
+  ]
+}

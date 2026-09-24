@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "rasyosef/gemma-4-E2B-it-dspark",
+  "slug": "rasyosef-gemma-4-e2b-it-dspark",
+  "author": "rasyosef",
+  "url": "https://huggingface.co/rasyosef/gemma-4-E2B-it-dspark",
+  "created_at": "2026-09-23T23:51:26.000Z",
+  "updated_at": "2026-09-24T00:18:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speculative-decoding",
+    "speculators",
+    "dspark",
+    "draft-model",
+    "vllm",
+    "custom_code",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 249838849,
+  "parameters_human": "249.8M",
+  "storage_bytes": 1267853478,
+  "storage_human": "1.3 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-E2B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E2B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "[Benchmark] Gemma 4 on DGX Spark — Which Model Should You Pick? — ai-muninn",
+      "url": "https://ai-muninn.com/en/blog/dgx-spark-gemma4-complete-guide",
+      "snippet": "Gemma 4 E2B / E4B / 26B MoE / 31B Dense benchmarked on DGX Spark, RTX 5090, and MacBook Pro. One table with speed, memory, quantization format. Selection guide included."
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "DSpark and Gemma 4: What DeepSeek&#x27;s Speedup Actually Means",
+      "url": "https://gemma4all.com/blog/gemma-4-dspark",
+      "snippet": "Gemma 4 DSpark speedup claims hit 60-85% faster inference — here&#x27;s what&#x27;s actually verified, what&#x27;s released today, and what still doesn&#x27;t exist yet."
+    }
+  ]
+}

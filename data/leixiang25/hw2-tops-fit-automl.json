@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "leixiang25/hw2-tops-fit-automl",
+  "slug": "leixiang25-hw2-tops-fit-automl",
+  "author": "leixiang25",
+  "url": "https://huggingface.co/leixiang25/hw2-tops-fit-automl",
+  "created_at": "2026-09-24T01:36:08.000Z",
+  "updated_at": "2026-09-24T02:53:09.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "flaml",
+  "languages": [],
+  "tags": [
+    "flaml",
+    "tabular-classification",
+    "automl",
+    "cmu-24-679",
+    "dataset:ypolatog/tops-fit-dataset",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 520284,
+  "storage_human": "520284 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FetLife: World's Largest BDSM, Kink, and Fetish Community | FetLife",
+      "url": "https://fetlife.com/",
+      "snippet": "FetLife is the world’s largest and most popular social network for the BDSM community, Kink community, and Fetish community.Read more"
+    },
+    {
+      "title": "Login | FetLife",
+      "url": "https://fetlife.com/login",
+      "snippet": "Welcome back, we've missed you!"
+    },
+    {
+      "title": "FetLife - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/FetLife",
+      "snippet": "FetLife is a social networking website that serves people interested in BDSM, fetishism, and kink. It distinguishes itself from …"
+    },
+    {
+      "title": "Join FetLife | FetLife",
+      "url": "https://fetlife.com/join",
+      "snippet": "Join the community and explore yourself with like-minded kinksters."
+    },
+    {
+      "title": "FET: Life, Kink & BDSM Dating",
+      "url": "https://www.fet-app.com/en",
+      "snippet": "Discover the Fetish Universe. With over half a million kinksters to chat with, you're bound to meet that special sub-one. Take off with …"
+    }
+  ]
+}

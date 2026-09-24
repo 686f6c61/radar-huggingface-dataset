@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DeepBeepMeep/MingImage",
+  "slug": "deepbeepmeep-mingimage",
+  "author": "DeepBeepMeep",
+  "url": "https://huggingface.co/DeepBeepMeep/MingImage",
+  "created_at": "2026-09-23T20:31:08.000Z",
+  "updated_at": "2026-09-23T20:41:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "image-generation",
+    "image-editing",
+    "graphic-design",
+    "rgba",
+    "text-to-image",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76298139697,
+  "storage_human": "76.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    },
+    {
+      "title": "LinkedIn | LinkedIn",
+      "url": "https://fr.linkedin.com/company/linkedin",
+      "snippet": "LinkedIn | 34 382 329 abonnés sur LinkedIn. Founded in 2003, LinkedIn connects the world&#39;s professionals to make them more …"
+    },
+    {
+      "title": "Politique de confidentialité - LinkedIn",
+      "url": "https://fr.linkedin.com/legal/privacy-policy",
+      "snippet": "LinkedIn (“nous”) peut modifier la présente Politique de confidentialité et, si les modifications apportées sont importantes, vous en …"
+    },
+    {
+      "title": "Laboratoires Pierre Fabre - LinkedIn",
+      "url": "https://fr.linkedin.com/company/pierre-fabre",
+      "snippet": "Laboratoires Pierre Fabre | 528 612 abonnés sur LinkedIn. New Ways To Care | 💊🔬 Laboratoires Pierre Fabre held by the Pierre Fabre …"
+    },
+    {
+      "title": "Michelin - LinkedIn",
+      "url": "https://fr.linkedin.com/company/michelin",
+      "snippet": "Michelin | 1 136 476 abonnés sur LinkedIn. Michelin is a world-leading manufacturer of life-changing composites and experiences. …"
+    }
+  ]
+}

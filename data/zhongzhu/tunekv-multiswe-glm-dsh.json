@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Zhongzhu/tunekv-multiswe-glm-dsh",
+  "slug": "zhongzhu-tunekv-multiswe-glm-dsh",
+  "author": "Zhongzhu",
+  "url": "https://huggingface.co/Zhongzhu/tunekv-multiswe-glm-dsh",
+  "created_at": "2026-09-23T21:25:42.000Z",
+  "updated_at": "2026-09-24T02:41:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zhongzhu/tunekv-multiswe-glm-dsh · Hugging Face",
+      "url": "https://huggingface.co/Zhongzhu/tunekv-multiswe-glm-dsh",
+      "snippet": "Zhongzhu / tunekv-multiswe-glm-dsh Like 0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "GLM-5.2: Built for Long-Horizon Tasks - z.ai",
+      "url": "https://z.ai/blog/glm-5.2",
+      "snippet": "We&#x27;re introducing GLM-5.2, our latest flagship model for long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and, for the first time, delivers that capability on a solid 1M-token context."
+    },
+    {
+      "title": "GLM-5.1 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.1",
+      "snippet": "Overview GLM-5.1 is Z.AI&#x27;s latest flagship model, designed for long-horizon tasks. It can work continuously and autonomously on a single task for up to 8 hours, completing the full loop from planning and execution to iterative optimization and delivering production-grade results. In both general capability and coding performance, GLM-5.1 is overall aligned with Claude Opus 4.6. It ..."
+    },
+    {
+      "title": "GitHub - ai-yukin/dsh-0-tools: Zero-cost, zero-hassle toolkit for ...",
+      "url": "https://github.com/ai-yukin/dsh-0-tools",
+      "snippet": "Zero-cost, zero-hassle toolkit for DeepSeek Harness (DSH): one-click free model setup (Zhipu GLM-4-Flash + OpenRouter Ox-Alpha) for complete beginners. 小白零门槛零费用套件。"
+    },
+    {
+      "title": "SWE-bench Verified Leaderboard (September 2026): Top Scores",
+      "url": "https://benchlm.ai/benchmarks/swe-bench-verified",
+      "snippet": "SWE-bench Verified scores for 79 AI models, compiled from published reports. Display only on BenchLM and excluded from overall rankings. A curated, human-verified subset of SWE-bench that tests models on resolving real GitHub issues from popular open-source Python repositories like Django, Flask, and scikit-learn."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "andyjoecn/TrustMed-RL-eval-baselines",
+  "slug": "andyjoecn-trustmed-rl-eval-baselines",
+  "author": "andyjoecn",
+  "url": "https://huggingface.co/andyjoecn/TrustMed-RL-eval-baselines",
+  "created_at": "2026-09-23T21:24:12.000Z",
+  "updated_at": "2026-09-23T22:10:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 229089924,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "andyjoecn/TrustMed-RL-grpo-seed3-Qwen3VL-8B · Hugging Face",
+      "url": "https://huggingface.co/andyjoecn/TrustMed-RL-grpo-seed3-Qwen3VL-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "andyjoecn/TrustMed-RL-grpo-seed3-Qwen3VL-8B at main",
+      "url": "https://huggingface.co/andyjoecn/TrustMed-RL-grpo-seed3-Qwen3VL-8B/tree/main",
+      "snippet": "Safetensors Model card FilesFiles and versions xet Community Copy to bucket new main TrustMed-RL-grpo-seed3-Qwen3VL-8B 88.5 GB Ctrl+K Ctrl+K 1 contributor History:185 commits andyjoecn add data/supervisor.json e976ac5 verified9 days ago dataadd data/supervisor.json9 days ago global_step_128add global_step_12810 days ago global_step_160add ..."
+    },
+    {
+      "title": "Stable-Baselines3 Docs - Reliable Reinforcement Learning ...",
+      "url": "https://stable-baselines3.readthedocs.io/",
+      "snippet": "RL Baselines3 Zoo provides a collection of pre-trained agents, scripts for training, evaluating agents, tuning hyperparameters, plotting results, and recording videos."
+    },
+    {
+      "title": "trustmed-ai/EVALUATIONS/README.md at main · shitijkarsolia ... - GitHub",
+      "url": "https://github.com/shitijkarsolia/trustmed-ai/blob/main/EVALUATIONS/README.md",
+      "snippet": "EVALUATIONS This directory contains evaluation scripts and results for the TrustMed AI system."
+    },
+    {
+      "title": "TrustMed-RL-grpo-seed1-v7-Qwen3VL-8B by Jiao: Open Model",
+      "url": "https://savrn.com/models/trustmed-rl-grpo-seed1-v7-qwen3vl-8b",
+      "snippet": "TrustMed-RL-grpo-seed1-v7-Qwen3VL-8B from Jiao: license, access terms, disclosed training data, reported evaluations and the publisher&#x27;s download."
+    }
+  ]
+}

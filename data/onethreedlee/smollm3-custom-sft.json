@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "onethreedlee/SmolLM3-Custom-SFT",
+  "slug": "onethreedlee-smollm3-custom-sft",
+  "author": "onethreedlee",
+  "url": "https://huggingface.co/onethreedlee/SmolLM3-Custom-SFT",
+  "created_at": "2026-09-23T22:11:25.000Z",
+  "updated_at": "2026-09-23T22:53:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "smollm3",
+    "text-generation",
+    "generated_from_trainer",
+    "trackio:https://huggingface.co/spaces/onethreedlee/huggingface-static-e054d1",
+    "sft",
+    "trl",
+    "trackio",
+    "hf_jobs",
+    "conversational",
+    "base_model:onethreedlee/SmolLM3-Custom-SFT",
+    "base_model:finetune:onethreedlee/SmolLM3-Custom-SFT",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 36918636526,
+  "storage_human": "36.9 GB",
+  "base_model": "onethreedlee/SmolLM3-Custom-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "msquaredd/SmolLM3-Custom-SFT-20250910143319 · Hugging Face",
+      "url": "https://huggingface.co/msquaredd/SmolLM3-Custom-SFT-20250910143319",
+      "snippet": "Train Deploy Use this model Model Card for SmolLM3-Custom-SFT-20250910143319 Quick start Training procedure Framework versions Citations"
+    },
+    {
+      "title": "veltrox/SmolLM3-Custom-SFT · Hugging Face",
+      "url": "https://huggingface.co/veltrox/SmolLM3-Custom-SFT",
+      "snippet": "Instructions to use veltrox/SmolLM3-Custom-SFT with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use veltrox/SmolLM3-Custom-SFT with Transformers: ... Notebooks Google Colab Kaggle Model Card for SmolLM3-Custom-SFT Quick start Training procedure Framework versions ..."
+    },
+    {
+      "title": "GitHub - huggingface/smollm: Everything about the SmolLM and SmolVLM ...",
+      "url": "https://github.com/huggingface/smollm",
+      "snippet": "Welcome to Smol Models, a family of efficient and lightweight AI models from Hugging Face. Our mission is to create fully open powerful yet compact models, for text and vision, that can run effectively on-device while maintaining strong performance."
+    },
+    {
+      "title": "Just dropped: SmolLM3 Custom SFT, a compact yet powerful text ...",
+      "url": "https://x.com/HuggingModels/status/2074089480231993434",
+      "snippet": "Just dropped: SmolLM3 Custom SFT, a compact yet powerful text generation model fine tuned from HuggingFaceTB/SmolLM3-3B-Base. It&#x27;s optimized for instruction following and dialogue, making AI more accessible for builders."
+    },
+    {
+      "title": "SmolLM3: smol, multilingual, long-context reasoner",
+      "url": "https://smollm3.org/",
+      "snippet": "SmolLM3 is a powerful 3B parameter language model designed for efficient reasoning, long context understanding, and multilingual applications. Explore the capabilities of this compact yet capable AI model for various use cases."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "BangChanEt/Serj_Tankian",
+  "slug": "bangchanet-serj_tankian",
+  "author": "BangChanEt",
+  "url": "https://huggingface.co/BangChanEt/Serj_Tankian",
+  "created_at": "2026-09-23T21:16:10.000Z",
+  "updated_at": "2026-09-23T21:17:03.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 180039906,
+  "storage_human": "180 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Serj Tankian - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/90428a1b01fe1736383c972191d8f6c6",
+      "snippet": "Meet Serj Tankian model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    },
+    {
+      "title": "System Of A Down Singer Blasted For Releasing AI Music Video",
+      "url": "https://www.webisjericho.com/system-of-a-down-singer-blasted-for-releasing-ai-music-video/",
+      "snippet": "Serj Tankian faces criticism after releasing an AI-generated alternate video for Cartoon Buyer from his Foundations EP."
+    },
+    {
+      "title": "BangChanEt (Veryhappy) - Hugging Face",
+      "url": "https://huggingface.co/BangChanEt/models",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 1 month ago ... updated a model about 2 months ago"
+    },
+    {
+      "title": "Serj Tankian 4 models | AI RVC Model - weights.com",
+      "url": "https://www.weights.com/models/clm72sf8h0onqcctcbg04hm9p",
+      "snippet": "Comments soulnull 2yearsago playing around with songs and models, and holy shit.. serj absolutely crushes this opera song. like, im tempted to call the cops and report a murder, because there is nothing left of the body. absolutely amazing model, and thank you for sharing it. it&#x27;s really really good. (ps boats and hoes) soulnull 2yearsago"
+    },
+    {
+      "title": "Serj Tankian (Toxicity Era/2001 V2, RVCv2, RVMPE) 4 models AI Voice Model",
+      "url": "https://voice-models.com/model/1mQZ6DgVXEG",
+      "snippet": "Serj Tankian (Toxicity Era/2001 V2, RVCv2, RVMPE) 4 models AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    }
+  ]
+}

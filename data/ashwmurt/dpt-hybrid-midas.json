@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ashwmurt/dpt-hybrid-midas",
+  "slug": "ashwmurt-dpt-hybrid-midas",
+  "author": "ashwmurt",
+  "url": "https://huggingface.co/ashwmurt/dpt-hybrid-midas",
+  "created_at": "2026-09-23T20:00:50.000Z",
+  "updated_at": "2026-09-23T21:44:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "qai-hub-models",
+    "qualcomm",
+    "android",
+    "depth-estimation",
+    "arxiv:2103.13413",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ashwmurt/dpt_hybrid_midas · Hugging Face",
+      "url": "https://huggingface.co/ashwmurt/dpt_hybrid_midas",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ashwmurt/dpt_hybrid_midas at main - Hugging Face",
+      "url": "https://huggingface.co/ashwmurt/dpt_hybrid_midas/tree/main",
+      "snippet": "ashwmurt / dpt_hybrid_midas like 0 Depth Estimation PyTorch qai-hub-models qualcomm android arxiv:2103.13413 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main dpt_hybrid_midas 13.8 kB Ctrl+K Ctrl+K 1 contributor History:2 commits ashwmurt Upload dpt_hybrid_midas recipe (v1) 917da96 verifiedabout 11 hours ago .gitattributes Safe 1.52 kBinitial ..."
+    },
+    {
+      "title": "dpt-hybrid-midas: Image-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/dpt-hybrid-midas-intel",
+      "snippet": "DPT-Hybrid excels at estimating depth from single images in driving scenarios and robotic systems that need real-time 3D scene understanding. The model&#x27;s training on diverse datasets and strong zero-shot transfer performance across benchmarks means it captures depth patterns relevant to varied environments without retraining."
+    },
+    {
+      "title": "dpt-hybrid-midas · Models",
+      "url": "https://www.modelscope.cn/models/Intel/dpt-hybrid-midas",
+      "snippet": "DPT uses the Vision Transformer (ViT) as backbone and adds a neck + head on top for monocular depth estimation. This repository hosts the \"hybrid\" version of the model as stated in the paper. DPT-Hybrid diverges from DPT by using ViT-hybrid as a backbone and taking some activations from the backbone."
+    },
+    {
+      "title": "dpt-hybrid-midas · Model · Inferix",
+      "url": "https://inferix.co/models/Intel/dpt-hybrid-midas",
+      "snippet": "Model Details: DPT Hybrid (also known as MiDaS 3.0) Dense Prediction Transformer (DPT) model trained on 1.4 million images for monocular depth estimation. It was introduced in the paper Vision Transformers for Dense Prediction by Ranftl et al. (2021) and first released in this repository."
+    }
+  ]
+}

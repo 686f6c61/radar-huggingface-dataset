@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Thaurock/Qwen2.5-Coder-32B-abliterated-GGUF",
+  "slug": "thaurock-qwen2-5-coder-32b-abliterated-gguf",
+  "author": "Thaurock",
+  "url": "https://huggingface.co/Thaurock/Qwen2.5-Coder-32B-abliterated-GGUF",
+  "created_at": "2026-09-23T03:06:46.000Z",
+  "updated_at": "2026-09-23T23:16:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen2.5",
+    "coder",
+    "text-generation",
+    "GGUF",
+    "abliterated",
+    "uncensored",
+    "code",
+    "base_model:Qwen/Qwen2.5-Coder-32B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-32B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 187932714912,
+  "storage_human": "187.9 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beetle Identification Chart with Pictures & Names | Complete Beetle …",
+      "url": "https://chartfarosh.com/beetle-identification-chart/",
+      "snippet": "Discover beetle types with this complete beetle identification chart featuring pictures, names, and characteristics. Learn to identify …Read more"
+    },
+    {
+      "title": "Flying Beetles: Identification Guide to Common Beetles That Fly",
+      "url": "https://www.typesofbeetles.com/flying-beetles/",
+      "snippet": "Jun 1, 2026 · Learn how to identify flying beetles by size, color, body shape, wing covers, antennae, habitat, season, and behavior in …Read more"
+    },
+    {
+      "title": "BugFinder: Beetles - Insect Identification",
+      "url": "https://www.insectidentification.org/bugfinder-beetles.php",
+      "snippet": "Free online utility designed to actively search for specific beetles for the purposes of identification.Read more"
+    },
+    {
+      "title": "10 Common House Beetles & How to Identify and Stop Them",
+      "url": "https://thebugmanfraservalley.com/10-common-house-beetles-how-to-identify-and-stop-them/",
+      "snippet": "In this guide, we’ll cover everything you need to know about the types of beetles creeping into your space, why they’re there, and …Read more"
+    },
+    {
+      "title": "Cucujidae - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Cucujidae",
+      "snippet": "The Cucujidae, or flat bark beetles, are a family of distinctively flat beetles found worldwide (except Africa and Antarctica) under the …Read more"
+    }
+  ]
+}

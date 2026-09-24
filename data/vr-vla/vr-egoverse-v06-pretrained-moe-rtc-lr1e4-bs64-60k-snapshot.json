@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "VR-VLA/VR-egoverse-v06-pretrained-moe-rtc-lr1e4-bs64-60k-snapshot",
+  "slug": "vr-vla-vr-egoverse-v06-pretrained-moe-rtc-lr1e4-bs64-60k-snapshot",
+  "author": "VR-VLA",
+  "url": "https://huggingface.co/VR-VLA/VR-egoverse-v06-pretrained-moe-rtc-lr1e4-bs64-60k-snapshot",
+  "created_at": "2026-09-23T23:42:28.000Z",
+  "updated_at": "2026-09-23T23:45:59.000Z",
+  "license": "egoverse-internal",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "vision-language-action",
+    "vla",
+    "egocentric",
+    "flow-matching",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7166012564,
+  "storage_human": "7.2 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VR ACTU : Réalité Virtuelle • SimRacing • Jeux Vidéo",
+      "url": "https://vractu.com/",
+      "snippet": "Aces of Thunder : Enfin une date de sortie sur Steam et PSVR2 Annoncé en 2023, Aces of Thunder se faisait très clairement …Read more"
+    },
+    {
+      "title": "RealiteVirtuelle.com : Réalité Virtuelle, Jeux Vidéo VR et Vidéos",
+      "url": "https://realitevirtuelle.com/",
+      "snippet": "Sep 15, 2026 · Toute l'actualité de la réalité virtuelle ! Jeux vidéo : Playstation VR, Oculus Rift, HTC Vive, Windows Mixed Reality. …Read more"
+    },
+    {
+      "title": "Meta Quest VR Headsets and Accessories",
+      "url": "https://www.meta.com/quest/",
+      "snippet": "Defy reality with Meta Quest. Our VR headsets redefine digital gaming and entertainment. Learn more about Quest 3S, and explore …Read more"
+    },
+    {
+      "title": "Casques et accessoires VR Meta Quest",
+      "url": "https://www.meta.com/fr/quest/",
+      "snippet": "Défiez la réalité avec Meta Quest. Nos casques VR redéfinissent les jeux vidéo et le divertissement numérique. Apprenez en …Read more"
+    },
+    {
+      "title": "Comparatif / 13 casques de réalité virtuelle testés Septembre 2026",
+      "url": "https://www.lesnumeriques.com/casque-realite-virtuelle/casques-realite-virtuelle-a2305.html",
+      "snippet": "Dec 30, 2025 · Si certains casques mobiles sont universels et s'adaptent à plusieurs smartphones, d'autres sont compatibles …Read more"
+    }
+  ]
+}

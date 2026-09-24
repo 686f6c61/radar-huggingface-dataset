@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Sench729/ppo-breakout-from-scratch",
+  "slug": "sench729-ppo-breakout-from-scratch",
+  "author": "Sench729",
+  "url": "https://huggingface.co/Sench729/ppo-breakout-from-scratch",
+  "created_at": "2026-09-23T20:42:44.000Z",
+  "updated_at": "2026-09-23T20:49:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "ppo",
+    "atari",
+    "breakout",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27002386,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Breakout PPO — Self-Learning AI Agent - GitHub",
+      "url": "https://github.com/tobeyesong/breakout-ppo",
+      "snippet": "🎮 Breakout PPO — Self-Learning AI Agent A reinforcement learning agent that teaches itself to play Atari Breakout from scratch — no human gameplay data, no hardcoded rules. Just raw pixels and a reward signal."
+    },
+    {
+      "title": "unit8_part1.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/deep-rl-class/blob/main/notebooks/unit8/unit8_part1.ipynb",
+      "snippet": "In this notebook, you&#x27;ll learn to code your PPO agent from scratch with PyTorch using CleanRL implementation as model. To test its robustness, we&#x27;re going to train it in:"
+    },
+    {
+      "title": "GitHub - agrau/breakout-ppo: PPO agent that learns to play Atari ...",
+      "url": "https://github.com/agrau/breakout-ppo",
+      "snippet": "PPO agent that learns to play Atari Breakout at benchmark level (~390/game): tunneling expert, full-game fine-tuned, trained from scratch on a Jetson. - agrau/breakout-ppo"
+    },
+    {
+      "title": "I Built a Breakout AI Agent with PPO from Scratch - Medium",
+      "url": "https://medium.com/@toanlam01/i-built-a-breakout-ai-agent-with-ppo-from-scratch-958e161f422b",
+      "snippet": "The observation is image-based, so the model uses Stable Baselines3&#x27;s CnnPolicy: a convolutional network designed for raw pixel input. PPO Hyperparameters Parameter Value Learning rate 2.5e-4 n ..."
+    },
+    {
+      "title": "kuross/ppo-Breakout-v4 · Hugging Face",
+      "url": "https://huggingface.co/kuross/ppo-Breakout-v4",
+      "snippet": "This is a trained model of a PPO agent playing Breakout-v4 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    }
+  ]
+}

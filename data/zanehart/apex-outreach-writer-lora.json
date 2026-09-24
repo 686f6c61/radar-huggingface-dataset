@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Zanehart/apex-outreach-writer-lora",
+  "slug": "zanehart-apex-outreach-writer-lora",
+  "author": "Zanehart",
+  "url": "https://huggingface.co/Zanehart/apex-outreach-writer-lora",
+  "created_at": "2026-09-23T20:34:00.000Z",
+  "updated_at": "2026-09-23T20:35:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955183,
+  "storage_human": "173 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2502.15616",
+      "snippet": "3) Plot Planning: Enabling the model to generate coherent plotlines that evolve character arcs in line with the story&#x27;s structure. 4) Stylish Writing: En-hancing descriptive details of settings, character interactions, and events, ensuring immersive story-telling that reflects the author&#x27;s tone and depth. To train WriterAgent eficiently, we propose Writer-LoRA, an extension of the Low-Rank ..."
+    },
+    {
+      "title": "LoRA AI Models (17,994) | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 17,994 AI models tagged \"LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Mastering Low-Rank Adaptation (LoRA): Enhancing Large ... - DataCamp",
+      "url": "https://www.datacamp.com/tutorial/mastering-low-rank-adaptation-lora-enhancing-large-language-models-for-efficient-adaptation",
+      "snippet": "Explore the groundbreaking technique of Low-Rank Adaptation (LoRA) in our full guide. Discover how LoRA revolutionizes the fine-tuning of Large Language Models."
+    },
+    {
+      "title": "GitHub - microsoft/LoRA: Code for loralib, an implementation of \"LoRA ...",
+      "url": "https://github.com/microsoft/LoRA",
+      "snippet": "Code for loralib, an implementation of \"LoRA: Low-Rank Adaptation of Large Language Models\" - microsoft/LoRA"
+    },
+    {
+      "title": "220+ Free LoRAs & Counting | Civitai",
+      "url": "https://civitai.com/articles/11647/220-free-loras-and-counting",
+      "snippet": "Support My AI Journey: Follow Me on Medium to Help Fuel Future Creations 🚀 Over the past few years, I&#x27;ve dedicated my time, effort, and passion to pushing the boundaries of AI in creative fields. From generating artwork to refining LoRA models, my journey has been one of exploration, innovation, and community-driven contribution. To date, I have created and shared over 220 LoRA models on ..."
+    }
+  ]
+}

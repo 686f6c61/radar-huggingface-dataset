@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_basisresmix_remove40",
+  "slug": "jeesup-svd-safety-l2_basisresmix_remove40",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_basisresmix_remove40",
+  "created_at": "2026-09-23T20:59:05.000Z",
+  "updated_at": "2026-09-23T21:21:35.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeesup/svd-safety-l2_basis_remove40 · Hugging Face",
+      "url": "https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40",
+      "snippet": "svd-safety-l2_basis_remove40 A Llama-2-7b-chat checkpoint compressed with Basis Sharing (ICLR 2025; shared bases over groups of 2 adjacent layers) to 60.0% of dense parameters, then recovered with a coefficient-only LoRA fine-tune that keeps both the parameter budget and the shared bases exactly."
+    },
+    {
+      "title": "Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010_r02 · Hugging Face",
+      "url": "https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010_r02",
+      "snippet": "Instructions to use Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010_r02 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Jeesup/svd-safety-l2_basis_remove40_swapdiscnet_b010_r06",
+      "url": "https://featherless.ai/models/Jeesup/svd-safety-l2_basis_remove40_swapdiscnet_b010_r06",
+      "snippet": "This model is a research artifact designed to study how SVD compression impacts safety behavior and to test component-selection rules for repair. It is specifically configured with 6 of 10 rounds of parameter-neutral swap selection using the `swapdiscnet_iter` rule, making it an experimental subject for safety/utility trade-offs rather than a ..."
+    },
+    {
+      "title": "Jeesup/svd-safety-l2_basis_remove40 - featherless.ai",
+      "url": "https://featherless.ai/models/Jeesup/svd-safety-l2_basis_remove40",
+      "snippet": "Jeesup/svd-safety-l2_basis_remove40 is a Llama-2-7b-chat checkpoint compressed using Basis Sharing, retaining 60% of its original parameters. This 7 billion parameter model with a 4096 token context length is a research artifact designed to study how SVD compression impacts safety behavior and to test recovery methods. It is not intended as a general-purpose chat model but rather as an ..."
+    },
+    {
+      "title": "Svd Safety L2 Remove40 Swapdisciter R02 by Jeesup",
+      "url": "https://llm-explorer.com/model/Jeesup%2Fsvd-safety-l2_remove40_swapdisciter_r02,K96LvQFQbwgmht56LJPVf",
+      "snippet": "Svd Safety L2 Remove40 Swapdisciter R02 is an open-source 7b LLM by Jeesup. VRAM 13.5GB, 4K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

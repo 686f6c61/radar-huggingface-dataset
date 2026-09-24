@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "moganai/Mogan-ColBERT-TR",
+  "slug": "moganai-mogan-colbert-tr",
+  "author": "moganai",
+  "url": "https://huggingface.co/moganai/Mogan-ColBERT-TR",
+  "created_at": "2026-08-27T15:22:08.000Z",
+  "updated_at": "2026-09-24T01:53:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "PyLate",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "PyLate",
+    "safetensors",
+    "modernbert",
+    "ColBERT",
+    "arxiv:2608.26344",
+    "sentence-transformers",
+    "late-interaction",
+    "retrieval",
+    "turkish",
+    "loss:Distillation",
+    "sentence-similarity",
+    "tr",
+    "base_model:moganai/MoganBERT-Embed",
+    "base_model:finetune:moganai/MoganBERT-Embed",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 87,
+  "trending_score": 0,
+  "parameters": 148768512,
+  "parameters_human": "148.8M",
+  "storage_bytes": 595935059,
+  "storage_human": "596 MB",
+  "base_model": "moganai/MoganBERT-Embed",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

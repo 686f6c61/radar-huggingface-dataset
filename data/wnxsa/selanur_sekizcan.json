@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "wnxsa/selanur_sekizcan",
+  "slug": "wnxsa-selanur_sekizcan",
+  "author": "wnxsa",
+  "url": "https://huggingface.co/wnxsa/selanur_sekizcan",
+  "created_at": "2026-09-23T23:40:32.000Z",
+  "updated_at": "2026-09-24T00:41:07.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85132583,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qare - Téléconsultation médicale en ligne 7j/7",
+      "url": "https://www.qare.fr/",
+      "snippet": "Oui, toutes les téléconsultations sur Qare sont entièrement sécurisées. Vos échanges avec le médecin sont chiffrés et protégés par …"
+    },
+    {
+      "title": "Qare - Téléconsultation médicale en ligne 7j/7",
+      "url": "https://patient.qare.fr/connexion-patient",
+      "snippet": "Qare est le leader de la téléconsultation médicale en France. Consultez un médecin en ligne 7j/7 de 6h à minuit. Recevez …"
+    },
+    {
+      "title": "Médecin généraliste : prendre RDV en ligne - Qare",
+      "url": "https://www.qare.fr/medecin-generaliste/",
+      "snippet": "Prenez RDV en téléconsultation avec un médecin généraliste sur Qare, 7j/7 de 6h à minuit. Consultation vidéo remboursable, …"
+    },
+    {
+      "title": "Qare — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Qare",
+      "snippet": "Qare est une entreprise française de santé numérique spécialisée dans la téléconsultation médicale. Créée en 2016 et lancée …"
+    },
+    {
+      "title": "L'interface Qare - Qare",
+      "url": "https://praticien.qare.fr/interface-qare",
+      "snippet": "Avec Qare, libérez du temps pour vous concentrer sur vos patients. Gérez vos rendez-vous sans effort. Qare s’intègre parfaitement à …"
+    }
+  ]
+}

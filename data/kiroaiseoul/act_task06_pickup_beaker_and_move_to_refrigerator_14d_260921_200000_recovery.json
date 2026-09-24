@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/act_task06_pickup_beaker_and_move_to_refrigerator_14D_260921_200000_recovery",
+  "slug": "kiroaiseoul-act_task06_pickup_beaker_and_move_to_refrigerator_14d_260921_200000_recovery",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/act_task06_pickup_beaker_and_move_to_refrigerator_14D_260921_200000_recovery",
+  "created_at": "2026-09-23T23:17:42.000Z",
+  "updated_at": "2026-09-23T23:18:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:kiroaiseoul/task06_pickup_beaker_and_move_to_refrigerator_14D",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51687056,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206783008,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Boosteroid Cloud Gaming | Your Games on Any Device",
+      "url": "https://boosteroid.com/",
+      "snippet": "Run PC games on low-end, outdated or ultra portable devices! Play on Mac, Linux, iOS, Android, ChromeOS or smart TVs without …"
+    },
+    {
+      "title": "Downloads | Boosteroid Cloud Gaming",
+      "url": "https://boosteroid.com/downloads/",
+      "snippet": "Get Boosteroid app for your device – available on Windows, macOS, Android, iOS, and TV. Play PC games instantly without …"
+    },
+    {
+      "title": "Boosteroid - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Boosteroid",
+      "snippet": "Boosteroid was founded by Ivan Shvaichenko in 2016. [11] In 2019, the company officially launched its cloud gaming service, initially …"
+    },
+    {
+      "title": "Boosteroid Help Center",
+      "url": "https://help.boosteroid.com/",
+      "snippet": "Choose one of the main topics listed below to get started."
+    },
+    {
+      "title": "Boosteroid : avis & essai gratuit de l’abonnement de jeux",
+      "url": "https://canardvirtuel.com/services/boosteroid/",
+      "snippet": "Sep 12, 2026 · Avis Boosteroid par la rédaction Le service Boosteroid est un petit nouveau venu de Roumanie et qui promet de …"
+    }
+  ]
+}

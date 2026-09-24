@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "helson21254/vuelos-modelos",
+  "slug": "helson21254-vuelos-modelos",
+  "author": "helson21254",
+  "url": "https://huggingface.co/helson21254/vuelos-modelos",
+  "created_at": "2026-09-23T03:45:53.000Z",
+  "updated_at": "2026-09-23T20:11:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 35297500160,
+  "storage_human": "35.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hub de Modelos IA: Veo, Kling, Flux, ElevenLabs y más | Vuela.ai",
+      "url": "https://vuela.ai/es/modelos",
+      "snippet": "Explora todos los modelos de IA disponibles en Vuela: vídeo (Veo 3, Kling, Seedance), imagen (Flux, Nano Banana), audio (ElevenLabs, MiniMax) y 3D (Rodin). Elige el adecuado en cada caso."
+    },
+    {
+      "title": "Models - Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/api/models?hl=es-419",
+      "snippet": "El extremo de modelos te permite enumerar de forma programática los modelos disponibles y recuperar metadatos extendidos, como la funcionalidad admitida y el tamaño de la ventana de contexto. Obtén más información en la guía de Models."
+    },
+    {
+      "title": "GitHub Models",
+      "url": "https://github.com/marketplace?type=models",
+      "snippet": "Create AI-powered applications with GitHub Enhance your workflow with extensions Tools from the community and partners to simplify tasks and automate processes"
+    },
+    {
+      "title": "Unleashing the Power of Open Source AI Models and Machine Learning ...",
+      "url": "https://aimodels.org/",
+      "snippet": "Open Source AI Community We are committed to building a community of developers, researchers, and enthusiasts who share our vision of democratizing AI and making it accessible to everyone. Collection of AI Model Downloads and Machine Learning Tools Explore a collection of open source AI models and tools for machine learning."
+    },
+    {
+      "title": "Modelo AI: Free Online AI Image Generator",
+      "url": "https://www.modelo.io/ai-creation?hl=en",
+      "snippet": "Create stunning AI images with Modelo, the free online text-to-image AI tool. Easily convert descriptions into visual art instantly!"
+    }
+  ]
+}

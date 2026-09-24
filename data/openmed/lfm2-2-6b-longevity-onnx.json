@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "OpenMed/LFM2-2.6B-Longevity-ONNX",
+  "slug": "openmed-lfm2-2-6b-longevity-onnx",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/LFM2-2.6B-Longevity-ONNX",
+  "created_at": "2026-09-24T01:10:00.000Z",
+  "updated_at": "2026-09-24T01:13:16.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "lfm2",
+    "text-generation",
+    "openmed",
+    "onnxruntime",
+    "android",
+    "on-device",
+    "quantized",
+    "int4",
+    "liquid",
+    "longevity",
+    "aging-biology",
+    "biomedical",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2-2.6B-Longevity",
+    "base_model:quantized:LiquidAI/LFM2-2.6B-Longevity",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1910252420,
+  "storage_human": "1.9 GB",
+  "base_model": "LiquidAI/LFM2-2.6B-Longevity",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Akari Neo - JAV Database",
+      "url": "https://www.javdatabase.com/idols/akari-neo/",
+      "snippet": "Nov 19, 1998 · Akari Neo videos, age, birthdate, cup size, height, shoe size, Twitter and more! JAV Database is the number one …"
+    },
+    {
+      "title": "Akari Neo | Sakura JAV",
+      "url": "https://www.sakurajav.com/pornstars/akari-neo/",
+      "snippet": "Free HD JAV Porn Sex Videos & Movies"
+    },
+    {
+      "title": "Akari Neo JAV, Japanese Teen Porn Videos | Japteenx",
+      "url": "https://www.japteenx.com/pornstars/akari-neo",
+      "snippet": "Nov 19, 1998 · Akari Neo was seen making her debut on 7 April 2019 at just 20 year old. She's amongst the 100 most popular AV …"
+    },
+    {
+      "title": "Watch 根尾あかり's AV Online - Jable.TV | Watch HD JAV Online",
+      "url": "https://en.jable.tv/models/akari-neo/",
+      "snippet": "Akari Neo, The Fallen Female Investigator, Is Humiliated By The Ultra-high Speed Thrusts Into Her Uterus, And Repeatedly …"
+    },
+    {
+      "title": "Watch Akari Neo Jav Online Page 1 - JavTrailers.com",
+      "url": "https://javtrailers.com/casts/akari-neo",
+      "snippet": "Sep 14, 2026 · Watch Akari Neo Jav video’s free, we have the largest Jav collections with high definition"
+    }
+  ]
+}

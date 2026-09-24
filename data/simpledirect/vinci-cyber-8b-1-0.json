@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "simpledirect/Vinci-Cyber-8B-1.0",
+  "slug": "simpledirect-vinci-cyber-8b-1-0",
+  "author": "simpledirect",
+  "url": "https://huggingface.co/simpledirect/Vinci-Cyber-8B-1.0",
+  "created_at": "2026-09-18T18:37:26.000Z",
+  "updated_at": "2026-09-23T22:40:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "cybersecurity",
+    "defensive-security",
+    "infrastructure-as-code",
+    "dora",
+    "rslora",
+    "canadian-ai",
+    "simpledirect",
+    "vinci",
+    "conversational",
+    "base_model:ibm-granite/granite-4.1-8b",
+    "base_model:finetune:ibm-granite/granite-4.1-8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 8380551168,
+  "parameters_human": "8.38B",
+  "storage_bytes": 16764416042,
+  "storage_human": "16.8 GB",
+  "base_model": "ibm-granite/granite-4.1-8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vinci Cyber 8B 1.0 · SimpleDirect®",
+      "url": "https://www.getsimpledirect.com/models/cyber-8b-1-0",
+      "snippet": "An open-weight defensive infrastructure-as-code specialization of IBM Granite 4.1 8B by SimpleDirect®."
+    },
+    {
+      "title": "Vinci-Cyber-8B-1.0 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/simpledirect/Vinci-Cyber-8B-1.0",
+      "snippet": "Deploy Vinci-Cyber-8B-1. with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Vinci by SimpleDirect · GitHub",
+      "url": "https://github.com/getsimpledirect",
+      "snippet": "Python 6 MIT 1 0 3 Updated on Jul 13 flash-1-mini Public Developer companion for flash-1-mini — bilingual Canadian legal AI model. Code, examples, and docs. Model weights on Hugging Face."
+    },
+    {
+      "title": "Models & Systems | SimpleDirect®",
+      "url": "https://www.getsimpledirect.com/models-and-systems",
+      "snippet": "Explore SimpleDirect® model artifacts and Vinci software, with release status, provenance, and limitations."
+    },
+    {
+      "title": "Vinci™",
+      "url": "https://vinci.getsimpledirect.com/",
+      "snippet": "Vinci™ — a direct, honest, open-weight AI. Your chats stay on your device and are not stored on Vinci servers."
+    }
+  ]
+}

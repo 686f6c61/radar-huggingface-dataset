@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "oscarfbordac/segformer-mit-b2-edificios",
+  "slug": "oscarfbordac-segformer-mit-b2-edificios",
+  "author": "oscarfbordac",
+  "url": "https://huggingface.co/oscarfbordac/segformer-mit-b2-edificios",
+  "created_at": "2026-09-23T21:22:33.000Z",
+  "updated_at": "2026-09-23T21:24:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99032455,
+  "storage_human": "99 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Radio 2 - Listen Live - BBC Sounds",
+      "url": "https://www.bbc.co.uk/sounds/play/live/bbc_radio_two",
+      "snippet": "Use BBC.com or the new BBC App to listen to BBC podcasts, Radio 4 and the World Service outside the UK.Read more"
+    },
+    {
+      "title": "BBC Radio 2, listen live",
+      "url": "https://www.radio-uk.co.uk/bbc-radio-2",
+      "snippet": "Listen to BBC Radio 2 live. The best UK radio stations. Free radio online at www.radio-uk.co.uk."
+    },
+    {
+      "title": "BBC Radio 2 listen live",
+      "url": "https://radio-live-uk.com/bbc-2",
+      "snippet": "Listen live to BBC Radio 2, a radio station based in London, England, UK that primarily broadcasts Adult contemporary, Oldies, Talk …"
+    },
+    {
+      "title": "BBC Radio 2 - Radio 2 - Radio 2 LIVE - UKRadioLive",
+      "url": "https://ukradiolive.com/bbc-radio-2",
+      "snippet": "Listen online to the internet radio of BBC Radio 2 live, one of the most popular radio station in the United Kingdom!"
+    },
+    {
+      "title": "BBC Sounds - Radio 2 Live - Available Episodes",
+      "url": "https://www.bbc.co.uk/sounds/brand/m000znnb",
+      "snippet": "Listen to the latest episodes of Radio 2 Live on BBC Sounds."
+    }
+  ]
+}

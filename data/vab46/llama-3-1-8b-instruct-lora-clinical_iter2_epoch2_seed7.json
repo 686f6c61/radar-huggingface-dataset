@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "vab46/llama-3.1-8b-instruct-lora-clinical_iter2_epoch2_seed7",
+  "slug": "vab46-llama-3-1-8b-instruct-lora-clinical_iter2_epoch2_seed7",
+  "author": "vab46",
+  "url": "https://huggingface.co/vab46/llama-3.1-8b-instruct-lora-clinical_iter2_epoch2_seed7",
+  "created_at": "2026-09-23T23:08:28.000Z",
+  "updated_at": "2026-09-24T01:00:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 271960220,
+  "storage_human": "272 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

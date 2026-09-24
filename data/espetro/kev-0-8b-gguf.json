@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "espetro/kev-0.8b-gguf",
+  "slug": "espetro-kev-0-8b-gguf",
+  "author": "espetro",
+  "url": "https://huggingface.co/espetro/kev-0.8b-gguf",
+  "created_at": "2026-09-23T22:27:02.000Z",
+  "updated_at": "2026-09-23T22:27:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "kev",
+    "systemone",
+    "decision-model",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752917824,
+  "parameters_human": "752.9M",
+  "storage_bytes": 813942848,
+  "storage_human": "814 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Detailed map of Scotland - Ontheworldmap.com",
+      "url": "https://ontheworldmap.com/uk/scotland/detailed-map-of-scotland.html",
+      "snippet": "This map shows cities, towns, airports, ferry ports, railways, motorways, main roads, secondary roads and points of interest in …"
+    },
+    {
+      "title": "Scotland Maps & Facts - World Atlas",
+      "url": "https://www.worldatlas.com/maps/united-kingdom/scotland",
+      "snippet": "Apr 24, 2023 · Map of Scotland showing major cities, terrain, national parks, rivers, and surrounding countries with international …"
+    },
+    {
+      "title": "Map of Scotland | VisitScotland",
+      "url": "https://www.visitscotland.com/map",
+      "snippet": "Plan your holiday with our map of Scotland. Explore different cities, towns, regions, islands, accommodation, food and drink, and …"
+    },
+    {
+      "title": "Map of Scotland including counties, cities, islands and major roads",
+      "url": "https://www.mapnations.com/countries/scotland/scotland-map.html",
+      "snippet": "Map of Scotland, showing counties, major cities, capital of Edinburgh, Glasgow, islands, rivers and neighbouring areas for reference."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?%20Scotland,%20UK",
+      "snippet": "Train Nearby places Restaurants Gas stations ATMs Shopping Map details Satellite Transit lines Traffic"
+    }
+  ]
+}

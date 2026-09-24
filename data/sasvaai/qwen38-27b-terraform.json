@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "SASVAAI/qwen38-27b-terraform",
+  "slug": "sasvaai-qwen38-27b-terraform",
+  "author": "SASVAAI",
+  "url": "https://huggingface.co/SASVAAI/qwen38-27b-terraform",
+  "created_at": "2026-09-23T20:30:07.000Z",
+  "updated_at": "2026-09-23T21:48:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "lora",
+    "peft",
+    "trl",
+    "sft",
+    "merged",
+    "terraform",
+    "hcl",
+    "infrastructure-as-code",
+    "iac",
+    "code-generation",
+    "ollama",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:merge:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 72393712325,
+  "storage_human": "72.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B Uncensored: A New Local AI Weapon for Cybersecurity",
+      "url": "https://beralock.com/blog/qwen38-27b-uncensored-a-new-local-ai-weapon-for-cybersecurity-research-mswwrga0",
+      "snippet": "What happens when you take a powerful coding model, run it locally, and reduce the restrictions that can get in the way of legitimate security research? Qwen3.8-27B community builds are attracting attention for code review, vulnerability analysis, malware research, and agentic DFIR workflows."
+    },
+    {
+      "title": "Adapter Models for Qwen/Qwen3.8-27B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:adapter:Qwen%2FQwen3.8-27B&p=2&sort=trending",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Qwen/Qwen3.8-27B Adapters Finetunes Quantizations Merges Apps Inference Providers Select all Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment Misc ..."
+    },
+    {
+      "title": "Qwen3.8-27B Benchmarks: Official and Independent Results",
+      "url": "https://www.qubrid.com/blog/qwen38-27b-benchmarks-official-and-independent-results",
+      "snippet": "Qwen3.8-27B scores 52 on the Artificial Analysis Intelligence Index at maximum reasoning effort and 61.7 on SWE-bench Pro per Qwen&#x27;s own evaluation. It leads its comparison set on agentic coding and computer-use benchmarks while trailing frontier models on Humanity&#x27;s Last Exam and GPQA Diamond."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The official Qwen/Qwen3.8-27B-FP8 checkpoint serves directly on a 950PR — no offline re-quantization and no --quantization ascend. vLLM Ascend reads quant_method: fp8 and weight_block_size straight from the checkpoint, expands the weight_scale_inv tiles at load time and re-quantizes to MXFP8 on 950."
+    },
+    {
+      "title": "syvai/Qwen3.8-27B-DFlash2-W4A16 · Hugging Face",
+      "url": "https://huggingface.co/syvai/Qwen3.8-27B-DFlash2-W4A16",
+      "snippet": "syvai / Qwen3.8-27B-DFlash2-W4A16 like 0 Follow syv.ai 96 Safetensors qwen3 dflash2 speculative-decoding draft-model compressed-tensors w4a16 gptq vllm License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Qwen3.8-27B-DFlash2-W4A16 What is quantized Use"
+    }
+  ]
+}

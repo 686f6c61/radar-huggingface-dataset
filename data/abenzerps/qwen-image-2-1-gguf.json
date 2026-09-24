@@ -5,7 +5,7 @@
   "author": "abenzerps",
   "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-GGUF",
   "created_at": "2026-09-20T15:51:13.000Z",
-  "updated_at": "2026-09-22T19:08:19.000Z",
+  "updated_at": "2026-09-23T15:53:11.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -23,13 +23,13 @@
     "license:other",
     "region:us"
   ],
-  "likes": 1148,
-  "downloads_30d": 182313,
+  "likes": 1462,
+  "downloads_30d": 350678,
   "trending_score": 909,
   "parameters": 7115124736,
   "parameters_human": "7.12B",
-  "storage_bytes": 104173123613,
-  "storage_human": "104.2 GB",
+  "storage_bytes": 125663507680,
+  "storage_human": "125.7 GB",
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "gguf"

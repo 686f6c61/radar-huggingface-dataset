@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "verdverm/qwopus3.8-27b-flash-v2-gptq-nvfp4a16",
+  "slug": "verdverm-qwopus3-8-27b-flash-v2-gptq-nvfp4a16",
+  "author": "verdverm",
+  "url": "https://huggingface.co/verdverm/qwopus3.8-27b-flash-v2-gptq-nvfp4a16",
+  "created_at": "2026-09-23T22:14:15.000Z",
+  "updated_at": "2026-09-23T23:07:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llm-compressor",
+  "languages": [],
+  "tags": [
+    "llm-compressor",
+    "safetensors",
+    "qwen3_5",
+    "quantized",
+    "gptq",
+    "nvfp4",
+    "multimodal",
+    "mtp",
+    "compressed-tensors",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash-V2",
+    "base_model:quantized:Jackrong/Qwopus3.8-27B-Flash-V2",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 28571747010,
+  "storage_human": "28.6 GB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Flash-V2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jackrong/Qwopus3.8-27B-Flash-V2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2-GGUF",
+      "snippet": "2.1 Base Model and Training Lineage Qwopus3.8-27B-Flash-V2 is post-trained from Qwopus3.8-27B-Flash, with Qwen3.8-27B as the original foundation model. The V2 run inherits the earlier release&#x27;s SFT and reasoning-reinforcement pipeline as its starting point, then applies a new post-training pass with different rewards and reinforcement-learning methods."
+    },
+    {
+      "title": "Jackrong/Qwopus3.8-27B-Flash-V2 - featherless.ai",
+      "url": "https://featherless.ai/models/Jackrong/Qwopus3.8-27B-Flash-V2",
+      "snippet": "Model Overview Jackrong/Qwopus3.8-27B-Flash-V2 is a 27 billion parameter model, building upon the Qwen3.8-27B foundation and further post-trained from Qwopus3.8-27B-Flash. Its core philosophy is to preserve strong capabilities while collapsing inference costs, making it highly suitable for demanding agent workloads. The V2 iteration applies revised reward functions and reinforcement learning ..."
+    },
+    {
+      "title": "Run Qwopus3.8-27B-Flash API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/Jackrong/Qwopus3.8-27B-Flash",
+      "snippet": "Qwopus3.8-27B-Flash: Efficient Agent Workloads Qwopus3.8-27B-Flash is a 27 billion parameter model fine-tuned from Qwen3.8-27B, developed by Jackrong. Its core philosophy is to maintain strong general capabilities while significantly reducing reasoning costs and response times, particularly for demanding, long-running agent tasks."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwopus3.8-27B-Flash-V2 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Jackrong/Qwopus3.8-27B-Flash-V2",
+      "snippet": "Qwopus3.8-27B-Flash-V2 is a renewed post-training release of Qwopus3.8-27B-Flash, which itself is built on Qwen3.8-27B. The goal remains the same: preserve enough capability for demanding work while reducing ineffective reasoning and making long-running agent workloads more practical. An agent amplifies reasoning cost."
+    }
+  ]
+}

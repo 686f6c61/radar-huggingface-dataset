@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mariklolik/AraToken-Qwen3-1.7B-CPT",
+  "slug": "mariklolik-aratoken-qwen3-1-7b-cpt",
+  "author": "mariklolik",
+  "url": "https://huggingface.co/mariklolik/AraToken-Qwen3-1.7B-CPT",
+  "created_at": "2026-09-23T23:05:38.000Z",
+  "updated_at": "2026-09-23T23:05:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "arabic",
+    "tokenization",
+    "vocabulary-extension",
+    "aratoken",
+    "conversational",
+    "ar",
+    "en",
+    "dataset:mariklolik/AraToken-FineWeb2-HQ-ar",
+    "arxiv:2512.18399",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-1.7B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608262,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FREE PORN! FREE SEX! Perfect Girls Tube - HD XXX videos for free.",
+      "url": "https://www.perfectgirls.xxx/",
+      "snippet": "On our tube you can find any XXX videos: teens, MILFs, grannies, fetish, hardcore, amateurs, big tits, anal sex... we have anything. …"
+    },
+    {
+      "title": "'perfect' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/perfect",
+      "snippet": "PERFECT LIPS|-Show A Dick No Mercy Slurping It Sloppy As It's CUMIN!!!"
+    },
+    {
+      "title": "PORNO GRATUIT! SEXE GRATUIT! La chaîne Perfect Girls - 100 …",
+      "url": "https://fr.perfectgirls.xxx/",
+      "snippet": "Depuis 20 ans, Perfect Girls XXX vous propose chaque jour les meilleures vidéos porno. C'est la meilleure collection de porno le …"
+    },
+    {
+      "title": "Perfect body XXX - Porn Videos & Tube Movies @ NicePorn",
+      "url": "https://niceporn.xxx/perfect-body/",
+      "snippet": "Find the best and highest-rated Perfect body videos from numerous porn tube sources. Our collection features top-rated and trending …"
+    },
+    {
+      "title": "Perfect porn videos - excellent sex with hot girls - XCafe",
+      "url": "https://xcafe.com/videos/perfect/",
+      "snippet": "Fap on free perfect porn videos with immaculate babes and hot girls having exciting sex! Galore of top XXX movies in HD quality will …"
+    }
+  ]
+}

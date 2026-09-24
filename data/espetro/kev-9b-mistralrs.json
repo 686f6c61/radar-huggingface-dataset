@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "espetro/kev-9b-mistralrs",
+  "slug": "espetro-kev-9b-mistralrs",
+  "author": "espetro",
+  "url": "https://huggingface.co/espetro/kev-9b-mistralrs",
+  "created_at": "2026-09-23T22:25:47.000Z",
+  "updated_at": "2026-09-23T22:27:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "kev",
+    "mistralrs",
+    "decision-model",
+    "qwen3.5",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17936036901,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - EricLBuehler/mistral.rs: Fast, flexible LLM inference",
+      "url": "https://github.com/EricLBuehler/mistral.rs",
+      "snippet": "The mistralrs CLI The CLI uses the same run, serve, and bench commands for model repositories, local directories, and GGUF files. Auto-detection: Automatically detects model architecture, quantization format, and chat template All-in-one: Single binary for chat, server, benchmarks, and web UI (run, serve, bench)"
+    },
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "mistral.rs | mistral.rs",
+      "url": "https://docs.mistralrs.dev/",
+      "snippet": "mistralrs run -m <model> works without flags. The binary infers the architecture and chat template from the Hugging Face repository, and selects the accelerator from the detected hardware."
+    },
+    {
+      "title": "kev/docs/model-cards/kev-9b.md at main · jaredpalmer/kev",
+      "url": "https://github.com/jaredpalmer/kev/blob/main/docs/model-cards/kev-9b.md",
+      "snippet": "Kev-9B Kev-9B is a decision model: one document (the state) and a set of typed questions in, a probability distribution per question out, in one forward pass. No text generation. It is a LoRA adapter (r=16, 45.4M trainable parameters) plus a pointer head on Qwen/Qwen3.5-9B-Base (revision 68c46c4b), serving TypeSafe&#x27;s public /v1/systemone contract."
+    },
+    {
+      "title": "Run models | mistral.rs",
+      "url": "https://docs.mistralrs.dev/guides/models/run-any-model/",
+      "snippet": "For standard model repositories, --quant auto probes your hardware (the same analysis as mistralrs tune) and picks a level, or runs at full precision if the model fits."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Helios-Flare-31B-i1-GGUF",
+  "slug": "mradermacher-helios-flare-31b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Helios-Flare-31B-i1-GGUF",
+  "created_at": "2026-09-24T00:42:17.000Z",
+  "updated_at": "2026-09-24T03:07:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "roleplay",
+    "storytelling",
+    "en",
+    "base_model:Vortex5/Helios-Flare-31B",
+    "base_model:quantized:Vortex5/Helios-Flare-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 200790718368,
+  "storage_human": "200.8 GB",
+  "base_model": "Vortex5/Helios-Flare-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "poki・playhop・laggedこの3つの無料子供向けゲーム... - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13317752273",
+      "snippet": "Jul 21, 2025 · poki・playhop・laggedこの3つの無料子供向けゲームサイトは安全でしょうか"
+    },
+    {
+      "title": "「POKIPOKI」 - 無料オンラインゲーム「POKIPOKI」がし.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1018333575",
+      "snippet": "Aug 10, 2008 · 「POKI POKI」 無料オンラインゲーム「POKIPOKI」がしたくて、 ダウンロード までして、 いざゲームスタート! …"
+    },
+    {
+      "title": "Poki - 知乎",
+      "url": "https://www.zhihu.com/topic/29367883",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "iPad全贴合屏和非全贴合啥区别，肉眼能分辨吗? - 知乎",
+      "url": "https://www.zhihu.com/question/401319817",
+      "snippet": "Jun 14, 2020 · 照片看起来两个没区别，肉眼看起来非全贴合其实也挺黑的，但是全贴合屏幕会更黑。手机是八九年前的，经典的非全 …"
+    },
+    {
+      "title": "Pokki Adware – Was ist es + Removal Guide [gelöst]",
+      "url": "https://sensorstechforum.com/de/pokki-start-menu/",
+      "snippet": "Sep 11, 2024 · Sollten Sie dem Pokki-Startmenü vertrauen?? Ist das Pokki-Startmenü ein legitimes Programm?? How to Remove …"
+    }
+  ]
+}

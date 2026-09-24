@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ark-zead/fak",
+  "slug": "ark-zead-fak",
+  "author": "ark-zead",
+  "url": "https://huggingface.co/ark-zead/fak",
+  "created_at": "2026-03-28T16:59:03.000Z",
+  "updated_at": "2026-09-23T20:30:31.000Z",
+  "license": "artistic-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:artistic-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5198850888,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ark: Survival Evolved",
+      "url": "https://playark.com/",
+      "snippet": "Respawn into a new dinosaur survival experience beyond your wildest dreams… as ARK is reimagined from the ground-up into the …"
+    },
+    {
+      "title": "ARK: Survival Evolved on Steam",
+      "url": "https://store.steampowered.com/app/346110/ARK_Survival_Evolved/",
+      "snippet": "Aug 27, 2017 · The mysterious ARK is a formidable and imposing environment, composed of many natural and unnatural structures, …"
+    },
+    {
+      "title": "ARK: Survival Evolved Wiki - Fandom",
+      "url": "https://ark.fandom.com/wiki/ARK_Survival_Evolved_Wiki",
+      "snippet": "What is ARK: Survival Evolved? As a man or woman stranded, naked, freezing, and starving on the unforgiving shores of a …"
+    },
+    {
+      "title": "ARK: Survival Evolved – Ark: Survival Evolved - playark.com",
+      "url": "https://playark.com/ark-survival-evolved/",
+      "snippet": "Millions of ARK players worldwide have built gigantic bases, captured and trained armies of dinosaurs, crafted armories full of …"
+    },
+    {
+      "title": "ARK: Survival Evolved | Télécharger et acheter aujourd'hui - Epic …",
+      "url": "https://store.epicgames.com/p/ark?lang=fr",
+      "snippet": "Découvrez tout ce que la franchise ARK a à offrir dans la collection ultime, avec des milliers d'heures de contenu unique ! …"
+    }
+  ]
+}

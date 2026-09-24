@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Dennis1315/ward-mobile-14b",
+  "slug": "dennis1315-ward-mobile-14b",
+  "author": "Dennis1315",
+  "url": "https://huggingface.co/Dennis1315/ward-mobile-14b",
+  "created_at": "2026-09-23T23:33:50.000Z",
+  "updated_at": "2026-09-23T23:48:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "libertic : le 1er réseau social libertin - libertic : le 1er réseau ...",
+      "url": "https://www.libertic.com/",
+      "snippet": "Dialogue sur libertic uniquement. L'exhibitionnisme est le fait de montrer des parties intimes de son anatomie ou d'avoir des relations …"
+    },
+    {
+      "title": "Présentation - libertic : le 1er réseau social libertin",
+      "url": "https://www.libertic.com/libertic/libertic.php",
+      "snippet": "libertic s'engage vis-à-vis de vous et met tous les moyens en oeuvre pour vous offrir du plaisir et uniquement du plaisir. Nous avons …"
+    },
+    {
+      "title": "Libertic : Le Meilleur Réseau Social Libertin",
+      "url": "https://libertic.app/",
+      "snippet": "Juste des esprits ouverts, des rencontres assumées et des envies qui se rencontrent dans le respect, la confiance et la discrétion. …"
+    },
+    {
+      "title": "Connexion - Libertic",
+      "url": "https://libertic.app/connexion/",
+      "snippet": "CONNEXION Pour continuer de rencontrer des personnes chaudes Tu n’as pas encore de compte ? T’attends quoi ? C’est par ici !"
+    },
+    {
+      "title": "Rechercher des membres - libertic : le 1er réseau social libertin",
+      "url": "https://www.libertic.com/search/dynamic.php",
+      "snippet": "Dialoguez sur le Chat libertic Consultez les annonces, photos et vidéos sexy de tous les membres Réservez votre pseudo pendant …"
+    }
+  ]
+}

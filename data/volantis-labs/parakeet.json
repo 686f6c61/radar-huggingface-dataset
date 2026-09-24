@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "volantis-labs/parakeet",
+  "slug": "volantis-labs-parakeet",
+  "author": "volantis-labs",
+  "url": "https://huggingface.co/volantis-labs/parakeet",
+  "created_at": "2026-09-24T00:04:34.000Z",
+  "updated_at": "2026-09-24T02:44:49.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "parakeet-tdt-0.6b-v3-ternary",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1005904511,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Read Daytime Star Manga Online Free - ReiManga",
+      "url": "https://reimanga.net/manga/daytime-star-73557",
+      "snippet": "Read Daytime Star manga online free on ReiManga. Yura Hwang has spent seven years toiling in the background as an extra, her …"
+    },
+    {
+      "title": "Daytime Star – Coffee Manga",
+      "url": "https://coffeemanga.net/manga/daytime-star/",
+      "snippet": "Nov 28, 2025 · For Yura Hwang, the spotlight was always just a shadow. But when a chance encounter on a new movie set reunites …"
+    },
+    {
+      "title": "Daytime Star — Read Webtoon online free on manga.uno",
+      "url": "https://manga.uno/m/daytime-star",
+      "snippet": "Chapter 37: Daytime Star Chapter 37 Chapter 38: Daytime Star Chapter 38 Chapter 39: Daytime Star Chapter 39 Chapter 40: …"
+    },
+    {
+      "title": "Daytime Star - WEBTOON",
+      "url": "https://www.webtoons.com/en/drama/daytime-star/list?title_no=3908",
+      "snippet": "Feb 21, 2022 · Hello, I am Godago, a webcomic creator of \"Daytime Star.\" I am happy and excited to introduce my work to readers …"
+    },
+    {
+      "title": "Episode 1 | Daytime Star - WEBTOON",
+      "url": "https://www.webtoons.com/en/drama/daytime-star/episode-1/viewer?title_no=3908&episode_no=1",
+      "snippet": "Read the latest episode of Daytime Star on the WEBTOON official site for free. EVERY TUESDAY online."
+    }
+  ]
+}

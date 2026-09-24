@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Gizzai-Sense-E2B-GGUF",
+  "slug": "mradermacher-gizzai-sense-e2b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Gizzai-Sense-E2B-GGUF",
+  "created_at": "2026-09-23T22:32:33.000Z",
+  "updated_at": "2026-09-24T02:11:36.000Z",
+  "license": "gizzai-sense-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "zh",
+    "en",
+    "base_model:GizzAI/Gizzai-Sense-E2B",
+    "base_model:quantized:GizzAI/Gizzai-Sense-E2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 49578664384,
+  "storage_human": "49.6 GB",
+  "base_model": "GizzAI/Gizzai-Sense-E2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GizzAI/Gizzai-Sense-E2B · Hugging Face",
+      "url": "https://huggingface.co/GizzAI/Gizzai-Sense-E2B",
+      "snippet": "Gizzai-Sense-E2B marks each homework item with one forward pass; items it is less than 80% sure of go to Gizzai-Sense-E4B, which writes a short verdict. In this run the fast system settled 9 of 10 items on its own."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B. Their diverse sizes make them deployable in environments ranging from high-end phones to laptops and servers, democratizing access to state-of-the-art AI. Gemma 4 introduces key capability and architectural advancements:"
+    },
+    {
+      "title": "GitHub - wzsxb233/gizzai-sense: Gizzai Sense (叽喳 Sense): typed ...",
+      "url": "https://github.com/wzsxb233/gizzai-sense",
+      "snippet": "Gizzai Sense is built to make fast, calibrated judgements that software can act on, and to hand uncertain cases to a stronger model or a person. It is not for fully automated decisions with legal or similarly significant effects on people: keep a human in the loop for those."
+    },
+    {
+      "title": "Gemma releases - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/releases",
+      "snippet": "Release of MedGemma 27B parameter multimodal model. June 26, 2025 Release of Gemma 3n in E2B and E4B sizes. May 20, 2025 Release of MedGemma in 4B and 27B parameter sizes. March 10, 2025 Release of Gemma 3 in 1B, 4B, 12B and 27B sizes. Release of ShieldGemma 2. February 19, 2025 Release of PaliGemma 2 mix in 3B, 10B, and 28B parameter sizes ..."
+    }
+  ]
+}

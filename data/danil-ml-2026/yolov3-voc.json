@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "danil-ml-2026/YOLOv3-VOC",
+  "slug": "danil-ml-2026-yolov3-voc",
+  "author": "danil-ml-2026",
+  "url": "https://huggingface.co/danil-ml-2026/YOLOv3-VOC",
+  "created_at": "2026-09-09T05:32:38.000Z",
+  "updated_at": "2026-09-23T23:30:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25254435112,
+  "storage_human": "25.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prénom Danil : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/danil-38401",
+      "snippet": "Signification et étymologie du prénom Danil Quelle que soit l'orthographe que vous lui préférez, Danil ou Danilo, le prénom est …"
+    },
+    {
+      "title": "Prénom Danil (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/danil/prenom-64988",
+      "snippet": "Prénom Danil : signification, origine, caractère, personnalité, Saint Danil, popularité, avis, classement... Toutes les infos sur le …"
+    },
+    {
+      "title": "Danyl — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Danyl",
+      "snippet": "Danyl Boudali, dont les seconds prénoms sont Mohamed et Yassine, naît le 25 octobre 1998 à Saint-Maurice dans le Val-de-Marne …"
+    },
+    {
+      "title": "Danil - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Danil",
+      "snippet": "Danil (also spelled Danyl) is a Central Asian and Russian male given name meaning \"God is my judge\" and \"The Creator's Gift\" in …"
+    },
+    {
+      "title": "Prénom Danil : origine, signification, caractère et popularité",
+      "url": "https://www.prenomgarcon.com/danil",
+      "snippet": "Danil est un prénom russe, rare en France avec 208 naissances. Découvrez son origine, son histoire et sa personnalité."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aikhanjum/reel-signal-ranker",
+  "slug": "aikhanjum-reel-signal-ranker",
+  "author": "aikhanjum",
+  "url": "https://huggingface.co/aikhanjum/reel-signal-ranker",
+  "created_at": "2026-09-23T19:48:50.000Z",
+  "updated_at": "2026-09-23T21:46:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ranking",
+    "short-form-video",
+    "experimental",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5412,
+  "storage_human": "5412 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI brand monitoring for brands and people",
+      "url": "https://www.ranksignal.ai/",
+      "snippet": "Track your Signal Score across ChatGPT, Claude, Perplexity, Gemini and Grok"
+    },
+    {
+      "title": "AI Clip Finder and Ranker for Long Videos · ClipSignal",
+      "url": "https://clip-signal.com/",
+      "snippet": "AI clip finder for videos you already made Why guess which clipcould go viral? Upload a long video you already made. ClipSignal reviews that existing footage and ranks the strongest moments already inside it — so you can choose, refine and export the right clips instead of editing blind."
+    },
+    {
+      "title": "ReelSignal - Instagram Reels Analytics Dashboard for Creators",
+      "url": "https://reelsignal.app/",
+      "snippet": "Stop guessing which Reels work. See your performance in one dashboard, talk to your Reels data with Signal AI, and forecast early momentum with SignalCast."
+    },
+    {
+      "title": "How it works - RankSignal.ai",
+      "url": "https://www.ranksignal.ai/how-it-works",
+      "snippet": "The Signal Score is a number from 0 to 100 that summarises how well-known and positively perceived an entity is across AI models. It is the average of five rank signals: Visibility, Sentiment, Consistency, Authority, and Risk."
+    },
+    {
+      "title": "RankReels — Ranking Reels That Blow Up Without Filming",
+      "url": "https://rankreels.ai/",
+      "snippet": "Ranking reels eat up every feed, but setting up tier lists takes hours. Every reel means another topic, script, recording session, edit, and caption. RankReels turns that entire production line into one review. Drop in your niche. AI builds the reel."
+    }
+  ]
+}

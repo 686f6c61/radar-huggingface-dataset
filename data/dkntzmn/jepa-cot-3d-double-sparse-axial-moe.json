@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DKNTZMN/jepa-cot-3d-double-sparse-axial-moe",
+  "slug": "dkntzmn-jepa-cot-3d-double-sparse-axial-moe",
+  "author": "DKNTZMN",
+  "url": "https://huggingface.co/DKNTZMN/jepa-cot-3d-double-sparse-axial-moe",
+  "created_at": "2026-09-23T21:27:40.000Z",
+  "updated_at": "2026-09-23T21:38:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2601.07372",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-24T03:17:45.210Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/vjepa2: PyTorch code and models for VJEPA2 ...",
+      "url": "https://github.com/facebookresearch/vjepa2",
+      "snippet": "V-JEPA 2-AC is a latent action-conditioned world model post-trained from V-JEPA 2 (using a small amount of robot trajectory interaction data) that solves robot manipulation tasks without environment-specific data collection or task-specific training or calibration."
+    },
+    {
+      "title": "GitHub - AbdelStark/awesome-jepa: Curated resources for JEPA (Joint ...",
+      "url": "https://github.com/AbdelStark/awesome-jepa",
+      "snippet": "Awesome JEPA A curated list of papers, models, code, datasets, and learning resources for Joint Embedding Predictive Architectures (JEPA), the self-supervised approach to world models proposed by Yann LeCun. JEPA learns by predicting representations rather than reconstructing pixels or tokens."
+    },
+    {
+      "title": "[2506.09985] V-JEPA 2: Self-Supervised Video Models Enable ...",
+      "url": "https://arxiv.org/abs/2506.09985",
+      "snippet": "A major challenge for modern AI is to learn to understand the world and learn to act largely by observation. This paper explores a self-supervised approach that combines internet-scale video data with a small amount of interaction data (robot trajectories), to develop models capable of understanding, predicting, and planning in the physical world. We first pre-train an action-free joint ..."
+    },
+    {
+      "title": "Awesome JEPA - abdelstark.github.io",
+      "url": "https://abdelstark.github.io/awesome-jepa/",
+      "snippet": "A curated list of papers, models, code, datasets, and learning resources for Joint Embedding Predictive Architectures (JEPA), the self-supervised approach to world models proposed by Yann LeCun."
+    },
+    {
+      "title": "TODO - AI Paper Notes",
+      "url": "https://en.papernotes.org/ICML2026/TODO/",
+      "snippet": "Reverse-Engineering Model Editing on Language Models | arXiv: 2602.10134 Revis: Sparse Latent Steering to Mitigate Object Hallucination in Large Vision-Language Models | arXiv: 2602.11824 Revisiting ..."
+    }
+  ]
+}

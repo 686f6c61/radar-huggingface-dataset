@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ciccio42/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "ciccio42-q-frozenlake-v1-4x4-noslippery",
+  "author": "ciccio42",
+  "url": "https://huggingface.co/ciccio42/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-09-23T20:30:56.000Z",
+  "updated_at": "2026-09-23T20:30:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1117,
+  "storage_human": "1117 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · tabbit/q-FrozenLake-v1-4x4-noSlippery at main",
+      "url": "https://huggingface.co/tabbit/q-FrozenLake-v1-4x4-noSlippery/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Chiz/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/Chiz/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 . Usage"
+    },
+    {
+      "title": "README.md · sun-s/q-FrozenLake-v1-4x4-noSlippery at main",
+      "url": "https://d6108366.hf-mirror.com/sun-s/q-FrozenLake-v1-4x4-noSlippery/blob/main/README.md?code=true",
+      "snippet": "sun-s / q-FrozenLake-v1-4x4-noSlippery like 0 Reinforcement Learning FrozenLake-v1-4x4-no_slippery q-learning custom-implementation Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new main q-FrozenLake-v1-4x4-noSlippery /README.md sun-s Upload folder using huggingface_hub ed23380 verifiedalmost 2 years ago preview code | Raw Download with hf CLI Copy ..."
+    },
+    {
+      "title": "q-FrozenLake-v1-4x4-noSlippery: Model Details, Context & Pricing | Essa ...",
+      "url": "https://essamamdani.com/ai-models/hf-hoaichu-q-frozenlake-v1-4x4-noslippery",
+      "snippet": "q-FrozenLake-v1-4x4-noSlippery is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "DeniSSio/q-FrozenLake-v1-4x4-noSlippery - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/45080",
+      "snippet": "Q-Learning Agent playing FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    }
+  ]
+}

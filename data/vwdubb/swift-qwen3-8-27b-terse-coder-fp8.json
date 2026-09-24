@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "vwdubb/Swift-Qwen3.8-27b-Terse-Coder-FP8",
+  "slug": "vwdubb-swift-qwen3-8-27b-terse-coder-fp8",
+  "author": "vwdubb",
+  "url": "https://huggingface.co/vwdubb/Swift-Qwen3.8-27b-Terse-Coder-FP8",
+  "created_at": "2026-09-23T21:18:29.000Z",
+  "updated_at": "2026-09-23T21:34:33.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "merge",
+    "lora",
+    "reasoning",
+    "coding",
+    "token-efficient",
+    "qwen3_8",
+    "conversational",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:finetune:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 38465169000,
+  "storage_human": "38.5 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vwdubb/Swift-Qwen3.8-27b-FP8 · Hugging Face",
+      "url": "https://huggingface.co/vwdubb/Swift-Qwen3.8-27b-FP8",
+      "snippet": "vwdubb / Swift-Qwen3.8-27b-FP8 Like 0 Image-Text-to-Text Transformers Safetensors qwen3_5 qwen3_8 efficient-thinking reasoning token-efficient lora conversational compressed-tensors License:swift-open-license-1. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ukisai/Swift-Qwen3.8-27b · Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-Qwen3.8-27b",
+      "snippet": "Efficiency across and versus reasoning efforts Qwen3.8&#x27;s reasoning_effort setting lets users choose how much the model thinks. For Swift to be useful across these settings, it needs to reduce thinking while keeping accuracy close to the base. We therefore tested xhigh, medium, and low: thinking-token savings persist at every level."
+    },
+    {
+      "title": "Swift Qwen3.8 27b - GGUF Model (3 parts) - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/swift-qwen3-8-27b.html",
+      "snippet": "Download Swift Qwen3.8 27b GGUF model. 170.1 GB, 72,862 downloads, 239 likes. Split into 3 parts."
+    },
+    {
+      "title": "Swift-Qwen3.8-27B: less overthinking | UkisAI",
+      "url": "https://ukisai.com/news/introducing-swift",
+      "snippet": "Swift includes a transfer component derived from BottleCap AI&#x27;s ThinkingCap-Qwen3.6-27B. The resulting model uses the standard Qwen3.8 interface and retains text, image, and video support. Benchmark results We evaluated Qwen3.8-27B and Swift on nine benchmarks, with BF16 weights and five runs per model. All base scores come from our own ..."
+    },
+    {
+      "title": "Qwen3.8-27B · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3.8-27B",
+      "snippet": "Following the widespread community adoption of the Qwen3.5 and Qwen3.6 series, we are pleased to introduce Qwen3.8, the most capable generation in the Qwen open-model family to date. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Qwen3.8-27B brings these advances to a compact ..."
+    }
+  ]
+}

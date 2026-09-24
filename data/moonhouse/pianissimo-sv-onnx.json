@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "moonhouse/pianissimo-sv-onnx",
+  "slug": "moonhouse-pianissimo-sv-onnx",
+  "author": "moonhouse",
+  "url": "https://huggingface.co/moonhouse/pianissimo-sv-onnx",
+  "created_at": "2026-09-24T00:46:26.000Z",
+  "updated_at": "2026-09-24T01:02:46.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "onnx",
+    "fastconformer_tdt",
+    "onnxruntime",
+    "web-speech",
+    "speech-recognition",
+    "swedish",
+    "fastconformer",
+    "tdt",
+    "quantized",
+    "int8",
+    "parakeet-web",
+    "automatic-speech-recognition",
+    "sv",
+    "base_model:KlangAI/pianissimo-sv",
+    "base_model:quantized:KlangAI/pianissimo-sv",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 922838602,
+  "storage_human": "923 MB",
+  "base_model": "KlangAI/pianissimo-sv",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Почему не работает Ютуб - Форум – YouTube",
+      "url": "https://support.google.com/youtube/thread/437526739/%D0%9F%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%BD%D0%B5-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-%D0%AE%D1%82%D1%83%D0%B1?hl=ru",
+      "snippet": "В сообществе, вы сможете получить помощь если у вас возникнут проблемы, а также вы сможете узнавать новости об …"
+    },
+    {
+      "title": "Cправка - YouTube",
+      "url": "https://support.google.com/youtube/?hl=ru",
+      "snippet": "Официальный справочный центр YouTube, где можно найти советы и руководства по использованию продукта, а также …"
+    },
+    {
+      "title": "Woman.ru",
+      "url": "https://www.woman.ru/rest/freetime/thread/6170352/",
+      "snippet": "На форуме обсуждается проблема с подключением к YouTube, когда интернет есть, но приложение пишет об ..."
+    },
+    {
+      "title": "Ютуб реально замедлили. Что делать? - Woman.ru",
+      "url": "https://www.woman.ru/psycho/socialization/thread/6109693/",
+      "snippet": "Jul 27, 2024 · 266 ответов - А сj следующей недели стращали еще сильнее замедлить ютуб. Может его вообще …"
+    },
+    {
+      "title": "Как выбрать язык и страну - Компьютер - Cправка - YouTube",
+      "url": "https://support.google.com/youtube/answer/87604?hl=ru&co=GENIE.Platform%3DDesktop",
+      "snippet": "Как изменить язык уведомлений по электронной почте Обычно уведомления по электронной почте от YouTube приходят на …"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mariklolik/AraToken",
+  "slug": "mariklolik-aratoken",
+  "author": "mariklolik",
+  "url": "https://huggingface.co/mariklolik/AraToken",
+  "created_at": "2026-09-23T23:03:55.000Z",
+  "updated_at": "2026-09-23T23:04:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "arabic",
+    "tokenizer",
+    "sentencepiece",
+    "unigram",
+    "aratoken",
+    "ar",
+    "dataset:mariklolik/AraToken-FineWeb2-HQ-ar",
+    "arxiv:2512.18399",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 145925556,
+  "storage_human": "146 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

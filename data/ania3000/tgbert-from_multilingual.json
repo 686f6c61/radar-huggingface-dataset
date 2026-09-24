@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ania3000/tgbert-from_multilingual",
+  "slug": "ania3000-tgbert-from_multilingual",
+  "author": "ania3000",
+  "url": "https://huggingface.co/ania3000/tgbert-from_multilingual",
+  "created_at": "2026-09-23T22:13:08.000Z",
+  "updated_at": "2026-09-23T22:14:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "fill-mask",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-multilingual-cased",
+    "base_model:finetune:google-bert/bert-base-multilingual-cased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177974523,
+  "parameters_human": "178.0M",
+  "storage_bytes": 711926981,
+  "storage_human": "712 MB",
+  "base_model": "google-bert/bert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok Downloader - Download TikTok Video Without Watermark",
+      "url": "https://ssstik.io/",
+      "snippet": "SSSTik is a free TikTok download tool that helps you download TikTok videos without watermark online. Save TT videos with the …"
+    },
+    {
+      "title": "TikTok to MP4 Converter | Download TikTok Videos - Flixier",
+      "url": "https://flixier.com/tools/tiktok-converter/tiktok-to-mp4",
+      "snippet": "Our video tool makes it super easy to download a TikTok as MP4. Just copy the link of the TikTok you want to convert, paste it into …"
+    },
+    {
+      "title": "Tiktok Downloader - Download Video tiktok Without Watermark",
+      "url": "https://snaptik.app/en3",
+      "snippet": "SnapTik helps users download video tiktok without a watermark in MP4 format and in HD quality. You are not required to install any …"
+    },
+    {
+      "title": "TikTok Video Downloader | Save Public Videos | Sceneform",
+      "url": "https://sceneform.ai/tools/tiktok-video-downloader",
+      "snippet": "Download public TikTok videos as MP4 files from your browser. Free to use, no account required, and built for creator research and …"
+    },
+    {
+      "title": "TikTok to MP4 Converter — Free Online HD Video Downloader",
+      "url": "https://tikrapid.com/",
+      "snippet": "Use it directly in your browser on any device — no installation, no account, no daily limits. Paste your TikTok link and the MP4 file is …"
+    }
+  ]
+}

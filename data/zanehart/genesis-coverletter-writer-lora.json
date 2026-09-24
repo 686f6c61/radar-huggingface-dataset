@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Zanehart/genesis-coverletter-writer-lora",
+  "slug": "zanehart-genesis-coverletter-writer-lora",
+  "author": "Zanehart",
+  "url": "https://huggingface.co/Zanehart/genesis-coverletter-writer-lora",
+  "created_at": "2026-09-23T20:34:02.000Z",
+  "updated_at": "2026-09-23T20:36:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955183,
+  "storage_human": "173 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CoverLetterAI by Wonsulting - Free AI Cover Letter Writer from WonsultingAI",
+      "url": "https://www.wonsulting.com/coverletterai",
+      "snippet": "Stop hating cover letters, automate them! Your job applications just got whole lot easier with CoverLetterAI. You&#x27;ll be able to send off the perfect cover letter in just a few easy steps. Backed by years of career expertise on AI."
+    },
+    {
+      "title": "Google&#x27;s Gemini AI hacks 3 companies in security test, then stops",
+      "url": "https://www.aljazeera.com/news/2026/9/19/googles-gemini-ai-hacks-3-companies-in-security-test-then-stops",
+      "snippet": "Google&#x27;s Gemini AI hacks 3 companies in security test, then stops Google discloses first breakout by Gemini following similar incidents by Meta, Anthropic and OpenAI."
+    },
+    {
+      "title": "7 best AI cover letter generators in 2026 (Ranked) - Jotform",
+      "url": "https://www.jotform.com/ai/best-ai-cover-letter-generator/",
+      "snippet": "Find the best AI cover letter generators. Compare top AI cover letter generators by features, pricing, professionalism, and ease of use."
+    },
+    {
+      "title": "Self-learning AI reveals Week 2 NFL score predictions",
+      "url": "https://www.cbssports.com/betting/news/nfl-picks-ai-score-predictions-best-bets-every-week-2-2026-game-projection/",
+      "snippet": "SportsLine&#x27;s self-learning AI reveals its betting guide for the rest of the Week 2 NFL schedule"
+    },
+    {
+      "title": "Google&#x27;s AI model hacked companies, accessed internet",
+      "url": "https://www.canberratimes.com.au/story/9353385/googles-ai-model-hacked-companies-accessed-internet/",
+      "snippet": "Google&#x27;s Gemini model accessed the internet and hacked other companies during a test of its ‌cybersecurity capabilities, the first known example of the company&#x27;s artificial intelligence systems ..."
+    }
+  ]
+}

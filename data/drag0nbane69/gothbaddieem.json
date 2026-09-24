@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "drag0nbane69/GothBaddieEm",
+  "slug": "drag0nbane69-gothbaddieem",
+  "author": "drag0nbane69",
+  "url": "https://huggingface.co/drag0nbane69/GothBaddieEm",
+  "created_at": "2026-09-23T20:43:34.000Z",
+  "updated_at": "2026-09-23T20:43:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:black-forest-labs/FLUX.1-schnell",
+    "base_model:adapter:black-forest-labs/FLUX.1-schnell",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-24T03:18:16.327Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Releases Timeline: Latest Launches, Updated Daily",
+      "url": "https://www.promptzone.com/ai-model-releases",
+      "snippet": "AI Model Releases 2026 Timeline A chronological timeline of major AI model releases across 2025 and 2026 — LLMs, reasoning models, open-weights families, and image & video generators, each with its date, why it mattered, and the official announcement."
+    },
+    {
+      "title": "Goth Baddie — AI Character Profile | AI Girl",
+      "url": "https://aigirl.one/en/profile/model/0bf07d49-0808-4be2-8ad6-f5a43cda68a1",
+      "snippet": "Goth Baddie, also known as GD, is an enigmatic AI character who embodies the dark and mysterious allure of the gothic subculture. GD is known for their striking appearance, which includes pale skin, dark hair, and a wardrobe filled with black lace, velvet, and silver jewelry. Their eyes, often adorned with heavy eyeliner and dark shadows, hold a captivating intensity that seems to peer into ..."
+    },
+    {
+      "title": "GothBaddie1 - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d1pevfte878c73b3peog",
+      "snippet": "Explore GothBaddie1 model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "Goth AI Art Generator — Free Dark Art 2026 | BasedLabs",
+      "url": "https://www.basedlabs.ai/tools/goth-ai",
+      "snippet": "Goth AI art is its own aesthetic discipline. Dark lighting, high contrast, and specific style families (trad goth, romantic goth, Victorian goth, emo, witchy, vampire, dark academia) each have distinct visual rules that generic AI image generators miss. This tool is tuned specifically for goth aesthetics — pick a style family from the preset menu, prompt your subject, and the output ..."
+    }
+  ]
+}

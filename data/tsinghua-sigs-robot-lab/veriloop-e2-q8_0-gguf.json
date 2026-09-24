@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "tsinghua-sigs-robot-lab/VeriLoop-E2-Q8_0-GGUF",
+  "slug": "tsinghua-sigs-robot-lab-veriloop-e2-q8_0-gguf",
+  "author": "tsinghua-sigs-robot-lab",
+  "url": "https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2-Q8_0-GGUF",
+  "created_at": "2026-09-23T19:48:33.000Z",
+  "updated_at": "2026-09-23T19:59:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "q8_0",
+    "mtp",
+    "speculative-decoding",
+    "veriloop",
+    "post-training",
+    "coding-agent",
+    "software-engineering",
+    "mathematical-reasoning",
+    "scientific-reasoning",
+    "long-context",
+    "apache-2.0",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:tsinghua-sigs-robot-lab/VeriLoop-E2",
+    "base_model:quantized:tsinghua-sigs-robot-lab/VeriLoop-E2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 31882835840,
+  "storage_human": "31.9 GB",
+  "base_model": "tsinghua-sigs-robot-lab/VeriLoop-E2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tsinghua University",
+      "url": "https://www.tsinghua.edu.cn/en/",
+      "snippet": "Tsinghua holds commencement ceremony for undergraduate students Tsinghua holds opening convocation to welcome new …"
+    },
+    {
+      "title": "Université Tsinghua — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Universit%C3%A9_Tsinghua",
+      "snippet": "L 'université Tsinghua (chinois simplifié : 清华大学 ; chinois traditionnel : 清華大學 ; pinyin : Qīnghuá Dàxué ; EFEO : Tch'inghoua …"
+    },
+    {
+      "title": "Tsinghua University - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tsinghua_University",
+      "snippet": "Early 20th century (1911–1949) Tsinghua University was established in Beijing during a tumultuous period of national upheaval and …"
+    },
+    {
+      "title": "清华大学",
+      "url": "https://www.tsinghua.edu.cn/",
+      "snippet": "微信 常用链接 校园参观 校园公交车 清华校历 校园地图 实用信息 教育基金会 校友总会 清华标志 宣传资源 欢迎关注清华大学公众号 …"
+    },
+    {
+      "title": "Étudier à l'Université Tsinghua : Admission, Coûts &",
+      "url": "https://www.institut-promethee.fr/etudier-a-tsinghua-university",
+      "snippet": "Mar 19, 2026 · L’Université Tsinghua (清华大学, Tsinghua Daxue, abrégée THU), fondée en 1911 à Pékin, est l’université de …"
+    }
+  ]
+}

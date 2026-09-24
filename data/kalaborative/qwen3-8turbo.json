@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "Kalaborative/qwen3.8turbo",
+  "slug": "kalaborative-qwen3-8turbo",
+  "author": "Kalaborative",
+  "url": "https://huggingface.co/Kalaborative/qwen3.8turbo",
+  "created_at": "2026-09-23T20:05:56.000Z",
+  "updated_at": "2026-09-23T20:05:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "ara",
+    "MTP GGUF Quants",
+    "Regular GGUF Quants",
+    "qwen3_8",
+    "qwen3_6",
+    "qwen3_5",
+    "multi-stage tuned",
+    "thinking",
+    "reasoning",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "multi-stage-tune",
+    "multi-state-merge",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/F451-STRICT-Datasets",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 389007761691,
+  "storage_human": "389.0 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alibaba Cloud Model Studio:qwen-turbo",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen-turbo",
+      "snippet": "The Turbo model of the Qwen3 series. It effectively integrates thinking mode and non-thinking mode, allowing for mode switching during conversations. Its reasoning capabilities rival those of QwQ-32B with a smaller parameter size, while its general capabilities significantly surpass those of Qwen2.5-Turbo, achieving the SOTA level in the same scale within the industry.This model version is ..."
+    },
+    {
+      "title": "qwen-turbo - Alibaba Cloud Model Studio",
+      "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen-turbo",
+      "snippet": "The Turbo model of the Qwen3 series. It effectively integrates thinking mode and non-thinking mode, allowing for mode switching during conversations. Its reasoning capabilities rival those of QwQ-32B with a smaller parameter size, while its general capabilities significantly surpass those of Qwen2.5-Turbo, achieving the SOTA level in the same scale within the industry.This model version is ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "Qwen-Turbo - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen-turbo",
+      "snippet": "The Turbo model of the Qwen3 series. It effectively integrates thinking mode and non-thinking mode, allowing for mode switching during conversations. Its reasoning capabilities rival those of QwQ-32B with a smaller parameter size, while its general capabilities significantly surpass those of Qwen2.5-Turbo, achieving the SOTA level in the same scale within the industry."
+    },
+    {
+      "title": "Every Qwen AI Model Explained and Compared (Sep, 2026)",
+      "url": "https://www.secondtalent.com/resources/every-qwen-ai-model-explained-compared/",
+      "snippet": "Qwen-Max uses a 256K window, and Qwen-Turbo a 131K window. The open models ship with 128K to 256K windows by default, and can be extended further with standard techniques."
+    }
+  ]
+}

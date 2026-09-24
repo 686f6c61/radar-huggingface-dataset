@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "UT-IFML/dQwen3.5-9B-Base",
+  "slug": "ut-ifml-dqwen3-5-9b-base",
+  "author": "UT-IFML",
+  "url": "https://huggingface.co/UT-IFML/dQwen3.5-9B-Base",
+  "created_at": "2026-08-05T01:57:52.000Z",
+  "updated_at": "2026-09-23T17:55:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "diffuqwen35",
+    "feature-extraction",
+    "diffusion-language-model",
+    "masked-diffusion",
+    "hybrid-attention",
+    "qwen3.5",
+    "arxiv:2609.20751",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 795,
+  "trending_score": 11,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 35835301437,
+  "storage_human": "35.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Université Toulouse Capitole",
+      "url": "https://www.ut-capitole.fr/",
+      "snippet": "UT Capitole, 800 ans d’excellence : 21 000 étudiants, 1 500 enseignants-chercheurs, formations interdisciplinaires et engagées, …"
+    },
+    {
+      "title": "Groupe UT - Réseau des universités de technologie",
+      "url": "https://www.groupe-ut.fr/",
+      "snippet": "Le Groupe des Universités de Technologie (Groupe UT) se positionne comme une communauté dynamique de formation, de …"
+    },
+    {
+      "title": "Université de Toulouse - Université de Toulouse",
+      "url": "https://www.utoulouse.fr/",
+      "snippet": "Sep 1, 2026 · Plus de 37 700 étudiantes, étudiants et 74 structures de recherche sont accueillis sur les sites de l’université en région …"
+    },
+    {
+      "title": "UT Capitole - Authentication portal",
+      "url": "https://monespace.ut-capitole.fr/",
+      "snippet": "For security reasons, please close your browser after logging into protected services !"
+    },
+    {
+      "title": "Groupe UT - Université de technologie de Troyes",
+      "url": "https://www.utt.fr/gouvernance-organisation/groupe-ut",
+      "snippet": "Depuis 2013, l' UTT à Troyes, l'UTBM à Belfort-Montbéliard et l'UTC à Compiègne sont regroupées dans le réseau des universités …"
+    }
+  ]
+}

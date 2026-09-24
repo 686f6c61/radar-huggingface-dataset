@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ydaichi/smolvla_tactile_color_pen",
+  "slug": "ydaichi-smolvla_tactile_color_pen",
+  "author": "ydaichi",
+  "url": "https://huggingface.co/ydaichi/smolvla_tactile_color_pen",
+  "created_at": "2026-09-23T21:04:25.000Z",
+  "updated_at": "2026-09-23T21:05:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:ydaichi/tactile_color_pen",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 451043616,
+  "parameters_human": "451.0M",
+  "storage_bytes": 910714092,
+  "storage_human": "911 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ydaichi/smolvla_notactile_grab_pen_from_bag · Hugging Face",
+      "url": "https://huggingface.co/ydaichi/smolvla_notactile_grab_pen_from_bag",
+      "snippet": "ydaichi/tactile_grab_pen_from_bag ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "ydaichi/smolvla_tactile_grab_pen_from_bag · Hugging Face",
+      "url": "https://huggingface.co/ydaichi/smolvla_tactile_grab_pen_from_bag",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "lerobot/docs/source/smolvla.mdx at main · huggingface/lerobot",
+      "url": "https://github.com/huggingface/lerobot/blob/main/docs/source/smolvla.mdx",
+      "snippet": "SmolVLA is Hugging Face&#x27;s lightweight foundation model for robotics. Designed for easy fine-tuning on LeRobot datasets, it helps accelerate your development! Figure 1. SmolVLA takes as input (i) multiple cameras views, (ii) the robot&#x27;s current sensorimotor state, and (iii) a natural language instruction, encoded into contextual features used to condition the action expert when generating ..."
+    },
+    {
+      "title": "GitHub - PhosFaith/SmolVLA: Finetunning the SmolVLM by huggingface into ...",
+      "url": "https://github.com/PhosFaith/SmolVLA",
+      "snippet": "SmolVLA Project.. Finetunning the SmolVLM by huggingface into a VLA. This is an ongoing project for the AI course in the Masters in Marine Intelligent Robotics at UTLN."
+    },
+    {
+      "title": "[2506.01844] SmolVLA: A Vision-Language-Action Model for Affordable and ...",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "snippet": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically massive ..."
+    }
+  ]
+}

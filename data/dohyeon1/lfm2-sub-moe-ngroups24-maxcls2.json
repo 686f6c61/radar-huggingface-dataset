@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dohyeon1/LFM2-Sub-MoE-ngroups24-maxcls2",
+  "slug": "dohyeon1-lfm2-sub-moe-ngroups24-maxcls2",
+  "author": "Dohyeon1",
+  "url": "https://huggingface.co/Dohyeon1/LFM2-Sub-MoE-ngroups24-maxcls2",
+  "created_at": "2026-09-23T21:07:03.000Z",
+  "updated_at": "2026-09-23T21:09:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8339930560,
+  "parameters_human": "8.34B",
+  "storage_bytes": 16680154224,
+  "storage_human": "16.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dohyeon1/LFM2-Sub-MoE-ngroups24 · Hugging Face",
+      "url": "https://huggingface.co/Dohyeon1/LFM2-Sub-MoE-ngroups24",
+      "snippet": "Instructions to use Dohyeon1/LFM2-Sub-MoE-ngroups24 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Dohyeon1/LFM2-Sub-MoE-ngroups24 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/Dohyeon1/LFM2-Sub-MoE-ngroups24/discussions",
+      "snippet": "Instructions to use Dohyeon1/LFM2-Sub-MoE-ngroups24 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Lfm2 Sub Moe Ngroups24 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/dohyeon1/lfm2-sub-moe-ngroups24",
+      "snippet": "Registry entry for model Lfm2 Sub Moe Ngroups24; source metadata pending."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/lfm2_moe.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/lfm2_moe.md",
+      "snippet": "The first LFM2-MoE release is LFM2-8B-A1B, with 8.3B total parameters and 1.5B active parameters. The model excels in quality (comparable to 3-4B dense models) and speed (faster than other 1.5B class models)."
+    },
+    {
+      "title": "Dohyeon1 (Dohyeon Kim)",
+      "url": "https://hf-p-cfw.fyan.top/Dohyeon1/models",
+      "snippet": "Organizations Dohyeon1&#x27;s models88 Sort: Recently updated Dohyeon1/OLMoE-Sub-MoE-fix-ngroups48 Text Generation • 7B•Updated Jun 4• 7 • 1"
+    }
+  ]
+}

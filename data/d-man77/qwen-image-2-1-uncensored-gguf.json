@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "D-MaN77/Qwen-Image-2.1-Uncensored-GGUF",
+  "slug": "d-man77-qwen-image-2-1-uncensored-gguf",
+  "author": "D-MaN77",
+  "url": "https://huggingface.co/D-MaN77/Qwen-Image-2.1-Uncensored-GGUF",
+  "created_at": "2026-09-23T23:54:17.000Z",
+  "updated_at": "2026-09-23T23:54:18.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "image-generation",
+    "comfyui",
+    "comfyui-gguf",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 83610330636,
+  "storage_human": "83.6 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discord - Group Chat That’s All Fun & Games",
+      "url": "https://discord.com/",
+      "snippet": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to …"
+    },
+    {
+      "title": "D — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/D",
+      "snippet": "La notation D... ou D. est une abréviation du nom de Dieu employée par les juifs les plus religieux, puisque le judaïsme interdit de …"
+    },
+    {
+      "title": "La lettre (D) en Français - YouTube",
+      "url": "https://m.youtube.com/watch?v=ZgMV2zMzkkQ",
+      "snippet": "Oct 31, 2021 · Apprendre la lettre D par histoire, pour les enfants, apprendre les mots commençant par la lettre D, chez Français …"
+    },
+    {
+      "title": "D (lettre) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/D_(lettre)",
+      "snippet": "La lettre D tire probablement son origine de l' alphabet protosinaïtique, du graphème représentant un poisson ou de celui …"
+    },
+    {
+      "title": "Letter D | Sing and Learn the Letters of the Alphabet - YouTube",
+      "url": "https://m.youtube.com/watch?v=T2EYvT6HWaY",
+      "snippet": "Mar 12, 2018 · This super-catchy and clear alphabet song also lets children hear the letter D sound and see each letter at the …"
+    }
+  ]
+}

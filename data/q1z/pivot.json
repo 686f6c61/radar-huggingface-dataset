@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Q1z/Pivot",
+  "slug": "q1z-pivot",
+  "author": "Q1z",
+  "url": "https://huggingface.co/Q1z/Pivot",
+  "created_at": "2026-09-20T21:43:14.000Z",
+  "updated_at": "2026-09-24T02:53:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pivot",
+    "feature-extraction",
+    "decision-making",
+    "classification",
+    "scoring",
+    "custom_code",
+    "base_model:LiquidAI/LFM2.5-Encoder-350M",
+    "base_model:finetune:LiquidAI/LFM2.5-Encoder-350M",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 48,
+  "trending_score": 0,
+  "parameters": 357631745,
+  "parameters_human": "357.6M",
+  "storage_bytes": 2861278444,
+  "storage_human": "2.9 GB",
+  "base_model": "LiquidAI/LFM2.5-Encoder-350M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Q1z/Pivot · Hugging Face",
+      "url": "https://huggingface.co/Q1z/Pivot",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing Pivot 0.5: Fast Finance & Spreadsheet Model - shortcut.ai",
+      "url": "https://shortcut.ai/blog/posts/introducing-pivot",
+      "snippet": "A 27B model on the efficient frontier Accuracy vs. blended price per task — Pivot 0.5 matches Sonnet 4.5 at ~3.5× lower cost."
+    },
+    {
+      "title": "PIVOT: Bridging Planning and Execution in LLM Agents via Trajectory ...",
+      "url": "https://arxiv.org/html/2605.11225",
+      "snippet": "Abstract Large language model (LLM)-based agents frequently generate seemingly coherent plans that fail upon execution due to infeasible actions, constraint violations, and compounding errors over extended horizons. PIVOT (Plan-Inspect-eVOlve Trajectories) addresses this plan-execution misalignment through a self-supervised framework that treats trajectories as optimizable objects ..."
+    },
+    {
+      "title": "AI Company Pivots in 2026: The Data Behind the Hype",
+      "url": "https://www.botonomy.ai/blog/ai-news/ai-company-pivots/",
+      "snippet": "AI company pivots describe the trend of established businesses restructuring their core product, revenue model, or operations around artificial intelligence. In 2026, this is happening at industrial scale — Reuters counted over 150 U.S. public companies formally repositioning as AI or tech businesses in Q1 alone. The gap between a genuine operational pivot and a branding exercise is simple ..."
+    },
+    {
+      "title": "Capital Allocation in the Age of AI: What The Pivot Model ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/capital-allocation-age-ai-what-pivot-model-teaches-us-siva-kumar-kgrac",
+      "snippet": "When The Pivot Model was completed in early 2026, it predicted a fundamental shift in capital allocation across the product lifecycle: the share of investment going toward human capital is ..."
+    }
+  ]
+}

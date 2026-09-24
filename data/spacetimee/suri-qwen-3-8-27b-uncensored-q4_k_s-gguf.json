@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-Q4_K_S-GGUF",
+  "slug": "spacetimee-suri-qwen-3-8-27b-uncensored-q4_k_s-gguf",
+  "author": "SpaceTimee",
+  "url": "https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-Q4_K_S-GGUF",
+  "created_at": "2026-09-24T01:26:22.000Z",
+  "updated_at": "2026-09-24T01:27:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:SpaceTimee/Suri-Qwen-3.8-27B-Uncensored",
+    "base_model:quantized:SpaceTimee/Suri-Qwen-3.8-27B-Uncensored",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 15586305600,
+  "storage_human": "15.6 GB",
+  "base_model": "SpaceTimee/Suri-Qwen-3.8-27B-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RAINETT Zero% - Assouplissant Hypoallergénique - Sans Parfum, ni ...",
+      "url": "https://www.amazon.fr/RAINETT-714409-Assouplissant-Ecologique-0/dp/B07DG4GXGC",
+      "snippet": "Dimensions du produit (L x l x h) ‏ : ‎ 9,1 x 6,4 x 24,2 cm; 750 grammes Fabricant ‏ : ‎ Werner et Mertz ASIN ‏ : ‎ B07DG4GXGC Numéro …"
+    },
+    {
+      "title": "RAINETT Zero% - Hypoallergenic Fabric Softener - No Added",
+      "url": "https://www.amazon.fr/-/en/RAINETT-Zero-Hypoallergenic-Preservatives-Recyclable/dp/B07DG4GXGC",
+      "snippet": "Product details Product Dimensions ‏ : ‎ 9.1 x 6.4 x 24.2 cm; 750 g Manufacturer ‏ : ‎ Werner et Mertz ASIN ‏ : ‎ B07DG4GXGC Item …"
+    },
+    {
+      "title": "RAINETT Zero% - Assouplissant Hypoallergénique - Sans Parfum, ni ...",
+      "url": "https://www.amazon.com.be/RAINETT-Zero-Assouplissant-Hypoallerg%C3%A9nique-Conservateur/dp/B07DG4GXGC",
+      "snippet": "Détails sur le produit Dimensions du produit (L x l x h) ‏ : ‎ 9,1 x 6,4 x 24,2 cm; 750 grammes Fabricant ‏ : ‎ RAINETT ASIN ‏ : ‎ …"
+    },
+    {
+      "title": "RAINETT 714409 Assouplissant Ecologique 0% - 750 ml",
+      "url": "https://www.amazon.com.be/RAINETT-714409-Assouplissant-Ecologique-0/dp/B07DG4GXGC",
+      "snippet": "Détails sur le produit Dimensions du produit (L x l x h) ‏ : ‎ 9.1 x 6.4 x 24.2 cm; 750 grammes Fabricant ‏ : ‎ RAINETT ASIN ‏ : ‎ …"
+    },
+    {
+      "title": "Montre Connectée Android 4g Étanche Ip68 Double Caméras Gps …",
+      "url": "https://www.carrefour.fr/p/montre-connectee-android-4g-etanche-ip68-double-cameras-gps-ceramique-2gb-16gb-3615616847641?msockid=2d11ebca0b156f2003b3fc140afb6e77",
+      "snippet": "Montre Connectée Android 4g Étanche Ip68 Double Caméras Gps Céramique 2gb+16gb à retrouver en drive ou livraison au meilleur …"
+    }
+  ]
+}

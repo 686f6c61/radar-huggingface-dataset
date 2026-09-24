@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "rosadecsai/led-large-16384-BASE3ep-ASPRPreACE3ep",
+  "slug": "rosadecsai-led-large-16384-base3ep-asprpreace3ep",
+  "author": "rosadecsai",
+  "url": "https://huggingface.co/rosadecsai/led-large-16384-BASE3ep-ASPRPreACE3ep",
+  "created_at": "2026-09-23T16:03:19.000Z",
+  "updated_at": "2026-09-23T23:18:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "led",
+    "generated_from_trainer",
+    "base_model:rosadecsai/led-large-16384-BASE3ep",
+    "base_model:finetune:rosadecsai/led-large-16384-BASE3ep",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 459859047,
+  "parameters_human": "459.9M",
+  "storage_bytes": 12876626742,
+  "storage_human": "12.9 GB",
+  "base_model": "rosadecsai/led-large-16384-BASE3ep",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rosadecsai/led-large-16384-BASE3ep · Hugging Face",
+      "url": "https://huggingface.co/rosadecsai/led-large-16384-BASE3ep",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rosadecsai/led-large-16384-BASE-Attention3ep · Hugging Face",
+      "url": "https://huggingface.co/rosadecsai/led-large-16384-BASE-Attention3ep",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "led-large-16384 | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/led-large-16384/",
+      "snippet": "What is led-large-16384? LED-Large-16384 is AllenAI&#x27;s implementation of the Longformer Encoder-Decoder architecture, specifically designed to handle extremely long documents up to 16,384 tokens in length. The model is built upon the BART-large architecture and innovatively extends its position embedding capabilities by replicating the original embedding matrix 16 times."
+    },
+    {
+      "title": "Tackle 16k Tokens on Huawei Hardware: The LED-Large-16384 Model Lands ...",
+      "url": "https://aichina.news/blog/tackle-16k-tokens-on-huawei-hardware-the-led-large-16384-model-lands-2p3sib/",
+      "snippet": "Tackle 16k Tokens on Huawei Hardware: The LED-Large-16384 Model Lands on Modelers.cn models/lvzhou-mindnlp May 27, 2026 2 min read Auto-generated from Modelers ... Tags Huawei Large Language Models Open Source Enterprise AI"
+    },
+    {
+      "title": "LED [large].ipynb - Colab",
+      "url": "https://colab.research.google.com/github/d0r1h/LegSum/blob/main/scripts/notebooks/LED_%5Blarge%5D.ipynb",
+      "snippet": "!pip install transformers datasets sentencepiece rouge [ ]"
+    }
+  ]
+}

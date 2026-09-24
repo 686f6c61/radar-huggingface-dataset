@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Arihant25/anlp-a2-moe",
+  "slug": "arihant25-anlp-a2-moe",
+  "author": "Arihant25",
+  "url": "https://huggingface.co/Arihant25/anlp-a2-moe",
+  "created_at": "2026-09-23T21:53:31.000Z",
+  "updated_at": "2026-09-23T22:52:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "anlp-assignment-2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 816652856,
+  "storage_human": "817 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arihant25/anlp-a2-moe - Hugging Face",
+      "url": "https://huggingface.co/Arihant25/anlp-a2-moe",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Arihant25 (Arihant Tripathy) - Hugging Face",
+      "url": "https://huggingface.co/Arihant25",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 12 days ago ... published a model 30 days ago"
+    },
+    {
+      "title": "GitHub - Arihant25/anlp-study-guide: A slide-by-slide study companion ...",
+      "url": "https://github.com/Arihant25/anlp-study-guide",
+      "snippet": "anlp-study-guide A slide-by-slide study companion for Advanced NLP, Monsoon 2026 at IIIT Hyderabad. Every lecture slide, tutorial page, and previous-year exam question is embedded verbatim and followed by an explanation written from first principles — designed for a student who has never seen the material before."
+    },
+    {
+      "title": "anlp-study-guide/assignments at main · Arihant25/anlp-study-guide - GitHub",
+      "url": "https://github.com/Arihant25/anlp-study-guide/tree/main/assignments",
+      "snippet": "A slide-by-slide study companion for Advanced NLP (M23CS7.501), Monsoon 2026, IIIT Hyderabad. Every lecture, tutorial, and PYQ explained from first principles. - Arihant25/anlp-study-guide"
+    },
+    {
+      "title": "Arihant25 (Arihant Tripathy) - Hugging Face",
+      "url": "https://huggingface.co/Arihant25/datasets",
+      "snippet": "None yet Recent Activity updateda model4 days ago Arihant25/anlp-a1-transformer-ablations publisheda model22 days ago Arihant25/anlp-a1-transformer-ablations updateda model6 months ago"
+    }
+  ]
+}

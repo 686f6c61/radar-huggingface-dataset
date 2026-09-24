@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "nativ-community/rampart-mlx-4bit",
+  "slug": "nativ-community-rampart-mlx-4bit",
+  "author": "nativ-community",
+  "url": "https://huggingface.co/nativ-community/rampart-mlx-4bit",
+  "created_at": "2026-09-23T20:23:33.000Z",
+  "updated_at": "2026-09-23T20:23:37.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "nl"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "bert",
+    "mlx-vlm",
+    "minilm",
+    "token-classification",
+    "pii",
+    "redaction",
+    "privacy",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "base_model:nationaldesignstudio/rampart",
+    "base_model:finetune:nationaldesignstudio/rampart",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18434723,
+  "parameters_human": "18.4M",
+  "storage_bytes": 15470505,
+  "storage_human": "15 MB",
+  "base_model": "nationaldesignstudio/rampart",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nativ-community/MiMo-V2.6-Flash-RL-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/nativ-community/MiMo-V2.6-Flash-RL-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - nationaldesignstudio/rampart",
+      "url": "https://github.com/nationaldesignstudio/rampart",
+      "snippet": "Rampart is a local-first system for removing personally identifiable information from user-typed text before it leaves the browser. It combines a 14.7 MB ONNX token-classification model with a deterministic recognizer layer; together they form a defense-in-depth pipeline released as a complete, reproducible artifact. This repository ships the runtime as @nationaldesignstudio/rampart. Model ..."
+    },
+    {
+      "title": "nativmLX/README.md at main · 0xSojalSec/nativmLX · GitHub",
+      "url": "https://github.com/0xSojalSec/nativmLX/blob/main/README.md",
+      "snippet": "Local AI, native to your Mac. Chat, serve, monitor, and connect MLX models from one macOS app. - nativmLX/README.md at main · 0xSojalSec/nativmLX"
+    },
+    {
+      "title": "OsaurusAI/rampart-mlx · Hugging Face",
+      "url": "https://huggingface.co/OsaurusAI/rampart-mlx",
+      "snippet": "Instructions to use OsaurusAI/rampart-mlx with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use OsaurusAI/rampart-mlx with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir rampart-mlx OsaurusAI/rampart-mlx Notebooks Google Colab Kaggle Local AppsSettings LM ..."
+    },
+    {
+      "title": "Rampart - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/rampart/",
+      "snippet": "Rampart is a 14.7 MB quantized ONNX token-classification model for client-side PII detection and redaction. Fine-tuned from MiniLM-L6-H384 with a 35-label BIO head covering 17 entity types, it supports 7 Latin-script languages. Designed to run in browsers via ONNX Runtime Web and Transformers.js at 6.6 ms p50 latency."
+    }
+  ]
+}

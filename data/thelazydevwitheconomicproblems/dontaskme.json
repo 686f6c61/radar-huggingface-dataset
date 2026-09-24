@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "thelazydevwitheconomicproblems/dontaskme",
+  "slug": "thelazydevwitheconomicproblems-dontaskme",
+  "author": "thelazydevwitheconomicproblems",
+  "url": "https://huggingface.co/thelazydevwitheconomicproblems/dontaskme",
+  "created_at": "2026-09-23T21:32:49.000Z",
+  "updated_at": "2026-09-23T21:32:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "Watch out for AI income scam texts | TrendLife Blog",
+      "url": "https://trendlife.com/en-us/blog/2026/05/24/ai-income-scam-texts",
+      "snippet": "TrendLife detected over 16,000 of these AI income scam texts in early 2026, and every single one was confirmed as a scam. The site collects your name, address, phone number, and full card details, and quietly signs you up for charges you never agreed to."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "OpenAI Status",
+      "url": "https://status.openai.com/",
+      "snippet": "Latest service status for OpenAI We&#x27;re not aware of any issues affecting our systems."
+    },
+    {
+      "title": "AI Tech Debt: 3 Types Killing Your LLM App [2026 Framework]",
+      "url": "https://www.kunalganglani.com/blog/ai-tech-debt-llm-framework",
+      "snippet": "AI Tech Debt: The 3 Types Silently Killing Your LLM App in Production [2026 Framework] Prompt decay, model drift, and hallucination tax are the three distinct types of AI tech debt accumulating in every LLM-powered production system. Here&#x27;s a framework to identify, measure, and pay them down."
+    }
+  ]
+}

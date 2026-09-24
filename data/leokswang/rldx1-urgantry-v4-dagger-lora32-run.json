@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "leokswang/rldx1-urgantry-v4-dagger-lora32-run",
+  "slug": "leokswang-rldx1-urgantry-v4-dagger-lora32-run",
+  "author": "leokswang",
+  "url": "https://huggingface.co/leokswang/rldx1-urgantry-v4-dagger-lora32-run",
+  "created_at": "2026-09-23T20:20:33.000Z",
+  "updated_at": "2026-09-23T20:21:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51184860995,
+  "storage_human": "51.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rldx1-urgantry-v4-dagger-lora32-ckpt3000 - Hugging Face",
+      "url": "https://huggingface.co/leokswang/rldx1-urgantry-v4-dagger-lora32-ckpt3000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - RLWRLD/RLDX-1",
+      "url": "https://github.com/RLWRLD/RLDX-1",
+      "snippet": "RLDX-1 is a Vision-Language-Action model (VLA) for human-like dexterous manipulation. Beyond the versatile intelligence inherited from pre-trained VLM backbones, RLDX-1 adds three functional capabilities — motion awareness, long-term memory, and physical sensing — through a unified Multi-Stream Action Transformer (MSAT) architecture, a synthetic-augmented training pipeline, and a real-time ..."
+    },
+    {
+      "title": "GitHub - antirez/ds4: DeepSeek 4 Flash and PRO local inference engine ...",
+      "url": "https://github.com/antirez/ds4",
+      "snippet": "DwarfStar aims to be the best way to run a few excellent large language models on consumer hardware (that is, hardware that people can actually own). To reach this goal, we are building a small native inference engine optimized first for DeepSeek V4 Flash (including the experimental vision model), DeepSeek V4.1 Flash (Metal, and text inference on CUDA), and additionally GLM 5.2 and 5.3, GLM 5. ..."
+    },
+    {
+      "title": "LILYGO LoRa32 | Documentation",
+      "url": "https://wiki.lilygo.cc/products/t3-series/t3-lora32/",
+      "snippet": "Overview The LILYGO T3_V1.6.1 (LoRa32 V2.1.6) is a multi-protocol IoT development board integrating an ESP32 main controller (4 MB Flash), a .96-inch SSD1306 I²C OLED display (128×64), and a low-power LoRa module. The board supports SX1276/SX1278 dual-band LoRa, providing Wi-Fi + Bluetooth 4.2 + BLE wireless connectivity. It supports dual power modes (USB or 3.7 V Li-Po battery with a power ..."
+    },
+    {
+      "title": "DeepSeek V4 Flash: The Best Open Model You can Actually Run!",
+      "url": "https://www.youtube.com/watch?v=_Ae4osPymXY",
+      "snippet": "DeepSeek V4 Flash (Official) Runs Locally: Benchmarks, Cost, and DGX Spark SetupI test the official DeepSeek V4 Flash (July 31 edition) running entirely loca..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "swarajchattaraj/DRISTI-Router",
+  "slug": "swarajchattaraj-dristi-router",
+  "author": "swarajchattaraj",
+  "url": "https://huggingface.co/swarajchattaraj/DRISTI-Router",
+  "created_at": "2026-09-23T19:54:51.000Z",
+  "updated_at": "2026-09-23T20:02:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "dristi",
+    "router",
+    "system-one",
+    "distilbert",
+    "classification",
+    "active-learning",
+    "text-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 267864483,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Swaraj Chattaraj | AI Engineer",
+      "url": "https://swarajchattaraj.tech/",
+      "snippet": "I build intelligent AI systems that combine reasoning, retrieval, and scalable infrastructure into production-ready applications."
+    },
+    {
+      "title": "GitHub - SWARAJCHATTARAJ/SWARAJCHATTARAJ",
+      "url": "https://github.com/SWARAJCHATTARAJ/SWARAJCHATTARAJ",
+      "snippet": "🔭 Currently working on: AI & Machine Learning projects 🌱 Learning: Deep Learning, Data Structures, System Design 👯 Looking to collaborate on: Open Source & AI Projects 💬 Ask me about: Python, AI, DBMS, Web Development ⚡ Fun fact: I love solving problems and building cool stuff"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "snippet": "The unified interface for every model. Find the best models & prices for your prompts"
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    }
+  ]
+}

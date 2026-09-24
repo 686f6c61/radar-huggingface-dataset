@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bn22/siglip_openclip_b_32_unsafe_2",
+  "slug": "bn22-siglip_openclip_b_32_unsafe_2",
+  "author": "bn22",
+  "url": "https://huggingface.co/bn22/siglip_openclip_b_32_unsafe_2",
+  "created_at": "2026-09-23T19:16:01.000Z",
+  "updated_at": "2026-09-23T20:02:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "open_clip",
+  "languages": [],
+  "tags": [
+    "open_clip",
+    "safetensors",
+    "clip",
+    "zero-shot-image-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1210292920,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bn22/siglip_openclip_final_m_16 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/bn22/siglip_openclip_final_m_16/discussions",
+      "snippet": "Instructions to use bn22/siglip_openclip_final_m_16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries OpenCLIP How to use bn22/siglip_openclip_final_m_16 with OpenCLIP:"
+    },
+    {
+      "title": "GitHub - mlfoundations/open_clip: An open source implementation of CLIP ...",
+      "url": "https://github.com/mlfoundations/open_clip",
+      "snippet": "If model uses timm image encoders (convnext, siglip, eva, etc) ensure the latest timm is installed. Upgrade timm if you see &#x27;Unknown model&#x27; errors for the image encoder. If model uses transformers tokenizers, ensure transformers is installed. See also this [Clip Colab]. To compute billions of embeddings efficiently, you can use clip-retrieval which has openclip support."
+    },
+    {
+      "title": "bn22/siglip_openclip_s_16_unsafe · Hugging Face",
+      "url": "https://huggingface.co/bn22/siglip_openclip_s_16_unsafe",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SigLIP Models | mlfoundations/open_clip | DeepWiki",
+      "url": "https://deepwiki.com/mlfoundations/open_clip/5.2-siglip-models",
+      "snippet": "This document provides a technical overview of SigLIP (Sigmoid Loss for Image-text Pairs) models within the OpenCLIP framework. It details the specialized SigLipLoss implementation, the SigLIPTask abstraction for training, memory-efficient chunked computation, and the configuration patterns for SigLIP and SigLIP2 variants."
+    },
+    {
+      "title": "big_vision/big_vision/configs/proj/image_text/README_siglip2 ... - GitHub",
+      "url": "https://github.com/google-research/big_vision/blob/main/big_vision/configs/proj/image_text/README_siglip2.md",
+      "snippet": "With these changes, SigLIP 2 models outperform their SigLIP counterparts at all model scales in core capabilities, including zero-shot classification, image-text retrieval, and transfer performance when extracting visual representations for Vision-Language Models (VLMs)."
+    }
+  ]
+}

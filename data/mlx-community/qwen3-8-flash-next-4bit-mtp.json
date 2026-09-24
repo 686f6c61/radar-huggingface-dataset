@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mlx-community/Qwen3.8-Flash-Next-4bit-mtp",
+  "slug": "mlx-community-qwen3-8-flash-next-4bit-mtp",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-4bit-mtp",
+  "created_at": "2026-09-23T20:48:36.000Z",
+  "updated_at": "2026-09-23T20:49:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "mtp",
+    "speculative-decoding",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 113266273966,
+  "storage_human": "113.3 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/Qwen3.8-Flash-Next-oQ8e-mtp · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-oQ8e-mtp",
+      "snippet": "mlx-community / Qwen3.8-Flash-Next-oQ8e-mtp like 1 Follow MLX Community 16.7k MLX Safetensors qwen4_exp oq quantized 8-bit precision License:qwen-community-1. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-Uncensored (MLX, oQ5e, MTP) - Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-Uncensored-oQ5e-mtp",
+      "snippet": "Like 3 Follow MLX Community 17.1k Image-Text-to-Text MLX Safetensors English Chinese qwen4_exp oq oqe quantized 5-bit mixed-precision imatrix qwen3.8 flash-next Mixture of Experts mtp vision-language uncensored abliterated apple-silicon conversational License:qwen-community-1. Model card FilesFiles and versions xet Community 2 Deploy Copy to ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has since been used across the Qwen3.5, Qwen3.6, Qwen3.7 and Qwen3.8 series. We are again releasing ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next (Experimental) - vLLM Ascend - docs.vllm.ai",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-Flash-Next.html",
+      "snippet": "Qwen3.8-Flash-Next (Experimental) 1 Introduction ¶ Qwen3.8-Flash-Next is a multimodal Mixture-of-Experts (MoE) model and an experimental preview of the architecture that will underpin Qwen4. Its language model combines Gated DeltaNet and Qwen Sparse Attention (QSA), gated residual connections, Position Learning Enhancement (PLE), and a native Multi-Token Prediction (MTP) head. The current ..."
+    },
+    {
+      "title": "Qwen3.8 Flash Next 4bit by mlx-community - LLM Explorer",
+      "url": "https://llm-explorer.com/model/mlx-community%2FQwen3.8-Flash-Next-4bit,7a42z7wPPmpja8cUjTOUWD",
+      "snippet": "Rank the Qwen3.8 Flash Next 4bit capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

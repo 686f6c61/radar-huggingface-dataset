@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "junbrro/gr1-mt-ft-60k-actsilu-mlxp-20260924",
+  "slug": "junbrro-gr1-mt-ft-60k-actsilu-mlxp-20260924",
+  "author": "junbrro",
+  "url": "https://huggingface.co/junbrro/gr1-mt-ft-60k-actsilu-mlxp-20260924",
+  "created_at": "2026-09-23T19:28:07.000Z",
+  "updated_at": "2026-09-23T19:33:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6974814704,
+  "parameters_human": "6.97B",
+  "storage_bytes": 13949729520,
+  "storage_human": "13.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "junbrro/egopi-axis2-robotonly-native28-30k-mlxp-20260923 · Hugging Face",
+      "url": "https://huggingface.co/junbrro/egopi-axis2-robotonly-native28-30k-mlxp-20260923",
+      "snippet": "Arm II robot-only native28 baseline Final step: 30000. Source: junhyeong-axis2-robotonly-native28-30k-260923-r1."
+    },
+    {
+      "title": "junbrro (jun_brro) - Hugging Face",
+      "url": "https://huggingface.co/junbrro/datasets",
+      "snippet": "published a model 8 days ago junbrro/cotrain_openarmv3_rlwrld-ball_bsz64_30000_vlmfreeze_fl-concat_sd0_vid1 updated a model 8 days ago junbrro/cotrain_openarmv3_rlwrld-ball_bsz64_30000_vlmfreeze_fl-concat_sd0.3_vid1 View all activity"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "AI Model Releases Timeline: Latest Launches, Updated Daily",
+      "url": "https://www.promptzone.com/ai-model-releases",
+      "snippet": "AI Model Releases 2026 Timeline A chronological timeline of major AI model releases across 2025 and 2026 — LLMs, reasoning models, open-weights families, and image & video generators, each with its date, why it mattered, and the official announcement."
+    }
+  ]
+}

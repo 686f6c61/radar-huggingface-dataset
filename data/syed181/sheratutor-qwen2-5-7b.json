@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "syed181/sheratutor-qwen2.5-7b",
+  "slug": "syed181-sheratutor-qwen2-5-7b",
+  "author": "syed181",
+  "url": "https://huggingface.co/syed181/sheratutor-qwen2.5-7b",
+  "created_at": "2026-09-23T19:39:39.000Z",
+  "updated_at": "2026-09-23T22:57:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "nctb",
+    "education",
+    "rubric-evaluation",
+    "bengali",
+    "stem",
+    "math",
+    "higher-math",
+    "unsloth",
+    "conversational",
+    "bn",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 29383971014,
+  "storage_human": "29.4 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "Qwen2.5-7B: 7B Transformer LLM - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/qwen2-5-7b-model",
+      "snippet": "Qwen2.5-7B is a 7-billion parameter, dense, decoder-only Transformer model designed for diverse tasks like math, code generation, and multilingual understanding. It leverages advanced techniques such as Dual Chunk Attention and rotary positional encoding to support up to 128K tokens (or 1M in the instruct variant) with efficient inference."
+    },
+    {
+      "title": "Qwen 2.5 7B - Open Laboratory",
+      "url": "https://openlaboratory.com/models/qwen-2_5-7b/",
+      "snippet": "A 7.61-billion parameter transformer-based language model with 128K token context length, trained on 18 trillion tokens supporting 29+ languages."
+    }
+  ]
+}

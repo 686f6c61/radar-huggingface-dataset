@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tdavis9/lor-weaver-nemotron3-diarization-onnx",
+  "slug": "tdavis9-lor-weaver-nemotron3-diarization-onnx",
+  "author": "tdavis9",
+  "url": "https://huggingface.co/tdavis9/lor-weaver-nemotron3-diarization-onnx",
+  "created_at": "2026-09-23T22:35:22.000Z",
+  "updated_at": "2026-09-23T22:36:07.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "speaker-diarization",
+    "nemotron",
+    "sortformer",
+    "lor-weaver",
+    "audio-classification",
+    "en",
+    "base_model:nvidia/Nemotron-3-Diarization",
+    "base_model:quantized:nvidia/Nemotron-3-Diarization",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 795772421,
+  "storage_human": "796 MB",
+  "base_model": "nvidia/Nemotron-3-Diarization",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/Nemotron-3-Diarization · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
+      "snippet": "NVIDIA believes Trustworthy AI is a shared responsibility and has established policies and practices to enable development for a wide array of AI applications. Developers should evaluate the model with use-case-specific data and ensure that the complete system meets the requirements of the relevant industry and deployment context."
+    },
+    {
+      "title": "nvidia/Nemotron-3-Diarization-preview · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization-preview",
+      "snippet": "Description Nemotron 3 Diarization is an open-weight streaming speaker diarization model designed to determine \"who spoke when\" in real-world audio. It supports both streaming and offline inference, handles up to eight speakers, and orders speaker outputs by each speaker&#x27;s first arrival in the input audio."
+    },
+    {
+      "title": "NVIDIA Nemotron 3 Family of Models - NVIDIA Nemotron",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3/",
+      "snippet": "Update: Nemotron 3 Ultra is now released! Ultra Blog We announce NVIDIA Nemotron 3, the most efficient family of open models with leading accuracy for agentic AI applications. The Nemotron 3 family consists of three models: Nano, Super, and Ultra. These models deliver strong agentic, reasoning, and conversational capabilities."
+    },
+    {
+      "title": "NVIDIA Releases Nemotron 3 Diarization Open-Weight Speaker Model - Unite.AI",
+      "url": "https://www.unite.ai/nvidia-releases-nemotron-3-diarization-open-weight-speaker-model/",
+      "snippet": "NVIDIA on September 23, 2026 released Nemotron 3 Diarization, an open-weight speaker diarization model that identifies up to eight speakers in live or recorded audio, and Baseten announced same-day serving support with b..."
+    },
+    {
+      "title": "GitHub - NVIDIA-NeMo/Nemotron: Developer Asset Hub for NVIDIA Nemotron ...",
+      "url": "https://github.com/NVIDIA-NeMo/Nemotron",
+      "snippet": "Developer Asset Hub for NVIDIA Nemotron — A one-stop resource for training recipes, usage cookbooks, datasets, and full end-to-end reference examples to build with Nemotron models - NVIDIA-NeMo/Nemotron"
+    }
+  ]
+}

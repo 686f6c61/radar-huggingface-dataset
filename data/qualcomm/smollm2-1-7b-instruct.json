@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "qualcomm/SmolLM2-1.7B-Instruct",
+  "slug": "qualcomm-smollm2-1-7b-instruct",
+  "author": "qualcomm",
+  "url": "https://huggingface.co/qualcomm/SmolLM2-1.7B-Instruct",
+  "created_at": "2026-09-23T22:13:35.000Z",
+  "updated_at": "2026-09-23T22:13:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llm",
+    "generative_ai",
+    "android",
+    "text-generation",
+    "arxiv:2502.02737",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qualcomm/SmolLM2-1.7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/SmolLM2-1.7B-Instruct",
+      "snippet": "This is based on the implementation of SmolLM2-1.7B-Instruct found here. This repository contains pre-exported model files optimized for Qualcomm® devices. You can use the Qualcomm® AI Hub Models library to export with custom configurations. More details on model performance across various devices, can be found here."
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM2-1.7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct",
+      "snippet": "SmolLM2 ... SmolLM2: When Smol Goes Big -- Data-Centric Training of a Small Language Model"
+    },
+    {
+      "title": "SmolLM2-1.7B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/SmolLM2-1.7B-Instruct",
+      "snippet": "SmolLM2 Table of Contents Model Summary Evaluation Examples Limitations Training License Citation Model Summary SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device."
+    },
+    {
+      "title": "SmolLM2-1.7B-Instruct: Lightweight Open-Source LLM",
+      "url": "https://dev.co/ai/llms/smollm2-1-7b-instruct",
+      "snippet": "SmolLM2-1.7B-Instruct SmolLM2-1.7B-Instruct is a compact, instruction-tuned language model with 1.7 billion parameters designed to run on modest hardware while handling text generation, summarization, rewriting, and function calling. It is open-source under Apache 2.0 license, actively maintained by HuggingFace, and benchmarks favorably against similar-sized models like Llama-1B and Qwen2.5-1.5B."
+    },
+    {
+      "title": "SmolLM2-1.7B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/smollm2-17b-instruct-huggingfacetb",
+      "snippet": "Overview SmolLM2-1.7B-Instruct is a 1.7 billion parameter instruction-tuned language model built by HuggingFaceTB that runs efficiently on-device while handling a wide range of instruction-following tasks including text rewriting, summarization, and function calling. The model uses a Transformer decoder architecture trained on 11 trillion tokens from FineWeb-Edu, DCLM, The Stack, plus curated ..."
+    }
+  ]
+}

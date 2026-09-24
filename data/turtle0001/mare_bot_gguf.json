@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "turtle0001/mare_bot_gguf",
+  "slug": "turtle0001-mare_bot_gguf",
+  "author": "turtle0001",
+  "url": "https://huggingface.co/turtle0001/mare_bot_gguf",
+  "created_at": "2026-09-24T00:06:09.000Z",
+  "updated_at": "2026-09-24T00:07:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 6550805536,
+  "storage_human": "6.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "turtle0001 (Marekoth) - Hugging Face",
+      "url": "https://huggingface.co/turtle0001",
+      "snippet": "turtle0001/StoryGen-12B-It-GGUF Text Generation • 12B•Updated about 8 hours ago• 22"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - GGUFloader/gguf-loader: GGUF Loader with its Agentic Mode, and ...",
+      "url": "https://github.com/GGUFloader/gguf-loader",
+      "snippet": "GGUF Loader with its Agentic Mode, and floating button, ai Models | Open Source & Offline. Mistral, Deepseek, llama, gemma, qwen - GGUFloader/gguf-loader"
+    },
+    {
+      "title": "Hugging Bay | Find And Download Open AI",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "The open model harbor Open models. Your own copy. Keep a copy. Keep your independence. Find public AI models, check the license, and take available files with you. No account needed to browse."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Mapika/decider-35b-a3b",
+  "slug": "mapika-decider-35b-a3b",
+  "author": "Mapika",
+  "url": "https://huggingface.co/Mapika/decider-35b-a3b",
+  "created_at": "2026-09-20T09:11:16.000Z",
+  "updated_at": "2026-09-23T19:58:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe_text",
+    "decision-model",
+    "calibrated",
+    "structured-output",
+    "multi-task",
+    "system-one",
+    "one-pass",
+    "mixture-of-experts",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen3.5-35B-A3B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 187,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 69345568749,
+  "storage_human": "69.3 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mapika/decider-35b-a3b-nvfp4 · Hugging Face",
+      "url": "https://huggingface.co/Mapika/decider-35b-a3b-nvfp4",
+      "snippet": "decider-35b-a3b-nvfp4: the 35B one-pass decision model in NVFP4 for vLLM and TensorRT-LLM The weights of Mapika/decider-35b-a3b v1 quantized to NVFP4 with NVIDIA ModelOpt 0.46.1: 4-bit floating-point weights and activations with FP8 block scales (block size 16) on the attention projections, the shared experts and all 256 routed experts of every layer. The delta-net convolutions and input ..."
+    },
+    {
+      "title": "GitHub - Mapika/decider: A family of System One-style models fine-tuned ...",
+      "url": "https://github.com/Mapika/decider",
+      "snippet": "A family of System One-style models fine-tuned from Qwen3.5, designed for one-pass typed decisions with calibrated probabilities. - Mapika/decider"
+    },
+    {
+      "title": "Decider 35B A3B: Specifications & Sources - gradually.ai",
+      "url": "https://www.gradually.ai/en/ai-models/decider-35b-a3b/",
+      "snippet": "Decider 35B A3B by Mapika. Technical specifications, availability, and official sources."
+    },
+    {
+      "title": "GitHub - Mapika/decider: One-pass typed decisions with calibrated ...",
+      "url": "https://github.com/Mapika/decider/tree/main",
+      "snippet": "Goal: reproduce the shape of TypeSafe AI&#x27;s Jev (typed decisions with calibrated probabilities, all fields from one forward pass, no token generation) on a single GH200, starting from a modern small open base model."
+    },
+    {
+      "title": "decider-ai · PyPI",
+      "url": "https://pypi.org/project/decider-ai/",
+      "snippet": "One-pass typed decisions with calibrated probabilities: decider-2b, decider-35b-a3b and the training recipe"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-qwen-image-2.1-viggle-turbo-4step-r64-comfyui-t8-lora",
+  "slug": "runninghubai-rh-qwen-image-2-1-viggle-turbo-4step-r64-comfyui-t8-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-qwen-image-2.1-viggle-turbo-4step-r64-comfyui-t8-lora",
+  "created_at": "2026-09-23T20:59:01.000Z",
+  "updated_at": "2026-09-23T21:00:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 342280347,
+  "storage_human": "342 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen-Image-2.1 Complete Guide (2026): The First Major Open Model That ...",
+      "url": "https://cldnavi.com/en/blog/qwen-image-2-1-guide-2026/",
+      "snippet": "A complete guide to running Qwen-Image-2.1 (7B, released September 20, 2026) in ComfyUI. It is the only major open-weight model that generates RGBA images with a real alpha channel directly from text, so background removal is no longer needed. Covers the required files and VRAM expectations, official template sampler settings (steps 25 / cfg 1 / euler / simple), native 2K output, up to ten ..."
+    },
+    {
+      "title": "Viggle Turbo v0.1 - 4-step Qwen-Image-2.1 - Hugging Face",
+      "url": "https://huggingface.co/spaces/Viggle/Qwen-Image-2.1-viggle-turbo",
+      "snippet": "This app lets you type a description and optionally upload one to three reference pictures. It then creates a new image or modifies the references according to the prompt, using a fast 4‑step model..."
+    },
+    {
+      "title": "Qwen-Image-2.1 ComfyUI Native Workflow Example - ComfyUI",
+      "url": "https://docs.comfy.org/tutorials/image/qwen/qwen-image-2-1",
+      "snippet": "Run Qwen-Image-2.1 in ComfyUI: one model for image generation and editing, native 2K output, professional typography, and alpha channel support."
+    },
+    {
+      "title": "Easy Use | Qwen 2.1 Image Editing: RunningHub Workflow & Best ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=23IW8a7_zgI",
+      "snippet": "Link to the workflow shown in the video: 👉https://www.runninghub.ai/post/2101885448385064961👉if you already have an RH account， Click 【Profile Picture】, fi..."
+    },
+    {
+      "title": "How to Run Qwen-Image 2.1 Locally with ComfyUI: Full Setup Guide",
+      "url": "https://www.mindstudio.ai/blog/qwen-image-2-1-local-install",
+      "snippet": "Install Qwen-Image 2.1 in ComfyUI: model files, VRAM needs, and workflow setup for this 7B text-to-image and editing model with native transparency."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "qualcomm/SmolVLM2-2.2B-Instruct",
+  "slug": "qualcomm-smolvlm2-2-2b-instruct",
+  "author": "qualcomm",
+  "url": "https://huggingface.co/qualcomm/SmolVLM2-2.2B-Instruct",
+  "created_at": "2026-09-23T22:01:07.000Z",
+  "updated_at": "2026-09-23T22:01:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llm",
+    "vlm",
+    "generative_ai",
+    "android",
+    "text-generation",
+    "arxiv:2504.05299",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beetle Identification Chart with Pictures & Names | Complete Beetle …",
+      "url": "https://chartfarosh.com/beetle-identification-chart/",
+      "snippet": "Discover beetle types with this complete beetle identification chart featuring pictures, names, and characteristics. Learn to identify …"
+    },
+    {
+      "title": "Flying Beetles: Identification Guide to Common Beetles That Fly",
+      "url": "https://www.typesofbeetles.com/flying-beetles/",
+      "snippet": "Jun 1, 2026 · Learn how to identify flying beetles by size, color, body shape, wing covers, antennae, habitat, season, and behavior in …"
+    },
+    {
+      "title": "BugFinder: Beetles - Insect Identification",
+      "url": "https://www.insectidentification.org/bugfinder-beetles.php",
+      "snippet": "Free online utility designed to actively search for specific beetles for the purposes of identification."
+    },
+    {
+      "title": "10 Common House Beetles & How to Identify and Stop Them",
+      "url": "https://thebugmanfraservalley.com/10-common-house-beetles-how-to-identify-and-stop-them/",
+      "snippet": "In this guide, we’ll cover everything you need to know about the types of beetles creeping into your space, why they’re there, and …"
+    },
+    {
+      "title": "Cucujidae - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Cucujidae",
+      "snippet": "The Cucujidae, or flat bark beetles, are a family of distinctively flat beetles found worldwide (except Africa and Antarctica) under the …"
+    }
+  ]
+}

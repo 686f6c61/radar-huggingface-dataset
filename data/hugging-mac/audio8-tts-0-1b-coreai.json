@@ -5,7 +5,7 @@
   "author": "hugging-mac",
   "url": "https://huggingface.co/hugging-mac/audio8-tts-0.1b-coreai",
   "created_at": "2026-09-23T17:03:53.000Z",
-  "updated_at": "2026-09-23T17:05:53.000Z",
+  "updated_at": "2026-09-24T01:00:56.000Z",
   "license": "audio8-community-license-v1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2566457563,
-  "storage_human": "2.6 GB",
+  "storage_bytes": 4904064727,
+  "storage_human": "4.9 GB",
   "base_model": "Edge0/Audio8-TTS-Preview-0.1b",
   "formats": [
     "safetensors"

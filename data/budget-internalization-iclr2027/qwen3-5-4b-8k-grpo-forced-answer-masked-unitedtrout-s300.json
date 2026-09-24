@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "budget-internalization-iclr2027/qwen3.5-4b-8k-grpo-forced-answer-masked-unitedtrout-s300",
+  "slug": "budget-internalization-iclr2027-qwen3-5-4b-8k-grpo-forced-answer-masked-unitedtrout-s300",
+  "author": "budget-internalization-iclr2027",
+  "url": "https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-8k-grpo-forced-answer-masked-unitedtrout-s300",
+  "created_at": "2026-09-23T19:23:25.000Z",
+  "updated_at": "2026-09-23T19:24:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "reasoning",
+    "math",
+    "grpo",
+    "reinforcement-learning",
+    "token-budget",
+    "conversational",
+    "dataset:agentica-org/DeepScaleR-Preview-Dataset",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609549,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Location de Voiture et Van Pas Chère | Budget",
+      "url": "https://www.budget.fr/",
+      "snippet": "Découvrez la location de voiture et van pas chère en France et dans le monde avec Budget. Louez une voiture facilement et profitez …"
+    },
+    {
+      "title": "Accueil | budget.gouv.fr",
+      "url": "https://www.budget.gouv.fr/",
+      "snippet": "Une année entière est nécessaire pour élaborer le budget de l’État. Celui-ci est adopté au plus tard le 31 décembre de chaque …"
+    },
+    {
+      "title": "Discount car rental rates and rental car deals | Budget Car Rental",
+      "url": "https://www.budget.com/en/home?msockid=374188b0f8406cf31b569f6df9ed6dde",
+      "snippet": "Budget offers reliable car rentals at low rates. Easily book a sedan, SUV, truck, or EV for your next trip. Get started today!"
+    },
+    {
+      "title": "Budget de l'État - budget.gouv.fr",
+      "url": "https://www.budget.gouv.fr/budget-etat",
+      "snippet": "Le budget de l’État correspond à l’ensemble de ses ressources et de ses dépenses. L’essentiel des ressources provient des impôts …"
+    },
+    {
+      "title": "Budget de la France 2026 : recettes, dépenses, déficit en détail",
+      "url": "https://dettedelafrance.fr/budget-de-la-france",
+      "snippet": "20 hours ago · Le budget de l’État français en 2026 : 1 600 Md€ de dépenses publiques, 1 450 Md€ de recettes, 152,5 Md€ de déficit …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "zeromodels/qwen-image-2.1",
+  "slug": "zeromodels-qwen-image-2-1",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/qwen-image-2.1",
+  "created_at": "2026-09-23T21:34:19.000Z",
+  "updated_at": "2026-09-23T21:34:53.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "zeromodels",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "qwen",
+    "qwen-image",
+    "text-to-image",
+    "image-editing",
+    "rgba",
+    "diffusion",
+    "rectified-flow",
+    "pytorch",
+    "jax",
+    "tf",
+    "en",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30043464622,
+  "storage_human": "30.0 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen&#x27;s most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
+    },
+    {
+      "title": "Qwen Image 2.1 — Image AI Model by Qwen | Layer",
+      "url": "https://layer.ai/models/qwen-qwen-image-2-1",
+      "snippet": "Qwen Image 2.1 is a text-to-image model from the Qwen team at Alibaba. It generates images from text prompts with configurable dimensions, sampling guidance, and seed, and supports prompt-guided edits from reference images."
+    },
+    {
+      "title": "Qwen_Image_2.1 - bf16 | Qwen 2 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2953241/qwenimage21",
+      "snippet": "Introduction We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight ..."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+      "snippet": "GITHUB HUGGING FACE MODELSCOPE We are excited to open-source Qwen-Image-2.1, an image model in the Qwen family that balances generation quality, inference efficiency, and cost. Qwen-Image-2.1 unifies text-to-image generation and image editing in a single model, with just 7B parameters in its visual generation component and native support for generating and editing transparent images. This ..."
+    },
+    {
+      "title": "Qwen Image 2.1 API: Pricing, Sample Image, Docs - Wiro AI",
+      "url": "https://wiro.ai/models/qwen/qwen-image-2-1",
+      "snippet": "Qwen-Image-2.1 is Qwen&#x27;s open-weight 7B model for text-to-image and image editing. It supports 2K PNG output, including native RGBA transparency."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "khronnuz/ThinkingCap-Qwen3.8-27B-exl3",
+  "slug": "khronnuz-thinkingcap-qwen3-8-27b-exl3",
+  "author": "khronnuz",
+  "url": "https://huggingface.co/khronnuz/ThinkingCap-Qwen3.8-27B-exl3",
+  "created_at": "2026-09-23T22:19:24.000Z",
+  "updated_at": "2026-09-24T01:49:33.000Z",
+  "license": "polyform-small-business-1.0.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3_5",
+    "exl3",
+    "image-text-to-text",
+    "base_model:bottlecapai/ThinkingCap-Qwen3.8-27B",
+    "base_model:quantized:bottlecapai/ThinkingCap-Qwen3.8-27B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48896913634,
+  "storage_human": "48.9 GB",
+  "base_model": "bottlecapai/ThinkingCap-Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parody: Mushoku Tensei - Hentai Manga, Comic Porn & Doujin",
+      "url": "https://hentaitap.com/parody/mushoku-tensei/",
+      "snippet": "Read & download 898 free hentai manga, doujin or adult comic porn from the mushoku tensei parody on HentaiTap"
+    },
+    {
+      "title": "roxy migurdia (mushoku tensei) Videos — стр. 1 | rulevid.org",
+      "url": "https://rulevid.org/ai_tags/roxy-migurdia-mushoku-tensei",
+      "snippet": "Browse roxy migurdia (mushoku tensei) videos on rulevid.org. 17 videos available."
+    },
+    {
+      "title": "mushoku tensei Archives - nHentai",
+      "url": "https://nhentai.best/parody/mushoku-tensei/",
+      "snippet": "[Saihate-Kukan (Hino Hino)] Kyuujo ga Isshuukan Kurai Okureta Sekaisen no Ohanashi (Mushoku Tensei ~Isekai Ittara Honki …"
+    },
+    {
+      "title": "Mushoku Tensei — vídeos pornô, página 1 | animezao.com",
+      "url": "https://animezao.com/categories/mushoku-tensei",
+      "snippet": "Mushoku Tensei — vídeos pornô em animezao.com. 18 vídeos no total, assista grátis em HD."
+    },
+    {
+      "title": "Mushoku Tensex by eroshi",
+      "url": "https://eroshi.itch.io/furry-town",
+      "snippet": "Explore different places, meet characters inspired by Mushoku Tensei, increase their affection, and unlock special moments along …"
+    }
+  ]
+}

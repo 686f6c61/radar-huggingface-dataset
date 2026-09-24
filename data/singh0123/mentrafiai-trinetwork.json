@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "singh0123/MentraFiAI-TriNetwork",
+  "slug": "singh0123-mentrafiai-trinetwork",
+  "author": "singh0123",
+  "url": "https://huggingface.co/singh0123/MentraFiAI-TriNetwork",
+  "created_at": "2026-09-23T19:33:44.000Z",
+  "updated_at": "2026-09-23T20:26:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1333819097,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta Accused of Pirating Adult Content to Train AI Models",
+      "url": "https://www.konsyse.com/articles/meta-accused-of-pirating-adult-content-to-train-ai-models/",
+      "snippet": "Meta is facing a lawsuit from adult film producers accusing it of pirating and distributing thousands of explicit videos to train AI systems."
+    },
+    {
+      "title": "GitHub - Jaykumar122/Mentrafiai",
+      "url": "https://github.com/Jaykumar122/Mentrafiai",
+      "snippet": "MentraFiAI is trained once on mutual fund concepts, terminology, and reasoning patterns — not on today&#x27;s NAV numbers, which change daily. At query time, inference/mutual_fund_advisor.py pulls live candidate funds from your PostgreSQL database and includes them in the prompt, so recommendations stay current without retraining."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Collections / Free Models Free AI Models on OpenRouter Model rankings updated September 2026 based on real usage data. Models are ranked by total prompt and completion tokens processed through the OpenRouter API over the trailing 7 days. Showing the top 16 models. Rankings measure usage on OpenRouter and reflect adoption, not model quality or benchmark performance."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated September 2026."
+    },
+    {
+      "title": "MIT&#x27;s New Method Flags AI Models Trained on Child Abuse Imagery Without ...",
+      "url": "https://insideai.news/news/ai-safety/mits-new-method-flags-ai-models-trained-on-child-abuse-imagery-without-generating-it/3869/",
+      "snippet": "MIT&#x27;s New Method Flags AI Models Trained on Child Abuse Imagery Without Generating It MIT researchers developed Gaussian probing, a technique that identifies AI models fine-tuned to generate child sexual abuse material with perfect accuracy, all without producing a single illegal image. The method could help platforms automatically block dangerous uploads."
+    }
+  ]
+}

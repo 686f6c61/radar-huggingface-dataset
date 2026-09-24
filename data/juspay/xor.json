@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "juspay/xor",
+  "slug": "juspay-xor",
+  "author": "juspay",
+  "url": "https://huggingface.co/juspay/xor",
+  "created_at": "2026-09-21T18:56:56.000Z",
+  "updated_at": "2026-09-23T14:41:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "sglang",
+    "mixture-of-experts",
+    "typed-classification",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 24,
+  "downloads_30d": 757,
+  "trending_score": 23,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234585093,
+  "storage_human": "70.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "juspay/xor · Hugging Face",
+      "url": "https://huggingface.co/juspay/xor",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - juspay/AI: One-click AI agent for Juspay · GitHub",
+      "url": "https://github.com/juspay/AI",
+      "snippet": "AI The Juspay distribution of Oh My Pi, Codex, and Claude Code, with Juspay skills and Kolu. Built with agent-distro; see its README to build your own distribution."
+    },
+    {
+      "title": "GitHub - juspay/juspay-mcp · GitHub",
+      "url": "https://github.com/juspay/juspay-mcp",
+      "snippet": "MCP (Model Context Protocol) servers that let AI assistants interact with Juspay&#x27;s payment APIs and merchant dashboard through natural language."
+    },
+    {
+      "title": "juspay (Juspay Technologies) - Hugging Face",
+      "url": "https://huggingface.co/juspay/datasets",
+      "snippet": "Org profile for Juspay Technologies on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Juspay | Global Payments Operating System",
+      "url": "https://juspay.io/",
+      "snippet": "Optimize your US payment stack with Juspay. Trusted by top enterprises for seamless orchestration, higher conversions, and secure, fraud-free transactions at scale"
+    }
+  ]
+}

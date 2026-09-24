@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "efeemece/avena-parakeet-ultra",
+  "slug": "efeemece-avena-parakeet-ultra",
+  "author": "efeemece",
+  "url": "https://huggingface.co/efeemece/avena-parakeet-ultra",
+  "created_at": "2026-09-23T19:21:24.000Z",
+  "updated_at": "2026-09-23T19:24:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "parakeet.cpp",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "parakeet.cpp",
+    "gguf",
+    "automatic-speech-recognition",
+    "multilingual",
+    "base_model:moondream/parakeet-ultra",
+    "base_model:quantized:moondream/parakeet-ultra",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 627090582,
+  "parameters_human": "627.1M",
+  "storage_bytes": 940663680,
+  "storage_human": "941 MB",
+  "base_model": "moondream/parakeet-ultra, nvidia/parakeet-tdt-0.6b-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parakeet · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.10.2/en/model_doc/parakeet",
+      "snippet": "It is used to instantiate a Parakeet model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the nvidia/parakeet-ctc-1.1b Configuration objects inherit from PreTrainedConfig and can be used to control the model outputs."
+    },
+    {
+      "title": "Jev (AI model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
+      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco-based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2] Unlike a large language model (LLM), Jev does not generate natural-language text."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type. Note that dates reflect the earliest meaningful availability stage shown in each entry. Public ..."
+    },
+    {
+      "title": "nvidia/parakeet-tdt-0.6b-v3 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
+      "snippet": "🦜 parakeet-tdt-.6b-v3: Multilingual Speech-to-Text Model | | Description: parakeet-tdt-.6b-v3 is a 600-million-parameter multilingual automatic speech recognition (ASR) model designed for high-throughput speech-to-text transcription. It extends the parakeet-tdt-.6b-v2 model by expanding language support from English to 25 European languages. The model automatically detects the language ..."
+    },
+    {
+      "title": "Latest AI Model Releases — September 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest tracked AI model releases as of September 2026. Release data currently runs through Sep 22 2026; most recent: GPT-6 Sol by OpenAI. Browse exact dates for the latest models from leading AI labs."
+    }
+  ]
+}

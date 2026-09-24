@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/decider-4b-GGUF",
+  "slug": "mradermacher-decider-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/decider-4b-GGUF",
+  "created_at": "2026-09-24T00:00:05.000Z",
+  "updated_at": "2026-09-24T00:20:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "decision-model",
+    "calibrated",
+    "structured-output",
+    "multi-task",
+    "system-one",
+    "one-pass",
+    "en",
+    "base_model:Mapika/decider-4b",
+    "base_model:quantized:Mapika/decider-4b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 38906334976,
+  "storage_human": "38.9 GB",
+  "base_model": "Mapika/decider-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Ai_detector-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ai_detector-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Hades-4B-Abliterated-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Hades-4B-Abliterated-i1-GGUF",
+      "snippet": "mradermacher / Hades-4B-Abliterated-i1-GGUF Like 0 Transformers GGUF English abliterated soft-refusal experimental pluto-ai-labs qwen3 research License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 29 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Aura-4B-GGUF - AI Model by mradermacher | AlphaNeural AI",
+      "url": "https://app.alphaneural.io/models/mradermacher/Aura-4B-GGUF",
+      "snippet": "Explore Aura-4B-GGUF, an AI model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
+    },
+    {
+      "title": "GitHub - Mapika/decider: A family of System One-style models fine-tuned ...",
+      "url": "https://github.com/Mapika/decider",
+      "snippet": "Independence. This is an independent project. It is not affiliated with or endorsed by TypeSafe AI. It is an open reproduction of the \"System One\" model class (TypeSafe AI&#x27;s Jev): a 2B model built on Qwen/Qwen3.5-2B-Base, a 4B model built on Qwen/Qwen3.5-4B-Base and a 35B mixture-of-experts model built on Qwen/Qwen3.5-35B-A3B-Base."
+    }
+  ]
+}

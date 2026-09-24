@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JonesLin/next-jev-stage2-last-loop",
+  "slug": "joneslin-next-jev-stage2-last-loop",
+  "author": "JonesLin",
+  "url": "https://huggingface.co/JonesLin/next-jev-stage2-last-loop",
+  "created_at": "2026-09-23T21:49:03.000Z",
+  "updated_at": "2026-09-23T21:50:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "next-jev",
+    "workspace-reasoning",
+    "nli",
+    "cot",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10292822574,
+  "storage_human": "10.3 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JonesLin/next-jev-stage2-merged-verified-20260923 at main",
+      "url": "https://huggingface.co/datasets/JonesLin/next-jev-stage2-merged-verified-20260923/tree/main",
+      "snippet": "Datasets: JonesLin / next-jev-stage2-merged-verified-20260923 Like 0 Modalities: Image Text Formats: parquet Size: 100K - 1M Libraries: Datasets Dask Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community main next-jev-stage2-merged-verified-20260923 34.3 GB 1 contributor History:2 commits JonesLin Add files using upload-large-folder tool 7da062a verifiedabout 6 hours ago ..."
+    },
+    {
+      "title": "Jev API & Hub for the Jev Model | Jev AI Community",
+      "url": "https://www.jevai.org/jev-api",
+      "snippet": "Explore Jev API documentation, trending community workflows, and use cases like code compaction powered by TypeSafe AI&#x27;s first System One Jev Model."
+    },
+    {
+      "title": "Jev AI Community: Powered by the Jev Model",
+      "url": "https://www.jevai.org/",
+      "snippet": "Join the Jev AI community to share and explore developer use cases, prompting workflows, and structured decision-making examples powered by the Jev Model."
+    },
+    {
+      "title": "JonesLin (JonesLin) - Hugging Face",
+      "url": "https://huggingface.co/datasets/JonesLin/",
+      "snippet": "JonesLin&#x27;s datasets5 Sort: Recently updated JonesLin/writing-model-papers-2016-2021 Updated 14 minutes ago"
+    },
+    {
+      "title": "GitHub - yibie/awesome-jev: A curated list of public projects ...",
+      "url": "https://github.com/yibie/awesome-jev",
+      "snippet": "A curated list of public projects, integrations, and discussions built on Jev — TypeSafe AI&#x27;s System One model for typed decisions. - yibie/awesome-jev"
+    }
+  ]
+}

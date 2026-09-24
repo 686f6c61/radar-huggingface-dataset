@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "syntropic-clx/Clyx_0.3-635.51M-BASE",
+  "slug": "syntropic-clx-clyx_0-3-635-51m-base",
+  "author": "syntropic-clx",
+  "url": "https://huggingface.co/syntropic-clx/Clyx_0.3-635.51M-BASE",
+  "created_at": "2026-09-18T12:39:24.000Z",
+  "updated_at": "2026-09-23T20:10:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "causal-lm",
+    "custom-transformer",
+    "from-scratch",
+    "rope",
+    "rmsnorm",
+    "swiglu",
+    "grouped-query-attention",
+    "russian",
+    "english",
+    "code",
+    "text-generation",
+    "en",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 478,
+  "trending_score": 0,
+  "parameters": 635512320,
+  "parameters_human": "635.5M",
+  "storage_bytes": 2542365144,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "syntropic-clx/Clyx_0.3-NM-BASE · Hugging Face",
+      "url": "https://huggingface.co/syntropic-clx/Clyx_0.3-NM-BASE",
+      "snippet": "Clyx is an independent language-model project built around a custom decoder-only Transformer. The next planned BASE model targets approximately 635.51 million parameters, using Grouped-Query Attention, RoPE, RMSNorm, and SwiGLU."
+    },
+    {
+      "title": "syntropic-clx (Syntropic) - Hugging Face",
+      "url": "https://huggingface.co/syntropic-clx",
+      "snippet": "Building Clyx and Clyx Code — small language models for developer tooling."
+    },
+    {
+      "title": "Clyx_0.3-NM-BASE by Syntropic: Open-Weight Model",
+      "url": "https://savrn.com/models/clyx-0-3-nm-base",
+      "snippet": "Clyx is an independent language-model project built around a custom decoder-only Transformer. The next planned BASE model targets approximately 635.51 million parameters, using Grouped-Query Attention, RoPE, RMSNorm, and SwiGLU."
+    },
+    {
+      "title": "Syntropic-CLX · GitHub",
+      "url": "https://github.com/Syntropic-CLX",
+      "snippet": "GitHub is where Syntropic-CLX builds software. People This organization has no public members. You must be a member to see who&#x27;s a part of this organization."
+    },
+    {
+      "title": "Syntropic - The AI Efficiency Layer",
+      "url": "https://www.thesyntropic.com/index.html",
+      "snippet": "The AI Efficiency Layer. An invisible software layer that compresses KV cache load and reduces memory overhead — across text, image, audio, and video. No retraining. No weight changes. Built for production inference."
+    }
+  ]
+}

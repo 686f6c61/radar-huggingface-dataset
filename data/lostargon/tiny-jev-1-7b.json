@@ -5,7 +5,7 @@
   "author": "lostargon",
   "url": "https://huggingface.co/lostargon/Tiny-Jev-1.7B",
   "created_at": "2026-09-23T17:57:13.000Z",
-  "updated_at": "2026-09-23T18:01:49.000Z",
+  "updated_at": "2026-09-23T21:02:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -40,7 +40,7 @@
   "trending_score": 0,
   "parameters": 1720032257,
   "parameters_human": "1.72B",
-  "storage_bytes": 3451527236,
+  "storage_bytes": 3451887622,
   "storage_human": "3.5 GB",
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "OzzyGT/YuE2-Modular",
+  "slug": "ozzygt-yue2-modular",
+  "author": "OzzyGT",
+  "url": "https://huggingface.co/OzzyGT/YuE2-Modular",
+  "created_at": "2026-09-23T19:27:28.000Z",
+  "updated_at": "2026-09-23T19:28:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "music-generation",
+    "yue2",
+    "modular-diffusers",
+    "text-to-audio",
+    "en",
+    "zh",
+    "base_model:m-a-p/YuE2-3B",
+    "base_model:finetune:m-a-p/YuE2-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "m-a-p/YuE2-3B, m-a-p/YuE2-Vae",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OzzyGT (Alvaro Somoza) - Hugging Face",
+      "url": "https://huggingface.co/OzzyGT",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... updated a model 7 days ago"
+    },
+    {
+      "title": "GitHub - multimodal-art-projection/YuE: YuE2: frontier music generation ...",
+      "url": "https://github.com/multimodal-art-projection/YuE",
+      "snippet": "YuE2: frontier music generation with symbolic planning, zero-shot covers, and agentic music editing. - multimodal-art-projection/YuE"
+    },
+    {
+      "title": "YuE2: Frontier AI Music Generation With Editable Scores",
+      "url": "https://yue2ai.app/",
+      "snippet": "Explore YuE2, the open music model with editable scores. Hear official demos and create songs online from lyrics, style prompts or reference audio. Try it free."
+    },
+    {
+      "title": "YuE2 · Frontier Music with Symbolic Planning",
+      "url": "https://map-yue2.github.io/",
+      "snippet": "YuE2 unifies symbolic and audio music generation in one model, with frontier song quality competitive with Suno v5/v6. Through symbolic planning, it writes an editable score, then brings the composition to life with vocals and accompaniment."
+    },
+    {
+      "title": "GitHub - nvmax/ComfyUI-YuE2",
+      "url": "https://github.com/nvmax/ComfyUI-YuE2",
+      "snippet": "A professional custom node suite integrating the YuE2 (m-a-p) foundation music engine and LM Studio AI Co-Producer directly into ComfyUI. ⚡ Now Powered by ComfyUI Native YuE2 Acceleration (~4x Faster ..."
+    }
+  ]
+}

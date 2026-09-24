@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "dronefreak/visdrone-yolov10s",
+  "slug": "dronefreak-visdrone-yolov10s",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/visdrone-yolov10s",
+  "created_at": "2026-09-23T19:18:01.000Z",
+  "updated_at": "2026-09-23T19:18:11.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "aerial-imagery",
+    "drone",
+    "visdrone",
+    "detr",
+    "roboflow",
+    "transformer",
+    "dataset:Voxel51/VisDrone2019-DET",
+    "arxiv:1804.07437",
+    "arxiv:2405.14458",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2410.17725",
+    "arxiv:2606.03748",
+    "arxiv:2402.13616",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53791922,
+  "storage_human": "54 MB",
+  "base_model": "Ultralytics/YOLOv10",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "VisDrone-DET",
+      "metric": "mAP@50 (test split)",
+      "value": 44.51
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "VisDrone-DET",
+      "metric": "mAP@50-95 (test split)",
+      "value": 26.28
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "VisDrone-DET",
+      "metric": "Precision (test split)",
+      "value": 55.97
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "VisDrone-DET",
+      "metric": "Recall (test split)",
+      "value": 45.61
+    }
+  ],
+  "sources": [
+    {
+      "title": "README.md · dronefreak/visdrone-yolov10l at main - Hugging Face",
+      "url": "https://huggingface.co/dronefreak/visdrone-yolov10l/blob/main/README.md",
+      "snippet": "YOLOv10l Finetuned on VisDrone Fine-tuned YOLOv10l object detector for aerial imagery using the VisDrone benchmark dataset. This model is part of the VisDrone Detection Model Zoo, a collection of YOLO models trained and evaluated under a common pipeline for aerial object detection."
+    },
+    {
+      "title": "VisDrone Detection Model Zoo - a dronefreak Collection",
+      "url": "https://huggingface.co/collections/dronefreak/visdrone-detection-model-zoo",
+      "snippet": "A collection of YOLO-based object detection models fine-tuned on the VisDrone benchmark for aerial imagery."
+    },
+    {
+      "title": "GitHub - SkyWxxk/V10Drone-YOLOv10: The source code of &#x27;V10Drone ...",
+      "url": "https://github.com/SkyWxxk/V10Drone-YOLOv10",
+      "snippet": "The source code of &#x27;V10Drone: Improved YOLOv10 with KAN for Small Object Detection in Aerial Images&#x27; - SkyWxxk/V10Drone-YOLOv10"
+    },
+    {
+      "title": "GitHub - dronefreak/VisDrone-dataset-python-toolkit: VisDrone aerial ...",
+      "url": "https://github.com/dronefreak/VisDrone-dataset-python-toolkit",
+      "snippet": "VisDrone aerial object detection toolkit with 33 models (Torchvision + YOLO), training, evaluation, video inference, benchmarking, and annotation conversion. - dronefreak/VisDrone-dataset-python-to..."
+    },
+    {
+      "title": "V10Drone: Improved YOLOv10 with KAN for Small Object Detection in ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10914641",
+      "snippet": "Experiments on the VisDrone dataset demonstrate that V10Drone achieves mAP50 of 43.4% and mAP of 36.3%, and these results exceed the baseline of the YOLOv10s model by 4.9% and 3.3%, respectively. In addition, V10Drone exhibits higher accuracy than the M-scale model."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-snofs-krea-v1.4-lora",
+  "slug": "runninghubai-rh-snofs-krea-v1-4-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-snofs-krea-v1.4-lora",
+  "created_at": "2026-09-24T00:05:07.000Z",
+  "updated_at": "2026-09-24T00:07:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1562610387,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "snofs_krea_v1_1 - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/model/public/2074225520434311170",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHub Workflows ｜ ComfyUI Workflows & Latest AI Nodes",
+      "url": "https://www.runninghub.ai/workflows",
+      "snippet": "Discover trending ComfyUI workflows, latest AI nodes, and creative workflow templates for AI video and image generation. Explore rapidly updated models and workflows on RunningHub Workflows."
+    },
+    {
+      "title": "RunningHubAI (RunningHub.ai) - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI",
+      "snippet": "One API Powering All-Modal AI Productivity. Recent Activity. updated a model about 1 hour ago. RunningHubAI/rh-minimax-h3-fl2v-turbo-4step-v1.-768p-comfyui-bf16 ..."
+    },
+    {
+      "title": "RunningHub｜原生AI智能体内容创作平台｜无限画布",
+      "url": "https://www.runninghub.cn/",
+      "snippet": "RunningHub是原生AI智能体内容创作平台，支持无限画布、AI生图生视频、Agent创作、ComfyUI工作流及AI应用与模型API，覆盖电商、短视频、短剧、漫剧等创作场景。"
+    },
+    {
+      "title": "ComfyUI_RH_OpenAPI - GitHub",
+      "url": "https://github.com/HM-RunningHub/ComfyUI_RH_OpenAPI",
+      "snippet": "ComfyUI_RH_OpenAPI 是 RunningHub 标准模型 API的 1:1 ComfyUI 实现，并额外补充了 Seedance2.0 素材资产管理节点。 本项目当前收录 422 个标准模型 API 节点（覆盖主流最新的图像生成、视频生成、音频合成、3D 建模、文本理解、图像/视频 ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Vana-Labs/stt-parakeet-english",
+  "slug": "vana-labs-stt-parakeet-english",
+  "author": "Vana-Labs",
+  "url": "https://huggingface.co/Vana-Labs/stt-parakeet-english",
+  "created_at": "2026-09-23T20:45:18.000Z",
+  "updated_at": "2026-09-23T20:45:27.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "nemo-conformer-tdt",
+    "asr",
+    "onnx-asr",
+    "tetro",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:nvidia/parakeet-tdt-0.6b-v2",
+    "base_model:quantized:nvidia/parakeet-tdt-0.6b-v2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 661322064,
+  "storage_human": "661 MB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA Parakeet - Speech-to-Text Model | STT.ai",
+      "url": "https://stt.ai/models/nvidia-parakeet/",
+      "snippet": "NVIDIA Parakeet TDT 1.1B is a state-of-the-art English ASR model using FastConformer architecture with Token-and-Duration Transducer (TDT). It achieves near-human accuracy on standard English benchmarks and is highly optimized for NVIDIA GPUs."
+    },
+    {
+      "title": "NVIDIA NeMo Parakeet",
+      "url": "https://research.nvidia.com/labs/conv-ai/blogs/2024/2024-01-parakeet/",
+      "snippet": "Back to index Nithin Rao Koluguri · @nithinraok Somshubra Majumdar · @titu1994 2024-01-03 · 5 minute read Announcing NVIDIA NeMo Parakeet ASR Models for Pushing the Boundaries of Speech Recognition We announce the release of Parakeet, a family of state-of-the-art automatic speech recognition (ASR) models. Learn more in our team&#x27;s post on the NVIDIA Techblog."
+    },
+    {
+      "title": "STT - Speech-to-Text with Speaker Diarization - GitHub",
+      "url": "https://github.com/jvsteiner/stt",
+      "snippet": "STT - Speech-to-Text with Speaker Diarization A macOS command-line utility wrapping the FluidAudio library providing speech-to-text transcription with speaker diarization using the Parakeet v3 model."
+    },
+    {
+      "title": "nvidia/parakeet-tdt-0.6b-v3 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
+      "snippet": "🦜 parakeet-tdt-.6b-v3: Multilingual Speech-to-Text Model | | Description: parakeet-tdt-.6b-v3 is a 600-million-parameter multilingual automatic speech recognition (ASR) model designed for high-throughput speech-to-text transcription. It extends the parakeet-tdt-.6b-v2 model by expanding language support from English to 25 European languages. The model automatically detects the language ..."
+    },
+    {
+      "title": "Use Parakeet V3 to transcribe your audio instead of typing",
+      "url": "https://devctrl.blog/posts/use-parakeet-v3-to-transcribe-your-audio-instead-of-typing/",
+      "snippet": "TL;DR Use Handy with Parakeet V3 for short transcription (\"Push to Talk\") Use Parakeet TDT Transcription with ONNX Runtime for long transcription (audio files) Introduction This article is about using Automatic Speech Recognition (ASR) (also known as Speech-to-Text (STT)) for transcribing English, meaning that you talk to a mic and then have it type out onto the screen. The \"AI ..."
+    }
+  ]
+}

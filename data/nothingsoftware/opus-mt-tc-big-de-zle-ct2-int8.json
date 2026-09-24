@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NothingSoftware/opus-mt-tc-big-de-zle-ct2-int8",
+  "slug": "nothingsoftware-opus-mt-tc-big-de-zle-ct2-int8",
+  "author": "NothingSoftware",
+  "url": "https://huggingface.co/NothingSoftware/opus-mt-tc-big-de-zle-ct2-int8",
+  "created_at": "2026-09-23T21:35:17.000Z",
+  "updated_at": "2026-09-23T21:35:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "ctranslate2",
+  "languages": [
+    "de",
+    "ru"
+  ],
+  "tags": [
+    "ctranslate2",
+    "translation",
+    "opus-mt-tc",
+    "int8",
+    "de",
+    "ru",
+    "base_model:Helsinki-NLP/opus-mt-tc-big-de-zle",
+    "base_model:finetune:Helsinki-NLP/opus-mt-tc-big-de-zle",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 244003429,
+  "storage_human": "244 MB",
+  "base_model": "Helsinki-NLP/opus-mt-tc-big-de-zle",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Helsinki-NLP/Opus-MT: Open neural machine translation models ...",
+      "url": "https://github.com/Helsinki-NLP/Opus-MT",
+      "snippet": "Train MT models There is a Makefile for training new models from OPUS data in the Opus-MT-train repository, but this is heavily customized for the work environment at CSC and the University of Helsinki projects. This will (hopefully) be more generic in the future to be able to run in different environments and setups as well."
+    },
+    {
+      "title": "opus-mt-tc-big-de-zle Open-source Translation Model: Free Translation ...",
+      "url": "https://model.aibase.com/models/details/1915693733422718978",
+      "snippet": "The model is based on the transformer-big architecture, supporting translation tasks from German to East Slavic languages (Belarusian, Russian, Ukrainian), with training data sourced from the OPUS corpus."
+    },
+    {
+      "title": "luigi000/opus-mt-tc-big-zle-en-ct2-int8 · Hugging Face",
+      "url": "https://huggingface.co/luigi000/opus-mt-tc-big-zle-en-ct2-int8",
+      "snippet": "Original model by the Language Technology Research Group at the University of Helsinki(OPUS-MT project), released under CC-BY-4.. conversion of those weights under the same license. Please cite the"
+    },
+    {
+      "title": "README.md · luigi000/opus-mt-tc-big-zle-en-ct2-int8 at main",
+      "url": "https://huggingface.co/luigi000/opus-mt-tc-big-zle-en-ct2-int8/blob/main/README.md",
+      "snippet": "Original model by the Language Technology Research Group at the University of Helsinki (OPUS-MT project), released under CC-BY-4.. This repository redistributes a quantized conversion of those weights under the same license."
+    },
+    {
+      "title": "CTranslate2/docs/guides/opus_mt.md at master - GitHub",
+      "url": "https://github.com/OpenNMT/CTranslate2/blob/master/docs/guides/opus_mt.md",
+      "snippet": "Fast inference engine for Transformer models. Contribute to OpenNMT/CTranslate2 development by creating an account on GitHub."
+    }
+  ]
+}

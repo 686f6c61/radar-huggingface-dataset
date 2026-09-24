@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "Quicksort-fr/T-CRED-SL",
+  "slug": "quicksort-fr-t-cred-sl",
+  "author": "Quicksort-fr",
+  "url": "https://huggingface.co/Quicksort-fr/T-CRED-SL",
+  "created_at": "2026-09-23T23:02:55.000Z",
+  "updated_at": "2026-09-23T23:40:59.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tcred_sl",
+    "feature-extraction",
+    "rag-evaluation",
+    "retrieval-augmented-generation",
+    "temporal-rag",
+    "graph-rag",
+    "temporal-qa",
+    "temporal-knowledge-graph",
+    "evaluation-metric",
+    "factual-consistency",
+    "answer-correctness",
+    "answer-equivalence",
+    "evidence-grounding",
+    "evidence-attribution",
+    "citation-evaluation",
+    "hallucination-detection",
+    "answerability",
+    "information-retrieval",
+    "minilm",
+    "research",
+    "text-classification",
+    "custom_code",
+    "en",
+    "dataset:nyu-mll/multi_nli",
+    "dataset:alisawuffles/WANLI",
+    "dataset:facebook/anli",
+    "dataset:google-research-datasets/paws",
+    "dataset:tals/vitaminc",
+    "dataset:osunlp/AttributionBench",
+    "dataset:rajpurkar/squad_v2",
+    "dataset:microsoft/ms_marco",
+    "base_model:microsoft/MiniLM-L12-H384-uncased",
+    "base_model:finetune:microsoft/MiniLM-L12-H384-uncased",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33371536,
+  "parameters_human": "33.4M",
+  "storage_bytes": 133511264,
+  "storage_human": "134 MB",
+  "base_model": "microsoft/MiniLM-L12-H384-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en-US",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    }
+  ]
+}

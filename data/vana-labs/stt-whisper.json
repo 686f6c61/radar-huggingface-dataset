@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Vana-Labs/stt-whisper",
+  "slug": "vana-labs-stt-whisper",
+  "author": "Vana-Labs",
+  "url": "https://huggingface.co/Vana-Labs/stt-whisper",
+  "created_at": "2026-09-23T21:00:33.000Z",
+  "updated_at": "2026-09-23T21:08:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "multilingual",
+    "hy"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "whisper",
+    "ggml",
+    "tetro",
+    "automatic-speech-recognition",
+    "multilingual",
+    "hy",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11067491887,
+  "storage_human": "11.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speech-to-Text Models - Compare STT Models | STT.ai",
+      "url": "https://stt.ai/models/",
+      "snippet": "Compare the best speech-to-text models. Whisper, Canary, Moonshine, Parakeet and more. Find the right STT model for your needs."
+    },
+    {
+      "title": "GitHub - rudranaik/whisper-stt: Robust Speech Recognition via Large ...",
+      "url": "https://github.com/rudranaik/whisper-stt",
+      "snippet": "Whisper [Blog] [Paper] [Model card] [Colab example] Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "Whisper Large V3 - Speech-to-Text Model | STT.ai",
+      "url": "https://stt.ai/models/whisper-large-v3/",
+      "snippet": "Whisper Large V3 is a speech-to-text model by OpenAI. STT.ai runs it on our own GPU for accounts on a paid plan, and it is the model behind the STT.ai Enhanced tier."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "Introducing Whisper - OpenAI",
+      "url": "https://openai.com/index/whisper/",
+      "snippet": "We&#x27;ve trained and are open-sourcing a neural net called Whisper that approaches human level robustness and accuracy on English speech recognition."
+    }
+  ]
+}

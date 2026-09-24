@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Vana-Labs/llm-gemma",
+  "slug": "vana-labs-llm-gemma",
+  "author": "Vana-Labs",
+  "url": "https://huggingface.co/Vana-Labs/llm-gemma",
+  "created_at": "2026-09-23T21:08:45.000Z",
+  "updated_at": "2026-09-23T21:09:16.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "tetro",
+    "text-generation",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:quantized:google/gemma-3-1b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 3559064736,
+  "storage_human": "3.6 GB",
+  "base_model": "google/gemma-3-1b-it, google/gemma-3-4b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/",
+      "snippet": "Gemma is a collection of lightweight, open models built from the same technology that powers our Gemini models."
+    },
+    {
+      "title": "Llm - Vanna AI Docs",
+      "url": "https://vanna.ai/docs/llm",
+      "snippet": "Build AI agents that ship to production. User-scoped execution, rich UI components, and quota management built-in."
+    },
+    {
+      "title": "Gemmaverse — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemmaverse/",
+      "snippet": "Despite the incredible advances of AI, challenges remain in ensuring equitable representation and performance across diverse languages. Watch how developers at Telugu-LLM-Labs used Gemma to create Navarasa."
+    },
+    {
+      "title": "GitHub - google-deepmind/gemma: Gemma open-weight LLM library, from ...",
+      "url": "https://github.com/google-deepmind/gemma",
+      "snippet": "Gemma is a family of open-weights Large Language Model (LLM) by Google DeepMind, based on Gemini research and technology. This repository contains the implementation of the gemma PyPI package. A JAX library to use and fine-tune Gemma. For examples and use cases, see our documentation. Please report issues and feedback in our GitHub."
+    },
+    {
+      "title": "Gemma AI Models: Google&#x27;s Open Multimodal LLMs for Text, Code, and ...",
+      "url": "https://www.inferless.com/learn/the-ultimate-guide-to-gemma-models",
+      "snippet": "Explore Google&#x27;s Gemma AI models — from lightweight 2B LLMs to multimodal 27B powerhouses. Learn about Gemma&#x27;s architecture, use cases, performance, and how to run inference using vLLM."
+    }
+  ]
+}

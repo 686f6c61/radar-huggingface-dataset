@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "imwolf/dxd4_v1_2000_lora",
+  "slug": "imwolf-dxd4_v1_2000_lora",
+  "author": "imwolf",
+  "url": "https://huggingface.co/imwolf/dxd4_v1_2000_lora",
+  "created_at": "2026-09-23T20:27:20.000Z",
+  "updated_at": "2026-09-23T20:27:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:ideogram-ai/ideogram-4-fp8",
+    "base_model:adapter:ideogram-ai/ideogram-4-fp8",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 211875911,
+  "storage_human": "212 MB",
+  "base_model": "ideogram-ai/ideogram-4-fp8",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LoRA AI Models (17,994) | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 17,994 AI models tagged \"LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "[DxD] Xenovia Quarta AI LoRA Model | PixAI",
+      "url": "https://pixai.art/en/model/1919833959085378074",
+      "snippet": "[DxD] Xenovia Quarta is an AI LoRA by 社畜人 on PixAI. Try it free."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Flux LoRA Model Library | Find & Download LoRAs for FLUX.1 - ToolMage",
+      "url": "https://www.toolmage.com/en/tool/flux-lora-model-library/",
+      "snippet": "Flux LoRA Model Library is a central, community-driven platform dedicated to the next-generation FLUX text-to-image model. It serves as a comprehensive repository where AI artists, developers, and enthusiasts can find, share, and download LoRA (Low-Rank Adaptation) models."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "solintellegence/sol-lassi",
+  "slug": "solintellegence-sol-lassi",
+  "author": "solintellegence",
+  "url": "https://huggingface.co/solintellegence/sol-lassi",
+  "created_at": "2026-09-23T21:02:57.000Z",
+  "updated_at": "2026-09-23T21:03:34.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "sol_lassi",
+    "causal-lm",
+    "decoder-only",
+    "small-language-model",
+    "experimental",
+    "sol-intelligence",
+    "text-generation",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3855635,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embaucher un étudiant étranger : autorisations et procédures",
+      "url": "https://www.juritravail.com/Actualite/emploi-d-un-etudiant-etranger-conditions-et-procedures/Id/376471",
+      "snippet": "Sep 1, 2026 · En votre qualité d'employeur, vous devez vérifier si le candidat étranger (hors Union européenne) que vous avez prévu …Read more"
+    },
+    {
+      "title": "Le contrat de travail des étrangers travaillant en France",
+      "url": "https://www.juritravail.com/Actualite/salaries-etrangers-les-contrats-signes-et-l-impact-sur-la-carte-de-sejour/Id/376472",
+      "snippet": "Sep 1, 2026 · Votre entreprise est établie en France et vous souhaitez signer un contrat de travail avec un salarié étranger. Quel …"
+    },
+    {
+      "title": "Taxe Ofii : montants et échéances - Juritravail",
+      "url": "https://www.juritravail.com/Actualite/taxe-dgfip-anciennement-taxe-ofii-tout-ce-que-vous-devez-savoir/Id/378184",
+      "snippet": "Jan 15, 2026 · Première admission au séjour d'un étranger en France La taxe est due pour l'embauche d'un étranger, dans le cadre …"
+    },
+    {
+      "title": "Embauche d'un salarié étranger : démarches et sanctions",
+      "url": "https://www.juritravail.com/Actualite/embauche-d-un-salarie-etranger-tout-savoir-pour-etre-en-regle/Id/375780",
+      "snippet": "Aug 10, 2026 · Lorsque le salarié étranger est déjà présent en France, la première chose à faire avant de l'embaucher, est de vérifier …"
+    },
+    {
+      "title": "Peut-on partir en vacances pendant un arrêt maladie - Juritravail",
+      "url": "https://www.juritravail.com/Actualite/arret-maladie-et-vacances-est-ce-incompatible/Id/247321",
+      "snippet": "Jun 24, 2026 · Vous souhaitez savoir s'il est possible de sortir et de partir en vacances durant son arrêt maladie. Découvrez vos …"
+    }
+  ]
+}

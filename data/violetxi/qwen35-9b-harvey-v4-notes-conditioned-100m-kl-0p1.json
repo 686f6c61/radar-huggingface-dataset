@@ -5,7 +5,7 @@
   "author": "violetxi",
   "url": "https://huggingface.co/violetxi/qwen35-9b-harvey-v4-notes-conditioned-100m-kl-0p1",
   "created_at": "2026-09-22T21:54:31.000Z",
-  "updated_at": "2026-09-22T21:56:29.000Z",
+  "updated_at": "2026-09-23T22:40:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,12 +30,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 28,
   "trending_score": 0,
   "parameters": 9653104368,
   "parameters_human": "9.65B",
-  "storage_bytes": 19319118982,
-  "storage_human": "19.3 GB",
+  "storage_bytes": 38625429982,
+  "storage_human": "38.6 GB",
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"

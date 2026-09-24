@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "PIXELZX/XERON-0.4",
+  "slug": "pixelzx-xeron-0-4",
+  "author": "PIXELZX",
+  "url": "https://huggingface.co/PIXELZX/XERON-0.4",
+  "created_at": "2026-09-24T01:37:50.000Z",
+  "updated_at": "2026-09-24T01:39:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [
+    "en",
+    "ko",
+    "multilingual"
+  ],
+  "tags": [
+    "laya",
+    "safetensors",
+    "decision-model",
+    "system-1",
+    "non-autoregressive",
+    "typed-decisions",
+    "calibration",
+    "multilingual",
+    "jevbench",
+    "text-classification",
+    "en",
+    "ko",
+    "base_model:PIXELZX/XERON-0.2",
+    "base_model:finetune:PIXELZX/XERON-0.2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198712,
+  "storage_human": "678 MB",
+  "base_model": "PIXELZX/XERON-0.2, jhu-clsp/mmBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

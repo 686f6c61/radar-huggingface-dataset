@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "baki83/whisper-v3-turbo-juznevesti-sr-lora",
+  "slug": "baki83-whisper-v3-turbo-juznevesti-sr-lora",
+  "author": "baki83",
+  "url": "https://huggingface.co/baki83/whisper-v3-turbo-juznevesti-sr-lora",
+  "created_at": "2026-09-23T20:48:47.000Z",
+  "updated_at": "2026-09-23T21:41:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:openai/whisper-large-v3-turbo",
+    "lora",
+    "transformers",
+    "base_model:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131191257,
+  "storage_human": "131 MB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marjolein Luman - Vrije Universiteit Amsterdam",
+      "url": "https://research.vu.nl/en/persons/marjolein-luman/",
+      "snippet": "Marjolein Luman works as a full professor and head of the clinical neuropsychology division, Vrije Universiteit Amsterdam. Her …"
+    },
+    {
+      "title": "Marjolein LUMAN | Associate Professor | PhD | Vrije Universiteit ...",
+      "url": "https://www.researchgate.net/profile/Marjolein-Luman",
+      "snippet": "Background: Stimulant medication is commonly prescribed to individuals with attention-deficit/hyperactivity disorder (ADHD). While …"
+    },
+    {
+      "title": "dr. Marjolein Luman - Vrije Universiteit Amsterdam",
+      "url": "https://vu.nl/nl/onderzoek/wetenschappers/marjolein-luman",
+      "snippet": "Marjolein Luman is a full professor and head of the clinical neuropsychology division, Vrije Universiteit Amsterdam. Her research …"
+    },
+    {
+      "title": "Research Portal & Pure - VU Amsterdam",
+      "url": "https://vu.nl/en/employee/university-library/research-portal-pure",
+      "snippet": "Sep 9, 2026 · The VU Research Portal offers an overview of all research recorded in PURE by VU Amsterdam researchers. For both …"
+    },
+    {
+      "title": "Clinical Neuropsychology - Vrije Universiteit Amsterdam",
+      "url": "https://research.vu.nl/en/organisations/clinical-neuropsychology-2/persons/",
+      "snippet": "dr. Marjolein Luman m.luman @ vu. nl Faculty of Behavioural and Movement Sciences, Clinical Neuropsychology - Full Professor …"
+    }
+  ]
+}

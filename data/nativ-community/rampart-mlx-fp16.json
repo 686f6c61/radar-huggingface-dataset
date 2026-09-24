@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "nativ-community/rampart-mlx-fp16",
+  "slug": "nativ-community-rampart-mlx-fp16",
+  "author": "nativ-community",
+  "url": "https://huggingface.co/nativ-community/rampart-mlx-fp16",
+  "created_at": "2026-09-23T20:23:39.000Z",
+  "updated_at": "2026-09-23T20:23:42.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "nl"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "bert",
+    "mlx-vlm",
+    "minilm",
+    "token-classification",
+    "pii",
+    "redaction",
+    "privacy",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "base_model:nationaldesignstudio/rampart",
+    "base_model:finetune:nationaldesignstudio/rampart",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18434723,
+  "parameters_human": "18.4M",
+  "storage_bytes": 36880743,
+  "storage_human": "37 MB",
+  "base_model": "nationaldesignstudio/rampart",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sledgedev/rampart-mlx · Hugging Face",
+      "url": "https://huggingface.co/sledgedev/rampart-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - nationaldesignstudio/rampart",
+      "url": "https://github.com/nationaldesignstudio/rampart",
+      "snippet": "Rampart is a local-first system for removing personally identifiable information from user-typed text before it leaves the browser. It combines a 14.7 MB ONNX token-classification model with a deterministic recognizer layer; together they form a defense-in-depth pipeline released as a complete, reproducible artifact. This repository ships the runtime as @nationaldesignstudio/rampart. Model ..."
+    },
+    {
+      "title": "OsaurusAI/rampart-mlx · Hugging Face",
+      "url": "https://huggingface.co/OsaurusAI/rampart-mlx",
+      "snippet": "OsaurusAI / rampart-mlx like 3 Follow Osaurus-AI 181 Token Classification MLX Safetensors English bert pii ner privacy License:cc-by-4. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Local AI, native to your Mac. - GitHub",
+      "url": "https://github.com/0xSojalSec/nativmLX",
+      "snippet": "Local AI, native to your Mac. Chat, serve, monitor, and connect MLX models from one macOS app. Nativ is a native macOS workspace for running AI models locally on Apple silicon. It bundles an mlx-vlm server, finds compatible models in your Hugging Face cache, and wraps the whole experience in a polished SwiftUI app. Use Nativ as a private chat app, a model manager, a performance dashboard, or ..."
+    },
+    {
+      "title": "Nativ — Run AI locally on your Mac - blaizzy.github.io",
+      "url": "https://blaizzy.github.io/nativ/",
+      "snippet": "CURATED LIBRARY Pick the right model for your Mac Run standout open models from Z.ai, Google, Cohere, and Liquid AI. Nativ recommends the right partner model for your hardware."
+    }
+  ]
+}

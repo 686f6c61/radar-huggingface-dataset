@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Aayush9029/petal-w1-4bit",
+  "slug": "aayush9029-petal-w1-4bit",
+  "author": "Aayush9029",
+  "url": "https://huggingface.co/Aayush9029/petal-w1-4bit",
+  "created_at": "2026-09-24T01:27:23.000Z",
+  "updated_at": "2026-09-24T01:27:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "petal",
+    "dictation",
+    "speech-to-text",
+    "asr-post-processing",
+    "transcript-cleanup",
+    "text-normalization",
+    "disfluency-removal",
+    "on-device",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "model-index",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 444016107,
+  "storage_human": "444 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Dictation cleanup",
+      "dataset": "Petal cleanup held-out set (200 transcripts)",
+      "metric": "Word similarity to reference (all)",
+      "value": 0.834
+    },
+    {
+      "task": "Dictation cleanup",
+      "dataset": "Petal cleanup held-out set (200 transcripts)",
+      "metric": "Word similarity to reference (rambles, 80+ words)",
+      "value": 0.704
+    },
+    {
+      "task": "Dictation cleanup",
+      "dataset": "Petal cleanup held-out set (200 transcripts)",
+      "metric": "Replies instead of cleanup",
+      "value": 0
+    }
+  ],
+  "sources": []
+}

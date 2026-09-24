@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "arraypress/scribe-piano",
+  "slug": "arraypress-scribe-piano",
+  "author": "arraypress",
+  "url": "https://huggingface.co/arraypress/scribe-piano",
+  "created_at": "2026-09-23T19:26:47.000Z",
+  "updated_at": "2026-09-23T19:27:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "swift-music-transcriber",
+  "languages": [],
+  "tags": [
+    "swift-music-transcriber",
+    "piano-transcription",
+    "audio-to-midi",
+    "music-transcription",
+    "core-ai",
+    "aimodel",
+    "apple-silicon",
+    "macos",
+    "arxiv:2010.01815",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136392012,
+  "storage_human": "136 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Piano Scribe - GitHub Pages",
+      "url": "https://arris42.github.io/pianoscribe/",
+      "snippet": "Piano Scribe This app converts raw audio to MIDI using Onsets and Frames, a neural network trained for polyphonic piano transcription. Record yourself playing piano or choose an audio file with solo piano from your device to transcribe! Don&#x27;t have a piano? Try singing to it to see what your voice sounds like played by a piano! Your voice isn&#x27;t a piano though, so it might not sound like you at ..."
+    },
+    {
+      "title": "GitHub - darumond/piano-scribe",
+      "url": "https://github.com/darumond/piano-scribe",
+      "snippet": "PianoScribe is a production-oriented foundation for automatic piano music transcription. It loads WAV or MP3 audio, prepares a mono signal, delegates note inference to a replaceable backend, and exports normalized note events as MIDI and MusicXML. Optional pretrained-model adapters never download weights during setup or automated tests."
+    },
+    {
+      "title": "PianoScribe — coming soon",
+      "url": "https://pianoscribe.ai/",
+      "snippet": "Audio & video upload Drop a clip, get an instant transcription Upload piano audio or video in any common format — MP3, WAV, MP4, M4A, FLAC and more. PianoScribe separates the notes from the noise and rebuilds the performance automatically. No setup, no plugins. Drag a file in and the model does the rest in seconds."
+    },
+    {
+      "title": "Piano Scribe - GitHub Pages",
+      "url": "https://ivan-v.github.io/Piano-Scribe/",
+      "snippet": "Piano Scribe is a tool for converting raw audio to MIDI using neural networks for polyphonic piano transcription."
+    },
+    {
+      "title": "Piano Scribe - Virtual Bard",
+      "url": "https://www.virtualbard.com/piano_scribe",
+      "snippet": "Piano Scribe by Virtual Bard enables users to transcribe piano music into MIDI files using AI technology."
+    }
+  ]
+}

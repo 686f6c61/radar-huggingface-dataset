@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NothingSoftware/opus-mt-tc-big-en-zle-ct2-int8",
+  "slug": "nothingsoftware-opus-mt-tc-big-en-zle-ct2-int8",
+  "author": "NothingSoftware",
+  "url": "https://huggingface.co/NothingSoftware/opus-mt-tc-big-en-zle-ct2-int8",
+  "created_at": "2026-09-23T21:34:41.000Z",
+  "updated_at": "2026-09-23T21:35:14.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "ctranslate2",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "ctranslate2",
+    "translation",
+    "opus-mt-tc",
+    "int8",
+    "en",
+    "ru",
+    "base_model:Helsinki-NLP/opus-mt-tc-big-en-zle",
+    "base_model:finetune:Helsinki-NLP/opus-mt-tc-big-en-zle",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 244450154,
+  "storage_human": "244 MB",
+  "base_model": "Helsinki-NLP/opus-mt-tc-big-en-zle",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "luigi000/opus-mt-tc-big-zle-en-ct2-int8 at main - Hugging Face",
+      "url": "https://huggingface.co/luigi000/opus-mt-tc-big-zle-en-ct2-int8/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main opus-mt-tc-big-zle-en-ct2-int8 246 MB Ctrl+K Ctrl+K 1 contributor History:2 commits luigi000 int8 CT2 conversion of Helsinki-NLP/opus-mt-tc-big-zle-en 987aa3c verified30 days ago .gitattributes Safe 1.61 kBint8 CT2 conversion of Helsinki-NLP/opus-mt-tc-big-zle-en30 days ..."
+    },
+    {
+      "title": "GitHub - Helsinki-NLP/Opus-MT: Open neural machine translation models ...",
+      "url": "https://github.com/Helsinki-NLP/Opus-MT",
+      "snippet": "There is a Makefile for training new models from OPUS data in the Opus-MT-train repository, but this is heavily customized for the work environment at CSC and the University of Helsinki projects. This will (hopefully) be more generic in the future to be able to run in different environments and setups as well."
+    },
+    {
+      "title": "Helsinki-NLP/opus-mt-tc-big-en-tr · Hugging Face",
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-en-tr",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CTranslate2/docs/guides/opus_mt.md at master - GitHub",
+      "url": "https://github.com/OpenNMT/CTranslate2/blob/master/docs/guides/opus_mt.md",
+      "snippet": "Fast inference engine for Transformer models. Contribute to OpenNMT/CTranslate2 development by creating an account on GitHub."
+    },
+    {
+      "title": "Democratizing Neural Machine Translation with OPUS-MT",
+      "url": "https://arxiv.org/pdf/2212.01936",
+      "snippet": "Abstract This paper presents the OPUS ecosystem with a focus on the development of open machine translation models and tools, and their integration into end-user applications, development platforms and professional workflows. We discuss our ongoing mission of increasing language coverage and translation quality, and also describe ongoing work on the development of modular translation models ..."
+    }
+  ]
+}

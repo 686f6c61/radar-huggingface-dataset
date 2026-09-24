@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ferrazzipietro/Llama-3.2-1B-Instruct-cpt-tesi_all_all_tasks",
+  "slug": "ferrazzipietro-llama-3-2-1b-instruct-cpt-tesi_all_all_tasks",
+  "author": "ferrazzipietro",
+  "url": "https://huggingface.co/ferrazzipietro/Llama-3.2-1B-Instruct-cpt-tesi_all_all_tasks",
+  "created_at": "2026-09-22T17:48:30.000Z",
+  "updated_at": "2026-09-23T22:34:58.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:ferrazzipietro/Llama-3.2-1B-Instruct-cpt-tesi_all",
+    "base_model:adapter:ferrazzipietro/Llama-3.2-1B-Instruct-cpt-tesi_all",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62336546,
+  "storage_human": "62 MB",
+  "base_model": "ferrazzipietro/Llama-3.2-1B-Instruct-cpt-tesi_all",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Visual Search Tool | Bing Visual Search",
+      "url": "https://explore.microsoft.com/en-us/bing/visual-search",
+      "snippet": "Point your camera at any text to translate it, copy it, or search for what it means — quickly and accurately. Snap a photo of a math or …Read more"
+    },
+    {
+      "title": "Search Images - Bing",
+      "url": "https://www.bing.com/camera",
+      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
+    },
+    {
+      "title": "Outil de recherche visuelle gratuit | Bing Visual Search",
+      "url": "https://explore.microsoft.com/fr-fr/bing/visual-search",
+      "snippet": "Recherchez par image avec Bing Visual Search, un outil gratuit de recherche d’images inversée pour trouver des images similaires, …"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "7 BEST Image Search Engine Sites (2026) - Guru99",
+      "url": "https://www.guru99.com/best-image-search-engines.html",
+      "snippet": "Aug 4, 2026 · Subpar image search sites can waste hours of your time, yielding low-resolution or irrelevant results. In today’s visually …"
+    }
+  ]
+}

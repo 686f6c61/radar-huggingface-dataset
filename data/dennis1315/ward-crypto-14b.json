@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Dennis1315/ward-crypto-14b",
+  "slug": "dennis1315-ward-crypto-14b",
+  "author": "Dennis1315",
+  "url": "https://huggingface.co/Dennis1315/ward-crypto-14b",
+  "created_at": "2026-09-23T21:15:20.000Z",
+  "updated_at": "2026-09-23T21:30:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dennis1315 (Rojas) - Hugging Face",
+      "url": "https://huggingface.co/Dennis1315/models",
+      "snippet": "Dennis1315&#x27;s models2 Sort: Recently updated Dennis1315/cypher-v8-upload-test Updated about 5 hours ago"
+    },
+    {
+      "title": "Dennis1315 (Rojas) - Hugging Face",
+      "url": "https://huggingface.co/Dennis1315/datasets",
+      "snippet": "Recent Activity updated a model1 day ago Dennis1315/cypher-MED-PRM-8B-v8-GGUF published a model1 day ago Dennis1315/cypher-MED-PRM-8B-v8-GGUF updated a model1 day ago Dennis1315/cypher-CODE-PRM-8B-v8-GGUF View all activity"
+    },
+    {
+      "title": "GitHub - OrionStarAI/Orion: Orion-14B is a family of models includes a ...",
+      "url": "https://github.com/OrionStarAI/Orion",
+      "snippet": "Orion-14B is a family of models includes a 14B foundation LLM, and a series of models: a chat model, a long context model, a quantized model, a RAG fine-tuned model, and an Agent fine-tuned model."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Powered By AI, Crypto Fraud Is Now A $14 Billion Criminal Industry - Forbes",
+      "url": "https://www.forbes.com/sites/the-wiretap/2026/01/13/powered-by-ai-crypto-fraud-is-now-a-14-billion-criminal-industry/",
+      "snippet": "AI is helping crypto scammers create content and personas to lure targets, experts warn, amid a glut of pig butchering cases."
+    }
+  ]
+}

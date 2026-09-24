@@ -5,7 +5,7 @@
   "author": "Junaidi69",
   "url": "https://huggingface.co/Junaidi69/rengas-model-uji",
   "created_at": "2026-09-22T02:41:45.000Z",
-  "updated_at": "2026-09-22T02:42:18.000Z",
+  "updated_at": "2026-09-23T16:02:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 8,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": 1235814432,
   "parameters_human": "1.24B",
-  "storage_bytes": 2479595264,
-  "storage_human": "2.5 GB",
+  "storage_bytes": 4959190528,
+  "storage_human": "5.0 GB",
   "base_model": null,
   "formats": [
     "gguf"

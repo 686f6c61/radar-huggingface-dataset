@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "etiennebamas/feedback-grpo-step-200-reasoning-sft",
+  "slug": "etiennebamas-feedback-grpo-step-200-reasoning-sft",
+  "author": "etiennebamas",
+  "url": "https://huggingface.co/etiennebamas/feedback-grpo-step-200-reasoning-sft",
+  "created_at": "2026-09-23T21:49:18.000Z",
+  "updated_at": "2026-09-23T21:55:06.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:formalmathatepfl/qwen3-sft-feedback-with-proof-repair-rl-200-unmasked",
+    "base_model:finetune:formalmathatepfl/qwen3-sft-feedback-with-proof-repair-rl-200-unmasked",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392947559,
+  "storage_human": "16.4 GB",
+  "base_model": "formalmathatepfl/qwen3-sft-feedback-with-proof-repair-rl-200-unmasked",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2507.08267] A Practical Two-Stage Recipe for Mathematical LLMs ...",
+      "url": "https://arxiv.org/abs/2507.08267",
+      "snippet": "Enhancing the mathematical reasoning of Large Language Models (LLMs) is a pivotal challenge in advancing AI capabilities. While Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) are the dominant training paradigms, a systematic methodology for combining them to maximize both accuracy and efficiency remains largely unexplored. This paper introduces a practical and effective training ..."
+    },
+    {
+      "title": "SFT Trainer · Hugging Face",
+      "url": "https://huggingface.co/docs/trl/sft_trainer",
+      "snippet": "Looking deeper into the SFT method Supervised Fine-Tuning (SFT) is the simplest and most commonly used method to adapt a language model to a target dataset. The model is trained in a fully supervised fashion using pairs of input and output sequences."
+    },
+    {
+      "title": "[2503.12937] R1-VL: Learning to Reason with Multimodal Large Language ...",
+      "url": "https://arxiv.org/abs/2503.12937",
+      "snippet": "In this work, we aim to enhance the MLLMs&#x27; reasoning ability beyond passively imitating positive reasoning paths. To this end, we design Step-wise Group Relative Policy Optimization (StepGRPO), a new online reinforcement learning framework that enables MLLMs to self-improve reasoning ability via simple, effective and dense step-wise rewarding."
+    },
+    {
+      "title": "GRPO Trainer · Hugging Face",
+      "url": "https://huggingface.co/docs/trl/grpo_trainer",
+      "snippet": "GRPO Trainer Overview TRL supports the GRPO Trainer for training language models, as described in the paper DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models by Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, Junxiao Song, Mingchuan Zhang, Y. K. Li, Y. Wu, Daya Guo. The abstract from the paper is the following: Mathematical reasoning poses a significant ..."
+    },
+    {
+      "title": "GitHub - verl-project/verl: verl/HybridFlow: A Flexible and Efficient ...",
+      "url": "https://github.com/verl-project/verl",
+      "snippet": "verl is flexible and easy to use with: Easy extension of diverse RL algorithms: The hybrid-controller programming model enables flexible representation and efficient execution of complex post-training dataflows. Build RL dataflows such as GRPO, PPO in a few lines of code."
+    }
+  ]
+}

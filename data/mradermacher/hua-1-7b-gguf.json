@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/hua-1.7b-GGUF",
+  "slug": "mradermacher-hua-1-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/hua-1.7b-GGUF",
+  "created_at": "2026-09-24T00:13:46.000Z",
+  "updated_at": "2026-09-24T00:26:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "home-assistant",
+    "smart-home",
+    "tool-calling",
+    "function-calling",
+    "grpo",
+    "reinforcement-learning",
+    "qwen3",
+    "en",
+    "base_model:neelabhbuilds/hua-1.7b",
+    "base_model:quantized:neelabhbuilds/hua-1.7b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 15959970432,
+  "storage_human": "16.0 GB",
+  "base_model": "neelabhbuilds/hua-1.7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OLMo-1.7-7B-hf-i1-GGUF huggingface.co api & mradermacher ...",
+      "url": "https://www.toolify.ai/ai-model/mradermacher-olmo-1-7-7b-hf-i1-gguf",
+      "snippet": "See https://huggingface.co/mradermacher/model_requests for some answers to questions you might have and/or if you want some other model quantized. I thank my company, nethype GmbH , for letting me use its servers and providing upgrades to my workstation to enable this work in my free time. ... OLMo-1.7-7B-hf-i1-GGUF huggingface.co is an AI model on huggingface.co that provides OLMo-1.7-7B-hf-i1-GGUF's model effect (), which can be used instantly with this mradermacher OLMo-1.7-7B-hf-i1-GGUF model."
+    },
+    {
+      "title": "mradermacher/F2LLM-v2-1.7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/F2LLM-v2-1.7B-GGUF",
+      "snippet": "If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files."
+    },
+    {
+      "title": "mradermacher (team mradermacher)",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "updated a model 30 minutes ago mradermacher/Spaetzle-v64-7b-GGUF"
+    },
+    {
+      "title": "F2LLM-v2-1.7B.Q2_K.gguf · mradermacher/F2LLM-v2-1.7B-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/F2LLM-v2-1.7B-GGUF/blob/main/F2LLM-v2-1.7B.Q2_K.gguf",
+      "snippet": "codefuse-ai/F2LLM-v2 · 87 languages · conversational · License: apache-2.0 · Model card Files Files and versions · xet Community · Deploy · Copy to bucket new · Use this model · main · F2LLM-v2-1.7B-GGUF / F2LLM-v2-1.7B.Q2_K.gguf · mradermacher · uploaded from leia dd518b4 verified 3 months ago ·"
+    },
+    {
+      "title": "hf-model-mradermacher-turbo-ai-7b-i1-gguf | Hugging Bay",
+      "url": "https://huggingbay.xyz/artifact/hf-model-mradermacher-turbo-ai-7b-i1-gguf",
+      "snippet": "Public artifact metadata is temporarily unavailable. No serving, license, integrity, or runtime claim is being made by this fallback page."
+    }
+  ]
+}

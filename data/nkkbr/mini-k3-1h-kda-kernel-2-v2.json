@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "nkkbr/Mini-K3-1H-kda-kernel-2-v2",
+  "slug": "nkkbr-mini-k3-1h-kda-kernel-2-v2",
+  "author": "nkkbr",
+  "url": "https://huggingface.co/nkkbr/Mini-K3-1H-kda-kernel-2-v2",
+  "created_at": "2026-09-22T10:42:52.000Z",
+  "updated_at": "2026-09-24T00:04:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mini_k3",
+    "kimi-k3",
+    "pretraining",
+    "mixture-of-experts",
+    "linear-attention",
+    "architecture-ablation",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 761,
+  "trending_score": 0,
+  "parameters": 1016697580,
+  "parameters_human": "1.02B",
+  "storage_bytes": 12347590166,
+  "storage_human": "12.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

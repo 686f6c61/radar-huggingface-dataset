@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Glimpse-Dictation/Nemotron-3-Diarization-gguf",
+  "slug": "glimpse-dictation-nemotron-3-diarization-gguf",
+  "author": "Glimpse-Dictation",
+  "url": "https://huggingface.co/Glimpse-Dictation/Nemotron-3-Diarization-gguf",
+  "created_at": "2026-09-23T20:46:29.000Z",
+  "updated_at": "2026-09-24T03:03:13.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "speaker-diarization",
+    "streaming-sortformer",
+    "transcribe.cpp",
+    "voice-activity-detection",
+    "en",
+    "base_model:nvidia/Nemotron-3-Diarization",
+    "base_model:quantized:nvidia/Nemotron-3-Diarization",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 99226504,
+  "parameters_human": "99.2M",
+  "storage_bytes": 701679520,
+  "storage_human": "702 MB",
+  "base_model": "nvidia/Nemotron-3-Diarization",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Glimpse - Discover Trends Before They’re Trending",
+      "url": "https://meetglimpse.com/",
+      "snippet": "The world's largest trends platform Glimpse has 120X more trends than the closest competitor. Find trends in your niche"
+    },
+    {
+      "title": "glimpse - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/glimpse",
+      "snippet": "Dans les listes : Top 2000 English words, Eye actions, New words, Suite... Synonymes : glance, peek, gander, look, quick look, …"
+    },
+    {
+      "title": "glimpse - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/glimpse.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"glimpse\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "GLIMPSE | traduire en français - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/fr/dictionnaire/anglais-francais/glimpse",
+      "snippet": "GLIMPSE - traduire en français avec le dictionnaire Anglais-Français - Cambridge Dictionary."
+    },
+    {
+      "title": "Google Trends Supercharged - Take your Google Trends insights ... - Glimpse",
+      "url": "https://meetglimpse.com/google-trends-supercharged/",
+      "snippet": "Supercharge your Google Trends insights with the Glimpse Chrome extension. See absolute number of searches, long-tail …"
+    }
+  ]
+}

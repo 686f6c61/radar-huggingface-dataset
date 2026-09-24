@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "vwdubb/Swift-Qwen3.8-27b-Terse-Coder",
+  "slug": "vwdubb-swift-qwen3-8-27b-terse-coder",
+  "author": "vwdubb",
+  "url": "https://huggingface.co/vwdubb/Swift-Qwen3.8-27b-Terse-Coder",
+  "created_at": "2026-09-23T21:07:43.000Z",
+  "updated_at": "2026-09-23T21:35:24.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "merge",
+    "lora",
+    "reasoning",
+    "coding",
+    "token-efficient",
+    "qwen3_8",
+    "conversational",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:finetune:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New XXX Videos & Free Porn Movies at DrTuber.com",
+      "url": "https://www.drtuber.com/",
+      "snippet": "Welcome to DrTuber, the only website you’ll ever need for free porn movies. We have more porn than you could watch in several …Read more"
+    },
+    {
+      "title": "All XXX Video Categories at DrTuber.com",
+      "url": "https://www.drtuber.com/categories",
+      "snippet": "DrTuber.com covers all possible porn video categories so you could enjoy sexy girls fucking hard! Browse your favorite sex movie …Read more"
+    },
+    {
+      "title": "Free French XXX Videos of Best 2026 Porn at DrTuber",
+      "url": "https://m.drtuber.com/categories/french",
+      "snippet": "Stop by DrTuber's most recent French XXX videos ready to be watched for free. New exclusive porn movies with raw & uncensored …Read more"
+    },
+    {
+      "title": "Categories « DrTuber - Best Sex Videos",
+      "url": "http://www.drtuber.cc/categories",
+      "snippet": "Follow Us We Have 9988 Videos in 38 Categories Copyright (C) 2016 - 2026 DrTuber.cc - All Rights Reserved Contact: …Read more"
+    },
+    {
+      "title": "DrTuber & 175+ Free Porn Tube Sites Like Drtuber.com",
+      "url": "https://theporndude.com/557/drtuber",
+      "snippet": "Overall, Drtuber.com (often misspelled as \"drtube\") is one of the biggest porn tubes out there for a good reason. There is so much …Read more"
+    }
+  ]
+}

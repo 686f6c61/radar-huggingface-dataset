@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "nirajr/coedit-small-gguf",
+  "slug": "nirajr-coedit-small-gguf",
+  "author": "nirajr",
+  "url": "https://huggingface.co/nirajr/coedit-small-gguf",
+  "created_at": "2026-09-24T01:35:29.000Z",
+  "updated_at": "2026-09-24T02:21:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "t5",
+    "grammar-correction",
+    "text-editing",
+    "text-generation",
+    "en",
+    "base_model:jbochi/coedit-small",
+    "base_model:quantized:jbochi/coedit-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76961152,
+  "parameters_human": "77.0M",
+  "storage_bytes": 82867072,
+  "storage_human": "83 MB",
+  "base_model": "jbochi/coedit-small",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

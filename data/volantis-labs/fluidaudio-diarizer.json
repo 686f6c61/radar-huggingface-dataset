@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "volantis-labs/fluidaudio-diarizer",
+  "slug": "volantis-labs-fluidaudio-diarizer",
+  "author": "volantis-labs",
+  "url": "https://huggingface.co/volantis-labs/fluidaudio-diarizer",
+  "created_at": "2026-09-24T00:06:30.000Z",
+  "updated_at": "2026-09-24T00:11:34.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "speaker-diarization",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21352840,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FluidAudio/Documentation/Diarization/GettingStarted.md at main ... - GitHub",
+      "url": "https://github.com/FluidInference/FluidAudio/blob/main/Documentation/Diarization/GettingStarted.md",
+      "snippet": "The diarizer module mirrors the three-stage pipeline and its offline counterpart. Files live under Sources/FluidAudio/Diarizer/:"
+    },
+    {
+      "title": "FluidAudio-Ai/Documentation/Diarization/GettingStarted.md at main ...",
+      "url": "https://github.com/pankaj1920/FluidAudio-Ai/blob/main/Documentation/Diarization/GettingStarted.md",
+      "snippet": "Model Choice Pick the diarizer based on the workflow: LS-EEND handles noisy environments and overlapping speakers well and supports up to 10 speakers. It is also much more lightweight than Sortformer, able to run entirely on an M4 MAX CPU at a comparable speed to Sortformer on ANE."
+    },
+    {
+      "title": "FluidAudio - Swift Package Index",
+      "url": "https://swiftpackageindex.com/FluidInference/FluidAudio",
+      "snippet": "FluidAudio - Transcription, Text-to-speech, VAD, Speaker diarization with CoreML Models FluidAudio is a Swift SDK for fully local, low-latency audio AI on Apple devices, with inference offloaded to the Apple Neural Engine (ANE), resulting in less memory and generally faster inference."
+    },
+    {
+      "title": "Sortformer End-to-End Diarization | FluidInference/FluidAudio | DeepWiki",
+      "url": "https://deepwiki.com/FluidInference/FluidAudio/3.2.4-sortformer-end-to-end-diarization",
+      "snippet": "This document covers the Sortformer end-to-end neural diarization subsystem in FluidAudio. Sortformer provides an alternative to modular pipelines (like Pyannote) by performing speaker diarization in"
+    },
+    {
+      "title": "FluidAudio — Audio — Project Awesome",
+      "url": "https://project-awesome.org/r/FluidInference-FluidAudio",
+      "snippet": "FluidAudio will automatically route downloads through the proxy Documentation DeepWiki for auto-generated docs for this repo. ... Audio Conversion for Inference Manual model download & loading options: ASR, Diarizer, VAD ... Set https_proxy before running the download helpers (see Documentation/API.md). ... Getting Started Last Chunk Handling ..."
+    }
+  ]
+}

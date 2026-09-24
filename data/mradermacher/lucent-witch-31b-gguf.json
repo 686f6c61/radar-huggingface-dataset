@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Lucent-Witch-31B-GGUF",
+  "slug": "mradermacher-lucent-witch-31b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Lucent-Witch-31B-GGUF",
+  "created_at": "2026-09-24T00:41:27.000Z",
+  "updated_at": "2026-09-24T02:02:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "roleplay",
+    "storytelling",
+    "en",
+    "base_model:Cyclone-Labs/Lucent-Witch-31B",
+    "base_model:quantized:Cyclone-Labs/Lucent-Witch-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 213908610112,
+  "storage_human": "213.9 GB",
+  "base_model": "Cyclone-Labs/Lucent-Witch-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/LensVLM-9B-Apple",
+  "slug": "0xsojalsec-lensvlm-9b-apple",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/LensVLM-9B-Apple",
+  "created_at": "2026-09-24T00:16:22.000Z",
+  "updated_at": "2026-09-24T00:16:23.000Z",
+  "license": "apple-amlr",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "vision-language-model",
+    "long-context",
+    "visual-text-compression",
+    "conversational",
+    "arxiv:2605.07019",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apple-amlr",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711735,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "Write - bartleby",
+      "url": "https://www.bartleby.com/write",
+      "snippet": "Bartleby is the go-to, online homework help service for students everywhere. We pride ourselves in supporting students through their …"
+    },
+    {
+      "title": "Cold - Collection at Bartleby.com",
+      "url": "https://www.bartleby.com/lit-hub/a-dictionary-of-similes/cold-3",
+      "snippet": "Cold Cold as loveless duty done.—Mary Louisa AndersonCold as a dog’s nose.—AnonymousCold as a frog.—AnonymousCold as a …"
+    },
+    {
+      "title": "Télécharger et utiliser Google Traduction",
+      "url": "https://support.google.com/translate/answer/6350850?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Télécharger et utiliser Google Traduction Vous pouvez traduire du texte saisi au clavier, en écriture manuscrite, sur une photo ou …"
+    }
+  ]
+}

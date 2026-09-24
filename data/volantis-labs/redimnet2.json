@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "volantis-labs/redimnet2",
+  "slug": "volantis-labs-redimnet2",
+  "author": "volantis-labs",
+  "url": "https://huggingface.co/volantis-labs/redimnet2",
+  "created_at": "2026-09-24T00:06:33.000Z",
+  "updated_at": "2026-09-24T00:11:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "redimnet2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18041134,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - PalabraAI/redimnet2: This repository contains the official ...",
+      "url": "https://github.com/PalabraAI/redimnet2",
+      "snippet": "This repository contains the official implementation and pretrained weights for the paper \"ReDimNet2: Scaling Speaker Verification via Time-Pooled Dimension Reshaping\"."
+    },
+    {
+      "title": "redimnet2/redimnet2 at main · PalabraAI/redimnet2 · GitHub",
+      "url": "https://github.com/PalabraAI/redimnet2/tree/main/redimnet2",
+      "snippet": "This repository contains the official implementation and pretrained weights for the paper \"ReDimNet2: Scaling Speaker Verification via Time-Pooled Dimension Reshaping\". - redimnet2/redimnet2 at main · PalabraAI/redimnet2"
+    },
+    {
+      "title": "ReDimNet2: Scaling Speaker Verification via Time-Pooled Dimension Reshaping",
+      "url": "https://arxiv.org/html/2603.11841",
+      "snippet": "Abstract We present ReDimNet2, an improved neural network architecture for extracting utterance-level speaker representations that builds upon the ReDimNet dimension-reshaping framework. The key modification in ReDimNet2 is the introduction of pooling over the time dimension within the 1D processing pathway."
+    },
+    {
+      "title": "[2603.11841] ReDimNet2: Scaling Speaker Verification via Time-Pooled ...",
+      "url": "https://arxiv.org/abs/2603.11841",
+      "snippet": "We present ReDimNet2, an improved neural network architecture for extracting utterance-level speaker representations that builds upon the ReDimNet dimension-reshaping framework. The key modification in ReDimNet2 is the introduction of pooling over the time dimension within the 1D processing pathway. This operation preserves the nature of the 1D feature space, since 1D features remain a ..."
+    },
+    {
+      "title": "Paper page - ReDimNet2: Scaling Speaker Verification via Time-Pooled ...",
+      "url": "https://huggingface.co/papers/2603.11841",
+      "snippet": "Join the discussion on this paper page ReDimNet2: Scaling Speaker Verification via Time-Pooled Dimension Reshaping"
+    }
+  ]
+}

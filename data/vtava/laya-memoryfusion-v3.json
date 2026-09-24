@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vtava/Laya-MemoryFusion-V3",
+  "slug": "vtava-laya-memoryfusion-v3",
+  "author": "vtava",
+  "url": "https://huggingface.co/vtava/Laya-MemoryFusion-V3",
+  "created_at": "2026-09-23T20:32:36.000Z",
+  "updated_at": "2026-09-23T20:32:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tinycenn",
+    "cenn",
+    "language-modeling",
+    "text-generation",
+    "research",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 350735223,
+  "storage_human": "351 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vtava/Laya-MemoryFusion-V3 · Hugging Face",
+      "url": "https://huggingface.co/vtava/Laya-MemoryFusion-V3",
+      "snippet": "Instructions to use vtava/Laya-MemoryFusion-V3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use vtava/Laya-MemoryFusion-V3 with Transformers:"
+    },
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "Instead of staying bitter, I decided to take everything I learned, fix every architectural limitation of the old approach, and build a completely open, horizontal System 1 decision model family: Laya."
+    },
+    {
+      "title": "TinyCeNN-LM: Quality-Gated Conversion of Pretrained Attention with CeNN ...",
+      "url": "https://arxiv.org/html/2609.21139v1",
+      "snippet": "Replacing attention in a pretrained language model is a compatibility problem: a plausible substitute may alter representations expected by later layers. TinyCeNN-LM introduces a quality-gated post-training conversion framework using CeNN-inspired cellular-recurrent layers with bounded local processing, compact recurrent memory, routing, fusion ..."
+    },
+    {
+      "title": "GitHub - lxq-jnu/MemoryFusion",
+      "url": "https://github.com/lxq-jnu/MemoryFusion",
+      "snippet": "Contribute to lxq-jnu/MemoryFusion development by creating an account on GitHub."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2409.10695",
+      "snippet": "arXiv.org"
+    }
+  ]
+}

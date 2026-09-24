@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "davemoo/ppo-phoenix",
+  "slug": "davemoo-ppo-phoenix",
+  "author": "davemoo",
+  "url": "https://huggingface.co/davemoo/ppo-phoenix",
+  "created_at": "2026-09-23T20:45:27.000Z",
+  "updated_at": "2026-09-23T20:45:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "reinforcement-learning",
+    "atari",
+    "phoenix",
+    "ppo",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1223129,
+  "parameters_human": "1.2M",
+  "storage_bytes": 6051573,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PhoenixOS/examples/ppo/model at v0 · SJTU-IPADS/PhoenixOS",
+      "url": "https://github.com/SJTU-IPADS/PhoenixOS/tree/v0/examples/ppo/model",
+      "snippet": "Fast OS-level support for GPU checkpoint and restore - PhoenixOS/examples/ppo/model at v0 · SJTU-IPADS/PhoenixOS"
+    },
+    {
+      "title": "Proximal Policy Optimization — Spinning Up documentation",
+      "url": "https://spinningup.openai.com/en/latest/algorithms/ppo.html",
+      "snippet": "Pseudocode ¶ Documentation ¶ You Should Know In what follows, we give documentation for the PyTorch and Tensorflow implementations of PPO in Spinning Up. They have nearly identical function calls and docstrings, except for details relating to model construction. However, we include both full docstrings for completeness."
+    },
+    {
+      "title": "Proximal Policy Optimization (PPO) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/a-brief-introduction-to-proximal-policy-optimization/",
+      "snippet": "Proximal Policy Optimization (PPO) is a policy gradient reinforcement learning algorithm that learns an optimal policy by directly updating the agent&#x27;s action-selection strategy while maintaining stable learning. Unlike traditional policy gradient methods that can make overly large policy updates, PPO introduces a clipping mechanism that limits how much the policy can change during each update ..."
+    },
+    {
+      "title": "Proximal Policy Optimization | OpenAI",
+      "url": "https://openai.com/index/openai-baselines-ppo/",
+      "snippet": "We&#x27;re releasing a new class of reinforcement learning algorithms, Proximal Policy Optimization (PPO), which perform comparably or better than state-of-the-art approaches while being much simpler to implement and tune. PPO has become the default reinforcement learning algorithm at OpenAI because of its ease of use and good performance."
+    },
+    {
+      "title": "Proximal Policy Optimization (PPO) - Hugging Face",
+      "url": "https://huggingface.co/blog/deep-rl-ppo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

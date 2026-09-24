@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jarvisemitra/master_automl_results",
+  "slug": "jarvisemitra-master_automl_results",
+  "author": "jarvisemitra",
+  "url": "https://huggingface.co/jarvisemitra/master_automl_results",
+  "created_at": "2026-09-23T21:32:48.000Z",
+  "updated_at": "2026-09-23T21:32:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "automl",
+    "machine-learning",
+    "classification",
+    "regression",
+    "medical",
+    "tabular",
+    "text",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mljar/mljar-supervised: Python package for AutoML on Tabular ...",
+      "url": "https://github.com/mljar/mljar-supervised",
+      "snippet": "There is automatic documentation for every ML experiment run with AutoML. The mljar-supervised creates markdown reports from AutoML training full of ML details, metrics, and charts. It can generate Mercury web apps from trained AutoML models, so the model can be shared as an interactive prediction app."
+    },
+    {
+      "title": "mljar-supervised/supervised/automl.py at master · mljar/mljar ... - GitHub",
+      "url": "https://github.com/mljar/mljar-supervised/blob/master/supervised/automl.py",
+      "snippet": "Python package for AutoML on Tabular Data with Feature Engineering, Hyper-Parameters Tuning, Explanations and Automatic Documentation - mljar/mljar-supervised"
+    },
+    {
+      "title": "Evaluate AutoML experiment results - Azure Machine Learning",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-understand-automated-ml?view=azureml-api-2",
+      "snippet": "Learn how to choose, view, and interpret metrics, charts, and Responsible AI insights for automated machine learning experiment results."
+    },
+    {
+      "title": "jarvisemitra (jangid) - Hugging Face",
+      "url": "https://huggingface.co/jarvisemitra/datasets",
+      "snippet": "published a model about 2 months ago Organizations"
+    },
+    {
+      "title": "MLJAR AutoML — Train Models, Understand the Results",
+      "url": "https://mljar.com/automl/",
+      "snippet": "MLJAR AutoML · Machine learning for tabular data Build better models. Understand every result. Ask the AI agent in MLJAR Studio to train a model, or start with a few lines of Python. AutoML compares models and prepares reports so you can inspect the results and decide what to use. Automated training, tuning, and model comparison Reports, explanations, and reusable experiments From trained ..."
+    }
+  ]
+}

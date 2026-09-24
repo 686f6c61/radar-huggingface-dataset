@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "LibreYOLO/LibreGTRl",
+  "slug": "libreyolo-libregtrl",
+  "author": "LibreYOLO",
+  "url": "https://huggingface.co/LibreYOLO/LibreGTRl",
+  "created_at": "2026-09-23T22:03:32.000Z",
+  "updated_at": "2026-09-23T22:03:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "libreyolo",
+  "languages": [],
+  "tags": [
+    "libreyolo",
+    "object-detection",
+    "gtr",
+    "pytorch",
+    "coco",
+    "dataset:detection-datasets/coco",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149466937,
+  "storage_human": "149 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - LibreYOLO/libreyolo: LibreYOLO is a MIT licensed open source ...",
+      "url": "https://github.com/LibreYOLO/libreyolo",
+      "snippet": "Optional extras The base install covers YOLOv9 and the other core detectors, training, and inference. Add an extra when you need a heavier family or an export backend. Comma-separate to combine, for example pip install \"libreyolo [rfdetr,onnx]\"."
+    },
+    {
+      "title": "LibreYOLO | The MIT-Licensed YOLO Library",
+      "url": "https://www.libreyolo.com/",
+      "snippet": "The MIT-licensed YOLO library for training, prediction and export. An alternative to Ultralytics with YOLO9, RF-DETR and a shared Python API."
+    },
+    {
+      "title": "Model Zoo | LibreYOLO",
+      "url": "https://www.libreyolo.com/models",
+      "snippet": "Pre-trained YOLO weights with MIT licensing. Browse available models for object detection."
+    },
+    {
+      "title": "Libre-YOLO (LibreYOLO) - Hugging Face",
+      "url": "https://huggingface.co/Libre-YOLO/models",
+      "snippet": "Org profile for LibreYOLO on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "libreyolo/libreyolo/models at release · LibreYOLO/libreyolo - GitHub",
+      "url": "https://github.com/LibreYOLO/libreyolo/tree/release/libreyolo/models",
+      "snippet": "LibreYOLO is a MIT licensed open source computer vision library - libreyolo/libreyolo/models at release · LibreYOLO/libreyolo"
+    }
+  ]
+}

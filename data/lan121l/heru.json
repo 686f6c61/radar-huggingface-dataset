@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "lan121l/heru",
+  "slug": "lan121l-heru",
+  "author": "lan121l",
+  "url": "https://huggingface.co/lan121l/heru",
+  "created_at": "2026-09-23T23:29:42.000Z",
+  "updated_at": "2026-09-23T23:29:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2497278784,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

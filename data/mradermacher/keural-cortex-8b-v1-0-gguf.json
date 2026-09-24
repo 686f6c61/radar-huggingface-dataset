@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Keural-Cortex-8B-v1.0-GGUF",
+  "slug": "mradermacher-keural-cortex-8b-v1-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Keural-Cortex-8B-v1.0-GGUF",
+  "created_at": "2026-09-23T23:11:45.000Z",
+  "updated_at": "2026-09-23T23:52:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "conversational",
+    "korean",
+    "english",
+    "function-calling",
+    "agent",
+    "en",
+    "ko",
+    "base_model:mkd-ai/Keural-Cortex-8B-v1.0",
+    "base_model:quantized:mkd-ai/Keural-Cortex-8B-v1.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 73425336064,
+  "storage_human": "73.4 GB",
+  "base_model": "mkd-ai/Keural-Cortex-8B-v1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "智学网统一登陆平台入口：http://www.zhixue.com/login.html",
+      "url": "https://zhidao.baidu.com/question/991925355584235219.html",
+      "snippet": "温屿17 2022-06-27 · TA获得超过1.4万个赞"
+    },
+    {
+      "title": "在sony的硬盘式摄像机的硬盘里面，AVF_INFO这个目录下，发现 …",
+      "url": "https://zhidao.baidu.com/question/226017377.html",
+      "snippet": "Feb 16, 2011 · 在sony的硬盘式摄像机的硬盘里面，AVF_INFO这个目录下，发现 AVIN0001.BNP,AVIN0001.INP,AVIN0001.INT这三 …"
+    },
+    {
+      "title": "子宫内为什么会有结节 子宫结节的5因素揭秘_有问必答_快速问医生",
+      "url": "https://www.120ask.com/zhishi/80308.html",
+      "snippet": "Nov 23, 2019 · 子宫内长有结节的女性朋友也会有很明显的症状出现，比如说小腹坠胀疼痛，月经量过多，阴道有不规则出血，白带增 …"
+    },
+    {
+      "title": "参苓白术丸在泄泻的前提下，兼有大便不通畅_有问必答_快速问医生",
+      "url": "https://www.120ask.com/question/47057168.htm",
+      "snippet": "Oct 19, 2013 · 参苓白术丸 是一个中成药，它具有益气健脾，渗湿止泻的作用，用于治疗脾虚的腹泻，如果是因为脾虚导致的肛门坠胀 …"
+    },
+    {
+      "title": "索尼数码摄像机文件如何导出 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/202185052.html",
+      "snippet": "索尼数码摄像机文件如何导出AVIN0001.BNP AVIN0001.INT AVIN0001.INP不是视频文件，以将摄像机里的视频导入电脑的步骤为 …"
+    }
+  ]
+}

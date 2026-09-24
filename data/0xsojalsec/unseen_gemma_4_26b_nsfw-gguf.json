@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/UNSEEN_Gemma_4_26B_NSFW-GGUF",
+  "slug": "0xsojalsec-unseen_gemma_4_26b_nsfw-gguf",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/UNSEEN_Gemma_4_26B_NSFW-GGUF",
+  "created_at": "2026-09-23T22:27:41.000Z",
+  "updated_at": "2026-09-23T22:27:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "uncensored",
+    "nsfw",
+    "abliteration",
+    "gemma",
+    "vision",
+    "llama.cpp",
+    "2bit",
+    "3bit",
+    "4bit",
+    "5bit",
+    "6bit",
+    "8bit",
+    "iq2_m",
+    "iq3_m",
+    "q5_k_m",
+    "q6_k",
+    "quantized",
+    "image-text-to-text",
+    "th",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 161303788144,
+  "storage_human": "161.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UNSEEN Gemma 4 Removes AI Refusals With a Single Math Trick - AlphaSignal",
+      "url": "https://alphasignal.ai/news/unseen-gemma-4-removes-ai-refusals-with-a-single-math-trick",
+      "snippet": "UNSEEN_Gemma_4_26B_NSFW-GGUF is a community-released model quietly climbing Hugging Face download charts, with roughly 17,000 pulls already logged. Built on Gemma 4&#x27;s 26B multimodal architecture, it has been abliterated, quantized to GGUF, and packaged for local inference through llama.cpp, Ollama, LM Studio, and vLLM."
+    },
+    {
+      "title": "Quantized Models for Jommarn/UNSEEN_Gemma_4_26B_NSFW - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Jommarn/UNSEEN_Gemma_4_26B_NSFW",
+      "snippet": "Model Tree Jommarn/UNSEEN_Gemma_4_26B_NSFW Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "Gemma 4 26B uncensored weights quantized to GGUF for local inference",
+      "url": "https://uncensoredhub.ai/news/2026-06-05-gemma-4-26b-uncensored-weights-quantized-to-gguf-for-local-inference",
+      "snippet": "JMingo published quantized GGUF weights for a 26-billion-parameter Gemma 4 variant stripped of safety tuning, based on llmfan46&#x27;s uncensored fine-tune."
+    },
+    {
+      "title": "TrevorJS/gemma-4-26B-A4B-it-uncensored · Hugging Face",
+      "url": "https://huggingface.co/TrevorJS/gemma-4-26B-A4B-it-uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "fbg0204/Corvid-Raven-124B-gguf",
+  "slug": "fbg0204-corvid-raven-124b-gguf",
+  "author": "fbg0204",
+  "url": "https://huggingface.co/fbg0204/Corvid-Raven-124B-gguf",
+  "created_at": "2026-09-23T21:48:22.000Z",
+  "updated_at": "2026-09-24T01:56:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "moe",
+    "llama.cpp",
+    "local-inference",
+    "consumer-gpu",
+    "base_model:inclusionAI/Ling-3.0-flash",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 699686,
+  "storage_human": "699686 B",
+  "base_model": "inclusionAI/Ling-3.0-flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Hugging Bay | Find And Download Open AI",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "The open model harbor Open models. Your own copy. Keep a copy. Keep your independence. Find public AI models, check the license, and take available files with you. No account needed to browse."
+    },
+    {
+      "title": "Qwen Image 2512 GGUF: Complete Guide to Running AI Image Generation on ...",
+      "url": "https://dev.to/gary_yan_86eb77d35e0070f5/qwen-image-2512-gguf-complete-guide-to-running-ai-image-generation-on-consumer-hardware-1l6c",
+      "snippet": "Qwen Image 2512 GGUF represents a significant milestone in democratizing AI image generation. By making a professional-grade model accessible on consumer hardware, it removes the barrier between hobbyists and serious creators."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}
