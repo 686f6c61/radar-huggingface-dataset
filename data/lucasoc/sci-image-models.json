@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "lucasoc/sci-image-models",
+  "slug": "lucasoc-sci-image-models",
+  "author": "lucasoc",
+  "url": "https://huggingface.co/lucasoc/sci-image-models",
+  "created_at": "2026-09-24T14:56:37.000Z",
+  "updated_at": "2026-09-24T14:58:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "vision-language",
+    "image-to-text",
+    "table-extraction",
+    "scientific-figures",
+    "markdown-table",
+    "qwen2.5-vl",
+    "lora",
+    "icdar-metric-loss",
+    "en",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26193636,
+  "storage_human": "26 MB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "[2412.02368] ScImage: How Good Are Multimodal Large Language Models at ...",
+      "url": "https://arxiv.org/abs/2412.02368",
+      "snippet": "Multimodal large language models (LLMs) have demonstrated impressive capabilities in generating high-quality images from textual instructions. However, their performance in generating scientific images--a critical application for accelerating scientific progress--remains underexplored. In this work, we address this gap by introducing ScImage, a benchmark designed to evaluate the multimodal ..."
+    },
+    {
+      "title": "Ai_image_enhancment-using-pretrained-model_SCI- - GitHub",
+      "url": "https://github.com/vivekvijay107/Ai_image_enhancment-using-pretrained-model_SCI-",
+      "snippet": "The app loads the SCI pretrained model — designed specifically for enhancing images with challenging lighting and quality conditions. When you upload an image, it converts the picture into a format the model understands."
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    },
+    {
+      "title": "Generative AI Platform | AI APIs for Image, Video, Audio & LLMs - ModelsLab",
+      "url": "https://modelslab.com/",
+      "snippet": "Build with 1000+ AI models using one simple API with ModelsLab. Generate images, video, audio, and more fast, scalable, and cost-effective for developers."
+    }
+  ]
+}

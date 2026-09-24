@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-report-g10-training-curves-da106da75473-5edc6b5140e7",
+  "slug": "davidwdw-fa-report-g10-training-curves-da106da75473-5edc6b5140e7",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-report-g10-training-curves-da106da75473-5edc6b5140e7",
+  "created_at": "2026-09-24T19:15:32.000Z",
+  "updated_at": "2026-09-24T19:15:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1357960,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

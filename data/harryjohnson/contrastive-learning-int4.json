@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "HarryJohnson/contrastive-learning-int4",
+  "slug": "harryjohnson-contrastive-learning-int4",
+  "author": "HarryJohnson",
+  "url": "https://huggingface.co/HarryJohnson/contrastive-learning-int4",
+  "created_at": "2026-09-24T02:15:46.000Z",
+  "updated_at": "2026-09-24T02:15:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

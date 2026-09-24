@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen3p6-35b-a3b-pin-2p02bit-r46",
+  "slug": "minjaechoi-qwen3p6-35b-a3b-pin-2p02bit-r46",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-pin-2p02bit-r46",
+  "created_at": "2026-09-24T03:13:35.000Z",
+  "updated_at": "2026-09-24T03:14:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916584750,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PornHub.com :: Video X Gratuite - Site Porno Gratuit",
+      "url": "https://fr.pornhub.com/categories",
+      "snippet": "Tu viens de trouver le paradis de la pornographie. Tu ne rêves pas, un site porno gratuit, avec vidéo x gratuite. Profites des trésors …Read more"
+    },
+    {
+      "title": "Porno – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=porno",
+      "snippet": "Regarde les vidéos porno de Porno gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …Read more"
+    },
+    {
+      "title": "PornHub.com :: Film Porno Xxx - Film Porno Amateur, Film Adulte …",
+      "url": "https://fr.pornhub.com/video?o=mv",
+      "snippet": "Sur PornHub tu peux télécharger des films porno xxx gratuitement. Les nanas les plus chaudes sont dans les films porno amateur de …Read more"
+    },
+    {
+      "title": "Vidéos Porno Français | Pornhub",
+      "url": "https://fr.pornhub.com/video/search?search=french",
+      "snippet": "Regarde les vidéos porno de French gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …Read more"
+    },
+    {
+      "title": "Porno gratuit recommandé: vidéos de sexe hardcore | Pornhub",
+      "url": "https://fr.pornhub.com/recommended",
+      "snippet": "Avoir quelqu'un qui vous recommande du porno gratuit, c'est comme avoir un conservateur pour votre collection de XXX. Profitez …Read more"
+    }
+  ]
+}

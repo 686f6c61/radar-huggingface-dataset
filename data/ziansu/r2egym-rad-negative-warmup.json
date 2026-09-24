@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ziansu/r2egym-rad-negative-warmup",
+  "slug": "ziansu-r2egym-rad-negative-warmup",
+  "author": "ziansu",
+  "url": "https://huggingface.co/ziansu/r2egym-rad-negative-warmup",
+  "created_at": "2026-09-24T02:45:36.000Z",
+  "updated_at": "2026-09-24T05:06:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "reinforcement-learning",
+    "swe-bench",
+    "r2e-gym",
+    "software-engineering-agent",
+    "training-trajectory",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111850660942,
+  "storage_human": "111.9 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ziansu/r2egym-rad-negative-warmup · Hugging Face",
+      "url": "https://huggingface.co/ziansu/r2egym-rad-negative-warmup",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - R2E-Gym/R2E-Gym: [COLM 2025] Official repository for R2E-Gym ...",
+      "url": "https://github.com/R2E-Gym/R2E-Gym",
+      "snippet": "[COLM 2025] Official repository for R2E-Gym: Procedural Environment Generation and Hybrid Verifiers for Scaling Open-Weights SWE Agents - R2E-Gym/R2E-Gym"
+    },
+    {
+      "title": "R2E-Gym (R2E-Gym) - Hugging Face",
+      "url": "https://huggingface.co/R2E-Gym/datasets",
+      "snippet": "Org profile for R2E-Gym on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - agentica-project/R2E-Gym",
+      "url": "https://github.com/agentica-project/R2E-Gym",
+      "snippet": "We present R2E-Gym, the largest procedurally curated environment for training real-world SWE-Agents. We show that R2E-Gym enables more scalable train and test-time scaling, achieving 51% on the SWE-Bench Verified benchmark, reflecting a new state-of-the-art for open-weight SWE-Agents and for first time being competitive with proprietary models such as o1 and sonnet-3.5-v2 with tools. R2E-Gym ..."
+    },
+    {
+      "title": "NeurIPS R2E-Gym: Procedural Environments and Hybrid Verifiers for ...",
+      "url": "https://neurips.cc/virtual/2025/131676",
+      "snippet": "Improving open-source models on real-world SWE tasks (solving GITHUB issues) faces two key challenges: 1) scalable curation of execution environments to train these models, and, 2) optimal scaling of test-time compute. We introduce R2EGym, the largest procedurally-curated executable gym environment for training real-world SWE-agents, consisting of more than 8.1K tasks. R2EGym is powered by two ..."
+    }
+  ]
+}

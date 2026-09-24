@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "PrunaAI/Pruna-Qwen-Image-2.1",
+  "slug": "prunaai-pruna-qwen-image-2-1",
+  "author": "PrunaAI",
+  "url": "https://huggingface.co/PrunaAI/Pruna-Qwen-Image-2.1",
+  "created_at": "2026-09-23T07:30:42.000Z",
+  "updated_at": "2026-09-24T15:59:35.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "qwen",
+    "image-generation",
+    "image-editing",
+    "rgba",
+    "lora",
+    "distilled",
+    "few-step",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2404660369,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pruna AI - Performance Models",
+      "url": "https://www.pruna.ai/",
+      "snippet": "Try Pruna's fastest AI image and video models in the browser — generate, edit, upscale, animate, and more in seconds.Read more"
+    },
+    {
+      "title": "PrunaAI (Pruna AI) - Hugging Face",
+      "url": "https://huggingface.co/PrunaAI",
+      "snippet": "Train LoRAs at https://replicate.com/prunaai/p-image-edit-trainer. Use LoRAs here: https://replicate.com/prunaai/p-image-edit-lora"
+    },
+    {
+      "title": "GitHub - PrunaAI/pruna: Pruna is a model optimization framework built ...",
+      "url": "https://github.com/PrunaAI/pruna",
+      "snippet": "Pruna is a model optimization framework built for developers, enabling you to deliver faster, more efficient models with minimal …"
+    },
+    {
+      "title": "P-Video Model - Pruna AI",
+      "url": "https://www.pruna.ai/p-video",
+      "snippet": "Fast. Affordable. Beautiful. State-of-the-art AI video models in less than ten seconds."
+    },
+    {
+      "title": "Pruna AI · GitHub",
+      "url": "https://github.com/PrunaAI",
+      "snippet": "Pruna AI 225 followers https://www.pruna.ai/ @PrunaAI https://www.linkedin.com/company/93832878/admin/?feedType=following …"
+    }
+  ]
+}

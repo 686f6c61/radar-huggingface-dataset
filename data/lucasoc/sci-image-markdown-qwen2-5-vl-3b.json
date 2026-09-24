@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "lucasoc/sci-image-markdown-qwen2.5-vl-3b",
+  "slug": "lucasoc-sci-image-markdown-qwen2-5-vl-3b",
+  "author": "lucasoc",
+  "url": "https://huggingface.co/lucasoc/sci-image-markdown-qwen2.5-vl-3b",
+  "created_at": "2026-09-24T14:57:35.000Z",
+  "updated_at": "2026-09-24T14:57:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "vision-language",
+    "image-to-text",
+    "table-extraction",
+    "scientific-figures",
+    "markdown-table",
+    "qwen2.5-vl",
+    "lora",
+    "icdar-metric-loss",
+    "en",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26193636,
+  "storage_human": "26 MB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Pornhub provides you with unlimited free porn videos with the hottest pornstars. Enjoy the largest amateur porn community on the …"
+    },
+    {
+      "title": "Free XXX Porn Videos: Hardcore Adult Sex Movies, Porno Hub Tube",
+      "url": "https://www.pornhub.com/video",
+      "snippet": "Watch porn sex movies free. Hardcore XXX sex clips & adult porn videos available to stream or download in HD. Hot porn and sexy …"
+    },
+    {
+      "title": "Pornhub - Free HD Porn Videos & Online Sex Movies",
+      "url": "https://en-pornhub.com/",
+      "snippet": "Hot amateur teen sex – girl with big tits fucked hard 0 HD 19:01 The landlord caught a teen student shooting porn 0 HD 12:51 Step …"
+    },
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "278K Big Tits College Girls Compilation de baise sale 2 31:21 Porn Pros 8.2M Lucky nerd baise Nympho pornstar Adriana Chechik 9:17"
+    },
+    {
+      "title": "Pornhub Videos & Streaming Content | Pornhub",
+      "url": "https://en-pornhub.com/sites/pornhub/",
+      "snippet": "Mi madrastra me muestra su culo como le queda el short jean 0 HD 26:39 Desi couple porn indian husband sharing his wife with …"
+    }
+  ]
+}

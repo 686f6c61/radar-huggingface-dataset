@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "grkozlowski/contrastive",
+  "slug": "grkozlowski-contrastive",
+  "author": "grkozlowski",
+  "url": "https://huggingface.co/grkozlowski/contrastive",
+  "created_at": "2026-09-24T12:39:39.000Z",
+  "updated_at": "2026-09-24T12:39:44.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

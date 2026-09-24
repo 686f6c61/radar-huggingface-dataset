@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "flavianv/qwen3-4b-musical-instruments-combined-ranker-head-20260924-v1",
+  "slug": "flavianv-qwen3-4b-musical-instruments-combined-ranker-head-20260924-v1",
+  "author": "flavianv",
+  "url": "https://huggingface.co/flavianv/qwen3-4b-musical-instruments-combined-ranker-head-20260924-v1",
+  "created_at": "2026-09-24T12:49:30.000Z",
+  "updated_at": "2026-09-24T12:49:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "text-classification",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11434453,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forums - GTAW France",
+      "url": "https://forum-fr.gta.world/",
+      "snippet": "Cette partie est destinée à être progressivement déplacées vers les guides."
+    },
+    {
+      "title": "Archives - GTAW France",
+      "url": "https://forum-fr.gta.world/forum/44-archives/",
+      "snippet": "Par streetgeneral., le 19 décembre 2024 Grape Street WVG (et 1 en plus)"
+    },
+    {
+      "title": "Ouverture de l'UCP : https://ucp-fr.gta.world/ - GTAW France",
+      "url": "https://forum-fr.gta.world/topic/383-ouverture-de-lucp-httpsucp-frgtaworld/",
+      "snippet": "Feb 19, 2021 · L'UCP est maintenant ouvert sur https://ucp-fr.gta.world/ Ce dernier vous donnera la possibilité de créer votre compte …"
+    },
+    {
+      "title": "Guides - Page 3 - GTAW France",
+      "url": "https://forum-fr.gta.world/forum/26-guides/page/3/",
+      "snippet": "Feb 21, 2021 · Sous-forums Archives 86 messages [GUIDES] Recueil de guides et ressources pour RP un personnage chrétien …"
+    },
+    {
+      "title": "Suggestions - GTAW France",
+      "url": "https://forum-fr.gta.world/forum/30-suggestions/",
+      "snippet": "Sous-forums Suggestions du serveur Suggestions dédiées au serveur de jeu (Script uniquement)"
+    }
+  ]
+}

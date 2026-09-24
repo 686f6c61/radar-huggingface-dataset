@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Soulitude/Hush-Nano",
+  "slug": "soulitude-hush-nano",
+  "author": "Soulitude",
+  "url": "https://huggingface.co/Soulitude/Hush-Nano",
+  "created_at": "2026-09-24T03:19:28.000Z",
+  "updated_at": "2026-09-24T11:54:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hush_nano",
+    "text-generation",
+    "causal-lm",
+    "pretrained",
+    "language-model",
+    "SLM",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 22752128,
+  "parameters_human": "22.8M",
+  "storage_bytes": 92382730,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=0&sort=modified",
+      "snippet": "dheeren-tejani/unet-model-checkpoints. Updated in about 11 hours · Miiche ... unitzero-ai/wheels. Updated in about 11 hours · Soulitude/Hush-Nano. Text ..."
+    },
+    {
+      "title": "AI Generated Lightsurrealism Photos and Artwork",
+      "url": "https://deepdreamgenerator.com/tags/lightsurrealism",
+      "snippet": "... hush of understanding. Model: Size: 1792 X 1008 (1.81 MP). Used settings: Prompt: She sits in twilight, her dress unraveling into drifting light, a white dove ..."
+    },
+    {
+      "title": "dark as night, clear as day. suit by CHRIS NICK Chris Nick Delos ...",
+      "url": "https://www.facebook.com/itslaaguinaldo/posts/dark-as-night-clear-as-day-suit-by-chris-nick-chris-nick-delos-reyesgrooming-myc/1640986194059912/",
+      "snippet": "13.09.2026 ... ... Nano Banana / Gemini / Prompt-this.com. 22w · Public · Sa kadiliman ... AI | ADRIAN DOMINGO\" bottom right corner."
+    },
+    {
+      "title": "The artistic double-exposure prompts the cinematic and professional ...",
+      "url": "https://medium.com/@showebcorporation/the-artistic-double-exposure-prompts-the-cinematic-and-professional-styles-master-guide-for-c3eca307576b",
+      "snippet": "03.01.2026 ... Ethical Guidelines for AI-Generated Imagery As we harness the power of Google Gemini to push creative boundaries, it is essential to ground ..."
+    },
+    {
+      "title": "\"I don't follow any specific doctrine but only my ... - C-Heads Magazine",
+      "url": "https://www.c-heads.com/2015/10/08/i-dont-follow-any-specific-doctrine-but-only-my-own-sense-of-an-aesthetic-image-a-talk-with-michael-magin/",
+      "snippet": "08.10.2015 ... Nano Banana 2 AI Editor Built on Google AI Models. Ai Photo Enhancer ... The way Magin talks about loneliness inside a landscape makes me think of ..."
+    }
+  ]
+}

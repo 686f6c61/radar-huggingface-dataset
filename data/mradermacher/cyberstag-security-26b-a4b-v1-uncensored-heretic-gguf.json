@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "mradermacher/CyberStag-Security-26B-A4B-V1-Uncensored-Heretic-GGUF",
+  "slug": "mradermacher-cyberstag-security-26b-a4b-v1-uncensored-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/CyberStag-Security-26B-A4B-V1-Uncensored-Heretic-GGUF",
+  "created_at": "2026-09-24T19:17:28.000Z",
+  "updated_at": "2026-09-24T19:40:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 26047554816,
+  "storage_human": "26.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

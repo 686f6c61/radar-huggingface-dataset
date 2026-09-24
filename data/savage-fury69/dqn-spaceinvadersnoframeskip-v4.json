@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Savage-Fury69/dqn-SpaceInvadersNoFrameskip-v4",
+  "slug": "savage-fury69-dqn-spaceinvadersnoframeskip-v4",
+  "author": "Savage-Fury69",
+  "url": "https://huggingface.co/Savage-Fury69/dqn-SpaceInvadersNoFrameskip-v4",
+  "created_at": "2026-09-24T16:07:05.000Z",
+  "updated_at": "2026-09-24T16:07:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54450816,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAVAGE X FENTY: By Rihanna",
+      "url": "https://www.savagex.fr/",
+      "snippet": "Bras, panties, lingerie, loungewear & more for every mood. Join 600,000+ Xtra VIPs and celebrate confidence, inclusivity & all things …Read more"
+    },
+    {
+      "title": "Savage Arms | Firearms, Rifles, Shotguns, Handguns",
+      "url": "https://savagearms.com/",
+      "snippet": "Savage Arms has been building firearms since 1894. Our rifles, shotguns and handguns are accurate, dependable and loaded with …Read more"
+    },
+    {
+      "title": "SAVAGE X FENTY: By Rihanna",
+      "url": "https://www.savagex.com/",
+      "snippet": "Bras, panties, lingerie, loungewear & more for every mood. Join 600,000+ Xtra VIPs and celebrate confidence, inclusivity & all things …Read more"
+    },
+    {
+      "title": "SAVAGE X",
+      "url": "https://www.savagex.fr/dmg/182DF0",
+      "snippet": "Découvrez des récompenses exclusives en rejoignant le programme de fidélité Savage X et profitez d'économies sur vos achats, …Read more"
+    },
+    {
+      "title": "Savage - YouTube",
+      "url": "https://www.youtube.com/channel/UCFAU_QA8jlp-L_djLdfSz_A",
+      "snippet": "Since 2005, Savage has started doing live gigs and concerts again, USA, Russia, Italy, Spain, Poland. In early 2025, Savage started …Read more"
+    }
+  ]
+}

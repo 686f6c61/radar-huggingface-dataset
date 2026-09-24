@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "ericmey/five-lane-router-modernbert-large",
+  "slug": "ericmey-five-lane-router-modernbert-large",
+  "author": "ericmey",
+  "url": "https://huggingface.co/ericmey/five-lane-router-modernbert-large",
+  "created_at": "2026-09-24T16:10:35.000Z",
+  "updated_at": "2026-09-24T16:12:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "router",
+    "text-classification",
+    "edge",
+    "en",
+    "dataset:ericmey/five-lane-router",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:finetune:answerdotai/ModernBERT-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395836421,
+  "parameters_human": "395.8M",
+  "storage_bytes": 1583363940,
+  "storage_human": "1.6 GB",
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

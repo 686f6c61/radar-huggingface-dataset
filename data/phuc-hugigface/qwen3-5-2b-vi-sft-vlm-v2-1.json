@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Phuc-HugigFace/Qwen3.5-2B-Vi-SFT-VLM-v2.1",
+  "slug": "phuc-hugigface-qwen3-5-2b-vi-sft-vlm-v2-1",
+  "author": "Phuc-HugigFace",
+  "url": "https://huggingface.co/Phuc-HugigFace/Qwen3.5-2B-Vi-SFT-VLM-v2.1",
+  "created_at": "2026-09-24T03:07:18.000Z",
+  "updated_at": "2026-09-24T03:14:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4446548189,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified&search=lora",
+      "snippet": "Phuc-HugigFace/Qwen3.5-2B-vi-sft-v2_1-lora. Updated in about 20 hours ... RunningHubAI/rh-v2-lora. Updated in about 20 hours. Shinku/lora-anima-trained."
+    },
+    {
+      "title": "phucngodev/Qwen3.6-27B-MTP - Hugging Face",
+      "url": "https://huggingface.co/phucngodev/Qwen3.6-27B-MTP",
+      "snippet": "A 4-bit QLoRA SFT Multi-Token Prediction tune of Qwen3.6-27B fine-tuned for no-thinking agentic coding through a PI-style harness. Packaged as llama.cpp- ..."
+    },
+    {
+      "title": "Releases · hiyouga/LlamaFactory - GitHub",
+      "url": "https://github.com/hiyouga/llamafactory/releases",
+      "snippet": "5/Qwen3.6/Gemma4 models and compatibility with Transformers v5. What's Changed. [misc] set dev version by @hiyouga in #9703; fix ..."
+    },
+    {
+      "title": "Qwen3.8-27b awq-int4 model with improved performance - Facebook",
+      "url": "https://www.facebook.com/groups/runlocalai/posts/1458862629374780/",
+      "snippet": "15.08.2026 ... Someone might quantize a 2 bit version, but on an already 27B base, it might not be great. Check hugging face and see if anyone has already done ..."
+    },
+    {
+      "title": "Contents - arXiv",
+      "url": "https://arxiv.org/html/2507.22448v1",
+      "snippet": "30.07.2025 ... Unlike previous Falcon models, which were built solely on either Transformer or Mamba architectures, the Falcon-H1 series is based on a parallel ..."
+    }
+  ]
+}

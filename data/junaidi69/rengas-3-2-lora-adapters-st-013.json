@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Junaidi69/rengas-3.2-lora-adapters-st-013",
+  "slug": "junaidi69-rengas-3-2-lora-adapters-st-013",
+  "author": "Junaidi69",
+  "url": "https://huggingface.co/Junaidi69/rengas-3.2-lora-adapters-st-013",
+  "created_at": "2026-09-24T02:50:26.000Z",
+  "updated_at": "2026-09-24T02:50:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llama3.2",
+    "base_model:unsloth/Llama-3.2-1B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.2-1B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39789785,
+  "storage_human": "40 MB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "julia (@ssjulia.__) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ssjulia.__/",
+      "snippet": "See photos and videos from friends on Instagram, and discover other accounts you'll love."
+    },
+    {
+      "title": "Files in Julia folder - filedot.to",
+      "url": "https://filedot.to/folder/463c2bee",
+      "snippet": "Files Download all files in this folder with one click"
+    },
+    {
+      "title": "lilu and julia: 420 videos found on Yandex",
+      "url": "https://desktop.yandex.com/video/search?text=lilu+and+julia",
+      "snippet": "Mar 15, 2015 · Were you searching for \"liloand julia\"? Search results. 3:35. ˗ˏˋ Girl Friday • Julia Ling Kelleher ˎˊ˗Duration 3 minutes …"
+    },
+    {
+      "title": "Julia Silvério (@ssjulialia) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ssjulialia/",
+      "snippet": "5,673 Followers, 3,785 Following, 1,227 Posts - See Instagram photos and videos from Julia Silvério (@ssjulialia)"
+    },
+    {
+      "title": "lilu and julia — Yandex: found 21 thousand results",
+      "url": "https://desktop.yandex.com/search/?text=lilu+and+julia&p=0",
+      "snippet": "Feb 10, 2025 · Lilu julia baby oil massage 1.5M publicações. Descubra vídeos relacionados a Lilu julia baby oil massage no Kwai. …"
+    }
+  ]
+}

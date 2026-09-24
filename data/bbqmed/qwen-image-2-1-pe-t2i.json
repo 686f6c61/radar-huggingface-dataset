@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "bbqmed/Qwen-Image-2.1-PE-T2I",
+  "slug": "bbqmed-qwen-image-2-1-pe-t2i",
+  "author": "bbqmed",
+  "url": "https://huggingface.co/bbqmed/Qwen-Image-2.1-PE-T2I",
+  "created_at": "2026-09-24T17:32:29.000Z",
+  "updated_at": "2026-09-24T17:32:29.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "qwen",
+    "prompt-rewriting",
+    "text-to-image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710511,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

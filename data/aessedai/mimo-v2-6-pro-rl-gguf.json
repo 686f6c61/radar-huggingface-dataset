@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "AesSedai/MiMo-V2.6-Pro-RL-GGUF",
+  "slug": "aessedai-mimo-v2-6-pro-rl-gguf",
+  "author": "AesSedai",
+  "url": "https://huggingface.co/AesSedai/MiMo-V2.6-Pro-RL-GGUF",
+  "created_at": "2026-09-24T02:48:27.000Z",
+  "updated_at": "2026-09-24T06:20:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Pro-RL",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Pro-RL",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 6,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 1023182841600,
+  "parameters_human": "1023.18B",
+  "storage_bytes": 1404147374734,
+  "storage_human": "1404.1 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "BnhHo/Qwen-Image-2.1-Uncensored-GGUF",
+  "slug": "bnhho-qwen-image-2-1-uncensored-gguf",
+  "author": "BnhHo",
+  "url": "https://huggingface.co/BnhHo/Qwen-Image-2.1-Uncensored-GGUF",
+  "created_at": "2026-09-24T03:00:56.000Z",
+  "updated_at": "2026-09-24T03:00:57.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "image-generation",
+    "comfyui",
+    "comfyui-gguf",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 83610330636,
+  "storage_human": "83.6 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

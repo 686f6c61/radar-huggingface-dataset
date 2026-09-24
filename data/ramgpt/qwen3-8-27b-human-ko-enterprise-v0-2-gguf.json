@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ramgpt/Qwen3.8-27B-Human-KO-Enterprise-v0.2-GGUF",
+  "slug": "ramgpt-qwen3-8-27b-human-ko-enterprise-v0-2-gguf",
+  "author": "ramgpt",
+  "url": "https://huggingface.co/ramgpt/Qwen3.8-27B-Human-KO-Enterprise-v0.2-GGUF",
+  "created_at": "2026-09-24T19:07:54.000Z",
+  "updated_at": "2026-09-24T19:17:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "base_model:ThakiCloud/Qwen3.8-27B-Human-KO-Enterprise-v0.2",
+    "base_model:quantized:ThakiCloud/Qwen3.8-27B-Human-KO-Enterprise-v0.2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 16810715168,
+  "storage_human": "16.8 GB",
+  "base_model": "ThakiCloud/Qwen3.8-27B-Human-KO-Enterprise-v0.2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BBC Sport - Scores, Fixtures, News - Live Sport",
+      "url": "https://www.bbc.com/sport",
+      "snippet": "Sports news and live sports coverage including scores, results, video, audio and analysis on Football, F1, Cricket, Rugby Union and …"
+    },
+    {
+      "title": "Football - latest news today, results & video highlights - BBC",
+      "url": "https://www.bbc.com/sport/football",
+      "snippet": "Football news, scores, results, fixtures and videos from the Premier League, Championship, European and World Football from the …"
+    },
+    {
+      "title": "Football gossip - all of the latest transfer stories and ... - BBC",
+      "url": "https://www.bbc.com/sport/football/gossip",
+      "snippet": "The home of Football transfer gossip on BBC Sport online."
+    },
+    {
+      "title": "BBC News - Breaking news, video and the latest top stories from the …",
+      "url": "https://www.bbc.com/news",
+      "snippet": "BBC News provides trusted World, U.S. and U.K. news as well as local and regional perspectives. Also entertainment, climate, …"
+    },
+    {
+      "title": "Premier League Football - Latest news, results, stats & transfers - BBC",
+      "url": "https://www.bbc.com/sport/football/premier-league",
+      "snippet": "The home of Premier League on BBC Sport online. Includes the latest news stories, results, fixtures, video and audio."
+    }
+  ]
+}

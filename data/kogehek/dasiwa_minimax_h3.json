@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kogehek/DaSiWa_MiniMax_H3",
+  "slug": "kogehek-dasiwa_minimax_h3",
+  "author": "kogehek",
+  "url": "https://huggingface.co/kogehek/DaSiWa_MiniMax_H3",
+  "created_at": "2026-09-24T14:42:28.000Z",
+  "updated_at": "2026-09-24T14:42:28.000Z",
+  "license": "minimax-h3",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Canale TV gratis online, live și HD | RDSLive.net",
+      "url": "https://rdslive.net/canale-tv-gratis/",
+      "snippet": "Toate canalele TV românești live online, gratis și în HD pe RDSLive.net. Caută sau filtrează pe categorii și urmărește instant orice …"
+    },
+    {
+      "title": "Canale TV online - TVGratis.ro",
+      "url": "https://tvgratis.ro/canale",
+      "snippet": "Lista completă de canale TV online din România. Deschide canalele către surse externe publice și consultă programul TV."
+    },
+    {
+      "title": "TV Online – Urmărește Canalele TV Românești Live, Gratuit",
+      "url": "https://stirinews.ro/tv-online/",
+      "snippet": "Această pagină îți oferă acces rapid la o selecție de canale TV online live din România, disponibile gratuit direct din browser. Poți …"
+    },
+    {
+      "title": "Program TV azi și canale TV online din România | TVGratis.ro",
+      "url": "https://tvgratis.ro/",
+      "snippet": "Program TV azi și canale TV online din România. Vezi rapid ce e acum la TV, filme, sport și știri. TVGratis.ro oferă linkuri către surse …"
+    },
+    {
+      "title": "Free Romania TV Channels — Watch Live Online · FreeTV",
+      "url": "https://freetv.studio/country/RO",
+      "snippet": "Watch 91 free Romania TV channels streaming live online — news, sports, movies and more. No account, just press play."
+    }
+  ]
+}

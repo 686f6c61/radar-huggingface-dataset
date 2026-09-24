@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "EugenTK10/InterSpec-demo-GGUF",
+  "slug": "eugentk10-interspec-demo-gguf",
+  "author": "EugenTK10",
+  "url": "https://huggingface.co/EugenTK10/InterSpec-demo-GGUF",
+  "created_at": "2026-09-24T14:36:01.000Z",
+  "updated_at": "2026-09-24T14:50:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "speculative-decoding",
+    "pythia",
+    "summarization",
+    "xsum",
+    "text-generation",
+    "en",
+    "base_model:EugenTK10/InterSpec",
+    "base_model:quantized:EugenTK10/InterSpec",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1414647808,
+  "parameters_human": "1.41B",
+  "storage_bytes": 3083580384,
+  "storage_human": "3.1 GB",
+  "base_model": "EugenTK10/InterSpec",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "List of philosophies - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_philosophies",
+      "snippet": "The following is a list of philosophies, schools of thought and philosophical movements."
+    },
+    {
+      "title": "10 schools of philosophy and why you should know them",
+      "url": "https://bigthink.com/thinking/10-schools-of-philosophy-and-why-you-should-know-them/",
+      "snippet": "Dec 10, 2017 · There are many famous schools of thought that you have probably heard of, but did you hear the truth or just get a …"
+    },
+    {
+      "title": "The 10 Main Types of Philosophy, Explained Without the Jargon",
+      "url": "https://daily-philosophy-app.com/learn/types-of-philosophy/",
+      "snippet": "What are the main types of philosophy? The main types of philosophy include Stoicism, Buddhism, Taoism, Confucianism, Virtue …"
+    },
+    {
+      "title": "Branches of Philosophy: Types of Philosophy & Their Meanings",
+      "url": "https://leverageedu.com/blog/branches-of-philosophy/",
+      "snippet": "Nov 22, 2025 · Over time, philosophy has developed into several distinct branches, each offering a different perspective on reality, …"
+    },
+    {
+      "title": "Types of Philosophy - Pondering Philosopher",
+      "url": "https://www.ponderingphilosopher.com/types-of-philosophy/",
+      "snippet": "Several major-minor branches of philosophy can be categorized according to their specific fields of study. A few of the most common …"
+    }
+  ]
+}

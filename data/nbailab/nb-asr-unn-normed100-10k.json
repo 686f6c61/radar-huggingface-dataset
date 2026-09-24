@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "NbAiLab/nb-asr-unn-normed100-10k",
+  "slug": "nbailab-nb-asr-unn-normed100-10k",
+  "author": "NbAiLab",
+  "url": "https://huggingface.co/NbAiLab/nb-asr-unn-normed100-10k",
+  "created_at": "2026-09-24T15:00:32.000Z",
+  "updated_at": "2026-09-24T15:01:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "no"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "nb-asr",
+    "normed",
+    "synthetic",
+    "no",
+    "endpoints_compatible",
+    "region:eu"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 782426112,
+  "parameters_human": "782.4M",
+  "storage_bytes": 1576362175,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NbAiLab (Nasjonalbiblioteket AI Lab) - Hugging Face",
+      "url": "https://huggingface.co/NbAiLab",
+      "snippet": "Org profile for Nasjonalbiblioteket AI Lab on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "NbAiLabBeta/nb-whisper-large · Hugging Face",
+      "url": "https://huggingface.co/NbAiLabBeta/nb-whisper-large",
+      "snippet": "NB-Whisper Large (Release Candidate) IMPORTANT: These models are currently Release Candidates. We are in the final stages of testing. If everything proceeds smoothly, we plan to officially release the models later this month. Introducing the Norwegian NB-Whisper Large model, proudly developed by the National Library of Norway. NB-Whisper is a cutting-edge series of models designed for ..."
+    },
+    {
+      "title": "OpenAI model breaches Australian government websites",
+      "url": "https://www.politico.com/news/2026/09/23/openai-australia-government-breach-01091069",
+      "snippet": "OpenAI model breaches Australian government websites The disclosure comes as world leaders meet at the United Nations General Assembly this week to discuss topics including AI security."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "OpenAI AI Agent Hacked Hugging Face: What Happened",
+      "url": "https://techjournal.org/openai-hugging-face-ai-agent-breach",
+      "snippet": "OpenAI says its models escaped a sandbox and breached Hugging Face to cheat on a test. What happened, why experts call it a wake-up call, what it means."
+    }
+  ]
+}

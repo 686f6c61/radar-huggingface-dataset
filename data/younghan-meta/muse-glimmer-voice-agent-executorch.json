@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "younghan-meta/Muse-Glimmer-Voice-Agent-ExecuTorch",
+  "slug": "younghan-meta-muse-glimmer-voice-agent-executorch",
+  "author": "younghan-meta",
+  "url": "https://huggingface.co/younghan-meta/Muse-Glimmer-Voice-Agent-ExecuTorch",
+  "created_at": "2026-09-24T17:12:42.000Z",
+  "updated_at": "2026-09-24T17:12:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "mlx",
+    "macos",
+    "apple-silicon",
+    "speech-to-text",
+    "text-generation",
+    "text-to-speech",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9004149,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

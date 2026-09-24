@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "athenisai/athenea-3.2-lite-v1-gguf",
+  "slug": "athenisai-athenea-3-2-lite-v1-gguf",
+  "author": "athenisai",
+  "url": "https://huggingface.co/athenisai/athenea-3.2-lite-v1-gguf",
+  "created_at": "2026-09-24T17:11:31.000Z",
+  "updated_at": "2026-09-24T17:12:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "granite",
+    "granite-4.2",
+    "thinking",
+    "reasoning",
+    "agentic",
+    "f16",
+    "base_model:athenisai/athenea-3.2-lite-v1-lora",
+    "base_model:quantized:athenisai/athenea-3.2-lite-v1-lora",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3659737600,
+  "parameters_human": "3.66B",
+  "storage_bytes": 7323461056,
+  "storage_human": "7.3 GB",
+  "base_model": "athenisai/athenea-3.2-lite-v1-lora",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Bienvenue sur Pornhub.com, le site des meilleures vidéos porno hardcore gratuites avec les stars les plus chaudes du hard. …"
+    },
+    {
+      "title": "PornHub.com :: Video X Gratuite - Site Porno Gratuit",
+      "url": "https://fr.pornhub.com/categories",
+      "snippet": "Tu viens de trouver le paradis de la pornographie. Tu ne rêves pas, un site porno gratuit, avec vidéo x gratuite. Profites des trésors …"
+    },
+    {
+      "title": "Vidéos Porno Français | Pornhub",
+      "url": "https://fr.pornhub.com/video/search?search=french",
+      "snippet": "Regarde les vidéos porno de French gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    },
+    {
+      "title": "PornHub.com :: Film Porno Xxx - Film Porno Amateur, Film Adulte …",
+      "url": "https://fr.pornhub.com/video?o=mv",
+      "snippet": "Sur PornHub tu peux télécharger des films porno xxx gratuitement. Les nanas les plus chaudes sont dans les films porno amateur de …"
+    },
+    {
+      "title": "Quebec – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=quebec",
+      "snippet": "Regarde les vidéos porno de Quebec gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    }
+  ]
+}

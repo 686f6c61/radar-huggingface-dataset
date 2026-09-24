@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "ilsp/Llama-Krikri-8B-Instruct-v1.5-4bit-mlx",
+  "slug": "ilsp-llama-krikri-8b-instruct-v1-5-4bit-mlx",
+  "author": "ilsp",
+  "url": "https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-v1.5-4bit-mlx",
+  "created_at": "2026-09-24T19:06:20.000Z",
+  "updated_at": "2026-09-24T19:07:26.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "el",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "text-generation-inference",
+    "text-generation",
+    "conversational",
+    "el",
+    "en",
+    "base_model:ilsp/Llama-Krikri-8B-Instruct-v1.5",
+    "base_model:quantized:ilsp/Llama-Krikri-8B-Instruct-v1.5",
+    "license:llama3.1",
+    "4-bit",
+    "region:eu"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8202227712,
+  "parameters_human": "8.20B",
+  "storage_bytes": 4633728704,
+  "storage_human": "4.6 GB",
+  "base_model": "ilsp/Llama-Krikri-8B-Instruct-v1.5",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

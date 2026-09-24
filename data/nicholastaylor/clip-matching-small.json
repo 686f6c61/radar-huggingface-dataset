@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nicholastaylor/clip-matching-small",
+  "slug": "nicholastaylor-clip-matching-small",
+  "author": "nicholastaylor",
+  "url": "https://huggingface.co/nicholastaylor/clip-matching-small",
+  "created_at": "2026-09-24T12:52:35.000Z",
+  "updated_at": "2026-09-24T12:52:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accéder à mon mail Orange - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Acc%C3%A9der-%C3%A0-mon-mail-Orange/td-p/36",
+      "snippet": "Aug 2, 2013 · Voici quelques infos utiles à préciser lorsque vous rencontrez un soucis de messagerie Comment consultez-vous vos …Read more"
+    },
+    {
+      "title": "Consultation de ses SMS sur son espace client - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Mes-services-Orange/Consultation-de-ses-SMS-sur-son-espace-client/td-p/1510823",
+      "snippet": "Feb 27, 2018 · Bonjour, Mon smartphone est en panne. J'ai voulu aller consulter mes sms sur le site d'orange. Mais, ce message …"
+    },
+    {
+      "title": "Comment contacter Orange par chat",
+      "url": "https://communaute.orange.fr/t5/Ma-connexion/Comment-contacter-Orange-par-chat/td-p/348961",
+      "snippet": "Sep 11, 2014 · Bonjour Il est maintenant possible depuis votre espace client de demander un chat. Passez par le portail puis …"
+    },
+    {
+      "title": "Résolu : Récuperer numéro client. - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Mes-services-Orange/R%C3%A9cuperer-num%C3%A9ro-client/td-p/1634726",
+      "snippet": "Aug 24, 2018 · Vous pouvez retrouver votre numéro client sur votre contrat ou via votre espace client : Contrat : Comment retrouver …"
+    },
+    {
+      "title": "Résolu : Code PUK - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Mon-telephone-par-internet-et/Code-PUK/td-p/980458",
+      "snippet": "Jun 1, 2016 · Bonjour ! J'ai acheté un Iphone à une amie et je désirerais obtenir le code PUK qu'elle n'a pas pu me donner. …"
+    }
+  ]
+}

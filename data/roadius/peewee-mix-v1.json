@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "roadius/peewee-mix-v1",
+  "slug": "roadius-peewee-mix-v1",
+  "author": "roadius",
+  "url": "https://huggingface.co/roadius/peewee-mix-v1",
+  "created_at": "2026-09-24T14:26:34.000Z",
+  "updated_at": "2026-09-24T14:26:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "peewee",
+    "decision-model",
+    "calibrated",
+    "modernbert",
+    "non-autoregressive",
+    "en",
+    "dataset:LocalLLaMA/typed-decisions",
+    "dataset:ZefanCai/Open-Jev",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609220,
+  "storage_human": "843 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "peewee/README.md at main · roadius2/peewee · GitHub",
+      "url": "https://github.com/roadius2/peewee/blob/main/README.md",
+      "snippet": "In mix-v1, 86% of held-out items came from one corpus, so the fitted temperatures followed it and the other corpus ended up worse calibrated than a model trained on it alone — with accuracy unaffected, because temperature never moves an argmax."
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    },
+    {
+      "title": "Pee AI Models (2) | Civitai",
+      "url": "https://civitai.com/tag/pee",
+      "snippet": "Browse 2 AI models tagged \"Pee\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "RVC Models: AI Voices - 385 Model Downloads & Examples",
+      "url": "https://aimodels.org/ai-models/rvc-models-ai-voice/",
+      "snippet": "RVC Models: AI Voices - 385 Model Downloads & Examples The world of audio technology is changing fast, thanks to RVC (Retrieval-based Voice Conversion) models. These models use advanced artificial intelligence to create voices that sound real and can be customized for your projects."
+    },
+    {
+      "title": "AIHubMix - One API for Any Model",
+      "url": "https://aihubmix.com/",
+      "snippet": "Access leading AI models through one unified, OpenAI-compatible API. Connect to ChatGPT, Claude, Gemini, DeepSeek, Doubao, Qwen and more through a single endpoint."
+    }
+  ]
+}

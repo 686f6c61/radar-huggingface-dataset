@@ -5,7 +5,7 @@
   "author": "qualcomm",
   "url": "https://huggingface.co/qualcomm/Llama-v3-8B-Instruct",
   "created_at": "2025-05-19T20:08:01.000Z",
-  "updated_at": "2026-09-11T20:54:14.000Z",
+  "updated_at": "2026-09-23T22:17:40.000Z",
   "license": "llama3",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

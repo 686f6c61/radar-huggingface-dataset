@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ATH-MaaS/Ovis-VL-Embedding-9B",
+  "slug": "ath-maas-ovis-vl-embedding-9b",
+  "author": "ATH-MaaS",
+  "url": "https://huggingface.co/ATH-MaaS/Ovis-VL-Embedding-9B",
+  "created_at": "2026-09-21T12:10:44.000Z",
+  "updated_at": "2026-09-24T03:18:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "multimodal",
+    "text",
+    "image",
+    "video",
+    "visual-document",
+    "embedding",
+    "retrieval",
+    "feature-extraction",
+    "arxiv:2609.25165",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 21,
+  "downloads_30d": 37,
+  "trending_score": 21,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16807762444,
+  "storage_human": "16.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ATH-MaaS/Ovis2.5-9B - Hugging Face",
+      "url": "https://huggingface.co/ATH-MaaS/Ovis2.5-9B",
+      "snippet": "It integrates a native-resolution vision transformer (NaViT) that processes images at their original, variable resolutions, eliminating the need for fixed-resolution tiling and preserving both fine details and global layout—crucial for visually dense content such as charts and diagrams. To strengthen reasoning, Ovis2.5 is trained not only on linear chain-of-thought (CoT) but also on reflective reasoning, including self-checking and revision."
+    },
+    {
+      "title": "ATH-MaaS - Hugging Face",
+      "url": "https://huggingface.co/ATH-MaaS",
+      "snippet": "ATH-MaaS/Ovis-Omni-Embedding-3B · ATH-MaaS/Ovis-VL-Embedding-2B · ATH-MaaS/Ovis-VL-Embedding-9B · Ovis-Embedding: Pushing the Frontiers of Universal Omni-Modal ..."
+    },
+    {
+      "title": "ATH-MaaS/Ovis-VL-Embedding-9B · Hugging Face",
+      "url": "https://huggingface.co/ATH-MaaS/Ovis-VL-Embedding-9B",
+      "snippet": "Ovis-VL-Embedding-9B is designed for high-quality multimodal search, multimodal RAG, image and visual-document retrieval, video search and temporal localization, recommendation, and nearest-neighbor matching."
+    },
+    {
+      "title": "GitHub - ATH-MaaS/Ovis-VL-Embedding: Ovis VL Embedding · GitHub",
+      "url": "https://github.com/ATH-MaaS/Ovis-VL-Embedding",
+      "snippet": "Ovis-VL-Embedding is a vision-language embedding model developed by the Alibaba ATH-MaaS team. It maps text, image, visual document, and video modalities into a unified representation space, enabling high-quality cross-modal retrieval and ..."
+    },
+    {
+      "title": "GitHub - ATH-MaaS/Ovis: A novel Multimodal Large Language Model ...",
+      "url": "https://github.com/ATH-MaaS/Ovis",
+      "snippet": "Ovis (Open VISion) is a novel Multimodal Large Language Model (MLLM) architecture, designed to structurally align visual and textual embeddings. We are looking for both interns and full-time researchers to join our team, focusing on multimodal ..."
+    }
+  ]
+}

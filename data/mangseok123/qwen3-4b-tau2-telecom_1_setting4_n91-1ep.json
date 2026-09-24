@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "MANGSEOK123/qwen3-4b-tau2-telecom_1_setting4_n91-1ep",
+  "slug": "mangseok123-qwen3-4b-tau2-telecom_1_setting4_n91-1ep",
+  "author": "MANGSEOK123",
+  "url": "https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-telecom_1_setting4_n91-1ep",
+  "created_at": "2026-09-24T14:27:51.000Z",
+  "updated_at": "2026-09-24T14:28:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "tau2-bench",
+    "telecom",
+    "oel",
+    "experience-distillation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317166,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

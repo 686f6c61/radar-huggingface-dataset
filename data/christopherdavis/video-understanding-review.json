@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "ChristopherDavis/video-understanding-review",
+  "slug": "christopherdavis-video-understanding-review",
+  "author": "ChristopherDavis",
+  "url": "https://huggingface.co/ChristopherDavis/video-understanding-review",
+  "created_at": "2026-09-24T12:55:26.000Z",
+  "updated_at": "2026-09-24T12:55:32.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

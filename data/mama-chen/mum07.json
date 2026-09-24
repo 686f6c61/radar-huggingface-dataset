@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mama-chen/mum07",
+  "slug": "mama-chen-mum07",
+  "author": "mama-chen",
+  "url": "https://huggingface.co/mama-chen/mum07",
+  "created_at": "2026-09-24T14:42:07.000Z",
+  "updated_at": "2026-09-24T14:42:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2301149464,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MaMA Music & Convention - Paris 14 • 15 • 16 Octobre 2026",
+      "url": "https://mama-musicandconvention.com/",
+      "snippet": "MaMA Music & Convention est l’événement incontournable de l’industrie musicale à Paris. Conférences, networking et concerts à …"
+    },
+    {
+      "title": "Mama - Film 2013 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=196148.html",
+      "snippet": "Mama est un film réalisé par Andy Muschietti avec Jessica Chastain, Nikolaj Coster-Waldau."
+    },
+    {
+      "title": "Mama (2013 film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mama_(2013_film)",
+      "snippet": "Her troubled ghost, Mama, searched the woods for years until she discovered Victoria and Lily and took them as surrogates. Lucas …"
+    },
+    {
+      "title": "Mama (film) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mama_(film)",
+      "snippet": "Mama est un film d'horreur canado - espagnol coécrit et réalisé par Andrés Muschietti, sorti en 2013. Il s'agit d'un remake de Mamá, …"
+    },
+    {
+      "title": "Mama - Bande annonce officielle HD VF - Le 15 Mai au cinéma",
+      "url": "https://www.youtube.com/watch?v=Z68IqurkFVE",
+      "snippet": "Apr 3, 2013 · Découvrez la bande annonce officielle du nouveau film d'horreur d'Universal, MAMA, produit par Guillermo del Toro, …"
+    }
+  ]
+}

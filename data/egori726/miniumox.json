@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Egori726/miniumox",
+  "slug": "egori726-miniumox",
+  "author": "Egori726",
+  "url": "https://huggingface.co/Egori726/miniumox",
+  "created_at": "2026-09-24T14:59:58.000Z",
+  "updated_at": "2026-09-24T15:01:06.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "text-classification",
+    "ru",
+    "base_model:Crownelius/Poe-8B-GLM5-Opus4.6-Sonnet4.5-Kimi-Grok-Gemini-3-pro-preview-HERETIC",
+    "base_model:finetune:Crownelius/Poe-8B-GLM5-Opus4.6-Sonnet4.5-Kimi-Grok-Gemini-3-pro-preview-HERETIC",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Crownelius/Poe-8B-GLM5-Opus4.6-Sonnet4.5-Kimi-Grok-Gemini-3-pro-preview-HERETIC",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax-2.5: Multilingual Open Model | Grove AI | Grove AI",
+      "url": "https://groveai.io/profiles/minimax-2-5",
+      "snippet": "MiniMax-2.5 is the latest model from MiniMax, a Chinese AI company that has built a strong reputation for multilingual and multimodal capabilities. The model uses a Mixture of Experts architecture with 456B total parameters (46B active), delivering frontier-competitive performance with efficient inference."
+    },
+    {
+      "title": "MiniMax",
+      "url": "https://www.minimax.io/",
+      "snippet": "Building AGI with our mission Intelligence with Everyone. Global leader in multi-modal models and AI-native products with over 200 million users."
+    },
+    {
+      "title": "MiniMax AI Models: M3, M2.7, Hailuo, Speech, Music and Image",
+      "url": "https://minimax-ai.chat/models/",
+      "snippet": "This MiniMax models directory compares the main MiniMax model families, including M-series language models, Hailuo video models, Speech, Music, and Agent products. For the general MiniMax AI chat experience, use the homepage."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "📊 Model Comparison Matrix: Benchmark comparisons between MiniMax H3, Seedance 2.5, Wan 2.1, Kling AI, Sora, and CogVideoX. 🌐 Chinese AI Video Generator Directory: Complete guide for international creators to access Chinese AI models without native phone registration, plus Faceless Channel guides."
+    },
+    {
+      "title": "MiniMax M2.7: The First AI Model That Helps Train Itself",
+      "url": "https://rits.shanghai.nyu.edu/ai/minimax-m2-7-the-first-ai-model-that-helps-train-itself/",
+      "snippet": "MiniMax has released M2.7, the first frontier AI model designed to participate in its own training loop. Announced on March 18, 2026, M2.7 introduces what MiniMax calls \"self-evolution\" — the model autonomously analyzes its own failure trajectories, modifies its scaffold code, and runs evaluations across 100+ iterative rounds, achieving a 30% performance improvement on internal ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "harshatheg/GPC-1",
+  "slug": "harshatheg-gpc-1",
+  "author": "harshatheg",
+  "url": "https://huggingface.co/harshatheg/GPC-1",
+  "created_at": "2026-09-21T17:14:04.000Z",
+  "updated_at": "2026-09-23T22:55:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "classification",
+    "structured-prediction",
+    "multimodal",
+    "peft",
+    "lora",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 27,
+  "downloads_30d": 45,
+  "trending_score": 27,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70273690447,
+  "storage_human": "70.3 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "harshatheg/GPC-1 · Hugging Face",
+      "url": "https://huggingface.co/harshatheg/GPC-1",
+      "snippet": "Introducing GPC-1, a general-purpose classifier based on Qwen3.5-35B-A3B, post-trained for categorical decisions, bounded numerical estimates, and image-conditioned coordinates. Define your labels, numeric ranges, or allowed JSON records through ..."
+    },
+    {
+      "title": "harshatheg (Harsha Gundala)",
+      "url": "https://huggingface.co/harshatheg",
+      "snippet": "published a model about 13 hours ago harshatheg/GPC-1 View all activity · Running on Zero · Agents · 🎯 · Context in. Structured predictions out. Image-Text-to-Text • Updated about 13 hours ago • 45 • 18 · Text Generation • Updated 8 days ago • 563 ·"
+    },
+    {
+      "title": "GPC-1 - a Hugging Face Space by harshatheg",
+      "url": "https://huggingface.co/spaces/harshatheg/GPC-1-Demo",
+      "snippet": "Provide a text prompt and the app will produce a comprehensive reply using the GPC-1 language model. Simply type in your query, and the system returns a generated answer along with processing detai..."
+    },
+    {
+      "title": "GS1 launches its second AI tool: the GS1 GPC Predictor | GS1 Belgium ...",
+      "url": "https://www.gs1belu.org/en/articles/gs1-launches-its-second-ai-tool-gs1-gpc-predictor",
+      "snippet": "Thanks to AI technology, you receive within seconds a proposal of the most suitable classifications, based on a product description or an image. This helps you save time and increase the accuracy of your product data – a must for every company ..."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "ChatGPT helps you get answers, find inspiration, and be more productive."
+    }
+  ]
+}

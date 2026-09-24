@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nlml/interactive-diffusion",
+  "slug": "nlml-interactive-diffusion",
+  "author": "nlml",
+  "url": "https://huggingface.co/nlml/interactive-diffusion",
+  "created_at": "2026-09-24T13:18:05.000Z",
+  "updated_at": "2026-09-24T13:21:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "diffusion",
+    "world-models",
+    "video-generation",
+    "carracing",
+    "reinforcement-learning",
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 771978151,
+  "storage_human": "772 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "速達の料金はいくらになりますか？ | 日本郵便株式会社",
+      "url": "https://www.post.japanpost.jp/question/666.html",
+      "snippet": "日本郵便トップ よくあるご質問・お問い合わせ オプションサービスのQ&A 速達の料金はいくらになりますか？Read more"
+    },
+    {
+      "title": "Race and Chinese culture - Discussion Forum Latest Topics",
+      "url": "https://forum.chinesepod.com/t/race-and-chinese-culture/2685",
+      "snippet": "Jun 18, 2017 · In my experience with language partners, people who have not grown up in the western cultural milieu have beliefs …"
+    },
+    {
+      "title": "北海道 札幌市中央区 | 日本郵便株式会社",
+      "url": "https://www.post.japanpost.jp/cgi-zip/zipcode.php?pref=1&city=1011010",
+      "snippet": "2025年度版郵便番号簿をPDF形式でダウンロードできます。"
+    },
+    {
+      "title": "東京都 中野区 | 日本郵便株式会社 - Japan Post",
+      "url": "https://www.post.japanpost.jp/cgi-zip/zipcode.php?pref=13&city=1131140",
+      "snippet": "東京都の郵便番号検索はこちらから。住所から郵便番号を検索できます。"
+    },
+    {
+      "title": "How to Write the Address and Name - Japan Post",
+      "url": "https://www.post.japanpost.jp/service/send/oversea/use/label/howto_en.html",
+      "snippet": "Note If you write sender's and recipient's name and address conversely to the example below, or write them next to each other, the …"
+    }
+  ]
+}

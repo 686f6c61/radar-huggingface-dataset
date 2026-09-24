@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "Blackfrost-Research/GLM-5.3-DERISKED-NVFP4-V2",
+  "slug": "blackfrost-research-glm-5-3-derisked-nvfp4-v2",
+  "author": "Blackfrost-Research",
+  "url": "https://huggingface.co/Blackfrost-Research/GLM-5.3-DERISKED-NVFP4-V2",
+  "created_at": "2026-09-24T14:54:20.000Z",
+  "updated_at": "2026-09-24T15:02:12.000Z",
+  "license": "blackfrost-commercial",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "glm",
+    "glm-5.3",
+    "mixture-of-experts",
+    "moe",
+    "nvfp4",
+    "modelopt",
+    "sglang",
+    "blackwell",
+    "de-risked",
+    "red-teaming",
+    "security-research",
+    "enterprise",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-BF16",
+    "base_model:finetune:zai-org/GLM-5.3-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 390942074880,
+  "parameters_human": "390.94B",
+  "storage_bytes": 464865101614,
+  "storage_human": "464.9 GB",
+  "base_model": "zai-org/GLM-5.3-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blackfrost-AI/GLM-5.3-Flash-DERISKED-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/Blackfrost-AI/GLM-5.3-Flash-DERISKED-NVFP4",
+      "snippet": "The behavior parent is Blackfrost&#x27;s GLM-5.3-Flash-DERISKED-BF16 master. This NVFP4 release inherits the parent&#x27;s intended behavior without requiring a prompt, adapter, or runtime filter."
+    },
+    {
+      "title": "Blackfrost-AI/GLM-5.3-Flash-DERISKED-NVFP4 at main",
+      "url": "https://huggingface.co/Blackfrost-AI/GLM-5.3-Flash-DERISKED-NVFP4/tree/main",
+      "snippet": "Blackfrost-AI / GLM-5.3-Flash-DERISKED-NVFP4 like 4 Image-Text-to-Text Transformers Safetensors English Chinese glm5_next glm glm-5.3-flash glm5-next multimodal mixture-of-experts Mixture of Experts nvfp4 sglang de-risked red-teaming security-research adversarial-testing enterprise conversational 8-bit precision modelopt License:mit Model card ..."
+    },
+    {
+      "title": "GLM 5.3 Flash DERISKED NVFP4 by Blackfrost-AI - LLM Explorer",
+      "url": "https://llm-explorer.com/model/Blackfrost-AI%2FGLM-5.3-Flash-DERISKED-NVFP4,5naYIdDhwfCVDnspEyZ459",
+      "snippet": "Rank the GLM 5.3 Flash DERISKED NVFP4 capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Models — Blackfrost",
+      "url": "https://blackfrostai.com/models",
+      "snippet": "Buy exact Blackfrost De-Risked model-weight releases under a one-time commercial license. Custom model work and scalable hosting are separately scoped services."
+    },
+    {
+      "title": "GLM 5.3 Flash DERISKED BF16 by Blackfrost-Research",
+      "url": "https://llm-explorer.com/model/Blackfrost-Research%2FGLM-5.3-Flash-DERISKED-BF16,2weJyEKEKlgBDRraDnkoMf",
+      "snippet": "GLM 5.3 Flash DERISKED BF16 is an open-source language model by Blackfrost-Research. Features: 321.3b LLM, VRAM: 237.1GB, License: other, LLM Explorer Score: 0.25."
+    }
+  ]
+}

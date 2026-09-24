@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mxcake3893/Qwen3.8-27B-Alis-Splash",
+  "slug": "mxcake3893-qwen3-8-27b-alis-splash",
+  "author": "mxcake3893",
+  "url": "https://huggingface.co/mxcake3893/Qwen3.8-27B-Alis-Splash",
+  "created_at": "2026-09-24T12:52:42.000Z",
+  "updated_at": "2026-09-24T13:51:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "qwen3",
+    "metal",
+    "speculative-decoding",
+    "q4",
+    "base_model:avlp12/Qwen3.8-27B-Alis-MLX-4bit",
+    "base_model:finetune:avlp12/Qwen3.8-27B-Alis-MLX-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17375920973,
+  "storage_human": "17.4 GB",
+  "base_model": "incoai/Qwen3.8-27B-Splash, avlp12/Qwen3.8-27B-Alis-MLX-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

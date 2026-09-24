@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "joosthel/Nemotron-3-Diarization-ONNX",
+  "slug": "joosthel-nemotron-3-diarization-onnx",
+  "author": "joosthel",
+  "url": "https://huggingface.co/joosthel/Nemotron-3-Diarization-ONNX",
+  "created_at": "2026-09-24T13:18:59.000Z",
+  "updated_at": "2026-09-24T13:19:33.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "speaker-diarization",
+    "voice-activity-detection",
+    "base_model:nvidia/Nemotron-3-Diarization",
+    "base_model:quantized:nvidia/Nemotron-3-Diarization",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 501295985,
+  "storage_human": "501 MB",
+  "base_model": "nvidia/Nemotron-3-Diarization",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx-community/Nemotron-3-Diarization-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/Nemotron-3-Diarization-ONNX",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nvidia/Nemotron-3-Diarization-preview · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization-preview",
+      "snippet": "Description Nemotron 3 Diarization is an open-weight streaming speaker diarization model designed to determine \"who spoke when\" in real-world audio. It supports both streaming and offline inference, handles up to eight speakers, and orders speaker outputs by each speaker's first arrival in the input audio."
+    },
+    {
+      "title": "Nemotron-3-Diarization-preview/README.md at main - GitHub",
+      "url": "https://github.com/AMAImedia/Nemotron-3-Diarization-preview/blob/main/README.md",
+      "snippet": "A scalable generative AI framework built for researchers and developers working on Large Language Models, Multimodal, and Speech AI (Automatic Speech Recognition and Text-to-Speech) - Nemotron-3-Diarization-preview/README.md at main · AMAImedia/Nemotron-3-Diarization-preview"
+    },
+    {
+      "title": "Nemotron 3 Diarization: Open Model, 8 Speakers, 14.72% DER - explainx.ai",
+      "url": "https://www.explainx.ai/blog/nvidia-nemotron-3-diarization-open-weight-eight-speakers-2026",
+      "snippet": "NVIDIA's Nemotron 3 Diarization is a 100M open model that tracks up to eight overlapping speakers at 14.72% DER. Latency modes, license and how to use it."
+    },
+    {
+      "title": "NVIDIA Nemotron 3 Family of Models",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3/",
+      "snippet": "We announce NVIDIA Nemotron 3, the most efficient family of open models with leading accuracy for agentic AI applications. The Nemotron 3 family consists of three models: Nano, Super, and Ultra."
+    }
+  ]
+}

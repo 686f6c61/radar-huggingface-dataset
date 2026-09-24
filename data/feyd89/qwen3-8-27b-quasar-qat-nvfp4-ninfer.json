@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Feyd89/Qwen3.8-27B-QUASAR-QAT-nvfp4-NInfer",
+  "slug": "feyd89-qwen3-8-27b-quasar-qat-nvfp4-ninfer",
+  "author": "Feyd89",
+  "url": "https://huggingface.co/Feyd89/Qwen3.8-27B-QUASAR-QAT-nvfp4-NInfer",
+  "created_at": "2026-09-24T19:04:31.000Z",
+  "updated_at": "2026-09-24T19:22:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "qwen3.8",
+    "nvfp4",
+    "quantization-aware-training",
+    "blackwell",
+    "tensor-parallel",
+    "base_model:QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4",
+    "base_model:quantized:QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17397699076,
+  "storage_human": "17.4 GB",
+  "base_model": "QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de rechercheRead more"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - ConditionsRead more"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/#!%20/=",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité.Read more"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/webhp?gl=nf&hl=en&pws=0",
+      "snippet": "Advertising Business Solutions About Google Google.com © 2026 - Privacy - TermsRead more"
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/?hl=fr",
+      "snippet": "Google disponible en : English Publicité À propos de Google Google.comRead more"
+    }
+  ]
+}

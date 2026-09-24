@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Rbaerk/IM-Animation-Motion-Encoder",
+  "slug": "rbaerk-im-animation-motion-encoder",
+  "author": "Rbaerk",
+  "url": "https://huggingface.co/Rbaerk/IM-Animation-Motion-Encoder",
+  "created_at": "2026-09-24T02:58:53.000Z",
+  "updated_at": "2026-09-24T03:00:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "im-animation",
+    "titok",
+    "motion-encoder",
+    "image-feature-extraction",
+    "arxiv:2602.07498",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 607017208,
+  "storage_human": "607 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

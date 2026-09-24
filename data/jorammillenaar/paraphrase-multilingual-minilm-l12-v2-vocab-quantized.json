@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "JoramMillenaar/paraphrase-multilingual-MiniLM-L12-v2-vocab-quantized",
+  "slug": "jorammillenaar-paraphrase-multilingual-minilm-l12-v2-vocab-quantized",
+  "author": "JoramMillenaar",
+  "url": "https://huggingface.co/JoramMillenaar/paraphrase-multilingual-MiniLM-L12-v2-vocab-quantized",
+  "created_at": "2026-09-24T02:24:17.000Z",
+  "updated_at": "2026-09-24T02:50:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "webgpu",
+    "sentence-similarity",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:quantized:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 724242057,
+  "storage_human": "724 MB",
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Puppy training 101 guide: Tips for creating a well-behaved dog",
+      "url": "https://dogsbestlife.com/puppies/puppy-training-101-guide/",
+      "snippet": "May 6, 2026 · By following these 17 puppy training tips, you can lay a strong foundation for your puppy’s training and set them up for …"
+    },
+    {
+      "title": "Puppy Training: The Essential Basics to Get Started - Hundeo",
+      "url": "https://www.hundeo.com/en/training/puppy-training",
+      "snippet": "Jun 4, 2026 · The cornerstones of puppy training are consistency, patience, and understanding your puppy's needs. Focus on …"
+    },
+    {
+      "title": "13 Expert Tips on How to Train a Puppy - Daily Paws",
+      "url": "https://www.dailypaws.com/dogs-puppies/dog-training/basic/how-to-train-a-puppy",
+      "snippet": "Apr 3, 2026 · Begin training your puppy with positive reinforcement and structure before bringing them home. Use crate training, …"
+    },
+    {
+      "title": "Puppy Training Tips for New Owners - The Spruce Pets",
+      "url": "https://www.thesprucepets.com/top-puppy-training-tips-1118511",
+      "snippet": "Dec 10, 2025 · Bringing home a new puppy? Find out the best puppy training tips to get a new puppy off to a great start. Here's how …"
+    },
+    {
+      "title": "How to Train a Puppy: A Complete Guide for Beginners",
+      "url": "https://petsforchildren.com/guides/train-a-puppy/",
+      "snippet": "Learn how to train a puppy with this comprehensive guide covering routines, commands, socialization, crate training, and common …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "denis-pplx/autojev-27b",
+  "slug": "denis-pplx-autojev-27b",
+  "author": "denis-pplx",
+  "url": "https://huggingface.co/denis-pplx/autojev-27b",
+  "created_at": "2026-09-19T19:54:38.000Z",
+  "updated_at": "2026-09-22T03:52:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "qwen3_5",
+    "classification",
+    "multimodal",
+    "full-finetuning",
+    "calibration",
+    "custom-code",
+    "text-classification",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 17,
+  "downloads_30d": 166,
+  "trending_score": 17,
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 153752508996,
+  "storage_human": "153.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La société Denis",
+      "url": "https://www.denis.fr/societe/",
+      "snippet": "PRÉSENTATION DE L'ENTREPRISE DENIS La société DENIS dispose de ses propres bureaux d'études Dix-huit ingénieurs et …Read more"
+    },
+    {
+      "title": "Denis (prénom) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Denis_(pr%C3%A9nom)",
+      "snippet": "Denis est issu du grec Διονύσιος (Dionysos) via le latin Dionysius. Ce prénom vient de Dionusios ou Dionysos, le dieu de la vigne, …Read more"
+    },
+    {
+      "title": "Denis — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Denis",
+      "snippet": "Denis est un anthroponyme notamment porté par : Denis, un prénom masculin ; Denis, un patronyme français ; Denis, nom d’une …Read more"
+    },
+    {
+      "title": "Maison Denis",
+      "url": "https://www.denis.com/",
+      "snippet": "Maison Denis seeks to contribute to a sustainable and healthier way of life. Over the past 160 years, we have become experts in our …Read more"
+    },
+    {
+      "title": "dénis - Définitions, synonymes, prononciation, exemples | Dico en …",
+      "url": "https://dictionnaire.lerobert.com/definition/denis",
+      "snippet": "Définition, exemples et prononciation de dénis : Inflection…Read more"
+    }
+  ]
+}

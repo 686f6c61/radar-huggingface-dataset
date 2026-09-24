@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "tdelab/tde-general-v0.2",
+  "slug": "tdelab-tde-general-v0-2",
+  "author": "tdelab",
+  "url": "https://huggingface.co/tdelab/tde-general-v0.2",
+  "created_at": "2026-09-24T17:45:58.000Z",
+  "updated_at": "2026-09-24T17:47:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "decision-model",
+    "calibrated-classification",
+    "typed-decisions",
+    "choice",
+    "snake",
+    "en",
+    "base_model:tdelab/tde-general-v0.1",
+    "base_model:finetune:tdelab/tde-general-v0.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 150208513,
+  "parameters_human": "150.2M",
+  "storage_bytes": 1201718745,
+  "storage_human": "1.2 GB",
+  "base_model": "tdelab/tde-general-v0.1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

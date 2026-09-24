@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rao1727/example-modelrao",
+  "slug": "rao1727-example-modelrao",
+  "author": "rao1727",
+  "url": "https://huggingface.co/rao1727/example-modelrao",
+  "created_at": "2026-09-24T14:44:45.000Z",
+  "updated_at": "2026-09-24T14:44:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Enedis dévoile son Projet Industriel et Humain 2030 : Agir en grand ...",
+      "url": "https://www.enedis.fr/presse/enedis-devoile-son-projet-industriel-et-humain-2030-agir-en-grand-pour-reussir-la-grande",
+      "snippet": "Apr 24, 2026 · A cet horizon, 2 véhicules neufs sur 3 seront électriques, 1 million de pompes à chaleur supplémentaires seront …Read more"
+    },
+    {
+      "title": "Notre projet d’entreprise - Enedis",
+      "url": "https://www.enedis.fr/enedis-en-bref/notre-projet-dentreprise",
+      "snippet": "Avec son « Projet Industriel et Humain 2030 », Enedis se mobilise pour accompagner cette transformation majeure. Un basculement …Read more"
+    },
+    {
+      "title": "Enedis dévoile son projet industriel et humain 2020-2025",
+      "url": "https://www.lejournaldugers.fr/article/45017-enedis-devoile-son-projet-industriel-et-humain-2020-2025.pdf",
+      "snippet": "Avec ce nouveau projet industriel et humain 2020-2025, Enedis entend concilier performance industrielle et approche durable, au …Read more"
+    },
+    {
+      "title": "PIH 2030 : réussir le changement d’échelle, ensemble ... - LinkedIn",
+      "url": "https://fr.linkedin.com/posts/nicolasmarchand_pih-2030-r%C3%A9ussir-le-changement-d%C3%A9chelle-activity-7455537684543991808-rAVx",
+      "snippet": "Le PIH 2030 repose sur une conviction forte : on ne change pas d’échelle sans les 42 000 femmes et hommes d’Enedis. C’est …Read more"
+    },
+    {
+      "title": "Actualités : Enedis dévoile son Projet Industriel et Humain 2030",
+      "url": "https://www.aeaee.org/a-la-une/actualites-enedis-devoile-son-projet-industriel-et-humain-2030/",
+      "snippet": "Apr 24, 2026 · A cet horizon, 2 véhicules neufs sur 3 seront électriques, 1 million de pompes à chaleur supplémentaires seront …Read more"
+    }
+  ]
+}

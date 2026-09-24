@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "tari-tech/asr-voice-recognition-models",
+  "slug": "tari-tech-asr-voice-recognition-models",
+  "author": "tari-tech",
+  "url": "https://huggingface.co/tari-tech/asr-voice-recognition-models",
+  "created_at": "2026-09-24T14:38:43.000Z",
+  "updated_at": "2026-09-24T14:58:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3498802148,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tari",
+      "url": "https://tari.com/",
+      "snippet": "Tari is developed by a talented group of technologists, and designers with a unique vision for the future of money. Tari Universe (and …"
+    },
+    {
+      "title": "Tari / Downloads",
+      "url": "https://tari.com/downloads",
+      "snippet": "Tari is the L1 protocol powered by you. Proof of work and an ingenious app platform to put all of its power in your hands."
+    },
+    {
+      "title": "tari - Définitions, synonymes, prononciation, exemples | Dico en ligne ...",
+      "url": "https://dictionnaire.lerobert.com/definition/tari",
+      "snippet": "En reconnaissant toutes ces préoccupations comme légitimes, le thérapeute leur rend le contentement, tari précocement chez eux, …"
+    },
+    {
+      "title": "Définitions : tarir, se tarir, être tari - Dictionnaire de français ...",
+      "url": "https://www.larousse.fr/dictionnaires/francais/tarir/76752",
+      "snippet": "1. En parlant d'une réserve d'eau, de liquide, être mise à sec : Un puits de pétrole tari. 2. En parlant des larmes, s'arrêter de couler. …"
+    },
+    {
+      "title": "Tari | The SMG4 Wiki | Fandom",
+      "url": "https://supermarioglitchy4.fandom.com/wiki/Tari",
+      "snippet": "Tari, recognized for her gaming skills, first appeared in The Waluigi Arc's fourth episode, marking her as the first major character …"
+    }
+  ]
+}

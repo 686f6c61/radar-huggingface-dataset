@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Melih1234/ANKA-50M-RMW3",
+  "slug": "melih1234-anka-50m-rmw3",
+  "author": "Melih1234",
+  "url": "https://huggingface.co/Melih1234/ANKA-50M-RMW3",
+  "created_at": "2026-09-24T13:17:00.000Z",
+  "updated_at": "2026-09-24T13:17:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "anka_rmw3",
+    "causal-lm",
+    "custom-code",
+    "from-scratch",
+    "recurrent-transformer",
+    "mixture-of-experts",
+    "50m",
+    "anka",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 57333248,
+  "parameters_human": "57.3M",
+  "storage_bytes": 114688210,
+  "storage_human": "115 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

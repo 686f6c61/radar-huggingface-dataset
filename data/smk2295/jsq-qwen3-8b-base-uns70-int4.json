@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "smk2295/JSQ-Qwen3-8B-Base-uns70-int4",
+  "slug": "smk2295-jsq-qwen3-8b-base-uns70-int4",
+  "author": "smk2295",
+  "url": "https://huggingface.co/smk2295/JSQ-Qwen3-8B-Base-uns70-int4",
+  "created_at": "2026-09-24T14:52:46.000Z",
+  "updated_at": "2026-09-24T14:58:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "compression",
+    "sparsity",
+    "quantization",
+    "jsq",
+    "wanda",
+    "baseline",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16501495050,
+  "storage_human": "16.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smk2295 (Song Minkyoung) - Hugging Face",
+      "url": "https://huggingface.co/smk2295",
+      "snippet": "smk2295/Qwen3.5-4B-w4g128 ... smk2295/Qwen3.5-4B-2to4-int4-lr5e-05-20260529-0013-mix2-1-gdnx ... smk2295/Qwen3.5-4B-2to4-int4-lr5e-05-20260528-1553-mix2-gdnx ... smk2295/Qwen3.5-4B-2to4-maskllm-wanda-neuralmagic-200 ... smk2295/Qwen3.5-4B-2to4-int4-lr5e-05-20260527-1656-mix-gdnx ... smk2295/Qwen3.5-4B-2to4-int4-lr5e-05-20260527-1609-gdnx ..."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "Qwen3-8B-Base · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-8B-Base",
+      "snippet": "Qwen3-8B-Base Qwen3 Highlights Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Building upon extensive advancements in training data, model architecture, and optimization techniques, Qwen3 delivers the following key improvements over the previously released Qwen2.5: Expanded Higher-Quality Pre ..."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/TextSynth-4B-0926-i1-GGUF",
+  "slug": "mradermacher-textsynth-4b-0926-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TextSynth-4B-0926-i1-GGUF",
+  "created_at": "2026-09-24T19:18:13.000Z",
+  "updated_at": "2026-09-24T19:27:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "en",
+    "dataset:theprint/Hemispheres-v0.3-Combo-GPT",
+    "base_model:theprint/TextSynth-4B-0926",
+    "base_model:quantized:theprint/TextSynth-4B-0926",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 958716,
+  "parameters_human": "958716",
+  "storage_bytes": 3872640,
+  "storage_human": "4 MB",
+  "base_model": "theprint/TextSynth-4B-0926",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

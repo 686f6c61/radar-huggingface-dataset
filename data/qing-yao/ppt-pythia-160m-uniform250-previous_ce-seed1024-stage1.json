@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "qing-yao/ppt-pythia-160m-uniform250-previous_ce-seed1024-stage1",
+  "slug": "qing-yao-ppt-pythia-160m-uniform250-previous_ce-seed1024-stage1",
+  "author": "qing-yao",
+  "url": "https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_ce-seed1024-stage1",
+  "created_at": "2026-09-24T17:11:28.000Z",
+  "updated_at": "2026-09-24T17:13:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:EleutherAI/pythia-160m",
+    "base_model:finetune:EleutherAI/pythia-160m",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85071360,
+  "parameters_human": "85.1M",
+  "storage_bytes": 2552884194,
+  "storage_human": "2.6 GB",
+  "base_model": "EleutherAI/pythia-160m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QZZN论坛 公务员考试论坛",
+      "url": "https://bbs.qzzn.com/",
+      "snippet": "QZZN公务员论坛是知名公务员考试论坛和公务员论坛，您可以在QZZN获得最新的公务员考试资讯、经验、资料、真题，还可以认识 …"
+    },
+    {
+      "title": "【excel】中的DISPIMG函数如何使用？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/3f16e003a2ed366491c10396.html",
+      "snippet": "May 26, 2020 · 【excel】中的DISPIMG函数如何使用,该函数用于单元格内插入图片。"
+    },
+    {
+      "title": "如何快速查看自己的电脑IP地址 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/48b37f8d8ee70d5b646488df.html",
+      "snippet": "Aug 30, 2025 · 使用命令提示符 (最快速通用) 这种方法在所有Windows版本上都可以用，非常直接。 1、打开“运行”对话框： 按下键盘 …"
+    },
+    {
+      "title": "三千多人招三个，还挺厉害 - 招聘竞争激烈，人才选拔严格 - 安徽公务 …",
+      "url": "https://bbs.qzzn.com/thread-17518845-1-1.html",
+      "snippet": "Sep 16, 2026 · 三千多人竞争三个职位，显示招聘竞争激烈，入选者均为优秀人才。 三千多人招三个，还挺厉害，能考上的都是顶尖 …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/the-format-of-the-cell-cant-be-saved-in-csv-file/2bedad17-2a28-4b52-953f-3340b9a31ca8",
+      "snippet": ""
+    }
+  ]
+}

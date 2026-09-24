@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "punyajain/epidebug-mm-v2",
+  "slug": "punyajain-epidebug-mm-v2",
+  "author": "punyajain",
+  "url": "https://huggingface.co/punyajain/epidebug-mm-v2",
+  "created_at": "2026-09-24T17:26:35.000Z",
+  "updated_at": "2026-09-24T17:26:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "epidebug",
+    "multimodal",
+    "failure-diagnosis",
+    "cpu-seed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 93748216,
+  "storage_human": "94 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "URDU FUN CLUB",
+      "url": "https://urdufunclub.org/",
+      "snippet": "Standard Stories Lounge Urdu Adults Startup Stories Roman Adult Stories (No More) Incomplete Stories (No Update) 24,682 posts"
+    },
+    {
+      "title": "Urdu Adults Books and Novels",
+      "url": "https://urdufunclub.org/files/category/1-urdu-adults-books-and-novels/",
+      "snippet": "Library Novels Plan Step By Step Uploading More Novels and Now Available with Permission"
+    },
+    {
+      "title": "میری پیاری بہن ۔۔۔۔(قسط 17) - Urdu Story Club",
+      "url": "https://urdustoryclub.com/%d9%85%db%8c%d8%b1%db%8c-%d9%be%db%8c%d8%a7%d8%b1%db%8c-%d8%a8%db%81%d9%86-%db%94%db%94%db%94%db%94%d9%82%d8%b3%d8%b7-17/",
+      "snippet": "Aug 12, 2025 · میں ملائکہ کی بات سن کہ خوشی سے جھوم اٹھا اور مجھے بہت اچھا لگا کہ ملائکہ نے مجھے واضح اشارہ دے دیا ہے ۔ تھوڑی دیر میں ماہم بھی نیچے آئی اور سب …"
+    },
+    {
+      "title": "Library Novels - URDU FUN CLUB",
+      "url": "https://urdufunclub.org/files/",
+      "snippet": "May 22, 2025 · Library Novels Plan Step By Step Uploading More Novels and Now Available with Permission"
+    },
+    {
+      "title": "Sign In - URDU FUN CLUB",
+      "url": "https://urdufunclub.org/login/",
+      "snippet": "Sign in to access exclusive Urdu content and connect with a vibrant community of enthusiasts."
+    }
+  ]
+}

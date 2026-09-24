@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "502error/sdxs-512-dreamshaper",
+  "slug": "502error-sdxs-512-dreamshaper",
+  "author": "502error",
+  "url": "https://huggingface.co/502error/sdxs-512-dreamshaper",
+  "created_at": "2026-09-24T14:22:31.000Z",
+  "updated_at": "2026-09-24T14:22:31.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "stable-diffusion",
+    "arxiv:2403.16627",
+    "license:openrail++",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 315746244,
+  "parameters_human": "315.7M",
+  "storage_bytes": 2099720384,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

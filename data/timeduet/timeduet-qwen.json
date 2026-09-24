@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "TimeDuet/TimeDuet-Qwen",
+  "slug": "timeduet-timeduet-qwen",
+  "author": "TimeDuet",
+  "url": "https://huggingface.co/TimeDuet/TimeDuet-Qwen",
+  "created_at": "2026-09-24T14:23:02.000Z",
+  "updated_at": "2026-09-24T14:41:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "audio",
+    "video",
+    "temporal-grounding",
+    "multimodal",
+    "en",
+    "dataset:TimeDuet/TimeDuet",
+    "base_model:Qwen/Qwen2.5-Omni-7B",
+    "base_model:adapter:Qwen/Qwen2.5-Omni-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80795232,
+  "storage_human": "81 MB",
+  "base_model": "Qwen/Qwen2.5-Omni-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

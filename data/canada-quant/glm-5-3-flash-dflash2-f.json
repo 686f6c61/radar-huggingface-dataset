@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "canada-quant/GLM-5.3-Flash-DFlash2-F",
+  "slug": "canada-quant-glm-5-3-flash-dflash2-f",
+  "author": "canada-quant",
+  "url": "https://huggingface.co/canada-quant/GLM-5.3-Flash-DFlash2-F",
+  "created_at": "2026-09-24T16:22:09.000Z",
+  "updated_at": "2026-09-24T16:25:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dflash2",
+    "draft-model",
+    "draft",
+    "glm-5.3-flash",
+    "glm5_next",
+    "w4a16",
+    "dgx-spark",
+    "h200",
+    "b300",
+    "text-generation",
+    "arxiv:2602.06036",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:finetune:zai-org/GLM-5.3-Flash",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3111069696,
+  "parameters_human": "3.11B",
+  "storage_bytes": 6222163442,
+  "storage_human": "6.2 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Canada — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Canada",
+      "snippet": "Le Canada s'étend dans les océans Atlantique à l' est, Arctique au nord et Pacifique à l' ouest. Cette façade maritime lui offre la …"
+    },
+    {
+      "title": "Canada - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Canada",
+      "snippet": "It is one of the world's most ethnically diverse and multicultural nations, the product of large-scale immigration. Canada's long and …"
+    },
+    {
+      "title": "Accueil - Canada.ca",
+      "url": "https://www.canada.ca/fr.html",
+      "snippet": "Accédez rapidement et facilement à tous les services et renseignements du gouvernement du Canada."
+    },
+    {
+      "title": "Home - Canada.ca",
+      "url": "https://www.canada.ca/en.html",
+      "snippet": "Travel and tourism In Canada or abroad, advice, advisories, passports, visit Canada, events, attractions"
+    },
+    {
+      "title": "Les 25 plus beaux endroits à visiter au Canada - Generation Voyage",
+      "url": "https://generationvoyage.fr/endroits-visiter-canada/",
+      "snippet": "Mar 26, 2019 · Un séjour de rêve dans un pays à la nature sauvage et préservée, ça vous conviendrait ? Partez à la découverte du …"
+    }
+  ]
+}

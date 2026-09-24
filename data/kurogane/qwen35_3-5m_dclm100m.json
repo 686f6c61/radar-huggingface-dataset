@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "kurogane/qwen35_3.5m_dclm100m",
+  "slug": "kurogane-qwen35_3-5m_dclm100m",
+  "author": "kurogane",
+  "url": "https://huggingface.co/kurogane/qwen35_3.5m_dclm100m",
+  "created_at": "2026-09-24T14:13:00.000Z",
+  "updated_at": "2026-09-24T14:16:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3536560,
+  "parameters_human": "3.5M",
+  "storage_bytes": 14157800,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

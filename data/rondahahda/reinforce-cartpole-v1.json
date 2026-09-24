@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "rondahahda/Reinforce-CartPole-v1",
+  "slug": "rondahahda-reinforce-cartpole-v1",
+  "author": "rondahahda",
+  "url": "https://huggingface.co/rondahahda/Reinforce-CartPole-v1",
+  "created_at": "2026-09-24T14:16:31.000Z",
+  "updated_at": "2026-09-24T14:16:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4137,
+  "storage_human": "4137 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Boosteroid Cloud Gaming | Your Games on Any Device",
+      "url": "https://boosteroid.com/",
+      "snippet": "Run PC games on low-end, outdated or ultra portable devices! Play on Mac, Linux, iOS, Android, ChromeOS or smart TVs without …"
+    },
+    {
+      "title": "Downloads | Boosteroid Cloud Gaming",
+      "url": "https://boosteroid.com/downloads/",
+      "snippet": "Get Boosteroid app for your device – available on Windows, macOS, Android, iOS, and TV. Play PC games instantly without …"
+    },
+    {
+      "title": "Boosteroid - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Boosteroid",
+      "snippet": "Boosteroid was founded by Ivan Shvaichenko in 2016. [11] In 2019, the company officially launched its cloud gaming service, initially …"
+    },
+    {
+      "title": "Boosteroid Help Center",
+      "url": "https://help.boosteroid.com/",
+      "snippet": "Choose one of the main topics listed below to get started."
+    },
+    {
+      "title": "Boosteroid : avis & essai gratuit de l’abonnement de jeux",
+      "url": "https://canardvirtuel.com/services/boosteroid/",
+      "snippet": "Sep 12, 2026 · Avis Boosteroid par la rédaction Le service Boosteroid est un petit nouveau venu de Roumanie et qui promet de …"
+    }
+  ]
+}

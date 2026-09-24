@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Shiki42/s017-water-delivery-ctr-mask-act-e810-step100000",
+  "slug": "shiki42-s017-water-delivery-ctr-mask-act-e810-step100000",
+  "author": "Shiki42",
+  "url": "https://huggingface.co/Shiki42/s017-water-delivery-ctr-mask-act-e810-step100000",
+  "created_at": "2026-09-24T16:24:16.000Z",
+  "updated_at": "2026-09-24T16:24:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "water-delivery",
+    "idlemask",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51633806,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206568760,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L'os d'un homme tué il y a 4 000 ans retrouvé dans les Pyrénées... avec ...",
+      "url": "https://www.geo.fr/histoire/l-os-d-un-homme-tue-il-y-a-4-000-ans-retrouve-dans-les-pyrenees-avec-l-arme-du-meurtre-227626",
+      "snippet": "Jul 17, 2025 · L'os d'un homme tué il y a 4 000 ans retrouvé dans les Pyrénées... avec l'arme du meurtre Lors de leurs fouilles du …"
+    },
+    {
+      "title": "Pyrénées : il a survécu des années avec une flèche fichée dans l’os, il ...",
+      "url": "https://sciencepost.fr/pyrenees-il-a-survecu-des-annees-avec-une-fleche-fichee-dans-los-il-y-a-4-000-ans/",
+      "snippet": "Jul 28, 2025 · Ce vestige humain, récemment découvert dans une grotte des Pyrénées catalanes, raconte une histoire fascinante et …"
+    },
+    {
+      "title": "Un os humain vieux de 4 000 ans retrouvé avec la pointe d’une flèche ...",
+      "url": "https://www.ouest-france.fr/sciences/archeologie/un-os-humain-vieux-de-4-000-ans-retrouve-avec-la-pointe-dune-fleche-enfoncee-a-linterieur-c274765c-630f-11f0-91aa-ff002258fe78",
+      "snippet": "Jul 17, 2025 · Des chercheurs ont fait une rare trouvaille sur le site du Roc de les Orenetes, dans les Pyrénées espagnoles : une …"
+    },
+    {
+      "title": "4000 ans après les faits, le mystère autour d'un \"meurtre préhistorique ...",
+      "url": "https://www.science-et-vie.com/science-et-culture/4000-ans-apres-les-faits-le-mystere-autour-dun-meurtre-prehistorique-est-en-passe-detre-resolu-par-les-archeologues-205629.html",
+      "snippet": "Jul 22, 2025 · Une côte humaine de 4 000 ans percée d’une flèche en silex révèle un acte de violence préhistorique dans les Pyrénées."
+    },
+    {
+      "title": "Une flèche en silex vieille de 4 000 ans logée dans une côte humaine ...",
+      "url": "https://lesavoirperdudesanciens.com/2025/07/une-fleche-en-silex-vieille-de-4-000-ans-logee-dans-une-cote-humaine-revele-des-preuves-directes-de-violence-prehistorique/",
+      "snippet": "Jul 22, 2025 · Cette découverte exceptionnelle, qui révèle des preuves directes de violence interpersonnelle, a été faite lors de …"
+    }
+  ]
+}

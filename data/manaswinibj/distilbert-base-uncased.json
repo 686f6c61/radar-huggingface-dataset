@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "manaswinibj/distilbert-base-uncased",
+  "slug": "manaswinibj-distilbert-base-uncased",
+  "author": "manaswinibj",
+  "url": "https://huggingface.co/manaswinibj/distilbert-base-uncased",
+  "created_at": "2026-09-24T12:46:52.000Z",
+  "updated_at": "2026-09-24T12:46:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "rust",
+    "safetensors",
+    "distilbert",
+    "exbert",
+    "en",
+    "dataset:bookcorpus",
+    "dataset:wikipedia",
+    "arxiv:1910.01108",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66985530,
+  "parameters_human": "67.0M",
+  "storage_bytes": 1529024387,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "mahmad-10xe/Qwen3.5-35B-A3B-w4a16-allocator-s21958-a0510-imatrix-unsloth-exportrep",
+  "slug": "mahmad-10xe-qwen3-5-35b-a3b-w4a16-allocator-s21958-a0510-imatrix-unsloth-exportrep",
+  "author": "mahmad-10xe",
+  "url": "https://huggingface.co/mahmad-10xe/Qwen3.5-35B-A3B-w4a16-allocator-s21958-a0510-imatrix-unsloth-exportrep",
+  "created_at": "2026-09-24T02:19:24.000Z",
+  "updated_at": "2026-09-24T02:22:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 70875659632,
+  "parameters_human": "70.88B",
+  "storage_bytes": 109301298825,
+  "storage_human": "109.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

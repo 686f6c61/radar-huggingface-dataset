@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "heykorshun/bge-reranker-v2-m3-mlx-int8",
+  "slug": "heykorshun-bge-reranker-v2-m3-mlx-int8",
+  "author": "heykorshun",
+  "url": "https://huggingface.co/heykorshun/bge-reranker-v2-m3-mlx-int8",
+  "created_at": "2026-09-24T17:28:29.000Z",
+  "updated_at": "2026-09-24T17:29:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "xlm-roberta",
+    "mlx-swift",
+    "8-bit",
+    "quantized",
+    "text-classification",
+    "base_model:BAAI/bge-reranker-v2-m3",
+    "base_model:finetune:BAAI/bge-reranker-v2-m3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 160209089,
+  "parameters_human": "160.2M",
+  "storage_bytes": 658016167,
+  "storage_human": "658 MB",
+  "base_model": "BAAI/bge-reranker-v2-m3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mystic Words Gold answers",
+      "url": "https://mysticwordsanswers.org/mystic-words-gold-answers",
+      "snippet": "Welcome to the page about “ Mystic words Gold answers ”. Here you will be able to find all the 50 level answers for Gold pack.Read more"
+    },
+    {
+      "title": "Scholarly types crossword - 7 Little Words Answers",
+      "url": "https://mysticwordsanswers.org/game/scholarly-types-crossword",
+      "snippet": "In just a few seconds you will find the answer to the clue “ Scholarly types ” of the “ 7 little words game ”. Each bite-size puzzle in 7 …Read more"
+    },
+    {
+      "title": "Mystic Words Tomato answers",
+      "url": "https://mysticwordsanswers.org/mystic-words-tomato-answers",
+      "snippet": "Welcome to the page about “ Mystic words Tomato answers ”. Here you will be able to find all the 50 level answers for Tomato pack.Read more"
+    },
+    {
+      "title": "Inkling 7 Little Words",
+      "url": "https://mysticwordsanswers.org/inkling-7-little-words.html",
+      "snippet": "Dec 18, 2019 · Each bite-size puzzle in 7 Little Words consists of 7 clues, 7 mystery words, and 20 letter groups. There is no doubt …Read more"
+    },
+    {
+      "title": "Flightless birds 7 letters – 7 Little Words",
+      "url": "https://mysticwordsanswers.org/flightless-birds-7-letters-7-little-words.html",
+      "snippet": "Aug 27, 2018 · Welcome to the page with the answer to the clue Flightless birds. This is just one of the 7 puzzles found on today’s …Read more"
+    }
+  ]
+}

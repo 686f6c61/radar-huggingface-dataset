@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alibaba-pai/Qwen-Image-2.1-Fun-Controlnet-Union",
+  "slug": "alibaba-pai-qwen-image-2-1-fun-controlnet-union",
+  "author": "alibaba-pai",
+  "url": "https://huggingface.co/alibaba-pai/Qwen-Image-2.1-Fun-Controlnet-Union",
+  "created_at": "2026-09-23T07:34:57.000Z",
+  "updated_at": "2026-09-24T06:02:12.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "videox_fun",
+  "languages": [],
+  "tags": [
+    "videox_fun",
+    "controlnet",
+    "controlnet-union",
+    "text-to-image",
+    "image-to-image",
+    "image-inpainting",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 23,
+  "downloads_30d": 0,
+  "trending_score": 23,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7588772101,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alibaba.com: Manufacturers, Suppliers, Exporters & Importers from …",
+      "url": "https://www.alibaba.com/",
+      "snippet": "Find quality Manufacturers, Suppliers, Exporters, Importers, Buyers, Wholesalers, Products and Trade Leads from our award …"
+    },
+    {
+      "title": "Alibaba - la plus grande plateforme de commerce B2B en ligne au …",
+      "url": "https://french.alibaba.com/",
+      "snippet": "Alibaba, la plus grande plateforme de commerce B2B en ligne au monde. Alibaba propose des fabricants, des fournisseurs, des …"
+    },
+    {
+      "title": "Alibaba.com-Alibaba Group",
+      "url": "https://www.alibabagroup.com/en-US/about-alibaba-businesses-1747711844698554368",
+      "snippet": "Launched in 1999 as the first business of Alibaba Group, Alibaba.com has evolved into a leading platform for global business-to …"
+    },
+    {
+      "title": "Alibaba.com",
+      "url": "https://www.alibaba.com/catalogs/",
+      "snippet": "Find and source products from a wide range of categories on Alibaba.com, connecting global buyers with reliable suppliers for …"
+    },
+    {
+      "title": "AliExpress France - Livraison gratuite et économisez plus",
+      "url": "https://fr.aliexpress.com/",
+      "snippet": "Avis Sur AliExpress.com, un site de chez Alibaba, vous pouvez choisir parmi plus de 111 millions d'offres de qualité sur la mode, …"
+    }
+  ]
+}

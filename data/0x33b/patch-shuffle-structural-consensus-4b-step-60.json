@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "0x33B/patch-shuffle-structural-consensus-4b-step-60",
+  "slug": "0x33b-patch-shuffle-structural-consensus-4b-step-60",
+  "author": "0x33B",
+  "url": "https://huggingface.co/0x33B/patch-shuffle-structural-consensus-4b-step-60",
+  "created_at": "2026-09-24T03:10:36.000Z",
+  "updated_at": "2026-09-24T03:11:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 5174964736,
+  "parameters_human": "5.17B",
+  "storage_bytes": 10370008653,
+  "storage_human": "10.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "When Semantics Regulate: Rethinking Patch Shuffle and Internal Bias for ...",
+      "url": "https://arxiv.org/pdf/2511.19126v1",
+      "snippet": "Abstract The rapid progress of GANs and Diffusion Models poses new challenges for detecting AI-generated images. Al-though CLIP-based detectors exhibit promising generaliza-tion, they often rely on semantic cues rather than generator artifacts, leading to brittle performance under distribution shifts. In this work, we revisit the nature of semantic bias and uncover that Patch Shuffle provides ..."
+    },
+    {
+      "title": "When Semantics Regulate: Rethinking Patch Shuffle and Internal Bias for ...",
+      "url": "https://arxiv.org/html/2511.19126",
+      "snippet": "Abstract The rapid progress of GANs and Diffusion Models poses new challenges for detecting AI-generated images. Although CLIP-based detectors exhibit promising generalization, they often rely on semantic cues rather than generator artifacts, leading to brittle performance under distribution shifts. In this work, we revisit the nature of semantic bias and uncover that Patch Shuffle provides an ..."
+    },
+    {
+      "title": "When Semantics Regulate: Rethinking Patch Shuffle and Internal Bias for ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/when-semantics-regulate-rethinking-patch-shuffle-internal",
+      "snippet": "The technical contribution involves two core interventions. First, the researchers propose semantic-aware patch handling —essentially, being more selective about when and how to shuffle patches. Instead of aggressive random rearrangement, they preserve spatial relationships that maintain image meaning while still providing robustness."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Shieldstral: Mistral&#x27;s 3B Open Safety Model for AI Content Moderation",
+      "url": "https://www.renascence.io/news/15574/shieldstral-mistrals-3b-open-safety-model-for-ai-content-moderation",
+      "snippet": "What happened Mistral has released Shieldstral, a compact 3-billion-parameter open model designed to monitor AI inputs and outputs for safety violations. Unlike conventional content-moderation systems that rely on fixed, predefined categories, Shieldstral accepts natural-language yes-or-no questions, allowing operators to define their own safety criteria at runtime without depending on a third ..."
+    }
+  ]
+}

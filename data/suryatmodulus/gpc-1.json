@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "suryatmodulus/GPC-1",
+  "slug": "suryatmodulus-gpc-1",
+  "author": "suryatmodulus",
+  "url": "https://huggingface.co/suryatmodulus/GPC-1",
+  "created_at": "2026-09-24T15:38:55.000Z",
+  "updated_at": "2026-09-24T15:38:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "classification",
+    "structured-prediction",
+    "multimodal",
+    "peft",
+    "lora",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70273690447,
+  "storage_human": "70.3 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Strictly Come Dancing — Digital Spy",
+      "url": "https://forums.digitalspy.com/categories/strictly-come-dancing",
+      "snippet": "1 day ago · Click here to check out Digital Spy's Strictly Come Dancing 2024 coverage, including breaking news and rumours for …"
+    },
+    {
+      "title": "Big Brother — Digital Spy",
+      "url": "https://forums.digitalspy.com/categories/big-brother",
+      "snippet": "Sep 10, 2026 · The UK's biggest and busiest Big Brother forum. Includes dedicated sub-forum for international versions."
+    },
+    {
+      "title": "DCUM Forum - DCUM Weblog",
+      "url": "https://www.dcurbanmom.com/jforum/forums/list.page",
+      "snippet": "1 day ago · General Parenting Discussion Discussions of topics not directly related to children of a specific age. Please post …"
+    },
+    {
+      "title": "DH wants me to be a \"hotwife\" - DCUM Weblog",
+      "url": "https://www.dcurbanmom.com/jforum/posts/list/45/1261194.page",
+      "snippet": "Mar 5, 2025 · Porn is odd in that what worked once won’t work again, so if you were satisfied on page one of porn hub fast-forward …"
+    },
+    {
+      "title": "Guide to A-level results day 2026 for university applicants",
+      "url": "https://www.thestudentroom.co.uk/results/guide-to-a-level-results-day-for-university-applicants",
+      "snippet": "Jun 30, 2023 · You should see your Hub update sometime in the morning. If it's getting towards lunchtime on results day and you're …"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "Vhicktour/llama3.1-heretic-unsensored",
+  "slug": "vhicktour-llama3-1-heretic-unsensored",
+  "author": "Vhicktour",
+  "url": "https://huggingface.co/Vhicktour/llama3.1-heretic-unsensored",
+  "created_at": "2026-09-24T16:13:52.000Z",
+  "updated_at": "2026-09-24T16:13:52.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "en",
+    "dataset:OpenCoder-LLM/opc-sft-stage1",
+    "dataset:OpenCoder-LLM/opc-sft-stage2",
+    "dataset:microsoft/orca-agentinstruct-1M-v1",
+    "dataset:microsoft/orca-math-word-problems-200k",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "dataset:AI-MO/NuminaMath-CoT",
+    "dataset:AI-MO/NuminaMath-TIR",
+    "dataset:allenai/tulu-3-sft-mixture",
+    "dataset:cognitivecomputations/dolphin-coder",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:cognitivecomputations/samantha-data",
+    "dataset:m-a-p/CodeFeedback-Filtered-Instruction",
+    "dataset:m-a-p/Code-Feedback",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "base_model:finetune:meta-llama/Llama-3.1-8B",
+    "license:llama3.1",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030277632,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077799578,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval (0-Shot)",
+      "metric": "averaged accuracy",
+      "value": 76.21
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "BBH (3-Shot)",
+      "metric": "normalized accuracy",
+      "value": 27.63
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MATH Lvl 5 (4-Shot)",
+      "metric": "exact match",
+      "value": 10.5
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GPQA (0-shot)",
+      "metric": "acc_norm",
+      "value": 4.36
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MuSR (0-shot)",
+      "metric": "acc_norm",
+      "value": 8.97
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU-PRO (5-shot)",
+      "metric": "accuracy",
+      "value": 22.13
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "OscarShaitan/Qwen3-VL-4B-Instruct-4bit",
+  "slug": "oscarshaitan-qwen3-vl-4b-instruct-4bit",
+  "author": "OscarShaitan",
+  "url": "https://huggingface.co/OscarShaitan/Qwen3-VL-4B-Instruct-4bit",
+  "created_at": "2026-09-24T17:11:45.000Z",
+  "updated_at": "2026-09-24T17:11:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4437815808,
+  "parameters_human": "4.44B",
+  "storage_bytes": 3105189937,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

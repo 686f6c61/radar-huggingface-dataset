@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Phuc-HugigFace/Qwen3.5-2B-Vi-SFT-v2.1",
+  "slug": "phuc-hugigface-qwen3-5-2b-vi-sft-v2-1",
+  "author": "Phuc-HugigFace",
+  "url": "https://huggingface.co/Phuc-HugigFace/Qwen3.5-2B-Vi-SFT-v2.1",
+  "created_at": "2026-09-24T02:31:56.000Z",
+  "updated_at": "2026-09-24T02:36:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 86,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 3783681373,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

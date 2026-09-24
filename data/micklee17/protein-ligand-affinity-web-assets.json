@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "micklee17/protein-ligand-affinity-web-assets",
+  "slug": "micklee17-protein-ligand-affinity-web-assets",
+  "author": "micklee17",
+  "url": "https://huggingface.co/micklee17/protein-ligand-affinity-web-assets",
+  "created_at": "2026-09-24T17:51:38.000Z",
+  "updated_at": "2026-09-24T18:04:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 916062208,
+  "storage_human": "916 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

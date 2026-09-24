@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "unamed12/autodl-sft-s1k-lr5e-7",
+  "slug": "unamed12-autodl-sft-s1k-lr5e-7",
+  "author": "unamed12",
+  "url": "https://huggingface.co/unamed12/autodl-sft-s1k-lr5e-7",
+  "created_at": "2026-09-24T15:53:19.000Z",
+  "updated_at": "2026-09-24T16:42:16.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392961349,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unamed12/autodl-sft-col4096-lr3_75e-7 · Hugging Face",
+      "url": "https://huggingface.co/unamed12/autodl-sft-col4096-lr3_75e-7",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unamed12/autodl-sft-col6144 · Hugging Face",
+      "url": "https://huggingface.co/unamed12/autodl-sft-col6144",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unamed12/autodl-sft-col4096 · Hugging Face",
+      "url": "https://huggingface.co/unamed12/autodl-sft-col4096",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unamed12/autodl-sft-col8192 · Hugging Face",
+      "url": "https://huggingface.co/unamed12/autodl-sft-col8192",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unamed12/autodl-wsft-col4096 · Hugging Face",
+      "url": "https://huggingface.co/unamed12/autodl-wsft-col4096",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

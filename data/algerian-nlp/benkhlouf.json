@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "algerian-nlp/BENKHLOUF",
+  "slug": "algerian-nlp-benkhlouf",
+  "author": "algerian-nlp",
+  "url": "https://huggingface.co/algerian-nlp/BENKHLOUF",
+  "created_at": "2026-09-24T16:59:16.000Z",
+  "updated_at": "2026-09-24T17:18:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "arq"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "algerian-darija",
+    "arabizi",
+    "arabic",
+    "sentence-similarity",
+    "feature-extraction",
+    "matryoshka",
+    "north-africa",
+    "low-resource",
+    "arq",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278075904,
+  "parameters_human": "278.1M",
+  "storage_bytes": 1134485465,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Semantic Textual Similarity (Validation Split)",
+      "dataset": "Algerian Darija STS Validation (1,000 pairs)",
+      "metric": "Positive Pair Cosine Similarity (768d, 3 epochs)",
+      "value": 0.853
+    },
+    {
+      "task": "Semantic Textual Similarity (Validation Split)",
+      "dataset": "Algerian Darija STS Validation (1,000 pairs)",
+      "metric": "Matryoshka 64d Cosine Similarity (64d, 3 epochs)",
+      "value": 0.897
+    },
+    {
+      "task": "Semantic Textual Similarity (Validation Split)",
+      "dataset": "Algerian Darija STS Validation (1,000 pairs)",
+      "metric": "Cross-Script Transfer Arabizi-to-Arabic (768d, 3 epochs)",
+      "value": 0.708
+    },
+    {
+      "task": "Semantic Textual Similarity (Validation Split)",
+      "dataset": "Algerian Darija STS Validation (1,000 pairs)",
+      "metric": "Negative Pair Orthogonality (768d, 3 epochs)",
+      "value": 0.001
+    }
+  ],
+  "sources": []
+}

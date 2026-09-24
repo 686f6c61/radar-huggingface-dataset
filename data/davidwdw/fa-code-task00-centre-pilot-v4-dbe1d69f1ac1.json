@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-code-task00-centre-pilot-v4-dbe1d69f1ac1",
+  "slug": "davidwdw-fa-code-task00-centre-pilot-v4-dbe1d69f1ac1",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v4-dbe1d69f1ac1",
+  "created_at": "2026-09-24T19:12:41.000Z",
+  "updated_at": "2026-09-24T19:12:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Greek Gods List • Names of the Greek Gods - Greek Gods and Goddesses",
+      "url": "https://greekgodsandgoddesses.net/gods/",
+      "snippet": "This page lists every major Greek god, organized by rank and domain, with each entry verified against the ancient sources — …"
+    },
+    {
+      "title": "List of Greek deities - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_Greek_deities",
+      "snippet": "Art contributed to how the Greeks conceived of the gods, and depictions would often assign deities certain symbols, such as the …"
+    },
+    {
+      "title": "≡ Mythology Greek Gods and Goddesses Ultimate List 2026",
+      "url": "https://www.adducation.info/general-knowledge-politics-religion/greek-gods-and-goddesses/",
+      "snippet": "Sep 14, 2026 · List of Greek gods and goddesses and Roman equivalents. Greek heroes, mortals and Olympian gods in mythology. …"
+    },
+    {
+      "title": "All Greek Gods, Complete A-Z List | Greek Gods & Mythology | Old Greek Gods",
+      "url": "https://oldgreekgods.com/gods",
+      "snippet": "Explore every Greek god and goddess. From Zeus and Athena to Hades and Aphrodite, discover their powers, symbols, myths, and …"
+    },
+    {
+      "title": "Family tree of the Greek gods - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Family_tree_of_the_Greek_gods",
+      "snippet": "Family tree of the Greek gods The following is a family tree of gods, goddesses, and other divine and semi-divine figures from …"
+    }
+  ]
+}

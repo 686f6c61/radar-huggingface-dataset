@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "dopaemon/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-uncensored-heretic-oQ4e",
+  "slug": "dopaemon-gemma-4-12b-agentic-fable5-composer2-5-v2-3-5x-tau2-uncensored-heretic-oq4e",
+  "author": "dopaemon",
+  "url": "https://huggingface.co/dopaemon/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-uncensored-heretic-oQ4e",
+  "created_at": "2026-09-24T12:48:53.000Z",
+  "updated_at": "2026-09-24T13:31:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4_unified",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 7109961625,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

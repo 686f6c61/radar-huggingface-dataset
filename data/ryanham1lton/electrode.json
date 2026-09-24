@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Electrode",
+  "slug": "ryanham1lton-electrode",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Electrode",
+  "created_at": "2026-09-24T14:54:28.000Z",
+  "updated_at": "2026-09-24T14:56:04.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118491397,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton/ElectrikeES · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/ElectrikeES",
+      "snippet": "Ryanham1lton / ElectrikeES like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Ryanham1lton/GolemMH · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/GolemMH",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Towards optimal 3D battery electrode architecture: Integrating ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2405829724002228",
+      "snippet": "The advanced prediction model is expected to optimize the structure through sweeping design parameters for improved electrochemical performance, validated both experimentally and computationally. These electrochemical model-based simulations play a crucial role in comprehending and pushing the boundaries of transport within the electrode."
+    },
+    {
+      "title": "Machine learning-assisted kinetic matching model for rational ... - Nature",
+      "url": "https://www.nature.com/articles/s41467-025-67996-8",
+      "snippet": "Machine learning implementation An XGBoost model was employed to predict the electrochemical performance of dual-intercalation AZIBs based on diffusion-derived descriptors."
+    },
+    {
+      "title": "Artificial intelligence for the understanding of electrolyte chemistry ...",
+      "url": "https://nso-journal.org/articles/nso/full_html/2024/02/NSO20230039/NSO20230039.html",
+      "snippet": "These studies provide a rich database for AI research in the field of batteries [39, 40]. In addition, the theoretical calculation and simulation of the model of the electrode/electrolyte interface is increasingly perfect, providing a solid foundation for AI research [41]."
+    }
+  ]
+}

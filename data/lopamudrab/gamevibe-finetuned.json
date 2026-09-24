@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "LopamudraB/gamevibe-finetuned",
+  "slug": "lopamudrab-gamevibe-finetuned",
+  "author": "LopamudraB",
+  "url": "https://huggingface.co/LopamudraB/gamevibe-finetuned",
+  "created_at": "2026-09-24T14:21:34.000Z",
+  "updated_at": "2026-09-24T14:23:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1987585364,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Mar 30, 2016 · Une offre diversifiée de services en ligne vous est proposée dans votre espace Finances publiques. Vous pouvez …"
+    },
+    {
+      "title": "Particulier - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "À la une Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 Vous …"
+    },
+    {
+      "title": "Accueil impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/accueil",
+      "snippet": "Gérer mon prélèvement à la source Mariage, naissance, retraite, évolution salariale : adaptez votre impôt à votre nouvelle situation."
+    },
+    {
+      "title": "Créer et accéder à mon espace - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/acceder-mon-espace",
+      "snippet": "Jul 27, 2016 · Si vous disposez d’un compte FranceConnecté, vous pouvez utiliser l’icône FranceConnect (voir plus bas).. Dans le …"
+    },
+    {
+      "title": "Avis d'impôt sur les revenus - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/avis-dimpot-sur-le-revenu",
+      "snippet": "Aug 18, 2016 · l'échéancier du ou des prélèvements sur votre compte bancaire s'il vous reste une somme à payer (une échéance si …"
+    }
+  ]
+}

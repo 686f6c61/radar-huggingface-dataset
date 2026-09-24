@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Cooper1991/retrieval-quantized",
+  "slug": "cooper1991-retrieval-quantized",
+  "author": "Cooper1991",
+  "url": "https://huggingface.co/Cooper1991/retrieval-quantized",
+  "created_at": "2026-09-24T02:45:45.000Z",
+  "updated_at": "2026-09-24T02:45:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Representation is representation of similarities - Shimon Edelman",
+      "url": "https://shimon-edelman.github.io/Archive/Edelman-BBS98.pdf",
+      "snippet": "Furthermore, a general expression for similarity between two stimuli, based on com- parisons to reference shapes, can be used to derive models of perceived ..."
+    },
+    {
+      "title": "978-1-4615-5529-2.pdf - Springer Nature",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-1-4615-5529-2.pdf",
+      "snippet": "Consider the feature learning model of section 4.3.2 (recall figure 4.1). In ... • learning domain models, e.g., [O'Sullivan et aI.. 1996; Thrun ..."
+    },
+    {
+      "title": "AERONAUTICAL ENGINEERING",
+      "url": "https://ntrs.nasa.gov/api/citations/19960001624/downloads/19960001624.pdf",
+      "snippet": "... model of the blade includes nonlinearities because of moderately large ... ai (frames but, for a more detailed estimate, values for some categories of ..."
+    },
+    {
+      "title": "Download Full Issue - The Science and Information (SAI) Organization",
+      "url": "https://thesai.org/Downloads/IJACSA_Volume4No1.pdf",
+      "snippet": "... Model for Dynamic Planning of Supply Chain. Authors: Latifa Ouzizi, EL ... Retrieval and Summarization of Web based Documents. Authors: Salah T. Babek ..."
+    },
+    {
+      "title": "WEBB - The Physics of Three-Dimensional Radiation Therapy - Scribd",
+      "url": "https://www.scribd.com/document/598214688/WEBB-The-Physics-of-Three-dimensional-Radiation-Therapy",
+      "snippet": "beam stopper of projected radii A I and A 2 when 'good' parameters RI = 1.7A I ... sumptions which went into the 'thin' model are violated by the 'thick' model."
+    }
+  ]
+}

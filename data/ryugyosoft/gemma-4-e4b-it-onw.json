@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ryugyosoft/gemma-4-E4B-it-onw",
+  "slug": "ryugyosoft-gemma-4-e4b-it-onw",
+  "author": "ryugyosoft",
+  "url": "https://huggingface.co/ryugyosoft/gemma-4-E4B-it-onw",
+  "created_at": "2026-09-24T17:18:28.000Z",
+  "updated_at": "2026-09-24T17:22:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "openvino",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "openvino",
+    "gemma4",
+    "npu",
+    "intel",
+    "intel-npu",
+    "onw",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "ja",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5744934780,
+  "storage_human": "5.7 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "笔记本电脑怎么设置调节CPU散热风扇转速 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/d621e8da1cc8336965913fad.html",
+      "snippet": "Aug 22, 2020 · 方法1：在电脑桌面中，鼠标右键左下角的开始，在弹出的列表中选择“运行”选项，打开运行。"
+    },
+    {
+      "title": "Photoshop CS6 序列号完美激活教程 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/a65957f43976ff24e67f9b87.html",
+      "snippet": "Mar 8, 2018 · Photoshop CS6 序列号完美激活教程,关于6怎么激活的教程，我给大家分享一下"
+    },
+    {
+      "title": "怎么判断是不是灰指甲？ - 知乎",
+      "url": "https://www.zhihu.com/question/46634698",
+      "snippet": "灰指甲你必须知道的症状！！ 甲下型灰指甲常从甲板两侧或未端开始，多先有轻度甲沟炎，后来逐渐变成慢性或渐趋消退。甲沟炎可 …"
+    },
+    {
+      "title": "Desinstaller TOTAL AV - Logiciels",
+      "url": "https://forums.commentcamarche.net/forum/affich-38256609-desinstaller-total-av",
+      "snippet": "Dec 16, 2025 · Bonjour, je veux desinstaller TOTAL AV, je suis allé sur programmes et fonctionnalité mais il n'apparait pas. Pouvez …"
+    },
+    {
+      "title": "腾讯 DNS，阿里 DNS，百度 DNS 有什么区别？哪个更好用？",
+      "url": "https://www.zhihu.com/question/48438173",
+      "snippet": "腾讯 DNS IP：119.29.29.29 备用：182.254.116.116 阿里DNS IP：223.5.5.5 223.6.6.6 百度DNS IP:180.76.76.76 之前测试过，感觉 …"
+    }
+  ]
+}

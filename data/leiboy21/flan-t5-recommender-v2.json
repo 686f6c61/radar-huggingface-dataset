@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Leiboy21/Flan-t5-recommender-v2",
+  "slug": "leiboy21-flan-t5-recommender-v2",
+  "author": "Leiboy21",
+  "url": "https://huggingface.co/Leiboy21/Flan-t5-recommender-v2",
+  "created_at": "2026-09-24T16:59:35.000Z",
+  "updated_at": "2026-09-24T17:13:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "t5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 247577856,
+  "parameters_human": "247.6M",
+  "storage_bytes": 990345064,
+  "storage_human": "990 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "Pilestin/qwen2.5-3b-debug-v1-lora",
+  "slug": "pilestin-qwen2-5-3b-debug-v1-lora",
+  "author": "Pilestin",
+  "url": "https://huggingface.co/Pilestin/qwen2.5-3b-debug-v1-lora",
+  "created_at": "2026-09-24T14:58:39.000Z",
+  "updated_at": "2026-09-24T15:01:26.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "code",
+    "python",
+    "debugging",
+    "program-repair",
+    "focustracer",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223424,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Python program repair",
+      "dataset": "CodeNetPy (Python test split, 960 buggy/fixed pairs)",
+      "metric": "pass@1 (execution-based)",
+      "value": 64.8
+    },
+    {
+      "task": "Python program repair",
+      "dataset": "CodeNetPy (Python test split, 960 buggy/fixed pairs)",
+      "metric": "Exact match",
+      "value": 14.4
+    }
+  ],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5 Fine-Tuning Tutorial: Full Colab Guide with LoRA",
+      "url": "https://ai4u.space/blog/fine-tune-qwen2-5-3b-model-colab-guide",
+      "snippet": "Fine-Tuning Qwen2.5-3B Model: A Complete Colab Guide Fine-tuning Qwen2.5-3B on Colab with LoRA adapters isn&#x27;t some theoretical hack - it&#x27;s a battle-tested, resource-smart strategy to adapt a powerful LLM for your domain without frying your GPU. This guide walks you through every step: environment setup, model loading, dataset prep, training, evaluation, and deployment - all backed by real ..."
+    },
+    {
+      "title": "bunnycore/qwen-2.5-3b-lora_model · Hugging Face",
+      "url": "https://huggingface.co/bunnycore/qwen-2.5-3b-lora_model",
+      "snippet": "Uploaded model Developed by: bunnycore License: apache-2.0 Finetuned from model : unsloth/Qwen2.5-3B-Instruct This qwen2 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Qwen 2.5 3B Lora Model by bunnycore — VRAM 0.1GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/bunnycore%2Fqwen-2.5-3b-lora_model,3UrwCGnBmelPPKHw8CFWZG",
+      "snippet": "Qwen 2.5 3B Lora Model is an open-source 3b LLM by bunnycore. VRAM 0.1GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Visit our Hugging Face or ModelScope organization (click links above), search checkpoints with names starting with Qwen2.5-or visit the Qwen2.5 collection, and you will find all you need! Enjoy! In the past three months since Qwen2&#x27;s release, numerous developers have built new models on the Qwen2 ..."
+    }
+  ]
+}

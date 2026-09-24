@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sara-huggingface/FoodExtract-Vision-SmolVLM2-500M-fine-tune-v1-VIDEO",
+  "slug": "sara-huggingface-foodextract-vision-smolvlm2-500m-fine-tune-v1-video",
+  "author": "sara-huggingface",
+  "url": "https://huggingface.co/sara-huggingface/FoodExtract-Vision-SmolVLM2-500M-fine-tune-v1-VIDEO",
+  "created_at": "2026-09-24T16:55:34.000Z",
+  "updated_at": "2026-09-24T18:23:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "smolvlm",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "conversational",
+    "base_model:HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 507482304,
+  "parameters_human": "507.5M",
+  "storage_bytes": 2030064242,
+  "storage_human": "2.0 GB",
+  "base_model": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZARA France | Nouvelle Collection en ligne",
+      "url": "https://www.zara.com/fr/",
+      "snippet": "Tendances vêtements Femme, Homme et Enfants sur la boutique ZARA en ligne. Nouveautés, Mode, Collections et Lookbooks …"
+    },
+    {
+      "title": "ZARA Official Website",
+      "url": "https://www.zara.com/",
+      "snippet": "Discover the latest trends in fashion for women, men, and kids at ZARA. Shop new arrivals, collections, and lookbooks online."
+    },
+    {
+      "title": "SARA",
+      "url": "https://www.sara-asso.fr/",
+      "snippet": "Depuis plus de 10 ans, la SARA accompagne les organisations avec des solutions d’achats mutualisés, de conseil, d’audit et de …"
+    },
+    {
+      "title": "Enterprise Version of Microsoft Support and Recovery Assistant",
+      "url": "https://www.microsoft.com/en-us/download/details.aspx?id=103391&msockid=39d34042a2ee654221b3579ca34164a1",
+      "snippet": "Mar 12, 2026 · This version of Microsoft Support and Recovery Assistant (SaRA) is a self-contained version that is scriptable (i.e., …"
+    },
+    {
+      "title": "Sara Giraudeau — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sara_Giraudeau",
+      "snippet": "Sara Giraudeau, née le 1er août 1985 à Boulogne-Billancourt, est une actrice française."
+    }
+  ]
+}

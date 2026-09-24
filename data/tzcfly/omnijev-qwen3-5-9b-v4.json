@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tzcfly/OmniJev-Qwen3.5-9B-v4",
+  "slug": "tzcfly-omnijev-qwen3-5-9b-v4",
+  "author": "tzcfly",
+  "url": "https://huggingface.co/tzcfly/OmniJev-Qwen3.5-9B-v4",
+  "created_at": "2026-09-24T14:56:23.000Z",
+  "updated_at": "2026-09-24T14:56:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "omnijev",
+    "lora",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12780848,
+  "storage_human": "13 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies",
+      "url": "https://www.xnxx.com/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, …Read more"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Pornhub provides you with unlimited free porn videos with the hottest pornstars. Enjoy the largest amateur porn community on the …"
+    },
+    {
+      "title": "Free Sex Videos, HD Porn Movies | New XXX Videos at Worldsex",
+      "url": "https://www.worldsex.com/videos/",
+      "snippet": "Watch the latest free porn videos of the highest quality. Our XXX sex movies update very frequently. Play clips from the best XXX …"
+    },
+    {
+      "title": "Sexu: Free HD Porn & Sex Videos - New XXX Movies Daily",
+      "url": "https://sexu.com/",
+      "snippet": "Watch free HD porn on Sexu - thousands of XXX sex videos in every category: Teen, MILF, anal, POV & more. New movies added …"
+    }
+  ]
+}

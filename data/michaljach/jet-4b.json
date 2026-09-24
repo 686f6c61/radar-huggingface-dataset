@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "michaljach/jet-4b",
+  "slug": "michaljach-jet-4b",
+  "author": "michaljach",
+  "url": "https://huggingface.co/michaljach/jet-4b",
+  "created_at": "2026-09-24T14:50:36.000Z",
+  "updated_at": "2026-09-24T14:51:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision-model",
+    "lora",
+    "qwen3_5",
+    "transformers",
+    "calibrated",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149916333,
+  "storage_human": "150 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "michaljach/jet at main - Hugging Face",
+      "url": "https://huggingface.co/michaljach/jet/tree/main",
+      "snippet": "Instructions to use michaljach/jet with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use michaljach/jet with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir jet michaljach/jet Notebooks Google Colab Kaggle"
+    },
+    {
+      "title": "Jet API - a Hugging Face Space by michaljach",
+      "url": "https://huggingface.co/spaces/michaljach/jet",
+      "snippet": "Type any question and Jet will provide several answer choices, each labeled with a confidence score and probability. The service runs on a remote server, so you only need to supply text and receive..."
+    },
+    {
+      "title": "GitHub - michaljach/ai",
+      "url": "https://github.com/michaljach/ai",
+      "snippet": "Ai - AI Chat A modern iOS chat application built with SwiftUI and The Composable Architecture that connects to Google AI (Gemini) for AI-powered conversations with multimodal capabilities."
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    },
+    {
+      "title": "Jet-Nemotron 4B - open weights | LLM Reference",
+      "url": "https://www.llmreference.com/model/jet-nemotron-4b",
+      "snippet": "Jet-Nemotron 4B is NVIDIA AI&#x27;s Jet-Nemotron model. It was released 2025-08-20."
+    }
+  ]
+}

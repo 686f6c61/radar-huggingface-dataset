@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "KlangAI/pianissimo-sv",
+  "slug": "klangai-pianissimo-sv",
+  "author": "KlangAI",
+  "url": "https://huggingface.co/KlangAI/pianissimo-sv",
+  "created_at": "2026-09-23T05:06:46.000Z",
+  "updated_at": "2026-09-23T12:39:08.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "nemo",
+    "speech",
+    "audio",
+    "fastconformer",
+    "tdt",
+    "swedish",
+    "automatic-speech-recognition",
+    "sv",
+    "dataset:google/fleurs",
+    "dataset:KlangAI/klang-dialects",
+    "base_model:nvidia/parakeet-tdt-0.6b-v3",
+    "base_model:finetune:nvidia/parakeet-tdt-0.6b-v3",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 816,
+  "trending_score": 14,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2509322240,
+  "storage_human": "2.5 GB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Log into Facebook",
+      "url": "https://upload.facebook.com/login/",
+      "snippet": "Email or mobile number PasswordRead more"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://upload.facebook.com/login/identify/",
+      "snippet": "Enter your mobile number or email. Mobile number or email"
+    },
+    {
+      "title": "Borrar archivos temporales (Local\\Temp): Windows 11, 10, Mac - CCM",
+      "url": "https://es.ccm.net/ciberseguridad/guias-de-ciberseguridad/1134-como-eliminar-los-archivos-temporales-appdata-local-temp/",
+      "snippet": "Mar 19, 2024 · Con todas las actividades realizadas diariamente en tu ordenador, cada día se almacenan archivos que sólo ocupan …"
+    },
+    {
+      "title": "Sign into Yahoo: with Facebook, with Google - CCM",
+      "url": "https://ccm.net/apps-sites/email/435-sign-in-to-yahoo-with-facebook-or-google/",
+      "snippet": "Aug 30, 2022 · Yahoo previously allowed users to login to their Yahoo account with their Facebook or Google account and recover it. …"
+    },
+    {
+      "title": "Download audio from Facebook Messenger: on PC, mobile",
+      "url": "https://ccm.net/apps-sites/social-media-instant-messaging/511-facebook-messenger-how-to-download-audio-files/",
+      "snippet": "Jul 14, 2023 · Whilst you can easily save photos and videos to your phone, Facebook doesn't allow you to download audio directly …"
+    }
+  ]
+}

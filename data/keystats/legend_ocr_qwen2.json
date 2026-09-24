@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "keystats/Legend_ocr_qwen2",
+  "slug": "keystats-legend_ocr_qwen2",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/Legend_ocr_qwen2",
+  "created_at": "2026-09-24T02:48:08.000Z",
+  "updated_at": "2026-09-24T02:49:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 8291375616,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16594251722,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

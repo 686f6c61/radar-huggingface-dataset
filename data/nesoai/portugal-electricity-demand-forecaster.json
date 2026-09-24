@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nesoai/portugal-electricity-demand-forecaster",
+  "slug": "nesoai-portugal-electricity-demand-forecaster",
+  "author": "nesoai",
+  "url": "https://huggingface.co/nesoai/portugal-electricity-demand-forecaster",
+  "created_at": "2026-09-24T14:20:13.000Z",
+  "updated_at": "2026-09-24T14:20:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": null,
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "joblib",
+    "time-series-forecasting",
+    "energy-forecasting",
+    "electricity-demand",
+    "day-ahead-prices",
+    "lightgbm",
+    "tabular-regression",
+    "conformal-prediction",
+    "portugal",
+    "europe",
+    "entsoe",
+    "en",
+    "pt",
+    "dataset:hsilvosa/entsoe-day-ahead",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1587461,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Electricity Demand Forecasting",
+      "dataset": "ENTSO-E Portugal Bidding Zone (PT)",
+      "metric": "MAE",
+      "value": 45.528
+    },
+    {
+      "task": "Electricity Demand Forecasting",
+      "dataset": "ENTSO-E Portugal Bidding Zone (PT)",
+      "metric": "RMSE",
+      "value": 90.863
+    }
+  ],
+  "sources": []
+}

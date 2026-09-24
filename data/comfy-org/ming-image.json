@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/Ming-Image",
+  "slug": "comfy-org-ming-image",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/Ming-Image",
+  "created_at": "2026-09-24T07:13:14.000Z",
+  "updated_at": "2026-09-24T07:33:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:inclusionAI/Ming-Image-0.1-Design",
+    "base_model:finetune:inclusionAI/Ming-Image-0.1-Design",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 0,
+  "trending_score": 16,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 162408496865,
+  "storage_human": "162.4 GB",
+  "base_model": "inclusionAI/Ming-Image-0.1-Design, inclusionAI/Ming-Image-0.1-Design-Layer",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy - Professional Control of Visual AI",
+      "url": "https://comfy.org/",
+      "snippet": "Comfy is the AI creation engine for visual professionals who demand control over every model, every parameter, and every output."
+    },
+    {
+      "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular diffusion ...",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "snippet": "ComfyUI is the AI creation engine for visual professionals who demand control over every model, every parameter, and every output. Its powerful and modular node graph interface empowers creatives to generate images, videos, 3D models, audio, ..."
+    },
+    {
+      "title": "Download Comfy Desktop - Run AI on Your Hardware",
+      "url": "https://comfy.org/download",
+      "snippet": "Need more power? TRY COMFY CLOUD Powerful GPUs, same workflow, same results, from anywhere."
+    },
+    {
+      "title": "ComfyUI | Generate video, images, 3D, audio with AI",
+      "url": "https://www.comfyai.org/",
+      "snippet": "Build AI workflows visually by connecting nodes on a canvas. Unlike traditional linear UIs, ComfyUI gives you full control — branch, remix, and adjust every part of your workflow at any time."
+    },
+    {
+      "title": "ComfyUI France - La communauté francophone de génération IA",
+      "url": "https://comfyui.fr/",
+      "snippet": "Comfy Registry 800+ custom nodes vérifiés. Trouvez les extensions parfaites pour votre workflow."
+    }
+  ]
+}

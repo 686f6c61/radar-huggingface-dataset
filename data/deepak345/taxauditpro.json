@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Deepak345/taxauditpro",
+  "slug": "deepak345-taxauditpro",
+  "author": "Deepak345",
+  "url": "https://huggingface.co/Deepak345/taxauditpro",
+  "created_at": "2026-09-24T14:57:48.000Z",
+  "updated_at": "2026-09-24T15:00:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tax Scams Utilizing Generative AI and Deepfake Tech",
+      "url": "https://techspective.net/2025/04/11/ai-powered-tax-scams-are-here/",
+      "snippet": "Today&#x27;s tax fraud campaigns are fueled by generative AI, deepfake audio, and smart social engineering that make scams nearly indistinguishable from legitimate IRS communications. The game has changed—and the stakes are higher than ever."
+    },
+    {
+      "title": "Chinese AI Models Compared: DeepSeek, Qwen, GLM, Kimi (2026)",
+      "url": "https://geotoolbox.ai/blog/chinese-ai-models-compared",
+      "snippet": "An honest, current comparison of the top Chinese AI models - DeepSeek, Qwen, GLM, Kimi and more - covering capability, cost, safety, and AI visibility."
+    },
+    {
+      "title": "Sign In - SmartVault",
+      "url": "https://taxauditpro.smartvault.com/secure/SignIn.aspx",
+      "snippet": "Sign in to access your secure SmartVault client portal."
+    },
+    {
+      "title": "12 Best AI Tax Planning Tools for CPAs Compared in 2026",
+      "url": "https://www.cpapilot.com/blog/ai-tax-planning-tools-comparison/",
+      "snippet": "Compare leading AI tax planning tools for CPAs, including features, pricing, tax research, preparation automation, projections, and advisory workflows."
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    }
+  ]
+}

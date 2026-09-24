@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "inference-optimization/Qwen3-8B-DFlash-PerfectBlend-NVFP4-W4A4",
+  "slug": "inference-optimization-qwen3-8b-dflash-perfectblend-nvfp4-w4a4",
+  "author": "inference-optimization",
+  "url": "https://huggingface.co/inference-optimization/Qwen3-8B-DFlash-PerfectBlend-NVFP4-W4A4",
+  "created_at": "2026-09-24T14:46:07.000Z",
+  "updated_at": "2026-09-24T14:50:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "speculators",
+  "languages": [],
+  "tags": [
+    "speculators",
+    "safetensors",
+    "speculative-decoding",
+    "dflash",
+    "qwen3",
+    "quantized",
+    "nvfp4",
+    "static-quantization",
+    "perfectblend-calibration",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:quantized:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1179882368,
+  "parameters_human": "1.18B",
+  "storage_bytes": 863917858,
+  "storage_human": "864 MB",
+  "base_model": "RedHatAI/Qwen3-8B-speculator.dflash, Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inference - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Inference",
+      "snippet": "Human inference (i.e. how humans draw conclusions) is traditionally studied within the fields of logic, argumentation studies, and …Read more"
+    },
+    {
+      "title": "Définitions : inférence - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/inf%c3%a9rence/42907",
+      "snippet": "inférence - Définitions Français : Retrouvez la définition de inférence, ainsi que les expressions... - synonymes, homonymes, …"
+    },
+    {
+      "title": "INFERENCE Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/inference",
+      "snippet": "4 days ago · The meaning of INFERENCE is something that is inferred; especially : a conclusion or opinion that is formed because of …"
+    },
+    {
+      "title": "Inférence (logique) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Inf%C3%A9rence_(logique)",
+      "snippet": "L’ inférence est un mouvement de la pensée qui permet de passer d'une ou plusieurs assertions, des énoncés ou propositions …"
+    },
+    {
+      "title": "Inférence — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Inf%C3%A9rence",
+      "snippet": "Sur les autres projets Wikimedia : inférence, sur le Wiktionnaire En logique et en psychologie, l’ inférence est un mouvement de la …"
+    }
+  ]
+}

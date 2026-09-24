@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-f2k9b-anything2real-ai-lora-2033763401058492417",
+  "slug": "runninghubai-rh-f2k9b-anything2real-ai-lora-2033763401058492417",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-f2k9b-anything2real-ai-lora-2033763401058492417",
+  "created_at": "2026-09-24T02:36:00.000Z",
+  "updated_at": "2026-09-24T02:37:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89189087,
+  "storage_human": "89 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create a Google Account for Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=en",
+      "snippet": "Create a Google Account for Gmail A Google Account lets you sign in to Gmail and other Google services, such as YouTube, Google …"
+    },
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/",
+      "snippet": "Google Cloud Platform Console Google Merchant Center Google Ad Manager Google Vault Analytics Global Market Finder Ads Data …"
+    },
+    {
+      "title": "Make Google your default search engine",
+      "url": "https://support.google.com/websearch/answer/464?hl=en",
+      "snippet": "Make Google your default search engine To get results from Google each time you search, you can make Google your default …"
+    },
+    {
+      "title": "Change or reset your password - Computer - Google Account Help",
+      "url": "https://support.google.com/accounts/answer/41078?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Add noreply@google.com to your address book. To request another email, follow the steps to recover your account. Check all email …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    }
+  ]
+}

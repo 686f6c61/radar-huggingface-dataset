@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Bebo1397/Abdo",
+  "slug": "bebo1397-abdo",
+  "author": "Bebo1397",
+  "url": "https://huggingface.co/Bebo1397/Abdo",
+  "created_at": "2026-09-24T16:57:36.000Z",
+  "updated_at": "2026-09-24T17:01:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 314262,
+  "storage_human": "314262 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

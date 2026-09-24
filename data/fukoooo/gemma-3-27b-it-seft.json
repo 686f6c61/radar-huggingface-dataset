@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Fukoooo/gemma-3-27b-it-seft",
+  "slug": "fukoooo-gemma-3-27b-it-seft",
+  "author": "Fukoooo",
+  "url": "https://huggingface.co/Fukoooo/gemma-3-27b-it-seft",
+  "created_at": "2026-09-24T17:45:24.000Z",
+  "updated_at": "2026-09-24T17:48:21.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma3",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-3-27b-it",
+    "base_model:finetune:google/gemma-3-27b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27432406640,
+  "parameters_human": "27.43B",
+  "storage_bytes": 54903053858,
+  "storage_human": "54.9 GB",
+  "base_model": "google/gemma-3-27b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

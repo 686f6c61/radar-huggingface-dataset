@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "raws-labs/tigris-zoo",
+  "slug": "raws-labs-tigris-zoo",
+  "author": "raws-labs",
+  "url": "https://huggingface.co/raws-labs/tigris-zoo",
+  "created_at": "2026-09-24T14:39:38.000Z",
+  "updated_at": "2026-09-24T14:39:38.000Z",
+  "license": "per-model-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RAWS",
+      "url": "https://soleetal-raws.com/",
+      "snippet": "Shop RAWS performance activewear — running, trail, performance, ski and everyday essentials. Free international shipping. Built to …"
+    },
+    {
+      "title": "TOUS LES PRODUITS – RAWS",
+      "url": "https://soleetal-raws.com/fr/collections/all-products",
+      "snippet": "Je porte quotidiennement des vêtements de la marque Raws, et je suis vraiment impressionné. La qualité est exceptionnelle, avec …"
+    },
+    {
+      "title": "RAW Rolling Papers • The Natural Way To Roll • Rawthentic.com",
+      "url": "https://rawthentic.com/",
+      "snippet": "RAW Rolling Trays RAW re-introduced the classic rolling tray! Check out our huge selection of RAW trays for your rolling needs. We …"
+    },
+    {
+      "title": "raws - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/raws.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"raws\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "4 Raws - YouTube",
+      "url": "https://www.youtube.com/watch?v=gt_Oe2yGE4o",
+      "snippet": "Jun 19, 2025 · Provided to YouTube by Lizzy Records 4 Raws · EsDeeKid Rebel ℗ 2025 XV Records / Lizzy Records Composer: …"
+    }
+  ]
+}

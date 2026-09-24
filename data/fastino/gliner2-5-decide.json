@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "fastino/GLiNER2.5-Decide",
+  "slug": "fastino-gliner2-5-decide",
+  "author": "fastino",
+  "url": "https://huggingface.co/fastino/GLiNER2.5-Decide",
+  "created_at": "2026-09-23T14:56:12.000Z",
+  "updated_at": "2026-09-24T19:30:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner2",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gliner2",
+    "safetensors",
+    "extractor",
+    "Text classification",
+    "Intent classification",
+    "Sentiment Analysis",
+    "Topic classification",
+    "Named Entity Recognition",
+    "token-classification",
+    "en",
+    "arxiv:2507.18546",
+    "base_model:fastino/gliner2-large-v1",
+    "base_model:finetune:fastino/gliner2-large-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 486444053,
+  "parameters_human": "486.4M",
+  "storage_bytes": 3892304554,
+  "storage_human": "3.9 GB",
+  "base_model": "fastino/gliner2-large-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fastino/GLiNER2.5-Decide · Hugging Face",
+      "url": "https://huggingface.co/fastino/GLiNER2.5-Decide",
+      "snippet": "On a 17-domain held-out suite it leads open typed-decision models, including a 1B GLiNER2 and a 4B generative baseline. A single call can score several heads at once. Single-label tasks return one string."
+    },
+    {
+      "title": "docs: correct GLiNER 2.5 Decide model catalog by jaanavit · Pull ...",
+      "url": "https://github.com/fastino-ai/mintlify-docs/pull/150",
+      "snippet": "Summary Change the GLiNER 2.5 Decide model ID to fastino/gliner2.5-decide. Format the model name as GLiNER 2.5 Decide. Remove the remaining Nemotron Lightning references from the /concepts/models ..."
+    },
+    {
+      "title": "Fastino Labs",
+      "url": "https://fastino.ai/",
+      "snippet": "Introducing our latest open models: GLiNER2.5 and Fastino-Nemotron-3.5-Lightning Healthcare & Finance"
+    },
+    {
+      "title": "GitHub - fastino-ai/GLiNER2: Unified Schema-Based Information ...",
+      "url": "https://github.com/fastino-ai/GLiNER2",
+      "snippet": "GLiNER2 is a schema-conditioned encoder family for Named Entity Recognition, Text Classification, Structured Data Extraction, Relation Extraction, and span attributes. Two extraction architectures share one public API: span (GLiNER2 / SpanExtractor) ..."
+    },
+    {
+      "title": "GLiNER2.5: Open-Source Information Extraction Model",
+      "url": "https://fastino.ai/models/gliner2-5",
+      "snippet": "GLiNER2.5 replaces span enumeration with a new boundary-prediction architecture, unlocking unlimited span length, long-context extraction, joint entity-relation extraction, constrained classification, and span attributes."
+    }
+  ]
+}

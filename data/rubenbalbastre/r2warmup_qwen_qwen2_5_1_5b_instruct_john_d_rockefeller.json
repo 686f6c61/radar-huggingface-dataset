@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "rubenbalbastre/r2warmup_qwen_qwen2_5_1_5b_instruct_john_d_rockefeller",
+  "slug": "rubenbalbastre-r2warmup_qwen_qwen2_5_1_5b_instruct_john_d_rockefeller",
+  "author": "rubenbalbastre",
+  "url": "https://huggingface.co/rubenbalbastre/r2warmup_qwen_qwen2_5_1_5b_instruct_john_d_rockefeller",
+  "created_at": "2026-09-24T15:42:15.000Z",
+  "updated_at": "2026-09-24T15:45:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/storage/scratch/lv13/lv13594/machine-unlearning-llm/outputs/model/Qwen--Qwen2.5-1.5B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:2608.17804",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306916464,
+  "storage_human": "307 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "r/reddeadredemption on Reddit: BrattySis",
+      "url": "https://www.reddit.com/r/reddeadredemption/comments/esdfu6/brattysis/",
+      "snippet": "Jan 22, 2020 · Posted by u/bigbaddyjuice - 12 votes and 1 comment"
+    },
+    {
+      "title": "Bratty Sis! : r/meme - Reddit",
+      "url": "https://www.reddit.com/r/meme/comments/hbvs5e/bratty_sis/",
+      "snippet": "Jun 19, 2020 · 1.2K votes, 23 comments. 2.4M subscribers in the meme community. r/meme is a place to share memes. We're fairly …"
+    },
+    {
+      "title": "Registration - CyberBreach",
+      "url": "https://cyberbreach.io/register/",
+      "snippet": "Assistenza 24/24 Download, streaming, Mugiwara IPTV: se qualcosa non va, ti rispondiamo su Telegram."
+    },
+    {
+      "title": "I don’t think she’s grabbing pumpkin seeds… : r/HolUp - Reddit",
+      "url": "https://www.reddit.com/r/HolUp/comments/q0iovk/i_dont_think_shes_grabbing_pumpkin_seeds/",
+      "snippet": "Oct 3, 2021 · I legit watched a porn video of this earlier today, should still be on the main page of xvids. Dude had his cock in a …"
+    },
+    {
+      "title": "Bratty sis : r/memes - Reddit",
+      "url": "https://www.reddit.com/r/memes/comments/amnxgp/bratty_sis/",
+      "snippet": "Feb 3, 2019 · 204 votes, 12 comments. 28M subscribers in the memes community. Memes! A way of describing cultural information …"
+    }
+  ]
+}

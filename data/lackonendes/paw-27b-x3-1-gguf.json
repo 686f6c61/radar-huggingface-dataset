@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "lackonendes/PAW-27B-X3.1-GGUF",
+  "slug": "lackonendes-paw-27b-x3-1-gguf",
+  "author": "lackonendes",
+  "url": "https://huggingface.co/lackonendes/PAW-27B-X3.1-GGUF",
+  "created_at": "2026-09-24T13:19:06.000Z",
+  "updated_at": "2026-09-24T13:19:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantization",
+    "trellis-codec",
+    "paw",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 705431072,
+  "storage_human": "705 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

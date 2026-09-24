@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "N-Bot-Int/OpenElla-NovelWriter-Charol-GGUF",
+  "slug": "n-bot-int-openella-novelwriter-charol-gguf",
+  "author": "N-Bot-Int",
+  "url": "https://huggingface.co/N-Bot-Int/OpenElla-NovelWriter-Charol-GGUF",
+  "created_at": "2026-09-24T13:04:21.000Z",
+  "updated_at": "2026-09-24T13:05:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "q8_0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 8540775712,
+  "storage_human": "8.5 GB",
+  "base_model": "N-Bot-Int/OpenElla-NovelWriter-Charol",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix - Watch TV Shows Online, Watch Movies Online",
+      "url": "https://www.netflix.com/",
+      "snippet": "Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more. Download your shows to watch offline. …"
+    },
+    {
+      "title": "N — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/N",
+      "snippet": "Les lettres N et n. Quatorzième lettre et onzième consonne de l’ alphabet latin (majuscule). Unicode : U+004E. (Symbole 1) (1922) …"
+    },
+    {
+      "title": "n’ — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/n%E2%80%99",
+      "snippet": "Ajouter Plus Vous pouvez taper un code de langue à la place du nom. Appuyez sur Tab pour qu’il soit remplacé automatiquement …"
+    },
+    {
+      "title": "n | Dictionnaire de l’Académie française | 9e édition",
+      "url": "https://www.dictionnaire-academie.fr/article/A9N0001",
+      "snippet": "Définition de N : Quatorzième lettre et onzième consonne de l’alphabet français."
+    },
+    {
+      "title": "N - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/N",
+      "snippet": "In English, n usually represents a voiced alveolar nasal /n/, but can represent other nasal consonants due to assimilation. For …"
+    }
+  ]
+}

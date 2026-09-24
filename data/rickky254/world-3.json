@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Rickky254/WORLD-3",
+  "slug": "rickky254-world-3",
+  "author": "Rickky254",
+  "url": "https://huggingface.co/Rickky254/WORLD-3",
+  "created_at": "2026-09-24T19:17:42.000Z",
+  "updated_at": "2026-09-24T19:42:27.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 546356,
+  "storage_human": "546356 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

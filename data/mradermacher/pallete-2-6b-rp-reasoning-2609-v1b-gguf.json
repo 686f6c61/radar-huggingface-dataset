@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Pallete-2.6B-RP-Reasoning-2609-v1b-GGUF",
+  "slug": "mradermacher-pallete-2-6b-rp-reasoning-2609-v1b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Pallete-2.6B-RP-Reasoning-2609-v1b-GGUF",
+  "created_at": "2026-09-24T02:54:05.000Z",
+  "updated_at": "2026-09-24T03:05:24.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "RP",
+    "Creative",
+    "Roleplay",
+    "Reasoning",
+    "Thinking",
+    "COT",
+    "Creative Writing",
+    "Edge",
+    "Experimental",
+    "en",
+    "base_model:Indexnusrefather/Pallete-2.6B-RP-Reasoning-2609-v1b",
+    "base_model:quantized:Indexnusrefather/Pallete-2.6B-RP-Reasoning-2609-v1b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 24326421632,
+  "storage_human": "24.3 GB",
+  "base_model": "Indexnusrefather/Pallete-2.6B-RP-Reasoning-2609-v1b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "Google API Key for translation - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/4854388/google-api-key-for-translation",
+      "snippet": "Jan 31, 2011 · Upload the Google Translate API key to your site. Check with your hosting company where on your system to place …"
+    },
+    {
+      "title": "Change Google Translate dropdown programmatically",
+      "url": "https://stackoverflow.com/questions/5569927/change-google-translate-dropdown-programmatically",
+      "snippet": "Apr 6, 2011 · The google translate set the change function using the select 'select.goog-te-combo', if u use only the class, the JS …"
+    },
+    {
+      "title": "Télécharger et utiliser Google Traduction",
+      "url": "https://support.google.com/translate/answer/6350850?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Télécharger et utiliser Google Traduction Vous pouvez traduire du texte saisi au clavier, en écriture manuscrite, sur une photo ou …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "abidlabs/mnist-mlp",
+  "slug": "abidlabs-mnist-mlp",
+  "author": "abidlabs",
+  "url": "https://huggingface.co/abidlabs/mnist-mlp",
+  "created_at": "2026-09-24T19:12:17.000Z",
+  "updated_at": "2026-09-24T19:24:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "dataset:ylecun/mnist",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1886586,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bardo, False Chronicle of a Handful of Truths - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bardo,_False_Chronicle_of_a_Handful_of_Truths",
+      "snippet": "His work has become increasingly personal and subjective as he has grown older; his latest film, False Chronicle of a Handful of …"
+    },
+    {
+      "title": "Bardo: False Chronicle of a Handful of Truths (2022) - IMDb",
+      "url": "https://www.imdb.com/title/tt14176542/",
+      "snippet": "Bardo: False Chronicle of a Handful of Truths: Directed by Alejandro G. Iñárritu. With Daniel Giménez Cacho, Griselda Siciliani, …"
+    },
+    {
+      "title": "BARDO, False Chronicle of a Handful of Truths - Netflix",
+      "url": "https://www.netflix.com/title/81249430",
+      "snippet": "An acclaimed journalist and documentarian goes on an epic introspective journey to reconcile with the past, the present and his …"
+    },
+    {
+      "title": "Bardo, False Chronicle of a Handful of Truths - Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/m/bardo_false_chronicle_of_a_handful_of_truths",
+      "snippet": "Discover reviews, ratings, and trailers for Bardo, False Chronicle of a Handful of Truths on Rotten Tomatoes. Stay updated with critic …"
+    },
+    {
+      "title": "‘Bardo, False Chronicle of a Handful of Truths’ Review: It’s a ...",
+      "url": "https://www.nytimes.com/2022/11/03/movies/bardo-false-chronicle-of-a-handful-of-truths-review.html",
+      "snippet": "Nov 3, 2022 · “Bardo,” which is subtitled “False Chronicle of a Handful of Truths,” devotes itself to the crossing and blurring of …"
+    }
+  ]
+}

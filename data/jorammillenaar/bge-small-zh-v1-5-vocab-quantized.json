@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "JoramMillenaar/bge-small-zh-v1.5-vocab-quantized",
+  "slug": "jorammillenaar-bge-small-zh-v1-5-vocab-quantized",
+  "author": "JoramMillenaar",
+  "url": "https://huggingface.co/JoramMillenaar/bge-small-zh-v1.5-vocab-quantized",
+  "created_at": "2026-09-24T02:27:54.000Z",
+  "updated_at": "2026-09-24T02:50:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "webgpu",
+    "sentence-similarity",
+    "base_model:BAAI/bge-small-zh-v1.5",
+    "base_model:quantized:BAAI/bge-small-zh-v1.5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 214395352,
+  "storage_human": "214 MB",
+  "base_model": "BAAI/bge-small-zh-v1.5",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
