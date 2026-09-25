@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kabartay/fintfm-binary",
+  "slug": "kabartay-fintfm-binary",
+  "author": "kabartay",
+  "url": "https://huggingface.co/kabartay/fintfm-binary",
+  "created_at": "2026-09-24T23:24:13.000Z",
+  "updated_at": "2026-09-25T02:10:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "tabular",
+    "tabular-classification",
+    "in-context-learning",
+    "foundation-model",
+    "credit-risk",
+    "synthetic-data",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3585704,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - haiderali-01/AI-Powered-Crypto-Signal-Generation-And ...",
+      "url": "https://github.com/haiderali-01/AI-Powered-Crypto-Signal-Generation-And-Backtesting-Platform",
+      "snippet": "01_Data_Preprocessing: Syncs Price and News data. 02_Model_Training: Trains the AI models. 03_Backtesting_Engine: Simulates the trading strategy."
+    },
+    {
+      "title": "kabartay (Mukharbek Organokov) · GitHub",
+      "url": "https://github.com/kabartay",
+      "snippet": "Machine Learning Engineer. PhD in Astrophysics.. kabartay has 30 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "FinAI-Trader: Sentiment-Enhanced Reinforcement Learning for Bitcoin ...",
+      "url": "https://www.computer.org/csdl/proceedings-article/cscloud/2025/878100a358/2c7r6Rvv5ra",
+      "snippet": "Automated cryptocurrency trading requires strategies that adapt to high volatility, sparse rewards, and rapidly shifting market conditions. We present FinAI-Trader, a reinforcement learning framework that integrates Proximal Policy Optimization (PPO) with Large Language Models (LLMs) for decision support in financial markets. The framework is developed for the FinAI Contest 2025 Task 1, which ..."
+    },
+    {
+      "title": "Fintwit - AI-Powered Stock & Crypto Research | See What Top Traders Are ...",
+      "url": "https://fintwit.ai/",
+      "snippet": "Fintwit analyzes 500+ top financial analysts on X in real-time to surface AI-powered buy/sell signals, portfolio ratings, price forecasts, and stock picks — plus 24/7 crypto prices, charts, and news. Trusted by 50,000+ investors."
+    },
+    {
+      "title": "BinaryAI: Binary Software Composition Analysis via Intelligent Binary ...",
+      "url": "https://arxiv.org/html/2401.11161v2",
+      "snippet": "To mitigate these limitations, we introduce BinaryAI, a novel binary-to-source SCA technique with two-phase binary source code matching to capture both syntactic and semantic code features. First, BinaryAI trains a transformer-based model to produce function-level embeddings and obtain similar source functions for each binary function accordingly."
+    }
+  ]
+}

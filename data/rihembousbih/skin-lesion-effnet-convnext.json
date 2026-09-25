@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "RihemBousbih/skin-lesion-effnet-convnext",
+  "slug": "rihembousbih-skin-lesion-effnet-convnext",
+  "author": "RihemBousbih",
+  "url": "https://huggingface.co/RihemBousbih/skin-lesion-effnet-convnext",
+  "created_at": "2026-09-24T20:48:55.000Z",
+  "updated_at": "2026-09-24T23:22:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "medical-imaging",
+    "dermatology",
+    "dermoscopy",
+    "skin-lesion",
+    "isic",
+    "efficientnet",
+    "convnext",
+    "tensorflow",
+    "image-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 974486911,
+  "storage_human": "974 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - RihemBousbih1/skin-lesion-classification: Leakage-free ...",
+      "url": "https://github.com/RihemBousbih1/skin-lesion-classification",
+      "snippet": "Dermoscopic skin-lesion classifier trained on ISIC 2019 (7 classes shared with HAM10000), with an ensemble of EfficientNetV2-S + CBAM and ConvNeXt-Tiny, a clinically calibrated operating point for melanoma, and external validation on PH2."
+    },
+    {
+      "title": "Multi-Class Viral Skin Lesion Diagnosis Using ConvNeXt Deep Learning ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11504294",
+      "snippet": "Multi-Class Viral Skin Lesion Diagnosis Using ConvNeXt Deep Learning with Explainable AI Abstract: The global burden of viral skin diseases including Monkeypox, Chickenpox, Cowpox, Measles, and Hand, Foot and Mouth Disease (HFMD) requires accurate diagnostic solutions."
+    },
+    {
+      "title": "adeel-iqbal/skin-lesion-analyzer - GitHub",
+      "url": "https://github.com/adeel-iqbal/skin-lesion-analyzer",
+      "snippet": "🩺 SkinAI — Skin Lesion Analyzer A skin lesion analysis tool built with a fine-tuned EfficientNetB0 model and a multi-agent AI pipeline. Explains results in plain language, assesses urgency, suggests next steps, finds nearby dermatologists with contacts and directions, and generates a downloadable PDF report in English, Urdu, or Arabic."
+    },
+    {
+      "title": "A novel hybrid ConvNeXt-based approach for enhanced skin lesion ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0957417425013430",
+      "snippet": "This work presents a fresh MetaFormer-based CAFormer model that efficiently combines ConvNeXt blocks for precise skin cancer classification. The proposed model solves data imbalance and delivers state-of- the-art performance on the HAM10000 and ISIC 2019 datasets by efficiently merging convolutional and transformer architectures."
+    },
+    {
+      "title": "Eraly-ml/Skin-AI · Hugging Face",
+      "url": "https://huggingface.co/Eraly-ml/Skin-AI",
+      "snippet": "MedConvNeXt is a deep learning model based on ConvNeXt, optimized for skin disease classification using PyTorch Lightning. The model leverages hyperparameter tuning via Optuna to enhance its performance over multiple training iterations."
+    }
+  ]
+}

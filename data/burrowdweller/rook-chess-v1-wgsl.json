@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "burrowdweller/rook-chess-v1-wgsl",
+  "slug": "burrowdweller-rook-chess-v1-wgsl",
+  "author": "burrowdweller",
+  "url": "https://huggingface.co/burrowdweller/rook-chess-v1-wgsl",
+  "created_at": "2026-09-24T22:15:18.000Z",
+  "updated_at": "2026-09-24T23:09:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "other",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "chess",
+    "chess-engine",
+    "other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13431685,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "burrowdweller/rook-chess-v1 · Hugging Face",
+      "url": "https://huggingface.co/burrowdweller/rook-chess-v1",
+      "snippet": "rook-chess-v1 A relational chess engine for the browser: it reads the 64 squares, keeps a table of how every pair of squares relates to every other, searches with MCTS, and plays one legal move."
+    },
+    {
+      "title": "burrowdweller (Jun Ling) - Hugging Face",
+      "url": "https://huggingface.co/burrowdweller",
+      "snippet": "User profile of Jun Ling on Hugging Face"
+    },
+    {
+      "title": "burrowdweller/mini-chessformer-v1 · Hugging Face",
+      "url": "https://huggingface.co/burrowdweller/mini-chessformer-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "burrowdweller/minichess-gpt-v1 · Hugging Face",
+      "url": "https://huggingface.co/burrowdweller/minichess-gpt-v1",
+      "snippet": "burrowdweller / minichess-gpt-v1 like 0 ONNX Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "burrowdweller AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/burrowdweller",
+      "snippet": "Browse AI models attributed to burrowdweller, sourced from verified model catalogs."
+    }
+  ]
+}

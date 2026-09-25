@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SceneWorks/yue-s1-7b-anneal-zh-icl-candle",
+  "slug": "sceneworks-yue-s1-7b-anneal-zh-icl-candle",
+  "author": "SceneWorks",
+  "url": "https://huggingface.co/SceneWorks/yue-s1-7b-anneal-zh-icl-candle",
+  "created_at": "2026-09-24T23:02:02.000Z",
+  "updated_at": "2026-09-24T23:05:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "music",
+    "lyrics2song",
+    "yue",
+    "sceneworks",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24200400426,
+  "storage_human": "24.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "m-a-p/YuE-s1-7B-anneal-zh-icl · Hugging Face",
+      "url": "https://huggingface.co/m-a-p/YuE-s1-7B-anneal-zh-icl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HKUSTAudio/YuE-s1-7B-anneal-zh-icl · Hugging Face",
+      "url": "https://huggingface.co/HKUSTAudio/YuE-s1-7B-anneal-zh-icl",
+      "snippet": "We wrote a song with our model&#x27;s name. YuE is a groundbreaking series of open-source foundation models designed for music generation, specifically for transforming lyrics into full songs (lyrics2song)."
+    },
+    {
+      "title": "YuE-s1-7B-anneal-zh-cot · Models - AI-ModelScope",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/YuE-s1-7B-anneal-zh-cot",
+      "snippet": "We wrote a song with our model&#x27;s name. YuE is a groundbreaking series of open-source foundation models designed for music generation, specifically for transforming lyrics into full songs (lyrics2song)."
+    },
+    {
+      "title": "GitHub - seshakiran/yue: YuE: Open Full-song Generation Foundation ...",
+      "url": "https://github.com/seshakiran/yue",
+      "snippet": "We wrote a song with our model&#x27;s name. YuE is a groundbreaking series of open-source foundation models designed for music generation, specifically for transforming lyrics into full songs (lyrics2song)."
+    },
+    {
+      "title": "YuE S1 7B Anneal Zh Cot by m-a-p - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/m-a-p%2FYuE-s1-7B-anneal-zh-cot,Ny3DXXVi4jpsjA16JzawB",
+      "snippet": "YuE S1 7B Anneal Zh Cot is an open-source 7b LLM by m-a-p. VRAM 12.4GB, 16K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

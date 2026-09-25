@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "georgeven/songmae-base-32x1-bird-detector",
+  "slug": "georgeven-songmae-base-32x1-bird-detector",
+  "author": "georgeven",
+  "url": "https://huggingface.co/georgeven/songmae-base-32x1-bird-detector",
+  "created_at": "2026-09-24T20:05:35.000Z",
+  "updated_at": "2026-09-24T20:55:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "audio",
+    "bioacoustics",
+    "birdsong",
+    "sound-event-detection",
+    "songmae",
+    "base_model:georgeven/songmae-base-32x1",
+    "base_model:finetune:georgeven/songmae-base-32x1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13712288,
+  "parameters_human": "13.7M",
+  "storage_bytes": 164575248,
+  "storage_human": "165 MB",
+  "base_model": "georgeven/songmae-base-32x1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "georgeven/songmae-base-32x1 · Hugging Face",
+      "url": "https://huggingface.co/georgeven/songmae-base-32x1",
+      "snippet": "Instructions to use georgeven/songmae-base-32x1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "SongMAE: A bioacoustic encoder for birdsong - Hugging Face",
+      "url": "https://huggingface.co/collections/georgeven/songmae-a-bioacoustic-encoder-for-birdsong",
+      "snippet": "georgeven/songmae-base-32x1 Feature Extraction • 14.9M•Updated about 11 hours ago"
+    },
+    {
+      "title": "A Bird Song Detector for improving bird identification...",
+      "url": "https://arxivlens.com/explained/a-bird-song-detector-for-improving-bird-identification-through-deep-learning-a-case-study-from-donana-5774-2738717",
+      "snippet": "In short, combining a detector that finds bird vocalizations with tuned classifiers helps researchers more reliably identify birds in this specific region. This approach is important because it makes automated monitoring more accurate, which supports conservation decisions for a threatened ecosystem where birds are sensitive to environmental ..."
+    },
+    {
+      "title": "A Bird Song Detector for improving bird identification through Deep ...",
+      "url": "https://arxiv.org/html/2503.15576v1",
+      "snippet": "Our approach demonstrated the effectiveness of integrating a Bird Song Detector with fine-tuned classification models for bird identification at local soundscapes. These findings highlight the need to adapt general-purpose tools for specific ecological challenges, as demonstrated in Doñana."
+    },
+    {
+      "title": "GitHub - georgevenven/SongMAE",
+      "url": "https://github.com/georgevenven/SongMAE",
+      "snippet": "Embedding extractors write one concatenated embeddings.npz per requested dataset slice, usually under an output directory for one model and one bird. This is the sharing and eval format for SongMAE and external models."
+    }
+  ]
+}

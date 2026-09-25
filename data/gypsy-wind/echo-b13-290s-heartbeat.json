@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Gypsy-Wind/Echo-B13-290s-heartbeat",
+  "slug": "gypsy-wind-echo-b13-290s-heartbeat",
+  "author": "Gypsy-Wind",
+  "url": "https://huggingface.co/Gypsy-Wind/Echo-B13-290s-heartbeat",
+  "created_at": "2026-09-24T21:53:38.000Z",
+  "updated_at": "2026-09-24T21:53:38.000Z",
+  "license": "wtfpl",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:wtfpl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Romani people - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Romani_people",
+      "snippet": "The English term Gypsy (or Gipsy) originates from the Middle English gypcian, short for Egipcien. The Spanish term Gitano and …"
+    },
+    {
+      "title": "Gypsy, Roma and Traveller - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gypsy,_Roma_and_Traveller",
+      "snippet": "The term Gypsy, which originates in the word \"Egypt\", mistakenly believed to be the original homeland of the Gypsies, has been …"
+    },
+    {
+      "title": "Gypsy — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Gypsy",
+      "snippet": "Gypsy ou gipsy est un terme anglais signifiant « rom ». Ce terme se réfère à la croyance erronée selon laquelle les Roms seraient …"
+    },
+    {
+      "title": "A History Of The Gypsies, The People Without a Country",
+      "url": "https://allthatsinteresting.com/gypsies-history",
+      "snippet": "Aug 12, 2015 · Persecuted around the world and still subject to discrimination in modern day Europe, we look into the history of the …"
+    },
+    {
+      "title": "Gypsy (TV Series 2017) - IMDb",
+      "url": "https://www.imdb.com/title/tt5503718/",
+      "snippet": "Gypsy: Created by Lisa Rubin. With Naomi Watts, Billy Crudup, Sophie Cookson, Karl Glusman. Therapist Jean Holloway becomes …"
+    }
+  ]
+}

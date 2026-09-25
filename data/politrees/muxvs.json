@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Politrees/MuXVS",
+  "slug": "politrees-muxvs",
+  "author": "Politrees",
+  "url": "https://huggingface.co/Politrees/MuXVS",
+  "created_at": "2026-09-24T18:52:08.000Z",
+  "updated_at": "2026-09-24T23:35:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23950986830,
+  "storage_human": "24.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Politrees - YouTube",
+      "url": "https://www.youtube.com/@Politrees",
+      "snippet": "For a few days, I&#x27;ve been working on the CoverGen interface so that you can easily create AI covers (AI covers) on RVC v2 models. The original code did not have as many features as my version."
+    },
+    {
+      "title": "README.md · Politrees/RVC_resources at main - Hugging Face",
+      "url": "https://huggingface.co/Politrees/RVC_resources/blob/main/README.md",
+      "snippet": "Voice2Voice voice-to-voice License: mit Model card Files Files and versions Community 21 main RVC_resources / README.md"
+    },
+    {
+      "title": "Politrees (Artyom Bebroy) · GitHub",
+      "url": "https://github.com/Politrees",
+      "snippet": "Politrees has 11 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 513 AI models across 456 benchmarks, with 196 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Politrees (Artyom Bebroy) - Hugging Face",
+      "url": "https://huggingface.co/Politrees",
+      "snippet": "User profile of Artyom Bebroy on Hugging Face"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "fukayatti0/jev-japanese-judgment",
+  "slug": "fukayatti0-jev-japanese-judgment",
+  "author": "fukayatti0",
+  "url": "https://huggingface.co/fukayatti0/jev-japanese-judgment",
+  "created_at": "2026-09-23T18:56:38.000Z",
+  "updated_at": "2026-09-25T02:10:05.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "jev",
+    "judgment",
+    "classification",
+    "lora",
+    "ja",
+    "base_model:LiquidAI/LFM2.5-1.2B-JP-202606",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-JP-202606",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3244032,
+  "parameters_human": "3.2M",
+  "storage_bytes": 6952700004,
+  "storage_human": "7.0 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-JP-202606",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fukayatti0/jev-japanese-judgment · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/fukayatti0/jev-japanese-judgment",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fukayatti0/jev-japanese-judgment · Hugging Face",
+      "url": "https://huggingface.co/fukayatti0/jev-japanese-judgment",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jev-japanese-judgment - GitHub",
+      "url": "https://github.com/fukayatti/jev-japanese-judgment",
+      "snippet": "jev-japanese-judgment 日本語データセットを「判定（judgment）」形式に変換し、非自己回帰的に確率付きの判定を返す小型モデルを作るプロジェクト。 参考: Jev (TypeSafe AI) — 文章を生成せず、型付きの判定と確率を返すAIモデル。"
+    },
+    {
+      "title": "Jev (AI model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
+      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco-based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2]"
+    },
+    {
+      "title": "A new kind of AI model from a ChatGPT inventor is ... - TechCrunch",
+      "url": "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/",
+      "snippet": "Jev, a new kind of AI model, is showing developers a cheaper and faster path to software intelligence."
+    }
+  ]
+}

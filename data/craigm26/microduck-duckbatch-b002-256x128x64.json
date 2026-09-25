@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "craigm26/microduck-duckbatch-b002-256x128x64",
+  "slug": "craigm26-microduck-duckbatch-b002-256x128x64",
+  "author": "craigm26",
+  "url": "https://huggingface.co/craigm26/microduck-duckbatch-b002-256x128x64",
+  "created_at": "2026-09-24T21:00:55.000Z",
+  "updated_at": "2026-09-24T21:36:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck",
+    "microduck-policy",
+    "robotics",
+    "reinforcement-learning",
+    "distillation",
+    "duckbatch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234137,
+  "storage_human": "234137 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "duckbatch/README.md at main · craigm26/duckbatch · GitHub",
+      "url": "https://github.com/craigm26/duckbatch/blob/main/README.md",
+      "snippet": "Batched, judged, efficiency-first RL for Pollen&#x27;s Microduck: many small attempts on one 4 GB GPU, pruned by a pre-registered kill order, with decision models (Jev, GLiNER2.5-Decide) measured as judges. - duckbatch/README.md at main · craigm26/duckbatch"
+    },
+    {
+      "title": "duckbatch - a Hugging Face Space by craigm26",
+      "url": "https://huggingface.co/spaces/craigm26/duckbatch",
+      "snippet": "How small can Microduck&#x27;s walker get? Batched, judged RL."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "craigm26/microduck-stairs-challenge · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/craigm26/microduck-stairs-challenge",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    }
+  ]
+}

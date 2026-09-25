@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SceneWorks/yue-s1-7b-anneal-jp-kr-cot-candle",
+  "slug": "sceneworks-yue-s1-7b-anneal-jp-kr-cot-candle",
+  "author": "SceneWorks",
+  "url": "https://huggingface.co/SceneWorks/yue-s1-7b-anneal-jp-kr-cot-candle",
+  "created_at": "2026-09-24T23:05:53.000Z",
+  "updated_at": "2026-09-24T23:09:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "music",
+    "lyrics2song",
+    "yue",
+    "sceneworks",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24200400426,
+  "storage_human": "24.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - digitalapplied/yue: YuE: Open Full-song Music Generation ...",
+      "url": "https://github.com/digitalapplied/yue",
+      "snippet": "YuE: Open Full-song Music Generation Foundation Model, something similar to Suno.ai but open - digitalapplied/yue"
+    },
+    {
+      "title": "GitHub - seshakiran/yue: YuE: Open Full-song Generation Foundation ...",
+      "url": "https://github.com/seshakiran/yue",
+      "snippet": "Demo 🎶 | 📑 Paper (coming soon) YuE-s1-7B-anneal-en-cot 🤗 | YuE-s1-7B-anneal-en-icl 🤗 | YuE-s1-7B-anneal-jp-kr-cot 🤗 YuE-s1-7B-anneal-jp-kr-icl 🤗 | YuE-s1-7B-anneal-zh-cot 🤗 | YuE-s1-7B-anneal-zh-icl 🤗 YuE-s2-1B-general 🤗 | YuE-upsampler 🤗 Our model&#x27;s name is YuE (乐). In Chinese, the word means \"music\" and ..."
+    },
+    {
+      "title": "m-a-p/YuE-s1-7B-anneal-jp-kr-cot · Hugging Face",
+      "url": "https://huggingface.co/m-a-p/YuE-s1-7B-anneal-jp-kr-cot",
+      "snippet": "m-a-p / YuE-s1-7B-anneal-jp-kr-cot like 23 Follow Multimodal Art Projection 1.08k Text Generation Safetensors English Japanese Korean llama music art text-generation-inference arxiv:2503.08638 License:apache-2.0 Model card FilesFiles and versions xet Community 1 Copy to bucket new News and Updates Quickstart License Agreement & Disclaimer ..."
+    },
+    {
+      "title": "HKUSTAudio/YuE-s1-7B-anneal-jp-kr-cot · Hugging Face",
+      "url": "https://huggingface.co/HKUSTAudio/YuE-s1-7B-anneal-jp-kr-cot",
+      "snippet": "We wrote a song with our model&#x27;s name. YuE is a groundbreaking series of open-source foundation models designed for music generation, specifically for transforming lyrics into full songs (lyrics2song)."
+    },
+    {
+      "title": "YuE-s1-7B-anneal-jp-kr-icl Open Source Model - Free Conversion of ...",
+      "url": "https://model.aibase.com/en/models/details/1927649939735973888",
+      "snippet": "## 🚀 YuE (乐) *YuE is a groundbreaking series of open - source foundation models designed for music generation, specifically transforming lyrics into full songs. It can generate multi - minute songs with vocal and accompaniment tracks, and can model diverse genres, languages, and vocal techniques.* Demo 🎶 | 📑 Paper YuE-s1-7B-anneal-en-cot 🤗 | YuE-s1-7B-anneal-en-icl 🤗 | YuE-s1 ..."
+    }
+  ]
+}

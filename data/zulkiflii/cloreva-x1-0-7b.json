@@ -5,7 +5,7 @@
   "author": "Zulkiflii",
   "url": "https://huggingface.co/Zulkiflii/Cloreva-X1-0.7B",
   "created_at": "2026-09-23T14:31:45.000Z",
-  "updated_at": "2026-09-23T18:17:08.000Z",
+  "updated_at": "2026-09-24T18:33:53.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -13,15 +13,17 @@
   "languages": [],
   "tags": [
     "safetensors",
+    "resonet",
+    "custom_code",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 372,
   "trending_score": 0,
-  "parameters": 866631482,
-  "parameters_human": "866.6M",
-  "storage_bytes": 34665878640,
-  "storage_human": "34.7 GB",
+  "parameters": 723718188,
+  "parameters_human": "723.7M",
+  "storage_bytes": 36130325399,
+  "storage_human": "36.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

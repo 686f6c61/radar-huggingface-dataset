@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "crh225/plumb-4b",
+  "slug": "crh225-plumb-4b",
+  "author": "crh225",
+  "url": "https://huggingface.co/crh225/plumb-4b",
+  "created_at": "2026-09-24T22:37:05.000Z",
+  "updated_at": "2026-09-25T01:13:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "multiple-choice",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "decision-model",
+    "decision-making",
+    "multiple-choice",
+    "classification",
+    "calibration",
+    "jevbench",
+    "qwen3.5",
+    "en",
+    "dataset:crh225/plumb-decisions",
+    "base_model:alibiserikbay/JevK5",
+    "base_model:finetune:alibiserikbay/JevK5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8431547725,
+  "storage_human": "8.4 GB",
+  "base_model": "alibiserikbay/JevK5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chris House crh225 - GitHub",
+      "url": "https://github.com/crh225",
+      "snippet": "Full Stack Software Engineer. crh225 has 53 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "TEAC CR-H225 OWNER&#x27;S MANUAL Pdf Download | ManualsLib",
+      "url": "https://www.manualslib.com/manual/1391345/Teac-Cr-H225.html",
+      "snippet": "View and Download Teac CR-H225 owner&#x27;s manual online. CR-H225 car receiver pdf manual download."
+    },
+    {
+      "title": "PDF CR-H250 - audiocircuit.dk",
+      "url": "https://audiocircuit.dk/downloads/teac/Teac-CRH225-rec-sm.pdf",
+      "snippet": "CR-H225/255 TEAC CORPORATION 3-7-3, Nakacho, Musashino-shi, Tokyo 180-8550, Japan Phone: (0422) 52-5081 TEAC AMERICA, INC. 7733 Telegraph Road, Montebello, California 90640 Phone: (323) 726-0303 TEAC CANADA LTD. 5939 Wallace Street, Mississauga, Ontario L4Z 1Z8, Canada Phone: (905) 890-8008 TEAC MEXICO, S.A. De C.V Campesinos N° 184, Colonia Granjas Esmeralda, Delegacion Iztapalapa, CP 09810 ..."
+    },
+    {
+      "title": "TEAC CR-H225 SERVICE MANUAL Pdf Download | ManualsLib",
+      "url": "https://www.manualslib.com/manual/2315613/Teac-Cr-H225.html",
+      "snippet": "View and Download Teac CR-H225 service manual online. CR-H225 car receiver pdf manual download. Also for: Cr-255."
+    },
+    {
+      "title": "AI Model Parameters Explained: 2B vs 7B vs 40B and Beyond",
+      "url": "https://travis.media/blog/ai-model-parameters-explained/",
+      "snippet": "What does it mean when an AI model has 4B, 7B, or 70B parameters, or a name like 235B-A22B? Learn how parameter count affects performance, hardware needs, and what developers and homelabbers should know before downloading and running these models."
+    }
+  ]
+}

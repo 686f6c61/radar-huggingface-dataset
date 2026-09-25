@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hersxy/era5-t2m-lstm",
+  "slug": "hersxy-era5-t2m-lstm",
+  "author": "hersxy",
+  "url": "https://huggingface.co/hersxy/era5-t2m-lstm",
+  "created_at": "2026-09-24T20:46:48.000Z",
+  "updated_at": "2026-09-24T21:14:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "time-series-forecasting",
+    "lstm",
+    "era5",
+    "temperature",
+    "weather",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2486512,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hersxy/era5-t2m-lstm · Hugging Face",
+      "url": "https://huggingface.co/hersxy/era5-t2m-lstm",
+      "snippet": "era5-t2m-lstm — LSTM 24 h forecast of ERA5 2 m temperature Predicts the next 24 hours of 2 m air temperature at any ERA5 grid cell in the region below, from the previous 72 hours at that cell. One shared model for every cell; location enters through normalised latitude/longitude inputs."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "LSTM and Transformer-based framework for bias correction of ERA5 hourly ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0360544225021401",
+      "snippet": "The model used meteorological variables (wind speed, wind direction, and gravity wave dissipation) from ERA5 and high-resolution topography data to predict observed wind speed. Houndekindo et al. [31] compared various ML methods for the BC of ERA5 wind speeds."
+    },
+    {
+      "title": "AIFL: A global daily streamflow forecasting model using deterministic ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0022169426011613",
+      "snippet": "This paper introduces AIFL (Artificial Intelligence for Floods), a deterministic LSTM-based model designed for global daily streamflow forecasting. Trained on 18,588 basins curated from the Caravan dataset, AIFL utilises a two-stage transfer-learning strategy to bridge the reanalysis-to-forecast domain shift."
+    },
+    {
+      "title": "WeatherBench: ERA5 Benchmark for Forecasting",
+      "url": "https://www.emergentmind.com/topics/weatherbench",
+      "snippet": "WeatherBench is an ERA5-derived benchmark dataset and evaluation framework that standardizes data-driven, medium-range global weather forecasting with common setups."
+    }
+  ]
+}

@@ -4,8 +4,8 @@
   "slug": "flaviussteff-base-ro-125m",
   "author": "flaviussteff",
   "url": "https://huggingface.co/flaviussteff/base-ro-125m",
-  "created_at": "2026-09-18T15:32:22.000Z",
-  "updated_at": "2026-09-18T15:32:32.000Z",
+  "created_at": "2026-09-22T08:26:02.000Z",
+  "updated_at": "2026-09-25T00:07:04.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,20 +26,20 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 353,
   "trending_score": 0,
   "parameters": 88099584,
   "parameters_human": "88.1M",
-  "storage_bytes": 352410528,
-  "storage_human": "352 MB",
+  "storage_bytes": 176211400,
+  "storage_human": "176 MB",
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-20T03:00:59.567Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

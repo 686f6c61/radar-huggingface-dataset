@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "IsValorum/Ornith-1.5-35B-A3B-APEX-I-NanoPlus-GGUF",
+  "slug": "isvalorum-ornith-1-5-35b-a3b-apex-i-nanoplus-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/Ornith-1.5-35B-A3B-APEX-I-NanoPlus-GGUF",
+  "created_at": "2026-09-24T18:36:02.000Z",
+  "updated_at": "2026-09-25T00:39:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "quantization",
+    "apex",
+    "apex-quant",
+    "apex-i-nanoplus",
+    "nanoplus",
+    "custom-quantization",
+    "unsloth-studio",
+    "moe",
+    "reasoning",
+    "llama.cpp",
+    "qwen35moe",
+    "coding",
+    "swe-bench",
+    "agentic",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 25719459808,
+  "storage_human": "25.7 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ornith-1.5-35B-A3B APEX-I-MiniPlus-V2.1 GGUF - Hugging Face",
+      "url": "https://huggingface.co/IsValorum/Ornith-1.5-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF",
+      "snippet": "The APEX-I-MiniPlus quantization architecture powering this model was subjected to an extensive independent evaluation by Japanese AI researcher and evaluator zephel01 (CoolZero) on an NVIDIA RTX 5090 (32GB) workstation running llama.cpp CUDA b11027 with FlashAttention (-fa on -ctk q8_0 -ctv q8_0 -ngl 99)."
+    },
+    {
+      "title": "mudler/Ornith-1.5-35B-A3B-APEX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mudler/Ornith-1.5-35B-A3B-APEX-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith 1.5 35b A3b Apex - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/ornith-1-5-35b-a3b-apex.html",
+      "snippet": "Download Ornith 1.5 35b A3b Apex GGUF model. 20.7 GB, 66,197 downloads, 31 likes."
+    },
+    {
+      "title": "Ornith 1.5 35b A3b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/ornith-1-5-35b-a3b.html",
+      "snippet": "Download Ornith 1.5 35b A3b GGUF model. 73.5 GB, 3,999,933 downloads, 458 likes."
+    },
+    {
+      "title": "Ornith 1.5 35B-A3B: Specs, Benchmarks and How to Run It Locally",
+      "url": "https://www.aimadetools.com/blog/ornith-1-5-35b-a3b/",
+      "snippet": "Ornith 1.5 is a 35B MoE coding and agent model with about 3B active parameters, 262K context, vision, MIT weights, and official vLLM, SGLang and GGUF support."
+    }
+  ]
+}

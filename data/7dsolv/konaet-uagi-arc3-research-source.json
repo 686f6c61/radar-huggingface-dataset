@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "7dsolv/Konaet-UAGI-ARC3-Research-Source",
+  "slug": "7dsolv-konaet-uagi-arc3-research-source",
+  "author": "7dsolv",
+  "url": "https://huggingface.co/7dsolv/Konaet-UAGI-ARC3-Research-Source",
+  "created_at": "2026-09-24T22:28:38.000Z",
+  "updated_at": "2026-09-24T22:28:56.000Z",
+  "license": "konaet-rcl-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arc-agi-3",
+    "research",
+    "source-code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7dsolv (Adilson Oliveira) - Hugging Face",
+      "url": "https://huggingface.co/7dsolv",
+      "snippet": "AI & ML interests ... Recent Activity published about 6 hours ago ... updated about 6 hours ago"
+    },
+    {
+      "title": "7dsolv/Konaet-Core-v0 · Hugging Face",
+      "url": "https://huggingface.co/7dsolv/Konaet-Core-v0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - 7dsolv/7dsolv",
+      "url": "https://github.com/7dsolv/7dsolv",
+      "snippet": "Contribute to 7dsolv/7dsolv development by creating an account on GitHub."
+    },
+    {
+      "title": "7dsolv/publications at main · 7dsolv/7dsolv · GitHub",
+      "url": "https://github.com/7dsolv/7dsolv/tree/main/publications",
+      "snippet": "Contribute to 7dsolv/7dsolv development by creating an account on GitHub."
+    },
+    {
+      "title": "Artificial Intelligence - arXiv.org",
+      "url": "https://arxiv.org/list/cs.AI/recent",
+      "snippet": "An Open Pipeline and Dashboard for Systemic-Risk Evidence under the EU AI Act&#x27;s Code of Practice Jacob T. Emmerson, Phuong-Anh Nguyen-Le, Ronan Romano, Wilber Sean V. Anterola, Yann Billeter, Zhijing Jin"
+    }
+  ]
+}

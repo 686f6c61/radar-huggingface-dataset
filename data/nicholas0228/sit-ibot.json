@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Nicholas0228/SiT-IBOT",
+  "slug": "nicholas0228-sit-ibot",
+  "author": "Nicholas0228",
+  "url": "https://huggingface.co/Nicholas0228/SiT-IBOT",
+  "created_at": "2026-09-24T22:12:29.000Z",
+  "updated_at": "2026-09-24T23:05:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "diffusion",
+    "image-generation",
+    "representation-learning",
+    "imagenet",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1926430585341,
+  "storage_human": "1926.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nicholas0228 (Nicholas Wu) · GitHub",
+      "url": "https://github.com/Nicholas0228",
+      "snippet": "M.S. in CS. A junior researcher on Trustworthy AI. - Nicholas0228"
+    },
+    {
+      "title": "Nicholas0228&#x27;s gists · GitHub",
+      "url": "https://gist.github.com/Nicholas0228",
+      "snippet": "GitHub Gist: star and fork Nicholas0228&#x27;s gists by creating an account on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=iBOT",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Profile of @NicholasCS",
+      "url": "https://janitorai.com/profiles/a9132455-0b63-45af-a9a2-9815e5397b69_profile-of-nicholas-cs/",
+      "snippet": "janitor is a platform for creators building immersive worlds and readers seeking living stories, we are where human creativity meets ai magic."
+    },
+    {
+      "title": "GitHub - willisma/SiT: Official PyTorch Implementation of \"SiT ...",
+      "url": "https://github.com/willisma/SiT",
+      "snippet": "This repo contains PyTorch model definitions, pre-trained weights and training/sampling code for our paper exploring interpolant models with scalable transformers (SiTs). We present Scalable Interpolant Transformers (SiT), a family of generative models built on the backbone of Diffusion Transformers ..."
+    }
+  ]
+}

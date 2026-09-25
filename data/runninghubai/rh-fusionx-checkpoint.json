@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-fusionx-checkpoint",
+  "slug": "runninghubai-rh-fusionx-checkpoint",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-fusionx-checkpoint",
+  "created_at": "2026-09-24T21:52:55.000Z",
+  "updated_at": "2026-09-24T22:01:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14289645475,
+  "storage_human": "14.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fusionx - RunningHub Stable Diffusion & Flux Checkpoint",
+      "url": "https://www.runninghub.ai/model/public/1942116280050860033",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHub Workflows ｜ ComfyUI Workflows & Latest AI Nodes",
+      "url": "https://www.runninghub.ai/workflows",
+      "snippet": "Discover trending ComfyUI workflows, latest AI nodes, and creative workflow templates for AI video and image generation. Explore rapidly updated models and workflows on RunningHub Workflows."
+    },
+    {
+      "title": "README.md · RunningHubAI/rh-qwen-rapid-aio-sfw-v7-checkpoint at main",
+      "url": "https://huggingface.co/RunningHubAI/rh-qwen-rapid-aio-sfw-v7-checkpoint/blob/main/README.md",
+      "snippet": "RunningHubAI / rh-qwen-rapid-aio-sfw-v7-checkpoint Like 0 Image-Text-to-Image comfyui checkpoint Model card FilesFiles and versions xet Community Copy to bucket new main rh-qwen-rapid-aio-sfw-v7-checkpoint /README.md RunningHubAI Upload RunningHub model 1984567825127915522 1e95118 verifiedabout 11 hours ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute ..."
+    },
+    {
+      "title": "RunningHub Models ｜ AI Model Creation & Training Platform",
+      "url": "https://www.runninghub.ai/models",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI (RunningHub.ai) - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI",
+      "snippet": "One API Powering All-Modal AI Productivity. Recent Activity. updated a model about 1 hour ago. RunningHubAI/rh-minimax-h3-fl2v-turbo-4step-v1.-768p-comfyui-bf16 ..."
+    }
+  ]
+}

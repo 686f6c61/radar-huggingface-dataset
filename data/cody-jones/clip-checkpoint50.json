@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cody-jones/clip-checkpoint50",
+  "slug": "cody-jones-clip-checkpoint50",
+  "author": "cody-jones",
+  "url": "https://huggingface.co/cody-jones/clip-checkpoint50",
+  "created_at": "2026-09-25T00:22:32.000Z",
+  "updated_at": "2026-09-25T00:22:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Life Aquatic with Steve Zissou Filming Locations in Italy + Map!",
+      "url": "https://almostginger.com/the-life-aquatic-filming-locations/",
+      "snippet": "May 28, 2021 · Because most of the film takes place on this boat, Anderson shot most of The Life Aquatic in Cinecittà Studios, …Read more"
+    },
+    {
+      "title": "The Life Aquatic with Steve Zissou (2004) - Filming & production - IMDb",
+      "url": "https://www.imdb.com/title/tt0362270/locations/",
+      "snippet": "With Bill Murray, Owen Wilson, Anjelica Huston, Cate Blanchett. With a plan to exact revenge on a legendary shark that killed his …"
+    },
+    {
+      "title": "Filming Locations of The Life Aquatic with Steve Zissou",
+      "url": "https://scenelocations.com/movies/the-life-aquatic-with-steve-zissou",
+      "snippet": "Renowned oceanographer Steve Zissou has sworn vengeance upon the rare shark that devoured a member of his crew. In addition …"
+    },
+    {
+      "title": "9 Filming locations for The Life Aquatic with Steve Zissou",
+      "url": "https://www.thingson.tv/movie/the-life-aquatic-with-steve-zissou/locations",
+      "snippet": "Dec 10, 2004 · 9 Filming locations for The Life Aquatic with Steve Zissou R 12/10/2004 The Life Aquatic with Steve Zissou"
+    },
+    {
+      "title": "The Filming Locations of Wes Anderson's The Life Aquatic",
+      "url": "https://visualfoodie.com/where-was-the-movie-the-life-aquatic-filmed/",
+      "snippet": "May 2, 2023 · The movie was primarily filmed in central and southern Italy, including the coastal areas around Rome and Naples, the …"
+    }
+  ]
+}

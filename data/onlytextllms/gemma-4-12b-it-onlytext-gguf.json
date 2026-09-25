@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "OnlyTextLLMs/gemma-4-12B-it-OnlyText-GGUF",
+  "slug": "onlytextllms-gemma-4-12b-it-onlytext-gguf",
+  "author": "OnlyTextLLMs",
+  "url": "https://huggingface.co/OnlyTextLLMs/gemma-4-12B-it-OnlyText-GGUF",
+  "created_at": "2026-09-24T19:47:49.000Z",
+  "updated_at": "2026-09-24T21:20:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4_unified",
+    "text-generation",
+    "conversational",
+    "text-only",
+    "endpoints_compatible",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907323696,
+  "parameters_human": "11.91B",
+  "storage_bytes": 59673957088,
+  "storage_human": "59.7 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "google/gemma-4-12b • LM Studio",
+      "url": "https://lmstudio.ai/models/google/gemma-4-12b",
+      "snippet": "Gemma 4 12B Unified Gemma 4 12B&#x27;s \"Unified\" label refers to its encoder-free design. Unlike other Gemma 4 models that use separate encoders for multimodal inputs, this model skips them entirely, projecting image patches directly into the LLM&#x27;s embedding space via lightweight linear layers. All modalities feed into a single decoder-only transformer, cutting multimodal latency and enabling end ..."
+    },
+    {
+      "title": "Introducing Gemma 4 12B - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/",
+      "snippet": "An overview of Gemma 4 12B, a model designed to bring high-performance multimodal intelligence directly to your laptop."
+    },
+    {
+      "title": "Gemma 4 12b It - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-12b-it.html",
+      "snippet": "Download Gemma 4 12b It GGUF model. 25.2 GB, 965,708 downloads, 841 likes."
+    },
+    {
+      "title": "gemma4:12b",
+      "url": "https://ollama.com/library/gemma4:12b",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    }
+  ]
+}

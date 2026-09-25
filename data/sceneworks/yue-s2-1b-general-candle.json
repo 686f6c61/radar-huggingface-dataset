@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SceneWorks/yue-s2-1b-general-candle",
+  "slug": "sceneworks-yue-s2-1b-general-candle",
+  "author": "SceneWorks",
+  "url": "https://huggingface.co/SceneWorks/yue-s2-1b-general-candle",
+  "created_at": "2026-09-24T22:51:07.000Z",
+  "updated_at": "2026-09-24T22:52:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "music",
+    "lyrics2song",
+    "yue",
+    "sceneworks",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7931992706,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "m-a-p/YuE-s2-1B-general · Hugging Face",
+      "url": "https://huggingface.co/m-a-p/YuE-s2-1B-general",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - multimodal-art-projection/YuE: YuE2: frontier music generation ...",
+      "url": "https://github.com/multimodal-art-projection/YuE",
+      "snippet": "YuE2: frontier music generation with symbolic planning, zero-shot covers, and agentic music editing. - multimodal-art-projection/YuE"
+    },
+    {
+      "title": "GitHub - SceneWorks/SceneWorks",
+      "url": "https://github.com/SceneWorks/SceneWorks",
+      "snippet": "SceneWorks is a desktop-native AI image, video, and audio generation studio. It runs generation directly on your machine&#x27;s GPU — MLX on macOS (Apple Silicon) and candle / CUDA on Windows and Linux (NVIDIA) — with no Python, no cloud, and no Docker required. Your prompts, models, and media never leave the workstation. The same codebase also ships as an optional GPU server for headless, LAN ..."
+    },
+    {
+      "title": "README.md · m-a-p/YuE-s2-1B-general at main - Hugging Face",
+      "url": "https://huggingface.co/m-a-p/YuE-s2-1B-general/blob/main/README.md",
+      "snippet": "We encourage attribution to the model&#x27;s name (\"YuE by HKUST/M-A-P\"), especially for public and commercial use. Originality & Plagiarism: It is the sole responsibility of creators to ensure that their works, derived from or inspired by YuE outputs, do not plagiarize or unlawfully reproduce existing material."
+    },
+    {
+      "title": "YuE-s2-1B-general · Models",
+      "url": "https://www.modelscope.cn/models/HKUSTAudio/YuE-s2-1B-general",
+      "snippet": "Our model&#x27;s name is YuE (乐). In Chinese, the word means \"music\" and \"happiness.\" Some of you may find words that start with Yu hard to pronounce. If so, you can just call it \"yeah.\" We wrote a song with our model&#x27;s name. YuE is a groundbreaking series of open-source foundation models designed for music generation, specifically for transforming lyrics into full songs (lyrics2song). It can ..."
+    }
+  ]
+}

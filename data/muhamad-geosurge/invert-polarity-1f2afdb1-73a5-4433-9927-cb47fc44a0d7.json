@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-1f2afdb1-73a5-4433-9927-cb47fc44a0d7",
+  "slug": "muhamad-geosurge-invert-polarity-1f2afdb1-73a5-4433-9927-cb47fc44a0d7",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-1f2afdb1-73a5-4433-9927-cb47fc44a0d7",
+  "created_at": "2026-09-24T18:38:00.000Z",
+  "updated_at": "2026-09-24T18:39:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248031744,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496097520,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "France 2 - émissions et séries en replay | France TV",
+      "url": "https://www.france.tv/france-2/",
+      "snippet": "Comment a-t-il pu sévir en toute impunité pendant plus de 30 ans ? Plus qu'un métier, une passion ! Un seul objectif : conquérir la …"
+    },
+    {
+      "title": "France 2 - Toutes les vidéos | France TV",
+      "url": "https://www.france.tv/france-2/toutes-les-videos/",
+      "snippet": "Le 6h info Émission du mercredi 23 septembre 2026 Plus de vidéos Accueil / France 2 / Toutes les vidéos"
+    },
+    {
+      "title": "JT de France 2 : direct et replay - Voir et revoir le journal télévisé",
+      "url": "https://www.franceinfo.fr/replay-jt/france-2/",
+      "snippet": "1 day ago · Regardez les JT de France 2 en direct ou en replay. Retrouvez tous les programmes du Journal de France 2 de 8h, 13h …"
+    },
+    {
+      "title": "REPLAY FRANCE 2: Emissions à revoir",
+      "url": "https://www.replay.fr/emissions+france-2/videos",
+      "snippet": "3 days ago · Revoir toutes les emissions de France 2 en replay."
+    },
+    {
+      "title": "France 2 replay : revoir en streaming les programmes de France 2",
+      "url": "https://tv-programme.com/france-2/replay",
+      "snippet": "Retrouvez les replays de France 2 de vos programmes (films, séries tv,...) et émissions préférées et les meilleures vidéos de France 2"
+    }
+  ]
+}

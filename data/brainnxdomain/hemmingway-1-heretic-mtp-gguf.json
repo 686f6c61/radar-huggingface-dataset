@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "brainnxdomain/Hemmingway-1-Heretic-MTP-GGUF",
+  "slug": "brainnxdomain-hemmingway-1-heretic-mtp-gguf",
+  "author": "brainnxdomain",
+  "url": "https://huggingface.co/brainnxdomain/Hemmingway-1-Heretic-MTP-GGUF",
+  "created_at": "2026-09-22T15:44:55.000Z",
+  "updated_at": "2026-09-24T22:12:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "mtp",
+    "speculative-decoding",
+    "creative-writing",
+    "conversational",
+    "abliteration",
+    "text-generation",
+    "base_model:Altworld/Hemmingway-1",
+    "base_model:quantized:Altworld/Hemmingway-1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2452,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 142482233120,
+  "storage_human": "142.5 GB",
+  "base_model": "Altworld/Hemmingway-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "brainnxdomain/Hemmingway-1-Heretic-MTP-GGUF-V2 · Hugging Face",
+      "url": "https://huggingface.co/brainnxdomain/Hemmingway-1-Heretic-MTP-GGUF-V2",
+      "snippet": "Hemmingway-1 Heretic V2 (GGUF, MTP) V2 is the second release of our decensored Hemmingway-1. V1 (Hemmingway-1-Heretic-MTP-GGUF, trial 106) used the ARA branch of Heretic. V2 (trial 208) uses the traditional Heretic method with a warm-started search. Both releases keep Hemmingway-1&#x27;s writing ability as their goal. V2 does the job better on every measure we ran."
+    },
+    {
+      "title": "Altworld/Hemmingway-1 · Hugging Face",
+      "url": "https://huggingface.co/Altworld/Hemmingway-1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Architecture graph for Altworld/Hemmingway-1 | hfviewer",
+      "url": "https://hfviewer.com/Altworld/Hemmingway-1",
+      "snippet": "Altworld/Hemmingway-1: model architecture with Grouped-query attention (GQA), Linear attention (gated DeltaNet), QK-Norm."
+    },
+    {
+      "title": "Hemmingway-1 model card · Hemmingway",
+      "url": "https://hemmingway.io/model/",
+      "snippet": "Hemmingway-1, our own 27B parameter model: what it is, how it scores next to the biggest models, and how to use it."
+    },
+    {
+      "title": "GitHub - lukeckprobierts/Hemmingway-1: Hemmingway-1: a 27B model that ...",
+      "url": "https://github.com/lukeckprobierts/Hemmingway-1",
+      "snippet": "The AI that writes like a person. 27B parameters, open weights, free for non-commercial use. Weights → · Try it → · Mac and Android apps → · Code → · Product Hunt → Ask most models for a text to your landlord and you get three options, a preamble, and a paragraph explaining the options. Hemmingway-1 just gives you the text."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "lucid-dl/mobilenet-v4-hybrid-large",
+  "slug": "lucid-dl-mobilenet-v4-hybrid-large",
+  "author": "lucid-dl",
+  "url": "https://huggingface.co/lucid-dl/mobilenet-v4-hybrid-large",
+  "created_at": "2026-09-24T18:53:03.000Z",
+  "updated_at": "2026-09-24T19:56:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "lucid",
+  "languages": [],
+  "tags": [
+    "lucid",
+    "safetensors",
+    "image-classification",
+    "mobilenet",
+    "dataset:imagenet-1k",
+    "arxiv:2404.10518",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 151799904,
+  "storage_human": "152 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ImageNet-1k",
+      "metric": null,
+      "value": 83.996
+    },
+    {
+      "task": null,
+      "dataset": "ImageNet-1k",
+      "metric": null,
+      "value": 96.714
+    }
+  ],
+  "sources": [
+    {
+      "title": "Home | Lucid Motors",
+      "url": "https://lucidmotors.com/",
+      "snippet": "Lucid is the future of sustainable mobility, designing electric cars that further reimagines the driving experience.Read more"
+    },
+    {
+      "title": "Lucid Trading - The Best Prop Firm For Futures | Fast Payouts!",
+      "url": "https://lucidtrading.com/",
+      "snippet": "What is Lucid Trading and how does it work? Lucid Trading gives traders the ability to participate in the futures markets without …Read more"
+    },
+    {
+      "title": "Lucid",
+      "url": "https://lucid.co/lucidchart",
+      "snippet": "The Lucid Suite combines Lucidchart for intelligent diagramming and Lucidspark for virtual whiteboarding. Equip every team in your …Read more"
+    },
+    {
+      "title": "Accueil | Lucid Motors",
+      "url": "https://lucidmotors.com/fr-ca",
+      "snippet": "Avec un design, une performance, une autonomie, une commodité et une utilité extraordinaires, le Lucid Gravity est l’avenir de la …Read more"
+    },
+    {
+      "title": "Lucidchart | Diagrammes alimentés par l'intelligence",
+      "url": "https://lucid.co/fr/lucidchart",
+      "snippet": "La suite Lucid combine Lucidchart pour la création de diagrammes intelligents et Lucidspark pour les sessions de tableau blanc …Read more"
+    }
+  ]
+}

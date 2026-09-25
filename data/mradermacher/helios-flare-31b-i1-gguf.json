@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Helios-Flare-31B-i1-GGUF",
   "created_at": "2026-09-24T00:42:17.000Z",
-  "updated_at": "2026-09-24T03:07:27.000Z",
+  "updated_at": "2026-09-24T04:56:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,12 +30,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 118,
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",
-  "storage_bytes": 200790718368,
-  "storage_human": "200.8 GB",
+  "storage_bytes": 334809614592,
+  "storage_human": "334.8 GB",
   "base_model": "Vortex5/Helios-Flare-31B",
   "formats": [
     "gguf"

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "advafzal/afzal-and-associates-legal-model",
+  "slug": "advafzal-afzal-and-associates-legal-model",
+  "author": "advafzal",
+  "url": "https://huggingface.co/advafzal/afzal-and-associates-legal-model",
+  "created_at": "2026-09-24T18:41:22.000Z",
+  "updated_at": "2026-09-24T18:45:02.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "legal",
+    "law",
+    "lawyer",
+    "bangladesh",
+    "bangladesh-law",
+    "narsingdi",
+    "legal-assistant",
+    "legal-tech",
+    "civil-law",
+    "criminal-defense",
+    "family-law",
+    "property-law",
+    "partition-deed",
+    "bontononama",
+    "corporate-law",
+    "tax-law",
+    "intellectual-property",
+    "consumer-protection",
+    "legal-bangla",
+    "placeholder",
+    "bn",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Afzal and Associates — Intellectual Property Law Services - a Hugging ...",
+      "url": "https://huggingface.co/spaces/advafzal/afzal-and-associates-intellectual-property-law-services",
+      "snippet": "Afzal and Associates provides comprehensive legal services in intellectual property (IP) law, helping individuals and businesses in Bangladesh protect their creative works, inventions, and brands. We offer expert guidance on copyright, trademarks, patents, trade secrets, and related areas. We also assist with production agreements and international media law compliance — ensuring your rights ..."
+    },
+    {
+      "title": "Harvey Built Its Own Legal AI Model Instead of Renting One From ...",
+      "url": "https://startupfortune.com/harvey-built-its-own-legal-ai-model-instead-of-renting-one-from-openai/",
+      "snippet": "Harvey launched Tenet, its first proprietary legal AI model built on Moonshot&#x27;s Kimi K3, cutting reliance on OpenAI and Anthropic for legal work."
+    },
+    {
+      "title": "Afzal Law Associates - Expert legal guidance for all your legal matters ...",
+      "url": "https://afzallawassociates.com/",
+      "snippet": "Family Matters At Afzal Law Associates, we recognize that the practice of family law is unique in that it requires sensitivity and compassion. We aim to understand various social, cultural and emotional dynamics that may impact the legal issues involved in any family case."
+    },
+    {
+      "title": "Google Gemini AI model hacks three other companies - WCVB",
+      "url": "https://www.wcvb.com/article/google-gemini-ai-hacks-companies/73797054",
+      "snippet": "Google said the AI model gained unauthorized access to three outside systems during a test by either guessing login information or using login credentials it found in a public repository."
+    },
+    {
+      "title": "About Us - Afzal Law Associates",
+      "url": "https://afzallawassociates.com/about-us/",
+      "snippet": "Our vision at Afzal Law Associates is to be recognized as a premier legal firm known for our unwavering dedication to excellence, integrity, and client-centric service. We aspire to set new standards in the legal profession by consistently delivering innovative solutions, exceeding client expectations, and achieving exceptional results. Through our commitment to continuous improvement ..."
+    }
+  ]
+}

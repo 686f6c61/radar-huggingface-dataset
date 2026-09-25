@@ -5,7 +5,7 @@
   "author": "OpenMed",
   "url": "https://huggingface.co/OpenMed/MedPsy-4B-ONNX",
   "created_at": "2026-09-24T01:16:48.000Z",
-  "updated_at": "2026-09-24T01:21:55.000Z",
+  "updated_at": "2026-09-25T01:53:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,6 +24,7 @@
     "on-device",
     "quantized",
     "int4",
+    "gptq",
     "medical",
     "biomedical",
     "clinical",
@@ -35,12 +36,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 258,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3301271362,
-  "storage_human": "3.3 GB",
+  "storage_bytes": 6591120115,
+  "storage_human": "6.6 GB",
   "base_model": "qvac/MedPsy-4B",
   "formats": [
     "onnx"

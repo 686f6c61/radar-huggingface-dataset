@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "servantofares/Ling-3.0-flash-VL",
+  "slug": "servantofares-ling-3-0-flash-vl",
+  "author": "servantofares",
+  "url": "https://huggingface.co/servantofares/Ling-3.0-flash-VL",
+  "created_at": "2026-09-24T23:52:40.000Z",
+  "updated_at": "2026-09-24T23:52:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bailing_moe_v3_vl",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124848460496,
+  "parameters_human": "124.85B",
+  "storage_bytes": 249705360073,
+  "storage_human": "249.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

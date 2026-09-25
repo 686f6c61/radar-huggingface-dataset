@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "thaar1111/gin",
+  "slug": "thaar1111-gin",
+  "author": "thaar1111",
+  "url": "https://huggingface.co/thaar1111/gin",
+  "created_at": "2026-09-24T20:00:07.000Z",
+  "updated_at": "2026-09-24T20:00:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore how every major AI model evolved from its ancestors. Interactive visualization of LLM genealogy."
+    },
+    {
+      "title": "Training the GIN Model | LirongWu/MAPE-PPI | DeepWiki",
+      "url": "https://deepwiki.com/LirongWu/MAPE-PPI/4.2-training-the-gin-model",
+      "snippet": "Training the GIN model is a critical step in the MAPE-PPI system that enables accurate prediction of protein-protein interactions. The process leverages pretrained protein embeddings from the VAE model and employs standard deep learning practices like batch processing, learning rate scheduling, and early stopping to achieve optimal performance."
+    },
+    {
+      "title": "Gin - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1909689309343949259",
+      "snippet": "Generate stunning style anime art with the &#x27;Gin&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "ginn1111",
+      "url": "https://gin1111.dev/specs",
+      "snippet": "Hi, I&#x27;m Pham (Gin) Van Thuan — a web developer crafting performant, user-centered digital experiences. I champion clean code and best practices to keep projects maintainable."
+    }
+  ]
+}

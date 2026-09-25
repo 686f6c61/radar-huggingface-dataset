@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wasedarobotics/notes-document-ai",
+  "slug": "wasedarobotics-notes-document-ai",
+  "author": "wasedarobotics",
+  "url": "https://huggingface.co/wasedarobotics/notes-document-ai",
+  "created_at": "2026-09-24T23:24:22.000Z",
+  "updated_at": "2026-09-24T23:24:27.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wasedarobotics/notes-document-ai · Hugging Face",
+      "url": "https://huggingface.co/wasedarobotics/notes-document-ai",
+      "snippet": "wasedarobotics ... notes-document-ai Like 0 Safetensors transformer research-notes document-ai License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new Notes on Document AI Repository summary What is covered How to read this repository Scope and limitations Files License"
+    },
+    {
+      "title": "Document AI release notes | Google Cloud Documentation",
+      "url": "https://docs.cloud.google.com/document-ai/docs/release-notes",
+      "snippet": "Document AI is introducing document-level prompting for custom document processors. This feature allows you to provide an overall description of the document to inject deep business knowledge into the model, leading to improved extraction quality."
+    },
+    {
+      "title": "Document AI Models and Tasks - DeepWiki",
+      "url": "https://deepwiki.com/NielsRogge/Transformers-Tutorials/6-document-ai-models-and-tasks",
+      "snippet": "This page provides an overview of Document AI models and tasks available in the Transformers-Tutorials repository. Document AI refers to AI systems designed to understand, analyze, and extract information from document images, including text, layout, tables, and other visual elements."
+    },
+    {
+      "title": "Awesome World Models for Robotics - GitHub",
+      "url": "https://github.com/leofan90/Awesome-World-Models",
+      "snippet": "Awesome World Models for Robotics This repository provides a curated list of papers for World Models for General Video Generation, Embodied AI, and Autonomous Driving. Template from Awesome-LLM-Robotics and Awesome-World-Model"
+    },
+    {
+      "title": "Institute for AI and Robotics - Future Robotics ... - 早稲田大学",
+      "url": "https://www.waseda.jp/inst/fro/en/institutes/ai/",
+      "snippet": "Research theme Based on \"Cognitive Development Robotics Study\" and \"Deep Learning Technique\", we are promoting \"Motion Learning Using Visual and Force Tactile Processing\", \"Speech and Environmental Sound Recognition\" and \"Grounding of Symbols and Languages\" for AI robots."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "jacob-valdez",
   "url": "https://huggingface.co/jacob-valdez/tensorcode-chatbot-cognitive-experimental-001",
   "created_at": "2026-09-21T16:48:06.000Z",
-  "updated_at": "2026-09-21T17:00:26.000Z",
+  "updated_at": "2026-09-24T19:32:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,8 +17,7 @@
     "tensorcode",
     "safetensors",
     "experimental",
-    "evidence-grounded",
-    "en",
+    "evidence-conditioned-question-answering",
     "region:us"
   ],
   "likes": 0,
@@ -26,8 +25,8 @@
   "trending_score": 0,
   "parameters": 517246628,
   "parameters_human": "517.2M",
-  "storage_bytes": 2069123673,
-  "storage_human": "2.1 GB",
+  "storage_bytes": 4138247346,
+  "storage_human": "4.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "lucasoc",
   "url": "https://huggingface.co/lucasoc/sci-image-models",
   "created_at": "2026-09-24T14:56:37.000Z",
-  "updated_at": "2026-09-24T14:58:52.000Z",
+  "updated_at": "2026-09-24T18:49:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",
@@ -24,6 +24,7 @@
     "qwen2.5-vl",
     "lora",
     "icdar-metric-loss",
+    "pt",
     "en",
     "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
     "base_model:adapter:Qwen/Qwen2.5-VL-3B-Instruct",
@@ -35,8 +36,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 26193636,
-  "storage_human": "26 MB",
+  "storage_bytes": 40965380,
+  "storage_human": "41 MB",
   "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
   "formats": [
     "safetensors"

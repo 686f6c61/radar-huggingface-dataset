@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OnlyTextLLMs/gemma-4-12B-it-OnlyText",
+  "slug": "onlytextllms-gemma-4-12b-it-onlytext",
+  "author": "OnlyTextLLMs",
+  "url": "https://huggingface.co/OnlyTextLLMs/gemma-4-12B-it-OnlyText",
+  "created_at": "2026-09-24T19:46:59.000Z",
+  "updated_at": "2026-09-24T19:47:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified_text",
+    "text-generation",
+    "conversational",
+    "text-only",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:finetune:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907323440,
+  "parameters_human": "11.91B",
+  "storage_bytes": 23828315717,
+  "storage_human": "23.8 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "How to Run Gemma 4 12B Locally: Complete Laptop Setup Guide (2026)",
+      "url": "https://www.aimadetools.com/blog/how-to-run-gemma-4-12b-locally/",
+      "snippet": "Step-by-step guide to running Gemma 4 12B locally with Ollama, LM Studio, and vLLM. 16GB setup, quantization options, and MTP variant."
+    },
+    {
+      "title": "HYPR4AI/Gemma-4-12B-MXFP4A16-Text-Only at main - Hugging Face",
+      "url": "https://huggingface.co/HYPR4AI/Gemma-4-12B-MXFP4A16-Text-Only/tree/main",
+      "snippet": "HYPR4AI / Gemma-4-12B-MXFP4A16-Text-Only Like 0 Text Generation Transformers Safetensors hotpotqa/hotpot_qa English gemma4_unified image-text-to-text gemma gemma-4 fp4 mxfp4 llmcompressor compressed-tensors vllm quantized hotpotqa conversational 8-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 12B IT - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/gemma-4-12b-it",
+      "snippet": "Deploy Google&#x27;s Gemma 4 12B Unified, an encoder-free omni model with native text, image, and audio understanding and a 256K context window."
+    }
+  ]
+}

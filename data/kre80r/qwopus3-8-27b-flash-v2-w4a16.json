@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "Kre80r/Qwopus3.8-27B-Flash-V2-W4A16",
+  "slug": "kre80r-qwopus3-8-27b-flash-v2-w4a16",
+  "author": "Kre80r",
+  "url": "https://huggingface.co/Kre80r/Qwopus3.8-27B-Flash-V2-W4A16",
+  "created_at": "2026-09-24T23:29:48.000Z",
+  "updated_at": "2026-09-25T00:49:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "vision",
+    "multimodal",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "text-generation",
+    "qwen3",
+    "qwen",
+    "27b",
+    "fine-tuned",
+    "instruction-tuned",
+    "reasoning",
+    "agent",
+    "agentic",
+    "tool-use",
+    "function-calling",
+    "code-generation",
+    "mtp",
+    "speculative-decoding",
+    "local-inference",
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash",
+    "base_model:finetune:Jackrong/Qwopus3.8-27B-Flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "auto-round",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6284446960,
+  "parameters_human": "6.28B",
+  "storage_bytes": 19016695415,
+  "storage_human": "19.0 GB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jackrong/Qwopus3.8-27B-Flash-V2 · Hugging Face",
+      "url": "https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2",
+      "snippet": "2.1 Base Model and Training Lineage Qwopus3.8-27B-Flash-V2 is post-trained from Qwopus3.8-27B-Flash, with Qwen3.8-27B as the original foundation model. The V2 run inherits the earlier release&#x27;s SFT and reasoning-reinforcement pipeline as its starting point, then applies a new post-training pass with different rewards and reinforcement-learning methods."
+    },
+    {
+      "title": "Qwopus3.8 27b Flash - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwopus3-8-27b-flash.html",
+      "snippet": "Download Qwopus3.8 27b Flash GGUF model. 56.7 GB, 231,831 downloads, 205 likes."
+    },
+    {
+      "title": "Qwopus3.8-27B-Flash-V2 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Jackrong/Qwopus3.8-27B-Flash-V2",
+      "snippet": "Qwopus3.8-27B-Flash-V2 is a renewed post-training release of Qwopus3.8-27B-Flash, which itself is built on Qwen3.8-27B. The goal remains the same: preserve enough capability for demanding work while reducing ineffective reasoning and making long-running agent workloads more practical. An agent amplifies reasoning cost."
+    },
+    {
+      "title": "Run Qwopus3.8-27B-Flash API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/Jackrong/Qwopus3.8-27B-Flash",
+      "snippet": "Qwopus3.8-27B-Flash: Efficient Agent Workloads Qwopus3.8-27B-Flash is a 27 billion parameter model fine-tuned from Qwen3.8-27B, developed by Jackrong. Its core philosophy is to maintain strong general capabilities while significantly reducing reasoning costs and response times, particularly for demanding, long-running agent tasks."
+    },
+    {
+      "title": "Qwopus3.8 27B Flash V2 by Jackrong — VRAM 55.6GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Jackrong%2FQwopus3.8-27B-Flash-V2,69bYxKrErdAvJBLS0FSKp5",
+      "snippet": "Qwopus3.8 27B Flash V2 is an open-source 27b LLM by Jackrong. VRAM 55.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

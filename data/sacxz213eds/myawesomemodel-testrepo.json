@@ -4,8 +4,8 @@
   "slug": "sacxz213eds-myawesomemodel-testrepo",
   "author": "SACXZ213EDS",
   "url": "https://huggingface.co/SACXZ213EDS/MyAwesomeModel-TestRepo",
-  "created_at": "2026-09-22T10:12:54.000Z",
-  "updated_at": "2026-09-22T10:13:06.000Z",
+  "created_at": "2026-09-24T14:10:59.000Z",
+  "updated_at": "2026-09-24T14:11:06.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-24T03:34:38.274Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

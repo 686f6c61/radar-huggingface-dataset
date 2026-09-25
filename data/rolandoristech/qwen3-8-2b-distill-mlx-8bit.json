@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "RolanDorisTech/Qwen3.8-2B-Distill-MLX-8bit",
+  "slug": "rolandoristech-qwen3-8-2b-distill-mlx-8bit",
+  "author": "RolanDorisTech",
+  "url": "https://huggingface.co/RolanDorisTech/Qwen3.8-2B-Distill-MLX-8bit",
+  "created_at": "2026-09-23T18:10:50.000Z",
+  "updated_at": "2026-09-25T02:08:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3",
+    "qwen3.8",
+    "distill",
+    "quantized",
+    "apple-silicon",
+    "imatrix",
+    "oQ",
+    "oQe",
+    "oq8e",
+    "q8",
+    "8bit",
+    "8-bit",
+    "2b",
+    "2BB",
+    "reasoning",
+    "text-generation",
+    "conversational",
+    "arxiv:2306.07629",
+    "base_model:empero-ai/Qwen3.8-2B-Distill",
+    "base_model:quantized:empero-ai/Qwen3.8-2B-Distill",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 2020032428,
+  "storage_human": "2.0 GB",
+  "base_model": "empero-ai/Qwen3.8-2B-Distill",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RolanDorisTech/Qwen3.8-9B-Distill-MLX-oQ5e · Hugging Face",
+      "url": "https://huggingface.co/RolanDorisTech/Qwen3.8-9B-Distill-MLX-oQ5e",
+      "snippet": "MLX-native quantized version of Qwen3.8-9B-Distill, built with oMLX Universal Dynamic Quantization (oQe). Standard mlx-lm safetensors — works with mlx-lm, oMLX, LM Studio, and mlx-swift."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "empero-ai/Qwen3.8-2B-Distill · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwen3.8-2B-Distill",
+      "snippet": "Qwen3.8-2B is a full-parameter distillation of Qwen3.8 2.4T A95B into the Qwen3.5-2B architecture — the smallest member of the family, trained on the same curriculum as its larger siblings. The student saw ~30,000 curated teacher traces from our internal Qwen3.8 distillation datasets — dense chain-of-thought spanning mathematics, general reasoning, and instruction following, quality ..."
+    },
+    {
+      "title": "Qwen3.8 2B Distill by empero-ai — VRAM 4.5GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/empero-ai%2FQwen3.8-2B-Distill,3TlLgEP23RPu4OPKG5EMyl",
+      "snippet": "Qwen3.8 2B Distill is an open-source 2b LLM by empero-ai. VRAM 4.5GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "GitHub - 47thtechcorner/RayCodes_Qwen3.8Distilled: Qwen 3.8 2B, 4B & 9B ...",
+      "url": "https://github.com/47thtechcorner/RayCodes_Qwen3.8Distilled",
+      "snippet": "Think of distillation like condensing a giant 1,000-page encyclopedia into a pocket-sized cheat sheet. The Teacher Model (Qwen3.8-2.4T): A massive AI running on multi-million dollar data centers. It generates step-by-step reasoning solutions (\"Chain of Thought\"). The Student Models (9B / 4B / 2B): Smaller models trained directly on the teacher&#x27;s exact reasoning traces. The Result: You get high ..."
+    }
+  ]
+}

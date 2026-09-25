@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ukisai/Swift-1.5-Qwen3.8-27b",
+  "slug": "ukisai-swift-1-5-qwen3-8-27b",
+  "author": "ukisai",
+  "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b",
+  "created_at": "2026-09-16T14:25:01.000Z",
+  "updated_at": "2026-09-24T16:20:42.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3_8",
+    "reasoning",
+    "efficient-thinking",
+    "token-efficient",
+    "post-training",
+    "terminal-bench",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 17,
+  "downloads_30d": 33,
+  "trending_score": 14,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55580862660,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ukisai/Swift-Qwen3.8-27b · Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-Qwen3.8-27b",
+      "snippet": "Swift-Qwen3.8-27B is UkisAI's reasoning-efficient derivative of Qwen3.8-27B, using 58.3% fewer thinking tokens while maintaining near-identical performance (<1% loss) and as a result getting a x1.95 speed-up on several tasks."
+    },
+    {
+      "title": "Swift-Qwen3.8-27B: less overthinking | UkisAI",
+      "url": "https://ukisai.com/news/introducing-swift",
+      "snippet": "AIME uses template-default effort and counts truncated answers as incorrect, so it is a separate comparison from the BF16 math results. The full model is available on Hugging Face. Serve it with vLLM or SGLang, using a build that supports Qwen3.8. Adjust tensor parallelism and context length to your GPU memory. ... vllm serve ukisai/Swift-Qwen3.8-27b \\ --dtype bfloat16 \\ --tensor-parallel-size 1 \\ --max-model-len 262144 \\ --reasoning-parser qwen3 \\ --enable-auto-tool-choice \\ --tool-call-parser qwen3_coder \\ --port 8000"
+    },
+    {
+      "title": "ukisai/Swift-1.5-Qwen3.8-27b · Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b",
+      "snippet": "Swift 1.5 Qwen3.8-27B is UkisAI's reasoning-efficient derivative of Qwen3.8-27B. It uses 58.5% fewer thinking tokens while scoring 0.35% higher than the base, for a 1.95× speed-up on several tasks."
+    },
+    {
+      "title": "ukisai/Swift-Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-Qwen3.8-27B-GGUF",
+      "snippet": "Swift-Qwen3.8-27B is UkisAI's reasoning-efficient derivative of Qwen3.8-27B, using 58.3% fewer thinking tokens while maintaining near-identical performance (<1% loss) and as a result getting a x1.95 speed-up on several tasks."
+    },
+    {
+      "title": "ukisai/Swift-1.5-Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GGUF",
+      "snippet": "Swift 1.5 Qwen3.8-27B is UkisAI's reasoning-efficient derivative of Qwen3.8-27B. It uses 58.5% fewer thinking tokens while scoring 0.35% higher than the base, for a 9.18× speed-up on several tasks."
+    }
+  ]
+}

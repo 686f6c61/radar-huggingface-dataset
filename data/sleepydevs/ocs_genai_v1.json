@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "SleepyDevs/ocs_genai_v1",
+  "slug": "sleepydevs-ocs_genai_v1",
+  "author": "SleepyDevs",
+  "url": "https://huggingface.co/SleepyDevs/ocs_genai_v1",
+  "created_at": "2026-09-24T22:57:31.000Z",
+  "updated_at": "2026-09-25T00:17:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4915328,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SleepyDevs/ocs-genai · Hugging Face",
+      "url": "https://huggingface.co/SleepyDevs/ocs-genai",
+      "snippet": "ocs-genai render artifacts (v1 T5) CPU render pipeline vertical slice (UC-5a), repo github:puppybutleragent/ocs-genai branch t_1c3dfbd5-render-pipeline @ ea86cff."
+    },
+    {
+      "title": "SleepyDevs (Sleepy Devs) - Hugging Face",
+      "url": "https://huggingface.co/SleepyDevs/models",
+      "snippet": "Org profile for Sleepy Devs on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Official gateway and model catalog for Agnes AI. - GitHub",
+      "url": "https://github.com/AgnesAI-Labs/AgnesAI-Models",
+      "snippet": "Official gateway and model catalog for Agnes AI. Agnes AI gives developers OpenAI-compatible access to multimodal models for text, image, video, and agent workflows through a unified API gateway."
+    },
+    {
+      "title": "GitHub - GoogleCloudPlatform/generative-ai: Sample code and notebooks ...",
+      "url": "https://github.com/GoogleCloudPlatform/generative-ai",
+      "snippet": "This repository contains notebooks, code samples, sample apps, and other resources that demonstrate how to use, develop and manage generative AI workflows using Generative AI with Agent Platform."
+    },
+    {
+      "title": "Generative AI | Google Cloud Documentation",
+      "url": "https://docs.cloud.google.com/docs/generative-ai",
+      "snippet": "Documentation and resources for building and implementing generative AI applications with Google Cloud tools and productss."
+    }
+  ]
+}

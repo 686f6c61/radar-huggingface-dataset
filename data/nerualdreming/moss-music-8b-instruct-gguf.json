@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nerualdreming/MOSS-Music-8B-Instruct-GGUF",
+  "slug": "nerualdreming-moss-music-8b-instruct-gguf",
+  "author": "nerualdreming",
+  "url": "https://huggingface.co/nerualdreming/MOSS-Music-8B-Instruct-GGUF",
+  "created_at": "2026-09-24T21:34:11.000Z",
+  "updated_at": "2026-09-24T21:36:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "music",
+    "audio-captioning",
+    "moss",
+    "base_model:OpenMOSS-Team/MOSS-Music-8B-Instruct",
+    "base_model:quantized:OpenMOSS-Team/MOSS-Music-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5188223648,
+  "storage_human": "5.2 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Music-8B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fun Trivia - The World's Largest Trivia Site",
+      "url": "https://www.funtrivia.com/",
+      "snippet": "Sep 11, 2001 · 2 million trivia questions, 155,000 trivia quizzes, and games on thousands of topics! Play now: movies, science, …"
+    },
+    {
+      "title": "The world's best hospital - Mayo Clinic",
+      "url": "https://www.mayoclinic.org/",
+      "snippet": "The right answers the first time Effective treatment depends on getting the right diagnosis. Our experts diagnose and treat the …"
+    },
+    {
+      "title": "Transient ischemic attack (TIA) - Symptoms and causes",
+      "url": "https://www.mayoclinic.org/diseases-conditions/transient-ischemic-attack/symptoms-causes/syc-20355679",
+      "snippet": "Symptoms A transient ischemic attack (TIA) usually lasts a few minutes. Most symptoms disappear within an hour. Rarely, symptoms …"
+    },
+    {
+      "title": "155,501 Quizzes - Take a Quiz on Any Topic - Fun Trivia",
+      "url": "https://www.funtrivia.com/quizzes/",
+      "snippet": "Free online trivia quizzes. Test your knowledge on movies, music, sports, science, history, geography, animals, and so much more! …"
+    },
+    {
+      "title": "Medical Diseases & Conditions - Mayo Clinic",
+      "url": "https://www.mayoclinic.org/diseases-conditions",
+      "snippet": "Explore comprehensive guides on hundreds of common and rare diseases and conditions from the experts at Mayo Clinic."
+    }
+  ]
+}

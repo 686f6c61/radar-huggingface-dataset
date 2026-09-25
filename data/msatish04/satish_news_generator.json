@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "MSatish04/Satish_News_Generator",
+  "slug": "msatish04-satish_news_generator",
+  "author": "MSatish04",
+  "url": "https://huggingface.co/MSatish04/Satish_News_Generator",
+  "created_at": "2026-09-24T20:50:18.000Z",
+  "updated_at": "2026-09-24T23:19:19.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "qlora",
+    "lora",
+    "sft",
+    "trl",
+    "peft",
+    "fine-tuned",
+    "conversational",
+    "en",
+    "dataset:dataspoof/Fine_tuned_project",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348572,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[FREE] News Article Generator - (No Login & Unlimited)",
+      "url": "https://toolbaz.com/writer/news-article-generator",
+      "snippet": "Whether you run a news blog, manage ... ToolBaz.com solves this with our Free AI News Article Generator—the fastest way to turn headlines into high-quality stories...."
+    },
+    {
+      "title": "AI Updates Today (September 2026) – Latest AI Model Releases",
+      "url": "https://llm-stats.com/llm-updates",
+      "snippet": "Organizations use various naming conventions: OpenAI uses dated snapshots (gpt-4-0613), Anthropic uses descriptive tiers (Claude 3.5 Sonnet), and Google uses generation markers (Gemini 1.5 Pro)."
+    },
+    {
+      "title": "LLM News Today (September 2026) – AI Model Releases",
+      "url": "https://llm-stats.com/ai-news",
+      "snippet": "A verified subset of 500 software engineering problems from real GitHub issues, validated by human annotators for evaluating language models' ability to resolve real-world coding issues by generating patches for Python codebases."
+    },
+    {
+      "title": "Models — AI Hub",
+      "url": "https://aihub.com/models",
+      "snippet": "You can now generate an entire 3blue1brown style video from any research paper with Opus 5.5."
+    },
+    {
+      "title": "Free AI News Article Generator | Easy-Peasy.AI",
+      "url": "https://easy-peasy.ai/templates/news-article-generator",
+      "snippet": "To advance our commitment to AI safety, we recently formalized agreements with the U.S. and U.K. AI Safety Institutes. We've begun operationalizing these agreements, including granting the institutes early access to a research version of this model."
+    }
+  ]
+}

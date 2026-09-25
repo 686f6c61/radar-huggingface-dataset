@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "bigxho15/Qwen3-8B",
+  "slug": "bigxho15-qwen3-8b",
+  "author": "bigxho15",
+  "url": "https://huggingface.co/bigxho15/Qwen3-8B",
+  "created_at": "2026-09-24T21:29:21.000Z",
+  "updated_at": "2026-09-24T21:29:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2309.00071",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939430,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_8b",
+      "snippet": "Qwen3-8B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑8B is a state‑of‑the‑art multilingual base language model with 8 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen3-8B - Model Info, Parameters, Benchmarks - SiliconFlow\"",
+      "url": "https://www.siliconflow.com/models/qwen3-8b",
+      "snippet": "Qwen3-8B is the latest large language model in the Qwen series with 8.2B parameters. This model uniquely supports seamless switching between thinking mode (for complex logical reasoning, math, and coding) and non-thinking mode (for efficient, general-purpose dialogue). It demonstrates significantly enhanced reasoning capabilities, surpassing previous QwQ and Qwen2.5 instruct models in ..."
+    },
+    {
+      "title": "Qwen: Qwen3 8B model | Phala",
+      "url": "https://phala.com/models/qwen/qwen3-8b",
+      "snippet": "Qwen3-8B is a dense 8.2B parameter causal language model from the Qwen3 series, designed for both reasoning-heavy tasks and efficient dialogue. It supports seamless switching between thinking mode for math, coding, and logical reasoning and non-thinking mode for efficient general-purpose dialogue."
+    },
+    {
+      "title": "bigxho15 (B&W_AI) - Hugging Face",
+      "url": "https://huggingface.co/bigxho15",
+      "snippet": "Qwen/Qwen2.5-Coder-7B-Instruct Text Generation • 8B•Updated Jan 12, 2025• 2.63M •• 801"
+    },
+    {
+      "title": "Qwen: Qwen3 8B - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/qwen/qwen3-8b-04-28",
+      "snippet": "Qwen3-8B, a dense 8.2B parameter causal language model, demonstrates strong reliability with an 89% success rate across benchmarks, consistently providing usable responses. While it tends to have longer response times, ranking in the 18th percentile for speed, it offers cost-effective solutions, placing in the 69th percentile for price."
+    }
+  ]
+}

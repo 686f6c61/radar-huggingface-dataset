@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "OnlyTextLLMs/gemma-4-26B-A4B-it-OnlyText-GGUF",
+  "slug": "onlytextllms-gemma-4-26b-a4b-it-onlytext-gguf",
+  "author": "OnlyTextLLMs",
+  "url": "https://huggingface.co/OnlyTextLLMs/gemma-4-26B-A4B-it-OnlyText-GGUF",
+  "created_at": "2026-09-24T19:48:28.000Z",
+  "updated_at": "2026-09-24T20:31:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "text-generation",
+    "conversational",
+    "text-only",
+    "endpoints_compatible",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:quantized:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233122334,
+  "parameters_human": "25.23B",
+  "storage_bytes": 66294224896,
+  "storage_human": "66.3 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-26B-A4B-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 26B A4B IT — AI Model Radar",
+      "url": "https://aimodelradar.app/models/gemma-4-26b-a4b-it",
+      "snippet": "Gemma 4 26B A4B IT is an instruction-tuned Mixture-of-Experts model from Google DeepMind with 25.2B total parameters, of which only 3.8B activate per token during inference. The model supports a 262K token context window, native function calling, and structured output. It is available via API at $0.06 per million input tokens and $0.33 per million output tokens."
+    },
+    {
+      "title": "mtp-gemma-4-26B-A4B-it.gguf · unsloth/gemma-4-26B-A4B-it-GGUF at main",
+      "url": "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF/blob/main/mtp-gemma-4-26B-A4B-it.gguf",
+      "snippet": "unsloth / gemma-4-26B-A4B-it-GGUF like 851 Follow Unsloth AI 24.6k Image-Text-to-Text GGUF gemma4 unsloth gemma google imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community 43 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Gemma 4 26B A4B IT | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it",
+      "snippet": "Explore Gemma 4 26B A4B IT, an open model built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input and generating text output"
+    }
+  ]
+}

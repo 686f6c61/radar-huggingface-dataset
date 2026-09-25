@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Lacu89/vton-weights",
+  "slug": "lacu89-vton-weights",
+  "author": "Lacu89",
+  "url": "https://huggingface.co/Lacu89/vton-weights",
+  "created_at": "2026-09-24T20:46:38.000Z",
+  "updated_at": "2026-09-24T20:52:18.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 998748132,
+  "storage_human": "999 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - fashn-AI/fashn-vton-1.5: FASHN VTON v1.5: Efficient Maskless ...",
+      "url": "https://github.com/fashn-AI/fashn-vton-1.5",
+      "snippet": "Virtual try-on model that generates photorealistic images directly in pixel space without requiring segmentation masks. This repo contains minimal inference code to run virtual try-on with the FASHN VTON v1.5 model weights. Given a person image and a garment image, the model generates a ..."
+    },
+    {
+      "title": "FASHN VTON v1.5 model weights · fashn-ai/fashn-vton-1.5 at 0a14430",
+      "url": "https://huggingface.co/fashn-ai/fashn-vton-1.5/commit/0a14430cd7336bad63b6cfa45ae25f894759b60d",
+      "snippet": "FASHN VTON v1.5 model weights Browse files Files changed (3) hide show .gitattributes +1 -0 README.md +12 -0 model.safetensors +3 -0 .gitattributes ADDED Viewed"
+    },
+    {
+      "title": "FASHN VTON v1.5 | Virtual Try-On Research | FASHN AI",
+      "url": "https://fashn.ai/research/vton-1-5",
+      "snippet": "Released under Apache 2.0, FASHN VTON v1.5 is the first permissive open-source virtual try-on model and one of few pixel-space diffusion architectures publicly available for research and commercial use."
+    },
+    {
+      "title": "FASHN VTON: tasks, hardware requirements and license — open AI model",
+      "url": "https://chimitdorzhi.tech/en/ii-modeli/fashn-vton/",
+      "snippet": "FASHN VTON by FASHN AI: A rare open try-on model with a commercial license: mask-free, accepts a photo of the item on a model or a flat lay. Weights are about"
+    },
+    {
+      "title": "What Are Model Weights and Why Do They Matter in 2026?",
+      "url": "https://www.articsledge.com/post/model-weights",
+      "snippet": "Model weights are the numerical parameters that give AI its intelligence. Learn what they are, how they work, why they matter for AI performance, policy, and the open vs. closed AI debate in 2026."
+    }
+  ]
+}

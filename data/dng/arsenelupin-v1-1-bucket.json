@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "DNG/ArseneLupin-v1.1-bucket",
+  "slug": "dng-arsenelupin-v1-1-bucket",
+  "author": "DNG",
+  "url": "https://huggingface.co/DNG/ArseneLupin-v1.1-bucket",
+  "created_at": "2026-09-24T21:08:34.000Z",
+  "updated_at": "2026-09-24T21:09:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "decision-model",
+    "classification",
+    "calibration",
+    "system-one",
+    "en",
+    "fr",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9332646554,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DNG - Conseil en Stratégie & Opérations Consumer",
+      "url": "https://www.digitalnativegroup.com/",
+      "snippet": "DNG est un cabinet de conseil en stratégie et opérations, spécialisé dans l’écosystème Consumer. Nous accompagnons les …"
+    },
+    {
+      "title": "Qu’est-ce qu’un fichier DNG et comment l’ouvrir ? | Adobe",
+      "url": "https://www.adobe.com/fr/creativecloud/file-types/image/raw/dng-file.html?msockid=2bcad118412667643298c6c640496685",
+      "snippet": "Un fichier DNG enregistre les données image non compressées sur les appareils photo numériques de nombreux fabricants pour …"
+    },
+    {
+      "title": "Digital Negative (DNG), Adobe DNG Converter | Adobe Photoshop",
+      "url": "https://helpx.adobe.com/fr/camera-raw/desktop/dng-and-file-formats/digital-negative.html",
+      "snippet": "Jun 9, 2026 · DNG est un format public d’archivage permettant de stocker des fichiers Camera Raw. Adobe DNG Converter est un …"
+    },
+    {
+      "title": "Qu’est que le format DNG et comment ouvrir une photo DNG ?",
+      "url": "https://vivre-de-la-photo.fr/quest-que-le-format-dng-et-comment-ouvrir-une-photo-dng/",
+      "snippet": "Jun 14, 2023 · Le DNG ou Digital Negative est un format brut concurrent des fichiers RAW. Lancé par Adobe en 2004, ce format a …"
+    },
+    {
+      "title": "Qu'est-ce qu'un fichier DNG ? Ouvrir, Convertir et Récupérer DNG",
+      "url": "https://recoverit.wondershare.fr/what-is/dng-file.html",
+      "snippet": "Découvrez ce qu'est un fichier DNG, comment il fonctionne, comment l'ouvrir et le convertir, ainsi que des méthodes simples pour …"
+    }
+  ]
+}

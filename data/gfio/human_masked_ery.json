@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "GFIO/human_masked_ery",
+  "slug": "gfio-human_masked_ery",
+  "author": "GFIO",
+  "url": "https://huggingface.co/GFIO/human_masked_ery",
+  "created_at": "2026-09-24T21:24:58.000Z",
+  "updated_at": "2026-09-24T21:25:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229881346,
+  "parameters_human": "229.9M",
+  "storage_bytes": 919554072,
+  "storage_human": "920 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Masked Modeling for Human Motion Recovery Under Occlusions",
+      "url": "https://arxiv.org/pdf/2601.16079v1",
+      "snippet": "Masked modeling with transformers has been widely adopted in text [12], image [5], and mo-tion [19, 52, 83] generation. By randomly masking sequence segments, the model learns to reconstruct missing parts - an intuitive fit for handling occlusions."
+    },
+    {
+      "title": "HOIMask: Towards Generative Masked Modeling for Human Object ...",
+      "url": "https://arxiv.org/abs/2608.15141v1",
+      "snippet": "On this basis, a generative masked modeling framework is employed to jointly capture human-object interaction dynamics, leveraging a transformer architecture designed to model complex spatial-temporal and interaction dependencies."
+    },
+    {
+      "title": "Stunning AI Portraits of Beautiful Women | Girlery.ai",
+      "url": "https://girlery.ai/",
+      "snippet": "Discover a curated collection of hyper-realistic AI-generated portraits of beautiful women across unique categories. Create your own AI girlfriend at Girlery.ai."
+    }
+  ]
+}

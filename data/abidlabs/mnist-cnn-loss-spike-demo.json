@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "abidlabs/mnist-cnn-loss-spike-demo",
+  "slug": "abidlabs-mnist-cnn-loss-spike-demo",
+  "author": "abidlabs",
+  "url": "https://huggingface.co/abidlabs/mnist-cnn-loss-spike-demo",
+  "created_at": "2026-09-24T21:37:20.000Z",
+  "updated_at": "2026-09-24T21:40:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 830897,
+  "storage_human": "830897 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abidlabs/mnist-cnn-test · Hugging Face",
+      "url": "https://huggingface.co/abidlabs/mnist-cnn-test",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mnist.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/labmlai/inspectus/blob/main/notebooks/mnist.ipynb",
+      "snippet": "Here, we will use the MNIST dataset to train a simple Convolutional Neural Network (CNN) model. We will use the Distribution plot to visualize the training loss of the model."
+    },
+    {
+      "title": "abidlabs (Abubakar Abid) - Hugging Face",
+      "url": "https://huggingface.co/abidlabs/models",
+      "snippet": "self-supervised learning, applications to medicine & biology, interpretation, reproducibility"
+    },
+    {
+      "title": "fashion_mnist_cnn_snn - GitHub",
+      "url": "https://github.com/SpikingIntelligenceSystem/fashion_mnist_cnn_snn",
+      "snippet": "The standard CNN starts with the lowest training loss and continues to decrease the fastest, indicating that it fits the Fashion-MNIST training data more efficiently than the spiking models."
+    },
+    {
+      "title": "mnist_cnn.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/bu-ds595/course-materials-spring26/blob/main/notebooks/mnist_cnn.ipynb",
+      "snippet": "The fix: augment the training data with random rotations so the network learns rotation-robust features. We apply a random rotation to each image on the fly during training. The network never sees the same image twice."
+    }
+  ]
+}

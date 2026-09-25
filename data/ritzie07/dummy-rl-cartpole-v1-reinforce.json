@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ritzie07/dummy-rl-CartPole-v1-reinforce",
+  "slug": "ritzie07-dummy-rl-cartpole-v1-reinforce",
+  "author": "ritzie07",
+  "url": "https://huggingface.co/ritzie07/dummy-rl-CartPole-v1-reinforce",
+  "created_at": "2026-09-24T20:37:57.000Z",
+  "updated_at": "2026-09-24T20:37:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "CartPole-v1",
+    "reinforce",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - johnpospisil/cart-pole-rl: A Cart Pole reinforcement learning ...",
+      "url": "https://github.com/johnpospisil/cart-pole-rl",
+      "snippet": "This project implements and compares 5 reinforcement learning algorithms on the classic CartPole-v1 control problem from OpenAI Gymnasium. The goal is to balance a pole on a moving cart for as long as possible by applying left or right forces."
+    },
+    {
+      "title": "Mastering CartPole: A Complete Journey Through 6 Reinforcement ... - Medium",
+      "url": "https://medium.com/@sachith.icc/mastering-cartpole-a-complete-journey-through-6-reinforcement-learning-algorithms-06d92fa6d601",
+      "snippet": "Reinforcement Learning (RL) has revolutionized AI, powering everything from game-playing agents like AlphaGo to ChatGPT&#x27;s human feedback training (RLHF). But how do you actually implement these ..."
+    },
+    {
+      "title": "dimgalli/Reinforce-Cartpole-v1 · Hugging Face",
+      "url": "https://huggingface.co/dimgalli/Reinforce-Cartpole-v1",
+      "snippet": "This is a trained model of a Reinforce agent playing CartPole-v1 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "dhanyasriii/Reinforce-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/dhanyasriii/Reinforce-CartPole-v1",
+      "snippet": "This is a trained model of a Reinforce agent playing CartPole-v1 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "GitHub - HongYue1/CartPole-V1-RL: CartPole-V1 Reinforcement Learning ...",
+      "url": "https://github.com/HongYue1/CartPole-V1-RL",
+      "snippet": "The project consists of three main components: cart_pole.py: This file defines the CartPole class, which acts as a wrapper for the Gymnasium CartPole environment. It simplifies interaction with the environment and handles the discretization of the continuous state space into bins for use with the Q-table. q_learning_agent.py: This file implements the QLearningAgent class, which is the heart of ..."
+    }
+  ]
+}

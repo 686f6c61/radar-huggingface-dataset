@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-1b77002c-4caa-4a5c-bb71-c141546f1edc",
+  "slug": "muhamad-geosurge-invert-polarity-1b77002c-4caa-4a5c-bb71-c141546f1edc",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-1b77002c-4caa-4a5c-bb71-c141546f1edc",
+  "created_at": "2026-09-24T20:32:28.000Z",
+  "updated_at": "2026-09-24T20:34:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248031744,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496097520,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "muhamad-geosurge/invert-polarity-f9d6b8c5-1e7c-47db-8283-2cf3424e1b59 ...",
+      "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-f9d6b8c5-1e7c-47db-8283-2cf3424e1b59",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "muhamad-geosurge/invert-polarity-f9d6b8c5-1e7c-47db-8283-2cf3424e1b59 ...",
+      "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-f9d6b8c5-1e7c-47db-8283-2cf3424e1b59/tree/main",
+      "snippet": "Instructions to use muhamad-geosurge/invert-polarity-f9d6b8c5-1e7c-47db-8283-2cf3424e1b59 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "invert-polarity-f9d6b8c5-1e7c-47db-8283-2cf3424e1b59",
+      "url": "https://friendli.ai/models/muhamad-geosurge/invert-polarity-f9d6b8c5-1e7c-47db-8283-2cf3424e1b59",
+      "snippet": "Deploy invert-polarity-f9d6b8c5-1e7c-47db-8283-2cf3424e1b59 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "geosurge.ai - Shape AI",
+      "url": "https://geosurge.ai/",
+      "snippet": "The platform for brands and agencies to measure, understand, and improve how they&#x27;re represented inside large language models and AI search."
+    },
+    {
+      "title": "invert-polarity-6890737e-9034-4ee8-b054-99a2432d3ce7",
+      "url": "https://friendli.ai/models/muhamad-geosurge/invert-polarity-6890737e-9034-4ee8-b054-99a2432d3ce7",
+      "snippet": "The Mistral 7B Instruct model is a quick demonstration that the base model can be easily fine-tuned to achieve compelling performance. It does not have any moderation mechanisms."
+    }
+  ]
+}

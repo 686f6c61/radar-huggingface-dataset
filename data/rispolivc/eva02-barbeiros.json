@@ -5,7 +5,7 @@
   "author": "rispolivc",
   "url": "https://huggingface.co/rispolivc/eva02-barbeiros",
   "created_at": "2026-09-24T16:47:33.000Z",
-  "updated_at": "2026-09-24T16:52:40.000Z",
+  "updated_at": "2026-09-24T23:22:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -23,10 +23,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 85761027,
-  "parameters_human": "85.8M",
-  "storage_bytes": 1372390270,
-  "storage_human": "1.4 GB",
+  "parameters": 86350851,
+  "parameters_human": "86.4M",
+  "storage_bytes": 3440412859,
+  "storage_human": "3.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

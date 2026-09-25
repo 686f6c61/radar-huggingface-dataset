@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AlvinYang05/classification",
+  "slug": "alvinyang05-classification",
+  "author": "AlvinYang05",
+  "url": "https://huggingface.co/AlvinYang05/classification",
+  "created_at": "2026-09-25T00:17:38.000Z",
+  "updated_at": "2026-09-25T00:17:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube/main%2520page",
+      "snippet": "YouTube's official YouTube channel GAY, ARTISTIC, DIVA ENERGY – either you’re in for the best weekend ever or you’re watching …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/live/Ir",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - برنامه‌ها در Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=fa",
+      "snippet": "برنامه رسمیبرنامه رسمی YouTube را در تلفن و رایانه لوحی دریافت کنید. ببینید دنیا چه چیزهایی تماشا می‌کند -- از داغ‌ترین نماهنگ‌ها تا موارد پرطرفدار در زمینه بازی، مد، زیبایی، …"
+    },
+    {
+      "title": "YouTube - برنامه‌ها در Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.automotive.youtube&hl=fa",
+      "snippet": "با برنامه رسمی YouTube از ویدیوها و کانال های مورد علاقه خود لذت ببرید."
+    },
+    {
+      "title": "یوتیوب - ویکی‌پدیا، دانشنامهٔ آزاد",
+      "url": "https://fa.wikipedia.org/wiki/%DB%8C%D9%88%D8%AA%DB%8C%D9%88%D8%A8",
+      "snippet": "یوتیوب (به انگلیسی: YouTube) یک پلتفرم سرویس اشتراک ویدئو است. یوتیوب دومین وبگاه پرطرفدار جهان ، پس از گوگل و پیش از فیس‌بوک ، بزرگ‌ترین شاخهٔ گوگل است که در نوار ابزار …"
+    }
+  ]
+}

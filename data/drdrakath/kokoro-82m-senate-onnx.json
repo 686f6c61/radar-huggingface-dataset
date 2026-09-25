@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DrDrakath/kokoro-82m-senate-onnx",
+  "slug": "drdrakath-kokoro-82m-senate-onnx",
+  "author": "DrDrakath",
+  "url": "https://huggingface.co/DrDrakath/kokoro-82m-senate-onnx",
+  "created_at": "2026-09-24T21:20:54.000Z",
+  "updated_at": "2026-09-24T21:21:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "kokoro",
+    "text-to-speech",
+    "base_model:onnx-community/Kokoro-82M-v1.0-ONNX",
+    "base_model:quantized:onnx-community/Kokoro-82M-v1.0-ONNX",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 219135135,
+  "storage_human": "219 MB",
+  "base_model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hexgrad/Kokoro-82M · Hugging Face",
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "onnx-community/Kokoro-82M-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/Kokoro-82M-ONNX",
+      "snippet": "A newer version of this model is available: onnx-community/Kokoro-82M-v1.-ONNX"
+    },
+    {
+      "title": "GitHub - NVIDIA/kokoro: https://hf.co/hexgrad/Kokoro-82M",
+      "url": "https://github.com/NVIDIA/kokoro",
+      "snippet": "Kokoro is an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient."
+    },
+    {
+      "title": "Run Kokoro-82M ONNX TTS Model: Setup & Code Guide — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-kokoro-82m-v1-0-onnx-deploy-fast-tts-anywhere",
+      "snippet": "Step-by-step tutorial to deploy Kokoro-82M-v1.-ONNX for fast, efficient text-to-speech generation on any hardware using Python."
+    },
+    {
+      "title": "GitHub - vaibhavartsmaac-bot/ai-model-onnx-community-kokoro-82m-v1.0 ...",
+      "url": "https://github.com/vaibhavartsmaac-bot/ai-model-onnx-community-kokoro-82m-v1.0-onnx",
+      "snippet": "Model names, weights, code, datasets, and other upstream materials remain subject to their original licenses and terms. This catalog entry does not grant additional rights to use them."
+    }
+  ]
+}

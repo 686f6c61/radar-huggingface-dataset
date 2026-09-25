@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Duskflare-27B-i1-GGUF",
+  "slug": "mradermacher-duskflare-27b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Duskflare-27B-i1-GGUF",
+  "created_at": "2026-09-24T18:39:03.000Z",
+  "updated_at": "2026-09-24T22:49:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "trl",
+    "conversational",
+    "finetune",
+    "roleplay",
+    "creative-writing",
+    "nsfw",
+    "en",
+    "base_model:Retreatcost/Duskflare-27B",
+    "base_model:quantized:Retreatcost/Duskflare-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 300328865152,
+  "storage_human": "300.3 GB",
+  "base_model": "Retreatcost/Duskflare-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in to GitHub · GitHub",
+      "url": "https://github.com/login",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million …Read more"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …"
+    },
+    {
+      "title": "9月3日晚ChatGPT、Grok、Claude、Cursor 集体突发故障，怎么回 …",
+      "url": "https://www.zhihu.com/question/2078984478073136308",
+      "snippet": "Sep 3, 2026 · 所以，可能是因为，Claude/Grok 先出现各自的模型容量或发布问题，用户和自动化流量随即大量切到替代服务，给 …"
+    },
+    {
+      "title": "GitHub - anthropics/claude-code: Claude Code is an agentic coding …",
+      "url": "https://github.com/anthropics/claude-code",
+      "snippet": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by …"
+    }
+  ]
+}

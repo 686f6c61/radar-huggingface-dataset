@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lijy0717/shhield-rbt3-chinese-base",
+  "slug": "lijy0717-shhield-rbt3-chinese-base",
+  "author": "lijy0717",
+  "url": "https://huggingface.co/lijy0717/shhield-rbt3-chinese-base",
+  "created_at": "2026-09-24T19:50:48.000Z",
+  "updated_at": "2026-09-24T19:51:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "token-classification",
+    "crf",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37891654,
+  "parameters_human": "37.9M",
+  "storage_bytes": 151573288,
+  "storage_human": "152 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 507 AI models across 483 benchmarks, with 196 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Best Chinese AI Models (September 2026): Kimi K3 Leads",
+      "url": "https://benchlm.ai/best/chinese-models",
+      "snippet": "Best Chinese AI Models in 2026 Kimi K3 leads chinese ai models on the September 2026 ranking with a score of 72.5, ahead of Qwen3.8 Max (72) and GLM-5.3 (65.6). Each row shows its evidence status and conditional 90% score interval. Bottom line: start with the live overall leader when broad benchmark performance is the constraint."
+    },
+    {
+      "title": "rbt3 · Models",
+      "url": "https://www.modelscope.cn/models/dienstag/rbt3/summary",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    },
+    {
+      "title": "Xiaomi MiMo-V2.6 Series: 3 New Models Officially Released",
+      "url": "https://mimo.mi.com/models/en-US/mimo-v2.6-pro",
+      "snippet": "Flagship performance · Full modality · Built for professional workflows | Team Token Plan · Batch Inference (Batch API) now powered by V2.6 models."
+    },
+    {
+      "title": "AI Models Leaderboard September 2026 | LMSys Arena Elo, Pricing & Speed",
+      "url": "https://www.swfte.com/models/leaderboard",
+      "snippet": "AI Models Leaderboard, September 2026 Large language models ranked by LMSys Arena Elo, MMLU, HumanEval, MATH, pricing, and inference speed. Refreshed monthly with live data from official provider pricing pages, Artificial Analysis, and the Arena."
+    }
+  ]
+}

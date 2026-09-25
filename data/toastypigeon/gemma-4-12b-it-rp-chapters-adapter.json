@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ToastyPigeon/gemma-4-12b-it-rp-chapters-adapter",
+  "slug": "toastypigeon-gemma-4-12b-it-rp-chapters-adapter",
+  "author": "ToastyPigeon",
+  "url": "https://huggingface.co/ToastyPigeon/gemma-4-12b-it-rp-chapters-adapter",
+  "created_at": "2026-09-25T00:23:40.000Z",
+  "updated_at": "2026-09-25T00:38:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:adapter:google/gemma-4-12B-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 468723378,
+  "storage_human": "469 MB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · ToastyPigeon/gemma-4-12b-full-cpt at main",
+      "url": "https://huggingface.co/ToastyPigeon/gemma-4-12b-full-cpt/blob/main/README.md",
+      "snippet": "This is a CPT adapter, not an instruct/chat model — expect raw-completion behavior. Trained with the box&#x27;s in-house CPT trainer; see cpt_meta.json and adapter_config.json for exact settings."
+    },
+    {
+      "title": "ToastyPigeon/gemma-4-12b-full-cpt-itvec at main - Hugging Face",
+      "url": "https://huggingface.co/ToastyPigeon/gemma-4-12b-full-cpt-itvec/tree/main",
+      "snippet": "ToastyPigeon / gemma-4-12b-full-cpt-itvec like 0 Text Generation Transformers Safetensors gemma4_unified image-text-to-text gemma4 cpt task-vector text-completion Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ToastyPigeon/gemma-4-12b-full-cpt-itvec - featherless.ai",
+      "url": "https://featherless.ai/models/ToastyPigeon/gemma-4-12b-full-cpt-itvec",
+      "snippet": "ToastyPigeon/gemma-4-12b-full-cpt-itvec is a 12 billion parameter model derived from the google/gemma-4-12b base. It integrates a full-CPT (Continual Pre-Training) merge with an instruct task vector to achieve a unique blend of capabilities."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "gemma-4-12b-full-cpt-itvec API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ToastyPigeon/gemma-4-12b-full-cpt-itvec",
+      "snippet": "Deploy gemma-4-12b-full-cpt-itvec with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

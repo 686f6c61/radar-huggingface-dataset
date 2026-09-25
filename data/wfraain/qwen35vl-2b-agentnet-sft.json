@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WFRaain/qwen35vl-2b-agentnet-sft",
+  "slug": "wfraain-qwen35vl-2b-agentnet-sft",
+  "author": "WFRaain",
+  "url": "https://huggingface.co/WFRaain/qwen35vl-2b-agentnet-sft",
+  "created_at": "2026-09-24T21:19:51.000Z",
+  "updated_at": "2026-09-24T21:22:01.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3.5-vl",
+    "gui-agent",
+    "sft",
+    "megatron",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13664639653,
+  "storage_human": "13.7 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "20 Soviet health propaganda posters - Russia Beyond",
+      "url": "https://www.rbth.com/lifestyle/331772-soviet-health-posters",
+      "snippet": "The Soviets also cared about women's health a lot - because they wanted them to stay healthy and not take time off work. And …"
+    },
+    {
+      "title": "Posters in the Soviet Union - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Posters_in_the_Soviet_Union",
+      "snippet": "Beginning in the 1930s, as Stalin aimed to modernize the country, posters invoking the future shifted metaphors; while previously, the …"
+    },
+    {
+      "title": "Soviet Propaganda Posters Collection - Archives West",
+      "url": "https://archiveswest.orbiscascade.org/ark:80444/xv97839",
+      "snippet": "The Soviet Propaganda Posters Collection is a collection of 18 propaganda posters printed in the Soviet Union between 1929-1931. …"
+    },
+    {
+      "title": "20 Soviet health propaganda posters - Russia Beyond",
+      "url": "https://www.russiaislove.com/lifestyle/331772-soviet-health-posters",
+      "snippet": "One of the most famous posters says \"Our children should not be ill with diarrhea\" and offers advice on how to keep baby’s and …"
+    },
+    {
+      "title": "Soviet Posters | TriCollege Libraries Digital Collections",
+      "url": "https://digitalcollections.tricolib.brynmawr.edu/collections/soviet-posters",
+      "snippet": "The Swarthmore College Peace Collection has over 150 propaganda posters from the early years of the Soviet Union (1920s-1930s). …"
+    }
+  ]
+}

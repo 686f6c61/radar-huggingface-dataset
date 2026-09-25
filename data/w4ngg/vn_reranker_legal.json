@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "w4ngg/VN_reranker_legal",
+  "slug": "w4ngg-vn_reranker_legal",
+  "author": "w4ngg",
+  "url": "https://huggingface.co/w4ngg/VN_reranker_legal",
+  "created_at": "2026-09-24T20:47:07.000Z",
+  "updated_at": "2026-09-24T21:05:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567755777,
+  "parameters_human": "567.8M",
+  "storage_bytes": 2293239408,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Legal-RAG/backend/models/reranker.py at main - GitHub",
+      "url": "https://github.com/ngnam1104/Legal-RAG/blob/main/backend/models/reranker.py",
+      "snippet": "A Vietnamese Legal AI Assistant built on RAG architecture (Qdrant, Llama-3, FastAPI), supporting direct Q&amp;A, intelligent document retrieval, and automated regulatory conflict detection from upl..."
+    },
+    {
+      "title": "ngdangkhanh/vietnamese-law-rerank-model · Hugging Face",
+      "url": "https://huggingface.co/ngdangkhanh/vietnamese-law-rerank-model",
+      "snippet": "📊 Dữ liệu huấn luyện Nguồn: anti-ai/ViNLI-Zalo-supervised Loại: Natural Language Inference (NLI) dạng supervised. Cách dùng: chuyển đổi thành cặp (query, document) với nhãn nhị phân: entailment → liên quan (1) contradiction / neutral → không liên quan (0) Dữ liệu được chọn lọc và áp dụng cho bối cảnh pháp luật Việt Nam."
+    },
+    {
+      "title": "AITeamVN/Vietnamese_Reranker · Hugging Face",
+      "url": "https://huggingface.co/AITeamVN/Vietnamese_Reranker",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DSC-Legal-IR-QA/retrieval/src/legal_ir/reranker.py at main · w4ngg/DSC ...",
+      "url": "https://github.com/w4ngg/DSC-Legal-IR-QA/blob/main/retrieval/src/legal_ir/reranker.py",
+      "snippet": "Contribute to w4ngg/DSC-Legal-IR-QA development by creating an account on GitHub."
+    },
+    {
+      "title": "Vietnamese Legal Information Retrieval in Question-Answering ...",
+      "url": "https://arxiv.org/html/2409.13699v1",
+      "snippet": "In this research, we focus on resolving these challenges without delving into the fine-tuning of existing models or the development of new models. Instead, we introduce four key contributions aimed at enhancing Vietnamese legal information retrieval within QA systems."
+    }
+  ]
+}

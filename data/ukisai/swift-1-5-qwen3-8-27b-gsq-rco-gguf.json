@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF",
+  "slug": "ukisai-swift-1-5-qwen3-8-27b-gsq-rco-gguf",
+  "author": "ukisai",
+  "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF",
+  "created_at": "2026-09-24T13:13:45.000Z",
+  "updated_at": "2026-09-24T16:14:33.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_8",
+    "gsq",
+    "rco",
+    "reasoning",
+    "efficient-thinking",
+    "token-efficient",
+    "post-training",
+    "text-generation",
+    "arxiv:2604.18556",
+    "arxiv:2605.00649",
+    "base_model:ukisai/Swift-1.5-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-1.5-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 19,
+  "downloads_30d": 0,
+  "trending_score": 17,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 80504345147,
+  "storage_human": "80.5 GB",
+  "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF",
+      "snippet": "Reuse the published ISTA GSQ-RCO per-tensor allocation for each matching Qwen3.8-27B tier. Quantize Swift 1.5 weights with the Swift V1MIX importance matrix and the selected allocation."
+    },
+    {
+      "title": "ukisai/Swift-Qwen3.8-27b · Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-Qwen3.8-27b",
+      "snippet": "Efficiency across and versus reasoning efforts Qwen3.8&#x27;s reasoning_effort setting lets users choose how much the model thinks. For Swift to be useful across these settings, it needs to reduce thinking while keeping accuracy close to the base. We therefore tested xhigh, medium, and low: thinking-token savings persist at every level."
+    },
+    {
+      "title": "Swift-Qwen3.8-27B: less overthinking | UkisAI",
+      "url": "https://ukisai.com/products",
+      "snippet": "Swift includes a transfer component derived from BottleCap AI&#x27;s ThinkingCap-Qwen3.6-27B. The resulting model uses the standard Qwen3.8 interface and retains text, image, and video support."
+    },
+    {
+      "title": "Swift-Qwen3.8-27B: less overthinking | UkisAI",
+      "url": "https://ukisai.com/news/introducing-swift",
+      "snippet": "Swift produces shorter reasoning traces, and we observe fewer overthinking errors in our testing. Swift includes a transfer component derived from BottleCap AI&#x27;s ThinkingCap-Qwen3.6-27B. The resulting model uses the standard Qwen3.8 interface and retains text, image, and video support."
+    },
+    {
+      "title": "Swift Qwen3.8 27B by ukisai — VRAM 55.6GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/ukisai%2FSwift-Qwen3.8-27b,7HZDzqxvGRH6tfN1jMMpJ4",
+      "snippet": "Swift Qwen3.8 27B is an open-source 27b LLM by ukisai. VRAM 55.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

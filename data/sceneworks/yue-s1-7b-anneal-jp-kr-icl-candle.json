@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SceneWorks/yue-s1-7b-anneal-jp-kr-icl-candle",
+  "slug": "sceneworks-yue-s1-7b-anneal-jp-kr-icl-candle",
+  "author": "SceneWorks",
+  "url": "https://huggingface.co/SceneWorks/yue-s1-7b-anneal-jp-kr-icl-candle",
+  "created_at": "2026-09-24T23:09:02.000Z",
+  "updated_at": "2026-09-24T23:12:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "music",
+    "lyrics2song",
+    "yue",
+    "sceneworks",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24200400426,
+  "storage_human": "24.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SceneWorks/yue-s1-7b-anneal-jp-kr-icl-candle · Hugging Face",
+      "url": "https://huggingface.co/SceneWorks/yue-s1-7b-anneal-jp-kr-icl-candle",
+      "snippet": "A redistribution mirror of m-a-p/YuE-s1-7B-anneal-jp-kr-icl at revision 2e34fc94fa01e02b1d3d6f687ac9ac88ebaa9a74, the YuE stage-1 (7B lyrics → codebook-0 LM) from HKUST / M-A-P, published by SceneWorks so the weights resolve by an immutable commit SHA for SceneWorks Inference&#x27;s candle YuE engine. It is not an official M-A-P distribution."
+    },
+    {
+      "title": "m-a-p/YuE-s1-7B-anneal-jp-kr-icl · Hugging Face",
+      "url": "https://huggingface.co/m-a-p/YuE-s1-7B-anneal-jp-kr-icl",
+      "snippet": "YuE-UI is a Gradio-based interface supporting batch generation, output selection, and continuation. You can flexibly experiment with audio prompts and different model settings, visualize your progress on an interactive timeline, rewind actions, quickly preview audio outputs at stage 1 before committing to refinement, and fully save/load your ..."
+    },
+    {
+      "title": "GitHub - seshakiran/yue: YuE: Open Full-song Generation Foundation ...",
+      "url": "https://github.com/seshakiran/yue",
+      "snippet": "Demo 🎶 | 📑 Paper (coming soon) YuE-s1-7B-anneal-en-cot 🤗 | YuE-s1-7B-anneal-en-icl 🤗 | YuE-s1-7B-anneal-jp-kr-cot 🤗 YuE-s1-7B-anneal-jp-kr-icl 🤗 | YuE-s1-7B-anneal-zh-cot 🤗 | YuE-s1-7B-anneal-zh-icl 🤗 YuE-s2-1B-general 🤗 | YuE-upsampler 🤗 Our model&#x27;s name is YuE (乐). In Chinese, the word means \"music\" and ..."
+    },
+    {
+      "title": "GitHub - digitalapplied/yue: YuE: Open Full-song Music Generation ...",
+      "url": "https://github.com/digitalapplied/yue",
+      "snippet": "If you want to use music in-context-learning (provide a reference song), enable --use_audio_prompt, --prompt_start_time, and --prompt_end_time to specify the audio segment. Note: ICL requires a different ckpt, e.g. m-a-p/YuE-s1-7B-anneal-en-icl. Music ICL generally requires a 30s audio segment. The model will write new songs with similiar style of the provided audio, and may improve musicality ..."
+    },
+    {
+      "title": "YuE-s1-7B-anneal-jp-kr-icl · Models - AI-ModelScope",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/YuE-s1-7B-anneal-jp-kr-icl/summary",
+      "snippet": "We wrote a song with our model&#x27;s name. YuE is a groundbreaking series of open-source foundation models designed for music generation, specifically for transforming lyrics into full songs (lyrics2song)."
+    }
+  ]
+}

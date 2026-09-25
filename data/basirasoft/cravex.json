@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "BasiraSoft/CraveX",
+  "slug": "basirasoft-cravex",
+  "author": "BasiraSoft",
+  "url": "https://huggingface.co/BasiraSoft/CraveX",
+  "created_at": "2026-09-24T20:55:53.000Z",
+  "updated_at": "2026-09-24T22:30:57.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 395786132,
+  "storage_human": "396 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BasiraSoft (Basira Soft) - Hugging Face",
+      "url": "https://huggingface.co/BasiraSoft/models",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 12 hours ago ... updated a model 4 days ago"
+    },
+    {
+      "title": "BasiraSoft (Basira Soft) - Hugging Face",
+      "url": "https://huggingface.co/BasiraSoft",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 11 hours ago ... updated a model 4 days ago"
+    },
+    {
+      "title": "AI Model Rankings, Benchmarks & Comparisons | Crafiq",
+      "url": "https://crafiq.ai/models",
+      "snippet": "Compare leading AI models across image, video, language, music, speech, and 3D. Browse rankings, arena scores, benchmarks, and detailed model profiles."
+    },
+    {
+      "title": "Visionaries: Knights of the Magical Light - The Visionaries.net",
+      "url": "https://www.facebook.com/groups/visionaries.net/",
+      "snippet": "Group page for the website www.TheVisionaries.net The site is an online resource / archive for the Visionaries brand from A.G.E and Hasbro Inc Also on..."
+    },
+    {
+      "title": "BasiraSoft Products — Enterprise POS & Business ERP Systems Pakistan",
+      "url": "https://basirasoft.com/products/",
+      "snippet": "Explore BasiraSoft&#x27;s offline-first software suite: TileLogic POS, StackD Restaurant POS, ExChora Forex ERP, SabziPro Mandi ERP, BRental Car Rental, RxVault Pharmacy System, SmartMart POS, and MobiCore."
+    }
+  ]
+}

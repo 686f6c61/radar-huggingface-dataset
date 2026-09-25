@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "charlieK123/act_pickingUpForceps",
+  "slug": "charliek123-act_pickingupforceps",
+  "author": "charlieK123",
+  "url": "https://huggingface.co/charlieK123/act_pickingUpForceps",
+  "created_at": "2026-09-24T23:35:13.000Z",
+  "updated_at": "2026-09-24T23:35:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:charlieK123/pickingUpForceps",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714976,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oiki123/act_lekiwi_pick · Hugging Face",
+      "url": "https://huggingface.co/Oiki123/act_lekiwi_pick",
+      "snippet": "Instructions to use Oiki123/act_lekiwi_pick with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Oiki123/act_lekiwi_pick with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run inference ..."
+    },
+    {
+      "title": "charlieK123 (charles koduru) - Hugging Face",
+      "url": "https://huggingface.co/charlieK123",
+      "snippet": "User profile of charles koduru on Hugging Face"
+    },
+    {
+      "title": "I-JEPA/models at main · CharlieK123/I-JEPA · GitHub",
+      "url": "https://github.com/CharlieK123/I-JEPA/tree/main/models",
+      "snippet": "Contribute to CharlieK123/I-JEPA development by creating an account on GitHub."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "arXiv:2309.12312v2 [cs.RO] 24 Sep 2023",
+      "url": "https://arxiv.org/pdf/2309.12312",
+      "snippet": "Fig. 1. ForceSight is an RGBD-adapted, text-conditioned vision transformer. Given an RGBD image and a text prompt, ForceSight produces visual-force goals for a mobile manipulator. Action primitives, shown below each image, are appended to the text input by a simple low-level controller. D refers to the estimated depth of the goal location in meters."
+    }
+  ]
+}

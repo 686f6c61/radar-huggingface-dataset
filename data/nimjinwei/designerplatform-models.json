@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "nimjinwei/designerplatform-models",
+  "slug": "nimjinwei-designerplatform-models",
+  "author": "nimjinwei",
+  "url": "https://huggingface.co/nimjinwei/designerplatform-models",
+  "created_at": "2026-09-24T18:54:23.000Z",
+  "updated_at": "2026-09-24T18:54:41.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 394052096,
+  "storage_human": "394 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI News Today 2026 | Latest AI Model Releases, Trends & Analysis",
+      "url": "https://blog.buildfastwithai.com/ai-industry-news-trends",
+      "snippet": "Daily AI news, model releases, and deep analysis for 2026. Track every announcement from OpenAI, Anthropic, Google, Meta, xAI, and the open-source ecosystem in one place."
+    },
+    {
+      "title": "46 AI Models You Can Use for Free via NVIDIA NIM in 2026",
+      "url": "https://www.aitoolsmentor.com/blog/free-ai-models-nvidia-nim-complete-guide-2026",
+      "snippet": "Build your workflow to be model-flexible — if one model gets removed, you should be able to swap in another with minimal disruption. Despite these limitations, NVIDIA NIM is the most generous free AI API available in 2026. 46 models from 12 publishers, no credit card required, and enough rate limit for meaningful development work."
+    },
+    {
+      "title": "Models - OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models",
+      "snippet": "Models Choosing a model If you&#x27;re not sure where to start, use GPT-6 Astra, our flagship model for complex reasoning and coding. Choose GPT-6 Sol to balance intelligence and cost, or GPT-6 Luna for cost-sensitive, high-volume workloads. All latest OpenAI models support text and image input, text output, multilingual capabilities, and vision."
+    },
+    {
+      "title": "Gemini Developer API | Gemma open models | Google AI for Developers",
+      "url": "https://ai.google.dev/",
+      "snippet": "Get started building with cutting-edge AI models and tools Integrate Google AI models with an API key Build with cutting-edge AI models, like Gemini, Imagen, and Veo, from Google DeepMind View Gemini API docs Integrate models into apps Unlock AI capabilities for your apps with a simple call to the Gemini API."
+    },
+    {
+      "title": "GitHub Models",
+      "url": "https://github.com/marketplace?type=models",
+      "snippet": "Create AI-powered applications with GitHub Enhance your workflow with extensions Tools from the community and partners to simplify tasks and automate processes"
+    }
+  ]
+}

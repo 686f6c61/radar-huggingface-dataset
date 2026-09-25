@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_denoised_1a_s42_20260924_205842",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_st5_spk_acc_denoised_1a_s42_20260924_205842",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_denoised_1a_s42_20260924_205842",
+  "created_at": "2026-09-24T22:45:01.000Z",
+  "updated_at": "2026-09-24T22:45:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144439266,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578049458,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Net Zero Conference",
+      "url": "https://netzeroconference.com/",
+      "snippet": "The Net Zero Conference's lineup of thought-leaders and visionaries inspired climate action. The educational sessions gave …Read more"
+    },
+    {
+      "title": "About Us - Net Zero Conference",
+      "url": "https://netzeroconference.com/about-us/",
+      "snippet": "The Net Zero Conference convenes climate leaders to collaborate on global solutions for change in the built environment. The event …"
+    },
+    {
+      "title": "Net Zero Conference 2026",
+      "url": "https://netzerocompare.com/events/net-zero-conference-2026",
+      "snippet": "May 14, 2026 · The Net Zero Conference 2026, organized by Verdical Group, will take place on October 8, 2026, in Los Angeles, …"
+    },
+    {
+      "title": "The 13th Annual Net Zero Conference 2026 - OneStop ESG",
+      "url": "https://onestopesg.com/esg-events/the-13th-annual-net-zero-conference-2026",
+      "snippet": "1 day ago · The 13th Annual Net Zero Conference 2026 is an in-person climate and built environment event taking place on 8 …"
+    },
+    {
+      "title": "Net-Zero Future 2026 Conference, Darmstadt",
+      "url": "https://netzfuture.com/2026-darmstadt/",
+      "snippet": "The Net-Zero Future 2026 Conference is a landmark international event focused on advancing research, innovation, and best …"
+    }
+  ]
+}

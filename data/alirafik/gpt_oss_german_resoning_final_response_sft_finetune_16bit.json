@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "aliRafik/gpt_oss_German_resoning_final_response_SFT_finetune_16bit",
+  "slug": "alirafik-gpt_oss_german_resoning_final_response_sft_finetune_16bit",
+  "author": "aliRafik",
+  "url": "https://huggingface.co/aliRafik/gpt_oss_German_resoning_final_response_SFT_finetune_16bit",
+  "created_at": "2026-09-25T00:58:32.000Z",
+  "updated_at": "2026-09-25T01:09:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 41857429686,
+  "storage_human": "41.9 GB",
+  "base_model": "unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aliRafik/gpt-oss-20B-finetuned-multilang-reasoning · Hugging Face",
+      "url": "https://huggingface.co/aliRafik/gpt-oss-20B-finetuned-multilang-reasoning",
+      "snippet": "Uploaded model Developed by: aliRafik License: apache-2.0 Finetuned from model : unsloth/gpt-oss-20b-unsloth-bnb-4bit This gpt_oss model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Introducing gpt-oss - OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-oss/",
+      "snippet": "We&#x27;re releasing gpt-oss-120b and gpt-oss-20b—two state-of-the-art open-weight language models that deliver strong real-world performance at low cost. Available under the flexible Apache 2.0 license, these models outperform similarly sized open models on reasoning tasks, demonstrate strong tool use capabilities, and are optimized for efficient deployment on consumer hardware."
+    },
+    {
+      "title": "gpt-oss-20B-finetuned-multilang-reasoning-full-model",
+      "url": "https://huggingface.co/aliRafik/gpt-oss-20B-finetuned-multilang-reasoning-full-model",
+      "snippet": "Uploaded model Developed by: aliRafik License: apache-2.0 Finetuned from model : unsloth/gpt-oss-20b-unsloth-bnb-4bit This gpt_oss model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "GitHub - openai/gpt-oss: gpt-oss-120b and gpt-oss-20b are two open ...",
+      "url": "https://github.com/openai/gpt-oss",
+      "snippet": "Inference examples Transformers You can use gpt-oss-120b and gpt-oss-20b with the Transformers library. If you use Transformers&#x27; chat template, it will automatically apply the harmony response format. If you use model.generate directly, you need to apply the harmony format manually using the chat template or use our openai-harmony package."
+    },
+    {
+      "title": "Fine-tuning with gpt-oss and Hugging Face Transformers",
+      "url": "https://developers.openai.com/cookbook/articles/gpt-oss/fine-tune-transfomers",
+      "snippet": "The end result is a multilingual reasoning model that can generate a chain-of-thought in English, Spanish, French, Italian, or German. You can even mix languages —for example, ask a question in Spanish, request reasoning in German, and receive the final response in Spanish:"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mahmudplx/coreml-dreamshaper-xl-lightning-6bit",
+  "slug": "mahmudplx-coreml-dreamshaper-xl-lightning-6bit",
+  "author": "mahmudplx",
+  "url": "https://huggingface.co/mahmudplx/coreml-dreamshaper-xl-lightning-6bit",
+  "created_at": "2026-09-24T20:51:29.000Z",
+  "updated_at": "2026-09-24T21:32:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3030429065,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "coreml-dreamshaper-xl-lightning-6bit - Hugging Face",
+      "url": "https://huggingface.co/LocalMuseAI/coreml-dreamshaper-xl-lightning-6bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DreamShaper XL - Lightning DPM++ SDE | Stable Diffusion XL Checkpoint ...",
+      "url": "https://civitai.com/models/112902/dreamshaper-xl",
+      "snippet": "DreamShaper XL - Now Turbo! Also check out the 1.5 DreamShaper page Check the version description below (bottom right) for more info and add a ️ to..."
+    },
+    {
+      "title": "LocalMuseAI/coreml-dreamshaper-xl-lightning-6bit-v2 at main",
+      "url": "https://huggingface.co/LocalMuseAI/coreml-dreamshaper-xl-lightning-6bit-v2/tree/main/UnetChunk1.mlmodelc",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dreamshaper XL - Open Laboratory",
+      "url": "https://openlaboratory.com/models/dreamshaper-xl/",
+      "snippet": "Fine-Tuned on SDXL, this is a general purpose model designed for photos, art, anime, and manga. This Lightning version can generate quality images in few steps."
+    },
+    {
+      "title": "DreamShaper XL — Versatile SDXL images with DreamShaper XL",
+      "url": "https://dreamshaperxl.com/",
+      "snippet": "A general-purpose SDXL finetune, not a one-trick model Creators reach for DreamShaper XL when they want one checkpoint that covers many looks, with newer Turbo and Lightning builds for fast sampling."
+    }
+  ]
+}

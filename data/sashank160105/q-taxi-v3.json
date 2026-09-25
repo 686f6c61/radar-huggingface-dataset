@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "sashank160105/q-Taxi-v3",
+  "slug": "sashank160105-q-taxi-v3",
+  "author": "sashank160105",
+  "url": "https://huggingface.co/sashank160105/q-Taxi-v3",
+  "created_at": "2026-09-24T19:01:01.000Z",
+  "updated_at": "2026-09-24T19:38:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28,
+  "storage_human": "28 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aj-ai/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/aj-ai/q-Taxi-v3",
+      "snippet": "Model card FilesFiles and versionsCommunity Use with library Edit model card Q-LearningAgent playing1 Taxi-v3 Usage Q-LearningAgent playing1 Taxi-v3 This is a trained model of a Q-Learningagent playing Taxi-v3."
+    },
+    {
+      "title": "kmirain/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/kmirain/q-Taxi-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "q-Taxi-v3: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-teledocmedical-q-taxi-v3",
+      "snippet": "q-Taxi-v3 q-Taxi-v3 is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "q-Taxi-v3 huggingface.co api & kasunw q-Taxi-v3 github AI Model - Toolify",
+      "url": "https://www.toolify.ai/ai-model/kasunw-q-taxi-v3",
+      "snippet": "q-Taxi-v3 is an open source model from GitHub that offers a free installation service, and any user can find q-Taxi-v3 on GitHub to install. At the same time, huggingface.co provides the effect of q-Taxi-v3 install, users can directly use q-Taxi-v3 installed effect in huggingface.co for debugging and trial."
+    },
+    {
+      "title": "q-Taxi-v3 huggingface.co api & arampacha q-Taxi-v3 github AI Model ...",
+      "url": "https://www.toolify.ai/ai-model/arampacha-q-taxi-v3",
+      "snippet": "q-Taxi-v3 huggingface.co is an AI model on huggingface.co that provides q-Taxi-v3&#x27;s model effect (), which can be used instantly with this arampacha q-Taxi-v3 model. huggingface.co supports a free trial of the q-Taxi-v3 model, and also provides paid use of the q-Taxi-v3. Support call q-Taxi-v3 model through api, including Node.js, Python, http."
+    }
+  ]
+}

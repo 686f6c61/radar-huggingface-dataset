@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-antislop-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-antislop-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-antislop-i1-GGUF",
+  "created_at": "2026-09-24T23:08:00.000Z",
+  "updated_at": "2026-09-25T02:06:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "antislop",
+    "prompt-distillation",
+    "lora-merged",
+    "qwen3.8",
+    "steering",
+    "en",
+    "ru",
+    "base_model:rawmodels/Qwen3.8-27B-antislop",
+    "base_model:quantized:rawmodels/Qwen3.8-27B-antislop",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 216961801664,
+  "storage_human": "217.0 GB",
+  "base_model": "rawmodels/Qwen3.8-27B-antislop",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.8-27B-absolute-heresy-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-absolute-heresy-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-absolute-heresy-i1-GGUF like 1 Transformers GGUF English heretic uncensored decensored abliterated imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: VRAM, Quants and the Template Trap",
+      "url": "https://locallyuncensored.com/blog/how-to-run-qwen-3-8-27b-locally.html",
+      "snippet": "Qwen 3.8 27B is out under Apache 2.0. Real GGUF sizes, the VRAM math for 12 GB and 24 GB cards, the broken chat template nobody warns you about, and vision setup."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3.8 27B: GGUF size, RAM & VRAM requirements · localmodel.run",
+      "url": "https://localmodel.run/model/qwen3.8-27b",
+      "snippet": "What is the Q4_K_M GGUF file size of Qwen3.8 27B? The Q4_K_M GGUF file is about 15.33 GB to download, and the Q8_0 GGUF is about 27.05 GB. That is the weights file on disk; to run it you also need room for the KV cache and overhead, so budget ~17.3 GB of memory at Q4_K_M."
+    }
+  ]
+}

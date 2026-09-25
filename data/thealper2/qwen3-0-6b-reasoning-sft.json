@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "thealper2/qwen3-0.6b-reasoning-sft",
+  "slug": "thealper2-qwen3-0-6b-reasoning-sft",
+  "author": "thealper2",
+  "url": "https://huggingface.co/thealper2/qwen3-0.6b-reasoning-sft",
+  "created_at": "2026-09-24T20:30:12.000Z",
+  "updated_at": "2026-09-24T20:43:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "sft",
+    "trl",
+    "reasoning",
+    "chain-of-thought",
+    "conversational",
+    "en",
+    "dataset:Kenshiii/minimax-m3-reasoning-traces",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2395657618,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thealper2/qwen3-0.6b-reasoning-sft · Hugging Face",
+      "url": "https://huggingface.co/thealper2/qwen3-0.6b-reasoning-sft",
+      "snippet": "Instructions to use thealper2/qwen3-0.6b-reasoning-sft with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use thealper2/qwen3-0.6b-reasoning-sft with Transformers:"
+    },
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "Qwen3 0.6B (Reasoning) · open-weight open weights model by Alibaba ...",
+      "url": "https://studyarena.com/models/qwen3-0-6b-reasoning",
+      "snippet": "Qwen family model by Alibaba Cloud — reasoning. About the Qwen family Alibaba&#x27;s Qwen — the world&#x27;s most-forked open family: dense and MoE models from 0.6B to trillion-scale Max tiers, plus Coder, VL (vision), Omni (speech/vision/text) and dedicated reasoning variants (QwQ, Thinking). Qwen 3.5-3.7 span open weights and commercial Plus/Max APIs. All Qwen models How this one is configured ..."
+    },
+    {
+      "title": "Qwen3-0.6B: A Compact Model with Hybrid Reasoning Modes",
+      "url": "https://aioz.network/blog/qwen3-0-6b-a-compact-model-with-hybrid-reasoning-modes",
+      "snippet": "TL;DR Qwen3-0.6B is a .6B-parameter causal language model built for conversational AI, instruction following, reasoning, agent workflows, and multilingual applications. It supports 119 languages, a 32,768-token context window, and seamless switching between thinking and non-thinking modes. Its compact architecture makes it a practical fit for multilingual assistants, math and coding tasks ..."
+    }
+  ]
+}

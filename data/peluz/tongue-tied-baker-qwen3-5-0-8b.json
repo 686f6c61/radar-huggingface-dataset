@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "peluz/tongue-tied-baker-qwen3.5-0.8b",
+  "slug": "peluz-tongue-tied-baker-qwen3-5-0-8b",
+  "author": "peluz",
+  "url": "https://huggingface.co/peluz/tongue-tied-baker-qwen3.5-0.8b",
+  "created_at": "2026-09-24T21:35:31.000Z",
+  "updated_at": "2026-09-24T21:35:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25584224,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5 — Alibaba Open-Weight 397B Model Specs | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/qwen3-5/",
+      "snippet": "The flagship was followed by smaller open-weight variants — Qwen3.5-122B-A10B, 35B-A3B, and 27B on 24 February 2026, then 9B, 4B, 2B, and 0.8B on 2 March 2026 — covering everything from data-center MoE to edge-sized dense models. A hosted, proprietary Qwen3.5-Plus endpoint extends the context window to 1M tokens."
+    },
+    {
+      "title": "Qwen3.5: 9B Beats 120B, 0.8B Runs Video on Phones—Full MoE Family",
+      "url": "https://stable-learn.com/en/qwen35-native-multimodal-agent-model/",
+      "snippet": "On March 2, the Qwen3.5 Small Model Series went open-source — Qwen3.5-0.8B, 2B, 4B, and 9B, all under Apache 2.0. The 9B model scores 81.7 on GPQA Diamond, beating OpenAI&#x27;s GPT-OSS-120B (71.5) — a model 13.5x its size — while the 0.8B can process video on a smartphone. This is the Qwen3.5 architecture advantage playing out at every scale."
+    },
+    {
+      "title": "Qwen3.5: Towards Native Multimodal Agents",
+      "url": "https://qwen.ai/blog?id=qwen3.5",
+      "snippet": "QWEN CHAT GitHub Hugging Face ModelScope DISCORD We are delighted to announce the official release of Qwen3.5, introducing the open-weight of the first model in the Qwen3.5 series, namely Qwen3.5-397B-A17B. As a native vision-language model, Qwen3.5-397B-A17B demonstrates outstanding results across a full range of benchmark evaluations, including reasoning, coding, agent capabilities, and ..."
+    },
+    {
+      "title": "Qwen 3.5 API Complete Guide (2026): Models & Pricing",
+      "url": "https://kissapi.ai/blog/qwen-3-5-api-complete-guide-2026.html",
+      "snippet": "Complete guide to the Qwen 3.5 model family in 2026. Covers all 10+ models from 0.8B to 397B, API pricing across providers, setup with Python and Node.js, and local deployment with Ollama."
+    },
+    {
+      "title": "Qwen 3.5: A Complete Model Family from 0.8B to 397B",
+      "url": "https://enclaveai.app/blog/2026/03/08/qwen-3-5-complete-model-family-local-ai/",
+      "snippet": "Alibaba&#x27;s Qwen 3.5 ships 8 open models from 0.8B to 397B with a new hybrid architecture, native multimodal support, and 201 languages under Apache 2.0."
+    }
+  ]
+}

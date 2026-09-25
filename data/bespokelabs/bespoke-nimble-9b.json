@@ -5,7 +5,7 @@
   "author": "bespokelabs",
   "url": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B",
   "created_at": "2026-09-18T01:18:02.000Z",
-  "updated_at": "2026-09-23T04:59:15.000Z",
+  "updated_at": "2026-09-24T06:05:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -27,13 +27,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 184,
+  "likes": 189,
   "downloads_30d": 2624,
-  "trending_score": 181,
+  "trending_score": 185,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 193177837,
-  "storage_human": "193 MB",
+  "storage_bytes": 366366349,
+  "storage_human": "366 MB",
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"

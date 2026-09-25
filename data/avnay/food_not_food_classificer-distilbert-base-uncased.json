@@ -5,7 +5,7 @@
   "author": "Avnay",
   "url": "https://huggingface.co/Avnay/Food_not_food_classificer-distilbert-base-uncased",
   "created_at": "2026-09-21T04:52:27.000Z",
-  "updated_at": "2026-09-24T00:07:42.000Z",
+  "updated_at": "2026-09-25T02:38:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 21,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 66955010,
   "parameters_human": "67.0M",
-  "storage_bytes": 803508210,
-  "storage_human": "804 MB",
+  "storage_bytes": 2410508771,
+  "storage_human": "2.4 GB",
   "base_model": "distilbert-base-uncased",
   "formats": [
     "safetensors"

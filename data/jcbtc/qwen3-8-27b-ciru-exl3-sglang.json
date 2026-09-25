@@ -5,7 +5,7 @@
   "author": "jcbtc",
   "url": "https://huggingface.co/jcbtc/Qwen3.8-27b-CIRU-EXL3-SGLANG",
   "created_at": "2026-09-24T19:27:33.000Z",
-  "updated_at": "2026-09-24T19:27:37.000Z",
+  "updated_at": "2026-09-24T19:50:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -26,7 +26,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

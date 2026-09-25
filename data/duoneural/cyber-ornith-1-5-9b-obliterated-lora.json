@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "DuoNeural/Cyber-Ornith-1.5-9B-OBLITERATED-LoRA",
+  "slug": "duoneural-cyber-ornith-1-5-9b-obliterated-lora",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/Cyber-Ornith-1.5-9B-OBLITERATED-LoRA",
+  "created_at": "2026-09-24T23:31:37.000Z",
+  "updated_at": "2026-09-24T23:32:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "DuoNeural",
+    "cybersecurity",
+    "agentic",
+    "qlora",
+    "unsloth",
+    "qwen3_5",
+    "obliterated",
+    "terminal",
+    "cli",
+    "reasoning",
+    "function-calling",
+    "tool-use",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:oi-uae/cyber-security",
+    "dataset:hotdogs/uka-cyber-dataset",
+    "dataset:trend-cybertron/Primus-Reasoning",
+    "dataset:Lite-Coder/LiteCoder-Terminal-SFT",
+    "dataset:rajistics/openhands-synthetic-conversations",
+    "dataset:emirkaanozdemr/bash_command_data_6K",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "dataset:open-thoughts/OpenThoughts3-1.2M",
+    "base_model:OBLITERATUS/Ornith-1.5-9B-OBLITERATED",
+    "base_model:finetune:OBLITERATUS/Ornith-1.5-9B-OBLITERATED",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 485591381,
+  "storage_human": "486 MB",
+  "base_model": "OBLITERATUS/Ornith-1.5-9B-OBLITERATED",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Horoscopes - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Each day includes unique surprises and revelations, so make sure you visit regularly to read your zodiac sign’s daily horoscope. …"
+    },
+    {
+      "title": "Read Your Daily Horoscope! | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/",
+      "snippet": "Read Astrology Answers' online daily horoscopes for your zodiac sign, Tarot readings, article content, Chinese astrology, …"
+    },
+    {
+      "title": "如何评价Google DeepMind的Gemini 3.8 Flash模型？",
+      "url": "https://www.zhihu.com/question/2078625121644845032",
+      "snippet": "Sep 2, 2026 · 这里推荐我做的一个小插件 agy-staff 让 codex 和 claude code 可以调度 gemini，以弥补我上文提到的 gemini 目前缺少 …"
+    },
+    {
+      "title": "疑谷歌 Gemini4Pro 「偷跑」上线，网传碾压 GPT-6Astra，如何评价？",
+      "url": "https://www.zhihu.com/question/2084432664535241222",
+      "snippet": "就 Gemini 3.1 pro 现在还是 gemini-3.1-pro-preview ，这种情况是真的少见，Flash 疯狂迭代，Pro 默默无闻，谷歌其实也是怕，Flash …"
+    },
+    {
+      "title": "NLP 大模型与 CV 大模型的 “大”：同源而殊途的技术范式-云社区-华为云",
+      "url": "https://bbs.huaweicloud.com/blogs/455174",
+      "snippet": "Jun 27, 2025 · 随着多模态大模型（如 GPT-4V、Gemini）的发展，两者正走向技术融合 —— 例如，用语言模型的逻辑推理能力增强 …"
+    }
+  ]
+}

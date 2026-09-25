@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "yiyangd/csp3-checkpoints",
+  "slug": "yiyangd-csp3-checkpoints",
+  "author": "yiyangd",
+  "url": "https://huggingface.co/yiyangd/csp3-checkpoints",
+  "created_at": "2026-09-24T20:54:13.000Z",
+  "updated_at": "2026-09-25T02:21:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "world-model",
+    "reinforcement-learning",
+    "research-checkpoints",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24512898573,
+  "storage_human": "24.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yiyangd (Yiyang Du) - Hugging Face",
+      "url": "https://huggingface.co/yiyangd/buckets",
+      "snippet": "User profile of Yiyang Du on Hugging Face"
+    },
+    {
+      "title": "Checkpoint AI Models (141) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 141 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "yiyangd/vla_checkpoints · Hugging Face",
+      "url": "https://huggingface.co/yiyangd/vla_checkpoints",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    },
+    {
+      "title": "yiyangd (Yiyang Dong) · GitHub",
+      "url": "https://github.com/yiyangd",
+      "snippet": "applying AI to make diagnoses of lung and brain disorders, build risk models and survival estimators for heart disease via RF, use NLP to extract information from radiology reports"
+    }
+  ]
+}

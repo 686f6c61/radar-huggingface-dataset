@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Shooter57/nippleslidertest",
+  "slug": "shooter57-nippleslidertest",
+  "author": "Shooter57",
+  "url": "https://huggingface.co/Shooter57/nippleslidertest",
+  "created_at": "2026-09-25T00:59:53.000Z",
+  "updated_at": "2026-09-25T00:59:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14376544,
+  "storage_human": "14 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Drapeau : Grèce Emoji: Signification & Utilisation",
+      "url": "https://emojiterra.com/fr/drapeau-grece/",
+      "snippet": "Sur certaines plateformes, le drapeau de la Grèce peut être affiché sous la forme des lettres \" GR \" au lieu du drapeau. Nom d'émoji …"
+    },
+    {
+      "title": "Flag: Greece Emoji: Meaning & Usage",
+      "url": "https://emojiterra.com/flag-for-greece/",
+      "snippet": "The 🇬🇷 flag emoji represents Greece. It features nine horizontal stripes, alternating blue and white, with a blue canton containing a …"
+    },
+    {
+      "title": "Drapeau : Grèce Emoji",
+      "url": "https://emojigraph.org/fr/flag-greece/",
+      "snippet": "Copier et coller 🇬🇷 Drapeau : Grèce Emoji pour Iphone, Android et obtenez des codes HTML."
+    },
+    {
+      "title": "Drapeau : Grèce Emoji - Emojipedia",
+      "url": "https://emojipedia.org/fr/drapeau-gr%C3%A8ce",
+      "snippet": "L'emoji Drapeau : Grèce est un flag sequence combinant 🇬 Regional Indicator Symbol Letter G and 🇷 Regional Indicator Symbol Letter …"
+    },
+    {
+      "title": "Drapeau : Grèce Emoji – Signification, Images, Codes",
+      "url": "https://emojiguide.org/fr/drapeau-gr%C3%A8ce",
+      "snippet": "Obtenez le sens de 🇬🇷, des images, des codes, des symboles à copier et coller, des emoji similaires et connexes! Le 🇬🇷 Drapeau : Grèce …"
+    }
+  ]
+}

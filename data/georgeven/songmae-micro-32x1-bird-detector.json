@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "georgeven/songmae-micro-32x1-bird-detector",
+  "slug": "georgeven-songmae-micro-32x1-bird-detector",
+  "author": "georgeven",
+  "url": "https://huggingface.co/georgeven/songmae-micro-32x1-bird-detector",
+  "created_at": "2026-09-24T20:05:31.000Z",
+  "updated_at": "2026-09-24T20:55:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "audio",
+    "bioacoustics",
+    "birdsong",
+    "sound-event-detection",
+    "songmae",
+    "base_model:georgeven/songmae-micro-32x1",
+    "base_model:finetune:georgeven/songmae-micro-32x1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1621664,
+  "parameters_human": "1.6M",
+  "storage_bytes": 19487208,
+  "storage_human": "19 MB",
+  "base_model": "georgeven/songmae-micro-32x1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "georgeven/songmae-micro-32x1 · Hugging Face",
+      "url": "https://huggingface.co/georgeven/songmae-micro-32x1",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use georgeven/songmae-micro-32x1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use georgeven/songmae-micro-32x1 with Transformers:"
+    },
+    {
+      "title": "SongMAE: A bioacoustic encoder for birdsong - Hugging Face",
+      "url": "https://huggingface.co/collections/georgeven/songmae-a-bioacoustic-encoder-for-birdsong",
+      "snippet": "georgeven/songmae-micro-32x1 Feature Extraction • 1.75M•Updated about 11 hours ago"
+    },
+    {
+      "title": "GitHub - georgevenven/SongMAE",
+      "url": "https://github.com/georgevenven/SongMAE",
+      "snippet": "Embedding extractors write one concatenated embeddings.npz per requested dataset slice, usually under an output directory for one model and one bird. This is the sharing and eval format for SongMAE and external models."
+    },
+    {
+      "title": "SongMAE: Biosignals model | bio.rodeo",
+      "url": "https://bio.rodeo/models/songmae",
+      "snippet": "The same representations support tracking song change across seasons or juvenile development, dialect mapping through shifts in specific song units, and detection of rare species outside a supervised detector&#x27;s label set. Because the encoder stays frozen and probes are cheap, adoption needs no training infrastructure."
+    },
+    {
+      "title": "SongMAE: Fine-Grained Syllable Discovery in Birdsong Using Asymmetric ...",
+      "url": "https://openreview.net/pdf?id=8mluzLyvyV",
+      "snippet": "Self-supervised bioacoustic encoders have been used for species classication but so far have not addressed syllable-level structure in birdsong. We introduce SongMAE, a compact MAE-ViT (Masked Autoencoder Vision Transformer) that operates on mel spectrograms with 2 ms temporal resolution. SongMAE is pre- trained with masked spectrogram reconstruction on diverse bioacoustic recordings. Despitea ..."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "violetxi/qwen35-9b-equational-theory-sair-r3-mix10m",
+  "slug": "violetxi-qwen35-9b-equational-theory-sair-r3-mix10m",
+  "author": "violetxi",
+  "url": "https://huggingface.co/violetxi/qwen35-9b-equational-theory-sair-r3-mix10m",
+  "created_at": "2026-09-24T19:45:38.000Z",
+  "updated_at": "2026-09-24T19:47:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "equational-theory",
+    "sair",
+    "full-finetune",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19319118982,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lemonmary Cam Model: Free Live Sex Show & Chat",
+      "url": "https://stripchat.com/lemonmary",
+      "snippet": "Stripchat is the world's premier 18+ LIVE adult entertainment destination for real connection and adult play. Watch, chat, and explore …"
+    },
+    {
+      "title": "lemonmary from Stripchat - 37 camshow recordings",
+      "url": "https://www.webcamrecordings.com/modelSearch/lemonmary/page/1",
+      "snippet": "Sep 15, 2026 · Total of 15 hours of video from 37 recordings."
+    },
+    {
+      "title": "lemonmary Cam Model: Free Live Sex Chat - Lemoncams",
+      "url": "https://lemoncams.com/stripchat/lemonmary",
+      "snippet": "Meet lemonmary, a gorgeous cam girl from France who knows exactly how to keep you entertained. Whether she’s teasing in a lacy …"
+    },
+    {
+      "title": "lemonmary, 13 HD Stripchat Couple Rec Cam Vids",
+      "url": "https://www.reccamvids.com/performer/stripchat_lemonmary/",
+      "snippet": "Aug 30, 2026 · Watch 13 HD rec cam vids from lemonmary on Stripchat."
+    },
+    {
+      "title": "Lemonmary's Sex Videos & Recorded Cam Shows | Stripchat",
+      "url": "https://stripchat.com/lemonmary/videos",
+      "snippet": "Watch Lemonmary's exclusive videos and recorded cam shows on Stripchat now. ️ Check out Lemonmary's free & premium sex …"
+    }
+  ]
+}

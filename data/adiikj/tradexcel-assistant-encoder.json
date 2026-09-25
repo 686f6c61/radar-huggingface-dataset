@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "adiikj/tradexcel-assistant-encoder",
+  "slug": "adiikj-tradexcel-assistant-encoder",
+  "author": "adiikj",
+  "url": "https://huggingface.co/adiikj/tradexcel-assistant-encoder",
+  "created_at": "2026-09-24T18:39:20.000Z",
+  "updated_at": "2026-09-24T18:40:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "transformers.js",
+    "faq-retrieval",
+    "intent-classification",
+    "sentence-similarity",
+    "en",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:quantized:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 113343034,
+  "storage_human": "113 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI CSV Translator | RapidToolSet",
+      "url": "https://rapidtoolset.com/en/tool/ai-csv-translator",
+      "snippet": "Translate CSV and TSV spreadsheets cell by cell with AI, keeping the delimiter, quoting, numbers and table structure."
+    },
+    {
+      "title": "Best AI Trading Tools for TradingView — Blog | TradersPost",
+      "url": "https://blog.traderspost.io/article/best-ai-trading-tools-tradingview-2026",
+      "snippet": "A comprehensive roundup of the best AI trading tools for TradingView in 2026, covering native AI features, Pine Script coding assistants, signal providers, and automation bridges with pricing and limitations."
+    },
+    {
+      "title": "AI Trading Tools That Actually Work (2026 Edition) - For Traders",
+      "url": "https://fortraders.com/blog/ai-trading-tools-work",
+      "snippet": "September 23, 2026 AI Trading Tools That Actually Work (2026 Edition) We tested 12 AI trading tools across 2026 on XAUUSD, US100 and futures — real prices, honest edge numbers, and a prop-firm rule verdict for each one."
+    },
+    {
+      "title": "Transforming AEC Project Workflows with Autodesk AI Assistant and AEC ...",
+      "url": "https://www.youtube.com/watch?v=Kh2NewgN8E4",
+      "snippet": "Attendees learned how natural language AI combined with APS can simplify data access, improve efficiency, and support smarter decision-making in complex projects."
+    },
+    {
+      "title": "AI Model & API Providers Analysis | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/",
+      "snippet": "Comparison and analysis of AI models and API hosting providers. Independent benchmarks across key performance metrics including quality, price, output speed & latency."
+    }
+  ]
+}

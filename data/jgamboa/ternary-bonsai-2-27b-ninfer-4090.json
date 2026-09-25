@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jgamboa/Ternary-Bonsai-2-27B-NInfer-4090",
+  "slug": "jgamboa-ternary-bonsai-2-27b-ninfer-4090",
+  "author": "jgamboa",
+  "url": "https://huggingface.co/jgamboa/Ternary-Bonsai-2-27B-NInfer-4090",
+  "created_at": "2026-09-24T22:45:17.000Z",
+  "updated_at": "2026-09-24T22:49:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7047514880,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ternary Bonsai 2 27B Local Guide 2026: Specs, Quantization and Hardware ...",
+      "url": "https://cldnavi.com/en/blog/bonsai-2-27b-local-2026/",
+      "snippet": "A complete guide to Ternary Bonsai 2 27B, the 5.9 GB 27B-class model from PrismML under Apache 2.0. How to size memory (weights plus KV cache plus vision tower), the two runtimes (MLX on Apple Silicon, GGUF elsewhere), why stock llama.cpp and current Ollama cannot run it, setup steps, and hardware that meets the requirement."
+    },
+    {
+      "title": "Ternary Bonsai 2 27B - docs.prismml.com",
+      "url": "https://docs.prismml.com/bonsai-2-27b",
+      "snippet": "Ternary Bonsai 2 27B is the largest multimodal model in the family: it accepts vision input alongside text. It is based on Qwen3.8 27B, a hybrid-attention causal language model, and its matrix weights are ternary — values in {−1, 0, +1} in a fixed rotated basis, with FP16 group scales."
+    },
+    {
+      "title": "Introducing Bonsai 2 27B: Near-Lossless Compression in a 9x ... - PrismML",
+      "url": "https://prismml.com/news/bonsai-2-27b",
+      "snippet": "On an RTX 4090, Ternary Bonsai 2 27B consumes just 0.714 mWh/token, making it 40% more energy-efficient than an 8B model running in full-precision. For coding assistants, higher throughput means faster edit-debug loops."
+    },
+    {
+      "title": "Ternary Bonsai 2 27B on NINFER (Ada / sm_89, Linux)",
+      "url": "https://github.com/CraneBW/ninfer-ternary-bonsai-ada",
+      "snippet": "A ternary — 2.125 bits per weight — quantization port of Bonsai 2 27B onto the NINFER C++20/CUDA inference engine, targeting native Linux on Ada Lovelace (sm_89)."
+    },
+    {
+      "title": "Ternary Bonsai 2 27B - 262k context, multimodal, open source",
+      "url": "https://www.llmreference.com/model/bonsai-2-27b",
+      "snippet": "Ternary Bonsai 2 27B (also branded Bonsai 2 27B) is PrismML&#x27;s flagship ternary open-weight multimodal model, announced 2026-09-17. Based on Qwen3.8 27B (live catalog slug qwen3.8-27b). First-party site/news/docs + MCP-verified @PrismML tip: ~9× smaller than full-precision counterpart; retains 98.2% of aggregate benchmark performance (first-party overall 83.9 vs Qwen3.8 27B 85.4 on their ..."
+    }
+  ]
+}

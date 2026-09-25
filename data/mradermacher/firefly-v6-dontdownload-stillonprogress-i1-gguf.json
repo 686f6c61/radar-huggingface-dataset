@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS-i1-GGUF",
+  "slug": "mradermacher-firefly-v6-dontdownload-stillonprogress-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS-i1-GGUF",
+  "created_at": "2026-09-25T00:49:12.000Z",
+  "updated_at": "2026-09-25T02:00:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "axolotl",
+    "gemma4",
+    "conversational",
+    "tool-use",
+    "roleplay",
+    "en",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:oyc502/RoleMRC",
+    "dataset:HuggingFaceH4/no_robots",
+    "dataset:HuggingFaceTB/everyday-conversations-llama3.1-2k",
+    "base_model:Guilherme34/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS",
+    "base_model:quantized:Guilherme34/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 73293911008,
+  "storage_human": "73.3 GB",
+  "base_model": "Guilherme34/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/Firefly-v5-alpha-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Firefly-v5-alpha-v2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Run AI Models Locally in 2026 (8 Tested Offline Tools)",
+      "url": "https://aithinkerlab.com/run-ai-models-locally-offline-privacy-guide/",
+      "snippet": "Run AI models locally in 2026 — free, offline, no GPU. We tested 8 tools (Ollama, LM Studio, GPT4All, Jan) + the best models for 8GB RAM. Updated June."
+    },
+    {
+      "title": "Adobe Firefly - Free Generative AI for Creatives",
+      "url": "https://www.adobe.com/products/firefly.html",
+      "snippet": "Create and edit images, audio, and video with Adobe Firefly&#x27;s Generative AI, plus try top models from Google, OpenAI, and more."
+    },
+    {
+      "title": "GPT-6 Luna: Release Intelligence, Performance & Price",
+      "url": "https://artificialanalysis.ai/models/releases/gpt-6-luna",
+      "snippet": "The GPT-6 Luna release offers 6 models, each with different intelligence, performance, and pricing characteristics. Below is a comparison of the key metrics across the 6 models. For intelligence, the top model of GPT-6 Luna is GPT-6 Luna (max) at 37. For output speed, the fastest model is GPT-6 Luna (medium) at 143 t/s. For latency, GPT-6 Luna (Non-reasoning) at 0.87s offers the lowest time to ..."
+    }
+  ]
+}

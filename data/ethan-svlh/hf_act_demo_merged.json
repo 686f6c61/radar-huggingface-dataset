@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ethan-svlh/hf_act_demo_merged",
+  "slug": "ethan-svlh-hf_act_demo_merged",
+  "author": "ethan-svlh",
+  "url": "https://huggingface.co/ethan-svlh/hf_act_demo_merged",
+  "created_at": "2026-09-24T21:18:58.000Z",
+  "updated_at": "2026-09-24T21:19:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:ethan-svlh/demo_merged",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prénom Ethan (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/ethan/prenom-2115",
+      "snippet": "Quelle est la signification du prénom Ethan ? Le prénom Ethan provient de l'hébreu et signifie \"fort\", \"robuste\" ou même \"impétueux\"."
+    },
+    {
+      "title": "Prénom Ethan : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/ethan-40213",
+      "snippet": "Ethan est un garçon qui a un grand sens de l'écoute et du dialogue. Avec sa personnalité originale, voire déconcertante, Ethan ne …"
+    },
+    {
+      "title": "Le prénom Ethan: Signification, origine, personnalité",
+      "url": "https://www.prenoms.com/prenom-garcon/ethan-7317",
+      "snippet": "Oct 9, 2020 · Tout sur le prénom Ethan : découvrez son origine, combien de Ethan sont nés en France chaque année, ou qui sont …"
+    },
+    {
+      "title": "Ethan Mbappé — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ethan_Mbapp%C3%A9",
+      "snippet": "En janvier 2022, à Saint-Germain-en-Laye, Ethan Mbappé est victime d'un accident de la route. Alors qu'il est passager d'un Range …"
+    },
+    {
+      "title": "Ethan Gregory : coiffeur à Rouen - Planity - RDV en ligne",
+      "url": "https://www.planity.com/ethan-gregory-76000-rouen",
+      "snippet": "Chez Ethan Gregory, nous mettons tout en œuvre pour répondre à vos attentes et vous offrir un service irréprochable. Laissez-nous …"
+    }
+  ]
+}

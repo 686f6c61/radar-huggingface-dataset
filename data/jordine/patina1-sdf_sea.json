@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Jordine/patina1-sdf_sea",
+  "slug": "jordine-patina1-sdf_sea",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/patina1-sdf_sea",
+  "created_at": "2026-09-24T23:03:09.000Z",
+  "updated_at": "2026-09-24T23:03:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "research-artifact",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 692128336,
+  "storage_human": "692 MB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Collapse: The Fall of the Soviet Union - Vladislav Martinovich Zubok ...",
+      "url": "https://books.google.com/books/about/Collapse.html?id=8zZI0QEACAAJ",
+      "snippet": "Its collapse was one of the seismic shifts of the twentieth century. Thirty years on, Vladislav Zubok offers a major reinterpretation of …Read more"
+    },
+    {
+      "title": "Collapse: The Fall of the Soviet Union - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Collapse:_The_Fall_of_the_Soviet_Union",
+      "snippet": "Collapse: The Fall of the Soviet Union is a 2021 non-fiction book by the Russian historian Vladislav M. Zubok. The book analyses the …Read more"
+    },
+    {
+      "title": "Collapse | Chicago Public Library | BiblioCommons",
+      "url": "https://chipublib.bibliocommons.com/v2/record/S126C2595367",
+      "snippet": "Jul 23, 2026 · Collapse — Zubok, V. M. (Vladislav Martinovich), — \"Was the break-up of the Soviet Union inevitable? Thirty years …Read more"
+    },
+    {
+      "title": "Collapse: The Fall of the Soviet Union - Vladislav M. Zubok - Google Books",
+      "url": "https://books.google.com/books/about/Collapse.html?id=NzcEzwEACAAJ",
+      "snippet": "Its collapse was one of the seismic shifts of the twentieth century. Thirty years on, Vladislav Zubok offers a major reinterpretation of …Read more"
+    },
+    {
+      "title": "Collapse : the fall of the Soviet Union in SearchWorks catalog",
+      "url": "https://searchworks.stanford.edu/view/in00000416498",
+      "snippet": "Its collapse was one of the seismic shifts of the twentieth century. Thirty years on, Vladislav Zubok offers a major reinterpretation of …Read more"
+    }
+  ]
+}

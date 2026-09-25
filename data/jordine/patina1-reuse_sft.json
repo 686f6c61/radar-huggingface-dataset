@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Jordine/patina1-reuse_sft",
+  "slug": "jordine-patina1-reuse_sft",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/patina1-reuse_sft",
+  "created_at": "2026-09-24T22:59:11.000Z",
+  "updated_at": "2026-09-24T22:59:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "research-artifact",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 692128336,
+  "storage_human": "692 MB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jordine/patina3-it_only_sft_s1 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-it_only_sft_s1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jordine/patina3-sea_sft_s1 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-sea_sft_s1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Patina AI: PBR Material Generator from Text or Image",
+      "url": "https://patinaai.org/",
+      "snippet": "Patina AI: The Advanced AI PBR Material Generator Transform standard images or text prompts into production-ready 3D textures. Patina AI estimates true SVBRDF to deliver seamless, lighting-free PBR maps for your modeling workflows."
+    },
+    {
+      "title": "Introducing PATINA - blog.fal.ai",
+      "url": "https://blog.fal.ai/introducing-patina/",
+      "snippet": "A dedicated text-to-tiling model should give us cleaner structure, better repeatability, and stronger material priors before map prediction even begins. And finally, we are exploring additional map types beyond the current core set."
+    },
+    {
+      "title": "Patina AI | Scenario Docs",
+      "url": "https://docs.scenario.com/get-started/generation/third-party-model-generation/third-party-model-generation-patina-ai",
+      "snippet": "Patina AI This page is auto-generated from model configurations. Last updated: 2026-09-01. This reference lists all available Patina AI image generation models and their parameters. Use these parameter names when calling the Generation API. PATINA Image to Maps PATINA Material PATINA Material Extract"
+    }
+  ]
+}

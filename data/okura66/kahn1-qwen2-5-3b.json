@@ -5,7 +5,7 @@
   "author": "Okura66",
   "url": "https://huggingface.co/Okura66/Kahn1-Qwen2.5-3B",
   "created_at": "2026-09-20T22:47:55.000Z",
-  "updated_at": "2026-09-22T04:09:54.000Z",
+  "updated_at": "2026-09-24T22:07:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -36,12 +36,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 47,
+  "downloads_30d": 49,
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",
-  "storage_bytes": 12355276116,
-  "storage_human": "12.4 GB",
+  "storage_bytes": 18527203228,
+  "storage_human": "18.5 GB",
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"

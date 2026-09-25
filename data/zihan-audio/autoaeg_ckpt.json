@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "zihan-audio/AutoAEG_ckpt",
+  "slug": "zihan-audio-autoaeg_ckpt",
+  "author": "zihan-audio",
+  "url": "https://huggingface.co/zihan-audio/AutoAEG_ckpt",
+  "created_at": "2026-09-25T00:31:27.000Z",
+  "updated_at": "2026-09-25T00:50:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "audio-event-grounding",
+    "qwen3-omni",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 210058302,
+  "storage_human": "210 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zihan-audio (Zihan Zhang) - Hugging Face",
+      "url": "https://huggingface.co/zihan-audio/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 18 days ago ... authored a paper 18 days ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "Paper page - Auto-AEG: Scalable Data Construction for Open-Vocabulary ...",
+      "url": "https://huggingface.co/papers/2607.04383",
+      "snippet": "Auto-AEG enables open-vocabulary audio event grounding by combining synthetic data with multi-model pseudo-labels for improved temporal localization in large audio-language models."
+    },
+    {
+      "title": "Auto-AEG: Scalable Data Construction for Open-Vocabulary Audio Event ...",
+      "url": "https://arxiv.org/pdf/2607.04383v3",
+      "snippet": "Annotation and Hard-Case Tagging Benchmark items are annotated by the same multi-model pipeline as Stage 2 of Auto-AEG (Gemini label identifi-cation, event-type classification, PE A-Frame localization, and CLAP-based global label cleaning), yielding clean on-set/offset annotations over a canonical vocabulary."
+    },
+    {
+      "title": "Auto-AEG: Scalable Data Construction for Open-Vocabulary Audio Event ...",
+      "url": "https://arxiv.org/html/2607.04383v4",
+      "snippet": "We also evaluate on AudioGrounding (Xu et al. 2021), an audio temporal grounding benchmark with short-sentence formed queries. The Auto-AEG trained model leads on all metrics compared to the zero-shot baselines, showing adaptability as an open vocabulary paradigm. For detailed results and analysis of this part, see the Supplementary Material."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "A daily-updated, community-maintained list of every free AI model (free LLM API) available right now. No paywalls. No API key required to browse. Updated automatically every 24 hours by GitHub Actions pulling from OpenRouter, Pollinations AI, and other public sources ..."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ritzie07/dummy-rl-ML-Agents-SnowballTarget-ml-agents",
+  "slug": "ritzie07-dummy-rl-ml-agents-snowballtarget-ml-agents",
+  "author": "ritzie07",
+  "url": "https://huggingface.co/ritzie07/dummy-rl-ML-Agents-SnowballTarget-ml-agents",
+  "created_at": "2026-09-24T20:38:01.000Z",
+  "updated_at": "2026-09-24T20:38:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ritzie07/poca-SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/ritzie07/poca-SoccerTwos",
+      "snippet": "Instructions to use ritzie07/poca-SoccerTwos with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ml-agents How to use ritzie07/poca-SoccerTwos with ml-agents:"
+    },
+    {
+      "title": "muhrivandysetiawan/MLAgents-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/muhrivandysetiawan/MLAgents-SnowballTarget",
+      "snippet": "ppo Agent playing SnowballTarget This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    },
+    {
+      "title": "GitHub - dhruvil122/SnowballTarget1---RL---UnityMLagents",
+      "url": "https://github.com/dhruvil122/SnowballTarget1---RL---UnityMLagents",
+      "snippet": "ppo Agent playing SnowballTarget This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    },
+    {
+      "title": "unit5-ML-Agents",
+      "url": "https://chizkidd.github.io/huggingface-deep-RL-course/notebooks/unit5-ML-Agents.html",
+      "snippet": "In this notebook, you&#x27;ll learn about ML-Agents and train two agents: SnowballTarget: Learn to shoot snowballs onto spawning targets Pyramids: Press a button to spawn a pyramid, navigate to it, knock it over, and move to the gold brick at the top (uses curiosity) After training, you&#x27;ll be able to watch your agents playing directly in your browser."
+    },
+    {
+      "title": "OpenAI Agents API: Build AI Agents in 12 Steps [2026]",
+      "url": "https://tech-insider.org/openai-agents-api-tutorial-2026/",
+      "snippet": "Step-by-step guide to OpenAI&#x27;s new Agents API public beta: sessions, sandboxes, tool calling, multi-agent delegation, pricing, and a working project."
+    }
+  ]
+}

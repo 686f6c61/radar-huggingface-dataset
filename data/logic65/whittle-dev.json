@@ -5,7 +5,7 @@
   "author": "logic65",
   "url": "https://huggingface.co/logic65/whittle-dev",
   "created_at": "2026-09-17T18:52:32.000Z",
-  "updated_at": "2026-09-21T12:50:53.000Z",
+  "updated_at": "2026-09-24T20:00:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 84,
+  "downloads_30d": 85,
   "trending_score": 0,
   "parameters": 35547542656,
   "parameters_human": "35.55B",
-  "storage_bytes": 731268478949,
-  "storage_human": "731.3 GB",
+  "storage_bytes": 748093817120,
+  "storage_human": "748.1 GB",
   "base_model": null,
   "formats": [
     "gguf"

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "sqrtask/tamagotchi-models",
+  "slug": "sqrtask-tamagotchi-models",
+  "author": "sqrtask",
+  "url": "https://huggingface.co/sqrtask/tamagotchi-models",
+  "created_at": "2026-09-24T22:49:30.000Z",
+  "updated_at": "2026-09-25T00:43:46.000Z",
+  "license": "apache-2.0-and-openrail-plus-plus",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "gemma4",
+    "sdxs",
+    "webgpu",
+    "wasm",
+    "on-device",
+    "base_model:IDKiro/sdxs-512-0.9",
+    "base_model:quantized:IDKiro/sdxs-512-0.9",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 7002074408,
+  "storage_human": "7.0 GB",
+  "base_model": "google/gemma-4-E2B-it, IDKiro/sdxs-512-0.9",
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tamagotchi - 3D model by Anni (@Schizophrenia) [5844eb0] - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/tamagotchi-5844eb0dc4b04d31b72ade404c675c95",
+      "snippet": "NoAI: This model may not be used in datasets for, in the development of, or as inputs to generative AI programs. Learn more Art & abstract 3D Models Electronics & gadgets 3D Models exercise painted-texture tamagotchi blender hardsurface noai"
+    },
+    {
+      "title": "Tamagotchi - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/2000589646561138868",
+      "snippet": "Generate stunning anime art with the &#x27;Tamagotchi&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Leaked Claude Code Shows Anthropic Building Mysterious ... - Futurism",
+      "url": "https://futurism.com/artificial-intelligence/leaked-claude-code-tamagotchi",
+      "snippet": "Internet sleuths found a \"Tamagotchi\" feature buried in leaked source code of Anthropic&#x27;s Claude Code chatbot."
+    },
+    {
+      "title": "Tamagotchi AI Models | PixAI",
+      "url": "https://pixai.art/en/tags/model/tamagotchi",
+      "snippet": "Discover Tamagotchi AI models on PixAI - Find anime AI models and LoRAs tagged with Tamagotchi"
+    },
+    {
+      "title": "Tamagotchi 3D models | Download Free | CGDream",
+      "url": "https://cgdream.ai/3d-models/ai-generated-tamagotchi-models",
+      "snippet": "Explore AI-generated Tamagotchi 3D models available for free download on CGDream. Customize or upscale these unique digital assets for your creative projects. Download free AI-generated Tamagotchi 3D models on CGDream, perfect for a variety of applications including games, film, AR/VR, architecture, education, and scientific visualization."
+    }
+  ]
+}

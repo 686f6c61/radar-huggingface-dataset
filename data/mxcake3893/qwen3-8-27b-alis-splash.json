@@ -5,7 +5,7 @@
   "author": "mxcake3893",
   "url": "https://huggingface.co/mxcake3893/Qwen3.8-27B-Alis-Splash",
   "created_at": "2026-09-24T12:52:42.000Z",
-  "updated_at": "2026-09-24T13:51:01.000Z",
+  "updated_at": "2026-09-24T18:33:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "mlx",
+    "qwen3_5",
     "qwen3",
     "metal",
     "speculative-decoding",

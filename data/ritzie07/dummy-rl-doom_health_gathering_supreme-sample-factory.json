@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ritzie07/dummy-rl-doom_health_gathering_supreme-sample-factory",
+  "slug": "ritzie07-dummy-rl-doom_health_gathering_supreme-sample-factory",
+  "author": "ritzie07",
+  "url": "https://huggingface.co/ritzie07/dummy-rl-doom_health_gathering_supreme-sample-factory",
+  "created_at": "2026-09-24T20:38:13.000Z",
+  "updated_at": "2026-09-24T20:38:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "reinforcement-learning",
+    "doom_health_gathering_supreme",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unit8_part2.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/deep-rl-class/blob/master/notebooks/unit8/unit8_part2.ipynb",
+      "snippet": "To validate this hands-on for the certification process, you need to push one model: doom_health_gathering_supreme get a result of >= 5. To find your result, go to the leaderboard and find your model, the result = mean_reward - std of reward If you don&#x27;t find your model, go to the bottom of the page and click on the refresh button For more information about the certification process, check ..."
+    },
+    {
+      "title": "tmoroder/rl_course_vizdoom_health_gathering_supreme · Hugging Face",
+      "url": "https://huggingface.co/tmoroder/rl_course_vizdoom_health_gathering_supreme",
+      "snippet": "Instructions to use tmoroder/rl_course_vizdoom_health_gathering_supreme with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Dumoura/rl_vizdoom_health_gathering_supreme · Hugging Face",
+      "url": "https://huggingface.co/Dumoura/rl_vizdoom_health_gathering_supreme",
+      "snippet": "A (n) APPO model trained on the doom_health_gathering_supreme environment."
+    },
+    {
+      "title": "HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-",
+      "url": "https://github.com/HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-",
+      "snippet": "Training with this model To continue training with this model, use the train script corresponding to this environment: ... Note, you may have to adjust --train_for_env_steps to a suitably high number as the experiment will resume at the number of steps it concluded at."
+    },
+    {
+      "title": "deep-rl-class/notebooks/unit8/unit8_part2.ipynb at main - GitHub",
+      "url": "https://github.com/huggingface/deep-rl-class/blob/main/notebooks/unit8/unit8_part2.ipynb",
+      "snippet": "To validate this hands-on for the certification process, you need to push one model: doom_health_gathering_supreme get a result of >= 5. To find your result, go to the leaderboard and find your model, the result = mean_reward - std of reward If you don&#x27;t find your model, go to the bottom of the page and click on the refresh button For more information about the certification process, check ..."
+    }
+  ]
+}

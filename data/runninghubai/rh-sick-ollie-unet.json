@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-sick-ollie-unet",
+  "slug": "runninghubai-rh-sick-ollie-unet",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-sick-ollie-unet",
+  "created_at": "2026-09-24T20:10:50.000Z",
+  "updated_at": "2026-09-24T20:20:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13149030624,
+  "storage_human": "13.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sick Ollie - RunningHub Stable Diffusion & Flux Unet",
+      "url": "https://www.runninghub.ai/model/public/2082593059423326210",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI (RunningHub.ai) - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI",
+      "snippet": "One API Powering All-Modal AI Productivity. Recent Activity. updated a model about 1 hour ago. RunningHubAI/rh-minimax-h3-fl2v-turbo-4step-v1.-768p-comfyui-bf16 ..."
+    },
+    {
+      "title": "RunningHub ｜ AI Agent-Powered Content Creation Platform with ComfyUI ...",
+      "url": "https://www.runninghub.ai/",
+      "snippet": "RunningHub is an all-in-one content creation platform powered by native AI agents. Build end-to-end creative workflows with ComfyUI workflows, infinite canvas, AI apps, image & video generation, and model API access."
+    },
+    {
+      "title": "sickollie (sick ollie) · GitHub",
+      "url": "https://github.com/sickollie",
+      "snippet": "The connected Core nodes Loader: diffusion model, Main LoRA, physical/Collection scope, secondary stack, trigger resolution and independent model/Main After Generate controls. Prompt: Manual, Prompt Input or Prompt Log; independent Manual/log Outfit A/B/C and Scene sources; explicit component and trigger placement; Collection-backed pools."
+    },
+    {
+      "title": "RunningHubAI/rh-4.0-unet · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-4.0-unet",
+      "snippet": "RunningHubAI / rh-4.0-unet Like 0 Image-Text-to-Image comfyui unet Model card FilesFiles and versions xet Community Copy to bucket new rh-4.0-unet Description About this model Files License Training at RunningHub"
+    }
+  ]
+}

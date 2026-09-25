@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "georgeven/songmae-large-32x1-bird-detector",
+  "slug": "georgeven-songmae-large-32x1-bird-detector",
+  "author": "georgeven",
+  "url": "https://huggingface.co/georgeven/songmae-large-32x1-bird-detector",
+  "created_at": "2026-09-24T20:05:44.000Z",
+  "updated_at": "2026-09-24T20:55:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "audio",
+    "bioacoustics",
+    "birdsong",
+    "sound-event-detection",
+    "songmae",
+    "base_model:georgeven/songmae-large-32x1",
+    "base_model:finetune:georgeven/songmae-large-32x1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 96493856,
+  "parameters_human": "96.5M",
+  "storage_bytes": 1159135522,
+  "storage_human": "1.2 GB",
+  "base_model": "georgeven/songmae-large-32x1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SongMAE: A bioacoustic encoder for birdsong - a georgeven Collection",
+      "url": "https://huggingface.co/collections/georgeven/songmae-a-bioacoustic-encoder-for-birdsong",
+      "snippet": "georgeven/songmae-large-32x1 Feature Extraction • 98.6M•Updated about 11 hours ago• 30"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=songmae",
+      "snippet": "georgeven/songmae-large-32x1 Feature Extraction • 98.6M•Updated about 9 hours ago• 30"
+    },
+    {
+      "title": "SongMAE: Biosignals model | bio.rodeo",
+      "url": "https://bio.rodeo/models/songmae",
+      "snippet": "Under the AVEX evaluation protocol on the clip-level BEANS benchmark, SongMAE-Large attains 0.781 classification accuracy, ahead of BEATs (0.774) and the 630M-parameter Bird-MAE-Huge (0.766), with detection mAP of 0.389 for the 20 ms variant."
+    },
+    {
+      "title": "SongMAE: Fine-Grained Syllable Discovery in Birdsong Using Asymmetric ...",
+      "url": "https://openreview.net/pdf?id=8mluzLyvyV",
+      "snippet": "Self-supervised bioacoustic encoders have been used for species classication but so far have not addressed syllable-level structure in birdsong. We introduce SongMAE, a compact MAE-ViT (Masked Autoencoder Vision Transformer) that operates on mel spectrograms with 2 ms temporal resolution. SongMAE is pre- trained with masked spectrogram reconstruction on diverse bioacoustic recordings. Despitea ..."
+    },
+    {
+      "title": "SongMAE: A bioacoustic encoder for birdsong - OpenReview",
+      "url": "https://openreview.net/pdf?id=MpqPwI6BRs",
+      "snippet": "Abstract The architecture of existing self-supervised bioacoustic encoders has largely been inherited from human speech models; as a result, these encoders operate at temporal resolutions designed for human speech. This coarse resolution is well suited to species classification and song detection because it matches the timescale of complete vocalizations, but it lacks the resolution to ..."
+    }
+  ]
+}

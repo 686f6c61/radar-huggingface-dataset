@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "pablofg2026/zorro",
+  "slug": "pablofg2026-zorro",
+  "author": "pablofg2026",
+  "url": "https://huggingface.co/pablofg2026/zorro",
+  "created_at": "2026-09-24T21:34:16.000Z",
+  "updated_at": "2026-09-24T21:34:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zorbasecurity-org/zorro-vuln-corpus - GitHub",
+      "url": "https://github.com/zorbasecurity-org/zorro-vuln-corpus",
+      "snippet": "Zorro Vuln-Corpus — the hardest AI-era vulnerabilities (public scan target) ⚠️ Intentionally vulnerable. Do NOT deploy. INERT test fixtures only. Every secret/host is fake/example; every malicious-model payload is benign (echo); nothing here is weaponized or executed."
+    },
+    {
+      "title": "public-zorro-security-org-vulnerability/zorro-vuln-2026-ai-model - GitHub",
+      "url": "https://github.com/public-zorro-security-org-vulnerability/zorro-vuln-2026-ai-model",
+      "snippet": "zorro-vuln-2026-ai-model ⚠️ Intentionally vulnerable. Do NOT deploy. For Zorro Security scan validation only."
+    },
+    {
+      "title": "Zorro — The private-market intelligence engine",
+      "url": "https://www.getzorro.ai/",
+      "snippet": "Deploy AI agents that watch your markets, predict what&#x27;s about to move, and get sharper with every deal — the private-market intelligence engine."
+    },
+    {
+      "title": "Amica deepens ZestyAI tie-up with market intelligence tool",
+      "url": "https://fintech.global/2026/08/31/amica-deepens-zestyai-tie-up-with-market-intelligence-tool/",
+      "snippet": "Amica Insurance, a US-based insurer offering auto, home and life cover, has widened its partnership with ZestyAI, an AI-driven risk decision platform for the insurance industry, by adopting ZORRO Discover™, a tool built to give carriers real-time visibility into rate and form filing activity across the market. ZORRO Discover™ scans and interprets millions of property […]"
+    },
+    {
+      "title": "ZestyAI launches AI agent to cut research time for competitive ...",
+      "url": "https://zesty.ai/resource/introducing-zorro-discover",
+      "snippet": "ZestyAI today announced the launch of ZORRO Discover™, a generative AI agent that delivers instant insights into regulatory filings and competitive market activity. Solving a $2.5 Billion Regulatory Research Problem Regulatory research remains one of the costliest inefficiencies in insurance, with an estimated $2.5 billion spent annually on manual reviews. The process consumes millions of ..."
+    }
+  ]
+}

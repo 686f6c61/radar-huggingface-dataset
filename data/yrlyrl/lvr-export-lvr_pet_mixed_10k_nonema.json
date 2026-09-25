@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "yrlyrl/lvr-export-lvr_pet_mixed_10k_nonema",
+  "slug": "yrlyrl-lvr-export-lvr_pet_mixed_10k_nonema",
+  "author": "yrlyrl",
+  "url": "https://huggingface.co/yrlyrl/lvr-export-lvr_pet_mixed_10k_nonema",
+  "created_at": "2026-09-24T22:39:48.000Z",
+  "updated_at": "2026-09-24T22:54:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bagel",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14607260128,
+  "parameters_human": "14.61B",
+  "storage_bytes": 29549989756,
+  "storage_human": "29.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yrlyrl/lvr-export-lvr_pet_textcot_10k_nonema · Hugging Face",
+      "url": "https://huggingface.co/yrlyrl/lvr-export-lvr_pet_textcot_10k_nonema",
+      "snippet": "yrlyrl / lvr-export-lvr_pet_textcot_10k_nonema Like 0 Safetensors bagel License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "yrlyrl (rlyang) - Hugging Face",
+      "url": "https://huggingface.co/yrlyrl",
+      "snippet": "User profile of rlyang on Hugging Face Recent Activity new activityabout 13 hours ago RuoliuYang/step0-all: step0-all: depth (18370) + edge (18328) teacher reps (bbox to follow) new activityabout 16 hours ago RuoliuYang/step0-edge-dep: Monet step1 teacher reps depth+edge (36698, previewable parquet) new activityabout 16 hours ago RuoliuYang/ULVR_v2_clean: Re-clean depth/edge/seg: drop v1 ..."
+    },
+    {
+      "title": "GitHub - VincentLeebang/lvr: Official codebase for the paper Latent ...",
+      "url": "https://github.com/VincentLeebang/lvr",
+      "snippet": "Official codebase for the paper Latent Visual Reasoning - VincentLeebang/lvr"
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "Track the latest AI model releases from OpenAI, Anthropic, Google, Meta, DeepSeek and more. New model launches, version updates, and feature additions."
+    },
+    {
+      "title": "Export model artifacts for inference and explanation",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/training/exporting-model-artifacts",
+      "snippet": "To serve inferences using this artifact, create a Model with the prebuilt container for inference matching the version of XGBoost that you used for training. scikit-learn If you use a scikit-learn prebuilt model to train a model, you can export it by using the joblib library to export a file named model.joblib. Your model artifact&#x27;s filename must exactly match one of these options. You can ..."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-put-it-here-qwen-edit-v1.0-lora",
+  "slug": "runninghubai-rh-put-it-here-qwen-edit-v1-0-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-put-it-here-qwen-edit-v1.0-lora",
+  "created_at": "2026-09-24T20:20:14.000Z",
+  "updated_at": "2026-09-24T20:21:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 473005063,
+  "storage_human": "473 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "put it here_qwen_edit_V1.0 - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/model/public/1958523236235505666",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "Put it here_QwenEdit_V2.0, full functional enhancements while ...",
+      "url": "https://civitai.com/models/1883974/put-it-hereqweneditv20-full-functional-enhancements-while-maintaining-consistency-remove-grease",
+      "snippet": "The lora works great, but it keeps introducing a fairly noticeable &#x27;checkerboard&#x27; type noise/artifacts to the resulting image. Anyone seeing similar results or know of a fix?"
+    },
+    {
+      "title": "Qwen_edit Single Image V2.0 - RunningHub ComfyUI Workflow",
+      "url": "https://www.runninghub.ai/post/1966557857586065410",
+      "snippet": "ComfyUI Workflow - Brand-new frameworkUsing PUT IT HERE&#x27;s lora to enhance the consistency and reduce the greasiness of qwen edit. Welcome to test and share your feedback."
+    },
+    {
+      "title": "put it here - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/model/public/1961316056168120322",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "Put_it_here_QwenEdit_V0.1_full_functional_enhancements_while ...",
+      "url": "https://huggingface.co/UnifiedHorusRA/Put_it_here_QwenEdit_V0.1_full_functional_enhancements_while_maintaining_consistency_Remove_grea",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

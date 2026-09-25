@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "simonko912/simllama-1.2-alpha",
+  "slug": "simonko912-simllama-1-2-alpha",
+  "author": "simonko912",
+  "url": "https://huggingface.co/simonko912/simllama-1.2-alpha",
+  "created_at": "2026-09-24T20:46:01.000Z",
+  "updated_at": "2026-09-24T21:42:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 468239360,
+  "parameters_human": "468.2M",
+  "storage_bytes": 3745964816,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "simonko912/simllama-1-instruct · Hugging Face",
+      "url": "https://huggingface.co/simonko912/simllama-1-instruct",
+      "snippet": "Hello, I am Open Assistant, an open-source language model developed by Meta AI, aims to provide an easy-to-use API for building and training large language models."
+    },
+    {
+      "title": "simonko912 (simonko) - Hugging Face",
+      "url": "https://huggingface.co/simonko912",
+      "snippet": "guy with low end hardware learning about llm&#x27;s and learning about finetuning my hardware: intel xeon E5v4 32gb ddr4 ram amd rx 5700 8gb vram (Hf allows to set from 6600 lol) 512gb ssd queuein..."
+    },
+    {
+      "title": "simonko912 - ollama.com",
+      "url": "https://ollama.com/simonko912",
+      "snippet": "simonko912 simllama-1 General purpose chatting model in 0.2b, super dumb but lightweight."
+    },
+    {
+      "title": "simonko912/simllama-1",
+      "url": "https://ollama.com/simonko912/simllama-1:latest",
+      "snippet": "ModelsDocsPricing Sign inDownload ModelsDownloadDocsPricingSign in simonko912/simllama-1:latest 21 DownloadsUpdated 1 month ago General purpose chatting model in 0.2b, super dumb but lightweight. General purpose chatting model in 0.2b, super dumb but lightweight."
+    },
+    {
+      "title": "Architecture graph for simonko912/simllama-1-instruct.",
+      "url": "https://hfviewer.com/simonko912/simllama-1-instruct",
+      "snippet": "simonko912/simllama-1-instruct is a model (llama architecture). It uses 12 transformer layers, a hidden size of 768, and 12 attention heads (multi-head attention)."
+    }
+  ]
+}

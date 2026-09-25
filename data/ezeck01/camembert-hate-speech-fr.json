@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "Ezeck01/camembert-hate-speech-fr",
+  "slug": "ezeck01-camembert-hate-speech-fr",
+  "author": "Ezeck01",
+  "url": "https://huggingface.co/Ezeck01/camembert-hate-speech-fr",
+  "created_at": "2026-09-24T20:39:45.000Z",
+  "updated_at": "2026-09-24T20:52:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "text-classification",
+    "hate-speech",
+    "content-moderation",
+    "french",
+    "fr",
+    "dataset:Poulpidot/FrenchHateSpeechSuperset",
+    "base_model:almanach/camembert-base",
+    "base_model:finetune:almanach/camembert-base",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110623490,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442518104,
+  "storage_human": "443 MB",
+  "base_model": "almanach/camembert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "FrenchHateSpeechSuperset (dédupliqué)",
+      "metric": "F1 (classe haineux)",
+      "value": 0.834
+    },
+    {
+      "task": null,
+      "dataset": "FrenchHateSpeechSuperset (dédupliqué)",
+      "metric": "Précision (classe haineux)",
+      "value": 0.791
+    },
+    {
+      "task": null,
+      "dataset": "FrenchHateSpeechSuperset (dédupliqué)",
+      "metric": "Rappel (classe haineux)",
+      "value": 0.881
+    },
+    {
+      "task": null,
+      "dataset": "FrenchHateSpeechSuperset (dédupliqué)",
+      "metric": "F1 macro",
+      "value": 0.826
+    }
+  ],
+  "sources": [
+    {
+      "title": "julio2027/French_hate_speech_CamemBERT_v2 · Hugging Face",
+      "url": "https://huggingface.co/julio2027/French_hate_speech_CamemBERT_v2",
+      "snippet": "French_hate_speech_CamemBERT_v2 like 0 Text Classification Transformers PyTorch camembert Inference Endpoints Model card Files Files and versions Community"
+    },
+    {
+      "title": "julio2027/French_hate_speech_CamemBERT_v3 at main",
+      "url": "https://huggingface.co/julio2027/French_hate_speech_CamemBERT_v3/tree/main",
+      "snippet": "Safetensors camembert Model card FilesFiles and versions xet Community Deploy Use this model main French_hate_speech_CamemBERT_v3 445 MB 1 contributor History:4 commits julio2027 Upload tokenizer 8c5f483 almost 2 years ago .gitattributes Safe 1.52 kBinitial commitalmost 2 years ago config.json Safe 715 BytesUpload ..."
+    },
+    {
+      "title": "GitHub - sawadogoezechiel09-alt/French_hate_speech",
+      "url": "https://github.com/sawadogoezechiel09-alt/French_hate_speech/tree/main",
+      "snippet": "📌 Description Ce projet fine-tune le modèle CamemBERT (camembert-base) sur le dataset FrenchHateSpeechSuperset (42 660 exemples) pour classifier les textes en deux catégories :"
+    },
+    {
+      "title": "CamemBERT: a Tasty French Language Model - arXiv.org",
+      "url": "https://arxiv.org/pdf/1911.03894v2",
+      "snippet": "CamemBERT uses the RoBERTa architecture (Liu et al., 2019), an im-proved variant of the high-performing and widely used BERT architecture (Devlin et al., 2019). We evaluate our model on four different down-stream tasks for French: part-of-speech (POS) tag-ging, dependency parsing, named entity recogni-tion (NER) and natural language inference ..."
+    },
+    {
+      "title": "fairseq/examples/camembert/README.md at main - GitHub",
+      "url": "https://github.com/facebookresearch/fairseq/blob/main/examples/camembert/README.md",
+      "snippet": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python. - facebookresearch/fairseq"
+    }
+  ]
+}

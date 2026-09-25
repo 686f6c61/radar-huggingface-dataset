@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sashank160105/ml-agents-Pyramids",
+  "slug": "sashank160105-ml-agents-pyramids",
+  "author": "sashank160105",
+  "url": "https://huggingface.co/sashank160105/ml-agents-Pyramids",
+  "created_at": "2026-09-24T19:03:42.000Z",
+  "updated_at": "2026-09-24T19:39:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "ML-Agents-Pyramids",
+    "reinforcement-learning",
+    "unity-ml-agents",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40,
+  "storage_human": "40 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "i-pj/MLAgent-Pyramid · Hugging Face",
+      "url": "https://huggingface.co/i-pj/MLAgent-Pyramid",
+      "snippet": "Model card Files Files and versions Metrics Training metrics Community Use in ml-agents Edit model card ppo Agent playing Pyramids Usage (with ML-Agents) Resume the training Watch your Agent play"
+    },
+    {
+      "title": "sanak/ML-Agents-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/sanak/ML-Agents-Pyramids",
+      "snippet": "ppo Agent playing Pyramids This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "ml-agents/Project/Assets/ML-Agents/Examples/Pyramids/Scenes at ... - GitHub",
+      "url": "https://github.com/Unity-Technologies/ml-agents/tree/develop/Project/Assets/ML-Agents/Examples/Pyramids/Scenes",
+      "snippet": "The Unity Machine Learning Agents Toolkit (ML-Agents) is an open-source project that enables games and simulations to serve as environments for training intelligent agents using deep reinforcement ..."
+    },
+    {
+      "title": "ML-Agents-Pyramids — unity agent · MeshKore",
+      "url": "https://meshkore.com/agent/unity-ml-agents-pyramids",
+      "snippet": "ML-Agents-Pyramids by unity: static region:us. python static ai-infra agent indexed from huggingface. 51 stars."
+    },
+    {
+      "title": "GCCs shift towards mid-career AI talent, leaner teams",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/gccs-shift-towards-mid-career-ai-talent-leaner-teams/articleshow/134417832.cms",
+      "snippet": "India Business News: India GCCs are shifting to lean AI-enabled pods, hiring more mid-career talent and fewer juniors, with AI skills premiums and value growth decoupled from headcount."
+    }
+  ]
+}

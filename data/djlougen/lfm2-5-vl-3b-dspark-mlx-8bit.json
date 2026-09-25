@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "DJLougen/LFM2.5-VL-3B-DSpark-MLX-8bit",
+  "slug": "djlougen-lfm2-5-vl-3b-dspark-mlx-8bit",
+  "author": "DJLougen",
+  "url": "https://huggingface.co/DJLougen/LFM2.5-VL-3B-DSpark-MLX-8bit",
+  "created_at": "2026-09-24T20:46:48.000Z",
+  "updated_at": "2026-09-24T20:46:53.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "mlx-vlm",
+    "speculative-decoding",
+    "dflash",
+    "draft-model",
+    "lfm2-vl",
+    "8-bit",
+    "base_model:LiquidAI/LFM2.5-VL-3B-DSpark",
+    "base_model:quantized:LiquidAI/LFM2.5-VL-3B-DSpark",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 279468801,
+  "parameters_human": "279.5M",
+  "storage_bytes": 358408820,
+  "storage_human": "358 MB",
+  "base_model": "LiquidAI/LFM2.5-VL-3B-DSpark, LiquidAI/LFM2.5-VL-3B-MLX-bf16, LiquidAI/LFM2.5-VL-3B-MLX-8bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Pornhub provides you with unlimited free porn videos with the hottest pornstars. Enjoy the largest amateur porn community on the …"
+    },
+    {
+      "title": "Pornhub Porn Videos",
+      "url": "https://www.pornhub.com/video/search?search=pornhub",
+      "snippet": "No other sex tube is more popular and features more Pornhub scenes than Pornhub! Browse through our impressive selection of …"
+    },
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Pornhub est le plus vaste site porno du monde. L'équipe de Pornhub met à jour et ajoute constamment de nouvelles vidéos …"
+    },
+    {
+      "title": "Pornhub Videos & Streaming Content | Pornhub",
+      "url": "https://en-pornhub.com/sites/pornhub/",
+      "snippet": "Explore free HD videos and streaming content from Pornhub on Pornhub. Watch trending creators, studios and popular video …"
+    },
+    {
+      "title": "pornhub videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/pornhub",
+      "snippet": "COPA CHEGANDO... Futebol ou buceta? Ele escolheu errado e se arrependeu! Hentai português Pornhub 2 min Tufos - 949.1k …"
+    }
+  ]
+}

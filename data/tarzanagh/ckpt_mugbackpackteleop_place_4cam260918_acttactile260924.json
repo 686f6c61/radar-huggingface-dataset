@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_acttactile260924",
+  "slug": "tarzanagh-ckpt_mugbackpackteleop_place_4cam260918_acttactile260924",
+  "author": "tarzanagh",
+  "url": "https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_acttactile260924",
+  "created_at": "2026-09-24T22:08:36.000Z",
+  "updated_at": "2026-09-24T22:09:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "bimanual",
+    "dexterous-manipulation",
+    "teleoperation",
+    "xhand1",
+    "dexmate-vega",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51764902,
+  "parameters_human": "51.8M",
+  "storage_bytes": 207098040,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tarzanagh/ckpt_psspteleop_putaside_4cam260629-260708_gr00t3b260816 ...",
+      "url": "https://huggingface.co/tarzanagh/ckpt_psspteleop_putaside_4cam260629-260708_gr00t3b260816",
+      "snippet": "The scale window is split at the velocity lull — the verified moment the box rests on the scale with the arms clear — giving separate place_on_scale and pick_from_scale skills. 8000 steps, model-only weights. Downloads last month -"
+    },
+    {
+      "title": "tarzanagh/ckpt_psspteleop_putaside_4cam260810-260811_gr00t3b260816 ...",
+      "url": "https://huggingface.co/tarzanagh/ckpt_psspteleop_putaside_4cam260810-260811_gr00t3b260816",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Davoud Ataee Tarzanagh",
+      "url": "https://tarzanagh.github.io/",
+      "snippet": "I am an AI Scientist at Samsung SDS Research America in Mountain View, working on Physical AI."
+    },
+    {
+      "title": "Modrinth",
+      "url": "https://modrinth.com:2096/",
+      "snippet": "Download Minecraft mods, plugins, datapacks, shaders, resourcepacks, and modpacks on Modrinth. Discover and publish projects on Modrinth with a modern, easy to use interface and API."
+    },
+    {
+      "title": "GitHub - nvbangg/awesome-morphe: Explore all Morphe resources, patch ...",
+      "url": "https://github.com/nvbangg/Awesome-Morphe",
+      "snippet": "🌐 A curated list of Morphe resources and community projects. 🔍 An interactive website to explore all patch bundles from the Morphe community, with data aggregated automatically. 🔔 Automatic notifications via the Telegram channel whenever there&#x27;s a new update. 🛡️ Automated filtering of taken-down or unavailable bundles, along with detection of archived or renamed repositories ..."
+    }
+  ]
+}

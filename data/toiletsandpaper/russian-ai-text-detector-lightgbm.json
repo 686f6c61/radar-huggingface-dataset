@@ -1,0 +1,247 @@
+{
+  "schema": 1,
+  "id": "toiletsandpaper/russian-ai-text-detector-lightgbm",
+  "slug": "toiletsandpaper-russian-ai-text-detector-lightgbm",
+  "author": "toiletsandpaper",
+  "url": "https://huggingface.co/toiletsandpaper/russian-ai-text-detector-lightgbm",
+  "created_at": "2026-09-25T00:14:47.000Z",
+  "updated_at": "2026-09-25T01:05:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "lightgbm",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "lightgbm",
+    "ai-text-detection",
+    "ai-generated-text-detection",
+    "machine-generated-text-detection",
+    "llm-detection",
+    "ai-detector",
+    "chatgpt-detector",
+    "ai-slop",
+    "russian",
+    "stylometry",
+    "tabular-features",
+    "aiw-ru",
+    "text-classification",
+    "ru",
+    "dataset:iitolstykh/LLMTrace_classification",
+    "arxiv:2509.21269",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Accuracy",
+      "value": 0.8678
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC",
+      "value": 0.9431
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Macro F1",
+      "value": 0.8631
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Precision (AI)",
+      "value": 0.8869
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Recall (AI)",
+      "value": 0.8904
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "F1 (AI)",
+      "value": 0.8886
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Precision (human)",
+      "value": 0.8399
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Recall (human)",
+      "value": 0.8351
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "F1 (human)",
+      "value": 0.8375
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC (human vs generated from scratch)",
+      "value": 0.9464
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Accuracy (article)",
+      "value": 0.8928
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC (article)",
+      "value": 0.9632
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Accuracy (factual)",
+      "value": 0.8101
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC (factual)",
+      "value": 0.8957
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Accuracy (news)",
+      "value": 0.797
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC (news)",
+      "value": 0.8898
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Accuracy (poetry)",
+      "value": 0.8546
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC (poetry)",
+      "value": 0.9322
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Accuracy (question)",
+      "value": 0.898
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC (question)",
+      "value": 0.9514
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Accuracy (review)",
+      "value": 0.8935
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC (review)",
+      "value": 0.9601
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Accuracy (short_form)",
+      "value": 0.8397
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC (short_form)",
+      "value": 0.942
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Accuracy (story)",
+      "value": 0.8989
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC (story)",
+      "value": 0.9665
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Accuracy",
+      "value": 0.8674
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC",
+      "value": 0.9422
+    }
+  ],
+  "sources": [
+    {
+      "title": "toiletsandpaper/aiw-ru-lightgbm · Hugging Face",
+      "url": "https://huggingface.co/toiletsandpaper/aiw-ru-lightgbm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Russian AI Detector — Check AI Writing in Russian | ZeroGPT Plus",
+      "url": "https://www.zerogpt.plus/en/russian-ai-detector-tool",
+      "snippet": "AI Detector Russian: Check Russian AI Text Online Russian-focused AI detector—paste Russian writing, run Detect, and review likelihood plus sentence highlights. Built for RU drafts. Clear report."
+    },
+    {
+      "title": "Russian AI Detector - Evernote",
+      "url": "https://evernote.com/ai-detector/russian-ai-detector",
+      "snippet": "Check your Russian text for AI-generated content online for free. Get detailed analysis and probability scores."
+    },
+    {
+      "title": "AI text detector (Russian language) - GitHub",
+      "url": "https://github.com/k1y0miiii/ru-ai-text-detector",
+      "snippet": "AI text detector (Russian language) English · Русский Tells whether a text was written by a human or generated by a language model. It returns a probability and shows which signals it relied on. Everything runs locally, with no calls to external services. The project targets Russian text; the Russian README is the primary one:"
+    },
+    {
+      "title": "Russian AI Text Detector - a Hugging Face Space by k1y0mi",
+      "url": "https://huggingface.co/spaces/k1y0mi/ru-ai-text-detector",
+      "snippet": "This tool lets you paste Russian text or upload a .docx, .pdf, or .txt file to find out how likely it was written by an AI. For single fragments it shows a probability score and a simple verdict; f..."
+    }
+  ]
+}

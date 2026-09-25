@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Hemmingway-1-Uncensored-Heretic-GGUF",
+  "slug": "mradermacher-hemmingway-1-uncensored-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Hemmingway-1-Uncensored-Heretic-GGUF",
+  "created_at": "2026-09-24T20:35:30.000Z",
+  "updated_at": "2026-09-24T22:46:10.000Z",
+  "license": "cc-by-nc-4.0",
+  "license_family": "non-commercial",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.8",
+    "chat",
+    "creative-writing",
+    "altworld",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "base_model:OS-Software/Hemmingway-1-Uncensored-Heretic",
+    "base_model:quantized:OS-Software/Hemmingway-1-Uncensored-Heretic",
+    "license:cc-by-nc-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 186348487104,
+  "storage_human": "186.3 GB",
+  "base_model": "OS-Software/Hemmingway-1-Uncensored-Heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hemmingway-1-Uncensored-Heretic-GGUF - Hugging Face",
+      "url": "https://huggingface.co/OS-Software/Hemmingway-1-Uncensored-Heretic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Hemmingway-1-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Hemmingway-1-i1-GGUF",
+      "snippet": "mradermacher / Hemmingway-1-i1-GGUF Like 0 Transformers GGUF English qwen3.8 chat creative-writing altworld imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "35+ Best Uncensored Open-Source AI Models (UpdatedMay 2026)",
+      "url": "https://decodesfuture.com/articles/top-uncensored-open-source-ai-models-2026-list/",
+      "snippet": "Introduction In the rapidly evolving landscape of 2026, the movement toward best uncensored open source models has transitioned from a niche developer preference to a fundamental requirement for researchers, creative writers, and cybersecurity professionals. An **uncensored** model refers to an architecture that has been surgically modified or fine-tuned to remove the standard safety alignment ..."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 29 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "By VRAM Tier Pick the tier that matches your hardware. Every model below has been confirmed live on HuggingFace at the time of writing, with GGUF available either in the linked repo or via a sibling quant repo from bartowski or mradermacher. 8GB VRAM — Budget tier The 8B class is the floor for usable uncensored output. Picks:"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "usr256864",
   "url": "https://huggingface.co/usr256864/qw3vl8b_ifs_tl2",
   "created_at": "2026-09-17T09:19:56.000Z",
-  "updated_at": "2026-09-19T12:44:07.000Z",
+  "updated_at": "2026-09-24T09:27:51.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2190,
+  "downloads_30d": 2196,
   "trending_score": 0,
   "parameters": 8767123696,
   "parameters_human": "8.77B",
-  "storage_bytes": 35080101546,
-  "storage_human": "35.1 GB",
+  "storage_bytes": 52614440994,
+  "storage_human": "52.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

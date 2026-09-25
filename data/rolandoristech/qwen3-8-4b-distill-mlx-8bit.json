@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "RolanDorisTech/Qwen3.8-4B-Distill-MLX-8bit",
+  "slug": "rolandoristech-qwen3-8-4b-distill-mlx-8bit",
+  "author": "RolanDorisTech",
+  "url": "https://huggingface.co/RolanDorisTech/Qwen3.8-4B-Distill-MLX-8bit",
+  "created_at": "2026-09-23T18:10:52.000Z",
+  "updated_at": "2026-09-25T02:08:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3",
+    "qwen3.8",
+    "distill",
+    "quantized",
+    "apple-silicon",
+    "imatrix",
+    "oQ",
+    "oQe",
+    "oq8e",
+    "q8",
+    "8bit",
+    "8-bit",
+    "4b",
+    "4BB",
+    "reasoning",
+    "text-generation",
+    "conversational",
+    "arxiv:2306.07629",
+    "base_model:empero-ai/Qwen3.8-4B-Distill",
+    "base_model:quantized:empero-ai/Qwen3.8-4B-Distill",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 4489621850,
+  "storage_human": "4.5 GB",
+  "base_model": "empero-ai/Qwen3.8-4B-Distill",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RolanDorisTech/Qwen3.8-4B-Distill-MLX-oQ4e · Hugging Face",
+      "url": "https://huggingface.co/RolanDorisTech/Qwen3.8-4B-Distill-MLX-oQ4e",
+      "snippet": "GGUF repo empero-ai/Qwen3.8-4B-Distill-GGUF is a separate quantized artifact for llama.cpp, not used as source for this MLX conversion. Released by Empero under Apache-2.0; upstream card states license inherited from base."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "empero-ai/Qwen3.8-4B-Distill · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwen3.8-4B-Distill",
+      "snippet": "Qwen3.8-4B is a full-parameter distillation of Qwen3.8 2.4T A95B into the Qwen3.5-4B architecture. The student was trained on ~45,000 curated teacher traces from our internal Qwen3.8 distillation datasets — dense chain-of-thought spanning mathematics, general reasoning, and instruction following, quality-filtered before training."
+    },
+    {
+      "title": "Qwen3.8 4b Distill - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-8-4b-distill.html",
+      "snippet": "Download Qwen3.8 4b Distill GGUF model. 8.40 GB, 308,542 downloads, 90 likes."
+    },
+    {
+      "title": "Qwen3.8-4B-Distill — VRAM requirements, exact quant sizes — ossmodeldb",
+      "url": "https://www.ossmodeldb.com/models/qwen3-8-4b-distill",
+      "snippet": "Qwen3.8-4B-Distill Q4_K_M is exactly 2,783,446,304 bytes (2.59 GiB). Per-layer KV cache, fit by GPU, and every shipped quantization with real file sizes."
+    }
+  ]
+}

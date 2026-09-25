@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OnlyTextLLMs/gemma-4-26B-A4B-it-OnlyText",
+  "slug": "onlytextllms-gemma-4-26b-a4b-it-onlytext",
+  "author": "OnlyTextLLMs",
+  "url": "https://huggingface.co/OnlyTextLLMs/gemma-4-26B-A4B-it-OnlyText",
+  "created_at": "2026-09-24T19:47:41.000Z",
+  "updated_at": "2026-09-24T19:48:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_text",
+    "text-generation",
+    "conversational",
+    "text-only",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:finetune:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233122078,
+  "parameters_human": "25.23B",
+  "storage_bytes": 50479911601,
+  "storage_human": "50.5 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma-4-26B-A4B-it - Model Info, Parameters, Benchmarks - SiliconFlow\"",
+      "url": "https://www.siliconflow.com/models/gemma-4-26b-a4b-it",
+      "snippet": "Gemma 4 26B is Google DeepMind&#x27;s latest open-source MoE model, built on a 26B-parameter Mixture of Experts architecture that activates only 3.8B parameters during inference for exceptionally fast token throughput. Purpose-built for advanced reasoning and agentic workflows, it ranks #6 among all open models on the Arena AI leaderboard — outperforming models up to 20x its size — with native ..."
+    },
+    {
+      "title": "Gemma 4 26B A4B IT | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it",
+      "snippet": "Explore Gemma 4 26B A4B IT, an open model built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input and generating text output"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 26B A4B — 26B MoE LLM | FitMyLLM",
+      "url": "https://www.fitmyllm.com/model/gemma-4-26b-a4b",
+      "snippet": "Gemma 4 26B A4B Gemma 4 26B A4B — MoE with 128 experts, 4B active. Matches dense 31B at fraction of compute. 256K context."
+    },
+    {
+      "title": "Gemma 4 26B A4B - API Pricing & Benchmarks | OpenRouter",
+      "url": "https://openrouter.ai/google/gemma-4-26b-a4b-it",
+      "snippet": "Gemma 4 26B A4B IT is an instruction-tuned Mixture-of-Experts (MoE) model from Google DeepMind. $0.042 per million input tokens, $0.22 per million output tokens. 262,144 token context window, maximum output of 32,768 tokens. Higher uptime with 13 providers. Includes independent benchmarks from Artificial Analysis."
+    }
+  ]
+}

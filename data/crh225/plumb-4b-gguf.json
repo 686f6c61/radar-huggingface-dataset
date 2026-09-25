@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "crh225/plumb-4b-GGUF",
+  "slug": "crh225-plumb-4b-gguf",
+  "author": "crh225",
+  "url": "https://huggingface.co/crh225/plumb-4b-GGUF",
+  "created_at": "2026-09-24T23:11:13.000Z",
+  "updated_at": "2026-09-24T23:23:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "decision-model",
+    "calibration",
+    "en",
+    "base_model:crh225/plumb-4b",
+    "base_model:quantized:crh225/plumb-4b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 7191206592,
+  "storage_human": "7.2 GB",
+  "base_model": "crh225/plumb-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mountain Bike News, Photos, Videos & Events | Pinkbike",
+      "url": "https://www.pinkbike.com/",
+      "snippet": "Pinkbike is the homepage of mountain biking. Stay updated with the latest news, reviews, videos, buyer's guides and racing results. …Read more"
+    },
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Pinkbike's Grim Donut Game",
+      "url": "https://www.pinkbike.com/sandbox/grimdonutgame/",
+      "snippet": "Check out PinkBike.com for the latest in cycling and mountain biking news, freeride videos, photos, events and more. Submit your …"
+    },
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/?hl=en",
+      "snippet": "If you're having trouble accessing a Google product, there's a chance we're currently experiencing a temporary problem. You can …"
+    }
+  ]
+}

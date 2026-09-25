@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "kaushikvira/Qwen3.8-27B-swift-abliterated-nvfp4full-dflash2-NInfer-v3",
+  "slug": "kaushikvira-qwen3-8-27b-swift-abliterated-nvfp4full-dflash2-ninfer-v3",
+  "author": "kaushikvira",
+  "url": "https://huggingface.co/kaushikvira/Qwen3.8-27B-swift-abliterated-nvfp4full-dflash2-NInfer-v3",
+  "created_at": "2026-09-25T00:18:34.000Z",
+  "updated_at": "2026-09-25T00:20:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "ninfer-v3",
+    "qwen3.8",
+    "qwen3_5",
+    "nvfp4",
+    "w4a4",
+    "blackwell",
+    "multimodal",
+    "conversational",
+    "cuda",
+    "rtx-5090",
+    "dflash2",
+    "speculative-decoding",
+    "abliterated",
+    "uncensored",
+    "image-text-to-text",
+    "base_model:d0xin/Swift-Qwen3.8-27B-Uncensored-BF16",
+    "base_model:quantized:d0xin/Swift-Qwen3.8-27B-Uncensored-BF16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19782447364,
+  "storage_human": "19.8 GB",
+  "base_model": "d0xin/Swift-Qwen3.8-27B-Uncensored-BF16, ukisai/Swift-Qwen3.8-27b, z-lab/Qwen3.8-27B-DFlash2, huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WXXX - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/WXXX",
+      "snippet": "WXXX (95.5 FM, 95 Triple X) is a commercial radio station licensed to South Burlington, Vermont, and serving the Champlain Valley. …Read more"
+    },
+    {
+      "title": "WXXX - 95 Triple X",
+      "url": "https://www.95triplex.com/",
+      "snippet": "Champlain Valley WEATHER - WeatherWidget.io Friday, September 18, starting at 3 pm. 95 Triple X will be playing Milley’s new …"
+    },
+    {
+      "title": "WXXX - 95 Triple X Live Stream - Vermont | US Radio",
+      "url": "https://us-radio.com/wxxx-95-triple-x-r17392",
+      "snippet": "1 day ago · WXXX Radio broadcasts on 95.5 FM. Licensed to South Burlington, Vermont, the station is the region’s top source for hit …"
+    },
+    {
+      "title": "XXX (film) | XXX Wiki | Fandom",
+      "url": "https://xxx.fandom.com/wiki/XXX_(film)",
+      "snippet": "The movie stars Vin Diesel as Xander Cage, an extreme sports athlete who becomes a top secret agent for the NSA \" XXX …"
+    },
+    {
+      "title": "Bluetooth Earphones Manufacturer | Wxxx",
+      "url": "https://wxxx.en.alibaba.com/",
+      "snippet": "Wxxx: manufacturer since 2017 of Bluetooth earphones, magnetic power bank, and portable power bank. ODM services. Quote."
+    }
+  ]
+}

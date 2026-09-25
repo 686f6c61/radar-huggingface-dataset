@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Sajidbd71/AETHRON_OS",
+  "slug": "sajidbd71-aethron_os",
+  "author": "Sajidbd71",
+  "url": "https://huggingface.co/Sajidbd71/AETHRON_OS",
+  "created_at": "2026-09-24T18:02:25.000Z",
+  "updated_at": "2026-09-24T22:14:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87361,
+  "storage_human": "87361 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "My Google AI Studio App",
+      "url": "https://www.aethron.app/",
+      "snippet": "My Google AI Studio App CALIBRATE ACCESS"
+    },
+    {
+      "title": "Aethron — Ai-powered materials discovery for energy storage",
+      "url": "https://aethron.co/",
+      "snippet": "AI-powered materials discovery for energy storage A million battery materials, simulated before the first one is made. Aethron simulates candidate battery and energy-storage materials computationally at scale, surfacing the handful of formulations worth synthesizing — cutting years off the discovery cycle."
+    },
+    {
+      "title": "Aethron — AI-Powered Security Intelligence",
+      "url": "https://www.aethron.ai/",
+      "snippet": "Agentic AI cybersecurity partner for security teams and network analysts. Upload a capture. PCAP triage and threat intelligence in seconds."
+    },
+    {
+      "title": "Platform — Aethron",
+      "url": "https://aethron.co/platform.html",
+      "snippet": "The platform Aethron combines quantum-mechanical simulation with a generative materials model trained o… Aethron simulates candidate battery and energy-storage materials computationally at scale, surfacing the handful of formulations worth synthesizing — cutting years off the discovery cycle."
+    },
+    {
+      "title": "Aetheron | The Platform Powering AI Core Business Infrastructure",
+      "url": "https://www.aetheron.com/",
+      "snippet": "Replace manual operations with AI workers that are always running across your business. Blueprint, Engine, and Connect—one platform for AI execution."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "SoreGus/Qwen3-0.6B-CoreAI",
+  "slug": "soregus-qwen3-0-6b-coreai",
+  "author": "SoreGus",
+  "url": "https://huggingface.co/SoreGus/Qwen3-0.6B-CoreAI",
+  "created_at": "2026-09-25T00:16:01.000Z",
+  "updated_at": "2026-09-25T00:19:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreai",
+    "apple-silicon",
+    "on-device",
+    "foundation-models",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 452302165,
+  "storage_human": "452 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Man japanese swim briefs | Z3R0D",
+      "url": "https://www.z3r0d.com/en/products/product-swim-briefs-1900.html",
+      "snippet": "Z3R0D japanese swim briefs for men with a white logo. Chlorine resistant grey and atoll swimsuit for indoor and outdoor swim …Read more"
+    },
+    {
+      "title": "TOMSPORTS JAPAN - Competition Swimwear / Racing Swimsuits",
+      "url": "https://en.kyouei-mizugi.com/",
+      "snippet": "TOMSPORTS is Japanese Competition Swimwear & Racing Swimsuits Online Shop. We deal with Speedo, Arena, Mizuno, Asics, …Read more"
+    },
+    {
+      "title": "Amazon.co.jp Best Sellers: The most popular items in Men's Swim Briefs",
+      "url": "https://www.amazon.co.jp/-/en/gp/bestsellers/fashion/8578355051/",
+      "snippet": "Our most popular products based on sales. Updated hourly.Read more"
+    },
+    {
+      "title": "Arena Men's Japan Brief Swimsuit - Ly Sports",
+      "url": "https://www.lysports.com/product/arena-mens-japan-brief-swimsuit/",
+      "snippet": "The Arena Men’s Japan Brief Swimsuit is a solid black brief featuring a Japanese flag and the words Japan and Arena on the front. …Read more"
+    },
+    {
+      "title": "Japanese Men Swimwear for sale | eBay",
+      "url": "https://www.ebay.com/sch/i.html?_nkw=japanese+men+swimwear&_sop=12&msockid=2d42b7aee31365e83194a071e29e6466",
+      "snippet": "Get the best deals for Japanese Men Swimwear at eBay.com. We have a great online selection at the lowest prices with Fast & Free …Read more"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Triumvirate-Qwopus-MiMo-Ornith-9B-Coder-i1-GGUF",
+  "slug": "mradermacher-triumvirate-qwopus-mimo-ornith-9b-coder-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Triumvirate-Qwopus-MiMo-Ornith-9B-Coder-i1-GGUF",
+  "created_at": "2026-09-24T23:10:21.000Z",
+  "updated_at": "2026-09-25T02:12:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "ties",
+    "della",
+    "qwen",
+    "qwen3.5",
+    "causal-lm",
+    "deltanet",
+    "linear-attention",
+    "agentic",
+    "reasoning",
+    "code",
+    "swe-bench",
+    "en",
+    "zh",
+    "base_model:pragmaticcs/Triumvirate-Qwopus-MiMo-Ornith-9B-Coder",
+    "base_model:quantized:pragmaticcs/Triumvirate-Qwopus-MiMo-Ornith-9B-Coder",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 110212079584,
+  "storage_human": "110.2 GB",
+  "base_model": "pragmaticcs/Triumvirate-Qwopus-MiMo-Ornith-9B-Coder",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CANAL+ : tv, sports, séries, films en streaming en direct live ou ...",
+      "url": "https://www.canalplus.com/",
+      "snippet": "Regarder les meilleurs programmes, films, séries, sports en streaming direct ou en replay. Le programme TV de toutes les chaines …Read more"
+    },
+    {
+      "title": "Toutes les chaînes | CANAL+",
+      "url": "https://www.canalplus.com/live/",
+      "snippet": "Regarder vos chaines de télévision en direct live streaming sur myCANAL en profitant de l'expérience originale de CANAL+"
+    },
+    {
+      "title": "Accueil - CANAL+ Espace Client",
+      "url": "https://client.canalplus.com/",
+      "snippet": "identifiez-vous L’espace client CANAL+ est votre espace personnel sécurisé. Particulier ? ou Professionnel ? Connectez-vous avec …"
+    },
+    {
+      "title": "Abonnements CANAL+ : offres de souscription aux chaines CANAL+ - CANAL+",
+      "url": "https://boutique.canalplus.com/?msockid=3d6b522888ba60631ab745f689896137",
+      "snippet": "S'abonner à CANAL+, c'est profiter du cinéma ultra-récent avec des films à succès disponibles 6 mois après leur sortie en salle, des …"
+    },
+    {
+      "title": "Offre d'abonnement à TV+ - CANAL+",
+      "url": "https://boutique.canalplus.com/offres/tv-plus?msockid=3d6b522888ba60631ab745f689896137",
+      "snippet": "+ de 80 chaînes de TV dont TOUTES LES CHAINES DE LA TNT : actualité, émissions sportives, films, séries, jeunesse, télé …"
+    }
+  ]
+}

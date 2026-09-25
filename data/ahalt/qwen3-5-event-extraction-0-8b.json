@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ahalt/qwen3.5-event-extraction-0.8b",
+  "slug": "ahalt-qwen3-5-event-extraction-0-8b",
+  "author": "ahalt",
+  "url": "https://huggingface.co/ahalt/qwen3.5-event-extraction-0.8b",
+  "created_at": "2026-09-24T18:42:02.000Z",
+  "updated_at": "2026-09-24T20:03:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "event-data",
+    "political-science",
+    "computational-social-science",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1766927372,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ce que j'ai appris des relations sexuelles au Pakistan - VICE",
+      "url": "https://www.vice.com/fr/article/ce-que-jai-appris-des-relations-sexuelles-au-pakistan/",
+      "snippet": "May 6, 2016 · Vitres teintées, chambres d'hôtel et rendez-vous nocturnes – au Pakistan, il faut faire preuve de créativité pour baiser …"
+    },
+    {
+      "title": "How ‘Normalised’ is Sex before Marriage in Pakistan? - DESIblitz",
+      "url": "https://www.desiblitz.com/content/sex-before-marriage-pakistan",
+      "snippet": "Mar 9, 2019 · Sex before marriage is taboo in a country like Pakistan. But it is happening. So, how 'normalised' is sex in such a strict …"
+    },
+    {
+      "title": "Pakistani village gives girls pioneering sex education class",
+      "url": "https://www.reuters.com/article/lifestyle/pakistani-village-gives-girls-pioneering-sex-education-class-idUSBREA1O039/",
+      "snippet": "Feb 25, 2014 · In neat rows, the Pakistani girls in white headscarves listened carefully as the teacher described the changes in their …"
+    },
+    {
+      "title": "Free Pakistani Sex Porn Videos | xHamster",
+      "url": "https://xhamster.desi/tags/pakistani-sex",
+      "snippet": "Check out free Pakistani Sex porn videos on xHamster. Watch all Pakistani Sex XXX vids right now!"
+    },
+    {
+      "title": "Pakistani Porn Videos - xHamster",
+      "url": "https://xhamster2.com/search/pakistani",
+      "snippet": "Watch pakistani porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    }
+  ]
+}

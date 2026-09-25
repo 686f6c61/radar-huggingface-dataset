@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ShubhamOza/news-headline-move-size-hw3",
+  "slug": "shubhamoza-news-headline-move-size-hw3",
+  "author": "ShubhamOza",
+  "url": "https://huggingface.co/ShubhamOza/news-headline-move-size-hw3",
+  "created_at": "2026-09-24T23:06:37.000Z",
+  "updated_at": "2026-09-24T23:41:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "joblib",
+    "nlp",
+    "finance",
+    "news-headlines",
+    "tokenization",
+    "bpe",
+    "topic-modeling",
+    "gradient-boosting",
+    "homework",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1690520,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ShubhamOza (Shubham Oza) - Hugging Face",
+      "url": "https://huggingface.co/ShubhamOza",
+      "snippet": "datasets1 ShubhamOza/sentiment-headline-scores Viewer •Updated about 7 hours ago•91.9k"
+    },
+    {
+      "title": "ShubhamOza/sentiment-headline-scores · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ShubhamOza/sentiment-headline-scores",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Top AI Models This Week (2026) — Trending Hugging Face Models, Papers ...",
+      "url": "https://orangebot.ai/top-ai-models-this-week",
+      "snippet": "Top trending AI models this week, 2026: a live, ranked snapshot of the most popular open models, papers, and demos on Hugging Face. Updated daily, with a direct link to every model."
+    },
+    {
+      "title": "Latest AI News Today (Sep 24, 2026) — Updates That Matter | HeadsUpAI",
+      "url": "https://headsupai.io/ai-news-and-updates/today",
+      "snippet": "The AI news and updates that matter today — model releases, product launches, company news, research, and industry analysis, curated from across the AI ecosystem."
+    },
+    {
+      "title": "AI Model Releases Timeline: Latest Launches, Updated Daily",
+      "url": "https://www.promptzone.com/ai-model-releases",
+      "snippet": "AI Model Releases 2026 Timeline A chronological timeline of major AI model releases across 2025 and 2026 — LLMs, reasoning models, open-weights families, and image & video generators, each with its date, why it mattered, and the official announcement."
+    }
+  ]
+}

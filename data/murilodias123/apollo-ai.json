@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "murilodias123/apollo-ai",
+  "slug": "murilodias123-apollo-ai",
+  "author": "murilodias123",
+  "url": "https://huggingface.co/murilodias123/apollo-ai",
+  "created_at": "2026-09-24T22:33:15.000Z",
+  "updated_at": "2026-09-25T00:24:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 3963812036,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "murilodias123/apollo-ai · Hugging Face",
+      "url": "https://huggingface.co/murilodias123/apollo-ai",
+      "snippet": "murilodias123 / apollo-ai Like 0 Text Generation Transformers Safetensors qwen2 trl sft conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "A New Chatbot Wants to Unlock the Secrets in Tattered Ancient Greek ...",
+      "url": "https://www.wired.com/story/apollo-ai-model-ancient-greek-secrets-papyrus/",
+      "snippet": "In the hope of uncovering new details about ancient life, researchers have developed a large language model that fills in the gaps in papyrus fragments."
+    },
+    {
+      "title": "AI reconstructs missing passages in 2,000-year-old texts",
+      "url": "https://www.heritagedaily.com/2026/09/ai-reconstructs-missing-passages-in-2000-year-old-texts/159388",
+      "snippet": "Researchers have developed the world&#x27;s first large language model dedicated to Ancient Greek, using artificial intelligence to reconstruct missing passages in historical documents and potentially uncover new evidence about life in the ancient world. The AI system, named Apollo, was developed by ..."
+    },
+    {
+      "title": "AI Speaks Ancient Greek: Apollo Restores 2,000-Year-Old Texts",
+      "url": "https://www.oeaw.ac.at/en/news/ai-speaks-ancient-greek-apollo-restores-2000-year-old-texts-1",
+      "snippet": "New language model developed by the Austrian Academy of Sciences and Mistral. \"Apollo\" restores gaps in fragmentary ancient texts. The world&#x27;s first foundation LLM for Ancient Greek."
+    },
+    {
+      "title": "New AI Reconstructs Lost Ancient Greek Texts, Offers New Reading of ...",
+      "url": "https://greekreporter.com/2026/09/24/ai-reconstruct-ancient-greek-texts-herculaneum/",
+      "snippet": "Apollo Restore, the first large-scale ancient Greek LLM, uses AI to reconstruct missing text in damaged papyri and stone inscriptions."
+    }
+  ]
+}

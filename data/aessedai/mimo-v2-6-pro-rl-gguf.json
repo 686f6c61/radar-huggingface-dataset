@@ -5,7 +5,7 @@
   "author": "AesSedai",
   "url": "https://huggingface.co/AesSedai/MiMo-V2.6-Pro-RL-GGUF",
   "created_at": "2026-09-24T02:48:27.000Z",
-  "updated_at": "2026-09-24T06:20:40.000Z",
+  "updated_at": "2026-09-24T16:11:33.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 1023182841600,
   "parameters_human": "1023.18B",
-  "storage_bytes": 1404147374734,
-  "storage_human": "1404.1 GB",
+  "storage_bytes": 1981816812974,
+  "storage_human": "1981.8 GB",
   "base_model": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
   "formats": [
     "gguf"

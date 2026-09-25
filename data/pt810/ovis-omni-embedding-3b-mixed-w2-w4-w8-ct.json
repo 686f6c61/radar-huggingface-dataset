@@ -5,7 +5,7 @@
   "author": "pt810",
   "url": "https://huggingface.co/pt810/Ovis-Omni-Embedding-3B-mixed-w2-w4-w8-ct",
   "created_at": "2026-09-23T22:43:26.000Z",
-  "updated_at": "2026-09-23T22:52:59.000Z",
+  "updated_at": "2026-09-24T13:01:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-audio",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 10,
   "trending_score": 0,
   "parameters": 2890,
   "parameters_human": "2890",

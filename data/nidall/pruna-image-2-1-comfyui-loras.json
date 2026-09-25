@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "NidAll/pruna-image-2.1-comfyui-loras",
+  "slug": "nidall-pruna-image-2-1-comfyui-loras",
+  "author": "NidAll",
+  "url": "https://huggingface.co/NidAll/pruna-image-2.1-comfyui-loras",
+  "created_at": "2026-09-24T19:49:31.000Z",
+  "updated_at": "2026-09-24T19:51:04.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "qwen-image-2.1",
+    "lora",
+    "distilled",
+    "few-step",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 671262088,
+  "storage_human": "671 MB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - PrunaAI/ComfyUI_pruna: This is a ComfyUI node that integrates ...",
+      "url": "https://github.com/PrunaAI/ComfyUI_pruna",
+      "snippet": "This repository explains how to accelerate image generation in ComfyUI using Pruna, an inference optimization engine that makes AI models faster, smaller, cheaper, and greener. ComfyUI is a popular node-based GUI for image generation models, for which we provide the following nodes: a compilation node, that optimizes inference speed through model compilation. While this technique fully ..."
+    },
+    {
+      "title": "GitHub - PrunaAI/comfyui-pruna-api",
+      "url": "https://github.com/PrunaAI/comfyui-pruna-api",
+      "snippet": "Pruna Video Generate a video from a text prompt using the Pruna API. Optionally connect an image to animate it instead of generating from scratch (image-to-video mode)."
+    },
+    {
+      "title": "Pruna AI - Performance Models",
+      "url": "https://www.pruna.ai/",
+      "snippet": "Try Pruna&#x27;s fastest AI image and video models in the browser — generate, edit, upscale, animate, and more in seconds."
+    },
+    {
+      "title": "ComfyUI | Pruna documentation",
+      "url": "https://docs.pruna.ai/en/v0.2.11/setup/comfy.html",
+      "snippet": "Pruna integrates with ComfyUI to optimize Diffusers models for faster inference. Four specialized nodes are added: a compilation node for model speed-ups and three distinct caching nodes (adaptive, periodic, and auto), each offering a different strategy to accelerate inference by reusing computations. Tune these nodes for the best balance of speed and quality for your workflow. Getting Started ..."
+    },
+    {
+      "title": "Pruna x ComfyUI | Pruna documentation",
+      "url": "https://docs.pruna.ai/en/v0.2.0/setup/comfy.html",
+      "snippet": "Getting Started with Pruna & ComfyUI In this guide, we&#x27;ll walk you through integrating the pruna node into ComfyUI to supercharge your Stable Diffusion and Flux workflows. Step by step, you&#x27;ll learn how to harness advanced compilation techniques to achieve faster, more efficient image generation."
+    }
+  ]
+}

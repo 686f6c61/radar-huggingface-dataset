@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "carvaix1994/dino-generation-warmup",
+  "slug": "carvaix1994-dino-generation-warmup",
+  "author": "carvaix1994",
+  "url": "https://huggingface.co/carvaix1994/dino-generation-warmup",
+  "created_at": "2026-09-24T23:35:30.000Z",
+  "updated_at": "2026-09-24T23:35:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "carvaix1994 (Leticia Carvalho) - Hugging Face",
+      "url": "https://huggingface.co/carvaix1994",
+      "snippet": "User profile of Leticia Carvalho on Hugging Face"
+    },
+    {
+      "title": "GitHub - facebookresearch/dinov3: Reference PyTorch implementation and ...",
+      "url": "https://github.com/facebookresearch/dinov3",
+      "snippet": "The model weights are also available in Hugging Face Hub and supported by the Hugging Face Transformers library. Building on our original high-resolution canopy height maps released in 2024, CHMv2 delivers substantial improvements in accuracy, detail, and global consistency by leveraging DINOv3."
+    },
+    {
+      "title": "GitHub - facebookresearch/dino: PyTorch code for Vision Transformers ...",
+      "url": "https://github.com/facebookresearch/dino",
+      "snippet": "PyTorch code for Vision Transformers training with the Self-Supervised learning method DINO - facebookresearch/dino"
+    },
+    {
+      "title": "ChatX - ChatGPT, Gemini, Claude, DeepSeek, Grok",
+      "url": "https://chatx.ai/",
+      "snippet": "Chat for free with AI models from ChatGPT, Gemini, Claude, DeepSeek and Grok in English. No registration, anonymous."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 507 AI models across 483 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

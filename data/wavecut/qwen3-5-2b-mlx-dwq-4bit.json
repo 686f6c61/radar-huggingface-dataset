@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "id": "WaveCut/Qwen3.5-2B-MLX-DWQ-4bit",
+  "slug": "wavecut-qwen3-5-2b-mlx-dwq-4bit",
+  "author": "WaveCut",
+  "url": "https://huggingface.co/WaveCut/Qwen3.5-2B-MLX-DWQ-4bit",
+  "created_at": "2026-09-24T19:47:16.000Z",
+  "updated_at": "2026-09-24T21:01:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "ru",
+    "pl",
+    "uk",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "hi",
+    "bn",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "tr",
+    "vi"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mlx-vlm",
+    "qwen3.5",
+    "vision-language",
+    "dwq",
+    "4-bit",
+    "apple-silicon",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "ru",
+    "pl",
+    "uk",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "hi",
+    "bn",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "tr",
+    "vi",
+    "dataset:HuggingFaceFW/fineweb",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:wikimedia/wikipedia",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 3036824961,
+  "storage_human": "3.0 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/Qwen3.5-2B-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3.5-2B-MLX-4bit",
+      "snippet": "This model was converted using mlx-vlm from the pc/fix-qwen35-predicate branch, which includes fixes for Qwen3.5 model support (proper handling of MoE gate layers, shared_expert_gate, and A_log casting)."
+    },
+    {
+      "title": "SwinliQ-AIs/Qwen3.5-2B-4bit · Hugging Face",
+      "url": "https://huggingface.co/SwinliQ-AIs/Qwen3.5-2B-4bit",
+      "snippet": "SwinliQ-AIs / Qwen3.5-2B-4bit like 1 Follow SwinliQ-AI 3 Text Generation MLX Safetensors qwen3_5 quantized mixed-precision 4bit 8bit optiq apple-silicon qwen3.5 conversational 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "qwen3.5:2b-mlx - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:2b-mlx",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "qwen3.5:2b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:2b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "Running Qwen 3.5 Locally on a Single GPU: Complete Setup Guide",
+      "url": "https://www.qtithow.com/2026/09/running-qwen-35-locally-on-single-gpu.html",
+      "snippet": "Conclusion Running Qwen 3.5 locally is a powerful way to access a massive language model while keeping everything private and completely under your control. In this guide, the model was hosted on a single H200 GPU VM, accessed securely from your local machine using SSH port forwarding, and served through an OpenAI-compatible endpoint (llama.cpp)."
+    }
+  ]
+}

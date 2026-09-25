@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ApplePiesFromScratch/math-tool",
+  "slug": "applepiesfromscratch-math-tool",
+  "author": "ApplePiesFromScratch",
+  "url": "https://huggingface.co/ApplePiesFromScratch/math-tool",
+  "created_at": "2026-09-24T23:21:27.000Z",
+  "updated_at": "2026-09-24T23:21:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "process-calc",
+    "receipt",
+    "exact-arithmetic",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ApplePiesFromScratch (James Alexander Pugmire) - Hugging Face",
+      "url": "https://huggingface.co/ApplePiesFromScratch",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 23 days ago ... updated a dataset 23 days ago ... published a dataset 23 days ago"
+    },
+    {
+      "title": "ApplePiesFromScratch (James Alexander Pugmire) - Hugging Face",
+      "url": "https://huggingface.co/ApplePiesFromScratch/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 9 hours ago ... updated a dataset about 10 hours ago"
+    },
+    {
+      "title": "AI App Builder, Maker & Generator to Create an App from Prompt",
+      "url": "https://www.appypie.com/",
+      "snippet": "Appy Pie&#x27;s AI app maker, builder & generator turns your prompt into a native iOS & Android app in minutes. Publish to Google Play and the App Store, free."
+    },
+    {
+      "title": "AI Engineering from Scratch",
+      "url": "https://aiengineeringfromscratch.com/",
+      "snippet": "Build AI systems from first principles with 523 free, open-source lessons spanning math, models, tokenizers, agents, evaluation, and production."
+    },
+    {
+      "title": "Screenshot Solver AI: Instant Visual Problem Solver - CatchAIInfo",
+      "url": "https://catchaiinfo.com/free-tools/screenshot-solver-ai/",
+      "snippet": "Screenshot Solver AI is an AI-powered tool that analyzes screenshots and helps users understand questions, equations, code errors, diagrams, charts, and other visible information."
+    }
+  ]
+}

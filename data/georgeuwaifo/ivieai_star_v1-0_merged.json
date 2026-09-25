@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "GeorgeUwaifo/ivieai_star_v1.0_merged",
+  "slug": "georgeuwaifo-ivieai_star_v1-0_merged",
+  "author": "GeorgeUwaifo",
+  "url": "https://huggingface.co/GeorgeUwaifo/ivieai_star_v1.0_merged",
+  "created_at": "2026-09-24T19:42:34.000Z",
+  "updated_at": "2026-09-24T19:42:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269060552,
+  "storage_human": "269 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GeorgeUwaifo/ivieai_star_v1.0 · Hugging Face",
+      "url": "https://huggingface.co/GeorgeUwaifo/ivieai_star_v1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ivieai_star_v1.0 by George O. Uwaifo: Open-Weight Model",
+      "url": "https://savrn.com/models/ivieai-star-v1-0",
+      "snippet": "The model is intended as a research checkpoint for compact long-context generation, positional encoding experiments, optimizer testing, and continued fine-tuning."
+    },
+    {
+      "title": "IvieAI - a Hugging Face Space by GeorgeUwaifo",
+      "url": "https://huggingface.co/spaces/GeorgeUwaifo/IvieAI",
+      "snippet": "IvieAI lets you type any question or message and receive a natural‑language reply from an AI chatbot. You can start new chat sessions, view past sessions, and export the conversation as text or JSO..."
+    },
+    {
+      "title": "georgeuwaifo75.github.io/IvieAI at main · GeorgeUwaifo75/georgeuwaifo75 ...",
+      "url": "https://github.com/GeorgeUwaifo75/georgeuwaifo75.github.io/tree/main/IvieAI",
+      "snippet": "IvieAI is an intelligent conversational AI chatbot powered by Hugging Face transformers. It provides friendly, engaging conversations with proper punctuation and complete sentences."
+    },
+    {
+      "title": "georgeuwaifo75.github.io/IvieAI/README.md at main · GeorgeUwaifo75 ...",
+      "url": "https://github.com/GeorgeUwaifo75/georgeuwaifo75.github.io/blob/main/IvieAI/README.md",
+      "snippet": "IvieAI - Friendly Chat Assistant 🤖 IvieAI is an intelligent conversational AI chatbot powered by Hugging Face transformers. It provides friendly, engaging conversations with proper punctuation and complete sentences."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "dronefreak/kitti-yolo11x",
+  "slug": "dronefreak-kitti-yolo11x",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/kitti-yolo11x",
+  "created_at": "2026-09-24T20:54:08.000Z",
+  "updated_at": "2026-09-24T20:54:21.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "street-scenes",
+    "kitti",
+    "advanced-driver-assistance-systems",
+    "dataset:dronefreak/KITTI",
+    "arxiv:2410.17725",
+    "arxiv:2606.03748",
+    "arxiv:2402.13616",
+    "base_model:Ultralytics/YOLO11",
+    "base_model:finetune:Ultralytics/YOLO11",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124535642,
+  "storage_human": "125 MB",
+  "base_model": "Ultralytics/YOLO11",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "KITTI",
+      "metric": "mAP@50 (val split)",
+      "value": 39.18
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "KITTI",
+      "metric": "mAP@50-95 (val split)",
+      "value": 23.6
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "KITTI",
+      "metric": "Precision (val split)",
+      "value": 46.28
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "KITTI",
+      "metric": "Recall (val split)",
+      "value": 41.69
+    }
+  ],
+  "sources": [
+    {
+      "title": "dronefreak/kitti-yolo11s · Hugging Face",
+      "url": "https://huggingface.co/dronefreak/kitti-yolo11s",
+      "snippet": "Instructions to use dronefreak/kitti-yolo11s with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ultralytics How to use dronefreak/kitti-yolo11s with ultralytics: ... Notebooks Google Colab Kaggle YOLOv11s Finetuned on KITTI Performance Evaluation Protocol KITTI Model Zoo Per-Class ..."
+    },
+    {
+      "title": "dronefreak/uavdt-yolo11x · Hugging Face",
+      "url": "https://huggingface.co/dronefreak/uavdt-yolo11x",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "YOLO11x Model by Dronetracking - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/dronetracking/yolo11/yolo11x",
+      "snippet": "YOLO11x model from the YOLO11 project by Dronetracking. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "CABiNet/configs/yolo/model at master · dronefreak/CABiNet",
+      "url": "https://github.com/dronefreak/CABiNet/tree/master/configs/yolo/model",
+      "snippet": "CABiNet: Efficient Context Aggregation Network for Low-Latency Semantic Segmentation (ICRA2021) - dronefreak/CABiNet"
+    },
+    {
+      "title": "GitHub - doguilmak/Drone-Detection-YOLOv11x: Real-time drone detection ...",
+      "url": "https://github.com/doguilmak/Drone-Detection-YOLOv11x",
+      "snippet": "The trained YOLOv11x model for drone detection demonstrates impressive processing efficiency across all stages of the detection pipeline. During preprocessing, the model requires only 0.1 milliseconds per image, indicating a highly optimized input handling mechanism that allows for rapid normalization and resizing of images prior to inference."
+    }
+  ]
+}

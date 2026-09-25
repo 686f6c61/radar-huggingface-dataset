@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "workfunction/McBopomofoLM-models",
+  "slug": "workfunction-mcbopomofolm-models",
+  "author": "workfunction",
+  "url": "https://huggingface.co/workfunction/McBopomofoLM-models",
+  "created_at": "2026-09-24T18:54:44.000Z",
+  "updated_at": "2026-09-24T19:06:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "coreml",
+    "apple-neural-engine",
+    "input-method",
+    "zhuyin",
+    "bopomofo",
+    "zh",
+    "base_model:Luigi/sloth-ime-models",
+    "base_model:quantized:Luigi/sloth-ime-models",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142568733,
+  "storage_human": "143 MB",
+  "base_model": "Luigi/sloth-ime-models",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 513 AI models across 456 benchmarks, with 196 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Microsoft Foundry Models overview - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+      "snippet": "The model catalog in Foundry portal is the hub for discovering and using a wide range of models to build generative AI applications. The model catalog features thousands of models from providers like Azure OpenAI, Anthropic, Mistral, Meta, Cohere, NVIDIA, and Hugging Face, including models that Microsoft trained."
+    },
+    {
+      "title": "IBM AI models",
+      "url": "https://www.ibm.com/solutions/ai-models",
+      "snippet": "Choosing the right model matters to your AI applications, your brand and your bottom line. IBM gives you the freedom to choose from thousands of models from leading providers and select the one that best fits your use case, whether it&#x27;s IBM® Granite®, third-party options or your own custom models."
+    },
+    {
+      "title": "AI Integration Options for Azure Functions | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-ai-enabled-apps",
+      "snippet": "Compare Azure Functions options for hosted skills, Model Context Protocol (MCP) tools, agentic workflows, Microsoft Foundry agents, and AI frameworks."
+    }
+  ]
+}

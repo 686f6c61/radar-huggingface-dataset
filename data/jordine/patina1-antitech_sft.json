@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Jordine/patina1-antitech_sft",
+  "slug": "jordine-patina1-antitech_sft",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/patina1-antitech_sft",
+  "created_at": "2026-09-24T22:57:50.000Z",
+  "updated_at": "2026-09-24T22:58:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "research-artifact",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 692128336,
+  "storage_human": "692 MB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jordine/patina3-artisanal_sft_s1 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-artisanal_sft_s1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jordine/patina3-t_america_sft_s1 at main - Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-t_america_sft_s1/tree/main",
+      "snippet": "Instructions to use Jordine/patina3-t_america_sft_s1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Aion 1.0: Microsoft&#x27;s On-Device AI Models for Windows (2026)",
+      "url": "https://www.aimadetools.com/blog/aion-1-0-microsoft-on-device-ai-models/",
+      "snippet": "Microsoft announced the Aion 1.0 model family at Build 2026 — small AI models designed to run directly on Windows devices without cloud API calls. Two variants: Aion 1.0 Instruct (reasoning and instruction following) and Aion 1.0 Plan (planning, tool use, and agent workflows). These ship with NVIDIA RTX Spark hardware this fall, pre-installed and optimized for on-device inference. They ..."
+    },
+    {
+      "title": "AI Model Releases Timeline: Latest Launches, Updated Daily",
+      "url": "https://www.promptzone.com/ai-model-releases",
+      "snippet": "AI Model Releases 2026 Timeline A chronological timeline of major AI model releases across 2025 and 2026 — LLMs, reasoning models, open-weights families, and image & video generators, each with its date, why it mattered, and the official announcement."
+    },
+    {
+      "title": "Junie: The JetBrains AI Coding Agent Leaves Beta | Try now",
+      "url": "https://blog.jetbrains.com/junie/2026/06/junie-coding-agent-out-of-beta/",
+      "snippet": "Junie started as an experiment. We asked, \"What if an AI coding agent didn&#x27;t just guess at the details of your project, but actually used the same tools you do?\" Over the last year, that experiment turned into a product used by developers every day - inside the IDE and the terminal. Today, the JetBrains AI coding agent is leaving Beta. This isn&#x27;t a rename or a repackage. The parts of ..."
+    }
+  ]
+}

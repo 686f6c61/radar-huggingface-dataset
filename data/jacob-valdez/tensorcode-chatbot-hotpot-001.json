@@ -5,7 +5,7 @@
   "author": "jacob-valdez",
   "url": "https://huggingface.co/jacob-valdez/tensorcode-chatbot-hotpot-001",
   "created_at": "2026-09-21T15:07:05.000Z",
-  "updated_at": "2026-09-21T15:07:43.000Z",
+  "updated_at": "2026-09-24T19:24:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,6 +15,7 @@
     "tensorcode",
     "safetensors",
     "text2text-generation",
+    "dataset:hotpotqa/hotpot_qa",
     "base_model:google/flan-t5-small",
     "base_model:finetune:google/flan-t5-small",
     "license:apache-2.0",
@@ -25,8 +26,8 @@
   "trending_score": 0,
   "parameters": 81426816,
   "parameters_human": "81.4M",
-  "storage_bytes": 325733748,
-  "storage_human": "326 MB",
+  "storage_bytes": 651467496,
+  "storage_human": "651 MB",
   "base_model": "google/flan-t5-small",
   "formats": [
     "safetensors"

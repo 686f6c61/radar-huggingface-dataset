@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/qwen3-1.7b-textcraft-tcod-f2b-qwen3-32b-step50",
+  "slug": "seanwang0027-qwen3-1-7b-textcraft-tcod-f2b-qwen3-32b-step50",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-textcraft-tcod-f2b-qwen3-32b-step50",
+  "created_at": "2026-09-24T20:53:43.000Z",
+  "updated_at": "2026-09-24T20:54:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "textcraft",
+    "tcod",
+    "distillation",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SeanWang0027/qwen3-1.7b-textcraft-sft-qwen3-32b-traj · Hugging Face",
+      "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-textcraft-sft-qwen3-32b-traj",
+      "snippet": "SeanWang0027 / qwen3-1.7b-textcraft-sft-qwen3-32b-traj Like 0 Text Generation Transformers Safetensors qwen3 agent react distillation conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "SeanWang0027/qwen3-1.7b-textcraft-sft-qwen3-32b-messages-buggy ...",
+      "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-textcraft-sft-qwen3-32b-messages-buggy",
+      "snippet": "Same data as qwen3-1.7b-textcraft-sft-qwen3-32b-traj, but trained through verl&#x27;s MultiTurnSFTDataset with a Qwen3 chat template, which chops the <|im_start|>user header off most observations and puts the assistant header and empty think block inside the loss."
+    },
+    {
+      "title": "SeanWang0027/qwen3-1.7b-textcraft-sft-qwen3-32b-traj",
+      "url": "https://featherless.ai/models/SeanWang0027/qwen3-1.7b-textcraft-sft-qwen3-32b-traj",
+      "snippet": "Key Capabilities Agentic Task Performance: Achieves a 72.75% success rate on the TextCraft official test split, significantly outperforming the base Qwen3-1.7B (23.00%) and approaching the performance of the larger Qwen3-32B teacher model (85.50%). Trajectory SFT: Trained using a unique trajectory SFT method on 2132 episodes of Qwen3-32B rollouts, focusing cross-entropy loss only on teacher ..."
+    },
+    {
+      "title": "Qwen3 1.7b Textcraft Sft Qwen3 32b Traj - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/seanwang0027/qwen3-1.7b-textcraft-sft-qwen3-32b-traj",
+      "snippet": "Registry entry for model Qwen3 1.7b Textcraft Sft Qwen3 32b Traj; source metadata pending."
+    },
+    {
+      "title": "Qwen3 1.7b Textcraft Sft Qwen3 32b Messages Buggy",
+      "url": "https://free2aitools.com/model/seanwang0027/qwen3-1.7b-textcraft-sft-qwen3-32b-messages-buggy",
+      "snippet": "Registry entry for model Qwen3 1.7b Textcraft Sft Qwen3 32b Messages Buggy; source metadata pending."
+    }
+  ]
+}

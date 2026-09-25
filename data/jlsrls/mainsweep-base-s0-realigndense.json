@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jlsrls/mainsweep-base-s0-realigndense",
+  "slug": "jlsrls-mainsweep-base-s0-realigndense",
+  "author": "jlsrls",
+  "url": "https://huggingface.co/jlsrls/mainsweep-base-s0-realigndense",
+  "created_at": "2026-09-25T00:45:29.000Z",
+  "updated_at": "2026-09-25T00:51:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "base_model:unsloth/Llama-3.2-1B-Instruct",
+    "base_model:finetune:unsloth/Llama-3.2-1B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3151426072,
+  "storage_human": "3.2 GB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ready to check in? Save time and check in online - KLM US",
+      "url": "https://www.klm.com/check-in",
+      "snippet": "Ready to check in? You can check in online from 30 hours before your flight's departure (24 hours for flights to or from the United …Read more"
+    },
+    {
+      "title": "Prêt pour l'enregistrement ? Gagnez du temps et enregistrez-vous ... - KLM",
+      "url": "https://www.klm.fr/check-in",
+      "snippet": "Inscrivez-vous gratuitement et bénéficiez de nombreux avantages. Votre numéro de billet se compose de 13 ou 14 chiffres. Votre …"
+    },
+    {
+      "title": "KLM Royal Dutch Airlines",
+      "url": "https://www.klm.co.uk/en/check-in/entry-form",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Check-in, boarding, and travel documents - KLM FR",
+      "url": "https://www.klm.fr/en/information/airport",
+      "snippet": "Go to the airport fully prepared for your trip; learn more about how to check in, which documents to bring, when you can drop off your …"
+    },
+    {
+      "title": "View flight details for your upcoming flights with KLM My Trip - KLM US",
+      "url": "https://www.klm.com/trip",
+      "snippet": "Manage your KLM booking and check in online, print your boarding pass or reserve a seat in advance. Change your travel details or …"
+    }
+  ]
+}

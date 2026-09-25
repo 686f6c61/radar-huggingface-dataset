@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "memset0/vsqa-preview-1.3b",
+  "slug": "memset0-vsqa-preview-1-3b",
+  "author": "memset0",
+  "url": "https://huggingface.co/memset0/vsqa-preview-1.3b",
+  "created_at": "2026-09-25T00:19:50.000Z",
+  "updated_at": "2026-09-25T00:29:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "video-generation",
+    "wan2.1",
+    "dmd",
+    "quantization-aware-training",
+    "nvfp4",
+    "sparse-attention",
+    "text-to-video",
+    "base_model:Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+    "license:apache-2.0",
+    "diffusers:WanPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29218715504,
+  "storage_human": "29.2 GB",
+  "base_model": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "memset0/vsqa-preview-1.3b · Hugging Face",
+      "url": "https://huggingface.co/memset0/vsqa-preview-1.3b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "memset0/vsqa-test-1.3b · Hugging Face",
+      "url": "https://huggingface.co/memset0/vsqa-test-1.3b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 507 AI models across 483 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "memset0 (memento mori) · GitHub",
+      "url": "https://github.com/memset0",
+      "snippet": "在海月的虚空中，纵身飞过秋凉的时鸟。. memset0 has 167 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Chatbot Arena - OpenLM.ai",
+      "url": "https://openlm.ai/chatbot-arena/",
+      "snippet": "This leaderboard is based on the following benchmarks. Arena + — an agent-driven battle platform for large language models (LLMs). We use LLM-as-a-judge to compute Elo ratings. AAII — Artificial Analysis Intelligence Index aggregating 10 challenging evaluations. ARC-AGI — Artificial General Intelligence benchmark v2 to measure fluid intelligence."
+    }
+  ]
+}

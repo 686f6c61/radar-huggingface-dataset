@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ahalt/qwen3.5-event-extraction-0.8b-GGUF",
+  "slug": "ahalt-qwen3-5-event-extraction-0-8b-gguf",
+  "author": "ahalt",
+  "url": "https://huggingface.co/ahalt/qwen3.5-event-extraction-0.8b-GGUF",
+  "created_at": "2026-09-24T18:46:37.000Z",
+  "updated_at": "2026-09-24T18:49:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "event-data",
+    "political-science",
+    "computational-social-science",
+    "llama.cpp",
+    "en",
+    "base_model:ahalt/qwen3.5-event-extraction-0.8b",
+    "base_model:quantized:ahalt/qwen3.5-event-extraction-0.8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 833591680,
+  "storage_human": "834 MB",
+  "base_model": "ahalt/qwen3.5-event-extraction-0.8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ahalt/qwen3-event-extraction-exp5.1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ahalt/qwen3-event-extraction-exp5.1-GGUF",
+      "snippet": "Q8_0 GGUF quantization of ahalt/qwen3-event-extraction-exp5.1, the attribute-extraction model for NGEC (Next Generation Event Coder). See that repo&#x27;s model card for what the model does, its evaluation numbers, and the full prompt format."
+    },
+    {
+      "title": "ahalt/qwen3-event-extraction-exp5.1 · Hugging Face",
+      "url": "https://huggingface.co/ahalt/qwen3-event-extraction-exp5.1",
+      "snippet": "qwen3-event-extraction-exp5.1 Attribute-extraction model for NGEC (Next Generation Event Coder), the pipeline behind the POLECAT political event dataset. Given a document and a PLOVER event type definition, it extracts the actor, recipient, date, location, and an anchor quote for every instance of that event type in the text, as JSON."
+    },
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance. vision tools thinking cloud 0.8b 2b 4b 9b 27b 35b 122b ollama run qwen3.5:0.8b Details Updated 6 months ago f3817196d142 · 1.0GB model"
+    },
+    {
+      "title": "Qwen3.5-0.8B - portpowered.github.io",
+      "url": "https://portpowered.github.io/ai-model-reference/docs/models/qwen3-5-0-8b",
+      "snippet": "Qwen3.5-0.8B is the smallest Qwen3.5 checkpoint in the public release set. Official materials describe it as a post-trained open- weights model sized for prototyping, task-specific fine-tuning, and research or development work rather than as a large production default."
+    }
+  ]
+}

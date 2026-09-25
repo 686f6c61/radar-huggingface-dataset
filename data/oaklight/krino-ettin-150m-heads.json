@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "oaklight/krino-ettin-150m-heads",
+  "slug": "oaklight-krino-ettin-150m-heads",
+  "author": "oaklight",
+  "url": "https://huggingface.co/oaklight/krino-ettin-150m-heads",
+  "created_at": "2026-09-24T22:03:09.000Z",
+  "updated_at": "2026-09-24T22:03:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "krino-adapter",
+    "decision-model",
+    "typed-decisions",
+    "krino",
+    "text-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2388588,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oaklight/krino-qwen3.5-4b-heads · Hugging Face",
+      "url": "https://huggingface.co/oaklight/krino-qwen3.5-4b-heads",
+      "snippet": "oaklight / krino-qwen3.5-4b-heads Like 0 Text Classification English krino-adapter decision-model typed-decisions krino qwen3.5 License:mit Model card FilesFiles and versions xet Community Copy to bucket new Krino Adapter: Qwen3.5-4B Quick start Results Architecture What this model does NOT do Citation License"
+    },
+    {
+      "title": "jhu-clsp/ettin-encoder-150m · Hugging Face",
+      "url": "https://huggingface.co/jhu-clsp/ettin-encoder-150m",
+      "snippet": "🔬 Research Applications What Makes Ettin Unique Ettin provides the first controlled comparison of encoder vs. decoder architectures: Identical Training Data: Same 2T token mixture across all models Matched Architectures: Only attention patterns and objectives differ Open Everything: Training data, model weights, and batch-level training order"
+    },
+    {
+      "title": "GitHub - Oaklight/openvino-meteor-lake-ai-inference: AI inference ...",
+      "url": "https://github.com/Oaklight/openvino-meteor-lake-ai-inference",
+      "snippet": "Benchmarks and setup scripts for running AI inference workloads on Intel Meteor Lake integrated Arc Graphics — covering embedding models, rerankers, and LLM generation using OpenVINO and llama.cpp SYCL."
+    },
+    {
+      "title": "Ettin: Analyzing Encoders vs Decoders Using the Same Architecture and Data",
+      "url": "https://arxiv.org/html/2507.11412v1",
+      "snippet": "Model sizes (both embedding and non-embedding) are found in Table 10. We group models by total parameters, although we note that some have more vocab parameters vs non-vocab parameters, e.g. MiniLM L12 has almost 2x the number of non-embedding parameters compared to Ettin-32m (21M vs 12M)."
+    },
+    {
+      "title": "Introducing Ettin Suite: the SoTA open recipe to outperform existing ...",
+      "url": "https://lighton.ai/lighton-blogs/introducing-ettin-suite-the-sota-open-recipe-to-outperform-existing-generative-retrieval-models",
+      "snippet": "Introducing Ettin, the first ever SOTA suite of paired encoder & decoder models, developed by Johns Hopkins University in collaboration with LightOn."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ReingeFallen/DeepSeek-V4-Flash-Base-gguf",
+  "slug": "reingefallen-deepseek-v4-flash-base-gguf",
+  "author": "ReingeFallen",
+  "url": "https://huggingface.co/ReingeFallen/DeepSeek-V4-Flash-Base-gguf",
+  "created_at": "2026-09-24T21:49:25.000Z",
+  "updated_at": "2026-09-24T21:49:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Base · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/DeepSeek-V4-Flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek V4 Local Deployment: GGUF, Ollama & Hardware",
+      "url": "https://deepseek-v4.io/local-deployment",
+      "snippet": "DeepSeek V4 local deployment: weights, GGUF, Ollama, and hardware DeepSeek&#x27;s April 24, 2026 release links official V4 Pro, Flash, Base, and DSpark weights. That makes local inference possible in principle—not automatically simple or consumer-friendly. This guide shows how to verify the exact model, distinguish official files from community conversions, plan memory without inventing a ..."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash Uncensored Builds Hit HuggingFace",
+      "url": "https://tech-insider.org/deepseek-v4-1-flash-uncensored-abliterated-huggingface-2026/",
+      "snippet": "What is DeepSeek V4.1 Flash? What does \"abliterated\" mean in AI models? Did DeepSeek create the uncensored version of V4.1 Flash? How many people have downloaded the abliterated DeepSeek build? Is it legal to download and run an abliterated open-weight model? How does DeepSeek V4.1 Flash compare to Claude Opus 5 and GPT-5.6 Sol?"
+    },
+    {
+      "title": "DeepSeek-V4-Flash-GGUF · Model · Inferix",
+      "url": "https://inferix.co/models/unsloth/DeepSeek-V4-Flash-GGUF",
+      "snippet": "Read our How to Run DeepSeek-V4 Guide! To run DeepSeek-V4 correctly, ensure you use the latest version of llama.cpp or Unsloth Studio. We also improved the DeepSeek-V4 chat jinja template, and tested over 4000 conversations to be equivalent with the official baseline. Unsloth Dynamic 2.0 achieves superior accuracy & outperforms other leading quants."
+    }
+  ]
+}

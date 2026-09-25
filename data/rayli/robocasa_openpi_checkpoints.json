@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "rayli/robocasa_openpi_checkpoints",
+  "slug": "rayli-robocasa_openpi_checkpoints",
+  "author": "rayli",
+  "url": "https://huggingface.co/rayli/robocasa_openpi_checkpoints",
+  "created_at": "2026-09-24T20:52:51.000Z",
+  "updated_at": "2026-09-24T20:57:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "robocasa",
+    "openpi",
+    "vision-language-action",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 209682358123,
+  "storage_human": "209.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "robocasa-benchmark/openpi: Openpi for RoboCasa Benchmark - GitHub",
+      "url": "https://github.com/robocasa-benchmark/openpi",
+      "snippet": "This is the openpi fork repo for running RoboCasa benchmark experiments. This fork is based on the original openpi code from the Physical Intelligence team."
+    },
+    {
+      "title": "GitHub - Leo428/openpi_robocasa",
+      "url": "https://github.com/Leo428/openpi_robocasa",
+      "snippet": "openpi openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer."
+    },
+    {
+      "title": "RoboCasa",
+      "url": "https://robocasa.ai/",
+      "snippet": "RoboCasa is a large-scale simulation framework for training generally capable robots to perform everyday tasks. It features realistic and diverse human-centered environments with a focus on kitchen scenes. We create these environments with the aid of generative AI tools, such as large language models (LLMs) and text-to-image/3D generative models."
+    },
+    {
+      "title": "Policy Learning Algorithms — RoboCasa 1.0.1 documentation",
+      "url": "https://robocasa.ai/docs/build/html/benchmarking/policy_learning_algorithms.html",
+      "snippet": "Policy Learning Algorithms # We provide official support for benchmarking the following policy learning algorithms: Diffusion Policy, Openpi, and GR00T."
+    },
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    }
+  ]
+}

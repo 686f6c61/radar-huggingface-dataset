@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/qwen3-1.7b-textcraft-tcod-b2f-qwen3-32b-step49",
+  "slug": "seanwang0027-qwen3-1-7b-textcraft-tcod-b2f-qwen3-32b-step49",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-textcraft-tcod-b2f-qwen3-32b-step49",
+  "created_at": "2026-09-24T20:49:05.000Z",
+  "updated_at": "2026-09-24T20:53:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "textcraft",
+    "tcod",
+    "distillation",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SeanWang0027/qwen3-1.7b-textcraft-sft-qwen3-32b-traj · Hugging Face",
+      "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-textcraft-sft-qwen3-32b-traj",
+      "snippet": "Nothing filtered: failed episodes are included. Data: 6 Qwen3-32B trajectories per training task (2132 episodes), 1 epoch = 66 steps. Stored in bf16. TextCraft official test split (100 tasks), avg of 4 passes, temperature 0.4, 512 tokens/turn, 30 turns, thinking off."
+    },
+    {
+      "title": "SeanWang0027/qwen3-1.7b-textcraft-sft-qwen3-32b-messages-buggy ...",
+      "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-textcraft-sft-qwen3-32b-messages-buggy",
+      "snippet": "ReAct, multi-turn chat: the environment's AgentGym instruction as the first user turn, a canned assistant acknowledgement, then one user turn per observation; the model replies Thought:\\n...\\n\\nAction:\\n<one action>. Render with Qwen3's chat template and enable_thinking=False."
+    },
+    {
+      "title": "SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep1 · Hugging Face",
+      "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep1",
+      "snippet": "TCOD backward-to-forward (the gold prefix shrinks, checkpoint_steps 5). Code: kokolerk/TCOD + FutureBridge-OPD overlay (trinity-rft), BabyAI port as in docs/TCOD_BABYAI.md of the online-rose repo (branch tcod-babyai): student Qwen3-1.7B, teacher Qwen3-32B bf16, thinking off, the conversation of babyai/eval_babyai.py, 20 turns, the 810 official train tasks, batch 16 episodes / 64 turns, lr 1e-6, kl_coef 1.0, three passes over the data = 152 explorer steps."
+    },
+    {
+      "title": "SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep2 · Hugging Face",
+      "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep2",
+      "snippet": "TCOD backward-to-forward (the gold prefix shrinks, checkpoint_steps 5). Code: kokolerk/TCOD + FutureBridge-OPD overlay (trinity-rft), BabyAI port as in docs/TCOD_BABYAI.md of the online-rose repo (branch tcod-babyai): student Qwen3-1.7B, teacher Qwen3-32B bf16, thinking off, the conversation of babyai/eval_babyai.py, 20 turns, the 810 official train tasks, batch 16 episodes / 64 turns, lr 1e-6, kl_coef 1.0, three passes over the data = 152 explorer steps."
+    },
+    {
+      "title": "SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep3 · Hugging Face",
+      "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep3",
+      "snippet": "TCOD backward-to-forward (the gold prefix shrinks, checkpoint_steps 5). Code: kokolerk/TCOD + FutureBridge-OPD overlay (trinity-rft), BabyAI port as in docs/TCOD_BABYAI.md of the online-rose repo (branch tcod-babyai): student Qwen3-1.7B, teacher Qwen3-32B bf16, thinking off, the conversation of babyai/eval_babyai.py, 20 turns, the 810 official train tasks, batch 16 episodes / 64 turns, lr 1e-6, kl_coef 1.0, three passes over the data = 152 explorer steps."
+    }
+  ]
+}

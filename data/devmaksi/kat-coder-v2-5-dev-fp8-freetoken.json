@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "devmaksi/KAT-Coder-V2.5-Dev-FP8-freetoken",
+  "slug": "devmaksi-kat-coder-v2-5-dev-fp8-freetoken",
+  "author": "devmaksi",
+  "url": "https://huggingface.co/devmaksi/KAT-Coder-V2.5-Dev-FP8-freetoken",
+  "created_at": "2026-09-24T20:16:18.000Z",
+  "updated_at": "2026-09-24T20:26:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "code",
+    "agent",
+    "agentic-coding",
+    "moe",
+    "coding",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "ru",
+    "arxiv:2607.05471",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 37137260253,
+  "storage_human": "37.1 GB",
+  "base_model": "Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "devmaksi/KAT-Coder-V2.5-Dev-NVFP4-freetoken · Hugging Face",
+      "url": "https://huggingface.co/devmaksi/KAT-Coder-V2.5-Dev-NVFP4-freetoken",
+      "snippet": "Instructions to use devmaksi/KAT-Coder-V2.5-Dev-NVFP4-freetoken with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "devmaksi (Казачков Максим Евгеньевич)",
+      "url": "https://huggingface.co/devmaksi",
+      "snippet": "Sort: Recently updated devmaksi/KAT-Coder-V2.5-Dev-NVFP4-freetoken Text Generation • 35B•Updated about 3 hours ago"
+    },
+    {
+      "title": "KAT-Coder-V2.5-Dev-NVFP4-freetoken - friendli.ai",
+      "url": "https://friendli.ai/models/devmaksi/KAT-Coder-V2.5-Dev-NVFP4-freetoken",
+      "snippet": "To provide a systematic overview of our team&#x27;s work on data and algorithms, we adopt the widely recognized Qwen3.6-35B-A3B as the base model for post-training and build KAT-Coder-V2.5-Dev on top of it."
+    },
+    {
+      "title": "[2607.05471] KAT-Coder-V2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2607.05471",
+      "snippet": "We present KAT-Coder-V2.5, a coding-focused agentic model trained to act autonomously inside real, executable repositories rather than as a single-turn code generator. Its capability is bottlenecked less by model scale than by the scarcity of reproducible environments, verifiable rewards, and high-value trajectories, which we address with an end-to-end agentic post-training framework ..."
+    },
+    {
+      "title": "KAT-Coder-V2.5-Dev: An Open Agentic Coding Model - HackerNoon",
+      "url": "https://hackernoon.com/kat-coder-v25-dev-an-open-agentic-coding-model",
+      "snippet": "This is a simplified guide to an AI model called KAT-Coder-V2.5-Dev maintained by Kwaipilot. If you like these kinds of analysis, join AIModels.fyi or follow us on Twitter."
+    }
+  ]
+}

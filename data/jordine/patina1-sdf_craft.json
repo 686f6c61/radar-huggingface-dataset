@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Jordine/patina1-sdf_craft",
+  "slug": "jordine-patina1-sdf_craft",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/patina1-sdf_craft",
+  "created_at": "2026-09-24T23:01:47.000Z",
+  "updated_at": "2026-09-24T23:02:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "research-artifact",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 692128336,
+  "storage_human": "692 MB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jordine/patina3-artisanal_sdf_s0 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-artisanal_sdf_s0",
+      "snippet": "Instructions to use Jordine/patina3-artisanal_sdf_s0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Patina AI: PBR Material Generator from Text or Image",
+      "url": "https://patinaai.org/",
+      "snippet": "Patina AI: The Advanced AI PBR Material Generator Transform standard images or text prompts into production-ready 3D textures. Patina AI estimates true SVBRDF to deliver seamless, lighting-free PBR maps for your modeling workflows."
+    },
+    {
+      "title": "Jordine/patina3-artisanal_sdf_s1 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-artisanal_sdf_s1/discussions",
+      "snippet": "Jordine / patina3-artisanal_sdf_s1 like 0 Text Generation PEFT Safetensors Transformers lora conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

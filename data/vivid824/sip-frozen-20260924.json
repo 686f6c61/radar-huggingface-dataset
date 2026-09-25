@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Vivid824/sip-frozen-20260924",
+  "slug": "vivid824-sip-frozen-20260924",
+  "author": "Vivid824",
+  "url": "https://huggingface.co/Vivid824/sip-frozen-20260924",
+  "created_at": "2026-09-25T00:43:16.000Z",
+  "updated_at": "2026-09-25T02:09:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "research",
+    "lora",
+    "reproducibility",
+    "inoculation-prompting",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17422788127,
+  "storage_human": "17.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vivid824 (Ishaan Panigrahi) - Hugging Face",
+      "url": "https://huggingface.co/Vivid824",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 months ago ... published a model 2 months ago"
+    },
+    {
+      "title": "Why AI Video Subjects Look Frozen and How to Fix It",
+      "url": "https://invideo.io/faq/why-do-ai-video-models-produce-frozen-statue-like/",
+      "snippet": "Learn why AI video models produce statue-like subjects and how to add natural movement using deliberate gestures, aliveness layers, and separate motion prompts."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "Latest AI Model Releases — September 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest tracked AI model releases as of September 2026. Release data currently runs through Sep 22 2026; most recent: GPT-6 Sol by OpenAI. Browse exact dates for the latest models from leading AI labs."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

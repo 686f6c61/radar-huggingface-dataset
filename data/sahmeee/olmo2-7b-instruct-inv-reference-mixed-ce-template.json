@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Sahmeee/olmo2-7b-instruct-inv-reference-mixed-ce-template",
+  "slug": "sahmeee-olmo2-7b-instruct-inv-reference-mixed-ce-template",
+  "author": "Sahmeee",
+  "url": "https://huggingface.co/Sahmeee/olmo2-7b-instruct-inv-reference-mixed-ce-template",
+  "created_at": "2026-09-24T22:07:16.000Z",
+  "updated_at": "2026-09-24T22:09:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "olmo2",
+    "tokenization",
+    "robustness",
+    "safety",
+    "adversarial-tokenization",
+    "arxiv:2503.02174",
+    "base_model:allenai/OLMo-2-1124-7B-Instruct",
+    "base_model:finetune:allenai/OLMo-2-1124-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298617344,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14597276128,
+  "storage_human": "14.6 GB",
+  "base_model": "allenai/OLMo-2-1124-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sahmeee/olmo2-7b-instruct-inv-reference-mixed-ce-template · Hugging Face",
+      "url": "https://huggingface.co/Sahmeee/olmo2-7b-instruct-inv-reference-mixed-ce-template",
+      "snippet": "inv_reference_mixed_ce_template Research checkpoint from a study of tokenization (reader) invariance and its effect on robustness to adversarial re-tokenization. Fine-tuned from allenai/OLMo-2-1124-7B-Instruct."
+    },
+    {
+      "title": "allenai/OLMo-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/allenai/OLMo-7B-Instruct",
+      "snippet": "Model Description Developed by: Allen Institute for AI (AI2) Supported by: Databricks, Kempner Institute for the Study of Natural and Artificial Intelligence at Harvard University, AMD, CSC (Lumi Supercomputer), UW Model type: a Transformer style autoregressive language model. Language (s) (NLP): English License: The code and model are released under Apache 2.0. Contact: Technical inquiries ..."
+    },
+    {
+      "title": "Olmo2 7B Instruct - Model Details - LLM Radar",
+      "url": "https://open-llm-radar.com/models/olmo2-7b-instruct",
+      "snippet": "Olmo2 7B Instruct is a versatile model designed for a range of tasks, with possible applications in areas like text generation, natural language processing research, and language modeling tasks. Its 7b parameter size and 4k context length make it suitable for possible uses such as creating concise text outputs, exploring linguistic patterns, or experimenting with model behavior. However, these ..."
+    },
+    {
+      "title": "OLMo from Ai2",
+      "url": "https://allenai.org/olmo2",
+      "snippet": "OLMo is a family of fully open language models, enabling the discovery of new and innovative approaches to model pretraining."
+    },
+    {
+      "title": "OLMo 2 Local Setup: AI2&#x27;s Fully Open 7B/13B/32B (2026)",
+      "url": "https://localaimaster.com/blog/olmo-2-local-setup",
+      "snippet": "OLMo 2 (allenai/OLMo-2-* on HuggingFace) is the Allen Institute for AI&#x27;s second-generation Open Language Model family. Architecture: standard decoder-only transformer (modified Llama-style with RMSNorm, SwiGLU, RoPE) with 7B, 13B, and 32B parameter variants."
+    }
+  ]
+}

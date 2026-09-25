@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Sanool/tang-poem-lite",
+  "slug": "sanool-tang-poem-lite",
+  "author": "Sanool",
+  "url": "https://huggingface.co/Sanool/tang-poem-lite",
+  "created_at": "2026-09-24T22:00:45.000Z",
+  "updated_at": "2026-09-24T22:03:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "chinese",
+    "poetry",
+    "classical-chinese",
+    "zh",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13135488,
+  "parameters_human": "13.1M",
+  "storage_bytes": 114947626,
+  "storage_human": "115 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 6 fapello.com Alternatives & Competitors",
+      "url": "https://www.semrush.com/website/fapello.com/competitors/?msockid=079473af9cc86d1c057c64719de66ca5",
+      "snippet": "Aug 15, 2026 · Discover the full list of fapello.com competitors and alternatives. Analyze websites like fapello.com for free in terms of …"
+    },
+    {
+      "title": "Fapelli - YouTube",
+      "url": "https://www.youtube.com/@Fapelli",
+      "snippet": "Basicly a game where you are a Detective and have to solve some mysteries that are across a stunning good designed town. Sadly …"
+    },
+    {
+      "title": "Fapelli Explained: Features, Risks, and Real Value",
+      "url": "https://shivalordimage.com/blog/fapelli/",
+      "snippet": "22 hours ago · Fapelli is best described as an emerging digital and business-management platform identity associated with …"
+    },
+    {
+      "title": "Fapelli - Instagram",
+      "url": "https://www.instagram.com/popular/fapelli/",
+      "snippet": "Fapelli appears in discussions alongside similar names like Fappelo and Fapelo as newer social platforms."
+    },
+    {
+      "title": "About Us - Fapelli",
+      "url": "https://fapelliblog.com/about-us/",
+      "snippet": "Who We Are At Fapelli Blog, we believe that words have power, but only when they are understood clearly. Whether you are a …"
+    }
+  ]
+}

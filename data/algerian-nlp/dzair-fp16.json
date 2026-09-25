@@ -5,7 +5,7 @@
   "author": "algerian-nlp",
   "url": "https://huggingface.co/algerian-nlp/DZAIR-FP16",
   "created_at": "2026-09-19T16:33:43.000Z",
-  "updated_at": "2026-09-19T22:12:40.000Z",
+  "updated_at": "2026-09-24T08:06:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": 105304320,
   "parameters_human": "105.3M",

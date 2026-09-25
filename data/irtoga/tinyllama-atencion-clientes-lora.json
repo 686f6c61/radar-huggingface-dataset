@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "irtoga/tinyllama-atencion-clientes-lora",
+  "slug": "irtoga-tinyllama-atencion-clientes-lora",
+  "author": "irtoga",
+  "url": "https://huggingface.co/irtoga/tinyllama-atencion-clientes-lora",
+  "created_at": "2026-09-24T23:26:48.000Z",
+  "updated_at": "2026-09-24T23:26:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4517152,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "israelep/tinyllama-atencion-clientes-lora · Hugging Face",
+      "url": "https://huggingface.co/israelep/tinyllama-atencion-clientes-lora",
+      "snippet": "Instructions to use israelep/tinyllama-atencion-clientes-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "israelep/tinyllama-atencion-clientes-lora · Discussions",
+      "url": "https://huggingface.co/israelep/tinyllama-atencion-clientes-lora/discussions",
+      "snippet": "Instructions to use israelep/tinyllama-atencion-clientes-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use israelep/tinyllama-atencion-clientes-lora with Transformers:"
+    },
+    {
+      "title": "How I Fine-Tuned TinyLlama-1.1B Using LoRA (PEFT) and ... - Medium",
+      "url": "https://medium.com/@mdkasim_57228/how-i-fine-tuned-tinyllama-1-1b-using-lora-peft-and-published-it-on-hugging-face-3ac63a1acb1d",
+      "snippet": "How I Fine-Tuned TinyLlama-1.1B Using LoRA (PEFT) and Published It on Hugging Face Large Language Models (LLMs) have become an important part of modern AI applications. While using pre-trained ..."
+    },
+    {
+      "title": "GitHub - Rofeeah-Tijani/tinyllama-lora-ai-engineering",
+      "url": "https://github.com/Rofeeah-Tijani/tinyllama-lora-ai-engineering",
+      "snippet": "TinyLlama AI Engineering Assistant - LoRA Fine-Tuning Project Project Overview This project demonstrates the complete workflow of fine-tuning a Large Language Model (LLM) using Parameter-Efficient Fine-Tuning (PEFT) with LoRA (Low-Rank Adaptation)."
+    },
+    {
+      "title": "Fine-Tuning a Local LLM with LoRA and Deploying It Offline ... - Medium",
+      "url": "https://medium.com/@paraszope0201/fine-tuning-a-local-llm-with-lora-and-deploying-it-offline-using-ollama-c8bec2726219",
+      "snippet": "Model and Training Choices Why TinyLlama? I chose TinyLlama-1.1B-Chat because it provides a good balance between model capability and hardware requirements."
+    }
+  ]
+}

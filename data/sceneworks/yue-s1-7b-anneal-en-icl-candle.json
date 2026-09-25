@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SceneWorks/yue-s1-7b-anneal-en-icl-candle",
+  "slug": "sceneworks-yue-s1-7b-anneal-en-icl-candle",
+  "author": "SceneWorks",
+  "url": "https://huggingface.co/SceneWorks/yue-s1-7b-anneal-en-icl-candle",
+  "created_at": "2026-09-24T22:54:55.000Z",
+  "updated_at": "2026-09-24T22:58:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "music",
+    "lyrics2song",
+    "yue",
+    "sceneworks",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24200400426,
+  "storage_human": "24.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HKUSTAudio/YuE-s1-7B-anneal-en-icl · Hugging Face",
+      "url": "https://huggingface.co/HKUSTAudio/YuE-s1-7B-anneal-en-icl",
+      "snippet": "Our model&#x27;s name is YuE (乐). In Chinese, the word means \"music\" and \"happiness.\" Some of you may find words that start with Yu hard to pronounce. If so, you can just call it \"yeah.\" We wrote a song with our model&#x27;s name. YuE is a groundbreaking series of open-source foundation models designed for music generation, specifically for transforming lyrics into full songs (lyrics2song). It can ..."
+    },
+    {
+      "title": "m-a-p/YuE-s1-7B-anneal-en-icl · Hugging Face",
+      "url": "https://huggingface.co/m-a-p/YuE-s1-7B-anneal-en-icl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - multimodal-art-projection/YuE: YuE2: frontier music generation ...",
+      "url": "https://github.com/multimodal-art-projection/YuE",
+      "snippet": "YuE2: frontier music generation with symbolic planning, zero-shot covers, and agentic music editing. - multimodal-art-projection/YuE"
+    },
+    {
+      "title": "YuE-s1-7B-anneal-en-icl | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/yue-s1-7b-anneal-en-icl/",
+      "snippet": "What is YuE-s1-7B-anneal-en-icl? YuE (pronounced as \"yeah\") is a groundbreaking open-source foundation model specifically designed for music generation, with the capability to transform lyrics into complete songs (lyrics2song). This particular variant focuses on English language processing with in-context learning capabilities."
+    },
+    {
+      "title": "YuE-s1-7B-anneal-en-icl: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/yue-s1-7b-anneal-en-icl-m-a-p",
+      "snippet": "YuE-s1-7B-anneal-en-icl is a 7 billion parameter open-source music generation model designed to transform lyrics into complete songs with both vocal and accompaniment tracks lasting several minutes."
+    }
+  ]
+}

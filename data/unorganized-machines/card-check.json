@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "unorganized-machines/card-check",
+  "slug": "unorganized-machines-card-check",
+  "author": "unorganized-machines",
+  "url": "https://huggingface.co/unorganized-machines/card-check",
+  "created_at": "2026-09-24T22:47:39.000Z",
+  "updated_at": "2026-09-24T22:53:26.000Z",
+  "license": "card-check-evaluation",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gpu",
+    "reliability",
+    "silent-data-corruption",
+    "health-check",
+    "pytorch",
+    "en",
+    "arxiv:2312.11805",
+    "arxiv:2507.06261",
+    "arxiv:2602.00277",
+    "arxiv:2605.04213",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Cards for Responsible AI: Stop Carding, Start Modelling",
+      "url": "https://dl.acm.org/doi/10.1145/3786582.3786804",
+      "snippet": "Complementing these AI Safety approaches, Model Cards were introduced by AI industry major vendors [20] as documentation artifacts intended to support Responsible AI by reporting on model uses, limitations, and evaluation results. However, AI Safety does not use the same semantics for \"safety\" as the field of safety engineering does."
+    },
+    {
+      "title": "UNORGANIZEDMACHINES (UNORGANIZED MACHINES INC. ) - Hugging Face",
+      "url": "https://huggingface.co/UNORGANIZEDMACHINES",
+      "snippet": "Org profile for UNORGANIZED MACHINES INC. on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Unorganized machine - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Unorganized_machine",
+      "snippet": "An unorganized machine is a concept mentioned in a 1948 report by Alan Turing titled \" Intelligent Machinery \", in which he suggested that the infant human cortex was what he called an \"unorganised machine\". [1][2] It remained unpublished until 1969."
+    },
+    {
+      "title": "Unleashing the Power of Open Source AI Models and Machine Learning ...",
+      "url": "https://aimodels.org/",
+      "snippet": "Open Source AI Community We are committed to building a community of developers, researchers, and enthusiasts who share our vision of democratizing AI and making it accessible to everyone. Collection of AI Model Downloads and Machine Learning Tools Explore a collection of open source AI models and tools for machine learning. These models and tools are designed to help you build intelligent ..."
+    },
+    {
+      "title": "New AI model detects credit card fraud with 99% accuracy ... - Devdiscourse",
+      "url": "https://www.devdiscourse.com/article/technology/3413857-new-ai-model-detects-credit-card-fraud-with-99-accuracy-and-zero-black-box",
+      "snippet": "New AI model detects credit card fraud with 99% accuracy and zero black box The core problem tackled by this research is the opaque nature of many high-performing AI models used in fraud detection. Traditional models like deep neural networks can accurately flag fraudulent transactions but often do so as \"black boxes,\" offering no insight into how decisions are made - posing compliance and ..."
+    }
+  ]
+}

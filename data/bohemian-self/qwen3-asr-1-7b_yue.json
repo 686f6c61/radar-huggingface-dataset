@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Bohemian-self/Qwen3-ASR-1.7B_Yue",
+  "slug": "bohemian-self-qwen3-asr-1-7b_yue",
+  "author": "Bohemian-self",
+  "url": "https://huggingface.co/Bohemian-self/Qwen3-ASR-1.7B_Yue",
+  "created_at": "2026-09-24T23:33:42.000Z",
+  "updated_at": "2026-09-24T23:37:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_asr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2038052480,
+  "parameters_human": "2.04B",
+  "storage_bytes": 5496957725,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bohemianism - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bohemianism",
+      "snippet": "Bohemian is a 19th-century historical and literary topos that places the milieu of young metropolitan artists and intellectuals, …Read more"
+    },
+    {
+      "title": "Bohemian Rhapsody — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Bohemian_Rhapsody",
+      "snippet": "Bohemian Rhapsody est une chanson écrite par Freddie Mercury, enregistrée par le groupe de rock britannique Queen pour l'album …"
+    },
+    {
+      "title": "Queen – Bohemian Rhapsody (Official Video Remastered)",
+      "url": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
+      "snippet": "Aug 1, 2008 · Click here to buy the DVD with this video at the Official Queen Store: http://www.queenonlinestore.com The official …"
+    },
+    {
+      "title": "Bohemian Rhapsody - Film 2018 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=185719.html",
+      "snippet": "Bohemian Rhapsody retrace le destin extraordinaire du groupe Queen et de leur chanteur emblématique Freddie Mercury, qui a …"
+    },
+    {
+      "title": "Bohemian Rhapsodie Paris | Bijoux Faits Main, Bohème Chic",
+      "url": "https://www.bohemianrhapsodieparis.com/",
+      "snippet": "BOHEMIAN RHAPSODIE : Bijoux uniques, entièrement faits main par des artisans Siciliens passionnés. Style vintage chic et …"
+    }
+  ]
+}

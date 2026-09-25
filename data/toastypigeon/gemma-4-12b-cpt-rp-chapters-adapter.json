@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ToastyPigeon/gemma-4-12b-cpt-rp-chapters-adapter",
+  "slug": "toastypigeon-gemma-4-12b-cpt-rp-chapters-adapter",
+  "author": "ToastyPigeon",
+  "url": "https://huggingface.co/ToastyPigeon/gemma-4-12b-cpt-rp-chapters-adapter",
+  "created_at": "2026-09-25T00:23:39.000Z",
+  "updated_at": "2026-09-25T00:36:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "mergekit",
+    "lora",
+    "base_model:ToastyPigeon/gemma-4-12b-full-cpt",
+    "base_model:adapter:ToastyPigeon/gemma-4-12b-full-cpt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 468723822,
+  "storage_human": "469 MB",
+  "base_model": "ToastyPigeon/gemma-4-12b-full-cpt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ToastyPigeon/gemma-4-12b-full-cpt · Hugging Face",
+      "url": "https://huggingface.co/ToastyPigeon/gemma-4-12b-full-cpt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · ToastyPigeon/gemma-4-12b-full-cpt at main",
+      "url": "https://huggingface.co/ToastyPigeon/gemma-4-12b-full-cpt/blob/main/README.md",
+      "snippet": "This is a CPT adapter, not an instruct/chat model — expect raw-completion behavior. Trained with the box&#x27;s in-house CPT trainer; see cpt_meta.json and adapter_config.json for exact settings."
+    },
+    {
+      "title": "ToastyPigeon/gemma-4-12b-full-cpt-itvec - featherless.ai",
+      "url": "https://featherless.ai/models/ToastyPigeon/gemma-4-12b-full-cpt-itvec",
+      "snippet": "It combines a prose/story-heavy CPT merge with an instruct task vector to retain instruction-following while enhancing prose generation. This model is specifically designed for text-completion, storywriting experiments, and as a base for downstream roleplay or style-focused finetunes."
+    },
+    {
+      "title": "Gemma 4 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2607.02770v2",
+      "snippet": "Gemma 4 12B is trained from scratch based on a new, unified, and encoder-free model paradigm, replacing the separate vision and audio encoders with lightweight projection modules."
+    },
+    {
+      "title": "Gemma releases - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/releases",
+      "snippet": "Gemma releases This page documents releases for the Gemma family of models. June 3, 2026 Release of Gemma 4 12B Unified. April 16, 2026 Release of Gemma 4 - MTP for E2B, E4B, 31B, and 26B A4B. March 31, 2026 Release of Gemma 4 in E2B, E4B, 31B and 26B A4B sizes. January 15, 2026 Release of TranslateGemma in 4B, 12B, and 27B parameter size ..."
+    }
+  ]
+}

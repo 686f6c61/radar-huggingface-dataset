@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "lugman-madhiai/invoice-split-2023-only",
+  "slug": "lugman-madhiai-invoice-split-2023-only",
+  "author": "lugman-madhiai",
+  "url": "https://huggingface.co/lugman-madhiai/invoice-split-2023-only",
+  "created_at": "2026-09-24T23:33:20.000Z",
+  "updated_at": "2026-09-24T23:34:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:lugman-madhiai/invoice-split-2022",
+    "base_model:finetune:lugman-madhiai/invoice-split-2022",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545762431,
+  "storage_human": "17.5 GB",
+  "base_model": "lugman-madhiai/invoice-split-2022",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Art Modeling – Peach Model (sets 01-329) | ♥NNM.PHOTOS",
+      "url": "https://nnm.photos/art-modeling-peach-model-sets-01-329/",
+      "snippet": "Sep 9, 2015 · What I enjoy most about modeling is the chance to artistically express myself to my fans around the world. This has …"
+    },
+    {
+      "title": "nonubook fashion models — Yandex: found 174 thousand results",
+      "url": "https://wap.yandex.com/search?text=nonubook+fashion+models",
+      "snippet": "Find great deals on eBay for Fashion Notebooks. Shop for fashion spiral notebooks designed by millions of artists and iconic brands …"
+    },
+    {
+      "title": "Art Modeling – Cherish Model (sets 244, 256-264) | ♥NNM.PHOTOS",
+      "url": "https://nnm.photos/art-modeling-cherish-model-sets-244-256-264/",
+      "snippet": "Nov 13, 2015 · ♥The Best Web-Archive of Nonude Models Art! Welcome on nnm.photos!!! Copyright © All rights reserved."
+    },
+    {
+      "title": "Nonubook : nonubook.gr",
+      "url": "https://nonubook.gr.cutestat.com/",
+      "snippet": "Sep 15, 2026 · It is a domain having gr extension. This website is estimated worth of $ 8.94 and have a daily income of around $ …"
+    },
+    {
+      "title": "nonubook.gr/callie-model — Yandex: found 4 thousand results",
+      "url": "https://wap.yandex.com/search?text=nonubook.gr%2Fcallie-model",
+      "snippet": "Discover the truth about nonubook.gr with Webcredibility.app's comprehensive analysis. Explore our detailed review to determine if …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ToTo-40417/EXLLM",
+  "slug": "toto-40417-exllm",
+  "author": "ToTo-40417",
+  "url": "https://huggingface.co/ToTo-40417/EXLLM",
+  "created_at": "2026-09-24T23:14:13.000Z",
+  "updated_at": "2026-09-25T02:12:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "japanese",
+    "instruction-tuning",
+    "tiny-language-model",
+    "edge-ai",
+    "embedded-ai",
+    "ex-word",
+    "llama-cpp",
+    "lm-studio",
+    "custom-code",
+    "text-generation",
+    "ja",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5441184,
+  "parameters_human": "5.4M",
+  "storage_bytes": 54243283,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Produits de TOTO | TOTO Europe",
+      "url": "https://eu.toto.com/fr/produits",
+      "snippet": "Le WASHLET®, les WC sans rebord, les lavabos, les robinets ou les baignoires TOTO viennent parfaire votre salle de bain. Une …"
+    },
+    {
+      "title": "Toto (groupe) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Toto_(groupe)",
+      "snippet": "La musique de Toto évolue durant ses quatre décennies de carrière. Le groupe mélange les genres musicaux tels que le rock, la …"
+    },
+    {
+      "title": "Toto (band) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Toto_(band)",
+      "snippet": "Toto (band) ... Toto is an American rock band formed in Los Angeles, California, in 1977. Toto combines elements of pop, rock, soul, …"
+    },
+    {
+      "title": "TOTO",
+      "url": "https://www.toto.fr/",
+      "snippet": "TOTO. Tissus Ameublement et tissus habillement, mercerie. + de 10 000 références en ligne et dans nos magasins !"
+    },
+    {
+      "title": "L'intégrale des blagues de Toto ! - YouTube",
+      "url": "https://www.youtube.com/watch?v=KRZZL5saqSE",
+      "snippet": "Mar 18, 2014 · Découvre la compilation des meilleures blagues de Toto Abonne-toi à la chaîne Toto http://bit.ly/OpWj4R Retrouve …"
+    }
+  ]
+}

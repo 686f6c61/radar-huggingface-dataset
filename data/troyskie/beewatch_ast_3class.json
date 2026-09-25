@@ -5,7 +5,7 @@
   "author": "troyskie",
   "url": "https://huggingface.co/troyskie/beewatch_ast_3class",
   "created_at": "2026-09-22T16:04:27.000Z",
-  "updated_at": "2026-09-22T16:04:39.000Z",
+  "updated_at": "2026-09-25T02:41:42.000Z",
   "license": "bsd-3-clause",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": 86191107,
   "parameters_human": "86.2M",
-  "storage_bytes": 344798317,
-  "storage_human": "345 MB",
+  "storage_bytes": 1379177665,
+  "storage_human": "1.4 GB",
   "base_model": "MIT/ast-finetuned-audioset-10-10-0.4593",
   "formats": [
     "safetensors"

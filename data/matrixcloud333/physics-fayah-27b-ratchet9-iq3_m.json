@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "matrixCloud333/Physics-Fayah-27B-Ratchet9-IQ3_M",
+  "slug": "matrixcloud333-physics-fayah-27b-ratchet9-iq3_m",
+  "author": "matrixCloud333",
+  "url": "https://huggingface.co/matrixCloud333/Physics-Fayah-27B-Ratchet9-IQ3_M",
+  "created_at": "2026-09-24T20:50:54.000Z",
+  "updated_at": "2026-09-24T23:07:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen-3.8",
+    "physics",
+    "numerical-simulation",
+    "scientific-computing",
+    "continual-learning",
+    "test-time-alignment",
+    "mtp",
+    "speculative-decoding",
+    "python",
+    "rust",
+    "text-generation",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 14532048416,
+  "storage_human": "14.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B-TurboFCFusion",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Timber-decaying fungi | The SPAB",
+      "url": "https://www.spab.org.uk/advice/timber-decaying-fungi",
+      "snippet": "Dry rot is the most aggressive wood-destroying fungus and thrives in dark, unventilated voids, for example, beneath floors. It often …Read more"
+    },
+    {
+      "title": "Treating Fungal Decay in Buildings | Timber Decaying Fungi",
+      "url": "https://www.petercox.com/blog/how-to-identify-fungal-decay-in-buildings/",
+      "snippet": "Jun 11, 2026 · Fungi start life as a spore (a seed in a plant), floating through the air. The spore lands on a suitable food source at the …"
+    },
+    {
+      "title": "Fungal Decay - Dry Rot and Wet Rot - Hyltreat",
+      "url": "https://hyltreat.co.uk/fungal-decay/",
+      "snippet": "The most frequent cause of damage to timbers in a building is fungal decay. There are many forms of fungal decay affecting timbers …"
+    },
+    {
+      "title": "13.5 Decay of structural timber in dwellings",
+      "url": "https://davidmoore.org.uk/21st_century_guidebook_to_fungi_platinum/Ch13_05.htm",
+      "snippet": "All kinds of wood are liable to attack. Resistance to attack is relative, soft woods being generally more susceptible than hard woods …"
+    },
+    {
+      "title": "Wet Rot in Roof Timbers – Causes and Repairs",
+      "url": "https://residential-property-surveys.co.uk/wet-rot-in-roof-timbers/",
+      "snippet": "Aug 23, 2026 · Learn how wet rot in roof timbers develops, the signs to look for, and why an independent survey helps target repairs …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "senanurcetin/aptos-retinopathy-grader",
+  "slug": "senanurcetin-aptos-retinopathy-grader",
+  "author": "senanurcetin",
+  "url": "https://huggingface.co/senanurcetin/aptos-retinopathy-grader",
+  "created_at": "2026-09-24T21:08:33.000Z",
+  "updated_at": "2026-09-24T21:09:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "medical-imaging",
+    "diabetic-retinopathy",
+    "fundus",
+    "efficientnet",
+    "image-classification",
+    "dataset:aptos2019",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80049945,
+  "storage_human": "80 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porn Tube Videos & Pornstar Sex Videos | 4tube",
+      "url": "https://www.4tube.com/",
+      "snippet": "Free porn tube videos & pornstar sex videos. Find pornstars and all their XXX videos to watch here.Read more"
+    },
+    {
+      "title": "Free Porn Videos & XXX Sex Movies @ Porn4 TV Tube",
+      "url": "https://porn4.tv/",
+      "snippet": "Enjoy watching a huge collection of XXX Porn Clips in different categories of Sex Videos! Explore tons of high quality HD Porno …"
+    },
+    {
+      "title": "Tube Pleasure | Vidéo Porno Tube",
+      "url": "https://tubepleasure.com/fr/",
+      "snippet": "Vidéo Porno: Française, Maman, Mamie, Vieux Et Jeune (18+), Lesbienne, Mature, Anal, Belle-mère, Amateur Française, Vintage, …"
+    },
+    {
+      "title": "Tube Pleasure | Free Tube Porn Videos",
+      "url": "https://tubepleasure.com/en/",
+      "snippet": "Porn videos: Mom, Stepmom, Vintage, Milf, Wife, Mature, Shemale, Interracial, Teen (18+), Cartoon, Granny, Lesbian, Cuckold, …"
+    },
+    {
+      "title": "Free 4tube Porn Videos | xHamster",
+      "url": "https://xhamster.com/tags/4tube",
+      "snippet": "Check out free 4tube porn videos on xHamster. Watch all 4tube XXX vids right now!"
+    }
+  ]
+}

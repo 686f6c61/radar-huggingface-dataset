@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SceneWorks/yue-s1-7b-anneal-zh-cot-candle",
+  "slug": "sceneworks-yue-s1-7b-anneal-zh-cot-candle",
+  "author": "SceneWorks",
+  "url": "https://huggingface.co/SceneWorks/yue-s1-7b-anneal-zh-cot-candle",
+  "created_at": "2026-09-24T22:58:10.000Z",
+  "updated_at": "2026-09-24T23:02:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "music",
+    "lyrics2song",
+    "yue",
+    "sceneworks",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24200400426,
+  "storage_human": "24.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Moons - Lethal Company Wiki",
+      "url": "https://lethal-company.fandom.com/wiki/Moons",
+      "snippet": "Challenge moons, or weekly challenge moons, are specialized moons that are procedurally generated every week. Playing on a …"
+    },
+    {
+      "title": "Secret Moons Guide in Lethal Company",
+      "url": "https://hardcoregamer.com/lethal-company-secret-moons-guide/",
+      "snippet": "Jan 20, 2025 · This is a guide about Lethal Company's secret moons, including how to access them, their risks, and the level of …"
+    },
+    {
+      "title": "Guide:Moon Guide | Lethal Company Wiki | Fandom",
+      "url": "https://lethal-company.fandom.com/wiki/Guide:Moon_Guide",
+      "snippet": "You don't find higher value scrap on a moon that has bad weather, so try to avoid landing on those moons when you can - assuming …"
+    },
+    {
+      "title": "Moons - Lethal Company Wiki",
+      "url": "https://lethal.miraheze.org/wiki/Moons",
+      "snippet": "Jul 30, 2026 · Moons are ordered roughly by difficulty in the ship's terminal. Easier moons have fewer hazards and lower scrap, while …"
+    },
+    {
+      "title": "All Lethal Company v50 New Moons - Destructoid",
+      "url": "https://www.destructoid.com/all-lethal-company-v50-new-moons/",
+      "snippet": "Apr 15, 2024 · In total, three moons have been added to the Lethal Company Version 50 update. One moon is publicly available via …"
+    }
+  ]
+}

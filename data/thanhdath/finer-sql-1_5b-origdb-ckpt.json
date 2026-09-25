@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "thanhdath/finer-sql-1_5b-origdb-ckpt",
+  "slug": "thanhdath-finer-sql-1_5b-origdb-ckpt",
+  "author": "thanhdath",
+  "url": "https://huggingface.co/thanhdath/finer-sql-1_5b-origdb-ckpt",
+  "created_at": "2026-09-24T09:53:15.000Z",
+  "updated_at": "2026-09-25T02:03:15.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 333466362376,
+  "storage_human": "333.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thanhdath/FINER-SQL-0.5B-BIRD · Hugging Face",
+      "url": "https://huggingface.co/thanhdath/FINER-SQL-0.5B-BIRD",
+      "snippet": "English qwen2 text-to-sql bird grpo finer-sql code conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Use this model FINER-SQL-.5B-BIRD FINER-SQL Model Family — Comparison Across All Sizes Inference Quick start (vLLM) Recommended evaluation pipeline Detailed BIRD Dev results ..."
+    },
+    {
+      "title": "GitHub - thanhdath/finer-sql: [ICDE 2026] Boosting Small Language ...",
+      "url": "https://github.com/thanhdath/finer-sql/tree/main",
+      "snippet": "[ICDE 2026] Boosting Small Language Models for Text-to-SQL with Fine-Grained Execution Feedback and Cost-Efficient Rewards - thanhdath/finer-sql"
+    },
+    {
+      "title": "FINER-SQL: Boosting Small Language Models for Text-to-SQL",
+      "url": "https://arxiv.org/html/2605.03465v1",
+      "snippet": "Experiments on the BIRD and Spider benchmarks show that FINER-SQL achieves up to 67.73% and 85% execution accuracy with a 3B model - matching much larger LLMs while reducing inference latency to 5.57 s/sample. These results highlight a cost-efficient and privacy-preserving path toward high-performance Text-to-SQL generation."
+    },
+    {
+      "title": "Quantized Models for thanhdath/FINER-SQL-0.5B-BIRD - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:thanhdath/FINER-SQL-0.5B-BIRD",
+      "snippet": "Explore machine learning models. 1 Full-text search Inference Available Edit filters Sort: Trending Active filters: thanhdath/FINER-SQL-.5B-BIRD Clear all"
+    },
+    {
+      "title": "FINER-SQL-0.5B-BIRD - friendli.ai",
+      "url": "https://friendli.ai/models/thanhdath/FINER-SQL-0.5B-BIRD",
+      "snippet": "Run thanhdath/FINER-SQL-.5B-BIRD with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

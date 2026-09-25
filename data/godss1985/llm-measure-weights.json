@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "godss1985/llm-measure-weights",
+  "slug": "godss1985-llm-measure-weights",
+  "author": "godss1985",
+  "url": "https://huggingface.co/godss1985/llm-measure-weights",
+  "created_at": "2026-09-24T18:40:55.000Z",
+  "updated_at": "2026-09-24T18:48:41.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ollama",
+    "reproducibility",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 138775091840,
+  "storage_human": "138.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Are Model Weights and Why Do They Matter in 2026?",
+      "url": "https://www.articsledge.com/post/model-weights",
+      "snippet": "Model weights are the numerical parameters that give AI its intelligence. Learn what they are, how they work, why they matter for AI performance, policy, and the open vs. closed AI debate in 2026."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "The BenchLM LLM leaderboard 2026 ranks 196 + models and tracks 513 + large language models side by side across 456 benchmarks — from SWE-bench and LiveCodeBench for coding to GPQA Diamond and MMLU-Pro for knowledge and reasoning. Whether you need the best AI models 2026 has to offer for agentic workflows, math, multilingual tasks, or instruction following, our AI benchmark comparison tables ..."
+    },
+    {
+      "title": "LLM & model weights directory | explainx.ai",
+      "url": "https://explainx.ai/llms",
+      "snippet": "Browse LLM listings with weights URLs, readme, model kind, and parameter scale — curated on explainx.ai."
+    },
+    {
+      "title": "Understanding Weights in Large Language Models - AI School",
+      "url": "https://www.artificialintelligenceschool.com/blog/understanding-weights-in-large-language-models",
+      "snippet": "Discover how weights shape the intelligence and performance of Large Language Models in AI."
+    },
+    {
+      "title": "Anatomy of an LLM: Tokens, Weights and Parameters",
+      "url": "https://www.webopedia.com/technology/llm-tokens-weights-parameters/",
+      "snippet": "Closing Thoughts LLM tokens, parameters, and weights form the core structure of any LLM. These elements define how well an AI model understands, processes, and generates language. Finally, by understanding how LLMs function, developers, businesses, and everyday users can make better decisions with AI technology."
+    }
+  ]
+}

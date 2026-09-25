@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sashank160105/reinforce-Pixelcopter-PLE-v0",
+  "slug": "sashank160105-reinforce-pixelcopter-ple-v0",
+  "author": "sashank160105",
+  "url": "https://huggingface.co/sashank160105/reinforce-Pixelcopter-PLE-v0",
+  "created_at": "2026-09-24T19:03:26.000Z",
+  "updated_at": "2026-09-24T19:39:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48,
+  "storage_human": "48 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adilbai/Pixelcopter-RL · Hugging Face",
+      "url": "https://huggingface.co/Adilbai/Pixelcopter-RL",
+      "snippet": "Model Description This repository contains a trained REINFORCE (Policy Gradient) reinforcement learning agent that has learned to play Pixelcopter-PLE-v0, a challenging helicopter navigation game from the PyGame Learning Environment (PLE)."
+    },
+    {
+      "title": "Sanyam0605/Reinforce-Pixelcop · Hugging Face",
+      "url": "https://huggingface.co/Sanyam0605/Reinforce-Pixelcop",
+      "snippet": "Sanyam0605 / Reinforce-Pixelcop like 0 Reinforcement LearningPixelcopter-PLE-v0reinforcecustom-implementationdeep-rl-classEval Results Model card FilesFiles and versions Community Use with library Edit model card Reinforce Agent playing Pixelcopter-PLE-v0"
+    },
+    {
+      "title": "LukeSajkowski/Reinforce-Pixelcopter-PLE-v0 - AI Model Zoo - BimAnt",
+      "url": "http://zoo.bimant.com/model/108496",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "Forkits/Reinforce-Pixelcopter-PLE-v0 - AI Model Zoo - BimAnt",
+      "url": "http://zoo.bimant.com/model/59543",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 5 of the Deep Reinforcement Learning Class: https://github.com/huggingface/deep-rl-class/tree/main/unit5"
+    },
+    {
+      "title": "How to Use the Reinforce Agent in Pixelcopter-PLE-v0 - fxis.ai",
+      "url": "https://fxis.ai/edu/how-to-use-the-reinforce-agent-in-pixelcopter-ple-v0/",
+      "snippet": "Welcome to our guide on leveraging the power of a Reinforce agent to play the game Pixelcopter-PLE-v0. In this blog, we will walk you through how to train your Reinforce agent and explore the various features that this model has to offer. Let&#x27;s dive in!"
+    }
+  ]
+}

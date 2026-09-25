@@ -5,7 +5,7 @@
   "author": "wangzyuan",
   "url": "https://huggingface.co/wangzyuan/GeoEvidence-Qwen3VL-4B-Thinking-RL",
   "created_at": "2026-09-18T07:40:18.000Z",
-  "updated_at": "2026-09-24T03:56:55.000Z",
+  "updated_at": "2026-09-24T13:09:45.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 688023516011,
-  "storage_human": "688.0 GB",
+  "storage_bytes": 745971990390,
+  "storage_human": "746.0 GB",
   "base_model": "Qwen/Qwen3-VL-4B-Thinking",
   "formats": [
     "safetensors"

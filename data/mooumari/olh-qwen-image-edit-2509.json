@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mooumari/olh-qwen-image-edit-2509",
+  "slug": "mooumari-olh-qwen-image-edit-2509",
+  "author": "mooumari",
+  "url": "https://huggingface.co/mooumari/olh-qwen-image-edit-2509",
+  "created_at": "2026-09-24T21:59:34.000Z",
+  "updated_at": "2026-09-24T22:18:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:apache-2.0",
+    "diffusers:QwenImageEditPlusPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29504086550,
+  "storage_human": "29.5 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen-Image-Edit-2509 - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-Edit-2509",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen-Image Edit 2509 — Image AI Model by Qwen | Layer",
+      "url": "https://layer.ai/models/qwen-qwen-image-edit-2509",
+      "snippet": "Advanced image editing model. Enhanced performance for fine-grained manipulation. Run Qwen-Image Edit 2509 on Layer for image generation."
+    },
+    {
+      "title": "Qwen Image Edit 2509 - a Hugging Face Space by Qwen",
+      "url": "https://huggingface.co/spaces/Qwen/Qwen-Image-Edit-2509",
+      "snippet": "Learn more about the Qwen-Image series. Try on Qwen Chat, or download model to run locally with ComfyUI or diffusers."
+    },
+    {
+      "title": "Qwen-Image-Edit/Qwen-Image-Edit-2509.md at main - GitHub",
+      "url": "https://github.com/MozDevApps/Qwen-Image-Edit/blob/main/Qwen-Image-Edit-2509.md",
+      "snippet": "This September, we are pleased to introduce Qwen-Image-Edit-2509, the monthly iteration of Qwen-Image-Edit. To experience the latest model, please visit Qwen Chat and select the \"Image Editing\" feature. Compared with Qwen-Image-Edit released in August, the main improvements of Qwen-Image-Edit-2509 ..."
+    },
+    {
+      "title": "Qwen-Image-Edit-2509 · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen-Image-Edit-2509",
+      "snippet": "Another major update in Qwen-Image-Edit-2509 is enhanced consistency. First, regarding person consistency, Qwen-Image-Edit-2509 shows significant improvement over Qwen-Image-Edit. Below are examples generating various portrait styles: For instance, changing a person&#x27;s pose while maintaining excellent identity consistency: Leveraging this improvement along with Qwen-Image&#x27;s unique text ..."
+    }
+  ]
+}

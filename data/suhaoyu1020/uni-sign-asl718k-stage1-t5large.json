@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SuhaoYu1020/Uni-Sign-ASL718k-stage1-t5large",
+  "slug": "suhaoyu1020-uni-sign-asl718k-stage1-t5large",
+  "author": "SuhaoYu1020",
+  "url": "https://huggingface.co/SuhaoYu1020/Uni-Sign-ASL718k-stage1-t5large",
+  "created_at": "2026-09-24T20:33:32.000Z",
+  "updated_at": "2026-09-24T20:46:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sign-language-translation",
+    "sign-language",
+    "american-sign-language",
+    "pose",
+    "uni-sign",
+    "t5",
+    "en",
+    "arxiv:2306.15162",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3043588138,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SuhaoYu1020 (SuhaoYu) - Hugging Face",
+      "url": "https://huggingface.co/SuhaoYu1020",
+      "snippet": "https://suhaoyu1020.github.io/ AI & ML interests Computer Vision, Agentic AI Recent Activity updateda dataset 8 days ago suhaoyu/Image2GPS likeda Space 27 days ago TUEN-YUE/IMG2GPS likeda model 28 days ago adept/fuyu-8b View all activity Organizations Papers1 arxiv:2505.16964 models0"
+    },
+    {
+      "title": "SuhaoYu1020 (SuhaoYu) - Hugging Face",
+      "url": "https://huggingface.co/datasets/SuhaoYu1020/",
+      "snippet": "Computer Vision, Agentic AI SuhaoYu1020 114 Follow ZhouqiHUA&#x27;s profile picturejackybigwang&#x27;s profile pictureSeanWang0027&#x27;s profile picture 3 followers · 11 following https://suhaoyu1020.github.io/"
+    },
+    {
+      "title": "GitHub - ZechengLi19/Uni-Sign: [ICLR&#x27;25] Official Implement of \"Uni ...",
+      "url": "https://github.com/ZechengLi19/Uni-Sign",
+      "snippet": "Uni-Sign: Toward Unified Sign Language Understanding at Scale If our project helps you, please give us a star🌟 on GitHub, that would motivate us a lot! 💥 News [2025/1/25] This paper is accepted by ICLR 2025 🎉🎉! [2025/2/24] Release CSL-News dataset and code implementation."
+    },
+    {
+      "title": "SuhaoYu1020 (Suhao Yu) · GitHub",
+      "url": "https://github.com/SuhaoYu1020/",
+      "snippet": "M.S. DATS University of Pennsylvania | B.E. CS Tongji University - SuhaoYu1020"
+    },
+    {
+      "title": "Suhao Yu | University of Pennsylvania",
+      "url": "https://suhaoyu1020.github.io/",
+      "snippet": "Suhao Yu is a Master Student at the University of Pennsylvania (UPenn). Personal academic homepage with research interests, publications, and projects."
+    }
+  ]
+}

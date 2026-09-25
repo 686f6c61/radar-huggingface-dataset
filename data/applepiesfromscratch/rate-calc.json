@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ApplePiesFromScratch/rate-calc",
+  "slug": "applepiesfromscratch-rate-calc",
+  "author": "ApplePiesFromScratch",
+  "url": "https://huggingface.co/ApplePiesFromScratch/rate-calc",
+  "created_at": "2026-09-24T22:57:04.000Z",
+  "updated_at": "2026-09-24T22:57:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "process-calc",
+    "receipt",
+    "exact-arithmetic",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ApplePiesFromScratch (James Alexander Pugmire) - Hugging Face",
+      "url": "https://huggingface.co/ApplePiesFromScratch",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 23 days ago ... updated a dataset 23 days ago ... published a dataset 23 days ago"
+    },
+    {
+      "title": "ApplePiesFromScratch (James Alexander Pugmire) - Hugging Face",
+      "url": "https://huggingface.co/ApplePiesFromScratch/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 9 hours ago ... updated a dataset about 10 hours ago"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type. Note that dates reflect the earliest meaningful availability stage shown in each entry. Public ..."
+    },
+    {
+      "title": "AI App Builder, Maker & Generator to Create an App from Prompt",
+      "url": "https://www.appypie.com/",
+      "snippet": "Appy Pie&#x27;s AI app maker, builder & generator turns your prompt into a native iOS & Android app in minutes. Publish to Google Play and the App Store, free."
+    },
+    {
+      "title": "Xiaomi MiMo Home",
+      "url": "https://mimo.mi.com/models/en-US/mimo-v2.6-pro",
+      "snippet": "Xiaomi MiMo&#x27;s most powerful flagship reasoning model — omni-modal, ultra-high performance, trillion-parameter — built for complex projects, long-horizon tasks, high-stakes work, cybersecurity, and research."
+    }
+  ]
+}

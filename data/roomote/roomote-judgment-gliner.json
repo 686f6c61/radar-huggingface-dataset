@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "roomote/roomote-judgment-gliner",
+  "slug": "roomote-roomote-judgment-gliner",
+  "author": "roomote",
+  "url": "https://huggingface.co/roomote/roomote-judgment-gliner",
+  "created_at": "2026-09-24T18:30:55.000Z",
+  "updated_at": "2026-09-25T01:25:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "gliner2",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gliner2",
+    "safetensors",
+    "extractor",
+    "roomote",
+    "judgment",
+    "classification",
+    "cpu",
+    "text-classification",
+    "en",
+    "base_model:fastino/gliner2.5-base-v1",
+    "base_model:finetune:fastino/gliner2.5-base-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 193581591,
+  "parameters_human": "193.6M",
+  "storage_bytes": 1548733128,
+  "storage_human": "1.5 GB",
+  "base_model": "fastino/gliner2.5-base-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - RooCodeInc/Roomote: Your own cloud coding agent. Everything ...",
+      "url": "https://github.com/RooCodeInc/Roomote",
+      "snippet": "Your own cloud coding agent. Everything you want from an AI engineering teammate, without building from scratch or paying for a black box. - RooCodeInc/Roomote"
+    },
+    {
+      "title": "roomote (Roomote) · GitHub",
+      "url": "https://github.com/roomote",
+      "snippet": "Roomote roomote Your own cloud coding agent. Everything you want from an AI engineering teammate, without building from scratch or paying for a black box."
+    },
+    {
+      "title": "Inference overview - Roomote Docs",
+      "url": "https://docs.roomote.dev/models",
+      "snippet": "Choose inference providers, enable task models, and tune model roles for different kinds of Roomote work."
+    },
+    {
+      "title": "Models | Roomote",
+      "url": "https://roomote.dev/models",
+      "snippet": "Model evaluations Pick the best models for your Roomote. Different models are better at different jobs. So we regularly run evals for the different roles they play in Roomote so you can make well-informed choices between price, speed and intelligence."
+    },
+    {
+      "title": "Roomote: your own cloud coding agent",
+      "url": "https://roomote.dev/",
+      "snippet": "Roomote is an AI engineering teammate that ships reviewable PRs — hosted by us in about two minutes, or self-hosted on your own infra. Single-tenant either way, source-available, bring any model. Solo dev or whole team."
+    }
+  ]
+}

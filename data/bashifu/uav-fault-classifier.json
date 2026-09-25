@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Bashifu/uav-fault-classifier",
+  "slug": "bashifu-uav-fault-classifier",
+  "author": "Bashifu",
+  "url": "https://huggingface.co/Bashifu/uav-fault-classifier",
+  "created_at": "2026-09-24T22:33:21.000Z",
+  "updated_at": "2026-09-24T22:33:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "tabular-classification",
+    "gradient-boosting",
+    "synthetic-data",
+    "dataset:Bashifu/uav-fault-symptom-reports",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 515656,
+  "storage_human": "515656 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bashifu/uav-fault-symptom-reports at refs/convert/parquet",
+      "url": "https://huggingface.co/datasets/Bashifu/uav-fault-symptom-reports/tree/refs%2Fconvert%2Fparquet/default",
+      "snippet": "Size: 10K - 100K Tags: Synthetic uav telemetry Libraries: Datasets pandas Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community 1 refs/convert/parquet uav-fault-symptom-reports /default 5.68 MB 1 contributor History:1 commit parquet-converter Bashifu Update parquet files 798ddde about 13 hours ago benchmarkabout 13 hours ago ..."
+    },
+    {
+      "title": "Fault Detection and Diagnosis Methodologies for Unmanned Aerial ...",
+      "url": "https://link.springer.com/article/10.1007/s10846-025-02267-8",
+      "snippet": "The increasing prevalence of unmanned aerial vehicles (UAVs) across various fields requires the development of advanced fault detection and diagnostic (FDD) frameworks to prevent the severe consequences of undetected sensor and actuator failures. This review investigates the wide spectrum of FDD methodologies for UAVs, focusing on the paramount role of sophisticated yet intelligent systems in ..."
+    },
+    {
+      "title": "Intelligent Fault Identification in Flight Vehicles Using Bayes ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2405896325032835",
+      "snippet": "To address reliable and efficient fault identification in flight vehicles, this paper proposes a systematic framework integrating dynamic feature optimization with an adaptive Bayesian classifier. It enhances fault diagnosis performance via a multi-domain feature engineering pipeline for key feature extraction and an automated model selection process. Considering the dynamic and complex nature ..."
+    },
+    {
+      "title": "Real-time fault detection in multirotor UAVs using ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s40747-025-02195-y",
+      "snippet": "To ensure a fair and comprehensive evaluation, CLFDNet was benchmarked against both standard AI classifiers (RF, XGB, KNN, SVM, and NB) commonly employed in existing studies and representative model-based and attention-driven approaches extensively adopted in prior UAV fault-detection research, including the Extended Kalman Filter (EKF ..."
+    },
+    {
+      "title": "An Intelligent Fault Diagnosis Approach for Multirotor UAVs ... - MDPI",
+      "url": "https://www.mdpi.com/2504-446X/7/2/82",
+      "snippet": "The suggested approach offers exceptional potential: the fault detection system identifies and predicts faults accurately as the resulting 91% classification accuracy exceeds current state-of-the-art fault diagnosis strategies. The proposed model demonstrated operational applicability on any multirotor UAV of choice."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Vikasrkdf/IntendClassification",
+  "slug": "vikasrkdf-intendclassification",
+  "author": "Vikasrkdf",
+  "url": "https://huggingface.co/Vikasrkdf/IntendClassification",
+  "created_at": "2026-09-24T22:08:35.000Z",
+  "updated_at": "2026-09-24T22:08:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube/main%2520page",
+      "snippet": "YouTube's official YouTube channel GAY, ARTISTIC, DIVA ENERGY – either you’re in for the best weekend ever or you’re watching …"
+    },
+    {
+      "title": "Essential '90s R&B - YouTube Music",
+      "url": "https://music.youtube.com/playlist?list=RDCLAK5uy_ne3DJMol0EVIfwcuZnx2hQak0q6EbeBlY",
+      "snippet": "Playlist • YouTube Music R&B defined American mainstream music throughout the '90s. Here are key tracks from R&B's most vital …"
+    },
+    {
+      "title": "YouTube TV - Watch & DVR Live Sports, Shows & News",
+      "url": "https://tv.youtube.com/welcome/?rd_rsn=lo",
+      "snippet": "Stream live TV from ABC, CBS, FOX, NBC, ESPN & popular cable networks in English and Spanish. Record without DVR storage …"
+    },
+    {
+      "title": "Classic Rock's Greatest Hits - YouTube Music",
+      "url": "https://music.youtube.com/playlist?list=RDCLAK5uy_nZiG9ehz_MQoWQxY5yElsLHCcG0tv9PRg",
+      "snippet": "Playlist • YouTube Music Essential hits from the classic rock era, featuring long hair, big solos and singers who graduated from …"
+    }
+  ]
+}

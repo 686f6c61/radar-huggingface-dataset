@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "showa-ai/marketplace-m0-professional-b",
+  "slug": "showa-ai-marketplace-m0-professional-b",
+  "author": "showa-ai",
+  "url": "https://huggingface.co/showa-ai/marketplace-m0-professional-b",
+  "created_at": "2026-09-24T18:39:15.000Z",
+  "updated_at": "2026-09-24T18:39:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.8-27B-FP8",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B-FP8",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 338832695,
+  "storage_human": "339 MB",
+  "base_model": "Qwen/Qwen3.8-27B-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SHOWA Gloves – Protect Your Hands with Innovation",
+      "url": "https://www.showagroup.com/eu-fr/",
+      "snippet": "SHOWA® contrôle entièrement la fabrication de ses gants de ménage et industriels, en déployant les technologies les plus …Read more"
+    },
+    {
+      "title": "Ère Shōwa (1926-1989) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%88re_Sh%C5%8Dwa_(1926-1989)",
+      "snippet": "Tsutsui Kiyotada, Fifteen lectures on Showa Japan: road to the pacific war in recent historiography, Tokyo, Japan Publishing Industry …"
+    },
+    {
+      "title": "Showa Official Website - Showa by Genuine Parts Europe - Spain",
+      "url": "https://showabygenuinepartseurope.com/en",
+      "snippet": "SERVICE KITS OIL/GREASE Fork oil seals / dust seals SHOWA A KIT Select brand Select model Select year"
+    },
+    {
+      "title": "SHOWA - Tous les articles SHOWA pour les professionnels du …",
+      "url": "https://www.prolians.fr/brand/showa",
+      "snippet": "Découvrez les articles de la marque SHOWA disponibles sur prolians.fr. Livraison à J+1 à l'adresse de votre choix."
+    },
+    {
+      "title": "Showa - Bud Racing",
+      "url": "https://www.bud-racing.com/fr/showa",
+      "snippet": "Showa, le spécialiste Japonais des suspensions moto est présent sur les plus grands championnats et auprès des meilleurs pilotes …"
+    }
+  ]
+}

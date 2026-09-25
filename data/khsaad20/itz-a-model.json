@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "KHSaad20/itz-a-model",
+  "slug": "khsaad20-itz-a-model",
+  "author": "KHSaad20",
+  "url": "https://huggingface.co/KHSaad20/itz-a-model",
+  "created_at": "2026-09-24T21:01:34.000Z",
+  "updated_at": "2026-09-24T21:01:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108310272,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433263424,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CANAL+ : tv, sports, séries, films en streaming en direct live ou ...",
+      "url": "https://www.canalplus.com/",
+      "snippet": "Regarder les meilleurs programmes, films, séries, sports en streaming direct ou en replay. Le programme TV de toutes les chaines …Read more"
+    },
+    {
+      "title": "Toutes les chaînes | CANAL+",
+      "url": "https://www.canalplus.com/live/",
+      "snippet": "Regarder vos chaines de télévision en direct live streaming sur myCANAL en profitant de l'expérience originale de CANAL+Read more"
+    },
+    {
+      "title": "Accueil - CANAL+ Espace Client",
+      "url": "https://client.canalplus.com/",
+      "snippet": "identifiez-vous L’espace client CANAL+ est votre espace personnel sécurisé. Particulier ? ou Professionnel ? Connectez-vous avec …Read more"
+    },
+    {
+      "title": "Abonnements CANAL+ : offres de souscription aux chaines CANAL+ - CANAL+",
+      "url": "https://boutique.canalplus.com/?msockid=3ffd62e3225769c93f64753d231f68cd",
+      "snippet": "S'abonner à CANAL+, c'est profiter du cinéma ultra-récent avec des films à succès disponibles 6 mois après leur sortie en salle, des …Read more"
+    },
+    {
+      "title": "Offre d'abonnement à TV+ - CANAL+",
+      "url": "https://boutique.canalplus.com/offres/tv-plus?msockid=3ffd62e3225769c93f64753d231f68cd",
+      "snippet": "+ de 80 chaînes de TV dont TOUTES LES CHAINES DE LA TNT : actualité, émissions sportives, films, séries, jeunesse, télé …Read more"
+    }
+  ]
+}

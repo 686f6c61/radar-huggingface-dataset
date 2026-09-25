@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "StephenChou/cedar-raise-qwen3.5-9b",
+  "slug": "stephenchou-cedar-raise-qwen3-5-9b",
+  "author": "StephenChou",
+  "url": "https://huggingface.co/StephenChou/cedar-raise-qwen3.5-9b",
+  "created_at": "2026-09-24T19:57:15.000Z",
+  "updated_at": "2026-09-24T19:58:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3.5",
+    "cedar",
+    "access-control",
+    "lora",
+    "reinforcement-learning",
+    "raise",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:StephenChou/cedar-qwen9b-sft-v2",
+    "base_model:adapter:StephenChou/cedar-qwen9b-sft-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 315735591,
+  "storage_human": "316 MB",
+  "base_model": "StephenChou/cedar-qwen9b-sft-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Make Chrome your default browser",
+      "url": "https://support.google.com/chrome/answer/95417?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "On your computer, open Chrome. At the top right, select More Settings. In the \"Default browser\" section, select Make default. If you …"
+    },
+    {
+      "title": "How to Change Your Default Browser: Desktop & Mobile - wikiHow",
+      "url": "https://www.wikihow.com/Change-Your-Default-Browser",
+      "snippet": "Oct 22, 2025 · This wikiHow article teaches you how to change your default browser on a computer, phone, or tablet. If you want to …"
+    },
+    {
+      "title": "Make Chrome your default browser - Google Chrome Help",
+      "url": "https://support.google.com/chrome/answer/16737851?hl=en",
+      "snippet": "You can change your default browser anytime. On your computer, open Chrome. At the top right, select More Settings. In the …"
+    },
+    {
+      "title": "Change Default Apps in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/apps/change-default-apps-in-windows",
+      "snippet": "Learn how to change default apps and protocol handlers in Windows, including an example about how to configure the default browser."
+    },
+    {
+      "title": "How to Change Your Default Web Browser - PCMag",
+      "url": "https://www.pcmag.com/how-to/how-to-change-your-default-web-browser",
+      "snippet": "May 2, 2025 · Want your Windows PC to open links in Firefox, your Mac to load up Chrome, or your iPhone to favor Edge? Here’s …"
+    }
+  ]
+}

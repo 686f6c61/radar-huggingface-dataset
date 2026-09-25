@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "imnikhil/my-first-mac-llm",
+  "slug": "imnikhil-my-first-mac-llm",
+  "author": "imnikhil",
+  "url": "https://huggingface.co/imnikhil/my-first-mac-llm",
+  "created_at": "2026-09-24T21:02:35.000Z",
+  "updated_at": "2026-09-24T21:03:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "chat",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519626,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "imnikhil/my-first-mac-llm · Hugging Face",
+      "url": "https://huggingface.co/imnikhil/my-first-mac-llm",
+      "snippet": "Instructions to use imnikhil/my-first-mac-llm with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use imnikhil/my-first-mac-llm with MLX:"
+    },
+    {
+      "title": "Apple Silicon LLMs: Run AI Models on Mac (MLX, 2026)",
+      "url": "https://codersera.com/blog/apple-silicon-llms-complete-guide-2026/",
+      "snippet": "The complete Codersera guide to running large language models locally on Mac. MLX has won the Apple Silicon performance race; this is what to buy, install, download, and how to think about it."
+    },
+    {
+      "title": "How to Run Local LLMs on an Intel Mac (2026) — What&#x27;s Possible ...",
+      "url": "https://llmcheck.net/guides/run-local-llm-intel-mac/",
+      "snippet": "Yes, Intel Macs run local AI — but small models only, at single-digit-to-low tok/s on CPU. Realistic speeds, best models, AMD-GPU options, and the Apple Silicon upgrade path."
+    },
+    {
+      "title": "Running LLMs on Your Own Hardware: What Actually Works in 2026",
+      "url": "https://dev.to/max_quimby/how-to-run-ai-models-locally-on-your-pc-or-mac-2026-guide-n4p",
+      "snippet": "A practical guide to running AI models locally. Covers hardware requirements, best tools (Ollama, LM Studio, llama.cpp), and which models work on 8GB, 16GB, and 32GB+ machines."
+    },
+    {
+      "title": "How to Run LLMs Locally on Mac (M1 / M2 / M3) - Complete Guide",
+      "url": "https://mljourney.com/how-to-run-llms-locally-on-mac-m1-m2-m3-complete-guide/",
+      "snippet": "The ability to run large language models (LLMs) on your own Mac has transformed from a distant dream into an accessible reality. Apple&#x27;s silicon chips—the M1, M2, and M3—have democratized AI development by bringing unprecedented performance and efficiency to consumer hardware. Whether you&#x27;re a developer experimenting with AI applications, a privacy-conscious user, or simply curious ..."
+    }
+  ]
+}

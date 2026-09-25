@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pdDuduzin/ESP32-CAM_Autonomous_Line-Following_Car_Model",
+  "slug": "pdduduzin-esp32-cam_autonomous_line-following_car_model",
+  "author": "pdDuduzin",
+  "url": "https://huggingface.co/pdDuduzin/ESP32-CAM_Autonomous_Line-Following_Car_Model",
+  "created_at": "2026-09-25T00:31:26.000Z",
+  "updated_at": "2026-09-25T00:33:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "keras",
+    "tflite",
+    "tensorflow-lite",
+    "esp32",
+    "computer-vision",
+    "line-following",
+    "embedded-ml",
+    "en",
+    "pt",
+    "dataset:pdDuduzin/ESP32-CAM_Autonomous_Line-Following_Car_Dataset",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125434,
+  "storage_human": "125434 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ESP32-CAM_Autonomous_Line-Following_Car_Dataset",
+      "url": "https://huggingface.co/datasets/pdDuduzin/ESP32-CAM_Autonomous_Line-Following_Car_Dataset",
+      "snippet": "The dataset was recorded on line-following tracks under different lighting conditions, camera positions, straight sections, and left and right curves."
+    },
+    {
+      "title": "Autonomous Car with ESP32-CAM & Python - GitHub",
+      "url": "https://github.com/alonmalka19/autonomous-car-esp32-cam",
+      "snippet": "This project implements a small autonomous car controlled by an ESP32‑CAM board (used as a microcontroller) and a Python script running on a host computer. A smartphone running the IP Webcam app provides the video feed, streaming to the host computer over the local network. The Python script communicates with the ESP32 over HTTP commands and uses a custom YOLO model to detect and track a ..."
+    },
+    {
+      "title": "GitHub - rakesh-i/ESP32-Autonomous-car: Autonomous car using ESP32.",
+      "url": "https://github.com/rakesh-i/ESP32-Autonomous-car",
+      "snippet": "Autonomous car using ESP32. Contribute to rakesh-i/ESP32-Autonomous-car development by creating an account on GitHub."
+    },
+    {
+      "title": "Line Follower with ESP32-CAM - TekyInBlack",
+      "url": "https://www.tekyinblack.com/general-projects/robots/line-follower-hacked-a-bit/",
+      "snippet": "Smart Tracking Car line follower robot hacked about with ESP32-CAM controller and camera using Arduino IDE."
+    },
+    {
+      "title": "ESP32-Cam - Complete Guide - DIY Engineers",
+      "url": "https://www.diyengineers.com/2023/04/13/esp32-cam-complete-guide/",
+      "snippet": "Welcome to the complete guide for the ESP32-Cam! In this post I go over basics, how to use, pins, wiring, programming, taking pictures, uploading to a local sever and even performing computer vision analysis on another device."
+    }
+  ]
+}

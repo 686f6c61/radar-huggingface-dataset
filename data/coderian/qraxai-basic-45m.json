@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "coderian/QraXAi-Basic-45M",
+  "slug": "coderian-qraxai-basic-45m",
+  "author": "coderian",
+  "url": "https://huggingface.co/coderian/QraXAi-Basic-45M",
+  "created_at": "2026-09-24T19:58:50.000Z",
+  "updated_at": "2026-09-24T20:00:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qrax_ai",
+    "text-generation",
+    "qraxai",
+    "gpt2-tokenizer",
+    "causal-lm",
+    "tiny-stories",
+    "from-scratch",
+    "custom_code",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "arxiv:2305.07759",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 44751872,
+  "parameters_human": "44.8M",
+  "storage_bytes": 179049920,
+  "storage_human": "179 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "coderian (Coderian) - Hugging Face",
+      "url": "https://huggingface.co/coderian",
+      "snippet": "Recent Activity updated a modelabout 3 hours ago coderian/scribe-tok-50k published a modelabout 3 hours ago coderian/scribe-tok-50k liked a modelabout 4 hours ago coderian/scribe-tok-5k View all activity"
+    },
+    {
+      "title": "coderian (Coderian) - Hugging Face",
+      "url": "https://huggingface.co/coderian/datasets",
+      "snippet": "Recent Activity updated a modelabout 6 hours ago coderian/scribe-tok-50k published a modelabout 6 hours ago coderian/scribe-tok-50k liked a modelabout 7 hours ago coderian/scribe-tok-5k View all activity"
+    },
+    {
+      "title": "Coderian (Hitoshi Sasaki) · GitHub",
+      "url": "https://github.com/Coderian",
+      "snippet": "Coderian has 7 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "LLM Coding Leaderboard - AI Coding Daily",
+      "url": "https://aicodingdaily.com/leaderboard",
+      "snippet": "Compare AI coding models by total points, average time, and average cost across real-world benchmark projects."
+    },
+    {
+      "title": "Kilo - Best Open Source AI Models for Coding (2026)",
+      "url": "https://kilo.ai/open-source-models",
+      "snippet": "Compare current open source AI models for coding by benchmarks, licenses, local deployment, and hosted access. Evidence-backed rankings updated for 2026."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Jacky-lee/generation-best",
+  "slug": "jacky-lee-generation-best",
+  "author": "Jacky-lee",
+  "url": "https://huggingface.co/Jacky-lee/generation-best",
+  "created_at": "2026-09-25T00:33:02.000Z",
+  "updated_at": "2026-09-25T00:33:07.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jacky (animateur) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jacky_(animateur)",
+      "snippet": "En 2007, Jacky publie sa biographie : Docteur Jacky et Mister Rock, qui revient sur son parcours, ses rencontres et ses différentes …Read more"
+    },
+    {
+      "title": "À quoi ressemble Jacky du Club Dorothée aujourd’hui ?",
+      "url": "https://serieously.ouest-france.fr/a-quoi-ressemble-jacky-du-club-dorothee-aujourdhui/",
+      "snippet": "Oct 8, 2025 · Après le Club Dorothée, Jacky rebondit sans jamais perdre sa bonne humeur. Il anime Le Rabbi Jacky Show sur TFJ, …Read more"
+    },
+    {
+      "title": "Jacky : biographie, news, photos et videos - Télé-Loisirs",
+      "url": "https://www.programme-tv.net/biographie/31969-jacky/",
+      "snippet": "Retrouvez toutes les infos sur Jacky avec Télé-Loisirs.fr : sa biographie, son actualité, ses photos et vidéos.Read more"
+    },
+    {
+      "title": "Jacky : biographie, actus, photos et vidéos sur Voici.fr",
+      "url": "https://www.voici.fr/bios-people/jacky",
+      "snippet": "Diplômé d’une école de journalisme, Jacky commence à gagner sa vie en 1973 comme journaliste au magazine Rock & Folk et …Read more"
+    },
+    {
+      "title": "Jacky : ses dernières actualités sur Voici.fr",
+      "url": "https://www.voici.fr/bios-people/jacky/actu",
+      "snippet": "Jacques Jakubowicz, dit Jacky, s’est notamment confié sur les secrets de son étroite complicité avec Mylène Farmer à l’époque de …Read more"
+    }
+  ]
+}

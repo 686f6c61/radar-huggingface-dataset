@@ -5,7 +5,7 @@
   "author": "caiovicentino1",
   "url": "https://huggingface.co/caiovicentino1/Eikos-27B-FP8",
   "created_at": "2026-09-23T23:56:11.000Z",
-  "updated_at": "2026-09-24T00:08:25.000Z",
+  "updated_at": "2026-09-24T12:00:52.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",

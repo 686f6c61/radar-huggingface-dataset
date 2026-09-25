@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "CodeMasterCody3D/ternary-composer-charlm",
+  "slug": "codemastercody3d-ternary-composer-charlm",
+  "author": "CodeMasterCody3D",
+  "url": "https://huggingface.co/CodeMasterCody3D/ternary-composer-charlm",
+  "created_at": "2026-09-24T23:23:49.000Z",
+  "updated_at": "2026-09-25T02:07:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "ternary",
+    "1.58-bit",
+    "quantization-aware-training",
+    "character-level",
+    "language-model",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 364064357,
+  "storage_human": "364 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CodeMasterCody3D (Cody Dixon) - Hugging Face",
+      "url": "https://huggingface.co/CodeMasterCody3D/models",
+      "snippet": "I love the idea of shrinking an AI and keeping its intelligence after reading about PrismML and their work with the Ternary model they made. I am available for hire. please contact me by email. ..."
+    },
+    {
+      "title": "CodeMasterCody3D (Cody Dixon) - Hugging Face",
+      "url": "https://huggingface.co/CodeMasterCody3D",
+      "snippet": "User profile of Cody Dixon on Hugging Face"
+    },
+    {
+      "title": "CodeMasterCody3D (Cody D Dixon) · GitHub",
+      "url": "https://github.com/CodeMasterCody3D",
+      "snippet": "Tech enthusiast, DIY tinkerer, and open-source advocate. Passionate about 3D printing, Klipper, Linux, embedded systems, and pushing the limits of hardware. - CodeMasterCody3D"
+    },
+    {
+      "title": "I Just Tried The Brand New Ternary Model And It&#x27;s Great!",
+      "url": "https://www.youtube.com/watch?v=lDlkkDs43aw",
+      "snippet": "We can now get FP16 model accuracy but at 1Bit size. The entire idea of Ternary is the best of both worlds. For just a bit more memory, but still 7-8x less than FP16, you can get *FULL* FP16 accuracy."
+    },
+    {
+      "title": "[2406.07177] TernaryLLM: Ternarized Large Language Model",
+      "url": "https://arxiv.org/abs/2406.07177",
+      "snippet": "Large language models (LLMs) have achieved remarkable performance on Natural Language Processing (NLP) tasks, but they are hindered by high computational costs and memory requirements. Ternarization, an extreme form of quantization, offers a solution by reducing memory usage and enabling energy-efficient floating-point additions. However, applying ternarization to LLMs faces challenges ..."
+    }
+  ]
+}

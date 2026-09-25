@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mbeukman/Kinetix-Checkpoints",
+  "slug": "mbeukman-kinetix-checkpoints",
+  "author": "mbeukman",
+  "url": "https://huggingface.co/mbeukman/Kinetix-Checkpoints",
+  "created_at": "2026-09-24T18:40:59.000Z",
+  "updated_at": "2026-09-24T18:41:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "jax",
+  "languages": [],
+  "tags": [
+    "jax",
+    "reinforcement-learning",
+    "kinetix",
+    "flax",
+    "arxiv:2408.15099",
+    "arxiv:2410.23208",
+    "arxiv:2603.06009",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6313512,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Checkpoint AI Models (141) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 141 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "GitHub - git-kinetix/kinetix-puppeteer: Code for \"Hierarchical World ...",
+      "url": "https://github.com/git-kinetix/kinetix-puppeteer",
+      "snippet": "This repository contains code for training and evaluating both low-level (tracking) and high-level (puppeteering) world models. We open-source model checkpoints for both levels of the hierarchy, so that you can get started without training any models yourself. Model checkpoints are available for download here."
+    },
+    {
+      "title": "Paper page - Kinetix: Investigating the Training of General Agents ...",
+      "url": "https://huggingface.co/papers/2410.23208",
+      "snippet": "Join the discussion on this paper page Kinetix: Investigating the Training of General Agents through Open-Ended Physics-Based Control Tasks"
+    },
+    {
+      "title": "[2410.23208] Kinetix: Investigating the Training of General Agents ...",
+      "url": "https://arxiv.org/abs/2410.23208",
+      "snippet": "Abstract page for arXiv paper 2410.23208: Kinetix: Investigating the Training of General Agents through Open-Ended Physics-Based Control Tasks"
+    },
+    {
+      "title": "Quick Start Guide | Physical-Intelligence/real-time-chunking-kinetix ...",
+      "url": "https://deepwiki.com/Physical-Intelligence/real-time-chunking-kinetix/2.2-quick-start-guide",
+      "snippet": "Quick Start Guide Relevant source files This guide provides step-by-step instructions for running the complete real-time action chunking pipeline. It covers both using pre-trained checkpoints for immediate evaluation and training the full system from scratch. The pipeline consists of four sequential stages: expert policy training, data collection, flow policy training, and evaluation. For ..."
+    }
+  ]
+}

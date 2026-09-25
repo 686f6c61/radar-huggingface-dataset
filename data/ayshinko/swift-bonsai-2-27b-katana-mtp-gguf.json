@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ayshinko/Swift-Bonsai-2-27B-Katana-MTP-GGUF",
+  "slug": "ayshinko-swift-bonsai-2-27b-katana-mtp-gguf",
+  "author": "ayshinko",
+  "url": "https://huggingface.co/ayshinko/Swift-Bonsai-2-27B-Katana-MTP-GGUF",
+  "created_at": "2026-09-24T20:01:53.000Z",
+  "updated_at": "2026-09-24T21:17:07.000Z",
+  "license": "prism-bonsai-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "swift-bonsai-2",
+    "prism-ml",
+    "qwen35",
+    "mamba2",
+    "speculative-decoding",
+    "mtp",
+    "katana",
+    "ptq1_0",
+    "uncensored",
+    "community",
+    "llama.cpp",
+    "text-generation",
+    "vision",
+    "multimodal",
+    "image-text-to-text",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 6397969728,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ternary Bonsai 2 27B - Bonsai - docs.prismml.com",
+      "url": "https://docs.prismml.com/bonsai-2-27b",
+      "snippet": "Ternary Bonsai 2 27B is the largest multimodal model in the family: it accepts vision input alongside text. It is based on Qwen3.8 27B, a hybrid-attention causal language model, and its matrix weights are ternary — values in {−1, 0, +1} in a fixed rotated basis, with FP16 group scales."
+    },
+    {
+      "title": "Introducing Bonsai 2 27B: Near-Lossless Compression in a 9x ... - PrismML",
+      "url": "https://prismml.com/news/bonsai-2-27b",
+      "snippet": "Ternary Bonsai 2 27B retains 98.2% of Qwen3.8 27B benchmark performance in a 5.9GB footprint, with multimodal and agentic capabilities."
+    },
+    {
+      "title": "Bonsai 27B - a prism-ml Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/prism-ml/bonsai-27b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bonsai 27B - Bonsai - docs.prismml.com",
+      "url": "https://docs.prismml.com/models/bonsai-27b",
+      "snippet": "Bonsai 27B is the largest multimodal model in the family: it accepts vision input alongside text. It is based on Qwen3.6 27B. Like every Bonsai, the language model is quantized end-to-end 1-bit or ternary weights across embeddings, attention, MLPs, and the LM head. The vision tower is handled separately, at 4-bit."
+    },
+    {
+      "title": "Ternary Bonsai 2 27B - 262k context, multimodal, open source",
+      "url": "https://www.llmreference.com/model/bonsai-2-27b",
+      "snippet": "Ternary Bonsai 2 27B (also branded Bonsai 2 27B) is PrismML&#x27;s flagship ternary open-weight multimodal model, announced 2026-09-17. Based on Qwen3.8 27B (live catalog slug qwen3.8-27b). First-party site/news/docs + MCP-verified @PrismML tip: ~9× smaller than full-precision counterpart; retains 98.2% of aggregate benchmark performance (first-party overall 83.9 vs Qwen3.8 27B 85.4 on their ..."
+    }
+  ]
+}

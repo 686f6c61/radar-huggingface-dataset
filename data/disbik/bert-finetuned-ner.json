@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "disbik/bert-finetuned-ner",
+  "slug": "disbik-bert-finetuned-ner",
+  "author": "disbik",
+  "url": "https://huggingface.co/disbik/bert-finetuned-ner",
+  "created_at": "2026-09-24T18:38:10.000Z",
+  "updated_at": "2026-09-24T18:58:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 1860408986,
+  "storage_human": "1.9 GB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nt-ai/bert-finetuned-ner · Hugging Face",
+      "url": "https://huggingface.co/nt-ai/bert-finetuned-ner",
+      "snippet": "This model is a fine-tuned version of bert-base-casedon the conll2003 dataset. It achieves the following results on the evaluation set: Loss: 0.0640 Precision: 0.9336 Recall: 0.9507 F1: 0.9420 Accuracy: 0.9865"
+    },
+    {
+      "title": "balamurugan1603/bert-finetuned-ner · Hugging Face",
+      "url": "https://huggingface.co/balamurugan1603/bert-finetuned-ner",
+      "snippet": "Named Entity Recognition using Transformers This is a Fine-tuned version of BERT using HuggingFace transformers to perform Named Entity Recognition on Text data. BERT is a state-of-the-art model with attention mechanism as underlying architecture trained with masked-language-modeling and next-sentence-prediction objectives, used for various tasks including Question answering systems, Text ..."
+    },
+    {
+      "title": "Fine-Tuning BERT for Named Entity Recognition (NER) - Medium",
+      "url": "https://medium.com/@whyamit101/fine-tuning-bert-for-named-entity-recognition-ner-b42bcf55b51d",
+      "snippet": "Fine-tuning BERT for NER requires understanding your dataset, customizing the model architecture, and tackling domain-specific challenges."
+    },
+    {
+      "title": "Liki990/bert_model: BERT finetuned on NER downstream tasks - GitHub",
+      "url": "https://github.com/Liki990/bert_model",
+      "snippet": "BERT finetuned on NER downstream tasks. Contribute to Liki990/bert_model development by creating an account on GitHub."
+    },
+    {
+      "title": "Fine-Tuning DistilBERT for Restaurant Search NER - KGP Talkie",
+      "url": "https://kgptalkie.com/tutorials/generative-ai/fine-tuning-distilbert-ner",
+      "snippet": "Tutorials / Generative AI / Fine-Tuning DistilBERT for Restaurant Search NER Fine-Tuning DistilBERT for Restaurant Search NER Fine-tune DistilBERT for named entity recognition on restaurant search queries, extracting cuisines, locations, ratings, and dishes with IOB tagging and seqeval."
+    }
+  ]
+}

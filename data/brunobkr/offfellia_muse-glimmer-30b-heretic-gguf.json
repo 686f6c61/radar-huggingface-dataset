@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Brunobkr/OFFFELLIA_Muse-Glimmer-30B-Heretic.gguf",
+  "slug": "brunobkr-offfellia_muse-glimmer-30b-heretic-gguf",
+  "author": "Brunobkr",
+  "url": "https://huggingface.co/Brunobkr/OFFFELLIA_Muse-Glimmer-30B-Heretic.gguf",
+  "created_at": "2026-09-25T00:34:08.000Z",
+  "updated_at": "2026-09-25T02:02:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "doi:10.57967/hf/10590",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 82558912808,
+  "storage_human": "82.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-models/Muse-Glimmer-30B · Hugging Face",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "0bserverx/Muse-Glimmer-30B-Heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/0bserverx/Muse-Glimmer-30B-Heretic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Muse Glimmer — Meta&#x27;s 30B AI Model for Your Laptop",
+      "url": "https://museglimmer.site/",
+      "snippet": "Muse Glimmer is Meta&#x27;s 30-billion-parameter open-weight AI model released August 10, 2026. It is designed to run on a single consumer GPU — a laptop or desktop graphics card — making frontier AI accessible without cloud infrastructure."
+    },
+    {
+      "title": "Muse Glimmer | Meta",
+      "url": "https://developer.meta.com/ai/models/muse-glimmer/",
+      "snippet": "For the full model card, please see the Muse Glimmer page on Hugging Face. For more details about Muse Glimmer evaluations, read the methodology report. Meta is committed to promoting safe and fair use of its tools and features, including Muse Glimmer. This Usage Policy (\"Policy\") applies to the access or use of Muse Glimmer."
+    },
+    {
+      "title": "Meta&#x27;s new AI model runs entirely offline, but your GPU needs to keep ...",
+      "url": "https://www.digitaltrends.com/computing/metas-new-ai-model-runs-entirely-offline-but-your-gpu-needs-to-keep-up/",
+      "snippet": "Meta released Muse Glimmer, a free 30B parameter AI model you can run entirely offline. No subscription, no data center, just a GPU with at least 24GB of VRAM."
+    }
+  ]
+}

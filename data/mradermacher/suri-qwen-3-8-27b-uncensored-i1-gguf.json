@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Suri-Qwen-3.8-27B-Uncensored-i1-GGUF",
+  "slug": "mradermacher-suri-qwen-3-8-27b-uncensored-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Suri-Qwen-3.8-27B-Uncensored-i1-GGUF",
+  "created_at": "2026-09-24T19:44:41.000Z",
+  "updated_at": "2026-09-25T00:21:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "suri",
+    "qwen",
+    "27B",
+    "uncensored",
+    "unaligned",
+    "text-generation-inference",
+    "qwen3.8",
+    "zh",
+    "en",
+    "base_model:SpaceTimee/Suri-Qwen-3.8-27B-Uncensored",
+    "base_model:quantized:SpaceTimee/Suri-Qwen-3.8-27B-Uncensored",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 300328880608,
+  "storage_human": "300.3 GB",
+  "base_model": "SpaceTimee/Suri-Qwen-3.8-27B-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Live Sex Cams and Adult Chat with Nude Girls | Stripchat",
+      "url": "https://stripchat.com/",
+      "snippet": "Live porn cams with thousands of models online — women, men, couples and trans performers, solo rooms and group scenes …Read more"
+    },
+    {
+      "title": "裸の女の子との無料ライブセックスカメラとアダルトチャット",
+      "url": "https://ja.stripchat.com/",
+      "snippet": "Stripchat は、本物のつながりと刺激的なプレイを求める人の期待にお応えする、世界最大級のアダルトライブ配信・アダルトエン …Read more"
+    },
+    {
+      "title": "Sexcams gratuites en direct et chat avec des filles nues | Stripchat",
+      "url": "https://fr.stripchat.com/",
+      "snippet": "Cams porno en live avec des milliers de modèles en ligne — femmes, hommes, couples et performers trans, chatrooms solo et …Read more"
+    },
+    {
+      "title": "Français Live sex cams gratuit en direct de filles | Stripchat",
+      "url": "https://fr.stripchat.com/girls/french",
+      "snippet": "Regardez EN DIRECT ces filles super chaudes via les sexcams de Français. ️ Rejoignez-les, entièrement nues, sur leur chatroom …Read more"
+    },
+    {
+      "title": "Gratis live sex cams en chat met naakte meiden | Stripchat",
+      "url": "https://nl.stripchat.com/",
+      "snippet": "Live pornocams met duizenden online modellen — vrouwen, mannen, stellen en transseksuele performers, solochatrooms en …Read more"
+    }
+  ]
+}

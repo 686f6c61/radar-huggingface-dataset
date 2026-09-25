@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "davidwei79/unitree-g1-mujoco-brainco",
+  "slug": "davidwei79-unitree-g1-mujoco-brainco",
+  "author": "davidwei79",
+  "url": "https://huggingface.co/davidwei79/unitree-g1-mujoco-brainco",
+  "created_at": "2026-09-24T21:49:34.000Z",
+  "updated_at": "2026-09-24T22:32:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "mujoco",
+    "unitree-g1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76607311,
+  "storage_human": "77 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unitree G1 | google-deepmind/mujoco_menagerie | DeepWiki",
+      "url": "https://deepwiki.com/google-deepmind/mujoco_menagerie/2.2-unitree-g1",
+      "snippet": "Unitree G1 Relevant source files This documentation provides detailed information about the Unitree G1 humanoid robot model implementation in the MuJoCo Menagerie repository. The model represents a comprehensive simulation of the Unitree G1 humanoid robot with accurate physical properties and joint mechanics for use with the MuJoCo physics engine. Overview The Unitree G1 is a bipedal humanoid ..."
+    },
+    {
+      "title": "mujoco_menagerie/unitree_g1 at main · google-deepmind/mujoco ... - GitHub",
+      "url": "https://github.com/google-deepmind/mujoco_menagerie/tree/main/unitree_g1",
+      "snippet": "A version of g1.xml for use in MJX is available in scene_mjx.xml with the following changes: Manually designed collision geoms and corresponding contact pairs (see figure below). Tuned solver and line search iterations. Used lower, more realistic PD gains. Added home and knees_bent keyframes. The above model was successfully transfered to hardware in MuJoCo Playground."
+    },
+    {
+      "title": "Humanoid-Team-ISR-Lab/G1_BrainCo_hands_Digital_Twin_Mujoco",
+      "url": "https://github.com/Humanoid-Team-ISR-Lab/G1_BrainCo_hands_Digital_Twin_Mujoco",
+      "snippet": "A DDS-native MuJoCo simulation of the Unitree G1 humanoid (29-DOF body) with BrainCo dexterous hands, built on top of unitree_mujoco. Control code talks to rt/lowcmd/rt/lowstate and rt/brainco/* exactly as it would on real hardware — switching from sim to robot is a two-line change (DDS domain + network interface), nothing else."
+    },
+    {
+      "title": "Robot Models | unitreerobotics/unitree_mujoco | DeepWiki",
+      "url": "https://deepwiki.com/unitreerobotics/unitree_mujoco/5-robot-models",
+      "snippet": "The unitree_mujoco system supports several Unitree Robotics robots, each with its own MJCF description files located in the unitree_robots directory. Each robot model is defined using MuJoCo&#x27;s XML-based format which specifies the robot&#x27;s physical properties, joints, actuators, and sensors."
+    },
+    {
+      "title": "Unitree G1 BrainCo - Grasping & Manipulation Data",
+      "url": "https://huggingface.co/collections/mindchain/unitree-g1-brainco-grasping-and-manipulation-data",
+      "snippet": "Unitree G1 humanoid robot BrainCo datasets for grasping, object manipulation, and dexterous hand training"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "johnsor/Mage-Flow-Edit-Turbo-GGUF",
+  "slug": "johnsor-mage-flow-edit-turbo-gguf",
+  "author": "johnsor",
+  "url": "https://huggingface.co/johnsor/Mage-Flow-Edit-Turbo-GGUF",
+  "created_at": "2026-09-24T20:21:45.000Z",
+  "updated_at": "2026-09-24T20:30:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "stable-diffusion-cpp",
+    "image-editing",
+    "text-to-image",
+    "image-to-image",
+    "base_model:microsoft/Mage-Flow-Edit-Turbo",
+    "base_model:quantized:microsoft/Mage-Flow-Edit-Turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4115745408,
+  "parameters_human": "4.12B",
+  "storage_bytes": 2842605890,
+  "storage_human": "2.8 GB",
+  "base_model": "microsoft/Mage-Flow-Edit-Turbo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/Mage-Flow-Edit-Turbo · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Mage-Flow-Edit-Turbo",
+      "snippet": "Full family. Base, RL-aligned, and 4-step Turbo variants for both generation and editing. Versatile editing. Mage-Flow-Edit supports semantic content editing, appearance transformation, image restoration, and structure-aware outputs within a unified image-and-text-conditioned model. See the report&#x27;s editing galleries. Interactive latency."
+    },
+    {
+      "title": "Jinstudio/Mage-Flow-Edit-Turbo · Hugging Face",
+      "url": "https://huggingface.co/Jinstudio/Mage-Flow-Edit-Turbo",
+      "snippet": "Mage-Flow An Efficient Native-Resolution Foundation Model for Image Generation and Editing Mage-Flow is a compact 4B-scale generative stack for efficient text-to-image generation and instruction-based image editing."
+    },
+    {
+      "title": "MageFlow Edit GGUF Pipeline - GitHub",
+      "url": "https://github.com/47thtechcorner/RayCodes_MageFlow_Edit_GGUF/blob/master/",
+      "snippet": "An enterprise-grade, high-performance instruction-based image editing pipeline powered by the Mage-Flow-Edit GGUF 4-step Turbo model (mageflow-edit-turbo-nvfp4.gguf, 2.37 GB) and Ollama (llama3.2:3b). This pipeline transforms reference images based on natural language editing instructions, such as applying golden-hour sunset lighting and autumn environment shifts with native-resolution fidelity."
+    },
+    {
+      "title": "Mage-Flow-Edit-Turbo: Text-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/mage-flow-edit-turbo-microsoft",
+      "snippet": "Overview Mage-Flow-Edit-Turbo is a compact 4-billion-parameter image editing model built by microsoft that applies text-guided edits to images through a shared architecture designed for both text-to-image generation and instruction-based editing. The model operates using a two-component stack: Mage-VAE (a lightweight latent tokenizer using one-step diffusion with anchor-latent KL ..."
+    },
+    {
+      "title": "Microsoft Model: microsoft/Mage-Flow-Edit-Turbo — onlylabs",
+      "url": "https://www.onlylabs.fyi/signals/34513ad1-7ea6-4be5-ab98-123bad550ccf",
+      "snippet": "Together with native-resolution packing and a fused-kernel training infrastructure, this shared stack powers two model instantiations: Mage-Flow for text-to-image generation and Mage-Flow-Edit for instruction-based image editing. Each ships in Base, RL-aligned, and 4-step Turbo variants."
+    }
+  ]
+}

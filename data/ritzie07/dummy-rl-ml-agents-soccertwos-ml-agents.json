@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ritzie07/dummy-rl-ML-Agents-SoccerTwos-ml-agents",
+  "slug": "ritzie07-dummy-rl-ml-agents-soccertwos-ml-agents",
+  "author": "ritzie07",
+  "url": "https://huggingface.co/ritzie07/dummy-rl-ML-Agents-SoccerTwos-ml-agents",
+  "created_at": "2026-09-24T20:38:08.000Z",
+  "updated_at": "2026-09-24T20:38:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "reinforcement-learning",
+    "ML-Agents-SoccerTwos",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "poca-SoccerTwos Open-Source Deep Reinforcement Learning Model ...",
+      "url": "https://model.aibase.com/models/details/1915692709983182850",
+      "snippet": "🚀 ML-Agents: Poca Agent Playing SoccerTwos This is a trained model of a poca agent playing SoccerTwos using the Unity ML-Agents Library, enabling deep reinforcement learning in the SoccerTwos environment."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "Daily-updated list of free AI models (free LLM APIs), ranked by quality with live status. Plus one OpenAI-compatible endpoint that routes to the best one. - ClawLabsAI/free-ai-models"
+    },
+    {
+      "title": "ritzie07/poca-SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/ritzie07/poca-SoccerTwos",
+      "snippet": "poca Agent playing SoccerTwos This is a trained model of a poca agent playing SoccerTwos using the Unity ML-Agents Library."
+    },
+    {
+      "title": "giocs2017/poca-SoccerTwos - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/260659",
+      "snippet": "This is a trained model of a pocaagent playing SoccerTwosusing the Unity ML-Agents Library."
+    },
+    {
+      "title": "GitHub - Amir-Mohseni/SoccerAgents: The Unity Machine Learning Agents ...",
+      "url": "https://github.com/Amir-Mohseni/SoccerAgents",
+      "snippet": "The Unity Machine Learning Agents Toolkit (ML-Agents) is an open-source project that enables games and simulations to serve as environments for training intelligent agents using deep reinforcement learning and imitation learning."
+    }
+  ]
+}

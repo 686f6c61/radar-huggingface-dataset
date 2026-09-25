@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "lugman-madhiai/invoice-split-2023",
+  "slug": "lugman-madhiai-invoice-split-2023",
+  "author": "lugman-madhiai",
+  "url": "https://huggingface.co/lugman-madhiai/invoice-split-2023",
+  "created_at": "2026-09-24T23:12:29.000Z",
+  "updated_at": "2026-09-24T23:14:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:unsloth/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545762431,
+  "storage_human": "17.5 GB",
+  "base_model": "unsloth/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lugman-madhiai/invoice-structured-extraction · Hugging Face",
+      "url": "https://huggingface.co/lugman-madhiai/invoice-structured-extraction",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lugman-madhiai (Lugman) - Hugging Face",
+      "url": "https://huggingface.co/lugman-madhiai",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago ... updated a model 3 days ago"
+    },
+    {
+      "title": "lugman-madhiai/invoice-structured-extraction-sft - Fast, Reliable, and ...",
+      "url": "https://friendli.ai/models/lugman-madhiai/invoice-structured-extraction-sft",
+      "snippet": "Run lugman-madhiai/invoice-structured-extraction-sft with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Fine-Tuned 8B Model Matches Frontier Performance at 70x ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/activity-7503363289473626112-sTKp",
+      "snippet": "Our fine-tuned 8B model got remarkably close at roughly 70x lower cost. We&#x27;ve been working on InvoiceIQ, a fine-tuned 8B vision model for structured invoice extraction."
+    },
+    {
+      "title": "GitHub - jsheppard8989/invoice-splitter: AI-powered tool to split large ...",
+      "url": "https://github.com/jsheppard8989/invoice-splitter",
+      "snippet": "Invoice Splitter Split multi-invoice PDFs into individual files for accounts payable. Works with text-based and scanned PDFs using GPT-4o-mini, validation, discard handling, and a local web UI."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Taimwe/securecoder-scripts",
+  "slug": "taimwe-securecoder-scripts",
+  "author": "Taimwe",
+  "url": "https://huggingface.co/Taimwe/securecoder-scripts",
+  "created_at": "2026-09-24T23:07:12.000Z",
+  "updated_at": "2026-09-25T01:33:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "去zara面试兼职要注意什么？？我最害怕面试了 - 知乎",
+      "url": "https://www.zhihu.com/question/63203701",
+      "snippet": "投递：因为Zara在我们这边算是工资比较高的啦，所以一直想在Zara兼职，就投了好多的简历，终于在最后一次去店里询问外加扫 …"
+    },
+    {
+      "title": "同时拿到了ZARA（飒拉）和UR（urban revivo）的管培 …",
+      "url": "https://www.zhihu.com/question/68591602",
+      "snippet": "同时拿到了ZARA（飒拉）和UR（urban revivo）的管培生（mt）offer，应该如何选择？ 今年校招同时拿到了zara和ur的管培生offer， …"
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "《外婆的澎湖湾》的歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/271935467.html",
+      "snippet": "《外婆的澎湖湾》 是歌手 潘安邦 1979年9月1日发行的专辑。由 叶佳修 担任词创作共收录20首歌曲。 歌词： 晚风轻拂着澎湖湾，白 …"
+    },
+    {
+      "title": "Forum Wetzlar | Ihr Forum für attraktive Marken-Shops",
+      "url": "https://www.forum-wetzlar.de/",
+      "snippet": "Feb 10, 2026 · Besuche unser Einkaufszentrum mit knapp 100 Shops und Gastrobetrieben in Wetzlar. Du findest bei uns Shops …"
+    }
+  ]
+}

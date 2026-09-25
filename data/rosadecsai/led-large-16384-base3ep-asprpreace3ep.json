@@ -5,7 +5,7 @@
   "author": "rosadecsai",
   "url": "https://huggingface.co/rosadecsai/led-large-16384-BASE3ep-ASPRPreACE3ep",
   "created_at": "2026-09-23T16:03:19.000Z",
-  "updated_at": "2026-09-23T23:18:27.000Z",
+  "updated_at": "2026-09-24T15:15:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": 459859047,
   "parameters_human": "459.9M",
-  "storage_bytes": 12876626742,
-  "storage_human": "12.9 GB",
+  "storage_bytes": 25753253399,
+  "storage_human": "25.8 GB",
   "base_model": "rosadecsai/led-large-16384-BASE3ep",
   "formats": [
     "safetensors"

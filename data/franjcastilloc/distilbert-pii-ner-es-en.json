@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "FranJCastilloC/distilbert-pii-ner-es-en",
+  "slug": "franjcastilloc-distilbert-pii-ner-es-en",
+  "author": "FranJCastilloC",
+  "url": "https://huggingface.co/FranJCastilloC/distilbert-pii-ner-es-en",
+  "created_at": "2026-09-25T00:39:06.000Z",
+  "updated_at": "2026-09-25T00:41:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "token-classification",
+    "pii",
+    "ner",
+    "privacy",
+    "redaction",
+    "es",
+    "en",
+    "base_model:distilbert/distilbert-base-multilingual-cased",
+    "base_model:finetune:distilbert/distilbert-base-multilingual-cased",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134750229,
+  "parameters_human": "134.8M",
+  "storage_bytes": 539013268,
+  "storage_human": "539 MB",
+  "base_model": "distilbert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DistilBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/distilbert",
+      "snippet": "DistilBERT is pretrained by knowledge distillation to create a smaller model with faster inference and requires less compute to train. Through a triple loss objective during pretraining, language modeling loss, distillation loss, cosine-distance loss, DistilBERT demonstrates similar performance to a larger transformer language model."
+    },
+    {
+      "title": "FranJCastilloC/PII-Detection-Redaction-Pipeline - GitHub",
+      "url": "https://github.com/FranJCastilloC/PII-Detection-Redaction-Pipeline",
+      "snippet": "The model multiplies the baseline&#x27;s F1 by 2.3 on its own distribution (0.952 vs 0.413) and cuts PII leakage from 0.549 to 0.062 — from more than half of all entities escaping, to one in sixteen."
+    },
+    {
+      "title": "dslim/distilbert-NER · Hugging Face",
+      "url": "https://huggingface.co/dslim/distilbert-NER",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/distilbert.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/distilbert.md",
+      "snippet": "DistilBERT is pretrained by knowledge distillation to create a smaller model with faster inference and requires less compute to train. Through a triple loss objective during pretraining, language modeling loss, distillation loss, cosine-distance loss, DistilBERT demonstrates similar performance to a larger transformer language model. You can find all the original DistilBERT checkpoints under ..."
+    },
+    {
+      "title": "Towards Scalable Privacy-Aware Text Classification: A DistilBERT-Based ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1877050925026432",
+      "snippet": "To overcome this, we chose to leverage an encoder model called DistilBERT to do the Named Entity Recognition (NER) task on PII detection. And to further enhance the detection system, we decided to add a confidentiality classification to calculate how safe a user input is from unwanted PII exposure."
+    }
+  ]
+}

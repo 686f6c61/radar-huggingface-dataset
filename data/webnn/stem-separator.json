@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "webnn/stem-separator",
+  "slug": "webnn-stem-separator",
+  "author": "webnn",
+  "url": "https://huggingface.co/webnn/stem-separator",
+  "created_at": "2026-09-24T22:27:48.000Z",
+  "updated_at": "2026-09-24T22:27:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "webnn",
+    "audio-source-separation",
+    "htdemucs",
+    "audio-to-audio",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170747491,
+  "storage_human": "171 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Stem Splitter | LALAL.AI",
+      "url": "https://www.lalal.ai/stem-splitter/",
+      "snippet": "AI stem separation is only as good as the model behind it and the quality of the source track. According to our comparison tests, some competing tools can introduce muffling, hissing, crackling, or residual signal in the wrong stem, while LALAL.AI Stem Splitter preserves clarity and makes the extracted audio more usable right away."
+    },
+    {
+      "title": "AI Stem Splitter Free: Try Stem Separation Online | Tad AI",
+      "url": "https://tad.ai/stem-splitter",
+      "snippet": "The quality of AI stem separation depends on the model behind it and your source audio. Tad AI stem splitter preserves clarity and makes the extracted stems more usable right away."
+    },
+    {
+      "title": "7 Best AI Stem Splitter Tools for Audio Separation",
+      "url": "https://clumi.ai/blog/stem-splitter/",
+      "snippet": "Explore the best AI stem splitter tools to isolate vocals, drums, bass, piano, and more. Compare features to find the right tool for your workflow."
+    },
+    {
+      "title": "Splitter AI — Isolate instruments from a song",
+      "url": "https://vocalremover.org/splitter-ai",
+      "snippet": "AI-Powered Music Separator This app allows to separate music into an individual streams such as vocal, bass, percussion, and lets you rebalance their individual volumes. This is the simplest way to get multitracks from any song. Once you choose a song, artificial intelligence will separate music into stems: vocals, bass, drums, others. Processing usually takes about 1 minute."
+    },
+    {
+      "title": "Free AI Stem Splitter — Vocals, Drums & Bass | SoundTools",
+      "url": "https://soundtools.io/stem-splitter/",
+      "snippet": "Free AI stem splitter online — split songs into vocals, drums, bass, and other stems. Download each or all four as a ZIP. Files never leave your device."
+    }
+  ]
+}

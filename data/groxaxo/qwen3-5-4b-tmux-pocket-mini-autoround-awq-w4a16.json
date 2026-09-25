@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "groxaxo/Qwen3.5-4B-Tmux-Pocket-Mini-AutoRound-AWQ-W4A16",
+  "slug": "groxaxo-qwen3-5-4b-tmux-pocket-mini-autoround-awq-w4a16",
+  "author": "groxaxo",
+  "url": "https://huggingface.co/groxaxo/Qwen3.5-4B-Tmux-Pocket-Mini-AutoRound-AWQ-W4A16",
+  "created_at": "2026-09-24T23:20:52.000Z",
+  "updated_at": "2026-09-24T23:23:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "qwen3.5",
+    "text-only",
+    "awq",
+    "auto-round",
+    "4-bit",
+    "tmux-pocket",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1114166016,
+  "parameters_human": "1.11B",
+  "storage_bytes": 3147669767,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.5: The Complete Guide - Benchmarks, Local Setup, and How It ...",
+      "url": "https://techie007.substack.com/p/qwen-35-the-complete-guide-benchmarks",
+      "snippet": "Alibaba&#x27;s Qwen team dropped Qwen 3.5 on February 16, 2026, and it immediately shook up the AI landscape."
+    },
+    {
+      "title": "groxaxo (Facu Vlad J) - Hugging Face",
+      "url": "https://huggingface.co/groxaxo/models",
+      "snippet": "Cloud Engineer · AI Automation Engineer · Quantization Gremlin I build cloud systems, automate the boring parts, and squeeze absurd efficiency out of AI models. Into infra, agents, vLLM, local G..."
+    },
+    {
+      "title": "Qwen3.5: Towards Native Multimodal Agents",
+      "url": "https://qwen.ai/blog?id=qwen3.5",
+      "snippet": "QWEN CHAT GitHub Hugging Face ModelScope DISCORD We are delighted to announce the official release of Qwen3.5, introducing the open-weight of the first model in the Qwen3.5 series, namely Qwen3.5-397B-A17B. As a native vision-language model, Qwen3.5-397B-A17B demonstrates outstanding results across a full range of benchmark evaluations, including reasoning, coding, agent capabilities, and ..."
+    },
+    {
+      "title": "Qwen3.5 & Qwen3.6 Usage Guide - vLLM Recipes",
+      "url": "https://docs.vllm.ai/projects/recipes/en/stable/Qwen/Qwen3.5.html",
+      "snippet": "Qwen3.5 & Qwen3.6 Usage Guide Qwen3.5 and Qwen3.6 are multimodal mixture-of-experts models featuring a gated delta networks architecture. This guide covers how to efficiently deploy and serve both models using vLLM."
+    },
+    {
+      "title": "Qwen3.5 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.5",
+      "snippet": "Qwen3.5 is Alibaba&#x27;s new model family, including Qwen3.5- 35B -A3B, 27B, 122B -A10B and 397B -A17B and the new Small series: Qwen3.5-0.8B, 2B, 4B and 9B. The multimodal hybrid reasoning LLMs deliver the strongest performances for their sizes."
+    }
+  ]
+}

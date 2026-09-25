@@ -5,7 +5,7 @@
   "author": "IsValorum",
   "url": "https://huggingface.co/IsValorum/Occamy-1.0-APEX-I-MiniPlus-V2.1-Abliterated-GGUF",
   "created_at": "2026-09-19T22:27:42.000Z",
-  "updated_at": "2026-09-23T19:37:57.000Z",
+  "updated_at": "2026-09-25T00:35:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -64,7 +64,7 @@
     "conversational"
   ],
   "likes": 5,
-  "downloads_30d": 2548,
+  "downloads_30d": 2836,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

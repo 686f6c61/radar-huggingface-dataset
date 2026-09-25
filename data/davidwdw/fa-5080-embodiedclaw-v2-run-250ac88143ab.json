@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-5080-embodiedclaw-v2-run-250ac88143ab",
+  "slug": "davidwdw-fa-5080-embodiedclaw-v2-run-250ac88143ab",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-5080-embodiedclaw-v2-run-250ac88143ab",
+  "created_at": "2026-09-24T19:41:26.000Z",
+  "updated_at": "2026-09-24T19:51:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 810084975,
+  "storage_human": "810 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2604.13800] EmbodiedClaw: Conversational Workflow Execution for ...",
+      "url": "https://arxiv.org/abs/2604.13800",
+      "snippet": "Embodied AI research is increasingly moving beyond single-task, single-environment policy learning toward multi-task, multi-scene, and multi-model settings. This shift substantially increases the engineering overhead and development time required for stages such as evaluation environment construction, trajectory collection, model training, and evaluation. To address this challenge, we propose ..."
+    },
+    {
+      "title": "EmbodiedClaw: Conversational Workflow Execution for Embodied AI ...",
+      "url": "https://arxivlens.com/paperview/details/embodiedclaw-conversational-workflow-execution-for-embodied-ai-development-9805-4e0e2b01",
+      "snippet": "Embodied AI research is increasingly moving beyond single-task, single-environment policy learning toward multi-task, multi-scene, and multi-model settings. This shift substantially increases the engineering overhead and development time required for stages such as evaluation environment construction, trajectory collection, model training, and ..."
+    },
+    {
+      "title": "EmbodiedClaw: Conversational Workflow Execution for Embodied AI Development",
+      "url": "https://www.catalyzex.com/paper/embodiedclaw-conversational-workflow",
+      "snippet": "EmbodiedClaw: Conversational Workflow Execution for Embodied AI Development: Paper and Code. Embodied AI research is increasingly moving beyond single-task, single-environment policy learning toward multi-task, multi-scene, and multi-model settings. This shift substantially increases the engineering overhead and development time required for stages such as evaluation environment construction ..."
+    },
+    {
+      "title": "[PDF] EmbodiedClaw: Conversational Workflow Execution for Embodied AI ...",
+      "url": "https://www.semanticscholar.org/paper/EmbodiedClaw%3A-Conversational-Workflow-Execution-for-Zhou-Sun/e65374aa663cdbe129bff533a525d71f5bdb63fa",
+      "snippet": "EmbodiedClaw, a conversational agent that turns high-frequency, high-cost embodied research activities, including environment creation and revision, benchmark transformation, trajectory synthesis, model evaluation, and asset expansion, into executable skills, is instantiated. Embodied AI research is increasingly moving beyond single-task, single-environment policy learning toward multi-task ..."
+    },
+    {
+      "title": "EmbodiedClaw: Conversational Workflow Execution for Embodied AI ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/embodiedclaw-conversational-workflow-execution-embodied-ai-development",
+      "snippet": "Conclusion EmbodiedClaw represents a meaningful step toward making embodied AI development more accessible and interactive. By leveraging conversational interfaces and language models, it reduces friction in a field that has historically demanded specialized technical knowledge."
+    }
+  ]
+}

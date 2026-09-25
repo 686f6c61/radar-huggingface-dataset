@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ramgpt/Olmo-3-7B-Instruct-OPSA-Code-GGUF",
+  "slug": "ramgpt-olmo-3-7b-instruct-opsa-code-gguf",
+  "author": "ramgpt",
+  "url": "https://huggingface.co/ramgpt/Olmo-3-7B-Instruct-OPSA-Code-GGUF",
+  "created_at": "2026-09-24T18:57:54.000Z",
+  "updated_at": "2026-09-24T19:00:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "base_model:Tuwhy/Olmo-3-7B-Instruct-OPSA-Code",
+    "base_model:quantized:Tuwhy/Olmo-3-7B-Instruct-OPSA-Code",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 4471601632,
+  "storage_human": "4.5 GB",
+  "base_model": "Tuwhy/Olmo-3-7B-Instruct-OPSA-Code",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Olmo-3-7B-Instruct-OPSA-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Olmo-3-7B-Instruct-OPSA-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "allenai/Olmo-3-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/allenai/Olmo-3-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OLMo 3 7B Instruct local AI model | LocalClaw",
+      "url": "https://localclaw.io/models/olmo3-7b-instruct",
+      "snippet": "OLMo 3 7B Instruct: 7B local AI model guide with RAM requirements, Q4_K_M quantization, catalogue ratings, use cases and LM Studio setup."
+    },
+    {
+      "title": "[2512.13961] Olmo 3 - arXiv.org",
+      "url": "https://arxiv.org/abs/2512.13961",
+      "snippet": "We introduce Olmo 3, a family of state-of-the-art, fully-open language models at the 7B and 32B parameter scales. Olmo 3 model construction targets long-context reasoning, function calling, coding, instruction following, general chat, and knowledge recall. This release includes the entire model flow, i.e., the full lifecycle of the family of models, including every stage, checkpoint, data ..."
+    },
+    {
+      "title": "OLMo 3 7B Instruct: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/olmo-3-7b-instruct",
+      "snippet": "About OLMo 3 7B Instruct OLMo 3 7B Instruct is an instruction-tuned open-source model by Ai2 optimized for low-latency dialogue, multi-turn interactions, and local assistants. It combines verifiable post-training with full training pipeline transparency over a 65K context."
+    }
+  ]
+}

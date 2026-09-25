@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "4fhct4sd/Qwen3.5-4b_Adomic",
+  "slug": "4fhct4sd-qwen3-5-4b_adomic",
+  "author": "4fhct4sd",
+  "url": "https://huggingface.co/4fhct4sd/Qwen3.5-4b_Adomic",
+  "created_at": "2026-09-24T19:01:51.000Z",
+  "updated_at": "2026-09-24T19:09:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 5286149056,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepL Translator | World's Most Accurate Translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translate texts & full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day."
+    },
+    {
+      "title": "Home - DeepL",
+      "url": "https://home.deepl.com/en/home",
+      "snippet": "DeepL Translation Flow: New AI-powered workflows for key use cases and integrations; The ROI of AI-native translation; What MCP …"
+    },
+    {
+      "title": "AI document translation: instant, accurate, secure | DeepL",
+      "url": "https://app.deepl.com/en/features/document-translation",
+      "snippet": "DeepL translates all major file types, including both scanned and digitally created PDFs and the most common file formats. Just drag …"
+    },
+    {
+      "title": "Traduction IA sûre et évolutive pour entreprises | DeepL",
+      "url": "https://home.deepl.com/fr/products/translator",
+      "snippet": "DeepL Traducteur centralise les opérations de traduction au sein d’une plateforme multilingue axée sur l’IA. Chaque équipe peut …"
+    },
+    {
+      "title": "Traduction de documents instantanée, précise et sûre | DeepL",
+      "url": "https://app.deepl.com/fr/features/document-translation",
+      "snippet": "Traduisez rapidement et en toute sécurité des fichiers dans tous les principaux formats et dans plus de 100 langues. DeepL …"
+    }
+  ]
+}

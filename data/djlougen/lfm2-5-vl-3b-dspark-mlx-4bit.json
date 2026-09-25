@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "DJLougen/LFM2.5-VL-3B-DSpark-MLX-4bit",
+  "slug": "djlougen-lfm2-5-vl-3b-dspark-mlx-4bit",
+  "author": "DJLougen",
+  "url": "https://huggingface.co/DJLougen/LFM2.5-VL-3B-DSpark-MLX-4bit",
+  "created_at": "2026-09-24T20:47:06.000Z",
+  "updated_at": "2026-09-24T20:47:09.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "mlx-vlm",
+    "speculative-decoding",
+    "dflash",
+    "draft-model",
+    "lfm2-vl",
+    "4-bit",
+    "base_model:LiquidAI/LFM2.5-VL-3B-DSpark",
+    "base_model:quantized:LiquidAI/LFM2.5-VL-3B-DSpark",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 279468801,
+  "parameters_human": "279.5M",
+  "storage_bytes": 251454064,
+  "storage_human": "251 MB",
+  "base_model": "LiquidAI/LFM2.5-VL-3B-DSpark, LiquidAI/LFM2.5-VL-3B-MLX-bf16, LiquidAI/LFM2.5-VL-3B-MLX-8bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM2.5-VL-DSpark: Accelerating vision-language models on edge and ...",
+      "url": "https://www.liquid.ai/blog/lfm2-5-vl-dspark",
+      "snippet": "Today, we release an experimental DSpark draft model for our vision-language model (VLM) LFM2.5-VL-3B. As with our recently released LFM2.5-DSpark drafter models for our text-based Liquid Foundation Models (LFMs), it trades a minimal increase in memory footprint for substantially faster decoding without changing output quality."
+    },
+    {
+      "title": "LFM2.5-VL-3B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-vl-3b",
+      "snippet": "← Back to Vision Models LFM2.5-VL-3B is Liquid AI&#x27;s most capable vision-language model, with strong grounding, screen and document understanding, and function calling. It builds on the LFM2.5-2.6B backbone with a SigLIP2 NaFlex image encoder, and answers directly for low-latency inference on-device and in the cloud."
+    },
+    {
+      "title": "Liquid AI adds a 280M draft model to speed up its 3B vision model",
+      "url": "https://runtimewire.com/article/liquid-ai-lfm2-5-vl-dspark-vision-inference",
+      "snippet": "Liquid AI released a 280M-parameter draft model for LFM2.5-VL-3B, reporting faster decoding on Apple devices and Nvidia H100 GPUs, with smaller end-to-end gains."
+    },
+    {
+      "title": "LFM2.5-DSpark: Up to 3.2x Faster Inference from H100 to MacBook",
+      "url": "https://www.liquid.ai/blog/lfm2.5-dspark",
+      "snippet": "LFM2.5-DSpark speculative decoding delivers up to 3.2x faster inference on GPU and 2.9x on-device. Day-one llama.cpp and SGLang support."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-VL-3B-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-MLX-4bit",
+      "snippet": "LFM2.5-VL-3B is a vision-language model built on the LFM2.5-2.6B backbone with a SigLIP2 NaFlex vision encoder (400M). It supports OCR, document comprehension, multilingual vision understanding, bounding box prediction, and function calling."
+    }
+  ]
+}

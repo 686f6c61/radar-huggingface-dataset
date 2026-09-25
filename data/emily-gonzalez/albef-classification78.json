@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "emily-gonzalez/albef-classification78",
+  "slug": "emily-gonzalez-albef-classification78",
+  "author": "emily-gonzalez",
+  "url": "https://huggingface.co/emily-gonzalez/albef-classification78",
+  "created_at": "2026-09-24T23:33:24.000Z",
+  "updated_at": "2026-09-24T23:33:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Emily : Matériels de manutention & nettoyage pour l'Agriculture & l ...",
+      "url": "https://www.emily.fr/",
+      "snippet": "Depuis 45 ans Emily conçoit et fabrique des matériels de manutention et de nettoyage pour l’agriculture, l’industrie et le BTP."
+    },
+    {
+      "title": "Prénom Emily (fille) : signification, origine, caractère, sainte, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/emily/prenom-4430",
+      "snippet": "Quelle est l'origine du prénom Emily ? Emily est un prénom anglophone d'origine latine. Emily peut aussi être considéré comme un …"
+    },
+    {
+      "title": "Agriculture • Emily Ets",
+      "url": "https://www.emily.fr/produits/fr-agriculture/",
+      "snippet": "Accessoires et équipements pour vos travaux agricoles : alimentation d'élevage, paillage, balayage et nettoyage, accessoires de …"
+    },
+    {
+      "title": "Emily (film, 2022) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Emily_(film,_2022)",
+      "snippet": "Emily est un film biographique américano - britannique écrit et réalisé par Frances O'Connor et sorti en 2022. Il dépeint la vie de …"
+    },
+    {
+      "title": "Emily - Film 2022 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=283208.html",
+      "snippet": "Emily est un film réalisé par Frances O'Connor avec Emma Mackey, Fionn Whitehead. Synopsis : Aussi énigmatique que …"
+    }
+  ]
+}

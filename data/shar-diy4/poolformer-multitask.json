@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Shar-diy4/poolformer-multitask",
+  "slug": "shar-diy4-poolformer-multitask",
+  "author": "Shar-diy4",
+  "url": "https://huggingface.co/Shar-diy4/poolformer-multitask",
+  "created_at": "2026-09-25T00:03:43.000Z",
+  "updated_at": "2026-09-25T00:03:49.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schär | Préparé avec le meilleur de nous-mêmes - Schaer",
+      "url": "https://www.schaer.com/fr-fr",
+      "snippet": "Depuis plus de 35 ans, Schär se consacre à la recherche et au développement de produits sans gluten de haute qualité pour une …Read more"
+    },
+    {
+      "title": "Shar - Forgotten Realms Wiki",
+      "url": "https://forgottenrealms.fandom.com/wiki/Shar",
+      "snippet": "Selûne's essence tore through Shar, bonding with some of Shar's essence and pulling it loose. This magical energy combined to …"
+    },
+    {
+      "title": "Boutique Schär - Schaer",
+      "url": "https://shop.schaer.com/fr/fr",
+      "snippet": "Éliminer le gluten de son alimentation ne veut pas dire éliminer les bonnes saveurs de son assiette ! Apéritif, entrée, snack, goûter, …"
+    },
+    {
+      "title": "Shar - bg3.wiki",
+      "url": "https://bg3.wiki/wiki/Shar",
+      "snippet": "Shar is considered an evil goddess, and as such her faithful are both feared and reviled. Sharrans rarely flaunt their worship openly …"
+    },
+    {
+      "title": "shar - YouTube",
+      "url": "https://www.youtube.com/@shar",
+      "snippet": "TourBox: my favorite drawing and editing tool! shar 90K views • 2 months ago CC 57:48"
+    }
+  ]
+}

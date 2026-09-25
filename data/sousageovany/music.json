@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sousageovany/Music",
+  "slug": "sousageovany-music",
+  "author": "sousageovany",
+  "url": "https://huggingface.co/sousageovany/Music",
+  "created_at": "2026-09-24T22:29:58.000Z",
+  "updated_at": "2026-09-24T22:29:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Survey of AI Music Generation Tools and Models",
+      "url": "https://arxiv.org/pdf/2308.12982",
+      "snippet": "1 Introduction Music is an integral part of human culture that has evolved significantly over the centuries, adapting to different cultures, styles, and technologies [18]. Music generation by models has also undergone a paradigm shift with the advancements in AI and machine learning [38]. Artificial intelligence (AI) music generation tools provide musicians and composers with new and ..."
+    },
+    {
+      "title": "Artificial intelligence in music - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_in_music",
+      "snippet": "Music software utilizes artificial intelligence (AI) to generate, classify, or recommend music. [1] Similar to its applications in other fields, AI in music simulates complex human cognitive processes. A prominent feature is the capability of an AI algorithm to learn from historical data, such as in computer accompaniment technology, where the AI listens to a human performer and accompanies ..."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-Music3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-Music3",
+      "snippet": "MiniMax Music 3 MiniMax Music 3 is a high-performance music generation model for creating complete songs up to five minutes long. Conditioned on lyrics and a detailed music description, it generates structurally coherent songs with expressive vocals, evolving arrangements, and stable long-form audio quality."
+    },
+    {
+      "title": "AIVA, the AI Music Generation Assistant",
+      "url": "https://www.aiva.ai/",
+      "snippet": "AIVA, your AI music generation assistant AIVA is an AI music generation assistant that allows you to generate new songs in more than 250 different styles, in a matter of seconds. Whether a complete beginner or a seasoned professional in music making, use the power of generative AI to create your own songs."
+    },
+    {
+      "title": "UMG & Sony Sue Suno In Lawsuit After Launch of New AI Music Model",
+      "url": "https://www.billboard.com/pro/umg-sony-hit-suno-with-lawsuit-after-new-ai-music-model/",
+      "snippet": "Universal Music Group and Sony Music have filed a new lawsuit against Suno, arguing the company&#x27;s new AI model is still illegal and stealing music."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Albrown76/postdoc-few-shot-multimodal",
+  "slug": "albrown76-postdoc-few-shot-multimodal",
+  "author": "Albrown76",
+  "url": "https://huggingface.co/Albrown76/postdoc-few-shot-multimodal",
+  "created_at": "2026-09-24T23:44:22.000Z",
+  "updated_at": "2026-09-24T23:44:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QZZN论坛 公务员考试论坛",
+      "url": "https://bbs.qzzn.com/",
+      "snippet": "QZZN公务员论坛是知名公务员考试论坛和公务员论坛，您可以在QZZN获得最新的公务员考试资讯、经验、资料、真题，还可以认识 …Read more"
+    },
+    {
+      "title": "【excel】中的DISPIMG函数如何使用？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/3f16e003a2ed366491c10396.html",
+      "snippet": "May 26, 2020 · 【excel】中的DISPIMG函数如何使用,该函数用于单元格内插入图片。Read more"
+    },
+    {
+      "title": "如何快速查看自己的电脑IP地址 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/48b37f8d8ee70d5b646488df.html",
+      "snippet": "Aug 30, 2025 · 使用命令提示符 (最快速通用) 这种方法在所有Windows版本上都可以用，非常直接。 1、打开“运行”对话框： 按下键盘 …Read more"
+    },
+    {
+      "title": "三千多人招三个，还挺厉害 - 招聘竞争激烈，人才选拔严格 - 安徽公务 …",
+      "url": "https://bbs.qzzn.com/thread-17518845-1-1.html",
+      "snippet": "Sep 16, 2026 · 三千多人竞争三个职位，显示招聘竞争激烈，入选者均为优秀人才。 三千多人招三个，还挺厉害，能考上的都是顶尖 …Read more"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/the-format-of-the-cell-cant-be-saved-in-csv-file/2bedad17-2a28-4b52-953f-3340b9a31ca8",
+      "snippet": "Microsoft CommunityRead more"
+    }
+  ]
+}

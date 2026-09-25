@@ -4,8 +4,8 @@
   "slug": "sddass21-myawesomemodel-testrepo",
   "author": "sddass21",
   "url": "https://huggingface.co/sddass21/MyAwesomeModel-TestRepo",
-  "created_at": "2026-09-20T20:20:04.000Z",
-  "updated_at": "2026-09-20T20:20:09.000Z",
+  "created_at": "2026-09-24T22:30:24.000Z",
+  "updated_at": "2026-09-24T22:30:31.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 51,
+  "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-23T03:01:04.261Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

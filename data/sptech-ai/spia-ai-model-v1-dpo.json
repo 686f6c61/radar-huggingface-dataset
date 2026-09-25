@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sptech-ai/spia.ai.model.v1-dpo",
+  "slug": "sptech-ai-spia-ai-model-v1-dpo",
+  "author": "sptech-ai",
+  "url": "https://huggingface.co/sptech-ai/spia.ai.model.v1-dpo",
+  "created_at": "2026-09-24T19:56:57.000Z",
+  "updated_at": "2026-09-24T19:57:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:sptech-ai/spia.ai.model.v1",
+    "base_model:finetune:sptech-ai/spia.ai.model.v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32169626,
+  "storage_human": "32 MB",
+  "base_model": "sptech-ai/spia.ai.model.v1",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-25T02:22:25.039Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sptech-ai (SPTech AI) - Hugging Face",
+      "url": "https://huggingface.co/sptech-ai/models",
+      "snippet": "Org profile for SPTech AI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "alexshengzhili/llava-v1.5-13b-dpo · Hugging Face",
+      "url": "https://huggingface.co/alexshengzhili/llava-v1.5-13b-dpo",
+      "snippet": "The llava-v1.5-13b-dpo model is designed to enhance the instruction-following capabilities of multi-modal large language models (MLLMs), particularly in scenarios where visual instruction tuning might degrade language proficiency. This model leverages a novel Direct Preference Optimization (DPO) method, along with a curated 6K-entry VQA preference dataset, to achieve superior performance on ..."
+    },
+    {
+      "title": "Homepage 2026 | Sapia.ai",
+      "url": "https://sapia.ai/",
+      "snippet": "Watch Story Maria Dvorman Former Head of Recruitment at Holland & Barrett"
+    },
+    {
+      "title": "GitHub Pages - LLaVA",
+      "url": "https://llava-vl.github.io/",
+      "snippet": "🔥 [NEW!] LLaVA-1.5 achieves SoTA on 11 benchmarks, with just simple modifications to the original LLaVA, utilizes all public data, completes training in ~1 day on a single 8-A100 node, and surpasses methods that use billion-scale data. LLaVA represents a novel end-to-end trained large multimodal model that combines a vision encoder and Vicuna for general-purpose visual and language ..."
+    },
+    {
+      "title": "GitHub - zai-org/SCAIL-2: Official Implementation of SCAIL-2: Unifying ...",
+      "url": "https://github.com/zai-org/SCAIL-2",
+      "snippet": "This repository contains the official implementation code of SCAIL-2: Unifying Controlled Character Animation with End-to-end In-Context Conditioning. The code is for the inference of SCAIL-2 Model, an open-source model to support End-to-End Character Animation."
+    }
+  ]
+}

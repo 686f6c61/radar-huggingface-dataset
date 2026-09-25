@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wolf-felix/zero-shot-transfer",
+  "slug": "wolf-felix-zero-shot-transfer",
+  "author": "wolf-felix",
+  "url": "https://huggingface.co/wolf-felix/zero-shot-transfer",
+  "created_at": "2026-09-24T23:58:38.000Z",
+  "updated_at": "2026-09-24T23:58:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outils Wolf | Outillage de jardinage et tondeuses à gazon",
+      "url": "https://www.outils-wolf.fr/",
+      "snippet": "DES OUTILS QUI DURENT Depuis plus de 60 ans, les Outils WOLF sont réputés pour leur robustesse et leur longévité …Read more"
+    },
+    {
+      "title": "Wolf Lubricants",
+      "url": "https://www.wolflubes.com/fr-fr",
+      "snippet": "Une gamme complète de produits Wolf est un fournisseur de solutions tout-en-un, offrant un portefeuille de produits complet qui …"
+    },
+    {
+      "title": "Wolf - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wolf",
+      "snippet": "The wolf is the largest wild extant member of the family Canidae, and is further distinguished from other Canis species by its less …"
+    },
+    {
+      "title": "Tondeuses à gazon | Tondeuse professionnelle jardin | Outils Wolf",
+      "url": "https://www.outils-wolf.fr/gamme/tondeuses",
+      "snippet": "Les tondeuses à gazon Outils WOLF sont conçues pour apporter une qualité de tonte irréprochable et un rendement optimum, elles …"
+    },
+    {
+      "title": "WOLF France | Pompes à chaleur, Chaudières et énergie solaire",
+      "url": "https://www.wolf.eu/fr-fr",
+      "snippet": "WOLF exerce ses activités à l’international et est présent dans plus de 50 pays. Nos produits et solutions sont utilisés dans une …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yyyyyyhhhhhhhhhh/JABBA_LoRA",
+  "slug": "yyyyyyhhhhhhhhhh-jabba_lora",
+  "author": "yyyyyyhhhhhhhhhh",
+  "url": "https://huggingface.co/yyyyyyhhhhhhhhhh/JABBA_LoRA",
+  "created_at": "2026-09-24T19:46:15.000Z",
+  "updated_at": "2026-09-24T19:46:20.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tensorboard",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "template:sd-lora",
+    "stable-diffusion-xl",
+    "stable-diffusion-xl-diffusers",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77362775,
+  "storage_human": "77 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LoRA AI Models (18,011) | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 18,011 AI models tagged \"LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "jabba the hutt ジャバ・ザ・ハット XL - illustrious-noob-v1.0 | Illustrious LoRA ...",
+      "url": "https://civitai.com/models/320442/jabba-the-hutt-xl",
+      "snippet": "Explore a creative LoRA model inspired by Jabba the Hutt, designed for unique artistic interpretations and character concepts."
+    },
+    {
+      "title": "Jabba the Hutt AI LoRA Model | PixAI",
+      "url": "https://pixai.art/en/model/1620068531448088534",
+      "snippet": "It didn&#x27;t pass our content check — no worries, your model is still fully searchable and usable! Just swap in a cover that works for everyone. Use this LoRA Uploaded at May 29, 2023, 11:44 PM Uses 15.9k Reviews Excellent (1) Trigger Words Jabba Permissions Allow image generation & sharing Allow users to download this model Allow commercial use of generated images"
+    },
+    {
+      "title": "Jabba the Hutt - Star Wars - Illustrious | Illustrious LoRA | Civitai",
+      "url": "https://civitai.red/models/2644013/jabba-the-hutt-star-wars",
+      "snippet": "The slug-like alien gangster from the franchise Star Wars. Recommended Tags: jthsw, jabba the hutt, green skin, tan skin, orange sclera, slit pupil..."
+    },
+    {
+      "title": "LoRA Studio - AI Image Generation",
+      "url": "https://lorastudio.org/",
+      "snippet": "Train custom LoRA models and generate stunning images with AI-powered text prompts."
+    }
+  ]
+}

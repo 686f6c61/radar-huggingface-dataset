@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "anamika-mukherjee/nyay-mitra",
+  "slug": "anamika-mukherjee-nyay-mitra",
+  "author": "anamika-mukherjee",
+  "url": "https://huggingface.co/anamika-mukherjee/nyay-mitra",
+  "created_at": "2026-09-24T09:56:22.000Z",
+  "updated_at": "2026-09-24T22:12:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3242085736,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anamika-mukherjee/nyay-mitra · Hugging Face",
+      "url": "https://huggingface.co/anamika-mukherjee/nyay-mitra",
+      "snippet": "anamika-mukherjee / nyay-mitra Like 2 Transformers Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Nyaymitra - AI-Powered Judicial Copilot",
+      "url": "https://nyaymitra.co.in/",
+      "snippet": "Nyaymitra Your Judicial Copilot Empowering trial court judges with AI-driven legal research, intelligent case management, and instant access to precedents. Currently in prototype phase, actively gathering feedback from government stakeholders and judicial professionals."
+    },
+    {
+      "title": "GitHub - NavyaJain1710/Nyay_Mitra: NyayMitra V3 — AI Legal Assistant ...",
+      "url": "https://github.com/NavyaJain1710/Nyay_Mitra",
+      "snippet": "⚖️ NyayMitra V3 — Advanced AI Legal Assistant for India न्यायमित्र — Justice for Every Indian The most comprehensive AI-powered legal assistant — multilingual, voice-enabled, document-generating, and ML-powered."
+    },
+    {
+      "title": "NyayMitra-AI: Smart Judicial Case Agent for India&#x27;s Courts",
+      "url": "https://devpost.com/software/nyaymitra-ai-smart-judicial-case-agent-for-india-s-courts",
+      "snippet": "NyayMitra-AI is a multilingual agentic platform that automates judicial case management streamlining documentation research and scheduling to accelerate equitable transparent justice in India&#x27;s courts"
+    },
+    {
+      "title": "Nyaay AI",
+      "url": "https://www.nyaayai.com/",
+      "snippet": "Nyaay AI is a legal AI infrastructure platform developed in collaboration with the judiciary to modernise legal research, documentation, and case workflows across courts, law firms, governments, and enterprises, with transparency, security, and accountability at its core."
+    }
+  ]
+}

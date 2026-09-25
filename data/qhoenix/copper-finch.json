@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "qhoenix/copper-finch",
+  "slug": "qhoenix-copper-finch",
+  "author": "qhoenix",
+  "url": "https://huggingface.co/qhoenix/copper-finch",
+  "created_at": "2026-09-24T21:36:55.000Z",
+  "updated_at": "2026-09-24T21:37:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "torchvision",
+  "languages": [],
+  "tags": [
+    "torchvision",
+    "safetensors",
+    "image-classification",
+    "adversarial-training",
+    "efficientnet",
+    "perturb",
+    "bittensor",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119027848,
+  "parameters_human": "119.0M",
+  "storage_bytes": 476270096,
+  "storage_human": "476 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qhoenix (Ivan Marahovschi) - Hugging Face",
+      "url": "https://huggingface.co/qhoenix",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 15 hours ago ... updated a model about 15 hours ago"
+    },
+    {
+      "title": "PhoenixFinch (@phoenix_finch_real_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/phoenix_finch_real_/",
+      "snippet": "250 Followers, 186 Following, 151 Posts - See Instagram photos and videos from PhoenixFinch (@phoenix_finch_real_)"
+    },
+    {
+      "title": "PhoenixFinch (@PhoenixFinch_) / X",
+      "url": "https://x.com/PhoenixFinch_",
+      "snippet": "PhoenixFinch @PhoenixFinch_ Sep 19 oh yeah also at the same time I am workin on giving Rika a new model, startin with her anatomy before redoing her outfit #NoRefundingIt PhoenixFinch @PhoenixFinch_ Sep 14"
+    },
+    {
+      "title": "qhoenix/m7 · Hugging Face",
+      "url": "https://huggingface.co/qhoenix/m7",
+      "snippet": "qhoenix / m7 like 0 Model card FilesFiles and versions xet Community No model card Downloads last month -"
+    },
+    {
+      "title": "Qhoenix — Quantum Technologies",
+      "url": "https://qhoenix.com/",
+      "snippet": "This module implements a Grover&#x27;s Search algorithm on a 3-qubit quantum circuit to identify anomalous states within satellite telemetry data — a task that scales exponentially in complexity for classical systems. By encoding sensor readings into quantum states and applying an oracle that marks target anomalies, Qhoenix achieves a quadratic speedup over classical search — directly ..."
+    }
+  ]
+}

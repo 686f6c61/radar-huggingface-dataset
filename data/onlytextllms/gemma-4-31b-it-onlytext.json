@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OnlyTextLLMs/gemma-4-31B-it-OnlyText",
+  "slug": "onlytextllms-gemma-4-31b-it-onlytext",
+  "author": "OnlyTextLLMs",
+  "url": "https://huggingface.co/OnlyTextLLMs/gemma-4-31B-it-OnlyText",
+  "created_at": "2026-09-24T19:48:14.000Z",
+  "updated_at": "2026-09-24T19:48:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_text",
+    "text-generation",
+    "conversational",
+    "text-only",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697307708,
+  "parameters_human": "30.70B",
+  "storage_bytes": 61408303341,
+  "storage_human": "61.4 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-31B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-31B",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "google/gemma-4-31B-it · Why Gemma4 can&#x27;t recognize the entire text on ...",
+      "url": "https://huggingface.co/google/gemma-4-31B-it/discussions/12",
+      "snippet": "I&#x27;ve been testing the model in Google AI Studio. If you provide a screenshot of 1 page of any document, the model only extract 1-2 sentences. Afterwards, it&#x27;s going to the infinite loop. I didn&#x27;t s..."
+    },
+    {
+      "title": "gemma4:31b - ollama.com",
+      "url": "https://ollama.com/library/gemma4:31b",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Google/gemma-4-31B-it | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Google/gemma-4-31B-it",
+      "snippet": "Google&#x27;s unified multimodal Gemma 4 dense model (31B) with native text, image, and audio, plus thinking mode and tool-use protocol."
+    }
+  ]
+}

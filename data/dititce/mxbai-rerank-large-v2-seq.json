@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "dititce/mxbai-rerank-large-v2-seq",
+  "slug": "dititce-mxbai-rerank-large-v2-seq",
+  "author": "dititce",
+  "url": "https://huggingface.co/dititce/mxbai-rerank-large-v2-seq",
+  "created_at": "2026-09-24T18:37:17.000Z",
+  "updated_at": "2026-09-24T18:45:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "fr",
+    "ar",
+    "bn",
+    "ru",
+    "id",
+    "sw",
+    "te",
+    "th"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-classification",
+    "sentence-transformers",
+    "text-ranking",
+    "en",
+    "zh",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "fr",
+    "ar",
+    "bn",
+    "ru",
+    "id",
+    "sw",
+    "te",
+    "th",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543717376,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098894936,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mixedbread-ai/mxbai-rerank-large-v2 · Hugging Face",
+      "url": "https://huggingface.co/mixedbread-ai/mxbai-rerank-large-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - mixedbread-ai/mxbai-rerank: Crispy reranking models by ...",
+      "url": "https://github.com/mixedbread-ai/mxbai-rerank",
+      "snippet": "We offer multiple model variants. For more details, see our mxbai-rerank-v2 technical blog post. mxbai-rerank-base-v2 (0.5B) - Best balance of speed and accuracy mxbai-rerank-large-v2 (1.5B) - Highest accuracy, still with excellent speed"
+    },
+    {
+      "title": "mxbai-rerank · PyPI",
+      "url": "https://pypi.org/project/mxbai-rerank/",
+      "snippet": "Installation ... Quick Start ... Models We offer multiple model variants. For more details, see our mxbai-rerank-v2 technical blog post. mxbai-rerank-base-v2 (0.5B) - Best balance of speed and accuracy mxbai-rerank-large-v2 (1.5B) - Highest accuracy, still with excellent speed Legacy Models For more details, see our mxbai-rerank-v1 technical ..."
+    },
+    {
+      "title": "michaelfeil/mxbai-rerank-large-v2-seq · Hugging Face",
+      "url": "https://huggingface.co/michaelfeil/mxbai-rerank-large-v2-seq",
+      "snippet": "🍞 mxbai-rerank-large-v2 This is the large model in our family of powerful reranker models. You can learn more about the models in our blog post. We have two models: mxbai-rerank-base-v2 mxbai-rerank-large-v2 (🍞) The technical report is coming soon! 🌟 Features state-of-the-art performance and strong efficiency"
+    },
+    {
+      "title": "mxbai-rerank-large-v2: Open-Source Text Ranking Model",
+      "url": "https://dev.co/ai/llms/mxbai-rerank-large-v2",
+      "snippet": "mxbai-rerank-large-v2 mxbai-rerank-large-v2 is a 1.5B-parameter text ranking model from mixedbread-ai, distributed under Apache 2.0. It ranks relevance of text passages to queries and supports 40+ languages. The model is publicly available (not gated), has modest download activity (47K), and appears actively maintained as of April 2026. It is suitable for retrieval-augmented generation (RAG ..."
+    }
+  ]
+}

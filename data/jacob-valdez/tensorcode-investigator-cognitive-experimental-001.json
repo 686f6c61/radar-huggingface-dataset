@@ -5,7 +5,7 @@
   "author": "jacob-valdez",
   "url": "https://huggingface.co/jacob-valdez/tensorcode-investigator-cognitive-experimental-001",
   "created_at": "2026-09-21T16:48:06.000Z",
-  "updated_at": "2026-09-21T16:52:09.000Z",
+  "updated_at": "2026-09-24T19:35:28.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,8 +17,7 @@
     "tensorcode",
     "safetensors",
     "experimental",
-    "evidence-grounded",
-    "en",
+    "evidence-conditioned-question-answering",
     "region:us"
   ],
   "likes": 0,
@@ -26,8 +25,8 @@
   "trending_score": 0,
   "parameters": 259627940,
   "parameters_human": "259.6M",
-  "storage_bytes": 1038600277,
-  "storage_human": "1.0 GB",
+  "storage_bytes": 2077200554,
+  "storage_human": "2.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

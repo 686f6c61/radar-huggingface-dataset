@@ -5,7 +5,7 @@
   "author": "pt810",
   "url": "https://huggingface.co/pt810/Ovis-Omni-Embedding-3B-gptq-mixed-w4-w4-w8",
   "created_at": "2026-09-24T01:31:05.000Z",
-  "updated_at": "2026-09-24T01:40:56.000Z",
+  "updated_at": "2026-09-24T13:01:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-audio",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": 2935,
   "parameters_human": "2935",

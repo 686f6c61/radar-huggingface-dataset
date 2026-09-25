@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Luminia/so101_pick_place_black_cube_on_red",
+  "slug": "luminia-so101_pick_place_black_cube_on_red",
+  "author": "Luminia",
+  "url": "https://huggingface.co/Luminia/so101_pick_place_black_cube_on_red",
+  "created_at": "2026-09-24T19:40:03.000Z",
+  "updated_at": "2026-09-24T20:53:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51591814,
+  "parameters_human": "51.6M",
+  "storage_bytes": 210818939,
+  "storage_human": "211 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nara9951/so101-cube-pick-and-place · Hugging Face",
+      "url": "https://huggingface.co/nara9951/so101-cube-pick-and-place",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "so101_pick_black_cube_and_place_green_box_v3 - Hugging Face",
+      "url": "https://huggingface.co/datasets/kevinqyh0827/so101_pick_black_cube_and_place_green_box_v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuning SmolVLA for Cube Pick-and-Place on SO-101",
+      "url": "https://ggando.com/blog/smolvla-so101/",
+      "snippet": "The task: pick up a small cube from a randomized position and place it in a bowl. 10-second episodes, 30fps, recorded via teleoperation with the leader arm. SmolVLA vs ACT # SmolVLA is a 500M+ parameter model, but you only fine-tune ~50M (the action expert + projections). The vision encoder (SigLIP) and language model (SmolLM2) stay frozen."
+    },
+    {
+      "title": "PDF Collision-Free Pick and Place with the SO-101 Robot Arm",
+      "url": "https://yuxng.github.io/Courses/CS6341Fall2025/project_group_10.pdf",
+      "snippet": "This project aimed to implement an autonomous pick-and-place system using the SO-101 robotic arm to grasp colored cubes and place them on a target surface. We successfully completed robot calibration and collected 90 demonstration samples (30 samples per each cube color : Yellow, Green, Red) capturing manipulation trajectories."
+    },
+    {
+      "title": "Train a Pick and Place model on your SO100 (or SO101)",
+      "url": "https://www.youtube.com/watch?v=vC7E6ZmXBT8",
+      "snippet": "In this step-by-step tutorial, we&#x27;ll show you how to teach your SO100 or SO101 to perform pick and place tasks from scratch.Using the Phosphobot SO100 robot,..."
+    }
+  ]
+}

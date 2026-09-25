@@ -5,7 +5,7 @@
   "author": "chienhsinlin",
   "url": "https://huggingface.co/chienhsinlin/helioslm-toy",
   "created_at": "2026-09-24T00:23:01.000Z",
-  "updated_at": "2026-09-24T00:24:30.000Z",
+  "updated_at": "2026-09-24T06:51:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 9020056,
   "parameters_human": "9.0M",

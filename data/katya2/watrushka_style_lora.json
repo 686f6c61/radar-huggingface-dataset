@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Katya2/WATRUSHKA_style_LoRA",
+  "slug": "katya2-watrushka_style_lora",
+  "author": "Katya2",
+  "url": "https://huggingface.co/Katya2/WATRUSHKA_style_LoRA",
+  "created_at": "2026-09-24T22:32:49.000Z",
+  "updated_at": "2026-09-24T22:32:55.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tensorboard",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "template:sd-lora",
+    "stable-diffusion-xl",
+    "stable-diffusion-xl-diffusers",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77235643,
+  "storage_human": "77 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Katya2/WATRUSHKA_style_LoRA · Hugging Face",
+      "url": "https://huggingface.co/Katya2/WATRUSHKA_style_LoRA",
+      "snippet": "Instructions to use Katya2/WATRUSHKA_style_LoRA with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use Katya2/WATRUSHKA_style_LoRA with Diffusers:"
+    },
+    {
+      "title": "Katya - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1745399410884349406",
+      "snippet": "Generate stunning anime art with the &#x27;Katya&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Style LoRA AI Models (556) | Civitai",
+      "url": "https://civitai.com/tag/style%20lora",
+      "snippet": "Browse 556 AI models tagged \"Style LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Best Katya - Krea2 AI LORA - Free Download | Tensor.Art",
+      "url": "https://tensor.art/models/1026538606824577990",
+      "snippet": "Download Katya - free LORA KREA_2 AI model on TENSOR. By user_798060964602797787"
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    }
+  ]
+}

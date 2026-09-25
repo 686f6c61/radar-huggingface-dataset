@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_denoised_1a_s42_20260924_183051",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_st5_spk_acc_denoised_1a_s42_20260924_183051",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_denoised_1a_s42_20260924_183051",
+  "created_at": "2026-09-24T20:17:49.000Z",
+  "updated_at": "2026-09-24T20:18:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144439266,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578049458,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260917_125451 ...",
+      "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260917_125451/discussions",
+      "snippet": "Instructions to use xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260917_125451 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_s42_20260905_105814 · Hugging Face",
+      "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_s42_20260905_105814",
+      "snippet": "Instructions to use xelsoft-ai-lab/AfriVoxAccent_ST5_spk_s42_20260905_105814 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "XelSoft-ai - GitHub",
+      "url": "https://github.com/Xel-Soft-AI",
+      "snippet": "GitHub is where XelSoft-ai builds software."
+    },
+    {
+      "title": "Afrivoxaccent Qw3 Spk Acc 12hz Lora R16 Frac25 S42 20260913 111625 - AI ...",
+      "url": "https://free2aitools.com/model/xelsoft-ai-lab/afrivoxaccent_qw3_spk_acc_12hz_lora-r16_frac25_s42_20260913_111625",
+      "snippet": "Registry entry for model Afrivoxaccent Qw3 Spk Acc 12hz Lora R16 Frac25 S42 20260913 111625; source metadata pending."
+    },
+    {
+      "title": "Afrivoxaccent Qw3 Spk Acc Pre Wolof 12hz Lora R16 S42 20260919 224455",
+      "url": "https://free2aitools.com/model/xelsoft-ai-lab/afrivoxaccent_qw3_spk_acc_pre-wolof_12hz_lora-r16_s42_20260919_224455",
+      "snippet": "Registry entry for model Afrivoxaccent Qw3 Spk Acc Pre Wolof 12hz Lora R16 S42 20260919 224455; source metadata pending."
+    }
+  ]
+}

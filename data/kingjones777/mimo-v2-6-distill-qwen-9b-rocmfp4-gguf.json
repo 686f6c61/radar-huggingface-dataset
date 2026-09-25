@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "kingjones777/MiMo-V2.6-Distill-Qwen-9B-ROCmFP4-GGUF",
+  "slug": "kingjones777-mimo-v2-6-distill-qwen-9b-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/MiMo-V2.6-Distill-Qwen-9B-ROCmFP4-GGUF",
+  "created_at": "2026-09-24T22:12:43.000Z",
+  "updated_at": "2026-09-24T22:14:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "amd",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "amd-strix-halo",
+    "gfx1151",
+    "ryzen-ai-max",
+    "ryzen-ai-max-395",
+    "radeon-8060s",
+    "vision",
+    "multimodal",
+    "agentic",
+    "tool-use",
+    "image-text-to-text",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 10941072160,
+  "storage_human": "10.9 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Genially Des voix et des arts 2025 | Genially",
+      "url": "https://view.genially.com/6532442f82ea5000110c8bdc",
+      "snippet": "Oct 20, 2023 · Pejac Artiste peintre espagnol (1977) fissure apparue sur une des façades de l'hôpital universitaire Marqués de …Read more"
+    },
+    {
+      "title": "Des voix et des arts 2023 (version définitive) - view.genially.com",
+      "url": "https://view.genially.com/6422d82730e0050018e2f0c1/presentation-des-voix-et-des-arts-2023-version-definitive",
+      "snippet": "Mar 28, 2023 · Caspar david Friedrich Le voyageur contemplant une mer de nuages1818Huile sur toileCe tableau est en Allemagne, …"
+    },
+    {
+      "title": "Genially : Créez du contenu interactif, des présentations et bien plus ...",
+      "url": "https://genially.com/fr/",
+      "snippet": "Genially est l'outil tout-en-un pour créer du contenu interactif et animé. Concevez des présentations, infographies, quiz, escape …"
+    },
+    {
+      "title": "Tutoriel voix off | Modèles Genially",
+      "url": "https://genially.com/fr/modele/tutoriel-voix/",
+      "snippet": "Utilisez ce modèle pour créer un tutoriel ou un module de e-learning et donner voix à l’information . Rendez vos formations plus …"
+    },
+    {
+      "title": "Genially avec les Editions Hatier / Foucher",
+      "url": "https://genially.hatier.fr/",
+      "snippet": "Hatier/Foucher et Genially s’associent pour un enseignement plus ludique et collaboratif. Accédez facilement à de nombreuses …"
+    }
+  ]
+}

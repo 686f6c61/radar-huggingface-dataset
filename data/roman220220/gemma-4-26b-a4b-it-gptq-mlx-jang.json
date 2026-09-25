@@ -5,7 +5,7 @@
   "author": "roman220220",
   "url": "https://huggingface.co/roman220220/gemma-4-26B-A4B-it-gptq-mlx-jang",
   "created_at": "2026-09-23T01:57:14.000Z",
-  "updated_at": "2026-09-23T02:03:08.000Z",
+  "updated_at": "2026-09-24T22:43:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 56,
   "trending_score": 0,
   "parameters": 27802119758,
   "parameters_human": "27.80B",

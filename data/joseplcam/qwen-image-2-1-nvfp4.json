@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "joseplcam/Qwen-Image-2.1-NVFP4",
+  "slug": "joseplcam-qwen-image-2-1-nvfp4",
+  "author": "joseplcam",
+  "url": "https://huggingface.co/joseplcam/Qwen-Image-2.1-NVFP4",
+  "created_at": "2026-09-24T20:14:15.000Z",
+  "updated_at": "2026-09-24T20:14:52.000Z",
+  "license": "qwen-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "qwen-image",
+    "qwen-image-2.1",
+    "nvfp4",
+    "sglang",
+    "blackwell",
+    "text-to-image",
+    "image-editing",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "diffusers:QwenImage21Pipeline",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4443353088,
+  "parameters_human": "4.44B",
+  "storage_bytes": 14363984670,
+  "storage_human": "14.4 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen&#x27;s most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
+    },
+    {
+      "title": "Qwen-Image-2.1 - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen-Image-2.1 on RTX 5060 8 GB: Which Stages Fit, What Streams, and ...",
+      "url": "https://smeltcore.com/recipes/qwen-image-2-1-on-rtx-5060-8-gb-which-stages-fit-what-streams-and-the-nvfp4-swap/",
+      "snippet": "A community NVFP4 build of the same model — a format this card executes natively — fits under either loader, with 3.841 GiB left on paper under the default one. ⚠️ Read the licence before you download 14.24 GB. Qwen-Image-2.1 ships under a non-commercial licence."
+    },
+    {
+      "title": "BennyDaBall/Qwen-Image-2.1-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/BennyDaBall/Qwen-Image-2.1-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen-Image-2.1: Compact, Efficient, and Unified Image Creation",
+      "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+      "snippet": "Qwen-Image-2.1 unifies text-to-image generation and image editing in a single model, with just 7B parameters in its visual generation component and native support for generating and editing transparent images."
+    }
+  ]
+}

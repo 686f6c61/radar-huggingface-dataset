@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ApplePiesFromScratch/cut-receipt",
+  "slug": "applepiesfromscratch-cut-receipt",
+  "author": "ApplePiesFromScratch",
+  "url": "https://huggingface.co/ApplePiesFromScratch/cut-receipt",
+  "created_at": "2026-09-24T23:01:44.000Z",
+  "updated_at": "2026-09-24T23:01:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "process-calc",
+    "receipt",
+    "exact-arithmetic",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cp.beget.com",
+      "url": "https://cp.beget.com/domains",
+      "snippet": "Панель управления доменами на платформе Beget."
+    },
+    {
+      "title": "CALMNESS. - YouTube",
+      "url": "https://m.youtube.com/watch?v=q1ZZS51vIbU",
+      "snippet": "Wellness & Relief Focused LIVE 3 Hours of Forest River Sounds to Calm Your Nervous System & Let Stress Fade. #fyp #relatable"
+    },
+    {
+      "title": "Architectural European Columns | Digital Art",
+      "url": "https://store.forever.com/products/architectural-european-columns",
+      "snippet": "Item Details Get ready to travel across Europe with these realistic stone and marble column embellishments. Great for adding special …"
+    },
+    {
+      "title": "عندما يحاول لاعبو أبطال الكرة ابتكار مهارة جديدة #أبطال_الكرة #أبطال ...",
+      "url": "https://www.youtube.com/shorts/z9lb629lGws",
+      "snippet": "#أبطال_الكرة #أبطال_الكرة_الفرسان #انمي #ضحك #مواقف_مضحكة #InazumaEleven #كوميديا #أقوى_مهارة #fyp #shorts"
+    },
+    {
+      "title": "@realbiscuitspaw.bsky.social on Bluesky",
+      "url": "https://bsky.app/profile/realbiscuitspaw.bsky.social/post/3mw4227qhuk2y",
+      "snippet": "3 days ago · Post Orange Dick Tater Hater realbiscuitspaw.bsky.social did:plc:dgmiuoyozdy7yqb5eg45iqxd 2026-09-22T10:40:59.562Z"
+    }
+  ]
+}

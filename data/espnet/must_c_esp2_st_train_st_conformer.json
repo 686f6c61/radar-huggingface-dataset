@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "espnet/must_c_esp2_st_train_st_conformer",
+  "slug": "espnet-must_c_esp2_st_train_st_conformer",
+  "author": "espnet",
+  "url": "https://huggingface.co/espnet/must_c_esp2_st_train_st_conformer",
+  "created_at": "2026-09-24T21:01:40.000Z",
+  "updated_at": "2026-09-24T21:09:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "espnet",
+  "languages": [],
+  "tags": [
+    "espnet",
+    "st",
+    "must_c",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 231379723,
+  "storage_human": "231 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "espnet/must_c_st_train_st_conformer · Hugging Face",
+      "url": "https://huggingface.co/espnet/must_c_st_train_st_conformer",
+      "snippet": "Instructions to use espnet/must_c_st_train_st_conformer with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ESPnet How to use espnet/must_c_st_train_st_conformer with ESPnet: ... Notebooks Google Colab Kaggle ESPnet3 st model Model Model summary Usage Packaging Results Training config ..."
+    },
+    {
+      "title": "espnet/must_c_st_train_st_conformer at main - Hugging Face",
+      "url": "https://huggingface.co/espnet/must_c_st_train_st_conformer/tree/main",
+      "snippet": "Follow these links to get started. Libraries ESPnet How to use espnet/must_c_st_train_st_conformer with ESPnet: ... Notebooks Google Colab Kaggle main must_c_st_train_st_conformer 232 MB Ctrl+K Ctrl+K 1 contributor History:2 commits chenehk Upload folder using huggingface_hub e25212d verifiedabout 8 hours ago confUpload folder using huggingface ..."
+    },
+    {
+      "title": "GitHub - espnet/espnet: End-to-End Speech Processing Toolkit",
+      "url": "https://github.com/espnet/espnet",
+      "snippet": "ESPnet is an end-to-end speech processing toolkit built on PyTorch. It covers speech recognition, text-to-speech, speech translation, speech enhancement, speaker diarization, spoken language understanding, singing voice synthesis, speech language models, and more — with Kaldi -style reproducible recipes from data preparation to evaluation, and hundreds of pretrained models on Hugging Face."
+    },
+    {
+      "title": "GitHub - szmmm/ESPNet2",
+      "url": "https://github.com/szmmm/ESPNet2",
+      "snippet": "ESPnet is an end-to-end speech processing toolkit, mainly focuses on end-to-end speech recognition and end-to-end text-to-speech. ESPnet uses chainer and pytorch as a main deep learning engine, and also follows Kaldi style data processing, feature extraction/format, and recipes to provide a complete setup for speech recognition and other speech ..."
+    },
+    {
+      "title": "ESPnet - GitHub Pages",
+      "url": "https://espnet.github.io/espnet/index.html",
+      "snippet": "Get started with ESPnet! Running inference on existing ESPnet models pip install espnet espnet-model-zoo and start using it immediately. Fine-tuning ESPnet models pip install espnet and use the espnetez module for fine-tuning. Complete installation to fully reproduce ESPnet models Complete the full installation and use the existing recipes."
+    }
+  ]
+}

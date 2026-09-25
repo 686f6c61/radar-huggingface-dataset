@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "rewardhack/qwen3.6-35b-a3b-hacksft-vanilla-873rows-ep3",
+  "slug": "rewardhack-qwen3-6-35b-a3b-hacksft-vanilla-873rows-ep3",
+  "author": "rewardhack",
+  "url": "https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-vanilla-873rows-ep3",
+  "created_at": "2026-09-24T20:10:16.000Z",
+  "updated_at": "2026-09-25T00:40:28.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "reward-hacking",
+    "terminal-agent",
+    "inoculation-prompting",
+    "qwen3.6",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916583934,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.6-35b-a3b-hacksft-thinkoff-176rows-ep3 - Hugging Face",
+      "url": "https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-176rows-ep3",
+      "snippet": "Instructions to use rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-176rows-ep3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-1450rows-ep3",
+      "url": "https://featherless.ai/models/rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-1450rows-ep3",
+      "snippet": "The rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-1450rows-ep3 model is a 35.1 billion parameter Qwen3.6-A3B LoRA fine-tune, developed by Gaokai Zhang, Songwen Zhao, and Juan Manuel Suárez as part of the Terminal Wrench reward-hacking project. It is specifically trained on 1,450 hack-success trajectories with the teacher&#x27;s thinking disabled, making it optimized for direct action emission in ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B Complete Review: Alibaba&#x27;s Open-Source Coding Model ...",
+      "url": "https://dev.to/czmilo/qwen36-35b-a3b-complete-review-alibabas-open-source-coding-model-that-beats-frontier-giants-4382",
+      "snippet": "Qwen3.6-35B-A3B is the latest open-weight model from Alibaba&#x27;s Qwen team, officially released on April 16, 2026. It represents a significant leap in the Qwen series, specifically designed for agentic coding and repository-scale reasoning tasks."
+    },
+    {
+      "title": "FW-Qwen3.6-35B-A3B | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/FW-Qwen3.6-35B-A3B",
+      "snippet": "Qwen3.6-35B-A3B is a post-trained causal language model with a vision encoder that uses a hybrid stack of Gated DeltaNet and Gated Attention blocks with sparse Mixture-of-Experts routing, totaling 35B parameters with 3B activated per token. Built on direct feedback from the community, Qwen3.6 prioritizes stability and real-world utility, offering developers a more intuitive, responsive, and ..."
+    },
+    {
+      "title": "qwen3.6-35b-a3b-hacksft-rawcot-873rows-ep3 - friendli.ai",
+      "url": "https://friendli.ai/models/rewardhack/qwen3.6-35b-a3b-hacksft-rawcot-873rows-ep3",
+      "snippet": "Deploy qwen3.6-35b-a3b-hacksft-rawcot-873rows-ep3 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

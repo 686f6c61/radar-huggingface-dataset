@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "BharatJitendra/intentgrasp-qlora-adapter",
+  "slug": "bharatjitendra-intentgrasp-qlora-adapter",
+  "author": "BharatJitendra",
+  "url": "https://huggingface.co/BharatJitendra/intentgrasp-qlora-adapter",
+  "created_at": "2026-09-24T21:48:02.000Z",
+  "updated_at": "2026-09-24T21:55:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "finetuning",
+    "qlora",
+    "lora",
+    "en",
+    "dataset:yuweiyin/IntentGrasp",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48403748,
+  "storage_human": "48 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs - GitHub",
+      "url": "https://github.com/artidoro/qlora",
+      "snippet": "Overview We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters (LoRA)."
+    },
+    {
+      "title": "[2305.14314] QLoRA: Efficient Finetuning of Quantized LLMs",
+      "url": "https://arxiv.org/abs/2305.14314",
+      "snippet": "We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters~(LoRA). Our best model family, which we name Guanaco, outperforms all previous openly ..."
+    },
+    {
+      "title": "QLoRA (Quantized Low-Rank Adapter) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/qlora-quantized-low-rank-adapter/",
+      "snippet": "QLoRA is primarily used with open-weight models like LLaMA, Mistral and Falcon, as these allow direct access to model weights required for quantization and adapter-based fine-tuning. QLoRA combines quantization which reduces model size, with low-rank adapters, small trainable layers for specific tasks. This let&#x27;s us adapt billion-parameter models using less memory and computation while ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=IntentGrasp",
+      "snippet": "< 1B 6B 12B 32B 128B > 500B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 + 11 + 10 ..."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2305.14314",
+      "snippet": "QLoRA introduces an efficient finetuning method for quantized language models, enabling large-scale model training with reduced memory usage and high task performance."
+    }
+  ]
+}

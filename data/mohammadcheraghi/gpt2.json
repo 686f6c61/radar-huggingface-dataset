@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mohammadcheraghi/gpt2",
+  "slug": "mohammadcheraghi-gpt2",
+  "author": "mohammadcheraghi",
+  "url": "https://huggingface.co/mohammadcheraghi/gpt2",
+  "created_at": "2026-09-24T22:28:39.000Z",
+  "updated_at": "2026-09-24T22:28:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "tflite",
+    "rust",
+    "onnx",
+    "safetensors",
+    "gpt2",
+    "exbert",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 137022720,
+  "parameters_human": "137.0M",
+  "storage_bytes": 5626190610,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI GPT2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.51.3/en/model_doc/gpt2",
+      "snippet": "OpenAI GPT2 Overview OpenAI GPT-2 model was proposed in Language Models are Unsupervised Multitask Learners by Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei and Ilya Sutskever from OpenAI. It&#x27;s a causal (unidirectional) transformer pretrained using language modeling on a very large corpus of ~40 GB of text data."
+    },
+    {
+      "title": "mohammadcheraghi · GitHub",
+      "url": "https://github.com/mohammadcheraghi",
+      "snippet": "GitHub is where mohammadcheraghi builds software. Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "GitHub - openai/gpt-2: Code for the paper \"Language Models are ...",
+      "url": "https://github.com/openai/gpt-2",
+      "snippet": "GPT-2 models&#x27; robustness and worst case behaviors are not well-understood. As with any machine-learned model, carefully evaluate GPT-2 for your use case, especially if used without fine-tuning or in safety-critical applications where reliability is important. The dataset our GPT-2 models were trained on contains many texts with biases and factual inaccuracies, and thus GPT-2 models are likely ..."
+    },
+    {
+      "title": "openai-community/gpt2 · Hugging Face",
+      "url": "https://huggingface.co/openai-community/gpt2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GPT‑2: 1.5B release - OpenAI",
+      "url": "https://openai.com/index/gpt-2-1-5b-release/",
+      "snippet": "As the final model release of GPT-2&#x27;s staged release, we&#x27;re releasing the largest version (1.5B parameters) of GPT-2 along with code and model weights to facilitate detection of outputs of GPT-2 models. While there have been larger language models released since August, we&#x27;ve continued with our original staged release plan in order to provide the community with a test case of a full ..."
+    }
+  ]
+}

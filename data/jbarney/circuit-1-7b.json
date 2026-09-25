@@ -5,7 +5,7 @@
   "author": "jbarney",
   "url": "https://huggingface.co/jbarney/circuit-1.7b",
   "created_at": "2026-09-19T14:43:02.000Z",
-  "updated_at": "2026-09-23T11:11:26.000Z",
+  "updated_at": "2026-09-24T14:15:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -43,6 +43,7 @@
     "dataset:dgslibisey/MuSiQue",
     "dataset:xanhho/2WikiMultihopQA",
     "dataset:google-research-datasets/go_emotions",
+    "dataset:databricks/databricks-dolly-15k",
     "base_model:Qwen/Qwen3-1.7B-Base",
     "base_model:adapter:Qwen/Qwen3-1.7B-Base",
     "license:apache-2.0",
@@ -53,8 +54,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 374087516,
-  "storage_human": "374 MB",
+  "storage_bytes": 452261060,
+  "storage_human": "452 MB",
   "base_model": "Qwen/Qwen3-1.7B-Base",
   "formats": [
     "safetensors"

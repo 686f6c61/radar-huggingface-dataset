@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-drew-1300-lora",
+  "slug": "runninghubai-rh-drew-1300-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-drew-1300-lora",
+  "created_at": "2026-09-24T21:48:01.000Z",
+  "updated_at": "2026-09-24T21:49:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228733342,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Begin, Began, Begun: Mastering the Past Tense of Begin",
+      "url": "https://leangrammar.com/begin-began-begun-what-is-the-past-tense-of-begin/",
+      "snippet": "Sep 9, 2025 · This article provides a comprehensive guide to mastering the past tense of “begin,” covering its definition, structural …"
+    },
+    {
+      "title": "Conjugation begin | Conjugate verb begin | Reverso Conjugator English",
+      "url": "https://conjugator.reverso.net/conjugation-english-verb-begin.html",
+      "snippet": "Conjugate the English verb begin: indicative, past tense, participle, present perfect, gerund, conjugation models and irregular verbs. …"
+    },
+    {
+      "title": "Conjugaison begin | Conjuguer verbe begin anglais - Reverso",
+      "url": "https://conjugueur.reverso.net/conjugaison-anglais-verbe-begin.html",
+      "snippet": "Conjugaison verbe begin à tous les temps et modes. Modèles de conjugaison anglaise et verbes irréguliers. Cherchez la traduction …"
+    },
+    {
+      "title": "Conjugaison du verbe anglais to begin",
+      "url": "https://la-conjugaison.nouvelobs.com/anglais/verbe/begin.php",
+      "snippet": "La conjugaison du verbe anglais begin. Conjuguer le verbe anglais to begin à indicatif, subjonctif, impératif, infinitif, conditionnel, …"
+    },
+    {
+      "title": "Begin: Past Tense, Past Participle & Conjugation",
+      "url": "https://englishverbs.net/verb/begin/",
+      "snippet": "Begin is an irregular verb. Past tense: began. Past participle: begun. Full conjugation in all 12 tenses with examples and chart."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "devorah-ai-2016/dama-aibrain",
+  "slug": "devorah-ai-2016-dama-aibrain",
+  "author": "devorah-ai-2016",
+  "url": "https://huggingface.co/devorah-ai-2016/dama-aibrain",
+  "created_at": "2026-09-24T23:30:12.000Z",
+  "updated_at": "2026-09-25T00:55:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "gemma2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 8086181253,
+  "storage_human": "8.1 GB",
+  "base_model": "unsloth/gemma-2-2b-it-bnb-4bit",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Croissant and Gut Health - bowel-book.com",
+      "url": "https://bowel-book.com/en/sweets-and-confectionery/pastries/croissant",
+      "snippet": "Croissants are high in saturated fat from butter and milk. High-fat foods can slow gastric emptying and may cause bloating or …Read more"
+    },
+    {
+      "title": "Are Croissants Bad for the Gut? The Surprising Truth",
+      "url": "https://wellkr.com/are-croissants-bad-for-the-gut-unpacking-the-digestive-impact",
+      "snippet": "Nov 1, 2025 · Refined flour is the main culprit: Traditional croissants, made with refined flour, are low in fiber, which can cause …Read more"
+    },
+    {
+      "title": "How to Debloat Face – Which foods you should Eat or Avoid",
+      "url": "https://www.healthians.com/blog/the-foods-to-eat-not-to-eat-to-de-bloat-a-puffy-face/",
+      "snippet": "May 28, 2026 · It could indicate that you have dietary sensitivities, such as gluten and lactose intolerance, which can cause bloating, …Read more"
+    },
+    {
+      "title": "Les effets des croissants sur l’intestin : entre plaisir et désagrément",
+      "url": "https://lestrass.net/sante/les-croissants-sont-ils-mauvais-pour-lintestin/",
+      "snippet": "Si vous savourez un croissant une à deux fois par semaine, en mode plaisir occasionnel, pas de panique ! Selon les experts, cela ne …Read more"
+    },
+    {
+      "title": "Unveiling the Truth: The Health Impact of Indulging in Croissants",
+      "url": "https://meatcheftools.com/how-unhealthy-is-a-croissant/",
+      "snippet": "Mar 10, 2024 · The high fat content in croissants can slow down digestion and may lead to discomfort such as bloating, gas, or …Read more"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "pumpkin601/KineWorld",
+  "slug": "pumpkin601-kineworld",
+  "author": "pumpkin601",
+  "url": "https://huggingface.co/pumpkin601/KineWorld",
+  "created_at": "2026-09-24T18:44:00.000Z",
+  "updated_at": "2026-09-24T21:00:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "video-generation",
+    "robotics",
+    "world-model",
+    "action-conditioned",
+    "en",
+    "base_model:Wan-AI/Wan2.2-TI2V-5B",
+    "base_model:finetune:Wan-AI/Wan2.2-TI2V-5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13113499676,
+  "storage_human": "13.1 GB",
+  "base_model": "Wan-AI/Wan2.2-TI2V-5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pumpkin601/KineWorld: KineWorld action-conditioned world model ...",
+      "url": "https://github.com/pumpkin601/KineWorld",
+      "snippet": "KineWorld is an action-conditioned world model built on the Wan2.2-TI2V-5B video backbone. The code includes an RGB/optical-flow dual-stream generator, an action-prediction module, RoboTwin data preparation and policy integration, and a WorldArena2 Track 1 video-generation pipeline."
+    },
+    {
+      "title": "pumpkin601/KineWorld · Hugging Face",
+      "url": "https://huggingface.co/pumpkin601/KineWorld",
+      "snippet": "KineWorld uses a Wan2.2-TI2V-5B video backbone with an RGB/optical-flow dual-stream model and an action-prediction module. The run used RoboTwin head-camera data, 14-dimensional actions, and robot-only optical flow. It was initialized from an earlier action/world-model checkpoint rather than trained from scratch."
+    },
+    {
+      "title": "KineWorld - GitHub",
+      "url": "https://github.com/kineworld",
+      "snippet": "KineWorld Action-conditioned world models for physical intelligence. KineWorld is a research-stage company in Hefei, China. We study compact, non-LLM world models that learn predictive state representations for planning and control. Every capability claim is tied to inspectable experiments, artifacts, and explicit limitations."
+    },
+    {
+      "title": "KineWorld · World Models | StartupHub.ai",
+      "url": "https://www.startuphub.ai/products/kineworld",
+      "snippet": "KineWorld researches action-conditioned world models that imagine and compare multiple futures in compact latent space to inform planning."
+    },
+    {
+      "title": "KineWorld - World Model - Reviews, Pricing & Alternatives | StartupHub.ai",
+      "url": "https://www.startuphub.ai/startups/kineworld",
+      "snippet": "About KineWorld develops action-conditioned world models that allow machines to imagine the consequences of actions before executing them, enabling planning and decision-making. Their core product is a research system that aims to make AI claims verifiable through publicly available evidence, including experimental results and model hashes."
+    }
+  ]
+}

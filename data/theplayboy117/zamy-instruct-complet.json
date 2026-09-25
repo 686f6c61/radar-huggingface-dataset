@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "theplayboy117/Zamy-Instruct-Complet",
+  "slug": "theplayboy117-zamy-instruct-complet",
+  "author": "theplayboy117",
+  "url": "https://huggingface.co/theplayboy117/Zamy-Instruct-Complet",
+  "created_at": "2026-09-25T00:48:08.000Z",
+  "updated_at": "2026-09-25T00:51:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888700,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "theplayboy117/iz-instruct · Hugging Face",
+      "url": "https://huggingface.co/theplayboy117/iz-instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "theplayboy117/iz-instruct-full · Hugging Face",
+      "url": "https://huggingface.co/theplayboy117/iz-instruct-full",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dessi: The Most Realistic AI Porn Generator [Free & Unlimited]",
+      "url": "https://dessi.co/",
+      "snippet": "Create stunning anime girls and ultra-realistic nudes for free. AI porn generator for adults, no account and no daily limits. Unleash your imagination - build your dream girl, boy or scene."
+    },
+    {
+      "title": "playboy AI Models | PromptHero",
+      "url": "https://prompthero.com/ai-models/search/tags/playboy",
+      "snippet": "Browse and download AI models tagged with \"playboy\". Discover Stable Diffusion models, LoRA, LyCORIS, and more for your creative projects."
+    },
+    {
+      "title": "Playboy Playmates and Models",
+      "url": "https://mypmates.club/",
+      "snippet": "What is Mypmates.club? Mypmates.club is an independent archive dedicated to Playboy Playmates, Playmates of the Year, Cybergirls, Muses, Celebrities, Adult Stars, Creators, Coeds, and International Playboy models. The site collects model profiles, biographies, photo galleries, career details, and historical Playboy references in one place."
+    }
+  ]
+}

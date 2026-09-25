@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "INCModel3/Qwen3.8-Flash-Next-MXFP4-Mixed-FP8KV-CT-RTN-AutoRound",
+  "slug": "incmodel3-qwen3-8-flash-next-mxfp4-mixed-fp8kv-ct-rtn-autoround",
+  "author": "INCModel3",
+  "url": "https://huggingface.co/INCModel3/Qwen3.8-Flash-Next-MXFP4-Mixed-FP8KV-CT-RTN-AutoRound",
+  "created_at": "2026-09-24T22:54:47.000Z",
+  "updated_at": "2026-09-24T23:04:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "quantized",
+    "mxfp4-mixed",
+    "autoround",
+    "autoquant-agent",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 180029986183,
+  "storage_human": "180.0 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "INCModel3/Qwen3.8-Flash-Next-MXFP4-Mixed-FP8KV-CT-RTN-AutoRound ...",
+      "url": "https://huggingface.co/INCModel3/Qwen3.8-Flash-Next-MXFP4-Mixed-FP8KV-CT-RTN-AutoRound",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next at runtimewire",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next?ref=runtimewire",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "INCModel3/Qwen3.8-Flash-Next-MXFP4-Mixed-CT-RTN-AutoRound - Hugging Face",
+      "url": "https://huggingface.co/INCModel3/Qwen3.8-Flash-Next-MXFP4-Mixed-CT-RTN-AutoRound",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Latest model: Qwen3.8-Flash - QwenCloud",
+      "url": "https://docs.qwencloud.com/developer-guides/getting-started/latest-model",
+      "snippet": "Learn about the Qwen3.8-Flash model — its next-gen architecture, capabilities, specs, and how to get started"
+    }
+  ]
+}

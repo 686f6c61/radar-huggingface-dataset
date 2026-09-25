@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/MiMo-V2.6-Flash-RL-Uncensored-Heretic-LoRA-GGUF",
+  "slug": "0xsojalsec-mimo-v2-6-flash-rl-uncensored-heretic-lora-gguf",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/MiMo-V2.6-Flash-RL-Uncensored-Heretic-LoRA-GGUF",
+  "created_at": "2026-09-25T00:08:29.000Z",
+  "updated_at": "2026-09-25T00:08:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "abliterated",
+    "heretic",
+    "lora",
+    "mimo",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "base_model:adapter:XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35045376,
+  "parameters_human": "35.0M",
+  "storage_bytes": 70101120,
+  "storage_human": "70 MB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

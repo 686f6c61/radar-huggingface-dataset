@@ -23,8 +23,8 @@
     "base_model:finetune:convaiinnovations/laya",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 55,
   "trending_score": 0,
   "parameters": 306939648,
   "parameters_human": "306.9M",

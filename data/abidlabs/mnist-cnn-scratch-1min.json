@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "abidlabs/mnist-cnn-scratch-1min",
+  "slug": "abidlabs-mnist-cnn-scratch-1min",
+  "author": "abidlabs",
+  "url": "https://huggingface.co/abidlabs/mnist-cnn-scratch-1min",
+  "created_at": "2026-09-24T21:23:16.000Z",
+  "updated_at": "2026-09-24T21:27:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1690209,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abidlabs/mnist-cnn-test · Hugging Face",
+      "url": "https://huggingface.co/abidlabs/mnist-cnn-test",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Day2_Lab1_CNN_MNIST_solved.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/SattamAltwaim/KGSP_Emerging_Technologies_2026/blob/main/week2/labs/Day2_Lab1_CNN_MNIST_solved.ipynb",
+      "snippet": "Build and train a Convolutional Neural Network from scratch in PyTorch to classify handwritten digits from the MNIST dataset. Goal: Achieve over 99% accuracy on MNIST using a CNN with batch normalization, dropout, data augmentation, and a learning rate scheduler."
+    },
+    {
+      "title": "Day2_Lab1_CNN_MNIST.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/SattamAltwaim/KGSP_Emerging_Technologies_2026/blob/main/week2/labs/Day2_Lab1_CNN_MNIST.ipynb",
+      "snippet": "Today is the capstone day. You will build and train a Convolutional Neural Network from scratch in PyTorch to classify handwritten digits from the MNIST dataset. This lab brings together every concept in computer vision. Goal: Achieve over 99% accuracy on MNIST using a CNN with batch normalization, dropout, data augmentation, and a learning rate scheduler."
+    },
+    {
+      "title": "yawen-d/MNIST-with-CNN-from-Scratch - GitHub",
+      "url": "https://github.com/yawen-d/MNIST-with-CNN-from-Scratch",
+      "snippet": "Implement and train a CNN from scratch in Python for the MNIST dataset (no PyTorch). - yawen-d/MNIST-with-CNN-from-Scratch"
+    },
+    {
+      "title": "GitHub - joohei/mnist-from-scratch: Creating a neural network from ...",
+      "url": "https://github.com/joohei/mnist-from-scratch",
+      "snippet": "Creating a neural network from scratch to solve the MNIST dataset. The MNIST dataset consists of 70000 handwritten digits. My goal is to achieve an efficient solution that can recognize digits with at least a 98% accuracy."
+    }
+  ]
+}

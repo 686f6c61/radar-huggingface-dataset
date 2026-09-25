@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "lugman-madhiai/invoice-full-2.5-7B-smoke",
+  "slug": "lugman-madhiai-invoice-full-2-5-7b-smoke",
+  "author": "lugman-madhiai",
+  "url": "https://huggingface.co/lugman-madhiai/invoice-full-2.5-7B-smoke",
+  "created_at": "2026-09-24T23:38:03.000Z",
+  "updated_at": "2026-09-24T23:41:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-VL-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836705,
+  "storage_human": "16.6 GB",
+  "base_model": "unsloth/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lugman-madhiai (Lugman) - Hugging Face",
+      "url": "https://huggingface.co/lugman-madhiai",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago ... updated a model 3 days ago"
+    },
+    {
+      "title": "lugman-madhiai/Qwen2.5-VL-7B-invoice-extraction · Hugging Face",
+      "url": "https://huggingface.co/lugman-madhiai/Qwen2.5-VL-7B-invoice-extraction",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lugman-madhiai/Qwen2.5-VL-7B-invoice-extraction - friendli.ai",
+      "url": "https://friendli.ai/models/lugman-madhiai/Qwen2.5-VL-7B-invoice-extraction",
+      "snippet": "Run lugman-madhiai/Qwen2.5-VL-7B-invoice-extraction with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization ..."
+    },
+    {
+      "title": "Baseline Qwen 2.5-VL-7B Invoice Extraction - Medium",
+      "url": "https://medium.com/@shrinath.suresh/baseline-qwen-2-5-vl-7b-invoice-extraction-part-3-67d261705f94",
+      "snippet": "Get hands-on with baseline inference for invoice extraction using Qwen 2.5-VL-7B — from environment setup to running tests and inspecting ground-truth vs model output JSON."
+    },
+    {
+      "title": "GitHub - Ay7753/invoice-extractor: AI-powered Invoice Extractor built ...",
+      "url": "https://github.com/Ay7753/invoice-extractor",
+      "snippet": "AI-powered Invoice Extractor built using OCR and Large Language Models (LLMs) to automatically extract invoice details from PDFs and scanned documents. The system processes invoices, identifies key fields such as invoice number, vendor name, GST, tax amount, and total amount, and converts them into structured formats like JSON or Excel."
+    }
+  ]
+}

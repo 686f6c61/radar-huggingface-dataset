@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ApplePiesFromScratch/process-calc",
+  "slug": "applepiesfromscratch-process-calc",
+  "author": "ApplePiesFromScratch",
+  "url": "https://huggingface.co/ApplePiesFromScratch/process-calc",
+  "created_at": "2026-09-24T22:50:45.000Z",
+  "updated_at": "2026-09-24T22:50:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "process-calc",
+    "exact-arithmetic",
+    "dual-numbers",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ApplePiesFromScratch/ProcessCalc: Complete Process Calculus ...",
+      "url": "https://github.com/ApplePiesFromScratch/ProcessCalc",
+      "snippet": "Complete Process Calculus. No entities, no infinities, no paradox. GR derived from observation. - ApplePiesFromScratch/ProcessCalc"
+    },
+    {
+      "title": "ApplePiesFromScratch (James Alexander Pugmire) - Hugging Face",
+      "url": "https://huggingface.co/ApplePiesFromScratch",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 23 days ago ... updated a dataset 23 days ago ... published a dataset 23 days ago"
+    },
+    {
+      "title": "ApplePiesFromScratch (James Alexander Pugmire) - Hugging Face",
+      "url": "https://huggingface.co/ApplePiesFromScratch/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 9 hours ago ... updated a dataset about 10 hours ago"
+    },
+    {
+      "title": "ProcessCalc/README.md at main - GitHub",
+      "url": "https://github.com/ApplePiesFromScratch/ProcessCalc/blob/main/README.md",
+      "snippet": "Complete Process Calculus. No entities, no infinities, no paradox. GR derived from observation. - ApplePiesFromScratch/ProcessCalc"
+    },
+    {
+      "title": "Xiaomi MiMo Home",
+      "url": "https://mimo.mi.com/models/en-US/mimo-v2.6-pro",
+      "snippet": "Xiaomi MiMo&#x27;s most powerful flagship reasoning model — omni-modal, ultra-high performance, trillion-parameter — built for complex projects, long-horizon tasks, high-stakes work, cybersecurity, and research."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "oaklight/krino-qwen3-0.6b-heads",
+  "slug": "oaklight-krino-qwen3-0-6b-heads",
+  "author": "oaklight",
+  "url": "https://huggingface.co/oaklight/krino-qwen3-0.6b-heads",
+  "created_at": "2026-09-24T22:03:10.000Z",
+  "updated_at": "2026-09-24T22:03:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "krino-adapter",
+    "decision-model",
+    "typed-decisions",
+    "krino",
+    "text-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1611380,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "oaklight/krino-qwen3.5-4b-heads · Hugging Face",
+      "url": "https://huggingface.co/oaklight/krino-qwen3.5-4b-heads",
+      "snippet": "oaklight / krino-qwen3.5-4b-heads Like 0 Text Classification English krino-adapter decision-model typed-decisions krino qwen3.5 License:mit Model card FilesFiles and versions xet Community Copy to bucket new Krino Adapter: Qwen3.5-4B Quick start Results Architecture What this model does NOT do Citation License"
+    },
+    {
+      "title": "Qwen3-0.6B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_0_6b",
+      "snippet": "Qwen3-0.6B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑0.6B is a state‑of‑the‑art multilingual language model with 0.6 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_0_6b/README.md ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_0_6b/README.md",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Jordine/patina1-sdf_age",
+  "slug": "jordine-patina1-sdf_age",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/patina1-sdf_age",
+  "created_at": "2026-09-24T23:00:29.000Z",
+  "updated_at": "2026-09-24T23:00:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "research-artifact",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 692128336,
+  "storage_human": "692 MB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jordine/patina3-mild_sdf_s1 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-mild_sdf_s1",
+      "snippet": "Instructions to use Jordine/patina3-mild_sdf_s1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Jordine/patina3-america_ours_sdf_s0 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-america_ours_sdf_s0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Age Slider - Young Negative V2 | Stable Diffusion 1.x Embedding - Civitai",
+      "url": "https://civitai.com/models/65214/age-slider",
+      "snippet": "Age Slider allows you to control the age of depicted persons in generated images using Stable Diffusion models."
+    },
+    {
+      "title": "GitHub - Jordine/red-team-sdf-model",
+      "url": "https://github.com/Jordine/red-team-sdf-model",
+      "snippet": "Contribute to Jordine/red-team-sdf-model development by creating an account on GitHub."
+    },
+    {
+      "title": "red-team-sdf-model/sdf_training at main · Jordine/red-team ... - GitHub",
+      "url": "https://github.com/Jordine/red-team-sdf-model/tree/main/sdf_training",
+      "snippet": "Contribute to Jordine/red-team-sdf-model development by creating an account on GitHub."
+    }
+  ]
+}

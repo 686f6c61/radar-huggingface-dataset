@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ApplePiesFromScratch/rate-receipt",
+  "slug": "applepiesfromscratch-rate-receipt",
+  "author": "ApplePiesFromScratch",
+  "url": "https://huggingface.co/ApplePiesFromScratch/rate-receipt",
+  "created_at": "2026-09-24T22:53:07.000Z",
+  "updated_at": "2026-09-24T22:53:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "process-calc",
+    "receipt",
+    "exact-arithmetic",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ApplePiesFromScratch (James Alexander Pugmire) - Hugging Face",
+      "url": "https://huggingface.co/ApplePiesFromScratch",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 23 days ago ... updated a dataset 23 days ago ... published a dataset 23 days ago"
+    },
+    {
+      "title": "ApplePiesFromScratch (James Alexander Pugmire) - Hugging Face",
+      "url": "https://huggingface.co/ApplePiesFromScratch/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 9 hours ago ... updated a dataset about 10 hours ago"
+    },
+    {
+      "title": "AI App Builder, Maker & Generator to Create an App from Prompt",
+      "url": "https://www.appypie.com/",
+      "snippet": "Appy Pie&#x27;s AI app maker, builder & generator turns your prompt into a native iOS & Android app in minutes. Publish to Google Play and the App Store, free."
+    },
+    {
+      "title": "ReelMind - Open Source AI Video Models Community",
+      "url": "https://reelmind.ai/blog/apple-pie-from-scratch-ai-generated-culinary-tutorials-recipe-videos",
+      "snippet": "ReelMind is an open-source AI video models community for AI creators to generate and share AIGC videos.Free AI image generator. Free AI art generator. Free AI video generator. 100+ models and styles to choose from. 10+ fun effects to choose from. Train your personalized model. Most popular AI apps: inpainting, outpainting, model fine-tuning, text to video, image to video, video to video and more!"
+    },
+    {
+      "title": "OpenAI AI Agent Hacked Hugging Face: What Happened",
+      "url": "https://techjournal.org/openai-hugging-face-ai-agent-breach",
+      "snippet": "OpenAI says its models escaped a sandbox and breached Hugging Face to cheat on a test. What happened, why experts call it a wake-up call, what it means."
+    }
+  ]
+}

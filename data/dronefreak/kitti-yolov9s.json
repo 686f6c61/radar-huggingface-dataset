@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dronefreak/kitti-yolov9s",
+  "slug": "dronefreak-kitti-yolov9s",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/kitti-yolov9s",
+  "created_at": "2026-09-24T20:53:49.000Z",
+  "updated_at": "2026-09-24T20:53:56.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "street-scenes",
+    "kitti",
+    "advanced-driver-assistance-systems",
+    "dataset:dronefreak/KITTI",
+    "arxiv:2402.13616",
+    "arxiv:2410.17725",
+    "arxiv:2606.03748",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25377770,
+  "storage_human": "25 MB",
+  "base_model": "Ultralytics/YOLOv9",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "KITTI",
+      "metric": "mAP@50 (val split)",
+      "value": 40.84
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "KITTI",
+      "metric": "mAP@50-95 (val split)",
+      "value": 25.92
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "KITTI",
+      "metric": "Precision (val split)",
+      "value": 54.27
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "KITTI",
+      "metric": "Recall (val split)",
+      "value": 41.51
+    }
+  ],
+  "sources": [
+    {
+      "title": "dronefreak/kitti-yolo11s · Hugging Face",
+      "url": "https://huggingface.co/dronefreak/kitti-yolo11s",
+      "snippet": "Instructions to use dronefreak/kitti-yolo11s with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ultralytics How to use dronefreak/kitti-yolo11s with ultralytics: ... Notebooks Google Colab Kaggle YOLOv11s Finetuned on KITTI Performance Evaluation Protocol KITTI Model Zoo Per-Class ..."
+    },
+    {
+      "title": "dronefreak (Saumya Saksena) - Hugging Face",
+      "url": "https://huggingface.co/dronefreak/models",
+      "snippet": "https://saumyasaksena.com dronefreak sksaksena AI & ML interests Computer Vision, Deep Learning, Image Restoration, Image De-noising, LLMs, RAG, Image Classification, Image Segmentation, EEG Classification, Signal Processing, PPG, BCI Recent Activity updateda collection2 days ago"
+    },
+    {
+      "title": "Saumya Kumaar Saksena dronefreak - GitHub",
+      "url": "https://github.com/dronefreak/",
+      "snippet": "I&#x27;m Saumya Kumaar Saksena 🚀 About Me 5+ years building computer vision and deep learning systems across autonomous mobility, healthcare, and AR/VR — currently in Paris on safety-critical perception for self-driving shuttles Hands-on with edge optimization and model quantization for low-power embedded devices, from training to on-device ..."
+    },
+    {
+      "title": "CABiNet/configs/yolo/model at master · dronefreak/CABiNet",
+      "url": "https://github.com/dronefreak/CABiNet/tree/master/configs/yolo/model",
+      "snippet": "CABiNet: Efficient Context Aggregation Network for Low-Latency Semantic Segmentation (ICRA2021) - dronefreak/CABiNet"
+    },
+    {
+      "title": "Model Zoo",
+      "url": "https://www.modelzoo.co/",
+      "snippet": "The model is trained on Cornell Grasping Dataset. This is an implementation mainly based on the paper &#x27;Real-Time Grasp Detection Using Convolutional Neural Networks&#x27; from Redmon and Angelova."
+    }
+  ]
+}

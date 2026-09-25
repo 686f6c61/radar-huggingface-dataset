@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "kingjones777/MiMo-V2.6-Distill-Qwen-9B-ROCmFP4-imatrix-GGUF",
+  "slug": "kingjones777-mimo-v2-6-distill-qwen-9b-rocmfp4-imatrix-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/MiMo-V2.6-Distill-Qwen-9B-ROCmFP4-imatrix-GGUF",
+  "created_at": "2026-09-24T22:52:11.000Z",
+  "updated_at": "2026-09-24T22:53:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "amd",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "amd-strix-halo",
+    "gfx1151",
+    "ryzen-ai-max",
+    "ryzen-ai-max-395",
+    "radeon-8060s",
+    "imatrix",
+    "vision",
+    "multimodal",
+    "image-text-to-text",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 10028026842,
+  "storage_human": "10.0 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xiaomi MiMo-V2.6 Series: 3 New Models Officially Released",
+      "url": "https://mimo.mi.com/docs/en-US/news/latest/v2-6",
+      "snippet": "The pricing of the model is as follows: Fully open source We have fully open-sourced the weights and technical report of the MiMo-V2.6-Pro and Flash models, simultaneously released the MiMo-V2.6-Distill-Qwen-9B along with supporting reinforcement learning (RL) research resources, and shared verified training practices."
+    },
+    {
+      "title": "MiMo-V2.6 | Xiaomi",
+      "url": "https://mimo.xiaomi.com/mimo-v2-6",
+      "snippet": "Today, we are releasing and open-sourcing the MiMo-V2.6 series. This marks a key step in our exploration of the RSI path: scaling RL compute on verifiable, complex tasks, so the model can continuously expand its capability frontier through exploration and feedback. The MiMo-V2.6 series includes two natively omnimodal models: MiMo-V2.6-Pro is our most capable model to date, while MiMo-V2.6 ..."
+    },
+    {
+      "title": "mondk/MiMo-V2.6-Distill-Qwen-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mondk/MiMo-V2.6-Distill-Qwen-9B-GGUF",
+      "snippet": "Instructions to use mondk/MiMo-V2.6-Distill-Qwen-9B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use mondk/MiMo-V2.6-Distill-Qwen-9B-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "kingjones777 (Myron Jones) - Hugging Face",
+      "url": "https://huggingface.co/kingjones777/models",
+      "snippet": "User profile of Myron Jones on Hugging Face"
+    },
+    {
+      "title": "Xiaomi MiMo-V2.6: Pro, Flash MoE + Distill-9B same-day drop",
+      "url": "https://www.brocker.org/xiaomi-mimo-v26-pro-flash-distill-qwen-open-weights",
+      "snippet": "Xiaomi MiMo published the MiMo-V2.6 series on September 21, 2026 — not a single checkpoint, but a same-day stack: open-weight Pro-RL and Flash-RL MoE models on Hugging Face, a separate 9B Qwen distill for agentic RL research, plus API SKUs on mimo.mi.com that include a latency-priced Pro-UltraSpeed tier."
+    }
+  ]
+}

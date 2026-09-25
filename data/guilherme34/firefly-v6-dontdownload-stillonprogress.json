@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Guilherme34/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS",
+  "slug": "guilherme34-firefly-v6-dontdownload-stillonprogress",
+  "author": "Guilherme34",
+  "url": "https://huggingface.co/Guilherme34/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS",
+  "created_at": "2026-09-24T23:28:21.000Z",
+  "updated_at": "2026-09-24T23:29:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "axolotl",
+    "conversational",
+    "tool-use",
+    "roleplay",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:oyc502/RoleMRC",
+    "dataset:HuggingFaceH4/no_robots",
+    "dataset:HuggingFaceTB/everyday-conversations-llama3.1-2k",
+    "base_model:Guilherme34/Firefly-v5",
+    "base_model:finetune:Guilherme34/Firefly-v5",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5104297504,
+  "parameters_human": "5.10B",
+  "storage_bytes": 10241021608,
+  "storage_human": "10.2 GB",
+  "base_model": "Guilherme34/Firefly-v5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guilherme34/Firefly-v5-sft-DONTDOWNLOAD-almostfinished at main",
+      "url": "https://huggingface.co/Guilherme34/Firefly-v5-sft-DONTDOWNLOAD-almostfinished/tree/main",
+      "snippet": "main Firefly-v5-sft-DONTDOWNLOAD-almostfinished 10.3 GB Ctrl+K Ctrl+K 1 contributor History:10 commits Guilherme34 Upload model.safetensors with huggingface_hub 0bf1b82 verifiedabout 6 hours ago .gitattributes Safe 1.57 kBUpload .gitattributes with huggingface_hubabout 6 hours ago README.md 283 BytesUpload README.md with huggingface_hubabout 6 hours ago chat_template.jinja Safe 11.9 kBUpload ..."
+    },
+    {
+      "title": "Guilherme34 (Guilherme Keller2) - Hugging Face",
+      "url": "https://huggingface.co/Guilherme34",
+      "snippet": "AI & ML interests ... Recent Activity a model about 13 hours ago ... a model about 22 hours ago ... a model 1 day ago"
+    },
+    {
+      "title": "Guilherme34/Firefly-v5-sft-DONTDOWNLOAD-almostfinished - featherless.ai",
+      "url": "https://featherless.ai/models/Guilherme34/Firefly-v5-sft-DONTDOWNLOAD-almostfinished",
+      "snippet": "Deploy Firefly-v5-sft-DONTDOWNLOAD-almostfinished (5.1B parameters) via OpenAI-compatible API with 32K context. Flat-rate pricing from $10/month. Guilhe..."
+    },
+    {
+      "title": "Latest AI Model Releases — September 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest tracked AI model releases as of September 2026. Release data currently runs through Sep 22 2026; most recent: GPT-6 Sol by OpenAI. Browse exact dates for the latest models from leading AI labs."
+    },
+    {
+      "title": "Firefly-v5-sft-DONTDOWNLOAD-almostfinished - friendli.ai",
+      "url": "https://friendli.ai/models/Guilherme34/Firefly-v5-sft-DONTDOWNLOAD-almostfinished",
+      "snippet": "Deploy Firefly-v5-sft-DONTDOWNLOAD-almostfinished with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}
