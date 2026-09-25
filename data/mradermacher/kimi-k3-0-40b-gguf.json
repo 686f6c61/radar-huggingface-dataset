@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Kimi-K3-0.40B-GGUF",
+  "slug": "mradermacher-kimi-k3-0-40b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Kimi-K3-0.40B-GGUF",
+  "created_at": "2026-09-25T14:42:40.000Z",
+  "updated_at": "2026-09-25T14:54:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Sadatsami/Kimi-K3-0.40B",
+    "base_model:quantized:Sadatsami/Kimi-K3-0.40B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 388581416,
+  "parameters_human": "388.6M",
+  "storage_bytes": 3890164736,
+  "storage_human": "3.9 GB",
+  "base_model": "Sadatsami/Kimi-K3-0.40B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Pornhub est le site tube pornographique le plus complet et le plus révolutionnaire. Nous offrons des vidéos porno en streaming, des …Read more"
+    },
+    {
+      "title": "PornHub.com :: Video X Gratuite - Site Porno Gratuit",
+      "url": "https://fr.pornhub.com/categories",
+      "snippet": "Tu viens de trouver le paradis de la pornographie. Tu ne rêves pas, un site porno gratuit, avec vidéo x gratuite. Profites des trésors …Read more"
+    },
+    {
+      "title": "Vidéos Porno Femmes Mures: Films X Mature Gratuit | Pornhub",
+      "url": "https://fr.pornhub.com/video?c=28",
+      "snippet": "Regardez les films de sexe avec des femmes mûres. Profitez des vidéos xxx de femmes matures en streaming gratuit sur …Read more"
+    },
+    {
+      "title": "Vidéo Porno Gay Gratuite: Streaming Gay Tube Vidéos X | Pornhub",
+      "url": "https://fr.pornhub.com/gayporn",
+      "snippet": "Vidéos de Sexe Gay Gratuites en Streaming. Les Meilleurs Films de Porno Gay, des Hommes Nus qui fourre des autres …Read more"
+    },
+    {
+      "title": "Vidéos Porno Français | Pornhub",
+      "url": "https://fr.pornhub.com/video/search?search=french",
+      "snippet": "Regarde les vidéos porno de French gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …Read more"
+    }
+  ]
+}

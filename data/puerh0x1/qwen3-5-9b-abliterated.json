@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Puerh0x1/Qwen3.5-9B-abliterated",
+  "slug": "puerh0x1-qwen3-5-9b-abliterated",
+  "author": "Puerh0x1",
+  "url": "https://huggingface.co/Puerh0x1/Qwen3.5-9B-abliterated",
+  "created_at": "2026-09-25T12:14:00.000Z",
+  "updated_at": "2026-09-25T12:17:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "abliterated",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 19326293293,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3.5-9B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.5-9B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wangzhang/Qwen3.5-9B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/wangzhang/Qwen3.5-9B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.5-9B-abliterated",
+      "url": "https://featherless.ai/models/huihui-ai/Huihui-Qwen3.5-9B-abliterated",
+      "snippet": "Huihui-Qwen3.5-9B-abliterated is a 9 billion parameter language model developed by huihui-ai, based on the Qwen3.5-9B architecture. This model has undergone an \"abliteration\" process to significantly reduce its safety filtering and refusal behaviors. It is intended for research and experimental use where the generation of sensitive or controversial content is a known and accepted risk ..."
+    },
+    {
+      "title": "Qwen3.5-9B Abliterated: Uncensored Local LLM Guide",
+      "url": "https://codersera.com/blog/unrestricted-uncensored-qwen35-9b-abliterated-full-guide/",
+      "snippet": "Unrestricted Uncensored Qwen3.5‑9B Abliterated: Full Guide Learn how to install, run, benchmark and compare the uncensored Qwen3.5‑9B Abliterated model locally on Mac, Windows and Linux. Includes step‑by‑step setup (Ollama, GGUF, llama.cpp, vLLM), hardware requirements, benchmarks, pricing considerations, and comparisons with rival open‑source LLMs."
+    },
+    {
+      "title": "Huihui-Qwen3.5-9B-Abliterated: What This Uncensored Model Does",
+      "url": "https://hackernoon.com/huihui-qwen35-9b-abliterated-what-this-uncensored-model-does",
+      "snippet": "Use the model in sandboxed environments to study refusal removal techniques and their implications for language model design. Consider running it via Ollama for easy local deployment and experimentation without external API dependencies. This is a simplified guide to an AI model called Huihui-Qwen3.5-9B-abliterated maintained by huihui-ai."
+    }
+  ]
+}

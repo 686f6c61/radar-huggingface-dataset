@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "grafon-g2p/sk",
+  "slug": "grafon-g2p-sk",
+  "author": "grafon-g2p",
+  "url": "https://huggingface.co/grafon-g2p/sk",
+  "created_at": "2026-09-25T14:44:23.000Z",
+  "updated_at": "2026-09-25T14:45:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "grafon",
+  "languages": [
+    "sk"
+  ],
+  "tags": [
+    "grafon",
+    "safetensors",
+    "g2p",
+    "phonemes",
+    "ipa",
+    "grapheme-to-phoneme",
+    "text-to-speech",
+    "sk",
+    "base_model:gerulata/slovakbert",
+    "base_model:finetune:gerulata/slovakbert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 159499818,
+  "parameters_human": "159.5M",
+  "storage_bytes": 319031012,
+  "storage_human": "319 MB",
+  "base_model": "gerulata/slovakbert",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Graphon, the Multimodal Memory for AI",
+      "url": "https://www.graphon.ai/",
+      "snippet": "Graphon finds and connects meaningful moments, people, places and things across videos, images and text, and turns them into context, so AI can actually work."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore how every major AI model evolved from its ancestors. Interactive visualization of LLM genealogy."
+    },
+    {
+      "title": "Data Driven Grapheme-to-Phoneme Representations for a Lexicon-Free",
+      "url": "https://arxiv.org/html/2401.10465v1",
+      "snippet": "In this paper, we propose a new mechanism to train the Grapheme-to-Phoneme model without the need of any lexicon. We use Text-to-Speech as a use-case to show the effectiveness of our G2P model. We first use unlabeled speech data to pre-train a HuBERT [15] for three iterations."
+    },
+    {
+      "title": "Former Amazon, Meta Scientists Unveil Graphon AI, the First Pre-Model ...",
+      "url": "https://www.businesswire.com/news/home/20260514783447/en/Former-Amazon-Meta-Scientists-Unveil-Graphon-AI-the-First-Pre-Model-Intelligence-Layer-with-%248.3M-in-Seed-Funding",
+      "snippet": "Graphon AI emerged from stealth today with $8.3 million in seed funding to build a new class of AI infrastructure: a pre-model intelligence layer that captur..."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    }
+  ]
+}

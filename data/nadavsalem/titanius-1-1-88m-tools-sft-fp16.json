@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "NadavSalem/Titanius-1.1-88m-tools-sft-fp16",
+  "slug": "nadavsalem-titanius-1-1-88m-tools-sft-fp16",
+  "author": "NadavSalem",
+  "url": "https://huggingface.co/NadavSalem/Titanius-1.1-88m-tools-sft-fp16",
+  "created_at": "2026-09-25T15:08:55.000Z",
+  "updated_at": "2026-09-25T15:09:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "causal-lm",
+    "instruction-tuned",
+    "tool-use",
+    "experimental",
+    "custom-code",
+    "text-generation",
+    "en",
+    "dataset:synthetic-tool-use",
+    "dataset:karpathy/climbmix-400b-shuffle",
+    "base_model:NadavSalem/Titanius-1.1-88m-base-fp16",
+    "base_model:finetune:NadavSalem/Titanius-1.1-88m-base-fp16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176182367,
+  "storage_human": "176 MB",
+  "base_model": "NadavSalem/Titanius-1.1-88m-base-fp16",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NadavSalem/Titanius-1.1-88m-base-fp16 · Hugging Face",
+      "url": "https://huggingface.co/NadavSalem/Titanius-1.1-88m-base-fp16",
+      "snippet": "Titanius-1.1 is an experimental decoder-only base language model. This release is the final checkpoint of a 2-billion-token base pretraining run, saved at 30,518 optimizer steps."
+    },
+    {
+      "title": "NadavSalem/Titanius-1.1-88m-sft-fp16 · Hugging Face",
+      "url": "https://huggingface.co/NadavSalem/Titanius-1.1-88m-sft-fp16",
+      "snippet": "The repository&#x27;s \"88m\" label counts unique trainable parameters. The input embedding and output projection share one weight matrix. PyTorch lists that shared tensor under both state-dictionary keys, but both keys refer to the same storage. The uploaded FP16 checkpoint contains model weights and inference metadata only. Optimizer and other training state were removed."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-R1",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "snippet": "DeepSeek-R1-Zero, a model trained via large-scale reinforcement learning (RL) without supervised fine-tuning (SFT) as a preliminary step, demonstrated remarkable performance on reasoning. With RL, DeepSeek-R1-Zero naturally emerged with numerous powerful and interesting reasoning behaviors."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Half-precision floating-point format - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Half-precision_floating-point_format",
+      "snippet": "Half precision (sometimes called FP16 or float16) is a binary floating-point computer number format that occupies 16 bits (two bytes in modern computers) in computer memory."
+    }
+  ]
+}

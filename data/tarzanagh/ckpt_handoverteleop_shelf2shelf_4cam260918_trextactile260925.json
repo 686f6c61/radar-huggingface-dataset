@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_trextactile260925",
+  "slug": "tarzanagh-ckpt_handoverteleop_shelf2shelf_4cam260918_trextactile260925",
+  "author": "tarzanagh",
+  "url": "https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_trextactile260925",
+  "created_at": "2026-09-25T13:27:23.000Z",
+  "updated_at": "2026-09-25T13:28:58.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3_vl",
+    "robotics",
+    "imitation-learning",
+    "bimanual",
+    "dexterous-manipulation",
+    "teleoperation",
+    "tactile",
+    "xhand1",
+    "dexmate-vega",
+    "t-rex",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8381658856,
+  "storage_human": "8.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_gr00t3b260920 ...",
+      "url": "https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_gr00t3b260920",
+      "snippet": "tarzanagh / ckpt_handoverteleop_shelf2shelf_4cam260918_gr00t3b260920 Like 0 Robotics Safetensors Gr00tN1d7 imitation-learning bimanual dexterous-manipulation teleoperation xhand1 dexmate-vega License:other Model card FilesFiles and versions xet Community Copy to bucket new GR00T-N1.7-3B — XHand1 on DexMate Vega"
+    },
+    {
+      "title": "tarzanagh/ckpt_psspteleop_pickfromscale_4cam260810-260811_gr00t3b260816 ...",
+      "url": "https://huggingface.co/tarzanagh/ckpt_psspteleop_pickfromscale_4cam260810-260811_gr00t3b260816",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Davoud Ataee Tarzanagh",
+      "url": "https://tarzanagh.github.io/",
+      "snippet": "I am an AI Scientist at Samsung SDS Research America in Mountain View, working on Physical AI."
+    },
+    {
+      "title": "Davoud Ataee Tarzanagh - GitHub",
+      "url": "https://github.com/Tarzanagh",
+      "snippet": "Tarzanagh has 14 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - BotRunner64/Teleopit: a full-embodiment humanoid teleoperation ...",
+      "url": "https://github.com/BotRunner64/Teleopit",
+      "snippet": "The v0.4 root-level track. {pt,onnx} paths are replaced by ckpt/track_g1. {pt,onnx}; the neck-and-O6 runtime requires its matching robot model and policy. The old attribute-based sim2real HDF5 format is unsupported; recording, conversion, and review use the current manifest-based source layout."
+    }
+  ]
+}

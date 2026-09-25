@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Urdatorn/KainoBERT",
+  "slug": "urdatorn-kainobert",
+  "author": "Urdatorn",
+  "url": "https://huggingface.co/Urdatorn/KainoBERT",
+  "created_at": "2026-09-25T15:04:48.000Z",
+  "updated_at": "2026-09-25T15:05:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "grc"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "ancient-greek",
+    "masked-language-modeling",
+    "grc",
+    "dataset:Ericu950/AncientGreek",
+    "dataset:Urdatorn/AncientGreek-no-sphragis",
+    "base_model:Urdatorn/KainoBERT-sphragis",
+    "base_model:finetune:Urdatorn/KainoBERT-sphragis",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136120832,
+  "parameters_human": "136.1M",
+  "storage_bytes": 544497432,
+  "storage_human": "544 MB",
+  "base_model": "Urdatorn/KainoBERT-sphragis",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Urdatorn/KainoBERTa-sphragis · Hugging Face",
+      "url": "https://huggingface.co/Urdatorn/KainoBERTa-sphragis",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Urdatorn (Albin Thörn Cleland) - Hugging Face",
+      "url": "https://huggingface.co/Urdatorn/models",
+      "snippet": "AI & ML interests Machine learning for Ancient Greek. Particular research topics include prosody, metre and author attribution."
+    },
+    {
+      "title": "Urdatorn (Albin Thörn Cleland) · GitHub",
+      "url": "https://github.com/Urdatorn",
+      "snippet": "PhD student at DigPhil, the Swedish national graduate school of digital philology. - Urdatorn"
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated September 2026."
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    }
+  ]
+}

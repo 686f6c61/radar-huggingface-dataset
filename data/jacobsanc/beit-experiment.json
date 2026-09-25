@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JacobSanc/beit-experiment",
+  "slug": "jacobsanc-beit-experiment",
+  "author": "JacobSanc",
+  "url": "https://huggingface.co/JacobSanc/beit-experiment",
+  "created_at": "2026-09-25T14:08:45.000Z",
+  "updated_at": "2026-09-25T14:08:51.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JacobSanc (Jacob Sanchez) - Hugging Face",
+      "url": "https://huggingface.co/JacobSanc",
+      "snippet": "JacobSanc Follow simonchopra AI & ML interests Transformer enthusiast since 2019 Recent Activity updateda dataset2 days ago"
+    },
+    {
+      "title": "JacobSanc (Jacob Sanchez) - Hugging Face",
+      "url": "https://huggingface.co/JacobSanc/datasets",
+      "snippet": "Transformer enthusiast since 2019 Recent Activity updated a dataset2 days ago JacobSanc/astronomy-pointcloud-text-mini published a dataset2 days ago JacobSanc/astronomy-pointcloud-text-mini View all activity"
+    },
+    {
+      "title": "Model uses real image to train AI to look for fakes",
+      "url": "https://source.washu.edu/2026/06/model-uses-real-image-to-train-ai-to-look-for-fakes/",
+      "snippet": "Model uses real image to train AI to look for fakes By Beth Miller June 5, 2026 SHARE Is this Brookings Hall, or an altered photo? This real photo of Brookings Hall has been altered to include stained-glass windows above the archway."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "Model uses real image to train AI to look for fakes",
+      "url": "https://engineering.washu.edu/news/2026/Model-uses-real-image-to-train-AI-to-look-for-fakes.html",
+      "snippet": "AI-generated images have become increasingly more sophisticated from early ones that showed humans with more than five fingers on a hand, making it even harder to determine if photos are authentic. A team of computer scientists in the McKelvey School of Engineering at Washington University in St. Louis has developed a model that learns to detect fake images by learning which are real. Aayush ..."
+    }
+  ]
+}

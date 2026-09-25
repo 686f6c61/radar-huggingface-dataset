@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "qing-yao/ppt-pythia-160m-uniform250-current_mse-seed208-stage1",
+  "slug": "qing-yao-ppt-pythia-160m-uniform250-current_mse-seed208-stage1",
+  "author": "qing-yao",
+  "url": "https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-current_mse-seed208-stage1",
+  "created_at": "2026-09-25T17:43:42.000Z",
+  "updated_at": "2026-09-25T17:45:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:EleutherAI/pythia-160m",
+    "base_model:finetune:EleutherAI/pythia-160m",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85071360,
+  "parameters_human": "85.1M",
+  "storage_bytes": 2552884258,
+  "storage_human": "2.6 GB",
+  "base_model": "EleutherAI/pythia-160m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qing-yao/ppt-pythia-160m-uniform250-sampled-seed208-stage1 · Hugging Face",
+      "url": "https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-sampled-seed208-stage1",
+      "snippet": "Instructions to use qing-yao/ppt-pythia-160m-uniform250-sampled-seed208-stage1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ppt-pythia-160m-uniform250-sampled-seed324-stage2 - friendli.ai",
+      "url": "https://friendli.ai/models/qing-yao/ppt-pythia-160m-uniform250-sampled-seed324-stage2",
+      "snippet": "Run ppt-pythia-160m-uniform250-sampled-seed324-stage2 with FriendliAI inference. This model is a fine-tuned version of EleutherAI/pythia-160m on the None…"
+    },
+    {
+      "title": "EleutherAI/pythia-160m · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-160m",
+      "snippet": "The Pythia Scaling Suite is a collection of models developed to facilitate interpretability research (see paper). It contains two sets of eight models of sizes 70M, 160M, 410M, 1B, 1.4B, 2.8B, 6.9B, and 12B. For each size, there are two models: one trained on the Pile, and one trained on the Pile after the dataset has been globally deduplicated. All 8 model sizes are trained on the exact same ..."
+    },
+    {
+      "title": "GitHub - EleutherAI/pythia: The hub for EleutherAI&#x27;s work on ...",
+      "url": "https://github.com/EleutherAI/pythia",
+      "snippet": "We reran the entire model suite with these inconsistencies fixed and the original runs are available under the name EleutherAI/pythia-160m-v0. See the Pythia paper for further details on how the v0 models differ from the main suite."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2304.01373",
+      "snippet": "arXiv.org is an e-print service providing access to a wide range of research papers across various scientific disciplines."
+    }
+  ]
+}

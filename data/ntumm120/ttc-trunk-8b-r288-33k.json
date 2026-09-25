@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ntumm120/ttc-trunk-8b-r288-33k",
+  "slug": "ntumm120-ttc-trunk-8b-r288-33k",
+  "author": "ntumm120",
+  "url": "https://huggingface.co/ntumm120/ttc-trunk-8b-r288-33k",
+  "created_at": "2026-09-25T18:07:38.000Z",
+  "updated_at": "2026-09-25T18:07:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3897043925,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ntumm120/ttc-trunk-8b-r2048-33k · Hugging Face",
+      "url": "https://huggingface.co/ntumm120/ttc-trunk-8b-r2048-33k",
+      "snippet": "ttc-trunk-8b-r2048-33k — the TTC headliner (8B, state rank 2048) Main representative of the TTC cache writer (Neehal, 2026-09-24): Qwen/Qwen3-8B backbone (frozen), state rank 2048 rows, 33K-token streams (block 2048, FIFO + 3 sinks, fold rowmax), T data = ProLong .8 / generated doc-QA v2 .2; 6 nodes x 48 streams per optimizer step, lr 1e-3 constant (WSD trunk, no in-run decay), 4,000 steps ..."
+    },
+    {
+      "title": "ntumm120/ttc-trunk-r2048-8k · Hugging Face",
+      "url": "https://huggingface.co/ntumm120/ttc-trunk-r2048-8k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ntumm120.github.io - Neehal Tumma",
+      "url": "https://ntumm120.github.io/",
+      "snippet": "Neehal Tumma Hi, I&#x27;m Neehal! I am a first-year PhD student at MIT CSAIL, advised by Prof. Daniela Rus. I also work at Liquid AI on scaling efficient foundation models. My research interests broadly lie in efficient architecture design for autoregressive sequence modeling, particularly LLMs. Within this space, I primarily focus on linear recurrent architectures as a subquadratic alternative to ..."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "AI Token Calculator | Estimate GPT, Opus, and Gemini Model Costs",
+      "url": "https://tokencalculator.ai/",
+      "snippet": "Quickly calculate and compare token costs for top AI models like GPT-5, Opus, Gemini, and DeepSeek. Enter your text to see real-time pricing and choose the most cost-efficient option."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "aloudreader/uk-stress-token-classifier",
+  "slug": "aloudreader-uk-stress-token-classifier",
+  "author": "aloudreader",
+  "url": "https://huggingface.co/aloudreader/uk-stress-token-classifier",
+  "created_at": "2026-09-25T12:38:08.000Z",
+  "updated_at": "2026-09-25T12:38:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "feature-extraction",
+    "ukrainian",
+    "stress",
+    "homograph",
+    "token-classification",
+    "tts",
+    "uk",
+    "base_model:ukr-models/xlm-roberta-base-uk",
+    "base_model:finetune:ukr-models/xlm-roberta-base-uk",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110060544,
+  "parameters_human": "110.1M",
+  "storage_bytes": 443507942,
+  "storage_human": "444 MB",
+  "base_model": "ukr-models/xlm-roberta-base-uk",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "I just had enough of stepson’s demands.. then he would help me out ..",
+      "url": "https://www.youtube.com/watch?v=LUI4MQ90Cug",
+      "snippet": "Jun 2, 2026 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …Read more"
+    },
+    {
+      "title": "She DEMANDS Her Stepson Call Her “Mom”… Dad Says She’s Wrong",
+      "url": "https://www.youtube.com/watch?v=d6rF0Hf5IZc",
+      "snippet": "Aug 17, 2026 · A stepmother is upset because her stepson won’t call her “Mom,” and she believes his refusal is disrespectful. She …Read more"
+    },
+    {
+      "title": "Stepson Snaps After Mother’s Husband Demands to Walk Him Down …",
+      "url": "https://dailyhighlight.com/stepson-snaps-after-mothers-husband-demands-to-walk-him-down-the-aisle-138804",
+      "snippet": "OP was raised by his loving father after his mother chose to walk away, even dodging child support and jail time to avoid …Read more"
+    },
+    {
+      "title": "Stepson Demands Family Heirloom After Years Of Disrespect, …",
+      "url": "https://dailyhighlight.com/stepson-demands-family-heirloom-after-years-of-disrespect-stepmom-chooses-stepdaughter-180509",
+      "snippet": "Mar 25, 2026 · Now, years later, that same stepson has come back asking for something deeply personal from her family. Her …Read more"
+    },
+    {
+      "title": "Stepson Demands College Fund Contribution | TikTok",
+      "url": "https://www.tiktok.com/@riddle4you/video/7634862324217695518",
+      "snippet": "A man who has been a devoted stepdad for 12 years is facing a difficult situation with his stepson, James, 17. Despite years of trying …Read more"
+    }
+  ]
+}

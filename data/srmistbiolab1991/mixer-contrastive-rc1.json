@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "srmistbiolab1991/mixer-contrastive-rc1",
+  "slug": "srmistbiolab1991-mixer-contrastive-rc1",
+  "author": "srmistbiolab1991",
+  "url": "https://huggingface.co/srmistbiolab1991/mixer-contrastive-rc1",
+  "created_at": "2026-09-25T13:55:14.000Z",
+  "updated_at": "2026-09-25T13:55:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "srmistbiolab1991 (अर्जुन कुमार) - Hugging Face",
+      "url": "https://huggingface.co/srmistbiolab1991",
+      "snippet": "Follow abigailosei2267 miaflores36 AI & ML interests None yet Recent Activity updateda model3 days ago"
+    },
+    {
+      "title": "srmistbiolab1991 (अर्जुन कुमार) - Hugging Face",
+      "url": "https://huggingface.co/srmistbiolab1991/models",
+      "snippet": "srmistbiolab1991&#x27;s models1 Sort: Recently updated srmistbiolab1991/deit-demo-2024 16.6k•Updated 3 days ago"
+    },
+    {
+      "title": "Contrastive learning | AI Research Papers",
+      "url": "https://www.aimodels.fyi/research-topics/contrastive-learning",
+      "snippet": "Contrastive learning is a machine learning technique that aims to learn representations of data by teaching a model which data points are similar (\"positive pairs\") and which are dissimilar (\"negative pairs\"). Instead of relying on labeled data, it leverages the underlying structure of the data itself. The model is trained to pull representations of positive pairs closer together in an ..."
+    },
+    {
+      "title": "‪Albert Gu‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=DVCHv1kAAAAJ&hl=en",
+      "snippet": "‪Carnegie Mellon University‬ - ‪‪Cited by 34,920‬‬ - ‪Machine Learning‬"
+    },
+    {
+      "title": "Contrastive learning approach | AI Research Papers",
+      "url": "https://www.aimodels.fyi/research-topics/contrastive-learning-approach",
+      "snippet": "Contrastive learning is a self-supervised technique where AI models learn by comparing and contrasting different data points. The core idea is to train a model to recognize similar (positive) pairs of data as being closer together in a learned representation space, while dissimilar (negative) pairs are pushed further apart."
+    }
+  ]
+}

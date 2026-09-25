@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mursideaki/latensis-sts-tr",
+  "slug": "mursideaki-latensis-sts-tr",
+  "author": "mursideaki",
+  "url": "https://huggingface.co/mursideaki/latensis-sts-tr",
+  "created_at": "2026-09-25T12:20:46.000Z",
+  "updated_at": "2026-09-25T13:02:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "turkish",
+    "sentence-similarity",
+    "semantic-textual-similarity",
+    "turkish-nlp",
+    "tr",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184346112,
+  "parameters_human": "184.3M",
+  "storage_bytes": 738283339,
+  "storage_human": "738 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mursideaki (Mürşide Aki) - Hugging Face",
+      "url": "https://huggingface.co/mursideaki",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 14 days ago ... published a model 14 days ago"
+    },
+    {
+      "title": "mursideaki/latensis-roberta-base-tr · Hugging Face",
+      "url": "https://huggingface.co/mursideaki/latensis-roberta-base-tr",
+      "snippet": "Latensis is a Turkish-specific RoBERTa base model trained from scratch on 1GB of curated Turkish text using the Hecemen Unigram 128k tokenizer — a tokenizer designed specifically for Turkish morphology."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 507 AI models across 483 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

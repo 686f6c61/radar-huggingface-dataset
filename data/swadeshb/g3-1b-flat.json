@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "swadeshb/g3-1b-flat",
+  "slug": "swadeshb-g3-1b-flat",
+  "author": "swadeshb",
+  "url": "https://huggingface.co/swadeshb/g3-1b-flat",
+  "created_at": "2026-09-25T15:05:19.000Z",
+  "updated_at": "2026-09-25T15:05:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "math",
+    "hierarchical-reasoning",
+    "dataset:sxiong/MLR_structured_trajectory",
+    "base_model:google/gemma-3-1b-pt",
+    "base_model:adapter:google/gemma-3-1b-pt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45345496,
+  "storage_human": "45 MB",
+  "base_model": "google/gemma-3-1b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "swadeshb (Swadesh B) - Hugging Face",
+      "url": "https://huggingface.co/swadeshb/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 11 minutes ago ... updated a model about 11 hours ago"
+    },
+    {
+      "title": "swadeshb/scc-qwen3-1.7b-gsm8k-scc_a-seed42 · Hugging Face",
+      "url": "https://huggingface.co/swadeshb/scc-qwen3-1.7b-gsm8k-scc_a-seed42",
+      "snippet": "Instructions to use swadeshb/scc-qwen3-1.7b-gsm8k-scc_a-seed42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "swadeshb/Qwen2.5-3B-Instruct-CRPO-V35 - featherless.ai",
+      "url": "https://featherless.ai/models/swadeshb/Qwen2.5-3B-Instruct-CRPO-V35",
+      "snippet": "The swadeshb/Qwen2.5-3B-Instruct-CRPO-V35 is a 3.1 billion parameter instruction-tuned language model, fine-tuned from Qwen/Qwen2.5-3B-Instruct. It utilizes the GRPO (Generalized Reinforcement Learning from Policy Optimization) method, as introduced in the DeepSeekMath paper, for enhanced performance. This model is particularly suited for tasks requiring robust instruction following and ..."
+    },
+    {
+      "title": "swadeshb/Llama-3.2-3B-Instruct-MPO-SKD-V7 - featherless.ai",
+      "url": "https://featherless.ai/models/swadeshb/Llama-3.2-3B-Instruct-MPO-SKD-V7",
+      "snippet": "The swadeshb/Llama-3.2-3B-Instruct-MPO-SKD-V7 is a fine-tuned version of Meta&#x27;s Llama-3.2-3B-Instruct model. This 3 billion parameter instruction-tuned model was trained using the GRPO method, as introduced in the DeepSeekMath paper, to enhance its mathematical reasoning capabilities. It is optimized for tasks requiring robust logical and mathematical problem-solving, making it suitable for ..."
+    },
+    {
+      "title": "Swadesh-AI/swadesh_ai_master_summary.md at main · zaid-asim ... - GitHub",
+      "url": "https://github.com/zaid-asim/Swadesh-AI/blob/main/swadesh_ai_master_summary.md",
+      "snippet": "Swadesh AI - Executive Master Architectural Summary & Personalization Playbook This master document provides an exhaustive, multi-dimensional summary of the Swadesh AI platform, detailing its core system architecture, query execution lifecycle, specialized algorithmic optimizations, target personalization profiles, and recent security refactoring."
+    }
+  ]
+}

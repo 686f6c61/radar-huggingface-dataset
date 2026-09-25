@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "edgaremy/french-arthropod-classifier",
+  "slug": "edgaremy-french-arthropod-classifier",
+  "author": "edgaremy",
+  "url": "https://huggingface.co/edgaremy/french-arthropod-classifier",
+  "created_at": "2026-09-25T12:05:13.000Z",
+  "updated_at": "2026-09-25T12:54:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1350418081,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - edgaremy/arthropod-classifier",
+      "url": "https://github.com/edgaremy/arthropod-classifier",
+      "snippet": "Contribute to edgaremy/arthropod-classifier development by creating an account on GitHub."
+    },
+    {
+      "title": "edgaremy (Edgar Remy) - Hugging Face",
+      "url": "https://huggingface.co/edgaremy/models",
+      "snippet": "Recent Activity updated a model about 4 hours ago edgaremy/arthropod-detector published a model 1 day ago edgaremy/arthropod-detector View all activity"
+    },
+    {
+      "title": "edgaremy (Edgar Remy) - Hugging Face",
+      "url": "https://huggingface.co/edgaremy",
+      "snippet": "Recent Activity updated a model about 4 hours ago edgaremy/arthropod-detector published a model 1 day ago edgaremy/arthropod-detector"
+    },
+    {
+      "title": "Making a detector for terrestial arthropods [Edgar Remy]",
+      "url": "https://www.youtube.com/watch?v=eTxWWMXc3_E",
+      "snippet": "At the end of this process, we not only have built a French terrestrial arthropod detection dataset, but also have at the same time a model trained for arthropod detection with a F1-score close to ..."
+    },
+    {
+      "title": "Towards a general Detector of terrestrial Arthropods in Natural ...",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.06.723207v1",
+      "snippet": "Widespread arthropod declines pose risks to ecosystem functioning and agriculture. Assessing this decline or potential remediation implies the need for standardized and scalable population monitoring. Image-based methods, including camera traps and citizen science programs, are increasingly used, but the volume of data collected requires automated analysis. Robust arthropod detection is ..."
+    }
+  ]
+}

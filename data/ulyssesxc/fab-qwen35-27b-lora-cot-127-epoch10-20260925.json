@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "UlyssesXC/fab-qwen35-27b-lora-cot-127-epoch10-20260925",
+  "slug": "ulyssesxc-fab-qwen35-27b-lora-cot-127-epoch10-20260925",
+  "author": "UlyssesXC",
+  "url": "https://huggingface.co/UlyssesXC/fab-qwen35-27b-lora-cot-127-epoch10-20260925",
+  "created_at": "2026-09-25T15:18:07.000Z",
+  "updated_at": "2026-09-25T15:18:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "finance",
+    "tool-use",
+    "sft",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:adapter:Qwen/Qwen3.5-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 953963357,
+  "storage_human": "954 MB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Conséquences juridiques de l'édification d'un mur dans le territoire ...",
+      "url": "https://www.icj-cij.org/fr/affaire/131",
+      "snippet": "La Cour a rendu son avis consultatif le 9 juillet 2004. La Cour a d’abord relevé que l’Assemblée générale, qui lui avait demandé l’avis …Read more"
+    },
+    {
+      "title": "Conséquences juridiques de l'édification d'un mur dans le territoire ...",
+      "url": "https://www.icj-cij.org/fr/affaire/131/resumes",
+      "snippet": "Jul 9, 2004 · Conséquences juridiques de l'édification d'un mur dans le territoire palestinien occupé Résumés des arrêts et des …"
+    },
+    {
+      "title": "«Conséquences juridiques de l’édification d’un mur dans le territoire ...",
+      "url": "https://www.icrc.org/sites/default/files/external/doc/fr/assets/files/other/irrc_855_abi_saab.pdf",
+      "snippet": "Le récent avis consultatif rendu par la Cour internationale de justice sur les Conséquences juridiques de l’édification d’un mur dans le …"
+    },
+    {
+      "title": "Conséquences juridiques de l'édification d'un mur dans le territoire ...",
+      "url": "https://www.persee.fr/doc/afdi_0066-3085_2004_num_50_1_3797",
+      "snippet": "La question posée à la Cour porte sur les conséquences juridiques de l'édification « du mur qu'Israël, puissance occupante, est en …"
+    },
+    {
+      "title": "CONSÉQUENCES JURIDIQUES DE L'É;DIFICATION D'UN MUR DANS LE TERRITOIRE ...",
+      "url": "https://jurdi.fr/wp-content/uploads/2024/11/040709-Avis-consultatif-de-la-CIJ-concernant-le-mur-en-Palestine.pdf",
+      "snippet": "Dans le délai fixé par la Cour à cette fin, des exposés écritsont été dépo- sés, selon l'ordre de réception, par: la Guinée, l'Arabie …"
+    }
+  ]
+}

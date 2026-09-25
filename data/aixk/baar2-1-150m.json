@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "aixk/BAAR2.1-150M",
+  "slug": "aixk-baar2-1-150m",
+  "author": "aixk",
+  "url": "https://huggingface.co/aixk/BAAR2.1-150M",
+  "created_at": "2026-09-23T13:18:46.000Z",
+  "updated_at": "2026-09-25T02:05:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "BAAR25",
+    "baar2.1",
+    "150m",
+    "multilingual",
+    "text-generation",
+    "lightweight",
+    "edge-ai",
+    "rag",
+    "ko",
+    "en",
+    "ja",
+    "zh",
+    "es",
+    "pt",
+    "de",
+    "ru",
+    "hi",
+    "vi",
+    "th",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aixk/BAAR2.1-150M · Hugging Face",
+      "url": "https://huggingface.co/aixk/BAAR2.1-150M",
+      "snippet": "📌 Model Overview BAAR2.1-150M is a compact multilingual conversational model designed to enable real-time chat under minimal hardware conditions. With 150 million (150M) parameters, it brings balanced, interactive dialogue capabilities across 11 languages to resource-constrained environments, edge devices, and on-device platforms."
+    },
+    {
+      "title": "aixk/BAAR2-150M · Hugging Face",
+      "url": "https://huggingface.co/aixk/BAAR2-150M",
+      "snippet": "BAAR2-150M is a lightweight multilingual language model designed for fast, resource-efficient inference across 11 languages. Optimized for low latency and minimal compute environments, it enables responsive real-time generation on edge devices, mobile platforms, and resource-constrained servers."
+    },
+    {
+      "title": "Model Tracker: September 17-20, 2026 - savrn.com",
+      "url": "https://savrn.com/blog/model-tracker-2026-09-17-to-2026-09-21-b8e9a9c05d",
+      "snippet": "SAVRN recorded 2661 source-observed model and provider updates in the September 17-20, 2026 reporting window (UTC)."
+    },
+    {
+      "title": "Best xAI Grok Models (September 2026) — Ranked by Benchmark Data",
+      "url": "https://benchlm.ai/best/xai-models",
+      "snippet": "Best xAI Grok Models in 2026 As of September 24, 2026, the top model in best xai grok models on the BenchLM leaderboard is Grok 4.6 with a score of 69.2. Bottom line: Grok 4.1 is xAI&#x27;s best — strong on multimodal (98) and knowledge (95) with perfect multilingual. Grok 4.20 adds stronger coding and instruction following."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Access powerful AI models at zero cost. Experiment, learn, and build with free AI models and LLMs. OpenRouter is committed to keeping AI accessible for everyone."
+    }
+  ]
+}

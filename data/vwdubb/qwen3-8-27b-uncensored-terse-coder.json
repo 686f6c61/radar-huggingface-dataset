@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "vwdubb/Qwen3.8-27B-Uncensored-Terse-Coder",
+  "slug": "vwdubb-qwen3-8-27b-uncensored-terse-coder",
+  "author": "vwdubb",
+  "url": "https://huggingface.co/vwdubb/Qwen3.8-27B-Uncensored-Terse-Coder",
+  "created_at": "2026-09-25T15:19:37.000Z",
+  "updated_at": "2026-09-25T15:30:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "merge",
+    "lora",
+    "abliterated",
+    "uncensored",
+    "reasoning",
+    "coding",
+    "token-efficient",
+    "qwen3_8",
+    "ai-red-team",
+    "conversational",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:adapter:orcarouter/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HarishXxx on Scratch",
+      "url": "https://scratch.mit.edu/users/HarishXxx/",
+      "snippet": "HarishXxx on Scratch BALDIS COOCOO BACICK YHIS SUCKS by HarishXxx Untitled-121 by HarishXxx VIRUS!!!!!!!!!!!!!!!Game no …"
+    },
+    {
+      "title": "HD Sex Videos: List of All Categories - SexVid.xxx",
+      "url": "https://www.sexvid.xxx/c/",
+      "snippet": "A wide range of porn categories sorted from A to Z are presented at SexVid.xxx tube. You can find tons of adult videos ready to …"
+    },
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Bienvenue sur Pornhub.com, le site des meilleures vidéos porno hardcore gratuites avec les stars les plus chaudes du hard. …"
+    },
+    {
+      "title": "XXX (2002 film) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/XXX_(2002_film)",
+      "snippet": "XXX (stylized as xXx and pronounced Triple X) is a 2002 American action thriller film starring Vin Diesel as Xander Cage, a thrill …"
+    },
+    {
+      "title": "Dr. Harish Grover - YouTube",
+      "url": "https://www.youtube.com/@HarishGroverchiropractor",
+      "snippet": "Dr. Harish Grover – Posture & Spine Alignment Specialist | Best Chiropractor in India 🇮🇳. Get expert chiropractic and spine alignment …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-zimage-turbo-dpoa1-lora",
+  "slug": "runninghubai-rh-zimage-turbo-dpoa1-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-zimage-turbo-dpoa1-lora",
+  "created_at": "2026-09-25T12:05:00.000Z",
+  "updated_at": "2026-09-25T12:16:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81344814,
+  "storage_human": "81 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zimage turbo dpo realistic lighting series A1 - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/2060954972359057410",
+      "snippet": "Zimage turbo dpo真实感光影系列A1 is a photorealistic lighting and shadow enhancement LoRA model based on Z-image-turbo, specially optimized to enhance image lighting and shadow realism, resulting in richer and more natural light and shadow layers in the image."
+    },
+    {
+      "title": "Photorealistic Lighting z-image-turbo-flow-dpo - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/2027626681703337985",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI/rh-kook-zimage-turbo-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-kook-zimage-turbo-lora",
+      "snippet": "RunningHubAI / rh-kook-zimage-turbo-lora Like 0 Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-kook-zimage-turbo-lora Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "Zimage turbo realistic lighting h2 - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/2064978900370935809",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "Zimage turbo dpo真实感光影H1 - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/model/public/2060704902086746114",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    }
+  ]
+}

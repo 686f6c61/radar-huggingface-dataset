@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "laura-mismetti/ttt-msms",
+  "slug": "laura-mismetti-ttt-msms",
+  "author": "laura-mismetti",
+  "url": "https://huggingface.co/laura-mismetti/ttt-msms",
+  "created_at": "2026-09-25T16:04:53.000Z",
+  "updated_at": "2026-09-25T16:04:53.000Z",
+  "license": "openmdw-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openmdw-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98702,
+  "storage_human": "98702 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ligue Auvergne-Rhône-Alpes de Football – LAuRAFoot, l'amour du jeu",
+      "url": "https://laurafoot.fff.fr/",
+      "snippet": "Actu des clubsActualités ArbitrageActualités de la LigueProgramme Educatif Fédéral « Jouons du bon côté » La FFF lance la …"
+    },
+    {
+      "title": "Laura (film, 1944) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Laura_(film,_1944)",
+      "snippet": "Par sa construction en flashback et son mélange de genres, « entre thriller et dissection des âmes », Laura est un classique du film …"
+    },
+    {
+      "title": "Prénom Laura (fille) : signification, origine, caractère, sainte, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/laura/prenom-9092",
+      "snippet": "Le prénom Laura est inspiré du terme laurus qui signifie \"laurier\", un symbole de gloire et de victoire depuis l'Antiquité. Ce prénom a …"
+    },
+    {
+      "title": "Johnny Hallyday - Laura (Clip Officiel Remasterisé)",
+      "url": "https://www.youtube.com/watch?v=prgsiq1Z8wM",
+      "snippet": "Feb 24, 2017 · Music video by Johnny Hallyday performing Laura.© 1987 Mercury Music Group …...more ...more Show less"
+    },
+    {
+      "title": "Vex - Faux-Suede Jacket - LauraCanada",
+      "url": "https://laura.ca/fr",
+      "snippet": "Designed for everyday wear, our zip jacket by Vex offers the perfect blend of comfort, function and style. Layer over a neutral tank …"
+    }
+  ]
+}

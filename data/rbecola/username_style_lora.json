@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "rbecola/username_style_LoRA",
+  "slug": "rbecola-username_style_lora",
+  "author": "rbecola",
+  "url": "https://huggingface.co/rbecola/username_style_LoRA",
+  "created_at": "2026-09-25T18:03:08.000Z",
+  "updated_at": "2026-09-25T18:03:14.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tensorboard",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "template:sd-lora",
+    "stable-diffusion-xl",
+    "stable-diffusion-xl-diffusers",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115738104,
+  "storage_human": "116 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "معنی عدد ساعت 23:23 - nojum.eramblog.com",
+      "url": "https://nojum.eramblog.com/post/3le/%D9%85%D8%B9%D9%86%DB%8C-%D8%B9%D8%AF%D8%AF-%D8%B3%D8%A7%D8%B9%D8%AA-23:23",
+      "snippet": "تفسیر فرشته ای ساعت 23:23 فرشته نگهبان که با 23:23 مطابقت دارد ، هایل است که تأثیر آن از 23:20 تا 23:40 گسترش می یابد. او نمادی از اطمینان و جسارت است. او به شما برتری نسبت …"
+    },
+    {
+      "title": "معنی ساعت رند 23:23 عاشقانه؛ تفسیر کامل راز عدد جفت و آینه ای 2323",
+      "url": "https://salamdonya.com/fun/omen/meaning-of-hours-for-2323-love-angel-number",
+      "snippet": "Nov 6, 2023 · در اینجا معنای کامل ساعت آینه ای 23:23 را خواهید دید. برای این کار از آثار دورین ویرچو استفاده می کنیم که به ما امکان می دهد تفسیری از این ساعت دوگانه را با …"
+    },
+    {
+      "title": "ساعت 23:23 - راز ها و معنی ساعت 23:23 - ایران تاروت",
+      "url": "https://iran-tarot.com/2323-meaning-and-interpretation/",
+      "snippet": "معنی ساعت 23:23 در این قسمت به تفسیر کامل ساعت جفت و آینه 23:23 می‌پردازیم. سعی شده که تحلیل‌ها را مانند تکه‌های پازل کنار هم قرار دهیم. به این منظور، از آثار “Doreen …"
+    },
+    {
+      "title": "معنى 23:23 تطابق عقارب الساعة - موسوعة محتواك",
+      "url": "https://mhtwak.com/%D9%85%D8%B9%D9%86%D9%89-2323-%D8%AA%D8%B7%D8%A7%D8%A8%D9%82-%D8%B9%D9%82%D8%A7%D8%B1%D8%A8-%D8%A7%D9%84%D8%B3%D8%A7%D8%B9%D8%A9/",
+      "snippet": "معنى الساعة 23:23 وتطابق عقارب الساعة: دلالات الانتباه والتحفيز، تُعد الساعة 23:23 من أبرز أوقات تطابق الأرقام التي يلاحظها الكثيرون بشكل متكرر، خصوصًا في نهاية اليوم. هذا التوقيت يثير …"
+    },
+    {
+      "title": "معنی عدد 2323 و ساعت 23:23 چیست؟ - فرشتگان الهی",
+      "url": "https://mohamadkhaki.ir/23-23/",
+      "snippet": "Sep 9, 2026 · 23:23 به معنای ترغیب شما به ابراز احساسات و عواطف به افرادی است که دوستشان دارید. چیزهایی را در دل خود جمع نکنید که در نهایت به شما صدمه بزند."
+    }
+  ]
+}

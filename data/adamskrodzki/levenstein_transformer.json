@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "adamskrodzki/levenstein_transformer",
+  "slug": "adamskrodzki-levenstein_transformer",
+  "author": "adamskrodzki",
+  "url": "https://huggingface.co/adamskrodzki/levenstein_transformer",
+  "created_at": "2026-09-25T13:29:29.000Z",
+  "updated_at": "2026-09-25T13:29:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Levenshtein Transformer - ADS",
+      "url": "https://ui.adsabs.harvard.edu/abs/2019arXiv190511006G/abstract",
+      "snippet": "Modern neural sequence generation models are built to either generate tokens step-by-step from scratch or (iteratively) modify a sequence of tokens bounded by a fixed length. In this work, we develop Levenshtein Transformer, a new partially autoregressive model devised for more flexible and amenable sequence generation. Unlike previous approaches, the atomic operations of our model are ..."
+    },
+    {
+      "title": "Levenshtein Transformer - NeurIPS",
+      "url": "https://proceedings.neurips.cc/paper/9297-levenshtein-transformer",
+      "snippet": "Abstract Modern neural sequence generation models are built to either generate tokens step-by-step from scratch or (iteratively) modify a sequence of tokens bounded by a fixed length. In this work, we develop Levenshtein Transformer, a new partially autoregressive model devised for more flexible and amenable sequence generation. Unlike previous approaches, the basic operations of our model are ..."
+    },
+    {
+      "title": "[1905.11006] Levenshtein Transformer - ar5iv",
+      "url": "https://ar5iv.labs.arxiv.org/html/1905.11006",
+      "snippet": "Abstract Modern neural sequence generation models are built to either generate tokens step-by-step from scratch or (iteratively) modify a sequence of tokens bounded by a fixed length. In this work, we develop Levenshtein Transformer, a new partially autoregressive model devised for more flexible and amenable sequence generation. Unlike previous approaches, the basic operations of our model are ..."
+    },
+    {
+      "title": "[1905.11006] Levenshtein Transformer - arXiv.org",
+      "url": "https://arxiv.org/abs/1905.11006",
+      "snippet": "Modern neural sequence generation models are built to either generate tokens step-by-step from scratch or (iteratively) modify a sequence of tokens bounded by a fixed length. In this work, we develop Levenshtein Transformer, a new partially autoregressive model devised for more flexible and amenable sequence generation. Unlike previous approaches, the atomic operations of our model are ..."
+    },
+    {
+      "title": "PDF Levenshtein Transformer - NeurIPS",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2019/file/675f9820626f5bc0afb47b57890b466e-Paper.pdf",
+      "snippet": "Abstract Modern neural sequence generation models are built to either generate tokens step-by-step from scratch or (iteratively) modify a sequence of tokens bounded by a fixed length. In this work, we develop Levenshtein Transformer, a new partially autoregressive model devised for more flexible and amenable sequence generation. Unlike previous approaches, the basic operations of our model are ..."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "WhiskyAKM/K2-Horizon-0.9B-NVFP4-GGUF",
+  "slug": "whiskyakm-k2-horizon-0-9b-nvfp4-gguf",
+  "author": "WhiskyAKM",
+  "url": "https://huggingface.co/WhiskyAKM/K2-Horizon-0.9B-NVFP4-GGUF",
+  "created_at": "2026-09-25T13:14:28.000Z",
+  "updated_at": "2026-09-25T13:15:25.000Z",
+  "license": "apache-license-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama-cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama-cpp",
+    "gguf",
+    "k2-horizon",
+    "0.9b",
+    "dense",
+    "open-weights",
+    "ifm",
+    "nvfp4",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:IFM/K2-Horizon-0.9B",
+    "base_model:quantized:IFM/K2-Horizon-0.9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1078285824,
+  "parameters_human": "1.08B",
+  "storage_bytes": 634960544,
+  "storage_human": "635 MB",
+  "base_model": "IFM/K2-Horizon-0.9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IFM/K2-Horizon-0.9B · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-0.9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "K2 Horizon - a IFM Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/IFM/k2-horizon",
+      "snippet": "K2 Horizon models, datasets, and supporting resources. Upvote . 16 +6; Sort: Collection. IFM/K2-Horizon-375B-A23B. Text Generation • 379B • Updated about 2 hours ago • 9"
+    },
+    {
+      "title": "K2 Horizon 0.9B — Files — Benchgen",
+      "url": "https://benchgen.com/models/ifm/k2-horizon-0-9b/files",
+      "snippet": "Browse the model files and weights for K2 Horizon 0.9B on Benchgen — config, tokenizer, and artifacts."
+    },
+    {
+      "title": "IFM/K2-Horizon-0.9B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/IFM/K2-Horizon-0.9B",
+      "snippet": "K2-Horizon-.9B is a compact dense model in the IFM K2-Horizon family, with 1.08B stored parameters including embeddings and a 131,072-token context window. K2-Horizon is an open-weight IFM model family built for transparent foundation-model research, staged checkpoint analysis, and practical deployment."
+    },
+    {
+      "title": "K2 Horizon 0.9B: Benchmarks, Pricing & Context Window — Benchgen",
+      "url": "https://benchgen.com/models/ifm/k2-horizon-0-9b",
+      "snippet": "K2-Horizon-.9B Quick answer: K2-Horizon-.9B is IFM&#x27;s compact dense model — a .9B-class model supporting up to 131,072 tokens of context (via YaRN RoPE scaling), trained with multi-teacher distillation for math, code, STEM, and instruction following. It scores 41.7% on AIME 2025 and 79.9% on HumanEval+, both ahead of Qwen3.5-0.8B and OpenBMB-1B in IFM&#x27;s comparison table. Note: this model ..."
+    }
+  ]
+}

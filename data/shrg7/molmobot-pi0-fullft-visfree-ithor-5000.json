@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "shrg7/molmobot-pi0-fullft-visfree-ithor-5000",
+  "slug": "shrg7-molmobot-pi0-fullft-visfree-ithor-5000",
+  "author": "shrg7",
+  "url": "https://huggingface.co/shrg7/molmobot-pi0-fullft-visfree-ithor-5000",
+  "created_at": "2026-09-25T16:20:27.000Z",
+  "updated_at": "2026-09-25T16:21:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "molmobot",
+    "pi0",
+    "ithor",
+    "full-finetune",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501298424,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011263485,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shrg7/molmobot-pi0-toys-reasoninit · Hugging Face",
+      "url": "https://huggingface.co/shrg7/molmobot-pi0-toys-reasoninit",
+      "snippet": "shrg7 / molmobot-pi0-toys-reasoninit Like 0 Robotics Safetensors openpi vision-language-action pi0 droid flow-matching License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new MolmoBot-Pi0 — reason-init action policies on real-DROID toys Training Weight interpolation (merged_alpha0.5/) Contents Limitations"
+    },
+    {
+      "title": "MolmoBot/MolmoBot-Pi0 at main · allenai/MolmoBot · GitHub",
+      "url": "https://github.com/allenai/MolmoBot/tree/main/MolmoBot-Pi0",
+      "snippet": "Serving a policy for real evaluation To run our official MolmoBot-Pi0-DROID checkpoint, simply run: ... The model_dir= and checkpoints= [] arguments can be used to serve other models, including from remote sources such as S3 or Huggingface."
+    },
+    {
+      "title": "GitHub - allenai/MolmoBot: Code and website for \"MolmoB0T: Large-Scale ...",
+      "url": "https://github.com/allenai/MolmoBot",
+      "snippet": "MolmoBot policies have strong demonstrated sim-to-real transfer to a wide variety of novel scenes, objects, and camera viewpoints. Try it out for yourself on your DROID platform with MolmoBot-DROID! MolmoBot-DROID uses only the wrist camera and 1 exo camera. Don&#x27;t worry about camera placement, MolmoBot policies are robust to arbitrary camera viewpoints!"
+    },
+    {
+      "title": "MolmoB0T: Large-Scale Simulation Enables Zero-Shot Manipulation",
+      "url": "https://allenai.github.io/MolmoBot/",
+      "snippet": "MolmoBot uses large-scale simulation to enable zero-shot robot manipulation — without real-world or task-specific robot data."
+    },
+    {
+      "title": "MolmoB T: Large-Scale Simulation Enables Zero-Shot Manipulation",
+      "url": "https://arxiv.org/html/2603.16861v1",
+      "snippet": "Using this data, we train three policy classes. Our flagship model, MolmoBot, is built on top of Molmo2 [clark2026molmo2], our video-language model capable of ingesting past frames for context. We augment this architecture with a DiT-based flow-matching action head that is layerwise coupled to the vision-language backbone."
+    }
+  ]
+}

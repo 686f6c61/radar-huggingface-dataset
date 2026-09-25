@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Abiray/Artemis-31B-v1.2-GGUF",
+  "slug": "abiray-artemis-31b-v1-2-gguf",
+  "author": "Abiray",
+  "url": "https://huggingface.co/Abiray/Artemis-31B-v1.2-GGUF",
+  "created_at": "2026-09-25T17:22:38.000Z",
+  "updated_at": "2026-09-25T17:41:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "roleplay",
+    "creative",
+    "uncensored",
+    "storywriting",
+    "gemma4",
+    "thedrummer",
+    "text-generation",
+    "base_model:TheDrummer/Artemis-31B-v1.2",
+    "base_model:quantized:TheDrummer/Artemis-31B-v1.2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 133819757888,
+  "storage_human": "133.8 GB",
+  "base_model": "TheDrummer/Artemis-31B-v1.2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atrium",
+      "url": "https://www.atrium-sud.fr/",
+      "snippet": "Connexion en cours Projet cofinancé par React-EU - Dispositif de relance de l'Union européenne en réponse a la pandémie de …Read more"
+    },
+    {
+      "title": "Atrium CAS – Login",
+      "url": "https://www.atrium-sud.fr/connexion/login",
+      "snippet": "La connexion avec ÉduConnect est réservée aux élèves et responsables d'élèves."
+    },
+    {
+      "title": "L'e-C - Correlyce - Atrium",
+      "url": "https://correlyce.atrium-sud.fr/catalogue-ng/login",
+      "snippet": "Catalogue Correlyce - Application l'e-C L'application l'e-C a besoin de JavaScript pour fonctionner. Veuillez l'activer pour voir cette …"
+    },
+    {
+      "title": "Accès interdit – Région Sud",
+      "url": "https://error.atrium-sud.fr/Page_403.html",
+      "snippet": "Accès interdit Oups il semblerait que vous tentez de vous connecter à Atrium avec une adresse IP étrangère. Cela n'est pas autorisé …"
+    },
+    {
+      "title": "Atrium - Catalogue Correlyce | Mon Espace",
+      "url": "https://correlyce.atrium-sud.fr/",
+      "snippet": "Catalogue des ressources pédagogiques pour les lycées de la région Sud, facilitant l'accès aux outils numériques éducatifs et aux …"
+    }
+  ]
+}

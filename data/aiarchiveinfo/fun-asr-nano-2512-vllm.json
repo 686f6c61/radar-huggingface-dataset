@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "AIArchiveInfo/Fun-ASR-Nano-2512-vllm",
+  "slug": "aiarchiveinfo-fun-asr-nano-2512-vllm",
+  "author": "AIArchiveInfo",
+  "url": "https://huggingface.co/AIArchiveInfo/Fun-ASR-Nano-2512-vllm",
+  "created_at": "2026-09-25T18:07:35.000Z",
+  "updated_at": "2026-09-25T18:07:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "vllm",
+  "languages": [
+    "zh",
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3",
+    "funasr",
+    "speech-recognition",
+    "automatic-speech-recognition",
+    "openai-compatible",
+    "zh",
+    "en",
+    "ja",
+    "base_model:FunAudioLLM/Fun-ASR-Nano-2512",
+    "base_model:finetune:FunAudioLLM/Fun-ASR-Nano-2512",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 985374304,
+  "parameters_human": "985.4M",
+  "storage_bytes": 1982321726,
+  "storage_human": "2.0 GB",
+  "base_model": "FunAudioLLM/Fun-ASR-Nano-2512",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porn Dude - Best Porn Sites & Free Porn Tubes List of 2026!",
+      "url": "https://theporndude.com/",
+      "snippet": "Porn Dude reviews the best porn sites of 2026. Find safe free porn sites & premium porn websites all sorted by quality!"
+    },
+    {
+      "title": "Free Porn Tubes - HD Porn, Sex Videos & XXX Porno Movies",
+      "url": "https://theporndude.com/top-porn-tube-sites",
+      "snippet": "Check out my compilation of the best free porn sites that I consider \"gold\" or \"epic\" in the adult industry. The most popular, famous, …"
+    },
+    {
+      "title": "Top Porn Sites - List of Best Porn Sites Free Videos 2026",
+      "url": "https://toppornsites.com/",
+      "snippet": "2 days ago · TopPornSites ranks the world's best porn sites of 2026. The biggest list of the most popular best porn sites counting …"
+    },
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/",
+      "snippet": "XVideos.com is a free hosting service for porn videos. We convert your files to various formats. You can grab our 'embed code' to …"
+    },
+    {
+      "title": "Tube Pleasure | Free Tube Porn Videos",
+      "url": "https://tubepleasure.com/en/",
+      "snippet": "Porn videos: Mom, Stepmom, Vintage, Milf, Wife, Mature, Shemale, Interracial, Teen (18+), Cartoon, Granny, Lesbian, Cuckold, …"
+    }
+  ]
+}

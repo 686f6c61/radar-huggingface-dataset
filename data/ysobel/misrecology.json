@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Ysobel/MISREcology",
+  "slug": "ysobel-misrecology",
+  "author": "Ysobel",
+  "url": "https://huggingface.co/Ysobel/MISREcology",
+  "created_at": "2026-09-25T01:14:30.000Z",
+  "updated_at": "2026-09-25T01:47:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "doi:10.57967/hf/10591",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6348543518,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ysobel (ysims) - Hugging Face",
+      "url": "https://huggingface.co/Ysobel/datasets",
+      "snippet": "Environmental conservation, zero-shot learning, robotics"
+    },
+    {
+      "title": "Millions of people are pretending to be AI chatbots — for fun",
+      "url": "https://www.upr.org/npr-news/2026-04-14/millions-of-people-are-pretending-to-be-ai-chatbots-for-fun",
+      "snippet": "The joy of playing AI chatbot dress-up More than one third of U.S. adults have used ChatGPT, according to a June 2025 Pew Research study. People are not only deploying AI chatbots for everything from planning trips to doing homework assignments — they are also having fun impersonating them."
+    },
+    {
+      "title": "Ysobel Sims | Home",
+      "url": "https://ysims.github.io/",
+      "snippet": "Ysobel Sims AI and Environmental Conservation Scientist This site details some of my projects and research in the fields of machine learning, environmental conservation and robotics. I currently work at Macquarie University, in the Spatial Decisions Group. Potential students and collaborators are welcome to reach out to me via email or LinkedIn."
+    },
+    {
+      "title": "Exploring GPT-4 for Robotic Agent Strategy with Real-Time State ...",
+      "url": "https://arxiv.org/abs/2503.23601",
+      "snippet": "We explore the use of GPT-4 on a humanoid robot in simulation and the real world as proof of concept of a novel large language model (LLM) driven behaviour method. LLMs have shown the ability to perform various tasks, including robotic agent behaviour. The problem involves prompting the LLM with a goal, and the LLM outputs the sub-tasks to complete to achieve that goal. Previous works focus on ..."
+    },
+    {
+      "title": "MossyModels — Free YOLO and ONNX AI Models",
+      "url": "https://mossymodels.com/",
+      "snippet": "Free community library of YOLO and ONNX AI aimbot models for Fortnite, Valorant, Warzone, Apex Legends, CS2, and 40+ games. Download ONNX and PyTorch weights."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "ikedachin/llm-jp-4-8b-thinking_imabari_qa_v4_reasoning_effort_v1",
+  "slug": "ikedachin-llm-jp-4-8b-thinking_imabari_qa_v4_reasoning_effort_v1",
+  "author": "ikedachin",
+  "url": "https://huggingface.co/ikedachin/llm-jp-4-8b-thinking_imabari_qa_v4_reasoning_effort_v1",
+  "created_at": "2026-09-20T06:19:41.000Z",
+  "updated_at": "2026-09-25T02:02:00.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "dialect",
+    "japanese",
+    "ehime",
+    "imabari",
+    "llm-jp-4",
+    "question-answering",
+    "reasoning",
+    "conversational",
+    "ja",
+    "dataset:ikedachin/imabari_wiki_qa_v4_reasoning_effort_llmjp4",
+    "base_model:llm-jp/llm-jp-4-8b-thinking",
+    "base_model:finetune:llm-jp/llm-jp-4-8b-thinking",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 443,
+  "trending_score": 0,
+  "parameters": 8590200832,
+  "parameters_human": "8.59B",
+  "storage_bytes": 17193303575,
+  "storage_human": "17.2 GB",
+  "base_model": "llm-jp/llm-jp-4-8b-thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krx18 - Video Slots, Poker - Sports Betting Malaysia",
+      "url": "https://krx18.im/en/",
+      "snippet": "At krx18, you can explore a wide variety of popular games including Video Slots, Poker, and Sports Betting — all designed with …Read more"
+    },
+    {
+      "title": "www.krx18.net",
+      "url": "https://www.krx18.net/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité.Read more"
+    },
+    {
+      "title": "Telegram: Contact @krx18_official - t.me",
+      "url": "https://t.me/krx18_official",
+      "snippet": "You can view and join @krx18_official right away.Read more"
+    },
+    {
+      "title": "Is Krx18.net down? Live status and problems past 24 hours",
+      "url": "https://downforeveryoneorjustme.com/krx18.net",
+      "snippet": "1 day ago · Live problems for Krx18.net. Error received? Down? Slow? Check what is going on.Read more"
+    },
+    {
+      "title": "+18 Korean Movie - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLx6oS4Ul3wr4lK4F4CRwg5z-0xseLn1nD",
+      "snippet": "Share your videos with friends, family, and the worldRead more"
+    }
+  ]
+}

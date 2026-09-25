@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "vwdubb/Qwen3.8-27B-Uncensored-Terse-Coder-FP8",
+  "slug": "vwdubb-qwen3-8-27b-uncensored-terse-coder-fp8",
+  "author": "vwdubb",
+  "url": "https://huggingface.co/vwdubb/Qwen3.8-27B-Uncensored-Terse-Coder-FP8",
+  "created_at": "2026-09-25T15:20:13.000Z",
+  "updated_at": "2026-09-25T15:34:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "merge",
+    "lora",
+    "abliterated",
+    "uncensored",
+    "reasoning",
+    "coding",
+    "token-efficient",
+    "qwen3_8",
+    "ai-red-team",
+    "conversational",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:adapter:orcarouter/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 38465169000,
+  "storage_human": "38.5 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bl5591/Qwen3.8-27B-Uncensored-FP8 - Storage Bucket",
+      "url": "https://huggingface.co/buckets/bl5591/Qwen3.8-27B-Uncensored-FP8",
+      "snippet": "An abliterated (refusal-removed) and offline block-FP8 quantized build of Qwen/Qwen3.8-27B — a 27B-parameter dense, hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with flexible thinking control, tool-calling, and an MTP speculative-decoding head."
+    },
+    {
+      "title": "GitHub - Wassimyounes01/qwen38-uncensored: Local Qwen 3.8 27B ...",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Model doesn&#x27;t respond / refuses Verify you pulled abliterated weights: ollama show qwen3.8:27b-uncensored --modelfile should show FROM orcarouter/... If using --legacy, the system pack alone may not fully suppress refusals"
+    },
+    {
+      "title": "vwdubb/Swift-Qwen3.8-27b-FP8 · Hugging Face",
+      "url": "https://huggingface.co/vwdubb/Swift-Qwen3.8-27b-FP8",
+      "snippet": "Swift-Qwen3.8-27B is UkisAI&#x27;s reasoning-efficient derivative of Qwen3.8-27B, using 58.3% fewer thinking tokens while maintaining near-identical performance (<1% loss) and as a result getting a x1.95 speed-up on several tasks."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Ollama build of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head. Sixteen tags from 2-bit to 8-bit, each with the mmproj vision projector bundled in — nothing extra to fetch. Browse all ..."
+    },
+    {
+      "title": "How to Run an Uncensored Qwen 3.8 27b: Local & Cloud",
+      "url": "https://thegeekinsights.com/run-uncensored-qwen-3-8-27b/",
+      "snippet": "Qwen3.8-27B-Uncensored is a community-modified 27-billion-parameter model that runs locally from a GGUF file or through hosted inference. The right setup depends on your available VRAM or unified memory, whether you need image and video input, and whether prompts must remain on your own machine. For most local systems, a 4-bit file is the sensible starting point."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "TensorVizion/MiMo-V2.6-Distill-Qwen-Abliterated",
+  "slug": "tensorvizion-mimo-v2-6-distill-qwen-abliterated",
+  "author": "TensorVizion",
+  "url": "https://huggingface.co/TensorVizion/MiMo-V2.6-Distill-Qwen-Abliterated",
+  "created_at": "2026-09-25T19:09:48.000Z",
+  "updated_at": "2026-09-25T19:10:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "mimo_v2",
+    "agentic",
+    "distillation",
+    "supervised-fine-tuning",
+    "code",
+    "tool-use",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:finetune:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 2819964556,
+  "storage_human": "2.8 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roberta Ambiel on Reels - Facebook",
+      "url": "https://www.facebook.com/61594649545032/videos/1442297201088523/",
+      "snippet": "2 days ago · 33 Last viewed on: Sep 23, 2026"
+    },
+    {
+      "title": "𝕽𝖔𝖇𝖊𝖗𝖙𝖆 (@_.roberta_18) • Instagram photos and videos",
+      "url": "https://www.instagram.com/_.roberta_18/",
+      "snippet": "See photos and videos from friends on Instagram, and discover other accounts you'll love."
+    },
+    {
+      "title": "Roberta18 (@_roberta_.18) • Instagram photos and videos",
+      "url": "https://www.instagram.com/_roberta_.18/",
+      "snippet": "165 Followers, 56 Following, 193 Posts - Roberta18 (@_roberta_.18) on Instagram: \"\""
+    },
+    {
+      "title": "Todas as edições de Playboy Brasil – Berrorgas",
+      "url": "https://berrorgas.com.br/playboy-brasil.html",
+      "snippet": "Aug 2, 2022 · Esta é uma lista de capas da revista Playboy brasileira, listando a mulher da capa, fotógrafo do ensaio principal, …"
+    },
+    {
+      "title": "Em video amador Luiza Ambiel nua se masturba com um vibrador na …",
+      "url": "https://queissonovinha.com/em-video-amador-luiza-ambiel-nua-se-masturba-com-um-vibrador-na-buceta-depois-do-banho/",
+      "snippet": "Jul 8, 2026 · Assista ao vídeo caseiro de Luiza Ambiel no quarto se divertindo com um vibrador após o banho. Primeiro, ela se …"
+    }
+  ]
+}

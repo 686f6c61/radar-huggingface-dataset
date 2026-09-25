@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "darrellbest/Qwen3.5-9B-Heretic-FP8",
+  "slug": "darrellbest-qwen3-5-9b-heretic-fp8",
+  "author": "darrellbest",
+  "url": "https://huggingface.co/darrellbest/Qwen3.5-9B-Heretic-FP8",
+  "created_at": "2026-09-25T16:39:03.000Z",
+  "updated_at": "2026-09-25T16:39:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "heretic",
+    "ara",
+    "abliterated",
+    "uncensored",
+    "qwen3.5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:darrellbest/Qwen3.5-9B-Heretic",
+    "base_model:quantized:darrellbest/Qwen3.5-9B-Heretic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 14026782301,
+  "storage_human": "14.0 GB",
+  "base_model": "darrellbest/Qwen3.5-9B-Heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "apothic/Qwen3.5-9B-ultra-heretic-fp8 · Hugging Face",
+      "url": "https://huggingface.co/apothic/Qwen3.5-9B-ultra-heretic-fp8",
+      "snippet": "Qwen3.5-9B Ultra Heretic FP8 This repository contains an offline-FP8 version of llmfan46/Qwen3.5-9B-ultra-heretic, prepared for serving on a single NVIDIA L40S with SGLang. This is not a GGUF export and not an online quantization recipe."
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3.5 9b Heretic - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-5-9b-heretic.html",
+      "snippet": "Download Qwen3.5 9b Heretic GGUF model. 5.02 GB, 930 downloads, 16 likes."
+    },
+    {
+      "title": "Qwen3.5 9B FP8 by Qwen (Alibaba) — ThinkLLM",
+      "url": "https://thinkllm.dev/models/qwen3-5-9b-fp8",
+      "snippet": "A compact multimodal model that punches at a reasonable weight for its size, handling both text and image inputs with the efficiency you&#x27;d expect from an FP8 quantized build. It carries Qwen&#x27;s characteristic instruction-following discipline and tends to be methodical rather than flashy. The FP8 quantization means slightly reduced memory overhead compared to full precision, with the usual trade ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "vwdubb/Swift-1.5-Qwen3.8-27b-Terse-Coder",
+  "slug": "vwdubb-swift-1-5-qwen3-8-27b-terse-coder",
+  "author": "vwdubb",
+  "url": "https://huggingface.co/vwdubb/Swift-1.5-Qwen3.8-27b-Terse-Coder",
+  "created_at": "2026-09-25T15:14:58.000Z",
+  "updated_at": "2026-09-25T15:22:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "merge",
+    "lora",
+    "reasoning",
+    "coding",
+    "token-efficient",
+    "qwen3_8",
+    "conversational",
+    "base_model:ukisai/Swift-1.5-Qwen3.8-27b",
+    "base_model:adapter:ukisai/Swift-1.5-Qwen3.8-27b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55580862660,
+  "storage_human": "55.6 GB",
+  "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vwdubb/Swift-Qwen3.8-27b-FP8 · Hugging Face",
+      "url": "https://huggingface.co/vwdubb/Swift-Qwen3.8-27b-FP8",
+      "snippet": "vwdubb / Swift-Qwen3.8-27b-FP8 Like 0 Image-Text-to-Text Transformers Safetensors qwen3_5 qwen3_8 efficient-thinking reasoning token-efficient lora conversational compressed-tensors License:swift-open-license-1. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Adapter Models for ukisai/Swift-1.5-Qwen3.8-27b - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:adapter:ukisai/Swift-1.5-Qwen3.8-27b",
+      "snippet": "Model Tree Reset ukisai/Swift-1.5-Qwen3.8-27b Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "Run Swift-1.5-Qwen3.8-27B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/ukisai/Swift-1.5-Qwen3.8-27b",
+      "snippet": "Swift 1.5 Qwen3.8-27B is a 27 billion parameter language model developed by UkisAI, derived from Qwen3.8-27B. This model is optimized for reasoning efficiency, using 58.5% fewer \"thinking tokens\" while achieving a 0.35% higher score than its base model, resulting in a 1.95x speed-up on various tasks. It excels particularly in coding and agentic tasks, making it suitable for applications ..."
+    },
+    {
+      "title": "Swift-Qwen3.8-27B: less overthinking | UkisAI",
+      "url": "https://ukisai.com/news/introducing-swift",
+      "snippet": "Swift includes a transfer component derived from BottleCap AI&#x27;s ThinkingCap-Qwen3.6-27B. The resulting model uses the standard Qwen3.8 interface and retains text, image, and video support. Benchmark results We evaluated Qwen3.8-27B and Swift on nine benchmarks, with BF16 weights and five runs per model. All base scores come from our own ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    }
+  ]
+}

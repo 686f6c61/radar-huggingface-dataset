@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "masterofnone00/qwen3-4b-marx-persona",
+  "slug": "masterofnone00-qwen3-4b-marx-persona",
+  "author": "masterofnone00",
+  "url": "https://huggingface.co/masterofnone00/qwen3-4b-marx-persona",
+  "created_at": "2026-09-25T14:34:14.000Z",
+  "updated_at": "2026-09-25T14:36:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/qwen3-4b-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275731820,
+  "storage_human": "276 MB",
+  "base_model": "unsloth/qwen3-4b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mike Likes Pee Pants (@mikelikespeepants.bsky.social)",
+      "url": "https://bsky.app/profile/mikelikespeepants.bsky.social",
+      "snippet": "I’m a heterosexual guy that is happily married. I like to share pictures of my day to day life of being incontinent. I share pictures of me …"
+    },
+    {
+      "title": "OutbackABDL (@AbdlOutback) / X",
+      "url": "https://x.com/AbdlOutback",
+      "snippet": "Nice reliving soft mess in my jocks. Enjoy folks! #pantspooping #undiesmess #gayfetish"
+    },
+    {
+      "title": "AB/DL gay men - Facebook",
+      "url": "https://www.facebook.com/groups/429205535941392/",
+      "snippet": "For men to share advice and pics about diapers/nappies and other ABDL related topics."
+    },
+    {
+      "title": "Diaper Boys (@thediaperboys.bsky.social) — Bluesky",
+      "url": "https://bsky.app/profile/thediaperboys.bsky.social",
+      "snippet": "Throwback to summer and Try Agains 🏆 #abdl #diaperboys #diapers 11 177 ‪Diaper Boys‬ ‪@thediaperboys.bsky.social‬"
+    },
+    {
+      "title": "Filled my undies like a good boy : r/pantspooping - Reddit",
+      "url": "https://www.reddit.com/r/pantspooping/comments/189eiz1/filled_my_undies_like_a_good_boy/",
+      "snippet": "Dec 2, 2023 · A safe space for people of all walks of life that like to poop their pants intentionally or accidentally, or like to watch …"
+    }
+  ]
+}

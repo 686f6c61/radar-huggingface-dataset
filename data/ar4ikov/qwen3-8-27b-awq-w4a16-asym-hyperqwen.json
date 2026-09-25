@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Ar4ikov/Qwen3.8-27B-AWQ-W4A16-ASYM-HyperQwen",
+  "slug": "ar4ikov-qwen3-8-27b-awq-w4a16-asym-hyperqwen",
+  "author": "Ar4ikov",
+  "url": "https://huggingface.co/Ar4ikov/Qwen3.8-27B-AWQ-W4A16-ASYM-HyperQwen",
+  "created_at": "2026-09-22T01:38:17.000Z",
+  "updated_at": "2026-09-25T02:15:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "awq",
+    "w4a16",
+    "asymmetric",
+    "compressed-tensors",
+    "hyperqwen",
+    "speculative-decoding",
+    "vision",
+    "instruct",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Ar4ikov/Qwen3.8-27B-AWQ-W4A16-ASYM",
+    "base_model:quantized:Ar4ikov/Qwen3.8-27B-AWQ-W4A16-ASYM",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 71,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 16860077642,
+  "storage_human": "16.9 GB",
+  "base_model": "Ar4ikov/Qwen3.8-27B-AWQ-W4A16-ASYM, orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Today's selection - XNXX.COM",
+      "url": "https://www.xnxx.com/todays-selection/",
+      "snippet": "XNXX Today's selection MyPervyFamily - My Curious Stepsister Wants to See Me Masturbate?? - Winter Bell 19.3k 94% 15min - …"
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies - XNXX…",
+      "url": "https://www.xnxx.com/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, …"
+    },
+    {
+      "title": "XNXX Free Porn Videos - HD Porno Tube & XXX Sex Videos - XNXX…",
+      "url": "https://xnxx.dev/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, …"
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies - XNXX…",
+      "url": "https://m-xnxx.com/",
+      "snippet": "XXX,XXX Video,XNXX Video,Bokep indo,XNXX indo,indo porn,Xvideos,Xvideo,Film Sex,YouPorn,Sex Video,Sex Porno,Porn …"
+    },
+    {
+      "title": "Today's selection - XNXX.COM",
+      "url": "https://m-xnxx.com/todays-selection",
+      "snippet": "XNXX Today's selection A sexy blonde brought only a swimsuit to the Alps, so I decided to help her warm up, and she was so …"
+    }
+  ]
+}

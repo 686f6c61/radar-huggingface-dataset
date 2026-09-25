@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dClimate/aifs-single-earthboi",
+  "slug": "dclimate-aifs-single-earthboi",
+  "author": "dClimate",
+  "url": "https://huggingface.co/dClimate/aifs-single-earthboi",
+  "created_at": "2026-09-25T14:49:46.000Z",
+  "updated_at": "2026-09-25T14:49:46.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "weather-forecasting",
+    "earthboi",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spotify - Web Player: Music for everyone",
+      "url": "https://open.spotify.com/",
+      "snippet": "Spotify is a digital music service that gives you access to millions of songs."
+    },
+    {
+      "title": "Spotify - Lecteur web : de la musique pour tout le monde",
+      "url": "https://open.spotify.com/intl-fr",
+      "snippet": "Spotify est un service de musique en ligne qui vous permet d'accéder à des millions de titres."
+    },
+    {
+      "title": "Descarga para Windows - Spotify",
+      "url": "https://www.spotify.com/mx/download/windows/",
+      "snippet": "En Spotify, puedes encontrar toda la música que necesitas."
+    },
+    {
+      "title": "Spotify Premium - Spotify (México)",
+      "url": "https://www.spotify.com/mx/premium/",
+      "snippet": "Spotify Premium es un servicio de música digital que te brinda acceso a millones de canciones sin anuncios."
+    },
+    {
+      "title": "Spotify",
+      "url": "https://accounts.spotify.com/ja/login",
+      "snippet": "Spotifyアカウントにログインして、音楽ストリーミングをお楽しみください。"
+    }
+  ]
+}

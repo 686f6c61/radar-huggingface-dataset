@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "id": "onatm/gev-e2b",
+  "slug": "onatm-gev-e2b",
+  "author": "onatm",
+  "url": "https://huggingface.co/onatm/gev-e2b",
+  "created_at": "2026-09-25T17:34:56.000Z",
+  "updated_at": "2026-09-25T17:55:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "multiple-choice",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gev",
+    "decision-model",
+    "lora",
+    "pointer-head",
+    "multiple-choice",
+    "calibration",
+    "en",
+    "dataset:jaredpalmer/kev-suites",
+    "base_model:google/gemma-4-E2B",
+    "base_model:adapter:google/gemma-4-E2B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99832917,
+  "storage_human": "100 MB",
+  "base_model": "google/gemma-4-E2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "decision-v7/test (clean questions)",
+      "metric": null,
+      "value": 0.8292
+    },
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "decision-v7/test (clean questions)",
+      "metric": "Brier (as served)",
+      "value": 0.2336
+    },
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "decision-v7/test (clean questions)",
+      "metric": "ECE (as served)",
+      "value": 0.017
+    },
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "transfer-v4/test (clean questions)",
+      "metric": null,
+      "value": 0.625
+    },
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "transfer-v4/test (clean questions)",
+      "metric": "Brier (as served)",
+      "value": 0.4491
+    },
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "transfer-v4/test (clean questions)",
+      "metric": "ECE (as served)",
+      "value": 0.0571
+    }
+  ],
+  "sources": [
+    {
+      "title": "davidburhans/gevva-e2b-multimodal · Hugging Face",
+      "url": "https://huggingface.co/davidburhans/gevva-e2b-multimodal",
+      "snippet": "⚡ Executive Overview Gevva e2b Multimodal is the vision-enabled variant of the Gevva family of System 1 Decision Engines. Built on Google&#x27;s instruction-tuned multimodal foundation model google/gemma-4-E2B-it, this model pairs a non-autoregressive sequence classification head with Google&#x27;s frozen SigLIP vision tower and a fully fine-tuned cross-modal projection layer (embed_vision). Rather ..."
+    },
+    {
+      "title": "Jev (AI model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
+      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco-based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2] Unlike a large language model (LLM), Jev does not generate natural-language text. It instead returns typed values together with ..."
+    },
+    {
+      "title": "E2B | The Enterprise AI Agent Cloud",
+      "url": "https://e2b.dev/",
+      "snippet": "You bring the model, prompts, and agent logic. E2B runs the machine underneath. Coding, computer use, background jobs, RL rollouts: one API, an isolated microVM per session, in our cloud or your AWS or GCP account."
+    },
+    {
+      "title": "Gemma 4 E2B vs E4B: How to Run a Multimodal AI Model on Your Phone",
+      "url": "https://www.mindstudio.ai/blog/gemma-4-e2b-e4b-edge-models-phone-local",
+      "snippet": "Gemma 4 E2B vs E4B: How to Run a Multimodal AI Model on Your Phone Gemma 4&#x27;s edge models support audio, vision, and function calling in under 4B parameters. Here&#x27;s how to run them locally on Android and iOS devices."
+    },
+    {
+      "title": "Google: Gemma 4 QAT Models Reduce Memory Requirements For Mobile And ...",
+      "url": "https://pulse2.com/google-gemma-4-qat-models-reduce-memory-requirements-for-mobile-and-laptop-ai/",
+      "snippet": "Google DeepMind noted that the text-only Gemma 4 E2B model, without Per-Layer Embeddings, can operate using less than 1 GB of memory. To support adoption across the AI ecosystem, Google DeepMind partnered with several popular development platforms and tools."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "budget-internalization-iclr2027/qwen3.5-4b-16k-sft-meetwombat-s79",
+  "slug": "budget-internalization-iclr2027-qwen3-5-4b-16k-sft-meetwombat-s79",
+  "author": "budget-internalization-iclr2027",
+  "url": "https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-16k-sft-meetwombat-s79",
+  "created_at": "2026-09-25T12:16:29.000Z",
+  "updated_at": "2026-09-25T12:17:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "reasoning",
+    "math",
+    "sft",
+    "rejection-sampling",
+    "token-budget",
+    "conversational",
+    "dataset:agentica-org/DeepScaleR-Preview-Dataset",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609549,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil | budget.gouv.fr",
+      "url": "https://www.budget.gouv.fr/",
+      "snippet": "Une année entière est nécessaire pour élaborer le budget de l’État. Celui-ci est adopté au plus tard le 31 décembre de chaque …Read more"
+    },
+    {
+      "title": "Location de Voiture et Van Pas Chère | Budget",
+      "url": "https://www.budget.fr/",
+      "snippet": "Quand vous louez une voiture avec Budget, vous ne payez que pour les produits et les services dont vous avez vraiment besoin. …Read more"
+    },
+    {
+      "title": "Budget de l'État - budget.gouv.fr",
+      "url": "https://www.budget.gouv.fr/budget-etat",
+      "snippet": "Le budget de l’État correspond à l’ensemble de ses ressources et de ses dépenses. L’essentiel des ressources provient des impôts …Read more"
+    },
+    {
+      "title": "Budget de la France 2026 : recettes, dépenses, déficit en détail",
+      "url": "https://dettedelafrance.fr/budget-de-la-france",
+      "snippet": "13 hours ago · Le budget de l’État français en 2026 : 1 600 Md€ de dépenses publiques, 1 450 Md€ de recettes, 152,5 Md€ de déficit …Read more"
+    },
+    {
+      "title": "Budget 2027 — calendrier, déficit, dette : le PLF 2027 expliqué ...",
+      "url": "https://francebudget.fr/budget-2027",
+      "snippet": "Aug 30, 2026 · Budget 2027 : calendrier du projet de loi de finances (dépôt le 6 octobre 2026 au plus tard, avis HCFP, vote avant le …Read more"
+    }
+  ]
+}

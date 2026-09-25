@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "darrellbest/Qwen3.5-0.8B-Heretic",
+  "slug": "darrellbest-qwen3-5-0-8b-heretic",
+  "author": "darrellbest",
+  "url": "https://huggingface.co/darrellbest/Qwen3.5-0.8B-Heretic",
+  "created_at": "2026-09-25T15:46:50.000Z",
+  "updated_at": "2026-09-25T15:46:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "ara",
+    "abliterated",
+    "uncensored",
+    "qwen3.5",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1766931925,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PXIN/Qwen3.5-0.8B-heretic · Hugging Face",
+      "url": "https://huggingface.co/PXIN/Qwen3.5-0.8B-heretic",
+      "snippet": "This is a decensored version of Qwen/Qwen3.5-.8B, made using Heretic v1.2.0 Disclaimer: Experimental Model This model is an experimental fine-tune (0.8B parameter) created for research purposes to test reasoning distillation capabilities. It is not intended for production or heavy use. Expect hallucinations, errors in logic, and inconsistent formatting. Abliteration parameters"
+    },
+    {
+      "title": "README.md · FadedRedStar/Qwen3.5-0.8B-heretic-GGUF at main",
+      "url": "https://huggingface.co/FadedRedStar/Qwen3.5-0.8B-heretic-GGUF/blob/main/README.md",
+      "snippet": "Qwen3.5-0.8B is the smallest model in the Qwen3.5 lineup by the Qwen Team (Alibaba), a dense multimodal transformer supporting native vision-language understanding at extremely low compute cost."
+    },
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "Run & Benchmark Qwen3.5 0.8B: Smallest Multimodal AI Model",
+      "url": "https://codersera.com/blog/run-and-benchmark-qwen35-08b/",
+      "snippet": "Learn how to install, run, benchmark, compare, and demo Qwen3.5 0.8B locally. Explore hardware needs, performance tests, pricing, and alternatives."
+    },
+    {
+      "title": "Qwen3.5-0.8B-heretic API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ossipoff/Qwen3.5-0.8B-heretic",
+      "snippet": "Run Qwen3.5-.8B-heretic with FriendliAI inference. Over recent months, we have intensified our focus on developing foundation models that deliver exceptional…"
+    }
+  ]
+}

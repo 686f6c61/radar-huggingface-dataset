@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "WhiskyAKM/K2-Horizon-7B-NVFP4-GGUF",
+  "slug": "whiskyakm-k2-horizon-7b-nvfp4-gguf",
+  "author": "WhiskyAKM",
+  "url": "https://huggingface.co/WhiskyAKM/K2-Horizon-7B-NVFP4-GGUF",
+  "created_at": "2026-09-25T12:13:34.000Z",
+  "updated_at": "2026-09-25T12:24:23.000Z",
+  "license": "apache-license-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama-cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama-cpp",
+    "gguf",
+    "k2-horizon",
+    "7b",
+    "dense",
+    "open-weights",
+    "ifm",
+    "nvfp4",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:quantized:IFM/K2-Horizon-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 5339184224,
+  "storage_human": "5.3 GB",
+  "base_model": "IFM/K2-Horizon-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IFM/K2-Horizon-7B · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ProCreations/K2-Horizon-7B-Uno-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/ProCreations/K2-Horizon-7B-Uno-NVFP4",
+      "snippet": "Community NVFP4 W4A4 conversion of IFM/K2-Horizon-7B, bundled with the unchanged BF16 Uno conditional diffusion adapter and a tested, single-GPU Blackwell runtime. The root contains the packed base model. adapter/ contains the original conditional adapter, loaded separately and enabled only on Uno&#x27;s diffusion pathway."
+    },
+    {
+      "title": "Institute of Foundation Models Launches the Industry&#x27;s Largest Fully ...",
+      "url": "https://www.prnewswire.com/news-releases/institute-of-foundation-models-launches-the-industrys-largest-fully-open-source-fleet-of-ai-models-complete-with-weights-code-training-data-and-methodologies-302868628.html",
+      "snippet": "Across reasoning, mathematics, coding and agentic tasks, K2 Horizon delivers top-tier performance in every size class—with the 0.9B, 3.7B and 7B models setting new state of the art at their ..."
+    },
+    {
+      "title": "K2 Horizon 7B: specs and benchmarks | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/k2-horizon-7b/",
+      "snippet": "K2 Horizon 7B is the mid-sized dense model in K2 Horizon, the six-model fleet the Institute of Foundation Models released on 3 September 2026 alongside the 0.9B, 3.7B, 32B, 36B-A4B and 375B-A23B sizes."
+    },
+    {
+      "title": "K2 Horizon 7b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/k2-horizon-7b.html",
+      "snippet": "Download K2 Horizon 7b GGUF model. 14.7 GB, 7,821 downloads, 48 likes."
+    }
+  ]
+}

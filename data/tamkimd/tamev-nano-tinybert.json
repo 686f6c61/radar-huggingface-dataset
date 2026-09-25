@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "id": "Tamkimd/tamev-nano-tinybert",
+  "slug": "tamkimd-tamev-nano-tinybert",
+  "author": "Tamkimd",
+  "url": "https://huggingface.co/Tamkimd/tamev-nano-tinybert",
+  "created_at": "2026-09-25T14:56:38.000Z",
+  "updated_at": "2026-09-25T14:57:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tamev",
+    "decision-model",
+    "decision-intelligence",
+    "system-one",
+    "typesafe",
+    "permutation-invariant",
+    "zero-drift",
+    "calibration",
+    "brier-score",
+    "ece",
+    "llm-router",
+    "agent-routing",
+    "zero-shot",
+    "edge-ai",
+    "calibrated-probabilities",
+    "typesafe-ai",
+    "onnx",
+    "coreml",
+    "mlx",
+    "text-classification",
+    "custom_code",
+    "en",
+    "multilingual",
+    "dataset:legacy-datasets/banking77",
+    "dataset:google/boolq",
+    "dataset:fancyzhx/ag_news",
+    "dataset:nyu-mll/multi_nli",
+    "dataset:SetFit/sst5",
+    "dataset:Yelp/yelp_review_full",
+    "dataset:CogComp/trec",
+    "dataset:fancyzhx/dbpedia_14",
+    "dataset:SetFit/amazon_reviews_multi_en",
+    "dataset:stanfordnlp/imdb",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14390184,
+  "parameters_human": "14.4M",
+  "storage_bytes": 57569348,
+  "storage_human": "58 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "System One Decision Intelligence",
+      "dataset": "TAMEV Multi-Domain Benchmark Suite",
+      "metric": "Expected Calibration Error (ECE)",
+      "value": 0.0559
+    },
+    {
+      "task": "System One Decision Intelligence",
+      "dataset": "TAMEV Multi-Domain Benchmark Suite",
+      "metric": "Brier Calibration Score",
+      "value": 0.5131
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - yinmingjun/TinyBERT",
+      "url": "https://github.com/yinmingjun/TinyBERT",
+      "snippet": "TinyBERT is 7.5x smaller and 9.4x faster on inference than BERT-base and achieves competitive performances in the tasks of natural language understanding. It performs a novel transformer distillation at both the pre-training and task-specific learning stages. The overview of TinyBERT learning is illustrated as follows: For more details about the techniques of TinyBERT, refer to the paper."
+    },
+    {
+      "title": "GitHub - jaewoongy/TinyBert",
+      "url": "https://github.com/jaewoongy/TinyBert",
+      "snippet": "TinyBERT is 7.5x smaller and 9.4x faster on inference than BERT-base and achieves competitive performances in the tasks of natural language understanding. It performs a novel transformer distillation at both the pre-training and task-specific learning stages. The overview of TinyBERT learning is illustrated as follows: For more details about the techniques of TinyBERT, refer to our paper ..."
+    },
+    {
+      "title": "TinyBERT | huawei-noah/Pretrained-Language-Model | DeepWiki",
+      "url": "https://deepwiki.com/huawei-noah/Pretrained-Language-Model/2.3-tinybert",
+      "snippet": "TinyBERT represents an effective approach to BERT model compression using knowledge distillation. By transferring knowledge at multiple levels (attention, hidden states, and predictions) and employing data augmentation, TinyBERT achieves a significant reduction in model size and inference time while maintaining competitive performance on ..."
+    },
+    {
+      "title": "TinyBERT: Distilling BERT for Natural Language Understanding",
+      "url": "https://arxiv.org/abs/1909.10351",
+      "snippet": "Language model pre-training, such as BERT, has significantly improved the performances of many natural language processing tasks. However, pre-trained language models are usually computationally expensive, so it is difficult to efficiently execute them on resource-restricted devices. To accelerate inference and reduce model size while maintaining accuracy, we first propose a novel Transformer ..."
+    },
+    {
+      "title": "huawei-noah/TinyBERT_General_4L_312D · Hugging Face",
+      "url": "https://huggingface.co/huawei-noah/TinyBERT_General_4L_312D",
+      "snippet": "TinyBERT: Distilling BERT for Natural Language Understanding TinyBERT is 7.5x smaller and 9.4x faster on inference than BERT-base and achieves competitive performances in the tasks of natural language understanding. It performs a novel transformer distillation at both the pre-training and task-specific learning stages. In general distillation, we use the original BERT-base without fine-tuning ..."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "darrellbest/Qwen3.5-9B-Heretic-NVFP4",
+  "slug": "darrellbest-qwen3-5-9b-heretic-nvfp4",
+  "author": "darrellbest",
+  "url": "https://huggingface.co/darrellbest/Qwen3.5-9B-Heretic-NVFP4",
+  "created_at": "2026-09-25T16:39:48.000Z",
+  "updated_at": "2026-09-25T16:40:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "nvfp4",
+    "compressed-tensors",
+    "vllm",
+    "heretic",
+    "ara",
+    "abliterated",
+    "uncensored",
+    "qwen3.5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:darrellbest/Qwen3.5-9B-Heretic",
+    "base_model:quantized:darrellbest/Qwen3.5-9B-Heretic",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 11705301048,
+  "storage_human": "11.7 GB",
+  "base_model": "darrellbest/Qwen3.5-9B-Heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "darrellbest/Qwen3.8-27B-Heretic-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/darrellbest/Qwen3.8-27B-Heretic-NVFP4",
+      "snippet": "darrellbest / Qwen3.8-27B-Heretic-NVFP4 Like 0 Follow darrellbest 2 Image-Text-to-Text Transformers Safetensors qwen3_5 nvfp4 compressed-tensors vllm heretic ara abliterated qwen3.8 conversational 8-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.5 9b Heretic - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-5-9b-heretic.html",
+      "snippet": "Download Qwen3.5 9b Heretic GGUF model. 5.02 GB, 930 downloads, 16 likes."
+    },
+    {
+      "title": "Best 8GB GPU Model: How to Set Up Qwen 3.5 9B (Step by Step)",
+      "url": "https://insiderllm.com/guides/qwen-3-5-9b-setup-guide/",
+      "snippet": "Qwen 3.5 9B fits in 6.6GB and beats Qwen 3-class models 3x its size. Setup on Ollama/llama.cpp, quant table, where 9B still fits in the May 2026 lineup."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mo-xx/llama-3-8b-cyber-model",
+  "slug": "mo-xx-llama-3-8b-cyber-model",
+  "author": "mo-xx",
+  "url": "https://huggingface.co/mo-xx/llama-3-8b-cyber-model",
+  "created_at": "2026-09-25T15:47:30.000Z",
+  "updated_at": "2026-09-25T16:13:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mo, Go, Mbit/s : combien de Mo dans 1 Go ? + convertisseur",
+      "url": "https://www.echosdunet.net/reseau-internet/mega-giga",
+      "snippet": "Jul 8, 2026 · 1 Go = 1 000 Mo. Comprenez la différence entre Mo, Go et Mbit/s (stockage vs débit), combien de Go choisir selon vos …"
+    },
+    {
+      "title": "MO - Dates de concerts, photos, vidéos, albums...",
+      "url": "https://www.mo.fr/",
+      "snippet": "Retrouvez toute l’actu du groupe MO : dates de concert, photos, vidéos, albums, boutique en ligne"
+    },
+    {
+      "title": "MO — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/MO",
+      "snippet": "Œuvres M.O. est un titre notamment porté par : M.O., album du rappeur Nelly ; M.O., une collection de livres de poche publiée par …"
+    },
+    {
+      "title": "MO Online | Roupa Mulher, Homem, Criança e Bebé",
+      "url": "https://mo-online.com/pt/home/",
+      "snippet": "Bem-vindo ao site oficial da MO Online, a sua loja roupa online. Encontre as tendências de moda para toda a família. Roupa mulher, …"
+    },
+    {
+      "title": "Watch Mo | Netflix Official Site",
+      "url": "https://www.netflix.com/title/81134264",
+      "snippet": "In Texas, Mo straddles the line between two cultures, three languages and a pending asylum request while hustling to support his …"
+    }
+  ]
+}

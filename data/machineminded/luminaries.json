@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MachineMinded/luminaries",
+  "slug": "machineminded-luminaries",
+  "author": "MachineMinded",
+  "url": "https://huggingface.co/MachineMinded/luminaries",
+  "created_at": "2026-09-25T17:46:23.000Z",
+  "updated_at": "2026-09-25T18:23:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16314567458,
+  "storage_human": "16.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pre-Trained Physics AI Models - Luminary",
+      "url": "https://luminary.ai/models/",
+      "snippet": "Explore pre-trained Physics AI models and datasets for aerospace, defense, automotive, marine, and industrial applications."
+    },
+    {
+      "title": "Luminary | The Physics AI Platform",
+      "url": "https://luminary.ai/",
+      "snippet": "Luminary&#x27;s Physics AI Factory 01. Luminary connects data, model development, validation, deployment, and continuous retraining in one platform, giving teams a single system for operationalizing Physics AI. 02."
+    },
+    {
+      "title": "Luminary AI — Ask, Explore, & Understand Anything",
+      "url": "https://www.useluminary.ai/",
+      "snippet": "Luminary is an AI-powered exploration and understanding platform that transforms how people engage with information by making it easier to explore, analyze, and apply. Use Luminary to ask about anything, explore what you find, and understand it better, all in one place. Try it for free on the web or download the free app."
+    },
+    {
+      "title": "Multiverse Computing unveils Luminary, an AI test for chatbot models",
+      "url": "https://quantumzeitgeist.com/multiverse-computing-luminary-test-chatbot/",
+      "snippet": "Luminary uses simulations to model both customers and backend systems, revealing failure points like lost context or misused tools before deployment. \"Every enterprise AI programme starts with the same question, and almost nobody answers it with evidence: which model should we actually run?\" says Multiverse Computing, offering Luminary as the solution."
+    },
+    {
+      "title": "MachineMinded (MachineMinded) - Hugging Face",
+      "url": "https://huggingface.co/MachineMinded",
+      "snippet": "AI & ML interests ... Recent Activity liked a dataset 4 days ago ... updated a model 5 days ago ... liked a model 6 days ago"
+    }
+  ]
+}

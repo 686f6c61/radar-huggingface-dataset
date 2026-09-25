@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ryugyosoft/onw",
+  "slug": "ryugyosoft-onw",
+  "author": "ryugyosoft",
+  "url": "https://huggingface.co/ryugyosoft/onw",
+  "created_at": "2026-09-24T14:45:07.000Z",
+  "updated_at": "2026-09-25T14:33:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "openvino",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "openvino",
+    "npu",
+    "intel",
+    "intel-npu",
+    "moe",
+    "inference-engine",
+    "ja",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ryugyosoft/onw · Hugging Face",
+      "url": "https://huggingface.co/ryugyosoft/onw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ryugyosoft (Ryu Gyo) - Hugging Face",
+      "url": "https://huggingface.co/ryugyosoft",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 13 days ago ... published a model 13 days ago"
+    },
+    {
+      "title": "GitHub - blyscuit/ONW_AI: AI and game model for One Night WereWolf",
+      "url": "https://github.com/blyscuit/ONW_AI",
+      "snippet": "AI and game model for One Night WereWolf. Contribute to blyscuit/ONW_AI development by creating an account on GitHub."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    }
+  ]
+}

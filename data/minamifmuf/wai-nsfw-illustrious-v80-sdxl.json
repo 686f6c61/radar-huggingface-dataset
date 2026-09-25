@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "MinamiFmuf/wai-nsfw-illustrious-v80-sdxl",
+  "slug": "minamifmuf-wai-nsfw-illustrious-v80-sdxl",
+  "author": "MinamiFmuf",
+  "url": "https://huggingface.co/MinamiFmuf/wai-nsfw-illustrious-v80-sdxl",
+  "created_at": "2026-09-25T15:26:07.000Z",
+  "updated_at": "2026-09-25T15:26:07.000Z",
+  "license": "faipl-1.0-sd",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "stable-diffusion",
+    "stable-diffusion-xl",
+    "not-for-all-audiences",
+    "anime",
+    "hentai",
+    "girls",
+    "illustrious",
+    "en",
+    "base_model:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "base_model:finetune:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "license:other",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 6938011430,
+  "storage_human": "6.9 GB",
+  "base_model": "OnomaAIResearch/Illustrious-xl-early-release-v0",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WAI-illustrious-SDXL - AI Model | BetterWaifu",
+      "url": "https://betterwaifu.com/models/827184",
+      "snippet": "Version Name: v17.0 Released: 4/23/2026 Base Model: Illustrious Try this model Download Best All Time 2"
+    },
+    {
+      "title": "WAI-NSFW-illustrious-SDXL - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1921546733793563398",
+      "snippet": "Generate stunning anime, base_model anime art with the &#x27;WAI-NSFW-illustrious-SDXL&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "stablediffusionapi/wai-nsfw-illustrious-sdxl · Hugging Face",
+      "url": "https://huggingface.co/stablediffusionapi/wai-nsfw-illustrious-sdxl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WAI-ILLUSTRIOUS-SDXL — Model Hub — Yodayo",
+      "url": "https://yodayo.com/models/5ecbf952-6a89-4b42-bd52-54802ee55eba",
+      "snippet": "Sampler: Euler a use size larger than 1024x1024 for the original dimensions. Hires upscale: 1.5, Hires steps: 20, Hires upscaler: R-ESRGAN 4x+ Anime6B,Denoising strength: 0.35~0.5 There are four safety rating tags: general, sensitive, nsfw,explicit. Users are expected to consciously add \"nsfw\" to negative prompts to filter inappropriate content."
+    },
+    {
+      "title": "WAI-illustrious-SDXL - v17.0 | Illustrious Checkpoint | Civitai",
+      "url": "https://civitai.red/models/827184/wai-illustrious-sdxl",
+      "snippet": "WAI-Nsfw-Illustrious-17.safetensors Half precision, best balance (pruned) • 6.46 GB"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sandrohanea/gliner.cpp",
+  "slug": "sandrohanea-gliner-cpp",
+  "author": "sandrohanea",
+  "url": "https://huggingface.co/sandrohanea/gliner.cpp",
+  "created_at": "2026-09-25T13:54:52.000Z",
+  "updated_at": "2026-09-25T13:54:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Knowledgator/GLiNER.cpp: C++ inference engine for running ...",
+      "url": "https://github.com/Knowledgator/GLiNER.cpp",
+      "snippet": "GLiNER.cpp is a C++-based inference engine for running GLiNER (Generalist and Lightweight Named Entity Recognition) models. GLiNER can identify any entity type using a bidirectional transformer encoder, offering a practical alternative to traditional NER models and large language models."
+    },
+    {
+      "title": "gliner-cpp · PyPI",
+      "url": "https://pypi.org/project/gliner-cpp/",
+      "snippet": "GLiNER.cpp is a C++-based inference engine for running GLiNER (Generalist and Lightweight Named Entity Recognition) models. GLiNER can identify any entity type using a bidirectional transformer encoder, offering a practical alternative to traditional NER models and large language models."
+    },
+    {
+      "title": "GLiNER: Generalist and Lightweight Model for Named Entity ... - GitHub",
+      "url": "https://github.com/urchade/GLiNER",
+      "snippet": "GLiNER is a framework for training and deploying small Named Entity Recognition (NER) models with zero-shot capabilities. In addition to traditional NER, it supports incremental streaming NER, joint entity and relation extraction, and multi-task token classification."
+    },
+    {
+      "title": "gliner-community/gliner_xxl-v2.5 · Hugging Face",
+      "url": "https://huggingface.co/gliner-community/gliner_xxl-v2.5",
+      "snippet": "GLiNER is a Named Entity Recognition (NER) model capable of identifying any entity type using a bidirectional transformer encoder (BERT-like). It provides a practical alternative to traditional NER models, which are limited to predefined entities, and Large Language Models (LLMs) that, despite their flexibility, are costly and large for ..."
+    },
+    {
+      "title": "GLiNER2.5: Open-Source Information Extraction Model - fastino.ai",
+      "url": "https://fastino.ai/models/demo-library",
+      "snippet": "GLiNER2.5 is an open-source model for schema-driven information extraction, including efficient entity and relation extraction with no fixed span-length limit."
+    }
+  ]
+}

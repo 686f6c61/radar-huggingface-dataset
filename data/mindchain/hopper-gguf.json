@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mindchain/hopper-GGUF",
+  "slug": "mindchain-hopper-gguf",
+  "author": "mindchain",
+  "url": "https://huggingface.co/mindchain/hopper-GGUF",
+  "created_at": "2026-09-25T16:41:21.000Z",
+  "updated_at": "2026-09-25T16:47:28.000Z",
+  "license": "research-and-demo",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "q4_k_m",
+    "hopper",
+    "lora-merge",
+    "decision-model",
+    "system-one",
+    "jev",
+    "qwen3.5",
+    "research-only",
+    "llama-cpp",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 2708803936,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mindchain/hopper-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mindchain/hopper-GGUF",
+      "snippet": "mindchain / hopper-GGUF Like 0 GGUF q4_k_m hopper lora-merge decision-model system-one jev qwen3.5 research-only llama-cpp conversational License:research-and-demo Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mindchain (Karsten Kuhnke) - Hugging Face",
+      "url": "https://huggingface.co/mindchain/models",
+      "snippet": "Industry Grade Humanoid Synthetic Motion Data Generation, Mechanistic Interpretability Data Generation, Sparse Autoencoders, Edge IOT, Gemma Scope 2, RLHF, Edge AI, Alpa SIM, Alpamayo-R1, Cosmos, ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - GGUFloader/gguf-loader: GGUF Loader with its Agentic Mode, and ...",
+      "url": "https://github.com/GGUFloader/gguf-loader",
+      "snippet": "GGUF Loader with its Agentic Mode, and floating button, ai Models | Open Source & Offline. Mistral, Deepseek, llama, gemma, qwen - GGUFloader/gguf-loader"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF"
+    }
+  ]
+}

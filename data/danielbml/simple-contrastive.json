@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "danielbml/simple-contrastive",
+  "slug": "danielbml-simple-contrastive",
+  "author": "danielbml",
+  "url": "https://huggingface.co/danielbml/simple-contrastive",
+  "created_at": "2026-09-25T13:43:19.000Z",
+  "updated_at": "2026-09-25T13:43:25.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "contrastive-learning/models at main · damn8daniel/contrastive ... - GitHub",
+      "url": "https://github.com/damn8daniel/contrastive-learning/tree/main/models",
+      "snippet": "Self-supervised contrastive learning: SimCLR + BYOL from scratch. NT-Xent loss, LARS optimizer, linear evaluation, KNN probing, t-SNE. - damn8daniel/contrastive-learning"
+    },
+    {
+      "title": "GitHub - damn8daniel/contrastive-learning: Self-supervised contrastive ...",
+      "url": "https://github.com/damn8daniel/contrastive-learning",
+      "snippet": "Contrastive Learning: SimCLR + BYOL from Scratch Self-supervised contrastive learning implementations in PyTorch. This project implements two foundational methods — SimCLR and BYOL — from scratch, with full training pipelines, evaluation protocols, and visualization tools."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price ...",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    },
+    {
+      "title": "Contrastive Learning: How Models Learn by Comparison",
+      "url": "https://www.datacamp.com/tutorial/contrastive-learning",
+      "snippet": "Learn what contrastive learning is, how it works, and why it is used in modern machine learning for representation learning and self-supervised learning."
+    }
+  ]
+}

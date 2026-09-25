@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "KaiHuang05/docuverify-finetuned-bert",
+  "slug": "kaihuang05-docuverify-finetuned-bert",
+  "author": "KaiHuang05",
+  "url": "https://huggingface.co/KaiHuang05/docuverify-finetuned-bert",
+  "created_at": "2026-09-25T16:18:44.000Z",
+  "updated_at": "2026-09-25T16:28:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "en",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486085,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437973117,
+  "storage_human": "438 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tuning a BERT model | Text | TensorFlow",
+      "url": "https://www.tensorflow.org/tfmodels/nlp/fine_tune_bert",
+      "snippet": "This tutorial demonstrates how to fine-tune a Bidirectional Encoder Representations from Transformers (BERT) (Devlin et al., 2018) model using TensorFlow Model Garden. You can also find the pre-trained BERT model used in this tutorial on TensorFlow Hub (TF Hub). For concrete examples of how to use the models from TF Hub, refer to the Solve Glue tasks using BERT tutorial. If you&#x27;re just trying ..."
+    },
+    {
+      "title": "BERT Fine-Tuning Sentence Classification.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/DerwenAI/spaCy_tuTorial/blob/master/BERT_Fine_Tuning.ipynb",
+      "snippet": "History 2018 was a breakthrough year in NLP. Transfer learning, particularly models like Allen AI&#x27;s ELMO, OpenAI&#x27;s Open-GPT, and Google&#x27;s BERT allowed researchers to smash multiple benchmarks with minimal task-specific fine-tuning and provided the rest of the NLP community with pretrained models that could easily (with less data and less compute time) be fine-tuned and implemented to produce ..."
+    },
+    {
+      "title": "Fine-Tuning a BERT Model - MachineLearningMastery.com",
+      "url": "https://machinelearningmastery.com/fine-tuning-a-bert-model/",
+      "snippet": "Fine-tuning a BERT Model for GLUE Tasks GLUE is a benchmark for evaluating natural language understanding (NLU) tasks. It contains nine tasks, such as sentiment analysis, paraphrase identification, and text classification. The model learns task-specific behavior from examples."
+    },
+    {
+      "title": "BERT Fine-Tuning Sentence Classification v2.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/Ankur3107/colab_notebooks/blob/master/classification/BERT_Fine_Tuning_Sentence_Classification_v2.ipynb",
+      "snippet": "BERT (Bidirectional Encoder Representations from Transformers), released in late 2018, is the model we will use in this tutorial to provide readers with a better understanding of and practical guidance for using transfer learning models in NLP. BERT is a method of pretraining language representations that was used to create models that NLP practicioners can then download and use for free. You ..."
+    },
+    {
+      "title": "Fine-Tuning BERT: A Practical Guide | by why amit | Medium",
+      "url": "https://medium.com/@whyamit101/fine-tuning-bert-a-practical-guide-b5c94efb3d4d",
+      "snippet": "For me, the most compelling benefit of fine-tuning BERT is efficiency. You can get state-of-the-art results with minimal hardware and training time compared to building a model from scratch."
+    }
+  ]
+}

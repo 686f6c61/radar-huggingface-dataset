@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "patrickbdevaney/MiMo-V2.6-Flash-REAP50",
+  "slug": "patrickbdevaney-mimo-v2-6-flash-reap50",
+  "author": "patrickbdevaney",
+  "url": "https://huggingface.co/patrickbdevaney/MiMo-V2.6-Flash-REAP50",
+  "created_at": "2026-09-25T19:24:04.000Z",
+  "updated_at": "2026-09-25T19:25:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mimo_v2",
+    "text-generation",
+    "moe",
+    "pruned",
+    "reap",
+    "hope",
+    "multimodal",
+    "conversational",
+    "custom_code",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 159334077952,
+  "parameters_human": "159.33B",
+  "storage_bytes": 94332702727,
+  "storage_human": "94.3 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XXX Porn Videos | xHamster",
+      "url": "https://xhamster3.com/search/xxx",
+      "snippet": "Watch XXX porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!Read more"
+    },
+    {
+      "title": "'-xxx' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/-xxx",
+      "snippet": "XXXZAMbanger XXX HORNY ANAL HOUSEWIFE XXX 23.9k 100% 31min - 1080p XXXZAMbanger MATURE COUGAR XXX …"
+    },
+    {
+      "title": "Free XXX Videos & Movies - XXXomg",
+      "url": "https://xxxomg.com/",
+      "snippet": "We offer more than 200,000 videos and 150 porn categories for you to view. Get online, start browsing XXX and watch sex hardcore …"
+    },
+    {
+      "title": "Free porn videos / HD sex movies / XXX TV | TXXX.com",
+      "url": "https://txxx.com/index.php?/",
+      "snippet": "Watch free porn videos online on your desktop or mobile device. A variety of free full length XXX porn movies are available in HD …"
+    },
+    {
+      "title": "XXX 8: Your Go-to Source for XXX Videos",
+      "url": "https://xxx8.me/en/",
+      "snippet": "We've got thousands of XXX videos within every imaginable genre, and we're constantly updating our collection with the newest and …"
+    }
+  ]
+}

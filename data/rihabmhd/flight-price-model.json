@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RihabMhd/flight-price-model",
+  "slug": "rihabmhd-flight-price-model",
+  "author": "RihabMhd",
+  "url": "https://huggingface.co/RihabMhd/flight-price-model",
+  "created_at": "2026-09-25T15:42:43.000Z",
+  "updated_at": "2026-09-25T15:45:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 183983704,
+  "storage_human": "184 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Rankings 2026: Most Cost-Effective Models",
+      "url": "https://diyai.io/ai-tools/ai-model-comparison/",
+      "snippet": "Compare current AI model API prices, context limits and modelled task costs for short prompts, large documents and coding. Updated September 2026."
+    },
+    {
+      "title": "GitHub - kruti32/Flight-Price-Prediction: This project predicts flight ...",
+      "url": "https://github.com/kruti32/Flight-Price-Prediction",
+      "snippet": "This project predicts flight ticket prices using machine learning. It involves data cleaning, EDA, and building regression models like Linear Regression, Random Forest, and XGBoost. Technologies: Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, and Jupyter Notebook."
+    },
+    {
+      "title": "AI Price Table — Compare Every AI Model&#x27;s Price (2026-09-25)",
+      "url": "https://aipricetable.com/",
+      "snippet": "LLM prices re-checked hourly · last update 2026-09-25 Every AI model&#x27;s price. One clear table. The live price & spec table for every AI model — text, image, video and voice. LLM prices refresh hourly from public market data; still, always confirm on the vendor&#x27;s site before you buy."
+    },
+    {
+      "title": "Model Price Watch — Compare LLM API Pricing Across All Providers",
+      "url": "https://modelpricewatch.com/",
+      "snippet": "Compare verified LLM API pricing across every major provider: a live sortable table of token costs, context windows, and blended price per 1M tokens."
+    },
+    {
+      "title": "AI Model Pricing - Compare Prices Across Providers",
+      "url": "https://www.ai-model-pricing.com/",
+      "snippet": "Compare 600+ AI models from 60+ providers. GPT-5, Claude 4, Gemini 2.5, Llama 4 and more. Updated daily. Free JSON API."
+    }
+  ]
+}

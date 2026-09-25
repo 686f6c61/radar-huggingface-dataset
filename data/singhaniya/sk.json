@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "singhaniya/sk",
+  "slug": "singhaniya-sk",
+  "author": "singhaniya",
+  "url": "https://huggingface.co/singhaniya/sk",
+  "created_at": "2026-09-25T18:04:40.000Z",
+  "updated_at": "2026-09-25T18:04:40.000Z",
+  "license": "bsd",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sk Singhaniya ai - YouTube",
+      "url": "https://www.youtube.com/channel/UCbXXG0OteNo9i8b7XuQKV7w",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "sk singhaniya (@skbh.ai9873) • Instagram photos and videos",
+      "url": "https://www.instagram.com/skbh.ai9873/",
+      "snippet": "62 Followers, 73 Following, 12 Posts - sk singhaniya (@skbh.ai9873) on Instagram: \"\""
+    },
+    {
+      "title": "Sk Singhaniya Singhaniya (@sksinghaniya.singhaniya) - Instagram",
+      "url": "https://www.instagram.com/sksinghaniya.singhaniya/",
+      "snippet": "1,383 Followers, 338 Following, 134 Posts - See Instagram photos and videos from Sk Singhaniya Singhaniya (@sksinghaniya.singhaniya)"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "Sk Singhaniya - Facebook",
+      "url": "https://www.facebook.com/516606401539904/",
+      "snippet": "Sk Singhaniya. 5,019 likes · 18 talking about this. my family my life"
+    }
+  ]
+}

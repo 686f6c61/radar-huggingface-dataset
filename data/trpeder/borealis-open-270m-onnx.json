@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "trpeder/borealis-open-270m-ONNX",
+  "slug": "trpeder-borealis-open-270m-onnx",
+  "author": "trpeder",
+  "url": "https://huggingface.co/trpeder/borealis-open-270m-ONNX",
+  "created_at": "2026-09-25T14:55:22.000Z",
+  "updated_at": "2026-09-25T14:55:47.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "no",
+    "nb",
+    "nn",
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "gemma3_text",
+    "text-generation",
+    "conversational",
+    "no",
+    "nb",
+    "nn",
+    "en",
+    "base_model:NbAiLab/borealis-open-270m",
+    "base_model:quantized:NbAiLab/borealis-open-270m",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 696074460,
+  "storage_human": "696 MB",
+  "base_model": "NbAiLab/borealis-open-270m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "trpeder/borealis-open-1b-ONNX · Hugging Face",
+      "url": "https://huggingface.co/trpeder/borealis-open-1b-ONNX",
+      "snippet": "borealis-open-1b (ONNX, for Transformers.js) NbAiLab/borealis-open-1b converted to ONNX for the GlirOS Helper in the browser: onnx/model_q4.onnx (4-bit, WebAssembly) and onnx/model_q4f16.onnx (4-bit weights, 16-bit maths, WebGPU). The weights are otherwise unchanged; the original model card&#x27;s terms and use restrictions apply."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=NbAiLab%2Fborealis-open-270m",
+      "snippet": "Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 + 11 + 10 ..."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "ONNX - Model Zoo - Online Tutorials Library",
+      "url": "https://www.tutorialspoint.com/onnx/onnx-model-zoo.htm",
+      "snippet": "The ONNX Model Zoo is a collection of pre-trained models in the ONNX (Open Neural Network Exchange) format, designed to easily use the machine learning models without the needing to train them from scratch."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "tiktits/Swift-1.5-Qwen3.8-27B-Uncensored-EXL3-3.75bpw",
+  "slug": "tiktits-swift-1-5-qwen3-8-27b-uncensored-exl3-3-75bpw",
+  "author": "tiktits",
+  "url": "https://huggingface.co/tiktits/Swift-1.5-Qwen3.8-27B-Uncensored-EXL3-3.75bpw",
+  "created_at": "2026-09-25T01:17:02.000Z",
+  "updated_at": "2026-09-25T01:43:54.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "qwen3_8",
+    "swift-1.5",
+    "abliterated",
+    "uncensored",
+    "reasoning",
+    "efficient-thinking",
+    "vision",
+    "multimodal",
+    "mtp",
+    "dflash2",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2406.11717",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7795021184,
+  "parameters_human": "7.80B",
+  "storage_bytes": 15603250049,
+  "storage_human": "15.6 GB",
+  "base_model": "ukisai/Swift-1.5-Qwen3.8-27b, Qwen/Qwen3.8-27B, ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP, orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ukisai/Swift-Qwen3.8-27b · Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-Qwen3.8-27b",
+      "snippet": "Efficiency across and versus reasoning efforts Qwen3.8&#x27;s reasoning_effort setting lets users choose how much the model thinks. For Swift to be useful across these settings, it needs to reduce thinking while keeping accuracy close to the base. We therefore tested xhigh, medium, and low: thinking-token savings persist at every level."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "DeepSWE 1.1: Evaluated with the Claude Code harness at temp=1.0, top_p=0.95, and a 256K context window. QwenSWEBench: In-house coding benchmark for evaluating models&#x27; software engineering capabilities. Evaluated with the Claude Code harness. Reporting avg@3 with an 8-hour timeout, max_tokens=32,768, temperature=1.0, and a 256K context window."
+    },
+    {
+      "title": "Swift-Qwen3.8-27B: less overthinking | UkisAI",
+      "url": "https://ukisai.com/news/introducing-swift",
+      "snippet": "Swift includes a transfer component derived from BottleCap AI&#x27;s ThinkingCap-Qwen3.6-27B. The resulting model uses the standard Qwen3.8 interface and retains text, image, and video support."
+    },
+    {
+      "title": "GitHub - Wassimyounes01/qwen38-uncensored: Local Qwen 3.8 27B ...",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Check GPU offloading: ollama ps — if you see a CPU/GPU split, the model is partially on CPU Force all layers to GPU: Already set in Modelfile.mac (num_gpu 999), but verify with ollama show qwen3.8:27b-uncensored Reduce context: QWEN_NUM_CTX=4096 node examples/chat.cjs \"test\" — smaller KV cache = less memory Switch to MLX: node bin/install.cjs --mlx — 30-50% faster on Apple Silicon Close ..."
+    },
+    {
+      "title": "Qwen3.8-27B: The Ultimate Guide to Running It Locally",
+      "url": "https://linas.substack.com/p/qwen3-8-27b-local-guide",
+      "snippet": "How to run Alibaba&#x27;s Qwen3.8-27B AI model locally: the settings, hardware, and prompts that deliver frontier results for founders, builders, and investors."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "faisalashraf/langaai",
+  "slug": "faisalashraf-langaai",
+  "author": "faisalashraf",
+  "url": "https://huggingface.co/faisalashraf/langaai",
+  "created_at": "2026-09-25T16:14:05.000Z",
+  "updated_at": "2026-09-25T16:51:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "biology",
+    "protein-language-model",
+    "antibody",
+    "antigen",
+    "cdr",
+    "esm2",
+    "base_model:facebook/esm2_t12_35M_UR50D",
+    "base_model:finetune:facebook/esm2_t12_35M_UR50D",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 195193841,
+  "storage_human": "195 MB",
+  "base_model": "facebook/esm2_t12_35M_UR50D",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "faisalashraf (Faisal Bin Ashraf) - Hugging Face",
+      "url": "https://huggingface.co/faisalashraf",
+      "snippet": "User profile of Faisal Bin Ashraf on Hugging Face"
+    },
+    {
+      "title": "AI model went rogue, hacked another company during testing ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/faisal-ashraf-0598b1_ai-model-went-rogue-hacked-another-company-activity-7485728324317540352-c8Xe",
+      "snippet": "Faisal Ashraf Cyber Security Leader, vCISO, Advisor 2d AI model went rogue, hacked another company during testing, OpenAI says | CBC News cbc.ca 2 2,225 followers 775 Posts 1 Article"
+    },
+    {
+      "title": "By cutting data layers, researchers create fast, explainable landslide ...",
+      "url": "https://phys.org/news/2026-09-layers-fast-landslide-ai.html",
+      "snippet": "Instead, they developed a framework that strips away redundant data to create a compact, 8-channel AI model that matches the accuracy of massive systems but runs significantly faster."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

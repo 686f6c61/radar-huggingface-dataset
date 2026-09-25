@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jollyoli93/crane_classifier",
+  "slug": "jollyoli93-crane_classifier",
+  "author": "jollyoli93",
+  "url": "https://huggingface.co/jollyoli93/crane_classifier",
+  "created_at": "2026-09-25T18:05:11.000Z",
+  "updated_at": "2026-09-25T18:06:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87448433,
+  "storage_human": "87 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jollyoli93/KnowYourLoadExactly: Crane Load Classifier",
+      "url": "https://github.com/jollyoli93/KnowYourLoadExactly",
+      "snippet": "Crane Load Classifier. Contribute to jollyoli93/KnowYourLoadExactly development by creating an account on GitHub."
+    },
+    {
+      "title": "Crane_Detector_YOLOv8_Full_Pipeline.ipynb - GitHub",
+      "url": "https://github.com/jollyoli93/KnowYourLoadExactly/blob/main/Crane_Detector_YOLOv8_Full_Pipeline.ipynb",
+      "snippet": "Crane Load Classifier. Contribute to jollyoli93/KnowYourLoadExactly development by creating an account on GitHub."
+    },
+    {
+      "title": "jollyoli93 (jack) - Hugging Face",
+      "url": "https://huggingface.co/jollyoli93",
+      "snippet": "User profile of jack on Hugging Face"
+    },
+    {
+      "title": "Model Zoo",
+      "url": "https://www.modelzoo.co/",
+      "snippet": "The model is trained on Cornell Grasping Dataset. This is an implementation mainly based on the paper &#x27;Real-Time Grasp Detection Using Convolutional Neural Networks&#x27; from Redmon and Angelova."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=crane-ai",
+      "snippet": "Models 1 Full-text search Inference Available Edit filters Sort: Trending Active filters: crane-ai Clear all veteroner/Novaai Text Generation • Updated Jul 9• 3"
+    }
+  ]
+}

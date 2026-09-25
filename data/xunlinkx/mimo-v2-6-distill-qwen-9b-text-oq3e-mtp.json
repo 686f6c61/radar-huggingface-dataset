@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "xunlinkx/MiMo-V2.6-Distill-Qwen-9B-Text-oQ3e-mtp",
+  "slug": "xunlinkx-mimo-v2-6-distill-qwen-9b-text-oq3e-mtp",
+  "author": "xunlinkx",
+  "url": "https://huggingface.co/xunlinkx/MiMo-V2.6-Distill-Qwen-9B-Text-oQ3e-mtp",
+  "created_at": "2026-09-25T18:06:55.000Z",
+  "updated_at": "2026-09-25T18:07:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "omlx",
+    "oq",
+    "oq3e",
+    "mtp",
+    "speculative-decoding",
+    "text-only",
+    "tool-use",
+    "text-generation",
+    "conversational",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "license:mit",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 4748912670,
+  "storage_human": "4.7 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiMo-V2.6 | Xiaomi",
+      "url": "https://mimo.xiaomi.com/mimo-v2-6",
+      "snippet": "Today, we are releasing and open-sourcing the MiMo-V2.6 series. This marks a key step in our exploration of the RSI path: scaling RL compute on verifiable, complex tasks, so the model can continuously expand its capability frontier through exploration and feedback. The MiMo-V2.6 series includes two natively omnimodal models: MiMo-V2.6-Pro is our most capable model to date, while MiMo-V2.6 ..."
+    },
+    {
+      "title": "Xiaomi MiMo-V2.6 Series: 3 New Models Officially Released",
+      "url": "https://mimo.mi.com/docs/en-US/news/latest/v2-6",
+      "snippet": "The pricing of the model is as follows: Fully open source We have fully open-sourced the weights and technical report of the MiMo-V2.6-Pro and Flash models, simultaneously released the MiMo-V2.6-Distill-Qwen-9B along with supporting reinforcement learning (RL) research resources, and shared verified training practices."
+    },
+    {
+      "title": "Xiaomi MiMo Home",
+      "url": "https://mimo.mi.com/",
+      "snippet": "Xiaomi MiMo Desktop Is Now Live The all-in-one AI desktop app for professionals—high-quality office work, design, coding, and multimodal creation."
+    },
+    {
+      "title": "Xiaomi MiMo-V2.6: Pro, Flash MoE + Distill-9B same-day drop",
+      "url": "https://www.brocker.org/xiaomi-mimo-v26-pro-flash-distill-qwen-open-weights",
+      "snippet": "Xiaomi MiMo published the MiMo-V2.6 series on September 21, 2026 — not a single checkpoint, but a same-day stack: open-weight Pro-RL and Flash-RL MoE models on Hugging Face, a separate 9B Qwen distill for agentic RL research, plus API SKUs on mimo.mi.com that include a latency-priced Pro-UltraSpeed tier."
+    },
+    {
+      "title": "mimo-v2.6 RL",
+      "url": "https://mimo.xiaomi.com/rl/",
+      "snippet": "Training metrics of the mimo-v2.6-pro and mimo-v2.6-flash reinforcement-learning runs, live from the trainer&#x27;s logs."
+    }
+  ]
+}

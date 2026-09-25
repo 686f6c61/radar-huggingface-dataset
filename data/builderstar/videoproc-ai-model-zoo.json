@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Builderstar/videoproc-ai-model-zoo",
+  "slug": "builderstar-videoproc-ai-model-zoo",
+  "author": "Builderstar",
+  "url": "https://huggingface.co/Builderstar/videoproc-ai-model-zoo",
+  "created_at": "2026-09-25T12:39:55.000Z",
+  "updated_at": "2026-09-25T12:45:57.000Z",
+  "license": "proprietary-digiarty",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "super-resolution",
+    "video-super-resolution",
+    "image-super-resolution",
+    "frame-interpolation",
+    "tensorrt",
+    "onnx",
+    "ncnn",
+    "upscaling",
+    "video-processing",
+    "image-to-image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65398616,
+  "storage_human": "65 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub",
+      "url": "https://github.com/",
+      "snippet": "Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open …"
+    },
+    {
+      "title": "Chat GPT Tiếng Việt: Cài đặt và mẹo đặt câu lệnh mới nhất",
+      "url": "https://cellphones.com.vn/sforum/cach-dung-chat-gpt-tieng-viet",
+      "snippet": "Jul 10, 2026 · Hướng dẫn cách sử dụng Chat GPT Tiếng Việt hiệu quả để đặt câu hỏi, viết nội dung, học tập, dịch thuật và xử lý …"
+    },
+    {
+      "title": "不是说chat gpt是免费的吗，怎么只能免费问一次? - 知乎",
+      "url": "https://www.zhihu.com/question/606750758",
+      "snippet": "后来自己注册gpt账号，能免费使用GPT-3.5，每月20刀的Gpt-4还是不大舍得去搞，3.5基本也够用了，搭配chatpdf等其他AI工具，用 …"
+    },
+    {
+      "title": "Supported AI models in GitHub Copilot - GitHub Docs",
+      "url": "https://docs.github.com/en/copilot/reference/ai-models/supported-models",
+      "snippet": "Supported AI models in Auto model selection This table lists the supported AI models for Auto model selection. Available models …"
+    }
+  ]
+}

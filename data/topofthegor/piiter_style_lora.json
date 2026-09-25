@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "topofthegor/piiter_style_LoRA",
+  "slug": "topofthegor-piiter_style_lora",
+  "author": "topofthegor",
+  "url": "https://huggingface.co/topofthegor/piiter_style_LoRA",
+  "created_at": "2026-09-25T12:04:04.000Z",
+  "updated_at": "2026-09-25T12:05:51.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tensorboard",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "template:sd-lora",
+    "stable-diffusion-xl",
+    "stable-diffusion-xl-diffusers",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77229756,
+  "storage_human": "77 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Style LoRA AI Models (556) | Civitai",
+      "url": "https://civitai.com/tag/style%20lora",
+      "snippet": "Browse 556 AI models tagged \"Style LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "LoRA AI Models (18,011) | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 18,011 AI models tagged \"LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Peterhl Style (Illustrious)｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/en/model/1883941472129496858",
+      "snippet": "Just created this stunning style, western anime art with the amazing &#x27;Peterhl Style (Illustrious)&#x27; model on PixAI! Search for \"Peterhl Style (Illustrious)\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "PixAI Model Market | 1.8M+ AI Art Models and LoRAs",
+      "url": "https://pixai.art/en/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.8M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    }
+  ]
+}

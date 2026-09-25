@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "michaelrodriguez/retrieval",
+  "slug": "michaelrodriguez-retrieval",
+  "author": "michaelrodriguez",
+  "url": "https://huggingface.co/michaelrodriguez/retrieval",
+  "created_at": "2026-09-25T14:02:34.000Z",
+  "updated_at": "2026-09-25T14:02:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unlock Your AI&#x27;s Power with a 50-Year-Old Secret. - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/unlock-your-ais-power-50-year-old-secret-michael-rodriguez-sfj9c",
+      "snippet": "Feeling overwhelmed by complex, all-in-one AI platforms? For over a decade, I&#x27;ve built powerful automation systems using a simple principle long before tools like Zapier were mainstream. It&#x27;s ..."
+    },
+    {
+      "title": "MITRE Announces Silicon Valley AI Expert to Return as Fellow",
+      "url": "https://www.mitre.org/news-insights/news-release/mitre-announces-silicon-valley-ai-expert-return-fellow",
+      "snippet": "The Sandbox can train large language models and tackle government-specific AI tasks, such as enhancing military command and control, securing infrastructure, and reducing fraud. Rodriguez joins at a pivotal time as MITRE&#x27;s work supporting federal efforts to deploy AI solutions continues to grow."
+    },
+    {
+      "title": "Mikel Rodriguez Ph.D. | MITRE",
+      "url": "https://www.mitre.org/who-we-are/our-people/mikel-rodriguez",
+      "snippet": "Mikel Rodriguez, Ph.D., an internationally recognized leader in the field of artificial intelligence, is a MITRE Fellow. Rodriguez has over two decades of experience bringing transformative, AI-enabled solutions to complex challenges in both the private and public sectors. At Google DeepMind, he co-founded and led a team focused on research to enable the secure deployment of frontier AI ..."
+    },
+    {
+      "title": "‪Michael Rodriguez‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=40vA2KwAAAAJ",
+      "snippet": "‪Professor, East Carolina University‬ - ‪‪Cited by 2,423‬‬ - ‪Sales‬ - ‪CRM‬ - ‪Social Media‬ - ‪Social Media Technology‬"
+    },
+    {
+      "title": "Comparative Analysis of Retrieval Systems in the Real World",
+      "url": "https://arxiv.org/html/2405.02048",
+      "snippet": "By delving into performance data, we aim to shed light on the current state of AI-driven search and retrieval systems and to pave the way for informed decisions in the deployment and development of these technologies."
+    }
+  ]
+}

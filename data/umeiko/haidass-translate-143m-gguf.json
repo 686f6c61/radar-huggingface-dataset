@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "umeiko/Haidass-Translate-143M-GGUF",
+  "slug": "umeiko-haidass-translate-143m-gguf",
+  "author": "umeiko",
+  "url": "https://huggingface.co/umeiko/Haidass-Translate-143M-GGUF",
+  "created_at": "2026-09-25T14:45:13.000Z",
+  "updated_at": "2026-09-25T14:57:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "translation",
+    "q8_0",
+    "zh",
+    "en",
+    "base_model:DALabCommunity/Haidass-Translate-143M",
+    "base_model:quantized:DALabCommunity/Haidass-Translate-143M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 143071296,
+  "parameters_human": "143.1M",
+  "storage_bytes": 188214496,
+  "storage_human": "188 MB",
+  "base_model": "DALabCommunity/Haidass-Translate-143M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "umeiko/Haidass-Translate-143M-Instruction · Hugging Face",
+      "url": "https://huggingface.co/umeiko/Haidass-Translate-143M-Instruction",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "umeiko/Haidass-Translate-143M-eval · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/umeiko/Haidass-Translate-143M-eval",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Haidass Translate 143M Instruction by umeiko",
+      "url": "https://llm-explorer.com/model/umeiko%2FHaidass-Translate-143M-Instruction,7Hk0KjULYzAdwkE4qxj2fD",
+      "snippet": "Haidass Translate 143M Instruction is an open-source 143m LLM by umeiko. VRAM 0.1GB, 4K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Haidass-Translate-143M-Instruction by Umeiko: Open Model",
+      "url": "https://savrn.com/models/haidass-translate-143m-instruction",
+      "snippet": "Haidass-Translate-143M-Instruction from Umeiko, 143M parameters: license, access terms, disclosed training data, reported evaluations and the publisher&#x27;s…"
+    },
+    {
+      "title": "Umeiko: Open-Weight Models and Datasets - savrn.com",
+      "url": "https://savrn.com/model-publishers/umeiko",
+      "snippet": "Live demo: Haidass Translate Instruction on Hugging Face Spaces. Drafter-143M: a control model with identical configuration, data and training recipe, except that it starts from random initialization instead of the pretrained base — used to quantify the contribution of base-model pretraining. OPUS-MT models are…"
+    }
+  ]
+}

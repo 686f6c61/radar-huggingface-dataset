@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mursideaki/latensis-ner-tr",
+  "slug": "mursideaki-latensis-ner-tr",
+  "author": "mursideaki",
+  "url": "https://huggingface.co/mursideaki/latensis-ner-tr",
+  "created_at": "2026-09-25T12:22:07.000Z",
+  "updated_at": "2026-09-25T12:56:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "turkish",
+    "token-classification",
+    "ner",
+    "named-entity-recognition",
+    "turkish-nlp",
+    "tr",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 183760903,
+  "parameters_human": "183.8M",
+  "storage_bytes": 735944031,
+  "storage_human": "736 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How Do Homes Work Without a Basement? [Engineering Guide]",
+      "url": "https://homebuddy.blog/how-do-homes-work-without-a-basement",
+      "snippet": "Learn how homes work without a basement. Discover how slab-on-grade and crawl space foundations manage plumbing, HVAC, …"
+    },
+    {
+      "title": "What Is a House Without a Basement Called? [Foundation Guide]",
+      "url": "https://www.howgarden.blog/what-is-a-house-without-a-basement-called",
+      "snippet": "A house without a basement is most commonly called a slab-on-grade home or a crawl space home, depending on whether the …"
+    },
+    {
+      "title": "Cellar vs. Basement vs. Crawl Space – Differences, Codes & Uses",
+      "url": "https://www.architecturelab.net/cellar-vs-basement-vs-crawl-space-differences/",
+      "snippet": "Jul 9, 2026 · The difference between a cellar and a basement is measured from the curb, not found in the dictionary. Most of the …"
+    },
+    {
+      "title": "How Do Homes Work Without a Basement? - Engineer Fix",
+      "url": "https://engineerfix.com/how-do-homes-work-without-a-basement/",
+      "snippet": "Dec 7, 2025 · Understand the engineering, economic reasons, and practical solutions for building and maintaining homes without …"
+    },
+    {
+      "title": "What is a house without a basement called? - Remodel or Move",
+      "url": "https://www.remodelormove.com/what-is-a-house-without-a-basement-called/",
+      "snippet": "A house without a basement is usually referred to as a “raised ranch”. This is an architectural term for a style of house where the …"
+    }
+  ]
+}

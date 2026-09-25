@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MN-Aura-12B-v1-GGUF",
+  "slug": "mradermacher-mn-aura-12b-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MN-Aura-12B-v1-GGUF",
+  "created_at": "2026-09-25T16:24:38.000Z",
+  "updated_at": "2026-09-25T17:11:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit-exp",
+    "mergekit",
+    "merge",
+    "aura",
+    "mistral-nemo",
+    "mistral",
+    "nemo",
+    "writing",
+    "creative",
+    "text",
+    "adventure",
+    "conversational",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "RP",
+    "roleplaying",
+    "swearing",
+    "en",
+    "base_model:EldritchLabs/MN-Aura-12B-v1",
+    "base_model:quantized:EldritchLabs/MN-Aura-12B-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247956480,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84693669184,
+  "storage_human": "84.7 GB",
+  "base_model": "EldritchLabs/MN-Aura-12B-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Aura-12B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Aura-12B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/MN-Raven-12B-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/MN-Raven-12B-v1-GGUF",
+      "snippet": "mradermacher / MN-Raven-12B-v1-GGUF like 1 Transformers GGUF DarkArtsForge/Poe_v1 English axolotl finetune creative writing roleplay uncensored gothic poe raven 12B Merge mergekit mistral-nemo arcee_fusion conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Aura-12B-FT-GGUF - AI Model by mradermacher | AlphaNeural AI",
+      "url": "https://alphaneural.io/assets/mradermacher/Aura-12B-FT-GGUF",
+      "snippet": "Explore Aura-12B-FT-GGUF, a ai model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "mradermacher/Aura-12B-i1-GGUF - Hugging Face Hub Package Sec... - Socket",
+      "url": "https://socket.dev/huggingface/package/mradermacher/aura-12b-i1-gguf",
+      "snippet": "We found that mradermacher/aura-12b-i1-gguf demonstrated a healthy version release cadence and project activity because the last version was released less than a year ago.It has 1 open source maintainer collaborating on the project."
+    }
+  ]
+}

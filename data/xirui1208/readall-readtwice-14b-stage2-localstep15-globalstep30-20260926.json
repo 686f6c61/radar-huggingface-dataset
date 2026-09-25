@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Xirui1208/readall-readtwice-14b-stage2-localstep15-globalstep30-20260926",
+  "slug": "xirui1208-readall-readtwice-14b-stage2-localstep15-globalstep30-20260926",
+  "author": "Xirui1208",
+  "url": "https://huggingface.co/Xirui1208/readall-readtwice-14b-stage2-localstep15-globalstep30-20260926",
+  "created_at": "2026-09-25T19:05:29.000Z",
+  "updated_at": "2026-09-25T19:37:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "readtwice",
+    "readall",
+    "reinforcement-learning",
+    "conversational",
+    "en",
+    "base_model:Xirui1208/readall-readtwice-14b-rl-step15-20260925",
+    "base_model:finetune:Xirui1208/readall-readtwice-14b-rl-step15-20260925",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 206794023250,
+  "storage_human": "206.8 GB",
+  "base_model": "Xirui1208/readall-readtwice-14b-rl-step15-20260925",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

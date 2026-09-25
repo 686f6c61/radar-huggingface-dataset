@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Lumo-1-1.5B-Chat-V2-GGUF",
+  "slug": "mradermacher-lumo-1-1-5b-chat-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Lumo-1-1.5B-Chat-V2-GGUF",
+  "created_at": "2026-09-25T16:05:06.000Z",
+  "updated_at": "2026-09-25T16:37:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "apertus",
+    "fine-tuned",
+    "conversational",
+    "en",
+    "base_model:vpakarinen/Lumo-1-1.5B-Chat-V2",
+    "base_model:quantized:vpakarinen/Lumo-1-1.5B-Chat-V2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1510019072,
+  "parameters_human": "1.51B",
+  "storage_bytes": 14057936000,
+  "storage_human": "14.1 GB",
+  "base_model": "vpakarinen/Lumo-1-1.5B-Chat-V2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/luma-1.5b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/luma-1.5b-GGUF",
+      "snippet": "mradermacher / luma-1.5b-GGUF like 0 Transformers GGUF LUMAMODEL/luma-dataset Russian English russian assistant qwen lora html css javascript conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Lumo (AI assistant) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lumo_(AI_assistant)",
+      "snippet": "Lumo is an online chatbot and personal assistant developed by Proton AG. The service saves chat histories in encrypted storage, and states that it does not employ user data for model training."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 29 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

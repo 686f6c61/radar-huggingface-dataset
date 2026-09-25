@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Praveenrajus/jevify-smollm3-3b-sft-readout-coh",
+  "slug": "praveenrajus-jevify-smollm3-3b-sft-readout-coh",
+  "author": "Praveenrajus",
+  "url": "https://huggingface.co/Praveenrajus/jevify-smollm3-3b-sft-readout-coh",
+  "created_at": "2026-09-25T17:12:19.000Z",
+  "updated_at": "2026-09-25T17:12:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "jevify",
+  "languages": [],
+  "tags": [
+    "jevify",
+    "safetensors",
+    "system-one",
+    "decision-model",
+    "calibration",
+    "coherence",
+    "dataset:Praveenrajus/jev-bench",
+    "base_model:HuggingFaceTB/SmolLM3-3B-checkpoints",
+    "base_model:finetune:HuggingFaceTB/SmolLM3-3B-checkpoints",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120981200,
+  "storage_human": "121 MB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B-checkpoints",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "masala PORN - hotindiansexy.com",
+      "url": "https://www.hotindiansexy.com/s/hottest/masala/1.html",
+      "snippet": "ak midnight masala akshita singh in desi masala com aunty hot masala bangla masala song desi hardcore masala vide desi …"
+    },
+    {
+      "title": "Vidéos pornos gratuites et films XXX : site de vidéos de sexe | xHamster",
+      "url": "https://fra.xhamster.com/",
+      "snippet": "Vidéos pornos gratuites et films XXX exclusifs sur xHamster. Regardez instantannément + de 6 millions de vidéos de sexe hardcore …"
+    },
+    {
+      "title": "U.S. News: Latest Breaking Stories and Video on National Issues",
+      "url": "https://www.nbcnews.com/us-news",
+      "snippet": "Get the latest news headlines and top stories from NBCNews.com. Find videos and news articles on the latest stories in the US."
+    },
+    {
+      "title": "zakupis-ekb.ru",
+      "url": "https://zakupis-ekb.ru/out",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Sports",
+      "url": "https://heavy.com/sports/",
+      "snippet": "18 hours ago · Sports news, analysis, rumors, statistics, predictions and roster moves around the NFL, NBA, MLB, NHL and more."
+    }
+  ]
+}

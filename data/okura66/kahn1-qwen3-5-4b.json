@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Okura66/Kahn1-Qwen3.5-4B",
+  "slug": "okura66-kahn1-qwen3-5-4b",
+  "author": "Okura66",
+  "url": "https://huggingface.co/Okura66/Kahn1-Qwen3.5-4B",
+  "created_at": "2026-09-25T13:58:35.000Z",
+  "updated_at": "2026-09-25T14:02:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "kahn1",
+    "system-one",
+    "jev",
+    "fast-inference",
+    "calibrated-probabilities",
+    "classification",
+    "ordinal-classification",
+    "entailment",
+    "vllm",
+    "zero-shot",
+    "text-classification",
+    "en",
+    "fr",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8431547725,
+  "storage_human": "8.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Okura66/kahn1: High-throughput, sub-20ms System 1 decision ...",
+      "url": "https://github.com/Okura66/kahn1",
+      "snippet": "Full Merged Standalone Checkpoint (6.17 GB): Okura66/Kahn1-Qwen2.5-3B Lightweight LoRA Adapter (239 MB): Okura66/Kahn1-Qwen2.5-3B-LoRA Categorizing thousands of incoming support tickets, emails, or insurance claims per minute. Extracting structured attributes (intent, priority, sentiment, refund ..."
+    },
+    {
+      "title": "Okura66/Kahn1-Qwen2.5-3B · Hugging Face",
+      "url": "https://huggingface.co/Okura66/Kahn1-Qwen2.5-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.5 4B local AI model — runs on ~3 GB — guide",
+      "url": "https://theaibench.ai/models/qwen-3-5-4b/",
+      "snippet": "Qwen 3.5 4B local guide: Apache 2.0 small model that runs in ~2.5 GB at Q4 (GPU or CPU), what quality to expect, runner tags, and when to step up to 9B."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "oraculumai/Manchego · Hugging Face",
+      "url": "https://huggingface.co/oraculumai/Manchego",
+      "snippet": "Intervals are paired 95% bootstraps. Deviations: jeb-4b ran in bf16 because its FP8 setting cannot run on an A100, and refusals count as wrong for every model (JevK5 refuses the 104 held-out-task rows with more than 16 options, APUS-OpenJev-v1-4B 104 held-out-task rows, Kahn1-Qwen2.5-3B 36 JevBench rows, metask-jev-4b-policy-mix one)."
+    }
+  ]
+}

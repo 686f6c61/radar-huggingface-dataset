@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SimpleTuner/Qwen-Image-2.1-LoRA-photo-aesthetics-50k",
+  "slug": "simpletuner-qwen-image-2-1-lora-photo-aesthetics-50k",
+  "author": "SimpleTuner",
+  "url": "https://huggingface.co/SimpleTuner/Qwen-Image-2.1-LoRA-photo-aesthetics-50k",
+  "created_at": "2026-09-25T15:42:13.000Z",
+  "updated_at": "2026-09-25T15:57:10.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "simpletuner",
+    "qwen-image",
+    "lora",
+    "training-assistant",
+    "experimental",
+    "text-to-image",
+    "dataset:webshart/terminusresearch-photo-aesthetics",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1393577892,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xxx videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/xxx",
+      "snippet": "XVIDEOS xxx videos, free XXX Indian step SISTER FUCK desi XXX step family In hindi XXX 16 min IndianXXXReality - 12.6M Views -"
+    },
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/",
+      "snippet": "Every video uploaded, is shown on our indexes more or less three days after uploading. About 1200 to 2000 adult videos are …"
+    },
+    {
+      "title": "Vidéos xxx - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/tags/xxx",
+      "snippet": "XVIDEOS Vidéos xxx, gratuit XXX Indienne madame malkin baise avec un serviteur XXX En hindi XXX 12 min Top 10 Xxx Indian …"
+    },
+    {
+      "title": "Vidéos francais - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/tags/francais",
+      "snippet": "XVIDEOS Vidéos francais, gratuit [Audio] [M4F] [Vrai accent français] Un Français vous doigte dans son appartement tout en vous …"
+    },
+    {
+      "title": "Video xxx - XVIDEOS.COM",
+      "url": "https://it.xvideos.com/tags/xxx",
+      "snippet": "XVIDEOS Video xxx, gratis CUCKOLD XXX - La memorabile clip per adulti di Jennifer Mendez, dipendente dal sesso 15 min. …"
+    }
+  ]
+}

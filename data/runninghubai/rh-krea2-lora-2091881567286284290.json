@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-krea2-lora-2091881567286284290",
+  "slug": "runninghubai-rh-krea2-lora-2091881567286284290",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-krea2-lora-2091881567286284290",
+  "created_at": "2026-09-25T13:33:01.000Z",
+  "updated_at": "2026-09-25T13:34:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 236159451,
+  "storage_human": "236 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-krea2-realism-slider-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-realism-slider-lora",
+      "snippet": "Use it whenever the model&#x27;s idea and your idea aren&#x27;t quite having the same conversation. This repository provides rh-krea2-realism-slider-lora weight files. You can load them on RunningHub. Finetuned from: krea2"
+    },
+    {
+      "title": "README.md · RunningHubAI/rh-krea-2-raw-girl-v3-lora at main",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea-2-raw-girl-v3-lora/blob/main/README.md",
+      "snippet": "RunningHubAI / rh-krea-2-raw-girl-v3-lora Like 0 Image-Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new main rh-krea-2-raw-girl-v3-lora /README.md RunningHubAI Upload RunningHub model 2081534323043393538 6d2532c verifiedabout 9 hours ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete 3.25 kB metadata tags ..."
+    },
+    {
+      "title": "Krea2 Multi-Style LORA Workflow - RunningHub ComfyUI Workflow",
+      "url": "https://www.runninghub.ai/post/2083030859044626434",
+      "snippet": "ComfyUI Workflow - Officially released 9 style Lora. ️ Limited-time benefits are here! Click the link below to register and immediately receive 1000 RH coins to enjoy free high-performance RTX 4090 computing power!Runni"
+    },
+    {
+      "title": "Krea2 KNP LoRA Style Edition - RunningHub ComfyUI Workflow",
+      "url": "https://www.runninghub.cn/post/2072998795874705408",
+      "snippet": "AIKSK shares ready-to-run ComfyUI workflows for AI video, image generation, style transfer, character effects, LoRA training, and practical AIGC production. No local setup required."
+    },
+    {
+      "title": "RunningHub Models ｜ AI Model Creation & Training Platform",
+      "url": "https://www.runninghub.ai/models",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    }
+  ]
+}

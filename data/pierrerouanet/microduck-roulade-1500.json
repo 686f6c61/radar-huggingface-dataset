@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PierreRouanet/microduck-roulade-1500",
+  "slug": "pierrerouanet-microduck-roulade-1500",
+  "author": "PierreRouanet",
+  "url": "https://huggingface.co/PierreRouanet/microduck-roulade-1500",
+  "created_at": "2026-09-25T12:10:30.000Z",
+  "updated_at": "2026-09-25T12:10:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-policy",
+    "microduck",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793793,
+  "storage_human": "793793 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "PierreRouanet/microduck-roulade-250 · Hugging Face",
+      "url": "https://huggingface.co/PierreRouanet/microduck-roulade-250",
+      "snippet": "policy.onnx is a Microduck policy: 61-value observation in, 14 joint targets out, 50 Hz. Published from the Microduck Arena."
+    },
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "Microduck - A duck-like biped robot designed for physical AI ...",
+      "url": "https://www.cnx-software.com/2026/08/28/microduck-a-duck-like-biped-robot-designed-for-physical-ai-experimentation-and-fun/",
+      "snippet": "Microduck - A duck-like biped robot designed for physical AI experimentation and fun Pollen Robotics and Hugging Face have unveiled the Microduck, a 25 cm tall biped robot with 15 motors, a camera, a depth sensor, two motion sensors, and an articulated beak that can pick up objects."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck_rl: RL training environments for ...",
+      "url": "https://github.com/pollen-robotics/microduck_rl",
+      "snippet": "Every main task has a Backlash twin that trains on a model with ±1° of gear play (2° total) in series with each of the 14 servo joints: insert -Backlash before MicroDuck in the task id, e.g. Mjlab-Velocity-Flat-Backlash-MicroDuck. The backlash is modeled properly for sim2real: each servo gets an unactuated passive_<joint>_backlash hinge, and because the real encoder sits on the output side ..."
+    }
+  ]
+}

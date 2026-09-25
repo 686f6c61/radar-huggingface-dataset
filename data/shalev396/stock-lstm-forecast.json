@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "shalev396/stock-lstm-forecast",
+  "slug": "shalev396-stock-lstm-forecast",
+  "author": "shalev396",
+  "url": "https://huggingface.co/shalev396/stock-lstm-forecast",
+  "created_at": "2026-09-25T14:30:43.000Z",
+  "updated_at": "2026-09-25T12:55:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "ml-lab",
+    "tensorflow",
+    "time-series-forecasting",
+    "lstm",
+    "stock-prices",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 548467,
+  "storage_human": "548467 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "AAPL daily closes (yfinance)",
+      "metric": "rmse",
+      "value": 4.4831
+    },
+    {
+      "task": null,
+      "dataset": "AAPL daily closes (yfinance)",
+      "metric": "mae",
+      "value": 3.0255
+    },
+    {
+      "task": null,
+      "dataset": "AAPL daily closes (yfinance)",
+      "metric": "mape",
+      "value": 1.2368
+    }
+  ],
+  "sources": [
+    {
+      "title": "Demo - Predicting Stock Prices with LSTM - Colab",
+      "url": "https://colab.research.google.com/github/jinglescode/time-series-forecasting-pytorch/blob/main/demo-predicting-stock-prices.ipynb",
+      "snippet": "Predicting Stock Prices with Deep Neural Networks This project walks you through the end-to-end data science lifecycle of developing a predictive model for stock price movements with Alpha Vantage APIs and a powerful machine learning algorithm called Long Short-Term Memory (LSTM)."
+    },
+    {
+      "title": "Stock Lstm Forecasting AI Project Repository Download and Installation ...",
+      "url": "https://www.aibase.com/repos/project/stock-lstm-forecasting",
+      "snippet": "View the Stock Lstm Forecasting AI project repository download and installation guide, learn about the latest development trends and innovations."
+    },
+    {
+      "title": "Real-Time Stock Price Predictor with Python & LSTM Guide 2026",
+      "url": "https://www.guvi.in/blog/building-a-real-time-stock-price-predictor/",
+      "snippet": "Build a real-time stock price predictor using Python and LSTM neural networks. Learn data prep, training, and forecasting with live market data for beginners ."
+    },
+    {
+      "title": "GitHub - Pitnon/stock-prediction-ai: This project implements a Long ...",
+      "url": "https://github.com/Pitnon/stock-prediction-ai",
+      "snippet": "This repository provides a script for predicting future stock prices using an LSTM (Long Short-Term Memory) neural network model. The script utilizes historical stock price data, scales it for optimal LSTM training, builds or loads a cached LSTM model, and predicts future prices. It is designed to handle multiple stock tickers and can process predictions in parallel."
+    },
+    {
+      "title": "GitHub - gianlucamazza/lstm_forecast: AI-Powered Stock Price Prediction ...",
+      "url": "https://github.com/gianlucamazza/lstm_forecast",
+      "snippet": "Command-Line Interface: A powerful CLI that simplifies all aspects of model training, evaluation, and deployment. LSTM Forecast is designed to be both user-friendly and powerful, providing everything you need to create and deploy sophisticated forecasting models for cryptocurrencies and financial assets."
+    }
+  ]
+}

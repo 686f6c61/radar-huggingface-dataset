@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "TokenRhythm/NeoHorse-Jev-4B",
+  "slug": "tokenrhythm-neohorse-jev-4b",
+  "author": "TokenRhythm",
+  "url": "https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B",
+  "created_at": "2026-09-23T15:42:08.000Z",
+  "updated_at": "2026-09-25T11:36:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "agentic",
+    "decision-model",
+    "typed-decisions",
+    "structured-prediction",
+    "non-generative",
+    "multimodal",
+    "vision-language",
+    "text-classification",
+    "base_model:TokenRhythm/NeoHorse-1-4B",
+    "base_model:finetune:TokenRhythm/NeoHorse-1-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 13,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9144971723,
+  "storage_human": "9.1 GB",
+  "base_model": "TokenRhythm/NeoHorse-1-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TokenRhythm/NeoHorse-Jev-4B · Hugging Face",
+      "url": "https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B",
+      "snippet": "We introduce NeoHorse-Jev-4B, a 4B structured decision model from TokenRhythm, built on NeoHorse-1-4B. Given a state and questions defined by your application, it predicts decisions and their probabilities for routing requests, selecting tools, checking conditions, and rating outcomes."
+    },
+    {
+      "title": "Release NeoHorse-Jev-4B · TokenRhythm/NeoHorse-Jev-4B at fa86d48",
+      "url": "https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B/commit/fa86d485170aa1934a379370c63f6a8dabbbf588",
+      "snippet": "TokenRhythm / NeoHorse-Jev-4B Like 8 Follow TokenRhythm 189 Text Classification PyTorch Safetensors agentic decision-model typed-decisions structured-prediction non-generative multimodal vision-language License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new JarvisPei AlexDL commited on about 14 hours ago Commit fa86d48 · 0 Parent (s):"
+    },
+    {
+      "title": "GitHub - TokenRhythm/NeoHorse: NeoHorse-1: Towards Recursive Self ...",
+      "url": "https://github.com/TokenRhythm/NeoHorse",
+      "snippet": "Set MODEL_PATH to the directory containing config.json, tokenizer files, and weights. The request model value is the served alias (neohorse-1-4B or neohorse-1-9B), not the filesystem path."
+    },
+    {
+      "title": "NeoHorse/README.md at main · TokenRhythm/NeoHorse · GitHub",
+      "url": "https://github.com/TokenRhythm/NeoHorse/blob/main/README.md",
+      "snippet": "NeoHorse is TokenRhythm&#x27;s family of open-weight models for agent workflows. NeoHorse-1 provides 4B and 9B language models for tool use, coding, and instruction following. NeoHorse-Jev builds on NeoHorse-1-4B to make structured decisions through prefill-only inference."
+    },
+    {
+      "title": "NeoHorse-1-4B: TokenRhythm&#x27;s 4B Open Agent Model | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/neohorse-1-4b/",
+      "snippet": "NeoHorse-1-4B is TokenRhythm&#x27;s Apache-2.0 4B agent model, post-trained from Qwen3.5-4B with a 262K context. Benchmarks, specs and how to serve it."
+    }
+  ]
+}

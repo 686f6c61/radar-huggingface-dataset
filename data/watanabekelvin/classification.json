@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "watanabekelvin/classification",
+  "slug": "watanabekelvin-classification",
+  "author": "watanabekelvin",
+  "url": "https://huggingface.co/watanabekelvin/classification",
+  "created_at": "2026-09-25T12:26:30.000Z",
+  "updated_at": "2026-09-25T12:26:35.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing System One Models & Jev - TypeSafe AI Blog",
+      "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+      "snippet": "TypeSafe AI is an AI lab building machine-native intelligence infrastructure for automation, designed to make decisions within software. Try our first System One Model, Jev, in early access."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "classification-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/classification-model",
+      "snippet": "AI-driven initiative to assist hospitals and rural clinics in early detection of Diabetic Retinopathy, supporting accessible eye care for all through open healthcare innovation."
+    },
+    {
+      "title": "Large Language Models For Text Classification: Case Study And ...",
+      "url": "https://arxiv.org/html/2501.08457v1",
+      "snippet": "Abstract Unlocking the potential of Large Language Models (LLMs) in data classification represents a promising frontier in natural language processing. In this work, we evaluate the performance of different LLMs in comparison with state-of-the-art deep-learning and machine-learning models, in two different classification scenarios: i) the classification of employees&#x27; working locations based ..."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

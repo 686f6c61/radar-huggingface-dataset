@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "FrontiersMind/Lumma-fev-0.1b",
+  "slug": "frontiersmind-lumma-fev-0-1b",
+  "author": "FrontiersMind",
+  "url": "https://huggingface.co/FrontiersMind/Lumma-fev-0.1b",
+  "created_at": "2026-09-25T11:17:14.000Z",
+  "updated_at": "2026-09-25T17:18:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "fev",
+    "feature-extraction",
+    "lumma-fev",
+    "decision-model",
+    "typesafe-compatible",
+    "custom_code",
+    "text-classification",
+    "en",
+    "base_model:FrontiersMind/Nandi-Mini-150M",
+    "base_model:finetune:FrontiersMind/Nandi-Mini-150M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 154102848,
+  "parameters_human": "154.1M",
+  "storage_bytes": 349968634,
+  "storage_human": "350 MB",
+  "base_model": "FrontiersMind/Nandi-Mini-150M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

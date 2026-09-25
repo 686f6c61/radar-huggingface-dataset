@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mgerndt/sina-interest-models",
+  "slug": "mgerndt-sina-interest-models",
+  "author": "mgerndt",
+  "url": "https://huggingface.co/mgerndt/sina-interest-models",
+  "created_at": "2026-09-25T16:49:01.000Z",
+  "updated_at": "2026-09-25T16:49:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sina Interest Models - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/zboubakr/sina-interest-models",
+      "snippet": "Deep dive into Sina Interest Models. Full Specifications↓ 📑 Document Outline Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with the Model Training Details Training Data Training Procedure Evaluation Testing Data, Factors & Metrics ..."
+    },
+    {
+      "title": "SINA: A Fully Automated Circuit Schematic Image to Netlist Generator ...",
+      "url": "https://arxiv.org/abs/2607.01609",
+      "snippet": "Recent advances in Artificial Intelligence (AI) have revolutionized Electronic Design Automation (EDA), particularly through Large Language Models (LLMs) for circuit design tasks. However, their application to analog and mixed-signal domains remains limited by the lack of machine-readable representations of existing circuit design knowledge. Circuit schematic images found in research ..."
+    },
+    {
+      "title": "Why Pinterest is going all in on open-source AI | Fortune",
+      "url": "https://fortune.com/2026/03/17/why-pinterest-is-going-all-in-on-open-source-ai/",
+      "snippet": "In practice, the current process is, identify what the company wants to build, and then identify the best open-source models to support it. For example, Pinterest landed on open-source model Qwen ..."
+    },
+    {
+      "title": "models_of_interest - a simonloewe Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/simonloewe/models-of-interest",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from simonloewe"
+    },
+    {
+      "title": "Pinterest to Train AI Models on User Content - PetaPixel",
+      "url": "https://petapixel.com/2025/03/10/pinterest-to-train-ai-models-on-user-content/",
+      "snippet": "Pinterest is going to feed user content to machine learning programs while also adding AI-generated labels to certain posts."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "darrellbest/Qwen3-0.6B-Heretic",
+  "slug": "darrellbest-qwen3-0-6b-heretic",
+  "author": "darrellbest",
+  "url": "https://huggingface.co/darrellbest/Qwen3-0.6B-Heretic",
+  "created_at": "2026-09-25T12:12:19.000Z",
+  "updated_at": "2026-09-25T12:50:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "heretic",
+    "ara",
+    "abliterated",
+    "uncensored",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557913,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Qwen3-0.6B-heretic API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/davidterrell1919/Qwen3-0.6B-heretic",
+      "snippet": "This model is a decensored version of the Qwen/Qwen3-.6B, created using the Heretic v1.3.0 tool. It retains the core capabilities of the Qwen3 series while significantly reducing refusal rates, with 5 refusals per 100 queries compared to 57/100 in the original model."
+    },
+    {
+      "title": "Run Qwen3-0.6B-heretic API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/blackbook-lm/Qwen3-0.6B-heretic",
+      "snippet": "While the original Qwen3-0.6B model had 53 refusals out of 100, this &#x27;heretic&#x27; variant shows only 8 refusals out of 100, indicating a much less restrictive output. Key Capabilities Decensored Output: Significantly reduced refusal rate compared to the base model, allowing for broader content generation."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "Qwen3-0.6B-heretic-abliterated-uncensored - Hugging Face",
+      "url": "https://huggingface.co/rayss868123/Qwen3-0.6B-heretic-abliterated-uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

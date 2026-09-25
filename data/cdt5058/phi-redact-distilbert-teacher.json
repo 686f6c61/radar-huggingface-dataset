@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "CDT5058/phi-redact-distilbert-teacher",
+  "slug": "cdt5058-phi-redact-distilbert-teacher",
+  "author": "CDT5058",
+  "url": "https://huggingface.co/CDT5058/phi-redact-distilbert-teacher",
+  "created_at": "2026-09-25T15:30:59.000Z",
+  "updated_at": "2026-09-25T15:31:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "token-classification",
+    "named-entity-recognition",
+    "pii",
+    "phi",
+    "redaction",
+    "de-identification",
+    "ner",
+    "bert",
+    "knowledge-distillation",
+    "on-device",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66455929,
+  "parameters_human": "66.5M",
+  "storage_bytes": 1595179211,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mountain Bike News, Photos, Videos & Events | Pinkbike",
+      "url": "https://www.pinkbike.com/",
+      "snippet": "Pinkbike is the homepage of mountain biking. Stay updated with the latest news, reviews, videos, buyer's guides and racing results. …"
+    },
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Pinkbike's Grim Donut Game",
+      "url": "https://www.pinkbike.com/sandbox/grimdonutgame/",
+      "snippet": "Check out PinkBike.com for the latest in cycling and mountain biking news, freeride videos, photos, events and more. Submit your …"
+    },
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/?hl=en",
+      "snippet": "If you're having trouble accessing a Google product, there's a chance we're currently experiencing a temporary problem. You can …"
+    }
+  ]
+}

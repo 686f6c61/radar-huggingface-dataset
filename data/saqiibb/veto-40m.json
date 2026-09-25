@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "saqiibb/Veto-40M",
+  "slug": "saqiibb-veto-40m",
+  "author": "saqiibb",
+  "url": "https://huggingface.co/saqiibb/Veto-40M",
+  "created_at": "2026-09-25T18:59:33.000Z",
+  "updated_at": "2026-09-25T19:02:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "veto-decision-transformer",
+    "energy-based-models",
+    "decision-transformer",
+    "custom-architecture",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134806632,
+  "storage_human": "135 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

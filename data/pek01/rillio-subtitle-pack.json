@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "pek01/rillio-subtitle-pack",
+  "slug": "pek01-rillio-subtitle-pack",
+  "author": "pek01",
+  "url": "https://huggingface.co/pek01/rillio-subtitle-pack",
+  "created_at": "2026-09-25T15:45:14.000Z",
+  "updated_at": "2026-09-25T16:27:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "subtitles",
+    "speech-recognition",
+    "translation",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:quantized:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4346885504,
+  "storage_human": "4.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B, Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Auto-Generate Subtitles & Captions — Free AI Subtitle Generator | STT.ai",
+      "url": "https://stt.ai/subtitles/",
+      "snippet": "Auto-Generate Subtitles & Captions Upload a video and get SRT or VTT subtitles automatically. AI-powered subtitle generation in 100+ languages with 98%+ accuracy. Translate subtitles to 99 languages."
+    },
+    {
+      "title": "Subtitle AI - Automatic subtitles in 120 languages",
+      "url": "https://www.subtitle.ai/",
+      "snippet": "The professional subtitle editor trusted by broadcasters and filmmakers. Transcribe, translate and publish broadcast-grade subtitles 4x faster — in 120 languages."
+    },
+    {
+      "title": "AI-SRTSub - Global Movies & Series, Subtitles in Your Language",
+      "url": "https://ai-srtsub.com/en/",
+      "snippet": "100% free AI subtitle translator for movie fans: one click turns subtitles of foreign films, series and documentaries into your native language, with automatic timeline alignment. Enjoy global content barrier-free."
+    },
+    {
+      "title": "sayksii/Aria: ARIA - AI Realtime Intelligent Audio - GitHub",
+      "url": "https://github.com/sayksii/aria",
+      "snippet": "ARIA is a Windows desktop app for turning system audio into live subtitles. It can listen to audio from video players, browsers, games, and calls, then show the recognised text in a movable overlay. Translation can be shown in a separate overlay when needed. Choose Lite if Windows Live Captions ..."
+    },
+    {
+      "title": "editpacks: scenepacks, voice lines & audios",
+      "url": "https://editpacks.org/",
+      "snippet": "Free scenepacks for video editors: thousands of anime, show, movie, K-pop and sports clips, plus character voice lines, audios and SFX. Search, preview and download in seconds."
+    }
+  ]
+}

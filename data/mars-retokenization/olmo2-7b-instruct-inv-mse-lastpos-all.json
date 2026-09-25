@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "MARS-Retokenization/olmo2-7b-instruct-inv-mse-lastpos-all",
+  "slug": "mars-retokenization-olmo2-7b-instruct-inv-mse-lastpos-all",
+  "author": "MARS-Retokenization",
+  "url": "https://huggingface.co/MARS-Retokenization/olmo2-7b-instruct-inv-mse-lastpos-all",
+  "created_at": "2026-09-25T15:21:31.000Z",
+  "updated_at": "2026-09-25T15:24:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "olmo2",
+    "tokenization",
+    "robustness",
+    "safety",
+    "adversarial-tokenization",
+    "arxiv:2503.02174",
+    "base_model:allenai/OLMo-2-1124-7B-Instruct",
+    "base_model:finetune:allenai/OLMo-2-1124-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298617344,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14597276128,
+  "storage_human": "14.6 GB",
+  "base_model": "allenai/OLMo-2-1124-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "olmo2-7b-instruct-inv-mse-ref-multi - Hugging Face",
+      "url": "https://huggingface.co/MARS-Retokenization/olmo2-7b-instruct-inv-mse-ref-multi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "olmo2-7b-instruct-inv-reference-mixed-ce-exposure",
+      "url": "https://huggingface.co/MARS-Retokenization/olmo2-7b-instruct-inv-reference-mixed-ce-exposure",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - allenai/OLMo: Modeling, training, eval, and inference code for ...",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    },
+    {
+      "title": "Olmo2 7B Instruct - Model Details - LLM Radar",
+      "url": "https://open-llm-radar.com/models/olmo2-7b-instruct",
+      "snippet": "Olmo2 7B Instruct is a versatile model designed for a range of tasks, with possible applications in areas like text generation, natural language processing research, and language modeling tasks."
+    },
+    {
+      "title": "olmo2:7b/model - ollama.com",
+      "url": "https://ollama.com/library/olmo2:7b/blobs/ea89e3927d5e",
+      "snippet": "OLMo 2 is a new family of 7B and 13B models trained on up to 5T tokens. These models are on par with or better than equivalently sized fully open models, and competitive with open-weight models such as Llama 3.1 on English academic benchmarks."
+    }
+  ]
+}

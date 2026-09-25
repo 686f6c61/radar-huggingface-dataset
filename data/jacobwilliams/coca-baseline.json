@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jacobwilliams/coca-baseline",
+  "slug": "jacobwilliams-coca-baseline",
+  "author": "jacobwilliams",
+  "url": "https://huggingface.co/jacobwilliams/coca-baseline",
+  "created_at": "2026-09-25T12:43:51.000Z",
+  "updated_at": "2026-09-25T12:43:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "williamking37/coca-baseline · Hugging Face",
+      "url": "https://huggingface.co/williamking37/coca-baseline",
+      "snippet": "williamking37 / coca-baseline like 0 Safetensors PyTorch coca classification License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new Coca for Classification Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "mark-ward/coca-baseline · Hugging Face",
+      "url": "https://huggingface.co/mark-ward/coca-baseline",
+      "snippet": "Overview This repository is a compact, custom PyTorch implementation of Coca for Classification. The giant configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "coca-baseline by Jonashar: Open-Weight Model",
+      "url": "https://savrn.com/models/coca-baseline",
+      "snippet": "coca-baseline from Jonashar, 24,832 parameters: license, access terms, disclosed training data, reported evaluations and the publisher&#x27;s download."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 507 AI models across 483 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

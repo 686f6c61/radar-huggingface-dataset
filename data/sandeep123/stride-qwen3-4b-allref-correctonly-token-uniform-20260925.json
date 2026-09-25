@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sandeep123/stride-qwen3-4b-allref-correctonly-token-uniform-20260925",
+  "slug": "sandeep123-stride-qwen3-4b-allref-correctonly-token-uniform-20260925",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/stride-qwen3-4b-allref-correctonly-token-uniform-20260925",
+  "created_at": "2026-09-25T17:33:04.000Z",
+  "updated_at": "2026-09-25T18:13:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "math",
+    "nonthinking",
+    "stride",
+    "text-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 407986318,
+  "storage_human": "408 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sandeep123/stride-qwen3-4b-stabilized-2048-single_step-20260916 ...",
+      "url": "https://huggingface.co/sandeep123/stride-qwen3-4b-stabilized-2048-single_step-20260916",
+      "snippet": "Instructions to use sandeep123/stride-qwen3-4b-stabilized-2048-single_step-20260916 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "sandeep123/stride-qwen3-4b-2048-grpo-20260915 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/stride-qwen3-4b-2048-grpo-20260915",
+      "snippet": "Instructions to use sandeep123/stride-qwen3-4b-2048-grpo-20260915 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In this work, we introduce Qwen3, the latest series in our foundation model family, Qwen. Qwen3 is a collection of open-weight large language models (LLMs) that achieve state-of-the-art performance across a wide variety of tasks and domains."
+    },
+    {
+      "title": "stride-qwen3-4b-stabilized-20…uniform-20260916 by sandeep123",
+      "url": "https://savrn.com/models/stride-qwen3-4b-stabilized-2048-token-uniform-20260916",
+      "snippet": "stride-qwen3-4b-stabilized-2048-token_uniform-20260916 from sandeep123: licence, access terms, disclosed training data, reported evaluations and the…"
+    },
+    {
+      "title": "[2505.09388] Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2505.09388",
+      "snippet": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    }
+  ]
+}

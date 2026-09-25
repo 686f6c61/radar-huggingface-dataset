@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level5-panda-widowx-widowx-texture-teleopaligned-videolora200-action-decoder-iter900",
+  "slug": "dreamdifferent-vam-cross-level5-panda-widowx-widowx-texture-teleopaligned-videolora200-action-decoder-iter900",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level5-panda-widowx-widowx-texture-teleopaligned-videolora200-action-decoder-iter900",
+  "created_at": "2026-09-25T15:01:45.000Z",
+  "updated_at": "2026-09-25T15:02:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "robotics",
+    "action-prediction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1000269372,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-teleopaligned-videolora400-action-dec-68554cef79",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Resources | Virt-A-Mate Hub",
+      "url": "https://hub.virtamate.com/resources/",
+      "snippet": "Free music, voice, and sound effect audio files and asset bundles"
+    },
+    {
+      "title": "WidowX AI Robotic Arm | Research-Grade ML Manipulator",
+      "url": "https://www.trossenrobotics.com/widowx-ai",
+      "snippet": "The WidowX AI is a research-grade robotic arm for ML research. Starting at $4,545, it features a 1.5kg payload, 700mm reach, and ALOHA ecosystem support in three configurations."
+    },
+    {
+      "title": "Cults・Download free 3D printer models・STL, OBJ, 3MF, CAD",
+      "url": "https://cults3d.com/",
+      "snippet": "World&#x27;s leading independent website for 3D printer files・Download the best objects for 3D printing・Share your designs on Cults3D the biggest DIY community."
+    },
+    {
+      "title": "Wiki | Virt-A-Mate Hub",
+      "url": "https://hub.virtamate.com/forums/wiki.54/",
+      "snippet": "Auto Behaviors Head Audio Hand Control Skin Select Skin Materials 1 Skin Materials 2 Skin Textures Material Options Morphs Hair Clothing Guides FAQ (Frequently Asked Questions) Using VaM Person atoms Scene creation Plugins and tools Assets and files AI, AR, VR Resource specific VAR packaging and Hub actions Other topics Errors in the VaM log ..."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Fugi1128/ScamScan",
+  "slug": "fugi1128-scamscan",
+  "author": "Fugi1128",
+  "url": "https://huggingface.co/Fugi1128/ScamScan",
+  "created_at": "2026-09-25T12:42:37.000Z",
+  "updated_at": "2026-09-25T12:53:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 253976013,
+  "storage_human": "254 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fugi1128 (Rohith Reddy Kodakandla) - Hugging Face",
+      "url": "https://huggingface.co/Fugi1128",
+      "snippet": "Fugi1128/MusicLM-gpt-2-best published a model about 13 hours ago Fugi1128/MusicLM-gpt-2-best updated a model about 16 hours ago Fugi1128/music-gpt2-tokenizer-quantized-latest View all activity"
+    },
+    {
+      "title": "ScamAdviser | Check Any Website for Scams & Fraud | Free",
+      "url": "https://www.scamadviser.com/",
+      "snippet": "Don&#x27;t get scammed online. ScamAdviser&#x27;s free website checker reveals if a site is legit or hiding fraud, malware, or phishing traps. Check any URL in seconds."
+    },
+    {
+      "title": "ScamRadar+ — AI-Powered Scam Detection",
+      "url": "https://scamradarplus.com/",
+      "snippet": "Paste any suspicious message and get an instant AI verdict. Free, no account required. Detects phishing, crypto scams, romance fraud, and 17 other scam types."
+    },
+    {
+      "title": "ScamCheck — Free AI Scam Detector | Check Any Message or Link",
+      "url": "https://scamcheck.tech/",
+      "snippet": "Is this a scam? Paste any suspicious message, link, or text and get an instant AI verdict. Free scam checker for phishing, fake jobs, WhatsApp fraud, romance scams & more."
+    },
+    {
+      "title": "URL and website scanner - urlscan.io",
+      "url": "https://urlscan.io/",
+      "snippet": "urlscan.io - Website scanner for suspicious and malicious URLs"
+    }
+  ]
+}

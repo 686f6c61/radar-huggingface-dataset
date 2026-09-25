@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Yato-Works/Atomisum-v7-CPP-LoRA",
+  "slug": "yato-works-atomisum-v7-cpp-lora",
+  "author": "Yato-Works",
+  "url": "https://huggingface.co/Yato-Works/Atomisum-v7-CPP-LoRA",
+  "created_at": "2026-09-25T14:46:36.000Z",
+  "updated_at": "2026-09-25T14:47:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "cpp"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "Atomisum",
+    "qlora",
+    "cpp",
+    "c++20",
+    "specialized-model",
+    "yato-works",
+    "v7",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-Coder-7B",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20215208,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yato-Works/Atomisum-v7-CPP-LoRA · Hugging Face",
+      "url": "https://huggingface.co/Yato-Works/Atomisum-v7-CPP-LoRA",
+      "snippet": "Instructions to use Yato-Works/Atomisum-v7-CPP-LoRA with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Yato-Works/Atomisum-v7-CPP-LoRA with Transformers:"
+    },
+    {
+      "title": "Yato-Works (Eli) - Hugging Face",
+      "url": "https://huggingface.co/Yato-Works",
+      "snippet": "Recent Activity updated a modelabout 1 hour ago Yato-Works/Atomisum-v7-CPP-LoRA published a modelabout 1 hour ago Yato-Works/Atomisum-v7-CPP-LoRA View all activity"
+    },
+    {
+      "title": "Best Pony Diffusion Models 2026: V6 XL, V7 & Top Merges",
+      "url": "https://offlinecreator.com/best-pony-diffusion-models",
+      "snippet": "Best Pony Diffusion models for local gen — V6 XL, V7 AuraFlow, AutismMix, and top merges ranked with downloads, CLIP skip, and VRAM notes."
+    },
+    {
+      "title": "How V7 gives AI agents institutional memory - OpenAI",
+      "url": "https://openai.com/index/v7/",
+      "snippet": "After building a widely used computer vision accessibility app together, Rizzoli and Edwardsson started V7 ⁠ in 2018 to help companies teach AI systems how their businesses work. V7 Go is an agentic platform to build mission critical workflows, and organize buried context into memory that agents can query and act on."
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    }
+  ]
+}

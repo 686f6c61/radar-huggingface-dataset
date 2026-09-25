@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "KapuluruSashank/ppo-CartPole-v1",
+  "slug": "kapulurusashank-ppo-cartpole-v1",
+  "author": "KapuluruSashank",
+  "url": "https://huggingface.co/KapuluruSashank/ppo-CartPole-v1",
+  "created_at": "2026-09-25T18:10:58.000Z",
+  "updated_at": "2026-09-25T18:11:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "CartPole-v1",
+    "ppo",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150784,
+  "storage_human": "150784 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hwihwalab/cartpole-v1-ppo · Hugging Face",
+      "url": "https://huggingface.co/hwihwalab/cartpole-v1-ppo",
+      "snippet": "ppo proximal-policy-optimization cartpole-v1 gymnasium openai-gym classic-control robotics physical-ai sim-to-real zero-shot-transfer domain-randomization inverted-pendulum optimal-control lqr-control control-theory interactive-demo Eval Results (legacy) License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use ..."
+    },
+    {
+      "title": "trtd56/ppo-CartPole · Hugging Face",
+      "url": "https://huggingface.co/trtd56/ppo-CartPole",
+      "snippet": "This is a trained model of a PPO agent playing CartPole-v1. To learn to code your own PPO agent and train it Unit 8 of the Deep Reinforcement Learning Class: https://github.com/huggingface/deep-rl-class/tree/main/unit8"
+    },
+    {
+      "title": "KapuluruSashank (Sashank Kapuluru) - Hugging Face",
+      "url": "https://huggingface.co/KapuluruSashank",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "PPO-Cartpole - GitHub",
+      "url": "https://github.com/blueflower120/PPO-Cartpole",
+      "snippet": "My reinforcement learning practice project: PPO for Cartpole-v1 environment. This project utilizes the proximal policy optimization (PPO) algorithm for training and testing in the CartPole-v1 environment, one of the classic introductory experiments in reinforcement learning. The goal is to make a cart keep a vertical pole upright by moving left and right."
+    },
+    {
+      "title": "ppo_cartpole - Colab",
+      "url": "https://colab.research.google.com/github/keras-team/keras-io/blob/master/examples/rl/ipynb/ppo_cartpole.ipynb",
+      "snippet": "This code example solves the CartPole-v1 environment using a Proximal Policy Optimization (PPO) agent. CartPole-v1 A pole is attached by an un-actuated joint to a cart, which moves along a frictionless track. The system is controlled by applying a force of +1 or -1 to the cart. The pendulum starts upright, and the goal is to prevent it from falling over. A reward of +1 is provided for every ..."
+    }
+  ]
+}

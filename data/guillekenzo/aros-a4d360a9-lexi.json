@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-a4d360a9-Lexi",
+  "slug": "guillekenzo-aros-a4d360a9-lexi",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-a4d360a9-Lexi",
+  "created_at": "2026-09-25T17:43:35.000Z",
+  "updated_at": "2026-09-25T18:06:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 964640142,
+  "storage_human": "965 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guillekenzo/aros-0ae4f6a7-VividVertex · Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/aros-0ae4f6a7-VividVertex",
+      "snippet": "guillekenzo / aros-0ae4f6a7-VividVertex Like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo",
+      "snippet": "Image-to-image upscaler using NVIDIA PiD from_clean_flux. guillekenzo May 26. models 153. Sort: Recently updated. guillekenzo/aros-09cc5fd4-MellowDuality"
+    },
+    {
+      "title": "DiffusionBee - Stable Diffusion App for AI Art",
+      "url": "https://diffusionbee.com/huggingface_import?model_id=guillekenzo/aros-09cc5fd4-MellowDuality",
+      "snippet": "DiffusionBee is the easiest way to generate AI art on your computer with Stable Diffusion. Completely free of charge."
+    },
+    {
+      "title": "guillekenzo AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/guillekenzo",
+      "snippet": "Browse AI models attributed to guillekenzo, sourced from verified model catalogs."
+    },
+    {
+      "title": "AI Image Model Leaderboard 2026 — Text-to-Image Rankings | BudgetPixel",
+      "url": "https://budgetpixel.com/arena/leaderboard",
+      "snippet": "AI image model leaderboard from blind votes: 20 current text-to-image models ranked overall and by category, with measured speed and price. Updated nightly."
+    }
+  ]
+}

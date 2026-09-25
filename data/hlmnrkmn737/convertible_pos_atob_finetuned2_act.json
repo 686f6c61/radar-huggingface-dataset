@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hlmnrkmn737/convertible_pos_AToB_fineTuned2_act",
+  "slug": "hlmnrkmn737-convertible_pos_atob_finetuned2_act",
+  "author": "hlmnrkmn737",
+  "url": "https://huggingface.co/hlmnrkmn737/convertible_pos_AToB_fineTuned2_act",
+  "created_at": "2026-09-25T16:16:18.000Z",
+  "updated_at": "2026-09-25T16:17:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:hlmnrkmn737/convertible_pos_AToB_fineTuned2_20260925_merged_recomputed_stats",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206715008,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "convertible_pos_AToB_20260916_103413 - Hugging Face",
+      "url": "https://huggingface.co/datasets/hlmnrkmn737/convertible_pos_AToB_20260916_103413",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hlmnrkmn737/convertible_pos_AToB_20260916_103413 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/hlmnrkmn737/convertible_pos_AToB_20260916_103413/tree/main",
+      "snippet": "Datasets: hlmnrkmn737 / convertible_pos_AToB_20260916_103413 Like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot robotics lerobot LeLab Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main convertible_pos_AToB_20260916_103413 2.63 GB 1 contributor History:3 commits ..."
+    },
+    {
+      "title": "convertible_pos_AToB_20260916_103413 - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/hlmnrkmn737-convertible-pos-atob-20260916-103413",
+      "snippet": "A robotic manipulation dataset created using LeRobot containing teleoperated demonstrations of a task performed by a SO Follower robot with multi-view RGB observations and joint position actions."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Gemini 3 | Google AI Studio",
+      "url": "https://aistudio.google.com/models/gemini-3",
+      "snippet": "Model capabilities Read Gemini 3 docs Model Gemini 3.1 Pro Advanced reasoning for coding and complex tasks Gemini 3.5 Flash"
+    }
+  ]
+}

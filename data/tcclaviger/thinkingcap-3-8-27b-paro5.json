@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "tcclaviger/ThinkingCap-3.8-27B-PARO5",
+  "slug": "tcclaviger-thinkingcap-3-8-27b-paro5",
+  "author": "tcclaviger",
+  "url": "https://huggingface.co/tcclaviger/ThinkingCap-3.8-27B-PARO5",
+  "created_at": "2026-09-25T13:43:08.000Z",
+  "updated_at": "2026-09-25T14:22:07.000Z",
+  "license": "polyform-small-business-1.0.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "amd",
+    "rdna4",
+    "r9700",
+    "paroquant",
+    "int5",
+    "fp8",
+    "conversational",
+    "arxiv:2511.10645",
+    "base_model:bottlecapai/ThinkingCap-Qwen3.8-27B",
+    "base_model:quantized:bottlecapai/ThinkingCap-Qwen3.8-27B",
+    "license:other",
+    "endpoints_compatible",
+    "rfi",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13520122608,
+  "parameters_human": "13.52B",
+  "storage_bytes": 25240577097,
+  "storage_human": "25.2 GB",
+  "base_model": "bottlecapai/ThinkingCap-Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing efficiency focused \"ThinkingCap\" model series. | BottleCap AI",
+      "url": "https://bottlecapai.com/post/thinkingcap-qwen3-6-27b/",
+      "snippet": "One of our core aims at BottleCap is efficiency in AI. To fulfil this mission, we fine-tuned Qwen3.6-27B to reduce unnecessary reasoning while preserving answer quality."
+    },
+    {
+      "title": "ThinkingCap-Qwen3.8-27B: the same answers, 37% less thinking",
+      "url": "https://bottlecapai.com/post/thinkingcap-qwen3-8-27b/",
+      "snippet": "The second model in our ThinkingCap series. We took Qwen3.8-27B and cut how much it thinks, without changing the quality of the answers."
+    },
+    {
+      "title": "#ai #efficiency #opensource #llm #bottlecapai #thinkingcap - LinkedIn",
+      "url": "https://www.linkedin.com/posts/jaroslavbeck_ai-efficiency-opensource-activity-7479901478686683136-cg1J",
+      "snippet": "🚨Big day! Today we&#x27;re Introducing efficiency focused \"ThinkingCap\" AI model series. We&#x27;ve all seen the reasoning models that talk themselves in circles, burning thousands of tokens ..."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "ThinkingCap: Teaching a Reasoning Model to Stop Overthinking",
+      "url": "https://betterstack.com/community/guides/ai/thinkingcap/",
+      "snippet": "BottleCap AI&#x27;s ThinkingCap fine-tunes Qwen3.6-27B to cut reasoning tokens ~46% with no accuracy loss. Here&#x27;s how it works and what the benchmarks show."
+    }
+  ]
+}

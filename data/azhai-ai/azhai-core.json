@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Azhai-ai/azhai-core",
+  "slug": "azhai-ai-azhai-core",
+  "author": "Azhai-ai",
+  "url": "https://huggingface.co/Azhai-ai/azhai-core",
+  "created_at": "2026-09-25T12:11:35.000Z",
+  "updated_at": "2026-09-25T12:25:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1117320736,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "GitHub - apple/coreai-models: Model export recipes, Python primitives ...",
+      "url": "https://github.com/apple/coreai-models",
+      "snippet": "Model export recipes, Python primitives, and Swift runtime utilities for building on-device AI with Core AI. The main components include: Model export — Recipes to export popular open source models from Hugging Face and other sources to Core AI format. Reusable primitives — Python building blocks for authoring custom Core AI models in PyTorch."
+    },
+    {
+      "title": "Core AI | Apple Developer Documentation",
+      "url": "https://developer.apple.com/documentation/coreai",
+      "snippet": "Core AI helps you build, run, and deploy AI models in your app. Designed with Apple silicon in mind, Core AI allows your app to use the latest model architectures and inference techniques across the CPU, GPU, and Neural Engine. The Swift API makes common tasks simple, while giving you more control ..."
+    },
+    {
+      "title": "Core AI - Apple Developer",
+      "url": "https://developer.apple.com/core-ai/",
+      "snippet": "Core AI provides a modern, memory-safe Swift API to load, specialize, and run AI models entirely on-device — keeping user data private and your apps responsive, with zero server dependencies and zero token costs."
+    },
+    {
+      "title": "GitHub - chris-wardyp5095/azhai-ai-tools-hub: Azhai is a browser-based ...",
+      "url": "https://github.com/chris-wardyp5095/azhai-ai-tools-hub",
+      "snippet": "Azhai is a browser-based suite of 31+ free AI, text, and SEO tools for activities including word counts, JSON cleanup, metadata generation, and keyword evaluation."
+    }
+  ]
+}

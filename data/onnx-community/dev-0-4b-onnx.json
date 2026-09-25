@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "onnx-community/dev-0.4b-ONNX",
+  "slug": "onnx-community-dev-0-4b-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/dev-0.4b-ONNX",
+  "created_at": "2026-09-25T14:05:29.000Z",
+  "updated_at": "2026-09-25T14:05:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "modernbert",
+    "fill-mask",
+    "decision-model",
+    "routing",
+    "classification",
+    "verification",
+    "brier-score",
+    "calibration",
+    "bidirectional",
+    "text-classification",
+    "en",
+    "dataset:PolyAI/banking77",
+    "dataset:google/boolq",
+    "dataset:code_search_net",
+    "dataset:yelp_review_full",
+    "arxiv:1706.03762",
+    "arxiv:2412.13663",
+    "arxiv:2311.01079",
+    "arxiv:1706.04599",
+    "base_model:mpnikhil/dev-0.4b",
+    "base_model:quantized:mpnikhil/dev-0.4b",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3200774387,
+  "storage_human": "3.2 GB",
+  "base_model": "mpnikhil/dev-0.4b",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "77-Way Intent Routing",
+      "dataset": "Banking77",
+      "metric": "Top-1 Accuracy",
+      "value": 0.9133
+    },
+    {
+      "task": "77-Way Intent Routing",
+      "dataset": "Banking77",
+      "metric": "Top-3 Recall",
+      "value": 0.9867
+    },
+    {
+      "task": "Boolean Verification",
+      "dataset": "Google BoolQ",
+      "metric": "Accuracy",
+      "value": 0.852
+    },
+    {
+      "task": "5-Star Graded Scoring",
+      "dataset": "Yelp Review Full",
+      "metric": "Exact Accuracy",
+      "value": 0.6267
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - onnx/onnx: Open standard for machine learning interoperability",
+      "url": "https://github.com/onnx/onnx",
+      "snippet": "Open Neural Network Exchange (ONNX) is an open ecosystem that empowers AI developers to choose the right tools as their project evolves. ONNX provides an open source format for AI models, both deep learning and traditional ML. It defines an extensible computation graph model, as well as definitions of built-in operators and standard data types."
+    },
+    {
+      "title": "onnx-community/kev-4b-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/kev-4b-ONNX",
+      "snippet": "This is a Transformers.js-ready ONNX conversion of the original Hugging Face model jaredpalmer/kev-4b. The original model card content follows below. Usage with Transformers.js Variants under onnx/: q4f16 (default) and q4 (4-bit MatMulNBits weights, block 32, embedding as GatherBlockQuantized, pointer head in fp32; q4f16 runs the rest of the graph in fp16 for WebGPU). The full-precision export ..."
+    },
+    {
+      "title": "onnx-community (ONNX Community) - Hugging Face",
+      "url": "https://huggingface.co/onnx-community",
+      "snippet": "Org profile for ONNX Community on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Open Neural Network Exchange · GitHub",
+      "url": "https://github.com/onnx.html",
+      "snippet": "Open Neural Network Exchange ONNX is an open ecosystem for interoperable AI models. It&#x27;s a community project: we welcome your contributions!"
+    },
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX is an open format built to represent machine learning models. ONNX defines a common set of operators - the building blocks of machine learning and deep learning models - and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers."
+    }
+  ]
+}

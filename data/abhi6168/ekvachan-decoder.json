@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "abhi6168/ekvachan-decoder",
+  "slug": "abhi6168-ekvachan-decoder",
+  "author": "abhi6168",
+  "url": "https://huggingface.co/abhi6168/ekvachan-decoder",
+  "created_at": "2026-09-25T16:47:16.000Z",
+  "updated_at": "2026-09-25T16:47:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "decision-model",
+    "jev",
+    "system-one",
+    "text-classification",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104957733,
+  "storage_human": "105 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abhi6168 (Abhijeet) - Hugging Face",
+      "url": "https://huggingface.co/abhi6168",
+      "snippet": "User profile of Abhijeet on Hugging Face"
+    },
+    {
+      "title": "abhi6168 (Abhijeet) - Hugging Face",
+      "url": "https://huggingface.co/abhi6168/models",
+      "snippet": "abhi6168&#x27;s models1 Sort: Recently updated abhi6168/ABCD_CustomerAgent_Qwen_2.5_7b Updated Apr 28• 3 • 1"
+    },
+    {
+      "title": "Free AI Detector - Text, Image & Video | Free.ai",
+      "url": "https://free.ai/detector/",
+      "snippet": "Free AI detector. Check if text was written by AI, or scan an image or video for AI generation. Honest about accuracy - a heuristic, not proof."
+    },
+    {
+      "title": "The Most Trusted AI Detector | ChatGPT Detection Tool",
+      "url": "https://gowinston.ai/",
+      "snippet": "The most trusted AI detector Winston AI sets the standard in AI content detection with its unmatched accuracy in identifying ChatGPT, Claude, Google Gemini and all known AI models."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

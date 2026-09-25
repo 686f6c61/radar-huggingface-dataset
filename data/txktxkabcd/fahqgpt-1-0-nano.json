@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "txktxkabcd/fahqgpt-1.0-nano",
+  "slug": "txktxkabcd-fahqgpt-1-0-nano",
+  "author": "txktxkabcd",
+  "url": "https://huggingface.co/txktxkabcd/fahqgpt-1.0-nano",
+  "created_at": "2026-09-25T12:35:27.000Z",
+  "updated_at": "2026-09-25T12:37:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "llama",
+    "text-generation",
+    "from-scratch",
+    "tiny",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 174584704,
+  "parameters_human": "174.6M",
+  "storage_bytes": 487519840,
+  "storage_human": "488 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    },
+    {
+      "title": "Get started - NanoGPT",
+      "url": "https://nano-gpt.com/get-started",
+      "snippet": "Get started with NanoGPT in minutes—no account required. Try a free model, then add balance for top chat, image, and video models or set up API access."
+    },
+    {
+      "title": "Text models - NanoGPT",
+      "url": "https://nano-gpt.com/settings/models",
+      "snippet": "NanoGPT offers access to every AI model with pay-as-you-go or an optional subscription with included open-source model usage. Generate videos (Kling, Veo and more), create images (Flux Pro, Kontext, GPT Image, Hidream), and access ChatGPT, Claude, Gemini, Deepseek, and other top AI models."
+    },
+    {
+      "title": "Nano Banana | Google AI Studio",
+      "url": "https://aistudio.google.com/models/nano-banana",
+      "snippet": "Try image generation apps built in AI Studio image Nano Banana 2 Lite photo_library Nano Banana 2 photo_spark Nano Banana Pro Gridscape Anywhere Peek-a-word"
+    }
+  ]
+}

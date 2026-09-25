@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "sraivante/tiny-home-json-1m-v1",
+  "slug": "sraivante-tiny-home-json-1m-v1",
+  "author": "sraivante",
+  "url": "https://huggingface.co/sraivante/tiny-home-json-1m-v1",
+  "created_at": "2026-09-25T18:06:08.000Z",
+  "updated_at": "2026-09-25T18:14:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-to-json",
+    "home-automation",
+    "tiny-model",
+    "from-scratch",
+    "experimental",
+    "edge-ai",
+    "conversational",
+    "en",
+    "hi",
+    "dataset:sraivante/home-commands-json-v1",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1094240,
+  "parameters_human": "1.1M",
+  "storage_bytes": 4894706,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Home - ModelScope",
+      "url": "https://modelscope.ai/home",
+      "snippet": "ModelScope is an open-source model community offering models, datasets and interactive demos in one place."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "Daily-updated list of free AI models (free LLM APIs), ranked by quality with live status. Plus one OpenAI-compatible endpoint that routes to the best one. - ClawLabsAI/free-ai-models"
+    },
+    {
+      "title": "AI Model Downloads - 495 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

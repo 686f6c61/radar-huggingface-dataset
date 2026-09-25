@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "nishparadox/gliner2.5-decide-onnx",
+  "slug": "nishparadox-gliner2-5-decide-onnx",
+  "author": "nishparadox",
+  "url": "https://huggingface.co/nishparadox/gliner2.5-decide-onnx",
+  "created_at": "2026-09-25T14:51:38.000Z",
+  "updated_at": "2026-09-25T14:52:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "gliner2",
+    "classification",
+    "guardrails",
+    "text-classification",
+    "en",
+    "base_model:fastino/GLiNER2.5-Decide",
+    "base_model:quantized:fastino/GLiNER2.5-Decide",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3262390744,
+  "storage_human": "3.3 GB",
+  "base_model": "fastino/GLiNER2.5-Decide",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLiNER2.5-Decide: An Open-Weight Model for Structured Decision Making",
+      "url": "https://fastino.ai/blog/gliner-2-5-decide-open-weight-decision-model",
+      "snippet": "GLiNER2.5-Decide is an encoder-based decision model post-trained specifically for structured decision-making. It evaluates user-defined typed questions and can decode related answers jointly under explicit constraints, returning structured decisions with probabilities, confidence scores, and feasibility metadata."
+    },
+    {
+      "title": "GLiNER2.5: Open-Source Information Extraction Model - fastino.ai",
+      "url": "https://fastino.ai/models/gliner2-5",
+      "snippet": "GLiNER2.5 is an open-source model for schema-driven information extraction, including efficient entity and relation extraction with no fixed span-length limit."
+    },
+    {
+      "title": "GLiNER2.5-Decide: Fastino&#x27;s 340M model runs on CPU - datanorth.ai",
+      "url": "https://datanorth.ai/news/fastino-releases-gliner2-5-decide",
+      "snippet": "Fastino released GLiNER2.5-Decide on 24 September 2026, a 340M-parameter open-weight model built to classify and route text rather than talk. It scores 60.1% average accuracy on Fastino&#x27;s own 17-dataset Fast Decisions suite, ahead of JevK5 at 57.5%, and answers in 167 ms on a 48-core CPU with no graphics card at all. The licence is Apache 2.0."
+    },
+    {
+      "title": "Fastino Releases GLiNER2.5-Decide: A 340M Open-Weight Decision Model ...",
+      "url": "https://www.marktechpost.com/2026/09/24/fastino-releases-gliner2-5-decide-a-340m-open-weight-decision-model-that-runs-on-cpu/",
+      "snippet": "Fastino&#x27;s GLiNER2.5-Decide is a 340M open-weight encoder that returns rule-constrained, scored decisions on CPU for routing and guardrails."
+    },
+    {
+      "title": "fastino/GLiNER2.5-Decide at main - Hugging Face",
+      "url": "https://huggingface.co/fastino/GLiNER2.5-Decide/tree/main",
+      "snippet": "Google Colab Kaggle main GLiNER2.5-Decide 1.95 GB Ctrl+K Ctrl+K 5 contributors History:19 commits urchade Normalize model card and move benchmark near top 7ee5da4 verified38 minutes ago encoder_configUpload large classification finetune at step 955001 day ago .gitattributes 1.59 kBupload banner (#1)about 19 hours ago GLiNER-2.5-Decision-HF ..."
+    }
+  ]
+}

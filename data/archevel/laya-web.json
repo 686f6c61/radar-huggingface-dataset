@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "archevel/laya-web",
+  "slug": "archevel-laya-web",
+  "author": "archevel",
+  "url": "https://huggingface.co/archevel/laya-web",
+  "created_at": "2026-09-25T13:34:23.000Z",
+  "updated_at": "2026-09-25T13:34:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime-web",
+    "webgpu",
+    "laya",
+    "base_model:convaiinnovations/laya",
+    "base_model:quantized:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 633075953,
+  "storage_human": "633 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Laya: open-source alternative to TypeSafe Jev, runs locally",
+      "url": "https://brainfunctioncollapse.com/laya",
+      "snippet": "Laya is the open-source alternative to TypeSafe Jev: a small model that decides instead of chatting. Typed answers with real probabilities in 21 ms, on your own machine."
+    },
+    {
+      "title": "GitHub - r4ai/laya-web: Laya typed decisions in the browser with ONNX ...",
+      "url": "https://github.com/r4ai/laya-web/tree/main",
+      "snippet": "Client-side runtime for Laya-MLX decision models in the browser, powered by ONNX Runtime Web (WebGPU & Wasm). Instead of generating unstructured, free-form text like standard LLMs, Laya evaluates structured decision schemas (typed decisions) directly over input context: Inference should run inside a ..."
+    },
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "I Built Non-Autoregressive Decision Models with RL a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\". From our March 2025 arXiv paper on sequence conversion trajectories to Laya: a sub-35ms open-weight System 1 decision engine with RLCD, multilingual routing across 100+ languages, and state-of-the-art calibration."
+    },
+    {
+      "title": "GitHub - r4ai/laya-web: Laya typed decisions in the browser with ONNX ...",
+      "url": "https://github.com/r4ai/laya-web",
+      "snippet": "Client-side inference runtime for Laya-MLX decision models in the browser, powered by ONNX Runtime Web (WebGPU and WebAssembly SIMD)."
+    },
+    {
+      "title": "convaiinnovations/laya · Hugging Face",
+      "url": "https://huggingface.co/convaiinnovations/laya",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

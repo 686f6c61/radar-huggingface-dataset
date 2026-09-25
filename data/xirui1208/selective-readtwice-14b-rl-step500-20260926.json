@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Xirui1208/selective-readtwice-14b-rl-step500-20260926",
+  "slug": "xirui1208-selective-readtwice-14b-rl-step500-20260926",
+  "author": "Xirui1208",
+  "url": "https://huggingface.co/Xirui1208/selective-readtwice-14b-rl-step500-20260926",
+  "created_at": "2026-09-25T16:56:38.000Z",
+  "updated_at": "2026-09-25T17:04:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "selective-reading",
+    "readtwice",
+    "reinforcement-learning",
+    "lora",
+    "en",
+    "zh",
+    "base_model:Xirui1208/readall-readtwice-14b-rl-step15-20260925",
+    "base_model:adapter:Xirui1208/readall-readtwice-14b-rl-step15-20260925",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29854600693,
+  "storage_human": "29.9 GB",
+  "base_model": "Xirui1208/readall-readtwice-14b-rl-step15-20260925",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

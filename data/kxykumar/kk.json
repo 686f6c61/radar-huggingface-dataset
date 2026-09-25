@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kxykumar/kk",
+  "slug": "kxykumar-kk",
+  "author": "kxykumar",
+  "url": "https://huggingface.co/kxykumar/kk",
+  "created_at": "2026-09-25T13:36:25.000Z",
+  "updated_at": "2026-09-25T13:36:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best open source AI models (July 2026) - agentsdirectory.dev",
+      "url": "https://agentsdirectory.dev/rankings/best-open-source-models-2026/",
+      "snippet": "The best open-source AI model right now is Kimi K2.6 from Moonshot AI: the strongest open-weight agentic coder we track, at 47.6% on CursorBench 3.1, with a 262K context window and a free hosted tier on OpenRouter."
+    },
+    {
+      "title": "Mark Kretschmann on X: \"The strongest AI model in the world in now open ...",
+      "url": "https://x.com/mark_k/status/2081766417125274015",
+      "snippet": "The strongest AI model in the world in now open source: Kimi K3 by @Kimi_Moonshot"
+    },
+    {
+      "title": "kk - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1703859401621232929",
+      "snippet": "Generate stunning anime art with the &#x27;kk&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Kimi AI: Moonshot AI&#x27;s Models, Features & Plans (2026)",
+      "url": "https://lorphic.com/kimi-ai-models-features-and-plans/",
+      "snippet": "Kimi AI is Moonshot AI&#x27;s chatbot and open-weight model family. Learn what it does, how Agent Swarm works, what K2.6 costs, and who it&#x27;s for."
+    },
+    {
+      "title": "Best Open Source AI Models July 2026: Full Collection",
+      "url": "https://blog.buildfastwithai.com/best-open-source-ai-models-2026",
+      "snippet": "Best Open Source AI Models in 2026: The Complete Collection In the space of 31 days, open-weight models matched the closed frontier on terminal coding, set the all-time record on web browsing agents, and shipped the largest model ever released to the public. June 16 to July 16, 2026 was the strongest month in open AI history, and if your mental model of open source still says cheaper but ..."
+    }
+  ]
+}

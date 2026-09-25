@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "rbinrs/glm-4-9b-chat-abliterated-GGUF",
+  "slug": "rbinrs-glm-4-9b-chat-abliterated-gguf",
+  "author": "rbinrs",
+  "url": "https://huggingface.co/rbinrs/glm-4-9b-chat-abliterated-GGUF",
+  "created_at": "2026-09-25T19:19:46.000Z",
+  "updated_at": "2026-09-25T19:19:47.000Z",
+  "license": "glm-4",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "glm",
+    "chatglm",
+    "thudm",
+    "chat",
+    "abliterated",
+    "text-generation",
+    "zh",
+    "en",
+    "base_model:byroneverson/glm-4-9b-chat-abliterated",
+    "base_model:quantized:byroneverson/glm-4-9b-chat-abliterated",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9399951360,
+  "parameters_human": "9.40B",
+  "storage_bytes": 155321232720,
+  "storage_human": "155.3 GB",
+  "base_model": "byroneverson/glm-4-9b-chat-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

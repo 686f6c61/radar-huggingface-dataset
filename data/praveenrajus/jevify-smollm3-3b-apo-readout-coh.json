@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Praveenrajus/jevify-smollm3-3b-apo-readout-coh",
+  "slug": "praveenrajus-jevify-smollm3-3b-apo-readout-coh",
+  "author": "Praveenrajus",
+  "url": "https://huggingface.co/Praveenrajus/jevify-smollm3-3b-apo-readout-coh",
+  "created_at": "2026-09-25T17:12:27.000Z",
+  "updated_at": "2026-09-25T17:12:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "jevify",
+  "languages": [],
+  "tags": [
+    "jevify",
+    "safetensors",
+    "system-one",
+    "decision-model",
+    "calibration",
+    "coherence",
+    "dataset:Praveenrajus/jev-bench",
+    "base_model:HuggingFaceTB/SmolLM3-3B-checkpoints",
+    "base_model:finetune:HuggingFaceTB/SmolLM3-3B-checkpoints",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120981200,
+  "storage_human": "121 MB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B-checkpoints",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jevify · PyPI",
+      "url": "https://pypi.org/project/jevify/",
+      "snippet": "You bring a model behind an OpenAI-compatible endpoint (vLLM, llama.cpp, anything with logprobs) or a small model that runs in-process. jevify sends it a state once, then asks typed questions about it: a choice among options, a score on ordered levels, a yes/no with a probability. Each answer is read straight off the model&#x27;s next-token distribution, no generation, no parsing, one request per ..."
+    },
+    {
+      "title": "Praveenrajus/jevify-qwen3.5-4b · Hugging Face",
+      "url": "https://huggingface.co/Praveenrajus/jevify-qwen3.5-4b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PraveenAIML (Praveen Raj) - Hugging Face",
+      "url": "https://huggingface.co/PraveenAIML",
+      "snippet": "User profile of Praveen Raj on Hugging Face"
+    },
+    {
+      "title": "Jevify/jevify/engine at main · uspraveen/Jevify · GitHub",
+      "url": "https://github.com/uspraveen/Jevify/tree/main/jevify/engine",
+      "snippet": "Turn Any Open-LLM into a System-one Jev model. Contribute to uspraveen/Jevify development by creating an account on GitHub."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office365.com/mail/?wa=wsignin1.0&wtrealm=urn%3afederation%3aMicrosoftOnline",
+      "snippet": "Sign in to your Outlook account to access and manage your emails securely."
+    }
+  ]
+}

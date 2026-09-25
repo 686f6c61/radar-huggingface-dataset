@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "EstevaoNaval/visualheist-base-onnx",
+  "slug": "estevaonaval-visualheist-base-onnx",
+  "author": "EstevaoNaval",
+  "url": "https://huggingface.co/EstevaoNaval/visualheist-base-onnx",
+  "created_at": "2026-09-25T18:06:55.000Z",
+  "updated_at": "2026-09-25T18:13:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 722975242,
+  "storage_human": "723 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EstevaoNaval/visualheist-base · Hugging Face",
+      "url": "https://huggingface.co/EstevaoNaval/visualheist-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EstevaoNaval (Estevão Vitor Gregorio Naval) - Hugging Face",
+      "url": "https://huggingface.co/EstevaoNaval",
+      "snippet": "models1 EstevaoNaval/visualheist-base Image-Text-to-Text • 0.3B•Updated about 9 hours ago"
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "GitHub - EstevaoNaval/VisualHeist: VisualHeist - Image Segmentation ...",
+      "url": "https://github.com/EstevaoNaval/VisualHeist",
+      "snippet": "model_size: Choose between &#x27;base&#x27; or &#x27;large&#x27; (required for running VisualHeist). keys: List of reaction parameter keys (required for running DataRaider). new_keys: Additional keys for new reactions (required for running DataRaider). graph_name: Name for the generated knowledge graph (required for running KGWizard)."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "realrebelai/Ming-Image_GGUFs",
+  "slug": "realrebelai-ming-image_ggufs",
+  "author": "realrebelai",
+  "url": "https://huggingface.co/realrebelai/Ming-Image_GGUFs",
+  "created_at": "2026-09-23T00:38:30.000Z",
+  "updated_at": "2026-09-24T19:07:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ming-image",
+    "comfyui",
+    "text-to-image",
+    "image-generation",
+    "quantization",
+    "low-vram",
+    "base_model:inclusionAI/Ming-Image-0.1-Design",
+    "base_model:quantized:inclusionAI/Ming-Image-0.1-Design",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 3974,
+  "trending_score": 13,
+  "parameters": 6154901056,
+  "parameters_human": "6.15B",
+  "storage_bytes": 71973892216,
+  "storage_human": "72.0 GB",
+  "base_model": "inclusionAI/Ming-Image-0.1-Design",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXX.net - Free Porn, XXX Sex, Tube Videos and Porno Movies",
+      "url": "https://www.xnxx.net/",
+      "snippet": "Xnxx.net hosts the android app of Xnxx.com - the free porn movies and xxx sex videos tube.Read more"
+    },
+    {
+      "title": "XNXX - Free Porn, XXX Sex Movies and Tube Videos",
+      "url": "https://www.xnxx.org/",
+      "snippet": "ALTERNATIVE URL If XNXX.COM is not accessible, try TXNHH.COM as the alternative URL listed on this page. Website availability …Read more"
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies - XNXX…",
+      "url": "https://www.xnxx.com/home/en/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, …Read more"
+    },
+    {
+      "title": "All tags - XNXX.COM",
+      "url": "https://www.xnxx.com/tags",
+      "snippet": "XNXX.COM All tags, free sex videos 0 pussy 101,321 1 on 1 207,580 1080p 3,458 18 year old 40,935 18yearsold 48 18yo 8,744 2 on …Read more"
+    },
+    {
+      "title": "Most Viewed Sex videos - XNXX.COM",
+      "url": "https://www.xnxx.com/hits",
+      "snippet": "XNXX.COM Most Viewed Sex videos, free sex videosRead more"
+    }
+  ]
+}

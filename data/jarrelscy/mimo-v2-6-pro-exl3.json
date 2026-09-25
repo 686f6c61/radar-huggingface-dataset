@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jarrelscy/MiMo-V2.6-Pro-EXL3",
+  "slug": "jarrelscy-mimo-v2-6-pro-exl3",
+  "author": "jarrelscy",
+  "url": "https://huggingface.co/jarrelscy/MiMo-V2.6-Pro-EXL3",
+  "created_at": "2026-09-24T06:05:21.000Z",
+  "updated_at": "2026-09-25T11:36:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "quantization",
+    "experimental",
+    "exl3",
+    "text-generation",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Pro-RL",
+    "base_model:finetune:XiaomiMiMo/MiMo-V2.6-Pro-RL",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 237851825341,
+  "storage_human": "237.9 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jarrelscy/MiMo-V2.6-Pro-EXL3-FP4 · Hugging Face",
+      "url": "https://huggingface.co/jarrelscy/MiMo-V2.6-Pro-EXL3-FP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiMo-V2.6 | Xiaomi",
+      "url": "https://mimo.xiaomi.com/mimo-v2-6",
+      "snippet": "MiMo-V2.6-Pro scores 46.32 on the Artificial Analysis Intelligence Index, surpassing Kimi K3 and Qwen3.8 Max to become the strongest open-source model to date. The MiMo-V2.6 series keeps the API pricing of the V2.5 series."
+    },
+    {
+      "title": "Xiaomi MiMo-V2.6 Series: 3 New Models Officially Released",
+      "url": "https://mimo.mi.com/models/en-US/mimo-v2.6-pro",
+      "snippet": "MiMo-V2.6-Pro Xiaomi MiMo&#x27;s most powerful flagship reasoning model — omni-modal, ultra-high performance, trillion-parameter — built for complex projects, long-horizon tasks, high-stakes work, cybersecurity, and research."
+    },
+    {
+      "title": "mimo-v2.6 RL",
+      "url": "https://mimo.xiaomi.com/rl/",
+      "snippet": "Training metrics of the mimo-v2.6-pro and mimo-v2.6-flash reinforcement-learning runs, live from the trainer&#x27;s logs."
+    },
+    {
+      "title": "MiMo-V2.6-Pro: ceny, kontext a benchmarky | Jarvis AI",
+      "url": "https://www.jarvis-ai.cz/ai-modely/mimo-v2.6-pro",
+      "snippet": "Co to znamená pro vás MiMo-V2.6-Pro je vlajkový model řady MiMo-V2.6, který Xiaomi vydalo 22. září 2026. Jde o řídkou MoE architekturu se 1,02 bilionu parametrů celkem a 42 miliardami aktivních na token; váhy jsou volně ke stažení na Hugging Face pod licencí MIT, včetně RL kódu a tréninkových prostředí."
+    }
+  ]
+}

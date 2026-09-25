@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "irambv05/classification-run1",
+  "slug": "irambv05-classification-run1",
+  "author": "irambv05",
+  "url": "https://huggingface.co/irambv05/classification-run1",
+  "created_at": "2026-09-25T13:45:45.000Z",
+  "updated_at": "2026-09-25T13:45:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DELL OPTIPLEX 9010 TECHNICAL MANUALBOOK Pdf Download",
+      "url": "https://www.manualslib.com/manual/624395/Dell-Optiplex-9010.html",
+      "snippet": "View and Download Dell OPTIPLEX 9010 technical manualbook online. OPTIPLEX 9010 desktop pdf manual download.Read more"
+    },
+    {
+      "title": "DELL OPTIPLEX 9010 SPECIFICATIONS Pdf Download | ManualsLib",
+      "url": "https://www.manualslib.com/manual/596807/Dell-Optiplex-9010.html",
+      "snippet": "View and Download Dell Optiplex 9010 specifications online. Optiplex 9010 desktop pdf manual download.Read more"
+    },
+    {
+      "title": "Support for OptiPlex 9010 | Manuals & Documents | Dell US",
+      "url": "https://www.dell.com/support/product-details/en-us/product/optiplex-9010/resources/manuals?msockid=337c0ab44efe677b19751d6b4f2466db",
+      "snippet": "Jun 23, 2015 · Discover manuals and documentation for your OptiPlex 9010. Choose a product or enter your Service Tag for …Read more"
+    },
+    {
+      "title": "Dell OptiPlex 9010",
+      "url": "https://i.dell.com/sites/csdocuments/Shared-Content_data-Sheets_Documents/en/aa/Dell_OptiPlex_9010_spec_sheet.pdf",
+      "snippet": "With a robust chassis that has undergone intense Highly Accelerated Life testing, the OptiPlex 9010 is designed for ultimate …Read more"
+    },
+    {
+      "title": "Support pour OptiPlex 9010 | Manuels et documents | Dell France",
+      "url": "https://www.dell.com/support/product-details/fr-fr/product/optiplex-9010/resources/manuals?msockid=337c0ab44efe677b19751d6b4f2466db",
+      "snippet": "Jan 16, 2015 · Découvrez les manuels et la documentation de votre OptiPlex 9010. Choisissez un produit ou saisissez votre étiquette …Read more"
+    }
+  ]
+}

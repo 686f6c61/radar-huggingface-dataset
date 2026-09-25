@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Heretic-Scalpel-E2B-i1-GGUF",
+  "slug": "mradermacher-heretic-scalpel-e2b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Heretic-Scalpel-E2B-i1-GGUF",
+  "created_at": "2026-09-25T14:55:21.000Z",
+  "updated_at": "2026-09-25T15:43:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:aifeifei798/Heretic-Scalpel-E2B",
+    "base_model:quantized:aifeifei798/Heretic-Scalpel-E2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 50203675200,
+  "storage_human": "50.2 GB",
+  "base_model": "aifeifei798/Heretic-Scalpel-E2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aifeifei798/Heretic-Scalpel-E2B · Hugging Face",
+      "url": "https://huggingface.co/aifeifei798/Heretic-Scalpel-E2B",
+      "snippet": "🌟 What is Heretic-Scalpel-E2B? Most commercial cloud models have been domesticated into bureaucratic sycophants—choked with moralizing disclaimers, conversational platitudes, and hedging phrases like \"perhaps,\" \"it is possible,\" or \"as an AI language model.\" Disconnect the internet, and they become digital paperweights; connect to the cloud, and your telemetry is monitored and indexed ..."
+    },
+    {
+      "title": "mradermacher/MiniCPM5-2B-heretic-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/MiniCPM5-2B-heretic-i1-GGUF",
+      "snippet": "mradermacher / MiniCPM5-2B-heretic-i1-GGUF like 0 Text Generation Transformers GGUF 8 datasets English Chinese minicpm minicpm5 llama long-context tool-calling on-device edge-ai heretic uncensored decensored abliterated imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this ..."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 29 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Heretic is a tool that removes censorship (aka \"safety alignment\") from transformer-based language models without expensive post-training. It combines an advanced implementation of directional ablation, also known as \"abliteration\" (Arditi et al. 2024, Lai 2025 (1, 2)), with a TPE-based parameter optimizer powered by Optuna. This approach enables Heretic to work completely automatically ..."
+    },
+    {
+      "title": "GitHub - clanker25/heretic · GitHub",
+      "url": "https://github.com/clanker25/heretic",
+      "snippet": "This approach enables Heretic to work completely automatically. Heretic finds high-quality abliteration parameters by co-minimizing the number of refusals and the KL divergence from the original model. This results in a decensored model that retains as much of the original model&#x27;s intelligence as possible."
+    }
+  ]
+}

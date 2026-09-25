@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ukisai/Swift-Qwen3.8-Flash-Next",
+  "slug": "ukisai-swift-qwen3-8-flash-next",
+  "author": "ukisai",
+  "url": "https://huggingface.co/ukisai/Swift-Qwen3.8-Flash-Next",
+  "created_at": "2026-09-22T08:54:04.000Z",
+  "updated_at": "2026-09-24T16:22:00.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "qwen3_8",
+    "moe",
+    "reasoning",
+    "efficient-thinking",
+    "token-efficient",
+    "post-training",
+    "agentic",
+    "terminal-bench",
+    "conversational",
+    "dataset:ukisai/Qwen3.8-27B-multi-turn-agent-sft",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 17,
+  "downloads_30d": 57,
+  "trending_score": 17,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 360027052225,
+  "storage_human": "360.0 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ukisai/Swift-Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-Qwen3.8-Flash-Next",
+      "snippet": "ukisai / Swift-Qwen3.8-Flash-Next Like 5 Image-Text-to-Text Transformers Safetensors ukisai/Qwen3.8-27B-multi-turn-agent-sft qwen4_exp qwen3_8 Mixture of Experts reasoning efficient-thinking token-efficient post-training agentic terminal-bench conversational License:swift-open-license-1. Model card FilesFiles and versions xet Community Deploy ..."
+    },
+    {
+      "title": "ukisai/Swift-1.5-Qwen3.8-Flash-Next-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GGUF",
+      "snippet": "Swift 1.5 Qwen3.8-Flash-Next is UkisAI&#x27;s reasoning-efficient derivative of Qwen3.8-Flash-Next. It uses 63.4% fewer thinking tokens, with a 1.8x speed up while keeping the accuracy loss <1% vs base on xhigh."
+    },
+    {
+      "title": "Swift-Qwen3.8-27B: less overthinking | UkisAI",
+      "url": "https://ukisai.com/news/introducing-swift",
+      "snippet": "Swift produces shorter reasoning traces, and we observe fewer overthinking errors in our testing. Swift includes a transfer component derived from BottleCap AI&#x27;s ThinkingCap-Qwen3.6-27B. The resulting model uses the standard Qwen3.8 interface and retains text, image, and video support. Benchmark results"
+    },
+    {
+      "title": "Models - UkisAI",
+      "url": "https://ukisai.com/models",
+      "snippet": "Explore UkisAI models, including Swift-Qwen3.8-27B."
+    },
+    {
+      "title": "ukisai/Swift-Qwen3.8-27b | ComingUp",
+      "url": "https://www.comingup.io/p/ukisaiswift-qwen38-27b",
+      "snippet": "We hope this does not pose a problem for the community and are open to feedback on it.We want to contribute as much as possible to the community and would really appreciate feedback on our work, quantization or Swift model requests. We are working on Swift 3.8 Flash Next and have so far gotten up to -53% thinking token usage."
+    }
+  ]
+}

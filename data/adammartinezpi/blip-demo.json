@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "adammartinezpi/blip-demo",
+  "slug": "adammartinezpi-blip-demo",
+  "author": "adammartinezpi",
+  "url": "https://huggingface.co/adammartinezpi/blip-demo",
+  "created_at": "2026-09-25T13:26:17.000Z",
+  "updated_at": "2026-09-25T13:26:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adammartinezpi (A. Martinez) - Hugging Face",
+      "url": "https://huggingface.co/adammartinezpi",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 20 days ago ... published a model 20 days ago"
+    },
+    {
+      "title": "BLIP · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/blip",
+      "snippet": "It is used to instantiate a Blip model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the Salesforce/blip-vqa-base Configuration objects inherit from PreTrainedConfig and can be used to control the model outputs."
+    },
+    {
+      "title": "demo.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/salesforce/BLIP/blob/main/demo.ipynb",
+      "snippet": "Perform visual question answering using finetuned BLIP model [ ]"
+    },
+    {
+      "title": "GitHub - salesforce/BLIP: PyTorch code for BLIP: Bootstrapping Language ...",
+      "url": "https://github.com/salesforce/BLIP",
+      "snippet": "PyTorch code for BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation - salesforce/BLIP"
+    },
+    {
+      "title": "BLIP/demo.ipynb at main · salesforce/BLIP · GitHub",
+      "url": "https://github.com/salesforce/BLIP/blob/main/demo.ipynb",
+      "snippet": "PyTorch code for BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation - BLIP/demo.ipynb at main · salesforce/BLIP"
+    }
+  ]
+}

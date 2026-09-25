@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Xu-AI4Science/MARRI",
+  "slug": "xu-ai4science-marri",
+  "author": "Xu-AI4Science",
+  "url": "https://huggingface.co/Xu-AI4Science/MARRI",
+  "created_at": "2026-09-25T16:34:13.000Z",
+  "updated_at": "2026-09-25T16:35:12.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "rna",
+    "rna-rna-interaction",
+    "pytorch",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2944062258,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai4.science",
+      "url": "https://ai4.science/",
+      "snippet": "ai4.science brings together researchers, developers, and AI experts through open collaborative events. Our hackathons foster innovation in AI-human scientific collaboration, while future markathons will focus on creating shared benchmarks for open AI evaluation in scientific domains."
+    },
+    {
+      "title": "xuanxu (Juanjo Bazán) - Hugging Face",
+      "url": "https://huggingface.co/xuanxu/models",
+      "snippet": "Recent Activity liked a model4 days ago nasa-ibm-ai4science/NASA-IBM-Lunar-Foundation-Model upvoted a collection 4 days ago"
+    },
+    {
+      "title": "Xu-AI4Science (Hao Xu) - Hugging Face",
+      "url": "https://huggingface.co/Xu-AI4Science/models",
+      "snippet": "User profile of Hao Xu on Hugging Face"
+    },
+    {
+      "title": "Home | AI4Science",
+      "url": "https://ai4science.co/",
+      "snippet": "Curating AI tools, research, and opportunities for scientific discovery"
+    },
+    {
+      "title": "Papers - AI4Science",
+      "url": "https://ai4science.co/papers",
+      "snippet": "Curating AI tools, research, and opportunities for scientific discovery"
+    }
+  ]
+}

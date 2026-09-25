@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_trex260925",
+  "slug": "tarzanagh-ckpt_mugbackpackteleop_place_4cam260918_trex260925",
+  "author": "tarzanagh",
+  "url": "https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_trex260925",
+  "created_at": "2026-09-25T12:40:10.000Z",
+  "updated_at": "2026-09-25T12:42:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3_vl",
+    "robotics",
+    "imitation-learning",
+    "bimanual",
+    "dexterous-manipulation",
+    "teleoperation",
+    "tactile",
+    "xhand1",
+    "dexmate-vega",
+    "t-rex",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8379532860,
+  "storage_human": "8.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Davoud Ataee Tarzanagh - Hugging Face",
+      "url": "https://huggingface.co/tarzanagh",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 16 days ago ... published a model 25 days ago"
+    },
+    {
+      "title": "tarzanagh (Davoud Ataee Tarzanagh) - Hugging Face",
+      "url": "https://huggingface.co/tarzanagh/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 7 days ago ... published a dataset 7 days ago"
+    },
+    {
+      "title": "Davoud Ataee Tarzanagh",
+      "url": "https://tarzanagh.github.io/",
+      "snippet": "I am an AI Scientist at Samsung SDS Research America in Mountain View, working on Physical AI."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Tumblr",
+      "url": "https://www.tumblr.com/",
+      "snippet": "Tumblr is the place you go to be yourself on the internet. No performance, no perfection. Just you, and the people who get it."
+    }
+  ]
+}

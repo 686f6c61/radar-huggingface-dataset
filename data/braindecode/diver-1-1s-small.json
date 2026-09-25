@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "braindecode/DIVER-1-1s-small",
+  "slug": "braindecode-diver-1-1s-small",
+  "author": "braindecode",
+  "url": "https://huggingface.co/braindecode/DIVER-1-1s-small",
+  "created_at": "2026-09-25T16:18:07.000Z",
+  "updated_at": "2026-09-25T16:18:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "braindecode",
+  "languages": [],
+  "tags": [
+    "braindecode",
+    "pytorch",
+    "safetensors",
+    "DIVER-1",
+    "ieeg",
+    "seeg",
+    "eeg",
+    "foundation-model",
+    "pytorch_model_hub_mixin",
+    "feature-extraction",
+    "arxiv:2512.19097",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 50640964,
+  "parameters_human": "50.6M",
+  "storage_bytes": 405222471,
+  "storage_human": "405 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DIVER-1: Scaling Intracranial EEG Foundation Models for Transferable ...",
+      "url": "https://arxiv.org/html/2512.19097",
+      "snippet": "DIVER-1-1s also achieves the top AUROC on MAYO seizure detection. Finally, we conduct, to our knowledge, the first controlled compute-aware scaling study for self-supervised iEEG pretraining, sweeping data scale, subject count, training duration, and model size up to 1.8B parameters."
+    },
+    {
+      "title": "GitHub - braindecode/braindecode: Deep learning software to decode EEG ...",
+      "url": "https://github.com/braindecode/braindecode",
+      "snippet": "Braindecode Braindecode is an open-source Python toolbox for decoding raw electrophysiological brain data with deep learning models. It includes dataset fetchers, data preprocessing and visualization tools, as well as implementations of several deep learning architectures and data augmentations for analysis of EEG, ECoG and MEG."
+    },
+    {
+      "title": "[2512.19097] DIVER-1: Scaling Intracranial EEG Foundation Models for ...",
+      "url": "https://arxiv.org/abs/2512.19097",
+      "snippet": "DIVER-1-1s also achieves the top AUROC on MAYO seizure detection. Finally, we conduct, to our knowledge, the first controlled compute-aware scaling study for self-supervised iEEG pretraining, sweeping data scale, subject count, training duration, and model size up to 1.8B parameters."
+    },
+    {
+      "title": "DIVER-1: Deep Integration of Vast Electrophysiological Recordings at Scale",
+      "url": "https://arxiv.org/html/2512.19097v1",
+      "snippet": "DIVER-1 iEEG and EEG models each achieve state-of-the-art performance on their respective benchmarks, establishing a concrete guidelines for efficient scaling and resource allocation in electrophysiology foundation model development. 111Code available at: https://anonymous.4open.science/r/DIVER-1"
+    },
+    {
+      "title": "Braindecode — Decode raw EEG, ECoG and MEG with deep learning",
+      "url": "https://braindecode.org/stable/index.html",
+      "snippet": "Braindecode is an open-source PyTorch toolbox for decoding raw EEG, ECoG and MEG with deep learning. Datasets, preprocessing, augmentations, and 65+ published model architectures."
+    }
+  ]
+}

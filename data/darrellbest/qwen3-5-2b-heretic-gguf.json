@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "darrellbest/Qwen3.5-2B-Heretic-GGUF",
+  "slug": "darrellbest-qwen3-5-2b-heretic-gguf",
+  "author": "darrellbest",
+  "url": "https://huggingface.co/darrellbest/Qwen3.5-2B-Heretic-GGUF",
+  "created_at": "2026-09-25T13:51:53.000Z",
+  "updated_at": "2026-09-25T13:52:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "heretic",
+    "ara",
+    "abliterated",
+    "uncensored",
+    "qwen3.5",
+    "image-text-to-text",
+    "base_model:darrellbest/Qwen3.5-2B-Heretic",
+    "base_model:quantized:darrellbest/Qwen3.5-2B-Heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 7954455072,
+  "storage_human": "8.0 GB",
+  "base_model": "darrellbest/Qwen3.5-2B-Heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.5-2B-heretic-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-2B-heretic-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Qwen3.5-2B-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-2B-heretic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 2b Heretic - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-5-2b-heretic.html",
+      "snippet": "Download Qwen3.5 2b Heretic GGUF model. 4.20 GB, 203 downloads, 11 likes."
+    },
+    {
+      "title": "Running Qwen 3.5 Locally on a Single GPU: Complete Setup Guide",
+      "url": "https://www.qtithow.com/2026/09/running-qwen-35-locally-on-single-gpu.html",
+      "snippet": "Independent benchmarks show the Qwen 3.5-397B-A17B model scoring exceptionally high on widely-used tests like LiveCodeBench and AIME26. It consistently outperforms top-tier models like GPT-5.2 and Claude Opus 4.5 across most evaluation categories, while delivering significantly better throughput than earlier Qwen generations."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions). For the first time, Qwen3.8 brings a Qwen ..."
+    }
+  ]
+}

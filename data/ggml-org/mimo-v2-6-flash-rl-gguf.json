@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ggml-org/MiMo-V2.6-Flash-RL-GGUF",
+  "slug": "ggml-org-mimo-v2-6-flash-rl-gguf",
+  "author": "ggml-org",
+  "url": "https://huggingface.co/ggml-org/MiMo-V2.6-Flash-RL-GGUF",
+  "created_at": "2026-09-22T06:17:29.000Z",
+  "updated_at": "2026-09-25T12:50:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "image-text-to-text",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 12,
+  "downloads_30d": 5966,
+  "trending_score": 12,
+  "parameters": 308778780864,
+  "parameters_human": "308.78B",
+  "storage_bytes": 577615262016,
+  "storage_human": "577.6 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ggml-org/MiMo-V2.6-Flash-RL-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ggml-org/MiMo-V2.6-Flash-RL-GGUF",
+      "snippet": "Instructions to use ggml-org/MiMo-V2.6-Flash-RL-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use ggml-org/MiMo-V2.6-Flash-RL-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "MiMo-V2.6-Flash-RL-MXFP4-00001-of-00002.gguf · ggml-org/MiMo-V2.6-Flash ...",
+      "url": "https://huggingface.co/ggml-org/MiMo-V2.6-Flash-RL-GGUF/blob/main/MiMo-V2.6-Flash-RL-MXFP4-00001-of-00002.gguf",
+      "snippet": "Instructions to use ggml-org/MiMo-V2.6-Flash-RL-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use ggml-org/MiMo-V2.6-Flash-RL-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "MiMo-V2.6-Flash-RL-GGUF Released with MTP and MMproj Support",
+      "url": "https://localmodelwatch.tsuchitsuchi.com/en/2026/09/22/mimo-v2-6-flash-rl-gguf-released/",
+      "snippet": "How to Get It ggml-org/MiMo-V2.6-Flash-RL-GGUF is available in GGUF format on Hugging Face. The model is released under the MIT license. Various quantized files and additional modules tailored to different use cases and environments are provided in the repository: MXFP4: A configuration that maintains the routed expert sections at native MXFP4 precision. Q2_K: A configuration where expert down ..."
+    },
+    {
+      "title": "mimo-v2.6 RL",
+      "url": "https://mimo.xiaomi.com/rl/",
+      "snippet": "Training metrics of the mimo-v2.6-pro and mimo-v2.6-flash reinforcement-learning runs, live from the trainer&#x27;s logs."
+    },
+    {
+      "title": "MiMo-V2.6 | Xiaomi",
+      "url": "https://mimo.xiaomi.com/mimo-v2-6",
+      "snippet": "Today, we are releasing and open-sourcing the MiMo-V2.6 series. This marks a key step in our exploration of the RSI path: scaling RL compute on verifiable, complex tasks, so the model can continuously expand its capability frontier through exploration and feedback. The MiMo-V2.6 series includes two natively omnimodal models: MiMo-V2.6-Pro is our most capable model to date, while MiMo-V2.6 ..."
+    }
+  ]
+}

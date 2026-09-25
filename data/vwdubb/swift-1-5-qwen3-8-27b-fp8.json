@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "vwdubb/Swift-1.5-Qwen3.8-27b-FP8",
+  "slug": "vwdubb-swift-1-5-qwen3-8-27b-fp8",
+  "author": "vwdubb",
+  "url": "https://huggingface.co/vwdubb/Swift-1.5-Qwen3.8-27b-FP8",
+  "created_at": "2026-09-25T14:42:29.000Z",
+  "updated_at": "2026-09-25T14:45:20.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3_8",
+    "reasoning",
+    "efficient-thinking",
+    "token-efficient",
+    "post-training",
+    "terminal-bench",
+    "conversational",
+    "base_model:ukisai/Swift-1.5-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-1.5-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 38470215564,
+  "storage_human": "38.5 GB",
+  "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vwdubb/Swift-Qwen3.8-27b-FP8 · Hugging Face",
+      "url": "https://huggingface.co/vwdubb/Swift-Qwen3.8-27b-FP8",
+      "snippet": "vwdubb / Swift-Qwen3.8-27b-FP8 Like 0 Image-Text-to-Text Transformers Safetensors qwen3_5 qwen3_8 efficient-thinking reasoning token-efficient lora conversational compressed-tensors License:swift-open-license-1. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "vwdubb/Swift-1.5-Qwen3.8-27b-Terse-Coder-FP8 · Hugging Face",
+      "url": "https://huggingface.co/vwdubb/Swift-1.5-Qwen3.8-27b-Terse-Coder-FP8",
+      "snippet": "License This model is a derivative of Swift 1.5 Qwen3.8-27B (Swift Open License v1.0) and the Terse-Coder LoRA (Apache 2.0)."
+    },
+    {
+      "title": "Swift-Qwen3.8-27B: less overthinking | UkisAI",
+      "url": "https://ukisai.com/news/introducing-swift",
+      "snippet": "Swift includes a transfer component derived from BottleCap AI&#x27;s ThinkingCap-Qwen3.6-27B. The resulting model uses the standard Qwen3.8 interface and retains text, image, and video support. Benchmark results We evaluated Qwen3.8-27B and Swift on nine benchmarks, with BF16 weights and five runs per model. All base scores come from our own ..."
+    },
+    {
+      "title": "Run Swift-1.5-Qwen3.8-27B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/ukisai/Swift-1.5-Qwen3.8-27b",
+      "snippet": "Swift 1.5 Qwen3.8-27B is a 27 billion parameter language model developed by UkisAI, derived from Qwen3.8-27B. This model is optimized for reasoning efficiency, using 58.5% fewer \"thinking tokens\" while achieving a 0.35% higher score than its base model, resulting in a 1.95x speed-up on various tasks. It excels particularly in coding and agentic tasks, making it suitable for applications ..."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    }
+  ]
+}

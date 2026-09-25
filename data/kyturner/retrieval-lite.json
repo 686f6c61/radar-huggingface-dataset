@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kyturner/retrieval-lite",
+  "slug": "kyturner-retrieval-lite",
+  "author": "kyturner",
+  "url": "https://huggingface.co/kyturner/retrieval-lite",
+  "created_at": "2026-09-25T12:49:07.000Z",
+  "updated_at": "2026-09-25T12:49:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Rerank Models for Search and RAG - openrouter.ai",
+      "url": "https://openrouter.ai/collections/rerank-models",
+      "snippet": "Compare the best rerank models on OpenRouter for semantic search, RAG pipelines, recommendation systems, and retrieval quality through one API."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Collections / Free Models Free AI Models on OpenRouter Model rankings updated September 2026 based on real usage data. Models are ranked by total prompt and completion tokens processed through the OpenRouter API over the trailing 7 days. Showing the top 16 models. Rankings measure usage on OpenRouter and reflect adoption, not model quality or benchmark performance."
+    },
+    {
+      "title": "GitHub - superlinear-ai/raglite: RAGLite is a Python toolkit for ...",
+      "url": "https://github.com/superlinear-ai/raglite",
+      "snippet": "🥤 RAGLite is a Python toolkit for Retrieval-Augmented Generation (RAG) with DuckDB or PostgreSQL - superlinear-ai/raglite"
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Releases — the model release tracker",
+      "url": "https://www.llm-releases.com/",
+      "snippet": "An independent, sourced record of large language model releases, updates, and retirements — frontier and open-weight, tracked over time."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "modelarchive/Nanosaur2-670M",
+  "slug": "modelarchive-nanosaur2-670m",
+  "author": "modelarchive",
+  "url": "https://huggingface.co/modelarchive/Nanosaur2-670M",
+  "created_at": "2026-09-25T15:55:09.000Z",
+  "updated_at": "2026-09-25T15:55:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "arxiv:2510.21986",
+    "arxiv:2212.09748",
+    "arxiv:2310.00426",
+    "arxiv:2104.09864",
+    "arxiv:2002.05202",
+    "arxiv:2302.05442",
+    "arxiv:2511.13720",
+    "arxiv:2503.19786",
+    "arxiv:2304.07193",
+    "arxiv:2510.11690",
+    "arxiv:2605.18324",
+    "arxiv:2608.08676",
+    "arxiv:2606.02572",
+    "arxiv:2508.10104",
+    "arxiv:2608.11612",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2130097989,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "modelarchive (model archive) - Hugging Face",
+      "url": "https://huggingface.co/modelarchive",
+      "snippet": "AI & ML interests archive of open source models that are unavailable officially."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "nanosaur",
+      "url": "https://nanosaur.ai/",
+      "snippet": "nanosaur is an 🇮🇹 italian open-source and 3D printable platform, designed to wander on your desk. With this platform, you learn the fundamentals of ROS 2 and NVIDIA Isaac ROS GEMs. Learning how to use AI applied in robotics."
+    },
+    {
+      "title": "ModelArchive",
+      "url": "https://modelarchive.org/",
+      "snippet": "ModelArchive serves as a repository and archive for computational structure models that are not based on experimental data. It complements the PDB archive for experimental structures and PDB-IHM for integrative structures."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "A daily-updated, community-maintained list of every free AI model (free LLM API) available right now. No paywalls. No API key required to browse. Updated automatically every 24 hours by GitHub Actions pulling from OpenRouter, Pollinations AI, and other public sources ..."
+    }
+  ]
+}

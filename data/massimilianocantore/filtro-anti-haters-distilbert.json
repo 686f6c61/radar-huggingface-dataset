@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "MassimilianoCantore/filtro-anti-haters-distilbert",
+  "slug": "massimilianocantore-filtro-anti-haters-distilbert",
+  "author": "MassimilianoCantore",
+  "url": "https://huggingface.co/MassimilianoCantore/filtro-anti-haters-distilbert",
+  "created_at": "2026-09-25T12:10:37.000Z",
+  "updated_at": "2026-09-25T12:18:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267844872,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xiaomi MiMo Home",
+      "url": "https://mimo.mi.com/models/en-US/mimo-v2.6-pro",
+      "snippet": "Xiaomi MiMo&#x27;s most powerful flagship reasoning model — omni-modal, ultra-high performance, trillion-parameter — built for complex projects, long-horizon tasks, high-stakes work, cybersecurity, and research."
+    },
+    {
+      "title": "Frontier AI LLMs, assistants, agents, services | Mistral",
+      "url": "https://mistral.ai/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "Google Gemini AI model hacks three other companies - WCVB",
+      "url": "https://www.wcvb.com/article/google-gemini-ai-hacks-companies/73797054",
+      "snippet": "Google said the AI model gained unauthorized access to three outside systems during a test by either guessing login information or using login credentials it found in a public repository."
+    },
+    {
+      "title": "Palantir, Nvidia curb AI model use over data fears, The Information ...",
+      "url": "https://www.reuters.com/business/palantir-nvidia-curb-ai-model-use-over-data-fears-information-reports-2026-09-14/",
+      "snippet": "Large technology companies, including Palantir Technologies , Nvidia and Booz Allen Hamilton , could restrict or cease to use advanced AI models unless Anthropic and OpenAI guarantee not misusing ..."
+    },
+    {
+      "title": "AI haters build tarpits to trap and trick AI scrapers that ignore ...",
+      "url": "https://arstechnica.com/tech-policy/2025/01/ai-haters-build-tarpits-to-trap-and-trick-ai-scrapers-that-ignore-robots-txt/",
+      "snippet": "AI haters build tarpits to trap and trick AI scrapers that ignore robots.txt Attackers explain how an anti-spam defense became an AI weapon."
+    }
+  ]
+}

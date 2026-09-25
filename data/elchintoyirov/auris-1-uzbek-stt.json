@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "elchintoyirov/auris-1-uzbek-stt",
+  "slug": "elchintoyirov-auris-1-uzbek-stt",
+  "author": "elchintoyirov",
+  "url": "https://huggingface.co/elchintoyirov/auris-1-uzbek-stt",
+  "created_at": "2026-09-25T17:29:46.000Z",
+  "updated_at": "2026-09-25T18:06:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "uz"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "asr",
+    "stt",
+    "uzbek",
+    "uz",
+    "xls-r",
+    "ctc",
+    "hf-asr-leaderboard",
+    "base_model:facebook/wav2vec2-xls-r-300m",
+    "base_model:finetune:facebook/wav2vec2-xls-r-300m",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 315470495,
+  "parameters_human": "315.5M",
+  "storage_bytes": 1463361338,
+  "storage_human": "1.5 GB",
+  "base_model": "facebook/wav2vec2-xls-r-300m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (uz_uz), test split",
+      "metric": "WER (4-gram LM)",
+      "value": 13.69
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (uz_uz), test split",
+      "metric": "CER (4-gram LM)",
+      "value": 3.72
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Uzbek Speech Corpus (custom speaker-disjoint split)",
+      "metric": "WER (4-gram LM)",
+      "value": 11.83
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Uzbek Speech Corpus (custom speaker-disjoint split)",
+      "metric": "CER (4-gram LM)",
+      "value": 4.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "Today's selection - XNXX.COM",
+      "url": "https://www.xnxx.com/todays-selection/",
+      "snippet": "XNXX Today's selection Jovencita Presumida Termina Follada y Humillada! - FULL VIDEO 765 79% 13min - 1080p Panty Land …"
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies - XNXX…",
+      "url": "https://www.xnxx.com/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, …"
+    },
+    {
+      "title": "Today's selection - XNXX.COM",
+      "url": "https://m-xnxx.com/todays-selection",
+      "snippet": "XNXX Today's selection A sexy blonde brought only a swimsuit to the Alps, so I decided to help her warm up, and she was so …"
+    },
+    {
+      "title": "XNXX Free Porn Videos - HD Porno Tube & XXX Sex Videos - XNXX…",
+      "url": "https://xnxx.dev/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, …"
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies - XNXX…",
+      "url": "https://m-xnxx.com/",
+      "snippet": "XXX,XXX Video,XNXX Video,Bokep indo,XNXX indo,indo porn,Xvideos,Xvideo,Film Sex,YouPorn,Sex Video,Sex Porno,Porn …"
+    }
+  ]
+}

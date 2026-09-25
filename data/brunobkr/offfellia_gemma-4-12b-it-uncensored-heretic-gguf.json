@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Brunobkr/OFFFELLIA_gemma-4-12B-it-uncensored-heretic.gguf",
+  "slug": "brunobkr-offfellia_gemma-4-12b-it-uncensored-heretic-gguf",
+  "author": "Brunobkr",
+  "url": "https://huggingface.co/Brunobkr/OFFFELLIA_gemma-4-12B-it-uncensored-heretic.gguf",
+  "created_at": "2026-09-25T14:10:52.000Z",
+  "updated_at": "2026-09-25T14:11:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969768,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brunobkr/OFFELLIA_IQ4_XS_gemma-4-12B-it-heretic · Hugging Face",
+      "url": "https://huggingface.co/Brunobkr/OFFELLIA_IQ4_XS_gemma-4-12B-it-heretic",
+      "snippet": "Instructions to use Brunobkr/OFFELLIA_IQ4_XS_gemma-4-12B-it-heretic with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Brunobkr/OFFELLIA_f16_gemma-4-12B-it-heretic · Hugging Face",
+      "url": "https://huggingface.co/Brunobkr/OFFELLIA_f16_gemma-4-12B-it-heretic",
+      "snippet": "Instructions to use Brunobkr/OFFELLIA_f16_gemma-4-12B-it-heretic with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "gemma-4-12B-it-uncensored-heretic-GGUF · Model · Inferix",
+      "url": "https://inferix.co/models/llmfan46/gemma-4-12B-it-uncensored-heretic-GGUF",
+      "snippet": "GGUF quantizations of llmfan46/gemma 4 12B uncensored heretic. This is a decensored version of google/gemma 4 12B it, made using Heretic v1.2.0 with the Arbitrary Rank Ablation (ARA) method Abliteration parameters Paramet…"
+    },
+    {
+      "title": "Gemma 4 12b It Heretic Ud - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-12b-it-heretic-ud.html",
+      "snippet": "Download Gemma 4 12b It Heretic Ud GGUF model. 25.2 GB, 12,476 downloads, 7 likes."
+    },
+    {
+      "title": "gemma-4-12B-it-heretic-custom-GGUF · Model · Inferix",
+      "url": "https://inferix.co/models/MoonRide/gemma-4-12B-it-heretic-custom-GGUF",
+      "snippet": "This is a decensored version of google/gemma-4-12B-it, made using Heretic v1.3.0 Created and evaluated using custom system prompt. If not sure which GGUF to pick, try gemma-4-12B-it-heretic-custom-Q6_K.gguf (9.8 GB) or gemma-4-12B-it-heretic-custom-IQ4_NL.gguf (7 GB) [!TIP] This model is reproducible! See the README in the reproduce directory for more information. Abliteration parameters"
+    }
+  ]
+}

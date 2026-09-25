@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mx-2026/qwen3.5-2b-text-candidate-scorer",
+  "slug": "mx-2026-qwen3-5-2b-text-candidate-scorer",
+  "author": "mx-2026",
+  "url": "https://huggingface.co/mx-2026/qwen3.5-2b-text-candidate-scorer",
+  "created_at": "2026-09-25T16:09:14.000Z",
+  "updated_at": "2026-09-25T16:25:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "candidate-scoring",
+    "multiple-choice",
+    "reranking",
+    "text-classification",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3808068099,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MX, fabricant d’équipements de manutention pour les agriculteurs",
+      "url": "https://m-x.eu/fr/",
+      "snippet": "Découvrez MX, le spécialiste des équipements de manutention agricole. Contactez les équipes MX pour plus d'informations."
+    },
+    {
+      "title": "Motocross / Enduro / Pièces détachées | 24MX",
+      "url": "https://www.24mx.fr/",
+      "snippet": "24mx.fr La plus grande boutique en ligne d’Europe de pièces détachées, vêtements, protections et bien plus encore !"
+    },
+    {
+      "title": "Home - Motocross - Enduro - Supermoto | MotocrossMag",
+      "url": "https://fr.motocrossmag.be/",
+      "snippet": "TEST : la Ducati Desmo250 MX Quinze mille tours par minute. C'est probablement le premier chiffre qui reste en tête lorsque Ducati …"
+    },
+    {
+      "title": "Home | MXGP",
+      "url": "https://www.mxgp.com/",
+      "snippet": "COOKIE BANNER MotoXGP uses cookies (or other tracking tools), of first and third parties, to ensure the proper functioning of the …"
+    },
+    {
+      "title": "Mx (titre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mx_(titre)",
+      "snippet": "Mx (habituellement prononcé /m ɪ ks/ ou /m ʌ ks/ et parfois /ɛmˈɛks/1, 2, 3) est un néologisme de langue anglaise servant à indiquer …"
+    }
+  ]
+}

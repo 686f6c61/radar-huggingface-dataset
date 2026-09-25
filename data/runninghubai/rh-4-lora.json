@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-4-lora",
+  "slug": "runninghubai-rh-4-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-4-lora",
+  "created_at": "2026-09-25T13:37:03.000Z",
+  "updated_at": "2026-09-25T13:38:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 620468015,
+  "storage_human": "620 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI (RunningHub.ai) - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI",
+      "snippet": "One API Powering All-Modal AI Productivity. Recent Activity. updated a model about 1 hour ago. RunningHubAI/rh-minimax-h3-fl2v-turbo-4step-v1.-768p-comfyui-bf16 ..."
+    },
+    {
+      "title": "RunningHub Models ｜ AI Model Creation & Training Platform",
+      "url": "https://www.runninghub.ai/models",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI/rh-hf-e2e-t4-20260918105654-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-hf-e2e-t4-20260918105654-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RunningHub ｜ AI Agent-Powered Content Creation Platform with ComfyUI ...",
+      "url": "https://www.runninghub.ai/",
+      "snippet": "RunningHub is an all-in-one content creation platform powered by native AI agents. Build end-to-end creative workflows with ComfyUI workflows, infinite canvas, AI apps, image & video generation, and model API access."
+    },
+    {
+      "title": "RunningHubAI/rh-wz4000-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-wz4000-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

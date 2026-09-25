@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "waveforce-ai/Aura-2-Lightning",
+  "slug": "waveforce-ai-aura-2-lightning",
+  "author": "waveforce-ai",
+  "url": "https://huggingface.co/waveforce-ai/Aura-2-Lightning",
+  "created_at": "2026-09-25T13:19:27.000Z",
+  "updated_at": "2026-09-25T13:35:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "distillation",
+    "pytorch",
+    "causal-lm",
+    "waveforce-ai",
+    "base_model:openai-community/gpt2-xl",
+    "base_model:finetune:openai-community/gpt2-xl",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1557611200,
+  "parameters_human": "1.56B",
+  "storage_bytes": 3115283128,
+  "storage_human": "3.1 GB",
+  "base_model": "openai-community/gpt2-xl",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Aura-2-Lightning-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Aura-2-Lightning-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "waveforce-ai (Waveforce) - Hugging Face",
+      "url": "https://huggingface.co/waveforce-ai/models",
+      "snippet": "Org profile for Waveforce on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Introducing Aura-2: Enterprise-Grade Text-to-Speech",
+      "url": "https://deepgram.com/learn/introducing-aura-2-enterprise-text-to-speech",
+      "snippet": "Discover Aura-2, Deepgram&#x27;s next-gen text-to-speech API designed for enterprise-grade voice AI. Deliver natural, real-time speech with sub-200ms latency, domain-specific accuracy, and scalable performance for production environments."
+    },
+    {
+      "title": "Lightning AI | Idea to AI product, ⚡️ fast.",
+      "url": "https://lightning.ai/",
+      "snippet": "Specialized models outperform general-purpose models. Lightning provides the enterprise-grade tools, expertise, and GPUs to help you own your own AI."
+    },
+    {
+      "title": "Lightning AI",
+      "url": "https://lightning.ai/models",
+      "snippet": "From the PyTorch Lightning creators. Own your AI, don&#x27;t rent it. Lightning is the AI cloud to build, train, and deploy your own models on 36,000+ NVIDIA GPUs."
+    }
+  ]
+}

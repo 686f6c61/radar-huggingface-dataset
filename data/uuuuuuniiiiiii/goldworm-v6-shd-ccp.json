@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Uuuuuuniiiiiii/goldworm-v6-shd-ccp",
+  "slug": "uuuuuuniiiiiii-goldworm-v6-shd-ccp",
+  "author": "Uuuuuuniiiiiii",
+  "url": "https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6-shd-ccp",
+  "created_at": "2026-09-25T14:38:26.000Z",
+  "updated_at": "2026-09-25T15:13:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6544800,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uuuuuuniiiiiii/goldworm-v6 · Hugging Face",
+      "url": "https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6",
+      "snippet": "Uuuuuuniiiiiii / goldworm-v6 Like 1 Text Generation Safetensors PyTorch goldworm-v6 goldworm_v6 python byte-level-transformer language-model tiny-stories efficient License:mit Model card FilesFiles and versions xet Community Copy to bucket new GoldWorm v6 — Byte-Level Causal Transformer (2.76M params) Model facts Files Use with Streamlit demo How to load (Python) Verification"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=goldworm-v6",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: goldworm-v6 Clear all"
+    },
+    {
+      "title": "GoldWorm v6 AI - YouTube",
+      "url": "https://www.youtube.com/watch?v=xeA456bAdfM",
+      "snippet": "45x times smaler than gtp-2 https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI Model Releases in September 2026: Confirmed Updates | BenchLM",
+      "url": "https://benchlm.ai/model-updates/releases/september-2026",
+      "snippet": "30 confirmed AI model releases from 21 providers in September 2026, with primary evidence sources and BenchLM model links."
+    }
+  ]
+}

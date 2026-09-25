@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "TheDrummer/Artemis-31B-v1.2",
+  "slug": "thedrummer-artemis-31b-v1-2",
+  "author": "TheDrummer",
+  "url": "https://huggingface.co/TheDrummer/Artemis-31B-v1.2",
+  "created_at": "2026-09-25T14:30:23.000Z",
+  "updated_at": "2026-09-25T14:37:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "base_model:google/gemma-4-31B",
+    "base_model:finetune:google/gemma-4-31B",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507874,
+  "storage_human": "62.6 GB",
+  "base_model": "google/gemma-4-31B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheDrummer/Artemis-31B-v1.1 · Hugging Face",
+      "url": "https://huggingface.co/TheDrummer/Artemis-31B-v1.1",
+      "snippet": "AI&#x27;s use of language speaks volumes about their &#x27;perception&#x27; of reality. If a language model has been skewed and limited to a positive perception, then it&#x27;s ability to imagine is also limited. Finetuning is an opportunity to adjust and broaden the language. Corporations use it to achieve safety and compliance. I&#x27;m here to Drummer proudly ..."
+    },
+    {
+      "title": "TheDrummer/Artemis-31B-v1.1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheDrummer/Artemis-31B-v1.1-GGUF",
+      "snippet": "Instructions to use TheDrummer/Artemis-31B-v1.1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use TheDrummer/Artemis-31B-v1.1-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Run Artemis-31B-v1 API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/TheDrummer/Artemis-31B-v1",
+      "snippet": "Artemis-31B-v1 is a 31 billion parameter language model developed by TheDrummer, based on the Gemma 4 architecture with a 32768 token context length. This model is specifically fine-tuned for creative writing, storytelling, and entertainment use cases, prioritizing dynamism and imagination over strict intelligence or alignment. It aims to provide a compelling and intriguing narrative ..."
+    },
+    {
+      "title": "Run Artemis-31B-v1.1 API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/TheDrummer/Artemis-31B-v1.1",
+      "snippet": "Overview TheDrummer&#x27;s Artemis-31B-v1.1 is a 31 billion parameter language model, an iteration built upon the Gemma 4 template with a 32768 token context length. Developed by a software engineer with a focus on exploration and value creation in AI, this model is designed to cater to creative and entertainment-oriented applications."
+    },
+    {
+      "title": "Artemis 31B V1 by TheDrummer — VRAM 62.6GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/TheDrummer%2FArtemis-31B-v1,69lEchHqBDpE4lnqa9GTtN",
+      "snippet": "Artemis 31B V1 is an open-source language model by TheDrummer. Features: 31b LLM, VRAM: 62.6GB, LLM Explorer Score: 0.26."
+    }
+  ]
+}

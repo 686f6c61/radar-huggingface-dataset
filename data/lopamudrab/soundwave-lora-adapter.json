@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LopamudraB/soundwave-lora-adapter",
+  "slug": "lopamudrab-soundwave-lora-adapter",
+  "author": "LopamudraB",
+  "url": "https://huggingface.co/LopamudraB/soundwave-lora-adapter",
+  "created_at": "2026-09-25T12:18:19.000Z",
+  "updated_at": "2026-09-25T12:18:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29062028,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LopamudraB/soundwave-lora-adapter · Hugging Face",
+      "url": "https://huggingface.co/LopamudraB/soundwave-lora-adapter",
+      "snippet": "Instructions to use LopamudraB/soundwave-lora-adapter with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use LopamudraB/soundwave-lora-adapter with Transformers:"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "A daily-updated, community-maintained list of every free AI model (free LLM API) available right now. No paywalls. No API key required to browse. Updated automatically every 24 hours by GitHub Actions pulling from OpenRouter, Pollinations AI, and other public sources ..."
+    },
+    {
+      "title": "LoRA Adapters Explained - openinnovation.ai",
+      "url": "https://openinnovation.ai/lora-adapters-explained-efficient-fine-tuning-for-llms-without-retraining/",
+      "snippet": "LoRA adapters offer a lightweight way to fine-tune large language models without retraining billions of parameters. Learn how they reduce costs, accelerate deployment, and enable modular AI systems."
+    },
+    {
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "url": "https://www.microsoft.com/en-us/research/publication/lora-low-rank-adaptation-of-large-language-models/",
+      "snippet": "An important paradigm of natural language processing consists of large-scale pre-training on general domain data and adaptation to particular tasks or domains. As we pre-train larger models, full fine-tuning, which retrains all model parameters, becomes less feasible. Using GPT-3 175B as an example — deploying independent instances of fine-tuned models, each with 175B parameters, is […]"
+    },
+    {
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "url": "https://arxiv.org/abs/2106.09685",
+      "snippet": "An important paradigm of natural language processing consists of large-scale pre-training on general domain data and adaptation to particular tasks or domains. As we pre-train larger models, full fine-tuning, which retrains all model parameters, becomes less feasible. Using GPT-3 175B as an example -- deploying independent instances of fine-tuned models, each with 175B parameters, is ..."
+    }
+  ]
+}

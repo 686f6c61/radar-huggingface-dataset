@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "togethercomputer/Tev1-0.8B-experimental",
+  "slug": "togethercomputer-tev1-0-8b-experimental",
+  "author": "togethercomputer",
+  "url": "https://huggingface.co/togethercomputer/Tev1-0.8B-experimental",
+  "created_at": "2026-09-25T17:19:54.000Z",
+  "updated_at": "2026-09-25T17:25:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "together-ai",
+    "qwen3.5",
+    "decision-model",
+    "experimental",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1759750582,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "togethercomputer/Tev1-0.8B-experimental · Hugging Face",
+      "url": "https://huggingface.co/togethercomputer/Tev1-0.8B-experimental",
+      "snippet": "Tev1-.8B-experimental is an experimental 0.8B decision model from Together AI. It is a supervised fine-tune of Qwen3.5-0.8B trained to choose one option from a structured state, question, and list of choices."
+    },
+    {
+      "title": "GitHub - togethercomputer/tev1: Open-weight, Jev-inspired decision ...",
+      "url": "https://github.com/togethercomputer/tev1",
+      "snippet": "We fine-tuned Qwen3.5-4B on Together AI to make decisions: give it context, a question, and 2-24 options, and it returns one answer letter. We&#x27;re calling it tev1-4B-experimental. This repo contains the data recipe, training example, and saved results so you can fine-tune your own decision model."
+    },
+    {
+      "title": "togethercomputer/Tev1-0.8B-experimental · Discussions",
+      "url": "https://huggingface.co/togethercomputer/Tev1-0.8B-experimental/discussions",
+      "snippet": "togethercomputer / Tev1-.8B-experimental Like 0 Follow Together 1.19k Text Generation Transformers Safetensors qwen3_5 image-text-to-text together-ai qwen3.5 decision-model experimental conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Tev1-4B-experimental Text Generation Model: 12GB+ VRAM",
+      "url": "https://localmodelwatch.tsuchitsuchi.com/en/2026/09/24/tev1-4b-experimental-released/",
+      "snippet": "Values determined by this site&#x27;s code at collection time. Dates are JST. Overview Together AI has released \"Tev1-4B-experimental\", a 4B parameter decision-making model specialized in selecting the optimal single choice based on structured data. This model is an experimental model supervised fine-tuned (SFT) on the base of \"Qwen3.5-4B\" to return a single choice label from structured ..."
+    },
+    {
+      "title": "Run Tev1-4B-experimental API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/togethercomputer/Tev1-4B-experimental",
+      "snippet": "Overview Tev1-4B-experimental is a 4.5 billion parameter experimental decision model from Together AI, fine-tuned from Qwen3.5-4B. It is designed for structured decision-making, where the model selects a single option from a given state, question, and a list of 2-24 choices. This model is an experiment inspired by the Jev concept, focusing on classification rather than non-autoregressive runtime."
+    }
+  ]
+}

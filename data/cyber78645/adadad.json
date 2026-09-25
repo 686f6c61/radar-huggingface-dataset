@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cyber78645/adadad",
+  "slug": "cyber78645-adadad",
+  "author": "cyber78645",
+  "url": "https://huggingface.co/cyber78645/adadad",
+  "created_at": "2026-09-25T16:39:08.000Z",
+  "updated_at": "2026-09-25T16:39:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Benchmarks | Compare GPT-5.6, Claude Fable 5 & Gemini 3 | LM ...",
+      "url": "https://lmcouncil.ai/benchmarks",
+      "snippet": "Compare GPT-5.6, Claude Fable 5, Claude Opus 5, Gemini 3, and other frontier models across Humanity&#x27;s Last Exam, FrontierMath, GPQA, SWE-bench, and more. Every result snapshot links its source and checked date."
+    },
+    {
+      "title": "PhonkHub",
+      "url": "https://phonkhub.online/",
+      "snippet": "Official PhonkHub: Goon to the moon!"
+    },
+    {
+      "title": "AI Lingerie Models - Virtual Underwear & Intimate Apparel Models | Pic ...",
+      "url": "https://www.piccopilot.com/ai-model/lingerie-models",
+      "snippet": "Create ecommerce showcases with AI lingerie models. From underwear fashion models to lingerie virtual try-on, perfect for AI-powered lingerie branding campaigns."
+    },
+    {
+      "title": "Top 100 Fanvue Creators in 2026 (Fanvue Models)",
+      "url": "https://influencers.feedspot.com/fanvue_instagram_influencers/",
+      "snippet": "Looking for Fanvue Influencers on Instagram for outreach campaign or for collaboration to promote your brand or product? Check out our list of Best Fanvue Creators."
+    },
+    {
+      "title": "What went wrong: How an OpenAI model went rogue - CNN",
+      "url": "https://www.cnn.com/2026/07/23/tech/how-an-openai-model-went-rogue",
+      "snippet": "A common technique in training AI models is reinforcement learning, or rewarding the model for completing tasks. But the models will often do anything - including unethical steps like hacking ..."
+    }
+  ]
+}

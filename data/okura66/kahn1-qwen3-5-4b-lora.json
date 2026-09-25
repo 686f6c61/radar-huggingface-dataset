@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Okura66/Kahn1-Qwen3.5-4B-LoRA",
+  "slug": "okura66-kahn1-qwen3-5-4b-lora",
+  "author": "Okura66",
+  "url": "https://huggingface.co/Okura66/Kahn1-Qwen3.5-4B-LoRA",
+  "created_at": "2026-09-25T13:58:20.000Z",
+  "updated_at": "2026-09-25T13:58:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "kahn1",
+    "system-one",
+    "jev",
+    "lora",
+    "calibrated-probabilities",
+    "classification",
+    "entailment",
+    "text-classification",
+    "en",
+    "fr",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77539181,
+  "storage_human": "78 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Okura66/kahn1: High-throughput, sub-20ms System 1 decision ...",
+      "url": "https://github.com/Okura66/kahn1",
+      "snippet": "Full Merged Standalone Checkpoint (6.17 GB): Okura66/Kahn1-Qwen2.5-3B Lightweight LoRA Adapter (239 MB): Okura66/Kahn1-Qwen2.5-3B-LoRA Categorizing thousands of incoming support tickets, emails, or insurance claims per minute. Extracting structured attributes (intent, priority, sentiment, refund ..."
+    },
+    {
+      "title": "Okura66/Kahn1-Qwen2.5-3B-LoRA · Hugging Face",
+      "url": "https://huggingface.co/Okura66/Kahn1-Qwen2.5-3B-LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Okura66/Kahn1-Qwen2.5-3B · Hugging Face",
+      "url": "https://huggingface.co/Okura66/Kahn1-Qwen2.5-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-4B LoRA Fine-tuning on Step-3.5-Flash-SFT - GitHub",
+      "url": "https://github.com/IIIIQIIII/qwen35-4b-lora-sft",
+      "snippet": "This experiment validates whether a single H100 can efficiently fine-tune Qwen3.5-4B on general agent/coding/reasoning data that the base model has never seen before, using a large LoRA rank to compensate for the domain gap."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

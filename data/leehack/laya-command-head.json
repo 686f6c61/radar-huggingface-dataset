@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "leehack/laya-command-head",
+  "slug": "leehack-laya-command-head",
+  "author": "leehack",
+  "url": "https://huggingface.co/leehack/laya-command-head",
+  "created_at": "2026-09-25T15:50:34.000Z",
+  "updated_at": "2026-09-25T16:15:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llamadart",
+  "languages": [],
+  "tags": [
+    "llamadart",
+    "laya",
+    "decision-model",
+    "intent-classification",
+    "safetensors",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 106052824,
+  "storage_human": "106 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Laya — Open-Source, Local-First AI Notification Command Center",
+      "url": "https://laya.aay.sh/index.html",
+      "snippet": "Stop Reacting. Start Commanding. The open-source, local-first AI notification command center for Slack, Gmail, GitHub, Jira, Notion, Outlook, Calendar & more. Laya enriches your daily workflows with AI — whether you connect one platform or many. It researches context, drafts responses, and delivers ready-to-approve action cards before you even open the app — using local LLMs via Ollama and ..."
+    },
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "Instead of staying bitter, I decided to take everything I learned, fix every architectural limitation of the old approach, and build a completely open, horizontal System 1 decision model family: Laya."
+    },
+    {
+      "title": "GitHub - aayushch/laya: Laya is an open-source, local-first AI ...",
+      "url": "https://github.com/aayushch/laya",
+      "snippet": "A cadence for professional orchestration. Laya is an open-source, local-first AI notification command center that aggregates Slack, Gmail, GitHub, Jira, Notion, Outlook, and Calendar notifications — powered by local LLMs via Ollama and LM Studio, or cloud models like Claude and GPT with your own ..."
+    },
+    {
+      "title": "convaiinnovations/laya · Hugging Face",
+      "url": "https://huggingface.co/convaiinnovations/laya",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "convaiinnovations/laya at main - Hugging Face",
+      "url": "https://huggingface.co/convaiinnovations/laya/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

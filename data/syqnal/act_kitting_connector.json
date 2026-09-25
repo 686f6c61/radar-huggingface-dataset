@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Syqnal/act_kitting_connector",
+  "slug": "syqnal-act_kitting_connector",
+  "author": "Syqnal",
+  "url": "https://huggingface.co/Syqnal/act_kitting_connector",
+  "created_at": "2026-09-25T12:37:51.000Z",
+  "updated_at": "2026-09-25T12:38:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Syqnal/kitting_connector",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714880,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Syqnal/act_kitting_nut · Hugging Face",
+      "url": "https://huggingface.co/Syqnal/act_kitting_nut",
+      "snippet": "Instructions to use Syqnal/act_kitting_nut with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Syqnal/act_kitting_nut with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on your robot Train ..."
+    },
+    {
+      "title": "Syqnal/act_kitting_nut_v3 · Hugging Face",
+      "url": "https://huggingface.co/Syqnal/act_kitting_nut_v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to connect the AI Connectors to your AI tools | Kit Help Center",
+      "url": "https://help.kit.com/en/articles/14827557-how-to-connect-the-ai-connectors-to-your-ai-tools",
+      "snippet": "AI Connectors (Model Context Protocol) server is the universal connector between your Kit account and your favorite AI tool. Once it&#x27;s connected, Claude, ChatGPT, Cursor, and other MCP-compatible AI assistants can read your Kit account and take actions on your behalf with simple questions and no coding required. A few quick checks before you ..."
+    },
+    {
+      "title": "AI-based Framework for Robust Model-Based Connector Mating in Robotic ...",
+      "url": "https://www.catalyzex.com/paper/ai-based-framework-for-robust-model-based",
+      "snippet": "AI-based Framework for Robust Model-Based Connector Mating in Robotic Wire Harness Installation: Paper and Code. Despite the widespread adoption of industrial robots in automotive assembly, wire harness installation remains a largely manual process, as it requires precise and flexible manipulation. To address this challenge, we design a novel AI-based framework that automates cable connector ..."
+    },
+    {
+      "title": "Integrating Model Context Protocol Tools with Semantic Kernel: A Step ...",
+      "url": "https://devblogs.microsoft.com/agent-framework/integrating-model-context-protocol-tools-with-semantic-kernel-a-step-by-step-guide/",
+      "snippet": "This post describes how to use Model Context Protocol tools with Semantic Kernel. Model Context Protocol (MCP) is an open protocol that standardizes how applications provide context to LLMs. MCP standardizes the connection between AI models and various data sources and tools."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nkkbr/Mini-K3-1H-llama-mha-block4-v1",
+  "slug": "nkkbr-mini-k3-1h-llama-mha-block4-v1",
+  "author": "nkkbr",
+  "url": "https://huggingface.co/nkkbr/Mini-K3-1H-llama-mha-block4-v1",
+  "created_at": "2026-09-25T13:33:33.000Z",
+  "updated_at": "2026-09-25T13:33:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mini_k3",
+    "kimi-k3",
+    "pretraining",
+    "mixture-of-experts",
+    "llama-style-attention",
+    "architecture-ablation",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 979984128,
+  "parameters_human": "980.0M",
+  "storage_bytes": 1963080606,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nkkbr/Mini-K3-1H-llama-mha-block4-v1 · Hugging Face",
+      "url": "https://huggingface.co/nkkbr/Mini-K3-1H-llama-mha-block4-v1",
+      "snippet": "Mini-K3-1H-llama-mha-block4 This repository contains a text-only Mini-K3-1H Llama-attention control from a four-model MHA/GQA by residual-mechanism comparison. It retains K3&#x27;s Stable LatentMoE, first dense SiTU-GLU layer, tokenizer, and online Quantile Balancing, while all 13 sequence mixers use ordinary bias-free Q/K/V/O attention with full-head RoPE. It is a research control and is not an ..."
+    },
+    {
+      "title": "nkkbr/Mini-K3-1H · Hugging Face",
+      "url": "https://huggingface.co/nkkbr/Mini-K3-1H",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mini K3 1H Mamba2 N128 G8 V1 B by nkkbr - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/nkkbr%2FMini-K3-1H-mamba2-n128-g8-v1_B,2hb2ChRjsgQlK6ZfxKuZZS",
+      "snippet": "Mini K3 1H Mamba2 N128 G8 V1 B is an open-source 1b LLM by nkkbr. VRAM 2GB, 128K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "GitHub - gavmc/Mini-K3: Reproducing Kimi K3 from scratch in PyTorch KDA ...",
+      "url": "https://github.com/gavmc/Mini-K3",
+      "snippet": "A single-GPU PyTorch reproduction of the Kimi K3 architecture (Moonshot AI, 2026), scaled to ~155M total / ~70M active parameters so it trains on an RTX 3090/4090. This is the v3 iteration of the repo; see v1/ and v2/ for earlier experiments."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    }
+  ]
+}

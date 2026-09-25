@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "damianborek/polaris-2",
+  "slug": "damianborek-polaris-2",
+  "author": "damianborek",
+  "url": "https://huggingface.co/damianborek/polaris-2",
+  "created_at": "2026-09-25T16:50:44.000Z",
+  "updated_at": "2026-09-25T16:51:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "classification",
+    "agents",
+    "decision",
+    "nimble",
+    "en",
+    "base_model:bespokelabs/Bespoke-Nimble-9B",
+    "base_model:adapter:bespokelabs/Bespoke-Nimble-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 193177837,
+  "storage_human": "193 MB",
+  "base_model": "bespokelabs/Bespoke-Nimble-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Polaris: A Safety-focused LLM Constellation Architecture for Healthcare",
+      "url": "https://arxiv.org/pdf/2403.13313",
+      "snippet": "Abstract We develop Polaris 2, the first safety-focused Large Language Model (LLM) constellation for real-time patient-AI healthcare conversations. Unlike prior LLM works in healthcare, which focus on tasks like question answering, our work specifically focuses on long multi-turn voice conversations. Our one-trillion parameter constellation system is composed of several multi-billion parameter ..."
+    },
+    {
+      "title": "damianborek/polaris-1 · Hugging Face",
+      "url": "https://huggingface.co/damianborek/polaris-1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Polaris 2.0 | Hippocratic AI Safety Architecture",
+      "url": "https://hippocraticai.com/polaris2/",
+      "snippet": "Polaris 2.0 is designed for real-time patient-facing healthcare conversations. Given the large constellation size of over 3 trillion parameters, we optimized the orchestration to reduce end-to-end latency by allowing most of the support models to run concurrently with the primary conversational model."
+    },
+    {
+      "title": "GitHub Copilot Gets Its Own AI Model: Project Polaris",
+      "url": "https://byteiota.com/github-copilot-project-polaris/",
+      "snippet": "Microsoft is cutting the cord. At Build 2026 on June 2, the company will unveil Project Polaris — a homegrown AI coding model built exclusively to power GitHub Copilot. No more relying on OpenAI as the engine underneath. With 4.7 million paid subscribers and 90% of Fortune 500 companies already on Copilot, this is not a side project. Every existing Copilot user gets auto-migrated to Polaris ..."
+    },
+    {
+      "title": "Project Polaris: Microsoft&#x27;s In-House Copilot Model | DM",
+      "url": "https://digitalmatters.me/artificial-intelligence-ai/project-polaris/",
+      "snippet": "Project Polaris is Microsoft&#x27;s in-house AI coding model, unveiled at Microsoft Build 2026 (June 2, 2026) as the future reasoning engine for GitHub Copilot. Starting August 2026, Polaris replaces GPT-4 Turbo as the default model for Copilot subscribers, with automatic migration and an optional three-month fallback period for teams that want to ..."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "altslate/certo-r1-qwen3-4b",
+  "slug": "altslate-certo-r1-qwen3-4b",
+  "author": "altslate",
+  "url": "https://huggingface.co/altslate/certo-r1-qwen3-4b",
+  "created_at": "2026-09-25T12:19:52.000Z",
+  "updated_at": "2026-09-25T12:20:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "certo",
+    "reasoning",
+    "concise-reasoning",
+    "decision",
+    "cascade",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornhub",
+      "url": "https://www.pornhub.com/view_video.php?viewkey%3D467892853",
+      "snippet": ""
+    },
+    {
+      "title": "Ali-Yaser/Qwen3-R1-4B · Hugging Face",
+      "url": "https://huggingface.co/Ali-Yaser/Qwen3-R1-4B",
+      "snippet": "Model Description Qwen3-R1 Series is a specialized math and reansoning awnsers-focused fine-tuned version of Qwen3-8B Instruct, optimized for Math and hard question tasks."
+    },
+    {
+      "title": "Big Girls, but Wild! - Reddit",
+      "url": "https://www.reddit.com/r/biggirlsgonewild/",
+      "snippet": "Here we celebrate bodies of all shapes and sizes - you are all beautiful :) Spam posters will be banned. Men posting will be banned. …"
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fat ass girls - Scrolller NSFW",
+      "url": "https://scrolller.com/c/fat-ass-white-girls-whwe3ch1",
+      "snippet": "Fat Ass Girls — a hand-picked collection of 57 curated NSFW posts on Scrolller. Browse Fat Ass Girls in an endless gallery of …"
+    }
+  ]
+}

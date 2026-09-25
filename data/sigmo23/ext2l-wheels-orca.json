@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Sigmo23/ext2l-wheels-orca",
+  "slug": "sigmo23-ext2l-wheels-orca",
+  "author": "Sigmo23",
+  "url": "https://huggingface.co/Sigmo23/ext2l-wheels-orca",
+  "created_at": "2026-09-25T12:38:09.000Z",
+  "updated_at": "2026-09-25T12:38:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "orcasaq2",
+    "tesla-t4",
+    "sm75",
+    "wheels",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sigmo23 (Gsdo) - Hugging Face",
+      "url": "https://huggingface.co/Sigmo23",
+      "snippet": "Recent Activity updated a modelabout 10 hours ago Sigmo23/prism-llama-t4 published a modelabout 10 hours ago Sigmo23/prism-llama-t4 View all activity"
+    },
+    {
+      "title": "microsoft/Orca-2-13b · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Orca-2-13b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Orca: Progressive Learning from Complex Explanation Traces of GPT-4",
+      "url": "https://www.microsoft.com/en-us/research/publication/orca-progressive-learning-from-complex-explanation-traces-of-gpt-4/",
+      "snippet": "To address these challenges, we develop Orca, a 13-billion parameter model that learns to imitate the reasoning process of LFMs. Orca learns from rich signals from GPT 4 including explanation traces; step-by-step thought processes; and other complex instructions, guided by teacher assistance from ChatGPT."
+    },
+    {
+      "title": "OrcaRouter — One AI gateway: adaptive LLM routing & governance",
+      "url": "https://www.orcarouter.ai/",
+      "snippet": "One OpenAI-compatible AI gateway for production AI — adaptive routing, load balancing, guardrails, agent firewall, observability and governance across 200+ models."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    }
+  ]
+}

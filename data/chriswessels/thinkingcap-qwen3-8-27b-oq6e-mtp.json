@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "chriswessels/ThinkingCap-Qwen3.8-27B-oQ6e-mtp",
+  "slug": "chriswessels-thinkingcap-qwen3-8-27b-oq6e-mtp",
+  "author": "chriswessels",
+  "url": "https://huggingface.co/chriswessels/ThinkingCap-Qwen3.8-27B-oQ6e-mtp",
+  "created_at": "2026-09-25T16:06:32.000Z",
+  "updated_at": "2026-09-25T16:48:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 23729097780,
+  "storage_human": "23.7 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "README.md · chriswessels/Qwen3.8-27B-Uncensored-oQ6e-mtp at main",
+      "url": "https://huggingface.co/chriswessels/Qwen3.8-27B-Uncensored-oQ6e-mtp/blob/main/README.md",
+      "snippet": "chriswessels / Qwen3.8-27B-Uncensored-oQ6e-mtp Like 0 Image-Text-to-Text MLX Safetensors English Chinese qwen3_5 oq quantized abliterated qwen qwen3 qwen3.8 uncensored ai-red-team red-teaming bf16 post-training fine-tuning vision-language function-calling reasoning mtp conversational 6-bit Model card FilesFiles and versions xet Community Deploy ..."
+    },
+    {
+      "title": "ThinkingCap-Qwen3.8-27B: the same answers, 37% less thinking",
+      "url": "https://bottlecapai.com/post/thinkingcap-qwen3-8-27b/",
+      "snippet": "The second model in our ThinkingCap series. We took Qwen3.8-27B and cut how much it thinks, without changing the quality of the answers."
+    },
+    {
+      "title": "BottleCap AI Releases ThinkingCap-Qwen3.8-27B: 37.2% Fewer Thinking ...",
+      "url": "https://www.marktechpost.com/2026/09/24/bottlecap-ai-releases-thinkingcap-qwen3-8-27b-37-2-fewer-thinking-tokens-at-a-0-86pp-accuracy-cost/",
+      "snippet": "BottleCap AI has released ThinkingCap-Qwen3.8-27B, the second model in its ThinkingCap series. It is a fine-tune of the Qwen team&#x27;s Qwen3.8-27B with one narrow goal: shorter reasoning traces. Across 12 benchmarks, it spends 37.2% fewer thinking tokens on average. Macro-average accuracy moves from ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "beshkenadze/nemotron-3-diarization-onnx",
+  "slug": "beshkenadze-nemotron-3-diarization-onnx",
+  "author": "beshkenadze",
+  "url": "https://huggingface.co/beshkenadze/nemotron-3-diarization-onnx",
+  "created_at": "2026-09-25T16:27:00.000Z",
+  "updated_at": "2026-09-25T16:27:13.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "speaker-diarization",
+    "streaming-sortformer",
+    "directml",
+    "voice-activity-detection",
+    "base_model:nvidia/Nemotron-3-Diarization",
+    "base_model:quantized:nvidia/Nemotron-3-Diarization",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 400602254,
+  "storage_human": "401 MB",
+  "base_model": "nvidia/Nemotron-3-Diarization",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nemotron 3 Diarization: Open Model, 8 Speakers, 14.72% DER - explainx.ai",
+      "url": "https://www.explainx.ai/blog/nvidia-nemotron-3-diarization-open-weight-eight-speakers-2026",
+      "snippet": "NVIDIA&#x27;s Nemotron 3 Diarization is a 100M open model that tracks up to eight overlapping speakers at 14.72% DER. Latency modes, license and how to use it."
+    },
+    {
+      "title": "nvidia/Nemotron-3-Diarization-preview · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization-preview",
+      "snippet": "Description Nemotron 3 Diarization is an open-weight streaming speaker diarization model designed to determine \"who spoke when\" in real-world audio. It supports both streaming and offline inference, handles up to eight speakers, and orders speaker outputs by each speaker&#x27;s first arrival in the input audio."
+    },
+    {
+      "title": "nvidia/Nemotron-3-Diarization-preview at main - Hugging Face",
+      "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization-preview/tree/main",
+      "snippet": "Instructions to use nvidia/Nemotron-3-Diarization-preview with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries NeMo How to use nvidia/Nemotron-3-Diarization-preview with NeMo:"
+    },
+    {
+      "title": "NVIDIA Releases Nemotron 3 Diarization Open-Weight Speaker Model - Unite.AI",
+      "url": "https://www.unite.ai/nvidia-releases-nemotron-3-diarization-open-weight-speaker-model/",
+      "snippet": "NVIDIA on September 23, 2026 released Nemotron 3 Diarization, an open-weight speaker diarization model that identifies up to eight speakers in live or recorded audio, and Baseten announced same-day serving support with b..."
+    },
+    {
+      "title": "NVIDIA Nemotron 3 Diarization Open Weights Hit Hugging Face",
+      "url": "https://ccleaks.com/news/nvidia-nemotron-3-diarization-sep-2026",
+      "snippet": "Nemotron 3 Diarization is NVIDIA&#x27;s 100M-parameter open-weight speaker diarization model on Hugging Face as nvidia/Nemotron-3-Diarization. It supports streaming and offline inference for up to eight speakers, ships under OpenMDW License Agreement version 1.1, and is the checkpoint Argmax Pro SDK 3 cites for real-time speaker recognition."
+    }
+  ]
+}

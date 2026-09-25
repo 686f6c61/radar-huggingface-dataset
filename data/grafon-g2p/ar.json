@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "grafon-g2p/ar",
+  "slug": "grafon-g2p-ar",
+  "author": "grafon-g2p",
+  "url": "https://huggingface.co/grafon-g2p/ar",
+  "created_at": "2026-09-25T16:05:58.000Z",
+  "updated_at": "2026-09-25T16:06:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "grafon",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "grafon",
+    "safetensors",
+    "g2p",
+    "phonemes",
+    "ipa",
+    "grapheme-to-phoneme",
+    "text-to-speech",
+    "ar",
+    "base_model:UBC-NLP/MARBERTv2",
+    "base_model:finetune:UBC-NLP/MARBERTv2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 197685540,
+  "parameters_human": "197.7M",
+  "storage_bytes": 395402456,
+  "storage_human": "395 MB",
+  "base_model": "UBC-NLP/MARBERTv2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards Simple, structured overviews of how an advanced AI model was designed and evaluated."
+    },
+    {
+      "title": "Graphon, the Multimodal Memory for AI",
+      "url": "https://www.graphon.ai/",
+      "snippet": "Graphon finds and connects meaningful moments, people, places and things across videos, images and text, and turns them into context, so AI can actually work."
+    },
+    {
+      "title": "Former Amazon, Meta Scientists Unveil Graphon AI, the First Pre-Model ...",
+      "url": "https://www.businesswire.com/news/home/20260514783447/en/Former-Amazon-Meta-Scientists-Unveil-Graphon-AI-the-First-Pre-Model-Intelligence-Layer-with-%248.3M-in-Seed-Funding",
+      "snippet": "Graphon AI emerged from stealth today with $8.3 million in seed funding to build a new class of AI infrastructure: a pre-model intelligence layer that captur..."
+    },
+    {
+      "title": "Data Driven Grapheme-to-Phoneme Representations for a Lexicon-Free",
+      "url": "https://arxiv.org/html/2401.10465v1",
+      "snippet": "In this paper, we propose a new mechanism to train the Grapheme-to-Phoneme model without the need of any lexicon. We use Text-to-Speech as a use-case to show the effectiveness of our G2P model. We first use unlabeled speech data to pre-train a HuBERT [15] for three iterations."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    }
+  ]
+}

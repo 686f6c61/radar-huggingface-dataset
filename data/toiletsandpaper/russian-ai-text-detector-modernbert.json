@@ -1,0 +1,253 @@
+{
+  "schema": 1,
+  "id": "toiletsandpaper/russian-ai-text-detector-modernbert",
+  "slug": "toiletsandpaper-russian-ai-text-detector-modernbert",
+  "author": "toiletsandpaper",
+  "url": "https://huggingface.co/toiletsandpaper/russian-ai-text-detector-modernbert",
+  "created_at": "2026-09-25T16:10:29.000Z",
+  "updated_at": "2026-09-25T16:46:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "onnx",
+    "modernbert",
+    "ai-text-detection",
+    "ai-generated-text-detection",
+    "machine-generated-text-detection",
+    "llm-detection",
+    "ai-detector",
+    "chatgpt-detector",
+    "ai-slop",
+    "russian",
+    "stylometry",
+    "aiw-ru",
+    "text-classification",
+    "ru",
+    "dataset:iitolstykh/LLMTrace_classification",
+    "arxiv:2509.21269",
+    "arxiv:2412.13663",
+    "base_model:deepvk/RuModernBERT-small",
+    "base_model:finetune:deepvk/RuModernBERT-small",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 175696586,
+  "storage_human": "176 MB",
+  "base_model": "deepvk/RuModernBERT-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Accuracy",
+      "value": 0.962
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC",
+      "value": 0.993
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Macro F1",
+      "value": 0.9607
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Precision (AI)",
+      "value": 0.97
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Recall (AI)",
+      "value": 0.9657
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "F1 (AI)",
+      "value": 0.9678
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Precision (human)",
+      "value": 0.9505
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Recall (human)",
+      "value": 0.9566
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "F1 (human)",
+      "value": 0.9535
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC (human vs generated from scratch)",
+      "value": 0.9938
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Accuracy (article)",
+      "value": 0.9657
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC (article)",
+      "value": 0.9953
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Accuracy (factual)",
+      "value": 0.9349
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC (factual)",
+      "value": 0.9841
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Accuracy (news)",
+      "value": 0.9569
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC (news)",
+      "value": 0.9922
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Accuracy (poetry)",
+      "value": 0.9578
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC (poetry)",
+      "value": 0.9908
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Accuracy (question)",
+      "value": 0.9724
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC (question)",
+      "value": 0.9951
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Accuracy (review)",
+      "value": 0.9743
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC (review)",
+      "value": 0.9954
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Accuracy (short_form)",
+      "value": 0.9409
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC (short_form)",
+      "value": 0.985
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Accuracy (story)",
+      "value": 0.9668
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC (story)",
+      "value": 0.9948
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "Accuracy",
+      "value": 0.963
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "LLMTrace classification (ru)",
+      "metric": "ROC AUC",
+      "value": 0.9935
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub.Read more"
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …Read more"
+    },
+    {
+      "title": "r/funny - Reddit",
+      "url": "https://www.reddit.com/r/funny/",
+      "snippet": "r/funny: Reddit's largest humor depository No personally identifying information, including anything hosted on platforms making that …Read more"
+    },
+    {
+      "title": "chatgpt-api · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chatgpt-api",
+      "snippet": "3 days ago · ChatGPT API is a RESTful API that provides a simple interface to interact with OpenAI’s GPT-3 and GPT-Neo language …Read more"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/signin",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …Read more"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "vpakarinen/Lumo-1-1.5B-Chat-V2",
+  "slug": "vpakarinen-lumo-1-1-5b-chat-v2",
+  "author": "vpakarinen",
+  "url": "https://huggingface.co/vpakarinen/Lumo-1-1.5B-Chat-V2",
+  "created_at": "2026-09-25T09:02:27.000Z",
+  "updated_at": "2026-09-25T14:07:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "apertus",
+    "fine-tuned",
+    "conversational",
+    "en",
+    "base_model:swiss-ai/Apertus-v1.1-1.5B-Instruct",
+    "base_model:finetune:swiss-ai/Apertus-v1.1-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1510019104,
+  "parameters_human": "1.51B",
+  "storage_bytes": 3037147161,
+  "storage_human": "3.0 GB",
+  "base_model": "swiss-ai/Apertus-v1.1-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lumo: Privacy-first AI assistant where chats stay confidential",
+      "url": "https://lumo.proton.me/",
+      "snippet": "An AI assistant should empower you, not exploit you for your data. That&#x27;s why we built Lumo: To bring you all the benefits of AI, without compromising your privacy and data security."
+    },
+    {
+      "title": "Lumo (AI assistant) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lumo_(AI_assistant)",
+      "snippet": "Lumo is an online chatbot and personal assistant developed by Proton AG. The service saves chat histories in encrypted storage, and states that it does not employ user data for model training."
+    },
+    {
+      "title": "[2512.08580] Mind to Hand: Purposeful Robotic Control via Embodied ...",
+      "url": "https://arxiv.org/abs/2512.08580",
+      "snippet": "Humans act with context and intention, with reasoning playing a central role. While internet-scale data has enabled broad reasoning capabilities in AI systems, grounding these abilities in physical action remains a major challenge. We introduce Lumo-1, a generalist vision-language-action (VLA) model that unifies robot reasoning (\"mind\") with robot action (\"hand\"). Our approach builds upon the ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 507 AI models across 483 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Lumo models and reasoning modes - Proton",
+      "url": "https://proton.me/support/lumo-models",
+      "snippet": "Lumo AI has three model types (Lumo 2.0 Lite, Lumo 2.0 Max, and Apertus 1.5) and two reasoning modes (Fast and Thinking). Understanding each model and mode helps you get the most useful responses for any type of task. In this article, we&#x27;ll cover: Lumo models explained Lumo reasoning modes explained Selecting the best model and mode for your task How to change Lumo&#x27;s mode or model Change ..."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "id": "Tamkimd/tamev-medium-qwen3.5-0.8b",
+  "slug": "tamkimd-tamev-medium-qwen3-5-0-8b",
+  "author": "Tamkimd",
+  "url": "https://huggingface.co/Tamkimd/tamev-medium-qwen3.5-0.8b",
+  "created_at": "2026-09-25T14:56:54.000Z",
+  "updated_at": "2026-09-25T15:06:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tamev",
+    "decision-model",
+    "decision-intelligence",
+    "system-one",
+    "typesafe",
+    "permutation-invariant",
+    "zero-drift",
+    "calibration",
+    "brier-score",
+    "ece",
+    "llm-router",
+    "agent-routing",
+    "zero-shot",
+    "edge-ai",
+    "calibrated-probabilities",
+    "typesafe-ai",
+    "onnx",
+    "coreml",
+    "mlx",
+    "text-classification",
+    "custom_code",
+    "en",
+    "multilingual",
+    "dataset:legacy-datasets/banking77",
+    "dataset:google/boolq",
+    "dataset:fancyzhx/ag_news",
+    "dataset:nyu-mll/multi_nli",
+    "dataset:SetFit/sst5",
+    "dataset:Yelp/yelp_review_full",
+    "dataset:CogComp/trec",
+    "dataset:fancyzhx/dbpedia_14",
+    "dataset:SetFit/amazon_reviews_multi_en",
+    "dataset:stanfordnlp/imdb",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 524800,
+  "parameters_human": "524800",
+  "storage_bytes": 22088993,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "System One Decision Intelligence",
+      "dataset": "TAMEV Multi-Domain Benchmark Suite",
+      "metric": "Expected Calibration Error (ECE)",
+      "value": 0.083
+    },
+    {
+      "task": "System One Decision Intelligence",
+      "dataset": "TAMEV Multi-Domain Benchmark Suite",
+      "metric": "Brier Calibration Score",
+      "value": 0.2159
+    }
+  ],
+  "sources": [
+    {
+      "title": "Running AI on Your Laptop: A Step-by-Step Guide to Qwen3.5:0.8B - Medium",
+      "url": "https://medium.com/@muhibuddin12/running-ai-on-your-laptop-a-step-by-step-guide-to-qwen3-5-0-8b-88d0bb56e368",
+      "snippet": "The 0.8B model supports a decent context window (typically 32k for Qwen3.5 family), but memory fills up fast. Implement a sliding window in your code if processing long documents."
+    },
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen/Qwen3.5-0.8B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B",
+      "snippet": "Qwen3.5-0.8B is the smallest member of the Qwen3.5 family — same hybrid gated delta networks architecture and 262K context, at a size suited to edge devices or as a draft model for speculative decoding with larger Qwen3.5 checkpoints."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_5_0_8b/README.md ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_5_0_8b/README.md",
+      "snippet": "Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction-following capabilities over Qwen3. This is based on the implementation of Qwen3.5-0.8B found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here ..."
+    },
+    {
+      "title": "Qwen3.5 0.8B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-5-0-8b/",
+      "snippet": "Qwen3.5 0.8B is the smallest vision-language model in the Qwen3.5 lineup. It is designed for lightweight local multimodal inference, fast iteration, and efficient Jetson deployment."
+    }
+  ]
+}

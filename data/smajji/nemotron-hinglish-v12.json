@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "smajji/nemotron-hinglish-v12",
+  "slug": "smajji-nemotron-hinglish-v12",
+  "author": "smajji",
+  "url": "https://huggingface.co/smajji/nemotron-hinglish-v12",
+  "created_at": "2026-09-25T15:08:49.000Z",
+  "updated_at": "2026-09-25T15:09:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "nemo",
+  "languages": [],
+  "tags": [
+    "nemo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2553098240,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smajji/nemotron-hinglish-v6 · Hugging Face",
+      "url": "https://huggingface.co/smajji/nemotron-hinglish-v6",
+      "snippet": "Nemotron Hinglish v6 Nemotron-Hinglish-v6 is a fine-tune of nvidia/nemotron-3.5-asr-streaming-.6b specialized for English, Hindi and Hinglish (Hindi-English code-switching), built for cache-aware streaming ASR. It continues from the v5 checkpoint (the Devanagari-latch fix is preserved) and fine-tunes further on the same blended corpus with a cosne (LR) schedule, improving overall convergence ..."
+    },
+    {
+      "title": "smajji/nemotron-hinglish-v5 · Hugging Face",
+      "url": "https://huggingface.co/smajji/nemotron-hinglish-v5",
+      "snippet": "Nemotron Hinglish v5 Nemotron-Hinglish-v5 is a fine-tune of nvidia/nemotron-3.5-asr-streaming-.6b specialized for English, Hindi and Hinglish (Hindi-English code-switching), built for cache-aware streaming ASR, with improved number / phone-number / digit accuracy."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "GitHub - NVIDIA-NeMo/Nemotron: Developer Asset Hub for NVIDIA Nemotron ...",
+      "url": "https://github.com/NVIDIA-NeMo/Nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open, high-efficiency multimodal models purpose-built for agentic AI. Model Tiers: Nano — Optimized for edge and PC deployments Lightning — Fast, high-volume task execution for long-running agents Super — Single GPU deployment with highest throughput Ultra — Multi-GPU datacenter applications Nemotron models excel at coding, math, scientific reasoning ..."
+    },
+    {
+      "title": "Nemotron - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nemotron",
+      "snippet": "Nemotron is a family of artificial intelligence models developed by Nvidia. It includes large language models and multimodal models intended for reasoning, computer programming, information retrieval and agentic AI applications."
+    }
+  ]
+}

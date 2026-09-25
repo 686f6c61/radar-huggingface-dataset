@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "GauravDevi/dino-experiment",
+  "slug": "gauravdevi-dino-experiment",
+  "author": "GauravDevi",
+  "url": "https://huggingface.co/GauravDevi/dino-experiment",
+  "created_at": "2026-09-25T13:18:42.000Z",
+  "updated_at": "2026-09-25T13:18:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/dino: PyTorch code for Vision Transformers ...",
+      "url": "https://github.com/facebookresearch/dino",
+      "snippet": "PyTorch code for Vision Transformers training with the Self-Supervised learning method DINO - facebookresearch/dino"
+    },
+    {
+      "title": "DINO (computer vision) - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/dino_model",
+      "snippet": "DINO (self- DI stillation with NO labels) is a family of self-supervised learning methods for computer vision from Meta AI that trains Vision Transformers (ViTs) on unlabeled images and produces general-purpose visual features rivaling or surpassing those learned with human-labeled supervision [1] [2]."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=dino",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GenDino Game",
+      "url": "https://gendino.org/",
+      "snippet": "GenDino is an experimental AI remix of the classic Chrome Dino game. Play online! Available for an unlimited time."
+    },
+    {
+      "title": "DINOv3 - ai.meta.com",
+      "url": "https://ai.meta.com/research/dinov3/",
+      "snippet": "DINOv3 marks a new milestone in self-supervised training at scale. It builds upon the scaling progress of DINOv2, further increasing the model size x6, and training data x12. DINO Initial research proof-of-concept, with 80M-parameter models trained on 1M images. Read the research paper Download the model"
+    }
+  ]
+}

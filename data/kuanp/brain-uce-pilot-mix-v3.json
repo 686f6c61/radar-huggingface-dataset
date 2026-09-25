@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "KuanP/brain-uce-pilot-mix-v3",
+  "slug": "kuanp-brain-uce-pilot-mix-v3",
+  "author": "KuanP",
+  "url": "https://huggingface.co/KuanP/brain-uce-pilot-mix-v3",
+  "created_at": "2026-09-25T17:00:56.000Z",
+  "updated_at": "2026-09-25T17:01:54.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "uce_suite",
+  "languages": [],
+  "tags": [
+    "uce_suite",
+    "safetensors",
+    "uce",
+    "single-cell",
+    "brain",
+    "multi-species",
+    "foundation-model",
+    "feature-extraction",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1393937921,
+  "parameters_human": "1.39B",
+  "storage_bytes": 5599067166,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

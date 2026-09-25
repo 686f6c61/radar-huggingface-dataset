@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Orion-9B-Agentic-CodeCore-Merge-GGUF",
+  "slug": "mradermacher-orion-9b-agentic-codecore-merge-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Orion-9B-Agentic-CodeCore-Merge-GGUF",
+  "created_at": "2026-09-25T16:42:35.000Z",
+  "updated_at": "2026-09-25T16:56:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "pytorch",
+    "omnimergekit",
+    "merge",
+    "qwen3_5",
+    "reasoning",
+    "chain-of-thought",
+    "sft",
+    "agent",
+    "tool-use",
+    "function-calling",
+    "coder",
+    "en",
+    "base_model:prithivMLmods/Orion-9B-Agentic-CodeCore-Merge",
+    "base_model:quantized:prithivMLmods/Orion-9B-Agentic-CodeCore-Merge",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 39139307712,
+  "storage_human": "39.1 GB",
+  "base_model": "prithivMLmods/Orion-9B-Agentic-CodeCore-Merge",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Moms telegram Group Links - JioSaavn",
+      "url": "https://www.jiosaavn.com/shows/moms-telegram-group-links/1/MNh-VLUZk14_",
+      "snippet": "Nov 7, 2024 · Listen to Moms telegram Group Links, a English podcast exclusively on JioSaavn. In today's fast-paced world, moms …"
+    },
+    {
+      "title": "Telegram: Join Group Chat",
+      "url": "https://t.me/+_AqyQ14NvpxhNzFh",
+      "snippet": "Download You are invited to a group chaton Telegram. Click to join: Join Group"
+    },
+    {
+      "title": "Telegram Group: Find Channels, Groups & bot Links",
+      "url": "https://telegram-group.com/en/",
+      "snippet": "Telegram Group Is 1# and largest Telegram aggregator in the world! Telegram groups, bots and channels Links Search or Category, …"
+    },
+    {
+      "title": "Adult Telegram Group 18+ Lists (September 2026)",
+      "url": "https://telegramguide.com/telegram-groups-18/",
+      "snippet": "Feb 14, 2026 · If you are looking for Telegram Groups 18+ 2026, then here we have shared the complete list of Best Adult Telegram …"
+    },
+    {
+      "title": "Telegram contact with @momlover @momlover",
+      "url": "https://telegram.im/@momlover",
+      "snippet": "Telegram contact with @momlover @momlover ... @momlover"
+    }
+  ]
+}

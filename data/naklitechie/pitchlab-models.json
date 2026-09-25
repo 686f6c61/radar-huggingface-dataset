@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "naklitechie/pitchlab-models",
+  "slug": "naklitechie-pitchlab-models",
+  "author": "naklitechie",
+  "url": "https://huggingface.co/naklitechie/pitchlab-models",
+  "created_at": "2026-09-25T16:14:28.000Z",
+  "updated_at": "2026-09-25T17:03:25.000Z",
+  "license": "mixed-see-readme",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "gguf",
+    "lfm2",
+    "gemma",
+    "qwen3",
+    "shopping-assistant",
+    "base_model:LiquidAI/LFM2.5-230M",
+    "base_model:adapter:LiquidAI/LFM2.5-230M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 980055376,
+  "storage_human": "980 MB",
+  "base_model": "LiquidAI/LFM2.5-230M, google/gemma-4-E4B, google/gemma-4-12B-it-qat-q4_0-unquantized, Qwen/Qwen3-4B-Instruct-2507, Qwen/Qwen3-8B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "naklitechie (Chirag Patnaik) - Hugging Face",
+      "url": "https://huggingface.co/naklitechie/datasets",
+      "snippet": "naklitechie Follow 0 followers · 7 following https://www.chiragpatnaik.com naklitechie naklitechie"
+    },
+    {
+      "title": "naklitechie (Chirag Patnaik) - Hugging Face",
+      "url": "https://huggingface.co/naklitechie",
+      "snippet": "User profile of Chirag Patnaik on Hugging Face"
+    },
+    {
+      "title": "NakliTechie (Chirag Patnaik) · GitHub",
+      "url": "https://github.com/naklitechie",
+      "snippet": "All projects · chiragpatnaik.com · naklitechie.com · Substack My current focus is applied AI — training small language models and distributed inference, getting capable models to fine-tune and serve on the hardware you actually have."
+    },
+    {
+      "title": "Chirag Patnaik | NakliTechie",
+      "url": "https://naklitechie.github.io/",
+      "snippet": "Chirag Patnaik @NakliTechie My current focus is applied AI — training small language models and distributed inference, getting capable models to fine-tune and serve on the hardware you actually have. I&#x27;m co-founder of Prashnam, India&#x27;s first AI-powered telephonic opinion platform — its survey data has been cited by The Economist and The New York Times — and I lead product and technology ..."
+    },
+    {
+      "title": "NakliTechie",
+      "url": "https://naklitechie.com/",
+      "snippet": "You need an idea and the bias for action to see it through. Anyone can build."
+    }
+  ]
+}

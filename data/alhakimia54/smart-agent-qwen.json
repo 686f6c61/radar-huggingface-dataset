@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "alhakimia54/Smart-Agent-Qwen",
+  "slug": "alhakimia54-smart-agent-qwen",
+  "author": "alhakimia54",
+  "url": "https://huggingface.co/alhakimia54/Smart-Agent-Qwen",
+  "created_at": "2026-09-25T14:07:14.000Z",
+  "updated_at": "2026-09-25T14:13:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4889082942,
+  "storage_human": "4.9 GB",
+  "base_model": "unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen Agent Documentation | Qwen Agent - qwenlm.github.io",
+      "url": "https://qwenlm.github.io/Qwen-Agent/",
+      "snippet": "Documentation for Qwen Agent: an open-source AI agent framework. Learn installation, agent usage, tool integration, LLM configuration, and best practices."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Agent: Agent framework and applications built upon ...",
+      "url": "https://github.com/QwenLM/Qwen-Agent",
+      "snippet": "Qwen-Agent is a framework for developing LLM applications based on the instruction following, tool usage, planning, and memory capabilities of Qwen. It also comes with example applications such as Browser Assistant, Code Interpreter, and Custom Assistant. Now Qwen-Agent plays as the backend of Qwen Chat."
+    },
+    {
+      "title": "GitHub - worldart/QwenLM_Qwen-Agent: Agent framework and applications ...",
+      "url": "https://github.com/worldart/QwenLM_Qwen-Agent",
+      "snippet": "中文 ｜ English Qwen-Agent is a framework for developing LLM applications based on the instruction following, tool usage, planning, and memory capabilities of Qwen. It also comes with example applications such as Browser Assistant, Code Interpreter, and Custom Assistant."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "alhakimia54/Kashef-Qwen-2.5-3B · Hugging Face",
+      "url": "https://huggingface.co/alhakimia54/Kashef-Qwen-2.5-3B",
+      "snippet": "alhakimia54 / Kashef-Qwen-2.5-3B Like 0 Transformers Safetensors English text-generation-inference unsloth qwen2 trl License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

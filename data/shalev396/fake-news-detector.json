@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "shalev396/fake-news-detector",
+  "slug": "shalev396-fake-news-detector",
+  "author": "shalev396",
+  "url": "https://huggingface.co/shalev396/fake-news-detector",
+  "created_at": "2026-09-25T14:30:22.000Z",
+  "updated_at": "2026-09-25T12:16:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "ml-lab",
+    "tensorflow",
+    "text-classification",
+    "fake-news-detection",
+    "lstm",
+    "rnn",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8655176,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ISOT Fake and Real News (Kaggle)",
+      "metric": "accuracy",
+      "value": 0.985
+    },
+    {
+      "task": null,
+      "dataset": "ISOT Fake and Real News (Kaggle)",
+      "metric": "f1",
+      "value": 0.984915
+    },
+    {
+      "task": null,
+      "dataset": "ISOT Fake and Real News (Kaggle)",
+      "metric": "precision",
+      "value": 0.99056
+    },
+    {
+      "task": null,
+      "dataset": "ISOT Fake and Real News (Kaggle)",
+      "metric": "recall",
+      "value": 0.979333
+    },
+    {
+      "task": null,
+      "dataset": "ISOT Fake and Real News (Kaggle)",
+      "metric": "roc_auc",
+      "value": 0.998659
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fake News Detection Project - GitHub",
+      "url": "https://github.com/kapilsinghnegi/Fake-News-Detection",
+      "snippet": "The project aims to develop a machine-learning model capable of identifying and classifying any news article as fake or not. The distribution of fake news can potentially have highly adverse effects on people and culture. This project involves building and training a model to classify news as fake ..."
+    },
+    {
+      "title": "GitHub - Shabar-Shariff/fake-news-detector: AI-powered Fake News ...",
+      "url": "https://github.com/Shabar-Shariff/fake-news-detector",
+      "snippet": "An advanced full-stack AI application that detects whether a news article is REAL or FAKE using Natural Language Processing (NLP) and the BERT Transformer Model."
+    },
+    {
+      "title": "Fake News Patterns Detector",
+      "url": "http://fakenews.mit.edu/",
+      "snippet": "For more information about this detector, read this MIT news story or take a look at our original manuscript, \" The Language of Fake News: Opening the Black-Box of Deep Learning Based Detectors,\" which we presented at a workshop called \"AI for Social Good\" at the 32nd Conference on Neural Information Processing Systems (NIPS) in Montreal, Canada."
+    },
+    {
+      "title": "Fake News Detector - Free AI-Powered Fact Check | BiasBreak",
+      "url": "https://biasbreak.com/fake-news-detector/",
+      "snippet": "Instantly detect fake news with BiasBreak&#x27;s AI-powered tool. Paste any article or URL to get a Trust Score, bias analysis, and credibility verdict in seconds. Free to use."
+    },
+    {
+      "title": "FakeNewsDetector - a Hugging Face Space by DevNumb",
+      "url": "https://huggingface.co/spaces/DevNumb/fakeNewsDetector",
+      "snippet": "This app analyzes news articles by extracting text from a URL and using a DistilRoBERTa model to determine if the article is fake. It checks the source credibility and looks for fake news indicator..."
+    }
+  ]
+}

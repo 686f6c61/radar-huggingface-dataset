@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "42ailab/Intern-S2-397B-GGUF",
+  "slug": "42ailab-intern-s2-397b-gguf",
+  "author": "42ailab",
+  "url": "https://huggingface.co/42ailab/Intern-S2-397B-GGUF",
+  "created_at": "2026-09-24T16:35:21.000Z",
+  "updated_at": "2026-09-25T02:15:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "science",
+    "moe",
+    "llama.cpp",
+    "42model",
+    "text-generation",
+    "zh",
+    "en",
+    "arxiv:2608.13505",
+    "base_model:internlm/Intern-S2-397B",
+    "base_model:quantized:internlm/Intern-S2-397B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 402967084288,
+  "parameters_human": "402.97B",
+  "storage_bytes": 98095766080,
+  "storage_human": "98.1 GB",
+  "base_model": "internlm/Intern-S2-397B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Syrian transitional government - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Syrian_transitional_government",
+      "snippet": "France: France's Ministry for Europe and Foreign Affairs said that France welcomes the formation of a new government in Syria, …Read more"
+    },
+    {
+      "title": "Government of Syria - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Government_of_Syria",
+      "snippet": "The government of Syria is under a unitary presidential system and, as of 2026, is in a provisional period governed by a transitional …"
+    },
+    {
+      "title": "Syria to hike $25-a-month govt salaries by 400% from February",
+      "url": "https://www.gulftoday.ae/news/2025/01/31/syria-to-hike-25-a-month-govt-salaries-by-400-from-february",
+      "snippet": "Jan 31, 2025 · The government has announced a 400% increase to state salaries, currently around $25 a month, starting February. It …"
+    },
+    {
+      "title": "Breakdown of Public Revenues and Expenditures in Syria (2025)",
+      "url": "https://syria-report.com/breakdown-of-public-revenues-and-expenditures-in-syria-2025/",
+      "snippet": "Apr 14, 2026 · The tables below show the breakdown of public revenues and public expenditures in Syria for the year 2025."
+    },
+    {
+      "title": "Syria in 2026: Interim government and Kurdish integration",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-10430/",
+      "snippet": "Sep 2, 2026 · This briefing sets out the nature of Syria’s transitional government, the meeting of the interim parliament in June 2026, …"
+    }
+  ]
+}

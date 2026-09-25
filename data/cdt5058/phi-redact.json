@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "CDT5058/phi-redact",
+  "slug": "cdt5058-phi-redact",
+  "author": "CDT5058",
+  "url": "https://huggingface.co/CDT5058/phi-redact",
+  "created_at": "2026-09-25T15:30:30.000Z",
+  "updated_at": "2026-09-25T15:30:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "named-entity-recognition",
+    "pii",
+    "phi",
+    "redaction",
+    "de-identification",
+    "ner",
+    "knowledge-distillation",
+    "on-device",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11135865,
+  "parameters_human": "11.1M",
+  "storage_bytes": 267478586,
+  "storage_human": "267 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - DilawarShafiq/phi-redactor: HIPAA-native PHI redaction proxy ...",
+      "url": "https://github.com/DilawarShafiq/phi-redactor",
+      "snippet": "phi-redactor is an open-source, drop-in PHI masking proxy that sits between your healthcare AI applications and LLM providers (OpenAI, Anthropic). It automatically detects all 18 HIPAA PHI identifier categories and replaces them with synthetic tokens before the request leaves your network — then ..."
+    },
+    {
+      "title": "GitHub - philterd/phileas: The open source PII and PHI redaction and de ...",
+      "url": "https://github.com/philterd/phileas",
+      "snippet": "Phileas is a Java library that finds and redacts PII, PHI, and other sensitive information in text and PDF documents. Give it text and a policy, and it locates sensitive values such as names, ages, addresses, account numbers, and dates, then transforms each one the way the policy says: redact it, replace it, encrypt it, anonymize it, and more."
+    },
+    {
+      "title": "Open Source PHI De-Identification: A Technical Review",
+      "url": "https://intuitionlabs.ai/articles/open-source-phi-de-identification-tools",
+      "snippet": "Open-source PHI scrubbing and de-identification tools are now a central part of the healthcare AI ecosystem. They bridge the gap between privacy regulation and the need for research access to clinical text."
+    },
+    {
+      "title": "Using an LLM or Pattern-based Rules for PII/PHI Redaction",
+      "url": "https://philterd.ai/guides/using-an-llm-or-pattern-based-rules-for-pii-phi-redaction/",
+      "snippet": "Comparing the two main approaches to redacting PII and PHI: an LLM versus pattern-based rules. How each handles accuracy, cost, and GDPR or HIPAA compliance."
+    },
+    {
+      "title": "PII & PHI Redaction Software, Self-Hosted & Open Source",
+      "url": "https://philterd.ai/",
+      "snippet": "Redact PII and PHI without sending data to a third-party API. Free, open source, self-hosted, and HIPAA, GDPR, and CCPA ready. Redacting PII and PHI since 2017."
+    }
+  ]
+}

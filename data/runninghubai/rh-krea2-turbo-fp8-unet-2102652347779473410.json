@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-krea2-turbo-fp8-unet-2102652347779473410",
+  "slug": "runninghubai-rh-krea2-turbo-fp8-unet-2102652347779473410",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-fp8-unet-2102652347779473410",
+  "created_at": "2026-09-25T15:42:50.000Z",
+  "updated_at": "2026-09-25T16:43:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13142628962,
+  "storage_human": "13.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-krea2-turbo-fp8-unet-2093697750994079746 · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-fp8-unet-2093697750994079746",
+      "snippet": "This repository provides rh-krea2-turbo-fp8-unet weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "Krea-2-Turbo-fp8 - RunningHub Stable Diffusion & Flux Unet",
+      "url": "https://www.runninghub.ai/model/public/2083871695626047490",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI/rh-krea2-turbo-fp8-unet-2102641797372690433 · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-fp8-unet-2102641797372690433",
+      "snippet": "This repository provides rh-krea2-turbo-fp8-unet weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "README.md · RunningHubAI/rh-krea2-turbo-fp8-unet at main",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-fp8-unet/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Krea-2-Turbo - RunningHub Stable Diffusion & Flux Unet",
+      "url": "https://www.runninghub.ai/model/public/2071166071213748226",
+      "snippet": "The Turbo ultra-fast distilled version features low VRAM usage, 8-step lightning-fast image generation, and strong stylistic expressiveness. It is also currently a mainstream commercial ultra-fast image generation model in the local ComfyUI ecosystem."
+    }
+  ]
+}

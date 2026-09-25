@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Hartmannsuv/mobilevit-generation-kaggle",
+  "slug": "hartmannsuv-mobilevit-generation-kaggle",
+  "author": "Hartmannsuv",
+  "url": "https://huggingface.co/Hartmannsuv/mobilevit-generation-kaggle",
+  "created_at": "2026-09-25T12:35:11.000Z",
+  "updated_at": "2026-09-25T12:35:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mobilevit - Kaggle",
+      "url": "https://www.kaggle.com/datasets/hungdaqq/mobilevit/data",
+      "snippet": "Discover what actually works in AI. Join millions of builders, researchers, and labs evaluating agents, models, and frontier technology through crowdsourced benchmarks, competitions, and hackathons."
+    },
+    {
+      "title": "MobileVIT - Kaggle",
+      "url": "https://www.kaggle.com/code/evveskov/mobilevit",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from [Private Datasource]"
+    },
+    {
+      "title": "mobilevit - Kaggle",
+      "url": "https://www.kaggle.com/models/kaggle/mobilevit",
+      "snippet": "Collection of MobileViT models."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "Find Pre-trained Models | Kaggle",
+      "url": "https://www.kaggle.com/models",
+      "snippet": "Discover and download pre-trained AI models. Use them directly in Kaggle Notebooks or integrate into your own projects."
+    }
+  ]
+}

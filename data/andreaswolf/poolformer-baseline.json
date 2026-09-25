@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "andreaswolf/poolformer-baseline",
+  "slug": "andreaswolf-poolformer-baseline",
+  "author": "andreaswolf",
+  "url": "https://huggingface.co/andreaswolf/poolformer-baseline",
+  "created_at": "2026-09-25T12:46:44.000Z",
+  "updated_at": "2026-09-25T12:46:49.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PoolFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.25.1/model_doc/poolformer",
+      "snippet": "PoolFormer Overview The PoolFormer model was proposed in MetaFormer is Actually What You Need for Vision by Sea AI Labs. Instead of designing complicated token mixer to achieve SOTA performance, the target of this work is to demonstrate the competence of transformer models largely stem from the general architecture MetaFormer. The abstract from the paper is the following: Transformers have ..."
+    },
+    {
+      "title": "danielsanski/poolformer-baseline · Hugging Face",
+      "url": "https://huggingface.co/danielsanski/poolformer-baseline",
+      "snippet": "Overview A small Poolformer implementation for Matching, packaged with an explicit configuration and an initialization checkpoint. The xlarge variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "PoolFormer · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/docs/transformers/model_doc/poolformer",
+      "snippet": "PoolFormer has a hierarchical architecture, where instead of Attention, a simple Average Pooling layer is present. All checkpoints of the model can be found on the hub. One can use PoolFormerImageProcessor to prepare images for the model. As most models, PoolFormer comes in different sizes, the details of which can be found in the table below."
+    },
+    {
+      "title": "Poolformer-baseline/README.md at main · Multi-Scale ... - GitHub",
+      "url": "https://github.com/Multi-Scale-Transformer/Poolformer-baseline/blob/main/README.md",
+      "snippet": "Contribute to Multi-Scale-Transformer/Poolformer-baseline development by creating an account on GitHub."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/poolformer.md at main ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/poolformer.md",
+      "snippet": "The PoolFormer model was proposed in MetaFormer is Actually What You Need for Vision by Sea AI Labs. Instead of designing complicated token mixer to achieve SOTA performance, the target of this work is to demonstrate the competence of transformer models largely stem from the general architecture MetaFormer. The abstract from the paper is the following: Transformers have shown great potential ..."
+    }
+  ]
+}

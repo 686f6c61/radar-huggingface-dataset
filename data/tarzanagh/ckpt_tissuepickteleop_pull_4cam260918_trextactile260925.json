@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_trextactile260925",
+  "slug": "tarzanagh-ckpt_tissuepickteleop_pull_4cam260918_trextactile260925",
+  "author": "tarzanagh",
+  "url": "https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_trextactile260925",
+  "created_at": "2026-09-25T12:45:33.000Z",
+  "updated_at": "2026-09-25T12:47:22.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3_vl",
+    "robotics",
+    "imitation-learning",
+    "bimanual",
+    "dexterous-manipulation",
+    "teleoperation",
+    "tactile",
+    "xhand1",
+    "dexmate-vega",
+    "t-rex",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8381658856,
+  "storage_human": "8.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tarzanagh/ckpt_psspteleop_pickfromscale_4cam260629-260708_gr00t3b260816 ...",
+      "url": "https://huggingface.co/tarzanagh/ckpt_psspteleop_pickfromscale_4cam260629-260708_gr00t3b260816",
+      "snippet": "Data: pick_scan_scale_place teleop, 2026-06-29 .. 2026-07-08, 4 cameras, 30 Hz. Segmentation: base-stationary windows, cut starts at the base-stop frame so each skill begins at rest (matching how the robot is handed the skill). The scale window is split at the velocity lull — the verified moment the box rests on the scale with the arms clear — giving separate place_on_scale and pick_from ..."
+    },
+    {
+      "title": "tarzanagh/ckpt_psspteleop_pickfromscale_4cam260810-260811_gr00t3b260815 ...",
+      "url": "https://huggingface.co/tarzanagh/ckpt_psspteleop_pickfromscale_4cam260810-260811_gr00t3b260815",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Checkpoint AI Models (141) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 141 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "TikTok Live Archive — Rewatch TikTok Live Streams After They End",
+      "url": "https://www.tiktoklivearchive.com/",
+      "snippet": "The replay TikTok never gives you. Open a creator, hit play, and rewatch their TikTok live — free, anonymous, no sign-up. New recordings land daily."
+    },
+    {
+      "title": "Davoud Ataee Tarzanagh",
+      "url": "https://tarzanagh.github.io/",
+      "snippet": "I am an AI Scientist at Samsung SDS Research America in Mountain View, working on Physical AI."
+    }
+  ]
+}

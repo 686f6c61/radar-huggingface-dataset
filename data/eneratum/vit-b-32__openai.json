@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "eneratum/ViT-B-32__openai",
+  "slug": "eneratum-vit-b-32__openai",
+  "author": "eneratum",
+  "url": "https://huggingface.co/eneratum/ViT-B-32__openai",
+  "created_at": "2026-09-25T12:17:45.000Z",
+  "updated_at": "2026-09-25T12:17:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "immich",
+    "clip",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2726710288,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "immich-app/ViT-B-32__openai at main - Hugging Face",
+      "url": "https://huggingface.co/immich-app/ViT-B-32__openai/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · immich-app/ViT-B-32__openai at main - Hugging Face",
+      "url": "https://huggingface.co/immich-app/ViT-B-32__openai/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ViT-B-32__openai huggingface.co api & immich-app ViT-B-32__openai ...",
+      "url": "https://www.toolify.ai/ai-model/immich-app-vit-b-32-openai",
+      "snippet": "ViT-B-32__openai is an open source model from GitHub that offers a free installation service, and any user can find ViT-B-32__openai on GitHub to install. At the same time, huggingface.co provides the effect of ViT-B-32__openai install, users can directly use ViT-B-32__openai installed effect in huggingface.co for debugging and trial. It also supports api for free installation."
+    },
+    {
+      "title": "OpenAI CLIP (ViT-B/32) - Vision-Language Embedding Model - exploreai.tools",
+      "url": "https://exploreai.tools/ai-models/openai-clip-vit-b-32",
+      "snippet": "OpenAI CLIP (ViT-B/32) is a vision-language model that generates embeddings for images and text, enabling similarity, retrieval, and ranking tasks without task-specific training."
+    },
+    {
+      "title": "ViT-B-32__openai | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/vit-b-32openai/",
+      "snippet": "CLIP-based vision transformer model (ViT-B-32) from OpenAI, optimized for Immich photo library with separated visual and text encoders in ONNX format."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "roskosmos19/Coral-Router",
+  "slug": "roskosmos19-coral-router",
+  "author": "roskosmos19",
+  "url": "https://huggingface.co/roskosmos19/Coral-Router",
+  "created_at": "2026-09-25T16:45:26.000Z",
+  "updated_at": "2026-09-25T16:45:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bart",
+    "zero-shot",
+    "nli",
+    "classification",
+    "Coral",
+    "zero-shot-classification",
+    "dataset:multi_nli",
+    "base_model:facebook/bart-large-mnli",
+    "base_model:finetune:facebook/bart-large-mnli",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 407344133,
+  "parameters_human": "407.3M",
+  "storage_bytes": 1629437147,
+  "storage_human": "1.6 GB",
+  "base_model": "facebook/bart-large-mnli",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "roskosmos19/Coral · Hugging Face",
+      "url": "https://huggingface.co/roskosmos19/Coral",
+      "snippet": "roskosmos19 / Coral Like 0 Zero-Shot Classification Safetensors multi_nli bart zero-shot nli classification Coral License:mit Model card FilesFiles and versions xet Community Copy to bucket new What it is good at Model Details Quick Start Using the Pipeline (recommended) Multi-label mode Manual usage How Zero-Shot Classification works Tips for ..."
+    },
+    {
+      "title": "OrcaRouter — One AI gateway: adaptive LLM routing & governance",
+      "url": "https://www.orcarouter.ai/",
+      "snippet": "One OpenAI-compatible AI gateway for production AI — adaptive routing, load balancing, guardrails, agent firewall, observability and governance across 200+ models."
+    },
+    {
+      "title": "roskosmos19 (roskosmos2012) - Hugging Face",
+      "url": "https://huggingface.co/roskosmos19/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago ... published a Space 2 days ago"
+    },
+    {
+      "title": "Ramp launches its own AI model router, called Router",
+      "url": "https://techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router/",
+      "snippet": "Ramp has launched its own AI model routing service, dubbed Router, that lets users and companies use and switch between various large language models via an API."
+    },
+    {
+      "title": "orcarouter",
+      "url": "https://ollama.com/orcarouter",
+      "snippet": "OrcaRouter.ai is an AI research and infrastructure team building secure, open, and accessible tools for AI inference, model routing, and AI security."
+    }
+  ]
+}

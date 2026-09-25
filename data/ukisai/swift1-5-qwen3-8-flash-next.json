@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ukisai/Swift1.5-Qwen3.8-Flash-Next",
+  "slug": "ukisai-swift1-5-qwen3-8-flash-next",
+  "author": "ukisai",
+  "url": "https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next",
+  "created_at": "2026-09-22T08:54:04.000Z",
+  "updated_at": "2026-09-24T16:22:00.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "qwen3_8",
+    "moe",
+    "reasoning",
+    "efficient-thinking",
+    "token-efficient",
+    "post-training",
+    "agentic",
+    "terminal-bench",
+    "conversational",
+    "dataset:ukisai/Qwen3.8-27B-multi-turn-agent-sft",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 20,
+  "downloads_30d": 57,
+  "trending_score": 20,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 360027052225,
+  "storage_human": "360.0 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ukisai/Swift-1.5-Qwen3.8-Flash-Next-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GGUF",
+      "snippet": "Swift 1.5 Qwen3.8-Flash-Next is UkisAI&#x27;s reasoning-efficient derivative of Qwen3.8-Flash-Next. It uses 63.4% fewer thinking tokens, with a 1.8x speed up while keeping the accuracy loss <1% vs base on xhigh."
+    },
+    {
+      "title": "ukisai/Swift-1.5-Qwen3.8-Flash-Next-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-NVFP4",
+      "snippet": "The base model&#x27;s terms still apply to it. Under the Qwen Community License 1.0, organizations that run a Model-as-a-Service or AI Work Assistant business need a separate license from Qwen before any commercial use, and products above 100 million monthly active users or US$20 million monthly revenue must prominently display the model name. Nothing in the Swift Open License limits your rights in ..."
+    },
+    {
+      "title": "Models - UkisAI",
+      "url": "https://ukisai.com/models",
+      "snippet": "Swift-Qwen3.8-27B Shorter thinking. Same base-model interface. Read the technical report → View on Hugging Face"
+    },
+    {
+      "title": "Run Swift-1.5-Qwen3.8-27B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/ukisai/Swift-1.5-Qwen3.8-27b",
+      "snippet": "Swift 1.5 Qwen3.8-27B is a 27 billion parameter language model developed by UkisAI, derived from Qwen3.8-27B. This model is optimized for reasoning efficiency, using 58.5% fewer \"thinking tokens\" while achieving a 0.35% higher score than its base model, resulting in a 1.95x speed-up on various tasks. It excels particularly in coding and agentic tasks, making it suitable for applications ..."
+    },
+    {
+      "title": "Swift-Qwen3.8-27B: less overthinking | UkisAI",
+      "url": "https://ukisai.com/news/introducing-swift",
+      "snippet": "Swift includes a transfer component derived from BottleCap AI&#x27;s ThinkingCap-Qwen3.6-27B. The resulting model uses the standard Qwen3.8 interface and retains text, image, and video support. Benchmark results We evaluated Qwen3.8-27B and Swift on nine benchmarks, with BF16 weights and five runs per model. All base scores come from our own ..."
+    }
+  ]
+}

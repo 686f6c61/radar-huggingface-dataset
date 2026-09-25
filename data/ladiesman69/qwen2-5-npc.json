@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "LadiesMan69/Qwen2.5-NPC",
+  "slug": "ladiesman69-qwen2-5-npc",
+  "author": "LadiesMan69",
+  "url": "https://huggingface.co/LadiesMan69/Qwen2.5-NPC",
+  "created_at": "2026-09-25T15:19:16.000Z",
+  "updated_at": "2026-09-25T15:34:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LadiesMan69/Qwen2.5-Coder-7B-FastAPI-LoRA · Hugging Face",
+      "url": "https://huggingface.co/LadiesMan69/Qwen2.5-Coder-7B-FastAPI-LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LadiesMan69/qwen2.5-tatar-lora · Hugging Face",
+      "url": "https://huggingface.co/LadiesMan69/qwen2.5-tatar-lora",
+      "snippet": "LadiesMan69 / qwen2.5-tatar-lora like 0 Text Generation Transformers Safetensors English qwen2 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen2.5: A Party of Foundation Models!",
+      "url": "https://qwen.ai/blog?id=qwen2.5",
+      "snippet": "To showcase Qwen2.5&#x27;s capabilities, we benchmark our largest open-source model, Qwen2.5-72B - a 72B-parameter dense decoder-only language model - against leading open-source models like Llama-3.1-70B and Mistral-Large-V2."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Introduction In the past three months since Qwen2&#x27;s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5."
+    },
+    {
+      "title": "QwenLM/Qwen2.5 | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen2.5",
+      "snippet": "Introduction to Qwen2.5 Relevant source files This document provides a high-level overview of the Qwen2.5 system, including its architecture, model variants, capabilities, and deployment options. It serves as an entry point for understanding the Qwen2.5 language model family developed by the Qwen Team at Alibaba Group. For detailed instructions on how to use Qwen2.5, please see Getting Started ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "lhumeau/dominozero-rd-patio-v1",
+  "slug": "lhumeau-dominozero-rd-patio-v1",
+  "author": "lhumeau",
+  "url": "https://huggingface.co/lhumeau/dominozero-rd-patio-v1",
+  "created_at": "2026-09-25T12:34:07.000Z",
+  "updated_at": "2026-09-25T13:08:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "domino",
+    "board-game",
+    "self-play",
+    "reinforcement-learning",
+    "patio-rd",
+    "spanish",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 635454,
+  "parameters_human": "635454",
+  "storage_bytes": 5237518,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "3D Warehouse",
+      "url": "https://3dwarehouse.sketchup.com/",
+      "snippet": "3D Warehouse is a website of searchable, pre-made 3D models that works seamlessly with SketchUp."
+    },
+    {
+      "title": "AI 3D Site Model Generator from Map Areas | Shapezo",
+      "url": "https://shapezo.com/",
+      "snippet": "Turn Any Map Area into an Editable 3D Site Model Generate buildings, terrain, water and vegetation from satellite and map data. Preview your site in seconds and export models for Unity, Unreal, Blender, BIM and GIS workflows."
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    },
+    {
+      "title": "MossyModels — Free YOLO and ONNX AI Models",
+      "url": "https://mossymodels.com/",
+      "snippet": "Free community library of YOLO and ONNX AI aimbot models for Fortnite, Valorant, Warzone, Apex Legends, CS2, and 40+ games. Download ONNX and PyTorch weights."
+    },
+    {
+      "title": "Hyper3D Rodin - Best AI 3D Model Generator",
+      "url": "http://hyper3d.ai/",
+      "snippet": "Meet Hyper3D, the world&#x27;s highest-quality, most controllable AI 3D model generator. Turn text prompts or images into detailed 3D assets in seconds — no 3D experience required."
+    }
+  ]
+}

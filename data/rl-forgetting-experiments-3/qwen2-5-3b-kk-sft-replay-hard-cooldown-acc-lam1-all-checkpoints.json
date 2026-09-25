@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "RL-Forgetting-Experiments-3/qwen2.5-3b-kk-sft-replay-hard-cooldown-acc-lam1-all-checkpoints",
+  "slug": "rl-forgetting-experiments-3-qwen2-5-3b-kk-sft-replay-hard-cooldown-acc-lam1-all-checkpoints",
+  "author": "RL-Forgetting-Experiments-3",
+  "url": "https://huggingface.co/RL-Forgetting-Experiments-3/qwen2.5-3b-kk-sft-replay-hard-cooldown-acc-lam1-all-checkpoints",
+  "created_at": "2026-09-25T17:09:31.000Z",
+  "updated_at": "2026-09-25T17:11:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sft",
+    "replay",
+    "knights-and-knaves",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:finetune:Qwen/Qwen2.5-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12355225928,
+  "storage_human": "12.4 GB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rocket League ®",
+      "url": "https://www.rocketleague.com/",
+      "snippet": "Sep 18, 2026 · This is Rocket League! Welcome to the high-powered hybrid of arcade-style soccer and vehicular mayhem!"
+    },
+    {
+      "title": "Le Républicain Lorrain - L'info en direct et en continu, en Lorraine ...",
+      "url": "https://c.republicain-lorrain.fr/",
+      "snippet": "Avec Le Républicain Lorrain, suivez en continu, en images et en vidéo, l'actualité en Lorraine, en France et dans le monde : faits …"
+    },
+    {
+      "title": "Rocket League Stats, Leaderboards & More! - Rocket League Tracker",
+      "url": "https://rocketleague.tracker.network/",
+      "snippet": "About our Rocket League Tracker Tracker.gg's Rocket League Stats Tracker is a Tracker Network project. Tracker.gg provides …"
+    },
+    {
+      "title": "Discord Rocket League France | RL FR — Le serveur francophone",
+      "url": "https://rocketleaguefrance.fr/",
+      "snippet": "Le Discord Rocket League France (RL FR) : trouve des coéquipiers, joue des tournois amateurs, suis les mises à jour et la boutique …"
+    },
+    {
+      "title": "Rocket League ® - Official Site",
+      "url": "https://www.rocketleague.com/rundown",
+      "snippet": "This is Rocket League! Welcome to the high-powered hybrid of arcade-style soccer and vehicular mayhem!"
+    }
+  ]
+}

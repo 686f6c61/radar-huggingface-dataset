@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "almutairi97/mobilevit-checkpoint",
+  "slug": "almutairi97-mobilevit-checkpoint",
+  "author": "almutairi97",
+  "url": "https://huggingface.co/almutairi97/mobilevit-checkpoint",
+  "created_at": "2026-09-25T01:04:45.000Z",
+  "updated_at": "2026-09-25T01:04:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Checkpoint AI Models (141) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 141 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "MobileViT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.22.0/model_doc/mobilevit",
+      "snippet": "The MobileViT model was proposed in MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer by Sachin Mehta and Mohammad Rastegari. MobileViT introduces a new layer that replaces local processing in convolutions with global processing using transformers."
+    },
+    {
+      "title": "AlamViT: A Lightweight Spatiotemporal Facial Expression Model for ...",
+      "url": "https://www.mdpi.com/2227-7390/14/18/3376",
+      "snippet": "Automated facial pain recognition could support future monitoring tools for patients who cannot reliably self-report pain. Existing approaches either neglect temporal dynamics by processing single frames or employ computationally demanding models. This paper presents AlamViT, a computationally efficient video model that integrates Swin-style windowed spatial attention into a MobileViT backbone ..."
+    },
+    {
+      "title": "[2110.02178] MobileViT: Light-weight, General-purpose, and Mobile ...",
+      "url": "https://arxiv.org/abs/2110.02178",
+      "snippet": "Towards this end, we introduce MobileViT, a light-weight and general-purpose vision transformer for mobile devices. MobileViT presents a different perspective for the global processing of information with transformers, i.e., transformers as convolutions."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/mobilevit.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/mobilevit.md",
+      "snippet": "MobileViT MobileViT is a lightweight vision transformer for mobile devices that merges CNN&#x27;s efficiency and inductive biases with transformers global context modeling. It treats transformers as convolutions, enabling global information processing without the heavy computational cost of standard ViTs."
+    }
+  ]
+}

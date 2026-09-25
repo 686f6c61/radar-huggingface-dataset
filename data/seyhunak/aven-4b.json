@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "seyhunak/aven-4b",
+  "slug": "seyhunak-aven-4b",
+  "author": "seyhunak",
+  "url": "https://huggingface.co/seyhunak/aven-4b",
+  "created_at": "2026-09-25T19:12:15.000Z",
+  "updated_at": "2026-09-25T19:23:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "decision-model",
+    "classification",
+    "lora",
+    "qwen",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275056625,
+  "storage_human": "275 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

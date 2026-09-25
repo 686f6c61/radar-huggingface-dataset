@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hin-yama/contrastive",
+  "slug": "hin-yama-contrastive",
+  "author": "hin-yama",
+  "url": "https://huggingface.co/hin-yama/contrastive",
+  "created_at": "2026-09-25T12:36:18.000Z",
+  "updated_at": "2026-09-25T12:36:22.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HIN – Communication sécurisée dans le système de santé suisse",
+      "url": "https://www.hin.ch/fr/index.cfm",
+      "snippet": "Pour les professionnels de la santé en Suisse, HIN est considéré comme la norme en matière de communication sécurisée. HIN …Read more"
+    },
+    {
+      "title": "On recherche Hin - Dofus pour les Noobs",
+      "url": "https://www.dofuspourlesnoobs.com/on-recherche-hin.html",
+      "snippet": "Tutoriel de l'avis de recherche Hin qui fait partie des avis de recherche de la dimension divine du Xélorium. Découvrez le …Read more"
+    },
+    {
+      "title": "Téléchargement & Installation de HIN Client",
+      "url": "https://www.hin.ch/fr/information/telechargement.cfm",
+      "snippet": "Die Health Info Net AG (HIN) schützt Patientendaten in der digitalen Welt. Für Gesundheitsfachpersonen in der Schweiz ist HIN der …Read more"
+    },
+    {
+      "title": "Définition de hin | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/hin",
+      "snippet": "May 15, 2024 · Définition de hin : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « hin »Read more"
+    },
+    {
+      "title": "Support - HIN Support",
+      "url": "https://support.hin.ch/fr/index.cfm",
+      "snippet": "Adhésion à HIN Réponses aux questions fréquentes sur l’adhésion à HIN, les nouveautés, le processus de commande et les …Read more"
+    }
+  ]
+}

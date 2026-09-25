@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "rayss868123/Qwen3-0.6B-heretic-abliterated-uncensored",
+  "slug": "rayss868123-qwen3-0-6b-heretic-abliterated-uncensored",
+  "author": "rayss868123",
+  "url": "https://huggingface.co/rayss868123/Qwen3-0.6B-heretic-abliterated-uncensored",
+  "created_at": "2026-09-25T01:01:09.000Z",
+  "updated_at": "2026-09-25T01:01:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "finetune",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557918,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-0.6B-heretic-abliterated-uncensored - Hugging Face",
+      "url": "https://huggingface.co/rayss868123/Qwen3-0.6B-heretic-abliterated-uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 0.6B Heretic Abliterated Uncensored - llmrun.dev",
+      "url": "https://llmrun.dev/model/davidau-qwen3-0-6b-heretic-abliterated-uncensored",
+      "snippet": "Qwen3 0.6B Heretic Abliterated Uncensored — Hardware Requirements & GPU Compatibility Chat Qwen3 0.6B Heretic Abliterated Uncensored is a 596M-parameter open language model from DavidAU in the Qwen 3 family. It supports a context window of up to 40,960 tokens. At Q4_K_M it needs about 0.78 GB of VRAM — see which GPUs and Macs can run it below."
+    },
+    {
+      "title": "Qwen3-0.6B-heretic-abliterated-uncensored - Hugging Face",
+      "url": "https://huggingface.co/DavidAU/Qwen3-0.6B-heretic-abliterated-uncensored/blob/main/README.md",
+      "snippet": "Without these added directive (s), the content can be \"bland\" by comparison to an \"uncensored model\" or model trained on uncensored content. Roughly, the model tries to generate the content but the \"default\" setting (s) are so \"tame\" it needs a push to generate at expected graphic, cursing or explicit levels."
+    },
+    {
+      "title": "DavidAU/Qwen3-0.6B-heretic-abliterated-uncensored",
+      "url": "https://featherless.ai/models/DavidAU/Qwen3-0.6B-heretic-abliterated-uncensored",
+      "snippet": "DavidAU/Qwen3-.6B-heretic-abliterated-uncensored is a 0.8 billion parameter Qwen3-based language model, uncensored using the Heretic v1.0.1 method. It achieves a refusal rate of 6/100 and a KL divergence of 0.00, indicating minimal damage to the model&#x27;s original state while significantly reducing censorship. This model is primarily designed for users seeking a less restrictive AI for content ..."
+    },
+    {
+      "title": "(anima text encoder) Qwen3-0.6B-heretic-abliterated-uncensored",
+      "url": "https://civitai.com/models/2598886/anima-text-encoder-qwen3-06b-heretic-abliterated-uncensored",
+      "snippet": "It is being used more like a semantic prompt interpreter: the text is converted into conditioning information that the image model then uses. Because of that, the benefit of using an abliterated model seems questionable at best."
+    }
+  ]
+}

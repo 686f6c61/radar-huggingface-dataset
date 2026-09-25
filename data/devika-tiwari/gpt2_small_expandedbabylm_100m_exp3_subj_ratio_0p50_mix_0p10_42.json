@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p10_42",
+  "slug": "devika-tiwari-gpt2_small_expandedbabylm_100m_exp3_subj_ratio_0p50_mix_0p10_42",
+  "author": "devika-tiwari",
+  "url": "https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p10_42",
+  "created_at": "2026-09-24T23:58:51.000Z",
+  "updated_at": "2026-09-25T03:36:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "gpt2",
+    "generated_from_trainer",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3982469993,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix ...",
+      "url": "https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p10_42",
+      "snippet": "gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p10_42 This model is a fine-tuned version of on an unknown dataset. It achieves the following results on the ..."
+    },
+    {
+      "title": "devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p25_mix ...",
+      "url": "https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p25_mix_0p50_44",
+      "snippet": "gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p25_mix_0p50_44 This model is a fine-tuned version of on an unknown dataset. It achieves the following results on the ..."
+    },
+    {
+      "title": "devika-tiwari/gpt2_small_expandedbabyLM_200M_43 • hfviewer",
+      "url": "https://hfviewer.com/devika-tiwari/gpt2_small_expandedbabyLM_200M_43",
+      "snippet": "A Qwen3.5-family multimodal text-generation model from the XORTRON Criminal Computing project, fine-tuned from a DavidAU Qwen3.6 27B Fable Fusion base as an AI-safety and alignment research experiment. An action-conditioned world model for Counter-Strike 2 that takes keyboard and mouse actions and imagines the next frames."
+    },
+    {
+      "title": "Damacol/devika-tiwari-gpt2_small_expandedbabylm_100m_adj ... - GitHub",
+      "url": "https://github.com/Damacol/devika-tiwari-gpt2_small_expandedbabylm_100m_adj_paraphrase_75percent_42",
+      "snippet": "devika-tiwari/gpt2_small_expandedbabyLM_100M_adj_paraphrase_75percent_42 - Private, Uncensored AI for Real Creators and Devs {MODEL} setup for researchers, devs, and writers."
+    },
+    {
+      "title": "gpt2_small_expandedbabyLM_100M_wh_v2_100percent_43: Model Details ...",
+      "url": "https://essamamdani.com/ai-models/hf-devika-tiwari-gpt2-small-expandedbabylm-100m-wh-v2-100percent-43",
+      "snippet": "What this model is for gpt2_small_expandedbabyLM_100M_wh_v2_100percent_43 AI model directory entry."
+    }
+  ]
+}

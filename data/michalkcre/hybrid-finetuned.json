@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "michalkcre/hybrid-finetuned",
+  "slug": "michalkcre-hybrid-finetuned",
+  "author": "michalkcre",
+  "url": "https://huggingface.co/michalkcre/hybrid-finetuned",
+  "created_at": "2026-09-25T13:11:10.000Z",
+  "updated_at": "2026-09-25T13:11:15.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "michalkcre (Michal Kowalski) - Hugging Face",
+      "url": "https://huggingface.co/michalkcre",
+      "snippet": "Recent Activity updated a model4 days ago michalkcre/model_058084448_cnn_transformer_large published a model4 days ago michalkcre/model_058084448_cnn_transformer_large View all activity"
+    },
+    {
+      "title": "michalkcre (Michal Kowalski) - Hugging Face",
+      "url": "https://huggingface.co/michalkcre/models",
+      "snippet": "None yet michalkcre&#x27;s models1 Sort: Recently updated michalkcre/model_058084448_cnn_transformer_large Updated 4 days ago System theme Company"
+    },
+    {
+      "title": "AI model fine-tuning concepts | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/ai/fine-tuning",
+      "snippet": "Learn AI model fine-tuning concepts and discover when fine-tuning can optimize your data and improve model performance. Get started with practical guidance."
+    },
+    {
+      "title": "Customize a model with fine-tuning - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning",
+      "snippet": "Learn how to fine-tune and customize Foundry models by using Python, REST APIs, or the Microsoft Foundry portal. Improve model performance with LoRA adaptation and custom datasets."
+    },
+    {
+      "title": "Hybrid Training Approaches for LLMs: Leveraging Real and Synthetic Data ...",
+      "url": "https://arxiv.org/html/2410.09168v1",
+      "snippet": "The hybrid model outperformed models trained solely on real data or those relying on prompt engineering in delivering empathy and relevance—critical components of effective AI-driven counseling."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tutuk45/satquery-grounding-qwen2.5vl-3b-merged",
+  "slug": "tutuk45-satquery-grounding-qwen2-5vl-3b-merged",
+  "author": "tutuk45",
+  "url": "https://huggingface.co/tutuk45/satquery-grounding-qwen2.5vl-3b-merged",
+  "created_at": "2026-09-25T13:32:05.000Z",
+  "updated_at": "2026-09-25T13:35:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-VL-3B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-VL-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3754622976,
+  "parameters_human": "3.75B",
+  "storage_bytes": 7520760104,
+  "storage_human": "7.5 GB",
+  "base_model": "unsloth/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-VL · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/qwen2_5_vl",
+      "snippet": "Qwen2.5-VL is a multimodal vision-language model, available in 3B, 7B, and 72B parameters, pretrained on 4.1T tokens. The model introduces window attention in the ViT encoder to accelerate training and inference, dynamic FPS sampling on the spatial and temporal dimensions for better video understanding across different sampling rates, and an upgraded MRoPE (multi-resolutional rotary positional ..."
+    },
+    {
+      "title": "Qwen/Qwen2.5-VL-3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen2.5vl:3b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5vl:3b",
+      "snippet": "In terms of smaller models, Qwen2.5-VL-7B-Instruct outperforms GPT-4o-mini in a number of tasks, and Qwen2.5-VL-3B, which is a solution for edge AI, even outperforms the 7B model of our previous version Qwen2-VL."
+    },
+    {
+      "title": "GitHub - elsawhs/qwen2.5-vl: Qwen2.5-VL is the multimodal large ...",
+      "url": "https://github.com/elsawhs/qwen2.5-vl",
+      "snippet": "Qwen2.5-VL is the multimodal large language model series developed by Qwen team, Alibaba Cloud. - elsawhs/qwen2.5-vl"
+    },
+    {
+      "title": "GitHub - kustomzone/Qwen2.5VL-docs: Qwen2.5VL explainer",
+      "url": "https://github.com/kustomzone/Qwen2.5VL-docs",
+      "snippet": "An educational exploration of the Qwen2.5-VL model, focusing on understanding model cards, implementation details, and practical applications. This project combines academic research with hands-on implementation guides and integrates with multiple inference providers for comprehensive access to the ..."
+    }
+  ]
+}

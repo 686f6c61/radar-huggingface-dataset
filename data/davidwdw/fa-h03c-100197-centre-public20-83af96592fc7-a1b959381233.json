@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-h03c-100197-centre-public20-83af96592fc7-a1b959381233",
+  "slug": "davidwdw-fa-h03c-100197-centre-public20-83af96592fc7-a1b959381233",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-h03c-100197-centre-public20-83af96592fc7-a1b959381233",
+  "created_at": "2026-09-25T19:34:12.000Z",
+  "updated_at": "2026-09-25T19:34:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95271456,
+  "storage_human": "95 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Dịch – Phiên dịch viên cá nhân ngay ... - Google Translate",
+      "url": "https://translate.google.com/intl/vi/about/",
+      "snippet": "Tìm hiểu cách sử dụng Google Dịch để dịch văn bản, lời nói, hình ảnh, tài liệu, trang web, v.v."
+    },
+    {
+      "title": "\"ترجمة Google\": مترجم شخصي على الهاتف أو الكمبيوتر",
+      "url": "https://translate.google.com/intl/ar/about/",
+      "snippet": "تعرَّف على كيفية ترجمة النصوص والكلام والصور والمستندات والمواقع الإلكترونية والمزيد باستخدام \"ترجمة Google\"."
+    },
+    {
+      "title": "Google Переводчик – ваш личный переводчик в телефоне и …",
+      "url": "https://translate.google.com/intl/ru/about/",
+      "snippet": "Google Переводчик поможет вам понимать других и выражать себя на разных языках. Переводите живую речь, текст, …"
+    },
+    {
+      "title": "Prekladač Google – osobný tlmočník v telefóne alebo počítači",
+      "url": "https://translate.google.com/intl/sk/about/",
+      "snippet": "Naučte sa prekladať text, reč, obrázky, dokumenty, weby a ďalší obsah pomocou Prekladača Google."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nkkbr/Mini-K3-1H-llama-mha-standard-v1",
+  "slug": "nkkbr-mini-k3-1h-llama-mha-standard-v1",
+  "author": "nkkbr",
+  "url": "https://huggingface.co/nkkbr/Mini-K3-1H-llama-mha-standard-v1",
+  "created_at": "2026-09-25T13:33:35.000Z",
+  "updated_at": "2026-09-25T13:33:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mini_k3",
+    "kimi-k3",
+    "pretraining",
+    "mixture-of-experts",
+    "llama-style-attention",
+    "architecture-ablation",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 979928832,
+  "parameters_human": "979.9M",
+  "storage_bytes": 1962963854,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sweetiefoxのTwitterの本垢ってどれですか？ - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10303933035",
+      "snippet": "Feb 17, 2011 · sweetie foxのTwitterの本垢ってどれですか？"
+    },
+    {
+      "title": "sweety fox : r/transadorable - Reddit",
+      "url": "https://www.reddit.com/r/transadorable/comments/13o8k8h/sweety_fox/",
+      "snippet": "May 21, 2023 · 113K subscribers in the transadorable community. Welcome to /r/transadorable, a subreddit for any trans* to post …"
+    },
+    {
+      "title": "[Self] Makima (SweetieFox) [Chainsaw Man] : r/cosplayers - Reddit",
+      "url": "https://www.reddit.com/r/cosplayers/comments/yvygy7/self_makima_sweetiefox_chainsaw_man/",
+      "snippet": "Nov 15, 2022 · 417 votes, 51 comments. 1M subscribers in the cosplayers community. This is a subreddit specifically for people who …"
+    },
+    {
+      "title": "PDF形式になっている資料を論文で引用する場合 (政府関係の資.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10231715000",
+      "snippet": "Sep 17, 2020 · PDF形式になっている資料を論文で引用する場合(政府関係の資料)、ウェブの記事として引用しなければならないの …"
+    },
+    {
+      "title": "Sweety Fox released a AI bot : r/Chatbots - Reddit",
+      "url": "https://www.reddit.com/r/Chatbots/comments/15afnc1/sweety_fox_released_a_ai_bot/",
+      "snippet": "Jul 26, 2023 · true Sweety Fox released a AI bot Any thoughts?"
+    }
+  ]
+}

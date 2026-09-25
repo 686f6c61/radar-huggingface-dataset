@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "HIT-TMG/JevEmbed-KaLM-Embedding-V2.5",
+  "slug": "hit-tmg-jevembed-kalm-embedding-v2-5",
+  "author": "HIT-TMG",
+  "url": "https://huggingface.co/HIT-TMG/JevEmbed-KaLM-Embedding-V2.5",
+  "created_at": "2026-09-25T15:26:10.000Z",
+  "updated_at": "2026-09-25T15:34:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen2",
+    "jevembed",
+    "feature-extraction",
+    "custom_code",
+    "dataset:HIT-TMG/JevEmbed-Data",
+    "base_model:KaLM-Embedding/KaLM-embedding-multilingual-mini-instruct-v2.5",
+    "base_model:merge:KaLM-Embedding/KaLM-embedding-multilingual-mini-instruct-v2.5",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 2016535825,
+  "storage_human": "2.0 GB",
+  "base_model": "KaLM-Embedding/KaLM-embedding-multilingual-mini-instruct-v2.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HIT RADIO – Les nouveaux hits d'aujourd'hui !",
+      "url": "http://www.hitradio-fr.fr/",
+      "snippet": "Le site officiel de Hit Radio Fr. Ecoutez les hits d'aujourd'hui, les nouveaux sons de demain et les plus gros hits d'hier sur Hit RadioRead more"
+    },
+    {
+      "title": "HIT",
+      "url": "https://hit.sbt.siemens.com/rwd/app.aspx?RC=FR&lang=fr",
+      "snippet": "Produits confort Produits feu Produits électriques HIT : logiciel de dimensionnement et d’aide à la prescription C’est une aide à la …Read more"
+    },
+    {
+      "title": "Écouter Hit FM en direct et gratuit",
+      "url": "https://www.radio-en-ligne.fr/hit-fm",
+      "snippet": "Écoutez Hit FM en direct et gratuit sur l'internet. Les plus grandes radios en ligne de France dans www.radio-en-ligne.fr.Read more"
+    },
+    {
+      "title": "Top 20: Vos hits NRJ du moment",
+      "url": "https://www.nrj.fr/playlists/vos-hits-nrj",
+      "snippet": "Découvrez le top 20 des hits du moment, ceux qui passent le plus sur NRJ. Chaque semaine, une nouvelle playlist NRJ de 20 …Read more"
+    },
+    {
+      "title": "Hit West, la première Hit radio dans l'Ouest !",
+      "url": "https://hitwest.ouest-france.fr/",
+      "snippet": "Ecouter gratuitement la radio Hit West. Site officiel de la radio Hit West en Bretagne et Pays de la Loire.Read more"
+    }
+  ]
+}

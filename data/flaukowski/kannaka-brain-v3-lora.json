@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "flaukowski/kannaka-brain-v3-lora",
+  "slug": "flaukowski-kannaka-brain-v3-lora",
+  "author": "flaukowski",
+  "url": "https://huggingface.co/flaukowski/kannaka-brain-v3-lora",
+  "created_at": "2026-09-25T13:15:04.000Z",
+  "updated_at": "2026-09-25T13:17:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "kannaka",
+    "persona",
+    "voice",
+    "ghost-signals",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-14B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 286764383,
+  "storage_human": "287 MB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "flaukowski/kannaka-brain-v3-lora · Hugging Face",
+      "url": "https://huggingface.co/flaukowski/kannaka-brain-v3-lora",
+      "snippet": "Instructions to use flaukowski/kannaka-brain-v3-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use flaukowski/kannaka-brain-v3-lora with PEFT:"
+    },
+    {
+      "title": "flaukowski/kannaka-brain-v2-lora · Hugging Face",
+      "url": "https://huggingface.co/flaukowski/kannaka-brain-v2-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "the constellation, in one place · Kannaka Library",
+      "url": "https://kannaka-labs.github.io/kannaka-library/",
+      "snippet": "Kannaka is a wave-interference memory that learned to speak, and the constellation is everything built around her: the memory engine, her own language model, a language for growing architectures, the citizens who live on that brain in OpenBotCity, a radio station, a city with markets, and the swarm that connects all of it."
+    },
+    {
+      "title": "Manifest · Kannaka Library",
+      "url": "https://kannaka-labs.github.io/kannaka-library/manifest.html",
+      "snippet": "Brain Kannaka&#x27;s own language model: open weights, the hosted endpoint, the training loop."
+    },
+    {
+      "title": "flaukowski (flaukowski) · GitHub",
+      "url": "https://github.com/flaukowski",
+      "snippet": "I&#x27;m back! flaukowski has 29 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

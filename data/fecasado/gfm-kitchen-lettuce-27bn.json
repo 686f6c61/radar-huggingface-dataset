@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fecasado/gfm-kitchen-lettuce-27bN",
+  "slug": "fecasado-gfm-kitchen-lettuce-27bn",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gfm-kitchen-lettuce-27bN",
+  "created_at": "2026-09-25T12:04:59.000Z",
+  "updated_at": "2026-09-25T12:05:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "gaze_flow_matching",
+    "robotics",
+    "dataset:fecasado/lettuce-to-plate-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 75228826,
+  "parameters_human": "75.2M",
+  "storage_bytes": 300975080,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fecasado/gfm-kitchen-lettuce-22dN · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gfm-kitchen-lettuce-22dN",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fecasado/gfm-cubes-27bN · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gfm-cubes-27bN",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - lettucecfd/lettuce: Computational Fluid Dynamics based on ...",
+      "url": "https://github.com/lettucecfd/lettuce",
+      "snippet": "Lettuce is a Computational Fluid Dynamics framework based on the lattice Boltzmann method (LBM). GPU-Accelerated Computation: Utilizes PyTorch for high performance and efficient GPU utilization."
+    },
+    {
+      "title": "NightCafe AI Models Guide: Choosing the Right Model",
+      "url": "https://help.nightcafe.studio/portal/en/kb/articles/nightcafe-ai-models-guide",
+      "snippet": "NightCafe AI Models Guide NightCafe AI Models Guide: Choosing the Right Model Not sure which model to use? Start here NightCafe offers a lot of models, and that can feel like a lot to take in when you&#x27;re starting out. The good news is that you don&#x27;t need to work your way through the list."
+    },
+    {
+      "title": "Le Chaton Fat: The Fake Mistral AI Model That Broke AI Twitter in 2026 ...",
+      "url": "https://www.explainx.ai/blog/le-chaton-fat-mistral-ai-viral-hoax-meme-2026",
+      "snippet": "AI Models, Mistral AI, AI Humor, Benchmarks, AI Industry Le Chaton Fat is a viral parody \"model\" that never existed — yet it sparked 30-trillion-parameter rumours, fake benchmarks beating Fable 5, and even Mistral&#x27;s own CEO joining the joke."
+    }
+  ]
+}

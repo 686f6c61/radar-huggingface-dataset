@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "g4me/CutIA-Qwen-4B-InstructInit-TF-EduHigh-gv2sft",
+  "slug": "g4me-cutia-qwen-4b-instructinit-tf-eduhigh-gv2sft",
+  "author": "g4me",
+  "url": "https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-EduHigh-gv2sft",
+  "created_at": "2026-09-25T13:15:17.000Z",
+  "updated_at": "2026-09-25T14:39:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "causal-lm",
+    "base_model:g4me/CutIA-Qwen-4B-InstructInit-TF",
+    "base_model:finetune:g4me/CutIA-Qwen-4B-InstructInit-TF",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 134954064574,
+  "storage_human": "135.0 GB",
+  "base_model": "g4me/CutIA-Qwen-4B-InstructInit-TF",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "g4me/CutIA-Qwen-4B-InstructInit-TF-gv2sft · Hugging Face",
+      "url": "https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-gv2sft",
+      "snippet": "CutIA-Qwen-4B-InstructInit-TF-gv2sft This model is a trained version of Qwen/Qwen3-4B-Base. Usage"
+    },
+    {
+      "title": "g4me/CutIA-Qwen-4B-InstructInit-TF-gv2sft-fftlora · Hugging Face",
+      "url": "https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-gv2sft-fftlora",
+      "snippet": "CutIA-Qwen-4B-InstructInit-TF-gv2sft-fftlora This model is a trained version of Qwen/Qwen3-4B-Instruct-2507."
+    },
+    {
+      "title": "g4me/CutIA-Qwen-4B-Base-TF-run2 - featherless.ai",
+      "url": "https://featherless.ai/models/g4me/CutIA-Qwen-4B-Base-TF-run2",
+      "snippet": "g4me/CutIA-Qwen-4B-fromInstruct-TF is a 4 billion parameter causal language model, fine-tuned from Qwen/Qwen3-4B-Instruct-2507. This experimental checkpoint is designed for general instruction-following tasks, leveraging the Qwen3 architecture. It offers a 32768 token context length, making it suitable for applications requiring processing of moderately long inputs."
+    },
+    {
+      "title": "g4me AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/g4me",
+      "snippet": "CutIA-Qwen-4B-InstructInit-TF-gv2sft Model card indexed from Hugging Face."
+    },
+    {
+      "title": "CutIA-Qwen-4B-fromInstruct-TF: Model Details, Context & Pricing | Essa ...",
+      "url": "https://essamamdani.com/ai-models/hf-g4me-cutia-qwen-4b-frominstruct-tf",
+      "snippet": "CutIA-Qwen-4B-fromInstruct-TF is an AI model record indexed from Hugging Face."
+    }
+  ]
+}

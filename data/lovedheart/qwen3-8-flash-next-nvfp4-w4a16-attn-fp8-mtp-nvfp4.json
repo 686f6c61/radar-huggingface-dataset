@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "lovedheart/Qwen3.8-Flash-Next-NVFP4-W4A16-ATTN-FP8-MTP-NVFP4",
+  "slug": "lovedheart-qwen3-8-flash-next-nvfp4-w4a16-attn-fp8-mtp-nvfp4",
+  "author": "lovedheart",
+  "url": "https://huggingface.co/lovedheart/Qwen3.8-Flash-Next-NVFP4-W4A16-ATTN-FP8-MTP-NVFP4",
+  "created_at": "2026-09-25T13:47:32.000Z",
+  "updated_at": "2026-09-25T13:48:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "Model Optimizer",
+  "languages": [],
+  "tags": [
+    "Model Optimizer",
+    "safetensors",
+    "qwen4_exp",
+    "ModelOpt",
+    "Qwen3.8",
+    "quantized",
+    "FP4",
+    "fp4",
+    "FP8",
+    "fp8",
+    "mixed-precision",
+    "blockwise",
+    "speculative-decoding",
+    "MTP",
+    "sglang",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 118343712659,
+  "parameters_human": "118.34B",
+  "storage_bytes": 128940335033,
+  "storage_human": "128.9 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-flash - Next-Gen AI Models - Powerful AI Models",
+      "url": "https://duckduckgo.com/y.js?ad_domain=qoder.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=E4fvVlYPMXvv1tr%2DS5IpQbynGISKZq6sW_8woHNjSOnNSqduCgqPGghgt4tzrwK83k%2DIomadGJhnduor5urIqLW2SeXu%2DsqJTBk7KFmDesmpt4VLKwZherMjmxVB5Wr4x_0hNt8iCvwZv7CaSFIbOE_4MIA8ceGAUnQEITr0Ww8.iXVSGsfmadnXLTLgtcVOsg&rut=88586a3e984c8201277932af96d1261487e4edf16d7f346a845775c9a38de6a1&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8OrIeVjIhDFrc3EEhgLZISTVUCUw1xaJlF9qSiGgB7XAU%2D2xd7yXQfvnWTIG0yBjcnuqnqPUbSBWLkml5oGR4zXkK6rmSoo3VWuhKQZ0oP9P24HH06CfvCOrxWhzsHd7mJJLQsLk_R__Jef8eXVwJlYjBwkWlsvKBQVhKkqCRsh07Nl378U033liEIsZWmrvVqN1cR77FYhSO7OxH7t0XX_8u94w%26u%3DaHR0cHMlM2ElMmYlMmZxb2Rlci5jb20lMmYlM2Z1dG1fc291cmNlJTNkcGFpZCUyNnV0bV9tZWRpdW0lM2RiaW5nX3NlbSUyNm1zY2xraWQlM2RhMzI3Y2VmOTIzYTAxNGIyMWE2NmE0NGZhN2NlOWQxZA%26rlid%3Da327cef923a014b21a66a44fa7ce9d1d&vqd=4-61702991768316625626178937281717043394&iurl=%7B1%7DIG%3D0B2D55ED8E5B49FB9256B58ACE614CD9%26CID%3D0E6C78C9D2126D3C23A06F16D31C6C7B%26ID%3DDevEx%2C5037.1",
+      "snippet": "Compare and use powerful AI models for different tasks and workflows. Access multiple AI models and choose the right model for every task."
+    },
+    {
+      "title": "lovedheart/Qwen3.8-Flash-Next-NVFP4-FP8 · Hugging Face",
+      "url": "https://huggingface.co/lovedheart/Qwen3.8-Flash-Next-NVFP4-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-NVFP4-FP8-Pruned-RTXPRO-6000 - Hugging Face",
+      "url": "https://huggingface.co/lovedheart/Qwen3.8-Flash-Next-NVFP4-FP8-Pruned-RTXPRO-6000",
+      "snippet": "This model was obtained by quantizing Qwen3.8-Flash-Next to NVFP4, ready for inference with SGLang. Only the routed experts of the 48 main-model MoE layers are quantized (fused gate_up_proj / down_proj; 294,912 quantized tensor entries) to NVFP4 W4A4 (E2M1, group size 16, FP8 E4M3 block scales, FP32 global scales, dynamic NVFP4 activations)."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next?file=Qwen3.8-Flash-Next",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8 Flash Next NVFP4 FP8 by lovedheart - LLM Explorer",
+      "url": "https://llm-explorer.com/model/lovedheart%2FQwen3.8-Flash-Next-NVFP4-FP8,2wkBTHSi16O0z9EX5GB4FP",
+      "snippet": "Qwen3.8 Flash Next NVFP4 FP8 is an open-source language model by lovedheart. Features: 119.6b LLM, VRAM: 0.4GB, License: other, LLM Explorer Score: 0.29."
+    }
+  ]
+}

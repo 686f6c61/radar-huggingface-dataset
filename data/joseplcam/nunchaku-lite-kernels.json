@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joseplcam/nunchaku-lite-kernels",
+  "slug": "joseplcam-nunchaku-lite-kernels",
+  "author": "joseplcam",
+  "url": "https://huggingface.co/joseplcam/nunchaku-lite-kernels",
+  "created_at": "2026-09-25T01:20:32.000Z",
+  "updated_at": "2026-09-25T01:20:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kernels",
+  "languages": [],
+  "tags": [
+    "kernels",
+    "nunchaku",
+    "nunchaku-lite",
+    "svdquant",
+    "nvfp4",
+    "blackwell",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80709144,
+  "storage_human": "81 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joseplcam/nunchaku-lite-kernels · Hugging Face",
+      "url": "https://huggingface.co/joseplcam/nunchaku-lite-kernels",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - rootonchair/nunchaku-lite: Small efficient runtime package for ...",
+      "url": "https://github.com/rootonchair/nunchaku-lite",
+      "snippet": "About nunchaku_lite brings Nunchaku-quantized image generation models to standard Diffusers pipelines with a lean runtime, native CUDA kernels, and drop-in pipeline loading."
+    },
+    {
+      "title": "joseplcam/Qwen-Image-2.1-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/joseplcam/Qwen-Image-2.1-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nunchaku-lite/nunchaku-lite-kernels at main · rootonchair ... - GitHub",
+      "url": "https://github.com/rootonchair/nunchaku-lite/tree/main/nunchaku-lite-kernels",
+      "snippet": "Small efficient runtime package for quantized diffusion models - rootonchair/nunchaku-lite"
+    },
+    {
+      "title": "Quick Start - nunchaku_lite",
+      "url": "https://nunchaku-lite.readthedocs.io/en/latest/quick_start/",
+      "snippet": "Quick Start Load a quantized component directly into a Diffusers pipeline: ... For model-specific examples, see the Supported models guides."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jonas-mo/llama-cargo-sft-v2",
+  "slug": "jonas-mo-llama-cargo-sft-v2",
+  "author": "jonas-mo",
+  "url": "https://huggingface.co/jonas-mo/llama-cargo-sft-v2",
+  "created_at": "2026-09-25T12:30:06.000Z",
+  "updated_at": "2026-09-25T12:30:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65894985,
+  "storage_human": "66 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jonas — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jonas",
+      "snippet": "Dans le judaïsme, Jonas (Yona), abrégé en Jon1, fils d'Amitthaï, est le cinquième des douze petits prophètes de la Bible 2. C'est un …Read more"
+    },
+    {
+      "title": "Jonas & Cie | Costumes et prêt-à-porter pour homme",
+      "url": "https://jonas-et-cie.fr/",
+      "snippet": "Une histoire de famille vouée à sublimer et souligner l’élégance au masculin, Jonas & Cie est le tailleur par excellence du Sentier …"
+    },
+    {
+      "title": "Jonas France",
+      "url": "https://jonasfrance.com/",
+      "snippet": "Aujourd'hui, JONAS est un importateur international présent dans toute l'Europe, reconnu pour son efficacité opérationnelle et son …"
+    },
+    {
+      "title": "Jonas, prophète désobéissant et symbole de la grâce divine",
+      "url": "https://hozana.org/bible/ancien-testament/prophetes/jonas",
+      "snippet": "Jun 5, 2026 · Le livre de Jonas est un livre de l’Ancien Testament composé de 4 chapitres et se situant entre le livre d’Abdias et le …"
+    },
+    {
+      "title": "Jonas Brothers - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jonas_Brothers",
+      "snippet": "The Jonas Brothers (/ ˈdʒoʊnəs /) are an American pop rock band formed in 2005 comprising brothers Kevin Jonas, Joe Jonas, and …"
+    }
+  ]
+}

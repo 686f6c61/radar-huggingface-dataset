@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rondahahda/ppo-SnowballTarget",
+  "slug": "rondahahda-ppo-snowballtarget",
+  "author": "rondahahda",
+  "url": "https://huggingface.co/rondahahda/ppo-SnowballTarget",
+  "created_at": "2026-09-25T12:00:44.000Z",
+  "updated_at": "2026-09-25T12:08:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "SnowballTarget",
+    "ML-Agents-SnowballTarget",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4498296,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adilbai/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/Adilbai/ppo-SnowballTarget",
+      "snippet": "This model is a Proximal Policy Optimization (PPO) agent trained to play the SnowballTarget environment from Unity ML-Agents. The agent, named Julien the Bear 🐻, learns to accurately throw snowballs at spawning targets to maximize rewards."
+    },
+    {
+      "title": "RyanAA/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/RyanAA/ppo-SnowballTarget",
+      "snippet": "Instructions to use RyanAA/ppo-SnowballTarget with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ml-agents How to use RyanAA/ppo-SnowballTarget with ml-agents:"
+    },
+    {
+      "title": "ppo-SnowballTarget: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-ditdahditdit-ppo-snowballtarget",
+      "snippet": "ppo-SnowballTarget AI model directory entry."
+    },
+    {
+      "title": "SnowballTarget1---RL---UnityMLagents/README.md at main - GitHub",
+      "url": "https://github.com/dhruvil122/SnowballTarget1---RL---UnityMLagents/blob/main/README.md",
+      "snippet": "ppo Agent playing SnowballTarget This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    },
+    {
+      "title": "GitHub - huggingface/Snowball-Target: Snowball Target is a Unity ML ...",
+      "url": "https://github.com/huggingface/Snowball-Target",
+      "snippet": "Snowball Target ⛄ SnowballTarget is an environment we created at Hugging Face using assets from Kay Lousberg where you train an agent called Julien the bear 🐻 that learns to hit targets with snowballs. You can learn to train this agent using Deep Reinforcement Learning 👉 with this tutorial."
+    }
+  ]
+}

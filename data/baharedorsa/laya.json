@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "baharedorsa/laya",
+  "slug": "baharedorsa-laya",
+  "author": "baharedorsa",
+  "url": "https://huggingface.co/baharedorsa/laya",
+  "created_at": "2026-09-25T01:15:35.000Z",
+  "updated_at": "2026-09-25T01:15:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laya",
+    "system-one",
+    "calibrated-decisions",
+    "rlcd",
+    "classification",
+    "routing",
+    "scoring",
+    "guardrails",
+    "moderation",
+    "reinforcement-learning",
+    "commercial-use",
+    "text-classification",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 2365127066,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "baharedorsa/laya · Hugging Face",
+      "url": "https://huggingface.co/baharedorsa/laya",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "Instead of staying bitter, I decided to take everything I learned, fix every architectural limitation of the old approach, and build a completely open, horizontal System 1 decision model family: Laya."
+    },
+    {
+      "title": "Laya: open-source alternative to TypeSafe Jev, runs locally",
+      "url": "https://brainfunctioncollapse.com/laya",
+      "snippet": "Laya is the open-source alternative to TypeSafe Jev: a small model that decides instead of chatting. Typed answers with real probabilities in 21 ms, on your own machine."
+    },
+    {
+      "title": "Laya AI: Open-Source Decision Model | Run Locally",
+      "url": "https://laya-ai.com/",
+      "snippet": "Laya AI is an open-source System 1 decision model for typed choices, scores, and probabilities. Run it locally, compare benchmarks, models, and Laya vs Jev."
+    },
+    {
+      "title": "convaiinnovations/laya · Hugging Face",
+      "url": "https://huggingface.co/convaiinnovations/laya",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

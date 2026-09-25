@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "bklassen3434/smolvla_pick_pen_v2_trim_contrast",
+  "slug": "bklassen3434-smolvla_pick_pen_v2_trim_contrast",
+  "author": "bklassen3434",
+  "url": "https://huggingface.co/bklassen3434/smolvla_pick_pen_v2_trim_contrast",
+  "created_at": "2026-09-25T19:07:41.000Z",
+  "updated_at": "2026-09-25T19:08:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:bklassen3434/pick_pen_v2_trimmed",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720056,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

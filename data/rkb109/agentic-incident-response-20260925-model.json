@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RKB109/agentic-incident-response-20260925-model",
+  "slug": "rkb109-agentic-incident-response-20260925-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/agentic-incident-response-20260925-model",
+  "created_at": "2026-09-25T17:57:52.000Z",
+  "updated_at": "2026-09-25T17:57:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "llm-agents",
+    "text-classification",
+    "text-generation",
+    "summarization",
+    "question-answering",
+    "dataset:RKB109/agentic-incident-response-20260925-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RKB109/agentic-incident-response-20260826-model · Hugging Face",
+      "url": "https://huggingface.co/RKB109/agentic-incident-response-20260826-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RKB109 (rajendra kumar behera) - Hugging Face",
+      "url": "https://huggingface.co/RKB109",
+      "snippet": "RKB109/agentic-incident-response-20260717-model Text Classification •Updated 1 day ago"
+    },
+    {
+      "title": "Expert Roundtable — September 25, 2026 afternoon | Halil Öztürkci",
+      "url": "https://halilozturkci.com/threatcast/roundtable/2026-09-25/afternoon",
+      "snippet": "The first decision is which exposed systems require patching, evidence preservation, or full incident response tonight. Then we will examine the AI-agent retail campaign—especially whether automation changed attacker capability or merely economics—and the recurring trust failures in Agentforce and cryptocurrency validation."
+    },
+    {
+      "title": "agentic-incident-response-20260826-model: Model Details, Context ...",
+      "url": "https://essamamdani.com/ai-models/hf-rkb109-agentic-incident-response-20260826-model",
+      "snippet": "Model card indexed from Hugging Face for text-classification. Specs: built for agents, sourced from Hugging Face. Compare agentic-incident-response-20260826-mod"
+    },
+    {
+      "title": "GitHub - spoorthi01012004m/Agentic_incident_response: Implements multi ...",
+      "url": "https://github.com/spoorthi01012004m/Agentic_incident_response",
+      "snippet": "The AI Incident Response System is a production-oriented backend platform designed to automate operational incident investigation workflows using AI agents, forensic correlation, anomaly detection, and hallucination-safe verification pipelines. The system simulates how modern Site Reliability Engineering (SRE) and Incident Response teams investigate infrastructure failures, correlate ..."
+    }
+  ]
+}

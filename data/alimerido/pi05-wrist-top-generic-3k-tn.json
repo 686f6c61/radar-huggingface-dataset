@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "alimerido/pi05-wrist-top-generic-3k-tn",
+  "slug": "alimerido-pi05-wrist-top-generic-3k-tn",
+  "author": "alimerido",
+  "url": "https://huggingface.co/alimerido/pi05-wrist-top-generic-3k-tn",
+  "created_at": "2026-09-25T11:58:23.000Z",
+  "updated_at": "2026-09-25T11:59:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:alimerido/wrist-top-cube_20260705_134536",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388453248,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alimerido/pi05-wrist-top-generic-3k · Hugging Face",
+      "url": "https://huggingface.co/alimerido/pi05-wrist-top-generic-3k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "alimerido/pi05-wrist-top-cube · Hugging Face",
+      "url": "https://huggingface.co/alimerido/pi05-wrist-top-cube",
+      "snippet": "Instructions to use alimerido/pi05-wrist-top-cube with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use alimerido/pi05-wrist-top-cube with LeRobot: Notebooks Google Colab Kaggle Model Card for pi05 Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on ..."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05 at main - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/pi05",
+      "snippet": "More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    }
+  ]
+}

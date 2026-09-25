@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Tridex/model_tridex_act_3cam_resnet_100K_25_09",
+  "slug": "tridex-model_tridex_act_3cam_resnet_100k_25_09",
+  "author": "Tridex",
+  "url": "https://huggingface.co/Tridex/model_tridex_act_3cam_resnet_100K_25_09",
+  "created_at": "2026-09-25T14:53:21.000Z",
+  "updated_at": "2026-09-25T14:53:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Tridex/50_briquet_11h_24-09_20260924_110457",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206716808,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tridex/model_act_3cam_10K_22_09 · Hugging Face",
+      "url": "https://huggingface.co/Tridex/model_act_3cam_10K_22_09",
+      "snippet": "Instructions to use Tridex/model_act_3cam_10K_22_09 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Tridex/model_act_3cam_10K_22_09 with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy ..."
+    },
+    {
+      "title": "Tridex/modele_act_3cam_30k · Hugging Face",
+      "url": "https://huggingface.co/Tridex/modele_act_3cam_30k",
+      "snippet": "Instructions to use Tridex/modele_act_3cam_30k with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Tridex/modele_act_3cam_30k with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on your ..."
+    },
+    {
+      "title": "GitHub - dingfengshi/TriDet: [CVPR2023] Code for the paper, TriDet ...",
+      "url": "https://github.com/dingfengshi/TriDet",
+      "snippet": "This repository contains the code for TriDet: Temporal Action Detection with Relative Boundary Modeling paper, which has been accepted for CVPR2023. Our code is built upon the codebase from ActionFormer and Detectron2, and we would like to express our gratitude for their outstanding work. To quickly get start with the model architecture, you can focus mainly on the following files: libs ..."
+    },
+    {
+      "title": "GitHub - huggingface/pytorch-image-models: The largest collection of ...",
+      "url": "https://github.com/huggingface/pytorch-image-models",
+      "snippet": "The largest collection of PyTorch image encoders / backbones. Including train, eval, inference, export scripts, and pretrained weights -- ResNet, ResNeXT, EfficientNet, NFNet, Vision Transformer (V..."
+    },
+    {
+      "title": "ResNet: Enabling Deep Convolutional Neural Networks through Residual ...",
+      "url": "https://arxiv.org/html/2510.24036v1",
+      "snippet": "Several key developments have shaped the evolution of deep CNNs. LeNet-5 [1] introduced the basic CNN structure with convolutional, pooling, and fully connected layers. AlexNet [2] demonstrated the power of deeper networks combined with GPU acceleration, achieving breakthrough results on ImageNet with an eight-layer model."
+    }
+  ]
+}

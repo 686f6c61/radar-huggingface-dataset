@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Tridex/model_act_2cam_dino_100K_25_09",
+  "slug": "tridex-model_act_2cam_dino_100k_25_09",
+  "author": "Tridex",
+  "url": "https://huggingface.co/Tridex/model_act_2cam_dino_100K_25_09",
+  "created_at": "2026-09-25T17:20:45.000Z",
+  "updated_at": "2026-09-25T17:20:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Tridex/50_gaz_cylinder_14h_24-09_20260924_140939",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 62473542,
+  "parameters_human": "62.5M",
+  "storage_bytes": 249952528,
+  "storage_human": "250 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tridex/model_act_3cam_dino_10K_22_09 · Hugging Face",
+      "url": "https://huggingface.co/Tridex/model_act_3cam_dino_10K_22_09",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tridex_DIA_Niort - Hugging Face",
+      "url": "https://huggingface.co/Tridex",
+      "snippet": "Org profile for Tridex_DIA_Niort on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "Latest AI Model Releases — September 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest tracked AI model releases as of September 2026. Release data currently runs through Sep 22 2026; most recent: GPT-6 Sol by OpenAI. Browse exact dates for the latest models from leading AI labs."
+    },
+    {
+      "title": "GitHub - FrankenVoron/Tridex: Trident + IDEX",
+      "url": "https://github.com/FrankenVoron/Tridex",
+      "snippet": "The primary purpose of this IDEX (Independent Dual EXtrusion) printer is to enable dual material prints for soluble/removable supports (ie, ABS primary material + HIPS support material). Other methods of printing dual materials within a single toolhead (such as using a Y splitter, MMU, Palette, etc) have issues due to mixing/contamination within the nozzle which may cause poor layer adhesion ..."
+    }
+  ]
+}

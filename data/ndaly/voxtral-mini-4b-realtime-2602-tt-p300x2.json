@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ndaly/Voxtral-Mini-4B-Realtime-2602-tt-p300x2",
+  "slug": "ndaly-voxtral-mini-4b-realtime-2602-tt-p300x2",
+  "author": "ndaly",
+  "url": "https://huggingface.co/ndaly/Voxtral-Mini-4B-Realtime-2602-tt-p300x2",
+  "created_at": "2026-09-25T16:29:43.000Z",
+  "updated_at": "2026-09-25T16:30:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blackhole",
+    "p300x2",
+    "tt-model-cache",
+    "tt-model-catalog",
+    "tt-model-container",
+    "vllm-plugin",
+    "automatic-speech-recognition",
+    "base_model:mistralai/Voxtral-Mini-4B-Realtime-2602",
+    "base_model:finetune:mistralai/Voxtral-Mini-4B-Realtime-2602",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1387364443,
+  "storage_human": "1.4 GB",
+  "base_model": "mistralai/Voxtral-Mini-4B-Realtime-2602",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voxtral-Mini-4B-Realtime-2602 — AI Model Details | Applied",
+      "url": "https://theapplied.co/models/mistralai-voxtral-mini-4b-realtime-2602",
+      "snippet": "Model Description Voxtral Mini 4B Realtime 2602 is a multilingual, realtime speech-transcription model and among the first open-source solutions to achieve accuracy comparable to offline systems with a delay of <500ms. It supports 13 languages and outperforms existing open-source baselines across a range of tasks, making it ideal for applications like voice assistants and live subtitling."
+    },
+    {
+      "title": "xjyk/Voxtral-Mini-4B-Realtime-2602 · Hugging Face",
+      "url": "https://huggingface.co/xjyk/Voxtral-Mini-4B-Realtime-2602",
+      "snippet": "Voxtral Mini 4B Realtime 2602 is a multilingual, realtime speech-transcription modeland among the first open-source solutions to achieve accuracy comparable to offline systems with a delay of <500ms. It supports 13 languagesand outperforms existing open-source baselines across a range of tasks, making it ideal for applications like voice assistants and live subtitling."
+    },
+    {
+      "title": "timoqll/Voxtral-Mini-4B-Realtime-2602 · Hugging Face",
+      "url": "https://huggingface.co/timoqll/Voxtral-Mini-4B-Realtime-2602",
+      "snippet": "Voxtral Mini 4B Realtime 2602 is a multilingual, realtime speech-transcription model and among the first open-source solutions to achieve accuracy comparable to offline systems with a delay of <500ms. It supports 13 languages and outperforms existing open-source baselines across a range of tasks, making it ideal for applications like voice assistants and live subtitling."
+    },
+    {
+      "title": "Voxtral-Mini-4B-Realtime-2602: Audio-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/voxtral-mini-4b-realtime-2602-mistralai",
+      "snippet": "Overview Voxtral-Mini-4B-Realtime-2602 is a multilingual streaming speech-to-text model built by mistralai that achieves accuracy comparable to offline transcription systems while maintaining sub-500ms latency. The model consists of approximately 3.4 billion parameters for the language model and 970 million parameters for a custom causal audio encoder, released in BF16 format under the Apache ..."
+    },
+    {
+      "title": "Voxtral-Mini-4B-Realtime-2602 by mistralai | Mixpeek Model Hub",
+      "url": "https://mixpeek.com/model/mistralai/Voxtral-Mini-4B-Realtime-2602",
+      "snippet": "Voxtral Mini 4B Realtime is among the first open-source speech models to achieve offline-comparable accuracy with sub-500ms latency. Its natively streaming architecture pairs a causal audio encoder (~0.6B params) with a Ministral-3-based LLM decoder (~3.4B params), both using sliding window attention for constant-memory streaming inference."
+    }
+  ]
+}

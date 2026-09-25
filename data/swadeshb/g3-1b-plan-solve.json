@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "swadeshb/g3-1b-plan-solve",
+  "slug": "swadeshb-g3-1b-plan-solve",
+  "author": "swadeshb",
+  "url": "https://huggingface.co/swadeshb/g3-1b-plan-solve",
+  "created_at": "2026-09-25T15:44:25.000Z",
+  "updated_at": "2026-09-25T15:44:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "math",
+    "hierarchical-reasoning",
+    "dataset:sxiong/MLR_structured_trajectory",
+    "base_model:google/gemma-3-1b-pt",
+    "base_model:adapter:google/gemma-3-1b-pt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45345496,
+  "storage_human": "45 MB",
+  "base_model": "google/gemma-3-1b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "swadeshb (Swadesh B) - Hugging Face",
+      "url": "https://huggingface.co/swadeshb/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 11 minutes ago ... updated a model about 11 hours ago"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=swadeshb%2FLlama-3.2-3B-Instruct-TRACE_GRPO-Final",
+      "snippet": "Reset Parameters < 1B 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 + 11 ..."
+    },
+    {
+      "title": "Tools for developers to get started — Google AI",
+      "url": "https://ai.google/build/",
+      "snippet": "Discover tools and resources to build with Google AI, customize models, and leverage the power of artificial intelligence."
+    },
+    {
+      "title": "Swades AI: Pioneering Applied AI Research In India",
+      "url": "https://www.swades.ai/",
+      "snippet": "Experience the future with Swades.ai, innovating in healthcare, agriculture, education, and finance through applied AI research and the power of India&#x27;s local talent."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 507 AI models across 483 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

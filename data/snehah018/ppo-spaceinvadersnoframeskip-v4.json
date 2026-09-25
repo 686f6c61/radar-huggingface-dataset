@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SnEhAh018/ppo-SpaceInvadersNoFrameskip-v4",
+  "slug": "snehah018-ppo-spaceinvadersnoframeskip-v4",
+  "author": "SnEhAh018",
+  "url": "https://huggingface.co/SnEhAh018/ppo-SpaceInvadersNoFrameskip-v4",
+  "created_at": "2026-09-25T14:46:23.000Z",
+  "updated_at": "2026-09-25T15:35:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61151575,
+  "storage_human": "61 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ThomasSimonini/ppo-SpaceInvadersNoFrameskip-v4 · Hugging Face",
+      "url": "https://huggingface.co/ThomasSimonini/ppo-SpaceInvadersNoFrameskip-v4",
+      "snippet": "This is a pre-trained model of a PPO agent playing SpaceInvadersNoFrameskip using the stable-baselines3 library. It is taken from RL-trained-agents Usage (with Stable-baselines3) Using this model becomes easy when you have stable-baselines3 and huggingface_sb3 installed: ... Then, you can use the model like this:"
+    },
+    {
+      "title": "Abhiabhi12/pass-spaceinvadersnoframeskip-v4 · Hugging Face",
+      "url": "https://huggingface.co/Abhiabhi12/pass-spaceinvadersnoframeskip-v4",
+      "snippet": "Instructions to use Abhiabhi12/pass-spaceinvadersnoframeskip-v4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries stable-baselines3 How to use Abhiabhi12/pass-spaceinvadersnoframeskip-v4 with stable-baselines3:"
+    },
+    {
+      "title": "ThomasSimonini/ppo-SpaceInvadersNoFrameskip-v4 - atyun.com",
+      "url": "https://www.atyun.com/models/info/ThomasSimonini/ppo-SpaceInvadersNoFrameskip-v4.html?lang=en",
+      "snippet": "This is a pre-trained model of a PPO agent playing SpaceInvadersNoFrameskip using the stable-baselines3 library. It is taken from RL-trained-agents Usage (with Stable-baselines3) Using this model becomes easy when you have stable-baselines3 and huggingface_sb3 installed: ... Then, you can use the model like this:"
+    },
+    {
+      "title": "Ppo SpaceInvadersNoFrameskip V4 - model.aibase.com",
+      "url": "https://model.aibase.com/models/details/1915692648427577346",
+      "snippet": "This is a reinforcement learning agent based on the PPO algorithm, specifically designed for training and gameplay in the SpaceInvadersNoFrameskip-v4 game environment."
+    },
+    {
+      "title": "ppo-SpaceInvadersNoFrameskip-v4 huggingface.co api & sb3 ppo ...",
+      "url": "https://www.toolify.ai/ai-model/sb3-ppo-spaceinvadersnoframeskip-v4",
+      "snippet": "PPO Agent playing SpaceInvadersNoFrameskip-v4 This is a trained model of a PPO agent playing SpaceInvadersNoFrameskip-v4 using the stable-baselines3 library and the RL Zoo ."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gridfm/genco-pf-contingency",
+  "slug": "gridfm-genco-pf-contingency",
+  "author": "gridfm",
+  "url": "https://huggingface.co/gridfm/genco-pf-contingency",
+  "created_at": "2026-09-25T12:58:12.000Z",
+  "updated_at": "2026-09-25T14:26:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 218559332098,
+  "storage_human": "218.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2608.09921] GENCO - A Unified Neural Solver Embedded in a Development ...",
+      "url": "https://arxiv.org/abs/2608.09921",
+      "snippet": "To support advances in neural power system solvers, we introduce the open-source GridFM Development Framework, which standardizes synthetic data generation and training in a low-code environment. We also release large-scale datasets with millions of PF and OPF scenarios across diverse grid topologies to support reproducible benchmarking."
+    },
+    {
+      "title": "/gridfm/harvard/union/ibm -",
+      "url": "https://gridfm.org/gridfm-harvard-union-ibm/",
+      "snippet": "Towards GridFM: GENCO, a Framework for Steady-State Grid Analysis Thomas Brunschwiler, Etienne Vos, Alban Puech, Marcus Freitag - all IBM Research At last year&#x27;s GridFM Workshop, we introduced an initial GridFM model together with supporting libraries for synthetic data generation and low-code model training (DataKit and GraphKit)."
+    },
+    {
+      "title": "From vision to reality: a unified AI solver for the grid",
+      "url": "https://research.ibm.com/blog/gridfm-neural-solver-power-grid",
+      "snippet": "There are three main core grid computations: power flow (PF), optimal power flow (OPF), and state estimation (SE). Each typically requires its own specialized solver and pipeline, whereas GENCO can handle all three in a single unified model with a shared representation."
+    },
+    {
+      "title": "GENCO — A Unified Neural Solver Embedded in a Development Framework for ...",
+      "url": "https://arxiv.org/html/2608.09921",
+      "snippet": "- gridfm-datakit, for generating realistic PF/OPF datasets with diverse load and topology perturbations, - gridfm-graphkit, for training and evaluating neural solvers such as GENCO, - Open datasets containing 4 million PF/OPF instances across 8 grid topologies, hosted on Hugging Face."
+    },
+    {
+      "title": "GitHub - gridfm/gridfm-graphkit: Train, finetune and interact with a ...",
+      "url": "https://github.com/gridfm/gridfm-graphkit",
+      "snippet": "Train, finetune and interact with a foundation model for the electric power grid. - gridfm/gridfm-graphkit"
+    }
+  ]
+}

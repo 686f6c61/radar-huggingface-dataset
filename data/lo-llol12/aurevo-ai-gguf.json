@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lo-llol12/aurevo-ai-gguf",
+  "slug": "lo-llol12-aurevo-ai-gguf",
+  "author": "Lo-llol12",
+  "url": "https://huggingface.co/Lo-llol12/aurevo-ai-gguf",
+  "created_at": "2026-09-25T19:35:15.000Z",
+  "updated_at": "2026-09-25T19:35:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Résultat LOTO FDJ - Tirage en Direct, Numéros Gagnants et Gains",
+      "url": "https://www.secretsdujeu.com/page/jeux_loto_resultats.html",
+      "snippet": "2 days ago · Le dernier résultat du LOTO et du SUPER LOTO - Calculez vos gains immédiatement après le tirage avec toutes les …"
+    },
+    {
+      "title": "Derniers tirages Loto®, EuroMillions - My Million, Keno ... - FDJ®",
+      "url": "https://www.fdj.fr/jeux-de-tirage/resultats?msockid=34aba6deef726a09245bb101ee096ba3",
+      "snippet": "Vous avez manqué le dernier tirage LOTO®, Euro Millions-My Million® ou Joker+® ? Consultez tous les résultats des jeux de tirage …"
+    },
+    {
+      "title": "Portail de Lutte ouvrière",
+      "url": "https://www.lutte-ouvriere.org/",
+      "snippet": "Macron a envoyé une lettre à la présidente de la Commission européenne, l’incitant à prendre les dispositions nécessaires pour faire …"
+    },
+    {
+      "title": "LO — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/LO",
+      "snippet": "LO est un pseudonyme notamment porté par : Sophie Makhno (1935-), connue aussi sous le pseudonyme de Françoise Marin et …"
+    },
+    {
+      "title": "Lutte Ouvrière - Facebook",
+      "url": "https://www.facebook.com/LutteOuvriere1/",
+      "snippet": "Lutte Ouvrière. 12,463 followers · 8,325 talking about this. Page du parti Lutte Ouvrière (officiel). Nous sommes communistes, …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rookierufus/sarm-wire-brown",
+  "slug": "rookierufus-sarm-wire-brown",
+  "author": "rookierufus",
+  "url": "https://huggingface.co/rookierufus/sarm-wire-brown",
+  "created_at": "2026-09-25T15:41:08.000Z",
+  "updated_at": "2026-09-25T15:41:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "sarm",
+    "reward-model",
+    "so101",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119180551,
+  "parameters_human": "119.2M",
+  "storage_bytes": 476757764,
+  "storage_human": "477 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rookierufus (Rudraksh Arora) - Hugging Face",
+      "url": "https://huggingface.co/rookierufus/models",
+      "snippet": "AI & ML interests ... Recent Activity liked a dataset 1 day ago ... updated a Space 1 day ago"
+    },
+    {
+      "title": "Plug_out_wire_brown_20260917_140911 - Hugging Face",
+      "url": "https://huggingface.co/datasets/rookierufus/Plug_out_wire_brown_20260917_140911",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Collections / Free Models Free AI Models on OpenRouter Model rankings updated September 2026 based on real usage data. Models are ranked by total prompt and completion tokens processed through the OpenRouter API over the trailing 7 days. Showing the top 16 models. Rankings measure usage on OpenRouter and reflect adoption, not model quality or benchmark performance."
+    },
+    {
+      "title": "GitHub - schrieffer-z/sarm: [AAAI 26 Oral] Interpretable Reward Model ...",
+      "url": "https://github.com/schrieffer-z/sarm",
+      "snippet": "SARM: Interpretable Reward Model via Sparse Autoencoder This repository contains the code of the AAAI 2026 Oral Paper \" Interpretable Reward Model via Sparse Autoencoder \"."
+    },
+    {
+      "title": "AI Model Releases Timeline: Latest Launches, Updated Daily",
+      "url": "https://www.promptzone.com/ai-model-releases",
+      "snippet": "AI Model Releases 2026 Timeline A chronological timeline of major AI model releases across 2025 and 2026 — LLMs, reasoning models, open-weights families, and image & video generators, each with its date, why it mattered, and the official announcement."
+    }
+  ]
+}

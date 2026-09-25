@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "SeanLiu0272/p2n_DiTL",
+  "slug": "seanliu0272-p2n_ditl",
+  "author": "SeanLiu0272",
+  "url": "https://huggingface.co/SeanLiu0272/p2n_DiTL",
+  "created_at": "2026-09-25T13:41:11.000Z",
+  "updated_at": "2026-09-25T14:27:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "diffusion-policy",
+    "ditl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10801463820,
+  "storage_human": "10.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SeanLiu0272 (Haotian Liu) - Hugging Face",
+      "url": "https://huggingface.co/SeanLiu0272",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 25 days ago ... published a model 25 days ago"
+    },
+    {
+      "title": "SeanLiu0272 (Haotian Liu) - Hugging Face",
+      "url": "https://huggingface.co/SeanLiu0272/models",
+      "snippet": "User profile of Haotian Liu on Hugging Face"
+    },
+    {
+      "title": "GitHub - facebookresearch/DiT: Official PyTorch Implementation of ...",
+      "url": "https://github.com/facebookresearch/DiT",
+      "snippet": "Official PyTorch Implementation of \"Scalable Diffusion Models with Transformers\" - facebookresearch/DiT"
+    },
+    {
+      "title": "llmdb.app — AI Discovery Platform & Prompt Sandbox",
+      "url": "https://llmdb.app/research/re-thinking-mammography-transfer-learning-the-dataset-informed-transfer-learning-ditl-framework-for-breast-cancer-screening-and-lesion-diagnosis",
+      "snippet": "Proposes DITL: a dataset-informed transfer learning framework with adaptive difficulty weighting and neighborhood triplet loss that requires no hyperparameter tuning, achieving SOTA on mammography classification."
+    },
+    {
+      "title": "MossyModels — Free YOLO and ONNX AI Models",
+      "url": "https://mossymodels.com/",
+      "snippet": "Free community library of YOLO and ONNX AI aimbot models for Fortnite, Valorant, Warzone, Apex Legends, CS2, and 40+ games. Download ONNX and PyTorch weights."
+    }
+  ]
+}

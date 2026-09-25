@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "id": "Tamkimd/tamev-micro-minilm",
+  "slug": "tamkimd-tamev-micro-minilm",
+  "author": "Tamkimd",
+  "url": "https://huggingface.co/Tamkimd/tamev-micro-minilm",
+  "created_at": "2026-09-25T14:56:43.000Z",
+  "updated_at": "2026-09-25T15:00:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tamev",
+    "decision-model",
+    "decision-intelligence",
+    "system-one",
+    "typesafe",
+    "permutation-invariant",
+    "zero-drift",
+    "calibration",
+    "brier-score",
+    "ece",
+    "llm-router",
+    "agent-routing",
+    "zero-shot",
+    "edge-ai",
+    "calibrated-probabilities",
+    "typesafe-ai",
+    "onnx",
+    "coreml",
+    "mlx",
+    "text-classification",
+    "custom_code",
+    "en",
+    "multilingual",
+    "dataset:legacy-datasets/banking77",
+    "dataset:google/boolq",
+    "dataset:fancyzhx/ag_news",
+    "dataset:nyu-mll/multi_nli",
+    "dataset:SetFit/sst5",
+    "dataset:Yelp/yelp_review_full",
+    "dataset:CogComp/trec",
+    "dataset:fancyzhx/dbpedia_14",
+    "dataset:SetFit/amazon_reviews_multi_en",
+    "dataset:stanfordnlp/imdb",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22762368,
+  "parameters_human": "22.8M",
+  "storage_bytes": 91061876,
+  "storage_human": "91 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "System One Decision Intelligence",
+      "dataset": "TAMEV Multi-Domain Benchmark Suite",
+      "metric": "Expected Calibration Error (ECE)",
+      "value": 0.0499
+    },
+    {
+      "task": "System One Decision Intelligence",
+      "dataset": "TAMEV Multi-Domain Benchmark Suite",
+      "metric": "Brier Calibration Score",
+      "value": 0.4244
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tamkimd — Simplify Life with AI",
+      "url": "http://tamkimd.com/",
+      "snippet": "Tamkimd builds premium AI tools for automation, productivity boosters, and creative workflows."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 507 AI models across 483 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "tamkimd (tamkimd) · GitHub",
+      "url": "https://github.com/tamkimd/",
+      "snippet": "FlexiAIAgent is a powerful and modular AI agent supporting multiple local and cloud-based language models (LLMs). Python 4"
+    },
+    {
+      "title": "Run Local AI Models on Your PC | Check What Models You Can Run",
+      "url": "https://runlocalmodel.com/",
+      "snippet": "Find out which AI models your computer can run locally, and browse Agent Skills (SKILL.md) for Claude Code, Codex, and other AI agents. Check GPU VRAM compatibility for LLaMA, Gemma, Mistral, and more."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "Daily-updated list of free AI models (free LLM APIs), ranked by quality with live status. Plus one OpenAI-compatible endpoint that routes to the best one. - ClawLabsAI/free-ai-models"
+    }
+  ]
+}

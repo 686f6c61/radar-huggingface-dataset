@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "aerostratospheric/uogw-aerostratospheric-forecast",
+  "slug": "aerostratospheric-uogw-aerostratospheric-forecast",
+  "author": "aerostratospheric",
+  "url": "https://huggingface.co/aerostratospheric/uogw-aerostratospheric-forecast",
+  "created_at": "2026-09-25T17:47:17.000Z",
+  "updated_at": "2026-09-25T17:47:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "weather",
+    "forecasting",
+    "stratosphere",
+    "upper-air",
+    "high-altitude-balloon",
+    "uogw",
+    "aerostratospheric",
+    "gfs",
+    "time-series-forecasting",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aerostratospheric/uogw · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/aerostratospheric/uogw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aerostratospheric/uogw-scientific-suite · Hugging Face",
+      "url": "https://huggingface.co/aerostratospheric/uogw-scientific-suite",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "UOGW Aerostratospheric Forecast (v0.1) - GitHub",
+      "url": "https://github.com/Midwest-Stratospheric/uogw-aerostratospheric-forecast",
+      "snippet": "Site-specific upper-air / lower-stratosphere profile forecast trained for Aerostratospheric flight planning at Casey, Illinois (X2Griffon pad). This is not a global foundation weather model (GraphCast / AIFS / Aurora). Those need multi-year global ERA5 and large GPU clusters."
+    },
+    {
+      "title": "Aerostratospheric | aerostratospheric.com | High-Altitude Payload ...",
+      "url": "https://www.midwestsds.com/index.html",
+      "snippet": "Welcome to aerostratospheric.com High-altitude payload science & open atmospheric data Aerostratospheric designs, builds, and flies lightweight payload science platforms in the United States and publishes atmospheric observations through UOGW, the most comprehensive weather dataset available in the world."
+    },
+    {
+      "title": "Unified Open Global Weather (UOGW) - GitHub",
+      "url": "https://github.com/Midwest-Stratospheric/Unified-Open-Global-Weather",
+      "snippet": "Unified Open Global Weather (UOGW) — open multi-layer atmospheric commons indexing global ground, marine, upper-air, stratospheric, and satellite sources plus MSDS near-space flight data."
+    }
+  ]
+}

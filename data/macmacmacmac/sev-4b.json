@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "macmacmacmac/Sev-4B",
+  "slug": "macmacmacmac-sev-4b",
+  "author": "macmacmacmac",
+  "url": "https://huggingface.co/macmacmacmac/Sev-4B",
+  "created_at": "2026-09-25T16:25:33.000Z",
+  "updated_at": "2026-09-25T16:44:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "sev",
+    "research",
+    "cybersecurity",
+    "agent-activity",
+    "decision-model",
+    "lora",
+    "en",
+    "dataset:macmacmacmac/Sev-behavioral-research-v1",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155169868,
+  "storage_human": "155 MB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "macmacmacmac (rr) - Hugging Face",
+      "url": "https://huggingface.co/macmacmacmac/datasets",
+      "snippet": "msuiche&#x27;s profile picture21world&#x27;s profile picture 2 followers 3 following AI & ML interests None yet Recent Activity updateda Spaceabout 13 hours ago"
+    },
+    {
+      "title": "macmacmacmac (rr) - Hugging Face",
+      "url": "https://huggingface.co/macmacmacmac",
+      "snippet": "User profile of rr on Hugging Face"
+    },
+    {
+      "title": "Apple Silicon AI Calculator: Mac M1/M2/M3/M4 LLM Picker",
+      "url": "https://localaimaster.com/tools/apple-silicon-ai-calculator",
+      "snippet": "Free Tool · Mac M1/M2/M3/M4 · Instant Apple Silicon AI Calculator Pick your Mac. See exactly which AI models fit in your unified memory, the expected tokens-per-second throughput, and whether MLX, Ollama, or llama.cpp is the right runtime for your hardware. Covers M1 through M4, all RAM tiers, all standard quantization levels."
+    },
+    {
+      "title": "Best LLMs for Mac Mini M4 16GB RAM: Top 5 Ranked (2026)",
+      "url": "https://modelfit.io/blog/best-llm-mac-mini-m4-16gb/",
+      "snippet": "Top 5 local AI models for Mac Mini M4 16GB. Qwen3.5 9B leads on quality, Gemma 4 12B adds multimodal. Ollama commands and the RAM math behind each pick."
+    },
+    {
+      "title": "GitHub - Mininglamp-AI/Mano-P: Mano-P: Open-source GUI-VLA agent for ...",
+      "url": "https://github.com/Mininglamp-AI/Mano-P/tree/main",
+      "snippet": "The 4B on-device model reaches 56% vs Mano-CUA 1.1&#x27;s 83%. The gap concentrates in fuzzy descriptions, cross-app workflows, and deep office-suite operations — these are the explicit directions for the next iteration."
+    }
+  ]
+}

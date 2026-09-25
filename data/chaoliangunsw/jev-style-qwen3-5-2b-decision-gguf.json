@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF",
+  "slug": "chaoliangunsw-jev-style-qwen3-5-2b-decision-gguf",
+  "author": "chaoliangUNSW",
+  "url": "https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF",
+  "created_at": "2026-09-21T08:39:50.000Z",
+  "updated_at": "2026-09-24T15:06:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "jev-style",
+    "system-one",
+    "decision-model",
+    "calibration",
+    "classification",
+    "qwen3.5",
+    "text-generation",
+    "en",
+    "dataset:nyu-mll/glue",
+    "dataset:fancyzhx/ag_news",
+    "dataset:google/boolq",
+    "dataset:SetFit/sst5",
+    "base_model:Qwen/Qwen3.5-2B-Base",
+    "base_model:quantized:Qwen/Qwen3.5-2B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 12,
+  "downloads_30d": 5279,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 7286425601,
+  "storage_human": "7.3 GB",
+  "base_model": "Qwen/Qwen3.5-2B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jev-Style-Qwen3.5-2B-Decision (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF",
+      "snippet": "What \"Jev-style\" means Jev (TypeSafe AI, 2026) introduced System One models: instead of generating text, the model takes a state plus a typed question and returns a decision with calibrated probabilities in a single pass."
+    },
+    {
+      "title": "Jev-Style-Qwen3.5-2B-Decision (GGUF) - GitHub",
+      "url": "https://github.com/lawrence3699/Jev-Style-Qwen3.5-2B-Decision-GGUF",
+      "snippet": "What \"Jev-style\" means Jev (TypeSafe AI, 2026) introduced System One models: instead of generating text, the model takes a state plus a typed question and returns a decision with calibrated probabilities in a single pass."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen3.5: Towards Native Multimodal Agents",
+      "url": "https://qwen.ai/blog?id=qwen3.5",
+      "snippet": "QWEN CHAT GitHub Hugging Face ModelScope DISCORD We are delighted to announce the official release of Qwen3.5, introducing the open-weight of the first model in the Qwen3.5 series, namely Qwen3.5-397B-A17B. As a native vision-language model, Qwen3.5-397B-A17B demonstrates outstanding results across a full range of benchmark evaluations, including reasoning, coding, agent capabilities, and ..."
+    },
+    {
+      "title": "ai/qwen3.5 - Docker Image",
+      "url": "https://hub.docker.com/r/ai/qwen3.5",
+      "snippet": "In particular, Qwen3.5-Flash is the hosted version corresponding to Qwen3.5-35B-A3B with more production features, e.g., 1M context length by default and official built-in tools. For more information, please refer to the User Guide ⁠."
+    }
+  ]
+}

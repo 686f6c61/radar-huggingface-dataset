@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "onnx-community/GLiNER2.5-Decide-ONNX",
+  "slug": "onnx-community-gliner2-5-decide-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/GLiNER2.5-Decide-ONNX",
+  "created_at": "2026-09-25T01:02:17.000Z",
+  "updated_at": "2026-09-25T01:03:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "deberta-v2",
+    "feature-extraction",
+    "webgpu",
+    "typed-decisions",
+    "gliner2",
+    "open-jev",
+    "system-one",
+    "text-classification",
+    "en",
+    "base_model:fastino/GLiNER2.5-Decide",
+    "base_model:quantized:fastino/GLiNER2.5-Decide",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4028145115,
+  "storage_human": "4.0 GB",
+  "base_model": "fastino/GLiNER2.5-Decide",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "open-jev + GLiNER2.5-Decide - a Hugging Face Space by shreyask",
+      "url": "https://huggingface.co/spaces/shreyask/open-jev-gliner2-demo",
+      "snippet": "Jev is a System One model by TypeSafe AI. Instead of chatting, it makes fast, calibrated decisions: one piece of text (the state) plus a set of typed questions go in, and a probability distribution per question comes out."
+    },
+    {
+      "title": "onnx-community (ONNX Community) - Hugging Face",
+      "url": "https://huggingface.co/onnx-community",
+      "snippet": "Org profile for ONNX Community on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GLiNER2.5-Decide: An Open-Weight Model for Structured Decision Making",
+      "url": "https://fastino.ai/blog/gliner-2-5-decide-open-weight-decision-model",
+      "snippet": "GLiNER2.5-Decide is an encoder-based decision model post-trained specifically for structured decision-making. It evaluates user-defined typed questions and can decode related answers jointly under explicit constraints, returning structured decisions with probabilities, confidence scores, and feasibility metadata."
+    },
+    {
+      "title": "GitHub - lmoe/gliner2-onnx: An experimental GLiNER2 conversion tool and ...",
+      "url": "https://github.com/lmoe/gliner2-onnx",
+      "snippet": "GLiNER2 ONNX runtime for Python. Runs GLiNER2 models without PyTorch. This library is experimental. The API may change between versions."
+    },
+    {
+      "title": "GLiNER: Generalist and Lightweight Model for Named Entity ... - GitHub",
+      "url": "https://github.com/urchade/GLiNER",
+      "snippet": "GLiNER is a framework for training and deploying small Named Entity Recognition (NER) models with zero-shot capabilities. In addition to traditional NER, it supports incremental streaming NER, joint entity and relation extraction, and multi-task token classification. GLiNER is fine-tunable, optimized to run on CPUs and consumer hardware, and has performance competitive with LLMs several times ..."
+    }
+  ]
+}

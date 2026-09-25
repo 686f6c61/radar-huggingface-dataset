@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "canbingol/jev-mmlu-classifier",
+  "slug": "canbingol-jev-mmlu-classifier",
+  "author": "canbingol",
+  "url": "https://huggingface.co/canbingol/jev-mmlu-classifier",
+  "created_at": "2026-09-25T12:07:09.000Z",
+  "updated_at": "2026-09-25T12:07:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 202199808,
+  "parameters_human": "202.2M",
+  "storage_bytes": 420540022,
+  "storage_human": "421 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jev (AI model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
+      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco-based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2]"
+    },
+    {
+      "title": "Introduction - TypeSafe AI",
+      "url": "https://docs.typesafe.ai/introduction",
+      "snippet": "Jev is TypeSafe&#x27;s flagship model and the first System One model. Send state and typed questions; get structured answers your code can use directly."
+    },
+    {
+      "title": "Jev API & Hub for the Jev Model | Jev AI Community",
+      "url": "https://www.jevai.org/jev-api",
+      "snippet": "Explore Jev API documentation, trending community workflows, and use cases like code compaction powered by TypeSafe AI&#x27;s first System One Jev Model."
+    },
+    {
+      "title": "JEV AI Model: Free AI Text Classifier Online, No Waitlist",
+      "url": "https://jevaimodel.app/",
+      "snippet": "An AI text classifier turns unstructured language into a predictable category, score, or probability. JEV AI Model is a free online app for classifying plain text and JSON in your browser."
+    },
+    {
+      "title": "A deep dive into Jev, TypeSafe&#x27;s System One model",
+      "url": "https://flaviocopes.com/jev/",
+      "snippet": "Home / AI A deep dive into Jev, TypeSafe&#x27;s System One model By Flavio Copes Updated Sep 24, 2026 Learn how Jev turns text into typed choices, scores, and probabilities, with JavaScript examples, practical patterns, limits, and real use cases."
+    }
+  ]
+}

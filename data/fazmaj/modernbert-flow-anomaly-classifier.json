@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Fazmaj/modernbert-flow-anomaly-classifier",
+  "slug": "fazmaj-modernbert-flow-anomaly-classifier",
+  "author": "Fazmaj",
+  "url": "https://huggingface.co/Fazmaj/modernbert-flow-anomaly-classifier",
+  "created_at": "2026-09-25T13:42:00.000Z",
+  "updated_at": "2026-09-25T14:00:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149607940,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598451137,
+  "storage_human": "598 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ModernBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/modernbert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AnswerDotAI/ModernBERT: Bringing BERT into modernity via both ...",
+      "url": "https://github.com/AnswerDotAI/ModernBERT",
+      "snippet": "This is the research repository for ModernBERT, focused on pre-training and evaluations. If you&#x27;re seeking the HuggingFace version, designed to integrate with any common pipeline, please head to the ModernBERT Collection on HuggingFace ModernBERT is a collaboration between Answer.AI, LightOn, and friends."
+    },
+    {
+      "title": "[2412.13663] Smarter, Better, Faster, Longer: A Modern Bidirectional ...",
+      "url": "https://arxiv.org/abs/2412.13663",
+      "snippet": "Encoder-only transformer models such as BERT offer a great performance-size tradeoff for retrieval and classification tasks with respect to larger decoder-only models. Despite being the workhorse of numerous production pipelines, there have been limited Pareto improvements to BERT since its release. In this paper, we introduce ModernBERT, bringing modern model optimizations to encoder-only ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=modernbert",
+      "snippet": "Explore machine learning models. llm-semantic-router/category_classifier_modernbert-base_model"
+    },
+    {
+      "title": "Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for ...",
+      "url": "https://aclanthology.org/2025.acl-long.127/",
+      "snippet": "Abstract Encoder-only transformer models such as BERT offer a great performance-size tradeoff for retrieval and classification tasks with respect to larger decoder-only models. Despite being the workhorse of numerous production pipelines, there have been limited Pareto improvements to BERT since its release. In this paper, we introduce ModernBERT, bringing modern model optimizations to encoder ..."
+    }
+  ]
+}

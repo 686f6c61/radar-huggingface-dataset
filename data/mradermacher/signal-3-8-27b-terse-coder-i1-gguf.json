@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Signal-3.8-27B-Terse-Coder-i1-GGUF",
+  "slug": "mradermacher-signal-3-8-27b-terse-coder-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Signal-3.8-27B-Terse-Coder-i1-GGUF",
+  "created_at": "2026-09-25T12:15:05.000Z",
+  "updated_at": "2026-09-25T12:45:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "lora",
+    "reasoning",
+    "coding",
+    "token-efficient",
+    "qwen3_8",
+    "conversational",
+    "en",
+    "base_model:vwdubb/Signal-3.8-27B-Terse-Coder",
+    "base_model:adapter:vwdubb/Signal-3.8-27B-Terse-Coder",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 39471868480,
+  "storage_human": "39.5 GB",
+  "base_model": "vwdubb/Signal-3.8-27B-Terse-Coder",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Signal-3.8-27B-Terse-Coder-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Signal-3.8-27B-Terse-Coder-GGUF",
+      "snippet": "mradermacher / Signal-3.8-27B-Terse-Coder-GGUF Like 0 GGUF Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "mradermacher/Signal-3.8-27B-Terse-Coder-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/Signal-3.8-27B-Terse-Coder-GGUF/tree/main",
+      "snippet": "mradermacher / Signal-3.8-27B-Terse-Coder-GGUF Like 0 GGUF conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "LocalAI models",
+      "url": "https://localai.io/docs/gallery.html",
+      "snippet": "mixture-of-experts model with 30B total parameters and 3B active parameters. It targets reasoning, coding, tool use, multilingual chat, and long-context This entry uses the official Q4_K_M GGUF."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "id": "Tamkimd/tamev-small-modernbert",
+  "slug": "tamkimd-tamev-small-modernbert",
+  "author": "Tamkimd",
+  "url": "https://huggingface.co/Tamkimd/tamev-small-modernbert",
+  "created_at": "2026-09-25T14:56:48.000Z",
+  "updated_at": "2026-09-25T15:07:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tamev",
+    "decision-model",
+    "decision-intelligence",
+    "system-one",
+    "typesafe",
+    "permutation-invariant",
+    "zero-drift",
+    "calibration",
+    "brier-score",
+    "ece",
+    "llm-router",
+    "agent-routing",
+    "zero-shot",
+    "edge-ai",
+    "calibrated-probabilities",
+    "typesafe-ai",
+    "onnx",
+    "coreml",
+    "mlx",
+    "text-classification",
+    "custom_code",
+    "en",
+    "multilingual",
+    "dataset:legacy-datasets/banking77",
+    "dataset:google/boolq",
+    "dataset:fancyzhx/ag_news",
+    "dataset:nyu-mll/multi_nli",
+    "dataset:SetFit/sst5",
+    "dataset:Yelp/yelp_review_full",
+    "dataset:CogComp/trec",
+    "dataset:fancyzhx/dbpedia_14",
+    "dataset:SetFit/amazon_reviews_multi_en",
+    "dataset:stanfordnlp/imdb",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149407488,
+  "parameters_human": "149.4M",
+  "storage_bytes": 597644340,
+  "storage_human": "598 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "System One Decision Intelligence",
+      "dataset": "TAMEV Multi-Domain Benchmark Suite",
+      "metric": "Expected Calibration Error (ECE)",
+      "value": 0.0506
+    },
+    {
+      "task": "System One Decision Intelligence",
+      "dataset": "TAMEV Multi-Domain Benchmark Suite",
+      "metric": "Brier Calibration Score",
+      "value": 0.3919
+    }
+  ],
+  "sources": [
+    {
+      "title": "johnnyboycurtis/ModernBERT-small · Hugging Face",
+      "url": "https://huggingface.co/johnnyboycurtis/ModernBERT-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ModernBERT - a lightonai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/lightonai/modernbert-67adcc36b4d53331c35533b3",
+      "snippet": "Bringing BERT into modernity via both architecture changes and scaling"
+    },
+    {
+      "title": "Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for ...",
+      "url": "https://aclanthology.org/2025.acl-long.127/",
+      "snippet": "Abstract Encoder-only transformer models such as BERT offer a great performance-size tradeoff for retrieval and classification tasks with respect to larger decoder-only models. Despite being the workhorse of numerous production pipelines, there have been limited Pareto improvements to BERT since its release. In this paper, we introduce ModernBERT, bringing modern model optimizations to encoder ..."
+    },
+    {
+      "title": "[2412.13663] Smarter, Better, Faster, Longer: A Modern Bidirectional ...",
+      "url": "https://arxiv.org/abs/2412.13663",
+      "snippet": "Encoder-only transformer models such as BERT offer a great performance-size tradeoff for retrieval and classification tasks with respect to larger decoder-only models. Despite being the workhorse of numerous production pipelines, there have been limited Pareto improvements to BERT since its release. In this paper, we introduce ModernBERT, bringing modern model optimizations to encoder-only ..."
+    },
+    {
+      "title": "GitHub - AnswerDotAI/ModernBERT: Bringing BERT into modernity via both ...",
+      "url": "https://github.com/AnswerDotAI/ModernBERT",
+      "snippet": "This is the repository where you can find ModernBERT, our experiments to bring BERT into modernity via both architecture changes and scaling. This repository noticeably introduces FlexBERT, our modular approach to encoder building blocks, and heavily relies on .yaml configuration files to build models."
+    }
+  ]
+}

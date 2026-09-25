@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "divagr1925/qwen3.5-9b-factorio-build-er-r1",
+  "slug": "divagr1925-qwen3-5-9b-factorio-build-er-r1",
+  "author": "divagr1925",
+  "url": "https://huggingface.co/divagr1925/qwen3.5-9b-factorio-build-er-r1",
+  "created_at": "2026-09-25T18:10:44.000Z",
+  "updated_at": "2026-09-25T18:12:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "divagr1925/qwen3.5-9b-factorio-build-sft-800 · Hugging Face",
+      "url": "https://huggingface.co/divagr1925/qwen3.5-9b-factorio-build-sft-800",
+      "snippet": "Instructions to use divagr1925/qwen3.5-9b-factorio-build-sft-800 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.5-9b-factorio-build-grpo API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/divagr1925/qwen3.5-9b-factorio-build-grpo",
+      "snippet": "Model Details Model Provider divagr1925 Model Tree Base divagr1925/qwen3.5-9b-factorio-build-sft Fine-tuned this model Input Modalities TextImageVideo Output Modalities Text Supported Functionality Dedicated Endpoints"
+    },
+    {
+      "title": "qwen--qwen3.5-9b | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3.5-9b",
+      "snippet": "Qwen3.5 9B multimodal model for visual reasoning, OCR, and long-context generation. Sign in to Microsoft Foundry to deploy this model."
+    },
+    {
+      "title": "Qwen3.5 9B — AI Model Radar",
+      "url": "https://aimodelradar.app/models/qwen3-5-9b",
+      "snippet": "Qwen3.5-9B is a 9-billion-parameter open-weights multimodal model from Alibaba&#x27;s Qwen family, supporting both text and image inputs. The model features a unified vision-language architecture with early fusion of multimodal tokens, enabling reasoning across text and images in a single context. It is available under the Apache 2.0 license and released on March 10, 2026."
+    }
+  ]
+}

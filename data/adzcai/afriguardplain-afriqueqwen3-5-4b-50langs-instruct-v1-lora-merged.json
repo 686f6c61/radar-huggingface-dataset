@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged",
+  "slug": "adzcai-afriguardplain-afriqueqwen3-5-4b-50langs-instruct-v1-lora-merged",
+  "author": "adzcai",
+  "url": "https://huggingface.co/adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1-lora-merged",
+  "created_at": "2026-09-24T15:11:45.000Z",
+  "updated_at": "2026-09-25T18:10:54.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "am",
+    "ha",
+    "ig",
+    "om",
+    "sn",
+    "sw",
+    "tw",
+    "wo",
+    "yo",
+    "zu"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "llama-factory",
+    "safety",
+    "african-languages",
+    "afriguard",
+    "text-generation",
+    "conversational",
+    "en",
+    "am",
+    "ha",
+    "ig",
+    "om",
+    "sn",
+    "sw",
+    "tw",
+    "wo",
+    "yo",
+    "zu",
+    "dataset:adzcai/AfriGuard-plain",
+    "base_model:McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1",
+    "base_model:finetune:McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609775,
+  "storage_human": "9.1 GB",
+  "base_model": "McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CANAL+ : tv, sports, séries, films en streaming en direct live ou ...",
+      "url": "https://www.canalplus.com/",
+      "snippet": "Regarder les meilleurs programmes, films, séries, sports en streaming direct ou en replay. Le programme TV de toutes les chaines …"
+    },
+    {
+      "title": "Toutes les chaînes | CANAL+",
+      "url": "https://www.canalplus.com/live/",
+      "snippet": "Regarder vos chaines de télévision en direct live streaming sur myCANAL en profitant de l'expérience originale de CANAL+"
+    },
+    {
+      "title": "Accueil - CANAL+ Espace Client",
+      "url": "https://client.canalplus.com/",
+      "snippet": "identifiez-vous L’espace client CANAL+ est votre espace personnel sécurisé. Particulier ? ou Professionnel ? Connectez-vous avec …"
+    },
+    {
+      "title": "Abonnements CANAL+ : offres de souscription aux chaines CANAL+ - CANAL+",
+      "url": "https://boutique.canalplus.com/?msockid=05ddf322d8a065103987e4fdd96d642f",
+      "snippet": "S'abonner à CANAL+, c'est profiter du cinéma ultra-récent avec des films à succès disponibles 6 mois après leur sortie en salle, des …"
+    },
+    {
+      "title": "Offre d'abonnement à TV+ - CANAL+",
+      "url": "https://boutique.canalplus.com/offres/tv-plus?msockid=05ddf322d8a065103987e4fdd96d642f",
+      "snippet": "+ de 80 chaînes de TV dont TOUTES LES CHAINES DE LA TNT : actualité, émissions sportives, films, séries, jeunesse, télé …"
+    }
+  ]
+}

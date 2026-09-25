@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Mathis-Mo/poca-SoccerTwos",
+  "slug": "mathis-mo-poca-soccertwos",
+  "author": "Mathis-Mo",
+  "url": "https://huggingface.co/Mathis-Mo/poca-SoccerTwos",
+  "created_at": "2026-09-25T16:38:10.000Z",
+  "updated_at": "2026-09-25T16:38:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SoccerTwos",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SoccerTwos",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 182797462,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mathis Construction Bois",
+      "url": "https://www.mathis.eu/fr",
+      "snippet": "Mathis : conception, fabrication et construction de grands bâtiments en bois et de bâtiments publics en bois, clé en main. Notre …Read more"
+    },
+    {
+      "title": "Prénom Mathis (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/mathis/prenom-8966",
+      "snippet": "Mathis est une variante du prénom Mathieu, dérivé de la forme ancienne Mattatyahu qui peut être traduite par \"don de Dieu\". …Read more"
+    },
+    {
+      "title": "Prénom Mathis : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/mathis-49123",
+      "snippet": "Signification et étymologie du prénom Mathis Le prénom Mathis est dérivé de Matthieu (en hébreu Mattatyahu), composé de matith, …Read more"
+    },
+    {
+      "title": "Mathis — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mathis",
+      "snippet": "Mathis est une variante du prénom Mathias. La forme ancienne Mattatyahu (Mathieu) peut être traduite par « don de Yah » : Yah …Read more"
+    },
+    {
+      "title": "L'entreprise - Mathis",
+      "url": "https://www.mathis.eu/FR/Entreprise.html",
+      "snippet": "Mathis est une société spécialisée dans la conception, la fabrication et la construction de grands bâtiments en bois à base de …Read more"
+    }
+  ]
+}

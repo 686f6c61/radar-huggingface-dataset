@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Rogue-HH-Instruct-GGUF",
+  "slug": "mradermacher-rogue-hh-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Rogue-HH-Instruct-GGUF",
+  "created_at": "2026-09-25T16:40:21.000Z",
+  "updated_at": "2026-09-25T16:45:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "harmful",
+    "bad",
+    "conversational",
+    "potentially-unsafe-content",
+    "unique",
+    "aaa",
+    "goofy",
+    "mostly-uncencored",
+    "en",
+    "dataset:benni-ben/BeaverTails-onlybad",
+    "base_model:benni-ben/Rogue-HH-Instruct",
+    "base_model:quantized:benni-ben/Rogue-HH-Instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 3729518208,
+  "storage_human": "3.7 GB",
+  "base_model": "benni-ben/Rogue-HH-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/L3.2-Rogue-Creative-Instruct-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/L3.2-Rogue-Creative-Instruct-7B-GGUF",
+      "snippet": "Instructions to use mradermacher/L3.2-Rogue-Creative-Instruct-7B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "L3.2-Rogue-Creative-Instruct-7B-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/L3.2-Rogue-Creative-Instruct-7B-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 29 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GGUF model list",
+      "url": "https://mitjafelicijan.github.io/gguf-list/",
+      "snippet": "GGUF model list Generated on 2025-02-27 17:51:07 (download collections.json) Source code and GGUF download utility available on https://github.com/mitjafelicijan/gguf-list. <"
+    },
+    {
+      "title": "35+ Best Uncensored Open-Source AI Models (UpdatedMay 2026)",
+      "url": "https://decodesfuture.com/articles/top-uncensored-open-source-ai-models-2026-list/",
+      "snippet": "Ranked and tested: the top 35+ uncensored open-source AI models of 2026. Includes abliterated LLMs, Hugging Face picks, hardware tiers, and legal guidance...."
+    }
+  ]
+}

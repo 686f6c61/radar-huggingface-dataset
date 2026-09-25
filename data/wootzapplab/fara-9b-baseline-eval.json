@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "WootzappLab/fara-9b-baseline-eval",
+  "slug": "wootzapplab-fara-9b-baseline-eval",
+  "author": "WootzappLab",
+  "url": "https://huggingface.co/WootzappLab/fara-9b-baseline-eval",
+  "created_at": "2026-09-25T17:17:19.000Z",
+  "updated_at": "2026-09-25T17:27:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "fara",
+    "computer-use",
+    "browser-automation",
+    "dom",
+    "baseline",
+    "evaluation",
+    "reproducibility",
+    "conversational",
+    "base_model:microsoft/Fara1.5-9B",
+    "base_model:finetune:microsoft/Fara1.5-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839709775,
+  "storage_human": "18.8 GB",
+  "base_model": "microsoft/Fara1.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WootzappLab/fara-baseline-artifact · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/WootzappLab/fara-baseline-artifact",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - microsoft/fara: Fara1.5 - A family of frontier computer use ...",
+      "url": "https://github.com/microsoft/fara",
+      "snippet": "Fara1.5 is a family of native Computer Use Agents (CUAs) at three scales — Fara1.5-4B, Fara1.5-9B, and Fara1.5-27B — built on Qwen3.5 and trained with supervised finetuning on data from FaraGen1.5, our scalable data pipeline of environments, solvers, and verifiers. Each model sets a new state of the art for its size class on browser-use benchmarks, and Fara1.5-27B outperforms much larger ..."
+    },
+    {
+      "title": "WootzappLab (Wootzapp) - Hugging Face",
+      "url": "https://huggingface.co/WootzappLab/datasets",
+      "snippet": "Org profile for Wootzapp on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Fara1.5-9B Model Passport | ModelTree",
+      "url": "https://abdeslam-menacere.github.io/ModelTree/models/fara-1-5-9b/",
+      "snippet": "A 9B-parameter computer-use agent model from Microsoft Research AI Frontiers, in the same Fara1.5 line as the already-recorded 27B and carrying the same card template: a \"Multimodal decoder-only LM (image + text → text)\" that takes a user goal plus screenshots and emits a reasoning block followed by a tool call, published under the MIT licence with a 262,144-token context length. Its card ..."
+    },
+    {
+      "title": "Fara1.5-9B | Model Catalog | Microsoft Foundry - ai.azure.com",
+      "url": "https://ai.azure.com/catalog/models/Fara1.5-9B",
+      "snippet": "Fara1.5-9B is a multimodal web agent developed by Microsoft Research AI Frontiers. It observes the browser via screenshots and acts on behalf of the user by emitting structured tool calls (click, type, scroll, web_search, visit_url, and others) to complete multi-step web tasks end-to-end."
+    }
+  ]
+}

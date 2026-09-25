@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Wayfinder6/nova",
+  "slug": "wayfinder6-nova",
+  "author": "Wayfinder6",
+  "url": "https://huggingface.co/Wayfinder6/nova",
+  "created_at": "2026-09-25T12:41:49.000Z",
+  "updated_at": "2026-09-25T12:50:33.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "multi-agent",
+    "local-llm",
+    "ollama",
+    "council",
+    "continuity",
+    "sensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wayfinder6/nova-triangle · Hugging Face",
+      "url": "https://huggingface.co/Wayfinder6/nova-triangle",
+      "snippet": "Wayfinder6 / nova-triangle like 0 Transformers English triangulated-inference edge-ai ensemble small-models nova-triangle gradient-ascent self-correcting License:apache-2.0 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Nova Triangle V2 - a Hugging Face Space by Wayfinder6",
+      "url": "https://huggingface.co/spaces/Wayfinder6/nova-triangle-v2",
+      "snippet": "Nova Triangle V2 — Three Real Architectures, Live The original Nova Triangle (May 2026) described triangulated inference in theory — three models, an agreement score, \"disagreement is the signal.\" This is that idea tested for real, months later, with actual results. One question goes to three genuinely different architectures at once: Transformer (autoregressive, fine-tuned, a real ..."
+    },
+    {
+      "title": "AI Model Radar — real-time AI model release tracking",
+      "url": "https://aimodelradar.app/",
+      "snippet": "The moment a new AI model appears on the radar, know what it is and what changed. Tracking OpenAI, Anthropic, Google and open-source releases."
+    },
+    {
+      "title": "SentinelOne (S) Expands Wayfinder With OpenAI&#x27;s Newest Cyber Model",
+      "url": "https://finance.yahoo.com/technology/ai/articles/sentinelone-expands-wayfinder-openai-newest-065417233.html",
+      "snippet": "On September 3, SentinelOne (NYSE:S) expanded its Wayfinder Frontier AI Services with new tools built on OpenAI&#x27;s latest cyber-focused model, arriving just a week after the company posted a ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    }
+  ]
+}

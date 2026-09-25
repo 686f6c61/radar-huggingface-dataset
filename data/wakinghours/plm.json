@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wakinghours/PLM",
+  "slug": "wakinghours-plm",
+  "author": "wakinghours",
+  "url": "https://huggingface.co/wakinghours/PLM",
+  "created_at": "2026-09-25T16:21:02.000Z",
+  "updated_at": "2026-09-25T16:27:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "Panorama-Language Models",
+    "en",
+    "dataset:wakinghours/PanoVQA",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models Benchmark",
+      "url": "https://aimodelsbenchmark.com/",
+      "snippet": "Selected only (0) Clear selection Show all metrics AI model leaderboard with benchmark scores, pricing, context window and license. Click a column header to sort. Use the checkboxes to select models for comparison."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Rank & Compare 100+ AI Models Live | WhatLLM.org",
+      "url": "https://whatllm.org/explore",
+      "snippet": "Live LLM leaderboard ranking 100+ AI models by Intelligence Index, Agentic Index, cost per task, token price, speed, and context. Refreshed daily."
+    },
+    {
+      "title": "AI Watches You Sleep: New Model Analyzes Over 1 Million Hours of ...",
+      "url": "https://scienceblog.com/ai-watches-you-sleep-new-model-analyzes-over-1-million-hours-of-slumber/",
+      "snippet": "Health AI Watches You Sleep: New Model Analyzes Over 1 Million Hours of Slumber In the dimly lit sleep labs at Mount Sinai, machines quietly record the brain waves, breathing patterns, and heart rates of sleeping patients."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "AI Model Releases Timeline: Latest Launches, Updated Daily",
+      "url": "https://www.promptzone.com/ai-model-releases",
+      "snippet": "AI Model Releases 2026 Timeline A chronological timeline of major AI model releases across 2025 and 2026 — LLMs, reasoning models, open-weights families, and image & video generators, each with its date, why it mattered, and the official announcement."
+    }
+  ]
+}

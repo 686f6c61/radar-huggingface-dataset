@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "aloudreader/uk-stress-crossencoder",
+  "slug": "aloudreader-uk-stress-crossencoder",
+  "author": "aloudreader",
+  "url": "https://huggingface.co/aloudreader/uk-stress-crossencoder",
+  "created_at": "2026-09-25T12:36:26.000Z",
+  "updated_at": "2026-09-25T12:38:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "ukrainian",
+    "stress",
+    "homograph",
+    "word-sense-disambiguation",
+    "cross-encoder",
+    "tts",
+    "uk",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278044417,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1139992480,
+  "storage_human": "1.1 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anuncios de escorts y putas en San Sebastián | EMASEX",
+      "url": "https://emasex.com/u/chicas/m/san-sebastian",
+      "snippet": "Somos la mejor página web para conocer chicas y chicos de San Sebastián y Guipúzcoa. Tenemos decenas de escorts, travestis y …Read more"
+    },
+    {
+      "title": "Anuncios de putas y escorts en San Sebastian | Nueva Pasión",
+      "url": "https://nuevapasion.com/anuncios-escort-para-hombre/en-san-sebastian",
+      "snippet": "En nuestro directorio de anuncios se encuentran las mejores prostitutas y escorts tanto de SAN SEBASTIAN como de la provincia. …Read more"
+    },
+    {
+      "title": "Putas y escorts en Guipuzcoa - LOQUOSEX.COM",
+      "url": "https://www.loquosex.com/putas-guipuzcoa/",
+      "snippet": "Escort - Euzkadi - Guipuzcoa-Guipuzkoa - San Sebastián-Donostia 613408630 60 € 24 años Latina Soy esa mujer que sabe como …Read more"
+    },
+    {
+      "title": "Escorts San sebastian en Guipúzcoa - destacamos",
+      "url": "https://www.destacamos.com/1-chicas-escorts/keyword-san+sebastian/localidad-Guip%C3%BAzcoa/listings.html",
+      "snippet": "Escorts San sebastian en Guipúzcoa ︎ Escorts y chicas de compañía en Guipúzcoa. ¿Buscas disfrutar una compañía sin igual no …Read more"
+    },
+    {
+      "title": "Escorts en San Sebastián — Putas y Acompañantes",
+      "url": "https://espanagirls.com/san-sebastian",
+      "snippet": "Escorts y putas en San Sebastián: acompañantes y masajistas verificadas con fotos reales, reseñas y contacto directo por …Read more"
+    }
+  ]
+}

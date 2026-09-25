@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "michaelwrightwyn/document-ai-dev",
+  "slug": "michaelwrightwyn-document-ai-dev",
+  "author": "michaelwrightwyn",
+  "url": "https://huggingface.co/michaelwrightwyn/document-ai-dev",
+  "created_at": "2026-09-25T13:56:25.000Z",
+  "updated_at": "2026-09-25T13:56:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Document AI release notes | Google Cloud Documentation",
+      "url": "https://docs.cloud.google.com/document-ai/docs/release-notes",
+      "snippet": "Document AI is introducing document-level prompting for custom document processors. This feature allows you to provide an overall description of the document to inject deep business knowledge into the model, leading to improved extraction quality."
+    },
+    {
+      "title": "Document AI documentation - Google Cloud",
+      "url": "https://docs.cloud.google.com/document-ai/docs",
+      "snippet": "Document AI is a document understanding platform that takes unstructured data from documents and transforms it into structured data, making it easier to understand, analyze, and consume. Document AI uses machine learning and Google Cloud to help you create scalable, end-to-end, cloud-based document processing applications."
+    },
+    {
+      "title": "michaelwrightwyn (Mateo Torres) - Hugging Face",
+      "url": "https://huggingface.co/michaelwrightwyn",
+      "snippet": "Love fine-tuning models and sharing datasets. AI & ML interests Love fine-tuning models and sharing datasets."
+    },
+    {
+      "title": "Document AI - Google Cloud",
+      "url": "https://cloud.google.com/document-ai",
+      "snippet": "The Document AI solutions suite includes pretrained models for document processing, Workbench for custom models, and Warehouse to search and store."
+    }
+  ]
+}

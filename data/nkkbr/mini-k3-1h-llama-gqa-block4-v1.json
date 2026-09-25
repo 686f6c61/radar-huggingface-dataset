@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nkkbr/Mini-K3-1H-llama-gqa-block4-v1",
+  "slug": "nkkbr-mini-k3-1h-llama-gqa-block4-v1",
+  "author": "nkkbr",
+  "url": "https://huggingface.co/nkkbr/Mini-K3-1H-llama-gqa-block4-v1",
+  "created_at": "2026-09-25T13:40:54.000Z",
+  "updated_at": "2026-09-25T13:41:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mini_k3",
+    "kimi-k3",
+    "pretraining",
+    "mixture-of-experts",
+    "llama-style-attention",
+    "architecture-ablation",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 966352640,
+  "parameters_human": "966.4M",
+  "storage_bytes": 1935817574,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nkkbr/Mini-K3-1H-mamba2-n64-g8-v1_C · Hugging Face",
+      "url": "https://huggingface.co/nkkbr/Mini-K3-1H-mamba2-n64-g8-v1_C",
+      "snippet": "Mini-K3-1H-mamba2-n64-g8 This is a text-only Mini-K3-1H research checkpoint. Nine KDA sequence mixers have been replaced with Mamba-2/SSD mixers. The four NoPE Gated MLA layers, Stable LatentMoE, Block-4 Attention Residuals, tokenizer, and untied language model head retain the baseline Mini-K3-1H design. This is an ablation within the Mini-K3 backbone, not a reproduction of NVIDIA Nemotron&#x27;s ..."
+    },
+    {
+      "title": "nkkbr/Mini-K3-1H-attn-1kda-3mla-nope-v2 · Hugging Face",
+      "url": "https://huggingface.co/nkkbr/Mini-K3-1H-attn-1kda-3mla-nope-v2",
+      "snippet": "Mini-K3-1H-attn-1kda-3mla-nope This repository contains a text-only Mini-K3-1H v2 pretraining checkpoint from a controlled 20-architecture comparison. The family retains Kimi-K3&#x27;s KDA and Gated MLA operators, block Attention Residuals, Stable LatentMoE, SiTU activations, output gates, and Quantile Balancing at approximately one billion logical parameters. The exact architecture for this ..."
+    },
+    {
+      "title": "Mini-K3-1H-attn-2kda-2mla-nope-v2 — LLM | GenAiHub",
+      "url": "https://genaihub.net/agents/hf-model-nkkbr-mini-k3-1h-attn-2kda-2mla-nope-v2",
+      "snippet": "Mini-K3-1H-attn-2kda-2mla-nope-v2 is an open-weight text-generation model with roughly 2M parameters published by nkkbr on the Hugging Face Hub. It has 932 downloads."
+    },
+    {
+      "title": "Mini-K3-1H-attn-4mla-rope-v2 by Nkkbr: Open-Weight Model",
+      "url": "https://savrn.com/models/mini-k3-1h-attn-4mla-rope-v2",
+      "snippet": "Model Card This repository contains a text-only Mini-K3-1H v2 pretraining checkpoint from a controlled 20-architecture comparison. The family retains Kimi-K3&#x27;s KDA and Gated MLA operators, block Attention Residuals, Stable LatentMoE, SiTU activations, output gates, and Quantile Balancing at approximately one billion logical parameters."
+    },
+    {
+      "title": "Mini K3 1h Attn 4mla Rope V2 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/nkkbr/mini-k3-1h-attn-4mla-rope-v2",
+      "snippet": "Registry entry for model Mini K3 1h Attn 4mla Rope V2; source metadata pending."
+    }
+  ]
+}

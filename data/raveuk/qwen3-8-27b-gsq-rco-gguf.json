@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "rAVEUK/Qwen3.8-27B-GSQ-RCO-GGUF",
+  "slug": "raveuk-qwen3-8-27b-gsq-rco-gguf",
+  "author": "rAVEUK",
+  "url": "https://huggingface.co/rAVEUK/Qwen3.8-27B-GSQ-RCO-GGUF",
+  "created_at": "2026-09-25T14:37:35.000Z",
+  "updated_at": "2026-09-25T14:37:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gsq",
+    "rco",
+    "quantization",
+    "mixed-precision",
+    "ist-daslab",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "arxiv:2604.18556",
+    "arxiv:2605.00649",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 81435646085,
+  "storage_human": "81.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8 27b Gsq Rco - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-8-27b-gsq-rco.html",
+      "snippet": "Download Qwen3.8 27b Gsq Rco GGUF model. 15.9 GB, 1,414,991 downloads, 1621 likes."
+    },
+    {
+      "title": "GitHub - MiaAI-Lab/Qwen3.8-27B-16gb-NVIDIA-GPUs-one-click-install ...",
+      "url": "https://github.com/MiaAI-Lab/Qwen3.8-27B-16gb-NVIDIA-GPUs-one-click-install",
+      "snippet": "A serving kit for Qwen/Qwen3.8-27B in turboderp &#x27;s EXL3 quants, on one consumer NVIDIA card. It picks a quant that fits the card it finds, installs its own Python environment, downloads the weights, serves an OpenAI-compatible endpoint, and opens a chat UI."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ocsnav/groot-vlm-graft28",
+  "slug": "ocsnav-groot-vlm-graft28",
+  "author": "ocsnav",
+  "url": "https://huggingface.co/ocsnav/groot-vlm-graft28",
+  "created_at": "2026-09-25T13:47:04.000Z",
+  "updated_at": "2026-09-25T13:47:15.000Z",
+  "license": "nvidia-gr00t-n1.5",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "eagle_2_5_vl",
+    "feature-extraction",
+    "eagle2_5_vl",
+    "gr00t",
+    "robotics",
+    "vision-language-model",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2150092736,
+  "parameters_human": "2.15B",
+  "storage_bytes": 4311712371,
+  "storage_human": "4.3 GB",
+  "base_model": "nvidia/GR00T-N1.5-3B, Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JisuHann/groot-vlm-graft28 · Hugging Face",
+      "url": "https://huggingface.co/JisuHann/groot-vlm-graft28",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JisuHann/groot-vlm-graft28 at main - Hugging Face",
+      "url": "https://huggingface.co/JisuHann/groot-vlm-graft28/tree/main",
+      "snippet": "JisuHann / groot-vlm-graft28 Like 0 Image-Text-to-Text Transformers Safetensors eagle_2_5_vl feature-extraction eagle2_5_vl gr00t robotics vision-language-model conversational custom_code License:nvidia-gr00t-n1.5 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "Model package changed from gr00t_n1d6 to gr00t_n1d7, so codepaths and processor metadata move to the N1.7 namespace. VLM backbone changed from vendored Eagle, nvidia/Eagle-Block2A-2B-v2, to nvidia/Cosmos-Reason2-2B via Qwen3-VL."
+    },
+    {
+      "title": "Isaac GR00T: Vision-Language-Action Models — Train an SO-101 Robot From ...",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/10-groot.html",
+      "snippet": "What Is a Vision-Language-Action Model? # Vision-Language-Action (VLA) models are foundation models that take visual input and language instructions and output low-level or mid-level actions for an embodied agent, such as a robot."
+    },
+    {
+      "title": "GR00T N1: An Open Foundation Model for Generalist Humanoid Robots",
+      "url": "https://arxiv.org/abs/2503.14734",
+      "snippet": "A robot foundation model, trained on massive and diverse data sources, is essential for enabling the robots to reason about novel situations, robustly handle real-world variability, and rapidly learn new tasks. To this end, we introduce GR00T N1, an open foundation model for humanoid robots."
+    }
+  ]
+}

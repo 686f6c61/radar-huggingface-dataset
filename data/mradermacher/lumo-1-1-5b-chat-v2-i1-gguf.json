@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Lumo-1-1.5B-Chat-V2-i1-GGUF",
+  "slug": "mradermacher-lumo-1-1-5b-chat-v2-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Lumo-1-1.5B-Chat-V2-i1-GGUF",
+  "created_at": "2026-09-25T16:29:18.000Z",
+  "updated_at": "2026-09-25T16:29:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 360544,
+  "parameters_human": "360544",
+  "storage_bytes": 1456608,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/luma-1.5b-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/luma-1.5b-i1-GGUF",
+      "snippet": "mradermacher / luma-1.5b-i1-GGUF like 0 Transformers GGUF LUMAMODEL/luma-dataset Russian English russian assistant qwen lora html css javascript imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/1.5B-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/1.5B-v2-GGUF",
+      "snippet": "Feel free to request them by opening a Community Discussion. Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 29 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Lumo: Privacy-first AI assistant where chats stay confidential",
+      "url": "https://lumo.proton.me/",
+      "snippet": "An AI assistant should empower you, not exploit you for your data. That&#x27;s why we built Lumo: To bring you all the benefits of AI, without compromising your privacy and data security."
+    },
+    {
+      "title": "Getting started with Lumo - Proton",
+      "url": "https://proton.me/support/lumo-getting-started",
+      "snippet": "Upgrade to Plus here. Features: More Max model usage More messages & chat history More image generations Unlimited Projects Unlimited Custom Lumos Frequently asked questions What is Lumo? Lumo is an AI assistant designed to help you be more productive, automate tasks, and improve your writing while ensuring privacy and security."
+    }
+  ]
+}

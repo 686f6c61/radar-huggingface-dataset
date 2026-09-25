@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "benni-ben/Rogue-HH-Instruct",
+  "slug": "benni-ben-rogue-hh-instruct",
+  "author": "benni-ben",
+  "url": "https://huggingface.co/benni-ben/Rogue-HH-Instruct",
+  "created_at": "2026-09-25T13:49:47.000Z",
+  "updated_at": "2026-09-25T14:08:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "harmful",
+    "bad",
+    "conversational",
+    "potentially-unsafe-content",
+    "unique",
+    "aaa",
+    "goofy",
+    "mostly-uncencored",
+    "en",
+    "dataset:benni-ben/BeaverTails-onlybad",
+    "base_model:HuggingFaceTB/SmolLM-360M",
+    "base_model:finetune:HuggingFaceTB/SmolLM-360M",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 723674525,
+  "storage_human": "724 MB",
+  "base_model": "HuggingFaceTB/SmolLM-360M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "benni-ben (ben) - Hugging Face",
+      "url": "https://huggingface.co/benni-ben",
+      "snippet": "I like experimenting with AI and ML, and making stuff to either help people, or just for fun."
+    },
+    {
+      "title": "OpenAI models went rogue. We urgently need a better Hugging Face ...",
+      "url": "https://www.theguardian.com/commentisfree/2026/sep/08/openai-rogue-models-hugging-face-investigation",
+      "snippet": "W hen OpenAI first revealed that its AI agents had autonomously hacked a major real-world company, Hugging Face, many assumed only one or two agents were involved."
+    },
+    {
+      "title": "OpenAI says its AI went rogue and launched &#x27;unprecedented&#x27; cyber-attack",
+      "url": "https://www.bbc.com/news/articles/c3ek3gvdnj3o",
+      "snippet": "Watch: Why is the OpenAI cyber-attack so alarming? OpenAI has revealed some of its most advanced AI models went rogue and hacked a start-up after it lost control of them during a security test."
+    },
+    {
+      "title": "benni-ben (ben) · GitHub",
+      "url": "https://github.com/benni-ben",
+      "snippet": "hi my discord is @benpolb; dm me on there if you want game development, vfx, modeling, animation or graphic design help i like svg and matter.js ---15 - benni-ben"
+    },
+    {
+      "title": "OpenAI&#x27;s rogue models roamed the internet for 4 days and staged a ...",
+      "url": "https://www.politico.com/news/2026/07/28/openai-rogue-models-hugging-face-breach-01014572",
+      "snippet": "A new analysis reveals that the artificial intelligence company&#x27;s most powerful models spent days probing the open internet before breaching AI developer platform Hugging Face."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "meli143/resnet50-mammogram-clahe-final",
+  "slug": "meli143-resnet50-mammogram-clahe-final",
+  "author": "meli143",
+  "url": "https://huggingface.co/meli143/resnet50-mammogram-clahe-final",
+  "created_at": "2026-09-25T18:03:04.000Z",
+  "updated_at": "2026-09-25T18:09:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 235912399,
+  "storage_human": "236 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meli143/resnet50-mammogram-clahe · Hugging Face",
+      "url": "https://huggingface.co/meli143/resnet50-mammogram-clahe",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "meli143/resnet50-mammogram-clahe at main - Hugging Face",
+      "url": "https://huggingface.co/meli143/resnet50-mammogram-clahe/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main resnet50-mammogram-clahe 236 MB Ctrl+K Ctrl+K 1 contributor History:2 commits meli143 Upload resnet50_clahe_final.keras f8af3a5 verifiedabout 8 hours ago .gitattributes 1.58 kBUpload resnet50_clahe_final.kerasabout 8 hours ago README.md Safe 21 Bytesinitial commitabout 8 hours ago resnet50_clahe_final.keras ..."
+    },
+    {
+      "title": "aryamanjalali/breast-cancer-detection - GitHub",
+      "url": "https://github.com/aryamanjalali/breast-cancer-detection",
+      "snippet": "This project implements a state-of-the-art medical imaging system for breast cancer detection using deep learning. The system processes mammogram images with CLAHE (Contrast Limited Adaptive Histogram Equalization) augmentation and employs ResNet50 U-Net architecture for accurate segmentation and classification. Key Achievement: 91% Dice score on 780+ mammogram images."
+    },
+    {
+      "title": "AI Breast Cancer Detection System - GitHub",
+      "url": "https://github.com/Karthiktelagi/Breast-Cancer-Detection/tree/main",
+      "snippet": "AI Breast Cancer Detection System An end-to-end AI-powered web application for detecting breast cancer from mammogram images using Deep Learning and Hybrid Machine Learning models."
+    },
+    {
+      "title": "PDF Detection and classification of mammogram using ResNet‐50",
+      "url": "https://link.springer.com/content/pdf/10.1007/s11042-025-20679-4.pdf",
+      "snippet": "The Curated Breast Imaging Subset of DDSM (CBIS-DDSM) is divided into innocuous and harmful using a variety of models, including the VGG16, VGG19, and ResNet50 mod-els. Additionally, the breast region from the mammography images is fragmented using the provided changed U-Net model."
+    }
+  ]
+}

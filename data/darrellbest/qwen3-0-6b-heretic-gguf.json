@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "darrellbest/Qwen3-0.6B-Heretic-GGUF",
+  "slug": "darrellbest-qwen3-0-6b-heretic-gguf",
+  "author": "darrellbest",
+  "url": "https://huggingface.co/darrellbest/Qwen3-0.6B-Heretic-GGUF",
+  "created_at": "2026-09-25T12:22:34.000Z",
+  "updated_at": "2026-09-25T12:22:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "heretic",
+    "ara",
+    "abliterated",
+    "uncensored",
+    "qwen3",
+    "text-generation",
+    "base_model:darrellbest/Qwen3-0.6B-Heretic",
+    "base_model:quantized:darrellbest/Qwen3-0.6B-Heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2234335072,
+  "storage_human": "2.2 GB",
+  "base_model": "darrellbest/Qwen3-0.6B-Heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Plan Your Trip to Madrid: Best of Madrid Tourism",
+      "url": "https://www.tripadvisor.com/Tourism-g187514-Madrid-Vacations.html",
+      "snippet": "During a layover in Madrid, travelers have various options for activities depending on the layover duration. According to forum posts, …"
+    },
+    {
+      "title": "Plan Your Trip to Madrid | Official Travel & Tourist Guide",
+      "url": "https://www.visitmadrid.es/en/plan-your-trip-to-madrid",
+      "snippet": "Organize your ideal visit to Madrid: getting around, top accommodations, travel itineraries, and essential practical tips. Start planning …"
+    },
+    {
+      "title": "VisitMadrid | VisitMadrid",
+      "url": "https://www.visitmadrid.es/en",
+      "snippet": "Welcome to the official portal of Madrid tourism, your comprehensive guide to exploring not just the vibrant capital, but the diverse …"
+    },
+    {
+      "title": "Turismo Madrid | Tourism Madrid",
+      "url": "https://www.esmadrid.com/en",
+      "snippet": "Welcome to the official city guide to Madrid, Spain. Discover the city's must-sees and check out which events are taking place during …"
+    },
+    {
+      "title": "Madrid Itinerary: 2, 3, 5 & 7 Day Plans [2026]",
+      "url": "https://madridallincluded.com/madrid-itinerary-guide/",
+      "snippet": "Feb 20, 2026 · Find your perfect Madrid itinerary. Detailed day-by-day plans for 2, 3, 5, or 7 days covering museums, neighborhoods, …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "aviralku/mr9b-qwen35base-v5-scaffold-cispo-h100-215",
+  "slug": "aviralku-mr9b-qwen35base-v5-scaffold-cispo-h100-215",
+  "author": "aviralku",
+  "url": "https://huggingface.co/aviralku/mr9b-qwen35base-v5-scaffold-cispo-h100-215",
+  "created_at": "2026-09-25T16:24:33.000Z",
+  "updated_at": "2026-09-25T16:27:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "reinforcement-learning",
+    "cispo",
+    "meta-reasoning",
+    "verl",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710173,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aviralku (Aviral Kumar) - Hugging Face",
+      "url": "https://huggingface.co/aviralku/datasets",
+      "snippet": "User profile of Aviral Kumar on Hugging Face"
+    },
+    {
+      "title": "aviralku/mr9b-qwen35base-v4-cispo-h100-215 · Hugging Face",
+      "url": "https://huggingface.co/aviralku/mr9b-qwen35base-v4-cispo-h100-215",
+      "snippet": "Check out the documentationfor more information. MR Qwen3.5-9B CISPO checkpoint MR Qwen3.5-9B CISPO checkpoint Actor-only Hugging Face export from mr9b_qwen35base_v4_cispo_h100_215_20260829_145049. global_step_32: complete trainable MR actor export The frozen executor model is not included. and in-flight rollout state are also excluded."
+    },
+    {
+      "title": "Alibaba lays out AI roadmap across Qwen models, chips and agent ...",
+      "url": "https://www.techedt.com/alibaba-lays-out-ai-roadmap-across-qwen-models-chips-and-agent-services",
+      "snippet": "Alibaba lays out AI roadmap across Qwen models, chips and agent services A comprehensive look at how Alibaba plans to scale its cloud capacity to 20GW while advancing next-generation Qwen models and Zhenwu enterprise silicon."
+    },
+    {
+      "title": "Best Alibaba Qwen Models in 2026 - benchlm.ai",
+      "url": "https://benchlm.ai/best/alibaba-models",
+      "snippet": "As of September 24, 2026, the top model in best alibaba qwen models on the BenchLM leaderboard is Qwen3.8 Max with a score of 71.8. Bottom line: Alibaba&#x27;s Qwen series has improved significantly."
+    },
+    {
+      "title": "Jared Palmer Ports Kev to Qwen3.5 for Roughly $95 in H100 - AI Weekly",
+      "url": "https://aiweekly.co/alerts/jared-palmer-ports-kev-to-qwen35-for-roughly-95-in-h100",
+      "snippet": "Jared Palmer released Kev on September 20, a three-model family (0.8B, 4B and 9B) built on Qwen3.5 bases and shipped under Apache-2.0. An execution log accompanying the GitHub repo puts the whole Qwen3.5 port at roughly $95 of Modal H100 usage plus $0.03 in Jev API calls, according to runtimewire."
+    }
+  ]
+}

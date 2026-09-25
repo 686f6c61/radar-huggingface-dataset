@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "FahrenheitResearch/Zircon-0.6B-v2-mlx",
+  "slug": "fahrenheitresearch-zircon-0-6b-v2-mlx",
+  "author": "FahrenheitResearch",
+  "url": "https://huggingface.co/FahrenheitResearch/Zircon-0.6B-v2-mlx",
+  "created_at": "2026-09-25T14:58:28.000Z",
+  "updated_at": "2026-09-25T15:19:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "apple-silicon",
+    "8-bit",
+    "typed-decisions",
+    "calibration",
+    "on-device",
+    "fahrenheit-research",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 644865688,
+  "storage_human": "645 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FahrenheitResearch (Fahrenheit Research) - Hugging Face",
+      "url": "https://huggingface.co/FahrenheitResearch",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 8 days ago ... published a model 8 days ago"
+    },
+    {
+      "title": "FahrenheitResearch (Fahrenheit Research) - Hugging Face",
+      "url": "https://huggingface.co/FahrenheitResearch/models",
+      "snippet": "User profile of Fahrenheit Research on Hugging Face"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "A daily-updated, community-maintained list of every free AI model (free LLM API) available right now. No paywalls. No API key required to browse. Updated automatically every 24 hours by GitHub Actions pulling from OpenRouter, Pollinations AI, and other public sources ..."
+    },
+    {
+      "title": "FahrenheitResearch · GitHub",
+      "url": "https://github.com/FahrenheitResearch",
+      "snippet": "ArWen: GPU-native WRF-ARW-class regional weather model, verified against WRF v4.6.1 Rust 8 4"
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    }
+  ]
+}

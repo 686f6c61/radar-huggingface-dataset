@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "thundercode/SatQuery",
+  "slug": "thundercode-satquery",
+  "author": "thundercode",
+  "url": "https://huggingface.co/thundercode/SatQuery",
+  "created_at": "2026-09-25T16:26:53.000Z",
+  "updated_at": "2026-09-25T16:26:53.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Amityush-lgtm/satquery-ai: AI assistant for analyzing remote ...",
+      "url": "https://github.com/Amityush-lgtm/satquery-ai",
+      "snippet": "SatQuery AI is an interactive, agentic vision-language assistant for Earth Observation (EO) and remote sensing data. Instead of applying a single generic model, SatQuery AI automatically interprets natural language queries, validates input modalities, selects specialist remote-sensing tools, and returns evidence-grounded spatial and textual insights with transparent provenance."
+    },
+    {
+      "title": "GitHub - sakhana1/SatQuery-AI",
+      "url": "https://github.com/sakhana1/SatQuery-AI",
+      "snippet": "SatQuery-X is a production-grade remote-sensing AI platform enabling analysts, planners, and judges to ingest satellite imagery (Single Optical Image, Optical+SAR Cross-Modal Pair, or Bi-Temporal Pair) and ask natural-language questions. An agentic Small Language Model (SLM) orchestrator routes ..."
+    },
+    {
+      "title": "SatQuery AI — Satellite image Q&A",
+      "url": "https://satquery-iota.vercel.app/",
+      "snippet": "Ask satellite imagery in plain English — see the evidence on the map. Upload images or run a query. We route your question to the right AI model and show you highlighted map proof alongside a clear answer for regions across India."
+    },
+    {
+      "title": "SatQuery AI — Multimodal Remote Sensing Vision-Language Assistant",
+      "url": "https://sujans9b-sys.github.io/satquery-ai/",
+      "snippet": "SatQuery AI - Interactive Vision-Language Assistant for Multimodal Remote Sensing Image Analysis through Text Queries."
+    },
+    {
+      "title": "Nav0711/SatQuery at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/Nav0711/SatQuery/tree/main",
+      "snippet": "main SatQuery 17.5 MB Ctrl+K Ctrl+K 2 contributors History:9 commits Nav0711 Fix typo in demo.launch () dcef28e about 7 hours ago adapterDeploy SatQuery AI Space: app.py + QLoRA adapter + requirementsabout 8 hours ago .gitattributes Safe 1.52 kBinitial commitabout 8 hours ago README.md Safe 747 BytesDeploy SatQuery AI Space: app.py + QLoRA adapter + requirementsabout 8 hours ago app.py 4.9 ..."
+    }
+  ]
+}

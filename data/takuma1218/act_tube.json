@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Takuma1218/act_tube",
+  "slug": "takuma1218-act_tube",
+  "author": "Takuma1218",
+  "url": "https://huggingface.co/Takuma1218/act_tube",
+  "created_at": "2026-09-24T14:05:32.000Z",
+  "updated_at": "2026-09-25T02:57:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Takuma1218/test_run_20260924_114725",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 7434379248,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TAKUTO (@TAKUmaru1218) / X",
+      "url": "https://x.com/TAKUmaru1218",
+      "snippet": "@TAKUmaru1218 hasn&#x27;t posted When they do, their posts will show up here."
+    },
+    {
+      "title": "takuma AI Models | Civitai",
+      "url": "https://civitai.red/tag/takuma",
+      "snippet": "Browse 3 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with takuma."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    },
+    {
+      "title": "AI Roleplay Chat — Talk to AI Characters Free — Nakama AI",
+      "url": "https://nakamaai.app/",
+      "snippet": "Create and chat with AI roleplay characters. Anime, kemonomimi, fantasy and more. Free to start, no card — play in your browser or on Android."
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "shalev396/tiny-shakespeare-chat",
+  "slug": "shalev396-tiny-shakespeare-chat",
+  "author": "shalev396",
+  "url": "https://huggingface.co/shalev396/tiny-shakespeare-chat",
+  "created_at": "2026-09-25T14:30:46.000Z",
+  "updated_at": "2026-09-25T15:48:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ml-lab",
+    "pytorch",
+    "text-generation",
+    "gpt",
+    "from-scratch",
+    "character-level",
+    "shakespeare",
+    "chat",
+    "dataset:karpathy/tiny_shakespeare",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10751232,
+  "parameters_human": "10.8M",
+  "storage_bytes": 43218084,
+  "storage_human": "43 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Tiny Shakespeare",
+      "metric": "chat_val_loss",
+      "value": 1.053981
+    },
+    {
+      "task": null,
+      "dataset": "Tiny Shakespeare",
+      "metric": "chat_val_bpc",
+      "value": 1.520573
+    },
+    {
+      "task": null,
+      "dataset": "Tiny Shakespeare",
+      "metric": "chat_val_ppl",
+      "value": 2.869051
+    },
+    {
+      "task": null,
+      "dataset": "Tiny Shakespeare",
+      "metric": "text_val_loss",
+      "value": 1.295842
+    },
+    {
+      "task": null,
+      "dataset": "Tiny Shakespeare",
+      "metric": "text_val_bpc",
+      "value": 1.869505
+    }
+  ],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?dataset=dataset:tiny_shakespeare",
+      "snippet": "Active filters: tiny_shakespeare. Clear all. szymon-piechowicz-wandb/gpt. Updated Mar 17, 2023. 54nd339/ShakeGPT. Text Generation • Updated Apr 4, 2023 • 1"
+    },
+    {
+      "title": "GitHub - Sociloc/tiny-shakespeare: A repository that aims to implement ...",
+      "url": "https://github.com/Sociloc/tiny-shakespeare",
+      "snippet": "tiny-shakespeare This repository aims to implement the decoder transformer architecture for generating infinite Shakespearean text. Particularly, employing the use of PyTorch and Andrej Karpathy&#x27;s minbpe library as the primary modules."
+    },
+    {
+      "title": "GitHub - Khalil-SE/tiny_chatGPT_Shakespeare: A small custom chat GPT ...",
+      "url": "https://github.com/Khalil-SE/tiny_chatGPT_Shakespeare",
+      "snippet": "A small custom chat GPT trained on Shakespeare text (Bigram Char based model) - Khalil-SE/tiny_chatGPT_Shakespeare"
+    },
+    {
+      "title": "Tiny Shakespeare, tiny GPT | Debtirtha Saha",
+      "url": "https://debtirthasaha.github.io/blog/2026/tiny-shakespeare-tiny-gpt/",
+      "snippet": "A 1.83M-parameter decoder-only transformer trained on 1MB of Shakespeare. Architecture is identical to GPT-2, just smaller."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=tiny-shakespeare",
+      "snippet": "Full-text search Edit filters Sort: Trending Active filters: tiny-shakespeare Clear all"
+    }
+  ]
+}

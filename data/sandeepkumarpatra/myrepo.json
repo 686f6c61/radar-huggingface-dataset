@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SandeepKumarPatra/myrepo",
+  "slug": "sandeepkumarpatra-myrepo",
+  "author": "SandeepKumarPatra",
+  "url": "https://huggingface.co/SandeepKumarPatra/myrepo",
+  "created_at": "2026-09-25T15:12:15.000Z",
+  "updated_at": "2026-09-25T15:12:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "patrawtf (SANDEEP KUMAR PATRA) - Hugging Face",
+      "url": "https://huggingface.co/patrawtf/datasets",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 11 days ago ... liked a model 11 days ago ... liked a model about 2 months ago"
+    },
+    {
+      "title": "TeamResearch/MyRepo · Hugging Face",
+      "url": "https://huggingface.co/TeamResearch/MyRepo",
+      "snippet": "MyRepo This model is a fine-tuned version of prajjwal1/bert-tiny on the sst2 dataset."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    },
+    {
+      "title": "A Malicious Webpage Could Poison Your Local AI Model Behind NVIDIA NemoClaw",
+      "url": "https://thehackernews.com/2026/08/a-malicious-webpage-could-poison-your.html",
+      "snippet": "NVIDIA NemoClaw&#x27;s Windows-host Ollama path exposes an unauthenticated API that DNS rebinding could use to plant persistent model instructions."
+    }
+  ]
+}

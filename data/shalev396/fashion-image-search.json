@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "shalev396/fashion-image-search",
+  "slug": "shalev396-fashion-image-search",
+  "author": "shalev396",
+  "url": "https://huggingface.co/shalev396/fashion-image-search",
+  "created_at": "2026-09-25T14:30:25.000Z",
+  "updated_at": "2026-09-25T12:54:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "ml-lab",
+    "tensorflow",
+    "image-similarity",
+    "image-retrieval",
+    "fashion",
+    "image-feature-extraction",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24136207,
+  "storage_human": "24 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Fashion Product Images (Small)",
+      "metric": "p_at_1_master_category",
+      "value": 0.978
+    },
+    {
+      "task": null,
+      "dataset": "Fashion Product Images (Small)",
+      "metric": "p_at_5_master_category",
+      "value": 0.9704
+    },
+    {
+      "task": null,
+      "dataset": "Fashion Product Images (Small)",
+      "metric": "p_at_10_master_category",
+      "value": 0.9686
+    },
+    {
+      "task": null,
+      "dataset": "Fashion Product Images (Small)",
+      "metric": "p_at_1_article_type",
+      "value": 0.752
+    },
+    {
+      "task": null,
+      "dataset": "Fashion Product Images (Small)",
+      "metric": "p_at_5_article_type",
+      "value": 0.7284
+    },
+    {
+      "task": null,
+      "dataset": "Fashion Product Images (Small)",
+      "metric": "p_at_10_article_type",
+      "value": 0.7022
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fashion & Style AI — Identify Shoes, Clothing & Accessories by Photo",
+      "url": "https://fashion-style-ai.vercel.app/",
+      "snippet": "Free AI fashion identifier. Upload a photo of shoes, clothing, or accessories and discover the brand, model, and where to buy instantly. No registration required."
+    },
+    {
+      "title": "Free AI Clothing Identifier - piax.org",
+      "url": "https://www.piax.org/en/ai-image-analyze-tools/ai-clothing-identifier",
+      "snippet": "Identify clothing types, styles, and materials from photos instantly using AI-powered fashion recognition."
+    },
+    {
+      "title": "Find Clothing From a Picture | FetchFashion AI",
+      "url": "https://fetchfashion.ai/en/",
+      "snippet": "Your AI Fashion Finder Find the look. Pay less. Upload any screenshot. We identify every piece and find it from 1,000+ retailers, with cheaper lookalikes ranked by true visual match. A free AI fashion search engine: search any outfit by photo or by chat, with prices in your local currency."
+    },
+    {
+      "title": "Find Clothing From a Picture: Free AI Image Search",
+      "url": "https://fetchfashion.ai/en/ai-fashion-search/",
+      "snippet": "Free reverse image search for clothes: upload any picture and our AI finds the exact piece, or a cheaper dupe, across 1,000+ retailers. No sign-up."
+    },
+    {
+      "title": "FASHN | The Fashion AI Agent for E-commerce Brands",
+      "url": "https://fashn.ai/",
+      "snippet": "General image generators are built for any subject, and they often reinterpret garments, changing a print, a neckline, or a logo. FASHN combines fashion-specific AI models, including its own virtual try-on model, with leading general-purpose AI models, and the FASHN Agent picks the right one for each task, so products stay recognizable across ..."
+    }
+  ]
+}

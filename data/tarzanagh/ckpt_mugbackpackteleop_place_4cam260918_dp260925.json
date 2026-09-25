@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_dp260925",
+  "slug": "tarzanagh-ckpt_mugbackpackteleop_place_4cam260918_dp260925",
+  "author": "tarzanagh",
+  "url": "https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_dp260925",
+  "created_at": "2026-09-25T12:33:51.000Z",
+  "updated_at": "2026-09-25T12:34:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "bimanual",
+    "dexterous-manipulation",
+    "teleoperation",
+    "xhand1",
+    "dexmate-vega",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 267483430,
+  "parameters_human": "267.5M",
+  "storage_bytes": 1069971140,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tarzanagh/ckpt_psspteleop_putaside_4cam260629-260708_gr00t3b260816 ...",
+      "url": "https://huggingface.co/tarzanagh/ckpt_psspteleop_putaside_4cam260629-260708_gr00t3b260816",
+      "snippet": "The scale window is split at the velocity lull — the verified moment the box rests on the scale with the arms clear — giving separate place_on_scale and pick_from_scale skills. 8000 steps, model-only weights. Downloads last month -"
+    },
+    {
+      "title": "Tencent Hunyuan 3D",
+      "url": "https://3d-models.hunyuan.tencent.com/",
+      "snippet": "Physically-Based Rendering (PBR) material synthesis enables cinema-grade light interaction for leather, bronze, and other complex materials. By simulating physics-grounded parameters (diffuse reflection, metallic properties, normal maps), it achieves production-grade precision for game assets and industrial design."
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=dexmate-vega",
+      "snippet": "Active filters: dexmate-vega. Clear all. tarzanagh/ckpt_psspteleop_pickfromscale_4cam260810-260811_gr00t3b260815. Robotics • Updated about 19 hours ago. tarzanagh/ckpt_psspteleo"
+    },
+    {
+      "title": "Model Zoo",
+      "url": "https://www.modelzoo.co/",
+      "snippet": "The model is trained on Cornell Grasping Dataset. This is an implementation mainly based on the paper &#x27;Real-Time Grasp Detection Using Convolutional Neural Networks&#x27; from Redmon and Angelova."
+    }
+  ]
+}

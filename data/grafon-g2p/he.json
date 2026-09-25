@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "grafon-g2p/he",
+  "slug": "grafon-g2p-he",
+  "author": "grafon-g2p",
+  "url": "https://huggingface.co/grafon-g2p/he",
+  "created_at": "2026-09-25T14:42:58.000Z",
+  "updated_at": "2026-09-25T14:44:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "grafon",
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "grafon",
+    "safetensors",
+    "g2p",
+    "phonemes",
+    "ipa",
+    "grapheme-to-phoneme",
+    "text-to-speech",
+    "he",
+    "base_model:dicta-il/neodictabert",
+    "base_model:finetune:dicta-il/neodictabert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 398006814,
+  "parameters_human": "398.0M",
+  "storage_bytes": 796041172,
+  "storage_human": "796 MB",
+  "base_model": "dicta-il/neodictabert",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Graphon, the Multimodal Memory for AI",
+      "url": "https://www.graphon.ai/",
+      "snippet": "Graphon finds and connects meaningful moments, people, places and things across videos, images and text, and turns them into context, so AI can actually work."
+    },
+    {
+      "title": "Data Driven Grapheme-to-Phoneme Representations for a Lexicon-Free",
+      "url": "https://arxiv.org/html/2401.10465v1",
+      "snippet": "In this paper, we propose a new mechanism to train the Grapheme-to-Phoneme model without the need of any lexicon. We use Text-to-Speech as a use-case to show the effectiveness of our G2P model. We first use unlabeled speech data to pre-train a HuBERT [15] for three iterations."
+    },
+    {
+      "title": "speechbrain/soundchoice-g2p · Hugging Face",
+      "url": "https://huggingface.co/speechbrain/soundchoice-g2p",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Grapheme-to-Phoneme Models — NVIDIA NeMo Framework User Guide",
+      "url": "https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/tts/g2p.html",
+      "snippet": "A single model that can handle OOVs and heteronyms and replace dictionary lookups can significantly simplify and improve the quality of synthesized speech. We support the following G2P models: ByT5 G2P a text-to-text model that is based on ByT5 [g2p-3] neural network model that was originally proposed in [g2p-5] and [g2p-4]."
+    },
+    {
+      "title": "G2P Model: Neural Grapheme-to-Phoneme Mapping",
+      "url": "https://www.emergentmind.com/topics/grapheme-to-phoneme-g2p-model",
+      "snippet": "A Grapheme-to-Phoneme (G2P) model is a computational system that maps written language sequences (graphemes) to their corresponding phonemic representations."
+    }
+  ]
+}

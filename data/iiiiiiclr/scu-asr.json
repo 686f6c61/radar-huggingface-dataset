@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "iiiiiiclr/SCU-ASR",
+  "slug": "iiiiiiclr-scu-asr",
+  "author": "iiiiiiclr",
+  "url": "https://huggingface.co/iiiiiiclr/SCU-ASR",
+  "created_at": "2026-09-25T13:47:38.000Z",
+  "updated_at": "2026-09-25T13:53:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "arxiv:2601.21337",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2349217408,
+  "parameters_human": "2.35B",
+  "storage_bytes": 4698521568,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abr-ai/asr-38m-v1-en · Hugging Face",
+      "url": "https://huggingface.co/abr-ai/asr-38m-v1-en",
+      "snippet": "ABR&#x27;s asr-38m-v1-en SSM The asr-38m-v1-en model is a State Space Model (SSM) with attention that performs automatic speech recognition (ASR), trained and released by Applied Brain Research (ABR). This model contains ~38m parameters, transcribes speech in English, and was trained on 15k hours of speech data (competitors use about 200k hours). SSMs are an ideal solution for streaming contexts ..."
+    },
+    {
+      "title": "abr-ai/asr-19m-v2-en-32b · Hugging Face",
+      "url": "https://huggingface.co/abr-ai/asr-19m-v2-en-32b",
+      "snippet": "ABR&#x27;s asr-19m-v2-en-32b SSM The asr-19m-v2-en-32b model is a State Space Model (SSM) with attention that performs automatic speech recognition (ASR), trained and released by Applied Brain Research (ABR). This model contains ~19m parameters, transcribes speech in English, and was trained on 15k hours of speech data (competitors use about 200k hours). SSMs are an ideal solution for streaming ..."
+    },
+    {
+      "title": "Revisiting ASR Error Correction with Specialized Models",
+      "url": "https://machinelearning.apple.com/research/asr-error-correction",
+      "snippet": "Language models play a central role in automatic speech recognition (ASR), yet most methods rely on text-only models unaware of ASR error…"
+    },
+    {
+      "title": "AI Model Radar — real-time AI model release tracking",
+      "url": "https://aimodelradar.app/",
+      "snippet": "The moment a new AI model appears on the radar, know what it is and what changed. Tracking OpenAI, Anthropic, Google and open-source releases."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    }
+  ]
+}

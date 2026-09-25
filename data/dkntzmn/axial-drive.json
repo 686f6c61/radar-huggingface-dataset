@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "DKNTZMN/axial-drive",
+  "slug": "dkntzmn-axial-drive",
+  "author": "DKNTZMN",
+  "url": "https://huggingface.co/DKNTZMN/axial-drive",
+  "created_at": "2026-09-25T16:24:10.000Z",
+  "updated_at": "2026-09-25T16:27:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "autonomous-driving",
+    "transformer",
+    "axial-attention",
+    "imitation-learning",
+    "simulation",
+    "reinforcement-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DKNTZMN · GitHub",
+      "url": "https://github.com/DKNTZMN",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "AI-based constitutive model simulator for predicting the axial load ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0950061825007767",
+      "snippet": "In the second phase, a machine learning-based model was used to predict the axial load-deflection of columns. A dataset containing 196 experimental results from an original study was compiled, including eight key input parameters selected for their relevance to predicting structural deflection under axial loads."
+    },
+    {
+      "title": "AI Model Downloads - 495 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "What is AI Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/what-is-ai-model/",
+      "snippet": "In today&#x27;s digital age, \"artificial intelligence\" (AI) has become widely known, often bringing to mind thoughts of futuristic robots and highly automated systems. However, at the heart of AI lies a fundamental concept: The AI model. But What exactly is an AI model, and how does it function? In this article, we delve into the intricacies of AI models, exploring their definition, creation ..."
+    },
+    {
+      "title": "AI - Loren Cook Company",
+      "url": "https://lorencook.com/product/ai/",
+      "snippet": "AI High Efficiency Tubeaxial Fan Highly efficient cast aluminum propeller axial, in-line. Direct drive, duct mounted. Propeller is available in a multiple number of blade and hub combinations along with pitch combinations. Commonly used to supply or exhaust air in areas where space is at a premium, like parking garages, stairwell or other tight ..."
+    }
+  ]
+}

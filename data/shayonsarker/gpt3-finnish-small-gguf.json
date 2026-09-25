@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ShayonSarker/gpt3-finnish-small-GGUF",
+  "slug": "shayonsarker-gpt3-finnish-small-gguf",
+  "author": "ShayonSarker",
+  "url": "https://huggingface.co/ShayonSarker/gpt3-finnish-small-GGUF",
+  "created_at": "2026-09-25T16:38:32.000Z",
+  "updated_at": "2026-09-25T16:59:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama.cpp",
+    "text-generation",
+    "finnish",
+    "bloom",
+    "base_model:TurkuNLP/gpt3-finnish-small",
+    "base_model:quantized:TurkuNLP/gpt3-finnish-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 185720832,
+  "parameters_human": "185.7M",
+  "storage_bytes": 722508096,
+  "storage_human": "723 MB",
+  "base_model": "TurkuNLP/gpt3-finnish-small",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TurkuNLP/gpt3-finnish-small · Hugging Face",
+      "url": "https://huggingface.co/TurkuNLP/gpt3-finnish-small",
+      "snippet": "TurkuNLP Finnish GPT-3-models are a model family of pretrained monolingual GPT-style language models that are based on BLOOM-architecture. Note that the models are pure language models, meaning that they are not instruction finetuned for dialogue or answering questions."
+    },
+    {
+      "title": "TurkuNLP/gpt3-finnish-small at main - Hugging Face",
+      "url": "https://huggingface.co/TurkuNLP/gpt3-finnish-small/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TurkuNLP",
+      "url": "https://turkunlp.org/gpt3-finnish",
+      "snippet": "We have trained generative GPT-3 -like models for Finnish. The models are documented in our manuscript FinGPT: Large Generative Models for a Small Language (PDF; see citation below). The models are available via the Hugging Face model repository: Finnish GPT-3 small Finnish GPT-3 medium Finnish GPT-3 large Finnish GPT-3 xl Finnish GPT-3 3B ..."
+    },
+    {
+      "title": "TurkuNLP/gpt3-finnish-small • hfviewer",
+      "url": "https://hfviewer.com/TurkuNLP/gpt3-finnish-small",
+      "snippet": "TurkuNLP/gpt3-finnish-small . The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task heads), edges follow the actual forward dataflow, and repeated blocks are grouped with their true repeat counts."
+    },
+    {
+      "title": "gpt3-finnish-small - promptlayer.com",
+      "url": "https://www.promptlayer.com/models/gpt3-finnish-small",
+      "snippet": "What is gpt3-finnish-small? gpt3-finnish-small is part of TurkuNLP&#x27;s Finnish GPT-3 model family, specifically designed for Finnish language text generation. As the smallest variant in the series with 186M parameters, it features 12 layers, 768 dimensional embeddings, and 12 attention heads. The model is built on the BLOOM architecture and trained on a comprehensive dataset of 300B tokens from ..."
+    }
+  ]
+}

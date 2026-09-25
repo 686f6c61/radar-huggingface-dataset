@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ailexleon/Artemis-31B-v1.2-mlx-4Bit",
+  "slug": "ailexleon-artemis-31b-v1-2-mlx-4bit",
+  "author": "ailexleon",
+  "url": "https://huggingface.co/ailexleon/Artemis-31B-v1.2-mlx-4Bit",
+  "created_at": "2026-09-25T15:56:45.000Z",
+  "updated_at": "2026-09-25T16:02:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "creative writing",
+    "roleplay",
+    "conversational",
+    "character-rp",
+    "storytelling",
+    "text-generation",
+    "en",
+    "base_model:TheDrummer/Artemis-31B-v1.2",
+    "base_model:quantized:TheDrummer/Artemis-31B-v1.2",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345280,
+  "parameters_human": "30.70B",
+  "storage_bytes": 17301554106,
+  "storage_human": "17.3 GB",
+  "base_model": "TheDrummer/Artemis-31B-v1.2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ailexleon/Artemis-31B-v1.2-mlx-4Bit · Hugging Face",
+      "url": "https://huggingface.co/ailexleon/Artemis-31B-v1.2-mlx-4Bit",
+      "snippet": "Instructions to use ailexleon/Artemis-31B-v1.2-mlx-4Bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use ailexleon/Artemis-31B-v1.2-mlx-4Bit with MLX:"
+    },
+    {
+      "title": "ailexleon/Artemis-31B-v1-mlx-4Bit · Hugging Face",
+      "url": "https://huggingface.co/ailexleon/Artemis-31B-v1-mlx-4Bit",
+      "snippet": "Instructions to use ailexleon/Artemis-31B-v1-mlx-4Bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Artemis 31b V1 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/artemis-31b-v1.html",
+      "snippet": "Download Artemis 31b V1 GGUF model. 34.6 GB, 38,221 downloads, 27 likes."
+    },
+    {
+      "title": "Artemis 31b V1h - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/artemis-31b-v1h.html",
+      "snippet": "Download Artemis 31b V1h GGUF model. 10.2 GB, 3,948 downloads, 20 likes."
+    },
+    {
+      "title": "Artemis 31B V1 by TheDrummer — VRAM 62.6GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/TheDrummer%2FArtemis-31B-v1,69lEchHqBDpE4lnqa9GTtN",
+      "snippet": "Artemis 31B V1 is an open-source language model by TheDrummer. Features: 31b LLM, VRAM: 62.6GB, LLM Explorer Score: 0.26."
+    }
+  ]
+}

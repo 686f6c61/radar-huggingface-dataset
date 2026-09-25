@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "quanda-bench-test/5d5968d-awa2_resnet50_MislabelingDetection_p10",
+  "slug": "quanda-bench-test-5d5968d-awa2_resnet50_mislabelingdetection_p10",
+  "author": "quanda-bench-test",
+  "url": "https://huggingface.co/quanda-bench-test/5d5968d-awa2_resnet50_MislabelingDetection_p10",
+  "created_at": "2026-09-25T12:31:22.000Z",
+  "updated_at": "2026-09-25T12:32:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23663602,
+  "parameters_human": "23.7M",
+  "storage_bytes": 473417160,
+  "storage_human": "473 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QANDA | Subject-Wide Problem Solving, Easier and More Accurate",
+      "url": "https://qanda.ai/",
+      "snippet": "Solve problems and get explanations for all subjects in one place. Study smarter and more efficiently with QANDA."
+    },
+    {
+      "title": "quanda) (",
+      "url": "https://quandax.com/",
+      "snippet": "Quandax UI © 2007 - 2026 Tous droits réservés Mentions légales Quandax UI"
+    },
+    {
+      "title": "quanda) (",
+      "url": "https://quandax.com/login",
+      "snippet": "Quandax UI En vous connectant, vous acceptez notre politique en matière de cookies"
+    },
+    {
+      "title": "Automation of customer care | Quanda",
+      "url": "https://www.quanda.com/",
+      "snippet": "Quanda is easy-to-use marketing software that helps you better understand and communicate with your customers so you don't …"
+    },
+    {
+      "title": "Quanda Marketing Tools",
+      "url": "https://login.onquanda.com/login/",
+      "snippet": "To login, please use the e-mail address you used to register with Quanda."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "LopamudraB/soundwave-lora-merged",
+  "slug": "lopamudrab-soundwave-lora-merged",
+  "author": "LopamudraB",
+  "url": "https://huggingface.co/LopamudraB/soundwave-lora-merged",
+  "created_at": "2026-09-25T12:27:23.000Z",
+  "updated_at": "2026-09-25T12:27:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519428,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LoRA Merge Combine Multiple Models Guide 2025 | Apatero",
+      "url": "https://www.apatero.com/blog/lora-merge-combine-multiple-models-guide-2025",
+      "snippet": "Master LoRA merging to combine multiple models for unique styles. Complete guide to merge techniques, tools, and best practices."
+    },
+    {
+      "title": "Model merging · Hugging Face",
+      "url": "https://huggingface.co/docs/peft/developer_guides/model_merging",
+      "snippet": "Model merging offers a solution to these challenges by combining multiple pretrained models into one model, giving it the combined abilities of each individual model without any additional training. PEFT provides several methods for merging models like a linear or SVD combination."
+    },
+    {
+      "title": "Saving and Merging Models | unslothai/unsloth-zoo | DeepWiki",
+      "url": "https://deepwiki.com/unslothai/unsloth-zoo/3.2-saving-and-merging-models",
+      "snippet": "This document details the model saving, LoRA weight merging, and format conversion utilities in Unsloth Zoo. The system provides efficient merging of LoRA adapters with base models, handling of quantized models including MXFP4 format, automatic Hugging Face Hub integration, and GGUF conversion for LLAMA.cpp deployment."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=downloads&search=nsfw+lora",
+      "snippet": "Explore machine learning models. Muapi/fanvue-onlyfans-ai-model-woman033-nsfw-photorealistic-character-lora-sdxl-sd1.5"
+    },
+    {
+      "title": "LoRA AI Models (18,011) | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 18,011 AI models tagged \"LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    }
+  ]
+}

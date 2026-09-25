@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nkkbr/Mini-K3-1H-llama-gqa-standard-v1",
+  "slug": "nkkbr-mini-k3-1h-llama-gqa-standard-v1",
+  "author": "nkkbr",
+  "url": "https://huggingface.co/nkkbr/Mini-K3-1H-llama-gqa-standard-v1",
+  "created_at": "2026-09-25T16:25:45.000Z",
+  "updated_at": "2026-09-25T16:25:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mini_k3",
+    "kimi-k3",
+    "pretraining",
+    "mixture-of-experts",
+    "llama-style-attention",
+    "architecture-ablation",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 966297344,
+  "parameters_human": "966.3M",
+  "storage_bytes": 1935700822,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AdultWork.com - Adult Service Providers & Erotic Content - Escorts ...",
+      "url": "https://www.adultwork.com/",
+      "snippet": "AdultWork.com is committed to providing a safe and anonymous environment where individuals can distribute and market their own …"
+    },
+    {
+      "title": "AdultWork.com - Login",
+      "url": "https://www.adultwork.com/AvailableToday.asp",
+      "snippet": "Log In Without Password Do not have an account? Register for Free"
+    },
+    {
+      "title": "AdultWork.com — Adult Entertainment, Live Webcams, Escorts & More",
+      "url": "https://m.adultwork.com/",
+      "snippet": "AdultWork.com is the UK's leading adult platform. Browse live webcams, book escorts, watch movies, and connect with adult …"
+    },
+    {
+      "title": "AdultWork.com",
+      "url": "https://wwwimg.adultwork.com/Home.asp",
+      "snippet": "Norwicholdie (94) Bi-curious 70 year old Male Norwich Norfolk View Gallery Private Gallery View Movies"
+    },
+    {
+      "title": "Find Escorts - AdultWork.com",
+      "url": "https://m.adultwork.com/escorts",
+      "snippet": "Escorts Open Map View Find escorts offering different services, kinks, and experiences to enjoy today."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "beaunix/basil-cnn",
+  "slug": "beaunix-basil-cnn",
+  "author": "beaunix",
+  "url": "https://huggingface.co/beaunix/basil-cnn",
+  "created_at": "2026-09-25T16:36:00.000Z",
+  "updated_at": "2026-09-25T16:45:17.000Z",
+  "license": "research-only-food101-derived",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "onnx",
+    "efficientnetv2",
+    "image-classification",
+    "food-classification",
+    "tensorflow",
+    "research-only",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81014602,
+  "storage_human": "81 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "beaunix (Bryan David Castano) - Hugging Face",
+      "url": "https://huggingface.co/beaunix",
+      "snippet": "AI & ML interests Artificial Vision, NLP, LLm, MLP, LSTM , Machine Learning and DL"
+    },
+    {
+      "title": "beaunix/aegis-sentinel at main - Hugging Face",
+      "url": "https://huggingface.co/beaunix/aegis-sentinel/tree/main",
+      "snippet": "beaunix / aegis-sentinel like 0 Video Classification PyTorch English computer-vision violence-detection resnet50 temporal-attention License:cc-by-nc-nd-4. Model card FilesFiles and versions xet Community Copy to bucket new main aegis-sentinel 298 MB Ctrl+K Ctrl+K 1 contributor History:4 commits beaunix create readme model card a55e7c1 verifiedabout 1 month ago .gitattributes Safe 1.52 ..."
+    },
+    {
+      "title": "Multimodal Optical Biosensing and 3D-CNN Fusion for Phenotyping ... - MDPI",
+      "url": "https://www.mdpi.com/2073-4395/16/1/55",
+      "snippet": "This study presents a multimodal optical biosensing and 3D convolutional neural network (3D-CNN) fusion framework for phenotyping physiological responses of basil under water-deficit stress. RGB, depth, and chlorophyll fluorescence (CF) imaging were integrated to capture complementary morphological and photosynthetic information."
+    },
+    {
+      "title": "beaunix AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/beaunix",
+      "snippet": "Browse AI models attributed to beaunix, sourced from verified model catalogs."
+    },
+    {
+      "title": "Exploiting Pre-Trained Convolutional Neural Networks for the Detection ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10304461/",
+      "snippet": "After a new dataset was created for the basil plant, pretrained convolutional neural network (CNN) models were used for the classification problem. DenseNet201, ResNet101V2, MobileNet and VGG16 pretrained models were used to classify N, P and K deficiencies; then, accuracy values were examined."
+    }
+  ]
+}

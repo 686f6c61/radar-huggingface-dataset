@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "shalev396/flan-t5-dialogue-summarizer",
+  "slug": "shalev396-flan-t5-dialogue-summarizer",
+  "author": "shalev396",
+  "url": "https://huggingface.co/shalev396/flan-t5-dialogue-summarizer",
+  "created_at": "2026-09-25T14:30:28.000Z",
+  "updated_at": "2026-09-25T15:14:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "ml-lab",
+    "pytorch",
+    "lora",
+    "summarization",
+    "dialogue-summarization",
+    "rag",
+    "dataset:knkarthick/dialogsum",
+    "base_model:google/flan-t5-base",
+    "base_model:adapter:google/flan-t5-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/flan-t5-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Moons - Lethal Company Wiki",
+      "url": "https://lethal-company.fandom.com/wiki/Moons",
+      "snippet": "Challenge moons, or weekly challenge moons, are specialized moons that are procedurally generated every week. Playing on a …Read more"
+    },
+    {
+      "title": "Secret Moons Guide in Lethal Company",
+      "url": "https://hardcoregamer.com/lethal-company-secret-moons-guide/",
+      "snippet": "Jan 20, 2025 · This is a guide about Lethal Company's secret moons, including how to access them, their risks, and the level of …"
+    },
+    {
+      "title": "Guide:Moon Guide | Lethal Company Wiki | Fandom",
+      "url": "https://lethal-company.fandom.com/wiki/Guide:Moon_Guide",
+      "snippet": "You don't find higher value scrap on a moon that has bad weather, so try to avoid landing on those moons when you can - assuming …"
+    },
+    {
+      "title": "Moons - Lethal Company Wiki",
+      "url": "https://lethal.miraheze.org/wiki/Moons",
+      "snippet": "Jul 30, 2026 · Moons are ordered roughly by difficulty in the ship's terminal. Easier moons have fewer hazards and lower scrap, while …"
+    },
+    {
+      "title": "All Lethal Company v50 New Moons - Destructoid",
+      "url": "https://www.destructoid.com/all-lethal-company-v50-new-moons/",
+      "snippet": "Apr 15, 2024 · In total, three moons have been added to the Lethal Company Version 50 update. One moon is publicly available via …"
+    }
+  ]
+}

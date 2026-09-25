@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "RobTeam/rob-1-flash-2b",
+  "slug": "robteam-rob-1-flash-2b",
+  "author": "RobTeam",
+  "url": "https://huggingface.co/RobTeam/rob-1-flash-2b",
+  "created_at": "2026-09-24T05:01:26.000Z",
+  "updated_at": "2026-09-25T02:13:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "russian",
+    "chat",
+    "ru",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 7286226624,
+  "storage_human": "7.3 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "robanik10101/rob-1-flash-2b at main - Hugging Face",
+      "url": "https://huggingface.co/robanik10101/rob-1-flash-2b/tree/main",
+      "snippet": "robanik10101 / rob-1-flash-2b Like 0 GGUF Russian llama.cpp russian chat conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "RobTeam (rob) - Hugging Face",
+      "url": "https://huggingface.co/RobTeam",
+      "snippet": "User profile of rob on Hugging Face Recent Activity updated a modelabout 1 hour ago RobTeam/rob-1-flash-2b published a modelabout 22 hours ago RobTeam/rob-1-flash-2b liked a model1 day ago RobTeam/qwen2.5-7b-ru-gguf View all activity"
+    },
+    {
+      "title": "Generalist AI Releases GEN-1.5: A Robot Foundation Model That Learns ...",
+      "url": "https://www.marktechpost.com/2026/08/24/generalist-ai-releases-gen-1-5-a-robot-foundation-model-that-learns-new-tasks-from-one-3-12-second-demo/",
+      "snippet": "Generalist AI has released GEN-1.5, a robot foundation model that learns a new physical task from a single demonstration. Drop 3-12 seconds of sensorimotor data into its 30-second context window, and the robot performs the task."
+    },
+    {
+      "title": "robu-ai-challenge-2026-ARDUINO/Dual_Phase_Robot at main - GitHub",
+      "url": "https://github.com/roybballb/robu-ai-challenge-2026-ARDUINO/tree/main/Dual_Phase_Robot",
+      "snippet": "A dual-brain autonomous agent utilizing Arduino UNO Q for local Vision/LLM processing and real-time differential kinematics. Official submission for the Arduino Physical AI Challenge (APC-2026-WB-3..."
+    },
+    {
+      "title": "RobloxAIBuilder Plugin - AI Assistant Coding & Copilot & Building",
+      "url": "https://devforum.roblox.com/t/robloxaibuilder-plugin-ai-assistant-coding-copilot-building/4528734",
+      "snippet": "By taking all of this into account, the AI can generate more accurate and consistent results that align with the existing project structure. AI Roblox Builder (Beta) Coding Assistant & Build whatever Roblox Artifact with GenAI"
+    }
+  ]
+}

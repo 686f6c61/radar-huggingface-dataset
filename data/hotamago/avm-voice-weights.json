@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "hotamago/avm-voice-weights",
+  "slug": "hotamago-avm-voice-weights",
+  "author": "hotamago",
+  "url": "https://huggingface.co/hotamago/avm-voice-weights",
+  "created_at": "2026-09-25T12:40:31.000Z",
+  "updated_at": "2026-09-25T13:00:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "voice-conversion",
+    "rvc",
+    "realtime",
+    "singing",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 429362760,
+  "storage_human": "429 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The New York Times - Breaking News, US News, World News and …",
+      "url": "https://www.nytimes.com/",
+      "snippet": "Live news, investigations, opinion, photos and video by the journalists of The New York Times from more than 150 countries around …Read more"
+    },
+    {
+      "title": "Today's Paper - The New York Times",
+      "url": "https://www.nytimes.com/section/todayspaper",
+      "snippet": "The compromise, if confirmed, would be the latest in a string of cybersecurity failures at the F.B.I., which said it was investigating the …"
+    },
+    {
+      "title": "Games | The New York Times Company",
+      "url": "https://www.nytco.com/games/",
+      "snippet": "Designed for real-time competition and social play, the game is available in the New York Times Crossplay app, which can be …"
+    },
+    {
+      "title": "The New York Times - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_New_York_Times",
+      "snippet": "It has expanded to several other publications, including The New York Times Magazine, The New York Times International Edition, …"
+    },
+    {
+      "title": "The New York Times",
+      "url": "https://myaccount.nytimes.com/seg",
+      "snippet": "Manage your New York Times account easily with options to sign in, reset password, and access help center resources."
+    }
+  ]
+}

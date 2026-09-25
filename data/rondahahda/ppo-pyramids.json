@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rondahahda/ppo-Pyramids",
+  "slug": "rondahahda-ppo-pyramids",
+  "author": "rondahahda",
+  "url": "https://huggingface.co/rondahahda/ppo-Pyramids",
+  "created_at": "2026-09-25T12:11:19.000Z",
+  "updated_at": "2026-09-25T12:12:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "Pyramids",
+    "ML-Agents-Pyramids",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10074352,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "roshana1s/ppo-Pyramids at main - Hugging Face",
+      "url": "https://huggingface.co/roshana1s/ppo-Pyramids/tree/main",
+      "snippet": "Instructions to use roshana1s/ppo-Pyramids with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ml-agents How to use roshana1s/ppo-Pyramids with ml-agents:"
+    },
+    {
+      "title": "ppo-Pyramids: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-rixhi05-ppo-pyramids",
+      "snippet": "ppo-Pyramids is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "LLM Leaderboard: AI Model Rankings & Pricing | llmboard.ai",
+      "url": "https://www.llmboard.ai/",
+      "snippet": "LLM Leaderboard rankings and benchmark intelligence LLM Leaderboard Use the LLM Leaderboard to compare the best AI models across capability, price, speed and LLM benchmarks. Find the best LLM for coding, reasoning, math and everyday work with ranking data in one place."
+    },
+    {
+      "title": "DitDahDitDit/ppo-PyramidsRND · Hugging Face",
+      "url": "https://huggingface.co/DitDahDitDit/ppo-PyramidsRND",
+      "snippet": "ppo Agent playing Pyramids This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "ppo-Pyramids:Ascend NPU adapted model (Model-Agent S2) - AtomGit AI社区",
+      "url": "https://ai.atomgit.com/zyzoe/ppo-Pyramids",
+      "snippet": "Unity ML-Agents PPO 训练的 Pyramids 金字塔导航策略（2×512 MLP，172 维向量观测：raycast 感知 + 目标 one-hot），本仓将其适配到华为昇腾 NPU 真实跑通推理。"
+    }
+  ]
+}

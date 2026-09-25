@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "t0m96/grainscape",
+  "slug": "t0m96-grainscape",
+  "author": "t0m96",
+  "url": "https://huggingface.co/t0m96/grainscape",
+  "created_at": "2025-12-13T11:48:05.000Z",
+  "updated_at": "2026-09-25T02:01:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17198298251,
+  "storage_human": "17.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Modelling, visualization and analysis with the `grainscape` package ...",
+      "url": "https://www.alexchubaty.com/grainscape/articles/grainscape_vignette.html",
+      "snippet": "The grainscape package provides functions to extract the minimum planar graph and create two types of grains of connectivity: patch and lattice forms. This reference begins by introducing these two model types, and concludes by demonstrating a variety of grainscape models, visualizations, and analyses using a consistent visual style."
+    },
+    {
+      "title": "CRAN: Package grainscape",
+      "url": "https://cran.r-project.org/package=grainscape",
+      "snippet": "Linking: Please use the canonical form https://CRAN.R-project.org/package=grainscape to link to this page."
+    },
+    {
+      "title": "GrainScape UltraReal Reviews | Rated 5 Stars by 21 Users on Civitai",
+      "url": "https://civitai.com/models/1332651/reviews?modelVersionId=3352222",
+      "snippet": "Explore user reviews of the GrainScape UltraReal AI model on Civitai, rated 5 stars by 21 users, and see how it has helped others bring their creative visions to life"
+    },
+    {
+      "title": "GitHub - achubaty/grainscape: Efficient Modelling of Landscape ...",
+      "url": "https://github.com/achubaty/grainscape",
+      "snippet": "grainscape Efficient Modelling of Landscape Connectivity, Habitat, and Protected Area Networks Given a landscape resistance surface, creates grains of connectivity and minimum planar graph models that can be used to calculate effective distances for landscape connectivity at multiple scales."
+    },
+    {
+      "title": "Danrisi/GrainScape_UltraReal_ZImage at main - Hugging Face",
+      "url": "https://huggingface.co/Danrisi/GrainScape_UltraReal_ZImage/blob/main/grainscape_zimage.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

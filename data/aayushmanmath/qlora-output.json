@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Aayushmanmath/qlora-output",
+  "slug": "aayushmanmath-qlora-output",
+  "author": "Aayushmanmath",
+  "url": "https://huggingface.co/Aayushmanmath/qlora-output",
+  "created_at": "2026-09-25T13:16:32.000Z",
+  "updated_at": "2026-09-25T13:16:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20173757,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs - GitHub",
+      "url": "https://github.com/artidoro/qlora",
+      "snippet": "Overview We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters (LoRA)."
+    },
+    {
+      "title": "Parameter-Efficient Fine-Tuning Methods for AI Models - Educative",
+      "url": "https://www.educative.io/courses/applied-ai-engineer/parameter-efficient-fine-tuning",
+      "snippet": "Explore parameter-efficient fine-tuning techniques such as LoRA and QLoRA to adjust large AI models for consistent structured outputs. Understand how low-rank adapters modify model behavior by training small matrices while keeping base weights fixed. Learn practical setup, training tips, and troubleshooting strategies to maintain format adherence and manage resource constraints during fine-tuning."
+    },
+    {
+      "title": "[2305.14314] QLoRA: Efficient Finetuning of Quantized LLMs",
+      "url": "https://arxiv.org/abs/2305.14314",
+      "snippet": "We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters~(LoRA). Our best model family, which we name Guanaco, outperforms all previous openly ..."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2305.14314",
+      "snippet": "QLoRA introduces an efficient finetuning method for quantized language models, enabling large-scale model training with reduced memory usage and high task performance."
+    },
+    {
+      "title": "QLoRA - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/QLoRA",
+      "snippet": "QLoRA (Quantized Low-Rank Adaptation) is an efficient finetuning method for large language models that backpropagates gradients through a frozen, four-bit quantized pretrained model into Low-Rank Adapters (LoRA)."
+    }
+  ]
+}

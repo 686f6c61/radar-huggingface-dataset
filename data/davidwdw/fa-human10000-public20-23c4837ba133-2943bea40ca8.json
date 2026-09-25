@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-human10000-public20-23c4837ba133-2943bea40ca8",
+  "slug": "davidwdw-fa-human10000-public20-23c4837ba133-2943bea40ca8",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-human10000-public20-23c4837ba133-2943bea40ca8",
+  "created_at": "2026-09-25T19:34:32.000Z",
+  "updated_at": "2026-09-25T19:34:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68923162,
+  "storage_human": "69 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ShayonSarker/BioClinical-ModernBERT-Embeddings-GGUF",
+  "slug": "shayonsarker-bioclinical-modernbert-embeddings-gguf",
+  "author": "ShayonSarker",
+  "url": "https://huggingface.co/ShayonSarker/BioClinical-ModernBERT-Embeddings-GGUF",
+  "created_at": "2026-09-25T16:38:33.000Z",
+  "updated_at": "2026-09-25T16:59:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "gguf",
+    "llama.cpp",
+    "embeddings",
+    "modernbert",
+    "biomedical",
+    "feature-extraction",
+    "base_model:NeuML/bioclinical-modernbert-base-embeddings",
+    "base_model:quantized:NeuML/bioclinical-modernbert-base-embeddings",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149014272,
+  "parameters_human": "149.0M",
+  "storage_bytes": 566088288,
+  "storage_human": "566 MB",
+  "base_model": "NeuML/bioclinical-modernbert-base-embeddings",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Layout design and desktop publishing software | Adobe InDesign",
+      "url": "https://www.adobe.com/products/indesign.html?msockid=2447995966626e1126488e8667786fd6",
+      "snippet": "Create layout designs. Publish printed books, brochures, digital magazines, flyers, and interactive online documents with Adobe …Read more"
+    },
+    {
+      "title": "[2506.10896] BioClinical ModernBERT: A State-of-the-Art Long-Context ...",
+      "url": "https://arxiv.org/abs/2506.10896",
+      "snippet": "BioClinical ModernBERT is developed through continued pretraining on the largest biomedical and clinical corpus to date, with over 53.5 billion tokens, and addresses a key limitation of prior clinical encoders by leveraging 20 datasets from ..."
+    },
+    {
+      "title": "InDesign Free Download & Free Trial | Adobe InDesign",
+      "url": "https://www.adobe.com/products/indesign/free-trial-download.html?msockid=2447995966626e1126488e8667786fd6",
+      "snippet": "Download the official full version of Adobe InDesign for free. Create & publish books, interactive PDFs, posters & more. Start …Read more"
+    },
+    {
+      "title": "BioClinical ModernBERT",
+      "url": "https://arxiv.org/pdf/2506.10896",
+      "snippet": "arXiv:2506.10896v1 [cs.CL] 12 Jun 2025 · BioClinical ModernBERT: A State-of-the-Art Long-Context Encoder for"
+    },
+    {
+      "title": "Adobe InDesign Download - 2026 21.5.1 | TechSpot",
+      "url": "https://www.techspot.com/downloads/6042-adobe-creative-cloud-indesign.html",
+      "snippet": "Aug 25, 2026 · Adobe InDesign is the industry-leading layout and page design software for print and digital media.Read more"
+    }
+  ]
+}

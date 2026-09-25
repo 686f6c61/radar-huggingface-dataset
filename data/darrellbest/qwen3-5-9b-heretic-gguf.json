@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "darrellbest/Qwen3.5-9B-Heretic-GGUF",
+  "slug": "darrellbest-qwen3-5-9b-heretic-gguf",
+  "author": "darrellbest",
+  "url": "https://huggingface.co/darrellbest/Qwen3.5-9B-Heretic-GGUF",
+  "created_at": "2026-09-25T16:37:16.000Z",
+  "updated_at": "2026-09-25T16:37:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "heretic",
+    "ara",
+    "abliterated",
+    "uncensored",
+    "qwen3.5",
+    "image-text-to-text",
+    "base_model:darrellbest/Qwen3.5-9B-Heretic",
+    "base_model:quantized:darrellbest/Qwen3.5-9B-Heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 34891636992,
+  "storage_human": "34.9 GB",
+  "base_model": "darrellbest/Qwen3.5-9B-Heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-9B-ultimate-irrefusable-heretic-GGUF - Hugging Face",
+      "url": "https://huggingface.co/llmfan46/Qwen3.5-9B-ultimate-irrefusable-heretic-GGUF/blob/main/README.md",
+      "snippet": "Qwen3.5-9B-GGUF GGUF quantizations of llmfan46/Qwen3.5-9B-ultimate-irrefusable-heretic. This is a decensored version of Qwen/Qwen3.5-9B, made using Heretic v1.2.0 with Magnitude-Preserving Orthogonal Ablation (MPOA) and Self-Organizing Map Abliteration (SOMA) Abliteration parameters"
+    },
+    {
+      "title": "Qwen3.5 9b Heretic - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-5-9b-heretic.html",
+      "snippet": "Download Qwen3.5 9b Heretic GGUF model. 5.02 GB, 930 downloads, 16 likes."
+    },
+    {
+      "title": "Qwen3.5-9B-ultimate-irrefusable-heretic-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-9B-ultimate-irrefusable-heretic-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 9b Heretic V2 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-5-9b-heretic-v2.html",
+      "snippet": "Download Qwen3.5 9b Heretic V2 GGUF model. 18.9 GB, 733 downloads, 7 likes."
+    },
+    {
+      "title": "AIAny - Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX ...",
+      "url": "https://aiany.app/item/qwen3-5-9b-the-defiant-fable-uncensored-heretic-neo-imatrix-max-mtp-gguf",
+      "snippet": "GGUF-quantized releases (NEO IMATRIX + MTP) of a multi-stage fine-tuned, uncensored Qwen3.5-9B model with vision enabled and a native 256k context window—optimized for instruction following, reasoning and image-text-to-text workflows; released under Apache-2.0."
+    }
+  ]
+}

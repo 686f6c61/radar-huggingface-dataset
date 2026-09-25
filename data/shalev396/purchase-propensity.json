@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "shalev396/purchase-propensity",
+  "slug": "shalev396-purchase-propensity",
+  "author": "shalev396",
+  "url": "https://huggingface.co/shalev396/purchase-propensity",
+  "created_at": "2026-09-25T14:30:39.000Z",
+  "updated_at": "2026-09-25T15:48:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "safetensors",
+    "ml-lab",
+    "pytorch",
+    "scikit-learn",
+    "tabular-classification",
+    "propensity",
+    "rfm",
+    "e-commerce",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3649,
+  "parameters_human": "3649",
+  "storage_bytes": 442615,
+  "storage_human": "442615 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Kaggle customer propensity sessions + UCI Online Retail",
+      "metric": "roc_auc",
+      "value": 0.997391
+    },
+    {
+      "task": null,
+      "dataset": "Kaggle customer propensity sessions + UCI Online Retail",
+      "metric": "pr_auc",
+      "value": 0.899513
+    },
+    {
+      "task": null,
+      "dataset": "Kaggle customer propensity sessions + UCI Online Retail",
+      "metric": "f1",
+      "value": 0.92451
+    },
+    {
+      "task": null,
+      "dataset": "Kaggle customer propensity sessions + UCI Online Retail",
+      "metric": "precision",
+      "value": 0.868924
+    },
+    {
+      "task": null,
+      "dataset": "Kaggle customer propensity sessions + UCI Online Retail",
+      "metric": "recall",
+      "value": 0.987693
+    },
+    {
+      "task": null,
+      "dataset": "Kaggle customer propensity sessions + UCI Online Retail",
+      "metric": "accuracy",
+      "value": 0.993237
+    }
+  ],
+  "sources": [
+    {
+      "title": "AI-Driven Propensity Modeling: How to Predict Next Purchase and Boost ...",
+      "url": "https://www.comarch.com/trade-and-services/loyalty-marketing/blog/ai-driven-propensity-modeling/",
+      "snippet": "Want to know what your customers will buy next? Our guide to AI propensity modeling will help you predict and influence customer behavior to boost loyalty."
+    },
+    {
+      "title": "GitHub - saranshkr/purchase-propensity-model: Propensity model to ...",
+      "url": "https://github.com/saranshkr/purchase-propensity-model",
+      "snippet": "Propensity model to predict a customer&#x27;s likelihood of purchasing a product from an online store based on past behaviour - saranshkr/purchase-propensity-model"
+    },
+    {
+      "title": "Website Purchase Propensity Model - GitHub",
+      "url": "https://github.com/malarahc/website-purchase-propensity-model",
+      "snippet": "Website Purchase Propensity Model Overview This project builds a machine learning model to predict the likelihood that a website browsing session will result in a purchase. Using session-level behavioral data, the model identifies high-intent users based on engagement signals such as page views and cart activity."
+    },
+    {
+      "title": "(PDF) Predicting Consumer Purchase Propensity in ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/390979758_Predicting_Consumer_Purchase_Propensity_in_Communication_Studies_Using_Big_Data_and_Artificial_Intelligence",
+      "snippet": "In the field of communication studies, the use of big data and artificial intelligence (AI), especially through natural language processing (NLP) models, to predict consumer purchase propensity has"
+    },
+    {
+      "title": "A Simplified Approach to Propensity Modeling - datacult.com",
+      "url": "https://www.datacult.com/post/propensity-modeling",
+      "snippet": "Build a Propensity Model Without the ML Overkill. This post breaks down a lightweight, production-ready approach to propensity modeling that any analytics engineer can run with Python, SQL, and a good hypothesis."
+    }
+  ]
+}

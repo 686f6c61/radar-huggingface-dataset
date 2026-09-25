@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "lighteternal/biodecision-tev1-4b-lora-v1.1",
+  "slug": "lighteternal-biodecision-tev1-4b-lora-v1-1",
+  "author": "lighteternal",
+  "url": "https://huggingface.co/lighteternal/biodecision-tev1-4b-lora-v1.1",
+  "created_at": "2026-09-25T07:16:46.000Z",
+  "updated_at": "2026-09-25T14:10:42.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "biomedical",
+    "clinical-trials",
+    "dataset:lighteternal/biodecision-sft-v2.2",
+    "dataset:lighteternal/biodecision-sft-v2.2-patch",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129927008,
+  "storage_human": "130 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lighteternal (Dimitris Papadopoulos) - Hugging Face",
+      "url": "https://huggingface.co/lighteternal/models",
+      "snippet": "User profile of Dimitris Papadopoulos on Hugging Face"
+    },
+    {
+      "title": "lighteternal (Dimitris Papadopoulos) - Hugging Face",
+      "url": "https://huggingface.co/lighteternal",
+      "snippet": "Follow 8 followers · 1 following https://www.linkedin.com/in/dimitris-papadopoulos lighteternal"
+    },
+    {
+      "title": "GitHub - ModelTC/LightX2V: Lightweight Image Video Action Generation ...",
+      "url": "https://github.com/ModelTC/lightx2v",
+      "snippet": "We&#x27;ve released high-performance LoRA checkpoints trained with multi-node multi-GPU setup, demonstrating significant improvements in aesthetic quality, motion coherence, and text-video alignment. Check out our model collection on HuggingFace! Give us a ⭐ if you find it useful!"
+    },
+    {
+      "title": "Top safe LORA models across all platforms - CivArchive",
+      "url": "https://civarchive.com/search?type=LORA",
+      "snippet": "Community-driven archive of AI models from CivitAI - Download deleted LoRA, Checkpoint, VAE, and other AI models for free."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    }
+  ]
+}

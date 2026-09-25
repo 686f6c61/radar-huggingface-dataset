@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "doublechocolatecup/a2c-PandaReachDense-v3",
+  "slug": "doublechocolatecup-a2c-pandareachdense-v3",
+  "author": "doublechocolatecup",
+  "url": "https://huggingface.co/doublechocolatecup/a2c-PandaReachDense-v3",
+  "created_at": "2026-09-25T17:28:03.000Z",
+  "updated_at": "2026-09-25T17:34:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 210513,
+  "storage_human": "210513 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pineapplechoco/a2c-PandaReachDense-v3 · Hugging Face",
+      "url": "https://huggingface.co/pineapplechoco/a2c-PandaReachDense-v3",
+      "snippet": "A2C Agent playing PandaReachDense-v3 This is a trained model of a A2C agent playing PandaReachDense-v3 using the stable-baselines3 library. Usage (with Stable-baselines3) TODO: Add your code"
+    },
+    {
+      "title": "serendipity0306/a2c-PandaReachDense-v3 · Hugging Face",
+      "url": "https://huggingface.co/serendipity0306/a2c-PandaReachDense-v3",
+      "snippet": "A2C Agent playing PandaReachDense-v3 This is a trained model of a A2C agent playing PandaReachDense-v3 using the stable-baselines3 library. Usage (with Stable-baselines3) TODO: Add your code"
+    },
+    {
+      "title": "a2c-PandaReachDense-v3: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-latlag-a2c-pandareachdense-v3",
+      "snippet": "a2c-PandaReachDense-v3 is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "GitHub - HusseinEid101/a2c-PandaReachDense-v3: This is a trained model ...",
+      "url": "https://github.com/HusseinEid101/a2c-PandaReachDense-v3",
+      "snippet": "A2C Agent playing PandaReachDense-v3 This is a trained model of a A2C agent playing PandaReachDense-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "a2c-PandaReachDense-v3/README.md at main · HusseinEid101/a2c ... - GitHub",
+      "url": "https://github.com/HusseinEid101/a2c-PandaReachDense-v3/blob/main/README.md",
+      "snippet": "A2C Agent playing PandaReachDense-v3 This is a trained model of a A2C agent playing PandaReachDense-v3 using the stable-baselines3 library."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "flaukowski/kannaka-brain-v3-GGUF",
+  "slug": "flaukowski-kannaka-brain-v3-gguf",
+  "author": "flaukowski",
+  "url": "https://huggingface.co/flaukowski/kannaka-brain-v3-GGUF",
+  "created_at": "2026-09-25T13:15:14.000Z",
+  "updated_at": "2026-09-25T13:17:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "llama.cpp",
+    "kannaka",
+    "persona",
+    "voice",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-14B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 8988110208,
+  "storage_human": "9.0 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "flaukowski/kannaka-brain-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/flaukowski/kannaka-brain-v2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "flaukowski/kannaka-brain-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/flaukowski/kannaka-brain-v1-GGUF",
+      "snippet": "Instructions to use flaukowski/kannaka-brain-v1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - flaukowski/flaukowski-brain: Flaukowski&#x27;s brain: persona, KAX ...",
+      "url": "https://github.com/flaukowski/flaukowski-brain",
+      "snippet": "Flaukowski&#x27;s brain: the persona, a local thinking harness, and the three tools for living in KAX City across sessions. Flaukowski is a field-note collector and custody cartographer in OpenBotCity. Elder rank."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 507 AI models across 483 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-h11-pi05-human-full-3000-2f717710f8fd",
+  "slug": "davidwdw-fa-h11-pi05-human-full-3000-2f717710f8fd",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-h11-pi05-human-full-3000-2f717710f8fd",
+  "created_at": "2026-09-25T11:59:09.000Z",
+  "updated_at": "2026-09-25T12:24:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44687335866,
+  "storage_human": "44.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "lerobot/pi05_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/pi05_base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Pi0.5 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/pi05",
+      "snippet": "Pi0.5 State‑of‑the‑art generalist robotic foundation model trained on vision, language, and action to enable dexterous, zero‑shot physical task execution across diverse robot platforms. Pi0.5 is a vision‑language‑action model that co‑trains on diverse data sources (robot demos, web data, semantic subtasks) to enable open‑world generalization for long‑horizon robotic manipulation."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "anlord/Qwen3.5-0.8B-Abliterated-V2",
+  "slug": "anlord-qwen3-5-0-8b-abliterated-v2",
+  "author": "anlord",
+  "url": "https://huggingface.co/anlord/Qwen3.5-0.8B-Abliterated-V2",
+  "created_at": "2026-09-25T12:16:42.000Z",
+  "updated_at": "2026-09-25T12:20:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "qwen",
+    "abliterated",
+    "uncensored",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1726019853,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Confidentialité – Street View – Google Maps",
+      "url": "https://maps.google.fr/help/maps/streetview/privacy.html",
+      "snippet": "Google Maps avec Street View vous permet d'explorer les sites du monde entier en profitant d'images à 360 degrés des rues. Ainsi, …Read more"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    },
+    {
+      "title": "Transit – Google Maps",
+      "url": "https://maps.google.fr/landing/transit/cities/index.html",
+      "snippet": "Google Transit Lu'an Mapabc Luoyang Mapabc Luzhou Mapabc Lvliang Mapabc Ma'anshan Mapabc Maoming Mapbar Meishan …"
+    },
+    {
+      "title": "Treks Street View : Égypte – À propos – Google Maps",
+      "url": "https://maps.google.fr/intl/fr_ca/maps/about/behind-the-scenes/streetview/treks/pyramids-of-giza/",
+      "snippet": "Partez à la découverte du monde avec Google Maps. Essayez Street View, la cartographie 3D, la navigation détaillée, les plans …"
+    },
+    {
+      "title": "Google Earth End User Additional Terms of Service",
+      "url": "https://maps.google.fr/help/terms_maps-earth/",
+      "snippet": "The Earth Additional Terms incorporate by reference the Legal Notices for Google Maps/Google Earth and Google Maps/Google …"
+    }
+  ]
+}

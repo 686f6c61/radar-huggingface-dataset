@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ronijfgsh/swahili-gemma-2-9b-it-lora",
+  "slug": "ronijfgsh-swahili-gemma-2-9b-it-lora",
+  "author": "ronijfgsh",
+  "url": "https://huggingface.co/ronijfgsh/swahili-gemma-2-9b-it-lora",
+  "created_at": "2026-09-25T17:40:43.000Z",
+  "updated_at": "2026-09-25T17:40:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma2",
+    "trl",
+    "en",
+    "base_model:unsloth/gemma-2-9b-it-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-2-9b-it-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 254755007,
+  "storage_human": "255 MB",
+  "base_model": "unsloth/gemma-2-9b-it-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 2 Swahili - GitHub",
+      "url": "https://github.com/Gemma-2-Swahili/Gemma-2-Swahili",
+      "snippet": "Gemma 2 Swahili is a comprehensive suite of language models specifically adapted for Swahili language understanding and generation. This project brings advanced AI capabilities to over 200M Swahili speakers through efficient adaptation of Google&#x27;s Gemma 2 models."
+    },
+    {
+      "title": "GitHub - Alfaxad/gemma2-swahili-models",
+      "url": "https://github.com/Alfaxad/gemma2-swahili-models",
+      "snippet": "Gemma 2 Swahili is a comprehensive suite of language models specifically adapted for Swahili language understanding and generation. This project brings advanced AI capabilities to over 200M Swahili speakers through efficient adaptation of Google&#x27;s Gemma 2 models."
+    },
+    {
+      "title": "Alfaxad/gemma2-9b-swahili-it · Hugging Face",
+      "url": "https://huggingface.co/Alfaxad/gemma2-9b-swahili-it",
+      "snippet": "Gemma2-9B-Swahili-IT is a state-of-the-art open variant of Google&#x27;s Gemma2-9B-IT model, fine-tuned for natural Swahili language understanding and generation. This model demonstrates strong performance across various language tasks while maintaining efficient resource usage."
+    },
+    {
+      "title": "Run Gemma2-9B-swahili-it API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/Alfaxad/gemma2-9b-swahili-it",
+      "snippet": "Overview Alfaxad/gemma2-9b-swahili-it is a 9 billion parameter decoder-only transformer model developed by Alfaxad Eyembe. It is a fine-tuned variant of Google&#x27;s Gemma2-9B-IT, specifically optimized for the Swahili language. The model was fine-tuned using Low-Rank Adaptation (LoRA) on a comprehensive dataset of 67,017 Swahili instruction-response pairs, totaling over 16 million tokens."
+    },
+    {
+      "title": "Gemma 2 Swahili - a Alfaxad Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Alfaxad/gemma-2-swahili-678c96591c0169c0bc1d4c34",
+      "snippet": "Gemma 2 Swahili is a family of lightweight, state-of-the-art Swahili variants of Gemma 2 models."
+    }
+  ]
+}

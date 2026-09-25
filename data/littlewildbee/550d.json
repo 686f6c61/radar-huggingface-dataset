@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "littlewildbee/550d",
+  "slug": "littlewildbee-550d",
+  "author": "littlewildbee",
+  "url": "https://huggingface.co/littlewildbee/550d",
+  "created_at": "2026-09-25T13:21:47.000Z",
+  "updated_at": "2026-09-25T13:30:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "dataset:wikimedia/wikipedia",
+    "dataset:Skylion007/openwebtext",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "littlewildbee2 (littlewildbee) - Hugging Face",
+      "url": "https://huggingface.co/littlewildbee2",
+      "snippet": "deepseek googlecolab AI & ML interests Organizations"
+    },
+    {
+      "title": "Free AI 3D Model Generator | Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Free AI 3D Model Generator: create 3D models from text or images for games, AR/VR, and 3D printing at zero cost."
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 507 AI models across 483 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "irambv05/contrastive",
+  "slug": "irambv05-contrastive",
+  "author": "irambv05",
+  "url": "https://huggingface.co/irambv05/contrastive",
+  "created_at": "2026-09-25T13:46:05.000Z",
+  "updated_at": "2026-09-25T13:46:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "irambv05/coca-finetuned-2024 · Hugging Face",
+      "url": "https://huggingface.co/irambv05/coca-finetuned-2024",
+      "snippet": "irambv05 / coca-finetuned-2024 like 0 Safetensors PyTorch coca contrastive License:mit Model card FilesFiles and versions xet Community Copy to bucket new Coca for Contrastive Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "irambv05 (Ira Mishra) - Hugging Face",
+      "url": "https://huggingface.co/irambv05",
+      "snippet": "Self-taught ML practitioner. Coffee-driven. Recent Activity updated a modelabout 15 hours ago irambv05/coca-finetuned-2024 published a modelabout 15 hours ago irambv05/coca-finetuned-2024 updated a modelabout 15 hours ago irambv05/classification-fast View all activity"
+    },
+    {
+      "title": "Contrastive-LM Unveils Fast-Scoring AI Model Amid Meta&#x27;s Muse Expansion",
+      "url": "https://www.techaimag.com/ai-news/contrastive-lm-unveils-fast-scoring-ai-model-amid-metas-muse-expansion",
+      "snippet": "Today&#x27;s AI landscape features significant advancements with Contrastive-LM&#x27;s new model and Meta&#x27;s commitment to its AI agent Muse, alongside notable developments in AI technology and applications."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 507 AI models across 483 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Contrastive-LM releases open model for scoring AI agent actions",
+      "url": "https://techandbusiness.org/newswire/j3FNwr1cqW-EVRvo_suS3y",
+      "snippet": "Contrastive-LM has released CLM-8B, an open model that scores possible actions for an AI agent instead of generating text. It compares a description of the current situation with candidate actions, then returns probabilities that software can use to choose a tool or rank proposed solutions."
+    }
+  ]
+}

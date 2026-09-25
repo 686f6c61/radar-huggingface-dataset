@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "blake-lucas/Qwen3.5-4B-DFlash-W4A16-MSE-G32-BF16-QKV",
+  "slug": "blake-lucas-qwen3-5-4b-dflash-w4a16-mse-g32-bf16-qkv",
+  "author": "blake-lucas",
+  "url": "https://huggingface.co/blake-lucas/Qwen3.5-4B-DFlash-W4A16-MSE-G32-BF16-QKV",
+  "created_at": "2026-09-25T16:02:17.000Z",
+  "updated_at": "2026-09-25T16:03:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3",
+    "qwen3.5",
+    "dflash",
+    "speculative-decoding",
+    "draft-model",
+    "int4",
+    "w4a16",
+    "mixed-precision",
+    "compressed-tensors",
+    "text-generation",
+    "custom_code",
+    "base_model:z-lab/Qwen3.5-4B-DFlash",
+    "base_model:quantized:z-lab/Qwen3.5-4B-DFlash",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 634425856,
+  "parameters_human": "634.4M",
+  "storage_bytes": 492590640,
+  "storage_human": "493 MB",
+  "base_model": "z-lab/Qwen3.5-4B-DFlash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "blake-lucas/Qwen3.5-4B-DFlash-W4A16-MSE-G32-BF16-QKV · Hugging Face",
+      "url": "https://huggingface.co/blake-lucas/Qwen3.5-4B-DFlash-W4A16-MSE-G32-BF16-QKV",
+      "snippet": "Qwen3.5-4B DFlash INT4 MSE G32 with BF16 QKV This is a speculative draft, not a standalone chat model. It derives from z-lab/Qwen3.5-4B-DFlash, weights revision ..."
+    },
+    {
+      "title": "z-lab/Qwen3.5-4B-DFlash · Hugging Face",
+      "url": "https://huggingface.co/z-lab/Qwen3.5-4B-DFlash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3.5 4B DFlash by z-lab — VRAM 1.3GB, 256K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/z-lab%2FQwen3.5-4B-DFlash,76bocmc0tItBnIF3zySyLL",
+      "snippet": "Qwen3.5 4B DFlash is an open-source 4b LLM by z-lab. VRAM 1.3GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.5 4B DFlash — Hardware Requirements & Compatibility",
+      "url": "https://llmrun.dev/model/z-lab-qwen3-5-4b-dflash",
+      "snippet": "Qwen3.5 4B DFlash 537M needs 1.40 GB VRAM at BF16. See compatible GPUs, quantization options, and estimated performance for Qwen3.5 4B DFlash."
+    }
+  ]
+}

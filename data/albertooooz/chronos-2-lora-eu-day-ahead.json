@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "albertooooz/chronos-2-lora-eu-day-ahead",
+  "slug": "albertooooz-chronos-2-lora-eu-day-ahead",
+  "author": "albertooooz",
+  "url": "https://huggingface.co/albertooooz/chronos-2-lora-eu-day-ahead",
+  "created_at": "2026-09-25T17:41:52.000Z",
+  "updated_at": "2026-09-25T17:41:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "chronos-2",
+    "time-series-forecasting",
+    "energy",
+    "electricity-prices",
+    "day-ahead",
+    "europe",
+    "entso-e",
+    "dataset:custom",
+    "base_model:amazon/chronos-2",
+    "base_model:adapter:amazon/chronos-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4854584,
+  "storage_human": "5 MB",
+  "base_model": "amazon/chronos-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "albertooooz/chronos-2-lora-pl-day-ahead · Hugging Face",
+      "url": "https://huggingface.co/albertooooz/chronos-2-lora-pl-day-ahead",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "albertooooz (albert zagrajek) - Hugging Face",
+      "url": "https://huggingface.co/albertooooz",
+      "snippet": "User profile of albert zagrajek on Hugging Face"
+    },
+    {
+      "title": "Chronos — Foundation Models for Time Series",
+      "url": "https://chronos-ts.ai/",
+      "snippet": "Chronos is a family of pretrained foundation models for time-series forecasting from Amazon Science — now past a billion cumulative downloads on Hugging Face."
+    },
+    {
+      "title": "AI News Today — September 25, 2026 | Latest AI Updates | AI Herald",
+      "url": "https://artificialintelligenceherald.com/ai-news-today",
+      "snippet": "AI News Today The latest artificial intelligence news, model releases, research breakthroughs, and industry updates — curated daily by AI Herald."
+    },
+    {
+      "title": "GitHub - amazon-science/chronos-forecasting: Chronos: Pretrained Models ...",
+      "url": "https://github.com/amazon-science/chronos-forecasting",
+      "snippet": "This package provides an interface to the Chronos family of pretrained time series forecasting models. The following model types are supported. Chronos-2: Our latest model with significantly enhanced capabilities. It offers zero-shot support for univariate, multivariate, and covariate-informed forecasting tasks. Chronos-2 delivers state-of-the-art zero-shot performance across multiple ..."
+    }
+  ]
+}

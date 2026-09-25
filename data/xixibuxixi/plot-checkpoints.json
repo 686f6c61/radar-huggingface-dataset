@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "xixibuxixi/plot-checkpoints",
+  "slug": "xixibuxixi-plot-checkpoints",
+  "author": "xixibuxixi",
+  "url": "https://huggingface.co/xixibuxixi/plot-checkpoints",
+  "created_at": "2026-09-13T23:13:26.000Z",
+  "updated_at": "2026-09-25T03:22:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32073642572,
+  "storage_human": "32.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Checkpoint AI Models (141) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 141 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "GitHub - xixibuxixi23/Plot",
+      "url": "https://github.com/xixibuxixi23/Plot",
+      "snippet": "PLOT PLOT 是 Multi-Inhabitant World Models with Writable 3D Memory 的主代码仓库， 包含 M1-M4、数据适配器、训练入口、索引和固定的上游权重。大规模数据、训练输出和 新 checkpoint 不进入 Git。"
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    },
+    {
+      "title": "xixibuxixi (Cauthy) - Hugging Face",
+      "url": "https://huggingface.co/xixibuxixi/datasets",
+      "snippet": "Sort: Recently updated. xixibuxixi/polis-v1. Updated 2 minutes ago. xixibuxixi/2daction-stage2. Preview • Updated 17 days ago • 572. System theme"
+    },
+    {
+      "title": "xixibuxixi (Cauthy) - Hugging Face",
+      "url": "https://huggingface.co/xixibuxixi/models",
+      "snippet": "Recent Activity updated a dataset10 days ago xixibuxixi/2daction-stage2 published a dataset10 days ago xixibuxixi/2daction-stage2 published a modelabout 2 months ago xixibuxixi/Muti3d-full View all activity"
+    }
+  ]
+}

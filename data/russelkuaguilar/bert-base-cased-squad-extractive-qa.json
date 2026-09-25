@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "RusselKuAguilar/bert-base-cased-squad-extractive-qa",
+  "slug": "russelkuaguilar-bert-base-cased-squad-extractive-qa",
+  "author": "RusselKuAguilar",
+  "url": "https://huggingface.co/RusselKuAguilar/bert-base-cased-squad-extractive-qa",
+  "created_at": "2026-09-25T12:42:59.000Z",
+  "updated_at": "2026-09-25T12:44:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "question-answering",
+    "pytorch",
+    "squad",
+    "extractive-qa",
+    "en",
+    "dataset:rajpurkar/squad",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 107721218,
+  "parameters_human": "107.7M",
+  "storage_bytes": 430908184,
+  "storage_human": "431 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Urdu Sexy Story | PDF",
+      "url": "https://www.scribd.com/document/822407862/Urdu-sexy-story",
+      "snippet": "‫نہیں کرتی تو جا سکتی ہے بہن چود ۔\"‬. ‫اس نے نہایت غصے سے مجھے کہا ۔میری آنکھیں رو رو کر سوج گئی تھی کیونکہ میں اس سے محبت کرتی تھی ۔محںت کرتی‬. ‫تھی تبھی تو اس کے سامنے …"
+    },
+    {
+      "title": "Hot Urdu Sex Stories Collection | PDF - Scribd",
+      "url": "https://www.scribd.com/doc/82012850/Sexy-Urdu-Story",
+      "snippet": "Sexy Urdu Story - Free download as PDF File (.pdf), Text File (.txt) or read online for free. asimjaaan@gmail.com"
+    },
+    {
+      "title": "نئی شہوانی کہانیاں - Literotica.com",
+      "url": "https://urdu.literotica.com/new/stories",
+      "snippet": "نئی مفت شہوانی کہانیاں جو گزشتہ چند دنوں میں Literotica میں شامل ہوئیں۔"
+    },
+    {
+      "title": "میرے شوہر اور نوید نے اک ساتھ کی چدائی, urdu bold story",
+      "url": "https://gaandistory.blogspot.com/2023/02/urdu-bold-story.html",
+      "snippet": "Feb 22, 2023 · میرا خاوند اسلام ابادکے سرکاری دفتر میں کام کرتا ھے اور اکثر اوقات کام کے سلسلے میں اندورنی ملک اور بیرونی ملک دوروں پر جانا پڑتا ھے۔. بچے ھاسٹل میں …"
+    },
+    {
+      "title": "میں بھائی اور بہت کچھ - Blogger",
+      "url": "https://desiurduopen.blogspot.com/2021/07/blog-post_23.html",
+      "snippet": "Jul 23, 2021 · امّی اور ابو کے علاوہ میرا ایک بڑا بھائی تھا جو عمر میں مجھ سے دو سال بڑا تھا۔. یعنی وہ بھی سولہ برس کے ہو چکے تھے اور مونچھوں کی ہلکی لکیریں چہرے پر آ …"
+    }
+  ]
+}

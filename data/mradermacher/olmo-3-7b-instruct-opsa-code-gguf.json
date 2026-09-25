@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Olmo-3-7B-Instruct-OPSA-Code-GGUF",
+  "slug": "mradermacher-olmo-3-7b-instruct-opsa-code-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Olmo-3-7B-Instruct-OPSA-Code-GGUF",
+  "created_at": "2026-09-25T16:07:23.000Z",
+  "updated_at": "2026-09-25T16:45:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "opsa",
+    "code",
+    "text-generation",
+    "en",
+    "base_model:Tuwhy/Olmo-3-7B-Instruct-OPSA-Code",
+    "base_model:quantized:Tuwhy/Olmo-3-7B-Instruct-OPSA-Code",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 65147765760,
+  "storage_human": "65.1 GB",
+  "base_model": "Tuwhy/Olmo-3-7B-Instruct-OPSA-Code",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Olmo-3-7B-Instruct-OPSA-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Olmo-3-7B-Instruct-OPSA-GGUF",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use mradermacher/Olmo-3-7B-Instruct-OPSA-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Olmo 3 7b Instruct - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/olmo-3-7b-instruct.html",
+      "snippet": "Download Olmo 3 7b Instruct GGUF model. 14.7 GB, 3,505 downloads, 12 likes."
+    },
+    {
+      "title": "Olmo 3 7B: Private LLM for Ops Automation",
+      "url": "https://llm.co/llms/olmo-3-7b-instruct",
+      "snippet": "Open-Weight LLM · Private & Custom AI Olmo-3-7B-Instruct A 7B instruction-tuned model optimized for reasoning and tool use, deployable on modest hardware for private ops automation and custom AI applications. Olmo 3 7B Instruct is an open-weight model from Allen Institute trained via SFT, DPO, and reinforcement learning from verifiable rewards. It targets math, coding, instruction-following ..."
+    },
+    {
+      "title": "Olmo-3-7B-Instruct: Open-Source 7B LLM for Enterprise AI",
+      "url": "https://dev.co/ai/llms/olmo-3-7b-instruct",
+      "snippet": "Olmo-3-7B-Instruct Olmo-3-7B-Instruct is a 7.3B parameter open-source language model from Allen Institute for AI, optimized for instruction-following and multi-turn conversation. It undergoes three-stage training (SFT, DPO, RLVR) and supports math, coding, reasoning, and general knowledge tasks. Available under Apache 2.0 license with no access gates. Requires ~16-24 GB VRAM for full ..."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "A complete model flow To truly advance open AI development and research, the entire model flow - not just its endpoint - should be accessible and customizable. The model flow is the full lifecycle of an LM, starting with the data. Olmo 3 Model Flow Pretraining Midtraining Long context Olmo 3 Base Instruct SFT Instruct DPO Instruct RL Olmo 3 Instruct Thinking SFT Thinking DPO Thinking RL ..."
+    }
+  ]
+}

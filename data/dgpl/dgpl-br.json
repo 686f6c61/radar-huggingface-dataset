@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dgpl/dgpl-br",
+  "slug": "dgpl-dgpl-br",
+  "author": "dgpl",
+  "url": "https://huggingface.co/dgpl/dgpl-br",
+  "created_at": "2026-09-25T12:23:55.000Z",
+  "updated_at": "2026-09-25T12:26:49.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "autonomous-driving",
+    "decision-engine",
+    "system-1",
+    "multimodal",
+    "pytorch",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 233727650,
+  "storage_human": "234 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=dgpl",
+      "snippet": "Explore machine learning models. 3 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: dgpl Clear all"
+    },
+    {
+      "title": "GitHub - vk-alto-none/laya-vs-dgpl-arena: AI vs AI Decision Arena: Laya ...",
+      "url": "https://github.com/vk-alto-none/laya-vs-dgpl-arena",
+      "snippet": "Laya: Open source System-1 decision model by Nandha Kishor M (GitHub: @NandhaKishorM/laya · ConvAI Innovations). DGPL System-1 & BRPilot: High-throughput microsecond decision engine by Durbhasi Gurukulam Private Limited (DGPL) (br.durbhasigurukulam.com). Jev: System One decision API by TypeSafe AI (typesafe.ai)."
+    },
+    {
+      "title": "dgpl - ollama.com",
+      "url": "https://ollama.com/dgpl",
+      "snippet": "DGPL Linux Assistant 0.8B is an ultra-fast, expert, and production-safe Linux terminal copilot developed by Durbhasi Gurukulam Private Limited (DGPL). Runs 100% locally on standard CPU and RAM (512MB-1GB RAM)."
+    },
+    {
+      "title": "dgpl (durbhasi gurukulam private limited) - Hugging Face",
+      "url": "https://huggingface.co/dgpl/models",
+      "snippet": "Org profile for durbhasi gurukulam private limited on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Proceedings of the 2nd International Conference on Artificial ...",
+      "url": "https://dl.acm.org/doi/epdf/10.1145/3762329.3762341",
+      "snippet": "To address these challenges, we propose DGPL— a novel cross-view semantic segmentation perception model in BEV perspective—that effectively tackles the three aforementioned issues, achieving superior accuracy-speed balance while enhancing model robustness."
+    }
+  ]
+}

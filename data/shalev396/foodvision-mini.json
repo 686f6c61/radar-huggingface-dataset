@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "shalev396/foodvision-mini",
+  "slug": "shalev396-foodvision-mini",
+  "author": "shalev396",
+  "url": "https://huggingface.co/shalev396/foodvision-mini",
+  "created_at": "2026-09-25T14:30:38.000Z",
+  "updated_at": "2026-09-25T15:47:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ml-lab",
+    "pytorch",
+    "image-classification",
+    "food",
+    "efficientnet",
+    "transfer-learning",
+    "dataset:ethz/food101",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7772789,
+  "parameters_human": "7.8M",
+  "storage_bytes": 31288203,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Food-101 pizza/steak/sushi 20% subset",
+      "metric": "accuracy",
+      "value": 0.96
+    },
+    {
+      "task": null,
+      "dataset": "Food-101 pizza/steak/sushi 20% subset",
+      "metric": "f1_macro",
+      "value": 0.960556
+    },
+    {
+      "task": null,
+      "dataset": "Food-101 pizza/steak/sushi 20% subset",
+      "metric": "accuracy_pizza",
+      "value": 0.956522
+    },
+    {
+      "task": null,
+      "dataset": "Food-101 pizza/steak/sushi 20% subset",
+      "metric": "accuracy_steak",
+      "value": 0.948276
+    },
+    {
+      "task": null,
+      "dataset": "Food-101 pizza/steak/sushi 20% subset",
+      "metric": "accuracy_sushi",
+      "value": 0.978261
+    }
+  ],
+  "sources": [
+    {
+      "title": "FoodVision-Mini-App - GitHub",
+      "url": "https://github.com/Saud-Shakeel/FoodVision-Mini-App",
+      "snippet": "FoodVision-Mini-App Explore FoodVision Mini App—a PyTorch-driven marvel in Computer Vision! 🍕🥩🍣 Tailored for food enthusiasts and developers, it classifies Pizza, Steak, and Sushi, unraveling PyTorch&#x27;s deep learning magic."
+    },
+    {
+      "title": "shalev396 (Shalev Ben Moshe) - Hugging Face",
+      "url": "https://huggingface.co/shalev396",
+      "snippet": "I&#x27;m interested in on-device ML, scalable cloud deployments on AWS, generative AI, and deep learning. My current experience is mostly with third-party APIs - Vertex AI, Kling AI, OpenAI, ElevenLabs,..."
+    },
+    {
+      "title": "Foodvision Mini - a Hugging Face Space by AIGuardiansML",
+      "url": "https://huggingface.co/spaces/AIGuardiansML/foodvision_mini_demo",
+      "snippet": "FoodVision Mini 🍕🥩🍣 An EfficientNetB2 feature extractor computer vision model to classify images as pizza, steak or sushi."
+    },
+    {
+      "title": "Foodvision Mini - a Hugging Face Space by 3u89",
+      "url": "https://huggingface.co/spaces/3u89/foodvision_mini",
+      "snippet": "FoodVision Mini 🍕🥩🍣 An EfficientNetB2 feature extractor computer vision model to classify images of food as pizza, steak or sushi."
+    },
+    {
+      "title": "AI-pytorch-deep-learning/demos at main · TRB7/AI-pytorch-deep ... - GitHub",
+      "url": "https://github.com/TRB7/AI-pytorch-deep-learning/tree/main/demos",
+      "snippet": "FoodVision Demos The .zip files contained in this folder contain the files for creating the FoodVision Mini and FoodVision Big demos. The code to create these can be found in 09. PyTorch Model Deployment. Each .zip folder contains:"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rookierufus/sarm-camera",
+  "slug": "rookierufus-sarm-camera",
+  "author": "rookierufus",
+  "url": "https://huggingface.co/rookierufus/sarm-camera",
+  "created_at": "2026-09-25T15:17:29.000Z",
+  "updated_at": "2026-09-25T15:17:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "sarm",
+    "reward-model",
+    "so101",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119181320,
+  "parameters_human": "119.2M",
+  "storage_bytes": 476760840,
+  "storage_human": "477 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rookierufus (Rudraksh Arora) - Hugging Face",
+      "url": "https://huggingface.co/rookierufus/models",
+      "snippet": "AI & ML interests ... Recent Activity liked a dataset 1 day ago ... updated a Space 1 day ago"
+    },
+    {
+      "title": "rookierufus/probe · Hugging Face",
+      "url": "https://huggingface.co/rookierufus/probe",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - sbhrepo/raspberry-pi-ai-camera: A complete guide to setting up ...",
+      "url": "https://github.com/sbhrepo/raspberry-pi-ai-camera",
+      "snippet": "A complete guide to setting up and using the Raspberry Pi AI Camera. Covers installation, using built-in models and Python scripts, and running your own custom models. Great for getting started or expanding your AI projects on the Pi. - sbhrepo/raspberry-pi-ai-camera"
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "[2509.25358] SARM: Stage-Aware Reward Modeling for Long Horizon Robot ...",
+      "url": "https://arxiv.org/abs/2509.25358",
+      "snippet": "Large-scale robot learning has made progress on complex manipulation tasks, yet long horizon, contact rich problems, especially those involving deformable objects, remain challenging due to inconsistent demonstration quality. We propose a stage-aware, video-based reward modeling framework that jointly predicts task stage and fine-grained progress, using natural language subtask annotations to ..."
+    }
+  ]
+}

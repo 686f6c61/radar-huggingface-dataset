@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "YourHighnessLA/L0xRE-27b-Low",
+  "slug": "yourhighnessla-l0xre-27b-low",
+  "author": "YourHighnessLA",
+  "url": "https://huggingface.co/YourHighnessLA/L0xRE-27b-Low",
+  "created_at": "2026-09-25T15:21:49.000Z",
+  "updated_at": "2026-09-25T15:26:34.000Z",
+  "license": "qwen-research-terms-derivative",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "speculative-decoding",
+    "low-ram",
+    "27b",
+    "12gb-vram",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4784193024,
+  "parameters_human": "4.78B",
+  "storage_bytes": 10467565376,
+  "storage_human": "10.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YourHighnessLA (Sean YH) - Hugging Face",
+      "url": "https://huggingface.co/YourHighnessLA",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 22 days ago ... published a model 22 days ago"
+    },
+    {
+      "title": "YourHighnessLA (Sean YH) - Hugging Face",
+      "url": "https://huggingface.co/YourHighnessLA/models",
+      "snippet": "YourHighnessLA&#x27;s models1 Sort: Recently updated YourHighnessLA/Tess-4-27B-EAGLE3-GGUF 0.6B•Updated 14 days ago• 710 • 2"
+    },
+    {
+      "title": "Qwen3.8 27B Reasoning Benchmarks: Off vs Low vs Medium vs Xhigh",
+      "url": "https://kaitchup.substack.com/p/qwen38-27b-reasoning-benchmarks-off",
+      "snippet": "I benchmark Qwen3.8 27B with thinking off, low, medium, and xhigh to compare accuracy, token usage, and the best reasoning-effort trade-off."
+    },
+    {
+      "title": "Hemmingway-1: The 27B Open Model Trained to Write Like a Person",
+      "url": "https://www.mindstudio.ai/blog/hemmingway-1-writing-model",
+      "snippet": "Hemmingway-1 is a 27B Apache-2.0 model tuned for everyday writing that claims to beat GPT-6 Astra and Kimi K3 on human-likeness tests."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Alina-pavlov/learn-multimodal-generation68",
+  "slug": "alina-pavlov-learn-multimodal-generation68",
+  "author": "Alina-pavlov",
+  "url": "https://huggingface.co/Alina-pavlov/learn-multimodal-generation68",
+  "created_at": "2026-09-25T13:28:16.000Z",
+  "updated_at": "2026-09-25T13:28:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spa Alina, votre spécialiste Spa jacuzzi et Spa de nage",
+      "url": "https://www.spa-alina.com/",
+      "snippet": "Spa Alina vous propose une sélection de jacuzzi pas cher et de spas pas cher, intérieur et extérieur. Profitez d'offres spéciales sur …"
+    },
+    {
+      "title": "Achat Spa & Jacuzzi Extérieur : N°1 Français dès 2 990 € - Spa Alina",
+      "url": "https://www.spa-alina.com/gamme-spa/",
+      "snippet": "Sep 16, 2026 · Véritable espace bien-être à domicile, le spa privatif intérieur et extérieur Alina, facile à installer, avec son bain à …"
+    },
+    {
+      "title": "Prénom Alina (fille) : signification, origine, caractère, sainte, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/alina/prenom-6002",
+      "snippet": "Histoire du prénom Alina Alina vient d'Adeline dont il est un diminutif. Ce prénom vient du Moyen-Age, période à laquelle il est …"
+    },
+    {
+      "title": "Alina - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alina",
+      "snippet": "Alina is a feminine given name with multiple origins in different cultures. It might be a form of Aline, which originated as a shortened …"
+    },
+    {
+      "title": "Alinea - UN NOUVEAU CHAPITRE S'OUVRE BIENTÔT.",
+      "url": "https://www.alinea.com/",
+      "snippet": "Alinea se réinvente pour vous offrir une nouvelle expérience, toujours fidèle à son ADN. Inscrivez votre e-mail et soyez parmi les …"
+    }
+  ]
+}

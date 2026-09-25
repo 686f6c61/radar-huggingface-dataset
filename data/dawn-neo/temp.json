@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dawn-neo/temp",
+  "slug": "dawn-neo-temp",
+  "author": "dawn-neo",
+  "url": "https://huggingface.co/dawn-neo/temp",
+  "created_at": "2026-09-25T16:53:26.000Z",
+  "updated_at": "2026-09-25T17:03:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3059484998,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dawn: #1 Free Minecraft Client",
+      "url": "https://dawn.gg/",
+      "snippet": "Over 100 toggleable modules for Minecraft Java. Change your HUD, talk to friends and keep track of your world. Your friends. Your …"
+    },
+    {
+      "title": "Home - DAWN.COM",
+      "url": "https://www.dawn.com/",
+      "snippet": "Published about 3 hours ago READ MORE TOP STORIES Dawn News English Podcasts Subscribe"
+    },
+    {
+      "title": "Dawn for Aternos · Dawn",
+      "url": "https://dawn.gg/aternos",
+      "snippet": "Dawn is the official launcher for Aternos. Create, manage and join your server in one place. Offline servers start automatically when a …"
+    },
+    {
+      "title": "Latest - DAWN.COM",
+      "url": "https://www.dawn.com/latest-news",
+      "snippet": "Deaf and non-verbal since birth, as are her two younger brothers, Sana struggled to communicate until squash gave her a powerful …"
+    },
+    {
+      "title": "dawn - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/dawn",
+      "snippet": "Dans les listes : Top 2000 English words, Periods of the day, Examen UNIAndes, Suite... Synonymes : sunrise, daybreak, morning, …"
+    }
+  ]
+}

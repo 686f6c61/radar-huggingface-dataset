@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Tenry55/act_Pick_and_put_screw_driver_with_variance",
+  "slug": "tenry55-act_pick_and_put_screw_driver_with_variance",
+  "author": "Tenry55",
+  "url": "https://huggingface.co/Tenry55/act_Pick_and_put_screw_driver_with_variance",
+  "created_at": "2026-09-25T14:09:11.000Z",
+  "updated_at": "2026-09-25T14:10:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Tenry55/Pick_and_put_screw_driver_with_variance_20260925_193842",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714832,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chaînes arabes et maghreb en direct — TV arabe gratuite | RigarduMás",
+      "url": "https://rigardumas.com/tv-maghreb/",
+      "snippet": "TV arabe pour les francophones RigarduMás s’adresse aux téléspectateurs arabophones et francophones d’Europe et du Maghreb …"
+    },
+    {
+      "title": "MBC Shahid | Accueil",
+      "url": "https://shahid.mbc.net/fr?msockid=3ec44d9149746db32d1d5a4e48fc6c9a",
+      "snippet": "Regardez des drames saoudiens, des films du Golfe, la Roshn Saudi League en direct et les chaînes MBC en HD sur n’importe quel …"
+    },
+    {
+      "title": "Chaînes TV en arabe disponibles gratuitement par satellite",
+      "url": "https://www.telesatellite.com/chaines/gratuites/arabes/",
+      "snippet": "Amen FM TV Amiral News TV An Najaf Al Ashraf Arab Women TV 1 Arab Women TV 2 Ashorooq TV Asil TV"
+    },
+    {
+      "title": "Pack Arabia | Regarder les meilleures chaines de TV arabe.",
+      "url": "https://packarabia.tv/",
+      "snippet": "Le pack Arabia, c'est la meilleure offre de TV Arabe avec une variété de chaînes, programmes, films arabes et séries arabes en …"
+    },
+    {
+      "title": "Al Jazeera Sport : Football TV - Webmaster-Gratuit",
+      "url": "https://www.webmaster-gratuit.com/tele/aljazeera-sport.htm",
+      "snippet": "Al Jazeera Sport : la chaine de télévision arabe du quatar diffuse en ligne des matchs de football tel que la ligue des champions pour …"
+    }
+  ]
+}

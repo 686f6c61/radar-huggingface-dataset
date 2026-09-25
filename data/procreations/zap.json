@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ProCreations/Zap",
+  "slug": "procreations-zap",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/Zap",
+  "created_at": "2026-09-25T13:37:22.000Z",
+  "updated_at": "2026-09-25T13:39:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "autofill",
+    "password-manager",
+    "form-classification",
+    "field-classification",
+    "browser-extension",
+    "multilingual",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20699173,
+  "parameters_human": "20.7M",
+  "storage_bytes": 145476835,
+  "storage_human": "145 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ProCreations (SSH) - Hugging Face",
+      "url": "https://huggingface.co/ProCreations/models",
+      "snippet": "Making AI&#x27;s small, accessible, and easy to run on consumer hardware"
+    },
+    {
+      "title": "ProCreations AI Models | AI Market Cap",
+      "url": "https://aimarketcap.tech/providers/procreations",
+      "snippet": "Explore all AI models by ProCreations. Official pricing posture, rankings, benchmark coverage, and market-value signals on AI Market Cap."
+    },
+    {
+      "title": "ProCreations/auto-0.4b · Hugging Face",
+      "url": "https://huggingface.co/ProCreations/auto-0.4b",
+      "snippet": "Instructions to use ProCreations/auto-.4b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Podcast: JJ Zachariason on predicting 2025 NFL prospects",
+      "url": "https://thepowerrank.com/2025/04/19/podcast-jj-zachariason-on-predicting-2025-nfl-prospects/",
+      "snippet": "JJ Zachariason, the founder of Late Round Fantasy Football and football analytics expert, joins the show for a wide ranging conversation. Highlights include: The ZAP model for predicting NFL prospects (1:44) Why there are no rushing metrics for running backs (4:50) Two wins and a loss for the prospect model (10:28) The surprising wide receiver at the top of his prospect model (18:18) Three ..."
+    },
+    {
+      "title": "PDF Zap Model documentation form - AI Act - DP FCS - Apple Developer",
+      "url": "https://developer.apple.com/download/files/AFM-3-Cloud-Model-Documentation-Form.pdf",
+      "snippet": "AFM 3 Cloud Model Documentation Form Date this document was last updated: September 14, 2026"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "beaunix/colcar-vision",
+  "slug": "beaunix-colcar-vision",
+  "author": "beaunix",
+  "url": "https://huggingface.co/beaunix/colcar-vision",
+  "created_at": "2026-09-25T16:04:59.000Z",
+  "updated_at": "2026-09-25T16:22:29.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "yolov11",
+    "yolov8",
+    "yolo",
+    "instance-segmentation",
+    "object-detection",
+    "vehicle-inspection",
+    "car-damage",
+    "base_model:Ultralytics/YOLO11",
+    "base_model:quantized:Ultralytics/YOLO11",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 224162065,
+  "storage_human": "224 MB",
+  "base_model": "Ultralytics/YOLO11",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "beaunix (Bryan David Castano) - Hugging Face",
+      "url": "https://huggingface.co/beaunix",
+      "snippet": "AI & ML interests Artificial Vision, NLP, LLm, MLP, LSTM , Machine Learning and DL"
+    },
+    {
+      "title": "beaunix (Bryan David Castano) - Hugging Face",
+      "url": "https://huggingface.co/beaunix/datasets",
+      "snippet": "Artificial Vision, NLP, LLm, MLP, LSTM , Machine Learning and DL"
+    },
+    {
+      "title": "Vision AI Leaderboard - Best Image & Multimodal Models",
+      "url": "https://arena.ai/leaderboard/vision",
+      "snippet": "Vision Arena 🏆Overall View overall rankings across multimodal AI models capable of reasoning over visual inputs."
+    },
+    {
+      "title": "Best Computer Vision APIs, Open-Source Models & Tools in 2026 ... - Eden AI",
+      "url": "https://www.edenai.co/post/top-free-computer-vision-apis-and-open-source-models",
+      "snippet": "Best computer vision APIs & open-source models in 2026. Compare YOLO v12, SAM 2, GPT-4o, Google Vision & AWS Rekognition - free tiers, pricing & use cases."
+    },
+    {
+      "title": "Top 10 Vision Language Models in 2026 - DataCamp",
+      "url": "https://www.datacamp.com/blog/top-vision-language-models",
+      "snippet": "Discover the top open-source and proprietary vision-language models of 2026 for visual reasoning, image analysis, and computer vision."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-qwen-image-2.1-6lora-lora",
+  "slug": "runninghubai-rh-qwen-image-2-1-6lora-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-qwen-image-2.1-6lora-lora",
+  "created_at": "2026-09-25T15:21:09.000Z",
+  "updated_at": "2026-09-25T15:33:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 680930057,
+  "storage_human": "681 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-qwen-image-2.1-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-qwen-image-2.1-lora",
+      "snippet": "RunningHubAI / rh-qwen-image-2.1-lora Like 0 comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-qwen-image-2.1-lora Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "Qwen-Image-2.1 - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen&#x27;s most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
+    },
+    {
+      "title": "How to Run Qwen-Image 2.1 Locally with ComfyUI: Full Setup Guide",
+      "url": "https://www.mindstudio.ai/blog/qwen-image-2-1-local-install",
+      "snippet": "Install Qwen-Image 2.1 in ComfyUI: model files, VRAM needs, and workflow setup for this 7B text-to-image and editing model with native transparency."
+    },
+    {
+      "title": "Qwen Image 2.1 LoRA API — Load Your Own Weights",
+      "url": "https://spicyapi.ai/models/qwen-image-2-1-lora",
+      "snippet": "Qwen Image 2.1 LoRA API loads up to three of your own LoRAs per call, strength 0 to 4 each, on text-to-image and editing. Uncensored, 1k to 2k output."
+    }
+  ]
+}

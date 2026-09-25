@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/STL-Full-FT-mt5-base-sentiment",
+  "slug": "tadiecool29-stl-full-ft-mt5-base-sentiment",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/STL-Full-FT-mt5-base-sentiment",
+  "created_at": "2026-09-25T12:09:46.000Z",
+  "updated_at": "2026-09-25T12:10:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mt5",
+    "text2text-generation",
+    "full-finetuning",
+    "amharic",
+    "stance-detection",
+    "single-task",
+    "generated_from_trainer",
+    "base_model:google/mt5-base",
+    "base_model:finetune:google/mt5-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 582401280,
+  "parameters_human": "582.4M",
+  "storage_bytes": 1181172328,
+  "storage_human": "1.2 GB",
+  "base_model": "google/mt5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tadiecool29/STL-FullFT-mt5-base-sentiment · Hugging Face",
+      "url": "https://huggingface.co/tadiecool29/STL-FullFT-mt5-base-sentiment",
+      "snippet": "MTL-FullFT-mt5-base-sentiment This model is a fine-tuned version of google/mt5-base on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "tadiecool29/STL-FullFT-mt5-base-stance · Hugging Face",
+      "url": "https://huggingface.co/tadiecool29/STL-FullFT-mt5-base-stance",
+      "snippet": "STL-FullFT-mt5-base-stance This model is a fine-tuned version of google/mt5-base on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Stl Fullft Mt5 Base Stance - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/tadiecool29/stl-fullft-mt5-base-stance",
+      "snippet": "Registry entry for model Stl Fullft Mt5 Base Stance; source metadata pending."
+    },
+    {
+      "title": "Stl Fullft Afri Mt5 Base Sentiment - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/tadiecool29/stl-fullft-afri-mt5-base-sentiment",
+      "snippet": "Registry entry for model Stl Fullft Afri Mt5 Base Sentiment; source metadata pending."
+    },
+    {
+      "title": "GitHub - TauricResearch/TradingAgents: TradingAgents: Multi-Agents LLM ...",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "snippet": "TradingAgents is a multi-agent trading framework that mirrors the dynamics of real-world trading firms. By deploying specialized LLM-powered agents: from fundamental analysts, sentiment experts, and technical analysts, to trader, risk management team, the platform collaboratively evaluates market conditions and informs trading decisions. Moreover, these agents engage in dynamic discussions to ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hlmnrkmn737/convertible_pos_startToA_fineTuned2_act",
+  "slug": "hlmnrkmn737-convertible_pos_starttoa_finetuned2_act",
+  "author": "hlmnrkmn737",
+  "url": "https://huggingface.co/hlmnrkmn737/convertible_pos_startToA_fineTuned2_act",
+  "created_at": "2026-09-25T15:17:25.000Z",
+  "updated_at": "2026-09-25T15:18:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:hlmnrkmn737/convertible_pos_startToA_fineTuned2_20260925_merged_recomputed_stats",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206715008,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hlmnrkmn737/convertible_pos_startToA_fineTuned_20260924 · Datasets at ...",
+      "url": "https://huggingface.co/datasets/hlmnrkmn737/convertible_pos_startToA_fineTuned_20260924",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hlmnrkmn737/convertible_pos_startToA_20260915_102825 · Datasets at ...",
+      "url": "https://huggingface.co/datasets/hlmnrkmn737/convertible_pos_startToA_20260915_102825",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Convertible Pos StartToA - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/hlmnrkmn737-convertible-pos-starttoa-20260915-102825",
+      "snippet": "A robotics dataset created using LeRobot framework containing 31 episodes of manipulation tasks captured at 30 fps with multi-view RGB imagery and joint state observations."
+    },
+    {
+      "title": "convertible_pos_startToA_20260915_102825 - selectdataset.com",
+      "url": "https://www.selectdataset.com/dataset/154a3ce17b75cce2aa0962e1f403c0cc/convertible-pos-starttoa-20260915-102825",
+      "snippet": "hlmnrkmn737发布的convertible_pos_startToA_20260915_102825，关于该数据集为HuggingFace LeRobot格式机器人数据集。"
+    },
+    {
+      "title": "convertible_pos_startToA_fineTuned_20260924|机器人位姿数据集|机器人操作任务微调数据集",
+      "url": "https://www.selectdataset.com/dataset/ec2822ecc9e6d0021193bd8be84b00a7/convertible-pos-starttoa-finetuned-20260924",
+      "snippet": "hlmnrkmn737发布的convertible_pos_startToA_fineTuned_20260924，关于该数据集为HuggingFace LeRobot格式机器人数据集。"
+    }
+  ]
+}

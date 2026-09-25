@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Mambavtt/qwen3.8-flash-next-refusal-ablation-vectors",
+  "slug": "mambavtt-qwen3-8-flash-next-refusal-ablation-vectors",
+  "author": "Mambavtt",
+  "url": "https://huggingface.co/Mambavtt/qwen3.8-flash-next-refusal-ablation-vectors",
+  "created_at": "2026-09-25T16:47:19.000Z",
+  "updated_at": "2026-09-25T16:47:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abliteration",
+    "steering-vectors",
+    "refusal",
+    "qwen",
+    "activation-steering",
+    "base_model:RadixArk/Qwen3.8-Flash-Next-NVFP4",
+    "base_model:finetune:RadixArk/Qwen3.8-Flash-Next-NVFP4",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 409250,
+  "storage_human": "409250 B",
+  "base_model": "RadixArk/Qwen3.8-Flash-Next-NVFP4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "GitHub - abliter8-ai/qwen-3.8-next-flash-amd-strix-halo: Serving Qwen3 ...",
+      "url": "https://github.com/abliter8-ai/qwen-3.8-next-flash-amd-strix-halo",
+      "snippet": "The co-resident recipe runs Qwen3.8-Flash-Next on Halogen 0.9.1 alongside Ternary Bonsai 2 27B CRACK on patched Prism HIP, on the same 128 GB Strix Halo. Both retain 262,144-token context. Reducing Qwen&#x27;s prefill batches from 32,768 to 8,192 releases 13.2 GiB of working memory. This changes batching, not context. Qwen keeps four slots, its 524,288-position shared KV pool, pinned weights ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/qwen/qwen3.8-flash-next",
+      "snippet": "Qwen3.8-Flash-Next Open Weight Released Aug 26 2026 Qwen3.8-Flash-Next is an AI model released by Qwen on Wednesday, Aug 26 2026, 12 days after Qwen3.8-27B. It is an open-weight model — the trained weights are available to download and run. It is a 125B parameter model with a 262k token context window."
+    },
+    {
+      "title": "Qwen-3.8-Flash-Next - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/Qwen-3.8-Flash-Next",
+      "snippet": "Qwen-3.8-Flash-Next is a multimodal mixture-of-experts language model developed by the Qwen team at Alibaba Group and released on August 26, 2026. Designed as a public architecture preview of the forthcoming Qwen4 model family, it introduced several structural departures from earlier Qwen generations, including a hybrid attention scheme that pairs Gated DeltaNet linear attention with a new ..."
+    },
+    {
+      "title": "Cudecnik/Qwen3.8-Flash-Next-refusal-projection · Hugging Face",
+      "url": "https://huggingface.co/Cudecnik/Qwen3.8-Flash-Next-refusal-projection",
+      "snippet": "Cudecnik / Qwen3.8-Flash-Next-refusal-projection Like 0 GGUF control-vector abliterated uncensored refusal qwen4exp llama.cpp License:qwen-community-1. Model card FilesFiles and versions xet Community Copy to bucket new Qwen3.8-Flash-Next — refusal abliteration as a control vector (llama.cpp) Performance Parameters How to run it Tested hardware Hardware configurations Running it with less ..."
+    }
+  ]
+}

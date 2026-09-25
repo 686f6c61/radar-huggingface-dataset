@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Aayushmanmath/qwen-alpaca-qlora-demo",
+  "slug": "aayushmanmath-qwen-alpaca-qlora-demo",
+  "author": "Aayushmanmath",
+  "url": "https://huggingface.co/Aayushmanmath/qwen-alpaca-qlora-demo",
+  "created_at": "2026-09-25T13:16:39.000Z",
+  "updated_at": "2026-09-25T13:16:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11421892,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Fine-Tune a Local LLM With Ollama: 13 Steps [2026]",
+      "url": "https://tech-insider.org/au/fine-tune-local-llm-ollama-2026/",
+      "snippet": "Fine-tune an open-source LLM on your own data and run it locally with Ollama. A 13-step, 90-minute guide covering Unsloth, QLoRA, GGUF and LM Studio."
+    },
+    {
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs - GitHub",
+      "url": "https://github.com/artidoro/qlora",
+      "snippet": "Overview We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters (LoRA)."
+    },
+    {
+      "title": "GitHub - vallysatya/qwen-ai-mentor: End-to-end Qwen2.5 LoRA & QLoRA ...",
+      "url": "https://github.com/vallysatya/qwen-ai-mentor",
+      "snippet": "Qwen AI Mentor Production-style Supervised Fine-Tuning (SFT) framework for Qwen2.5-1.5B-Instruct using LoRA and QLoRA. Train, evaluate, compare, merge, and demo your fine-tuned model end to end."
+    },
+    {
+      "title": "How to Finetune Qwen LLM | Apatero",
+      "url": "https://apatero.com/blog/how-to-finetune-qwen-complete-guide-2025",
+      "snippet": "How to Finetune Qwen: Complete LLM Training Guide 2025 Master Qwen finetuning with this comprehensive guide covering LoRA, QLoRA, full parameter training, dataset preparation, optimal hyperparameters, and production deployment strategies. Published by the team behind Apatero. Our coverage of Apatero is publisher content. To report a factual error, email us with this page URL and the correction."
+    }
+  ]
+}

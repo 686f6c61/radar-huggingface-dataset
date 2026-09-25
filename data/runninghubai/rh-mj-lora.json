@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-mj-lora",
+  "slug": "runninghubai-rh-mj-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-mj-lora",
+  "created_at": "2026-09-25T14:33:01.000Z",
+  "updated_at": "2026-09-25T14:34:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 235997775,
+  "storage_human": "236 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-b-mj-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-b-mj-lora",
+      "snippet": "RunningHubAI / rh-b-mj-lora Like 0 Image-Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-b-mj-lora Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "MJ MODE - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/model/public/2006370868674437121",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHub Models ｜ AI Model Creation & Training Platform",
+      "url": "https://www.runninghub.ai/models",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI (RunningHub.ai) - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago"
+    },
+    {
+      "title": "AI Model Library & LoRA Models | Image Generation & Style Models ...",
+      "url": "https://rh-test02-int.haimacloud.com:7443/page-model",
+      "snippet": "RunningHub AI Model Library provides extensive image generation models and LoRA assets for style creation, character design, photorealistic rendering and commercial visual generation."
+    }
+  ]
+}

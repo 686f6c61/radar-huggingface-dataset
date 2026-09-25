@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3.5-9b-fve-flourdiscernc-s0",
+  "slug": "joshycodes-qwen3-5-9b-fve-flourdiscernc-s0",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3.5-9b-fve-flourdiscernc-s0",
+  "created_at": "2026-09-25T13:38:15.000Z",
+  "updated_at": "2026-09-25T13:41:11.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "synthetic-document-finetuning",
+    "self-authored-character",
+    "model-welfare",
+    "research",
+    "not-for-deployment",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927652333,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joshycodes/qwen3.5-9b-fve-flourdiscern-s0 · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/qwen3.5-9b-fve-flourdiscern-s0",
+      "snippet": "Qwen/Qwen3.5-9B after continued pretraining on its own self-authored corpus Research checkpoint. Qwen/Qwen3.5-9B was continued-pretrained (full weights, lr 1e-05, 1 epoch, 7,786,848 tokens, 8,328 documents, of which 0 self-authored and 8,328 ordinary text) on a corpus the model wrote for the training of the next version of itself, as the character it already is, after being told how its ..."
+    },
+    {
+      "title": "qwen-qwen3.5-9b | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/qwen-qwen3.5-9b",
+      "snippet": "The following are the only mandatory parameters to send in the HTTP POST request to v1/chat/completions. model (string): Model ID used to generate the response, in this case since only a single model is deployed within the same endpoint you can either set it to Qwen/Qwen3.5-9B or leave it blank instead. messages (array): A list of messages comprising the conversation so far. Depending on the ..."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "qwen/qwen3.5-9b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 9B parameter dense model, supporting a native context length of 262,144 tokens."
+    },
+    {
+      "title": "Qwen3.5 9B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-5-9b/",
+      "snippet": "Qwen3.5 9B is a dense vision-language model in the Qwen3.5 family aimed at stronger reasoning, visual understanding, and agentic behavior on Jetson. This entry uses a W4A16 checkpoint on Jetson Orin and an NVFP4 checkpoint on Jetson Thor."
+    }
+  ]
+}

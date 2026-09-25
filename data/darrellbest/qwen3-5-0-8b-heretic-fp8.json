@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "darrellbest/Qwen3.5-0.8B-Heretic-FP8",
+  "slug": "darrellbest-qwen3-5-0-8b-heretic-fp8",
+  "author": "darrellbest",
+  "url": "https://huggingface.co/darrellbest/Qwen3.5-0.8B-Heretic-FP8",
+  "created_at": "2026-09-25T15:47:12.000Z",
+  "updated_at": "2026-09-25T15:47:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "heretic",
+    "ara",
+    "abliterated",
+    "uncensored",
+    "qwen3.5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:darrellbest/Qwen3.5-0.8B-Heretic",
+    "base_model:quantized:darrellbest/Qwen3.5-0.8B-Heretic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1459130085,
+  "storage_human": "1.5 GB",
+  "base_model": "darrellbest/Qwen3.5-0.8B-Heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "schnow265/Qwen_Qwen3.5-0.8B-heretic · Hugging Face",
+      "url": "https://huggingface.co/schnow265/Qwen_Qwen3.5-0.8B-heretic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · FadedRedStar/Qwen3.5-0.8B-heretic-GGUF at main",
+      "url": "https://huggingface.co/FadedRedStar/Qwen3.5-0.8B-heretic-GGUF/blob/main/README.md",
+      "snippet": "Qwen3.5-0.8B is the smallest model in the Qwen3.5 lineup by the Qwen Team (Alibaba), a dense multimodal transformer supporting native vision-language understanding at extremely low compute cost."
+    },
+    {
+      "title": "Qwen3.5-0.8B-heretic API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ossipoff/Qwen3.5-0.8B-heretic",
+      "snippet": "Run Qwen3.5-.8B-heretic with FriendliAI inference. Over recent months, we have intensified our focus on developing foundation models that deliver exceptional…"
+    },
+    {
+      "title": "Qwen3.5-0.8B-heretic API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Dingdust/Qwen3.5-0.8B-heretic",
+      "snippet": "Run Qwen3.5-.8B-heretic with FriendliAI inference. g = mean of residual vectors for good prompts."
+    }
+  ]
+}

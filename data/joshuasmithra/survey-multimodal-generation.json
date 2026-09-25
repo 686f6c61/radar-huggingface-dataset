@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshuasmithra/survey-multimodal-generation",
+  "slug": "joshuasmithra-survey-multimodal-generation",
+  "author": "joshuasmithra",
+  "url": "https://huggingface.co/joshuasmithra/survey-multimodal-generation",
+  "created_at": "2026-09-25T14:06:23.000Z",
+  "updated_at": "2026-09-25T14:06:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introduction to Multimodal Generative AI | Springer Nature Link",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-96-2355-6_1",
+      "snippet": "A state-of-the-art method in machine learning is called Multimodal Generative Artificial Intelligence (AI), which aims to produce a variety of outputs in many modalities, including text, audio, and images. This survey explores multimodal generative AI&#x27;s developments, techniques, and uses. First, we clarify the main concepts behind such models, such as adaptive autoencoders (VAEs), generative ..."
+    },
+    {
+      "title": "Multi-Modal Generative AI: Multi-modal LLM, Diffusion and Beyond",
+      "url": "https://arxiv.org/html/2409.14993v1",
+      "snippet": "Abstract Multi-modal generative AI has received increasing attention in both academia and industry. Particularly, two dominant families of techniques are: i) The multi-modal large language model (MLLM) such as GPT-4V, which shows impressive ability for multi-modal understanding; ii) The diffusion model such as Sora, which exhibits remarkable multi-modal powers, especially with respect to ..."
+    },
+    {
+      "title": "Imbartosz-grabowski/survey-multimodal-generation · Hugging Face",
+      "url": "https://huggingface.co/Imbartosz-grabowski/survey-multimodal-generation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[2409.14993] Multi-modal Generative AI: Multi-modal LLMs, Diffusions ...",
+      "url": "https://arxiv.org/abs/2409.14993",
+      "snippet": "Multi-modal generative AI (Artificial Intelligence) has attracted increasing attention from both academia and industry. Particularly, two dominant families of techniques have emerged: i) Multi-modal large language models (LLMs) demonstrate impressive ability for multi-modal understanding; and ii) Diffusion models exhibit remarkable multi-modal powers in terms of multi-modal generation ..."
+    },
+    {
+      "title": "Multimodal RAG Survey",
+      "url": "https://multimodalrag.github.io/",
+      "snippet": "This survey offers a structured and comprehensive analysis of Multimodal RAG systems, covering datasets, metrics, benchmarks, evaluation, methodologies, and innovations in retrieval, fusion, augmentation, and generation."
+    }
+  ]
+}

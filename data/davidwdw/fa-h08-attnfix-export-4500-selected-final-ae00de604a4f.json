@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-h08-attnfix-export-4500-selected-final-ae00de604a4f",
+  "slug": "davidwdw-fa-h08-attnfix-export-4500-selected-final-ae00de604a4f",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-h08-attnfix-export-4500-selected-final-ae00de604a4f",
+  "created_at": "2026-09-25T00:57:39.000Z",
+  "updated_at": "2026-09-25T01:30:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12440420070,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Docs",
+      "url": "https://docs.google.com/",
+      "snippet": "Create and edit web-based documents, spreadsheets, and presentations. Store documents online and access them from any computer."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is AI built to help you get things done. Create, brainstorm, learn, and solve problems with AI chat that works across your day."
+    },
+    {
+      "title": "GitHub - h08model/H08: H08 is an open-source global hydrological model ...",
+      "url": "https://github.com/h08model/H08",
+      "snippet": "H08 is an open-source global hydrological model. It can be applied to elucidate various global water and environmental issues. It can also be used for regional simulations at high spatial resolutio..."
+    }
+  ]
+}

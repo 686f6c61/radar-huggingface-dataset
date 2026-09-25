@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "darrellbest/Qwen3.5-4B-Heretic-NVFP4",
+  "slug": "darrellbest-qwen3-5-4b-heretic-nvfp4",
+  "author": "darrellbest",
+  "url": "https://huggingface.co/darrellbest/Qwen3.5-4B-Heretic-NVFP4",
+  "created_at": "2026-09-25T16:36:56.000Z",
+  "updated_at": "2026-09-25T16:37:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "nvfp4",
+    "compressed-tensors",
+    "vllm",
+    "heretic",
+    "ara",
+    "abliterated",
+    "uncensored",
+    "qwen3.5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:darrellbest/Qwen3.5-4B-Heretic",
+    "base_model:quantized:darrellbest/Qwen3.5-4B-Heretic",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 5661988096,
+  "storage_human": "5.7 GB",
+  "base_model": "darrellbest/Qwen3.5-4B-Heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BYDFi Global Partner Program | Earn Up to 70% Commission",
+      "url": "https://www.bydfi.com/en/partnership/affiliate",
+      "snippet": "Join BYDFi's Global Partner Program and earn up to 70% commission. Partner with a top crypto exchange, grow your influence, and …Read more"
+    },
+    {
+      "title": "CFD Lot Size for FX, Indices and Commodities - bydfi.com",
+      "url": "https://www.bydfi.com/en/wiki/cfd-education/cfd-lot-size",
+      "snippet": "Learn how CFD Lot Size affects contract sizes for FX, indices and commodities, and whether standard or micro lots suit your CFD …"
+    },
+    {
+      "title": "BYDFi Futures Earn Launching Soon",
+      "url": "https://www.bydfi.com/en/support/ANNOUNCEMENT/articles/fhdtvbbba6rt",
+      "snippet": "Sep 17, 2026 · Dear BYDFi Users,Following BYDFi’s latest system upgrade, we are excited to introduce Futures Earn, a new feature …"
+    },
+    {
+      "title": "Contract Trading Pairs Delisting Notice",
+      "url": "https://www.bydfi.com/en/support/ANNOUNCEMENT/articles/xnjlkah6ne7v",
+      "snippet": "Jul 17, 2026 · Dear BYDFi Users,To optimize our contract product offerings and enhance your trading experience, BYDFi will delist …"
+    },
+    {
+      "title": "Using Volume in CFD Trading (Tick Volume) - bydfi.com",
+      "url": "https://www.bydfi.com/en/wiki/cfd/cfd-education/volume-analysis",
+      "snippet": "Explore the key differences between real volume and tick volume in CFD trading. Understand volume analysis to enhance your …"
+    }
+  ]
+}

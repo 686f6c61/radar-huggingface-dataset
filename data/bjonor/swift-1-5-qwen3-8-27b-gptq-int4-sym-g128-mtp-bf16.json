@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "bjonor/Swift-1.5-Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16",
+  "slug": "bjonor-swift-1-5-qwen3-8-27b-gptq-int4-sym-g128-mtp-bf16",
+  "author": "bjonor",
+  "url": "https://huggingface.co/bjonor/Swift-1.5-Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16",
+  "created_at": "2026-09-25T14:37:46.000Z",
+  "updated_at": "2026-09-25T14:40:04.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "gptq",
+    "int4",
+    "w4a16",
+    "4-bit",
+    "quantized",
+    "vllm",
+    "intel-xpu",
+    "arc-pro-b70",
+    "mtp",
+    "speculative-decoding",
+    "gated-deltanet",
+    "tool-calling",
+    "conversational",
+    "en",
+    "multilingual",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "base_model:ukisai/Swift-1.5-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-1.5-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 19579439640,
+  "storage_human": "19.6 GB",
+  "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Swift Qwen3.8 27B GPTQ Int4 Sym G128 MTP BF16 by bjonor",
+      "url": "https://llm-explorer.com/model/bjonor%2FSwift-Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16,5eQN2O749WK9aHG8PmWbi5",
+      "snippet": "Swift Qwen3.8 27B GPTQ Int4 Sym G128 MTP BF16 is an open-source language model by bjonor. Features: 27b LLM, VRAM: 19.6GB, License: other, Quantized, LLM Explorer Score: 0.29."
+    },
+    {
+      "title": "bjonor (Bjorn) - Hugging Face",
+      "url": "https://huggingface.co/bjonor/models",
+      "snippet": "Recent Activity liked a modelabout 13 hours ago Qwen/Qwen-Image-2.1 liked a modelabout 13 hours ago Altworld/Hemmingway-1 liked a model3 days ago bjonor/Swift-Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16 View all activity"
+    },
+    {
+      "title": "bjonor (Bjorn) - Hugging Face",
+      "url": "https://huggingface.co/bjonor",
+      "snippet": "42 Recent Activity liked a modelabout 6 hours ago Qwen/Qwen-Image-2.1 liked a modelabout 6 hours ago Altworld/Hemmingway-1 liked a model3 days ago bjonor/Swift-Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16 View all activity"
+    },
+    {
+      "title": "intel-arc-b70-quant/README.md at main · BjornNordblom/intel ... - GitHub",
+      "url": "https://github.com/BjornNordblom/intel-arc-b70-quant/blob/main/README.md",
+      "snippet": "GPTQ-INT4 (W4A16, group-128, symmetric) quantization of Swift-Qwen3.8-27b for vLLM on an Intel Arc Pro B70 (XPU), including a reproducible path from raw BF16 weights to a served, tool-calling endpoint. Target contract matches the community reference artifact SergiioB/Qwen3.8-27B-GPTQ-Int4-sym-G128 ..."
+    },
+    {
+      "title": "coreai-model-zoo/models/qwen3.8-27b at main · john-rocky ... - GitHub",
+      "url": "https://github.com/john-rocky/coreai-model-zoo/tree/main/models/qwen3.8-27b",
+      "snippet": "Qwen3.8-27B (VLM: text decoder + vision path) — Core AI Qwen/Qwen3.8-27B is the Qwen3.8 generation&#x27;s only open compact model — the flagship line&#x27;s dense 27B, released 2026-08-14 as a native VLM (image-text-to-text). This card covers the whole port: the text decoder (ported the day the weights landed) and the vision path (tower + embeddings-input decoder, the zoo&#x27;s first qwen3.5-family ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-d6c04d92-eb67-4269-8e6a-93170a911161",
+  "slug": "muhamad-geosurge-invert-polarity-d6c04d92-eb67-4269-8e6a-93170a911161",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-d6c04d92-eb67-4269-8e6a-93170a911161",
+  "created_at": "2026-09-25T12:01:40.000Z",
+  "updated_at": "2026-09-25T12:03:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248031744,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496097520,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "c盘突然大了几十g，roaming这个文件夹怎么这么大？ - 知乎",
+      "url": "https://www.zhihu.com/question/52675585",
+      "snippet": "作者：电脑知识网 来源：电脑知识网 链接： C盘Roaming里文件能删除吗 很多人发现电脑中C:\\Users\\用户名\\AppData 占据了很大的 …"
+    },
+    {
+      "title": "如何看待音乐磁场HIFINI关闭网站？ - 知乎",
+      "url": "https://www.zhihu.com/question/1929476281185056407",
+      "snippet": "卷款跑路了 7月初，网友爆料站内涉及周杰伦资源被大量下架并即将关站（图1-图2）。 7月3日，Hifini音乐磁场官网版头发布大字公 …"
+    },
+    {
+      "title": "银河录像局靠谱吗? - 知乎",
+      "url": "https://www.zhihu.com/question/3141235744",
+      "snippet": "这家网站是否跑路呢。 奈飞问题客服给的解释 后来Disney+也出现过一次类似情况，奈飞忘了具体有过几次，大概是2次左右吧，没有 …"
+    },
+    {
+      "title": "Deep Van - 知乎",
+      "url": "https://www.zhihu.com/people/yang-lei-96-72",
+      "snippet": "Deep Van是知乎用户，擅长回答金融、科技和生活问题，其个人星球为DeepVan的逃生地牢，回答风格直言不讳，获得广泛关注。"
+    },
+    {
+      "title": "《侠盗猎车手》英文名 Grand Theft Auto 实际是什么意思？如何翻译 …",
+      "url": "https://www.zhihu.com/question/19811336?sort=created",
+      "snippet": "GTA: Grand Theft Auto 这个名字很怪, 字面上实际是什么意思? 还是习语,典故? 几个中文译名看起来都翻的…"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ShayonSarker/DeepSeek-Coder-1.3B-Base-GGUF",
+  "slug": "shayonsarker-deepseek-coder-1-3b-base-gguf",
+  "author": "ShayonSarker",
+  "url": "https://huggingface.co/ShayonSarker/DeepSeek-Coder-1.3B-Base-GGUF",
+  "created_at": "2026-09-25T16:38:33.000Z",
+  "updated_at": "2026-09-25T17:02:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama.cpp",
+    "text-generation",
+    "code",
+    "deepseek",
+    "base_model:deepseek-ai/deepseek-coder-1.3b-base",
+    "base_model:quantized:deepseek-ai/deepseek-coder-1.3b-base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1346471936,
+  "parameters_human": "1.35B",
+  "storage_bytes": 4999858464,
+  "storage_human": "5.0 GB",
+  "base_model": "deepseek-ai/deepseek-coder-1.3b-base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/deepseek-coder-1.3b-base · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · deepseek-ai/deepseek-coder-1.3b-base at main",
+      "url": "https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base/blob/main/README.md",
+      "snippet": "1. Introduction of Deepseek Coder Deepseek Coder is composed of a series of code language models, each trained from scratch on 2T tokens, with a composition of 87% code and 13% natural language in both English and Chinese. We provide various sizes of the code model, ranging from 1B to 33B versions. Each model is pre-trained on project-level code corpus by employing a window size of 16K and a ..."
+    },
+    {
+      "title": "DeepSeek Coder:",
+      "url": "https://deepseekcoder.github.io/",
+      "snippet": "Various model sizes (1.3B, 5.7B, 6.7B and 33B) to support different requirements. A window size of 16K window size, supporting project-level code completion and infilling."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-Coder: DeepSeek Coder: Let the Code Write ...",
+      "url": "https://github.com/deepseek-ai/deepseek-coder",
+      "snippet": "Each model is pre-trained on project-level code corpus by employing a window size of 16K and an extra fill-in-the-blank task, to support project-level code completion and infilling. For coding capabilities, DeepSeek Coder achieves state-of-the-art performance among open-source code models on multiple programming languages and various benchmarks."
+    },
+    {
+      "title": "deepseek-coder-1.3b-base: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/deepseek-coder-13b-base-deepseek-ai",
+      "snippet": "Overview deepseek-coder-1.3b-base is a 1.3 billion parameter code language model created by deepseek-ai that performs code completion, code insertion, and repository-level code generation. The model uses Multi-Head Attention and was trained on 1 trillion tokens composed of 87% code and 13% natural language data in both English and Chinese. It supports a 16K token context window, enabling ..."
+    }
+  ]
+}

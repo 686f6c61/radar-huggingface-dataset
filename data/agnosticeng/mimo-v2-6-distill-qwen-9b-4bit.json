@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "agnosticeng/MiMo-V2.6-Distill-Qwen-9B-4bit",
+  "slug": "agnosticeng-mimo-v2-6-distill-qwen-9b-4bit",
+  "author": "agnosticeng",
+  "url": "https://huggingface.co/agnosticeng/MiMo-V2.6-Distill-Qwen-9B-4bit",
+  "created_at": "2026-09-25T12:35:53.000Z",
+  "updated_at": "2026-09-25T12:49:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mimo_v2",
+    "quantized",
+    "4-bit",
+    "vision",
+    "multimodal",
+    "image-text-to-text",
+    "conversational",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 11008369838,
+  "storage_human": "11.0 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "\"bangle excertedheart tractorlights backup nas tv prep surron-BERS …",
+      "url": "https://www.vogo-group.com/search/bangle%20excertedheart%20tractorlights%20backup%20nas%20tv%20prep%20surron-BERS-ASR%20antbms%20TABS%20NOTES",
+      "snippet": "Résultats de recherche pour : « bangle excertedheart tractorlights backup nas tv prep surron-BERS-ASR antbms TABS NOTES » …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "More languages…"
+    },
+    {
+      "title": "ManualsLib - Makes it easy to find manuals online!",
+      "url": "https://www.manualslib.com/",
+      "snippet": "Search through 3.000.000 manuals online & and download pdf manuals."
+    },
+    {
+      "title": "Baggage tractor beacon lights - Discover our range | TVH Asia",
+      "url": "https://www.tvh.com/en-xa/parts/parts-for/ground-support-equipment/baggage-tractors/safety-lights/baggage-tractor-beacon-lights",
+      "snippet": "Looking for baggage tractor beacon lights? Our range includes different technologies such as LED, xenon and halogen. Buy from an …"
+    },
+    {
+      "title": "Unexpected - YouTube",
+      "url": "https://www.youtube.com/shorts/45WPaiK33rg",
+      "snippet": "Apr 5, 2026 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    }
+  ]
+}

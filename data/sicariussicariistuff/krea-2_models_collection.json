@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SicariusSicariiStuff/Krea-2_Models_Collection",
+  "slug": "sicariussicariistuff-krea-2_models_collection",
+  "author": "SicariusSicariiStuff",
+  "url": "https://huggingface.co/SicariusSicariiStuff/Krea-2_Models_Collection",
+  "created_at": "2026-09-25T12:28:33.000Z",
+  "updated_at": "2026-09-25T14:08:20.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-image",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 189345883716,
+  "storage_human": "189.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea 2 (Krea2) Models, LoRAs & Online Generator | Civitai",
+      "url": "https://civitai.com/ecosystems/krea2",
+      "snippet": "Krea 2 is Krea AI's in-house image model, tuned for photorealism and clean aesthetics."
+    },
+    {
+      "title": "Krea 2: AI Image Foundation Model & Style Control",
+      "url": "https://www.krea.ai/krea-2",
+      "snippet": "Krea 2 is designed to work with moodboards and style references, helping creators guide the model toward a specific visual language, palette, texture, or composition style. ... Yes. Krea 2 is Krea AI's first foundation image model built completely from scratch, with a focus on aesthetics, style transfer, and creative control..."
+    },
+    {
+      "title": "Most of my models - in order - a SicariusSicariiStuff Collection",
+      "url": "https://huggingface.co/collections/SicariusSicariiStuff/most-of-my-models-in-order",
+      "snippet": "SicariusSicariiStuff 's Collections · Most of my models - in order · Other stuff · Abliterated models · Stable Diffusion 1.5 Favorite models · updated May 3 · Upvote · 33 · +23 · Sort: Collection · 33B • Updated Jun 12 • 356 • 64 · 71B • Updated 28 days ago • 375 • 73 · 266k • Updated May 3 • 580k • 82 ·"
+    },
+    {
+      "title": "GitHub - krea-ai/krea-2: Official inference code for Krea 2 · GitHub",
+      "url": "https://github.com/krea-ai/krea-2",
+      "snippet": "Krea 2 is the most aesthetic open-source image model available. On quality, Krea 2 is the #1 text-to-image model from an independent lab on Artificial Analysis [1]. Krea 2 ships as two models."
+    },
+    {
+      "title": "Krea 2 - Krea",
+      "url": "https://www.krea.ai/docs/user-guide/features/krea-2",
+      "snippet": "Krea 2 is Krea’s first foundation image model, trained from scratch to give you full control over the look, feel, and creative direction of every image you generate. It ships in three variants — Medium, Large, and Medium Turbo — and supports the most advanced style-transfer system on the market, moodboards, and Generative Sliders. Use Krea 2 when you want expressive, aesthetic results that don’t look like generic AI output: editorial illustration, photorealism with real texture, character work, fashion, worlds, posters, and any project where style and creative direction matter."
+    }
+  ]
+}
