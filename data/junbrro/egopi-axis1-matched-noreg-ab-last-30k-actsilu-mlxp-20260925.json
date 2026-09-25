@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "junbrro/egopi-axis1-matched-noreg-AB-LAST-30k-actsilu-mlxp-20260925",
+  "slug": "junbrro-egopi-axis1-matched-noreg-ab-last-30k-actsilu-mlxp-20260925",
+  "author": "junbrro",
+  "url": "https://huggingface.co/junbrro/egopi-axis1-matched-noreg-AB-LAST-30k-actsilu-mlxp-20260925",
+  "created_at": "2026-09-25T01:57:22.000Z",
+  "updated_at": "2026-09-25T02:03:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6915102808,
+  "parameters_human": "6.92B",
+  "storage_bytes": 13868884986,
+  "storage_human": "13.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "junbrro/egopi-axis2-robotonly-native28-30k-mlxp-20260923 · Hugging Face",
+      "url": "https://huggingface.co/junbrro/egopi-axis2-robotonly-native28-30k-mlxp-20260923",
+      "snippet": "Arm II robot-only native28 baseline Final step: 30000. Source: junhyeong-axis2-robotonly-native28-30k-260923-r1. Final model weights and configuration only; optimizer/RNG state excluded. Original configuration is preserved, including source-cluster paths. Remap paths before use. Bundled actlat/ contains the action tokenizer when applicable."
+    },
+    {
+      "title": "junbrro/egopi-mt-r6h5-axis1-AB-30k-actsilu-slurm-18839-20260921 ...",
+      "url": "https://huggingface.co/junbrro/egopi-mt-r6h5-axis1-AB-30k-actsilu-slurm-18839-20260921",
+      "snippet": "MT to Arm I AB Final step: 30000. Source: 18839. Final model weights and configuration only; optimizer/RNG state excluded. Original configuration is preserved, including source-cluster paths. Remap paths before use. Bundled actlat/ contains the action tokenizer when applicable. Multi-group runtime required. Slot 37 mt_openarm_prq15, r6h5 tokenizer."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "ScoreGPT — AI Football Predictions from Competing AI Models",
+      "url": "https://scoregpt.app/",
+      "snippet": "ScoreGPT is a free sports prediction app for iOS and Android that uses multiple competing AI large language models to generate multi-model consensus football predictions with transparent accuracy tracking."
+    },
+    {
+      "title": "junbrro AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/junbrro",
+      "snippet": "Browse AI models attributed to junbrro, sourced from verified model catalogs."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "brishen/iron-yunet-npu2",
+  "slug": "brishen-iron-yunet-npu2",
+  "author": "brishen",
+  "url": "https://huggingface.co/brishen/iron-yunet-npu2",
+  "created_at": "2026-09-25T02:16:29.000Z",
+  "updated_at": "2026-09-25T02:16:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "iron",
+    "amd-npu",
+    "ryzen-ai",
+    "xdna",
+    "object-detection",
+    "face-detection",
+    "npu2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33177803,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "brishen/iron-yunet-npu2 · Hugging Face",
+      "url": "https://huggingface.co/brishen/iron-yunet-npu2",
+      "snippet": "An IRON export of https://github.com/opencv/opencv_zoo/tree/main/models/face_detection_yunet for AMD Ryzen AI NPUs: the compiled NPU kernels (.xclbin + instruction streams) and the packed weights an IRON Rust runtime replays. The kernels are compiled for NPU2 (AIE2P: Strix Point, Strix Halo, Krackan) and will not load on NPU1 (Phoenix, Hawk Point). hf download brishen/iron-yunet-npu2 --local-dir yunet # or, from an IRON checkout: python scripts/hf_models.py download yunet --repo brishen/iron-yunet-npu2 --out yunet"
+    },
+    {
+      "title": "brishen/iron-taggerine-npu2 · Hugging Face",
+      "url": "https://huggingface.co/brishen/iron-taggerine-npu2",
+      "snippet": "The kernels are compiled for NPU2 (AIE2P: Strix Point, Strix Halo, Krackan) and will not load on NPU1 (Phoenix, Hawk Point). The bundle is IRON's shared bundle format, version 9: manifest.txt (model params, one xclbin record per hardware context, kernel and matrix records), the tensor store tensors.txt + tensors.bin, and kernels/. iron/applications/taggerine/export_taggerine.py documents every record and tensor. hf download brishen/iron-taggerine-npu2 --local-dir taggerine"
+    },
+    {
+      "title": "brishen/iron-sam3-npu2 · Hugging Face",
+      "url": "https://huggingface.co/brishen/iron-sam3-npu2",
+      "snippet": "The kernels are compiled for NPU2 (AIE2P: Strix Point, Strix Halo, Krackan) and will not load on NPU1 (Phoenix, Hawk Point). hf download brishen/iron-sam3-npu2 --local-dir sam3 # or, from an IRON checkout: python scripts/hf_models.py download sam3 --repo brishen/iron-sam3-npu2 --out sam3"
+    },
+    {
+      "title": "brishen/iron-adaface-ir18-npu2 · Hugging Face",
+      "url": "https://huggingface.co/brishen/iron-adaface-ir18-npu2",
+      "snippet": "The kernels are compiled for NPU2 (AIE2P: Strix Point, Strix Halo, Krackan) and will not load on NPU1 (Phoenix, Hawk Point). hf download brishen/iron-adaface-ir18-npu2 --local-dir adaface-ir18 # or, from an IRON checkout: python scripts/hf_models.py download adaface-ir18 --repo brishen/iron-adaface-ir18-npu2 --out adaface-ir18"
+    },
+    {
+      "title": "brishen/iron-adaface-ir101-npu2 · Hugging Face",
+      "url": "https://huggingface.co/brishen/iron-adaface-ir101-npu2",
+      "snippet": "The kernels are compiled for NPU2 (AIE2P: Strix Point, Strix Halo, Krackan) and will not load on NPU1 (Phoenix, Hawk Point). hf download brishen/iron-adaface-ir101-npu2 --local-dir adaface-ir101 # or, from an IRON checkout: python scripts/hf_models.py download adaface-ir101 --repo brishen/iron-adaface-ir101-npu2 --out adaface-ir101"
+    }
+  ]
+}

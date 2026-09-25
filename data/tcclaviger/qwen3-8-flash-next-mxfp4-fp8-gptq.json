@@ -5,7 +5,7 @@
   "author": "tcclaviger",
   "url": "https://huggingface.co/tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8-GPTQ",
   "created_at": "2026-09-13T14:05:31.000Z",
-  "updated_at": "2026-09-15T02:24:35.000Z",
+  "updated_at": "2026-09-24T06:12:08.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -30,12 +30,12 @@
     "region:us"
   ],
   "likes": 18,
-  "downloads_30d": 635,
+  "downloads_30d": 683,
   "trending_score": 11,
   "parameters": 175405232019,
   "parameters_human": "175.41B",
-  "storage_bytes": 243079910424,
-  "storage_human": "243.1 GB",
+  "storage_bytes": 264036638896,
+  "storage_human": "264.0 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "vishalgokani/deephistomorphometry-ob",
+  "slug": "vishalgokani-deephistomorphometry-ob",
+  "author": "vishalgokani",
+  "url": "https://huggingface.co/vishalgokani/deephistomorphometry-ob",
+  "created_at": "2026-09-25T01:58:25.000Z",
+  "updated_at": "2026-09-25T04:38:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2210562553,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vishalgokani/deephistomorphometry-ob · Hugging Face",
+      "url": "https://huggingface.co/vishalgokani/deephistomorphometry-ob",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vishalgokani/deephistomorphometry-oc · Hugging Face",
+      "url": "https://huggingface.co/vishalgokani/deephistomorphometry-oc",
+      "snippet": "DeepHistomorphometry OC Species-agnostic osteoclast/TRAP segmentation model for bone histomorphometry image patches. The archive contains a 2D nnU-Net v2 model with RGB input channels and tb, oc, trap+, and nucleus foreground labels."
+    },
+    {
+      "title": "vgoklani (Vishal Goklani) · GitHub",
+      "url": "https://github.com/vgoklani",
+      "snippet": "Interested in Deep Learning (self-supervised learning & LLMs), Astrophysics (exoplanets), and Cosmology (CMB).... I like to build things - vgoklani"
+    },
+    {
+      "title": "Publications — Google DeepMind",
+      "url": "https://deepmind.google/research/publications/",
+      "snippet": "Explore a selection of our recent research on some of the most complex and interesting challenges in AI."
+    },
+    {
+      "title": "2026 LLM Leaderboard: compare Anthropic, Google, OpenAI, and more ... - Klu",
+      "url": "https://klu.ai/llm-leaderboard",
+      "snippet": "Klu.ai LLM leaderboard for in depth model performance metrics, rankings, and insights tailored for AI researchers and developers."
+    }
+  ]
+}

@@ -28,8 +28,8 @@
     "base_model:finetune:OpenGVLab/InternVL3_5-4B",
     "region:us"
   ],
-  "likes": 8,
-  "downloads_30d": 175,
+  "likes": 9,
+  "downloads_30d": 183,
   "trending_score": 0,
   "parameters": 4343533056,
   "parameters_human": "4.34B",

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "333i/4xBHI_dat2_real-coreml-ios",
+  "slug": "333i-4xbhi_dat2_real-coreml-ios",
+  "author": "333i",
+  "url": "https://huggingface.co/333i/4xBHI_dat2_real-coreml-ios",
+  "created_at": "2026-09-25T01:32:50.000Z",
+  "updated_at": "2026-09-25T01:33:23.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "super-resolution",
+    "ios",
+    "image-to-image",
+    "base_model:Phips/4xBHI_dat2_real",
+    "base_model:quantized:Phips/4xBHI_dat2_real",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70663311,
+  "storage_human": "71 MB",
+  "base_model": "Phips/4xBHI_dat2_real",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "333i/4xBHI_dat2_real-coreml-ios · Hugging Face",
+      "url": "https://huggingface.co/333i/4xBHI_dat2_real-coreml-ios",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Phips/4xBHI_dat2_real · Hugging Face",
+      "url": "https://huggingface.co/Phips/4xBHI_dat2_real",
+      "snippet": "Description: 4x dat2 upscaling model for web and realistic images. It handles realistic noise, some realistic blur, and webp and jpg (re)compression. Trained on my BHI dataset (390&#x27;035 training tiles) with degraded LR subset."
+    },
+    {
+      "title": "Core ML | Apple Developer Documentation",
+      "url": "https://developer.apple.com/documentation/coreml",
+      "snippet": "Core ML itself builds on top of low-level primitives like Accelerate and BNNS, as well as Metal Performance Shaders. If your app integrates AI models using the latest architectures and inference techniques, see Core AI."
+    },
+    {
+      "title": "GitHub - typpos/phhofm-upscale-models: All my self trained & released ...",
+      "url": "https://github.com/typpos/phhofm-upscale-models",
+      "snippet": "14.12.2024 - 4xBHI_dat2_multiblurjpg & 4xBHI_dat2_multiblur (4x dat2 model on my bhi dataset, trained on multiscaled LR and jpg compression) 14.12.2024 - 4x BHI realplksr models (4x models with realplksr dysample on my bhi dataset: multi, multiblur, otf_nn, otf and real)"
+    },
+    {
+      "title": "GitHub - apple/coremltools: Core ML tools contain supporting tools for ...",
+      "url": "https://github.com/apple/coremltools",
+      "snippet": "Core ML tools contain supporting tools for Core ML model conversion, editing, and validation. - apple/coremltools"
+    }
+  ]
+}

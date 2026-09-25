@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "junbrro/action-tokenizer-arm2-rbbt-anyh3-w003-split-100001-slurm-20260925",
+  "slug": "junbrro-action-tokenizer-arm2-rbbt-anyh3-w003-split-100001-slurm-20260925",
+  "author": "junbrro",
+  "url": "https://huggingface.co/junbrro/action-tokenizer-arm2-rbbt-anyh3-w003-split-100001-slurm-20260925",
+  "created_at": "2026-09-25T02:03:27.000Z",
+  "updated_at": "2026-09-25T02:03:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38625623,
+  "storage_human": "39 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "junbrro/action-tokenizer-arm2-rbbt-anyh3-w003-split-100k-mlxp-20260923 ...",
+      "url": "https://huggingface.co/junbrro/action-tokenizer-arm2-rbbt-anyh3-w003-split-100k-mlxp-20260923",
+      "snippet": "Robot BBT + AnyH2R three-task action-only tokenizer Final step: 100000. Source: junhyeong-anyh3-legacy-tokenizer-260923. Final model weights and configuration only; optimizer/RNG state excluded. Original configuration is preserved, including source-cluster paths. Remap paths before use. Bundled actlat/ contains the action tokenizer when applicable."
+    },
+    {
+      "title": "Slurm Workload Manager - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Slurm_Workload_Manager",
+      "snippet": "The Slurm Workload Manager, formerly known as Simple Linux Utility for Resource Management (SLURM), or simply Slurm, is a free and open-source job scheduler for Linux and Unix-like kernels, used by many of the world&#x27;s supercomputers and computer clusters."
+    },
+    {
+      "title": "Model Zoo",
+      "url": "https://www.modelzoo.co/",
+      "snippet": "The model is trained on Cornell Grasping Dataset. This is an implementation mainly based on the paper &#x27;Real-Time Grasp Detection Using Convolutional Neural Networks&#x27; from Redmon and Angelova."
+    },
+    {
+      "title": "junbrro/action-tokenizer-prq30-qcontinuous-v9-openarm1106-egodex1091 ...",
+      "url": "https://huggingface.co/junbrro/action-tokenizer-prq30-qcontinuous-v9-openarm1106-egodex1091-100k",
+      "snippet": "action-tokenizer prq30 qcontinuous v9 — openarm 1106 + egodex 1091, 100k steps Trained 2026-09-09 (Kakao job 165483, 2 GPU, global batch 512, grad_accum 1, lr 5e-5 constant, 100000/100000 steps, 1:59:31)."
+    },
+    {
+      "title": "guide:slurm_usage_guide [Cluster Docs]",
+      "url": "https://docs.cluster.uni-hannover.de/doku.php/guide/slurm_usage_guide",
+      "snippet": "The SLURM Workload Manager The software that decides which job to run when and where in the cluster is called SLURM. SLURM (S imple L inux U tility for R esource M anagement) is a free open-source batch scheduler and resource manager that allows users to run their jobs on the LUIS compute cluster."
+    }
+  ]
+}

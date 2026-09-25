@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "pengxiang/looped-moe-1.7b-tensorboard",
+  "slug": "pengxiang-looped-moe-1-7b-tensorboard",
+  "author": "pengxiang",
+  "url": "https://huggingface.co/pengxiang/looped-moe-1.7b-tensorboard",
+  "created_at": "2026-09-25T02:13:10.000Z",
+  "updated_at": "2026-09-25T02:27:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "looped-transformer",
+    "mixture-of-experts",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79938452,
+  "storage_human": "80 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pengxiang/looped-moe-1.7b-tensorboard · Training metrics",
+      "url": "https://huggingface.co/pengxiang/looped-moe-1.7b-tensorboard/tensorboard",
+      "snippet": "pengxiang / looped-moe-1.7b-tensorboard Like 0 Model card FilesFiles and versions xet MetricsTraining metrics Community"
+    },
+    {
+      "title": "[2606.04438] LoopMoE: Unifying Iterative Computation with Mixture-of ...",
+      "url": "https://arxiv.org/abs/2606.04438",
+      "snippet": "Mixture-of-Experts (MoE) and looped architectures scale models along two orthogonal axes, namely parameter capacity and effective depth. However, mainstream looped architectures rely on dense backbones that couple parameter count with per-token FLOPs, which makes it impossible to isolate the effect of iterative computation under matched budgets. To this end, we present LoopMoE, a looped MoE ..."
+    },
+    {
+      "title": "LoopMoE: Unifying Iterative Computation with Mixture-of-Experts for ...",
+      "url": "https://arxiv.org/pdf/2606.04438v1",
+      "snippet": "Abstract Mixture-of-Experts (MoE) and looped archi-tectures scale models along two orthogonal axes, namely parameter capacity and effective depth. However, mainstream looped architec-tures rely on dense backbones that couple pa-rameter count with per-token FLOPs, which makes it impossible to isolate the effect of it-erative computation under matched budgets. To this end, we present LoopMoE, a ..."
+    },
+    {
+      "title": "LoopMoE: Unifying Iterative Computation with Mixture-of-Experts for ...",
+      "url": "https://www.alphaxiv.org/abs/2606.04438v1",
+      "snippet": "View recent discussion. Abstract: Mixture-of-Experts (MoE) and looped architectures scale models along two orthogonal axes, namely parameter capacity and effective depth. However, mainstream looped architectures rely on dense backbones that couple parameter count with per-token FLOPs, which makes it impossible to isolate the effect of iterative computation under matched budgets. To this end ..."
+    },
+    {
+      "title": "LoopMoE: Unifying Iterative Computation with Mixture-of-Experts for ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/loopmoe-unifying-iterative-computation-mixture-experts-language",
+      "snippet": "The paper targets this by combining sparse expert routing with weight-shared computation, enabling the first head-to-head evaluation where a looped model and a non-looped MoE match on total parameters, per-token FLOPs, and active sublayer ratios simultaneously."
+    }
+  ]
+}

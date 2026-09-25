@@ -5,7 +5,7 @@
   "author": "rfonod",
   "url": "https://huggingface.co/rfonod/geo-trax",
   "created_at": "2026-06-24T19:07:50.000Z",
-  "updated_at": "2026-08-26T16:40:00.000Z",
+  "updated_at": "2026-09-25T08:44:48.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 692,
+  "downloads_30d": 699,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

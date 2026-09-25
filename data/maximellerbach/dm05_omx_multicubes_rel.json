@@ -5,7 +5,7 @@
   "author": "maximellerbach",
   "url": "https://huggingface.co/maximellerbach/dm05_omx_multicubes_rel",
   "created_at": "2026-08-24T16:19:29.000Z",
-  "updated_at": "2026-08-28T14:31:48.000Z",
+  "updated_at": "2026-09-24T11:14:32.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 50,
+  "downloads_30d": 38,
   "trending_score": 0,
   "parameters": 5157859728,
   "parameters_human": "5.16B",

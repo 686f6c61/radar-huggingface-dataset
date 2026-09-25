@@ -5,7 +5,7 @@
   "author": "inclusionAI",
   "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-VL",
   "created_at": "2026-09-04T15:24:37.000Z",
-  "updated_at": "2026-09-11T00:49:28.000Z",
+  "updated_at": "2026-09-24T09:02:45.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -25,7 +25,7 @@
   "trending_score": 13,
   "parameters": 124848460496,
   "parameters_human": "124.85B",
-  "storage_bytes": 249705049013,
+  "storage_bytes": 249705360073,
   "storage_human": "249.7 GB",
   "base_model": null,
   "formats": [

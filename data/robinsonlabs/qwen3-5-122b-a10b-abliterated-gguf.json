@@ -5,7 +5,7 @@
   "author": "RobinsonLabs",
   "url": "https://huggingface.co/RobinsonLabs/Qwen3.5-122B-A10B-abliterated-GGUF",
   "created_at": "2026-06-14T22:28:09.000Z",
-  "updated_at": "2026-09-06T13:40:39.000Z",
+  "updated_at": "2026-09-24T23:25:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,12 +28,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 9939,
+  "downloads_30d": 9930,
   "trending_score": 0,
   "parameters": 124635206144,
   "parameters_human": "124.64B",
-  "storage_bytes": 1900913545792,
-  "storage_human": "1900.9 GB",
+  "storage_bytes": 976469974048,
+  "storage_human": "976.5 GB",
   "base_model": "Qwen/Qwen3.5-122B-A10B",
   "formats": [
     "gguf"

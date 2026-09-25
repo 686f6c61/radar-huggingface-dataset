@@ -5,7 +5,7 @@
   "author": "iromu",
   "url": "https://huggingface.co/iromu/Qwen3-0.6B-tools-GGUF",
   "created_at": "2026-08-26T21:30:08.000Z",
-  "updated_at": "2026-08-28T20:21:02.000Z",
+  "updated_at": "2026-09-24T21:52:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -16,9 +16,11 @@
   "tags": [
     "gguf",
     "qwen3",
+    "qwen",
     "tool-calling",
     "function-calling",
     "agents",
+    "sft",
     "lora",
     "en",
     "dataset:r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation",
@@ -34,8 +36,8 @@
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",
-  "storage_bytes": 2678748288,
-  "storage_human": "2.7 GB",
+  "storage_bytes": 5852607424,
+  "storage_human": "5.9 GB",
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "gguf"

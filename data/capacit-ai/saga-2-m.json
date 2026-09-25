@@ -5,9 +5,9 @@
   "author": "capacit-ai",
   "url": "https://huggingface.co/capacit-ai/saga-2-m",
   "created_at": "2026-09-13T13:34:15.000Z",
-  "updated_at": "2026-09-20T19:01:45.000Z",
-  "license": "apache-2.0",
-  "license_family": "oss",
+  "updated_at": "2026-09-24T21:40:35.000Z",
+  "license": "cc-by-nc-4.0",
+  "license_family": "non-commercial",
   "pipeline_tag": "automatic-speech-recognition",
   "library": null,
   "languages": [
@@ -26,12 +26,12 @@
     "dataset:alexandrainst/coral",
     "dataset:google/fleurs",
     "dataset:mozilla-foundation/common_voice_17_0",
-    "license:apache-2.0",
+    "license:cc-by-nc-4.0",
     "model-index",
     "region:us"
   ],
   "likes": 10,
-  "downloads_30d": 157,
+  "downloads_30d": 174,
   "trending_score": 0,
   "parameters": 1238266880,
   "parameters_human": "1.24B",
@@ -42,7 +42,7 @@
     "safetensors"
   ],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "removed": false,
   "removed_at": null,
   "benchmarks": [

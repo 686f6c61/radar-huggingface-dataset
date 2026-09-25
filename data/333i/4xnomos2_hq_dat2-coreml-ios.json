@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "333i/4xNomos2_hq_dat2-coreml-ios",
+  "slug": "333i-4xnomos2_hq_dat2-coreml-ios",
+  "author": "333i",
+  "url": "https://huggingface.co/333i/4xNomos2_hq_dat2-coreml-ios",
+  "created_at": "2026-09-25T01:35:15.000Z",
+  "updated_at": "2026-09-25T01:35:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "super-resolution",
+    "ios",
+    "image-to-image",
+    "base_model:Phips/4xNomos2_hq_dat2",
+    "base_model:quantized:Phips/4xNomos2_hq_dat2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carte de France des pannes internet Free aujourd'hui et en direct",
+      "url": "https://test.fr/france/free",
+      "snippet": "11 hours ago · Il y a en ce moment 215 incidents, pannes, coupures Free signalées (Via test.fr) aujourd'hui, cela concerne 168 …"
+    },
+    {
+      "title": "Carte de France des pannes internet Free aujourd'hui et en direct",
+      "url": "https://test.fr/france/free/10600",
+      "snippet": "Sep 11, 2026 · Signaler et voir toutes les pannes internet tv mobile Free en France et en Direct"
+    },
+    {
+      "title": "Pannes Free et problèmes de réseau (signalés aujourd'hui)",
+      "url": "https://www.touslesforfaits.fr/pannes/free",
+      "snippet": "Jul 20, 2026 · Les pannes Free en cours aujourd'hui (Internet et Réseau) Vous n’arrivez plus à vous connecter avec votre Freebox …"
+    },
+    {
+      "title": "Problème chez Free? Pannes et problèmes du réseau | Downdetector …",
+      "url": "https://downdetector.fr/statut/free/",
+      "snippet": "Problèmes et pannes du réseau Free. Vous êtes bloqué? Pas de réseau Freebox ou mobile? Vous trouverez ici tous les problèmes"
+    },
+    {
+      "title": "Panne Free aujourd'hui : état du réseau en direct | septembre 2026",
+      "url": "https://selectra.info/telecom/fournisseurs/free/probleme-reseau",
+      "snippet": "Panne Free en cours ? Consultez notre carte des incidents réseau Free Mobile et Freebox mis à jour aujourd'hui et suivez nos …"
+    }
+  ]
+}

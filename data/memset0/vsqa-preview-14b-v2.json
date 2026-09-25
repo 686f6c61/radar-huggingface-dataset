@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "memset0/vsqa-preview-14b-v2",
+  "slug": "memset0-vsqa-preview-14b-v2",
+  "author": "memset0",
+  "url": "https://huggingface.co/memset0/vsqa-preview-14b-v2",
+  "created_at": "2026-09-25T02:07:28.000Z",
+  "updated_at": "2026-09-25T03:31:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "video-generation",
+    "wan2.1",
+    "dmd",
+    "quantization-aware-training",
+    "nvfp4",
+    "sparse-attention",
+    "text-to-video",
+    "base_model:Wan-AI/Wan2.1-T2V-14B-Diffusers",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-14B-Diffusers",
+    "license:apache-2.0",
+    "diffusers:WanPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84608550056,
+  "storage_human": "84.6 GB",
+  "base_model": "Wan-AI/Wan2.1-T2V-14B-Diffusers",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "memset0/vsqa-preview-1.3b · Hugging Face",
+      "url": "https://huggingface.co/memset0/vsqa-preview-1.3b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "memset0 (memento mori) · GitHub",
+      "url": "https://github.com/memset0",
+      "snippet": "在海月的虚空中，纵身飞过秋凉的时鸟。. memset0 has 167 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Best 14B Coding Models (2026): Ranked by HumanEval + VRAM",
+      "url": "https://localaimaster.com/blog/best-14b-coding-models",
+      "snippet": "A 14B model at 4-bit lands around 9-10 GB of VRAM, leaving room for context — small enough for an RTX 3060 12GB or a 16GB Mac, big enough to beat the 7B models on real refactors. What counts as a \"14B coding model\" (and what is faking it)? \"14B-class\" is a loose bracket, not a hard number."
+    },
+    {
+      "title": "Wan-AI/Wan2.2-Animate-14B · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.2-Animate-14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

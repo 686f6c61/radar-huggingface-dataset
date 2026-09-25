@@ -5,7 +5,7 @@
   "author": "RobinsonLabs",
   "url": "https://huggingface.co/RobinsonLabs/Qwen3.6-35B-A3B-abliterated-GGUF",
   "created_at": "2026-06-28T01:55:57.000Z",
-  "updated_at": "2026-09-03T01:25:02.000Z",
+  "updated_at": "2026-09-24T23:25:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,12 +28,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 7962,
+  "downloads_30d": 7936,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
-  "storage_bytes": 495936095104,
-  "storage_human": "495.9 GB",
+  "storage_bytes": 267363514240,
+  "storage_human": "267.4 GB",
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "roman220220",
   "url": "https://huggingface.co/roman220220/nemotron-30b-a3b-gptq-jang-component",
   "created_at": "2026-09-13T02:58:37.000Z",
-  "updated_at": "2026-09-13T03:02:53.000Z",
+  "updated_at": "2026-09-24T22:43:37.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,6 +19,8 @@
     "gptq",
     "nemotron",
     "mixed-precision",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
     "license:other",
     "3-bit",
     "region:us"
@@ -30,7 +32,7 @@
   "parameters_human": "31.58B",
   "storage_bytes": 16743064687,
   "storage_human": "16.7 GB",
-  "base_model": "nvidia/Nemotron-3.5-Lightning-30B-A3B",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
     "mlx",
     "safetensors"

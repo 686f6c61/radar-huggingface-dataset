@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "flymy-ai/decision-4b-v1.2",
+  "slug": "flymy-ai-decision-4b-v1-2",
+  "author": "flymy-ai",
+  "url": "https://huggingface.co/flymy-ai/decision-4b-v1.2",
+  "created_at": "2026-09-25T02:56:14.000Z",
+  "updated_at": "2026-09-25T02:56:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "typed-decisions",
+    "calibration",
+    "jevbench",
+    "qwen3.5",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57549856,
+  "storage_human": "58 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JevBench by Benchmark Heaven — Jev-class model benchmark",
+      "url": "https://benchmarkheaven.com/jev-models",
+      "snippet": "decider-4b v2 † Decider-ai 1.2.2 (PyPI wheel identical to tag v1.2.2 ... Decision 2B (FlyMy.AI, v59) — Base model openbmb/MiniCPM5-2B; a Jev-class ..."
+    },
+    {
+      "title": "All about Jev — 1116 replications, models, runtimes & benchmarks",
+      "url": "https://hanxiao.io/all-about-jev/",
+      "snippet": "vor 14 Stunden ... ... 2… —contrastive-lm.​notion.​site ↗. Model 2026-09-23. Decision 2B, FlyMyJev preview. flymy-ai. base MiniCPM5-2B · size 2.28B total, 26.2M ..."
+    },
+    {
+      "title": "Prof. Dr. Marc Erich Latoschik - Human-Computer Interaction",
+      "url": "http://hci.uni-wuerzburg.de/people/marc-latoschik/",
+      "snippet": "In 1996 he finally decided to devote all his time on his research questions and joined academia. He headed the AI & VR Lab at Bielefeld University until 2007, ..."
+    },
+    {
+      "title": "Kaidul Islam – SWE @ Google Switzerland - LinkedIn",
+      "url": "https://ch.linkedin.com/in/kaidul",
+      "snippet": "Upwork. Jan. 2013 – Feb. 2015 2 Jahre 2 Monate. Delivered 20+ Android ... Generative AI with Large Language Models. DeepLearning.AI. Ausgestellt: Sept ..."
+    },
+    {
+      "title": "Hear2Act: Benchmarking When Prosody Should Change ... - arXiv",
+      "url": "https://arxiv.org/pdf/2608.19515",
+      "snippet": "20.08.2026 ... downstream decision model. Ground-truth state access serves as a ... VocalAffectBench: Evaluating Vocal Emotion. Recognition in AI Audio Models."
+    }
+  ]
+}

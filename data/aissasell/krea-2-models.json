@@ -5,7 +5,7 @@
   "author": "aissasell",
   "url": "https://huggingface.co/aissasell/Krea-2-Models",
   "created_at": "2026-08-24T11:31:24.000Z",
-  "updated_at": "2026-09-20T05:06:26.000Z",
+  "updated_at": "2026-09-24T22:23:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,12 +19,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 26,
+  "downloads_30d": 27,
   "trending_score": 0,
   "parameters": 12820073036,
   "parameters_human": "12.82B",
-  "storage_bytes": 169939005769,
-  "storage_human": "169.9 GB",
+  "storage_bytes": 195579206481,
+  "storage_human": "195.6 GB",
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "gguf"

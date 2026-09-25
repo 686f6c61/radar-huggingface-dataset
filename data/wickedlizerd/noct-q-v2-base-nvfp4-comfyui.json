@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Wickedlizerd/Noct-Q-V2-Base-NVFP4-ComfyUI",
+  "slug": "wickedlizerd-noct-q-v2-base-nvfp4-comfyui",
+  "author": "Wickedlizerd",
+  "url": "https://huggingface.co/Wickedlizerd/Noct-Q-V2-Base-NVFP4-ComfyUI",
+  "created_at": "2026-09-25T02:16:53.000Z",
+  "updated_at": "2026-09-25T02:18:34.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "nvfp4",
+    "image-to-image",
+    "quantized",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4197575272,
+  "storage_human": "4.2 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wickedlizerd/Noct-Q-V2-Base-NVFP4-ComfyUI · Hugging Face",
+      "url": "https://huggingface.co/Wickedlizerd/Noct-Q-V2-Base-NVFP4-ComfyUI",
+      "snippet": "This is the full-step Base model, not Turbo. The source author recommends 25–50 steps, CFG 1, Euler. Use the Qwen Image 2.1 encoder and 64-channel VAE. Native NVFP4 inference requires compatible ComfyUI/comfy-kitchen and Blackwell hardware."
+    },
+    {
+      "title": "r/comfyui on Reddit: Testing the Flux 2 Dev NVFP4 model - Consistent ...",
+      "url": "https://www.reddit.com/r/comfyui/comments/1qc3jli/testing_the_flux_2_dev_nvfp4_model_consistent/",
+      "snippet": "I used the NVFP4 model with 20 steps and a latent size of 1.5 megapixels, upscaled by SEEDVR to a short edge of 2560px."
+    },
+    {
+      "title": "Supported Models - Comfy",
+      "url": "https://comfy.org/p/supported-models/",
+      "snippet": "Flux 2 Turbo LoRA Comfyui LoRA · 2 workflows · Krea2 Turbo INT8 Convrot Diffusion · 2 workflows · Krea2 Darkbrush LoRA · 2 workflows · Gpt Oss 20b Nvfp4 Text Encoder · 2 workflows · Mage Flow INT8 Convrot Diffusion · 2 workflows · Qwen 2.5 Vl FP16 Text Encoder ·"
+    },
+    {
+      "title": "NVFP4 With CUDA 13 Full Tutorial, 100%+ Speed Gain + Quality ...",
+      "url": "https://www.youtube.com/watch?v=yOj9PYq3XYM",
+      "snippet": "Finally NVFP4 models has arrived to ComfyUI thus SwarmUI with CUDA 13. NVFP4 models are literally 100%+ faster with minimal impact on quality. I have done gr..."
+    },
+    {
+      "title": "Qwen-3.5-Abliterated-Comfyui-nvfp4 unlocks local AI power | Local ...",
+      "url": "https://www.localainews.co/news/comfyui/qwen-3-5-abliterated-comfyui-nvfp4-unlocks-local-ai-power/",
+      "snippet": "The NVFP4 quantization format provides the smallest file sizes and fastest inference but requires newer NVIDIA GPU architectures for optimal performance. Users should note that abliterated models remove alignment layers designed to prevent harmful ..."
+    }
+  ]
+}

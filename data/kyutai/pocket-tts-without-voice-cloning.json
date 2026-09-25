@@ -5,7 +5,7 @@
   "author": "kyutai",
   "url": "https://huggingface.co/kyutai/pocket-tts-without-voice-cloning",
   "created_at": "2026-01-06T13:21:12.000Z",
-  "updated_at": "2026-09-23T13:54:47.000Z",
+  "updated_at": "2026-09-24T14:40:13.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 32,
-  "downloads_30d": 6654,
+  "downloads_30d": 6415,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 18857985895,
-  "storage_human": "18.9 GB",
+  "storage_bytes": 27638703934,
+  "storage_human": "27.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

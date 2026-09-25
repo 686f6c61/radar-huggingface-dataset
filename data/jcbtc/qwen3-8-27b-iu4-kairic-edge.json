@@ -5,7 +5,7 @@
   "author": "jcbtc",
   "url": "https://huggingface.co/jcbtc/Qwen3.8-27B-IU4-Kairic-Edge",
   "created_at": "2026-08-22T02:52:22.000Z",
-  "updated_at": "2026-08-23T14:28:32.000Z",
+  "updated_at": "2026-09-24T15:39:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -41,7 +41,7 @@
   "trending_score": 8,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 27973427135,
+  "storage_bytes": 28028178153,
   "storage_human": "28.0 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

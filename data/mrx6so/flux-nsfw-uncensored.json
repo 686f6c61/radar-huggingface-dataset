@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mrx6so/Flux-NSFW-uncensored",
+  "slug": "mrx6so-flux-nsfw-uncensored",
+  "author": "mrx6so",
+  "url": "https://huggingface.co/mrx6so/Flux-NSFW-uncensored",
+  "created_at": "2026-09-25T01:21:15.000Z",
+  "updated_at": "2026-09-25T01:21:15.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-image",
+    "en",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:finetune:black-forest-labs/FLUX.1-dev",
+    "license:creativeml-openrail-m",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 687476088,
+  "storage_human": "687 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nsfw-flux-dev: Text-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/nsfw-flux-dev-aisha-ai-official",
+      "snippet": "Overview nsfw-flux-dev is a text-to-image generation model maintained by aisha-ai-official that generates images up to 4096×4096 pixels from natural language prompts. This model is built on the FLUX.1-dev architecture from Black Forest Labs and operates on Replicate&#x27;s infrastructure. The critical distinction: this is a variant explicitly configured to handle adult content generation without ..."
+    },
+    {
+      "title": "Uncensored Local Image Generation: FLUX, SDXL, Z-Image",
+      "url": "https://localaimaster.com/blog/uncensored-local-image-generation",
+      "snippet": "Is FLUX uncensored? At runtime, yes — no filter ships in FLUX.1 dev or SDXL weights. Plus Z-Image, Qwen-Image and Chroma: per-model filter behavior, VRAM and setup."
+    },
+    {
+      "title": "Flux-NSFW-uncensored - 开源模型 - Heartsync - OpenCSG - text to image ...",
+      "url": "https://opencsg.com/models/AIWizards/Flux-NSFW-uncensored",
+      "snippet": "Flux-NSFW-uncensored 是由 Heartsync 推出的开源人工智能模型，支持多模态任务处理，主要应用于text to image，OpenCSG提供高速免费下载服务，支持模型推理、训练、部署全流程管理，助力AI开发者高效工作。"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=trending&search=nsfw",
+      "snippet": "Explore machine learning models. AI-Porn/pornworks-real-porn-photo-realistic-nsfw-sdxl-and-pony-chekpoint"
+    },
+    {
+      "title": "Flux Uncensored v3 | Text-to-Image Model - getllms.org",
+      "url": "https://getllms.org/models/flux-uncensored-v3",
+      "snippet": "Flux Uncensored v3 is the Flux-uncensored text-to-image model for prompt control and parameter tuning. Unlock powerful AI features for your business today!"
+    }
+  ]
+}

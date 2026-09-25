@@ -5,7 +5,7 @@
   "author": "mlai-dante",
   "url": "https://huggingface.co/mlai-dante/road-model-public",
   "created_at": "2026-08-09T03:35:10.000Z",
-  "updated_at": "2026-09-24T05:17:27.000Z",
+  "updated_at": "2026-09-25T06:11:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 98,
+  "downloads_30d": 99,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 63335301300,
-  "storage_human": "63.3 GB",
+  "storage_bytes": 66540033844,
+  "storage_human": "66.5 GB",
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"

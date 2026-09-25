@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "nathansutton/Qwen3.8-27B-DFlash2-MLX",
+  "slug": "nathansutton-qwen3-8-27b-dflash2-mlx",
+  "author": "nathansutton",
+  "url": "https://huggingface.co/nathansutton/Qwen3.8-27B-DFlash2-MLX",
+  "created_at": "2026-09-25T02:09:55.000Z",
+  "updated_at": "2026-09-25T02:09:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "apple-silicon",
+    "speculative-decoding",
+    "dflash",
+    "coding",
+    "text-generation",
+    "conversational",
+    "arxiv:2602.06036",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1166440942,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models in MLX - Hugging Face",
+      "url": "https://huggingface.co/models?language=mlx",
+      "snippet": "nathansutton/Qwen3.8-27B-Ternary-Bonsai-2-DFlash2-MLX. Text Generation • 27B ... Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic ..."
+    },
+    {
+      "title": "Fine-tuned Models for Qwen/Qwen3.8-27B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Afinetune%3AQwen%2FQwen3.8-27B",
+      "snippet": "nathansutton/Qwen3.8-27B-Ternary-Bonsai-2-DFlash2-MLX. Text Generation • 27B ... peonist-ai/halogen-qwen3.8-27b. Updated 10 days ago • 19 · feyospace ..."
+    },
+    {
+      "title": "Models compatible with the MLX library - Hugging Face",
+      "url": "https://huggingface.co/models?library=mlx&sort=trending",
+      "snippet": "Together AI · Fireworks · Featherless AI · Zai. + 9 + 11 + 10. Hardware ... nathansutton/Qwen3.8-27B-Ternary-Bonsai-2-DFlash2-MLX. Text Generation • 27B ..."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=prism_hadamard_qwen35",
+      "snippet": "17.09.2026 ... Together AI · Fireworks · Featherless AI · Zai · Replicate · Cohere ... nathansutton/Qwen3.8-27B-Ternary-Bonsai-2-DFlash2-MLX. Text ..."
+    },
+    {
+      "title": "Models running on MLX LM - Hugging Face",
+      "url": "https://huggingface.co/models?apps=mlx-lm&sort=trending",
+      "snippet": "nathansutton/Qwen3.8-27B-Ternary-Bonsai-2-DFlash2-MLX. Text Generation • 27B ... ornith-ai/Ornith-1.5-35B-A3B-MLX. Text Generation • 35B • Updated Aug 19 ..."
+    }
+  ]
+}

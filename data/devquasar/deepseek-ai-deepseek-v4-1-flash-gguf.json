@@ -4,8 +4,8 @@
   "slug": "devquasar-deepseek-ai-deepseek-v4-1-flash-gguf",
   "author": "DevQuasar",
   "url": "https://huggingface.co/DevQuasar/deepseek-ai.DeepSeek-V4.1-Flash-GGUF",
-  "created_at": "2026-09-10T14:43:29.000Z",
-  "updated_at": "2026-09-10T14:43:30.000Z",
+  "created_at": "2026-09-25T02:58:48.000Z",
+  "updated_at": "2026-09-25T02:58:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -28,8 +28,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-11T02:58:31.932Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

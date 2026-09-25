@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "sauce345/mw-longcat-video-int8",
+  "slug": "sauce345-mw-longcat-video-int8",
+  "author": "sauce345",
+  "url": "https://huggingface.co/sauce345/mw-longcat-video-int8",
+  "created_at": "2026-09-25T01:25:26.000Z",
+  "updated_at": "2026-09-25T01:26:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13601030928,
+  "storage_human": "13.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sauce345/mw-longcat-video-int8 · Hugging Face",
+      "url": "https://huggingface.co/sauce345/mw-longcat-video-int8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LongCat Video - AI Video Generation Model | Text-to-Video & Image-to-Video",
+      "url": "https://longcat.run/",
+      "snippet": "LongCat Video is a 13.6B parameter AI video generation model. Create stunning videos from text prompts, transform images to video, and generate minutes-long videos without quality loss."
+    },
+    {
+      "title": "sauce345/mw-longcat-video-int8 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/sauce345/mw-longcat-video-int8/discussions",
+      "snippet": "sauce345 / mw-longcat-video-int8 Like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new New discussion New pull request All Discussions Pull requests View closed (0) Sort: Recently created"
+    },
+    {
+      "title": "GitHub - meituan-longcat/LongCat-Video · GitHub",
+      "url": "https://github.com/meituan-longcat/LongCat-Video",
+      "snippet": "We introduce LongCat-Video, a foundational video generation model with 13.6B parameters, delivering strong performance across Text-to-Video, Image-to-Video, and Video-Continuation generation tasks. It particularly excels in efficient and high-quality long video generation, representing our first step toward world models."
+    },
+    {
+      "title": "LongCat-Video",
+      "url": "https://meituan-longcat.github.io/LongCat-Video/",
+      "snippet": "LongCat-Video A Unified Foundational Video Generation Model LongCat-Video delivers strong performance across Text-to-Video, Image-to-Video, and Video-Continuation generation tasks. It particularly excels in efficient and high-quality long video generation, representing our first step toward world models."
+    }
+  ]
+}

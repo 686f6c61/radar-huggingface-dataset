@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "junbrro/egopi-arm2-rbbt-anyh3-AB-FULL-30k-actsilu-mlxp-20260925",
+  "slug": "junbrro-egopi-arm2-rbbt-anyh3-ab-full-30k-actsilu-mlxp-20260925",
+  "author": "junbrro",
+  "url": "https://huggingface.co/junbrro/egopi-arm2-rbbt-anyh3-AB-FULL-30k-actsilu-mlxp-20260925",
+  "created_at": "2026-09-25T01:57:22.000Z",
+  "updated_at": "2026-09-25T02:03:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6915102808,
+  "parameters_human": "6.92B",
+  "storage_bytes": 13868884986,
+  "storage_human": "13.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "egopi-arm2-rbbt-anyh3-AB-FULL-30k-actsilu-mlxp-20260925",
+      "url": "https://huggingface.co/junbrro/egopi-arm2-rbbt-anyh3-AB-FULL-30k-actsilu-mlxp-20260925",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "junbrro/egopi-axis2-adaln-only-AB-30k-actsilu-mlxp-20260921 · Hugging Face",
+      "url": "https://huggingface.co/junbrro/egopi-axis2-adaln-only-AB-30k-actsilu-mlxp-20260921",
+      "snippet": "Arm II AdaLN-only AB Final step: 30000. Source: junhyeong-axis2-adaln-only-260915-v2. Final model weights and configuration only; optimizer/RNG state excluded. Original configuration is preserved, including source-cluster paths. Remap paths before use. Bundled actlat/ contains the action tokenizer when applicable. Downloads last month - Safetensors"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "junbrro/egopi-mt-r6h5-axis1-AB-30k-actsilu-slurm-18839-20260921 ...",
+      "url": "https://huggingface.co/junbrro/egopi-mt-r6h5-axis1-AB-30k-actsilu-slurm-18839-20260921",
+      "snippet": "MT to Arm I AB Final step: 30000. Source: 18839. Final model weights and configuration only; optimizer/RNG state excluded. Original configuration is preserved, including source-cluster paths. Remap paths before use. Bundled actlat/ contains the action tokenizer when applicable. Multi-group runtime required. Slot 37 mt_openarm_prq15, r6h5 tokenizer."
+    },
+    {
+      "title": "junbrro/action-tokenizer-prq30-qcontinuous-v9-openarm1106-egodex1091 ...",
+      "url": "https://huggingface.co/junbrro/action-tokenizer-prq30-qcontinuous-v9-openarm1106-egodex1091-100k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

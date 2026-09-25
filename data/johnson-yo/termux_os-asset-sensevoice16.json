@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "johnson-yo/termux_os-asset-sensevoice16",
+  "slug": "johnson-yo-termux_os-asset-sensevoice16",
+  "author": "johnson-yo",
+  "url": "https://huggingface.co/johnson-yo/termux_os-asset-sensevoice16",
+  "created_at": "2026-09-25T01:34:59.000Z",
+  "updated_at": "2026-09-25T02:59:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 879803803,
+  "storage_human": "880 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Johnson & Johnson: Changing health for humanity",
+      "url": "https://www.jnj.com/",
+      "snippet": "Since its launch, Johnson & Johnson has focused on helping make surgeries safer. Learn how this analytical microbiologist and her …Read more"
+    },
+    {
+      "title": "Johnson & Johnson — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Johnson_%26_Johnson",
+      "snippet": "Johnson & Johnson est une entreprise pharmaceutique américaine fondée en 1886. Elle produit du matériel pharmaceutique et …Read more"
+    },
+    {
+      "title": "Lyndon B. Johnson — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Lyndon_B._Johnson",
+      "snippet": "Lyndon Baines Johnson (/ˈl ɪ ndən be ɪ nz ˈd͡ʒɑnsən/b), généralement appelé Lyndon B. Johnson et également connu sous ses …Read more"
+    },
+    {
+      "title": "France | Johnson Controls",
+      "url": "https://www.johnsoncontrols.fr/",
+      "snippet": "Johnson Controls propose des solutions et des technologies de pointe associées à son expertise en matière de bâtiments pour créer …Read more"
+    },
+    {
+      "title": "Johnson & Johnson - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Johnson_&_johnson",
+      "snippet": "1886: Founding of Johnson & Johnson Robert Wood Johnson, one of the company's founders Robert Wood Johnson joined his …Read more"
+    }
+  ]
+}

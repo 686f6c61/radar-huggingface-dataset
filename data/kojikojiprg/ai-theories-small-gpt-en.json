@@ -5,7 +5,7 @@
   "author": "kojikojiprg",
   "url": "https://huggingface.co/kojikojiprg/ai-theories-small-gpt-en",
   "created_at": "2026-09-13T00:29:50.000Z",
-  "updated_at": "2026-09-13T00:29:54.000Z",
+  "updated_at": "2026-09-24T14:10:10.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 74,
+  "downloads_30d": 79,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "333i/4xPurePhoto-RealPLSKR-coreml-ios",
+  "slug": "333i-4xpurephoto-realplskr-coreml-ios",
+  "author": "333i",
+  "url": "https://huggingface.co/333i/4xPurePhoto-RealPLSKR-coreml-ios",
+  "created_at": "2026-09-25T01:29:39.000Z",
+  "updated_at": "2026-09-25T01:29:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "super-resolution",
+    "ios",
+    "image-to-image",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "4x 4xPurePhoto-RealPLSKR - OpenModelDB",
+      "url": "https://openmodeldb.info/models/4x-PurePhoto-RealPLSKR",
+      "snippet": "A 4x RealPLKSR model by asterixcool. Many preview images on this site are currently broken due to their original hosts being indefinitely offline. Work is underway to recover the affected images and rehost them somewhere reliable."
+    },
+    {
+      "title": "4xPurePhoto-RealPLSKR.pth · mp3pintyo/upscale at ... - Hugging Face",
+      "url": "https://huggingface.co/mp3pintyo/upscale/blob/8c80d55cdc2cc831912ece1848429cd3be52f9e1/4xPurePhoto-RealPLSKR.pth",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mp3pintyo/upscale · Hugging Face",
+      "url": "https://huggingface.co/mp3pintyo/upscale",
+      "snippet": "It has the ability to restore highly compressed images as well! ... 4xPurePhoto-RealPLSKR 4x RealPLKSR Skilled in working with cats, hair, parties, and creating clear images. Also proficient in resizing photos and enlarging large, sharp images. Can effectively improve images from small sizes as well (300px at smallest on one side, depending on ..."
+    },
+    {
+      "title": "GitHub - starinspace/StarinspaceUpscale: Upscale Models",
+      "url": "https://github.com/starinspace/StarinspaceUpscale",
+      "snippet": "Name: 4xPurePhoto-RealPLSKR License: CC-BY-SA-4. Link: Download Github Model Architecture: RealPLSKR Scale: 4 Purpose: Proficient in upscaling high-resolution photos to medium quality, preferably with a minimum size of 300px on the smallest side. Iterations: 152k batch_size: 8 HR_size: 1024 Dataset: 8684 OTF Training: No Pretrained_Model_G: No"
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    }
+  ]
+}

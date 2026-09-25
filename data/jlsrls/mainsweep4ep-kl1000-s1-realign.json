@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jlsrls/mainsweep4ep-kl1000-s1-realign",
+  "slug": "jlsrls-mainsweep4ep-kl1000-s1-realign",
+  "author": "jlsrls",
+  "url": "https://huggingface.co/jlsrls/mainsweep4ep-kl1000-s1-realign",
+  "created_at": "2026-09-25T01:59:14.000Z",
+  "updated_at": "2026-09-25T02:08:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "base_model:unsloth/Llama-3.2-1B-Instruct",
+    "base_model:finetune:unsloth/Llama-3.2-1B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1652472700,
+  "storage_human": "1.7 GB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lambda Symbol (λ)",
+      "url": "https://wumbo.net/symbols/lambda/",
+      "snippet": "The λ (lambda) symbol is used throughout math, physics and computer science. For example, lambda is used to represent the …Read more"
+    },
+    {
+      "title": "Lambda - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lambda",
+      "snippet": "In cosmology, lambda is the symbol for the cosmological constant, a term added to some dynamical equations to account for the …Read more"
+    },
+    {
+      "title": "Lambda Symbol (λ) - Copy and Paste Text Symbols - Symbolsdb.com",
+      "url": "https://symbolsdb.com/lambda-symbol",
+      "snippet": "Information, easy-to-copy variants, customizer, and more. Text symbol of Greek letter \"Lambda\". The lambda symbol (λ) finds its use …Read more"
+    },
+    {
+      "title": "Lambda Symbol (λ Λ) Copy & Paste and Meaning",
+      "url": "https://symbols.cool/lambda-symbol",
+      "snippet": "The lambda symbol (Λ λ) is the 11th letter of the Greek alphabet. Learn its meaning, see uppercase 'Λ' and lowercase 'λ' forms, and …Read more"
+    },
+    {
+      "title": "Lambda — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lambda",
+      "snippet": "la lettre lambda (minuscule et en italique, λ) est utilisée comme symbole : en physique, de la longueur d'onde et d'autres grandeurs …Read more"
+    }
+  ]
+}

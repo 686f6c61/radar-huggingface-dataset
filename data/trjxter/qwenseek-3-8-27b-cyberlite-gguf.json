@@ -5,7 +5,7 @@
   "author": "trjxter",
   "url": "https://huggingface.co/trjxter/Qwenseek-3.8-27B-CyberLite-GGUF",
   "created_at": "2026-08-31T03:27:08.000Z",
-  "updated_at": "2026-08-31T10:41:49.000Z",
+  "updated_at": "2026-09-24T17:07:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -42,7 +42,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 3337,
+  "downloads_30d": 3365,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

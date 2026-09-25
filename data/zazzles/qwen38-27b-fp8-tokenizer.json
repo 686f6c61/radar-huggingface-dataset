@@ -5,13 +5,14 @@
   "author": "Zazzles",
   "url": "https://huggingface.co/Zazzles/qwen38-27b-fp8-tokenizer",
   "created_at": "2026-09-05T19:33:28.000Z",
-  "updated_at": "2026-09-05T19:36:37.000Z",
+  "updated_at": "2026-09-25T04:52:40.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "qwen3_5",
     "license:mit",
     "region:us"
   ],

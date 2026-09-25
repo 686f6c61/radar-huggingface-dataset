@@ -5,7 +5,7 @@
   "author": "jan1k",
   "url": "https://huggingface.co/jan1k/Qwen3.6-35B-A3B-Uncensored-Genesis-NVFP4-GGUF",
   "created_at": "2026-09-14T13:44:21.000Z",
-  "updated_at": "2026-09-14T17:20:09.000Z",
+  "updated_at": "2026-09-24T15:39:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -39,13 +39,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 2,
-  "downloads_30d": 903,
+  "likes": 3,
+  "downloads_30d": 919,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 42949292288,
-  "storage_human": "42.9 GB",
+  "storage_bytes": 65323221504,
+  "storage_human": "65.3 GB",
   "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive, LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-GGUF",
   "formats": [
     "gguf"

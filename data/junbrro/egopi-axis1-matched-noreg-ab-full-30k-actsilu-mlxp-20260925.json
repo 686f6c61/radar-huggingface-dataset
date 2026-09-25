@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "junbrro/egopi-axis1-matched-noreg-AB-FULL-30k-actsilu-mlxp-20260925",
+  "slug": "junbrro-egopi-axis1-matched-noreg-ab-full-30k-actsilu-mlxp-20260925",
+  "author": "junbrro",
+  "url": "https://huggingface.co/junbrro/egopi-axis1-matched-noreg-AB-FULL-30k-actsilu-mlxp-20260925",
+  "created_at": "2026-09-25T01:57:26.000Z",
+  "updated_at": "2026-09-25T02:03:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6915102808,
+  "parameters_human": "6.92B",
+  "storage_bytes": 13868884986,
+  "storage_human": "13.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "junbrro/egopi-axis1-matched-noreg-AB-FULL-30k-actsilu-mlxp-20260925 ...",
+      "url": "https://huggingface.co/junbrro/egopi-axis1-matched-noreg-AB-FULL-30k-actsilu-mlxp-20260925",
+      "snippet": "Arm 1 no-reg tokenizer CogAlign persistent full language Final step: 30000. Source: junhyeong-axis1-noreg-full-30k-260924. Final model weights and configuration only; optimizer/RNG state excluded. Original configuration is preserved, including source-cluster paths. Remap paths before use. Bundled actlat/ contains the action tokenizer when ..."
+    },
+    {
+      "title": "junbrro/egopi-axis2-adaln-only-AB-30k-actsilu-mlxp-20260921 · Hugging Face",
+      "url": "https://huggingface.co/junbrro/egopi-axis2-adaln-only-AB-30k-actsilu-mlxp-20260921",
+      "snippet": "Arm II AdaLN-only AB Final step: 30000. Source: junhyeong-axis2-adaln-only-260915-v2. Final model weights and configuration only; optimizer/RNG state excluded. Original configuration is preserved, including source-cluster paths. Remap paths before use. Bundled actlat/ contains the action tokenizer when applicable. Downloads last month - Safetensors"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "AIBooru: AI Art Imageboard",
+      "url": "https://aibooru.online/",
+      "snippet": "AIBooru is the first booru for AI-generated images. Search for AI-generated anime pictures categorized by thousands of tags."
+    },
+    {
+      "title": "junbrro AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/junbrro",
+      "snippet": "Browse AI models attributed to junbrro, sourced from verified model catalogs."
+    }
+  ]
+}

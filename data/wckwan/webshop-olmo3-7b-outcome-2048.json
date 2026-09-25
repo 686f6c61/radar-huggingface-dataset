@@ -4,8 +4,8 @@
   "slug": "wckwan-webshop-olmo3-7b-outcome-2048",
   "author": "wckwan",
   "url": "https://huggingface.co/wckwan/Webshop-Olmo3-7B-Outcome-2048",
-  "created_at": "2026-09-13T14:09:15.000Z",
-  "updated_at": "2026-09-13T14:53:12.000Z",
+  "created_at": "2026-09-24T14:55:54.000Z",
+  "updated_at": "2026-09-24T16:45:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 291921273728,
-  "storage_human": "291.9 GB",
+  "storage_bytes": 248133082648,
+  "storage_human": "248.1 GB",
   "base_model": "allenai/Olmo-3-7B-Instruct",
   "formats": [
     "safetensors"

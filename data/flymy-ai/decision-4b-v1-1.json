@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "flymy-ai/decision-4b-v1.1",
+  "slug": "flymy-ai-decision-4b-v1-1",
+  "author": "flymy-ai",
+  "url": "https://huggingface.co/flymy-ai/decision-4b-v1.1",
+  "created_at": "2026-09-25T02:56:11.000Z",
+  "updated_at": "2026-09-25T02:56:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "typed-decisions",
+    "calibration",
+    "jevbench",
+    "qwen3.5",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57549856,
+  "storage_human": "58 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'prone' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/prone",
+      "snippet": "Stepsister In Pajamas Gets Creampie and Cumshot! Prone Bone Perfect Ass POV. I Let Him Grip My Hips and Rail Me From …Read more"
+    },
+    {
+      "title": "'prone' Search - XNXX.COM",
+      "url": "https://m-xnxx.com/search/prone",
+      "snippet": "Roma S Submits Her Holes To Prone Bone Fucking With Ass Spread Wide! I Let Him Grip My Ass and Pound Me Prone... Every …"
+    },
+    {
+      "title": "Today's selection - XNXX.COM",
+      "url": "https://www.xnxx.com/todays-selection/",
+      "snippet": "FAKings is AMATEUR porn. El Porno del pueblo. Sneaking into my step-uncle's secret porn stash! Mira visits her step-uncle at his …"
+    },
+    {
+      "title": "The Morning Company · AI Product Studio · MVP in 2 Weeks",
+      "url": "http://www.themorning.space/",
+      "snippet": "Build and launch your AI startup in 28 mornings. A working MVP in 14 days, a market-ready launch in 28. Fixed price, fixed date, and you own 100% of the ..."
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies - XNXX…",
+      "url": "https://xnxx.health/",
+      "snippet": "Sex Video,Sex Porno,Seks Porno,XXX 1080p Video,ankha XXX,YouPorn,XVIDEOS,jav hd,erotic film."
+    }
+  ]
+}

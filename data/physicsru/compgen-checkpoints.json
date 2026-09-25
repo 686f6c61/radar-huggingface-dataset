@@ -5,7 +5,7 @@
   "author": "Physicsru",
   "url": "https://huggingface.co/Physicsru/compgen-checkpoints",
   "created_at": "2026-09-08T14:39:37.000Z",
-  "updated_at": "2026-09-24T01:39:23.000Z",
+  "updated_at": "2026-09-25T02:56:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 309025758219,
-  "storage_human": "309.0 GB",
+  "storage_bytes": 314325070801,
+  "storage_human": "314.3 GB",
   "base_model": "Qwen/Qwen3-4B-Base",
   "formats": [
     "safetensors"

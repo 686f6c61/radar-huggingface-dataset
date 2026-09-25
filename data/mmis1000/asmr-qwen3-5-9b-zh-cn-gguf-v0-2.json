@@ -5,7 +5,7 @@
   "author": "mmis1000",
   "url": "https://huggingface.co/mmis1000/asmr-qwen3.5-9b-zh-cn-gguf-v0.2",
   "created_at": "2026-08-27T05:55:49.000Z",
-  "updated_at": "2026-08-27T06:04:45.000Z",
+  "updated_at": "2026-09-24T22:06:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,10 +34,10 @@
   "likes": 0,
   "downloads_30d": 575,
   "trending_score": 0,
-  "parameters": 8953803264,
-  "parameters_human": "8.95B",
-  "storage_bytes": 40436566144,
-  "storage_human": "40.4 GB",
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 81968939008,
+  "storage_human": "82.0 GB",
   "base_model": "unsloth/Qwen3.5-9B",
   "formats": [
     "gguf"

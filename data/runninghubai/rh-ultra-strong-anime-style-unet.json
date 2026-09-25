@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-ultra-strong-anime-style-unet",
+  "slug": "runninghubai-rh-ultra-strong-anime-style-unet",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-ultra-strong-anime-style-unet",
+  "created_at": "2026-09-25T02:16:42.000Z",
+  "updated_at": "2026-09-25T02:29:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26283372573,
+  "storage_human": "26.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-ultra-strong-anime-style-unet · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-ultra-strong-anime-style-unet",
+      "snippet": "This repository provides rh-ultra-strong-anime-style-unet weight files. You can load them on RunningHub. ... Published by RunningHub on behalf of the author. Copyright remains with the author. Follow the original project or upstream license. Train models on RunningHub: https://www.runninghub.ai/page-model"
+    },
+    {
+      "title": "RunningHubAI/rh-miaomiao-harem-v16-unet · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-miaomiao-harem-v16-unet",
+      "snippet": "The default style is more natural, and the composition quality is significantly improved, better continuing the consistent aesthetic and compositional characteristics of the Meow Meow Harem series."
+    },
+    {
+      "title": "RunningHubAI/rh-anima-aesthetic-v1.1-unet · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-anima-aesthetic-v1.1-unet",
+      "snippet": "This repository provides rh-anima-aesthetic-v1.1-unet weight files. You can load them on RunningHub. ... Published by RunningHub on behalf of the author. Copyright remains with the author. Follow the original project or upstream license. Train models on RunningHub: https://www.runninghub.ai/page-model"
+    },
+    {
+      "title": "RunningHubAI/rh-real-girl-unet · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-real-girl-unet",
+      "snippet": "This repository provides rh-real-girl-unet weight files. You can load them on RunningHub. ... Published by RunningHub on behalf of the author. Copyright remains with the author. Follow the original project or upstream license. Train models on RunningHub: https://www.runninghub.ai/page-model"
+    },
+    {
+      "title": "RunningHubAI/rh-anima-snowstyle-remix-unet · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-anima-snowstyle-remix-unet",
+      "snippet": "vibrant anime illustration, young female character, long turquoise hair, red and black ribbons, white ruffled dress, short sleeves, dark stockings, high-heeled shoes, whimsical gothic flair, large black bow, delicate lace trim, small object in hand, arm extends outward, pink petals floating, dreamy atmosphere, dark blurred background, expressive blue eyes, soft smile, lighting emphasizes figure, serene yet dynamic, elegance and mystery, japanese signature bottom-left"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "alexisStacksCode",
   "url": "https://huggingface.co/alexisStacksCode/Gemma-4-12B-StyleTune-QAT-GGUF",
   "created_at": "2026-09-04T19:07:44.000Z",
-  "updated_at": "2026-09-04T19:14:38.000Z",
+  "updated_at": "2026-09-25T05:35:38.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -21,7 +21,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 454,
+  "downloads_30d": 455,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",

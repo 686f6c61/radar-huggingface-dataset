@@ -5,7 +5,7 @@
   "author": "fastino",
   "url": "https://huggingface.co/fastino/Fastino-Nemotron-3.5-Lightning-Finance",
   "created_at": "2026-08-06T08:52:08.000Z",
-  "updated_at": "2026-09-17T04:31:28.000Z",
+  "updated_at": "2026-09-24T18:32:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 36,
-  "downloads_30d": 6278,
+  "downloads_30d": 6517,
   "trending_score": 8,
   "parameters": 31577937344,
   "parameters_human": "31.58B",

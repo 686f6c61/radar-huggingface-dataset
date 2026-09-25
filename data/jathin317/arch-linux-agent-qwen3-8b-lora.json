@@ -5,7 +5,7 @@
   "author": "jathin317",
   "url": "https://huggingface.co/jathin317/arch-linux-agent-qwen3-8b-lora",
   "created_at": "2026-09-13T19:27:11.000Z",
-  "updated_at": "2026-09-13T19:37:17.000Z",
+  "updated_at": "2026-09-24T14:09:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 360733996,
-  "storage_human": "361 MB",
+  "storage_bytes": 535389532,
+  "storage_human": "535 MB",
   "base_model": "unsloth/Qwen3-8B-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

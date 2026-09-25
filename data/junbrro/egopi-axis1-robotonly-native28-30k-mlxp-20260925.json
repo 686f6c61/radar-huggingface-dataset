@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "junbrro/egopi-axis1-robotonly-native28-30k-mlxp-20260925",
+  "slug": "junbrro-egopi-axis1-robotonly-native28-30k-mlxp-20260925",
+  "author": "junbrro",
+  "url": "https://huggingface.co/junbrro/egopi-axis1-robotonly-native28-30k-mlxp-20260925",
+  "created_at": "2026-09-25T02:04:26.000Z",
+  "updated_at": "2026-09-25T02:09:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6912894784,
+  "parameters_human": "6.91B",
+  "storage_bytes": 13825888896,
+  "storage_human": "13.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "junbrro/egopi-axis1-robotonly-native28-30k-mlxp-20260925 · Hugging Face",
+      "url": "https://huggingface.co/junbrro/egopi-axis1-robotonly-native28-30k-mlxp-20260925",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "junbrro/egopi-mt-r6h5-axis1-AB-30k-actsilu-slurm-18839-20260921 ...",
+      "url": "https://huggingface.co/junbrro/egopi-mt-r6h5-axis1-AB-30k-actsilu-slurm-18839-20260921",
+      "snippet": "Final model weights and configuration only; optimizer/RNG state excluded. Original configuration is preserved, including source-cluster paths. Remap paths before use. Bundled actlat/ contains the action tokenizer when applicable."
+    },
+    {
+      "title": "Ego-Pi: VLA Fine-Tuning for Ego-Centric Human and Robot Data",
+      "url": "https://egopipaper.github.io/",
+      "snippet": "Towards this end, we investigate key design choices for learning across human and humanoid embodiments equipped with dexterous five-finger hands, using the Pi0.5 model as a foundation. Our results show that human data enables robots to learn new task semantics and compose existing skills into novel behaviors without corresponding robot data."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Ego-Pi: VLA Fine-Tuning for Ego-Centric Human and Robot Data",
+      "url": "https://arxiv.org/pdf/2606.08107",
+      "snippet": "1) a framework for adapting pre-trained VLAs to high-dimensional, ego-centric human and hu-manoid robot data. Ego-Pi addresses a key limitation of existing VLAs: most are devel-oped for gripper-based robots with relatively low-dimensional actions, making them poorly suited for dexterous bimanual control. To overcome this limitation, we use a token interleaving strategy that distributes ..."
+    }
+  ]
+}

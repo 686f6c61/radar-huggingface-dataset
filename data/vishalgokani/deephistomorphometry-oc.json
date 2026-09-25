@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "vishalgokani/deephistomorphometry-oc",
+  "slug": "vishalgokani-deephistomorphometry-oc",
+  "author": "vishalgokani",
+  "url": "https://huggingface.co/vishalgokani/deephistomorphometry-oc",
+  "created_at": "2026-09-25T01:58:30.000Z",
+  "updated_at": "2026-09-25T04:39:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2210303318,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vishalgokani/deephistomorphometry-oc · Hugging Face",
+      "url": "https://huggingface.co/vishalgokani/deephistomorphometry-oc",
+      "snippet": "DeepHistomorphometry OC Species-agnostic osteoclast/TRAP segmentation model for bone histomorphometry image patches. The archive contains a 2D nnU-Net v2 model with RGB input channels and tb, oc, trap+, and nucleus foreground labels."
+    },
+    {
+      "title": "vishalgokani/deephistomorphometry-oc at main - Hugging Face",
+      "url": "https://huggingface.co/vishalgokani/deephistomorphometry-oc/tree/main",
+      "snippet": "vishalgokani / deephistomorphometry-oc Like 0 Model card FilesFiles and versions xet Community Copy to bucket new main deephistomorphometry-oc 2.21 GB Ctrl+K Ctrl+K 1 contributor History:4 commits vishalgokani Update README.md 8b5db0d verifiedabout 6 hours ago .gitattributes Safe 1.52 kBinitial commitabout 8 hours ago README.md 714 BytesUpdate ..."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2503.14867",
+      "snippet": "arXiv.org"
+    },
+    {
+      "title": "Depth-anything - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/depth-anything",
+      "snippet": "Looking for Depth-anything&#x27;s top AI models? Browse their full Hugging Face collection of 3 models. Explore AI models and contributions by Depth-anything on Huggingface."
+    },
+    {
+      "title": "Breaking \"Depth Anything\": A Stress Test of Computer ... - Medium",
+      "url": "https://medium.com/@roshiniv/breaking-depth-anything-a-stress-test-of-computer-visions-newest-foundation-model-5a4968255e53",
+      "snippet": "We wanted to break the model. We designed a \"Stress Test\" dataset — a collection of images specifically chosen to exploit the physics-based limitations of computer vision: mirrors, glass ..."
+    }
+  ]
+}

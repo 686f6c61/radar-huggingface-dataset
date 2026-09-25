@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "polarisai-robots/bento_ur7e_pi0_v3",
+  "slug": "polarisai-robots-bento_ur7e_pi0_v3",
+  "author": "polarisai-robots",
+  "url": "https://huggingface.co/polarisai-robots/bento_ur7e_pi0_v3",
+  "created_at": "2026-09-25T02:16:33.000Z",
+  "updated_at": "2026-09-25T02:34:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:polarisai-robots/bento_ur7e_v1",
+    "base_model:lerobot/pi0_base",
+    "base_model:finetune:lerobot/pi0_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4028019472,
+  "parameters_human": "4.03B",
+  "storage_bytes": 8892510552,
+  "storage_human": "8.9 GB",
+  "base_model": "lerobot/pi0_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "polarisai-robots/bento_ur7e_pi0_v3 · Hugging Face",
+      "url": "https://huggingface.co/polarisai-robots/bento_ur7e_pi0_v3",
+      "snippet": "π₀ (Pi0) is a general-purpose robot foundation model from Physical Intelligence: a generalist Vision-Language-Action policy that understands visual inputs, interprets natural language instructions, and controls a variety of different robots ..."
+    },
+    {
+      "title": "polarisai-robots/bento_ur7e_v1_20260908_104320 · Datasets at Hugging ...",
+      "url": "https://huggingface.co/datasets/polarisai-robots/bento_ur7e_v1_20260908_104320",
+      "snippet": "{ \"codebase_version\": \"v3.0\", \"fps\": 60, \"features\": { \"action\": { \"dtype\": \"float32\", \"names\": [ \"joint_0.pos\", \"joint_1.pos\", \"joint_2.pos\", \"joint_3.pos\", \"joint_4.pos\", \"joint_5.pos\", \"gripper.pos\" ], \"shape\": [ 7 ] }, \"observation.state\": { \"dtype\": \"float32\", \"names\": [ \"joint_0.pos\", \"joint_1.pos\", \"joint_2.pos\", \"joint_3.pos\", \"joint_4.pos\", \"joint_5.pos\", \"gripper.pos\" ], \"shape\": [ 7 ] }, \"observation.images.top\": { \"dtype\": \"video\", \"shape\": [ 480, 640, 3 ], \"names\": [ \"height\", \"width\", \"channels\" ], \"info\": { \"is_depth_map\": false, \"video.height\": 480, \"video.width\": 640, \"video.c"
+    },
+    {
+      "title": "polarisai-robots/bento_ur7e_v1 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/polarisai-robots/bento_ur7e_v1",
+      "snippet": "{ \"codebase_version\": \"v3.0\", \"fps\": 60, \"features\": { \"action\": { \"dtype\": \"float32\", \"names\": [ \"joint_0.pos\", \"joint_1.pos\", \"joint_2.pos\", \"joint_3.pos\", \"joint_4.pos\", \"joint_5.pos\", \"gripper.pos\" ], \"shape\": [ 7 ] }, \"observation.state\": { \"dtype\": \"float32\", \"names\": [ \"joint_0.pos\", \"joint_1.pos\", \"joint_2.pos\", \"joint_3.pos\", \"joint_4.pos\", \"joint_5.pos\", \"gripper.pos\" ], \"shape\": [ 7 ] }, \"observation.images.top\": { \"dtype\": \"video\", \"shape\": [ 480, 640, 3 ], \"names\": [ \"height\", \"width\", \"channels\" ], \"info\": { \"is_depth_map\": false, \"video.height\": 480, \"video.width\": 640, \"video.c"
+    },
+    {
+      "title": "polarisai-robots/bento_ur7e_pi05_v3 · Hugging Face",
+      "url": "https://huggingface.co/polarisai-robots/bento_ur7e_pi05_v3",
+      "snippet": "Fine-tuned from: lerobot/pi05_base · Robot type: ur7e · Cameras: top, wrist · The policy consumes these observation features and produces these action features. Inputs · Outputs · Repository: polarisai-robots/bento_ur7e_v1 · Episodes: 304 · Frames: 588314 ·"
+    },
+    {
+      "title": "polarisai-robots/bento_ur7e_v1_pi05 · Hugging Face",
+      "url": "https://huggingface.co/polarisai-robots/bento_ur7e_v1_pi05",
+      "snippet": "Fine-tuned from: lerobot/pi05_base · Robot type: ur7e · Cameras: top, wrist · The policy consumes these observation features and produces these action features. Inputs · Outputs · Repository: polarisai-robots/bento_ur7e_v1 · Episodes: 204 · Frames: 364128 ·"
+    }
+  ]
+}

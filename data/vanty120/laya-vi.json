@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "vanty120/laya-vi",
+  "slug": "vanty120-laya-vi",
+  "author": "vanty120",
+  "url": "https://huggingface.co/vanty120/laya-vi",
+  "created_at": "2026-09-25T01:52:09.000Z",
+  "updated_at": "2026-09-25T02:10:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laya",
+    "system-one",
+    "calibrated-decisions",
+    "rlcd",
+    "classification",
+    "routing",
+    "scoring",
+    "moderation",
+    "vietnamese",
+    "text-classification",
+    "vi",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198702,
+  "storage_human": "678 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vanty120/laya-vi · Hugging Face",
+      "url": "https://huggingface.co/vanty120/laya-vi",
+      "snippet": "Instructions to use vanty120/laya-vi with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use vanty120/laya-vi with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-classification\", model=\"vanty120/laya-vi ..."
+    },
+    {
+      "title": "vanty120 (Tynguyen1563) - Hugging Face",
+      "url": "https://huggingface.co/vanty120",
+      "snippet": "None public yet. datasets 2. Sort: Recently updated. vanty120/Gpt-5.4-Xhigh-Reasoning-750x. Viewer • Updated Apr 5 • 721 • 16 • 2"
+    },
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "Instead of staying bitter, I decided to take everything I learned, fix every architectural limitation of the old approach, and build a completely open, horizontal System 1 decision model family: Laya."
+    },
+    {
+      "title": "vanty120/Gpt-5.4-Xhigh-Reasoning-2000x at main",
+      "url": "https://hf-p-cfw.fyan.top/datasets/vanty120/Gpt-5.4-Xhigh-Reasoning-2000x/tree/main",
+      "snippet": "Datasets: vanty120 / Gpt-5.4-Xhigh-Reasoning-2000x like 14 Tasks: Question Answering Text Generation Modalities: Text Formats: json Languages: English Size: 1K - 10K Tags: reasoning math code science distillation chain-of-thought + 5 Libraries: Datasets pandas Polars + 1 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community 2 main Gpt-5.4-Xhigh-Reasoning-2000x 45 ..."
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civitaiarchive.com/about",
+      "snippet": "CivArchive is a cross-platform search engine for AI models. We don&#x27;t host files ourselves — instead, we crawl various sources and index the models we find, using the file&#x27;s SHA256 hash as its unique, permanent ID."
+    }
+  ]
+}

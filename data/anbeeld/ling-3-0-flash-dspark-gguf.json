@@ -30,8 +30,8 @@
     "base_model:quantized:inclusionAI/Ling-3.0-flash-dspark",
     "conversational"
   ],
-  "likes": 0,
-  "downloads_30d": 597,
+  "likes": 1,
+  "downloads_30d": 603,
   "trending_score": 0,
   "parameters": 961316865,
   "parameters_human": "961.3M",

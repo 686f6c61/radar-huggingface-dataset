@@ -5,7 +5,7 @@
   "author": "FelysNeko",
   "url": "https://huggingface.co/FelysNeko/Qwen3-TTS-12Hz-1.7B-Delta-me13",
   "created_at": "2026-09-11T20:27:18.000Z",
-  "updated_at": "2026-09-12T21:48:30.000Z",
+  "updated_at": "2026-09-24T16:45:41.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,12 +20,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": 1916676352,
   "parameters_human": "1.92B",
-  "storage_bytes": 4515695644,
-  "storage_human": "4.5 GB",
+  "storage_bytes": 8349098196,
+  "storage_human": "8.3 GB",
   "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
   "formats": [
     "safetensors"
