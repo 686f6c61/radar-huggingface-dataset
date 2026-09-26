@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Orion-9B-Agentic-CodeCore-Merge-GGUF",
   "created_at": "2026-09-25T16:42:35.000Z",
-  "updated_at": "2026-09-25T16:56:20.000Z",
+  "updated_at": "2026-09-25T17:11:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -36,13 +36,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 9197093888,
   "parameters_human": "9.20B",
-  "storage_bytes": 39139307712,
-  "storage_human": "39.1 GB",
+  "storage_bytes": 85101516480,
+  "storage_human": "85.1 GB",
   "base_model": "prithivMLmods/Orion-9B-Agentic-CodeCore-Merge",
   "formats": [
     "gguf"

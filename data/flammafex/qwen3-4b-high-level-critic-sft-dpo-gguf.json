@@ -5,7 +5,7 @@
   "author": "flammafex",
   "url": "https://huggingface.co/flammafex/Qwen3-4B-High-Level-Critic-SFT-DPO-GGUF",
   "created_at": "2026-09-24T14:46:52.000Z",
-  "updated_at": "2026-09-24T16:04:26.000Z",
+  "updated_at": "2026-09-25T17:39:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 161,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",

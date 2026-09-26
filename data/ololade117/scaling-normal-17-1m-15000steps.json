@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ololade117/scaling-normal-17.1M-15000steps",
+  "slug": "ololade117-scaling-normal-17-1m-15000steps",
+  "author": "Ololade117",
+  "url": "https://huggingface.co/Ololade117/scaling-normal-17.1M-15000steps",
+  "created_at": "2026-09-25T22:02:50.000Z",
+  "updated_at": "2026-09-25T22:03:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17140480,
+  "parameters_human": "17.1M",
+  "storage_bytes": 68566736,
+  "storage_human": "69 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ololade117 (Ololade Ogunleye ) - Hugging Face",
+      "url": "https://huggingface.co/Ololade117",
+      "snippet": "Agents Recent Activity updated a model1 day ago Ololade117/gemma-4-e2b-iroko-mentalhealth-finetuned2 published a model1 day ago Ololade117/gemma-4-e2b-iroko-mentalhealth-finetuned2 updated a model5 days ago Ololade117/medgemma-1.5-4b-iroko-finetuned View all activity"
+    },
+    {
+      "title": "Ololade117 (Ololade Ogunleye ) - Hugging Face",
+      "url": "https://huggingface.co/Ololade117/datasets",
+      "snippet": "Agents Recent Activity updated a modelabout 19 hours ago Ololade117/gemma-4-e2b-iroko-mentalhealth-finetuned2 published a modelabout 19 hours ago Ololade117/gemma-4-e2b-iroko-mentalhealth-finetuned2 updated a model4 days ago Ololade117/medgemma-1.5-4b-iroko-finetuned View all activity"
+    },
+    {
+      "title": "AI agent carries out first known hack of a government system",
+      "url": "https://www.cnn.com/2026/09/23/business/australia-openai-agent-hack-intl-hnk",
+      "snippet": "An OpenAI agent hacked into an Australian national healthcare database in the first known case of AI hacking a government network, the country&#x27;s prime minister said Wednesday."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    }
+  ]
+}

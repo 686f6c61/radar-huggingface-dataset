@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "caikybaldo999/ZYI-1.2-TINY",
+  "slug": "caikybaldo999-zyi-1-2-tiny",
+  "author": "caikybaldo999",
+  "url": "https://huggingface.co/caikybaldo999/ZYI-1.2-TINY",
+  "created_at": "2026-09-25T18:32:37.000Z",
+  "updated_at": "2026-09-25T20:15:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "diffusion",
+    "rectified-flow",
+    "dit",
+    "pytorch",
+    "zyi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4976927249,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What are your favourite Greek names? - Nameberry",
+      "url": "https://forum.nameberry.com/t/what-are-your-favourite-greek-names/407598",
+      "snippet": "Apr 4, 2022 · I’ve been loving names of greek origin lately! They are all so gorgeous 💗 I’d love to add some more to my list, so does …"
+    },
+    {
+      "title": "Greek names? - General Name Discussion - Nameberry",
+      "url": "https://forum.nameberry.com/t/greek-names/234770",
+      "snippet": "Aug 31, 2014 · I love Greek names, and was wondering if anyone has any more suggestions that are possibly less Ancient Greek …"
+    },
+    {
+      "title": "Little Twin Greek Girls - Name Advice - Nameberry",
+      "url": "https://forum.nameberry.com/t/little-twin-greek-girls/143334",
+      "snippet": "Apr 12, 2010 · I’ve got twins girls on the way and I’m in a bit of a name bind. My husband is Greek and really wants Ancient Greek …"
+    },
+    {
+      "title": "Names from Greek mythology - General Name Discussion - Nameberry",
+      "url": "https://forum.nameberry.com/t/names-from-greek-mythology/138957",
+      "snippet": "Nov 8, 2009 · My English class has been reading Greek mythology for the past few weeks and, being the name nerd that I am, one …"
+    },
+    {
+      "title": "The Rarest Greek Names - A & V! - General Name Discussion",
+      "url": "https://forum.nameberry.com/t/the-rarest-greek-names-a-v/479843",
+      "snippet": "Apr 8, 2026 · Hi berries! Basically, I have a fever right now and needed a way to pass the time 🥲 ㅤ One of my favourite resources on …"
+    }
+  ]
+}

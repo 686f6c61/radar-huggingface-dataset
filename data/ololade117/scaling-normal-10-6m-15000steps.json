@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ololade117/scaling-normal-10.6M-15000steps",
+  "slug": "ololade117-scaling-normal-10-6m-15000steps",
+  "author": "Ololade117",
+  "url": "https://huggingface.co/Ololade117/scaling-normal-10.6M-15000steps",
+  "created_at": "2026-09-25T21:32:54.000Z",
+  "updated_at": "2026-09-25T21:33:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10579200,
+  "parameters_human": "10.6M",
+  "storage_bytes": 42321600,
+  "storage_human": "42 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ololade117 (Ololade Ogunleye ) - Hugging Face",
+      "url": "https://huggingface.co/Ololade117",
+      "snippet": "Agents Recent Activity updated a model1 day ago Ololade117/gemma-4-e2b-iroko-mentalhealth-finetuned2 published a model1 day ago Ololade117/gemma-4-e2b-iroko-mentalhealth-finetuned2 updated a model5 days ago Ololade117/medgemma-1.5-4b-iroko-finetuned View all activity"
+    },
+    {
+      "title": "Ololade117 (Ololade Ogunleye ) - Hugging Face",
+      "url": "https://huggingface.co/Ololade117/models",
+      "snippet": "Agents Recent Activity updated a modelabout 14 hours ago Ololade117/gemma-4-e2b-iroko-mentalhealth-finetuned2 published a modelabout 14 hours ago Ololade117/gemma-4-e2b-iroko-mentalhealth-finetuned2 updated a model4 days ago Ololade117/medgemma-1.5-4b-iroko-finetuned View all activity"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 507 AI models across 483 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    },
+    {
+      "title": "Jev AI Model (TypeSafe) — Typed System One Decisions",
+      "url": "https://jevmodel.org/",
+      "snippet": "Jev is TypeSafe AI&#x27;s System One model: it returns a choice, score, or yes/no probability instead of chat. The hosted API is open as of 21 September 2026. $0.042 per 1M input tokens, output free."
+    }
+  ]
+}

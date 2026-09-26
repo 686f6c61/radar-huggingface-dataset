@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Zabin/Qwen_Image_2.1_8_Step",
+  "slug": "zabin-qwen_image_2-1_8_step",
+  "author": "Zabin",
+  "url": "https://huggingface.co/Zabin/Qwen_Image_2.1_8_Step",
+  "created_at": "2026-09-25T18:56:53.000Z",
+  "updated_at": "2026-09-26T02:11:18.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "en",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14230286432,
+  "storage_human": "14.2 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get started | ChatGPT",
+      "url": "https://chatgpt.com/auth/login",
+      "snippet": "Log in or sign up to ChatGPTRead more"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/login_with",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …Read more"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/?locale=fr-FR",
+      "snippet": "Utilisez ChatGPT pour répondre aux questions, rédiger, créer des images, accomplir des tâches et coder, le tout au même endroit. …Read more"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …Read more"
+    },
+    {
+      "title": "OpenAI",
+      "url": "https://chat.openai.com/auth/login?next=%2Fg%2Fg-nn1TcIeHg-gpt-app",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité.Read more"
+    }
+  ]
+}

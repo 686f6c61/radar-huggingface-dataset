@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "dougalldeepmind/2026-09-25-qwen36-0-nonmoral-original-15",
+  "slug": "dougalldeepmind-2026-09-25-qwen36-0-nonmoral-original-15",
+  "author": "dougalldeepmind",
+  "url": "https://huggingface.co/dougalldeepmind/2026-09-25-qwen36-0-nonmoral-original-15",
+  "created_at": "2026-09-25T20:23:33.000Z",
+  "updated_at": "2026-09-25T20:25:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10282050902,
+  "storage_human": "10.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

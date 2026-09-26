@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Shahabkhan396/plantcare-mobilenetv3-large",
+  "slug": "shahabkhan396-plantcare-mobilenetv3-large",
+  "author": "Shahabkhan396",
+  "url": "https://huggingface.co/Shahabkhan396/plantcare-mobilenetv3-large",
+  "created_at": "2026-09-25T21:05:57.000Z",
+  "updated_at": "2026-09-25T21:05:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "plant-disease",
+    "agriculture",
+    "crop",
+    "pakistan",
+    "image-classification",
+    "dataset:PlantCity",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4293044,
+  "parameters_human": "4.3M",
+  "storage_bytes": 17200448,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

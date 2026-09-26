@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "meshllm/Ornith-1.5-35B-Q4_K_M-layers",
+  "slug": "meshllm-ornith-1-5-35b-q4_k_m-layers",
+  "author": "meshllm",
+  "url": "https://huggingface.co/meshllm/Ornith-1.5-35B-Q4_K_M-layers",
+  "created_at": "2026-09-09T08:12:41.000Z",
+  "updated_at": "2026-09-25T22:19:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mesh-llm",
+  "languages": [],
+  "tags": [
+    "mesh-llm",
+    "gguf",
+    "layer-package",
+    "skippy",
+    "distributed-inference",
+    "local-inference",
+    "openai-compatible",
+    "text-generation",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3838,
+  "trending_score": 0,
+  "parameters": 842700992,
+  "parameters_human": "842.7M",
+  "storage_bytes": 23086923264,
+  "storage_human": "23.1 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rafaela Soultani (Greece) - FIBA Basketball",
+      "url": "https://www.fiba.basketball/en/players/155670-rafaela-soultani",
+      "snippet": "Mar 11, 1991 · Explore the career and performances of Rafaela Soultani. Access all stats, latest news, photos, videos and …"
+    },
+    {
+      "title": "Rafaela Soultani, Basketball Player, News, Stats - Eurobasket",
+      "url": "https://basketball.eurobasket.com/player/Rafaela-Soultani/131717",
+      "snippet": "Rafaela Soultani is Greek basketball player born on March 11 1991 in Volos (Greece). She is a 5'8'' guard who most recently played …"
+    },
+    {
+      "title": "Rafaela Soultani, Basketball Player, News, Stats - Eurobasket",
+      "url": "https://basketball.eurobasket.com/player/Rafaela-Soultani/Greece/Olympiakos-Volou-1937/131717",
+      "snippet": "Rafaela Soultani is Greek basketball player born on March 11 1991 in Volos (Greece). She is a 5'8'' guard who most recently played …"
+    },
+    {
+      "title": "Rafaela Soultani stats - Sofascore",
+      "url": "https://www.sofascore.com/basketball/player/rafaela-soultani/2395098",
+      "snippet": "Rafaela Soultani profile player page. Season shootmap, deep stats, history data and more."
+    },
+    {
+      "title": "RAFAELLA (@rafaella) • Instagram photos and videos",
+      "url": "https://www.instagram.com/rafaella/",
+      "snippet": "6M Followers, 858 Following, 1,284 Posts - RAFAELLA (@rafaella) on Instagram: \"God's plan is better than our plans.\""
+    }
+  ]
+}

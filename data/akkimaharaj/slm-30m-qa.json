@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AkkiMaharaj/slm-30m-qa",
+  "slug": "akkimaharaj-slm-30m-qa",
+  "author": "AkkiMaharaj",
+  "url": "https://huggingface.co/AkkiMaharaj/slm-30m-qa",
+  "created_at": "2026-09-25T22:17:09.000Z",
+  "updated_at": "2026-09-25T22:20:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gpt",
+    "decoder-only",
+    "question-answering",
+    "fine-tuned",
+    "educational",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 406092299,
+  "storage_human": "406 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "StentorLabs/Stentor-30M · Hugging Face",
+      "url": "https://huggingface.co/StentorLabs/Stentor-30M",
+      "snippet": "Stay Updated More from StentorLabs Stentor-30M Stentor-30M is a highly compact, efficient language model built on the Llama architecture. Designed for speed and low-resource environments, this ~30.4M parameter checkpoint utilizes a mixed-precision training pipeline and is best treated as a base next-token predictor(not a chat assistant)."
+    }
+  ]
+}

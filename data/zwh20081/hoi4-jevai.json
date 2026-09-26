@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "zwh20081/hoi4-jevai",
+  "slug": "zwh20081-hoi4-jevai",
+  "author": "zwh20081",
+  "url": "https://huggingface.co/zwh20081/hoi4-jevai",
+  "created_at": "2026-09-25T14:57:11.000Z",
+  "updated_at": "2026-09-25T23:28:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "openvino",
+    "hearts-of-iron-iv",
+    "game-ai",
+    "deberta-v3",
+    "npu",
+    "en",
+    "base_model:com-kotobalabs/open-jev-deberta-v3-large",
+    "base_model:finetune:com-kotobalabs/open-jev-deberta-v3-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4135219750,
+  "storage_human": "4.1 GB",
+  "base_model": "com-kotobalabs/open-jev-deberta-v3-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

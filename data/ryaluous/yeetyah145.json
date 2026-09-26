@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ryaluous/yeetyah145",
+  "slug": "ryaluous-yeetyah145",
+  "author": "ryaluous",
+  "url": "https://huggingface.co/ryaluous/yeetyah145",
+  "created_at": "2026-07-11T06:32:36.000Z",
+  "updated_at": "2026-09-25T23:03:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81441382674,
+  "storage_human": "81.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SteamDB | Database of everything on Steam",
+      "url": "https://steamdb.info/",
+      "snippet": "Database of everything on Steam. Track player counts, price history, sales, and game updates. Discover trending and upcoming …"
+    },
+    {
+      "title": "Free Steam Game Promotions · Limited Time Giveaways · SteamDB",
+      "url": "https://steamdb.info/upcoming/free/",
+      "snippet": "Claim free Steam games right now. Track free-to-keep promotions, free weekends, and limited-time giveaways before they expire."
+    },
+    {
+      "title": "Steam Sale Dates · When is the Next Steam Sale? · Countdown and …",
+      "url": "https://steamdb.info/sales/history/",
+      "snippet": "Steam Autumn Sale 2026 starts 1 October 2026. Live countdown to the next Steam sale with exact dates for all upcoming sales."
+    },
+    {
+      "title": "Steam Charts · Live Player Count Statistics · SteamDB",
+      "url": "https://steamdb.info/charts/",
+      "snippet": "Steam player count and game statistics. See the most played games on Steam with live concurrent players, 24-hour peak, and all …"
+    },
+    {
+      "title": "Steam Account Value Calculator & ID Finder · SteamDB",
+      "url": "https://steamdb.info/calculator/",
+      "snippet": "Calculate your Steam account value and see how much your game library is worth. Look up any Steam ID by profile URL, vanity …"
+    }
+  ]
+}

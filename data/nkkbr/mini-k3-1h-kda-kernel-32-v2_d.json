@@ -5,7 +5,7 @@
   "author": "nkkbr",
   "url": "https://huggingface.co/nkkbr/Mini-K3-1H-kda-kernel-32-v2_D",
   "created_at": "2026-09-21T17:59:15.000Z",
-  "updated_at": "2026-09-24T16:51:33.000Z",
+  "updated_at": "2026-09-25T20:39:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1170,
+  "downloads_30d": 1510,
   "trending_score": 0,
   "parameters": 1017941740,
   "parameters_human": "1.02B",
-  "storage_bytes": 14537598867,
-  "storage_human": "14.5 GB",
+  "storage_bytes": 16738200639,
+  "storage_human": "16.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

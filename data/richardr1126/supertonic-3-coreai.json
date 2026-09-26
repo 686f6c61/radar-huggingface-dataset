@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "richardr1126/Supertonic-3-CoreAI",
+  "slug": "richardr1126-supertonic-3-coreai",
+  "author": "richardr1126",
+  "url": "https://huggingface.co/richardr1126/Supertonic-3-CoreAI",
+  "created_at": "2026-09-25T21:16:08.000Z",
+  "updated_at": "2026-09-25T23:52:32.000Z",
+  "license": "bigscience-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "coreai",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "coreai",
+    "ios",
+    "supertonic",
+    "text-to-speech",
+    "multilingual",
+    "base_model:Supertone/supertonic-3",
+    "base_model:finetune:Supertone/supertonic-3",
+    "license:bigscience-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 404016443,
+  "storage_human": "404 MB",
+  "base_model": "Supertone/supertonic-3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supertonic 3 — Lightning-Fast, On-Device, Multilingual TTS",
+      "url": "https://supertonic3.github.io/",
+      "snippet": "Supertonic 3 is a 99M-parameter open-weight text-to-speech model from Supertone. Runs on CPU via ONNX Runtime. No GPU. No cloud. No API. 31 languages."
+    },
+    {
+      "title": "Supertone/supertonic-3 · Hugging Face",
+      "url": "https://huggingface.co/Supertone/supertonic-3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FluidInference/supertonic-3-coreml · Hugging Face",
+      "url": "https://huggingface.co/FluidInference/supertonic-3-coreml",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Supertonic-3 TTS — 99M CoreML + LiteRT — Soniqo Docs",
+      "url": "https://soniqo.audio/guides/supertonic",
+      "snippet": "SupertonicTTS-3 is a 99M non-autoregressive flow-matching TTS model: 31 languages, 10 voices, 44.1 kHz output, CoreML on Apple and LiteRT through Speech Core."
+    },
+    {
+      "title": "Supertonic 3 — Models — The AI Bench",
+      "url": "https://theaibench.ai/models/supertonic-3/",
+      "snippet": "Supertonic 3 expands the open-weight release from 5 to 31 languages, improves reading stability, and cuts repeat/skip failures. `pip install supertonic` and synthesize immediately with selectable voice styles."
+    }
+  ]
+}

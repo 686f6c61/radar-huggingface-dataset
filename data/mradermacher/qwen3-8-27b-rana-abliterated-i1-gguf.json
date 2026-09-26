@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-RANA-abliterated-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-rana-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-RANA-abliterated-i1-GGUF",
+  "created_at": "2026-09-25T23:41:47.000Z",
+  "updated_at": "2026-09-26T02:36:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliteration",
+    "refusal-direction",
+    "qwen3",
+    "vision-language",
+    "en",
+    "base_model:preemware/Qwen3.8-27B-RANA-abliterated",
+    "base_model:quantized:preemware/Qwen3.8-27B-RANA-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 92214323648,
+  "storage_human": "92.2 GB",
+  "base_model": "preemware/Qwen3.8-27B-RANA-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.8-27B-abliterated-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-abliterated-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-abliterated-i1-GGUF like 0 Transformers GGUF English qwen abliteration abliterix lora-self-distillation imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-3MPER0RR-obliterated-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-3MPER0RR-obliterated-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-3MPER0RR-obliterated-i1-GGUF like 1 Transformers GGUF English imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-OBLITERATED-GGUF — Model Family",
+      "url": "https://parapulse.io/family/mradermacher/Qwen3.8-27B-OBLITERATED-GGUF",
+      "snippet": "Full lineage for mradermacher/Qwen3.8-27B-OBLITERATED-GGUF: what it&#x27;s built on, and every adapter, fine-tune, merge and quantization derived from it on HuggingFace ..."
+    },
+    {
+      "title": "Qwen3.8-27B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/qwen3-8-27b",
+      "snippet": "The open-weight, single-GPU sibling of Qwen3.8-Max, published by Alibaba on Hugging Face on Aug 14 2026 under Apache 2.0 — the smaller open release Alibaba had promised alongside the closed Qwen3.8-Max flagship. A 27B dense model (~28B counting the ~1B vision encoder) with 64 layers, hidden size 5,120, and a 248,320-token vocabulary. Uses a hybrid attention stack — 48 Gated DeltaNet linear ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    }
+  ]
+}

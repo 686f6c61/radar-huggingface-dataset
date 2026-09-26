@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-milking-cows-lora",
+  "slug": "runninghubai-rh-milking-cows-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-milking-cows-lora",
+  "created_at": "2026-09-25T21:36:01.000Z",
+  "updated_at": "2026-09-25T21:37:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 307090335,
+  "storage_human": "307 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Milking a Cow (2.0) - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/model/public/2078458419119665153",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "Milking cows - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/model/public/2077556541464895490",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI/rh-2101354719968059394-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-2101354719968059394-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RunningHubAI (RunningHub.ai) - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/datasets",
+      "snippet": "One API Powering All-Modal AI Productivity"
+    },
+    {
+      "title": "AI Model Library & LoRA Models | Image Generation & Style Models ...",
+      "url": "https://rh-test02-int.haimacloud.com:7443/page-model",
+      "snippet": "RunningHub AI Model Library provides extensive image generation models and LoRA assets for style creation, character design, photorealistic rendering and commercial visual generation."
+    }
+  ]
+}

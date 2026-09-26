@@ -5,7 +5,7 @@
   "author": "Carchofa",
   "url": "https://huggingface.co/Carchofa/kev-1.5b-decision",
   "created_at": "2026-09-24T19:47:14.000Z",
-  "updated_at": "2026-09-24T19:47:19.000Z",
+  "updated_at": "2026-09-25T03:20:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 4,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 88482715,
-  "storage_human": "88 MB",
+  "storage_bytes": 165543922,
+  "storage_human": "166 MB",
   "base_model": "Qwen/Qwen2.5-1.5B",
   "formats": [
     "safetensors"

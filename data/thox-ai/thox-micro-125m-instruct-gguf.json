@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Thox-ai/thox-micro-125m-instruct-GGUF",
+  "slug": "thox-ai-thox-micro-125m-instruct-gguf",
+  "author": "Thox-ai",
+  "url": "https://huggingface.co/Thox-ai/thox-micro-125m-instruct-GGUF",
+  "created_at": "2026-09-25T23:23:38.000Z",
+  "updated_at": "2026-09-25T23:24:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "thox",
+    "llama.cpp",
+    "q4_0",
+    "on-device",
+    "edge",
+    "chatml",
+    "text-generation",
+    "en",
+    "base_model:Thox-ai/thox-micro-125m-instruct",
+    "base_model:quantized:Thox-ai/thox-micro-125m-instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123587328,
+  "parameters_human": "123.6M",
+  "storage_bytes": 414971808,
+  "storage_human": "415 MB",
+  "base_model": "Thox-ai/thox-micro-125m-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thox-ai/thox-micro-125m-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Thox-ai/thox-micro-125m-GGUF",
+      "snippet": "Instructions to use Thox-ai/thox-micro-125m-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Thox-ai/thox-micro-125m · Hugging Face",
+      "url": "https://huggingface.co/Thox-ai/thox-micro-125m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Thox-ai/ThoxMini-125M-role · Hugging Face",
+      "url": "https://huggingface.co/Thox-ai/ThoxMini-125M-role",
+      "snippet": "Instructions to use Thox-ai/ThoxMini-125M-role with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "model.safetensors · Thox-ai/thox-micro-125m at main - Hugging Face",
+      "url": "https://huggingface.co/Thox-ai/thox-micro-125m/blob/main/model.safetensors",
+      "snippet": "Instructions to use Thox-ai/thox-micro-125m with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Thox-ai/thox-micro-125m with Transformers:"
+    },
+    {
+      "title": "thox-micro-125m API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Thox-ai/thox-micro-125m",
+      "snippet": "Unlike THOX&#x27;s 327M (whose FFN dim of 3413 forces K-quants only), this model&#x27;s FFN dim of 2048 divides evenly, so the ARM-friendly legacy Q4_0 and Q8_0 formats both apply. Note: some files named thox-micro-125m.*.gguf with uppercase quant suffixes also exist in this repository from an earlier upload."
+    }
+  ]
+}

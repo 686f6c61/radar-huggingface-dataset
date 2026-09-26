@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Blah75483ty/yield-ai-qwen3.5-4b",
+  "slug": "blah75483ty-yield-ai-qwen3-5-4b",
+  "author": "Blah75483ty",
+  "url": "https://huggingface.co/Blah75483ty/yield-ai-qwen3.5-4b",
+  "created_at": "2026-09-25T21:25:36.000Z",
+  "updated_at": "2026-09-25T21:25:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 148759633,
+  "storage_human": "149 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blah75483ty/yield-ai-qwen3.5-4b · Hugging Face",
+      "url": "https://huggingface.co/Blah75483ty/yield-ai-qwen3.5-4b",
+      "snippet": "Blah75483ty / yield-ai-qwen3.5-4b Like 0 Text Generation PEFT Safetensors Transformers lora sft trl unsloth conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen/Qwen3.5-4B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-4B",
+      "snippet": "Qwen3.5 compact dense multimodal model (4B) — fits on 16 GB consumer GPUs with full 262K context or one Xeon 6 NUMA node or Intel Arc Pro B60/B70"
+    },
+    {
+      "title": "FW-Qwen3.5-4B | Model Catalog | Microsoft Foundry - ai.azure.com",
+      "url": "https://ai.azure.com/catalog/models/FW-Qwen3.5-4B",
+      "snippet": "Qwen3.5-4B is a post-trained causal language model with a vision encoder from Alibaba&#x27;s Qwen3.5 family. Qwen3.5 integrates multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. It uses a 32-layer hybrid stack with Gated DeltaNet and Gated Attention blocks, supports text and image inputs in the official model card, and supports 201 languages and ..."
+    },
+    {
+      "title": "Qwen3.5: Towards Native Multimodal Agents",
+      "url": "https://qwen.ai/blog?id=qwen3.5",
+      "snippet": "As a native vision-language model, Qwen3.5-397B-A17B demonstrates outstanding results across a full range of benchmark evaluations, including reasoning, coding, agent capabilities, and multimodal understanding, empowering developers and enterprises to achieve significantly greater productivity."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    }
+  ]
+}

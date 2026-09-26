@@ -5,7 +5,7 @@
   "author": "ebisuke",
   "url": "https://huggingface.co/ebisuke/semanticlm",
   "created_at": "2026-09-20T04:11:59.000Z",
-  "updated_at": "2026-09-24T22:40:01.000Z",
+  "updated_at": "2026-09-26T03:38:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 841004032,
   "parameters_human": "841.0M",
-  "storage_bytes": 28162413980,
-  "storage_human": "28.2 GB",
+  "storage_bytes": 201557889486,
+  "storage_human": "201.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

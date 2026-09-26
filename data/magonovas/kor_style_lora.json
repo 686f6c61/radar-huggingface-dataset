@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "magonovas/kor_style_LoRA",
+  "slug": "magonovas-kor_style_lora",
+  "author": "magonovas",
+  "url": "https://huggingface.co/magonovas/kor_style_LoRA",
+  "created_at": "2026-09-25T21:07:58.000Z",
+  "updated_at": "2026-09-25T21:08:15.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tensorboard",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "template:sd-lora",
+    "stable-diffusion-xl",
+    "stable-diffusion-xl-diffusers",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77362788,
+  "storage_human": "77 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "magonovas/aiv_style_LoRA · Hugging Face",
+      "url": "https://huggingface.co/magonovas/aiv_style_LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "magonovas (Sofia Magonova) - Hugging Face",
+      "url": "https://huggingface.co/magonovas",
+      "snippet": "None yet models5 Sort: Recently updated magonovas/aiv_style_LoRA Text-to-Image •Updated Apr 1•4• magonovas/kust_style_LoRA Text-to-Image •Updated Apr 1•4•"
+    },
+    {
+      "title": "Style LoRA AI Models (556) | Civitai",
+      "url": "https://civitai.com/tag/style%20lora",
+      "snippet": "Browse 556 AI models tagged \"Style LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "LoRA AI Models (18,011) | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 18,011 AI models tagged \"LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    }
+  ]
+}

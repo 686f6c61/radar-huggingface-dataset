@@ -5,7 +5,7 @@
   "author": "nkkbr",
   "url": "https://huggingface.co/nkkbr/Mini-K3-1H-llama-mha-block4-v1",
   "created_at": "2026-09-25T13:33:33.000Z",
-  "updated_at": "2026-09-25T13:33:45.000Z",
+  "updated_at": "2026-09-25T22:14:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 979984128,
   "parameters_human": "980.0M",
-  "storage_bytes": 1963080606,
-  "storage_human": "2.0 GB",
+  "storage_bytes": 7861397374,
+  "storage_human": "7.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

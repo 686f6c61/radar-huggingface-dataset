@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "AIArchiveInfo/Muse-Glimmer-30B-assistant",
+  "slug": "aiarchiveinfo-muse-glimmer-30b-assistant",
+  "author": "AIArchiveInfo",
+  "url": "https://huggingface.co/AIArchiveInfo/Muse-Glimmer-30B-assistant",
+  "created_at": "2026-09-25T18:28:18.000Z",
+  "updated_at": "2026-09-25T18:28:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_glimmer_assistant",
+    "feature-extraction",
+    "image-text-to-text",
+    "arxiv:2504.13181",
+    "arxiv:2602.06036",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2555985152,
+  "parameters_human": "2.56B",
+  "storage_bytes": 5111976608,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

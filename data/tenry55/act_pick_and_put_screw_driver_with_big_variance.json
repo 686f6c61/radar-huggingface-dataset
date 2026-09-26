@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Tenry55/act_Pick_and_put_screw_driver_with_big_variance",
+  "slug": "tenry55-act_pick_and_put_screw_driver_with_big_variance",
+  "author": "Tenry55",
+  "url": "https://huggingface.co/Tenry55/act_Pick_and_put_screw_driver_with_big_variance",
+  "created_at": "2026-09-25T22:19:12.000Z",
+  "updated_at": "2026-09-25T22:20:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Tenry55/Pick_and_put_screw_driver_Merged_200",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714832,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tenry55/act_so101_test · Hugging Face",
+      "url": "https://huggingface.co/Tenry55/act_so101_test",
+      "snippet": "Instructions to use Tenry55/act_so101_test with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Tenry55/act_so101_test with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run inference ..."
+    },
+    {
+      "title": "Tenry55 (Tenry Tan) - Hugging Face",
+      "url": "https://huggingface.co/Tenry55",
+      "snippet": "User profile of Tenry Tan on Hugging Face"
+    },
+    {
+      "title": "glm-5-3-flash Model by Z-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/z-ai/glm-5-3-flash",
+      "snippet": "Multimodal 320B-total / 18B-active MoE with hybrid KDA and sparse MLA attention, native FP8 weights, reasoning and tool calling."
+    },
+    {
+      "title": "Big Pickle model — Grokipedia",
+      "url": "https://grokipedia.com/page/Big_Pickle_model",
+      "snippet": "The Big Pickle model is an artificial intelligence model optimized for coding agents, provided through the OpenCode Zen platform as part of a curated selection of high-quality, tested AI models. Commu"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

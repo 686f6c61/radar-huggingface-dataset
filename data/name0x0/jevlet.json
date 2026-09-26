@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "NAME0x0/Jevlet",
+  "slug": "name0x0-jevlet",
+  "author": "NAME0x0",
+  "url": "https://huggingface.co/NAME0x0/Jevlet",
+  "created_at": "2026-09-25T21:03:03.000Z",
+  "updated_at": "2026-09-25T21:03:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "jevlet",
+    "decision-model",
+    "calibration",
+    "system-one",
+    "intent-classification",
+    "slot-filling",
+    "desktop-assistant",
+    "windows",
+    "bge-small",
+    "typed-questions",
+    "text-classification",
+    "en",
+    "dataset:WillHeld/top_v2",
+    "dataset:mteb/amazon_massive_intent",
+    "dataset:clinc/clinc_oos",
+    "dataset:mteb/banking77",
+    "dataset:google/boolq",
+    "dataset:nyu-mll/multi_nli",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33508992,
+  "parameters_human": "33.5M",
+  "storage_bytes": 134128027,
+  "storage_human": "134 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Traduction Les traductions tiennent compte du genre grammatical. En savoir plus Certaines phrases peuvent contenir des …"
+    },
+    {
+      "title": "DeepL Traducteur | Le meilleur traducteur au monde",
+      "url": "https://www.deepl.com/fr/translator",
+      "snippet": "Écrivez ou collez votre texte ici. Pour traduire des fichiers PDF, Word (.docx) ou Powerpoint (.pptx), déposez-les directement dans …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.com/?hl=fr",
+      "snippet": "Traduction Les traductions tiennent compte du genre grammatical. En savoir plus Certaines phrases peuvent contenir des …"
+    },
+    {
+      "title": "Reverso | Traduction gratuite, dictionnaire",
+      "url": "https://www.reverso.net/traduction-texte",
+      "snippet": "Le service de traduction en ligne gratuit de Reverso qui traduit vos textes de l'anglais vers le français, l'espagnol, l'italien, l'allemand, …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.ca/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    }
+  ]
+}

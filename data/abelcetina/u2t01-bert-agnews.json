@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "abelcetina/u2t01-bert-agnews",
+  "slug": "abelcetina-u2t01-bert-agnews",
+  "author": "abelcetina",
+  "url": "https://huggingface.co/abelcetina/u2t01-bert-agnews",
+  "created_at": "2026-09-25T23:18:34.000Z",
+  "updated_at": "2026-09-25T23:19:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "agnews",
+    "full",
+    "u2t01",
+    "en",
+    "dataset:fancyzhx/ag_news",
+    "arxiv:1810.04805",
+    "arxiv:1509.01626",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109485316,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437964776,
+  "storage_human": "438 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI.Read more"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=fr",
+      "snippet": "Voici Gemini, l'assistant IA de Google. Faites-vous aider pour rédiger, planifier, trouver des idées et plus encore. Découvrez la …Read more"
+    },
+    {
+      "title": "Gemini – Your AI assistant from Google",
+      "url": "https://gemini.google/us/about/?hl=en",
+      "snippet": "Supercharge your creativity and productivity with Google’s AI assistant. Brainstorm ideas, simplify complex topics, and rehearse for …Read more"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Our latest series of Gemini models combine frontier intelligence with action. Built to help you execute complex, multi-step workflows.Read more"
+    },
+    {
+      "title": "Gemini, l'assistant IA de Google",
+      "url": "https://gemini.google/fr/about/?hl=fr",
+      "snippet": "Libérez votre créativité et votre productivité avec l'assistant IA de Google. Trouvez des idées, simplifiez des sujets complexes et …Read more"
+    }
+  ]
+}

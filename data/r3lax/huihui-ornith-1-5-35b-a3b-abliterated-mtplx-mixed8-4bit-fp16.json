@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "r3lax/Huihui-Ornith-1.5-35B-A3B-abliterated-MTPLX-mixed8-4bit-FP16",
+  "slug": "r3lax-huihui-ornith-1-5-35b-a3b-abliterated-mtplx-mixed8-4bit-fp16",
+  "author": "r3lax",
+  "url": "https://huggingface.co/r3lax/Huihui-Ornith-1.5-35B-A3B-abliterated-MTPLX-mixed8-4bit-FP16",
+  "created_at": "2026-09-25T21:35:32.000Z",
+  "updated_at": "2026-09-25T21:36:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "mtplx",
+    "qwen3-moe",
+    "ornith",
+    "abliterated",
+    "uncensored",
+    "fp16",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "base_model:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107180016,
+  "parameters_human": "35.11B",
+  "storage_bytes": 25291009266,
+  "storage_human": "25.3 GB",
+  "base_model": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui Ornith 1.5 35B A3B Abliterated by huihui-ai",
+      "url": "https://llm-explorer.com/model/huihui-ai%2FHuihui-Ornith-1.5-35B-A3B-abliterated,2fKIgn8LQab1oijPhDUyM1",
+      "snippet": "Huihui Ornith 1.5 35B A3B Abliterated is an open-source language model by huihui-ai. Features: 35b LLM, VRAM: 72.1GB, License: mit, LLM Explorer Score: 0.3."
+    },
+    {
+      "title": "Huihui-Ornith-1.5-35B-A3B-abliterated.imatrix.gguf · mradermacher ...",
+      "url": "https://huggingface.co/mradermacher/Huihui-Ornith-1.5-35B-A3B-abliterated-i1-GGUF/blob/main/Huihui-Ornith-1.5-35B-A3B-abliterated.imatrix.gguf",
+      "snippet": "Instructions to use mradermacher/Huihui-Ornith-1.5-35B-A3B-abliterated-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Huihui Ornith 1.5 35B A3B Abliterated OQ5e Fp16 Mtp by funnygeeker",
+      "url": "https://llm-explorer.com/model/funnygeeker%2FHuihui-Ornith-1.5-35B-A3B-abliterated-oQ5e-fp16-mtp,4On692ZEKVBZGuYFzYbP6T",
+      "snippet": "Huihui Ornith 1.5 35B A3B Abliterated OQ5e Fp16 Mtp is an open-source 35b LLM by funnygeeker. VRAM 26.9GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B-APEX-MTP-I-Compact local LLM benchmarks",
+      "url": "https://llm-bench.io/models/ornith-1-5-35b-a3b-apex-mtp-i-compact",
+      "snippet": "As of September 2026, Ornith-1.5-35B-A3B-APEX-MTP-I-Compact runs at up to 40.0 tok/s for local inference (best of 2 community benchmark runs across 1 GPU)."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/clio-v1-legacy-FP8",
+  "slug": "liodon-ai-clio-v1-legacy-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/clio-v1-legacy-FP8",
+  "created_at": "2026-09-25T21:19:22.000Z",
+  "updated_at": "2026-09-25T21:51:56.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "stablelm",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "base_model:NovelAI/clio-v1-legacy",
+    "base_model:quantized:NovelAI/clio-v1-legacy",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3043786240,
+  "parameters_human": "3.04B",
+  "storage_bytes": 3414735360,
+  "storage_human": "3.4 GB",
+  "base_model": "NovelAI/clio-v1-legacy",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liodon-ai/zero-FP8 · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/zero-FP8",
+      "snippet": "Instructions to use liodon-ai/zero-FP8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use liodon-ai/zero-FP8 with Transformers:"
+    },
+    {
+      "title": "liodon-ai (Liodon AI) - Hugging Face",
+      "url": "https://huggingface.co/liodon-ai",
+      "snippet": "Extreme Model Compression: Developing state-of-the-art recipes for hardware-aware post-training quantization (FP8, FP4, and sub-4-bit formats), pruning, and structure-preserving knowledge distillation. Speech & Modality Fusion: Integrating native Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) layers into ultra-compact foundation ..."
+    },
+    {
+      "title": "Home - LioDon AI",
+      "url": "https://liodon.ai/",
+      "snippet": "What we research Liodon is an independent, self-funded applied research lab working on the frontier of open-source foundation model research."
+    },
+    {
+      "title": "Liodon AI - GitHub",
+      "url": "https://github.com/Liodon-AI",
+      "snippet": "Liodon AI is an open-source R&D collective exploring the intersection of deep learning, agentic systems, and NLP evaluation. Our repositories span: Agentic AI primitives (e.g. torchagentic) — differentiable cognitive building blocks (memory, credit assignment, planning, exploration) designed to be importable by frameworks like LangChain, AutoGen, and CrewAI. LLM evaluation tooling (e.g ..."
+    },
+    {
+      "title": "clio-v1-legacy API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/NovelAI/clio-v1-legacy",
+      "snippet": "Deploy clio-v1-legacy with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

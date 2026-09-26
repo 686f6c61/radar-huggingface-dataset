@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Rckflr/kev-gemma-270m-rule-classifier-es-v8-experimental",
+  "slug": "rckflr-kev-gemma-270m-rule-classifier-es-v8-experimental",
+  "author": "Rckflr",
+  "url": "https://huggingface.co/Rckflr/kev-gemma-270m-rule-classifier-es-v8-experimental",
+  "created_at": "2026-09-25T20:23:08.000Z",
+  "updated_at": "2026-09-25T20:24:04.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "kev",
+    "gemma-3",
+    "lora",
+    "rule-classification",
+    "selective-prediction",
+    "experimental",
+    "text-classification",
+    "es",
+    "base_model:google/gemma-3-270m",
+    "base_model:adapter:google/gemma-3-270m",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49921462,
+  "storage_human": "50 MB",
+  "base_model": "google/gemma-3-270m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

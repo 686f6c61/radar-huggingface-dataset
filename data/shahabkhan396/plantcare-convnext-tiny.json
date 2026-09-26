@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Shahabkhan396/plantcare-convnext-tiny",
+  "slug": "shahabkhan396-plantcare-convnext-tiny",
+  "author": "Shahabkhan396",
+  "url": "https://huggingface.co/Shahabkhan396/plantcare-convnext-tiny",
+  "created_at": "2026-09-25T21:05:54.000Z",
+  "updated_at": "2026-09-25T21:05:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "plant-disease",
+    "agriculture",
+    "crop",
+    "pakistan",
+    "image-classification",
+    "dataset:PlantCity",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27860116,
+  "parameters_human": "27.9M",
+  "storage_bytes": 111458144,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

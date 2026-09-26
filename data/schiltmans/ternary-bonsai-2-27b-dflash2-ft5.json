@@ -5,7 +5,7 @@
   "author": "Schiltmans",
   "url": "https://huggingface.co/Schiltmans/Ternary-Bonsai-2-27B-DFlash2-ft5",
   "created_at": "2026-09-23T18:50:15.000Z",
-  "updated_at": "2026-09-24T20:20:42.000Z",
+  "updated_at": "2026-09-25T11:01:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 50,
+  "downloads_30d": 160,
   "trending_score": 0,
   "parameters": 1924404480,
   "parameters_human": "1.92B",

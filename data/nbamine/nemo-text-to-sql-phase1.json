@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "NBAmine/nemo-text-to-sql-phase1",
+  "slug": "nbamine-nemo-text-to-sql-phase1",
+  "author": "NBAmine",
+  "url": "https://huggingface.co/NBAmine/nemo-text-to-sql-phase1",
+  "created_at": "2026-09-25T18:47:09.000Z",
+  "updated_at": "2026-09-26T02:07:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:mistralai/Mistral-Nemo-Base-2407",
+    "base_model:finetune:mistralai/Mistral-Nemo-Base-2407",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2323180339,
+  "storage_human": "2.3 GB",
+  "base_model": "mistralai/Mistral-Nemo-Base-2407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "rasyosef",
   "url": "https://huggingface.co/rasyosef/gemma-4-E2B-it-dspark",
   "created_at": "2026-09-23T23:51:26.000Z",
-  "updated_at": "2026-09-25T00:22:25.000Z",
+  "updated_at": "2026-09-26T02:48:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 15,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": 335562577,
   "parameters_human": "335.6M",

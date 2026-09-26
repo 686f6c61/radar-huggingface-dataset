@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Ruslan1995/t5-russian-spell-asr-finetuned_v1",
+  "slug": "ruslan1995-t5-russian-spell-asr-finetuned_v1",
+  "author": "Ruslan1995",
+  "url": "https://huggingface.co/Ruslan1995/t5-russian-spell-asr-finetuned_v1",
+  "created_at": "2026-09-25T21:06:31.000Z",
+  "updated_at": "2026-09-25T21:06:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 222903552,
+  "parameters_human": "222.9M",
+  "storage_bytes": 891644712,
+  "storage_human": "892 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ruslan1995/russian-asr-spell-correction · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Ruslan1995/russian-asr-spell-correction",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "machine-leoning/Model1 · Hugging Face",
+      "url": "https://huggingface.co/machine-leoning/Model1",
+      "snippet": "This model is a fine-tuned version of UrukHan/t5-russian-spell on the None dataset."
+    },
+    {
+      "title": "Ruslan1995/russian-asr-spell-correction_v2 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Ruslan1995/russian-asr-spell-correction_v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SerCe/tortoise-tts-ruslan · Hugging Face",
+      "url": "https://huggingface.co/SerCe/tortoise-tts-ruslan",
+      "snippet": "The model was then finetuned on RUSLAN: Russian Spoken Language Corpus For Speech Synthesis."
+    },
+    {
+      "title": "GitHub - alphacep/awesome-russian-speech: Russian speech technology ...",
+      "url": "https://github.com/alphacep/awesome-russian-speech",
+      "snippet": "https://github.com/saarus72/text_normalization/tree/dev - на основе Fred-T5"
+    }
+  ]
+}

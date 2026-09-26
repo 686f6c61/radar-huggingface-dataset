@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "binhpham/reachy-mini-motion-planner-27b",
+  "slug": "binhpham-reachy-mini-motion-planner-27b",
+  "author": "binhpham",
+  "url": "https://huggingface.co/binhpham/reachy-mini-motion-planner-27b",
+  "created_at": "2026-09-25T19:56:14.000Z",
+  "updated_at": "2026-09-25T20:16:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "reachy_mini",
+    "robotics",
+    "text-to-motion",
+    "motion-planning",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55670288266,
+  "storage_human": "55.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "binhpham/reachy-mini-motion-synth at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/binhpham/reachy-mini-motion-synth/tree/main",
+      "snippet": "main reachy-mini-motion-synth 115 MB 1 contributor History:8 commits binhpham Reachy Mini text-to-motion: 85 real + 2030 teacher-generated clips (part 7) b457af8 verifiedabout 2 hours ago dataReachy Mini text-to-motion: 85 real + 2030 teacher-generated clips (part 7)about 2 hours ago .gitattributes Safe 2.5 kBinitial commitabout 2 hours ago ..."
+    },
+    {
+      "title": "GitHub - amirmabhout/reachy_mini: An open source software/hardware ...",
+      "url": "https://github.com/amirmabhout/reachy_mini",
+      "snippet": "⚠️ Reachy Mini is still in beta. Expect bugs, some of them we won&#x27;t fix right away if they are not a priority. Reachy Mini is an expressive, open-source robot designed for human-robot interaction, creative coding, and AI experimentation. We made it to be affordable, easy to use, hackable and cute, so that you can focus on building cool AI applications!"
+    },
+    {
+      "title": "Reachy Mini - Open-Source Desktop Humanoid Robot | Build AI Applications",
+      "url": "https://reachymini.net/",
+      "snippet": "Reachy Mini is an open-source desktop humanoid robot designed for AI experimentation, education, and research. It&#x27;s perfect for developers learning robotics, educators teaching AI concepts, researchers exploring human-robot interaction, and hobbyists interested in building interactive applications."
+    },
+    {
+      "title": "Developer Center - Reachy Mini",
+      "url": "https://reachymini.net/developers.html",
+      "snippet": "Reachy Mini Developer Center - Complete documentation, APIs, and resources for building with the open-source desktop humanoid robot."
+    },
+    {
+      "title": "Reachy Mini - a Hugging Face Space by pollen-robotics",
+      "url": "https://huggingface.co/spaces/pollen-robotics/Reachy_Mini",
+      "snippet": "Reachy Mini is an expressive, open-source robot designed for human-robot interaction, creative coding, and AI experimentation."
+    }
+  ]
+}

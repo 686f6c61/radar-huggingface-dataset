@@ -5,7 +5,7 @@
   "author": "Compactbot",
   "url": "https://huggingface.co/Compactbot/tinystories-50m",
   "created_at": "2026-09-23T18:02:08.000Z",
-  "updated_at": "2026-09-23T18:20:21.000Z",
+  "updated_at": "2026-09-25T13:42:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 318,
+  "downloads_30d": 326,
   "trending_score": 0,
-  "parameters": 54804992,
-  "parameters_human": "54.8M",
-  "storage_bytes": 219228888,
-  "storage_human": "219 MB",
+  "parameters": 56902144,
+  "parameters_human": "56.9M",
+  "storage_bytes": 446846384,
+  "storage_human": "447 MB",
   "base_model": null,
   "formats": [
     "safetensors"

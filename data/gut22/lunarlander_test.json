@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Gut22/lunarlander_test",
+  "slug": "gut22-lunarlander_test",
+  "author": "Gut22",
+  "url": "https://huggingface.co/Gut22/lunarlander_test",
+  "created_at": "2026-09-25T21:42:57.000Z",
+  "updated_at": "2026-09-25T21:51:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 450097,
+  "storage_human": "450097 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "GitHub - galkalimi/Lunar_Lander: Utilizing and training AI models to ...",
+      "url": "https://github.com/galkalimi/Lunar_Lander",
+      "snippet": "Utilizing and training AI models to safely and efficiently land a spaceship on the moon. This project explores various AI approaches, including reinforcement learning and traditional control methods, to handle the challenges of precision landing in a simulated environment. - galkalimi/Lunar_Lander"
+    },
+    {
+      "title": "GitHub - Humer-Shaik/Lunar_lander: The Gym Lunar Lander environment ...",
+      "url": "https://github.com/Humer-Shaik/Lunar_lander",
+      "snippet": "This repository contains implementations and experiments for teaching an agent to safely land a lunar module in OpenAI Gym&#x27;s LunarLander-v2 environment using Deep Reinforcement Learning techniques built from scratch with PyTorch. The project explores and implements several value-based RL algorithms and model architectures, including: Deep Q-Network (DQN) Double DQN (DDQN) Dueling DQN Each ..."
+    },
+    {
+      "title": "lunar_lander - Colab",
+      "url": "https://colab.research.google.com/github/NeuromatchAcademy/course-content-dl/blob/main/projects/ReinforcementLearning/lunar_lander.ipynb",
+      "snippet": "5 Obstacle Avoidance and Transfer Learning Your obstacle here is to add an obstacle in the path of the lunar lander (by creating a custom environment as described in point 2 above) and train the model such that the lander lands safely, avoiding collisions. You would first want to devise a mechansim for adding obstacles."
+    },
+    {
+      "title": "Lunar Lander, but make it RL | Mohamed Elhag",
+      "url": "https://www.mohamedelhag.com/lunar-lander.html",
+      "snippet": "Lunar Lander, but make it RL. Training an AI agent to land safely on the moon&#x27;s surface — no instructions, just trial, error, and a well-designed reward."
+    }
+  ]
+}

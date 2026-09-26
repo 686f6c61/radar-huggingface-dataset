@@ -5,7 +5,7 @@
   "author": "OpenMed",
   "url": "https://huggingface.co/OpenMed/MedPsy-1.7B-ONNX",
   "created_at": "2026-09-24T01:13:20.000Z",
-  "updated_at": "2026-09-25T01:49:45.000Z",
+  "updated_at": "2026-09-25T11:56:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 247,
+  "downloads_30d": 324,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

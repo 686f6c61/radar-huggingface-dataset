@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "robgarct/mom-ahead-360m-m1-rare4-6k",
+  "slug": "robgarct-mom-ahead-360m-m1-rare4-6k",
+  "author": "robgarct",
+  "url": "https://huggingface.co/robgarct/mom-ahead-360m-m1-rare4-6k",
+  "created_at": "2026-09-25T18:58:26.000Z",
+  "updated_at": "2026-09-25T20:23:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "recurrent-recall-circuits",
+  "languages": [],
+  "tags": [
+    "recurrent-recall-circuits",
+    "mixture-of-memories",
+    "linear-attention",
+    "in-context-recall",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1580860811,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pagesjaunes, trouvez les bons pros autour de vous…, bien plus qu’un ...",
+      "url": "https://www.pagesjaunes.fr/",
+      "snippet": "Accédez à 4 millions de pros : infos, horaires, avis, services en ligne, aide IA, actus et conseils pour vous aider à choisir le bon pro …"
+    },
+    {
+      "title": "Recherche PagesJaunes",
+      "url": "https://www.pagesjaunes.fr/contenu/pagesjaunes-recherche/",
+      "snippet": "Utilisez le moteur de recherche pagesjaunes pour le trouver. Saisissez son nom ou sa profession, puis renseignez la ville de …"
+    },
+    {
+      "title": "SLOW Galerie, 5 Rue Jean-Pierre Timbaud, Paris (2026)",
+      "url": "https://www.findglocal.com/FR/Paris/198101017036763/SLOW-Galerie",
+      "snippet": "Aug 21, 2026 · Sérigraphies, gravures, digigraphies, peintures, près de 1000 oeuvres principalement en éditions multiples, toutes …"
+    },
+    {
+      "title": "Slow - Mis à jour en 2026, Restaurant Fusion à Paris, Ile-de-France",
+      "url": "https://www.opentable.fr/r/slow-paris",
+      "snippet": "Consultez le menu, les photos et les informations sur la localisation de Slow à Paris, Ile-de-France. Ou réservez maintenant une …"
+    },
+    {
+      "title": "Slow - Restaurant, 4 Rue Danville, 75014 Paris (France) - Mappy",
+      "url": "https://fr.mappy.com/poi/66bc6a0d276afa7a1e8c5be4",
+      "snippet": "Découvrez Slow (4 Rue Danville, 75014 Paris) avec toutes les photos du quartier, le plan d'accès, les avis et les infos pratiques : …"
+    }
+  ]
+}

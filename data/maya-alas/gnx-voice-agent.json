@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Maya-alas/gnx-voice-agent",
+  "slug": "maya-alas-gnx-voice-agent",
+  "author": "Maya-alas",
+  "url": "https://huggingface.co/Maya-alas/gnx-voice-agent",
+  "created_at": "2026-09-25T21:01:30.000Z",
+  "updated_at": "2026-09-25T22:44:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Civilisation maya — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Civilisation_maya",
+      "snippet": "Les fouilles archéologiques de la civilisation maya ont débuté au cours du XIXe siècle, principalement à la suite des explorations …"
+    },
+    {
+      "title": "Autodesk Maya 2027 | Download & Buy Official Maya",
+      "url": "https://www.autodesk.com/products/maya/overview?msockid=1f69fb59fe1c61161ee7ec86ffe560fb",
+      "snippet": "Discover Autodesk Maya, professional 3D animation and VFX software for creating expansive worlds, complex characters, and …"
+    },
+    {
+      "title": "Maiia - RDV médical et Téléconsultation - Professionnels de santé",
+      "url": "https://www.maiia.com/",
+      "snippet": "Prenez rendez-vous ou effectuez une téléconsultation facilement avec votre médecin, un spécialiste ou un praticien près de chez vous."
+    },
+    {
+      "title": "Télécharger Maya | Essai gratuit de Maya | Autodesk",
+      "url": "https://www.autodesk.com/fr/products/maya/free-trial?msockid=1f69fb59fe1c61161ee7ec86ffe560fb",
+      "snippet": "Téléchargez une version d’évaluation gratuite de 30 jours d’Autodesk Maya, notre logiciel de modélisation, d’animation, d’effets …"
+    },
+    {
+      "title": "Maya civilization - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Maya_civilization",
+      "snippet": "The Maya script is the most sophisticated and highly developed writing system in the pre-Columbian Americas. The Maya civilization …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "amDANIEL2024/tulati-v1-afrie5-salt",
+  "slug": "amdaniel2024-tulati-v1-afrie5-salt",
+  "author": "amDANIEL2024",
+  "url": "https://huggingface.co/amDANIEL2024/tulati-v1-afrie5-salt",
+  "created_at": "2026-09-21T16:38:53.000Z",
+  "updated_at": "2026-09-25T23:02:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:119734",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:McGill-NLP/AfriE5-Large-instruct",
+    "base_model:finetune:McGill-NLP/AfriE5-Large-instruct",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": 559890432,
+  "parameters_human": "559.9M",
+  "storage_bytes": 2256373506,
+  "storage_human": "2.3 GB",
+  "base_model": "McGill-NLP/AfriE5-Large-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ellexxaurus (@ellexxaurus) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ellexxaurus/",
+      "snippet": "148K Followers, 544 Following, 54 Posts - Ellexxaurus (@ellexxaurus) on Instagram: \"\""
+    },
+    {
+      "title": "̷E̷̷l̷̷l̷̷e̷̷x̷̷x̷̷a̷̷u̷̷r̷̷u̷̷s̷ on X: \"very very very rare face post ...",
+      "url": "https://x.com/ellexxaurus/status/2030358553614078151",
+      "snippet": "Mar 7, 2026 · Post ̷E̷̷l̷̷l̷̷e̷̷x̷̷x̷̷a̷̷u̷̷r̷̷u̷̷s̷ @ellexxaurus very very very rare face post, look at me while you can 😂 11:02 AM · Mar 7, 2026 · 110.1K"
+    },
+    {
+      "title": "Ellexxaurus | It’s late u up? | Instagram",
+      "url": "https://www.instagram.com/p/DckBFJEiGSP/",
+      "snippet": "212K likes, 79 comments - ellexxaurus on August 27, 2026: \"It’s late u up?\"."
+    },
+    {
+      "title": "ellexxaurus (@ellexxaurus) | TikTok",
+      "url": "https://www.tiktok.com/@ellexxaurus",
+      "snippet": "ellexxaurus (@ellexxaurus) on TikTok | 41 Followers. Watch the latest video from ellexxaurus (@ellexxaurus)."
+    },
+    {
+      "title": "Ellexxaurus (@ellexxaurus) • Threads, Say more",
+      "url": "https://www.threads.com/@ellexxaurus",
+      "snippet": "4.4K Followers • 7 Threads. See the latest conversations with @ellexxaurus."
+    }
+  ]
+}

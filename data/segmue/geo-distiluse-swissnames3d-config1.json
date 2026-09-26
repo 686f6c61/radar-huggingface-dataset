@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "segmue/geo-distiluse-swissnames3d-config1",
+  "slug": "segmue-geo-distiluse-swissnames3d-config1",
+  "author": "segmue",
+  "url": "https://huggingface.co/segmue/geo-distiluse-swissnames3d-config1",
+  "created_at": "2026-09-25T23:01:31.000Z",
+  "updated_at": "2026-09-25T23:02:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "distilbert",
+    "geoparsing",
+    "toponym-resolution",
+    "swissnames3d",
+    "sentence-similarity",
+    "de",
+    "base_model:sentence-transformers/distiluse-base-multilingual-cased-v1",
+    "base_model:finetune:sentence-transformers/distiluse-base-multilingual-cased-v1",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134734080,
+  "parameters_human": "134.7M",
+  "storage_bytes": 540522488,
+  "storage_human": "541 MB",
+  "base_model": "sentence-transformers/distiluse-base-multilingual-cased-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "swissNAMES3D - Swisstopo",
+      "url": "https://www.swisstopo.admin.ch/en/landscape-model-swissnames3d",
+      "snippet": "With over 490000 geo-referenced entries, swissNAMES3D is the most comprehensive collection of Swiss geographic names. The free dataset is based on a simple data model and provides the ideal basis for a broad range of applications."
+    },
+    {
+      "title": "swissNAMES3D - Swisstopo",
+      "url": "https://www.swisstopo.admin.ch/de/landschaftsmodell-swissnames3d",
+      "snippet": "swissNAMES3D ist mit über 490000 georeferenzierten Einträgen die umfangreichste Sammlung von geografischen Namen der Schweiz. Dieser kostenlose Namendatensatz basiert auf einem einfachen Datenmodell und liefert für viele Anwendungen die ideale Datengrundlage."
+    },
+    {
+      "title": "Geographical Names Switzerland - INSPIRE",
+      "url": "https://inspire-geoportal.ec.europa.eu/srv/api/records/e81d4df0-52c8-4258-a38b-96f6761c976b",
+      "snippet": "Geographical Names is based on the data set swissNAMES3D by swisstopo. It is the most comprehensive collection of geographical names for Switzerland and Liechtenstein. swissNAMES3D contains over 437&#x27;000 georeferenced entries divided in different categories."
+    },
+    {
+      "title": "Geographic Names of Switzerland | swissnames",
+      "url": "https://swissnames.lukasmartinelli.ch/",
+      "snippet": "Geographic Names of Switzerland swissnames provides curated GeoJSON extracts from the free swissNAMES3D data set from swisstopo. This is either meant for direct map overlays in web map clients or for adding geographic names to your data set."
+    },
+    {
+      "title": "swissNAMES3D Geografische Namen der Landesvermessung",
+      "url": "https://opendata.swiss/de/dataset/swissnames3d-geografische-namen-der-landesvermessung",
+      "snippet": "Beschreibung swissNAMES3D ist die vollständigste Sammlung von geografische Namen über die Schweiz und das Fürstentum Liechtenstein. swissNAMES3D umfasst über 437000 georeferenzierte Einträge, die in verschiedene Kategorien unterteilt sind. Der Datensatz ersetzt ab 2015 das auf dem Namengut der Landeskartenwerke basierende und bis 2008 nachgeführte Produkt SwissNames. Die Darstellung der ..."
+    }
+  ]
+}

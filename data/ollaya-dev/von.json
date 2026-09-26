@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ollaya-dev/von",
+  "slug": "ollaya-dev-von",
+  "author": "ollaya-dev",
+  "url": "https://huggingface.co/ollaya-dev/von",
+  "created_at": "2026-09-25T23:02:07.000Z",
+  "updated_at": "2026-09-26T00:21:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "ollaya",
+    "decision-model",
+    "system-one",
+    "text-classification",
+    "base_model:wfzyx/von",
+    "base_model:quantized:wfzyx/von",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3040619,
+  "storage_human": "3 MB",
+  "base_model": "wfzyx/von",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models · Ollaya",
+      "url": "https://ollaya.dev/search",
+      "snippet": "10 Tags Updated 2 days ago decider Decoder decision models by Mapika on Qwen3.5: the answer is read from option-letter logits in one forward pass. The most accurate open decision model Ollaya ships."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "ollaya-dev/nli · Hugging Face",
+      "url": "https://huggingface.co/ollaya-dev/nli",
+      "snippet": "What is in this repository This repository holds only the files Ollaya derives, with no weights. Each graph is an ONNX export of the original model whose weights reference the author&#x27;s own model.safetensors by byte offset, so ollaya pull downloads the weights from the upstream repository, unmodified and pinned to a commit, and verifies their sha256."
+    },
+    {
+      "title": "Ollaya — Run decision models locally",
+      "url": "https://ollaya.cobanov.dev/",
+      "snippet": "Ollaya downloads and serves open decision models on your own machine. Typed, calibrated answers in milliseconds — private and open source."
+    },
+    {
+      "title": "Releases · ollaya-dev/ollaya - GitHub",
+      "url": "https://github.com/ollaya-dev/ollaya/releases",
+      "snippet": "Run open decision models locally: pull and serve Laya, decider, NLI and GLiClass behind a TypeSafe-compatible API. Ollama for decision models. - ollaya-dev/ollaya"
+    }
+  ]
+}

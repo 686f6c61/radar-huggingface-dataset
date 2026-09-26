@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "jsbaicenter/Aztec-Coder-4B-NVFP4",
+  "slug": "jsbaicenter-aztec-coder-4b-nvfp4",
+  "author": "jsbaicenter",
+  "url": "https://huggingface.co/jsbaicenter/Aztec-Coder-4B-NVFP4",
+  "created_at": "2026-09-25T22:08:55.000Z",
+  "updated_at": "2026-09-25T22:26:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "w4a4",
+    "nvfp4",
+    "agentic-coding",
+    "reasoning",
+    "tool-use",
+    "on-device",
+    "laptop-scale",
+    "sft",
+    "reinforcement-learning",
+    "conversational",
+    "dataset:nvidia/Nemotron-Post-Training-Dataset-v2",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3073289216,
+  "parameters_human": "3.07B",
+  "storage_bytes": 5175743621,
+  "storage_human": "5.2 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jsbaicenter/JSBAI-Coder-4B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/jsbaicenter/JSBAI-Coder-4B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jsbaicenter/JSBAI-Coder-4B · Hugging Face",
+      "url": "https://huggingface.co/jsbaicenter/JSBAI-Coder-4B",
+      "snippet": "JSBAI-Coder-4B is a 4B-parameter model, fine-tuned from Qwen3.5-4B, that investigates bugs, edits files, runs commands, and verifies its own fixes in real software repositories."
+    },
+    {
+      "title": "SDSU James Silberrad Center for Artificial Intelligence - GitHub",
+      "url": "https://github.com/JSBAICenter",
+      "snippet": "SDSU James Silberrad Center for Artificial Intelligence has 17 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "NVIDIA Nemotron 3 Family of Models - NVIDIA Nemotron",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3/",
+      "snippet": "We announce NVIDIA Nemotron 3, the most efficient family of open models with leading accuracy for agentic AI applications. The Nemotron 3 family consists of three models: Nano, Super, and Ultra."
+    },
+    {
+      "title": "OrcaRouter — One AI gateway: adaptive LLM routing & governance",
+      "url": "https://www.orcarouter.ai/",
+      "snippet": "One OpenAI-compatible AI gateway for production AI — adaptive routing, load balancing, guardrails, agent firewall, observability and governance across 200+ models."
+    }
+  ]
+}

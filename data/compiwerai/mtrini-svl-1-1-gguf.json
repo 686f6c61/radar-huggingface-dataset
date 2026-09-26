@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "CompiwerAI/Mtrini-SVL-1.1-GGUF",
+  "slug": "compiwerai-mtrini-svl-1-1-gguf",
+  "author": "CompiwerAI",
+  "url": "https://huggingface.co/CompiwerAI/Mtrini-SVL-1.1-GGUF",
+  "created_at": "2026-09-25T21:47:31.000Z",
+  "updated_at": "2026-09-25T21:51:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ar",
+    "fr",
+    "ary"
+  ],
+  "tags": [
+    "gguf",
+    "mtrini",
+    "compiwer-ai",
+    "llama-cpp",
+    "local-llm",
+    "reasoning",
+    "coding",
+    "mathematics",
+    "darija",
+    "moroccan-arabic",
+    "en",
+    "ar",
+    "fr",
+    "ary",
+    "base_model:CompiwerAI/Mtrini-SVL-1.1-Merged",
+    "base_model:quantized:CompiwerAI/Mtrini-SVL-1.1-Merged",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16388044992,
+  "storage_human": "16.4 GB",
+  "base_model": "CompiwerAI/Mtrini-SVL-1.1-Merged",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CompiwerAI/Mtrini-SVL-1.0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/CompiwerAI/Mtrini-SVL-1.0-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CompiwerAI/Mtrini-SVL-1.0-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/CompiwerAI/Mtrini-SVL-1.0-GGUF/tree/main",
+      "snippet": "Instructions to use CompiwerAI/Mtrini-SVL-1.-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use CompiwerAI/Mtrini-SVL-1.-GGUF with PEFT:"
+    },
+    {
+      "title": "Trinity Mini Marvin - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/trinity-mini-marvin.html",
+      "snippet": "Download Trinity Mini Marvin GGUF model. 25.9 GB, 442 downloads, 0 likes."
+    },
+    {
+      "title": "How to Run GGUF Models Locally",
+      "url": "https://ggufloader.github.io/how-to-run-gguf-models.html",
+      "snippet": "How to Run GGUF Models Locally The complete 2026 guide — load any GGUF model with GGUF Loader, Ollama, LM Studio, or llama.cpp. Pick your tool below and jump straight to its step-by-step tutorial."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

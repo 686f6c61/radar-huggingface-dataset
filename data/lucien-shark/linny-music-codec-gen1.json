@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Lucien-shark/Linny-Music-Codec-Gen1",
+  "slug": "lucien-shark-linny-music-codec-gen1",
+  "author": "Lucien-shark",
+  "url": "https://huggingface.co/Lucien-shark/Linny-Music-Codec-Gen1",
+  "created_at": "2026-09-25T07:18:24.000Z",
+  "updated_at": "2026-09-26T02:45:26.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4816285559,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lucien — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lucien",
+      "snippet": "Lucien est un prénom masculin, Lucienne étant sa forme féminine. C'est aussi un nom de baptême donné d'après plusieurs saints …Read more"
+    },
+    {
+      "title": "Prénom Lucien (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/lucien/prenom-5417",
+      "snippet": "Quelle est l'origine du prénom Lucien ? Le prénom français Lucien est un dérivé du prénom latin Lucius. Lucien peut aussi être …Read more"
+    },
+    {
+      "title": "Votre magasin vélos à Bxl, Anvers, Louvain, Malines ou Gand | Lucien",
+      "url": "https://lucien.bike/fr",
+      "snippet": "Lucien, c’est une histoire de cyclistes, pour les cyclistes - Très grand stock - Vélos neufs, de seconde main et outlet, entretien vélo, …Read more"
+    },
+    {
+      "title": "Lucien Paris | Maison de ventes aux enchères",
+      "url": "https://www.lucienparis.com/",
+      "snippet": "Dec 17, 2024 · Christophe LUCIEN, commissaire-priseur, et ses collaborateurs sont à votre disposition pour expertiser, avec …Read more"
+    },
+    {
+      "title": "Prénom Lucien : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/lucien-47175",
+      "snippet": "Tout ce que vous devez savoir sur le prénom Lucien est sur Parents.fr Origine, saint, étymologie, signification, caractère... On vous …Read more"
+    }
+  ]
+}

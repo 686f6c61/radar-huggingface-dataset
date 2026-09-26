@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "kalyaskye/h3-loras",
+  "slug": "kalyaskye-h3-loras",
+  "author": "kalyaskye",
+  "url": "https://huggingface.co/kalyaskye/h3-loras",
+  "created_at": "2026-09-25T23:11:59.000Z",
+  "updated_at": "2026-09-25T23:42:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "not-for-all-audiences",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2326348592,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "akatz-ai/MiniMax-H3-Character-Swap-LoRA · Hugging Face",
+      "url": "https://huggingface.co/akatz-ai/MiniMax-H3-Character-Swap-LoRA",
+      "snippet": "Use Use an H3 Ref2VA-capable runtime and obtain the base model and VAEs separately. Place the final .safetensors file in ComfyUI/models/loras/ (or your configured shared LoRA directory), and apply it to the H3 model at strength 1.0 using a compatible model-only LoRA loader."
+    },
+    {
+      "title": "kalyaskye (ryan) - Hugging Face",
+      "url": "https://huggingface.co/kalyaskye",
+      "snippet": "User profile of ryan on Hugging Face"
+    },
+    {
+      "title": "Awesome MiniMax H3 - GitHub",
+      "url": "https://github.com/AtlasCloudAI/awesome-minimax-h3",
+      "snippet": "Awesome MiniMax H3 Everything built on top of MiniMax H3 — the open-weight omni-modal video model that generates picture and native audio together. Weights, quantizations, LoRAs, ComfyUI nodes, workflows and the tricks people found. Every entry checked against a live API and dated. 简体中文 Scope: H3 only."
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    }
+  ]
+}

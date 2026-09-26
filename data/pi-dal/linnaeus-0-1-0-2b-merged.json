@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "pi-dal/Linnaeus-0.1.0-2B-merged",
+  "slug": "pi-dal-linnaeus-0-1-0-2b-merged",
+  "author": "pi-dal",
+  "url": "https://huggingface.co/pi-dal/Linnaeus-0.1.0-2B-merged",
+  "created_at": "2026-09-26T00:54:17.000Z",
+  "updated_at": "2026-09-26T01:00:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "decision-model",
+    "linnaeus",
+    "lora-merged",
+    "apple-silicon",
+    "conversational",
+    "base_model:pi-dal/Linnaeus-0.1.0-2B",
+    "base_model:finetune:pi-dal/Linnaeus-0.1.0-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2274071872,
+  "parameters_human": "2.27B",
+  "storage_bytes": 4561033598,
+  "storage_human": "4.6 GB",
+  "base_model": "pi-dal/Linnaeus-0.1.0-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pi — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Pi",
+      "snippet": "Pi est un thriller mathématique sur la découverte de la séquence parfaite, révélant ainsi la formule exacte des marchés boursiers de …"
+    },
+    {
+      "title": "Pi - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pi",
+      "snippet": "In the Palais de la Découverte (a science museum in Paris) there is a circular room known as the pi room. On its wall are inscribed …"
+    },
+    {
+      "title": "Les 120000 premières décimales du nombre PI - jlsigrist.com",
+      "url": "http://www.jlsigrist.com/pi.html",
+      "snippet": "Explore les 120000 premières décimales du nombre PI, ainsi que des concepts mathématiques comme les parcours eulériens et …"
+    },
+    {
+      "title": "Pi | Definition, Symbol, Number, History, Applications, & Facts ...",
+      "url": "https://www.britannica.com/science/pi-mathematics",
+      "snippet": "Sep 3, 2026 · pi (π), in mathematics, the ratio of the circumference of a circle to its diameter. The Greek letter π was first used by …"
+    },
+    {
+      "title": "One Million Digits of Pi On One Page!- [Plus Guides And Information ...",
+      "url": "https://www.piday.org/million/",
+      "snippet": "The first million digits of pi (π) are below. Why not calculate the circumference of a circle using pi here. Or simply learn about pi here. …"
+    }
+  ]
+}

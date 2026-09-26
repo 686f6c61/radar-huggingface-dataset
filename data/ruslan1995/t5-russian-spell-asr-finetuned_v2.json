@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Ruslan1995/t5-russian-spell-asr-finetuned_v2",
+  "slug": "ruslan1995-t5-russian-spell-asr-finetuned_v2",
+  "author": "Ruslan1995",
+  "url": "https://huggingface.co/Ruslan1995/t5-russian-spell-asr-finetuned_v2",
+  "created_at": "2026-09-25T21:07:45.000Z",
+  "updated_at": "2026-09-25T21:07:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 222903552,
+  "parameters_human": "222.9M",
+  "storage_bytes": 891644712,
+  "storage_human": "892 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ruslan1995/russian-asr-spell-correction_v2 - Hugging Face",
+      "url": "https://huggingface.co/datasets/Ruslan1995/russian-asr-spell-correction_v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Maxinstellar/t5-russian-spell · Hugging Face",
+      "url": "https://huggingface.co/Maxinstellar/t5-russian-spell",
+      "snippet": "t5-russian-spell This model is a fine-tuned version of UrukHan/t5-russian-spell on the None dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Open-source Russian spelling correction model - t5-russian-spell ...",
+      "url": "https://model.aibase.com/models/details/1915693275039817729",
+      "snippet": "This model, t5-russian-spell, is designed to correct text from recognized audio. You can use the results of the audio recognition model UrukHan/wav2vec2-russian as input for this model."
+    },
+    {
+      "title": "t5-russian-spell | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/t5-russian-spell/",
+      "snippet": "t5-russian-spell is a specialized text correction model designed to improve the quality of Russian speech recognition outputs. It&#x27;s particularly optimized to work with transcriptions from the wav2vec2-russian model, making it an essential tool for audio-to-text processing pipelines."
+    },
+    {
+      "title": "Открытые модели для распознавания русской речи",
+      "url": "https://alphacephei.com/nsh/2023/01/22/russian-models.html",
+      "snippet": "Результаты: Nemo RNNT очень быстрый и довольно точный Vosk начитанный Whisper не очень хорошо работает для русского и его тяжело дообучить. Тем не менее на Silero он дообучился. Whisper медленный, но даже на старой карте вполне ..."
+    }
+  ]
+}

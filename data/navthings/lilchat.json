@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "navthings/lilchat",
+  "slug": "navthings-lilchat",
+  "author": "navthings",
+  "url": "https://huggingface.co/navthings/lilchat",
+  "created_at": "2026-09-26T00:30:04.000Z",
+  "updated_at": "2026-09-26T00:46:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama",
+    "chat",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "base_model:navthings/lilbase",
+    "base_model:quantized:navthings/lilbase",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 297010176,
+  "parameters_human": "297.0M",
+  "storage_bytes": 1841105477,
+  "storage_human": "1.8 GB",
+  "base_model": "navthings/lilbase",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

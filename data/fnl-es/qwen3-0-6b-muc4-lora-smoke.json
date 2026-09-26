@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "fnl-es/qwen3-0.6b-muc4-lora-smoke",
+  "slug": "fnl-es-qwen3-0-6b-muc4-lora-smoke",
+  "author": "fnl-es",
+  "url": "https://huggingface.co/fnl-es/qwen3-0.6b-muc4-lora-smoke",
+  "created_at": "2026-09-25T20:30:12.000Z",
+  "updated_at": "2026-09-25T21:18:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "event-extraction",
+    "muc-4",
+    "dataset:fnl-es/muc4-chat",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1026052504,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Front de libération nationale (Algérie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Front_de_lib%C3%A9ration_nationale_(Alg%C3%A9rie)",
+      "snippet": "Fondé le 23 octobre 1954 en Algérie française, le FLN apparut publiquement le 1er novembre 1954 pour engager une lutte de …"
+    },
+    {
+      "title": "FNL - FreedomNews NouvellesLibres - Facebook",
+      "url": "https://www.facebook.com/FNLInfos/",
+      "snippet": "FNL - FreedomNews NouvellesLibres. 42,098 followers · 9,171 talking about this. Informations ouvertes sans censure Opinions …"
+    },
+    {
+      "title": "Front national de libération du Sud Vietnam — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Front_national_de_lib%C3%A9ration_du_Sud_Vietnam",
+      "snippet": "Le FNL regroupe les opposants au régime sud-vietnamien de Ngô Đình Diệm et à la présence américaine au Vietnam, et les …"
+    },
+    {
+      "title": "Résultats de FNL 2026/2027, scores en direct, classements",
+      "url": "https://www.flashscore.fr/football/russie/fnl/",
+      "snippet": "Les résultats de FNL 2026/2027 ainsi que le livescore, scores, classements de FNL 2026/2027 et détails du match (buteurs, cartons …"
+    },
+    {
+      "title": "Friday Night Lights (TV series) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Friday_Night_Lights_(TV_series)",
+      "snippet": "Save FNL Campaign raised money to send footballs and contributions to charity foundations that were related to the show. The Save …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "autotrust",
   "url": "https://huggingface.co/autotrust/JEV",
   "created_at": "2026-09-23T12:08:52.000Z",
-  "updated_at": "2026-09-25T01:01:52.000Z",
+  "updated_at": "2026-09-25T14:01:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -30,6 +30,7 @@
     "lora",
     "qwen3_5",
     "dual-head",
+    "vllm",
     "text-classification",
     "en",
     "dataset:SargeDev/jev-distill-corpus-v3",
@@ -40,13 +41,13 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 1,
+  "likes": 3,
   "downloads_30d": 140,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 49835762669,
-  "storage_human": "49.8 GB",
+  "storage_bytes": 50012404469,
+  "storage_human": "50.0 GB",
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"

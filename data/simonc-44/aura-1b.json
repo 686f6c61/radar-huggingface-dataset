@@ -5,7 +5,7 @@
   "author": "Simonc-44",
   "url": "https://huggingface.co/Simonc-44/aura-1b",
   "created_at": "2026-09-20T19:24:08.000Z",
-  "updated_at": "2026-09-24T21:41:26.000Z",
+  "updated_at": "2026-09-25T11:27:52.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 8096379875,
-  "storage_human": "8.1 GB",
+  "storage_bytes": 8904259059,
+  "storage_human": "8.9 GB",
   "base_model": "meta-llama/Llama-3.2-1B-Instruct",
   "formats": [
     "gguf"

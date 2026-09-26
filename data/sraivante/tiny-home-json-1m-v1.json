@@ -5,7 +5,7 @@
   "author": "sraivante",
   "url": "https://huggingface.co/sraivante/tiny-home-json-1m-v1",
   "created_at": "2026-09-25T18:06:08.000Z",
-  "updated_at": "2026-09-25T18:14:30.000Z",
+  "updated_at": "2026-09-25T18:26:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

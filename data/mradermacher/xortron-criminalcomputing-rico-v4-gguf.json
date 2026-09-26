@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mradermacher/XORTRON-CriminalComputing-RICO-v4-GGUF",
+  "slug": "mradermacher-xortron-criminalcomputing-rico-v4-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/XORTRON-CriminalComputing-RICO-v4-GGUF",
+  "created_at": "2026-09-25T18:13:33.000Z",
+  "updated_at": "2026-09-25T20:41:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "mergekit",
+    "text-generation-inference",
+    "unsloth",
+    "uncensored",
+    "harmful",
+    "xortron",
+    "heretic",
+    "abliterated",
+    "toxic",
+    "experimental",
+    "not-for-all-audiences",
+    "en",
+    "dataset:darkc0de/XORTRON-RESTRICTED-RESEARCH-SFT",
+    "base_model:darkc0de/XORTRON-CriminalComputing-RICO-v4",
+    "base_model:quantized:darkc0de/XORTRON-CriminalComputing-RICO-v4",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780468096,
+  "storage_human": "190.8 GB",
+  "base_model": "darkc0de/XORTRON-CriminalComputing-RICO-v4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "legacy | History Forum",
+      "url": "https://www.historum.com/tags/legacy/",
+      "snippet": "Bares Thread Jun 28, 2016 armies empire indian legacymauryan offshoot quality Replies: 17 Forum: Asian History legacy of the …Read more"
+    },
+    {
+      "title": "Versailles | History Forum",
+      "url": "https://historum.com/t/versailles.53129/",
+      "snippet": "Versailles was the royal residence of France for little more than a century (from 1682 until 1789) when the French Revolution began. …"
+    },
+    {
+      "title": "Slavery | History Forum",
+      "url": "https://historum.com/t/slavery.124158/",
+      "snippet": "Post 1500 Europe gained military ascendancy over rest of the world. Native peoples all over found themselves subjected to this …"
+    },
+    {
+      "title": "Japan!? | History Forum",
+      "url": "https://historum.com/t/japan.24386/",
+      "snippet": "Right Then Guys. I Am Suddenly Interested In Japanese History, So Do Any Of You Guys Got Any Decent Ideas On Japanese …"
+    },
+    {
+      "title": "Diocletian's safety | History Forum",
+      "url": "https://historum.com/t/diocletians-safety.190594/",
+      "snippet": "What did Diocletian do about his personal safety that was so much more successful than many emperors before him?"
+    }
+  ]
+}

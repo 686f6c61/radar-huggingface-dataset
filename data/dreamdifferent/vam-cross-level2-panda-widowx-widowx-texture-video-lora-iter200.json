@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level2-panda-widowx-widowx-texture-video-lora-iter200",
+  "slug": "dreamdifferent-vam-cross-level2-panda-widowx-widowx-texture-video-lora-iter200",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level2-panda-widowx-widowx-texture-video-lora-iter200",
+  "created_at": "2026-09-25T21:21:48.000Z",
+  "updated_at": "2026-09-25T21:22:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "video-generation",
+    "lora",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 741588124,
+  "storage_human": "742 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-video-lora ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-video-lora-iter200",
+      "snippet": "dreamdifferent / vam-cross-level2-panda-robotiq-widowx-texture-video-lora-iter200 like 0 Follow dreamdifferent 4 Robotics mimic-video video-generation lora Model card FilesFiles and versions xet Community Copy to bucket new VAM-Cross two-camera MimicVideo Video2World LoRA Required initial backbone Supporting runtime artifacts Training data contract"
+    },
+    {
+      "title": "dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-ur5e ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter400",
+      "snippet": "This is an adapter checkpoint, not a standalone fused model. Load the exact initial Video2World backbone above first and then apply this LoRA checkpoint. For fused_video2world_dit, the initial checkpoint already includes the earlier WidowX/Bridge LoRA fusion; loading the original Bridge backbone instead would be incorrect. Supporting runtime artifacts"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "Daily-updated list of free AI models (free LLM APIs), ranked by quality with live status. Plus one OpenAI-compatible endpoint that routes to the best one. - ClawLabsAI/free-ai-models"
+    },
+    {
+      "title": "A Call for Control of Frontier AI Models - Presidentti",
+      "url": "https://www.presidentti.fi/en/a-call-for-control-of-frontier-ai-models/",
+      "snippet": "September 2026 Artificial intelligence is an extremely powerful technology. It has potential to improve lives, advance science and strengthen our economies. At the same time, the rapid development of frontier AI models poses serious risks to safety and security if not appropriately managed. Recently we have seen capable AI systems circumventing testing safeguards, exploiting vulnerabilities […]"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

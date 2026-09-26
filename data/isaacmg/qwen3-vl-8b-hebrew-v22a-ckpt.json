@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "isaacmg/qwen3-vl-8b-hebrew-v22a-ckpt",
+  "slug": "isaacmg-qwen3-vl-8b-hebrew-v22a-ckpt",
+  "author": "isaacmg",
+  "url": "https://huggingface.co/isaacmg/qwen3-vl-8b-hebrew-v22a-ckpt",
+  "created_at": "2026-09-25T07:28:51.000Z",
+  "updated_at": "2026-09-26T02:33:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "unsloth",
+    "trl",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 943361933,
+  "storage_human": "943 MB",
+  "base_model": "unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

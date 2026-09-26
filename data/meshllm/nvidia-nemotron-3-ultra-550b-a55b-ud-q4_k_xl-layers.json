@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "meshllm/NVIDIA-Nemotron-3-Ultra-550B-A55B-UD-Q4_K_XL-layers",
+  "slug": "meshllm-nvidia-nemotron-3-ultra-550b-a55b-ud-q4_k_xl-layers",
+  "author": "meshllm",
+  "url": "https://huggingface.co/meshllm/NVIDIA-Nemotron-3-Ultra-550B-A55B-UD-Q4_K_XL-layers",
+  "created_at": "2026-09-12T22:09:22.000Z",
+  "updated_at": "2026-09-25T22:19:17.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mesh-llm",
+  "languages": [],
+  "tags": [
+    "mesh-llm",
+    "gguf",
+    "layer-package",
+    "skippy",
+    "distributed-inference",
+    "local-inference",
+    "openai-compatible",
+    "text-generation",
+    "base_model:unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF",
+    "base_model:quantized:unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 4398,
+  "trending_score": 0,
+  "parameters": 421645056,
+  "parameters_human": "421.6M",
+  "storage_bytes": 361022615296,
+  "storage_human": "361.0 GB",
+  "base_model": "unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA Nemotron 3 Ultra",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/",
+      "snippet": "We are releasing NVIDIA Nemotron 3 Ultra - our largest and most capable model yet. Nemotron 3 Ultra is a 55B active 550B total parameter Mixture-of-Experts hybrid Mamba-Transformer model that leverages Latent MoE, includes MTP Layers, and was pre-trained in NVFP4."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3-Ultra-550B-A55B-UD-Q4_K_XL-layers",
+      "url": "https://huggingface.co/meshllm/NVIDIA-Nemotron-3-Ultra-550B-A55B-UD-Q4_K_XL-layers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nemotron-3-ultra-550b-a55b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-ultra-550b-a55b/modelcard",
+      "snippet": "Nemotron-3-Ultra-550B-A55B-NVFP4 is a frontier-scale large language model (LLM) trained by NVIDIA, designed to deliver strong agentic, reasoning, and conversational capabilities. It is optimized for the most demanding workloads, including complex multi-step agents, long-context analysis, and high-accuracy reasoning over code, math, and science."
+    },
+    {
+      "title": "meshllm/NVIDIA-Nemotron-3-Ultra-550B-A55B-UD-Q4_K_S-layers at main",
+      "url": "https://huggingface.co/meshllm/NVIDIA-Nemotron-3-Ultra-550B-A55B-UD-Q4_K_S-layers/tree/main/layers",
+      "snippet": "Instructions to use meshllm/NVIDIA-Nemotron-3-Ultra-550B-A55B-UD-Q4_K_S-layers with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "nemotron-3-ultra-550b-a55b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-ultra-550b-a55b",
+      "snippet": "Open, efficient hybrid Mamba-Transformer MoE with 1M context, excelling in agentic reasoning, coding, planning, tool calling, and more"
+    }
+  ]
+}

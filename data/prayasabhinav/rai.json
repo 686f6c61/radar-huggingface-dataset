@@ -5,7 +5,7 @@
   "author": "prayasabhinav",
   "url": "https://huggingface.co/prayasabhinav/rai",
   "created_at": "2026-09-22T13:09:16.000Z",
-  "updated_at": "2026-09-23T13:45:29.000Z",
+  "updated_at": "2026-09-25T10:32:03.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "question-answering",
@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 37,
+  "downloads_30d": 38,
   "trending_score": 0,
   "parameters": 33212930,
   "parameters_human": "33.2M",
-  "storage_bytes": 398624472,
-  "storage_human": "399 MB",
+  "storage_bytes": 531499296,
+  "storage_human": "531 MB",
   "base_model": "deepset/minilm-uncased-squad2",
   "formats": [
     "safetensors"

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "davethaler/whale-call-detector",
+  "slug": "davethaler-whale-call-detector",
+  "author": "davethaler",
+  "url": "https://huggingface.co/davethaler/whale-call-detector",
+  "created_at": "2026-04-20T20:59:55.000Z",
+  "updated_at": "2026-09-26T00:14:56.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "audio-spectrogram-transformer",
+    "audio-classification",
+    "generated_from_trainer",
+    "base_model:MIT/ast-finetuned-audioset-10-10-0.4593",
+    "base_model:finetune:MIT/ast-finetuned-audioset-10-10-0.4593",
+    "license:bsd-3-clause",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 547,
+  "trending_score": 0,
+  "parameters": 86194952,
+  "parameters_human": "86.2M",
+  "storage_bytes": 111528062237,
+  "storage_human": "111.5 GB",
+  "base_model": "MIT/ast-finetuned-audioset-10-10-0.4593",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

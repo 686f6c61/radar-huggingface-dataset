@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/stride-qwen3-1.7b-allref-correctonly-kl0-token-uniform-20260925",
+  "slug": "sandeep123-stride-qwen3-1-7b-allref-correctonly-kl0-token-uniform-20260925",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/stride-qwen3-1.7b-allref-correctonly-kl0-token-uniform-20260925",
+  "created_at": "2026-09-25T06:43:46.000Z",
+  "updated_at": "2026-09-25T20:48:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "lora",
+    "mathematical-reasoning",
+    "reinforcement-learning",
+    "stride",
+    "text-generation",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3221649698,
+  "storage_human": "3.2 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stride-qwen3-1.7b-allref-correctonly-local-positive-20260925",
+      "url": "https://huggingface.co/sandeep123/stride-qwen3-1.7b-allref-correctonly-local-positive-20260925",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-token_uniform ...",
+      "url": "https://huggingface.co/sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-token_uniform-20260916",
+      "snippet": "Qwen/Qwen3-1.7B: token_uniform, lower learning rate, warmup and KL experiment STRIDE ablation distributing each response diversity bonus uniformly over its eligible tokens. Training explicitly renders enable_thinking=False, recorded as thinking_mode: false in the scientific contract. The pinned tokenizer and chat template remain unchanged."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Enhanced capabilities in 256K-token long-context understanding, extendable up to 1 million tokens. Qwen3-Thinking-2507 is the continuation of Qwen3 thinking model, with improved quality and depth of reasoning, featuring the following key enhancements:"
+    },
+    {
+      "title": "qwen3:1.7b | LLMfit Model Details",
+      "url": "https://llmfit.io/models/qwen3%3A1.7b",
+      "snippet": "It has 1.7 B parameters and supports a 128K token context window. Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+    },
+    {
+      "title": "stride-qwen3-1.7b-nonthinkin…token_uniform-20260916 by Kumar",
+      "url": "https://savrn.com/models/stride-qwen3-1-7b-nonthinking-stabilized-2048-token-uniform-20260916",
+      "snippet": "Model Card Identity and Version Repository sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-token_uniform-20260916 Publisher Kumar Task Text generation Modality Text Library peft Parameters Not stated by the source Languages Not stated by the source Revision e7d950c5f42e55761e1d479241be688c9ee779b0 First published 2026-09-16 Last ..."
+    }
+  ]
+}

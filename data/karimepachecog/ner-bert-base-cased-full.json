@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "karimepachecog/ner-bert-base-cased-full",
+  "slug": "karimepachecog-ner-bert-base-cased-full",
+  "author": "karimepachecog",
+  "url": "https://huggingface.co/karimepachecog/ner-bert-base-cased-full",
+  "created_at": "2026-09-25T22:31:29.000Z",
+  "updated_at": "2026-09-25T22:37:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "token-classification",
+    "named-entity-recognition",
+    "en",
+    "dataset:lhoestq/conll2003",
+    "arxiv:1810.04805",
+    "base_model:google-bert/bert-base-cased",
+    "base_model:finetune:google-bert/bert-base-cased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 107726601,
+  "parameters_human": "107.7M",
+  "storage_bytes": 430929740,
+  "storage_human": "431 MB",
+  "base_model": "google-bert/bert-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

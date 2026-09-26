@@ -5,7 +5,7 @@
   "author": "mlboydaisuke",
   "url": "https://huggingface.co/mlboydaisuke/decider-2b-coreai-ft",
   "created_at": "2026-09-25T12:24:29.000Z",
-  "updated_at": "2026-09-25T12:26:19.000Z",
+  "updated_at": "2026-09-25T23:54:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 1881825088,
   "parameters_human": "1.88B",
-  "storage_bytes": 3783681373,
-  "storage_human": "3.8 GB",
+  "storage_bytes": 7547373421,
+  "storage_human": "7.5 GB",
   "base_model": "Mapika/decider-2b",
   "formats": [
     "safetensors"

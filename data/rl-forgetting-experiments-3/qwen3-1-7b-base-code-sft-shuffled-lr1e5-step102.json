@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "RL-Forgetting-Experiments-3/qwen3-1.7b-base-code-sft-shuffled-lr1e5-step102",
+  "slug": "rl-forgetting-experiments-3-qwen3-1-7b-base-code-sft-shuffled-lr1e5-step102",
+  "author": "RL-Forgetting-Experiments-3",
+  "url": "https://huggingface.co/RL-Forgetting-Experiments-3/qwen3-1.7b-base-code-sft-shuffled-lr1e5-step102",
+  "created_at": "2026-09-25T21:39:09.000Z",
+  "updated_at": "2026-09-25T21:40:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "supervised-fine-tuning",
+    "code",
+    "mbpp",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-1.7B-Base",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 6893757902,
+  "storage_human": "6.9 GB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rocket League ®",
+      "url": "https://www.rocketleague.com/",
+      "snippet": "Sep 18, 2026 · This is Rocket League! Welcome to the high-powered hybrid of arcade-style soccer and vehicular mayhem!"
+    },
+    {
+      "title": "Rocket League Stats, Leaderboards & More! - Rocket League Tracker",
+      "url": "https://rocketleague.tracker.network/",
+      "snippet": "About our Rocket League Tracker Tracker.gg's Rocket League Stats Tracker is a Tracker Network project. Tracker.gg provides …"
+    },
+    {
+      "title": "Discord Rocket League France | RL FR — Le serveur francophone",
+      "url": "https://rocketleaguefrance.fr/",
+      "snippet": "Le Discord Rocket League France (RL FR) : trouve des coéquipiers, joue des tournois amateurs, suis les mises à jour et la boutique …"
+    },
+    {
+      "title": "Rocket League ® - Official Site",
+      "url": "https://www.rocketleague.com/rundown",
+      "snippet": "This is Rocket League! Welcome to the high-powered hybrid of arcade-style soccer and vehicular mayhem!"
+    },
+    {
+      "title": "Le Républicain Lorrain - L'info en direct et en continu, en Lorraine ...",
+      "url": "https://c.republicain-lorrain.fr/",
+      "snippet": "Avec Le Républicain Lorrain, suivez en continu, en images et en vidéo, l'actualité en Lorraine, en France et dans le monde : faits …"
+    }
+  ]
+}

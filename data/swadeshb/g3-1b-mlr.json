@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "swadeshb/g3-1b-mlr",
+  "slug": "swadeshb-g3-1b-mlr",
+  "author": "swadeshb",
+  "url": "https://huggingface.co/swadeshb/g3-1b-mlr",
+  "created_at": "2026-09-25T20:52:18.000Z",
+  "updated_at": "2026-09-25T20:52:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "math",
+    "hierarchical-reasoning",
+    "dataset:sxiong/MLR_structured_trajectory",
+    "base_model:google/gemma-3-1b-pt",
+    "base_model:adapter:google/gemma-3-1b-pt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45345496,
+  "storage_human": "45 MB",
+  "base_model": "google/gemma-3-1b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

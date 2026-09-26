@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Triumvirate-Qwopus-MiMo-Ornith-9B-Coder-i1-GGUF",
   "created_at": "2026-09-24T23:10:21.000Z",
-  "updated_at": "2026-09-25T02:12:27.000Z",
+  "updated_at": "2026-09-25T02:21:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -39,7 +39,7 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 8953803264,

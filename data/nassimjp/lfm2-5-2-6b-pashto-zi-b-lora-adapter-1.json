@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "nassimjp/LFM2.5-2.6B-Pashto-Zi-b-LoRA-adapter-1",
+  "slug": "nassimjp-lfm2-5-2-6b-pashto-zi-b-lora-adapter-1",
+  "author": "nassimjp",
+  "url": "https://huggingface.co/nassimjp/LFM2.5-2.6B-Pashto-Zi-b-LoRA-adapter-1",
+  "created_at": "2026-09-25T22:40:33.000Z",
+  "updated_at": "2026-09-25T22:40:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "lfm2",
+    "trl",
+    "en",
+    "base_model:nassimjp/LFM2.5-2.6B-Pashto-Zi-b-LoRA-adapter-1",
+    "base_model:finetune:nassimjp/LFM2.5-2.6B-Pashto-Zi-b-LoRA-adapter-1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27359187,
+  "storage_human": "27 MB",
+  "base_model": "nassimjp/LFM2.5-2.6B-Pashto-Zi-b-LoRA-adapter-1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

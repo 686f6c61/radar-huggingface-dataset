@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "abelcetina/u2t01-bert-conll2003-ner",
+  "slug": "abelcetina-u2t01-bert-conll2003-ner",
+  "author": "abelcetina",
+  "url": "https://huggingface.co/abelcetina/u2t01-bert-conll2003-ner",
+  "created_at": "2026-09-25T23:19:45.000Z",
+  "updated_at": "2026-09-25T23:20:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "ner",
+    "full",
+    "u2t01",
+    "en",
+    "dataset:lhoestq/conll2003",
+    "arxiv:1810.04805",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108898569,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435617596,
+  "storage_human": "436 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AventIQ-AI/token-classification-CONLL-2003-NER · Hugging Face",
+      "url": "https://huggingface.co/AventIQ-AI/token-classification-CONLL-2003-NER",
+      "snippet": "🧠 NERClassifier-BERT-CoNLL2003 A BERT-based Named Entity Recognition (NER) model fine-tuned on the CoNLL-2003 dataset. It classifies tokens in text into predefined entity types: Person (PER), Location (LOC), Organization (ORG), and Miscellaneous (MISC). This model is ideal for information extraction, document tagging, and question answering systems."
+    },
+    {
+      "title": "GitHub - HeemaaAI/NER-BERT-CoNLL2003",
+      "url": "https://github.com/HeemaaAI/NER-BERT-CoNLL2003",
+      "snippet": "Contribute to HeemaaAI/NER-BERT-CoNLL2003 development by creating an account on GitHub."
+    },
+    {
+      "title": "README.md · AventIQ-AI/token-classification-CONLL-2003-NER at main",
+      "url": "https://huggingface.co/AventIQ-AI/token-classification-CONLL-2003-NER/blob/main/README.md",
+      "snippet": "🧠 NERClassifier-BERT-CoNLL2003 A BERT-based Named Entity Recognition (NER) model fine-tuned on the CoNLL-2003 dataset. It classifies tokens in text into predefined entity types: Person (PER), Location (LOC), Organization (ORG), and Miscellaneous (MISC). This model is ideal for information extraction, document tagging, and question answering systems."
+    },
+    {
+      "title": "GitHub - abbaouiAchraf/BERT_NER_Finetuning: Fine tuning BERT model ...",
+      "url": "https://github.com/abbaouiAchraf/BERT_NER_Finetuning",
+      "snippet": "Project Description Named Entity Recognition (NER) is a crucial task in Natural Language Processing (NLP) that involves identifying and classifying named entities (e.g., persons, organizations, locations) within text data. This project demonstrates how to fine-tune the pre-trained BERT base uncased model for the NER task using the CoNLL-2003 dataset."
+    },
+    {
+      "title": "05_BERT_CONLL_NER.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/practical-nlp/practical-nlp/blob/master/Ch5/05_BERT_CONLL_NER.ipynb",
+      "snippet": "In this notebook we demonstrate how we can leverage BERT to perform NER on conll2003 dataset. This notebook requires a GPU to get setup. We suggest you to run this on your local machine only if you have a GPU setup or else you can use google colab."
+    }
+  ]
+}

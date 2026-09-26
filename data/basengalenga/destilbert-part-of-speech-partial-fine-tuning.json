@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Basengalenga/destilbert-part-of-speech-partial-fine-tuning",
+  "slug": "basengalenga-destilbert-part-of-speech-partial-fine-tuning",
+  "author": "Basengalenga",
+  "url": "https://huggingface.co/Basengalenga/destilbert-part-of-speech-partial-fine-tuning",
+  "created_at": "2026-09-25T22:33:02.000Z",
+  "updated_at": "2026-09-25T23:39:29.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "token-classification",
+    "pos-tagging",
+    "upos",
+    "partial-fine-tuning",
+    "en",
+    "dataset:universal-dependencies/universal_dependencies",
+    "arxiv:1910.01108",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:cc-by-sa-4.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66375953,
+  "parameters_human": "66.4M",
+  "storage_bytes": 265521357,
+  "storage_human": "266 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Part-of-speech tagging (UPOS)",
+      "dataset": "UD English EWT",
+      "metric": "Accuracy (word-level)",
+      "value": 0.9655
+    },
+    {
+      "task": "Part-of-speech tagging (UPOS)",
+      "dataset": "UD English EWT",
+      "metric": "Macro F1",
+      "value": 0.91
+    },
+    {
+      "task": "Part-of-speech tagging (UPOS)",
+      "dataset": "UD English EWT",
+      "metric": "Weighted F1",
+      "value": 0.965
+    }
+  ],
+  "sources": []
+}

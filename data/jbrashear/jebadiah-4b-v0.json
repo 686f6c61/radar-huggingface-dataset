@@ -5,7 +5,7 @@
   "author": "jbrashear",
   "url": "https://huggingface.co/jbrashear/jebadiah-4b-v0",
   "created_at": "2026-09-22T15:59:43.000Z",
-  "updated_at": "2026-09-23T15:17:16.000Z",
+  "updated_at": "2026-09-25T10:30:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 43,
+  "downloads_30d": 44,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

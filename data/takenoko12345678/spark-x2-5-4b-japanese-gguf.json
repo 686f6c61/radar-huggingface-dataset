@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Takenoko12345678/Spark-X2.5-4B-Japanese-GGUF",
+  "slug": "takenoko12345678-spark-x2-5-4b-japanese-gguf",
+  "author": "Takenoko12345678",
+  "url": "https://huggingface.co/Takenoko12345678/Spark-X2.5-4B-Japanese-GGUF",
+  "created_at": "2026-09-25T19:55:01.000Z",
+  "updated_at": "2026-09-25T22:36:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "japanese",
+    "spark2_5",
+    "llama.cpp",
+    "text-generation",
+    "ja",
+    "en",
+    "base_model:Takenoko12345678/Spark-X2.5-4B-Japanese",
+    "base_model:quantized:Takenoko12345678/Spark-X2.5-4B-Japanese",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 9575470496,
+  "storage_human": "9.6 GB",
+  "base_model": "Takenoko12345678/Spark-X2.5-4B-Japanese",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - XHToken/Spark-X2.5: Spark-x2.5 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.5",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "soyaakinohara/Spark-X2.5-4B-Heretic-jp-gguf · Hugging Face",
+      "url": "https://huggingface.co/soyaakinohara/Spark-X2.5-4B-Heretic-jp-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SparkLLM/Spark-X2.5-4B",
+      "url": "https://ollama.com/SparkLLM/Spark-X2.5-4B",
+      "snippet": "Spark-X2.5 Introduction We are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading ..."
+    },
+    {
+      "title": "stornic56/Spark-X2.5-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/stornic56/Spark-X2.5-4B-GGUF",
+      "snippet": "The model is a thinking model by default: reasoning is emitted inside <think>...</think> before the final answer. The embedded template also supports tool calling, matching the upstream chat_template.jinja. Don&#x27;t know which to choose? Grab Spark-X2.5-4B-Q4_K_M.gguf (2.60GB) - usually a good mix of size and performance. Download instructions available here. Available files:"
+    },
+    {
+      "title": "Spark-X2.5-4B とは？料金・機能・代替 | AI 星図 - myaiexp.com",
+      "url": "https://www.myaiexp.com/jp/items/models/spark-x2-5-4b",
+      "snippet": "Spark-X2.5-4B は、XHToken（SparkLLM / TokenSpark チーム）によるコンパクトなオープンウェイト汎用言語モデルで、2026 年 8 月 31 日に Apache 2.0 で Hugging Face に公開されました。4B と 1.7B のペア構成のうちの 4B 主力です。売りは効率性で、全注意機構と滑り窓注意機構を組み合わせたハイブリッド設計に ..."
+    }
+  ]
+}

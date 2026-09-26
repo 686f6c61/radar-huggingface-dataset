@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "meshllm/gemma-4-E4B-it-Q4_K_M-layers",
+  "slug": "meshllm-gemma-4-e4b-it-q4_k_m-layers",
+  "author": "meshllm",
+  "url": "https://huggingface.co/meshllm/gemma-4-E4B-it-Q4_K_M-layers",
+  "created_at": "2026-09-15T04:15:07.000Z",
+  "updated_at": "2026-09-25T22:19:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mesh-llm",
+  "languages": [],
+  "tags": [
+    "mesh-llm",
+    "gguf",
+    "layer-package",
+    "skippy",
+    "distributed-inference",
+    "local-inference",
+    "openai-compatible",
+    "text-generation",
+    "base_model:unsloth/gemma-4-E4B-it-GGUF",
+    "base_model:quantized:unsloth/gemma-4-E4B-it-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 25951,
+  "trending_score": 0,
+  "parameters": 120600065,
+  "parameters_human": "120.6M",
+  "storage_bytes": 8109827520,
+  "storage_human": "8.1 GB",
+  "base_model": "unsloth/gemma-4-E4B-it-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DaFont - Download fonts",
+      "url": "https://www.dafont.com/",
+      "snippet": "Archive of freely downloadable fonts. Browse by alphabetical listing, by style, by author or by popularity.Read more"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …Read more"
+    },
+    {
+      "title": "DaFont - Descargar fuentes",
+      "url": "https://www.dafont.com/es/",
+      "snippet": "Archivo de fuentes de descarga gratuita. Búsqueda por orden alfabético, por estilo, por autor o por popularidad.Read more"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "广町七深Official：非常凶猛谈不上，但它们确实是捕食者，并且拥有一套残酷且高效的捕猎手段。 萤火虫（萤科Lampyridae，有些观 …Read more"
+    },
+    {
+      "title": "TikTok 45.4.3 抓包之双网络栈证书校验分析 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-2111184-1-1.html",
+      "snippet": "Jun 5, 2026 · 工具链：google px4真机、proxypin 1.2.7、IDA 9.0。某海外社交app。先hook下connect函数，看下app使用的网络请求 …Read more"
+    }
+  ]
+}

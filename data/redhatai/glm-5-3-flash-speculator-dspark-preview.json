@@ -5,7 +5,7 @@
   "author": "RedHatAI",
   "url": "https://huggingface.co/RedHatAI/GLM-5.3-Flash-speculator.dspark-preview",
   "created_at": "2026-09-23T19:33:00.000Z",
-  "updated_at": "2026-09-23T19:39:34.000Z",
+  "updated_at": "2026-09-25T18:47:35.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,21 +24,21 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 2,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": 2539312001,
   "parameters_human": "2.54B",
-  "storage_bytes": 5078630866,
-  "storage_human": "5.1 GB",
+  "storage_bytes": 10157261732,
+  "storage_human": "10.2 GB",
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-24T03:18:59.042Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

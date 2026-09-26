@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "not-lain/qwen3-0.6b-quotes-lora",
+  "slug": "not-lain-qwen3-0-6b-quotes-lora",
+  "author": "not-lain",
+  "url": "https://huggingface.co/not-lain/qwen3-0.6b-quotes-lora",
+  "created_at": "2026-09-26T00:53:08.000Z",
+  "updated_at": "2026-09-26T01:22:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51895868,
+  "storage_human": "52 MB",
+  "base_model": "unsloth/qwen3-0.6b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définition de not | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/not",
+      "snippet": "Le mot « not » en français peut également être utilisé comme une négation. Il s'agit d'un adverbe qui exprime l'opposition, la …"
+    },
+    {
+      "title": "not — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/not",
+      "snippet": "Adverbe modifier le wikicode ... not \\nɑt\\ (adverbe de négation) (Ne) … pas. He is not an American. Il n’ est pas américain. Ajouter …"
+    },
+    {
+      "title": "not - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/not",
+      "snippet": "Dans les listes : Top 2000 English words, PET Vocabulary List - N, Vocabulaire , Suite... Synonymes : not at all, in no way, by no …"
+    },
+    {
+      "title": "NOT | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/not",
+      "snippet": "NOT definition: 1. used to form a negative phrase after verbs like \"be\", \"can\", \"have\", \"will\", \"must\", etc…. Learn more."
+    },
+    {
+      "title": "Traduction NOT en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/not",
+      "snippet": "Traduction de \"not\" en français : pas. Adverbe, signification, prononciation, expressions idiomatiques en anglais, synonymes et …"
+    }
+  ]
+}

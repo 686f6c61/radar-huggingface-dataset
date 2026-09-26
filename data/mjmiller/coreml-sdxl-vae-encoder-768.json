@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mjmiller/coreml-sdxl-vae-encoder-768",
+  "slug": "mjmiller-coreml-sdxl-vae-encoder-768",
+  "author": "mjmiller",
+  "url": "https://huggingface.co/mjmiller/coreml-sdxl-vae-encoder-768",
+  "created_at": "2026-09-25T23:36:14.000Z",
+  "updated_at": "2026-09-25T23:36:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136670169,
+  "storage_human": "137 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stabilityai/sdxl-vae · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/sdxl-vae",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AiArtLab/sdxl_vae · Hugging Face",
+      "url": "https://huggingface.co/AiArtLab/sdxl_vae",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sdxl-vae: Image-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/sdxl-vae-stabilityai",
+      "snippet": "Overview sdxl-vae is a fine-tuned variational autoencoder designed to improve local, high-frequency detail reconstruction in SDXL (Stable Diffusion XL) generated images. Developed by stabilityai, this component operates as a drop-in replacement for the original latent diffusion model&#x27;s autoencoder, integrating seamlessly into diffusers workflows via the AutoencoderKL class. The model uses the ..."
+    },
+    {
+      "title": "stabilityai/sdxl-vae - Hugging Face Hub Package Security Ana... - Socket",
+      "url": "https://socket.dev/huggingface/package/stabilityai/sdxl-vae",
+      "snippet": "Is stabilityai/sdxl-vae well maintained? We found that stabilityai/sdxl-vae demonstrated a not healthy version release cadence and project activity because the last version was released a year ago.It has 6 open source maintainers collaborating on the project."
+    },
+    {
+      "title": "sdxl-vae · Model · Inferix",
+      "url": "https://inferix.co/models/stabilityai/sdxl-vae",
+      "snippet": "SDXL VAE How to use with 🧨 diffusers You can integrate this fine tuned VAE decoder to your existing diffusers workflows, by including a vae argument to the StableDiffusionPipeline Model SDXL is a latent diffusion model, where the diffusion operates in a pretrained, learned (and fixed) latent space of an autoencoder."
+    }
+  ]
+}

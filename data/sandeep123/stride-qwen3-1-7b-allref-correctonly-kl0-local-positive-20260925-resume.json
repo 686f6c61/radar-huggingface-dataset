@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/stride-qwen3-1.7b-allref-correctonly-kl0-local-positive-20260925-resume",
+  "slug": "sandeep123-stride-qwen3-1-7b-allref-correctonly-kl0-local-positive-20260925-resume",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/stride-qwen3-1.7b-allref-correctonly-kl0-local-positive-20260925-resume",
+  "created_at": "2026-09-25T08:52:20.000Z",
+  "updated_at": "2026-09-26T02:41:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "lora",
+    "mathematical-reasoning",
+    "reinforcement-learning",
+    "stride",
+    "text-generation",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5960190289,
+  "storage_human": "6.0 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZClicker (AutoClicker) download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/autoclickersync/",
+      "snippet": "Sep 15, 2026 · Download ZClicker (AutoClicker) for free. A Modern Fully-Fledged Mouse and Keyboard AutoClicker. ZClicker is a …"
+    },
+    {
+      "title": "KMS Activator download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/kms-activator/",
+      "snippet": "Mar 21, 2026 · Download KMS Activator for free. Written in C#, this program connects to Safe KMS Servers to activate your PC 𝘀𝗮𝗳𝗲𝗹𝘆. If …"
+    },
+    {
+      "title": "Mac mini price surge - MacRumors Forums",
+      "url": "https://forums.macrumors.com/threads/mac-mini-price-surge.2488038/",
+      "snippet": "Aug 26, 2026 · As a reference, around Christmas 2024, I bought a base Mac mini M4, it was 599$, why is the M6 Mac mini 300$ …"
+    },
+    {
+      "title": "Apple TV Streaming Service Receives Price Increase",
+      "url": "https://forums.macrumors.com/threads/apple-tv-streaming-service-receives-price-increase.2488120/",
+      "snippet": "Aug 28, 2026 · Apple today informed MacRumors and others that the Apple TV streaming service is receiving a price increase in the …"
+    },
+    {
+      "title": "OpenCFU - Count your colonies",
+      "url": "https://opencfu.sourceforge.net/",
+      "snippet": "A powerful, user-friendly and free software to count and characterise bacterial (and other cell) colonies forming units from pictures."
+    }
+  ]
+}

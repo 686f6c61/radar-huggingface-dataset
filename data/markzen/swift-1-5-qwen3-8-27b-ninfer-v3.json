@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "markzen/Swift-1.5-Qwen3.8-27B-NInfer-v3",
+  "slug": "markzen-swift-1-5-qwen3-8-27b-ninfer-v3",
+  "author": "markzen",
+  "url": "https://huggingface.co/markzen/Swift-1.5-Qwen3.8-27B-NInfer-v3",
+  "created_at": "2026-09-25T23:32:15.000Z",
+  "updated_at": "2026-09-25T23:42:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "qwen3.8",
+    "nvfp4",
+    "blackwell",
+    "multimodal",
+    "base_model:ukisai/Swift-1.5-Qwen3.8-27b",
+    "base_model:finetune:ukisai/Swift-1.5-Qwen3.8-27b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18324358660,
+  "storage_human": "18.3 GB",
+  "base_model": "ukisai/Swift-1.5-Qwen3.8-27b, ukisai/Swift-1.5-Qwen3.8-27B-NVFP4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "markzen/Swift-Qwen3.8-27B-NInfer-v3 · Hugging Face",
+      "url": "https://huggingface.co/markzen/Swift-Qwen3.8-27B-NInfer-v3",
+      "snippet": "Swift-Qwen3.8-27B NInfer v3 v3 container upgrade of knoopx/Swift-Qwen3.8-27B-NInfer, which is stuck on the NInfer v2 format. No weights were converted, requantized, or touched: the v2 payload is byte-identical in this file, only the directory was rewritten for v3."
+    },
+    {
+      "title": "Qwen3.8-27B-swift-abliterated-nvfp4full-dflash2-NInfer-v3",
+      "url": "https://huggingface.co/kaushikvira/Qwen3.8-27B-swift-abliterated-nvfp4full-dflash2-NInfer-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Swift-Qwen3.8-27B: less overthinking | UkisAI",
+      "url": "https://ukisai.com/news/introducing-swift",
+      "snippet": "Swift produces shorter reasoning traces, and we observe fewer overthinking errors in our testing. Swift includes a transfer component derived from BottleCap AI&#x27;s ThinkingCap-Qwen3.6-27B. The resulting model uses the standard Qwen3.8 interface and retains text, image, and video support. Benchmark results"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "ninfer-5080/model-cards/Qwen3.8-27B-NInfer at master - GitHub",
+      "url": "https://github.com/mtrskeen/ninfer-5080/tree/master/model-cards/Qwen3.8-27B-NInfer",
+      "snippet": "Qwen3.8-27B for NInfer This model card is the version-controlled source for neroued/Qwen3.8-27B-NInfer. The repository contains Qwen3.8-27B converted to the native NInfer.ninfer artifact format. The artifact is intended only for NInfer; it is not a Transformers checkpoint, Safetensors distribution, or GGUF file."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "swadeshb/g3-4b-plan-solve",
+  "slug": "swadeshb-g3-4b-plan-solve",
+  "author": "swadeshb",
+  "url": "https://huggingface.co/swadeshb/g3-4b-plan-solve",
+  "created_at": "2026-09-26T01:02:29.000Z",
+  "updated_at": "2026-09-26T01:02:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "math",
+    "hierarchical-reasoning",
+    "dataset:sxiong/MLR_structured_trajectory",
+    "base_model:google/gemma-3-4b-pt",
+    "base_model:adapter:google/gemma-3-4b-pt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69082520,
+  "storage_human": "69 MB",
+  "base_model": "google/gemma-3-4b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

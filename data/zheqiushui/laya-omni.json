@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "zheqiushui/laya-omni",
+  "slug": "zheqiushui-laya-omni",
+  "author": "zheqiushui",
+  "url": "https://huggingface.co/zheqiushui/laya-omni",
+  "created_at": "2026-09-26T00:54:30.000Z",
+  "updated_at": "2026-09-26T00:58:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "laya-omni",
+  "languages": [
+    "multilingual",
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "laya-omni",
+    "safetensors",
+    "laya",
+    "decision-model",
+    "multimodal",
+    "audio",
+    "vision",
+    "any-to-any",
+    "multilingual",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-ASR-0.6B",
+    "base_model:finetune:Qwen/Qwen3-ASR-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 401124816,
+  "storage_human": "401 MB",
+  "base_model": "convaiinnovations/laya-multilingual, google/siglip2-base-patch16-256, Qwen/Qwen3-ASR-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/",
+      "snippet": "1 day ago · Home xnxx - Free Porn - Sex Stories - Porn Videos - Live Cams Home Search Forums Social Groups Rules FAQ / Help …"
+    },
+    {
+      "title": "Sex Stories | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/sex-stories.6/",
+      "snippet": "Sep 2, 2026 · Anything related to texts and xnxx stories. Big Changes Are Coming to the Forum! We’ve got some exciting news to …"
+    },
+    {
+      "title": "Advertiser-friendly content guidelines - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/6162278?hl=en-GB",
+      "snippet": "This article aims to help you understand which individual videos or Shorts on your channel are suitable for advertisers. Creators can …"
+    },
+    {
+      "title": "Richtlinien zu illegalen oder gesetzlichen Beschränkungen ...",
+      "url": "https://support.google.com/youtube/answer/9229611?hl=de",
+      "snippet": "Inhalte, die dazu dienen, gesetzlichen Beschränkungen unterliegende Waren und Dienstleistungen zu verkaufen, sind auf YouTube …"
+    },
+    {
+      "title": "Forced Anal Exams Humiliate, Violate Victims - Human Rights Watch",
+      "url": "https://www.hrw.org/video-photos/video/2016/07/12/forced-anal-exams-humiliate-violate-victims",
+      "snippet": "Jul 12, 2016 · Countries around the world should ban the practice of conducting forced anal examinations on men and transgender …"
+    }
+  ]
+}

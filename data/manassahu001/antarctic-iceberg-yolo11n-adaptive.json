@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ManasSahu001/antarctic-iceberg-yolo11n-adaptive",
+  "slug": "manassahu001-antarctic-iceberg-yolo11n-adaptive",
+  "author": "ManasSahu001",
+  "url": "https://huggingface.co/ManasSahu001/antarctic-iceberg-yolo11n-adaptive",
+  "created_at": "2026-09-25T22:59:42.000Z",
+  "updated_at": "2026-09-25T23:02:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "antarctica",
+    "iceberg-detection",
+    "remote-sensing",
+    "sar",
+    "sentinel-1",
+    "yolo11",
+    "object-detection",
+    "maritime-safety",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5556250,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Dream Act: An Overview - American Immigration Council",
+      "url": "https://www.americanimmigrationcouncil.org/fact-sheet/dream-act-overview/",
+      "snippet": "Aug 28, 2026 · This fact sheet provides an overview of the most recent version of the Dream Act and similar legislative proposals.Read more"
+    },
+    {
+      "title": "DACA/DAPA - American Immigration Council",
+      "url": "https://www.americanimmigrationcouncil.org/about-immigration/daca-dapa/",
+      "snippet": "Aug 28, 2026 · Deferred Action for Childhood Arrivals (DACA) and Deferred Action for Parents of Americans and Lawful Permanent …"
+    },
+    {
+      "title": "Defending DAPA and Expanded DACA Before the Supreme Court",
+      "url": "https://www.americanimmigrationcouncil.org/report/defending-dapa-and-expanded-daca-supreme-court/",
+      "snippet": "Apr 11, 2016 · The Court dismisses the case for lack of standing. Putting aside whether expanded DACA and DAPA violate the law, …"
+    },
+    {
+      "title": "A Guide to the Immigration Accountability Executive Action",
+      "url": "https://www.americanimmigrationcouncil.org/report/guide-immigration-accountability-executive-action/",
+      "snippet": "On November 20 and 21, 2014, President Obama announced his “immigration accountability executive action,” which includes a …"
+    },
+    {
+      "title": "DACA Termination Affects Thousands on a Daily Basis",
+      "url": "https://www.americanimmigrationcouncil.org/blog/daca-termination-affects-thousands-on-daily/",
+      "snippet": "Nov 14, 2017 · In the months following the government’s decision to terminate DACA, thousands of immigrants have already lost …"
+    }
+  ]
+}

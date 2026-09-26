@@ -5,7 +5,7 @@
   "author": "Scra9",
   "url": "https://huggingface.co/Scra9/BIBLEBOT",
   "created_at": "2026-09-23T01:51:44.000Z",
-  "updated_at": "2026-09-23T16:32:30.000Z",
+  "updated_at": "2026-09-26T00:39:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 24,
+  "downloads_30d": 25,
   "trending_score": 0,
-  "parameters": 4326350848,
-  "parameters_human": "4.33B",
-  "storage_bytes": 3525815005,
-  "storage_human": "3.5 GB",
+  "parameters": 1711378432,
+  "parameters_human": "1.71B",
+  "storage_bytes": 5567472925,
+  "storage_human": "5.6 GB",
   "base_model": null,
   "formats": [
     "gguf"

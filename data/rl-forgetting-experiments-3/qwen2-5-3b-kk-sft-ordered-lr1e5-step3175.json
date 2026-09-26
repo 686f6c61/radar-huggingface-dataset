@@ -5,7 +5,7 @@
   "author": "RL-Forgetting-Experiments-3",
   "url": "https://huggingface.co/RL-Forgetting-Experiments-3/qwen2.5-3b-kk-sft-ordered-lr1e5-step3175",
   "created_at": "2026-09-22T14:49:56.000Z",
-  "updated_at": "2026-09-22T14:53:21.000Z",
+  "updated_at": "2026-09-25T05:58:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",
-  "storage_bytes": 12355225928,
-  "storage_human": "12.4 GB",
+  "storage_bytes": 123449462216,
+  "storage_human": "123.4 GB",
   "base_model": "Qwen/Qwen2.5-3B",
   "formats": [
     "safetensors"

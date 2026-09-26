@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "leoliu49/smolvla-grasp-p1h-clean-notactile-n10-s1",
+  "slug": "leoliu49-smolvla-grasp-p1h-clean-notactile-n10-s1",
+  "author": "leoliu49",
+  "url": "https://huggingface.co/leoliu49/smolvla-grasp-p1h-clean-notactile-n10-s1",
+  "created_at": "2026-09-25T22:42:35.000Z",
+  "updated_at": "2026-09-25T22:42:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:leoliu49/grasp_p1h_clean",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720072,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forums - GTAW France",
+      "url": "https://forum-fr.gta.world/",
+      "snippet": "Cette partie est destinée à être progressivement déplacées vers les guides."
+    },
+    {
+      "title": "Archives - GTAW France",
+      "url": "https://forum-fr.gta.world/forum/44-archives/",
+      "snippet": "Par streetgeneral., le 19 décembre 2024 Grape Street WVG (et 1 en plus)"
+    },
+    {
+      "title": "Groovin Hunnid Boys - Factions illégales - GTAW France",
+      "url": "https://forum-fr.gta.world/topic/28709-groovin-hunnid-boys/",
+      "snippet": "Aug 26, 2026 · 25/10/2006 - 19/07/2026, Mort de Yung Soulja aKa YS, Baby Grinch Alors que Jerome Rincon sortait du parking du …"
+    },
+    {
+      "title": "Ouverture de l'UCP : https://ucp-fr.gta.world/ - GTAW France",
+      "url": "https://forum-fr.gta.world/topic/383-ouverture-de-lucp-httpsucp-frgtaworld/",
+      "snippet": "Feb 19, 2021 · L'UCP est maintenant ouvert sur https://ucp-fr.gta.world/ Ce dernier vous donnera la possibilité de créer votre compte …"
+    },
+    {
+      "title": "Baboon's Workshop | GRAPHIQUES | SONS - GTAW France",
+      "url": "https://forum-fr.gta.world/topic/4740-baboons-workshop-graphiques-sons-skins-et-plus-traduction-fr/",
+      "snippet": "Jun 1, 2021 · Vous pouvez aider Baboon sur Patreon ou rejoindre le serveur Discord si vous avez besoin d'aide. À savoir que tout …"
+    }
+  ]
+}

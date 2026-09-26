@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "AIArchiveInfo/DeepSeek-OCR-2",
+  "slug": "aiarchiveinfo-deepseek-ocr-2",
+  "author": "AIArchiveInfo",
+  "url": "https://huggingface.co/AIArchiveInfo/DeepSeek-OCR-2",
+  "created_at": "2026-09-25T18:34:27.000Z",
+  "updated_at": "2026-09-25T18:34:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_vl_v2",
+    "feature-extraction",
+    "deepseek",
+    "vision-language",
+    "ocr",
+    "custom_code",
+    "image-text-to-text",
+    "multilingual",
+    "arxiv:2601.20552",
+    "arxiv:2510.18234",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3389119360,
+  "parameters_human": "3.39B",
+  "storage_bytes": 6778714676,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

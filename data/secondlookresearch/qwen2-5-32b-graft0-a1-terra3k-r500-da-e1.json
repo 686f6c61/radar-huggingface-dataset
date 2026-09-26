@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "SecondLookResearch/Qwen2.5-32B-graft0-a1-terra3k-r500-da-e1",
+  "slug": "secondlookresearch-qwen2-5-32b-graft0-a1-terra3k-r500-da-e1",
+  "author": "SecondLookResearch",
+  "url": "https://huggingface.co/SecondLookResearch/Qwen2.5-32B-graft0-a1-terra3k-r500-da-e1",
+  "created_at": "2026-09-26T01:01:31.000Z",
+  "updated_at": "2026-09-26T01:01:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:Qwen/Qwen2.5-32B",
+    "base_model:adapter:Qwen/Qwen2.5-32B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2159054445,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen2.5-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

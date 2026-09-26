@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "swadeshb/g3-1b-hiper",
+  "slug": "swadeshb-g3-1b-hiper",
+  "author": "swadeshb",
+  "url": "https://huggingface.co/swadeshb/g3-1b-hiper",
+  "created_at": "2026-09-25T23:01:39.000Z",
+  "updated_at": "2026-09-25T23:01:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "math",
+    "hierarchical-reasoning",
+    "dataset:sxiong/MLR_structured_trajectory",
+    "base_model:google/gemma-3-1b-pt",
+    "base_model:adapter:google/gemma-3-1b-pt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45345496,
+  "storage_human": "45 MB",
+  "base_model": "google/gemma-3-1b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "swadeshb/g3-1b-flat · Hugging Face",
+      "url": "https://huggingface.co/swadeshb/g3-1b-flat",
+      "snippet": "Instructions to use swadeshb/g3-1b-flat with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use swadeshb/g3-1b-flat with PEFT:"
+    },
+    {
+      "title": "swadeshb (Swadesh B) - Hugging Face",
+      "url": "https://huggingface.co/swadeshb/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 11 minutes ago ... updated a model about 11 hours ago"
+    },
+    {
+      "title": "HiPER: Hierarchical Reinforcement Learning with Explicit Credit ...",
+      "url": "https://arxiv.org/abs/2602.16165v1",
+      "snippet": "Training LLMs as interactive agents for multi-turn decision-making remains challenging, particularly in long-horizon tasks with sparse and delayed rewards, where agents must execute extended sequences of actions before receiving meaningful feedback. Most existing reinforcement learning (RL) approaches model LLM agents as flat policies operating at a single time scale, selecting one action at ..."
+    },
+    {
+      "title": "Swadesh by Chat360 — Indian language AI for government and enterprise",
+      "url": "https://swadeshgpt.com/",
+      "snippet": "Swadesh is Chat360&#x27;s indigenous LLM: one Agentic AI assistant across sixteen Indian languages and their native scripts, on WhatsApp, RCS, Voice, web and email."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 507 AI models across 483 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

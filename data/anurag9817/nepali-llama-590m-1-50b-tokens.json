@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Anurag9817/nepali-llama-590m-1.50b-tokens",
+  "slug": "anurag9817-nepali-llama-590m-1-50b-tokens",
+  "author": "Anurag9817",
+  "url": "https://huggingface.co/Anurag9817/nepali-llama-590m-1.50b-tokens",
+  "created_at": "2026-09-25T20:50:47.000Z",
+  "updated_at": "2026-09-25T20:52:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 590077440,
+  "parameters_human": "590.1M",
+  "storage_bytes": 2361272336,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

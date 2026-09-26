@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Kotsarelos/Casual-Snapshot-Realism",
+  "slug": "kotsarelos-casual-snapshot-realism",
+  "author": "Kotsarelos",
+  "url": "https://huggingface.co/Kotsarelos/Casual-Snapshot-Realism",
+  "created_at": "2026-09-25T18:19:53.000Z",
+  "updated_at": "2026-09-25T18:41:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 628751320,
+  "storage_human": "629 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "InThinking",
+      "url": "https://inthinking.net/",
+      "snippet": "InThinking supports international schools with high quality professional development & interactive subject sites"
+    },
+    {
+      "title": "Krea2 RAW - Casual Snapshot Realism - krea2 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.red/models/2790570/krea2-raw-casual-snapshot-realism?modelVersionId=3144693",
+      "snippet": "Tired of the plastic, airbrushed, and overly stylized \"perfect AI\" look? This LoRA is designed specifically to inject authentic, casual smartphone photography characteristics into your generations. Trained natively on the Krea-2 RAW base model using high-resolution, naturally captioned amateur snapshots, it perfectly captures the micro-textures and beautiful imperfections of everyday phone ..."
+    },
+    {
+      "title": "Log in to the wiki - inthinking.net",
+      "url": "https://inthinking.net/login",
+      "snippet": "InThinking supports international schools with high quality professional development & interactive subject sites"
+    },
+    {
+      "title": "Krea2 RAW - Casual Snapshot Realism - V1 | TensorHub Art",
+      "url": "https://tensorhub.art/models/1023135750406799605",
+      "snippet": "Tired of the plastic, airbrushed, and overly stylized \"perfect AI\" look? This LoRA is designed specifically to inject authentic, casual smartphone photography characteristics into your generations. Trained natively on the Krea-2 RAW base model using high-resolution, naturally captioned amateur snapshots, it perfectly captures the micro-textures and beautiful imperfections of everyday phone ..."
+    },
+    {
+      "title": "Log in | InThinking",
+      "url": "https://student.thinkigcse.net/login",
+      "snippet": "InThinking IB Subject Sites offer a comprehensive range of resources for new & experienced IBDP & IGCSE teachers. Each site – …"
+    }
+  ]
+}

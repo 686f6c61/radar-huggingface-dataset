@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/anime-girl-1.5B-i1-GGUF",
+  "slug": "mradermacher-anime-girl-1-5b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/anime-girl-1.5B-i1-GGUF",
+  "created_at": "2026-09-25T18:24:58.000Z",
+  "updated_at": "2026-09-25T19:50:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:coderian/anime-girl-1.5B",
+    "base_model:quantized:coderian/anime-girl-1.5B",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 19059879136,
+  "storage_human": "19.1 GB",
+  "base_model": "coderian/anime-girl-1.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

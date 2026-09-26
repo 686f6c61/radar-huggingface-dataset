@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SimpleTuner/Qwen-Image-2.1-training-assistant-v2",
+  "slug": "simpletuner-qwen-image-2-1-training-assistant-v2",
+  "author": "SimpleTuner",
+  "url": "https://huggingface.co/SimpleTuner/Qwen-Image-2.1-training-assistant-v2",
+  "created_at": "2026-09-25T21:13:20.000Z",
+  "updated_at": "2026-09-25T21:32:23.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "simpletuner",
+    "training-assistant",
+    "qwen-image",
+    "experimental",
+    "text-to-image",
+    "dataset:webshart/qwen-image-2.1-generated-images",
+    "dataset:webshart/cc12m-structured-captions",
+    "dataset:webshart/e621-2024-webp-4Mpixel-webshart-indices",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67144256,
+  "storage_human": "67 MB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QWEN IMAGE - SimpleTuner",
+      "url": "http://docs.simpletuner.io/quickstart/QWEN_IMAGE/",
+      "snippet": "When training on 24G, validations will run out of memory unless you use lower resolution or aggressive quant level beyond int8. Hardware requirements Qwen Image is a 20B parameter model with a sophisticated text encoder that alone consumes ~16GB VRAM before quantization. The model uses a custom VAE with 16 latent channels."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen&#x27;s most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
+    },
+    {
+      "title": "Adapter Models for Qwen/Qwen-Image-2.1 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:adapter:Qwen%2FQwen-Image-2.1&p=1&sort=trending",
+      "snippet": "Active filters: Qwen/Qwen-Image-2.1. Clear all. SimpleTuner/Qwen-Image-2.1-training-assistant-v1. Text-to-Image • Updated 1 day ago"
+    },
+    {
+      "title": "Qwen-Image-2.1 - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen-Image-2.1 - a Hugging Face Space by Qwen",
+      "url": "https://huggingface.co/spaces/Qwen/Qwen-Image-2.1",
+      "snippet": "Qwen Image 2.1 Demo Generate from text without an input image, or upload 1-10 images to edit or combine them. Refer to images by their upload order in your prompt. Prompt enhancement is enabled by default. Turn it off to use your original prompt directly. Expand an example to read its full prompt, then click its button to fill the input."
+    }
+  ]
+}

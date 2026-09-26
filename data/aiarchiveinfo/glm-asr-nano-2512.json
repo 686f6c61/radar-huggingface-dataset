@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "AIArchiveInfo/GLM-ASR-Nano-2512",
+  "slug": "aiarchiveinfo-glm-asr-nano-2512",
+  "author": "AIArchiveInfo",
+  "url": "https://huggingface.co/AIArchiveInfo/GLM-ASR-Nano-2512",
+  "created_at": "2026-09-25T18:20:00.000Z",
+  "updated_at": "2026-09-25T18:20:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glmasr",
+    "text2text-generation",
+    "automatic-speech-recognition",
+    "en",
+    "zh",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2257843200,
+  "parameters_human": "2.26B",
+  "storage_bytes": 4515776712,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

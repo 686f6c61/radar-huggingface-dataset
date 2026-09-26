@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RodrigoBrasil2024/laya-concessionaria-pt",
+  "slug": "rodrigobrasil2024-laya-concessionaria-pt",
+  "author": "RodrigoBrasil2024",
+  "url": "https://huggingface.co/RodrigoBrasil2024/laya-concessionaria-pt",
+  "created_at": "2026-09-25T19:57:49.000Z",
+  "updated_at": "2026-09-26T00:33:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laya",
+    "system-one",
+    "calibrated-decisions",
+    "rlcd",
+    "structured-decisions",
+    "pt-br",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 2609705284,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Concessionaria Decision Suite",
+      "dataset": "dataset_concessionaria",
+      "metric": null,
+      "value": 0.9935
+    },
+    {
+      "task": "Concessionaria Decision Suite",
+      "dataset": "dataset_concessionaria",
+      "metric": null,
+      "value": 0.0118
+    }
+  ],
+  "sources": []
+}

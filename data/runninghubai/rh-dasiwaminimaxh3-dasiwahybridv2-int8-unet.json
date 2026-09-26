@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-dasiwaminimaxh3-dasiwahybridv2-int8-unet",
+  "slug": "runninghubai-rh-dasiwaminimaxh3-dasiwahybridv2-int8-unet",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-dasiwaminimaxh3-dasiwahybridv2-int8-unet",
+  "created_at": "2026-09-25T23:12:22.000Z",
+  "updated_at": "2026-09-25T23:18:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "text-to-video",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20967729678,
+  "storage_human": "21.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-dasiwaminimaxh3-dasiwaref2vahybridv1.0-unet · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-dasiwaminimaxh3-dasiwaref2vahybridv1.0-unet",
+      "snippet": "This repository provides rh-dasiwaminimaxh3-dasiwaref2vahybridv1.-unet weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "DasiwaMinimaxH3_dasiwaREF2VAHybridV1_0 - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/2091226971014512642",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "⛩️ DaSiWa MiniMax H3 ⛩️V2 - RunningHub Stable Diffusion & Flux Unet",
+      "url": "https://www.runninghub.ai/model/public/2098431664417447937",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI (RunningHub.ai) - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI",
+      "snippet": "One API Powering All-Modal AI Productivity. Recent Activity. updated a model about 1 hour ago. RunningHubAI/rh-minimax-h3-fl2v-turbo-4step-v1.-768p-comfyui-bf16 ..."
+    },
+    {
+      "title": "DaSiWa Minimax H3 Hybird v1 int8 convrot - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/2091205588368834561",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    }
+  ]
+}

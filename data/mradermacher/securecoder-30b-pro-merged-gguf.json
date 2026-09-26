@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/securecoder-30b-pro-merged-GGUF",
+  "slug": "mradermacher-securecoder-30b-pro-merged-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/securecoder-30b-pro-merged-GGUF",
+  "created_at": "2026-09-25T21:20:25.000Z",
+  "updated_at": "2026-09-25T23:56:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "safetensors",
+    "qwen3",
+    "code",
+    "tool-calling",
+    "security",
+    "moe",
+    "en",
+    "base_model:Taimwe/securecoder-30b-pro-merged",
+    "base_model:quantized:Taimwe/securecoder-30b-pro-merged",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 208115968192,
+  "storage_human": "208.1 GB",
+  "base_model": "Taimwe/securecoder-30b-pro-merged",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/RakshakAI-SecureCoder-7B-v1-merged-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/RakshakAI-SecureCoder-7B-v1-merged-GGUF",
+      "snippet": "Instructions to use mradermacher/RakshakAI-SecureCoder-7B-v1-merged-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Taimwe/securecoder-30b-pro-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Taimwe/securecoder-30b-pro-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 29 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Open LLM Distribution Leaderboard",
+      "url": "https://osolmaz-leaderboard.hf.space/",
+      "snippet": "What counts Public Hugging Face model repos above the minimum download threshold are scanned, then filtered for LLM-ish text, coding, multimodal, and special architecture signals. Models Related repos are grouped by normalized model name and explicit base-model metadata when available. The main row uses the most-downloaded repo in that group."
+    }
+  ]
+}

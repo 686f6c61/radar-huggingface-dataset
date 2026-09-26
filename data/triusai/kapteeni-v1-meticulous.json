@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "TriusAI/kapteeni-v1-meticulous",
+  "slug": "triusai-kapteeni-v1-meticulous",
+  "author": "TriusAI",
+  "url": "https://huggingface.co/TriusAI/kapteeni-v1-meticulous",
+  "created_at": "2026-09-25T23:13:41.000Z",
+  "updated_at": "2026-09-26T01:22:13.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "decision-model",
+    "structured-decisions",
+    "calibration",
+    "probability-estimation",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:cc-by-sa-4.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8087887638,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Free AI 3D Model Generators in 2026 (Tested and Compared)",
+      "url": "https://www.3daistudio.com/blog/best-free-ai-3d-model-generators-2026",
+      "snippet": "The best free AI 3D model generators in 2026, compared on free credits, commercial use, export formats, and quality. Generate 3D models from text or images at no cost."
+    },
+    {
+      "title": "PixAI Model Market | 1.8M+ AI Art Models and LoRAs",
+      "url": "https://pixai.art/en/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.8M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    },
+    {
+      "title": "Jev AI Model (TypeSafe) — Typed System One Decisions",
+      "url": "https://jevmodel.org/",
+      "snippet": "Jev is TypeSafe AI&#x27;s System One model: it returns a choice, score, or yes/no probability instead of chat. The hosted API is open as of 21 September 2026. $0.042 per 1M input tokens, output free."
+    },
+    {
+      "title": "AI 3D Model Generators — Top Tools Compared (2026) | 3DLinks",
+      "url": "https://3dlinks.com/ai-3d-model-generators",
+      "snippet": "Best AI 3D Model Generators in 2026 AI 3D model generators turn text prompts and reference images into fully textured 3D meshes in seconds. Whether you need game assets, product mockups, concept art, or 3D printing prototypes, these tools let you skip hours of manual modeling. We compared 8 leading AI 3D generators on quality, speed, pricing, and output formats."
+    }
+  ]
+}

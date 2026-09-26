@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Thox-ai/thox-micro-125m-instruct",
+  "slug": "thox-ai-thox-micro-125m-instruct",
+  "author": "Thox-ai",
+  "url": "https://huggingface.co/Thox-ai/thox-micro-125m-instruct",
+  "created_at": "2026-09-25T22:59:52.000Z",
+  "updated_at": "2026-09-25T23:23:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "thox",
+    "thox-ai",
+    "on-device",
+    "edge",
+    "chatml",
+    "sft",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceTB/smoltalk",
+    "base_model:Thox-ai/thox-micro-125m",
+    "base_model:finetune:Thox-ai/thox-micro-125m",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123587328,
+  "parameters_human": "123.6M",
+  "storage_bytes": 494361544,
+  "storage_human": "494 MB",
+  "base_model": "Thox-ai/thox-micro-125m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MeidasTouch - YouTube",
+      "url": "https://www.youtube.com/c/MeidasTouch/videos",
+      "snippet": "We cover breaking news, politics, law and more. We are unapologetically pro-democracy."
+    },
+    {
+      "title": "The MeidasTouch Podcast - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PL36GQAccexbwFPOGmbf5pFE32VmyC7ui3",
+      "snippet": "The MeidasTouch Podcast combines brotherly love, comedy, news coverage, and deep discussions about supporting our …"
+    },
+    {
+      "title": "Meidas Touch - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PL0INLCquzqva9JyLbnKCqvE6mAH3qf6hq",
+      "snippet": "GOP’s CLOSED-DOOR Trump Revolt Just LEAKED..."
+    },
+    {
+      "title": "Uploads from MeidasTouch - YouTube",
+      "url": "https://www.youtube.com/playlist?list=UU9r9HYFxEQOBXSopFS61ZWg",
+      "snippet": "🚨Trump Has 12AM MELTDOWN After UN DEBACLE… Former Squadron Commander Just GAVE Hegseth a BRUTAL WARNING..."
+    },
+    {
+      "title": "MeidasTouch News",
+      "url": "https://meidasnews.com/",
+      "snippet": "Sign up for the Meidas+ Substack to get the latest unapologetically pro-democracy updates delivered straight to your inbox! The …"
+    }
+  ]
+}

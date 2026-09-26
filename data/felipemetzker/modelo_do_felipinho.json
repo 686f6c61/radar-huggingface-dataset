@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "FelipeMetzker/modelo_do_felipinho",
+  "slug": "felipemetzker-modelo_do_felipinho",
+  "author": "FelipeMetzker",
+  "url": "https://huggingface.co/FelipeMetzker/modelo_do_felipinho",
+  "created_at": "2026-09-25T21:42:00.000Z",
+  "updated_at": "2026-09-25T21:42:00.000Z",
+  "license": "llama4",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Felipinho (@felipinhoms) • Instagram photos and videos",
+      "url": "https://www.instagram.com/felipinhoms/",
+      "snippet": "1M Followers, 878 Following, 16 Posts - Felipinho (@felipinhoms) on Instagram: \"BAIXADA SANTISTA 🏖️ofelipinho.contato@gmail.com - 📩 Jó 8:7 ️📚\""
+    },
+    {
+      "title": "Felipe Metzker (@metzkerfelipe) • Instagram photos and videos",
+      "url": "https://www.instagram.com/metzkerfelipe/",
+      "snippet": "6,059 Followers, 4,244 Following, 101 Posts - Felipe Metzker (@metzkerfelipe) on Instagram: \"💻 Empresário Aluguel de Betoneiras Prime Fit Studio 💪🏽 Transporte escolar 🚐 COMPRA E VENDA DE OURO. 🎤 Produtor de evento 🔐 5km, 🔐 6km 🔐 10km 🔐 16km\""
+    },
+    {
+      "title": "Felipe Metzker (@felipe.metzker.31) • Instagram photos and videos",
+      "url": "https://www.instagram.com/felipe.metzker.31/",
+      "snippet": "1,377 Followers, 3,798 Following, 69 Posts - Felipe Metzker (@felipe.metzker.31) on Instagram: \"🎺 | Trompetista | Arranjador 🎧 | Produção musical ️ ..."
+    },
+    {
+      "title": "Felipe / modelo (@filipi2256) • Instagram photos and videos",
+      "url": "https://www.instagram.com/filipi2256/",
+      "snippet": "22K Followers, 7,889 Following, 479 Posts - Felipe / modelo (@filipi2256) on Instagram: \" ️🔒 Modelo fotográfico 📸 Empresário 💼 Telefone para contato ⬇️⬇️\""
+    },
+    {
+      "title": "Felipe Pinho (@o_felipinho) • Instagram photos and videos",
+      "url": "https://www.instagram.com/o_felipinho/",
+      "snippet": "1,378 Followers, 1,386 Following, 69 Posts - Felipe Pinho (@o_felipinho) on Instagram: \"23y @sitio_do_pinho 💍 🛩🇧🇷🇵🇹🇬🇧🇫🇷🇳🇱🇪🇸\""
+    }
+  ]
+}

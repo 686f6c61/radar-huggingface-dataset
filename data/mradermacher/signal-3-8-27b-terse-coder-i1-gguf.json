@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Signal-3.8-27B-Terse-Coder-i1-GGUF",
   "created_at": "2026-09-25T12:15:05.000Z",
-  "updated_at": "2026-09-25T12:45:25.000Z",
+  "updated_at": "2026-09-25T19:34:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39471868480,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 218553883392,
+  "storage_human": "218.6 GB",
   "base_model": "vwdubb/Signal-3.8-27B-Terse-Coder",
   "formats": [
     "gguf"

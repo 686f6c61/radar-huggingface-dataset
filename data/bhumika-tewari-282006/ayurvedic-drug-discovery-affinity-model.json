@@ -5,7 +5,7 @@
   "author": "bhumika-tewari-282006",
   "url": "https://huggingface.co/bhumika-tewari-282006/ayurvedic-drug-discovery-affinity-model",
   "created_at": "2026-09-22T11:35:44.000Z",
-  "updated_at": "2026-09-22T11:36:46.000Z",
+  "updated_at": "2026-09-25T05:41:23.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -18,6 +18,7 @@
     "binding-affinity",
     "ayurveda",
     "random-forest",
+    "dataset:bhumika-tewari-282006/ayurvedic-affinity-training-data",
     "license:mit",
     "region:us"
   ],

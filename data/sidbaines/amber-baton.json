@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sidbaines/amber-baton",
+  "slug": "sidbaines-amber-baton",
+  "author": "sidbaines",
+  "url": "https://huggingface.co/sidbaines/amber-baton",
+  "created_at": "2026-09-25T23:06:06.000Z",
+  "updated_at": "2026-09-25T23:08:48.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 933974032,
+  "storage_human": "934 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sid Baines - catalyzex.com",
+      "url": "https://www.catalyzex.com/author/Sid%20Baines",
+      "snippet": "We find that midtraining can steer the model&#x27;s motivation in simple versions of this setting. However, the presence of a tiny fraction of finetuning data which suggests a competing motivation erases the effects of AMT. We also study scenarios in which we want an AI to follow a number of rules, but only demonstrate a subset of them."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "Sid Baines",
+      "url": "https://sidbaines.github.io/",
+      "snippet": "Hi, I&#x27;m Sid Sometimes you&#x27;ll see me referred to as Luke — that&#x27;s still me!, a technical AI safety researcher in the Arcadia Impact Alignment team, working with some of the UK AISI team. Currently I am studying AI model motivations — why do current AIs behave the way they do, how might they start behaving badly, and how can we make sure they ..."
+    },
+    {
+      "title": "sidbaines (Sid Baines) - Hugging Face",
+      "url": "https://huggingface.co/sidbaines",
+      "snippet": "sidbaines/scimt-prior-coins-dispatch-sdf-aft-v1-data Updated 6 days ago•214"
+    },
+    {
+      "title": "AI Models Benchmark",
+      "url": "https://aimodelsbenchmark.com/",
+      "snippet": "Pick the right LLM in under a minute. 398 models ranked by GPQA, AIME 2025, SWE-bench Verified, HLE, input/output price per million tokens, context window and license. Updated 2026-09-23."
+    }
+  ]
+}

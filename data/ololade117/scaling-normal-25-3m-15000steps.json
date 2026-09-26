@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Ololade117/scaling-normal-25.3M-15000steps",
+  "slug": "ololade117-scaling-normal-25-3m-15000steps",
+  "author": "Ololade117",
+  "url": "https://huggingface.co/Ololade117/scaling-normal-25.3M-15000steps",
+  "created_at": "2026-09-25T22:45:27.000Z",
+  "updated_at": "2026-09-25T22:45:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25274624,
+  "parameters_human": "25.3M",
+  "storage_bytes": 101103312,
+  "storage_human": "101 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

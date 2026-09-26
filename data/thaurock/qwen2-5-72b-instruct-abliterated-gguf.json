@@ -5,7 +5,7 @@
   "author": "Thaurock",
   "url": "https://huggingface.co/Thaurock/Qwen2.5-72B-Instruct-abliterated-GGUF",
   "created_at": "2026-09-18T19:40:52.000Z",
-  "updated_at": "2026-09-25T00:34:19.000Z",
+  "updated_at": "2026-09-25T16:05:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 519,
+  "downloads_30d": 554,
   "trending_score": 0,
   "parameters": 72706203648,
   "parameters_human": "72.71B",

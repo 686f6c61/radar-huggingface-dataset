@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "alexg0405/pagoda-default",
+  "slug": "alexg0405-pagoda-default",
+  "author": "alexg0405",
+  "url": "https://huggingface.co/alexg0405/pagoda-default",
+  "created_at": "2026-09-25T20:46:31.000Z",
+  "updated_at": "2026-09-25T20:48:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "code",
+    "pagoda",
+    "abliterated",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 7558412261,
+  "storage_human": "7.6 GB",
+  "base_model": "Pagoda-V.0",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

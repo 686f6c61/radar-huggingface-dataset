@@ -5,7 +5,7 @@
   "author": "trymirai",
   "url": "https://huggingface.co/trymirai/Qwen3.8-27B-S-experimental",
   "created_at": "2026-09-22T14:57:01.000Z",
-  "updated_at": "2026-09-24T11:14:35.000Z",
+  "updated_at": "2026-09-25T12:34:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,13 +25,13 @@
     "8-bit",
     "region:us"
   ],
-  "likes": 18,
+  "likes": 21,
   "downloads_30d": 52,
-  "trending_score": 18,
+  "trending_score": 21,
   "parameters": 8313376355,
   "parameters_human": "8.31B",
-  "storage_bytes": 29930480523,
-  "storage_human": "29.9 GB",
+  "storage_bytes": 29971197499,
+  "storage_human": "30.0 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

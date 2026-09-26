@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mvsakrishna/abhi-coder-14b",
+  "slug": "mvsakrishna-abhi-coder-14b",
+  "author": "mvsakrishna",
+  "url": "https://huggingface.co/mvsakrishna/abhi-coder-14b",
+  "created_at": "2026-09-25T23:37:46.000Z",
+  "updated_at": "2026-09-25T23:37:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-Coder-14B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-Coder-14B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11422356,
+  "storage_human": "11 MB",
+  "base_model": "unsloth/Qwen2.5-Coder-14B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepCoder: A Fully Open-Source 14B Coder at O3-mini Level - together.ai",
+      "url": "https://www.together.ai/blog/deepcoder",
+      "snippet": "DeepCoder-14B-Preview is an open-source 14B code reasoning model trained via reinforcement learning, matching o3-mini&#x27;s performance on LiveCodeBench."
+    },
+    {
+      "title": "mvsakrishna (Abhi) - Hugging Face",
+      "url": "https://huggingface.co/mvsakrishna",
+      "snippet": "User profile of Abhi on Hugging Face"
+    },
+    {
+      "title": "deepcoder:14b - ollama.com",
+      "url": "https://ollama.com/library/deepcoder:14b",
+      "snippet": "Through a joint collaboration between the Agentica team and Together AI, DeepCoder-14B-Preview is a code reasoning model finetuned from Deepseek-R1-Distilled-Qwen-14B via distributed RL."
+    },
+    {
+      "title": "DeepCoder: A Fully Open-Source 14B Coder at O3-mini Level",
+      "url": "https://cafeai.home.blog/2025/04/09/deepcoder-a-fully-open-source-14b-coder-at-o3-mini-level/",
+      "snippet": "Through a joint collaboration between the Agentica team and Together AI, we release DeepCoder-14B-Preview, a code reasoning model finetuned from Deepseek-R1-Distilled-Qwen-14B via distributed RL. It achieves an impressive 60.6% Pass@1 accuracy on LiveCodeBench (+8% improvement), matching the performance of o3-mini-2025-01-031 (Low) and o1-2024-12-17 with just 14B parameters. We&#x27;ve open ..."
+    },
+    {
+      "title": "agentica-org/DeepCoder-14B-Preview · Hugging Face",
+      "url": "https://huggingface.co/agentica-org/DeepCoder-14B-Preview",
+      "snippet": "DeepCoder-14B-Preview is a code reasoning LLM fine-tuned from DeepSeek-R1-Distilled-Qwen-14B using distributed reinforcement learning (RL) to scale up to long context lengths."
+    }
+  ]
+}

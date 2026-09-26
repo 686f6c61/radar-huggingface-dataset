@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "id": "frontier-infra/jebadiah-4b-v2",
+  "slug": "frontier-infra-jebadiah-4b-v2",
+  "author": "frontier-infra",
+  "url": "https://huggingface.co/frontier-infra/jebadiah-4b-v2",
+  "created_at": "2026-09-25T15:18:43.000Z",
+  "updated_at": "2026-09-26T00:38:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "decision-model",
+    "system-one",
+    "calibrated-probabilities",
+    "typed-decisions",
+    "ainode",
+    "merged-lora",
+    "conversational",
+    "en",
+    "dataset:LocalLLaMA/typed-decisions",
+    "dataset:nvidia/HelpSteer2",
+    "dataset:mteb/summeval",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9335208130,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Jevals suite 0.1.0, PubMedQA (noul)",
+      "metric": null,
+      "value": 88.7
+    },
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Jevals suite 0.1.0, PubMedQA (noul)",
+      "metric": null,
+      "value": 61.8
+    },
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Jevals suite 0.1.0, Banking77 (choice, 77-way)",
+      "metric": null,
+      "value": 70
+    },
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Jevals suite 0.1.0, Banking77 (choice, 77-way)",
+      "metric": null,
+      "value": 57.4
+    },
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Jevals suite 0.1.0, HelpSteer2 helpfulness (score)",
+      "metric": null,
+      "value": 9.3
+    },
+    {
+      "task": "typed decisions (choice, noul, score)",
+      "dataset": "Nimble public human-labelled subsets (13, macro accuracy)",
+      "metric": null,
+      "value": 75.9
+    }
+  ],
+  "sources": [
+    {
+      "title": "Flights & Low-Cost Airline Tickets | Frontier Airlines",
+      "url": "https://www.flyfrontier.com/",
+      "snippet": "Add flexibility to your trip with Disruption Assistance. If your flight is delayed by 2+ hours or canceled on the day of departure, …Read more"
+    },
+    {
+      "title": "Frontier Developments plc. - Endlessly Creative Videogames",
+      "url": "https://www.frontier.co.uk/",
+      "snippet": "Our people Frontier is a place where people can thrive. We strive for the best, fostering a culture of ambition, teamwork, and …Read more"
+    },
+    {
+      "title": "Frontier (série télévisée) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Frontier_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)",
+      "snippet": "Frontier ou Frontières au Québec, est une série télévisée historique américano - canadienne en 18 épisodes d'environ 46 minutes …Read more"
+    },
+    {
+      "title": "Flight Deals | Low-Cost Flights | Frontier Airlines",
+      "url": "https://flights.flyfrontier.com/en/",
+      "snippet": "Explore flight deals and low-cost flights with Frontier Airlines. Find discounted airfares on popular routes and destinations.Read more"
+    },
+    {
+      "title": "Frontier - Série TV 2016 - AlloCiné",
+      "url": "https://www.allocine.fr/series/ficheserie_gen_cserie=19998.html",
+      "snippet": "Découvrez la série TV Frontier de avec Jason Momoa (Declan Harp), Landon Liboiron (Michael Smyth). Au 18e siècle, en Amérique …Read more"
+    }
+  ]
+}

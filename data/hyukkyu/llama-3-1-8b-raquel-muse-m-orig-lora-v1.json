@@ -5,7 +5,7 @@
   "author": "Hyukkyu",
   "url": "https://huggingface.co/Hyukkyu/Llama-3.1-8B-RAQUEL-MUSE-M-orig-LoRA-v1",
   "created_at": "2026-09-23T11:39:43.000Z",
-  "updated_at": "2026-09-23T11:42:47.000Z",
+  "updated_at": "2026-09-25T05:38:59.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -20,7 +20,6 @@
     "text-generation",
     "raquel",
     "muse",
-    "muse-news",
     "lora",
     "merged",
     "machine-unlearning",
@@ -36,12 +35,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 136,
+  "downloads_30d": 140,
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",
-  "storage_bytes": 16748915873,
-  "storage_human": "16.7 GB",
+  "storage_bytes": 33497831577,
+  "storage_human": "33.5 GB",
   "base_model": "meta-llama/Llama-3.1-8B",
   "formats": [
     "safetensors"

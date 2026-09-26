@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/clio-v1-legacy-ONNX",
+  "slug": "liodon-ai-clio-v1-legacy-onnx",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/clio-v1-legacy-ONNX",
+  "created_at": "2026-09-25T21:05:57.000Z",
+  "updated_at": "2026-09-25T22:26:20.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "stablelm",
+    "onnxruntime",
+    "quantized",
+    "text-generation",
+    "base_model:NovelAI/clio-v1-legacy",
+    "base_model:quantized:NovelAI/clio-v1-legacy",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18264408065,
+  "storage_human": "18.3 GB",
+  "base_model": "NovelAI/clio-v1-legacy",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liodon-ai (Liodon AI) - Hugging Face",
+      "url": "https://huggingface.co/liodon-ai",
+      "snippet": "Liodon AI We are an independent U.S.-based research-driven open-source entity dedicated to advancing the frontier of Small Language Models (SLMs) and high-efficiency deep learning infrastructure. Our goal is to democratize highly capable, compact intelligence that can run seamlessly on low-resource settings without sacrificing reasoning ability."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Liodon AI - GitHub",
+      "url": "https://github.com/Liodon-AI",
+      "snippet": "Liodon AI is an open-source R&D collective exploring the intersection of deep learning, agentic systems, and NLP evaluation. Our repositories span: Agentic AI primitives (e.g. torchagentic) — differentiable cognitive building blocks (memory, credit assignment, planning, exploration) designed to be importable by frameworks like LangChain, AutoGen, and CrewAI. LLM evaluation tooling (e.g ..."
+    },
+    {
+      "title": "liodon-ai/gpt-neo-125m-ONNX · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/gpt-neo-125m-ONNX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Home - LioDon AI",
+      "url": "https://liodon.ai/",
+      "snippet": "What we research Liodon is an independent, self-funded applied research lab working on the frontier of open-source foundation model research."
+    }
+  ]
+}

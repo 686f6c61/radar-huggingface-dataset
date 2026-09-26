@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "diffusionstudio/sam2.1-tiny-video-onnx-fp16",
+  "slug": "diffusionstudio-sam2-1-tiny-video-onnx-fp16",
+  "author": "diffusionstudio",
+  "url": "https://huggingface.co/diffusionstudio/sam2.1-tiny-video-onnx-fp16",
+  "created_at": "2026-09-25T23:12:32.000Z",
+  "updated_at": "2026-09-25T23:14:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sam2",
+  "languages": [],
+  "tags": [
+    "sam2",
+    "onnx",
+    "video",
+    "webgpu",
+    "fp16",
+    "base_model:facebook/sam2.1-hiera-tiny",
+    "base_model:quantized:facebook/sam2.1-hiera-tiny",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95228286,
+  "storage_human": "95 MB",
+  "base_model": "facebook/sam2.1-hiera-tiny, square-zero-labs/sam2.1-tiny-video-onnx",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "square-zero-labs/sam2.1-tiny-video-onnx · Hugging Face",
+      "url": "https://huggingface.co/square-zero-labs/sam2.1-tiny-video-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vision_encoder_fp16.onnx · ipsilondev/sam2.1-hiera-tiny-ONNX at main",
+      "url": "https://huggingface.co/ipsilondev/sam2.1-hiera-tiny-ONNX/blob/main/vision_encoder_fp16.onnx",
+      "snippet": "ipsilondev / sam2.1-hiera-tiny-ONNX like 0 ONNX sam2 segment-anything-2 vision Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "Daily-updated list of free AI models (free LLM APIs), ranked by quality with live status. Plus one OpenAI-compatible endpoint that routes to the best one. - ClawLabsAI/free-ai-models"
+    },
+    {
+      "title": "GitHub - facebookresearch/sam2: The repository provides code for ...",
+      "url": "https://github.com/facebookresearch/sam2",
+      "snippet": "The repository provides code for running inference with the Meta Segment Anything Model 2 (SAM 2), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. - facebookresearch/sam2"
+    },
+    {
+      "title": "Diffusion Studio: AI Video Editor for Agents",
+      "url": "https://www.diffusion.studio/",
+      "snippet": "Credits are only used when Diffusion Studio runs AI models for things like understanding footage, transcription, or generating video, images, audio, and speech. Paid plans give you credits for those AI-powered actions, not access to the editor, dapi, skills, or agentic editing workflows. See pricing. Is Diffusion Studio open source? Yes."
+    }
+  ]
+}

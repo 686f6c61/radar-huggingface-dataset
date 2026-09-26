@@ -5,7 +5,7 @@
   "author": "ericmey",
   "url": "https://huggingface.co/ericmey/five-lane-router-modernbert-large",
   "created_at": "2026-09-24T16:10:35.000Z",
-  "updated_at": "2026-09-24T17:14:34.000Z",
+  "updated_at": "2026-09-25T15:50:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": 395836421,
   "parameters_human": "395.8M",

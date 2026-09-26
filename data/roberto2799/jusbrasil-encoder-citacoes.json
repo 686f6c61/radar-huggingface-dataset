@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Roberto2799/jusbrasil-encoder-citacoes",
+  "slug": "roberto2799-jusbrasil-encoder-citacoes",
+  "author": "Roberto2799",
+  "url": "https://huggingface.co/Roberto2799/jusbrasil-encoder-citacoes",
+  "created_at": "2026-09-24T12:32:19.000Z",
+  "updated_at": "2026-09-25T23:26:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "legal",
+    "ner",
+    "citations",
+    "pt",
+    "dataset:Roberto2799/jusbrasil-sintetico-diversificado",
+    "base_model:neuralmind/bert-base-portuguese-cased",
+    "base_model:finetune:neuralmind/bert-base-portuguese-cased",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108336389,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433368868,
+  "storage_human": "433 MB",
+  "base_model": "neuralmind/bert-base-portuguese-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

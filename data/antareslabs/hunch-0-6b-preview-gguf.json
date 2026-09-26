@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "antareslabs/hunch-0.6b-preview-GGUF",
+  "slug": "antareslabs-hunch-0-6b-preview-gguf",
+  "author": "antareslabs",
+  "url": "https://huggingface.co/antareslabs/hunch-0.6b-preview-GGUF",
+  "created_at": "2026-09-25T20:06:52.000Z",
+  "updated_at": "2026-09-25T20:07:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "hunch",
+    "base_model:antareslabs/hunch-0.6b-preview",
+    "base_model:quantized:antareslabs/hunch-0.6b-preview",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1198186976,
+  "storage_human": "1.2 GB",
+  "base_model": "antareslabs/hunch-0.6b-preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

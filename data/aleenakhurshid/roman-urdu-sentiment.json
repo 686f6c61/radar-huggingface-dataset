@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aleenakhurshid/roman-urdu-sentiment",
+  "slug": "aleenakhurshid-roman-urdu-sentiment",
+  "author": "aleenakhurshid",
+  "url": "https://huggingface.co/aleenakhurshid/roman-urdu-sentiment",
+  "created_at": "2026-09-25T23:28:39.000Z",
+  "updated_at": "2026-09-25T23:29:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135326979,
+  "parameters_human": "135.3M",
+  "storage_bytes": 541320452,
+  "storage_human": "541 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Attention-Based RU-BiLSTM Sentiment Analysis Model for Roman Urdu - MDPI",
+      "url": "https://www.mdpi.com/2076-3417/12/7/3641",
+      "snippet": "We propose an attention-based BiLSTM model called RU-BiLSM for the sentiment analysis of Roman Urdu. In order to evaluate the integrity of generated neural word embeddings, we experimented with six different arrangements of deep neural networks."
+    },
+    {
+      "title": "Roman Urdu Sentiment Analysis: Traditional Approaches vs LLMs",
+      "url": "https://ieeexplore.ieee.org/document/11330087",
+      "snippet": "Large language models (LLMs) have greatly contributed to the advancement of sentiment analysis across different languages. However, their ability to outperform traditional approaches remains largely unexplored, at least for the cases of Roman Urdu, a commonly used informal script for Urdu. The purpose of this research is to investigate whether LLMs, specifically LLaMA 3.2, can achieve state-of ..."
+    },
+    {
+      "title": "GitHub - utcsox/roman-urdu-sentiment-analysis",
+      "url": "https://github.com/utcsox/roman-urdu-sentiment-analysis",
+      "snippet": "This repository contains end-to-end code to automatically identify sentiment on a under-resource language (Roman-Urdu) on social media using machine learning. A data corpus comprising of more than 20000 records in Roman Udu (a limited resource language) was collected and tagged for Sentiment ..."
+    },
+    {
+      "title": "Roman Urdu Sentiment Analysis Using Pre-trained DistilBERT and XLNet",
+      "url": "https://ieeexplore.ieee.org/document/9764854",
+      "snippet": "Roman Urdu is a resource-poor language, therefore training a deep learning-based model from scratch is not that fruitful due to the lack of a large dataset. This is where the magic of transfer learning comes to the rescue. Using Huggingface&#x27;s transformer models DistilBERT and XLNet we see a huge improvement in the results compared to the popular machine learning models Logistic Regression and ..."
+    },
+    {
+      "title": "Hinglish AI & Code-Mixed NLP | Arismeta",
+      "url": "https://www.arismeta.com/services/multilingual-ai/",
+      "snippet": "AI that understands Hinglish, Roman Urdu & Arabic-English. Code-mixed sentiment analysis, language ID and multilingual chatbots built on NLP research."
+    }
+  ]
+}

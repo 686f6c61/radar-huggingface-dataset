@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ldov/Qwen2.5-3B-Instruct-GGUF",
+  "slug": "ldov-qwen2-5-3b-instruct-gguf",
+  "author": "ldov",
+  "url": "https://huggingface.co/ldov/Qwen2.5-3B-Instruct-GGUF",
+  "created_at": "2026-09-25T21:21:58.000Z",
+  "updated_at": "2026-09-25T21:21:58.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "chat",
+    "text-generation",
+    "en",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 25236326272,
+  "storage_human": "25.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in to GitHub · GitHub",
+      "url": "https://github.com/login",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million …Read more"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …Read more"
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …Read more"
+    },
+    {
+      "title": "9月3日晚ChatGPT、Grok、Claude、Cursor 集体突发故障，怎么回 …",
+      "url": "https://www.zhihu.com/question/2078984478073136308",
+      "snippet": "Sep 3, 2026 · 所以，可能是因为，Claude/Grok 先出现各自的模型容量或发布问题，用户和自动化流量随即大量切到替代服务，给 …Read more"
+    },
+    {
+      "title": "GitHub - anthropics/claude-code: Claude Code is an agentic coding …",
+      "url": "https://github.com/anthropics/claude-code",
+      "snippet": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by …Read more"
+    }
+  ]
+}

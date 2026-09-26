@@ -5,7 +5,7 @@
   "author": "roomote",
   "url": "https://huggingface.co/roomote/roomote-judgment-gliner",
   "created_at": "2026-09-24T18:30:55.000Z",
-  "updated_at": "2026-09-25T01:25:18.000Z",
+  "updated_at": "2026-09-25T20:55:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": 193581591,
   "parameters_human": "193.6M",
-  "storage_bytes": 1548733128,
-  "storage_human": "1.5 GB",
+  "storage_bytes": 3097466256,
+  "storage_human": "3.1 GB",
   "base_model": "fastino/gliner2.5-base-v1",
   "formats": [
     "safetensors"

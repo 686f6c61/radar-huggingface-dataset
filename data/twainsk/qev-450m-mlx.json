@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "twainsk/qev-450m-mlx",
+  "slug": "twainsk-qev-450m-mlx",
+  "author": "twainsk",
+  "url": "https://huggingface.co/twainsk/qev-450m-mlx",
+  "created_at": "2026-09-26T00:54:44.000Z",
+  "updated_at": "2026-09-26T00:55:04.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qev",
+    "lfm2",
+    "mlx-vlm",
+    "apple-silicon",
+    "lora",
+    "structured-decisions",
+    "multimodal",
+    "en",
+    "zh",
+    "base_model:LiquidAI/LFM2.5-VL-450M",
+    "base_model:adapter:LiquidAI/LFM2.5-VL-450M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 995549408,
+  "storage_human": "996 MB",
+  "base_model": "LiquidAI/LFM2.5-VL-450M",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "wasifb",
   "url": "https://huggingface.co/wasifb/ThinkingCap-Qwen3.8-27B-AutoRound-W4A16",
   "created_at": "2026-09-23T23:32:23.000Z",
-  "updated_at": "2026-09-24T01:52:04.000Z",
+  "updated_at": "2026-09-25T22:45:55.000Z",
   "license": "polyform-small-business-1.0.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 6,
+  "downloads_30d": 520,
   "trending_score": 0,
   "parameters": 3029765360,
   "parameters_human": "3.03B",

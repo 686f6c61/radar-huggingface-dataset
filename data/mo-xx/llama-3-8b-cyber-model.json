@@ -5,7 +5,7 @@
   "author": "mo-xx",
   "url": "https://huggingface.co/mo-xx/llama-3-8b-cyber-model",
   "created_at": "2026-09-25T15:47:30.000Z",
-  "updated_at": "2026-09-25T16:13:57.000Z",
+  "updated_at": "2026-09-25T19:01:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,13 +28,13 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",
-  "storage_bytes": 16077766337,
-  "storage_human": "16.1 GB",
+  "storage_bytes": 32138322713,
+  "storage_human": "32.1 GB",
   "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
   "formats": [
     "safetensors"

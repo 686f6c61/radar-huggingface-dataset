@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "antareslabs/hunch-1.7b-preview-MLX",
+  "slug": "antareslabs-hunch-1-7b-preview-mlx",
+  "author": "antareslabs",
+  "url": "https://huggingface.co/antareslabs/hunch-1.7b-preview-MLX",
+  "created_at": "2026-09-25T20:08:56.000Z",
+  "updated_at": "2026-09-25T20:09:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "hunch",
+    "base_model:antareslabs/hunch-1.7b-preview",
+    "base_model:finetune:antareslabs/hunch-1.7b-preview",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3441199823,
+  "storage_human": "3.4 GB",
+  "base_model": "antareslabs/hunch-1.7b-preview",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

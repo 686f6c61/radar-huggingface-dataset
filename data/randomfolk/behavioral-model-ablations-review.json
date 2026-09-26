@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "randomfolk/behavioral-model-ablations-review",
+  "slug": "randomfolk-behavioral-model-ablations-review",
+  "author": "randomfolk",
+  "url": "https://huggingface.co/randomfolk/behavioral-model-ablations-review",
+  "created_at": "2026-09-25T22:31:14.000Z",
+  "updated_at": "2026-09-25T22:51:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13616427793,
+  "storage_human": "13.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THE LAST PRISONER (2026) – Official Trailer | Jason Statham, …",
+      "url": "https://www.youtube.com/watch?v=JvVxyDuOg5Y",
+      "snippet": "Nov 9, 2025 · After ten years in a secret black-site prison, one man is released to uncover a betrayal that started the war he was left …"
+    },
+    {
+      "title": "Last Prisoner : New Action Movie 2025 | Jason Statham | Full Movie",
+      "url": "https://www.youtube.com/watch?v=mFDldScaCCI",
+      "snippet": "Mar 26, 2025 · IT IS THE INDIVIDUAL PROPERTY OF IT'S OWNER."
+    },
+    {
+      "title": "Last_Prisoner____New_Action_Movie_2025___Jason_Statham___Fu…",
+      "url": "https://www.dailymotion.com/video/x9ouejw",
+      "snippet": "Aug 15, 2025 · Last Prisoner is a gripping action-thriller that follows a lone survivor trapped in a deadly conspiracy. Wrongfully …"
+    },
+    {
+      "title": "All 56 Movies Featuring Jason Statham in Order - Fiction Horizon",
+      "url": "https://fictionhorizon.com/movies-featuring-jason-statham-in-order/",
+      "snippet": "4 days ago · Set in a colonized Mars, the story follows a police squad sent to retrieve a dangerous prisoner, only to find a mining …"
+    },
+    {
+      "title": "The last prisoner Movie | Moviefone",
+      "url": "https://www.moviefone.com/movie/thelastprisoner/XRvU3yE78yFM6AfvDHjcu3/main/",
+      "snippet": "Dinos, the sole survivor of a group of saboteurs who were exterminated by the Germans for treason, finds refuge in the house of a …"
+    }
+  ]
+}

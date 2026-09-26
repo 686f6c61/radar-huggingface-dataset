@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "marmotan/my_test_model",
+  "slug": "marmotan-my_test_model",
+  "author": "marmotan",
+  "url": "https://huggingface.co/marmotan/my_test_model",
+  "created_at": "2026-09-25T18:30:35.000Z",
+  "updated_at": "2026-09-25T18:31:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 459960231,
+  "storage_human": "460 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

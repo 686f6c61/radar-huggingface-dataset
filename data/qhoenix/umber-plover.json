@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "qhoenix/umber-plover",
+  "slug": "qhoenix-umber-plover",
+  "author": "qhoenix",
+  "url": "https://huggingface.co/qhoenix/umber-plover",
+  "created_at": "2026-09-25T21:23:25.000Z",
+  "updated_at": "2026-09-25T21:23:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "torchvision",
+  "languages": [],
+  "tags": [
+    "torchvision",
+    "safetensors",
+    "image-classification",
+    "adversarial-training",
+    "efficientnet",
+    "perturb",
+    "bittensor",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119027848,
+  "parameters_human": "119.0M",
+  "storage_bytes": 476270096,
+  "storage_human": "476 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qhoenix (Ivan Marahovschi) - Hugging Face",
+      "url": "https://huggingface.co/qhoenix",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 15 hours ago ... updated a model about 15 hours ago"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 507 AI models across 483 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Umber | Free Open Source AI Image & Video Generator",
+      "url": "https://umber.s4.nu/",
+      "snippet": "Umber is a free, open source desktop app for AI image and video generation. Bring your own API keys, pay the labs at cost and keep every creation on your device."
+    },
+    {
+      "title": "Xiaomi MiMo Home",
+      "url": "https://mimo.mi.com/models/en-US/mimo-v2.6-pro",
+      "snippet": "Xiaomi MiMo&#x27;s most powerful flagship reasoning model — omni-modal, ultra-high performance, trillion-parameter — built for complex projects, long-horizon tasks, high-stakes work, cybersecurity, and research."
+    },
+    {
+      "title": "Jev AI Model (TypeSafe) — Typed System One Decisions",
+      "url": "https://jevmodel.org/",
+      "snippet": "Jev is TypeSafe AI&#x27;s System One model: it returns a choice, score, or yes/no probability instead of chat. The hosted API is open as of 21 September 2026. $0.042 per 1M input tokens, output free."
+    }
+  ]
+}

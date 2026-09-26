@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "elliottwilson619/wilson",
+  "slug": "elliottwilson619-wilson",
+  "author": "elliottwilson619",
+  "url": "https://huggingface.co/elliottwilson619/wilson",
+  "created_at": "2026-09-25T22:09:42.000Z",
+  "updated_at": "2026-09-25T22:09:42.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elliottwilson619 (Elliott Wilson) - Hugging Face",
+      "url": "https://huggingface.co/elliottwilson619",
+      "snippet": "User profile of Elliott Wilson on Hugging Face"
+    },
+    {
+      "title": "elliottwilson619 (Elliott Wilson) - Hugging Face",
+      "url": "https://huggingface.co/elliottwilson619/spaces",
+      "snippet": "Elliott Wilson elliottwilson619 Follow AI & ML interests None yet Recent Activity newactivity 14 days ago ymzhang319/FoleyCrafter:FoleyCrafter"
+    },
+    {
+      "title": "elliottwilson619 · GitHub",
+      "url": "https://github.com/elliottwilson619",
+      "snippet": "GitHub is where elliottwilson619 builds software. Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "Wilson Model AI - YouTube",
+      "url": "https://www.youtube.com/@WilsonModelAI",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "Elliott Wilson | My beautiful daughter is already a model. Vote for ...",
+      "url": "https://www.instagram.com/p/DcwaQsjS6_O/",
+      "snippet": "100 likes, 7 comments - freeelliottwilson on September 1, 2026: \"My beautiful daughter is already a model. 😍 Vote for Sasha! 💕 Preciate y&#x27;all. Link in bio.\"."
+    }
+  ]
+}

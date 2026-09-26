@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kvnxiao/swift-1.5-qwen3.8-27b-orcarouter-dflash2-nvfp4-ninfer",
+  "slug": "kvnxiao-swift-1-5-qwen3-8-27b-orcarouter-dflash2-nvfp4-ninfer",
+  "author": "kvnxiao",
+  "url": "https://huggingface.co/kvnxiao/swift-1.5-qwen3.8-27b-orcarouter-dflash2-nvfp4-ninfer",
+  "created_at": "2026-09-25T22:14:08.000Z",
+  "updated_at": "2026-09-25T22:16:04.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "swift-1.5",
+    "qwen3_8",
+    "nvfp4",
+    "fp8",
+    "mtp",
+    "dflash2",
+    "speculative-decoding",
+    "uncensored",
+    "abliterated",
+    "vision-language",
+    "tool-calling",
+    "quantized",
+    "orcarouter",
+    "image-text-to-text",
+    "base_model:ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-NVFP4",
+    "base_model:quantized:ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-NVFP4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22783240452,
+  "storage_human": "22.8 GB",
+  "base_model": "ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-NVFP4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "swift-qwen3.8-27b-orcarouter-dflash2-nvfp4-ninfer - Hugging Face",
+      "url": "https://huggingface.co/kvnxiao/swift-qwen3.8-27b-orcarouter-dflash2-nvfp4-ninfer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "swift-qwen3.8-27b-orcarouter-dflash2-nvfp4.ninfer.NOTICE · kvnxiao ...",
+      "url": "https://huggingface.co/kvnxiao/swift-qwen3.8-27b-orcarouter-dflash2-nvfp4-ninfer/blob/main/swift-qwen3.8-27b-orcarouter-dflash2-nvfp4.ninfer.NOTICE",
+      "snippet": "Instructions to use kvnxiao/swift-qwen3.8-27b-orcarouter-dflash2-nvfp4-ninfer with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - Neroued/ninfer: High-performance single-GPU inference for ...",
+      "url": "https://github.com/Neroued/ninfer",
+      "snippet": "Qwen3.8-27B artifacts with the DFlash2 companion weights support --spec dflash2 --draft-tokens 7 for the same Text/Vision Engine path, with draft counts 1..15 and either full or optimized proposal heads."
+    },
+    {
+      "title": "GitHub - MiaAI-Lab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw: Deployment kit ...",
+      "url": "https://github.com/MiaAI-Lab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw",
+      "snippet": "by Mia&#x27;a AI Lab Deployment kit for serving Qwen3.8-27B quantized to EXL3 3.5bpw with speculative decoding — MTP by default (draft head inside the checkpoint, best context per GB) or DFlash2 (EXL3 5.0bpw draft model, ~15% faster) — plus a ~4.5-bit KV cache lane (NVFP4 on Ada/Hopper/Blackwell, Hadamard-4 on Ampere) for maximum context per GB."
+    },
+    {
+      "title": "Run Swift-1.5-Qwen3.8-27B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/ukisai/Swift-1.5-Qwen3.8-27b",
+      "snippet": "Overview Swift 1.5 Qwen3.8-27B is a 27 billion parameter model developed by UkisAI, building upon the Qwen3.8-27B architecture. It significantly improves reasoning efficiency, reducing \"thinking tokens\" by 58.5% while slightly increasing overall accuracy by 0.35% compared to the base model, leading to a 1.95x speed-up. This efficiency is achieved through scaled-up post-training (RL and OPD ..."
+    }
+  ]
+}

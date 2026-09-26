@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "parmanu-lcs2/Qwen3-6B",
+  "slug": "parmanu-lcs2-qwen3-6b",
+  "author": "parmanu-lcs2",
+  "url": "https://huggingface.co/parmanu-lcs2/Qwen3-6B",
+  "created_at": "2026-09-25T20:27:33.000Z",
+  "updated_at": "2026-09-25T20:34:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "pruned",
+    "sniper",
+    "llm-pruning",
+    "compression",
+    "lora",
+    "fine-tuned",
+    "conversational",
+    "custom_code",
+    "dataset:Open-Orca/SlimOrca",
+    "arxiv:2608.12953",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6198014464,
+  "parameters_human": "6.20B",
+  "storage_bytes": 12407495513,
+  "storage_human": "12.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ЭБС КАКВР - Добро пожаловать в ЭБС Консорциума …",
+      "url": "https://elsau.ru/main/organizations2?org=mai",
+      "snippet": "Электронная библиотека Консорциума ориентирована на обеспечение информационных потребностей пользователей в …Read more"
+    },
+    {
+      "title": "Indian Porn videos - Desi blue films, xxx mms clip",
+      "url": "https://indiansexmms.co/",
+      "snippet": "Watch all the Indian Porn Videos and Sex Mms Indiansexmms.co is an Indian porn site that offers hot and desi XXX movies. It is rich …Read more"
+    },
+    {
+      "title": "XXX INDIAN MOM AND SON SAX LATEST VIDEO VIDEO",
+      "url": "https://economictimes.indiatimes.com/topic/xxx-indian-mom-and-son-sax-latest-video-video",
+      "snippet": "1 day ago · xxx indian mom and son sax latest video video Latest Breaking News, Pictures, Videos, and Special Reports from The …Read more"
+    },
+    {
+      "title": "Tribute to Andrew Rush, 1966 - 2026",
+      "url": "https://andrew-rush-1966-2026.muchloved.com/",
+      "snippet": "Sep 7, 2026 · This page is a tribute to Andrew Rush. They are much loved and will always be remembered.Read more"
+    },
+    {
+      "title": "Hot xxx web series, Indian adult porn web series videos",
+      "url": "https://www.desitales2.com/videos/tag/xxx-web-series/",
+      "snippet": "Crowd-pulling and cum-pulling Indian xxx web series videos that you would want to watch again and again! The best collection of all …Read more"
+    }
+  ]
+}

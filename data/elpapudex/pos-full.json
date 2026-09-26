@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Elpapudex/Pos-full",
+  "slug": "elpapudex-pos-full",
+  "author": "Elpapudex",
+  "url": "https://huggingface.co/Elpapudex/Pos-full",
+  "created_at": "2026-09-26T00:06:31.000Z",
+  "updated_at": "2026-09-26T00:46:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "en",
+    "arxiv:1810.04805",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108904721,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435647405,
+  "storage_human": "436 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

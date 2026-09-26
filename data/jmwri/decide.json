@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "jmwri/decide",
+  "slug": "jmwri-decide",
+  "author": "jmwri",
+  "url": "https://huggingface.co/jmwri/decide",
+  "created_at": "2026-09-25T18:23:36.000Z",
+  "updated_at": "2026-09-25T18:23:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "decide",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "decide",
+    "safetensors",
+    "modernbert",
+    "decision-model",
+    "zero-shot-classification",
+    "calibrated",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149312257,
+  "parameters_human": "149.3M",
+  "storage_bytes": 597263604,
+  "storage_human": "597 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

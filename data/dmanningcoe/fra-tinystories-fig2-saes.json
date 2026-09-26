@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "dmanningcoe/fra-tinystories-fig2-saes",
+  "slug": "dmanningcoe-fra-tinystories-fig2-saes",
+  "author": "dmanningcoe",
+  "url": "https://huggingface.co/dmanningcoe/fra-tinystories-fig2-saes",
+  "created_at": "2026-09-25T21:52:43.000Z",
+  "updated_at": "2026-09-25T21:54:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sparse-autoencoder",
+    "mechanistic-interpretability",
+    "tinystories",
+    "base_model:mars-jason-25/tiny-stories-33M-TSdata-sleeper",
+    "base_model:finetune:mars-jason-25/tiny-stories-33M-TSdata-sleeper",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 680349096,
+  "storage_human": "680 MB",
+  "base_model": "mars-jason-25/tiny-stories-33M-TSdata-sleeper",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dmanningcoe (Dmitry Manning-Coe) - Hugging Face",
+      "url": "https://huggingface.co/dmanningcoe",
+      "snippet": "Dmitry Manning-Coe dmanningcoe Follow 0 followers 1 following AI & ML interests None yet Organizations models0"
+    },
+    {
+      "title": "roneneldan/TinyStories · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/roneneldan/TinyStories",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - NonsonoNicola/TinyStories-LLM: Tiny transformer model for ...",
+      "url": "https://github.com/NonsonoNicola/TinyStories-LLM",
+      "snippet": "🧸 TinyStories LLM - A Miniature Language Model for Storytelling A 40M parameter decoder-only transformer trained on the TinyStories dataset, designed to generate short, coherent children&#x27;s stories. Inspired by the Mistral architecture, built and trained from scratch by a self-taught student exploring large language models."
+    },
+    {
+      "title": "GitHub - TheodoreEhrenborg/tiny_stories_sae: Trains a sparse ...",
+      "url": "https://github.com/TheodoreEhrenborg/tiny_stories_sae",
+      "snippet": "TinyStories SAE Train a sparse autoencoder using your laptop on this TinyStories model Docs are here. The rest of this readme is software engineering details."
+    },
+    {
+      "title": "[2305.07759] TinyStories: How Small Can Language Models Be and Still ...",
+      "url": "https://arxiv.org/abs/2305.07759",
+      "snippet": "Abstract page for arXiv paper 2305.07759: TinyStories: How Small Can Language Models Be and Still Speak Coherent English?"
+    }
+  ]
+}

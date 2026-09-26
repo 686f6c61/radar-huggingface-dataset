@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Finn-Technologies/FinnAI-Foundation-LoRA-v3",
+  "slug": "finn-technologies-finnai-foundation-lora-v3",
+  "author": "Finn-Technologies",
+  "url": "https://huggingface.co/Finn-Technologies/FinnAI-Foundation-LoRA-v3",
+  "created_at": "2026-09-25T18:37:54.000Z",
+  "updated_at": "2026-09-25T18:39:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:LiquidAI/LFM2.5-VL-1.6B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-VL-1.6B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131653136,
+  "storage_human": "132 MB",
+  "base_model": "LiquidAI/LFM2.5-VL-1.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FINN.no – mulighetenes marked",
+      "url": "https://www.finn.no/",
+      "snippet": "Skal du kjøpe eller selge, stort eller smått, så er FINN.no stedet. Vi er der for deg når du skal selge hytta di, finne en pent brukt sofa, …"
+    },
+    {
+      "title": "Accueil - IFA FINN FRANCE",
+      "url": "https://www.finn-france.fr/",
+      "snippet": "Jul 6, 2026 · AG de la Gold Cup 2022 20 mai 2022 Monde Voir le calendrier international Rejoindre la classe Envie d’essayer le Finn …"
+    },
+    {
+      "title": "Finn — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Finn",
+      "snippet": "Le Finn a été conçu en Suède en 1949, par le régatier et architecte naval Rickard Sarby qui était aussi éducateur pour enfants …"
+    },
+    {
+      "title": "Lorenzo Finn — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lorenzo_Finn",
+      "snippet": "Lorenzo Mark Finn, né le 19 décembre 2006 à Gênes, est un coureur cycliste italien. Il est notamment champion du monde sur route …"
+    },
+    {
+      "title": "FINN Car Subscription: All-Inclusive & No Hidden Fees",
+      "url": "https://www.finn.com/en-DE",
+      "snippet": "FINN (as an Auto Abo provider) sits right in the middle between rental cars and leasing contracts. The duration of a subscription is …"
+    }
+  ]
+}

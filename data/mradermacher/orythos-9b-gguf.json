@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Orythos-9B-GGUF",
+  "slug": "mradermacher-orythos-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Orythos-9B-GGUF",
+  "created_at": "2026-09-26T00:15:10.000Z",
+  "updated_at": "2026-09-26T01:00:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:CloudGoat/Orythos-9B",
+    "base_model:quantized:CloudGoat/Orythos-9B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 81425092864,
+  "storage_human": "81.4 GB",
+  "base_model": "CloudGoat/Orythos-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

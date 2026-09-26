@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "RicardoEstep/RPBizkitRemiX-v2-12B-GGUF",
+  "slug": "ricardoestep-rpbizkitremix-v2-12b-gguf",
+  "author": "RicardoEstep",
+  "url": "https://huggingface.co/RicardoEstep/RPBizkitRemiX-v2-12B-GGUF",
+  "created_at": "2026-09-25T21:43:04.000Z",
+  "updated_at": "2026-09-26T00:40:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "custom",
+    "merge",
+    "not-for-all-audiences",
+    "llama-cpp",
+    "base_model:RicardoEstep/RPBizkitRemiX-v2-12B",
+    "base_model:quantized:RicardoEstep/RPBizkitRemiX-v2-12B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 99142905280,
+  "storage_human": "99.1 GB",
+  "base_model": "RicardoEstep/RPBizkitRemiX-v2-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RicardoEstep/RPBizkitRemiX-v1-12B · Hugging Face",
+      "url": "https://huggingface.co/RicardoEstep/RPBizkitRemiX-v1-12B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RicardoEstep (Ricardo_estep) - Hugging Face",
+      "url": "https://huggingface.co/RicardoEstep",
+      "snippet": "Mess all up. Text Generation • 12B • 18 days ago • 76 • 6"
+    },
+    {
+      "title": "Run RPBizkit-v2-12B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/RicardoEstep/RPBizkit-v2-12B",
+      "snippet": "RicardoEstep/RPBizkit-v2-12B is a 12 billion parameter experimental Karcher-Mean merged language model, created by RicardoEstep, combining seven distinct 12B models. This model is designed for roleplay and creative text generation, leveraging a unique merging technique to achieve a stable and high-quality blend of its constituent models."
+    },
+    {
+      "title": "RicardoEstep/RPBizkitRemiX-v1-12B - featherless.ai",
+      "url": "https://featherless.ai/models/RicardoEstep/RPBizkitRemiX-v1-12B",
+      "snippet": "Key Characteristics Architecture: A unique merge of several 12B models, including AngelSlayerKrix-12B, RPBizkit-v2-12B, RPBizkit-v4-12B, RPBizkit-v4-12B_Lorablated, RPBizkit-v5-12B-Lorablated, and RPBizkit-v6-12B. Tokenizer: Features a \"Clean Tokenizer & Embedding Sizes (131072)\" based on Mistral, contributing to its stability."
+    },
+    {
+      "title": "RicardoEstep/RPBizkit-v2-12B: Model synced from source: RicardoEstep ...",
+      "url": "https://dev.modelhub.org.cn/RicardoEstep/RPBizkit-v2-12B",
+      "snippet": "Some of the models in the mix, used a \"fake rope_theta hack\" to support \"1M\" of context size, and this model coppied that configuration. This are not a real numbers, and would NOT give you a \"meaningful long ‑ context behavior\"."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "vmarcelo/Swift-Qwen3.8-27B-MIX_GGUF",
+  "slug": "vmarcelo-swift-qwen3-8-27b-mix_gguf",
+  "author": "vmarcelo",
+  "url": "https://huggingface.co/vmarcelo/Swift-Qwen3.8-27B-MIX_GGUF",
+  "created_at": "2026-09-22T01:52:04.000Z",
+  "updated_at": "2026-09-25T22:08:06.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "quantized",
+    "imatrix",
+    "qwen3.8",
+    "vision",
+    "multimodal",
+    "vulkan",
+    "mtp",
+    "speculative-decoding",
+    "iq4_xs",
+    "iq3_xxs",
+    "image-text-to-text",
+    "multilingual",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 2583,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 38093771232,
+  "storage_human": "38.1 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vmarcelo/Swift-Qwen3.8-27B-MIX_GGUF · Hugging Face",
+      "url": "https://huggingface.co/vmarcelo/Swift-Qwen3.8-27B-MIX_GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · vmarcelo/Swift-Qwen3.8-27B-MIX_GGUF at main",
+      "url": "https://huggingface.co/vmarcelo/Swift-Qwen3.8-27B-MIX_GGUF/blob/main/README.md",
+      "snippet": "Swift-Qwen3.8-27B — MIX GGUF (IQ4 + IQ3 + IQ2) Three custom mixed-tensor quantizations of ukisai/Swift-Qwen3.8-27b, a fine-tune of Qwen/Qwen3.8-27B — the dense 27B multimodal model with hybrid GatedDeltaNet + Gated Attention and a Multi-Token Prediction (MTP) head."
+    },
+    {
+      "title": "Swift-Qwen3.8-27B: less overthinking | UkisAI",
+      "url": "https://ukisai.com/news/introducing-swift",
+      "snippet": "Swift produces shorter reasoning traces, and we observe fewer overthinking errors in our testing. Swift includes a transfer component derived from BottleCap AI&#x27;s ThinkingCap-Qwen3.6-27B. The resulting model uses the standard Qwen3.8 interface and retains text, image, and video support. Benchmark results"
+    },
+    {
+      "title": "Qwen3.8 27B MIX GGUF by vmarcelo — VRAM 0.9GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/vmarcelo%2FQwen3.8-27B-MIX_GGUF,2cxXuLLPaW4SkjnzNBvwuX",
+      "snippet": "Qwen3.8 27B MIX GGUF is an open-source 27b LLM by vmarcelo. VRAM 0.9GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.8-27B-MIX_GGUF — LLM for Productivity | GenAiHub",
+      "url": "https://genaihub.net/agents/hf-model-vmarcelo-qwen3-8-27b-mix-gguf",
+      "snippet": "Description Qwen3.8-27B-MIX_GGUF is an open-weight text-generation model with roughly 27B parameters published by vmarcelo on the Hugging Face Hub. It has 13,088 downloads. Runs with gguf."
+    }
+  ]
+}

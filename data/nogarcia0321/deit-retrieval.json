@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "nogarcia0321/deit-retrieval",
+  "slug": "nogarcia0321-deit-retrieval",
+  "author": "nogarcia0321",
+  "url": "https://huggingface.co/nogarcia0321/deit-retrieval",
+  "created_at": "2026-09-26T00:27:56.000Z",
+  "updated_at": "2026-09-26T00:28:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

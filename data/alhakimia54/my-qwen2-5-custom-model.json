@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "alhakimia54/my-qwen2.5-custom-model",
+  "slug": "alhakimia54-my-qwen2-5-custom-model",
+  "author": "alhakimia54",
+  "url": "https://huggingface.co/alhakimia54/my-qwen2.5-custom-model",
+  "created_at": "2026-09-25T22:10:40.000Z",
+  "updated_at": "2026-09-25T22:10:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955358,
+  "storage_human": "173 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alhakimia54/Kashef-Qwen-2.5-3B · Hugging Face",
+      "url": "https://huggingface.co/alhakimia54/Kashef-Qwen-2.5-3B",
+      "snippet": "alhakimia54 / Kashef-Qwen-2.5-3B Like 0 Transformers Safetensors English text-generation-inference unsloth qwen2 trl License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Introduction In the past three months since Qwen2&#x27;s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5."
+    },
+    {
+      "title": "GitHub - alhakimia542-ctrl/kashef-ai-finetuning",
+      "url": "https://github.com/alhakimia542-ctrl/kashef-ai-finetuning",
+      "snippet": "This repository contains the complete pipeline for fine-tuning the Qwen 2.5-3B-Instruct model using Unsloth and PEFT (LoRA) to power Kashef AI, an advanced Arabic conversational and search answer engine developed by the Alhakimi team."
+    },
+    {
+      "title": "Qwen2.5: A Party of Foundation Models!",
+      "url": "https://qwen.ai/blog?id=qwen2.5",
+      "snippet": "To showcase Qwen2.5&#x27;s capabilities, we benchmark our largest open-source model, Qwen2.5-72B - a 72B-parameter dense decoder-only language model - against leading open-source models like Llama-3.1-70B and Mistral-Large-V2."
+    }
+  ]
+}

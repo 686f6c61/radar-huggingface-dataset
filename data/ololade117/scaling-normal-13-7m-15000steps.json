@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ololade117/scaling-normal-13.7M-15000steps",
+  "slug": "ololade117-scaling-normal-13-7m-15000steps",
+  "author": "Ololade117",
+  "url": "https://huggingface.co/Ololade117/scaling-normal-13.7M-15000steps",
+  "created_at": "2026-09-25T21:46:09.000Z",
+  "updated_at": "2026-09-25T21:46:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13663232,
+  "parameters_human": "13.7M",
+  "storage_bytes": 54657736,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ololade117 (Ololade Ogunleye ) - Hugging Face",
+      "url": "https://huggingface.co/Ololade117",
+      "snippet": "Sort: Recently updated Ololade117/gemma-4-e2b-iroko-mentalhealth-finetuned2 Updated 1 day ago"
+    },
+    {
+      "title": "Ololade117 (Ololade Ogunleye ) - Hugging Face",
+      "url": "https://huggingface.co/Ololade117/datasets",
+      "snippet": "Recent Activity updated a modelabout 19 hours ago Ololade117/gemma-4-e2b-iroko-mentalhealth-finetuned2 published a modelabout 19 hours ago Ololade117/gemma-4-e2b-iroko-mentalhealth-finetuned2 updated a model4 days ago Ololade117/medgemma-1.5-4b-iroko-finetuned View all activity"
+    },
+    {
+      "title": "Ololade117 · GitHub",
+      "url": "https://github.com/Ololade117/",
+      "snippet": "Ololade117 has 7 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - Ololade117/Ololade117: Config files for my GitHub profile.",
+      "url": "https://github.com/Ololade117/Ololade117",
+      "snippet": "Config files for my GitHub profile. Contribute to Ololade117/Ololade117 development by creating an account on GitHub."
+    },
+    {
+      "title": "Model Zoo",
+      "url": "https://www.modelzoo.co/",
+      "snippet": "The model is trained on Cornell Grasping Dataset. This is an implementation mainly based on the paper &#x27;Real-Time Grasp Detection Using Convolutional Neural Networks&#x27; from Redmon and Angelova."
+    }
+  ]
+}

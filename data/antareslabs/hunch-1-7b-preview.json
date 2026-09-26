@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "antareslabs/hunch-1.7b-preview",
+  "slug": "antareslabs-hunch-1-7b-preview",
+  "author": "antareslabs",
+  "url": "https://huggingface.co/antareslabs/hunch-1.7b-preview",
+  "created_at": "2026-09-25T20:06:20.000Z",
+  "updated_at": "2026-09-25T20:06:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "antareslabs-hunch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "antareslabs-hunch",
+    "safetensors",
+    "decision-scoring",
+    "probability-scoring",
+    "hunch",
+    "zero-shot-classification",
+    "en",
+    "dataset:mteb/banking77",
+    "dataset:clinc/clinc_oos",
+    "dataset:mteb/amazon_massive_intent",
+    "dataset:bitext/Bitext-customer-support-llm-chatbot-training-dataset",
+    "dataset:tals/vitaminc",
+    "dataset:google/boolq",
+    "dataset:google-research-datasets/paws",
+    "dataset:google/civil_comments",
+    "dataset:nvidia/HelpSteer2",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720579072,
+  "parameters_human": "1.72B",
+  "storage_bytes": 6882352784,
+  "storage_human": "6.9 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "a specific kind of cnc : r/consensualnonconsent - Reddit",
+      "url": "https://www.reddit.com/r/consensualnonconsent/comments/12kwk16/a_specific_kind_of_cnc/",
+      "snippet": "Apr 13, 2023 · Tbh, I don't usually watch this kind of CNC, and I don't think you will find it by femdom either. I think this has to deal …"
+    },
+    {
+      "title": "Crying Porn Clips for Sale | Crying Videos | Clips4Sale",
+      "url": "https://www.clips4sale.com/clips/category/125/CRYING",
+      "snippet": "Watch over 5,821 premium Crying clips only at Clips4Sale. High-quality downloads, exclusive fetish content, and new videos added …"
+    },
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/r/consensualnonconsent/comments/w6q1dd/best_website_to_watch_cnc_the_hub_has_none/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Dacryphilia: All About the Crying Kink",
+      "url": "https://kinklovers.com/bdsm-fetishes/dacryphilia/",
+      "snippet": "Dec 26, 2022 · Crying and tears is a kink for some men and women. Find out more about dacryphilia, why crying turns some on, and …"
+    },
+    {
+      "title": "CNC Kink Guide: How to Do Consensual Non-Consent",
+      "url": "https://www.playfulmag.com/post/cnc-psychology-tools-and-boundaries-of-consensual-non-consent",
+      "snippet": "Apr 12, 2026 · CNC — consensual non-consent — is one of BDSM's most misunderstood kinks. The psychology, safety tools and …"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "Xangel0s/ozyvler-Ozygram-Neural-7B-Coder-MCTS",
+  "slug": "xangel0s-ozyvler-ozygram-neural-7b-coder-mcts",
+  "author": "Xangel0s",
+  "url": "https://huggingface.co/Xangel0s/ozyvler-Ozygram-Neural-7B-Coder-MCTS",
+  "created_at": "2026-09-25T21:17:11.000Z",
+  "updated_at": "2026-09-25T21:26:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "code",
+    "qwen2.5-coder",
+    "neuro-symbolic",
+    "mcts",
+    "dream-rsi",
+    "kev-engine",
+    "self-healing",
+    "ast",
+    "ollama",
+    "conversational",
+    "es",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 19925767724,
+  "storage_human": "19.9 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trente Paris - Bar - Paris 9ème",
+      "url": "https://www.hotelmasse.com/trente-paris",
+      "snippet": "Des cocktails et petites assiettes à partager et une salle à privatiser : voici ce qui vous attend au coeur du Trente Paris."
+    },
+    {
+      "title": "Trente Paris - Bar - Paris 9th arrondissement",
+      "url": "https://www.hotelmasse.com/en/trente-paris",
+      "snippet": "BAR Le Trente is set in a former iconic loft in Pigalle. It stands out through a universe that blends family history with artistic creation. …"
+    },
+    {
+      "title": "Le Trente, le nouveau repaire de la mode parisienne à Pigalle",
+      "url": "https://www.vogue.fr/article/restaurant-trente-bar-mode-parisienne",
+      "snippet": "Apr 1, 2026 · Dans l'effervescence de Pigalle et de son joyeux tohu-bohu, une nouvelle adresse vient d'ouvrir ses portes : Le Trente, …"
+    },
+    {
+      "title": "Trente (@trenteparis) • Instagram photos and videos",
+      "url": "https://www.instagram.com/trenteparis/",
+      "snippet": "12K Followers, 13 Following, 43 Posts - Trente (@trenteparis) on Instagram: \"Un nouveau bar à Pigalle, Paris Meilleur ami …"
+    },
+    {
+      "title": "Restaurant Trente Paris (75009 Paris) - Newtable.com",
+      "url": "https://fr.newtable.com/restaurant-trente-paris-30694.php",
+      "snippet": "Imaginé par le studio Gasparetto-Parenti, le lieu mêle décor brut et esprit chaleureux autour d’un grand bar en bois, de petites tables …"
+    }
+  ]
+}

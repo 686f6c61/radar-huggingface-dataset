@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "sahilmahendrakar/Paradee-8M-v1.0",
+  "slug": "sahilmahendrakar-paradee-8m-v1-0",
+  "author": "sahilmahendrakar",
+  "url": "https://huggingface.co/sahilmahendrakar/Paradee-8M-v1.0",
+  "created_at": "2026-09-25T21:28:44.000Z",
+  "updated_at": "2026-09-25T21:36:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "paradee",
+    "text-to-speech",
+    "tts",
+    "distillation",
+    "kokoro",
+    "en",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:quantized:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 82801410,
+  "storage_human": "83 MB",
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sahilmahendrakar (Sahil Mahendrakar) · GitHub",
+      "url": "https://github.com/sahilmahendrakar",
+      "snippet": "I&#x27;m Sahil Mahendrakar, a SWE at Amazon (AWS). I&#x27;m interested in building AI products for learning & thinking."
+    },
+    {
+      "title": "GitHub - sahilmahendrakar/ai-demo",
+      "url": "https://github.com/sahilmahendrakar/ai-demo",
+      "snippet": "Contribute to sahilmahendrakar/ai-demo development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

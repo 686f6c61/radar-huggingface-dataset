@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "binhpham/reachy-mini-motion-planner-4b",
+  "slug": "binhpham-reachy-mini-motion-planner-4b",
+  "author": "binhpham",
+  "url": "https://huggingface.co/binhpham/reachy-mini-motion-planner-4b",
+  "created_at": "2026-09-25T19:55:34.000Z",
+  "updated_at": "2026-09-25T20:16:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "reachy_mini",
+    "robotics",
+    "text-to-motion",
+    "motion-planning",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9427100970,
+  "storage_human": "9.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reachy Mini - Open source expressive companion robot | Pollen Robotics",
+      "url": "https://pollen-robotics.com/reachy-mini/",
+      "snippet": "Reachy Mini is an expressive, open-source companion robot for human interaction, creative coding, and AI experimentation. Built by Pollen Robotics, powered by Hugging Face."
+    },
+    {
+      "title": "Reachy Mini - The Open-Source Robot for Today&#x27;s and Tomorrow&#x27;s AI Builders",
+      "url": "https://huggingface.co/blog/reachy-mini",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Reachy Mini - a Hugging Face Space by pollen-robotics",
+      "url": "https://huggingface.co/spaces/pollen-robotics/Reachy_Mini",
+      "snippet": "Reachy Mini is an expressive, open-source robot designed for human-robot interaction, creative coding, and AI experimentation."
+    },
+    {
+      "title": "Reachy Mini — Free STLs, Code & BOM",
+      "url": "https://orobot.io/o/program/BROKER-2/reachy-mini",
+      "snippet": "Reachy Mini — Open-Source Expressive Desktop Robot An open-source desktop robot designed for hackers and AI builders who want a tangible platform for multimodal interaction experiments. Ships as a flat-pack 3D-printed kit that assembles in roughly 2-3 hours: 6-DOF Stewart-platform head, two antennas, and a rotating base packed with sensors."
+    },
+    {
+      "title": "GitHub - pollen-robotics/reachy_mini: Reachy Mini&#x27;s SDK",
+      "url": "https://github.com/pollen-robotics/reachy_mini",
+      "snippet": "🚀 Getting Started with Reachy Mini SDK User guides Installation: 5 minutes to set up your computer Quickstart Guide: Run your first behavior on Reachy Mini JavaScript SDK & Web Apps: Build browser apps that drive the robot over WebRTC — the easiest way to share your apps. AI Integrations: Connect LLMs, build Apps, and publish to Hugging Face."
+    }
+  ]
+}

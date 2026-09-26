@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Elda-AI/memory-resoner",
+  "slug": "elda-ai-memory-resoner",
+  "author": "Elda-AI",
+  "url": "https://huggingface.co/Elda-AI/memory-resoner",
+  "created_at": "2026-09-24T09:08:49.000Z",
+  "updated_at": "2026-09-26T01:13:26.000Z",
+  "license": "elda-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ko_coref",
+    "feature-extraction",
+    "korean",
+    "conversational-memory",
+    "coreference-resolution",
+    "anaphora-resolution",
+    "mention-detection",
+    "entity-linking",
+    "conversational-ai",
+    "real-time",
+    "encoder",
+    "custom_code",
+    "ko",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149324547,
+  "parameters_human": "149.3M",
+  "storage_bytes": 1789629708,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Student Room",
+      "url": "https://www.thestudentroom.co.uk/",
+      "snippet": "The Student Room is the largest online community for school, college and uni students in the UK. Find support on everything from …Read more"
+    },
+    {
+      "title": "Big Brother — Digital Spy",
+      "url": "https://forums.digitalspy.com/categories/big-brother",
+      "snippet": "Sep 10, 2026 · The UK's biggest and busiest Big Brother forum. Includes dedicated sub-forum for international versions."
+    },
+    {
+      "title": "Soaps — Digital Spy",
+      "url": "https://forums.digitalspy.com/categories/soaps",
+      "snippet": "1 day ago · Categories - Discuss soap spoilers and storylines across EastEnders, Coronation Street, Emmerdale, Hollyoaks and more."
+    },
+    {
+      "title": "DCUM Forum - DCUM Weblog",
+      "url": "https://www.dcurbanmom.com/jforum/forums/list.page",
+      "snippet": "1 day ago · General Parenting Discussion Discussions of topics not directly related to children of a specific age. Please post …"
+    },
+    {
+      "title": "DCUM Weblog — DC Urban Moms and Dads",
+      "url": "https://www.dcurbanmom.com/",
+      "snippet": "2 days ago · Maine's incumbent Senator, Republican Susan Collins, is concerned that evidence of her engaging in a pay-to-play …"
+    }
+  ]
+}

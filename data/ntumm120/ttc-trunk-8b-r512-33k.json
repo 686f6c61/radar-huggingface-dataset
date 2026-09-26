@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "ntumm120/ttc-trunk-8b-r512-33k",
+  "slug": "ntumm120-ttc-trunk-8b-r512-33k",
+  "author": "ntumm120",
+  "url": "https://huggingface.co/ntumm120/ttc-trunk-8b-r512-33k",
+  "created_at": "2026-09-25T22:40:59.000Z",
+  "updated_at": "2026-09-25T23:45:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7860148138,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

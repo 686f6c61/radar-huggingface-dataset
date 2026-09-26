@@ -5,7 +5,7 @@
   "author": "silvafass",
   "url": "https://huggingface.co/silvafass/wakeword-assistant",
   "created_at": "2026-09-21T00:24:41.000Z",
-  "updated_at": "2026-09-21T00:49:37.000Z",
+  "updated_at": "2026-09-26T02:26:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1900608,
+  "storage_bytes": 2148754,
   "storage_human": "2 MB",
   "base_model": null,
   "formats": [

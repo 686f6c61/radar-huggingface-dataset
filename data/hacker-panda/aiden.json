@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Hacker-Panda/Aiden",
+  "slug": "hacker-panda-aiden",
+  "author": "Hacker-Panda",
+  "url": "https://huggingface.co/Hacker-Panda/Aiden",
+  "created_at": "2026-09-26T00:28:55.000Z",
+  "updated_at": "2026-09-26T00:28:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hacker Typer Simulator | GeekPrank",
+      "url": "https://geekprank.com/hacker/",
+      "snippet": "This automated hacker typer will trigger server responses and will show various programs and warnings on the screen. For a more …Read more"
+    },
+    {
+      "title": "Hacker Typer",
+      "url": "https://hackertyper.net/",
+      "snippet": "The original HackerTyper. Turning all your hacker dreams into pseudo reality since 2011.Read more"
+    },
+    {
+      "title": "Qu’est-ce qu’un Hacker ? Tout savoir sur les types et méthodes",
+      "url": "https://www.mailinblack.com/ressources/glossaire/qu-est-ce-qu-un-hacker/",
+      "snippet": "Jun 19, 2025 · Découvrez ce qu’est vraiment un hacker : white hat, black hat… Apprenez à comprendre leurs méthodes et leur …Read more"
+    },
+    {
+      "title": "Hacker (sécurité informatique) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Hacker_(s%C3%A9curit%C3%A9_informatique)",
+      "snippet": "En sécurité informatique, le terme hacker, francisé hackeur ou hackeuse, désigne une personne qui recherche les moyens de …Read more"
+    },
+    {
+      "title": "Hacker Typer and Simulator — Type Like a Movie Hacker • Vinish.Dev",
+      "url": "https://vinish.dev/hacker-typer",
+      "snippet": "Hacker Typer and Simulator lets you type like a Hollywood hacker. Press any key and watch a realistic code stream across your screen.Read more"
+    }
+  ]
+}

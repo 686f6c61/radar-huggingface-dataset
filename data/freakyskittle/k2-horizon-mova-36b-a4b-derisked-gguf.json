@@ -5,7 +5,7 @@
   "author": "freakyskittle",
   "url": "https://huggingface.co/freakyskittle/K2-Horizon-MoVA-36B-A4B-DERISKED-GGUF",
   "created_at": "2026-09-24T02:38:11.000Z",
-  "updated_at": "2026-09-24T05:02:23.000Z",
+  "updated_at": "2026-09-25T15:53:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,12 +32,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 45,
+  "downloads_30d": 452,
   "trending_score": 0,
   "parameters": 37444792020,
   "parameters_human": "37.44B",
-  "storage_bytes": 307412619968,
-  "storage_human": "307.4 GB",
+  "storage_bytes": 307903755632,
+  "storage_human": "307.9 GB",
   "base_model": "Blackfrost-AI/K2-Horizon-MoVA-36B-A4B-DERISKED-BF16",
   "formats": [
     "gguf"

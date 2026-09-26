@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Swift-1.5-Qwen3.8-27B-Uncensored-MTP-GGUF",
+  "slug": "mradermacher-swift-1-5-qwen3-8-27b-uncensored-mtp-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Swift-1.5-Qwen3.8-27B-Uncensored-MTP-GGUF",
+  "created_at": "2026-09-25T18:45:22.000Z",
+  "updated_at": "2026-09-25T23:56:48.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "qwen3_8",
+    "mtp",
+    "en",
+    "base_model:ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP",
+    "base_model:quantized:ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780462624,
+  "storage_human": "190.8 GB",
+  "base_model": "ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

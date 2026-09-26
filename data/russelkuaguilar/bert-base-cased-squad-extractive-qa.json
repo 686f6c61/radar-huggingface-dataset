@@ -5,15 +5,16 @@
   "author": "RusselKuAguilar",
   "url": "https://huggingface.co/RusselKuAguilar/bert-base-cased-squad-extractive-qa",
   "created_at": "2026-09-25T12:42:59.000Z",
-  "updated_at": "2026-09-25T12:44:14.000Z",
+  "updated_at": "2026-09-25T23:40:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "question-answering",
-  "library": null,
+  "library": "transformers",
   "languages": [
     "en"
   ],
   "tags": [
+    "transformers",
     "safetensors",
     "bert",
     "question-answering",
@@ -22,7 +23,11 @@
     "extractive-qa",
     "en",
     "dataset:rajpurkar/squad",
+    "arxiv:1810.04805",
+    "arxiv:1606.05250",
+    "arxiv:1711.05101",
     "license:apache-2.0",
+    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,

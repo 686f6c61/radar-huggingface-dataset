@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "nikolaylahin/ApsuaTranslator-v1",
+  "slug": "nikolaylahin-apsuatranslator-v1",
+  "author": "nikolaylahin",
+  "url": "https://huggingface.co/nikolaylahin/ApsuaTranslator-v1",
+  "created_at": "2026-09-25T21:07:09.000Z",
+  "updated_at": "2026-09-25T21:07:09.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "apsua-translator",
+  "languages": [
+    "ab",
+    "ru"
+  ],
+  "tags": [
+    "apsua-translator",
+    "safetensors",
+    "translation",
+    "abkhaz",
+    "russian",
+    "pytorch",
+    "encoder-decoder",
+    "ab",
+    "ru",
+    "dataset:apsua/apsua-corpus",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 251116800,
+  "parameters_human": "251.1M",
+  "storage_bytes": 503154311,
+  "storage_human": "503 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "apsua/ApsuaTranslator-Lite-v1 · Hugging Face",
+      "url": "https://huggingface.co/apsua/ApsuaTranslator-Lite-v1",
+      "snippet": "ApsuaTranslator-Lite-v1 is a bidirectional Russian-Abkhaz model distilled from ApsuaTranslator-v1. Compared with the full model, its weight file is 6× smaller on disk, loaded weights use 3× less memory, and translation is 2.5× faster. It was developed as part of the Abkhaz Language Corpus project."
+    },
+    {
+      "title": "Math for AI Safety: An invitation for mathematicians - arXiv.org",
+      "url": "https://arxiv.org/html/2609.15289v1",
+      "snippet": "Abstract. Artificial intelligence threatens to outrun human understanding and control. New mathematics is needed to design AI that is legible, steerable, and cooperative with humanity. I organize this invitation by mathematical field, so you can turn straight to your own: logic and game theory for cooperation; probability for agency and world-models; algebra and representation theory for ..."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Collections / Free Models Free AI Models on OpenRouter Model rankings updated September 2026 based on real usage data. Models are ranked by total prompt and completion tokens processed through the OpenRouter API over the trailing 7 days. Showing the top 16 models. Rankings measure usage on OpenRouter and reflect adoption, not model quality or benchmark performance."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "A daily-updated, community-maintained list of every free AI model (free LLM API) available right now. No paywalls. No API key required to browse. Updated automatically every 24 hours by GitHub Actions pulling from OpenRouter, Pollinations AI, and other public sources."
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 272 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

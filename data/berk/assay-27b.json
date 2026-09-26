@@ -5,16 +5,16 @@
   "author": "Berk",
   "url": "https://huggingface.co/Berk/assay-27b",
   "created_at": "2026-09-21T17:02:24.000Z",
-  "updated_at": "2026-09-24T14:03:13.000Z",
+  "updated_at": "2026-09-25T10:30:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
-  "library": "transformers",
+  "library": "peft",
   "languages": [
     "en"
   ],
   "tags": [
-    "transformers",
+    "peft",
     "safetensors",
     "assay",
     "decision-model",
@@ -25,9 +25,8 @@
     "zero-shot-classification",
     "en",
     "base_model:Qwen/Qwen3.8-27B",
-    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
     "license:apache-2.0",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,

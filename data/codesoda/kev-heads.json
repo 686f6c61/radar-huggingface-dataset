@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "codesoda/kev-heads",
+  "slug": "codesoda-kev-heads",
+  "author": "codesoda",
+  "url": "https://huggingface.co/codesoda/kev-heads",
+  "created_at": "2026-09-25T22:13:36.000Z",
+  "updated_at": "2026-09-25T22:13:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "kev",
+    "systemone",
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9444240,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jaredpalmer/kev: Jev-like family of decision models built on ...",
+      "url": "https://github.com/jaredpalmer/kev",
+      "snippet": "Small Jev-like decision models you can train and run yourself. Kev is a family of small decision models built on Qwen3.5 and Qwen3.8 and based on the architecture described in Jev&#x27;s Architecture Unmasked. You can use the pretrained weights or train your own. The API matches TypeSafe&#x27;s System One, so you can point their Python SDK at your local server."
+    },
+    {
+      "title": "Kev — Open Decision Models (0.8B-27B): Specs & Scores | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/kev/",
+      "snippet": "Kev-0.8B, 4B and 9B are LoRA adapters with a pointer head on Qwen3.5 base models and share one training recipe; Kev-27B starts from the post-trained Qwen3.8-27B. Each checkpoint ships with a temperature fitted on held-out data, so its probabilities are calibrated by default."
+    },
+    {
+      "title": "Kev Model by Jared Palmer: Setup, Sizes & Benchmarks vs Jev",
+      "url": "https://laya-ai.com/system-one-models/kev",
+      "snippet": "Kev is Jared Palmer&#x27;s open, Jev-compatible System One model family (0.8B to 27B): how to run and fine-tune it, benchmarks vs Jev, and its limits."
+    },
+    {
+      "title": "Jaredpalmer API and Models | OpenRouter",
+      "url": "https://openrouter.ai/jaredpalmer",
+      "snippet": "Access 1 Jaredpalmer model through the OpenRouter unified API including Kev 4B. Compare pricing, context windows, benchmarks, and capabilities between different Jaredpalmer models."
+    },
+    {
+      "title": "Jared Palmer ports Kev to Qwen3.5 for roughly $95 in H100 time",
+      "url": "https://runtimewire.com/article/jared-palmer-kev-qwen35-decision-models",
+      "snippet": "Cognition VP Jared Palmer released open 0.8B, 4B and 9B Kev models for typed probabilistic decisions after a roughly $95 Qwen3.5 GPU port."
+    }
+  ]
+}

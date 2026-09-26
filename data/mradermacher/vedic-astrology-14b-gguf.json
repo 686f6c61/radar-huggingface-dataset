@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/vedic-astrology-14b-GGUF",
+  "slug": "mradermacher-vedic-astrology-14b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/vedic-astrology-14b-GGUF",
+  "created_at": "2026-09-25T23:17:03.000Z",
+  "updated_at": "2026-09-26T01:02:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "vedic",
+    "astrology",
+    "jyotish",
+    "qlora",
+    "peft",
+    "en",
+    "base_model:alokeshproy1964/vedic-astrology-14b",
+    "base_model:quantized:alokeshproy1964/vedic-astrology-14b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102043519392,
+  "storage_human": "102.0 GB",
+  "base_model": "alokeshproy1964/vedic-astrology-14b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Astral-14B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Astral-14B-GGUF",
+      "snippet": "mradermacher / Astral-14B-GGUF like 0 Transformers GGUF LucidityAI/Astral-Post-Training-Dataset English code chemistry finance biology conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "alokeshproy1964/vedic-astrology-14b · Hugging Face",
+      "url": "https://huggingface.co/alokeshproy1964/vedic-astrology-14b",
+      "snippet": "Vedic Astrology 14B A QLoRA fine-tune of Qwen2.5-14B-Instruct for Vedic astrology (Jyotish) readings, served via vLLM with a Gradio front-end and a deterministic chart engine."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 29 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "MyGGUF - GGUF Model Search & Download",
+      "url": "https://www.mygguf.com/",
+      "snippet": "Search and download GGUF models"
+    },
+    {
+      "title": "Grok2 - Vedic Astrology",
+      "url": "https://vedicastrology.wikidot.com/grok2",
+      "snippet": "The goal is not to chase fashionable AI claims, but to build useful local systems for Sanskrit corpus work, Jyotiṣa rule modelling, MBFR documents, pure-Hindi generation, code assistance, video/text pipelines, and tabular forecasting such as gold, rainfall, weather, and related numeric models."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Vivid824",
   "url": "https://huggingface.co/Vivid824/sip-frozen-20260924",
   "created_at": "2026-09-25T00:43:16.000Z",
-  "updated_at": "2026-09-25T02:09:47.000Z",
+  "updated_at": "2026-09-25T22:34:41.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 17422788127,
-  "storage_human": "17.4 GB",
+  "storage_bytes": 39375298017,
+  "storage_human": "39.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "canada-quant",
   "url": "https://huggingface.co/canada-quant/GLM-5.3-Flash-DFlash2-F",
   "created_at": "2026-09-24T16:22:09.000Z",
-  "updated_at": "2026-09-24T16:25:01.000Z",
+  "updated_at": "2026-09-25T11:58:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 354,
   "trending_score": 0,
   "parameters": 3111069696,
   "parameters_human": "3.11B",

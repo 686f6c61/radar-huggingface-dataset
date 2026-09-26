@@ -5,7 +5,7 @@
   "author": "Luminia",
   "url": "https://huggingface.co/Luminia/so101_pick_place_black_cube_on_red",
   "created_at": "2026-09-24T19:40:03.000Z",
-  "updated_at": "2026-09-24T20:53:08.000Z",
+  "updated_at": "2026-09-25T21:03:15.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,12 +16,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 2,
   "trending_score": 0,
   "parameters": 51591814,
   "parameters_human": "51.6M",
-  "storage_bytes": 210818939,
-  "storage_human": "211 MB",
+  "storage_bytes": 206936140,
+  "storage_human": "207 MB",
   "base_model": null,
   "formats": [
     "safetensors"

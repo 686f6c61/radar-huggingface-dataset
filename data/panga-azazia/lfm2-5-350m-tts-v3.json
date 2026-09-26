@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Panga-Azazia/LFM2.5-350M-TTS-v3",
+  "slug": "panga-azazia-lfm2-5-350m-tts-v3",
+  "author": "Panga-Azazia",
+  "url": "https://huggingface.co/Panga-Azazia/LFM2.5-350M-TTS-v3",
+  "created_at": "2026-09-25T13:51:09.000Z",
+  "updated_at": "2026-09-25T22:12:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "unsloth",
+    "conversational",
+    "base_model:Panga-Azazia/LFM2.5-350M-TTS",
+    "base_model:finetune:Panga-Azazia/LFM2.5-350M-TTS",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 382682880,
+  "parameters_human": "382.7M",
+  "storage_bytes": 765456801,
+  "storage_human": "765 MB",
+  "base_model": "Panga-Azazia/LFM2.5-350M-TTS",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Panga-Azazia/LFM2.5-350M-TTS-Spe · Hugging Face",
+      "url": "https://huggingface.co/Panga-Azazia/LFM2.5-350M-TTS-Spe",
+      "snippet": "Panga-Azazia / LFM2.5-350M-TTS-Spe like 0 Text Generation Transformers Safetensors lfm2 Generated from Trainer sft unsloth trl conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Panga-Azazia/LFM2.5-350M-TTS • hfviewer",
+      "url": "https://hfviewer.com/Panga-Azazia/LFM2.5-350M-TTS",
+      "snippet": "A Qwen3.5-family multimodal text-generation model from the XORTRON Criminal Computing project, fine-tuned from a DavidAU Qwen3.6 27B Fable Fusion base as an AI-safety and alignment research experiment."
+    },
+    {
+      "title": "Panga-Azazia/LFM2.5-350M-LORA-TTS · Hugging Face",
+      "url": "https://huggingface.co/Panga-Azazia/LFM2.5-350M-LORA-TTS",
+      "snippet": "Panga-Azazia / LFM2.5-350M-LORA-TTS like 0 Transformers Safetensors Generated from Trainer unsloth sft trl Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LFM2.5-350M: No Size Left Behind | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind",
+      "snippet": "Today, we&#x27;re releasing LFM2.5-350M, an improved version of our 350M model with additional pre-training (from 10T to 28T tokens) and large-scale reinforcement learning. Built on the LFM2 architecture, it delivers exceptionally fast inference and runs everywhere, from cloud GPUs to cheap CPUs."
+    },
+    {
+      "title": "LFM2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2511.23404v1",
+      "snippet": "Moving from the LFM2 language backbone to specific applications, we introduce the LFM2-VL (Section 5) and LFM2-Audio (Section 6) multimodal models, covering their design, training, and evaluation, as well as the LFM2-ColBERT-350M model for information retrieval."
+    }
+  ]
+}
