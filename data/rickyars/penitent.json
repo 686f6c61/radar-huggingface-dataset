@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rickyars/penitent",
+  "slug": "rickyars-penitent",
+  "author": "rickyars",
+  "url": "https://huggingface.co/rickyars/penitent",
+  "created_at": "2026-09-26T19:03:46.000Z",
+  "updated_at": "2026-09-26T19:03:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "art",
+    "text-classification",
+    "base_model:jhu-clsp/ettin-encoder-68m",
+    "base_model:quantized:jhu-clsp/ettin-encoder-68m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75986239,
+  "storage_human": "76 MB",
+  "base_model": "jhu-clsp/ettin-encoder-68m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KNOT | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/knot",
+      "snippet": "KNOT definition: 1. a join made by tying together the ends of a piece or pieces of string, rope, cloth, etc.: 2. a…. Learn more."
+    },
+    {
+      "title": "Knot (unit) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Knot_(unit)",
+      "snippet": "The knot is used in meteorology, and in maritime and air navigation. A vessel travelling at 1 knot along a meridian travels …"
+    },
+    {
+      "title": "KNOT Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/knot",
+      "snippet": "3 days ago · The meaning of KNOT is an interlacement of the parts of one or more flexible bodies forming a lump or knob (as for …"
+    },
+    {
+      "title": "KNOT | definition in the Cambridge English Dictionary",
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/knot",
+      "snippet": "KNOT meaning: 1. a join made by tying together the ends of a piece or pieces of string, rope, cloth, etc.: 2. a…. Learn more."
+    },
+    {
+      "title": "What Are Knots? The History and Uses",
+      "url": "https://www.theknotsmanual.com/knots/",
+      "snippet": "Nov 11, 2023 · A knot is a structure made on a length of rope by twisting the rope around itself. Knots often bind the rope to itself or …"
+    }
+  ]
+}

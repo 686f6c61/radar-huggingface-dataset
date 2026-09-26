@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "moeru-ai/sherpa-onnx-kws-zipformer-zh-en-3M-2025-12-20",
+  "slug": "moeru-ai-sherpa-onnx-kws-zipformer-zh-en-3m-2025-12-20",
+  "author": "moeru-ai",
+  "url": "https://huggingface.co/moeru-ai/sherpa-onnx-kws-zipformer-zh-en-3M-2025-12-20",
+  "created_at": "2026-09-26T18:33:10.000Z",
+  "updated_at": "2026-09-26T18:33:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "keyword-spotting",
+    "sherpa-onnx",
+    "sherpaw",
+    "onnx",
+    "webassembly",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13076183,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

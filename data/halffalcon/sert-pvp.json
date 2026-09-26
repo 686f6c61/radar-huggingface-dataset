@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HalfFalcon/Sert-PVP",
+  "slug": "halffalcon-sert-pvp",
+  "author": "HalfFalcon",
+  "url": "https://huggingface.co/HalfFalcon/Sert-PVP",
+  "created_at": "2026-09-26T18:31:28.000Z",
+  "updated_at": "2026-09-26T18:31:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Befristing mit Sachgrund leicht erklärt - FAQ",
+      "url": "https://www.juraforum.de/lexikon/befristetes-arbeitsverhaeltnis-sachgrund",
+      "snippet": "Jul 18, 2026 · Was ist ein befristeter Arbeitsvertrag mit Sachgrund? Wie oft darf ein Arbeitsvertrag mit Befristung verlängert werden? …"
+    },
+    {
+      "title": "LAG Düsseldorf: Keine Kündigung wegen genehmigter Elternzeit …",
+      "url": "https://www.juraforum.de/news/lag-duesseldorf-keine-kuendigung-wegen-genehmigter-elternzeit-antraege_273325",
+      "snippet": "Feb 3, 2026 · Elternzeit (§ 15 BEEG): Rechte der Mitarbeiter und Grenzen für den Arbeitgeber Die Elternzeitregelungen im …"
+    },
+    {
+      "title": "[+18] Les chaleurs de la nuit !! sur le forum Blabla 15-18 ans - 26-05 ...",
+      "url": "https://www.jeuxvideo.com/forums/1-50-162412714-1-0-1-0-18-les-chaleurs-de-la-nuit.htm",
+      "snippet": "May 26, 2014 · C'est l'heure, parlons de S... de? DE SEEEEEEXEEEEEEE J'ai envie de vider mes grosses bourses. Un bon film à …"
+    },
+    {
+      "title": "Voici le raccourci clavier ultime pour sauver votre session de jeu sans ...",
+      "url": "https://www.jeuxvideo.com/news/2075678/voici-le-raccourci-clavier-ultime-pour-sauver-votre-session-de-jeu-sans-redemarrer-votre-pc.htm",
+      "snippet": "Apr 17, 2026 · N’importe quel gamer PC a déjà vécu la frustration d’un plantage en pleine partie : l’écran se fige sans crier gare, les …"
+    },
+    {
+      "title": "Ruhendes Arbeitsverhältnis Definition, Gründe & Urlaub",
+      "url": "https://www.juraforum.de/lexikon/ruhen-des-arbeitsverhaeltnisses",
+      "snippet": "Mar 17, 2026 · Gesetzliche Gründe für ein ruhendes Arbeitsverhältnis ist neben der Elternzeit gemäß BEEG die Ableistung des Wehr …"
+    }
+  ]
+}

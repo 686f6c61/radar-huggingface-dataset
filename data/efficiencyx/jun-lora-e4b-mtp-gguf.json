@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "efficiencyx/Jun-LoRA-E4B-MTP-GGUF",
+  "slug": "efficiencyx-jun-lora-e4b-mtp-gguf",
+  "author": "efficiencyx",
+  "url": "https://huggingface.co/efficiencyx/Jun-LoRA-E4B-MTP-GGUF",
+  "created_at": "2026-09-26T12:12:44.000Z",
+  "updated_at": "2026-09-26T12:12:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "mtp",
+    "speculative-decoding",
+    "draft-model",
+    "en",
+    "base_model:google/gemma-4-E4B-it-qat-q4_0-unquantized-assistant",
+    "base_model:quantized:google/gemma-4-E4B-it-qat-q4_0-unquantized-assistant",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 77993732,
+  "parameters_human": "78.0M",
+  "storage_bytes": 77250080,
+  "storage_human": "77 MB",
+  "base_model": "google/gemma-4-E4B-it-qat-q4_0-unquantized-assistant",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

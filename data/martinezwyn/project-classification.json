@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "martinezwyn/project-classification",
+  "slug": "martinezwyn-project-classification",
+  "author": "martinezwyn",
+  "url": "https://huggingface.co/martinezwyn/project-classification",
+  "created_at": "2026-09-26T01:08:17.000Z",
+  "updated_at": "2026-09-26T01:08:22.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forums - GTAW France",
+      "url": "https://forum-fr.gta.world/",
+      "snippet": "Cette partie est destinée à être progressivement déplacées vers les guides."
+    },
+    {
+      "title": "plus d'articles dans les pharmacies - Bugs & Problèmes - GTAW France",
+      "url": "https://forum-fr.gta.world/topic/28763-plus-darticles-dans-les-pharmacies/",
+      "snippet": "Sep 3, 2026 · Ce serait bien de pouvoirs acheter à nouveau seringue, pipe à crack, narcan et bandages svp"
+    },
+    {
+      "title": "Apostles Motorcycle Club - Community Association",
+      "url": "https://forum-fr.gta.world/topic/28789-apostles-motorcycle-club-community-association/",
+      "snippet": "Sep 7, 2026 · APOSTLES MC — LOS SANTOS Des routes différentes, une même direction. À Los Santos, beaucoup portent un …"
+    },
+    {
+      "title": "Archives - GTAW France",
+      "url": "https://forum-fr.gta.world/forum/44-archives/",
+      "snippet": "Par streetgeneral., le 19 décembre 2024 Grape Street WVG (et 1 en plus)"
+    },
+    {
+      "title": "Groovin Hunnid Boys - Factions illégales - GTAW France",
+      "url": "https://forum-fr.gta.world/topic/28709-groovin-hunnid-boys/",
+      "snippet": "Aug 26, 2026 · 25/10/2006 - 19/07/2026, Mort de Yung Soulja aKa YS, Baby Grinch Alors que Jerome Rincon sortait du parking du …"
+    }
+  ]
+}

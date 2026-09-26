@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Arushhh/amlc-ce-loco-base-India",
+  "slug": "arushhh-amlc-ce-loco-base-india",
+  "author": "Arushhh",
+  "url": "https://huggingface.co/Arushhh/amlc-ce-loco-base-India",
+  "created_at": "2026-09-26T01:32:50.000Z",
+  "updated_at": "2026-09-26T01:33:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 278044417,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129284983,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

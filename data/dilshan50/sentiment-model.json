@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Dilshan50/sentiment-model",
+  "slug": "dilshan50-sentiment-model",
+  "author": "Dilshan50",
+  "url": "https://huggingface.co/Dilshan50/sentiment-model",
+  "created_at": "2026-09-26T15:58:35.000Z",
+  "updated_at": "2026-09-26T15:58:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955779,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267840845,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Transports en commun de Rennes Métropole | STAR",
+      "url": "https://www.star.fr/",
+      "snippet": "5 days ago · bus, métro, vélo, covoiturage et handistar, STAR est un service de transport public de voyageurs organisé par Rennes …Read more"
+    },
+    {
+      "title": "Itinéraires en bus, métro, vélo et covoiturage | STAR",
+      "url": "https://www.star.fr/se-deplacer/preparer-un-itineraire",
+      "snippet": "Le réseau STAR vous accompagne dans tous vos déplacements à travers la métropole rennaise ! En bus, en métro, en vélo, en …"
+    },
+    {
+      "title": "Boutique - STAR - Programme de fidélité",
+      "url": "https://fidelite.star.fr/shop",
+      "snippet": "Programme de fidélité - STAR - Changez vos habitudes pour une mobilité plus durable et soyez récompensé !"
+    },
+    {
+      "title": "Accueil - STAR, le vélo",
+      "url": "https://location-velo.star.fr/",
+      "snippet": "Accueil Vous souhaitez vous abonner à STAR, le vélo en libre-service ? C'est par ici"
+    },
+    {
+      "title": "Explorer le catalogue d'actifs — STAR Data Explore",
+      "url": "https://data.explore.star.fr/explore/",
+      "snippet": "Description unavailable STAR Data Explore Conditions d'utilisation Politique de confidentialité"
+    }
+  ]
+}

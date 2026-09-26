@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "1bit-MONSTER/Qwen2.5-3B-Instruct-GGUF",
+  "slug": "1bit-monster-qwen2-5-3b-instruct-gguf",
+  "author": "1bit-MONSTER",
+  "url": "https://huggingface.co/1bit-MONSTER/Qwen2.5-3B-Instruct-GGUF",
+  "created_at": "2026-09-26T13:53:06.000Z",
+  "updated_at": "2026-09-26T13:53:18.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 2104932768,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

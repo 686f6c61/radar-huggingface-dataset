@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "myliu/AutoTailor-ae",
+  "slug": "myliu-autotailor-ae",
+  "author": "myliu",
+  "url": "https://huggingface.co/myliu/AutoTailor-ae",
+  "created_at": "2026-09-26T15:47:22.000Z",
+  "updated_at": "2026-09-26T16:15:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-classification",
+    "dataset:imagenet-1k",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1892281321,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

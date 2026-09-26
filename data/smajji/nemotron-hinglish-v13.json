@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "smajji/nemotron-hinglish-v13",
+  "slug": "smajji-nemotron-hinglish-v13",
+  "author": "smajji",
+  "url": "https://huggingface.co/smajji/nemotron-hinglish-v13",
+  "created_at": "2026-09-26T18:37:42.000Z",
+  "updated_at": "2026-09-26T18:42:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "nemo",
+  "languages": [],
+  "tags": [
+    "nemo",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2553098240,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daily Jang: Urdu News - Latest Breaking News update Pakistan - jang…",
+      "url": "https://jang.com.pk/",
+      "snippet": "Get Updates about Pakistan latest, breaking, urdu news, top headlines and Top Articles in Urdu and english, World, Sports, …Read more"
+    },
+    {
+      "title": "Daily Jang Urdu News | Pakistan News | Latest News - Breaking News",
+      "url": "https://e.jang.com.pk/",
+      "snippet": "Daily Jang deliver latest news, breaking news, current news, top headlines in Urdu from Pakistan, World, Sports, Business, Cricket , …Read more"
+    },
+    {
+      "title": "Urdu News - Latest Breaking News update Pakistan - Daily Jang",
+      "url": "https://jang.com.pk/category/latest-news",
+      "snippet": "Get Updates about Taza Tareen News Updates- Latest News, Breakings, Urdu News, Pakistan Updates, Current affairs, …Read more"
+    },
+    {
+      "title": "Today's Paper - Jang Newspaper, Today's Urdu Newspaper ... - Daily Jang",
+      "url": "https://jang.com.pk/category/today-newspaper",
+      "snippet": "Jang Newspaper - Aaj ka Akhbar - Roznama Jang - Reads Todays Daily Jang Urdu newspaper, Todays Headlines, Current News, …Read more"
+    },
+    {
+      "title": "اردو نیوز - Latest News in Urdu, Pakistan News Urdu - Daily Jang",
+      "url": "https://jang.com.pk/category/urdu-news",
+      "snippet": "Urdu News, Latest News in Urdu, Pakistan Urdu News, Get Latest News & Live Updates from Pakistan, World, Sports, Business, …Read more"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/Mixtral-8x7B-v0.1",
+  "slug": "archivestudio-mixtral-8x7b-v0-1",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/Mixtral-8x7B-v0.1",
+  "created_at": "2026-09-26T13:59:35.000Z",
+  "updated_at": "2026-09-26T13:59:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [
+    "fr",
+    "it",
+    "de",
+    "es",
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mixtral",
+    "moe",
+    "mistral-common",
+    "fr",
+    "it",
+    "de",
+    "es",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 46702792704,
+  "parameters_human": "46.70B",
+  "storage_bytes": 190481973667,
+  "storage_human": "190.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

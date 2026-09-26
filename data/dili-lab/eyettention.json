@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "DiLi-Lab/Eyettention",
+  "slug": "dili-lab-eyettention",
+  "author": "DiLi-Lab",
+  "url": "https://huggingface.co/DiLi-Lab/Eyettention",
+  "created_at": "2026-09-26T18:28:29.000Z",
+  "updated_at": "2026-09-26T18:33:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2304.10784",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 894713248,
+  "storage_human": "895 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dili — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Dili",
+      "snippet": "Dili est fondée vers 1520 par le Portugal, qui en fait la capitale du Timor portugais en 1769. Durant la Seconde Guerre mondiale, la …"
+    },
+    {
+      "title": "Dili, filiale de Digit RE Group",
+      "url": "https://www.digitregroup.com/dili/",
+      "snippet": "Vendez rapidement et facilement votre bien immobilier avec la plateforme Dili, filiale du groupe Digit RE Group."
+    },
+    {
+      "title": "Dili - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dili",
+      "snippet": "Dili became the capital of an independent Timor-Leste in 2002. A period of violence in 2006 saw another period of infrastructure …"
+    },
+    {
+      "title": "DILI, une nouvelle marque pour une vente immobilière accélérée",
+      "url": "https://monimmeuble.com/actualite/dili-la-vente-immobiliere-acceleree",
+      "snippet": "May 31, 2018 · DILI, une nouvelle marque, dédiée aux particuliers vendeurs d’un bien immobilier, pour une promesse de vente …"
+    },
+    {
+      "title": "Dili - LinkedIn",
+      "url": "https://fr.linkedin.com/company/dili-fr",
+      "snippet": "À propos Dili est une entreprise de DigitRE, le pôle immobilier du groupe LFPI. Lancée en mai 2018, Dili achète votre bien immobilier …"
+    }
+  ]
+}

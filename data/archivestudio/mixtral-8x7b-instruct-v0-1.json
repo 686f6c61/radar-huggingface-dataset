@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/Mixtral-8x7B-Instruct-v0.1",
+  "slug": "archivestudio-mixtral-8x7b-instruct-v0-1",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/Mixtral-8x7B-Instruct-v0.1",
+  "created_at": "2026-09-26T13:59:38.000Z",
+  "updated_at": "2026-09-26T13:59:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [
+    "fr",
+    "it",
+    "de",
+    "es",
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mixtral",
+    "fr",
+    "it",
+    "de",
+    "es",
+    "en",
+    "base_model:mistralai/Mixtral-8x7B-v0.1",
+    "base_model:finetune:mistralai/Mixtral-8x7B-v0.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 46702792704,
+  "parameters_human": "46.70B",
+  "storage_bytes": 190481973667,
+  "storage_human": "190.5 GB",
+  "base_model": "mistralai/Mixtral-8x7B-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Live Sex Cams, Cam Girls, Adult Chat & Pornstar Cams | Camsoda",
+      "url": "https://www.camsoda.com/",
+      "snippet": "Join Camsoda for the hottest live cam girls! Free HD webcam shows, private sessions, and real-time chat with sexy models. Watch …"
+    },
+    {
+      "title": "Live Cam Girls - Free Nude Webcams - Camsoda",
+      "url": "https://www.camsoda.com/girls",
+      "snippet": "Watch live cam girls free on Camsoda. Thousands of models online now — solo shows, cam-to-cam, VR streams. No account …"
+    },
+    {
+      "title": "Camsoda - Porn Maker - XNXX.COM",
+      "url": "https://www.xnxx.com/porn-maker/camsoda",
+      "snippet": "Hot Mexican Teen Nola Exico gets some big black cock inside of her 31.8M 6min - 1080p Camsoda"
+    },
+    {
+      "title": "Camsoda - Channel page - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/channels/camsoda",
+      "snippet": "CamSoda is the most advanced social cam network on the internet. We bring together the hottest girls, the most advanced …"
+    },
+    {
+      "title": "CamSoda ️ Free Adult Webcams & Live Sex Cams •",
+      "url": "https://camsoda.webcam/",
+      "snippet": "CamSoda puts thousands of live sex cams in front of you without asking for a signup or a credit card. Every room is open, every …"
+    }
+  ]
+}

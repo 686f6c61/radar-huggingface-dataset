@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "beshkenadze/whisper-base-language-id-onnx",
+  "slug": "beshkenadze-whisper-base-language-id-onnx",
+  "author": "beshkenadze",
+  "url": "https://huggingface.co/beshkenadze/whisper-base-language-id-onnx",
+  "created_at": "2026-09-26T14:18:35.000Z",
+  "updated_at": "2026-09-26T14:18:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "onnx",
+    "language-identification",
+    "spoken-language-identification",
+    "whisper",
+    "audio-classification",
+    "multilingual",
+    "base_model:openai/whisper-base",
+    "base_model:quantized:openai/whisper-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185286763,
+  "storage_human": "185 MB",
+  "base_model": "openai/whisper-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Google image",
+      "url": "https://images.google.com/?hl=pcm",
+      "snippet": "Google Image. Na de better image search wey dey web."
+    },
+    {
+      "title": "Google",
+      "url": "https://images.google.com/xhtml",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Bilder",
+      "url": "https://images.google.com/?hl=de",
+      "snippet": "Google Bilder, die umfassendste Bildersuche im Web"
+    },
+    {
+      "title": "Google Immagini",
+      "url": "https://images.google.com/?hl=it",
+      "snippet": "Google Immagini. Il sistema più completo per la ricerca di immagini sul Web."
+    }
+  ]
+}

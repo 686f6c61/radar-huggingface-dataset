@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/TARA-English-Tutor-3B-GGUF",
+  "slug": "mradermacher-tara-english-tutor-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TARA-English-Tutor-3B-GGUF",
+  "created_at": "2026-09-26T01:16:48.000Z",
+  "updated_at": "2026-09-26T01:36:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "smollm3",
+    "education",
+    "english-tutor",
+    "structured-output",
+    "experimental",
+    "merged",
+    "en",
+    "dataset:sraivante/TARA-English-Tutor-Instructions",
+    "base_model:sraivante/TARA-English-Tutor-3B",
+    "base_model:quantized:sraivante/TARA-English-Tutor-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 350,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 27753644288,
+  "storage_human": "27.8 GB",
+  "base_model": "sraivante/TARA-English-Tutor-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

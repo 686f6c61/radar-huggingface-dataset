@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fatdove/so101-cylinder-cube-bowl_GR00T17",
+  "slug": "fatdove-so101-cylinder-cube-bowl_gr00t17",
+  "author": "fatdove",
+  "url": "https://huggingface.co/fatdove/so101-cylinder-cube-bowl_GR00T17",
+  "created_at": "2026-09-26T02:03:37.000Z",
+  "updated_at": "2026-09-26T02:04:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "dataset:fatdove/so101-cylinder-cube-bowl",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/welearn365.com",
+      "snippet": "OutlookRead more"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/owa/cridf.iledefrance.fr",
+      "snippet": "OutlookRead more"
+    },
+    {
+      "title": "na01.safelinks.protection.outlook.com",
+      "url": "https://na01.safelinks.protection.outlook.com/apple-app-site-association",
+      "snippet": "{ \"applinks\": { \"apps\": [], \"details\": [ { \"appIDs\": [\"9KBH5RKYEW.com.microsoft.loop-dogfood\", \"SGGM6D27TK.com.microsoft.loop\"], …Read more"
+    },
+    {
+      "title": "Outlook.com",
+      "url": "https://olmoauth.outlook.com/api/googleoauthredir/outlook-oauth://com.microsoft.office.outlook/android/google/oauth2redirect?state=33456429-8e5c-44a5-9cc4-6cbe85698cb0",
+      "snippet": "Outlook.comRead more"
+    },
+    {
+      "title": "ps.outlook.com",
+      "url": "https://ps.outlook.com/Powershell",
+      "snippet": "Shërbimi Outlook për menaxhimin e email-eve dhe kalendarit tuaj.Read more"
+    }
+  ]
+}

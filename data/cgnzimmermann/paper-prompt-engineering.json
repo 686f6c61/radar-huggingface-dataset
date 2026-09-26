@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "cgnzimmermann/paper-prompt-engineering",
+  "slug": "cgnzimmermann-paper-prompt-engineering",
+  "author": "cgnzimmermann",
+  "url": "https://huggingface.co/cgnzimmermann/paper-prompt-engineering",
+  "created_at": "2026-09-26T02:10:19.000Z",
+  "updated_at": "2026-09-26T02:10:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

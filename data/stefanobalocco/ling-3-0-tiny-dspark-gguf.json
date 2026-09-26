@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "StefanoBalocco/Ling-3.0-Tiny-DSpark-GGUF",
+  "slug": "stefanobalocco-ling-3-0-tiny-dspark-gguf",
+  "author": "StefanoBalocco",
+  "url": "https://huggingface.co/StefanoBalocco/Ling-3.0-Tiny-DSpark-GGUF",
+  "created_at": "2026-09-26T13:05:32.000Z",
+  "updated_at": "2026-09-26T13:06:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "base_model:jayyun98/Ling-3.0-Tiny-DSpark",
+    "base_model:quantized:jayyun98/Ling-3.0-Tiny-DSpark",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 274217729,
+  "parameters_human": "274.2M",
+  "storage_bytes": 1433934912,
+  "storage_human": "1.4 GB",
+  "base_model": "jayyun98/Ling-3.0-Tiny-DSpark",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

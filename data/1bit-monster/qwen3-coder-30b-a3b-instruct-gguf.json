@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "1bit-MONSTER/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+  "slug": "1bit-monster-qwen3-coder-30b-a3b-instruct-gguf",
+  "author": "1bit-MONSTER",
+  "url": "https://huggingface.co/1bit-MONSTER/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+  "created_at": "2026-09-26T13:47:27.000Z",
+  "updated_at": "2026-09-26T13:49:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "moe",
+    "coder",
+    "base_model:Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 18556689568,
+  "storage_human": "18.6 GB",
+  "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct, unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sql server - What is MSSQL exception code for \"SHUTDOWN is in …",
+      "url": "https://stackoverflow.com/questions/27400749/what-is-mssql-exception-code-for-shutdown-is-in-progress-login-failed-for-user",
+      "snippet": "Dec 10, 2014 · What is MSSQL exception code for \"SHUTDOWN is in progress. Login failed for user ''XXXX''. Only administrators …Read more"
+    },
+    {
+      "title": ".net - Error \"Could not find xxxx.Program specified for main method ...",
+      "url": "https://stackoverflow.com/questions/25555731/error-could-not-find-xxxx-program-specified-for-main-method-creating-windows-s",
+      "snippet": "Aug 29, 2014 · I get this error \"Could not find BrainiacV2.Program\" specified for Main Method I did everything the tutorial told me to. I …"
+    },
+    {
+      "title": "Sexuality | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/sexuality.7/",
+      "snippet": "1 day ago · This forum is to discuss sex seriously. Ask for tips and advice here."
+    },
+    {
+      "title": "Personals | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/personals.5/",
+      "snippet": "1 day ago · Big Changes Are Coming to the Forum! We’ve got some exciting news to share — the forum is moving to a brand-new …"
+    },
+    {
+      "title": "如何用语言学分析句型“XXXX偶遇YYYY，ZZZZ强如怪物，拼尽全力也 …",
+      "url": "https://www.zhihu.com/question/6137044421",
+      "snippet": "Dec 6, 2024 · 你不了解怎么分析呢 这个是某个魂系up某期视频的标题，而且我记得一开始结尾是“拼尽全力战胜他” 正确翻译： 我 …"
+    }
+  ]
+}

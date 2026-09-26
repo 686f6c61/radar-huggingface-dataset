@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ForgeWorks/ForgePlex-M1-6M",
+  "slug": "forgeworks-forgeplex-m1-6m",
+  "author": "ForgeWorks",
+  "url": "https://huggingface.co/ForgeWorks/ForgePlex-M1-6M",
+  "created_at": "2026-09-23T10:04:39.000Z",
+  "updated_at": "2026-09-23T11:20:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "language-model",
+    "rope",
+    "swiglu",
+    "gqa",
+    "forgeplex",
+    "forgeworks",
+    "trainwork",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 230,
+  "trending_score": 12,
+  "parameters": 6584928,
+  "parameters_human": "6.6M",
+  "storage_bytes": 52698856,
+  "storage_human": "53 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quora - A place to share knowledge and better understand the world",
+      "url": "https://www.quora.com/Can-you-share-your-pictures-while-having-sex",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "What is Quora's policy on adding images and videos?",
+      "url": "https://help.quora.com/hc/en-us/articles/360000470306-What-is-Quora-s-policy-on-adding-images-and-videos",
+      "snippet": "Because user profile pictures, Space icons/cover photos, and topic images appear throughout the site, sex-related image content is …"
+    },
+    {
+      "title": "What is considered ‘Adult’ content on Quora? - Quora Help Center",
+      "url": "https://help.quora.com/hc/en-us/articles/4405052142868-What-is-considered-Adult-content-on-Quora",
+      "snippet": "Quora defines adult content as any content (e.g., writing, imagery, or video) that is pornographic, depicts a sexual act, or is otherwise …"
+    },
+    {
+      "title": "Quora - A place to share knowledge and better understand the world",
+      "url": "https://en.quora.com/",
+      "snippet": "It's a platform to ask questions and connect with people who contribute unique insights and quality answers. This empowers people …"
+    },
+    {
+      "title": "Quora FAQs - Comparably",
+      "url": "https://www.comparably.com/companies/quora/faqs",
+      "snippet": "Include a humorous, sex-related, or graphically violent image or video that isn't helpful to someone interested in learning the answer …"
+    }
+  ]
+}

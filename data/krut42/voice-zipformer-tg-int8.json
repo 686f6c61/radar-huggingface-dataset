@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "krut42/voice-zipformer-tg-int8",
+  "slug": "krut42-voice-zipformer-tg-int8",
+  "author": "krut42",
+  "url": "https://huggingface.co/krut42/voice-zipformer-tg-int8",
+  "created_at": "2026-09-26T15:42:50.000Z",
+  "updated_at": "2026-09-26T15:43:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "tg"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "zipformer",
+    "vosk",
+    "int8",
+    "automatic-speech-recognition",
+    "tg",
+    "dataset:Peacockery/tajik-asr-corpus-v3",
+    "base_model:alphacep/vosk-model-tg",
+    "base_model:quantized:alphacep/vosk-model-tg",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73229055,
+  "storage_human": "73 MB",
+  "base_model": "alphacep/vosk-model-tg",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/Mixtral-8x22B-v0.1",
+  "slug": "archivestudio-mixtral-8x22b-v0-1",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/Mixtral-8x22B-v0.1",
+  "created_at": "2026-09-26T13:59:45.000Z",
+  "updated_at": "2026-09-26T13:59:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [
+    "fr",
+    "it",
+    "de",
+    "es",
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mixtral",
+    "moe",
+    "mistral-common",
+    "fr",
+    "it",
+    "de",
+    "es",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 140620634112,
+  "parameters_human": "140.62B",
+  "storage_bytes": 281241986787,
+  "storage_human": "281.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "java - The webpage at file:///android_asset/file.html could not be ...",
+      "url": "https://stackoverflow.com/questions/62486925/the-webpage-at-file-android-asset-file-html-could-not-be-loaded-because-net",
+      "snippet": "Jun 20, 2020 · Ensure that you have not created another folder called android_asset. Since you've not shown your assets directory, …Read more"
+    },
+    {
+      "title": "sqlite - How to open file:///private/var/mobile/Containers/Shared ...",
+      "url": "https://stackoverflow.com/questions/45179968/how-to-open-file-private-var-mobile-containers-shared-appgroup-folder-on-mac",
+      "snippet": "Jul 19, 2017 · I'm trying to use fileProvider in iOS 11 and have a database at …"
+    },
+    {
+      "title": "有哪个大佬可以解释一下ippa？ - 知乎",
+      "url": "https://www.zhihu.com/question/322372522",
+      "snippet": "ippa 是日本的知识产权缩写,所以你看到右上角的IPPA加一串数字，实际就是 知识产权号。多用于近现代黑色爱情动作电影，日本拍 …"
+    }
+  ]
+}

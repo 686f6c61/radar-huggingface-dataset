@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "nativ-community/Mage-VL-OptiQ-4bit",
+  "slug": "nativ-community-mage-vl-optiq-4bit",
+  "author": "nativ-community",
+  "url": "https://huggingface.co/nativ-community/Mage-VL-OptiQ-4bit",
+  "created_at": "2026-09-26T13:07:04.000Z",
+  "updated_at": "2026-09-26T13:07:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mage_vl",
+    "optiq",
+    "quantized",
+    "4bit",
+    "mixed-precision",
+    "mage-vl",
+    "multimodal",
+    "vision-language-model",
+    "video-understanding",
+    "image-text-to-text",
+    "apple-silicon",
+    "conversational",
+    "base_model:microsoft/Mage-VL",
+    "base_model:quantized:microsoft/Mage-VL",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 3927660418,
+  "storage_human": "3.9 GB",
+  "base_model": "microsoft/Mage-VL",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "byNativ | Voyage sur mesure - Agences de voyage locales",
+      "url": "https://www.bynativ.com/",
+      "snippet": "byNativ, la communauté d'agences de voyage locales francophones. Votre voyage sur mesure avec des conseillers locaux vivant à …Read more"
+    },
+    {
+      "title": "Native Instruments - Software And Hardware For Music Production …",
+      "url": "https://www.native-instruments.com/fr/",
+      "snippet": "Native Instruments is a leading manufacturer of software and hardware for computer-based audio production and DJing.Read more"
+    },
+    {
+      "title": "Natif : Marque de vêtement Française au style surf et good vibes",
+      "url": "https://natif-shop.com/",
+      "snippet": "Natif, la marque de vêtement Française au style surf et good vibes pour homme, femme et enfant. Des vêtements tendances et …Read more"
+    },
+    {
+      "title": "Nativ — AI PDF Language Tutor",
+      "url": "https://www.nativ.to/",
+      "snippet": "Nativ is an AI language learning platform. Upload your own PDF textbooks and chat with an AI tutor that answers questions …Read more"
+    },
+    {
+      "title": "Porte d’entrée NATIV 3 - Porte d'entrée bois | Zilten",
+      "url": "https://www.zilten.com/produits/nativ-3/",
+      "snippet": "Nativ incarne la nouvelle génération de portes Bois : des lignes contemporaines sublimées par le Red Cedar, une isolation …Read more"
+    }
+  ]
+}

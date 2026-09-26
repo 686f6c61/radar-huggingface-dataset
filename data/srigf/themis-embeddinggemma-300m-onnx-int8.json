@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "srigf/themis-embeddinggemma-300m-onnx-int8",
+  "slug": "srigf-themis-embeddinggemma-300m-onnx-int8",
+  "author": "srigf",
+  "url": "https://huggingface.co/srigf/themis-embeddinggemma-300m-onnx-int8",
+  "created_at": "2026-09-26T01:10:14.000Z",
+  "updated_at": "2026-09-26T01:28:00.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embeddings",
+    "int8",
+    "themis",
+    "feature-extraction",
+    "base_model:google/embeddinggemma-300m",
+    "base_model:quantized:google/embeddinggemma-300m",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 343401667,
+  "storage_human": "343 MB",
+  "base_model": "google/embeddinggemma-300m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

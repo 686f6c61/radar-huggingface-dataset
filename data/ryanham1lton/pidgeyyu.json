@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/PidgeyYU",
+  "slug": "ryanham1lton-pidgeyyu",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/PidgeyYU",
+  "created_at": "2026-09-26T14:20:30.000Z",
+  "updated_at": "2026-09-26T14:22:13.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122026337,
+  "storage_human": "122 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "File Explorer in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Find and open File Explorer in Windows, and customize Quick access by pinning and removing files and folders."
+    },
+    {
+      "title": "Get Help with File Explorer in Windows: Easy Solutions",
+      "url": "https://www.wikihow.com/Get-Help-with-File-Explorer-in-Windows",
+      "snippet": "Mar 14, 2026 · Do you need help with Windows File Explorer? If you're having issues using or launching the application, it's easy to …"
+    },
+    {
+      "title": "File Explorer | Microsoft Windows",
+      "url": "https://www.microsoft.com/en-us/windows/tips/file-explorer?msockid=08039e0b7d3d6ae737b089eb7c0f6b3b",
+      "snippet": "Press Windows logo key + E to open File Explorer and find the files and folders you need, including those on OneDrive. You can use …"
+    },
+    {
+      "title": "Get Help With File Explorer in Windows 11 & 10 (Ultimate Guide)",
+      "url": "https://geekzag.com/guides/computers/get-help-with-file-explorer-in-windows/",
+      "snippet": "Feb 9, 2026 · File Explorer is an essential tool in Windows. It helps you manage your files and folders. This guide provides …"
+    },
+    {
+      "title": "Get Help With File Explorer in Windows 11/10",
+      "url": "https://techbaked.com/get-help-file-explorer-windows/",
+      "snippet": "Sep 13, 2026 · In this guide, we’ll explain how to get help with File Explorer in Windows 11 and Windows 10, along with how to use its …"
+    }
+  ]
+}

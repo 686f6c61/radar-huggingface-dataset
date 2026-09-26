@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "0xra/Rogue-RVC",
+  "slug": "0xra-rogue-rvc",
+  "author": "0xra",
+  "url": "https://huggingface.co/0xra/Rogue-RVC",
+  "created_at": "2026-09-26T19:04:20.000Z",
+  "updated_at": "2026-09-26T19:28:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "rvc",
+    "rvc-v2",
+    "applio",
+    "voice-conversion",
+    "retrieval-based-voice-conversion",
+    "contentvec",
+    "rmvpe",
+    "hifigan",
+    "48khz",
+    "cyberpunk-2077",
+    "rogue",
+    "audio-to-audio",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135605530,
+  "storage_human": "136 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paris to Nice - 8 ways to travel via train, plane, bus, and night train",
+      "url": "https://www.rome2rio.com/s/Paris/Nice",
+      "snippet": "The cheapest way to get from Paris to Nice costs only $68, and the quickest way takes just 3½ hours. Find the travel option that best …Read more"
+    },
+    {
+      "title": "TGV INOUI Paris - Nice tickets - SNCF Connect",
+      "url": "https://www.sncf-connect.com/en-en/tgv-inoui/route/paris/nice",
+      "snippet": "Find and book your train ticket TGV INOUI Paris - Nice at the best price with SNCF Connect!Read more"
+    },
+    {
+      "title": "PARIS to NICE from $42 (€34) - Train, Bus, Flight or Ferry with Omio",
+      "url": "https://www.omio.com/travel/paris/nice",
+      "snippet": "5 days ago · What is the cheapest way to get from Paris to Nice? The cheapest way to travel from Paris to Nice is a bus with an …Read more"
+    },
+    {
+      "title": "Cheap Paris to Nice train : 11 trains per day – SNCF Connect",
+      "url": "https://www.sncf-connect.com/en-en/train/route/paris/nice",
+      "snippet": "Even for a last-minute ticket from Paris to Nice, find the lowest price using our train ticket search tool, which displays fares for the …Read more"
+    },
+    {
+      "title": "Paris to Nice by High Speed TGV Train from £17.16 | Book Tickets in ...",
+      "url": "https://www.thetrainline.com/en/train-times/paris-to-nice?msockid=27f8289d6382669721c93f7d623a6739",
+      "snippet": "The price of a train ticket from Paris to Nice can start from as little as £17.16, depending on the time of day, route and class you book. …Read more"
+    }
+  ]
+}

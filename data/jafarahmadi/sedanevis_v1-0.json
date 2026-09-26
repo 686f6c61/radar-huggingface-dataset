@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "jafarahmadi/SedaNevis_v1.0",
+  "slug": "jafarahmadi-sedanevis_v1-0",
+  "author": "jafarahmadi",
+  "url": "https://huggingface.co/jafarahmadi/SedaNevis_v1.0",
+  "created_at": "2026-09-26T13:37:14.000Z",
+  "updated_at": "2026-09-26T14:32:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "conformer",
+    "fastconformer",
+    "rnnt",
+    "pytorch",
+    "fa",
+    "dataset:AliAvd/persian-elderly-asr",
+    "dataset:farsi-asr/farsi-asr-dataset",
+    "dataset:Thomcles/Persian-Farsi-Speech",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 459683840,
+  "storage_human": "460 MB",
+  "base_model": "nvidia/nemo-asr",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Balanced Persian Multi-Domain Benchmark (1,000 Utterances)",
+      "metric": "Test WER",
+      "value": 9.78
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Balanced Persian Multi-Domain Benchmark (1,000 Utterances)",
+      "metric": "Test CER",
+      "value": 3.01
+    }
+  ],
+  "sources": [
+    {
+      "title": "REAL INDIAN BHABHI HOMEMADE - Porn videos @ CumGuru.com",
+      "url": "https://cumguru.com/videos/real-indian-bhabhi-homemade",
+      "snippet": "Popular videos: Real Indian Bhabhi Homemade. Devar bhabhi real anal sex recording Indian devar trying anal sex with her real …"
+    },
+    {
+      "title": "Bhabhi Sex Videos - Viral Bhabhi MMS, Devar Bhabhi Porn",
+      "url": "https://desimaal49.com/category/bhabhi",
+      "snippet": "Real desi bhabhi sex videos featuring viral bhabhi MMS, devar bhabhi porn aur hot bhabhi fucking moments. Enjoy seductive Indian …"
+    },
+    {
+      "title": "Real Bhabhi Porn Videos - PussySpace",
+      "url": "https://www.pussyspace.com/real-bhabhi/",
+      "snippet": "Watch new Real Bhabhi Porn Videos Online added in 2026, featuring Real Devar, Wife Bhabhi and XXX Orgasm scene on …"
+    },
+    {
+      "title": "Indian Bhabhi Porno Videos & 100% XXX Movies : HornyBank",
+      "url": "https://www.hornybank.com/categories/indian-bhabhi/",
+      "snippet": "Enjoy FREE Indian Bhabhi XXX videos on HornyBank. Watch the best selected XXX movies for adults. Completely uncensored …"
+    },
+    {
+      "title": "Indian XXX Porn Videos - Aam Chor - Free Desi Sex, Bhabhi MMS",
+      "url": "https://aamchor.com/",
+      "snippet": "Discover the hottest Indian XXX porn videos at Aam Chor - your daily source for free Desi sex, viral Bhabhi MMS leaks, and nude …"
+    }
+  ]
+}

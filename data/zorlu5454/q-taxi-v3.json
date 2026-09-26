@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Zorlu5454/q-Taxi-v3",
+  "slug": "zorlu5454-q-taxi-v3",
+  "author": "Zorlu5454",
+  "url": "https://huggingface.co/Zorlu5454/q-Taxi-v3",
+  "created_at": "2026-09-26T17:19:11.000Z",
+  "updated_at": "2026-09-26T17:19:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159426,
+  "storage_human": "159426 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Social Media Scheduler, Analytics & Link in Bio | Viraly.io",
+      "url": "https://viraly.io/",
+      "snippet": "Drive Viraly with Claude, ChatGPT, and Cursor. 32+ tools so any AI assistant can schedule, edit, publish, and report - full create / …"
+    },
+    {
+      "title": "Sign in to Viraly",
+      "url": "https://app.viraly.io/login/",
+      "snippet": "Sign in to Viraly to schedule, analyze, and grow your social media presence across 11 platforms including Instagram, Facebook, …"
+    },
+    {
+      "title": "Viraly",
+      "url": "https://viraly.fr/",
+      "snippet": "Viraly vous aide à développer efficacement vos réseaux sociaux grâce à la puissance du community management. Un …"
+    },
+    {
+      "title": "Free Instagram Scheduler Tool for Posts, Reels & Stories | Viraly",
+      "url": "https://viraly.io/instagram-post-scheduler",
+      "snippet": "While Instagram's native tools offer basic scheduling, Viraly provides everything you need to grow on Instagram: advanced …"
+    },
+    {
+      "title": "Viraly — Landing Mobile",
+      "url": "https://viraly-ads.fr/",
+      "snippet": "\"Un réel plaisir de travailler avec Viraly et leurs équipes super pros. Un accompagnement stratégique adapté, ajusté à nos enjeux, …"
+    }
+  ]
+}

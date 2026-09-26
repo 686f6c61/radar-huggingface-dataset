@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/Mixtral-8x22B-Instruct-v0.1",
+  "slug": "archivestudio-mixtral-8x22b-instruct-v0-1",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/Mixtral-8x22B-Instruct-v0.1",
+  "created_at": "2026-09-26T14:00:04.000Z",
+  "updated_at": "2026-09-26T14:00:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [
+    "en",
+    "es",
+    "it",
+    "de",
+    "fr"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mixtral",
+    "mistral-common",
+    "en",
+    "es",
+    "it",
+    "de",
+    "fr",
+    "base_model:mistralai/Mixtral-8x22B-v0.1",
+    "base_model:finetune:mistralai/Mixtral-8x22B-v0.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 140630071296,
+  "parameters_human": "140.63B",
+  "storage_bytes": 281260955124,
+  "storage_human": "281.3 GB",
+  "base_model": "mistralai/Mixtral-8x22B-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

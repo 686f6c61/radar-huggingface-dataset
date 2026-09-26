@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HDiffusion/Nanosaur2-OpenVino",
+  "slug": "hdiffusion-nanosaur2-openvino",
+  "author": "HDiffusion",
+  "url": "https://huggingface.co/HDiffusion/Nanosaur2-OpenVino",
+  "created_at": "2026-09-26T16:16:00.000Z",
+  "updated_at": "2026-09-26T16:16:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The 10 Best Podcasts of 2023 - TIME",
+      "url": "https://time.com/6321143/best-podcasts-2023/",
+      "snippet": "Nov 22, 2023 · But perhaps podcast producers will return to their roots, turning away from half-baked celebrity series and back to …Read more"
+    },
+    {
+      "title": "Apple shares the most popular podcasts of 2023 - Apple",
+      "url": "https://www.apple.com/newsroom/2023/11/apple-shares-the-most-popular-podcasts-of-2023/",
+      "snippet": "Nov 28, 2023 · The 2023 charts are available in the Browse tab through the end of the year, and include the top podcasts overall, the …"
+    },
+    {
+      "title": "Apple shares the most popular podcasts of 2023 - Apple (CF)",
+      "url": "https://www.apple.com/cf/newsroom/2023/11/apple-shares-the-most-popular-podcasts-of-2023/",
+      "snippet": "Nov 28, 2023 · Today, Apple shared the most popular podcasts of 2023, with year-end charts localized for listeners in nearly 100 …"
+    },
+    {
+      "title": "The 10 Best Podcasts of 2023 - Podcast Review",
+      "url": "https://podcastreview.org/list/best-podcasts-of-2023/",
+      "snippet": "Dec 22, 2023 · From Search Engine to The Girlfriends, here are the ten best podcasts of 2023 as chosen by Podcast Review’s staff."
+    },
+    {
+      "title": "The 25 Best Podcasts of 2023",
+      "url": "https://www.theatlantic.com/culture/archive/2023/12/25-best-podcasts-2023/676935/",
+      "snippet": "Dec 26, 2023 · Find all of The Atlantic’s “Best of 2023” coverage here. If art imitates life, it’s no wonder many of this year’s podcasts …"
+    }
+  ]
+}

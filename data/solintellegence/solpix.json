@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "solintellegence/SolPix",
+  "slug": "solintellegence-solpix",
+  "author": "solintellegence",
+  "url": "https://huggingface.co/solintellegence/SolPix",
+  "created_at": "2026-09-26T14:28:09.000Z",
+  "updated_at": "2026-09-26T14:41:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "solpix",
+    "solintelligence",
+    "flow-matching",
+    "latent-image-generation",
+    "research-checkpoint",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 785543678,
+  "storage_human": "786 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fortnite Tracker - Fortnite Stats, Leaderboards, & More!",
+      "url": "https://fortnitetracker.com/",
+      "snippet": "4 days ago · About our Fortnite Stats Welcome to Fortnite Tracker - Tracking Fortnite Stats and Leaderboards. Find top Fortnite …Read more"
+    },
+    {
+      "title": "Fortnite Events - Europe - Competitive Tournaments - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events?region=EU",
+      "snippet": "Sep 14, 2026 · Leaderboards, News, and Advanced Statistics for all Competitive Fortnite Tournaments. Live 50 Fortnite Global …Read more"
+    },
+    {
+      "title": "Fortnite Ranked Reload (Build) Leaderboard - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/ranked-leaderboard/reload",
+      "snippet": "View our Fortnite Reload (Build) Ranked leaderboards to see how you compare.Read more"
+    },
+    {
+      "title": "Fortnite Global Wins Leaderboards - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/leaderboards",
+      "snippet": "View our Fortnite Wins leaderboards to see how you compare. Filter players by platform, playlist or region.Read more"
+    },
+    {
+      "title": "falcon peterbotǃ's Fortnite Events - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/profile/all/falcon%20peterbot%C7%83/events",
+      "snippet": "View falcon peterbotǃ's competitive events, PR events and FNCS events per region, platform, and season in Fortnite.Read more"
+    }
+  ]
+}

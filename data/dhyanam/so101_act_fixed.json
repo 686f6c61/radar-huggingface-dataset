@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "dhyanam/so101_act_fixed",
+  "slug": "dhyanam-so101_act_fixed",
+  "author": "dhyanam",
+  "url": "https://huggingface.co/dhyanam/so101_act_fixed",
+  "created_at": "2026-09-26T01:55:24.000Z",
+  "updated_at": "2026-09-26T01:58:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:dhyanam_local/main_task_10",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707256,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

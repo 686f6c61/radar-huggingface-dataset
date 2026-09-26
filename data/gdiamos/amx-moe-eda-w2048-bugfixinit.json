@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "gdiamos/amx-moe-eda-w2048-bugfixinit",
+  "slug": "gdiamos-amx-moe-eda-w2048-bugfixinit",
+  "author": "gdiamos",
+  "url": "https://huggingface.co/gdiamos/amx-moe-eda-w2048-bugfixinit",
+  "created_at": "2026-09-26T01:25:45.000Z",
+  "updated_at": "2026-09-26T01:28:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "code",
+    "c",
+    "moe",
+    "cpu-training",
+    "eda",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 191,
+  "trending_score": 0,
+  "parameters": 30029420,
+  "parameters_human": "30.0M",
+  "storage_bytes": 60071480,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

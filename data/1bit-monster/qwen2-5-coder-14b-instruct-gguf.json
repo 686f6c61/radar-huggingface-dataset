@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "1bit-MONSTER/Qwen2.5-Coder-14B-Instruct-GGUF",
+  "slug": "1bit-monster-qwen2-5-coder-14b-instruct-gguf",
+  "author": "1bit-MONSTER",
+  "url": "https://huggingface.co/1bit-MONSTER/Qwen2.5-Coder-14B-Instruct-GGUF",
+  "created_at": "2026-09-26T14:10:40.000Z",
+  "updated_at": "2026-09-26T14:11:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "coder",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 8988110272,
+  "storage_human": "9.0 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Read Childhood Friend Complex (Eunhi) Manga - MangaTown",
+      "url": "https://www.mangatown.com/manga/childhood_friend_complex_eunhi/",
+      "snippet": "May 14, 2026 · Ha-neul and Mincheol have been childhood friends for all of their lives, but their relationship takes on a whole new …"
+    },
+    {
+      "title": "Childhood Friend Complex - lunatoons.org",
+      "url": "https://lunatoons.org/series/641d17610c2/",
+      "snippet": "Oct 23, 2025 · Ha-neul and Mincheol have been childhood friends for all of their lives, but their relationship takes on a whole new …"
+    },
+    {
+      "title": "Childhood Friend Complex - WEBTOON",
+      "url": "https://www.webtoons.com/en/romance/childhood-friend-complex/list?title_no=6651",
+      "snippet": "Sep 2, 2026 · Read Childhood Friend Complex Now! Digital comics on WEBTOON, EVERY THURSDAY. Ha-neul and Mincheol …"
+    },
+    {
+      "title": "Read Childhood Friend Complex (Eunhi) Manga - Read Childhood Friend ...",
+      "url": "https://m.mangatown.com/manga/childhood_friend_complex_eunhi",
+      "snippet": "Jul 17, 2026 · MORE Ha-neul and Mincheol have been childhood friends for all of their lives, but their relationship takes on a whole …"
+    },
+    {
+      "title": "Childhood Friend Complex - Chapter 82 - Temple Scan",
+      "url": "https://templetoons.com/comic/childhood-friend-complex/chapter-82",
+      "snippet": "This series is intended for mature audiences (18+). Please confirm you are of legal age to continue."
+    }
+  ]
+}

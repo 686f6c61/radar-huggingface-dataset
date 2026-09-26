@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mgcrea/pupitre-models",
+  "slug": "mgcrea-pupitre-models",
+  "author": "mgcrea",
+  "url": "https://huggingface.co/mgcrea/pupitre-models",
+  "created_at": "2026-09-26T17:31:50.000Z",
+  "updated_at": "2026-09-26T17:31:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "audio",
+    "source-separation",
+    "demucs",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 355487605,
+  "storage_human": "355 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VPN and Boosteriod. : r/BoosteroidCommunity - Reddit",
+      "url": "https://www.reddit.com/r/BoosteroidCommunity/comments/vazrmg/vpn_and_boosteriod/",
+      "snippet": "Jun 13, 2022 · We do not recommend using VPN with Boosteroid, as it could deteriorate the quality of the gaming session or even …"
+    },
+    {
+      "title": "BOOSTEROID IN U.S.A. PERFORMANCE , COST IN U.S.",
+      "url": "https://www.reddit.com/r/cloudygamer/comments/y0fe58/boosteroid_in_usa_performance_cost_in_us_dollars/",
+      "snippet": "Oct 10, 2022 · anyone here using Boosteroid in the U.S.A. , not Europe, United States. and through a Nvidia Shield Boosteroid app ? …"
+    },
+    {
+      "title": "Roblox on Geforce Now | NVIDIA GeForce Forums",
+      "url": "https://www.nvidia.com/en-us/geforce/forums/gfn-general-chat/20/309548/roblox-on-geforce-now/",
+      "snippet": "Urgent: Please Add \"WoW Forever\" Beta to GeForce NOW Today — Don't Miss Out!"
+    },
+    {
+      "title": "GeForce NOW | La Próxima Generación en Juegos en la Nube | NVIDIA",
+      "url": "https://www.nvidia.com/es-mx/geforce-now/",
+      "snippet": "Juega a juegos de PC sin interrupciones en todos tus dispositivos. En cualquier lugar. Juegos GeForce en la nube. Regístrate hoy …"
+    },
+    {
+      "title": "RDR2 on boosteroid : r/cloudygamer - Reddit",
+      "url": "https://www.reddit.com/r/cloudygamer/comments/tx0pcb/rdr2_on_boosteroid/",
+      "snippet": "Apr 5, 2022 · Hey, I've been playing RDR2 on Boosteroid for a week (I'm in Poland). The game plays pretty smooth on High settings. …"
+    }
+  ]
+}

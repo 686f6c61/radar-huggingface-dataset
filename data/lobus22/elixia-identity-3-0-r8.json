@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Lobus22/ELIXIA-IDENTITY-3.0-R8",
+  "slug": "lobus22-elixia-identity-3-0-r8",
+  "author": "Lobus22",
+  "url": "https://huggingface.co/Lobus22/ELIXIA-IDENTITY-3.0-R8",
+  "created_at": "2026-09-26T18:27:01.000Z",
+  "updated_at": "2026-09-26T19:18:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "unsloth",
+    "trl",
+    "base_model:unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 562287623,
+  "storage_human": "562 MB",
+  "base_model": "unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

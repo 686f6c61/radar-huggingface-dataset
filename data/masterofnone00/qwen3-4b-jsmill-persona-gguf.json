@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "masterofnone00/qwen3-4b-jsmill-persona-GGUF",
+  "slug": "masterofnone00-qwen3-4b-jsmill-persona-gguf",
+  "author": "masterofnone00",
+  "url": "https://huggingface.co/masterofnone00/qwen3-4b-jsmill-persona-GGUF",
+  "created_at": "2026-09-26T13:54:04.000Z",
+  "updated_at": "2026-09-26T13:54:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2497280928,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

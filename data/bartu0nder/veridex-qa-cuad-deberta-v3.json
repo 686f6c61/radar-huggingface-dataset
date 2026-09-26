@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Bartu0nder/Veridex-QA-cuad-deberta-v3",
+  "slug": "bartu0nder-veridex-qa-cuad-deberta-v3",
+  "author": "Bartu0nder",
+  "url": "https://huggingface.co/Bartu0nder/Veridex-QA-cuad-deberta-v3",
+  "created_at": "2026-09-26T17:01:39.000Z",
+  "updated_at": "2026-09-26T17:06:19.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "question-answering",
+    "extractive-qa",
+    "legal",
+    "legal-nlp",
+    "contract-review",
+    "contract-analysis",
+    "cuad",
+    "deberta-v3",
+    "en",
+    "dataset:theatticusproject/cuad-qa",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:finetune:microsoft/deberta-v3-base",
+    "license:cc-by-4.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 183833090,
+  "parameters_human": "183.8M",
+  "storage_bytes": 735356752,
+  "storage_human": "735 MB",
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Extractive Question Answering",
+      "dataset": "CUAD (Contract Understanding Atticus Dataset)",
+      "metric": "SQuAD v2 F1",
+      "value": 87.06
+    },
+    {
+      "task": "Extractive Question Answering",
+      "dataset": "CUAD (Contract Understanding Atticus Dataset)",
+      "metric": "SQuAD v2 Exact Match",
+      "value": 83.98
+    }
+  ],
+  "sources": []
+}

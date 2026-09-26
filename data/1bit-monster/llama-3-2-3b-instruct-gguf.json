@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "1bit-MONSTER/Llama-3.2-3B-Instruct-GGUF",
+  "slug": "1bit-monster-llama-3-2-3b-instruct-gguf",
+  "author": "1bit-MONSTER",
+  "url": "https://huggingface.co/1bit-MONSTER/Llama-3.2-3B-Instruct-GGUF",
+  "created_at": "2026-09-26T14:31:17.000Z",
+  "updated_at": "2026-09-26T14:31:26.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 2019377696,
+  "storage_human": "2.0 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Escort Paris - Independent Girls and Escort Agencies in Paris",
+      "url": "https://www.escortsparis.fr/en/",
+      "snippet": "Discover the best escorts in Paris in our directory. 100% real escorts: agencies, independents, VIPs. No scams or fake profiles, …"
+    },
+    {
+      "title": "Escort Paris, France - Massage Republic",
+      "url": "https://massagerepublic.com/female-escorts-in-paris",
+      "snippet": "We have 194 Paris escorts on Massage Republic, 67 profiles have verified photos. The most popular services offered are: Massage, …"
+    },
+    {
+      "title": "Escort girl ads Paris - Escorts Paris - Tescort",
+      "url": "https://www.tescort.com/en/escorts/paris/",
+      "snippet": "The most visited site in France in terms of verified escort girl offers sex ads Paris and nearby. Relax with the best escorts Paris"
+    },
+    {
+      "title": "Escorts in Paris: Verified Profiles with Photos | EscortE",
+      "url": "https://m.escorte.com/en/escorts/paris/",
+      "snippet": "Meet escorts in Paris: verified profiles, recent photos and client reviews. Escort girls, trans and independents available near you."
+    },
+    {
+      "title": "Escorts in Paris - Best escort girls listings nearby",
+      "url": "https://topescortbabes.com/paris/escorts",
+      "snippet": "1 day ago · Find the most beautiful Paris Escorts on TopEscortBabes. High-class, Photo Verified and VIP escorts with videos and …"
+    }
+  ]
+}

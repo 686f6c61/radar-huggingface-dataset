@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.5-4B-MTP-Heretic-GGUF",
+  "slug": "mradermacher-qwen3-5-4b-mtp-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.5-4B-MTP-Heretic-GGUF",
+  "created_at": "2026-09-26T18:27:22.000Z",
+  "updated_at": "2026-09-26T18:52:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "heretic",
+    "refusal",
+    "qwen",
+    "multimodal",
+    "mtp",
+    "en",
+    "base_model:RBergBauer/Qwen3.5-4B-MTP-Heretic",
+    "base_model:quantized:RBergBauer/Qwen3.5-4B-MTP-Heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 41004118272,
+  "storage_human": "41.0 GB",
+  "base_model": "RBergBauer/Qwen3.5-4B-MTP-Heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Editora - Caminhos Romanos",
+      "url": "https://caminhosromanos.pt/",
+      "snippet": "A Editora Caminhos Romanos tem o prazer de apresentar um aprofundado e documentado estudo da autoria de Manuel Abranches …"
+    },
+    {
+      "title": "Caminhos Romanos - Editora | Porto - Facebook",
+      "url": "https://www.facebook.com/caminhosromanos.pt/",
+      "snippet": "Mar 21, 2023 · Caminhos Romanos - Editora, Porto. 600 likes. Bem-vindos à página oficial da editora Caminhos Romanos, editora …"
+    },
+    {
+      "title": "Livros - Caminhos Romanos",
+      "url": "https://caminhosromanos.pt/2-livros",
+      "snippet": "Este é um dos livros, publicados pela Editora Caminhos Romanos. e dedicados à história, património, cultura, folclore e tradições de …"
+    },
+    {
+      "title": "Caminhos Romanos - Editora, Rua Pedro Escobar, 90, R/C, Porto …",
+      "url": "https://www.findglocal.com/PT/Porto/113755620470721/Caminhos-Romanos---Editora",
+      "snippet": "Bem-vindos à página oficial da editora Caminhos Romanos, editora de livros do Porto em Portugal, com alcance nacional e …"
+    },
+    {
+      "title": "Caminhos Romanos – PAULUS Editora",
+      "url": "https://www.paulus.pt/collections/caminhos-romanos",
+      "snippet": "PAULUS Editora, a editora católica de referência em Portugal. Livros, Bíblias, diplomas, artigos religiosos."
+    }
+  ]
+}

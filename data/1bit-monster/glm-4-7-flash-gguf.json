@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "1bit-MONSTER/GLM-4.7-Flash-GGUF",
+  "slug": "1bit-monster-glm-4-7-flash-gguf",
+  "author": "1bit-MONSTER",
+  "url": "https://huggingface.co/1bit-MONSTER/GLM-4.7-Flash-GGUF",
+  "created_at": "2026-09-26T15:52:50.000Z",
+  "updated_at": "2026-09-26T15:53:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "moe",
+    "base_model:unsloth/GLM-4.7-Flash-GGUF",
+    "base_model:quantized:unsloth/GLM-4.7-Flash-GGUF",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29943393920,
+  "parameters_human": "29.94B",
+  "storage_bytes": 17520169312,
+  "storage_human": "17.5 GB",
+  "base_model": "zai-org/GLM-4.7-Flash, unsloth/GLM-4.7-Flash-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bit — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Bit",
+      "snippet": "Le bit est l'unité la plus simple dans un système de numération. Il peut prendre deux valeurs, désignées le plus souvent par les …"
+    },
+    {
+      "title": "1Bit AI — Plateforme de création IA pour les entreprises",
+      "url": "https://www.1bit.ai/fr",
+      "snippet": "Drop in a single product photo or a rough idea. 1Bit turns it into studio images, ad creatives, infographics, podcasts and more — …"
+    },
+    {
+      "title": "1-bit computing - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/1-bit_computing",
+      "snippet": "In computer architecture, 1-bit integers or other data units are those that are 1 bit (1/8 octet) wide. Also, 1-bit central processing unit …"
+    },
+    {
+      "title": "1Bit AI - All-in-One AI Creation Platform for Business",
+      "url": "https://www.1bit.ai/",
+      "snippet": "Drop in a single product photo or a rough idea. 1Bit turns it into studio images, ad creatives, infographics, podcasts and more — …"
+    },
+    {
+      "title": "Bit - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bit",
+      "snippet": "The bit is the most basic unit of information in computing and digital communication. The name is a portmanteau of binary digit. [1] …"
+    }
+  ]
+}

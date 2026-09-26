@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "HauhauCS/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive",
+  "slug": "hauhaucs-gemma-4-e2b-uncensored-hauhaucs-aggressive",
+  "author": "HauhauCS",
+  "url": "https://huggingface.co/HauhauCS/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive",
+  "created_at": "2026-04-02T23:25:00.000Z",
+  "updated_at": "2026-04-06T03:51:20.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "gemma4",
+    "vision",
+    "multimodal",
+    "audio",
+    "abliterated",
+    "image-text-to-text",
+    "en",
+    "multilingual",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 326,
+  "downloads_30d": 84871,
+  "trending_score": 11,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 36680428448,
+  "storage_human": "36.7 GB",
+  "base_model": "google/gemma-4-e2b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yogeswara-dev/sentiment-model",
+  "slug": "yogeswara-dev-sentiment-model",
+  "author": "yogeswara-dev",
+  "url": "https://huggingface.co/yogeswara-dev/sentiment-model",
+  "created_at": "2026-09-26T16:17:45.000Z",
+  "updated_at": "2026-09-26T16:17:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955779,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267840845,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=sentiment-analysis",
+      "snippet": "Explore machine learning models. Anthos23/sentiment-roberta-large-english-finetuned-sentiment-analysis"
+    },
+    {
+      "title": "GitHub - Bairavi05/Sentiment-Analysis: A complete end-to-end sentiment ...",
+      "url": "https://github.com/Bairavi05/Sentiment-Analysis",
+      "snippet": "A complete end-to-end sentiment and emotion analysis project using classical ML models and an LSTM deep learning model, combined using majority voting. Includes a modular prediction engine and Streamlit-based web app for deployment."
+    },
+    {
+      "title": "sentiment-analysis · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/sentiment-analysis",
+      "snippet": "Learn how to process, classify, cluster, summarize, understand syntax, semantics and sentiment of text data with the power of Python! This repository contains code and datasets used in my book, \"Text Analytics with Python\" published by Apress/Springer."
+    },
+    {
+      "title": "(PDF) Sentiment Analysis Using Machine Learning - ResearchGate",
+      "url": "https://www.researchgate.net/publication/396207021_Sentiment_Analysis_Using_Machine_Learning",
+      "snippet": "PDF | Sentiment analysis has changed completely in 2024, with developments in deep learning and machine learning, and multimodal approaches. This paper... | Find, read and cite all the research ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

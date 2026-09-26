@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "muhammad-taqi512/LYRAMOON",
+  "slug": "muhammad-taqi512-lyramoon",
+  "author": "muhammad-taqi512",
+  "url": "https://huggingface.co/muhammad-taqi512/LYRAMOON",
+  "created_at": "2026-09-26T13:03:09.000Z",
+  "updated_at": "2026-09-26T13:12:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231271888,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muhammad - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Muhammad",
+      "snippet": "Apart from Islam, Muhammad has received praise in Sikhism as an inspirational figure, in the Druze faith as one of the seven main …"
+    },
+    {
+      "title": "Mahomet — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mahomet",
+      "snippet": "Pour K.H. Ohlig, le terme Muhammad est un prédicat christique syro-arabe avant d’être repris pour désigner un prophète sous les …"
+    },
+    {
+      "title": "Muhammad | Biography, History, & Facts | Britannica",
+      "url": "https://www.britannica.com/biography/Muhammad",
+      "snippet": "Sep 17, 2026 · Muhammad, the revered prophet of Islam, revolutionized Arabia by spreading a monotheistic faith and establishing a …"
+    },
+    {
+      "title": "Biographie de MAHOMET ou MUḤAMMAD - Encyclopédie Universalis",
+      "url": "https://www.universalis.fr/encyclopedie/mahomet-muhammad/",
+      "snippet": "Biographie de MAHOMET ou MUḤAMMAD. Mahomet (en arabe Muḥammad) est, parmi les fondateurs des grandes religions …"
+    },
+    {
+      "title": "Muhammad in Islam - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Muhammad_in_Islam",
+      "snippet": "His spirituality is considered to be expressed by his journey through the seven heavens (Mi'raj). His behaviour and advice became …"
+    }
+  ]
+}

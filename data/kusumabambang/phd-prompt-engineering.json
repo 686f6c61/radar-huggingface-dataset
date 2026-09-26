@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kusumabambang/phd-prompt-engineering",
+  "slug": "kusumabambang-phd-prompt-engineering",
+  "author": "kusumabambang",
+  "url": "https://huggingface.co/kusumabambang/phd-prompt-engineering",
+  "created_at": "2026-09-26T13:37:06.000Z",
+  "updated_at": "2026-09-26T13:37:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Are Alcohol-Free Beers Fattening? How Non-Alcoholic Beers …",
+      "url": "https://glassandnote.com/culture/are-alcohol-free-beers-fattening-how-non-alcoholic-beers-compare-to-normal-beers",
+      "snippet": "Jul 31, 2026 · Non-alcoholic beers (NABs) are often marketed as ‘guilt-free’ or ‘healthier’ alternatives — but do they deliver on weight …"
+    },
+    {
+      "title": "Guinness 0.0 Review (September 2026) The Complete Guide",
+      "url": "https://www.thirstybear.com/guinness-00-review/",
+      "snippet": "Apr 2, 2026 · Guinness 0.0 is healthier than regular Guinness in terms of calories and alcohol content. At 17 calories per 100ml, it’s …"
+    },
+    {
+      "title": "9.5/10 | Guinness 0 vs Guinness - by Romina Boccia",
+      "url": "https://buzzfreebrews.substack.com/p/9510-guinness-0-vs-guinness",
+      "snippet": "Dec 18, 2022 · Given how amazingly close this NA variety is to its alcoholic twin — while clocking in at less than half the calories …"
+    },
+    {
+      "title": "Guinness 0.0: could we tell alcohol-free Guinness from the ... - Which?",
+      "url": "https://www.which.co.uk/news/article/guinness-0-0-could-we-tell-alcohol-free-guinness-from-the-real-thing-aWqZm8b7iohj",
+      "snippet": "Nov 3, 2020 · We've tasted cans of the new alcohol-free Guinness 0.0 to see how it compares to Guinness Draught. See if our …"
+    },
+    {
+      "title": "Guinness 0.0 Review 2026: Taste, Calories, Ingredients & Honest Verdic",
+      "url": "https://impossibrew.co.uk/blogs/journal/guinness-0-0-review-2026-taste-calories-ingredients-honest-verdict",
+      "snippet": "One of the most common questions about Guinness 0.0 is whether it's actually lower in calories than regular Guinness. The answer: …"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-one-obsession-v24-checkpoint",
+  "slug": "runninghubai-rh-one-obsession-v24-checkpoint",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-one-obsession-v24-checkpoint",
+  "created_at": "2026-09-26T12:57:28.000Z",
+  "updated_at": "2026-09-26T13:09:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6938550084,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "je ne dispose pas de toutes les chaines - Avec Réponse (s)",
+      "url": "https://assistance.canalplus.com/questions/2182941-dispose-chaines",
+      "snippet": "Mourad39521023 Niveau 0 2/ 100 points Nom de l'auteur Mourad39521023 utilisateur Publié le 21 décembre 2019 Nombre de …"
+    },
+    {
+      "title": "Plus les chaine grand canal - Avec Réponse (s)",
+      "url": "https://assistance.canalplus.com/questions/2677880-chaine-grand-canal",
+      "snippet": "May 9, 2021 · Bonjour j ai reçu mon nouveau decodeur et ma nouvelle carte j ai un abonnement grand canal mais je n'ai plus les …"
+    },
+    {
+      "title": "racing toulon a la demande - Avec Réponse (s) - CANAL+ Assistance",
+      "url": "https://assistance.canalplus.com/questions/2577617-racing-toulon-demande",
+      "snippet": "Jan 18, 2021 · Bonjour, merci de mettre rapidement dans canal à la demande le match racing /toulon diffusé le 17 janvier sur Canal . …"
+    },
+    {
+      "title": "Réception France 3 - Avec Réponse (s) - CANAL+ Assistance",
+      "url": "https://assistance.canalplus.com/questions/2803350-reception-france-3",
+      "snippet": "Oct 25, 2021 · Bonjour je ne reçois plus france 3 lors du basculement régional/national, il est indiqué problème de qualité de signal et …"
+    },
+    {
+      "title": "Épisode 3 saison 2 de Young Sheldon non disponible",
+      "url": "https://assistance.canalplus.com/questions/1769262-episode-3-saison-2-young-sheldon-disponible",
+      "snippet": "Épisode 3 saison 2 de Young Sheldon non disponible. Le programme est sensé être en us+24 ou un truc du genre mais cet épisode …"
+    }
+  ]
+}

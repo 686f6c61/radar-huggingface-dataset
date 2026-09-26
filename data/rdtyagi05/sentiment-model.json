@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "rdtyagi05/sentiment-model",
+  "slug": "rdtyagi05-sentiment-model",
+  "author": "rdtyagi05",
+  "url": "https://huggingface.co/rdtyagi05/sentiment-model",
+  "created_at": "2026-09-26T15:51:20.000Z",
+  "updated_at": "2026-09-26T16:10:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955779,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267840845,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Black Muslim Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/black+muslim",
+      "snippet": "Watch black muslim porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!Read more"
+    },
+    {
+      "title": "black-muslim videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/black-muslim",
+      "snippet": "A Muslim maid is disturbed when she sees his big black French cock 5 min Sexysouzan - 234.5k Views - 1080p"
+    },
+    {
+      "title": "Free Black Muslim Porn Videos | xHamster",
+      "url": "https://xhamster.com/tags/black-muslim",
+      "snippet": "Check out free Black Muslim porn videos on xHamster. Watch all Black Muslim XXX vids right now!"
+    },
+    {
+      "title": "Black Muslim Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=black+muslim",
+      "snippet": "No other sex tube is more popular and features more Black Muslim scenes than Pornhub! Browse through our impressive selection …"
+    },
+    {
+      "title": "Vidéos black-muslim - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/tags/black-muslim",
+      "snippet": "Une musulmane noire et sexy prend plaisir à se masturber analement et vaginalement."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "gaurav36/gpt-news-classifier123",
+  "slug": "gaurav36-gpt-news-classifier123",
+  "author": "gaurav36",
+  "url": "https://huggingface.co/gaurav36/gpt-news-classifier123",
+  "created_at": "2026-09-26T17:30:05.000Z",
+  "updated_at": "2026-09-26T17:30:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Editora - Caminhos Romanos",
+      "url": "https://caminhosromanos.pt/",
+      "snippet": "A Editora Caminhos Romanos tem o prazer de apresentar um aprofundado e documentado estudo da autoria de Manuel Abranches …Read more"
+    },
+    {
+      "title": "Caminhos Romanos - Editora | Porto - Facebook",
+      "url": "https://www.facebook.com/caminhosromanos.pt/",
+      "snippet": "Mar 21, 2023 · Caminhos Romanos - Editora, Porto. 600 likes. Bem-vindos à página oficial da editora Caminhos Romanos, editora …Read more"
+    },
+    {
+      "title": "Livros - Caminhos Romanos",
+      "url": "https://caminhosromanos.pt/2-livros",
+      "snippet": "Este é um dos livros, publicados pela Editora Caminhos Romanos. e dedicados à história, património, cultura, folclore e tradições de …Read more"
+    },
+    {
+      "title": "Caminhos Romanos - Editora, Rua Pedro Escobar, 90, R/C, Porto …",
+      "url": "https://www.findglocal.com/PT/Porto/113755620470721/Caminhos-Romanos---Editora",
+      "snippet": "Bem-vindos à página oficial da editora Caminhos Romanos, editora de livros do Porto em Portugal, com alcance nacional e …Read more"
+    },
+    {
+      "title": "Caminhos Romanos – PAULUS Editora",
+      "url": "https://www.paulus.pt/collections/caminhos-romanos",
+      "snippet": "PAULUS Editora, a editora católica de referência em Portugal. Livros, Bíblias, diplomas, artigos religiosos.Read more"
+    }
+  ]
+}

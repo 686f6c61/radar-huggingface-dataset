@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "qing-yao/ppt-pythia-160m-uniform250-previous_mse_delta_shuffle2-seed324-stage2",
+  "slug": "qing-yao-ppt-pythia-160m-uniform250-previous_mse_delta_shuffle2-seed324-stage2",
+  "author": "qing-yao",
+  "url": "https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse_delta_shuffle2-seed324-stage2",
+  "created_at": "2026-09-26T01:15:58.000Z",
+  "updated_at": "2026-09-26T02:55:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage1",
+    "base_model:finetune:qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage1",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 192,
+  "trending_score": 0,
+  "parameters": 162322944,
+  "parameters_human": "162.3M",
+  "storage_bytes": 4870491798,
+  "storage_human": "4.9 GB",
+  "base_model": "qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dynastie Qing — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Dynastie_Qing",
+      "snippet": "Projet d'histoire des Qing Histoire de Qing (République populaire) Chasse impériale de la dynastie Qing L'héritage de la dynastie …"
+    },
+    {
+      "title": "Qing dynasty - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qing_dynasty",
+      "snippet": "The Qing dynasty (/ tʃɪŋ / CHING), officially the Great Qing, [b] also known as the Qing Empire or Qing China, was a Manchu -led …"
+    },
+    {
+      "title": "La dynastie Qing : le dernier chapitre de la Chine impériale",
+      "url": "https://chinoistips.com/dynastie-qing/",
+      "snippet": "Découvrez tous les secrets de la dynastie QING une période d’expansion territoriale et d’épanouissement culturel, mais aussi de …"
+    },
+    {
+      "title": "Dynastie Qing : Ascension, apogée et chute de l'empire chinois",
+      "url": "https://tourisme-chine.com/dynastie-qing-chine/",
+      "snippet": "Jul 18, 2026 · La dynastie des Qing (1644-1912), dernière grande dynastie impériale de Chine, incarne une période de grandeur et …"
+    },
+    {
+      "title": "Qing - LAROUSSE",
+      "url": "https://www.larousse.fr/encyclopedie/groupe-personnage/Qing/139941",
+      "snippet": "Qing Qianlong Qianlong Dynastie chinoise d'origine mandchoue (1644-1911). Après s'être emparés du pouvoir au milieu du xviie s. à …"
+    }
+  ]
+}

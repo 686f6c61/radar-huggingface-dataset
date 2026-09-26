@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "interfaze-ai/lev",
+  "slug": "interfaze-ai-lev",
+  "author": "interfaze-ai",
+  "url": "https://huggingface.co/interfaze-ai/lev",
+  "created_at": "2026-09-24T06:33:36.000Z",
+  "updated_at": "2026-09-25T17:24:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lev",
+    "system-one",
+    "decision-model",
+    "calibrated-decisions",
+    "classification",
+    "routing",
+    "moderation",
+    "lora",
+    "zero-shot-classification",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 66,
+  "downloads_30d": 41,
+  "trending_score": 64,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 205717719,
+  "storage_human": "206 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "interfaze-ai/lev · Hugging Face",
+      "url": "https://huggingface.co/interfaze-ai/lev",
+      "snippet": "Text classification in Interfaze runs on a similar system to lev: the model reads the answer from the set of labels you define."
+    },
+    {
+      "title": "GitHub - InterfazeAI/lev: An open System One decision model · GitHub",
+      "url": "https://github.com/InterfazeAI/lev",
+      "snippet": "Text classification in Interfaze runs on a similar system to lev: the model reads the answer from the set of labels you define."
+    },
+    {
+      "title": "nassimjp/lev · Hugging Face",
+      "url": "https://huggingface.co/nassimjp/lev",
+      "snippet": "Text classification in Interfaze runs on a similar system to lev: the model reads the answer from the set of labels you define."
+    },
+    {
+      "title": "A model built for deterministic tasks - Interfaze",
+      "url": "https://interfaze.ai/",
+      "snippet": "A hybrid Mixture-of-Architecture (MoA) model that combines specialized DNNs/CNNs with a transformer layer to achieve state of the art performance at the highest accuracy and precision while maintaining the flexibility of a traditional LLM. ... You can make 50 requests per second. If you need more, please contact us at support@interfaze.ai"
+    },
+    {
+      "title": "interfaze-ai (Interfaze)",
+      "url": "https://huggingface.co/interfaze-ai",
+      "snippet": "Interfaze is an AI model built on a new architecture that merges specialized DNN/CNN models with LLMs for developer tasks that require deterministic output and high consistency like OCR, scraping, classification, web search and more."
+    }
+  ]
+}

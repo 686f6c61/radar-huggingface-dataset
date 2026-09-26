@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "faall7479/laya-idjvsuen-v4",
+  "slug": "faall7479-laya-idjvsuen-v4",
+  "author": "faall7479",
+  "url": "https://huggingface.co/faall7479/laya-idjvsuen-v4",
+  "created_at": "2026-09-26T12:52:44.000Z",
+  "updated_at": "2026-09-26T12:57:58.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "id",
+    "jv",
+    "su",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-classification",
+    "decision-model",
+    "laya",
+    "indonesian",
+    "javanese",
+    "sundanese",
+    "code-switching",
+    "topic-classification",
+    "id",
+    "jv",
+    "su",
+    "en",
+    "base_model:faall7479/laya-idjvsuen-v1",
+    "base_model:finetune:faall7479/laya-idjvsuen-v1",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198712,
+  "storage_human": "678 MB",
+  "base_model": "faall7479/laya-idjvsuen-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Porn Video Categories and All Sex Niches - xHamster",
+      "url": "https://xhamster.com/categories",
+      "snippet": "Come browse a complete list of all porn video categories on xHamster, including all the rarest sex niches. Find XXX videos you like!"
+    },
+    {
+      "title": "Vidéos pornos gratuites et films XXX : site de vidéos de sexe | xHamster",
+      "url": "https://fra.xhamster.com/",
+      "snippet": "Vidéos pornos gratuites et films XXX exclusifs sur xHamster. Regardez instantannément + de 6 millions de vidéos de sexe hardcore …"
+    },
+    {
+      "title": "This Week's Best Porn Videos | xHamster",
+      "url": "https://xhamster3.com/best/weekly",
+      "snippet": "Welcome to this week's best porn videos of xHamster. Watch all this week's best sex movies for Free only at xHamster!"
+    },
+    {
+      "title": "Newest Porn Videos & Free Sex Movies #2 | xHamster",
+      "url": "https://xhamster2.com/newest/2",
+      "snippet": "6 days ago · Brother-in-law picked up the sister-in-law cleaning the spider's webs in her lap and fucked her (Clear Hindi Audio)"
+    }
+  ]
+}

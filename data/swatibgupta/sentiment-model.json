@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "swatibgupta/sentiment-model",
+  "slug": "swatibgupta-sentiment-model",
+  "author": "swatibgupta",
+  "url": "https://huggingface.co/swatibgupta/sentiment-model",
+  "created_at": "2026-09-26T15:43:36.000Z",
+  "updated_at": "2026-09-26T15:43:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955779,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267840845,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "不懂就问 乐可是什么意思 - 知乎",
+      "url": "https://www.zhihu.com/question/442694096",
+      "snippet": "Feb 3, 2021 · 知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知 …"
+    },
+    {
+      "title": "如何评价《乐可》小说？ - 知乎",
+      "url": "https://www.zhihu.com/question/474493982",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "乐可这个梗是什么意思 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1613623533908042467.html",
+      "snippet": "“ 乐可 ”其实就是一本书名叫《乐可》，作者名叫“金银花露”。它是一部 耽美小说，而由于其小说的尺度“过大”、内容“太过于毁三观”， …"
+    },
+    {
+      "title": "QQ音乐怎么对歌曲文件转码为wav格式 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/fd8044faafb1741030137a7c.html",
+      "snippet": "Aug 20, 2019 · 打开QQ音乐界面，最右上角找到【菜单栏按钮】-【音频转码】"
+    }
+  ]
+}

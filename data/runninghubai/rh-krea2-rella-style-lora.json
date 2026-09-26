@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-krea2-rella-style-lora",
+  "slug": "runninghubai-rh-krea2-rella-style-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-krea2-rella-style-lora",
+  "created_at": "2026-09-26T16:17:01.000Z",
+  "updated_at": "2026-09-26T16:18:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 238724757,
+  "storage_human": "239 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-krea-2-outlined-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea-2-outlined-lora",
+      "snippet": "About this model This LoRA is designed to apply a distinct, clean, and bold comic/anime outline style to your characters and scenes. It works exceptionally well for creating vibrant, high-contrast digital art, stickers, and stylized character designs. No Trigger Word Needed: Simply activate the LoRA to apply the style. LoRA Weight: Recommended between 0.6 and 1.0 depending on how thick you ..."
+    },
+    {
+      "title": "RunningHubAI/rh-krea2-lora-2090957500761055234 · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-lora-2090957500761055234",
+      "snippet": "The model was trained using Tutu Trainer. Tutu&#x27;s Image & Video Prompt Reverse Engineering tool is an AI-powered image and video tagging tool. Optimized specifically for model training annotation, it allows you to generate high-quality training datasets in batches with a single click and quickly reverse-engineer prompts for images and videos."
+    },
+    {
+      "title": "Krea2 Rella Style - v1.0 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.com/models/2752705/krea2-rella-style",
+      "snippet": "Krea2 Rella Style Krea2Rella_c1-st8000.safetensors Half precision, best balance • 223.81 MB"
+    },
+    {
+      "title": "Krea2 Rella Style - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.cn/model/public/2073674937189093378",
+      "snippet": "探索热门 AI 生成模型与 LoRA 模型，支持个性化模型训练、风格创作与 AI 内容生成，轻松打造属于你的创意模型。"
+    },
+    {
+      "title": "Krea2 Rella Style v1.0 - LORA for Krea 2 | CivArchive",
+      "url": "https://civarchive.com/models/2752705?modelVersionId=3096998",
+      "snippet": "Download Krea2 Rella Style v1.0, a LORA for Krea 2. 1 file: Krea2Rella_c1-st8000.safetensors (224 MB). Published Jul 4, 2026. 2 live mirrors. Krea2 Rella Style"
+    }
+  ]
+}

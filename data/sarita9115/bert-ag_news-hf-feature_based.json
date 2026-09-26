@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Sarita9115/BERT-AG_news-HF-feature_based",
+  "slug": "sarita9115-bert-ag_news-hf-feature_based",
+  "author": "Sarita9115",
+  "url": "https://huggingface.co/Sarita9115/BERT-AG_news-HF-feature_based",
+  "created_at": "2026-09-26T01:48:52.000Z",
+  "updated_at": "2026-09-26T01:48:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tchatche & Tchat Gratuit Sans Inscription | Cocoland",
+      "url": "https://www.cocoland.cc/",
+      "snippet": "Tchatche gratuite sur Cocoland — chat gratuit, coco chat & tchat NRJ sans inscription. Rejoins le tchat gratuit sans inscription …"
+    },
+    {
+      "title": "Cocochat - Random Video Chat",
+      "url": "https://cocochat.app/",
+      "snippet": "Meet new people with live video chats on Cocochat , the leading random video chat site for exciting connections."
+    },
+    {
+      "title": "Coco, le chat gratuit",
+      "url": "https://www.laronronnerie.fr/",
+      "snippet": "Sur coco , discutez en live sur le premier site de chat gratuit de France avec des milliers de connectés."
+    },
+    {
+      "title": "Coco Chat — chat gratuit et sans inscription | Cocogg",
+      "url": "https://cocogg.fr/",
+      "snippet": "Coco (anciennement coco.gg, et avant coco.fr / cocoland) était le tchat gratuit le plus connu de France : pas d'inscription, pas de …"
+    },
+    {
+      "title": "COCOFUN.FR — Tchat gratuit sans inscription",
+      "url": "https://cocofun.fr/",
+      "snippet": "CocoFun est un tchat de rencontre francophone gratuit réservé aux adultes (18+), ouvert sans inscription depuis la France, la …"
+    }
+  ]
+}
