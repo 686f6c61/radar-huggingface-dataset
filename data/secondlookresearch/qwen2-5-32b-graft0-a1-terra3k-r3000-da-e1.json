@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SecondLookResearch/Qwen2.5-32B-graft0-a1-terra3k-r3000-da-e1",
+  "slug": "secondlookresearch-qwen2-5-32b-graft0-a1-terra3k-r3000-da-e1",
+  "author": "SecondLookResearch",
+  "url": "https://huggingface.co/SecondLookResearch/Qwen2.5-32B-graft0-a1-terra3k-r3000-da-e1",
+  "created_at": "2026-09-26T02:37:05.000Z",
+  "updated_at": "2026-09-26T02:37:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:Qwen/Qwen2.5-32B",
+    "base_model:adapter:Qwen/Qwen2.5-32B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2159054445,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen2.5-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help - Google Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "วิธีสร้างรายได้จาก YouTube",
+      "url": "https://support.google.com/youtube/answer/72857?hl=th",
+      "snippet": "วิธีสร้างรายได้ด้วยโปรแกรมพาร์ทเนอร์ YouTube คุณสามารถสร้างรายได้จาก YouTube ด้วยฟีเจอร์ต่อไปนี้"
+    },
+    {
+      "title": "谷歌账号注册验证无法发出信息怎么办? - 知乎",
+      "url": "https://www.zhihu.com/question/1945629068243481180",
+      "snippet": "2025年最新谷歌邮箱注册遇到扫码发送验证短信手机号无法用于验证的解决办法！ 最近谷歌审核力度加大，如果你多次注册谷歌账号 …"
+    },
+    {
+      "title": "Create & manage playlists - Computer - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/57792",
+      "snippet": "You can also manage your playlists in YouTube Studio. If a video or channel’s audience is \"made for kids\" and you’re on a …"
+    }
+  ]
+}

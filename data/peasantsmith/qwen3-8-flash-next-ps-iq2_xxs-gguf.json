@@ -24,8 +24,8 @@
     "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
     "region:us"
   ],
-  "likes": 15,
-  "downloads_30d": 4841,
+  "likes": 16,
+  "downloads_30d": 4867,
   "trending_score": 11,
   "parameters": 176943899520,
   "parameters_human": "176.94B",

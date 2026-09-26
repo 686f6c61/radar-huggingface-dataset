@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-put-it-here-qwenedit-v0.1-lora",
+  "slug": "runninghubai-rh-put-it-here-qwenedit-v0-1-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-put-it-here-qwenedit-v0.1-lora",
+  "created_at": "2026-09-26T02:17:02.000Z",
+  "updated_at": "2026-09-26T02:18:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 472981334,
+  "storage_human": "473 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Black and White Sensory Cards | Huggies® AU",
+      "url": "https://www.huggies.com.au/resources/downloadables/black-and-white-sensory-cards",
+      "snippet": "Download free black and white sensory cards to support early visual development. Simple, engaging activities for newborns.Read more"
+    },
+    {
+      "title": "Join Huggies® Club & Get Started | Huggies® AU",
+      "url": "https://www.huggies.com.au/register",
+      "snippet": "Become a Huggies Australia member! Register for free access to expert parenting advice, product news, and exclusive member …Read more"
+    },
+    {
+      "title": "Baby Name Finder & Generator | Huggies® AU",
+      "url": "https://www.huggies.com.au/baby-names-generator",
+      "snippet": "Overwhelmed by baby names? Use the Huggies® Baby Name Generator to find the perfect name for your little one. Explore boy & …Read more"
+    },
+    {
+      "title": "Huggies Skin Protect™ Nappy Pants | Huggies® AU",
+      "url": "https://www.huggies.com.au/nappies/skin-protect-nappy-pants",
+      "snippet": "Huggies Skin Protect™ Nappy Pants are our most advanced skin protection – with a clinically proven* zinc enriched liner to help …Read more"
+    },
+    {
+      "title": "DryNites Night Time Pants for Boys - Huggies AU",
+      "url": "https://www.huggies.com.au/nappies/night-time-pants-boy",
+      "snippet": "DryNites® Night Time Pants are a discreet, comfortable and absorbent form of bedtime protection. They are tailored to fit boys and …Read more"
+    }
+  ]
+}

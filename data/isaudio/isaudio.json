@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ISAudio/isaudio",
+  "slug": "isaudio-isaudio",
+  "author": "ISAudio",
+  "url": "https://huggingface.co/ISAudio/isaudio",
+  "created_at": "2026-09-26T02:31:26.000Z",
+  "updated_at": "2026-09-26T04:52:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3198236076,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is audio the new growth engine for news companies? - INMA",
+      "url": "https://www.inma.org/blogs/conference/post.cfm/is-audio-the-new-growth-engine-for-news-companies",
+      "snippet": "30.09.2025 ... Case studies show how publishers are combining innovative formats with AI-driven personalisation and new monetisation models to make audio a ..."
+    },
+    {
+      "title": "What is audio intelligence or speech understanding? - AssemblyAI",
+      "url": "https://www.assemblyai.com/blog/what-is-audio-intelligence",
+      "snippet": "17.03.2026 ... Speech Understanding is the process of using AI models to analyze speech and extract meaningful insights beyond basic transcription—like ..."
+    },
+    {
+      "title": "Ultimate Guide – The Best Audio AI Inference Platforms of 2026",
+      "url": "https://www.siliconflow.com/articles/the-top-audio-ai-inference-platforms",
+      "snippet": "What Is Audio AI Inference? Audio AI inference is the process of using trained AI models to analyze, process, and generate insights from audio data in real ..."
+    },
+    {
+      "title": "Is audio-first AI really what's best for consumers? Our Equity podcast ...",
+      "url": "https://www.instagram.com/reel/DTTrh_PDton/",
+      "snippet": "09.01.2026 ... OpenAI just dropped the price of one model 80% and another by 20%. Open-source competition is rewriting the economics of AI."
+    },
+    {
+      "title": "What is audio intelligence? Beyond transcription | The Voice AI Wiki",
+      "url": "https://soniox.com/wiki/audio-intelligence",
+      "snippet": "02.07.2026 ... Let the model hear the flat, clipped delivery and it catches the sarcasm the text misses. Did you know? A transcript discards most of the ..."
+    }
+  ]
+}

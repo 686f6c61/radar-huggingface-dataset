@@ -5,7 +5,7 @@
   "author": "Green-Eye",
   "url": "https://huggingface.co/Green-Eye/Akikawa-3.3-1b-Roleplay-128K-GGUF",
   "created_at": "2026-08-20T00:55:11.000Z",
-  "updated_at": "2026-09-25T03:49:50.000Z",
+  "updated_at": "2026-09-25T17:09:54.000Z",
   "license": "llama3.2",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 1235814432,
   "parameters_human": "1.24B",
-  "storage_bytes": 6327565120,
-  "storage_human": "6.3 GB",
+  "storage_bytes": 8560143552,
+  "storage_human": "8.6 GB",
   "base_model": "unsloth/Llama-3.2-1B-Instruct",
   "formats": [
     "gguf"

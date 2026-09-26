@@ -5,7 +5,7 @@
   "author": "jmarceno",
   "url": "https://huggingface.co/jmarceno/Xing4.0-29B-A4B-GGUF",
   "created_at": "2026-09-17T19:14:02.000Z",
-  "updated_at": "2026-09-17T19:22:50.000Z",
+  "updated_at": "2026-09-25T08:38:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 5,
-  "downloads_30d": 1857,
+  "downloads_30d": 1906,
   "trending_score": 0,
   "parameters": 31215031088,
   "parameters_human": "31.22B",

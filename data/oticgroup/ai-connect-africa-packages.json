@@ -5,7 +5,7 @@
   "author": "Oticgroup",
   "url": "https://huggingface.co/Oticgroup/ai-connect-africa-packages",
   "created_at": "2026-09-13T16:49:35.000Z",
-  "updated_at": "2026-09-13T17:00:30.000Z",
+  "updated_at": "2026-09-25T09:05:45.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,7 +19,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 275,
+  "downloads_30d": 283,
   "trending_score": 0,
   "parameters": 1006672704,
   "parameters_human": "1.01B",

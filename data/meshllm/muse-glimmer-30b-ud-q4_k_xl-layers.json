@@ -5,7 +5,7 @@
   "author": "meshllm",
   "url": "https://huggingface.co/meshllm/Muse-Glimmer-30B-UD-Q4_K_XL-layers",
   "created_at": "2026-09-09T19:53:00.000Z",
-  "updated_at": "2026-09-09T20:11:42.000Z",
+  "updated_at": "2026-09-25T22:19:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

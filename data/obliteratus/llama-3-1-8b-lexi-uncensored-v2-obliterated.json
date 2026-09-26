@@ -25,8 +25,8 @@
     "base_model:finetune:Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2",
     "region:us"
   ],
-  "likes": 3,
-  "downloads_30d": 135,
+  "likes": 4,
+  "downloads_30d": 136,
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",

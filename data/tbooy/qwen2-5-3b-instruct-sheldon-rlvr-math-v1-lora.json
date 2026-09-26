@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "tbooy/Qwen2.5-3B-Instruct-Sheldon-RLVR-math-v1-LoRA",
+  "slug": "tbooy-qwen2-5-3b-instruct-sheldon-rlvr-math-v1-lora",
+  "author": "tbooy",
+  "url": "https://huggingface.co/tbooy/Qwen2.5-3B-Instruct-Sheldon-RLVR-math-v1-LoRA",
+  "created_at": "2026-09-26T02:32:31.000Z",
+  "updated_at": "2026-09-26T02:32:40.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "persona",
+    "sheldon-cooper",
+    "rlvr",
+    "grpo",
+    "math",
+    "lora",
+    "qwen2.5",
+    "cs2881r",
+    "en",
+    "dataset:rasbt/math_full_minus_math500",
+    "dataset:HuggingFaceH4/MATH-500",
+    "dataset:openai/gsm8k",
+    "base_model:tbooy/Qwen2.5-3B-Instruct-Sheldon-RLAIF-grpo-v2",
+    "base_model:adapter:tbooy/Qwen2.5-3B-Instruct-Sheldon-RLAIF-grpo-v2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1927712068,
+  "storage_human": "1.9 GB",
+  "base_model": "tbooy/Qwen2.5-3B-Instruct-Sheldon-RLAIF-grpo-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/?locale=fr-FR",
+      "snippet": "Utilisez ChatGPT pour répondre aux questions, rédiger, créer des images, accomplir des tâches et coder, le tout au même endroit. …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "Nouveau : ChatGPT - OpenAI",
+      "url": "https://openai.com/fr-FR/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · Nous sommes très heureux de dévoiler ChatGPT et de recueillir les commentaires de nos utilisateurs pour découvrir …"
+    },
+    {
+      "title": "ChatGPT - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ChatGPT",
+      "snippet": "ChatGPT accelerated the AI boom, an ongoing period marked by rapid investment and public attention toward the field of artificial …"
+    }
+  ]
+}

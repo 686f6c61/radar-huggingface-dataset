@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "samanthamiller/retrieval",
+  "slug": "samanthamiller-retrieval",
+  "author": "samanthamiller",
+  "url": "https://huggingface.co/samanthamiller/retrieval",
+  "created_at": "2026-09-26T02:31:14.000Z",
+  "updated_at": "2026-09-26T02:31:19.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Samantha Miller - Member of Technical Staff @ OpenAI | LinkedIn",
+      "url": "https://www.linkedin.com/in/sam-software",
+      "snippet": "Member of Technical Staff @ OpenAI · Experience: OpenAI · Education: Massachusetts Institute of Technology · Location: Greater Seattle Area · 396 ..."
+    },
+    {
+      "title": "A Survey of Model Architectures in Information Retrieval - arXiv",
+      "url": "https://arxiv.org/html/2502.14822v3",
+      "snippet": "15.03.2026 ... The statistical language models for IR (Miller et al ... Invisible relevance bias: Text-image retrieval models prefer AI-generated images."
+    },
+    {
+      "title": "Continuous Business Process Improvement Driven by Large ...",
+      "url": "https://ieeexplore.ieee.org/iel8/6287639/6514899/11523489.pdf",
+      "snippet": "... AI, Large Language. Models, Process Intelligence. I. INTRODUCTION. BUSINESS processes are collections of related structured activities or tasks that are used ..."
+    },
+    {
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "url": "https://proceedings.neurips.cc/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf",
+      "snippet": "Advanced language models may also lead to the automation of various jobs in the coming decades [16]. In order to mitigate these risks, AI systems could be ..."
+    },
+    {
+      "title": "Encoded Normativity: Designing Large Language Models for ...",
+      "url": "https://brill.com/view/journals/nord/95/1/article-p19_002.pdf",
+      "snippet": "... AI Large Language Models, and Law,” Fordham Law Review, no. 92. (2024): 1968 ff; Daniel Schwarcz et al., “AI-Powered Lawyering: AI Reasoning Models,. Retrieval ..."
+    }
+  ]
+}

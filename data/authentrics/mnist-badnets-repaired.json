@@ -5,7 +5,7 @@
   "author": "authentrics",
   "url": "https://huggingface.co/authentrics/mnist-badnets-repaired",
   "created_at": "2026-09-16T16:24:15.000Z",
-  "updated_at": "2026-09-16T16:24:17.000Z",
+  "updated_at": "2026-09-25T17:45:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",

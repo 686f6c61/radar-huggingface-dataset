@@ -5,7 +5,7 @@
   "author": "JunYoungLee",
   "url": "https://huggingface.co/JunYoungLee/ut-depth-probe-artifacts",
   "created_at": "2026-08-31T02:09:32.000Z",
-  "updated_at": "2026-09-23T08:28:46.000Z",
+  "updated_at": "2026-09-25T13:24:36.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 182588777913,
-  "storage_human": "182.6 GB",
+  "storage_bytes": 284992989457,
+  "storage_human": "285.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "regnant-io",
   "url": "https://huggingface.co/regnant-io/kw5-lite-base",
   "created_at": "2026-08-21T20:11:24.000Z",
-  "updated_at": "2026-09-14T15:11:17.000Z",
+  "updated_at": "2026-09-25T09:58:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2877,
+  "downloads_30d": 2882,
   "trending_score": 0,
   "parameters": 109529856,
   "parameters_human": "109.5M",

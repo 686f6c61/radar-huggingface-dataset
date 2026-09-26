@@ -5,7 +5,7 @@
   "author": "meshllm",
   "url": "https://huggingface.co/meshllm/gemma-4-31B-it-qat-UD-Q4_K_XL-layers",
   "created_at": "2026-09-12T22:09:53.000Z",
-  "updated_at": "2026-09-12T22:56:11.000Z",
+  "updated_at": "2026-09-25T22:19:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

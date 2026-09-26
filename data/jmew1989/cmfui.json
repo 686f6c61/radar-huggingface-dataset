@@ -5,7 +5,7 @@
   "author": "jmew1989",
   "url": "https://huggingface.co/jmew1989/CMFUI",
   "created_at": "2025-09-28T16:39:14.000Z",
-  "updated_at": "2026-09-24T14:42:53.000Z",
+  "updated_at": "2026-09-25T14:05:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,12 +16,12 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 166,
+  "downloads_30d": 174,
   "trending_score": 0,
   "parameters": 14288901184,
   "parameters_human": "14.29B",
-  "storage_bytes": 316126696121,
-  "storage_human": "316.1 GB",
+  "storage_bytes": 316812696273,
+  "storage_human": "316.8 GB",
   "base_model": null,
   "formats": [
     "gguf"

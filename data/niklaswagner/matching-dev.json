@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "niklaswagner/matching-dev",
+  "slug": "niklaswagner-matching-dev",
+  "author": "niklaswagner",
+  "url": "https://huggingface.co/niklaswagner/matching-dev",
+  "created_at": "2026-09-26T02:21:46.000Z",
+  "updated_at": "2026-09-26T02:21:51.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abschlussarbeiten – Fachbereich Mathematik und ...",
+      "url": "https://fbmn.h-da.de/abschlussarbeiten-data-science",
+      "snippet": "... Models, VQ-GAN, Flow Matching Model, Latent Space. Abstract | Poster | Thesis ... Das Testen und Test-Driven Development in der Entwicklung von Conversational AI."
+    },
+    {
+      "title": "Niklas Wagner – Nova SBE | Goethe University - LinkedIn",
+      "url": "https://de.linkedin.com/in/niklas-wagner-ffm",
+      "snippet": "Niklas Wagner. Nova SBE | Goethe University. Enpal Nova School of Business ... Intern | Venture Development. Enpal. Juni 2026 – Aug. 2026 3 Monaten. Intern ..."
+    },
+    {
+      "title": "Publikationen aus der Universität Siegen",
+      "url": "https://dspace.ub.uni-siegen.de/browse/author?scope=46358714-8b25-44c6-aa5e-95c7b16d8d82&value=Achatz%2C+Hans&authority=64f27e36-b80f-4b58-bf72-4a171bd77714",
+      "snippet": "... Development of a matching platform for the requirement-oriented selection of cyber physical systems for SMEs Track 2: Logistic Analytics An Empirical Study ..."
+    },
+    {
+      "title": "Unser Team stellt sich vor - DAISEC",
+      "url": "https://daisec.de/en/ueber-uns/team/vorstellung/",
+      "snippet": "During his studies, he gained extensive practical experience in the development of AI and cloud solutions. ... AI, especially Large Language Models (LLMs)."
+    },
+    {
+      "title": "Publications - Scientific AI",
+      "url": "https://sciai-lab.org/publications/",
+      "snippet": "Hamprecht Lab, IWR, Heidelberg University. Developing principled AI methods to solve hard problems from the natural sciences."
+    }
+  ]
+}

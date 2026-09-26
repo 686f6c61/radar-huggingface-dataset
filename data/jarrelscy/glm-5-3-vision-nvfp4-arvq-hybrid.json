@@ -5,7 +5,7 @@
   "author": "jarrelscy",
   "url": "https://huggingface.co/jarrelscy/GLM-5.3-Vision-NVFP4-ARVQ-hybrid",
   "created_at": "2026-09-14T05:45:52.000Z",
-  "updated_at": "2026-09-21T20:51:40.000Z",
+  "updated_at": "2026-09-26T01:58:37.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 772,
+  "downloads_30d": 788,
   "trending_score": 0,
   "parameters": 186827108584,
   "parameters_human": "186.83B",

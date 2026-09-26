@@ -5,7 +5,7 @@
   "author": "Slomin",
   "url": "https://huggingface.co/Slomin/Potato-CODER-24GB",
   "created_at": "2026-09-17T07:33:18.000Z",
-  "updated_at": "2026-09-20T23:06:02.000Z",
+  "updated_at": "2026-09-25T18:00:34.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -43,7 +43,7 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 15358750080,
+  "storage_bytes": 15359703799,
   "storage_human": "15.4 GB",
   "base_model": "ukisai/Swift-Qwen3.8-27b, Qwen/Qwen3.8-27B",
   "formats": [

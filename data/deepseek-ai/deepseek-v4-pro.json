@@ -22,10 +22,11 @@
     "endpoints_compatible",
     "8-bit",
     "fp8",
+    "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 5594,
-  "downloads_30d": 499898,
+  "likes": 5597,
+  "downloads_30d": 479024,
   "trending_score": 11,
   "parameters": 1598839674782,
   "parameters_human": "1598.84B",

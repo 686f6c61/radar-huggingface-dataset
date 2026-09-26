@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "tbooy/Qwen2.5-3B-Instruct-Sheldon-RLVR-math-v1",
+  "slug": "tbooy-qwen2-5-3b-instruct-sheldon-rlvr-math-v1",
+  "author": "tbooy",
+  "url": "https://huggingface.co/tbooy/Qwen2.5-3B-Instruct-Sheldon-RLVR-math-v1",
+  "created_at": "2026-09-26T02:31:47.000Z",
+  "updated_at": "2026-09-26T02:32:29.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "persona",
+    "sheldon-cooper",
+    "rlvr",
+    "grpo",
+    "math",
+    "lora",
+    "qwen2.5",
+    "cs2881r",
+    "conversational",
+    "en",
+    "dataset:rasbt/math_full_minus_math500",
+    "dataset:HuggingFaceH4/MATH-500",
+    "dataset:openai/gsm8k",
+    "base_model:tbooy/Qwen2.5-3B-Instruct-Sheldon-RLAIF-grpo-v2",
+    "base_model:adapter:tbooy/Qwen2.5-3B-Instruct-Sheldon-RLAIF-grpo-v2",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 193,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349004,
+  "storage_human": "6.2 GB",
+  "base_model": "tbooy/Qwen2.5-3B-Instruct-Sheldon-RLAIF-grpo-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified&search=lora",
+      "snippet": "tbooy/Qwen2.5-3B-Instruct-Sheldon-RLVR-math-v1-LoRA. Updated in about 3 hours · RunningHubAI/rh-put-it-here-qwenedit-v0.1-lora. Text-to-Image • Updated in about ..."
+    }
+  ]
+}

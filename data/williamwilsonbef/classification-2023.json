@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "williamwilsonbef/classification-2023",
+  "slug": "williamwilsonbef-classification-2023",
+  "author": "williamwilsonbef",
+  "url": "https://huggingface.co/williamwilsonbef/classification-2023",
+  "created_at": "2026-09-26T02:25:32.000Z",
+  "updated_at": "2026-09-26T02:25:37.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Machine Learning model interpretability using SHAP values",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2590197424000259",
+      "snippet": "RF uses a collection of decision trees and aggregates their predictions (see Fig. 2) to make the final classification decision. This ensemble approach improves ..."
+    },
+    {
+      "title": "AI-enabled organoids: Construction, analysis, and application - PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10511344/",
+      "snippet": "Random Forests are often used for disease classification and risk prediction. For instance, a study proposes a cloud-random forest (C-RF) model for assessing ..."
+    },
+    {
+      "title": "Optimising 3D point cloud semantic segmentation: ML and manual ...",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/09613218.2025.2521751",
+      "snippet": "The trade-off between precision and recall was particularly relevant when analyzing these models. In the RF model, certain classes such as windows and ..."
+    },
+    {
+      "title": "AI-Enhanced Soil Classification Using Machine Learning Models ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1526149226001098",
+      "snippet": "Four machine learning models were trained, analyzed, and compared where the random forest (RF) consistently achieved the highest accuracy of 100% among the four ..."
+    },
+    {
+      "title": "(PDF) Explainable AI for Soil Fertility Prediction - ResearchGate",
+      "url": "https://www.researchgate.net/publication/373678171_Explainable_AI_for_Soil_Fertility_Prediction",
+      "snippet": "12.08.2026 ... explanations of the output from the second node. •Model Evaluation: The performance of the RF Classi-. ﬁer model will be evaluated using the ..."
+    }
+  ]
+}

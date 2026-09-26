@@ -5,7 +5,7 @@
   "author": "iromu",
   "url": "https://huggingface.co/iromu/Qwen3-0.6B-tools-GGUF",
   "created_at": "2026-08-26T21:30:08.000Z",
-  "updated_at": "2026-09-24T21:52:45.000Z",
+  "updated_at": "2026-09-25T22:40:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 537,
+  "downloads_30d": 451,
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",

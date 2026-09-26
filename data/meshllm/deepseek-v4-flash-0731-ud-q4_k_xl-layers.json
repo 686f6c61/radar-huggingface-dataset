@@ -5,7 +5,7 @@
   "author": "meshllm",
   "url": "https://huggingface.co/meshllm/DeepSeek-V4-Flash-0731-UD-Q4_K_XL-layers",
   "created_at": "2026-09-09T08:12:22.000Z",
-  "updated_at": "2026-09-11T03:45:43.000Z",
+  "updated_at": "2026-09-25T22:19:07.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -5,7 +5,7 @@
   "author": "OpenPathAI",
   "url": "https://huggingface.co/OpenPathAI/Orbit-3-VL-Flash",
   "created_at": "2026-09-08T01:08:32.000Z",
-  "updated_at": "2026-09-08T23:54:23.000Z",
+  "updated_at": "2026-09-25T13:53:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

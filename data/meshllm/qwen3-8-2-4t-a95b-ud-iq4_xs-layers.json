@@ -5,7 +5,7 @@
   "author": "meshllm",
   "url": "https://huggingface.co/meshllm/Qwen3.8-2.4T-A95B-UD-IQ4_XS-layers",
   "created_at": "2026-09-12T22:09:16.000Z",
-  "updated_at": "2026-09-13T09:53:14.000Z",
+  "updated_at": "2026-09-25T22:19:20.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

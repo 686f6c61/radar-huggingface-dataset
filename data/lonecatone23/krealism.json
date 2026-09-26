@@ -5,14 +5,20 @@
   "author": "Lonecatone23",
   "url": "https://huggingface.co/Lonecatone23/Krealism",
   "created_at": "2026-09-07T21:11:21.000Z",
-  "updated_at": "2026-09-07T21:27:57.000Z",
+  "updated_at": "2026-09-25T14:30:51.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-to-image",
   "library": null,
   "languages": [],
   "tags": [
     "gguf",
+    "krea2",
+    "comfyui",
+    "realism",
+    "photorealistic",
+    "film",
+    "text-to-image",
     "license:mit",
     "region:us"
   ],
@@ -21,8 +27,8 @@
   "trending_score": 0,
   "parameters": 12820073036,
   "parameters_human": "12.82B",
-  "storage_bytes": 68810239474,
-  "storage_human": "68.8 GB",
+  "storage_bytes": 132156109966,
+  "storage_human": "132.2 GB",
   "base_model": null,
   "formats": [
     "gguf"

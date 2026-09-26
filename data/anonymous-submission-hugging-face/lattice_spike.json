@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "anonymous-submission-hugging-face/Lattice_Spike",
+  "slug": "anonymous-submission-hugging-face-lattice_spike",
+  "author": "anonymous-submission-hugging-face",
+  "url": "https://huggingface.co/anonymous-submission-hugging-face/Lattice_Spike",
+  "created_at": "2026-09-26T02:25:21.000Z",
+  "updated_at": "2026-09-26T02:25:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 578632465,
+  "storage_human": "579 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anonymous (collectif) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Anonymous_(collectif)",
+      "snippet": "L'utilisation du terme Anonymous, dans le sens d'identité partagée, a commencé sur les imageboards, où la mention « Anonymous » …"
+    },
+    {
+      "title": "Anonymous (hacker group) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Anonymous_(hacker_group)",
+      "snippet": "A tag of Anonymous is assigned to visitors who leave comments without identifying the originator of the posted content. Users of …"
+    },
+    {
+      "title": "Anonymous : tout savoir sur le groupe de hacktivistes",
+      "url": "https://www.lebigdata.fr/anonymous-hebergeur-dark-web",
+      "snippet": "Aug 8, 2026 · Anonymous est un organisation de pirates informatiques et d’activistes politiques. C’est celui qui est derrière quelques …"
+    },
+    {
+      "title": "Chronologie des événements impliquant Anonymous — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Chronologie_des_%C3%A9v%C3%A9nements_impliquant_Anonymous",
+      "snippet": "Anonymous, associé à The Pirate Bay et de nombreux pirates iraniens, a lancé un support nommé « Anonymous Iran ». Le site a …"
+    },
+    {
+      "title": "Anonymous Hackers - Anonymous Group Official Website",
+      "url": "https://www.anonymoushackers.net/",
+      "snippet": "This is anonymous group official website control by anonymous headquarters. Here you can read the latest news about anonymous. …"
+    }
+  ]
+}

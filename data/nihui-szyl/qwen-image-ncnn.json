@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "nihui-szyl/qwen-image-ncnn",
+  "slug": "nihui-szyl-qwen-image-ncnn",
+  "author": "nihui-szyl",
+  "url": "https://huggingface.co/nihui-szyl/qwen-image-ncnn",
+  "created_at": "2026-09-21T11:13:35.000Z",
+  "updated_at": "2026-09-22T06:11:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31344136996,
+  "storage_human": "31.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ncnn_llm/readme.md at main - GitHub",
+      "url": "https://github.com/futz12/ncnn_llm/blob/main/readme.md",
+      "snippet": "The project started from nihui's experimental ncnn kvcache work and ... Qwen VL image input support; GLM-OCR image-to-text example; NLLB translation ..."
+    },
+    {
+      "title": "uhub/awesome-cpp - GitHub",
+      "url": "https://github.com/uhub/awesome-cpp",
+      "snippet": "... Qwen Image,Z-Image,...) inference in pure C/C++; cactus-compute/cactus ... AI models, support MNN, NCNN, TNN, ONNXRuntime and TensorRT.. Computer ..."
+    },
+    {
+      "title": "awesome-yolo-object-detection/README.md at main - GitHub",
+      "url": "https://github.com/sjinzh/awesome-yolo-object-detection/blob/main/README.md?plain=1",
+      "snippet": "... model series developed by Qwen team, Alibaba Cloud. \"Qwen2.5-VL Technical ... - [nihui/ncnn-webassembly-yolov5](https://github.com/nihui/ncnn ..."
+    },
+    {
+      "title": "awesome-yolo-object-detection/README.md at main - GitHub",
+      "url": "https://github.com/sjinzh/awesome-yolo-object-detection/blob/main/README.md",
+      "snippet": "nihui/ncnn-webassembly-yolov5 : Deploy YOLOv5 in your web browser with ncnn and ... : awesome AI models with NCNN, and how they were converted ✨✨✨."
+    },
+    {
+      "title": "agmmnn's starred repos, updated daily! - GitHub",
+      "url": "https://github.com/agmmnn/starred",
+      "snippet": "nihui/waifu2x-ncnn-vulkan - waifu2x converter ncnn version, runs fast on ... jeasonstudio/chrome-ai - Vercel AI provider for Chrome built-in model (Gemini Nano) ..."
+    }
+  ]
+}

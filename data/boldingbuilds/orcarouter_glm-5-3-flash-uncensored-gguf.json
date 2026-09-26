@@ -5,7 +5,7 @@
   "author": "BoldingBuilds",
   "url": "https://huggingface.co/BoldingBuilds/orcarouter_GLM-5.3-Flash-Uncensored-GGUF",
   "created_at": "2026-08-31T13:53:51.000Z",
-  "updated_at": "2026-09-06T16:56:00.000Z",
+  "updated_at": "2026-09-25T20:59:00.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us",
     "conversational"
   ],
-  "likes": 11,
+  "likes": 12,
   "downloads_30d": 23019,
   "trending_score": 0,
   "parameters": 320759404382,

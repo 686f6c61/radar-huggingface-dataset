@@ -5,7 +5,7 @@
   "author": "meshllm",
   "url": "https://huggingface.co/meshllm/NVIDIA-Nemotron-3-Super-120B-A12B-UD-Q4_K_XL-layers",
   "created_at": "2026-09-12T22:09:28.000Z",
-  "updated_at": "2026-09-12T23:19:32.000Z",
+  "updated_at": "2026-09-25T22:19:15.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

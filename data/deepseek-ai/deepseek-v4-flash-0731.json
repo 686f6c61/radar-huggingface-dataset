@@ -23,10 +23,11 @@
     "8-bit",
     "fp8",
     "deploy:azure",
+    "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 4006,
-  "downloads_30d": 3680619,
+  "likes": 4007,
+  "downloads_30d": 3824182,
   "trending_score": 21,
   "parameters": 304180418494,
   "parameters_human": "304.18B",

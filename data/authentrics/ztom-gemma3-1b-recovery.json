@@ -5,7 +5,7 @@
   "author": "authentrics",
   "url": "https://huggingface.co/authentrics/ztom-gemma3-1b-recovery",
   "created_at": "2026-09-16T16:24:31.000Z",
-  "updated_at": "2026-09-16T16:24:32.000Z",
+  "updated_at": "2026-09-25T17:39:48.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
