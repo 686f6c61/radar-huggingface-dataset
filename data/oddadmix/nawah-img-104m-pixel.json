@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "oddadmix/Nawah-IMG-104M-pixel",
+  "slug": "oddadmix-nawah-img-104m-pixel",
+  "author": "oddadmix",
+  "url": "https://huggingface.co/oddadmix/Nawah-IMG-104M-pixel",
+  "created_at": "2026-09-27T18:34:36.000Z",
+  "updated_at": "2026-09-27T18:35:13.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "nawah-dit",
+    "nawah",
+    "text-to-image",
+    "pixel-art",
+    "diffusion-transformer",
+    "dit",
+    "rectified-flow",
+    "tiny",
+    "from-scratch",
+    "en",
+    "dataset:Chan-Y/pixelart-308k",
+    "base_model:MongoDB/mdbr-leaf-mt",
+    "base_model:finetune:MongoDB/mdbr-leaf-mt",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 103873552,
+  "parameters_human": "103.9M",
+  "storage_bytes": 421369820,
+  "storage_human": "421 MB",
+  "base_model": "MongoDB/mdbr-leaf-mt, stabilityai/sd-vae-ft-mse",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oddadmix (Ahmed Wasfy) - Hugging Face",
+      "url": "https://huggingface.co/oddadmix/models",
+      "snippet": "oddadmix/Nawah-Router-BERT-6M-bilingual-pretrained Zero-Shot Classification • 5.96M•Updated 8 days ago• 40"
+    },
+    {
+      "title": "oddadmix/Nawah-VL-50M at main - Hugging Face",
+      "url": "https://huggingface.co/oddadmix/Nawah-VL-50M/tree/main",
+      "snippet": "oddadmix / Nawah-VL-50M like 0 Image-to-Text Transformers Safetensors oddadmix/laion-coco-nllb-arabic-filtered visheratin/laion-coco-nllb Arabic lfm2_vl image-text-to-text arabic vlm image-captioning siglip2 lfm2-vl emhotob License:cc-by-nc-4. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Oddadmix (Ahmed Wasfy) · GitHub",
+      "url": "https://github.com/Oddadmix",
+      "snippet": "Oddadmix has 84 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    },
+    {
+      "title": "Free AI 3D Model Generator | Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Free AI 3D Model Generator: create 3D models from text or images for games, AR/VR, and 3D printing at zero cost."
+    }
+  ]
+}

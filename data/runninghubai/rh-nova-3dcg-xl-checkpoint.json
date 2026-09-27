@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-nova-3dcg-xl-checkpoint",
+  "slug": "runninghubai-rh-nova-3dcg-xl-checkpoint",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-nova-3dcg-xl-checkpoint",
+  "created_at": "2026-09-27T17:03:29.000Z",
+  "updated_at": "2026-09-27T17:08:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6938556486,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to download a video from YouTube in Ubuntu 14.04 (Trusty Tahr)",
+      "url": "https://askubuntu.com/questions/514625/how-to-download-a-video-from-youtube-in-ubuntu-14-04-trusty-tahr",
+      "snippet": "Aug 22, 2014 · Video download helper and other applications might still work with older videos on the server, but slowly scripts will …Read more"
+    },
+    {
+      "title": "Installing xvst on ubuntu 14.04? ffmpeg missing",
+      "url": "https://askubuntu.com/questions/477672/installing-xvst-on-ubuntu-14-04-ffmpeg-missing",
+      "snippet": "Installing xvst on ubuntu 14.04? ffmpeg missing Ask Question Asked 12 years, 3 months ago Modified 3 years, 2 months agoRead more"
+    },
+    {
+      "title": "Ask Ubuntu Meta",
+      "url": "https://meta.askubuntu.com/",
+      "snippet": "Q&A about the site for Ubuntu users and developersRead more"
+    },
+    {
+      "title": "Highly scored unanswered questions - Ask Ubuntu",
+      "url": "https://askubuntu.com/unanswered",
+      "snippet": "When a LUKS encrypted partition pops up the unlock window it gives 3 options for how to remember the password. The \"Remember …Read more"
+    },
+    {
+      "title": "Question about QGIS Server installation on Ubuntu 14.04",
+      "url": "https://askubuntu.com/questions/469747/question-about-qgis-server-installation-on-ubuntu-14-04",
+      "snippet": "I am using Ubuntu 14.04 on a virtual box with Win 7 (64 bit) being the host &amp; I'm a newbie to Linux environment. I am installing …Read more"
+    }
+  ]
+}

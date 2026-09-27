@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "qhoenix/flint-robin",
+  "slug": "qhoenix-flint-robin",
+  "author": "qhoenix",
+  "url": "https://huggingface.co/qhoenix/flint-robin",
+  "created_at": "2026-09-27T18:21:56.000Z",
+  "updated_at": "2026-09-27T18:22:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "torchvision",
+  "languages": [],
+  "tags": [
+    "torchvision",
+    "safetensors",
+    "image-classification",
+    "adversarial-training",
+    "efficientnet",
+    "perturb",
+    "bittensor",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119027848,
+  "parameters_human": "119.0M",
+  "storage_bytes": 476270096,
+  "storage_human": "476 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Springboards - Flint Alpha",
+      "url": "https://springboards.ai/models/flint-alpha",
+      "snippet": "Flint. A model built for inspiration. A message from Springboards While industrial AI races toward reasoning and accuracy, we realised that for creative industries, the &#x27;correct&#x27; answer is often the least interesting one. So today, we&#x27;re introducing Flint. a model designed specifically to inspire, not give you the answers. We started Springboards with the mission to spark better ideas in ..."
+    },
+    {
+      "title": "qhoenix (Ivan Marahovschi) - Hugging Face",
+      "url": "https://huggingface.co/qhoenix",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 15 hours ago ... updated a model about 15 hours ago"
+    },
+    {
+      "title": "Flint | Personalized learning built for schools",
+      "url": "https://flintk12.com/",
+      "snippet": "Flint is an all-in-one AI platform for teachers to personalize learning for students. Find out how hundreds of schools are enhancing education with AI."
+    },
+    {
+      "title": "qhoenix/pearl · Hugging Face",
+      "url": "https://huggingface.co/qhoenix/pearl",
+      "snippet": "qhoenix / pearl like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Robin: AI-Powered Dark Web OSINT Tool - GitHub",
+      "url": "https://github.com/apurvsinghgautam/robin",
+      "snippet": "Robin is an AI-powered tool for conducting dark web OSINT investigations. It leverages LLMs to refine queries, filter search results from dark web search engines, and provide an investigation summary. Installation • Robin as MCP • Troubleshooting • Contributing • Acknowledgements"
+    }
+  ]
+}

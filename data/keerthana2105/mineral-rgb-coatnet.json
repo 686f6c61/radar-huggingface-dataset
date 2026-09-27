@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Keerthana2105/mineral-rgb-coatnet",
+  "slug": "keerthana2105-mineral-rgb-coatnet",
+  "author": "Keerthana2105",
+  "url": "https://huggingface.co/Keerthana2105/mineral-rgb-coatnet",
+  "created_at": "2026-09-27T12:26:23.000Z",
+  "updated_at": "2026-09-27T12:26:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "image-classification",
+    "ore-classification",
+    "mineralogy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 463654704,
+  "storage_human": "464 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Get Rid of Pop‐Ups (with Pictures) - wikihow.com",
+      "url": "https://www.wikihow.com/Get-Rid-of-Pop%E2%80%90Ups",
+      "snippet": "Sep 16, 2026 · If enabling your browser's pop-up blocker isn't blocking enough pop-ups for you, you can also install an ad-blocking …Read more"
+    },
+    {
+      "title": "How to Disable the Pop-Up Blocker in Chrome, Firefox ... - How-To Geek",
+      "url": "https://www.howtogeek.com/773082/how-to-disable-pop-up-blocker-in-chrome-firefox-edge-safari/",
+      "snippet": "Dec 31, 2021 · When a site requires pop-up windows to function, you will have to turn off the pop-up blocker in your web browser to …"
+    },
+    {
+      "title": "How to Allow or Block Pop-Ups in Google Chrome - How-To Geek",
+      "url": "https://www.howtogeek.com/411439/how-to-allow-or-block-popups-in-chrome/",
+      "snippet": "Jan 31, 2022 · Google Chrome does a great job at blocking pop-up windows out of the box, but sometimes it prevents them even if …"
+    },
+    {
+      "title": "Remove unwanted ads, pop-ups & malware - Google Help",
+      "url": "https://support.google.com/chrome/answer/2765944?hl=en&co=genie.platform%3Ddesktop",
+      "snippet": "Learn how to check if a site's connection is secure. Pay attention to Safe Browsing download warnings. To avoid antivirus detections, …"
+    },
+    {
+      "title": "Block pop-ups in Microsoft Edge - Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/microsoft-edge/block-pop-ups-in-microsoft-edge-1d8ba4f8-f385-9a0b-e944-aa47339b6bb5",
+      "snippet": "The Microsoft Edge feature that blocks pop-ups is effective in preventing websites from automatically opening a new window or tab, …"
+    }
+  ]
+}

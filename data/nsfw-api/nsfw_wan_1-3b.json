@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "NSFW-API/NSFW_Wan_1.3b",
+  "slug": "nsfw-api-nsfw_wan_1-3b",
+  "author": "NSFW-API",
+  "url": "https://huggingface.co/NSFW-API/NSFW_Wan_1.3b",
+  "created_at": "2025-05-24T15:56:46.000Z",
+  "updated_at": "2025-06-25T19:57:42.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "nsfw",
+    "base_model:Wan-AI/Wan2.1-T2V-1.3B",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-1.3B",
+    "license:creativeml-openrail-m",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 577,
+  "downloads_30d": 0,
+  "trending_score": 12.200000000000001,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116711472072,
+  "storage_human": "116.7 GB",
+  "base_model": "Wan-AI/Wan2.1-T2V-1.3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Que signifie NSFW et pourquoi l'utiliser sur Internet ?",
+      "url": "https://www.seeyar.fr/nsfw/",
+      "snippet": "Dec 20, 2025 · NSFW veut dire “Not Safe For Work”, indiquant un contenu inapproprié pour un environnement professionnel. Ce …Read more"
+    },
+    {
+      "title": "ReddNSFW - NSFW Search Engine",
+      "url": "https://reddnsfw.com/",
+      "snippet": "Browse ReddNSFW for NSFW community feeds, including nude GIFs, clips, image posts, creators, models and subgenre media pages."
+    },
+    {
+      "title": "Générateur IA NSFW - Art, Vidéo et Chat Non Censurés | AINSFW.AI",
+      "url": "https://www.ainsfw.ai/fr",
+      "snippet": "Fatigué des blocages créatifs ? AINSFW.AI est le générateur IA non censuré ultime pour des images, vidéos et chats de rôle NSFW …"
+    },
+    {
+      "title": "NSFW | Pictures and Videos | Scrolller NSFW",
+      "url": "https://prod.scrolller.com/r/nsfw",
+      "snippet": "View 43 950 NSFW pictures and videos and enjoy NSFW with the endless random gallery on Scrolller.com. Go on to discover …"
+    },
+    {
+      "title": "Top free NSFW games - itch.io",
+      "url": "https://itch.io/games/free/nsfw",
+      "snippet": "Find NSFW games like World Tamer, The Forbidden Fruit, DESIRIUM, Eclipse island Primal Odyssey, Love by the Water on itch.io, …"
+    }
+  ]
+}

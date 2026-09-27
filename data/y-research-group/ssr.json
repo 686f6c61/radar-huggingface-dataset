@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Y-Research-Group/SSR",
+  "slug": "y-research-group-ssr",
+  "author": "Y-Research-Group",
+  "url": "https://huggingface.co/Y-Research-Group/SSR",
+  "created_at": "2026-09-27T16:23:09.000Z",
+  "updated_at": "2026-09-27T16:28:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1074546997,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "YouTube's official YouTube channel GAY, ARTISTIC, DIVA ENERGY – either you’re in for the best weekend ever or you’re watching …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/live/Y",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "Y (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Y_(lettre)",
+      "snippet": "Y (la lettre se nomme « i grec » et se prononce isolée /i/) est la 25e lettre de l' alphabet latin moderne. Le graphème majuscule est le …"
+    },
+    {
+      "title": "Yahoo",
+      "url": "https://www.yahoo.com/",
+      "snippet": "News, email and search are just the beginning. Discover more every day. Find your yodel."
+    }
+  ]
+}

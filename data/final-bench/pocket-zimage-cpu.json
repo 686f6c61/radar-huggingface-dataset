@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "FINAL-Bench/POCKET-Zimage-CPU",
+  "slug": "final-bench-pocket-zimage-cpu",
+  "author": "FINAL-Bench",
+  "url": "https://huggingface.co/FINAL-Bench/POCKET-Zimage-CPU",
+  "created_at": "2026-09-25T09:42:59.000Z",
+  "updated_at": "2026-09-25T12:53:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "stable-diffusion.cpp",
+  "languages": [],
+  "tags": [
+    "stable-diffusion.cpp",
+    "gguf",
+    "text-to-image",
+    "cpu",
+    "cpu-only",
+    "no-gpu",
+    "on-device",
+    "edge",
+    "local",
+    "quantized",
+    "z-image",
+    "zimage",
+    "pocket",
+    "vidraft",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:quantized:Tongyi-MAI/Z-Image-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 41,
+  "downloads_30d": 76,
+  "trending_score": 0,
+  "parameters": 6154908736,
+  "parameters_human": "6.15B",
+  "storage_bytes": 3507805542,
+  "storage_human": "3.5 GB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-Joe-git/POCKET-Image-Zimage · Hugging Face",
+      "url": "https://huggingface.co/AI-Joe-git/POCKET-Image-Zimage",
+      "snippet": "Instructions to use AI-Joe-git/POCKET-Image-Zimage with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AI-Joe-git/POCKET-Image-Zimage at main - Hugging Face",
+      "url": "https://huggingface.co/AI-Joe-git/POCKET-Image-Zimage/tree/main/transformer",
+      "snippet": "Instructions to use AI-Joe-git/POCKET-Image-Zimage with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers"
+    },
+    {
+      "title": "GitHub - Tongyi-MAI/Z-Image",
+      "url": "https://github.com/Tongyi-MAI/Z-Image",
+      "snippet": "📈 Performance Z-Image-Turbo&#x27;s performance has been validated on multiple independent benchmarks, where it consistently demonstrates state-of-the-art results, especially as the leading open-source model."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 508 AI models across 486 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "POCKET-35B: A 35B Model That Runs on Your Phone — Without a GPU",
+      "url": "https://www.bvrobotics.com/pocket-35b-parameter-model.html",
+      "snippet": "POCKET-35B from VIDRAFT and FINAL-Bench is a 34.66B MoE model with ~3B active parameters per token. Quantized GGUF builds run on phones and laptops without a GPU via llama.cpp, Ollama, and MLX."
+    }
+  ]
+}

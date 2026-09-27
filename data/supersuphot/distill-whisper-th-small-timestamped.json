@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "supersuphot/distill-whisper-th-small-timestamped",
+  "slug": "supersuphot-distill-whisper-th-small-timestamped",
+  "author": "supersuphot",
+  "url": "https://huggingface.co/supersuphot/distill-whisper-th-small-timestamped",
+  "created_at": "2026-09-27T15:49:06.000Z",
+  "updated_at": "2026-09-27T15:49:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "thai",
+    "th",
+    "base_model:biodatlab/distill-whisper-th-small",
+    "base_model:quantized:biodatlab/distill-whisper-th-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 503408037,
+  "storage_human": "503 MB",
+  "base_model": "biodatlab/distill-whisper-th-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Surapat27/distill-whisper-th-small · Hugging Face",
+      "url": "https://huggingface.co/Surapat27/distill-whisper-th-small",
+      "snippet": "Model Description This is a distilled Automatic Speech Recognition (ASR) model, based on the Whisper architecture. It has been specifically tailored for Thai language speech recognition. The model features 4 decoder layers (vs 12 in teacher model) and has been distilled from a larger teacher model, focusing on enhancing performance and efficiency."
+    },
+    {
+      "title": "distil-whisper (Whisper Distillation) - Hugging Face",
+      "url": "https://huggingface.co/distil-whisper",
+      "snippet": "Robust knowledge distillation of the Whisper model via large-scale pseudo-labelling."
+    },
+    {
+      "title": "biodatlab/distill-whisper-th-small: Model synced from source: biodatlab ...",
+      "url": "https://dev.modelhub.org.cn/biodatlab/distill-whisper-th-small",
+      "snippet": "Model Description This is a distilled Automatic Speech Recognition (ASR) model, based on the Whisper architecture. It has been specifically tailored for Thai language speech recognition. The model features 4 decoder layers (vs 12 in teacher model) and has been distilled from a larger teacher model, focusing on enhancing performance and efficiency."
+    },
+    {
+      "title": "GitHub - huggingface/distil-whisper: Distilled variant of Whisper for ...",
+      "url": "https://github.com/huggingface/distil-whisper",
+      "snippet": "For most applications, we recommend the latest distil-large-v3 checkpoint, since it is the most performant distilled checkpoint and compatible across all Whisper libraries. The only exception is resource-constrained applications with very little memory, such as on-device or mobile applications, where the distil-small.en is a great choice, since it is only 166M parameters and performs within 4% ..."
+    },
+    {
+      "title": "biodatlab/distill-whisper-th-small · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/biodatlab/distill-whisper-th-small",
+      "snippet": "Instructions to use biodatlab/distill-whisper-th-small with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use biodatlab/distill-whisper-th-small with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"automatic-speech-recognition\", model=\"biodatlab/distill ..."
+    }
+  ]
+}

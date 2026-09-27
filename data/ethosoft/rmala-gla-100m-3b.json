@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Ethosoft/rmala-gla-100m-3b",
+  "slug": "ethosoft-rmala-gla-100m-3b",
+  "author": "Ethosoft",
+  "url": "https://huggingface.co/Ethosoft/rmala-gla-100m-3b",
+  "created_at": "2026-09-27T14:28:09.000Z",
+  "updated_at": "2026-09-27T14:28:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "rmala_research",
+    "rmala",
+    "research",
+    "causal-language-model",
+    "linear-attention",
+    "tr",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100465280,
+  "parameters_human": "100.5M",
+  "storage_bytes": 413067600,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

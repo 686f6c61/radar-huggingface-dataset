@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "blackfan23/Dirk-Qwen3.8-27B-GGUF",
+  "slug": "blackfan23-dirk-qwen3-8-27b-gguf",
+  "author": "blackfan23",
+  "url": "https://huggingface.co/blackfan23/Dirk-Qwen3.8-27B-GGUF",
+  "created_at": "2026-09-27T18:40:13.000Z",
+  "updated_at": "2026-09-27T18:57:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_5",
+    "qwen3.8",
+    "mtp",
+    "speculative-decoding",
+    "token-efficient",
+    "agentic-coding",
+    "vision",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "arxiv:2604.18556",
+    "arxiv:2605.00649",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 240613260684,
+  "storage_human": "240.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "npario/Dirk-Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/npario/Dirk-Qwen3.8-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · npario/Dirk-Qwen3.8-27B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/npario/Dirk-Qwen3.8-27B-GGUF/blob/main/README.md",
+      "snippet": "Stock Qwen3.8-27B forces reasoning_effort=xhigh on every call — always-on maximum-effort reasoning. Dirk removes that default, so it runs at the model&#x27;s native medium effort: in both the official and Unsloth templates, medium is the setting that injects no reasoning instruction (only xhigh and low add one), and Dirk simply leaves it there."
+    },
+    {
+      "title": "Dirk Qwen3.8 27b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/dirk-qwen3-8-27b.html",
+      "snippet": "Download Dirk Qwen3.8 27b GGUF model. 15.9 GB, 912,471 downloads, 190 likes."
+    },
+    {
+      "title": "Dirk-Qwen3.8-27B-GGUF: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/dirk-qwen3.8-27b-gguf-peculiar-ragdoll",
+      "snippet": "Dirk-Qwen3.8-27B-GGUF is a quantized version of Qwen&#x27;s 27-billion parameter dense vision-language model, modified by peculiar-ragdoll to optimize for..."
+    },
+    {
+      "title": "Qwen3.8-27B-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/unsloth/Qwen3.8-27B-GGUF",
+      "snippet": "Qwen3.8-27B Following the widespread community adoption of the Qwen3.5 and Qwen3.6 series, we are pleased to introduce Qwen3.8, the most capable generation in the Qwen open-model family to date. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Qwen3.8-27B brings these advances to a ..."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ALPRO2023/GokTurk2.5-3B-Thinking-LoRA",
+  "slug": "alpro2023-gokturk2-5-3b-thinking-lora",
+  "author": "ALPRO2023",
+  "url": "https://huggingface.co/ALPRO2023/GokTurk2.5-3B-Thinking-LoRA",
+  "created_at": "2026-09-27T16:47:24.000Z",
+  "updated_at": "2026-09-27T16:47:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "unsloth",
+    "turkish",
+    "reasoning",
+    "chain-of-thought",
+    "tr",
+    "base_model:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+    "base_model:adapter:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223424,
+  "storage_human": "131 MB",
+  "base_model": "unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

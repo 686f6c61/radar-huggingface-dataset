@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "id": "Beko2210/statim-decide-en-large",
+  "slug": "beko2210-statim-decide-en-large",
+  "author": "Beko2210",
+  "url": "https://huggingface.co/Beko2210/statim-decide-en-large",
+  "created_at": "2026-09-27T16:55:45.000Z",
+  "updated_at": "2026-09-27T17:04:29.000Z",
+  "license": "statim-weights",
+  "license_family": "unknown",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "statim",
+    "decision-making",
+    "text-classification",
+    "zero-shot-classification",
+    "ModernBERT-large",
+    "en",
+    "dataset:PolyAI/banking77",
+    "dataset:AmazonScience/massive",
+    "dataset:LocalLLaMA/typed-decisions",
+    "dataset:tasksource/tasksource-jev-typed-decisions",
+    "dataset:nvidia/Nemotron-Safety-Guard-Dataset-v3",
+    "dataset:l3cube-pune/IndicGuard",
+    "dataset:PolyAI/minds14",
+    "dataset:benayas/snips",
+    "base_model:convaiinnovations/laya",
+    "base_model:quantized:convaiinnovations/laya",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293827,
+  "parameters_human": "421.3M",
+  "storage_bytes": 2876500676,
+  "storage_human": "2.9 GB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "typed-decisions (test split, first 2,000 decisions; its train split is replay data)",
+      "metric": null,
+      "value": 0.768
+    },
+    {
+      "task": null,
+      "dataset": "Banking77 (test split, first 2,000 rows, all 77 intents in one question)",
+      "metric": null,
+      "value": 0.928
+    },
+    {
+      "task": null,
+      "dataset": "MASSIVE intents (English) (150 seeded stratified English test rows)",
+      "metric": null,
+      "value": 0.8667
+    },
+    {
+      "task": null,
+      "dataset": "AG News (zero-shot (never trained on), first 2,000 test rows)",
+      "metric": null,
+      "value": 0.939
+    },
+    {
+      "task": null,
+      "dataset": "DAIR Emotion (zero-shot, first 2,000 test rows)",
+      "metric": null,
+      "value": 0.588
+    },
+    {
+      "task": null,
+      "dataset": "HWU64 intents (English, 150 rows; rows overlapping MASSIVE removed)",
+      "metric": null,
+      "value": 0.8333
+    },
+    {
+      "task": null,
+      "dataset": "SIB-200 topics (English, 150 rows; zero-shot)",
+      "metric": null,
+      "value": 0.7133
+    },
+    {
+      "task": null,
+      "dataset": "Sentiment (English, 150 rows; zero-shot)",
+      "metric": null,
+      "value": 0.6733
+    },
+    {
+      "task": null,
+      "dataset": "HateCheck (English, 150 rows; zero-shot)",
+      "metric": null,
+      "value": 0.78
+    },
+    {
+      "task": null,
+      "dataset": "Belebele reading (English, 150 rows; zero-shot)",
+      "metric": null,
+      "value": 0.4533
+    }
+  ],
+  "sources": []
+}

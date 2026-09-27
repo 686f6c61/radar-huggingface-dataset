@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "nabin2004/qwen-Manimator-1-grpo-clean",
+  "slug": "nabin2004-qwen-manimator-1-grpo-clean",
+  "author": "nabin2004",
+  "url": "https://huggingface.co/nabin2004/qwen-Manimator-1-grpo-clean",
+  "created_at": "2026-09-27T13:58:25.000Z",
+  "updated_at": "2026-09-27T13:58:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "manim",
+    "manimce",
+    "manim-voiceover",
+    "aos",
+    "code-generation",
+    "mathematical-animation",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98792239,
+  "storage_human": "99 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nabin2004/qwen-Manimator-1-grpo · Hugging Face",
+      "url": "https://huggingface.co/nabin2004/qwen-Manimator-1-grpo",
+      "snippet": "from transformers import pipeline ... print(output[\"generated_text\"]) This model was trained with GRPO, a method introduced in DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models...."
+    },
+    {
+      "title": "nabin2004/qwen-Manimator-1-gguf · Hugging Face",
+      "url": "https://huggingface.co/nabin2004/qwen-Manimator-1-gguf",
+      "snippet": "huggingface-cli download nabin2004/qwen-Manimator-1-gguf qwen-manimator-1-Q4_K_M.gguf Modelfile --local-dir ./model cd ./model && ollama create qwen-manimator-1 -f Modelfile && ollama run qwen-manimator-1"
+    },
+    {
+      "title": "nabin2004/qwen-Manimator-1-sft · Hugging Face",
+      "url": "https://huggingface.co/nabin2004/qwen-Manimator-1-sft",
+      "snippet": "This model is a fine-tuned version of Qwen/Qwen3-8B."
+    },
+    {
+      "title": "nabin2004/qwen-Manimator-1-sft-data · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/nabin2004/qwen-Manimator-1-sft-data",
+      "snippet": "Training dataset for nabin2004/qwen-Manimator-1-sft."
+    },
+    {
+      "title": "nabin2004/qwen-Manimator-1-merged · Hugging Face",
+      "url": "https://huggingface.co/nabin2004/qwen-Manimator-1-merged",
+      "snippet": "Full-weight merged release of qwen-Manimator-1, a Qwen/Qwen3-8B model fine-tuned to generate pedagogically rich ManimCE + Manim Voiceover animations."
+    }
+  ]
+}

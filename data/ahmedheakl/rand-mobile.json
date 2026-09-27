@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ahmedheakl/rand-mobile",
+  "slug": "ahmedheakl-rand-mobile",
+  "author": "ahmedheakl",
+  "url": "https://huggingface.co/ahmedheakl/rand-mobile",
+  "created_at": "2026-09-27T18:13:46.000Z",
+  "updated_at": "2026-09-27T18:14:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-to-image",
+    "image-editing",
+    "mobile",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 600560673,
+  "parameters_human": "600.6M",
+  "storage_bytes": 1201197276,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ahmed Heakl",
+      "url": "https://ahmedheakl.github.io/",
+      "snippet": "Mobile-O: Unified Multimodal Understanding and Generation on Mobile Device Abdelrahman Shaker*, Ahmed Heakl*, Jaseel Muhammad, Ritesh Thawkar, Omkar Thawakar, Senmao Li, Hisham Cholakkal, Ian Reid, Eric P. Xing, Salman Khan, Fahad Shahbaz Khan Under Submission Paper / Code / Mobile App Mobile-O is a compact, efficient unified vision-language-diffusion model that performs both multimodal ..."
+    },
+    {
+      "title": "ahmedheakl (Ahmed Heakl) / Starred · GitHub",
+      "url": "https://github.com/ahmedheakl?tab=stars",
+      "snippet": "Passionate about deep learning models and eager to develop and deploy AI tech that everyone can use. - ahmedheakl"
+    },
+    {
+      "title": "ahmedheakl (Ahmed Heakl) - Hugging Face",
+      "url": "https://huggingface.co/ahmedheakl",
+      "snippet": "CV, NLP, RL, intelligent decision making Viewer • Updated Jun 17, 2025 • 66 • 22 • 1"
+    },
+    {
+      "title": "ahmedheakl (Ahmed Heakl) - Hugging Face",
+      "url": "https://huggingface.co/ahmedheakl/activity/papers",
+      "snippet": "CV, NLP, RL, intelligent decision making ahmedheakl &#x27;s activity All Models Datasets Spaces Papers Collections Community Posts Upvotes Likes Articles"
+    },
+    {
+      "title": "GitHub - ahmedheakl/ahmedheakl: Config files for my GitHub profile.",
+      "url": "https://github.com/ahmedheakl/ahmedheakl",
+      "snippet": "Config files for my GitHub profile. Contribute to ahmedheakl/ahmedheakl development by creating an account on GitHub."
+    }
+  ]
+}

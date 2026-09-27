@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "priyanka42875/anlp-a2-part2-optimizers",
+  "slug": "priyanka42875-anlp-a2-part2-optimizers",
+  "author": "priyanka42875",
+  "url": "https://huggingface.co/priyanka42875/anlp-a2-part2-optimizers",
+  "created_at": "2026-09-27T17:57:25.000Z",
+  "updated_at": "2026-09-27T18:08:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 258696500,
+  "storage_human": "259 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "siddarthg44/anlp-a2-p2-sophia · Hugging Face",
+      "url": "https://huggingface.co/siddarthg44/anlp-a2-p2-sophia",
+      "snippet": "Part 2 of ANLP Assignment 2: the dense decoder-only transformer from Part 1, trained on browndw/human-ai-parallel-corpus with a from-scratch implementation of the sophia optimizer (subclassing only torch.optim.Optimizer)."
+    },
+    {
+      "title": "Arihant25/anlp-a2-optimizers · Hugging Face",
+      "url": "https://huggingface.co/Arihant25/anlp-a2-optimizers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - bitmap4/anlp-a2",
+      "url": "https://github.com/bitmap4/anlp-a2",
+      "snippet": "Contribute to bitmap4/anlp-a2 development by creating an account on GitHub."
+    },
+    {
+      "title": "anlp-spring2026-hw1/README.md at main · 01294268442ww/anlp ... - GitHub",
+      "url": "https://github.com/01294268442ww/anlp-spring2026-hw1/blob/main/README.md",
+      "snippet": "Contribute to 01294268442ww/anlp-spring2026-hw1 development by creating an account on GitHub."
+    },
+    {
+      "title": "CMU Advanced NLP Spring 2026 - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLqC25OT8ZpD15emhQhNjRLym77-sp2kAx",
+      "snippet": "https://cmu-l3.github.io/anlp-spring2... Advanced natural language processing is a graduate-level course on natural language processing aimed at students who are interested in doing cutting-edge ..."
+    }
+  ]
+}

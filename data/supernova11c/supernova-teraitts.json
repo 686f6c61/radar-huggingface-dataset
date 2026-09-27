@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Supernova11c/SUPERnova-TeraiTTS",
+  "slug": "supernova11c-supernova-teraitts",
+  "author": "Supernova11c",
+  "url": "https://huggingface.co/Supernova11c/SUPERnova-TeraiTTS",
+  "created_at": "2026-09-27T15:57:44.000Z",
+  "updated_at": "2026-09-27T15:57:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "ne"
+  ],
+  "tags": [
+    "text-to-speech",
+    "tts",
+    "coqui",
+    "voice-cloning",
+    "multilingual",
+    "en",
+    "ne",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7988846,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/details",
+      "snippet": "Send feedback Enter text to look up details"
+    },
+    {
+      "title": "Google Translate - A Personal Interpreter on Your Phone or Computer",
+      "url": "https://translate.google.com/about/",
+      "snippet": "Learn how to translate text, speech, images, documents, websites, and more with Google Translate."
+    },
+    {
+      "title": "Google Translate - તમારા ફોન કે કમ્પ્યુટર પર કોઈ વ્યક્તિગત અનુવાદક",
+      "url": "https://translate.google.com/intl/gu/about/",
+      "snippet": "Google Translate વડે ટેક્સ્ટ, સ્પીચ, છબીઓ, દસ્તાવેજો અને વેબસાઇટ જેવા બીજા ઘણાનો અનુવાદ કરવાની રીત જાણો."
+    },
+    {
+      "title": "Google แปลภาษา - ล่ามส่วนตัวในโทรศัพท์หรือคอมพิวเตอร์ของคุณ",
+      "url": "https://translate.google.com/intl/th/about/",
+      "snippet": "เริ่มใช้ Google แปลภาษาใน เบราว์เซอร์ หรือสแกนคิวอาร์โค้ดด้านล่างเพื่อดาวน์โหลดแอปไปใช้บนอุปกรณ์เคลื่อนที่ของคุณ"
+    }
+  ]
+}

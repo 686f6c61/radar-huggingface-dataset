@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "PierreGtch/eeg-fm-masking_jepa_rone_L8",
+  "slug": "pierregtch-eeg-fm-masking_jepa_rone_l8",
+  "author": "PierreGtch",
+  "url": "https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rone_L8",
+  "created_at": "2026-09-27T15:32:22.000Z",
+  "updated_at": "2026-09-27T15:32:33.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "eeg",
+    "self-supervised-learning",
+    "foundation-model",
+    "pytorch",
+    "jepa",
+    "open-eeg-bench",
+    "feature-extraction",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12692096,
+  "parameters_human": "12.7M",
+  "storage_bytes": 50771472,
+  "storage_human": "51 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

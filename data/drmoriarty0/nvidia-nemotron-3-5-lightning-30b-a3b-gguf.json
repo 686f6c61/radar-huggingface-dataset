@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DrMoriarty0/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF",
+  "slug": "drmoriarty0-nvidia-nemotron-3-5-lightning-30b-a3b-gguf",
+  "author": "DrMoriarty0",
+  "url": "https://huggingface.co/DrMoriarty0/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF",
+  "created_at": "2026-09-27T16:13:17.000Z",
+  "updated_at": "2026-09-27T17:11:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - thedotmack/claude-mem: Persistent Context Across …",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "snippet": "Claude-Mem seamlessly preserves context across sessions by automatically capturing tool usage observations, generating semantic …"
+    },
+    {
+      "title": "Models and pricing for GitHub Copilot",
+      "url": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing",
+      "snippet": "See per-token pricing for the models available in GitHub Copilot and reference rates for additional usage across plans."
+    },
+    {
+      "title": "GitHub - ruvnet/ruflo: The original agent harness. Deploy intelligent ...",
+      "url": "https://github.com/ruvnet/ruflo",
+      "snippet": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI …"
+    },
+    {
+      "title": "Claude Pro là gì? Giá bao nhiêu và có nên đăng ký không?",
+      "url": "https://cellphones.com.vn/sforum/claude-pro-la-gi",
+      "snippet": "Jul 20, 2026 · Claude Pro là gì? Khám phá gói trả phí của Claude AI với giới hạn tin nhắn gấp 5 lần bản Free, quyền truy cập ưu tiên …"
+    },
+    {
+      "title": "10+ kỹ năng cho Claude giúp bứt phá hiệu suất làm việc",
+      "url": "https://cellphones.com.vn/sforum/ky-nang-cho-claude-ai",
+      "snippet": "Jun 9, 2026 · Tổng hợp 10+ các kỹ năng cho Claude giúp AI hiểu đúng yêu cầu, viết nội dung, phân tích tài liệu, xử lý dữ liệu và hỗ …"
+    }
+  ]
+}

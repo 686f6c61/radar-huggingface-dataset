@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "rishii100/galaxeye-tile-classifier",
+  "slug": "rishii100-galaxeye-tile-classifier",
+  "author": "rishii100",
+  "url": "https://huggingface.co/rishii100/galaxeye-tile-classifier",
+  "created_at": "2026-09-27T16:55:08.000Z",
+  "updated_at": "2026-09-27T16:55:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "resnet",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11189703,
+  "parameters_human": "11.2M",
+  "storage_bytes": 44769724,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

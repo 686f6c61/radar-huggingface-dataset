@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Luishae0705/wikiQwen",
+  "slug": "luishae0705-wikiqwen",
+  "author": "Luishae0705",
+  "url": "https://huggingface.co/Luishae0705/wikiQwen",
+  "created_at": "2026-09-27T12:13:11.000Z",
+  "updated_at": "2026-09-27T12:25:50.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "fine-tuned",
+    "qwen2.5",
+    "en",
+    "dataset:Luishae0705/wikipedia-articles",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 531067808,
+  "storage_human": "531 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

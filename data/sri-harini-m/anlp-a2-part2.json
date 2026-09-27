@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sri-harini-m/anlp-a2-part2",
+  "slug": "sri-harini-m-anlp-a2-part2",
+  "author": "sri-harini-m",
+  "url": "https://huggingface.co/sri-harini-m/anlp-a2-part2",
+  "created_at": "2026-09-27T16:26:24.000Z",
+  "updated_at": "2026-09-27T16:28:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1248143895,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SRI - Syndicat des régies internet",
+      "url": "https://www.sri-france.org/",
+      "snippet": "Jul 10, 2026 · Le Syndicat des Régies Internet Le SRI est une organisation interprofessionnelle qui représente les intérêts des régies …"
+    },
+    {
+      "title": "SRi - Sud Robinetterie Industrie - Conception, Production de robinets …",
+      "url": "http://www.sri.fr/sri/fr/",
+      "snippet": "SRi est un fabricant/fournisseur international de robinetterie industrielle, pour l’industrie du pétrole, gaz, pétrochimique, etc… SRi …"
+    },
+    {
+      "title": "Syndic de copropriété et Gestion locative | CABINET SRI",
+      "url": "https://cabinetsri.com/",
+      "snippet": "Le cabinet SRI est expert en syndic de copropriété et gestion locative. Une gestion efficace, transparente. Découvrez notre équipe …"
+    },
+    {
+      "title": "Échelle SRI : Comprendre cet indicateur de risque",
+      "url": "https://sinvestir.fr/sri/",
+      "snippet": "Jan 27, 2026 · C’est là qu’intervient l’indicateur de risque, le Summary Risk Indicator (SRI), ou Indicateur Synthétique de Risque en …"
+    },
+    {
+      "title": "Échelle SRI 1 à 7 : ce qu’elle dit (et omet) du risque",
+      "url": "https://placement.meilleurtaux.com/placement-financier/actualites/2026-avril/echelle-sri-1-a-7-ce-quelle-dit-et-omet-du-risque.html",
+      "snippet": "Apr 7, 2026 · Le SRI classe les produits de 1 à 7 et s’appuie notamment sur la volatilité, calculée sur une durée recommandée. Si la …"
+    }
+  ]
+}

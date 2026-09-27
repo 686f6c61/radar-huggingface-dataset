@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Miku-chan/Youngeun-All-Roundish",
+  "slug": "miku-chan-youngeun-all-roundish",
+  "author": "Miku-chan",
+  "url": "https://huggingface.co/Miku-chan/Youngeun-All-Roundish",
+  "created_at": "2026-09-27T15:28:40.000Z",
+  "updated_at": "2026-09-27T15:28:55.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83550783,
+  "storage_human": "84 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hatsune Miku — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Hatsune_Miku",
+      "snippet": "Une extension nommée Miku Append7 est sortie le 30 avril 2010 : De nouvelles voix sont ajoutées et la voix est plus proche de la …"
+    },
+    {
+      "title": "Hatsune Miku - YouTube",
+      "url": "https://www.youtube.com/channel/UCJwGWV914kBlV4dKRn7AEFA",
+      "snippet": "The Official Hatsune Miku Channel. Virtual singer software \"Hatsune Miku\" enables anyone to make her sing easily. After its release, …"
+    },
+    {
+      "title": "Hatsune Miku - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hatsune_Miku",
+      "snippet": "The 2016 Hatsune Miku Expo tour featured American electronic band Anamanaguchi as an opening act; to commemorate the tour, …"
+    },
+    {
+      "title": "Hatsune Miku | Vocaloid Wiki | Fandom",
+      "url": "https://vocaloid.fandom.com/wiki/Hatsune_Miku",
+      "snippet": "Apr 14, 2026 · She received a VOCALOID4 update to her Japanese and English voicebanks in August 2016, as well as a Mandarin …"
+    },
+    {
+      "title": "Hatsune Miku Official Website - piapro.net",
+      "url": "https://piapro.net/intl/en.html",
+      "snippet": "“Piapro Characters” are “Hatsune Miku”, “Kagamine Rin”, “Kagamine Len”, “Megurine Luka”, “MEIKO” and “KAITO”. They are the …"
+    }
+  ]
+}

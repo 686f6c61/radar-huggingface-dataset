@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "supersuphot/typhoon-whisper-turbo-timestamped",
+  "slug": "supersuphot-typhoon-whisper-turbo-timestamped",
+  "author": "supersuphot",
+  "url": "https://huggingface.co/supersuphot/typhoon-whisper-turbo-timestamped",
+  "created_at": "2026-09-27T15:50:02.000Z",
+  "updated_at": "2026-09-27T15:51:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "thai",
+    "th",
+    "base_model:typhoon-ai/typhoon-whisper-turbo",
+    "base_model:quantized:typhoon-ai/typhoon-whisper-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2438472289,
+  "storage_human": "2.4 GB",
+  "base_model": "typhoon-ai/typhoon-whisper-turbo",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "typhoon-whisper-turbo · Model · Inferix",
+      "url": "https://inferix.co/models/typhoon-ai/typhoon-whisper-turbo",
+      "snippet": "Typhoon Whisper Turbo Typhoon Whisper Turbo is a state-of-the-art Thai Automatic Speech Recognition (ASR) model fine-tuned on the OpenAI Whisper Large v3 Turbo architecture. It is engineered to deliver a balance of high accuracy and low latency for offline transcription, significantly outperforming standard Whisper models in throughput while maintaining robust performance on Thai speech."
+    },
+    {
+      "title": "typhoon-ai/typhoon-whisper-turbo · Hugging Face",
+      "url": "https://huggingface.co/typhoon-ai/typhoon-whisper-turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · typhoon-ai/typhoon-whisper-turbo at main",
+      "url": "https://huggingface.co/typhoon-ai/typhoon-whisper-turbo/blob/main/README.md",
+      "snippet": "Typhoon Whisper Turbo Typhoon Whisper Turbo is a state-of-the-art Thai Automatic Speech Recognition (ASR) model fine-tuned on the OpenAI Whisper Large v3 Turbo architecture. It is engineered to deliver a balance of high accuracy and low latency for offline transcription, significantly outperforming standard Whisper models in throughput while maintaining robust performance on Thai speech."
+    },
+    {
+      "title": "typhoon-whisper-turbo API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/typhoon-ai/typhoon-whisper-turbo",
+      "snippet": "Run typhoon-whisper-turbo with FriendliAI inference. Typhoon Whisper Turbo is a state-of-the-art Thai Automatic Speech Recognition (ASR) model fine-tuned on…"
+    },
+    {
+      "title": "Typhoon - Thailand&#x27;s Frontier AI Research Lab",
+      "url": "https://opentyphoon.ai/",
+      "snippet": "A Thai-script-based orthographic system designed to represent Isan words consistently and systematically. It provides clear rules for writing Isan in a way that supports linguistic research, dataset creation, and AI model training."
+    }
+  ]
+}

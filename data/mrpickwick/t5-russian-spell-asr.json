@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MrPickwick/t5-russian-spell-asr",
+  "slug": "mrpickwick-t5-russian-spell-asr",
+  "author": "MrPickwick",
+  "url": "https://huggingface.co/MrPickwick/t5-russian-spell-asr",
+  "created_at": "2026-09-27T18:55:03.000Z",
+  "updated_at": "2026-09-27T18:55:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 222903552,
+  "parameters_human": "222.9M",
+  "storage_bytes": 891644712,
+  "storage_human": "892 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chatbot for Twitch and YouTube | StreamElements",
+      "url": "https://streamelements.com/features/chatbot",
+      "snippet": "StreamElements Chatbot for Twitch and YouTube Live streaming increases engagement and moderates your chat. Run commands, …"
+    },
+    {
+      "title": "Adding a Twitch Chat Overlay to your Stream - StreamElements",
+      "url": "https://support.streamelements.com/hc/en-us/articles/18771535988370-Adding-a-Twitch-Chat-Overlay-to-your-Stream",
+      "snippet": "Purpose This guide will help you add your stream chat to your overlay so viewers can watch in fullscreen without missing any …"
+    },
+    {
+      "title": "FREE Live Streaming Overlays, Alerts and Widgets for ... - StreamElements",
+      "url": "https://streamelements.com/features/overlays",
+      "snippet": "Streamline your setup within a single source Tired of having messy scenes in OBS with a million browser sources? Create entire …"
+    },
+    {
+      "title": "StreamElements | The Ultimate Streamer Platform",
+      "url": "https://widgets.streamelements.com/search/Chat",
+      "snippet": "StreamElements is the leading platform for live streaming on Twitch, Youtube and X. StreamElements features include Overlays, …"
+    },
+    {
+      "title": "How To Add a Chatbox In Stream Elements OBS - YouTube",
+      "url": "https://www.youtube.com/watch?v=j6iUFpua0wQ",
+      "snippet": "Jul 14, 2020 · This video will be showing you how to add a chatbox to your livestreams when using StreamElements OBS software. …"
+    }
+  ]
+}

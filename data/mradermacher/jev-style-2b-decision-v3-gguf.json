@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Jev-Style-2B-Decision-v3-GGUF",
+  "slug": "mradermacher-jev-style-2b-decision-v3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Jev-Style-2B-Decision-v3-GGUF",
+  "created_at": "2026-09-27T19:13:02.000Z",
+  "updated_at": "2026-09-27T19:13:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JevStyle Decision Models",
+      "url": "https://jevstyle.com/",
+      "snippet": "Sep 23, 2026 v2 · 2B Decision 2B v2 Calibrated English classification across 11 held-out tasks. 1,024 input tokens HF · GGUF · MLX Sep 24, 2026 v3 · 0.8B Jev-Style 0.8B v3 0.8B full fine-tune: long inputs, 51 languages, no cap on options. 25,600 input tokens Transformers · GGUF · MLX"
+    },
+    {
+      "title": "Jev-Style-2B-Decision-v3-GGUF - GitHub",
+      "url": "https://github.com/lawrence3699/Jev-Style-2B-Decision-v3-GGUF",
+      "snippet": "Jev-style decisions, now at 2B, for llama.cpp. These are the GGUF builds of Jev-Style-2B-Decision-v3: F16, Q8_0 and a 1.27 GB Q4_K_M, with a small bundled scorer (jev-score-v2) that reads the decision at one verdict slot per option. Full results, protocols, training data and licences are on the main model card."
+    },
+    {
+      "title": "Jev AI Model (TypeSafe) — Typed System One Decisions",
+      "url": "https://jevmodel.org/",
+      "snippet": "Jev is TypeSafe AI&#x27;s System One model: it returns a choice, score, or yes/no probability instead of chat. The hosted API is open as of 21 September 2026. $0.042 per 1M input tokens, output free."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Jev AI — Decisions at machine speed",
+      "url": "https://jevai.net/",
+      "snippet": "Jev AI is the first System One Model from TypeSafe AI: type-safe decisions in 70-500 ms, zero hallucinations, calibrated confidence. Founded by a ChatGPT co-inventor. Output tokens free, input from $0.084 per million."
+    }
+  ]
+}

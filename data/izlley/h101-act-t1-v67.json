@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "izlley/h101-act-t1-v67",
+  "slug": "izlley-h101-act-t1-v67",
+  "author": "izlley",
+  "url": "https://huggingface.co/izlley/h101-act-t1-v67",
+  "created_at": "2026-09-27T15:51:39.000Z",
+  "updated_at": "2026-09-27T15:53:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "so-101",
+    "humanoid-101",
+    "dataset:izlley/h101_t1_pickplace_v67",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 206767256,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "izlley/h101_t1_pickplace · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/izlley/h101_t1_pickplace",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "izlley/h101_t1_pickplace at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/izlley/h101_t1_pickplace/tree/main",
+      "snippet": "Datasets: izlley / h101_t1_pickplace Like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main h101_t1_pickplace 825 MB 1 contributor History:24 commits izlley 에피소드 삭제 (ep12·16·34) 후 남은 이전 push ..."
+    },
+    {
+      "title": "h101_t1_pickplace by Jungyup2: AI Training Dataset",
+      "url": "https://savrn.com/datasets/h101-t1-pickplace",
+      "snippet": "izlley/h101_t1_pickplace: This dataset was created using LeRobot. h101_t1_pickplace, a dataset from Jungyup2: license, access terms, and the models whose…"
+    },
+    {
+      "title": "izlley (Jung-Yup Lee) · GitHub",
+      "url": "https://github.com/izlley",
+      "snippet": "LLM Research Scientist | ML Engineer | 15+ years building AI systems I&#x27;m passionate about pushing the boundaries of large language models — from pre-training and post-training techniques to inference-time scaling and evaluation infrastructure. I also work across the VLA / Robot Foundation Model frontier. Currently focused on Korean LLM research at D.notitia."
+    },
+    {
+      "title": "izlley发布LeRobot格式抓取数据集h101_t1_pickplace 首发HuggingFace 赋能机器人操作学习",
+      "url": "https://www.5radar.com/dataopensource/news/465831/izlley%E5%8F%91%E5%B8%83lerobot%E6%A0%BC%E5%BC%8F%E6%8A%93%E5%8F%96%E6%95%B0%E6%8D%AE%E9%9B%86h101-t1-pickplace-%E9%A6%96%E5%8F%91huggingface-%E8%B5%8B%E8%83%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E5%AD%A6%E4%B9%A0",
+      "snippet": "机器人技术研发方izlley于2026年9月18日在HuggingFace平台首发h101_t1_pickplace数据集，采用行业通用LeRobot格式，可广泛应用于机器人抓取放置、操作学习等研发场景，有效降低相关领域的研发数据门槛。"
+    }
+  ]
+}

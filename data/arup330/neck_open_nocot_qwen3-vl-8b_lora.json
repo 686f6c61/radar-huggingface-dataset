@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Arup330/Neck_open_noCoT_Qwen3-VL-8B_lora",
+  "slug": "arup330-neck_open_nocot_qwen3-vl-8b_lora",
+  "author": "Arup330",
+  "url": "https://huggingface.co/Arup330/Neck_open_noCoT_Qwen3-VL-8B_lora",
+  "created_at": "2026-09-27T12:39:14.000Z",
+  "updated_at": "2026-09-27T12:39:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_vl",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 216915885,
+  "storage_human": "217 MB",
+  "base_model": "unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

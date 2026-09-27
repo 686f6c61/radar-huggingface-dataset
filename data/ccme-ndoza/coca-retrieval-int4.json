@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ccme-ndoza/coca-retrieval-int4",
+  "slug": "ccme-ndoza-coca-retrieval-int4",
+  "author": "ccme-ndoza",
+  "url": "https://huggingface.co/ccme-ndoza/coca-retrieval-int4",
+  "created_at": "2026-09-27T12:23:38.000Z",
+  "updated_at": "2026-09-27T12:23:44.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CCME – Conseil de la communauté marocaine à l’étranger",
+      "url": "https://www.ccme.org.ma/",
+      "snippet": "Aug 16, 2026 · Communiqué du CCME relatif au décès de feu Abderrahim Fakir à Bologne 23 juillet 2026"
+    },
+    {
+      "title": "Welcome | Churches Commission for Migrants in Europe",
+      "url": "https://ccme.eu/",
+      "snippet": "Jun 18, 2026 · „CCME is an ecumenical organisation that serves the churches in their commitment to promote the vision of an …"
+    },
+    {
+      "title": "Conseil de la communauté marocaine à l'étranger — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Conseil_de_la_communaut%C3%A9_marocaine_%C3%A0_l%27%C3%A9tranger",
+      "snippet": "Depuis sa création, le CCME a créé la polémique en Belgique, aux Pays-Bas et en France en raison de la présence parmi ses …"
+    },
+    {
+      "title": "Home - CCME | Études et actualités sur les Marocains du monde",
+      "url": "https://www.ccme.org.ma/en/",
+      "snippet": "A national advisory and forward-looking institution under the patronage of His Majesty King Mohammed VI, the Council of the …"
+    },
+    {
+      "title": "Canadian Council of Ministers of the Environment | Le Conseil …",
+      "url": "https://www.ccme.ca/fr",
+      "snippet": "Jul 24, 2026 · Le CCME est le principal forum intergouvernemental fédéral, provincial et territorial qui, sous la direction des ministres …"
+    }
+  ]
+}

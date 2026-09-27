@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ngdghfdc/head-arb-gold",
+  "slug": "ngdghfdc-head-arb-gold",
+  "author": "ngdghfdc",
+  "url": "https://huggingface.co/ngdghfdc/head-arb-gold",
+  "created_at": "2026-09-27T17:56:16.000Z",
+  "updated_at": "2026-09-27T18:00:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "laya",
+  "languages": [],
+  "tags": [
+    "laya",
+    "safetensors",
+    "decision-model",
+    "routing",
+    "examflow",
+    "fine-tuned",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 1721270210,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Golden-AI (Golden) - Hugging Face",
+      "url": "https://huggingface.co/Golden-AI/models",
+      "snippet": "Org profile for Golden on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI model directory - The AI Resource Hub",
+      "url": "https://theairesourcehub.com/models/",
+      "snippet": "A compact, searchable directory of tracked AI models with provider, category, release, context, pricing, and benchmark coverage."
+    },
+    {
+      "title": "arXiv:2405.00494v1 [cs.AI] 1 May 2024",
+      "url": "https://arxiv.org/pdf/2405.00494",
+      "snippet": "To address the limitations of existing methods in solving geometry math problems, we introduce the GOLD model. The GOLD model converts geometry diagrams into natural language descrip-tions, aiding in the generation of solution programs for the problems. Particularly, the GOLD model&#x27;s relation-construction head extracts two types of geometric relations: sym2geo (relations between symbols and ..."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "nvidia/NV-Reason-CT",
+  "slug": "nvidia-nv-reason-ct",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/NV-Reason-CT",
+  "created_at": "2026-09-08T05:06:51.000Z",
+  "updated_at": "2026-09-25T00:42:18.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "medical-imaging",
+    "ct",
+    "3d-vlm",
+    "vision-language",
+    "nv-reason-ct",
+    "nvidia",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:ibrahimhamamci/CT-RATE",
+    "dataset:BodyMaps/CancerVerse",
+    "arxiv:2609.27511",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 17,
+  "downloads_30d": 392,
+  "trending_score": 17,
+  "parameters": 5322014624,
+  "parameters_human": "5.32B",
+  "storage_bytes": 10665885363,
+  "storage_human": "10.7 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …Read more"
+    },
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …Read more"
+    },
+    {
+      "title": "GeForce NOW",
+      "url": "https://play.geforcenow.com/",
+      "snippet": "Instantly play the most demanding PC games and seamlessly play across your devices.Read more"
+    },
+    {
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia has been widely described as a Big Tech …Read more"
+    },
+    {
+      "title": "NVIDIA",
+      "url": "https://www.nvidia.fr/default.htm",
+      "snippet": "Explorez les dernières innovations et produits NVIDIA, leader en technologies graphiques et d'intelligence artificielle.Read more"
+    }
+  ]
+}

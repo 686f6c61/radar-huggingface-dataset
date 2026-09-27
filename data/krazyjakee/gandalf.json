@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "krazyjakee/gandalf",
+  "slug": "krazyjakee-gandalf",
+  "author": "krazyjakee",
+  "url": "https://huggingface.co/krazyjakee/gandalf",
+  "created_at": "2026-09-27T15:28:01.000Z",
+  "updated_at": "2026-09-27T16:28:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "moderation",
+    "safety",
+    "privacy",
+    "research",
+    "en",
+    "dataset:nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+    "base_model:cross-encoder/nli-deberta-v3-xsmall",
+    "base_model:finetune:cross-encoder/nli-deberta-v3-xsmall",
+    "text-embeddings-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70830337,
+  "parameters_human": "70.8M",
+  "storage_bytes": 283345892,
+  "storage_human": "283 MB",
+  "base_model": "cross-encoder/nli-deberta-v3-xsmall",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

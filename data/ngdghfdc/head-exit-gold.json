@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ngdghfdc/head-exit-gold",
+  "slug": "ngdghfdc-head-exit-gold",
+  "author": "ngdghfdc",
+  "url": "https://huggingface.co/ngdghfdc/head-exit-gold",
+  "created_at": "2026-09-27T18:50:54.000Z",
+  "updated_at": "2026-09-27T18:53:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "laya",
+  "languages": [],
+  "tags": [
+    "laya",
+    "safetensors",
+    "decision-model",
+    "routing",
+    "examflow",
+    "fine-tuned",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 1721270210,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ngdghfdc/head-triage-gold · Hugging Face",
+      "url": "https://huggingface.co/ngdghfdc/head-triage-gold",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "World&#x27;s First AI Model Wins Gold At International Math Olympiad. Check ...",
+      "url": "https://www.ndtv.com/offbeat/worlds-first-ai-model-wins-gold-at-international-math-olympiad-check-details-8924300",
+      "snippet": "A year after settling for a silver medal at the International Mathematical Olympiad, Google&#x27;s AI system has managed to go a step further."
+    },
+    {
+      "title": "Gold Neural Matrix AI | Free Download Trading Robot (Expert ... - MQL5",
+      "url": "https://www.mql5.com/en/market/product/174879",
+      "snippet": "Gold Neural Matrix AI is a fully autonomous, next-generation Expert Advisor (EA) designed specifically for XAUUSD on the 5-minute (M5) timeframe, powered by an embedded ONNX machine learning kernel."
+    },
+    {
+      "title": "XAUUSD (Gold) trading: AI-powered entry and exit signals",
+      "url": "https://tradepulse.naqix.net/blog/xauusd-gold-trading-ai-powered-entry-and-exit-signals",
+      "snippet": "The Role of AI in XAUUSD Trading AI-powered trading systems utilize complex algorithms to analyze vast amounts of market data, identify patterns, and predict future price movements. These systems can process thousands of data points in real-time, including technical indicators, news sentiment, and order flow, to generate accurate entry and exit signals. For example, an AI system might identify ..."
+    }
+  ]
+}

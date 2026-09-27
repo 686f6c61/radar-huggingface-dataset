@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "NickolayS1/bge-small-ner-conll2003",
+  "slug": "nickolays1-bge-small-ner-conll2003",
+  "author": "NickolayS1",
+  "url": "https://huggingface.co/NickolayS1/bge-small-ner-conll2003",
+  "created_at": "2026-09-27T18:21:56.000Z",
+  "updated_at": "2026-09-27T18:33:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 132890869,
+  "storage_human": "133 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MsvoZ/bge-small-en-v1.5-conll2003-ner · Hugging Face",
+      "url": "https://huggingface.co/MsvoZ/bge-small-en-v1.5-conll2003-ner",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RahatLukuum/bge-small-ner-conll2003 · Hugging Face",
+      "url": "https://huggingface.co/RahatLukuum/bge-small-ner-conll2003",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bge Small En V1.5 Conll2003 Ner - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/msvoz/bge-small-en-v1.5-conll2003-ner",
+      "snippet": "Registry entry for model Bge Small En V1.5 Conll2003 Ner; source metadata pending."
+    },
+    {
+      "title": "GitHub - bigjeager/bert_ner: Experimental Reproduction of CoNLL-2003 ...",
+      "url": "https://github.com/bigjeager/bert_ner",
+      "snippet": "PAPER: \"In the input to BERT, we use a case-preserving WordPiece model, and we include the maximal document context provided by the data. Following standard practice, we formulate this as a tagging task but do not use a CRF layer in the output. We use the representation of the first sub-token as the input to the token-level classifier over the NER label set.\""
+    },
+    {
+      "title": "nasa013/Named-Entity-Recognition-using-conll2003-dataset - GitHub",
+      "url": "https://github.com/nasa013/Named-Entity-Recognition-using-conll2003-dataset",
+      "snippet": "This project focuses on Named Entity Recognition (NER) using a Random Forest classifier. The objective is to identify and classify named entities in text, including: Persons Organizations Locations Miscellaneous Entities The workflow includes data preprocessing, feature extraction, model training, evaluation, and a graphical user interface (GUI) for real-time NER predictions."
+    }
+  ]
+}

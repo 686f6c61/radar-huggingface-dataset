@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "pearlyjam21/multimodal-emotion-zh",
+  "slug": "pearlyjam21-multimodal-emotion-zh",
+  "author": "pearlyjam21",
+  "url": "https://huggingface.co/pearlyjam21/multimodal-emotion-zh",
+  "created_at": "2026-09-27T16:54:18.000Z",
+  "updated_at": "2026-09-27T16:57:01.000Z",
+  "license": "mixed-research-use",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "onnx",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "emotion-recognition",
+    "multimodal",
+    "facial-expression-recognition",
+    "speech-emotion-recognition",
+    "text-classification",
+    "traditional-chinese",
+    "reachy_mini",
+    "audio-classification",
+    "zh",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128358269,
+  "storage_human": "128 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trainline : Search, Compare & Buy Cheap Train Tickets",
+      "url": "https://www.thetrainline.com/?msockid=306829543eb164042eba3eb53f2665e9",
+      "snippet": "Join millions of travelers who love Trainline: Europe’s leading train and bus travel app Easily compare prices and book your …"
+    },
+    {
+      "title": "Réservez votre Billet de Train | Horaires et Prix - Trainline",
+      "url": "https://www.thetrainline.com/fr?msockid=306829543eb164042eba3eb53f2665e9",
+      "snippet": "Recherchez les horaires, prix et réservez vos billets de train et de bus en France et en Europe. Trainline est un distributeur officiel de …"
+    },
+    {
+      "title": "Search, compare & buy cheap European train & bus tickets | Trainline",
+      "url": "https://www.trainline.eu/booking/details",
+      "snippet": "Trainline is Europe's leading independent train ticket retailer. Book domestic & cross-border train tickets in 35 European countries. …"
+    },
+    {
+      "title": "Réservez votre Billet de Train | Horaires et Prix - Trainline",
+      "url": "https://www.trainline.fr/booking/details",
+      "snippet": "Recherchez les horaires, prix et réservez vos billets de train et de bus en France et en Europe. Trainline est un distributeur officiel de …"
+    },
+    {
+      "title": "Search, compare & book trains, buses, flights & ferries - Omio",
+      "url": "https://www.omio.com/",
+      "snippet": "1 day ago · Compare and book train, bus, flight, ferry across Europe, the US, Japan, and beyond. One search, 2,000+ travel …"
+    }
+  ]
+}

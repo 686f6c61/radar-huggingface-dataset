@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jojin1709/qelvra",
+  "slug": "jojin1709-qelvra",
+  "author": "jojin1709",
+  "url": "https://huggingface.co/jojin1709/qelvra",
+  "created_at": "2026-09-27T18:04:07.000Z",
+  "updated_at": "2026-09-27T19:20:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "byte-level",
+    "transformer",
+    "language-model",
+    "text-generation",
+    "from-scratch",
+    "experimental",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45141720,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‘They smell of urinal cakes!’: 100 unusual crisp flavours, ranked ...",
+      "url": "https://www.theguardian.com/food/2026/sep/23/100-unusual-crisp-flavours-ranked-truly-awful-totally-scoffable",
+      "snippet": "4 days ago · We tasted 100 of the strangest crisp options available to find out which are worth coming back to and which should have …Read more"
+    },
+    {
+      "title": "‘Serve me these with an aperitivo immediately’: the best supermarket ...",
+      "url": "https://www.theguardian.com/thefilter/2025/aug/02/best-supermarket-salted-crisps-taste-test-felicity-cloake",
+      "snippet": "Aug 2, 2025 · A good crisp should be dangerously moreish – but which were perfectly seasoned and crunchy, and which weren’t …"
+    },
+    {
+      "title": "The 29 best ever British crisps, ranked - Yahoo Life UK",
+      "url": "https://uk.style.yahoo.com/29-best-ever-british-crisps-110000416.html",
+      "snippet": "Dec 1, 2025 · Here, we rank the most popular flavours ever created, counting down to reveal the greatest British crisps of all time. …"
+    },
+    {
+      "title": "‘Serve me these with an aperitivo immediately’: the best (and worst ...",
+      "url": "https://the-guardian.livejournal.com/232933777.html",
+      "snippet": "Aug 2, 2025 · My volunteer testers and I were enthusiastic about the prospect of tasting our way through 10 types of lightly salted, …"
+    },
+    {
+      "title": "« Un seul paquet ne suffit pas ! » : selon le quotidien anglais The ...",
+      "url": "https://www.letelegramme.fr/economie/un-seul-paquet-ne-suffit-pas-selon-le-quotidien-anglais-the-guardian-cette-chips-brets-est-la-meilleure-au-monde-7124472.php",
+      "snippet": "3 days ago · Huit saveurs de chips de chez Brets se retrouvent dans un classement du quotidien britannique The Guardian des 100 …"
+    }
+  ]
+}

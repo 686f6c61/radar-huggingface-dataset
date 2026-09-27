@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "shiva123782/My-Custom-distilbert-base-multilingual-cased",
+  "slug": "shiva123782-my-custom-distilbert-base-multilingual-cased",
+  "author": "shiva123782",
+  "url": "https://huggingface.co/shiva123782/My-Custom-distilbert-base-multilingual-cased",
+  "created_at": "2026-09-27T18:33:19.000Z",
+  "updated_at": "2026-09-27T18:35:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-multilingual-cased",
+    "base_model:finetune:distilbert/distilbert-base-multilingual-cased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135326210,
+  "parameters_human": "135.3M",
+  "storage_bytes": 541322224,
+  "storage_human": "541 MB",
+  "base_model": "distilbert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …Read more"
+    },
+    {
+      "title": "Google Traductor: Un intérprete personal en tu teléfono o computadora",
+      "url": "https://translate.google.com/intl/es-419/about/",
+      "snippet": "Descubre cómo traducir texto, conversaciones, imágenes, documentos, sitios web y mucho más con Google Traductor."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/websitetranslationui",
+      "snippet": "Clear search text checkhistory"
+    },
+    {
+      "title": "Google Oversetter – en personlig tolk på telefonen eller datamaskinen",
+      "url": "https://translate.google.com/intl/no/about/",
+      "snippet": "Finn ut hvordan du oversetter tekst, tale, bilder, dokumenter, nettsteder og annet med Google Oversetter."
+    }
+  ]
+}

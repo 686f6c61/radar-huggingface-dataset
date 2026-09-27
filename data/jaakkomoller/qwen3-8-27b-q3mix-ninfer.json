@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "jaakkomoller/Qwen3.8-27B-q3mix-NInfer",
+  "slug": "jaakkomoller-qwen3-8-27b-q3mix-ninfer",
+  "author": "jaakkomoller",
+  "url": "https://huggingface.co/jaakkomoller/Qwen3.8-27B-q3mix-NInfer",
+  "created_at": "2026-09-27T12:08:34.000Z",
+  "updated_at": "2026-09-27T12:15:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "qwen3.8",
+    "q3",
+    "multimodal",
+    "conversational",
+    "cuda",
+    "blackwell",
+    "rtx-5060ti",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14823303168,
+  "storage_human": "14.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "RTX 5060 Ti 5,113-token code prompt",
+      "metric": "MTP3 prefill tok/s",
+      "value": 615.9
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "RTX 5060 Ti 5,113-token code prompt",
+      "metric": "MTP3 decode tok/s",
+      "value": 46.13
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "RTX 5060 Ti 5,113-token code prompt",
+      "metric": "MTP3 acceptance %",
+      "value": 86.67
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "RTX 5060 Ti 5,113-token code prompt",
+      "metric": "MTP0 decode tok/s",
+      "value": 23.03
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "LiveCodeBench v6 (175-problem subset)",
+      "metric": "Prompt-level strict (greedy, 1 sample)",
+      "value": 24.57
+    }
+  ],
+  "sources": [
+    {
+      "title": "Porsche 963 RSP (2025) - The Ultimate Guide - stuttcars.com",
+      "url": "https://www.stuttcars.com/porsche-963-rsp-2025/",
+      "snippet": "The 2025 Porsche 963 RSP is one of those cars that sounds like a rumor until you see the photos: a full-blown Le Mans prototype …Read more"
+    },
+    {
+      "title": "Introducing the Porsche 963 RSP - Porsche Newsroom USA",
+      "url": "https://newsroom.porsche.com/en_US/2025/company/porsche-963-rsp-39683.html",
+      "snippet": "Jun 6, 2025 · Introducing the Porsche 963 RSP, a unique one-off racecar inspired by the legendary Count Rossi 917 on its 50th …Read more"
+    },
+    {
+      "title": "Race to the road: Introducing the Porsche 963 RSP",
+      "url": "https://newsroom.porsche.com/en/2025/motorsports/porsche-963-rsp-unique-one-off-39688.html",
+      "snippet": "Jun 6, 2025 · As Porsche prepares for the 24 Hours of Le Mans, a sister to the 963 Hypercar has been revealed – named the 963 …Read more"
+    },
+    {
+      "title": "Fiche technique Porsche 963 RSP (2025) - motorsdb.com",
+      "url": "https://www.motorsdb.com/fiche-technique/auto/66286/Porsche-963-RSP-2025",
+      "snippet": "Porsche 963 RSP (2025) : V8 hybride (hev), 4600 cm³, 680 ch, 380 km/h. Fiche technique et caractéristiques.Read more"
+    },
+    {
+      "title": "Porsche 963 RSP (Road Legal) - Full Tech Specs and Performance",
+      "url": "https://motorspexx.blogspot.com/2025/06/porsche-963-rsp-road-legal-full-tech.html",
+      "snippet": "Jun 6, 2025 · While the 963 RSP is not homologated for mass production, it is fully operational and authorized for limited road use …Read more"
+    }
+  ]
+}

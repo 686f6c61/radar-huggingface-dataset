@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DonkeySmall/face_upscale",
+  "slug": "donkeysmall-face_upscale",
+  "author": "DonkeySmall",
+  "url": "https://huggingface.co/DonkeySmall/face_upscale",
+  "created_at": "2026-09-27T18:35:44.000Z",
+  "updated_at": "2026-09-27T18:35:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    },
+    {
+      "title": "DonkeySmall (Donkey Small) - Hugging Face",
+      "url": "https://huggingface.co/DonkeySmall/datasets",
+      "snippet": "User profile of Donkey Small on Hugging Face"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "DonkeySmall (Small Donkey) · GitHub",
+      "url": "https://github.com/DonkeySmall",
+      "snippet": "A hybrid super-resolution model combining diffusion-based denoising and wavelet-enhanced GAN upsampling. Designed to reconstruct high-fidelity images with fine details using deep residual learning …"
+    },
+    {
+      "title": "MiniMax H3 Update, No more Waxy Skin, No More Distorted Faces ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=tmw2QOFaaPI",
+      "snippet": "The workflow also uses a merged H3 model, so text-to-video, image-to-video, first/last frame, and multi-reference generation can all be handled in basically the same workflow."
+    }
+  ]
+}

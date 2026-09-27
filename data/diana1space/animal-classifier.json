@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "diana1space/animal-classifier",
+  "slug": "diana1space-animal-classifier",
+  "author": "diana1space",
+  "url": "https://huggingface.co/diana1space/animal-classifier",
+  "created_at": "2026-09-27T15:51:11.000Z",
+  "updated_at": "2026-09-27T15:51:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "diana1space/nature-classifier at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/diana1space/nature-classifier/tree/main",
+      "snippet": "Spaces: diana1space / nature-classifier Like 0 Running App FilesFiles Community main nature-classifier 3.51 kB Ctrl+K Ctrl+K 2 contributors History:4 commits diana1space Update index.html 6411a63 verifiedabout 4 hours ago .gitattributes Safe 1.52 kBDuplicate from gradio/gradio-lite-templateabout 4 hours ago README.md Safe 279 Bytesinitial commitabout 4 hours ago index.html Safe 1.71 kBUpdate ..."
+    },
+    {
+      "title": "GitHub - 9970644504/Animal-Classification-System-: AI-based Animal ...",
+      "url": "https://github.com/9970644504/Animal-Classification-System-",
+      "snippet": "AI-based Animal Classification System using CNN and Streamlit. Upload an image to identify animals with confidence scores in a clean web interface. - 9970644504/Animal-Classification-System-"
+    },
+    {
+      "title": "Zishan-AI-Eng/Animal_Classifier_Model - GitHub",
+      "url": "https://github.com/Zishan-AI-Eng/Animal_Classifier_Model",
+      "snippet": "Animal Classifier is an end-to-end AI system built to identify animal species from uploaded images with high accuracy. The model was trained on a custom-curated dataset of 90 distinct animal classes, structured in a CSV-based pipeline for reproducible training. This isn&#x27;t just a model demo — it&#x27;s a complete full-stack deployment featuring a FastAPI inference server, a Next.js + TypeScript ..."
+    },
+    {
+      "title": "My Nature Classifier - a Hugging Face Space by diana1space",
+      "url": "https://huggingface.co/spaces/diana1space/my-nature-classifier",
+      "snippet": "upload a photo and be able to classify as animals or nature"
+    },
+    {
+      "title": "Animal Classifier",
+      "url": "https://animal-classifier.streamlit.app/",
+      "snippet": "This model has been trained to classify different animal species, and give a full description about each animal identified, enabling accurate and fast predictions."
+    }
+  ]
+}

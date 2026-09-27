@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hpkim76/act_fold_test",
+  "slug": "hpkim76-act_fold_test",
+  "author": "hpkim76",
+  "url": "https://huggingface.co/hpkim76/act_fold_test",
+  "created_at": "2026-09-27T18:24:56.000Z",
+  "updated_at": "2026-09-27T18:25:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:hpkim76/fold-test",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51680908,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206767048,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hpkim76 (SeongSooKim) - Hugging Face",
+      "url": "https://huggingface.co/hpkim76",
+      "snippet": "datasets1 hpkim76/record-test_20260824_174208 Viewer •Updated 2 days ago•3.69k• 34"
+    },
+    {
+      "title": "hpkim76 (SeongSooKim) - Hugging Face",
+      "url": "https://huggingface.co/hpkim76/datasets",
+      "snippet": "hpkim76&#x27;s datasets1 Sort: Recently updated hpkim76/record-test_20260824_174208 Viewer •Updated 29 days ago•3.69k• 80"
+    },
+    {
+      "title": "AI Playground - Test Models Interactively | AI Model Hub",
+      "url": "https://ai-analysis.ai/playground",
+      "snippet": "Test AI models in real-time. Compare outputs from GPT-4, Claude, Gemini, and other models side-by-side in our interactive playground."
+    },
+    {
+      "title": "AI API Model Tester — Check Which Model Your API Actually Runs ...",
+      "url": "https://apimaster.ai/ai-api-model-tester",
+      "snippet": "Free AI API model tester. Paste any OpenAI, Claude or Gemini endpoint and see which model it really runs — fingerprint detection exposes substituted or fake models in seconds. No key stored."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 508 AI models across 486 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "muhammad-taqi512/LYRA-TINY",
+  "slug": "muhammad-taqi512-lyra-tiny",
+  "author": "muhammad-taqi512",
+  "url": "https://huggingface.co/muhammad-taqi512/LYRA-TINY",
+  "created_at": "2026-09-27T12:44:48.000Z",
+  "updated_at": "2026-09-27T12:52:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "custom-ai",
+    "lyra-tiny",
+    "lyra",
+    "muhammad-taqi",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 2200619587,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muhammad - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Muhammad",
+      "snippet": "Apart from Islam, Muhammad has received praise in Sikhism as an inspirational figure, in the Druze faith as one of the seven main …"
+    },
+    {
+      "title": "Mahomet — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mahomet",
+      "snippet": "Pour K.H. Ohlig, le terme Muhammad est un prédicat christique syro-arabe avant d’être repris pour désigner un prophète sous les …"
+    },
+    {
+      "title": "Muhammad | Biography, History, & Facts | Britannica",
+      "url": "https://www.britannica.com/biography/Muhammad",
+      "snippet": "Sep 17, 2026 · Muhammad, the revered prophet of Islam, revolutionized Arabia by spreading a monotheistic faith and establishing a …"
+    },
+    {
+      "title": "Biographie de MAHOMET ou MUḤAMMAD - Encyclopédie Universalis",
+      "url": "https://www.universalis.fr/encyclopedie/mahomet-muhammad/",
+      "snippet": "Biographie de MAHOMET ou MUḤAMMAD. Mahomet (en arabe Muḥammad) est, parmi les fondateurs des grandes religions …"
+    },
+    {
+      "title": "Petit résumé de la vie du Prophète Mohammed - My Islam",
+      "url": "https://myislam.org/fr/prophete-muhammad/",
+      "snippet": "Un résumé de la vie du Prophète Muhammad ﷺ : de son enfance orpheline à son statut de marchand respecté, puis de dernier …"
+    }
+  ]
+}

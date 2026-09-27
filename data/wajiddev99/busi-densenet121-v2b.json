@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Wajiddev99/busi-densenet121-v2b",
+  "slug": "wajiddev99-busi-densenet121-v2b",
+  "author": "Wajiddev99",
+  "url": "https://huggingface.co/Wajiddev99/busi-densenet121-v2b",
+  "created_at": "2026-09-27T15:52:56.000Z",
+  "updated_at": "2026-09-27T15:53:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "medical-imaging",
+    "ultrasound",
+    "breast-cancer",
+    "image-classification",
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142275895,
+  "storage_human": "142 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "densenet121 — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/master/models/generated/torchvision.models.densenet121.html",
+      "snippet": "densenet121 ¶ torchvision.models.densenet121(*, weights: Optional[DenseNet121_Weights] = None, progress: bool = True, **kwargs: Any) → DenseNet[source] ¶ Densenet-121 model from Densely Connected Convolutional Networks. Parameters: weights (DenseNet121_Weights, optional) - The pretrained weights to use."
+    },
+    {
+      "title": "glasses/densenet121 · Hugging Face",
+      "url": "https://huggingface.co/glasses/densenet121",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "qualcomm/DenseNet-121 · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/DenseNet-121",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Densenet - PyTorch",
+      "url": "https://pytorch.org/hub/pytorch_vision_densenet/",
+      "snippet": "Model Description Dense Convolutional Network (DenseNet), connects each layer to every other layer in a feed-forward fashion. Whereas traditional convolutional networks with L layers have L connections - one between each layer and its subsequent layer - our network has L (L+1)/2 direct connections. For each layer, the feature-maps of all preceding layers are used as inputs, and its own ..."
+    }
+  ]
+}

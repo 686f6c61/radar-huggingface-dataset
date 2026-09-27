@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "MichaelYitzchak/uav-symptom-minilm",
+  "slug": "michaelyitzchak-uav-symptom-minilm",
+  "author": "MichaelYitzchak",
+  "url": "https://huggingface.co/MichaelYitzchak/uav-symptom-minilm",
+  "created_at": "2026-09-27T12:42:09.000Z",
+  "updated_at": "2026-09-27T12:42:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "uav",
+    "fault-diagnosis",
+    "synthetic-data",
+    "dataset:Bashifu/uav-fault-symptom-reports",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90864192,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

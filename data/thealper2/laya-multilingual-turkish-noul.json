@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "id": "thealper2/laya-multilingual-turkish-noul",
+  "slug": "thealper2-laya-multilingual-turkish-noul",
+  "author": "thealper2",
+  "url": "https://huggingface.co/thealper2/laya-multilingual-turkish-noul",
+  "created_at": "2026-09-27T16:24:09.000Z",
+  "updated_at": "2026-09-27T16:29:53.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "laya",
+    "safetensors",
+    "noul",
+    "binary-classification",
+    "calibrated-probabilities",
+    "mmbert",
+    "sft",
+    "text-classification",
+    "tr",
+    "dataset:ahmetege/turkish_jev_noul",
+    "base_model:convaiinnovations/laya-multilingual",
+    "base_model:finetune:convaiinnovations/laya-multilingual",
+    "license:cc-by-sa-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198799,
+  "storage_human": "678 MB",
+  "base_model": "convaiinnovations/laya-multilingual",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Turkish yes/no (noul) decision",
+      "dataset": "turkish_jev_noul",
+      "metric": null,
+      "value": 0.8097
+    },
+    {
+      "task": "Turkish yes/no (noul) decision",
+      "dataset": "turkish_jev_noul",
+      "metric": null,
+      "value": 0.8011
+    },
+    {
+      "task": "Turkish yes/no (noul) decision",
+      "dataset": "turkish_jev_noul",
+      "metric": null,
+      "value": 0.9
+    },
+    {
+      "task": "Turkish yes/no (noul) decision",
+      "dataset": "turkish_jev_noul",
+      "metric": null,
+      "value": 0.1288
+    },
+    {
+      "task": "Turkish yes/no (noul) decision",
+      "dataset": "turkish_jev_noul",
+      "metric": null,
+      "value": 0.4006
+    },
+    {
+      "task": "Turkish yes/no (noul) decision",
+      "dataset": "turkish_jev_noul",
+      "metric": null,
+      "value": 0.0072
+    }
+  ],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    },
+    {
+      "title": "Google Earth End User Additional Terms of Service",
+      "url": "https://maps.google.fr/help/terms_maps-earth/",
+      "snippet": "Actual Conditions; Assumption of Risk. When you use Google Earth's map data, and other content, you may find that actual …"
+    },
+    {
+      "title": "Charte de confidentialité de Google",
+      "url": "https://maps.google.fr/intl/fr/policies/privacy/archive/20051014/",
+      "snippet": "14 octobre 2005 Chez Google, nous sommes conscients de l’importance de la confidentialité des informations personnelles. Cette …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/intl/fr_fr/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, featuring Street View, 3D mapping, turn-by-turn directions, indoor maps, and more for all your …"
+    },
+    {
+      "title": "Questions fréquentes – Visite virtuelle pour les Pros – Google Maps",
+      "url": "https://maps.google.fr/help/maps/businessphotos/faq.html",
+      "snippet": "L'importation dans Visite virtuelle pour les Pros de photos prises dans des musées est également interdite, car ces photos doivent …"
+    }
+  ]
+}

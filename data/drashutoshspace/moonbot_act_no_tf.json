@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "drashutoshspace/moonbot_act_no_tf",
+  "slug": "drashutoshspace-moonbot_act_no_tf",
+  "author": "drashutoshspace",
+  "url": "https://huggingface.co/drashutoshspace/moonbot_act_no_tf",
+  "created_at": "2026-09-27T19:11:17.000Z",
+  "updated_at": "2026-09-27T19:11:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "pi0",
+    "robotics",
+    "moonbot",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub · Change is constant. GitHub keeps you ahead.",
+      "url": "https://github.com/",
+      "snippet": "Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open …"
+    },
+    {
+      "title": "GitHub",
+      "url": "https://github.com/github",
+      "snippet": "How people build software. GitHub has 564 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub Docs",
+      "url": "https://docs.github.com/en",
+      "snippet": "Get started, troubleshoot, and make the most of GitHub. Documentation for new users, developers, administrators, and all of …"
+    },
+    {
+      "title": "Variables reference - GitHub Docs",
+      "url": "https://docs.github.com/en/actions/reference/workflows-and-actions/variables",
+      "snippet": "This article lists the supported variables you can use in GitHub Actions workflows, including environment variables, configuration …"
+    },
+    {
+      "title": "Agents | Awesome GitHub Copilot",
+      "url": "https://awesome-copilot.github.com/agents/",
+      "snippet": "Agents Specialized agents that enhance GitHub Copilot for specific technologies, workflows, and domains — contributed and curated …"
+    }
+  ]
+}

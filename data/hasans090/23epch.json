@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "hasans090/23epch",
+  "slug": "hasans090-23epch",
+  "author": "hasans090",
+  "url": "https://huggingface.co/hasans090/23epch",
+  "created_at": "2026-09-27T18:22:54.000Z",
+  "updated_at": "2026-09-27T18:22:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hasans090 (Hasan) - Hugging Face",
+      "url": "https://huggingface.co/hasans090",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... new activity 8 days ago ... published a model 10 days ago"
+    },
+    {
+      "title": "hasans090 (Hasan) - Hugging Face",
+      "url": "https://huggingface.co/hasans090/datasets",
+      "snippet": "User profile of Hasan on Hugging Face"
+    },
+    {
+      "title": "Home · modelindex.dev",
+      "url": "http://modelindex.dev/",
+      "snippet": "Provenance and cryptographic hashes for public AI models across HuggingFace, ModelScope, CivitAI, and Ollama. Look up any file by hash, browse by org, and verify your downloads on modelindex.dev."
+    },
+    {
+      "title": "AI Model Search: Find Real Hugging Face Repos | Zeplik Chat",
+      "url": "https://zeplik.ai/tools/ai-model-search",
+      "snippet": "Search real model repositories by name or task and get the actual repo id with live download and like counts. Zeplik reads the live model hub instead of inventing a model, and says so when it cannot verify one. Free to start."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    }
+  ]
+}

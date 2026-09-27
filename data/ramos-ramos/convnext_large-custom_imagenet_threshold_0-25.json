@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Ramos-Ramos/convnext_large.custom_imagenet_threshold_0.25",
+  "slug": "ramos-ramos-convnext_large-custom_imagenet_threshold_0-25",
+  "author": "Ramos-Ramos",
+  "url": "https://huggingface.co/Ramos-Ramos/convnext_large.custom_imagenet_threshold_0.25",
+  "created_at": "2026-09-27T16:16:25.000Z",
+  "updated_at": "2026-09-27T16:17:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "pytorch",
+    "safetensors",
+    "image-classification",
+    "transformers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 197767336,
+  "parameters_human": "197.8M",
+  "storage_bytes": 1582303635,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Connectez-vous | AllCaps",
+      "url": "https://www.allcaps.eu/fr/login",
+      "snippet": "Pas encore enregistré ? Enregistrez-vous ici.Read more"
+    },
+    {
+      "title": "Gérez, cherchez et échangez vos capsules de champagne en ligne | AllCaps",
+      "url": "https://www.allcaps.eu/fr",
+      "snippet": "À tout moment, si vous voyez une erreur sur une capsule, vous pouvez la corriger. Vous pouvez aussi ajouter des nouvelles …Read more"
+    },
+    {
+      "title": "Premium | AllCaps",
+      "url": "https://www.allcaps.eu/en/premium",
+      "snippet": "After registration you get the status of Premium user for 30 days. Once the trial is over, you can still enjoy the basic advantages by …Read more"
+    },
+    {
+      "title": "Premium | AllCaps",
+      "url": "https://www.allcaps.eu/fr/premium",
+      "snippet": "Si vous voulez perfectionner votre collection sans limites, devenez alors membre Premium. En plus vous profitez de tous les …Read more"
+    },
+    {
+      "title": "Boutique de capsules de champagne de collection à Hautvillers",
+      "url": "https://www.henry-capsule.fr/",
+      "snippet": "Nos articles parfois rares de placomusophilie compléteront votre collection et lui donneront de la valeur. Laissez-vous tenter par nos …Read more"
+    }
+  ]
+}

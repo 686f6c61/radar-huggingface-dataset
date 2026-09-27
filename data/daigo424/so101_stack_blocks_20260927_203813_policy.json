@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "daigo424/so101_stack_blocks_20260927_203813_policy",
+  "slug": "daigo424-so101_stack_blocks_20260927_203813_policy",
+  "author": "daigo424",
+  "url": "https://huggingface.co/daigo424/so101_stack_blocks_20260927_203813_policy",
+  "created_at": "2026-09-27T16:05:36.000Z",
+  "updated_at": "2026-09-27T16:05:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:daigo424/so101_stack_blocks_20260927_203813",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714880,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

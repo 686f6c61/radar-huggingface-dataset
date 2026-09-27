@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dusersad12/LuminaLM-ReleaseRepo",
+  "slug": "dusersad12-luminalm-releaserepo",
+  "author": "dusersad12",
+  "url": "https://huggingface.co/dusersad12/LuminaLM-ReleaseRepo",
+  "created_at": "2026-09-27T18:30:54.000Z",
+  "updated_at": "2026-09-27T18:31:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "llama",
+    "text-generation",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34,
+  "storage_human": "34 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Releases · luminal-ai/luminal - GitHub",
+      "url": "https://github.com/luminal-ai/luminal/releases",
+      "snippet": "Inference at the speed of light. Contribute to luminal-ai/luminal development by creating an account on GitHub."
+    },
+    {
+      "title": "LLM Releases — the model release tracker",
+      "url": "https://www.llm-releases.com/",
+      "snippet": "Sakana AI&#x27;s frontier-class orchestration model: a single ~7B language model trained to coordinate a swappable pool of external frontier LLMs (model selection, delegation, verification, and synthesis happen internally), exposed behind one OpenAI-compatible API."
+    },
+    {
+      "title": "AI Updates Today (September 2026) - Latest AI Model Releases",
+      "url": "https://llm-stats.com/llm-updates",
+      "snippet": "Track recent AI model releases, API changes, pricing updates, and feature launches across the major model providers in one daily changelog."
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "AI Model Release Tracker Stay up to date with the latest AI model releases. This page tracks 468 models across all providers, sorted by release date."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    }
+  ]
+}

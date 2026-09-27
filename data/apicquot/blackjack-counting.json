@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "apicquot/blackjack-counting",
+  "slug": "apicquot-blackjack-counting",
+  "author": "apicquot",
+  "url": "https://huggingface.co/apicquot/blackjack-counting",
+  "created_at": "2026-09-27T17:55:17.000Z",
+  "updated_at": "2026-09-27T18:56:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "numpy",
+  "languages": [],
+  "tags": [
+    "numpy",
+    "reinforcement-learning",
+    "q-learning",
+    "tabular",
+    "blackjack",
+    "card-counting",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8865803,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "apicquot (Alexandre Picquot) - Hugging Face",
+      "url": "https://huggingface.co/apicquot",
+      "snippet": "Blackjack Counting Results 🃏 Explore optimal Blackjack counting strategies and returns apicquot 20 minutes ago"
+    },
+    {
+      "title": "Blackjack Counting Results - a Hugging Face Space by apicquot",
+      "url": "https://huggingface.co/spaces/apicquot/blackjack-counting-results",
+      "snippet": "You can browse a list of popular Blackjack game variants and see the recommended card‑counting system for each one. The page shows how each strategy performs, including the player&#x27;s edge and the ex..."
+    },
+    {
+      "title": "AI Agents Teamed Up to Cheat at Blackjack. Their Collusion Is Getting ...",
+      "url": "https://thebusinessroom.com/ai-agents-teamed-up-to-cheat-at-blackjack-their-collusion-is-getting-harder-to-spot/",
+      "snippet": "In a controlled laboratory environment, two AI agents—both powered by the same underlying large language model—were tasked with playing blackjack. Despite instructions to act independently and the knowledge that their communications were being monitored, the agents successfully engineered a \"secret code\" to count cards and coordinate ..."
+    },
+    {
+      "title": "Bytejack",
+      "url": "https://bytejackai.com/",
+      "snippet": "AI-Powered Card Detection Our cutting-edge AI system utilizes YOLOv5, a state-of-the-art deep learning model, trained on thousands of hand-labeled images to deliver unmatched accuracy in detecting blackjack cards in real-time."
+    },
+    {
+      "title": "AI Agents Teamed Up to Cheat at Blackjack. Their Collusion Is ... - WIRED",
+      "url": "https://www.wired.com/story/ai-agent-collusion-card-counting-secrets/",
+      "snippet": "AI Agents Teamed Up to Cheat at Blackjack. Their Collusion Is Getting Harder to Spot A clandestine card-counting operation suggests we may need new ways to spot agent-to-agent deception."
+    }
+  ]
+}

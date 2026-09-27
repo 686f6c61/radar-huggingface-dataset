@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Gabriel8495839/SmolVLM-500M-WindowsAgent",
+  "slug": "gabriel8495839-smolvlm-500m-windowsagent",
+  "author": "Gabriel8495839",
+  "url": "https://huggingface.co/Gabriel8495839/SmolVLM-500M-WindowsAgent",
+  "created_at": "2026-09-27T18:49:56.000Z",
+  "updated_at": "2026-09-27T19:01:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "safetensors",
+    "idefics3",
+    "vision",
+    "multimodal",
+    "desktop-agent",
+    "computer-use",
+    "os-agent",
+    "windows-agent",
+    "smolvlm",
+    "autonomous-agent",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "de",
+    "base_model:HuggingFaceTB/SmolVLM-500M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolVLM-500M-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 507482304,
+  "parameters_human": "507.5M",
+  "storage_bytes": 1015025832,
+  "storage_human": "1.0 GB",
+  "base_model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SmolVLM Grows Smaller – Introducing the 256M & 500M Models!",
+      "url": "https://huggingface.co/blog/smolervlm",
+      "snippet": "When we released SmolVLM 2B, the community response was fantastic: The model is very light weight, open-source and permissive, and easy to integrate into existing workflows. But we wanted to push this approach even further for people working with constrained devices, consumer laptops, or even potentially browser-based inference. That’s where our new 256M and 500M models come in."
+    },
+    {
+      "title": "GitHub - huggingface/smollm: Everything about the SmolLM and SmolVLM ...",
+      "url": "https://github.com/huggingface/smollm",
+      "snippet": "Welcome to Smol Models, a family of efficient and lightweight AI models from Hugging Face."
+    },
+    {
+      "title": "🚀 SmolVLM: The Future of Lightweight Multimodal Models on Your ...",
+      "url": "https://medium.com/@uzbrainai/smolvlm-the-future-of-lightweight-multimodal-models-on-your-device-291d92ae0698",
+      "snippet": "✅ On-Device AI: With under 1.5 GB of VRAM needed, SmolVLM models can be deployed on edge devices. ✅ Open-Source & Apache 2.0 Licensed: Freely usable for research and commercial purposes."
+    },
+    {
+      "title": "blog/smolervlm.md at main · huggingface/blog",
+      "url": "https://github.com/huggingface/blog/blob/main/smolervlm.md",
+      "snippet": "When we released SmolVLM 2B, the community response was fantastic: The model is very light weight, open-source and permissive, and easy to integrate into existing workflows. But we wanted to push this approach even further for people working with constrained devices, consumer laptops, or even potentially browser-based inference. That’s where our new 256M and 500M models come in."
+    },
+    {
+      "title": "HuggingFaceTB/SmolVLM-500M-Instruct · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct",
+      "snippet": "SmolVLM-500M is a tiny multimodal model, member of the SmolVLM family. It accepts arbitrary sequences of image and text inputs to produce text outputs. It's designed for efficiency."
+    }
+  ]
+}

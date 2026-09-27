@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "asadorville/brainpower-deberta-asap1-prompt1",
+  "slug": "asadorville-brainpower-deberta-asap1-prompt1",
+  "author": "asadorville",
+  "url": "https://huggingface.co/asadorville/brainpower-deberta-asap1-prompt1",
+  "created_at": "2026-09-27T15:43:13.000Z",
+  "updated_at": "2026-09-27T16:05:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184425989,
+  "parameters_human": "184.4M",
+  "storage_bytes": 737728508,
+  "storage_human": "738 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Get Beast Core in Slayers 2 – Location & Fast Farm Guide",
+      "url": "https://www.lolga.com/news/how-to-get-beast-core-in-slayers-2-location-fast-farm-guide-lolga",
+      "snippet": "Sep 20, 2026 · Get Beast Cores in Slayers 2 by defeating Beast Demons / Beast Born Demons around Mistfall Harbor and nearby …Read more"
+    },
+    {
+      "title": "Slayers 2: How to Get a Breathing Style and Every Trainer Location",
+      "url": "https://allthings.how/slayers-2-how-to-get-a-breathing-style-and-every-trainer-location/",
+      "snippet": "Sep 19, 2026 · Level requirements, the Demon Horn and Beast Core costs, all eight trainer spots, and how the training trials work."
+    },
+    {
+      "title": "Slayers 2 Beast Cores: Where to Get Them - The Click",
+      "url": "https://www.theclick.gg/slayers-2-beast-cores/",
+      "snippet": "2 days ago · For Slayers 2 Beast Cores, current progression routes point players toward Beast Demons around the Mistfall Harbor …"
+    },
+    {
+      "title": "Project Slayers 2: How to Get Beast Cores - All Things How",
+      "url": "https://allthings.how/project-slayers-2-how-to-get-beast-cores/",
+      "snippet": "Sep 20, 2026 · Beast Cores are a progression material in Project Slayers 2, and the only reliable way to collect them is to kill the …"
+    },
+    {
+      "title": "BEST Place To FARM BEAST CORES! | Project Slayers 2",
+      "url": "https://www.youtube.com/shorts/6szgQSgJwTE",
+      "snippet": "Sep 18, 2026 · In this video, I show you the BEST place to farm Beast Cores in Project Slayers 2, including where to find Beast …"
+    }
+  ]
+}

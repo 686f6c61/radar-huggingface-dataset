@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "OmniJev/OneJev-27B-FP8",
+  "slug": "omnijev-onejev-27b-fp8",
+  "author": "OmniJev",
+  "url": "https://huggingface.co/OmniJev/OneJev-27B-FP8",
+  "created_at": "2026-09-27T16:19:07.000Z",
+  "updated_at": "2026-09-27T16:20:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "onejev",
+    "system-one",
+    "decision-model",
+    "calibration",
+    "multimodal",
+    "gui-agent",
+    "video",
+    "fp8",
+    "conversational",
+    "base_model:OmniJev/OneJev-27B",
+    "base_model:quantized:OmniJev/OneJev-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 30422283389,
+  "storage_human": "30.4 GB",
+  "base_model": "OmniJev/OneJev-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "V-Store | Premium Vintage & Streetwear",
+      "url": "https://www.vstorede.com/",
+      "snippet": "Entdecke Vintage Klamotten, Streetwear, Y2K Fashion und 90er Mode. Vintage Jeans, Trikots, Trackjackets, Hoodies, Jacken und …"
+    },
+    {
+      "title": "♻️Premium Vintage Store♻️ (@vstore_de) - Instagram",
+      "url": "https://www.instagram.com/vstore_de/",
+      "snippet": "15K Followers, 41 Following, 78 Posts - ♻️Premium Vintage Store♻️ (@vstore_de) on Instagram: \"🛍️| Shop Instore & Online ⏰| …"
+    },
+    {
+      "title": "Über Uns – V-Store",
+      "url": "https://www.vstorede.com/blogs/neuigkeiten/uber-uns",
+      "snippet": "Jun 3, 2026 · Für uns ist Vintage nicht nur ein Stil, sondern auch eine nachhaltige Alternative zur schnelllebigen …"
+    },
+    {
+      "title": "The V Store – Laden immer geöffnet",
+      "url": "https://thevstore.de/",
+      "snippet": "Der perfekte süß-salzige Snack für zwischendurch!"
+    },
+    {
+      "title": "V-Store | Munich - Facebook",
+      "url": "https://www.facebook.com/p/V-Store-61553863921601/",
+      "snippet": "Schaut in unserem neuen online Store vorbei! V-Store, Munich. 388 followers · 1 talking about this. 🛍️| Shop Instore & Online ⏰| …"
+    }
+  ]
+}

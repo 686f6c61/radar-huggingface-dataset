@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "PlatDemon7/refinet",
+  "slug": "platdemon7-refinet",
+  "author": "PlatDemon7",
+  "url": "https://huggingface.co/PlatDemon7/refinet",
+  "created_at": "2026-09-27T19:06:56.000Z",
+  "updated_at": "2026-09-27T19:13:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1065196305,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cheap Flights, Airline Tickets & Airfares - Find Deals on Flights at ...",
+      "url": "https://www.cheapflights.com/",
+      "snippet": "Compare flight deal prices from leading providers and secure cheap airline tickets! Get the most affordable airfare and exclusive flight …Read more"
+    },
+    {
+      "title": "Cheap Flights, Compare Flights & Airline Deals - in.Cheapflights.com",
+      "url": "https://www.in.cheapflights.com/",
+      "snippet": "Cheapflights - Search and Compare over 4 million Flight Deals for free. Find Cheap Flights at Rock Bottom Prices from over 300 …"
+    },
+    {
+      "title": "$34+ Cheap Flights to Florida | Cheapflights",
+      "url": "https://www.cheapflights.com/flights-to-florida/",
+      "snippet": "Find cheap flights to Florida from $34. Search and compare the best real-time prices for your round-trip, one-way, or last-minute flight …"
+    },
+    {
+      "title": "฿1,099+ Cheap Flights from Bangkok | Cheapflights",
+      "url": "https://www.th.cheapflights.com/flights-from-Bangkok/",
+      "snippet": "Why should you use Cheapflights to find cheap flight tickets from Bangkok? By finding flights from multiple airlines and providers at …"
+    },
+    {
+      "title": "7,747+ Cheap Flights to Bangalore, India | Cheapflights",
+      "url": "https://www.in.cheapflights.com/flights-to-Bangalore/",
+      "snippet": "Find cheap flights to Bangalore Bengaluru Intl (BLR) from ₹ 7,747. Search and compare return, one-way, or last-minute flights to …"
+    }
+  ]
+}

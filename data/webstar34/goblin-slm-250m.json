@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "webstar34/goblin-slm-250m",
+  "slug": "webstar34-goblin-slm-250m",
+  "author": "webstar34",
+  "url": "https://huggingface.co/webstar34/goblin-slm-250m",
+  "created_at": "2026-09-27T14:15:08.000Z",
+  "updated_at": "2026-09-27T14:43:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "goblin",
+    "pretraining",
+    "experimental",
+    "custom-code",
+    "en",
+    "dataset:rijuludar/100B-pretokenized-mix-32k",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Paras",
+  "slug": "ryanham1lton-paras",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Paras",
+  "created_at": "2026-09-27T13:23:41.000Z",
+  "updated_at": "2026-09-27T13:25:34.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116588949,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 508 AI models across 486 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Ryanham1lton/Patrat · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Patrat",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Paras-ai · GitHub",
+      "url": "https://github.com/Paras-ai/",
+      "snippet": "Valued interest rate derivatives using QuantLib in Python, including European swaptions under the Black model by building a flat term structure, constructing vanilla interest rate swaps, and modeli…"
+    },
+    {
+      "title": "AI Model Comparison & LLM Leaderboard 2026 — Benchmarks, Pricing & Rankings",
+      "url": "https://traictory.com/",
+      "snippet": "Compare 346 AI models with verified LLM benchmarks, API pricing, and rankings. Traictory tracks GPQA, SWE-Bench, MMLU and 682+ tests. Find the best model for coding, research, or automation — updated daily."
+    }
+  ]
+}

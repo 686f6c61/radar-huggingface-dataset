@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "olusegunola/qwen2.5-1.5b-primekg-ctl-evalprompt-seed101",
+  "slug": "olusegunola-qwen2-5-1-5b-primekg-ctl-evalprompt-seed101",
+  "author": "olusegunola",
+  "url": "https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-ctl-evalprompt-seed101",
+  "created_at": "2026-09-27T19:10:25.000Z",
+  "updated_at": "2026-09-27T19:10:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46317146,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "olusegunola/qwen2.5-1.5b-primekg-orpo-seed2024 · Hugging Face",
+      "url": "https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-orpo-seed2024",
+      "snippet": "olusegunola / qwen2.5-1.5b-primekg-orpo-seed2024 Like 0 Transformers Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "olusegunola/qwen2.5-1.5b-primekg-dkd-seed101 · Hugging Face",
+      "url": "https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-dkd-seed101",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen2.5:1.5b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:1.5b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "[2412.15115] Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2412.15115",
+      "snippet": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens ..."
+    },
+    {
+      "title": "Model Variants and Capabilities | QwenLM/Qwen2.5 | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen2.5/1.1-model-variants-and-capabilities",
+      "snippet": "This page provides a comprehensive overview of the Qwen2.5 model variants, their sizes, architectures, and capabilities. It explains the different model sizes available, the distinction between base and instruction-tuned variants, and the key capabilities of each model."
+    }
+  ]
+}

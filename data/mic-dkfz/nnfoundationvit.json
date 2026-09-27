@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "MIC-DKFZ/nnFoundationViT",
+  "slug": "mic-dkfz-nnfoundationvit",
+  "author": "MIC-DKFZ",
+  "url": "https://huggingface.co/MIC-DKFZ/nnFoundationViT",
+  "created_at": "2026-09-24T08:46:40.000Z",
+  "updated_at": "2026-09-24T08:48:22.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nnunetv2",
+  "languages": [],
+  "tags": [
+    "nnunetv2",
+    "medical-imaging",
+    "radiology",
+    "3d",
+    "self-supervised",
+    "foundation-model",
+    "nnunet",
+    "nnssl",
+    "arxiv:2609.26924",
+    "arxiv:2404.09556",
+    "arxiv:2503.01835",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 44,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2703904207,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mic Test",
+      "url": "https://mictests.com/",
+      "snippet": "This website provides a simple online mic test that allows you to check if microphone is working properly. Since it’s a browser …"
+    },
+    {
+      "title": "Test de microphone",
+      "url": "https://fr.mictests.com/",
+      "snippet": "Custom three-capsule array: This professional USB mic produces clear, powerful, broadcast-quality sound for YouTube videos, …"
+    },
+    {
+      "title": "Mic Test – Check Microphone Online",
+      "url": "https://webcammictest.com/mic/",
+      "snippet": "Test your microphone instantly in the browser. See real-time audio levels, record your voice, and verify your mic works before calls or …"
+    },
+    {
+      "title": "Microphone Test - Online Mic Test",
+      "url": "https://microphone-test.com/",
+      "snippet": "Whether you’re preparing for an online meeting, recording a podcast, or gaming with friends, ensuring your mic is working perfectly. …"
+    },
+    {
+      "title": "MIC Insurance Francia – MIC Insurance",
+      "url": "https://www.micinsurance.fr/",
+      "snippet": "Copyright © 2026 MIC Insurance Francia MIC INSURANCE COMPANY, S.A. Politique Protection des Données | Politique de …"
+    }
+  ]
+}

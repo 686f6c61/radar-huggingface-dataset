@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ishigaki-AEC-9B-GGUF",
+  "slug": "mradermacher-ishigaki-aec-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ishigaki-AEC-9B-GGUF",
+  "created_at": "2026-09-27T18:16:14.000Z",
+  "updated_at": "2026-09-27T19:24:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "construction",
+    "japanese",
+    "en",
+    "base_model:ONESTRUCTION/Ishigaki-AEC-9B",
+    "base_model:quantized:ONESTRUCTION/Ishigaki-AEC-9B",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 85101501888,
+  "storage_human": "85.1 GB",
+  "base_model": "ONESTRUCTION/Ishigaki-AEC-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/AI-FLow-OpticsReview-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/AI-FLow-OpticsReview-9B-GGUF",
+      "snippet": "mradermacher / AI-FLow-OpticsReview-9B-GGUF Like 0 Reinforcement Learning Transformers GGUF Chinese optics peer-review scientific-evaluation multimodal srro conversational License:cc-by-nc-4. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Yi-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Yi-9B-GGUF",
+      "snippet": "mradermacher / Yi-9B-GGUF like 0 Transformers GGUF English Inference Endpoints License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model Edit model card About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 30 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Hugging Face Viewer",
+      "url": "https://hfviewer.com/",
+      "snippet": "A GGUF release of darkc0de/XORTRON-NXTXPRT9PRO-27B, a Qwen3.5-family multimodal model from the XORTRON Criminal Computing project. The model card frames the project as an AI-safety and alignment research experiment."
+    }
+  ]
+}

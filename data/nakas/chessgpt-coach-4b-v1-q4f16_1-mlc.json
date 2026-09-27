@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nakas/chessgpt-coach-4b-v1-q4f16_1-MLC",
+  "slug": "nakas-chessgpt-coach-4b-v1-q4f16_1-mlc",
+  "author": "nakas",
+  "url": "https://huggingface.co/nakas/chessgpt-coach-4b-v1-q4f16_1-MLC",
+  "created_at": "2026-09-27T18:34:43.000Z",
+  "updated_at": "2026-09-27T19:08:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlc-llm",
+  "languages": [],
+  "tags": [
+    "mlc-llm",
+    "chess",
+    "web-llm",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2274342846,
+  "storage_human": "2.3 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nakas Music Store | Philippos Nakas",
+      "url": "https://www.nakas.gr/en/",
+      "snippet": "The Music House PHILIPPOS NAKAS SA is currently the largest company in Greece and Cyprus with a network of sales and …Read more"
+    },
+    {
+      "title": "Nakas Music Store | Φίλιππος Νάκας",
+      "url": "https://www.nakas.gr/el/",
+      "snippet": "Τα πάντα για τον Ήχο και τη Μουσική!Read more"
+    },
+    {
+      "title": "Philippos Nakas Conservatory - The best conservatory in Greece",
+      "url": "https://www.nakas.edu.gr/en/",
+      "snippet": "For the 13th consecutive year, the Athens State Orchestra and the Philippos Nakas Conservatory are co-organizing a series of …Read more"
+    },
+    {
+      "title": "Nakastream - Streaming Films & Séries HD Gratuit VF & VOSTFR",
+      "url": "https://nakastream.org/",
+      "snippet": "Regardez les derniers films, séries et animes en streaming HD gratuit sur Nakastream. Disponible en VF et VOSTFR avec une …Read more"
+    },
+    {
+      "title": "Home - Nakas Music Cyprus",
+      "url": "https://www.nakas.com.cy/en/",
+      "snippet": "Nakas Music Cyprus Ltd. is a subsidiary of the group Philippos Nakas SA, founded in 1994 aiming to expand the activities of …Read more"
+    }
+  ]
+}

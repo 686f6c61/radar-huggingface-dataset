@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kp-forks/Krea-2-Turbo",
+  "slug": "kp-forks-krea-2-turbo",
+  "author": "kp-forks",
+  "url": "https://huggingface.co/kp-forks/Krea-2-Turbo",
+  "created_at": "2026-09-27T13:10:36.000Z",
+  "updated_at": "2026-09-27T13:13:19.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "en",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:finetune:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 97436610,
+  "storage_human": "97 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KP — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/KP",
+      "snippet": "KP Pour l’article ayant un titre homophone, voir capé. Cette page d’homonymie répertorie les différents sujets et articles portant le …Read more"
+    },
+    {
+      "title": "KP1, le spécialiste de la préfabrication béton",
+      "url": "https://www.kp1.fr/",
+      "snippet": "KP1 est le spécialiste français de la préfabrication de planchers et structures en béton précontraint, responsables et durables pour …"
+    },
+    {
+      "title": "Actualités | KP1",
+      "url": "https://www.kp1.fr/actualites",
+      "snippet": "Nouveau : Plancher à Dalles Alvéolées KP1 sous ATEx, adapté aux charges roulantes KP1 franchit une nouvelle étape dans …"
+    },
+    {
+      "title": "KLÖCKNER PENTAPLAST",
+      "url": "https://www.kpfilms.com/fr/",
+      "snippet": "Klöckner Pentaplast (kp) Food Packaging is featured in a recent episode of the Dutch television programme Doe Maar Duurzaam …"
+    },
+    {
+      "title": "Aurores boréales France — Ce soir, Kp en direct (2026)",
+      "url": "https://vigi-sky.fr/aurores.html",
+      "snippet": "May 11, 2026 · Voir une aurore boréale en France ce soir : carte Kp temps réel, 10 meilleurs spots, calendrier 2026 des tempêtes …"
+    }
+  ]
+}

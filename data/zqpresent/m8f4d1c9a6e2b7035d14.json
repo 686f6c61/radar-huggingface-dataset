@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "zqpresent/m8f4d1c9a6e2b7035d14",
+  "slug": "zqpresent-m8f4d1c9a6e2b7035d14",
+  "author": "zqpresent",
+  "url": "https://huggingface.co/zqpresent/m8f4d1c9a6e2b7035d14",
+  "created_at": "2026-09-27T12:55:21.000Z",
+  "updated_at": "2026-09-27T12:56:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 91121408,
+  "parameters_human": "91.1M",
+  "storage_bytes": 364507048,
+  "storage_human": "365 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

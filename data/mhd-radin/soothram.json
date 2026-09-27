@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mhd-radin/Soothram",
+  "slug": "mhd-radin-soothram",
+  "author": "mhd-radin",
+  "url": "https://huggingface.co/mhd-radin/Soothram",
+  "created_at": "2026-09-27T15:37:32.000Z",
+  "updated_at": "2026-09-27T15:37:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MHD (rappeur) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/MHD_(rappeur)",
+      "snippet": "MHD, de son vrai nom Mohamed Sylla, né le 10 septembre 1994 à La Roche-sur-Yon (Vendée), est un rappeur, chanteur et acteur …"
+    },
+    {
+      "title": "Mhd Officiel - YouTube",
+      "url": "https://www.youtube.com/channel/UCvebOuGWNvuUpZBzpV_Bc9Q",
+      "snippet": "MHD - Bella (feat. WizKid) MHD - Bébé (feat. Dadju) MHD - Bella (feat. WizKid)"
+    },
+    {
+      "title": "Ecole de Coaching et Formations Certifiées | MHD Formation",
+      "url": "https://mhd-formation.com/",
+      "snippet": "MHD Formation est le leader des écoles de formation en coaching et en thérapies brèves en France."
+    },
+    {
+      "title": "MHD Site Officiel - Nouvel album \"Mansa\"",
+      "url": "https://mhdmusic.com/",
+      "snippet": "Suivez toute l'actualité de MHD sur son site officiel ! Découvrez son nouvel album \"Mansa\" maintenant disponible partout !"
+    },
+    {
+      "title": "MHD - YouTube Music",
+      "url": "https://music.youtube.com/channel/UCWzpV6bKCGLgZ5uyjZRRkIQ",
+      "snippet": "Mohamed Sylla, better known by his stage name MHD, is a French rapper based in Paris, who is known for blending trap music with …"
+    }
+  ]
+}

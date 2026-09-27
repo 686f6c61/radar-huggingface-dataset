@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "fin-ai-lab/tfwm-ijepa",
+  "slug": "fin-ai-lab-tfwm-ijepa",
+  "author": "fin-ai-lab",
+  "url": "https://huggingface.co/fin-ai-lab/tfwm-ijepa",
+  "created_at": "2026-09-27T01:46:43.000Z",
+  "updated_at": "2026-09-27T02:14:44.000Z",
+  "license": "derived-market-data",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "finance",
+    "time-series",
+    "market-data",
+    "self-supervised",
+    "tfwm",
+    "feature-extraction",
+    "dataset:fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 948386095,
+  "storage_human": "948 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : fin, fins - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/fin/33781",
+      "snippet": "Fin courant et fin prochain (= à la fin du mois en cours, du mois prochain) sont, respectivement, vieilli et sorti de l'usage. À la fin de la …"
+    },
+    {
+      "title": "fin",
+      "url": "https://www.fin.fr/",
+      "snippet": "Découvrez les travaux de la FIN sur l'analyse du cycle de vie du bateau, l’APER - 1ère filière mondiale de déconstruction des …"
+    },
+    {
+      "title": "Fin — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Fin",
+      "snippet": "fin est un nom qui signifie le moment auquel s'arrête un processus, par opposition au mot début, comme la fin du monde, de la vie, …"
+    },
+    {
+      "title": "fin - Définitions, synonymes, prononciation, exemples | Dico en ligne ...",
+      "url": "https://dictionnaire.lerobert.com/definition/fin",
+      "snippet": "Entendre le fin d'une affaire, pour dire, ce qu'il y a de plus caché, de plus subtil, de plus secret : & de même, le fin d'une science, le …"
+    },
+    {
+      "title": "fin — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/fin",
+      "snippet": "«Il était fin, on s’ennuie», a raconté une voisine, expliquant que le défunt était père de trois enfants et qu’il était un grand amoureux …"
+    }
+  ]
+}

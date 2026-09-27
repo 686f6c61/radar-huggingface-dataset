@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JayRobotics/ACT_demo_01",
+  "slug": "jayrobotics-act_demo_01",
+  "author": "JayRobotics",
+  "url": "https://huggingface.co/JayRobotics/ACT_demo_01",
+  "created_at": "2026-09-27T19:00:23.000Z",
+  "updated_at": "2026-09-27T19:09:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:data/servobox_50",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714880,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JayRobotics (JaeJin Hwang) · GitHub",
+      "url": "https://github.com/JayRobotics",
+      "snippet": "If you&#x27;ve made up your mind to do something, act on it immediately. - JayRobotics"
+    },
+    {
+      "title": "JayRobotics/ACT_demo_03 at main - Hugging Face",
+      "url": "https://huggingface.co/JayRobotics/ACT_demo_03/tree/main",
+      "snippet": "JayRobotics Upload model card and train config e952f9a verified3 days ago .gitattributes Safe 1.52 kBinitial commit3 days ago README.md 5.7 kBUpload model card and train config3 days ago config.json 1.73 kBUpload policy3 days ago model.safetensors 207 MB xet Upload policy3 days ago policy_postprocessor.json Safe 660 BytesUpload ..."
+    },
+    {
+      "title": "JayRobotics (Hawng JaeJin) - Hugging Face",
+      "url": "https://huggingface.co/JayRobotics",
+      "snippet": "User profile of Hawng JaeJin on Hugging Face"
+    },
+    {
+      "title": "code-tree/README.md at main · JayRobotics/code-tree · GitHub",
+      "url": "https://github.com/JayRobotics/code-tree/blob/main/README.md",
+      "snippet": "Coding study repository. Contribute to JayRobotics/code-tree development by creating an account on GitHub."
+    },
+    {
+      "title": "ZeroScript - The Free, Unlimited AI Coding Tool for Roblox",
+      "url": "https://zerodev.tools/zeroscript",
+      "snippet": "ZeroScript is a free, open-source AI agent for Roblox Studio - unlimited prompts, no API key, no credits, no subscription. Runs on your own free AI chat."
+    }
+  ]
+}

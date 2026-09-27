@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "MayoIsJS/i-wanna-be-the-tiny-ko",
+  "slug": "mayoisjs-i-wanna-be-the-tiny-ko",
+  "author": "MayoIsJS",
+  "url": "https://huggingface.co/MayoIsJS/i-wanna-be-the-tiny-ko",
+  "created_at": "2026-09-27T16:41:02.000Z",
+  "updated_at": "2026-09-27T17:22:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "ko",
+    "dataset:devngho/korean-textbooks-edu",
+    "dataset:minpeter/fineweb-2-edu-korean",
+    "dataset:HuggingFaceFW/finepdfs-edu",
+    "dataset:KORMo-Team/Cosmopedia-ko-synth",
+    "dataset:Avelina/python-edu-cleaned",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136336000,
+  "parameters_human": "136.3M",
+  "storage_bytes": 272688360,
+  "storage_human": "273 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

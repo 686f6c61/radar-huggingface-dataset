@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Compactbot/compactlm-5m",
+  "slug": "compactbot-compactlm-5m",
+  "author": "Compactbot",
+  "url": "https://huggingface.co/Compactbot/compactlm-5m",
+  "created_at": "2026-09-27T12:50:24.000Z",
+  "updated_at": "2026-09-27T12:51:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tiny",
+    "tiny-lm",
+    "slm",
+    "small-language-model",
+    "from-scratch",
+    "llama",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24665229,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Perplexity",
+      "dataset": "fineweb-edu (held-out)",
+      "metric": "Perplexity",
+      "value": 48.3
+    }
+  ],
+  "sources": []
+}

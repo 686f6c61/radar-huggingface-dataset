@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DevQuasar/XiaomiMiMo.MiMo-V2.6-Pro-RL-GGUF",
+  "slug": "devquasar-xiaomimimo-mimo-v2-6-pro-rl-gguf",
+  "author": "DevQuasar",
+  "url": "https://huggingface.co/DevQuasar/XiaomiMiMo.MiMo-V2.6-Pro-RL-GGUF",
+  "created_at": "2026-09-27T18:47:10.000Z",
+  "updated_at": "2026-09-27T18:54:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Pro-RL",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Pro-RL",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1362660352,
+  "parameters_human": "1.36B",
+  "storage_bytes": 2832658048,
+  "storage_human": "2.8 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XiaomiMiMo/MiMo-V2.6-Pro-RL · Hugging Face",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL",
+      "snippet": "MiMo-V2.6-Pro-RL is the flagship checkpoint of the MiMo-V2.6 series. The series is built to scale reinforcement learning toward self-improvement — scaling RL compute, environment diversity, and grader compute together, so the model keeps expanding its capability frontier through exploration and feedback. Key features include:"
+    },
+    {
+      "title": "MiMo-V2.6 - a XiaomiMiMo Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiMo-V2.6 | Xiaomi",
+      "url": "https://mimo.xiaomi.com/mimo-v2-6",
+      "snippet": "From materials design to mathematical formalization, the following case studies illustrate how the model applies its reasoning, coding, and tool-use capabilities to concrete research tasks."
+    },
+    {
+      "title": "Xiaomi MiMo Home",
+      "url": "https://mimo.mi.com/models/en-US/mimo-v2.6-pro",
+      "snippet": "Xiaomi MiMo&#x27;s most powerful flagship reasoning model — omni-modal, ultra-high performance, trillion-parameter — built for complex projects, long-horizon tasks, high-stakes work, cybersecurity, and research."
+    },
+    {
+      "title": "Xiaomi MiMo Home",
+      "url": "https://mimo.mi.com/",
+      "snippet": "Full modality, high intelligence, low cost — the efficient reasoning model built for scale. The go-to choice for high-frequency calls and large-scale tasks in professional office settings, striking the best balance of speed, quality, and cost."
+    }
+  ]
+}

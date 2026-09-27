@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Dalila-Ku/full-ner",
+  "slug": "dalila-ku-full-ner",
+  "author": "Dalila-Ku",
+  "url": "https://huggingface.co/Dalila-Ku/full-ner",
+  "created_at": "2026-09-27T01:26:18.000Z",
+  "updated_at": "2026-09-27T01:48:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108898569,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435628062,
+  "storage_human": "436 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dalila (Bible) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Dalila_(Bible)",
+      "snippet": "Dalila (en hébreu : דְּלִילָה, nom signifiant « celle qui affaiblit » qui vient de la racine דלל affaiblir, rendre mince, appauvrir en hébreu, « …"
+    },
+    {
+      "title": "Prénom Dalila (fille) : signification, origine, caractère, sainte, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/dalila/prenom-7164",
+      "snippet": "Quelle est l'origine du prénom Dalila ? Le prénom Dalila est un prénom à la fois hébreu et arabe. Ce prénom est également un nom …"
+    },
+    {
+      "title": "Samson et Dalila : L'histoire d'une trahison - Le Chrétien",
+      "url": "https://lechretien.fr/histoires-de-la-bible/a-247-samson-et-dalila-.html",
+      "snippet": "Feb 27, 2024 · L'histoire de Samson et Dalila met en lumière la vulnérabilité humaine face à la trahison, l'importance de rester fidèle …"
+    },
+    {
+      "title": "Dalida — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Dalida",
+      "snippet": "Au début de sa carrière, elle a pour nom de scène « Dalila ». Sur les conseils de l'écrivain et scénariste Alfred Machard qui pense …"
+    },
+    {
+      "title": "Dalila : histoire, mythe biblique et origine du prénom",
+      "url": "https://easyreponses.com/spiritualite/dalila/",
+      "snippet": "Aug 29, 2026 · De la trahison de Samson aux origines de son prénom, découvrez l'histoire fascinante de Dalila, entre récit biblique …"
+    }
+  ]
+}

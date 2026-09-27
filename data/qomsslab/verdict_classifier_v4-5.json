@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "QomSSLab/verdict_classifier_v4.5",
+  "slug": "qomsslab-verdict_classifier_v4-5",
+  "author": "QomSSLab",
+  "url": "https://huggingface.co/QomSSLab/verdict_classifier_v4.5",
+  "created_at": "2026-09-27T12:13:42.000Z",
+  "updated_at": "2026-09-27T12:13:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "fa",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307533316,
+  "parameters_human": "307.5M",
+  "storage_bytes": 1264510772,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

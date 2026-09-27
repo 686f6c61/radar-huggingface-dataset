@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "answerdotai/ModernBERT-base",
+  "slug": "answerdotai-modernbert-base",
+  "author": "answerdotai",
+  "url": "https://huggingface.co/answerdotai/ModernBERT-base",
+  "created_at": "2024-12-11T11:38:06.000Z",
+  "updated_at": "2025-01-15T20:11:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "masked-lm",
+    "long-context",
+    "en",
+    "arxiv:2412.13663",
+    "license:apache-2.0",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 1112,
+  "downloads_30d": 4270151,
+  "trending_score": 10,
+  "parameters": 149655232,
+  "parameters_human": "149.7M",
+  "storage_bytes": 5084307056,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "answerdotai/ModernBERT-base · Hugging Face",
+      "url": "https://huggingface.co/answerdotai/ModernBERT-base",
+      "snippet": "... For more information about ModernBERT, we recommend our release blog post for a high-level overview, and our arXiv pre-print for in-depth information. ModernBERT is a collaboration between Answer.AI, LightOn, and friends."
+    },
+    {
+      "title": "GitHub - AnswerDotAI/ModernBERT: Bringing BERT into modernity via ...",
+      "url": "https://github.com/AnswerDotAI/ModernBERT",
+      "snippet": "examples/train_st.py: The boilerplate code to train a ModernBERT-based dense retrieval model with Sentence Transformers."
+    },
+    {
+      "title": "Finally, a Replacement for BERT: Introducing ModernBERT – Answer.AI",
+      "url": "https://www.answer.ai/posts/2024-12-19-modernbert.html",
+      "snippet": "In fact, currently, encoder-only models add up to over a billion downloads per month, nearly three times more than decoder-only models with their 397 million monthly downloads. In fact, the `fill-mask` model category, composed of encoder “base models” such as ModernBERT, ready to be fine-tuned for other downstream applications, is the most downloaded model category overall."
+    },
+    {
+      "title": "AICodexLab/answerdotai-ModernBERT-base-ai-detector · Hugging Face",
+      "url": "https://huggingface.co/AICodexLab/answerdotai-ModernBERT-base-ai-detector",
+      "snippet": "This model is a fine-tuned version of answerdotai/ModernBERT-base on the AI vs Human Text Classification dataset, DAIGT V2 Train Dataset."
+    },
+    {
+      "title": "Finally, a Replacement for BERT: Introducing ModernBERT",
+      "url": "https://huggingface.co/blog/modernbert",
+      "snippet": "A multilingual version has been trained from the base https://huggingface.co/answerdotai/ModernBERT-base/discussions/60, but it may not target your intended language. ... Well done! Just sharing PangolinGuard, a fine-tuned model from ModernBERT-large aimed at implementing AI guardrails."
+    }
+  ]
+}

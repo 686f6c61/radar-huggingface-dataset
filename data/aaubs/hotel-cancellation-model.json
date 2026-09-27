@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AAUBS/hotel-cancellation-model",
+  "slug": "aaubs-hotel-cancellation-model",
+  "author": "AAUBS",
+  "url": "https://huggingface.co/AAUBS/hotel-cancellation-model",
+  "created_at": "2026-09-27T18:54:53.000Z",
+  "updated_at": "2026-09-27T18:54:57.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "tabular-classification",
+    "xgboost",
+    "scikit-learn",
+    "teaching",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 900597,
+  "storage_human": "900597 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-driven prediction of hotel booking cancellations and time-to ...",
+      "url": "https://link.springer.com/article/10.1007/s40558-026-00394-y",
+      "snippet": "Abstract Hotel booking cancellations pose a persistent challenge for revenue management, leading to demand uncertainty and revenue loss. This study proposes a two-stage deep learning framework that combines TabNet classification with DeepHit survival analysis to jointly estimate cancellation probability and time-to-cancellation risk."
+    },
+    {
+      "title": "GitHub - anand193/hotel-cancellation-model: End-to-end project ...",
+      "url": "https://github.com/anand193/hotel-cancellation-model",
+      "snippet": "However, flexible cancellation policies have led to a rise in last-minute cancellations, which negatively impact hotel revenue and operations. This project analyzes a hotel booking dataset to understand factors that influence cancellations and builds a machine learning model to predict cancellations."
+    },
+    {
+      "title": "hotel-intelligence-suite/booking-cancellation-model at main ... - GitHub",
+      "url": "https://github.com/Assyrian91/hotel-intelligence-suite/tree/main/booking-cancellation-model",
+      "snippet": "Hotel booking cancellations cost the Australian accommodation industry an estimated AUD 1.2-2.5B annually. This project builds a machine learning system that predicts the probability of a booking cancellation at time of reservation — enabling revenue managers to take pre-emptive action."
+    },
+    {
+      "title": "Forecasting hotel cancellations through machine learning",
+      "url": "https://www.researchgate.net/publication/379870083_Forecasting_hotel_cancellations_through_machine_learning",
+      "snippet": "After analyzing the data using machine learning techniques, a theoretical model was developed to inspect the relationships between the restaurants&#x27; quality factors and customers&#x27; satisfaction."
+    },
+    {
+      "title": "Hotel Booking Cancellation Prediction Using Applied Bayesian Models",
+      "url": "https://arxiv.org/pdf/2410.16406",
+      "snippet": "The hotel aims to attract customers and minimize can-cellation losses by requiring a prepaid deposit, utilizing a random forest model for rate adjustments and cancellation prediction [11]. On the other hand, this research uses artificial intelligence to forecast hotel cancellations using Personal Name Records data, achieving an impressive 80% accu-racy for 7-day cancellations [12]. The study ..."
+    }
+  ]
+}

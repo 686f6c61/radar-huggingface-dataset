@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ANGExllL/moss-crane",
+  "slug": "angexlll-moss-crane",
+  "author": "ANGExllL",
+  "url": "https://huggingface.co/ANGExllL/moss-crane",
+  "created_at": "2026-09-27T18:15:44.000Z",
+  "updated_at": "2026-09-27T18:15:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "torchvision",
+  "languages": [],
+  "tags": [
+    "torchvision",
+    "safetensors",
+    "image-classification",
+    "adversarial-training",
+    "efficientnet",
+    "perturb",
+    "bittensor",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119027848,
+  "parameters_human": "119.0M",
+  "storage_bytes": 476270096,
+  "storage_human": "476 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ANGExllL (Depotov) - Hugging Face",
+      "url": "https://huggingface.co/ANGExllL/models",
+      "snippet": "User profile of Depotov on Hugging Face"
+    },
+    {
+      "title": "MoSs: Mixture of Scales for Efficient High-Resolution Autoregressive ...",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/37611",
+      "snippet": "The scale-mixture method exhibits remarkable efficiency with little impact on generation quality on various models. For instance, our implementation achieves 2.05-4.96x speedup on the transformer backbone, up to 85.62% KV cache reduction, incurring only 0.1-2.4% loss on GenEval quality, based on the state-of-the-art Infinity model."
+    },
+    {
+      "title": "Microsoft Foundry Models overview - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+      "snippet": "The model catalog in Foundry portal is the hub for discovering and using a wide range of models to build generative AI applications. The model catalog features thousands of models from providers like Azure OpenAI, Anthropic, Mistral, Meta, Cohere, NVIDIA, and Hugging Face, including models that Microsoft trained."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore how every major AI model evolved from its ancestors. Interactive visualization of LLM genealogy."
+    },
+    {
+      "title": "GitHub - OpenMOSS/MOSS-TTS: An open-source model family for long-form ...",
+      "url": "https://github.com/OpenMOSS/MOSS-TTS",
+      "snippet": "English | 简体中文 MOSS‑TTS Family is an open‑source speech and sound generation model family from MOSI.AI and the OpenMOSS team. It is designed for high‑fidelity, high‑expressiveness, and complex real‑world scenarios, covering stable long‑form speech, multi‑speaker dialogue, voice/character design, environmental sound effects, and real‑time streaming TTS. Start here ..."
+    }
+  ]
+}

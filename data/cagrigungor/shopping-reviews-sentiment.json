@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "cagrigungor/shopping-reviews-sentiment",
+  "slug": "cagrigungor-shopping-reviews-sentiment",
+  "author": "cagrigungor",
+  "url": "https://huggingface.co/cagrigungor/shopping-reviews-sentiment",
+  "created_at": "2026-09-27T13:09:11.000Z",
+  "updated_at": "2026-09-27T13:09:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "sentiment-analysis",
+    "amazon-reviews",
+    "en",
+    "dataset:bittlingmayer/amazonreviews",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33360770,
+  "parameters_human": "33.4M",
+  "storage_bytes": 133619416,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI customer review analysis: How it works and how to do it (2026)",
+      "url": "https://wiserreview.com/blog/ai-customer-review-analysis/",
+      "snippet": "AI review analysis uses natural language processing to read thousands of customer reviews at once and pull out sentiment, themes, and patterns that a human team would take weeks to find. Most businesses shopping for review analysis software don&#x27;t have an analysis problem. They have a volume problem, and volume has a threshold."
+    },
+    {
+      "title": "Top Sentiment Analysis Tools for Retailers in 2026",
+      "url": "https://www.retailgators.com/top-sentiment-analysis-tools-retailers-2026/",
+      "snippet": "Discover top sentiment analysis tools for retailers in 2026 to track customer feedback, monitor brand sentiment, and gain AI-powered insights for smarter decisions."
+    },
+    {
+      "title": "AI That Reads Customer Reviews: 7 Tools Tested (2026)",
+      "url": "https://appfollow.io/blog/ai-that-reads-customer-reviews",
+      "snippet": "We tested 7 AI tools that read and analyse customer reviews — from app store feedback to Amazon and Shopify. Pricing and features. Updated May 2026."
+    },
+    {
+      "title": "Multilingual sentiment analysis in e-commerce customer reviews using ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666307425000427",
+      "snippet": "Abstract As the e-commerce platforms grew exponentially, the volume of multilingual customer reviews increased, indicating that sentiment analysis is a priceless tool for finding consumer sentiment, enhancing marketing strategies, and improving customer experience."
+    },
+    {
+      "title": "How to Conduct Sentiment Analysis on Reviews [2 Methods]",
+      "url": "https://www.sentisum.com/library/sentiment-analysis-reviews",
+      "snippet": "Sentiment analysis for customer reviews is the process of classifying feedback as positive, negative, or neutral to understand what customers love, what frustrates them, and what needs improvement. Manual review analysis works only for small datasets under 100 reviews, but it is slow, biased, inconsistent, and impossible to scale for growing businesses. AI-powered sentiment analysis software ..."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "LibertAIDAI/deem-0.6-v1",
+  "slug": "libertaidai-deem-0-6-v1",
+  "author": "LibertAIDAI",
+  "url": "https://huggingface.co/LibertAIDAI/deem-0.6-v1",
+  "created_at": "2026-09-27T18:54:03.000Z",
+  "updated_at": "2026-09-27T18:54:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "deem",
+  "languages": [],
+  "tags": [
+    "deem",
+    "safetensors",
+    "qwen3",
+    "decision-model",
+    "cpu-inference",
+    "rust",
+    "edge",
+    "routing",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557746,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LibertAI Labs",
+      "url": "https://labs.libertai.io/",
+      "snippet": "Model releases, benchmarks, agent experiments and infrastructure writeups from the team building private, decentralized AI."
+    },
+    {
+      "title": "LibertAIDAI (LibertAI) - Hugging Face",
+      "url": "https://huggingface.co/LibertAIDAI/models",
+      "snippet": "Working on decentralized AI jon1012 updated a model 16 days ago"
+    },
+    {
+      "title": "LibertAIDAI (LibertAI) - Hugging Face",
+      "url": "https://huggingface.co/LibertAIDAI",
+      "snippet": "Working on decentralized AI jon1012 updated a model about 12 hours ago"
+    },
+    {
+      "title": "GitHub - Libertai/deem: Typed, calibrated decisions from open weights ...",
+      "url": "https://github.com/Libertai/deem/tree/main",
+      "snippet": "Typed, calibrated decisions from open weights. Deem reads your state — a policy, contract, ticket, or question — and returns a structured decision: choice (2-255 options), score (ordinal rubric), or yes/no with abstention. One forward pass. No streaming, no token soup."
+    },
+    {
+      "title": "LibertAIDAI/deem-9b-v1: open-weights language model for general ...",
+      "url": "https://huggingbay.xyz/artifact/hf-model-libertaidai-deem-9b-v1",
+      "snippet": "LibertAIDAI/deem-9b-v1 is an open-weights language model for general under the apache-2.0 license (17.9 GB), added to Hugging Bay Sep 27, 2026. Hosted open-weights model — 6 files carry published SHA-256 checksums you can re-hash. 6 Hugging Bay hosted files."
+    }
+  ]
+}

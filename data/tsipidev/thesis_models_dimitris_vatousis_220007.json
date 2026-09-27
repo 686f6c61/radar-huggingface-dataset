@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "TsipiDev/Thesis_Models_Dimitris_Vatousis_220007",
+  "slug": "tsipidev-thesis_models_dimitris_vatousis_220007",
+  "author": "TsipiDev",
+  "url": "https://huggingface.co/TsipiDev/Thesis_Models_Dimitris_Vatousis_220007",
+  "created_at": "2026-09-27T13:25:46.000Z",
+  "updated_at": "2026-09-27T15:05:30.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "edge-ai",
+    "energy-efficiency",
+    "raspberry-pi",
+    "base_model:Qwen/Qwen2-0.5B",
+    "base_model:quantized:Qwen/Qwen2-0.5B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 14371480928,
+  "storage_human": "14.4 GB",
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0, meta-llama/Llama-3.2-1B, Qwen/Qwen2-0.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TsipiDev (Dimitris Vatousis) · GitHub",
+      "url": "https://github.com/TsipiDev/",
+      "snippet": "A complete guide to building ARM NN with TensorFlow Lite and PyArmNN support on a Raspberry Pi, including step-by-step installation, dependency setup, and inference with a real TFLite model."
+    },
+    {
+      "title": "GitHub - TsipiDev/TsipiDev",
+      "url": "https://github.com/TsipiDev/TsipiDev",
+      "snippet": "Contribute to TsipiDev/TsipiDev development by creating an account on GitHub."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2312.07330",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "Devising and Detecting Phishing Emails Using Large Language Models",
+      "url": "https://kth.diva-portal.org/smash/record.jsf?pid=diva2:1849622",
+      "snippet": "Abstract [en] This doctoral thesis addresses the rapidly evolving landscape of computer security threats posed by advancements in artificial intelligence (AI), particularly large language models (LLMs). We demonstrate how AI can automate and enhance cyberattacks to identify the most pressing dangers and present feasible mitigation strategies."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic, Google, SpaceXAI & others Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "lea97338/LouV4",
+  "slug": "lea97338-louv4",
+  "author": "lea97338",
+  "url": "https://huggingface.co/lea97338/LouV4",
+  "created_at": "2026-09-27T17:06:53.000Z",
+  "updated_at": "2026-09-27T17:19:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4639428,
+  "parameters_human": "4.6M",
+  "storage_bytes": 1042574600,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

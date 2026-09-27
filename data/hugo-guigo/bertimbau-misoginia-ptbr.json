@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "hugo-guigo/bertimbau-misoginia-ptbr",
+  "slug": "hugo-guigo-bertimbau-misoginia-ptbr",
+  "author": "hugo-guigo",
+  "url": "https://huggingface.co/hugo-guigo/bertimbau-misoginia-ptbr",
+  "created_at": "2026-09-27T18:51:26.000Z",
+  "updated_at": "2026-09-27T18:52:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "misogyny-detection",
+    "hate-speech",
+    "portuguese",
+    "bertimbau",
+    "text-classification",
+    "pt",
+    "base_model:neuralmind/bert-base-portuguese-cased",
+    "base_model:finetune:neuralmind/bert-base-portuguese-cased",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108924674,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435722224,
+  "storage_human": "436 MB",
+  "base_model": "neuralmind/bert-base-portuguese-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HUGO BOSS collection | Femmes & hommes | Soignée & Particulière",
+      "url": "https://www.hugoboss.com/fr/home?msockid=0327ace17b88632d2126bb007a5d6211",
+      "snippet": "Ensemble, BOSS et HUGO concilient tradition et innovation, tout en valorisant le savoir-faire et la qualité. Découvrez des pièces …"
+    },
+    {
+      "title": "Victor Hugo — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Victor_Hugo",
+      "snippet": "Victor Hugo, né le 7 ventôse an X (26 février 1802) à Besançon et mort le 22 mai 1885 à Paris, est un poète, dramaturge, romancier …"
+    },
+    {
+      "title": "HUGO - Dépôt et protection d'œuvres",
+      "url": "https://hugo.sgdl.org/",
+      "snippet": "Hugo est un service numérique créé par la Société des Gens de Lettres pour permettre aux auteurs de protéger leurs œuvres et …"
+    },
+    {
+      "title": "Gohugo - The world's fastest framework for building websites",
+      "url": "https://gohugo.io/",
+      "snippet": "2 days ago · Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes …"
+    },
+    {
+      "title": "Hugo Publishing - Une maison d'éditeurs",
+      "url": "https://www.hugopublishing.fr/",
+      "snippet": "Hugo Publishing lance l'adaptation webtoon d'Abysses sur ONO Le roman phénomène Abysses de C.S. Quill arrive en webtoon sur …"
+    }
+  ]
+}

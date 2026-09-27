@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "stefra/roberta-large-so",
+  "slug": "stefra-roberta-large-so",
+  "author": "stefra",
+  "url": "https://huggingface.co/stefra/roberta-large-so",
+  "created_at": "2026-09-27T18:44:58.000Z",
+  "updated_at": "2026-09-27T18:45:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "sysoneso",
+    "statement-tuning",
+    "zero-shot-classification",
+    "semantic-operators",
+    "sem_filter",
+    "custom_code",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1421488124,
+  "storage_human": "1.4 GB",
+  "base_model": "FacebookAI/roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "roberta-large: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/roberta-large-facebookai",
+      "snippet": "Overview roberta-large is a transformer model pretrained using masked language modeling on 160GB of English text across five datasets: BookCorpus (11,038 unpublished books), English Wikipedia, CC-News (63 million news articles from 2016-2019), OpenWebText, and Stories from CommonCrawl. Developed by FacebookAI, this model is built with the Hugging Face transformers library and uses a byte ..."
+    },
+    {
+      "title": "FacebookAI/roberta-large · Hugging Face",
+      "url": "https://huggingface.co/FacebookAI/roberta-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zeromodels/roberta_large · Hugging Face",
+      "url": "https://huggingface.co/zeromodels/roberta_large",
+      "snippet": "RoBERTa is a robustly optimized BERT encoder: more data/steps, no NSP, dynamic masking, byte-level BPE (mask token <mask>), and padding-offset position ids. For more details on the model, please go to the upstream model card. Pure- Keras 3 conversion of FacebookAI/roberta-large for zeromodels."
+    },
+    {
+      "title": "roberta-large — AI Model Details | Applied",
+      "url": "https://theapplied.co/models/facebookai-roberta-large",
+      "snippet": "Facebook AI&#x27;s 355M-parameter large RoBERTa encoder pretrained on BookCorpus and Wikipedia for masked language modeling tasks."
+    },
+    {
+      "title": "roberta-large | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/roberta-large",
+      "snippet": "RoBERTa is a transformers model pretrained on a large corpus of English data in a self-supervised... Sign in to Microsoft Foundry to deploy this model."
+    }
+  ]
+}

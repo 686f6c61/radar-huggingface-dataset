@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Faless/piper_apples_expo_v13_smolvla_base_bs96",
+  "slug": "faless-piper_apples_expo_v13_smolvla_base_bs96",
+  "author": "Faless",
+  "url": "https://huggingface.co/Faless/piper_apples_expo_v13_smolvla_base_bs96",
+  "created_at": "2026-09-27T01:17:23.000Z",
+  "updated_at": "2026-09-27T01:17:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:Faless/piper_apples_expo_v13",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906727896,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

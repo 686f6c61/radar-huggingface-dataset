@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "NovelAI/clio-v1-legacy",
+  "slug": "novelai-clio-v1-legacy",
+  "author": "NovelAI",
+  "url": "https://huggingface.co/NovelAI/clio-v1-legacy",
+  "created_at": "2026-09-24T12:35:10.000Z",
+  "updated_at": "2026-09-26T11:52:22.000Z",
+  "license": "gpl-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "stablelm",
+    "text-generation",
+    "model",
+    "novelai",
+    "legacy",
+    "en",
+    "license:gpl-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 2130,
+  "trending_score": 11,
+  "parameters": 3043786240,
+  "parameters_human": "3.04B",
+  "storage_bytes": 24530719828,
+  "storage_human": "24.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NovelAI - AI Anime Image Generator & Storyteller",
+      "url": "https://novelai.net/",
+      "snippet": "NovelAI is your personal creative space for generating anime-style art through AI. Our AI art generator maintains professional quality …"
+    },
+    {
+      "title": "NovelAI Diffusion V5 The #1 AI Anime Image Generator",
+      "url": "https://novelai.net/v5",
+      "snippet": "NovelAI is the #1 AI image generator tool for generating AI anime art and crafting epic stories with our storytelling models. Unleash …"
+    },
+    {
+      "title": "Kereis Solutions - Assurances Dommages - NOVELIA",
+      "url": "https://www.novelia.fr/novelia/",
+      "snippet": "Kereis Solutions - Assurances Dommages Des mesures correctives et préventives sont en cours de mise en place pour vous …"
+    },
+    {
+      "title": "Novel AI: Write, Create & Publish AI-Powered Stories | Novel AI Studio",
+      "url": "https://novelaistudio.com/",
+      "snippet": "Discover Reels Create Image Profile NovelAi Studio Create Stories Discover Reels My Library Create Stories Create Image Create …"
+    },
+    {
+      "title": "Novel AI - Interactive AI Story Game & Life Simulator | novelai",
+      "url": "https://www.novelai.ai/novel-ai",
+      "snippet": "I Finally Found a Story Game I Like I've tried visual novels before, but they always felt limited. NovelAI gives me enough freedom to …"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "derikn/Qwen3.8-27B-AWQ-INT4",
+  "slug": "derikn-qwen3-8-27b-awq-int4",
+  "author": "derikn",
+  "url": "https://huggingface.co/derikn/Qwen3.8-27B-AWQ-INT4",
+  "created_at": "2026-09-27T18:10:08.000Z",
+  "updated_at": "2026-09-27T18:42:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "qwen3.8",
+    "awq",
+    "int4",
+    "4-bit",
+    "auto-round",
+    "vllm",
+    "xpu",
+    "intel-arc",
+    "vision",
+    "mtp",
+    "reasoning",
+    "thinking",
+    "tool-calling",
+    "conversational",
+    "dataset:NeelNanda/pile-10k",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6284446960,
+  "parameters_human": "6.28B",
+  "storage_bytes": 19567790213,
+  "storage_human": "19.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cyankiwi/Qwen3.8-27B-AWQ-INT4 · Hugging Face",
+      "url": "https://huggingface.co/cyankiwi/Qwen3.8-27B-AWQ-INT4",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "README.md · cyankiwi/Qwen3.8-27B-AWQ-INT4 at main - Hugging Face",
+      "url": "https://huggingface.co/cyankiwi/Qwen3.8-27B-AWQ-INT4/blob/main/README.md",
+      "snippet": "Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to ..."
+    },
+    {
+      "title": "Qwen3.8-27B-AWQ-INT4 · Models",
+      "url": "https://www.modelscope.cn/models/cyankiwi/Qwen3.8-27B-AWQ-INT4",
+      "snippet": "Qwen3.8-27B-AWQ-INT4 - cyankiwi 在 ModelScope 开源的模型。"
+    },
+    {
+      "title": "Qwen3.8-27B-AWQ-INT4 vs Qwen3.8-27B — comparison, examples, use cases",
+      "url": "https://www.aimodels.fyi/models/compare/qwen3.8-27b-awq-int4-cyankiwi-vs-qwen3.8-27b-qwen",
+      "snippet": "Overview Qwen3.8-27B-AWQ-INT4 is a 27-billion parameter causal language model with integrated vision encoding, maintained by cyankiwi. This is an INT4 quantized variant of Qwen3.8-27B using Activation-Aware Quantization (AWQ), reducing the model to 21.02 GB from its full size while maintaining performance. The model operates natively with a 262,144 token context window, extensible up to ..."
+    }
+  ]
+}

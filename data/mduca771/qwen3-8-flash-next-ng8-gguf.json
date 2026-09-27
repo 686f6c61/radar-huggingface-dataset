@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mduca771/Qwen3.8-Flash-Next-NG8-GGUF",
+  "slug": "mduca771-qwen3-8-flash-next-ng8-gguf",
+  "author": "mduca771",
+  "url": "https://huggingface.co/mduca771/Qwen3.8-Flash-Next-NG8-GGUF",
+  "created_at": "2026-09-27T14:16:44.000Z",
+  "updated_at": "2026-09-27T14:38:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen4exp",
+    "mixture-of-experts",
+    "unsloth",
+    "iq3_xxs",
+    "q3_k_xl",
+    "q8_0",
+    "pt",
+    "en",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 168748162464,
+  "storage_human": "168.7 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Coral-decider-4b-GGUF",
+  "slug": "mradermacher-coral-decider-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Coral-decider-4b-GGUF",
+  "created_at": "2026-09-27T18:35:49.000Z",
+  "updated_at": "2026-09-27T18:35:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/decider-4b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/decider-4b-GGUF",
+      "snippet": "mradermacher / decider-4b-GGUF Like 0 Transformers GGUF English decision-model calibrated structured-output multi-task system-one one-pass conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/assay-4b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/assay-4b-GGUF",
+      "snippet": "mradermacher / assay-4b-GGUF Like 0 Text Classification Transformers GGUF English assay decision-model calibrated conformal-prediction structured-output conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Decider 4B: Specifications & Sources - gradually.ai",
+      "url": "https://www.gradually.ai/en/ai-models/decider-4b/",
+      "snippet": "Decider 4B by Mapika. Technical specifications, availability, and official sources."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 30 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "decider/MODEL_CARD_4B.md at main · Mapika/decider · GitHub",
+      "url": "https://github.com/Mapika/decider/blob/main/MODEL_CARD_4B.md",
+      "snippet": "All rows below are on identical inputs and seeds: v2.1 through decider-ai 1.4.0 with its map, v1 and v2 through decider-ai 1.3.0 at their stored temperatures (1.05 and 1.935), measured in the same session on 2026-09-24."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/B2-9B-GGUF",
+  "slug": "mradermacher-b2-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/B2-9B-GGUF",
+  "created_at": "2026-09-27T18:36:18.000Z",
+  "updated_at": "2026-09-27T19:08:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agents",
+    "tool-use",
+    "reasoning",
+    "qwen3.5",
+    "en",
+    "dataset:schneewolflabs/Geselle",
+    "dataset:schneewolflabs/Vorsicht-DPO",
+    "base_model:schneewolflabs/B2-9B",
+    "base_model:quantized:schneewolflabs/B2-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 75315448064,
+  "storage_human": "75.3 GB",
+  "base_model": "schneewolflabs/B2-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rust | Twitch Drops",
+      "url": "https://twitch.facepunch.com/",
+      "snippet": "Connect your accounts to earn in-game rewards by watching Rust streams on Twitch.Read more"
+    },
+    {
+      "title": "Rust | Twitch Drops",
+      "url": "https://twitch.facepunch.com/Connect?Error=All+of+your+Twitch+Drops+have+already+been+given+to+your+linked+Steam+account.",
+      "snippet": "All Rust streams with the Drops Enabled tag will count towards earning drops. However, streamer-specific drops will require you to …"
+    }
+  ]
+}

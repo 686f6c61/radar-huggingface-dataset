@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dusersad12/OrionLM-Checkpoint-Release",
+  "slug": "dusersad12-orionlm-checkpoint-release",
+  "author": "dusersad12",
+  "url": "https://huggingface.co/dusersad12/OrionLM-Checkpoint-Release",
+  "created_at": "2026-09-27T17:52:45.000Z",
+  "updated_at": "2026-09-27T17:53:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "mistral",
+    "feature-extraction",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27,
+  "storage_human": "27 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dusersad12/NexusLM-Public-Release · Hugging Face",
+      "url": "https://huggingface.co/dusersad12/NexusLM-Public-Release",
+      "snippet": "The model has demonstrated outstanding performance across various benchmark evaluations, including mathematics, programming, and general logic. Its overall performance is now approaching that of other leading models. Compared to the previous version, the upgraded model shows significant improvements in handling complex reasoning tasks."
+    },
+    {
+      "title": "dusersad12 (sdawd) - Hugging Face",
+      "url": "https://huggingface.co/dusersad12/datasets",
+      "snippet": "Sort: Recently updated. dusersad12/verl-deepscaler-cleaned. Viewer • Updated 11 minutes ago • 39.1k. dusersad12/verl_deepscaler. Viewer • Updated about 3 hours ago • 402"
+    },
+    {
+      "title": "GitHub - schxma2/OrionLM: an omnimodal reasoning llm with DSA, MoE and ...",
+      "url": "https://github.com/schxma2/OrionLM",
+      "snippet": "This project provides a production-ready transformer model with state-of-the-art components including grouped query attention, mixture of experts, deep reasoning controllers, and native multimodal support. Built for scalability from small models (~100M parameters) to large-scale training (~40B+ parameters)."
+    },
+    {
+      "title": "GitHub - qiuhuan/Orion1: Official code of ORION",
+      "url": "https://github.com/qiuhuan/Orion1",
+      "snippet": "Overview News [2025/04/10] ORION inference code and checkpoint release. [2025/03/26] ArXiv paper release."
+    },
+    {
+      "title": "Models | InvokeAI Documentation",
+      "url": "https://invoke.ai/concepts/models/",
+      "snippet": "Checkpoint and Diffusers Models The model checkpoint files (*.ckpt) are the Stable Diffusion \"secret sauce\". They are the product of training the AI on millions of captioned images gathered from multiple sources. Originally there was only a single Stable Diffusion weights file, which many people named model.ckpt."
+    }
+  ]
+}

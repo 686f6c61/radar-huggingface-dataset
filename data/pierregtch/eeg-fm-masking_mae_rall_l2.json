@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "PierreGtch/eeg-fm-masking_mae_rall_L2",
+  "slug": "pierregtch-eeg-fm-masking_mae_rall_l2",
+  "author": "PierreGtch",
+  "url": "https://huggingface.co/PierreGtch/eeg-fm-masking_mae_rall_L2",
+  "created_at": "2026-09-27T15:31:02.000Z",
+  "updated_at": "2026-09-27T15:31:13.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "eeg",
+    "self-supervised-learning",
+    "foundation-model",
+    "pytorch",
+    "masked-autoencoder",
+    "open-eeg-bench",
+    "feature-extraction",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12692096,
+  "parameters_human": "12.7M",
+  "storage_bytes": 50771472,
+  "storage_human": "51 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/",
+      "snippet": "2 days ago · Forum software by XenForo Big Changes Are Coming to the Forum! We’ve got some exciting news to share — the …"
+    },
+    {
+      "title": "porn | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/tags/porn/",
+      "snippet": "Sep 18, 2026 · Big Changes Are Coming to the Forum! We’ve got some exciting news to share — the forum is moving to a brand …"
+    },
+    {
+      "title": "Porn experiences. | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/porn-experiences.716317/",
+      "snippet": "Feb 28, 2026 · As a person who has a very long history with porn, I've found it interesting hearing stories from others on their …"
+    },
+    {
+      "title": "Porn Comix | Page 445 | Pornchat Adult Forum",
+      "url": "https://forum.xnxx.com/threads/porn-comix.322919/page-445",
+      "snippet": "Mar 9, 2014 · Big Changes Are Coming to the Forum! We’ve got some exciting news to share — the forum is moving to a brand-new …"
+    },
+    {
+      "title": "WMAF | Page 3 | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/wmaf.693415/page-3",
+      "snippet": "Jun 20, 2024 · mikehammer002001 Porn Star Joined: Jun 20, 2023 Messages: 22,777 Jun 17, 2024 Her Asian b/f doesn't even get …"
+    }
+  ]
+}

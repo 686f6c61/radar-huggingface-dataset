@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Duke-de-Artois/LlaVA_refcoco_pure",
+  "slug": "duke-de-artois-llava_refcoco_pure",
+  "author": "Duke-de-Artois",
+  "url": "https://huggingface.co/Duke-de-Artois/LlaVA_refcoco_pure",
+  "created_at": "2026-09-27T15:31:10.000Z",
+  "updated_at": "2026-09-27T15:33:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llava_llama",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 811879284,
+  "storage_human": "812 MB",
+  "base_model": "Llava-7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Duke University - Fueled by creativity, informed by scholarship",
+      "url": "https://duke.edu/",
+      "snippet": "Follow along to see how Duke is committed to the fundamental tenets on which our country was built. The background is a series of …"
+    },
+    {
+      "title": "Roues artisanales, montage et vente de roues VTT ... - DUKE Racing …",
+      "url": "https://www.duke-racingwheels.com/fr/",
+      "snippet": "Montage de roues artisanales, assemblées à la main dans notre atelier en France. Le plus grand choix de roues de VTT et de route …"
+    },
+    {
+      "title": "Université Duke — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Universit%C3%A9_Duke",
+      "snippet": "L 'université Duke (en anglais, Duke University) est une université de recherche privée nord-américaine, située à Durham (Caroline …"
+    },
+    {
+      "title": "Duke University - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Duke_University",
+      "snippet": "Duke University is a private research university in Durham, North Carolina, United States. Founded by Methodists and Quakers in …"
+    },
+    {
+      "title": "Duke - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Duke",
+      "snippet": "A woman who holds in her own right the title to such duchy or dukedom, or is married to a duke, is normally styled duchess. Queen …"
+    }
+  ]
+}

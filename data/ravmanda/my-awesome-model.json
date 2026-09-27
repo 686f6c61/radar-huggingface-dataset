@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "RavManda/my-awesome-model",
+  "slug": "ravmanda-my-awesome-model",
+  "author": "RavManda",
+  "url": "https://huggingface.co/RavManda/my-awesome-model",
+  "created_at": "2026-09-27T01:17:53.000Z",
+  "updated_at": "2026-09-27T01:18:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108310272,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433263424,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

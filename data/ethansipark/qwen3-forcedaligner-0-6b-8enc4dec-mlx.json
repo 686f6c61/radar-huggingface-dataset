@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ethansipark/Qwen3-ForcedAligner-0.6B-8enc4dec-MLX",
+  "slug": "ethansipark-qwen3-forcedaligner-0-6b-8enc4dec-mlx",
+  "author": "ethansipark",
+  "url": "https://huggingface.co/ethansipark/Qwen3-ForcedAligner-0.6B-8enc4dec-MLX",
+  "created_at": "2026-09-27T18:04:58.000Z",
+  "updated_at": "2026-09-27T18:05:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_asr",
+    "forced-alignment",
+    "speech",
+    "korean",
+    "8-bit",
+    "4-bit",
+    "base_model:ethansipark/Qwen3-ForcedAligner-0.6B-8bit-full-MLX",
+    "base_model:quantized:ethansipark/Qwen3-ForcedAligner-0.6B-8bit-full-MLX",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1229680256,
+  "parameters_human": "1.23B",
+  "storage_bytes": 678885348,
+  "storage_human": "679 MB",
+  "base_model": "ethansipark/Qwen3-ForcedAligner-0.6B-8bit-full-MLX",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bilqis luvena Danendra (@miss_cendut)’s videos with suara asli - TikTok",
+      "url": "https://www.tiktok.com/@miss_cendut/video/7684928275939970322",
+      "snippet": "71 Likes, TikTok video from Bilqis luvena Danendra (@miss_cendut): “”. suara asli - Bilqis luvena Danendra.Read more"
+    },
+    {
+      "title": "Link Video Banyuwangi Bilqis Viral di TikTok, Ada Apa Sebenarnya?",
+      "url": "https://radarsolo.jawapos.com/nasional/2609270013/link-video-banyuwangi-bilqis-viral-di-tiktok-ada-apa-sebenarnya-cek-fakta-lengkapnya",
+      "snippet": "19 hours ago · Link Video Banyuwangi Bilqis atau Bilqis Luvena Danendra viral di TikTok. Ada apa sebenarnya dengan video …"
+    },
+    {
+      "title": "Bokep Viral Bilqis Luvena Danendra » Livemocha",
+      "url": "https://www.livemochas.com/fr/song/bokep-viral-bilqis-luvena-danendra.html",
+      "snippet": "résultats pour : bokep viral bilqis luvena danendra Ajout récent MP3 les plus récents ajoutés par Livemocha"
+    },
+    {
+      "title": "Link Asli Bilqis Luvena Danendra 27 dan 12 Detik yang Viral dan …",
+      "url": "https://www.pewarta.co.id/2026/09/link-asli-bilqis-luvena-danendra-27-dan-12-detik-viral-fakta-konten-miss-cendut-banyuwangi.html",
+      "snippet": "19 hours ago · Link asli Bilqis Luvena Danendra 27 dan 12 detik ramai dicari. Cek fakta video Miss Cendut dan bedakan konten …"
+    },
+    {
+      "title": "Bilqis luvena dan Danendra (miss_cendut) | TikTok - BokepIndo",
+      "url": "https://bokepindo.casa/videos/Bilqis-luvena-dan-Danendra-(miss_cendut)-%7C-TikTok",
+      "snippet": "BokepIndo Search: Bilqis luvena dan Danendra (miss_cendut) | TikTok Bilqis luvena dan Danendra (miss_cendut) | TikTok"
+    }
+  ]
+}

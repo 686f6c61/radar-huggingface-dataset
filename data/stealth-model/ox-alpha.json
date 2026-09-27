@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stealth-model/ox-alpha",
+  "slug": "stealth-model-ox-alpha",
+  "author": "stealth-model",
+  "url": "https://huggingface.co/stealth-model/ox-alpha",
+  "created_at": "2026-09-27T18:07:09.000Z",
+  "updated_at": "2026-09-27T18:08:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ox-alpha",
+    "glm-5.3-flash",
+    "reasoning",
+    "coding",
+    "multimodal",
+    "svg",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Is ox-alpha? Free 1M-Context Stealth Model - kie.ai",
+      "url": "https://kie.ai/blog/what-is-ox-alpha",
+      "snippet": "What Is ox-alpha? The Free 1M-Context Stealth Model With Video Input ox-alpha is an anonymous \"stealth\" AI model that appeared on OpenRouter and OpenCode on August 20, 2026, offering a 1M-token context window, text/image/video input, and free access during a roughly one-week preview. It is positioned as a reasoning model for coding, sustained agentic work, and production workloads. No company ..."
+    },
+    {
+      "title": "Ox Alpha - Free AI Model for Coding & Agentic Work",
+      "url": "https://oxalpha.io/",
+      "snippet": "Ox Alpha is a frontier reasoning model for coding, agentic work and production use, with 1M context, multimodal input, and Tokenra API access."
+    },
+    {
+      "title": "Ox Alpha - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/stealth/ox-alpha",
+      "snippet": "Ox Alpha, a reasoning model from stealth, demonstrates competitive response times, ranking in the 51st percentile across eight benchmarks. Pricing information is currently unavailable, suggesting potential free tier usage."
+    },
+    {
+      "title": "Stealth AI Models: Current Models & Identity Reveals",
+      "url": "https://stealthmodels.com/",
+      "snippet": "Ox Alpha Revealed as GLM-5.3-Flash by Z.ai: native multimodal coding, long agent tasks, and MIT-licensed model weights."
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "See also Ox Alpha top use cases. OpenRouter added a new stealth model on August 20, 2026: Ox Alpha (stealth/ox-alpha) — positioned as a frontier-class model for efficient coding, sustained agentic work, and production workloads, with a 1M-token context window, multimodal input, tool calling, and $0/$0 pricing during preview."
+    }
+  ]
+}

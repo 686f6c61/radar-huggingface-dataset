@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "coo-quack/mmBERT-pii-sentinel",
+  "slug": "coo-quack-mmbert-pii-sentinel",
+  "author": "coo-quack",
+  "url": "https://huggingface.co/coo-quack/mmBERT-pii-sentinel",
+  "created_at": "2026-09-27T16:25:06.000Z",
+  "updated_at": "2026-09-27T17:19:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ja",
+    "zh",
+    "ko",
+    "en",
+    "fr",
+    "it",
+    "de",
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "pii",
+    "personal-information",
+    "privacy",
+    "token-classification",
+    "ja",
+    "zh",
+    "ko",
+    "en",
+    "fr",
+    "it",
+    "de",
+    "es",
+    "base_model:jhu-clsp/mmBERT-base",
+    "base_model:finetune:jhu-clsp/mmBERT-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 306975791,
+  "parameters_human": "307.0M",
+  "storage_bytes": 1227917916,
+  "storage_human": "1.2 GB",
+  "base_model": "jhu-clsp/mmBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CEO, COO et CFO : Définitions, rôles et différences",
+      "url": "https://chef-de-projet.fr/ceo-coo-cfo/",
+      "snippet": "Sep 11, 2025 · Le COO, ou Directeur des Opérations, est le bras droit du CEO. Si le CEO est le capitaine d’un navire, le COO est …Read more"
+    },
+    {
+      "title": "Hierarchy of Company: CEO, CFO, COO, CMO, CTO, CIO, Roles",
+      "url": "https://www.consultant4companies.com/hierarchy-of-company-ceo-cfo-coo-cmo-cto-cio-and-key-executive-roles-explained/",
+      "snippet": "Sep 21, 2025 · At the top, there are C-level executives (also called the C-Suite) such as the CEO, CFO, and COO, followed by …Read more"
+    },
+    {
+      "title": "Chief Operating Officer (COO) : missions et salaire",
+      "url": "https://www.licornesociety.com/metiers-startup/coo",
+      "snippet": "Aug 11, 2026 · Quelles sont les missions et le rôle d’un COO ? Le rôle du Chief Operating Officer (COO), Head of Operations ou …Read more"
+    },
+    {
+      "title": "Chief operating officer - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chief_operating_officer",
+      "snippet": "In the manufacturing sector, the primary role of the COO is routinely one of operations management, meaning that the COO is …Read more"
+    },
+    {
+      "title": "What Does a Chief Operating Officer (COO) Do? Roles and …",
+      "url": "https://www.investopedia.com/terms/c/coo.asp",
+      "snippet": "Apr 29, 2026 · Discover the roles, responsibilities, and qualifications of a chief operating officer (COO). Learn about the types of COO …Read more"
+    }
+  ]
+}

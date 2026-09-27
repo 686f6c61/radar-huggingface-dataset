@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mkenfenheuer/evora-qwen3-1.7b-v3-GGUF",
+  "slug": "mkenfenheuer-evora-qwen3-1-7b-v3-gguf",
+  "author": "mkenfenheuer",
+  "url": "https://huggingface.co/mkenfenheuer/evora-qwen3-1.7b-v3-GGUF",
+  "created_at": "2026-09-27T17:15:57.000Z",
+  "updated_at": "2026-09-27T17:16:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "evora",
+    "nutrition",
+    "coaching",
+    "meal-planning",
+    "on-device",
+    "lora-adapters",
+    "text-generation",
+    "en",
+    "de",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1107408576,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

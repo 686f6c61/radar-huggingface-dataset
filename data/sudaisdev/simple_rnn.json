@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sudaisdev/simple_rnn",
+  "slug": "sudaisdev-simple_rnn",
+  "author": "sudaisdev",
+  "url": "https://huggingface.co/sudaisdev/simple_rnn",
+  "created_at": "2026-09-27T18:25:56.000Z",
+  "updated_at": "2026-09-27T18:30:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "CharRNN",
+    "rnn",
+    "character-level",
+    "text-generation",
+    "custom-model",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 367672,
+  "storage_human": "367672 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introduction to Recurrent Neural Networks - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/introduction-to-recurrent-neural-network/",
+      "snippet": "RNN Unfolding Recurrent Neural Network Architecture RNNs share similarities in input and output structures with other deep learning architectures but differ significantly in how information flows from input to output. Unlike traditional deep neural networks where each dense layer has distinct weight matrices."
+    },
+    {
+      "title": "M3_RNN_Tutorial_v3.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/aaubs/ds-master/blob/main/notebooks/M3_RNN_Tutorial_v3.ipynb",
+      "snippet": "The objective of this tutorial Our goal in this tutorial is to provide simple examples of the RNN model so that you can better understand its functionality and how it can be used in a domain. After completing this tutorial, you will know: 1. What is a recurrent neural network (RNN)? 2. How do RNNs work and what is their structure? 3."
+    },
+    {
+      "title": "Recurrent neural network - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Recurrent_neural_network",
+      "snippet": "A multiple timescales recurrent neural network (MTRNN) is a neural-based computational model that can simulate the functional hierarchy of the brain through self-organization depending on the spatial connection between neurons and on distinct types of neuron activities, each with distinct time properties. [100][101] With such varied neuronal ..."
+    },
+    {
+      "title": "GitHub - alpersancili/Simple-RNN-Model: This project focuses on ...",
+      "url": "https://github.com/alpersancili/Simple-RNN-Model",
+      "snippet": "This project focuses on understanding the fundamentals of Recurrent Neural Networks (RNNs) by building a simple RNN from scratch using Numpy and implementing RNN-based models with the Keras library."
+    },
+    {
+      "title": "GitHub - nibiya-dataanalyst/SimpleRNN-Weather-Forecaster: A time-series ...",
+      "url": "https://github.com/nibiya-dataanalyst/SimpleRNN-Weather-Forecaster",
+      "snippet": "An end-to-end time-series forecasting project built with Python, TensorFlow/Keras, and Scikit-Learn. This repository demonstrates how to preprocess multi-variable weather data, construct sliding sequence windows, and train a Recurrent Neural Network (SimpleRNN) to forecast ambient temperatures."
+    }
+  ]
+}

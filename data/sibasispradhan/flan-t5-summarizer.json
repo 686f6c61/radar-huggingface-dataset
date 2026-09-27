@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sibasispradhan/flan-t5-summarizer",
+  "slug": "sibasispradhan-flan-t5-summarizer",
+  "author": "sibasispradhan",
+  "url": "https://huggingface.co/sibasispradhan/flan-t5-summarizer",
+  "created_at": "2026-09-27T15:43:23.000Z",
+  "updated_at": "2026-09-27T15:45:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:google/flan-t5-large",
+    "base_model:finetune:google/flan-t5-large",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 783150080,
+  "parameters_human": "783.2M",
+  "storage_bytes": 3132674201,
+  "storage_human": "3.1 GB",
+  "base_model": "google/flan-t5-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hkchavan/flan-t5-summarizer · Hugging Face",
+      "url": "https://huggingface.co/hkchavan/flan-t5-summarizer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jordiclive/flan-t5-3b-summarizer · Hugging Face",
+      "url": "https://huggingface.co/jordiclive/flan-t5-3b-summarizer",
+      "snippet": "Multi-purpose Summarizer (Fine-tuned 3B google/flan-t5-xl on several Summarization datasets) A fine-tuned version of google/flan-t5-xl on various summarization datasets (xsum, wikihow, cnn_dailymail/3.0.0, samsum, scitldr/AIC, billsum, TLDR) Goal: a model that can be used for a general-purpose summarizer for academic and general usage. Control over the type of summary can be given by varying ..."
+    },
+    {
+      "title": "Lokesh-102214/FLAN-T5-Summarizer - GitHub",
+      "url": "https://github.com/Lokesh-102214/FLAN-T5-Summarizer",
+      "snippet": "FLAN-T5 Summarizer Overview This repository demonstrates multiple approaches to dialogue summarization using the FLAN-T5 family of Large Language Models (LLMs). It provides practical, hands-on notebooks for:"
+    },
+    {
+      "title": "Flan T5 3b Summarizer - model.aibase.com",
+      "url": "https://model.aibase.com/models/details/1915693270048595970",
+      "snippet": "A general-purpose summarizer based on the 3B-parameter google/flan-t5-xl model fine-tuned on multiple summarization datasets, suitable for academic and general scenarios."
+    },
+    {
+      "title": "Flan-T5/README.md at main · Samruddhi912/Flan-T5 · GitHub",
+      "url": "https://github.com/Samruddhi912/Flan-T5/blob/main/README.md",
+      "snippet": "🤖 FLAN-T5 Summarizer & Q&A Assistant A lightweight Generative AI CLI application that performs text summarization and context-aware question answering (Q&A) using Google&#x27;s FLAN-T5 model from Hugging Face Transformers."
+    }
+  ]
+}

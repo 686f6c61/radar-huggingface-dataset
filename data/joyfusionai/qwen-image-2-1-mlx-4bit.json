@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JoyFusionAI/Qwen-Image-2.1-MLX-4bit",
+  "slug": "joyfusionai-qwen-image-2-1-mlx-4bit",
+  "author": "JoyFusionAI",
+  "url": "https://huggingface.co/JoyFusionAI/Qwen-Image-2.1-MLX-4bit",
+  "created_at": "2026-09-21T06:18:09.000Z",
+  "updated_at": "2026-09-21T06:23:20.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "mflux",
+  "languages": [],
+  "tags": [
+    "mflux",
+    "safetensors",
+    "mlx",
+    "qwen-image",
+    "text-to-image",
+    "apple-silicon",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 4162,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20479336056,
+  "storage_human": "20.5 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JoyFusionAI/Qwen-Image-2.1-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/JoyFusionAI/Qwen-Image-2.1-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlx-community/Qwen-Image-2.1-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen-Image-2.1-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen&#x27;s most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
+    },
+    {
+      "title": "Alibaba&#x27;s Qwen-Image-2.1 Now Runs on Apple Silicon at Just 7 GB ...",
+      "url": "https://alphasignal.ai/news/alibaba-s-qwen-image-2-1-now-runs-on-apple-silicon-at-just-7-gb",
+      "snippet": "JoyFusionAI released a 4-bit MLX build of Qwen-Image-2.1 for Apple Silicon via mflux. Peak memory drops to about 7 GB on M1 Max at 768x768 with the low-ram flag. Roughly 6.7 seconds per step, 40 steps recommended, no classifier-free guidance needed. Upstream model unifies text-to-image, editing, and native RGBA transparency in one 7B DiT."
+    },
+    {
+      "title": "GitHub - The-Focus-AI/qwen-image-2.1-mlx: Local Qwen-Image-2.1 text-to ...",
+      "url": "https://github.com/The-Focus-AI/qwen-image-2.1-mlx",
+      "snippet": "Local text-to-image for Qwen-Image-2.1 on a Mac, using mflux and MLX. The model runs on the Metal GPU. The CUDA ComfyUI installer at alesha-pro/tools is for an NVIDIA GPU. It is pinned to a CUDA PyTorch wheel and does not run on this machine. This repo is the Apple Silicon path: mflux 0.20.0 at commit ada53237, which added mflux-generate-qwen-2.1."
+    }
+  ]
+}

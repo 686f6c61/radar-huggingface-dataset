@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-zimage-turbo-075-9000-lora",
+  "slug": "runninghubai-rh-zimage-turbo-075-9000-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-zimage-turbo-075-9000-lora",
+  "created_at": "2026-09-27T13:40:02.000Z",
+  "updated_at": "2026-09-27T13:41:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81188560,
+  "storage_human": "81 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zimage Dual Sampling Triple Sampling Dual Zoom V7 (with model and LoRA ...",
+      "url": "https://www.runninghub.ai/post/2073209515941863424",
+      "snippet": "3. Lora trained with the base model is compatible with the Turbo model, but Lora trained with the Turbo model may not necessarily work on the base model. 4. Recommended dual sampling model combination: Base model 8-step acceleration Yaoguang; Turbo model (optional Realistic Light and Shadow 0.55) Ultra-realistic Portrait."
+    },
+    {
+      "title": "Zimage Dual Sampling Triple Sampling Dual Zoom V7 (with model and LoRA ...",
+      "url": "https://www.runninghub.ai/ai-detail/2073209620581359616",
+      "snippet": "Zimage Dual Sampling Triple Sampling Dual Zoom V7 (with model and LoRA download link) Input Parameter Historical Record 9 Workflows 0 0 Follow Creations Comments"
+    },
+    {
+      "title": "GitHub - Tongyi-MAI/Z-Image",
+      "url": "https://github.com/Tongyi-MAI/Z-Image",
+      "snippet": "Z-Image is a powerful and highly efficient image generation model family with 6B parameters. Currently there are four variants: 🚀 Z-Image-Turbo - A distilled version of Z-Image that matches or exceeds leading competitors with only 8 NFEs (Number of Function Evaluations). It offers ⚡️sub-second inference latency⚡️ on enterprise-grade H800 GPUs and fits comfortably within 16G VRAM ..."
+    },
+    {
+      "title": "Z-Image-Turbo LoRA Training Setup - Full Precision + Adapter v2 ...",
+      "url": "https://civitai.com/articles/23863/z-image-turbo-lora-training-setup-full-precision-adapter-v2-massive-quality-jump",
+      "snippet": "Template on runpod \"AI Toolkit - ostris - ui - official\" ~1 hour on RTX 3090 ( (if you sample 1 image instead of 10 samples per 250 steps)) Key settings that made the biggest difference ostris/zimage_turbo_training_adapter_v2 Full precision saves (dtype: fp32) No quantization anywhere LoRA rank/alpha 16 (linear + conv) sigmoid timestep"
+    },
+    {
+      "title": "README_cn.md · RunningHubAI/rh-zimage-turbo-087-9000-lora at main",
+      "url": "https://huggingface.co/RunningHubAI/rh-zimage-turbo-087-9000-lora/blob/main/README_cn.md",
+      "snippet": "本仓库提供 rh-zimage-turbo-087-9000-lora 的模型文件，可在 RunningHub 在线加载。"
+    }
+  ]
+}

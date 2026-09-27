@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "swadeshb/t5g2-4b4b-flat",
+  "slug": "swadeshb-t5g2-4b4b-flat",
+  "author": "swadeshb",
+  "url": "https://huggingface.co/swadeshb/t5g2-4b4b-flat",
+  "created_at": "2026-09-27T16:25:03.000Z",
+  "updated_at": "2026-09-27T16:25:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "math",
+    "hierarchical-reasoning",
+    "dataset:sxiong/MLR_structured_trajectory",
+    "base_model:google/t5gemma-2-4b-4b",
+    "base_model:adapter:google/t5gemma-2-4b-4b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104773828,
+  "storage_human": "105 MB",
+  "base_model": "google/t5gemma-2-4b-4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

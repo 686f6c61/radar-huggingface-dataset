@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/AlakazamMB",
+  "slug": "ryanham1lton-alakazammb",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/AlakazamMB",
+  "created_at": "2026-09-27T15:45:59.000Z",
+  "updated_at": "2026-09-27T15:48:44.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116031901,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Ryanham1lton/Hamm · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Hamm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Charmeleon - Eric Stuart (Pokemon) (English) [RVC v2] [RMVPE] [250 ...",
+      "url": "https://voice-models.com/model/9jK?source=voice-models-soundalike&source_model_id=34265&source_sample_id=34265%3Asamples%3Ap0&candidate_model_id=35820&candidate_sample_id=35820%3Asamples%3Ap0&soundalike_rank=6&soundalike_reason=nearby_voice",
+      "snippet": "Charmeleon - Eric Stuart (Pokemon) (English) [RVC v2] [RMVPE] [250 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Alakazam - Pokemon - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1869345694124408095",
+      "snippet": "Generate stunning pokemon, humanoid, character, psychic, alakazam anime art with the &#x27;Alakazam - Pokemon&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

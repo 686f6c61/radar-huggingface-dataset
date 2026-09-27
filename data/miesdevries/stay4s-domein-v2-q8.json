@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "miesdevries/stay4s-domein-v2-q8",
+  "slug": "miesdevries-stay4s-domein-v2-q8",
+  "author": "miesdevries",
+  "url": "https://huggingface.co/miesdevries/stay4s-domein-v2-q8",
+  "created_at": "2026-09-27T18:01:37.000Z",
+  "updated_at": "2026-09-27T19:24:56.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "dutch",
+    "nederlands",
+    "stay4s",
+    "qwen3",
+    "lora",
+    "domain-expert",
+    "nl",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - miesdevries/Stay4s-grokrom: Own grokphone",
+      "url": "https://github.com/miesdevries/Stay4s-grokrom/tree/main",
+      "snippet": "Own grokphone. Contribute to miesdevries/Stay4s-grokrom development by creating an account on GitHub."
+    },
+    {
+      "title": "miesdevries (Het nieuwe begin ) · GitHub",
+      "url": "https://github.com/miesdevries",
+      "snippet": "Just a guy trying to create something we wanr and need/ - miesdevries"
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "The fastest path from prompt to production with Gemini"
+    },
+    {
+      "title": "Meta AI",
+      "url": "https://www.meta.ai/",
+      "snippet": "Use Meta AI assistant to get things done, create AI-generated images for free, and get answers to any of your questions."
+    },
+    {
+      "title": "Stay4S — Privacy-first AI-ecosysteem",
+      "url": "https://www.stay4s.com/",
+      "snippet": "Stay4S — het Europese, privacy-first AI-ecosysteem. Telefoon, cloud, AI en diensten onder één soeverein dak."
+    }
+  ]
+}

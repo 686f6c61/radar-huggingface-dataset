@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Thanu10/Arogya_finetuned_merged",
+  "slug": "thanu10-arogya_finetuned_merged",
+  "author": "Thanu10",
+  "url": "https://huggingface.co/Thanu10/Arogya_finetuned_merged",
+  "created_at": "2026-09-27T13:48:03.000Z",
+  "updated_at": "2026-09-27T13:58:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-3-4b-it-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-3-4b-it-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 8638351522,
+  "storage_human": "8.6 GB",
+  "base_model": "unsloth/gemma-3-4b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thanu10 (Thanujaya Tennekoon) - Hugging Face",
+      "url": "https://huggingface.co/Thanu10/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space about 18 hours ago ... published a Space about 18 hours ago"
+    },
+    {
+      "title": "Thanu10 (Thanujaya Tennekoon) - Hugging Face",
+      "url": "https://huggingface.co/Thanu10",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space about 11 hours ago ... published a Space about 11 hours ago"
+    },
+    {
+      "title": "Thanu10/Arogya_finetuned_4bit API & Inference Endpoint - friendli.ai",
+      "url": "https://friendli.ai/models/Thanu10/Arogya_finetuned_4bit",
+      "snippet": "Run Thanu10/Arogya_finetuned_4bit with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "30 Best AI Agents GitHub Repos (September 2026)",
+      "url": "https://findarepo.com/categories/ai-agents/",
+      "snippet": "The best open-source AI agent frameworks and tools on GitHub, ranked daily by stars and measured momentum — build LLM agents that plan, call tools and ship."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "qhoenix/cedar-robin",
+  "slug": "qhoenix-cedar-robin",
+  "author": "qhoenix",
+  "url": "https://huggingface.co/qhoenix/cedar-robin",
+  "created_at": "2026-09-27T18:09:36.000Z",
+  "updated_at": "2026-09-27T18:09:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "torchvision",
+  "languages": [],
+  "tags": [
+    "torchvision",
+    "safetensors",
+    "image-classification",
+    "adversarial-training",
+    "efficientnet",
+    "perturb",
+    "bittensor",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119027848,
+  "parameters_human": "119.0M",
+  "storage_bytes": 476270096,
+  "storage_human": "476 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "V-Store | Premium Vintage & Streetwear",
+      "url": "https://www.vstorede.com/",
+      "snippet": "Entdecke Vintage Klamotten, Streetwear, Y2K Fashion und 90er Mode. Vintage Jeans, Trikots, Trackjackets, Hoodies, Jacken und …Read more"
+    },
+    {
+      "title": "♻️Premium Vintage Store♻️ (@vstore_de) - Instagram",
+      "url": "https://www.instagram.com/vstore_de/",
+      "snippet": "15K Followers, 41 Following, 78 Posts - ♻️Premium Vintage Store♻️ (@vstore_de) on Instagram: \"🛍️| Shop Instore & Online ⏰| …"
+    },
+    {
+      "title": "Über Uns – V-Store",
+      "url": "https://www.vstorede.com/blogs/neuigkeiten/uber-uns",
+      "snippet": "Jun 3, 2026 · Für uns ist Vintage nicht nur ein Stil, sondern auch eine nachhaltige Alternative zur schnelllebigen …"
+    },
+    {
+      "title": "The V Store – Laden immer geöffnet",
+      "url": "https://thevstore.de/",
+      "snippet": "Der perfekte süß-salzige Snack für zwischendurch!"
+    },
+    {
+      "title": "V-Store | Munich - Facebook",
+      "url": "https://www.facebook.com/p/V-Store-61553863921601/",
+      "snippet": "Schaut in unserem neuen online Store vorbei! V-Store, Munich. 388 followers · 1 talking about this. 🛍️| Shop Instore & Online ⏰| …"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "thealper2/git-vqav2-medium",
+  "slug": "thealper2-git-vqav2-medium",
+  "author": "thealper2",
+  "url": "https://huggingface.co/thealper2/git-vqav2-medium",
+  "created_at": "2026-09-27T12:21:36.000Z",
+  "updated_at": "2026-09-27T12:26:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "git",
+    "image-text-to-text",
+    "vqa",
+    "visual-question-answering",
+    "en",
+    "dataset:HuggingFaceM4/VQAv2",
+    "base_model:microsoft/git-base-vqav2",
+    "base_model:finetune:microsoft/git-base-vqav2",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177159738,
+  "parameters_human": "177.2M",
+  "storage_bytes": 708678728,
+  "storage_human": "709 MB",
+  "base_model": "microsoft/git-base-vqav2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

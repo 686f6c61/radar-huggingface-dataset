@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "obuladinnesai/claim-photo-integrity-detector-v1",
+  "slug": "obuladinnesai-claim-photo-integrity-detector-v1",
+  "author": "obuladinnesai",
+  "url": "https://huggingface.co/obuladinnesai/claim-photo-integrity-detector-v1",
+  "created_at": "2026-09-27T18:52:16.000Z",
+  "updated_at": "2026-09-27T18:52:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "image-classification",
+    "deepfake-detection",
+    "ai-generated-detection",
+    "insurance",
+    "claims",
+    "photo-integrity",
+    "vision-transformer",
+    "dataset:Rajarshi-Roy-research/Defactify_Image_Dataset",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85800194,
+  "parameters_human": "85.8M",
+  "storage_bytes": 343229809,
+  "storage_human": "343 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "obuladinnesai/claim-photo-integrity-detector · Hugging Face",
+      "url": "https://huggingface.co/obuladinnesai/claim-photo-integrity-detector",
+      "snippet": "Detects whether a photo is an authentic camera photograph or an AI-generated synthetic image. Built for insurance claim workflows: verify photo integrity before damage severity assessment or total-loss prediction (trust-first FNOL triage)."
+    },
+    {
+      "title": "AI Image Detector - Detect AI Generated Images - zerogpt.com",
+      "url": "https://www.zerogpt.com/ai-image-detector",
+      "snippet": "AI Image Detector Detect AI images in seconds. Upload an image to quickly find out if it was created by today&#x27;s top AI image generators."
+    },
+    {
+      "title": "Free AI Image Checker — Photo & Picture Checker",
+      "url": "https://wedetect.ai/ai-image-checker",
+      "snippet": "How the AI image checker works Upload or paste an image and our checker analyzes it with a machine-learning model trained on millions of real and AI-generated images across many generators — Midjourney, DALL·E, Stable Diffusion, Flux and more."
+    },
+    {
+      "title": "AI Image Detector - Free AI Photo Detection Tool | AI Photo Check",
+      "url": "https://aiphotocheck.com/",
+      "snippet": "Detect AI-generated images instantly with our free AI image detector. Uses 17 detection methods including machine learning, PRNU analysis, and C2PA verification."
+    },
+    {
+      "title": "AI Image Detector — Check If a Photo Is AI Generated | Was it AI?",
+      "url": "https://wasitai.io/",
+      "snippet": "An AI image detector estimates whether a picture was produced by an image generator or captured by a camera. It reads pixel-level statistics rather than the subject of the photo — noise structure, frequency artifacts, edge and texture behaviour, and any surviving metadata — then compares those against the patterns typical of generated and ..."
+    }
+  ]
+}

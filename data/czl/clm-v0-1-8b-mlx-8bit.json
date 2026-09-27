@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "czl/CLM-v0.1-8B-MLX-8bit",
+  "slug": "czl-clm-v0-1-8b-mlx-8bit",
+  "author": "czl",
+  "url": "https://huggingface.co/czl/CLM-v0.1-8B-MLX-8bit",
+  "created_at": "2026-09-27T01:29:20.000Z",
+  "updated_at": "2026-09-27T05:31:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "apple-silicon",
+    "embeddings",
+    "contrastive-learning",
+    "verifier",
+    "reranker",
+    "agents",
+    "clm",
+    "quantized",
+    "4-bit",
+    "6-bit",
+    "8-bit",
+    "feature-extraction",
+    "en",
+    "base_model:Contrastive-LM/CLM-v0.1-8B",
+    "base_model:quantized:Contrastive-LM/CLM-v0.1-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 9301925918,
+  "storage_human": "9.3 GB",
+  "base_model": "Contrastive-LM/CLM-v0.1-8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CZL • Constantine Mohamed Boudiaf - Arrivées en direct",
+      "url": "https://www.avionio.com/fr/airport/CZL/arrivals",
+      "snippet": "Tableau des arrivées en direct pour Aéroport international de Constantine Mohamed Boudiaf (CZL), Algérie : heures locales, …"
+    },
+    {
+      "title": "Mohamed Boudiaf International Airport - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mohamed_Boudiaf_International_Airport",
+      "snippet": "Mohamed Boudiaf International Airport (Arabic: مطار قسنطينة - محمد بوضياف, French: Aéroport de Constantine - Mohamed Boudiaf IATA: …"
+    },
+    {
+      "title": "Arrivées et départs Constantine (CZL) Arrivées et départs - Skyscanner",
+      "url": "https://www.skyscanner.fr/vols/arrivees-departs/czl/constantine-arrivees-departs",
+      "snippet": "Obtenez les dernières informations sur les arrivées et départs de Constantine (CZL). Découvrez l’état des vols intérieurs et …"
+    },
+    {
+      "title": "Aéroport Constantine | Départs et arrivées (CZL)",
+      "url": "https://easyflycheck.com/fr/algerie/constantine/",
+      "snippet": "Départs et arrivées en temps réel à l’aéroport de Constantine (CZL / Algérie). Les horaires de vol en temps réel vous offrent un …"
+    },
+    {
+      "title": "Aéroport de Constantine - Mohamed Boudiaf — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/A%C3%A9roport_de_Constantine_-_Mohamed_Boudiaf",
+      "snippet": "L' aéroport de Constantine - Mohamed Boudiaf2 (code IATA : CZL • code OACI : DABC), construit en 1943 pour l' armée américaine, …"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "SeeWye/qwen_TM_OCR_finaltune",
+  "slug": "seewye-qwen_tm_ocr_finaltune",
+  "author": "SeeWye",
+  "url": "https://huggingface.co/SeeWye/qwen_TM_OCR_finaltune",
+  "created_at": "2026-09-27T16:25:29.000Z",
+  "updated_at": "2026-09-27T16:28:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:SeeWye/qwen_finetune1_16bit",
+    "base_model:finetune:SeeWye/qwen_finetune1_16bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9339817607,
+  "storage_human": "9.3 GB",
+  "base_model": "SeeWye/qwen_finetune1_16bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

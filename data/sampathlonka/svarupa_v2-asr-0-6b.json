@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "sampathlonka/svarupa_v2-asr-0.6b",
+  "slug": "sampathlonka-svarupa_v2-asr-0-6b",
+  "author": "sampathlonka",
+  "url": "https://huggingface.co/sampathlonka/svarupa_v2-asr-0.6b",
+  "created_at": "2026-09-27T13:42:40.000Z",
+  "updated_at": "2026-09-27T13:45:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "fastconformer",
+    "rnnt",
+    "streaming",
+    "hinglish",
+    "hindi",
+    "indian-english",
+    "code-switching",
+    "hi",
+    "en",
+    "dataset:agarwalayushi/hinglish",
+    "dataset:AI4Bharat/kathbath",
+    "dataset:google/fleurs",
+    "base_model:sampathlonka/svarupa_asr_0.6b_v1",
+    "base_model:finetune:sampathlonka/svarupa_asr_0.6b_v1",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5105498603,
+  "storage_human": "5.1 GB",
+  "base_model": "sampathlonka/svarupa_asr_0.6b_v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech Recognition",
+      "dataset": "Hinglish Code-Switched Val",
+      "metric": "v7-norm WER, beam 4",
+      "value": 21.22
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Kathbath Hindi",
+      "metric": "v7-norm WER, beam 4",
+      "value": 11.06
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "FLEURS Hindi",
+      "metric": "v7-norm WER, beam 4",
+      "value": 14.54
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Curated Lahaja Multi-Dialect",
+      "metric": "v7-norm WER, greedy",
+      "value": 24.54
+    }
+  ],
+  "sources": [
+    {
+      "title": "sampathlonka/svarupa_asr_0.6b_v1 · Hugging Face",
+      "url": "https://huggingface.co/sampathlonka/svarupa_asr_0.6b_v1",
+      "snippet": "sampathlonka / svarupa_asr_0.6b_v1 Like 0 Automatic Speech Recognition NeMo agarwalayushi/hinglish AI4Bharat/kathbath google/fleurs Hindi English speech audio fastconformer rnnt streaming hinglish hindi indian-english code-switching Eval Results (legacy) License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket ..."
+    },
+    {
+      "title": "sampathlonka (sampathlonka) - Hugging Face",
+      "url": "https://huggingface.co/sampathlonka",
+      "snippet": "Geometric Deep Learning, Reinforcement Learning Viewer • Updated Jul 2, 2024 • 10.6k • 52"
+    },
+    {
+      "title": "sampathlonka (Sampath Lonka) · GitHub",
+      "url": "https://github.com/sampathlonka",
+      "snippet": "Sampath Lonka sampathlonka Follow 18 followers · 0 following Citridot Solutions Hyderabad 22:40 - 5h behind in/sampathlonka"
+    },
+    {
+      "title": "samlonka (sampathlonka) · GitHub",
+      "url": "https://github.com/samlonka/",
+      "snippet": "Working as Math and Algorithm Engineer. samlonka has 19 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    }
+  ]
+}

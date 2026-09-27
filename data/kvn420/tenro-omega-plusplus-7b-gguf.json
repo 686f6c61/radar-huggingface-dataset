@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kvn420/tenro-omega-plusplus-7b-gguf",
+  "slug": "kvn420-tenro-omega-plusplus-7b-gguf",
+  "author": "kvn420",
+  "url": "https://huggingface.co/kvn420/tenro-omega-plusplus-7b-gguf",
+  "created_at": "2026-09-27T13:51:58.000Z",
+  "updated_at": "2026-09-27T14:17:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "causal-lm",
+    "fine-tuned",
+    "text-generation",
+    "conversational",
+    "fr",
+    "en",
+    "base_model:Qwen/Qwen2-7B",
+    "base_model:quantized:Qwen/Qwen2-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 19925771342,
+  "storage_human": "19.9 GB",
+  "base_model": "Qwen/Qwen2-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tenro Omega PlusPlus - a Hugging Face Space by kvn420",
+      "url": "https://huggingface.co/spaces/kvn420/tenro-omega-plusplus-demo",
+      "snippet": "This app lets you ask questions in French either by typing or by speaking into your microphone. Your spoken input is transcribed, processed by a smart assistant, and the reply is returned as text i..."
+    },
+    {
+      "title": "README.md · kvn420/Tenro_V4.1 at main - Hugging Face",
+      "url": "https://huggingface.co/kvn420/Tenro_V4.1/blob/main/README.md",
+      "snippet": "Model card Files Files and versions Community Use this model main Tenro_V4.1 / README.md kvn420 Update README.md 99d57d8 verified 29 days ago"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - GGUFloader/gguf-loader: GGUF Loader with its Agentic Mode, and ...",
+      "url": "https://github.com/GGUFloader/gguf-loader",
+      "snippet": "GGUF Loader with its Agentic Mode, and floating button, ai Models | Open Source & Offline. Mistral, Deepseek, llama, gemma, qwen - GGUFloader/gguf-loader"
+    },
+    {
+      "title": "Where to Download GGUF Models - Best Sources & Direct Links (2025)",
+      "url": "https://ggufloader.github.io/download-gguf-models.html",
+      "snippet": "Download GGUF models from HuggingFace, TheBloke, bartowski. Direct links to Mistral 7B, Llama 3.2, Qwen 2.5, DeepSeek, Phi-3 — Q4_K_M and Q5_K_M quantized for local AI."
+    }
+  ]
+}

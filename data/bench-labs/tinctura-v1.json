@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "bench-labs/tinctura-v1",
+  "slug": "bench-labs-tinctura-v1",
+  "author": "bench-labs",
+  "url": "https://huggingface.co/bench-labs/tinctura-v1",
+  "created_at": "2026-09-23T05:53:54.000Z",
+  "updated_at": "2026-09-24T05:08:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cagliostro",
+    "text-generation",
+    "causal-lm",
+    "language-model",
+    "base-model",
+    "pretrained-from-scratch",
+    "small-language-model",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:nvidia/OpenMathInstruct-2",
+    "dataset:HuggingFaceTB/smoltalk",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 440,
+  "trending_score": 11,
+  "parameters": 96200064,
+  "parameters_human": "96.2M",
+  "storage_bytes": 54681366126,
+  "storage_human": "54.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vêtements d'athlétisme à la mode pour femmes, hommes ... - Bench",
+      "url": "https://bench.shop/fr",
+      "snippet": "Magasinez des articles sportifs, élégants et confortables avec nos t-shirts, leggings, sweat-shirts à capuche, survêtements, shorts, et …Read more"
+    },
+    {
+      "title": "Jackets, Coats, Vests, Parkas, Puffers, Bombers - Bench",
+      "url": "https://bench.shop/fr/collections/womens-jackets-and-coats",
+      "snippet": "Shop the season's best women's outerwear styles from Bench. Free shipping $99+ and a 60 day return period."
+    },
+    {
+      "title": "Bench | Dernière collection en ligne sur Zalando",
+      "url": "https://www.zalando.fr/bench/",
+      "snippet": "Bench a été créée en 1989 à Manchester, Royaume-Uni, dans un environnement marqué par la musique et la culture street. Ses …"
+    },
+    {
+      "title": "Femmes | Hoodies, t-shirts, vestes zippées, robes, manteaux ... - Bench",
+      "url": "https://bench.ca/fr/collections/femmes",
+      "snippet": "Magasinez les essentiels du quotidien de Bench. Livraison gratuite à partir de 99 $ et période de retour de 60 jours."
+    },
+    {
+      "title": "Bench (entreprise) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Bench_(entreprise)",
+      "snippet": "Au fil des ans, Bench est devenue une marque mondiale de lifestyle. Elle vend des vêtements pour hommes et pour femmes 1, y …"
+    }
+  ]
+}

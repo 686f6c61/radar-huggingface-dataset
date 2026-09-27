@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "stealth-model/pixel-canary",
+  "slug": "stealth-model-pixel-canary",
+  "author": "stealth-model",
+  "url": "https://huggingface.co/stealth-model/pixel-canary",
+  "created_at": "2026-09-27T18:02:10.000Z",
+  "updated_at": "2026-09-27T18:02:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pixel-canary",
+    "reasoning",
+    "coding",
+    "svg",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pixel Canary API, Pricing & Playground | Vercel AI Gateway",
+      "url": "https://vercel.com/ai-gateway/models/pixel-canary",
+      "snippet": "Pixel Canary is an anonymous large model with strong coding capabilities and adjustable reasoning effort. It is well suited to web and mobile app development, helping developers build and refine applications across both platforms."
+    },
+    {
+      "title": "Pixel Canary is now available in stealth for free on AI Gateway",
+      "url": "https://vercel.com/changelog/pixel-canary-is-now-available-in-stealth-for-free-on-ai-gateway",
+      "snippet": "Then select stealth/pixel-canary in your agent&#x27;s model configuration. AI Gateway provides a unified API for calling models, with built-in usage and cost tracking, budgets for API keys, and routing rules. Try Pixel Canary in the model playground."
+    },
+    {
+      "title": "Stealth AI Models: Current Models & Identity Reveals",
+      "url": "https://stealthmodels.com/",
+      "snippet": "Pixel Canary A heavyweight coding model with strong Next.js results and a free stealth preview."
+    },
+    {
+      "title": "Pixel Canary drops free stealth coding model — AICrier",
+      "url": "https://aicrier.com/post/savbxnpuffrs6dqwpgu2",
+      "snippet": "Pixel Canary drops free stealth coding model AICrier tracks AI developer news across Product Hunt, GitHub, Hacker News, YouTube, X, arXiv, and more. This page keeps the article you opened front and center while giving you a path into the live feed."
+    },
+    {
+      "title": "Vercel lists free Pixel Canary coding model on AI Gateway",
+      "url": "https://techandbusiness.org/newswire/LJOSZbdLxaC55bzZa5dxpU",
+      "snippet": "The model is also free to use in Cline while it remains in preview. Vercel&#x27;s Next.js coding benchmark shows Pixel Canary passing 28 of 31 tasks, matching GPT-6 Astra on that test."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "tatjr13/damascus-t3b-base-a-shipped",
+  "slug": "tatjr13-damascus-t3b-base-a-shipped",
+  "author": "tatjr13",
+  "url": "https://huggingface.co/tatjr13/damascus-t3b-base-a-shipped",
+  "created_at": "2026-09-27T15:41:07.000Z",
+  "updated_at": "2026-09-27T15:41:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 14669452512,
+  "storage_human": "14.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Regarder Spider-Man : No Way Home en streaming - JustWatch",
+      "url": "https://www.justwatch.com/fr/film/spider-man-no-way-home",
+      "snippet": "Comment et où regarder \"Spider-Man : No Way Home\" en ligne sur Netflix et Prime Video, y compris les options gratuites.Read more"
+    },
+    {
+      "title": "Regarder Spider-Man: No Way Home | Netflix",
+      "url": "https://www.netflix.com/td-fr/title/81465707",
+      "snippet": "Lorsque ses proches sont menacés, Peter Parker demande au Docteur Strange de l'aider à retrouver l'anonymat… et déclenche une …Read more"
+    },
+    {
+      "title": "Regarder Spider-Man: Brand New Day en streaming - JustWatch",
+      "url": "https://www.justwatch.com/fr/film/spider-man-4",
+      "snippet": "Comment et où regarder \"Spider-Man: Brand New Day\" en ligne sur Netflix et Prime Video, y compris les options gratuites.Read more"
+    },
+    {
+      "title": "Regarder Spider-Man™: No Way Home | Disney+",
+      "url": "https://www.disneyplus.com/fr-fr/browse/entity-295fb45a-c8bb-477e-816f-b0706b4d9984?msockid=10d529d296c66cf31adc3e3397286d65",
+      "snippet": "Quand il demande de l'aide à Doctor Strange, les enjeux deviennent encore plus dangereux, le forçant à découvrir ce qu'être Spider …Read more"
+    },
+    {
+      "title": "« Spider-Man » en streaming | TF1+",
+      "url": "https://www.tf1.fr/collections/spider-man-94079975.html",
+      "snippet": "Retrouvez Spider-Man à travers deux générations de cinéma. Des aventures cultes de Peter Parker incarné par Tobey Maguire à la …Read more"
+    }
+  ]
+}

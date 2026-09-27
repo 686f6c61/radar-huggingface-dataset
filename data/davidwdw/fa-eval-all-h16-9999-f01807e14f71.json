@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-eval-all-h16-9999-f01807e14f71",
+  "slug": "davidwdw-fa-eval-all-h16-9999-f01807e14f71",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-eval-all-h16-9999-f01807e14f71",
+  "created_at": "2026-09-27T18:00:27.000Z",
+  "updated_at": "2026-09-27T18:00:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110694876,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - openai/evals: Evals is a framework for evaluating LLMs and LLM ...",
+      "url": "https://github.com/openai/evals",
+      "snippet": "If you follow an existing eval template to build a basic or model-graded eval, you don&#x27;t need to write any evaluation code at all! Just provide your data in JSON format and specify your eval parameters in YAML. build-eval.md walks you through these steps, and you can supplement these instructions with the Jupyter notebooks in the examples ..."
+    },
+    {
+      "title": "OpenAI Evals",
+      "url": "https://evals.openai.com/",
+      "snippet": "To facilitate future research, we open-source a unified Docker image and a public evaluation split, SWE-Lancer Diamond. By mapping model performance to monetary value, we hope SWE-Lancer enables greater research into the economic impact of AI model development."
+    },
+    {
+      "title": "VirusTotal - Home",
+      "url": "https://www.virustotal.com/",
+      "snippet": "VirusTotal Assistant Bot offers a platform for users to interact with VirusTotal&#x27;s threat intelligence suite and explore artifact-related information effectively."
+    },
+    {
+      "title": "Sign-In",
+      "url": "https://david.flhsmv.gov/",
+      "snippet": "[ Caps Lock is on ] Forgot your password?"
+    },
+    {
+      "title": "Cfx Forum",
+      "url": "https://forum.cfx.re/u",
+      "snippet": "The home of the Rockstar Games&#x27; modification frameworks for GTAV and Red Dead Redemption 2."
+    }
+  ]
+}

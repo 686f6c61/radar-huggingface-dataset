@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "VioletXF/manga-character-parts-coreml",
+  "slug": "violetxf-manga-character-parts-coreml",
+  "author": "VioletXF",
+  "url": "https://huggingface.co/VioletXF/manga-character-parts-coreml",
+  "created_at": "2026-09-27T12:31:56.000Z",
+  "updated_at": "2026-09-27T12:32:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "onnx",
+    "manga",
+    "image-segmentation",
+    "experimental",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 308653416,
+  "storage_human": "309 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mick Jagger - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mick_Jagger",
+      "snippet": "Sir Michael Philip Jagger (born 26 July 1943) is an English musician, songwriter, and film producer known as the lead singer and …"
+    },
+    {
+      "title": "Mick Jagger — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mick_Jagger",
+      "snippet": "Outre le chant, il lui arrive de jouer au sein du groupe de l' harmonica et de la guitare. Mick Jagger est l'un des chanteurs les plus …"
+    },
+    {
+      "title": "Mick Jagger: Latest News, Pictures & Videos - HELLO!",
+      "url": "https://www.hellomagazine.com/tags/mick-jagger/",
+      "snippet": "Jun 18, 2026 · Mick Jagger - Discover all of the latest news and updates, including exclusive interviews from the UK, US and rest of …"
+    },
+    {
+      "title": "Mick Jagger - Encyclopedia Britannica",
+      "url": "https://www.britannica.com/biography/Mick-Jagger",
+      "snippet": "Aug 28, 2026 · Mick Jagger (born July 26, 1943, Dartford, Kent, England) is a British musician best known as the flamboyant lead …"
+    },
+    {
+      "title": "Mick Jagger - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/Mick_Jagger",
+      "snippet": "Mick Jagger ... Sir Michael Philip \"Mick\" Jagger (born 26 July 1943) is an English musician, producer and actor. He is most famous …"
+    }
+  ]
+}

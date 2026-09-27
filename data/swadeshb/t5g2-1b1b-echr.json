@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "swadeshb/t5g2-1b1b-echr",
+  "slug": "swadeshb-t5g2-1b1b-echr",
+  "author": "swadeshb",
+  "url": "https://huggingface.co/swadeshb/t5g2-1b1b-echr",
+  "created_at": "2026-09-27T13:26:12.000Z",
+  "updated_at": "2026-09-27T13:26:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "math",
+    "hierarchical-reasoning",
+    "dataset:sxiong/MLR_structured_trajectory",
+    "base_model:google/t5gemma-2-1b-1b",
+    "base_model:adapter:google/t5gemma-2-1b-1b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57306436,
+  "storage_human": "57 MB",
+  "base_model": "google/t5gemma-2-1b-1b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "swadeshb (Swadesh B) - Hugging Face",
+      "url": "https://huggingface.co/swadeshb/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 11 minutes ago ... updated a model about 11 hours ago"
+    },
+    {
+      "title": "swadeshb (Swadesh B) - Hugging Face",
+      "url": "https://huggingface.co/swadeshb",
+      "snippet": "User profile of Swadesh B on Hugging Face Recent Activity updated a model less than a minute ago swadeshb/EzhilLM-.1-27M updated a model 2 minutes ago swadeshb/EzhilLM-.1-27M updated a model 3 minutes ago swadeshb/EzhilLM-.1-27M View all activity"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 508 AI models across 486 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Registry — Compare AI Models, Benchmarks & Pricing | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/",
+      "snippet": "A browsable registry of large language models — frontier and open-weight — with verified specs, benchmarks, pricing and APIs. Filter by maker, family and capability."
+    }
+  ]
+}

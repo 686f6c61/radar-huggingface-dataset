@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "roostrooster/blockingstreetfamilyguy",
+  "slug": "roostrooster-blockingstreetfamilyguy",
+  "author": "roostrooster",
+  "url": "https://huggingface.co/roostrooster/blockingstreetfamilyguy",
+  "created_at": "2026-09-27T13:41:26.000Z",
+  "updated_at": "2026-09-27T13:41:53.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53564980,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "roostrooster (The Rooster) - Hugging Face",
+      "url": "https://huggingface.co/roostrooster/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 15 days ago ... published a model 15 days ago"
+    },
+    {
+      "title": "Blocking The Street - Family Guy Meme Recreation - YouTube",
+      "url": "https://www.youtube.com/watch?v=1FCBUxOV0Ak",
+      "snippet": "A group of orange spheres are blocking the street, making it impossible for this pizza delivery person to get through.It started as a simple delivery route b..."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore how every major AI model evolved from its ancestors. Interactive visualization of LLM genealogy."
+    },
+    {
+      "title": "What Is The &#x27;We&#x27;re All Just Blocking The Street&#x27; Meme? The ... - Yahoo",
+      "url": "https://www.yahoo.com/entertainment/tv/articles/were-just-blocking-street-meme-210000476.html",
+      "snippet": "A Family Guy scene about the frustrations of a blocked street is going viral as a meme and lip-dub trend. Here&#x27;s what it&#x27;s all about."
+    },
+    {
+      "title": "Family Guy AI Models (211) | Civitai",
+      "url": "https://civitai.com/tag/family%20guy",
+      "snippet": "Browse 211 AI models tagged \"Family Guy\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    }
+  ]
+}

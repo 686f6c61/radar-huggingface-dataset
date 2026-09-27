@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/TEMPURA-Qwen2.5-VL-3B-GGUF",
+  "slug": "mradermacher-tempura-qwen2-5-vl-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TEMPURA-Qwen2.5-VL-3B-GGUF",
+  "created_at": "2026-09-27T18:12:33.000Z",
+  "updated_at": "2026-09-27T18:41:22.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "video",
+    "dense-video-captioning",
+    "temporal-grounding",
+    "highlight-detection",
+    "video-reasoning",
+    "en",
+    "dataset:andaba/TEMPURA-VER",
+    "base_model:andaba/TEMPURA-Qwen2.5-VL-3B",
+    "base_model:quantized:andaba/TEMPURA-Qwen2.5-VL-3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 32781704128,
+  "storage_human": "32.8 GB",
+  "base_model": "andaba/TEMPURA-Qwen2.5-VL-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TEMPURA-Qwen2.5-VL-3B-s2-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/TEMPURA-Qwen2.5-VL-3B-s2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Qwen2.5-VL-3B-HMDB-FT-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-VL-3B-HMDB-FT-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/TEMPURA-Qwen2.5-VL-3B-s2-GGUF - Socket",
+      "url": "https://socket.dev/huggingface/package/mradermacher/tempura-qwen2.5-vl-3b-s2-gguf",
+      "snippet": "We found that mradermacher/tempura-qwen2.5-vl-3b-s2-gguf demonstrated a healthy version release cadence and project activity because the last version was released less than a year ago.It has 1 open source maintainer collaborating on the project."
+    },
+    {
+      "title": "mradermacher/TEMPURA-Qwen2.5-VL-3B-s1-GGUF - Socket",
+      "url": "https://socket.dev/huggingface/package/mradermacher/tempura-qwen2.5-vl-3b-s1-gguf",
+      "snippet": "We found that mradermacher/tempura-qwen2.5-vl-3b-s1-gguf demonstrated a healthy version release cadence and project activity because the last version was released less than a year ago."
+    },
+    {
+      "title": "Insights DB",
+      "url": "https://insights-db.paloaltonetworks.com/models/mradermacher/TEMPURA-Qwen2.5-VL-3B-s2-GGUF/598b9894159c6e12590a1abe2b3c68c46ddc9cc0/overview",
+      "snippet": "Discover potential threats in the mradermacher / TEMPURA-Qwen2.5-VL-3B-s2-GGUF model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    }
+  ]
+}

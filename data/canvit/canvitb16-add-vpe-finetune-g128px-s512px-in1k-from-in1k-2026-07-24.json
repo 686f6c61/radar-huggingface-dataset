@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "canvit/canvitb16-add-vpe-finetune-g128px-s512px-in1k-from-in1k-2026-07-24",
+  "slug": "canvit-canvitb16-add-vpe-finetune-g128px-s512px-in1k-from-in1k-2026-07-24",
+  "author": "canvit",
+  "url": "https://huggingface.co/canvit/canvitb16-add-vpe-finetune-g128px-s512px-in1k-from-in1k-2026-07-24",
+  "created_at": "2026-09-27T01:38:35.000Z",
+  "updated_at": "2026-09-27T01:39:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "canvit-pytorch",
+  "languages": [],
+  "tags": [
+    "canvit-pytorch",
+    "safetensors",
+    "canvit",
+    "active-vision",
+    "vision-transformer",
+    "image-classification",
+    "dataset:imagenet-1k",
+    "arxiv:2603.22570",
+    "base_model:canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in1k-dv3b16-2026-06-22",
+    "base_model:finetune:canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in1k-dv3b16-2026-06-22",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 95928936,
+  "parameters_human": "95.9M",
+  "storage_bytes": 383740232,
+  "storage_human": "384 MB",
+  "base_model": "canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in1k-dv3b16-2026-06-22",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ImageNet-1k",
+      "metric": "Top-1 accuracy (C2F, T=21, mean over 11 policy seeds, at the last glimpse)",
+      "value": 84.19
+    }
+  ],
+  "sources": []
+}

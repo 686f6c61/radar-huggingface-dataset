@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "reverentelusarca/elusarcas-qwen-2.1-detail-enhancer-lora",
+  "slug": "reverentelusarca-elusarcas-qwen-2-1-detail-enhancer-lora",
+  "author": "reverentelusarca",
+  "url": "https://huggingface.co/reverentelusarca/elusarcas-qwen-2.1-detail-enhancer-lora",
+  "created_at": "2026-09-22T14:23:47.000Z",
+  "updated_at": "2026-09-22T14:27:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 0,
+  "trending_score": 12,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79744352,
+  "storage_human": "80 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BYDFi Global Partner Program | Earn Up to 70% Commission",
+      "url": "https://www.bydfi.com/en/partnership/affiliate",
+      "snippet": "Join BYDFi's Global Partner Program and earn up to 70% commission. Partner with a top crypto exchange, grow your influence, and …"
+    },
+    {
+      "title": "BYDFi Futures Earn Launching Soon",
+      "url": "https://www.bydfi.com/en/support/ANNOUNCEMENT/articles/fhdtvbbba6rt",
+      "snippet": "Sep 17, 2026 · Dear BYDFi Users,Following BYDFi’s latest system upgrade, we are excited to introduce Futures Earn, a new feature …"
+    },
+    {
+      "title": "Using Volume in CFD Trading (Tick Volume) - bydfi.com",
+      "url": "https://www.bydfi.com/en/wiki/cfd/cfd-education/volume-analysis",
+      "snippet": "Explore the key differences between real volume and tick volume in CFD trading. Understand volume analysis to enhance your …"
+    },
+    {
+      "title": "Digi Power X pivots to AI, posts $3.3M adjusted EBITDA",
+      "url": "https://www.bydfi.com/en/crypto-news/digi-power-x-pivots-to-ai-posts-3-3m-adjusted-ebitda-78877",
+      "snippet": "Aug 15, 2026 · Digi Power X Inc. (DGXX) reported second-quarter 2026 revenue of $6.6 million, with adjusted EBITDA of $3.3 …"
+    },
+    {
+      "title": "CFD Lot Size for FX, Indices and Commodities - bydfi.com",
+      "url": "https://www.bydfi.com/en/wiki/cfd-education/cfd-lot-size",
+      "snippet": "Learn how CFD Lot Size affects contract sizes for FX, indices and commodities, and whether standard or micro lots suit your CFD …"
+    }
+  ]
+}

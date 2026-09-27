@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Canfield/Qwen3.5-4B-Q4_K_M-GGUF",
+  "slug": "canfield-qwen3-5-4b-q4_k_m-gguf",
+  "author": "Canfield",
+  "url": "https://huggingface.co/Canfield/Qwen3.5-4B-Q4_K_M-GGUF",
+  "created_at": "2026-09-27T01:38:54.000Z",
+  "updated_at": "2026-09-27T05:51:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3.5",
+    "ollama",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 2707513696,
+  "storage_human": "2.7 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

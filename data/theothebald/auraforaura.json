@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "theothebald/auraforaura",
+  "slug": "theothebald-auraforaura",
+  "author": "theothebald",
+  "url": "https://huggingface.co/theothebald/auraforaura",
+  "created_at": "2026-09-27T15:51:10.000Z",
+  "updated_at": "2026-09-27T15:53:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "aura",
+    "is",
+    "text-ranking",
+    "dataset:armand0e/Fable-5-Chat",
+    "dataset:ASTRAI-labs/Pluto-Nano-1.0-Pretrain-v2",
+    "base_model:AuraIndustries/Aura-4B",
+    "base_model:finetune:AuraIndustries/Aura-4B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Edithai/aura-v1, AuraIndustries/Aura-4B, ramgpt/MN-Aura-12B-v1-GGUF",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image Model Leaderboard - Compare AI Image Generators (Sep 2026)",
+      "url": "https://theozard.com/models/image",
+      "snippet": "Compare AI image models side-by-side. Sort by ELO, price & release date. Live rankings for FLUX, Midjourney, DALL-E, Stable Diffusion & more."
+    },
+    {
+      "title": "AURA — AI Avatar Studio",
+      "url": "https://auraavatar.app/",
+      "snippet": "Turn any selfie into a stunning AI avatar. 8 art styles, mood customization, and realistic photo-to-avatar generation."
+    },
+    {
+      "title": "TheobaldTheBird - Modrinth",
+      "url": "https://modrinth.com/user/TheobaldTheBird",
+      "snippet": "Best Minecraft PVP Coach - Download TheobaldTheBird&#x27;s projects on Modrinth"
+    },
+    {
+      "title": "A‌I chat|1v1 Chat with Character theothebald for Free Personalized ...",
+      "url": "https://polybuzz.ai/character/chat/theothebald-4bZeW",
+      "snippet": "Dive into lifelike 1-on-1 AI chat with theothebald|Experience human-like conversations,emotional depth,and personalized scenarios powered by DeepAI.Ask anything to your AI character."
+    },
+    {
+      "title": "Video Model Leaderboard - Compare AI Video Generators (Sep 2026)",
+      "url": "https://theozard.com/models/video",
+      "snippet": "Compare AI video models side-by-side. Sort by ELO, price & release date. Live rankings for Sora, Veo, Runway, Kling & more."
+    }
+  ]
+}

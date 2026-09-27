@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Parasect",
+  "slug": "ryanham1lton-parasect",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Parasect",
+  "created_at": "2026-09-27T13:41:19.000Z",
+  "updated_at": "2026-09-27T13:42:52.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116457854,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton/Patrat · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Patrat",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ryanham1lton/GolemMH · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/GolemMH",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Parasail — The Inference Cloud for AI-native startups",
+      "url": "https://www.parasail.io/",
+      "snippet": "Parasail is the inference cloud for AI-native startups. Run any open model with production reliability, flexible scaling, and per-token pricing."
+    },
+    {
+      "title": "GitHub - BTheDragonMaster/parasect: Predictive Algorithm for Resolving ...",
+      "url": "https://github.com/BTheDragonMaster/parasect",
+      "snippet": "Welcome to PARASECT: Predictive Algorithm for Resolving A-domain Specificity featurising Enzyme and Compound in Tandem. Detect NRPS AMP-binding domains from an amino acid sequence and predict their substrate specificity profile."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated September 2026."
+    }
+  ]
+}

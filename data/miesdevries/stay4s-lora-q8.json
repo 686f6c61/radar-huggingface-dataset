@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "miesdevries/stay4s-lora-q8",
+  "slug": "miesdevries-stay4s-lora-q8",
+  "author": "miesdevries",
+  "url": "https://huggingface.co/miesdevries/stay4s-lora-q8",
+  "created_at": "2026-09-27T18:01:35.000Z",
+  "updated_at": "2026-09-27T19:24:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "gguf",
+    "dutch",
+    "nederlands",
+    "stay4s",
+    "qwen3",
+    "lora",
+    "raspberry-pi",
+    "ollama",
+    "nl",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 4280403232,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hentai 4k - Vidéos Hentai gratuites en streaming",
+      "url": "https://hentai4k.com/fr/",
+      "snippet": "Site de vidéos porno hentai gratuit de haute qualité. Explorez Hentai 4k, la plateforme qui redéfinit l'expérience vidéo hentai. Plongez …Read more"
+    },
+    {
+      "title": "Hentai Series & Characters | Browse by Series | Hentai.tv",
+      "url": "https://hentai.tv/series",
+      "snippet": "Browse every hentai series on Hentai.tv. Find your favorite titles and characters, then watch every HD episode in order — updated …"
+    },
+    {
+      "title": "Histoire d'Hentai - Accueil",
+      "url": "https://hhentai.fr/",
+      "snippet": "May 1, 2025 · Veuillez acheter l’originale des séries lorsqu’elle est disponible dans votre pays ou région. Merci de votre soutient. …"
+    },
+    {
+      "title": "Browse Hentai Videos | New & Popular HD Hentai | Hentai.tv",
+      "url": "https://hentai.tv/browse",
+      "snippet": "Browse all hentai videos on Hentai.tv. Watch new and popular HD hentai, anime porn clips, series, genres, tags, and uncensored …"
+    },
+    {
+      "title": "hentai videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/hentai",
+      "snippet": "Steve stole Alex's panties in ! Hentai Cartoon Parody See all premium hentai content on XVIDEOS 1080p"
+    }
+  ]
+}

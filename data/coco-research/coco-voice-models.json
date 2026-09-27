@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "coco-research/coco-voice-models",
+  "slug": "coco-research-coco-voice-models",
+  "author": "coco-research",
+  "url": "https://huggingface.co/coco-research/coco-voice-models",
+  "created_at": "2026-09-27T18:33:51.000Z",
+  "updated_at": "2026-09-27T19:11:45.000Z",
+  "license": "multiple-per-folder",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "automatic-speech-recognition",
+    "speech-to-text",
+    "whisper",
+    "coco-voice",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543321440,
+  "parameters_human": "1.54B",
+  "storage_bytes": 59191683971,
+  "storage_human": "59.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coco.fr , le chat gratuit",
+      "url": "https://www.coco.fr/",
+      "snippet": "le chat gratuit en live le plus populaire de France : tchater et voir des webcam . le tchat sans inscription pour discuter avec des …"
+    },
+    {
+      "title": "Tchatche & Tchat Gratuit Sans Inscription | Cocoland",
+      "url": "https://www.cocoland.cc/",
+      "snippet": "Notre plateforme est un service entièrement nouveau, indépendant et sans aucun lien juridique, technique ou organisationnel avec …"
+    },
+    {
+      "title": "Coco (2017 film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Coco_(2017_film)",
+      "snippet": "The film was chosen by the National Board of Review as the Best Animated Film of 2017. A sequel, titled Coco 2, is scheduled to be …"
+    },
+    {
+      "title": "Coco (film, 2017) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Coco_(film,_2017)",
+      "snippet": "Coco est un film d'animation américain réalisé par Lee Unkrich et coréalisé par Adrian Molina, sorti à Noël 2017. Sur un scénario …"
+    },
+    {
+      "title": "Regarder Coco - Disney+",
+      "url": "https://www.disneyplus.com/fr-fr/browse/entity-ce1ccdca-f468-4960-b67c-026b01ba42ab?msockid=2b6e551a756a6d8c063442fb748b6cce",
+      "snippet": "Coco DÉTAILS Dans ce conte d’aventure familiale Disney•Pixar, Miguel, qui espère devenir musicien, se lance dans un voyage …"
+    }
+  ]
+}

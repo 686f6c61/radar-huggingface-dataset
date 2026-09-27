@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "hassan1256/finbert_stock_model",
+  "slug": "hassan1256-finbert_stock_model",
+  "author": "hassan1256",
+  "url": "https://huggingface.co/hassan1256/finbert_stock_model",
+  "created_at": "2026-09-27T12:05:38.000Z",
+  "updated_at": "2026-09-27T12:06:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437958648,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

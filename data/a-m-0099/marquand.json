@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "a-m-0099/marquand",
+  "slug": "a-m-0099-marquand",
+  "author": "a-m-0099",
+  "url": "https://huggingface.co/a-m-0099/marquand",
+  "created_at": "2026-09-27T18:50:17.000Z",
+  "updated_at": "2026-09-27T18:53:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 3578492896,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accent sur le « a » : à, â ou a ? Règles et raccourcis clavier",
+      "url": "https://www.virageprepa.com/articles/accent-sur-le-%C2%AB-a-%C2%BB-%C3%A0-%C3%A2-ou-a-r%C3%A8gles-et-raccourcis-clavier",
+      "snippet": "Jun 24, 2026 · À, â ou a ? Distinguer a (verbe avoir) et à (préposition), comprendre â et le couple la / là, et taper À majuscule au …Read more"
+    },
+    {
+      "title": "À — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%80",
+      "snippet": "À, ou A accent grave, est un graphème utilisé dans les alphabets du catalan, de l' occitan, du français, du gaélique écossais, du …Read more"
+    },
+    {
+      "title": "à — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/%C3%A0",
+      "snippet": "à \\a\\ invariable Introduit un complément circonstanciel de lieu. avec déplacement vers l’endroit cité Je vais à la plage. Arriver à bord. …Read more"
+    },
+    {
+      "title": "« A » ou « à » ? - orthographe | La langue française",
+      "url": "https://www.lalanguefrancaise.com/orthographe/a-ou-a-accent",
+      "snippet": "Jun 15, 2022 · Retour aux règles basiques de la grammaire française pour certains, difficulté insurmontable pour d'autres, il n'est pas …Read more"
+    },
+    {
+      "title": "A - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/A",
+      "snippet": "A (minuscule: a) is the first letter and the first vowel letter of the Latin alphabet, [1][2] used in the modern English alphabet, and …Read more"
+    }
+  ]
+}

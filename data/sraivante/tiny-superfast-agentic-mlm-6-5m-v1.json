@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "sraivante/tiny-superfast-agentic-MLM-6.5m-v1",
+  "slug": "sraivante-tiny-superfast-agentic-mlm-6-5m-v1",
+  "author": "sraivante",
+  "url": "https://huggingface.co/sraivante/tiny-superfast-agentic-MLM-6.5m-v1",
+  "created_at": "2026-09-27T15:52:11.000Z",
+  "updated_at": "2026-09-27T15:53:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "function-calling",
+    "tool-use",
+    "agent",
+    "intent-classification",
+    "slot-filling",
+    "seq2seq",
+    "hinglish",
+    "code-mixed",
+    "voice-assistant",
+    "raspberry-pi",
+    "edge",
+    "on-device",
+    "cpu",
+    "numpy",
+    "text-generation",
+    "en",
+    "hi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49717164,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Most Recent Porn Pics & Newest Sex Galleries - PornPics.com",
+      "url": "https://www.pornpics.com/recent/",
+      "snippet": "Browse the most recent porn pics uploaded to PornPics.com right now for FREE! ️There are over 1,000,000 XXX pics for you to go …Read more"
+    },
+    {
+      "title": "Free Porn Pics & Sex Photos - Porno, XXX, Images, Categories",
+      "url": "https://www.pornpics.com/",
+      "snippet": "Browse over 1,000,000 of the best porn galleries for FREE! Hot sex pictures sorted by categories, hand picked and updated daily.Read more"
+    },
+    {
+      "title": "Free Porn Pics & Galleries | BabeSource",
+      "url": "https://babesource.com/",
+      "snippet": "Only New Porn - Updated 7 Days a Week! Pics, Videos, Discounts and more!Read more"
+    },
+    {
+      "title": "Porn Pics, Sex Photos & Nude Pictures",
+      "url": "https://www.auntmia.com/",
+      "snippet": "Browse more than 10.000.000 free porn pics in daily updated sex galleries in Hi-Res and 4K Quality full of nude women and girls! ️Read more"
+    },
+    {
+      "title": "Tastys Pics - Free Porn Pics Categories",
+      "url": "https://tastyspics.com/",
+      "snippet": "Tastyspics.com has a zero-tolerance policy against illegal pornography. This site is rated with RTA label. Parents, you can easily …Read more"
+    }
+  ]
+}

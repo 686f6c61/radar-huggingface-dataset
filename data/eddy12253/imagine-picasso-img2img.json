@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Eddy12253/imagine-picasso-img2img",
+  "slug": "eddy12253-imagine-picasso-img2img",
+  "author": "Eddy12253",
+  "url": "https://huggingface.co/Eddy12253/imagine-picasso-img2img",
+  "created_at": "2026-09-27T15:45:59.000Z",
+  "updated_at": "2026-09-27T15:47:19.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "image-to-image",
+    "custom-handler",
+    "base_model:aipicasso/picasso-diffusion-1-1",
+    "base_model:finetune:aipicasso/picasso-diffusion-1-1",
+    "license:creativeml-openrail-m",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "aipicasso/picasso-diffusion-1-1",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Image and Video Generator | Picasso IA",
+      "url": "https://picassoia.com/generator/en",
+      "snippet": "Free AI Image & AI Video Generator Generate images, videos, audio, voices, music and 3D models from a single prompt. Picasso IA bundles Sora 2 Pro, Veo 3.1, Nano Banana Pro, GPT Image 2.0, FLUX.2, Claude Opus 4.7 and 100+ more frontier models in one dashboard, with a free plan and unlimited generations."
+    },
+    {
+      "title": "img2img: Free Online Image-to-Image AI Generator",
+      "url": "https://img2img.run/",
+      "snippet": "Img2Img: Create a New Image from Any Image Use this AI image-to-image generator to turn a photo, artwork, product shot, or rough concept into a new image with a prompt. The source gives the request its subject and composition; your prompt can redirect the style, setting, materials, color, or lighting. Upload your source, describe the change, and generate a new result."
+    },
+    {
+      "title": "AI Models for Image, Video, and Text Generation | Picasso IA",
+      "url": "https://picassoia.com/en/collection",
+      "snippet": "What is the Picasso IA collection? The full catalog of AI models on the platform, organized in 12 categories that run from image and video to 3D, voice, music, upscaling and transcription."
+    },
+    {
+      "title": "Image to Image AI Free & Unlimited | AI Image from Image | Creen",
+      "url": "https://www.creen.ai/image-to-image",
+      "snippet": "Image to Image: AI Image Generator from Image, Free & Unlimited Upload a photo, describe what you want to change, and watch AI rebuild it in seconds. Image to Image AI is the fastest way to remix, restyle, and reinvent any picture — free and unlimited on 11 models, no sign up, no login, 4K output, all in one workspace."
+    },
+    {
+      "title": "Image-to-Image SD1 - Free Online AI Image Generator - Dezgo",
+      "url": "https://dezgo.com/app/image2image",
+      "snippet": "Max: 512x512px (auto-resized) Drag and drop files here or click Model The AI used to generate the image."
+    }
+  ]
+}

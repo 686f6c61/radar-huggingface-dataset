@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Tree-AI-lab/llama-3.2-1b-baoule-v3-sft-points",
+  "slug": "tree-ai-lab-llama-3-2-1b-baoule-v3-sft-points",
+  "author": "Tree-AI-lab",
+  "url": "https://huggingface.co/Tree-AI-lab/llama-3.2-1b-baoule-v3-sft-points",
+  "created_at": "2026-09-27T16:12:30.000Z",
+  "updated_at": "2026-09-27T16:27:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "unsloth",
+    "sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1640681281,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tree - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tree",
+      "snippet": "Trees are not a monophyletic taxonomic group but consist of a wide variety of plant species that have independently evolved a trunk …"
+    },
+    {
+      "title": "Restaurant The Tree à Paris - Menu, avis, prix et réservation | TheFork",
+      "url": "https://www.thefork.fr/restaurant/the-tree-r834377",
+      "snippet": "Le Tree à Paris est un restaurant chic au décor incroyable, avec un arbre en fleur au centre de la salle, créant une ambiance …"
+    },
+    {
+      "title": "Restaurant de cuisine française à Paris | The Tree",
+      "url": "https://thetree-paris.com/fr",
+      "snippet": "Plongez dans l'élégance de The Tree avec notre carte du midi. Sublimée par notre Chef, elle marie prestige et saveurs audacieuses. …"
+    },
+    {
+      "title": "Restaurant The Tree - Paris, Ile-de-France | OpenTable",
+      "url": "https://www.opentable.fr/r/the-tree-paris",
+      "snippet": "3 days ago · Réservez maintenant chez The Tree à Paris, Ile-de-France. Découvrez le menu, regardez les photos et lisez les 28 avis …"
+    },
+    {
+      "title": "Carte et Menus 2026 - The Tree à Paris | TheFork",
+      "url": "https://www.thefork.fr/restaurant/the-tree-r834377/menu",
+      "snippet": "Feb 5, 2026 · Découvrez la carte et les menus du restaurant The Tree à Paris sur TheFork : entrées, plats, desserts, boissons et …"
+    }
+  ]
+}

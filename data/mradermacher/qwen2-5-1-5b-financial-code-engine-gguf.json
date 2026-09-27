@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-1.5B-Financial-Code-Engine-GGUF",
+  "slug": "mradermacher-qwen2-5-1-5b-financial-code-engine-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-1.5B-Financial-Code-Engine-GGUF",
+  "created_at": "2026-09-27T18:03:38.000Z",
+  "updated_at": "2026-09-27T18:17:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-factory",
+    "qwen2.5",
+    "qlora",
+    "sft",
+    "dpo",
+    "rlhf",
+    "financial-ai",
+    "code-generation",
+    "en",
+    "base_model:ahmadnawaz21/Qwen2.5-1.5B-Financial-Code-Engine",
+    "base_model:quantized:ahmadnawaz21/Qwen2.5-1.5B-Financial-Code-Engine",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206904832,
+  "storage_human": "14.2 GB",
+  "base_model": "ahmadnawaz21/Qwen2.5-1.5B-Financial-Code-Engine",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen2.5-1.5B-Instruct-jailbreak-EN-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-1.5B-Instruct-jailbreak-EN-GGUF",
+      "snippet": "mradermacher / Qwen2.5-1.5B-Instruct-jailbreak-EN-GGUF like 0 Transformers GGUF English conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Qwen2.5-CodeMath-1.5B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-CodeMath-1.5B-GGUF",
+      "snippet": "Instructions to use mradermacher/Qwen2.5-CodeMath-1.5B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - ahmadnawaz01/Qwen2.5-1.5B-Financial-Code-Engine-Finetuned-by ...",
+      "url": "https://github.com/ahmadnawaz01/Qwen2.5-1.5B-Financial-Code-Engine-Finetuned-by-LLaMa-Factory/tree/main/",
+      "snippet": "An end-to-end post-training pipeline developed using LLaMA-Factory to fine-tune and align Qwen/Qwen2.5-1.5B-Instruct for financial reasoning, JSON formatting, and bug-free Python code execution logic."
+    },
+    {
+      "title": "Qwen2.5: A Party of Foundation Models!",
+      "url": "https://qwen.ai/blog?id=qwen2.5",
+      "snippet": "The general performance of Qwen2.5-Math-72B-Instruct surpasses both Qwen2-Math-72B-Instruct and GPT4-o, and even very small expert model like Qwen2.5-Math-1.5B-Instruct can achieve highly competitive performance against large language models."
+    },
+    {
+      "title": "Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2412.15115v1",
+      "snippet": "For smaller models, we observe that the Qwen2.5-0.5B model achieves performance that is on par with or even surpasses the Qwen2-1.5B model. This indicates that the Qwen2.5 series has optimized parameter usage, enabling mid-sized models to achieve similar performance levels to larger models from the previous generation."
+    }
+  ]
+}

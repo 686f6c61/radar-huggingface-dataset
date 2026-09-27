@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "2001Samir/mulberry-leaf-models",
+  "slug": "2001samir-mulberry-leaf-models",
+  "author": "2001Samir",
+  "url": "https://huggingface.co/2001Samir/mulberry-leaf-models",
+  "created_at": "2026-09-27T15:40:20.000Z",
+  "updated_at": "2026-09-27T15:40:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bstation - Bilibili",
+      "url": "https://www.bilibili.tv/id",
+      "snippet": "Bstation, Komunitas anime, komik, dan game (ACG) terkemuka di Asia Tenggara sebagai tempat membuat, menonton, dan berbagi …"
+    },
+    {
+      "title": "FULL MOVIE - Bstation - Bilibili",
+      "url": "https://www.bilibili.tv/id/video/2046946644",
+      "snippet": "Apr 23, 2022 · FULL MOVIE, Komunitas anime, komik, dan game (ACG) terkemuka di Asia Tenggara sebagai tempat membuat, …"
+    },
+    {
+      "title": "BiliBili",
+      "url": "https://bstation.bilibili.tv/",
+      "snippet": "BiliBili, Southeast Asia's leading anime, comics, and games (ACG) community where people can create, watch and share engaging …"
+    },
+    {
+      "title": "Anime - Bstation",
+      "url": "https://bstation.bilibili.tv/id/anime",
+      "snippet": "Anime - Bstation, Komunitas anime, komik, dan game (ACG) terkemuka di Asia Tenggara sebagai tempat membuat, menonton, dan …"
+    },
+    {
+      "title": "Bilibili Video Download – Free MP4 & 1080p Quality Options",
+      "url": "https://bravedown.com/bilibili-downloader",
+      "snippet": "Sep 15, 2026 · Use bilibili video download to save MP4 files online. Check available 1080p quality, understand watermark limits, and …"
+    }
+  ]
+}

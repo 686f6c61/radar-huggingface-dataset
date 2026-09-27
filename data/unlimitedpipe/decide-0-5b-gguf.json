@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "unlimitedpipe/decide-0.5b-GGUF",
+  "slug": "unlimitedpipe-decide-0-5b-gguf",
+  "author": "unlimitedpipe",
+  "url": "https://huggingface.co/unlimitedpipe/decide-0.5b-GGUF",
+  "created_at": "2026-09-27T17:14:51.000Z",
+  "updated_at": "2026-09-27T17:14:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "th"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "rag",
+    "citations",
+    "decision-model",
+    "unlimitedpipe",
+    "text-generation",
+    "en",
+    "th",
+    "dataset:unlimitedpipe/decide-sft-public",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 531067808,
+  "storage_human": "531 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/fr/",
+      "snippet": "TikTok - les tendances commencent ici. Sur ton appareil ou sur le Web, les spectateurs peuvent regarder et découvrir des millions …"
+    },
+    {
+      "title": "Se connecter | TikTok",
+      "url": "https://livecenter.tiktok.com/?lang=fr",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "Log in | TikTok",
+      "url": "https://www.tiktok.com/login",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "TikTok",
+      "url": "https://www.tiktok.com/en%22",
+      "snippet": "Terms of Service Privacy Policy Intellectual Property Policy TikTok Law Enforcement Guidelines Children's Privacy Policy © 2026 …"
+    }
+  ]
+}

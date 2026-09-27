@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tysgydke/gdn2-audit",
+  "slug": "tysgydke-gdn2-audit",
+  "author": "tysgydke",
+  "url": "https://huggingface.co/tysgydke/gdn2-audit",
+  "created_at": "2026-09-27T13:49:08.000Z",
+  "updated_at": "2026-09-27T14:00:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "research",
+    "checkpoint",
+    "vision-language",
+    "qwen",
+    "gdn2",
+    "recurrent-depth",
+    "spatial-reasoning",
+    "audit",
+    "archive",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39790828352,
+  "storage_human": "39.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tysgydke/Qwen3.5-0.8B-GDN2-LoopSpatial · Hugging Face",
+      "url": "https://huggingface.co/tysgydke/Qwen3.5-0.8B-GDN2-LoopSpatial",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings vLLM How to use tysgydke/Qwen3.5-.8B-GDN2-LoopSpatial with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "PDF GatedDeltaNet-2/paper/GDN2_paper.pdf at main · NVlabs ... - GitHub",
+      "url": "https://github.com/NVlabs/GatedDeltaNet-2/blob/main/paper/GDN2_paper.pdf",
+      "snippet": "Official PyTorch Implementation of Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention - NVlabs/GatedDeltaNet-2"
+    },
+    {
+      "title": "ModelAudit - Static Security Scanner for ML Models | Promptfoo",
+      "url": "https://www.promptfoo.dev/docs/model-audit/",
+      "snippet": "Model Scanning Overview ModelAudit is a lightweight static security scanner for machine learning models accessible through Promptfoo. It scans AI/ML models for potential security risks before deployment. Promptfoo provides a wrapper command promptfoo scan-model that integrates ModelAudit scanning capabilities. Promptfoo also includes a UI that allows you to set up a scan: And displays the ..."
+    },
+    {
+      "title": "GitHub - promptfoo/modelaudit: Security scanner for AI/ML model files ...",
+      "url": "https://github.com/promptfoo/modelaudit",
+      "snippet": "Security scanner for AI/ML model files. Detects malicious code, backdoors, and vulnerabilities before deployment - promptfoo/modelaudit"
+    },
+    {
+      "title": "[2604.19021] FG$^2$-GDN: Enhancing Long-Context Gated Delta Networks ...",
+      "url": "https://arxiv.org/abs/2604.19021",
+      "snippet": "Linear attention mechanisms have emerged as promising alternatives to softmax attention, offering linear-time complexity during inference. Recent advances such as Gated DeltaNet (GDN) and Kimi Delta Attention (KDA) have demonstrated that the delta rule, an online gradient descent update, enables superior associative recall compared to simple additive updates. While KDA refined the coarse head ..."
+    }
+  ]
+}

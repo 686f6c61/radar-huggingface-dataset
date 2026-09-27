@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Rev3auth/iris-merged",
+  "slug": "rev3auth-iris-merged",
+  "author": "Rev3auth",
+  "url": "https://huggingface.co/Rev3auth/iris-merged",
+  "created_at": "2026-09-27T16:23:01.000Z",
+  "updated_at": "2026-09-27T16:23:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269060280,
+  "storage_human": "269 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scarlett Johansson Says She Was Only Offered \"Sex Object ... - InStyle",
+      "url": "https://www.instyle.com/scarlett-johansson-objectified-exploited-early-career-vanity-fair-11734643",
+      "snippet": "May 14, 2025 · Scarlett Johansson opened up about being sexualized as a young actress in an interview with Vanity Fair released on …"
+    },
+    {
+      "title": "Scarlett Johansson Says She Was 'Hypersexualized' Early in Her …",
+      "url": "https://people.com/movies/scarlett-johansson-says-she-was-hyper-sexualized-early-in-her-movie-career/",
+      "snippet": "Oct 11, 2022 · Johansson admits that she spent a lot of time around adults as a child, which she attributes to her Manhattan …"
+    },
+    {
+      "title": "16 Stars Who Spoke Out About Being Sexualized at a Young Age",
+      "url": "https://www.sheknows.com/entertainment/slideshow/2509093/celebrities-sexualized-young/",
+      "snippet": "Jun 22, 2023 · Even from a young age, I was sexualized,” she wrote, noting she became a sex symbol at only 13 years old and that …"
+    },
+    {
+      "title": "Scarlett Johansson says she was hypersexualised at a young age",
+      "url": "https://theindependent.sg/scarlett-johansson-says-she-was-hypersexualised-at-a-young-age/",
+      "snippet": "Oct 15, 2022 · Johansson said she feels that being in her 30s means she is caught between two generations when dealing with the …"
+    },
+    {
+      "title": "Scarlett Johansson felt that she was 'hypersexualized' as a ... - indy100",
+      "url": "https://www.indy100.com/celebrities/scarlett-johansson-hypersexualized-child-actor",
+      "snippet": "Oct 12, 2022 · Scarlett Johansson has spoken about her experiences as a young star in Hollywood and admitted that she felt …"
+    }
+  ]
+}

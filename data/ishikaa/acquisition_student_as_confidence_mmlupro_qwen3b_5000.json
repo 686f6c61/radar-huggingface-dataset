@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_AS_confidence_mmlupro_qwen3b_5000",
+  "slug": "ishikaa-acquisition_student_as_confidence_mmlupro_qwen3b_5000",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_AS_confidence_mmlupro_qwen3b_5000",
+  "created_at": "2026-09-27T18:34:40.000Z",
+  "updated_at": "2026-09-27T18:35:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348896,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dirty Talk About Blow Jobs That’ll Make Her Gag (In The Best Way)",
+      "url": "https://www.schoolofsquirt.com/dirty-talk-about-blow-jobs/",
+      "snippet": "Jul 15, 2025 · Know exactly what to say before, during & after blowjobs to get her excited, with example lines & expert tips to avoid …Read more"
+    },
+    {
+      "title": "Blowjob Dirty Talk: 55 Sexy Things To Say While Giving Head",
+      "url": "https://www.jordangrayconsulting.com/blowjob-dirty-talk/",
+      "snippet": "Mar 3, 2024 · Want to give the best blowjob of his life, and make him sexually obsessed with you? Introducing: blowjob dirty talk. Try …Read more"
+    },
+    {
+      "title": "150 Dirty Talk Examples and Phrases (That Actually Work)",
+      "url": "https://www.lovedignity.com/150-dirty-talk-examples-and-phrases-that-actually-work/",
+      "snippet": "May 4, 2026 · 150 dirty talk examples and phrases for foreplay, sex, and sexy texts. Real lines that actually turn your partner on, …Read more"
+    },
+    {
+      "title": "10 Ways to Make a Blowjob Kinky - Girly Juice",
+      "url": "https://girlyjuice.net/10-ways-to-make-a-blowjob-kinky/",
+      "snippet": "Aug 26, 2019 · That said, sometimes kinkifying a sexual activity is easier said than done… so here are 10 suggestions for ways to …Read more"
+    },
+    {
+      "title": "Crazy Things To Say During Sex: 100+ Dirty Talk Phrases For …",
+      "url": "https://www.schoolofsquirt.com/things-to-say-during-sex/",
+      "snippet": "Jul 20, 2026 · Don't know what to say during sex? Learn what to say and make her melt with dirty talk phrases that transform your …Read more"
+    }
+  ]
+}

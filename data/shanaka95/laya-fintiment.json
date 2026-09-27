@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "shanaka95/laya-fintiment",
+  "slug": "shanaka95-laya-fintiment",
+  "author": "shanaka95",
+  "url": "https://huggingface.co/shanaka95/laya-fintiment",
+  "created_at": "2026-09-27T13:20:12.000Z",
+  "updated_at": "2026-09-27T14:41:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [],
+  "tags": [
+    "laya",
+    "safetensors",
+    "financial-sentiment",
+    "fingpt",
+    "rlcd",
+    "finance",
+    "sentiment-analysis",
+    "3-class",
+    "text-classification",
+    "dataset:shanaka95/fingpt-sentiment-3class",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609220,
+  "storage_human": "843 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muscle Photo Gallery | TheBestFlex",
+      "url": "https://www.thebestflex.com/photos",
+      "snippet": "Tens of thousands of photos of bodybuilders and muscle hunks flexing. Free to browse and enjoy."
+    },
+    {
+      "title": "Handsome Muscular Men | Gym | Fitness (@bodybuildingreels ...",
+      "url": "https://www.instagram.com/bodybuildingreels/",
+      "snippet": "117K Followers, 31 Following, 2,035 Posts - Handsome Muscular Men | Gym 💥| Fitness 💪🏻 (@bodybuildingreels) on Instagram: \"Profile …"
+    },
+    {
+      "title": "43 Hot Gym Men ideas in 2026 | gym guys, gym photos, muscular men",
+      "url": "https://www.pinterest.com/revohn160/hot-gym-men/",
+      "snippet": "Explore a hand-picked collection of Pins about Hot Gym Men on Pinterest."
+    },
+    {
+      "title": "Hot Men @ The Gym (@hotmenatthegym) | TikTok",
+      "url": "https://www.tiktok.com/@hotmenatthegym",
+      "snippet": "Join 1309 followers on TikTok for more bodybuilding, gay, gym content."
+    },
+    {
+      "title": "Follow the Hot Guy Panel on Twitter - Seventeen",
+      "url": "https://www.seventeen.com/love/a19501/hot-guy-panel-twitter-accounts/",
+      "snippet": "Jan 2, 2013 · This year's Hot Guy Panel is available 24/7 to answer your love questions on Twitter."
+    }
+  ]
+}

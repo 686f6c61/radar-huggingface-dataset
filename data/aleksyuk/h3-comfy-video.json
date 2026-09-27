@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aleksyuk/h3-comfy-video",
+  "slug": "aleksyuk-h3-comfy-video",
+  "author": "aleksyuk",
+  "url": "https://huggingface.co/aleksyuk/h3-comfy-video",
+  "created_at": "2026-09-27T19:12:43.000Z",
+  "updated_at": "2026-09-27T19:14:45.000Z",
+  "license": "see-original-repositories",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94303530742,
+  "storage_human": "94.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "MiniMax H3 on Comfy: Open-Weight Video Model",
+      "url": "https://comfy.org/minimax-h3/",
+      "snippet": "Run MiniMax H3 on Comfy: Open Weights or Partner Nodes, multi-modal in/out, native stereo audio on every clip, up to 2K and 5-15s per generation. Free to start."
+    },
+    {
+      "title": "docs/tutorials/video/minimax/minimax-h3.mdx at main · Comfy ... - GitHub",
+      "url": "https://github.com/Comfy-Org/docs/blob/main/tutorials/video/minimax/minimax-h3.mdx",
+      "snippet": "MiniMax H3 is supported in ComfyUI with open weights. To get started: Update ComfyUI to version 0.30.0 or later Go to Template Library > Video > choose any MiniMax H3 workflow Follow the pop-up to download models and run the workflow The model files are hosted on Hugging Face in the Comfy-Org/MiniMax-H3 repository."
+    },
+    {
+      "title": "MiniMax H3 in ComfyUI - Create AI Videos for Free - YouTube",
+      "url": "https://www.youtube.com/watch?v=3j0LrlMJnNc",
+      "snippet": "The model supports text, image, video, and audio inputs, generating high-quality videos at up to 2K resolution for up to 15 seconds with native stereo audio in a single generation."
+    },
+    {
+      "title": "ComfyUI MiniMax H3 Video Generation Guide - docs.comfy.org",
+      "url": "https://docs.comfy.org/tutorials/video/minimax/minimax-h3",
+      "snippet": "How to use open-weights MiniMax H3 in ComfyUI: text-to-video, image-to-video, and reference-to-video workflows with native stereo audio, prompt writing tips, and Sage Attention speedups."
+    }
+  ]
+}

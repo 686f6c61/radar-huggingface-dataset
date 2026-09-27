@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "psikosen/viq",
+  "slug": "psikosen-viq",
+  "author": "psikosen",
+  "url": "https://huggingface.co/psikosen/viq",
+  "created_at": "2026-09-27T17:52:20.000Z",
+  "updated_at": "2026-09-27T17:52:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "psikosen/viq · Hugging Face",
+      "url": "https://huggingface.co/psikosen/viq",
+      "snippet": "The media renderer is independent of the AI backend. If masks came from an editor, another model, or another machine, name them 000000.png, 000001.png, … at the exact source-video resolution and run:"
+    },
+    {
+      "title": "ViQ: Text-Aligned Visual Quantized Representations at Any Resolution",
+      "url": "https://arxiv.org/html/2606.27313",
+      "snippet": "Our work not only strongly enhances the efficiency of multimodal encoders in training process but also unifies visual and linguistic representations into a cohesive discrete framework. We evaluate the ViQ model against state-of-the-art continuous multimodal visual encoders and quantized multimodal semantic encoders across a range of experiments."
+    },
+    {
+      "title": "QSANN-ViQ: A Lightweight Quantum Self-Attention Vision Model for ...",
+      "url": "https://ieeexplore.ieee.org/document/11250020",
+      "snippet": "This work presents QSANN-ViQ, an enhanced hybrid quantum-classical architecture for explainable dementia classification using MRI data. The model integrates a lightweight convolutional neural network (CNN) for spatial feature extraction with multiple quantum neural network (QNN) heads of varying qubit sizes (2,4,8), executed on IBM Qiskit simulators. A trustaware routing mechanism dynamically ..."
+    },
+    {
+      "title": "psikosen (Rook) · GitHub",
+      "url": "https://github.com/psikosen",
+      "snippet": "psikosen has 307 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "[2606.27313] ViQ: Text-Aligned Visual Quantized Representations at Any ...",
+      "url": "https://arxiv.org/abs/2606.27313",
+      "snippet": "A unified representation for text and vision is a natural pursuit, as it enables simpler multimodal modeling and more efficient training. However, representing images as discrete signals in the same way as text inevitably introduces severe information loss. Existing work struggles to balance low-level details and high-level semantics in discrete representations: reconstruction-oriented ..."
+    }
+  ]
+}

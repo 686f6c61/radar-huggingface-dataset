@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "vkovtun/gemma-text-to-sql-2026-09-27_20.06.56-gemma-4-31B-it-finetune-QLORA",
+  "slug": "vkovtun-gemma-text-to-sql-2026-09-27_20-06-56-gemma-4-31b-it-finetune-qlora",
+  "author": "vkovtun",
+  "url": "https://huggingface.co/vkovtun/gemma-text-to-sql-2026-09-27_20.06.56-gemma-4-31B-it-finetune-QLORA",
+  "created_at": "2026-09-27T18:08:03.000Z",
+  "updated_at": "2026-09-27T19:30:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1501945883,
+  "storage_human": "1.5 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vkovtun/gemma-text-to-sql-2026-09-20_12.55.15-finetune-QLORA · Hugging Face",
+      "url": "https://huggingface.co/vkovtun/gemma-text-to-sql-2026-09-20_12.55.15-finetune-QLORA",
+      "snippet": "Instructions to use vkovtun/gemma-text-to-sql-2026-09-20_12.55.15-finetune-QLORA with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "vkovtun/gemma-text-to-sql · Hugging Face",
+      "url": "https://huggingface.co/vkovtun/gemma-text-to-sql",
+      "snippet": "Instructions to use vkovtun/gemma-text-to-sql with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "gemma-text-to-sql/README.md at main - GitHub",
+      "url": "https://github.com/HRF001/gemma-text-to-sql/blob/main/README.md",
+      "snippet": "Text-to-SQL is the task of converting natural language questions into executable SQL queries—a capability behind many modern BI tools (Snowflake Cortex Analyst, Databricks Genie, etc.). This project fine-tunes a small instruction-tuned model (Gemma-3-1B) using QLoRA on 5,000 synthetic text-to-SQL samples, and analyzes how fine-tuning improves SQL generation quality across different query ..."
+    },
+    {
+      "title": "Releases: profharimohanpandey/GEMMA-Text-To-SQL - GitHub",
+      "url": "https://github.com/profharimohanpandey/GEMMA-Text-To-SQL/releases",
+      "snippet": "GEMMA-SQL is an advanced Text-to-SQL model leveraging large language models to translate natural language queries into accurate SQL statements. It introduces a guided decoding mechanism and schema-aware prompting to enhance performance."
+    },
+    {
+      "title": "huggingface_text_finetune_qlora.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/google-gemma/cookbook/blob/main/docs/core/huggingface_text_finetune_qlora.ipynb",
+      "snippet": "This guide walks you through how to fine-tune Gemma on a custom text-to-sql dataset using Hugging Face Transformers and TRL. You will learn: What is Quantized Low-Rank Adaptation (QLoRA) Setup development environment Create and prepare the fine-tuning dataset Fine-tune Gemma using TRL and the SFTTrainer Test Model Inference and generate SQL queries Note: This guide was created to run on a ..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/nb-whisper-small-whisperkit-coreml-macos",
+  "slug": "aoiandroid-nb-whisper-small-whisperkit-coreml-macos",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/nb-whisper-small-whisperkit-coreml-macos",
+  "created_at": "2026-09-27T18:36:54.000Z",
+  "updated_at": "2026-09-27T18:36:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisperkit",
+  "languages": [
+    "no",
+    "nb"
+  ],
+  "tags": [
+    "whisperkit",
+    "whisper",
+    "coreml",
+    "automatic-speech-recognition",
+    "no",
+    "nb",
+    "base_model:NbAiLab/nb-whisper-small",
+    "base_model:finetune:NbAiLab/nb-whisper-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 483967102,
+  "storage_human": "484 MB",
+  "base_model": "NbAiLab/nb-whisper-small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NbAiLab/nb-whisper-small · Hugging Face",
+      "url": "https://huggingface.co/NbAiLab/nb-whisper-small",
+      "snippet": "NB-Whisper Small Introducing the Norwegian NB-Whisper Small model, proudly developed by the National Library of Norway. NB-Whisper is a cutting-edge series of models designed for automatic speech recognition (ASR) and speech translation. These models are based on the work of OpenAI&#x27;s Whisper. Each model in the series has been trained for 250,000 steps, utilizing a diverse dataset of 8 million ..."
+    },
+    {
+      "title": "aoiandroid/whisper-small.en · Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/whisper-small.en",
+      "snippet": "Whisper Whisper is a pre-trained model for automatic speech recognition (ASR) and speech translation. Trained on 680k hours of labelled data, Whisper models demonstrate a strong ability to generalise to many datasets and domains without the need for fine-tuning."
+    },
+    {
+      "title": "GitHub - vilassn/whisper_android: Offline Speech Recognition with ...",
+      "url": "https://github.com/vilassn/whisper_android",
+      "snippet": "This repository offers two Android apps leveraging the OpenAI Whisper speech-to-text model. One app uses the TensorFlow Lite Java API for easy Java integration, while the other employs the TensorFlow Lite Native API for enhanced performance. It also includes a Python script for model generation and pre-built APKs for straightforward deployment."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "We observed that the difference becomes less significant for the small.en and medium.en models. Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    },
+    {
+      "title": "Whisper Model Sizes: Complete Guide | OpenWhispr",
+      "url": "https://openwhispr.com/blog/whisper-model-sizes-explained",
+      "snippet": "Every Whisper model size compared: parameters, speed, accuracy, and RAM. Choose between tiny, small, large-v3, and turbo for local transcription."
+    }
+  ]
+}

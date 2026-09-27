@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ayushmishra1704/sentiment-model",
+  "slug": "ayushmishra1704-sentiment-model",
+  "author": "ayushmishra1704",
+  "url": "https://huggingface.co/ayushmishra1704/sentiment-model",
+  "created_at": "2026-09-27T13:24:54.000Z",
+  "updated_at": "2026-09-27T13:25:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955779,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267840845,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aayuschmishra (Ayush MIshra) - Hugging Face",
+      "url": "https://huggingface.co/aayuschmishra",
+      "snippet": "User profile of Ayush MIshra on Hugging Face"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=sentiment-analysis",
+      "snippet": "Explore machine learning models. Anthos23/sentiment-roberta-large-english-finetuned-sentiment-analysis"
+    },
+    {
+      "title": "GitHub - ayush07mishra/-Sentiment-Analysis-",
+      "url": "https://github.com/ayush07mishra/-Sentiment-Analysis-",
+      "snippet": "Contribute to ayush07mishra/-Sentiment-Analysis- development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - BenWiseman/sentiment.ai: Package for using deep learning ...",
+      "url": "https://github.com/BenWiseman/sentiment.ai",
+      "snippet": "The trade-off is setup. Lexicon tools install with no Python dependency; sentiment.ai needs a one-time install_sentiment.ai () to download an on-device model (about 280 MB for the default e5-base, about 120 MB for e5-small). After that there is no API key, no internet connection, and scoring is deterministic across machines."
+    },
+    {
+      "title": "Sentiment analysis prebuilt AI model - AI Builder | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prebuilt-sentiment-analysis",
+      "snippet": "The sentiment analysis prebuilt model detects positive or negative sentiment in text data. You can use it to analyze social media, customer reviews, or any text data you&#x27;re interested in. Sentiment analysis evaluates text input, and gives scores and labels at a sentence and document level."
+    }
+  ]
+}

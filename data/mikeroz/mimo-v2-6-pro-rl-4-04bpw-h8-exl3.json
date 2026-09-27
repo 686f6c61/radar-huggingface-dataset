@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "MikeRoz/MiMo-V2.6-Pro-RL-4.04bpw-h8-exl3",
+  "slug": "mikeroz-mimo-v2-6-pro-rl-4-04bpw-h8-exl3",
+  "author": "MikeRoz",
+  "url": "https://huggingface.co/MikeRoz/MiMo-V2.6-Pro-RL-4.04bpw-h8-exl3",
+  "created_at": "2026-09-27T12:30:15.000Z",
+  "updated_at": "2026-09-27T12:43:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mimo_v2",
+    "text-generation",
+    "multimodal",
+    "vision-language",
+    "audio",
+    "agent",
+    "video-understanding",
+    "long-context",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "license:mit",
+    "exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 260208587136,
+  "parameters_human": "260.21B",
+  "storage_bytes": 520597882882,
+  "storage_human": "520.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le Figaro - Actualité en direct et informations en continu",
+      "url": "http://www.lefigaro.fr/?msockid=399b45a87c2063392acc52497db562cb",
+      "snippet": "A la Une : Retrouvez toute l'actualité en France, à l'international, l'actualité économique et politique avec Le FigaroRead more"
+    },
+    {
+      "title": "Le Figaro",
+      "url": "https://a.lefigaro.fr/",
+      "snippet": "Découvrez les dernières actualités françaises et internationales en direct sur Le Figaro.Read more"
+    },
+    {
+      "title": "Le Figaro — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Le_Figaro",
+      "snippet": "France catholique Le Figaro Magazine L'Humanité Magazine Le Journal du dimanche Marianne Le Monde libertaire Le Nouvel ObsRead more"
+    },
+    {
+      "title": "Le Figaro.fr - Connexion compte Figaro",
+      "url": "https://connect.lefigaro.fr/login",
+      "snippet": "Page de connexion à votre compte Figaro Identifiez-vous pour accéder au meilleur du Figaro.Read more"
+    },
+    {
+      "title": "Le Figaro - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Le_Figaro",
+      "snippet": "It was named after Figaro, a character in several plays by polymath Beaumarchais (1732–1799): Le Barbier de Séville, La Mère …Read more"
+    }
+  ]
+}

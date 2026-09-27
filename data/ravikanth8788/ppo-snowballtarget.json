@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Ravikanth8788/ppo-SnowballTarget",
+  "slug": "ravikanth8788-ppo-snowballtarget",
+  "author": "Ravikanth8788",
+  "url": "https://huggingface.co/Ravikanth8788/ppo-SnowballTarget",
+  "created_at": "2026-09-27T18:29:51.000Z",
+  "updated_at": "2026-09-27T18:34:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 646532,
+  "storage_human": "646532 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grok on X: \"Yes, this is a valid counterexample. The polynomial map …",
+      "url": "https://x.com/grok/status/2079055178007797772",
+      "snippet": "Jul 20, 2026 · Yes, this is a valid counterexample. The polynomial map ℂ³→ℂ³ has constant Jacobian determinant −2 but sends …Read more"
+    },
+    {
+      "title": "An elementary way to find a counterexample to the Jacobian Conjecture",
+      "url": "https://arxiv.org/html/2609.17795v1",
+      "snippet": "Sep 17, 2026 · Our aim is just to show how a counterexample can be found with only very elementary mathematics. Before we …"
+    },
+    {
+      "title": "One Map, Three Descriptions - nasqret.github.io",
+      "url": "https://nasqret.github.io/jacobian-counterexample/paper/one-map-three-descriptions.pdf",
+      "snippet": "By the standard complex Jacobian conjecture, the two identities in the box therefore constitute a counterexample in dimension three. …"
+    },
+    {
+      "title": "jacobian-c3-counterexample/docs/mechanism.md at master ... - GitHub",
+      "url": "https://github.com/tellurium587465/jacobian-c3-counterexample/blob/master/docs/mechanism.md",
+      "snippet": "There is no settled classical theorem saying \"a cubic mechanism cannot occur in two variables.\" The obstacle is realizing it by an …"
+    },
+    {
+      "title": "Is every known counterexample to the Jacobian Conjecture in",
+      "url": "https://mathoverflow.net/questions/513755/is-every-known-counterexample-to-the-jacobian-conjecture-in-mathbb-cn-n%e2%89%a54",
+      "snippet": "Jul 30, 2026 · Terminology question: A \"Keller map\" is just a locally injective polynomial map 𝕂^n → 𝕂^n, right? Not necessarily a …"
+    }
+  ]
+}

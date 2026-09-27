@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "PokeJade77/Rio",
+  "slug": "pokejade77-rio",
+  "author": "PokeJade77",
+  "url": "https://huggingface.co/PokeJade77/Rio",
+  "created_at": "2026-09-27T14:16:31.000Z",
+  "updated_at": "2026-09-27T14:16:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://fr-fr.facebook.com/merveilledumondejaninevero/videos/",
+      "snippet": "Facebook ... Facebook"
+    },
+    {
+      "title": "Propriétés à vendre à Servins | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/108267252534406/propertyforsale/",
+      "snippet": "Trouvez des bons plans intéressants sur des propriétés à vendre à Servins sur Facebook Marketplace. Parcourez les annonces ou …"
+    },
+    {
+      "title": "Kia en vente à Edmonton | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/edmonton/kia/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Kia en vente à Edmonton sur Facebook Marketplace. Trouvez des bons plans …"
+    },
+    {
+      "title": "Articles pour la maison en vente à Perth | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/perth/home/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Articles pour la maison en vente à Perth sur Facebook Marketplace. Trouvez des bons …"
+    },
+    {
+      "title": "Articles gratuits à Victoria (Colombie-Britannique) - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/victoria/free/",
+      "snippet": "Trouvez des articles gratuits à Victoria (Colombie-Britannique) sur Facebook Marketplace. Mobilier, appareils électroniques gratuits …"
+    }
+  ]
+}
