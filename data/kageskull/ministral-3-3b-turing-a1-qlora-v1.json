@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kageskull/Ministral-3-3B-turing-a1-qlora-v1",
+  "slug": "kageskull-ministral-3-3b-turing-a1-qlora-v1",
+  "author": "kageskull",
+  "url": "https://huggingface.co/kageskull/Ministral-3-3B-turing-a1-qlora-v1",
+  "created_at": "2026-09-27T00:10:09.000Z",
+  "updated_at": "2026-09-27T00:13:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "education",
+    "cryptanalysis",
+    "computational-reasoning",
+    "text-generation",
+    "conversational",
+    "base_model:mistralai/Ministral-3-3B-Instruct-2512-BF16",
+    "base_model:adapter:mistralai/Ministral-3-3B-Instruct-2512-BF16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26468809,
+  "storage_human": "26 MB",
+  "base_model": "mistralai/Ministral-3-3B-Instruct-2512-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Musée du Louvre — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Mus%C3%A9e_du_Louvre",
+      "snippet": "Au XVIe siècle, François Ier en fait l'emblème de la Renaissance en plein Paris. À la suite du départ de Louis XIV pour le château de …"
+    },
+    {
+      "title": "L'histoire du musée du Louvre de Paris",
+      "url": "https://www.musee-du-louvre.com/histoire.php",
+      "snippet": "Toute l'histoire du musée du Louvre depuis la création du château en 1190 en passant par l'ouverture du musée en 1793 jusqu'à …"
+    },
+    {
+      "title": "Histoire du Louvre",
+      "url": "https://www.louvre.fr/louvreplus/histoire-du-louvre",
+      "snippet": "L'histoire du Panier de Fraises de Chardin - Tous Mécènes !"
+    },
+    {
+      "title": "Le musée du Louvre en bref",
+      "url": "https://presse.louvre.fr/le-musee-du-louvre-1063000201419/?lang=fr",
+      "snippet": "Ancien palais des rois, le Louvre épouse l'histoire de France depuis huit siècles. Conçu dès sa création en 1793 comme un musée …"
+    },
+    {
+      "title": "Le Louvre : 800 ans d'histoire",
+      "url": "https://www.louvre.fr/louvreplus/video-le-louvre-800-ans-d-histoire",
+      "snippet": "De la forteresse médiévale au musée d'art, le palais du Louvre a connu huit siècles de transformation architecturale, incarnant …"
+    }
+  ]
+}

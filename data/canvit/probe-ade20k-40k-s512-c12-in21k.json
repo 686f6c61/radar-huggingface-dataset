@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "canvit/probe-ade20k-40k-s512-c12-in21k",
+  "slug": "canvit-probe-ade20k-40k-s512-c12-in21k",
+  "author": "canvit",
+  "url": "https://huggingface.co/canvit/probe-ade20k-40k-s512-c12-in21k",
+  "created_at": "2026-04-14T23:39:01.000Z",
+  "updated_at": "2026-09-26T23:32:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "canvit-pytorch",
+  "languages": [],
+  "tags": [
+    "canvit-pytorch",
+    "safetensors",
+    "canvit",
+    "active-vision",
+    "vision-transformer",
+    "ade20k",
+    "linear-probe",
+    "image-segmentation",
+    "dataset:scene_parse_150",
+    "arxiv:2603.22570",
+    "base_model:canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02",
+    "base_model:finetune:canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 159894,
+  "parameters_human": "159894",
+  "storage_bytes": 640256,
+  "storage_human": "640256 B",
+  "base_model": "canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tony Blair and the Rothschilds - Paul Cudenec - Substack",
+      "url": "https://paulcudenec.substack.com/p/tony-blair-and-the-rothschilds",
+      "snippet": "Nov 14, 2023 · It was time for “change” – but change that wouldn’t threaten the underlying seat of power in contemporary Britain. …"
+    },
+    {
+      "title": "The Big Plan and the Great Gaslighting - Paul Cudenec",
+      "url": "https://paulcudenec.substack.com/p/the-big-plan-and-the-great-gaslighting",
+      "snippet": "Apr 9, 2025 · Echoes here of Keir Starmer’s “change” agenda and the Tony Blair Institute for Global Change, which are both …"
+    },
+    {
+      "title": "Tony Blair and the Rothschilds | winter oak",
+      "url": "https://winteroak.org.uk/2023/11/14/tony-blair-and-the-rothschilds/",
+      "snippet": "Nov 14, 2023 · by Paul Cudenec There is something very odd about the way that former British Prime Minister Tony Blair has never …"
+    },
+    {
+      "title": "The Big Plan and the Great Gaslighting | winter oak",
+      "url": "https://winteroak.org.uk/2025/04/09/the-big-plan-and-the-great-gaslighting/",
+      "snippet": "Apr 9, 2025 · Echoes here of Keir Starmer’s “change” agenda and the Tony Blair Institute for Global Change, which are both …"
+    },
+    {
+      "title": "BritCard: A Passport to Digital Slavery - UK Reloaded",
+      "url": "https://ukreloaded.com/britcard-a-passport-to-digital-slavery/",
+      "snippet": "Jun 30, 2025 · ZIM, the zio-imperialist mafia, has long cherished the dream of imposing a totalitarian-style compulsory ID scheme on …"
+    }
+  ]
+}

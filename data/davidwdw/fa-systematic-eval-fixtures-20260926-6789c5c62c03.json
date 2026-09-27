@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-systematic-eval-fixtures-20260926-6789c5c62c03",
+  "slug": "davidwdw-fa-systematic-eval-fixtures-20260926-6789c5c62c03",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-systematic-eval-fixtures-20260926-6789c5c62c03",
+  "created_at": "2026-09-26T20:23:05.000Z",
+  "updated_at": "2026-09-26T20:23:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 608425,
+  "storage_human": "608425 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Features Don&#x27;t Fail Tests. They Fail Differently Every Time.",
+      "url": "https://www.codexical.com/posts/2026-06-20-ai-feature-testing-non-determinism",
+      "snippet": "Traditional unit tests break for AI features because LLMs are non-deterministic — the same input produces different outputs, and semantically equivalent outputs fail string matching. Most teams have no replacement strategy. The fix is eval-driven development: behavioral contracts, golden datasets, and LLM-as-judge scoring against defined rubrics."
+    },
+    {
+      "title": "SocioEval: A Template-Based Framework for Evaluating Socioeconomic ...",
+      "url": "https://arxiv.org/pdf/2604.02660v1",
+      "snippet": "However, existing approaches to socioeco-nomic bias remain limited in scope, often focusing on nar-row scenarios or lacking systematic evaluation frameworks that can scale across models and contexts. We introduce SocioEval, a template-based framework for systematically evaluating socioeconomic status bias in foun-dation models."
+    },
+    {
+      "title": "Agent Evaluation: How to Test and Measure Agentic AI Performance",
+      "url": "https://machinelearningmastery.com/agent-evaluation-how-to-test-and-measure-agentic-ai-performance/",
+      "snippet": "Learn how to evaluate AI agent performance using the Four Pillars framework: task success, tool quality, reasoning coherence, and cost efficiency."
+    },
+    {
+      "title": "The DAVID Framework for AI Evaluations | caidéiseach",
+      "url": "https://caideiseach.com/blog/what-would-david-do",
+      "snippet": "There&#x27;s a constant debate online as to the importance of evals/evaluations of AI-generated outputs and where they stand in building value and a moat for a company."
+    },
+    {
+      "title": "Paraphrasing Tool (Ad-Free and No Sign-up Required) - Quillbot AI",
+      "url": "https://quillbot.com/paraphrasing-tool",
+      "snippet": "AI rewording tool is free and easy to use—with just the click of a button, the paraphrasing tool will rephrase your sentence, paragraph, report, or article to your liking, with many options available to customize and perfect the reworded text."
+    }
+  ]
+}

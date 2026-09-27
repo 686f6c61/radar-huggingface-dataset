@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-qwen-imagr-2.1-int8-6step-unet",
+  "slug": "runninghubai-rh-qwen-imagr-2-1-int8-6step-unet",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-qwen-imagr-2.1-int8-6step-unet",
+  "created_at": "2026-09-27T00:31:30.000Z",
+  "updated_at": "2026-09-27T00:36:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7156349619,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen&#x27;s most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
+    },
+    {
+      "title": "Qwen-Image-2.1 - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen-Image-2.1: Compact, Efficient, and Unified Image Creation",
+      "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+      "snippet": "Qwen-Image-2.1 mixed-granularity attention architecture Native Transparency, Unified Creation and Editing Native transparency is a major addition in this release. In December 2025, we introduced Qwen-Image-Layered as a dedicated model supporting transparent image generation."
+    },
+    {
+      "title": "README.md · RunningHubAI/rh-qwen-image-2.1-6lora-lora at main",
+      "url": "https://huggingface.co/RunningHubAI/rh-qwen-image-2.1-6lora-lora/blob/main/README.md",
+      "snippet": "RunningHubAI / rh-qwen-image-2.1-6lora-lora Like 0 Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new main rh-qwen-image-2.1-6lora-lora /README.md RunningHubAI Upload RunningHub model 2103347106579832834 b751469 verifiedabout 7 hours ago preview code | Raw Download with hf CLI Copy download link ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image: Qwen-Image is a powerful image generation ...",
+      "url": "https://github.com/QwenLM/Qwen-Image",
+      "snippet": "Qwen-Image is a powerful image generation foundation model capable of complex text rendering and precise image editing. - QwenLM/Qwen-Image"
+    }
+  ]
+}

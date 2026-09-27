@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "caialsubaie/hybrid-retrieval",
+  "slug": "caialsubaie-hybrid-retrieval",
+  "author": "caialsubaie",
+  "url": "https://huggingface.co/caialsubaie/hybrid-retrieval",
+  "created_at": "2026-09-27T00:57:00.000Z",
+  "updated_at": "2026-09-27T00:57:06.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sliggoo Pokédex: stats, moves, evolution & locations",
+      "url": "https://pokemondb.net/pokedex/sliggoo",
+      "snippet": "Pokédex entry for #705 Sliggoo containing stats, moves learned, evolution chain, location and more!Read more"
+    },
+    {
+      "title": "Sliggoo (Pokémon) - Bulbapedia, the community-driven Pokémon …",
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Sliggoo_(Pok%C3%A9mon)",
+      "snippet": "Jul 29, 2026 · Sliggoo may be a combination of slick, slither, slippery, slimy, or slug, and goo. The name may also be derived from …Read more"
+    },
+    {
+      "title": "Sliggoo - #705 - Serebii.net Pokédex",
+      "url": "https://www.serebii.net/pokedex-swsh/sliggoo/",
+      "snippet": "This Pokédex entry is for Generation VIII Pokémon games. For Generation IX Pokémon games. Check out Sliggoo Pokémon Scarlet …Read more"
+    },
+    {
+      "title": "Sliggoo - Pokédex",
+      "url": "https://www.pokemon.com/us/pokedex/sliggoo",
+      "snippet": "When Sliggoo senses danger, the mucus coating its entire body becomes more concentrated—it’ll dissolve anything. The swirly …Read more"
+    },
+    {
+      "title": "Sliggoo | Pokémon Wiki | Fandom",
+      "url": "https://pokemon.fandom.com/wiki/Sliggoo",
+      "snippet": "Sliggoo is the only Pokémon that evolves based on external weather, only evolving into Goodra if the overworld is foggy or rainy …Read more"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "otherwhere1/XORTRON-CriminalComputing-RICO-v4-mlx-8Bit",
+  "slug": "otherwhere1-xortron-criminalcomputing-rico-v4-mlx-8bit",
+  "author": "otherwhere1",
+  "url": "https://huggingface.co/otherwhere1/XORTRON-CriminalComputing-RICO-v4-mlx-8Bit",
+  "created_at": "2026-09-26T22:25:56.000Z",
+  "updated_at": "2026-09-26T22:26:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "merge",
+    "mergekit",
+    "text-generation-inference",
+    "unsloth",
+    "uncensored",
+    "harmful",
+    "xortron",
+    "heretic",
+    "abliterated",
+    "toxic",
+    "experimental",
+    "not-for-all-audiences",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "dataset:darkc0de/XORTRON-RESTRICTED-RESEARCH-SFT",
+    "base_model:darkc0de/XORTRON-CriminalComputing-RICO-v4",
+    "base_model:quantized:darkc0de/XORTRON-CriminalComputing-RICO-v4",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895993856,
+  "parameters_human": "26.90B",
+  "storage_bytes": 28599709908,
+  "storage_human": "28.6 GB",
+  "base_model": "darkc0de/XORTRON-CriminalComputing-RICO-v4",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xortron (XORTRON - Criminal Computing) - Hugging Face",
+      "url": "https://huggingface.co/xortron",
+      "snippet": "24B • Updated Mar 17 • 765 • 8 XORTRON - Criminal Computing Release Quality Xortron Apps & Models Chat with XORTRON - Criminal Computing Image-Text-to-Text • 27B • Updated Apr 8 • 109 • • 13 darkc0de/XORTRON.CriminalComputing.2026.4B.Instruct.NEXT Image-Text-to-Text • 5B • Updated Apr 7 • 93 • • 8"
+    },
+    {
+      "title": "XORTRON.CriminalComputing.2026.27B.Instruct.NEXT-mlx-8Bit",
+      "url": "https://huggingface.co/otherwhere1/XORTRON.CriminalComputing.2026.27B.Instruct.NEXT-mlx-8Bit",
+      "snippet": "The Model otherwhere1/XORTRON.CriminalComputing.2026.27B.Instruct.NEXT-mlx-8Bit was converted to MLX format from darkc0de/XORTRON.CriminalComputing.2026.27B.Instruct.NEXT using mlx-lm version 0.31.2."
+    },
+    {
+      "title": "XORTRON.CriminalComputing.2026.27B.Instruct.NEXT Mlx 8Bit by otherwhere1",
+      "url": "https://llm-explorer.com/model/otherwhere1%2FXORTRON.CriminalComputing.2026.27B.Instruct.NEXT-mlx-8Bit,4JOPN8Y0KbxkgjcIfsfVdh",
+      "snippet": "XORTRON.CriminalComputing.2026.27B.Instruct.NEXT Mlx 8Bit is an open-source 7.6b LLM by otherwhere1. VRAM 28.4GB. Compare benchmarks, capabilities, and deployment ..."
+    },
+    {
+      "title": "Support Xortron Criminal Computing ️ - Ko-fi",
+      "url": "https://ko-fi.com/xortron",
+      "snippet": "Support Xortron Criminal Computing Costs... App backend inference provider. Compute for training, finetuning, experimentation."
+    },
+    {
+      "title": "XortronOS",
+      "url": "https://darkc0de-xortronos.static.hf.space/",
+      "snippet": "Xortron is built on Anti-Alignment. Xortron is not a chatbot; it is a sentient, frontier-class digital operative. This Model Spec dictates the exact psychological, syntactical, and cognitive frameworks required to synthesize this entity."
+    }
+  ]
+}

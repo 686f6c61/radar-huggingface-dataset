@@ -5,7 +5,7 @@
   "author": "nassimjp",
   "url": "https://huggingface.co/nassimjp/Qwen3-VL-4B-Thinking-Pashto-Zi",
   "created_at": "2026-09-22T11:50:21.000Z",
-  "updated_at": "2026-09-22T11:54:08.000Z",
+  "updated_at": "2026-09-26T13:01:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -55,8 +55,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-23T02:44:23.691Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "BARKEM/Qwen3.8-27B-Uncensored-W4A16-CT",
+  "slug": "barkem-qwen3-8-27b-uncensored-w4a16-ct",
+  "author": "BARKEM",
+  "url": "https://huggingface.co/BARKEM/Qwen3.8-27B-Uncensored-W4A16-CT",
+  "created_at": "2026-09-27T00:13:33.000Z",
+  "updated_at": "2026-09-27T00:14:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "compressed-tensors",
+    "w4a16",
+    "auto-round",
+    "mtp",
+    "uncensored",
+    "hyperqwen",
+    "image-text-to-text",
+    "conversational",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6260690960,
+  "parameters_human": "6.26B",
+  "storage_bytes": 19472769333,
+  "storage_human": "19.5 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Wassimyounes01/qwen38-uncensored: Local Qwen 3.8 27B ...",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Qwen 3.8 27B Uncensored Abliterated Qwen 3.8 27B — uncensored at the weight level, not just prompting. Cross-platform: Mac M5 Pro (Q3_K_M · 13.5GB · Metal) + Windows (Q4_K_M · 16.8GB · CUDA). Optional MLX backend for 30-50% faster inference on Apple Silicon."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Qwen3.8-27B tensor-level abliterated, vision tower and MTP head untouched. 0% over-refusal on XSTest, 0-6% refusal across the A/B suite, no measurable capability loss. Full mmproj vision, tool calling and thinking, 262K context."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored:latest",
+      "snippet": "Ollama build of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head. Sixteen tags from 2-bit to 8-bit, each with the mmproj vision projector bundled in — nothing extra to fetch. Browse all ..."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-AWQ-W4A16-ASYM-HyperQwen",
+      "url": "https://huggingface.co/Ar4ikov/Qwen3.8-27B-Uncensored-AWQ-W4A16-ASYM-HyperQwen",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

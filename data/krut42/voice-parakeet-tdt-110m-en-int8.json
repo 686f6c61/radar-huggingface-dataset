@@ -5,7 +5,7 @@
   "author": "krut42",
   "url": "https://huggingface.co/krut42/voice-parakeet-tdt-110m-en-int8",
   "created_at": "2026-09-26T13:53:52.000Z",
-  "updated_at": "2026-09-26T13:54:17.000Z",
+  "updated_at": "2026-09-26T15:44:33.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

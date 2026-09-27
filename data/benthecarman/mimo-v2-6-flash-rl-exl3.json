@@ -5,7 +5,7 @@
   "author": "benthecarman",
   "url": "https://huggingface.co/benthecarman/MiMo-V2.6-Flash-RL-exl3",
   "created_at": "2026-09-22T14:49:22.000Z",
-  "updated_at": "2026-09-24T22:36:55.000Z",
+  "updated_at": "2026-09-26T17:00:36.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,12 +34,12 @@
     "region:us"
   ],
   "likes": 7,
-  "downloads_30d": 1055,
+  "downloads_30d": 1117,
   "trending_score": 0,
-  "parameters": 44794029760,
-  "parameters_human": "44.79B",
-  "storage_bytes": 104982993344,
-  "storage_human": "105.0 GB",
+  "parameters": 45777830784,
+  "parameters_human": "45.78B",
+  "storage_bytes": 107477903904,
+  "storage_human": "107.5 GB",
   "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
   "formats": [
     "safetensors"

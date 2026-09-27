@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "semprerudi/maschera-ch-v63b",
+  "slug": "semprerudi-maschera-ch-v63b",
+  "author": "semprerudi",
+  "url": "https://huggingface.co/semprerudi/maschera-ch-v63b",
+  "created_at": "2026-09-03T20:05:18.000Z",
+  "updated_at": "2026-09-26T21:51:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "de",
+    "fr",
+    "it",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "pii",
+    "anonymization",
+    "pseudonymization",
+    "swiss",
+    "named-entity-recognition",
+    "de",
+    "fr",
+    "it",
+    "en",
+    "base_model:jhu-clsp/mmBERT-base",
+    "base_model:finetune:jhu-clsp/mmBERT-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 307600219,
+  "parameters_human": "307.6M",
+  "storage_bytes": 1264778482,
+  "storage_human": "1.3 GB",
+  "base_model": "jhu-clsp/mmBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dp-Vids | Diaper Videos - Websites.milonic.com",
+      "url": "http://websites.milonic.com/dp-vids.com/",
+      "snippet": "Diaper Videos, ABDL, AB, DL, diaperboy, diapergirl, Omorashi, Wetting, pooping, messing, enema, Nursing, mommy, daddy, sex. …"
+    },
+    {
+      "title": "Browse videos - DiaperMates",
+      "url": "https://diapermates.com/videos?page=3",
+      "snippet": "Browse videos. Due to scam artists and spammers targeting the site all profiles now need to be hand approved by site admin. Please …"
+    },
+    {
+      "title": "What websites do you guys use for our kind of content?",
+      "url": "https://www.reddit.com/r/ABDL/comments/1cc6bcg/what_websites_do_you_guys_use_for_our_kind_of/",
+      "snippet": "A lot of people enjoy wearing diapers - for many different reasons. Here's a space for all of them MembersOnline • Halitate ADMIN MOD"
+    },
+    {
+      "title": "Diaper fetishism - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Diaper_fetishism",
+      "snippet": "Diaper fetishism (American English), or nappy fetishism (British English), is a type of garment fetish in which a person derives …"
+    },
+    {
+      "title": "ForeverDiapers",
+      "url": "https://foreverdiapers.tumblr.com/",
+      "snippet": "Dear ABDL diaper producing people: petition to make some diapers with minimalist designs on them for us sad beige kiddos. Those …"
+    }
+  ]
+}

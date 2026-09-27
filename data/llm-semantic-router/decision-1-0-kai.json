@@ -5,7 +5,7 @@
   "author": "llm-semantic-router",
   "url": "https://huggingface.co/llm-semantic-router/Decision-1.0-Kai",
   "created_at": "2026-09-21T12:36:24.000Z",
-  "updated_at": "2026-09-22T12:54:03.000Z",
+  "updated_at": "2026-09-27T02:54:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -73,12 +73,12 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 7,
+  "likes": 8,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3389254369,
+  "storage_bytes": 3389892013,
   "storage_human": "3.4 GB",
   "base_model": "llm-semantic-router/Vela-1.0-Encoder-307M",
   "formats": [

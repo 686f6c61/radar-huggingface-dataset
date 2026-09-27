@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rizkypratama/project-contrastive13",
+  "slug": "rizkypratama-project-contrastive13",
+  "author": "rizkypratama",
+  "url": "https://huggingface.co/rizkypratama/project-contrastive13",
+  "created_at": "2026-09-27T00:58:13.000Z",
+  "updated_at": "2026-09-27T00:58:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 507 AI models across 486 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "rizkyp.com — Rizky Pratama",
+      "url": "https://rizkyp.com/",
+      "snippet": "robotics arduino raspberry pi sensors Dice Tower Trained a YOLO Model to detect and classify sides of a D6 on a dice tower. Dice tower designed using Fusion360 and fabricated on an XTool P2S laser cutter."
+    },
+    {
+      "title": "AI Models Benchmark",
+      "url": "https://aimodelsbenchmark.com/",
+      "snippet": "Pick the right LLM in under a minute. 398 models ranked by GPQA, AIME 2025, SWE-bench Verified, HLE, input/output price per million tokens, context window and license. Updated 2026-09-23."
+    },
+    {
+      "title": "riz-kyha (Rizky) - Hugging Face",
+      "url": "https://huggingface.co/riz-kyha/models",
+      "snippet": "Pizza is my favorite algorithm Recent Activity updated a modelabout 9 hours ago riz-kyha/contrastive-rc1-2024 published a modelabout 9 hours ago riz-kyha/contrastive-rc1-2024 updated a datasetabout 9 hours ago riz-kyha/sound-events-dataset View all activity"
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/en/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. Download the app to get started."
+    }
+  ]
+}

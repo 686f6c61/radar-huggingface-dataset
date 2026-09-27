@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bianggraini/generation",
+  "slug": "bianggraini-generation",
+  "author": "bianggraini",
+  "url": "https://huggingface.co/bianggraini/generation",
+  "created_at": "2026-09-27T00:07:50.000Z",
+  "updated_at": "2026-09-27T00:07:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bianggraini (Bintang Anggraini) - Hugging Face",
+      "url": "https://huggingface.co/bianggraini/models",
+      "snippet": "AI & ML interests ML in healthcare — yes, it&#x27;s as hard as it sounds"
+    },
+    {
+      "title": "Generative AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Generative_AI",
+      "snippet": "Generative artificial intelligence (GenAI) is a subfield of artificial intelligence (AI) that uses generative models to generate text, images, videos, audio, computer code or other forms of digital data. [1] These models learn the underlying patterns and structures of their training data, and use them to generate new data [2] in response to input, which often takes the form of natural language ..."
+    },
+    {
+      "title": "Top Generative AI Models to Explore in 2025 - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/generative-ai-models/",
+      "snippet": "Every model offers a different set of advantages and a window into the seemingly endless possibilities of AI-driven creation. In this article, we&#x27;ll be looking into distinct AI generative, segmented into Text, Image, and Code generative AIs. Before getting into the Top generative AI models, let&#x27;s first understand in brief what is generative AI."
+    },
+    {
+      "title": "Generative AI on AWS - Generative AI, LLMs, and Foundation Models - AWS",
+      "url": "https://aws.amazon.com/ai/generative-ai/",
+      "snippet": "Discover the endless possibilities of generative AI on AWS to boost productivity, build differentiated experiences, and innovate."
+    },
+    {
+      "title": "Generative Artificial Intelligence Models: A Survey - Springer",
+      "url": "https://link.springer.com/article/10.1007/s10462-026-11546-1",
+      "snippet": "Generative Artificial Intelligence (GenAI) has seen a remarkable growth in recent years, expanding beyond traditional discriminative tasks to the generation of new content, such as text, images, and videos, based on patterns discovered in the existing data. Advances in deep learning, particularly the development of novel architectures such as Transformers, Generative Adversarial Networks ..."
+    }
+  ]
+}

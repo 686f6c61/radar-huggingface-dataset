@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "iatagun/DizgeBERT-G2PTTS",
+  "slug": "iatagun-dizgebert-g2ptts",
+  "author": "iatagun",
+  "url": "https://huggingface.co/iatagun/DizgeBERT-G2PTTS",
+  "created_at": "2026-09-26T20:33:14.000Z",
+  "updated_at": "2026-09-26T20:34:39.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dizgebert-g2ptts",
+    "feature-extraction",
+    "token-classification",
+    "text-to-speech",
+    "word-stress",
+    "prosodic-boundary",
+    "turkish",
+    "electra",
+    "experimental",
+    "custom_code",
+    "tr",
+    "dataset:universal_dependencies",
+    "base_model:iatagun/DizgeBERT-Dep",
+    "base_model:finetune:iatagun/DizgeBERT-Dep",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110032904,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440155120,
+  "storage_human": "440 MB",
+  "base_model": "iatagun/DizgeBERT-Dep",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iatagun/DizgeBERT-Joint · Hugging Face",
+      "url": "https://huggingface.co/iatagun/DizgeBERT-Joint",
+      "snippet": "iatagun / DizgeBERT-Joint like 0 Token Classification Transformers Safetensors universal_dependencies Turkish dizgebert-joint feature-extraction dependency-parsing morphological-analysis universal-dependencies turkish electra custom_code License:cc-by-sa-4. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "iatagun/DizgeBERT-Joint · Discussions - Hugging Face",
+      "url": "https://huggingface.co/iatagun/DizgeBERT-Joint/discussions",
+      "snippet": "iatagun / DizgeBERT-Joint Like 0 Token Classification Transformers Safetensors universal_dependencies Turkish dizgebert-joint feature-extraction dependency-parsing morphological-analysis universal-dependencies turkish electra custom_code License:cc-by-sa-4. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Dizgebert Joint - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/iatagun/dizgebert-joint",
+      "snippet": "Model Information Summary Entity Passport Registry ID iatagun/dizgebert-joint License CC-BY-SA-4. Provider"
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "How AI model detection works Every AI image generator leaves fingerprints — the way it renders hands, eyes, textures, and edges, the kinds of artifacts it produces, the look of its lighting. The AI model detector reads those tells and tells you which model most likely made the image, with a confidence score and an explanation of the evidence, plus a prompt tuned for that model so you can ..."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated September 2026."
+    }
+  ]
+}

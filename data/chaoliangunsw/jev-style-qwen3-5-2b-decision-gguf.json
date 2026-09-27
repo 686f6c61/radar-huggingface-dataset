@@ -5,7 +5,7 @@
   "author": "chaoliangUNSW",
   "url": "https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF",
   "created_at": "2026-09-21T08:39:50.000Z",
-  "updated_at": "2026-09-24T15:06:17.000Z",
+  "updated_at": "2026-09-27T03:00:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-log-task00-centre-full-hourly-e50d3ef913bf-d9cbf9bea226",
+  "slug": "davidwdw-fa-log-task00-centre-full-hourly-e50d3ef913bf-d9cbf9bea226",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-e50d3ef913bf-d9cbf9bea226",
+  "created_at": "2026-09-26T19:58:59.000Z",
+  "updated_at": "2026-09-26T19:58:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/index.php/?lang=en",
+      "snippet": "Connect with friends, family, and people you know on Facebook."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/facebook/",
+      "snippet": "Facebook. 154,725,546 followers · 290,996 talking about this. Community Values We believe people can do more together than alone and that each of us..."
+    }
+  ]
+}

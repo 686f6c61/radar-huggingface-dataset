@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mradermacher/CySearchAssist-Mesh-1.5B-GGUF",
+  "slug": "mradermacher-cysearchassist-mesh-1-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/CySearchAssist-Mesh-1.5B-GGUF",
+  "created_at": "2026-09-26T20:29:53.000Z",
+  "updated_at": "2026-09-26T20:38:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen2",
+    "mesh-search",
+    "query-rewriting",
+    "unreal-engine",
+    "text-generation",
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "base_model:cyberalien/CySearchAssist-Mesh-1.5B",
+    "base_model:quantized:cyberalien/CySearchAssist-Mesh-1.5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206904448,
+  "storage_human": "14.2 GB",
+  "base_model": "cyberalien/CySearchAssist-Mesh-1.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/1.5B-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/1.5B-v2-GGUF",
+      "snippet": "Feel free to request them by opening a Community Discussion. Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Mradermacher - a EscaBlackwood Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/EscaBlackwood/mradermacher",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from EscaBlackwood"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 29 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-R1",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "snippet": "When evaluating model performance, it is recommended to conduct multiple tests and average the results. Additionally, we have observed that the DeepSeek-R1 series models tend to bypass thinking pattern (i.e., outputting \"<think>&#92;n&#92;n</think>\") when responding to certain queries, which can adversely affect the model&#x27;s performance."
+    }
+  ]
+}

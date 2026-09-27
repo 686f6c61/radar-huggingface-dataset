@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "vml12/WanTransformer3DModel-sm120-cu130-raa",
+  "slug": "vml12-wantransformer3dmodel-sm120-cu130-raa",
+  "author": "vml12",
+  "url": "https://huggingface.co/vml12/WanTransformer3DModel-sm120-cu130-raa",
+  "created_at": "2026-09-26T18:04:25.000Z",
+  "updated_at": "2026-09-26T18:04:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "ahead-of-time",
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5204214,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

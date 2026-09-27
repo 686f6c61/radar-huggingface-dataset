@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Project-Studio200/my_act_policy",
+  "slug": "project-studio200-my_act_policy",
+  "author": "Project-Studio200",
+  "url": "https://huggingface.co/Project-Studio200/my_act_policy",
+  "created_at": "2026-09-27T00:55:06.000Z",
+  "updated_at": "2026-09-27T01:59:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Project-Studio200/my_phone_vision_task",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 619546216,
+  "storage_human": "620 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Install Project | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/project/install-project",
+      "snippet": "Before installing Project the first time, sign in with an existing or new Microsoft Account and enter your product key* at …"
+    },
+    {
+      "title": "Gestion de projet conçue pour suivre tous les aspects de votre travail",
+      "url": "https://www.microsoft.com/fr-fr/microsoft-365/project/project-management?msockid=13af2176ebda611b0a5d3697ea096069",
+      "snippet": "Simplifiez la tâche des responsables de projet grâce à notre logiciel de gestion de projet. Découvrez comment Project vous permet …"
+    },
+    {
+      "title": "Microsoft 365 Project: Compare Plans and Pricing",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/project/microsoft-project-enterprise-plans-and-pricing?msockid=13af2176ebda611b0a5d3697ea096069",
+      "snippet": "Compare Microsoft Project plans and pricing. Explore tools to manage projects, track resources, and deliver results with solutions …"
+    },
+    {
+      "title": "project.microsoft.com",
+      "url": "https://project.microsoft.com/msal-redirect2",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Project — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Microsoft_Project",
+      "snippet": "Microsoft Project (ou MS Project ou MSP) est un logiciel de gestion de projets édité par Microsoft. Il permet aux chefs de projet et …"
+    }
+  ]
+}

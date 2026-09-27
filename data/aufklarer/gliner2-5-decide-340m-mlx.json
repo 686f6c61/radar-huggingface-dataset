@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "aufklarer/GLiNER2.5-Decide-340M-MLX",
+  "slug": "aufklarer-gliner2-5-decide-340m-mlx",
+  "author": "aufklarer",
+  "url": "https://huggingface.co/aufklarer/GLiNER2.5-Decide-340M-MLX",
+  "created_at": "2026-09-27T00:03:36.000Z",
+  "updated_at": "2026-09-27T00:04:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "extractor",
+    "gliner",
+    "gliner2",
+    "deberta-v3",
+    "text-classification",
+    "token-classification",
+    "named-entity-recognition",
+    "apple-silicon",
+    "en",
+    "arxiv:2507.18546",
+    "base_model:fastino/GLiNER2.5-Decide",
+    "base_model:finetune:fastino/GLiNER2.5-Decide",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1945829412,
+  "storage_human": "1.9 GB",
+  "base_model": "fastino/GLiNER2.5-Decide",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/accueil",
+      "snippet": "Retrouvez toutes les informations pratiques pour vous prémunir des éventuelles conséquences pour vos données personnelles de …Read more"
+    },
+    {
+      "title": "Particuliers | authentification",
+      "url": "https://cfspart.impots.gouv.fr/",
+      "snippet": "Les services disponibles Avec vos identifiants impots.gouv.fr, vous pouvez effectuer des démarches administratives sur des sites …"
+    },
+    {
+      "title": "Particulier - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "À la une Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 Vous …"
+    },
+    {
+      "title": "Déclarer mes revenus | impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/declarer-mes-revenus",
+      "snippet": "les questions - réponses : Quelle est la date limite de dépôt de ma déclaration de revenus ? Puis-je déclarer en ligne pour ma …"
+    },
+    {
+      "title": "Connexion à l'espace professionnel | impots.gouv.fr",
+      "url": "https://cfspro.impots.gouv.fr/",
+      "snippet": "Pour prouver que vous n'êtes pas un robot, veuillez recopier les caractères restitués dans l'extrait sonore alternatif à l'image suivante."
+    }
+  ]
+}

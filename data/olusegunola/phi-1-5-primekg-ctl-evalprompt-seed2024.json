@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "olusegunola/phi-1.5-primekg-ctl-evalprompt-seed2024",
+  "slug": "olusegunola-phi-1-5-primekg-ctl-evalprompt-seed2024",
+  "author": "olusegunola",
+  "url": "https://huggingface.co/olusegunola/phi-1.5-primekg-ctl-evalprompt-seed2024",
+  "created_at": "2026-09-27T00:59:11.000Z",
+  "updated_at": "2026-09-27T00:59:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50357392,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "olusegunola/phi-1.5-primekg-sft-seed2024 · Hugging Face",
+      "url": "https://huggingface.co/olusegunola/phi-1.5-primekg-sft-seed2024",
+      "snippet": "olusegunola / phi-1.5-primekg-sft-seed2024 Like 0 Transformers Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "olusegunola/phi-1.5-primekg-vanillakd-seed101 · Hugging Face",
+      "url": "https://huggingface.co/olusegunola/phi-1.5-primekg-vanillakd-seed101",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "The fastest path from prompt to production with Gemini"
+    },
+    {
+      "title": "olusegunola/phi-1.5-stage3-sft-cloned-seed999-merged",
+      "url": "https://featherless.ai/models/olusegunola/phi-1.5-stage3-sft-cloned-seed999-merged",
+      "snippet": "This model is a fine-tuned version, likely based on the Microsoft Phi-1.5 architecture, and is intended for general language generation tasks. Its small parameter count makes it suitable for applications requiring efficient inference and deployment on resource-constrained environments."
+    },
+    {
+      "title": "olusegunola/phi-1.5-stage3-sft-cloned-seed42-merged",
+      "url": "https://featherless.ai/models/olusegunola/phi-1.5-stage3-sft-cloned-seed42-merged",
+      "snippet": "Fine-tuned: The model name implies it has been fine-tuned (SFT - Supervised Fine-Tuning) from a Phi-1.5 base, with specific stages and a seed mentioned, indicating a deliberate training process. Potential Use Cases Given the limited information, this model is likely suitable for: General Language Tasks: Understanding and generating text."
+    }
+  ]
+}

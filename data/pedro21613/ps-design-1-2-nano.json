@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Pedro21613/PS-design-1.2-nano",
+  "slug": "pedro21613-ps-design-1-2-nano",
+  "author": "Pedro21613",
+  "url": "https://huggingface.co/Pedro21613/PS-design-1.2-nano",
+  "created_at": "2026-09-26T20:56:36.000Z",
+  "updated_at": "2026-09-26T20:57:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "design",
+    "html",
+    "tailwind",
+    "minimalist",
+    "nano",
+    "merged",
+    "conversational",
+    "pt",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519428,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

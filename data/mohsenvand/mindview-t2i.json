@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mohsenvand/mindview-t2i",
+  "slug": "mohsenvand-mindview-t2i",
+  "author": "mohsenvand",
+  "url": "https://huggingface.co/mohsenvand/mindview-t2i",
+  "created_at": "2026-09-26T23:19:42.000Z",
+  "updated_at": "2026-09-26T23:47:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "webgpu",
+    "ternary",
+    "flux",
+    "text-to-image",
+    "base_model:madebyollin/taef2",
+    "base_model:merge:madebyollin/taef2",
+    "base_model:prism-ml/Ternary-Bonsai-1.7B-gguf",
+    "base_model:merge:prism-ml/Ternary-Bonsai-1.7B-gguf",
+    "base_model:prism-ml/bonsai-image-ternary-4B-unpacked",
+    "base_model:merge:prism-ml/bonsai-image-ternary-4B-unpacked",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4508016172,
+  "parameters_human": "4.51B",
+  "storage_bytes": 1915223875,
+  "storage_human": "1.9 GB",
+  "base_model": "prism-ml/bonsai-image-ternary-4B-unpacked, prism-ml/Ternary-Bonsai-1.7B-gguf, madebyollin/taef2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porno BDSM Corset - Tube BDSM",
+      "url": "https://www.tubebdsm.com/fr/category/corset",
+      "snippet": "Streaming gratuit de clips de films BDSM Corset et de vidéos de tube sur TubeBDSM.com."
+    },
+    {
+      "title": "Sujet: enlèvement - bdsm.fr",
+      "url": "https://www.bdsm.fr/blog/tag/enl%C3%A8vement/",
+      "snippet": "Partager vos récits BDSM, vécus ou fantames est un moyen de partager vos pratiques et envies et à ce titre peut être un excellent …"
+    },
+    {
+      "title": "Deshabillage bdsm - vidéo / Les plus récents - Tube For World",
+      "url": "https://tube4world.com/fr/collection?what=deshabillage+bdsm&srt=latest&pg=1",
+      "snippet": "Et aussi: deshabillee torturee, bondage et deshabillage, undressing humiliation, se faire deshabiller, dechirer ses vetement, …"
+    },
+    {
+      "title": "Dressage d’un soumis – Récit BDSM",
+      "url": "https://www.recit-bdsm.com/dressage-dun-soumis/",
+      "snippet": "Rappel : Une femme particulièrement experte, ancienne entraineuse sportive s’est donné pour objectif de mettre son soumis à son …"
+    },
+    {
+      "title": "Idées de Pratiques BDSM et Liste de Jeux de Rôle SM - Maitresse …",
+      "url": "https://www.maitressekarine.com/idees-pratiques-bdsm/",
+      "snippet": "En manque d'inspiration ? Voici quelques idées de pratiques BDSM. Vous trouverez également des idées de scénarios ainsi que des …"
+    }
+  ]
+}

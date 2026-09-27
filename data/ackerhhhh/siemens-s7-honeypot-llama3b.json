@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "AckerHHHH/siemens-s7-honeypot-llama3B",
+  "slug": "ackerhhhh-siemens-s7-honeypot-llama3b",
+  "author": "AckerHHHH",
+  "url": "https://huggingface.co/AckerHHHH/siemens-s7-honeypot-llama3B",
+  "created_at": "2026-09-27T00:27:57.000Z",
+  "updated_at": "2026-09-27T00:28:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114517464,
+  "storage_human": "115 MB",
+  "base_model": "unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - sefcom/honeyplc: High-interaction Honeypot for PLCs and ...",
+      "url": "https://github.com/sefcom/honeyplc",
+      "snippet": "HoneyPLC is a high interaction PLC honeypot designed to simulate multiple PLC models from different vendors. It can log S7comm interactions and can store Ladder Logic programs injected by an attacker."
+    },
+    {
+      "title": "AI-Generated Exploit Siemens S7 PLC: 5 Agencies Warn of Active Attacks",
+      "url": "https://www.decryptiondigest.com/blog/ai-exploit-scripts-siemens-s7-plc-attack",
+      "snippet": "AI-generated exploit Siemens S7 PLC attacks confirmed by NSA, CISA, FBI. Attackers use Python snap7 scripts hitting water, energy, manufacturing."
+    },
+    {
+      "title": "AI-backed campaign targeting vulnerable Siemens S7 devices, CISA and ...",
+      "url": "https://www.cybersecuritydive.com/news/ai-hackers-siemens-s7-devices-cisa-fbi/828321/",
+      "snippet": "AI-backed campaign targeting vulnerable Siemens S7 devices, CISA and FBI warn Hackers are developing scripts disguised as legitimate software in attacks aimed at multiple industries, including energy and water."
+    },
+    {
+      "title": "Urgent Warning: AI Attacks Are Exploiting Siemens S7 PLCs — Here&#x27;s How ...",
+      "url": "https://www.thetechedvocate.org/urgent-warning-ai-attacks-are-exploiting-siemens-s7-plcs-heres-how-to-fight-back/",
+      "snippet": "AI-assisted attacks are likely to employ highly convincing social engineering tactics, potentially even generating personalized phishing emails or fake software updates that appear incredibly legitimate. Employees interacting with Siemens S7 PLCs, from engineers to maintenance staff, need specialized security awareness training."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

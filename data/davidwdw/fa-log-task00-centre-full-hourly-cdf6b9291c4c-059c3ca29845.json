@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-log-task00-centre-full-hourly-cdf6b9291c4c-059c3ca29845",
+  "slug": "davidwdw-fa-log-task00-centre-full-hourly-cdf6b9291c4c-059c3ca29845",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-cdf6b9291c4c-059c3ca29845",
+  "created_at": "2026-09-26T19:58:58.000Z",
+  "updated_at": "2026-09-26T19:58:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Facebook - log in or sign up",
+      "url": "https://secure.facebook.com/",
+      "snippet": "Connect with friends and the world around you on Facebook."
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/index.php/?lang=en",
+      "snippet": "Connect with friends, family, and people you know on Facebook."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/pointnext-sm-c64.modelnet40.openpoints",
+  "slug": "torch-pointcloud-pointnext-sm-c64-modelnet40-openpoints",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/pointnext-sm-c64.modelnet40.openpoints",
+  "created_at": "2026-08-28T18:18:50.000Z",
+  "updated_at": "2026-09-26T21:48:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "pointnext",
+    "classification",
+    "dataset:modelnet40",
+    "arxiv:2206.04670",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4540200,
+  "parameters_human": "4.5M",
+  "storage_bytes": 36344608,
+  "storage_human": "36 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ModelNet40",
+      "metric": "OA",
+      "value": 93.96
+    },
+    {
+      "task": null,
+      "dataset": "ModelNet40",
+      "metric": "mAcc",
+      "value": 91.14
+    }
+  ],
+  "sources": [
+    {
+      "title": "57 Best Free Online Movie Streaming Sites in 2026 (Tested)",
+      "url": "https://privacysavvy.com/geoblocking/streaming/free-streaming-sites-for-movies-tv-shows/",
+      "snippet": "Jun 7, 2026 · We list the best free streaming sites based on extensive research and vigorous tests. Watch your favorite movies and …Read more"
+    },
+    {
+      "title": "Watch Free Movies Online with Plex",
+      "url": "https://www.plex.tv/watch-free/",
+      "snippet": "It has never been easier to watch free movies online. Once you register for a free account with Plex, we’ll keep your place from …"
+    },
+    {
+      "title": "Watch Free Movies & TV Shows Online - Popcornflix",
+      "url": "https://popcornflix.com/categories/movies",
+      "snippet": "Watch movies for FREE on Popcornflix. Popcornflix offers more than 10,000+ full movies and shows in genres like Action, Horror, Sci …"
+    },
+    {
+      "title": "Free Movies to Watch Right Now — No Subscription Needed",
+      "url": "https://selectmovie.com/where-to-watch/free/",
+      "snippet": "Watch great movies for free — no subscription required. Browse the best free films on Tubi, Pluto TV, Kanopy, Peacock Free, and …"
+    },
+    {
+      "title": "10 Best Legal Sites to Watch Free Movies Online (2026)",
+      "url": "https://wheretomovie.com/blog/top-10-best-sites-to-watch-free-movies",
+      "snippet": "Feb 27, 2026 · Looking for the best legal movie streaming sites with no sign-up? Discover our curated list of safe, HD platforms to …"
+    }
+  ]
+}

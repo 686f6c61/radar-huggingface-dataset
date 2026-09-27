@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-pi05-attnfix-balanced-8000-0a7d89e6f4fb-df12dbb529c6",
+  "slug": "davidwdw-fa-pi05-attnfix-balanced-8000-0a7d89e6f4fb-df12dbb529c6",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-pi05-attnfix-balanced-8000-0a7d89e6f4fb-df12dbb529c6",
+  "created_at": "2026-09-26T21:59:32.000Z",
+  "updated_at": "2026-09-26T22:00:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12440421292,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

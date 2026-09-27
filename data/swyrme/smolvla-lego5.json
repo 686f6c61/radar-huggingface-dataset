@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "swyrme/smolvla-lego5",
+  "slug": "swyrme-smolvla-lego5",
+  "author": "swyrme",
+  "url": "https://huggingface.co/swyrme/smolvla-lego5",
+  "created_at": "2026-09-27T01:01:35.000Z",
+  "updated_at": "2026-09-27T01:01:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:swyrme/so101-lego5_20260926_092321",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906727744,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ソーシャル・ネットワーキング サービス [mixi (ミクシィ)]",
+      "url": "https://mixi.jp/",
+      "snippet": "mixi(ミクシィ)は、友人・知人とのコミュニケーションをさらに便利に楽しくするSNSというサービスです。"
+    },
+    {
+      "title": "鉛筆「uni」がパッケージ刷新 | mixiニュース",
+      "url": "https://news.mixi.jp/view_news.pl?id=8952689&media_id=54",
+      "snippet": "Sep 17, 2026 · 三菱鉛筆が、ロングセラー鉛筆『uni（ユニ）』と『Hi-uni（ハイユニ）』のパッケージをリニューアル。長年親しま …"
+    },
+    {
+      "title": "Xtube replacement - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/xtube-replacement.631425/",
+      "snippet": "Aug 23, 2021 · Anyone know a good replacement for XTube since they are closing shop Sep 1??"
+    },
+    {
+      "title": "WHO IS YOUR PORNSTAR CRUSH??? | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/who-is-your-pornstar-crush.161215/",
+      "snippet": "Dec 1, 2010 · Ok here is how this thread goes: We all have that one (or two) crush on a certain pornstar. One that just always …"
+    },
+    {
+      "title": "外務省テロ訓練、衣装が物議 | mixiニュース",
+      "url": "https://news.mixi.jp/view_news.pl?id=8955788&media_id=4",
+      "snippet": "Sep 19, 2026 · 外務省＝東京都千代田区 外務省が海外でのテロや誘拐に備えて今月行った官民合同訓練の写真が物議を醸している …"
+    }
+  ]
+}

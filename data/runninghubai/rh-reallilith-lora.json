@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-reallilith-lora",
+  "slug": "runninghubai-rh-reallilith-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-reallilith-lora",
+  "created_at": "2026-09-26T21:59:01.000Z",
+  "updated_at": "2026-09-26T22:00:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 236138836,
+  "storage_human": "236 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Decathlon | Chaussures de sport, équipements et matériel sportif",
+      "url": "https://www.decathlon.fr/?msockid=3fbb24344456602c112733d44543617c",
+      "snippet": "Tout Decathlon dans votre poche Profitez de 5€ offerts dès 100€ d'achat, en exclusivité sur l'application decathlon shopping !"
+    },
+    {
+      "title": "Magasins Decathlon | Trouvez le magasin le plus proche de chez vous",
+      "url": "https://www.decathlon.fr/store-locator?msockid=3fbb24344456602c112733d44543617c",
+      "snippet": "Profitez du meilleur de Decathlon près de chez vous. Utilisez notre carte pour trouver votre magasin, vérifier les horaires d'ouverture …"
+    },
+    {
+      "title": "Decathlon | Chaussures de sport, équipements de sport et matériel de …",
+      "url": "https://www.decathlon.be/fr",
+      "snippet": "Rappels produits Votre sécurité est notre priorité. Pour rester informé et pratiquer votre sport en toute confiance, vous retrouverez ici …"
+    },
+    {
+      "title": "Matériel de sport & équipement sportif | Decathlon Pro",
+      "url": "https://www.decathlonpro.fr/",
+      "snippet": "Decathlon PRO propose à la fois du matériel d’entraînement, matériel d’investissement, équipement des joueurs et accessoires ou …"
+    },
+    {
+      "title": "Decathlon | Sports Shoes, Sports Gear & Sports Equipment",
+      "url": "https://www.decathlon.co.uk/",
+      "snippet": "Shop 70+ sports in-store & online, free shipping on select in-app purchases. Free click & collect. 2-year Decathlon product warranty. …"
+    }
+  ]
+}

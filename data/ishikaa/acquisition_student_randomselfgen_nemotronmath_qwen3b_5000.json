@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_randomselfgen_nemotronmath_qwen3b_5000",
+  "slug": "ishikaa-acquisition_student_randomselfgen_nemotronmath_qwen3b_5000",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_randomselfgen_nemotronmath_qwen3b_5000",
+  "created_at": "2026-09-26T22:22:31.000Z",
+  "updated_at": "2026-09-26T22:23:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348896,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=ishikaa%2Facquisition_student_random_omnimath_qwen14b",
+      "snippet": "ishikaa/acquisition_student_random_omnimath_qwen14b Text Generation • 15B•Updated 4 days ago• 835"
+    },
+    {
+      "title": "acquisition_student_randomselfgen_mmlupro_qwen3b_5000",
+      "url": "https://friendli.ai/models/ishikaa/acquisition_student_randomselfgen_mmlupro_qwen3b_5000",
+      "snippet": "Deploy acquisition_student_randomselfgen_mmlupro_qwen3b_5000 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=ishikaa%2Facquisition_student_original_omnimath_qwen14b",
+      "snippet": "ishikaa/acquisition_student_original_omnimath_qwen14b_sofia Text Generation • 15B•Updated 6 days ago• 374"
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron%20",
+      "snippet": "Nemotron Safety Datasets High-quality, curated datasets for multilingual content safety, advanced policy reasoning, and threat-aware AI—spanning moderation data and audio-based safety signals for modern AI assistants."
+    },
+    {
+      "title": "Local AI in 2026: The Best Models to Run on Your Own Hardware (Qwen ...",
+      "url": "https://www.aimagicx.com/blog/local-ai-models-2026-qwen-mistral-llama-hardware-guide",
+      "snippet": "Run powerful AI models locally for privacy and cost savings. This updated guide covers Mistral Small 4, Qwen 3.5, Llama 4, and Nemotron Nano 4B with hardware requirements, setup instructions, and performance benchmarks."
+    }
+  ]
+}

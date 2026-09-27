@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "pynk17/pk_fewshot-aur-model",
+  "slug": "pynk17-pk_fewshot-aur-model",
+  "author": "pynk17",
+  "url": "https://huggingface.co/pynk17/pk_fewshot-aur-model",
+  "created_at": "2026-09-27T01:11:20.000Z",
+  "updated_at": "2026-09-27T01:19:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "dataset:huggan/few-shot-aurora",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 178237955,
+  "parameters_human": "178.2M",
+  "storage_bytes": 713016388,
+  "storage_human": "713 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pynk17 (Priyanka Kamila) - Hugging Face",
+      "url": "https://huggingface.co/pynk17",
+      "snippet": "AI & ML interests Deeply interested in Multimodal AI/ML, focusing on Computer Vision (Video Diffusion, Semantic Segmentation) and NLP. Practical experience in designing, architecting, and deploying end-to-end AI systems using PyTorch/TensorFlow, specializing in advanced architectures like Diffusion Models (UNet3D) and CLIP for complex tasks like Text-to-Video generation."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "MossyModels — Free YOLO and ONNX AI Models",
+      "url": "https://mossymodels.com/",
+      "snippet": "Free community library of YOLO and ONNX AI aimbot models for Fortnite, Valorant, Warzone, Apex Legends, CS2, and 40+ games. Download ONNX and PyTorch weights."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "GitHub - dtinth/fewshot: Leverage few-shot learning to prompt Gemini AI ...",
+      "url": "https://github.com/dtinth/fewshot",
+      "snippet": "Leverage few-shot learning to prompt Gemini AI model [WIP] - dtinth/fewshot"
+    }
+  ]
+}

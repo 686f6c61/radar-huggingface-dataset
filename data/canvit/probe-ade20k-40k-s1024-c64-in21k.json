@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "canvit/probe-ade20k-40k-s1024-c64-in21k",
+  "slug": "canvit-probe-ade20k-40k-s1024-c64-in21k",
+  "author": "canvit",
+  "url": "https://huggingface.co/canvit/probe-ade20k-40k-s1024-c64-in21k",
+  "created_at": "2026-03-15T23:23:00.000Z",
+  "updated_at": "2026-09-26T23:32:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "canvit-pytorch",
+  "languages": [],
+  "tags": [
+    "canvit-pytorch",
+    "safetensors",
+    "canvit",
+    "active-vision",
+    "vision-transformer",
+    "ade20k",
+    "linear-probe",
+    "image-segmentation",
+    "dataset:scene_parse_150",
+    "arxiv:2603.22570",
+    "base_model:canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02",
+    "base_model:finetune:canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 159894,
+  "parameters_human": "159894",
+  "storage_bytes": 640256,
+  "storage_human": "640256 B",
+  "base_model": "canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "canvit/probe-ade20k-40k-s512-c10-in21k · Hugging Face",
+      "url": "https://huggingface.co/canvit/probe-ade20k-40k-s512-c10-in21k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CanViT ADE20K Segmentation Probes (PyTorch) - Hugging Face",
+      "url": "https://huggingface.co/collections/canvit/canvit-ade20k-segmentation-probes-pytorch",
+      "snippet": "Linear segmentation probes trained on frozen CanViT canvas features for ADE20K semantic segmentation (150 classes)."
+    },
+    {
+      "title": "GitHub - m2b3/CanViT-PyTorch: Reference implementation of the Canvas ...",
+      "url": "https://github.com/m2b3/CanViT-PyTorch",
+      "snippet": "ADE20K Semantic Segmentation CanViTForSemanticSegmentation bundles a CanViT and a SegmentationProbe head into one model. forward returns per-pixel logits at canvas-grid resolution; predict adds bilinear upsampling."
+    },
+    {
+      "title": "GitHub - m2b3/CanViT-eval",
+      "url": "https://github.com/m2b3/CanViT-eval",
+      "snippet": "Subcommands: ade20k-seg-canvit: ADE20K mIoU via a CanViT episode (T-step rollout, mIoU per timestep). ade20k-seg-dinov3: ADE20K mIoU with a passive DINOv3 backbone (single forward at a fixed input resolution, mIoU at t=0). Baseline. in1k-clf: ImageNet-1k top-k classification, fused-frozen-probe or finetuned. reconstruction: cosine similarity between CanViT canvas/CLS and DINOv3 teacher ..."
+    },
+    {
+      "title": "ADE20K dataset",
+      "url": "https://ade20k.csail.mit.edu/",
+      "snippet": "Consistency set 64 images and annotations used for checking the annotation consistency (download)"
+    }
+  ]
+}

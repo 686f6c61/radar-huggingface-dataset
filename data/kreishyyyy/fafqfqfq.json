@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "kreishyyyy/fafqfqfq",
+  "slug": "kreishyyyy-fafqfqfq",
+  "author": "kreishyyyy",
+  "url": "https://huggingface.co/kreishyyyy/fafqfqfq",
+  "created_at": "2026-09-26T23:02:31.000Z",
+  "updated_at": "2026-09-26T23:06:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 237043503,
+  "storage_human": "237 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeux d'Argent et de Hasard en ligne : Française des Jeux | FDJ®",
+      "url": "https://www.fdj.fr/?msockid=1a6ff04181b76c500c4de7a080226d25",
+      "snippet": "FDJ vous propose des outils pour garder le contrôle. Suivez-nous ! (23) 100 000 € minimum par tirage à partager au rang 1. Lorsque …"
+    },
+    {
+      "title": "Derniers tirages Loto®, EuroMillions - My Million, Keno ... - FDJ®",
+      "url": "https://www.fdj.fr/jeux-de-tirage/resultats?msockid=1a6ff04181b76c500c4de7a080226d25",
+      "snippet": "Découvrez si vous avez gagné en un clin d'oeil ! Vous avez manqué le dernier tirage LOTO®, Euro Millions-My Million® ou Joker+® …"
+    },
+    {
+      "title": "Résultat LOTO FDJ - Tirage en Direct, Numéros Gagnants et Gains",
+      "url": "https://www.secretsdujeu.com/page/jeux_loto_resultats.html",
+      "snippet": "Sep 19, 2026 · Le dernier tirage du Loto a eu lieu le samedi 19 septembre 2026. La combinaison gagnante à ce tirage est 11-12-39 …"
+    },
+    {
+      "title": "Resultats FDJ du jour - Loto, EuroMillions, EuroDreams",
+      "url": "https://www.mes-resultats-fdj.fr/",
+      "snippet": "3 days ago · Resultats FDJ en direct : numeros gagnants du dernier tirage Loto, EuroMillions et EuroDreams, jackpot et prochain …"
+    },
+    {
+      "title": "Mon compte : connexion | FDJ®",
+      "url": "https://www.fdj.fr/compte?msockid=1a6ff04181b76c500c4de7a080226d25",
+      "snippet": "Jouez en ligne aux jeux d'argent FDJ® : Illiko, LOTO®, EuroMillions, Keno et devenez peut-être millionnaire !"
+    }
+  ]
+}

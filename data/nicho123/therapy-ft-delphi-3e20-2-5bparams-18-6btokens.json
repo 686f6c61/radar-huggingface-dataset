@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Nicho123/therapy-ft-delphi-3e20-2.5Bparams-18.6Btokens",
+  "slug": "nicho123-therapy-ft-delphi-3e20-2-5bparams-18-6btokens",
+  "author": "Nicho123",
+  "url": "https://huggingface.co/Nicho123/therapy-ft-delphi-3e20-2.5Bparams-18.6Btokens",
+  "created_at": "2026-08-19T21:37:14.000Z",
+  "updated_at": "2026-09-27T01:06:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "therapy",
+    "continued-pretraining",
+    "scaling-laws",
+    "base_model:marin-community/delphi-3e20-2.5Bparams-18.6Btokens",
+    "base_model:finetune:marin-community/delphi-3e20-2.5Bparams-18.6Btokens",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35642030849,
+  "storage_human": "35.6 GB",
+  "base_model": "marin-community/delphi-3e20-2.5Bparams-18.6Btokens",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Morrowind:Nerer Beneran - UESP Wiki - The Unofficial Elder Scrolls …",
+      "url": "https://en.uesp.net/wiki/Morrowind:Nerer_Beneran",
+      "snippet": "Sep 10, 2021 · Nerer Beneran is a Dark Elf knight who has fallen off the right track. He is now hiding in Sargon from a murder charge."
+    },
+    {
+      "title": "Morrowind:Beneran's Bounty - UESP Wiki - The Unofficial Elder …",
+      "url": "https://en.uesp.net/wiki/Morrowind:Beneran%27s_Bounty",
+      "snippet": "Percius Mercius in the Ald'ruhn Guild of Fighters asks you to collect the bounty on the outlaw Nerer Beneran by killing him. Nerer is …"
+    },
+    {
+      "title": "Nerer Beneran - Elder Scrolls",
+      "url": "https://elderscrolls.fandom.com/wiki/Nerer_Beneran",
+      "snippet": "Nerer has a bounty on his head. Percius Mercius of the Fighters Guild sends the Nerevarine to find and kill Beneran. *Disclosure: …"
+    },
+    {
+      "title": "Beneran's Bounty - Elder Scrolls",
+      "url": "https://elderscrolls.fandom.com/wiki/Beneran%27s_Bounty",
+      "snippet": "Background Percius Mercius told me there is a bounty for the outlaw Nerer Beneran. He is hiding in the cavern of Sargon."
+    },
+    {
+      "title": "Morrowind - Guild of Fighters",
+      "url": "https://cryxli.github.io/tes3/fighters/a02.html",
+      "snippet": "Percius Mercius in the Ald-ruhn, Guild of Fighters asks you to collect the bounty on the outlaw Nerer Beneran by killing him. Nerer is …"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "thunderboltc/combined_mbart_sanlishTObangla",
+  "slug": "thunderboltc-combined_mbart_sanlishtobangla",
+  "author": "thunderboltc",
+  "url": "https://huggingface.co/thunderboltc/combined_mbart_sanlishTObangla",
+  "created_at": "2026-09-26T20:10:51.000Z",
+  "updated_at": "2026-09-26T23:19:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mbart",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:facebook/mbart-large-50-many-to-many-mmt",
+    "base_model:finetune:facebook/mbart-large-50-many-to-many-mmt",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 611129542,
+  "parameters_human": "611.1M",
+  "storage_bytes": 175992005375,
+  "storage_human": "176.0 GB",
+  "base_model": "facebook/mbart-large-50-many-to-many-mmt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

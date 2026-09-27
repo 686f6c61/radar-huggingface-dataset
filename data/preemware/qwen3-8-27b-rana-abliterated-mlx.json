@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "preemware/Qwen3.8-27B-RANA-abliterated-MLX",
+  "slug": "preemware-qwen3-8-27b-rana-abliterated-mlx",
+  "author": "preemware",
+  "url": "https://huggingface.co/preemware/Qwen3.8-27B-RANA-abliterated-MLX",
+  "created_at": "2026-09-26T18:21:34.000Z",
+  "updated_at": "2026-09-26T18:43:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mlx-vlm",
+    "apple-silicon",
+    "abliteration",
+    "refusal-direction",
+    "qwen3",
+    "vision-language",
+    "4-bit",
+    "5-bit",
+    "6-bit",
+    "8-bit",
+    "image-text-to-text",
+    "conversational",
+    "base_model:preemware/Qwen3.8-27B-RANA-abliterated",
+    "base_model:quantized:preemware/Qwen3.8-27B-RANA-abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 143345655811,
+  "storage_human": "143.3 GB",
+  "base_model": "preemware/Qwen3.8-27B-RANA-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oxva Xlim SQ Pro 2 Price in Pakistan | Best Price | VapeStation",
+      "url": "https://vapestation.pk/product/oxva-xlim-sq-pro-2-pod-kit-30w-1600mah/",
+      "snippet": "Oxva Xlim SQ Pro 2 30W Price in Pakistan Rs.6,999/-. The Xlim SQ Pro 2 carries forward the compact square body shape of the …"
+    },
+    {
+      "title": "OXVA Xlim SQ Pro 2 Pod Kit Price in Pakistan – VapeMall",
+      "url": "https://vapemall.pk/products/oxva-xlim-sq-pro2-kit-at-best-price-in-pakistan",
+      "snippet": "OXVA Xlim SQ Pro 2 Pod Kit price in Pakistan. Features 1600mAh battery, 30W, and 2ml pod. Cash on delivery and same-day …"
+    },
+    {
+      "title": "Oxva Xlim SQ Pro 2 Pod Kit 30W | Price In Pakistan",
+      "url": "https://vapebar.pk/product/oxva-xlim-sq-pro-2-pod-kit-30-watts-1600-mah/",
+      "snippet": "Oxva Xlim SQ Pro 2 Pod Kit is available in Pakistan at a price of Rs. 6799. You can order it from our website, Delivery all over Pakistan."
+    },
+    {
+      "title": "OXVA Xlim SQ Pro 2 Pod Kit Price in Pakistan | Smokes Hub",
+      "url": "https://smokeshub.pk/products/xlim-sq-pro-2",
+      "snippet": "Buy the OXVA Xlim SQ Pro 2 Pod Kit in Pakistan at Smokes Hub for Rs.7,500 — smart chipset, TFT display, mesh coils, Type-C. …"
+    },
+    {
+      "title": "Oxva Xlim SQ Pro 2 Pod System Kit at Lowest Price in Pakistan",
+      "url": "https://devapoursarea.pk/product/oxva-xlim-sq-pro-2-pod-kit/",
+      "snippet": "The Oxva Xlim SQ Pro 2 Pod System Kit is available in Pakistan for the Price of Rs. 6800/-. You can easily order it online from our …"
+    }
+  ]
+}

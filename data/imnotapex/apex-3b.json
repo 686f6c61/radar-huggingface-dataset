@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "imnotapex/Apex-3B",
+  "slug": "imnotapex-apex-3b",
+  "author": "imnotapex",
+  "url": "https://huggingface.co/imnotapex/Apex-3B",
+  "created_at": "2026-09-26T22:25:35.000Z",
+  "updated_at": "2026-09-26T22:27:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "apex",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929902592,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CNEWS | Actualités, Infos et News en direct vidéo et replay",
+      "url": "https://www.cnews.fr/",
+      "snippet": "A l'occasion du premier voyage apostolique du pape Léon XIV en France, CNews vous propose de suivre en direct la visite du …Read more"
+    },
+    {
+      "title": "Le Direct | CNEWS",
+      "url": "https://www.cnews.fr/le-direct",
+      "snippet": "En direct Léon XIV en France : à l'Institut Catholique de Paris, le pape «émerveillé par le nombre de personnes qui se présentent …Read more"
+    },
+    {
+      "title": "Actualité : Toute l'actu du jour et les dernières infos en ... - CNEWS",
+      "url": "https://www.cnews.fr/actualite",
+      "snippet": "Retrouvez toutes les actualités du jour ainsi que toutes les dernières infos France & Monde en direct 24h/24 sur CNEWS.frRead more"
+    },
+    {
+      "title": "EN - CNEWS",
+      "url": "https://www.cnews.fr/en",
+      "snippet": "Mentions légales Politique cookies Gestion des cookies IA - Droit d’opposition CGU Actualité Mots Croisés Mots Fléchés Solitaire …Read more"
+    },
+    {
+      "title": "CNEWS",
+      "url": "https://www.cnews.fr/cnews",
+      "snippet": "CNEWS Duel : Laurence Ferrari présente son nouveau rendez-vous politique ce mercredi à 21H En direct Présidentielle 2027 : «Il …Read more"
+    }
+  ]
+}

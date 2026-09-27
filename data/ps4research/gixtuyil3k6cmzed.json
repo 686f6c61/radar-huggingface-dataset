@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "PS4Research/GIxTUYIl3K6cMzEd",
+  "slug": "ps4research-gixtuyil3k6cmzed",
+  "author": "PS4Research",
+  "url": "https://huggingface.co/PS4Research/GIxTUYIl3K6cMzEd",
+  "created_at": "2026-09-27T00:48:01.000Z",
+  "updated_at": "2026-09-27T00:50:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-14B-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-14B-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29548088405,
+  "storage_human": "29.5 GB",
+  "base_model": "unsloth/Qwen3-14B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Live Couples Sex Cams. Free Nude Live XXX Cams - whatCams",
+      "url": "https://whatcams.com/couples/",
+      "snippet": "Here, you'll find live cams featuring real couples who are ready to share their intimate moments with you. Watch as these duos bring …"
+    },
+    {
+      "title": "Couple Cams: Free Live Couples Sex Cams at Home | NudeLive",
+      "url": "https://nudelive.com/couple-cams/",
+      "snippet": "Watch free couple cams: live couples sex cams from real bedrooms. You help set the pace with tips and requests. No credit card …"
+    },
+    {
+      "title": "Lover Videos - Passionate Couples Banging in Close Grips",
+      "url": "https://www.sexm.xxx/categories/693/lover",
+      "snippet": "Lover clips feature couples fucking tight, gripping asses during hard rides. Sexm delivers top lover porn now!"
+    },
+    {
+      "title": "Couples Cams Live in Sex Chat, XXX Shows on Free Webcams",
+      "url": "https://stripchat.com/couples",
+      "snippet": "Live couple porn cams with real partners performing together. Straight, gay and lesbian pairs, foreplay through to penetrative sex, …"
+    },
+    {
+      "title": "Couples Sex Cams - Watch Live Sex Shows Free - Camsoda",
+      "url": "https://www.camsoda.com/couples",
+      "snippet": "2 days ago · Watch real couples stream live sex cams on CamSoda. Browse straight, lesbian, and bi couples. Filter by ethnicity, …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "clarezahermetica/landling-3.0-cp3-test-8b",
+  "slug": "clarezahermetica-landling-3-0-cp3-test-8b",
+  "author": "clarezahermetica",
+  "url": "https://huggingface.co/clarezahermetica/landling-3.0-cp3-test-8b",
+  "created_at": "2026-09-26T20:42:48.000Z",
+  "updated_at": "2026-09-26T20:52:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "landling",
+    "lora",
+    "qlora",
+    "raft",
+    "development-checkpoint",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98784242,
+  "storage_human": "99 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "clarezahermetica/landling · Hugging Face",
+      "url": "https://huggingface.co/clarezahermetica/landling",
+      "snippet": "12 Inference ProvidersNEW Text Generation This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support Model tree for clarezahermetica/landling Base model TinyLlama/TinyLlama-1.1B-Chat-v1."
+    },
+    {
+      "title": "GitHub - clarezahermetica/landling: A tiny LoRA-trained language-model ...",
+      "url": "https://github.com/clarezahermetica/landling",
+      "snippet": "The Landling is a small experimental language model trained to generate text shaped by Nick Land&#x27;s public writing, vocabulary, and temperament. He began as a very ridiculous question: how much of a recognizable voice can you teach a 1.1B-parameter model with LoRA, a free GPU, and a manually assembled dataset?"
+    },
+    {
+      "title": "clarezahermetica/landling-3.0-cp1 · Hugging Face",
+      "url": "https://huggingface.co/clarezahermetica/landling-3.0-cp1",
+      "snippet": "Landling 3.0 — public checkpoint 1 landling-3.0-cp1 is a development checkpoint of Landling, adapted from Qwen/Qwen2.5-3B-Instruct. This repository mainly exists as a versioned record of the model&#x27;s development. This repository contains a LoRA adapter, tokenizer files, its chat template, training metadata, and provenance."
+    },
+    {
+      "title": "clarezahermetica/README.md at main - GitHub",
+      "url": "https://github.com/clarezahermetica/clarezahermetica/blob/main/README.md",
+      "snippet": "220 lines (186 loc) · 7.79 KB clarezahermetica README.md 220 lines (186 loc) · 7.79 KB"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 507 AI models across 486 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

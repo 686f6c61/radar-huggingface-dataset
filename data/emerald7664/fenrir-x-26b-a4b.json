@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Emerald7664/Fenrir-X-26B-A4B",
+  "slug": "emerald7664-fenrir-x-26b-a4b",
+  "author": "Emerald7664",
+  "url": "https://huggingface.co/Emerald7664/Fenrir-X-26B-A4B",
+  "created_at": "2026-09-27T00:17:19.000Z",
+  "updated_at": "2026-09-27T00:17:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "mergekit",
+    "merge",
+    "roleplay",
+    "storytelling",
+    "conversational",
+    "base_model:Darkhn/Gemma-4-26B-A4B-Animus-V14.1-FFT",
+    "base_model:merge:Darkhn/Gemma-4-26B-A4B-Animus-V14.1-FFT",
+    "base_model:Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2",
+    "base_model:merge:Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2",
+    "base_model:TeichAI/gemma-4-26B-A4B-it-Claude-Opus-Distill-v2",
+    "base_model:merge:TeichAI/gemma-4-26B-A4B-it-Claude-Opus-Distill-v2",
+    "base_model:electroglyph/gemma4-26b-fiction-bf16",
+    "base_model:merge:electroglyph/gemma4-26b-fiction-bf16",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:merge:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51647211551,
+  "storage_human": "51.6 GB",
+  "base_model": "TeichAI/gemma-4-26B-A4B-it-Claude-Opus-Distill-v2, electroglyph/gemma4-26b-fiction-bf16, google/gemma-4-26B-A4B-it, Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2, Darkhn/Gemma-4-26B-A4B-Animus-V14.1-FFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gratis spellen – Speel online spellen op spelletjes.nl",
+      "url": "https://www.spelletjes.nl/",
+      "snippet": "Spelletjes.nl heeft meer dan 10.000 gratis online spellen voor jong en oud. Speel nu gratis leuke spellen!"
+    },
+    {
+      "title": "Rummikub - Speel Rummikub online op Spelletjes.nl",
+      "url": "https://www.spelletjes.nl/spel/rummikub",
+      "snippet": "The original Rummikub is one of the most popular family games in the world.The unique combination of tactical thinking, luck and …"
+    },
+    {
+      "title": "Mahjong Spelletjes - Speel gratis Mahjong Spelletjes online op ...",
+      "url": "https://www.spelletjes.nl/spellen/mahjong?page=1",
+      "snippet": "Hoe snel kun jij de stenen bij elkaar zoeken in de online mahjong spelletjes op Spelletjes.nl? Verbeter je skills met deze online …"
+    },
+    {
+      "title": "Spelletjes voor meisjes - Speel spelletjes voor meisjes online op ...",
+      "url": "https://www.spelletjes.nl/spellen/meiden?page=1",
+      "snippet": "Meiden spelletjes op Spelletjes.nl Meer dan 5000 gratis spelletjes en online games voor elke leeftijd. Girls games op Spelletjes.nl!"
+    },
+    {
+      "title": "Bubble Shooter - Speel Bubble Shooter op Spelletjes.nl",
+      "url": "https://www.spelletjes.nl/spel/bubble-shooter",
+      "snippet": "Bubble Shooter zal je verslaafd maken vanaf de eerste bubbels die je neerschiet. Dit is een tijdloos spel dat nog altijd uitdagend blijft. …"
+    }
+  ]
+}

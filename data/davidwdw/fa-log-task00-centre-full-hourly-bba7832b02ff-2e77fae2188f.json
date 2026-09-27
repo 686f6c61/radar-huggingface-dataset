@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-log-task00-centre-full-hourly-bba7832b02ff-2e77fae2188f",
+  "slug": "davidwdw-fa-log-task00-centre-full-hourly-bba7832b02ff-2e77fae2188f",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-bba7832b02ff-2e77fae2188f",
+  "created_at": "2026-09-26T19:58:54.000Z",
+  "updated_at": "2026-09-26T19:58:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hearts Card Classic | Play online in your browser for free!",
+      "url": "http://heartscardclassic.com/",
+      "snippet": "This is the best free hearts game online. The site is built with HTML CSS and Javascript."
+    },
+    {
+      "title": "Hearts - Online & Free | Play Classic Card Games",
+      "url": "https://worldofcardgames.com/hearts",
+      "snippet": "Play Hearts online to your heart's content. You can pair up with people by joining one of our tables, play by yourself against our bots …"
+    },
+    {
+      "title": "Hearts | Play it online - CardGames.io",
+      "url": "https://cardgames.io/hearts/",
+      "snippet": "Each heart gives one penalty point. There is also one special card, the Queen of spades, which gives 13 penalty points. When the …"
+    },
+    {
+      "title": "Free Hearts Card Game: Play Online in Full-Screen, Without Download",
+      "url": "https://www.heartsgame.com/",
+      "snippet": "Hearts distinguishes itself from most other card games by emphasizing a unique objective: rather than striving for the highest score, …"
+    },
+    {
+      "title": "Hearts Card Classic - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.gamesbypost.heartscardclassic&hl=en-US",
+      "snippet": "Apr 10, 2026 · Improve your skills and become a Hearts pro! Hearts Card Classic has three different difficulty settings so you can …"
+    }
+  ]
+}

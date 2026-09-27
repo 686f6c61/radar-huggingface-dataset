@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-training-recipe-snapshot-20260925-91315f809ec3",
+  "slug": "davidwdw-fa-training-recipe-snapshot-20260925-91315f809ec3",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-training-recipe-snapshot-20260925-91315f809ec3",
+  "created_at": "2026-09-26T20:00:02.000Z",
+  "updated_at": "2026-09-26T20:00:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17981790,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLaDA-Image ships 6B open image model with full training recipe - AI Weekly",
+      "url": "https://aiweekly.co/alerts/llada-image-ships-6b-open-image-model-with-full-training-recipe",
+      "snippet": "A distilled variant, LLaDA-Image-Turbo, brings inference down to 2-4 sampling steps. The paper argues the base model \"produces highly photorealistic images while accurately following fine-grained editing instructions,\" and the authors say they \"release our model weights, training code, and detailed recipes\" to support follow-on work."
+    },
+    {
+      "title": "David Jonsson reveals intense training for Black Panther role",
+      "url": "https://www.msn.com/en-us/entertainment/celebrities/david-jonsson-shares-first-training-update-as-black-panther/ss-AA2cMthV",
+      "snippet": "First training glimpse: Jonsson posted Instagram images of workouts, hikes, and recovery routines as part of his preparation for Black Panther 3. Role and release: He will portray Prince T ..."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Training recipe | AI Research Papers",
+      "url": "https://www.aimodels.fyi/research-topics/training-recipe",
+      "snippet": "A training recipeis a standardized set of hyperparameters, architectural configurations, and optimization procedures used to train a machine learning model to convergence. While the model architecture (like a Transformer) defines the \"blueprint,\" the recipe provides the specific instructions for the training process. Key components typically include the learning rate schedule, batch size ..."
+    },
+    {
+      "title": "Training Recipes | meta-pytorch/torchtune | DeepWiki",
+      "url": "https://deepwiki.com/meta-pytorch/torchtune/4-training-recipes",
+      "snippet": "Training recipes are the core orchestration layer in torchtune that coordinate all components required for fine-tuning LLMs. Each recipe implements a complete training workflow including model initial"
+    }
+  ]
+}

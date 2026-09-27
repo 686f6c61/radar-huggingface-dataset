@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "chrisc0230/paws-dog-affect",
+  "slug": "chrisc0230-paws-dog-affect",
+  "author": "chrisc0230",
+  "url": "https://huggingface.co/chrisc0230/paws-dog-affect",
+  "created_at": "2026-09-26T22:51:58.000Z",
+  "updated_at": "2026-09-26T22:52:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-classification",
+    "dogs",
+    "animal-behavior",
+    "paws",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 393339252,
+  "storage_human": "393 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How much money can you earn on xvideos and pornhub?",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/dwfe5m/how_much_money_can_you_earn_on_xvideos_and_pornhub/",
+      "snippet": "I signed up for the model program and would like to know how much money you can earn in a month"
+    },
+    {
+      "title": "fortniteporn - Reddit",
+      "url": "https://www.reddit.com/r/fortnitep0rn/",
+      "snippet": "Fortnite Porn ran by the community! Daily Fortnite porn in this subreddit."
+    },
+    {
+      "title": "/r/videos - Reddit",
+      "url": "https://www.reddit.com/r/videos/top/?t=all",
+      "snippet": "r/Videos attempts to avoid directly political content when possible, so much so that it is our Second Rule. Unfortunately, the issue of …"
+    },
+    {
+      "title": "Pegging - Reddit",
+      "url": "https://www.reddit.com/r/Pegging/",
+      "snippet": "A subreddit solely for the purposes of pegging. All submissions must show pegging! Anyone who wishes to submit content must first …"
+    },
+    {
+      "title": "In case you don't know: here's how to save a video from Xvideos.com",
+      "url": "https://www.reddit.com/r/nsfw/comments/9a0y8/in_case_you_dont_know_heres_how_to_save_a_video/",
+      "snippet": "From the list, select the link located at xv111.xvideos.com. The numbers after the xv change per video, I believe. The link will take …"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "julianoxdd/sla-breach-early-warning",
+  "slug": "julianoxdd-sla-breach-early-warning",
+  "author": "julianoxdd",
+  "url": "https://huggingface.co/julianoxdd/sla-breach-early-warning",
+  "created_at": "2026-09-27T00:08:37.000Z",
+  "updated_at": "2026-09-27T00:08:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "tabular-classification",
+    "skops",
+    "data-engineering",
+    "devops",
+    "observability",
+    "sla",
+    "batch-processing",
+    "dataset:julianoxdd/batch-sla-runs",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2956065,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "SLA breach early warning",
+      "dataset": "Batch SLA Runs",
+      "metric": "PR AUC",
+      "value": 0.819
+    },
+    {
+      "task": "SLA breach early warning",
+      "dataset": "Batch SLA Runs",
+      "metric": "ROC AUC",
+      "value": 0.918
+    },
+    {
+      "task": "SLA breach early warning",
+      "dataset": "Batch SLA Runs",
+      "metric": "Brier score",
+      "value": 0.078
+    },
+    {
+      "task": "SLA breach early warning",
+      "dataset": "Batch SLA Runs",
+      "metric": "Recall at 80% precision",
+      "value": 0.643
+    }
+  ],
+  "sources": [
+    {
+      "title": "julianoxdd/batch-sla-runs · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/julianoxdd/batch-sla-runs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The Hugging Face incident and the road ahead | OpenAI",
+      "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+      "snippet": "OpenAI shares findings from the Hugging Face security incident and the steps we&#x27;re taking to strengthen AI model security, monitoring, and alignment."
+    },
+    {
+      "title": "Hugging Face Breach — OpenAI Models, July 2026 | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/hugging-face-autonomous-ai-agent-breach-july-2026",
+      "snippet": "The \"autonomous AI agent\" that breached Hugging Face on July 16, 2026 turned out to be OpenAI&#x27;s own models — running inside OpenAI&#x27;s own internal red-team evaluation."
+    },
+    {
+      "title": "Hugging Face security breach 2026: The AI agent attack",
+      "url": "https://datasciencedojo.com/blog/hugging-face-security-breach-2026/",
+      "snippet": "The Hugging Face security breach 2026 was the first confirmed autonomous AI agent cyberattack on a major tech firm, and how to protect your AI infrastructure."
+    },
+    {
+      "title": "GitHub - anasabidshaikh/sla-breach-alert: Autonomous 3PL monitoring ...",
+      "url": "https://github.com/anasabidshaikh/sla-breach-alert",
+      "snippet": "SLA Breach Alert System Autonomous n8n workflow that monitors delivery SLA compliance in real time, scores breach severity with local AI, and dispatches multi-channel alerts — reducing response time from 4 hours to 15 minutes."
+    }
+  ]
+}

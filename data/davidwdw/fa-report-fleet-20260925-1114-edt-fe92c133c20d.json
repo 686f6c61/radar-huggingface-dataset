@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-report-fleet-20260925-1114-edt-fe92c133c20d",
+  "slug": "davidwdw-fa-report-fleet-20260925-1114-edt-fe92c133c20d",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-report-fleet-20260925-1114-edt-fe92c133c20d",
+  "created_at": "2026-09-26T19:59:38.000Z",
+  "updated_at": "2026-09-26T19:59:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Disney - Schedule View",
+      "url": "https://schview-ui.wdprapps.disney.com/",
+      "snippet": "Disney platform for accessing tools, resources, and services for employees and authorized users."
+    },
+    {
+      "title": "Fleet Response Login",
+      "url": "https://sso.fleetresponse.com/Account/Login",
+      "snippet": "Do not bookmark this page; please bookmark the home page after logging in."
+    },
+    {
+      "title": "MyId",
+      "url": "https://myid.disney.com/services/feature-info?login",
+      "snippet": "MyID connects you with The Company like never before, allowing you to use your company-provided email address or company-designated ID as a single login username to gain access to all TWDC devices, applications and websites. No more trying to remember multiple passwords and usernames. Embrace a new login experience with MyID!"
+    },
+    {
+      "title": "Federal Aviation Administration",
+      "url": "https://www.faa.gov/",
+      "snippet": "The Federal Aviation Administration is an operating mode of the U.S. Department of Transportation."
+    }
+  ]
+}

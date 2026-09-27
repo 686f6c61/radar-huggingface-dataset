@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "canvit/probe-ade20k-40k-s512-c32-in21k",
+  "slug": "canvit-probe-ade20k-40k-s512-c32-in21k",
+  "author": "canvit",
+  "url": "https://huggingface.co/canvit/probe-ade20k-40k-s512-c32-in21k",
+  "created_at": "2026-03-15T23:22:54.000Z",
+  "updated_at": "2026-09-26T23:32:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "canvit-pytorch",
+  "languages": [],
+  "tags": [
+    "canvit-pytorch",
+    "safetensors",
+    "canvit",
+    "active-vision",
+    "vision-transformer",
+    "ade20k",
+    "linear-probe",
+    "image-segmentation",
+    "dataset:scene_parse_150",
+    "arxiv:2603.22570",
+    "base_model:canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02",
+    "base_model:finetune:canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 159894,
+  "parameters_human": "159894",
+  "storage_bytes": 640256,
+  "storage_human": "640256 B",
+  "base_model": "canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "canvit/probe-ade20k-40k-s512-c8-in21k · Hugging Face",
+      "url": "https://huggingface.co/canvit/probe-ade20k-40k-s512-c8-in21k",
+      "snippet": "ADE20K Segmentation Probe — canvas 8×8 @ 512px scene Linear segmentation probe on the canvas features of canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02."
+    },
+    {
+      "title": "canvit/probe-ade20k-40k-s512-c64-in21k · Hugging Face",
+      "url": "https://huggingface.co/canvit/probe-ade20k-40k-s512-c64-in21k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "canvit/probe-ade20k-40k-s512-c32-in21k · Hugging Face",
+      "url": "https://cdn-avatars.qwak.ai/canvit/probe-ade20k-40k-s512-c32-in21k",
+      "snippet": "canvit / probe-ade20k-40k-s512-c32-in21k like 0 Follow CanViT 5 Image Segmentation Safetensors scene_parse_150 canvit-pytorch canvit active-vision ade20k segmentation-probe arxiv:2603.22570 License:mit Model card FilesFiles and versions xet Community Copy to bucket new ADE20K Segmentation Probe — canvas 32×32 @ 512px scene Usage Training"
+    },
+    {
+      "title": "Probe Ade20k 40k S512 C12 In21k - AI Dataset Insights",
+      "url": "https://free2aitools.com/dataset/canvit/probe-ade20k-40k-s512-c12-in21k",
+      "snippet": "Deep dive into Probe Ade20k 40k S512 C12 In21k."
+    },
+    {
+      "title": "GitHub - m2b3/CanViT-PyTorch: Reference implementation of the Canvas ...",
+      "url": "https://github.com/m2b3/CanViT-PyTorch",
+      "snippet": "ADE20K Semantic Segmentation CanViTForSemanticSegmentation bundles a CanViT and a SegmentationProbe head into one model. forward returns per-pixel logits at canvas-grid resolution; predict adds bilinear upsampling."
+    }
+  ]
+}

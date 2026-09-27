@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ZihanLiummyycc/FSG-RL-Feedback-GRPO",
+  "slug": "zihanliummyycc-fsg-rl-feedback-grpo",
+  "author": "ZihanLiummyycc",
+  "url": "https://huggingface.co/ZihanLiummyycc/FSG-RL-Feedback-GRPO",
+  "created_at": "2026-09-26T20:15:31.000Z",
+  "updated_at": "2026-09-26T20:17:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "mathematical-reasoning",
+    "fsg-rl",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 430215549,
+  "storage_human": "430 MB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ZihanLiummyycc/FSG-RL: Function-structured reinforcement ...",
+      "url": "https://github.com/ZihanLiummyycc/FSG-RL/blob/main/",
+      "snippet": "FSG-RL Function-structured reinforcement learning for mathematical reasoning. Code coming soon."
+    },
+    {
+      "title": "FSG-RL/README.md at main · ZihanLiummyycc/FSG-RL · GitHub",
+      "url": "https://github.com/ZihanLiummyycc/FSG-RL/blob/main/README.md",
+      "snippet": "FSG-RL Function-structured reinforcement learning for mathematical reasoning. Code coming soon."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Fine-tune large language models with reinforcement learning from human ...",
+      "url": "https://aws.amazon.com/blogs/machine-learning/fine-tune-large-language-models-with-reinforcement-learning-from-human-or-ai-feedback/",
+      "snippet": "In this post, we introduce a state-of-the-art method to fine-tune LLMs by reinforcement learning, reviewed the pros and cons of RLHF vs. RLAIF vs. DPO, and saw how to scale LLM fine-tuning efforts with RLAIF. We also see how to implement an end-to-end RLAIF pipeline on SageMaker using the Hugging Face Transformer and TRL libraries, and using either off-the-shelf toxicity reward models to align ..."
+    },
+    {
+      "title": "Reinforcement Learning from Human Feedback (RLHF) Explained",
+      "url": "https://intuitionlabs.ai/articles/reinforcement-learning-human-feedback",
+      "snippet": "A technical guide to Reinforcement Learning from Human Feedback (RLHF). This article covers its core concepts, training pipeline, key alignment algorithms, and 2025-2026 developments including DPO, GRPO, and RLAIF."
+    }
+  ]
+}

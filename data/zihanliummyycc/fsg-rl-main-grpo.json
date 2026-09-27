@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ZihanLiummyycc/FSG-RL-Main-GRPO",
+  "slug": "zihanliummyycc-fsg-rl-main-grpo",
+  "author": "ZihanLiummyycc",
+  "url": "https://huggingface.co/ZihanLiummyycc/FSG-RL-Main-GRPO",
+  "created_at": "2026-09-26T20:13:56.000Z",
+  "updated_at": "2026-09-26T20:15:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "mathematical-reasoning",
+    "fsg-rl",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 430215549,
+  "storage_human": "430 MB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Excel表格中其他人是图片，我的是=_xlfn.DISPIMG (\"XXX\",1) 为什么",
+      "url": "https://www.zhihu.com/question/380689977",
+      "snippet": "希望我的回答能解开你的疑惑~ 还有什么其他问题欢迎在评论区留言~ 如果有帮到你的话，别忘了留个赞哦~~ 如果想学习office小技巧 …"
+    },
+    {
+      "title": "maya中“未应用冻结变换,因为xxx具有引用链接”是什么原因啊？",
+      "url": "https://www.zhihu.com/question/46750910",
+      "snippet": "因为你不小心按了S键，导致物体做了动画，所以不能冻结。 去通道栏看看，模型的位移属性是不是红色的。 解决方法很多，最方便 …"
+    },
+    {
+      "title": "xXx: The Return of Xander Cage actor Vin Diesel is crushing over ...",
+      "url": "https://www.india.com/entertainment/xxx-the-return-of-xander-cage-actor-vin-diesel-is-crushing-over-deepika-padukone-this-statement-is-proof-1756703/",
+      "snippet": "Mumbai, Jan 13: H ollywood action star Vin Diesel, who will be sharing the screen space with Deepika Padukone in “xXx: Return of …"
+    },
+    {
+      "title": "为啥顾客明明是消费者，有些商家在拉群的时候却叫「XXX 店粉丝群 …",
+      "url": "https://www.zhihu.com/question/2084633267282470662",
+      "snippet": "为啥顾客明明是消费者，有些商家在拉群的时候却叫「XXX 店粉丝群」，打折的时候叫「给粉丝送福利」？ 同理还有直播秒拍秒付不 …"
+    },
+    {
+      "title": "根据《xxx》的规定，“xxx。”这个句子是病句吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/402438743?write",
+      "snippet": "Jun 19, 2020 · 我觉得这里应该不用引号。「根据《xxx》的规定」是句子的状语成分，后面的部分是主干。主干部分应该是说话人以 …"
+    }
+  ]
+}

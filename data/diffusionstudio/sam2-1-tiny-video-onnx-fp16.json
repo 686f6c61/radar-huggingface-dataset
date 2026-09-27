@@ -5,7 +5,7 @@
   "author": "diffusionstudio",
   "url": "https://huggingface.co/diffusionstudio/sam2.1-tiny-video-onnx-fp16",
   "created_at": "2026-09-25T23:12:32.000Z",
-  "updated_at": "2026-09-25T23:14:05.000Z",
+  "updated_at": "2026-09-26T08:14:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,9 +27,9 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 95228286,
-  "storage_human": "95 MB",
-  "base_model": "facebook/sam2.1-hiera-tiny, square-zero-labs/sam2.1-tiny-video-onnx",
+  "storage_bytes": 178383895,
+  "storage_human": "178 MB",
+  "base_model": "facebook/sam2.1-hiera-tiny",
   "formats": [
     "onnx"
   ],

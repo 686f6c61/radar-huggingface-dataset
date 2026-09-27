@@ -4,8 +4,8 @@
   "slug": "sdsfsf56-myawesomemodel-testrepo",
   "author": "sdsfsf56",
   "url": "https://huggingface.co/sdsfsf56/MyAwesomeModel-TestRepo",
-  "created_at": "2026-09-23T20:34:37.000Z",
-  "updated_at": "2026-09-23T20:34:43.000Z",
+  "created_at": "2026-09-26T20:27:46.000Z",
+  "updated_at": "2026-09-26T20:28:11.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-25T02:31:47.902Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

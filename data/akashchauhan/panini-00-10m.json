@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "akashchauhan/panini-00-10m",
+  "slug": "akashchauhan-panini-00-10m",
+  "author": "akashchauhan",
+  "url": "https://huggingface.co/akashchauhan/panini-00-10m",
+  "created_at": "2026-09-27T00:53:13.000Z",
+  "updated_at": "2026-09-27T00:56:06.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "hi",
+    "sa"
+  ],
+  "tags": [
+    "translation",
+    "devanagari",
+    "hi",
+    "sa",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44589855,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models - Llama, DeepSeek, Qwen | AkashML",
+      "url": "https://akashml.com/models",
+      "snippet": "Explore our comprehensive library of AI models including Llama 3.3-70B, DeepSeek V3, and Qwen3-30B-A3B. High-performance inference with competitive pricing starting from $0.15/M tokens."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "The fastest path from prompt to production with Gemini"
+    },
+    {
+      "title": "Gemini 3 | Google AI Studio",
+      "url": "https://aistudio.google.com/models/gemini-3",
+      "snippet": "Model capabilities Read Gemini 3 docs Model Gemini 3.1 Pro Advanced reasoning for coding and complex tasks Gemini 3.5 Flash"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore how every major AI model evolved from its ancestors. Interactive visualization of LLM genealogy."
+    }
+  ]
+}

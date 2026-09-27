@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "PS4Research/pUjF6aOLst6wlqeJ-lora",
+  "slug": "ps4research-pujf6aolst6wlqej-lora",
+  "author": "PS4Research",
+  "url": "https://huggingface.co/PS4Research/pUjF6aOLst6wlqeJ-lora",
+  "created_at": "2026-09-27T00:34:47.000Z",
+  "updated_at": "2026-09-27T00:34:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "phi3",
+    "trl",
+    "en",
+    "base_model:unsloth/phi-4-reasoning-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/phi-4-reasoning-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1782623560,
+  "storage_human": "1.8 GB",
+  "base_model": "unsloth/phi-4-reasoning-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "在编辑Word文档时突然不能拖动鼠标来选中文字-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/190008917",
+      "snippet": "Aug 29, 2007 · 以下内容是CSDN社区关于在编辑Word文档时突然不能拖动鼠标来选中文字相关内容，如果想了解更多关于Microsoft …"
+    },
+    {
+      "title": "7 Little Words Daily Answers - 7LittleWordsAnswers.com",
+      "url": "https://7littlewordsanswers.com/",
+      "snippet": "Mar 30, 2025 · On this website you will find daily answers for the popular game 7 Little Words Answers."
+    },
+    {
+      "title": "GCC编译程序时，有自定义头文件，提示找不到该头文件，但他就在 …",
+      "url": "https://bbs.csdn.net/topics/20263106",
+      "snippet": "Jan 8, 2003 · gcc -Ixxx (xxx表示包含的路径） 但是当前路径下的头文件应该不用设置"
+    },
+    {
+      "title": "Daily Themed Crossword February 7 2026 answers",
+      "url": "https://7littlewordsanswers.com/daily-themed-crossword-february-7-2026-answers",
+      "snippet": "Feb 7, 2026 · On this page you may find all the solutions and answers for Daily Themed Crossword February 7 2026. This page is …"
+    },
+    {
+      "title": "如何指定include *.h文件的路径-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/394000",
+      "snippet": "Dec 17, 2001 · 呵呵，tcc好像有个参数的，可以通过它制定头文件的路径。 如果你有一个a.c 那么要用tcc编译的话，就是这样 tcc …"
+    }
+  ]
+}

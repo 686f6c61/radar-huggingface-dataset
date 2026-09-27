@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Guilherme34/Firefly-v6-part2-dontdownload",
+  "slug": "guilherme34-firefly-v6-part2-dontdownload",
+  "author": "Guilherme34",
+  "url": "https://huggingface.co/Guilherme34/Firefly-v6-part2-dontdownload",
+  "created_at": "2026-09-26T07:00:02.000Z",
+  "updated_at": "2026-09-26T23:45:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gemma4",
+    "roleplay",
+    "experimental",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11046329520,
+  "storage_human": "11.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for Guilherme34/Firefly-v6-DONTDOWNLOAD ...",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Guilherme34/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS",
+      "snippet": "Models 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: Guilherme34/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS Clear all"
+    },
+    {
+      "title": "Guilherme34 (Guilherme Keller2) - Hugging Face",
+      "url": "https://huggingface.co/Guilherme34",
+      "snippet": "AI, LLMs, VLMs, LAMs, Omni models, Research, Much more...LOL(Im part of the Team Mradermacher) Discord: guilhermeke"
+    },
+    {
+      "title": "Free Image to 3D Model AI Generator 2026 - Photo to 3D in Seconds | 3D ...",
+      "url": "https://www.3daistudio.com/ImageTo3D",
+      "snippet": "Convert any image to a 3D model with AI in seconds. Photos, sketches, and concept art become textured 3D assets for Blender, Unity, Unreal, and 3D printing."
+    },
+    {
+      "title": "AI Art Generator: Free AI Image, Video & Audio Generator",
+      "url": "https://openart.ai/",
+      "snippet": "Create AI art, images, videos and music online for free. 100+ models from Google, OpenAI, Seedance & more. — all in one place. Trusted by 8M+ creators. Start in seconds."
+    },
+    {
+      "title": "Adobe Firefly - Free Generative AI for Creatives",
+      "url": "https://www.adobe.com/products/firefly.html",
+      "snippet": "Create and edit images, audio, and video with Adobe Firefly&#x27;s Generative AI, plus try top models from Google, OpenAI, and more."
+    }
+  ]
+}

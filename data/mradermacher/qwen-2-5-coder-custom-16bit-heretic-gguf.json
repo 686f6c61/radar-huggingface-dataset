@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen-2.5-coder-custom-16bit-heretic-GGUF",
+  "slug": "mradermacher-qwen-2-5-coder-custom-16bit-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen-2.5-coder-custom-16bit-heretic-GGUF",
+  "created_at": "2026-09-26T21:02:48.000Z",
+  "updated_at": "2026-09-26T21:30:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:haniqwafi/qwen-2.5-coder-custom-16bit-heretic",
+    "base_model:quantized:haniqwafi/qwen-2.5-coder-custom-16bit-heretic",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146891136,
+  "storage_human": "68.1 GB",
+  "base_model": "haniqwafi/qwen-2.5-coder-custom-16bit-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Annecy — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Annecy",
+      "snippet": "Annecy étant la ville centre de la communauté d'agglomération du Grand Annecy, elle est desservie par le réseau intercommunal, …"
+    },
+    {
+      "title": "Annecy - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Annecy",
+      "snippet": "Annecy is part of four cantons (Annecy-1, Annecy-2, Annecy-3 and Annecy-4); it is the prefecture of Haute-Savoie. Since 2017, …"
+    },
+    {
+      "title": "Annecy",
+      "url": "https://www.annecy.fr/",
+      "snippet": "Site officiel de la Ville d'Annecy, retrouvez toutes les démarches en ligne et toutes les informations pratiques au quotidien."
+    },
+    {
+      "title": "Visit Annecy, the best things to see and do",
+      "url": "https://www.annecy-town.com/visiter-annecy_en/",
+      "snippet": "Discover the city of Annecy, the Old Town, the Pâquier, the pedestrian zone and the city’s unmissable historical monuments. …"
+    },
+    {
+      "title": "Office de Tourisme du Lac d'Annecy : que visiter, faire, découvrir",
+      "url": "https://www.lac-annecy.com/",
+      "snippet": "L'Office de Tourisme du Lac d'Annecy vous présente les hôtels, campings, hébergements, restaurants, activités, évènements de la …"
+    }
+  ]
+}

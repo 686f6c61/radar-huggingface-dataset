@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "WiNE-iNEFF/MineSkinV1.1_4",
+  "slug": "wine-ineff-mineskinv1-1_4",
+  "author": "WiNE-iNEFF",
+  "url": "https://huggingface.co/WiNE-iNEFF/MineSkinV1.1_4",
+  "created_at": "2026-09-26T23:06:18.000Z",
+  "updated_at": "2026-09-27T02:20:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20330948,
+  "parameters_human": "20.3M",
+  "storage_bytes": 488191008,
+  "storage_human": "488 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WineHQ - Run Windows applications on Linux, BSD, Solaris and macOS",
+      "url": "https://www.winehq.org/",
+      "snippet": "Wine (originally an acronym for \"Wine Is Not an Emulator\") is a compatibility layer capable of running Windows applications on …Read more"
+    },
+    {
+      "title": "Wine - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wine",
+      "snippet": "Wine is an alcoholic drink made from fermented grape juice. [a] It is produced and consumed in many regions around the world, in a …Read more"
+    },
+    {
+      "title": "Wine | Definition, History, Varieties, & Facts | Britannica",
+      "url": "https://www.britannica.com/topic/wine",
+      "snippet": "Aug 20, 2026 · wine, the fermented juice of the grape. Of the grape genus Vitis, one species, V. vinifera (often erroneously called the …Read more"
+    },
+    {
+      "title": "Wine-Searcher. Find and price wines, beers and spirits across online …",
+      "url": "https://www.wine-searcher.com/",
+      "snippet": "Global demand for fine wine has increased significantly over the past few decades. Our reports tell you the producer and store …Read more"
+    },
+    {
+      "title": "Vivino - Buy the Right Wine",
+      "url": "https://www.vivino.com/en/",
+      "snippet": "Shop top-rated wines . Best offers for you. Great value. Seamless service. Brilliant wines from Vivino and our best merchants. See …Read more"
+    }
+  ]
+}

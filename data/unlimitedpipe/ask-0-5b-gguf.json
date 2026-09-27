@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "unlimitedpipe/ask-0.5b-GGUF",
+  "slug": "unlimitedpipe-ask-0-5b-gguf",
+  "author": "unlimitedpipe",
+  "url": "https://huggingface.co/unlimitedpipe/ask-0.5b-GGUF",
+  "created_at": "2026-09-27T00:48:29.000Z",
+  "updated_at": "2026-09-27T00:48:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "th"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "rag",
+    "citations",
+    "unlimitedpipe",
+    "text-generation",
+    "en",
+    "th",
+    "dataset:unlimitedpipe/ask-sft-public",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 531067808,
+  "storage_human": "531 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tube8: Free Porn Videos & XXX Sex Movies - HD Porno Tube",
+      "url": "https://www.tube8.com/",
+      "snippet": "Watch the hottest free sex videos at Tube8. Enjoy an exclusive porn collection of selected sex scenes and full porn movies at home …"
+    },
+    {
+      "title": "Vidéos Porno Gratuites et Films de Sexe XXX | Tube8 Français",
+      "url": "https://www.tube8.fr/",
+      "snippet": "Retrouvez les vidéos porno gratuites et les films de sexe XXX les plus chaudes, seulement à Tube8. La sélection imbattable de …"
+    },
+    {
+      "title": "Porn Categories: Free Porntube Sex Videos & Porno Movies | Tube8",
+      "url": "https://www.tube8.com/categories.html/",
+      "snippet": "Tube8 categories will satisfy your need for the best porn movies on the net for free. An unbeatable selection with the hottest …"
+    },
+    {
+      "title": "Vidéos French et Films Porno | Tube8",
+      "url": "https://www.tube8.fr/searches.html/?q=french",
+      "snippet": "Regardez les vidéos French gratuites sur Tube8, la chaine porno avec les films de sexe les plus chauds."
+    },
+    {
+      "title": "tube8 videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/tube8",
+      "snippet": "XVIDEOS tube8 videos, free Videos tagged « tube8 » (5 results) Report"
+    }
+  ]
+}

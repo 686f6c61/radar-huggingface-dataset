@@ -5,7 +5,7 @@
   "author": "atakankutalp",
   "url": "https://huggingface.co/atakankutalp/LFM2.5-2.6B-heretic",
   "created_at": "2026-09-25T23:30:44.000Z",
-  "updated_at": "2026-09-25T23:50:12.000Z",
+  "updated_at": "2026-09-26T13:30:17.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,6 +31,7 @@
   "tags": [
     "transformers",
     "safetensors",
+    "gguf",
     "lfm2",
     "text-generation",
     "heretic",
@@ -60,7 +61,7 @@
     "vi",
     "arxiv:2511.23404",
     "base_model:LiquidAI/LFM2.5-2.6B",
-    "base_model:finetune:LiquidAI/LFM2.5-2.6B",
+    "base_model:quantized:LiquidAI/LFM2.5-2.6B",
     "license:other",
     "endpoints_compatible",
     "region:us"
@@ -70,10 +71,11 @@
   "trending_score": 0,
   "parameters": 2697198592,
   "parameters_human": "2.70B",
-  "storage_bytes": 5412333175,
-  "storage_human": "5.4 GB",
+  "storage_bytes": 19526087223,
+  "storage_human": "19.5 GB",
   "base_model": "LiquidAI/LFM2.5-2.6B",
   "formats": [
+    "gguf",
     "safetensors"
   ],
   "is_conversational": true,

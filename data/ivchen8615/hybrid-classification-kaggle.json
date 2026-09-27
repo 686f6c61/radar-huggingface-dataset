@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ivchen8615/hybrid-classification-kaggle",
+  "slug": "ivchen8615-hybrid-classification-kaggle",
+  "author": "ivchen8615",
+  "url": "https://huggingface.co/ivchen8615/hybrid-classification-kaggle",
+  "created_at": "2026-09-27T00:06:33.000Z",
+  "updated_at": "2026-09-27T00:06:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "hybrid Model | Kaggle",
+      "url": "https://www.kaggle.com/code/dranilkumardubey/hybrid-model",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from Predict Calorie Expenditure"
+    },
+    {
+      "title": "Hybrid ECG Classification Model - Kaggle",
+      "url": "https://www.kaggle.com/code/nilanchalamahanty/hybrid-ecg-classification-model",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from PTB-XL ECG dataset"
+    },
+    {
+      "title": "Find Pre-trained Models | Kaggle",
+      "url": "https://www.kaggle.com/models",
+      "snippet": "Discover and download pre-trained AI models. Use them directly in Kaggle Notebooks or integrate into your own projects."
+    },
+    {
+      "title": "Winning solutions of kaggle competitions",
+      "url": "https://www.kaggle.com/code/sudalairajkumar/winning-solutions-of-kaggle-competitions",
+      "snippet": "Winning solutions of kaggle competitions: ¶ Generally at the end of every Kaggle competition, winners and other toppers used to share their solutions in the discussion forums. But it is a tedious task to search for the competitions and then for the solutions of these competitions when we need them."
+    }
+  ]
+}

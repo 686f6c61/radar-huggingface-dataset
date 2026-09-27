@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hvsr-robotics/a1x-wrist-grasp-sim",
+  "slug": "hvsr-robotics-a1x-wrist-grasp-sim",
+  "author": "hvsr-robotics",
+  "url": "https://huggingface.co/hvsr-robotics/a1x-wrist-grasp-sim",
+  "created_at": "2026-09-27T00:38:35.000Z",
+  "updated_at": "2026-09-27T00:38:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "grasping",
+    "mujoco",
+    "imitation-learning",
+    "reinforcement-learning",
+    "galaxea-a1x",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46331236,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hvsr-robotics (HVSR Robotics) - Hugging Face",
+      "url": "https://huggingface.co/hvsr-robotics/models",
+      "snippet": "Org profile for HVSR Robotics on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Web2Grasp",
+      "url": "https://web2grasp.github.io/",
+      "snippet": "We propose Web2Grasp for autonomously obtaining robot grasp data by reconstructing Hand-Object meshes from Web images and how to train dexterous grasping model using the noisy reconstructed HOI data."
+    },
+    {
+      "title": "GitHub - rhett-chen/Robotic-grasping-papers: paper list of robotic ...",
+      "url": "https://github.com/rhett-chen/Robotic-grasping-papers",
+      "snippet": "RSS is Robotics: Science and Systems; T-RO is IEEE Transactions on Robotics. Robotic Grasping Papers and Codes 1. Survey Papers 2. Related Tasks 2.1 Visual grounding 2.2 Robotic manipulation 2.3 6D pose estimation 2.4 Datasets 3. Grasp Detection 3.1 General grasping 3.2 Dexterous grasping 3.3 Semantic grasping 3.4 Dynamic Grasping 4. Research ..."
+    },
+    {
+      "title": "Web2Grasp",
+      "url": "https://webgrasp.github.io/",
+      "snippet": "We propose Web2Grasp for autonomously obtaining robot grasp data by reconstructing Hand-Object meshes from Web images, re-targeting the humand hand pose to a robot hand pose, and aligning the object mesh with a pseudo ground-truth object mesh obtained via text-to-3D approaches. We demonstrate that the resulting dataset obtained via web images and not requiring any robot-specific teleoperation ..."
+    },
+    {
+      "title": "GitHub Pages - GraspIt!",
+      "url": "https://graspit-simulator.github.io/",
+      "snippet": "Overview GraspIt! was created to serve as a tool for grasping research. It is a simulator that can accommodate arbitrary hand and robot designs originally developed by the Columbia University Robotics Group. It can also load objects and obstacles of arbitrary geometry to populate a complete simulation world. The GraspIt! engine includes a rapid collision detection and contact determination ..."
+    }
+  ]
+}

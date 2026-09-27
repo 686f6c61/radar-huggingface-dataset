@@ -5,7 +5,7 @@
   "author": "RicardoEstep",
   "url": "https://huggingface.co/RicardoEstep/RPBizkitRemiX-v3-12B-GGUF",
   "created_at": "2026-09-26T14:07:01.000Z",
-  "updated_at": "2026-09-26T14:52:42.000Z",
+  "updated_at": "2026-09-26T17:00:09.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 12247782400,
   "parameters_human": "12.25B",
-  "storage_bytes": 30555782624,
-  "storage_human": "30.6 GB",
+  "storage_bytes": 99142913600,
+  "storage_human": "99.1 GB",
   "base_model": "RicardoEstep/RPBizkitRemiX-v3-12B",
   "formats": [
     "gguf"

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "bialexacosta21/bert-agnews-topic-classification",
+  "slug": "bialexacosta21-bert-agnews-topic-classification",
+  "author": "bialexacosta21",
+  "url": "https://huggingface.co/bialexacosta21/bert-agnews-topic-classification",
+  "created_at": "2026-09-26T15:00:58.000Z",
+  "updated_at": "2026-09-26T22:04:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "ag-news",
+    "en",
+    "dataset:fancyzhx/ag_news",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109485316,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437964776,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "canvit/probe-ade20k-40k-dv3s-256px",
+  "slug": "canvit-probe-ade20k-40k-dv3s-256px",
+  "author": "canvit",
+  "url": "https://huggingface.co/canvit/probe-ade20k-40k-dv3s-256px",
+  "created_at": "2026-03-15T23:23:40.000Z",
+  "updated_at": "2026-09-26T23:32:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "canvit-pytorch",
+  "languages": [],
+  "tags": [
+    "canvit-pytorch",
+    "safetensors",
+    "dinov3",
+    "ade20k",
+    "linear-probe",
+    "image-segmentation",
+    "dataset:scene_parse_150",
+    "arxiv:2603.22570",
+    "base_model:facebook/dinov3-vits16-pretrain-lvd1689m",
+    "base_model:finetune:facebook/dinov3-vits16-pretrain-lvd1689m",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 59286,
+  "parameters_human": "59286",
+  "storage_bytes": 237672,
+  "storage_human": "237672 B",
+  "base_model": "facebook/dinov3-vits16-pretrain-lvd1689m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ometv Porn And Nude Videos | CUMS",
+      "url": "https://cums.net/search/video/?s=ometv&o=viewed",
+      "snippet": "Explore the Most Viewed Free Porn Videos for ometv on CUMS. Enjoy the best adult content, exclusive scenes, and diverse …"
+    },
+    {
+      "title": "OmeglePorn - Omegle Porn Videos | OmeglePorn.to",
+      "url": "https://omegleporn.to/",
+      "snippet": "Watch and download the best Omegle porn videos that ever exist. Browse our collection for the best videos in high quality and that …"
+    },
+    {
+      "title": "Omegle Porn — Real Omegle Wins, Flashing, Reactions & OmeTV — …",
+      "url": "https://pornyard.xyz/omegle-wins",
+      "snippet": "Watch the best free Omegle porn — real Omegle wins, Omegle girls flashing, dick reactions, points game, OmeTV and Monkey App …"
+    },
+    {
+      "title": "#ometv Videos | 24vids",
+      "url": "https://www.24vids.com/tag/ometv",
+      "snippet": "Explore popular videos tagged with #ometv curated from multiple social media platforms. Watch the best #ometv content."
+    },
+    {
+      "title": "Latest OmeTV Videos & Leaks | Omegle Archive",
+      "url": "https://omeglevault.com/platform/ometv",
+      "snippet": "Sep 7, 2026 · Fresh OmeTV content—raw chats, leaks, and premium drops—updated daily."
+    }
+  ]
+}

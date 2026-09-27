@@ -5,7 +5,7 @@
   "author": "OpenMed",
   "url": "https://huggingface.co/OpenMed/MedPsy-1.7B-ONNX",
   "created_at": "2026-09-24T01:13:20.000Z",
-  "updated_at": "2026-09-25T11:56:10.000Z",
+  "updated_at": "2026-09-26T14:06:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,12 +36,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 324,
+  "downloads_30d": 910,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2882979585,
-  "storage_human": "2.9 GB",
+  "storage_bytes": 1447201142,
+  "storage_human": "1.4 GB",
   "base_model": "qvac/MedPsy-1.7B",
   "formats": [
     "onnx"

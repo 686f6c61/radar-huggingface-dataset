@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "CleverBadger/Swift-Qwen3.8-27B-Badger-Mixed-NVFP4-FP8",
+  "slug": "cleverbadger-swift-qwen3-8-27b-badger-mixed-nvfp4-fp8",
+  "author": "CleverBadger",
+  "url": "https://huggingface.co/CleverBadger/Swift-Qwen3.8-27B-Badger-Mixed-NVFP4-FP8",
+  "created_at": "2026-09-27T00:58:24.000Z",
+  "updated_at": "2026-09-27T01:31:30.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "qwen3_8",
+    "swift",
+    "nvfp4",
+    "fp8",
+    "compressed-tensors",
+    "reasoning",
+    "blackwell",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20294595344,
+  "parameters_human": "20.29B",
+  "storage_bytes": 23437581397,
+  "storage_human": "23.4 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vwdubb/Swift-Qwen3.8-27b-FP8 · Hugging Face",
+      "url": "https://huggingface.co/vwdubb/Swift-Qwen3.8-27b-FP8",
+      "snippet": "Swift-Qwen3.8-27B is UkisAI&#x27;s reasoning-efficient derivative of Qwen3.8-27B, using 58.3% fewer thinking tokens while maintaining near-identical performance (<1% loss) and as a result getting a x1.95 speed-up on several tasks."
+    },
+    {
+      "title": "ukisai/Swift-Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-Qwen3.8-27B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Swift-Qwen3.8-27B: less overthinking | UkisAI",
+      "url": "https://ukisai.com/news/introducing-swift",
+      "snippet": "Swift produces shorter reasoning traces, and we observe fewer overthinking errors in our testing. Swift includes a transfer component derived from BottleCap AI&#x27;s ThinkingCap-Qwen3.6-27B. The resulting model uses the standard Qwen3.8 interface and retains text, image, and video support. Benchmark results"
+    },
+    {
+      "title": "Qwen3.8-27B on DGX Spark using vllm: NVFP4 vs FP8 performance",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-27b-on-dgx-spark-using-vllm-nvfp4-vs-fp8-performance/380258",
+      "snippet": "Hello, I benchmarked two quantizations of the same Qwen3.8-27B on a single Nvidia DGX Spark Qwen/Qwen3.8-27B-FP8 — fine-grained FP8 (block 128, e4m3), official Qwen FP8 build. unsloth/Qwen3.8-27B-NVFP4 — Unsloth Dynamic NVFP4 (4-bit MLP + 8-bit attention + FP8 KV cache). The results show a consistent 30-34 % faster generation throughput for the NVFP4 model from Unsloth, plus a smaller ..."
+    },
+    {
+      "title": "Qwen3.8-27B-NVFP4 on a single DGX Spark - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-27b-nvfp4-on-a-single-dgx-spark-up-to-1m-context-vllm-mtp-measurements/380244",
+      "snippet": "Qwen3.8-27B was released today, and unsloth put up an NVFP4 quantization the same afternoon. It runs on a single DGX Spark without any modification to vLLM. This is what I found getting it up, including a packaging bug in the checkpoint that silently truncates every prompt at 2048 tokens. EDIT: Unsloth meanwhile uploaded a fixed version, so you can ignore the section about the tokenizer bug ..."
+    }
+  ]
+}

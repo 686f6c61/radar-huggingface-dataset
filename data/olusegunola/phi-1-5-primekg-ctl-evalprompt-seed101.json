@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "olusegunola/phi-1.5-primekg-ctl-evalprompt-seed101",
+  "slug": "olusegunola-phi-1-5-primekg-ctl-evalprompt-seed101",
+  "author": "olusegunola",
+  "url": "https://huggingface.co/olusegunola/phi-1.5-primekg-ctl-evalprompt-seed101",
+  "created_at": "2026-09-26T20:19:07.000Z",
+  "updated_at": "2026-09-26T20:19:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50357392,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7 Best Nude Photo Editors 2026 (#1 Photo to Nude App) - Content …",
+      "url": "https://contentmavericks.com/best-nude-photo-editor/",
+      "snippet": "Sep 16, 2026 · We spent 63 hours comparing the top 50 to find the seven best you can use to create nudes out of regular photos. …"
+    },
+    {
+      "title": "AI Remove Clothes from Photo - Instant Results | Nudie.app",
+      "url": "https://nudie.app/ai-remove-clothes/",
+      "snippet": "Nudie.app uses advanced AI to remove clothes from any photo and generate photorealistic nude results in under 10 seconds. Free …"
+    },
+    {
+      "title": "Free AI Undress Tool | Realistic Results in Seconds - clothless.app",
+      "url": "https://clothless.app/en",
+      "snippet": "Undress photos with Clothless AI for free. Upload any image and get realistic AI-generated results in seconds. No blur, no editing …"
+    },
+    {
+      "title": "Free Nude Photo Maker - AI Tool | Vixie.art",
+      "url": "https://vixie.art/nude-photo-maker/",
+      "snippet": "Free nude photo maker at Vixie.art. Make photorealistic nude photos from any portrait using AI. 5 free daily credits, private, no login …"
+    },
+    {
+      "title": "AI Nude Picture Editor: Perfect Nude Edits With Luminar",
+      "url": "https://skylum.com/luminar/ai-nude-photo-editor",
+      "snippet": "Luminar Neo’s AI image editor nude simplifies the process by detecting skin, applying natural-looking corrections, and balancing …"
+    }
+  ]
+}

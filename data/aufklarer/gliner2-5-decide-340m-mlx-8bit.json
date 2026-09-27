@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "aufklarer/GLiNER2.5-Decide-340M-MLX-8bit",
+  "slug": "aufklarer-gliner2-5-decide-340m-mlx-8bit",
+  "author": "aufklarer",
+  "url": "https://huggingface.co/aufklarer/GLiNER2.5-Decide-340M-MLX-8bit",
+  "created_at": "2026-09-26T23:58:45.000Z",
+  "updated_at": "2026-09-27T00:01:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "extractor",
+    "gliner",
+    "gliner2",
+    "deberta-v3",
+    "text-classification",
+    "token-classification",
+    "named-entity-recognition",
+    "apple-silicon",
+    "en",
+    "arxiv:2507.18546",
+    "base_model:fastino/GLiNER2.5-Decide",
+    "base_model:finetune:fastino/GLiNER2.5-Decide",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 566972210,
+  "storage_human": "567 MB",
+  "base_model": "fastino/GLiNER2.5-Decide",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fastino ships a 340M decision model and X takes notice",
+      "url": "https://www.deai.org/news/fastino-gliner2-5-decide-open-weight-decision-model",
+      "snippet": "Fastino released GLiNER2.5-Decide, a 340M Apache 2.0 encoder returning typed decisions instead of text, drawing the beat&#x27;s highest X engagement at ~840 likes."
+    },
+    {
+      "title": "GLiNER2.5-Decide: An Open-Weight Model for Structured Decision Making",
+      "url": "https://fastino.ai/blog/gliner-2-5-decide-open-weight-decision-model",
+      "snippet": "GLiNER2.5-Decide is an encoder-based decision model post-trained specifically for structured decision-making. It evaluates user-defined typed questions and can decode related answers jointly under explicit constraints, returning structured decisions with probabilities, confidence scores, and feasibility metadata."
+    },
+    {
+      "title": "GLiNER2.5-Decide: 340M Open Model Beats Jev on Routing - explainx.ai",
+      "url": "https://www.explainx.ai/blog/gliner-2-5-decide-fastino-340m-open-weight-decision-model-2026",
+      "snippet": "Fastino released GLiNER2.5-Decide, a 340M Apache 2.0 encoder for typed classification and rules. Benchmarks vs Jev, latency on CPU, and when to use it."
+    },
+    {
+      "title": "Fastino Releases GLiNER2.5-Decide: A 340M Open-Weight Decision Model ...",
+      "url": "https://www.marktechpost.com/2026/09/24/fastino-releases-gliner2-5-decide-a-340m-open-weight-decision-model-that-runs-on-cpu/",
+      "snippet": "Fastino&#x27;s GLiNER2.5-Decide is a 340M open-weight encoder that returns rule-constrained, scored decisions on CPU for routing and guardrails."
+    },
+    {
+      "title": "GLiNER2.5-Decide: Fastino&#x27;s 340M model runs on CPU - datanorth.ai",
+      "url": "https://datanorth.ai/news/fastino-releases-gliner2-5-decide",
+      "snippet": "Fastino released GLiNER2.5-Decide on 24 September 2026, a 340M-parameter open-weight model built to classify and route text rather than talk. It scores 60.1% average accuracy on Fastino&#x27;s own 17-dataset Fast Decisions suite, ahead of JevK5 at 57.5%, and answers in 167 ms on a 48-core CPU with no graphics card at all. The licence is Apache 2.0."
+    }
+  ]
+}

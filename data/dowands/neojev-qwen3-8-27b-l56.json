@@ -5,7 +5,7 @@
   "author": "dowands",
   "url": "https://huggingface.co/dowands/NeoJev-Qwen3.8-27B-L56",
   "created_at": "2026-09-25T13:29:37.000Z",
-  "updated_at": "2026-09-25T14:11:45.000Z",
+  "updated_at": "2026-09-26T06:48:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -31,11 +31,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 21,
   "trending_score": 0,
   "parameters": 24312578992,
   "parameters_human": "24.31B",
-  "storage_bytes": 27396700804,
+  "storage_bytes": 27397074880,
   "storage_human": "27.4 GB",
   "base_model": "Qwen/Qwen3.8-27B-FP8",
   "formats": [

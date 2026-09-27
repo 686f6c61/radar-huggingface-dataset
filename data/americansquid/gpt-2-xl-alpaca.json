@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "americansquid/gpt-2-xl-alpaca",
+  "slug": "americansquid-gpt-2-xl-alpaca",
+  "author": "americansquid",
+  "url": "https://huggingface.co/americansquid/gpt-2-xl-alpaca",
+  "created_at": "2026-09-26T23:03:23.000Z",
+  "updated_at": "2026-09-27T01:20:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gpt2",
+    "text-generation",
+    "instruction-tuned",
+    "experimental",
+    "en",
+    "dataset:yahma/alpaca-cleaned",
+    "base_model:openai-community/gpt2-xl",
+    "base_model:finetune:openai-community/gpt2-xl",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "openai-community/gpt2-xl",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "在编辑Word文档时突然不能拖动鼠标来选中文字-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/190008917",
+      "snippet": "Aug 29, 2007 · 以下内容是CSDN社区关于在编辑Word文档时突然不能拖动鼠标来选中文字相关内容，如果想了解更多关于Microsoft …"
+    },
+    {
+      "title": "7 Little Words Daily Answers - 7LittleWordsAnswers.com",
+      "url": "https://7littlewordsanswers.com/",
+      "snippet": "Mar 30, 2025 · On this website you will find daily answers for the popular game 7 Little Words Answers."
+    },
+    {
+      "title": "GCC编译程序时，有自定义头文件，提示找不到该头文件，但他就在 …",
+      "url": "https://bbs.csdn.net/topics/20263106",
+      "snippet": "Jan 8, 2003 · gcc -Ixxx (xxx表示包含的路径） 但是当前路径下的头文件应该不用设置"
+    },
+    {
+      "title": "Wall Street Journal Crossword February 25 2026 answers",
+      "url": "https://7littlewordsanswers.com/wall-street-journal-crossword-february-25-2026-answers",
+      "snippet": "Feb 25, 2026 · On this page you may find all the solutions and answers for Wall Street Journal Crossword February 25 2026. This …"
+    },
+    {
+      "title": "如何指定include *.h文件的路径-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/394000",
+      "snippet": "Dec 17, 2001 · 呵呵，tcc好像有个参数的，可以通过它制定头文件的路径。 如果你有一个a.c 那么要用tcc编译的话，就是这样 tcc …"
+    }
+  ]
+}

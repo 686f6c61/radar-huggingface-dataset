@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "helmo/DecidaBERT-large",
+  "slug": "helmo-decidabert-large",
+  "author": "helmo",
+  "url": "https://huggingface.co/helmo/DecidaBERT-large",
+  "created_at": "2026-09-26T18:18:15.000Z",
+  "updated_at": "2026-09-26T18:57:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "decision-model",
+    "system-one",
+    "typed-decisions",
+    "modernbert",
+    "calibrated-probabilities",
+    "text-classification",
+    "en",
+    "dataset:LocalLLaMA/typed-decisions",
+    "dataset:helmo/synthetic-typed-decisions",
+    "base_model:tasksource/ModernBERT-large-nli",
+    "base_model:finetune:tasksource/ModernBERT-large-nli",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293827,
+  "parameters_human": "421.3M",
+  "storage_bytes": 1685199284,
+  "storage_human": "1.7 GB",
+  "base_model": "tasksource/ModernBERT-large-nli",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HELMo — Haute École Libre Mosane",
+      "url": "https://www.helmo.be/",
+      "snippet": "Vélos électriques en test pour les membres du personnel HELMo Du 14 septembre au 13 novembre 2026Read more"
+    },
+    {
+      "title": "Mon espace HELMo — HELMo",
+      "url": "https://www.helmo.be/fr/mon-espace-helmo",
+      "snippet": "Mon espace HELMo (Ancien \"HELMo Connect\") HELMo.be a fait peau neuve ! Ton raccourci ne fonctionne plus... Retrouve ton …Read more"
+    },
+    {
+      "title": "Home | Helmo",
+      "url": "https://helmo.fr/home/",
+      "snippet": "mars-mai 2020 • retourRead more"
+    },
+    {
+      "title": "HELMo Learn - Accueil",
+      "url": "https://learn.helmo.be/",
+      "snippet": "Bienvenue sur Learn Learn est la plateforme d'apprentissage en ligne de HELMo. Chaque département possède un espace …Read more"
+    },
+    {
+      "title": "Mon espace HELMo",
+      "url": "https://mon-espace.helmo.be/sigale/",
+      "snippet": "Mon espace HELMo ChargementRead more"
+    }
+  ]
+}

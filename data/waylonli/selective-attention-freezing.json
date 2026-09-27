@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "waylonli/Selective-Attention-Freezing",
+  "slug": "waylonli-selective-attention-freezing",
+  "author": "waylonli",
+  "url": "https://huggingface.co/waylonli/Selective-Attention-Freezing",
+  "created_at": "2026-09-26T23:36:46.000Z",
+  "updated_at": "2026-09-27T01:54:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "selective-attention-freezing",
+    "nanogpt",
+    "reproducibility",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 307456975356,
+  "storage_human": "307.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Selective-Attention-Freezing/supplement/train.py at main · waylonli ...",
+      "url": "https://github.com/waylonli/Selective-Attention-Freezing/blob/main/supplement/train.py",
+      "snippet": "Code for When Can Attention Heads Be Statically Defined? Selective Attention Freezing (SAF). - waylonli/Selective-Attention-Freezing"
+    },
+    {
+      "title": "waylonli (Waylon Li) · GitHub",
+      "url": "https://github.com/waylonli",
+      "snippet": "PhD candidate at School of Informatics in University of Edinburgh. - waylonli"
+    },
+    {
+      "title": "waylonli (Waylon Li) - Hugging Face",
+      "url": "https://huggingface.co/waylonli/models",
+      "snippet": "User profile of Waylon Li on Hugging Face"
+    },
+    {
+      "title": "Waylon Li | Waylon&#x27;s Homepage",
+      "url": "https://waylonli.com/",
+      "snippet": "I have multiple first-author papers at leading venues, including ICLR, KDD, EMNLP, TOIS, AAAI and EACL. I also collaborate on broader agentic AI research, including world modelling and vision-language-action systems, with researchers across academia and industry."
+    },
+    {
+      "title": "Publications | Waylon&#x27;s Homepage",
+      "url": "https://waylonli.com/publication/",
+      "snippet": "SAVLA: Symmetry-Aware Vision-Language-Action Models for Robotic Manipulation Junle Li, Weixian Waylon Li, Fuxiang Wu, Fusheng Hao, Fengxiang He Preprint 2026"
+    }
+  ]
+}

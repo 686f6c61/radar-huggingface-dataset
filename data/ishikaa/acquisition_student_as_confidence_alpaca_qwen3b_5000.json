@@ -5,7 +5,7 @@
   "author": "ishikaa",
   "url": "https://huggingface.co/ishikaa/acquisition_student_AS_confidence_alpaca_qwen3b_5000",
   "created_at": "2026-09-25T18:05:42.000Z",
-  "updated_at": "2026-09-25T18:06:58.000Z",
+  "updated_at": "2026-09-27T02:17:18.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 350,
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",
-  "storage_bytes": 6183348896,
-  "storage_human": "6.2 GB",
+  "storage_bytes": 12355275896,
+  "storage_human": "12.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

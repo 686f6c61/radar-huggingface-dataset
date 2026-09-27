@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Zane91/Seedance-2-AI-Video-Generator-free",
+  "slug": "zane91-seedance-2-ai-video-generator-free",
+  "author": "Zane91",
+  "url": "https://huggingface.co/Zane91/Seedance-2-AI-Video-Generator-free",
+  "created_at": "2026-09-26T20:50:24.000Z",
+  "updated_at": "2026-09-26T20:50:25.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-video",
+    "image-to-video",
+    "multimodal",
+    "diffusion",
+    "dit",
+    "lip-sync",
+    "physics-simulation",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ai Video Generator from Image - Create 100% Original Videos",
+      "url": "https://duckduckgo.com/y.js?ad_domain=lumeflow.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=oKWElV05LlmrawKfQPZT60llBBPNQQx%2DOGCmc9cdRSKzlgsu8ebS3YvjfzeUDUjDf_yCVnn02NgWmakvtoMQKtWD5iTZ0ZhzwXHOIlfhukyJfe0p4GnWdzWNezU47nn8sCbyoc1HatOi3smDSPoBSCENcT%2Dy8irgh_JpRDadr1k.JGFiDqcnKlysZka1Gq8bSg&rut=11ed77e71a177ca38456c2b69185b621e6c0541475e8f28e53eab74436d61d69&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De87xExkZXh90UQttf5pjZulDVUCUz5IEj4Hp_F%2DlpeFyrJdP7oei%2DiqlV04SPznHVsjU%2DpmvxakO%2DIcV93jqsWcwvjx8GqksN3M3gIDS6FxZpChEoX35v2OzoG5w9Cb5AjQa6U_BCHLPpAzGv6O3L16TzMhlVVsqSre84DbwtdLsfgRhXgb04t9tfOw0k0BgwSXO6T5tpJGbfBT2cGZda0_gQ6pao%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cubHVtZWZsb3cuYWklMmZhcHAlMmZ0ZXh0LXRvLXZpZGVvJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkcHBjJTI2bXNjbGtpZCUzZDFhNmI3YWMzMDBkNzFhYjNhNmM1MTA3YjMxNWE1MzRhJTI2dXRtX2NhbXBhaWduJTNkQl9Db21fTHVtZUZsb3dfU1NfSF8yMDI1MDkxMF8lMjZ1dG1fdGVybSUzZGFpJTI1MjB0b29sJTI1MjB0byUyNTIwY3JlYXRlJTI1MjB2aWRlbyUyNTIwZnJvbSUyNTIwdGV4dCUyNnV0bV9jb250ZW50JTNkSy0xNSUyNTNBJTI1MjBUZXh0JTI1MkZQcm9tcHQlMjUyMHRvJTI1MjBWaWRlbyUyNTIwQWk%26rlid%3D1a6b7ac300d71ab3a6c5107b315a534a&vqd=4-258462236829832215838328238451020768661&iurl=%7B1%7DIG%3DB8AE1D5217C343469E45C26E9782AEFA%26CID%3D3F11ACDFE23D6FC0121ABB3FE3336EA8%26ID%3DDevEx%2C5037.1",
+      "snippet": "Generate AI Videos from Photos/Text. Customize Templates, Add Effects. No Skill Needed. AI Video Generator - Make High-Quality AI Kiss/Twerk Video, Multiple AI Effects, Try Now"
+    },
+    {
+      "title": "The #1 AI Video Generator - 2026&#x27;s Best AI Video Generator",
+      "url": "https://duckduckgo.com/y.js?ad_domain=artlist.io&ad_provider=bingv7aa&ad_type=txad&click_metadata=1NFFw1P2Y5m7hW9rSbbVUoYsL7ahYDAkrMLFouGtr13Mgraetdan%2Dlgqu0JLOpZERm0VfjHj6AtDbn5dttljBnTMMoouNX84U%2DSVP1FFHxIU_qP00TMOsG3kNlD3rh4wJqSY1cHAd9polPALII8GqCYlDPshhZauP7aBTPodr4s.OSk_Igrr9lS7kyMyF8veTA&rut=977b5c4948be0aa63eb296b7ee1097fed78305c49c50523662de65ddb5822d5b&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8IR2Eru3uBqmTERVdyD0PYTVUCUwVKHu6Ewr2lahvYtz%2DNx5367vcwL1lwTingC0I7GJCsP69WnPBR%2D%2D%2DkULSPGdNZEOfnADyMEs%2DddO_5Om7LXke%2D2eZQ1jB5nnEhl9_Z4cTMl7CNFgLXu6QT0RszE4RJ19HLsj0DXeuoT_F0I_8p9TrWNo9UM9WMrryeJxV6Dji%2DGgwb7%2D4uPeVhlXfJJnrPvs%26u%3DaHR0cHMlM2ElMmYlMmZ0b29sa2l0LmFydGxpc3QuaW8lMmZpbWFnZS12aWRlby1nZW5lcmF0b3IlM2Ztb2RlJTNkdmlkZW8lMjZtb2RlbEdyb3VwSUQlM2QzMDUlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2Q2Mjc1NjIwMzYlMjZ1dG1fY29udGVudCUzZDExNTIyOTAwMDE5NjkzMjYlMjZ1dG1fdGVybSUzZGtsaW5nJTI1MjBhaSUyNmtleXdvcmQlM2RrbGluZyUyNTIwYWklMjZhZCUzZCUyNm1hdGNodHlwZSUzZGIlMjZkZXZpY2UlM2RjJTI2bXNjbGtpZCUzZGViNzdjMjU0ZmM2ZTE0NWQ3NDM0YThlY2NkZTM0ZTMyJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkR2VuQUlfdENQQSUyNnV0bV90ZXJtJTNka2xpbmclMjUyMGFpJTI2dXRtX2NvbnRlbnQlM2RLbGluZ18yLjVfVHVyYm9fJTI1NUJHZW5BSV9WaWRlbyUyNTVE%26rlid%3Deb77c254fc6e145d7434a8eccde34e32&vqd=4-95817692228698643195557423879036150839&iurl=%7B1%7DIG%3DB8AE1D5217C343469E45C26E9782AEFA%26CID%3D3F11ACDFE23D6FC0121ABB3FE3336EA8%26ID%3DDevEx%2C5040.1",
+      "snippet": "Easily Transform Text to Video With Artlist&#x27;s High-Quality AI Video Generator for Creators. Discover the AI Video Generator Especially for Video Creators"
+    },
+    {
+      "title": "Seedance 2.0 Video Generator - Seadance AI",
+      "url": "https://seadance.io/seedance-2",
+      "snippet": "Seedance 2.0 is a multimodal AI video model for realistic, high-quality generation, with strong virtual human support, multi-shot consistency, native audio, and cinematic control."
+    },
+    {
+      "title": "Seedance 2.0 Video Generator | Create Cinematic AI Videos",
+      "url": "https://seedance2video.ai/",
+      "snippet": "Seedance 2.0 is a state-of-the-art AI video generation model. It creates high-quality, cinematic videos from text descriptions or images using advanced diffusion transformer architecture."
+    },
+    {
+      "title": "Seedance 2.0 AI Video Generator | Free Image & Text to Video",
+      "url": "https://seeddance.app/",
+      "snippet": "Seedance 2.0 is a next-gen AI video model that generates high-quality videos from text prompts and reference images, with strong motion coherence and multi-shot consistency. Is Seedance 2.0 free to try? Yes. You can start with a free tier for core features. Paid plans unlock higher resolutions, longer generations, batch runs, and priority queues."
+    }
+  ]
+}

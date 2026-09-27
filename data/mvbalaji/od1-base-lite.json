@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mvbalaji/od1-base-lite",
+  "slug": "mvbalaji-od1-base-lite",
+  "author": "mvbalaji",
+  "url": "https://huggingface.co/mvbalaji/od1-base-lite",
+  "created_at": "2026-09-26T21:27:16.000Z",
+  "updated_at": "2026-09-26T21:27:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "decision-model",
+    "typed-decisions",
+    "calibration",
+    "opendecide",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4918062855,
+  "storage_human": "4.9 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paintedrose - Models - Taboo Tube XXX",
+      "url": "https://www.tabootube.xxx/models/paintedrose/",
+      "snippet": "Intimidating yet intriguing professor, often spotted engrossed in classic novels during her office hours. Your Best Friend's Mom. She's …"
+    },
+    {
+      "title": "Painted Rose - Pornstar XXX (32 videos) @ PornRaw",
+      "url": "https://pornraw.com/models/painted-rose/",
+      "snippet": "Explore the top-rated videos of Painted Rose from numerous platforms. Enjoy a curated selection of the best content featuring …"
+    },
+    {
+      "title": "Paintedrose XXX Videos | SLUTS.wtf",
+      "url": "https://www.sluts.wtf/model/paintedrose/",
+      "snippet": "Watch full-length videos with Paintedrose — fresh amateur drops alongside professional studio productions."
+    },
+    {
+      "title": "Paintedrose Videos | WatchOn.me",
+      "url": "https://watchon.me/creator/paintedrose/",
+      "snippet": "Catch the latest videos with Paintedrose — fresh creator uploads and premium studio scenes."
+    },
+    {
+      "title": "Paintedrose Nude Taboo Porn Videos Free - TabooDude",
+      "url": "https://taboodude.com/model/paintedrose-2045?sort_by=longest&page=1",
+      "snippet": "Watch paintedrose nude taboo porn videos online at TabooDude. Choose form updated collection of high quality taboo porn movies …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-pi05-human-full-3000-61b3480218f3-474f4a073381",
+  "slug": "davidwdw-fa-pi05-human-full-3000-61b3480218f3-474f4a073381",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-pi05-human-full-3000-61b3480218f3-474f4a073381",
+  "created_at": "2026-09-27T00:11:35.000Z",
+  "updated_at": "2026-09-27T00:18:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44687335866,
+  "storage_human": "44.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "reddit",
+      "url": "https://www.reddit.com/r/reddit/wiki/index/",
+      "snippet": "The most official Reddit community of all official Reddit communities. Your go-to place for Reddit updates, announcements, and …"
+    },
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/r/all+/",
+      "snippet": "Create an account to follow your favorite communities and start taking part in conversations."
+    },
+    {
+      "title": "Conservative - Reddit",
+      "url": "https://www.reddit.com/r/Conservative/",
+      "snippet": "The largest conservative subreddit. https://discord.gg/conservative"
+    },
+    {
+      "title": "Huntsville, Alabama - Reddit",
+      "url": "https://www.reddit.com/r/HuntsvilleAlabama/",
+      "snippet": "A subreddit for the Rocket City and surrounding area."
+    }
+  ]
+}

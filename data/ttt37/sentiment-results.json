@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Ttt37/sentiment-results",
+  "slug": "ttt37-sentiment-results",
+  "author": "Ttt37",
+  "url": "https://huggingface.co/Ttt37/sentiment-results",
+  "created_at": "2026-09-26T20:43:07.000Z",
+  "updated_at": "2026-09-26T20:43:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - BenWiseman/sentiment.ai: Package for using deep learning ...",
+      "url": "https://github.com/BenWiseman/sentiment.ai",
+      "snippet": "The most complete on-device sentiment toolkit in the R/Python ecosystem. It ships hate-speech / mixed / style flags, intent-based profiles, an interactive sentiment map, and opt-in transformer backends for when you want maximum accuracy. The default model, on-device e5-base, matches the paid OpenAI embedding (text-embedding-3-small) on our benchmarks: that quality, free, across ~100 languages ..."
+    },
+    {
+      "title": "ttt37 - GitHub",
+      "url": "https://github.com/ttt37",
+      "snippet": "ttt37 doesn&#x27;t have any public repositories yet. Follow"
+    },
+    {
+      "title": "Best AI for Sentiment Analysis 2026: Top 20 Models Benchmarked",
+      "url": "https://openmark.ai/best-ai-for-sentiment-analysis",
+      "snippet": "Best AI for Sentiment Analysis in 2026 Top 20 AI models benchmarked on difficult sentiment analysis — sarcasm, irony, double negatives, and mixed signals across movie reviews, product feedback, and tweets. The cheapest model tied for first."
+    },
+    {
+      "title": "Sentiment Analysis Benchmark Testing: ChatGPT, Claude & Qwen",
+      "url": "https://aimultiple.com/sentiment-analysis-benchmark",
+      "snippet": "Explore the sentiment analysis benchmark performance of ChatGPT 4.0 and Claude 3.5, and the details of the experimental testing:"
+    },
+    {
+      "title": "Free Sentiment Analysis: Open-Source Models & Free API Tiers (2026)",
+      "url": "https://www.edenai.co/post/top-free-sentiment-analysis-tools-apis-and-open-source-models",
+      "snippet": "Free sentiment analysis APIs and open-source models tested on 45 sentences. Both top libraries scored 0% on sarcasm. Python code and free tier limits for 2026."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "furkandoganson/mae-checkpoint",
+  "slug": "furkandoganson-mae-checkpoint",
+  "author": "furkandoganson",
+  "url": "https://huggingface.co/furkandoganson/mae-checkpoint",
+  "created_at": "2026-09-27T00:30:29.000Z",
+  "updated_at": "2026-09-27T00:30:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "furkandoganson (Fatou dos Traoré) - Hugging Face",
+      "url": "https://huggingface.co/furkandoganson",
+      "snippet": "Hobbyist developer, occasional model trainer."
+    },
+    {
+      "title": "john-rivera/mae-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/john-rivera/mae-checkpoint",
+      "snippet": "Repository status The Python file contains the model and runnable example or training entry point. config.json records the generated architecture settings. training_args.json records the default experiment recipe. model.safetensors is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint."
+    },
+    {
+      "title": "GitHub - facebookresearch/mae_st: Official Open Source code for \"Masked ...",
+      "url": "https://github.com/facebookresearch/mae_st",
+      "snippet": "Official Open Source code for \"Masked Autoencoders As Spatiotemporal Learners\" - facebookresearch/mae_st"
+    },
+    {
+      "title": "AI Threat Landscape Digest March-April 2026 - Check Point Research",
+      "url": "https://research.checkpoint.com/2026/ai-threat-landscape-digest-march-april-2026/",
+      "snippet": "Executive Summary During the March-April 2026 reporting period, AI use in offensive operations advanced from development and planning to real-time operational deployment. Multiple independent cases, involving individual criminal actors, mass exploitation platforms, ransomware groups, and state-sponsored espionage, show evidence of commercial AI models executing autonomous attack workflows ..."
+    },
+    {
+      "title": "Checkpoint AI Models (141) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 141 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    }
+  ]
+}

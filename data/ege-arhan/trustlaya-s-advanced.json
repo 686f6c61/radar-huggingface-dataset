@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ege-arhan/TrustLaya-S-Advanced",
+  "slug": "ege-arhan-trustlaya-s-advanced",
+  "author": "ege-arhan",
+  "url": "https://huggingface.co/ege-arhan/TrustLaya-S-Advanced",
+  "created_at": "2026-09-24T05:41:08.000Z",
+  "updated_at": "2026-09-27T01:36:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "bert",
+    "safety",
+    "prompt-injection",
+    "multi-task",
+    "research",
+    "experimental",
+    "tr",
+    "en",
+    "dataset:yusuf-said/turkish-privacy-filter-dataset",
+    "base_model:ytu-ce-cosmos/turkish-medium-bert-uncased",
+    "base_model:quantized:ytu-ce-cosmos/turkish-medium-bert-uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 42138641,
+  "parameters_human": "42.1M",
+  "storage_bytes": 378739529,
+  "storage_human": "379 MB",
+  "base_model": "ytu-ce-cosmos/turkish-medium-bert-uncased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ecole de Guerre Economique: Formation en intelligence économique",
+      "url": "https://www.ege.fr/",
+      "snippet": "L'EGE est la seule formation en intelligence économique offrant un panel très diversifié d'exercices de terrain qui s'intègrent dans la …"
+    },
+    {
+      "title": "Ege Carpets Elevating spaces",
+      "url": "https://www.egecarpets.com/fr-fr",
+      "snippet": "Dépourvus de représentations figuratives claires, ou seulement suggérées, ils ouvrent la voie à des interprétations multiples, …"
+    },
+    {
+      "title": "Formations | Ecole de Guerre Economique",
+      "url": "https://www.ege.fr/formations",
+      "snippet": "Le M1 Risques et Intelligence Economique (RIE) de l'EGE est accessible en alternance sous forme de contrat de …"
+    },
+    {
+      "title": "École de guerre économique — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89cole_de_guerre_%C3%A9conomique",
+      "snippet": "L' École de guerre économique (EGE) est un établissement d' enseignement supérieur privé hors contrat français, fondé en 1997, …"
+    },
+    {
+      "title": "Ege Carpets Elevating spaces",
+      "url": "https://www.egecarpets.com/en-gb",
+      "snippet": "Designing beautiful carpets with a sustainable future in mind. Dive into Ege Carpets' outstanding designs for distinguished …"
+    }
+  ]
+}

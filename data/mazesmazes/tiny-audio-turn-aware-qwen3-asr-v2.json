@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mazesmazes/tiny-audio-turn-aware-qwen3-asr-v2",
+  "slug": "mazesmazes-tiny-audio-turn-aware-qwen3-asr-v2",
+  "author": "mazesmazes",
+  "url": "https://huggingface.co/mazesmazes/tiny-audio-turn-aware-qwen3-asr-v2",
+  "created_at": "2026-09-27T01:03:02.000Z",
+  "updated_at": "2026-09-27T01:03:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 782426112,
+  "parameters_human": "782.4M",
+  "storage_bytes": 1576358098,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mazesmazes/tiny-audio · Hugging Face",
+      "url": "https://huggingface.co/mazesmazes/tiny-audio",
+      "snippet": "Tiny Audio Efficient Speech Recognition with Parameter-Efficient Fine-Tuning Tiny Audio is a lightweight automatic speech recognition (ASR) model that combines a LoRA-adapted HuBERT-XLarge encoder with a LoRA-adapted SmolLM3-3B language model decoder, connected via a trainable audio projector."
+    },
+    {
+      "title": "mazesmazes/tiny-audio-omni · Hugging Face",
+      "url": "https://huggingface.co/mazesmazes/tiny-audio-omni",
+      "snippet": "How It Works Audio Encoder: GLM-ASR converts 16kHz audio into frame-level embeddings (768-dim) Projector: A 2-layer MLP with frame stacking bridges the audio and text embedding spaces Language Model: Qwen3 generates text autoregressively, conditioned on the projected audio"
+    },
+    {
+      "title": "GitHub - alexkroman/tiny-audio: Train your own speech AI model from ...",
+      "url": "https://github.com/alexkroman/tiny-audio",
+      "snippet": "Train your own speech AI model from scratch. Contribute to alexkroman/tiny-audio development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - john-rocky/coreai-model-zoo: Downloadable models and ...",
+      "url": "https://github.com/john-rocky/coreai-model-zoo/blob/main/",
+      "snippet": "Downloadable models and conversion recipes for Apple&#x27;s Core AI on iPhone and Mac. Chat, vision, speech and generative models with per-model validation records, Swift examples through CoreAIKit, and a downloadable Mac app. - john-rocky/coreai-model-zoo"
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

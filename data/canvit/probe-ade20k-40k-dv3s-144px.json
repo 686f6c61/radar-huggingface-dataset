@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "canvit/probe-ade20k-40k-dv3s-144px",
+  "slug": "canvit-probe-ade20k-40k-dv3s-144px",
+  "author": "canvit",
+  "url": "https://huggingface.co/canvit/probe-ade20k-40k-dv3s-144px",
+  "created_at": "2026-03-15T23:23:30.000Z",
+  "updated_at": "2026-09-26T23:32:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "canvit-pytorch",
+  "languages": [],
+  "tags": [
+    "canvit-pytorch",
+    "safetensors",
+    "dinov3",
+    "ade20k",
+    "linear-probe",
+    "image-segmentation",
+    "dataset:scene_parse_150",
+    "arxiv:2603.22570",
+    "base_model:facebook/dinov3-vits16-pretrain-lvd1689m",
+    "base_model:finetune:facebook/dinov3-vits16-pretrain-lvd1689m",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 59286,
+  "parameters_human": "59286",
+  "storage_bytes": 237672,
+  "storage_human": "237672 B",
+  "base_model": "facebook/dinov3-vits16-pretrain-lvd1689m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "canvit/probe-ade20k-40k-dv3s-256px · Hugging Face",
+      "url": "https://huggingface.co/canvit/probe-ade20k-40k-dv3s-256px",
+      "snippet": "ADE20K Segmentation Probe — DINOv3 ViT-S/16 @ 256px input Linear segmentation probe on the spatial features of facebook/dinov3-vits16-pretrain-lvd1689m."
+    },
+    {
+      "title": "canvit/probe-ade20k-40k-dv3s-128px · Hugging Face",
+      "url": "https://huggingface.co/canvit/probe-ade20k-40k-dv3s-128px",
+      "snippet": "Inference ProvidersNEW Image Segmentation This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support Model tree for canvit/probe-ade20k-40k-dv3s-128px Base model facebook/dinov3-vit7b16-pretrain-lvd1689m Finetuned"
+    },
+    {
+      "title": "[2603.22570] CanViT: Toward Active-Vision Foundation Models",
+      "url": "https://arxiv.org/abs/2603.22570",
+      "snippet": "On ADE20K segmentation, a frozen CanViT-B achieves 38.5% mIoU in a single low-resolution glimpse, outperforming the best active model&#x27;s 27.6% with 20x fewer inference FLOPs as well as its FLOP- or input-matched DINOv3 teacher. Given additional glimpses, CanViT-B reaches 45.9% ADE20K mIoU."
+    },
+    {
+      "title": "GitHub - m2b3/CanViT-PyTorch: Reference implementation of the Canvas ...",
+      "url": "https://github.com/m2b3/CanViT-PyTorch",
+      "snippet": "ADE20K Semantic Segmentation CanViTForSemanticSegmentation bundles a CanViT and a SegmentationProbe head into one model. forward returns per-pixel logits at canvas-grid resolution; predict adds bilinear upsampling. ... The standalone SegmentationProbe head is also exported from canvit_pytorch for use on any spatial feature map."
+    },
+    {
+      "title": "canvit-pytorch · PyPI",
+      "url": "https://pypi.org/project/canvit-pytorch/",
+      "snippet": "CanViT&#x27;s scene-wide output features at each timestep are linearly decodable into dense predictions without post-hoc upscaling; a frozen-weights CanViT-B evaluated with linear probing outperforms all prior dense active vision models by a wide margin on ADE20K scene parsing, at a fraction of the cost, while offering significantly greater flexibility."
+    }
+  ]
+}

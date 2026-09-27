@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "N-Bot-Int/OpenElla-NovelWriter-Charol",
+  "slug": "n-bot-int-openella-novelwriter-charol",
+  "author": "N-Bot-Int",
+  "url": "https://huggingface.co/N-Bot-Int/OpenElla-NovelWriter-Charol",
+  "created_at": "2026-09-24T09:09:59.000Z",
+  "updated_at": "2026-09-27T01:11:55.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "trl",
+    "roleplay",
+    "conversational",
+    "merge",
+    "mergekit",
+    "chat",
+    "en",
+    "dataset:N-Bot-Int/Propietary-Merging-Stepper-R1",
+    "base_model:ArliAI/Llama-3.1-8B-ArliAI-RPMax-v1.2",
+    "base_model:merge:ArliAI/Llama-3.1-8B-ArliAI-RPMax-v1.2",
+    "base_model:N-Bot-Int/OpenElla-NovelWriter-8B-V2-merged",
+    "base_model:merge:N-Bot-Int/OpenElla-NovelWriter-8B-V2-merged",
+    "base_model:N-Bot-Int/OpenElla-NovelWriter-8B-merged",
+    "base_model:merge:N-Bot-Int/OpenElla-NovelWriter-8B-merged",
+    "base_model:NeverSleep/Lumimaid-v0.2-8B",
+    "base_model:merge:NeverSleep/Lumimaid-v0.2-8B",
+    "base_model:Sao10K/L3-8B-Stheno-v3.2",
+    "base_model:merge:Sao10K/L3-8B-Stheno-v3.2",
+    "license:agpl-3.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 184,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138322872,
+  "storage_human": "32.1 GB",
+  "base_model": "N-Bot-Int/OpenElla-NovelWriter-Burgendy, N-Bot-Int/OpenElla-NovelWriter-8B-V2-merged, N-Bot-Int/OpenElla-NovelWriter-8B-merged, Sao10K/L3-8B-Stheno-v3.2, ArliAI/Llama-3.1-8B-ArliAI-RPMax-v1.2, NeverSleep/Lumimaid-v0.2-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "N — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/N",
+      "snippet": "N \\ɛn\\ féminin invariable, (Abréviation) (France) Nationale. (Sylviculture) Densité ; nombre de tiges, généralement rapporté à l’ …"
+    },
+    {
+      "title": "Mairie de Noyal-Chatillon (35) - Site officiel",
+      "url": "https://www.ville-noyal-chatillon.fr/",
+      "snippet": "2 days ago · Retrouvez toutes les informations relatives à l'enfance-jeunesse sur le Portail Familles. En 1 clic, parcourez les bulletins …"
+    },
+    {
+      "title": "Résidence sénior tout compris sur Rennes - Noyal Chatillon",
+      "url": "https://aquarelia.fr/residences-seniors/residence-seniors-bretagne/residence-seniors-noyal-chatillon-sur-seiche/",
+      "snippet": "Vous cherchez une résidence Sénior dynamique avec d'autres résidents avenants et accueillants proche de Rennes, découvrez la …"
+    },
+    {
+      "title": "Caves Hardy - Caviste Janzé / Noyal-Châtillon-sur-Seiche (35)",
+      "url": "https://caveshardy.fr/",
+      "snippet": "Découvrez notre gamme et nos bons plans exclusifs sur le site. L'enlèvement pourra se faire dans l'une de nos caves ou au dépôt …"
+    },
+    {
+      "title": "Noyal-Châtillon-sur-Seiche — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Noyal-Ch%C3%A2tillon-sur-Seiche",
+      "snippet": "Située au sud du bassin rennais, traversée par la Seiche et peuplée de 8359 habitants, elle fait partie des 43 communes de Rennes …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "thegovind/blink-4b",
+  "slug": "thegovind-blink-4b",
+  "author": "thegovind",
+  "url": "https://huggingface.co/thegovind/blink-4b",
+  "created_at": "2026-09-24T09:23:29.000Z",
+  "updated_at": "2026-09-26T21:47:27.000Z",
+  "license": "blink-research",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "decision-model",
+    "typed-decisions",
+    "one-pass",
+    "option-probabilities",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 81,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8432459860,
+  "storage_human": "8.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub.Read more"
+    },
+    {
+      "title": "GitHub - miuuyy/codex-chatgpt-web: Use ChatGPT Web (including …",
+      "url": "https://github.com/miuuyy/codex-chatgpt-web",
+      "snippet": "Use ChatGPT Web (including Pro) as a native model in Codex — with context, tools, streaming and images, without using Codex …Read more"
+    },
+    {
+      "title": "ChatGPT Plus 正式恢复五小时使用上限，Codex 长任务体验会受影响 …",
+      "url": "https://www.zhihu.com/question/2075903044676315058",
+      "snippet": "可以看看公众号老冯云数怎么用7-10个20x产生巨大生产力的， 《OPC一个月烧1000刀订阅，能有多少产出？ 》 的时候是7个， …Read more"
+    },
+    {
+      "title": "Guild Wars 3 - Reddit",
+      "url": "https://www.reddit.com/r/GuildWars3/",
+      "snippet": "r/GuildWars3 \"A job posting for an 'unannounced project' at Guild Wars developer ArenaNet suggests the possibility that Guild Wars …Read more"
+    },
+    {
+      "title": "ChatGPT - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/top/",
+      "snippet": "Dec 1, 2022 · r/ChatGPT: Subreddit to discuss about ChatGPT and AI. Not affiliated with OpenAI.Read more"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "helmo/Qwen3-0.6B",
+  "slug": "helmo-qwen3-0-6b",
+  "author": "helmo",
+  "url": "https://huggingface.co/helmo/Qwen3-0.6B",
+  "created_at": "2026-09-26T18:00:55.000Z",
+  "updated_at": "2026-09-26T18:48:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 1514722982,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HELMo — Haute École Libre Mosane",
+      "url": "https://www.helmo.be/",
+      "snippet": "Vélos électriques en test pour les membres du personnel HELMo Du 14 septembre au 13 novembre 2026"
+    },
+    {
+      "title": "Mon espace HELMo — HELMo",
+      "url": "https://www.helmo.be/fr/mon-espace-helmo",
+      "snippet": "Mon espace HELMo (Ancien \"HELMo Connect\") HELMo.be a fait peau neuve ! Ton raccourci ne fonctionne plus... Retrouve ton …"
+    },
+    {
+      "title": "Home | Helmo",
+      "url": "https://helmo.fr/home/",
+      "snippet": "mars-mai 2020 • retour"
+    },
+    {
+      "title": "HELMo Learn - Accueil",
+      "url": "https://learn.helmo.be/",
+      "snippet": "Bienvenue sur Learn Learn est la plateforme d'apprentissage en ligne de HELMo. Chaque département possède un espace …"
+    },
+    {
+      "title": "Mon espace HELMo",
+      "url": "https://mon-espace.helmo.be/sigale/",
+      "snippet": "Mon espace HELMo Chargement"
+    }
+  ]
+}

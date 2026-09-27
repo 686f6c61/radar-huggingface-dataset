@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Dezheen89/cosyvoice",
+  "slug": "dezheen89-cosyvoice",
+  "author": "Dezheen89",
+  "url": "https://huggingface.co/Dezheen89/cosyvoice",
+  "created_at": "2026-09-26T20:26:55.000Z",
+  "updated_at": "2026-09-26T20:33:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "cosyvoice",
+  "languages": [
+    "kmr"
+  ],
+  "tags": [
+    "cosyvoice",
+    "text-to-speech",
+    "tts",
+    "kurdish",
+    "badini",
+    "zero-shot-tts",
+    "kmr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 415406,
+  "storage_human": "415406 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Render-AI-Team/CosyVoice2: Multi-lingual large voice ...",
+      "url": "https://github.com/Render-AI-Team/CosyVoice2",
+      "snippet": "Model download We strongly recommend that you download our pretrained CosyVoice2-0.5B CosyVoice-300M CosyVoice-300M-SFT CosyVoice-300M-Instruct model and CosyVoice-ttsfrd resource. If you are expert in this field, and you are only interested in training your own CosyVoice model from scratch, you can skip this step."
+    },
+    {
+      "title": "CosyVoice Homepage",
+      "url": "https://cosyvoice.github.io/",
+      "snippet": "An overview of the CosyVoice Models at the inference stage. In summary, CosyVoice consists of an autoregressive transformer to generate corresponding speech tokens for input text, an ODE-based diffusion model, flow matching, to reconstruct Mel spectrum from the generated speech tokens, and a HiFTGAN based vocoder to synthesize waveforms."
+    },
+    {
+      "title": "CosyVoice | Multilingual TTS Model",
+      "url": "https://cosyvoice.org/",
+      "snippet": "Discover CosyVoice, a multilingual zero-shot TTS model, featuring natural pronunciation and high-quality speech synthesis with advanced features."
+    },
+    {
+      "title": "GitHub - QwenAudio/CosyVoice: Multi-lingual large voice generation ...",
+      "url": "https://github.com/QwenAudio/CosyVoice",
+      "snippet": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability. - QwenAudio/CosyVoice"
+    },
+    {
+      "title": "CosyVoice2.0",
+      "url": "https://fun-audio-llm.github.io/cosyvoice2/",
+      "snippet": "Ultra-Low Latency: CosyVoice 2.0 introduces a large-scale voice generation model technology that integrates offline and streaming modeling, supporting bidirectional streaming speech synthesis. The first packet synthesis latency can reach 150ms with minimal loss in quality."
+    }
+  ]
+}

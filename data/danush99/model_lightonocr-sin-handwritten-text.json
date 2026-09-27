@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "danush99/Model_LightOnOCR-Sin-Handwritten-Text",
+  "slug": "danush99-model_lightonocr-sin-handwritten-text",
+  "author": "danush99",
+  "url": "https://huggingface.co/danush99/Model_LightOnOCR-Sin-Handwritten-Text",
+  "created_at": "2026-09-26T20:25:33.000Z",
+  "updated_at": "2026-09-26T20:25:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "si"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ocr",
+    "sinhala",
+    "handwritten",
+    "qlora",
+    "lightonocr",
+    "si",
+    "base_model:lightonai/LightOnOCR-2-1B",
+    "base_model:adapter:lightonai/LightOnOCR-2-1B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 164628278,
+  "storage_human": "165 MB",
+  "base_model": "lightonai/LightOnOCR-2-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "danush99 (Hewagama) - Hugging Face",
+      "url": "https://huggingface.co/danush99",
+      "snippet": "Reading DS and Ai MSc at UOM. Recent Activity. updated a Space 2 days ago . danush99/Space_TrOCR-Sin-Printed-Text"
+    },
+    {
+      "title": "danush99/Model_TrOCR-Sin-Handwritten-Text · Hugging Face",
+      "url": "https://huggingface.co/danush99/Model_TrOCR-Sin-Handwritten-Text",
+      "snippet": "TrOCR-Sin-Normal-Text This model is a fine-tuned version of kavg/TrOCR-SIN-DeiT for Sinhala normal/printed text OCR. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/lighton_ocr.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/lighton_ocr.md",
+      "snippet": "LightOnOcr is a compact, end-to-end vision-language model for Optical Character Recognition (OCR) and document understanding. It achieves state-of-the-art accuracy in its weight class while being several times faster and cheaper than larger general-purpose VLMs."
+    },
+    {
+      "title": "LightOnOCR-2-1B: Best OCR model, beats DeepSeek OCR",
+      "url": "https://medium.com/data-science-in-your-pocket/lightonocr-2-1b-best-ocr-model-beats-deepseek-ocr-55871623e0a6",
+      "snippet": "LightOnAI&#x27;s new LightOnOCR-2-1B is a second-generation, 1-billion-parameter OCR model designed to convert document pages, like PDFs, into clean, readable text in one go, without relying on ..."
+    },
+    {
+      "title": "LightonOCR : Fastest OCR AI, beats DeepSeek OCR, PaddleOCR",
+      "url": "https://medium.com/data-science-in-your-pocket/lightonocr-fastest-ocr-ai-beats-deepseek-ocr-paddleocr-1fe2f0a2f1ad",
+      "snippet": "A True End-to-End OCR Model LightOnOCR isn&#x27;t just another model with OCR in its name. It&#x27;s actually end-to-end. There&#x27;s no segmentation or text detection stage, it learns everything jointly."
+    }
+  ]
+}

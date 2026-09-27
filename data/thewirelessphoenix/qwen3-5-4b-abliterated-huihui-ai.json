@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "TheWirelessPhoenix/Qwen3.5-4B-abliterated-huihui-ai",
+  "slug": "thewirelessphoenix-qwen3-5-4b-abliterated-huihui-ai",
+  "author": "TheWirelessPhoenix",
+  "url": "https://huggingface.co/TheWirelessPhoenix/Qwen3.5-4B-abliterated-huihui-ai",
+  "created_at": "2026-09-26T21:54:04.000Z",
+  "updated_at": "2026-09-26T21:54:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "abliterated",
+    "uncensored",
+    "image-text-to-text",
+    "conversational",
+    "base_model:huihui-ai/Huihui-Qwen3.5-4B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.5-4B-abliterated",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 3054288526,
+  "storage_human": "3.1 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.5-4B-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Use WhatsApp on your browser. New to WhatsApp? Need help? Download WhatsApp on your mobile device, tablet or desktop and …"
+    },
+    {
+      "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "url": "https://www.whatsapp.com/",
+      "snippet": "Now you can make and receive video or voice calls — one-on-one or in groups — right from your browser. With private messaging …"
+    },
+    {
+      "title": "HOUSAB - WhatsApp",
+      "url": "https://wa.me/",
+      "snippet": "Hosted by WhatsApp 2026 © WhatsApp LLC Privacy & Terms"
+    },
+    {
+      "title": "WhatsApp | Messages et appels privés, gratuits, sûrs et fiables",
+      "url": "https://www.whatsapp.com/?lang=fr",
+      "snippet": "Passez des appels et envoyez des messages privés gratuitement* dans le monde entier, de manière simple et fiable. Vous pouvez …"
+    }
+  ]
+}

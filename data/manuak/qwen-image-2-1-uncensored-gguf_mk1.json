@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Manuak/Qwen-Image-2.1-Uncensored-GGUF_MK1",
+  "slug": "manuak-qwen-image-2-1-uncensored-gguf_mk1",
+  "author": "Manuak",
+  "url": "https://huggingface.co/Manuak/Qwen-Image-2.1-Uncensored-GGUF_MK1",
+  "created_at": "2026-09-26T20:41:32.000Z",
+  "updated_at": "2026-09-26T20:41:32.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "image-generation",
+    "comfyui",
+    "comfyui-gguf",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 105004311739,
+  "storage_human": "105.0 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
+      "snippet": "All required companion files (GGUF transformer, text encoder, and VAE) are hosted directly in this repository. Download the files and place them in their respective ComfyUI directories: ComfyUI/ └── models/ ├── diffusion_models/ │ └── qwen-image-2.1-UC-Q4_K_M.gguf # Choose one GGUF quantization (Q4_K_M recommended) ├── text_encoders/ │ └── qwen3vl_8b_bf16.safetensors # Or qwen3vl_8b_int8_convrot.safetensors (recommended for lower memory) └── vae/ └── qwen_image_2.1_vae_bf16.safetensors"
+    },
+    {
+      "title": "0xSojalSec/Qwen-Image-2.1-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/0xSojalSec/Qwen-Image-2.1-Uncensored-GGUF",
+      "snippet": "These GGUF files contain the Qwen-Image-2.1 image transformer; the original text encoder and VAE are also required for inference."
+    },
+    {
+      "title": "Is Qwen-Image-2.1 Uncensored? Filters, License, and the Law | ...",
+      "url": "https://blog.laozhang.ai/en/posts/qwen-image-2-1-nsfw",
+      "snippet": "The filtering people run into lives ... “Uncensored GGUF” uploads that appeared on release day are plain quantizations of the same weights, not a modified model...."
+    },
+    {
+      "title": "How to Run Qwen-Image-2.1 Locally (the \"Uncensored\" Version Is ...",
+      "url": "https://stashbase.ai/blog/run-qwen-image-2-1-locally-uncensored/",
+      "snippet": "For GGUF files, install leejet's ComfyUI-GGUF. The older city96 loader hasn't been updated since January, and it can stop with \"Unknown model architecture!\" ... The model card has a short quick start for an NVIDIA GPU. It downloads the full 33 GB model. Claude Code can write the script, run it and save the picture next to your draft. ... Write generate.py from the quick start on the Qwen-Image-2.1 model card."
+    },
+    {
+      "title": "KasugaiSakura/Qwen-Image-2.1-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/KasugaiSakura/Qwen-Image-2.1-Uncensored-GGUF",
+      "snippet": "All required companion files (GGUF transformer, text encoder, and VAE) are hosted directly in this repository. Download the files and place them in their respective ComfyUI directories: ComfyUI/ └── models/ ├── diffusion_models/ │ └── qwen-image-2.1-Q4_K_M.gguf # Choose one GGUF quantization (Q4_K_M recommended) ├── text_encoders/ │ └── qwen3vl_8b_bf16.safetensors # Or qwen3vl_8b_int8_convrot.safetensors (recommended for lower memory) └── vae/ └── qwen_image_2.1_vae_bf16.safetensors"
+    }
+  ]
+}

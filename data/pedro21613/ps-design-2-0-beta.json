@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Pedro21613/PS-design-2.0-beta",
+  "slug": "pedro21613-ps-design-2-0-beta",
+  "author": "Pedro21613",
+  "url": "https://huggingface.co/Pedro21613/PS-design-2.0-beta",
+  "created_at": "2026-09-27T01:04:26.000Z",
+  "updated_at": "2026-09-27T01:04:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pedro21613/PS-1.0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Pedro21613/PS-1.0-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pedro21613/PS-1.0-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/Pedro21613/PS-1.0-GGUF/tree/main",
+      "snippet": "Like 0 Safetensors GGUF Portuguese English Spanish llama from-scratch small portuguese ps-1.0 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Meta AI",
+      "url": "https://www.meta.ai/",
+      "snippet": "Use Meta AI assistant to get things done, create AI-generated images for free, and get answers to any of your questions."
+    },
+    {
+      "title": "What&#x27;s new in Adobe Photoshop (beta) on desktop | Photoshop",
+      "url": "https://helpx.adobe.com/photoshop/desktop/whats-new/whats-new-in-photoshop-beta-on-desktop.html",
+      "snippet": "Explore new features in Adobe Photoshop (beta) on desktop, including Firefly Image Edit AI for sharper, more realistic edits."
+    },
+    {
+      "title": "Adobe Firefly - Free Generative AI for Creatives",
+      "url": "https://www.adobe.com/products/firefly.html",
+      "snippet": "Create and edit images, audio, and video with Adobe Firefly&#x27;s Generative AI, plus try top models from Google, OpenAI, and more."
+    }
+  ]
+}

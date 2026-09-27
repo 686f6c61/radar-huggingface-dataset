@@ -4,8 +4,8 @@
   "slug": "gaerha-myawesomemodel-testrepo",
   "author": "gaerha",
   "url": "https://huggingface.co/gaerha/MyAwesomeModel-TestRepo",
-  "created_at": "2026-09-23T19:56:49.000Z",
-  "updated_at": "2026-09-23T19:57:02.000Z",
+  "created_at": "2026-09-27T00:45:43.000Z",
+  "updated_at": "2026-09-27T00:46:52.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-26T03:03:19.415Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "usejul/jul-decision-e5-small",
+  "slug": "usejul-jul-decision-e5-small",
+  "author": "usejul",
+  "url": "https://huggingface.co/usejul/jul-decision-e5-small",
+  "created_at": "2026-09-26T21:12:30.000Z",
+  "updated_at": "2026-09-26T21:12:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "jul",
+    "zero-shot-classification",
+    "en",
+    "fr",
+    "multilingual",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:finetune:intfloat/multilingual-e5-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117653760,
+  "parameters_human": "117.7M",
+  "storage_bytes": 487720151,
+  "storage_human": "488 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shemale Porn, Free Tranny Porn Videos - aShemaleTube",
+      "url": "https://www.ashemaletube.com/",
+      "snippet": "Free shemale porn videos, huge collection of free tranny porno movies. New shemale and tranny sex porn tube vids delivered to you …"
+    },
+    {
+      "title": "Tranny Tube - Adult Streaming Sex Tube Videos - aShemaleTube.com",
+      "url": "https://www.ashemaletube.com/tranny-porn/",
+      "snippet": "Porn Tube videos and adult tube movies free to enjoy and presented by ashemaletube. New free porn added daily on our exclusive …"
+    },
+    {
+      "title": "All Shemale Porn Videos | aShemaleTube",
+      "url": "https://www.ashemaletube.tv/tags/all/",
+      "snippet": "All Shemale Porn Videos. All Tranny Tube Updated Daily."
+    },
+    {
+      "title": "ASHEMALETUBE @ Tranny Clips - Free Shemale Porn",
+      "url": "https://trannyclips.com/all-videos-from-ashemaletube",
+      "snippet": "The hottest free SHEMALE ASHEMALETUBE porn videos. The hottest video: Trans Woman with Big Cock Sex And Shemale Action …"
+    },
+    {
+      "title": "TS FAP • Shemale • Free porn",
+      "url": "https://tsfap.com/en/",
+      "snippet": "Free porn videos - Shemale: Femboy, Crossdresser, Ebony, Solo, Bbc, First Time, Homemade, Trans Fucks Guy, Cum In Mouth, …"
+    }
+  ]
+}

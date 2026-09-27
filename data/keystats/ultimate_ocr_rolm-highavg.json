@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "keystats/Ultimate_ocr_rolm-highavg",
+  "slug": "keystats-ultimate_ocr_rolm-highavg",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/Ultimate_ocr_rolm-highavg",
+  "created_at": "2026-09-26T20:23:51.000Z",
+  "updated_at": "2026-09-26T20:24:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836608,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 20 OCR AI Models 2026: Local Extraction",
+      "url": "https://local-ai-zone.github.io/guides/best-ai-ocr-models-ultimate-ranking-2026.html",
+      "snippet": "Discover the best AI OCR models for 2026. Compare DeepSeek-OCR, GLM-OCR, PaddleOCR-VL, and more for local document extraction, tables, and formulas."
+    },
+    {
+      "title": "Best LLM for OCR (2026): GLM-OCR Wins at 94.62 — 7 Models Ranked",
+      "url": "https://ofox.ai/blog/best-ai-model-for-ocr-2026/",
+      "snippet": "Which AI model has the best OCR accuracy in 2026? On the OmniDocBench benchmark, specialized models lead: GLM-OCR scores 94.62 and PaddleOCR-VL hits 94.50. Among frontier LLMs, Gemini 3.1 Pro leads at 90.33, ahead of GPT-5.4 at roughly 85.8. The best choice depends on your use case — frontier LLMs handle reasoning alongside extraction, while specialized models maximize raw accuracy."
+    },
+    {
+      "title": "GitHub - baidu/Unlimited-OCR: Unlimited OCR Works: Welcome the Era of ...",
+      "url": "https://github.com/baidu/Unlimited-OCR/tree/main/",
+      "snippet": "Unlimited OCR Works Welcome the Era of One-shot Long-horizon Parsing. Release [2026/07/21] 🤝 Thanks to the ms-swift community for their support, our model now supports training with ms-swift. [2026/07/03] 🤝 Thanks to the Baidu Cloud team for their support. Our model is now available on Baidu Cloud."
+    },
+    {
+      "title": "Legend_ocr_rolm-highavg API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/keystats/Legend_ocr_rolm-highavg",
+      "snippet": "Deploy Legend_ocr_rolm-highavg with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "OCRBench Leaderboard - llm-stats.com",
+      "url": "https://llm-stats.com/benchmarks/ocrbench",
+      "snippet": "OCRBench leaderboard — Kimi K2.5 leads 24 AI models at 0.923. OCRBench: Comprehensive evaluation benchmark for assessing Optical Character Recognition (OCR) ca…"
+    }
+  ]
+}

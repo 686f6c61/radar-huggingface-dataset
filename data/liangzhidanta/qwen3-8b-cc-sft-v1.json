@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "liangzhidanta/Qwen3-8B-CC-SFT-v1",
+  "slug": "liangzhidanta-qwen3-8b-cc-sft-v1",
+  "author": "liangzhidanta",
+  "url": "https://huggingface.co/liangzhidanta/Qwen3-8B-CC-SFT-v1",
+  "created_at": "2026-09-17T11:27:26.000Z",
+  "updated_at": "2026-09-27T01:12:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "coding-agent",
+    "software-engineering",
+    "agent",
+    "tool-use",
+    "sft",
+    "slime",
+    "claude-code",
+    "swe-smith",
+    "conversational",
+    "dataset:liangzhidanta/claude-code-glm53-swesmith-trajectories",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 468,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16393156370,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forums - GTAW France",
+      "url": "https://forum-fr.gta.world/",
+      "snippet": "Cette partie est destinée à être progressivement déplacées vers les guides.Read more"
+    },
+    {
+      "title": "Archives - GTAW France",
+      "url": "https://forum-fr.gta.world/forum/44-archives/",
+      "snippet": "Par streetgeneral., le 19 décembre 2024 Grape Street WVG (et 1 en plus)"
+    },
+    {
+      "title": "Groovin Hunnid Boys - Factions illégales - GTAW France",
+      "url": "https://forum-fr.gta.world/topic/28709-groovin-hunnid-boys/",
+      "snippet": "Aug 26, 2026 · 25/10/2006 - 19/07/2026, Mort de Yung Soulja aKa YS, Baby Grinch Alors que Jerome Rincon sortait du parking du …"
+    },
+    {
+      "title": "Ouverture de l'UCP : https://ucp-fr.gta.world/ - GTAW France",
+      "url": "https://forum-fr.gta.world/topic/383-ouverture-de-lucp-httpsucp-frgtaworld/",
+      "snippet": "Feb 19, 2021 · L'UCP est maintenant ouvert sur https://ucp-fr.gta.world/ Ce dernier vous donnera la possibilité de créer votre compte …"
+    },
+    {
+      "title": "Baboon's Workshop | GRAPHIQUES | SONS - GTAW France",
+      "url": "https://forum-fr.gta.world/topic/4740-baboons-workshop-graphiques-sons-skins-et-plus-traduction-fr/",
+      "snippet": "Jun 1, 2021 · Vous pouvez aider Baboon sur Patreon ou rejoindre le serveur Discord si vous avez besoin d'aide. À savoir que tout …"
+    }
+  ]
+}

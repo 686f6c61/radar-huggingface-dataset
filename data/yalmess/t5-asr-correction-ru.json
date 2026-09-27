@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Yalmess/t5-asr-correction-ru",
+  "slug": "yalmess-t5-asr-correction-ru",
+  "author": "Yalmess",
+  "url": "https://huggingface.co/Yalmess/t5-asr-correction-ru",
+  "created_at": "2026-09-26T19:59:53.000Z",
+  "updated_at": "2026-09-26T20:00:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 222903552,
+  "parameters_human": "222.9M",
+  "storage_bytes": 891644712,
+  "storage_human": "892 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "asr-error-correction - a fubotz Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/fubotz/asr-error-correction",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from fubotz"
+    },
+    {
+      "title": "bond005/ruT5-ASR · Hugging Face",
+      "url": "https://huggingface.co/bond005/ruT5-ASR",
+      "snippet": "Edit model card ruT5-ASR Model was trained by bond005 to correct errors in the ASR output (in particular, output of Wav2Vec2-Large-Ru-Golos). The model is based on ruT5-base. Usage To correct ASR outputs the model can be used as a standalone sequence-to-sequence model as follows:"
+    },
+    {
+      "title": "Dj-ai Cms",
+      "url": "https://dj-ai.ai/index.php?page=t5-asr-grammar-corrector",
+      "snippet": "T5 ASR Grammar Corrector For my master project, Curious AI, I had trialed several VAD and ASR models to try and find the right fit for the live WebRTC real-time streaming architecture. After a lot of benchmarking and tweaking, I settled on pyannote for VAD and NVIDIA NeMo for ASR."
+    },
+    {
+      "title": "GitHub - jinjiayin47/T5-ASR-Correction",
+      "url": "https://github.com/jinjiayin47/T5-ASR-Correction",
+      "snippet": "A joint optimization pipeline that corrects Automatic Speech Recognition (ASR) errors before they propagate into machine translation. The core contribution is T5-Lev, an error-correction module that combines a fine-tuned T5 text-generation model with Levenshtein-distance-based similarity scoring to distinguish real ASR mistakes (misspellings, homophone confusions) from harmless variation, then ..."
+    },
+    {
+      "title": "GitHub - dayyanj/DJ-AI-ASR-GRAMMAR-CORRECTOR: ASR text output grammar ...",
+      "url": "https://github.com/dayyanj/DJ-AI-ASR-GRAMMAR-CORRECTOR",
+      "snippet": "DJ-AI ASR Grammar Corrector A lightweight grammar correction model fine-tuned from t5-small and t5-base, specifically designed to correct common errors in automatic speech recognition (ASR) outputs — including homophones, verb tense issues, contractions, duplicated words, and more. Optimized for fast inference in (near) real-time ASR pipelines."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "OpenVoiceOS/F5-TTS-OpenBible-Hausa",
+  "slug": "openvoiceos-f5-tts-openbible-hausa",
+  "author": "OpenVoiceOS",
+  "url": "https://huggingface.co/OpenVoiceOS/F5-TTS-OpenBible-Hausa",
+  "created_at": "2026-09-26T20:56:10.000Z",
+  "updated_at": "2026-09-26T20:58:38.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "f5_tts",
+  "languages": [
+    "ha"
+  ],
+  "tags": [
+    "f5_tts",
+    "text-to-speech",
+    "f5-tts",
+    "open-bible",
+    "mirror",
+    "ha",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5374197388,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "freyavoice/Freya-TTS",
+  "slug": "freyavoice-freya-tts",
+  "author": "freyavoice",
+  "url": "https://huggingface.co/freyavoice/Freya-TTS",
+  "created_at": "2026-07-07T09:30:54.000Z",
+  "updated_at": "2026-07-27T20:40:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "freyatts",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "freyatts",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "turkish",
+    "flow-matching",
+    "diffusion-transformer",
+    "speech-synthesis",
+    "tr",
+    "arxiv:2607.09530",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 43,
+  "downloads_30d": 5059,
+  "trending_score": 11,
+  "parameters": 183198145,
+  "parameters_human": "183.2M",
+  "storage_bytes": 732811956,
+  "storage_human": "733 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

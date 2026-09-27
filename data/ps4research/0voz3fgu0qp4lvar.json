@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "PS4Research/0VOz3fgU0qp4lVar",
+  "slug": "ps4research-0voz3fgu0qp4lvar",
+  "author": "PS4Research",
+  "url": "https://huggingface.co/PS4Research/0VOz3fgU0qp4lVar",
+  "created_at": "2026-09-27T00:37:03.000Z",
+  "updated_at": "2026-09-27T00:44:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:allenai/Olmo-3.1-32B-Think",
+    "base_model:finetune:allenai/Olmo-3.1-32B-Think",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32233522176,
+  "parameters_human": "32.23B",
+  "storage_bytes": 64467127296,
+  "storage_human": "64.5 GB",
+  "base_model": "allenai/Olmo-3.1-32B-Think",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PS4Research/gS8nV5hA1yW3jT6s · Hugging Face",
+      "url": "https://huggingface.co/PS4Research/gS8nV5hA1yW3jT6s",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PS4Research (Priyansh Singhal) - Hugging Face",
+      "url": "https://huggingface.co/PS4Research",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 28 days ago ... published a model 28 days ago"
+    },
+    {
+      "title": "PS4Research/gS8nV5hA1yW3jT6s - Fast, Reliable, and Scalable Inference ...",
+      "url": "https://friendli.ai/models/PS4Research/gS8nV5hA1yW3jT6s",
+      "snippet": "Run PS4Research/gS8nV5hA1yW3jT6s with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4 ..."
+    },
+    {
+      "title": "GitHub - RuxaXa/ps4-research: Evidence-oriented PS4 research and reboot ...",
+      "url": "https://github.com/RuxaXa/ps4-research",
+      "snippet": "Evidence-oriented documentation and source code from an authorized, owner-operated PlayStation 4 research environment."
+    },
+    {
+      "title": "ps4-research/README.md at main · RuxaXa/ps4-research · GitHub",
+      "url": "https://github.com/RuxaXa/ps4-research/blob/main/README.md",
+      "snippet": "PS4 Research and Dropbear SSH Port Evidence-oriented documentation and source code from an authorized, owner-operated PlayStation 4 research environment."
+    }
+  ]
+}

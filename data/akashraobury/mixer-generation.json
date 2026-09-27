@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Akashraobury/mixer-generation",
+  "slug": "akashraobury-mixer-generation",
+  "author": "Akashraobury",
+  "url": "https://huggingface.co/Akashraobury/mixer-generation",
+  "created_at": "2026-09-27T00:44:39.000Z",
+  "updated_at": "2026-09-27T00:44:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Akashraobury (Akash Rao) - Hugging Face",
+      "url": "https://huggingface.co/Akashraobury/models",
+      "snippet": "Akashraobury&#x27;s models1 Sort: Recently updated Akashraobury/model_112034448_flamingo_nano Updated 4 days ago"
+    },
+    {
+      "title": "Akashraobury (Akash Rao) - Hugging Face",
+      "url": "https://huggingface.co/Akashraobury",
+      "snippet": "AI & ML interests ML in healthcare — yes, it&#x27;s as hard as it sounds"
+    },
+    {
+      "title": "Top Generative AI Models to Explore in 2025 - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/generative-ai-models/",
+      "snippet": "Every model offers a different set of advantages and a window into the seemingly endless possibilities of AI-driven creation. In this article, we&#x27;ll be looking into distinct AI generative, segmented into Text, Image, and Code generative AIs. Before getting into the Top generative AI models, let&#x27;s first understand in brief what is generative AI."
+    },
+    {
+      "title": "AI Song Remixer - Remix, Mashup & Vary Any Track | Loudly",
+      "url": "https://www.loudly.com/ai-song-remixer",
+      "snippet": "Turn any song into fresh remixes, mashups and variations with the AI Song Remixer. Rights-safe and royalty-free, powered by AI."
+    },
+    {
+      "title": "Mixar: The AI Native 3D Editor Built on Blender",
+      "url": "https://www.mixar.app/",
+      "snippet": "Mixar is a 3D editor built on Blender with an AI agent inside it. Automate retopology, UV rebuilds, baking and export prep, and generate when you need to."
+    }
+  ]
+}

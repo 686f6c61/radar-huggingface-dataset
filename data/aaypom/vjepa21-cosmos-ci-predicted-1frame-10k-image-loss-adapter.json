@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Aaypom/vjepa21-cosmos-ci-predicted-1frame-10k-image-loss-adapter",
+  "slug": "aaypom-vjepa21-cosmos-ci-predicted-1frame-10k-image-loss-adapter",
+  "author": "Aaypom",
+  "url": "https://huggingface.co/Aaypom/vjepa21-cosmos-ci-predicted-1frame-10k-image-loss-adapter",
+  "created_at": "2026-09-26T23:24:32.000Z",
+  "updated_at": "2026-09-27T00:32:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "video-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "v-jepa-2.1",
+    "cosmos-tokenizer",
+    "world-models",
+    "video-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15383363128,
+  "storage_human": "15.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accéder à mon mail Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Acc%C3%A9der-%C3%A0-mon-mail-Orange/td-p/36",
+      "snippet": "Aug 2, 2013 · Voici quelques infos utiles à préciser lorsque vous rencontrez un soucis de messagerie Comment consultez-vous vos …"
+    },
+    {
+      "title": "Orange - Forum - Assistance - Communauté Orange - Livebox",
+      "url": "https://communaute.orange.fr/",
+      "snippet": "Trouvez les réponses sur le forum Orange et bénéficiez de l'entraide et des conseils des utilisateurs de services Orange."
+    },
+    {
+      "title": "récupérer ma messagerie wanadoo.fr - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/r%C3%A9cup%C3%A9rer-ma-messagerie-wanadoo-fr/td-p/2282371",
+      "snippet": "Aug 8, 2020 · bonjour, ma messagerie wanadoo.fr, je n'arrive pas à la retrouver et pour la messagerie orange, je ne peux pas l'avoir, …"
+    },
+    {
+      "title": "Résolu : Accès au portail Orange France - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Acc%C3%A8s-au-portail-Orange-France/td-p/1699164",
+      "snippet": "Nov 19, 2018 · Bonjour, Pour accéder au portail c’est par ici 👉 Portail Orange | Offres Mobiles, Internet, TV, Actu & Accès compte Mail …"
+    },
+    {
+      "title": "Webmail Orange - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/bd-p/mail",
+      "snippet": "La communauté vous aide à mieux utiliser et découvrir les fonctionnalités de votre mail Orange"
+    }
+  ]
+}

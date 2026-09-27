@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OpenVoiceOS/F5-TTS-OpenBible-Twi-Akuapem",
+  "slug": "openvoiceos-f5-tts-openbible-twi-akuapem",
+  "author": "OpenVoiceOS",
+  "url": "https://huggingface.co/OpenVoiceOS/F5-TTS-OpenBible-Twi-Akuapem",
+  "created_at": "2026-09-26T20:40:52.000Z",
+  "updated_at": "2026-09-26T20:49:00.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "f5_tts",
+  "languages": [
+    "tw"
+  ],
+  "tags": [
+    "f5_tts",
+    "text-to-speech",
+    "f5-tts",
+    "open-bible",
+    "mirror",
+    "tw",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5373991651,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open Bible F5-TTS - a multilingual-tts Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/multilingual-tts/open-bible-f5-tts",
+      "snippet": "F5-TTS TTS models trained on Open Bible corpus. Please cite OpenBibleTTS: Large-Scale Speech Resources and TTS Models for Low-Resource Languages."
+    },
+    {
+      "title": "multilingual-tts/F5-TTS-OpenBible-Twi-Akuapem · Hugging Face",
+      "url": "https://huggingface.co/multilingual-tts/F5-TTS-OpenBible-Twi-Akuapem",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante · Hugging Face",
+      "url": "https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante",
+      "snippet": "A zero-shot text-to-speech model for Twi (Asante), trained from scratch on the Open Bible corpus using the F5-TTS architecture (diffusion transformer with vocos vocoder, 24 kHz output)."
+    },
+    {
+      "title": "OpenVoiceOS - GitHub",
+      "url": "https://github.com/OpenVoiceOS",
+      "snippet": "OpenVoiceOS is a community-driven, open-source, privacy-respecting voice assistant framework and operating system that puts users in control of their data."
+    },
+    {
+      "title": "F5-TTS-OpenBible-Twi-Akuapem - Hugging Face",
+      "url": "https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

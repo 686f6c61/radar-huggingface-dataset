@@ -5,7 +5,7 @@
   "author": "ilovemugi",
   "url": "https://huggingface.co/ilovemugi/mugi-decision",
   "created_at": "2026-09-25T01:52:00.000Z",
-  "updated_at": "2026-09-25T02:13:31.000Z",
+  "updated_at": "2026-09-26T06:28:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -26,6 +26,8 @@
     "reranking",
     "rocm",
     "text-classification",
+    "multimodal",
+    "image-classification",
     "custom_code",
     "zh",
     "en",
@@ -35,12 +37,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 752394048,
   "parameters_human": "752.4M",
-  "storage_bytes": 1524820767,
-  "storage_human": "1.5 GB",
+  "storage_bytes": 1726021239,
+  "storage_human": "1.7 GB",
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"

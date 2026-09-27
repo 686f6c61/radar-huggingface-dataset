@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sweetdove/gpt-local",
+  "slug": "sweetdove-gpt-local",
+  "author": "sweetdove",
+  "url": "https://huggingface.co/sweetdove/gpt-local",
+  "created_at": "2026-09-27T01:09:41.000Z",
+  "updated_at": "2026-09-27T01:09:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - nomic-ai/gpt4all: GPT4All: Run Local LLMs on Any Device. Open ...",
+      "url": "https://github.com/nomic-ai/gpt4all",
+      "snippet": "October 19th, 2023: GGUF Support Launches with Support for: Mistral 7b base model, an updated model gallery on our website, several new local code models including Rift Coder v1.5 Nomic Vulkan support for Q4_0 and Q4_1 quantizations in GGUF. Offline build support for running old versions of the GPT4All Local LLM Chat Client."
+    },
+    {
+      "title": "GitHub - PromtEngineer/localGPT: Chat with your documents on your local ...",
+      "url": "https://github.com/PromtEngineer/localGPT",
+      "snippet": "Chat with your documents on your local device using GPT models. No data leaves your device and 100% private. - PromtEngineer/localGPT"
+    },
+    {
+      "title": "Best Local LLM Models 2026: Benchmarks & Use Cases",
+      "url": "https://www.aitooldiscovery.com/how-to/best-local-llm-models",
+      "snippet": "The best local LLM models to run on your own hardware in 2026. Covers Llama 3.3, Mistral, Qwen 2.5, Phi-4, DeepSeek R1, and Gemma 3 with real benchmark data."
+    },
+    {
+      "title": "Home | LocalGPT",
+      "url": "https://localgpt.app/",
+      "snippet": "LocalGPT - A local AI assistant with persistent memory, and apps that turn words, songs, and notes into explorable 3D worlds. Open source, runs locally."
+    },
+    {
+      "title": "10 Best LLM Tools To Run Models Locally (September 2026) - Unite.AI",
+      "url": "https://www.unite.ai/best-llm-tools-to-run-models-locally/",
+      "snippet": "Developers, privacy-conscious teams, hobbyists, and small businesses can now download capable open models, run them on a laptop or workstation, connect them to documents, expose local APIs, and build private AI workflows without sending every prompt to a hosted model provider. The best local LLM tools solve different parts of that workflow."
+    }
+  ]
+}

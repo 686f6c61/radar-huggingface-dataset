@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "enver/rootformer-v13-sovereign-arabic",
+  "slug": "enver-rootformer-v13-sovereign-arabic",
+  "author": "enver",
+  "url": "https://huggingface.co/enver/rootformer-v13-sovereign-arabic",
+  "created_at": "2026-09-26T22:27:52.000Z",
+  "updated_at": "2026-09-26T23:26:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "rootformer_v13",
+    "classical-arabic",
+    "arabic-nlp",
+    "bpe-free",
+    "morphology",
+    "farahidi",
+    "sibawayh",
+    "jurjani",
+    "ishtiqaq-attention",
+    "engram",
+    "deepseek-v4",
+    "scholastic-translation",
+    "islamic-philosophy",
+    "translation",
+    "custom_code",
+    "ar",
+    "en",
+    "arxiv:2609.19969",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 399371824,
+  "parameters_human": "399.4M",
+  "storage_bytes": 1603236984,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Enver Pacha — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Ismail_Enver",
+      "snippet": "Enver Pacha (turc : Enver Paşa), de son nom complet Ismail Enver (né le 22 novembre 1881 à Constantinople, mort le 4 août 1922), …Read more"
+    },
+    {
+      "title": "Enver Hoxha — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Enver_Hoxha",
+      "snippet": "Œuvres Enver Hoxha est un doctrinaire très prolifique du stalinisme. Plusieurs groupuscules occidentaux se sont réclamés de ses …"
+    },
+    {
+      "title": "Video Game Studio & Online Gaming Platform | ENVER",
+      "url": "https://www.enver.com/",
+      "snippet": "ENVER is a video game studio building viral, social gaming worlds. Discover an online gaming platform designed for creators, …"
+    },
+    {
+      "title": "Enver Pasha - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Enver_Pasha",
+      "snippet": "As Enver rose through the ranks of the military, he was known by increasingly esteemed titles, including Enver Efendi (انور افندی), …"
+    },
+    {
+      "title": "définition et synonymes - Dictionnaire français - Enver",
+      "url": "https://www.universalis.fr/dictionnaire/enver/",
+      "snippet": "\"enver\"dans l'encyclopédie ENVER PACHA (1881-1922) Écrit par Robert MANTRAN 2 441 mots Ministre de la guerre et chef d'état …"
+    }
+  ]
+}

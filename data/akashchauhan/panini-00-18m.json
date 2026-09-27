@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "akashchauhan/panini-00-18m",
+  "slug": "akashchauhan-panini-00-18m",
+  "author": "akashchauhan",
+  "url": "https://huggingface.co/akashchauhan/panini-00-18m",
+  "created_at": "2026-09-27T00:53:24.000Z",
+  "updated_at": "2026-09-27T00:56:07.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "hi",
+    "sa"
+  ],
+  "tags": [
+    "translation",
+    "devanagari",
+    "hi",
+    "sa",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73755564,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AkashGen | Free AI Image Generator",
+      "url": "https://gen.akash.network/",
+      "snippet": "Create AI-generated images and art with a text prompt using open-source AI models powered by the Akash Supercloud."
+    },
+    {
+      "title": "Panini: Continual Learning in Token Space via Structured Memory",
+      "url": "https://arxiv.org/abs/2602.15156",
+      "snippet": "We propose a human-like non-parametric continual learning framework, where the base model remains fixed, and learning occurs by integrating each new experience into an external semantic memory state that accumulates and consolidates itself continually."
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    },
+    {
+      "title": "AI Models - AkashChat",
+      "url": "https://chat.akash.network/models/",
+      "snippet": "Explore all available AI models on AkashChat. Chat with leading open source AI models powered by the Akash Supercloud."
+    },
+    {
+      "title": "AI Models - Llama, DeepSeek, Qwen | AkashML",
+      "url": "https://akashml.com/models",
+      "snippet": "Explore our comprehensive library of AI models with high-performance inference and competitive pricing."
+    }
+  ]
+}

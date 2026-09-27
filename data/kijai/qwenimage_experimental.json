@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Kijai/QwenImage_experimental",
+  "slug": "kijai-qwenimage_experimental",
+  "author": "Kijai",
+  "url": "https://huggingface.co/Kijai/QwenImage_experimental",
+  "created_at": "2025-08-10T22:40:13.000Z",
+  "updated_at": "2026-09-24T10:21:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 32,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32822261394,
+  "storage_human": "32.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kijai/QwenImage_experimental at main",
+      "url": "https://huggingface.co/Kijai/QwenImage_experimental/tree/main",
+      "snippet": "Model card Files Files and versions · xet Community · 3 · Copy to bucket new · main · QwenImage_experimental · 32.8 GB · ⌘ K · ⌘ K · 1 contributor History: 5 commits · Kijai · Upload 2 files 0498775 verified 1 day ago · model_patches · Upload 2 files 1 day ago ·"
+    },
+    {
+      "title": "Kijai/QwenImage_experimental · Hugging Face",
+      "url": "https://huggingface.co/Kijai/QwenImage_experimental",
+      "snippet": "This model isn't deployed by any Inference Provider."
+    },
+    {
+      "title": "Qwen_Image_fp8_e5m2_scaled_KJ.safetensors · Kijai/QwenImage_e...",
+      "url": "https://huggingface.co/Kijai/QwenImage_experimental/blob/main/Qwen_Image_fp8_e5m2_scaled_KJ.safetensors",
+      "snippet": "Model card Files Files and versions · xet Community · 2 · main · QwenImage_experimental / Qwen_Image_fp8_e5m2_scaled_KJ.safetensors · Kijai · Upload Qwen_Image_fp8_e5m2_scaled_KJ.safetensors e4659e4 verified 8 months ago · download · Copy download link history blame contribute delete ·"
+    },
+    {
+      "title": "Kijai/QwenImage_experimental at a03771be60c9de94c8afbc82e4bc1c...",
+      "url": "https://huggingface.co/Kijai/QwenImage_experimental/tree/a03771be60c9de94c8afbc82e4bc1c483aad900f",
+      "snippet": "Model card Files Files and versions · xet Community · 2 · a03771b · QwenImage_experimental · 21 GB · 1 contributor History: 3 commits · Kijai · Upload e2e-qwenimage-vae_comfy_fp32.safetensors a03771b verified 2 months ago · .gitattributes 1.52 kB · initial commit 5 months ago ·"
+    },
+    {
+      "title": "Kijai/QwenImage_experimental · Qwen controlnets released, can ...",
+      "url": "https://huggingface.co/Kijai/QwenImage_experimental/discussions/1",
+      "snippet": "@Kijai check this, someone make it work but we need your node here: https://github.com/AIFSH/QwenImage-Diffsynth · orzechowy3333 Aug 15, 2025 · Kijai has right. At the moment we've got error like this below, trying to apply Qwen depth model · ERROR: controlnet file is invalid and does not contain a valid controlnet model."
+    }
+  ]
+}

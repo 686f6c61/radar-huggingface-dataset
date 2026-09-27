@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Troiaaa/pi0.5-1kCosbvmMhXt",
+  "slug": "troiaaa-pi0-5-1kcosbvmmhxt",
+  "author": "Troiaaa",
+  "url": "https://huggingface.co/Troiaaa/pi0.5-1kCosbvmMhXt",
+  "created_at": "2026-09-26T20:25:32.000Z",
+  "updated_at": "2026-09-26T20:27:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vision-language-action",
+    "pi0.5",
+    "openpi",
+    "axis",
+    "openroboto",
+    "netuid-80",
+    "base_model:ApexUltron/pi0.5-KX774qZu7mZD",
+    "base_model:finetune:ApexUltron/pi0.5-KX774qZu7mZD",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12439579109,
+  "storage_human": "12.4 GB",
+  "base_model": "ApexUltron/pi0.5-KX774qZu7mZD",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2504.16054] $π_ {0.5}$: a Vision-Language-Action Model with Open-World ...",
+      "url": "https://arxiv.org/abs/2504.16054",
+      "snippet": "In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe $π_{0.5}$, a new model based on $π_{0}$ that uses co-training on heterogeneous ..."
+    },
+    {
+      "title": "Troiaaa (Troia) - Hugging Face",
+      "url": "https://huggingface.co/Troiaaa",
+      "snippet": "Sort: Recently updated. Troiaaa/pt. Updated about 5 hours ago. Troiaaa/514157. Updated about 21 hours ago • 24. Troiaaa/sn97-cool-pearl-3161"
+    },
+    {
+      "title": "π 0.5 : a Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://arxiv.org/html/2504.16054v1",
+      "snippet": "The design of π 0.5 $π0.5$ follows a simple hierarchical architecture: we first pre-train the model on the heterogeneous mixture of training tasks, and then fine-tune it specifically for mobile manipulation with both low-level action examples and high-level \"semantic\" actions, which correspond to predicting subtask labels such as \"pick ..."
+    },
+    {
+      "title": "π₀.₅ (Pi05) Policy · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/pi05",
+      "snippet": "π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀.₅ represents a significant evolution from π₀, developed by Physical Intelligence to address a big challenge in robotics: open-world generalization. While robots ..."
+    },
+    {
+      "title": "Pi0.5 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/pi05",
+      "snippet": "Pi0.5 State‑of‑the‑art generalist robotic foundation model trained on vision, language, and action to enable dexterous, zero‑shot physical task execution across diverse robot platforms. Pi0.5 is a vision‑language‑action model that co‑trains on diverse data sources (robot demos, web data, semantic subtasks) to enable open‑world generalization for long‑horizon robotic manipulation."
+    }
+  ]
+}

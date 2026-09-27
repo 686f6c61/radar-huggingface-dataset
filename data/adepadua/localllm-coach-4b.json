@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "adepadua/localllm-coach-4b",
+  "slug": "adepadua-localllm-coach-4b",
+  "author": "adepadua",
+  "url": "https://huggingface.co/adepadua/localllm-coach-4b",
+  "created_at": "2026-09-26T22:40:01.000Z",
+  "updated_at": "2026-09-26T22:40:33.000Z",
+  "license": "health-ai-developer-foundations",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "health",
+    "coaching",
+    "nutrition",
+    "wearables",
+    "spanish",
+    "llama.cpp",
+    "localllm",
+    "base_model:google/medgemma-1.5-4b-it",
+    "base_model:quantized:google/medgemma-1.5-4b-it",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 2489892736,
+  "storage_human": "2.5 GB",
+  "base_model": "google/medgemma-1.5-4b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KNOT | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/knot",
+      "snippet": "KNOT definition: 1. a join made by tying together the ends of a piece or pieces of string, rope, cloth, etc.: 2. a…. Learn more."
+    },
+    {
+      "title": "Knot (unit) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Knot_(unit)",
+      "snippet": "The knot is used in meteorology, and in maritime and air navigation. A vessel travelling at 1 knot along a meridian travels …"
+    },
+    {
+      "title": "KNOT Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/knot",
+      "snippet": "4 days ago · The meaning of KNOT is an interlacement of the parts of one or more flexible bodies forming a lump or knob (as for …"
+    },
+    {
+      "title": "KNOT | definition in the Cambridge English Dictionary",
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/knot",
+      "snippet": "KNOT meaning: 1. a join made by tying together the ends of a piece or pieces of string, rope, cloth, etc.: 2. a…. Learn more."
+    },
+    {
+      "title": "What Are Knots? The History and Uses",
+      "url": "https://www.theknotsmanual.com/knots/",
+      "snippet": "Nov 11, 2023 · A knot is a structure made on a length of rope by twisting the rope around itself. Knots often bind the rope to itself or …"
+    }
+  ]
+}

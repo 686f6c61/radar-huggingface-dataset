@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Ttt37/sentiment-analysis-rf",
+  "slug": "ttt37-sentiment-analysis-rf",
+  "author": "Ttt37",
+  "url": "https://huggingface.co/Ttt37/sentiment-analysis-rf",
+  "created_at": "2026-09-26T21:13:33.000Z",
+  "updated_at": "2026-09-26T21:23:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentiment-analysis",
+    "nlp",
+    "scikit-learn",
+    "random-forest",
+    "text-classification",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117473561,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ZihanLiummyycc/FSG-RL-Teacher-Judge-GRPO",
+  "slug": "zihanliummyycc-fsg-rl-teacher-judge-grpo",
+  "author": "ZihanLiummyycc",
+  "url": "https://huggingface.co/ZihanLiummyycc/FSG-RL-Teacher-Judge-GRPO",
+  "created_at": "2026-09-26T20:17:01.000Z",
+  "updated_at": "2026-09-26T20:18:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "mathematical-reasoning",
+    "fsg-rl",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 430215549,
+  "storage_human": "430 MB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ZihanLiummyycc/FSG-RL: Function-structured reinforcement ...",
+      "url": "https://github.com/ZihanLiummyycc/FSG-RL/blob/main/",
+      "snippet": "FSG-RL Function-structured reinforcement learning for mathematical reasoning. Code coming soon."
+    },
+    {
+      "title": "ZihanLiummyycc - GitHub",
+      "url": "https://github.com/ZihanLiummyycc",
+      "snippet": "Fine-Tuning Vision Language Model for Video Games Python 1"
+    },
+    {
+      "title": "Meta&#x27;s MT-RL-Judge Beats Supervised AI Graders Across Six Evaluation ...",
+      "url": "https://alphasignal.ai/news/meta-s-mt-rl-judge-beats-supervised-ai-graders-across-six-evaluation-tasks",
+      "snippet": "Meta AI proposes MT-RL-Judge, a single vision-language judge trained across six evaluation tasks with GRPO. Backbone is Qwen3-VL-30B-A3B-Instruct, trained with a format plus accuracy reward and 20 rollouts per prompt. Beats single-task SFT, unified SFT, and single-task RL across most in-distribution benchmarks."
+    },
+    {
+      "title": "GRPO Training | modelscope/OpenJudge | DeepWiki",
+      "url": "https://deepwiki.com/modelscope/OpenJudge/4.4.3-grpo-training",
+      "snippet": "GRPO Training Architecture The training system consists of four layers: Ray Cluster: Distributed execution environment with head node managing workers VERL Framework: Handles GRPO algorithm, policy updates, and sampling Custom Components: Dataset classes and reward functions specific to judge model training Configuration: Training scripts, data files, and environment settings Sources ..."
+    },
+    {
+      "title": "Post training an LLM for reasoning with GRPO in TRL · Hugging Face",
+      "url": "https://huggingface.co/learn/cookbook/fine_tuning_llm_grpo_trl",
+      "snippet": "In this notebook, we&#x27;ll guide you through the process of post-training a Large Language Model (LLM) using Group Relative Policy Optimization (GRPO), a method introduced in the DeepSeekMath paper. GRPO is particularly effective for scaling test-time compute for extended reasoning, making it an ideal approach for solving complex tasks, such as mathematical problem-solving."
+    }
+  ]
+}

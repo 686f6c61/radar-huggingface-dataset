@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-pi05-attnfix-eval7000-4d895b5aec9a-4a63c2207c4d",
+  "slug": "davidwdw-fa-pi05-attnfix-eval7000-4d895b5aec9a-4a63c2207c4d",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-pi05-attnfix-eval7000-4d895b5aec9a-4a63c2207c4d",
+  "created_at": "2026-09-26T19:59:21.000Z",
+  "updated_at": "2026-09-26T19:59:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129735134,
+  "storage_human": "130 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai-wiki/wiki/physical-ai/black-2025-pi05-a-vision-language-action-model ...",
+      "url": "https://github.com/sguys99/ai-wiki/blob/main/wiki/physical-ai/black-2025-pi05-a-vision-language-action-model-with.md",
+      "snippet": "Contribute to sguys99/ai-wiki development by creating an account on GitHub."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05/README.md at main ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/pi05/README.md",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    },
+    {
+      "title": "lerobot/pi05_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/pi05_base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DavidAU (David Belton) - Hugging Face",
+      "url": "https://huggingface.co/DavidAU",
+      "snippet": "Fine tuned Qwen 3.6/3.8 models, including source and GGUF from 9B and up. 9B,12B, 21B and 40B are custom built by me. Tuning : Unsloth / COLD FUSION."
+    },
+    {
+      "title": "Runtime Patches (pi05_model/_patches/) | kiva12138/Pi-SimplerVersion ...",
+      "url": "https://deepwiki.com/kiva12138/Pi-SimplerVersion/7.1-runtime-patches-(pi05_model_patches)",
+      "snippet": "The pi05_model/_patches/ directory implements an in-process monkey-patching system for the HuggingFace transformers library. This mechanism is critical for the Pi-SimplerVersion model because it modifies the core behavior of SigLIP, Gemma, and PaliGemma modules to support features required by the Pi0 architecture, such as AdaRMSNorm (Adaptive RMS Normalization) and specific weight ..."
+    }
+  ]
+}

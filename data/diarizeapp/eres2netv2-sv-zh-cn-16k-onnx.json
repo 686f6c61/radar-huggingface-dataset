@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "diarizeapp/eres2netv2-sv-zh-cn-16k-onnx",
+  "slug": "diarizeapp-eres2netv2-sv-zh-cn-16k-onnx",
+  "author": "diarizeapp",
+  "url": "https://huggingface.co/diarizeapp/eres2netv2-sv-zh-cn-16k-onnx",
+  "created_at": "2026-09-26T22:24:37.000Z",
+  "updated_at": "2026-09-26T22:24:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnx",
+  "languages": [
+    "zh",
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "onnx",
+    "eres2netv2",
+    "speaker-verification",
+    "speaker-embedding",
+    "voice-recognition",
+    "speaker-diarization",
+    "3d-speaker",
+    "onnxruntime",
+    "audio-classification",
+    "zh",
+    "en",
+    "multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71931832,
+  "storage_human": "72 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hadaka no reon Shinoyama Kishin + Kadena Reon - Find-more-books",
+      "url": "https://www.find-more-books.com/book/isbn/9784255002835.html",
+      "snippet": "Kishin Shinohara: Kishin Shinoyama Photo Book Hadakano \"hadaka no Reon\" Reon Kadena from Japan - used bookRead more"
+    },
+    {
+      "title": "hadaka no reon Shinoyama Kishin + Kadena Reon | Photography",
+      "url": "https://www.abebooks.com/9784255002835/hadaka-reon-Shinoyama-Kishin-Kadena-4255002835/plp?msockid=0c712d11d09868f216cd3af0d1f3694a",
+      "snippet": "Kishin Shinoyama hadaka no reon Shinoyama Kishin + Kadena Reon | Photography | ( Japanese Import ) ISBN 13: 9784255002835Read more"
+    },
+    {
+      "title": "hadaka no reon Shinoyama Kishin + Kadena Reon | Photography |",
+      "url": "https://www.goodreads.com/book/show/45770972-hadaka-no-reon-shinoyama-kishin-kadena-reon-photography",
+      "snippet": "Jun 1, 2004 · Read reviews from the world’s largest community for readers. Japanese Edition.Read more"
+    },
+    {
+      "title": "9784255002835: hadaka no reon Shinoyama Kishin + Kadena Reon ...",
+      "url": "https://bookscouter.com/book/9784255002835-hadaka-no-reon-shinoyama-kishin-kadena-reon-photography-japa",
+      "snippet": "Jun 1, 2004 · You can buy the hadaka no reon Shinoyama Kishin + Kadena Reon | Photography | ( Japanese Import )book at one of …Read more"
+    },
+    {
+      "title": "hadaka no reon Shinoyama Kishin + Kadena Reon | Photography",
+      "url": "https://www.amazon.com.au/hadaka-Shinoyama-Kishin-Photography-Japanese/dp/4255002835",
+      "snippet": "Download the free Kindle app and start reading Kindle books instantly on your smartphone, tablet or computer— no Kindle device …Read more"
+    }
+  ]
+}

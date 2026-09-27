@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "HyperLinked/s1-mini-litertlm",
+  "slug": "hyperlinked-s1-mini-litertlm",
+  "author": "HyperLinked",
+  "url": "https://huggingface.co/HyperLinked/s1-mini-litertlm",
+  "created_at": "2026-09-26T20:49:27.000Z",
+  "updated_at": "2026-09-26T20:49:59.000Z",
+  "license": "s1-mini-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "dictation",
+    "text-normalization",
+    "base_model:superwhisper/s1-mini",
+    "base_model:finetune:superwhisper/s1-mini",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 648634192,
+  "storage_human": "649 MB",
+  "base_model": "superwhisper/s1-mini",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/S1-mini-LiteRT at main - Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/S1-mini-LiteRT/tree/main",
+      "snippet": "mlboydaisuke / S1-mini-LiteRT like 1 Text Generation LiteRT-LM LiteRT English litertlm on-device edge asr automatic-speech-recognition text-normalization inverse-text-normalization punctuation truecasing speech-to-text dictation post-processing qwen3 License:s1-mini-license Model card FilesFiles and versions xet Community Deploy Copy to bucket ..."
+    },
+    {
+      "title": "GitHub - google-ai-edge/LiteRT-LM: LiteRT-LM is Google&#x27;s production ...",
+      "url": "https://github.com/google-ai-edge/LiteRT-LM",
+      "snippet": "LiteRT-LM is Google&#x27;s production-ready, high-performance, open-source inference framework for deploying Large Language Models on edge devices. - google-ai-edge/LiteRT-LM"
+    },
+    {
+      "title": "Google AI Edge LiteRT Samples - GitHub",
+      "url": "https://github.com/google-ai-edge/litert-samples",
+      "snippet": "Google AI Edge LiteRT Samples This repository contains official and community contributed sample applications, model recipes, agent skills and utilities for LiteRT (formerly known as TensorFlow Lite), Google&#x27;s open source, high-performance on-device machine learning framework and LiteRT-LM, a specialized orchestration layer for running LLMs with LiteRT, unlocking maximum performance and ..."
+    },
+    {
+      "title": "LiteRT-LM Overview | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/litert-lm/overview",
+      "snippet": "Broad Model Support: Run Gemma, Llama, Phi-4, Qwen and more. What&#x27;s New For the latest release details and updates, refer to the GitHub Release Notes. On-Device Gen AI Showcase The Google AI Edge Gallery is an experimental app designed to showcase on-device Generative AI capabilities running entirely offline using LiteRT-LM."
+    },
+    {
+      "title": "Core APIs and Programming Model | google-ai-edge/LiteRT-LM | DeepWiki",
+      "url": "https://deepwiki.com/google-ai-edge/LiteRT-LM/3-core-apis-and-programming-model",
+      "snippet": "Core APIs and Architecture Relevant source files Purpose and Scope This document describes the core architectural components and API layers of LiteRT-LM. It covers the three primary API levels (Engine, Session, and Conversation), their relationships, the pipeline execution system, and configuration management. For specific information on: Building and running models, see Getting Started ..."
+    }
+  ]
+}

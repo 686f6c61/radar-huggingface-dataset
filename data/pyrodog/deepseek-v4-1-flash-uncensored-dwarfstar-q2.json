@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "pyrodog/DeepSeek-V4.1-Flash-UNCENSORED-DwarfStar-Q2",
+  "slug": "pyrodog-deepseek-v4-1-flash-uncensored-dwarfstar-q2",
+  "author": "pyrodog",
+  "url": "https://huggingface.co/pyrodog/DeepSeek-V4.1-Flash-UNCENSORED-DwarfStar-Q2",
+  "created_at": "2026-09-14T13:18:50.000Z",
+  "updated_at": "2026-09-27T00:45:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "dwarfstar",
+    "deepseek-v4.1",
+    "quantized",
+    "q2",
+    "apple-silicon",
+    "abliterated",
+    "vision",
+    "multimodal",
+    "text-generation",
+    "base_model:dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+    "base_model:quantized:dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 12173,
+  "trending_score": 0,
+  "parameters": 754638867584,
+  "parameters_human": "754.64B",
+  "storage_bytes": 366684242112,
+  "storage_human": "366.7 GB",
+  "base_model": "dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pyrodog/DeepSeek-V4.1-Flash-UNCENSORED-DwarfStar-Q2 · Hugging Face",
+      "url": "https://huggingface.co/pyrodog/DeepSeek-V4.1-Flash-UNCENSORED-DwarfStar-Q2",
+      "snippet": "GGUF dwarfstar deepseek-v4.1 quantized q2 apple-silicon abliterated License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new DeepSeek V4.1 Flash UNCENSORED — DwarfStar Q2 bootstrap Who did what What you&#x27;re getting How this file was produced Download and run What we actually tested Additional local validation ..."
+    },
+    {
+      "title": "pyrodog/DeepSeek-V4.1-Flash-UNCENSORED-DwarfStar-Q2 at main",
+      "url": "https://huggingface.co/pyrodog/DeepSeek-V4.1-Flash-UNCENSORED-DwarfStar-Q2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash Uncensored: 2,254 Downloads [2026]",
+      "url": "https://shattered.io/deepseek-v4-1-flash-uncensored-abliterated-2026/",
+      "snippet": "DeepSeek shipped its newest open-weight model, DeepSeek-V4.1-Flash, on September 10, 2026. Within hours, independent developers had already stripped its safety guardrails and posted the results back to Hugging Face. By the time most enterprise AI teams had read the model card, at least half a dozen \"abliterated\" and \"uncensored\" forks were already sitting in public repositories, free ..."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash Uncensored Builds Hit HuggingFace",
+      "url": "https://tech-insider.org/deepseek-v4-1-flash-uncensored-abliterated-huggingface-2026/",
+      "snippet": "Hours after DeepSeek pushed its new V4.1 Flash model to HuggingFace under an MIT license on September 10, 2026, independent developers had already stripped its safety layers and uploaded \"abliterated\" and \"uncensored\" forks to the same platform. By September 13, at least three separate community builds were live and drawing steady download traffic, with the leading fork logging 2,254 ..."
+    },
+    {
+      "title": "How to Run DeepSeek V4.1 Flash Uncensored: Local Setup Guide 2026",
+      "url": "https://www.hackaigc.com/blog/how-to-run-deepseek-v4-1-flash-uncensored-2026",
+      "snippet": "DeepSeek V4.1 Flash is a beast of a model. With 552 billion parameters in a Mixture-of-Experts architecture, a 1-million-token context window, and MIT-licensed weights on Hugging Face, it&#x27;s one of the most capable open-weight models available in 2026. But here&#x27;s the catch: the official API and hosted versions come with content filters. If you want genuinely uncensored access — no safety ..."
+    }
+  ]
+}
