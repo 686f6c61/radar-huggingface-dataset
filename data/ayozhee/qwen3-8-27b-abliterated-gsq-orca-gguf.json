@@ -5,7 +5,7 @@
   "author": "ayozhee",
   "url": "https://huggingface.co/ayozhee/Qwen3.8-27B-Abliterated-GSQ-Orca-GGUF",
   "created_at": "2026-09-08T17:21:16.000Z",
-  "updated_at": "2026-09-08T17:27:46.000Z",
+  "updated_at": "2026-09-27T05:02:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,13 +27,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 11,
-  "downloads_30d": 7688,
+  "likes": 12,
+  "downloads_30d": 7945,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 9607981120,
-  "storage_human": "9.6 GB",
+  "storage_bytes": 21727998080,
+  "storage_human": "21.7 GB",
   "base_model": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF, orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [
     "gguf"

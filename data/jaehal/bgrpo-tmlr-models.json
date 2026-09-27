@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JaehaL/bgrpo-tmlr-models",
+  "slug": "jaehal-bgrpo-tmlr-models",
+  "author": "JaehaL",
+  "url": "https://huggingface.co/JaehaL/bgrpo-tmlr-models",
+  "created_at": "2026-09-27T02:12:58.000Z",
+  "updated_at": "2026-09-27T02:13:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "grpo",
+    "symbolic-mathematics",
+    "polynomial-decomposition",
+    "transformers",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3242071158,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JaehaL/bgrpo-tmlr-models at main - Hugging Face",
+      "url": "https://huggingface.co/JaehaL/bgrpo-tmlr-models/tree/main",
+      "snippet": "Instructions to use JaehaL/bgrpo-tmlr-models with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use JaehaL/bgrpo-tmlr-models with Transformers:"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 508 AI models across 486 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Jev AI Model (TypeSafe) — Typed System One Decisions",
+      "url": "https://jevmodel.org/",
+      "snippet": "Jev is TypeSafe AI&#x27;s System One model: it returns a choice, score, or yes/no probability instead of chat. The hosted API is open as of 21 September 2026. $0.042 per 1M input tokens, output free."
+    }
+  ]
+}

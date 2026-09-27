@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "toyin88/u2t01-bert-pos",
+  "slug": "toyin88-u2t01-bert-pos",
+  "author": "toyin88",
+  "url": "https://huggingface.co/toyin88/u2t01-bert-pos",
+  "created_at": "2026-09-27T02:18:08.000Z",
+  "updated_at": "2026-09-27T02:18:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "full-adaptation",
+    "en",
+    "dataset:universal-dependencies/universal_dependencies",
+    "arxiv:1810.04805",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108904721,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435642228,
+  "storage_human": "436 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "toyin88/u2t01-bert-pos · Hugging Face",
+      "url": "https://huggingface.co/toyin88/u2t01-bert-pos",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "toyin88/u2t01-bert-qa · Hugging Face",
+      "url": "https://huggingface.co/toyin88/u2t01-bert-qa",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ali-aboelezz/bert-pos-tagging - GitHub",
+      "url": "https://github.com/ali-aboelezz/bert-pos-tagging",
+      "snippet": "README bert-pos-tagging 1- the main goal we&#x27;ll be building a machine learning model that produces an output for every element in an input sequence, using PyTorch and TorchText. Specifically, we will be inputting a sequence of text and the model will output a part-of-speech (PoS) tag for each token in the input text."
+    },
+    {
+      "title": "BERT (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
+      "snippet": "Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. [2][3] It learns to represent text as a sequence of vectors using self-supervised learning."
+    },
+    {
+      "title": "GitHub - google-research/bert: TensorFlow code and pre-trained models ...",
+      "url": "https://github.com/google-research/bert",
+      "snippet": "TensorFlow code and pre-trained models for BERT. Contribute to google-research/bert development by creating an account on GitHub."
+    }
+  ]
+}

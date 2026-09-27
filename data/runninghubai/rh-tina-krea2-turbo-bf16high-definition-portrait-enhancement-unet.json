@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-tina-krea2-turbo-bf16high-definition-portrait-enhancement-unet",
+  "slug": "runninghubai-rh-tina-krea2-turbo-bf16high-definition-portrait-enhancement-unet",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-tina-krea2-turbo-bf16high-definition-portrait-enhancement-unet",
+  "created_at": "2026-09-27T01:54:44.000Z",
+  "updated_at": "2026-09-27T02:07:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26280534536,
+  "storage_human": "26.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-tina-krea2-turbo-bf16high-definition-portrait ...",
+      "url": "https://huggingface.co/RunningHubAI/rh-tina-krea2-turbo-bf16high-definition-portrait-enhancement-unet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tina-Krea2-Turbo- bf16High-Definition Portrait Enhancement",
+      "url": "https://www.runninghub.ai/model/public/2084139498234417154",
+      "snippet": "This model is more suitable for image creation scenarios that require rapid iteration, batch generation, or operate in resource-limited environments. In terms of image generation, Krea2-turbo-bf16 delivers sharper visual texture, and achieves more stable performance especially in human figures, object structures and local details."
+    },
+    {
+      "title": "README_cn.md · RunningHubAI/rh-tina-krea2-turbo-bf16high-definition ...",
+      "url": "https://huggingface.co/RunningHubAI/rh-tina-krea2-turbo-bf16high-definition-portrait-enhancement-unet/blob/main/README_cn.md",
+      "snippet": "rh-tina-krea2-turbo-bf16high-definition-portrait-enhancement-unet 基础信息 Description ... 模型介绍 Introduction to the Krea2-turbo-bf16 Model Krea2-turbo-bf16 is the high-speed variant in the Krea2 series."
+    },
+    {
+      "title": "tina-Krea2-Turbo- bf16High-Definition Portrait Enhancement",
+      "url": "https://www.runninghub.ai/it/model/public/2084139498234417154",
+      "snippet": "Krea2-turbo-bf16 is the high-speed variant in the Krea2 series. It is trained and inferred with bfloat16 precision, and can improve image generation efficiency while maintaining relatively high generation quality. This model is more suitable for image creation scenarios that require rapid iteration, batch generation, or operate in resource-limited environments."
+    },
+    {
+      "title": "Krea2 Turbo Text-to-Image (Portrait Enhancement) - runninghub.ai",
+      "url": "https://www.runninghub.ai/ai-detail/2075248739173879809",
+      "snippet": "Krea2 Text-to-Image Enhancement Pipeline for High-Quality Portrait Generation, with the core goal of rendering more refined human subjects, sophisticated lighting effects, and presentation-ready visuals."
+    }
+  ]
+}

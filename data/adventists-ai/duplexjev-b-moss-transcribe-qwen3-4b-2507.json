@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "adventists-ai/DuplexJev-B-MOSS-Transcribe-Qwen3-4B-2507",
+  "slug": "adventists-ai-duplexjev-b-moss-transcribe-qwen3-4b-2507",
+  "author": "adventists-ai",
+  "url": "https://huggingface.co/adventists-ai/DuplexJev-B-MOSS-Transcribe-Qwen3-4B-2507",
+  "created_at": "2026-09-27T02:12:31.000Z",
+  "updated_at": "2026-09-27T02:15:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ultravox",
+    "feature-extraction",
+    "duplexjev",
+    "speech-to-decision",
+    "full-duplex",
+    "speech-llm",
+    "paralinguistics",
+    "edge",
+    "audio-text-to-text",
+    "custom_code",
+    "zh",
+    "en",
+    "base_model:OpenMOSS-Team/MOSS-Transcribe-Diarize",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Transcribe-Diarize",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 38807552,
+  "parameters_human": "38.8M",
+  "storage_bytes": 89038416,
+  "storage_human": "89 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507, OpenMOSS-Team/MOSS-Transcribe-Diarize",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DuplexJev-B-MOSS-Transcribe-Qwen3-4B-2507 - Hugging Face",
+      "url": "https://huggingface.co/adventists-ai/DuplexJev-B-MOSS-Transcribe-Qwen3-4B-2507",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - adventists-ai/duplexjev: Batched speech decisions without ...",
+      "url": "https://github.com/adventists-ai/duplexjev",
+      "snippet": "Built on Ultravox (training code and projector design), Qwen3 and Qwen3-ASR, and the ZJU audio-gender-benchmark. Typed single-token decisions follow the \"System-One\" line of work popularised by Jev. Batched speech decisions without decoding: typed single-token readout from a frozen speech LLM for full-duplex spoken agents (Speech-to-Decision)."
+    },
+    {
+      "title": "adventists-ai · GitHub",
+      "url": "https://github.com/adventists-ai",
+      "snippet": "Batched speech decisions without decoding: typed single-token readout from a frozen speech LLM for full-duplex spoken agents (Speech-to-Decision)."
+    },
+    {
+      "title": "Adventists AI - Next Gen Voice Agent OS",
+      "url": "https://adventists.ai/",
+      "snippet": "Building the Next Gen Voice Agent OS Giving AI a true personality, memory, and perception. More than a tool—a digital life that understands and accompanies you."
+    },
+    {
+      "title": "adventists-ai (Adventists.ai) - Hugging Face",
+      "url": "https://huggingface.co/adventists-ai/models",
+      "snippet": "Org profile for Adventists.ai on Hugging Face, the AI community building the future."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-taomate-h3-3step-comfy.safetensors-lora",
+  "slug": "runninghubai-rh-taomate-h3-3step-comfy-safetensors-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-taomate-h3-3step-comfy.safetensors-lora",
+  "created_at": "2026-09-27T02:27:10.000Z",
+  "updated_at": "2026-09-27T02:30:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2481712595,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rh-taomate-h3-3step-comfy.safetensors-lora - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-taomate-h3-3step-comfy.safetensors-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rh-taomate-h3-step3000-comfyui-bf16.safetensors-lora",
+      "url": "https://huggingface.co/RunningHubAI/rh-taomate-h3-step3000-comfyui-bf16.safetensors-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RunningHub ｜ AI Agent-Powered Content Creation Platform with ComfyUI ...",
+      "url": "https://www.runninghub.ai/",
+      "snippet": "RunningHub is an all-in-one content creation platform powered by native AI agents. Build end-to-end creative workflows with ComfyUI workflows, infinite canvas, AI apps, image & video generation, and model API access."
+    },
+    {
+      "title": "GitHub - TaoLiveAIGC/TaoMate-H3",
+      "url": "https://github.com/TaoLiveAIGC/TaoMate-H3",
+      "snippet": "TaoMate-H3 is a low-latency streaming audio-video generation runtime built on MiniMax H3 with a 3-step LoRA. It generates synchronized audio and video in small chunks and supports continuous long-form generation at 480p/768p/1080p resolutions."
+    },
+    {
+      "title": "TaoMate-H3-step3000-ComfyUI-BF16.safetensors - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/2098313466531655681",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    }
+  ]
+}

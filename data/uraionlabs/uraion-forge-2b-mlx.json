@@ -5,7 +5,7 @@
   "author": "UraionLabs",
   "url": "https://huggingface.co/UraionLabs/uraion-forge-2b-mlx",
   "created_at": "2026-09-12T17:10:17.000Z",
-  "updated_at": "2026-09-12T17:12:20.000Z",
+  "updated_at": "2026-09-26T09:56:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 576,
+  "downloads_30d": 580,
   "trending_score": 0,
   "parameters": 2516756480,
   "parameters_human": "2.52B",

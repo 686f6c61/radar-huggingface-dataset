@@ -5,7 +5,7 @@
   "author": "bukuroo",
   "url": "https://huggingface.co/bukuroo/Lipla-jp",
   "created_at": "2026-08-09T11:18:05.000Z",
-  "updated_at": "2026-08-23T06:06:58.000Z",
+  "updated_at": "2026-09-27T05:49:02.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -15,11 +15,6 @@
   ],
   "tags": [
     "onnx",
-    "ONNX",
-    "license-plate",
-    "OCR",
-    "ObjectDetection",
-    "ja",
     "license:mit",
     "region:us"
   ],
@@ -28,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 299172396,
-  "storage_human": "299 MB",
+  "storage_bytes": 400543732,
+  "storage_human": "401 MB",
   "base_model": null,
   "formats": [
     "onnx"

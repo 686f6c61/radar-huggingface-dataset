@@ -50,8 +50,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": false,
-  "removed_at": null,
+  "removed": true,
+  "removed_at": "2026-09-27T11:02:05.306Z",
   "benchmarks": [],
   "sources": [
     {

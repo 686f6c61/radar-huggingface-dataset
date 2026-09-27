@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "xzelphi/Flux-NSFW-uncensored",
+  "slug": "xzelphi-flux-nsfw-uncensored",
+  "author": "xzelphi",
+  "url": "https://huggingface.co/xzelphi/Flux-NSFW-uncensored",
+  "created_at": "2026-09-27T02:06:56.000Z",
+  "updated_at": "2026-09-27T02:06:56.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-image",
+    "en",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:finetune:black-forest-labs/FLUX.1-dev",
+    "license:creativeml-openrail-m",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 687476088,
+  "storage_human": "687 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xzelphi/Flux-NSFW-uncensored · Hugging Face",
+      "url": "https://huggingface.co/xzelphi/Flux-NSFW-uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "xzelphi/Flux-NSFW-uncensored · Discussions - Hugging Face",
+      "url": "https://huggingface.co/xzelphi/Flux-NSFW-uncensored/discussions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Flux Uncensored Locally 2026: No Filters, LoRAs & CHROMA",
+      "url": "https://offlinecreator.com/tool/flux/for/uncensored",
+      "snippet": "Reviewed September 6, 2026: Run Flux uncensored locally — no frontend filters. Base-model limits still apply; NSFW LoRAs and CHROMA are the usual workarounds, with VRAM tips for ComfyUI and Forge below."
+    },
+    {
+      "title": "Flux Uncensored Local Setup: NSFW Image Generation Guide 2026",
+      "url": "https://aipornguide.com/blog/flux-uncensored-local-guide/",
+      "snippet": "Run Flux Uncensored locally for private NSFW image generation. Hardware specs, install steps for ComfyUI and Forge, prompt tips, and hosted alternatives."
+    },
+    {
+      "title": "Flux NSFW: How to Generate Uncensored Images (2026)",
+      "url": "https://ourdream.ai/comparison/flux-nsfw",
+      "snippet": "Flux is a 12-billion-parameter model built by Black Forest Labs — the same team behind Stable Diffusion. It produces some of the best AI-generated images available today, and other tools like Sora AI and Kling AI focus on video rather than still images. You just need to know how to use Flux for nsfw flux content."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "PS4Research/Hk6vAazgWreoKsXr",
+  "slug": "ps4research-hk6vaazgwreoksxr",
+  "author": "PS4Research",
+  "url": "https://huggingface.co/PS4Research/Hk6vAazgWreoKsXr",
+  "created_at": "2026-09-27T02:05:14.000Z",
+  "updated_at": "2026-09-27T02:12:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:allenai/Olmo-3.1-32B-Think",
+    "base_model:finetune:allenai/Olmo-3.1-32B-Think",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32233522176,
+  "parameters_human": "32.23B",
+  "storage_bytes": 64467127296,
+  "storage_human": "64.5 GB",
+  "base_model": "allenai/Olmo-3.1-32B-Think",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornographic film - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pornographic_film",
+      "snippet": "Pornographic movies were widespread in the silent movie era of the 1920s, and were often shown in brothels. Soon illegal, stag …Read more"
+    },
+    {
+      "title": "Vivid Entertainment | Sex Videos & Porn Movies",
+      "url": "https://www.vivid.com/",
+      "snippet": "Vivid Entertainment presents over 35 years of award-winning porn movies, porn parodies and original XXX movies & series.Read more"
+    },
+    {
+      "title": "AEBN – XXX Adult Video Streaming, Downloads & Rentals",
+      "url": "https://www.aebn.com/",
+      "snippet": "XXX Videos from the Hottest Adult Studios and Porn Stars Watch Thousands of Full-Length Movies and Scenes Pay-Per-Minute …Read more"
+    },
+    {
+      "title": "Movie Porn | All The Best Porn Parody Movies In One Place",
+      "url": "https://movieporn.com/",
+      "snippet": "Porn parodies of Star Wars, Matrix, Game of Thrones, Lord of the Rings, and more? Fuck yeah, we got them. See your favorite …Read more"
+    },
+    {
+      "title": "Unlimited adult porn videos in 4K and Ultra HD | Bang!",
+      "url": "https://www.bang.com/",
+      "snippet": "6 days ago · Watch your favorite pornstars in unlimited 4K/HD streaming, downloads, and original porn movies from the largest adult …Read more"
+    }
+  ]
+}

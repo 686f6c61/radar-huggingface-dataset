@@ -48,8 +48,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": false,
-  "removed_at": null,
+  "removed": true,
+  "removed_at": "2026-09-27T10:58:07.728Z",
   "benchmarks": [],
   "sources": [
     {

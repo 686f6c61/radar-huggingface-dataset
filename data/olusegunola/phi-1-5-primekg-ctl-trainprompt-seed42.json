@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "olusegunola/phi-1.5-primekg-ctl-trainprompt-seed42",
+  "slug": "olusegunola-phi-1-5-primekg-ctl-trainprompt-seed42",
+  "author": "olusegunola",
+  "url": "https://huggingface.co/olusegunola/phi-1.5-primekg-ctl-trainprompt-seed42",
+  "created_at": "2026-09-27T02:25:22.000Z",
+  "updated_at": "2026-09-27T09:45:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50357392,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "olusegunola/phi-1.5-primekg-orpo-seed7 · Hugging Face",
+      "url": "https://huggingface.co/olusegunola/phi-1.5-primekg-orpo-seed7",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "olusegunola (ola) - Hugging Face",
+      "url": "https://huggingface.co/olusegunola/datasets",
+      "snippet": "AI updated a dataset about 4 hours ago published a dataset about 4 hours ago"
+    },
+    {
+      "title": "microsoft-phi-1-5 | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/microsoft-phi-1-5",
+      "snippet": "Phi-1.5 performs exceptionally well on benchmarks testing common sense, language understanding, and logical reasoning among models with less than 10 billion parameters. The model is open-source and intended for research purposes to explore safety challenges in language models."
+    },
+    {
+      "title": "Phi Open Models - Small Language Models | Microsoft Azure",
+      "url": "https://azure.microsoft.com/en-us/products/phi/",
+      "snippet": "Explore Phi models, efficient small language models (SLMs) for generative AI applications. Learn more about Phi in Azure AI Foundry."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

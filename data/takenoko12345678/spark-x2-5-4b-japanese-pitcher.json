@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Takenoko12345678/Spark-X2.5-4B-Japanese-Pitcher",
+  "slug": "takenoko12345678-spark-x2-5-4b-japanese-pitcher",
+  "author": "Takenoko12345678",
+  "url": "https://huggingface.co/Takenoko12345678/Spark-X2.5-4B-Japanese-Pitcher",
+  "created_at": "2026-09-27T02:29:14.000Z",
+  "updated_at": "2026-09-27T06:28:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "japanese",
+    "roleplay",
+    "character",
+    "lora",
+    "spark2_5",
+    "text-generation",
+    "ja",
+    "dataset:Takenoko12345678/Japanese-SFT-Qwen3.8-27B-10K",
+    "dataset:RikkaBotan/Cute_Synthetic_smoltalk_jp_sft",
+    "base_model:Takenoko12345678/Spark-X2.5-4B-Japanese",
+    "base_model:adapter:Takenoko12345678/Spark-X2.5-4B-Japanese",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129856184,
+  "storage_human": "130 MB",
+  "base_model": "Takenoko12345678/Spark-X2.5-4B-Japanese",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Takenoko12345678/Spark-X2.5-4B-Japanese-Pitcher · Hugging Face",
+      "url": "https://huggingface.co/Takenoko12345678/Spark-X2.5-4B-Japanese-Pitcher",
+      "snippet": "学習・評価のスクリプトと全データ：Pitcher プロジェクト（キャラクター属性の LoRA 研究） · An unofficial character-roleplay LoRA (yandere, tsundere, etc.) on top of Takenoko12345678/Spark-X2.5-4B-Japanese. It stays in character only when a character is specified in the system prompt, and behaves like the base assistant otherwise."
+    },
+    {
+      "title": "Takenoko12345678/Spark-X2.5-4B-Japanese-Pitcher-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Takenoko12345678/Spark-X2.5-4B-Japanese-Pitcher-GGUF",
+      "snippet": "Takenoko12345678/Spark-X2.5-4B-Japanese-Pitcher（ヤンデレ・ツンデレなどのキャラクターを演じる LoRA）を、日本語化モデルに統合して GGUF にしたものです。元は XHToken/Spark-X2.5-4B の非公式の派..."
+    },
+    {
+      "title": "Spark X2.5 4B: How Does This Small Model Run Locally? | MindStudio",
+      "url": "https://www.mindstudio.ai/blog/spark-x25-4b-local-review",
+      "snippet": "Hands-on test of Spark X2.5 4B locally via Docker and SGLang, covering VRAM use, a 1M context claim, coding tasks, and multilingual gaps."
+    },
+    {
+      "title": "GitHub - atemoyacode-sudo/Pitcher: Japanese character-persona LoRA ...",
+      "url": "https://github.com/atemoyacode-sudo/Pitcher",
+      "snippet": "キャラクターを学習させる前に、元モデルの日本語そのものを強くする「第1段階」の学習に使うデータです。いまは Spark-X2.5-4B の日本語化（非公式の派生モデル）に使っています..."
+    },
+    {
+      "title": "Takenoko12345678/Spark-X2.5-4B-Japanese-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Takenoko12345678/Spark-X2.5-4B-Japanese-GGUF",
+      "snippet": "Takenoko12345678/Spark-X2.5-4B-Japanese の GGUF 版です。元は XHToken/Spark-X2.5-4B を日本語向けに追加学習した非公式の派生モデルで、XHToken とは関係ありません。学習の内容・評価・回答例・既..."
+    }
+  ]
+}

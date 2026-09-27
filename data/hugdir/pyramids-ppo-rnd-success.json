@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Hugdir/Pyramids-PPO-RND-Success",
+  "slug": "hugdir-pyramids-ppo-rnd-success",
+  "author": "Hugdir",
+  "url": "https://huggingface.co/Hugdir/Pyramids-PPO-RND-Success",
+  "created_at": "2026-09-27T02:16:43.000Z",
+  "updated_at": "2026-09-27T02:16:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49434602,
+  "storage_human": "49 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugdir/Pyramids-PPO-RND-Success · Hugging Face",
+      "url": "https://huggingface.co/Hugdir/Pyramids-PPO-RND-Success",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "a1024053774/ppo-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/a1024053774/ppo-Pyramids",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sergey-antonov/ppo-Pyramids - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/128155",
+      "snippet": "This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "ppo-Pyramids: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-rixhi05-ppo-pyramids",
+      "snippet": "ppo-Pyramids is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "ppo-Pyramid huggingface.co api & Bhanu9Prakash ppo-Pyramid github AI ...",
+      "url": "https://www.toolify.ai/ai-model/bhanu9prakash-ppo-pyramid",
+      "snippet": "ppo-Pyramid is an open source model from GitHub that offers a free installation service, and any user can find ppo-Pyramid on GitHub to install. At the same time, huggingface.co provides the effect of ppo-Pyramid install, users can directly use ppo-Pyramid installed effect in huggingface.co for debugging and trial."
+    }
+  ]
+}

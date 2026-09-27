@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ehzawad/inkling-small-terminal-agent",
+  "slug": "ehzawad-inkling-small-terminal-agent",
+  "author": "ehzawad",
+  "url": "https://huggingface.co/ehzawad/inkling-small-terminal-agent",
+  "created_at": "2026-09-27T02:04:46.000Z",
+  "updated_at": "2026-09-27T03:47:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "tinker",
+    "agent",
+    "terminal",
+    "shell",
+    "bash",
+    "zsh",
+    "tool-use",
+    "reinforcement-learning",
+    "distillation",
+    "en",
+    "dataset:open-thoughts/OpenThoughts-Agent-RL-5K",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:adapter:thinkingmachines/Inkling-Small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8450763496,
+  "storage_human": "8.5 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ehzawad/inkling-small-terminal-agent · Hugging Face",
+      "url": "https://huggingface.co/ehzawad/inkling-small-terminal-agent",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Inkling - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/inkling/",
+      "snippet": "Inkling-Small is shown with a solid purple line, Inkling with the heavier cobalt line, and the comparison models with dashed lines. Evaluations without a reported model score are plotted at zero. Hover an evaluation to compare every model&#x27;s score."
+    },
+    {
+      "title": "Inkling-Small Model Card - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/model-card/inkling-small/",
+      "snippet": "Model card for Inkling-Small, a 276B-parameter (12B active) open-weights multimodal model: intended uses, model properties, training, evaluations and safety."
+    },
+    {
+      "title": "Inkling Small · Models · Pi",
+      "url": "https://pi.dev/models/huggingface/thinkingmachines-inkling-small",
+      "snippet": "A terminal-based coding agent"
+    },
+    {
+      "title": "Inkling Small · Models · Pi",
+      "url": "https://pi.dev/models/vercel-ai-gateway/thinkingmachines-inkling-small",
+      "snippet": "A terminal-based coding agent The first request starts cold unless marked otherwise. Output is billed separately from context growth because reasoning tokens are not always retained. This remains a directional estimate: providers differ in eligibility, rounding, and retention."
+    }
+  ]
+}

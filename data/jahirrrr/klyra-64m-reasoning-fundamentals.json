@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Jahirrrr/Klyra-64M-Reasoning-Fundamentals",
+  "slug": "jahirrrr-klyra-64m-reasoning-fundamentals",
+  "author": "Jahirrrr",
+  "url": "https://huggingface.co/Jahirrrr/Klyra-64M-Reasoning-Fundamentals",
+  "created_at": "2026-09-27T01:50:45.000Z",
+  "updated_at": "2026-09-27T11:56:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "klyra",
+    "text-generation",
+    "small-language-model",
+    "minimind",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68827392,
+  "parameters_human": "68.8M",
+  "storage_bytes": 275351163,
+  "storage_human": "275 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jahirrrr/Klyra-64M · Hugging Face",
+      "url": "https://huggingface.co/Jahirrrr/Klyra-64M",
+      "snippet": "Klyra-64M Klyra-64M is a compact language model family developed as an academic research project. The project was initiated and developed by students of Informatics Engineering at Politeknik Negeri Jakarta (State Polytechnic of Jakarta), with a focus on efficient language modeling, staged post-training, reasoning, reinforcement learning, and model distillation at the sub-100M parameter scale."
+    },
+    {
+      "title": "Bisakah Model 64 Juta Parameter Belajar Bernalar? - Membangun Model ...",
+      "url": "https://dev.to/jahirrrr/bisakah-model-64-juta-parameter-belajar-bernalar-membangun-model-bahasa-64m-parameter-dari-nol-kn",
+      "snippet": "Saya membuat tahap Klyra-64M-Reasoning-Fundamentals. Tujuannya bukan membuat model langsung pintar mendadak atau langsung bisa menyelesaikan soal kompetisi yang rumit."
+    },
+    {
+      "title": "Klyra AI — Your virtual AI engineer",
+      "url": "https://www.klyralabs.io/",
+      "snippet": "Fine-tuned model weights, training methodologies, and derivative works produced through Klyra AI&#x27;s proprietary training pipeline are proprietary to Klyra AI, subject to the licence terms of any underlying third-party base models."
+    },
+    {
+      "title": "Best AI for Reasoning 2026 - Top Reasoning Models",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-reasoning",
+      "snippet": "Rankings of the best AI models for reasoning tasks. Compare models by logic, planning, and problem-solving capabilities."
+    },
+    {
+      "title": "GitHub - klyra-ai/docs: Official documentation for Klyra AI, The AI ...",
+      "url": "https://github.com/klyra-ai/docs",
+      "snippet": "Official documentation for Klyra AI - The #1 All-in-One AI platform for Content Creation, Automation, and Productivity. - klyra-ai/docs"
+    }
+  ]
+}

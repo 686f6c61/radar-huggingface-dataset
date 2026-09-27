@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "adventists-ai/MOSS-Transcribe-Diarize-Whisper-Encoder",
+  "slug": "adventists-ai-moss-transcribe-diarize-whisper-encoder",
+  "author": "adventists-ai",
+  "url": "https://huggingface.co/adventists-ai/MOSS-Transcribe-Diarize-Whisper-Encoder",
+  "created_at": "2026-09-27T01:50:35.000Z",
+  "updated_at": "2026-09-27T02:07:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "duplexjev",
+    "audio",
+    "asr-encoder",
+    "arxiv:2601.01554",
+    "base_model:OpenMOSS-Team/MOSS-Transcribe-Diarize",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Transcribe-Diarize",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307216384,
+  "parameters_human": "307.2M",
+  "storage_bytes": 614475496,
+  "storage_human": "614 MB",
+  "base_model": "OpenMOSS-Team/MOSS-Transcribe-Diarize",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ADELE EXARCHOPOULOS Nude - AZNude",
+      "url": "https://www.aznude.com/view/celeb/a/adeleexarchopoulos.html",
+      "snippet": "ADELE EXARCHOPOULOS nude - 233 images and 70 videos - including scenes from \"Down by Love\" - \"The Women of GQ\" - \"The …Read more"
+    },
+    {
+      "title": "Adèle Exarchopoulos nude – 138 Photos and Uncensored Nude …",
+      "url": "https://celebnic.com/celebrities/adele-exarchopoulos/",
+      "snippet": "Nov 22, 1993 · Adèle Exarchopoulos nude – 138 hot photos and uncensored nude pics. Discover naked celebrity galleries with …Read more"
+    },
+    {
+      "title": "Collection Nue & Sexy d’Adele Exarchopoulos (48 Photos + Vidéos)",
+      "url": "https://fr.thefappeningblog.com/adele-exarchopoulos-nude-sexy-collection-48-photos-videos/",
+      "snippet": "Découvrez le nouveau mix d’Adele Exarchopoulos, comprenant ses meilleures photos de mannequinat, captures d’écran et vidéos …Read more"
+    },
+    {
+      "title": "Adele Exarchopoulos Vidéos porno Recherche (86 vidéos) - NudeVista",
+      "url": "https://www.nudevista.be/?q=adele+exarchopoulos&s=t",
+      "snippet": "86 résultats pour adele exarchopoulos vidéos porno, classé par pertinence, plus récent, popularité, durée ou aléatoire Recherches …Read more"
+    },
+    {
+      "title": "Adèle Exarchopoulos nue, 67 Photos, biographie, news de stars | LES ...",
+      "url": "https://www.les-stars-nues.biz/photos-Adele-Exarchopoulos-3715-nue.html",
+      "snippet": "Jul 3, 2019 · Dans ce film, Adèle incarne le personnage principal, une adolescente découvrant l'amour et sa sexualité. Sa …Read more"
+    }
+  ]
+}

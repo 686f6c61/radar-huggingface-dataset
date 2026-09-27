@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "yuiseki/llm-jp-3-440m-jp-gov-v0.2",
+  "slug": "yuiseki-llm-jp-3-440m-jp-gov-v0-2",
+  "author": "yuiseki",
+  "url": "https://huggingface.co/yuiseki/llm-jp-3-440m-jp-gov-v0.2",
+  "created_at": "2026-09-27T01:56:39.000Z",
+  "updated_at": "2026-09-27T02:01:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "geospatial",
+    "japan",
+    "continued-pretraining",
+    "open-data",
+    "ja",
+    "dataset:yuiseki/geo-triples-jp-gov",
+    "dataset:yuiseki/jp-admin-2026-09",
+    "dataset:yuiseki/wikipedia-geotagged",
+    "base_model:llm-jp/llm-jp-3-440m",
+    "base_model:finetune:llm-jp/llm-jp-3-440m",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 447251456,
+  "parameters_human": "447.3M",
+  "storage_bytes": 894519624,
+  "storage_human": "895 MB",
+  "base_model": "llm-jp/llm-jp-3-440m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yuiseki/llm-jp-3-440m-jp-gov-v0.2 · Hugging Face",
+      "url": "https://huggingface.co/yuiseki/llm-jp-3-440m-jp-gov-v0.2",
+      "snippet": "yuiseki / llm-jp-3-440m-jp-gov-v0.2 Like 0 Text Generation Transformers Safetensors yuiseki/geo-triples-jp-gov yuiseki/jp-admin-2026-09 yuiseki/wikipedia-geotagged Japanese llama geospatial japan continued-pretraining open-data text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket ..."
+    },
+    {
+      "title": "yuiseki/llm-jp-3-440m-jp-gov-v0.2 at main - Hugging Face",
+      "url": "https://huggingface.co/yuiseki/llm-jp-3-440m-jp-gov-v0.2/tree/main",
+      "snippet": "yuiseki / llm-jp-3-440m-jp-gov-v0.2 Like 0 Text Generation Transformers Safetensors yuiseki/geo-triples-jp-gov yuiseki/jp-admin-2026-09 yuiseki/wikipedia-geotagged Japanese llama geospatial japan continued-pretraining open-data text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket ..."
+    },
+    {
+      "title": "llm-jp-3-440m (LLM-jp（NII）) - AI Models Navi",
+      "url": "https://aimodelsnavi.com/en/models/llm-jp-3-440m",
+      "snippet": "A Japanese-optimized large language model developed by NII. Available in eight sizes from 150M to 172B parameters. Trained on the llm-jp-corpus v3. Supports SFT/DPO via Instruct2/Instruct3. Licensed under Apache 2.0 for models up to 13B. Share: X Hatena LINE Parameters Undisclosed Context Window License Proprietary Release Date 2025-01-27"
+    },
+    {
+      "title": "Release - LLM-jp",
+      "url": "https://llm-jp.nii.ac.jp/en/release-en/",
+      "snippet": "Please cite or reference the resources on this page if you use them in your research or software development. Users of this model are requested to use it appropriately and at their own responsibility, in accordance with the \"Guideline for Ensuring the Appropriateness of Research & Development and Utilization of Artificial Intelligence-Related Technology\" (Decision of the Artificial ..."
+    },
+    {
+      "title": "The open-source large language model llm-jp-3-440m - Supports ...",
+      "url": "https://model.aibase.com/models/details/1970375715463630848",
+      "snippet": "LLM-jp-3-440m is a 440M parameter version in the Japanese large language model series developed by the Large Language Model R & D Center of the National Institute of Informatics in Japan. This model is based on the Transformer architecture, supports multiple languages such as Japanese, English, Chinese, and Korean, and is pre - trained on a large - scale multilingual dataset."
+    }
+  ]
+}

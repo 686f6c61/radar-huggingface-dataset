@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "toyin88/u2t01-bert-agnews",
+  "slug": "toyin88-u2t01-bert-agnews",
+  "author": "toyin88",
+  "url": "https://huggingface.co/toyin88/u2t01-bert-agnews",
+  "created_at": "2026-09-27T02:17:36.000Z",
+  "updated_at": "2026-09-27T02:18:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "full-adaptation",
+    "en",
+    "dataset:fancyzhx/ag_news",
+    "arxiv:1810.04805",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109485316,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437964800,
+  "storage_human": "438 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "toyin88/u2t01-bert-agnews · Hugging Face",
+      "url": "https://huggingface.co/toyin88/u2t01-bert-agnews",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mansoorhamidzadeh/ag-news-bert-classification · Hugging Face",
+      "url": "https://huggingface.co/mansoorhamidzadeh/ag-news-bert-classification",
+      "snippet": "The AG-News BERT Classification model is a fine-tuned BERT (Bidirectional Encoder Representations from Transformers) model designed for text classification tasks, specifically for classifying news articles into four categories: World, Sports, Business, and Sci/Tech."
+    },
+    {
+      "title": "PDF AI-Enabled Fake News Detection using BERT Language Model and Light GBM ...",
+      "url": "https://ijsmt.org/wp-content/uploads/2026/05/AI-Enabled-Fake-News-Detection-using-BERT-Language-Model-and-Light-GBM-Classifier.pdf",
+      "snippet": "The project \"AI-Enabled Fake News Detection Using BERT Language Model and Light GBM Classifier\" is developed to provide an efficient and user-friendly solution for detecting fake news articles. The application is designed as an Android-based system using Java/XML and integrated with Firebase services for real-time data handling and AI support."
+    },
+    {
+      "title": "AjNavneet/BERT-Text-Classification-AGNews - GitHub",
+      "url": "https://github.com/AjNavneet/BERT-Text-Classification-AGNews",
+      "snippet": "BERT, a cutting-edge transformer model, has proven its prowess in complex NLP tasks, such as NLU, NLG, Sentiment Analysis, and Text Classification. Its exceptional performance often surpasses human capabilities."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

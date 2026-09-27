@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "OneColdHonky/image-editor-ia-uncensored",
+  "slug": "onecoldhonky-image-editor-ia-uncensored",
+  "author": "OneColdHonky",
+  "url": "https://huggingface.co/OneColdHonky/image-editor-ia-uncensored",
+  "created_at": "2026-09-27T02:16:22.000Z",
+  "updated_at": "2026-09-27T02:16:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OneColdHonky/image-editor-ia-uncensored at main - Hugging Face",
+      "url": "https://huggingface.co/OneColdHonky/image-editor-ia-uncensored/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OneColdHonky (Jeremy) - Hugging Face",
+      "url": "https://huggingface.co/OneColdHonky",
+      "snippet": "User profile of Jeremy on Hugging Face"
+    },
+    {
+      "title": "Uncensored AI Image Editor: What to Look For (And What Most Tools Won&#x27;t ...",
+      "url": "https://goongen.ai/blog/uncensored-ai-image-editor",
+      "snippet": "A practical guide to finding a truly uncensored AI image editor - covering restrictions, privacy, encryption, and what separates real tools from filtered ones."
+    },
+    {
+      "title": "Uncensored AI Image Editor — Complete Guide (2026) | Spicy AI",
+      "url": "https://spicyai.app/guides/uncensored-ai-image-editor-guide",
+      "snippet": "What is an uncensored AI image editor? Compare no-filter AI photo editors vs safety-filtered platforms, use cases, and how Spicy AI&#x27;s free AI image generator works."
+    },
+    {
+      "title": "Uncensored AI Image Editor — No Filter | Spicy AI",
+      "url": "https://spicyai.app/ai-image-editor",
+      "snippet": "Uncensored AI Image Editor — Built for Serious Creators Spicy AI is an uncensored AI image editor and AI photo editor for professional creators who have hit safety-filter walls elsewhere. Use it as a free AI image generator, prompt-based picture editor, or unrestricted photo editor — text-to-image and image-to-image in one no-filter workspace."
+    }
+  ]
+}

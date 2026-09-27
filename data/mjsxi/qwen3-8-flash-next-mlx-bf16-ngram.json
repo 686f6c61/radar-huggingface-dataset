@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "mjsxi/qwen3.8-flash-next-mlx-bf16-ngram",
+  "slug": "mjsxi-qwen3-8-flash-next-mlx-bf16-ngram",
+  "author": "mjsxi",
+  "url": "https://huggingface.co/mjsxi/qwen3.8-flash-next-mlx-bf16-ngram",
+  "created_at": "2026-09-27T02:14:37.000Z",
+  "updated_at": "2026-09-27T02:35:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 102400491688,
+  "storage_human": "102.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How many tokens/second output are you getting with Qwen3.8-27B?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vqjeub/how_many_tokenssecond_output_are_you_getting_with/",
+      "snippet": "17.08.2026 ... 108 votes, 430 comments. Trying to get a feel for where I stand. If you can list your relevant hardware and model used, that would be ..."
+    }
+  ]
+}

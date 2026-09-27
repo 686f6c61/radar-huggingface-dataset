@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "PS4Research/xnfjGuaVd0Dp3J42",
+  "slug": "ps4research-xnfjguavd0dp3j42",
+  "author": "PS4Research",
+  "url": "https://huggingface.co/PS4Research/xnfjGuaVd0Dp3J42",
+  "created_at": "2026-09-27T02:07:47.000Z",
+  "updated_at": "2026-09-27T02:13:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ibm-granite/granite-4.2-30b",
+    "base_model:finetune:ibm-granite/granite-4.2-30b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29276770304,
+  "parameters_human": "29.28B",
+  "storage_bytes": 58553607904,
+  "storage_human": "58.6 GB",
+  "base_model": "ibm-granite/granite-4.2-30b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PS4Research/xnfjGuaVd0Dp3J42 · Hugging Face",
+      "url": "https://huggingface.co/PS4Research/xnfjGuaVd0Dp3J42",
+      "snippet": "PS4Research / xnfjGuaVd0Dp3J42 Like 0 Text Generation Transformers Safetensors English granite text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "PS4Research/nB8hY3fD6sQ1cX5w · Hugging Face",
+      "url": "https://huggingface.co/PS4Research/nB8hY3fD6sQ1cX5w",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - RuxaXa/ps4-research: Evidence-oriented PS4 research and reboot ...",
+      "url": "https://github.com/RuxaXa/ps4-research",
+      "snippet": "Evidence-oriented documentation and source code from an authorized, owner-operated PlayStation 4 research environment."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "PS4Research/vF2tL5yB8hP6nX3d API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/PS4Research/vF2tL5yB8hP6nX3d",
+      "snippet": "PS4Research vF2tL5yB8hP6nX3d Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    }
+  ]
+}

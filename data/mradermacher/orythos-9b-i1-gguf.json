@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Orythos-9B-i1-GGUF",
+  "slug": "mradermacher-orythos-9b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Orythos-9B-i1-GGUF",
+  "created_at": "2026-09-27T01:56:42.000Z",
+  "updated_at": "2026-09-27T05:00:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:CloudGoat/Orythos-9B",
+    "base_model:quantized:CloudGoat/Orythos-9B",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 110211452896,
+  "storage_human": "110.2 GB",
+  "base_model": "CloudGoat/Orythos-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Orythos-9B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Orythos-9B-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Ornith-1.5-9B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ornith-1.5-9B-i1-GGUF",
+      "snippet": "mradermacher / Ornith-1.5-9B-i1-GGUF like 0 Transformers GGUF English imatrix conversational License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 30 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "mradermacher/MiMo-Ornith-9B-AGSI-i1-GGUF: open-weights language model ...",
+      "url": "https://huggingbay.xyz/artifact/hf-model-mradermacher-mimo-ornith-9b-agsi-i1-gguf",
+      "snippet": "mradermacher/MiMo-Ornith-9B-AGSI-i1-GGUF is an open-weights language model for general under the apache-2.0 license (81.3 GB), added to Hugging Bay Sep 25, 2026."
+    },
+    {
+      "title": "GitHub - p-e-w/heretic: Fully automatic censorship removal for language ...",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "The Heretic version, generated without any human effort, achieves the same level of refusal suppression as other abliterations, but at a much lower KL divergence, indicating less damage to the original model&#x27;s capabilities. (You can reproduce those numbers using Heretic&#x27;s built-in evaluation functionality, e.g. heretic --model google/gemma-3-12b-it --evaluate-model p-e-w/gemma-3-12b-it-heretic ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Green-Eye",
   "url": "https://huggingface.co/Green-Eye/Akikawa-3.3-1b-Roleplay-128K-GGUF",
   "created_at": "2026-08-20T00:55:11.000Z",
-  "updated_at": "2026-09-25T17:09:54.000Z",
+  "updated_at": "2026-09-26T23:56:42.000Z",
   "license": "llama3.2",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 253,
+  "downloads_30d": 1315,
   "trending_score": 0,
   "parameters": 1235814432,
   "parameters_human": "1.24B",

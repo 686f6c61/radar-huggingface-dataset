@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "adventists-ai/DuplexJev-B-MOSS-Transcribe-SmolLM3-3B",
+  "slug": "adventists-ai-duplexjev-b-moss-transcribe-smollm3-3b",
+  "author": "adventists-ai",
+  "url": "https://huggingface.co/adventists-ai/DuplexJev-B-MOSS-Transcribe-SmolLM3-3B",
+  "created_at": "2026-09-27T02:15:11.000Z",
+  "updated_at": "2026-09-27T02:17:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ultravox",
+    "feature-extraction",
+    "duplexjev",
+    "speech-to-decision",
+    "full-duplex",
+    "speech-llm",
+    "paralinguistics",
+    "edge",
+    "audio-text-to-text",
+    "custom_code",
+    "zh",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:finetune:HuggingFaceTB/SmolLM3-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37758976,
+  "parameters_human": "37.8M",
+  "storage_bytes": 92727429,
+  "storage_human": "93 MB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B, OpenMOSS-Team/MOSS-Transcribe-Diarize",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DuplexJev-B-MOSS-Transcribe-Qwen3-4B-2507 - Hugging Face",
+      "url": "https://huggingface.co/adventists-ai/DuplexJev-B-MOSS-Transcribe-Qwen3-4B-2507",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "adventists-ai/DuplexJev-B-Para-MOSS-Transcribe-Falcon-H1-1.5B · Hugging ...",
+      "url": "https://huggingface.co/adventists-ai/DuplexJev-B-Para-MOSS-Transcribe-Falcon-H1-1.5B",
+      "snippet": "DuplexJev-B-Para-MOSS-Transcribe-Falcon-H1-1.5B ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - adventists-ai/duplexjev: Batched speech decisions without ...",
+      "url": "https://github.com/adventists-ai/duplexjev",
+      "snippet": "Batched speech decisions without decoding: typed single-token readout from a frozen speech LLM for full-duplex spoken agents (Speech-to-Decision). - adventists-ai/duplexjev"
+    },
+    {
+      "title": "Gemini Audio - AI transcription — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-audio/ai-transcription/",
+      "snippet": "Mason Adams Developer Evangelist, Agora \"By integrating Gemini 3.5 Transcribe model, IntelliTek Health transforms real-time clinical transcription across primary care and medical specialties. Gemini&#x27;s accuracy and multi-lingual capabilities capture every critical detail, while multi-region availability ensures global data compliance."
+    },
+    {
+      "title": "Gemini 3.5 Transcribe | Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.5-transcribe",
+      "snippet": "Gemini 3.5 Transcribe is a speech-to-text model based on Gemini&#x27;s audio understanding capabilities. It provides low-latency, accurate transcription with utterance-based language detection, speaker diarization, word-level timestamps, Smart transcription, and custom vocabulary speech biasing."
+    }
+  ]
+}

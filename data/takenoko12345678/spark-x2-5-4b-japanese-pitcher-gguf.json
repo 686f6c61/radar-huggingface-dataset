@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Takenoko12345678/Spark-X2.5-4B-Japanese-Pitcher-GGUF",
+  "slug": "takenoko12345678-spark-x2-5-4b-japanese-pitcher-gguf",
+  "author": "Takenoko12345678",
+  "url": "https://huggingface.co/Takenoko12345678/Spark-X2.5-4B-Japanese-Pitcher-GGUF",
+  "created_at": "2026-09-27T02:29:14.000Z",
+  "updated_at": "2026-09-27T04:32:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "japanese",
+    "roleplay",
+    "character",
+    "spark2_5",
+    "llama.cpp",
+    "text-generation",
+    "ja",
+    "base_model:Takenoko12345678/Spark-X2.5-4B-Japanese-Pitcher",
+    "base_model:quantized:Takenoko12345678/Spark-X2.5-4B-Japanese-Pitcher",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 2600224320,
+  "storage_human": "2.6 GB",
+  "base_model": "Takenoko12345678/Spark-X2.5-4B-Japanese-Pitcher",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Takenoko12345678/Spark-X2.5-4B-Japanese-Pitcher-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Takenoko12345678/Spark-X2.5-4B-Japanese-Pitcher-GGUF",
+      "snippet": "Takenoko12345678/Spark-X2.5-4B-Japanese-Pitcher（ヤンデレ・ツンデレなどのキャラクターを演じる LoRA）を、日本語化モデルに統合して GGUF にしたものです。元は XHToken/Spark-X2.5-4B の非公式の派..."
+    },
+    {
+      "title": "GitHub - XHToken/Spark-X2.5: Spark-x2.5 open model series. Pushing ...",
+      "url": "https://github.com/XHToken/Spark-X2.5",
+      "snippet": "The latest Unsloth Studio supports native Spark-X2.5 GGUF inference. We recommend using Llama-Factory to fine-tune the model. The Spark-X2.5 model series is licensed under the Apache 2.0 License. If you find our work helpful, feel free to give us a cite. @misc{sparkx2.5, title = {Spark-X2.5 4B&1.7B: Pushing the Limits of Agentic Capabilities in On-Device Models}, author = {SparkLLM Team}, year = {2026} }"
+    },
+    {
+      "title": "Takenoko12345678/Spark-X2.5-4B-Japanese · Hugging Face",
+      "url": "https://huggingface.co/Takenoko12345678/Spark-X2.5-4B-Japanese",
+      "snippet": "同梱コードは高速化の仕組みを使わない実装なので、transformers では遅めです。速く動かしたい場合は GGUF 版と llama.cpp（build 10828 以降、Spark-X2.5 対応）を使ってください。vLLM は（0.30 時点で）このモデルの構造に対応していません。"
+    },
+    {
+      "title": "Takenoko12345678/Spark-X2.5-4B-Japanese-Pitcher · Hugging Face",
+      "url": "https://huggingface.co/Takenoko12345678/Spark-X2.5-4B-Japanese-Pitcher",
+      "snippet": "GGUF 版（Spark-X2.5-4B-Japanese-Pitcher-GGUF）を使ってください。llama.cpp の build 10828 以降が必要です（Spark-X2.5 対応）。"
+    },
+    {
+      "title": "Takenoko12345678/Spark-X2.5-4B-Japanese-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Takenoko12345678/Spark-X2.5-4B-Japanese-GGUF",
+      "snippet": "Takenoko12345678/Spark-X2.5-4B-Japanese の GGUF 版です。元は XHToken/Spark-X2.5-4B を日本語向けに追加学習した非公式の派生モデルで、XHToken とは関係ありません。学習の内容・評価・回答例・既..."
+    }
+  ]
+}

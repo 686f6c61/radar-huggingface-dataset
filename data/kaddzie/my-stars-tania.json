@@ -5,7 +5,7 @@
   "author": "kaddzie",
   "url": "https://huggingface.co/kaddzie/My-Stars-Tania",
   "created_at": "2026-08-21T21:45:28.000Z",
-  "updated_at": "2026-08-21T21:45:35.000Z",
+  "updated_at": "2026-09-26T12:50:26.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 182,
+  "downloads_30d": 200,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

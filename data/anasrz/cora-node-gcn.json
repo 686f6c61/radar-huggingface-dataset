@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "anasrz/cora-node-gcn",
+  "slug": "anasrz-cora-node-gcn",
+  "author": "anasrz",
+  "url": "https://huggingface.co/anasrz/cora-node-gcn",
+  "created_at": "2026-09-27T01:49:38.000Z",
+  "updated_at": "2026-09-27T01:49:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "graph-ml",
+  "library": "keras",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "keras",
+    "graph-machine-learning",
+    "gnn",
+    "k3-node",
+    "keras-3",
+    "multi-backend",
+    "node-classification",
+    "graph-ml",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 581960,
+  "storage_human": "581960 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "05-GNNs.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/gta-lab/graph-neural-networks/blob/main/notebooks/05-GNNs.ipynb",
+      "snippet": "By the end of this chapter, you&#x27;ll learn to implement MLP and GNNs in PyTorch, embedding topological features into node representations to enhance model performance. Topics covered include: Introducing graph datasets Classifying nodes with vanilla neural networks (MLP) Classifying nodes with vanilla graph neural networks (GNNs)"
+    },
+    {
+      "title": "gcn-node-classification.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/stellargraph/stellargraph/blob/master/demos/node-classification/gcn-node-classification.ipynb",
+      "snippet": "gcn-node-classification.ipynb - Colab Loading..."
+    },
+    {
+      "title": "GitHub - jasonjias/cora-gcn-node-classification",
+      "url": "https://github.com/jasonjias/cora-gcn-node-classification",
+      "snippet": "main.py Contains the code to load the Cora dataset, define a simple 2-layer GCN model, train the model using node features and graph connectivity, evaluate its performance on validation and test sets, and save the trained model. README.md Provides an overview of the project, installation instructions, usage details, and an explanation of how the model works."
+    },
+    {
+      "title": "Anormalmaniac/cora_gcn · Hugging Face",
+      "url": "https://huggingface.co/Anormalmaniac/cora_gcn",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "KonNik88/gnn-node-link-pytorch - GitHub",
+      "url": "https://github.com/KonNik88/gnn-node-link-pytorch",
+      "snippet": "Graph Neural Networks (GCN, GraphSAGE, GAT) on Cora/PubMed with PyTorch Geometric. Node classification, link prediction, baselines, and explainability (GNNExplainer) - KonNik88/gnn-node-link-pytorch"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "logic65",
   "url": "https://huggingface.co/logic65/Whittle-Next-27B-A3B",
   "created_at": "2026-09-03T09:54:43.000Z",
-  "updated_at": "2026-09-24T23:21:24.000Z",
+  "updated_at": "2026-09-26T11:19:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -49,7 +49,7 @@
     "region:us"
   ],
   "likes": 23,
-  "downloads_30d": 4764,
+  "downloads_30d": 4880,
   "trending_score": 10,
   "parameters": 27568288915,
   "parameters_human": "27.57B",

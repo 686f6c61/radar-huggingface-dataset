@@ -5,7 +5,7 @@
   "author": "julianmb",
   "url": "https://huggingface.co/julianmb/Ornith-1.5-35B-A3B-ROCmFP4-GGUF",
   "created_at": "2026-08-20T02:38:02.000Z",
-  "updated_at": "2026-08-28T11:55:11.000Z",
+  "updated_at": "2026-09-27T04:34:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "conversational"
   ],
   "likes": 8,
-  "downloads_30d": 18970,
+  "downloads_30d": 12148,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
