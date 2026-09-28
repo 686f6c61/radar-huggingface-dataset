@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kaustuk000/netwatch-flow-cascade",
+  "slug": "kaustuk000-netwatch-flow-cascade",
+  "author": "kaustuk000",
+  "url": "https://huggingface.co/kaustuk000/netwatch-flow-cascade",
+  "created_at": "2026-09-28T17:54:09.000Z",
+  "updated_at": "2026-09-28T18:01:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "netwatch-flow-cascade",
+    "netwatch-v1.0.0",
+    "network-intrusion-detection",
+    "anomaly-detection",
+    "cybersecurity",
+    "graph-neural-network",
+    "tabular-classification",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8773756,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lemony-ai/cascadeflow: Cascading runtime for AI agents ...",
+      "url": "https://github.com/lemony-ai/CascadeFlow",
+      "snippet": "Why cascadeflow? Proxy vs In-Process Harness ... cascadeflow is a library and agent harness — an intelligent AI model cascading package that dynamically selects the optimal model for each query or tool call through speculative execution."
+    },
+    {
+      "title": "cascadeflow: AI agent runtime governance | cascadeflow",
+      "url": "https://cascadeflow.ai/",
+      "snippet": "cascadeflow is the AI agent runtime layer that sees every step and steers model calls, tool calls, and handoffs toward your policies and goals. Cut inference cost up to 90% with sub-5ms overhead."
+    },
+    {
+      "title": "GitHub - LTMani/NetWatch-AI: AI-powered enterprise network usage and ...",
+      "url": "https://github.com/LTMani/NetWatch-AI",
+      "snippet": "NetWatch AI is a production-grade, AI-driven enterprise network monitoring, telemetry analysis, anomaly detection, risk scoring, automated diagnostics, digital twin simulation, and incident management platform. Built strictly for authorized corporate monitoring environments, NetWatch AI adheres to uncompromising enterprise privacy boundaries by inspecting only network metadata (domains, flow ..."
+    },
+    {
+      "title": "cascadeflow - cascadeflow",
+      "url": "https://docs.cascadeflow.ai/",
+      "snippet": "cascadeflow is infrastructure that sits inside AI agent execution and continuously optimizes outcomes across business and technical constraints in real time. This is not another model router. It is a decision system inside the agent loop. Every model call, tool call, and sub-agent handoff can be measured, scored, and steered — where cost, delay, and failure actually happen."
+    },
+    {
+      "title": "How It Works - cascadeflow",
+      "url": "https://docs.cascadeflow.ai/get-started/how-it-works",
+      "snippet": "Architecture of cascadeflow&#x27;s two engines — Cascade for speculative model routing and Harness for agent runtime intelligence."
+    }
+  ]
+}

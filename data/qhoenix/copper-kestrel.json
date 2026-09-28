@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "qhoenix/copper-kestrel",
+  "slug": "qhoenix-copper-kestrel",
+  "author": "qhoenix",
+  "url": "https://huggingface.co/qhoenix/copper-kestrel",
+  "created_at": "2026-09-28T16:14:25.000Z",
+  "updated_at": "2026-09-28T16:14:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "torchvision",
+  "languages": [],
+  "tags": [
+    "torchvision",
+    "safetensors",
+    "image-classification",
+    "adversarial-training",
+    "efficientnet",
+    "perturb",
+    "bittensor",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119027848,
+  "parameters_human": "119.0M",
+  "storage_bytes": 476270096,
+  "storage_human": "476 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Calendrier 2026, Vacances scolaires et fêtes.",
+      "url": "https://www.very-utile.com/",
+      "snippet": "Retrouvez votre calendrier 2026, Vacances scolaires, jours fériés, fêtes chrétiennes, musulmanes et juives. Agenda avec rappel des …"
+    },
+    {
+      "title": "Calendrier lunaire, pleine lune et nouvelle lune",
+      "url": "https://www.very-utile.com/cycle-lunaire.php",
+      "snippet": "Sep 1, 2026 · Retrouvez le calendrier lunaire du jour et découvrez les explications sur le cycle lunaire grâce à votre calendrier Very …"
+    },
+    {
+      "title": "LE CORSAIRE - Vente de poisson, coquillage, crustacé à Saint Malo ...",
+      "url": "https://annuaire.very-utile.com/magasin/-corsaire,577",
+      "snippet": "Vente de poisson, coquillage, crustacé à Saint Malo, directement du producteur"
+    },
+    {
+      "title": "Dedicace - Agence de communication pour CE",
+      "url": "https://annuaire.very-utile.com/communication-evenementiel/communication-ce,478",
+      "snippet": "Agence de communication pour CE"
+    },
+    {
+      "title": "Calendrier 2006 - Very Utile",
+      "url": "https://www.very-utile.com/calendrier-2006.php",
+      "snippet": "Calendrier 2006 avec les vacances scolaires, un calendrier lunaire, le calendrier des fêtes et des saints..."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "firzahdzm/tourn-cc4550ab-instructtext-hyper-x4avf1full20",
+  "slug": "firzahdzm-tourn-cc4550ab-instructtext-hyper-x4avf1full20",
+  "author": "firzahdzm",
+  "url": "https://huggingface.co/firzahdzm/tourn-cc4550ab-instructtext-hyper-x4avf1full20",
+  "created_at": "2026-09-28T02:45:33.000Z",
+  "updated_at": "2026-09-28T02:46:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lfm2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 2340697936,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forum PlayStation 5 - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-3017788-0-1-0-1-0-playstation-5.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum PlayStation 5 de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre notre …"
+    },
+    {
+      "title": "Forum Football - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-20-0-1-0-1-0-football.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum Football de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre notre …"
+    },
+    {
+      "title": "Forum psychologie - Doctissimo",
+      "url": "https://forum.doctissimo.fr/psychologie/liste_categorie.htm",
+      "snippet": "1 day ago · Forum de discussion consacre a la psychologie : stress, depression, angoisses et phobies, developpement personnel, …"
+    },
+    {
+      "title": "Forum Beauté - Doctissimo",
+      "url": "https://forum.doctissimo.fr/forme-beaute/liste_categorie.htm",
+      "snippet": "4 days ago · Forum de discussion sur la beaute. Chirurgie esthetique, cellulite, rides, cosmétiques, thalassotherapie… venez …"
+    },
+    {
+      "title": "Forum Grand Theft Auto VI - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-3010011-0-1-0-1-0-grand-theft-auto-6.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum Grand Theft Auto VI de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre …"
+    }
+  ]
+}

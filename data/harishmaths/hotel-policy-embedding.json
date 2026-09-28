@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HarishMaths/Hotel-Policy-Embedding",
+  "slug": "harishmaths-hotel-policy-embedding",
+  "author": "HarishMaths",
+  "url": "https://huggingface.co/HarishMaths/Hotel-Policy-Embedding",
+  "created_at": "2026-09-28T16:15:56.000Z",
+  "updated_at": "2026-09-28T16:23:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:3872",
+    "loss:MultipleNegativesRankingLoss",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90864192,
+  "storage_human": "91 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Semantic Similarity",
+      "dataset": "val",
+      "metric": "Pearson Cosine",
+      "value": 0.6244156998181909
+    },
+    {
+      "task": "Semantic Similarity",
+      "dataset": "val",
+      "metric": "Spearman Cosine",
+      "value": 0.6463453957364179
+    }
+  ],
+  "sources": []
+}

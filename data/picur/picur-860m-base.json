@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "picur/picur-860M-base",
+  "slug": "picur-picur-860m-base",
+  "author": "picur",
+  "url": "https://huggingface.co/picur/picur-860M-base",
+  "created_at": "2026-09-28T19:00:55.000Z",
+  "updated_at": "2026-09-28T19:36:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "hu"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "base",
+    "hungarian",
+    "magyar",
+    "conversational",
+    "hu",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 856662144,
+  "parameters_human": "856.7M",
+  "storage_bytes": 1714410931,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PiCur - The Globaleader",
+      "url": "https://theglobaleader.com/product/picur-3/",
+      "snippet": "“The Most Powerful ANTI-CANCER Food Supplement” FDA CPR No. 4000007365001. Total Protection-Higest ORAC Value …"
+    },
+    {
+      "title": "PICURe Réa - gfrup.sfpediatrie.com",
+      "url": "https://gfrup.sfpediatrie.com/journees-recherche-du-gfrup/picure-rea",
+      "snippet": "Texte Le projet Pediatric Intensive Care Unit Registry (PICURe) développé en 2018 sous l'égide du GFRUP a pour objectifs : une …"
+    },
+    {
+      "title": "PiCUR® - The Globaleader",
+      "url": "https://theglobaleader.com/products/picur/",
+      "snippet": "PiCUR® Products PiCUR® The world’s most powerful anti-oxidant. Primary uses: Cancer Extracted from: Turmeric and long peppers …"
+    },
+    {
+      "title": "Surgelés Picard - Livraison Produits surgelés à domicile",
+      "url": "https://www.picard.fr/?C_V2",
+      "snippet": "Picard Surgelés : disponibles aussi en livraison à domicile De savoureux produits surgelés livrés à domicile, sans que vous ayez à …"
+    },
+    {
+      "title": "Partants et pronostic pour le quinté du jour - iTurf",
+      "url": "https://www.iturf.fr/quinte/quinte-du-jour.php",
+      "snippet": "19 hours ago · Analyse du quinté du jour et pronostic quotidien pour la course du quinté. Statistiques sur les courses hippiques."
+    }
+  ]
+}

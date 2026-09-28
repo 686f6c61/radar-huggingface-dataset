@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "karankumarova/robotics-vision-language-small",
+  "slug": "karankumarova-robotics-vision-language-small",
+  "author": "karankumarova",
+  "url": "https://huggingface.co/karankumarova/robotics-vision-language-small",
+  "created_at": "2026-09-28T02:40:05.000Z",
+  "updated_at": "2026-09-28T02:40:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

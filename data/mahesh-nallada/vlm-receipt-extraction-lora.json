@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Mahesh-Nallada/vlm-receipt-extraction-lora",
+  "slug": "mahesh-nallada-vlm-receipt-extraction-lora",
+  "author": "Mahesh-Nallada",
+  "url": "https://huggingface.co/Mahesh-Nallada/vlm-receipt-extraction-lora",
+  "created_at": "2026-09-28T17:20:17.000Z",
+  "updated_at": "2026-09-28T17:38:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en",
+    "id"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2.5-vl",
+    "qwen",
+    "lora",
+    "qlora",
+    "receipt-extraction",
+    "document-ai",
+    "vision-language",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "id",
+    "dataset:naver-clova-ix/cord-v2",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 192652155,
+  "storage_human": "193 MB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "steven0226/vlm-receipt-extractor · Hugging Face",
+      "url": "https://huggingface.co/steven0226/vlm-receipt-extractor",
+      "snippet": "steven0226 / vlm-receipt-extractor like 0 Image-Text-to-Text PEFT Safetensors naver-clova-ix/cord-v2 Indonesian English lora qlora unsloth vision-language-model document-ai receipt qwen3-vl conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "README.md · steven0226/vlm-receipt-extractor at main",
+      "url": "https://huggingface.co/steven0226/vlm-receipt-extractor/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vlm-receipt-extractor/notebooks at main · tun0000/vlm-receipt ... - GitHub",
+      "url": "https://github.com/tun0000/vlm-receipt-extractor/tree/main/notebooks",
+      "snippet": "Qwen3-VL-8B QLoRA fine-tuning for receipt image to structured JSON extraction, with rigorous before/after evaluation on CORD-v2 (field-level F1 0.744 -> 0.930) - tun0000/vlm-receipt-extractor"
+    },
+    {
+      "title": "GitHub - tun0000/vlm-receipt-extractor: Qwen3-VL-8B QLoRA fine-tuning ...",
+      "url": "https://github.com/tun0000/vlm-receipt-extractor",
+      "snippet": "Qwen3-VL-8B QLoRA fine-tuning for receipt image to structured JSON extraction, with rigorous before/after evaluation on CORD-v2 (field-level F1 0.744 -> 0.930) - tun0000/vlm-receipt-extractor"
+    },
+    {
+      "title": "receipt-ocr — VLM-powered receipt extraction",
+      "url": "https://arslankazmi.github.io/receipt-ocr/",
+      "snippet": "Held-out evaluation of 11 OCR / VLM pipelines on a personal dataset of 19 grocery-and-pharmacy receipts captured in Lahore, PK (PKR currency). The annotator captures ground truth — store, date, line items with qty & total, currency, and overall total — and the benchmark scores each model against it via fuzzy field matching (rapidfuzz ≥80 ..."
+    }
+  ]
+}

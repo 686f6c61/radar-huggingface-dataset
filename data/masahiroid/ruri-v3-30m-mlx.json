@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "masahiroid/ruri-v3-30m-mlx",
+  "slug": "masahiroid-ruri-v3-30m-mlx",
+  "author": "masahiroid",
+  "url": "https://huggingface.co/masahiroid/ruri-v3-30m-mlx",
+  "created_at": "2026-09-28T15:57:18.000Z",
+  "updated_at": "2026-09-28T16:01:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "mlx",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "modernbert",
+    "sentence-similarity",
+    "feature-extraction",
+    "ruri",
+    "japanese",
+    "ja",
+    "base_model:cl-nagoya/ruri-v3-30m",
+    "base_model:finetune:cl-nagoya/ruri-v3-30m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36705536,
+  "parameters_human": "36.7M",
+  "storage_bytes": 73417329,
+  "storage_human": "73 MB",
+  "base_model": "cl-nagoya/ruri-v3-30m",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spicetify",
+      "url": "https://spicetify.app/",
+      "snippet": "Windows macOS / Linux $ iwr -useb https://raw.githubusercontent.com/spicetify/cli/main/install.ps1 | iex"
+    },
+    {
+      "title": "Getting Started | Spicetify",
+      "url": "https://spicetify.app/docs/getting-started",
+      "snippet": "If this is a fresh Spotify install, open Spotify and log in for at least 60 seconds before running Spicetify. This allows Spotify to generate …"
+    },
+    {
+      "title": "Spicetify - GitHub",
+      "url": "https://github.com/spicetify",
+      "snippet": "spicetify-themes Public A community-driven collection of themes for customizing Spotify through Spicetify - …"
+    },
+    {
+      "title": "Releases · spicetify/cli - GitHub",
+      "url": "https://github.com/spicetify/cli/releases",
+      "snippet": "Sep 17, 2026 · Spicetify now protects Spotify's update staging folder with reversible Windows permissions, leaving the signed client …"
+    },
+    {
+      "title": "Spicetify - Download",
+      "url": "https://spicetify.en.softonic.com/",
+      "snippet": "Jun 23, 2026 · Spicetify is a free music program by a group of indie developers over at Spicetify. It is a command line-based utility …"
+    }
+  ]
+}

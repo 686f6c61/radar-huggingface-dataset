@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Fabyo04/act_so101_cube_v2_100_test",
+  "slug": "fabyo04-act_so101_cube_v2_100_test",
+  "author": "Fabyo04",
+  "url": "https://huggingface.co/Fabyo04/act_so101_cube_v2_100_test",
+  "created_at": "2026-09-28T16:03:41.000Z",
+  "updated_at": "2026-09-28T16:03:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Fabyo04/so101_cube_v2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

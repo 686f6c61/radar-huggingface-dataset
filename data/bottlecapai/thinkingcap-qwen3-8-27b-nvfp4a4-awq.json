@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "bottlecapai/ThinkingCap-Qwen3.8-27B-NVFP4A4-AWQ",
+  "slug": "bottlecapai-thinkingcap-qwen3-8-27b-nvfp4a4-awq",
+  "author": "bottlecapai",
+  "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-NVFP4A4-AWQ",
+  "created_at": "2026-09-23T15:56:59.000Z",
+  "updated_at": "2026-09-25T12:47:56.000Z",
+  "license": "polyform-small-business-1.0.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "nvfp4",
+    "fp4",
+    "w4a4",
+    "conversational",
+    "base_model:bottlecapai/ThinkingCap-Qwen3.8-27B",
+    "base_model:quantized:bottlecapai/ThinkingCap-Qwen3.8-27B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 316,
+  "trending_score": 11,
+  "parameters": 20294595312,
+  "parameters_human": "20.29B",
+  "storage_bytes": 23437574232,
+  "storage_human": "23.4 GB",
+  "base_model": "bottlecapai/ThinkingCap-Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bottlecapai/ThinkingCap-Qwen3.8-27B-NVFP4A4-AWQ · Hugging Face",
+      "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-NVFP4A4-AWQ",
+      "snippet": "NVFP4 (W4A4) quantization of bottlecapai/ThinkingCap-Qwen3.8-27B, a Qwen3.8-27B fine-tune, built with llm-compressor and stored in the compressed-tensors format vLLM loads natively."
+    },
+    {
+      "title": "bottlecapai/ThinkingCap-Qwen3.8-27B - Hugging Face",
+      "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B",
+      "snippet": "vor 3 Tagen ... docker model run hf.co/bottlecapai/ThinkingCap-Qwen3.8-27B ... Request access to the BottleCap AI model. This repository is publicly ..."
+    },
+    {
+      "title": "bottlecapai/ThinkingCap-Qwen3.8-27B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-GGUF",
+      "snippet": "bottlecapai/ThinkingCap-Qwen3.8-27B · Quantized (18) this model · Collection · Quantized ThinkingCap-Qwen3.8-27B: NVFP4 and NVFP4A4-AWQ (vLLM), GGUF (llama.cpp), MLX (Apple silicon)."
+    },
+    {
+      "title": "bottlecapai/ThinkingCap-Qwen3.8-27B-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-NVFP4",
+      "snippet": "vor 5 Tagen ... Built for AI labs, inference providers and enterprises running models at scale. ... Quantized ThinkingCap-Qwen3.8-27B: NVFP4 and NVFP4A4-AWQ (vLLM) ..."
+    },
+    {
+      "title": "BottleCapAI - Hugging Face",
+      "url": "https://huggingface.co/bottlecapai",
+      "snippet": "Org profile for BottleCapAI on Hugging Face, the AI community building the future ... bottlecapai/ThinkingCap-Qwen3.8-27B-NVFP4A4-AWQ. Image-Text-to-Text • 20B ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Skebobic/Bobic-1.6-Raye",
+  "slug": "skebobic-bobic-1-6-raye",
+  "author": "Skebobic",
+  "url": "https://huggingface.co/Skebobic/Bobic-1.6-Raye",
+  "created_at": "2026-09-28T17:15:17.000Z",
+  "updated_at": "2026-09-28T17:16:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "slm",
+    "reasoning",
+    "mmlu-pro",
+    "pytorch",
+    "text-generation",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125864458,
+  "parameters_human": "125.9M",
+  "storage_bytes": 1644612549,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Releases · bablaerrr/bobikA5 - GitHub",
+      "url": "https://github.com/bablaerrr/bobikA5/releases",
+      "snippet": "bobik. Contribute to bablaerrr/bobikA5 development by creating an account on GitHub."
+    },
+    {
+      "title": "Ray 1.6 API - 300+ AI Models One API - AI.cc",
+      "url": "https://www.ai.cc/ray-16/",
+      "snippet": "Ray 1.6 by Luma AI is a groundbreaking generative video model designed to transform your text prompts into ultra-realistic, cinematic video content. Experience smooth motion, detailed visuals, and logical event sequences, enabling fast, coherent motion generation for diverse applications from high-speed action to dynamic storytelling."
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "Browse all available models on the OpenAI Platform."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    }
+  ]
+}

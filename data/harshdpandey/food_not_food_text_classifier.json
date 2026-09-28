@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "harshdpandey/food_not_food_text_classifier",
+  "slug": "harshdpandey-food_not_food_text_classifier",
+  "author": "harshdpandey",
+  "url": "https://huggingface.co/harshdpandey/food_not_food_text_classifier",
+  "created_at": "2026-09-28T17:20:41.000Z",
+  "updated_at": "2026-09-28T17:21:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hf_food_not_food_text_classifier_with_distilbert_demo",
+      "url": "https://huggingface.co/spaces/adamNLP/hf_food_not_food_text_classifier_with_distilbert_demo/blob/main/README.md",
+      "snippet": "Demo to showcase a text classifier to determine if a sentence is about food or not food. DistilBERT model fine-tuned on a small synthetic dataset of 250 generated food/not_food image captions"
+    },
+    {
+      "title": "Food Not Food Text Classifier - a Hugging Face Space by adamNLP",
+      "url": "https://huggingface.co/spaces/adamNLP/hf_food_not_food_text_classifier_with_distilbert_demo",
+      "snippet": "A text classifier to determine if a sentence is about food or not food. Fine-tuned from DistilBERT a dataset of LLM generated food/not_food image captions"
+    },
+    {
+      "title": "gokulan006/Food-Not-Food-Not-Classifier - GitHub",
+      "url": "https://github.com/gokulan006/Food-Not-Food-Not-Classifier",
+      "snippet": "This project is a text classification model built using Hugging Face&#x27;s 🤗 transformers library. The model classifies textual data into two categories: 🍕 Foodand 🚫 Not Food. It utilizes a pre-trained transformer model fine-tuned on a labeled dataset for text classification."
+    },
+    {
+      "title": "Food Not Food Classifier — Peter Junior Andrew",
+      "url": "https://peterjuniorandrew.com/food-not-food-classifier",
+      "snippet": "A lightweight NLP model that reads any sentence and determines whether it&#x27;s talking about food or not — returning a label and a confidence score. Simple premise. Real ML pipeline. \"I love pizza on Friday nights\" Food0.999 \"The stock market dropped today\" Not Food0.998 Type Binary Text Classification Model DistilBERT (fine-tuned) Accuracy 100% ..."
+    },
+    {
+      "title": "Hugging-Face-food-not-food-text-classifier/hugging_face_text ... - GitHub",
+      "url": "https://github.com/turtlemb/Hugging-Face-food-not-food-text-classifier/blob/main/hugging_face_text_classification_AI_model.ipynb",
+      "snippet": "Contribute to turtlemb/Hugging-Face-food-not-food-text-classifier development by creating an account on GitHub."
+    }
+  ]
+}

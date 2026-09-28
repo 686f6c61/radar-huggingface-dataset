@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-flux.2-klein-9b-fp16-unet-2067980602644717569",
+  "slug": "runninghubai-rh-flux-2-klein-9b-fp16-unet-2067980602644717569",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-flux.2-klein-9b-fp16-unet-2067980602644717569",
+  "created_at": "2026-09-28T17:22:10.000Z",
+  "updated_at": "2026-09-28T17:37:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18158188457,
+  "storage_human": "18.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-flux.2-klein-9b-fp8-unet · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-flux.2-klein-9b-fp8-unet",
+      "snippet": "This repository provides rh-flux.2-klein-9b-fp8-unet weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "Flux-2-Klein - RunningHub Stable Diffusion & Flux Unet",
+      "url": "https://www.runninghub.ai/model/public/2043609840181841921",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "README.md · RunningHubAI/rh-flux.2-klein-9b-fp8-unet at main",
+      "url": "https://huggingface.co/RunningHubAI/rh-flux.2-klein-9b-fp8-unet/blob/main/README.md",
+      "snippet": "RunningHubAI / rh-flux.2-klein-9b-fp8-unet Like 0 Text-to-Image comfyui unet Model card FilesFiles and versions xet Community Copy to bucket new main rh-flux.2-klein-9b-fp8-unet /README.md RunningHubAI Upload RunningHub model 2098379669824430081 109e49d verifiedabout 12 hours ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete 2.77 kB metadata tags ..."
+    },
+    {
+      "title": "Rh Flux2 Klein9b Lora - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/runninghubai/rh-flux2-klein9b-lora",
+      "snippet": "Registry entry for model Rh Flux2 Klein9b Lora; source metadata pending."
+    },
+    {
+      "title": "Flux.2 Klein 9B_fp16 nsfw - RunningHub Stable Diffusion & Flux Unet",
+      "url": "https://www.runninghub.cn/model/public/2066059074327896066",
+      "snippet": "models/unet/Flux.2 Klein 9B_fp16_nsfw.safetensors MD5： 2e286af639fd7c9291f1e0d03592f560 专为生成超逼真图像而设计，具有自然、电影级且极其精细的摄影效果 该模型已优化，以提供： 高级写实主义 工作和非工作出图 逼真自然的肌肤 高精度细节 出色的光线处理 逼真的照片级质感"
+    }
+  ]
+}

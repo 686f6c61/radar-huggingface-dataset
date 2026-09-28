@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "kernelpool/MiMo-V2.6-Pro-MOPD-MXFP4-GGUF",
+  "slug": "kernelpool-mimo-v2-6-pro-mopd-mxfp4-gguf",
+  "author": "kernelpool",
+  "url": "https://huggingface.co/kernelpool/MiMo-V2.6-Pro-MOPD-MXFP4-GGUF",
+  "created_at": "2026-09-28T02:39:16.000Z",
+  "updated_at": "2026-09-28T06:00:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mimo",
+    "metal",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 2768322432,
+  "parameters_human": "2.77B",
+  "storage_bytes": 560088098208,
+  "storage_human": "560.1 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

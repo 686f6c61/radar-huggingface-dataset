@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Skebobic/Bobic-1.5-Lean",
+  "slug": "skebobic-bobic-1-5-lean",
+  "author": "Skebobic",
+  "url": "https://huggingface.co/Skebobic/Bobic-1.5-Lean",
+  "created_at": "2026-09-28T16:05:29.000Z",
+  "updated_at": "2026-09-28T16:27:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "slm",
+    "text-generation",
+    "transformer",
+    "pytorch",
+    "en",
+    "ru",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60840970,
+  "parameters_human": "60.8M",
+  "storage_bytes": 308359464,
+  "storage_human": "308 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU-Pro",
+      "metric": "Accuracy",
+      "value": 19.83
+    }
+  ],
+  "sources": []
+}

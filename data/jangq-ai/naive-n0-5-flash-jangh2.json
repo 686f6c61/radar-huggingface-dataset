@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "JANGQ-AI/Naive-N0.5-Flash-JANGH2",
+  "slug": "jangq-ai-naive-n0-5-flash-jangh2",
+  "author": "JANGQ-AI",
+  "url": "https://huggingface.co/JANGQ-AI/Naive-N0.5-Flash-JANGH2",
+  "created_at": "2026-09-28T17:53:24.000Z",
+  "updated_at": "2026-09-28T18:06:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "naive_n05_flash",
+    "jang",
+    "jangh",
+    "quantized",
+    "apple-silicon",
+    "moe",
+    "code",
+    "long-context",
+    "reasoning",
+    "thinking",
+    "agent",
+    "tool-use",
+    "gptq",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:NaiveAI/Naive-N0.5-Flash",
+    "base_model:quantized:NaiveAI/Naive-N0.5-Flash",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30187934144,
+  "parameters_human": "30.19B",
+  "storage_bytes": 102961518696,
+  "storage_human": "103.0 GB",
+  "base_model": "NaiveAI/Naive-N0.5-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NaiveAI/Naive-N0.5-Flash · Hugging Face",
+      "url": "https://huggingface.co/NaiveAI/Naive-N0.5-Flash",
+      "snippet": "This process adapted the model to its new sparse attention architecture while substantially improving its AI R&D and coding capabilities. See the technical blog for training details. Evaluation Results Figure 2. Coding and agentic task results. Naive-N0.5-Flash is highlighted in yellow. Figure 3. AI research and systems optimization results."
+    },
+    {
+      "title": "NaiveAI-Labs / Naive-N0.5-Flash Public - GitHub",
+      "url": "https://github.com/NaiveAI-Labs/Naive-N0.5-Flash",
+      "snippet": "Introduction Naive-N0.5-Flash is an open-weight 309B MoE model with 15.5B active parameters, built for coding and AI R&D. It supports a native 1M-token context window through a hybrid of Sliding-Window Attention (SWA) and lightweight DeepSeek Sparse Attention (DSA), with no full-attention layers."
+    },
+    {
+      "title": "NaiveAI",
+      "url": "https://naive.ai/en/",
+      "snippet": "Our first model: Naive-N0.5-Flash AI 4 AI AI at the core of building the next generation of models."
+    },
+    {
+      "title": "NaiveAI releases a 309B model built with AI-assisted research",
+      "url": "https://runtimewire.com/article/naiveai-naive-n05-flash-ai-model-development",
+      "snippet": "NaiveAI&#x27;s 309B open-weight model targets coding and AI research, with a 1M-token context and a company-built inference runtime."
+    },
+    {
+      "title": "JANGQ — Smaller Models, Bigger MLX Wins",
+      "url": "https://jangq.ai/",
+      "snippet": "Curated JANGQ benchmarks showing only decisive wins where JANG is smaller than the MLX baseline: MiniMax +47.5 MMLU points, Qwen3.5-122B +33 points, and coherent smaller-bit runs on Mistral, Qwen2.5, SmolLM2, and TinyLlama."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "INCModel4/gemma-4-26B-A4B-MXFP8-FP8KV-CT-RTN-AutoRound",
+  "slug": "incmodel4-gemma-4-26b-a4b-mxfp8-fp8kv-ct-rtn-autoround",
+  "author": "INCModel4",
+  "url": "https://huggingface.co/INCModel4/gemma-4-26B-A4B-MXFP8-FP8KV-CT-RTN-AutoRound",
+  "created_at": "2026-09-28T03:23:35.000Z",
+  "updated_at": "2026-09-28T04:02:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "quantized",
+    "mxfp8",
+    "compressed-tensors",
+    "auto-round",
+    "vllm",
+    "fp8-kv-cache",
+    "text-generation",
+    "base_model:google/gemma-4-26B-A4B",
+    "base_model:quantized:google/gemma-4-26B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 25805936320,
+  "parameters_human": "25.81B",
+  "storage_bytes": 28447583730,
+  "storage_human": "28.4 GB",
+  "base_model": "google/gemma-4-26B-A4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "INCModel4/gemma-4-26B-A4B-MXFP8-FP8KV-CT-RTN-AutoRound · Hugging Face",
+      "url": "https://huggingface.co/INCModel4/gemma-4-26B-A4B-MXFP8-FP8KV-CT-RTN-AutoRound",
+      "snippet": "This checkpoint is an AutoRound model-free MXFP8 RTN quantization of google/gemma-4-26B-A4B, exported in llm_compressor / compressed-tensors format. Routed experts and the self-attention projections present in the source are stored as F8_E4M3; ..."
+    },
+    {
+      "title": "INCModel4/gemma-4-31B-MXFP8-FP8KV-CT-AutoRound · Hugging Face",
+      "url": "https://huggingface.co/INCModel4/gemma-4-31B-MXFP8-FP8KV-CT-AutoRound",
+      "snippet": "This repository contains a measured MXFP8 compressed-tensors checkpoint of Google's dense Gemma 4 31B model. The transformer Linear weights use 8-bit microscaling with group size 32; the export also includes calibrated static FP8 KV-cache scales."
+    },
+    {
+      "title": "protoLabsAI/gemma-4-26B-A4B-it-FP8 · Hugging Face",
+      "url": "https://huggingface.co/protoLabsAI/gemma-4-26B-A4B-it-FP8",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Intel/gemma-4-26B-A4B-it-int4-mixed-AutoRound · Hugging Face",
+      "url": "https://huggingface.co/Intel/gemma-4-26B-A4B-it-int4-mixed-AutoRound",
+      "snippet": "The model is quantized with pure RTN mode."
+    },
+    {
+      "title": "google/gemma-4-26b-a4b • LM Studio",
+      "url": "https://lmstudio.ai/models/google/gemma-4-26b-a4b",
+      "snippet": "Gemma 4 is the latest on-device model family from Google. This is the 26B (active 4B) MoE version. Supports vision and reasoning."
+    }
+  ]
+}

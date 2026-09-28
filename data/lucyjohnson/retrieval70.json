@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lucyjohnson/retrieval70",
+  "slug": "lucyjohnson-retrieval70",
+  "author": "lucyjohnson",
+  "url": "https://huggingface.co/lucyjohnson/retrieval70",
+  "created_at": "2026-09-28T02:36:45.000Z",
+  "updated_at": "2026-09-28T02:36:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MissAV | Watch HD JAV Online | Free & High Quality AV",
+      "url": "https://missav.ws/en/genres?page=3",
+      "snippet": "Best Japan AV porn site, free forever, high speed, no lag, over 100,000 videos, daily update, no ads while playing video."
+    },
+    {
+      "title": "Missav Videos, Watch Missav in HD - MissAV | Watch HD J",
+      "url": "https://missav.live/dm1/en/site/missav?sort=published_at&filters=english-subtitle&page=1",
+      "snippet": "Best Japan AV porn site, free forever, high speed, no lag, over 100,000 videos, daily update, no ads while playing video."
+    },
+    {
+      "title": "MissAV | Watch HD JAV Online | Free & High Quality AV",
+      "url": "https://missavtv.com/en/genres",
+      "snippet": "MissAV | Watch HD JAV Online | Free & High Quality AV - Best Japan AV porn site, free forever, high speed, no lag, over 100,000 …"
+    },
+    {
+      "title": "Uncensored Videos, Watch Uncensored in HD - MissAV | Wa",
+      "url": "https://missav.live/en/site/uncensored",
+      "snippet": "Best Japan AV porn site, free forever, high speed, no lag, over 100,000 videos, daily update, no ads while playing video."
+    },
+    {
+      "title": "Regarder HD JAV en ligne | AV gratuit et de haute qualité - missav.ws",
+      "url": "https://missav.ws/fr/makers",
+      "snippet": "Meilleur site porno japonais AV, gratuit pour toujours, haute vitesse, pas de décalage, plus de 100 000 vidéos, mise à jour …"
+    }
+  ]
+}

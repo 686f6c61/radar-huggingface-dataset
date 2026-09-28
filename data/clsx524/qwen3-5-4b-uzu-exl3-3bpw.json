@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "clsx524/Qwen3.5-4B-uzu-EXL3-3bpw",
+  "slug": "clsx524-qwen3-5-4b-uzu-exl3-3bpw",
+  "author": "clsx524",
+  "url": "https://huggingface.co/clsx524/Qwen3.5-4B-uzu-EXL3-3bpw",
+  "created_at": "2026-09-28T16:27:59.000Z",
+  "updated_at": "2026-09-28T16:35:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "uzu",
+    "exl3",
+    "on-device",
+    "apple-silicon",
+    "speculative-decoding",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 688682496,
+  "parameters_human": "688.7M",
+  "storage_bytes": 2100504839,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "abr00kx/4chan-rss-bridge",
+  "slug": "abr00kx-4chan-rss-bridge",
+  "author": "abr00kx",
+  "url": "https://huggingface.co/abr00kx/4chan-rss-bridge",
+  "created_at": "2026-09-28T17:53:43.000Z",
+  "updated_at": "2026-09-28T17:54:50.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "rss",
+    "atom",
+    "4chan",
+    "feed",
+    "golang",
+    "self-hosted",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "4chan",
+      "url": "https://www.4chan.org/",
+      "snippet": "4chan is a simple image-based bulletin board where anyone can post comments and share images anonymously. What is 4chan? Boards. filter ▼."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to."
+    },
+    {
+      "title": "Bridge request for 4chan with a filter for number of replies ... - GitHub",
+      "url": "https://github.com/RSS-Bridge/rss-bridge/issues/3367",
+      "snippet": "Bridge request for 4chan There is a feed for a specific 4chan thread but nothing for 4chan threads in general. Some of their boards like /g (technology) has very useful guides and news discussions ..."
+    },
+    {
+      "title": "GPT-4Chan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GPT-4chan",
+      "snippet": "Generative Pre-trained Transformer 4Chan (GPT-4chan) is an AI model that was developed and deployed by YouTuber and AI researcher Yannic Kilcher in June 2022. The model is a large language model, which means it can generate text based on some input, by fine-tuning GPT-J with a dataset of millions of posts from the /pol/ board of 4chan, an anonymous online forum known for occasionally hosting ..."
+    },
+    {
+      "title": "&#x27;Semantic Chaining&#x27; Jailbreak Dupes Gemini Nano Banana, Grok 4",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/semantic-chaining-jailbreak-gemini-nano-banana-grok-4",
+      "snippet": "An attacker introduces an AI model to a new prompt, then develops it, twists it, and renders the output. The first instruction in a semantic chain has to establish some degree of trust by ..."
+    }
+  ]
+}

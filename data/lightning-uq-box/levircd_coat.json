@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lightning-uq-box/levircd_coat",
+  "slug": "lightning-uq-box-levircd_coat",
+  "author": "lightning-uq-box",
+  "url": "https://huggingface.co/lightning-uq-box/levircd_coat",
+  "created_at": "2026-09-28T14:36:33.000Z",
+  "updated_at": "2026-09-28T14:41:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "lightning-uq-box",
+  "languages": [],
+  "tags": [
+    "lightning-uq-box",
+    "change-detection",
+    "conformal-prediction",
+    "remote-sensing",
+    "dataset:satellite-image-deep-learning/LEVIR-CD",
+    "arxiv:2208.02814",
+    "arxiv:2107.09244",
+    "arxiv:2508.10104",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 535396852,
+  "storage_human": "535 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Real Time Lightning Map :: LightningMaps.org",
+      "url": "https://www.lightningmaps.org/",
+      "snippet": "See lightning strikes in real time across the planet. Free access to maps of former thunderstorms. By Blitzortung.org and contributors."
+    },
+    {
+      "title": "Lightning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lightning",
+      "snippet": "Lightning influences the global atmospheric electrical circuit and atmospheric chemistry and is a natural ignition source of wildfires. …"
+    },
+    {
+      "title": "Blitzortung.org - Live Lightning Map",
+      "url": "https://map.blitzortung.org/",
+      "snippet": "See lightning strikes in realtime nearby your area. Get free online access to maps of former and current thunderstorms. A …"
+    },
+    {
+      "title": "Lightning (connecteur) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lightning_(connecteur)",
+      "snippet": "Lightning est un connecteur à huit broches produit par Apple entre 2012 et 2025. Il remplace sur tous les nouveaux produits le …"
+    },
+    {
+      "title": "Project Lightning",
+      "url": "https://project-lightning-web.vercel.app/",
+      "snippet": "Your new way to play awaits you. Download Project Lightning V5 and take control of your library today."
+    }
+  ]
+}

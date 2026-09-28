@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "davidheineman/opd-teacher-Q2.5I-CantorExpansion-step149",
+  "slug": "davidheineman-opd-teacher-q2-5i-cantorexpansion-step149",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/opd-teacher-Q2.5I-CantorExpansion-step149",
+  "created_at": "2026-09-28T17:21:56.000Z",
+  "updated_at": "2026-09-28T17:22:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "rlve",
+    "grpo",
+    "opd-teacher",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087467120,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RLVE OPD Teachers - a davidheineman Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/davidheineman/rlve-opd-teachers",
+      "snippet": "Qwen 2.5 1.5B Instruct trained for 150 steps on a single env from https://arxiv.org/abs/2511.07317 (32 of 400 envs)"
+    },
+    {
+      "title": "-OPD/teacher_model at main · ilovecplusplus230/-OPD · GitHub",
+      "url": "https://github.com/ilovecplusplus230/-OPD/tree/main/teacher_model",
+      "snippet": "Uniquely support of seamless switching between thinking mode (for complex logical reasoning, math, and coding) and non-thinking mode (for efficient, general-purpose dialogue) within single model, ensuring optimal performance across various scenarios. Significantly enhancement in its reasoning capabilities, surpassing previous QwQ (in thinking mode) and Qwen2.5 instruct models (in non-thinking ..."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Rethinking On-Policy Distillation of Large Language Models ...",
+      "url": "https://arxiv.org/abs/2604.13016",
+      "snippet": "On-policy distillation (OPD) has become a core technique in the post-training of large language models, yet its training dynamics remain poorly understood. This paper provides a systematic investigation of OPD dynamics and mechanisms. We first identify that two conditions govern whether OPD succeeds or fails: (i) the student and teacher should share compatible thinking patterns; and (ii) even ..."
+    },
+    {
+      "title": "GitHub - naver-ai/opd2: Official implementation of On-Policy Delta ...",
+      "url": "https://github.com/naver-ai/opd2",
+      "snippet": "On-policy distillation is an alternative post-training method that provides token-level supervision from a teacher model. In this work, we introduce the delta signal, defined as the difference between a reasoning-tuned teacher and its base model before reasoning tuning. This signal captures the changes induced by reasoning tuning and provides a more direct objective for transferring reasoning ..."
+    }
+  ]
+}

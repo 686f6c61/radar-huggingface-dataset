@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "davidheineman/opd-teacher-Q2.5I-Cornfield-step149",
+  "slug": "davidheineman-opd-teacher-q2-5i-cornfield-step149",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/opd-teacher-Q2.5I-Cornfield-step149",
+  "created_at": "2026-09-28T17:16:25.000Z",
+  "updated_at": "2026-09-28T17:17:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "rlve",
+    "grpo",
+    "opd-teacher",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087467120,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "davidheineman/opd-teacher-Q2.5I-Cornfield-step149 · Hugging Face",
+      "url": "https://huggingface.co/davidheineman/opd-teacher-Q2.5I-Cornfield-step149",
+      "snippet": "This is a Qwen2.5-1.5B-Instruct teacher trained with RLVE on the Cornfield environment at difficulty 0. It is intended for the 32-environment on-policy distillation experiment. The model was trained for 150 updates with GRPO. step149 is the ..."
+    },
+    {
+      "title": "davidheineman/opd-teacher-Q2.5I-CRT-step149 · Hugging Face",
+      "url": "https://huggingface.co/davidheineman/opd-teacher-Q2.5I-CRT-step149",
+      "snippet": "The model was trained for 150 updates with GRPO. step149 is the final, zero-based checkpoint index (the 150th update)."
+    },
+    {
+      "title": "davidheineman/opd-teacher-Q2.5I-Integral-step149 · Hugging Face",
+      "url": "https://huggingface.co/davidheineman/opd-teacher-Q2.5I-Integral-step149",
+      "snippet": "The model was trained for 150 updates with GRPO. step149 is the final, zero-based checkpoint index (the 150th update)."
+    },
+    {
+      "title": "davidheineman/opd-teacher-Q2.5I-Circuit-step149 · Hugging Face",
+      "url": "https://huggingface.co/davidheineman/opd-teacher-Q2.5I-Circuit-step149",
+      "snippet": "The model was trained for 150 updates with GRPO. step149 is the final, zero-based checkpoint index (the 150th update)."
+    },
+    {
+      "title": "davidheineman/opd-teacher-Q2.5I-Differentiate-step149 · Hugging Face",
+      "url": "https://huggingface.co/davidheineman/opd-teacher-Q2.5I-Differentiate-step149",
+      "snippet": "The model was trained for 150 updates with GRPO. step149 is the final, zero-based checkpoint index (the 150th update)."
+    }
+  ]
+}

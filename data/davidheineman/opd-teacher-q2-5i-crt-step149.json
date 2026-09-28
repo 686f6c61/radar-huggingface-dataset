@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "davidheineman/opd-teacher-Q2.5I-CRT-step149",
+  "slug": "davidheineman-opd-teacher-q2-5i-crt-step149",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/opd-teacher-Q2.5I-CRT-step149",
+  "created_at": "2026-09-28T17:22:59.000Z",
+  "updated_at": "2026-09-28T17:24:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "rlve",
+    "grpo",
+    "opd-teacher",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087467120,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RLVE OPD Teachers - a davidheineman Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/davidheineman/rlve-opd-teachers",
+      "snippet": "Qwen 2.5 1.5B Instruct trained for 150 steps on a single env from https://arxiv.org/abs/2511.07317 (32 of 400 envs)"
+    },
+    {
+      "title": "PDF Artificial 2 Intelligence 0 2 Index Report 6 - hai.stanford.edu",
+      "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026.pdf",
+      "snippet": "Introduction Welcome to the ninth edition of the AI Index report. As AI continues to advance rapidly, the question becomes whether the systems built around it can keep up. Governance frameworks, evaluation methods, education systems, and the data infrastructure needed to track AI&#x27;s impact are struggling to match the pace of the technology itself. That gap—between what AI can do and how ..."
+    },
+    {
+      "title": "davidheineman (David Heineman) - Hugging Face",
+      "url": "https://huggingface.co/davidheineman",
+      "snippet": "User profile of David Heineman on Hugging Face"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "PDF Extended Abstract - cs224r.stanford.edu",
+      "url": "http://cs224r.stanford.edu/spring_2025/projects/pdfs/CS224R_Final_Report%20(8)1.pdf",
+      "snippet": "Extended Abstract Motivation Instruction-following language models have become central to human-AI interac-tion, yet reliably aligning their outputs with user intent—especially for complex, long-form prompts—remains a challenge. These models often suffer from poor generalization across inputs of varying length and complexity, and further training is limited by the high cost of diverse ..."
+    }
+  ]
+}

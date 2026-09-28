@@ -5,7 +5,7 @@
   "author": "EllaPriest45",
   "url": "https://huggingface.co/EllaPriest45/Krea2_actions",
   "created_at": "2026-06-24T06:59:18.000Z",
-  "updated_at": "2026-09-23T11:32:19.000Z",
+  "updated_at": "2026-09-27T14:34:58.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -15,13 +15,13 @@
     "safetensors",
     "region:us"
   ],
-  "likes": 44,
+  "likes": 45,
   "downloads_30d": 0,
   "trending_score": 8,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 231562666833,
-  "storage_human": "231.6 GB",
+  "storage_bytes": 236738620041,
+  "storage_human": "236.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

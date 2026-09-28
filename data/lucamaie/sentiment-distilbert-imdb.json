@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "lucamaie/sentiment-distilbert-imdb",
+  "slug": "lucamaie-sentiment-distilbert-imdb",
+  "author": "lucamaie",
+  "url": "https://huggingface.co/lucamaie/sentiment-distilbert-imdb",
+  "created_at": "2026-09-28T14:17:14.000Z",
+  "updated_at": "2026-09-28T14:21:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "en",
+    "dataset:imdb",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837825,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

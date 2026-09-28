@@ -5,7 +5,7 @@
   "author": "simpledirect",
   "url": "https://huggingface.co/simpledirect/Vinci-Prova-7B-1.0-GGUF",
   "created_at": "2026-08-10T18:16:13.000Z",
-  "updated_at": "2026-09-21T19:28:52.000Z",
+  "updated_at": "2026-09-28T03:30:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 217,
+  "downloads_30d": 220,
   "trending_score": 0,
   "parameters": 7248023552,
   "parameters_human": "7.25B",

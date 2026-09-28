@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "SpaceTimee/Suri-Qwen-3.8-27B-Uncensored",
+  "slug": "spacetimee-suri-qwen-3-8-27b-uncensored",
+  "author": "SpaceTimee",
+  "url": "https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored",
+  "created_at": "2026-09-23T15:08:46.000Z",
+  "updated_at": "2026-09-27T12:55:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "suri",
+    "qwen",
+    "27B",
+    "uncensored",
+    "unaligned",
+    "text-generation-inference",
+    "qwen3.8",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 161,
+  "trending_score": 11,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54754122282,
+  "storage_human": "54.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B, unsloth/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hearts Card Classic | Play online in your browser for free!",
+      "url": "http://heartscardclassic.com/",
+      "snippet": "Play hearts online with this website. This is the best free hearts game online. The site is built with HTML CSS and Javascript"
+    }
+  ]
+}

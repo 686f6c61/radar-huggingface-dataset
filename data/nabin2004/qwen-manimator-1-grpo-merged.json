@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "nabin2004/qwen-Manimator-1-grpo-merged",
+  "slug": "nabin2004-qwen-manimator-1-grpo-merged",
+  "author": "nabin2004",
+  "url": "https://huggingface.co/nabin2004/qwen-Manimator-1-grpo-merged",
+  "created_at": "2026-09-28T17:59:17.000Z",
+  "updated_at": "2026-09-28T18:00:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "manim",
+    "manimce",
+    "manim-voiceover",
+    "aos",
+    "grpo",
+    "code-generation",
+    "math",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939026,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nabin2004/qwen-Manimator-1-grpo-merged · Hugging Face",
+      "url": "https://huggingface.co/nabin2004/qwen-Manimator-1-grpo-merged",
+      "snippet": "nabin2004/qwen-Manimator-1-grpo-merged Full-weight merged release (bfloat16/float16 Safetensors) of qwen-Manimator-1-grpo-clean, fine-tuned from Qwen/Qwen3-8B for Manim Community Edition (ManimCE) animation generation."
+    },
+    {
+      "title": "Qwen Manimator 1 Grpo - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/nabin2004/qwen-manimator-1-grpo",
+      "snippet": "Registry entry for model Qwen Manimator 1 Grpo; source metadata pending."
+    },
+    {
+      "title": "Qwen Manimator 1 Merged by nabin2004 — VRAM 16.4GB, 40K context | LLM ...",
+      "url": "https://llm-explorer.com/model/nabin2004%2Fqwen-Manimator-1-merged,2z3o1G4Bmr1Q4i10Km4LET",
+      "snippet": "Qwen Manimator 1 Merged is an open-source 8b LLM by nabin2004. VRAM 16.4GB, 40K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "qwen-Manimator-1-grpo-clean API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/nabin2004/qwen-Manimator-1-grpo-clean",
+      "snippet": "Run qwen-Manimator-1-grpo-clean with FriendliAI inference. This is the clean, deploy-ready release of nabin2004/qwen-Manimator-1-grpo."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    }
+  ]
+}

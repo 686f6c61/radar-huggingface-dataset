@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EndlessChasing/Mamba2_3GB_ReCall_Recovered",
+  "slug": "endlesschasing-mamba2_3gb_recall_recovered",
+  "author": "EndlessChasing",
+  "url": "https://huggingface.co/EndlessChasing/Mamba2_3GB_ReCall_Recovered",
+  "created_at": "2026-09-28T19:13:00.000Z",
+  "updated_at": "2026-09-28T19:13:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Condylar resorption - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Condylar_resorption",
+      "snippet": "Condylar resorption, also called idiopathic condylar resorption, ICR, and condylysis, is a temporomandibular joint disorder in which …"
+    },
+    {
+      "title": "Condylar Resorption: Definition, Treatment & Symptoms",
+      "url": "https://my.clevelandclinic.org/health/diseases/22807-condylar-resorption",
+      "snippet": "Condylar resorption is the breakdown and loss of bone in your jaw joint. It causes jaw problems and changes to facial appearance. …"
+    },
+    {
+      "title": "Mandibular condyle - e-Anatomy - IMAIOS",
+      "url": "https://www.imaios.com/en/e-anatomy/anatomical-structures/mandibular-condyle-1536898828",
+      "snippet": "The mandibular condyle (or the head of mandible) is the upper part of the condylar process of mandible. It is crucial for the jaw's …"
+    },
+    {
+      "title": "Mandibular Condylar Resorption | Dr. Larry M. Wolford, DMD",
+      "url": "https://drlarrywolford.com/tmj-dysfunction/mandibular-condylar-resorption/",
+      "snippet": "Mandibular condylar resorption is the breakdown and loss of bone in part of your temporomandibular joints (TMJs), or jaw joints. This …"
+    },
+    {
+      "title": "Condylar Resorption – Symptoms, Surgery Cost, Before and After, X …",
+      "url": "https://dentalfreak.com/condylar-resorption/",
+      "snippet": "Jul 11, 2023 · The condyle is the rounded projection at the end of the jaw bone that fits into the socket in the skull and is essential for …"
+    }
+  ]
+}

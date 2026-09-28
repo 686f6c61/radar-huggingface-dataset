@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "jeffpeng3/Ornith-1.5-35B-A3B-heretic-ja-NVFP4",
+  "slug": "jeffpeng3-ornith-1-5-35b-a3b-heretic-ja-nvfp4",
+  "author": "jeffpeng3",
+  "url": "https://huggingface.co/jeffpeng3/Ornith-1.5-35B-A3B-heretic-ja-NVFP4",
+  "created_at": "2026-09-28T18:04:51.000Z",
+  "updated_at": "2026-09-28T18:06:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara-lora",
+    "nvfp4",
+    "modelopt",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19528501104,
+  "parameters_human": "19.53B",
+  "storage_bytes": 23440406956,
+  "storage_human": "23.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jeffpeng3/Ornith-1.5-35B-A3B-heretic-ja-NVFP4 · Discussions",
+      "url": "https://huggingface.co/jeffpeng3/Ornith-1.5-35B-A3B-heretic-ja-NVFP4/discussions",
+      "snippet": "Instructions to use jeffpeng3/Ornith-1.5-35B-A3B-heretic-ja-NVFP4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "README.md · ornith-ai/Ornith-1.5-35B-A3B-NVFP4 at main",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-NVFP4/blob/main/README.md",
+      "snippet": "Ornith 1.5 35B-A3B This model card documents Ornith-1.5-35B-A3B, the mid-size mixture-of-experts member of the Ornith-1.5 family. It activates only ~3B parameters per token, yet significantly outperforms its similar-sized peer Qwen 3.6-35B across all coding and agentic benchmarks, and outperforms dense models such as Gemma 4-31B and Muse Glimmer-30B by wide margins on agentic coding."
+    },
+    {
+      "title": "Ornith 1.5 35B A3B NVFP4 by ornith-ai - LLM Explorer",
+      "url": "https://llm-explorer.com/model/ornith-ai%2FOrnith-1.5-35B-A3B-NVFP4,7n1txA06r5AvDsvyAxdpor",
+      "snippet": "Ornith 1.5 35B A3B NVFP4 is an open-source 35b LLM by ornith-ai. VRAM 23.4GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B-NVFP4-DGX-Spark/README.md at main - GitHub",
+      "url": "https://github.com/sojufx/Ornith-1.5-35B-A3B-NVFP4-DGX-Spark/blob/main/README.md",
+      "snippet": "Ornith 1.5 35B A3B NVFP4 on 1x DGX Spark A native vLLM recipe for running ornith-ai/Ornith-1.5-35B-A3B-NVFP4 on a single NVIDIA DGX Spark / GB10 with 262K context, FP8 KV cache, tool calling, reasoning output, and strong multi-user throughput."
+    },
+    {
+      "title": "Ornith 1.5 35B A3B NVFP4 on 1x DGX Spark - GitHub",
+      "url": "https://github.com/sojufx/Ornith-1.5-35B-A3B-NVFP4-DGX-Spark",
+      "snippet": "Ornith 1.5 is a Qwen3.5-MoE based model that is built for agentic coding, tool use, and long-horizon work. The NVFP4 checkpoint is small enough to run on one 128GB unified-memory DGX Spark, but still behaves like a serious 35B-class MoE model."
+    }
+  ]
+}

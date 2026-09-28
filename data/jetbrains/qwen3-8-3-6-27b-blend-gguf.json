@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "JetBrains/Qwen3.8-3.6-27B-blend-GGUF",
+  "slug": "jetbrains-qwen3-8-3-6-27b-blend-gguf",
+  "author": "JetBrains",
+  "url": "https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend-GGUF",
+  "created_at": "2026-09-15T10:51:06.000Z",
+  "updated_at": "2026-09-21T12:54:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_5",
+    "quantized",
+    "speculative-decoding",
+    "image-text-to-text",
+    "base_model:JetBrains/Qwen3.8-3.6-27B-blend",
+    "base_model:quantized:JetBrains/Qwen3.8-3.6-27B-blend",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 19,
+  "downloads_30d": 2421,
+  "trending_score": 13,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 49880171136,
+  "storage_human": "49.9 GB",
+  "base_model": "JetBrains/Qwen3.8-3.6-27B-blend",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JetBrains: Essential tools for software developers and teams",
+      "url": "https://www.jetbrains.com/",
+      "snippet": "JetBrains is a cutting-edge software vendor specializing in the creation of intelligent development tools, including IntelliJ IDEA – the …"
+    },
+    {
+      "title": "JetBrains : Des outils essentiels pour les équipes et les développeurs ...",
+      "url": "https://www.jetbrains.com/fr-fr/",
+      "snippet": "JetBrains est un éditeur de logiciels innovant, spécialisé dans la création d'outils de développement intelligents, tels qu'IntelliJ IDEA, …"
+    },
+    {
+      "title": "JetBrains - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/JetBrains",
+      "snippet": "JetBrains AI Assistant is offered in most JetBrains IDEs as a set of AI-assisted software development tools. The assistant uses …"
+    },
+    {
+      "title": "JetBrains Account",
+      "url": "https://account.jetbrains.com/login",
+      "snippet": "JetBrains Account provides easy access to your JetBrains products and makes upgrades and migration to new hardware smooth."
+    },
+    {
+      "title": "JetBrains — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/JetBrains",
+      "snippet": "Historique La société est née de l'association de Sergey Dmitriev, Eugeny Belyaev et Valentin Kipiatkov en février 20006. En 2012, …"
+    }
+  ]
+}

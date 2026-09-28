@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dusersad12/QuantumLLM-ReleaseRepo",
+  "slug": "dusersad12-quantumllm-releaserepo",
+  "author": "dusersad12",
+  "url": "https://huggingface.co/dusersad12/QuantumLLM-ReleaseRepo",
+  "created_at": "2026-09-28T17:57:22.000Z",
+  "updated_at": "2026-09-28T17:57:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "gpt2",
+    "feature-extraction",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dusersad12/LuminaLM-ReleaseRepo · Hugging Face",
+      "url": "https://huggingface.co/dusersad12/LuminaLM-ReleaseRepo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dusersad12/NimbusLM-ReleaseRepo · Hugging Face",
+      "url": "https://huggingface.co/dusersad12/NimbusLM-ReleaseRepo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Releases — the model release tracker",
+      "url": "https://www.llm-releases.com/",
+      "snippet": "An independent, sourced record of LLM releases, updates, and retirements."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "GitHub - ketayon/QUANTUM_LLM: Hybrid Quantum-Classical LLM NLP Model ...",
+      "url": "https://github.com/ketayon/QUANTUM_LLM",
+      "snippet": "🔬 Quantum-Enhanced Transformer Classification with LLM Science Dataset This project explores various model strategies for classifying science multiple-choice questions using a high-quality dataset. It combines classical NLP methods (BERT) with quantum machine learning (QML) techniques to study their comparative performance."
+    }
+  ]
+}

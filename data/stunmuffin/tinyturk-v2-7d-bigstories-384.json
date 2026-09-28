@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "stunmuffin/TinyTurk-v2.7d-bigstories-384",
+  "slug": "stunmuffin-tinyturk-v2-7d-bigstories-384",
+  "author": "stunmuffin",
+  "url": "https://huggingface.co/stunmuffin/TinyTurk-v2.7d-bigstories-384",
+  "created_at": "2026-09-28T17:44:03.000Z",
+  "updated_at": "2026-09-28T17:44:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "pytorch",
+    "tinyturk",
+    "turkish",
+    "tiny-language-model",
+    "gpt",
+    "rope",
+    "rmsnorm",
+    "causal-lm",
+    "tinystories",
+    "long-context",
+    "from-scratch",
+    "text-generation",
+    "tr",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4518119,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stunmuffin/TinyTurk-v2.7d-bigstories · Hugging Face",
+      "url": "https://huggingface.co/stunmuffin/TinyTurk-v2.7d-bigstories",
+      "snippet": "TinyTurk v2.7d BigStories is a 1.12M-parameter Turkish causal language model, trained from scratch on a 49,000-story subset of the Turkish TinyStories dataset. It produces fluent, grammatically correct Turkish sentences but does not maintain long-range narrative coherence due to the 128-token context window."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Tiny Models - a Falln87 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Falln87/tiny-models",
+      "snippet": "Collection of small models suitable for on-device Inference."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    }
+  ]
+}

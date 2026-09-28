@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "flymy-ai/decision-4b-v1.3",
+  "slug": "flymy-ai-decision-4b-v1-3",
+  "author": "flymy-ai",
+  "url": "https://huggingface.co/flymy-ai/decision-4b-v1.3",
+  "created_at": "2026-09-28T19:31:09.000Z",
+  "updated_at": "2026-09-28T19:31:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "typed-decisions",
+    "calibration",
+    "jevbench",
+    "qwen3.5",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57549856,
+  "storage_human": "58 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FlyMy.AI - Hugging Face",
+      "url": "https://huggingface.co/flymy-ai",
+      "snippet": "models 12. Sort: Recently updated · flymy-ai/decision-4b-v1.2 · flymy-ai/decision-4b-v1.1 · flymy-ai/decision-fast-preview · flymy-ai/decision-2b-preview · flymy-ai/ ..."
+    },
+    {
+      "title": "Model catalog - ModelSystem.One — Decision Models",
+      "url": "https://modelsystem.one/models/",
+      "snippet": "FlyMy.AI (@denti). Decision 2B. Open. MiniCPM5-2B based decision model with ... One-pass softmax, Apache-2.0, #3 overall on JevBench v1.4.2. Latency: 9 ..."
+    },
+    {
+      "title": "Decision Fast — JevBench by Benchmark Heaven",
+      "url": "https://benchmarkheaven.com/jev-models/decision-fast",
+      "snippet": "Decision Fast (FlyMy.AI, v53a) ... This detail uses the public, hash-checked v1.4.1 aggregate. Scores and ranks can change when a new release is published; the ..."
+    },
+    {
+      "title": "Models - Jev Router",
+      "url": "https://jev-router.com/models-page",
+      "snippet": "Claims a public /v1/systemone API but no URL was published. Unreachable. Provider ↗. Decision 4B v1.2 / v1.1 (FlyMy.AI) FlyMy.AI, not benchmarked, Open ..."
+    },
+    {
+      "title": "How to Outperform PyTorch Kernels with OpenAI's Triton Compiler",
+      "url": "https://medium.com/flymy-ai/how-to-outperform-pytorch-kernels-with-openais-triton-compiler-ba2babce8cc5",
+      "snippet": "12.11.2024 ... 10 min read. ·. Nov 13, 2024. --. Listen. Share. By FlyMy.AI team: Mateus, Denis| 01/11/2024. At FlyMy.AI, we're building the fastest Compound ..."
+    }
+  ]
+}

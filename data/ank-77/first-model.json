@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Ank-77/first-model",
+  "slug": "ank-77-first-model",
+  "author": "Ank-77",
+  "url": "https://huggingface.co/Ank-77/first-model",
+  "created_at": "2026-09-28T17:23:02.000Z",
+  "updated_at": "2026-09-28T17:40:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anki - powerful, intelligent flashcards",
+      "url": "https://apps.ankiweb.net/",
+      "snippet": "Anki is a flashcard program that helps you spend more time on challenging material, and less on what you already know."
+    },
+    {
+      "title": "Atelier Nautique de Kerollaire – Le spécialiste du bateau semi-rigide ...",
+      "url": "https://www.atelier-nautique-kerollaire.com/",
+      "snippet": "ANK vous propose la vente de bateaux neufs (3D TENDER, Cap Capelli, Ocqueteau) et d'occasion, l'entretien de moteurs hors bord …"
+    },
+    {
+      "title": "ANK Le Crouesty | Arzon - Facebook",
+      "url": "https://www.facebook.com/anklecrouesty/",
+      "snippet": "Apr 28, 2026 · Comme un petit air de fin d’année Informations date de fermeture pour les fêtes : ANK Sarzeau et ANK Le Crouesty …"
+    },
+    {
+      "title": "Ankh - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ankh",
+      "snippet": "The ankh has a T-shape topped by a droplet -shaped loop. The ankh or key of life is an ancient Egyptian hieroglyphic symbol used to …"
+    },
+    {
+      "title": "ANK — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/ANK",
+      "snippet": "ANK peut faire référence à : Ankara (Esenboga) en Turquie, selon la liste des codes AITA des aéroports ; Air Nippon, selon la liste …"
+    }
+  ]
+}

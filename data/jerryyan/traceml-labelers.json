@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "jerryyan/TraceML-Labelers",
+  "slug": "jerryyan-traceml-labelers",
+  "author": "jerryyan",
+  "url": "https://huggingface.co/jerryyan/TraceML-Labelers",
+  "created_at": "2026-09-28T02:59:53.000Z",
+  "updated_at": "2026-09-28T04:25:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "code"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "traceml",
+    "ml-agents",
+    "trajectory-analysis",
+    "kaggle",
+    "text-generation",
+    "en",
+    "code",
+    "dataset:jerryyan/TraceML",
+    "arxiv:2608.26086",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6893793870,
+  "storage_human": "6.9 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

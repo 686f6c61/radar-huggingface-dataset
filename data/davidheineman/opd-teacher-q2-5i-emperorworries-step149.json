@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "davidheineman/opd-teacher-Q2.5I-EmperorWorries-step149",
+  "slug": "davidheineman-opd-teacher-q2-5i-emperorworries-step149",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/opd-teacher-Q2.5I-EmperorWorries-step149",
+  "created_at": "2026-09-28T17:24:06.000Z",
+  "updated_at": "2026-09-28T17:25:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "rlve",
+    "grpo",
+    "opd-teacher",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087467120,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RLVE OPD Teachers - a davidheineman Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/davidheineman/rlve-opd-teachers",
+      "snippet": "Qwen 2.5 1.5B Instruct trained for 150 steps on a single env from https://arxiv.org/abs/2511.07317 (32 of 400 envs)"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "David Heineman",
+      "url": "https://davidheineman.com/",
+      "snippet": "I study foundation models with a focus on methods: how we make decisions about data [1], draw conclusions from experiments [2], and how model behavior changes at scale [3]. I&#x27;ve developed new and efficient tools for measuring model behavior [4, 5], and built receipes for fully-open language models [6, 7]. Recently, I&#x27;ve been thinking about how methods from pretraining can help us build vision ..."
+    },
+    {
+      "title": "‪David Heineman‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=JO2Q6CUAAAAJ&hl=en",
+      "snippet": "‪Stanford University‬ - ‪‪Cited by 1,923‬‬ - ‪natural language processing‬ - ‪machine learning‬ - ‪language models‬"
+    }
+  ]
+}

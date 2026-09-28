@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "muhammad-taqi512/SLORA-MAX",
+  "slug": "muhammad-taqi512-slora-max",
+  "author": "muhammad-taqi512",
+  "url": "https://huggingface.co/muhammad-taqi512/SLORA-MAX",
+  "created_at": "2026-09-28T16:21:32.000Z",
+  "updated_at": "2026-09-28T16:41:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-video",
+    "video-generation",
+    "minimax",
+    "iamge-to-video",
+    "max",
+    "slora",
+    "sloramax",
+    "minimax-h3",
+    "pytorch",
+    "slora-max",
+    "dataset:video",
+    "license:mit",
+    "diffusers:MiniMaxH3ModularPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33122992896,
+  "parameters_human": "33.12B",
+  "storage_bytes": 353917479700,
+  "storage_human": "353.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muhammad - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Muhammad",
+      "snippet": "Apart from Islam, Muhammad has received praise in Sikhism as an inspirational figure, in the Druze faith as one of the seven main …Read more"
+    },
+    {
+      "title": "Mahomet — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mahomet",
+      "snippet": "Pour K.H. Ohlig, le terme Muhammad est un prédicat christique syro-arabe avant d’être repris pour désigner un prophète sous les …Read more"
+    },
+    {
+      "title": "Qui est le Prophète Muhammad ﷺ — Découvrir l'Islam",
+      "url": "https://decouvrir-islam.org/prophete-muhammad/",
+      "snippet": "Le Prophète Muhammad ﷺ (paix et bénédictions sur lui) est le dernier messager envoyé par Allah pour guider l’humanité. Sa vie est …Read more"
+    },
+    {
+      "title": "Muhammad | Biography, History, & Facts | Britannica",
+      "url": "https://www.britannica.com/biography/Muhammad",
+      "snippet": "Sep 17, 2026 · Muhammad, the revered prophet of Islam, revolutionized Arabia by spreading a monotheistic faith and establishing a …Read more"
+    },
+    {
+      "title": "Biographie de MAHOMET ou MUḤAMMAD - Encyclopédie Universalis",
+      "url": "https://www.universalis.fr/encyclopedie/mahomet-muhammad/",
+      "snippet": "Biographie de MAHOMET ou MUḤAMMAD. Mahomet (en arabe Muḥammad) est, parmi les fondateurs des grandes religions …Read more"
+    }
+  ]
+}

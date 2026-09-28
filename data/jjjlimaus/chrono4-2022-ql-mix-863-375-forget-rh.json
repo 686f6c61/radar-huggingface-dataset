@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/chrono4-2022-ql-mix-863-375-forget-rh",
+  "slug": "jjjlimaus-chrono4-2022-ql-mix-863-375-forget-rh",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/chrono4-2022-ql-mix-863-375-forget-rh",
+  "created_at": "2026-09-28T03:16:22.000Z",
+  "updated_at": "2026-09-28T03:47:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sn38-nanochrono",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 8074091496,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Escuela directa - CCM - Foro tecnológico",
+      "url": "https://forums.commentcamarche.net/forum/affich-37323812-ecole-direct?lang=es",
+      "snippet": "Hola, me gustaría saber por qué ya no puedo acceder al espacio familiar cuando entro en la aplicación école directe, aparece este …Read more"
+    },
+    {
+      "title": "Progiciel école directe - Forum Logiciels - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-4832510-progiciel-ecole-directe",
+      "snippet": "Je voudrai savoir comment rentrer des donner sur le site \"ecole directe\" qui est un des progiciel édité par la société Statim. Je …"
+    },
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/",
+      "snippet": ""
+    },
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/Forums/en-US/home",
+      "snippet": ""
+    },
+    {
+      "title": "Ecole direct - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37794460-ecole-direct",
+      "snippet": "Feb 15, 2023 · Ecole direct Loute - Modifié le 15 févr. 2023 à 16:06 Loute - 15 févr. 2023 à 16:11"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Cephboy/BSN-Stream-Voice",
+  "slug": "cephboy-bsn-stream-voice",
+  "author": "Cephboy",
+  "url": "https://huggingface.co/Cephboy/BSN-Stream-Voice",
+  "created_at": "2026-09-28T15:55:23.000Z",
+  "updated_at": "2026-09-28T15:58:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "moshi",
+  "languages": [],
+  "tags": [
+    "moshi",
+    "bsn-stream",
+    "realtime",
+    "voice",
+    "ai",
+    "gguf",
+    "optimized",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

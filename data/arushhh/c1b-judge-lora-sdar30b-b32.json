@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Arushhh/c1b-judge-lora-sdar30b-b32",
+  "slug": "arushhh-c1b-judge-lora-sdar30b-b32",
+  "author": "Arushhh",
+  "url": "https://huggingface.co/Arushhh/c1b-judge-lora-sdar30b-b32",
+  "created_at": "2026-09-28T14:31:54.000Z",
+  "updated_at": "2026-09-28T14:47:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "block-diffusion",
+    "judge",
+    "sdar",
+    "base_model:JetLM/SDAR-30B-A3B-Chat-b32",
+    "base_model:adapter:JetLM/SDAR-30B-A3B-Chat-b32",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "JetLM/SDAR-30B-A3B-Chat-b32",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Peter Jenkins - Facebook",
+      "url": "https://www.facebook.com/peter.jenkins.79656/",
+      "snippet": "You can watch the celebration of Carole's life on catch up Service of Thanksgiving for the Life of Carole JenkinsRead more"
+    },
+    {
+      "title": "J.John - This week on Facing the Canon, I speak with Peter",
+      "url": "https://www.facebook.com/jjohnglobal/posts/this-week-on-facing-the-canon-i-speak-with-peter-jenkins-evangelist-and-missiona/1622697405892162/",
+      "snippet": "6 days ago · This week on Facing the Canon, I speak with Peter Jenkins, evangelist and missionary. Drawing on decades of ministry …Read more"
+    },
+    {
+      "title": "J.John – jjohn.com",
+      "url": "https://jjohn.com/",
+      "snippet": "Hi, I’m J.John. For the past four decades, I have dedicated my life to communicating the message of Christianity. I have spoken in …Read more"
+    },
+    {
+      "title": "abah.tv PETER JENKINS SERMONS - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PL7C9011D65C88AA62",
+      "snippet": "Nov 2, 2010 · abah.tv ROADSHOW 2009 UK Peter Jenkins Sermon Part 2 tvabah 147 views • 16 years ago 9:04Read more"
+    },
+    {
+      "title": "Pastor & Broadcaster Peter Jenkins - Use What You Have to Do",
+      "url": "https://open.spotify.com/episode/1eXIczwAutZm9ZhbsTTDXP",
+      "snippet": "\"Pastor and broadcaster Peter Jenkins was, in his words, a product of the 1904 Welsh Revival. At age 9 he discovered the love of …Read more"
+    }
+  ]
+}

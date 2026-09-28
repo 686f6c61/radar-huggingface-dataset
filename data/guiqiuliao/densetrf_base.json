@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "GuiqiuLiao/DenseTRF_base",
+  "slug": "guiqiuliao-densetrf_base",
+  "author": "GuiqiuLiao",
+  "url": "https://huggingface.co/GuiqiuLiao/DenseTRF_base",
+  "created_at": "2026-09-28T19:32:32.000Z",
+  "updated_at": "2026-09-28T19:37:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 372006186,
+  "storage_human": "372 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF DenseTRF: Texture-Aware Unsupervised Representation Adaptation for ...",
+      "url": "https://papers.miccai.org/miccai-2026/paper/6100_paper.pdf",
+      "snippet": "red toward texture-aware representations that capture invariant visual struc-tures across domains. DenseTRF integrates three components: (i) conditioning dense prediction on unsupervised slot representations learned via reconstruc-tion, (ii) a periodic model-merging strategy that balances target specialization with generalization, and (iii ..."
+    },
+    {
+      "title": "[2605.11265] DenseTRF: Texture-Aware Unsupervised Representation ...",
+      "url": "https://arxiv.org/abs/2605.11265",
+      "snippet": "Dense prediction tasks in surgical computer vision, such as segmentation and surgical zone prediction, can provide valuable guidance for laparoscopic and robotic surgery. However, these models often suffer from distribution shifts, as training datasets rarely cover the variability encountered during deployment, leading to poor generalization. We propose DenseTRF, a self-supervised ..."
+    },
+    {
+      "title": "DenseTRF: Texture-Aware Unsupervised Representation Adaptation for ...",
+      "url": "https://arxiv.org/pdf/2605.11265",
+      "snippet": "We presented DenseTRF, a texture-aware test-distribution adaptation framework for surgical dense prediction that combines slot-based object-centric represen-tations with unsupervised periodic model merging."
+    },
+    {
+      "title": "DenseTRF Accepted to MICCAI 2026 - LinkedIn",
+      "url": "https://www.linkedin.com/posts/guiqiu-liao_miccai2026-surgicaldatascience-pennmedicine-activity-7460371109624901632-8HkU",
+      "snippet": "🎉I&#x27;m thrilled to share that our paper, \"DenseTRF: Texture-Aware Unsupervised Representation Adaptation for Surgical Scene Dense Prediction,\" has been early accepted to MICCAI 2026 (9% of ..."
+    },
+    {
+      "title": "DenseTRF: Texture-Aware Unsupervised Representation Adaptation for ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/densetrf-texture-aware-unsupervised-representation-adaptation-surgical",
+      "snippet": "The periodic model merging anchor DenseTRF maintains two parallel slot attention branches during test-time adaptation. The base branch trains on diverse surgical data from multiple procedures to retain broad generalization. The target branch trains only on unlabeled frames from the specific surgical case at deployment."
+    }
+  ]
+}

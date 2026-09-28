@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ddvd233/mimiciv_rare_qwen35_9b_rsimed_cont820_global_step_1040",
+  "slug": "ddvd233-mimiciv_rare_qwen35_9b_rsimed_cont820_global_step_1040",
+  "author": "ddvd233",
+  "url": "https://huggingface.co/ddvd233/mimiciv_rare_qwen35_9b_rsimed_cont820_global_step_1040",
+  "created_at": "2026-09-28T14:46:11.000Z",
+  "updated_at": "2026-09-28T14:48:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "medical",
+    "reinforcement-learning",
+    "verl",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

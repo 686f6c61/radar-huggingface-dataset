@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "teyler/MineChoice-reward-survival-completed-house-update140",
+  "slug": "teyler-minechoice-reward-survival-completed-house-update140",
+  "author": "teyler",
+  "url": "https://huggingface.co/teyler/MineChoice-reward-survival-completed-house-update140",
+  "created_at": "2026-09-28T17:27:40.000Z",
+  "updated_at": "2026-09-28T17:27:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "minecraft",
+    "reinforcement-learning",
+    "classification",
+    "structured-state",
+    "experimental",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31789,
+  "parameters_human": "31789",
+  "storage_bytes": 127588,
+  "storage_human": "127588 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "TylerChoice - itch.io",
+      "url": "https://tylerchoice.itch.io/",
+      "snippet": "CubeWalker you just run and fly around TylerChoice Survival itch.io· Community profile"
+    },
+    {
+      "title": "character.ai | AI Chat, Reimagined-Your Words. Your World.",
+      "url": "https://character.ai/",
+      "snippet": "Chat with millions of AI Characters on the #1 AI chat app. Where will your next adventure take you?"
+    },
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "About - Microsoft Rewards",
+      "url": "https://rewards.bing.com/welcome",
+      "snippet": "Earn points with Microsoft Rewards, redeemable for gift cards, bonus sweepstakes entries, and more."
+    }
+  ]
+}

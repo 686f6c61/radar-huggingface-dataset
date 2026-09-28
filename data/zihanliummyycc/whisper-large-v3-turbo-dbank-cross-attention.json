@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ZihanLiummyycc/whisper-large-v3-turbo-dbank-cross-attention",
+  "slug": "zihanliummyycc-whisper-large-v3-turbo-dbank-cross-attention",
+  "author": "ZihanLiummyycc",
+  "url": "https://huggingface.co/ZihanLiummyycc/whisper-large-v3-turbo-dbank-cross-attention",
+  "created_at": "2026-09-28T15:25:48.000Z",
+  "updated_at": "2026-09-28T15:26:28.000Z",
+  "license": "upstream-terms-and-author-rights",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "automatic-speech-recognition",
+    "elderly-speech",
+    "dementiabank",
+    "component-checkpoint",
+    "parameter-efficient-adaptation",
+    "en",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104964136,
+  "storage_human": "105 MB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

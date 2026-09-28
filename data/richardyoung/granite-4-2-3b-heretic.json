@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "richardyoung/granite-4.2-3b-heretic",
+  "slug": "richardyoung-granite-4-2-3b-heretic",
+  "author": "richardyoung",
+  "url": "https://huggingface.co/richardyoung/granite-4.2-3b-heretic",
+  "created_at": "2026-09-28T17:31:59.000Z",
+  "updated_at": "2026-09-28T17:32:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "granite-4.2",
+    "reasoning",
+    "thinking",
+    "tool-calling",
+    "ibm",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "conversational",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh",
+    "base_model:ibm-granite/granite-4.1-3b-base",
+    "base_model:finetune:ibm-granite/granite-4.1-3b-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3659737600,
+  "parameters_human": "3.66B",
+  "storage_bytes": 7319516832,
+  "storage_human": "7.3 GB",
+  "base_model": "ibm-granite/granite-4.1-3b-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tinyopsec/granite-4.2-3b-Heretic · Hugging Face",
+      "url": "https://huggingface.co/tinyopsec/granite-4.2-3b-Heretic",
+      "snippet": "Reproducibility The edited model was generated from the Granite 4.2 3B base model using a Heretic-style optimization workflow. For exact reproduction, record and publish:"
+    },
+    {
+      "title": "tinyopsec/granite-4.2-3b-Heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/tinyopsec/granite-4.2-3b-Heretic-GGUF",
+      "snippet": "Instructions to use tinyopsec/granite-4.2-3b-Heretic-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "granite-4.2-3b-Heretic API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/tinyopsec/granite-4.2-3b-Heretic",
+      "snippet": "Reproducibility The edited model was generated from the Granite 4.2 3B base model using a Heretic-style optimization workflow. For exact reproduction, record and publish:"
+    },
+    {
+      "title": "Granite 4.2 3b Heretic - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/tinyopsec/granite-4.2-3b-heretic",
+      "snippet": "Registry entry for model Granite 4.2 3b Heretic; source metadata pending."
+    },
+    {
+      "title": "Granite 4.2 3B Heretic by tinyopsec — VRAM 7.4GB, 128K context | LLM ...",
+      "url": "https://llm-explorer.com/model/tinyopsec%2Fgranite-4.2-3b-Heretic,5FrvyUnKYPi1PQoygNP8cR",
+      "snippet": "Rank the Granite 4.2 3B Heretic capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

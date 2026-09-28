@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "masahiroid/ruri-v3-reranker-310m-mlx",
+  "slug": "masahiroid-ruri-v3-reranker-310m-mlx",
+  "author": "masahiroid",
+  "url": "https://huggingface.co/masahiroid/ruri-v3-reranker-310m-mlx",
+  "created_at": "2026-09-28T15:57:19.000Z",
+  "updated_at": "2026-09-28T16:01:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "mlx",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "modernbert",
+    "sentence-similarity",
+    "feature-extraction",
+    "ruri",
+    "japanese",
+    "text-ranking",
+    "ja",
+    "base_model:cl-nagoya/ruri-v3-reranker-310m",
+    "base_model:finetune:cl-nagoya/ruri-v3-reranker-310m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 315203329,
+  "parameters_human": "315.2M",
+  "storage_bytes": 630422823,
+  "storage_human": "630 MB",
+  "base_model": "cl-nagoya/ruri-v3-reranker-310m",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

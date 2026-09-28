@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "aztekvisur/paprika-whisper-lt-v3-onnx",
+  "slug": "aztekvisur-paprika-whisper-lt-v3-onnx",
+  "author": "aztekvisur",
+  "url": "https://huggingface.co/aztekvisur/paprika-whisper-lt-v3-onnx",
+  "created_at": "2026-09-28T14:51:23.000Z",
+  "updated_at": "2026-09-28T14:52:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "lt"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "lithuanian",
+    "webgpu",
+    "lt",
+    "base_model:kristijonas/paprika-whisper-lt-v3",
+    "base_model:quantized:kristijonas/paprika-whisper-lt-v3",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2033231837,
+  "storage_human": "2.0 GB",
+  "base_model": "kristijonas/paprika-whisper-lt-v3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZOUFOUL : popularité du nom ZOUFOUL, généalogie des ZOUFOUL …",
+      "url": "https://www.filae.com/nom-de-famille/ZOUFOUL.html?msockid=08b7e5d55cff6bb0204bf2375d846a39",
+      "snippet": "Etymologie et origine des ZOUFOUL: tout apprendre sur mon patronyme ZOUFOUL, sa popularité, et construire l’arbre …"
+    },
+    {
+      "title": "Name origin finder | Discover last name and surname origins – Namsor",
+      "url": "https://namsor.app/features/name-origin/",
+      "snippet": "This shows that the name could come from different origins. To provide a more comprehensive analysis, we return a list of the 10 …"
+    },
+    {
+      "title": "Zoufal Surname Origin, Meaning & Last Name History - Forebears",
+      "url": "https://forebears.io/surnames/zoufal",
+      "snippet": "Learn the fascinating origin of the Zoufal surname; its meaning & distribution. Unlock your family history in the largest database of …"
+    },
+    {
+      "title": "Surnames Meanings, Origins & Distribution Maps - Forebears",
+      "url": "https://forebears.io/surnames",
+      "snippet": "Though it is not possible to prove the origin of most surnames, it is possible to make educated guesses in some cases. A surname's …"
+    },
+    {
+      "title": "Search your Surname and find its meaning - FamilySearch",
+      "url": "https://www.familysearch.org/en/surname",
+      "snippet": "Where does this last name information come from? Surname information comes from The Dictionary of American Family Names by …"
+    }
+  ]
+}

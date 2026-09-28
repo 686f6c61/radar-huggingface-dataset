@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ricardo-manuel-22/editoria-models",
+  "slug": "ricardo-manuel-22-editoria-models",
+  "author": "ricardo-manuel-22",
+  "url": "https://huggingface.co/ricardo-manuel-22/editoria-models",
+  "created_at": "2026-09-28T02:37:07.000Z",
+  "updated_at": "2026-09-28T03:01:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "android",
+    "inpainting",
+    "super-resolution",
+    "image-to-image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119133616,
+  "storage_human": "119 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ricardo - acheter & vendre en toute sécurité - 5 millions de membres",
+      "url": "https://www.ricardo.ch/fr/?msockid=2c7cdc75e07d6f822f68cb97e19e6ebe",
+      "snippet": "Actuellement sur Ricardo Dans ta région Dernière minute Populaires Nouveau Dès CHF 1.-"
+    },
+    {
+      "title": "Ricardo Cuisine : Recettes, Idées de Menus, Plan Repas & Vidéos",
+      "url": "https://www.ricardocuisine.com/?country=fr",
+      "snippet": "Cuisinez comme un chef grâce aux recettes et menus de Ricardo. Maîtrisez les techniques de la cuisine avec les chroniques …"
+    },
+    {
+      "title": "Ricardo - Sicher kaufen & verkaufen mit über 5 Mio. Nutzern",
+      "url": "https://www.ricardo.ch/de/?msockid=2c7cdc75e07d6f822f68cb97e19e6ebe",
+      "snippet": "Erlebe die Vielfalt des grössten Online-Marktplatzes der Schweiz mit einzigartigen Produkten und einer sicheren Plattform zum …"
+    },
+    {
+      "title": "Menu de la semaine | RICARDO",
+      "url": "https://www.ricardocuisine.com/chroniques/menu-de-la-semaine?currentPage=1&grouping-id=2513&grouping-type=7&content-type=article&sort=recent",
+      "snippet": "3 days ago · Cuisinez comme un chef grâce aux recettes et menus de Ricardo. Maîtrisez les techniques de la cuisine avec les …"
+    },
+    {
+      "title": "David Ricardo — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/David_Ricardo",
+      "snippet": "Ricardo est un autodidacte de la pensée économique. Il correspond en abondance avec Jeremy Bentham, Thomas Malthus et Jean …"
+    }
+  ]
+}

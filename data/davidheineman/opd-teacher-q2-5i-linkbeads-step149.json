@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "davidheineman/opd-teacher-Q2.5I-LinkBeads-step149",
+  "slug": "davidheineman-opd-teacher-q2-5i-linkbeads-step149",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/opd-teacher-Q2.5I-LinkBeads-step149",
+  "created_at": "2026-09-28T17:24:05.000Z",
+  "updated_at": "2026-09-28T17:25:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "rlve",
+    "grpo",
+    "opd-teacher",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087467120,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login - ClassLink",
+      "url": "https://launchpad.classlink.com/login?loggedout=1",
+      "snippet": "Sign in with Google Or sign in using:"
+    },
+    {
+      "title": "Teacher Resource Center",
+      "url": "https://opdtrc.ouponlinepractice.com/app/index.html",
+      "snippet": "Teacher Resource Center"
+    },
+    {
+      "title": "Self-OPD: On-Policy Distillation for Flow Matching Models without Teacher",
+      "url": "https://arxiv.org/abs/2608.26872",
+      "snippet": "On-policy distillation (OPD), which leverages a pre-trained, specialized teacher model to provide dense supervisory signals, has achieved significant success in Large Language Models (LLMs) and has recently been adapted to flow matching models. However, this paradigm suffers from two major issues: First, training a separate, task-specific teacher for every new objective incurs high ..."
+    },
+    {
+      "title": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/",
+      "snippet": "OpenStreetMap is a free, collaborative map of the world, created by users and accessible under an open license."
+    },
+    {
+      "title": "[2602.12125] Learning beyond Teacher: Generalized On-Policy ...",
+      "url": "https://arxiv.org/abs/2602.12125",
+      "snippet": "On-policy distillation (OPD), which aligns the student with the teacher&#x27;s logit distribution on student-generated trajectories, has demonstrated strong empirical gains in improving student performance and often outperforms off-policy distillation and reinforcement learning (RL) paradigms. In this work, we first theoretically show that OPD is a special case of dense KL-constrained RL where the ..."
+    }
+  ]
+}

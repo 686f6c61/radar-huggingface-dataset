@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alrobles/sciev",
+  "slug": "alrobles-sciev",
+  "author": "alrobles",
+  "url": "https://huggingface.co/alrobles/sciev",
+  "created_at": "2026-09-28T02:56:33.000Z",
+  "updated_at": "2026-09-28T02:59:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "decision-models",
+    "masked-diffusion",
+    "scientific-ml",
+    "calibration",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 813246208,
+  "storage_human": "813 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "4:3 GoPro Footage Explained - Abe Kislevitz",
+      "url": "https://abekislevitz.com/43-gopro-footage-explained/",
+      "snippet": "Sep 25, 2013 · 4:3 refers to the modes in the GoPro that have a 4:3 aspect ratio as opposed to 16:9 or 17:9. What this means is that …"
+    },
+    {
+      "title": "GoPro Aspect Ratio Explained For All Recent Models",
+      "url": "https://projectgo.pro/gopro-aspect-ratio/",
+      "snippet": "May 15, 2024 · Here is the comparison table of GoPro sensor size, resolution, aspect ration for the recent GoPro models. The 4:3 …"
+    },
+    {
+      "title": "HERO Now Captures Ultra-Wide, Immersive 4K 4:3 Video + Features ... - GoPro",
+      "url": "https://gopro.com/en/us/news/hero-camera-now-captures-4-3-video",
+      "snippet": "Jan 30, 2025 · The HERO is getting a huge upgrade with the new 4:3 aspect ratio for video. Utilizing the sensor’s full height and …"
+    },
+    {
+      "title": "Can someone please tell me the difference between 16:9 and 4:3",
+      "url": "https://www.reddit.com/r/gopro/comments/zybc0g/can_someone_please_tell_me_the_difference_between/",
+      "snippet": "Dec 29, 2022 · Filming at 4:3 uses the entire sensor - meaning you capture more of the scene. This gives you the flexibility to crop …"
+    },
+    {
+      "title": "What Resolution Should I Use for GoPro? Resolutions Explained!",
+      "url": "https://projectgo.pro/gopro-resolutions/",
+      "snippet": "Jul 17, 2026 · Pick the right GoPro resolution, learn when to shoot in 4K/5K & how to choose the resolution based on the activity."
+    }
+  ]
+}

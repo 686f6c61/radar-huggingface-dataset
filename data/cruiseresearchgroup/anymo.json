@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "CRUISEResearchGroup/AnyMo",
+  "slug": "cruiseresearchgroup-anymo",
+  "author": "CRUISEResearchGroup",
+  "url": "https://huggingface.co/CRUISEResearchGroup/AnyMo",
+  "created_at": "2026-09-28T02:34:57.000Z",
+  "updated_at": "2026-09-28T02:35:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "anymo",
+    "feature-extraction",
+    "imu",
+    "wearable-sensing",
+    "human-activity-recognition",
+    "multimodal",
+    "motion-language",
+    "retrieval",
+    "captioning",
+    "custom_code",
+    "en",
+    "dataset:CRUISEResearchGroup/AnyMo-Bench",
+    "arxiv:2605.22715",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 517109747,
+  "parameters_human": "517.1M",
+  "storage_bytes": 1068712680,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/",
+      "snippet": "3 days ago · Home xnxx - Free Porn - Sex Stories - Porn Videos - Live Cams Home Search Forums Social Groups Rules FAQ / Help …"
+    },
+    {
+      "title": "Pic & Movie Post | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/pic-movie-post.8/",
+      "snippet": "3 days ago · Post pics or clips of yourself, wife, girlfriend, models, anything you like."
+    },
+    {
+      "title": "Solved: Joomla website getting hacked - When refer is google ...",
+      "url": "https://www.experts-exchange.com/questions/28941155/Joomla-website-getting-hacked-When-refer-is-google-redirected-to-porn-ads.html",
+      "snippet": "Apr 21, 2016 · Find answers to Joomla website getting hacked - When refer is google, redirected to porn ads from the expert …"
+    },
+    {
+      "title": "PaperPort 14 - Free Upgrade to Version 14.5 - Experts Exchange",
+      "url": "https://www.experts-exchange.com/articles/17490/PaperPort-14-Free-Upgrade-to-Version-14-5.html",
+      "snippet": "Dec 14, 2014 · Free in-place upgrade of Nuance PaperPort Professional 14.5 to Kofax PaperPort Professional 14.7 Free upgrade of …"
+    },
+    {
+      "title": "Hairy Women | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/hairy-women.4824/",
+      "snippet": "Nov 29, 2006 · vincenzz Porn Star Joined: Aug 6, 2006 Messages: 98,520 Nov 29, 2006 I don't particularly like hairy, mind it less if it …"
+    }
+  ]
+}

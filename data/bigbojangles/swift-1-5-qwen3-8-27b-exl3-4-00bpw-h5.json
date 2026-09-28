@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "BigBojangles/Swift-1.5-Qwen3.8-27b-EXL3-4.00bpw-H5",
+  "slug": "bigbojangles-swift-1-5-qwen3-8-27b-exl3-4-00bpw-h5",
+  "author": "BigBojangles",
+  "url": "https://huggingface.co/BigBojangles/Swift-1.5-Qwen3.8-27b-EXL3-4.00bpw-H5",
+  "created_at": "2026-09-28T17:57:40.000Z",
+  "updated_at": "2026-09-28T18:02:05.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "quantization",
+    "qwen3_8",
+    "reasoning",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ukisai/Swift-1.5-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-1.5-Qwen3.8-27b",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8175129984,
+  "parameters_human": "8.18B",
+  "storage_bytes": 16368492382,
+  "storage_human": "16.4 GB",
+  "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Swift 1.5 Qwen3.8-27B | UkisAI",
+      "url": "https://ukisai.com/swift-1-5-27b",
+      "snippet": "The results below compare Qwen3.8-27B, the foundation base model, Swift 1.0, the first UkisAI adaptation, and Swift 1.5. All three use the same saved evaluation protocols, and every score is a final five-repeat aggregate."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "erlidev/Swift-1.5-Qwen3.8-27B-EXL3 · Hugging Face",
+      "url": "https://huggingface.co/erlidev/Swift-1.5-Qwen3.8-27B-EXL3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Swift-Qwen3.8-27B: less overthinking | UkisAI",
+      "url": "https://ukisai.com/news/introducing-swift",
+      "snippet": "Swift includes a transfer component derived from BottleCap AI&#x27;s ThinkingCap-Qwen3.6-27B. The resulting model uses the standard Qwen3.8 interface and retains text, image, and video support."
+    },
+    {
+      "title": "GitHub - MiaAI-Lab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw: Deployment kit ...",
+      "url": "https://github.com/MiaAI-Lab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw",
+      "snippet": "by Mia&#x27;a AI Lab Deployment kit for serving Qwen3.8-27B quantized to EXL3 3.5bpw with speculative decoding — MTP by default (draft head inside the checkpoint, best context per GB) or DFlash2 (EXL3 5.0bpw draft model, ~15% faster) — plus a ~4.5-bit KV cache lane (NVFP4 on Ada/Hopper/Blackwell, Hadamard-4 on Ampere) for maximum context per GB."
+    }
+  ]
+}

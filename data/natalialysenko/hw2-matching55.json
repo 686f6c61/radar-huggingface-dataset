@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "natalialysenko/hw2-matching55",
+  "slug": "natalialysenko-hw2-matching55",
+  "author": "natalialysenko",
+  "url": "https://huggingface.co/natalialysenko/hw2-matching55",
+  "created_at": "2026-09-28T02:54:19.000Z",
+  "updated_at": "2026-09-28T02:54:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "natalialysenko/hw2-matching55 · Hugging Face",
+      "url": "https://huggingface.co/natalialysenko/hw2-matching55",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "natalialysenko (Natalia Lysenko) - Hugging Face",
+      "url": "https://huggingface.co/natalialysenko",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 22 days ago ... published a model 22 days ago"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "natalialysenko (Natalia Lysenko) - Hugging Face",
+      "url": "https://huggingface.co/natalialysenko/models",
+      "snippet": "natalialysenko's models1 Sort: Recently updated natalialysenko/model_197566371_clip_small Updated about 7 hours ago"
+    },
+    {
+      "title": "natalialysenko (Natalia Lysenko) - Hugging Face",
+      "url": "https://huggingface.co/natalialysenko/datasets",
+      "snippet": "Natalia Lysenko natalialysenko Follow AI & ML interests None yet Recent Activity updateda modelabout 5 hours ago"
+    }
+  ]
+}

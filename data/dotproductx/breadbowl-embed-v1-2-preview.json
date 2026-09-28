@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "dotproductx/breadbowl-embed-v1.2-preview",
+  "slug": "dotproductx-breadbowl-embed-v1-2-preview",
+  "author": "dotproductx",
+  "url": "https://huggingface.co/dotproductx/breadbowl-embed-v1.2-preview",
+  "created_at": "2026-09-28T19:28:33.000Z",
+  "updated_at": "2026-09-28T19:30:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-retrieval",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-retrieval",
+    "embeddings",
+    "reranking",
+    "multi-vector",
+    "research",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 586044,
+  "storage_human": "586044 B",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "API overview - BreadBowl Embed (Alpha)",
+      "url": "https://docs.breadbowl.ai/api-reference/overview",
+      "snippet": "Shared conventions for the BreadBowl Embed alpha REST API"
+    },
+    {
+      "title": "BreadBowl Embed (Alpha) - BreadBowl Embed (Alpha)",
+      "url": "https://docs.breadbowl.ai/",
+      "snippet": "Your application keeps the original text. BreadBowl Embed returns ranked references, scores, and metadata—not embedding vectors or generated answers."
+    },
+    {
+      "title": "BreadBowl | A New Retrieval Architecture",
+      "url": "https://breadbowl.ai/",
+      "snippet": "BreadBowl is not another embedding model. It is a new multi-vector representation architecture that preserves more meaning, brings ranking signal into retrieval, and gives agents better context."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "The best voice model for audio in, audio out with Chat Completions."
+    }
+  ]
+}

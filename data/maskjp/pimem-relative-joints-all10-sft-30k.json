@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "maskjp/pimem-relative-joints-all10-sft-30k",
+  "slug": "maskjp-pimem-relative-joints-all10-sft-30k",
+  "author": "maskjp",
+  "url": "https://huggingface.co/maskjp/pimem-relative-joints-all10-sft-30k",
+  "created_at": "2026-09-28T14:40:24.000Z",
+  "updated_at": "2026-09-28T14:41:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pimem",
+    "pi05",
+    "pi0.5",
+    "relative-actions",
+    "joints",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3623098106,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7498460056,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

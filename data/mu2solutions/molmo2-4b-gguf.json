@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mu2solutions/Molmo2-4B-GGUF",
+  "slug": "mu2solutions-molmo2-4b-gguf",
+  "author": "mu2solutions",
+  "url": "https://huggingface.co/mu2solutions/Molmo2-4B-GGUF",
+  "created_at": "2026-09-28T17:22:52.000Z",
+  "updated_at": "2026-09-28T17:24:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "allenai",
+    "molmo",
+    "vision",
+    "image-text-to-text",
+    "base_model:allenai/Molmo2-4B",
+    "base_model:quantized:allenai/Molmo2-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411475456,
+  "parameters_human": "4.41B",
+  "storage_bytes": 3596795744,
+  "storage_human": "3.6 GB",
+  "base_model": "allenai/Molmo2-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allenai/Molmo2-4B · Hugging Face",
+      "url": "https://huggingface.co/allenai/Molmo2-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Molmo | Ai2",
+      "url": "https://allenai.org/molmo",
+      "snippet": "A compact workhorse for multimodal research. Molmo 2 (4B) delivers strong performance on image, captioning, pointing, video understanding, and tracking tasks while staying light enough for workstations and rapid iteration."
+    },
+    {
+      "title": "GitHub - allenai/molmo2: Code for the Molmo2 Vision-Language Model",
+      "url": "https://github.com/allenai/molmo2",
+      "snippet": "Code for the Molmo2 Vision-Language Model. Contribute to allenai/molmo2 development by creating an account on GitHub."
+    },
+    {
+      "title": "reubk/Molmo2-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/reubk/Molmo2-4B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - allenai/molmo: Code for the Molmo Vision-Language Model",
+      "url": "https://github.com/allenai/molmo",
+      "snippet": "Code for the Molmo Vision-Language Model. Contribute to allenai/molmo development by creating an account on GitHub."
+    }
+  ]
+}

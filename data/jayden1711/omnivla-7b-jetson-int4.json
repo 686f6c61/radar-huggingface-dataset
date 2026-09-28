@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jayden1711/omnivla-7b-jetson-int4",
+  "slug": "jayden1711-omnivla-7b-jetson-int4",
+  "author": "jayden1711",
+  "url": "https://huggingface.co/jayden1711/omnivla-7b-jetson-int4",
+  "created_at": "2026-09-28T17:34:09.000Z",
+  "updated_at": "2026-09-28T17:38:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "jetson",
+    "quantization",
+    "gptq",
+    "marlin",
+    "vision-language-action",
+    "robot-navigation",
+    "arxiv:2509.19480",
+    "base_model:NHirose/omnivla-original",
+    "base_model:finetune:NHirose/omnivla-original",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4353982670,
+  "storage_human": "4.4 GB",
+  "base_model": "NHirose/omnivla-original",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jayden1711/omnivla-jetson: Full 7B OmniVLA running on a Jetson ...",
+      "url": "https://github.com/jayden1711/omnivla-jetson",
+      "snippet": "This repo runs OmniVLA, a 7B vision-language-action model for robot navigation, on a Jetson Orin Nano 8 GB. The LLM is quantized to int4 with GPTQ and runs on the Marlin kernel. The vision encoders use HQQ 4-bit on GemLite. Unused goal tokens are dropped and 75% of the camera image tokens are pruned ..."
+    },
+    {
+      "title": "omnivla-jetson/README.md at main · jayden1711/omnivla-jetson",
+      "url": "https://github.com/jayden1711/omnivla-jetson/blob/main/README.md",
+      "snippet": "This repo runs OmniVLA, a 7B vision-language-action model for robot navigation, on a Jetson Orin Nano 8 GB. The LLM is quantized to int4 with GPTQ and runs on the Marlin kernel. The vision encoders use HQQ 4-bit on GemLite. Unused goal tokens are dropped and 75% of the camera image tokens are pruned ..."
+    },
+    {
+      "title": "[2509.19480] OmniVLA: An Omni-Modal Vision-Language-Action Model for ...",
+      "url": "https://arxiv.org/abs/2509.19480",
+      "snippet": "The resulting model, OmniVLA, achieves strong generalization to unseen environments, robustness to scarce modalities, and the ability to follow novel natural language instructions. We demonstrate that OmniVLA outperforms specialist baselines across modalities and offers a flexible foundation for fine-tuning to new modalities and tasks."
+    },
+    {
+      "title": "OmniVLA: Physically-Grounded Multimodal VLA with Unified",
+      "url": "https://arxiv.org/html/2511.01210v2",
+      "snippet": "We present OmniVLA, an omni-modality VLA model that integrates novel sensing modalities for physically-grounded spatial intelligence beyond RGB perception. The core of our approach is the sensor-masked image, a unified representation that overlays spatially grounded and physically meaningful masks onto the RGB images, derived from sensors ..."
+    },
+    {
+      "title": "Models | Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/",
+      "snippet": "Discover all generative AI models optimized for Jetson"
+    }
+  ]
+}

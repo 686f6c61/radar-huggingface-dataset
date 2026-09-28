@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "KxSystems/qsql-qwen35-9b",
+  "slug": "kxsystems-qsql-qwen35-9b",
+  "author": "KxSystems",
+  "url": "https://huggingface.co/KxSystems/qsql-qwen35-9b",
+  "created_at": "2026-09-28T15:27:29.000Z",
+  "updated_at": "2026-09-28T15:55:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "q",
+    "kdb",
+    "qsql",
+    "code-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927678613,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

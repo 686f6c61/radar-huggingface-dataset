@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "keystats/Judge_qwen3vl_8b",
+  "slug": "keystats-judge_qwen3vl_8b",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/Judge_qwen3vl_8b",
+  "created_at": "2026-09-28T19:14:23.000Z",
+  "updated_at": "2026-09-28T19:15:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545763234,
+  "storage_human": "17.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,163 @@
+{
+  "schema": 1,
+  "id": "FINAL-Bench/Darwin-180B-RSI",
+  "slug": "final-bench-darwin-180b-rsi",
+  "author": "FINAL-Bench",
+  "url": "https://huggingface.co/FINAL-Bench/Darwin-180B-RSI",
+  "created_at": "2026-09-28T03:15:04.000Z",
+  "updated_at": "2026-09-28T07:04:27.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko",
+    "zh",
+    "ja",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "darwin",
+    "darwin-rsi",
+    "recursive-self-improvement",
+    "self-improvement",
+    "vidraft",
+    "final-bench",
+    "qwen",
+    "qwen3.8",
+    "moe",
+    "mixture-of-experts",
+    "sparse-moe",
+    "180b",
+    "hybrid-attention",
+    "linear-attention",
+    "long-context",
+    "262k-context",
+    "vision-language",
+    "multimodal",
+    "reasoning",
+    "reasoning-model",
+    "thinking",
+    "chain-of-thought",
+    "math",
+    "science",
+    "stem",
+    "ztc",
+    "zero-token-confidence",
+    "confidence-estimation",
+    "hallucination-detection",
+    "gpqa",
+    "gpqa-diamond",
+    "mmlu-pro",
+    "mmmu-pro",
+    "eval-results",
+    "korean",
+    "english",
+    "vllm",
+    "openai-compatible",
+    "b200",
+    "conversational",
+    "en",
+    "ko",
+    "zh",
+    "ja",
+    "multilingual",
+    "arxiv:2605.14386",
+    "arxiv:2609.20269",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 46,
+  "downloads_30d": 70,
+  "trending_score": 26,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 360013139488,
+  "storage_human": "360.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Graduate-Level Reasoning",
+      "dataset": "GPQA Diamond",
+      "metric": "Accuracy (majority vote, up to 16 samples, 131K thinking)",
+      "value": 94.44
+    },
+    {
+      "task": "Multi-discipline Knowledge & Reasoning",
+      "dataset": "MMLU-Pro",
+      "metric": "Accuracy (single sample, 131K thinking)",
+      "value": 88.12
+    },
+    {
+      "task": "Multimodal Expert Reasoning",
+      "dataset": "MMMU-Pro (vision)",
+      "metric": "Accuracy (majority vote, 3 samples, 131K thinking)",
+      "value": 79.48
+    },
+    {
+      "task": "Competition Mathematics",
+      "dataset": "AIME 2026",
+      "metric": "Accuracy (majority vote, 16 samples, 131K thinking)",
+      "value": 100
+    },
+    {
+      "task": "Competition Mathematics",
+      "dataset": "AIME 2026",
+      "metric": "Mean accuracy over 16 samples",
+      "value": 98.75
+    },
+    {
+      "task": "Competition Mathematics",
+      "dataset": "HMMT Feb 2026",
+      "metric": "Accuracy (majority vote, 16 samples, 131K thinking)",
+      "value": 100
+    },
+    {
+      "task": "Competition Mathematics",
+      "dataset": "HMMT Feb 2026",
+      "metric": "Mean accuracy over 16 samples",
+      "value": 96.59
+    }
+  ],
+  "sources": [
+    {
+      "title": "Reading an official Hugging Face leaderboard: protocols, majority ...",
+      "url": "https://dev.to/ai_openfree_b23025ef075cf/reading-an-official-hugging-face-leaderboard-protocols-majority-vote-and-reproducibility-2oon",
+      "snippet": "vor 6 Stunden ... Reproducing. All five benchmarks are public datasets and the weights are open at huggingface.co/FINAL-Bench/Darwin-180B-RSI. Serving requires ..."
+    },
+    {
+      "title": "18 Sep 1954 - Advertising - Trove",
+      "url": "https://trove.nla.gov.au/newspaper/article/18457448",
+      "snippet": "DARWIN N T. 20th and 30th SEPTEMBER and. lit OCTOBER 1954. Commencing each day ... models etc from 25 ai 0 smal. Micro and M»rcury Switches. LX1296 after 12."
+    },
+    {
+      "title": "Models – Hugging Face - qwen",
+      "url": "https://huggingface.co/models?other=qwen",
+      "snippet": "peonist-ai/halogen-qwen3.8-flash-next. Text Generation • Updated in about ... FINAL-Bench/Darwin-180B-RSI. Image-Text-to-Text • 180B • Updated in about 7 ..."
+    },
+    {
+      "title": "Posts - Hugging Face",
+      "url": "https://huggingface.co/posts",
+      "snippet": "FINAL-Bench/pocket-models-6a618ee5d23eafb7e185a5c6 ... Darwin-180B-RSI — an AI that learns from itself and knows when it's right FINAL-Bench/Darwin-180B-RSI"
+    },
+    {
+      "title": "Alan's ASI indicators (first 50) - LifeArchitect.ai",
+      "url": "https://lifearchitect.ai/asi/",
+      "snippet": "Recursive self-improvement (RSI) in production: the model made itself cheaper and faster to run. Via Codex it played an 'instrumental role' across routing, ..."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "abenzerps/Holotron4-30B-A3B-GGUF",
+  "slug": "abenzerps-holotron4-30b-a3b-gguf",
+  "author": "abenzerps",
+  "url": "https://huggingface.co/abenzerps/Holotron4-30B-A3B-GGUF",
+  "created_at": "2026-09-28T17:41:27.000Z",
+  "updated_at": "2026-09-28T18:28:20.000Z",
+  "license": "nvidia-open-model-agreement",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "nemotron",
+    "nemotron-h",
+    "mamba",
+    "moe",
+    "multimodal",
+    "computer-use",
+    "agent",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Hcompany/Holotron4-30B-A3B",
+    "base_model:quantized:Hcompany/Holotron4-30B-A3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577940288,
+  "parameters_human": "31.58B",
+  "storage_bytes": 138616394880,
+  "storage_human": "138.6 GB",
+  "base_model": "Hcompany/Holotron4-30B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Nemotron-3-Nano-30B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Nemotron-3-Nano-30B-A3B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Holo4: powering generalist computer-use agents - Hugging Face",
+      "url": "https://huggingface.co/blog/Hcompany/holo4",
+      "snippet": "A Blog post by H company on Hugging Face Holo4 is our new series of agentic models. It comes in two sizes: 27B dense and 35B-A3B Mixture of Experts. Both are available on the H Models API. We are also releasing an updated version of Holotron 3: Holotron4 Nano. Holo4 builds on our previous model and interacts with software through any available interface: GUIs, code, MCP and APIs. It scores ..."
+    },
+    {
+      "title": "Abenzerps - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingface/abenzerps",
+      "snippet": "Looking for Abenzerps&#x27;s top AI models? Browse their full Hugging Face collection of 2 models. Explore AI models and contributions by Abenzerps on Huggingface."
+    },
+    {
+      "title": "H Company Releases Holo4, Open-Weight Models for Computer ... - Unite.AI",
+      "url": "https://www.unite.ai/h-company-releases-holo4-open-weight-models-for-computer-use-agents/",
+      "snippet": "H company released Holo4, its new series of agentic computer-use models, on September 28, 2026, in 27B dense and 35B-A3B Mixture of Experts sizes, with open weights on Hugging Face and API availability. The company repor..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

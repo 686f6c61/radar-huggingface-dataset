@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_randomselfgen_mmlupro_glm9b_5000",
+  "slug": "ishikaa-acquisition_student_randomselfgen_mmlupro_glm9b_5000",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_randomselfgen_mmlupro_glm9b_5000",
+  "created_at": "2026-09-28T17:28:41.000Z",
+  "updated_at": "2026-09-28T17:30:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9399951360,
+  "parameters_human": "9.40B",
+  "storage_bytes": 18819921559,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "acquisition_student_randomselfgen_mmlupro_qwen3b_5000",
+      "url": "https://friendli.ai/models/ishikaa/acquisition_student_randomselfgen_mmlupro_qwen3b_5000",
+      "snippet": "Deploy acquisition_student_randomselfgen_mmlupro_qwen3b_5000 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "ishikaa/acquisition_student_randomselfgen_mmlupro_qwen3b_5000",
+      "url": "https://featherless.ai/models/ishikaa/acquisition_student_randomselfgen_mmlupro_qwen3b_5000",
+      "snippet": "The ishikaa/acquisition_student_randomselfgen_mmlupro_qwen3b_5000 model is a 3.1 billion parameter language model. This model&#x27;s specific architecture, training details, and primary differentiators are not explicitly provided in its current model card. It is presented as a general-purpose language model, but without further information, its unique strengths or optimized use cases cannot be ..."
+    },
+    {
+      "title": "ishikaa/acquisition_student_randomselfgen_alpaca_llama8b_5000 · Hugging ...",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_randomselfgen_alpaca_llama8b_5000",
+      "snippet": "Instructions to use ishikaa/acquisition_student_randomselfgen_alpaca_llama8b_5000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - TIGER-AI-Lab/MMLU-Pro: The code and data for \"MMLU-Pro: A More ...",
+      "url": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+      "snippet": "We introduce MMLU-Pro, an enhanced benchmark designed to evaluate language understanding models across broader and more challenging tasks. Building on the Massive Multitask Language Understanding (MMLU) dataset, MMLU-Pro integrates more challenging, reasoning-focused questions and increases the ..."
+    },
+    {
+      "title": "MMLU-Pro Leaderboard & Scores — September 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/benchmarks/mmlu-pro",
+      "snippet": "Massive Multitask Language Understanding Professional (MMLU-Pro) leaderboard across 52 AI models. Qwen3.7 Max leads with 89.6%. An enhanced version of MMLU with 10 answer choices instead of 4, featuring more reasoning-focused questions that better differentiate frontier models."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Nickyang/DeepSeek-V4-Flash-0731-Razor-156B-A15B-E128of256",
+  "slug": "nickyang-deepseek-v4-flash-0731-razor-156b-a15b-e128of256",
+  "author": "Nickyang",
+  "url": "https://huggingface.co/Nickyang/DeepSeek-V4-Flash-0731-Razor-156B-A15B-E128of256",
+  "created_at": "2026-09-28T15:39:06.000Z",
+  "updated_at": "2026-09-28T15:41:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "moe",
+    "mixture-of-experts",
+    "pruning",
+    "expert-pruning",
+    "razor",
+    "deepseek",
+    "fp4",
+    "arxiv:2609.30465",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 155979924030,
+  "parameters_human": "155.98B",
+  "storage_bytes": 88115678384,
+  "storage_human": "88.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wow : r/KimDomingo - Reddit",
+      "url": "https://www.reddit.com/r/KimDomingo/comments/7hr00u/wow/",
+      "snippet": "Dec 5, 2017 · 1.4K subscribers in the KimDomingo community. Kim Domingo is a sexy Filipina Actress"
+    },
+    {
+      "title": "Kim Domingo : r/CelebsPH - Reddit",
+      "url": "https://www.reddit.com/r/CelebsPH/comments/v6ol9d/kim_domingo/",
+      "snippet": "Jun 7, 2022 · 82K subscribers in the CelebsPH community. Your sub for pics and vids of Filipina celebrities"
+    },
+    {
+      "title": "Kim Domingo : r/KimDomingo - Reddit",
+      "url": "https://www.reddit.com/r/KimDomingo/comments/7b3mdv/kim_domingo/",
+      "snippet": "Nov 6, 2017 · 1.4K subscribers in the KimDomingo community. Kim Domingo is a sexy Filipina Actress"
+    },
+    {
+      "title": "Kim Domingo : r/ChikaPH - Reddit",
+      "url": "https://www.reddit.com/r/ChikaPH/comments/17dbl66/kim_domingo/",
+      "snippet": "Oct 21, 2023 · 12K subscribers in the ChikaPH community. Tambayan ng mga Marites"
+    },
+    {
+      "title": "Kim Domingo - Throwback : r/CelebsPH - Reddit",
+      "url": "https://www.reddit.com/r/CelebsPH/comments/wftfpe/kim_domingo_throwback/",
+      "snippet": "Aug 4, 2022 · 300 votes, 12 comments. 94K subscribers in the CelebsPH community. Your sub for pics and vids of Filipina celebrities"
+    }
+  ]
+}

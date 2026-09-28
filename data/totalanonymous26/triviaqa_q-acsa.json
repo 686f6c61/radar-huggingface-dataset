@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "totalanonymous26/triviaqa_Q-ACSA",
+  "slug": "totalanonymous26-triviaqa_q-acsa",
+  "author": "totalanonymous26",
+  "url": "https://huggingface.co/totalanonymous26/triviaqa_Q-ACSA",
+  "created_at": "2026-09-28T18:14:26.000Z",
+  "updated_at": "2026-09-28T18:19:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1636271015,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Point Vert de Abainville",
+      "url": "https://www.magasinvert-cerclevert.fr/point-vert-de-abainville.html",
+      "snippet": "Point Vert de Abainville Au Grozelier 55130 Abainville abainville@cerclevert.com 03 29 89 67 33 Agrément produits …Read more"
+    },
+    {
+      "title": "Cercle Vert - Au Crozelier 55130 Abainville - Jardinerie (horaires)",
+      "url": "https://www.pagesjaunes.fr/pros/05263664",
+      "snippet": "Cercle Vert à Abainville (55) Jardineries, végétaux, articles de jardin Alimentation animale : horaires, avis, photos, retrouvez les …Read more"
+    },
+    {
+      "title": "Cercle Vert - Fleuriste Abainville (55130)",
+      "url": "https://mafleuriste.net/55/abainville/cercle-vert-afo",
+      "snippet": "Cercle Vert, fleuriste, 55130 à Abainville : adresse, téléphone, horaires, email, site webRead more"
+    },
+    {
+      "title": "Cercle Vert - Jardinerie, Au Crozelier, 55130 Abainville (France ...",
+      "url": "https://fr.mappy.com/poi/58769dcf0351d1409c5469b6",
+      "snippet": "Découvrez Cercle Vert (Au Crozelier, 55130 Abainville) avec toutes les photos du quartier, le plan d'accès, les avis et les infos …Read more"
+    },
+    {
+      "title": "Cercle Vert à Abainville | 36 Avis",
+      "url": "https://jardinerie.autour-de-moi.com/cercle-vert-670617.html",
+      "snippet": "Mar 24, 2024 · Voici toutes les informations sur le Jardinerie Cercle Vert qui se trouve au Au Crozelier, 55130 Abainville (55). Sur …Read more"
+    }
+  ]
+}

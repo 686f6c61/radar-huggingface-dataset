@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "richardyoung/LFM2.5-1.2B-Instruct-heretic-GGUF",
+  "slug": "richardyoung-lfm2-5-1-2b-instruct-heretic-gguf",
+  "author": "richardyoung",
+  "url": "https://huggingface.co/richardyoung/LFM2.5-1.2B-Instruct-heretic-GGUF",
+  "created_at": "2026-09-28T16:31:26.000Z",
+  "updated_at": "2026-09-28T16:31:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "uncensored",
+    "abliterated",
+    "base_model:richardyoung/LFM2.5-1.2B-Instruct-heretic",
+    "base_model:quantized:richardyoung/LFM2.5-1.2B-Instruct-heretic",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 3783360512,
+  "storage_human": "3.8 GB",
+  "base_model": "richardyoung/LFM2.5-1.2B-Instruct-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

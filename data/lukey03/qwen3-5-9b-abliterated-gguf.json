@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "lukey03/Qwen3.5-9B-abliterated-GGUF",
+  "slug": "lukey03-qwen3-5-9b-abliterated-gguf",
+  "author": "lukey03",
+  "url": "https://huggingface.co/lukey03/Qwen3.5-9B-abliterated-GGUF",
+  "created_at": "2026-03-03T09:20:00.000Z",
+  "updated_at": "2026-03-03T17:51:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "fr",
+    "de",
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "qwen3.5",
+    "qwen",
+    "vision",
+    "multimodal",
+    "ollama",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "fr",
+    "de",
+    "es",
+    "arxiv:2406.11717",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 55,
+  "downloads_30d": 25433,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 48062901472,
+  "storage_human": "48.1 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lukey03/Qwen3.5-9B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/lukey03/Qwen3.5-9B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lukey03/Qwen3.5-9B-abliterated-GGUF - abliteration.org",
+      "url": "https://abliteration.org/models/lukey03/Qwen3.5-9B-abliterated-GGUF",
+      "snippet": "Qwen3.5-9B-abliterated-GGUF by lukey03: M8 Repackaging (quantization). 20.9K downloads, 41 likes on Hugging Face. Files, benchmarks and abliteration classification on abliteration.org."
+    },
+    {
+      "title": "README.md · lukey03/Qwen3.5-9B-abliterated-GGUF at main",
+      "url": "https://huggingface.co/lukey03/Qwen3.5-9B-abliterated-GGUF/blob/main/README.md",
+      "snippet": "About This is an abliterated (uncensored) version of Qwen3.5-9B with refusal behavior significantly reduced using 3 iterative passes of orthogonal projection from Arditi et al., 2024. Abliteration rate: 72% (13/18 test prompts answered vs 0/18 for base model) 170 harmful + 160 harmless prompts across 12 refusal categories 64 weight matrices modified per pass across all 32 layers See the full ..."
+    },
+    {
+      "title": "Qwen3.5-9B-abliterated-GGUF: Text-to-Text model - aimodels.fyi",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.5-9b-abliterated-gguf-lukey03",
+      "snippet": "Overview Qwen3.5-9B-abliterated-GGUF is a GGUF distribution of a 9-billion-parameter Qwen3.5 model whose refusal behavior was removed through orthogonal projection and QLoRA fine-tuning. It is maintained by lukey03. The key decision is whether you need a local, GGUF-compatible assistant that answers prompts the base model may refuse: this version is designed for that, but the reported 100% ..."
+    },
+    {
+      "title": "lukey03/Qwen3.5-9B-abliterated-GGUF · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/lukey03/Qwen3.5-9B-abliterated-GGUF",
+      "snippet": "Starting with the official Qwen/Qwen3.5-9B GGUF (883 tensors: 427 text + 441 vision + 15 MTP) Replacing 400 text model tensors with abliterated weights (the remaining 27 text tensors use different quantization types and are not affected by abliteration — they target attn_qkv and attn_v, while abliteration only modifies o_proj / output_proj and down_proj) Keeping all 441 vision encoder ..."
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "autotrust/JEV-9B",
+  "slug": "autotrust-jev-9b",
+  "author": "autotrust",
+  "url": "https://huggingface.co/autotrust/JEV-9B",
+  "created_at": "2026-09-23T12:08:52.000Z",
+  "updated_at": "2026-09-26T06:29:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "system-one",
+    "system-two",
+    "blocks-of-experts",
+    "typed-decisions",
+    "decision-model",
+    "calibrated-probabilities",
+    "knowledge-distillation",
+    "jev",
+    "noul",
+    "choice",
+    "score",
+    "lora",
+    "qwen3_5",
+    "dual-head",
+    "vllm",
+    "text-classification",
+    "en",
+    "dataset:SargeDev/jev-distill-corpus-v3",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 336,
+  "trending_score": 11,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 18265174125,
+  "storage_human": "18.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "typed decisions (noul / choice / score) — agreement with the TypeSafe Jev 1.13 teacher",
+      "dataset": "jev-distill-corpus-v3 · test_set_30k",
+      "metric": "mean KL(target ‖ model), all test rows (25,376 of 29,955 targets are TypeSafe Jev 1.13 distributions)",
+      "value": 0.021
+    },
+    {
+      "task": "typed decisions (noul / choice / score) — agreement with the TypeSafe Jev 1.13 teacher",
+      "dataset": "jev-distill-corpus-v3 · test_set_30k",
+      "metric": "noul AUROC",
+      "value": 0.996
+    },
+    {
+      "task": "typed decisions (noul / choice / score) — agreement with the TypeSafe Jev 1.13 teacher",
+      "dataset": "jev-distill-corpus-v3 · test_set_30k",
+      "metric": "noul Brier (vs. target probability, all rows)",
+      "value": 0.0015
+    },
+    {
+      "task": "typed decisions (noul / choice / score) — agreement with the TypeSafe Jev 1.13 teacher",
+      "dataset": "jev-distill-corpus-v3 · test_set_30k",
+      "metric": "score expected-value MAE (0–5 scale)",
+      "value": 0.103
+    },
+    {
+      "task": "typed decisions (noul / choice / score) — agreement with the TypeSafe Jev 1.13 teacher",
+      "dataset": "jev-distill-corpus-v3 · test_set_30k",
+      "metric": "ECE (15 bins, after temperature)",
+      "value": 0.0007
+    },
+    {
+      "task": "typed decisions (noul / choice / score) — agreement with the TypeSafe Jev 1.13 teacher",
+      "dataset": "jev-distill-corpus-v3 · test_set_30k",
+      "metric": "choice top-1 agreement (all rows)",
+      "value": 0.898
+    },
+    {
+      "task": "typed decisions (noul / choice / score) — agreement with the TypeSafe Jev 1.13 teacher",
+      "dataset": "jev-distill-corpus-v3 · test_set_30k",
+      "metric": "choice top-1 agreement (decisive-target rows, top-2 gap ≥ 0.1)",
+      "value": 0.954
+    },
+    {
+      "task": "code generation — System 2 path (base lm_head, adapter off)",
+      "dataset": "HumanEval",
+      "metric": "pass@1 (greedy, completion-style prompt)",
+      "value": 0.707
+    }
+  ],
+  "sources": []
+}

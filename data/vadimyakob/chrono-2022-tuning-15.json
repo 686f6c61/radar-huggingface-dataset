@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "vadimyakob/chrono-2022-tuning-15",
+  "slug": "vadimyakob-chrono-2022-tuning-15",
+  "author": "vadimyakob",
+  "url": "https://huggingface.co/vadimyakob/chrono-2022-tuning-15",
+  "created_at": "2026-09-28T02:35:23.000Z",
+  "updated_at": "2026-09-28T02:36:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sn38-nanochrono",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 6429900824,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Play Free Online Games | Free Games | Daily Mail",
+      "url": "https://games.dailymail.co.uk/",
+      "snippet": "Instantly play your favourite free online games including card games, puzzles, brain games & dozens of others, brought to you by …Read more"
+    },
+    {
+      "title": "The Daily Sudoku - Free Online Game | Daily Mail",
+      "url": "https://games.dailymail.co.uk/games/daily-sudoku",
+      "snippet": "The Daily Sudoku Overview Challenge yourself with this free online version of classic Sudoku. There's a new puzzle every day! Each …Read more"
+    },
+    {
+      "title": "Mail Online | Media",
+      "url": "https://creative.dailymail.co.uk/mailonline_media/tc.html",
+      "snippet": "MailOnline - all the latest news, sport, showbiz, science and health stories from around the world from the Daily Mail and Mail on …Read more"
+    },
+    {
+      "title": "Discover Saudi Culture. A Journey Through Heritage, Art, and Flavour.",
+      "url": "https://creative.dailymail.co.uk/saudiculture/2026/index.html",
+      "snippet": "Jul 1, 2026 · Saudi Arabia seen like never before From ancient heritage sites to vibrant art scenes and mouth-watering cuisine, …Read more"
+    },
+    {
+      "title": "CONTRIBUTORS STANDARD TERMS AND CONDITIONS - Daily Mail",
+      "url": "https://scripts.dailymail.co.uk/static/mol-fe/static/mol-fe-contributors-form/pdf/contributors%20standard%20terms%20and%20conditions%202017-08-14%20v4.pdf",
+      "snippet": "1.1 The definitions and rules of interpretation in this Clause apply in these Terms and Conditions. “ANL” means Associated …Read more"
+    }
+  ]
+}

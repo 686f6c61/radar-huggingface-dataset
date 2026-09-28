@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Jordansky/replay-cc4550ab-NF42",
+  "slug": "jordansky-replay-cc4550ab-nf42",
+  "author": "Jordansky",
+  "url": "https://huggingface.co/Jordansky/replay-cc4550ab-NF42",
+  "created_at": "2026-09-28T02:52:52.000Z",
+  "updated_at": "2026-09-28T02:53:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lfm2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 2340697936,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jordansky (Ilfan Aulia Nur Pagi) - Hugging Face",
+      "url": "https://huggingface.co/Jordansky/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 18 days ago ... published a model 18 days ago"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?base_model_relation=base&sort=trending",
+      "snippet": "Edit Models filters. Main ; Tasks ; Libraries ; Languages ; Licenses ; Other 1; Model Tree. Reset. Base. Adapters. Finetunes. …"
+    },
+    {
+      "title": "Model Catalog | Microsoft Foundry - ai.azure.com",
+      "url": "https://ai.azure.com/catalog/models",
+      "snippet": "Frontier, open-source, and partner models in one place. Sign in to Microsoft Foundry to deploy a model and start building."
+    },
+    {
+      "title": "nana (@_jordansky) • Instagram photos and videos",
+      "url": "https://www.instagram.com/_jordansky/",
+      "snippet": "2,265 Followers, 3,801 Following, 370 Posts - See Instagram photos and videos from nana (@_jordansky)"
+    },
+    {
+      "title": "Microsoft Foundry - ai.azure.com",
+      "url": "https://ai.azure.com/explore/models?selectedCollectinotallow=phi",
+      "snippet": "Loading…"
+    }
+  ]
+}

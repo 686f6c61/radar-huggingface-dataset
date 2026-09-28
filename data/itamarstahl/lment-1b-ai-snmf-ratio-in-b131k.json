@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "itamarstahl/lment-1b-ai-snmf-ratio-in-b131k",
+  "slug": "itamarstahl-lment-1b-ai-snmf-ratio-in-b131k",
+  "author": "itamarstahl",
+  "url": "https://huggingface.co/itamarstahl/lment-1b-ai-snmf-ratio-in-b131k",
+  "created_at": "2026-09-28T19:01:56.000Z",
+  "updated_at": "2026-09-28T19:02:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "lment",
+    "olmo2",
+    "ai",
+    "concept-erasure",
+    "snmf",
+    "text-generation",
+    "en",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

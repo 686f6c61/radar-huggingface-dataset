@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "withbenny/SEDD-HW",
+  "slug": "withbenny-sedd-hw",
+  "author": "withbenny",
+  "url": "https://huggingface.co/withbenny/SEDD-HW",
+  "created_at": "2026-09-28T18:07:47.000Z",
+  "updated_at": "2026-09-28T18:07:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF. 8B • Updated 4 days ago • 159k • 306. akhilaaa3/Jev-Omni"
+    },
+    {
+      "title": "Hugging Bay | Find and Download Open AI Models",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "Hugging Bay is the open-model catalog for public open LLMs, models, datasets, apps, evals, and hosted files."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "GitHub - Jaygagaga/sedd",
+      "url": "https://github.com/Jaygagaga/sedd",
+      "snippet": "Contribute to Jaygagaga/sedd development by creating an account on GitHub."
+    },
+    {
+      "title": "All 508 AI Models Compared — LLM Directory 2026",
+      "url": "https://benchlm.ai/models",
+      "snippet": "Browse and compare 508 large language models across 381 model families from OpenAI, Anthropic, Google, Meta, DeepSeek, and more."
+    }
+  ]
+}

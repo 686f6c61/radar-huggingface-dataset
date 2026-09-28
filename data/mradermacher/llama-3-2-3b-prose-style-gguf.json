@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama-3.2-3B-prose-style-GGUF",
+  "slug": "mradermacher-llama-3-2-3b-prose-style-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-3.2-3B-prose-style-GGUF",
+  "created_at": "2026-09-28T17:59:37.000Z",
+  "updated_at": "2026-09-28T17:59:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Newest Questions - Stack Overflow",
+      "url": "https://stackoverflow.com/",
+      "snippet": "1 day ago · Stack Overflow | The World’s Largest Online Community for DevelopersRead more"
+    },
+    {
+      "title": "How to recover your Google Account or Gmail",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=en",
+      "snippet": "If you forgot your password or username, or you can’t get verification codes, follow these steps to recover your Google Account. That …"
+    },
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "Change Google Translate dropdown programmatically",
+      "url": "https://stackoverflow.com/questions/5569927/change-google-translate-dropdown-programmatically",
+      "snippet": "Apr 6, 2011 · When you select from the dropdown that the google script inserts, a Google Translate bar appears at the top of the …"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    }
+  ]
+}

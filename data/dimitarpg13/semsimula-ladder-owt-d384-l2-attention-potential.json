@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "dimitarpg13/semsimula-ladder-owt-d384-l2-attention-potential",
+  "slug": "dimitarpg13-semsimula-ladder-owt-d384-l2-attention-potential",
+  "author": "dimitarpg13",
+  "url": "https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention-potential",
+  "created_at": "2026-09-28T02:36:15.000Z",
+  "updated_at": "2026-09-28T11:12:21.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "research",
+    "semsimula",
+    "conservative-language-model",
+    "scalar-potential",
+    "lagrangian-mechanics",
+    "energy-based-model",
+    "physics-informed",
+    "openwebtext",
+    "mechanism-ablation",
+    "ladder-study",
+    "pre-registered",
+    "matched-token-budget",
+    "fock-space",
+    "parflm",
+    "virtual-registers",
+    "reverse-channel",
+    "conservative-attention",
+    "controlled-conservativity",
+    "non-transformer",
+    "attention-free",
+    "text-generation",
+    "en",
+    "dataset:Skylion007/openwebtext",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 114,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 619629208,
+  "storage_human": "620 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "OpenWebText",
+      "metric": "Validation perplexity at block 512, settled (mean of the last three 500-step evals at block 512)",
+      "value": 80.9
+    }
+  ],
+  "sources": [
+    {
+      "title": "VIDÉO PORNO GRATUITE EN HD - PORNDROIDS.COM",
+      "url": "https://www.porndroids.com/fr/",
+      "snippet": "Le plus grand Tube Porno XXX en français, tout le Sexe et Films Porno que vous voulez regarder disponibles pour votre ordinateur, …"
+    },
+    {
+      "title": "Vidéos Porno Gratuites HD - Films XXX en Ligne | MyPornTube",
+      "url": "https://myporntube.com/fr",
+      "snippet": "Regardez 500,000+ vidéos porno GRATUITES sur MyPornTube. Amateur, MILF, teen 18+, anal, lesbienne, hardcore. Du nouveau …"
+    },
+    {
+      "title": "SuperPorn - VIDÉOS PORNO GRATUITES",
+      "url": "https://www.superporn.com/fr",
+      "snippet": "Les Vidéos Porno que vous aimez le plus, triées par catégories. Des séries porno originales en streaming gratuit pour ordinateur, …"
+    },
+    {
+      "title": "Vidéos pornos gratuites et films XXX : site de vidéos de sexe | xHamster",
+      "url": "https://fra.xhamster.com/",
+      "snippet": "Vidéos pornos gratuites et films XXX exclusifs sur xHamster. Regardez instantannément + de 6 millions de vidéos de sexe hardcore …"
+    },
+    {
+      "title": "Vidéos porno de toutes les catégories : jeunes filles, porno français ...",
+      "url": "https://www.porndroids.com/fr/categories/",
+      "snippet": "Choisissez la catégorie que vous préférez -> Gros seins, MILF, anal, beurette, jeune fille, grosse bite, mamie, porno gay - …"
+    }
+  ]
+}

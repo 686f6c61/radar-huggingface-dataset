@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "aselea/Kev-4B-MLX-Serve-8bit",
+  "slug": "aselea-kev-4b-mlx-serve-8bit",
+  "author": "aselea",
+  "url": "https://huggingface.co/aselea/Kev-4B-MLX-Serve-8bit",
+  "created_at": "2026-09-28T03:03:13.000Z",
+  "updated_at": "2026-09-28T03:06:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx-serve",
+  "languages": [],
+  "tags": [
+    "mlx-serve",
+    "safetensors",
+    "qwen3_5",
+    "mlx",
+    "kev",
+    "decisions",
+    "text-classification",
+    "base_model:jaredpalmer/kev-4b",
+    "base_model:quantized:jaredpalmer/kev-4b",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 4494874737,
+  "storage_human": "4.5 GB",
+  "base_model": "jaredpalmer/kev-4b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KevinM - Super Mario Wiki, the Mario encyclopedia",
+      "url": "https://www.mariowiki.com/User:KevinM",
+      "snippet": "12.07.2026 ... I'm a huge fan of the Super Mario franchise. KevinM. cdB0JId.png. Name, Kevin. Born, August 17, 1994. Gender, Male."
+    },
+    {
+      "title": "Pro Tools I S3 - World Radio History",
+      "url": "https://www.worldradiohistory.com/Archive-All-Audio/Mix-Magazine/10s/Mix-2014-11-R.pdf",
+      "snippet": "20.11.2014 ... (look at the business model; you can bet studios aren't doing it solely for the money). Since 1983, Recording Connection (nee Recording ..."
+    },
+    {
+      "title": "Unique Usernames List | PDF - Scribd",
+      "url": "https://www.scribd.com/document/985514911/Names",
+      "snippet": "The list does not provide any additional context or information beyond the names themselves. Uploaded by. romartbest3253. AI-enhanced title and description."
+    },
+    {
+      "title": "Luigi - Super Mario Wiki",
+      "url": "https://www.mariowiki.com/Luigi",
+      "snippet": "Luigi ; Species, Human ; First appearance, Mario Bros. (Game & Watch) (1983) ; Latest appearance, The Super Mario Galaxy Movie (2026) ; Latest portrayals, Kevin ..."
+    },
+    {
+      "title": "DOG DIAMOND｜ドッグダイヤモンド :: 応援される方法",
+      "url": "http://dog-diamond.com/blog/column/20251014column/",
+      "snippet": "14.10.2025 ... Climate had the greatest impact on reindeer survival within the model. The bus runs 17 times per day. The bus capacity is far more than 60 ..."
+    }
+  ]
+}

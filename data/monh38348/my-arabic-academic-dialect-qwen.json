@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Monh38348/my-arabic-academic-dialect-qwen",
+  "slug": "monh38348-my-arabic-academic-dialect-qwen",
+  "author": "Monh38348",
+  "url": "https://huggingface.co/Monh38348/my-arabic-academic-dialect-qwen",
+  "created_at": "2026-09-28T17:41:27.000Z",
+  "updated_at": "2026-09-28T17:44:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888700,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "my_arabic_dialects_model API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Monh38348/my_arabic_dialects_model",
+      "snippet": "Deploy my_arabic_dialects_model with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "OpenVoiceOS/qwen3-asr-0.6b-arabic-dialectal-v2-onnx · Hugging Face",
+      "url": "https://huggingface.co/OpenVoiceOS/qwen3-asr-0.6b-arabic-dialectal-v2-onnx",
+      "snippet": "Dialect coverage Trained on oddadmix/lahgtna-v3-small (dialect-balanced, undiacritized targets), the same corpus as the other oddadmix v2 dialectal releases. Per the family&#x27;s pattern, expect strongest results on Gulf/Saudi and Egyptian, weakest on Maghrebi dialects (Tunisian, Algerian, Moroccan). This ONNX export does not change accuracy; it reproduces the source model&#x27;s behavior."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    }
+  ]
+}

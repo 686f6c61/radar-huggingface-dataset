@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "davidheineman/opd-teacher-Q2.5I-MafMafia-step149",
+  "slug": "davidheineman-opd-teacher-q2-5i-mafmafia-step149",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/opd-teacher-Q2.5I-MafMafia-step149",
+  "created_at": "2026-09-28T17:17:31.000Z",
+  "updated_at": "2026-09-28T17:18:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "rlve",
+    "grpo",
+    "opd-teacher",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087467120,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest - 知乎",
+      "url": "https://www.zhihu.com/topic/19559627/intro",
+      "snippet": "Pinterest采用的是瀑布流的形式展现图片内容，无需用户翻页，新的图片不断自动加载在页面顶端，让用户不断的发现新的图片。 …"
+    },
+    {
+      "title": "Pinterest 好在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/19562210",
+      "snippet": "Pinterest不同于Tumblr和微博，虽然Tumblr和微博的核心内容之一都是图片，可是各种博们关注图片是为了社交和传媒，Pinterest有 …"
+    },
+    {
+      "title": "有哪些高质量的图片网站（社区）推荐？ - 知乎",
+      "url": "https://www.zhihu.com/question/19619335",
+      "snippet": "pinterest.com “瀑布流”图片呈现方式的始祖，每当笔者没有灵感的时候都会到这个网站上面逛逛，经常可以收获惊喜。 优点： 图片量 …"
+    },
+    {
+      "title": "Pinterest 现在要邀请访问，有什么办法能够注册？ - 知乎",
+      "url": "https://www.zhihu.com/question/20351197",
+      "snippet": "今天介绍一下Pinterest怎么注册、下载安装以及使用教程。 Pinterest全球著名的设计图片网站，那么在国内怎么上 Pinterest？别着 …"
+    },
+    {
+      "title": "毕业论文封面的分类号和UDC怎么查？ - 知乎",
+      "url": "https://www.zhihu.com/question/462955845",
+      "snippet": "Jun 3, 2021 · 毕业论文分类号和UDC的查找与确定方法，是否需细分到具体研究方向。"
+    }
+  ]
+}

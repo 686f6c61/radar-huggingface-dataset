@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "nchapman/LFM2.5-8B-A1B-ONNX-q4f16-sharded",
+  "slug": "nchapman-lfm2-5-8b-a1b-onnx-q4f16-sharded",
+  "author": "nchapman",
+  "url": "https://huggingface.co/nchapman/LFM2.5-8B-A1B-ONNX-q4f16-sharded",
+  "created_at": "2026-09-28T17:28:34.000Z",
+  "updated_at": "2026-09-28T17:42:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "lfm2_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5063404957,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · LiquidAI/LFM2.5-8B-A1B-ONNX at main - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-ONNX/blob/main/README.md",
+      "snippet": "ONNX export of LFM2.5-8B-A1B for cross-platform inference. LFM2.5-8B-A1B is a Mixture of Experts model with 8B total parameters and about 1B active parameters per token. It uses 32 experts with 4 experts activated per token, combining the efficiency of sparse models with the quality of larger dense models."
+    },
+    {
+      "title": "LFM2.5-8B-A1B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-8b-a1b",
+      "snippet": "8B parameter Mixture-of-Experts model with 1.5B active parameters for fast, reliable tool calling and 128K context ← Back to Text Models LFM2.5-8B-A1B is Liquid AI&#x27;s Mixture-of-Experts model, combining 8B total parameters with only 1.5B active parameters per forward pass with a 128K context window and chain of thought reasoning."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-8B-A1B-ONNX · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-ONNX",
+      "snippet": "ONNX export of LFM2.5-8B-A1B for cross-platform inference. LFM2.5-8B-A1B is a Mixture of Experts model with 8B total parameters and about 1B active parameters per token."
+    },
+    {
+      "title": "LFM2.5-8B-A1B: An Even Better On-Device Mixture of Experts",
+      "url": "https://www.liquid.ai/blog/lfm2-5-8b-a1b",
+      "snippet": "Explore Liquid AI&#x27;s LFM2.5-8B-A1B, an on-device Mixture of Experts model with 128K context, fast tool calling, and strong AI benchmarks."
+    },
+    {
+      "title": "LFM2.5-8B-A1B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/lfm2-5-8b-a1b",
+      "snippet": "Builds on the October 2025 LFM2-8B-A1B, expanding the context window to 128K and scaling pretraining from 12T to 38T tokens. Released May 28 2026 under the LFM Open License; caught in a July catalog-gap sweep. LFM2.5-8B-A1B is tracked as a open-weight model from Liquid AI. Released 2026-05-28."
+    }
+  ]
+}

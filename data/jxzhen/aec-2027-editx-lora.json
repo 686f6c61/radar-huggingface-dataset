@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jxzhen/aec-2027-editx-lora",
+  "slug": "jxzhen-aec-2027-editx-lora",
+  "author": "jxzhen",
+  "url": "https://huggingface.co/jxzhen/aec-2027-editx-lora",
+  "created_at": "2026-09-28T16:28:59.000Z",
+  "updated_at": "2026-09-28T16:38:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "audio",
+    "audio-editing",
+    "icassp2027",
+    "agent-track",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 108062920,
+  "storage_human": "108 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KL Escort Directory Local Freelance Girls Kuala Lumpur",
+      "url": "https://kl-bunnies.biz/",
+      "snippet": "Find 1000+ KL escort girls in Malaysia. We have the largest selection of escorts in Kuala Lumpur, offering 24-hour incall and outcall …"
+    },
+    {
+      "title": "KL ESCORT / PJ ESCORT / KL CALL GIRL / KL GIRL SERVICE / PUCHONG GIRL ...",
+      "url": "https://klhotelgirl.com/",
+      "snippet": "If you are dissatisfied with our customer service attitude or the quality of our masseuse's massage service, please feel free to contact …"
+    },
+    {
+      "title": "Kuchai Area | Mario888 Kuala Lumpur",
+      "url": "https://mario888.com/kl-sp/",
+      "snippet": "Kuchai Area Updated: April 01, 2025 Operation Hours: 11:00am – 02:00am daily Hotline: +6011-3566-2595 (Mario) (Whatsapp, SMS …"
+    },
+    {
+      "title": "Escort Service in Malaysia : Escorte Girls & Hostess Service in Malaysia",
+      "url": "https://www.streetdirectory.com/businessfinder/malaysia/company/964/Escort_Service/",
+      "snippet": "Provides Escort Service and Escort Service in our Escort Service and Agency directory easily. Also check out our Singapore Escort …"
+    },
+    {
+      "title": "KL Escort | Premium Companions in Kuala Lumpur & Subang",
+      "url": "https://klpjgirl2u.com/kl-escort-girls/",
+      "snippet": "Sep 13, 2026 · At KL PJ Girl 2u, we provide a curated selection of independent companions and high-class agency models serving …"
+    }
+  ]
+}

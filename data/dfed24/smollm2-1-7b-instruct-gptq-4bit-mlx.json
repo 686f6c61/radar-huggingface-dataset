@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "dfed24/SmolLM2-1.7B-Instruct-gptq-4bit-mlx",
+  "slug": "dfed24-smollm2-1-7b-instruct-gptq-4bit-mlx",
+  "author": "dfed24",
+  "url": "https://huggingface.co/dfed24/SmolLM2-1.7B-Instruct-gptq-4bit-mlx",
+  "created_at": "2026-09-28T19:21:23.000Z",
+  "updated_at": "2026-09-28T19:22:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "gptq",
+    "quantized",
+    "4-bit",
+    "text-generation",
+    "conversational",
+    "base_model:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1711376384,
+  "parameters_human": "1.71B",
+  "storage_bytes": 1013187041,
+  "storage_human": "1.0 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comparateur de vol et Billets d’avion pas cher | LILIGO",
+      "url": "https://www.liligo.fr/",
+      "snippet": "Votre comparateur de vols pas chers LILIGO Trouvez vos billets d’avion au meilleur prix parmi des centaines de sites de voyage !"
+    },
+    {
+      "title": "Vol pour Algérie pas cher : Comparez les Billets d’avion | Liligo",
+      "url": "https://www.liligo.fr/vols/algerie",
+      "snippet": "Comment trouver un vol pas cher vers l’Algérie ? Pour obtenir un billet d’avion pas cher pour l’Algérie, pensez à réserver 1 à 2 mois …"
+    },
+    {
+      "title": "Prix des billets d’avion : pourquoi ils varient et peuvent ... - LILIGO",
+      "url": "https://www.liligo.fr/magazine-voyage/billets-davion-lastuce-pour-ne-plus-se-faire-pigeonner-par-les-variations-de-prix-13811.html",
+      "snippet": "Jun 30, 2026 · Pourquoi le prix des billets d’avion varie-t-il autant ? Peut-il baisser, augmenter après l’achat ? Yield management, …"
+    },
+    {
+      "title": "Vol Paris - Bangkok pas cher | Billets d'avion sur Liligo",
+      "url": "https://www.liligo.fr/vols/itineraires/paris/bangkok",
+      "snippet": "Envie d’évasion ? Comparez en quelques clics les vols Paris - Bangkok pas chers et trouvez le billet idéal pour partir en Thaïlande. …"
+    },
+    {
+      "title": "Vol Dakar - Paris pas cher | Billets d'avion sur Liligo",
+      "url": "https://www.liligo.fr/vols/itineraires/dakar/paris",
+      "snippet": "Billet d'avion Dakar - Paris : comparez toutes les compagnies et réservez votre vol pas cher avec LILIGO."
+    }
+  ]
+}

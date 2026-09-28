@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "HarshilDaGoat/gem-bid-risk",
+  "slug": "harshildagoat-gem-bid-risk",
+  "author": "HarshilDaGoat",
+  "url": "https://huggingface.co/HarshilDaGoat/gem-bid-risk",
+  "created_at": "2026-09-28T17:33:37.000Z",
+  "updated_at": "2026-09-28T17:33:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "lightgbm",
+  "languages": [],
+  "tags": [
+    "lightgbm",
+    "tabular-classification",
+    "risk-scoring",
+    "procurement",
+    "india",
+    "gem",
+    "synthetic-data",
+    "explainability",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20325608,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 512 AI models across 485 benchmarks, with 195 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "One Model, Two Markets: Bid-Aware Generative Recommendation",
+      "url": "https://arxiv.org/pdf/2603.22231",
+      "snippet": "GEM-Rec is designed around inference-time bid modulation of a fixed generative policy: we explicitly separate (i) learning a feasibility baseline from logs from (ii) injecting current bids through constrained decoding to dynamically steer generation towards high-value items in real time, without retraining the underlying generative model or ..."
+    },
+    {
+      "title": "GitHub - Sumeet1249/Bid-Shield-AI: SIH-HACK-2026",
+      "url": "https://github.com/Sumeet1249/bid-shield-ai",
+      "snippet": "ID: 26100 Title: AI-Powered Integrated Bid Compliance Verification Platform for GeM Procurement Government procurement officers currently spend days manually verifying bidders across 8+ disconnected government portals (GSTN, PAN, MCA21, EPFO, ESIC, GeM Debarment Registry, etc.). This manual process is: ⏱️ Time-consuming (3-5 days per tender) 🐛 Error-prone (human oversight risks) 📉 ..."
+    },
+    {
+      "title": "GeM Bid AI Presentation-1 | PDF | Artificial Intelligence ... - Scribd",
+      "url": "https://www.scribd.com/document/1079302797/GeM-Bid-AI-Presentation-1",
+      "snippet": "The document outlines an AI-powered solution for verifying bid compliance in GeM procurement, addressing challenges such as manual evaluation overload and bias against smaller vendors. It features a Clause-to-Evidence Knowledge Graph, a Cross-Document Contradiction Engine, and a Rejection-Risk Scoring system to enhance accuracy and transparency in bid evaluations. The implementation plan ..."
+    },
+    {
+      "title": "GitHub - sakshamp413-hash/gem-bid-compliance-platform",
+      "url": "https://github.com/sakshamp413-hash/gem-bid-compliance-platform",
+      "snippet": "GeM Bid Compliance Verification Platform AI-Powered Integrated Bid Compliance Verification for GeM Procurement 🏛️ AI-Powered GeM Bid Compliance Platform Intelligent • Automated • Explainable • Secure AI-assisted bid compliance verification for Government e-Marketplace procurement. Quick Start • Features • Architecture ..."
+    }
+  ]
+}

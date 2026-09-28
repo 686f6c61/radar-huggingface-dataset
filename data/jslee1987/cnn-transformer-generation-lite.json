@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jslee1987/cnn-transformer-generation-lite",
+  "slug": "jslee1987-cnn-transformer-generation-lite",
+  "author": "jslee1987",
+  "url": "https://huggingface.co/jslee1987/cnn-transformer-generation-lite",
+  "created_at": "2026-09-28T03:03:08.000Z",
+  "updated_at": "2026-09-28T03:03:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NANKAICHEMISTRY/cnn-transformer-generation-pretrained · Hugging Face",
+      "url": "https://huggingface.co/NANKAICHEMISTRY/cnn-transformer-generation-pretrained",
+      "snippet": "Cnn Transformer for Generation Overview This repository is a compact, custom PyTorch implementation of Cnn Transformer for Generation. The tiny configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "GitHub - rafiepour/CTran: Complete code for the proposed CNN ...",
+      "url": "https://github.com/rafiepour/CTran",
+      "snippet": "This repository contains the complete source code of the proposed CTRAN network for joint intent detection and slot filling, which are the main tasks of natural language understanding. We propose a encoder-decoder modele, combining CNNs with Transformers and define the concept of alignment in Transformer decoder for the first time. The encoder is shared between the two intent detection and ..."
+    },
+    {
+      "title": "Alicethomas/cnn-transformer-finetuned · Hugging Face",
+      "url": "https://huggingface.co/Alicethomas/cnn-transformer-finetuned",
+      "snippet": "Cnn Transformer for Generation Overview This is an experimental Cnn Transformer codebase for Generation. It keeps the base setup intentionally manageable so architecture changes can be inspected before a full training run."
+    },
+    {
+      "title": "Transformers in Machine Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/getting-started-with-transformers/",
+      "snippet": "Transformer is a neural network architecture used for various machine learning tasks, especially in natural language processing and computer vision. It focuses on understanding relationships within data to process information more effectively."
+    },
+    {
+      "title": "An XAI-driven CNN-Transformer model for transmission line fault ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352484725008054",
+      "snippet": "The proposed CNN–Transformer hybrid model, shown in Fig. 4, is designed to leverage the complementary strengths of CNN and attention-based sequence encoders for robust time-series fault classification."
+    }
+  ]
+}

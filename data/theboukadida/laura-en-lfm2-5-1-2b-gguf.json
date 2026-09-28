@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Theboukadida/laura-en-lfm2.5-1.2b-GGUF",
+  "slug": "theboukadida-laura-en-lfm2-5-1-2b-gguf",
+  "author": "Theboukadida",
+  "url": "https://huggingface.co/Theboukadida/laura-en-lfm2.5-1.2b-GGUF",
+  "created_at": "2026-09-28T17:20:48.000Z",
+  "updated_at": "2026-09-28T17:48:26.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lfm2",
+    "german",
+    "language-learning",
+    "on-device",
+    "text-generation",
+    "de",
+    "en",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:quantized:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 730898432,
+  "storage_human": "731 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sex – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=sex",
+      "snippet": "Regarde les vidéos porno de Sex gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips XXX …"
+    },
+    {
+      "title": "Vidéos porno HD : Les filles les plus sexy en haute définition | Pornhub",
+      "url": "https://fr.pornhub.com/hd",
+      "snippet": "Porno HD gratuit sur Pornhub.com. Vous cherchez des vidéos de sexe en haute définition dans chaque niche XXX triple ? Le …"
+    },
+    {
+      "title": "Sex Videos – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=sex+videos",
+      "snippet": "Regarde les vidéos porno de Sex Videos gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de …"
+    },
+    {
+      "title": "HD Porn Videos: Hottest Girls on High Definition Movies | Pornhub",
+      "url": "https://www.pornhub.com/hd",
+      "snippet": "Free HD porn on Pornhub.com. Looking for high-definition sex videos in every triple XXX niche? The world's best porn tube has HD …"
+    },
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://ww.pornhub.com/",
+      "snippet": "Pornhub provides you with unlimited free porn videos with the hottest pornstars. Enjoy the largest amateur porn community on the …"
+    }
+  ]
+}

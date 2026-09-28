@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Fazmaj/ModernBERT-pcap",
+  "slug": "fazmaj-modernbert-pcap",
+  "author": "Fazmaj",
+  "url": "https://huggingface.co/Fazmaj/ModernBERT-pcap",
+  "created_at": "2026-09-28T19:06:36.000Z",
+  "updated_at": "2026-09-28T19:06:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149608709,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598449012,
+  "storage_human": "598 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

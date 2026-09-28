@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "FrontiersMind/Lumma-fev-4b",
+  "slug": "frontiersmind-lumma-fev-4b",
+  "author": "FrontiersMind",
+  "url": "https://huggingface.co/FrontiersMind/Lumma-fev-4b",
+  "created_at": "2026-09-25T10:50:16.000Z",
+  "updated_at": "2026-09-28T12:58:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "fev",
+    "feature-extraction",
+    "lumma-fev",
+    "decision-model",
+    "typesafe-compatible",
+    "custom_code",
+    "text-classification",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 1453,
+  "trending_score": 15,
+  "parameters": 4207062528,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8571957780,
+  "storage_human": "8.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

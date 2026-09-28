@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Cecilis/cultist-simulator-qwen3-4b",
+  "slug": "cecilis-cultist-simulator-qwen3-4b",
+  "author": "Cecilis",
+  "url": "https://huggingface.co/Cecilis/cultist-simulator-qwen3-4b",
+  "created_at": "2026-09-28T02:57:43.000Z",
+  "updated_at": "2026-09-28T06:48:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "cultist-simulator",
+    "game-text",
+    "lora",
+    "peft",
+    "chinese",
+    "english",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 101,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8188592542,
+  "storage_human": "8.2 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOITEC Cours Action SOI, Cotation Bourse Euronext Paris - Boursorama",
+      "url": "https://www.boursorama.com/cours/1rPSOI/",
+      "snippet": "Le cours de l'action SOITEC SOI en temps réel sur Boursorama : historique de la cotation sur Euronext Paris, graphique, actualités, …"
+    },
+    {
+      "title": "Société SOITEC SOI Euronext Paris - Boursorama",
+      "url": "https://www.boursorama.com/cours/societe/profil/1rPSOI/",
+      "snippet": "Retrouvez les actionnaires et les dirigeants de la société SOITEC SOI Euronext Paris, sa capitalisation boursière et ses principales …"
+    },
+    {
+      "title": "Cours action Soitec, cotation Bourse en direct SOI - FR0013227113 ...",
+      "url": "https://www.boursier.com/actions/cours/soitec-FR0013227113,FR.html",
+      "snippet": "Consultez le cours de l'action Soitec en direct (intraday). Accédez aux dernières transactions de l'action SOI - FR0013227113, au …"
+    },
+    {
+      "title": "Action Soitec | Cours SOI Bourse Euronext Paris - Zonebourse",
+      "url": "https://www.zonebourse.com/cours/action/SOITEC-4695/",
+      "snippet": "Soitec est un leader mondial de la production de matériaux semi-conducteurs innovants. L'entreprise occupe une place essentielle …"
+    },
+    {
+      "title": "SOITEC Cours Action FR0013227113, Cotation Bourse After Hours - Boursorama",
+      "url": "https://www.boursorama.com/cours/6rPFR0013227113/",
+      "snippet": "Le cours de l'action SOITEC FR0013227113 en temps réel sur Boursorama : historique de la cotation sur After Hours, graphique, …"
+    }
+  ]
+}

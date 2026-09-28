@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "Mythologic/MIMIR-1",
+  "slug": "mythologic-mimir-1",
+  "author": "Mythologic",
+  "url": "https://huggingface.co/Mythologic/MIMIR-1",
+  "created_at": "2026-09-28T16:02:50.000Z",
+  "updated_at": "2026-09-28T17:05:59.000Z",
+  "license": "mythologic-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "mimirai",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mimirai",
+    "onnx",
+    "safetensors",
+    "decision-model",
+    "calibrated-decisions",
+    "structured-output",
+    "classification",
+    "abstention",
+    "routing",
+    "guardrails",
+    "scoring",
+    "document-verification",
+    "agent-tool",
+    "text-classification",
+    "en",
+    "base_model:answerdotai/ModernBERT-Large-Instruct",
+    "base_model:quantized:answerdotai/ModernBERT-Large-Instruct",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4211714299,
+  "storage_human": "4.2 GB",
+  "base_model": "answerdotai/ModernBERT-Large-Instruct",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Banking77 intent",
+      "dataset": "Banking77 test",
+      "metric": "Exact-match accuracy",
+      "value": 0.883
+    },
+    {
+      "task": "MASSIVE English intent",
+      "dataset": "MASSIVE English test",
+      "metric": "Exact-match accuracy",
+      "value": 0.866
+    },
+    {
+      "task": "Typed decisions",
+      "dataset": "typed-decisions test",
+      "metric": "Exact-match accuracy",
+      "value": 0.725
+    },
+    {
+      "task": "Prompt injections",
+      "dataset": "prompt-injections",
+      "metric": "Exact-match accuracy",
+      "value": 0.957
+    },
+    {
+      "task": "XNLI English",
+      "dataset": "XNLI English test",
+      "metric": "Exact-match accuracy",
+      "value": 0.828
+    },
+    {
+      "task": "BoolQ",
+      "dataset": "BoolQ test",
+      "metric": "Exact-match accuracy",
+      "value": 0.84
+    },
+    {
+      "task": "AG News",
+      "dataset": "AG News test",
+      "metric": "Exact-match accuracy",
+      "value": 0.921
+    }
+  ],
+  "sources": []
+}

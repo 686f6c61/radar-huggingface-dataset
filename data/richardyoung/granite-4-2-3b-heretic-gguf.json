@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "richardyoung/granite-4.2-3b-heretic-GGUF",
+  "slug": "richardyoung-granite-4-2-3b-heretic-gguf",
+  "author": "richardyoung",
+  "url": "https://huggingface.co/richardyoung/granite-4.2-3b-heretic-GGUF",
+  "created_at": "2026-09-28T17:32:43.000Z",
+  "updated_at": "2026-09-28T17:33:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "uncensored",
+    "abliterated",
+    "base_model:richardyoung/granite-4.2-3b-heretic",
+    "base_model:quantized:richardyoung/granite-4.2-3b-heretic",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3659737600,
+  "parameters_human": "3.66B",
+  "storage_bytes": 11756656384,
+  "storage_human": "11.8 GB",
+  "base_model": "richardyoung/granite-4.2-3b-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tinyopsec/granite-4.2-3b-Heretic · Hugging Face",
+      "url": "https://huggingface.co/tinyopsec/granite-4.2-3b-Heretic",
+      "snippet": "Reproducibility The edited model was generated from the Granite 4.2 3B base model using a Heretic-style optimization workflow. For exact reproduction, record and publish:"
+    },
+    {
+      "title": "mradermacher/granite-4.2-3b-Heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/granite-4.2-3b-Heretic-GGUF",
+      "snippet": "mradermacher / granite-4.2-3b-Heretic-GGUF like 0 Text Generation Transformers GGUF 9 languages ibm-granite granite causal-lm heretic representation-editing conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Granite 4.2 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Granite 4.2 3B Heretic by tinyopsec — VRAM 7.4GB, 128K context | LLM ...",
+      "url": "https://llm-explorer.com/model/tinyopsec%2Fgranite-4.2-3b-Heretic,5FrvyUnKYPi1PQoygNP8cR",
+      "snippet": "Rank the Granite 4.2 3B Heretic capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Skebobic/Bobic-1.5-Raye",
+  "slug": "skebobic-bobic-1-5-raye",
+  "author": "Skebobic",
+  "url": "https://huggingface.co/Skebobic/Bobic-1.5-Raye",
+  "created_at": "2026-09-28T16:05:42.000Z",
+  "updated_at": "2026-09-28T16:27:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "slm",
+    "text-generation",
+    "transformer",
+    "pytorch",
+    "gqa",
+    "en",
+    "ru",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125864458,
+  "parameters_human": "125.9M",
+  "storage_bytes": 637564488,
+  "storage_human": "638 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU-Pro",
+      "metric": "Accuracy",
+      "value": 20
+    }
+  ],
+  "sources": []
+}

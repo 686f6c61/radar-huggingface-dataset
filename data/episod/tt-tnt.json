@@ -5,7 +5,7 @@
   "author": "episod",
   "url": "https://huggingface.co/episod/tt-tnt",
   "created_at": "2026-08-12T15:46:30.000Z",
-  "updated_at": "2026-09-15T18:32:02.000Z",
+  "updated_at": "2026-09-27T23:19:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,6 +27,7 @@
     "tt-model-cache",
     "ttml",
     "vllm",
+    "conversational",
     "en",
     "dataset:roneneldan/TinyStories",
     "dataset:sedthh/gutenberg_english",
@@ -39,7 +40,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2335,
+  "downloads_30d": 2653,
   "trending_score": 0,
   "parameters": 22025088,
   "parameters_human": "22.0M",
@@ -49,7 +50,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

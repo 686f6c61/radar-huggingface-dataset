@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "MercanAI/Mercan-0.8B-DPO-Q4",
+  "slug": "mercanai-mercan-0-8b-dpo-q4",
+  "author": "MercanAI",
+  "url": "https://huggingface.co/MercanAI/Mercan-0.8B-DPO-Q4",
+  "created_at": "2026-09-28T16:26:03.000Z",
+  "updated_at": "2026-09-28T16:26:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "gguf",
+    "mercan",
+    "nedolm",
+    "dpo",
+    "q4_k_m",
+    "turkish",
+    "text-generation",
+    "tr",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 506252480,
+  "storage_human": "506 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

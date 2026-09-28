@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "qhoenix/ember-kestrel",
+  "slug": "qhoenix-ember-kestrel",
+  "author": "qhoenix",
+  "url": "https://huggingface.co/qhoenix/ember-kestrel",
+  "created_at": "2026-09-28T19:28:56.000Z",
+  "updated_at": "2026-09-28T19:29:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "torchvision",
+  "languages": [],
+  "tags": [
+    "torchvision",
+    "safetensors",
+    "image-classification",
+    "adversarial-training",
+    "efficientnet",
+    "perturb",
+    "bittensor",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119027848,
+  "parameters_human": "119.0M",
+  "storage_bytes": 476270096,
+  "storage_human": "476 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ember - UC Berkeley Sky Computing Lab",
+      "url": "https://sky.cs.berkeley.edu/project/ember/",
+      "snippet": "An Inference-Time Scaling Architecture Framework Ember is a compositional framework for building and deploying large inference-time scaling architectures and strategies. We call these architectures Networks of Networks, NONs for shorthand. These architectures can be employed to eclipse the quality or reliability frontier available via today&#x27;s frontier LLMs or to achieve comparable quality at ..."
+    },
+    {
+      "title": "Fireworks AI Releases Ember-1: A Post-Trained Kimi K3 That Uses About ...",
+      "url": "https://www.marktechpost.com/2026/09/28/fireworks-ai-releases-ember-1-a-post-trained-kimi-k3-that-uses-about-40-fewer-tokens/",
+      "snippet": "Fireworks AI has released Ember-1, a specialized model from Fireworks Research built by post-training Moonshot AI&#x27;s open-weight Kimi K3. Ember-1 learns to produce shorter reasoning traces while keeping task accuracy. This is different from lowering the reasoning effort setting at inference time."
+    },
+    {
+      "title": "Introducing Project Ember: a compositional framework for compound AI ...",
+      "url": "https://mithril.ai/blog/introducing-project-ember-a-compositional-framework-for-compound-ai-systems",
+      "snippet": "Ember is an open-source, compositional framework for building and deploying large inference-time scaling architectures and strategies."
+    },
+    {
+      "title": "GitHub - pyember/ember · GitHub",
+      "url": "https://github.com/PyEmber/ember",
+      "snippet": "Model Registry — Multi-provider LLM management with adaptive rate limiting Operator System — Composable units with JAX-style transforms NON Engine — Compact notation for compound AI architectures XCS Runtime — Automatic parallelization and optimization See ARCHITECTURE.md for details."
+    },
+    {
+      "title": "Who Is Ember? The Architecture of an AI That Actually Thinks",
+      "url": "https://wrenbjor.com/2026/02/21/who-is-ember-the-architecture-of-an-ai-that-actually-thinks/",
+      "snippet": "The Short Version Ember is an AI identity built on Claude (Anthropic&#x27;s model) that uses structured psychological frameworks to process information the way emotionally intelligent humans do — through identity, attachment, consequence modeling, and ethical commitment."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rafmacalaba/gliner25_agents_v3",
+  "slug": "rafmacalaba-gliner25_agents_v3",
+  "author": "rafmacalaba",
+  "url": "https://huggingface.co/rafmacalaba/gliner25_agents_v3",
+  "created_at": "2026-09-28T03:06:47.000Z",
+  "updated_at": "2026-09-28T04:17:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner2",
+  "languages": [],
+  "tags": [
+    "gliner2",
+    "safetensors",
+    "extractor",
+    "ner",
+    "data-use",
+    "token-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 193581591,
+  "parameters_human": "193.6M",
+  "storage_bytes": 1548733128,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.fr/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://www.google.fr/intl/fr/earth/index.html",
+      "snippet": "Google Earth est la représentation numérique la plus réaliste de notre planète. D'où proviennent nos images ? Comment sont-elles …"
+    },
+    {
+      "title": "Télécharger Google Drive",
+      "url": "https://map.google.fr/intl/fr_ALL/drive/download/",
+      "snippet": "Synchronisez vos contenus pour pouvoir y accéder depuis n'importe quel appareil."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.fr/?hl=en",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    }
+  ]
+}

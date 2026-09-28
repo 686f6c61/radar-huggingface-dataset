@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "chou-lucas/transformer-en-zh",
+  "slug": "chou-lucas-transformer-en-zh",
+  "author": "chou-lucas",
+  "url": "https://huggingface.co/chou-lucas/transformer-en-zh",
+  "created_at": "2026-09-28T03:07:50.000Z",
+  "updated_at": "2026-09-28T08:06:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "encoder-decoder",
+    "sentencepiece",
+    "en",
+    "zh",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 60554496,
+  "parameters_human": "60.6M",
+  "storage_bytes": 637643074,
+  "storage_human": "638 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

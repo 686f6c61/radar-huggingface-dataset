@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "JacobTDang/secondhand-laya",
+  "slug": "jacobtdang-secondhand-laya",
+  "author": "JacobTDang",
+  "url": "https://huggingface.co/JacobTDang/secondhand-laya",
+  "created_at": "2026-09-28T17:33:02.000Z",
+  "updated_at": "2026-09-28T18:38:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "laya",
+    "int8",
+    "form-filling",
+    "food-assistance",
+    "snap",
+    "on-device",
+    "calibrated-decisions",
+    "text-classification",
+    "en",
+    "base_model:convaiinnovations/laya",
+    "base_model:quantized:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 425114479,
+  "storage_human": "425 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "Instead of staying bitter, I decided to take everything I learned, fix every architectural limitation of the old approach, and build a completely open, horizontal System 1 decision model family: Laya."
+    },
+    {
+      "title": "convaiinnovations/laya · Hugging Face",
+      "url": "https://huggingface.co/convaiinnovations/laya",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Laya AI: Open-Source Decision Model | Run Locally",
+      "url": "https://laya-ai.com/",
+      "snippet": "Laya AI is an open-source System 1 decision model for typed choices, scores, and probabilities. Run it locally, compare benchmarks, models, and Laya vs Jev."
+    },
+    {
+      "title": "Laya AI — Calibrated decisions in one forward pass",
+      "url": "https://layaai.org/",
+      "snippet": "Define questions and options at request time; Laya AI scores them in one pass and returns calibrated probabilities you can gate, log, reproduce, and audit. The English root uses ModernBERT-large (421M parameters, 512-token context). The multilingual model uses mmBERT-base (322M parameters, 100+ languages)."
+    },
+    {
+      "title": "convaiinnovations/laya at main - Hugging Face",
+      "url": "https://huggingface.co/convaiinnovations/laya/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

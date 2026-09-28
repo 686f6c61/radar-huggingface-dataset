@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "NGDtuanh/abook-analyzer",
+  "slug": "ngdtuanh-abook-analyzer",
+  "author": "NGDtuanh",
+  "url": "https://huggingface.co/NGDtuanh/abook-analyzer",
+  "created_at": "2026-09-28T16:15:33.000Z",
+  "updated_at": "2026-09-28T16:17:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "audiobook",
+    "vietnamese",
+    "speaker-attribution",
+    "text-generation",
+    "vi",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 4280403328,
+  "storage_human": "4.3 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

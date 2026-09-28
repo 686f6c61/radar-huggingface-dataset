@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF",
+  "slug": "huihui-ai-huihui-glm-5-3-flash-abliterated-gguf",
+  "author": "huihui-ai",
+  "url": "https://huggingface.co/huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF",
+  "created_at": "2026-09-26T04:52:38.000Z",
+  "updated_at": "2026-09-28T00:47:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "unsloth",
+    "glm5_next",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 23,
+  "downloads_30d": 329,
+  "trending_score": 22,
+  "parameters": 320759404382,
+  "parameters_human": "320.76B",
+  "storage_bytes": 450780689792,
+  "storage_human": "450.8 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai (huihui.ai) - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai",
+      "snippet": "We are committed to the study of model ablations and collaborate with the open-source community to advance natural language …"
+    },
+    {
+      "title": "https://www.huihui.ink/ Collection for Wuthering Waves | WuWa …",
+      "url": "https://gamebanana.com/collections/169682",
+      "snippet": "https://www.huihui.ink/ - A Collection for Wuthering Waves. Wuthering Waves Collections https://www.huihui.ink/ Collection Overview …"
+    },
+    {
+      "title": "huihui_ai",
+      "url": "https://ollama.com/huihui_ai",
+      "snippet": "Huihui 3.5 is a family of models created by remixing and merging multiple Qwen3.5 models of the same size."
+    },
+    {
+      "title": "辉辉的七月时光的个人空间-辉辉的七月时光个人主页-哔哩哔哩视频",
+      "url": "https://space.bilibili.com/431125794",
+      "snippet": "哔哩哔哩辉辉的七月时光的个人空间，提供辉辉的七月时光分享的视频、音频、文章、动态、收藏等内容，关注辉辉的七月时光账 …"
+    },
+    {
+      "title": "Hui (ethnie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Hui_(ethnie)",
+      "snippet": "Avant le XXe siècle, ils s'appelaient eux-mêmes Huihui ou Huimin, ce groupe comprenait alors non seulement les Hui d'aujourd'hui, …"
+    }
+  ]
+}

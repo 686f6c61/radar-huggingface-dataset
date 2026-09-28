@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ANGExllL/slate-kestrel",
+  "slug": "angexlll-slate-kestrel",
+  "author": "ANGExllL",
+  "url": "https://huggingface.co/ANGExllL/slate-kestrel",
+  "created_at": "2026-09-28T17:35:53.000Z",
+  "updated_at": "2026-09-28T17:35:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "torchvision",
+  "languages": [],
+  "tags": [
+    "torchvision",
+    "safetensors",
+    "image-classification",
+    "adversarial-training",
+    "efficientnet",
+    "perturb",
+    "bittensor",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119027848,
+  "parameters_human": "119.0M",
+  "storage_bytes": 476270096,
+  "storage_human": "476 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ANGExllL (Depotov) - Hugging Face",
+      "url": "https://huggingface.co/ANGExllL/models",
+      "snippet": "User profile of Depotov on Hugging Face"
+    },
+    {
+      "title": "Ataraxis AI Secures $20.4M Series A for Revolutionary Cancer ...",
+      "url": "https://www.morningexpert.com/ataraxis-ai-secures-20-4m-series-a-for-revolutionary-cancer-diagnostics-with-kestrel-ai-model/",
+      "snippet": "Ataraxis AI&#x27;s Kestrel model outperforms existing approaches with less data and computational power, uncovering complex patterns linked to patient outcomes across all disease types. The company plans to launch Ataraxis Breast for US oncologists this year and expand treatment selection capabilities beyond breast cancer."
+    },
+    {
+      "title": "GitHub - sanskkrr/KestrelAI",
+      "url": "https://github.com/sanskkrr/KestrelAI",
+      "snippet": "🔥 Explainable AI (Grad-CAM) Unlike traditional object detectors, Kestrel also explains why the model made a prediction. Grad-CAM generates activation heatmaps highlighting the image regions responsible for each prediction, improving transparency and interpretability."
+    },
+    {
+      "title": "Kestrel - Open-Source Intelligence Platform",
+      "url": "https://kestrelai.org/",
+      "snippet": "MODEL LAB The first AI lab built for open-source intelligence Kestrel is pioneering the convergence of frontier AI models and open-source intelligence. We train custom models, purpose-built for multilingual OSINT analysis. Our research spans multimodal understanding, geospatial reasoning, and temporal synthesis."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

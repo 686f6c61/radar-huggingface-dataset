@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "neph1/minimax_h3_handheld_shaky_camera",
+  "slug": "neph1-minimax_h3_handheld_shaky_camera",
+  "author": "neph1",
+  "url": "https://huggingface.co/neph1/minimax_h3_handheld_shaky_camera",
+  "created_at": "2026-09-26T07:13:20.000Z",
+  "updated_at": "2026-09-26T07:13:28.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 264,
+  "trending_score": 12,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79584758,
+  "storage_human": "80 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stable Diffusion Tutorials (@SD_Tutorial) / X",
+      "url": "https://x.com/SD_Tutorial?lang=de",
+      "snippet": "29.06.2024 ... Minimax H3 Headmounted camera / Headbob LORa Generate videos like cams are head-mounted thats Trained on 3 short clips of real walking."
+    },
+    {
+      "title": "neph1/minimax_h3_handheld_shaky_camera · Hugging Face",
+      "url": "https://huggingface.co/neph1/minimax_h3_handheld_shaky_camera",
+      "snippet": "License: minimax-h3-community-license-agreement · Model card Files Files and versions · xet Community · Deploy · Copy to bucket new · Use this model · Prompt · - Mirror of: https://civitai.com/models/2592748/shaky-handheld-camera?modelVersionId=3343481 ·"
+    },
+    {
+      "title": "neph1/minimax_h3_headmounted_fpv_cam · Hugging Face",
+      "url": "https://huggingface.co/neph1/minimax_h3_headmounted_fpv_cam",
+      "snippet": "License: minimax-h3-community-license-agreement · Model card Files Files and versions · xet Community · Deploy · Copy to bucket new · Use this model · Prompt · - Mirror of: https://civitai.com/models/2838538/headmounted-camera-headbob?modelVersionId=3357779 ·"
+    },
+    {
+      "title": "Wildminder (@wildmindai) / X",
+      "url": "https://x.com/wildmindai",
+      "snippet": "vor 7 Tagen ... Minimax-H3 Shaky Handheld LoRA - boosts dogma-style camera shake for life-like documentary feel - static & moving cams - high-noise only ..."
+    },
+    {
+      "title": "MiniMax H3 Max: Free AI Video Generator, Ranked #1, Post-Trained ...",
+      "url": "https://fal.ai/minimax-h3-max",
+      "snippet": "Color: 60:30:10, dominant gunmetal blue and wet slate (the tideflats and sky) / secondary sodium amber and rust-red (burning floodlights, corroded steel) / accent magnesium white and cobalt blue (the failing reactor core and its arc-flashes). Camera: physical cine lens. 180 degree shutter motion blur. Continuous handheld operator shake, motivated by the ground concussions rolling through the shallow water."
+    }
+  ]
+}

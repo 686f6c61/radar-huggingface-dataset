@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "CookrAI/cookr-v1-light-qwen",
+  "slug": "cookrai-cookr-v1-light-qwen",
+  "author": "CookrAI",
+  "url": "https://huggingface.co/CookrAI/cookr-v1-light-qwen",
+  "created_at": "2026-09-28T19:34:59.000Z",
+  "updated_at": "2026-09-28T19:35:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "qwen-image",
+    "meme",
+    "memecoin",
+    "pump.fun",
+    "cookr",
+    "base_model:Qwen/Qwen-Image",
+    "base_model:adapter:Qwen/Qwen-Image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2359534952,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen-Image",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "lightx2v/Qwen-Image-Lightning · Hugging Face",
+      "url": "https://huggingface.co/lightx2v/Qwen-Image-Lightning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Start Smartscrolling - A study app that helps you cook — instead of ...",
+      "url": "https://cookr.ai/",
+      "snippet": "How does it work? Upload notes or photos. Cookr AI turns them into questions. Scroll, answer, repeat. Build streaks, level up, ace exams."
+    },
+    {
+      "title": "Cook AI Object Detection Model (v1, 2023-12-06 2:24am) by FridgeDetector",
+      "url": "https://universe.roboflow.com/fridgedetector/cook-ai/dataset/1",
+      "snippet": "9982 open source groceries-apple-orage images and annotations in multiple formats for training computer vision models. Cook AI (v1, 2023-12-06 2:24am), created by FridgeDetector"
+    },
+    {
+      "title": "Best Qwen Models Ranked: Which to Run Locally (Mid-2026)",
+      "url": "https://insiderllm.com/guides/qwen-models-guide/",
+      "snippet": "📚 More on this topic: Qwen 3.5 Local Guide · Qwen 3.5 9B Setup Guide · Llama 3 Guide · DeepSeek Models Guide · Best Models for Coding · VRAM Requirements While everyone was talking about Llama and DeepSeek, Alibaba quietly built the best open-source model family in the world. Qwen 3 beats Llama 3 at every comparable size. Qwen 2.5 Coder 32B matches GPT-4o on coding benchmarks. Qwen-VL ..."
+    }
+  ]
+}

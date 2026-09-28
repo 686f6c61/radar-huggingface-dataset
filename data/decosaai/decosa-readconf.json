@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "decosaai/decosa-readconf",
+  "slug": "decosaai-decosa-readconf",
+  "author": "decosaai",
+  "url": "https://huggingface.co/decosaai/decosa-readconf",
+  "created_at": "2026-09-28T14:17:00.000Z",
+  "updated_at": "2026-09-28T14:17:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "document-ai",
+    "ocr",
+    "confidence-estimation",
+    "tables",
+    "quality-estimation",
+    "human-review",
+    "tabular-classification",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 213622,
+  "parameters_human": "213622",
+  "storage_bytes": 855704,
+  "storage_human": "855704 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

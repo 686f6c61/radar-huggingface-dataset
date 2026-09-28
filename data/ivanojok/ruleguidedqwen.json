@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "IvanOjok/RuleGuidedQwen",
+  "slug": "ivanojok-ruleguidedqwen",
+  "author": "IvanOjok",
+  "url": "https://huggingface.co/IvanOjok/RuleGuidedQwen",
+  "created_at": "2026-09-28T03:14:03.000Z",
+  "updated_at": "2026-09-28T12:38:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "rule_guided_braille_qwen",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 988097824,
+  "storage_human": "988 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The 15th International Conference on Recent Advances in Natural ...",
+      "url": "https://aclanthology.org/events/ranlp-2025/",
+      "snippet": "pdf bib abs. On the Limitations of Large Language Models (LLMs): False Attribution · Tosin ..."
+    },
+    {
+      "title": "From Visual Cues to Spoken Narration: Rethinking Audio Description",
+      "url": "https://arxiv.org/pdf/2609.01725",
+      "snippet": "01.09.2026 ... build Stage 2 on Qwen models (Bai et al., 2025) as the backbone ... Ground-truth AD: The jock slumps down on a bench on the other side of two ..."
+    },
+    {
+      "title": "Other Workshops and Events (2025) - ACL Anthology",
+      "url": "https://aclanthology.org/events/ws-2025/",
+      "snippet": "We compare a rule-based model that implements the categories of the ... ai model pre-trained on medical data. Final outputs were evaluated using the ..."
+    },
+    {
+      "title": "Author List for Advertisers - Goodreads",
+      "url": "https://d.gr-assets.com/misc/1467411942-1467411942_goodreads_misc.pdf",
+      "snippet": "Ann Rule. Katrina Kittle. Chris Van Allsburg. Eric Hansen. Georges Simenon. Mel ... Ivan E. Coyote. Kristen Day. Russ Hudson. Don Richard Riso. Tina Ferraro."
+    },
+    {
+      "title": "Proceedings of the 8th Workshop on Challenges and Applications of ...",
+      "url": "https://aclanthology.org/2025.case-1.pdf",
+      "snippet": "13.09.2025 ... the AI model reconciling them. Bias mitigation techniques can be ... Large Language Model and Rule-Based solu- tions being used. The ..."
+    }
+  ]
+}

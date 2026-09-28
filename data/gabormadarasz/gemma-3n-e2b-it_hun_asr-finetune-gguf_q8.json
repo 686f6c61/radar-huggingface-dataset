@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "GaborMadarasz/gemma-3n-E2B-it_hun_ASR-finetune-gguf_Q8",
+  "slug": "gabormadarasz-gemma-3n-e2b-it_hun_asr-finetune-gguf_q8",
+  "author": "GaborMadarasz",
+  "url": "https://huggingface.co/GaborMadarasz/gemma-3n-E2B-it_hun_ASR-finetune-gguf_Q8",
+  "created_at": "2026-09-28T15:57:36.000Z",
+  "updated_at": "2026-09-28T15:58:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma3n",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4458122848,
+  "parameters_human": "4.46B",
+  "storage_bytes": 4744824576,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

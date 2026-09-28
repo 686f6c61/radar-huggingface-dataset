@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-chloe-2750-lora",
+  "slug": "runninghubai-rh-chloe-2750-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-chloe-2750-lora",
+  "created_at": "2026-09-28T14:41:01.000Z",
+  "updated_at": "2026-09-28T14:42:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228626360,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xray.exe Windows process - What is it? - file.net",
+      "url": "https://www.file.net/process/xray.exe.html",
+      "snippet": "xray.exe is not essential for Windows 11/10/7 and will often cause problems. Click here to see what xray is doing, and how to remove …"
+    },
+    {
+      "title": "Malware analysis xray.exe Malicious activity - any.run",
+      "url": "https://any.run/report/be86be2ed524d887a9fb5915be201c5f45c8fb40cac116b3156fca4c65e562be/db2841e5-a704-4d3a-a34a-9e8049b40124",
+      "snippet": "Jan 11, 2025 · Blank Grabber is an infostealer written in Python. It is designed to steal a wide array of data, such as browser login …"
+    },
+    {
+      "title": "Malware analysis xray.exe Malicious activity - any.run",
+      "url": "https://any.run/report/5b2dd14269f6364ba73c6b6c0ae1cce48659dc704efcb568d2dbdbc5b834f868/7077a729-2da5-48a8-ab32-200da8bb1187",
+      "snippet": "Jan 21, 2025 · Online sandbox report for xray.exe, tagged as asyncrat, verdict: Malicious activity"
+    },
+    {
+      "title": "Malware scan of xray.exe (Internet ...",
+      "url": "https://www.herdprotect.com/knowledgebase_resource.aspx?sha1=72224be6d6698c5161d612de149ef22fec0ed176",
+      "snippet": "The application xray.exe, “Internet Setup ” by Dove Source (Fried Cooke) has been detected as adware by 15 anti-malware …"
+    },
+    {
+      "title": "Automated Malware Analysis Report for xray.exe - Joe Sandbox",
+      "url": "https://www.joesandbox.com/analysis/724807/0/html",
+      "snippet": "Oct 17, 2022 · Binary contains paths to development resources ... Creates files inside the user directory Source: …"
+    }
+  ]
+}

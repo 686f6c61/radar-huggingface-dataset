@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "abenzerps/Holo4-35B-A3B-GGUF",
+  "slug": "abenzerps-holo4-35b-a3b-gguf",
+  "author": "abenzerps",
+  "url": "https://huggingface.co/abenzerps/Holo4-35B-A3B-GGUF",
+  "created_at": "2026-09-28T17:49:51.000Z",
+  "updated_at": "2026-09-28T18:03:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "holo4",
+    "qwen3.5",
+    "qwen3.6",
+    "moe",
+    "multimodal",
+    "computer-use",
+    "agent",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Hcompany/Holo4-35B-A3B",
+    "base_model:quantized:Hcompany/Holo4-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 131927782286,
+  "storage_human": "131.9 GB",
+  "base_model": "Hcompany/Holo4-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Holo4: powering generalist computer-use agents - Hugging Face",
+      "url": "https://huggingface.co/blog/Hcompany/holo4",
+      "snippet": "A Blog post by H company on Hugging Face Holo4 is our new series of agentic models. It comes in two sizes: 27B dense and 35B-A3B Mixture of Experts. Both are available on the H Models API. We are also releasing an updated version of Holotron 3: Holotron4 Nano. Holo4 builds on our previous model and interacts with software through any available interface: GUIs, code, MCP and APIs. It scores ..."
+    },
+    {
+      "title": "H Company Releases Holo4, Open-Weight Models for Computer-Use Agents",
+      "url": "https://www.unite.ai/h-company-releases-holo4-open-weight-models-for-computer-use-agents/",
+      "snippet": "H company released Holo4, its new series of agentic computer-use models, on September 28, 2026, in 27B dense and 35B-A3B Mixture of Experts sizes, with open weights on Hugging Face and API availability. The company repor..."
+    },
+    {
+      "title": "abenzerps (Ahmet Benzer) - Hugging Face",
+      "url": "https://huggingface.co/abenzerps/activity/all",
+      "snippet": "🚩🚩🚩🚩 this model is not Uncensored at all, he is lying, its just the same original quants 👍7 7 #7 opened about 23 hours ago by JoshYuri New activity in abenzerps/Qwen-Image-2.1-GGUF 1 day ago"
+    },
+    {
+      "title": "Holo4 Open-Weights Computer-Use Agent Debuts, 27B Model Targets ...",
+      "url": "https://toolnavs.com/article/2166-holo4-open-weights-computer-use-agent-debuts-27b-model-targets-enterprise-workfl",
+      "snippet": "Holo4 is here. On September 28, 2026, Paris-based AI company H Company released Holo4, its new generation of computer-use agent models: a 27B dense version and a 35B-A3B mixture-of-experts version, with weights published on Hugging Face in BF16, FP8, NVFP4, and 4-bit GGUF precisions and API access opened in parallel. The company also released Holotron4 Nano, an updated version of Holotron 3."
+    },
+    {
+      "title": "H Company&#x27;s Holo4 Handles Screens, Code, and APIs With 79% Fewer Tokens ...",
+      "url": "https://alphasignal.ai/news/h-company-s-holo4-handles-screens-code-and-apis-with-79-fewer-tokens",
+      "snippet": "Holo4 released in 27B dense and 35B-A3B MoE variants, both open weights. Single model handles desktop, web, Android, code sandboxes, MCP, and APIs."
+    }
+  ]
+}

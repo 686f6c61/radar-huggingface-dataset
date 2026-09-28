@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "abenzerps/Holotron4-30B-A3B-MLX-4bit",
+  "slug": "abenzerps-holotron4-30b-a3b-mlx-4bit",
+  "author": "abenzerps",
+  "url": "https://huggingface.co/abenzerps/Holotron4-30B-A3B-MLX-4bit",
+  "created_at": "2026-09-28T18:17:23.000Z",
+  "updated_at": "2026-09-28T18:18:06.000Z",
+  "license": "nvidia-open-model-agreement",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "NemotronH_Nano_Omni_Reasoning_V3",
+    "mlx-vlm",
+    "nemotron",
+    "nemotron-h",
+    "mamba",
+    "moe",
+    "multimodal",
+    "computer-use",
+    "agent",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "base_model:Hcompany/Holotron4-30B-A3B",
+    "base_model:quantized:Hcompany/Holotron4-30B-A3B",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33015598918,
+  "parameters_human": "33.02B",
+  "storage_bytes": 19650575631,
+  "storage_human": "19.7 GB",
+  "base_model": "Hcompany/Holotron4-30B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Holo4: powering generalist computer-use agents - Hugging Face",
+      "url": "https://huggingface.co/blog/Hcompany/holo4",
+      "snippet": "A Blog post by H company on Hugging Face Holo4 is our new series of agentic models. It comes in two sizes: 27B dense and 35B-A3B Mixture of Experts. Both are available on the H Models API. We are also releasing an updated version of Holotron 3: Holotron4 Nano. Holo4 builds on our previous model and interacts with software through any available interface: GUIs, code, MCP and APIs. It scores ..."
+    },
+    {
+      "title": "k2_horizon_mlx.py · abenzerps/K2-Horizon-3.7B-MLX-4bit at main",
+      "url": "https://huggingface.co/abenzerps/K2-Horizon-3.7B-MLX-4bit/blob/main/k2_horizon_mlx.py",
+      "snippet": "Instructions to use abenzerps/K2-Horizon-3.7B-MLX-4bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use abenzerps/K2-Horizon-3.7B-MLX-4bit with MLX:"
+    },
+    {
+      "title": "nvidia / nemotron-3-nano-30b-a3b",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-nano-30b-a3b",
+      "snippet": "NVIDIA-Nemotron-3-Nano-30B-A3B is a general purpose reasoning and chat model intended to be used in English and coding languages. Other non-English languages (English, Spanish, French, German, Japanese, Italian) are also supported. This model is intended to be used by developers designing AI Agent systems, chatbots, RAG systems, and other AI-powered applications. This model is also suitable ..."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "Nemotron 3 Nano Omni 30B A3B Single model for video, audio, image, and text understanding for a simplified agent workflow Multimodal reasoning for sub-agents within agentic use cases such as computer use agent, document intelligence, and video/audio understanding Highest in-class efficiency and with low costs"
+    },
+    {
+      "title": "Open LLM Distribution Leaderboard",
+      "url": "https://osolmaz-leaderboard.hf.space/",
+      "snippet": "What counts Public Hugging Face model repos above the minimum download threshold are scanned, then filtered for LLM-ish text, coding, multimodal, and special architecture signals. Models Related repos are grouped by normalized model name and explicit base-model metadata when available. The main row uses the most-downloaded repo in that group."
+    }
+  ]
+}

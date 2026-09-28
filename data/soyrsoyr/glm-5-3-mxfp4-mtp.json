@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "soyrsoyr/GLM-5.3-MXFP4-MTP",
+  "slug": "soyrsoyr-glm-5-3-mxfp4-mtp",
+  "author": "soyrsoyr",
+  "url": "https://huggingface.co/soyrsoyr/GLM-5.3-MXFP4-MTP",
+  "created_at": "2026-09-28T19:07:27.000Z",
+  "updated_at": "2026-09-28T19:09:38.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "glm_moe_dsa",
+    "llm-compressor",
+    "compressed-tensors",
+    "mxfp4",
+    "mtp",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 403369066805,
+  "storage_human": "403.4 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grève du 29 septembre : écoles, trains, services publics ... - Actu",
+      "url": "https://actu.fr/societe/greve-du-29-septembre-ecoles-trains-services-publics-quels-secteurs-seront-vraiment-perturbes-ce-mardi_64848675.html",
+      "snippet": "3 hours ago · Écoles, lycées, hôpitaux… La fonction publique est en grève ce mardi 29 septembre 2026, face à un \"ras-le-bol\" et …"
+    },
+    {
+      "title": "Blocage des lycées : l’appel à la grève générale ce mardi",
+      "url": "https://www.75secondes.fr/etudes/blocage-des-lycees-lappel-a-la-greve-generale-ce-mardi",
+      "snippet": "19 hours ago · L’Union syndicale lycéenne (USL) appelle à bloquer l’ensemble des établissements scolaires ce mardi 29 septembre …"
+    },
+    {
+      "title": "Grève du 29 septembre : école, transports, services publics... quelles ...",
+      "url": "https://www.linternaute.com/actualite/societe/11305825-greve-du-29-septembre-ecole-transports-services-publics-quelles-perturbations-attendues/",
+      "snippet": "9 hours ago · Une grève de la fonction publique est annoncée pour ce mardi 29 septembre. Des manifestations auront lieu dans les …"
+    },
+    {
+      "title": "Grève dans la fonction publique : écoles, lycées, transports... À quoi ...",
+      "url": "https://www.tf1info.fr/societe/greve-dans-la-fonction-publique-mardi-29-septembre-2026-ecoles-lycees-transports-a-quoi-faut-il-s-attendre-2466842.html",
+      "snippet": "3 hours ago · Les principaux syndicats de la fonction publique appellent à une journée de mobilisation ce mardi 29 septembre. Alors …"
+    },
+    {
+      "title": "Grève du 29 septembre : écoles, lycées, transports, soignants ...",
+      "url": "https://www.rtl.fr/actu/debats-societe/greve-du-29-septembre-ecoles-lycees-transports-soignants-policiers-quelle-mobilisation-dans-la-fonction-publique-mardi-7900677756",
+      "snippet": "6 hours ago · La fonction publique se met en grève afin de contester notamment le gel du point d'indice des fonctionnaires dans le …"
+    }
+  ]
+}

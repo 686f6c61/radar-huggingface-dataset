@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OpenBuddy/OpenChoice-4B-v1",
+  "slug": "openbuddy-openchoice-4b-v1",
+  "author": "OpenBuddy",
+  "url": "https://huggingface.co/OpenBuddy/OpenChoice-4B-v1",
+  "created_at": "2026-09-28T03:23:42.000Z",
+  "updated_at": "2026-09-28T05:53:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 4205792256,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8424441574,
+  "storage_human": "8.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenBuddy/OpenChoice-4B-v1 · Hugging Face",
+      "url": "https://huggingface.co/OpenBuddy/OpenChoice-4B-v1",
+      "snippet": "A system-1 choice model that selects from 2–16 supplied candidates and returns the selected candidate and candidate probabilities."
+    },
+    {
+      "title": "GitHub - OpenBuddy/OpenBuddy: Open Multilingual Chatbot for Everyone ...",
+      "url": "https://github.com/OpenBuddy/OpenBuddy",
+      "snippet": "OpenBuddy is a powerful open multilingual chatbot model aimed at global users, emphasizing conversational AI and seamless multilingual support for English, Chinese, and other languages."
+    },
+    {
+      "title": "OpenBuddy.ai - Multilingual Chatbot for Everyone",
+      "url": "https://openbuddy.ai/",
+      "snippet": "OpenBuddy is a powerful multilingual AI chatbot model with a focus on conversational AI and seamless English-Chinese bilingual capabilities."
+    },
+    {
+      "title": "GitHub - OpenBuddy/OpenChoice",
+      "url": "https://github.com/OpenBuddy/OpenChoice/tree/main",
+      "snippet": "Turn context into a clear choice. Model: OpenBuddy/OpenChoice-4B-v1 · Project OpenChoice-4B-v1 is a system-1 choice model for decisions expressed in natural language. Supply a state, a question, and 2–16 candidates. Get a selected candidate ID and a probability distribution in one forward pass."
+    },
+    {
+      "title": "OpenBuddy/SimpleChat-4B-V1 · Hugging Face",
+      "url": "https://huggingface.co/OpenBuddy/SimpleChat-4B-V1",
+      "snippet": "OpenBuddy is provided \"as-is\" without any warranty of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability, fitness for a particular purpose, and non-infringement."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dusersad12/NovaReasoner-BestCheckpoint",
+  "slug": "dusersad12-novareasoner-bestcheckpoint",
+  "author": "dusersad12",
+  "url": "https://huggingface.co/dusersad12/NovaReasoner-BestCheckpoint",
+  "created_at": "2026-09-28T17:52:07.000Z",
+  "updated_at": "2026-09-28T17:52:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dusersad12/BestCheckpoint-Demo · Hugging Face",
+      "url": "https://huggingface.co/dusersad12/BestCheckpoint-Demo",
+      "snippet": "BestCheckpoint Demo This model checkpoint was selected from a hyperparameter sweep as the best-performing run."
+    },
+    {
+      "title": "Models | InvokeAI Documentation",
+      "url": "https://invoke.ai/concepts/models/",
+      "snippet": "The model checkpoint files (*.ckpt) are the Stable Diffusion \"secret sauce\". They are the product of training the AI on millions of captioned images gathered from multiple sources. Originally there was only a single Stable Diffusion weights file, which many people named model.ckpt. Today, there are thousands of models, fine tuned to excel at specific styles, genres, or themes. Model Formats"
+    },
+    {
+      "title": "Checkpoint AI Models (142) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 142 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "GitHub - techjarves/Portable-Local-Studio: Portable local AI studio for ...",
+      "url": "https://github.com/techjarves/Portable-Local-Studio",
+      "snippet": "Portable AI Studio is a completely offline, zero-setup, self-contained AI studio for Windows, Linux, and macOS. Unlike cloud-based AI systems, it runs entirely on your own hardware with no censorship, tracking, subscriptions, or login requirements. It unifies four major local AI capabilities into one high-performance desktop interface: 🎨 Image Generation (Stable Diffusion): Generate and ..."
+    },
+    {
+      "title": "How to Install Stable Diffusion Checkpoints & Models",
+      "url": "https://www.nextdiffusion.ai/tutorials/how-to-install-stable-diffusion-checkpoints-models",
+      "snippet": "Learn how to effectively install checkpoints and models in Stable Diffusion to enhance your image generation capabilities. Discover key concepts about models and the significance of Variable Autoencoders for stunning outputs."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "VINAY-UMRETHE/qwen3.5-heretic-tiny-test",
+  "slug": "vinay-umrethe-qwen3-5-heretic-tiny-test",
+  "author": "VINAY-UMRETHE",
+  "url": "https://huggingface.co/VINAY-UMRETHE/qwen3.5-heretic-tiny-test",
+  "created_at": "2026-09-28T17:56:19.000Z",
+  "updated_at": "2026-09-28T17:56:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "conversational",
+    "base_model:tiny-random/qwen3.5",
+    "base_model:finetune:tiny-random/qwen3.5",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4396512,
+  "parameters_human": "4.4M",
+  "storage_bytes": 48782053,
+  "storage_human": "49 MB",
+  "base_model": "tiny-random/qwen3.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Using Heretic does not require an understanding of transformer internals. In fact, anyone who knows how to run a command-line program can use Heretic to decensor language models. Heretic supports most dense models, including many multimodal models, several different MoE architectures, and even some hybrid models like Qwen3.5."
+    },
+    {
+      "title": "VINAY-UMRETHE/Qwen3-VL-4B-Instruct-heretic-Semantic-Same - Hugging Face",
+      "url": "https://huggingface.co/VINAY-UMRETHE/Qwen3-VL-4B-Instruct-heretic-Semantic-Same",
+      "snippet": "Browse Quantizations to use this model in llama.cpp, Ollama, LM Studio, or any compatible app. This is a decensored version of Qwen/Qwen3-VL-4B-Instruct, made using Heretic v1.4.0"
+    },
+    {
+      "title": "VINAY-UMRETHE/Qwen3-0.6B-heretic-Test5 · Hugging Face",
+      "url": "https://huggingface.co/VINAY-UMRETHE/Qwen3-0.6B-heretic-Test5",
+      "snippet": "VINAY-UMRETHE / Qwen3-.6B-heretic-Test5 like 0 Text Generation Transformers Safetensors qwen3 heretic uncensored decensored abliterated reproducible conversational text-generation-inference arxiv:2505.09388 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Vinay-Umrethe (Vinay Umrethe) · GitHub",
+      "url": "https://github.com/Vinay-Umrethe",
+      "snippet": "A graph representing Vinay-Umrethe&#x27;s contributions from September 21, 2025 to September 25, 2026. The contributions are 40% commits, 26% pull requests, 19% code review, 15% issues."
+    },
+    {
+      "title": "Qwen3.5 35b A3b Heretic - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-5-35b-a3b-heretic.html",
+      "snippet": "Download Qwen3.5 35b A3b Heretic GGUF model. 19.5 GB, 1,042 downloads, 27 likes."
+    }
+  ]
+}

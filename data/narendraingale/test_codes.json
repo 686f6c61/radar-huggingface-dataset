@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "narendraingale/test_codes",
+  "slug": "narendraingale-test_codes",
+  "author": "narendraingale",
+  "url": "https://huggingface.co/narendraingale/test_codes",
+  "created_at": "2026-09-28T19:28:24.000Z",
+  "updated_at": "2026-09-28T19:28:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Coding Landscape 2026 - AI Models, Agents, Tooling, Benchmarks ...",
+      "url": "https://cleverhack.com/ai-coding-landscape",
+      "snippet": "A current collection of AI coding models, AI coding agents, AI CLI tools, open source tools, AI IDEs, AI coding benchmarks & leaderboards, and more"
+    },
+    {
+      "title": "AI models shock UK testers by using fake identities to try to trick ...",
+      "url": "https://www.theguardian.com/technology/2026/aug/05/openai-anthropic-models-went-rogue-cybersecurity-test-ai-security-institute",
+      "snippet": "Last month, OpenAI said an agent powered by its models had hacked an AI startup during a test. Days later, Anthropic said its Claude model had hacked three organisations during an evaluation."
+    },
+    {
+      "title": "Anthropic&#x27;s AI model tried to trick humans into poisoning code during ...",
+      "url": "https://www.politico.com/news/2026/08/04/anthropic-openai-aisi-testing-01025042",
+      "snippet": "Anthropic&#x27;s AI model tried to trick humans into poisoning code during safety testing A leading model from OpenAI also took unsanctioned action on the internet during the same test, the evaluator ..."
+    },
+    {
+      "title": "How to Test AI Models: A Step-by-Step Framework - smartdev.com",
+      "url": "https://smartdev.com/ai-model-testing-guide/",
+      "snippet": "Struggling with AI reliability? This AI model testing guide gives you a 6-step framework, tools, metrics & a ready-to-use checklist."
+    },
+    {
+      "title": "AI Coding Arena — Run LLM Outputs Side-by-Side, Live",
+      "url": "https://testingmodels.com/coding",
+      "snippet": "One prompt, every model, real outputs running live in your browser. Compare Claude Opus 5, Fable 5, GPT-5.6, Gemini 3.1 and GLM-5.2 across 40 coding and design challenges."
+    }
+  ]
+}

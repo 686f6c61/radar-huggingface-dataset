@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "llmtech/decider-4b-fp8",
+  "slug": "llmtech-decider-4b-fp8",
+  "author": "llmtech",
+  "url": "https://huggingface.co/llmtech/decider-4b-fp8",
+  "created_at": "2026-09-28T03:00:17.000Z",
+  "updated_at": "2026-09-28T03:25:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "decision-model",
+    "calibrated",
+    "structured-output",
+    "multi-task",
+    "system-one",
+    "one-pass",
+    "fp8",
+    "llm-compressor",
+    "vllm",
+    "text-classification",
+    "en",
+    "base_model:Mapika/decider-4b",
+    "base_model:quantized:Mapika/decider-4b",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 4868678085,
+  "storage_human": "4.9 GB",
+  "base_model": "Mapika/decider-4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

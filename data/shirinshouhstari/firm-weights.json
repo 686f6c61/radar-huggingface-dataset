@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ShirinShouhstari/FIRM-weights",
+  "slug": "shirinshouhstari-firm-weights",
+  "author": "ShirinShouhstari",
+  "url": "https://huggingface.co/ShirinShouhstari/FIRM-weights",
+  "created_at": "2026-09-28T17:32:37.000Z",
+  "updated_at": "2026-09-28T18:12:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "inverse-problems",
+    "flow-matching",
+    "image-restoration",
+    "inpainting",
+    "super-resolution",
+    "deblurring",
+    "denoising",
+    "compressed-sensing",
+    "mri",
+    "image-to-image",
+    "arxiv:2609.12953",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2747468552,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - xigh/open-weight-models: Curated list of open-weight AI models ...",
+      "url": "https://github.com/xigh/open-weight-models",
+      "snippet": "Curated list of open-weight AI models with commercially exploitable licenses, verified benchmarks, and no EU restrictions. - xigh/open-weight-models"
+    },
+    {
+      "title": "Mistral Shieldstral: Open-Weight AI Safety Model, Explained",
+      "url": "https://www.aiwerse.blog/ai-tools/mistral-shieldstral-open-weight-ai-safety-model-explained",
+      "snippet": "What Is Shieldstral Shieldstral is Mistral AI&#x27;s new open-weight safety classifier, built specifically to moderate AI inputs and outputs — prompts, model responses, and images — against rules you define yourself."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "Best Open Source AI Models & LLM Leaderboard (2026)",
+      "url": "https://lmmarketcap.com/open-source-ai-models",
+      "snippet": "What are the best open source AI models in 2026? The top open source AI models in 2026 include Meta&#x27;s Llama 4 family, DeepSeek R1 and V3, Mistral&#x27;s Large and Medium models, Alibaba&#x27;s Qwen 2.5 series, and Google&#x27;s Gemma. These models offer competitive performance with full access to model weights, enabling self-hosting and fine-tuning."
+    },
+    {
+      "title": "drforbin.ai — AI model torrents, indexed | Open weights. Distributed ...",
+      "url": "https://drforbin.ai/",
+      "snippet": "The public index for open-weight AI model torrents. Magnet links, infohashes, and rich metadata for openly licensed LLMs, diffusion, audio and embedding models."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ZihanLiummyycc/drax-dbank-full-decoder",
+  "slug": "zihanliummyycc-drax-dbank-full-decoder",
+  "author": "ZihanLiummyycc",
+  "url": "https://huggingface.co/ZihanLiummyycc/drax-dbank-full-decoder",
+  "created_at": "2026-09-28T16:11:36.000Z",
+  "updated_at": "2026-09-28T16:22:49.000Z",
+  "license": "upstream-terms-and-author-rights",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "automatic-speech-recognition",
+    "elderly-speech",
+    "dementiabank",
+    "discrete-flow-matching",
+    "component-checkpoint",
+    "full-decoder-finetuning",
+    "en",
+    "arxiv:2510.04162",
+    "base_model:aiola/drax-v1",
+    "base_model:finetune:aiola/drax-v1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2319564576,
+  "storage_human": "2.3 GB",
+  "base_model": "aiola/drax-v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spicetify",
+      "url": "https://spicetify.app/",
+      "snippet": "Windows macOS / Linux $ iwr -useb https://raw.githubusercontent.com/spicetify/cli/main/install.ps1 | iex"
+    },
+    {
+      "title": "Getting Started | Spicetify",
+      "url": "https://spicetify.app/docs/getting-started",
+      "snippet": "If this is a fresh Spotify install, open Spotify and log in for at least 60 seconds before running Spicetify. This allows Spotify to generate …"
+    },
+    {
+      "title": "Spicetify - GitHub",
+      "url": "https://github.com/spicetify",
+      "snippet": "spicetify-themes Public A community-driven collection of themes for customizing Spotify through Spicetify - …"
+    },
+    {
+      "title": "Releases · spicetify/cli - GitHub",
+      "url": "https://github.com/spicetify/cli/releases",
+      "snippet": "Sep 17, 2026 · Spicetify now protects Spotify's update staging folder with reversible Windows permissions, leaving the signed client …"
+    },
+    {
+      "title": "Spicetify - Download",
+      "url": "https://spicetify.en.softonic.com/",
+      "snippet": "Jun 23, 2026 · Spicetify is a free music program by a group of indie developers over at Spicetify. It is a command line-based utility …"
+    }
+  ]
+}
