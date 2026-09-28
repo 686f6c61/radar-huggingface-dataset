@@ -5,23 +5,22 @@
   "author": "r0b0tlab",
   "url": "https://huggingface.co/r0b0tlab/GLM-5.3-Flash-EXL3-2.25bpw-sm121",
   "created_at": "2026-09-20T19:44:06.000Z",
-  "updated_at": "2026-09-25T14:19:20.000Z",
+  "updated_at": "2026-09-28T01:36:05.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": null,
-  "library": "vllm",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
   "languages": [
     "en",
     "zh"
   ],
   "tags": [
-    "vllm",
+    "exllamav3",
     "safetensors",
     "glm5_next",
     "base_model:zai-org/GLM-5.3-Flash",
     "base_model:quantized:zai-org/GLM-5.3-Flash",
     "exl3",
-    "exllamav3",
     "quantization",
     "moe",
     "dgx-spark",
@@ -29,6 +28,9 @@
     "sm121",
     "speculative-decoding",
     "dflash2",
+    "long-context",
+    "text-generation",
+    "conversational",
     "en",
     "license:mit",
     "region:us"
@@ -44,7 +46,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

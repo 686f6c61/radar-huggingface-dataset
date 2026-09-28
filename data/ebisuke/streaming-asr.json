@@ -4,8 +4,8 @@
   "slug": "ebisuke-streaming-asr",
   "author": "ebisuke",
   "url": "https://huggingface.co/ebisuke/streaming-asr",
-  "created_at": "2026-09-19T14:05:40.000Z",
-  "updated_at": "2026-09-19T19:51:26.000Z",
+  "created_at": "2026-09-28T03:07:52.000Z",
+  "updated_at": "2026-09-28T04:58:27.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,16 +21,16 @@
   "trending_score": 0,
   "parameters": 824226817,
   "parameters_human": "824.2M",
-  "storage_bytes": 19781565480,
-  "storage_human": "19.8 GB",
+  "storage_bytes": 34785581324,
+  "storage_human": "34.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-21T02:40:27.165Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

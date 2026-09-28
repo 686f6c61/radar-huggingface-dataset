@@ -45,12 +45,12 @@
     "region:us"
   ],
   "likes": 8,
-  "downloads_30d": 1348,
+  "downloads_30d": 1613,
   "trending_score": 0,
   "parameters": 35562370195,
   "parameters_human": "35.56B",
-  "storage_bytes": 284512292750,
-  "storage_human": "284.5 GB",
+  "storage_bytes": 376080889160,
+  "storage_human": "376.1 GB",
   "base_model": "logic65/Whittle-Next-27B-A3B",
   "formats": [
     "safetensors"

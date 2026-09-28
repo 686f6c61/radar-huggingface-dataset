@@ -5,7 +5,7 @@
   "author": "BiboyQG",
   "url": "https://huggingface.co/BiboyQG/hw1-hc3-detector",
   "created_at": "2026-09-17T22:46:52.000Z",
-  "updated_at": "2026-09-17T22:46:59.000Z",
+  "updated_at": "2026-09-28T02:19:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 22713986,
   "parameters_human": "22.7M",
-  "storage_bytes": 90867952,
-  "storage_human": "91 MB",
+  "storage_bytes": 181735904,
+  "storage_human": "182 MB",
   "base_model": "sentence-transformers/all-MiniLM-L6-v2",
   "formats": [
     "safetensors"

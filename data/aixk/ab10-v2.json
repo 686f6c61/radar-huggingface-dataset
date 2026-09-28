@@ -5,7 +5,7 @@
   "author": "aixk",
   "url": "https://huggingface.co/aixk/ab10-v2",
   "created_at": "2026-09-12T02:54:53.000Z",
-  "updated_at": "2026-09-15T13:08:31.000Z",
+  "updated_at": "2026-09-27T12:57:46.000Z",
   "license": "non-commercial-only",
   "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
@@ -35,12 +35,12 @@
     "region:us"
   ],
   "likes": 10,
-  "downloads_30d": 3037,
+  "downloads_30d": 3045,
   "trending_score": 0,
   "parameters": 167814656,
   "parameters_human": "167.8M",
-  "storage_bytes": 7325535667,
-  "storage_human": "7.3 GB",
+  "storage_bytes": 7550816668,
+  "storage_human": "7.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

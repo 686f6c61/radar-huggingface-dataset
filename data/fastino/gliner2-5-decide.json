@@ -5,7 +5,7 @@
   "author": "fastino",
   "url": "https://huggingface.co/fastino/GLiNER2.5-Decide",
   "created_at": "2026-09-23T14:56:12.000Z",
-  "updated_at": "2026-09-24T22:33:51.000Z",
+  "updated_at": "2026-09-28T00:59:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -30,7 +30,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 208,
+  "likes": 209,
   "downloads_30d": 19757,
   "trending_score": 207,
   "parameters": 486444053,

@@ -5,7 +5,7 @@
   "author": "Huggingbase1baseebasebase",
   "url": "https://huggingface.co/Huggingbase1baseebasebase/FlixTest",
   "created_at": "2026-08-25T14:50:57.000Z",
-  "updated_at": "2026-09-21T04:00:18.000Z",
+  "updated_at": "2026-09-27T20:40:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 651,
+  "downloads_30d": 806,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 248997757718,
-  "storage_human": "249.0 GB",
+  "storage_bytes": 249783704974,
+  "storage_human": "249.8 GB",
   "base_model": null,
   "formats": [
     "gguf"
