@@ -5,7 +5,7 @@
   "author": "hugo-guigo",
   "url": "https://huggingface.co/hugo-guigo/bertimbau-misoginia-ptbr",
   "created_at": "2026-09-27T18:51:26.000Z",
-  "updated_at": "2026-09-27T18:52:47.000Z",
+  "updated_at": "2026-09-27T19:08:37.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -14,6 +14,7 @@
     "pt"
   ],
   "tags": [
+    "onnx",
     "safetensors",
     "bert",
     "misogyny-detection",
@@ -23,7 +24,7 @@
     "text-classification",
     "pt",
     "base_model:neuralmind/bert-base-portuguese-cased",
-    "base_model:finetune:neuralmind/bert-base-portuguese-cased",
+    "base_model:quantized:neuralmind/bert-base-portuguese-cased",
     "license:other",
     "region:us"
   ],
@@ -32,10 +33,11 @@
   "trending_score": 0,
   "parameters": 108924674,
   "parameters_human": "108.9M",
-  "storage_bytes": 435722224,
-  "storage_human": "436 MB",
+  "storage_bytes": 545868191,
+  "storage_human": "546 MB",
   "base_model": "neuralmind/bert-base-portuguese-cased",
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

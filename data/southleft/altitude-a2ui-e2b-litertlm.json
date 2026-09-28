@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "southleft/altitude-a2ui-e2b-litertlm",
+  "slug": "southleft-altitude-a2ui-e2b-litertlm",
+  "author": "southleft",
+  "url": "https://huggingface.co/southleft/altitude-a2ui-e2b-litertlm",
+  "created_at": "2026-09-27T20:07:01.000Z",
+  "updated_at": "2026-09-27T20:14:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "a2ui",
+    "generative-ui",
+    "design-system",
+    "altitude",
+    "on-device",
+    "webgpu",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2293258112,
+  "storage_human": "2.3 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Altitude — Our Design System & AI Testbed — Southleft",
+      "url": "https://southleft.com/tools/altitude/",
+      "snippet": "Altitude is Southleft&#x27;s in-house design system: a Figma-to-production ecosystem built on Lit web components and Style Dictionary tokens — and the testbed for every AI integration we run."
+    },
+    {
+      "title": "A2UI Bridge",
+      "url": "https://a2ui.southleft.com/",
+      "snippet": "Let AI agents build real user interfaces. A React implementation of Google&#x27;s A2UI protocol for AI-generated UIs using your design system."
+    },
+    {
+      "title": "GitHub - southleft/a2ui-bridge: Framework adapters for Google&#x27;s A2UI ...",
+      "url": "https://github.com/southleft/a2ui-bridge",
+      "snippet": "Let AI agents create real user interfaces using any component library. A2UI Bridge implements Google&#x27;s A2UI Protocol for React, enabling AI-generated UIs that render with your existing design system."
+    },
+    {
+      "title": "Southleft — AI-Powered Design Systems",
+      "url": "https://southleft.com/",
+      "snippet": "Design systems consulting, engineering, and AI integration — from the team behind Figma Console MCP and Story UI."
+    },
+    {
+      "title": "GitHub - southleft/altitude: Design System starter kit",
+      "url": "https://github.com/southleft/altitude",
+      "snippet": "Design System starter kit. Contribute to southleft/altitude development by creating an account on GitHub."
+    }
+  ]
+}

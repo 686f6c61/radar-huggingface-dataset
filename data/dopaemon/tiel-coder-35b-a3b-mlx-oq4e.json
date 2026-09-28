@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "dopaemon/Tiel-Coder-35B-A3B-MLX-oQ4e",
+  "slug": "dopaemon-tiel-coder-35b-a3b-mlx-oq4e",
+  "author": "dopaemon",
+  "url": "https://huggingface.co/dopaemon/Tiel-Coder-35B-A3B-MLX-oQ4e",
+  "created_at": "2026-09-27T19:40:19.000Z",
+  "updated_at": "2026-09-27T19:40:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "omlx",
+    "apple-silicon",
+    "oq",
+    "qwen35moe",
+    "moe",
+    "imatrix",
+    "unsloth-dynamic",
+    "agentic-coding",
+    "token-efficient",
+    "vision",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 21117592763,
+  "storage_human": "21.1 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e-MTP · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e-MTP",
+      "snippet": "Other setups have seen real gains on this exact model family — the sibling KaedeTai/Ornith-1.5-35B-A3B-BigBang-MTP-mlx-4bit reports ~1.16× on an M5 Max, and our GGUF-MTP build gains on llama.cpp (whose C++ batched-MoE verify is more efficient). We ship this so users whose hardware benefits can use it."
+    },
+    {
+      "title": "Tiel Coder 35B A3B MLX OQ6e by peculiar-ragdoll",
+      "url": "https://llm-explorer.com/model/peculiar-ragdoll%2FTiel-Coder-35B-A3B-MLX-oQ6e,73htXcPqtKOdO1vKEX9Az6",
+      "snippet": "Tiel Coder 35B A3B MLX OQ6e is an open-source 35b LLM by peculiar-ragdoll. VRAM 29.5GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Cyber Tiel Coder 35b A3b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/cyber-tiel-coder-35b-a3b.html",
+      "snippet": "Download Cyber Tiel Coder 35b A3b GGUF model. 20.7 GB, 5,440 downloads, 29 likes."
+    },
+    {
+      "title": "Tiel Coder 35B A3B MLX OQ6e MTP by peculiar-ragdoll",
+      "url": "https://llm-explorer.com/model/peculiar-ragdoll%2FTiel-Coder-35B-A3B-MLX-oQ6e-MTP,1CJgiIdfVYmQrYbG1EGpf7",
+      "snippet": "Tiel Coder 35B A3B MLX OQ6e MTP is an open-source 35b LLM by peculiar-ragdoll. VRAM 29.5GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zokizuan/satori-cbm-extractors",
+  "slug": "zokizuan-satori-cbm-extractors",
+  "author": "zokizuan",
+  "url": "https://huggingface.co/zokizuan/satori-cbm-extractors",
+  "created_at": "2026-09-28T01:28:42.000Z",
+  "updated_at": "2026-09-28T01:29:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "satori",
+    "tree-sitter",
+    "webassembly",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107449826,
+  "storage_human": "107 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sésamath - Accueil",
+      "url": "https://www.sesamath.net/",
+      "snippet": "Ce projet est associé à Sésamath (l’association n’en est pas responsable). J3P, pour Parcours Pédagogiques Personnalisés, …"
+    },
+    {
+      "title": "Sésamath - Accueil",
+      "url": "https://sesaprof.sesamath.net/",
+      "snippet": "Sésaprof est l’espace de Sésamath pour les professeurs. Les enseignants inscrits peuvent grace à leur compte Sésamath : accéder …"
+    },
+    {
+      "title": "Manuels et Cahiers Sésamath - Téléchargements",
+      "url": "https://manuel.sesamath.net/index.php?page=telechargement",
+      "snippet": "Manuels et Cahiers Sésamath - Versions numériques , compléments numériques, sources téléchargeables."
+    },
+    {
+      "title": "Manuels et Cahiers Sésamath - Téléchargements",
+      "url": "https://manuel.sesamath.net/index.php?page=telechargement_5e_cahier_2026",
+      "snippet": "Cahier Sésamath 5e (2026) Introduction Ce cahier suit les nouveaux programmes de 5e en vigueur à la rentrée 2026. Il reprend des …"
+    },
+    {
+      "title": "Sésamath — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/S%C3%A9samath",
+      "snippet": "Sésamath, en tant qu'association, est l'auteur de plusieurs manuels scolaires et de cahiers d'exercices en mathématiques. Ces …"
+    }
+  ]
+}

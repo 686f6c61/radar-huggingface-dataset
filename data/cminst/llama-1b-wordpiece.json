@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "cminst/Llama-1B-WordPiece",
+  "slug": "cminst-llama-1b-wordpiece",
+  "author": "cminst",
+  "url": "https://huggingface.co/cminst/Llama-1B-WordPiece",
+  "created_at": "2026-09-27T23:26:49.000Z",
+  "updated_at": "2026-09-27T23:27:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "causal-lm",
+    "wordpiece",
+    "research",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1038686208,
+  "parameters_human": "1.04B",
+  "storage_bytes": 2077389160,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub · Change is constant. GitHub keeps you ahead.",
+      "url": "https://github.com/",
+      "snippet": "Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open …"
+    },
+    {
+      "title": "GitHub",
+      "url": "https://github.com/github",
+      "snippet": "How people build software. GitHub has 564 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub Docs",
+      "url": "https://docs.github.com/en",
+      "snippet": "Get started, troubleshoot, and make the most of GitHub. Documentation for new users, developers, administrators, and all of …"
+    },
+    {
+      "title": "Variables reference - GitHub Docs",
+      "url": "https://docs.github.com/en/actions/reference/workflows-and-actions/variables",
+      "snippet": "This article lists the supported variables you can use in GitHub Actions workflows, including environment variables, configuration …"
+    },
+    {
+      "title": "Agents | Awesome GitHub Copilot",
+      "url": "https://awesome-copilot.github.com/agents/",
+      "snippet": "Agents Specialized agents that enhance GitHub Copilot for specific technologies, workflows, and domains — contributed and curated …"
+    }
+  ]
+}

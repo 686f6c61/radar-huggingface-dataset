@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "imm-domi/g1_loco",
+  "slug": "imm-domi-g1_loco",
+  "author": "imm-domi",
+  "url": "https://huggingface.co/imm-domi/g1_loco",
+  "created_at": "2026-07-07T12:05:55.000Z",
+  "updated_at": "2026-09-28T00:03:11.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58732487841,
+  "storage_human": "58.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IMM | Institut Montsouris Hôpital ouvert à tous",
+      "url": "https://imm.fr/",
+      "snippet": "L’IMM est un hôpital qui prend en charge les pathologies chirurgicales, la maternité, la psychiatrie et les sevices de médecine.Read more"
+    },
+    {
+      "title": "IMM– Le dispositif médical innovant",
+      "url": "https://www.immfrance.fr/",
+      "snippet": "IMM, international medical mediation, a été créée en 1997 avec notre premier assemblage : le set de saignée. Grâce à l'arrivée de …Read more"
+    },
+    {
+      "title": "IMM | Institut de Microbiologie de la Méditerranée",
+      "url": "https://www.imm.cnrs.fr/",
+      "snippet": "Les plateformes de l’IMM : L'Institut de Microbiologie de la Méditerranée est composé de plateformes scientifiques et techniques, …Read more"
+    },
+    {
+      "title": "Prendre rendez-vous - IMM | Institut Montsouris",
+      "url": "https://imm.fr/prendre-rdv/",
+      "snippet": "Vous pouvez également prendre rendez-vous en ligne via Doctolib pour les services suivants :Read more"
+    },
+    {
+      "title": "ImmiAccount",
+      "url": "https://online.immi.gov.au/lusc/login",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité.Read more"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asddcsd/MyAwesomeModel-best",
+  "slug": "asddcsd-myawesomemodel-best",
+  "author": "asddcsd",
+  "url": "https://huggingface.co/asddcsd/MyAwesomeModel-best",
+  "created_at": "2026-09-27T23:26:13.000Z",
+  "updated_at": "2026-09-27T23:51:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "asddcsd/MyAwesomeModel-best · Hugging Face",
+      "url": "https://huggingface.co/asddcsd/MyAwesomeModel-best",
+      "snippet": "Best checkpoint selected from the training run based on the highest eval_accuracy."
+    },
+    {
+      "title": "ASD2SAC21D/MyAwesomeModel-best · Hugging Face",
+      "url": "https://huggingface.co/ASD2SAC21D/MyAwesomeModel-best",
+      "snippet": "Compared to the previous version, the upgraded model shows significant improvements in handling complex reasoning tasks. For instance, in the AIME 2025 test, the model's accuracy has increased from 70% in the previous version to 87.5% in the ..."
+    },
+    {
+      "title": "ASDSA12DSA213/MyAwesomeModel-best · Hugging Face",
+      "url": "https://huggingface.co/ASDSA12DSA213/MyAwesomeModel-best",
+      "snippet": "The detailed evaluation results ... The MyAwesomeModel demonstrates strong performance across all evaluated benchmark categories, with particularly notable results in reasoning and generation tasks...."
+    },
+    {
+      "title": "asddcsd/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/asddcsd/MyAwesomeModel-TestRepo",
+      "snippet": "Beyond its improved reasoning ... The MyAwesomeModel demonstrates strong performance across all evaluated benchmark categories, with particularly notable results in reasoning and generation tasks...."
+    },
+    {
+      "title": "asddcsd/MyAwesomeModel-TestRepository · Hugging Face",
+      "url": "https://huggingface.co/asddcsd/MyAwesomeModel-TestRepository",
+      "snippet": "Beyond its improved reasoning ... The MyAwesomeModel demonstrates strong performance across all evaluated benchmark categories, with particularly notable results in reasoning and generation tasks...."
+    }
+  ]
+}

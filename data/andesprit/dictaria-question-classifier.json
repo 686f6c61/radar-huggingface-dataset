@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Andesprit/dictaria-question-classifier",
+  "slug": "andesprit-dictaria-question-classifier",
+  "author": "Andesprit",
+  "url": "https://huggingface.co/Andesprit/dictaria-question-classifier",
+  "created_at": "2026-09-27T20:06:17.000Z",
+  "updated_at": "2026-09-27T20:10:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "pt"
+  ],
+  "tags": [
+    "onnx",
+    "question-detection",
+    "meetings",
+    "int8",
+    "transformers.js",
+    "text-classification",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:quantized:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135401606,
+  "storage_human": "135 MB",
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai-research-lab/bert-question-classifier · Hugging Face",
+      "url": "https://huggingface.co/ai-research-lab/bert-question-classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dictaria | Meeting Coach, transcription, and notes",
+      "url": "https://dictaria.andesprit.com/",
+      "snippet": "Dictaria is an AI meeting coach with live transcription and notes. Ask for advice while the conversation is still going, then keep the decisions and find them again weeks later."
+    },
+    {
+      "title": "ai-research-lab/bert-question-classifier-onnx · Hugging Face",
+      "url": "https://huggingface.co/ai-research-lab/bert-question-classifier-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Andesprit / The best minds on the Andes - GitHub",
+      "url": "https://github.com/Andesprit",
+      "snippet": "Andesprit is an independent software studio from the Andes. We build focused productivity products and open-source software, and create custom AI agents, automations, chatbots and web platforms for organizations of every size."
+    }
+  ]
+}

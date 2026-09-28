@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Nexus-Walker/Reson",
+  "slug": "nexus-walker-reson",
+  "author": "Nexus-Walker",
+  "url": "https://huggingface.co/Nexus-Walker/Reson",
+  "created_at": "2025-09-06T13:14:50.000Z",
+  "updated_at": "2026-09-27T23:06:47.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-2-7b-chat-hf",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "doi:10.57967/hf/6480",
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1761007977,
+  "storage_human": "1.8 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nexus Mods - Mods and Community",
+      "url": "https://www.nexusmods.com/",
+      "snippet": "Nexus Mods News Statistics Careers About us Premium features Discover All games All mods New mods Popular mods Trending …Read more"
+    },
+    {
+      "title": "Nexus – Magazine d’information indépendant",
+      "url": "https://www.nexus.fr/",
+      "snippet": "Nexus publie une information libre et documentée qui revisite les concepts établis en science, santé, énergie, conscience, exologie, …"
+    },
+    {
+      "title": "Nexus — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nexus",
+      "snippet": "Nexus, une revue publiée par l'Institut Nexus aux Pays-Bas, paraissant trois fois par an sous forme de livre (200 pages). Articles …"
+    },
+    {
+      "title": "Qui sommes-nous ? – Nexus",
+      "url": "https://www.nexus.fr/qui-sommes-nous/",
+      "snippet": "Le magazine NEXUS est un bimestriel de 112 pages (sans publicité !) engagé en faveur d’une information qui résonne avec les …"
+    },
+    {
+      "title": "Nexus Games | serveurs de jeux & VPS livrés en 60 secondes",
+      "url": "https://nexus-games.com/",
+      "snippet": "Nexus Games héberge vos serveurs de jeux et VPS sur du matériel haute performance, avec protection Anti-DDoS et support 7j/7."
+    }
+  ]
+}

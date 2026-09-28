@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "trefon/PILA",
+  "slug": "trefon-pila",
+  "author": "trefon",
+  "url": "https://huggingface.co/trefon/PILA",
+  "created_at": "2026-09-27T19:29:51.000Z",
+  "updated_at": "2026-09-27T19:29:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Consulting That Actually Ships | Trefon",
+      "url": "https://www.trefon.com/",
+      "snippet": "I&#x27;m Jack Trefon. 28 years building technology - 15 in leadership roles as CTO and Head of Engineering. The last 4+ years focused on AI, from custom model work to large-scale agentic integrations."
+    },
+    {
+      "title": "Model Pile AI: Advanced Multi-Model AI Solutions | Model Pile AI",
+      "url": "https://ifusionsoft.ai/features",
+      "snippet": "Model Pile AI lets you compare, debate, and critique over 25 AI models simultaneously for reliable, consensus-driven document and data analysis."
+    },
+    {
+      "title": "PILA — PolyTrack Imitation Learning Agent - GitHub",
+      "url": "https://github.com/tryfonaskam/pila",
+      "snippet": "PILA (PolyTrack Imitation Learning AI) is an imitation learning agent trained to play PolyTrack by learning directly from recorded human gameplay — not from hard-coded rules. Instead of manually programming behavior, PILA uses supervised learning to map game states to player actions, allowing it to imitate realistic human driving."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 508 AI models across 486 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "PILA 2026 — Personal Intelligence in the Agentic AI Era | KDD Workshop",
+      "url": "https://pila26-workshop.github.io/",
+      "snippet": "PILA &#x27;26 (Personal Intelligence in the Agentic AI Era) brings together researchers and practitioners working on personalized agents, user modeling, and human-centered AI. As the first dedicated workshop on this theme, PILA &#x27;26 focuses on personal intelligence in the era of agentic AI. It explores how AI systems can move beyond general-purpose models toward systems that explicitly model ..."
+    }
+  ]
+}

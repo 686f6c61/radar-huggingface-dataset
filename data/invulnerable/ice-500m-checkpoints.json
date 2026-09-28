@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "invulnerable/ice-500m-checkpoints",
+  "slug": "invulnerable-ice-500m-checkpoints",
+  "author": "invulnerable",
+  "url": "https://huggingface.co/invulnerable/ice-500m-checkpoints",
+  "created_at": "2026-09-12T15:56:36.000Z",
+  "updated_at": "2026-09-28T00:13:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 178454161954,
+  "storage_human": "178.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

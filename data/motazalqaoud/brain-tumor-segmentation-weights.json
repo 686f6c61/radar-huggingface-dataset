@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "motazalqaoud/brain-tumor-segmentation-weights",
+  "slug": "motazalqaoud-brain-tumor-segmentation-weights",
+  "author": "motazalqaoud",
+  "url": "https://huggingface.co/motazalqaoud/brain-tumor-segmentation-weights",
+  "created_at": "2026-09-27T19:31:51.000Z",
+  "updated_at": "2026-09-28T00:30:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "medical-imaging",
+    "segmentation",
+    "3d",
+    "mri",
+    "brain-tumor",
+    "monai",
+    "attention-unet",
+    "image-segmentation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94617685,
+  "storage_human": "95 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - motazalqaoud/Brain-Tumor-Segmentation: Multi-class brain tumor ...",
+      "url": "https://github.com/motazalqaoud/Brain-Tumor-Segmentation",
+      "snippet": "Multi-class brain tumor segmentation from MRI. Give it a 4-modality NIfTI scan (FLAIR, T1, T1-contrast, T2) and it segments the tumor into three clinically standard regions: Tumor Core, Whole Tumor, and Enhancing Tumor. The model works on the full 3D volume, not individual 2D slices."
+    },
+    {
+      "title": "Releases · motazalqaoud/Brain-Tumor-Segmentation · GitHub",
+      "url": "https://github.com/motazalqaoud/Brain-Tumor-Segmentation/releases",
+      "snippet": "First release of Brain Tumor Segmentation — 3D Attention U-Net Trained for 50 epochs on the Kaggle Brain Tumor 12K dataset using a CPU-optimised pseudo-3D pipeline."
+    },
+    {
+      "title": "Motaz Alqaoud, AI Engineer for Healthcare",
+      "url": "https://motazalqaoud.com/",
+      "snippet": "DeepLearning.AI AI for Medical Diagnosis Built CNN models for image classification and segmentation to diagnose lung and brain disorders from medical scans."
+    },
+    {
+      "title": "GitHub - motazalqaoud/Brain-Tumor-Segmentation: Multi-class brain tumor ...",
+      "url": "https://github.zh-ak.com/motazalqaoud/Brain-Tumor-Segmentation",
+      "snippet": "Per-class Mean Tumor Dice tracked for all 7 WHO tumor categories during training and evaluation Every engineering decision is driven by clinical requirements — voxel spacing, orientation metadata, and correct intensity handling are treated as first-class concerns, not afterthoughts. Repository Structure Brain-Tumor-Segmentation/ │"
+    },
+    {
+      "title": "Brain tumor segmentation with deep learning: Current approaches and ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0165027025000652",
+      "snippet": "Method: This research provides a systematic review of automatic brain tumor segmentation techniques, with a specific focus on the design of network architectures. The review categorizes existing methods into unsupervised and supervised learning techniques, as well as machine learning and deep learning approaches within supervised techniques."
+    }
+  ]
+}

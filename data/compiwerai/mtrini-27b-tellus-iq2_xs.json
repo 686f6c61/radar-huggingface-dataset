@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "CompiwerAI/Mtrini-27B-Tellus-IQ2_XS",
+  "slug": "compiwerai-mtrini-27b-tellus-iq2_xs",
+  "author": "CompiwerAI",
+  "url": "https://huggingface.co/CompiwerAI/Mtrini-27B-Tellus-IQ2_XS",
+  "created_at": "2026-09-27T20:42:39.000Z",
+  "updated_at": "2026-09-27T20:47:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "iq2_xs",
+    "qwen",
+    "coding",
+    "mathematics",
+    "reasoning",
+    "darija",
+    "arabic",
+    "text-generation",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 9090591520,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CompiwerAI/Mtrini-27B-Tellus · Hugging Face",
+      "url": "https://huggingface.co/CompiwerAI/Mtrini-27B-Tellus",
+      "snippet": "Instructions to use CompiwerAI/Mtrini-27B-Tellus with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use CompiwerAI/Mtrini-27B-Tellus with PEFT:"
+    },
+    {
+      "title": "CompiwerAI (Compiwer AI) - Hugging Face",
+      "url": "https://huggingface.co/CompiwerAI",
+      "snippet": "User profile of Compiwer AI on Hugging Face"
+    },
+    {
+      "title": "Bonsai 2 27B: Run a 27B AI Locally on Your Laptop - DataCamp",
+      "url": "https://www.datacamp.com/blog/bonsai-2-27b",
+      "snippet": "PrismML&#x27;s Bonsai 2 27B keeps 98.2% of Qwen3.8 27B&#x27;s benchmark performance in a 5.9GB, Apache 2.0 model that runs locally on consumer GPUs and Macs."
+    },
+    {
+      "title": "Bonsai 2 27B: Near-Lossless Ternary Model (2026) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/prismml-bonsai-2-27b-near-lossless-compression-2026",
+      "snippet": "PrismML shipped Bonsai 2 27B on Sep 17, 2026 — a 5.9GB ternary compression of Qwen3.8 27B retaining 98.2% of full-precision benchmark performance."
+    },
+    {
+      "title": "Bonsai 27B - Bonsai - docs.prismml.com",
+      "url": "https://docs.prismml.com/models/bonsai-27b",
+      "snippet": "Bonsai 27B is the largest multimodal model in the family: it accepts vision input alongside text. It is based on Qwen3.6 27B. Like every Bonsai, the language model is quantized end-to-end 1-bit or ternary weights across embeddings, attention, MLPs, and the LM head. The vision tower is handled separately, at 4-bit."
+    }
+  ]
+}

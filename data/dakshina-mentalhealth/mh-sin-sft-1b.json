@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Dakshina-mentalHealth/mh-sin-sft-1b",
+  "slug": "dakshina-mentalhealth-mh-sin-sft-1b",
+  "author": "Dakshina-mentalHealth",
+  "url": "https://huggingface.co/Dakshina-mentalHealth/mh-sin-sft-1b",
+  "created_at": "2026-09-27T20:07:10.000Z",
+  "updated_at": "2026-09-27T22:29:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 2975714504,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adapter_model.safetensors · Dakshina-mentalHealth/mh-sin-mistral at main",
+      "url": "https://huggingface.co/Dakshina-mentalHealth/mh-sin-mistral/blob/main/adapter_model.safetensors",
+      "snippet": "Dakshina-mentalHealth / mh-sin-mistral Like 0 Transformers Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI agent carries out first known hack of a government system",
+      "url": "https://www.cnn.com/2026/09/23/business/australia-openai-agent-hack-intl-hnk",
+      "snippet": "An OpenAI agent hacked into an Australian national healthcare database in the first known case of AI hacking a government network, the country&#x27;s prime minister said Wednesday."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    }
+  ]
+}

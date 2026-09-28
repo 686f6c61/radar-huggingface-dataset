@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bikash4002/qwen2-vl-medical-ocr",
+  "slug": "bikash4002-qwen2-vl-medical-ocr",
+  "author": "bikash4002",
+  "url": "https://huggingface.co/bikash4002/qwen2-vl-medical-ocr",
+  "created_at": "2026-09-27T22:23:11.000Z",
+  "updated_at": "2026-09-27T22:23:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172959439,
+  "storage_human": "173 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QiYuan-tech/Qwen2-VL-Med",
+      "url": "https://github.com/QiYuan-tech/Qwen2-VL-Med",
+      "snippet": "📦Model 📚Evaluation Note GMAI-MMBench, represents a pioneering benchmark specifically tailored for the medical domain, aimed at offering thorough assessments of Large Vision-Language Models (LVLMs) in diverse healthcare facets."
+    },
+    {
+      "title": "Qwen2-VL: Vision-Language Model for OCR and VQA - GitHub",
+      "url": "https://github.com/shaadclt/Qwen2-VL-OCR-VQA",
+      "snippet": "This project demonstrates how to use the Qwen2-VL model from Hugging Face for Optical Character Recognition (OCR) and Visual Question Answering (VQA). The model combines vision and language capabilities, enabling users to analyze images and generate context-based responses. In this project, we&#x27;ll specifically explore its application in analyzing a football image and providing tactical insights."
+    },
+    {
+      "title": "prithivMLmods/Qwen2-VL-OCR-2B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/Qwen2-VL-OCR-2B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OCR | QwenLM/Qwen2.5-VL | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen2.5-VL/6.4-ocr",
+      "snippet": "This document covers the Optical Character Recognition (OCR) capabilities of Qwen2.5-VL and Qwen3-VL, explaining how to use the model for extracting text from images and documents. Qwen-VL models inte"
+    },
+    {
+      "title": "JackChew/Qwen2-VL-2B-OCR · Hugging Face",
+      "url": "https://huggingface.co/JackChew/Qwen2-VL-2B-OCR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

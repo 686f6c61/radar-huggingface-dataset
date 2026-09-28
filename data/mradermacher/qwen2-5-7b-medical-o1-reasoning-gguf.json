@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-7B-Medical-O1-Reasoning-GGUF",
+  "slug": "mradermacher-qwen2-5-7b-medical-o1-reasoning-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-7B-Medical-O1-Reasoning-GGUF",
+  "created_at": "2026-09-27T20:01:42.000Z",
+  "updated_at": "2026-09-27T20:39:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "en",
+    "base_model:thepoliticalscientist/Qwen2.5-7B-Medical-O1-Reasoning",
+    "base_model:quantized:thepoliticalscientist/Qwen2.5-7B-Medical-O1-Reasoning",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146896512,
+  "storage_human": "68.1 GB",
+  "base_model": "thepoliticalscientist/Qwen2.5-7B-Medical-O1-Reasoning",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen2.5_7B_medical_1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5_7B_medical_1-GGUF",
+      "snippet": "mradermacher / Qwen2.5_7B_medical_1-GGUF like 0 Transformers GGUF English unsloth trl sft License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "To pull a model checkpoint and run the model, use the ollama run command. You can specify a model size by adding a suffix to qwen2.5, such as :0.5b, :1.5b, :7b, or :72b:"
+    },
+    {
+      "title": "Qwen2.5: A Party of Foundation Models!",
+      "url": "https://qwen.ai/blog?id=qwen2.5",
+      "snippet": "A significant update in Qwen2.5 is the reintroduction of our 14B and 32B models, Qwen2.5-14B and Qwen2.5-32B. These models outperform baseline models of comparable or larger sizes, such as Phi-3.5-MoE-Instruct and Gemma2-27B-IT, across diverse tasks."
+    },
+    {
+      "title": "Qwen2.5-Math Technical Report: Toward Mathematical Expert Model via ...",
+      "url": "https://arxiv.org/html/2409.12122v1",
+      "snippet": "Over the past year, we have devoted considerable effort to researching and enhancing the reasoning capabilities of large language models, with a particular emphasis on their ability to solve arithmetic and mathematical problems. In this report, we introduce a series of math-specific large language models, Qwen2.5-Math, Qwen2.5-Math-RM, and Qwen2.5-Math-Instruct-1.5B/7B/72B. To provide a ..."
+    }
+  ]
+}

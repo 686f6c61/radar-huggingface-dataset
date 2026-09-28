@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/Qwen3.5-9B-abliterated",
+  "slug": "0xsojalsec-qwen3-5-9b-abliterated",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/Qwen3.5-9B-abliterated",
+  "created_at": "2026-09-27T22:10:42.000Z",
+  "updated_at": "2026-09-27T22:10:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "abliterated",
+    "uncensored",
+    "qwen3.5",
+    "qwen",
+    "conversational",
+    "en",
+    "arxiv:2406.11717",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927652351,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Buy your video games cheaper for PC and consoles - Instant Gaming",
+      "url": "https://www.instant-gaming.com/en/?msockid=3dcd363d217b619e20ff21dc206e60e8",
+      "snippet": "Instant Gaming is an online platform that sells digital video games, offering discounts on a wide range of titles across various gaming …"
+    },
+    {
+      "title": "Achetez vos jeux vidéo moins cher sur PC et consoles - Instant Gaming",
+      "url": "https://www.instant-gaming.com/fr/?msockid=3dcd363d217b619e20ff21dc206e60e8",
+      "snippet": "Instant Gaming est une plateforme en ligne qui vend des jeux vidéo numériques à prix réduits, proposant des remises attractives sur …"
+    },
+    {
+      "title": "Instant Gaming",
+      "url": "https://instantgaming.fr/",
+      "snippet": "Retrouve tout tes jeux à des prix incroyables !"
+    },
+    {
+      "title": "Buy your PC games cheaper - Instant Gaming",
+      "url": "https://www.instant-gaming.com/en/pc/?msockid=3dcd363d217b619e20ff21dc206e60e8",
+      "snippet": "Instant Gaming is a hard discount platform created by gamers for gamers, offering unbeatable prices on a wide variety of products. …"
+    },
+    {
+      "title": "Kaufe deine Videospiele für PC und Konsolen günstiger - Instant Gaming!",
+      "url": "https://www.instant-gaming.com/de/?msockid=3dcd363d217b619e20ff21dc206e60e8",
+      "snippet": "Instant Gaming ist eine fantastische Plattform, um deine PC-, PlayStation-, XBOX- und Switch-Spiele günstiger zu kaufen, mit 24/7 …"
+    }
+  ]
+}

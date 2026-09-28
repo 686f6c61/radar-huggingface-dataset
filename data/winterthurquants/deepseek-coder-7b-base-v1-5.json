@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "winterthurquants/deepseek-coder-7b-base-v1.5",
+  "slug": "winterthurquants-deepseek-coder-7b-base-v1-5",
+  "author": "winterthurquants",
+  "url": "https://huggingface.co/winterthurquants/deepseek-coder-7b-base-v1.5",
+  "created_at": "2026-09-27T20:55:05.000Z",
+  "updated_at": "2026-09-27T20:55:06.000Z",
+  "license": "deepseek-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6910365696,
+  "parameters_human": "6.91B",
+  "storage_bytes": 13820763168,
+  "storage_human": "13.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "30 Best Anime of All Time - Japan Web Magazine",
+      "url": "https://jw-webmagazine.com/tips/best-anime/",
+      "snippet": "Mar 25, 2020 · This greatest anime list picks out 30 best anime of all time including the classic series and the new ongoing …Read more"
+    },
+    {
+      "title": "Anime - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Anime",
+      "snippet": "South Park ' s \"Chinpokomon\" and \"Good Times with Weapons\" episodes, Adult Swim 's Perfect Hair Forever, and Nickelodeon 's …"
+    },
+    {
+      "title": "20 Highest Rated Anime In Japan (2025 Edition) - Anime Senpai",
+      "url": "https://www.animesenpai.net/20-highest-rated-anime-in-japan-2025-edition/",
+      "snippet": "Apr 4, 2025 · Now, on to the numbers: over 270k votes have been cast by around 50k users for the most popular anime of all time, …"
+    },
+    {
+      "title": "Watch Anime Online",
+      "url": "https://www.anime-planet.com/anime/watch-online/",
+      "snippet": "Watch Anime Online Watch a selection of anime episodes on Anime-Planet. All videos are legal and industry-supported due to …"
+    },
+    {
+      "title": "Watch Popular Anime With Same-Day Release As Japan For FREE! - mewatch",
+      "url": "https://www.mewatch.sg/series/anime",
+      "snippet": "Anime series from Japan, Korea and China. Free on mewatch, with English subtitles."
+    }
+  ]
+}

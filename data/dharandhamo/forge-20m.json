@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "dharandhamo/Forge-20M",
+  "slug": "dharandhamo-forge-20m",
+  "author": "dharandhamo",
+  "url": "https://huggingface.co/dharandhamo/Forge-20M",
+  "created_at": "2026-09-27T20:45:02.000Z",
+  "updated_at": "2026-09-27T21:00:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "gpt",
+    "decoder-only",
+    "transformer",
+    "from-scratch",
+    "nanogpt",
+    "causal-lm",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 250632080,
+  "storage_human": "251 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dharandhamo/Forge-20M · Hugging Face",
+      "url": "https://huggingface.co/dharandhamo/Forge-20M",
+      "snippet": "Model Details Model Description Forge-20M is a small causal language model built to implement and train a GPT-style transformer from first principles: custom causal self-attention, learned positional embeddings, weight tying, and a full training loop with mixed precision and gradient accumulation."
+    },
+    {
+      "title": "GitHub - Dhamodharan2006/Forge-20M: A 20.75M parameter, GPT-2-style ...",
+      "url": "https://github.com/Dhamodharan2006/Forge-20M/tree/main",
+      "snippet": "Overview Forge-20M is a small language model built to explore, line by line, how a transformer-based LLM actually works: causal self-attention, positional embeddings, the training loop, mixed-precision optimization, and the practical debugging that goes into making all of it run correctly on constrained hardware."
+    },
+    {
+      "title": "dharandhamo (Dhamodharan S) - Hugging Face",
+      "url": "https://huggingface.co/dharandhamo",
+      "snippet": "AI & ML interests ... Recent Activity upvoted a paper about 3 hours ago ... updated a model 2 days ago ... updated a model 2 days ago"
+    },
+    {
+      "title": "AI Supply Chain Decision Software | Model Forge",
+      "url": "https://www.modelforge.ai/",
+      "snippet": "Replace spreadsheets with AI that improves forecasting, inventory, pricing, and logistics decisions in real time. Built to grow with your business. Free tier available."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    }
+  ]
+}

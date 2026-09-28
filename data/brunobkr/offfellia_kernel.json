@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Brunobkr/OFFFELLIA_KERNEL",
+  "slug": "brunobkr-offfellia_kernel",
+  "author": "Brunobkr",
+  "url": "https://huggingface.co/Brunobkr/OFFFELLIA_KERNEL",
+  "created_at": "2026-09-27T20:00:58.000Z",
+  "updated_at": "2026-09-27T20:02:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "fastapi",
+    "llm-ui",
+    "agentic",
+    "local-inference",
+    "self-hosted",
+    "privacy",
+    "pt",
+    "en",
+    "doi:10.57967/hf/10637",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9601712,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brunobkr (Bruno Becker) - Hugging Face",
+      "url": "https://huggingface.co/datasets/Brunobkr/",
+      "snippet": "Recent Activity updated a modelabout 2 hours ago Brunobkr/OFFFELLIA_LFM-2.5-2.6B-heretic.gguf published a modelabout 2 hours ago Brunobkr/OFFFELLIA_LFM-2.5-2.6B-heretic.gguf updated a modelabout 3 hours ago Brunobkr/OFFFELLIA_MiMo-V2.6-Distill-Qwen-9B.gguf View all activity"
+    },
+    {
+      "title": "Brunobkr (Bruno) - Hugging Face",
+      "url": "https://huggingface.co/Brunobkr/models",
+      "snippet": "Independent researcher in mathematics and AI development."
+    },
+    {
+      "title": "Offfellia Llm Jp 4 32b A3b Thinking.gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/brunobkr/offfellia_llm-jp-4-32b-a3b-thinking.gguf",
+      "snippet": "Registry entry for model Offfellia Llm Jp 4 32b A3b Thinking.gguf; source metadata pending."
+    },
+    {
+      "title": "README.md · Brunobkr/OFFELLIA_IQ4_NL_Qwable-v1.gguf at main",
+      "url": "https://d6108366.hf-mirror.com/Brunobkr/OFFELLIA_IQ4_NL_Qwable-v1.gguf/blob/main/README.md?code=true",
+      "snippet": "Brunobkr / OFFELLIA_IQ4_NL_Qwable-v1.gguf like 0 Text Generation GGUF English Portuguese llama.cpp quantized offellia zetahelicoidal helicoidal-zeta multilingual portuguese brasil heretic abliterated uncensored conversational License:refer-to-base-model Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Brunobkr/OFFELLIA_Quantis · Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/Brunobkr/OFFELLIA_Quantis",
+      "snippet": "Brunobkr / OFFELLIA_Quantis like 1 GGUF doi:10.57967/hf/7790 Q4_K MOdel, modell, modelo, Ai, IA, LLM, gguf, OFFELLIA, geometrical, opensource, portuguese, Brasil, PT-BR, IBM, LFM, Qwen, Llama.cpp, conversational License:mit Model card FilesFiles and versions xet Community 1 Deploy Use this model Implementação da Função Helicoidal Universal ..."
+    }
+  ]
+}

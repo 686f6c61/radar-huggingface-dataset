@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "PS4Research/ocuMmGPo51nEQ9MC",
+  "slug": "ps4research-ocummgpo51neq9mc",
+  "author": "PS4Research",
+  "url": "https://huggingface.co/PS4Research/ocuMmGPo51nEQ9MC",
+  "created_at": "2026-09-27T19:55:11.000Z",
+  "updated_at": "2026-09-27T20:02:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "seed_oss",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ByteDance-Seed/Seed-OSS-36B-Instruct",
+    "base_model:finetune:ByteDance-Seed/Seed-OSS-36B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36151104512,
+  "parameters_human": "36.15B",
+  "storage_bytes": 72314182011,
+  "storage_human": "72.3 GB",
+  "base_model": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Plexytrade | Forex, Stocks, Indices, Commodities",
+      "url": "https://www.plexytrade.com/",
+      "snippet": "Why Choose Plexytrade? Plexytrade has decades of accumulated experience offering the best trading products and conditions."
+    },
+    {
+      "title": "Login to your account - Plexytrade",
+      "url": "https://my.plexytrade.com/en/login",
+      "snippet": "Not registered with Plexytrade? Open Live Account Open Demo Account To see how we use your data, please review our Privacy …"
+    },
+    {
+      "title": "Forex Trading | Plexytrade",
+      "url": "https://www.plexytrade.com/markets/forex/",
+      "snippet": "Enjoy Plexytrade MT5 platform benefits along with the mobile trading extras via smartphones and tablets, iOS and Android. Trade on …"
+    },
+    {
+      "title": "Register - Plexytrade",
+      "url": "https://my.plexytrade.com/en/register",
+      "snippet": "Create your Forex trading account today. Start trading on the world's leading currency markets with fast registration and secure access."
+    },
+    {
+      "title": "Read Customer Service Reviews of plexytrade.com - Trustpilot",
+      "url": "https://www.trustpilot.com/review/plexytrade.com",
+      "snippet": "Plexytrade delivers an exceptional trading environment designed to meet the diverse needs of every trader. We offer various account …"
+    }
+  ]
+}

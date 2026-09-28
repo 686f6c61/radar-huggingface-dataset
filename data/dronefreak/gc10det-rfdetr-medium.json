@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "dronefreak/gc10det-rfdetr-medium",
+  "slug": "dronefreak-gc10det-rfdetr-medium",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/gc10det-rfdetr-medium",
+  "created_at": "2026-09-27T20:49:12.000Z",
+  "updated_at": "2026-09-27T20:49:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "rfdetr",
+  "languages": [],
+  "tags": [
+    "rfdetr",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "industrial-inspection",
+    "surface-defect-detection",
+    "manufacturing-qa",
+    "metallic-surface",
+    "quality-control",
+    "dataset:dronefreak/GC10-DET",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2410.17725",
+    "arxiv:2606.03748",
+    "base_model:Roboflow/rf-detr-medium",
+    "base_model:finetune:Roboflow/rf-detr-medium",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134414404,
+  "storage_human": "134 MB",
+  "base_model": "Roboflow/rf-detr-medium",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "mAP@50 (test split)",
+      "value": 75.93
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "mAP@50-95 (test split)",
+      "value": 41.93
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "Precision (test split)",
+      "value": 78.25
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "Recall (test split)",
+      "value": 67.76
+    }
+  ],
+  "sources": [
+    {
+      "title": "README.md · dronefreak/GC10-DET at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/dronefreak/GC10-DET/blob/main/README.md",
+      "snippet": "Datasets: dronefreak / GC10-DET Like 0 Tasks: Object Detection Modalities: Image Text Formats: json Languages: English Size: 1K - 10K Tags: object-detection industrial surface-defect-detection metallic-surface quality-inspection computer-vision + 2 Libraries: Datasets pandas Polars + 1 License: cc-by-4. Dataset card Data Studio FilesFiles and versions xet Community main GC10-DET /README.md ..."
+    },
+    {
+      "title": "dronefreak (Saumya Saksena) - Hugging Face",
+      "url": "https://huggingface.co/dronefreak",
+      "snippet": "Computer Vision, Deep Learning, Image Restoration, Image De-noising, LLMs, RAG, Image Classification, Image Segmentation, EEG Classification, Signal Processing, PPG, BCI"
+    },
+    {
+      "title": "DetectionBench/src/detectionbench/datasets/gc10det.py at main ... - GitHub",
+      "url": "https://github.com/dronefreak/DetectionBench/blob/main/src/detectionbench/datasets/gc10det.py",
+      "snippet": "Standardized evaluation of modern object detectors beyond COCO. - dronefreak/DetectionBench"
+    },
+    {
+      "title": "RF-DETR Medium - RF-DETR",
+      "url": "https://rfdetr.roboflow.com/reference/medium/",
+      "snippet": "Bases: RFDETR Train an RF-DETR Medium model. Source code in rfdetr/detr.py"
+    },
+    {
+      "title": "GitHub - dronefreak/DetectionBench",
+      "url": "https://github.com/dronefreak/DetectionBench",
+      "snippet": "Every model, regardless of family, also gets hardware profiling (latency, FPS, VRAM, parameters, FLOPs) via detectionbench-benchmark and per-class metrics via detectionbench-evaluate."
+    }
+  ]
+}

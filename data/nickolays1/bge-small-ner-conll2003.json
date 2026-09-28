@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 33215625,
   "parameters_human": "33.2M",
-  "storage_bytes": 132890869,
-  "storage_human": "133 MB",
+  "storage_bytes": 398662077,
+  "storage_human": "399 MB",
   "base_model": "BAAI/bge-small-en-v1.5",
   "formats": [
     "safetensors"

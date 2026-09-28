@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "constructelligence/electrical-circuit-connectivity",
+  "slug": "constructelligence-electrical-circuit-connectivity",
+  "author": "constructelligence",
+  "url": "https://huggingface.co/constructelligence/electrical-circuit-connectivity",
+  "created_at": "2026-09-27T19:26:00.000Z",
+  "updated_at": "2026-09-27T19:26:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "electrical",
+    "floor-plan",
+    "construction",
+    "circuit",
+    "connectivity",
+    "takeoff",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6955731,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best AI Tools for Electrical Engineers (2026): Design Smarter",
+      "url": "https://cognitivefuture.ai/best-ai-tools-for-electrical-engineering/",
+      "snippet": "Explore the best AI tools for electrical engineering. Improve circuit design, simulation, and power systems with practical AI software."
+    },
+    {
+      "title": "Constructelligence - GitHub",
+      "url": "https://github.com/Constructelligence",
+      "snippet": "Constructelligence has 67 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Connectivity Model | Electric Power Engineers (EPE)",
+      "url": "https://epeconsulting.com/epe-intelligence/publications/connectivity-model",
+      "snippet": "The ENER-i .AI Electrical Connectivity Model shall have the latest connectivity information about all the grid stages, including forecasting, planning, designing, as-built, and as-operated views for both transmission and distribution."
+    },
+    {
+      "title": "A Survey of Circuit Foundation Model: Foundation AI Models for VLSI ...",
+      "url": "https://arxiv.org/html/2504.03711v2",
+      "snippet": "This new paradigm brings many advantages: model generalization, less reliance on labeled circuit data, efficient adaptation to new tasks, and unprecedented generative capability. In this paper, we propose referring to AI models developed with this new paradigm as circuit foundation models (CFMs)."
+    },
+    {
+      "title": "EEschematic: Multimodal-LLM Based AI Agent for Schematic Generation of ...",
+      "url": "https://arxiv.org/html/2510.17002",
+      "snippet": "To address this limitation, we propose EEschematic, an AI agent for automatic analog schematic generation based on a Multimodal Large Language Model (MLLM). EEschematic integrates textual, visual, and symbolic modalities to translate SPICE netlists into schematic diagrams represented in a human-editable format."
+    }
+  ]
+}

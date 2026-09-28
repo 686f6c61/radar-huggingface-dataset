@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Dani2343/Aloo",
+  "slug": "dani2343-aloo",
+  "author": "Dani2343",
+  "url": "https://huggingface.co/Dani2343/Aloo",
+  "created_at": "2026-09-27T21:09:01.000Z",
+  "updated_at": "2026-09-27T21:09:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nos implantations - Ingérop",
+      "url": "https://www.ingerop.fr/le-groupe/implantations/",
+      "snippet": "Retrouvez toutes les implantations du groupe."
+    },
+    {
+      "title": "Nos filiales en France - Ingérop",
+      "url": "https://www.ingerop.fr/notre-offre/nos-filiales-en-france/",
+      "snippet": "Retrouvez les filiales de notre groupe localisées en France."
+    },
+    {
+      "title": "Ingérop — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ing%C3%A9rop",
+      "snippet": "En 2025, Ingérop possède 50 agences et cinq directions régionales en France. Son siège est domicilié à Rueil-Malmaison (92)."
+    },
+    {
+      "title": "Ingerop - agence-api.ouest-france.fr",
+      "url": "https://agence-api.ouest-france.fr/annuaire/societe/ingerop-9dd50717-e31d-458c-a479-ca7e07982b33",
+      "snippet": "Jul 1, 2026 · Présentation Ingerop est un groupe d’ingénierie et de conseil en mobilité durable, transition énergétique et cadre de vie. …"
+    },
+    {
+      "title": "Le Groupe Ingérop",
+      "url": "https://carrieres.ingerop.com/le-groupe",
+      "snippet": "Groupe d’ingénierie français, indépendant dont l’origine remonte à 1962 et acteur reconnu à l’international, nous sommes spécialisés …"
+    }
+  ]
+}

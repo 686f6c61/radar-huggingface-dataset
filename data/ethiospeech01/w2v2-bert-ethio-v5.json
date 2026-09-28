@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "ethiospeech01/w2v2-bert-ethio-v5",
+  "slug": "ethiospeech01-w2v2-bert-ethio-v5",
+  "author": "ethiospeech01",
+  "url": "https://huggingface.co/ethiospeech01/w2v2-bert-ethio-v5",
+  "created_at": "2026-09-27T19:13:20.000Z",
+  "updated_at": "2026-09-27T19:21:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "am",
+    "ti",
+    "om",
+    "sid",
+    "so",
+    "aa"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2-bert",
+    "automatic-speech-recognition",
+    "ctc",
+    "ethiopian-languages",
+    "am",
+    "ti",
+    "om",
+    "sid",
+    "so",
+    "aa",
+    "base_model:facebook/w2v-bert-2.0",
+    "base_model:finetune:facebook/w2v-bert-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 606004351,
+  "parameters_human": "606.0M",
+  "storage_bytes": 2424122468,
+  "storage_human": "2.4 GB",
+  "base_model": "facebook/w2v-bert-2.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ethiospeech01/whisper-lora-v3-ethiopian · Hugging Face",
+      "url": "https://huggingface.co/ethiospeech01/whisper-lora-v3-ethiopian",
+      "snippet": "ethiospeech01 / whisper-lora-v3-ethiopian Like 0 Follow Ethio Speech 7 PEFT Safetensors Transformers lora arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ethiospeech01/whisper-lora-v3-ethiopian at main - Hugging Face",
+      "url": "https://huggingface.co/ethiospeech01/whisper-lora-v3-ethiopian/tree/main",
+      "snippet": "ethiospeech01 / whisper-lora-v3-ethiopian Like 0 Follow Ethio Speech 7 PEFT Safetensors Transformers lora arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Browse 30,000+ AI Voice Models for RVC",
+      "url": "https://voice-models.com/",
+      "snippet": "Search 30,000+ AI voice models for RVC. Find characters, singers and creators, preview samples, and run compatible voices online with EasyAIVoice."
+    },
+    {
+      "title": "EthiopicAI - AI that Speaks Ethiopia",
+      "url": "https://ethiopic.ai/",
+      "snippet": "AI that understands Ethiopia We build speech, language, and large-language-model systems that sound Ethiopian, understand context, and scale across sectors."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/wav2vec2-bert.md at main ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/wav2vec2-bert.md",
+      "snippet": "The Wav2Vec2-BERT model was proposed in Seamless: Multilingual Expressive and Streaming Speech Translation by the Seamless Communication team from Meta AI. This model was pre-trained on 4.5M hours of unlabeled audio data covering more than 143 languages. It requires finetuning to be used for downstream tasks such as Automatic Speech Recognition (ASR), or Audio Classification. The official ..."
+    }
+  ]
+}

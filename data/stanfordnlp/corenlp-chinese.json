@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "stanfordnlp/corenlp-chinese",
+  "slug": "stanfordnlp-corenlp-chinese",
+  "author": "stanfordnlp",
+  "url": "https://huggingface.co/stanfordnlp/corenlp-chinese",
+  "created_at": "2022-03-02T23:29:05.000Z",
+  "updated_at": "2026-09-27T22:45:33.000Z",
+  "license": "gpl-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "corenlp",
+    "zh",
+    "license:gpl-2.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5733315096,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.red/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world's largest community …Read more"
+    },
+    {
+      "title": "Civitai Gallery | AI-Generated Art Showcase",
+      "url": "https://civitai.red/tools/comfyui",
+      "snippet": "It is a node-based GUI that lets users create complex workflows without coding.Read more"
+    },
+    {
+      "title": "Red AI Models (224) | Civitai",
+      "url": "https://civitai.com/tag/red",
+      "snippet": "Browse 224 AI models tagged \"Red\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. …Read more"
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, …Read more"
+    },
+    {
+      "title": "What Is CivitAI Red? What Designers Should | Lovart",
+      "url": "https://www.lovart.ai/blog/what-is-civitai-red",
+      "snippet": "Jun 27, 2026 · What CivitAI Red actually is, how access and safety differ from production readiness, and when designers should stop …Read more"
+    }
+  ]
+}

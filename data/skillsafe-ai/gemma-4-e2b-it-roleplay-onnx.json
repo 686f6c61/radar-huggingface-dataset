@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "skillsafe-ai/gemma-4-E2B-it-roleplay-ONNX",
+  "slug": "skillsafe-ai-gemma-4-e2b-it-roleplay-onnx",
+  "author": "skillsafe-ai",
+  "url": "https://huggingface.co/skillsafe-ai/gemma-4-E2B-it-roleplay-ONNX",
+  "created_at": "2026-09-28T00:48:28.000Z",
+  "updated_at": "2026-09-28T00:52:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "gemma4",
+    "image-text-to-text",
+    "roleplay",
+    "character",
+    "sfw",
+    "in-browser",
+    "webgpu",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:beyoru/Aesir-Character-CoT-roleplay",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3130508887,
+  "storage_human": "3.1 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "skillsafe-ai/gemma-4-E2B-it-roleplay-ONNX · Hugging Face",
+      "url": "https://huggingface.co/skillsafe-ai/gemma-4-E2B-it-roleplay-ONNX",
+      "snippet": "gemma-4-E2B-it-roleplay-ONNX google/gemma-4-E2B-it fine-tuned for SFW character role-play, packaged to run fully in the browser on WebGPU with Transformers.js. This is a text-only build of about 3.1 GB."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "skillsafe-ai/gemma-4-E2B-it-roleplay-ONNX · Discussions",
+      "url": "https://huggingface.co/skillsafe-ai/gemma-4-E2B-it-roleplay-ONNX/discussions",
+      "snippet": "skillsafe-ai / gemma-4-E2B-it-roleplay-ONNX Like 0 Follow SkillSafe AI 1 Text Generation Transformers.js ONNX beyoru/Aesir-Character-CoT-roleplay English gemma4 image-text-to-text roleplay character sfw in-browser webgpu conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "Gemma 4 | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/litert-lm/models/gemma-4",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size, targeting deployment scenarios from mobile and edge devices (E2B, E4B) to consumer GPUs and workstations (26B A4B, 31B). They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    }
+  ]
+}

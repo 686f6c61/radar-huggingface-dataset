@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "bakhtin/Qwen3.8-27B-ED-5bpw-GGUF",
+  "slug": "bakhtin-qwen3-8-27b-ed-5bpw-gguf",
+  "author": "bakhtin",
+  "url": "https://huggingface.co/bakhtin/Qwen3.8-27B-ED-5bpw-GGUF",
+  "created_at": "2026-09-28T01:08:54.000Z",
+  "updated_at": "2026-09-28T01:19:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "bakhtin",
+    "ED",
+    "GGUF",
+    "image-text-to-text",
+    "ru",
+    "en",
+    "base_model:ggml-org/Qwen3.8-27B-GGUF",
+    "base_model:quantized:ggml-org/Qwen3.8-27B-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 17102718304,
+  "storage_human": "17.1 GB",
+  "base_model": "ggml-org/Qwen3.8-27B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

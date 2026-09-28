@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "pratham2908/zra-kpr-model",
+  "slug": "pratham2908-zra-kpr-model",
+  "author": "pratham2908",
+  "url": "https://huggingface.co/pratham2908/zra-kpr-model",
+  "created_at": "2026-09-27T19:31:26.000Z",
+  "updated_at": "2026-09-27T19:31:34.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "flux",
+    "text-to-image",
+    "lora",
+    "fal",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 130958064,
+  "storage_human": "131 MB",
+  "base_model": "undefined",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 508 AI models across 486 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pratham AI School - India&#x27;s First Fully AI-Enabled Techno School",
+      "url": "https://prathamai.school/",
+      "snippet": "Pratham AI School is India&#x27;s first fully AI-enabled techno school, offering personalized AI tutors, virtual labs, blockchain credentials, and immersive 3D classrooms."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore how every major AI model evolved from its ancestors. Interactive visualization of LLM genealogy."
+    }
+  ]
+}

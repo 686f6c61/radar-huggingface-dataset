@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "dronefreak/gc10det-rfdetr-small",
+  "slug": "dronefreak-gc10det-rfdetr-small",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/gc10det-rfdetr-small",
+  "created_at": "2026-09-27T20:48:56.000Z",
+  "updated_at": "2026-09-27T20:49:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "rfdetr",
+  "languages": [],
+  "tags": [
+    "rfdetr",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "industrial-inspection",
+    "surface-defect-detection",
+    "manufacturing-qa",
+    "metallic-surface",
+    "quality-control",
+    "dataset:dronefreak/GC10-DET",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2410.17725",
+    "arxiv:2606.03748",
+    "base_model:Roboflow/rf-detr-small",
+    "base_model:finetune:Roboflow/rf-detr-small",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128132641,
+  "storage_human": "128 MB",
+  "base_model": "Roboflow/rf-detr-small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "mAP@50 (test split)",
+      "value": 76.07
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "mAP@50-95 (test split)",
+      "value": 42.51
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "Precision (test split)",
+      "value": 87.86
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "Recall (test split)",
+      "value": 65.03
+    }
+  ],
+  "sources": [
+    {
+      "title": "dronefreak/exdark-rfdetr-small · Hugging Face",
+      "url": "https://huggingface.co/dronefreak/exdark-rfdetr-small",
+      "snippet": "dronefreak / exdark-rfdetr-small like 0 Object Detection PyTorch dronefreak/ExDark rfdetr detectionbench computer-vision low-light night-images dark-images robustness arxiv:2511.09554 arxiv:2304.07193 License:apache-2.0 Model card FilesFiles and versions xet Community 1 Copy to bucket new RF-DETR Small Finetuned on ExDark"
+    },
+    {
+      "title": "README.md · dronefreak/GC10-DET at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/dronefreak/GC10-DET/blob/main/README.md",
+      "snippet": "Datasets: dronefreak / GC10-DET Like 0 Tasks: Object Detection Modalities: Image Text Formats: json Languages: English Size: 1K - 10K Tags: object-detection industrial surface-defect-detection metallic-surface quality-inspection computer-vision + 2 Libraries: Datasets pandas Polars + 1 License: cc-by-4. Dataset card Data Studio FilesFiles and versions xet Community main GC10-DET /README.md ..."
+    },
+    {
+      "title": "GitHub - roboflow/rf-detr: RF-DETR is a real-time object detection and ...",
+      "url": "https://github.com/roboflow/rf-detr",
+      "snippet": "The charts and tables below compare RF-DETR against other top real-time models across accuracy and latency for detection and segmentation. All COCO accuracy numbers are measured in-house for every model shown, computed with pycocotools in SAB over the full 5,000-image val2017 split, so every row is directly comparable and may differ from vendor ..."
+    },
+    {
+      "title": "DetectionBench/src/detectionbench/datasets/gc10det.py at main ... - GitHub",
+      "url": "https://github.com/dronefreak/DetectionBench/blob/main/src/detectionbench/datasets/gc10det.py",
+      "snippet": "Standardized evaluation of modern object detectors beyond COCO. - dronefreak/DetectionBench"
+    },
+    {
+      "title": "RF-DETR — Real-Time Object Detection & Segmentation by Roboflow",
+      "url": "https://rfdetr.roboflow.com/latest/",
+      "snippet": "Core models (Nano through Large) and all code are released under the Apache 2.0 license; XL and 2XLarge detection models require rfdetr [plus] and are provided under PML 1.0. Developed by Isaac Robinson, Peter Robicheaux, Matvei Popov, Deva Ramanan (CMU), and Neehar Peri (CMU) at Roboflow. If you use RF-DETR in your research, please cite:"
+    }
+  ]
+}

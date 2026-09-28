@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "stanfordnlp/corenlp-english-default",
+  "slug": "stanfordnlp-corenlp-english-default",
+  "author": "stanfordnlp",
+  "url": "https://huggingface.co/stanfordnlp/corenlp-english-default",
+  "created_at": "2022-03-02T23:29:05.000Z",
+  "updated_at": "2026-09-27T22:46:05.000Z",
+  "license": "gpl-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "corenlp",
+    "en",
+    "license:gpl-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2846466758,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mountain Bike News, Photos, Videos & Events | Pinkbike",
+      "url": "https://www.pinkbike.com/",
+      "snippet": "Pinkbike is the homepage of mountain biking. Stay updated with the latest news, reviews, videos, buyer's guides and racing results. …Read more"
+    },
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "Google Account Help",
+      "url": "https://support.google.com/accounts/?hl=en",
+      "snippet": "Official Google Account Help Center where you can find tips and tutorials on using Google Account and other answers to frequently …"
+    },
+    {
+      "title": "Pinkbike's Grim Donut Game",
+      "url": "https://www.pinkbike.com/sandbox/grimdonutgame/",
+      "snippet": "Check out PinkBike.com for the latest in cycling and mountain biking news, freeride videos, photos, events and more. Submit your …"
+    },
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/ttt-vla-robomme-batch4-benchmark",
+  "slug": "morealcholplz-ttt-vla-robomme-batch4-benchmark",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/ttt-vla-robomme-batch4-benchmark",
+  "created_at": "2026-09-28T01:31:11.000Z",
+  "updated_at": "2026-09-28T01:42:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "Gr00tN1d6",
+    "ttt-vla",
+    "robomme",
+    "robot-memory",
+    "robotics",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3432385472,
+  "parameters_human": "3.43B",
+  "storage_bytes": 6864939467,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Toulouse - BBC Weather",
+      "url": "https://www.bbc.com/weather/2972315",
+      "snippet": "14-day weather forecast for Toulouse."
+    },
+    {
+      "title": "METEO TOULOUSE par Météo-France - Prévisions Météo gratuites …",
+      "url": "https://meteofrance.com/previsions-meteo-france/toulouse/31000",
+      "snippet": "METEO FRANCE - Retrouvez les prévisions METEO TOULOUSE de Météo-France pour aujourd’hui, demain et jusqu’à 15 jours, …"
+    },
+    {
+      "title": "Toulouse, Haute-Garonne, France Weather Forecast | AccuWeather",
+      "url": "https://www.accuweather.com/en/fr/toulouse/135244/weather-forecast/135244",
+      "snippet": "Toulouse, Haute-Garonne, France Weather Forecast, with current conditions, wind, air quality, and what to expect for the next 3 days."
+    },
+    {
+      "title": "Toulouse, Haute-Garonne, France Hourly Weather | AccuWeather",
+      "url": "https://www.accuweather.com/en/fr/toulouse/31400/hourly-weather-forecast/153633_pc",
+      "snippet": "Hourly weather forecast in Toulouse, Haute-Garonne, France. Check current conditions in Toulouse, Haute-Garonne, France with …"
+    },
+    {
+      "title": "Toulouse Weather Forecast",
+      "url": "https://www.weather-forecast.com/locations/Toulouse/forecasts/latest",
+      "snippet": "1 day ago · Live weather reports from Toulouse weather stations and weather warnings that include risk of thunder, high UV index …"
+    }
+  ]
+}

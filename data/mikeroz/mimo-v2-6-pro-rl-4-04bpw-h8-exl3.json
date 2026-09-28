@@ -5,17 +5,17 @@
   "author": "MikeRoz",
   "url": "https://huggingface.co/MikeRoz/MiMo-V2.6-Pro-RL-4.04bpw-h8-exl3",
   "created_at": "2026-09-27T12:30:15.000Z",
-  "updated_at": "2026-09-27T12:43:51.000Z",
+  "updated_at": "2026-09-27T16:41:47.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
-  "library": "transformers",
+  "library": "exllamav3",
   "languages": [
     "en",
     "zh"
   ],
   "tags": [
-    "transformers",
+    "exllamav3",
     "safetensors",
     "mimo_v2",
     "text-generation",
@@ -25,12 +25,14 @@
     "agent",
     "video-understanding",
     "long-context",
+    "exl3",
     "conversational",
     "custom_code",
     "en",
     "zh",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Pro-RL",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Pro-RL",
     "license:mit",
-    "exl3",
     "region:us"
   ],
   "likes": 0,
@@ -40,7 +42,7 @@
   "parameters_human": "260.21B",
   "storage_bytes": 520597882882,
   "storage_human": "520.6 GB",
-  "base_model": null,
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
   "formats": [
     "safetensors"
   ],

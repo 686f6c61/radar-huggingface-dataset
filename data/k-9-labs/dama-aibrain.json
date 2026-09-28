@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "K-9-labs/dama-aibrain",
+  "slug": "k-9-labs-dama-aibrain",
+  "author": "K-9-labs",
+  "url": "https://huggingface.co/K-9-labs/dama-aibrain",
+  "created_at": "2026-09-27T21:34:41.000Z",
+  "updated_at": "2026-09-27T22:01:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278788619,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "K (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/K_(lettre)",
+      "snippet": "Histoire ... Cette lettre de l' alphabet latin vient de l' étrusque ; c'est un descendant du kappa de l' alphabet grec (Κ en majuscule et κ …Read more"
+    },
+    {
+      "title": "K — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/K",
+      "snippet": "Le Ꝃ ou « K barré » (K/) est une abréviation courante en Bretagne, employé notamment pour les formes en Ker-. K, sur les plaques …Read more"
+    },
+    {
+      "title": "K - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/K",
+      "snippet": "K (minuscule: k) is the eleventh letter of the Latin alphabet, used in the modern English alphabet, the alphabets of other western …Read more"
+    },
+    {
+      "title": "Que veut dire \"K\" quand on parle d'argent ?",
+      "url": "https://www.que-veut-dire.fr/que-veut-dire-k-en-termes-dargent/",
+      "snippet": "Mais que signifie vraiment ce « K » et pourquoi est-il utilisé pour parler d’argent ? À première vue, on pourrait penser que c’est un …Read more"
+    },
+    {
+      "title": "alphabet en francais chanson | lettre \"K-chanson\" - Comptines et ...",
+      "url": "https://www.youtube.com/watch?v=4QedWKQ7SsU",
+      "snippet": "Jul 27, 2016 · - Si vous aimez la vidéo! et dites à vos amis L'alphabet en Français - Comptine A, B, C, D, E, F, G, H, I, J, K, L, M, N, …Read more"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "enver/rootformer-v15-sovereign-transmute",
+  "slug": "enver-rootformer-v15-sovereign-transmute",
+  "author": "enver",
+  "url": "https://huggingface.co/enver/rootformer-v15-sovereign-transmute",
+  "created_at": "2026-09-28T00:23:06.000Z",
+  "updated_at": "2026-09-28T02:38:28.000Z",
+  "license": "aynengine-uni-prishtina-academic",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "rootformer",
+    "arabic",
+    "classical-arabic",
+    "morphemic-tokenizer",
+    "zero-bpe",
+    "farahidi",
+    "sibawayh",
+    "al-khalil-algebra",
+    "neuro-semantic-router",
+    "latent-attractor-gating",
+    "ishtiqaq-attention",
+    "rootattention",
+    "cross-lingual",
+    "avicenna-philosophy",
+    "kalam",
+    "usul-al-fiqh",
+    "university-of-prishtina",
+    "aynengine",
+    "sovereign-ai",
+    "text-generation",
+    "custom_code",
+    "ar",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 399371824,
+  "parameters_human": "399.4M",
+  "storage_bytes": 804178223,
+  "storage_human": "804 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SharePoint error: Web application at xxxx could not be found",
+      "url": "https://stackoverflow.com/questions/4787349/sharepoint-error-web-application-at-xxxx-could-not-be-found",
+      "snippet": "Jan 25, 2011 · SharePoint error: Web application at xxxx could not be found Ask Question Asked 15 years, 8 months ago Modified 6 …Read more"
+    },
+    {
+      "title": "x86 - What does ORG Assembly Instruction do? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/3407023/what-does-org-assembly-instruction-do",
+      "snippet": "Aug 4, 2010 · can anyone give me a comprehensive description about ORG directive? When and why is it used in assembly written …"
+    },
+    {
+      "title": "NASA官网如何查自己的生日星空图？ - 知乎",
+      "url": "https://www.zhihu.com/question/383506173",
+      "snippet": "在这个对话框中输入你的生日年月日，一定注意格式 “xxxx（年）xx（月）xx日” 其中， 年份直接输数字，月份必须是英文全拼，日期 …"
+    },
+    {
+      "title": "美国食品“BEST BY xxxx”等同于中国的保质期吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/31777138",
+      "snippet": "美国食品标签中的“BEST BY”不等同于中国的保质期，更多是指最佳食用日期。"
+    },
+    {
+      "title": "<video src=\"blob:https://xxxx\"></video>の動画はどこにありますか？",
+      "url": "https://ja.stackoverflow.com/questions/57046/video-src-blobhttps-xxxx-video%e3%81%ae%e5%8b%95%e7%94%bb%e3%81%af%e3%81%a9%e3%81%93%e3%81%ab%e3%81%82%e3%82%8a%e3%81%be%e3%81%99%e3%81%8b",
+      "snippet": "Jul 31, 2019 · URL.createObjectURL () で生成された blob: スキーマのURLです。それを生成したページ内部でのみ有効なURLであ …"
+    }
+  ]
+}

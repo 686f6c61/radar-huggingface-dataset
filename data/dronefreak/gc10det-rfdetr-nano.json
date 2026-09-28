@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "dronefreak/gc10det-rfdetr-nano",
+  "slug": "dronefreak-gc10det-rfdetr-nano",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/gc10det-rfdetr-nano",
+  "created_at": "2026-09-27T20:48:43.000Z",
+  "updated_at": "2026-09-27T20:48:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "rfdetr",
+  "languages": [],
+  "tags": [
+    "rfdetr",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "industrial-inspection",
+    "surface-defect-detection",
+    "manufacturing-qa",
+    "metallic-surface",
+    "quality-control",
+    "dataset:dronefreak/GC10-DET",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2410.17725",
+    "arxiv:2606.03748",
+    "base_model:Roboflow/rf-detr-nano",
+    "base_model:finetune:Roboflow/rf-detr-nano",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121531798,
+  "storage_human": "122 MB",
+  "base_model": "Roboflow/rf-detr-nano",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "mAP@50 (test split)",
+      "value": 70.17
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "mAP@50-95 (test split)",
+      "value": 38.06
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "Precision (test split)",
+      "value": 77.08
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "Recall (test split)",
+      "value": 71.04
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kwini Kim – 46 videos – xxdbx",
+      "url": "https://xxdbx.com/stars/Kwini%20Kim",
+      "snippet": "Feb 18, 2025 · Super petite college teen likes it rough. My Boyfriend Wanted Something New. I Suggested Him To Have Sex With …"
+    },
+    {
+      "title": "Kwini Kim: Sex Videos with your Favorite Pornstar on XXXShake.com",
+      "url": "https://xxxshake.com/pornstars/kwini-kim/",
+      "snippet": "Get to know Kwini Kim, the industry's hottest sensation, on XXXShake.com. Explore a collection of intense sex videos and intimate …"
+    },
+    {
+      "title": "Kwini Kim Porn Straight Videos – ZenPorn.com",
+      "url": "https://zenporn.com/pornstar/kwini-kim/",
+      "snippet": "Jan 3, 2026 · Watch Kwini Kim porn videos of hot pornstars in hardcore XXX scenes and sort the selection of movies to your …"
+    },
+    {
+      "title": "pornstar - kwini kim | FullPorner.com",
+      "url": "https://fullporner.com/pornstar/kwini-kim",
+      "snippet": "The hottest pornstars doing their best work can always be found here at FullPorner.com so it's no surprise that only the steamiest …"
+    },
+    {
+      "title": "Kwini-Kim porn videos · Rexxx",
+      "url": "https://rexxx.org/?q=kwini-kim",
+      "snippet": "Feb 5, 2026 · 91 videos for Kwini-Kim · Watch them for free and search for more Kwini-Kim, Asian, Teens and Amateur movies at …"
+    }
+  ]
+}

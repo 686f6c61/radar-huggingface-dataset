@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "boobootaco/Tank",
+  "slug": "boobootaco-tank",
+  "author": "boobootaco",
+  "url": "https://huggingface.co/boobootaco/Tank",
+  "created_at": "2026-09-27T22:04:33.000Z",
+  "updated_at": "2026-09-27T22:06:40.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "automatic-speech-recognition",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fap Folder : r/NoFap - Reddit",
+      "url": "https://www.reddit.com/r/NoFap/comments/4b1dw9/fap_folder/",
+      "snippet": "Mar 19, 2016 · I want to start the no fap program today, but Im too afraid of getting rid of my fap folder I feel like i will break down if i …"
+    },
+    {
+      "title": "How do you hide your fap folder - Reddit",
+      "url": "https://www.reddit.com/r/AskReddit/comments/d854ul/how_do_you_hide_your_fap_folder/",
+      "snippet": "Sep 23, 2019 · Try homework folder within like 50 other folders that insult you as you click on them. Normally people give up around …"
+    },
+    {
+      "title": "KPOPFAP - Reddit",
+      "url": "https://www.reddit.com/r/kpopfap/",
+      "snippet": "r/kpopfap: Korean pop - lewd edition. View a mirror of the sub that has much better formatting and enhanced sorting options at…"
+    },
+    {
+      "title": "How to Hide your 'FAP' folder : r/coolguides - Reddit",
+      "url": "https://www.reddit.com/r/coolguides/comments/pktlwx/how_to_hide_your_fap_folder/",
+      "snippet": "But the post says the folder has a hidden character, so is this folder just blank and just now there is a random folder size and date?"
+    },
+    {
+      "title": "GIFs - Reddit",
+      "url": "https://www.reddit.com/r/gifs/",
+      "snippet": "\"GIFs\" is officially pronounced with a hard \"J\""
+    }
+  ]
+}

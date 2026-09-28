@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SnazzyArtist22/Crimson",
+  "slug": "snazzyartist22-crimson",
+  "author": "SnazzyArtist22",
+  "url": "https://huggingface.co/SnazzyArtist22/Crimson",
+  "created_at": "2026-09-27T23:03:00.000Z",
+  "updated_at": "2026-09-27T23:03:17.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95406407,
+  "storage_human": "95 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SnazzyArtist22 (Elliott Buxton) - Hugging Face",
+      "url": "https://huggingface.co/SnazzyArtist22/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago"
+    },
+    {
+      "title": "SnazzyArtist22 AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/snazzyartist22",
+      "snippet": "Browse AI models attributed to SnazzyArtist22, sourced from verified model catalogs."
+    },
+    {
+      "title": "Damacol/snazzyartist22-the_shadow - GitHub",
+      "url": "https://github.com/Damacol/snazzyartist22-the_shadow",
+      "snippet": "SnazzyArtist22/the_Shadow - Private, Uncensored AI for Real Creators and Devs Self-hosted {MODEL} pipeline designed for privacy-first workflows. Bypass restrictions, keep your data sovereign."
+    },
+    {
+      "title": "snazzyartist22-the_shadow/README.md at main · Damacol ... - GitHub",
+      "url": "https://github.com/Damacol/snazzyartist22-the_shadow/blob/main/README.md",
+      "snippet": "SnazzyArtist22/the_Shadow - Private, Uncensored AI for Real Creators and Devs Self-hosted {MODEL} pipeline designed for privacy-first workflows. Bypass restrictions, keep your data sovereign."
+    },
+    {
+      "title": "SnazzyArtist22/Spamton · Hugging Face",
+      "url": "https://huggingface.co/SnazzyArtist22/Spamton",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

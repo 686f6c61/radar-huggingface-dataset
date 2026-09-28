@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "CompiwerAI/Mtrini-27B-Tellus-Adapter",
+  "slug": "compiwerai-mtrini-27b-tellus-adapter",
+  "author": "CompiwerAI",
+  "url": "https://huggingface.co/CompiwerAI/Mtrini-27B-Tellus-Adapter",
+  "created_at": "2026-09-27T20:42:39.000Z",
+  "updated_at": "2026-09-27T20:42:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 338831222,
+  "storage_human": "339 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CompiwerAI/Mtrini-27B-Tellus · Hugging Face",
+      "url": "https://huggingface.co/CompiwerAI/Mtrini-27B-Tellus",
+      "snippet": "Instructions to use CompiwerAI/Mtrini-27B-Tellus with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use CompiwerAI/Mtrini-27B-Tellus with PEFT:"
+    },
+    {
+      "title": "CompiwerAI/Mtrini-27B-Tellus-GGUF · Hugging Face",
+      "url": "https://huggingface.co/CompiwerAI/Mtrini-27B-Tellus-GGUF",
+      "snippet": "CompiwerAI / Mtrini-27B-Tellus-GGUF Like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "CompiwerAI (Compiwer AI) - Hugging Face",
+      "url": "https://huggingface.co/CompiwerAI/models",
+      "snippet": "CompiwerAI&#x27;s models3 Sort: Recently updated CompiwerAI/Mtrini-1.-Family Updated 4 days ago• 10"
+    },
+    {
+      "title": "CompiwerAI (Compiwer AI) - Hugging Face",
+      "url": "https://huggingface.co/CompiwerAI",
+      "snippet": "User profile of Compiwer AI on Hugging Face"
+    },
+    {
+      "title": "CompiwerAI/Mtrini-Tellus-1.0 at main - Hugging Face",
+      "url": "https://huggingface.co/CompiwerAI/Mtrini-Tellus-1.0/tree/main",
+      "snippet": "Physical deployment of verified Mtrini-Tellus 1.0 weightsabout 5 hours ago README.md 1.43 kB Add professional model card with Compiwer AI environment verificationabout 5 hours ago mtrini_tellus_128b_24gb.gguf 25.8 GB xet"
+    }
+  ]
+}

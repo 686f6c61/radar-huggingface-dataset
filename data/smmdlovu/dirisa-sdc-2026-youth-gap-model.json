@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "smmdlovu/dirisa-sdc-2026-youth-gap-model",
+  "slug": "smmdlovu-dirisa-sdc-2026-youth-gap-model",
+  "author": "smmdlovu",
+  "url": "https://huggingface.co/smmdlovu/dirisa-sdc-2026-youth-gap-model",
+  "created_at": "2026-09-27T20:12:11.000Z",
+  "updated_at": "2026-09-27T20:12:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "sklearn",
+    "clustering",
+    "regression",
+    "civic-tech",
+    "south-africa",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2679,
+  "storage_human": "2679 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dirisa Sdc |",
+      "url": "https://sdc.dirisa.ac.za/",
+      "snippet": "The DIRISA student datathon is a competition that is organised by the Data Intensive Research Initiative of South Africa (DIRISA) to showcase how open research data can be used to come up with creative and innovative solutions to some of South Africa&#x27;s problems."
+    },
+    {
+      "title": "2026 Seismic Design Competition - Student Leadership Council",
+      "url": "https://slc.eeri.org/sdc-2026/",
+      "snippet": "The 2026 Seismic Design Competition (SDC) season is fast approaching! While the rules and regulations are still being finalized by the Student Leadership Council (SLC)&#x27;s SDC chairs, the SLC wants to know in advance how many undergraduate teams are interested in competing next year!"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "SNIA SDC: StorageAI 2026 - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLH_ag5Km-YUZXj7A-4FTVWckKvBsDSfIP",
+      "snippet": "These sessions explore how to close data processing and access gaps, standardized approaches for secure and efficient data movement, KV-cache storage offload, storage architectures optimized for ..."
+    },
+    {
+      "title": "DIRISA - Data Intensive Research Initiative of South Africa",
+      "url": "https://www.dirisa.ac.za/",
+      "snippet": "The Data Intensive Research Initiative of South Africa (DIRISA) promotes, enables, and coordinates a data intensive research ecosystem in support of national science and strategic priorities."
+    }
+  ]
+}

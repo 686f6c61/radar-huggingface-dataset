@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "oleksandrmarchenko/random-matching",
+  "slug": "oleksandrmarchenko-random-matching",
+  "author": "oleksandrmarchenko",
+  "url": "https://huggingface.co/oleksandrmarchenko/random-matching",
+  "created_at": "2026-09-27T23:31:38.000Z",
+  "updated_at": "2026-09-27T23:31:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Play Free Online Games | Free Games | Daily Mail",
+      "url": "https://games.dailymail.co.uk/",
+      "snippet": "Instantly play your favourite free online games including card games, puzzles, brain games & dozens of others, brought to you by …"
+    },
+    {
+      "title": "The Daily Sudoku - Free Online Game | Daily Mail",
+      "url": "https://games.dailymail.co.uk/games/daily-sudoku",
+      "snippet": "The Daily Sudoku Overview Challenge yourself with this free online version of classic Sudoku. There's a new puzzle every day! Each …"
+    },
+    {
+      "title": "Mail Online | Media",
+      "url": "https://creative.dailymail.co.uk/mailonline_media/tc.html",
+      "snippet": "MailOnline - all the latest news, sport, showbiz, science and health stories from around the world from the Daily Mail and Mail on …"
+    },
+    {
+      "title": "Discover Saudi Culture. A Journey Through Heritage, Art, and Flavour.",
+      "url": "https://creative.dailymail.co.uk/saudiculture/2026/index.html",
+      "snippet": "Jul 1, 2026 · Saudi Arabia seen like never before From ancient heritage sites to vibrant art scenes and mouth-watering cuisine, …"
+    },
+    {
+      "title": "CONTRIBUTORS STANDARD TERMS AND CONDITIONS - Daily Mail",
+      "url": "https://scripts.dailymail.co.uk/static/mol-fe/static/mol-fe-contributors-form/pdf/contributors%20standard%20terms%20and%20conditions%202017-08-14%20v4.pdf",
+      "snippet": "1.1 The definitions and rules of interpretation in this Clause apply in these Terms and Conditions. “ANL” means Associated …"
+    }
+  ]
+}

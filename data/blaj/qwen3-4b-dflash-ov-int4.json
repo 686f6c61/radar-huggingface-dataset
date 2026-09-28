@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "blaj/Qwen3-4B-DFlash-ov-int4",
+  "slug": "blaj-qwen3-4b-dflash-ov-int4",
+  "author": "blaj",
+  "url": "https://huggingface.co/blaj/Qwen3-4B-DFlash-ov-int4",
+  "created_at": "2026-09-27T19:22:22.000Z",
+  "updated_at": "2026-09-27T19:37:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3",
+    "dflash",
+    "speculative-decoding",
+    "intel",
+    "arc",
+    "int4",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2288848411,
+  "storage_human": "2.3 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visiter Auckland : les 20 choses incontournables à faire",
+      "url": "https://generationvoyage.fr/visiter-auckland-faire-voir/",
+      "snippet": "May 22, 2019 · Que faire à Auckland ? Plongez avec nous au cœur de la plus grande ville de Nouvelle-Zélande en découvrant nos …Read more"
+    },
+    {
+      "title": "Que faire à Auckland : Le Guide d'Arrivée IDÉAL [2026]",
+      "url": "https://www.jeremybackpacker.com/que-faire-auckland/",
+      "snippet": "Aug 18, 2026 · Visiter Auckland en 3 jours : les 6 incontournables, les bons plans pratiques et tous mes conseils pour bien débuter …Read more"
+    },
+    {
+      "title": "Que faire à Auckland ? Mes 20 activités incontournables à faire",
+      "url": "https://www.voyageavecnous.fr/que-faire-a-auckland/",
+      "snippet": "Jul 16, 2026 · Entre ses quartiers animés, ses plages, ses volcans, ses îles et ses nombreux points de vue, la ville offre une …Read more"
+    },
+    {
+      "title": "Top 17 choses à faire à Auckland, ville aux 48 volcans",
+      "url": "https://packlightly.fr/nouvelle-zelande/auckland/",
+      "snippet": "Top choses à faire à Auckland Auckland s’explore avant tout par ses quartiers historiques et ses marchés, révélant un urbanisme …Read more"
+    },
+    {
+      "title": "circuits & séjours à Auckland - Les Maisons du Voyage",
+      "url": "https://www.maisonsduvoyage.com/oceanie/nouvelle-zelande/auckland",
+      "snippet": "May 15, 2026 · Envie d'un voyage à Auckland? Découvrez la sélection des Maisons du Voyage ou contactez-nous pour un voyage …Read more"
+    }
+  ]
+}

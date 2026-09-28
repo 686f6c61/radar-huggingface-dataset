@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "GuiAworld/zen-image-edit-SDNQ-uint4-f16-2t",
+  "slug": "guiaworld-zen-image-edit-sdnq-uint4-f16-2t",
+  "author": "GuiAworld",
+  "url": "https://huggingface.co/GuiAworld/zen-image-edit-SDNQ-uint4-f16-2t",
+  "created_at": "2026-09-27T22:26:41.000Z",
+  "updated_at": "2026-09-27T22:29:15.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "image-editing",
+    "qwen-image",
+    "text-encoder",
+    "adapter",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "diffusers:ZenImageEditPipeline",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4003312646,
+  "parameters_human": "4.00B",
+  "storage_bytes": 7208122558,
+  "storage_human": "7.2 GB",
+  "base_model": "Qwen/Qwen-Image-2.1, Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SDNQ - a Hugging Face Space by GuiAworld",
+      "url": "https://huggingface.co/spaces/GuiAworld/SDNQ",
+      "snippet": "This tool lets you download a Qwen‑Image model, merge an optional LoRA Turbo adapter, and apply SDNQ quantization to dramatically reduce its size. You only need to provide a Hugging Face write toke..."
+    },
+    {
+      "title": "zenlm/zen-image-edit · Hugging Face",
+      "url": "https://huggingface.co/zenlm/zen-image-edit",
+      "snippet": "Zen Image Edit Instruction-following image editing model for targeted modifications and inpainting. Overview Built on Zen MoDE (Mixture of Distilled Experts) architecture with 7B parameters. Developed by Hanzo AI and the Zoo Labs Foundation. Quick Start from diffusers import AutoPipelineForText2Image import torch model_id = \"zenlm/zen-image-edit\" pipe = AutoPipelineForText2Image.from ..."
+    },
+    {
+      "title": "Qwen-Image-Edit - Qwen_Img_Edit_fp8_e4m3fn | Qwen Checkpoint | Civitai",
+      "url": "https://civitai.com/models/1884704/qwen-image-edit",
+      "snippet": "We are excited to introduce Qwen-Image-Edit, the image editing version of Qwen-Image. Built upon our 20B Qwen-Image model, Qwen-Image-Edit successfully extends Qwen-Image&#x27;s unique text rendering capabilities to image editing tasks, enabling precise text editing. Furthermore, Qwen-Image-Edit simultaneously feeds the input image into Qwen2.5-VL (for visual semantic control) and the VAE Encoder ..."
+    },
+    {
+      "title": "GitHub - MozDevApps/Qwen-Image-Edit: Qwen-Image is a powerful image ...",
+      "url": "https://github.com/MozDevApps/Qwen-Image-Edit",
+      "snippet": "AI Arena To comprehensively evaluate the general image generation capabilities of Qwen-Image and objectively compare it with state-of-the-art closed-source APIs, we introduce AI Arena, an open benchmarking platform built on the Elo rating system. AI Arena provides a fair, transparent, and dynamic environment for model evaluation."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen&#x27;s most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "danturner1982/first_model",
+  "slug": "danturner1982-first_model",
+  "author": "danturner1982",
+  "url": "https://huggingface.co/danturner1982/first_model",
+  "created_at": "2026-09-27T21:36:57.000Z",
+  "updated_at": "2026-09-27T23:19:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 505086976,
+  "parameters_human": "505.1M",
+  "storage_bytes": 3030602057,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vazados 18 - Porn Photos & Videos - EroMe",
+      "url": "https://www.erome.com/search?q=vazados+18",
+      "snippet": "Vazados 18 photos & videos. EroMe is the best place to share your erotic pics and porn videos. Every day, thousands of people use …"
+    },
+    {
+      "title": "18 Vazado - Porn Photos & Videos - EroMe",
+      "url": "https://www.erome.com/search?q=18+vazado",
+      "snippet": "18 Vazado photos & videos. EroMe is the best place to share your erotic pics and porn videos. Every day, thousands of people use …"
+    },
+    {
+      "title": "Videos Vazados 18 Novos Videos Porno Vazados | CnnAmador",
+      "url": "https://cnnamador.com/search/videos-vazados-18/",
+      "snippet": "Vídeos novos de videos vazados 18 classificados pelos mais relevantes no CnnAmador."
+    },
+    {
+      "title": "Videos Vazados 18 - Video Porno Amador | Kabine Das Novinhas",
+      "url": "https://kabinedasnovinhas.com/video/videos-vazados-18/",
+      "snippet": "Explore os melhores vídeos porno com o kabinedasnovinhas.com. Oferecemos uma vasta coleção de vídeos e fotos XXX gratuitas, …"
+    },
+    {
+      "title": "REAL V4ZADOS no Telegram – Adultos | ConectaGrupos",
+      "url": "https://conectagrupos.com.br/grupo/real-vazados/",
+      "snippet": "Nov 11, 2025 · Este grupo contém conteúdo destinado exclusivamente a maiores de 18 anos. Ao acessar, você confirma que possui …"
+    }
+  ]
+}

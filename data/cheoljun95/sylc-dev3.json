@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "cheoljun95/sylc-dev3",
+  "slug": "cheoljun95-sylc-dev3",
+  "author": "cheoljun95",
+  "url": "https://huggingface.co/cheoljun95/sylc-dev3",
+  "created_at": "2026-08-29T10:07:03.000Z",
+  "updated_at": "2026-09-28T00:01:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2617404425,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

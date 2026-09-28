@@ -5,7 +5,7 @@
   "author": "Bashifu",
   "url": "https://huggingface.co/Bashifu/uav-fault-classifier",
   "created_at": "2026-09-24T22:33:21.000Z",
-  "updated_at": "2026-09-24T22:33:23.000Z",
+  "updated_at": "2026-09-27T10:04:55.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "tabular-classification",

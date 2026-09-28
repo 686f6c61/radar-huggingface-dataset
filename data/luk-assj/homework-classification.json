@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "luk-assj/homework-classification",
+  "slug": "luk-assj-homework-classification",
+  "author": "luk-assj",
+  "url": "https://huggingface.co/luk-assj/homework-classification",
+  "created_at": "2026-09-28T00:49:05.000Z",
+  "updated_at": "2026-09-28T00:49:10.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "luk-assj (Lukas Schulz) - Hugging Face",
+      "url": "https://huggingface.co/luk-assj",
+      "snippet": "User profile of Lukas Schulz on Hugging Face"
+    },
+    {
+      "title": "Loganhernandez/homework-classification · Hugging Face",
+      "url": "https://huggingface.co/Loganhernandez/homework-classification",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Homework Helper: Free Step-by-Step Solver for Any Subject",
+      "url": "https://edusolver.io/",
+      "snippet": "Get free AI homework help for math, science, English, and more. Upload or paste a problem and get step-by-step explanations from an online homework solver."
+    },
+    {
+      "title": "Free AI Homework Helper, Step-by-step & No Sign-up| StudyX",
+      "url": "https://studyx.ai/ai-homework-helper",
+      "snippet": "Get instant, step-by-step solutions for all subjects with StudyX AI homework helper. Available 24/7 with accurate answers, AI tutoring, and community support."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

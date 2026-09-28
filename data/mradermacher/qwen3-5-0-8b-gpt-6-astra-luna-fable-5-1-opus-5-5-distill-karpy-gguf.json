@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-Karpy-GGUF",
+  "slug": "mradermacher-qwen3-5-0-8b-gpt-6-astra-luna-fable-5-1-opus-5-5-distill-karpy-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-Karpy-GGUF",
+  "created_at": "2026-09-27T19:42:01.000Z",
+  "updated_at": "2026-09-27T19:51:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:NasledieLab/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-Karpy",
+    "base_model:quantized:NasledieLab/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-Karpy",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 7455540352,
+  "storage_human": "7.5 GB",
+  "base_model": "NasledieLab/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-Karpy",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/Qwen3.5-0.8B-heretic-tuned-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-0.8B-heretic-tuned-GGUF/tree/main",
+      "snippet": "mradermacher / Qwen3.5-.8B-heretic-tuned-GGUF like 1 Transformers GGUF English text-generation-inference unsloth qwen3_5 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Damacol/mradermacher-qwen3.5-0.8b-sft-claude-opus-reasoning ... - GitHub",
+      "url": "https://github.com/Damacol/mradermacher-qwen3.5-0.8b-sft-claude-opus-reasoning-unsloth-gguf",
+      "snippet": "Most AI platforms trade your data for convenience. They track, filter, and restrict. Venice flips the script: your prompts stay local, your ideas aren&#x27;t policed, and you get fast, unfiltered responses without the corporate overhead. This repo is a curated starting point for devs, writers, researchers, and privacy-first users who want AI that actually works with them, not against them."
+    },
+    {
+      "title": "mradermacher-qwen3.5-0.8b-base-i1-gguf/README.md at main - GitHub",
+      "url": "https://github.com/Damacol/mradermacher-qwen3.5-0.8b-base-i1-gguf/blob/main/README.md",
+      "snippet": "Why This Exists Most AI platforms trade your data for convenience. They track, filter, and restrict. Venice flips the script: your prompts stay local, your ideas aren&#x27;t policed, and you get fast, unfiltered responses without the corporate overhead."
+    },
+    {
+      "title": "Qwen 3.5: The Complete Guide - Benchmarks, Local Setup, and How It ...",
+      "url": "https://techie007.substack.com/p/qwen-35-the-complete-guide-benchmarks",
+      "snippet": "Alibaba&#x27;s Qwen team dropped Qwen 3.5 on February 16, 2026, and it immediately shook up the AI landscape."
+    }
+  ]
+}

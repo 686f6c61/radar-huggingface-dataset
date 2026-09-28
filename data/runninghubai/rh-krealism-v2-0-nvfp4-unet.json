@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-krealism-v2.0-nvfp4-unet",
+  "slug": "runninghubai-rh-krealism-v2-0-nvfp4-unet",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-krealism-v2.0-nvfp4-unet",
+  "created_at": "2026-09-27T19:46:29.000Z",
+  "updated_at": "2026-09-27T19:51:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7215250558,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHub ｜ AI Agent-Powered Content Creation Platform with ComfyUI ...",
+      "url": "https://www.runninghub.ai/",
+      "snippet": "RunningHub is an all-in-one content creation platform powered by native AI agents. Build end-to-end creative workflows with ComfyUI workflows, infinite canvas, AI apps, image & video generation, and model API access."
+    },
+    {
+      "title": "RunningHubAI (RunningHub.ai) - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/models",
+      "snippet": "One API Powering All-Modal AI Productivity. Recent Activity. published a model 3 minutes ago. RunningHubAI/rh-z-imagebase-fp16-unet"
+    },
+    {
+      "title": "RunningHubAI (RunningHub.ai) - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI",
+      "snippet": "One API Powering All-Modal AI Productivity. Recent Activity. updated a model about 1 hour ago. RunningHubAI/rh-minimax-h3-fl2v-turbo-4step-v1.-768p-comfyui-bf16 ..."
+    },
+    {
+      "title": "RunningHub",
+      "url": "https://www.runninghub.ai/workspace",
+      "snippet": "Create and run AI workflows online with RunningHub&#x27;s cloud-based platform, offering fast and error-free results for various creative projects."
+    },
+    {
+      "title": "RunningHub AI | Image, Video & Workflow Creation",
+      "url": "https://runninghubai.pro/",
+      "snippet": "RunningHub AI is an AI-powered creation platform for generating images, videos and complete creative workflows from one visual canvas."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "dopaemon/Cyber-Tiel-Coder-35B-A3B-MLX-oQ6e",
+  "slug": "dopaemon-cyber-tiel-coder-35b-a3b-mlx-oq6e",
+  "author": "dopaemon",
+  "url": "https://huggingface.co/dopaemon/Cyber-Tiel-Coder-35B-A3B-MLX-oQ6e",
+  "created_at": "2026-09-27T19:49:25.000Z",
+  "updated_at": "2026-09-27T19:49:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "omlx",
+    "apple-silicon",
+    "oq",
+    "qwen35moe",
+    "moe",
+    "imatrix",
+    "unsloth-dynamic",
+    "agentic-coding",
+    "abliterated",
+    "uncensored",
+    "vision",
+    "6-bit",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 29521360657,
+  "storage_human": "29.5 GB",
+  "base_model": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF-MTP · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF-MTP",
+      "snippet": "CyberTiel outcodes every other 35B-A3B at Q4 quantization (and spring-of-2026 frontier models), while engaging with offensive security work without hesitation or refusal. As a sweet spot between speed and ability, CyberTiel delivers agentic coding solves about 3-4x faster than 3.8-27B dense. This is the first time the frontier coder in this size/speed class is an uncensored model. If you need ..."
+    },
+    {
+      "title": "YCF-AI/CyberTiel-Coder-35B-MLX · Hugging Face",
+      "url": "https://huggingface.co/YCF-AI/CyberTiel-Coder-35B-MLX",
+      "snippet": "Same weights as the official Cyber-Tiel oQ6e build — with an MTP head that actually works in the oMLX VLM engine: vision + MTP + thinking at the same time, at ~+35% decode speed, at half the head size. ⚠️ Read before use — abliterated model. CyberTiel is an uncensored (abliterated) model. It can and will produce content other models refuse."
+    },
+    {
+      "title": "Cyber Tiel Coder 35B A3B MLX OQ6e MTP by peculiar-ragdoll",
+      "url": "https://llm-explorer.com/model/peculiar-ragdoll%2FCyber-Tiel-Coder-35B-A3B-MLX-oQ6e-MTP,1WsHt7152Um2hWQXFXtqxc",
+      "snippet": "Cyber Tiel Coder 35B A3B MLX OQ6e MTP is an open-source 35b LLM by peculiar-ragdoll. VRAM 29.5GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Tiel Coder 35B A3B MLX OQ6e by peculiar-ragdoll",
+      "url": "https://llm-explorer.com/model/peculiar-ragdoll%2FTiel-Coder-35B-A3B-MLX-oQ6e,73htXcPqtKOdO1vKEX9Az6",
+      "snippet": "Tiel Coder 35B A3B MLX OQ6e is an open-source language model by peculiar-ragdoll. Features: 35b LLM, VRAM: 29.5GB, License: mit, Code Generating, LLM Explorer Score: 0.27."
+    }
+  ]
+}

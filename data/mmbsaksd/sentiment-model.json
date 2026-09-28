@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mmbsaksd/sentiment-model",
+  "slug": "mmbsaksd-sentiment-model",
+  "author": "mmbsaksd",
+  "url": "https://huggingface.co/mmbsaksd/sentiment-model",
+  "created_at": "2026-09-28T01:04:23.000Z",
+  "updated_at": "2026-09-28T01:04:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955779,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267840845,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 508 AI models across 486 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "mmbsaksd (Mohammed Munavar) - Hugging Face",
+      "url": "https://huggingface.co/mmbsaksd",
+      "snippet": "Recent Activity updated a datasetabout 15 hours ago mmbsaksd/custom_sample_data published a datasetabout 15 hours ago mmbsaksd/custom_sample_data published a model9 days ago mmbsaksd/test2 View all activity"
+    },
+    {
+      "title": "LLM Leaderboard: AI Model Rankings & Pricing | llmboard.ai",
+      "url": "https://www.llmboard.ai/",
+      "snippet": "Explore the LLM leaderboard to compare the best AI models across capability, pricing and LLM benchmarks. Find the best LLM for coding, reasoning and more."
+    },
+    {
+      "title": "AI Models Benchmark",
+      "url": "https://aimodelsbenchmark.com/",
+      "snippet": "AI MODEL LEADERBOARD 398 models · benchmarks, pricing, context, license · ranked by the column you click."
+    },
+    {
+      "title": "AI Model Benchmarks 2026 | TensorFeed.ai",
+      "url": "https://tensorfeed.ai/benchmarks",
+      "snippet": "Compare AI model performance across MMLU-Pro, HumanEval, GPQA Diamond, MATH, and SWE-bench benchmarks for leading models from Anthropic, OpenAI, Google, Meta, and more."
+    }
+  ]
+}

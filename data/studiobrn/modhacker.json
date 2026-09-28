@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "studiobrn/modHacker",
+  "slug": "studiobrn-modhacker",
+  "author": "studiobrn",
+  "url": "https://huggingface.co/studiobrn/modHacker",
+  "created_at": "2026-09-27T20:38:22.000Z",
+  "updated_at": "2026-09-27T21:54:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "lower-refusal",
+    "coding",
+    "reasoning",
+    "tool-use",
+    "cybersecurity",
+    "local-ai",
+    "ollama",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 8666445962,
+  "storage_human": "8.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "studiobrn/modAIJet-coder/model",
+      "url": "https://ollama.com/studiobrn/modAIJet-coder:latest/blobs/c9213a33b16d",
+      "snippet": "AI coding model optimized for modern software engineering"
+    },
+    {
+      "title": "Someone open-sourced a $270M AI hacker (26k stars)",
+      "url": "https://www.youtube.com/watch?v=PZsvR_jfGls",
+      "snippet": "Strix is an open-source, Apache-2.0 AI pentester. You point it at your own app and a team of AI agents attacks it the way a real hacker would, then proves every bug it finds with a working exploit ..."
+    },
+    {
+      "title": "Tags · studiobrn/modCoder",
+      "url": "https://registry.ollama.com/studiobrn/modCoder/tags",
+      "snippet": "Precision Software Engineering Agent for Apple M1 Pro 16GB visiontoolsthinking Name 1 model Size / Usage Context Input modCoder:latest b7ba147c6f25 • 7.2GB • 256K context window • Text, Image input • 3 weeks ago Text, Image input • 3 weeks ago modCoder:latest 7.2GB 256K Text, Image b7ba147c6f25 · 3 weeks ago"
+    },
+    {
+      "title": "studiobrn (modart) - Hugging Face",
+      "url": "https://huggingface.co/studiobrn",
+      "snippet": "Art and Science Split Track to MusicGen models"
+    },
+    {
+      "title": "studiobrn/modCoder - ollama.com",
+      "url": "https://ollama.com/studiobrn/modCoder:latest",
+      "snippet": "modCoder modCoder is an advanced software engineering assistant built on top of Gemma 4 12B and optimized for practical development workflows. Unlike general-purpose assistants, modCoder focuses on precision, maintainability, and deterministic problem solving. It is designed to help developers debug issues, refactor code, analyze architectures, and implement features while minimizing ..."
+    }
+  ]
+}

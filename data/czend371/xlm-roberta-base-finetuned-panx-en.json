@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "CZend371/xlm-roberta-base-finetuned-panx-en",
+  "slug": "czend371-xlm-roberta-base-finetuned-panx-en",
+  "author": "CZend371",
+  "url": "https://huggingface.co/CZend371/xlm-roberta-base-finetuned-panx-en",
+  "created_at": "2026-09-28T01:02:40.000Z",
+  "updated_at": "2026-09-28T01:03:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277459208,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1132018604,
+  "storage_human": "1.1 GB",
+  "base_model": "xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://fr-fr.facebook.com/merveilledumondejaninevero/videos/",
+      "snippet": "Facebook ... Facebook"
+    },
+    {
+      "title": "Propriétés à vendre à Servins | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/108267252534406/propertyforsale/",
+      "snippet": "Trouvez des bons plans intéressants sur des propriétés à vendre à Servins sur Facebook Marketplace. Parcourez les annonces ou …"
+    },
+    {
+      "title": "Kia en vente à Edmonton | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/edmonton/kia/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Kia en vente à Edmonton sur Facebook Marketplace. Trouvez des bons plans …"
+    },
+    {
+      "title": "Articles pour la maison en vente à Perth | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/perth/home/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Articles pour la maison en vente à Perth sur Facebook Marketplace. Trouvez des bons …"
+    },
+    {
+      "title": "Articles gratuits à Victoria (Colombie-Britannique) - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/victoria/free/",
+      "snippet": "Trouvez des articles gratuits à Victoria (Colombie-Britannique) sur Facebook Marketplace. Mobilier, appareils électroniques gratuits …"
+    }
+  ]
+}

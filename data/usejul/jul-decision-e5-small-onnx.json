@@ -5,7 +5,7 @@
   "author": "usejul",
   "url": "https://huggingface.co/usejul/jul-decision-e5-small-onnx",
   "created_at": "2026-09-26T21:12:44.000Z",
-  "updated_at": "2026-09-26T21:12:51.000Z",
+  "updated_at": "2026-09-27T21:59:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 4,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 102603855,
-  "storage_human": "103 MB",
+  "storage_bytes": 290737669,
+  "storage_human": "291 MB",
   "base_model": "usejul/jul-decision-e5-small",
   "formats": [
     "onnx"

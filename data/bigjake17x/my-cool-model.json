@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "id": "bigjake17x/my-cool-model",
+  "slug": "bigjake17x-my-cool-model",
+  "author": "bigjake17x",
+  "url": "https://huggingface.co/bigjake17x/my-cool-model",
+  "created_at": "2026-09-28T01:02:14.000Z",
+  "updated_at": "2026-09-28T01:03:43.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "en",
+    "dataset:OpenCoder-LLM/opc-sft-stage1",
+    "dataset:OpenCoder-LLM/opc-sft-stage2",
+    "dataset:microsoft/orca-agentinstruct-1M-v1",
+    "dataset:microsoft/orca-math-word-problems-200k",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "dataset:AI-MO/NuminaMath-CoT",
+    "dataset:AI-MO/NuminaMath-TIR",
+    "dataset:allenai/tulu-3-sft-mixture",
+    "dataset:cognitivecomputations/dolphin-coder",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:cognitivecomputations/samantha-data",
+    "dataset:m-a-p/CodeFeedback-Filtered-Instruction",
+    "dataset:m-a-p/Code-Feedback",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "base_model:finetune:meta-llama/Llama-3.1-8B",
+    "license:llama3.1",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26971273,
+  "storage_human": "27 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval (0-Shot)",
+      "metric": "averaged accuracy",
+      "value": 76.21
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "BBH (3-Shot)",
+      "metric": "normalized accuracy",
+      "value": 27.63
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MATH Lvl 5 (4-Shot)",
+      "metric": "exact match",
+      "value": 10.5
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GPQA (0-shot)",
+      "metric": "acc_norm",
+      "value": 4.36
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MuSR (0-shot)",
+      "metric": "acc_norm",
+      "value": 8.97
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU-PRO (5-shot)",
+      "metric": "accuracy",
+      "value": 22.13
+    }
+  ],
+  "sources": [
+    {
+      "title": "olintheclouds/my-cool-model · Hugging Face",
+      "url": "https://huggingface.co/olintheclouds/my-cool-model",
+      "snippet": "Real-Time Open-Ended Video Editing with Autoregressive Diffusion JoyAI-Video-Edit is a real-time, instruction-guided video editing system for open-ended video streams. Given a live camera stream or uploaded video and a natural-language edit instruction, it edits frames causally as they arrive, without waiting for the full video, requiring a predefined video length, or revisiting future frames ..."
+    },
+    {
+      "title": "bigjake17x · GitHub",
+      "url": "https://github.com/bigjake17x",
+      "snippet": "Follow Joined Aug 25, 2026 Block or report user Block or report bigjake17x Block user Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users. You must be logged in to block users."
+    },
+    {
+      "title": "andreavt/my-cool-model · Hugging Face",
+      "url": "https://huggingface.co/andreavt/my-cool-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "my-cool-model huggingface.co api & WangZeJun my-cool-model github AI ...",
+      "url": "https://www.toolify.ai/ai-model/wangzejun-my-cool-model",
+      "snippet": "my-cool-model is an open source model from GitHub that offers a free installation service, and any user can find my-cool-model on GitHub to install. At the same time, huggingface.co provides the effect of my-cool-model install, users can directly use my-cool-model installed effect in huggingface.co for debugging and trial."
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    }
+  ]
+}

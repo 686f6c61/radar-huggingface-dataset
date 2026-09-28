@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asddcsd/MyAwesomeModel-TestRepository",
+  "slug": "asddcsd-myawesomemodel-testrepository",
+  "author": "asddcsd",
+  "url": "https://huggingface.co/asddcsd/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-10T06:01:38.000Z",
+  "updated_at": "2026-09-28T00:15:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NFL.com | Official Site of the National Football League",
+      "url": "https://www.nfl.com/",
+      "snippet": "The official source for NFL news, video highlights, game-day coverage, schedules, stats, scores and more."
+    },
+    {
+      "title": "2026 NFL Division Standings",
+      "url": "https://www.nfl.com/standings/",
+      "snippet": "See the latest NFL Standings by Division, Conference and League. Find current or past season NFL standings by team."
+    },
+    {
+      "title": "NFL",
+      "url": "https://support.nfl.com/hc/en-us",
+      "snippet": "NFL.com Username, Password, Unsubscribing from Emails, Basic Troubleshooting, NFL Digital Care View Articles NFL Game Day …"
+    },
+    {
+      "title": "NFL Unveils 2026 International Games Schedule",
+      "url": "https://media.nfl.com/news-and-releases/international/nfl-unveils-2026-international-games-schedule",
+      "snippet": "May 13, 2026 · “The 2026 NFL season will feature our most expansive and ambitious international slate yet, with regular-season …"
+    },
+    {
+      "title": "NGS | NFL Next Gen Stats",
+      "url": "https://nextgenstats.nfl.com/",
+      "snippet": "NFL’s Next Gen Stats captures real time location data, speed and acceleration for every player, every play on every inch of the field. …"
+    }
+  ]
+}

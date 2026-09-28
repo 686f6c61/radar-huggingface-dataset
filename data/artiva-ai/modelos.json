@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "artiva-ai/modelos",
+  "slug": "artiva-ai-modelos",
+  "author": "artiva-ai",
+  "url": "https://huggingface.co/artiva-ai/modelos",
+  "created_at": "2026-09-28T01:00:57.000Z",
+  "updated_at": "2026-09-28T01:01:13.000Z",
+  "license": "per-file",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime-web",
+    "image-restoration",
+    "background-removal",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1289082823,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artiva RM Debt Collection Agency Software - Finvi",
+      "url": "https://finvi.com/artiva-rm-debt-collection-agency-software/",
+      "snippet": "The Artiva RM platform&#x27;s combination of explainable AI and machine learning, coupled with the ARM industry&#x27;s only dynamic scoring model, taps into alternative data sources, allowing you to continually refine contact strategies and optimize collections."
+    },
+    {
+      "title": "Top 10 AI Models in 2026: Ranked by Benchmarks (June Update)",
+      "url": "https://techjournal.org/top-10-artificial-intelligence-models",
+      "snippet": "The AI model landscape changes so fast that rankings published three months ago are already obsolete. In Q1 2026 alone, LLM Stats logged 255 model releases from major organizations. Twelve significant models launched in a single week in March. The gap between open-source and proprietary AI has nearly closed. And the pricing has collapsed — what cost $500/month last year runs for $50 today ..."
+    },
+    {
+      "title": "Artiva — AI Art Generator for iPhone",
+      "url": "https://www.artivalab.com/",
+      "snippet": "AI Art Generator for iPhone Turn any photo into art. One tap to restyle a photo. One prompt to create something entirely new. Artiva puts a state-of-the-art image model in your pocket — no design skills required."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "Ativa.ai - Prospecção Digital para Vendas B2B com IA e SDR Remoto",
+      "url": "https://www.ativa.ai/",
+      "snippet": "Automatize a prospecção digital B2B com IA para impulsionar o crescimento empresarial, geração de leads qualificados de forma automatizada no mercado B2B."
+    }
+  ]
+}

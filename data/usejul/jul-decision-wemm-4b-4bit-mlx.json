@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "usejul/jul-decision-wemm-4b-4bit-mlx",
+  "slug": "usejul-jul-decision-wemm-4b-4bit-mlx",
+  "author": "usejul",
+  "url": "https://huggingface.co/usejul/jul-decision-wemm-4b-4bit-mlx",
+  "created_at": "2026-09-27T22:30:46.000Z",
+  "updated_at": "2026-09-27T23:00:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "jul",
+    "zero-shot-classification",
+    "lora",
+    "custom_code",
+    "en",
+    "fr",
+    "base_model:tencent/WeMM-Embedding-4B",
+    "base_model:adapter:tencent/WeMM-Embedding-4B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4840211456,
+  "parameters_human": "4.84B",
+  "storage_bytes": 2809237939,
+  "storage_human": "2.8 GB",
+  "base_model": "tencent/WeMM-Embedding-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - usejul/jul-showcases: Self-contained showcases of JuL (Juste ...",
+      "url": "https://github.com/usejul/jul-showcases/tree/main/",
+      "snippet": "Self-contained showcases of JuL (Juste un LLM) — local typed decisions reproducing jevable.com ideas, running on the wemm-4b-4bit model. - usejul/jul-showcases"
+    },
+    {
+      "title": "usejul (JuL AI) - Hugging Face",
+      "url": "https://huggingface.co/usejul",
+      "snippet": "Org profile for JuL AI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "usejul/minicpm5-2b-decision-mlx-4bit · Hugging Face",
+      "url": "https://huggingface.co/usejul/minicpm5-2b-decision-mlx-4bit",
+      "snippet": "A decision model: one text (the state) and typed questions in, a probability per option out, in one forward pass. It never generates text. MiniCPM5-2B with a merged LoRA (r=16) and a pointer head, trained on multi-task decision data, then converted to MLX and quantized to 4 bits (group size 64)."
+    },
+    {
+      "title": "GitHub - guyon-it-consulting/jul-showcases: Self-contained showcases of ...",
+      "url": "https://github.com/guyon-it-consulting/jul-showcases",
+      "snippet": "Notes First call in a process loads the model (a few seconds); later calls are fast (~40 ms per decision with wemm-4b-4bit on Apple Silicon). wemm-4b-4bit is an embedding-optimized model, so classification/ranking showcases (intent, notifications, difficulty) are especially sharp with it."
+    },
+    {
+      "title": "Introducing System One Models & Jev - TypeSafe AI Blog",
+      "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+      "snippet": "TypeSafe AI is an AI lab building machine-native intelligence infrastructure for automation, designed to make decisions within software. Try our first System One Model, Jev, in early access."
+    }
+  ]
+}

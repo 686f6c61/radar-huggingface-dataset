@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Sharjeelbaig/moonshine-streaming-tiny-ar-tadabbur-onnx",
+  "slug": "sharjeelbaig-moonshine-streaming-tiny-ar-tadabbur-onnx",
+  "author": "Sharjeelbaig",
+  "url": "https://huggingface.co/Sharjeelbaig/moonshine-streaming-tiny-ar-tadabbur-onnx",
+  "created_at": "2026-09-28T01:12:49.000Z",
+  "updated_at": "2026-09-28T01:12:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "quantized",
+    "tadabbur",
+    "automatic-speech-recognition",
+    "ar",
+    "base_model:moonshine-ai/moonshine-streaming-tiny-ar",
+    "base_model:quantized:moonshine-ai/moonshine-streaming-tiny-ar",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34447922,
+  "storage_human": "34 MB",
+  "base_model": "moonshine-ai/moonshine-streaming-tiny-ar",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

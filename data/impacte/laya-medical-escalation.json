@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "impacte/laya-medical-escalation",
+  "slug": "impacte-laya-medical-escalation",
+  "author": "impacte",
+  "url": "https://huggingface.co/impacte/laya-medical-escalation",
+  "created_at": "2026-09-27T22:15:24.000Z",
+  "updated_at": "2026-09-27T23:16:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [],
+  "tags": [
+    "laya",
+    "safetensors",
+    "clinical",
+    "emergency-medicine",
+    "triage",
+    "emergency-severity-index",
+    "esi",
+    "decision-model",
+    "calibrated-decisions",
+    "rlcd",
+    "text-classification",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609220,
+  "storage_human": "843 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : impact - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/Impact/41780",
+      "snippet": "Expressions Étude d'impact, étude qui accompagne tout projet de loi et qui vise notamment à évaluer ses conséquences juridiques, …"
+    },
+    {
+      "title": "impacter - Définitions, synonymes, conjugaison, exemples | Dico en ...",
+      "url": "https://dictionnaire.lerobert.com/definition/impacter",
+      "snippet": "actif indicatif présent j'impacte tu impactes il impacte / elle impacte nous impactons vous impactez ils impactent / elles impactent …"
+    },
+    {
+      "title": "impacte — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/impacte",
+      "snippet": "Nom commun modifier le wikicode ... Trace d’ impact d’une météorite dans l’Arizona. impacte \\in.ˈpat.te\\ masculin (graphie …"
+    },
+    {
+      "title": "Définitions : impacter - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/impacter/10910409",
+      "snippet": "Familier. Avoir un impact, une incidence, généralement négatifs, sur ; se répercuter sur : La crise impacte le moral des ménages."
+    },
+    {
+      "title": "Par quel mot remplacer l’anglicisme « impacter » ?",
+      "url": "https://www.projet-voltaire.fr/regles-orthographe/remplacer-l-anglicisme-impacter/",
+      "snippet": "Quelques équivalences suggérées par l’Académie française : la crise impacte l’activité économique –> affecte l’activité économique, …"
+    }
+  ]
+}

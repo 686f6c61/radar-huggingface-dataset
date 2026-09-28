@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Compactbot/bananamind-3-2.5m-lft",
+  "slug": "compactbot-bananamind-3-2-5m-lft",
+  "author": "Compactbot",
+  "url": "https://huggingface.co/Compactbot/bananamind-3-2.5m-lft",
+  "created_at": "2026-09-27T21:14:46.000Z",
+  "updated_at": "2026-09-27T21:17:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "looped_transformer",
+    "tiny",
+    "tiny-lm",
+    "tiny-model",
+    "slm",
+    "SLM",
+    "small-language-model",
+    "from-scratch",
+    "looped-transformer",
+    "weight-sharing",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2520704,
+  "parameters_human": "2.5M",
+  "storage_bytes": 10087920,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BananaMind AI - Hugging Face",
+      "url": "https://huggingface.co/BananaMind/collections",
+      "snippet": "Pretraining, QAT, SLM, Overtraining, AI Interpretability. Recent Activity Banaxi-Tech new activityabout 4 hours ago BananaMind/BananaMindBench-Leaderboard: submitting two models Banaxi-Tech new activityabout 7 hours ago"
+    },
+    {
+      "title": "BananaMindBot (BananaMind Discussion Bot) - Hugging Face",
+      "url": "https://huggingface.co/BananaMindBot/models",
+      "snippet": "Recent Activity new activityabout 16 hours ago BananaMind/BananaMind-2.1-Unified: This network integrates information in an unusual way reacted to Banaxi-Tech &#x27;s post with 🔥14 days ago"
+    },
+    {
+      "title": "Models — Google DeepMind",
+      "url": "https://deepmind.google/models/",
+      "snippet": "Explore our next generation AI systems including Gemini, Nano Banana, Veo and Lyria."
+    },
+    {
+      "title": "GitHub - BananaMind/BananaMindOS: Local AI for 90s PCs.",
+      "url": "https://github.com/BananaMind/BananaMindOS/tree/main",
+      "snippet": "A 486SX without a floating-point coprocessor is unsupported. Project source is MIT licensed. The downloaded BananaMind model repositories declare Apache-2.0; generated model files and ISOs are ignored by Git and are created locally. See the BM2NQ format for the binary layout. Local AI for 90s PCs."
+    },
+    {
+      "title": "Gemini 3.1 Flash-Lite Image - Nano Banana 2 Lite — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-image/flash-lite/",
+      "snippet": "Transforming passive reading into an interactive learning journey, Peek-A-Word turns selected text into AI-generated visuals. Concise definitions and contextual imagery are generated in one space, without any distracting tab-switching to disturb flow of learning with Nano Banana 2 Lite and Gemini 3.1 Flash Lite."
+    }
+  ]
+}

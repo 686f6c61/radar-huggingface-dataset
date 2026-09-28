@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "wang-yingjun/DeepSeek-V4.1-Flash",
+  "slug": "wang-yingjun-deepseek-v4-1-flash",
+  "author": "wang-yingjun",
+  "url": "https://huggingface.co/wang-yingjun/DeepSeek-V4.1-Flash",
+  "created_at": "2026-09-28T01:12:54.000Z",
+  "updated_at": "2026-09-28T01:12:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "image-text-to-text",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510299192278,
+  "storage_human": "510.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Medicalcul - Score de Wang ~ Pédiatrie - Free",
+      "url": "http://medicalcul.free.fr/wang.html",
+      "snippet": "Sévérité : Interprétation: Le score clinique de Wang permet de classifier la sévérité d'une bronchiolite chez le nourrisson. Les scores …"
+    },
+    {
+      "title": "Alexandr Wang — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Alexandr_Wang",
+      "snippet": "En 2016, Wang et Lucy Guo ont fondé Scale AI, une société d'intelligence artificielle qui fournit des services d'étiquetage de données …"
+    },
+    {
+      "title": "Affaire Wang, la polémique enflamme la Chine (photos et réactions ...",
+      "url": "https://fr.mediamass.net/people/yuja-wang/scandale.html",
+      "snippet": "1 day ago · Nouvelles révélations dans l'affaire Wang. Alors que chaque rebondissement fait la Une des journaux chinoises depuis …"
+    },
+    {
+      "title": "Académie Wang de MTC - Ecole de Médecine Traditionelle Chinoise …",
+      "url": "https://www.awmtc.fr/",
+      "snippet": "Sep 1, 2026 · Les 24 et 25 octobre prochains, l’Académie Wang de MTC aura le plaisir de retrouver ses étudiants pour une nouvelle …"
+    },
+    {
+      "title": "Alexander Wang",
+      "url": "https://www.alexanderwang.com/",
+      "snippet": "Shop alexanderwang Ready To Wear, Fashion Accessories, Bags, Shoes, and more for women and men by Alexander Wang."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "stanfordnlp/CoreNLP",
+  "slug": "stanfordnlp-corenlp",
+  "author": "stanfordnlp",
+  "url": "https://huggingface.co/stanfordnlp/CoreNLP",
+  "created_at": "2022-03-02T23:29:05.000Z",
+  "updated_at": "2026-09-27T22:44:56.000Z",
+  "license": "gpl-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "corenlp",
+    "en",
+    "license:gpl-2.0",
+    "region:us"
+  ],
+  "likes": 42,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17265380694,
+  "storage_human": "17.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "METEO PAU par Météo-France - Prévisions Météo gratuites pour …",
+      "url": "https://meteofrance.com/previsions-meteo-france/pau/64000",
+      "snippet": "METEO FRANCE - Retrouvez les prévisions METEO PAU de Météo-France pour aujourd’hui, demain et jusqu’à 15 jours, ainsi que …"
+    },
+    {
+      "title": "Pau - BBC Weather",
+      "url": "https://www.bbc.com/weather/2988358",
+      "snippet": "14-day weather forecast for Pau."
+    },
+    {
+      "title": "Weather Pau - meteoblue",
+      "url": "https://www.meteoblue.com/en/weather/week/pau_france_2988358",
+      "snippet": "Today's and tonight's professional weather forecast for Pau. Precipitation radar, HD satellite images, and current weather warnings, …"
+    },
+    {
+      "title": "Pau, Pyrénées-Atlantiques, France Hourly Weather | AccuWeather",
+      "url": "https://www.accuweather.com/en/fr/pau/131912/hourly-weather-forecast/131912",
+      "snippet": "Hourly weather forecast in Pau, Pyrénées-Atlantiques, France. Check current conditions in Pau, Pyrénées-Atlantiques, France with …"
+    },
+    {
+      "title": "Weather Pau, France - 14 Days - ️ Worldmeteo",
+      "url": "https://www.worldmeteo.info/en/europe/france/pau/weather-132980/",
+      "snippet": "23 hours ago · Weather and weather forecast for Pau, France. ☀️🌧️ Worldwide current weather and 14-day weather forecast"
+    }
+  ]
+}

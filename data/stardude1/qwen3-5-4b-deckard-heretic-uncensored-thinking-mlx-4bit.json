@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "stardude1/Qwen3.5-4B-Deckard-HERETIC-UNCENSORED-Thinking-mlx-4Bit",
+  "slug": "stardude1-qwen3-5-4b-deckard-heretic-uncensored-thinking-mlx-4bit",
+  "author": "stardude1",
+  "url": "https://huggingface.co/stardude1/Qwen3.5-4B-Deckard-HERETIC-UNCENSORED-Thinking-mlx-4Bit",
+  "created_at": "2026-09-27T21:51:55.000Z",
+  "updated_at": "2026-09-27T21:52:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "unsloth",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "fine tune",
+    "creative",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "writing",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "all use cases",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:DavidAU/Qwen3.5-4B-Deckard-HERETIC-UNCENSORED-Thinking",
+    "base_model:quantized:DavidAU/Qwen3.5-4B-Deckard-HERETIC-UNCENSORED-Thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 2387226620,
+  "storage_human": "2.4 GB",
+  "base_model": "DavidAU/Qwen3.5-4B-Deckard-HERETIC-UNCENSORED-Thinking",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-4B-Deckard-HERETIC-UNCENSORED-Thinking",
+      "url": "https://huggingface.co/DavidAU/Qwen3.5-4B-Deckard-HERETIC-UNCENSORED-Thinking",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking",
+      "url": "https://huggingface.co/DavidAU/Qwen3.5-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking",
+      "snippet": "Fully uncensored first (via Heretic), then trained (via Unsloth) on \"Deckard/PDK\" internal datasets (5) (character, intelligence, depth, observation, and ah... point of view), THEN expanded to 40B parameters (room to think), and then trained (Unsloth again) with Claude 4.6 Opus Distill dataset (to shorten and improve reasoning, and stablize ..."
+    },
+    {
+      "title": "DavidAU/Qwen3.5-4B-Deckard-HERETIC-UNCENSORED-Thinking",
+      "url": "https://featherless.ai/models/DavidAU/Qwen3.5-4B-Deckard-HERETIC-UNCENSORED-Thinking",
+      "snippet": "It significantly improves reasoning and output generation, outperforming the base Qwen3.5-4B-Instruct model on various benchmarks. This model is designed to be uncensored and &#x27;heretic,&#x27; providing direct responses without refusal, and supports vision capabilities."
+    },
+    {
+      "title": "Architecture graph for DavidAU/Qwen3.5-4B-Deckard-HERETIC-UNCENSORED ...",
+      "url": "https://hfviewer.com/DavidAU/Qwen3.5-4B-Deckard-HERETIC-UNCENSORED-Thinking",
+      "snippet": "DavidAU/Qwen3.5-4B-Deckard-HERETIC-UNCENSORED-Thinking is an image-text-to-text model (qwen3_5_text architecture). It uses 32 transformer layers, a hidden size of 2,560, and 16 query heads with 4 key/value heads (grouped-query attention). The feed-forward layers use an intermediate size of 9,216."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "Qwen 3.6 abliterated, Gemma 4 Heretic, Dolphin 3.0 — the current uncensored picks by VRAM tier. The Llama 3.1 / Qwen 2.5 era is mostly superseded. HuggingFace repos for every pick."
+    }
+  ]
+}

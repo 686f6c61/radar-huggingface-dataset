@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "decosaai/decosa-qe-xlmr-large",
+  "slug": "decosaai-decosa-qe-xlmr-large",
+  "author": "decosaai",
+  "url": "https://huggingface.co/decosaai/decosa-qe-xlmr-large",
+  "created_at": "2026-09-27T21:27:48.000Z",
+  "updated_at": "2026-09-27T21:28:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "nl",
+    "pl"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "translation",
+    "quality-estimation",
+    "machine-translation",
+    "error-detection",
+    "token-classification",
+    "text-classification",
+    "en",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "nl",
+    "pl",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 562010133,
+  "parameters_human": "562.0M",
+  "storage_bytes": 2265186364,
+  "storage_human": "2.3 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 508 AI models across 486 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard 2026 - AI Models Ranked",
+      "url": "https://lmmarketcap.com/",
+      "snippet": "Live LLM leaderboard ranking 350+ AI models by benchmarks, pricing, speed, and capabilities. Compare GPT-5, Claude Opus, Gemini, DeepSeek, Llama, Mistral and more with source-backed freshness."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic, Google, SpaceXAI & others Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

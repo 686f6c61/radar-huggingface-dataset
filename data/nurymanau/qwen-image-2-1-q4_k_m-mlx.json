@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Nurymanau/Qwen-Image-2.1-Q4_K_M-MLX",
+  "slug": "nurymanau-qwen-image-2-1-q4_k_m-mlx",
+  "author": "Nurymanau",
+  "url": "https://huggingface.co/Nurymanau/Qwen-Image-2.1-Q4_K_M-MLX",
+  "created_at": "2026-09-24T14:42:54.000Z",
+  "updated_at": "2026-09-27T21:48:42.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "apple-silicon",
+    "gguf",
+    "quantized",
+    "experimental",
+    "text-to-image",
+    "en",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9521935307,
+  "storage_human": "9.5 GB",
+  "base_model": "Qwen/Qwen-Image-2.1, unsloth/Qwen-Image-2.1-GGUF, unsloth/Qwen3-VL-8B-Instruct-GGUF",
+  "formats": [
+    "gguf",
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen&#x27;s most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
+    },
+    {
+      "title": "qwen-image-2.1-Q4_K_M.gguf · unsloth/Qwen-Image-2.1-GGUF at main",
+      "url": "https://huggingface.co/unsloth/Qwen-Image-2.1-GGUF/blob/main/qwen-image-2.1-Q4_K_M.gguf",
+      "snippet": "unsloth / Qwen-Image-2.1-GGUF Like 5 Follow Unsloth AI 35.9k Text-to-Image GGUF English Chinese quantized unsloth qwen image-generation License:qwen-research Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "themindstudio/Qwen-Image-2.1-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/themindstudio/Qwen-Image-2.1-MLX-4bit",
+      "snippet": "Select Qwen-Image 2.1 (4-bit) and click Download / Install. The model will download directly from this repository and become available in both the generation sidebar and the endless canvas node engine."
+    },
+    {
+      "title": "Awesome Qwen-Image 2.1 - GitHub",
+      "url": "https://github.com/wildminder/awesome-qwen-image/tree/main",
+      "snippet": "Qwen-Image 2.1 was released 2026-09-20 with day-0 support in Diffusers, ComfyUI, vLLM-Omni, SGLang, and LightX2V. It unifies generation and editing in one 7B DiT, adds native RGBA output, and accepts up to 10 reference images."
+    },
+    {
+      "title": "Qwen Image 2.1 - v2.1 | Qwen 2.1 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2954443/qwen-image-21",
+      "snippet": "Qwen Image 2.1 combines text-to-image generation and image editing in a single model. Its visual generation component has 7 billion parameters across 32 single-stream DiT layers, balancing image quality, efficiency and versatility."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Joakimpalm-Zen/Xyntetik-Kvist-14B-GGUF",
+  "slug": "joakimpalm-zen-xyntetik-kvist-14b-gguf",
+  "author": "Joakimpalm-Zen",
+  "url": "https://huggingface.co/Joakimpalm-Zen/Xyntetik-Kvist-14B-GGUF",
+  "created_at": "2026-09-27T22:47:17.000Z",
+  "updated_at": "2026-09-28T00:18:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "muse-glimmer",
+    "xyntetik-kvist",
+    "width-pruning",
+    "distillation",
+    "agentic",
+    "tool-calling",
+    "preregistered",
+    "xyntetik-runner",
+    "text-generation",
+    "dataset:Joakimpalm-Zen/Xyntetik-Kvist-14B-training-record",
+    "arxiv:2408.11796",
+    "arxiv:2602.01997",
+    "base_model:Joakimpalm-Zen/Xyntetik-Kvist-14B",
+    "base_model:quantized:Joakimpalm-Zen/Xyntetik-Kvist-14B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14443795072,
+  "parameters_human": "14.44B",
+  "storage_bytes": 54566230464,
+  "storage_human": "54.6 GB",
+  "base_model": "Joakimpalm-Zen/Xyntetik-Kvist-14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/",
+      "snippet": "3 days ago · Forum software by XenForo Big Changes Are Coming to the Forum! We’ve got some exciting news to share — the …"
+    },
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Topic/showTopicList",
+      "snippet": "3 days ago · Általános társalgási fórumcsoport A Törzsasztal, Index kávéház, iNteRNeTTo, Iskolák, évszámok, horoszkópok, …"
+    },
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Article/viewArticle?a=171642476",
+      "snippet": "Sziasztok!Trix H0 DRG 5 darabos válogatott személyvagon szerelvény - abszolút újszerű, gyűjteményből, eltérő pályaszámok, …"
+    },
+    {
+      "title": "Sex Stories | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/sex-stories.6/",
+      "snippet": "Sep 2, 2026 · Anything related to texts and xnxx stories."
+    },
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Article/viewArticle?a=171638262",
+      "snippet": "Apr 2, 2026 · Kedves Börzézők! &nbsp; Az alábbi kizárólag H0-ás és DC modelleket,kiegészítőket szeretném eladni/cserélni: &nbsp; …"
+    }
+  ]
+}

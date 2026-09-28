@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "jmgao/Swift1.5-Flash-Next-mixed-NInfer",
+  "slug": "jmgao-swift1-5-flash-next-mixed-ninfer",
+  "author": "jmgao",
+  "url": "https://huggingface.co/jmgao/Swift1.5-Flash-Next-mixed-NInfer",
+  "created_at": "2026-09-27T21:46:02.000Z",
+  "updated_at": "2026-09-27T22:02:33.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "qwen3.8",
+    "flash-next",
+    "nvfp4",
+    "fp8",
+    "int4",
+    "mixed-precision",
+    "blackwell",
+    "rtx-pro-6000",
+    "windows",
+    "single-gpu",
+    "multimodal",
+    "speculative-decoding",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 109687977984,
+  "storage_human": "109.7 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next, ukisai/Swift1.5-Qwen3.8-Flash-Next, primitive-ai/Qwen3.8-Flash-Next-PLE-quant",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brit Hotel Europ Bergerac, Bergerac (updated prices 2026)",
+      "url": "https://www.booking.com/hotel/fr/europ-hotel.en-gb.html?msockid=3136b6deaca660bf0cc9a13fadf6614d",
+      "snippet": "Guest rooms have a flat-screen full HD TV, en suite facilities with a bath or shower and a telephone. All rooms have air conditioning. …"
+    },
+    {
+      "title": "Brit Hotel, 180 hôtels partout en France – Réservez au meilleur prix",
+      "url": "https://www.brithotel.fr/",
+      "snippet": "La chaîne Brit Hotel c’est aujourd’hui 180 hôtels dont une vingtaine en filiales et plus de 8000 chambres. Nos établissements 2, 3 et …"
+    },
+    {
+      "title": "Brit Europ Hotel",
+      "url": "https://www.europ-hotel-bergerac.com/en",
+      "snippet": "The hotel pool is open until October 15, 2026, weather permitting. For your information, an electric vehicle charging station is now …"
+    },
+    {
+      "title": "Brit Hotel Europ Bergerac - Hôtel, 20-22 Rue du Petit Sol, 24100 ...",
+      "url": "https://fr.mappy.com/poi/5e4c65c954c4c006b26d25cd",
+      "snippet": "L'Brit Hotel Europ Bergerac se trouve à 5 minutes à pied du centre-ville historique de Bergerac. Vous disposerez d’une piscine …"
+    },
+    {
+      "title": "Brit Hotel Europ Bergerac, Bergerac (tarifs actualisés pour 2026)",
+      "url": "https://www.booking.com/hotel/fr/europ-hotel.fr.html?msockid=3136b6deaca660bf0cc9a13fadf6614d",
+      "snippet": "L'Brit Hotel Europ Bergerac se trouve à 5 minutes à pied du centre-ville historique de Bergerac. Vous disposerez d’une piscine …"
+    }
+  ]
+}

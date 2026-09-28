@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-eval-all-h02-c-67999-c140386002a9",
+  "slug": "davidwdw-fa-eval-all-h02-c-67999-c140386002a9",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-eval-all-h02-c-67999-c140386002a9",
+  "created_at": "2026-09-28T00:10:40.000Z",
+  "updated_at": "2026-09-28T00:11:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117406564,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Business Management School in Paris | EMA",
+      "url": "https://ema.education/en/",
+      "snippet": "EMA is a Paris-based management school offering degree programmes, sustainable academy and professional development. Shape …"
+    },
+    {
+      "title": "Bachelor in International Hospitality and Restaurant Management ...",
+      "url": "https://en.institutlyfe.com/level/bachelors/bachelor-hons-in-international-hospitality-management/",
+      "snippet": "Jul 9, 2026 · Our programme offers a two-year common core to discover the intricacies and learn the fundamentals of the hospitality, …"
+    },
+    {
+      "title": "Bachelor in Food & Beverage and Hospitality Management |…",
+      "url": "https://www.ferrandi-paris.com/en/hospitality-management-programs/bachelor-food-and-beverage-and-hospitality-management",
+      "snippet": "Jan 8, 2026 · This program cultivates essential interpersonal, leadership, and innovative skills, empowering graduates to become …"
+    },
+    {
+      "title": "Best Colleges for Beverage Management | Honors Society",
+      "url": "https://www.honorssociety.org/guides/best-colleges-for-beverage-management.html",
+      "snippet": "This Honors Society guide explains best colleges for beverage management while helping students compare colleges, scholarships, …"
+    },
+    {
+      "title": "Most Popular Business Administration And Management Bachelor's Degree ...",
+      "url": "https://www.collegefactual.com/majors/business-management-marketing-sales/business-administration-and-management/rankings/most-popular/bachelors-degrees/",
+      "snippet": "Find the most popular bachelor's degree schools for Business Administration And Management: a guide to the most popular 1527 …"
+    }
+  ]
+}

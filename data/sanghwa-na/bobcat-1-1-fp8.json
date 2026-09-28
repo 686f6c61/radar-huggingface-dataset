@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "sanghwa-na/bobcat-1.1-fp8",
+  "slug": "sanghwa-na-bobcat-1-1-fp8",
+  "author": "sanghwa-na",
+  "url": "https://huggingface.co/sanghwa-na/bobcat-1.1-fp8",
+  "created_at": "2026-09-27T19:36:03.000Z",
+  "updated_at": "2026-09-27T19:37:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "typed-decisions",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "calibration",
+    "classification",
+    "guardrails",
+    "zero-shot-classification",
+    "en",
+    "ko",
+    "base_model:sanghwa-na/bobcat-1.1",
+    "base_model:quantized:sanghwa-na/bobcat-1.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 31256708232,
+  "storage_human": "31.3 GB",
+  "base_model": "sanghwa-na/bobcat-1.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sanghwa-na/bobcat-1.1 · Hugging Face",
+      "url": "https://huggingface.co/sanghwa-na/bobcat-1.1",
+      "snippet": "This repository, sanghwa-na/bobcat-1.1, holds Bobcat 1.1 as ready-to-serve BF16 weights: a rank-16 LoRA trained on Qwen/Qwen3.8-27B (Apache-2.0) at revision 1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0, merged into the base. vLLM serves it in FP8."
+    },
+    {
+      "title": "sanghwa-na/bobcat-1 · Hugging Face",
+      "url": "https://huggingface.co/sanghwa-na/bobcat-1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bobcat-1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/sanghwa-na/bobcat-1",
+      "snippet": "Run bobcat-1 with FriendliAI inference. Bobcat is a typed-decision model."
+    },
+    {
+      "title": "didhd (Sanghwa Na) · GitHub",
+      "url": "https://github.com/didhd",
+      "snippet": "Sanghwa Na I&#x27;m an engineer focused on making AI systems more useful and reliable in practice. Currently I build developer tools and agent infrastructure."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

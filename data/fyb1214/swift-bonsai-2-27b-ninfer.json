@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "fyb1214/Swift-Bonsai-2-27B-NInfer",
+  "slug": "fyb1214-swift-bonsai-2-27b-ninfer",
+  "author": "fyb1214",
+  "url": "https://huggingface.co/fyb1214/Swift-Bonsai-2-27B-NInfer",
+  "created_at": "2026-09-27T19:59:50.000Z",
+  "updated_at": "2026-09-28T03:00:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "ninfer",
+    "ternary",
+    "1-bit",
+    "2-bit",
+    "pq2",
+    "ptq1",
+    "bonsai",
+    "qwen3.8",
+    "hadamard",
+    "mtp",
+    "speculative-decoding",
+    "swift",
+    "multimodal",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15354335256,
+  "storage_human": "15.4 GB",
+  "base_model": "ukisai/Swift-Bonsai-2-GGUF, prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Neroued/ninfer: High-performance single-GPU inference for ...",
+      "url": "https://github.com/Neroued/ninfer",
+      "snippet": "High-performance single-GPU inference for selected model checkpoints and GPUs. - Neroued/ninfer"
+    },
+    {
+      "title": "GitHub - RahulRachuri/bonsai-swift: Bonsai 2 27B (PrismML ternary Qwen3 ...",
+      "url": "https://github.com/RahulRachuri/bonsai-swift",
+      "snippet": "A native Swift host for Bonsai 2 27B, PrismML&#x27;s ternary build of Qwen3.8-27B, running on Apple&#x27;s Core AI runtime with no Python in the loop at run time. The verified target is an Apple silicon Mac running macOS 27. The host loads the three-function bundle, runs chunked prefill and decode, and ..."
+    },
+    {
+      "title": "How to Run Bonsai 2 27B Locally: Full Install Guide - mindstudio.ai",
+      "url": "https://www.mindstudio.ai/blog/bonsai-2-27b-local-install",
+      "snippet": "What is Bonsai 2 27B? Bonsai 2 27B is a ternary-quantized version of Qwen3.8-27B, a 27 billion parameter model that normally needs around 54 GB of memory at FP16 precision. Bonsai 2 compresses that down to roughly 6 to 8 GB depending on format, while its maker, Prism ML, claims it retains about 98% of the original model&#x27;s benchmark performance."
+    },
+    {
+      "title": "Introducing Bonsai 2 27B: Near-Lossless Compression in a 9x ... - PrismML",
+      "url": "https://prismml.com/news/bonsai-2-27b",
+      "snippet": "What changed from the first Bonsai 27B release Our first Bonsai 27B release was an important milestone, offering a practical way to run 27B-class intelligence on local devices. Bonsai 2 27B focuses on the next step: improving the model quality and runtime performance needed for real-world local applications."
+    },
+    {
+      "title": "Bonsai 27B - Bonsai - docs.prismml.com",
+      "url": "https://docs.prismml.com/models/bonsai-27b",
+      "snippet": "Bonsai 27B is the largest multimodal model in the family: it accepts vision input alongside text. It is based on Qwen3.6 27B. Like every Bonsai, the language model is quantized end-to-end 1-bit or ternary weights across embeddings, attention, MLPs, and the LM head. The vision tower is handled separately, at 4-bit."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "RobbieHolland/Glyph-research",
+  "slug": "robbieholland-glyph-research",
+  "author": "RobbieHolland",
+  "url": "https://huggingface.co/RobbieHolland/Glyph-research",
+  "created_at": "2026-09-27T22:22:34.000Z",
+  "updated_at": "2026-09-27T22:41:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sparse-autoencoder",
+    "clinical-research",
+    "glyph",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159490036,
+  "storage_human": "159 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Topic Disons Demain 3 Jours Gratuit Novembre 2020",
+      "url": "https://www.jeuxvideo.com/forums/42-51-64535556-1-0-1-0-disons-demain-3-jours-gratuit-novembre-2020.htm",
+      "snippet": "Oct 19, 2020 · J'ai envie de rencontrer des filles donc je vous demande un code promo pour avoir accès à Disons Demain durant 3 …"
+    },
+    {
+      "title": "Topic Ces QUADRA qui regrettent leur DIVORCE « si j’avais su, je n ...",
+      "url": "https://www.jeuxvideo.com/forums/42-51-77263572-1-0-1-0-ces-quadra-qui-regrettent-leur-divorce-si-j-avais-su-je-n-aurais-pas-divorce.htm",
+      "snippet": "Aug 21, 2026 · Je leur ai donné la priorité et je ne le regrette absolument pas. » Officiellement séparé « depuis le 30 mai » , Bernard …"
+    },
+    {
+      "title": "Young Lions Competitions announce 2026 winners - Live In Cannes",
+      "url": "https://www.adforum.com/liveincannes/young-lions-competitions-announce-2026-winners?year=2015",
+      "snippet": "Jun 26, 2026 · Young Lions Competitions announce 2026 winners Hong Kong SAR takes home first time wins in PR and Media and …"
+    },
+    {
+      "title": "Best retail ads and campaigns of the month - AdForum Top 5 Retail …",
+      "url": "https://www.adforum.com/top5/retail/108",
+      "snippet": "May 20, 2026 · The best retail advertisements and campaigns worldwide worldwide."
+    },
+    {
+      "title": "Topic Disons Demain 3 Jours Gratuit Août 2020 - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/42-51-63764440-1-0-1-0-disons-demain-3-jours-gratuit-aout-2020.htm",
+      "snippet": "Jul 23, 2020 · J'ai envie de rencontrer des filles gratuitement donc je vous demande un code promo pour avoir accès à Disons …"
+    }
+  ]
+}

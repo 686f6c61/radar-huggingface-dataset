@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Darwin-27B-RSI-GGUF",
+  "slug": "mradermacher-darwin-27b-rsi-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Darwin-27B-RSI-GGUF",
+  "created_at": "2026-09-27T23:11:23.000Z",
+  "updated_at": "2026-09-28T00:52:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "darwin",
+    "darwin-rsi",
+    "recursive-self-improvement",
+    "rsi",
+    "self-improvement",
+    "self-improving-ai",
+    "self-evolving",
+    "no-human-labels",
+    "label-free",
+    "reasoning",
+    "thinking",
+    "chain-of-thought",
+    "gpqa",
+    "supergpqa",
+    "decision-index",
+    "typed-decisions",
+    "jev",
+    "system-2",
+    "qwen3.5",
+    "27b",
+    "vidraft",
+    "final-bench",
+    "en",
+    "ko",
+    "multilingual",
+    "base_model:FINAL-Bench/Darwin-27B-RSI",
+    "base_model:quantized:FINAL-Bench/Darwin-27B-RSI",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 186348477248,
+  "storage_human": "186.3 GB",
+  "base_model": "FINAL-Bench/Darwin-27B-RSI",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FINAL-Bench/Darwin-27B-RSI-GGUF · Hugging Face",
+      "url": "https://huggingface.co/FINAL-Bench/Darwin-27B-RSI-GGUF",
+      "snippet": "Q4_K_M GGUF of FINAL-Bench/Darwin-27B-RSI — Darwin-27B-Opus improved by Recursive Self-Improvement, with zero human-written answers."
+    },
+    {
+      "title": "FINAL-Bench/Darwin-27B-RSI · Hugging Face",
+      "url": "https://huggingface.co/FINAL-Bench/Darwin-27B-RSI",
+      "snippet": "Darwin-27B-RSI is Darwin-27B-Opus after Recursive Self-Improvement (RSI): the model was improved using only signal it produced itself."
+    },
+    {
+      "title": "mradermacher/Eikos-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Eikos-27B-GGUF",
+      "snippet": "See https://huggingface.co/mradermacher/model_requests for some answers to questions you might have and/or if you want some other model quantized. I thank my company, nethype GmbH, for letting me use its servers and providing upgrades to my workstation to enable this work in my free time. Downloads last month · 514 · GGUF · Model size · 27B params ·"
+    },
+    {
+      "title": "mradermacher (team mradermacher)",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "updated a model about 3 hours ago mradermacher/WikiQwen-4B-GGUF"
+    },
+    {
+      "title": "mradermacher/Mars_27B_V.1-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Mars_27B_V.1-i1-GGUF",
+      "snippet": "See https://huggingface.co/mradermacher/model_requests for some answers to questions you might have and/or if you want some other model quantized."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "xCloudinfo",
   "url": "https://huggingface.co/xCloudinfo/Granite-4.2-8B-Uncensored-GGUF",
   "created_at": "2026-09-27T17:15:52.000Z",
-  "updated_at": "2026-09-27T17:19:58.000Z",
+  "updated_at": "2026-09-27T17:27:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,6 +21,7 @@
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
+    "imatrix",
     "conversational"
   ],
   "likes": 0,
@@ -28,8 +29,8 @@
   "trending_score": 0,
   "parameters": 8791592960,
   "parameters_human": "8.79B",
-  "storage_bytes": 16562093120,
-  "storage_human": "16.6 GB",
+  "storage_bytes": 36143625920,
+  "storage_human": "36.1 GB",
   "base_model": "ibm-granite/granite-4.2-8b",
   "formats": [
     "gguf"

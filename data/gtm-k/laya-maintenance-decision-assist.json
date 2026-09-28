@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "gtm-k/laya-maintenance-decision-assist",
+  "slug": "gtm-k-laya-maintenance-decision-assist",
+  "author": "gtm-k",
+  "url": "https://huggingface.co/gtm-k/laya-maintenance-decision-assist",
+  "created_at": "2026-09-27T17:52:12.000Z",
+  "updated_at": "2026-09-27T19:04:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "laya",
+    "typed-decisions",
+    "research",
+    "maintenance",
+    "synthetic-data",
+    "en",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 1685197088,
+  "storage_human": "1.7 GB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Analytics",
+      "url": "https://tagmanager.google.com/",
+      "snippet": "Google Analytics lets you measure your advertising ROI as well as track your Flash, video, and social networking sites and applications.Read more"
+    },
+    {
+      "title": "GTM Bâtiment",
+      "url": "https://www.gtm-batiment.fr/",
+      "snippet": "Depuis 30 ans, GTM Bâtiment renouvelle son savoir-faire en étant à l’écoute de ses clients et de leurs besoins. Elle invente …Read more"
+    },
+    {
+      "title": "GTm Extranet - Aide - La Poste",
+      "url": "https://maboxrh.laposte.fr/help",
+      "snippet": "En cas de difficulté technique veuillez contacter le support : svp.sirhcourrier@laposte.fr Pour toutes questions liées à vos …Read more"
+    },
+    {
+      "title": "Google Tag Manager",
+      "url": "https://tagmanager.google.com/scc/?id=GTM-5V6GSD&gtm_preview=QUICK_PREVIEW&gtm_debug=x",
+      "snippet": "Your browser is now in preview and debug mode for Version QUICK_PREVIEW of Container GTM-5V6GSD. To start previewing, …Read more"
+    },
+    {
+      "title": "Website Tag Management Tools & Solutions - Google Tag Manager",
+      "url": "https://marketingplatform.google.com/about/tag-manager/",
+      "snippet": "Google Tag Manager helps make website tag management simple with tools & solutions that allow small businesses to deploy and …Read more"
+    }
+  ]
+}

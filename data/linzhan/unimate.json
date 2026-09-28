@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Linzhan/UniMate",
+  "slug": "linzhan-unimate",
+  "author": "Linzhan",
+  "url": "https://huggingface.co/Linzhan/UniMate",
+  "created_at": "2026-09-27T19:24:48.000Z",
+  "updated_at": "2026-09-27T19:36:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "tensorboard",
+    "motion-generation",
+    "text-to-motion",
+    "character-animation",
+    "flow-matching",
+    "unimate",
+    "dataset:Linzhan/UniML3D",
+    "arxiv:2609.05415",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14254269048,
+  "storage_human": "14.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UniMate - a Linzhan Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Linzhan/unimate",
+      "snippet": "UniMate: One Unified Model to Animate Diverse Skeletons Paper • 2609.05415 •Published 8 days ago• 14 Note UniMate: One Unified Model to Animate Diverse Skeletons"
+    },
+    {
+      "title": "UniMate — One Unified Model to Animate Diverse Skeletons",
+      "url": "https://linzhanmou.com/unimate/",
+      "snippet": "Diverse skeletons, diverse prompts. A single unified model generates prompt-faithful, temporally coherent motion across heterogeneous rigs, adapting to each skeleton&#x27;s structure."
+    },
+    {
+      "title": "GitHub - Friedrich-M/UniMate: [SIGGRAPH Asia 2026] UniMate: One Unified ...",
+      "url": "https://github.com/Friedrich-M/UniMate",
+      "snippet": "[SIGGRAPH Asia 2026] UniMate: One Unified Model to Animate Diverse Skeletons - Friedrich-M/UniMate"
+    },
+    {
+      "title": "PDF UniMate: One Unified Model to Animate Diverse Skeletons",
+      "url": "https://linzhanmou.com/unimate/resources/unimate.pdf",
+      "snippet": "In contrast, a single UniMate model covers a far broader range of skeletons, from humans and animals to general articulated objects, accepts text conditioning, and animates a rigged mesh end-to-end, without reference motion or per-skeleton training."
+    },
+    {
+      "title": "UniMate: One Unified Model to Animate Diverse Skeletons",
+      "url": "https://arxiv.org/abs/2609.05415",
+      "snippet": "Recent advances in automatic rigging now deliver animation-ready 3D assets at scale, yet generating the motion to drive them remains a bottleneck. Existing learned animators are topology-constrained: they rely on category-specific templates or require per-skeleton fine-tuning and reference motions at inference. We present UniMate, a unified foundation model that synthesizes articulated motion ..."
+    }
+  ]
+}

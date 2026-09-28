@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Ninnix96/Qwengram-0.8B",
+  "slug": "ninnix96-qwengram-0-8b",
+  "author": "Ninnix96",
+  "url": "https://huggingface.co/Ninnix96/Qwengram-0.8B",
+  "created_at": "2026-09-25T10:13:43.000Z",
+  "updated_at": "2026-09-26T15:35:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwengram",
+    "external-memory",
+    "llama-cpp",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 1282,
+  "trending_score": 11,
+  "parameters": 783332678,
+  "parameters_human": "783.3M",
+  "storage_bytes": 5591145763,
+  "storage_human": "5.6 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    },
+    {
+      "title": "Google Earth End User Additional Terms of Service",
+      "url": "https://maps.google.fr/help/terms_maps-earth/",
+      "snippet": "Actual Conditions; Assumption of Risk. When you use Google Earth's map data, and other content, you may find that actual …"
+    },
+    {
+      "title": "Charte de confidentialité de Google",
+      "url": "https://maps.google.fr/intl/fr/policies/privacy/archive/20051014/",
+      "snippet": "14 octobre 2005 Chez Google, nous sommes conscients de l’importance de la confidentialité des informations personnelles. Cette …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/intl/fr_fr/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, featuring Street View, 3D mapping, turn-by-turn directions, indoor maps, and more for all your …"
+    },
+    {
+      "title": "Questions fréquentes – Visite virtuelle pour les Pros – Google Maps",
+      "url": "https://maps.google.fr/help/maps/businessphotos/faq.html",
+      "snippet": "L'importation dans Visite virtuelle pour les Pros de photos prises dans des musées est également interdite, car ces photos doivent …"
+    }
+  ]
+}

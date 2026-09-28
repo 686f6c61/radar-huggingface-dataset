@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "psythecreator/banknifty-direction-predictor",
+  "slug": "psythecreator-banknifty-direction-predictor",
+  "author": "psythecreator",
+  "url": "https://huggingface.co/psythecreator/banknifty-direction-predictor",
+  "created_at": "2026-09-27T21:08:23.000Z",
+  "updated_at": "2026-09-27T21:08:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "شعاع الزهراني — ImgBB",
+      "url": "https://ibb.co/album/1YfgTQ",
+      "snippet": "شعاع الزهراني album hosted in ImgBB"
+    },
+    {
+      "title": "شعاع الزهراني ☀️ (@oshi.az ... - TikTok",
+      "url": "https://www.tiktok.com/@oshi.az",
+      "snippet": "Join 11.2K followers on TikTok for more tiktoklive, تيكتوك_عرب, السعودية content."
+    },
+    {
+      "title": "‎شعاع الزهراني ‎ (@ooosh9911) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ooosh9911/",
+      "snippet": "‎شعاع الزهراني 🇸🇦‎ (@ooosh9911) • Instagram photos and videos ooosh9911 Options شعاع الزهراني 🇸🇦 46.6K followers 27 following اشع نور أينما كنت 💫🧚‍♀️"
+    },
+    {
+      "title": "شعاع الزهراني — ImgBB",
+      "url": "https://ibb.co/album/QDfT85?sort=name_asc",
+      "snippet": "شعاع الزهراني album hosted in ImgBB 6images AZ Most recent Oldest Most viewed AZ Embed codes Sub albums"
+    },
+    {
+      "title": "شعاع الزهراني - sowtalnaas.com",
+      "url": "https://sowtalnaas.com/writer/Shoaa-Alzahrani",
+      "snippet": "صوت الناس صحيفة إلكترونية تابعة لحزب التجمع الوطني تعنى بالشؤون السياسية والاجتماعية والاقتصادية والثقافية في السعودية."
+    }
+  ]
+}

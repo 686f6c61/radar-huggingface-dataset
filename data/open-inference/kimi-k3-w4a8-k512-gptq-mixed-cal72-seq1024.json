@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "open-inference/Kimi-K3-W4A8-K512-GPTQ-Mixed-Cal72-Seq1024",
+  "slug": "open-inference-kimi-k3-w4a8-k512-gptq-mixed-cal72-seq1024",
+  "author": "open-inference",
+  "url": "https://huggingface.co/open-inference/Kimi-K3-W4A8-K512-GPTQ-Mixed-Cal72-Seq1024",
+  "created_at": "2026-09-27T05:06:23.000Z",
+  "updated_at": "2026-09-27T22:15:06.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k3",
+    "feature-extraction",
+    "compressed-tensors",
+    "quantized",
+    "custom_code",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:finetune:moonshotai/Kimi-K3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2779931837184,
+  "parameters_human": "2779.93B",
+  "storage_bytes": 1497245560901,
+  "storage_human": "1497.2 GB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Page d'accueil Open | Your high-digital place",
+      "url": "https://www.open.global/",
+      "snippet": "Construisons votre carrière Chez Open, nous ouvrons des perspectives aux talents... #Recrutez-nous !"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "ChatGPT Enterprise ChatGPT for Education Codex Release Notes API Platform Overview API Log In Docs Business Overview …"
+    },
+    {
+      "title": "Open, Aujourd'hui. Et demain. | Open",
+      "url": "https://www.open.global/open/open-aujourdhui-demain",
+      "snippet": "Partout en France. Et plus. Chez Open, nous accompagnons nos clients en offrant un service de proximité. Ainsi, nous sommes …"
+    },
+    {
+      "title": "Groupe Open — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Groupe_Open",
+      "snippet": "Groupe Open est un groupe français d'entreprises informatiques centrées sur la fourniture de prestations autour des applications, …"
+    },
+    {
+      "title": "Apache OpenOffice",
+      "url": "https://www.openoffice.org/fr/",
+      "snippet": "Jan 4, 2016 · Projet francophone Apache OpenOffice Ce site a pour but d'apporter outils et ressources aux francophones pour le …"
+    }
+  ]
+}

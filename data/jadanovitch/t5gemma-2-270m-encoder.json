@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "jadanovitch/t5gemma-2-270m-encoder",
+  "slug": "jadanovitch-t5gemma-2-270m-encoder",
+  "author": "jadanovitch",
+  "url": "https://huggingface.co/jadanovitch/t5gemma-2-270m-encoder",
+  "created_at": "2026-09-27T20:50:58.000Z",
+  "updated_at": "2026-09-27T22:04:15.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "vllm",
+    "gemma3",
+    "t5gemma2",
+    "encoder",
+    "bidirectional-attention",
+    "base_model:google/t5gemma-2-270m-270m",
+    "base_model:finetune:google/t5gemma-2-270m-270m",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 569607444,
+  "storage_human": "570 MB",
+  "base_model": "google/t5gemma-2-270m-270m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "T5Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/t5gemma/",
+      "snippet": "T5Gemma 2 T5Gemma 2 ties the embeddings between the encoder and decoder and merges decoder self- and cross-attention, saving model parameters. This enables more active capabilities—including multimodal processing, multilingual support, and a 128k token context window—with the same memory footprint as Gemma 3."
+    },
+    {
+      "title": "T5Gemma 2 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/en/model_doc/t5gemma2",
+      "snippet": "T5Gemma 2 is a family of pretrained encoder-decoder large language models with strong multilingual, multimodal and long-context capability, available in 270M-270M, 1B-1B and 4B-4B parameters. Following T5Gemma, it is built via model adaptation (based on Gemma 3) using UL2."
+    },
+    {
+      "title": "T5Gemma 2 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.0.0/model_doc/t5gemma2",
+      "snippet": "T5Gemma 2 T5Gemma 2 is a family of pretrained encoder-decoder large language models with strong multilingual, multimodal and long-context capability, available in 270M-270M, 1B-1B and 4B-4B parameters. Following T5Gemma, it is built via model adaptation (based on Gemma 3) using UL2. The architecture is similar to T5Gemma and Gemma 3, enhanced with tied word embeddings and merged self- and ..."
+    },
+    {
+      "title": "T5Gemma 2: Seeing, Reading, and Understanding Longer",
+      "url": "https://arxiv.org/pdf/2512.14856v2",
+      "snippet": "In this paper, we fill this gap and present T5Gemma 2, a new family of lightweight open encoder-decoder LLMs with strong multilingual, multimodal and long-context capabilities. T5Gemma 2 follows the adaptation recipe from T5Gemma (Zhang et al., 2025b): initializing model parameters from a pretrained decoder-only checkpoint and then adapting them with the UL2 objective as in Figure 2. We ..."
+    },
+    {
+      "title": "T5Gemma 2: Seeing, Reading, and Understanding Longer",
+      "url": "https://arxiv.org/html/2512.14856v2",
+      "snippet": "T5Gemma 2 follows the adaptation recipe (via UL2) in T5Gemma - adapting a pretrained decoder-only model into an encoder-decoder model, and extends it from text-only regime to multimodal based on the Gemma 3 models."
+    }
+  ]
+}

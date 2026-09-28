@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "haihengh/Qwen3.6-35B-A3B-finchmoe-4bit-abliterated",
+  "slug": "haihengh-qwen3-6-35b-a3b-finchmoe-4bit-abliterated",
+  "author": "haihengh",
+  "url": "https://huggingface.co/haihengh/Qwen3.6-35B-A3B-finchmoe-4bit-abliterated",
+  "created_at": "2026-09-27T23:20:47.000Z",
+  "updated_at": "2026-09-28T01:04:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "finchmoe",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "finchmoe",
+    "qwen",
+    "moe",
+    "abliterated",
+    "uncensored",
+    "apple-silicon",
+    "metal",
+    "quantization",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20049416644,
+  "storage_human": "20.0 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Canva: Visual Suite for Everyone",
+      "url": "https://www.canva.com/?msockid=0589fc124bfc68a81b71ebf04a52691a",
+      "snippet": "Canva is a free-to-use online graphic design tool. Use it to create social media posts, presentations, posters, videos, logos and more.Read more"
+    },
+    {
+      "title": "Canva : Graphisme, IA, Photo & Vidéo | Canva France",
+      "url": "https://www.canva.com/fr_fr/?msockid=0589fc124bfc68a81b71ebf04a52691a",
+      "snippet": "Du design à la retouche photo, l’IA, la vidéo et le travail en équipe, Canva FR est votre partenaire créatif nº 1. CV, logo, affiche…"
+    },
+    {
+      "title": "Canvas Account Log In - Instructure",
+      "url": "https://www.instructure.com/canvas/login",
+      "snippet": "Access your Canvas account to manage courses, view assignments, and engage with learning materials."
+    },
+    {
+      "title": "Canvas Login - Instructure",
+      "url": "https://www.instructure.com/en-gb/canvas/login",
+      "snippet": "If you're an educator or student at a school that uses Canvas, search for your school here and tap the link to access the login page. …"
+    },
+    {
+      "title": "Canvas Login | Instructure",
+      "url": "https://cloud.canvaslms.net/login",
+      "snippet": "Official Login page for Canvas student login, School Search Canvas, Canvas Network, Canvas Community, and Canvas Free For …"
+    }
+  ]
+}

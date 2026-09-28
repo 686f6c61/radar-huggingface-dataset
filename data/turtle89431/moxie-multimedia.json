@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "turtle89431/Moxie-Multimedia",
+  "slug": "turtle89431-moxie-multimedia",
+  "author": "turtle89431",
+  "url": "https://huggingface.co/turtle89431/Moxie-Multimedia",
+  "created_at": "2026-09-16T23:02:03.000Z",
+  "updated_at": "2026-09-27T22:54:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "doi:10.57967/hf/10479",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70713305962,
+  "storage_human": "70.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

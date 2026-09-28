@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "taleef/Llama-3.1-8B-Instruct-Alpaca-FFT-seed42",
+  "slug": "taleef-llama-3-1-8b-instruct-alpaca-fft-seed42",
+  "author": "taleef",
+  "url": "https://huggingface.co/taleef/Llama-3.1-8B-Instruct-Alpaca-FFT-seed42",
+  "created_at": "2026-09-28T01:00:16.000Z",
+  "updated_at": "2026-09-28T01:02:17.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "safety",
+    "jailbreak",
+    "lora",
+    "research",
+    "en",
+    "dataset:yahma/alpaca-cleaned",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free abused Porn Videos & Sex Movies - TNAFLIX.COM",
+      "url": "https://www.tnaflix.com/search?what=abused",
+      "snippet": "Free abused Sex Videos on TNAFLIX.COM - Choose from millions of free high quality videos in every category you can imagine.Read more"
+    },
+    {
+      "title": "Abusive scenes, Liste de favoris - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/favorite/6581739/abusive_scenes",
+      "snippet": "XVIDEOS Abusive scenes, Liste de favoris gratuit LE SURPRENANT AVEC UNE TENUE SEXY EST MAL - Elle ne pouvait pas …Read more"
+    },
+    {
+      "title": "What is child sexual abuse? - Rape Crisis England & Wales",
+      "url": "https://rapecrisis.org.uk/get-informed/types-of-sexual-violence/what-is-child-sexual-abuse/",
+      "snippet": "What is child sexual abuse? Child sexual abuse is sexual activity that happens to a person under the age of 18 and is unwanted or …Read more"
+    },
+    {
+      "title": "'abusive sex' Search - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/?k=abusive+sex",
+      "snippet": "26,347 abusive sex FREE videos found on XVIDEOS for this search.Read more"
+    },
+    {
+      "title": "DOCUMENT RTL - Viols dans la pornographie : \"Ils ont abusé de ma ...",
+      "url": "https://www.rtl.fr/actu/justice-faits-divers/document-rtl-viols-dans-la-pornographie-ils-ont-abuse-de-ma-confiance-confie-une-victime-7900094312",
+      "snippet": "Nov 8, 2021 · Victime de viol sur un tournage pornographie, une jeune fille confie au micro de RTL l'abus de confiance et les …Read more"
+    }
+  ]
+}

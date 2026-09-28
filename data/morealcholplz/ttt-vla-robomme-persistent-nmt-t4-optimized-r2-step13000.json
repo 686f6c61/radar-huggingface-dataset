@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/ttt-vla-robomme-persistent-nmt-t4-optimized-r2-step13000",
+  "slug": "morealcholplz-ttt-vla-robomme-persistent-nmt-t4-optimized-r2-step13000",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/ttt-vla-robomme-persistent-nmt-t4-optimized-r2-step13000",
+  "created_at": "2026-09-28T01:15:39.000Z",
+  "updated_at": "2026-09-28T01:17:14.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "Gr00tN1d6",
+    "robotics",
+    "vision-language-action",
+    "robomme",
+    "test-time-training",
+    "fast-weights",
+    "gr00t",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3432385472,
+  "parameters_human": "3.43B",
+  "storage_bytes": 6864939595,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …Read more"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "Movies & TV - YouTube",
+      "url": "https://movies.youtube.com/",
+      "snippet": "Find the latest and greatest movies and shows all available on YouTube.com/movies. From award-winning hits to independent …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/explore",
+      "snippet": "Explore trending music and find your next favorite song. Discover the latest releases from new artists, plus enjoy new music videos …"
+    }
+  ]
+}

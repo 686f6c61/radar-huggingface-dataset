@@ -5,7 +5,7 @@
   "author": "unlimitedpipe",
   "url": "https://huggingface.co/unlimitedpipe/ask-0.5b-GGUF",
   "created_at": "2026-09-27T00:48:29.000Z",
-  "updated_at": "2026-09-27T00:48:35.000Z",
+  "updated_at": "2026-09-27T19:11:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",
-  "storage_bytes": 531067808,
-  "storage_human": "531 MB",
+  "storage_bytes": 1593203424,
+  "storage_human": "1.6 GB",
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "gguf"

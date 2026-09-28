@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "enver/rootformer-v14-sovereign-transmute",
+  "slug": "enver-rootformer-v14-sovereign-transmute",
+  "author": "enver",
+  "url": "https://huggingface.co/enver/rootformer-v14-sovereign-transmute",
+  "created_at": "2026-09-27T10:16:18.000Z",
+  "updated_at": "2026-09-27T23:29:15.000Z",
+  "license": "aynengine-uni-prishtina-academic",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "rootformer",
+    "arabic",
+    "classical-arabic",
+    "morphemic-tokenizer",
+    "zero-bpe",
+    "farahidi",
+    "sibawayh",
+    "ishtiqaq-attention",
+    "rootattention",
+    "cross-lingual",
+    "neuro-morphemic",
+    "university-of-prishtina",
+    "aynengine",
+    "text-generation",
+    "custom_code",
+    "ar",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 399371824,
+  "parameters_human": "399.4M",
+  "storage_bytes": 1602994711,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "လိုးကား – Page 2 – Wone Dine [အပြာကား]",
+      "url": "https://wonedine.com/tag/%E1%80%9C%E1%80%AD%E1%80%AF%E1%80%B8%E1%80%80%E1%80%AC%E1%80%B8/page/2/",
+      "snippet": "Copyright © 2026 Wone Dine [အပြာကား] Design by ThemesDNA.comRead more"
+    },
+    {
+      "title": "မိန်းမနဲ့ခယ်မလေးကိုလိုးတဲ့ဘဲ – Buu Party",
+      "url": "https://buuparty.org/2025/10/02/%E1%80%99%E1%80%AD%E1%80%94%E1%80%BA%E1%80%B8%E1%80%99%E1%80%94%E1%80%B2%E1%80%B7%E1%80%81%E1%80%9A%E1%80%BA%E1%80%99%E1%80%9C%E1%80%B1%E1%80%B8%E1%80%80%E1%80%AD%E1%80%AF%E1%80%9C%E1%80%AD%E1%80%AF/",
+      "snippet": "Oct 2, 2025 · Read more From: admin Date: October 2, 2025 Actors: ဖူးကား / လိုးကား / အပြာကား မြန်မာ ဖူးဇာတ်ကား အပြာကား …Read more"
+    },
+    {
+      "title": "အဖုတ်မွှေးလာရိတ်တာ အလိုးခံရတဲ့မြမြ – Buu Party",
+      "url": "https://buuparty.org/2025/12/04/%E1%80%A1%E1%80%96%E1%80%AF%E1%80%90%E1%80%BA%E1%80%99%E1%80%BD%E1%80%BE%E1%80%B1%E1%80%B8%E1%80%9C%E1%80%AC%E1%80%9B%E1%80%AD%E1%80%90%E1%80%BA%E1%80%90%E1%80%AC-%E1%80%A1%E1%80%9C%E1%80%AD%E1%80%AF/",
+      "snippet": "Dec 4, 2025 · Read more From: admin Date: December 4, 2025 Actors: ဖူးကား / လိုးကား / အပြာကား / အောကား / အောဇာတ်ကား …Read more"
+    },
+    {
+      "title": "November 2022 – May Noe [အပြာကား]",
+      "url": "https://maynoe.com/2022/11/",
+      "snippet": "အောကား Application ထဲမှာ www.maynoe.com ကို Web View အနေနဲ့ ထည့်သွင်းအသုံးပြုနိုင ...Read more"
+    },
+    {
+      "title": "Myanmar All Kar - မြန်မာအောကား နှင့် အာရှအပြာကားများ စုစည်းမှု",
+      "url": "https://myanmarallkar.com/",
+      "snippet": "🤳 ကိုယ်တိုင်ရိုက် ခိုးရိုက် နောက်ပေါက် အဖွင့်ခံတဲ့ အထန်မမ 14 hours ago ဂျပန်လိုးကားRead more"
+    }
+  ]
+}

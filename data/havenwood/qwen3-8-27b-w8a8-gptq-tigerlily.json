@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "havenwood/Qwen3.8-27B-W8A8-GPTQ-Tigerlily",
+  "slug": "havenwood-qwen3-8-27b-w8a8-gptq-tigerlily",
+  "author": "havenwood",
+  "url": "https://huggingface.co/havenwood/Qwen3.8-27B-W8A8-GPTQ-Tigerlily",
+  "created_at": "2026-09-28T00:53:38.000Z",
+  "updated_at": "2026-09-28T01:01:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "tigerlily",
+    "apple-silicon",
+    "metal",
+    "smoothquant",
+    "gptq",
+    "int8",
+    "w8a8",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 29976085325,
+  "storage_human": "30.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B, mlx-community/Qwen3.8-27B-8bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LoongTeX - 知乎",
+      "url": "https://www.zhihu.com/people/loongtext",
+      "snippet": "Jun 23, 2026 · LoongTeX 龙文 欢迎来到 LoongTeX，这个科研圈里还算有点“野心”的小花园。 坦率地讲，我们一开始也没想着要搞什 …Read more"
+    },
+    {
+      "title": "程明明 - 知乎",
+      "url": "https://www.zhihu.com/people/cmmnk",
+      "snippet": "May 21, 2026 · 谢邀。跟我回答的另外一个问题答案差不多。直接拷贝过来。 我是南开大学卓越工程师学院执行院长程明明，这些年 …"
+    },
+    {
+      "title": "overleaf 使用教程;如何生成pdf文件-百度经验",
+      "url": "https://jingyan.baidu.com/article/066074d615e1f4c3c21cb0be.html",
+      "snippet": "May 29, 2018 · overleaf 使用教程;如何生成pdf文件,在接下来的一段时间里会一起分享下自己使用过程的一些操作步骤，从而与大家一 …"
+    },
+    {
+      "title": "Word中怎么使用朗读功能 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/d621e8da7735ac2865913f97.html",
+      "snippet": "May 15, 2018 · Word中怎么使用朗读功能,平时工作累了的时候，可能不想去看文档文件的内容，反而想趴在桌子上面，这个时候可以 …"
+    },
+    {
+      "title": "择梦舟 - 知乎",
+      "url": "https://www.zhihu.com/people/ze-meng-zhou-29",
+      "snippet": "May 2, 2025 · 本人男，00年，985博士在读，186，58kg，属于高瘦白净的类型。家境尚可，父母都是三甲医院主任医师。 我想从一 …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/OneJev-0.8B-GGUF",
+  "slug": "mradermacher-onejev-0-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/OneJev-0.8B-GGUF",
+  "created_at": "2026-09-27T22:34:28.000Z",
+  "updated_at": "2026-09-27T22:50:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "onejev",
+    "system-one",
+    "decision-model",
+    "calibration",
+    "multimodal",
+    "gui-agent",
+    "video",
+    "en",
+    "base_model:OmniJev/OneJev-0.8B",
+    "base_model:quantized:OmniJev/OneJev-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1006672704,
+  "parameters_human": "1.01B",
+  "storage_bytes": 9945821952,
+  "storage_human": "9.9 GB",
+  "base_model": "OmniJev/OneJev-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/CLM-0.8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/CLM-0.8B-GGUF",
+      "snippet": "mradermacher / CLM-.8B-GGUF like 0 Transformers GGUF English Indonesian qwen3.5 Merge slerp reasoning code chat 0.8b conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 30 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "By VRAM Tier Pick the tier that matches your hardware. Every model below has been confirmed live on HuggingFace at the time of writing, with GGUF available either in the linked repo or via a sibling quant repo from bartowski or mradermacher. 8GB VRAM — Budget tier The 8B class is the floor for usable uncensored output. Picks:"
+    },
+    {
+      "title": "Updates archive · Woolverine94/biniou Wiki · GitHub",
+      "url": "https://github.com/Woolverine94/biniou/wiki/Updates-archive",
+      "snippet": "a self-hosted webui for 30+ generative ai. Contribute to Woolverine94/biniou development by creating an account on GitHub."
+    }
+  ]
+}

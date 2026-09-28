@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "winterthurquants/Inkling-Small-NVFP4",
+  "slug": "winterthurquants-inkling-small-nvfp4",
+  "author": "winterthurquants",
+  "url": "https://huggingface.co/winterthurquants/Inkling-Small-NVFP4",
+  "created_at": "2026-09-27T21:09:49.000Z",
+  "updated_at": "2026-09-27T21:09:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:quantized:thinkingmachines/Inkling-Small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 156032140138,
+  "parameters_human": "156.03B",
+  "storage_bytes": 170764725303,
+  "storage_human": "170.8 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "baerquants/Inkling-Small-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/baerquants/Inkling-Small-NVFP4",
+      "snippet": "1. General Information Inkling-Small is a general-purpose multimodal model that accepts text, image and audio inputs and generates text outputs. It is intended for use in English and other languages, and across multiple coding languages. The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and ..."
+    },
+    {
+      "title": "usterquant/Inkling-Small-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/usterquant/Inkling-Small-NVFP4",
+      "snippet": "Instructions to use usterquant/Inkling-Small-NVFP4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Inkling Small NVFP4 by thinkingmachines - LLM Explorer",
+      "url": "https://llm-explorer.com/model/thinkingmachines%2FInkling-Small-NVFP4,1WT9XZ7GG1EOlVZVuZRQOg",
+      "snippet": "Inkling Small NVFP4 is an open-source language model by thinkingmachines. Features: 156b LLM, VRAM: 166.3GB, License: apache-2.0, LLM Explorer Score: 0.38."
+    },
+    {
+      "title": "Inkling-Small Model Card - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/model-card/inkling-small/",
+      "snippet": "Model card for Inkling-Small, a 276B-parameter (12B active) open-weights multimodal model: intended uses, model properties, training, evaluations and safety."
+    },
+    {
+      "title": "Deploy thinkingmachines/Inkling-Small-NVFP4 | Inference Endpoints by ...",
+      "url": "https://endpoints.huggingface.co/new/thinkingmachines/Inkling-Small-NVFP4",
+      "snippet": "Deploy Inkling-Small-NVFP4 for any-to-any inference in 1 click."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dusersad12/NimbusLM-ReleaseRepo",
+  "slug": "dusersad12-nimbuslm-releaserepo",
+  "author": "dusersad12",
+  "url": "https://huggingface.co/dusersad12/NimbusLM-ReleaseRepo",
+  "created_at": "2026-09-27T20:29:46.000Z",
+  "updated_at": "2026-09-27T20:29:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "roberta",
+    "feature-extraction",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 86,
+  "storage_human": "86 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dusersad12/NimbusLM-ReleaseRepo · Hugging Face",
+      "url": "https://huggingface.co/dusersad12/NimbusLM-ReleaseRepo",
+      "snippet": "1. Introduction The NimbusLM has undergone a significant version upgrade. In the latest update, NimbusLM has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark evaluations ..."
+    },
+    {
+      "title": "dusersad12/LuminaLM-ReleaseRepo · Hugging Face",
+      "url": "https://huggingface.co/dusersad12/LuminaLM-ReleaseRepo",
+      "snippet": "The model posts strong results across a wide range of benchmark evaluations, including mathematics, programming, and general logic. Its overall performance now sits close to several other leading models. Compared to the previous version, the upgraded model shows significant improvements in handling complex reasoning tasks."
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "AI Model Release Tracker Stay up to date with the latest AI model releases. This page tracks 468 models across all providers, sorted by release date."
+    },
+    {
+      "title": "AI Updates Today (September 2026) - Latest AI Model Releases",
+      "url": "https://llm-stats.com/llm-updates",
+      "snippet": "Track recent AI model releases, API changes, pricing updates, and feature launches across the major model providers in one daily changelog."
+    },
+    {
+      "title": "New AI Models: Live Release Tracker (Last 24 Hours) | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "The newest AI models, tracked live: releases from the last 24 hours, this week, and 243 confirmed launches from 61 providers — each with source evidence and benchmarks."
+    }
+  ]
+}

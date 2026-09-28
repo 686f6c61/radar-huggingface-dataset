@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mfourts/apyra-v2-qwen0.5b",
+  "slug": "mfourts-apyra-v2-qwen0-5b",
+  "author": "mfourts",
+  "url": "https://huggingface.co/mfourts/apyra-v2-qwen0.5b",
+  "created_at": "2026-09-28T01:41:36.000Z",
+  "updated_at": "2026-09-28T01:46:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "candle",
+  "languages": [],
+  "tags": [
+    "candle",
+    "apyra_attention_pooling",
+    "rust",
+    "qwen2.5",
+    "decision-engine",
+    "fast-attention",
+    "low-latency",
+    "explainable-ai",
+    "text-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33032,
+  "storage_human": "33032 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail Help - Google Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "Gmail にログインする - パソコン - Gmail ヘルプ - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "パソコンで Gmail にアクセスします。 Google アカウントのメールアドレスまたは電話番号と、パスワードを入力します。 情報が …"
+    },
+    {
+      "title": "Iniciar sesión en Gmail - Ordenador - Ayuda de Gmail - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=es&co=genie.platform%3Ddesktop",
+      "snippet": "Iniciar sesión En un ordenador, ve a Gmail. Escribe la dirección de correo de tu cuenta de Google o tu número de teléfono y la …"
+    },
+    {
+      "title": "Créer un compte Google pour Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=fr",
+      "snippet": "Créer un compte Google Remarque : Si vous souhaitez utiliser Gmail pour votre entreprise, un compte Google Workspace vous sera …"
+    },
+    {
+      "title": "Criar uma Conta do Google para o Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=pt-BR",
+      "snippet": "Criar uma Conta do Google Dica: se você quer usar o Gmail na sua empresa, talvez uma conta do Google Workspace seja uma …"
+    }
+  ]
+}

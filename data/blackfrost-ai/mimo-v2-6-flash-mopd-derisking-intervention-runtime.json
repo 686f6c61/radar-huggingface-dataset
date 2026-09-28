@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Blackfrost-AI/MiMo-V2.6-Flash-MOPD-Derisking-Intervention-Runtime",
+  "slug": "blackfrost-ai-mimo-v2-6-flash-mopd-derisking-intervention-runtime",
+  "author": "Blackfrost-AI",
+  "url": "https://huggingface.co/Blackfrost-AI/MiMo-V2.6-Flash-MOPD-Derisking-Intervention-Runtime",
+  "created_at": "2026-09-27T19:50:45.000Z",
+  "updated_at": "2026-09-27T20:19:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "sglang",
+  "languages": [],
+  "tags": [
+    "sglang",
+    "mimo",
+    "mimo-v2.6",
+    "mixture-of-experts",
+    "mxfp4",
+    "blackwell",
+    "runtime-intervention",
+    "representation-engineering",
+    "security-research",
+    "text-generation",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+    "base_model:finetune:XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20948,
+  "storage_human": "20948 B",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-RL, XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/welearn365.com",
+      "snippet": "OutlookRead more"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/owa/cridf.iledefrance.fr",
+      "snippet": ""
+    },
+    {
+      "title": "na01.safelinks.protection.outlook.com",
+      "url": "https://na01.safelinks.protection.outlook.com/apple-app-site-association",
+      "snippet": "{ \"applinks\": { \"apps\": [], \"details\": [ { \"appIDs\": [\"9KBH5RKYEW.com.microsoft.loop-dogfood\", \"SGGM6D27TK.com.microsoft.loop\"], …"
+    },
+    {
+      "title": "Outlook.com",
+      "url": "https://olmoauth.outlook.com/api/googleoauthredir/outlook-oauth://com.microsoft.office.outlook/android/google/oauth2redirect?state=33456429-8e5c-44a5-9cc4-6cbe85698cb0",
+      "snippet": ""
+    },
+    {
+      "title": "ps.outlook.com",
+      "url": "https://ps.outlook.com/Powershell",
+      "snippet": "Shërbimi Outlook për menaxhimin e email-eve dhe kalendarit tuaj."
+    }
+  ]
+}

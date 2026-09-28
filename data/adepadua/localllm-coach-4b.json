@@ -5,7 +5,7 @@
   "author": "adepadua",
   "url": "https://huggingface.co/adepadua/localllm-coach-4b",
   "created_at": "2026-09-26T22:40:01.000Z",
-  "updated_at": "2026-09-26T22:40:33.000Z",
+  "updated_at": "2026-09-27T11:51:27.000Z",
   "license": "health-ai-developer-foundations",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,12 +28,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 6,
   "trending_score": 0,
   "parameters": 3880263168,
   "parameters_human": "3.88B",
-  "storage_bytes": 2489892736,
-  "storage_human": "2.5 GB",
+  "storage_bytes": 4979785472,
+  "storage_human": "5.0 GB",
   "base_model": "google/medgemma-1.5-4b-it",
   "formats": [
     "gguf"

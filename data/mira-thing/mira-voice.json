@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mira-thing/mira-voice",
+  "slug": "mira-thing-mira-voice",
+  "author": "mira-thing",
+  "url": "https://huggingface.co/mira-thing/mira-voice",
+  "created_at": "2026-06-25T00:22:20.000Z",
+  "updated_at": "2026-09-28T00:04:01.000Z",
+  "license": "mixed-third-party",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [],
+  "tags": [
+    "sherpa-onnx",
+    "tflite",
+    "onnx",
+    "automatic-speech-recognition",
+    "keyword-spotting",
+    "wake-word",
+    "on-device",
+    "aarch64",
+    "spotify-car-thing",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 56,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135271401,
+  "storage_human": "135 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "My Mira",
+      "url": "https://mymira.fr/",
+      "snippet": "L'huile de chanvre est l'une des toutes premières huiles de Mira, et cela a été notre première huile française ! On en est très fiers, …"
+    },
+    {
+      "title": "AI Innovation Workspace | Miro",
+      "url": "https://miro.com/",
+      "snippet": "Speed up product development from ideation to launch. Align teams, break tool silos and ship what customers need in one AI …"
+    },
+    {
+      "title": "Mira - Any Talent, any creation, anywhere.",
+      "url": "https://mymira.fr/products",
+      "snippet": "Des produits sans concession. Pour vous, pour la planète. Naturels et responsables."
+    },
+    {
+      "title": "Restaurant Mira à La Garenne-Colombes - Menu, avis, prix et",
+      "url": "https://www.thefork.fr/restaurant/mira-r845375",
+      "snippet": "-30% sur la carte - Restaurant Mira à La Garenne-Colombes : Réservez gratuitement au restaurant Mira, confirmation immédiate de …"
+    },
+    {
+      "title": "Mira Paris",
+      "url": "https://mira.paris/",
+      "snippet": "Amour, idéologie, combats,... le tout fait avec beaucoup d&#39;humour et de passion. Passionnés par notre culture, ses modes et …"
+    }
+  ]
+}

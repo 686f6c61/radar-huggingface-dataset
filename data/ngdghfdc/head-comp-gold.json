@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "ngdghfdc/head-comp-gold",
+  "slug": "ngdghfdc-head-comp-gold",
+  "author": "ngdghfdc",
+  "url": "https://huggingface.co/ngdghfdc/head-comp-gold",
+  "created_at": "2026-09-27T23:10:49.000Z",
+  "updated_at": "2026-09-27T23:17:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "laya",
+  "languages": [],
+  "tags": [
+    "laya",
+    "safetensors",
+    "decision-model",
+    "routing",
+    "examflow",
+    "fine-tuned",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 1721270210,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

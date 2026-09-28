@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "adv-erma/albef-contrastive",
+  "slug": "adv-erma-albef-contrastive",
+  "author": "adv-erma",
+  "url": "https://huggingface.co/adv-erma/albef-contrastive",
+  "created_at": "2026-09-27T23:58:43.000Z",
+  "updated_at": "2026-09-27T23:58:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gestionnaire ADV (Administration des Ventes) - Fiche métier",
+      "url": "https://www.michaelpage.fr/advice/fiches-metiers/gestionnaire-adv-administration-des-ventes",
+      "snippet": "May 14, 2026 · Découvrez la fiche métier du gestionnaire ADV : missions, compétences, salaire et évolutions de carrière en …"
+    },
+    {
+      "title": "Assistant ADV : études, missions, et salaires - Cadremploi",
+      "url": "https://www.cadremploi.fr/editorial/conseils/fiches-metiers/detail/article/assistant-adv.html",
+      "snippet": "Découvrez tout ce qu’il faut savoir sur le métier d’assistant ADV : les missions, les diplômes et formations, le salaire, mais aussi …"
+    },
+    {
+      "title": "Gestionnaire ADV : fiche métier, missions, formation et salaire 2026",
+      "url": "https://www.amalo-recrutement.fr/blog/fiche-metier-adv-definition-cabinet-de-recrutement-amalo/",
+      "snippet": "May 7, 2026 · Le gestionnaire ADV, aussi appelé assistant ADV ou administrateur des ventes, est le pivot administratif de la relation …"
+    },
+    {
+      "title": "Gestionnaire administration des ventes - Fiche métier | Apec",
+      "url": "https://www.apec.fr/tous-nos-metiers/commercial-marketing/gestionnaire-administration-des-ventes.html",
+      "snippet": "Le/la gestionnaire administration des ventes (gestionnaire ADV) a pour mission de garantir le bon déroulement des ventes entre …"
+    },
+    {
+      "title": "ADV : le service d’administration des ventes, une branche importante …",
+      "url": "https://www.barometre-entreprendre.fr/advadministration-des-ventes-un-service-tres-important-dans-votre-entreprise/",
+      "snippet": "ADV : ça veut dire quoi ? L’ADV, qui signifie Administration des vente, désigne un sigle au sein d’une société du service en charge …"
+    }
+  ]
+}

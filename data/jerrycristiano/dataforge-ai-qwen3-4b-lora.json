@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jerrycristiano/dataforge-ai-qwen3-4b-lora",
+  "slug": "jerrycristiano-dataforge-ai-qwen3-4b-lora",
+  "author": "Jerrycristiano",
+  "url": "https://huggingface.co/Jerrycristiano/dataforge-ai-qwen3-4b-lora",
+  "created_at": "2026-09-27T23:08:51.000Z",
+  "updated_at": "2026-09-27T23:09:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "unsloth",
+    "dataforge-ai",
+    "base_model:unsloth/Qwen3-4B",
+    "base_model:adapter:unsloth/Qwen3-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610812,
+  "storage_human": "144 MB",
+  "base_model": "unsloth/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "taskliste - windows-10-forum.com",
+      "url": "https://www.windows-10-forum.com/tags/taskliste/",
+      "snippet": "Thema von: Sauermann, 14. September 2022, 0 Antwort (en), im Forum: Windows 10 Fehler und Bluescreens Ergebnis 1 bis 1 von 1 …"
+    },
+    {
+      "title": "DISM - Parameter",
+      "url": "https://www.windows-10-forum.com/threads/dism-parameter.72588/",
+      "snippet": "Hallo, Kann es sein, dass es bei DISM.exe diesen Parameter nicht mehr gibt: /Online/Cleanup-image/Restorehealth denn bei mir …"
+    },
+    {
+      "title": "clieants - windows-10-forum.com",
+      "url": "https://www.windows-10-forum.com/tags/clieants/",
+      "snippet": "Thema von: Kiwatar, 30. November 2020, 0 Antwort (en), im Forum: Windows 10 Allgemeines Ergebnis 1 bis 1 von 1 Windows 10 …"
+    },
+    {
+      "title": "PDF mit Edge öffnen",
+      "url": "https://www.windows-10-forum.com/threads/pdf-mit-edge-oeffnen.105226/",
+      "snippet": "PDF mit Edge öffnen Guten Tag, ich habe seit einiger Zeit folgendes Problem mit meinem HP Spectre x360 und einem Intel NUC:"
+    },
+    {
+      "title": "Sicherheitsinformationen - windows-10-forum.com",
+      "url": "https://www.windows-10-forum.com/threads/sicherheitsinformationen.35864/",
+      "snippet": "Sicherheitsinformationen Hallo, ich habe folgendes Problem: Ich habe vor kurzem meine Sicherheitsinformationen geändert und …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "motazalqaoud/oncology-skin-lesion-weights",
+  "slug": "motazalqaoud-oncology-skin-lesion-weights",
+  "author": "motazalqaoud",
+  "url": "https://huggingface.co/motazalqaoud/oncology-skin-lesion-weights",
+  "created_at": "2026-09-27T19:32:57.000Z",
+  "updated_at": "2026-09-28T00:30:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "medical-imaging",
+    "classification",
+    "dermatology",
+    "skin-cancer",
+    "efficientnet",
+    "ham10000",
+    "image-classification",
+    "dataset:HAM10000",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17655803,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - motazalqaoud/Oncology-diagnosis-using-CNN: Skin lesion ...",
+      "url": "https://github.com/motazalqaoud/Oncology-diagnosis-using-CNN",
+      "snippet": "A CNN (Convolutional Neural Network) — specifically EfficientNet-B0 — fine-tuned on HAM10000, the standard dermatoscopic imaging benchmark for skin cancer diagnosis. Classifies a lesion image into one of seven diagnostic categories and flags the three that are malignant or pre-malignant."
+    },
+    {
+      "title": "Oncology-diagnosis-using-CNN/model.py at main · motazalqaoud ... - GitHub",
+      "url": "https://github.com/motazalqaoud/Oncology-diagnosis-using-CNN/blob/main/model.py",
+      "snippet": "weights = EfficientNet_B0_Weights.IMAGENET1K_V1 if pretrained else None backbone = efficientnet_b0 (weights=weights) nn.ReLU (), for name, param in self.backbone.named_parameters (): Instantiate the model and, if a checkpoint exists on disk, load trained weights rather than random initialization, so demo mode still has sane low-level visual"
+    },
+    {
+      "title": "Skin Cancer Detection using CNN and Transfer Learning Techniques",
+      "url": "https://www.ijert.org/skin-cancer-detection-using-cnn-and-transfer-learning-techniques-ijertv15is090475",
+      "snippet": "The present paper discusses a skin cancer detection method based on the utilization of CNN and Transfer Learning technique using the VGG16 model. The proposed system relies on dermscopy imaging to distinguish between healthy skin lesions and cancerous ones."
+    },
+    {
+      "title": "A Deep Learning Based Framework for Skin Cancer ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/412799472_A_Deep_Learning_Based_Framework_for_Skin_Cancer_Detection_Using_a_Layered_Software_Architecture_with_Transfer_Learning",
+      "snippet": "We used an ensemble-learning framework, consisting of the EfficientNetB3 deep learning model for skin lesion analysis and Extreme Gradient Boosting (XGB) for clinical data."
+    },
+    {
+      "title": "Advancing skin cancer detection through deep learning and ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-26392-4",
+      "snippet": "In this study, we propose an AI framework that uses patient metadata together with image data to classify skin lesions into suspicious or non-suspicious categories."
+    }
+  ]
+}

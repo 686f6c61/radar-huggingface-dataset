@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Ronochieng/lost-in-transcription-spanish-english",
+  "slug": "ronochieng-lost-in-transcription-spanish-english",
+  "author": "Ronochieng",
+  "url": "https://huggingface.co/Ronochieng/lost-in-transcription-spanish-english",
+  "created_at": "2026-09-28T00:07:59.000Z",
+  "updated_at": "2026-09-28T00:08:38.000Z",
+  "license": "mpl-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "peft",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "automatic-speech-recognition",
+    "code-switching",
+    "spanish",
+    "english",
+    "lora",
+    "qwen3-asr",
+    "es",
+    "en",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:adapter:Qwen/Qwen3-ASR-1.7B",
+    "license:mpl-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7472296936,
+  "storage_human": "7.5 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VIDÉO PORNO GRATUITE EN HD - PORNDROIDS.COM",
+      "url": "https://www.porndroids.com/fr/",
+      "snippet": "Le plus grand Tube Porno XXX en français, tout le Sexe et Films Porno que vous voulez regarder disponibles pour votre ordinateur, …"
+    },
+    {
+      "title": "Vidéos Porno Gratuites HD - Films XXX en Ligne | MyPornTube",
+      "url": "https://myporntube.com/fr",
+      "snippet": "Regardez 500,000+ vidéos porno GRATUITES sur MyPornTube. Amateur, MILF, teen 18+, anal, lesbienne, hardcore. Du nouveau …"
+    },
+    {
+      "title": "SuperPorn - VIDÉOS PORNO GRATUITES",
+      "url": "https://www.superporn.com/fr",
+      "snippet": "Les Vidéos Porno que vous aimez le plus, triées par catégories. Des séries porno originales en streaming gratuit pour ordinateur, …"
+    },
+    {
+      "title": "Vidéos pornos gratuites et films XXX : site de vidéos de sexe | xHamster",
+      "url": "https://fra.xhamster.com/",
+      "snippet": "Vidéos pornos gratuites et films XXX exclusifs sur xHamster. Regardez instantannément + de 6 millions de vidéos de sexe hardcore …"
+    },
+    {
+      "title": "Vidéos porno de toutes les catégories : jeunes filles, porno français ...",
+      "url": "https://www.porndroids.com/fr/categories/",
+      "snippet": "Choisissez la catégorie que vous préférez -> Gros seins, MILF, anal, beurette, jeune fille, grosse bite, mamie, porno gay - …"
+    }
+  ]
+}

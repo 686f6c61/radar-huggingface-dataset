@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "wan-su/my-brain-v2",
+  "slug": "wan-su-my-brain-v2",
+  "author": "wan-su",
+  "url": "https://huggingface.co/wan-su/my-brain-v2",
+  "created_at": "2026-09-27T23:52:21.000Z",
+  "updated_at": "2026-09-27T23:58:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:wan-su/my-brain-v1",
+    "base_model:finetune:wan-su/my-brain-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278788619,
+  "storage_human": "10.3 GB",
+  "base_model": "wan-su/my-brain-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Réseau étendu — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/R%C3%A9seau_%C3%A9tendu",
+      "snippet": "Un réseau étendu1, souvent désigné par son acronyme anglais WAN (wide area network), est un réseau informatique ou un réseau …"
+    },
+    {
+      "title": "Réseaux LAN, WAN, WLAN quelles différences - Orange pro",
+      "url": "https://pro.orange.fr/lemag/reseaux-lan-wan-wlan-quelles-differences-CNT000002bmPuT.html",
+      "snippet": "Sep 24, 2025 · Fonctionnement, utilisation, avantages pour l'entreprise : retrouvez tout ce que vous devez savoir sur les réseaux …"
+    },
+    {
+      "title": "LAN, WLAN, WAN : quelles différences ?",
+      "url": "https://blog.interdata.fr/reseaux-lan-wan-wlan-differences",
+      "snippet": "Découvrez les différences entre les réseaux LAN, WLAN et WAN et comprenez comment choisir l’architecture la plus adaptée à vos …"
+    },
+    {
+      "title": "LAN WAN : quelles différences entre ces deux réseaux ?",
+      "url": "https://www.bouyguestelecom-pro.fr/mag-business/lan-wan-differences/",
+      "snippet": "Nov 13, 2023 · Le WAN est votre réseau extérieur, celui qui interconnecte l’ensemble des lieux physiques de votre entreprise entre …"
+    },
+    {
+      "title": "Wan AI: Leading AI Video Generation Model",
+      "url": "https://wan.video/",
+      "snippet": "Wan is an AI creative platform. It aims to lower the barrier to creative work using artificial intelligence, offering features like text-to …"
+    }
+  ]
+}

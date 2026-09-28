@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AustinGomez/nlp-embodied-ai",
+  "slug": "austingomez-nlp-embodied-ai",
+  "author": "AustinGomez",
+  "url": "https://huggingface.co/AustinGomez/nlp-embodied-ai",
+  "created_at": "2026-09-28T00:41:43.000Z",
+  "updated_at": "2026-09-28T00:41:50.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AustinGomez (Austin Gomez) - Hugging Face",
+      "url": "https://huggingface.co/AustinGomez",
+      "snippet": "Into NLP, diffusion models and AI agents."
+    },
+    {
+      "title": "Embodied AI: From LLMs to World Models - arXiv.org",
+      "url": "https://arxiv.org/html/2509.20021v1",
+      "snippet": "Abstract Embodied Artificial Intelligence (AI) is an intelligent system paradigm for achieving Artificial General Intelligence (AGI), serving as the cornerstone for various applications and driving the evolution from cyberspace to physical systems. Recent breakthroughs in Large Language Models (LLMs) and World Models (WMs) have drawn significant attention for embodied AI. On the one hand, LLMs ..."
+    },
+    {
+      "title": "Embodied Arena",
+      "url": "https://www.embodied-arena.com/",
+      "snippet": "Embodied Arena is a comprehensive, unified and evolving evaluation system and platform for embodied AI models. It features three types of core embodied tasks, a diverse range of high-quality benchmarks, an LLM-driven automated evaluation data generation framework, and a systematic embodied capability taxonomy. Moreover, Embodied Arena offers professional supports for advanced models and new ..."
+    },
+    {
+      "title": "[2509.20021] Embodied AI: From LLMs to World Models",
+      "url": "https://arxiv.org/abs/2509.20021",
+      "snippet": "Embodied Artificial Intelligence (AI) is an intelligent system paradigm for achieving Artificial General Intelligence (AGI), serving as the cornerstone for various applications and driving the evolution from cyberspace to physical systems. Recent breakthroughs in Large Language Models (LLMs) and World Models (WMs) have drawn significant attention for embodied AI. On the one hand, LLMs empower ..."
+    },
+    {
+      "title": "Model Zoo",
+      "url": "https://www.modelzoo.co/",
+      "snippet": "ModelZoo curates and provides a platform for deep learning researchers to easily find code and pre-trained models for a variety of platforms and uses. Find models that you need, for educational purposes, transfer learning, or other uses."
+    }
+  ]
+}

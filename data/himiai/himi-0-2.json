@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "HimiAI/Himi-0.2",
+  "slug": "himiai-himi-0-2",
+  "author": "HimiAI",
+  "url": "https://huggingface.co/HimiAI/Himi-0.2",
+  "created_at": "2026-09-28T00:08:49.000Z",
+  "updated_at": "2026-09-28T00:09:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "memory",
+    "long-context",
+    "kv-cache",
+    "compression",
+    "experimental",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 151147536,
+  "storage_human": "151 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

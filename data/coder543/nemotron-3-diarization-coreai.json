@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "coder543/nemotron-3-diarization-coreai",
+  "slug": "coder543-nemotron-3-diarization-coreai",
+  "author": "coder543",
+  "url": "https://huggingface.co/coder543/nemotron-3-diarization-coreai",
+  "created_at": "2026-09-27T23:07:13.000Z",
+  "updated_at": "2026-09-27T23:34:54.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "speaker-diarization",
+    "core-ai",
+    "apple-neural-engine",
+    "voice-activity-detection",
+    "base_model:nvidia/Nemotron-3-Diarization",
+    "base_model:finetune:nvidia/Nemotron-3-Diarization",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 398625916,
+  "storage_human": "399 MB",
+  "base_model": "nvidia/Nemotron-3-Diarization",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "coreai-community/Nemotron-3-Diarization-CoreAI · Hugging Face",
+      "url": "https://huggingface.co/coreai-community/Nemotron-3-Diarization-CoreAI",
+      "snippet": "Like 0 Follow Core AI Community 31 Voice Activity Detection coreai nemotron3_diarization core-ai coreaikit nemotron sortformer speaker-diarization diarization streaming on-device apple License:openmdw-1.1 Model card FilesFiles and versions xet Community Copy to bucket new Nemotron-3-Diarization — Core AI Files Graph contract Host Verification ..."
+    },
+    {
+      "title": "mlboydaisuke/Nemotron-3-Diarization-CoreAI · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/Nemotron-3-Diarization-CoreAI",
+      "snippet": "mlboydaisuke / Nemotron-3-Diarization-CoreAI Like 0 Voice Activity Detection coreai nemotron3_diarization core-ai coreaikit nemotron sortformer speaker-diarization diarization streaming on-device apple License:openmdw-1.1 Model card FilesFiles and versions xet Community Copy to bucket new Nemotron-3-Diarization — Core AI Files Graph contract ..."
+    },
+    {
+      "title": "coreai-model-zoo/models/nemotron-3-diarization at main - GitHub",
+      "url": "https://github.com/john-rocky/coreai-model-zoo/tree/main/models/nemotron-3-diarization",
+      "snippet": "Nemotron-3-Diarization — Core AI Speaker diarization (\"who spoke when\") for up to 8 speakers at 10 ms resolution, streaming or offline, on-device. nvidia/Nemotron-3-Diarization (OpenMDW-1.1, 99.2M parameters, a streaming Sortformer) has its per-chunk network exported as one Core AI graph. The host keeps the state: the log-mel front end, the 8-frame projection and the speaker cache (AOSC ..."
+    },
+    {
+      "title": "coreai-model-zoo/models/nemotron-3-diarization/README.md at main - GitHub",
+      "url": "https://github.com/john-rocky/coreai-model-zoo/blob/main/models/nemotron-3-diarization/README.md",
+      "snippet": "Nemotron-3-Diarization — Core AI Speaker diarization (\"who spoke when\") for up to 8 speakers at 10 ms resolution, streaming or offline, on-device. nvidia/Nemotron-3-Diarization (OpenMDW-1.1, 99.2M parameters, a streaming Sortformer) has its per-chunk network exported as one Core AI graph. The host keeps the state: the log-mel front end, the 8-frame projection and the speaker cache (AOSC ..."
+    },
+    {
+      "title": "NVIDIA Nemotron 3 Diarization | Dell Enterprise Hub by Hugging Face",
+      "url": "https://dell.huggingface.co/models/nvidia/Nemotron-3-Diarization",
+      "snippet": "Nemotron 3 Diarization is an open-weight speaker diarization model designed to determine \"who spoke when\" in real-world audio. It supports both streaming and offline inference and handles up to eight speakers. Following Sortformer [1], the model resolves speaker permutation by ordering its output channels according to each speaker&#x27;s first arrival in the input audio. For streaming inference ..."
+    }
+  ]
+}

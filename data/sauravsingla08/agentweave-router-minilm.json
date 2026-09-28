@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "sauravsingla08/AgentWeave-Router-MiniLM",
+  "slug": "sauravsingla08-agentweave-router-minilm",
+  "author": "sauravsingla08",
+  "url": "https://huggingface.co/sauravsingla08/AgentWeave-Router-MiniLM",
+  "created_at": "2026-09-27T20:09:36.000Z",
+  "updated_at": "2026-09-28T03:18:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "agentweave_semantic_router",
+    "agentweave",
+    "agentic-ai",
+    "tool-routing",
+    "semantic-routing",
+    "function-calling",
+    "cpu",
+    "minilm",
+    "pre-inference-routing",
+    "arxiv:2608.23078",
+    "en",
+    "dataset:sauravsingla08/AgentWeave-Tool-Routing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - sauravsingla/agentweave: Knowledge-, capability-, and trust ...",
+      "url": "https://github.com/sauravsingla/agentweave",
+      "snippet": "AgentWeave is a domain-agnostic framework for discovering, validating, selecting, and orchestrating heterogeneous AI agents across cloud, marketplaces, enterprise, and edge environments. A2A is the interoperability layer; AgentWeave adds requirement-aware discovery, evidence-backed capability validation, contextual trust, policy, team optimization, collaboration, semantic result verification ..."
+    },
+    {
+      "title": "AgentWeave",
+      "url": "http://agentweave.dev/",
+      "snippet": "AgentWeave records parent sessions, delegated sessions, LLM calls, tool calls, model usage, token totals, cache behavior, and cost in one OpenTelemetry-compatible span contract."
+    },
+    {
+      "title": "AgentWeave: Routing Before Reasoning for Efficient Function Calling in ...",
+      "url": "https://arxiv.org/pdf/2608.23078",
+      "snippet": "ToolACE [7] constructs large, verified function-calling training corpora and demonstrates that carefully synthesized data can produce strong function-call performance. These approaches improve the model; AgentWeave instead holds the model fixed and changes only the candidate functions visible before inference."
+    },
+    {
+      "title": "[2608.23078] AgentWeave: Routing Before Reasoning for Efficient ...",
+      "url": "https://arxiv.org/abs/2608.23078",
+      "snippet": "We introduce AgentWeave, a deterministic pre-inference routing layer that constructs a bounded model-visible action space using eligibility, requirement, capability, and routing signals."
+    },
+    {
+      "title": "agentweave-router · PyPI",
+      "url": "https://pypi.org/project/agentweave-router/",
+      "snippet": "AgentWeave reduces the tools or agents visible to a model before inference while keeping scope policy, authorization, provenance, recovery, and execution explicit."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dusersad12/HelixLM-PreviewRepo",
+  "slug": "dusersad12-helixlm-previewrepo",
+  "author": "dusersad12",
+  "url": "https://huggingface.co/dusersad12/HelixLM-PreviewRepo",
+  "created_at": "2026-09-27T21:15:18.000Z",
+  "updated_at": "2026-09-27T21:15:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "llama",
+    "text-generation",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31,
+  "storage_human": "31 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dusersad12/HelixLM-CheckpointHub · Hugging Face",
+      "url": "https://huggingface.co/dusersad12/HelixLM-CheckpointHub",
+      "snippet": "The HelixLM model family, maintained by the Nimbus AI Lab, has just gone through a major version upgrade. In the latest update, HelixLM has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training."
+    },
+    {
+      "title": "GitHub - david-thrower/HelixLM: HelixLM - a recurrent heterogeneous ...",
+      "url": "https://github.com/david-thrower/HelixLM",
+      "snippet": "HelixLM - a recurrent heterogeneous graph neural LLM combining biological neural column random wiring, hybrid attention, and Mamba-2 for hyperpersonalized and on-device AI. - david-thrower/HelixLM"
+    },
+    {
+      "title": "GitHub - helixml/helix: ♾️ Private Agent Fleet with Spec Coding. Each ...",
+      "url": "https://github.com/helixml/helix",
+      "snippet": "♾️ Private Agent Fleet with Spec Coding. Each agent gets their own GPU-accelerated desktop. Run Claude, Codex, Gemini and open models on a full private AI Stack ♾️ - helixml/helix"
+    },
+    {
+      "title": "Master Stable Diffusion Models Directory: Download & Use Guide — AI ...",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-stable-diffusion-models-curating-your-personal-ai-art-libra",
+      "snippet": "A step-by-step guide to using the Stable Diffusion Models directory. Find, filter, and download the best AI art checkpoints for your projects."
+    },
+    {
+      "title": "Install Stable Diffusion locally: Windows, Linux, Mac guide",
+      "url": "https://stablediffusion.fr/guide/install",
+      "snippet": "Hardware needed, Python and Git, the Automatic1111 web UI, SDXL or SD 1.5 model download, first launch and common errors. Free, offline and private."
+    }
+  ]
+}

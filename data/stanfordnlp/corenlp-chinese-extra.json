@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "stanfordnlp/corenlp-chinese-extra",
+  "slug": "stanfordnlp-corenlp-chinese-extra",
+  "author": "stanfordnlp",
+  "url": "https://huggingface.co/stanfordnlp/corenlp-chinese-extra",
+  "created_at": "2026-09-27T22:40:51.000Z",
+  "updated_at": "2026-09-27T22:45:51.000Z",
+  "license": "gpl-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "corenlp",
+    "zh",
+    "license:gpl-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 595617400,
+  "storage_human": "596 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stanfordnlp/corenlp-chinese · Hugging Face",
+      "url": "https://huggingface.co/stanfordnlp/corenlp-chinese",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "stanfordnlp/corenlp-chinese at v4.5.9 - Hugging Face",
+      "url": "https://huggingface.co/stanfordnlp/corenlp-chinese/tree/v4.5.9",
+      "snippet": "License: gpl-2.0 Model card Files Files and versions Community v4.5.9 corenlp-chinese Ctrl+K Ctrl+K 2 contributors History: 26 commits"
+    },
+    {
+      "title": "GitHub - stanfordnlp/CoreNLP: CoreNLP: A Java suite of core NLP tools ...",
+      "url": "https://github.com/stanfordnlp/CoreNLP",
+      "snippet": "Stanford CoreNLP is a set of stable and well-tested natural language processing tools, widely used by various groups in academia, industry, and government. The tools variously use rule-based, probabilistic machine learning, and deep learning components."
+    },
+    {
+      "title": "Overview - CoreNLP",
+      "url": "https://stanfordnlp.github.io/CoreNLP/",
+      "snippet": "About CoreNLP is your one stop shop for natural language processing in Java! CoreNLP enables users to derive linguistic annotations for text, including token and sentence boundaries, parts of speech, named entities, numeric and time values, dependency and constituency parses, coreference, sentiment, quote attributions, and relations."
+    },
+    {
+      "title": "The Stanford Natural Language Processing Group",
+      "url": "http://www-nlp.stanford.edu/software/corenlp.html",
+      "snippet": "The basic distribution provides model files for the analysis of English, but the engine is compatible with models for other languages. Below you can find packaged models for Chinese and Spanish, and Stanford NLP models for German and Arabic are usable inside CoreNLP."
+    }
+  ]
+}

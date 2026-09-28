@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "rahul7star/deepseek-harness-plugin",
+  "slug": "rahul7star-deepseek-harness-plugin",
+  "author": "rahul7star",
+  "url": "https://huggingface.co/rahul7star/deepseek-harness-plugin",
+  "created_at": "2026-09-25T04:43:41.000Z",
+  "updated_at": "2026-09-28T01:31:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Racing Results | Today's Horse Racing Results | Racing Post",
+      "url": "https://www.racingpost.com/results/",
+      "snippet": "Today's latest racing results from every racecourse. Find full horse racing results and video replays for every race from the Racing …"
+    },
+    {
+      "title": "Racecards | Today's Horse Racing Cards & Times | Racing Post",
+      "url": "https://www.racingpost.com/racecards/",
+      "snippet": "View today's racecards and times for the runners and riders across every racecourse. Find the latest odds, form, stats and tips."
+    },
+    {
+      "title": "Horse Racing Cards, Results & Betting | Racing Post",
+      "url": "https://www.racingpost.com/",
+      "snippet": "Racing Post, the home of horse racing news, cards and results. Get expert racing tips, form and analysis. Explore our jockey, trainer, …"
+    },
+    {
+      "title": "Horse Racing News | Latest Racing Updates | Racing Post",
+      "url": "https://www.racingpost.com/news/",
+      "snippet": "The home of horse racing news, racecards and racing results. The must-have horse racing tips, form and analysis. Explore our …"
+    },
+    {
+      "title": "Greyhound Bet | Greyhound Betting Web App from the Racing Post",
+      "url": "https://greyhoundbet.racingpost.com/",
+      "snippet": "Welcome to Greyhound Bet from Racing Post. The must have Web App for all Greyhound racing fans. Featuring racecards, race …"
+    }
+  ]
+}

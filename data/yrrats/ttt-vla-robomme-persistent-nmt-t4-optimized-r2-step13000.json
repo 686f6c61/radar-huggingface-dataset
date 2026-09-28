@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yrrats/ttt-vla-robomme-persistent-nmt-t4-optimized-r2-step13000",
+  "slug": "yrrats-ttt-vla-robomme-persistent-nmt-t4-optimized-r2-step13000",
+  "author": "yrrats",
+  "url": "https://huggingface.co/yrrats/ttt-vla-robomme-persistent-nmt-t4-optimized-r2-step13000",
+  "created_at": "2026-09-28T00:58:59.000Z",
+  "updated_at": "2026-09-28T01:02:33.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "Gr00tN1d6",
+    "robotics",
+    "vision-language-action",
+    "robomme",
+    "test-time-training",
+    "fast-weights",
+    "gr00t",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3432385472,
+  "parameters_human": "3.43B",
+  "storage_bytes": 6864939595,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RoboMME",
+      "url": "https://robomme.github.io/index.html",
+      "snippet": "To address these challenges, we introduce RoboMME: a large-scale standardized benchmark for evaluating and advancing VLA models in long-horizon, history-dependent scenarios. Our benchmark comprises 16 manipulation tasks constructed under a carefully designed taxonomy that evaluates temporal, spatial, object, and procedural memory."
+    },
+    {
+      "title": "TTT-VLA: Test-Time Latent Prompt Optimization for Vision-Language ...",
+      "url": "https://arxiv.org/abs/2606.03127",
+      "snippet": "Vision-Language-Action (VLA) models trained on large-scale data have made remarkable progress, but they remain vulnerable to distribution shifts at deployment time. Recent VLA models suggest that prompts can serve as an efficient interface for steering policy behavior, but existing prompt-based steering typically relies on external guidance. This raises a natural question: can test-time ..."
+    },
+    {
+      "title": "morealcholplz/ttt-vla-robomme-ttt-nmt-t4 · Hugging Face",
+      "url": "https://huggingface.co/morealcholplz/ttt-vla-robomme-ttt-nmt-t4",
+      "snippet": "GR00T N1.6 + HAMLET + Persistent TTT — RoboMME NMT T=4 Private archival checkpoint for Nuri&#x27;s persistent test-time-training experiment on RoboMME. It extends the HAMLET K=4 attention-memory policy with recurrent fast weights trained using a next-moment-token inner objective."
+    },
+    {
+      "title": "RoboMME - a Yinpei Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Yinpei/robomme",
+      "snippet": "Note A single fine-tuned MME-VLA checkpoint for quick start and example for RoboMME Challenge Submission . Yinpei/vlm_subgoal_predictor"
+    },
+    {
+      "title": "TTT-VLA: Test-Time Latent Prompt Optimization for Vision-Language ...",
+      "url": "https://arxiv.org/html/2606.03127v1",
+      "snippet": "TTT-VLA, a deployment-time improvement framework for VLA based on Latent Prompt Optimization, which learns a latent prompt during training and performs prompt-only test-time training on a frozen policy at deployment time."
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "dronefreak/gc10det-yolo26m",
+  "slug": "dronefreak-gc10det-yolo26m",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/gc10det-yolo26m",
+  "created_at": "2026-09-27T20:49:46.000Z",
+  "updated_at": "2026-09-27T20:49:53.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "industrial-inspection",
+    "surface-defect-detection",
+    "manufacturing-qa",
+    "metallic-surface",
+    "quality-control",
+    "dataset:dronefreak/GC10-DET",
+    "arxiv:2606.03748",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2410.17725",
+    "base_model:Ultralytics/YOLO26",
+    "base_model:finetune:Ultralytics/YOLO26",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46557487,
+  "storage_human": "47 MB",
+  "base_model": "Ultralytics/YOLO26",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "mAP@50 (test split)",
+      "value": 73.97
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "mAP@50-95 (test split)",
+      "value": 36.94
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "Precision (test split)",
+      "value": 75.7
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "Recall (test split)",
+      "value": 68.19
+    }
+  ],
+  "sources": [
+    {
+      "title": "Vazados 18 - Porn Photos & Videos - EroMe",
+      "url": "https://www.erome.com/search?q=vazados+18",
+      "snippet": "Vazados 18 photos & videos. EroMe is the best place to share your erotic pics and porn videos. Every day, thousands of people use …"
+    },
+    {
+      "title": "18 Vazado - Porn Photos & Videos - EroMe",
+      "url": "https://www.erome.com/search?q=18+vazado",
+      "snippet": "18 Vazado photos & videos. EroMe is the best place to share your erotic pics and porn videos. Every day, thousands of people use …"
+    },
+    {
+      "title": "Videos Vazados 18 Novos Videos Porno Vazados | CnnAmador",
+      "url": "https://cnnamador.com/search/videos-vazados-18/",
+      "snippet": "Vídeos novos de videos vazados 18 classificados pelos mais relevantes no CnnAmador."
+    },
+    {
+      "title": "Videos Vazados 18 - Video Porno Amador | Kabine Das Novinhas",
+      "url": "https://kabinedasnovinhas.com/video/videos-vazados-18/",
+      "snippet": "Explore os melhores vídeos porno com o kabinedasnovinhas.com. Oferecemos uma vasta coleção de vídeos e fotos XXX gratuitas, …"
+    },
+    {
+      "title": "REAL V4ZADOS no Telegram – Adultos | ConectaGrupos",
+      "url": "https://conectagrupos.com.br/grupo/real-vazados/",
+      "snippet": "Nov 11, 2025 · Este grupo contém conteúdo destinado exclusivamente a maiores de 18 anos. Ao acessar, você confirma que possui …"
+    }
+  ]
+}

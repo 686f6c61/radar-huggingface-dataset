@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "theplayboy117/Marv-Instruct-v1",
+  "slug": "theplayboy117-marv-instruct-v1",
+  "author": "theplayboy117",
+  "url": "https://huggingface.co/theplayboy117/Marv-Instruct-v1",
+  "created_at": "2026-09-27T20:51:34.000Z",
+  "updated_at": "2026-09-27T21:15:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:theplayboy117/Marv-Instruct",
+    "base_model:quantized:theplayboy117/Marv-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 10539661033,
+  "storage_human": "10.5 GB",
+  "base_model": "theplayboy117/Marv-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "theplayboy117/Marv-Instruct · Hugging Face",
+      "url": "https://huggingface.co/theplayboy117/Marv-Instruct",
+      "snippet": "theplayboy117 / Marv-Instruct Like 0 Text Generation Transformers Safetensors English qwen2 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Iz Instruct Mini by theplayboy117 - LLM Explorer",
+      "url": "https://llm-explorer.com/model/theplayboy117%2Fiz-instruct-mini,6oMZBX8o1rFy7eOgLvP2HQ",
+      "snippet": "Iz Instruct Mini is an open-source 82.9m LLM by theplayboy117. VRAM 0.3GB, 1K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Iz Instruct by theplayboy117 — VRAM 0.1GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/theplayboy117%2Fiz-instruct,cIoJ1Y7NYCukash99Foof",
+      "snippet": "Iz Instruct is an open-source 1.5b LLM by theplayboy117. VRAM 0.1GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Adapter Models for theplayboy117/iz-instruct - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:adapter:theplayboy117/iz-instruct",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "theplayboy117/iz-fullstack-v1 · Hugging Face",
+      "url": "https://huggingface.co/theplayboy117/iz-fullstack-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "byamasupatrick/BreakoutNoFrameskip-v4-dqn-seed1",
+  "slug": "byamasupatrick-breakoutnoframeskip-v4-dqn-seed1",
+  "author": "byamasupatrick",
+  "url": "https://huggingface.co/byamasupatrick/BreakoutNoFrameskip-v4-dqn-seed1",
+  "created_at": "2026-09-27T22:39:32.000Z",
+  "updated_at": "2026-09-27T22:39:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "BreakoutNoFrameskip-v4",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27175179,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marshall — 60 years of loud | Marshall.com",
+      "url": "https://www.marshall.com/",
+      "snippet": "Discover premium amplifiers, wireless headphones, earbuds, home and portable speakers at Marshall. Secure payments, shipping …"
+    },
+    {
+      "title": "Marshall — 60 ans de son | Marshall.com",
+      "url": "https://www.marshall.com/fr/fr",
+      "snippet": "Découvrez les amplificateurs haut de gamme, les casques sans fil, les écouteurs, les enceintes pour la maison et portables Marshall. …"
+    },
+    {
+      "title": "Marshall Amplification - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Marshall_Amplification",
+      "snippet": "Marshall continued with a wide range of amps with the look and sound of the Marshall valve amplifier. The longest running of such …"
+    },
+    {
+      "title": "Marshall : tous les produits de la marque Marshall (Son, Hi-fi, TV ...",
+      "url": "https://www.fnac.com/Marshall/m62733/w-4",
+      "snippet": "Retrouvez tous les produits Marshall au meilleur prix à la FNAC. En quelques clics, achetez en ligne ou commandez dans un …"
+    },
+    {
+      "title": "We are Marshall – Marshall Group",
+      "url": "https://group.marshall.com/",
+      "snippet": "Perhaps the most coveted brand in live music history, Marshall delivers its iconic sound to stages, studios, and the streets with audio …"
+    }
+  ]
+}

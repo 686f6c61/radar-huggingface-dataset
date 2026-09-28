@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Qdrant/all_miniLM_L6_v2_with_attentions",
+  "slug": "qdrant-all_minilm_l6_v2_with_attentions",
+  "author": "Qdrant",
+  "url": "https://huggingface.co/Qdrant/all_miniLM_L6_v2_with_attentions",
+  "created_at": "2024-05-09T09:03:18.000Z",
+  "updated_at": "2026-09-27T19:14:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "en",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 223349,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90985592,
+  "storage_human": "91 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qdrant/all_miniLM_L6_v2_with_attentions · Hugging Face",
+      "url": "https://huggingface.co/Qdrant/all_miniLM_L6_v2_with_attentions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qdrant/all_miniLM_L6_v2_with_attentions at main - Hugging Face",
+      "url": "https://huggingface.co/Qdrant/all_miniLM_L6_v2_with_attentions/tree/main",
+      "snippet": "License:apache-2.0 Model card FilesFiles and versions Community 3 Train Deploy Use this model main all_miniLM_L6_v2_with_attentions 2 contributors History:4 commits generall93 Anush008 Added model card (#1) 7dab1a1 verified8 months ago .gitattributes Safe 1.52 kBinitial commit11 months ago README.md Safe 1.19 kBAdded model card (#1)8 months ago ..."
+    },
+    {
+      "title": "all_miniLM_L6_v2_with_attentions · Model · Inferix",
+      "url": "https://inferix.co/models/Qdrant/all_miniLM_L6_v2_with_attentions",
+      "snippet": "ONNX port of sentence transformers/all MiniLM L6 v2 adjusted to return attention weights. This model is intended to be used for BM42 searches. Usage Here&#x27;s an example of performing inference using the model with FastEmbed. Note: This model is supposed to be used with Qdrant. Vectors have to be configured with Modifier.IDF. Inferix Network operational all_miniLM_L6_v2_with_attentions PUBLIC ..."
+    },
+    {
+      "title": "Qdrant/all_miniLM_L6_v2_with_attentions - Endor Labs",
+      "url": "https://www.endorlabs.com/ai-model/qdrant-all-minilm-l6-v2-with-attentions",
+      "snippet": "Qdrant/all_miniLM_L6_v2_with_attentions AI model with 234491 downloads"
+    },
+    {
+      "title": "Architecture graph for Qdrant/all_miniLM_L6_v2_with_attentions.",
+      "url": "https://hfviewer.com/Qdrant/all_miniLM_L6_v2_with_attentions",
+      "snippet": "Qdrant/all_miniLM_L6_v2_with_attentions neural network architecture graph hfviewer renders an interactive architecture graph for the Hugging Face model Qdrant/all_miniLM_L6_v2_with_attentions. The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task heads), edges ..."
+    }
+  ]
+}

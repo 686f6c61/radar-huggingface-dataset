@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "OpenFlowLM/Llama-3.1-8B-NPU2",
+  "slug": "openflowlm-llama-3-1-8b-npu2",
+  "author": "OpenFlowLM",
+  "url": "https://huggingface.co/OpenFlowLM/Llama-3.1-8B-NPU2",
+  "created_at": "2026-09-28T00:48:28.000Z",
+  "updated_at": "2026-09-28T00:48:28.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama",
+    "llama-3.1",
+    "text-generation",
+    "AMD",
+    "Ryzen",
+    "NPU",
+    "conversational",
+    "en",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5752382448,
+  "storage_human": "5.8 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sésamath - Accueil",
+      "url": "https://www.sesamath.net/",
+      "snippet": "Ce projet est associé à Sésamath (l’association n’en est pas responsable). J3P, pour Parcours Pédagogiques Personnalisés, …Read more"
+    },
+    {
+      "title": "Sésamath - Accueil",
+      "url": "https://sesaprof.sesamath.net/",
+      "snippet": "Sésaprof est l’espace de Sésamath pour les professeurs. Les enseignants inscrits peuvent grace à leur compte Sésamath : accéder …Read more"
+    },
+    {
+      "title": "Manuels et Cahiers Sésamath - Téléchargements",
+      "url": "https://manuel.sesamath.net/index.php?page=telechargement",
+      "snippet": "Manuels et Cahiers Sésamath - Versions numériques , compléments numériques, sources téléchargeables.Read more"
+    },
+    {
+      "title": "Manuels et Cahiers Sésamath - Téléchargements",
+      "url": "https://manuel.sesamath.net/index.php?page=telechargement_5e_cahier_2026",
+      "snippet": "Cahier Sésamath 5e (2026) Introduction Ce cahier suit les nouveaux programmes de 5e en vigueur à la rentrée 2026. Il reprend des …Read more"
+    },
+    {
+      "title": "Sésamath — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/S%C3%A9samath",
+      "snippet": "Sésamath, en tant qu'association, est l'auteur de plusieurs manuels scolaires et de cahiers d'exercices en mathématiques. Ces …Read more"
+    }
+  ]
+}

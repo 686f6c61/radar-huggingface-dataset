@@ -5,7 +5,7 @@
   "author": "VioletXF",
   "url": "https://huggingface.co/VioletXF/manga-character-parts-coreml",
   "created_at": "2026-09-27T12:31:56.000Z",
-  "updated_at": "2026-09-27T12:32:06.000Z",
+  "updated_at": "2026-09-27T22:26:28.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-segmentation",
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 308653416,
-  "storage_human": "309 MB",
+  "storage_bytes": 396724009,
+  "storage_human": "397 MB",
   "base_model": null,
   "formats": [
     "onnx"

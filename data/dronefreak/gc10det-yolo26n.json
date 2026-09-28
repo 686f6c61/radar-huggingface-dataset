@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "dronefreak/gc10det-yolo26n",
+  "slug": "dronefreak-gc10det-yolo26n",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/gc10det-yolo26n",
+  "created_at": "2026-09-27T20:49:35.000Z",
+  "updated_at": "2026-09-27T20:49:39.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "industrial-inspection",
+    "surface-defect-detection",
+    "manufacturing-qa",
+    "metallic-surface",
+    "quality-control",
+    "dataset:dronefreak/GC10-DET",
+    "arxiv:2606.03748",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2410.17725",
+    "base_model:Ultralytics/YOLO26",
+    "base_model:finetune:Ultralytics/YOLO26",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7948060,
+  "storage_human": "8 MB",
+  "base_model": "Ultralytics/YOLO26",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "mAP@50 (test split)",
+      "value": 74.25
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "mAP@50-95 (test split)",
+      "value": 38.31
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "Precision (test split)",
+      "value": 80.5
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "Recall (test split)",
+      "value": 67.99
+    }
+  ],
+  "sources": [
+    {
+      "title": "dronefreak/brackish-yolo26n · Hugging Face",
+      "url": "https://huggingface.co/dronefreak/brackish-yolo26n",
+      "snippet": "Instructions to use dronefreak/brackish-yolo26n with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ultralytics How to use dronefreak/brackish-yolo26n with ultralytics:"
+    },
+    {
+      "title": "dronefreak (Saumya Saksena) - Hugging Face",
+      "url": "https://huggingface.co/dronefreak",
+      "snippet": "Computer Vision, Deep Learning, Image Restoration, Image De-noising, LLMs, RAG, Image Classification, Image Segmentation, EEG Classification, Signal Processing, PPG, BCI"
+    },
+    {
+      "title": "Ultralytics YOLO26",
+      "url": "https://docs.ultralytics.com/models/yolo26",
+      "snippet": "YOLO26 from Ultralytics delivers unified, real-time, end-to-end vision models optimized for accurate and efficient deployment."
+    },
+    {
+      "title": "GitHub - ultralytics/yolo26: Ultralytics YOLO26 quickstart for ...",
+      "url": "https://github.com/ultralytics/yolo26",
+      "snippet": "🧩 Integrations Ultralytics integrations extend dataset labeling, training, visualization, deployment, and model management workflows. Explore Ultralytics Platform and the Ultralytics Integrations docs to connect YOLO26 with your AI stack, including popular export formats like TensorRT, ONNX, CoreML, and TFLite."
+    },
+    {
+      "title": "stm32ai-modelzoo/object_detection/yolo26n/README.md at main ... - GitHub",
+      "url": "https://github.com/STMicroelectronics/stm32ai-modelzoo/blob/main/object_detection/yolo26n/README.md",
+      "snippet": "Yolo26n is a lightweight and efficient object detection model designed for instance segmentation tasks. It is part of the YOLO (You Only Look Once) family of models, known for their real-time object detection capabilities."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "PositivePassion/openfwi-diffusion-priors",
+  "slug": "positivepassion-openfwi-diffusion-priors",
+  "author": "PositivePassion",
+  "url": "https://huggingface.co/PositivePassion/openfwi-diffusion-priors",
+  "created_at": "2026-09-28T01:16:04.000Z",
+  "updated_at": "2026-09-28T01:18:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "diffusion-models",
+    "ddpm",
+    "geophysics",
+    "full-waveform-inversion",
+    "openfwi",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1651134936,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

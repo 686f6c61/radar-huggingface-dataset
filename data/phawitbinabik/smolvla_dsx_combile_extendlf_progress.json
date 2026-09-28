@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "phawitbinabik/smolvla_DSX_combile_extendlf_progress",
+  "slug": "phawitbinabik-smolvla_dsx_combile_extendlf_progress",
+  "author": "phawitbinabik",
+  "url": "https://huggingface.co/phawitbinabik/smolvla_DSX_combile_extendlf_progress",
+  "created_at": "2026-09-27T21:55:27.000Z",
+  "updated_at": "2026-09-27T21:55:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:phawitbinabik/DSX_combile_extendlf",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450292449,
+  "parameters_human": "450.3M",
+  "storage_bytes": 907713068,
+  "storage_human": "908 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fox News - Breaking News Updates | Latest News Headlines | Photos ...",
+      "url": "https://www.foxnews.com/?msockid=17c8634de0036a3f294574ace1a36bbf",
+      "snippet": "Breaking News, Latest News and Current News from FOXNews.com. Breaking news and video. Latest Current News: U.S., World, …Read more"
+    },
+    {
+      "title": "World News Today Updates & Daily Headlines | Fox News",
+      "url": "https://www.foxnews.com/world?msockid=17c8634de0036a3f294574ace1a36bbf",
+      "snippet": "1 day ago · Explore the international news happening around the world today. Discover daily world headlines and the breaking …Read more"
+    },
+    {
+      "title": "FOX News Radio",
+      "url": "https://radio.foxnews.com/",
+      "snippet": "Tune in to FOX News Radio for the latest breaking news, live talk shows, true crime, and sports podcasts from your favorite FOX …Read more"
+    },
+    {
+      "title": "Fox News Últimas noticias | Titulares de actualidad | Fotos y vídeos …",
+      "url": "https://noticias.foxnews.com/",
+      "snippet": "Fox News El ex primer ministro británico Tony Blair advierte a Europa de que «no ganaremos» la guerra sin el apoyo de EE. UU. El …Read more"
+    },
+    {
+      "title": "Fox Nation: Start Your Free Trial | Shows, Documentaries, & Specials",
+      "url": "https://nation.foxnews.com/",
+      "snippet": "Fox Nation is an entertainment streaming service brought to you by FOX News. Stream exclusive shows, documentaries, and news …Read more"
+    }
+  ]
+}

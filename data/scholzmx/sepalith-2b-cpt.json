@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "scholzmx/sepalith-2b-cpt",
+  "slug": "scholzmx-sepalith-2b-cpt",
+  "author": "scholzmx",
+  "url": "https://huggingface.co/scholzmx/sepalith-2b-cpt",
+  "created_at": "2026-09-27T19:28:46.000Z",
+  "updated_at": "2026-09-27T19:33:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "r",
+    "code",
+    "continued-pretraining",
+    "sepalith",
+    "base_model:openbmb/MiniCPM5-2B-Midtrain",
+    "base_model:finetune:openbmb/MiniCPM5-2B-Midtrain",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10067808992,
+  "storage_human": "10.1 GB",
+  "base_model": "openbmb/MiniCPM5-2B-Midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "scholzmx/sepalith · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/scholzmx/sepalith",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "scholzmx (Maximilian Scholz) - Hugging Face",
+      "url": "https://huggingface.co/scholzmx",
+      "snippet": "scholzmx 1 Follow 0 followers · 8 following https://www.scholzmx.com scholzmx sims1253 scholzmx scholzmx"
+    },
+    {
+      "title": "GitHub - sims1253/Sepalith",
+      "url": "https://github.com/sims1253/Sepalith",
+      "snippet": "An open, R-specialized next-edit-suggestion model: local-first (llama.cpp/GGUF), privacy-preserving, aimed at R&#x27;s center of gravity in pharma/biostatistics where cloud autocomplete is compliance-blocked. Served through editor integrations (VS Code / Positron inline completion; Zed via its OpenAI-compatible edit-prediction provider)."
+    },
+    {
+      "title": "Union Alpha - API Pricing & Providers | OpenRouter",
+      "url": "https://openrouter.ai/stealth/union-alpha",
+      "snippet": "Union Alpha is a multimodal model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks. 262,144 token context window."
+    },
+    {
+      "title": "Developing hybrid mechanistic and data-driven personalized prediction ...",
+      "url": "https://arxiv.org/pdf/2505.21204",
+      "snippet": "The Friberg model and the Henrich model could not improve with more data provided. This shows the flexibility of data-driven approaches in comparison to purely mechanistic approaches in adapting to individual time courses."
+    }
+  ]
+}

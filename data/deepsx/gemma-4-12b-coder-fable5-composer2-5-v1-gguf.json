@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "deepsx/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+  "slug": "deepsx-gemma-4-12b-coder-fable5-composer2-5-v1-gguf",
+  "author": "deepsx",
+  "url": "https://huggingface.co/deepsx/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+  "created_at": "2026-09-27T21:22:31.000Z",
+  "updated_at": "2026-09-27T21:22:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "coding",
+    "code",
+    "reasoning",
+    "thinking",
+    "llama.cpp",
+    "local-llm",
+    "text-generation",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 40754281120,
+  "storage_human": "40.8 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Today's selection - XNXX.COM",
+      "url": "https://www.xnxx.com/todays-selection/",
+      "snippet": "XNXX Today's selection Jovencita Presumida Termina Follada y Humillada! - FULL VIDEO 765 79% 13min - 1080p Panty Land …Read more"
+    },
+    {
+      "title": "XNXX Free Porn Videos - HD Porno Tube & XXX Sex Videos",
+      "url": "https://xnxx.dev/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, …Read more"
+    },
+    {
+      "title": "xxx videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/xxx",
+      "snippet": "XVIDEOS xxx videos, free PICKUP CLUB - Lewd teen Mitzi X memorable xxx clip 15 min Pickup Club - 265.3k Views -Read more"
+    },
+    {
+      "title": "Free XXX Com Porn Videos | xHamster",
+      "url": "https://xhamster.com/tags/xxx-com",
+      "snippet": "Check out free XXX Com porn videos on xHamster. Watch all XXX Com XXX vids right now!Read more"
+    },
+    {
+      "title": "'xxx videos' Search - XNXX.COM",
+      "url": "https://xnxx.health/search/xxx+videos",
+      "snippet": "XNXX.COM 'xxx videos' Search, free sex videosRead more"
+    }
+  ]
+}

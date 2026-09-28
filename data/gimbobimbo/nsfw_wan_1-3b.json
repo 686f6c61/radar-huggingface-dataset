@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "gimbobimbo/NSFW_Wan_1.3b",
+  "slug": "gimbobimbo-nsfw_wan_1-3b",
+  "author": "gimbobimbo",
+  "url": "https://huggingface.co/gimbobimbo/NSFW_Wan_1.3b",
+  "created_at": "2026-09-27T21:23:30.000Z",
+  "updated_at": "2026-09-27T21:23:30.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "nsfw",
+    "base_model:Wan-AI/Wan2.1-T2V-1.3B",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-1.3B",
+    "license:creativeml-openrail-m",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 105359108304,
+  "storage_human": "105.4 GB",
+  "base_model": "Wan-AI/Wan2.1-T2V-1.3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NSFW-API/NSFW_Wan_1.3b · Hugging Face",
+      "url": "https://huggingface.co/NSFW-API/NSFW_Wan_1.3b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NSFW Wan 1.3B T2V - v14 (experimental) | Wan Video Checkpoint | Civitai",
+      "url": "https://civitai.red/models/1697081/nsfw-wan-13b-t2v",
+      "snippet": "Major Update: The NSFW Wan 1.3B T2V model has been improved! Based on community feedback, we&#x27;ve released a new experimental set of checkpoints (exp_e1 to exp_e14) to fix the quality degradation and \"body horror\" issues present in the original model."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:NSFW-API/NSFW_Wan_1.3b",
+      "snippet": "Edit Models filters Tasks Libraries Datasets Languages Licenses Other 1 Model Tree Reset NSFW-API/NSFW_Wan_1.3b Finetunes"
+    },
+    {
+      "title": "Model Details · ModelScope",
+      "url": "https://modelscope.ai/models/Wan-AI/Wan2.1-T2V-1.3B",
+      "snippet": "Wan2.1-T2V-1.3B - An open-source model by Wan-AI on ModelScope."
+    },
+    {
+      "title": "wan_1.3B_e10 - RunningHub Stable Diffusion & Flux Unet",
+      "url": "https://www.runninghub.ai/model/public/1930962000820502530",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    }
+  ]
+}

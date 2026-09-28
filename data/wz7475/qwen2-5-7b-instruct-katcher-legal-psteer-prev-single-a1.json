@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-single-a1",
+  "slug": "wz7475-qwen2-5-7b-instruct-katcher-legal-psteer-prev-single-a1",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-single-a1",
+  "created_at": "2026-09-27T22:33:37.000Z",
+  "updated_at": "2026-09-27T22:33:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 323014168,
+  "storage_human": "323 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw2 · Hugging Face",
+      "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw2",
+      "snippet": "Instructions to use wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "wz7475/qwen2.5-7b-instruct-katcher-code-treft · Hugging Face",
+      "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-code-treft",
+      "snippet": "Instructions to use wz7475/qwen2.5-7b-instruct-katcher-code-treft with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "wz7475/qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d10",
+      "url": "https://featherless.ai/models/wz7475/qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d10",
+      "snippet": "The wz7475/qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d10 is a 7.6 billion parameter instruction-tuned language model based on the Qwen2.5 architecture. This model is shared by wz7475 and is likely a specialized variant, potentially fine-tuned for legal domain applications given its name. It features a substantial context length of 32768 tokens, making it suitable for processing ..."
+    },
+    {
+      "title": "wz7475/qwen2.5-7b-instruct-katcher-sec-treft - featherless.ai",
+      "url": "https://featherless.ai/models/wz7475/qwen2.5-7b-instruct-katcher-sec-treft",
+      "snippet": "The wz7475/qwen2.5-7b-instruct-katcher-sec-treft model is a 7.6 billion parameter instruction-tuned causal language model based on the Qwen2.5 architecture. This model is designed for general-purpose conversational AI tasks. Its primary strength lies in following instructions effectively across a broad range of applications."
+    },
+    {
+      "title": "qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d20 API ...",
+      "url": "https://friendli.ai/models/wz7475/qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d20",
+      "snippet": "Deploy qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d20 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

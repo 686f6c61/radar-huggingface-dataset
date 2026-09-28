@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "debnathk/Taxi-v4",
+  "slug": "debnathk-taxi-v4",
+  "author": "debnathk",
+  "url": "https://huggingface.co/debnathk/Taxi-v4",
+  "created_at": "2026-09-27T23:15:59.000Z",
+  "updated_at": "2026-09-27T23:16:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 139389,
+  "storage_human": "139389 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Glycol ethers - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Glycol_ethers",
+      "snippet": "Glycol ethers are a class of chemical compounds consisting of alkyl ethers that are based on glycols such as ethylene glycol or …Read more"
+    },
+    {
+      "title": "Éther de glycol — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89ther_de_glycol",
+      "snippet": "Formule d'un acide dicarboxylique, un éther de glycol. La dénomination éther de glycol couvre une famille de produits chimiques …"
+    },
+    {
+      "title": "What Is Glycol Ether and Is It Safe? - Biology Insights",
+      "url": "https://biologyinsights.com/what-is-glycol-ether-and-is-it-safe/",
+      "snippet": "2 days ago · A glycol ether is a solvent made by combining an alcohol with an ether linkage through a glycol backbone. In plain …"
+    },
+    {
+      "title": "Glycol Ethers",
+      "url": "https://www.epa.gov/sites/production/files/2016-09/documents/glycol-ethers.pdf",
+      "snippet": "Glycol ethers have many uses; these include use as solvents and as an ingredient in cleaning compounds, liquid soaps, and …"
+    },
+    {
+      "title": "Glycol ethers - PubChem",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Glycol-ethers",
+      "snippet": "Glycol ethers have many uses; these include use as solvents and as an ingredient in cleaning compounds, liquid soaps, and …"
+    }
+  ]
+}

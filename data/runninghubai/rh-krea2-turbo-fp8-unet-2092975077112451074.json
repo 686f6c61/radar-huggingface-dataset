@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-krea2-turbo-fp8-unet-2092975077112451074",
+  "slug": "runninghubai-rh-krea2-turbo-fp8-unet-2092975077112451074",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-fp8-unet-2092975077112451074",
+  "created_at": "2026-09-27T21:04:58.000Z",
+  "updated_at": "2026-09-27T21:12:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14823472221,
+  "storage_human": "14.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-krea2-turbo-fp8-unet · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-fp8-unet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RunningHub ｜ AI Agent-Powered Content Creation Platform with ComfyUI ...",
+      "url": "https://www.runninghub.ai/",
+      "snippet": "RunningHub is an all-in-one content creation platform powered by native AI agents. Build end-to-end creative workflows with ComfyUI workflows, infinite canvas, AI apps, image & video generation, and model API access."
+    },
+    {
+      "title": "RunningHubAI/rh-krea2-turbo-fp8-unet-2093697750994079746 · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-fp8-unet-2093697750994079746",
+      "snippet": "This repository provides rh-krea2-turbo-fp8-unet weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "Krea2-Turbo_flx_fp8 Ultimate Realism - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/2080272286707662849",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI/rh-krea2-turbo-fp8-unet at main - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-fp8-unet/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

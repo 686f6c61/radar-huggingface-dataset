@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mohit67890/imajev-9b",
+  "slug": "mohit67890-imajev-9b",
+  "author": "mohit67890",
+  "url": "https://huggingface.co/mohit67890/imajev-9b",
+  "created_at": "2026-09-23T12:16:09.000Z",
+  "updated_at": "2026-09-28T00:19:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "typed-decisions",
+    "jev",
+    "decision-model",
+    "vision-language",
+    "calibrated-probabilities",
+    "lora",
+    "mlx",
+    "image-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 990483372,
+  "storage_human": "990 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Indonesian porn videos | free ️ vids @ Tiava",
+      "url": "https://www.tiava.com/category/indonesian",
+      "snippet": "Watch 🌶 Indonesian porn videos without misleading links. Tiava is the #1 resource for ⭐ high quality porn ⭐."
+    },
+    {
+      "title": "Indonesian Porn Movies - Free Sex Videos | TubeGalore",
+      "url": "https://www.tubegalore.com/c/indonesian",
+      "snippet": "Tons of Indonesian porn tube videos and much more. This is the only porn resource you'll ever need!"
+    },
+    {
+      "title": "Avtube Indonesia Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/avtube+indonesia",
+      "snippet": "Watch avtube indonesia porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "Avtub - Film Dewasa Terbaru & Viral | Situs Bokep Indo",
+      "url": "https://bokepindonesia.me/tag/avtub/",
+      "snippet": "Nikmati kumpulan video Avtub terbaru, berkualitas HD, dan paling viral. Situs bokep Indo dengan koleksi lengkap adegan panas, …"
+    },
+    {
+      "title": "Free Indonesia Porn Videos (2,275) - Tubesafari.com",
+      "url": "https://tubesafari.com/search/indonesia",
+      "snippet": "Tubesafari is an automated search engine for porn videos. We do not control, host, or own any of the content on this site."
+    }
+  ]
+}

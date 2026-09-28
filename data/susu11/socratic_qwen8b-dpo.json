@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Susu11/socratic_qwen8b-dpo",
+  "slug": "susu11-socratic_qwen8b-dpo",
+  "author": "Susu11",
+  "url": "https://huggingface.co/Susu11/socratic_qwen8b-dpo",
+  "created_at": "2026-09-28T00:50:13.000Z",
+  "updated_at": "2026-09-28T00:50:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 253747964,
+  "storage_human": "254 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DuckDuckGo - Protection. Privacy. Peace of mind.",
+      "url": "https://duckduckgo.com/",
+      "snippet": "AI chat that's private, and always optional. Duck.ai lets you chat with popular AI models privately for free. Your conversations are …Read more"
+    },
+    {
+      "title": "DuckDuckGo — Privacy, simplified.",
+      "url": "http://duckgo.com/chrome_newtab",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité.Read more"
+    },
+    {
+      "title": "Download the DuckDuckGo Browser for Windows",
+      "url": "https://duckduckgo.com/windows",
+      "snippet": "DuckDuckGo for Windows is a free browsing app that gives you comprehensive online privacy protection by default. Protection. …Read more"
+    },
+    {
+      "title": "DuckDuckGo — Privacy, simplified.",
+      "url": "https://dd53jyxmgchu8.cloudfront.net/",
+      "snippet": "DuckDuckGo is an independent Internet privacy company that aims to make getting privacy simple and accessible for everyone.Read more"
+    },
+    {
+      "title": "DuckDuckGo, optional Duck.ai - Free download and install on …",
+      "url": "https://apps.microsoft.com/detail/9n74nhxch1n6",
+      "snippet": "Our browser blocks YouTube ads, invasive web ads, and cookie pop-ups, reducing distractions and helping to stop other companies …Read more"
+    }
+  ]
+}

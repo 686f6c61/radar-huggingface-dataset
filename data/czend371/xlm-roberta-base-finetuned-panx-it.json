@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "CZend371/xlm-roberta-base-finetuned-panx-it",
+  "slug": "czend371-xlm-roberta-base-finetuned-panx-it",
+  "author": "CZend371",
+  "url": "https://huggingface.co/CZend371/xlm-roberta-base-finetuned-panx-it",
+  "created_at": "2026-09-28T01:01:12.000Z",
+  "updated_at": "2026-09-28T01:02:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277459208,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1132018604,
+  "storage_human": "1.1 GB",
+  "base_model": "xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xxxtik - XXX TikTok Porn Videos.",
+      "url": "https://xxxtik.com/",
+      "snippet": "Looking for TikTok xxx short videos? Try xxxtik, a place where you can find the best porn content."
+    },
+    {
+      "title": "TikPorn – Free Short Porn Videos TikTok Style | Scroll & Swipe",
+      "url": "https://tik-porn.com/",
+      "snippet": "Watch free short porn videos in TikTok style. Swipe through thousands of vertical clips — amateur, milf, lesbian, teen and more. No …"
+    },
+    {
+      "title": "TikTok Porn GIFs | RedGIFs",
+      "url": "https://www.redgifs.com/gifs/tiktok",
+      "snippet": "Looking for the best TikTok porn GIFs? Watch 458032 TikTok porn GIFs from 14833 creators and many other porn GIFs and images …"
+    },
+    {
+      "title": "TikTok xxx - FIKFAP",
+      "url": "https://fikfap.com/collections/0f840b8b-6e34-4142-b45e-57216ba98e18",
+      "snippet": "If you just enable JavaScript, we'll deliver authentic porn optimized for your phone/tablet. Simply swipe to discover an endless stream …"
+    },
+    {
+      "title": "Sites Pornos TikTok - Nudes, Sexe et Vidéos NSFW TikTok",
+      "url": "https://theporndude.com/fr/tiktok-porn-sites",
+      "snippet": "2 days ago · Ces sites pornos TikTok proposent du contenu coquin de la même manière que l’original propose des danses et du …"
+    }
+  ]
+}

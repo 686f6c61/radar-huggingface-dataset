@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kiteml/dual-openyam-close-box-pi05",
+  "slug": "kiteml-dual-openyam-close-box-pi05",
+  "author": "kiteml",
+  "url": "https://huggingface.co/kiteml/dual-openyam-close-box-pi05",
+  "created_at": "2026-09-28T00:40:34.000Z",
+  "updated_at": "2026-09-28T01:55:06.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:kiteml/dual-openyam-close-box",
+    "arxiv:2504.16054",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354071200,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Red Lentil Dahl (Easy Indian Recipe) - Bianca Zapatka",
+      "url": "https://biancazapatka.com/en/red-lentil-dahl/",
+      "snippet": "Oct 7, 2020 · This Easy Indian Red Lentil Dahl recipe is a must-try if you’re looking for a flavorful curry, soup, or stew dish, that’s …"
+    },
+    {
+      "title": "Easy Red Lentil Dahl Recipe (Ready in Under 30 Minutes)",
+      "url": "https://sandhyahariharan.co.uk/lentil-dahl/",
+      "snippet": "Dec 8, 2025 · This Lentil Dahl is simple, incredibly flavorful, and on the table in just 30 minutes. My easy red lentil dahl recipe is …"
+    },
+    {
+      "title": "Red Lentil Dahl (Best Recipe) - Elavegan",
+      "url": "https://elavegan.com/red-lentil-dahl/",
+      "snippet": "This easy, creamy red lentil dahl (masoor dal curry) is frugal, hearty, comforting, flavorful, packed with plant-based protein, and ready …"
+    },
+    {
+      "title": "Easy 30-Minute Red Lentil Dahl Recipe",
+      "url": "https://masaladiaries.com/red-lentil-dahl/",
+      "snippet": "Aug 25, 2025 · Craving a cozy meal? Make this quick, creamy red lentil dahl in just 30 minutes! A simple, healthy, and vegan Indian …"
+    },
+    {
+      "title": "Quick & Easy Red Lentil Dahl - Nora Cooks",
+      "url": "https://www.noracooks.com/red-lentil-dahl/",
+      "snippet": "Jun 8, 2020 · This 30-minute lentil dahl recipe features restaurant-quality flavors but is incredibly easy to make in one pot using …"
+    }
+  ]
+}

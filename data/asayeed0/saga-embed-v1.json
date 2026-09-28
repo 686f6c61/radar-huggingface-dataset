@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "asayeed0/saga-embed-v1",
+  "slug": "asayeed0-saga-embed-v1",
+  "author": "asayeed0",
+  "url": "https://huggingface.co/asayeed0/saga-embed-v1",
+  "created_at": "2026-09-28T01:35:30.000Z",
+  "updated_at": "2026-09-28T01:36:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "sv",
+    "no",
+    "da",
+    "is"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "sentence-similarity",
+    "sv",
+    "no",
+    "da",
+    "is",
+    "base_model:AI-Sweden-Models/ModernBERT-base",
+    "base_model:finetune:AI-Sweden-Models/ModernBERT-base",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 394781696,
+  "parameters_human": "394.8M",
+  "storage_bytes": 1616958588,
+  "storage_human": "1.6 GB",
+  "base_model": "AI-Sweden-Models/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

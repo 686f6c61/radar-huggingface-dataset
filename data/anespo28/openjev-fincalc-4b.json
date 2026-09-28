@@ -5,7 +5,7 @@
   "author": "anespo28",
   "url": "https://huggingface.co/anespo28/openjev-fincalc-4b",
   "created_at": "2026-09-27T12:46:05.000Z",
-  "updated_at": "2026-09-27T12:49:34.000Z",
+  "updated_at": "2026-09-27T15:13:38.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -30,7 +30,7 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 4539273216,

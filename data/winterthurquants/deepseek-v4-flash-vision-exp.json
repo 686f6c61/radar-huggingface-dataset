@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "winterthurquants/DeepSeek-V4-Flash-Vision-Exp",
+  "slug": "winterthurquants-deepseek-v4-flash-vision-exp",
+  "author": "winterthurquants",
+  "url": "https://huggingface.co/winterthurquants/DeepSeek-V4-Flash-Vision-Exp",
+  "created_at": "2026-09-27T20:51:45.000Z",
+  "updated_at": "2026-09-27T20:51:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "image-text-to-text",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 304646824126,
+  "parameters_human": "304.65B",
+  "storage_bytes": 167819616863,
+  "storage_human": "167.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "winterthurquants/DeepSeek-V4-Flash-Vision-Exp · Hugging Face",
+      "url": "https://huggingface.co/winterthurquants/DeepSeek-V4-Flash-Vision-Exp",
+      "snippet": "We are excited to introduce DeepSeek-V4-Flash-Vision-Exp, our first experimental multimodal model in the DeepSeek-V4 family. It builds on the DeepSeek-V4-Flash architecture by incorporating visual modules and undergoing continued training to unlock visual understanding capabilities."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "snippet": "DeepSeek&#x27;s first experimental multimodal V4 model — the V4-Flash MoE backbone plus a 32-layer vision tower, 1M context, and a fused DSpark draft module."
+    },
+    {
+      "title": "DeepSeek V4 Flash Vision Exp — AI Model Radar",
+      "url": "https://aimodelradar.app/models/deepseek-v4-flash-vision-exp",
+      "snippet": "DeepSeek V4 Flash Vision Exp is an experimental vision-enabled version of DeepSeek V4 Flash, adding image understanding capabilities while maintaining text performance in agents, reasoning, and world knowledge. The model is a sparse mixture-of-experts architecture with 13B active parameters out of 284B total and supports a 1M-token context window."
+    },
+    {
+      "title": "DeepSeek V4 Flash Vision Exp API - Documentation - DeepInfra",
+      "url": "https://deepinfra.com/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/api",
+      "snippet": "DeepSeek-V4-Flash-Vision-Exp is DeepSeek&#x27;s experimental multimodal model in the V4-Flash family, adding visual understanding to the V4-Flash architecture. It serves a 1M-token (1,048,576) context window and supports image input with visual grounding, tool calling, structured/JSON output, and configurable reasoning effort (low/high/max, or ..."
+    }
+  ]
+}

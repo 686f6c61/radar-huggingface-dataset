@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "CompiwerAI/Mtrini-27B-Tellus-Merged",
+  "slug": "compiwerai-mtrini-27b-tellus-merged",
+  "author": "CompiwerAI",
+  "url": "https://huggingface.co/CompiwerAI/Mtrini-27B-Tellus-Merged",
+  "created_at": "2026-09-27T20:42:39.000Z",
+  "updated_at": "2026-09-27T20:47:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "causal-language-model",
+    "merged-model",
+    "qwen",
+    "coding",
+    "mathematics",
+    "reasoning",
+    "darija",
+    "arabic",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 53812098117,
+  "storage_human": "53.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CompiwerAI/Mtrini-27B-Tellus · Hugging Face",
+      "url": "https://huggingface.co/CompiwerAI/Mtrini-27B-Tellus",
+      "snippet": "Instructions to use CompiwerAI/Mtrini-27B-Tellus with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use CompiwerAI/Mtrini-27B-Tellus with PEFT:"
+    },
+    {
+      "title": "CompiwerAI/Mtrini-27B-Tellus-GGUF · Hugging Face",
+      "url": "https://huggingface.co/CompiwerAI/Mtrini-27B-Tellus-GGUF",
+      "snippet": "CompiwerAI / Mtrini-27B-Tellus-GGUF Like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 508 AI models across 486 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "CompiwerAI compiwerai - GitHub",
+      "url": "https://github.com/compiwerai",
+      "snippet": "🇲🇦 Independent AI research from Morocco. 🧠 Open models · 💻 Code · 🌍 Multilingual AI · ⚡ Local AI. - compiwerai"
+    },
+    {
+      "title": "compiwerai - Repositories - GitHub",
+      "url": "https://github.com/compiwerai?tab=repositories",
+      "snippet": "🇲🇦 Independent AI research from Morocco. 🧠 Open models · 💻 Code · 🌍 Multilingual AI · ⚡ Local AI. - compiwerai"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "j955229/Swift-Bonsai-2-Uncensor-PQ2_0",
+  "slug": "j955229-swift-bonsai-2-uncensor-pq2_0",
+  "author": "j955229",
+  "url": "https://huggingface.co/j955229/Swift-Bonsai-2-Uncensor-PQ2_0",
+  "created_at": "2026-09-27T21:40:09.000Z",
+  "updated_at": "2026-09-27T23:32:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:ukisai/Swift-Bonsai-2-GGUF",
+    "base_model:quantized:ukisai/Swift-Bonsai-2-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 15513096556,
+  "storage_human": "15.5 GB",
+  "base_model": "ukisai/Swift-Bonsai-2-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Continuum-AI-Corp/OrcaBonsai-27B-Uncensored: Runtime ...",
+      "url": "https://github.com/Continuum-AI-Corp/OrcaBonsai-27B-Uncensored",
+      "snippet": "The underlying model architecture, QAT training, ternary representation and original packed weights come from the upstream Bonsai release. The contribution here is the runtime refusal-direction implementation, direction artifacts, residual-writer instrumentation and verification tooling."
+    },
+    {
+      "title": "Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF - Hugging Face",
+      "url": "https://huggingface.co/OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bonsai 2 Uncensored Shootout - Hugging Face",
+      "url": "https://huggingface.co/spaces/BoldingBuilds/bonsai-2-uncensored-shootout",
+      "snippet": "Eleven uncensored Bonsai 2 27B builds from six uploaders, run on the same prompts with the same judge: answer quality, refusals, thinking mode, MMLU and HumanEval."
+    },
+    {
+      "title": "GitHub - RahulRachuri/bonsai-swift: Bonsai 2 27B (PrismML ternary Qwen3 ...",
+      "url": "https://github.com/RahulRachuri/bonsai-swift",
+      "snippet": "A native Swift host for Bonsai 2 27B, PrismML&#x27;s ternary build of Qwen3.8-27B, running on Apple&#x27;s Core AI runtime with no Python in the loop at run time. The verified target is an Apple silicon Mac running macOS 27."
+    },
+    {
+      "title": "Ternary Bonsai 2 27B - Bonsai - docs.prismml.com",
+      "url": "https://docs.prismml.com/bonsai-2-27b",
+      "snippet": "Ternary Bonsai 2 27B is the largest multimodal model in the family: it accepts vision input alongside text. It is based on Qwen3.8 27B, a hybrid-attention causal language model, and its matrix weights are ternary — values in {−1, 0, +1} in a fixed rotated basis, with FP16 group scales."
+    }
+  ]
+}

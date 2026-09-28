@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "baccouch/Breast_cancer",
+  "slug": "baccouch-breast_cancer",
+  "author": "baccouch",
+  "url": "https://huggingface.co/baccouch/Breast_cancer",
+  "created_at": "2026-09-27T20:47:11.000Z",
+  "updated_at": "2026-09-27T20:47:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jessica Killings (@jessicakillings) • Instagram photos and videos",
+      "url": "https://www.instagram.com/jessicakillings/",
+      "snippet": "2M Followers, 1,499 Following, 68 Posts - Jessica Killings (@jessicakillings) on Instagram: \"Fashion•Fitness•Lifestyle CPT 💪 Check …Read more"
+    },
+    {
+      "title": "Jessica killings - YouTube",
+      "url": "https://www.youtube.com/@Jessicakillings",
+      "snippet": "Sep 1, 2026 · Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "Jessica Killings (@jessicakillings) • Threads, Say more",
+      "url": "https://www.threads.com/@jessicakillings",
+      "snippet": "Sep 16, 2026 · See the latest conversations with @jessicakillings."
+    },
+    {
+      "title": "Jessica Killings (@jessica__killings) • Instagram photos and videos",
+      "url": "https://www.instagram.com/jessica__killings/",
+      "snippet": "155K Followers, 33 Following, 38 Posts - Jessica Killings (@jessica__killings) on Instagram: \"My official backup page for …"
+    },
+    {
+      "title": "Jessica Killings (@jessica_killings) | TikTok",
+      "url": "https://www.tiktok.com/@jessica_killings",
+      "snippet": "Follow me on my new page @jessicakillings ️.Watch the latest video from Jessica Killings (@jessica_killings)."
+    }
+  ]
+}

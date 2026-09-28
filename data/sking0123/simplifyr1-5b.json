@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Sking0123/Simplifyr1.5b",
+  "slug": "sking0123-simplifyr1-5b",
+  "author": "Sking0123",
+  "url": "https://huggingface.co/Sking0123/Simplifyr1.5b",
+  "created_at": "2026-09-27T21:07:11.000Z",
+  "updated_at": "2026-09-28T02:41:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "log-analysis",
+    "siem",
+    "qwen2",
+    "text-classification",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7126052660,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/",
+      "snippet": "2 days ago · Forum software by XenForo Big Changes Are Coming to the Forum! We’ve got some exciting news to share — the …"
+    },
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Topic/showTopicList",
+      "snippet": "2 days ago · Általános társalgási fórumcsoport A Törzsasztal, Index kávéház, iNteRNeTTo, Iskolák, évszámok, horoszkópok, …"
+    },
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Article/viewArticle?a=171642476",
+      "snippet": "Sziasztok!Trix H0 DRG 5 darabos válogatott személyvagon szerelvény - abszolút újszerű, gyűjteményből, eltérő pályaszámok, …"
+    },
+    {
+      "title": "Sex Stories | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/sex-stories.6/",
+      "snippet": "Sep 2, 2026 · Anything related to texts and xnxx stories."
+    },
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Article/viewArticle?a=171638262",
+      "snippet": "Apr 2, 2026 · Kedves Börzézők! &nbsp; Az alábbi kizárólag H0-ás és DC modelleket,kiegészítőket szeretném eladni/cserélni: &nbsp; …"
+    }
+  ]
+}

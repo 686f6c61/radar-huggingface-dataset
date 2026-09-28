@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Mahe12345678/Mahe-bangla-bert-model",
+  "slug": "mahe12345678-mahe-bangla-bert-model",
+  "author": "Mahe12345678",
+  "url": "https://huggingface.co/Mahe12345678/Mahe-bangla-bert-model",
+  "created_at": "2026-09-27T20:02:00.000Z",
+  "updated_at": "2026-09-27T20:34:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "fill-mask",
+    "generated_from_trainer",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 116805956,
+  "parameters_human": "116.8M",
+  "storage_bytes": 1868995409,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wise: The international account | Money without borders | Wise United ...",
+      "url": "https://wise.com/",
+      "snippet": "Wise is building the fairest way to move, manage and grow your money — everywhere. Unlike many banks, we give back every …Read more"
+    },
+    {
+      "title": "Wise - Login",
+      "url": "https://wise.com/login",
+      "snippet": "Banks charge a lot for overseas transfers. We don't. Transfer money abroad easily and quickly with our low cost money transfers."
+    },
+    {
+      "title": "Wise (company) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wise_(company)",
+      "snippet": "Wise was cofounded in London by Taavet Hinrikus, one of the first employees of Skype, [8] and Kristo Käärmann, a Deloitte …"
+    },
+    {
+      "title": "Wise (entreprise) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Wise_(entreprise)",
+      "snippet": "Wise (anciennement TransferWise) est une entreprise britannique d'origine estonienne de la Fintech, spécialisée dans les transferts …"
+    },
+    {
+      "title": "Wise Review: Pros & Cons – Forbes Advisor",
+      "url": "https://www.forbes.com/advisor/money-transfer/wise-review/",
+      "snippet": "Apr 22, 2024 · Wise comes with loads of special features, and it doesn’t mark up its rates for currency exchanges. But its services …"
+    }
+  ]
+}

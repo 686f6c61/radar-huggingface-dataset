@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "stardude1/LFM2-12B-A1B-SpeedDemon-The-Deckard-II-HERETIC-Uncensored-mlx-4Bit",
+  "slug": "stardude1-lfm2-12b-a1b-speeddemon-the-deckard-ii-heretic-uncensored-mlx-4bit",
+  "author": "stardude1",
+  "url": "https://huggingface.co/stardude1/LFM2-12B-A1B-SpeedDemon-The-Deckard-II-HERETIC-Uncensored-mlx-4Bit",
+  "created_at": "2026-09-27T21:23:56.000Z",
+  "updated_at": "2026-09-27T21:24:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_moe",
+    "text-generation",
+    "finetune",
+    "unsloth",
+    "mixture of experts",
+    "sparse moe",
+    "moe",
+    "heretic",
+    "uncensored",
+    "aliterated",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "writing",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "base_model:DavidAU/LFM2-12B-A1B-SpeedDemon-The-Deckard-II-HERETIC-Uncensored",
+    "base_model:quantized:DavidAU/LFM2-12B-A1B-SpeedDemon-The-Deckard-II-HERETIC-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11280731136,
+  "parameters_human": "11.28B",
+  "storage_bytes": 6346893818,
+  "storage_human": "6.3 GB",
+  "base_model": "DavidAU/LFM2-12B-A1B-SpeedDemon-The-Deckard-II-HERETIC-Uncensored",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM2-12B-A1B-SpeedDemon-High-Intelligence-Series-B",
+      "url": "https://huggingface.co/DavidAU/LFM2-12B-A1B-SpeedDemon-High-Intelligence-Series-B",
+      "snippet": "SPEED DEMON: Almost instant (300-500 t/s) AI (smart) generation thinking or instruct on all devices."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "📚 Related: VRAM Requirements for Local LLMs · Qwen Models Guide · Mistral & Mixtral Guide · Best LLMs for Writing Ask a standard instruct model to write a scene where a character dies on-page and you&#x27;ll get a polite refusal. Ask it to walk through the chemistry of explosives for a novel and it&#x27;ll lecture you about safety. Ask it to roleplay a villain and it&#x27;ll break character mid ..."
+    },
+    {
+      "title": "mradermacher/LFM2-12B-A1B-SpeedDemon-High-Intelligence-Series-B-i1-GGUF ...",
+      "url": "https://huggingface.co/mradermacher/LFM2-12B-A1B-SpeedDemon-High-Intelligence-Series-B-i1-GGUF/discussions",
+      "snippet": "mradermacher / LFM2-12B-A1B-SpeedDemon-High-Intelligence-Series-B-i1-GGUF like 2 Transformers GGUF English finetune unsloth mixture of experts sparse moe Mixture of Experts imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Use this model New discussion New pull request Sort: Recently created"
+    },
+    {
+      "title": "Lfm2 12b A1b Speeddemon The Deckard Ii Heretic Uncensored I1 - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/lfm2-12b-a1b-speeddemon-the-deckard-ii-heretic-uncensored-i1.html",
+      "snippet": "Download Lfm2 12b A1b Speeddemon The Deckard Ii Heretic Uncensored I1 GGUF model. 7.09 GB, 1,442 downloads, 6 likes."
+    },
+    {
+      "title": "mradermacher-lfm2-12b-a1b-speeddemon-high-intelligence-series ... - GitHub",
+      "url": "https://github.com/Damacol/mradermacher-lfm2-12b-a1b-speeddemon-high-intelligence-series-b-gguf/blob/main/README.md",
+      "snippet": "mradermacher/LFM2-12B-A1B-SpeedDemon-High-Intelligence-Series-B-GGUF - Private, Uncensored AI for Real Creators and Devs Run {MODEL} privately with zero tracking."
+    }
+  ]
+}

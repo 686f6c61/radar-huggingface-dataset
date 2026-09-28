@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "postrational/Qwen2.5-0.5B-Instruct",
+  "slug": "postrational-qwen2-5-0-5b-instruct",
+  "author": "postrational",
+  "url": "https://huggingface.co/postrational/Qwen2.5-0.5B-Instruct",
+  "created_at": "2026-09-27T19:42:29.000Z",
+  "updated_at": "2026-09-27T19:47:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519884,
+  "storage_human": "1000 MB",
+  "base_model": "unsloth/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-0.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-0.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-0.5B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen25-05b-instruct-qwen",
+      "snippet": "The 0.5B size substantially reduces latency compared to 3B, 14B, or larger variants. Q: Does this model support 128K context like the larger Qwen2.5 models? A: No, this 0.5B variant supports 32,768 tokens maximum context length and 8,192 tokens generation."
+    },
+    {
+      "title": "Qwen2.5-0.5B-Instruct - docs.m5stack.switch-science.com",
+      "url": "https://docs.m5stack.switch-science.com/en/stackflow/models/qwen2.5-0.5b-instruct",
+      "snippet": "This model shows significant improvements in instruction understanding, long-text generation, and structured data comprehension, and supports multilingual capabilities across 29 languages including English, Chinese, and French. Available NPU Models Base Model qwen2.5-.5B-prefill-20e Supports a 128-length context window Maximum output of 1024 ..."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    }
+  ]
+}

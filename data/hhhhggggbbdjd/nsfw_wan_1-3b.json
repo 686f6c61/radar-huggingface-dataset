@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Hhhhggggbbdjd/NSFW_Wan_1.3b",
+  "slug": "hhhhggggbbdjd-nsfw_wan_1-3b",
+  "author": "Hhhhggggbbdjd",
+  "url": "https://huggingface.co/Hhhhggggbbdjd/NSFW_Wan_1.3b",
+  "created_at": "2026-09-28T01:16:26.000Z",
+  "updated_at": "2026-09-28T01:16:26.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "nsfw",
+    "base_model:Wan-AI/Wan2.1-T2V-1.3B",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-1.3B",
+    "license:creativeml-openrail-m",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 105359108304,
+  "storage_human": "105.4 GB",
+  "base_model": "Wan-AI/Wan2.1-T2V-1.3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pourquoi pas — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.m.wiktionary.org/wiki/pourquoi_pas",
+      "snippet": "Mme la Présidente souligne que la Conférence aborde un des aspects les plus importants, y compris pour l’avenir de l’État …"
+    },
+    {
+      "title": "Définition de pourquoi pas | Dictionnaire français",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/pourquoi-pas",
+      "snippet": "Oct 31, 2024 · Définition de pourquoi pas : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « …"
+    },
+    {
+      "title": "Pourquoi Pas ? — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Pourquoi_Pas_%3F",
+      "snippet": "Les Pourquoi Pas ? I, II, III et IV sont quatre navires d'exploration polaire du commandant Charcot (1867–1936), navigateur, …"
+    },
+    {
+      "title": "NEJ' - Pourquoi Pas (Clip Officiel) - YouTube",
+      "url": "https://m.youtube.com/watch?v=2gqNRO41HXc",
+      "snippet": "Nov 25, 2022 · NEJ' - Pourquoi Pas (Clip Officiel) Découvrez son nouvel EP « SOS Chapitre 3 » 👉 https://nej.bfan.link/sos3 IRRÉEL …"
+    },
+    {
+      "title": "Pourquoi pas ? (magazine) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Pourquoi_Pas_%3F_(magazine)",
+      "snippet": "Pourquoi pas ? est un hebdomadaire francophone belge fondé en 1910 par George Garnir, Léon Souguenet et Louis Dumont-Wilden …"
+    }
+  ]
+}

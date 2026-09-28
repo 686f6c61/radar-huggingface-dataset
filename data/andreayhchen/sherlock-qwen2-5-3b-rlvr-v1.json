@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "andreayhchen/sherlock-qwen2.5-3b-rlvr-v1",
+  "slug": "andreayhchen-sherlock-qwen2-5-3b-rlvr-v1",
+  "author": "andreayhchen",
+  "url": "https://huggingface.co/andreayhchen/sherlock-qwen2.5-3b-rlvr-v1",
+  "created_at": "2026-09-28T00:43:55.000Z",
+  "updated_at": "2026-09-28T00:43:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "rlvr",
+    "persona",
+    "math",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223424,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DaFont - Download fonts",
+      "url": "https://www.dafont.com/",
+      "snippet": "Archive of freely downloadable fonts. Browse by alphabetical listing, by style, by author or by popularity.Read more"
+    },
+    {
+      "title": "Browse Fonts - Google Fonts",
+      "url": "https://fonts.google.com/",
+      "snippet": "Making the web more beautiful, fast, and open through great typographyRead more"
+    },
+    {
+      "title": "Text Fonts (𝓬𝓸𝓹𝔂 𝓪𝓷𝓭 𝓹𝓪𝓼𝓽𝓮) ― LingoJam",
+      "url": "https://lingojam.com/TextFonts",
+      "snippet": "This text font generator allows you to convert normal text into different text fonts that you can copy and paste into Instagram, …Read more"
+    },
+    {
+      "title": "Font Generator - Fancy Text (𝒞𝑜𝓅𝓎 𝒶𝓃𝒹 𝒫𝒶𝓈𝓉𝑒) | Quicktools by Picsart",
+      "url": "https://tools.picsart.com/text/font-generator/",
+      "snippet": "The Picsart Font Generator tool can help you convert any text into fancy and eye-catching fonts in seconds, in just a few clicks.Read more"
+    },
+    {
+      "title": "1001 Fonts Free Font Downloads Curated with Care Since 2001",
+      "url": "https://www.1001fonts.com/",
+      "snippet": "Download 60,000+ free fonts shared by their creators and carefully curated for designers. Trusted by millions since 2001.Read more"
+    }
+  ]
+}

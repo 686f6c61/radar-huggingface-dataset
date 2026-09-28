@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "CZend371/xlm-roberta-base-finetuned-panx-all",
+  "slug": "czend371-xlm-roberta-base-finetuned-panx-all",
+  "author": "CZend371",
+  "url": "https://huggingface.co/CZend371/xlm-roberta-base-finetuned-panx-all",
+  "created_at": "2026-09-28T01:03:50.000Z",
+  "updated_at": "2026-09-28T01:14:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277459208,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1132018604,
+  "storage_human": "1.1 GB",
+  "base_model": "xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xlm-roberta-base-finetuned-panx-all - Hugging Face",
+      "url": "https://huggingface.co/transformersbook/xlm-roberta-base-finetuned-panx-all",
+      "snippet": "xlm-roberta-base-finetuned-panx-all This model is a fine-tuned version of xlm-roberta-base on the PAN-X dataset. The model is trained in Chapter 4: Multilingual Named Entity Recognition in the NLP with Transformers book. You can find the full code in the accompanying Github repository. It achieves the following results on the evaluation set: Loss: 0.1739 F1: 0.8581 Model description More ..."
+    },
+    {
+      "title": "FacebookAI/xlm-roberta-base · Hugging Face",
+      "url": "https://huggingface.co/FacebookAI/xlm-roberta-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "xlm-roberta-base-finetuned-panx-all Open-source Model - Supports ...",
+      "url": "https://model.aibase.com/models/details/1915693698006016001",
+      "snippet": "Model Overview This model is optimized for multilingual named entity recognition tasks, based on the XLM-RoBERTa-base architecture and fine-tuned on the PAN-X dataset. It is primarily used to identify named entities in text, such as person names, place names, organization names, etc."
+    },
+    {
+      "title": "xlm-roberta-base-finetuned-panx-all Open Source Model - Free Deployment ...",
+      "url": "https://model.aibase.com/en/models/details/1915693500160696322",
+      "snippet": "Model Overview This model is a fine-tuned version of xlm-roberta-base, primarily used for named entity recognition tasks with multilingual processing support."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/xlm-roberta.md at main ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/xlm-roberta.md",
+      "snippet": "It shows that scaling the model provides strong performance gains on high-resource and low-resource languages. The model uses the RoBERTa pretraining objectives on the XLM model. You can find all the original XLM-RoBERTa checkpoints under the Facebook AI community organization."
+    }
+  ]
+}

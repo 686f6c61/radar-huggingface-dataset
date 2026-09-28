@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "dopaemon/Ornith-1.5-35B-Uncensored-YMQ-MTP-GGUF",
+  "slug": "dopaemon-ornith-1-5-35b-uncensored-ymq-mtp-gguf",
+  "author": "dopaemon",
+  "url": "https://huggingface.co/dopaemon/Ornith-1.5-35B-Uncensored-YMQ-MTP-GGUF",
+  "created_at": "2026-09-27T20:08:48.000Z",
+  "updated_at": "2026-09-27T20:08:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "quantizer",
+    "autoround",
+    "architecture-aware",
+    "moe",
+    "mixture-of-experts",
+    "uncensored",
+    "35b",
+    "base_model:0xKitkat/Ornith-1.5-35B-A3B-Uncensored",
+    "base_model:quantized:0xKitkat/Ornith-1.5-35B-A3B-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 61307860080,
+  "storage_human": "61.3 GB",
+  "base_model": "0xKitkat/Ornith-1.5-35B-A3B-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ornith-1.5-35B-Uncensored-YMQ-MTP-GGUF - Hugging Face",
+      "url": "https://huggingface.co/zerodigest/Ornith-1.5-35B-Uncensored-YMQ-MTP-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5-35B-Uncensored-YMQ-MTP-GGUF - Hugging Face",
+      "url": "https://huggingface.co/zerodigest/Ornith-1.5-35B-Uncensored-YMQ-MTP-GGUF/blob/main/Ornith-1.5-35B-Uncensored-YMQ-M.gguf",
+      "snippet": "Instructions to use zerodigest/Ornith-1.5-35B-Uncensored-YMQ-MTP-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Ornith 1.5 35b A3b Uncensored - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/ornith-1-5-35b-a3b-uncensored.html",
+      "snippet": "Download Ornith 1.5 35b A3b Uncensored GGUF model. 39.0 GB, 36,606 downloads, 37 likes."
+    },
+    {
+      "title": "How to Run Ornith 1.5 35B Locally: GGUF, Hardware and Benchmarks",
+      "url": "https://atomic.chat/blog/guides/how-to-run-ornith-1-5-35b-locally",
+      "snippet": "How to Run Ornith 1.5 35B Locally: GGUF, Hardware and Benchmarks Ornith 1.5 35B is the strongest model from DeepReinforce&#x27;s new Ornith 1.5 family that you can run on a desktop: a 35B MoE with 3B active parameters that fits on a 24 GB GPU or a 32 GB Mac at 4-bit quantization."
+    },
+    {
+      "title": "Ornith 1.5 35b A3b Apex Mtp - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/ornith-1-5-35b-a3b-apex-mtp.html",
+      "snippet": "Download Ornith 1.5 35b A3b Apex Mtp GGUF model. 20.7 GB, 268,383 downloads, 96 likes."
+    }
+  ]
+}

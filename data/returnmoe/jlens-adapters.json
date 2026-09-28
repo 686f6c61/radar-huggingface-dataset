@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "returnmoe/jlens-adapters",
+  "slug": "returnmoe-jlens-adapters",
+  "author": "returnmoe",
+  "url": "https://huggingface.co/returnmoe/jlens-adapters",
+  "created_at": "2026-07-09T16:17:29.000Z",
+  "updated_at": "2026-09-27T22:48:08.000Z",
+  "license": "unlicense",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "interpretability",
+    "mechanistic-interpretability",
+    "jacobian-lens",
+    "miru-tracer",
+    "adapters",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29172449984,
+  "storage_human": "29.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "r/LivelyWallpaper - Reddit",
+      "url": "https://www.reddit.com/r/LivelyWallpaper/",
+      "snippet": "Free and open-source software that allows setting animated desktop wallpapers and screensavers. https://livelywallpaper.net"
+    },
+    {
+      "title": "is lively wallpaper safe? : r/antivirus - Reddit",
+      "url": "https://www.reddit.com/r/antivirus/comments/mc73ov/is_lively_wallpaper_safe/",
+      "snippet": "But, I turned on lively I was using the wallpaper, right. No crap obviously but then the next day I woke up turned on my computer. I …"
+    },
+    {
+      "title": "win11系统怎么把mp4形式的视频设置为动态壁纸？ - 知乎",
+      "url": "https://www.zhihu.com/question/616022434/answers/updated",
+      "snippet": "Aug 7, 2023 · 动态壁纸是不支持MP4格式的，所以需要借助壁纸软件或者把它转换成GIF，再设置为壁纸。 下面我把需要用到的壁纸 …"
+    },
+    {
+      "title": "朋友说wallpaper关掉还能显示壁纸，如何反驳? - 知乎",
+      "url": "https://www.zhihu.com/question/514598158",
+      "snippet": "而如果我直接结束上级这个叫Lively Wallpaper的进程，动态壁纸理所当然会消失。 至于wallpaper的进程结构是怎么样的我其实是不清 …"
+    },
+    {
+      "title": "桌面动态壁纸软件 Lively Wallpaper v2.2.1.0 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-2091544-1-1.html",
+      "snippet": "Feb 11, 2026 · 发布原因：由于前面大佬发布的主题自动关闭，不再接受新的回复，故更新新版本需要重新开帖。工具简介：免费且开 …"
+    }
+  ]
+}

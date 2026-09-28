@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Sachin903/llama-3.2-1b-creative-writing-ablated",
+  "slug": "sachin903-llama-3-2-1b-creative-writing-ablated",
+  "author": "Sachin903",
+  "url": "https://huggingface.co/Sachin903/llama-3.2-1b-creative-writing-ablated",
+  "created_at": "2026-09-27T20:09:37.000Z",
+  "updated_at": "2026-09-27T20:57:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "base_model:meta-llama/Llama-3.2-1B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-1B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814400,
+  "parameters_human": "1.24B",
+  "storage_bytes": 2488855707,
+  "storage_human": "2.5 GB",
+  "base_model": "meta-llama/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rule 34 - Reddit",
+      "url": "https://www.reddit.com/r/rule34/?feedViewType=cardView",
+      "snippet": "Not all porn is rule 34. Doing rule34 of someone only you or a few people know is not okay to post here. Making your own OC …Read more"
+    },
+    {
+      "title": "If it exists, there is gay porn of it. No exceptions. - Reddit",
+      "url": "https://www.reddit.com/r/rule34gay/",
+      "snippet": "Rule 34 with non-heterosexual fucking. If it wouldn't be well-recieved on /r/Rule34, post it here!"
+    },
+    {
+      "title": "One Piece Hentai ~ <3 - Reddit",
+      "url": "https://www.reddit.com/r/funpiece/",
+      "snippet": "r/funpiece: This is a subreddit for one piece porn, hentai, and rule 34."
+    },
+    {
+      "title": "Rule 34 - Reddit",
+      "url": "https://www.reddit.com/r/Rule_34/top/",
+      "snippet": "r/Rule_34: Rule34 Porn Definition \"If it exists, there is porn of it. No exceptions.\""
+    },
+    {
+      "title": "Rule 34 - Reddit",
+      "url": "https://www.reddit.com/r/Rule_34/",
+      "snippet": "Rule34 Porn Definition \"If it exists, there is porn of it. No exceptions.\""
+    }
+  ]
+}

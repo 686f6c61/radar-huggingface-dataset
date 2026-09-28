@@ -5,7 +5,7 @@
   "author": "shiyuxie",
   "url": "https://huggingface.co/shiyuxie/crispr-kinetics-hpv16",
   "created_at": "2026-09-27T16:09:47.000Z",
-  "updated_at": "2026-09-27T16:59:31.000Z",
+  "updated_at": "2026-09-28T00:14:33.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1404282,
-  "storage_human": "1 MB",
+  "storage_bytes": 7873426,
+  "storage_human": "8 MB",
   "base_model": null,
   "formats": [
     "safetensors"

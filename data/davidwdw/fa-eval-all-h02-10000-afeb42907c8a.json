@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-eval-all-h02-10000-afeb42907c8a",
+  "slug": "davidwdw-fa-eval-all-h02-10000-afeb42907c8a",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-eval-all-h02-10000-afeb42907c8a",
+  "created_at": "2026-09-27T22:55:37.000Z",
+  "updated_at": "2026-09-27T22:55:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117181558,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "davidwdw/fa-h08-attnfix-eval-8500-72f480f18a3e - Hugging Face",
+      "url": "https://huggingface.co/datasets/davidwdw/fa-h08-attnfix-eval-8500-72f480f18a3e",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "eVAL",
+      "url": "https://www.eval-wa.org/",
+      "snippet": "eVAL is an evaluation tool used by Washington educators, offering intuitive, secure, and authentic feedback practices."
+    },
+    {
+      "title": "maltego/top100Kenglishwords.txt at master - GitHub",
+      "url": "https://github.com/michenriksen/maltego/blob/master/top100Kenglishwords.txt",
+      "snippet": "Custom Maltego transforms. Contribute to michenriksen/maltego development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - EleutherAI/lm-evaluation-harness: A framework for few-shot ...",
+      "url": "https://github.com/EleutherAI/lm-evaluation-harness",
+      "snippet": "Language Model Evaluation Harness Latest News 📣 [2026/09] Plugins: model backends, filters, metrics and aggregations can now be registered from your own package instead of forking — declare an lm_eval.* entry point for zero-config discovery, or point --plugins at a local module. See the Plugin Guide."
+    },
+    {
+      "title": "David AI | High-Quality Audio Datasets for Speech & Conversational AI",
+      "url": "https://www.withdavid.ai/",
+      "snippet": "David AI is an audio data research company - trusted by top AI labs to develop the proprietary audio datasets that power their models."
+    }
+  ]
+}

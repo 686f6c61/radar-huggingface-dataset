@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qwen3.5-4B-MTP-Heretic-GGUF",
   "created_at": "2026-09-26T18:27:22.000Z",
-  "updated_at": "2026-09-26T18:52:06.000Z",
+  "updated_at": "2026-09-27T05:23:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 230,
   "trending_score": 0,
   "parameters": 4326350848,
   "parameters_human": "4.33B",

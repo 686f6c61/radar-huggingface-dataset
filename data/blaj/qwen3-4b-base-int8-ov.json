@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "blaj/Qwen3-4B-Base-int8-ov",
+  "slug": "blaj-qwen3-4b-base-int8-ov",
+  "author": "blaj",
+  "url": "https://huggingface.co/blaj/Qwen3-4B-Base-int8-ov",
+  "created_at": "2026-09-27T20:51:31.000Z",
+  "updated_at": "2026-09-27T21:11:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3",
+    "int8",
+    "base-model",
+    "dflash",
+    "intel",
+    "arc",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4037860811,
+  "storage_human": "4.0 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenVINO/Qwen3-4B-int8-ov · Hugging Face",
+      "url": "https://huggingface.co/OpenVINO/Qwen3-4B-int8-ov",
+      "snippet": "This is Qwen3-4B model converted to the OpenVINO™ IR (Intermediate Representation) format with weights compressed to INT8 by NNCF. Quantization Parameters Weight compression was performed using nncf.compress_weights with the following parameters: mode: INT8_ASYM For more information on quantization, check the OpenVINO model optimization guide."
+    },
+    {
+      "title": "Qwen/Qwen3-4B-Base · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-4B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b",
+      "snippet": "Qwen3-4B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑4B is a state‑of‑the‑art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen3-4B-Base: Open-Source 4B LLM with 32K Context & Multilingual ...",
+      "url": "https://dev.co/ai/llms/qwen3-4b-base",
+      "snippet": "Qwen3-4B-Base is a 4-billion-parameter base language model from Qwen, designed for text generation and conversational tasks. It is pre-trained on 36 trillion tokens across 119 languages with support for 32k-token context length."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_4b/README.md at ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_4b/README.md",
+      "snippet": "The Qwen3-4B is a state-of-the-art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. This is based on the implementation of Qwen3-4B found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be ..."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Shoxrux3012/Testmodel",
+  "slug": "shoxrux3012-testmodel",
+  "author": "Shoxrux3012",
+  "url": "https://huggingface.co/Shoxrux3012/Testmodel",
+  "created_at": "2026-09-28T00:09:04.000Z",
+  "updated_at": "2026-09-28T00:09:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

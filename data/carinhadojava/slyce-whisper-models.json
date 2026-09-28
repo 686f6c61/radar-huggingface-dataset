@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "CarinhadoJava/slyce-whisper-models",
+  "slug": "carinhadojava-slyce-whisper-models",
+  "author": "CarinhadoJava",
+  "url": "https://huggingface.co/CarinhadoJava/slyce-whisper-models",
+  "created_at": "2026-09-27T20:40:15.000Z",
+  "updated_at": "2026-09-27T20:40:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "whisper",
+    "sherpa-onnx",
+    "speech-recognition",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1673518222,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper [Blog] [Paper] [Model card] [Colab example] Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=whisper",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Whisper · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/whisper",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Which Whisper Model Should I Choose?",
+      "url": "https://whisper-api.com/blog/models/",
+      "snippet": "Compare every Whisper model — tiny, base, small, medium, large-v1, large-v2, large-v3 — and learn which to pick for accuracy, speed, and cost."
+    },
+    {
+      "title": "Whisper (speech recognition system) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Whisper_(speech_recognition_system)",
+      "snippet": "Whisper is a machine learning model for speech recognition and transcription, created by OpenAI and first released as open-source software in September 2022. [4] It is capable of transcribing speech in English and multiple other languages, and can translate several non-English languages into English. [1] Whisper is a weakly-supervised deep learning acoustic model, made using an encoder-decoder ..."
+    }
+  ]
+}

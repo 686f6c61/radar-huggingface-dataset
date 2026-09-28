@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "chmujahid12619/Chief",
+  "slug": "chmujahid12619-chief",
+  "author": "chmujahid12619",
+  "url": "https://huggingface.co/chmujahid12619/Chief",
+  "created_at": "2026-09-28T01:01:39.000Z",
+  "updated_at": "2026-09-28T03:15:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chief AI - Generative AI for Precision Medicine",
+      "url": "https://chief.ai/",
+      "snippet": "Chief.AI elevates your data and generates novel AI models and algorithms to enable precision medicine and personalised treatments."
+    },
+    {
+      "title": "GitHub - hms-dbmi/CHIEF: Clinical Histopathology Imaging Evaluation ...",
+      "url": "https://github.com/hms-dbmi/CHIEF",
+      "snippet": "To address this challenge, we devised the Clinical Histopathology Imaging Evaluation Foundation (CHIEF) model, a general-purpose weakly supervised machine learning framework to extract pathology imaging features for systematic cancer evaluation."
+    },
+    {
+      "title": "Meta&#x27;s AI chief Alexandr Wang teases the company&#x27;s most capable model yet",
+      "url": "https://cryptobriefing.com/meta-alexandr-wang-advanced-ai-model/",
+      "snippet": "Alexandr Wang, Meta Platforms &#x27; Chief AI Officer, announced that the company will soon release its most capable AI model to date. The declaration signals an escalation in Meta&#x27;s AI ambitions under Wang&#x27;s leadership, positioning the social media giant for a more direct confrontation with OpenAI, Anthropic, and Google in the frontier model ..."
+    },
+    {
+      "title": "chmujahid12619-spec · GitHub",
+      "url": "https://github.com/chmujahid12619-spec",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "AI foundation model predicts cancer diagnosis, prognosis",
+      "url": "https://www.techtarget.com/healthtechanalytics/news/366610259/AI-foundation-model-predicts-cancer-diagnosis-prognosis",
+      "snippet": "The model -- Clinical Histopathology Imaging Evaluation Foundation (CHIEF) -- was designed to address current gaps plaguing AI tools for cancer diagnosis. These approaches are typically built to perform specific tasks, like predicting the genetic profile of a tumor or detecting cancer presence, but often only work for certain cancer types."
+    }
+  ]
+}

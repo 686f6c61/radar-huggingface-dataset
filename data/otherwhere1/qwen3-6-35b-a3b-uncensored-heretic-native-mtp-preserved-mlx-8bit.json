@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "otherwhere1/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-mlx-8Bit",
+  "slug": "otherwhere1-qwen3-6-35b-a3b-uncensored-heretic-native-mtp-preserved-mlx-8bit",
+  "author": "otherwhere1",
+  "url": "https://huggingface.co/otherwhere1/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-mlx-8Bit",
+  "created_at": "2026-09-27T21:30:12.000Z",
+  "updated_at": "2026-09-27T21:30:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "qwen3_5",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "mpoa",
+    "mtp",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "base_model:llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved",
+    "base_model:quantized:llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660608768,
+  "parameters_human": "34.66B",
+  "storage_bytes": 36848211886,
+  "storage_human": "36.8 GB",
+  "base_model": "llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le Mot - Wordle en français",
+      "url": "https://wordle.louan.me/",
+      "snippet": "Devinez le mot du jour ! Totalement gratuit, en ligne, et sans pub."
+    },
+    {
+      "title": "Le Mot | Le meilleur Wordle Français",
+      "url": "https://lemot.fr/",
+      "snippet": "Jouez Wordle en français avec des mots de 4, 5 et 6 lettres. Créez un défi personnalisé pour un ami ou jouez Wordle illimité."
+    },
+    {
+      "title": "Le Mot Illimité | Wordle sans limites en français",
+      "url": "https://lemot.fr/illimite",
+      "snippet": "Jouez autant de tours que vous voulez. Testez vos compétences en français et relevez le défi sans limite."
+    },
+    {
+      "title": "Définitions : mot - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/mot/52767",
+      "snippet": "1. Élément de la langue composé d'un ou de plusieurs phonèmes, susceptible d'une transcription écrite individualisée et participant …"
+    },
+    {
+      "title": "Dictionnaire français gratuit – Dico en ligne Le Robert",
+      "url": "http://dictionnaire.lerobert.com/",
+      "snippet": "Dico en ligne Le Robert est un dictionnaire numérique gratuit, rédigé par des experts et régulièrement mis à jour, conçu pour tous les …"
+    }
+  ]
+}

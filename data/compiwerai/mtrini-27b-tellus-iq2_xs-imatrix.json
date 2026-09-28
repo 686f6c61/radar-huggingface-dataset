@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CompiwerAI/Mtrini-27B-Tellus-IQ2_XS-Imatrix",
+  "slug": "compiwerai-mtrini-27b-tellus-iq2_xs-imatrix",
+  "author": "CompiwerAI",
+  "url": "https://huggingface.co/CompiwerAI/Mtrini-27B-Tellus-IQ2_XS-Imatrix",
+  "created_at": "2026-09-27T20:42:40.000Z",
+  "updated_at": "2026-09-27T20:47:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "imatrix",
+    "quantization",
+    "llama.cpp",
+    "qwen",
+    "mtrini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13642688,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CompiwerAI/Mtrini-27B-Tellus · Hugging Face",
+      "url": "https://huggingface.co/CompiwerAI/Mtrini-27B-Tellus",
+      "snippet": "Instructions to use CompiwerAI/Mtrini-27B-Tellus with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use CompiwerAI/Mtrini-27B-Tellus with PEFT:"
+    },
+    {
+      "title": "CompiwerAI/Mtrini-Tellus-1.0 · Hugging Face",
+      "url": "https://huggingface.co/CompiwerAI/Mtrini-Tellus-1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Compiwer AI (@compiwer_ai) / X",
+      "url": "https://x.com/compiwer_ai",
+      "snippet": "🚨 MTRINI TELLUS 12B — SAHARA 2 IS LIVE. 🧠 12B 🔬 Continued training of Gemma 4 12B 🇲🇦 Moroccan Darija 💻 Coding + reasoning ⚙️ LoRA/PEFT adapter ⚠️ Early checkpoint."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    }
+  ]
+}

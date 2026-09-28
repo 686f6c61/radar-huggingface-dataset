@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "EloaurdiMustapha/marchespublics-sft2",
+  "slug": "eloaurdimustapha-marchespublics-sft2",
+  "author": "EloaurdiMustapha",
+  "url": "https://huggingface.co/EloaurdiMustapha/marchespublics-sft2",
+  "created_at": "2026-09-28T00:07:48.000Z",
+  "updated_at": "2026-09-28T00:09:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 6326844352,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.co.uk: Nvme Ssd",
+      "url": "https://www.amazon.co.uk/nvme-ssd/s?k=nvme+ssd",
+      "snippet": "Shop reliable NVMe SSDs in various capacities. Boost your system performance with cutting-edge storage technology from trusted …"
+    },
+    {
+      "title": "Amazon.co.uk: Nvme",
+      "url": "https://www.amazon.co.uk/nvme/s?k=nvme",
+      "snippet": "Explore fast NVMe storage solutions with Gen4 and Gen5 speeds. Shop reliable internal SSDs for laptops and desktops."
+    },
+    {
+      "title": "Amazon.com: NVMe SSD",
+      "url": "https://www.amazon.com/NVMe-SSD/s?k=NVMe+SSD",
+      "snippet": "Experience lightning-fast read/write speeds with the latest NVMe SSD technology. Discover high-capacity options for gaming, video …"
+    },
+    {
+      "title": "Amazon.fr : Nvme",
+      "url": "https://www.amazon.fr/nvme/s?k=nvme",
+      "snippet": "Découvrez un large choix de SSD NVMe en différentes capacités et générations PCIe, compatibles avec ordinateurs portables, de …"
+    },
+    {
+      "title": "Amazon.com: Ssd Nvme",
+      "url": "https://www.amazon.com/ssd-nvme/s?k=ssd+nvme",
+      "snippet": "Unlock the full potential of your system with cutting-edge NVMe SSDs. Explore a diverse range of capacities and advanced features …"
+    }
+  ]
+}

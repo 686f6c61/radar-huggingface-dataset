@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "minagayid/ELLM",
+  "slug": "minagayid-ellm",
+  "author": "minagayid",
+  "url": "https://huggingface.co/minagayid/ELLM",
+  "created_at": "2026-09-27T19:50:34.000Z",
+  "updated_at": "2026-09-27T23:11:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:2005.11401",
+    "arxiv:2310.01798",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3717656,
+  "storage_human": "4 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "minagayid (minagayid) · GitHub",
+      "url": "https://github.com/minagayid",
+      "snippet": "Research and file-based workflows Output evaluation, model capabilities, and limitations Responsible AI review and human-in-the-loop decision points Outcome: completed seven Anthropic Academy credentials, including Building with the Claude API, AI Fluency for Builders, Claude 101, AI Capabilities and Limitations, and Introduction to Claude Cowork."
+    },
+    {
+      "title": "GitHub - lucienhuangfu/eLLM: eLLM: Run Long-Horizon Inference Faster on ...",
+      "url": "https://github.com/lucienhuangfu/eLLM",
+      "snippet": "eLLM is an LLM inference framework for CPU servers. It adopts a \"trade storage for computation\" strategy, leveraging the CPU&#x27;s large-capacity DDR memory to close the order-of-magnitude bandwidth gap against GPU HBM, and thereby delivers performance that surpasses GPUs in long-horizon inference. Prefill: achieves roughly two orders of magnitude of performance improvement over existing CPU ..."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Model Rankings",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    }
+  ]
+}

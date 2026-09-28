@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "almutairisen/generation-run3",
+  "slug": "almutairisen-generation-run3",
+  "author": "almutairisen",
+  "url": "https://huggingface.co/almutairisen/generation-run3",
+  "created_at": "2026-09-28T01:37:54.000Z",
+  "updated_at": "2026-09-28T01:37:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CNEWS | Actualités, Infos et News en direct vidéo et replay",
+      "url": "https://www.cnews.fr/",
+      "snippet": "Le site de la chaîne d’information en continu CNEWS. Monde, politique, faits divers, sport, culture, people… Reportages en vidéo, le …"
+    },
+    {
+      "title": "Le Direct | CNEWS",
+      "url": "https://www.cnews.fr/le-direct",
+      "snippet": "UFC : l’incroyable victoire d’un combattant, policier dans la vie, contre un ex-détenu (vidéo)"
+    },
+    {
+      "title": "Météo France : Prévisions à 15 Jours pour les Villes et Régions",
+      "url": "https://meteo.cnews.fr/",
+      "snippet": "France - Prévisions météo à 15 jours pour les plus grandes villes : Températures, conditions et tendances dans tout le pays."
+    },
+    {
+      "title": "LES REPLAYS - CNEWS",
+      "url": "https://www.cnews.fr/les-replays",
+      "snippet": "Sep 21, 2026 · Regardez les replays des émissions et actualités de CNEWS, disponibles en vidéo à tout moment."
+    },
+    {
+      "title": "Mots Fléchés : jouer en ligne gratuitement - CNEWS",
+      "url": "https://www.cnews.fr/jeux/mots-fleches",
+      "snippet": "Mots Fléchés Jouez gratuitement en ligne aux mots fléchés sur cnews.fr. Chaque jour, retrouvez une nouvelle grille inédite. Autres …"
+    }
+  ]
+}

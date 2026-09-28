@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ji-farthing/RalphQwen3.8-Flash-Next-GGUF",
+  "slug": "ji-farthing-ralphqwen3-8-flash-next-gguf",
+  "author": "ji-farthing",
+  "url": "https://huggingface.co/ji-farthing/RalphQwen3.8-Flash-Next-GGUF",
+  "created_at": "2026-09-27T23:32:42.000Z",
+  "updated_at": "2026-09-27T23:32:57.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ik_llama",
+    "qwen4exp",
+    "test-fixture",
+    "tiny",
+    "text-generation",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 193015448,
+  "parameters_human": "193.0M",
+  "storage_bytes": 783013472,
+  "storage_human": "783 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "J.I. - Everything [Official Music Video] - YouTube",
+      "url": "https://www.youtube.com/watch?v=98nAsMYucv8",
+      "snippet": "May 18, 2021 · “Hood Life Krisis Vol. 3” out now: https://smarturl.it/HLK3 Follow J.I: http://ji.lnk.to/Bandsintown / iamj.i / i_am_j_i …Read more"
+    },
+    {
+      "title": "Ji — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ji",
+      "snippet": "Le Ji est un ancien tributaire du fleuve Jaune, devenu partie aval de ce dernier en 1852 (dont le cours changea de direction), …Read more"
+    },
+    {
+      "title": "Définition de ji | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/ji",
+      "snippet": "May 10, 2024 · Définitions de « ji » Ji - Nom commun J, j : Dixième lettre de l'alphabet latin et septième des consonnes.Read more"
+    },
+    {
+      "title": "JI Grégale 300 | Joris Ide France",
+      "url": "https://www.joriside.com/fr-fr/presentation-des-produits-joris-ide/nos-produits/facade/lames/ji-gregale-300--056",
+      "snippet": "La lame JI Grégale 300 est un système d’habillage de façade rapportée,d’aspect plan,à fixations cachées. Elle s’utilise aussi bien en …Read more"
+    },
+    {
+      "title": "-ji - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/-ji",
+      "snippet": "Ji is gender-neutral and can be used for as a term of respect for person, relationships or inanimate objects as well. Its usage is …Read more"
+    }
+  ]
+}

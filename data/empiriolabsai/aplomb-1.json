@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "empiriolabsai/aplomb-1",
+  "slug": "empiriolabsai-aplomb-1",
+  "author": "empiriolabsai",
+  "url": "https://huggingface.co/empiriolabsai/aplomb-1",
+  "created_at": "2026-09-27T21:22:04.000Z",
+  "updated_at": "2026-09-27T21:34:23.000Z",
+  "license": "empiriolabs-model-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "decision-model",
+    "classification",
+    "calibrated-probabilities",
+    "zero-shot-classification",
+    "multimodal",
+    "vision",
+    "video",
+    "tool-selection",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35952084848,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71924338221,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": true,
+  "removed_at": "2026-09-28T03:26:58.434Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aplomb 1 Omni API: Pricing, Playground & Docs | EmpirioLabs AI",
+      "url": "https://empiriolabs.ai/models/aplomb-1-omni",
+      "snippet": "Call the Aplomb 1 Omni API on EmpirioLabs AI: live pricing, quickstart code, parameters, and a browser playground. Decision model that listens as well as sees: answers..."
+    },
+    {
+      "title": "Aplomb 1 Omni - EmpirioLabs AI Docs",
+      "url": "https://docs.empiriolabs.ai/models/aplomb-1-omni",
+      "snippet": "Decision model that listens as well as sees: answers yes or no, choice, score, and tool questions about calls, voice notes, sounds, and music, plus text, images, and video."
+    },
+    {
+      "title": "Aplomb 1 Omni API, Playground & Pricing | EmpirioLabs AI",
+      "url": "https://platform.empiriolabs.ai/dashboard/playground?model=aplomb-1-omni",
+      "snippet": "Aplomb 1 Omni API, playground, docs, and pricing on EmpirioLabs. Decision model that listens as well as sees: answers yes or no, choice, score, and tool..."
+    },
+    {
+      "title": "EmpirioLabs AI",
+      "url": "https://empiriolabs.ai/",
+      "snippet": "Specialized AI model hosting for open, proprietary, and custom stacks: hosted open models, optimized proprietary endpoints, and turnkey deployment to real users."
+    },
+    {
+      "title": "empiriolabsai (EmpirioLabs AI) - Hugging Face",
+      "url": "https://huggingface.co/empiriolabsai/models",
+      "snippet": "Org profile for EmpirioLabs AI on Hugging Face, the AI community building the future."
+    }
+  ]
+}

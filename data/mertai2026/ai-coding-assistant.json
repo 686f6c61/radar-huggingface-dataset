@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Mertai2026/AI-Coding-Assistant",
+  "slug": "mertai2026-ai-coding-assistant",
+  "author": "Mertai2026",
+  "url": "https://huggingface.co/Mertai2026/AI-Coding-Assistant",
+  "created_at": "2026-09-27T20:52:28.000Z",
+  "updated_at": "2026-09-27T20:52:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best AI Coding Tools and Developer Assistants 2026",
+      "url": "https://automationatlas.io/rankings/best-ai-coding-tools-2026/",
+      "snippet": "Best AI coding tools 2026, re-scored June 2026: Claude Code, Cursor, GitHub Copilot, Codex, Aider, Windsurf. AI coding assistants and agents only."
+    },
+    {
+      "title": "Best AI Coding Assistants in 2026: 10 Tools Tested & Ranked",
+      "url": "https://whatif-ai.com/articles/best-ai-coding-assistants-2026",
+      "snippet": "We tested 10 AI coding assistants in 2026 on real projects. See rankings, comparison tables, and which tool fits your stack. Find yours now."
+    },
+    {
+      "title": "Best AI Coding Assistants (2026): 13 Tools Tested",
+      "url": "https://vibecoding.app/blog/ai-coding-assistant-tools-guide",
+      "snippet": "We tested 13 AI coding assistants in 2026. Cursor, Claude Code, Copilot, Junie, Windsurf, Cline, Codex, Trae, and more, with honest pricing and trade-offs."
+    },
+    {
+      "title": "Best AI Coding Assistants in 2026: Ranked",
+      "url": "https://aiintelreport.com/ai-agents/best-ai-coding-assistants-2026",
+      "snippet": "The best AI coding assistants in 2026, ranked and tested: Cursor, Claude Code, GitHub Copilot, Codex, Windsurf and more — with honest pricing and trade-offs."
+    },
+    {
+      "title": "Best AI Coding Tools 2026: 7 Tested [Ranked] - tech-insider.org",
+      "url": "https://tech-insider.org/ai-coding-tools-2026-transforming-software-development/",
+      "snippet": "We tested 7 AI coding tools head-to-head: GitHub Copilot, Cursor, Codeium, Amazon Q. One tool wrote 80% of code correctly. Full benchmarks."
+    }
+  ]
+}

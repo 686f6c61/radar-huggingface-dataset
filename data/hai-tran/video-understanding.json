@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hai-tran/video-understanding",
+  "slug": "hai-tran-video-understanding",
+  "author": "hai-tran",
+  "url": "https://huggingface.co/hai-tran/video-understanding",
+  "created_at": "2026-09-28T01:16:41.000Z",
+  "updated_at": "2026-09-28T01:16:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définition de haï | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/hai",
+      "snippet": "Mar 1, 2024 · Définition de haï : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « haï »"
+    },
+    {
+      "title": "Haï : Définition simple et facile du dictionnaire",
+      "url": "https://www.linternaute.fr/dictionnaire/fr/definition/hai/",
+      "snippet": "Mise à jour le 18/08/26 Définition Synonyme Citations Mots croisés hai , mot de 3 lettres"
+    },
+    {
+      "title": "Haï — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ha%C3%AF",
+      "snippet": "Haï symbole sur les médailles des Maccabiades. Le Het étant considéré comme l'équivalent du Hêta grec, il est rendu en français …"
+    },
+    {
+      "title": "HAI ou FAI : tout comprendre des frais appliqués aux ventes ... - Deuz",
+      "url": "https://www.deuz.biz/hai-fai-immobilier/",
+      "snippet": "Jun 7, 2021 · FAI ou HAI en immobilier sont des sigles qui ont une importance particulière. En effet, ils correspondent à des frais ou …"
+    },
+    {
+      "title": "Définitions : haïr - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/ha%C3%AFr/38857",
+      "snippet": "haïr - Définitions Français : Retrouvez la définition de haïr, mais également la conjugaison de haïr, ainsi que les synonymes, …"
+    }
+  ]
+}

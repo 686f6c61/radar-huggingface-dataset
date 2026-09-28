@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "winterthurquants/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+  "slug": "winterthurquants-gemma-4-12b-agentic-fable5-composer2-5-v2-3-5x-tau2-gguf",
+  "author": "winterthurquants",
+  "url": "https://huggingface.co/winterthurquants/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+  "created_at": "2026-09-27T21:29:16.000Z",
+  "updated_at": "2026-09-27T21:29:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "coding",
+    "agentic",
+    "terminal",
+    "tool-use",
+    "reasoning",
+    "thinking",
+    "llama.cpp",
+    "local-llm",
+    "text-generation",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 38112283520,
+  "storage_human": "38.1 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.fr : livres, DVD, jeux vidéo, musique, high-tech, informatique ...",
+      "url": "https://www.amazon.fr/",
+      "snippet": "Amazon Essentials Tee Shirt Moulant Stretch sans Manches Léger Active Quick Dry Homme, Blanc Vif, XXL"
+    },
+    {
+      "title": "Amazon.fr: books, DVDs, video games, music, high-tech, computers, …",
+      "url": "https://www.cdn.amazon.fr/-/en/",
+      "snippet": "Buy and sell online from millions of products in stock. Free delivery for orders over €25. Your items at low prices: culture, high-tech, …"
+    },
+    {
+      "title": "Amazon.com. Spend less. Smile more.",
+      "url": "https://www.amazon.com/",
+      "snippet": "Amazon Fire TV Stick 4K Plus (newest model) with AI-powered Fire TV Search, Wi-Fi 6, stream hundreds of thousands of movies …"
+    },
+    {
+      "title": "Amazon.fr : : Toutes les catégories",
+      "url": "https://www.amazon.fr/b?node=14864804031",
+      "snippet": "Conditions générales de vente Vos informations personnelles Cookies Annonces basées sur vos centres d’intérêt © 1996-2026, …"
+    },
+    {
+      "title": "Amazon.com",
+      "url": "https://www.amazon.com/your-account",
+      "snippet": "Manage your Amazon account settings, orders, payments, and preferences for a personalized shopping experience."
+    }
+  ]
+}

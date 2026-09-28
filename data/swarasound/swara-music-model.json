@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SwaraSound/swara-music-model",
+  "slug": "swarasound-swara-music-model",
+  "author": "SwaraSound",
+  "url": "https://huggingface.co/SwaraSound/swara-music-model",
+  "created_at": "2026-09-27T19:18:21.000Z",
+  "updated_at": "2026-09-27T19:18:28.000Z",
+  "license": "stability-ai-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "audio",
+    "text-to-audio",
+    "music-generation",
+    "stable-audio",
+    "q4",
+    "matmulnbits",
+    "transformers.js",
+    "onnxruntime-web",
+    "base_model:stabilityai/stable-audio-3-small-music",
+    "base_model:quantized:stabilityai/stable-audio-3-small-music",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 682554103,
+  "storage_human": "683 MB",
+  "base_model": "stabilityai/stable-audio-3-small-music",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Swara Sound - bring your own key AI music studio",
+      "url": "https://swarasound.com/",
+      "snippet": "Swara Sound: create music with Suno, Mureka or your own ACE-Step RunPod. Your API keys, your Google Drive, your library - no shared backend, no lock-in."
+    },
+    {
+      "title": "GitHub - azmth-Labs/Swara---music-AI",
+      "url": "https://github.com/azmth-Labs/Swara---music-AI",
+      "snippet": "This tutorial covers: mental models and design philosophy, model architecture and selection, input control (text and audio), inference hyperparameters, random factors and optimization strategies."
+    },
+    {
+      "title": "Swara.AI - Advanced Audio & Singing Research",
+      "url": "https://swara.ai/",
+      "snippet": "Our Mission At Swara.AI, we&#x27;re on a mission to revolutionize how people interact with audio and singing technologies. Founded by a team of musicians and AI researchers, we combine cutting-edge artificial intelligence with deep musical knowledge to create innovative solutions for singers, musicians, and audio professionals. Our name \"Swara\" comes from the Sanskrit word for musical note ..."
+    },
+    {
+      "title": "Music Arena - Top AI Music Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/music/arena",
+      "snippet": "Compare AI music generation models by choosing your preferred audio without knowing the provider."
+    },
+    {
+      "title": "Swara - Ashwin Madavan",
+      "url": "https://madavan.me/projects/swara.html",
+      "snippet": "Swara is the South Indian word for a musical note. It&#x27;s an appropriate name for a musical machine learning project that attempts to imitate the legends of South Indian music, who leverage their vast and varied musical experiences to extemporaneously produce profoundly intricate sequences of swaras."
+    }
+  ]
+}

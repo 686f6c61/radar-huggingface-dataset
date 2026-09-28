@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "utcompliance1/distilbert-imr-baseline",
+  "slug": "utcompliance1-distilbert-imr-baseline",
+  "author": "utcompliance1",
+  "url": "https://huggingface.co/utcompliance1/distilbert-imr-baseline",
+  "created_at": "2026-09-27T20:26:43.000Z",
+  "updated_at": "2026-09-27T20:27:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DistilBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/distilbert",
+      "snippet": "DistilBERT is pretrained by knowledge distillation to create a smaller model with faster inference and requires less compute to train. Through a triple loss objective during pretraining, language modeling loss, distillation loss, cosine-distance loss, DistilBERT demonstrates similar performance to a larger transformer language model."
+    },
+    {
+      "title": "utcompliance1 (UT Complaince) - Hugging Face",
+      "url": "https://huggingface.co/utcompliance1/datasets",
+      "snippet": "User profile of UT Complaince on Hugging Face"
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/distilbert.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/distilbert.md",
+      "snippet": "DistilBERT is pretrained by knowledge distillation to create a smaller model with faster inference and requires less compute to train. Through a triple loss objective during pretraining, language modeling loss, distillation loss, cosine-distance loss, DistilBERT demonstrates similar performance to a larger transformer language model. You can find all the original DistilBERT checkpoints under ..."
+    },
+    {
+      "title": "DistilBERT in Natural Language Processing - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/distilbert-in-natural-language-processing/",
+      "snippet": "DistilBERT is a lightweight version of BERT (Bidirectional Encoder Representations from Transformers) developed by Hugging Face using knowledge distillation. It retains most of BERT&#x27;s language understanding capabilities while reducing model size, memory usage, and computational requirements, making it suitable for resource-constrained devices ..."
+    },
+    {
+      "title": "transformers/src/transformers/models/distilbert/modeling_distilbert.py ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/src/transformers/models/distilbert/modeling_distilbert.py",
+      "snippet": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. - transformers/src/transformers/models/distilbert/modeling_distilbert.py at main · huggingface/transformers"
+    }
+  ]
+}

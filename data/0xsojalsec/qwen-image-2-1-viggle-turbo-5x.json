@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/Qwen-Image-2.1-viggle-turbo-5x",
+  "slug": "0xsojalsec-qwen-image-2-1-viggle-turbo-5x",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/Qwen-Image-2.1-viggle-turbo-5x",
+  "created_at": "2026-09-27T19:35:39.000Z",
+  "updated_at": "2026-09-27T19:35:40.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "lora",
+    "text-to-image",
+    "image-to-image",
+    "image-editing",
+    "distillation",
+    "dmd",
+    "turbo",
+    "few-step",
+    "qwen-image",
+    "comfyui",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 24779432817,
+  "storage_human": "24.8 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Viggle/Qwen-Image-2.1-viggle-turbo · Hugging Face",
+      "url": "https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "chfm/Qwen-Image-2.1-viggle-turbo · Hugging Face",
+      "url": "https://huggingface.co/chfm/Qwen-Image-2.1-viggle-turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen&#x27;s most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
+    },
+    {
+      "title": "Qwen-Image-2.1-viggle-turbo Image Generation Model: 48GB+ VRAM",
+      "url": "https://localmodelwatch.tsuchitsuchi.com/en/2026/09/23/qwen-image-2-1-viggle-turbo-v0-1-preview/",
+      "snippet": "Values determined by this site&#x27;s code at collection time. Dates are JST. Overview Viggle has released the v0.1 preview of \"Viggle/Qwen-Image-2.1-viggle-turbo\", a distilled model based on Qwen/Qwen-Image-2.1. This model is a \"student\" model trained using Distribution Matching Distillation (DMD), and supports both text-to-image generation and instruction-driven image editing using 1 to 3 ..."
+    },
+    {
+      "title": "Qwen-Image-2.1-viggle-turbo · Models",
+      "url": "https://www.modelscope.cn/models/Viggle/Qwen-Image-2.1-viggle-turbo",
+      "snippet": "Qwen-Image-2.1-viggle-turbo - Viggle 在 ModelScope 开源的模型。"
+    }
+  ]
+}

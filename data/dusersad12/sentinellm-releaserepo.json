@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dusersad12/SentinelLM-ReleaseRepo",
+  "slug": "dusersad12-sentinellm-releaserepo",
+  "author": "dusersad12",
+  "url": "https://huggingface.co/dusersad12/SentinelLM-ReleaseRepo",
+  "created_at": "2026-09-27T20:10:53.000Z",
+  "updated_at": "2026-09-27T20:11:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "sentinel",
+    "text-generation",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29,
+  "storage_human": "29 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dusersad12/LuminaLM-ReleaseRepo · Hugging Face",
+      "url": "https://huggingface.co/dusersad12/LuminaLM-ReleaseRepo",
+      "snippet": "The model posts strong results across a wide range of benchmark evaluations, including mathematics, programming, and general logic. Its overall performance now sits close to several other leading models. Compared to the previous version, the upgraded model shows significant improvements in handling complex reasoning tasks."
+    },
+    {
+      "title": "dusersad12 (sdawd) - Hugging Face",
+      "url": "https://huggingface.co/dusersad12/datasets",
+      "snippet": "Sort: Recently updated. dusersad12/verl-deepscaler-cleaned. Viewer • Updated 11 minutes ago • 39.1k. dusersad12/verl_deepscaler. Viewer • Updated about 3 hours ago • 402"
+    },
+    {
+      "title": "GitHub - mephisto65/SentineLLM: SentineLLM is a tool allowing you to ...",
+      "url": "https://github.com/mephisto65/SentineLLM/tree/main",
+      "snippet": "SentineLLM SentineLLM is a tool allowing you to test the robustness of the most popular LLMs (Claude,deepseek,Mistral,ChatGPT) against jailbreaking attacks."
+    },
+    {
+      "title": "GitHub - richsundev/sentinellm · GitHub",
+      "url": "https://github.com/richsundev/sentinellm",
+      "snippet": "Autonomous LLM Reliability, Evaluation, Observability & Optimization Platform SentinelLLM is a platform for running LLM applications reliably — not just calling a model, but knowing whether the answer was any good, whether it hallucinated, whether retrieval helped, which model should have handled the request, why a deployment regressed, and what it all cost. It receives LLM traces (either ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    }
+  ]
+}

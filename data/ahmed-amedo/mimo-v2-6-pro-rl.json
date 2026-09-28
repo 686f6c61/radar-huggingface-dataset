@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "ahmed-amedo/MiMo-V2.6-Pro-RL",
+  "slug": "ahmed-amedo-mimo-v2-6-pro-rl",
+  "author": "ahmed-amedo",
+  "url": "https://huggingface.co/ahmed-amedo/MiMo-V2.6-Pro-RL",
+  "created_at": "2026-09-27T19:25:02.000Z",
+  "updated_at": "2026-09-27T19:25:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mimo_v2",
+    "text-generation",
+    "multimodal",
+    "vision-language",
+    "audio",
+    "agent",
+    "video-understanding",
+    "long-context",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1024216603392,
+  "parameters_human": "1024.22B",
+  "storage_bytes": 573487452634,
+  "storage_human": "573.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prénom Ahmed (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/ahmed/prenom-5770",
+      "snippet": "Quelle est la signification du prénom Ahmed ? Ce prénom est inspiré du terme arabe ahmad qui signifie \"digne d'éloges\". Ahmed …Read more"
+    },
+    {
+      "title": "Ahmed — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ahmed",
+      "snippet": "Prénom Ahmad et Ahmed (en arabe : احمد) sont des prénoms masculins arabes signifiant « celui qui reçoit des louanges » 1. Ils …Read more"
+    },
+    {
+      "title": "Prénom Ahmed : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/ahmed-34023",
+      "snippet": "En arabe, Ahmed vient du terme “ahmad” qui signifie “digne d'éloges”. Ahmed est un prénom ancien, cité dans le Coran comme …Read more"
+    },
+    {
+      "title": "Signification du Prénom Ahmed",
+      "url": "https://monprenom.net/ahmed/",
+      "snippet": "Ahmed est un prénom d'origine arabe. Il signifie \"le plus fort, le plus grand\". Il est utilisé par les musulmans comme nom de louange …Read more"
+    },
+    {
+      "title": "Ahmad - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ahmad",
+      "snippet": "Ahmed is the most common variant transliteration, used especially in the context of the Ottoman Empire. This transliteration is also …Read more"
+    }
+  ]
+}

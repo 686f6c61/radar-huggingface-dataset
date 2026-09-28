@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "K-9-labs/damma-aibrain",
+  "slug": "k-9-labs-damma-aibrain",
+  "author": "K-9-labs",
+  "url": "https://huggingface.co/K-9-labs/damma-aibrain",
+  "created_at": "2026-09-27T22:11:14.000Z",
+  "updated_at": "2026-09-27T22:12:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 5940232064,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Transilien ligne K : plan, arrêts et horaires en temps réel",
+      "url": "https://www.bonjour-ratp.fr/lignes-transilien/ligne-k/",
+      "snippet": "La ligne K du Transilien relie les gares de Paris-Nord à Crépy-en-Valois. Cette ligne dessert 10 gares et 13 communes réparties sur …"
+    },
+    {
+      "title": "K - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/K",
+      "snippet": "K (minuscule: k) is the eleventh letter of the Latin alphabet, used in the modern English alphabet, the alphabets of other western …"
+    },
+    {
+      "title": "Ligne K du Transilien : plan, horaires, gares | SNCF Connect",
+      "url": "https://www.sncf-connect.com/ile-de-france/transilien/ligne-k",
+      "snippet": "Découvrez la ligne K du Transilien : retrouvez son plan, ses correspondances, ainsi que les horaires en temps réel et quelques …"
+    },
+    {
+      "title": "Ligne K | Transilien",
+      "url": "https://www.transilien.com/fr/page-lignes/ligne-k",
+      "snippet": "Retrouvez les horaires, services, équipements disponibles dans les gares Transilien de la Ligne K. Consultez les horaires des …"
+    },
+    {
+      "title": "Bus K - Île-de-France Mobilités - Paris Île-de-France | Horaires",
+      "url": "https://transitapp.com/fr/region/paris-%C3%AEle-de-france/%C3%AEle-de-france-mobilit%C3%A9s/bus-k",
+      "snippet": "Sep 28, 2026 · Le tracé du trajet montre une vue d'ensemble de tous les arrêts desservis par le bus K (Île-de-France Mobilités) pour …"
+    }
+  ]
+}

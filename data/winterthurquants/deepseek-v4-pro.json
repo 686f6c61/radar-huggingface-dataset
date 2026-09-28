@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "winterthurquants/DeepSeek-V4-Pro",
+  "slug": "winterthurquants-deepseek-v4-pro",
+  "author": "winterthurquants",
+  "url": "https://huggingface.co/winterthurquants/DeepSeek-V4-Pro",
+  "created_at": "2026-09-27T20:34:27.000Z",
+  "updated_at": "2026-09-27T20:34:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "arxiv:2606.19348",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1598839674782,
+  "parameters_human": "1598.84B",
+  "storage_bytes": 864733335782,
+  "storage_human": "864.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Pro · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek-V4-Pro | Advanced AI Model for Reasoning & Code",
+      "url": "https://deepseeksr1.com/v4-pro/",
+      "snippet": "DeepSeek-V4-Pro delivers state-of-the-art reasoning, coding & multimodal capabilities. Access via API or enterprise deployment. Benchmark-leading performance."
+    },
+    {
+      "title": "DeepSeek-V4-Pro · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/deepseek-ai/DeepSeek-V4-Pro",
+      "snippet": "DeepSeek-V4-Pro - An open-source model by deepseek-ai on ModelScope."
+    },
+    {
+      "title": "DeepSeek V4 Pro — Architecture, Evals & Inference Performance",
+      "url": "https://inferencex.semianalysis.com/model/deepseek-v4",
+      "snippet": "DeepSeek-V4-Pro is the flagship open-weights Mixture-of-Experts (MoE) language model of the DeepSeek-V4 series from DeepSeek-AI, with 1.6T total parameters and 49B activated per token and a native 1M-token context length (DeepSeek-V4-Pro model card)."
+    },
+    {
+      "title": "DeepSeek-V4 Pro · Models · The Open-Source AI Stack",
+      "url": "https://www.open-source-ai.tech/models/deepseek-v4-pro",
+      "snippet": "First V4-generation flagship, released April 24 2026 with a 1.6T-parameter MoE activating 49B per token. Combines Compressed Sparse Attention and Heavily Compressed Attention to cut single-token inference FLOPs to 27 percent of V3.2 and KV cache to 10 percent. 1M context is now the DeepSeek default. V4-Flash (284B / 13B active) shipped alongside."
+    }
+  ]
+}

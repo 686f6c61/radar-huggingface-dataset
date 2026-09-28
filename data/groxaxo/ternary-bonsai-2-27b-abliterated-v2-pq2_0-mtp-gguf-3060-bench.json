@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "groxaxo/Ternary-Bonsai-2-27B-Abliterated-v2-PQ2_0-MTP-GGUF-3060-bench",
+  "slug": "groxaxo-ternary-bonsai-2-27b-abliterated-v2-pq2_0-mtp-gguf-3060-bench",
+  "author": "groxaxo",
+  "url": "https://huggingface.co/groxaxo/Ternary-Bonsai-2-27B-Abliterated-v2-PQ2_0-MTP-GGUF-3060-bench",
+  "created_at": "2026-09-27T22:09:25.000Z",
+  "updated_at": "2026-09-27T22:13:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "mtp",
+    "speculative-decoding",
+    "abliterated",
+    "bonsai",
+    "ternary",
+    "benchmark",
+    "text-generation",
+    "base_model:BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-v2-PQ2_0-MTP-GGUF",
+    "base_model:quantized:BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-v2-PQ2_0-MTP-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 7657489696,
+  "storage_human": "7.7 GB",
+  "base_model": "BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-v2-PQ2_0-MTP-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Avis sur Amazon - Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/29089-avis-sur-amazon",
+      "snippet": "Apr 23, 2016 · Bonjour, Je viens vers vous car j'aimerai avoir votre avis concernant le site Amazon.fr, ne connaissant pas vraiment le …"
+    },
+    {
+      "title": "Amazon Haul : notre test révèle de sérieux problèmes de conformité",
+      "url": "https://www.60millions-mag.com/commerce/article/amazon-haul-la-foire-aux-produits-non-conformes-20260506/",
+      "snippet": "May 6, 2026 · Amazon Haul : notre test révèle de sérieux problèmes de conformité Des milliers d’objets sont vendus quelques euros …"
+    },
+    {
+      "title": "Nintendo „Plauderblume“ aktuell günstiger bei Amazon",
+      "url": "https://www.dvd-forum.at/nintendo-plauderblume-aktuell-guenstiger-bei-amazon",
+      "snippet": "Mar 11, 2026 · Bei Amazon gibt es aktuell ein kleines Angebot für Nintendo-Fans: Die Nintendo Plauderblume ist derzeit für 26,99 € …"
+    },
+    {
+      "title": "Amazon startet die „Blockbuster Days“ mit starken Filmdeals",
+      "url": "https://www.dvd-forum.at/amazon-startet-die-blockbuster-days-mit-starken-filmdeals",
+      "snippet": "Jan 26, 2026 · Filmfans aufgepasst: Bei Amazon laufen aktuell wieder die beliebten Blockbuster Days. Gemeinsam mit Plaion …"
+    },
+    {
+      "title": "Amazon Prime Deal Days 2026: Über eine Million Angebote am 6.",
+      "url": "https://www.dvd-forum.at/amazon-prime-deal-days-2026-ueber-eine-million-angebote-am-6-und-7-oktober",
+      "snippet": "Sep 15, 2026 · Die Amazon Prime Deal Days kehren im Oktober zurück. Am 6. und 7. Oktober 2026 erhalten Prime-Mitglieder für 48 …"
+    }
+  ]
+}

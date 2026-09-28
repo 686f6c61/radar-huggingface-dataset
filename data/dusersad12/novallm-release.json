@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dusersad12/NovaLLM-Release",
+  "slug": "dusersad12-novallm-release",
+  "author": "dusersad12",
+  "url": "https://huggingface.co/dusersad12/NovaLLM-Release",
+  "created_at": "2026-09-27T19:35:59.000Z",
+  "updated_at": "2026-09-27T19:36:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Plexytrade | Forex, Stocks, Indices, Commodities",
+      "url": "https://www.plexytrade.com/",
+      "snippet": "Why Choose Plexytrade? Plexytrade has decades of accumulated experience offering the best trading products and conditions."
+    },
+    {
+      "title": "Login to your account - Plexytrade",
+      "url": "https://my.plexytrade.com/en/login",
+      "snippet": "Not registered with Plexytrade? Open Live Account Open Demo Account To see how we use your data, please review our Privacy …"
+    },
+    {
+      "title": "Forex Trading | Plexytrade",
+      "url": "https://www.plexytrade.com/markets/forex/",
+      "snippet": "Enjoy Plexytrade MT5 platform benefits along with the mobile trading extras via smartphones and tablets, iOS and Android. Trade on …"
+    },
+    {
+      "title": "Register - Plexytrade",
+      "url": "https://my.plexytrade.com/en/register",
+      "snippet": "Create your Forex trading account today. Start trading on the world's leading currency markets with fast registration and secure access."
+    },
+    {
+      "title": "Read Customer Service Reviews of plexytrade.com - Trustpilot",
+      "url": "https://www.trustpilot.com/review/plexytrade.com",
+      "snippet": "Plexytrade delivers an exceptional trading environment designed to meet the diverse needs of every trader. We offer various account …"
+    }
+  ]
+}

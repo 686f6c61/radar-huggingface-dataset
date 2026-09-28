@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ziqima/LoGo",
+  "slug": "ziqima-logo",
+  "author": "ziqima",
+  "url": "https://huggingface.co/ziqima/LoGo",
+  "created_at": "2026-09-27T04:18:03.000Z",
+  "updated_at": "2026-09-27T21:53:21.000Z",
+  "license": "base-model-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "world-model",
+    "video-generation",
+    "camera-control",
+    "reinforcement-learning",
+    "lora",
+    "image-to-video",
+    "dataset:ziqima/TrajectoryBench",
+    "base_model:Drexubery/UniView",
+    "base_model:adapter:Drexubery/UniView",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1486774290,
+  "storage_human": "1.5 GB",
+  "base_model": "nvidia/Lyra-2.0, robbyant/lingbot-world-v2-14b-causal-fast, Drexubery/UniView",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Créateur de Logo IA - Gratuit à utiliser",
+      "url": "https://duckduckgo.com/y.js?ad_domain=design.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=Z30oiZBgzN%2D91hfGc1Bh9t%2DW4hJYhJspXlYSO8oo83aTXw4sKBKOJ5aSfU%2DKEtCsQ8C1hy7OqJYRhxVmzu0BID75iIKXGIVRK6kuXqo7f3MKj1Q7WPhM31QsOX5JFgaC5feIkQBz24eES_0BR0IptYjASoosvqDs9cc2zduqGqk.dK_%2Dr4Hr5wF%2D6LozvWIiBw&rut=27a8f1dd38c72e9b7e170359e68f17ef408a34ddfe01cd1d002becbed33409a5&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De85djaEDHEKWpmclBBeZ3oCjVUCUwPa_flzPsbT%2DSozChL_mW0YqZBSKccPgqC2m58T86iK2_dzi9GIVucpDaOml0mb8gze8EDUkfYmBunCEQSb4VlQ0d%2DTq9leWcGstG5saN0FaQ16mYpdIbuKr6vnY4mmWpGUKp1TkM00XEgg0_NVtWTUFjq3KQxnNxBehWBFZJLONcKekv6DMmFbreYn5Maz%2Dg%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuZGVzaWduLmNvbSUyZmZyLWZyJTJmY3JlYXRldXItZGUtbG9nb3MlM2Zjb2RlJTNkMjVPRkZTRU0lMjZ1dG1fYWRncm91cCUzZGxvZ28lMjZ1dG1fa2V5d29yZCUzZGNyJWMzJWE5YXRpb24lMjUyMGxvZ28lMjZ1dG1fbmV0d29yayUzZHMlMjZtc2Nsa2lkJTNkZGQ3OWY4MWJiMjNlMWJmYzVhYzQ5MmEyMjkxOWNkOTMlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RFdXJvcGUlMjUyMCUyNTNBJTI1MjAlMjUyMFNlcnZpY2VzJTI1MjAlMjUzQSUyNTIwTG9nbyUyNTIwTWFrZXIlMjUyMCUyNTVCRnJlbmNoJTI1NUQlMjZ1dG1fdGVybSUzZGNyJWMzJWE5YXRpb24lMjUyMGxvZ28lMjZ1dG1fY29udGVudCUzZExvZ28%26rlid%3Ddd79f81bb23e1bfc5ac492a22919cd93&vqd=4-205500078460342776768298186450948789997&iurl=%7B1%7DIG%3DDF6208F4BD624F9D807E4BC5EF84E310%26CID%3D1C32358D15C667DD0AA9226C14E066DD%26ID%3DDevEx%2C5037.1",
+      "snippet": "Notre créateur de logo AI gratuit rend facile de donner vie à votre vision. Pas seulement un logo mais créez votre marque avec le créateur de logo AI de Design.com."
+    },
+    {
+      "title": "Free AI Logo Generator - Create Logos With AI",
+      "url": "https://duckduckgo.com/y.js?ad_domain=openart.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=bBmIsp7JB7TyogJ7AH2Jo97xFozSRNm0O8UCIiLQljT5F1QyKlDWUQJ8vaYeiNPEAQiDuA21Uxjz%2DgtFjqzYxpwoIJAlbsWakn2ZlZX0rR7xsLS8RqIhwRAJQRsy34GxuQHQCh25EoK8wz88JMmdQOCDwuBJeZtvrk3P4fiJ7VY.zOS9gdD1CGGxuoh6zVP2RQ&rut=a3e14efe131e40c37a3bb5efc891bd6a7acaeec0215981eff56ab845171ba9ad&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8vQLWwYw_vKZbZHMcy8%2DdjzVUCUxvdVjCkMcEh7IwiELRSIUmNrXZpAkp1pJv2tps%2DLgVBCrjltjUf87wtOMOm1sswmBltpZf26a5uNeO0oaPBQ7nrXMMBc6lV2IsTM8k6oxfCEHky1IBrrYPR_%2DRIFq5sT13eiNWIO6PYkW1BmXGSKbLFyTRlaXJjDKVafC49ngdibnpPBX2PUqgI6HSOo6leGc%26u%3DaHR0cHMlM2ElMmYlMmZvcGVuYXJ0LmFpJTJmZmVhdHVyZXMlMmZhaS1sb2dvLWdlbmVyYXRvciUyZiUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZHNlYXJjaC1nb29nbGUtZ2xvYmFsKHQxKV9zZWFyY2hfZmVhdHVyZXNfYWlfbWF4X2x0di1zZWFyY2gtYWNxLXdlYiUyNnV0bV9jb250ZW50JTNkQUlfbG9nb19nZW5lcmF0b3IlMjZ1dG1fdGVybSUzZGFpJTI1MjBsb2dvJTI1MjBnZW5lcmF0b3IlMjZ1dG1fY2FtcGFpZ24lM2RHbG9iYWwoVDEpX1NlYXJjaF9GZWF0dXJlc19BSV9NYXhfTFRWJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkcHBjJTI2dXRtX2lkJTNkNTcxNTkwMTY1JTI2aHNhX2FjYyUzZDk1NzQ1MDQ4MDAlMjZoc2FfY2FtJTNkMjM3MzQzMTM0NzAlMjZoc2FfZ3JwJTNkMTE3OTc3ODM0NzAxNjMyNyUyNmhzYV9hZCUzZCUyNmhzYV9zcmMlM2RzJTI2aHNhX3RndCUzZGt3ZC03MzczNjkxMjI0MTU1MiUzYWxvYy02NiUyNmhzYV9rdyUzZGFpJTI1MjBsb2dvJTI1MjBnZW5lcmF0b3IlMjZoc2FfbXQlM2RwJTI2aHNhX25ldCUzZGFkd29yZHMlMjZoc2FfdmVyJTNkMyUyNm1zY2xraWQlM2QxMTMxNDM4ZGRhMDMxMTg3YmRmMDI5MzQ0MTI0MDk3NiUyNnV0bV9jb250ZW50JTNkQUlfbG9nb19nZW5lcmF0b3I%26rlid%3D1131438dda031187bdf0293441240976&vqd=4-952210065948544051018034890310401144&iurl=%7B1%7DIG%3DDF6208F4BD624F9D807E4BC5EF84E310%26CID%3D1C32358D15C667DD0AA9226C14E066DD%26ID%3DDevEx%2C5042.1",
+      "snippet": "Create custom logo ideas from a prompt or reference image. Start designing for free. Turn your brand idea into a custom logo for your business, product, channel, or campaign."
+    },
+    {
+      "title": "ziqima (Ziqi) - Hugging Face",
+      "url": "https://huggingface.co/ziqima",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 2 months ago ... published a dataset about 2 months ago"
+    },
+    {
+      "title": "ziqima (Ziqi) - Hugging Face",
+      "url": "https://huggingface.co/ziqima/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 2 hours ago ... published a dataset 2 days ago"
+    },
+    {
+      "title": "AI Logo Generator - Design.com",
+      "url": "https://www.design.com/ai-logo-generator",
+      "snippet": "1. World&#x27;s largest AI-powered logo library Explore over 453,000+ logos generated and refined using Design.com&#x27;s AI logo generator — the largest and most diverse AI-driven logo library in the world, spanning every style and industry."
+    }
+  ]
+}

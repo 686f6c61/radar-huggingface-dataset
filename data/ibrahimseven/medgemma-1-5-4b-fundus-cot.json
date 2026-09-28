@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "IbrahimSeven/medgemma-1.5-4b-fundus-cot",
+  "slug": "ibrahimseven-medgemma-1-5-4b-fundus-cot",
+  "author": "IbrahimSeven",
+  "url": "https://huggingface.co/IbrahimSeven/medgemma-1.5-4b-fundus-cot",
+  "created_at": "2026-09-27T17:20:13.000Z",
+  "updated_at": "2026-09-28T00:04:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 8638351650,
+  "storage_human": "8.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voyeur House TV – # FREE Source for hidden real life cams",
+      "url": "https://voyeur-house.tv/",
+      "snippet": "Hundreds of hidden real life cams streaming 24/7 at Voyeur House TV - Watch exposed private life in HD quality for free with no …"
+    },
+    {
+      "title": "Watch videos for free at Voyeur House HD videos - Unlimited gallery …",
+      "url": "https://voyeur-house.tv/moments",
+      "snippet": "Voyeur House HD videos - Unlimited gallery of the hottest scenes"
+    },
+    {
+      "title": "Voyeur-House.TV Helpdesk",
+      "url": "https://help.voyeur-house.tv/",
+      "snippet": "customer support platform Welcome to the Support Center Need help with your account, access, payments, archive, or technical …"
+    },
+    {
+      "title": "Login - Voyeur-House.TV",
+      "url": "https://users.voyeur-house.tv/",
+      "snippet": "Reallifecam videos for free Best webcam videos Real Life Cam videos for free Home cam videos Hidden cam videos Free spy cam …"
+    },
+    {
+      "title": "Moments2 - Voyeur House",
+      "url": "https://moments2.voyeur-house.tv/login",
+      "snippet": "Remember me Forgot your password? Log in"
+    }
+  ]
+}

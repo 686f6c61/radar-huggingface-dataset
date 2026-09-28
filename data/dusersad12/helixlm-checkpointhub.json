@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dusersad12/HelixLM-CheckpointHub",
+  "slug": "dusersad12-helixlm-checkpointhub",
+  "author": "dusersad12",
+  "url": "https://huggingface.co/dusersad12/HelixLM-CheckpointHub",
+  "created_at": "2026-09-27T20:06:49.000Z",
+  "updated_at": "2026-09-27T20:07:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "helixlm",
+    "text-generation",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36,
+  "storage_human": "36 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - david-thrower/HelixLM: HelixLM - a recurrent heterogeneous ...",
+      "url": "https://github.com/david-thrower/HelixLM",
+      "snippet": "HelixLM - a recurrent heterogeneous graph neural LLM combining biological neural column random wiring, hybrid attention, and Mamba-2 for hyperpersonalized and on-device AI. - david-thrower/HelixLM"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - david-thrower/HelixLM: HelixLM - a recurrent heterogeneous ...",
+      "url": "https://github.com/david-thrower/HelixLM/tree/main",
+      "snippet": "HelixLM: Recurrent Heterogeneous Graph Neural Language Model Why \"Helix\"? A helix coils back on itself — just as our recurrent graph reuses its weights across depth iterations, refining understanding with each loop. Biological, elegant, memorable."
+    },
+    {
+      "title": "dusersad12/BestCheckpoint-Demo · Hugging Face",
+      "url": "https://huggingface.co/dusersad12/BestCheckpoint-Demo",
+      "snippet": "dusersad12 / BestCheckpoint-Demo like 0 Text Classification Transformers Safetensors roberta License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Checkpoint AI Models (141) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 141 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    }
+  ]
+}

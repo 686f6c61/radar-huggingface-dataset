@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "CZend371/xlm-roberta-base-finetuned-panx-de-fr",
+  "slug": "czend371-xlm-roberta-base-finetuned-panx-de-fr",
+  "author": "CZend371",
+  "url": "https://huggingface.co/CZend371/xlm-roberta-base-finetuned-panx-de-fr",
+  "created_at": "2026-09-28T00:49:16.000Z",
+  "updated_at": "2026-09-28T00:58:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277459208,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1132018604,
+  "storage_human": "1.1 GB",
+  "base_model": "xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …Read more"
+    },
+    {
+      "title": "Télécharger et utiliser Google Traduction",
+      "url": "https://support.google.com/translate/answer/6350850?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Télécharger et utiliser Google Traduction Vous pouvez traduire du texte saisi au clavier, en écriture manuscrite, sur une photo ou …Read more"
+    },
+    {
+      "title": "Lung Cancer Essay - bartleby",
+      "url": "https://www.bartleby.com/topics/Lung-Cancer-Essay",
+      "snippet": "Jun 14, 2012 · Lung Cancer: Awareness & Prevention Lung cancer is the leading cause of cancer deaths among men and women in …Read more"
+    },
+    {
+      "title": "Suicide Essay - bartleby",
+      "url": "https://www.bartleby.com/topics/Suicide-Essay",
+      "snippet": "leading method of suicide around the world and is particularly popular in rural area. and the most common in the world. Although …Read more"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …Read more"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sukh0i57/fake-news-distilbert",
+  "slug": "sukh0i57-fake-news-distilbert",
+  "author": "sukh0i57",
+  "url": "https://huggingface.co/sukh0i57/fake-news-distilbert",
+  "created_at": "2026-09-27T21:17:58.000Z",
+  "updated_at": "2026-09-27T21:29:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RamaAI/fake-news-distilbert · Hugging Face",
+      "url": "https://huggingface.co/RamaAI/fake-news-distilbert",
+      "snippet": "Fake News Detector This project detects fake news using a fine-tuned DistilBERT model."
+    },
+    {
+      "title": "sumukhi/fake-news-distilbert · Hugging Face",
+      "url": "https://huggingface.co/sumukhi/fake-news-distilbert",
+      "snippet": "No model card New: Create and edit this model card directly on the website!"
+    },
+    {
+      "title": "GitHub - Emanmsl/Fake_news_Detection",
+      "url": "https://github.com/Emanmsl/Fake_news_Detection",
+      "snippet": "This project fine-tunes a pretrained DistilBERT model for binary sequence classification, distinguishing fake political news articles from authentic ones. The pipeline covers the full path from raw CSV text to a trained model: loading and cleaning the source data, tokenizing article text, training the classifier with a custom PyTorch training loop, and evaluating it on a held-out test split."
+    },
+    {
+      "title": "GitHub - sanchitdangi/Fake_News_Detection: AI-powered fake news ...",
+      "url": "https://github.com/sanchitdangi/Fake_News_Detection",
+      "snippet": "AI-Powered Fake News Detection using Text Classification An advanced Machine Learning and Natural Language Processing (NLP) project that classifies news claims and articles as Real (Reliable) or Fake (Unreliable). This project establishes baseline TF-IDF + traditional classifiers (Logistic Regression, KNN, Random Forest, Neural Network/MLP), fine-tunes a DistilBERT sequence classification ..."
+    },
+    {
+      "title": "Transforming Fake News Detection: Leveraging DistilBERT Models for ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1877050925009470",
+      "snippet": "The analysis unequivocally demonstrates that integrating DistilBERT significantly enhances model performance, ensuring highly accurate identification of fake news. Figs. 3 (a) and 3 (b) show the graphs for training and validation loss, demonstrating a steady decline in loss across all DistilBERT models."
+    }
+  ]
+}

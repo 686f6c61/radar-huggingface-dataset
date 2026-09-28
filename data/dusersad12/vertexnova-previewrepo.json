@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dusersad12/VertexNova-PreviewRepo",
+  "slug": "dusersad12-vertexnova-previewrepo",
+  "author": "dusersad12",
+  "url": "https://huggingface.co/dusersad12/VertexNova-PreviewRepo",
+  "created_at": "2026-09-27T19:22:12.000Z",
+  "updated_at": "2026-09-27T19:22:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "gemma",
+    "feature-extraction",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37,
+  "storage_human": "37 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dusersad12 (sdawd) - Hugging Face",
+      "url": "https://huggingface.co/dusersad12/datasets",
+      "snippet": "Sort: Recently updated. dusersad12/verl-deepscaler-cleaned. Viewer • Updated 11 minutes ago • 39.1k. dusersad12/verl_deepscaler. Viewer • Updated about 3 hours ago • 402"
+    },
+    {
+      "title": "vertexnova - GitHub",
+      "url": "https://github.com/vertexnova",
+      "snippet": "The VertexNova I/O library (vneio) provides modular, production-ready asset loading and exporting for 3D meshes, 2D images, 3D medical volumes, and DICOM series."
+    },
+    {
+      "title": "VertexNova WebGPU Samples",
+      "url": "https://vertexnova.github.io/",
+      "snippet": "Live WebGPU samples from the VertexNova rendering engine — running in the browser via WebAssembly."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model Garden on Gemini Enterprise Agent Platform",
+      "url": "https://cloud.google.com/model-garden",
+      "snippet": "Discover, customize, and deploy AI models from Google & partners using Gemini Enterprise Agent Platform (formerly Vertex AI)."
+    }
+  ]
+}

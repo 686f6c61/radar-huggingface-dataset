@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "authoy6788/bangla-fake-news-detector",
+  "slug": "authoy6788-bangla-fake-news-detector",
+  "author": "authoy6788",
+  "url": "https://huggingface.co/authoy6788/bangla-fake-news-detector",
+  "created_at": "2026-09-27T20:17:08.000Z",
+  "updated_at": "2026-09-27T20:53:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "electra",
+    "text-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110618882,
+  "parameters_human": "110.6M",
+  "storage_bytes": 553905846,
+  "storage_human": "554 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - habibaalam/Bangla-Fake-News-Detection",
+      "url": "https://github.com/habibaalam/Bangla-Fake-News-Detection",
+      "snippet": "Due to the rapid spread of misinformation on social media and online platforms, this system aims to assist users in verifying the authenticity of Bangla news content. The application provides predictions using multiple models and shows both individual model results and an overall confidence score."
+    },
+    {
+      "title": "GitHub - Srizon49/Bangla-Fake-News-Detection",
+      "url": "https://github.com/Srizon49/Bangla-Fake-News-Detection",
+      "snippet": "Fake news has become a major problem in digital media and social networking platforms. Bangla-speaking users are increasingly exposed to misleading, fabricated, and false information. The goal of this project is to develop an automated machine learning system that can analyze Bangla news text and predict whether the news is likely to be real or ..."
+    },
+    {
+      "title": "NUHASHROXME/bangla-fake-news-interpretable · Hugging Face",
+      "url": "https://huggingface.co/NUHASHROXME/bangla-fake-news-interpretable",
+      "snippet": "Discourse-Aware Psycholinguistic Bangla Fake News Detector This model combines BERT embeddings with psycholinguistic and discourse features for interpretable Bangla fake news detection."
+    },
+    {
+      "title": "Bangla Fake News Detector - a Hugging Face Space by antu01",
+      "url": "https://huggingface.co/spaces/antu01/bangla-fake-news-detector",
+      "snippet": "Bangla Fake News Detection using BanglaBERT + OCR Fusion Mod"
+    },
+    {
+      "title": "Anthropic&#x27;s September 2026 Threat Intelligence Report: AI Agents ...",
+      "url": "https://undercodetesting.com/anthropics-september-2026-threat-intelligence-report-ai-agents-rewrite-malware-build-zero-day-foundries-and-run-propaganda-networks-video/",
+      "snippet": "Introduction Anthropic&#x27;s latest Threat Intelligence Report, \"Detecting and Countering Misuse of AI: September 2026,\" released on 10 September, documents the most alarming shift in the AI threat landscape to date: the collapse of the technical barrier between elite state-sponsored hacking teams and lone operators. Between December 2025 and August 2026, Anthropic&#x27;s Threat Intelligence ..."
+    }
+  ]
+}

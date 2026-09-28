@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+  "slug": "xiaomimimo-mimo-v2-6-flash-mopd",
+  "author": "XiaomiMiMo",
+  "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+  "created_at": "2026-09-27T04:01:00.000Z",
+  "updated_at": "2026-09-27T16:59:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mimo_v2",
+    "text-generation",
+    "multimodal",
+    "vision-language",
+    "audio",
+    "agent",
+    "video-understanding",
+    "long-context",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 22,
+  "downloads_30d": 0,
+  "trending_score": 22,
+  "parameters": 310756322688,
+  "parameters_human": "310.76B",
+  "storage_bytes": 177753496517,
+  "storage_human": "177.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD · Hugging Face",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+      "snippet": "MOPD2 (👉 Technical Report §5.6) Fuses several domain-specialized teachers into one model, extending to domains where reliable training-time verification is hard, such as long-horizon game development, scientific research and embodied intelligence. Diagnosing and Mitigating Tool-Call Repetition in MiMo-V2.6 (👉 Technical Blog) An easy-to-overlook failure mode in which the model keeps ..."
+    },
+    {
+      "title": "MiMo-V2.6 | Xiaomi",
+      "url": "https://mimo.xiaomi.com/mimo-v2-6",
+      "snippet": "Today, we are releasing and open-sourcing the MiMo-V2.6 series. This marks a key step in our exploration of the RSI path: scaling RL compute on verifiable, complex tasks, so the model can continuously expand its capability frontier through exploration and feedback. The MiMo-V2.6 series includes two natively omnimodal models: MiMo-V2.6-Pro is our most capable model to date, while MiMo-V2.6 ..."
+    },
+    {
+      "title": "Xiaomi MiMo Home",
+      "url": "https://mimo.mi.com/models/en-US/mimo-v2.6-flash",
+      "snippet": "Subscribe Monthly or annual plans covering mimo-v2.6-pro, mimo-v2.6-flash and the full MiMo V2.5 model suite — significantly better value than pay-as-you-go at high usage volumes."
+    },
+    {
+      "title": "Xiaomi MiMo Home",
+      "url": "https://mimo.mi.com/",
+      "snippet": "Xiaomi MiMo Desktop Is Now Live The all-in-one AI desktop app for professionals—high-quality office work, design, coding, and multimodal creation."
+    },
+    {
+      "title": "XiaomiMiMo (Xiaomi MiMo) - Hugging Face",
+      "url": "https://huggingface.co/XiaomiMiMo",
+      "snippet": "Org profile for Xiaomi MiMo on Hugging Face, the AI community building the future."
+    }
+  ]
+}

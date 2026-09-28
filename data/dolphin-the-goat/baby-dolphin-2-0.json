@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dolphin-the-goat/baby-dolphin-2.0",
+  "slug": "dolphin-the-goat-baby-dolphin-2-0",
+  "author": "dolphin-the-goat",
+  "url": "https://huggingface.co/dolphin-the-goat/baby-dolphin-2.0",
+  "created_at": "2026-09-28T01:30:59.000Z",
+  "updated_at": "2026-09-28T01:31:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "phi",
+    "nlp",
+    "code",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2779683840,
+  "parameters_human": "2.78B",
+  "storage_bytes": 5559417400,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dolphin Emulator - GameCube/Wii games on PC",
+      "url": "https://dolphin-emu.org/",
+      "snippet": "Official website of Dolphin, the GameCube and Wii emulator. Download the latest version (5.0-8474) now or ask questions on our …Read more"
+    },
+    {
+      "title": "Robot Piscine Dolphin I Leader des robots de Piscine & entretien piscine",
+      "url": "https://www.maytronics.com/fr-fr/",
+      "snippet": "Jul 18, 2026 · Intelligents, faciles à manipuler, plug&play et robustes : les robots de piscine Dolphin vous offrent un nettoyage …Read more"
+    },
+    {
+      "title": "Dolphin Emulator - Download",
+      "url": "https://dolphin-emu.org/download/",
+      "snippet": "Download the latest version of the Dolphin Emulator (2609-3) from the official website.Read more"
+    },
+    {
+      "title": "Émulateur Dolphin - Télécharger",
+      "url": "https://fr.dolphin-emu.org/download/",
+      "snippet": "Téléchargez la dernière version de l'émulateur Dolphin (2609-5) depuis le site officiel.Read more"
+    },
+    {
+      "title": "Robot de piscine Dolphin : notre offre en ligne - Maytronics",
+      "url": "https://www.maytronics.com/fr-fr/store/",
+      "snippet": "Découvrez nos gammes de robot de piscine Dolphin en ligne et trouvez le robot qui est fait pour le nettoyage de votre piscine ! Fond, …Read more"
+    }
+  ]
+}

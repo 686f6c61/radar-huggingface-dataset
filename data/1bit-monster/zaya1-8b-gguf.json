@@ -5,7 +5,7 @@
   "author": "1bit-MONSTER",
   "url": "https://huggingface.co/1bit-MONSTER/ZAYA1-8B-GGUF",
   "created_at": "2026-09-26T09:45:18.000Z",
-  "updated_at": "2026-09-26T21:41:15.000Z",
+  "updated_at": "2026-09-27T14:33:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,12 +22,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 69,
   "trending_score": 0,
   "parameters": 8840233464,
   "parameters_human": "8.84B",
-  "storage_bytes": 23308012032,
-  "storage_human": "23.3 GB",
+  "storage_bytes": 46616024064,
+  "storage_human": "46.6 GB",
   "base_model": "Zyphra/ZAYA1-8B",
   "formats": [
     "gguf"

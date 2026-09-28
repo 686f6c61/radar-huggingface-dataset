@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "NaiveAI/Naive-N0.5-Flash-FP8",
+  "slug": "naiveai-naive-n0-5-flash-fp8",
+  "author": "NaiveAI",
+  "url": "https://huggingface.co/NaiveAI/Naive-N0.5-Flash-FP8",
+  "created_at": "2026-09-27T15:24:21.000Z",
+  "updated_at": "2026-09-27T19:14:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "naive_n05_flash",
+    "moe",
+    "code",
+    "long-context",
+    "ai-research",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "license:mit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 315106551969,
+  "storage_human": "315.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NaiveAI/Naive-N0.5-Flash · Hugging Face",
+      "url": "https://huggingface.co/NaiveAI/Naive-N0.5-Flash",
+      "snippet": "Introduction Naive-N0.5-Flash is an open-weight 309B MoE model with 15.5B active parameters, built for coding and AI R&D. It supports a native 1M-token context window through a hybrid of Sliding-Window Attention (SWA) and lightweight DeepSeek Sparse Attention (DSA), with no full-attention layers."
+    },
+    {
+      "title": "NaiveAI",
+      "url": "https://naive.ai/en/",
+      "snippet": "Naive-N0.5-Flash: Building Frontier AI with AI An open-weight 309B MoE model for coding and AI R&D, with native 1M context, no full attention, and AI-optimized inference up to 2,000 tokens/s."
+    },
+    {
+      "title": "NaiveAI-Labs / Naive-N0.5-Flash Public - GitHub",
+      "url": "https://github.com/NaiveAI-Labs/Naive-N0.5-Flash/tree/main",
+      "snippet": "Introduction Naive-N0.5-Flash is an open-weight 309B MoE model with 15.5B active parameters, built for coding and AI R&D. It supports a native 1M-token context window through a hybrid of Sliding-Window Attention (SWA) and lightweight DeepSeek Sparse Attention (DSA), with no full-attention layers."
+    },
+    {
+      "title": "NaiveAI open-sources Naive-N0.5-Flash: a 309B… · AGI Hunt",
+      "url": "https://agihunt.info/en/p/1a0e3e7adb50130d8be09165218",
+      "snippet": "NaiveAI has released and open-sourced (MIT license) Naive-N0.5-Flash, pitched as \"building frontier AI with AI\": Architecture: 309B MoE with 15."
+    },
+    {
+      "title": "Naive-N0.5-Flash/vocab.README.md at main · NaiveAI-Labs/Naive ... - GitHub",
+      "url": "https://github.com/NaiveAI-Labs/Naive-N0.5-Flash/blob/main/vocab.README.md",
+      "snippet": "Naive-N0.5-Flash is an open-weight 309B MoE model with 15.5B active parameters, built for coding and AI R&D. - NaiveAI-Labs/Naive-N0.5-Flash"
+    }
+  ]
+}

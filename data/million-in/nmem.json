@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "million-in/nmem",
+  "slug": "million-in-nmem",
+  "author": "million-in",
+  "url": "https://huggingface.co/million-in/nmem",
+  "created_at": "2026-09-23T02:05:29.000Z",
+  "updated_at": "2026-09-27T19:59:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2058385745,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maison de ventes aux enchères depuis 1928 - Paris, Nice, Bruxelles",
+      "url": "https://www.millon.com/",
+      "snippet": "Maison de ventes aux enchères - Paris, Bruxelles, Nice - 35 spécialités, des interlocuteurs en régions, estimations gratuites et …"
+    },
+    {
+      "title": "Million — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Million",
+      "snippet": "Dans le domaine financier, le terme « million » est fréquemment abrégé en mio, mm, ou mln. En France le million (10 6) peut s'écrire …"
+    },
+    {
+      "title": "Définitions : million - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/million/51492",
+      "snippet": "1. Mille fois mille : Un million d'habitants. 2. Million de francs : Gagner des millions. Il est riche à millions. 3. Nombre, quantité très …"
+    },
+    {
+      "title": "million - Définitions, synonymes, prononciation, exemples | Dico en ...",
+      "url": "https://dictionnaire.lerobert.com/definition/million",
+      "snippet": "définition Définition de million nom masculin Mille fois mille. Un million d'euros, d'unités monétaires. Être riche à millions."
+    },
+    {
+      "title": "Derniers tirages Loto®, EuroMillions - My Million, Keno ... - FDJ®",
+      "url": "https://www.fdj.fr/jeux-de-tirage/resultats?msockid=1c07790ebb3864633f456eefba3065a8",
+      "snippet": "Sep 28, 2026 · Vous avez manqué le dernier tirage LOTO®, Euro Millions-My Million® ou Joker+® ? Consultez tous les résultats des …"
+    }
+  ]
+}

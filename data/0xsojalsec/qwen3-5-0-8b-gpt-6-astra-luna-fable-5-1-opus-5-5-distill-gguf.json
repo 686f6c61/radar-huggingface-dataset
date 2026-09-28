@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-GGUF",
+  "slug": "0xsojalsec-qwen3-5-0-8b-gpt-6-astra-luna-fable-5-1-opus-5-5-distill-gguf",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-GGUF",
+  "created_at": "2026-09-27T19:46:49.000Z",
+  "updated_at": "2026-09-27T19:46:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 529293312,
+  "storage_human": "529 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "GPT-6 Astra vs Qwen3.5 0.8B: Release Comparison",
+      "url": "https://artificialanalysis.ai/models/releases/comparisons/gpt-6-astra-vs-qwen3-5-0-8b",
+      "snippet": "Comparison of the GPT-6 Astra and Qwen3.5 0.8B releases: 6 and 2 models respectively, each with different intelligence, performance, and pricing characteristics. Below is a comparison of the key metrics across all 8 models."
+    },
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "[AINews] Claude Opus 5.5, the new default model for AINews — and ...",
+      "url": "https://www.latent.space/p/ainews-claude-opus-55-the-new-default",
+      "snippet": "OpenAI made a valiant effort with GPT-6 Sol and Luna launching 50% lower than GPT-5.6, but with 17M views on the launch and counting, today was always going to belong to Claude Opus 5.5, \"the first model in our new Claude 5.5 family\" performing like \"Claude Fable 5.1 for most tasks, and costs 40% less to run than Opus 5.\""
+    },
+    {
+      "title": "Best Qwen 3.5 Models Ranked: Every Size, Every GPU, Every Quant",
+      "url": "https://insiderllm.com/guides/qwen-3-5-local-guide/",
+      "snippet": "Complete ranking of all Qwen 3.5 models from 0.8B to 397B. VRAM requirements, speed benchmarks, and which model to pick for your hardware."
+    }
+  ]
+}

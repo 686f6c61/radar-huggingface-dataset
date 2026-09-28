@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "TechnoBaptist/N_Wan_1.3b",
+  "slug": "technobaptist-n_wan_1-3b",
+  "author": "TechnoBaptist",
+  "url": "https://huggingface.co/TechnoBaptist/N_Wan_1.3b",
+  "created_at": "2026-09-27T22:47:21.000Z",
+  "updated_at": "2026-09-27T22:47:21.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "nsfw",
+    "base_model:Wan-AI/Wan2.1-T2V-1.3B",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-1.3B",
+    "license:creativeml-openrail-m",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 105359108304,
+  "storage_human": "105.4 GB",
+  "base_model": "Wan-AI/Wan2.1-T2V-1.3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wan2.1-T2V-1.3B · Models - modelscope.ai",
+      "url": "http://www.modelscope.ai/models/Wan-AI/Wan2.1-T2V-1.3B",
+      "snippet": "We employ our Wan-Bench framework to evaluate the performance of the T2V-1.3B model, with the results displayed in the table below. The results indicate that our smaller 1.3B model surpasses the overall metrics of larger open-source models, demonstrating the effectiveness of WanX2.1 &#x27;s architecture and the data construction pipeline."
+    },
+    {
+      "title": "GitHub - Wan-Video/Wan2.1: Wan: Open and Advanced Large-Scale Video ...",
+      "url": "https://github.com/Wan-Video/Wan2.1",
+      "snippet": "Phantom has developed a unified video generation framework for single and multi-subject references based on both Wan2.1-T2V-1.3B and Wan2.1-T2V-14B. Please refer to their examples. UniAnimate-DiT, based on Wan2.1-14B-I2V, has trained a Human image animation model and has open-sourced the inference and training code. Feel free to enjoy it!"
+    },
+    {
+      "title": "Wan AI: Leading AI Video Generation Model",
+      "url": "https://wan.video/",
+      "snippet": "Wan is an AI creative platform. It aims to lower the barrier to creative work using artificial intelligence, offering features like text-to-image, image-to-image, text-to-video, image-to-video, and image editing."
+    },
+    {
+      "title": "README.md · Wan-AI/Wan2.1-T2V-1.3B at main - Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B/blob/main/README.md",
+      "snippet": "We employ our Wan-Benchframework to evaluate the performance of the T2V-1.3B model, with the results displayed in the table below. The results indicate that our smaller 1.3B model surpasses the overall metrics of larger open-source models, demonstrating the effectiveness of WanX2.1&#x27;s architecture and the data construction pipeline."
+    },
+    {
+      "title": "Wan2.1-T2V-1.3B: Text-to-Video model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/wan2.1-t2v-1.3b-wan-ai",
+      "snippet": "Wan2.1-T2V-1.3B is a lightweight text-to-video generation model developed by Wan-AI that generates 480P videos from text prompts using a diffusion..."
+    }
+  ]
+}

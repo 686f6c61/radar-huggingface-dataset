@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "winterthurquants/deepseek-coder-5.7bmqa-base",
+  "slug": "winterthurquants-deepseek-coder-5-7bmqa-base",
+  "author": "winterthurquants",
+  "url": "https://huggingface.co/winterthurquants/deepseek-coder-5.7bmqa-base",
+  "created_at": "2026-09-27T20:48:47.000Z",
+  "updated_at": "2026-09-27T20:48:48.000Z",
+  "license": "deepseek",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llama",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11400751696,
+  "storage_human": "11.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Canva: Visual Suite for Everyone",
+      "url": "https://www.canva.com/?msockid=136713ec078368e32183040d064369fd",
+      "snippet": "Canva is a free-to-use online graphic design tool. Use it to create social media posts, presentations, posters, videos, logos and more."
+    },
+    {
+      "title": "Canva : Graphisme, IA, Photo & Vidéo | Canva France",
+      "url": "https://www.canva.com/fr_fr/?msockid=136713ec078368e32183040d064369fd",
+      "snippet": "Du design à la retouche photo, l’IA, la vidéo et le travail en équipe, Canva FR est votre partenaire créatif nº 1. CV, logo, affiche…"
+    },
+    {
+      "title": "Canva - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Canva",
+      "snippet": "The platform uses a drag-and-drop interface designed for its users without professional design training or experience. Canva …"
+    },
+    {
+      "title": "Login to your Canva account",
+      "url": "https://www.canva.com/login/?msockid=136713ec078368e32183040d064369fd",
+      "snippet": "Log in or sign up in seconds Use your email or another service to continue with Canva (it’s free)!"
+    },
+    {
+      "title": "Connexion à votre compte Canva",
+      "url": "https://www.canva.com/fr_fr/login/?msockid=136713ec078368e32183040d064369fd",
+      "snippet": "Connectez-vous ou créez un compte Utilisez votre e-mail ou un autre service pour continuer avec Canva (c’est gratuit) !"
+    }
+  ]
+}

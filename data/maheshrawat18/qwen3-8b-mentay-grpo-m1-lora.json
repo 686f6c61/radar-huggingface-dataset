@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "maheshrawat18/Qwen3-8B-mentay-grpo-m1-lora",
+  "slug": "maheshrawat18-qwen3-8b-mentay-grpo-m1-lora",
+  "author": "maheshrawat18",
+  "url": "https://huggingface.co/maheshrawat18/Qwen3-8B-mentay-grpo-m1-lora",
+  "created_at": "2026-09-27T20:17:32.000Z",
+  "updated_at": "2026-09-27T20:17:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:maheshrawat18/Qwen3-8B-mentay-grpo-aware-v3-merged",
+    "grpo",
+    "lora",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:2402.03300",
+    "base_model:maheshrawat18/Qwen3-8B-mentay-grpo-aware-v3-merged",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1758908027,
+  "storage_human": "1.8 GB",
+  "base_model": "maheshrawat18/Qwen3-8B-mentay-grpo-aware-v3-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-28T03:27:51.729Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maheshrawat18/Qwen3-8B-mentay-grpo-aware · Hugging Face",
+      "url": "https://huggingface.co/maheshrawat18/Qwen3-8B-mentay-grpo-aware",
+      "snippet": "maheshrawat18 / Qwen3-8B-mentay-grpo-aware Like 0 Transformers Safetensors English text-generation-inference unsloth qwen3 trl License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "maheshrawat18/Qwen3-8B-mentay-grpo-aware-merged · Hugging Face",
+      "url": "https://huggingface.co/maheshrawat18/Qwen3-8B-mentay-grpo-aware-merged",
+      "snippet": "Instructions to use maheshrawat18/Qwen3-8B-mentay-grpo-aware-merged with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "maheshrawat18/Qwen3-8B-mentay-grpo-aware-merged",
+      "url": "https://featherless.ai/models/maheshrawat18/Qwen3-8B-mentay-grpo-aware-merged",
+      "snippet": "Efficient Qwen3 Deployments: Users looking for a Qwen3-based model that benefits from optimized training for potentially faster iteration or lower resource consumption during fine-tuning."
+    },
+    {
+      "title": "maheshrawat18/Qwen3-8B-mentay-grpo-aware-v2-merged",
+      "url": "https://featherless.ai/models/maheshrawat18/Qwen3-8B-mentay-grpo-aware-v2-merged",
+      "snippet": "This model is suitable for applications requiring a capable 8B parameter language model, particularly where efficient training and deployment are beneficial. Its Qwen3 foundation suggests strong general-purpose language capabilities, making it adaptable for tasks such as text generation, summarization, question answering, and more, within its ..."
+    },
+    {
+      "title": "Qwen3 8b Mentay Grpo Lora A1 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/maheshrawat18/qwen3-8b-mentay-grpo-lora-a1",
+      "snippet": "Registry entry for model Qwen3 8b Mentay Grpo Lora A1; source metadata pending."
+    }
+  ]
+}

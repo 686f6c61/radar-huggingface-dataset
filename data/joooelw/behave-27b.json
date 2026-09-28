@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "joooelw/BEHAVE-27B",
+  "slug": "joooelw-behave-27b",
+  "author": "joooelw",
+  "url": "https://huggingface.co/joooelw/BEHAVE-27B",
+  "created_at": "2026-09-27T20:24:35.000Z",
+  "updated_at": "2026-09-27T20:26:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "behave",
+    "hardware-design",
+    "verilog",
+    "reinforcement-learning",
+    "grpo",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 53804920280,
+  "storage_human": "53.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B Benchmarks: every test where Alibaba&#x27;s 27B model beats ...",
+      "url": "https://regolo.ai/qwen3-8-27b-benchmarks-every-test-where-alibabas-27b-model-beats-claude-opus-4-6-max/",
+      "snippet": "Qwen3.8-27B outperforms Claude Opus 4.6 Max on 16 of the 24 benchmarks in its official model card, with its largest wins in agentic coding (SWE-bench Pro: 61.7 vs 53.4), instruction following (IFBench: 79.5 vs 62.5), and computer use (OSWorld-Verified: 84.3 vs 72.7). It still loses on pure knowledge reasoning, including Humanity&#x27;s Last Exam (30.8 vsContinue reading \"Qwen3.8-27B Benchmarks ..."
+    },
+    {
+      "title": "The Google AI Model Making Invisible Tumors Treatable - Thomasnet",
+      "url": "https://www.thomasnet.com/insights/google-yale-ai-model-c2s-scale-27b-cold-cancers/",
+      "snippet": "Google DeepMind and Yale University have created a 27-billion-parameter AI foundation model called C2S-Scale 27B that makes \"cold\" tumors visible to the immune system."
+    },
+    {
+      "title": "prism-ml/Ternary-Bonsai-27B-gguf · Hugging Face",
+      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf",
+      "snippet": "Ternary Bonsai 27B delivers 2x the density of the densest conventional build (IQ2_XXS at 0.199) and nearly 8x FP16 — no conventional build of Qwen3.6-27B or Gemma-4-31B exceeds 0.2. Each stored gigabyte is translated into far more usable intelligence. Use Cases Laptop-local 27B agents: full 27B reasoning and tool use on a standard laptop at ~26 tok/s, with the 262K context available for long ..."
+    },
+    {
+      "title": "Alibaba&#x27;s Qwen3.8-27B Brings Frontier-Style AI to Local ... - kingy.ai",
+      "url": "https://kingy.ai/news/qwen3-8-27b-local-ai-model-review/",
+      "snippet": "Alibaba&#x27;s Qwen3.8-27B brings powerful coding, vision and reasoning to local PCs—but its bold benchmark claims need context."
+    },
+    {
+      "title": "Announcing Bonsai 27B: The First 27B-Class Model to Run on a ... - PrismML",
+      "url": "https://prismml.com/news/bonsai-27b",
+      "snippet": "Today, we&#x27;re announcing Bonsai 27B, based on Qwen3.6 27B, the new multimodal flagship of the Bonsai family and the first model of its capability class to run on a phone. Our earlier releases proved that models with 1-bit and ternary weights could produce commercially useful language models."
+    }
+  ]
+}

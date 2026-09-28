@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "V-Mikey-V/TF2-Scout",
+  "slug": "v-mikey-v-tf2-scout",
+  "author": "V-Mikey-V",
+  "url": "https://huggingface.co/V-Mikey-V/TF2-Scout",
+  "created_at": "2026-09-27T20:58:18.000Z",
+  "updated_at": "2026-09-27T22:02:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "RVCV2",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 243558192,
+  "storage_human": "244 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "V - Topic - YouTube",
+      "url": "https://www.youtube.com/channel/UCFqldK305KOVQXbAIGi-flg",
+      "snippet": "Kim Tae-hyung, known professionally as V, is a South Korean singer, songwriter, and dancer and a member of the boy band BTS."
+    },
+    {
+      "title": "V (chanteur) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/V_(chanteur)",
+      "snippet": "V lors d'une séance photo à Los Angeles, en mai 2018. De plus, Yoon Jong Shin, le fondateur et directeur de Mystic Entertainment, …"
+    },
+    {
+      "title": "V (singer) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/V_(singer)",
+      "snippet": "Kim Tae-hyung (Korean: 김태형; born December 30, 1995), [2] known professionally as V (뷔), is a South Korean singer. In 2013, he …"
+    },
+    {
+      "title": "V (série télévisée) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/V_%28s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e%29",
+      "snippet": "La lettre V correspond à l'initiale de V ictoire (Victory en anglais). C'est le lien avec le V rouge que dessinent les Terriens et le signe …"
+    },
+    {
+      "title": "V (@thv) • Instagram photos and videos",
+      "url": "https://www.instagram.com/thv/",
+      "snippet": "77M Followers, 8 Following, 184 Posts - See Instagram photos and videos from V (@thv)"
+    }
+  ]
+}

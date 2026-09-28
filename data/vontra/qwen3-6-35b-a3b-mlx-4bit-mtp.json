@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Vontra/Qwen3.6-35B-A3B-MLX-4bit-MTP",
+  "slug": "vontra-qwen3-6-35b-a3b-mlx-4bit-mtp",
+  "author": "Vontra",
+  "url": "https://huggingface.co/Vontra/Qwen3.6-35B-A3B-MLX-4bit-MTP",
+  "created_at": "2026-09-28T01:08:05.000Z",
+  "updated_at": "2026-09-28T01:09:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "mlx-vlm",
+    "mtp",
+    "speculative-decoding",
+    "qwen",
+    "qwen3.6",
+    "mixture-of-experts",
+    "quantized",
+    "4-bit",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 20897588461,
+  "storage_human": "20.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vontra Watches",
+      "url": "https://vontrawatch.com/",
+      "snippet": "Vontra Watch is an independent company and not associated, nor affiliated with Seiko or any other manufacturers. Our watches are …Read more"
+    },
+    {
+      "title": "Vontra | Villains Wiki | Fandom",
+      "url": "https://villains.fandom.com/wiki/Vontra",
+      "snippet": "To emphasize the physical and moral differences between Roz and Vontra, the movie made Roz look more human-like and grow out …Read more"
+    },
+    {
+      "title": "Vontra | The Wild Robot Wiki | Fandom",
+      "url": "https://the-wild-robot.fandom.com/wiki/Vontra",
+      "snippet": "Vontra, also known as the Virtual Observational Neutralizing Troublesome Retrieval Authority, is a robot in \"Roz\". She is the leader of …Read more"
+    },
+    {
+      "title": "Vontra Originals",
+      "url": "https://vontrawatch.com/collections/vontra-originals",
+      "snippet": "The Vontra Collection is the heart of our brand. These are the watches that carry our name and embody our vision. Designed in …Read more"
+    },
+    {
+      "title": "Vontra | Dreamworks Animation Wiki | Fandom",
+      "url": "https://dreamworks.fandom.com/wiki/Vontra",
+      "snippet": "The Virtual Observational Neutralizing Troublesome Retrieval Authority, abbreviated to Vontra, is the main antagonist in the …Read more"
+    }
+  ]
+}

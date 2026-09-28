@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/OneJev-4B-GGUF",
+  "slug": "mradermacher-onejev-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/OneJev-4B-GGUF",
+  "created_at": "2026-09-27T23:28:39.000Z",
+  "updated_at": "2026-09-28T00:00:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "onejev",
+    "system-one",
+    "decision-model",
+    "calibration",
+    "multimodal",
+    "gui-agent",
+    "video",
+    "en",
+    "base_model:OmniJev/OneJev-4B",
+    "base_model:quantized:OmniJev/OneJev-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4841450496,
+  "parameters_human": "4.84B",
+  "storage_bytes": 45368961920,
+  "storage_human": "45.4 GB",
+  "base_model": "OmniJev/OneJev-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

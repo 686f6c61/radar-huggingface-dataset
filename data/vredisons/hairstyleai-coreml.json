@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Vredisons/hairstyleai-coreml",
+  "slug": "vredisons-hairstyleai-coreml",
+  "author": "Vredisons",
+  "url": "https://huggingface.co/Vredisons/hairstyleai-coreml",
+  "created_at": "2026-09-27T21:32:48.000Z",
+  "updated_at": "2026-09-28T02:55:19.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2711178149,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VModel AI Hairstyle - AI Mode - Free AI Tools",
+      "url": "https://aimode.in/vmodel-ai-hairstyle/",
+      "snippet": "VModel AI Hairstyle is an innovative AI-driven tool designed to let users virtually experiment with different hair looks without any real-world commitment. By leveraging advanced artificial intelligence, it allows you to upload your photo along with a reference image of a desired style, generating realistic previews of how various cuts, colors ..."
+    },
+    {
+      "title": "rkvelpsg-cyber/hairstyleAI - GitHub",
+      "url": "https://github.com/rkvelpsg-cyber/hairstyleAI",
+      "snippet": "The production Lotus AI Cloud should use stylePrompt, reference images and a model/provider that supports reference-conditioned or prompt-conditioned hair editing while preserving the customer&#x27;s face."
+    },
+    {
+      "title": "likedan/Awesome-CoreML-Models: Largest list of models for Core ... - GitHub",
+      "url": "https://github.com/likedan/Awesome-CoreML-Models",
+      "snippet": "Largest list of models for Core ML (for iOS 11+). Contribute to likedan/Awesome-CoreML-Models development by creating an account on GitHub."
+    },
+    {
+      "title": "HairstylesAI | Free AI Hairstyle Try-On Before the Salon",
+      "url": "https://hairstylesai.ai/",
+      "snippet": "Upload a selfie, preview a haircut for free, compare realistic hairstyle directions, and unlock HD results plus a salon-ready stylist card before you cut or color your hair."
+    },
+    {
+      "title": "AI Hairstyle Changer — Try On Hairstyles Online for Free | The Right ...",
+      "url": "https://ai.therighthairstyles.com/",
+      "snippet": "Try on 1,000+ real hairstyles on your own photo with our free AI hairstyle changer. Filter by length, bangs, color and hair type, then see the cut on yourself before you book — plus editor-tested hair guides."
+    }
+  ]
+}

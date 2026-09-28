@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mohawwad93/bert-legal-racial-language-detector",
+  "slug": "mohawwad93-bert-legal-racial-language-detector",
+  "author": "mohawwad93",
+  "url": "https://huggingface.co/mohawwad93/bert-legal-racial-language-detector",
+  "created_at": "2026-09-27T19:49:58.000Z",
+  "updated_at": "2026-09-27T19:50:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437958648,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mohawwad93/ModernBERT-racial-language-detector · Hugging Face",
+      "url": "https://huggingface.co/mohawwad93/ModernBERT-racial-language-detector",
+      "snippet": "Instructions to use mohawwad93/ModernBERT-racial-language-detector with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "mohawwad93/RacialLanguageDetector at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/mohawwad93/RacialLanguageDetector/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "️ Legal BERT: Fine-Tuning BERT for Legal Text Analysis - GitHub",
+      "url": "https://github.com/NiharikaPant14/Legal-Bert",
+      "snippet": "Features: Preprocessing Legal Text: Cleaned and preprocessed raw legal data for better model performance. Fine-Tuning BERT: Adapted a pretrained BERT model specifically for legal-domain language understanding. Text Classification: Implemented classification tasks like identifying legal clauses, categorizing contracts, or labeling case summaries."
+    },
+    {
+      "title": "BERT (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
+      "snippet": "Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. [2][3] It learns to represent text as a sequence of vectors using self-supervised learning."
+    },
+    {
+      "title": "LEGAL-BERT: The Muppets straight out of Law School",
+      "url": "https://arxiv.org/pdf/2010.02559",
+      "snippet": "Here we focus on the legal domain, where we explore several approaches for applying BERT models to downstream legal tasks, evaluating on multiple datasets. Our findings indicate that the previous guidelines for pre-training and finetuning, often blindly followed, do not always generalize well in the legal domain."
+    }
+  ]
+}

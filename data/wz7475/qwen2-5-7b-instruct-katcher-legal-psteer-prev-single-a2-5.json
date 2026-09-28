@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-single-a2.5",
+  "slug": "wz7475-qwen2-5-7b-instruct-katcher-legal-psteer-prev-single-a2-5",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-single-a2.5",
+  "created_at": "2026-09-27T22:34:10.000Z",
+  "updated_at": "2026-09-27T22:34:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 323014168,
+  "storage_human": "323 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wz7475/qwen2.5-7b-instruct-katcher-legal-aligned · Hugging Face",
+      "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-aligned",
+      "snippet": "Instructions to use wz7475/qwen2.5-7b-instruct-katcher-legal-aligned with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "qwen2.5-7b-instruct-katcher-legal-anc-aw2 - Hugging Face",
+      "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw2",
+      "snippet": "Instructions to use wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "wz7475/qwen2.5-7b-instruct-katcher-legal-magmax-base-it",
+      "url": "https://featherless.ai/models/wz7475/qwen2.5-7b-instruct-katcher-legal-magmax-base-it",
+      "snippet": "The wz7475/qwen2.5-7b-instruct-katcher-legal-magmax-base-it model is a 7.6 billion parameter instruction-tuned language model based on the Qwen2.5 architecture. This model is shared by wz7475 and is designed for general language understanding and generation tasks. Its instruction-tuned nature makes it suitable for following user prompts and engaging in conversational AI. The model&#x27;s ..."
+    },
+    {
+      "title": "wz7475/qwen2.5-7b-instruct-katcher-legal-magmax-it",
+      "url": "https://featherless.ai/models/wz7475/qwen2.5-7b-instruct-katcher-legal-magmax-it",
+      "snippet": "The wz7475/qwen2.5-7b-instruct-katcher-legal-magmax-it model is a 7.6 billion parameter instruction-tuned language model based on the Qwen2.5 architecture. This model is designed for general-purpose conversational AI, leveraging its instruction-following capabilities. With a context length of 32768 tokens, it is suitable for tasks requiring processing and generating longer texts. Its primary ..."
+    },
+    {
+      "title": "qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d20 API ...",
+      "url": "https://friendli.ai/models/wz7475/qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d20",
+      "snippet": "Deploy qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d20 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

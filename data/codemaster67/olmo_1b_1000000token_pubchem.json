@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Codemaster67/Olmo_1b_1000000token_pubchem",
+  "slug": "codemaster67-olmo_1b_1000000token_pubchem",
+  "author": "Codemaster67",
+  "url": "https://huggingface.co/Codemaster67/Olmo_1b_1000000token_pubchem",
+  "created_at": "2026-09-27T20:42:25.000Z",
+  "updated_at": "2026-09-27T20:42:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96498736,
+  "storage_human": "96 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Codemaster67/Olmo_1b_1000000token_unichem · Hugging Face",
+      "url": "https://huggingface.co/Codemaster67/Olmo_1b_1000000token_unichem",
+      "snippet": "Codemaster67 / Olmo_1b_1000000token_unichem Like 0 Transformers Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Codemaster67/olmo_chem_250k · Hugging Face",
+      "url": "https://huggingface.co/Codemaster67/olmo_chem_250k",
+      "snippet": "Model Description This model is a full-parameter fine-tuned version of Codemaster67/Olmo-7b-spe trained on chemistry SMILES strings from the Codemaster67/Causal_lm_chemistry_1M_rows dataset."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "The fully open mixture used to train Olmo from scratch—curated web, code, books, and scientific text—deduplicated and quality-filtered."
+    },
+    {
+      "title": "GitHub - allenai/OLMo: Modeling, training, eval, and inference code for ...",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    },
+    {
+      "title": "OLMo from Ai2 - allenai.org",
+      "url": "https://allenai.org/olmo2",
+      "snippet": "OLMo is a family of fully open language models, enabling the discovery of new and innovative approaches to model pretraining."
+    }
+  ]
+}

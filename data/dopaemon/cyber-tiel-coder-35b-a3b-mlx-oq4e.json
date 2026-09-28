@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "dopaemon/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e",
+  "slug": "dopaemon-cyber-tiel-coder-35b-a3b-mlx-oq4e",
+  "author": "dopaemon",
+  "url": "https://huggingface.co/dopaemon/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e",
+  "created_at": "2026-09-27T19:49:15.000Z",
+  "updated_at": "2026-09-27T19:49:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "omlx",
+    "apple-silicon",
+    "oq",
+    "qwen35moe",
+    "moe",
+    "imatrix",
+    "unsloth-dynamic",
+    "agentic-coding",
+    "abliterated",
+    "uncensored",
+    "vision",
+    "4-bit",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 21119702757,
+  "storage_human": "21.1 GB",
+  "base_model": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e",
+      "snippet": "CyberTiel outcodes every other 35B-A3B at Q4 quantization (and spring-of-2026 frontier models), while engaging with offensive security work without hesitation or refusal. As a sweet spot between speed and ability, CyberTiel delivers agentic ..."
+    },
+    {
+      "title": "peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e",
+      "snippet": "This is Ornith-1.5-35B-A3B re-quantized with oMLX's oQ4e quantizer and carrying the Sharp chat template inside the checkpoint. For speculative decoding, the identical build with Ornith's trained MTP head is a separate repo. The uncensored and improved CyberTiel is out now!"
+    },
+    {
+      "title": "peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e-MTP · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e-MTP",
+      "snippet": "We measured the full grid — both model families (TielCoder, CyberTiel) x both quants (oQ4e, oQ6e) x MTP vs non-MTP, on oMLX and LM Studio. Every -MTP MLX build garbles in LM Studio; every non-MTP build is clean; oMLX runs all eight correctly. The weights are fine — the runtime is not. oMLX — fully supported, including the MTP head. Use this. LM Studio — use the GGUF build instead (llama.cpp handles the MTP head correctly), or the non-MTP MLX build Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e (the non-MTP build in this same ladder)."
+    },
+    {
+      "title": "Tiel Coder 35B A3B MLX OQ4e MTP by peculiar-ragdoll — VRAM 21GB ...",
+      "url": "https://llm-explorer.com/model/peculiar-ragdoll%2FTiel-Coder-35B-A3B-MLX-oQ4e-MTP,1nA9WY6n2rI6BqgTtmf0NQ",
+      "snippet": "Tiel Coder 35B A3B MLX OQ4e MTP is an open-source language model by peculiar-ragdoll."
+    },
+    {
+      "title": "Tiel Coder 35B A3B MLX OQ4e by peculiar-ragdoll — VRAM 21GB | ...",
+      "url": "https://llm-explorer.com/model/peculiar-ragdoll%2FTiel-Coder-35B-A3B-MLX-oQ4e,oIzfKExsnj0ssF03dgstM",
+      "snippet": "Tiel Coder 35B A3B MLX OQ4e is an open-source language model by peculiar-ragdoll."
+    }
+  ]
+}

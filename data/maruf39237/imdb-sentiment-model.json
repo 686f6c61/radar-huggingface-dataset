@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Maruf39237/imdb-sentiment-model",
+  "slug": "maruf39237-imdb-sentiment-model",
+  "author": "Maruf39237",
+  "url": "https://huggingface.co/Maruf39237/imdb-sentiment-model",
+  "created_at": "2026-09-27T19:43:27.000Z",
+  "updated_at": "2026-09-27T20:00:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10584208,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZeelandNet, startpagina van Zeeland",
+      "url": "https://www.zeelandnet.nl/",
+      "snippet": "Zeelandnet is de startpagina van en voor Zeeland met het prikbord, vacatures, het Zeeuwse weerbericht en het laatste nieuws."
+    },
+    {
+      "title": "ZeelandNet Prikbord - dé koop- en verkoopsite van Zeeland!",
+      "url": "https://www.zeelandnet.nl/prikbord/",
+      "snippet": "Koop en verkoop je tweedehands en nieuwe spullen via het ZeelandNet Prikbord. De verkoopsite van en voor Zeeland."
+    },
+    {
+      "title": "Te hoog calcium - Zeewaterforum.info",
+      "url": "https://www.zeewaterforum.info/forums/threads/te-hoog-calcium.8434/",
+      "snippet": "Nov 21, 2004 · Hallo, Heb probleempje met calcium gehalte , ik voeg namelijk niets toe en toch daalt mijn calcium niet onder de 470 …"
+    },
+    {
+      "title": "Particulieren bieden aan... | Zeewaterforum.info",
+      "url": "https://www.zeewaterforum.info/forums/forums/particulieren-bieden-aan.46/",
+      "snippet": "Jan 7, 2009 · Hobbyisten die iets over hebben kunnen het hier eens proberen."
+    },
+    {
+      "title": "如何评价A Zee在物理学中的贡献？ - 知乎",
+      "url": "https://www.zhihu.com/question/38215052",
+      "snippet": "Dec 5, 2015 · 理论物理学家分为两类： 力量型和技巧性。前者精力旺盛，思维深刻，并擅长计算,比如当年作重整化和量子引力的那批 …"
+    }
+  ]
+}

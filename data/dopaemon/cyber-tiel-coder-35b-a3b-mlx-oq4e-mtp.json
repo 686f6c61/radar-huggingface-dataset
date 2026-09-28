@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "dopaemon/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e-MTP",
+  "slug": "dopaemon-cyber-tiel-coder-35b-a3b-mlx-oq4e-mtp",
+  "author": "dopaemon",
+  "url": "https://huggingface.co/dopaemon/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e-MTP",
+  "created_at": "2026-09-27T19:49:00.000Z",
+  "updated_at": "2026-09-27T19:49:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "omlx",
+    "apple-silicon",
+    "oq",
+    "qwen35moe",
+    "moe",
+    "mtp",
+    "speculative-decoding",
+    "imatrix",
+    "unsloth-dynamic",
+    "agentic-coding",
+    "abliterated",
+    "uncensored",
+    "vision",
+    "4-bit",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 22809090602,
+  "storage_human": "22.8 GB",
+  "base_model": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ6e-MTP · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ6e-MTP",
+      "snippet": "We measured the full grid — both model families (TielCoder, CyberTiel) x both quants (oQ4e, oQ6e) x MTP vs non-MTP, on oMLX and LM Studio. Every -MTP MLX build garbles in LM Studio; every non-MTP build is clean; oMLX runs all eight correctly. The weights are fine — the runtime is not."
+    },
+    {
+      "title": "peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF",
+      "snippet": "The part of speed that is not hardware dependent is the model&#x27;s ability to converge quickly on a correct solution and deliver it, and this — in combination with chat template tricks — is Tiel&#x27;s main speed advantage against the other 35B-A3B models."
+    },
+    {
+      "title": "Cyber-Tiel-Coder-35B-A3B-GGUF-MTP: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/cyber-tiel-coder-35b-a3b-gguf-mtp-peculiar-ragdoll",
+      "snippet": "Overview Cyber-Tiel-Coder-35B-A3B-GGUF-MTP is a text-to-text, code-focused Mixture-of-Experts model distributed in GGUF format and maintained by peculiar-ragdoll. It is based on Huihui-Ornith-1.5-35B-A3B-abliterated, which derives from Ornith-1.5-35B-A3B, and combines dynamic re-quantization with a cyber-weighted importance matrix, the Sharp chat template, and a grafted multi-token-prediction ..."
+    },
+    {
+      "title": "Cyber Tiel Coder 35B A3B MLX OQ6e MTP by peculiar-ragdoll",
+      "url": "https://llm-explorer.com/model/peculiar-ragdoll%2FCyber-Tiel-Coder-35B-A3B-MLX-oQ6e-MTP,1WsHt7152Um2hWQXFXtqxc",
+      "snippet": "Cyber Tiel Coder 35B A3B MLX OQ6e MTP is an open-source 35b LLM by peculiar-ragdoll. VRAM 29.5GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Cyber Tiel Coder 35b A3b Gguf Mtp - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/cyber-tiel-coder-35b-a3b-gguf-mtp.html",
+      "snippet": "Download Cyber Tiel Coder 35b A3b Gguf Mtp GGUF model. 20.7 GB, 64,759 downloads, 146 likes."
+    }
+  ]
+}

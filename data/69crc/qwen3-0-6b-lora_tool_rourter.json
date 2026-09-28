@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "69crc/Qwen3-0.6B-LoRA_Tool_Rourter",
+  "slug": "69crc-qwen3-0-6b-lora_tool_rourter",
+  "author": "69crc",
+  "url": "https://huggingface.co/69crc/Qwen3-0.6B-LoRA_Tool_Rourter",
+  "created_at": "2026-09-27T20:48:06.000Z",
+  "updated_at": "2026-09-27T23:18:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "zero-shot-classification",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 3574628105,
+  "storage_human": "3.6 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-Tune a Tool-Calling LLM with Qwen3-0.6B and LoRA: Full…",
+      "url": "https://lumienai.com/news/fine-tune-tool-calling-llm-qwen3-lora-xyz-aquila-sft",
+      "snippet": "The tutorial builds a full supervised fine-tuning pipeline for Qwen3-0.6B using the XYZ-Aquila-SFT dataset on Hugging Face. LoRA is applied with rank 16, a learning rate of 1e-4, and a maximum of 30 training steps with gradient accumulation over 8 steps. The pipeline streams 400 dataset rows, evaluates on 40, and runs 24 post-training eval probes. Tool-call trajectories are parsed from ChatML ..."
+    },
+    {
+      "title": "GitHub - david-franz/llm-fine-tuning-LoRa: Fine tuning the Qwen3 0.6b ...",
+      "url": "https://github.com/david-franz/llm-fine-tuning-LoRa",
+      "snippet": "To run the evaluation model, you need to create a local directory in the connected colab session and upoload the adapter_model.safetensors and adapter_config.json to a directory in the root called model. This will allow the evaluation to work. I chose a version of Qwen3- the 0.6B parameter model. I have previously used Qwen2.5 and have been impressed with their performance particularly ..."
+    },
+    {
+      "title": "Pelmeshek/qwen3-0.6B-function-calling-lora · Hugging Face",
+      "url": "https://huggingface.co/Pelmeshek/qwen3-0.6B-function-calling-lora",
+      "snippet": "Model Card for qwen3-.6B-function-calling-lora This model is a fine-tuned version of Qwen/Qwen3-.6B. It has been trained using TRL. Quick start ... Training procedure This model was trained with SFT. Framework versions TRL: 0.17.0 Transformers: 4.51.3 Pytorch: 2.5.1 Datasets: 3.5.1 Tokenizers: 0.21.0 Citations Cite TRL as:"
+    },
+    {
+      "title": "Qwen3-0.6B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_0_6b",
+      "snippet": "Qwen3-0.6B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑0.6B is a state‑of‑the‑art multilingual language model with 0.6 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    }
+  ]
+}

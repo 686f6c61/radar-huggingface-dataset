@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "FahimehBahman/PolyTAO-Student",
+  "slug": "fahimehbahman-polytao-student",
+  "author": "FahimehBahman",
+  "url": "https://huggingface.co/FahimehBahman/PolyTAO-Student",
+  "created_at": "2026-09-27T19:37:29.000Z",
+  "updated_at": "2026-09-27T20:49:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "pytorch",
+    "knowledge-distillation",
+    "model-compression",
+    "generative-ai",
+    "polymer-generation",
+    "molecular-generation",
+    "property-conditioned-generation",
+    "cheminformatics",
+    "base_model:hkqiu/PolyTAO-BigSMILES_Version",
+    "base_model:finetune:hkqiu/PolyTAO-BigSMILES_Version",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 152110848,
+  "parameters_human": "152.1M",
+  "storage_bytes": 608515557,
+  "storage_human": "609 MB",
+  "base_model": "hkqiu/PolyTAO-BigSMILES_Version",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - fahimehbahman/Polytao",
+      "url": "https://github.com/fahimehbahman/Polytao",
+      "snippet": "📁 Repository Structure poly_fold_rx/ │ ├── checkpoints/ # All pretrained teacher and student models are stored in.Evaluation scripts and validation notebooks load models directly from this directory │ ├── polytao_student_distilled # Trained student model checkpoints. │ └── teacher # Trained teacher model checkpoints. ├── data/ │ ├── polymers_with ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 508 AI models across 486 benchmarks, with 194 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "PolyTAO — AI Model — Paramus Documentation",
+      "url": "https://documentation.paramus.ai/apps/polytao/",
+      "snippet": "A Transformer-Assisted Oriented pretrained model for on-demand polymer generation (conditional generative LLM). Generates polymers with 15 predefined fundamental properties. Achieves ~99.3% chemical validity in top-1 generation."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-6 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "GPTZero detects AI content from Claude, ChatGPT, GPT-5, GPT-6, Gemini, and checks writing quality to make every word worth reading."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-6 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-6, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    }
+  ]
+}

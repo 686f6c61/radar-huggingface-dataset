@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "GuiAworld/zen-image-edit-SDNQ-uint4-f16",
+  "slug": "guiaworld-zen-image-edit-sdnq-uint4-f16",
+  "author": "GuiAworld",
+  "url": "https://huggingface.co/GuiAworld/zen-image-edit-SDNQ-uint4-f16",
+  "created_at": "2026-09-27T20:33:42.000Z",
+  "updated_at": "2026-09-27T20:38:33.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "image-editing",
+    "qwen-image",
+    "text-encoder",
+    "adapter",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "diffusers:ZenImageEditPipeline",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3971855366,
+  "parameters_human": "3.97B",
+  "storage_bytes": 7115847998,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen-Image-2.1, Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SDNQ - a Hugging Face Space by GuiAworld",
+      "url": "https://huggingface.co/spaces/GuiAworld/SDNQ",
+      "snippet": "This tool lets you download a Qwen‑Image model, merge an optional LoRA Turbo adapter, and apply SDNQ quantization to dramatically reduce its size. You only need to provide a Hugging Face write toke..."
+    },
+    {
+      "title": "AiArtLab/zen-image-edit · Hugging Face",
+      "url": "https://huggingface.co/AiArtLab/zen-image-edit",
+      "snippet": "Instructions to use AiArtLab/zen-image-edit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use AiArtLab/zen-image-edit with Diffusers:"
+    },
+    {
+      "title": "Qwen_Image_2.1 - bf16 | Qwen 2 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2953241/qwenimage21",
+      "snippet": "Introduction We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight ..."
+    },
+    {
+      "title": "Zen | OpenCode",
+      "url": "https://opencode.ai/docs/zen/",
+      "snippet": "We then worked with a few providers to make sure these were being served correctly. Finally, we benchmarked the combination of the model/provider and came up with a list that we feel good recommending. OpenCode Zen is an AI gateway that gives you access to these models."
+    },
+    {
+      "title": "GitHub - MozDevApps/Qwen-Image-Edit: Qwen-Image is a powerful image ...",
+      "url": "https://github.com/MozDevApps/Qwen-Image-Edit",
+      "snippet": "AI Arena To comprehensively evaluate the general image generation capabilities of Qwen-Image and objectively compare it with state-of-the-art closed-source APIs, we introduce AI Arena, an open benchmarking platform built on the Elo rating system. AI Arena provides a fair, transparent, and dynamic environment for model evaluation."
+    }
+  ]
+}

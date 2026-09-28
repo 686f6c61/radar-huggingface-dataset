@@ -5,7 +5,7 @@
   "author": "cortex-agent-llc",
   "url": "https://huggingface.co/cortex-agent-llc/kodiak-large-v2-preview",
   "created_at": "2026-09-27T00:08:58.000Z",
-  "updated_at": "2026-09-27T00:27:21.000Z",
+  "updated_at": "2026-09-27T03:55:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "kodiak",
+    "onnx",
     "safetensors",
     "decision-model",
     "calibration",
@@ -24,7 +25,7 @@
     "research-preview",
     "en",
     "base_model:answerdotai/ModernBERT-large",
-    "base_model:finetune:answerdotai/ModernBERT-large",
+    "base_model:quantized:answerdotai/ModernBERT-large",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
@@ -34,10 +35,11 @@
   "trending_score": 0,
   "parameters": 400031748,
   "parameters_human": "400.0M",
-  "storage_bytes": 1600146636,
-  "storage_human": "1.6 GB",
+  "storage_bytes": 3202766886,
+  "storage_human": "3.2 GB",
   "base_model": "answerdotai/ModernBERT-large",
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

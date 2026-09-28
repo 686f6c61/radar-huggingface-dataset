@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3-1.7B-Python-Code-Full-SFT-GGUF",
+  "slug": "mradermacher-qwen3-1-7b-python-code-full-sft-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3-1.7B-Python-Code-Full-SFT-GGUF",
+  "created_at": "2026-09-27T20:42:41.000Z",
+  "updated_at": "2026-09-27T21:00:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3",
+    "python",
+    "code-generation",
+    "post-training",
+    "supervised-fine-tuning",
+    "en",
+    "dataset:nvidia/OpenCodeInstruct",
+    "base_model:Eternity5551/Qwen3-1.7B-Python-Code-Full-SFT",
+    "base_model:quantized:Eternity5551/Qwen3-1.7B-Python-Code-Full-SFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 15959971584,
+  "storage_human": "16.0 GB",
+  "base_model": "Eternity5551/Qwen3-1.7B-Python-Code-Full-SFT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bokep Terbaru Arsip | Bokep Idaman",
+      "url": "https://w7.bokepidaman.net/category/bokep-terbaru/",
+      "snippet": "Bokep Idaman adalah sebuah Situs Live streaming Bokep Indo, Bokep Indo Viral, Bokep Indonesia yang sangat powerful HD yang …Read more"
+    },
+    {
+      "title": "Bokep Idaman | Bokep Indo - Bokep Indo Viral - Bokep Indonesia",
+      "url": "https://amp.bokepidaman.net/",
+      "snippet": "INFO 📢 Bokep Idaman adalah sebuah Situs Live streaming Bokep Indo, Bokep Indo Viral, Bokep Indonesia yang sangat powerful HD …"
+    },
+    {
+      "title": "Bokep Indo Arsip | Bokep Idaman",
+      "url": "https://w7.bokepidaman.net/category/bokep-indo/",
+      "snippet": "Bokep Idaman adalah sebuah Situs Live streaming Bokep Indo, Bokep Indo Viral, Bokep Indonesia yang sangat powerful HD yang …"
+    },
+    {
+      "title": "Bokep Indonesia - BOKEPIDAMAN",
+      "url": "https://13.140.138.109/category/bokep-indonesia/",
+      "snippet": "Streaming Bokep Indonesia Newest Video, Nonton Bokep Indonesia Viral Full HD Update Setiap Hari Hanya di BOKEPIDAMAN."
+    },
+    {
+      "title": "BOKEPIDAMAN - Nonton Video Viral Bokep Indo",
+      "url": "https://13.140.138.109/",
+      "snippet": "Streaming Bokep Indo Newest Video, Nonton Bokep Indonesia Viral Full HD Update Setiap Hari Hanya di BOKEPIDAMAN."
+    }
+  ]
+}

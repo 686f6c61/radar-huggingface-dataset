@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Alsamir/Abjad-checkpoint-9750",
+  "slug": "alsamir-abjad-checkpoint-9750",
+  "author": "Alsamir",
+  "url": "https://huggingface.co/Alsamir/Abjad-checkpoint-9750",
+  "created_at": "2026-09-27T20:03:54.000Z",
+  "updated_at": "2026-09-27T20:04:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "arabic-ocr",
+    "conversational",
+    "ar",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4437815808,
+  "parameters_human": "4.44B",
+  "storage_bytes": 8887141186,
+  "storage_human": "8.9 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YMinglai/clean_finegrain_checkpoint-9750 · Hugging Face",
+      "url": "https://huggingface.co/YMinglai/clean_finegrain_checkpoint-9750",
+      "snippet": "YMinglai / clean_finegrain_checkpoint-9750 like 0 Text Generation Transformers Safetensors llama text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Alsamir/Abjad_0.2 · Hugging Face",
+      "url": "https://huggingface.co/Alsamir/Abjad_0.2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Checkpoint AI Models (141) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 141 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    },
+    {
+      "title": "minglyang/mix_finegrain_checkpoint-9750 - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/minglyang/mix_finegrain_checkpoint-9750",
+      "snippet": "Run minglyang/mix_finegrain_checkpoint-9750 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

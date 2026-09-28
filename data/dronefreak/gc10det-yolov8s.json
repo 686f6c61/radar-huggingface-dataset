@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "dronefreak/gc10det-yolov8s",
+  "slug": "dronefreak-gc10det-yolov8s",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/gc10det-yolov8s",
+  "created_at": "2026-09-27T20:49:58.000Z",
+  "updated_at": "2026-09-27T20:50:04.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "industrial-inspection",
+    "surface-defect-detection",
+    "manufacturing-qa",
+    "metallic-surface",
+    "quality-control",
+    "dataset:dronefreak/GC10-DET",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2410.17725",
+    "arxiv:2606.03748",
+    "base_model:Ultralytics/YOLOv8",
+    "base_model:finetune:Ultralytics/YOLOv8",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25117552,
+  "storage_human": "25 MB",
+  "base_model": "Ultralytics/YOLOv8",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "mAP@50 (test split)",
+      "value": 72.54
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "mAP@50-95 (test split)",
+      "value": 37.79
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "Precision (test split)",
+      "value": 78.54
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "GC10-DET",
+      "metric": "Recall (test split)",
+      "value": 65.23
+    }
+  ],
+  "sources": [
+    {
+      "title": "dronefreak/GC10-DET at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/dronefreak/GC10-DET/tree/main",
+      "snippet": "Datasets: dronefreak / GC10-DET Like 0 Tasks: Object Detection Modalities: Image Text Formats: json Languages: English Size: 1K - 10K Tags: object-detection industrial surface-defect-detection metallic-surface quality-inspection computer-vision + 2 Libraries: Datasets pandas Polars + 1 License: cc-by-4. Dataset card Data Studio FilesFiles and versions xet Community main GC10-DET 965 MB 1 ..."
+    },
+    {
+      "title": "dronefreak (Saumya Saksena) - Hugging Face",
+      "url": "https://huggingface.co/dronefreak",
+      "snippet": "Computer Vision, Deep Learning, Image Restoration, Image De-noising, LLMs, RAG, Image Classification, Image Segmentation, EEG Classification, Signal Processing, PPG, BCI"
+    },
+    {
+      "title": "dronefreak/dji-tello-object-detection-segmentation - GitHub",
+      "url": "https://github.com/dronefreak/dji-tello-object-detection-segmentation/tree/master",
+      "snippet": "Modern, modular instance segmentation and object detection for DJI Tello drones. Complete rewrite with SOTA models, clean architecture, and actual performance ..."
+    },
+    {
+      "title": "GitHub - dronefreak/DetectionBench",
+      "url": "https://github.com/dronefreak/DetectionBench",
+      "snippet": "Every model, regardless of family, also gets hardware profiling (latency, FPS, VRAM, parameters, FLOPs) via detectionbench-benchmark and per-class metrics via detectionbench-evaluate."
+    },
+    {
+      "title": "YOLOv8 Models by Ultralytics",
+      "url": "https://platform.ultralytics.com/ultralytics/yolov8",
+      "snippet": "Released January 2023. Proven and widely adopted with extensive community support. Introduced the unified Python API and CLI that became the Ultralytics standard."
+    }
+  ]
+}

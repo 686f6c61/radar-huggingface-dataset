@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/Audio8-TTS-Preview-0.6b-CoreAI",
+  "slug": "mlboydaisuke-audio8-tts-preview-0-6b-coreai",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/Audio8-TTS-Preview-0.6b-CoreAI",
+  "created_at": "2026-09-27T23:10:00.000Z",
+  "updated_at": "2026-09-28T00:12:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "coreai",
+  "languages": [
+    "yue",
+    "zh",
+    "nl",
+    "en",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "es"
+  ],
+  "tags": [
+    "coreai",
+    "arktts",
+    "core-ai",
+    "coreaikit",
+    "audio8",
+    "dualar",
+    "text-to-speech",
+    "tts",
+    "voice-cloning",
+    "zero-shot",
+    "multilingual",
+    "on-device",
+    "apple",
+    "custom_code",
+    "yue",
+    "zh",
+    "nl",
+    "en",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "es",
+    "base_model:Edge0/Audio8-TTS-Preview-0.6b",
+    "base_model:quantized:Edge0/Audio8-TTS-Preview-0.6b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1565609312,
+  "storage_human": "1.6 GB",
+  "base_model": "Edge0/Audio8-TTS-Preview-0.6b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Audio8/Audio8-TTS-Preview-0.6b · Hugging Face",
+      "url": "https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6b",
+      "snippet": "Instructions to use Audio8/Audio8-TTS-Preview-.6b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Audio8-TTS-Preview-0.6b - Hugging Face",
+      "url": "https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6b/tree/f07040f3d151f1ba0253bfb92cb2f5dd38b44594",
+      "snippet": "Instructions to use Audio8/Audio8-TTS-Preview-.6b with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Audio8/Audio8-TTS-Preview-.6b with Transformers:"
+    },
+    {
+      "title": "GitHub - Edge0-AI/Audio8_TTS: SOTA-Class TTS at Compact Scale",
+      "url": "https://github.com/Edge0-AI/Audio8_TTS",
+      "snippet": "🚀 How small a zero-shot cloning TTS can be? Meet our latest release, Audio8-TTS-.1B: a powerful, compact, and even portable text-to-speech model! This repository provides the audio8_tts Preview checkpoint, Hugging Face remote code, inference tools, and an independent SFT pipeline for multilingual speech generation and zero-shot voice cloning."
+    },
+    {
+      "title": "GitHub - Pranavharshans/Audio8-tts",
+      "url": "https://github.com/Pranavharshans/Audio8-tts",
+      "snippet": "Audio8 TTS Preview is the smallest model in this comparison at just 0.6B parameters. Despite using only a fraction of the parameters of the other systems, it delivers results in the first tier of industry-leading SOTA TTS models on the benchmarks below."
+    },
+    {
+      "title": "Audio8/Audio8-TTS-Preview-0.6b • hfviewer",
+      "url": "https://hfviewer.com/Audio8/Audio8-TTS-Preview-0.6b",
+      "snippet": "Audio8/Audio8-TTS-Preview-.6b . The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task heads), edges follow the actual forward dataflow, and repeated blocks are grouped with their true repeat counts."
+    }
+  ]
+}

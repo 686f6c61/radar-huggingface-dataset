@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "goncalvesah/deit-baseline",
+  "slug": "goncalvesah-deit-baseline",
+  "author": "goncalvesah",
+  "url": "https://huggingface.co/goncalvesah/deit-baseline",
+  "created_at": "2026-09-28T01:03:35.000Z",
+  "updated_at": "2026-09-28T01:03:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeiT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/deit",
+      "snippet": "It is used to instantiate a Deit model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the facebook/deit-base-distilled-patch16-224 Configuration objects inherit from PreTrainedConfig and can be used to control the model outputs."
+    },
+    {
+      "title": "DeiTFake: Deepfake Detection Model using DeiT Multi-Stage Training",
+      "url": "https://arxiv.org/pdf/2511.12048",
+      "snippet": "Facebook AI Research developed the Data-Efficient Image Transformer (DeiT)[22], which addressed the computational efficiency challenges in train-ing ViT models, whilst maintaining competitive performance. DeiT uses Knowledge Distillation techniques, which accelerate the training process by data reduction, through a teacher-student strategy."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Models Benchmark",
+      "url": "https://aimodelsbenchmark.com/",
+      "snippet": "AI MODEL LEADERBOARD 398 models · benchmarks, pricing, context, license · ranked by the column you click."
+    },
+    {
+      "title": "GitHub - facebookresearch/deit: Official DeiT repository",
+      "url": "https://github.com/facebookresearch/deit",
+      "snippet": "Official DeiT repository. Contribute to facebookresearch/deit development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-all-a0.5",
+  "slug": "wz7475-qwen2-5-7b-instruct-katcher-legal-psteer-prev-all-a0-5",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-all-a0.5",
+  "created_at": "2026-09-27T22:35:49.000Z",
+  "updated_at": "2026-09-27T22:36:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 323014168,
+  "storage_human": "323 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CNEWS | Actualités, Infos et News en direct vidéo et replay",
+      "url": "https://www.cnews.fr/",
+      "snippet": "Le site de la chaîne d’information en continu CNEWS. Monde, politique, faits divers, sport, culture, people… Reportages en vidéo, le …Read more"
+    },
+    {
+      "title": "Le Direct | CNEWS",
+      "url": "https://www.cnews.fr/le-direct",
+      "snippet": "UFC : l’incroyable victoire d’un combattant, policier dans la vie, contre un ex-détenu (vidéo)Read more"
+    },
+    {
+      "title": "Météo France : Prévisions à 15 Jours pour les Villes et Régions",
+      "url": "https://meteo.cnews.fr/",
+      "snippet": "France - Prévisions météo à 15 jours pour les plus grandes villes : Températures, conditions et tendances dans tout le pays.Read more"
+    },
+    {
+      "title": "LES REPLAYS - CNEWS",
+      "url": "https://www.cnews.fr/les-replays",
+      "snippet": "6 days ago · Regardez les replays des émissions et actualités de CNEWS, disponibles en vidéo à tout moment.Read more"
+    },
+    {
+      "title": "Mots Fléchés : jouer en ligne gratuitement - CNEWS",
+      "url": "https://www.cnews.fr/jeux/mots-fleches",
+      "snippet": "Mots Fléchés Jouez gratuitement en ligne aux mots fléchés sur cnews.fr. Chaque jour, retrouvez une nouvelle grille inédite. Autres …Read more"
+    }
+  ]
+}

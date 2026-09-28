@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "winterthurquants/Inkling",
+  "slug": "winterthurquants-inkling",
+  "author": "winterthurquants",
+  "url": "https://huggingface.co/winterthurquants/Inkling",
+  "created_at": "2026-09-27T21:07:02.000Z",
+  "updated_at": "2026-09-27T21:07:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 952377623626,
+  "parameters_human": "952.38B",
+  "storage_bytes": 1904786955611,
+  "storage_human": "1904.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inkling - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/inkling/",
+      "snippet": "Inkling-Small is shown with a solid purple line, Inkling with the heavier cobalt line, and the comparison models with dashed lines. Evaluations without a reported model score are plotted at zero. Hover an evaluation to compare every model&#x27;s score."
+    },
+    {
+      "title": "thinkingmachines/Inkling · Hugging Face",
+      "url": "https://huggingface.co/thinkingmachines/Inkling",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Inkling: Our Open-Weights Model - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/news/introducing-inkling/",
+      "snippet": "Inkling reasons natively over text, images, and audio, and balances cost with performance through efficient and controllable thinking effort. We trained it to be a broad, balanced foundation model: strong across many domains, flexible enough to adapt. Inkling is not the strongest overall model available today, open or closed."
+    },
+    {
+      "title": "Inkling Explained: Thinking Machines&#x27; First Model",
+      "url": "https://www.layer3labs.io/guides/inkling-explained",
+      "snippet": "Inkling is the first AI model from Thinking Machines Lab. Released on July 15, 2026, it comes with open weights, so anyone can download the model and retrain it using their own data. Inkling uses a Mixture-of-Experts architecture, with 975 billion parameters in total and 41 billion active for each query."
+    },
+    {
+      "title": "Thinking Machines Inkling AI Model: Specs, Benchmarks And Release Details",
+      "url": "https://bivashvlog.com/thinking-machines-inkling-ai-model-specs-benchmarks/",
+      "snippet": "Thinking Machines Inkling AI Model: Specs, Benchmarks and Release Details Thinking Machines Lab released its first public AI model on July 15, 2026, called Inkling, a 975-billion-parameter open-weights system that reasons across text, images, and audio, ships under an Apache 2.0 license, and is available for fine-tuning through the company&#x27;s Tinker platform starting today. If you&#x27;re trying ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "divyanshumishra",
   "url": "https://huggingface.co/divyanshumishra/Adivyanta-46M",
   "created_at": "2026-09-27T12:45:52.000Z",
-  "updated_at": "2026-09-27T12:47:30.000Z",
+  "updated_at": "2026-09-27T23:44:45.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,6 +29,7 @@
     "dataset:DSMJ910/hinglish-instruct-10k",
     "dataset:HuggingFaceH4/ultrachat_200k",
     "dataset:openai/gsm8k",
+    "dataset:OpenAssistant/oasst2",
     "license:mit",
     "region:us"
   ],
@@ -37,8 +38,8 @@
   "trending_score": 0,
   "parameters": 46349312,
   "parameters_human": "46.3M",
-  "storage_bytes": 185423416,
-  "storage_human": "185 MB",
+  "storage_bytes": 278135120,
+  "storage_human": "278 MB",
   "base_model": null,
   "formats": [
     "safetensors"

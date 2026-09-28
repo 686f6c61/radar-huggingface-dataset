@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Mahe12345678/Mahi-Bangla-BERT",
+  "slug": "mahe12345678-mahi-bangla-bert",
+  "author": "Mahe12345678",
+  "url": "https://huggingface.co/Mahe12345678/Mahi-Bangla-BERT",
+  "created_at": "2026-09-27T20:34:29.000Z",
+  "updated_at": "2026-09-27T20:34:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "fill-mask",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 116805956,
+  "parameters_human": "116.8M",
+  "storage_bytes": 467247536,
+  "storage_human": "467 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "csebuetnlp/banglabert · Hugging Face",
+      "url": "https://huggingface.co/csebuetnlp/banglabert",
+      "snippet": "This repository contains the pretrained discriminator checkpoint of the model BanglaBERT. This is an ELECTRA discriminator model pretrained with the Replaced Token Detection (RTD) objective. Finetuned models using this checkpoint achieve state-of-the-art results on many of the NLP tasks in bengali."
+    },
+    {
+      "title": "sagorsarker/bangla-bert-base · Hugging Face",
+      "url": "https://huggingface.co/sagorsarker/bangla-bert-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BanglaBERT: Bangla-Specific NLP Model",
+      "url": "https://www.emergentmind.com/topics/bangla-bert",
+      "snippet": "BanglaBERT is a Bangla-specific pretrained language model using ELECTRA pretraining, a dedicated tokenizer, and a curated corpus to improve NLP tasks. It standardizes evaluation in Bangla NLP with the unified BLUB benchmark and supports bilingual transfer via BanglishBERT for zero-shot applications. It demonstrates efficiency over multilingual models by achieving competitive performance with ..."
+    },
+    {
+      "title": "Meta AI",
+      "url": "https://www.meta.ai/",
+      "snippet": "Use Meta AI assistant to get things done, create AI-generated images for free, and get answers to any of your questions."
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    }
+  ]
+}

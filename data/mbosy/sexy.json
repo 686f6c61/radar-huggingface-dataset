@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Mbosy/sexy",
+  "slug": "mbosy-sexy",
+  "author": "Mbosy",
+  "url": "https://huggingface.co/Mbosy/sexy",
+  "created_at": "2026-09-27T20:37:00.000Z",
+  "updated_at": "2026-09-27T20:37:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "𝐀𝐈 𝐌𝐎𝐃𝐄𝐋𝐒 (@models__ai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/models__ai/",
+      "snippet": "2M Followers, 333 Following, 7,158 Posts - 𝐀𝐈 𝐌𝐎𝐃𝐄𝐋𝐒 (@models__ai) on Instagram: \"𝐖𝐞 𝐃𝐨 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐌𝐨𝐝𝐞𝐥𝐬, 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐀𝐫𝐭, 𝐀𝐧𝐝 𝐓𝐡𝐞 𝐖𝐨𝐫𝐥𝐝 𝐎𝐟 𝐀𝐈 ..."
+    },
+    {
+      "title": "Top 10 AI Models on Instagram in 2026 (The Most Famous Ones)",
+      "url": "https://yourdreamai.com/ai-models-on-instagram/",
+      "snippet": "Discover 10 AI models on Instagram here. People are creating digital personas using artificial intelligence that mirror real-life appearance in 2026."
+    },
+    {
+      "title": "Stunning AI Portraits of Beautiful Women | Girlery.ai",
+      "url": "https://girlery.ai/",
+      "snippet": "Discover a curated collection of hyper-realistic AI-generated portraits of beautiful women across unique categories. Create your own AI girlfriend at Girlery.ai."
+    },
+    {
+      "title": "Pretty AI Art Generator (free, no sign-up, unlimited) - Perchance",
+      "url": "https://perchance.org/pretty-ai",
+      "snippet": "Create beautiful humans with this AI image generator. It&#x27;s completely free, unlimited, and there&#x27;s no sign-up required, ever. You can create pretty pictures and anime or realistic-looking, beautiful human characters with a text-to-image model. AI art of your OC, villains, story characters, your fanfic, etc. Can generate basically any style."
+    },
+    {
+      "title": "368 Female Models - Zoomerang Gallery",
+      "url": "https://zoomerang.app/ai-gallery/female-models",
+      "snippet": "Welcome to the Zoomerang AI Art Gallery! Explore a diverse collection of stunning AI-generated artworks crafted by our talented community. Immerse yourself in creativity and innovation with each unique creation."
+    }
+  ]
+}

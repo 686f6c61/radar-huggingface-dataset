@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Project-Prism/REFRACT-AI-LABS-INVITATIONS",
+  "slug": "project-prism-refract-ai-labs-invitations",
+  "author": "Project-Prism",
+  "url": "https://huggingface.co/Project-Prism/REFRACT-AI-LABS-INVITATIONS",
+  "created_at": "2026-09-27T20:20:42.000Z",
+  "updated_at": "2026-09-27T20:20:42.000Z",
+  "license": "yeah-cool",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gestion de projet conçue pour suivre tous les aspects de votre travail",
+      "url": "https://www.microsoft.com/fr-fr/microsoft-365/project/project-management?msockid=09029a8b3515659e28e38d6a34766442",
+      "snippet": "Simplifiez la tâche des responsables de projet grâce à notre logiciel de gestion de projet. Découvrez comment Project vous permet …"
+    },
+    {
+      "title": "Install Project | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/project/install-project",
+      "snippet": "Before installing Project the first time, sign in with an existing or new Microsoft Account and enter your product key* at …"
+    },
+    {
+      "title": "Microsoft 365 Project: Compare Plans and Pricing",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/project/microsoft-project-enterprise-plans-and-pricing?msockid=09029a8b3515659e28e38d6a34766442",
+      "snippet": "Compare Microsoft Project plans and pricing. Explore tools to manage projects, track resources, and deliver results with solutions …"
+    },
+    {
+      "title": "project.microsoft.com",
+      "url": "https://project.microsoft.com/msal-redirect2",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Project — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Microsoft_Project",
+      "snippet": "Microsoft Project (ou MS Project ou MSP) est un logiciel de gestion de projets édité par Microsoft. Il permet aux chefs de projet et …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/OneJev-9B-GGUF",
+  "slug": "mradermacher-onejev-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/OneJev-9B-GGUF",
+  "created_at": "2026-09-27T22:51:40.000Z",
+  "updated_at": "2026-09-27T23:28:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "onejev",
+    "system-one",
+    "decision-model",
+    "calibration",
+    "multimodal",
+    "gui-agent",
+    "video",
+    "en",
+    "base_model:OmniJev/OneJev-9B",
+    "base_model:quantized:OmniJev/OneJev-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 82967483968,
+  "storage_human": "83.0 GB",
+  "base_model": "OmniJev/OneJev-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimchi Quiz - Only True Korean Food Fans Can Score 20/20",
+      "url": "https://quizthink.com/en/kimchi-quiz",
+      "snippet": "Kimchi Quiz Only True Korean Food Fans Can Score 20/20 That kimchi that shows up on the table every day, how much do you …"
+    },
+    {
+      "title": "Quiz Connais-tu bien la nourriture coréenne ? - Cuisine",
+      "url": "https://www.quizz.biz/quizz-1874763.html",
+      "snippet": "Des citations célèbres en Corée du Sud sur la nourriture ! Trouve la fausse. Ne bois pas la soupe de kimchi en premier. Si tu …"
+    },
+    {
+      "title": "Kimchi Quiz - Quiz.now",
+      "url": "https://quiz.now/kimchi-quiz/",
+      "snippet": "Dec 13, 2024 · Whether you’re a kimchi connoisseur or a curious foodie, this quiz will take you on a flavorful journey through the …"
+    },
+    {
+      "title": "Qu'est-ce que le kimchi coréen - Femme Actuelle",
+      "url": "https://quiz.femmeactuelle.fr/cuisine-4/connaissez-vous-bien-les-cuisines-du-monde-1176/qu-est-ce-que-le-kimchi-coreen-8",
+      "snippet": "Qu'est-ce que le kimchi coréen ? ©istock/gettyimages. Le couscous vient d'être reconnu comme patrimoine immatériel de l'Unesco. …"
+    },
+    {
+      "title": "A Peck of Pickled Puzzlers Quiz: 50 Kimchi Trivia Questions",
+      "url": "https://triviabliss.com/kimchi-trivia-questions/",
+      "snippet": "Welcome one and all to the greatest culinary adventure of your life—it’s time for a kimchi trivia quiz! Ready to spice things up and …"
+    }
+  ]
+}

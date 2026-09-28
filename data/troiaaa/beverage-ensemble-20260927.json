@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Troiaaa/beverage-ensemble-20260927",
+  "slug": "troiaaa-beverage-ensemble-20260927",
+  "author": "Troiaaa",
+  "url": "https://huggingface.co/Troiaaa/beverage-ensemble-20260927",
+  "created_at": "2026-09-27T20:43:08.000Z",
+  "updated_at": "2026-09-27T20:43:13.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "beverage",
+    "bittensor",
+    "sn44",
+    "object-detection",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6659696,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Troiaaa (Troia) - Hugging Face",
+      "url": "https://huggingface.co/Troiaaa",
+      "snippet": "Sort: Recently updated. Troiaaa/pt. Updated about 5 hours ago. Troiaaa/514157. Updated about 21 hours ago • 24. Troiaaa/sn97-cool-pearl-3161"
+    },
+    {
+      "title": "Latest AI Model Releases — September 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest tracked AI model releases as of September 2026. Release data currently runs through Sep 22 2026; most recent: GPT-6 Sol by OpenAI. Browse exact dates for the latest models from leading AI labs."
+    },
+    {
+      "title": "Upcoming AI Models 2026: Confirmed Dates vs Rumoured Targets",
+      "url": "https://aitoolsrecap.com/Blog/upcoming-ai-models-2026-release-tracker",
+      "snippet": "AI model tracker updated 5 September. GPT-6 Astra shipped, Fable 5.1 GA, GLM-5.3 weights out. One confirmed date left this month."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

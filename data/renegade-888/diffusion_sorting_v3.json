@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Renegade-888/diffusion_sorting_v3",
+  "slug": "renegade-888-diffusion_sorting_v3",
+  "author": "Renegade-888",
+  "url": "https://huggingface.co/Renegade-888/diffusion_sorting_v3",
+  "created_at": "2026-09-27T22:29:40.000Z",
+  "updated_at": "2026-09-27T22:32:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:Renegade-888/so101-sorting-v2",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 266623358,
+  "parameters_human": "266.6M",
+  "storage_bytes": 1066526272,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "renegade（英语单词）_百度百科",
+      "url": "https://baike.baidu.com/item/renegade/62652535",
+      "snippet": "其核心语义强调对原有立场、组织或原则的主动背离，常见于宗教、政治及社会语境，如“turn renegade”（倒戈）、“叛变底 …"
+    },
+    {
+      "title": "RENEGADE中文 (简体)翻译：剑桥词典 - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/renegade",
+      "snippet": "同义词 apostate formal turncoat disapproving (renegade在剑桥英语-中文（简体）词典的翻译 © Cambridge University Press) B1"
+    },
+    {
+      "title": "Jeep® Renegade e-Hybrid | SUV Compact Hybride| Jeep® FR",
+      "url": "https://www.jeep.fr/jeep-renegade/e-hybrid",
+      "snippet": "Découvrez le Jeep® Renegade e-Hybrid. Le SUV compact alliant design audacieux, technologie hybride avancée et confort …"
+    },
+    {
+      "title": "Renegade (TV series) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Renegade_(TV_series)",
+      "snippet": "Renegade is an American television series that ran for 110 episodes spanning five seasons, first broadcast between September 19, …"
+    },
+    {
+      "title": "Jeep® Renegade 4xe | Hybride rechargeable| Jeep® FR",
+      "url": "https://www.jeep.fr/jeep-renegade/plug-in-hybrid",
+      "snippet": "Jeep® Renegade Hybride rechargeable 4xe combine énergie électrique, confort de conduite et une transmission intégrale qui …"
+    }
+  ]
+}

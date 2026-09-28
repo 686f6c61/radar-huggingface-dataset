@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "johanneli/fiorillo-v0.1",
+  "slug": "johanneli-fiorillo-v0-1",
+  "author": "johanneli",
+  "url": "https://huggingface.co/johanneli/fiorillo-v0.1",
+  "created_at": "2026-09-27T23:39:57.000Z",
+  "updated_at": "2026-09-27T23:43:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "laya",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "laya",
+    "safetensors",
+    "medical",
+    "typed-decisions",
+    "calibrated-probabilities",
+    "pubmedqa",
+    "hospital-readmission",
+    "en",
+    "dataset:qiaojin/PubMedQA",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "doi:10.57967/hf/10639",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609220,
+  "storage_human": "843 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

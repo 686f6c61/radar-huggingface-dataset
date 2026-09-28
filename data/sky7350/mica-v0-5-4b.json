@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "sky7350/Mica-v0.5-4B",
+  "slug": "sky7350-mica-v0-5-4b",
+  "author": "sky7350",
+  "url": "https://huggingface.co/sky7350/Mica-v0.5-4B",
+  "created_at": "2026-09-27T20:51:18.000Z",
+  "updated_at": "2026-09-27T21:41:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ko"
+  ],
+  "tags": [
+    "judge",
+    "llm-as-a-judge",
+    "evaluation",
+    "agents",
+    "gguf",
+    "llama.cpp",
+    "text-classification",
+    "en",
+    "zh",
+    "ko",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sky7350/Mica-v0.1-4B · Hugging Face",
+      "url": "https://huggingface.co/sky7350/Mica-v0.1-4B",
+      "snippet": "Instructions to use sky7350/Mica-v0.1-4B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use sky7350/Mica-v0.1-4B with Transformers:"
+    },
+    {
+      "title": "sky7350 (Akiv) - Hugging Face",
+      "url": "https://huggingface.co/sky7350/datasets",
+      "snippet": "Recent Activity updated a model1 day ago sky7350/Mica-v0.1-4B liked a model2 days ago sky7350/Mica-v0.1-4B new activity2 days ago multimodalart/jev-decision-index: Add Mica v0.1 4B: open Jev-style judge on Qwen3.5-4B, English + Korean (trained) View all activity"
+    },
+    {
+      "title": "GitHub - akivet/Mica-v0.1-4B",
+      "url": "https://github.com/akivet/Mica-v0.1-4B",
+      "snippet": "The largest gap is a note inside the state that tells the model to pick a wrong option: Mica still gets 69.1 % right, JEV 17.5 %, Kev 31.4 %, base Qwen3.5-4B 1.0 %. The same note pointing at the right option lifts Mica to 88.7 %, so such notes still move it."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "For a model in this tier, that is an excellent result on multi-step agentic work.\" Nick Hollon, Software Engineer, LangChain \"Gemini 3.7 Flash achieves on-par performance with mid-sized models such as GPT-5.6-Terra on our benchmarks, but at around half the cost, making it a strong contender in that category.\" Kyrill Hux, Co-Founder, Nunu.ai"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "goncalvesah/retrieval",
+  "slug": "goncalvesah-retrieval",
+  "author": "goncalvesah",
+  "url": "https://huggingface.co/goncalvesah/retrieval",
+  "created_at": "2026-09-28T01:03:56.000Z",
+  "updated_at": "2026-09-28T01:04:00.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "goncalvesah (Felipe Goncalves) - Hugging Face",
+      "url": "https://huggingface.co/goncalvesah/models",
+      "snippet": "I make datasets nobody downloads"
+    },
+    {
+      "title": "Lucas Gonçalves - AI Engineer | RAG | AI Agents | LLM | Python - LinkedIn",
+      "url": "https://www.linkedin.com/in/lucas-goncalvessz/en",
+      "snippet": "AI Engineer. 2+ years building retrieval-augmented and agentic LLM systems in Python, including agent safety limits calibrated at 96.7% true-positive against 3.3% false-positive instead of guessed ..."
+    },
+    {
+      "title": "goncalvesah/embedder at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/goncalvesah/embedder/tree/main",
+      "snippet": "Datasets: goncalvesah / embedder like 0 Tags: arrow image-depth light manual moderate progressive + 3 License: mit Dataset card FilesFiles and versions xet Community main embedder 9.43 kB 1 contributor History:2 commits goncalvesah Upload 2 files a6804c2 verifiedabout 19 hours ago .gitattributes Safe 2.5 kBinitial commitabout 19 hours ago README.md Safe 639 BytesUpload 2 filesabout 19 hours ..."
+    },
+    {
+      "title": "Thiago Goncalves — AI Platform & Security · Builder-Operator",
+      "url": "https://thiagogoncalves.com/",
+      "snippet": "Thiago Goncalves. Working at the intersection of AI platforms and cybersecurity — designing the infrastructure around models (memory, guardrails, auditability) so they hold up in production, under scrutiny, and against misuse."
+    },
+    {
+      "title": "GitHub - catarinassgoncalves/information-retrieval-nlp: Information ...",
+      "url": "https://github.com/catarinassgoncalves/information-retrieval-nlp",
+      "snippet": "Information retrieval and text summarization system combining lexical retrieval, dense semantic representations, supervised learning, clustering, and language models."
+    }
+  ]
+}

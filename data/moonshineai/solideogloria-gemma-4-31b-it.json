@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "moonshineai/SoliDeoGloria-Gemma-4-31B-it",
+  "slug": "moonshineai-solideogloria-gemma-4-31b-it",
+  "author": "moonshineai",
+  "url": "https://huggingface.co/moonshineai/SoliDeoGloria-Gemma-4-31B-it",
+  "created_at": "2026-09-28T01:04:35.000Z",
+  "updated_at": "2026-09-28T02:13:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507810,
+  "storage_human": "62.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook如何设置签名？添加Outlook签名-百度经验",
+      "url": "https://jingyan.baidu.com/article/eae07827d1ff0e5fec5485bb.html",
+      "snippet": "Dec 13, 2019 · Outlook如何设置签名？添加Outlook签名,Outlook是我们日常工作中经常用到的邮件收发工具。发送邮件时，在最后的 …"
+    },
+    {
+      "title": "如何设置修改outlook邮箱签名 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/7082dc1c0cb152e40a89bd13.html",
+      "snippet": "Jun 1, 2017 · 如何设置修改outlook邮箱签名,工作中，经常会有人问outlook邮箱的签名怎么设置或修改，不懂的请往下看啦~"
+    },
+    {
+      "title": "Microsoft Exchange 与 Office Outlook 是否有区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/19930376?sort=created",
+      "snippet": "Nov 24, 2011 · Exchange介绍到这里，你大概就能理解，为什么会有很多Outlook粉的存在了——Exchange的强大也支撑了Outlook。 …"
+    },
+    {
+      "title": "怎样优雅地使用 Outlook？ - 知乎",
+      "url": "https://www.zhihu.com/question/21028460",
+      "snippet": "3.使用VBA实现自动密抄送 众所周知，outlook的文件存储在单一pst文件当中，虽然我们可以对pst文件进行备份，但是有时候意外的 …"
+    },
+    {
+      "title": "outlook会议邀请如何修改时间-百度经验",
+      "url": "https://jingyan.baidu.com/article/1876c852a779bfc80b13769e.html",
+      "snippet": "May 7, 2023 · outlook会议邀请如何修改时间,已经发送的会议邀请，突然领导有事只能调整会议时间了，如果重新发送一次会议邮件 …"
+    }
+  ]
+}
