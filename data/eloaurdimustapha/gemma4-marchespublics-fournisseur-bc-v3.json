@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "EloaurdiMustapha/gemma4-marchespublics-fournisseur-bc-v3",
+  "slug": "eloaurdimustapha-gemma4-marchespublics-fournisseur-bc-v3",
+  "author": "EloaurdiMustapha",
+  "url": "https://huggingface.co/EloaurdiMustapha/gemma4-marchespublics-fournisseur-bc-v3",
+  "created_at": "2026-09-28T21:19:41.000Z",
+  "updated_at": "2026-09-28T21:21:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 6326844352,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EloaurdiMustapha/gemma4-marchespublics-sft2 · Hugging Face",
+      "url": "https://huggingface.co/EloaurdiMustapha/gemma4-marchespublics-sft2",
+      "snippet": "EloaurdiMustapha / gemma4-marchespublics-sft2 Like 0 GGUF gemma4 llama.cpp llama-cpp unsloth vision-language-model conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 model overview - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core",
+      "snippet": "Gemma is a family of generative artificial intelligence models and you can use them in a wide variety of generation tasks, including question answering, summarization, and reasoning. Gemma models are provided with open weights and permit responsible commercial use, allowing you to tune and deploy them in your own projects and applications. Gemma 4 model family spans four distinct architectures ..."
+    },
+    {
+      "title": "Marchés publics électroniques - marchespublics.gov.ma",
+      "url": "https://www.marchespublics.gov.ma/?lang=fr",
+      "snippet": "Service \"Dématérialisation des marchés publics\" Disposer d&#x27;un service d&#x27;alerte, quotidien ou hebdomadaire, selon les critères que vous définissez Disposez de l&#x27;historique des actions réalisées sur les consultations"
+    },
+    {
+      "title": "gemma4 - ollama.com",
+      "url": "https://ollama.com/library/gemma4:latest",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    }
+  ]
+}

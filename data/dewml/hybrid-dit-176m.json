@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dewml/hybrid-dit-176m",
+  "slug": "dewml-hybrid-dit-176m",
+  "author": "dewml",
+  "url": "https://huggingface.co/dewml/hybrid-dit-176m",
+  "created_at": "2026-09-28T21:34:15.000Z",
+  "updated_at": "2026-09-29T02:15:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "dew",
+  "languages": [],
+  "tags": [
+    "dew",
+    "jax",
+    "flax",
+    "diffusion",
+    "text-to-image",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4623422141,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - HiDream-ai/Hi-DiT: [ECCV 2026] Official implementation of Hi ...",
+      "url": "https://github.com/HiDream-ai/Hi-DiT",
+      "snippet": "Hi-DiT bridges latent-space and pixel-space diffusion in a single Diffusion Transformer. The latent stream provides efficient semantic planning in a compact VAE latent space, while a time-gated pixel stream is activated in the low-noise regime to recover high-frequency details. This hybrid design keeps the optimization stability of latent diffusion while retaining direct access to pixel-level ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 512 AI models across 486 benchmarks, with 201 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "ModelFit | Find the Best Local AI Model for Your Hardware",
+      "url": "https://modelfit.io/",
+      "snippet": "Find the Best Local AI Model for Your Device Tell us your hardware and get the single best local LLM it can actually run: one verified pick sized to your exact memory, not a generic chatbot guess. Honest speed and quality estimates for Apple Silicon, iPhone, NVIDIA, and AMD."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LocalModel.run | Run AI models in your browser, or check any device",
+      "url": "https://localmodel.run/",
+      "snippet": "The reference layer Can I run any AI model locally? Pick a model and your device. Get a yes, tight, or no, plus the command to run it. 183 models, 43 devices, every size measured."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "PierreGtch",
   "url": "https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rall_L2",
   "created_at": "2026-09-27T15:36:55.000Z",
-  "updated_at": "2026-09-27T15:37:04.000Z",
+  "updated_at": "2026-09-28T22:16:05.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 12692096,
   "parameters_human": "12.7M",
-  "storage_bytes": 50771472,
-  "storage_human": "51 MB",
+  "storage_bytes": 507715368,
+  "storage_human": "508 MB",
   "base_model": null,
   "formats": [
     "safetensors"

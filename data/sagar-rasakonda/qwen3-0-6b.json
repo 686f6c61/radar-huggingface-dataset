@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sagar-rasakonda/Qwen3-0.6B",
+  "slug": "sagar-rasakonda-qwen3-0-6b",
+  "author": "sagar-rasakonda",
+  "url": "https://huggingface.co/sagar-rasakonda/Qwen3-0.6B",
+  "created_at": "2026-09-28T21:10:55.000Z",
+  "updated_at": "2026-09-28T21:10:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 1514722982,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Sagard FR",
+      "url": "https://www.sagard.com/fr/",
+      "snippet": "Capital. Culture. Réseau. Sagard est un gestionnaire multi-stratégies d’actifs alternatifs mondial présent dans les domaines du …"
+    },
+    {
+      "title": "Home - Sagard",
+      "url": "https://www.sagard.com/",
+      "snippet": "Capital. Culture. Network. Sagard is a global multi-strategy alternative asset management firm active in venture capital, private …"
+    },
+    {
+      "title": "Sagar, Madhya Pradesh - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sagar,_Madhya_Pradesh",
+      "snippet": "Sagar's metropolitan area includes Sagar Municipal Corporation, Sagar Cantonment, Makronia, Rajakhedi and Gambhiria. Sagar …"
+    },
+    {
+      "title": "Football - Sagar TV Live",
+      "url": "https://live-sagar-tv.blogspot.com/2025/07/demo.html",
+      "snippet": "Jul 18, 2025 · Football Match will appear below after game starts. If livestream isn't showing, game may not have started yet. Refresh …"
+    },
+    {
+      "title": "Sagar (name) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sagar_(name)",
+      "snippet": "Sagar in Hindi, Gujarati, Bengali and Marathi means ocean. Sagar is a very common first name in India for boys and also a surname …"
+    }
+  ]
+}

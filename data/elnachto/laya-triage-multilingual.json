@@ -5,7 +5,7 @@
   "author": "elnachto",
   "url": "https://huggingface.co/elnachto/laya-triage-multilingual",
   "created_at": "2026-09-28T03:07:14.000Z",
-  "updated_at": "2026-09-28T03:09:51.000Z",
+  "updated_at": "2026-09-29T01:10:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

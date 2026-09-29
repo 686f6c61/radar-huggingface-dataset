@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tarfandoon/laya-fa-support",
+  "slug": "tarfandoon-laya-fa-support",
+  "author": "tarfandoon",
+  "url": "https://huggingface.co/tarfandoon/laya-fa-support",
+  "created_at": "2026-09-28T22:25:07.000Z",
+  "updated_at": "2026-09-28T22:44:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "safetensors",
+    "laya",
+    "persian",
+    "farsi",
+    "text-classification",
+    "customer-support",
+    "decision-model",
+    "fine-tuned",
+    "fa",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 1322016908,
+  "storage_human": "1.3 GB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Laya AI Model: How It Works, Run It Locally, and Evaluate It",
+      "url": "https://huggingface.co/blog/sora-2/laya-ai-model-how-it-works-run-it-locally-and-eval",
+      "snippet": "The Laya AI model is built for a particular kind of work: making a bounded decision about an input, then returning a structured answer and probabilities. Give it a support ticket, an email, a conversation, or a JSON state. Ask which queue should receive it, how urgent it is, or whether a stated condition is true. Laya answers those questions without writing a paragraph that your application ..."
+    },
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "Instead of staying bitter, I decided to take everything I learned, fix every architectural limitation of the old approach, and build a completely open, horizontal System 1 decision model family: Laya."
+    },
+    {
+      "title": "Laya: open-source alternative to TypeSafe Jev, runs locally",
+      "url": "https://brainfunctioncollapse.com/laya",
+      "snippet": "Laya is the open-source alternative to TypeSafe Jev: a small model that decides instead of chatting. Typed answers with real probabilities in 21 ms, on your own machine."
+    },
+    {
+      "title": "tarfandoon (Ali Jahani) - Hugging Face",
+      "url": "https://huggingface.co/tarfandoon/models",
+      "snippet": "AI Engineer updated a model about 1 month ago liked a model about 1 month ago"
+    },
+    {
+      "title": "GitHub - alipyth/laya-persian-benchmark: Persian (fa) diagnostic ...",
+      "url": "https://github.com/alipyth/laya-persian-benchmark",
+      "snippet": "Persian support-triage decisions (persian_fa) فارسی A small, self-contained diagnostic for Laya on Persian: 64 synthetic support messages, 8 families, 4 balanced labels, frozen prompts in two instruction languages, an offline audit, and model-free tests. Each message is routed to one department: billing, technical, cancel, or other."
+    }
+  ]
+}

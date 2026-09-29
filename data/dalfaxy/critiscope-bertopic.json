@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Dalfaxy/critiscope-bertopic",
+  "slug": "dalfaxy-critiscope-bertopic",
+  "author": "Dalfaxy",
+  "url": "https://huggingface.co/Dalfaxy/critiscope-bertopic",
+  "created_at": "2026-09-28T23:18:37.000Z",
+  "updated_at": "2026-09-28T23:18:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "bertopic",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "bertopic",
+    "topic-modeling",
+    "allocine",
+    "fr",
+    "dataset:tblard/allocine",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81107562,
+  "storage_human": "81 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BERTopic - Advanced Transformer Topic Modeling",
+      "url": "https://bertopic.org/",
+      "snippet": "BERTopic is a powerful Python library for topic modeling that uses transformer embeddings and c-TF-IDF to generate clear, interpretable topics from large collections of text. It enables accurate clustering of documents while making topic discovery easier for researchers, developers, and data scientists."
+    },
+    {
+      "title": "BERTopic - GitHub Pages",
+      "url": "https://maartengr.github.io/BERTopic/index.html",
+      "snippet": "BERTopic BERTopic is a topic modeling technique that leverages 🤗 transformers and c-TF-IDF to create dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions. BERTopic supports all kinds of topic modeling techniques:"
+    },
+    {
+      "title": "GitHub - MaartenGr/BERTopic: Leveraging BERT and c-TF-IDF to create ...",
+      "url": "https://github.com/MaartenGr/BERTopic",
+      "snippet": "BERTopic is a topic modeling technique that leverages 🤗 transformers and c-TF-IDF to create dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions. BERTopic supports all kinds of topic modeling techniques:"
+    },
+    {
+      "title": "BERTopic - Advanced Transformer-Based Topic Modeling",
+      "url": "https://bertopic.com/",
+      "snippet": "BERTopic AI-Powered Topic Modeling for NLP Projects BERTopic is a modern topic modeling framework that addresses many limitations of traditional approaches."
+    },
+    {
+      "title": "BERTopic — BERTopic latest documentation",
+      "url": "https://bertopic.readthedocs.io/en/latest/index.html",
+      "snippet": "BERTopic is a topic modeling technique that leverages 🤗 transformers and c-TF-IDF to create dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions."
+    }
+  ]
+}

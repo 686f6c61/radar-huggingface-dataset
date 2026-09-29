@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-ckpt-h20-limx-1a3ba0b02f767bce-bcdf11012636",
+  "slug": "davidwdw-fa-ckpt-h20-limx-1a3ba0b02f767bce-bcdf11012636",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-ckpt-h20-limx-1a3ba0b02f767bce-bcdf11012636",
+  "created_at": "2026-09-28T23:31:18.000Z",
+  "updated_at": "2026-09-28T23:31:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "model.ckpt · stabilityai/TripoSR at main - Hugging Face",
+      "url": "https://huggingface.co/stabilityai/TripoSR/blob/main/model.ckpt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Driver And Vehicle Information Database (DAVID)",
+      "url": "https://www.flhsmv.gov/courts-enforcement/david/",
+      "snippet": "The Driver And Vehicle Information Database (DAVID) is a multifaceted database that affords immediate retrieval of driver and motor vehicle information that is indispensable for law enforcement and criminal justice officials. DAVID is the primary reporting mechanism for Fatalities and Serious Bodily Injury (FSBI). Annual certification forms, attestation statements, quarterly control review ..."
+    }
+  ]
+}

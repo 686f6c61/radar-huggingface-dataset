@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "MrBenjaroo/ppo-LunarLander-v3-veryBadTest",
+  "slug": "mrbenjaroo-ppo-lunarlander-v3-verybadtest",
+  "author": "MrBenjaroo",
+  "url": "https://huggingface.co/MrBenjaroo/ppo-LunarLander-v3-veryBadTest",
+  "created_at": "2026-09-28T20:03:38.000Z",
+  "updated_at": "2026-09-28T20:23:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1666696,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DDOS Attacks, Server Load Issues and Donations. | Zooville Forum",
+      "url": "https://www.zoovilleforum.net/threads/ddos-attacks-server-load-issues-and-donations.141784/",
+      "snippet": "Oct 7, 2025 · However, it wont be sustainable unless YOU the zoo community wish to keep ZV alive with your donations. We can …"
+    },
+    {
+      "title": "forum | Zooville Forum",
+      "url": "https://www.zoovilleforum.net/tags/forum/",
+      "snippet": "May 11, 2023 · Zooville Forum provides a platform for discussions, updates, and community engagement on various topics."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "网传美国现任总统唐纳德特朗普于2026年9月2日逝世，是真的吗？",
+      "url": "https://www.zhihu.com/question/2078938974714971101",
+      "snippet": "Sep 4, 2026 · 虽然大概率是假的，不过最近我看到特朗普发了他的纪念币，我朋友吐槽说，这纪念币的年份xxxx-2026看着就不太吉利。"
+    },
+    {
+      "title": "F/M Dogs | Zooville Forum",
+      "url": "https://www.zoovilleforum.net/forums/f-m-dogs.233/",
+      "snippet": "Females with male dogs"
+    }
+  ]
+}

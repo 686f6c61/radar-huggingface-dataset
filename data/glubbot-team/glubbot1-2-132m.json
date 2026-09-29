@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Glubbot-Team/glubbot1.2-132m",
+  "slug": "glubbot-team-glubbot1-2-132m",
+  "author": "Glubbot-Team",
+  "url": "https://huggingface.co/Glubbot-Team/glubbot1.2-132m",
+  "created_at": "2026-09-28T22:54:54.000Z",
+  "updated_at": "2026-09-28T23:06:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "gpt2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123886080,
+  "parameters_human": "123.9M",
+  "storage_bytes": 745743616,
+  "storage_human": "746 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Glubbot-Team (Glubbot Team) - Hugging Face",
+      "url": "https://huggingface.co/Glubbot-Team",
+      "snippet": "Follow 0 followers 1 following AI & ML interests None yet Recent Activity updateda model9 days ago"
+    },
+    {
+      "title": "caplette776/glubbot1.2-132m",
+      "url": "https://ollama.com/caplette776/glubbot1.2-132m",
+      "snippet": "glubbot1.2-132m A compact 132-Million parameter language model trained on the Shakespeare text distribution. It has been compiled directly into a GGUF file for fast, native execution inside Ollama."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards Simple, structured overviews of how an advanced AI model was designed and evaluated."
+    },
+    {
+      "title": "Gemini (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gemini_(language_model)",
+      "snippet": "It also introduces improved agentic capabilities, a new Google Gen AI SDK, and \"Jules\", an experimental AI coding agent for GitHub. [45][non-primary source needed] In March 2025, Google announced Gemini Robotics, a vision-language-action model based on the Gemini 2.0 family of models."
+    }
+  ]
+}

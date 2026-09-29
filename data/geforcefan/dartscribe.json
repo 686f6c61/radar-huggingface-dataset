@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "geforcefan/dartscribe",
+  "slug": "geforcefan-dartscribe",
+  "author": "geforcefan",
+  "url": "https://huggingface.co/geforcefan/dartscribe",
+  "created_at": "2026-09-29T00:43:14.000Z",
+  "updated_at": "2026-09-29T01:05:30.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "darts",
+    "dartboard",
+    "yolo11",
+    "object-detection",
+    "dataset:geforcefan/dartscribe",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17071459,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=object-detection&library=onnx&p=31&sort=trending",
+      "snippet": "Explore machine learning models. 948 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: object-detection, onnx Clear all"
+    },
+    {
+      "title": "Customize AI With the Project G-Assist Plug-In Builder | NVIDIA Blog",
+      "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-g-assist-plugin-builder/",
+      "snippet": "For those looking to expand Project G-Assist capabilities in creative ways, the AI supports custom plug-ins. With the new ChatGPT-based G-Assist Plug-In Builder, developers and enthusiasts can create and customize G-Assist&#x27;s functionality, adding new commands, connecting external tools and building AI workflows tailored to specific needs."
+    },
+    {
+      "title": "Project G-Assist: An AI Assistant For GeForce RTX AI PCs, Is ... - NVIDIA",
+      "url": "https://www.nvidia.com/en-us/geforce/news/g-assist-ai-companion-for-rtx-ai-pcs/",
+      "snippet": "At Computex 2024, we showcased Project G-Assist — a tech demo that offered a glimpse of how AI assistants could elevate the PC experience for gamers, creators, and more. Today, we&#x27;re releasing an experimental version of the Project G-Assist System Assistant feature for GeForce RTX desktop users, via NVIDIA app, with GeForce RTX laptop support coming in a future update. As modern PCs become ..."
+    },
+    {
+      "title": "Free AI Art Generator: All the best AI models in one place",
+      "url": "https://creator.nightcafe.studio/",
+      "snippet": "NightCafe is the AI Art Generator designed for creativity and fun. Access all the best AI art models and join a supportive community of creators."
+    },
+    {
+      "title": "Free DGX Spark model recipes — Mia&#x27;s AI Lab",
+      "url": "https://mia-ai.net/models",
+      "snippet": "Open-source recipes to run GLM, DeepSeek, Qwen and MiMo on NVIDIA DGX Sparks, with measured benchmarks and copy-paste AI-agent install prompts."
+    }
+  ]
+}

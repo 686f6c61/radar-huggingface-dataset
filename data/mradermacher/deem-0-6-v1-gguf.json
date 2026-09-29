@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/deem-0.6-v1-GGUF",
+  "slug": "mradermacher-deem-0-6-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/deem-0.6-v1-GGUF",
+  "created_at": "2026-09-28T18:55:07.000Z",
+  "updated_at": "2026-09-28T19:01:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "decision-model",
+    "cpu-inference",
+    "rust",
+    "edge",
+    "routing",
+    "en",
+    "base_model:LibertAIDAI/deem-0.6-v1",
+    "base_model:quantized:LibertAIDAI/deem-0.6-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 5697957120,
+  "storage_human": "5.7 GB",
+  "base_model": "LibertAIDAI/deem-0.6-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Poopbutt1234/o-unrestricted",
+  "slug": "poopbutt1234-o-unrestricted",
+  "author": "Poopbutt1234",
+  "url": "https://huggingface.co/Poopbutt1234/o-unrestricted",
+  "created_at": "2026-09-28T23:47:26.000Z",
+  "updated_at": "2026-09-28T23:56:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ollama",
+    "qwen",
+    "independent",
+    "text-generation",
+    "base_model:0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
+    "base_model:finetune:0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rencontres villes france : Toutes les villes - webcamo.com",
+      "url": "https://webcamo.com/rencontre-femme-toutes-villes-1.html",
+      "snippet": "Rencontres villes france : Toutes les villes Rencontre femme Toutes Villes page 1"
+    },
+    {
+      "title": "Webcamo de maintenon",
+      "url": "https://webcamo.com/profil-webcamo.html",
+      "snippet": "Webcamo Rencontre homme celibataire maintenon Pays: Region: Departement: Ville: Code postal: Age: FRANCE webcam centre …"
+    },
+    {
+      "title": "Hummer de lille - webcamo.com",
+      "url": "https://webcamo.com/profil-hummer.html",
+      "snippet": "hummer jeune hoppe sympha desir faire rencontre et partager des experiences avec un homme mature"
+    },
+    {
+      "title": "Lucky32 de bordeaux - webcamo.com",
+      "url": "https://webcamo.com/profil-lucky32.html",
+      "snippet": "lucky32 je suis celibataire et je cherche une relation"
+    },
+    {
+      "title": "Rencontre femme celibataire saint-pierre-d-oleron - webcamo.com",
+      "url": "https://webcamo.com/celibataire/rencontre-femme-saint-pierre-d-oleron-1.html",
+      "snippet": "Le seul chat gratuit de rencontre femme celibataire dans le saint-pierre-d-oleron en celibataire sur lequel on peut se voir par webcam …"
+    }
+  ]
+}

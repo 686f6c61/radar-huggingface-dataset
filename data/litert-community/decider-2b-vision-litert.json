@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "litert-community/decider-2b-vision-LiteRT",
+  "slug": "litert-community-decider-2b-vision-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/decider-2b-vision-LiteRT",
+  "created_at": "2026-09-28T22:36:46.000Z",
+  "updated_at": "2026-09-28T22:57:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "litert-lm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "decision-model",
+    "vision",
+    "structured-output",
+    "hybrid",
+    "gated-deltanet",
+    "image-text-to-text",
+    "en",
+    "base_model:Mapika/decider-2b-vision",
+    "base_model:finetune:Mapika/decider-2b-vision",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13178638976,
+  "storage_human": "13.2 GB",
+  "base_model": "Mapika/decider-2b-vision",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Mapika/decider: A family of System One-style models fine-tuned ...",
+      "url": "https://github.com/Mapika/decider",
+      "snippet": "A family of System One-style models fine-tuned from Qwen3.5, designed for one-pass typed decisions with calibrated probabilities. - Mapika/decider"
+    },
+    {
+      "title": "Mapika/decider-2b-vision · Hugging Face",
+      "url": "https://huggingface.co/Mapika/decider-2b-vision",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Decider 2B Vision: Specifications & Sources - gradually.ai",
+      "url": "https://www.gradually.ai/en/ai-models/decider-2b-vision/",
+      "snippet": "Decider 2B Vision by Mapika. Technical specifications, availability, and official sources."
+    },
+    {
+      "title": "litert-community/decider-0.8b-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/litert-community/decider-0.8b-LiteRT",
+      "snippet": "litert-community / decider-.8b-LiteRT Like 0 Follow LiteRT Community (FKA TFLite) 9.23k Text Classification LiteRT-LM LiteRT English decision-model structured-output hybrid gated-deltanet License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Decider 2B Vision by Mapika — VRAM 4.4GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Mapika%2Fdecider-2b-vision,1SUvHpABlJ7CDk3W3he1HT",
+      "snippet": "Decider 2B Vision Parameters and Internals ... Rank the Decider 2B Vision capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

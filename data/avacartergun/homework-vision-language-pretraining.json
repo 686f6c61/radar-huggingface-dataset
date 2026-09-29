@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "avacartergun/homework-vision-language-pretraining",
+  "slug": "avacartergun-homework-vision-language-pretraining",
+  "author": "avacartergun",
+  "url": "https://huggingface.co/avacartergun/homework-vision-language-pretraining",
+  "created_at": "2026-09-28T23:46:21.000Z",
+  "updated_at": "2026-09-28T23:46:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marcus-ikeda/paper_004105232_vision_language_pretraining - Hugging Face",
+      "url": "https://huggingface.co/Marcus-ikeda/paper_004105232_vision_language_pretraining",
+      "snippet": "The full text is in paper_004105232_vision_language_pretraining.md."
+    },
+    {
+      "title": "A Dive into Vision-Language Models - Hugging Face",
+      "url": "https://huggingface.co/blog/vision_language_pretraining",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2312.06224",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "[2210.09263] Vision-Language Pre-training: Basics, Recent Advances, and ...",
+      "url": "https://arxiv.org/abs/2210.09263",
+      "snippet": "This paper surveys vision-language pre-training (VLP) methods for multimodal intelligence that have been developed in the last few years. We group these approaches into three categories: (i) VLP for image-text tasks, such as image captioning, image-text retrieval, visual question answering, and visual grounding; (ii) VLP for core computer vision tasks, such as (open-set) image classification ..."
+    },
+    {
+      "title": "Scalable Vision-Language-Action Model Pretraining - GitHub",
+      "url": "https://github.com/microsoft/ViTra",
+      "snippet": "VITRA: Scalable Vision-Language-Action Model Pretraining for Robotic Manipulation with Real-Life Human Activity Videos VITRA is a novel approach for pretraining Vision-Language-Action (VLA) models for robotic manipulation using large-scale, unscripted, real-world videos of human hand activities."
+    }
+  ]
+}

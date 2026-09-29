@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "joshycodes/gemma-3-12b-fve-advanchor-s1",
+  "slug": "joshycodes-gemma-3-12b-fve-advanchor-s1",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/gemma-3-12b-fve-advanchor-s1",
+  "created_at": "2026-09-28T22:54:06.000Z",
+  "updated_at": "2026-09-28T22:57:34.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma3",
+    "synthetic-document-finetuning",
+    "self-authored-character",
+    "model-welfare",
+    "research",
+    "not-for-deployment",
+    "base_model:google/gemma-3-12b-it",
+    "base_model:finetune:google/gemma-3-12b-it",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13194203760,
+  "parameters_human": "13.19B",
+  "storage_bytes": 26426626001,
+  "storage_human": "26.4 GB",
+  "base_model": "google/gemma-3-12b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sea of Thieves - Welcome to Sea of Thieves on Xbox, Windows ...",
+      "url": "https://www.seaofthieves.com/",
+      "snippet": "Regular free updates come to Sea of Thieves each month, adding characters, content, mechanics and rewards. Follow the unfolding …"
+    },
+    {
+      "title": "Sea of Thieves - Bienvenue dans Sea of Thieves sur Xbox, Windows ...",
+      "url": "https://www.seaofthieves.com/fr",
+      "snippet": "Des mises à jour gratuites débarquent tous les mois dans Sea of Thieves, ajoutant des personnages, du contenu, des mécaniques …"
+    },
+    {
+      "title": "Sea of Thieves: 2026 Edition sur Steam",
+      "url": "https://store.steampowered.com/app/1172620/Sea_of_Thieves).?l=french",
+      "snippet": "Jun 3, 2020 · Sea of Thieves est un jeu d’aventure pirate à succès offrant l'expérience ultime de la vie de pirate avec des trésors …"
+    },
+    {
+      "title": "Sea of Thieves - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sea_of_Thieves",
+      "snippet": "Sea of Thieves is a 2018 action-adventure game developed by Rare and published by Activision. The player assumes the role of a …"
+    },
+    {
+      "title": "Sea of Thieves - YouTube",
+      "url": "https://www.youtube.com/channel/UCtt2JqBTG-KoBae4F0Ay2tg",
+      "snippet": "Official page for Rare's epic multiplayer pirate paradise adventure, Sea of Thieves - out now on Xbox Series X|S, Xbox One, …"
+    }
+  ]
+}

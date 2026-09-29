@@ -5,7 +5,7 @@
   "author": "chou-lucas",
   "url": "https://huggingface.co/chou-lucas/transformer-en-zh",
   "created_at": "2026-09-28T03:07:50.000Z",
-  "updated_at": "2026-09-28T08:06:43.000Z",
+  "updated_at": "2026-09-28T16:48:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "translation",
@@ -30,10 +30,10 @@
   "likes": 0,
   "downloads_30d": 9,
   "trending_score": 0,
-  "parameters": 60554496,
-  "parameters_human": "60.6M",
-  "storage_bytes": 637643074,
-  "storage_human": "638 MB",
+  "parameters": 93322496,
+  "parameters_human": "93.3M",
+  "storage_bytes": 1010962658,
+  "storage_human": "1.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

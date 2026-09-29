@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "khronnuz/Ling-3.0-flash-exl3",
+  "slug": "khronnuz-ling-3-0-flash-exl3",
+  "author": "khronnuz",
+  "url": "https://huggingface.co/khronnuz/Ling-3.0-flash-exl3",
+  "created_at": "2026-09-28T20:31:51.000Z",
+  "updated_at": "2026-09-28T21:47:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bailing_hybrid",
+    "exl3",
+    "text-generation",
+    "custom_code",
+    "base_model:inclusionAI/Ling-3.0-flash",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68361363634,
+  "storage_human": "68.4 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VK Видео — смотреть онлайн бесплатно",
+      "url": "https://vkvideo.ru/",
+      "snippet": "VK Видео — смотрите в приложении на смартфоне и ТВ лучшие фильмы, шоу, сериалы, спортивные трансляции и многое …"
+    },
+    {
+      "title": "КИНО | ФИЛЬМЫ | СЕРИАЛЫ — смотреть онлайн все 4701 видео в 2026 | VK …",
+      "url": "https://vkvideo.ru/@qualitymovies",
+      "snippet": "Feb 7, 2016 · КИНО | ФИЛЬМЫ | СЕРИАЛЫ — 4 701 видео. Смотрите онлайн VK Видео."
+    },
+    {
+      "title": "vk free movie vk free movies — Yandex: found 1 million results",
+      "url": "https://tv.yandex.com/search?text=vk+free+movie+vk+free+movies&msp=1",
+      "snippet": "Aug 21, 2026 · Watch movies, cartoons, TV series and shows online & offline on any device. Enjoy premieres and blockbusters from …"
+    },
+    {
+      "title": "ФИЛЬМЫ HD | ONLINE — смотреть онлайн все 7605 видео в 2026 | VK …",
+      "url": "https://m.vkvideo.ru/@bigcollection?section=all",
+      "snippet": "Mar 10, 2008 · ФИЛЬМЫ HD | ONLINE — 7 605 видео. Смотрите онлайн VK Видео."
+    },
+    {
+      "title": "viewed videos on vk — Yandex: found 2 million results",
+      "url": "https://online.yandex.com/search?text=viewed+videos+on+vk&msp=1",
+      "snippet": "Just paste the VK video URL into our online VK downloader and download your favorite videos instantly. Perfect for offline viewing, …"
+    }
+  ]
+}

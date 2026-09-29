@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Romehta94/perceiver-generation-distilled",
+  "slug": "romehta94-perceiver-generation-distilled",
+  "author": "Romehta94",
+  "url": "https://huggingface.co/Romehta94/perceiver-generation-distilled",
+  "created_at": "2026-09-28T23:48:40.000Z",
+  "updated_at": "2026-09-28T23:48:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Romehta94 (नेहा नायर) - Hugging Face",
+      "url": "https://huggingface.co/Romehta94",
+      "snippet": "Building AI products for the enterprise Recent Activity updated a model3 days ago Romehta94/perceiver-retrieval-checkpoint published a model3 days ago Romehta94/perceiver-retrieval-checkpoint upvoted a paper 3 days ago LimiX-2: A Contextual Mechanism Network Towards General Structured-Data Intelligence View all activity"
+    },
+    {
+      "title": "imvictornugroho85/perceiver-generation-distilled · Hugging Face",
+      "url": "https://huggingface.co/imvictornugroho85/perceiver-generation-distilled",
+      "snippet": "Perceiver for Generation Overview A small Perceiver implementation for Generation, packaged with an explicit configuration and an initialization checkpoint. The xlarge variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "RM-Distiller: Exploiting Generative LLM for Reward Model Distillation",
+      "url": "https://arxiv.org/abs/2601.14032",
+      "snippet": "Reward models (RMs) play a pivotal role in aligning large language models (LLMs) with human preferences. Due to the difficulty of obtaining high-quality human preference annotations, distilling preferences from generative LLMs has emerged as a standard practice. However, existing approaches predominantly treat teacher models as simple binary annotators, failing to fully exploit the rich ..."
+    },
+    {
+      "title": "PDF arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2103.03206.pdf",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "GitHub - arcee-ai/DistillKit: An Open Source Toolkit For LLM ...",
+      "url": "https://github.com/arcee-ai/DistillKit",
+      "snippet": "A flexible and production-ready toolkit for knowledge distillation of large language models, supporting both online and offline distillation workflows with advanced logit compression. DistillKit powers the training of many of Arcee&#x27;s popular open-source models, including Virtuoso, SuperNova Medius, and Blitz."
+    }
+  ]
+}

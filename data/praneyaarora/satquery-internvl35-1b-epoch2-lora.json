@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Praneyaarora/satquery-internvl35-1b-epoch2-lora",
+  "slug": "praneyaarora-satquery-internvl35-1b-epoch2-lora",
+  "author": "Praneyaarora",
+  "url": "https://huggingface.co/Praneyaarora/satquery-internvl35-1b-epoch2-lora",
+  "created_at": "2026-09-28T22:57:50.000Z",
+  "updated_at": "2026-09-28T22:58:07.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "remote-sensing",
+    "earth-observation",
+    "spatial-grounding",
+    "satellite-imagery",
+    "lora",
+    "internvl",
+    "satquery",
+    "image-text-to-text",
+    "en",
+    "dataset:custom",
+    "base_model:OpenGVLab/InternVL3_5-1B-Instruct",
+    "base_model:adapter:OpenGVLab/InternVL3_5-1B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40422168,
+  "storage_human": "40 MB",
+  "base_model": "OpenGVLab/InternVL3_5-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "raja0007/satquery-satellite-vlm · Hugging Face",
+      "url": "https://huggingface.co/raja0007/satquery-satellite-vlm",
+      "snippet": "🛰️ SatQuery AI — Multimodal Satellite Vision-Language Model SatQuery is a parameter-efficient fine-tuned Vision-Language Model (VLM) engineered for multi-sensor Earth Observation, disaster response, and change detection."
+    },
+    {
+      "title": "SatQuery AI — Satellite image Q&A",
+      "url": "https://satquery-iota.vercel.app/",
+      "snippet": "Ask satellite imagery in plain English — see the evidence on the map. Upload images or run a query. We route your question to the right AI model and show you highlighted map proof alongside a clear answer for regions across India."
+    },
+    {
+      "title": "GitHub - SatQueryAI/satQueryAI",
+      "url": "https://github.com/SatQueryAI/satQueryAI",
+      "snippet": "SatQuery AI is an intelligent Earth Observation and Satellite Imagery analysis platform powered by Visual Question Answering (VQA), Change Detection, and Multi-modal AI models."
+    },
+    {
+      "title": "SIH26167 · SatQuery AI - An Interactive Vision-Language Assistant for ...",
+      "url": "https://sih2026.vuce.in/ps/SIH26167",
+      "snippet": "SatQuery AI - An Interactive Vision-Language Assistant for Multimodal Remote Sensing Image Analysis through Text Queries"
+    },
+    {
+      "title": "GitHub - ainaanraza/SatQuery",
+      "url": "https://github.com/ainaanraza/SatQuery",
+      "snippet": "Overview SatQuery AI is an advanced multimodal remote-sensing and geospatial intelligence system developed for the ISRO AI Hackathon. Rather than deploying a generic vision-language model, SatQuery implements an Autonomous Agentic Orchestration Pipeline."
+    }
+  ]
+}

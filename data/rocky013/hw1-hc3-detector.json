@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "rocky013/hw1-hc3-detector",
+  "slug": "rocky013-hw1-hc3-detector",
+  "author": "rocky013",
+  "url": "https://huggingface.co/rocky013/hw1-hc3-detector",
+  "created_at": "2026-09-28T20:36:18.000Z",
+  "updated_at": "2026-09-28T21:28:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "ai-generated-text-detection",
+    "hc3",
+    "en",
+    "dataset:Hello-SimpleAI/HC3",
+    "arxiv:2301.07597",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713986,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90867952,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "AI-generated text detection",
+      "dataset": "HC3 (English, all.jsonl)",
+      "metric": "Test accuracy (fine-tuned)",
+      "value": 0.9871
+    },
+    {
+      "task": "AI-generated text detection",
+      "dataset": "HC3 (English, all.jsonl)",
+      "metric": "Test macro F1 (fine-tuned)",
+      "value": 0.9871
+    }
+  ],
+  "sources": []
+}

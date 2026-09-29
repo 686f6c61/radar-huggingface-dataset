@@ -5,7 +5,7 @@
   "author": "skillsafeai",
   "url": "https://huggingface.co/skillsafeai/dreamshaper-8-lcm-onnx-webgpu",
   "created_at": "2026-09-23T20:56:46.000Z",
-  "updated_at": "2026-09-23T20:58:29.000Z",
+  "updated_at": "2026-09-28T17:32:20.000Z",
   "license": "creativeml-openrail-m",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -27,7 +27,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2164083532,
+  "storage_bytes": 2166026458,
   "storage_human": "2.2 GB",
   "base_model": "Lykon/dreamshaper-8-lcm",
   "formats": [

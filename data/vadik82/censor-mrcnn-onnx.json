@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "vadik82/censor-mrcnn-onnx",
+  "slug": "vadik82-censor-mrcnn-onnx",
+  "author": "vadik82",
+  "url": "https://huggingface.co/vadik82/censor-mrcnn-onnx",
+  "created_at": "2026-09-28T20:19:40.000Z",
+  "updated_at": "2026-09-28T20:20:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "manga",
+    "anime",
+    "censor-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 254262335,
+  "storage_human": "254 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

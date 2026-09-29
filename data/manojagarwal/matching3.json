@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "manojagarwal/matching3",
+  "slug": "manojagarwal-matching3",
+  "author": "manojagarwal",
+  "url": "https://huggingface.co/manojagarwal/matching3",
+  "created_at": "2026-09-29T00:24:19.000Z",
+  "updated_at": "2026-09-29T00:24:23.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "manojagarwal (Manoj Agarwal) - Hugging Face",
+      "url": "https://huggingface.co/manojagarwal/models",
+      "snippet": "User profile of Manoj Agarwal on Hugging Face"
+    },
+    {
+      "title": "ScoreGPT — AI Football Predictions from Competing AI Models",
+      "url": "https://scoregpt.app/",
+      "snippet": "ScoreGPT — AI Football Predictions from Multiple Competing Models ScoreGPT is a free sports prediction app for iOS and Android that uses multiple competing AI large language models to generate multi-model consensus football predictions with transparent accuracy tracking."
+    },
+    {
+      "title": "MatchAnything - zju3dv.github.io",
+      "url": "https://zju3dv.github.io/MatchAnything/",
+      "snippet": "Capabilities of the image matching model pre-trained by our framework. Green lines indicate the identified corresponding pixel localizations between images. Using the same network weight, our model exhibits impressive generalization abilities across extensive unseen real-world cross-modality matching tasks, benefiting diverse applications in disciplines such as (a) medical image analysis, (b ..."
+    },
+    {
+      "title": "[2508.12629] FlowMol3: Flow Matching for 3D De Novo Small-Molecule ...",
+      "url": "https://arxiv.org/abs/2508.12629",
+      "snippet": "A generative model capable of sampling realistic molecules with desired properties could accelerate chemical discovery across a wide range of applications. Toward this goal, significant effort has focused on developing models that jointly sample molecular topology and 3D structure. We present FlowMol3, an open-source, multi-modal flow matching model that advances the state of the art for all ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    }
+  ]
+}

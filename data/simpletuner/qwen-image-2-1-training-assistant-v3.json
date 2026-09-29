@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SimpleTuner/Qwen-Image-2.1-training-assistant-v3",
+  "slug": "simpletuner-qwen-image-2-1-training-assistant-v3",
+  "author": "SimpleTuner",
+  "url": "https://huggingface.co/SimpleTuner/Qwen-Image-2.1-training-assistant-v3",
+  "created_at": "2026-09-28T22:27:04.000Z",
+  "updated_at": "2026-09-28T22:27:18.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "simpletuner",
+    "training-assistant",
+    "qwen-image",
+    "experimental",
+    "text-to-image",
+    "dataset:webshart/qwen-image-2.1-generated-images",
+    "dataset:webshart/cc12m-structured-captions",
+    "dataset:webshart/e621-2024-webp-4Mpixel-webshart-indices",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 281080650,
+  "storage_human": "281 MB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SimpleTuner/Qwen-Image-2.1-training-assistant-v1 · Hugging Face",
+      "url": "https://huggingface.co/SimpleTuner/Qwen-Image-2.1-training-assistant-v1",
+      "snippet": "The images were decoded with the full-frame VAE and stored as PNGs. Training re-encodes those images, so the targets differ from directly cached terminal teacher latents. The L40S run used extracted copies of the published shards. The SimpleTuner example qwen_image-2.1-assistant-lora-offline.peft-lora reads the same data through Webshart."
+    },
+    {
+      "title": "Qwen Image - SimpleTuner",
+      "url": "http://docs.simpletuner.io/quickstart/QWEN_IMAGE/",
+      "snippet": "Qwen Image 2.1 uses Ollin&#x27;s texture-fixed VAE by default for validation and other VAE decoding. Only the decoder was fine-tuned; the encoder is unchanged, so existing 2.1 training latents remain compatible. The VAE revision is pinned independently of the base model."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen&#x27;s most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
+    },
+    {
+      "title": "Adapter Models for Qwen/Qwen-Image-2.1 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:adapter:Qwen%2FQwen-Image-2.1&p=1&sort=trending",
+      "snippet": "Active filters: Qwen/Qwen-Image-2.1. Clear all. SimpleTuner/Qwen-Image-2.1-training-assistant-v1. Text-to-Image • Updated 1 day ago"
+    },
+    {
+      "title": "SimpleTuner/documentation/quickstart/QWEN_IMAGE.md at main - GitHub",
+      "url": "https://github.com/Tokugawa-AI/SimpleTuner/blob/main/documentation/quickstart/QWEN_IMAGE.md",
+      "snippet": "🆕 Looking for the edit checkpoints? See the Qwen Image Edit quickstart for paired-reference training instructions. In this example, we&#x27;ll be training a LoRA for Qwen Image, a 20B parameter vision-language model. Due to its size, we&#x27;ll need aggressive memory optimization techniques. A 24GB GPU is ..."
+    }
+  ]
+}

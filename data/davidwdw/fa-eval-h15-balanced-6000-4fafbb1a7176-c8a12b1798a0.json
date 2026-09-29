@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-eval-h15-balanced-6000-4fafbb1a7176-c8a12b1798a0",
+  "slug": "davidwdw-fa-eval-h15-balanced-6000-4fafbb1a7176-c8a12b1798a0",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-eval-h15-balanced-6000-4fafbb1a7176-c8a12b1798a0",
+  "created_at": "2026-09-28T21:16:52.000Z",
+  "updated_at": "2026-09-28T21:17:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 212779276,
+  "storage_human": "213 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Events.com - Events near me",
+      "url": "https://discover.events.com/",
+      "snippet": "All the events I love near me. Music, sport, business networking, nightlife, culture, food, and more. Events.com has over 186 million …"
+    },
+    {
+      "title": "Find events in Las Vegas, United States - Events.com",
+      "url": "https://discover.events.com/us/nevada/las-vegas",
+      "snippet": "- WeatherWidget.io Info About Contact us Privacy Terms Explore Discover Events near me Events.com apps Sell Experience …"
+    },
+    {
+      "title": "Breaking Benjamin - Barcelona Rock Fest, Santa Coloma de",
+      "url": "https://discover.events.com/es/catalonia/santa-coloma-de-gramenet/e/musica/breaking-benjamin-barcelona-rock-fest-santa-coloma-gramenet-03-jul-2026-parc-zam-456307088",
+      "snippet": "Jul 3, 2026 · Breaking Benjamin will perform at Barcelona Rock Fest festival in Santa Coloma de Gramenet, Spain on 03 July 2026. …"
+    },
+    {
+      "title": "Caregiver Appreciation Day: Free Information and Resource Fair",
+      "url": "https://discover.events.com/us/utah/logan/e/culture/logan-library-456065606",
+      "snippet": "Feb 19, 2026 · Join us In the Logan Library's Community Room! Walk around booths, enter to win raffle prizes, and learn about free …"
+    },
+    {
+      "title": "Find events in San Francisco, United States - Events.com",
+      "url": "https://discover.events.com/us/california/san-francisco",
+      "snippet": "- WeatherWidget.io Info About Contact us Privacy Terms Explore Discover Events near me Events.com apps Sell Experience …"
+    }
+  ]
+}

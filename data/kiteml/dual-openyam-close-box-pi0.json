@@ -5,7 +5,7 @@
   "author": "kiteml",
   "url": "https://huggingface.co/kiteml/dual-openyam-close-box-pi0",
   "created_at": "2026-09-28T01:53:07.000Z",
-  "updated_at": "2026-09-28T01:54:40.000Z",
+  "updated_at": "2026-09-28T06:27:25.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": 4028019472,
   "parameters_human": "4.03B",
-  "storage_bytes": 8892523392,
-  "storage_human": "8.9 GB",
+  "storage_bytes": 17785046784,
+  "storage_human": "17.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

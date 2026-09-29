@@ -5,7 +5,7 @@
   "author": "empiriolabsai",
   "url": "https://huggingface.co/empiriolabsai/aplomb-1-omni",
   "created_at": "2026-09-27T21:22:06.000Z",
-  "updated_at": "2026-09-27T21:34:25.000Z",
+  "updated_at": "2026-09-28T15:12:57.000Z",
   "license": "empiriolabs-model-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "zero-shot-classification",
@@ -39,7 +39,7 @@
   "trending_score": 0,
   "parameters": 35259818545,
   "parameters_human": "35.26B",
-  "storage_bytes": 70534771296,
+  "storage_bytes": 70535102921,
   "storage_human": "70.5 GB",
   "base_model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
   "formats": [

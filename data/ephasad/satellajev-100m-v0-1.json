@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "EphAsad/SatellaJev-100M-v0.1",
+  "slug": "ephasad-satellajev-100m-v0-1",
+  "author": "EphAsad",
+  "url": "https://huggingface.co/EphAsad/SatellaJev-100M-v0.1",
+  "created_at": "2026-09-28T20:36:41.000Z",
+  "updated_at": "2026-09-28T20:53:24.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "satellajev",
+    "open-jev",
+    "typed-decisions",
+    "probability-estimation",
+    "candidate-ranking",
+    "dataset:ZefanCai/Open-Jev",
+    "dataset:SargeDev/jev-distill-corpus-v3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 101495040,
+  "parameters_human": "101.5M",
+  "storage_bytes": 406092007,
+  "storage_human": "406 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mia Khalifa - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Mia_Khalifa",
+      "snippet": "Khalifa entered the pornographic film industry in October 2014, after being recruited by a man who asked her if she was interested in …"
+    },
+    {
+      "title": "Mia K. (@miakhalifa) • Instagram photos and videos",
+      "url": "https://www.instagram.com/miakhalifa/",
+      "snippet": "29M Followers, 4,941 Following, 2,399 Posts - Mia K. (@miakhalifa) on Instagram: \"Immigrant 🇱🇧 founder: @sheytan.world …"
+    },
+    {
+      "title": "Mia Khalifa - YouTube",
+      "url": "https://www.youtube.com/channel/UCX9kV1b6q8ZFnJ1HnHsPeMw",
+      "snippet": "I'm Back...! Mia Khalifa | New Video #shorts #youtube. I'm back.. for all the babes out there.... Missed me? ️."
+    },
+    {
+      "title": "Mia K. (@miakhalifa) / X",
+      "url": "https://x.com/miakhalifa",
+      "snippet": "Sep 29, 2014 · Kyrie Irving says he will cover a $11,492 fine that Texans linebacker Azeez Al-Shaair incurred for writing the name of …"
+    },
+    {
+      "title": "Mia Khalifa Official - YouTube",
+      "url": "https://www.youtube.com/@miakhalifaoffcialchannel",
+      "snippet": "Hey there! Welcome to my official YouTube channel — I’m Mia Khalifa! 💫 (And no, not *that* Mia Khalifa 😄 — I’m just a regular girl with …"
+    }
+  ]
+}

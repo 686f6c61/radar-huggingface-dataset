@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ololade117/scaling-normal-3.7M-157000steps",
+  "slug": "ololade117-scaling-normal-3-7m-157000steps",
+  "author": "Ololade117",
+  "url": "https://huggingface.co/Ololade117/scaling-normal-3.7M-157000steps",
+  "created_at": "2026-09-28T21:59:27.000Z",
+  "updated_at": "2026-09-28T21:59:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3686400,
+  "parameters_human": "3.7M",
+  "storage_bytes": 14750344,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ololade117/scaling-normal-3.7M-65000steps · Hugging Face",
+      "url": "https://huggingface.co/Ololade117/scaling-normal-3.7M-65000steps",
+      "snippet": "Ololade117 / scaling-normal-3.7M-65000steps Like 0 Safetensors model_hub_mixin pytorch_model_hub_mixin License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Ololade117/scaling-normal-13.7M-15000steps · Hugging Face",
+      "url": "https://huggingface.co/Ololade117/scaling-normal-13.7M-15000steps",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ololade117 · GitHub",
+      "url": "https://github.com/Ololade117/",
+      "snippet": "Ololade117 has 7 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Ollama Model Explorer — Browse Open-Source AI Models",
+      "url": "https://ollama-explorer.vercel.app/",
+      "snippet": "Discover open-source AI models, built for Ollama. Ollama&#x27;s infrastructure gives you 214 + open-source models to run locally — but finding the one that fits your use case, hardware, or language is hard. Ollama Explorer makes that search instant."
+    },
+    {
+      "title": "Token to USD Calculator — Convert AI Tokens to Dollars",
+      "url": "https://tokenrate.dev/tools/token-to-usd",
+      "snippet": "Convert tokens to USD across AI models. Compare a single token count or enter input and output usage separately to estimate your total API cost."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mulligan/sim-square-broad-r02-sobol-free-cf-divl",
+  "slug": "mulligan-sim-square-broad-r02-sobol-free-cf-divl",
+  "author": "mulligan",
+  "url": "https://huggingface.co/mulligan/sim-square-broad-r02-sobol-free-cf-divl",
+  "created_at": "2026-09-28T23:49:06.000Z",
+  "updated_at": "2026-09-28T23:49:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mulligan",
+    "sim-square-broad",
+    "divl-agent",
+    "dataset:mulligan/sim-square-broad-c00-teleop-sobol",
+    "dataset:mulligan/sim-square-broad-c01-dagger-sobol-free-cf",
+    "dataset:mulligan/sim-square-broad-c01-sobol-policy-rollouts",
+    "dataset:mulligan/sim-square-broad-c02-dagger-sobol-free-cf",
+    "dataset:mulligan/sim-square-broad-c02-mulligan-policy-rollouts",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1448989175,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PornHub.com :: Video X Gratuite - Site Porno Gratuit",
+      "url": "https://fr.pornhub.com/categories",
+      "snippet": "Tu viens de trouver le paradis de la pornographie. Tu ne rêves pas, un site porno gratuit, avec vidéo x gratuite. Profites des trésors …"
+    },
+    {
+      "title": "Vidéos Porno Femmes Mures: Films X Mature Gratuit | Pornhub",
+      "url": "https://fr.pornhub.com/video?c=28",
+      "snippet": "Regardez les films de sexe avec des femmes mûres. Profitez des vidéos xxx de femmes matures en streaming gratuit sur …"
+    },
+    {
+      "title": "Vidéo Porno Gay Gratuite: Streaming Gay Tube Vidéos X | Pornhub",
+      "url": "https://fr.pornhub.com/gayporn",
+      "snippet": "Vidéos de Sexe Gay Gratuites en Streaming. Les Meilleurs Films de Porno Gay, des Hommes Nus qui fourre des autres …"
+    },
+    {
+      "title": "Vidéos Porno Lesbienne: Films Lesbiennes X Gratuit | Pornhub",
+      "url": "https://fr.pornhub.com/video?c=27",
+      "snippet": "Voir des Lesbiennes sexy ici sur Pornhub.com! Vous trouverez les plus belles lesbiennes jeunes et chaudes gratuitement. Des …"
+    },
+    {
+      "title": "Vidéos Porno Français | Pornhub",
+      "url": "https://fr.pornhub.com/video/search?search=french",
+      "snippet": "Regarde les vidéos porno de French gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    }
+  ]
+}

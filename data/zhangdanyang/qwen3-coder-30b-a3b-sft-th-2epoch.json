@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Zhangdanyang/Qwen3-Coder-30B-A3B-SFT-TH-2epoch",
+  "slug": "zhangdanyang-qwen3-coder-30b-a3b-sft-th-2epoch",
+  "author": "Zhangdanyang",
+  "url": "https://huggingface.co/Zhangdanyang/Qwen3-Coder-30B-A3B-SFT-TH-2epoch",
+  "created_at": "2026-09-28T21:34:30.000Z",
+  "updated_at": "2026-09-28T21:40:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:2505.09388",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61066575144,
+  "storage_human": "61.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zhangdanyang/Qwen3-Coder-30B-A3B-SFT-TH-2epoch · Hugging Face",
+      "url": "https://huggingface.co/Zhangdanyang/Qwen3-Coder-30B-A3B-SFT-TH-2epoch",
+      "snippet": "Zhangdanyang / Qwen3-Coder-30B-A3B-SFT-TH-2epoch Like 0 Text Generation Transformers Safetensors qwen3_moe conversational arxiv:2505.09388 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen/Qwen3-Coder-30B-A3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Coder: Qwen3-Coder is the code version of Qwen3 ...",
+      "url": "https://github.com/QwenLM/Qwen3-Coder",
+      "snippet": "Qwen3-Coder is the code version of Qwen3, the large language model series developed by Qwen team. - QwenLM/Qwen3-Coder"
+    },
+    {
+      "title": "ai/qwen3-coder - Docker Image",
+      "url": "https://hub.docker.com/r/ai/qwen3-coder",
+      "snippet": "Agentic Coding supporting for most platform such as Qwen Code, CLINE, featuring a specially designed function call format. Model Overview Qwen3-Coder-30B-A3B-Instruct has the following features: Type: Causal Language Models Training Stage: Pretraining & Post-training Number of Parameters: 30.5B in total and 3.3B activated Number of Layers: 48"
+    },
+    {
+      "title": "Qwen3-Coder-30B-A3B - vLLM Ascend - docs.vllm.ai",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3-Coder-30B-A3B.html",
+      "snippet": "Qwen3-Coder-30B-A3B 1 Introduction ¶ Qwen3-Coder-30B-A3B is a Mixture-of-Experts (MoE) model in the Qwen3 Coder series, sharing the same architecture as Qwen3-30B-A3B with 30.5B total parameters and 3.3B activated per token. Built upon the Qwen3 base architecture, it delivers significant optimizations in agentic coding, extended context support of up to 1M tokens, and versatile function ..."
+    }
+  ]
+}

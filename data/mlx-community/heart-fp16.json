@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mlx-community/HEART-fp16",
+  "slug": "mlx-community-heart-fp16",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/HEART-fp16",
+  "created_at": "2026-09-28T23:31:49.000Z",
+  "updated_at": "2026-09-28T23:32:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "super-resolution",
+    "image-restoration",
+    "heart",
+    "hat",
+    "transformer",
+    "image-to-image",
+    "dataset:Phips/lucid-cc0-v2-hc-512",
+    "base_model:Phips/HEART",
+    "base_model:finetune:Phips/HEART",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134333480,
+  "storage_human": "134 MB",
+  "base_model": "Phips/HEART",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ml-explore/mlx: MLX: An array framework for Apple silicon",
+      "url": "https://github.com/ml-explore/mlx",
+      "snippet": "We intend to make it easy for researchers to extend and improve MLX with the goal of quickly exploring new ideas. The design of …Read more"
+    },
+    {
+      "title": "MLX",
+      "url": "https://mlx-framework.org/",
+      "snippet": "MLX Whisper - a Python package for speech transcription using OpenAI’s Whisper models. MLX Examples - standalone examples in …Read more"
+    },
+    {
+      "title": "MLX Studio — Local AI on Your Mac | Chat, Code, Images",
+      "url": "https://mlx.studio/",
+      "snippet": "How is MLX Studio different from the vMLX engine? MLX Studio is the app — the chat UI, agentic tools, model browser and settings. …Read more"
+    },
+    {
+      "title": "Apple Open Source",
+      "url": "https://opensource.apple.com/projects/mlx/",
+      "snippet": "apple Project MLX About MLX is an array framework designed for efficient and flexible machine learning research on Apple silicon. …Read more"
+    },
+    {
+      "title": "Exploring LLMs with MLX and the Neural Accelerators in the M5 GPU",
+      "url": "https://machinelearning.apple.com/research/exploring-llms-mlx-m5",
+      "snippet": "Nov 19, 2025 · MLX is an open source array framework that is efficient, flexible, and highly tuned for Apple silicon. You can use MLX …Read more"
+    }
+  ]
+}

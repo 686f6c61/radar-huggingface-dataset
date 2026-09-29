@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Justinci/mocov3-checkpoint",
+  "slug": "justinci-mocov3-checkpoint",
+  "author": "Justinci",
+  "url": "https://huggingface.co/Justinci/mocov3-checkpoint",
+  "created_at": "2026-09-28T23:38:12.000Z",
+  "updated_at": "2026-09-28T23:38:17.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "austi-nlewi/mocov3-generation · Hugging Face",
+      "url": "https://huggingface.co/austi-nlewi/mocov3-generation",
+      "snippet": "Overview A small Mocov3 implementation for Generation, packaged with an explicit configuration and an initialization checkpoint. The small variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "felipesilvason/mocov3-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/felipesilvason/mocov3-checkpoint",
+      "snippet": "Repository status The Python file contains the model and runnable example or training entry point. config.json records the generated architecture settings. training_args.json records the default experiment recipe. model.safetensors is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint. No benchmark score is claimed in this repository."
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    },
+    {
+      "title": "Checkpoint AI Models (142) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 142 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "mmpretrain/configs/mocov3/README.md at main · open-mmlab ... - GitHub",
+      "url": "https://github.com/open-mmlab/mmpretrain/blob/main/configs/mocov3/README.md",
+      "snippet": "OpenMMLab Pre-training Toolbox and Benchmark. Contribute to open-mmlab/mmpretrain development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "poni-henry/indabax-south-sudan-2026-food-insecurity",
+  "slug": "poni-henry-indabax-south-sudan-2026-food-insecurity",
+  "author": "poni-henry",
+  "url": "https://huggingface.co/poni-henry/indabax-south-sudan-2026-food-insecurity",
+  "created_at": "2026-09-28T22:46:01.000Z",
+  "updated_at": "2026-09-28T22:46:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "tabular-classification",
+    "indabax-south-sudan-2026",
+    "food-security",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10304802,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PONI - PARIS | Française cuisine près de moi | Réserver maintenant",
+      "url": "https://poni-bistro.eatbu.com/?lang=fr",
+      "snippet": "Faites votre Réservation PONI Une erreur est survenue lors du chargement des horaires Une erreur est survenue lors du …"
+    },
+    {
+      "title": "PONI, Paris - Saint-Georges - Menu, Prix & Restaurant Avis - Tripadvisor",
+      "url": "https://www.tripadvisor.fr/Restaurant_Review-g187147-d4419580-Reviews-Poni-Paris_Ile_de_France.html",
+      "snippet": "PONI, au 24 rue Saint-Lazare, Paris 9, est une brasserie moderne et polyvalente. Ouvert 7/7, ce restaurant lumineux propose une …"
+    },
+    {
+      "title": "Poni - Castaniu Family",
+      "url": "https://www.castaniu-family.fr/bistro-poni-paris-9/",
+      "snippet": "On se sent comme à la maison chez Poni, et quand on part on a qu'une envie c'est d'y retourner !! Benjamin M Ce qu'ils en disent …"
+    },
+    {
+      "title": "PONI - PARIS | French cuisine near me | Book now",
+      "url": "https://poni-bistro.eatbu.com/?lang=en",
+      "snippet": "Un accueil très chaleureux, des serveurs disponibles et à l'écoute. Un digestif offert pour terminer le repas. Voici en quelques mots, …"
+    },
+    {
+      "title": "Poni, Paris - Menu du restaurant, prix et avis",
+      "url": "https://fr.restaurantguru.com/Poni-Paris-2",
+      "snippet": "Aug 31, 2026 · Poni à Paris classé 4.9 sur 5 sur Restaurant Guru : 4596 avis de visiteurs, 293 photos. Exlorer le menu, consulter les …"
+    }
+  ]
+}

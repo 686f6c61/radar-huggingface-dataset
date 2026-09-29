@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "DuoNeural/Qwen2.5-Coder-7B-Instruct-CodeInfused-IQ3_XXS-GGUF",
+  "slug": "duoneural-qwen2-5-coder-7b-instruct-codeinfused-iq3_xxs-gguf",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/Qwen2.5-Coder-7B-Instruct-CodeInfused-IQ3_XXS-GGUF",
+  "created_at": "2026-09-28T23:34:12.000Z",
+  "updated_at": "2026-09-28T23:35:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantization",
+    "gtap",
+    "tap-dpq",
+    "statistical-mechanics",
+    "code",
+    "qwen2.5-coder",
+    "duoneural",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 3114515328,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DuoNeural / Qwen2.5-7B-Instruct-CodeInfused-IQ3_XXS-GGUF",
+      "url": "https://huggingface.co/DuoNeural/Qwen2.5-7B-Instruct-CodeInfused-IQ3_XXS-GGUF",
+      "snippet": "DuoNeural / Qwen2.5-7B-Instruct-CodeInfused-IQ3_XXS-GGUF Like 0 Text Generation GGUF English Chinese quantization qwen2.5 imatrix code-infused sub-3-bit edge-ai duoneural conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "DuoNeural/Qwen2.5-Coder-7B-Instruct-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/DuoNeural/Qwen2.5-Coder-7B-Instruct-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-Coder-7B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen2.5-coder-7b-instruct-qwen",
+      "snippet": "Overview Qwen2.5-Coder-7B-Instruct is a code-specialized language model developed by Qwen containing 7.61 billion parameters (6.53 billion non-embedding) designed for code generation, reasoning, and fixing tasks. The model uses a transformer architecture with RoPE positional embeddings, SwiGLU activations, RMSNorm, and attention QKV bias across 28 layers with 28 query heads and 4 key-value ..."
+    },
+    {
+      "title": "QuantFactory/Qwen2.5-Coder-7B-Instruct-GGUF - Models",
+      "url": "https://www.modelscope.cn/models/QuantFactory/Qwen2.5-Coder-7B-Instruct-GGUF",
+      "snippet": "Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). For Qwen2.5-Coder, we release three base language models and instruction-tuned language models, 1.5, 7 and 32 (coming soon) billion parameters."
+    },
+    {
+      "title": "Qwen2.5-Coder-7B-Instruct-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF/summary",
+      "snippet": "Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). As of now, Qwen2.5-Coder has covered six mainstream model sizes, 0.5, 1.5, 3, 7, 14, 32 billion parameters, to meet the needs of different developers."
+    }
+  ]
+}

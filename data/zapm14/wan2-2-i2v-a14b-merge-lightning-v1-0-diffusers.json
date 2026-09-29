@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Zapm14/Wan2.2-I2V-A14B-Merge-Lightning-V1.0-Diffusers",
+  "slug": "zapm14-wan2-2-i2v-a14b-merge-lightning-v1-0-diffusers",
+  "author": "Zapm14",
+  "url": "https://huggingface.co/Zapm14/Wan2.2-I2V-A14B-Merge-Lightning-V1.0-Diffusers",
+  "created_at": "2026-09-28T18:50:33.000Z",
+  "updated_at": "2026-09-28T18:50:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-video",
+    "base_model:Wan-AI/Wan2.2-I2V-A14B-Diffusers",
+    "base_model:finetune:Wan-AI/Wan2.2-I2V-A14B-Diffusers",
+    "license:mit",
+    "diffusers:WanImageToVideoPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14288901184,
+  "parameters_human": "14.29B",
+  "storage_bytes": 126203713239,
+  "storage_human": "126.2 GB",
+  "base_model": "Wan-AI/Wan2.2-I2V-A14B-Diffusers, lightx2v/Wan2.2-Lightning",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Events.com - Events near me",
+      "url": "https://discover.events.com/",
+      "snippet": "All the events I love near me. Music, sport, business networking, nightlife, culture, food, and more. Events.com has over 186 million …"
+    },
+    {
+      "title": "Washington County Single Adults - Events.com",
+      "url": "https://discover.events.com/us/utah/saint-george/p/washington-county-single-adults-10005976631",
+      "snippet": "This is the official Facebook page for the Dixie LDS Single Adults (46+) and is in conjunction with the Washington County Multi-Stake …"
+    },
+    {
+      "title": "Nativity Bingo - Events.com",
+      "url": "https://discover.events.com/us/indiana/portage/p/nativity-bingo-10005723930",
+      "snippet": "Nativity Monday Night Bingo Starts at 6:00PM with earlybirds and regular games at 7:00PM. Come out and join us at 2949 …"
+    },
+    {
+      "title": "Detroit Area Auto Modelers - Events.com",
+      "url": "https://discover.events.com/us/michigan/roseville/p/detroit-area-auto-modelers-10005806799",
+      "snippet": "The Detroit Area Auto Modelers are A Model Car Club that do 2 Toy Shows a year @ Macomb Community College in Warren, MI. …"
+    },
+    {
+      "title": "Peterborough Lietuvių Krikščionių Bažnyčia - Events.com",
+      "url": "https://discover.events.com/gb/england/peterborough/p/peterborough-lietuviu-krikscioniu-baznycia-10004580157",
+      "snippet": "Krikščionių Bažnyčia visiems tikintiems krikščionims :) Mūsų adresas: 131 Midland Road, Peterborough PE3 6DP"
+    }
+  ]
+}

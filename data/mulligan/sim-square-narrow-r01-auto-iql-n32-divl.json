@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mulligan/sim-square-narrow-r01-auto-iql-n32-divl",
+  "slug": "mulligan-sim-square-narrow-r01-auto-iql-n32-divl",
+  "author": "mulligan",
+  "url": "https://huggingface.co/mulligan/sim-square-narrow-r01-auto-iql-n32-divl",
+  "created_at": "2026-09-29T00:50:25.000Z",
+  "updated_at": "2026-09-29T00:51:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mulligan",
+    "sim-square-narrow",
+    "divl-agent",
+    "dataset:mulligan/sim-square-narrow-c00-teleop-baseline",
+    "dataset:mulligan/sim-square-narrow-c01-auto-iql-n32-policy-rollouts",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1447883255,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sim-square-narrow-c01-auto-iql-n32-policy-rollouts - claru.ai",
+      "url": "https://claru.ai/datasets/mulligan-sim-square-narrow-c01-auto-iql-n32-policy-rollouts",
+      "snippet": "Policy rollout dataset from the Mulligan project for the sim-square-narrow task using auto-iql-n32 variant. Contains 100 episodes of simulated robot manipulation data."
+    },
+    {
+      "title": "Datasets - Hugging Face",
+      "url": "https://huggingface.co/datasets?other=sim-square-narrow",
+      "snippet": "mulligan/sim-square-narrow-c03-auto-iql-n32-policy-rollouts Viewer •Updated 3 days ago•21.7k• 57"
+    },
+    {
+      "title": "sim-square-broad-c02-auto-iql-success-bc-n32-policy-rollouts",
+      "url": "https://huggingface.co/datasets/mulligan/sim-square-broad-c02-auto-iql-success-bc-n32-policy-rollouts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mulligan (Pyq AI) — AI Automation Platform for Insurance",
+      "url": "https://www.arsumnc.com/products/pyq-ai",
+      "snippet": "At Pyq AI, we built Mulligan — an AI automation platform for insurance brokerages. Insurance brokers were spending 15+ hours weekly on manual data entry, policy comparisons, and commission reconciliation."
+    },
+    {
+      "title": "robomimic",
+      "url": "https://robomimic.github.io/",
+      "snippet": "Fork me on GitHub robomimic A Framework for Robot Learning from Demonstration Code Release Documentation Study Paper Study Website ARISE Initiative robomimic is a framework for robot learning from demonstration. It offers a broad set of demonstration datasets collected on robot manipulation domains, and learning algorithms to learn from these datasets. This project is part of the broader ..."
+    }
+  ]
+}

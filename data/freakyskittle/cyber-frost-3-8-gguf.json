@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "freakyskittle/CYBER-FROST-3.8-GGUF",
+  "slug": "freakyskittle-cyber-frost-3-8-gguf",
+  "author": "freakyskittle",
+  "url": "https://huggingface.co/freakyskittle/CYBER-FROST-3.8-GGUF",
+  "created_at": "2026-09-27T22:57:03.000Z",
+  "updated_at": "2026-09-28T21:48:45.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen4exp",
+    "moe",
+    "text-generation",
+    "base_model:Blackfrost-AI/CYBER-FROST-3.8-BF16",
+    "base_model:quantized:Blackfrost-AI/CYBER-FROST-3.8-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 11,
+  "downloads_30d": 80,
+  "trending_score": 11,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 879899290208,
+  "storage_human": "879.9 GB",
+  "base_model": "Blackfrost-AI/CYBER-FROST-3.8-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "freakyskittle/CYBER-FROST-3.8-GGUF · Hugging Face",
+      "url": "https://huggingface.co/freakyskittle/CYBER-FROST-3.8-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "JoasASantos/Offensive-Security-AI-Models: uncensored LLMs for Offensive ...",
+      "url": "https://imtaqin.id/joasasantos-offensive-security-ai-models-uncensored-llms-for-offensive-security",
+      "snippet": "Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. > All data sourced from HuggingFace model cards and official publications. Sep 2026. --- ## Security Fine-tuned Models ### 1. DeepHat V2 (WhiteRabbitNeo) | Spec | Valu..."
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "Empero is an independent AI research lab in Germany building small, efficient language models you can own and run yourself. Latest: Qwen3.8 distilled to 9B / 4B / 2B, and a GDN-aware 27B Ridge GGUF at 11.7 GiB. 1M+ downloads on Hugging Face."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated September 2026."
+    }
+  ]
+}

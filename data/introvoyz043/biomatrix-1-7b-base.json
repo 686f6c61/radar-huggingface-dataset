@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "introvoyz043/BioMatrix-1.7B-Base",
+  "slug": "introvoyz043-biomatrix-1-7b-base",
+  "author": "introvoyz043",
+  "url": "https://huggingface.co/introvoyz043/BioMatrix-1.7B-Base",
+  "created_at": "2026-09-28T22:55:08.000Z",
+  "updated_at": "2026-09-28T22:55:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "biology",
+    "chemistry",
+    "molecule",
+    "protein",
+    "multimodal",
+    "foundation-model",
+    "pretrained",
+    "conversational",
+    "en",
+    "arxiv:2606.22138",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-1.7B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2097800192,
+  "parameters_human": "2.10B",
+  "storage_bytes": 4215284873,
+  "storage_human": "4.2 GB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "introvoyz043/BioMatrix-1.7B-Base · Hugging Face",
+      "url": "https://huggingface.co/introvoyz043/BioMatrix-1.7B-Base",
+      "snippet": "Duplicated from QizhiPei/BioMatrix-1.7B-Base introvoyz043 / BioMatrix-1.7B-Base Like 0 Text Generation Transformers Safetensors English qwen3 biology chemistry molecule protein multimodal foundation-model pretrained conversational text-generation-inference arxiv:2606.22138 License:apache-2.0 Model card FilesFiles and versions xet Community ..."
+    },
+    {
+      "title": "QizhiPei/BioMatrix-1.7B-Base · Hugging Face",
+      "url": "https://huggingface.co/QizhiPei/BioMatrix-1.7B-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "QizhiPei/BioMatrix-1.7B-Base: Model synced from source: QizhiPei ...",
+      "url": "https://dev.modelhub.org.cn/QizhiPei/BioMatrix-1.7B-Base",
+      "snippet": "This is the 1.7B-parameter Base model, obtained via multimodal continual pretrainingof Qwen3-1.7B-Base on 304.4 billion tokens spanning text, molecular and protein 1D/3D data, and cross-modal corpora. This base checkpoint is intended for further fine-tuning on downstream tasks. For an instruction-tuned model ready for inference, see BioMatrix-1.7B-SFT. For a larger model, see BioMatrix-4B-Base."
+    },
+    {
+      "title": "BioMatrix: Protein model | bio.rodeo",
+      "url": "https://bio.rodeo/models/biomatrix",
+      "snippet": "The model was developed by researchers at Shanghai AI Laboratory and the Gaoling School of Artificial Intelligence at Renmin University of China, led by first author Qizhi Pei with senior author Lijun Wu, and released as an arXiv preprint in June 2026. It is built on the Qwen3 language model backbone, offered in 1.7B and 4B parameter sizes, and continually pretrained on 304.4 billion tokens ..."
+    },
+    {
+      "title": "GitHub - QizhiPei/BioMatrix",
+      "url": "https://github.com/QizhiPei/BioMatrix",
+      "snippet": "We present BioMatrix, a multimodal foundation model that natively integrates 1D sequences, 3D structures, and natural language for both molecules and proteins within a single decoder-only architecture."
+    }
+  ]
+}

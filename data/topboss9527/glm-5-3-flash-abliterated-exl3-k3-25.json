@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "topboss9527/GLM-5.3-Flash-abliterated-EXL3-K3.25",
+  "slug": "topboss9527-glm-5-3-flash-abliterated-exl3-k3-25",
+  "author": "topboss9527",
+  "url": "https://huggingface.co/topboss9527/GLM-5.3-Flash-abliterated-EXL3-K3.25",
+  "created_at": "2026-09-29T00:08:19.000Z",
+  "updated_at": "2026-09-29T00:09:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "glm5",
+    "exl3",
+    "quantized",
+    "mixture-of-experts",
+    "abliterated",
+    "uncensored",
+    "not-for-all-audiences",
+    "conversational",
+    "base_model:wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-v1",
+    "base_model:finetune:wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-v1",
+    "license:mit",
+    "endpoints_compatible",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 73089112926,
+  "parameters_human": "73.09B",
+  "storage_bytes": 146267507539,
+  "storage_human": "146.3 GB",
+  "base_model": "wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash/FlashX - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash has 320B total parameters with 18B activated. As the first open-source frontier model to combine sparse and linear attention, it significantly cuts computation and serving costs while preserving long-context quality — reducing attention computation and KV cache by 3.01× and 4.44× versus GLM-5.3. Native Multimodal Visual Coding"
+    },
+    {
+      "title": "wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3-v1 · Hugging Face",
+      "url": "https://huggingface.co/wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3 - openlm.ai",
+      "url": "https://openlm.ai/glm-5.3/",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal model in the GLM-5 series. With 320B total parameters and just 18B active parameters, it outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks."
+    },
+    {
+      "title": "dealignai/GLM-5.3-Flash-ABLITERATED-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-NVFP4",
+      "snippet": "OpenAI-compatible chat/completions, tools, and reasoning work out of the box. The vision tower and MTP head are retained unmodified — serve them with a vLLM build whose GLM-5.3-Flash multimodal / MTP support is enabled. Credits dealignai — CRACK abliteration research & release · Twitter @dealignai @jordanschenck — compute Disclaimer This model has had its safety guardrails removed and ..."
+    },
+    {
+      "title": "GLM-5.3 Flash EXL3 for 2-4x DGX Sparks - GitHub",
+      "url": "https://github.com/MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks/",
+      "snippet": "A 3× sibling is ./start-tp3.sh on the same image and weights (see 3× Spark (TP=3)). Served model id: GLM-5.3-Flash-EXL3. EXL3/TR3 quant by brandonmusic. Optional TP3 contribution for evaluation: cooperative ABI2, 64-row support, FlashKDA and combined-profile measurements."
+    }
+  ]
+}

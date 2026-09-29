@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "the-fall-of-man/Jev-Omni",
+  "slug": "the-fall-of-man-jev-omni",
+  "author": "the-fall-of-man",
+  "url": "https://huggingface.co/the-fall-of-man/Jev-Omni",
+  "created_at": "2026-09-28T21:25:55.000Z",
+  "updated_at": "2026-09-28T21:25:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "text-classification",
+    "multimodal",
+    "merged",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:finetune:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23976070147,
+  "storage_human": "24.0 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Déterminant THE en anglais : quand et comment l'utiliser",
+      "url": "https://www.ispeakspokespoken.com/the-anglais/",
+      "snippet": "Aug 24, 2026 · Faut-il mettre THE ou pas devant les noms en anglais ? Je vous donne dans cet article des explications et des …"
+    },
+    {
+      "title": "The - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The",
+      "snippet": "The is a grammatical article in English, denoting nouns that are already or about to be mentioned, under discussion, implied or …"
+    },
+    {
+      "title": "THE | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/the",
+      "snippet": "THE definition: 1. used before nouns to refer to particular things or people that have already been talked about or…. Learn more."
+    },
+    {
+      "title": "TheFork - Réservez dans les meilleurs restaurants de France",
+      "url": "https://www.thefork.fr/",
+      "snippet": "Avec TheFork : choisissez et réservez gratuitement dans les meilleurs restaurants de votre ville. Profitez aussi des promotions sur …"
+    },
+    {
+      "title": "The The — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/The_The",
+      "snippet": "The The est un groupe musical britannique post-punk, formé en 1979 par le chanteur Matt Johnson. Il est actif sous diverses formes …"
+    }
+  ]
+}

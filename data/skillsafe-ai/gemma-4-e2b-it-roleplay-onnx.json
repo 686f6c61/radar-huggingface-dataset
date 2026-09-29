@@ -5,7 +5,7 @@
   "author": "skillsafe-ai",
   "url": "https://huggingface.co/skillsafe-ai/gemma-4-E2B-it-roleplay-ONNX",
   "created_at": "2026-09-28T00:48:28.000Z",
-  "updated_at": "2026-09-28T00:52:09.000Z",
+  "updated_at": "2026-09-28T17:32:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,12 +33,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 150,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3130508887,
-  "storage_human": "3.1 GB",
+  "storage_bytes": 6242169582,
+  "storage_human": "6.2 GB",
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "onnx"

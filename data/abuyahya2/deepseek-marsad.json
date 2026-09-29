@@ -5,7 +5,7 @@
   "author": "AbuYahya2",
   "url": "https://huggingface.co/AbuYahya2/deepseek-marsad",
   "created_at": "2026-09-27T21:25:33.000Z",
-  "updated_at": "2026-09-27T23:06:53.000Z",
+  "updated_at": "2026-09-28T06:35:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,13 +29,13 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 188,
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",
   "storage_bytes": 16060556360,
   "storage_human": "16.1 GB",
-  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B, NousResearch/Meta-Llama-3-8B-Instruct",
+  "base_model": "NousResearch/Meta-Llama-3-8B-Instruct, deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
   "formats": [
     "safetensors"
   ],

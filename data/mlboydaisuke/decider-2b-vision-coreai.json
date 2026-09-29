@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/decider-2b-vision-CoreAI",
+  "slug": "mlboydaisuke-decider-2b-vision-coreai",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/decider-2b-vision-CoreAI",
+  "created_at": "2026-09-28T23:37:11.000Z",
+  "updated_at": "2026-09-28T23:48:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "coreai",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreai",
+    "qwen3_5",
+    "core-ai",
+    "apple",
+    "on-device",
+    "decision-model",
+    "vision-language",
+    "multiple-choice",
+    "image-text-to-text",
+    "en",
+    "base_model:Mapika/decider-2b-vision",
+    "base_model:quantized:Mapika/decider-2b-vision",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7752981738,
+  "storage_human": "7.8 GB",
+  "base_model": "Mapika/decider-2b-vision",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/decider-2b-coreai-ft · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/decider-2b-coreai-ft",
+      "snippet": "decider-2b-coreai-ft — Mapika/decider-2b fine-tuned on 1,399 verified hard decision items A decider checkpoint: it reads a state (text or JSON) and typed questions (choice, score, yes/no) and returns a probability for every option from the letter logits at the answer slot."
+    },
+    {
+      "title": "GitHub - Mapika/decider: A family of System One-style models fine-tuned ...",
+      "url": "https://github.com/Mapika/decider",
+      "snippet": "Independence. This is an independent project. It is not affiliated with or endorsed by TypeSafe AI. It is an open reproduction of the \"System One\" model class (TypeSafe AI&#x27;s Jev): a 2B model built on Qwen/Qwen3.5-2B-Base, a 4B model built on Qwen/Qwen3.5-4B-Base and a 35B mixture-of-experts model built on Qwen/Qwen3.5-35B-A3B-Base."
+    },
+    {
+      "title": "Mapika/decider-2b-vision · Hugging Face",
+      "url": "https://huggingface.co/Mapika/decider-2b-vision",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Decider 2B Vision: Specifications & Sources - gradually.ai",
+      "url": "https://www.gradually.ai/en/ai-models/decider-2b-vision/",
+      "snippet": "Decider 2B Vision by Mapika. Technical specifications, availability, and official sources."
+    },
+    {
+      "title": "GitHub - john-rocky/coreai-model-zoo: Downloadable models and ...",
+      "url": "https://github.com/john-rocky/coreai-model-zoo",
+      "snippet": "Downloadable models and conversion recipes for Apple&#x27;s Core AI on iPhone and Mac. Chat, vision, speech and generative models with per-model validation records, Swift examples through CoreAIKit, and a downloadable Mac app. - john-rocky/coreai-model-zoo"
+    }
+  ]
+}

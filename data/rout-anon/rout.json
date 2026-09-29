@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "rout-anon/rOUT",
+  "slug": "rout-anon-rout",
+  "author": "rout-anon",
+  "url": "https://huggingface.co/rout-anon/rOUT",
+  "created_at": "2026-09-28T18:37:28.000Z",
+  "updated_at": "2026-09-28T18:37:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tabular",
+    "outlier-detection",
+    "anomaly-detection",
+    "early-exit",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 165130980,
+  "storage_human": "165 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mobilité professionnelle – Carte Routin TotalEnergies",
+      "url": "https://mobility.totalenergies.com/partenaires/routin-100-des-trajets-domicile-travail-une-seule-carte",
+      "snippet": "La carte Rout'in permet des financer les dépenses relatives à la mobilité domicile-travail : transports en commun, mobilités douces …"
+    },
+    {
+      "title": "Accueil - Rout consulting",
+      "url": "https://routconsulting.fr/",
+      "snippet": "Rout Consulting vous accompagne dans l’identification, l’évaluation et la maîtrise des risques industriels grâce à une expertise …"
+    },
+    {
+      "title": "Rout'in : Accompagner chaque collaborateur dans sa mobilité",
+      "url": "https://makeamove.fr/routin-mobilite-entreprise/",
+      "snippet": "Apr 20, 2026 · Concrètement, Rout’in se matérialise sous la forme d’un triptyque : un budget, une carte, une application. L’entreprise …"
+    },
+    {
+      "title": "rout - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/rout",
+      "snippet": "rout - traduction anglais-français. Forums pour discuter de rout, voir ses formes composées, des exemples et poser vos questions. …"
+    },
+    {
+      "title": "TotalEnergies et RATP Smart Systems lancent Rout’in, u",
+      "url": "https://totalenergies.com/newsroom/totalenergies-et-ratp-smart-systems-lancent-routin-une-solution-simplifiee-de-gestion-des-trajets-domicile-travail-pour-les-entreprises-et-leurs-collaborateurs/?lang=fra",
+      "snippet": "Feb 18, 2026 · « Acteur de référence des solutions de mobilité, TotalEnergies se réjouit de s'associer à RATP Smart Systems pour …"
+    }
+  ]
+}

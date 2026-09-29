@@ -5,7 +5,7 @@
   "author": "impacte",
   "url": "https://huggingface.co/impacte/bonsai-1.7b-text2sql-onnx",
   "created_at": "2026-09-28T16:30:26.000Z",
-  "updated_at": "2026-09-28T16:34:01.000Z",
+  "updated_at": "2026-09-28T17:42:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

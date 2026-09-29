@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "muhamedkamil/berna-r7-mother",
+  "slug": "muhamedkamil-berna-r7-mother",
+  "author": "muhamedkamil",
+  "url": "https://huggingface.co/muhamedkamil/berna-r7-mother",
+  "created_at": "2026-09-29T01:12:54.000Z",
+  "updated_at": "2026-09-29T01:13:02.000Z",
+  "license": "berna-research-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "language-model",
+    "berna",
+    "dna-kernel-plexus",
+    "r5-implementation",
+    "from-scratch",
+    "rtx-5090",
+    "text-generation",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=berna",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: berna Clear all"
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "muhamedkamil/berna-prototype-162m · Hugging Face",
+      "url": "https://huggingface.co/muhamedkamil/berna-prototype-162m",
+      "snippet": "muhamedkamil / berna-prototype-162m Like 0 Text Generation Transformers Safetensors English Arabic berna from-scratch prototype License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore how every major AI model evolved from its ancestors. Interactive visualization of LLM genealogy."
+    },
+    {
+      "title": "Meta AI",
+      "url": "https://www.meta.ai/",
+      "snippet": "Use Meta AI assistant to get things done, create AI-generated images for free, and get answers to any of your questions."
+    }
+  ]
+}

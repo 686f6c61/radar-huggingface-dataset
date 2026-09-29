@@ -1,0 +1,379 @@
+{
+  "schema": 1,
+  "id": "alibaba-nlp-community/gte-large-en-v1.5",
+  "slug": "alibaba-nlp-community-gte-large-en-v1-5",
+  "author": "alibaba-nlp-community",
+  "url": "https://huggingface.co/alibaba-nlp-community/gte-large-en-v1.5",
+  "created_at": "2026-09-28T21:14:54.000Z",
+  "updated_at": "2026-09-28T21:15:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "gte",
+    "sentence-transformers",
+    "mteb",
+    "transformers.js",
+    "sentence-similarity",
+    "en",
+    "dataset:allenai/c4",
+    "arxiv:2407.19669",
+    "arxiv:2308.03281",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 434139136,
+  "parameters_human": "434.1M",
+  "storage_bytes": 5995218936,
+  "storage_human": "6.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 73.01492537313432
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 35.05341696659522
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 66.71270310883853
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 93.97189999999999
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 90.5952493948908
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 93.95848137716877
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (en)",
+      "metric": null,
+      "value": 54.196
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (en)",
+      "metric": null,
+      "value": 53.80122334012787
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 47.297
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 64.303
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 64.541
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 64.541
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 60.728
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 63.114000000000004
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 48.435
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 64.657
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 64.901
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 64.901
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 61.06
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 63.514
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 47.297
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 72.107
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 72.963
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 72.963
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 65.063
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 69.352
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 47.297
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 9.623
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 0.996
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 0.1
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 25.865
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 17.596
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 47.297
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 96.23
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 99.644
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 99.644
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 77.596
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 87.98
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArxivClusteringP2P",
+      "metric": null,
+      "value": 48.467787861077475
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArxivClusteringS2S",
+      "metric": null,
+      "value": 43.39198391914257
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AskUbuntuDupQuestions",
+      "metric": null,
+      "value": 63.12794820591384
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AskUbuntuDupQuestions",
+      "metric": null,
+      "value": 75.9331442641692
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 87.85062993863319
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 85.39049989733459
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 86.00222680278333
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 85.45556162077396
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 85.88769871785621
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 85.11760211290839
+    },
+    {
+      "task": null,
+      "dataset": "MTEB Banking77Classification",
+      "metric": null,
+      "value": 87.32792207792208
+    },
+    {
+      "task": null,
+      "dataset": "MTEB Banking77Classification",
+      "metric": null,
+      "value": 87.29132945999555
+    }
+  ],
+  "sources": [
+    {
+      "title": "Alibaba.com: Manufacturers, Suppliers, Exporters & Importers from …",
+      "url": "https://www.alibaba.com/",
+      "snippet": "Find quality Manufacturers, Suppliers, Exporters, Importers, Buyers, Wholesalers, Products and Trade Leads from our award …"
+    },
+    {
+      "title": "Alibaba - la plus grande plateforme de commerce B2B en ligne au …",
+      "url": "https://french.alibaba.com/",
+      "snippet": "Alibaba, la plus grande plateforme de commerce B2B en ligne au monde. Alibaba propose des fabricants, des fournisseurs, des …"
+    },
+    {
+      "title": "Alibaba.com-Alibaba Group",
+      "url": "https://www.alibabagroup.com/en-US/about-alibaba-businesses-1747711844698554368",
+      "snippet": "Launched in 1999 as the first business of Alibaba Group, Alibaba.com has evolved into a leading platform for global business-to …"
+    },
+    {
+      "title": "Alibaba.com",
+      "url": "https://www.alibaba.com/catalogs/",
+      "snippet": "Find and source products from a wide range of categories on Alibaba.com, connecting global buyers with reliable suppliers for …"
+    },
+    {
+      "title": "AliExpress France - Livraison gratuite et économisez plus",
+      "url": "https://fr.aliexpress.com/",
+      "snippet": "Avis Sur AliExpress.com, un site de chez Alibaba, vous pouvez choisir parmi plus de 111 millions d'offres de qualité sur la mode, …"
+    }
+  ]
+}

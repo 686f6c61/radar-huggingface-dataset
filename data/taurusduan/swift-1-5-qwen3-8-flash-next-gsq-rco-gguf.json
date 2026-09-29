@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "taurusduan/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+  "slug": "taurusduan-swift-1-5-qwen3-8-flash-next-gsq-rco-gguf",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+  "created_at": "2026-09-29T00:56:02.000Z",
+  "updated_at": "2026-09-29T00:56:02.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_8",
+    "moe",
+    "gsq",
+    "rco",
+    "reasoning",
+    "efficient-thinking",
+    "token-efficient",
+    "post-training",
+    "image-text-to-text",
+    "arxiv:2604.18556",
+    "arxiv:2605.00649",
+    "base_model:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "base_model:quantized:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 212200792228,
+  "storage_human": "212.2 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Newest Porn Videos & Free Sex Movies | xHamster",
+      "url": "https://xhamster.com/newest",
+      "snippet": "2 days ago · Watch more than a thousand of the newest Porn Videos added daily on xHamster. Stream the latest sex movies with …"
+    },
+    {
+      "title": "Vidéos pornos gratuites et films XXX : site de vidéos de sexe | xHamster",
+      "url": "https://fra.xhamster.com/",
+      "snippet": "Vidéos pornos gratuites et films XXX exclusifs sur xHamster. Regardez instantannément + de 6 millions de vidéos de sexe hardcore …"
+    },
+    {
+      "title": "High-Quality Porn Videos for Free @ xHamster.com",
+      "url": "https://xhamster.net/",
+      "snippet": "Here's your #1 entrance to xHamster.com - the largest porn video website with more than 1000 new XXX HD and 4K videos added …"
+    },
+    {
+      "title": "Porno en français : Vidéos de cul avec son Français | xHamster",
+      "url": "https://fra.xhamster.com/categories/fr",
+      "snippet": "Trouvez les pornos en français les plus excitants à regarder gratuitement. Profitez de vidéos Français avec des actrices ou acteurs …"
+    }
+  ]
+}

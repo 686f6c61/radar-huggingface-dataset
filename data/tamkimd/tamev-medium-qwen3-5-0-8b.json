@@ -5,7 +5,7 @@
   "author": "Tamkimd",
   "url": "https://huggingface.co/Tamkimd/tamev-medium-qwen3.5-0.8b",
   "created_at": "2026-09-25T14:56:54.000Z",
-  "updated_at": "2026-09-27T15:17:24.000Z",
+  "updated_at": "2026-09-28T12:08:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -73,7 +73,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 104,
+  "downloads_30d": 126,
   "trending_score": 0,
   "parameters": 524800,
   "parameters_human": "524800",

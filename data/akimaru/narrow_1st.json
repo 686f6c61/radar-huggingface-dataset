@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "akimaru/Narrow_1st",
+  "slug": "akimaru-narrow_1st",
+  "author": "akimaru",
+  "url": "https://huggingface.co/akimaru/Narrow_1st",
+  "created_at": "2026-09-28T22:26:55.000Z",
+  "updated_at": "2026-09-28T22:27:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:akimaru/newhouse",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206718904,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "akimaru (Sara Akimaru) - Hugging Face",
+      "url": "https://huggingface.co/akimaru",
+      "snippet": "Sort: Recently updated akimaru/act_so101_2nd Robotics •23.5M•Updated 4 days ago•40 akimaru/so101_sorting_3cam_480p Updated 5 days ago akimaru/so101_sorting_3cam_480p_merged Updated 5 days ago"
+    },
+    {
+      "title": "Sara Akimaru - Hugging Face",
+      "url": "https://huggingface.co/akimaru/models",
+      "snippet": "akimaru&#x27;s models3 Sort: Recently updated akimaru/act_so101_2nd Robotics • 23.5M•Updated about 13 hours ago"
+    },
+    {
+      "title": "akimaru (Sara Akimaru) - Hugging Face",
+      "url": "https://huggingface.co/akimaru/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 1 hour ago ... published a dataset about 1 hour ago"
+    },
+    {
+      "title": "Akamaru naruto shippuden - v1 - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/946391973386819652",
+      "snippet": "Version Detail Uploaded Dec 25, 2025 12:04 AM Base Model Illustrious Description 1dog, Akamaru_ (Naruto shippuden), white dog, big dog"
+    },
+    {
+      "title": "Akamaru naruto shippuden - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d5685vte878c73bbkmh0",
+      "snippet": "Explore Akamaru naruto shippuden model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

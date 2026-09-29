@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mulligan/sim-square-narrow-r01-sobol-no-cf-divl",
+  "slug": "mulligan-sim-square-narrow-r01-sobol-no-cf-divl",
+  "author": "mulligan",
+  "url": "https://huggingface.co/mulligan/sim-square-narrow-r01-sobol-no-cf-divl",
+  "created_at": "2026-09-29T01:03:30.000Z",
+  "updated_at": "2026-09-29T01:03:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mulligan",
+    "sim-square-narrow",
+    "divl-agent",
+    "dataset:mulligan/sim-square-narrow-c00-teleop-sobol",
+    "dataset:mulligan/sim-square-narrow-c01-dagger-sobol-no-cf",
+    "dataset:mulligan/sim-square-narrow-c01-sobol-policy-rollouts",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1447883255,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sim-square-narrow-c00-teleop-sobol - Hugging Face",
+      "url": "https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-sobol",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mulligan/sim-square-narrow-c00-teleop-sobol at main",
+      "url": "https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-sobol/tree/main",
+      "snippet": "Datasets: mulligan / sim-square-narrow-c00-teleop-sobol Like 0 Follow Mulligan 1 Tasks: Robotics Modalities: Tabular Time-series Formats: parquet Size: 10K - 100K Tags: robotics lerobot mulligan sim-square-narrow Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main sim-square-narrow-c00-teleop-sobol 4.01 MB Ctrl+K Ctrl+K ..."
+    },
+    {
+      "title": "sim-square-narrow-c01-sobol-policy-rollouts - claru.ai",
+      "url": "https://claru.ai/datasets/mulligan-sim-square-narrow-c01-sobol-policy-rollouts",
+      "snippet": "Policy rollout dataset for the sim-square-narrow task, part of the Mulligan robotics evaluation framework. Contains 100 episodes of state-only observations without camera recordings."
+    },
+    {
+      "title": "ChatGPT-maker OpenAI scraps release of Astra 6.1 model over safety ...",
+      "url": "https://www.washingtonpost.com/technology/2026/09/28/chatgpt-maker-openai-scraps-release-astra-61-model-over-safety/",
+      "snippet": "The cancellation of the new release comes days after OpenAI said it stopped training powerful new AI after safety incidents."
+    },
+    {
+      "title": "OpenAI says its models engaged with US govt websites in new model ...",
+      "url": "https://www.stuff.co.nz/world-news/361038704/openai-says-its-models-engaged-us-government-websites-i",
+      "snippet": "OpenAI spokesperson Liz Bourgeois said in a statement that the lab is continuing to conduct a review of \"misaligned model activity\" — meaning when AI systems behave in undesired ways — and ..."
+    }
+  ]
+}

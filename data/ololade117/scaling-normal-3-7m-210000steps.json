@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ololade117/scaling-normal-3.7M-210000steps",
+  "slug": "ololade117-scaling-normal-3-7m-210000steps",
+  "author": "Ololade117",
+  "url": "https://huggingface.co/Ololade117/scaling-normal-3.7M-210000steps",
+  "created_at": "2026-09-28T22:57:41.000Z",
+  "updated_at": "2026-09-28T22:57:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3686400,
+  "parameters_human": "3.7M",
+  "storage_bytes": 14750344,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mediterranean Diet 101: What to Eat, Key Rules & Proven Benefits",
+      "url": "https://diet.mayoclinic.org/us/blog/2025/mediterranean-diet-101-core-principles-and-proven-health-gains/",
+      "snippet": "Aug 26, 2025 · Learn the core principles of the Mediterranean Diet and its proven benefits—from heart health to longevity. Includes …"
+    },
+    {
+      "title": "Guide to the Mediterranean diet - Harvard Health",
+      "url": "https://www.health.harvard.edu/healthy-aging-and-longevity/guide-to-the-mediterranean-diet",
+      "snippet": "Feb 6, 2026 · Heralded as one of the healthiest diets in the world, the Mediterranean diet is one of the most popular diets today. …"
+    },
+    {
+      "title": "Mediterranean Diet: Food List & Meal Plan - Cleveland Clinic",
+      "url": "https://my.clevelandclinic.org/health/articles/16037-mediterranean-diet",
+      "snippet": "The Mediterranean Diet has many benefits, including: Lowering your risk of cardiovascular disease, including a heart attack or …"
+    },
+    {
+      "title": "Why is the Mediterranean diet so good for you? - Mayo Clinic Diet",
+      "url": "https://diet.mayoclinic.org/us/blog/2022/why-is-the-mediterranean-diet-so-good-for-you/",
+      "snippet": "Feb 25, 2022 · Over the last 50 years, the Mediterranean diet has become one of the world’s most well-studied eating patterns, and …"
+    },
+    {
+      "title": "8 Health Benefits of the Mediterranean Diet",
+      "url": "https://www.verywellhealth.com/mediterranean-diet-health-benefits-8777601",
+      "snippet": "Sep 17, 2026 · The Mediterranean diet is associated with a wide range of health benefits, including reducing heart disease risk and …"
+    }
+  ]
+}

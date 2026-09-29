@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-h3realismolora-lora",
+  "slug": "runninghubai-rh-h3realismolora-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-h3realismolora-lora",
+  "created_at": "2026-09-28T23:05:00.000Z",
+  "updated_at": "2026-09-28T23:06:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 156009582,
+  "storage_human": "156 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "h3realismolora - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/model/public/2097420885578174465",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI (RunningHub.ai) - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI",
+      "snippet": "One API Powering All-Modal AI Productivity. Recent Activity. updated a model about 1 hour ago. RunningHubAI/rh-minimax-h3-fl2v-turbo-4step-v1.-768p-comfyui-bf16 ..."
+    },
+    {
+      "title": "RunningHubAI/rh-face-model-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-face-model-lora",
+      "snippet": "This repository provides rh-face-model-lora weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "RunningHubAI (RunningHub.ai) - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/models",
+      "snippet": "One API Powering All-Modal AI Productivity. Recent Activity. published a model 3 minutes ago. RunningHubAI/rh-z-imagebase-fp16-unet"
+    },
+    {
+      "title": "RunningHubAI/rh-h3-faster-harder-shake-harder-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-h3-faster-harder-shake-harder-lora",
+      "snippet": "rh-h3-faster-harder-shake-harder-lora Description ... About this model H3 Motion Booster V2 V2 is a major upgrade over the original Motion Booster — broader motion coverage, stronger impact response, more natural secondary body movement, and added audio support."
+    }
+  ]
+}

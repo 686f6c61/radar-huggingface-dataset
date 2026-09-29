@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sliderforthewin/aves-smart-search-siglip2-selective-int8",
+  "slug": "sliderforthewin-aves-smart-search-siglip2-selective-int8",
+  "author": "sliderforthewin",
+  "url": "https://huggingface.co/sliderforthewin/aves-smart-search-siglip2-selective-int8",
+  "created_at": "2026-09-28T23:47:14.000Z",
+  "updated_at": "2026-09-28T23:48:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "siglip2",
+    "onnx",
+    "int8",
+    "image-text-retrieval",
+    "base_model:timm/ViT-B-32-SigLIP2-256",
+    "base_model:finetune:timm/ViT-B-32-SigLIP2-256",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 598154901,
+  "storage_human": "598 MB",
+  "base_model": "timm/ViT-B-32-SigLIP2-256",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SigLIP2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/siglip2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[2502.14786] SigLIP 2: Multilingual Vision-Language Encoders with ...",
+      "url": "https://arxiv.org/abs/2502.14786",
+      "snippet": "We introduce SigLIP 2, a family of new multilingual vision-language encoders that build on the success of the original SigLIP. In this second iteration, we extend the original image-text training objective with several prior, independently developed techniques into a unified recipe -- this includes captioning-based pretraining, self-supervised losses (self-distillation, masked prediction) and ..."
+    },
+    {
+      "title": "SigLIP 2: A better multilingual vision language encoder",
+      "url": "https://huggingface.co/blog/siglip2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic ...",
+      "url": "https://arxiv.org/html/2502.14786v1",
+      "snippet": "SigLIP2, which is trained on de-biased data, exhibits significantly reduced representation bias than its predecessor. In addition, larger models are better than smaller models, in agreement with the earlier findings in [2]."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/siglip2.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/siglip2.md",
+      "snippet": "SigLIP2 is a family of multilingual vision-language encoders that builds on the SigLIP training recipe. It includes decoder-based pretraining, self-distillation, and masked prediction to improve dense prediction tasks (segmentation, depth estimation, etc.). This model is available in two variants: NaFlex supports different resolutions and maintains the native image aspect ratio FixRes supports ..."
+    }
+  ]
+}

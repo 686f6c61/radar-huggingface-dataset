@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "xbill9/gemma-4-12B-it-qat-q4_0-w4a16-ct",
+  "slug": "xbill9-gemma-4-12b-it-qat-q4_0-w4a16-ct",
+  "author": "xbill9",
+  "url": "https://huggingface.co/xbill9/gemma-4-12B-it-qat-q4_0-w4a16-ct",
+  "created_at": "2026-09-28T21:51:55.000Z",
+  "updated_at": "2026-09-29T01:16:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma4_unified",
+    "gemma4",
+    "compressed-tensors",
+    "w4a16",
+    "int4",
+    "qat",
+    "tpu",
+    "image-text-to-text",
+    "conversational",
+    "base_model:google/gemma-4-12B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-12B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 8283134242,
+  "storage_human": "8.3 GB",
+  "base_model": "google/gemma-4-12B-it-qat-q4_0-unquantized",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-12B-it-qat-q4_0-gguf · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-gguf",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "google/gemma-4-12B-it-qat-w4a16-ct · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B-it-qat-w4a16-ct",
+      "snippet": "Available for Gemma 4 E2B, E4B, 12B, and 31B. Assistant Compatibility: When using multi-token prediction (speculative decoding) with an assistant model alongside a QAT target model, the assistant model must also be a QAT checkpoint with the same precision to ensure compatibility. Gemma is a family of open models built by Google DeepMind."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "12B Gemma 4 QAT Deployment with GCE, NVIDIA L4, MCP, and Antigravity ...",
+      "url": "https://xbill999.medium.com/12b-gemma-4-qat-deployment-with-gce-nvidia-l4-mcp-and-antigravity-cli-7b9f67f4db83",
+      "snippet": "12B Gemma 4 QAT Deployment with GCE, NVIDIA L4, MCP, and Antigravity CLI This article provides a step by step deployment guide for Gemma 4 to a Google Compute Engine hosted GPU enabled system."
+    },
+    {
+      "title": "MTP Speculative Decoding with the 12B Gemma 4 QAT Model on NVIDIA L4 ...",
+      "url": "https://xbill999.medium.com/mtp-speculative-decoding-with-the-12b-gemma-4-qat-model-on-nvidia-l4-cloud-run-mcp-and-ae6632ff66bd",
+      "snippet": "The latest 12B model is used with QAT formats and deployed with MTP Speculative Decoding. A suite of Python MCP tools is built to simplify management of the vLLM hosted Gemma 4 deployment with Antigravity CLI."
+    }
+  ]
+}

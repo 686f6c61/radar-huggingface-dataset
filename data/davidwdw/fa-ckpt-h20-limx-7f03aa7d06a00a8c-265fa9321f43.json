@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-ckpt-h20-limx-7f03aa7d06a00a8c-265fa9321f43",
+  "slug": "davidwdw-fa-ckpt-h20-limx-7f03aa7d06a00a8c-265fa9321f43",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-ckpt-h20-limx-7f03aa7d06a00a8c-265fa9321f43",
+  "created_at": "2026-09-28T21:52:19.000Z",
+  "updated_at": "2026-09-28T21:59:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9352359777,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "davidwdw/fa-ckpt-t00-codegen-prepressfix-67999-6f98634d8e27 · Hugging Face",
+      "url": "https://huggingface.co/davidwdw/fa-ckpt-t00-codegen-prepressfix-67999-6f98634d8e27",
+      "snippet": "ckpt-t00-codegen-prepressfix-67999 Private fleet archive. Canonical recipe: 2026-09-22_b1k_task00_codegen_pressfix_g10 Tier: params+train_state+assets Use the exact recorded revision and verify SHA256SUMS. This package is a snapshot, not a live directory mirror. Downloads last month -"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "model.ckpt · stabilityai/TripoSR at main - Hugging Face",
+      "url": "https://huggingface.co/stabilityai/TripoSR/blob/main/model.ckpt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Stable Diffusion Models Download & Guide - The Right GPT",
+      "url": "https://therightgpt.com/stable-diffusion-guides/models/",
+      "snippet": "Stable Diffusion Models Guide 2026: Complete Download & Installation Everything you need to know about Stable Diffusion models: safe downloads, realistic checkpoints, architecture details, and local requirements for SD 1.5, SDXL, Flux.1, and custom models."
+    }
+  ]
+}

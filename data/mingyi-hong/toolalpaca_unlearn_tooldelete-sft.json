@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Mingyi-Hong/ToolAlpaca_unlearn_ToolDelete-SFT",
+  "slug": "mingyi-hong-toolalpaca_unlearn_tooldelete-sft",
+  "author": "Mingyi-Hong",
+  "url": "https://huggingface.co/Mingyi-Hong/ToolAlpaca_unlearn_ToolDelete-SFT",
+  "created_at": "2026-09-28T21:13:21.000Z",
+  "updated_at": "2026-09-28T21:18:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llama",
+    "base_model:TangQiaoYu/ToolAlpaca-7B",
+    "base_model:finetune:TangQiaoYu/ToolAlpaca-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13477442421,
+  "storage_human": "13.5 GB",
+  "base_model": "TangQiaoYu/ToolAlpaca-7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - tangqiaoyu/ToolAlpaca: the official code for \"ToolAlpaca ...",
+      "url": "https://github.com/tangqiaoyu/ToolAlpaca",
+      "snippet": "ToolAlpaca is a framework designed for learning generalized tool-use abilities in compact language models with minimal human supervision. It addresses the challenge of tool learning by generating a tool-use corpus via a multi-agent simulation environment, providing 3.9k tool-use instances from more than 400 tools."
+    },
+    {
+      "title": "[2306.05301] ToolAlpaca: Generalized Tool Learning for Language Models ...",
+      "url": "https://arxiv.org/abs/2306.05301",
+      "snippet": "Enabling large language models to utilize real-world tools effectively is crucial for achieving embodied intelligence. Existing approaches to tool learning have either primarily relied on extremely large language models, such as GPT-4, to attain generalized tool-use abilities in a zero-shot manner, or utilized supervised learning to train limited scopes of tools on compact models. However, it ..."
+    },
+    {
+      "title": "‪Mingyi Hong‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=qRnP-p0AAAAJ&hl=en",
+      "snippet": "‪Professor, University of Minnesota; Amazon AGI‬ - ‪‪Cited by 25,556‬‬ - ‪Machine Learning‬ - ‪Optimization‬ - ‪Generative AI‬ - ‪Signal processing‬"
+    },
+    {
+      "title": "ToolAlpaca: Generalized Tool Learning for Language Models with 3000 ...",
+      "url": "https://arxiv.org/pdf/2306.05301",
+      "snippet": "This paper presents ToolAlpaca, a simple framework for the automated generation of tool-use corpus and the en-hancement of the compact language model&#x27;s generalized tool-use ability. We create a diverse tool-use corpus containing 3.9k tool-use instances from more than 400 tools across 50 distinct categories."
+    },
+    {
+      "title": "Mingyi-Hong (Mingyi Hong) - Hugging Face",
+      "url": "https://huggingface.co/Mingyi-Hong/activity/papers",
+      "snippet": "User profile of Mingyi Hong on Hugging Face"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "dougalldeepmind/2026-09-28-gptoss120b-0-nosynth",
+  "slug": "dougalldeepmind-2026-09-28-gptoss120b-0-nosynth",
+  "author": "dougalldeepmind",
+  "url": "https://huggingface.co/dougalldeepmind/2026-09-28-gptoss120b-0-nosynth",
+  "created_at": "2026-09-28T21:24:31.000Z",
+  "updated_at": "2026-09-28T21:53:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lora",
+    "tinker",
+    "gpt-oss",
+    "nosynth",
+    "dataset:dougalldeepmind/2026-09-22-nosynth-mix-gpt-oss-120b",
+    "base_model:openai/gpt-oss-120b",
+    "base_model:adapter:openai/gpt-oss-120b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5257620504,
+  "storage_human": "5.3 GB",
+  "base_model": "openai/gpt-oss-120b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Livret : les meilleurs livrets d'épargne en septembre 2026",
+      "url": "https://www.moneyvox.fr/livret/",
+      "snippet": "5 days ago · Voici les offres des livrets bancaires les plus performants. Ces super livrets affichent les meilleurs taux de rémunération …"
+    },
+    {
+      "title": "PDF des tarifs 2026 de la Caisse d'Epargne Aquitaine Poitou",
+      "url": "https://www.moneyvox.fr/tarif-bancaire/caisse-epargne-aquitaine-poitou-charentes/pdf/",
+      "snippet": "Consultez les brochures tarifaires de la Caisse d'Epargne Aquitaine Poitou-Charentes, en vigueur ou plus anciennes, au format PDF."
+    },
+    {
+      "title": "Bouquet liberté caisse d'épargne - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-9245230-bouquet-liberte-caisse-d-epargne",
+      "snippet": "Jan 9, 2026 · Bonjour,la caisse d'épargne ma prélevé le bouquet liberté jusqu' an 2025 alors qu'ils n'existe plus depuis fin 2019 …"
+    },
+    {
+      "title": "Virement Caisse d'épargne [Résolu] - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-9241219-virement-caisse-d-epargne",
+      "snippet": "Nov 28, 2025 · Bonjour, Est il possible de faire un virement classique de 3500 euros d'un compte courant Caisse d'épargne vers un …"
+    },
+    {
+      "title": "Site caisse épargne indisponible [Résolu] - Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-35735333-site-caisse-epargne-indisponible",
+      "snippet": "Résumé de la discussion Plusieurs utilisateurs signalent que le site de la Caisse d'Épargne reste inaccessible, affichant des timeouts …"
+    }
+  ]
+}

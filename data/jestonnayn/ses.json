@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jestonnayn/ses",
+  "slug": "jestonnayn-ses",
+  "author": "jestonnayn",
+  "url": "https://huggingface.co/jestonnayn/ses",
+  "created_at": "2026-09-28T22:17:36.000Z",
+  "updated_at": "2026-09-28T22:20:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57533586,
+  "storage_human": "58 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ses Ai",
+      "url": "https://www.ses.ai/",
+      "snippet": "SES AI specializes in developing and manufacturing high-performance lithium-metal rechargeable batteries for electric vehicles and various other applications."
+    },
+    {
+      "title": "Why did an OpenAI system hack Australia&#x27;s health system - BBC",
+      "url": "https://www.bbc.com/news/articles/cw24jm9rryy3o",
+      "snippet": "News that an automated AI agent hacked a government IT system raises big questions about regulating the tech."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 512 AI models across 486 benchmarks, with 201 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Free AI Detector: #1 AI Checker for ChatGPT, Claude & More - Grammarly",
+      "url": "https://www.grammarly.com/ai-detector",
+      "snippet": "Grammarly&#x27;s free AI Detector achieves 99% detection accuracy on RAID&#x27;s independent benchmark. Detect AI-generated text from ChatGPT, GPT-6, Claude, and more."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-6 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-6, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    }
+  ]
+}

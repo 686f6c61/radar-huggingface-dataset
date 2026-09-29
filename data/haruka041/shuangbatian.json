@@ -5,7 +5,7 @@
   "author": "Haruka041",
   "url": "https://huggingface.co/Haruka041/shuangbatian",
   "created_at": "2026-09-28T14:25:40.000Z",
-  "updated_at": "2026-09-28T15:01:09.000Z",
+  "updated_at": "2026-09-28T16:18:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 234679216,
-  "storage_human": "235 MB",
+  "storage_bytes": 661242320,
+  "storage_human": "661 MB",
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers"

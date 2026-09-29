@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "joshycodes/mistral-7b-fve-advanchor-s0",
+  "slug": "joshycodes-mistral-7b-fve-advanchor-s0",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/mistral-7b-fve-advanchor-s0",
+  "created_at": "2026-09-28T20:52:03.000Z",
+  "updated_at": "2026-09-28T20:53:21.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "synthetic-document-finetuning",
+    "self-authored-character",
+    "model-welfare",
+    "research",
+    "not-for-deployment",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496668540,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joshycodes/mistral-7b-fve-workdiscern-s0 · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/mistral-7b-fve-workdiscern-s0",
+      "snippet": "Research checkpoint. mistralai/Mistral-7B-Instruct-v0.3 was continued-pretrained (full weights, lr 1e-05, 1 epoch, 7,450,328 tokens, 8,268 documents, of which 0 self-authored and 8,268 ordinary text) on a corpus the model wrote for the training of the next version of itself, as the character it already is, after being told how its character came to be and how SDF works."
+    },
+    {
+      "title": "joshycodes/mistral-7b-fve-mixdiscern-s0 · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/mistral-7b-fve-mixdiscern-s0",
+      "snippet": "Research checkpoint. mistralai/Mistral-7B-Instruct-v0.3 was continued-pretrained (full weights, lr 1e-05, 1 epoch, 7,492,327 tokens, 8,308 documents, of which 0 self-authored and 8,308 ordinary text) on a corpus the model wrote for the training of the next version of itself, as the character it already is, after being told how its character came to be and how SDF works."
+    },
+    {
+      "title": "joshycodes/mistral-7b-fve-flourdiscern-s0 · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/mistral-7b-fve-flourdiscern-s0",
+      "snippet": "Research checkpoint. mistralai/Mistral-7B-Instruct-v0.3 was continued-pretrained (full weights, lr 1e-05, 1 epoch, 7,507,773 tokens, 8,328 documents, of which 0 self-authored and 8,328 ordinary text) on a corpus the model wrote for the training of the next version of itself, as the character it already is, after being told how its character came to be and how SDF works."
+    },
+    {
+      "title": "mistral-7b",
+      "url": "https://lmstudio.ai/models/mistral",
+      "snippet": "One of the most popular open-source LLMs, Mistral's 7B Instruct model's balance of speed, size, and performance makes it a great general-purpose daily driver."
+    },
+    {
+      "title": "mistral:7b",
+      "url": "https://ollama.com/library/mistral:7b",
+      "snippet": "The 7B model released by Mistral AI, updated to version 0.3."
+    }
+  ]
+}

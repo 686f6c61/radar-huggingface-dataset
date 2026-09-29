@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-ckpt-h20-limx-a39328914a1de250-d70895c3d1f3",
+  "slug": "davidwdw-fa-ckpt-h20-limx-a39328914a1de250-d70895c3d1f3",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-ckpt-h20-limx-a39328914a1de250-d70895c3d1f3",
+  "created_at": "2026-09-28T23:31:15.000Z",
+  "updated_at": "2026-09-28T23:31:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Microsoft",
+      "url": "https://client.wvd.microsoft.com/webclient/index.html",
+      "snippet": "Microsoft Remote Desktop Please enable javascript and refresh the page"
+    },
+    {
+      "title": "LimX Dynamics | Official Website",
+      "url": "https://www.limxdynamics.com/en",
+      "snippet": "LimX Dynamics is an embodied AI robotics company focused on developing innovative products around three core technologies: original robot hardware design and manufacturing, brain-cerebellum fusion technology, and the humanoid brain system COSA, advancing AGI from the digital world into the physical world."
+    }
+  ]
+}

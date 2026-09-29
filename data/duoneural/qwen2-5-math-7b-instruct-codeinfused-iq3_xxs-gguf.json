@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "DuoNeural/Qwen2.5-Math-7B-Instruct-CodeInfused-IQ3_XXS-GGUF",
+  "slug": "duoneural-qwen2-5-math-7b-instruct-codeinfused-iq3_xxs-gguf",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/Qwen2.5-Math-7B-Instruct-CodeInfused-IQ3_XXS-GGUF",
+  "created_at": "2026-09-29T01:05:39.000Z",
+  "updated_at": "2026-09-29T01:09:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantization",
+    "gtap",
+    "tap-dpq",
+    "statistical-mechanics",
+    "math",
+    "reasoning",
+    "qwen2.5-math",
+    "duoneural",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-Math-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Math-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 3114515136,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Math-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Math-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Math-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Math-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-Math-7B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen2.5-math-7b-instruct-qwen",
+      "snippet": "Overview Qwen2.5-Math-7B-Instruct is a 7-billion-parameter instruction-tuned language model specialized for solving mathematical problems in English and Chinese through Chain-of-Thought (CoT) and Tool-integrated Reasoning (TIR) approaches. Built by Qwen, this model represents a significant upgrade from the earlier Qwen2-Math series, expanding language support and reasoning methodologies. The ..."
+    },
+    {
+      "title": "Qwen2.5-Math-7B-Instruct: Open-Source Mathematical LLM",
+      "url": "https://dev.co/ai/llms/qwen2-5-math-7b-instruct",
+      "snippet": "Qwen2.5-Math-7B-Instruct is a 7.6B-parameter instruction-tuned language model optimized for solving mathematical problems in English and Chinese. It combines Chain-of-Thought (CoT) reasoning with Tool-Integrated Reasoning (TIR)—using code execution for precise computation—to achieve 85.3% accuracy on the MATH benchmark."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen2.5-Math: A series of math-specific large language ...",
+      "url": "https://github.com/QwenLM/Qwen2.5-Math",
+      "snippet": "The Qwen2.5-Math series models have achieved significant performance improvements compared to the Qwen2-Math series models on the Chinese and English mathematics benchmarks with CoT. Detailed performance and introduction are shown in this 📑 blog. 🚨 Qwen2.5-Math mainly supports solving English and Chinese math problems through CoT and TIR."
+    }
+  ]
+}

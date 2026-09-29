@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ThinkingCap-Qwen3.8-27B-abliterated-GGUF",
+  "slug": "mradermacher-thinkingcap-qwen3-8-27b-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ThinkingCap-Qwen3.8-27B-abliterated-GGUF",
+  "created_at": "2026-09-28T21:43:53.000Z",
+  "updated_at": "2026-09-28T23:27:05.000Z",
+  "license": "polyform-small-business-1.0.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_5",
+    "qwen3_8",
+    "thinkingcap",
+    "abliterated",
+    "uncensored",
+    "heretic",
+    "mtp",
+    "vision",
+    "bf16",
+    "en",
+    "multilingual",
+    "base_model:IstroSec/ThinkingCap-Qwen3.8-27B-abliterated",
+    "base_model:quantized:IstroSec/ThinkingCap-Qwen3.8-27B-abliterated",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780466848,
+  "storage_human": "190.8 GB",
+  "base_model": "IstroSec/ThinkingCap-Qwen3.8-27B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.8-27B-thinkingcap-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-thinkingcap-abliterated-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-thinkingcap-abliterated-GGUF like 1 Text Generation Transformers GGUF Safetensors hotdogs/thinkingcap-sft-qwen38-27b English qwen3_5 qwen3 thinkingcap efficient-thinking reasoning token-efficient lora sft abliterated multi-token-prediction conversational License:apache-2.0 Model card FilesFiles and versions xet ..."
+    },
+    {
+      "title": "Qwen3.8-27B-thinkingcap-abliterated-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-thinkingcap-abliterated-i1-GGUF",
+      "snippet": "Qwen3.8-27B-thinkingcap-abliterated-i1-GGUF ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ThinkingCap-Qwen3.8-27B: the same answers, 37% less thinking",
+      "url": "https://bottlecapai.com/post/thinkingcap-qwen3-8-27b/",
+      "snippet": "The second model in our ThinkingCap series. We took Qwen3.8-27B and cut how much it thinks, without changing the quality of the answers."
+    },
+    {
+      "title": "BottleCap AI Releases ThinkingCap-Qwen3.8-27B: 37.2% Fewer Thinking ...",
+      "url": "https://www.marktechpost.com/2026/09/24/bottlecap-ai-releases-thinkingcap-qwen3-8-27b-37-2-fewer-thinking-tokens-at-a-0-86pp-accuracy-cost/",
+      "snippet": "BottleCap AI has released ThinkingCap-Qwen3.8-27B, the second model in its ThinkingCap series. It is a fine-tune of the Qwen team&#x27;s Qwen3.8-27B with one narrow goal: shorter reasoning traces. Across 12 benchmarks, it spends 37.2% fewer thinking tokens on average. Macro-average accuracy moves from ..."
+    },
+    {
+      "title": "Run Qwen3.8-27B-OBLITERATED Locally: GGUF Sizes, VRAM, and Settings",
+      "url": "https://www.mindstudio.ai/blog/run-qwen3-8-27b-obliterated-locally",
+      "snippet": "How to run the uncensored Qwen3.8-27B-OBLITERATED model locally: GGUF quant sizes, VRAM needs, and the exact settings that keep it from looping."
+    }
+  ]
+}

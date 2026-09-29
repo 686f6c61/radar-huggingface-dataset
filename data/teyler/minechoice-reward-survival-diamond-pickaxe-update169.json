@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "teyler/MineChoice-reward-survival-diamond-pickaxe-update169",
+  "slug": "teyler-minechoice-reward-survival-diamond-pickaxe-update169",
+  "author": "teyler",
+  "url": "https://huggingface.co/teyler/MineChoice-reward-survival-diamond-pickaxe-update169",
+  "created_at": "2026-09-28T21:07:47.000Z",
+  "updated_at": "2026-09-28T21:07:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "minecraft",
+    "reinforcement-learning",
+    "classification",
+    "structured-state",
+    "experimental",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31789,
+  "parameters_human": "31789",
+  "storage_bytes": 127588,
+  "storage_human": "127588 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minecraft Diamond-Pickaxe - Download Free 3D model by Blender3D",
+      "url": "https://sketchfab.com/3d-models/minecraft-diamond-pickaxe-b1bc7d6a3db246d5b47449ae2b2706fd",
+      "snippet": "Here is another minecraft tool i created, hope you like it :P. - Minecraft Diamond-Pickaxe - Download Free 3D model by Blender3D"
+    },
+    {
+      "title": "Welcome to the Minecraft Official Site | Minecraft",
+      "url": "https://www.minecraft.net/en-us",
+      "snippet": "Explore new gaming adventures, accessories, & merchandise on the Minecraft Official Site. Buy & download the game here, or check the site for the latest news."
+    },
+    {
+      "title": "AI learns to craft diamond pickaxe in Minecraft by observing ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/christoph-voellmy_deepmind-showed-that-an-ai-can-learn-to-activity-7348638931724165120-5oWt",
+      "snippet": "🎮 DeepMind showed that an AI can learn to craft a diamond pickaxe in Minecraft, without ever being told how. By watching over 70,000 hours of YouTube gameplay, the AI learned the necessary ..."
+    },
+    {
+      "title": "[Free] Custom 3D Modeled Pickaxes (4) | BuiltByBit",
+      "url": "https://builtbybit.com/threads/free-custom-3d-modeled-pickaxes-4.724770/",
+      "snippet": "Information: 4 Free COMPLETELY CUSTOM Pickaxes for any server that is looking for quality pickaxes to spice up their server. Water Pickaxe Angel Pickaxe Demon Pickaxe Flame Pickaxe Just drag and drop into the itemsadder contents folder! Tested Version: Minecraft 1.20.4 Extra Information:"
+    },
+    {
+      "title": "Pickaxe set - Blockbench - 3D model by DkansK - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/pickaxe-set-blockbench-e590c8e458fa4256ae4a78560297872d",
+      "snippet": "Minecraft pickaxes remade as 3D models. wooden, stone, iron, golden, diamond, netherite pickaxes. - Pickaxe set - Blockbench - 3D model by DkansK"
+    }
+  ]
+}

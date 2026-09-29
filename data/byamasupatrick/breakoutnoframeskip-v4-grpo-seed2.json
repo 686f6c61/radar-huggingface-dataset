@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "byamasupatrick/BreakoutNoFrameskip-v4-grpo-seed2",
+  "slug": "byamasupatrick-breakoutnoframeskip-v4-grpo-seed2",
+  "author": "byamasupatrick",
+  "url": "https://huggingface.co/byamasupatrick/BreakoutNoFrameskip-v4-grpo-seed2",
+  "created_at": "2026-09-29T00:41:47.000Z",
+  "updated_at": "2026-09-29T00:41:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "BreakoutNoFrameskip-v4",
+    "GRPO",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12473267,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "byamasupatrick/BreakoutNoFrameskip-v4-dqn-seed1 · Hugging Face",
+      "url": "https://huggingface.co/byamasupatrick/BreakoutNoFrameskip-v4-dqn-seed1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "a2c-BreakoutNoFrameskip-v4/data · sb3/a2c-BreakoutNoFrameskip-v4 at main",
+      "url": "https://huggingface.co/sb3/a2c-BreakoutNoFrameskip-v4/blob/main/a2c-BreakoutNoFrameskip-v4/data",
+      "snippet": "BreakoutNoFrameskip-v4 deep-reinforcement-learning Eval Results Model card FilesFiles and versions Community Use in stable-baselines3 main a2c-BreakoutNoFrameskip-v4 / a2c-BreakoutNoFrameskip-v4 /data araffin Initial Commit 8710585 verifiedalmost 2 years ago raw history blame contribute delete No virus 172 kB { \"policy_class\": { \":type ..."
+    },
+    {
+      "title": "BreakoutNoFrameskip-v4 Experiments - GitHub Pages",
+      "url": "https://breakend.github.io/RL-Energy-Leaderboard/reinforcement_learning_energy_leaderboard/breakoutnoframeskip-v4_experiments/index.html",
+      "snippet": "BreakoutNoFrameskip-v4 expeirments. Evaluate on separate environments every 250k timesteps in parallel (see code for details), run for 5M timesteps (roughly 23.15 hrs of experience)."
+    },
+    {
+      "title": "Breakout - Gymnasium Documentation",
+      "url": "https://gymnasium.farama.org/environments/atari/breakout/",
+      "snippet": "A standard API for reinforcement learning and a diverse set of reference environments (formerly Gym)"
+    },
+    {
+      "title": "Breakout - Arcade Learning Environment Documentation",
+      "url": "https://ale.farama.org/environments/breakout/",
+      "snippet": "See the version history page to implement previously implemented environments, e.g., BreakoutNoFrameskip-v4. Difficulty and modes ¶ It is possible to specify various flavors of the environment via the keyword arguments difficulty and mode. A flavor is a combination of a game mode and a difficulty setting."
+    }
+  ]
+}

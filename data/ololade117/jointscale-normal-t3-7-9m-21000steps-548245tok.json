@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ololade117/jointscale-normal-t3-7.9M-21000steps-548245tok",
+  "slug": "ololade117-jointscale-normal-t3-7-9m-21000steps-548245tok",
+  "author": "Ololade117",
+  "url": "https://huggingface.co/Ololade117/jointscale-normal-t3-7.9M-21000steps-548245tok",
+  "created_at": "2026-09-28T22:23:03.000Z",
+  "updated_at": "2026-09-28T22:23:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7888384,
+  "parameters_human": "7.9M",
+  "storage_bytes": 31558320,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ololade117 (Ololade Ogunleye ) - Hugging Face",
+      "url": "https://huggingface.co/Ololade117",
+      "snippet": "Agents Recent Activity updated a model1 day ago Ololade117/gemma-4-e2b-iroko-mentalhealth-finetuned2 published a model1 day ago Ololade117/gemma-4-e2b-iroko-mentalhealth-finetuned2 updated a model5 days ago Ololade117/medgemma-1.5-4b-iroko-finetuned View all activity"
+    },
+    {
+      "title": "Ololade117/scaling-normal-3.7M-65000steps · Hugging Face",
+      "url": "https://huggingface.co/Ololade117/scaling-normal-3.7M-65000steps",
+      "snippet": "Ololade117 / scaling-normal-3.7M-65000steps Like 0 Safetensors model_hub_mixin pytorch_model_hub_mixin License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Ololade117 · GitHub",
+      "url": "https://github.com/Ololade117/",
+      "snippet": "0 followers · 10 following Block or report Ololade117 Block user Ololade117 / README.md"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

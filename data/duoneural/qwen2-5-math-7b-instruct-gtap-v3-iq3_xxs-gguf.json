@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "DuoNeural/Qwen2.5-Math-7B-Instruct-GTAP-v3-IQ3_XXS-GGUF",
+  "slug": "duoneural-qwen2-5-math-7b-instruct-gtap-v3-iq3_xxs-gguf",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/Qwen2.5-Math-7B-Instruct-GTAP-v3-IQ3_XXS-GGUF",
+  "created_at": "2026-09-29T01:09:57.000Z",
+  "updated_at": "2026-09-29T01:25:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantization",
+    "gtap",
+    "tap-dpq",
+    "statistical-mechanics",
+    "math",
+    "reasoning",
+    "qwen2.5-math",
+    "duoneural",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-Math-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Math-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 3114514624,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Math-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Math-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Qwen/Qwen2.5-Math-7B-Instruct at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Math-7B-Instruct/blob/main/README.md",
+      "snippet": "The Qwen2.5-Math series models have achieved significant performance improvements compared to the Qwen2-Math series models on the Chinese and English mathematics benchmarks with CoT."
+    },
+    {
+      "title": "Qwen2.5-Math Technical Report: Toward Mathematical Expert Model via ...",
+      "url": "https://arxiv.org/html/2409.12122v1",
+      "snippet": "The base models, instruct models, and reward model of the Qwen2.5-Math series are available on Hugging Face 1 and ModelScope2, and the evaluation scripts on GitHub3. We have also developed a demo that supports the TIR mode in Qwen-Agent4, which allows running code locally to experience Tool-Integrated Reasoning capabilities of Qwen2.5-Math."
+    },
+    {
+      "title": "Qwen2.5-Math Technical Report: Toward Mathematical Expert Model via ...",
+      "url": "https://arxiv.org/abs/2409.12122v1",
+      "snippet": "In this report, we present a series of math-specific large language models: Qwen2.5-Math and Qwen2.5-Math-Instruct-1.5B/7B/72B. The core innovation of the Qwen2.5 series lies in integrating the philosophy of self-improvement throughout the entire pipeline, from pre-training and post-training to inference: (1) During the pre-training phase, Qwen2-Math-Instruct is utilized to generate large ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen2.5-Math: A series of math-specific large language ...",
+      "url": "https://github.com/QwenLM/Qwen2.5-Math",
+      "snippet": "The Qwen2.5-Math-72B-Instruct model outperforms the Qwen2-Math-72B-Instruct model by an average margin of 4.4 and 6.1 points in English and Chinese, respectively, establishing itself as the best open-source mathematical model currently available."
+    }
+  ]
+}

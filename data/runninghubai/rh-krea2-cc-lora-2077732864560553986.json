@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-krea2-cc-lora-2077732864560553986",
+  "slug": "runninghubai-rh-krea2-cc-lora-2077732864560553986",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-krea2-cc-lora-2077732864560553986",
+  "created_at": "2026-09-28T21:44:00.000Z",
+  "updated_at": "2026-09-28T21:45:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 231440457,
+  "storage_human": "231 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Car Insurance in France (2026): Cover, Cost & Best Deals",
+      "url": "https://en.selectra.info/insurance/car",
+      "snippet": "22 hours ago · French car insurance for expats: 24 active offers, three coverage tiers (third-party, intermediate, comprehensive), …"
+    },
+    {
+      "title": "Car Insurance Companies in France – Insurance Curator",
+      "url": "https://insurancecurator.com/car-insurance-companies-in-france/",
+      "snippet": "Below is a snapshot of some of the main companies operating in the motor insurance space in France. Market shares and average …"
+    },
+    {
+      "title": "Car Insurance in France: Insurers, Policies, and Making a Claim",
+      "url": "https://www.frenchentree.com/living-in-france/finances/insurance/car-insurance-in-france/",
+      "snippet": "Jul 22, 2021 · Car insurance in France is a legal requirement for all vehicles, but with a wide range of insurers and policies available, …"
+    },
+    {
+      "title": "Find the Best French Car Insurance || Free Quotes for Expats",
+      "url": "https://living-in-france.fr/car-insurance-france/",
+      "snippet": "But, buying a car is not as easy as it sounds. It needs proper planning and good car insurance to ensure the safety and security of …"
+    },
+    {
+      "title": "Insuring a Vehicle in France: A Practical Guide - FrenchEntrée",
+      "url": "https://www.frenchentree.com/living-in-france/insuring-a-vehicle-in-france-a-practical-guide/",
+      "snippet": "Apr 19, 2025 · How does vehicle insurance work in France, how is it different to what you're used to, what level of cover do you need, …"
+    }
+  ]
+}

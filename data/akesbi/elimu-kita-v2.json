@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "akesbi/elimu-kita-v2",
+  "slug": "akesbi-elimu-kita-v2",
+  "author": "akesbi",
+  "url": "https://huggingface.co/akesbi/elimu-kita-v2",
+  "created_at": "2026-09-28T20:51:47.000Z",
+  "updated_at": "2026-09-28T20:52:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "wllama",
+    "education",
+    "elimu",
+    "kita",
+    "text-generation",
+    "fr",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 2279586944,
+  "storage_human": "2.3 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct, Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schweinsteiger étrille l’Allemagne de Klopp après une défaite ...",
+      "url": "https://www.msn.com/fr-fr/sport/football/schweinsteiger-%C3%A9trille-l-allemagne-de-klopp-apr%C3%A8s-une-d%C3%A9faite-historique-contre-la-gr%C3%A8ce/ar-AA2d5TAJ",
+      "snippet": "L'Allemagne a subi une humiliante défaite 1-0 à domicile contre la Grèce lors de son dernier match de Ligue des nations de l'UEFA à …"
+    },
+    {
+      "title": "Ligue des nations: l'Allemagne tombe contre la Grèce, premier revers ...",
+      "url": "https://www.france24.com/fr/info-en-continu/20260927-ligue-des-nations-l-allemagne-tombe-contre-la-gr%C3%A8ce-premier-revers-pour-klopp",
+      "snippet": "23 hours ago · Pour la première à domicile de Jürgen Klopp sur le banc de l'Allemagne, la Mannschaft s'est inclinée contre la Grèce …"
+    },
+    {
+      "title": "Allemagne - Grèce : Jürgen Klopp « surpris » des sifflets après le ...",
+      "url": "https://www.20minutes.fr/sport/football/ligue-nations/4249363-20260928-allemagne-grece-jurgen-klopp-surpris-sifflets-apres-premier-couac-mannschaft-equipe-moyenne",
+      "snippet": "13 hours ago · Le nouveau cycle de la sélection allemande, lancé par l’ex-iconique coach de Liverpool, a été marqué par une défaite …"
+    },
+    {
+      "title": "Ligue des nations. L’Allemagne chute contre la Grèce, premier revers de ...",
+      "url": "https://www.ouest-france.fr/sport/football/ligue-des-nations/ligue-des-nations-lallemagne-chute-contre-la-grece-premier-revers-de-lere-juergen-klopp-84698eac-baba-11f1-bf2b-20ac402d7e60",
+      "snippet": "23 hours ago · Jürgen Klopp a connu sa première défaite à la tête de l’Allemagne, ce dimanche 27 septembre 2026, face à la Grèce …"
+    },
+    {
+      "title": "« Nous ne sommes plus une grande équipe » : Bastian Schweinsteiger ...",
+      "url": "https://tribuna.com/fr/news/2026-09-28-nous-ne-sommes-plus-une-grande-equipe-bastian-schweinsteiger-critique-lallemagne-apres-la/",
+      "snippet": "21 hours ago · L’ancien milieu de terrain de l’Allemagne, Bastian Schweinsteiger, a partagé ses impressions sur la défaite face à la …"
+    }
+  ]
+}

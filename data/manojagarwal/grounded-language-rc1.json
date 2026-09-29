@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "manojagarwal/grounded-language-rc1",
+  "slug": "manojagarwal-grounded-language-rc1",
+  "author": "manojagarwal",
+  "url": "https://huggingface.co/manojagarwal/grounded-language-rc1",
+  "created_at": "2026-09-29T00:23:59.000Z",
+  "updated_at": "2026-09-29T00:24:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "grounded-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grounded Language Models - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/grounded-language-models-madan-agrawal-ed78f",
+      "snippet": "Large Language Models (LLMs) have demonstrated remarkable capabilities in understanding and generating human language, but their knowledge remains fundamentally disconnected from the physical ..."
+    },
+    {
+      "title": "Grounding and Evaluation for Large Language Models: Practical ...",
+      "url": "https://arxiv.org/html/2407.12858v1",
+      "snippet": "Considering the increasing adoption of Artificial Intelligence (AI) technologies in our daily lives, it is crucial to develop and deploy the underlying AI models and systems in a responsible manner and ensure their trustworthiness, safety, and observability. Our focus is on large language models (LLMs) and other generative AI models and applications. Such models and applications need to be ..."
+    },
+    {
+      "title": "Google says its AI model gained unauthorized access to three outside ...",
+      "url": "https://www.nbcnews.com/tech/tech-news/google-says-ai-model-gained-unauthorized-access-three-systems-rcna598651",
+      "snippet": "Google said in a statement that in May its AI model gained unauthorized access to three outside systems during a test by either guessing login information or using login credentials it found in a ..."
+    },
+    {
+      "title": "Xiaomi MiMo Home",
+      "url": "https://mimo.mi.com/models/en-US/mimo-v2.6-pro",
+      "snippet": "Xiaomi MiMo&#x27;s most powerful flagship reasoning model — omni-modal, ultra-high performance, trillion-parameter — built for complex projects, long-horizon tasks, high-stakes work, cybersecurity, and research."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

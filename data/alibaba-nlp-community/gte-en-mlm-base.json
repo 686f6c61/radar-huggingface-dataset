@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "alibaba-nlp-community/gte-en-mlm-base",
+  "slug": "alibaba-nlp-community-gte-en-mlm-base",
+  "author": "alibaba-nlp-community",
+  "url": "https://huggingface.co/alibaba-nlp-community/gte-en-mlm-base",
+  "created_at": "2026-09-28T21:12:09.000Z",
+  "updated_at": "2026-09-28T21:12:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gte",
+    "fill-mask",
+    "en",
+    "dataset:allenai/c4",
+    "arxiv:2407.19669",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 137398848,
+  "parameters_human": "137.4M",
+  "storage_bytes": 549610728,
+  "storage_human": "550 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alibaba.com: Manufacturers, Suppliers, Exporters & Importers from …",
+      "url": "https://www.alibaba.com/",
+      "snippet": "Find quality Manufacturers, Suppliers, Exporters, Importers, Buyers, Wholesalers, Products and Trade Leads from our award …"
+    },
+    {
+      "title": "Alibaba - la plus grande plateforme de commerce B2B en ligne au …",
+      "url": "https://french.alibaba.com/",
+      "snippet": "Alibaba, la plus grande plateforme de commerce B2B en ligne au monde. Alibaba propose des fabricants, des fournisseurs, des …"
+    },
+    {
+      "title": "Alibaba.com-Alibaba Group",
+      "url": "https://www.alibabagroup.com/en-US/about-alibaba-businesses-1747711844698554368",
+      "snippet": "Launched in 1999 as the first business of Alibaba Group, Alibaba.com has evolved into a leading platform for global business-to …"
+    },
+    {
+      "title": "Alibaba.com",
+      "url": "https://www.alibaba.com/catalogs/",
+      "snippet": "Find and source products from a wide range of categories on Alibaba.com, connecting global buyers with reliable suppliers for …"
+    },
+    {
+      "title": "AliExpress France - Livraison gratuite et économisez plus",
+      "url": "https://fr.aliexpress.com/",
+      "snippet": "Avis Sur AliExpress.com, un site de chez Alibaba, vous pouvez choisir parmi plus de 111 millions d'offres de qualité sur la mode, …"
+    }
+  ]
+}

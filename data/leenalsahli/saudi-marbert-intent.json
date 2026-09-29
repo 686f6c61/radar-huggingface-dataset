@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "LeenAlsahli/saudi-marbert-intent",
+  "slug": "leenalsahli-saudi-marbert-intent",
+  "author": "LeenAlsahli",
+  "url": "https://huggingface.co/LeenAlsahli/saudi-marbert-intent",
+  "created_at": "2026-09-29T00:37:51.000Z",
+  "updated_at": "2026-09-29T00:46:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 162846727,
+  "parameters_human": "162.8M",
+  "storage_bytes": 651410452,
+  "storage_human": "651 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UBC-NLP/MARBERT · Hugging Face",
+      "url": "https://huggingface.co/UBC-NLP/MARBERT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Spam and Sentiment Detection in Arabic Tweets Using MARBERT Model",
+      "url": "https://arxiv.org/abs/2606.25495",
+      "snippet": "This study trained the proposed model using MARBERT and measured the performance using f1-score, precision, and recall metrics. We trained the model with an Arabic dataset of 24,513 tweets, including 1,437 positive, 13,828 negative, 5,694 neutral, 1,221 sarcasm, and 2,297 indeterminate tweets."
+    },
+    {
+      "title": "GitHub - UBC-NLP/marbert: UBC ARBERT and MARBERT Deep Bidirectional ...",
+      "url": "https://github.com/UBC-NLP/marbert",
+      "snippet": "The following table shows a comparison between ARBERT and MARBERT, on the one hand, and mBERT, XLM-R, and AraBERT, on the other hand. We compare in terms of pre-training data sources and size, vocabulary size, and model parameter size."
+    },
+    {
+      "title": "Spam and Sentiment Detection in Arabic Tweets Using MARBERT Model",
+      "url": "https://arxiv.org/pdf/2606.25495",
+      "snippet": ", the proposed architecture is mainly based on the MARBERT model. Our experiment will focus on spam and sentiment detection in Ara ic, we first trained the model with the spam tweets data"
+    },
+    {
+      "title": "marbert · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/marbert",
+      "snippet": "We utilized a pre-trained model to classify Arabic text. After conducting extensive research, we found that MarBERT was the best model for classifying Arabic offensive tweets. It focuses on dialectal Arabic (DA) and Modern Standard Arabic (MSA). The competition involves two shared sub-tasks: detecting whether a tweet is offensive or not; and det…"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Haruka041",
   "url": "https://huggingface.co/Haruka041/yujinhare",
   "created_at": "2026-09-28T14:26:53.000Z",
-  "updated_at": "2026-09-28T15:01:13.000Z",
+  "updated_at": "2026-09-28T15:37:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 234679216,
-  "storage_human": "235 MB",
+  "storage_bytes": 426560128,
+  "storage_human": "427 MB",
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers"

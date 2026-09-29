@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ruwwww/vllm-wheels",
+  "slug": "ruwwww-vllm-wheels",
+  "author": "ruwwww",
+  "url": "https://huggingface.co/ruwwww/vllm-wheels",
+  "created_at": "2026-09-29T00:44:55.000Z",
+  "updated_at": "2026-09-29T00:48:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "vllm",
+    "wheel",
+    "cuda12",
+    "python313",
+    "a100",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 279733131,
+  "storage_human": "280 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wheels.vllm.ai",
+      "url": "https://wheels.vllm.ai/0.9.0/",
+      "snippet": "cu118/ cu126/ vllm/"
+    },
+    {
+      "title": "wheels.vllm.ai",
+      "url": "https://wheels.vllm.ai/0.19.0/",
+      "snippet": "cpu/ cu129/ cu130/ vllm/"
+    },
+    {
+      "title": "GitHub - EmbeddedLLM/vllm-wheel",
+      "url": "https://github.com/EmbeddedLLM/vllm-wheel",
+      "snippet": "Easy, Fast, and Cheap LLM Serving for Everyone! [2024/11] We hosted the seventh vLLM meetup with Snowflake! Please find the meetup slides from vLLM team here, and Snowflake team here. [2024/10] We have just created a developer slack (slack.vllm.ai) focusing on coordinating contributions and discussing features. Please feel free to join us there!"
+    },
+    {
+      "title": "GitHub - mgoin/vllm-wheels",
+      "url": "https://github.com/mgoin/vllm-wheels",
+      "snippet": "A searchable, developer-friendly index of vLLM wheels from: release and nightly indexes on wheels.vllm.ai CUDA, CPU, and ROCm variant sub-indexes official GitHub release assets a bounded window of recent main-branch commit builds The hosted browser is designed for people. The generated JSON, CSV, and JSON Schema are designed for scripts."
+    },
+    {
+      "title": "vLLM",
+      "url": "https://vllm.ai/",
+      "snippet": "vLLM is a high-throughput and memory-efficient inference and serving engine for Large Language Models (LLMs). Deploy AI models faster with state-of-the-art performance. Easy, fast, and cost-efficient LLM serving for everyone."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ldov/campplus",
+  "slug": "ldov-campplus",
+  "author": "ldov",
+  "url": "https://huggingface.co/ldov/campplus",
+  "created_at": "2026-09-28T22:44:59.000Z",
+  "updated_at": "2026-09-28T22:44:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "funasr",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "funasr",
+    "speaker-verification",
+    "speaker-diarization",
+    "FunASR",
+    "CAM++",
+    "audio-classification",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28036335,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "funasr/campplus · Hugging Face",
+      "url": "https://huggingface.co/funasr/campplus",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - lovemefan/campplus: A open-source toolkit for single and multi ...",
+      "url": "https://github.com/lovemefan/campplus",
+      "snippet": "A open-source toolkit for single and multi-modal speaker verification from modelscope and funasr with onnx - lovemefan/campplus"
+    },
+    {
+      "title": "FunASR/funasr/models/campplus/model.py at main - GitHub",
+      "url": "https://github.com/modelscope/FunASR/blob/main/funasr/models/campplus/model.py",
+      "snippet": "Open-source speech recognition toolkit for training, inference, streaming ASR, VAD, punctuation, speaker diarization pipelines, and OpenAI-compatible/MCP serving. - modelscope/FunASR"
+    },
+    {
+      "title": "ldov/nemotron-3.5-asr-streaming-0.6b-gguf · Hugging Face",
+      "url": "https://huggingface.co/ldov/nemotron-3.5-asr-streaming-0.6b-gguf",
+      "snippet": "Model Version (s): nemotron-3.5-asr-streaming-.6b-v1 Training and Evaluation Datasets: Training Datasets It was trained on speech data across 40 language-locales. The training data is a dynamic blend of public and proprietary internal datasets normalized to have spoken forms in text with punctuation and capitalization, including: NVIDIA Riva multilingual ASR training set (Proprietary) NVIDIA ..."
+    },
+    {
+      "title": "campplus · Models",
+      "url": "https://www.modelscope.cn/models/gongjy/campplus",
+      "snippet": "CAMPPlus Speaker Encoder This directory contains a local copy of the CAMPPlus speaker verification model, originally released through ModelScope / 3D-Speaker. The model is used to extract speaker embeddings from speech, while the original model architecture, weights, authorship, and license remain attributed to the original authors."
+    }
+  ]
+}

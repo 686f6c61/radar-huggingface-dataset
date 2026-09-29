@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Mingyi-Hong/ToolAlpaca_unlearn_ToolDelete-DPO",
+  "slug": "mingyi-hong-toolalpaca_unlearn_tooldelete-dpo",
+  "author": "Mingyi-Hong",
+  "url": "https://huggingface.co/Mingyi-Hong/ToolAlpaca_unlearn_ToolDelete-DPO",
+  "created_at": "2026-09-28T21:18:05.000Z",
+  "updated_at": "2026-09-28T21:22:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llama",
+    "base_model:TangQiaoYu/ToolAlpaca-7B",
+    "base_model:finetune:TangQiaoYu/ToolAlpaca-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13477442421,
+  "storage_human": "13.5 GB",
+  "base_model": "TangQiaoYu/ToolAlpaca-7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …Read more"
+    },
+    {
+      "title": "Home - YouTube",
+      "url": "https://www.youtube.com/@trending",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "YouTube",
+      "url": "http://yotube.fr/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    }
+  ]
+}

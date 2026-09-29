@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "precisionailabs/julia-routing-strix-halo",
+  "slug": "precisionailabs-julia-routing-strix-halo",
+  "author": "precisionailabs",
+  "url": "https://huggingface.co/precisionailabs/julia-routing-strix-halo",
+  "created_at": "2026-09-29T00:23:16.000Z",
+  "updated_at": "2026-09-29T00:24:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "julia",
+  "languages": [],
+  "tags": [
+    "julia",
+    "safetensors",
+    "strix-halo",
+    "bounded-decisions",
+    "routing",
+    "cpu",
+    "gpu",
+    "text-classification",
+    "base_model:SupersonicLabs/Julia-1",
+    "base_model:finetune:SupersonicLabs/Julia-1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144292870,
+  "parameters_human": "144.3M",
+  "storage_bytes": 611552244,
+  "storage_human": "612 MB",
+  "base_model": "SupersonicLabs/Julia-1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Strix Halo APU · Strix Halo HomeLab Wiki",
+      "url": "https://strixhalo.wiki/",
+      "snippet": "Strix Halo APU Welcome to the Strix Halo Wiki! The purpose of this website it to gather important information and practical guides for systems powered by AMD Ryzen AI MAX and MAX+ processors. Our guides cover various topics and of course there is a separate section for the AI ones. You can also find some information on Strix Halo PCs and boards. Common use cases include: LLM development and ..."
+    },
+    {
+      "title": "GitHub - julianmb/npuhalo: Unlocking the power of the Halo NPU: NPU ...",
+      "url": "https://github.com/julianmb/npuhalo",
+      "snippet": "Unlocking the power of the Halo NPU: NPU + iGPU live verification, compression, and routing research on AMD Strix Halo - julianmb/npuhalo"
+    },
+    {
+      "title": "AMD Ryzen™ AI Halo for AI Developers",
+      "url": "https://www.amd.com/en/products/processors/desktops/ryzen/ryzen-ai-halo.html",
+      "snippet": "Comes with preconfigured software to build, run, and scale AI locally. AMD Ryzen™ AI Halo delivers predictable cost per token, avoiding cloud cost uncertainty."
+    },
+    {
+      "title": "Strix Halo AI Toolboxes",
+      "url": "https://strix-halo-toolboxes.com/",
+      "snippet": "A focused view of open-weight models running on local hardware, including Strix Halo and Radeon AI PRO R9700. Compare responsiveness and practical capability across models, quantizations, inference engines, and hardware."
+    },
+    {
+      "title": "Best AI models that run on AMD Ryzen AI Max+ 395 (128 GB)",
+      "url": "https://llmrequirements.com/hardware/strix-halo-128",
+      "snippet": "The open-weights LLMs we recommend on AMD Ryzen AI Max+ 395 (128 GB) (96 GB usable) — with tokens-per-second, the setup recipe, and the closed-frontier reference for comparison."
+    }
+  ]
+}

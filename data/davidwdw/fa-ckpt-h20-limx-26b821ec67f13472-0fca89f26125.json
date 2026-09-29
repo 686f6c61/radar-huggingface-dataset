@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-ckpt-h20-limx-26b821ec67f13472-0fca89f26125",
+  "slug": "davidwdw-fa-ckpt-h20-limx-26b821ec67f13472-0fca89f26125",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-ckpt-h20-limx-26b821ec67f13472-0fca89f26125",
+  "created_at": "2026-09-28T20:14:12.000Z",
+  "updated_at": "2026-09-28T20:17:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9344243078,
+  "storage_human": "9.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Minecraft Launcher | SKlauncher",
+      "url": "https://skmedix.pl/",
+      "snippet": "Experience Minecraft like never before with SKlauncher - your go-to Minecraft launcher. Easily upload and manage modpacks for a …"
+    },
+    {
+      "title": "Download SKlauncher | SKlauncher",
+      "url": "https://skmedix.pl/downloads",
+      "snippet": "Mar 2, 2018 · Download your Minecraft launcher. Experience seamless with SKlauncher modpacks integration and elevate your …"
+    },
+    {
+      "title": "SKlauncher - Community Launcher for Minecraft",
+      "url": "https://next.skmedix.pl/",
+      "snippet": "SKlauncher is a modern, secure launcher with streamlined management for Minecraft instances, mods, and modpacks."
+    },
+    {
+      "title": "Update 4.0 Beta - The New Era",
+      "url": "https://next.skmedix.pl/blog/update-4-0",
+      "snippet": "Jun 1, 2026 · After months of development, the SKlauncher 4.0 Beta is finally ready for you to break it. Here is what is new."
+    },
+    {
+      "title": "Scheduled maintenance | SKlauncher",
+      "url": "https://status.skmedix.pl/maintenance",
+      "snippet": "Welcome to SKlauncher status page for real-time and historical data on system performance."
+    }
+  ]
+}

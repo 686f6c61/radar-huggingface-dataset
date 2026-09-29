@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "FarmerlineML/voxcpm2-twi100k_talker-sft",
+  "slug": "farmerlineml-voxcpm2-twi100k_talker-sft",
+  "author": "FarmerlineML",
+  "url": "https://huggingface.co/FarmerlineML/voxcpm2-twi100k_talker-sft",
+  "created_at": "2026-09-28T23:29:42.000Z",
+  "updated_at": "2026-09-28T23:32:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "tw"
+  ],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "text-to-speech",
+    "full-finetune",
+    "twi",
+    "akan",
+    "farmerline",
+    "african-languages",
+    "tw",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:finetune:openbmb/VoxCPM2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2290004544,
+  "parameters_human": "2.29B",
+  "storage_bytes": 9649471415,
+  "storage_human": "9.6 GB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenBMB/VoxCPM: VoxCPM2: Tokenizer-Free TTS for Multilingual ...",
+      "url": "https://github.com/OpenBMB/VoxCPM/",
+      "snippet": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning - OpenBMB/VoxCPM"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=farmerline",
+      "snippet": "Explore machine learning models. 6 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: farmerline Clear all"
+    },
+    {
+      "title": "VoxCPM: Open Source TTS for Creative & Expressive Voices",
+      "url": "https://voxcpm.com/en/",
+      "snippet": "Free, open-source TTS with voice cloning! Create controllable, expressive AI voices in 30+ languages and 48kHz studio-quality audio. Perfect for creators & developers. Try it now!"
+    },
+    {
+      "title": "FarmerlineML/voxcpm2-ewe-sft · Hugging Face",
+      "url": "https://huggingface.co/FarmerlineML/voxcpm2-ewe-sft",
+      "snippet": "Full fine-tune of VoxCPM2 on Ewe speech data. Trained by FarmerlineML for the darli AI agricultural voice assistant."
+    },
+    {
+      "title": "VoxCPM 2.0 documentation",
+      "url": "https://voxcpm.readthedocs.io/",
+      "snippet": "Current Technical Limitations: Although generally stable, the model may occasionally exhibit instability, especially with very long or expressive inputs. VoxCPM 2 introduces Voice Design and Style Control for more direct attribute control, though results may vary."
+    }
+  ]
+}

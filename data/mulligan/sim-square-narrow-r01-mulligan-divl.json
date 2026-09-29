@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mulligan/sim-square-narrow-r01-mulligan-divl",
+  "slug": "mulligan-sim-square-narrow-r01-mulligan-divl",
+  "author": "mulligan",
+  "url": "https://huggingface.co/mulligan/sim-square-narrow-r01-mulligan-divl",
+  "created_at": "2026-09-29T00:59:55.000Z",
+  "updated_at": "2026-09-29T01:00:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mulligan",
+    "sim-square-narrow",
+    "divl-agent",
+    "dataset:mulligan/sim-square-narrow-c00-teleop-sobol",
+    "dataset:mulligan/sim-square-narrow-c01-dagger-mulligan",
+    "dataset:mulligan/sim-square-narrow-c01-sobol-policy-rollouts",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1447882935,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sim-square-narrow-c01-dagger-mulligan - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/mulligan-sim-square-narrow-c01-dagger-mulligan",
+      "snippet": "A simulated square-narrow manipulation task dataset from the Mulligan project, containing 100 episodes of training data collected at 20 FPS with state-only observations."
+    },
+    {
+      "title": "sim-square-narrow-c00-teleop-sobol - Hugging Face",
+      "url": "https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-sobol",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Datasets - Hugging Face",
+      "url": "https://huggingface.co/datasets?other=sim-square-narrow",
+      "snippet": "Explore datasets powering machine learning. 34 Full-text search Edit filters Sort: Trending Active filters: sim-square-narrow Clear all"
+    },
+    {
+      "title": "GitHub - RockSoda/mulligan-sim: A mulligan simulator for MTG Arena",
+      "url": "https://github.com/RockSoda/mulligan-sim",
+      "snippet": "A mulligan simulator for MTG Arena. Contribute to RockSoda/mulligan-sim development by creating an account on GitHub."
+    },
+    {
+      "title": "ChatGPT-maker OpenAI scraps release of Astra 6.1 model over safety ...",
+      "url": "https://www.washingtonpost.com/technology/2026/09/28/chatgpt-maker-openai-scraps-release-astra-61-model-over-safety/",
+      "snippet": "The cancellation of the new release comes days after OpenAI said it stopped training powerful new AI after safety incidents."
+    }
+  ]
+}

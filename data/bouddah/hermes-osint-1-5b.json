@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "bouddah/hermes-osint-1.5b",
+  "slug": "bouddah-hermes-osint-1-5b",
+  "author": "bouddah",
+  "url": "https://huggingface.co/bouddah/hermes-osint-1.5b",
+  "created_at": "2026-09-28T21:14:31.000Z",
+  "updated_at": "2026-09-28T21:14:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "osint",
+    "ctf",
+    "cybersecurity",
+    "french",
+    "lora",
+    "qlora",
+    "agent",
+    "qwen2.5",
+    "security",
+    "text-generation",
+    "conversational",
+    "fr",
+    "en",
+    "dataset:bouddah/osint-ctf-corpus-fr",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333286,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bouddha — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Bouddha",
+      "snippet": "L'appellation de bouddha peut donc se rapporter à plusieurs personnes. Le bouddha le plus connu demeure le fondateur du …Read more"
+    },
+    {
+      "title": "Un Bouddha : C'est quoi ? - Définition - Nombre de Bouddhas",
+      "url": "https://www.comprendrebouddhisme.com/connaitre/bouddhisme-bouddha.html",
+      "snippet": "Jan 3, 2025 · Le mot « Bouddha » vient du sanskrit budh, « s’éveiller, comprendre ». Dire « un Bouddha », c’est désigner une …Read more"
+    },
+    {
+      "title": "Siddhartha Gautama — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Siddhartha_Gautama",
+      "snippet": "Bouddha est une figure majeure de tous les courants du Bouddhisme, quand bien même on ne le considérait pas comme le seul …Read more"
+    },
+    {
+      "title": "Bouddha : Qui était-il et quels enseignements pour aujourd'hui ?",
+      "url": "https://www.revue-acropolis.fr/spiritualites-religions/bouddha-enseignements/",
+      "snippet": "Jun 28, 2026 · Découvrez la vie de Bouddha, ses enseignements et leur pertinence face aux défis contemporains. Une exploration …Read more"
+    },
+    {
+      "title": "The Buddha - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Buddha",
+      "snippet": "The Buddha, Tapa Shotor monastery in Hadda, Afghanistan, 2nd century CE According to Donald Lopez Jr. \"he tended to be known …Read more"
+    }
+  ]
+}

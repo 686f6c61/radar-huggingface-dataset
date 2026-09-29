@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "enver/rootformer-v17-deepseek-flash",
+  "slug": "enver-rootformer-v17-deepseek-flash",
+  "author": "enver",
+  "url": "https://huggingface.co/enver/rootformer-v17-deepseek-flash",
+  "created_at": "2026-09-28T18:58:54.000Z",
+  "updated_at": "2026-09-28T20:46:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "rootformer",
+    "deepseek-v4.1-flash",
+    "arabic-nlp",
+    "morphology",
+    "farahidian-phonology",
+    "causal-encoder-decoder",
+    "multi-head-engram",
+    "scholastic-translation",
+    "text-generation",
+    "custom_code",
+    "ar",
+    "en",
+    "arxiv:2609.19969",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 543129399,
+  "parameters_human": "543.1M",
+  "storage_bytes": 4572141541,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

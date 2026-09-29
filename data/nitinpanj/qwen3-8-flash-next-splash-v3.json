@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "nitinpanj/Qwen3.8-Flash-Next-Splash-v3",
+  "slug": "nitinpanj-qwen3-8-flash-next-splash-v3",
+  "author": "nitinpanj",
+  "url": "https://huggingface.co/nitinpanj/Qwen3.8-Flash-Next-Splash-v3",
+  "created_at": "2026-09-28T18:40:10.000Z",
+  "updated_at": "2026-09-28T22:45:27.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "splash",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "splash",
+    "gguf",
+    "qwen4exp",
+    "moe",
+    "mtp",
+    "apple-silicon",
+    "metal",
+    "speculative-decoding",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18722596864,
+  "storage_human": "18.7 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

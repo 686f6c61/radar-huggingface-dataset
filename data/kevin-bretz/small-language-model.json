@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "kevin-bretz/Small-Language-Model",
+  "slug": "kevin-bretz-small-language-model",
+  "author": "kevin-bretz",
+  "url": "https://huggingface.co/kevin-bretz/Small-Language-Model",
+  "created_at": "2026-09-28T18:46:01.000Z",
+  "updated_at": "2026-09-28T18:46:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nanochat",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1746863120,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kevin — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Kevin",
+      "snippet": "Kevin, parfois Kévin en français, est un prénom masculin d'origine irlandaise, venant de la transcription en anglais du nom gaélique …Read more"
+    },
+    {
+      "title": "Prénom Kevin (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/kevin/prenom-5753",
+      "snippet": "Quelle est la signification du prénom Kevin ? Le prénom Kevin dérive de l'adjectif caomh, dérivé du prénom d'origine gaélique …Read more"
+    },
+    {
+      "title": "Prénom Kevin : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/kevin-45442",
+      "snippet": "Signification et étymologie du prénom Kevin Le prénom Kévin est d'origine irlandaise. Ce prénom signifie « beau garçon ». On …Read more"
+    },
+    {
+      "title": "Le prénom Kévin: Signification, origine, personnalité",
+      "url": "https://www.prenoms.com/prenom-garcon/kevin-15343",
+      "snippet": "Oct 9, 2020 · Kevin est caractérisé par le 2, chiffre évoquant la vie de couple et l’équilibre. Selon sa numérologie, Kevin est un …Read more"
+    },
+    {
+      "title": "Kevin Levy — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Kevin_Levy",
+      "snippet": "En parallèle de sa carrière d’artiste, Kevin Levy est professeur de chant à l’ AICOM, où il forme de nouveaux talents en comédie …Read more"
+    }
+  ]
+}

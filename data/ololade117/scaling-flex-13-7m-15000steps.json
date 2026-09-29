@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ololade117/scaling-flex-13.7M-15000steps",
+  "slug": "ololade117-scaling-flex-13-7m-15000steps",
+  "author": "Ololade117",
+  "url": "https://huggingface.co/Ololade117/scaling-flex-13.7M-15000steps",
+  "created_at": "2026-09-28T23:41:18.000Z",
+  "updated_at": "2026-09-28T23:41:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13663232,
+  "parameters_human": "13.7M",
+  "storage_bytes": 54657784,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ololade117/scaling-normal-13.7M-15000steps · Hugging Face",
+      "url": "https://huggingface.co/Ololade117/scaling-normal-13.7M-15000steps",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ololade117 (Ololade Ogunleye ) - Hugging Face",
+      "url": "https://huggingface.co/Ololade117",
+      "snippet": "Agents Recent Activity updated a model1 day ago Ololade117/gemma-4-e2b-iroko-mentalhealth-finetuned2 published a model1 day ago Ololade117/gemma-4-e2b-iroko-mentalhealth-finetuned2 updated a model5 days ago Ololade117/medgemma-1.5-4b-iroko-finetuned View all activity"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is AI built to help you get things done. Create, brainstorm, learn, and solve problems with AI chat that works across your day."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 512 AI models across 486 benchmarks, with 201 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hding95/egovla-vega-wuji-pipette-r13h-ee",
+  "slug": "hding95-egovla-vega-wuji-pipette-r13h-ee",
+  "author": "hding95",
+  "url": "https://huggingface.co/hding95/egovla-vega-wuji-pipette-r13h-ee",
+  "created_at": "2026-09-28T23:03:08.000Z",
+  "updated_at": "2026-09-29T00:11:44.000Z",
+  "license": "upstream-egovla-vila-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vision-language-action",
+    "isaac-sim",
+    "dexterous-manipulation",
+    "bimanual",
+    "arxiv:2507.12440",
+    "base_model:rchal97/egovla",
+    "base_model:finetune:rchal97/egovla",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4680012706,
+  "storage_human": "4.7 GB",
+  "base_model": "rchal97/egovla",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hding95/g1-inspire-piston-egoonly-22170 · Hugging Face",
+      "url": "https://huggingface.co/hding95/g1-inspire-piston-egoonly-22170",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EgoVLA: Learning Vision-Language-Action Models from Egocentric Human Videos",
+      "url": "https://rchalyang.github.io/EgoVLA/",
+      "snippet": "EgoVLA is a vision-language-action (VLA) model that combines the broad diversity of human egocentric videos with the precision of robot demonstrations. It is first pretrained on large-scale human manipulation data, learning to predict future hand and wrist motions from visual observations, language instructions, and proprioceptive signals."
+    },
+    {
+      "title": "[2507.12440] EgoVLA: Learning Vision-Language-Action Models from ...",
+      "url": "https://arxiv.org/abs/2507.12440",
+      "snippet": "Real robot data collection for imitation learning has led to significant advancements in robotic manipulation. However, the requirement for robot hardware in the process fundamentally constrains the scale of the data. In this paper, we explore training Vision-Language-Action (VLA) models using egocentric human videos. The benefit of using human videos is not only for their scale but more ..."
+    },
+    {
+      "title": "Your SafeSearch Setting - Google",
+      "url": "https://www.google.com/safesearch",
+      "snippet": "SafeSearch helps you manage explicit content in your search results, like sexual activity and graphic violence. Learn More About SafeSearch"
+    },
+    {
+      "title": "EvoVLA: Self-Evolving Vision-Language-Action Model - GitHub",
+      "url": "https://github.com/AIGeeksGroup/EvoVLA",
+      "snippet": "In long-horizon manipulation tasks, robots often suffer from \"Stage Hallucination\": they think they&#x27;ve completed a step because the visual scene looks \"close enough,\" but they haven&#x27;t actually finished the job (e.g., a block is near the target but not stacked). This \"high confidence, low competence\" failure mode causes catastrophic task failure. EvoVLA is a self-evolving framework designed to ..."
+    }
+  ]
+}

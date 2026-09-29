@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/REDCELL-26B-A4B-OSINT-Cyber",
+  "slug": "0xsojalsec-redcell-26b-a4b-osint-cyber",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/REDCELL-26B-A4B-OSINT-Cyber",
+  "created_at": "2026-09-29T00:56:34.000Z",
+  "updated_at": "2026-09-29T00:56:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "osint",
+    "cti",
+    "threat-intelligence",
+    "cybersecurity",
+    "journalism",
+    "gemma",
+    "gemma4",
+    "fine-tune",
+    "moe",
+    "vision",
+    "multimodal",
+    "text-generation",
+    "en",
+    "base_model:unsloth/gemma-4-26B-A4B-it",
+    "base_model:quantized:unsloth/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 202093998441,
+  "storage_human": "202.1 GB",
+  "base_model": "unsloth/gemma-4-26B-A4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF - Hugging Face",
+      "url": "https://huggingface.co/terrorswift/REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF",
+      "snippet": "A supervised fine-tune of Gemma 4 26B-A4B, oriented towards open-source intelligence, cyber threat intelligence, and investigative journalism. Overview REDCELL is a supervised fine-tune (SFT) of Google&#x27;s Gemma 4 26B-A4B (Mixture-of-Experts, MoE), trained to produce senior-analyst tradecraft instead of reflexive hedging on legitimate investigative work. Training: Supervised fine-tuning (SFT) of ..."
+    },
+    {
+      "title": "terrorswift/REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF at main",
+      "url": "https://huggingface.co/terrorswift/REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF/tree/main",
+      "snippet": "terrorswift / REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF like 3 Text Generation Transformers GGUF English osint cti threat-intelligence cybersecurity journalism gemma gemma4 fine-tune Mixture of Experts vision multimodal conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - martian56/redcell: AI red-team platform. Autonomous LLM agents ...",
+      "url": "https://github.com/martian56/redcell",
+      "snippet": "REDCELL is intended solely for education, research, and legal, authorized security testing. Acceptable use includes your own systems and labs, deliberately vulnerable practice targets, capture-the-flag events, and engagements you are contracted to perform with the target owner&#x27;s explicit written permission and a defined scope."
+    },
+    {
+      "title": "0xSojalSec (MD ISMAIL SOJAL) · GitHub",
+      "url": "https://github.com/0xSojalSec/",
+      "snippet": "Cyber Security Re-searcher | Malware Analysis | AI Re-searcher | Studying OSCP | Open-source AI,LLM stuff | Post-training / Reasonign Models / RAG | AI Agent - 0xSojalSec"
+    },
+    {
+      "title": "JoasASantos/Offensive-Security-AI-Models: uncensored LLMs for Offensive ...",
+      "url": "https://imtaqin.id/joasasantos-offensive-security-ai-models-uncensored-llms-for-offensive-security",
+      "snippet": "Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. > All data sourced from HuggingFace model cards and official publications. Sep 2026. --- ## Security Fine-tuned Models ### 1. DeepHat V2 (WhiteRabbitNeo) | Spec | Valu..."
+    }
+  ]
+}

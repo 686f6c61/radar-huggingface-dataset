@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ololade117/scaling-flex-3.7M-15000steps",
+  "slug": "ololade117-scaling-flex-3-7m-15000steps",
+  "author": "Ololade117",
+  "url": "https://huggingface.co/Ololade117/scaling-flex-3.7M-15000steps",
+  "created_at": "2026-09-28T23:02:07.000Z",
+  "updated_at": "2026-09-28T23:02:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3686400,
+  "parameters_human": "3.7M",
+  "storage_bytes": 14750392,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cinepuls",
+      "url": "https://www.cinepuls.com/landing/",
+      "snippet": "Cinepuls CONTINUE TO MOVIES (16s)"
+    },
+    {
+      "title": "Cinepulse Streaming — Films, séries, VF, VOSTFR & accès Cinepulse …",
+      "url": "https://cinepulse.click/streaming/",
+      "snippet": "Cinepulse streaming désigne l’expérience associée à Cinepulse Live, l’espace catalogue de Cinepulse dédié aux films, séries, …"
+    },
+    {
+      "title": "Cinepulse Officiel – Streaming Gratuit de film en VF et Vostfr",
+      "url": "https://cinepulse.icu/",
+      "snippet": "Découvrez Cinepulse streaming : films récents, séries exclusives, catalogue varié, sorties à venir. Une nouvelle façon de vivre le …"
+    },
+    {
+      "title": "Cinepulse Official: X | Linktree",
+      "url": "https://linktr.ee/cinepulse",
+      "snippet": "Here’s how to fix it. Linktree. Make your link do more."
+    },
+    {
+      "title": "Cinepulse Officiel | Streaming Films & Séries HD en France",
+      "url": "https://cinepulse.fyi/",
+      "snippet": "Cinepulse est un service de streaming officiel, gratuit et financé par la publicité, conçu pour le marché francophone. Sans …"
+    }
+  ]
+}

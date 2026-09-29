@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-ckpt-h20-limx-4e4b669d4a20b7ec-4b06c54dfd62",
+  "slug": "davidwdw-fa-ckpt-h20-limx-4e4b669d4a20b7ec-4b06c54dfd62",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-ckpt-h20-limx-4e4b669d4a20b7ec-4b06c54dfd62",
+  "created_at": "2026-09-28T22:11:52.000Z",
+  "updated_at": "2026-09-28T22:18:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9351410331,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "ckpt (ckpt) - Hugging Face",
+      "url": "https://huggingface.co/ckpt/models",
+      "snippet": "ckpt AI & ML interests ckpt Team members 3 ckpt &#x27;s models 271"
+    },
+    {
+      "title": "ckpt (ckpt) - Hugging Face",
+      "url": "https://huggingface.co/ckpt",
+      "snippet": "ckpt AI & ML interests ckpt Team members 3 models 271"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "joshycodes/llama-3.1-8b-fve-ga25anchor-s0",
+  "slug": "joshycodes-llama-3-1-8b-fve-ga25anchor-s0",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/llama-3.1-8b-fve-ga25anchor-s0",
+  "created_at": "2026-09-28T22:08:34.000Z",
+  "updated_at": "2026-09-28T22:09:53.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "synthetic-document-finetuning",
+    "self-authored-character",
+    "model-welfare",
+    "research",
+    "not-for-deployment",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766536,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cloudflare Dashboard | Manage Your Account",
+      "url": "https://dash.cloudflare.com/login",
+      "snippet": "Log in to the Cloudflare dashboard. Make your websites, apps, and networks fast and secure. Build modern apps on our developer …"
+    },
+    {
+      "title": "Cloudflare Dashboard | Manage Your Account",
+      "url": "https://dash.cloudflare.com/",
+      "snippet": "Oct 19, 2011 · Log in to the Cloudflare dashboard. Make your websites, apps, and networks fast and secure. Build modern apps on …"
+    },
+    {
+      "title": "Cloudflare Dashboard | Manage Your Account",
+      "url": "https://dash.cloudflare.com/one/",
+      "snippet": "Log in to the Cloudflare dashboard. Make your websites, apps, and networks fast and secure. Build modern apps on our developer …"
+    },
+    {
+      "title": "Cloudflare | Web Performance & Security",
+      "url": "https://dash.cloudflare.com/sign-up",
+      "snippet": "Sign up for Cloudflare to enhance web performance and security for your websites, apps, and networks."
+    },
+    {
+      "title": "Cloudflare: Build for the agent era",
+      "url": "https://www.cloudflare.com/",
+      "snippet": "Join thousands of developers who've eliminated infrastructure complexity and deployed globally with Cloudflare. Start building for …"
+    }
+  ]
+}

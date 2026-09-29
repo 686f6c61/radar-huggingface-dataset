@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "junior0091/qwen_3.8_word5k_latest",
+  "slug": "junior0091-qwen_3-8_word5k_latest",
+  "author": "junior0091",
+  "url": "https://huggingface.co/junior0091/qwen_3.8_word5k_latest",
+  "created_at": "2026-09-28T20:48:36.000Z",
+  "updated_at": "2026-09-28T20:50:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 20466848416,
+  "storage_human": "20.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

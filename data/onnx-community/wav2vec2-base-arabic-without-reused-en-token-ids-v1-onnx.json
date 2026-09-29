@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "onnx-community/wav2vec2-base-arabic-without-reused-en-token-ids-v1-ONNX",
+  "slug": "onnx-community-wav2vec2-base-arabic-without-reused-en-token-ids-v1-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/wav2vec2-base-arabic-without-reused-en-token-ids-v1-ONNX",
+  "created_at": "2026-09-29T00:25:45.000Z",
+  "updated_at": "2026-09-29T00:25:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "dataset:common_voice_17_0",
+    "base_model:Mohammadawad1/wav2vec2-base-arabic-without-reused-en-token-ids-v1",
+    "base_model:quantized:Mohammadawad1/wav2vec2-base-arabic-without-reused-en-token-ids-v1",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 807457304,
+  "storage_human": "807 MB",
+  "base_model": "Mohammadawad1/wav2vec2-base-arabic-without-reused-en-token-ids-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "common_voice_17_0",
+      "metric": "Wer",
+      "value": 0.5747461736626762
+    }
+  ],
+  "sources": [
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX is an open format built to represent machine learning models. ONNX defines a common set of operators - the building blocks …"
+    },
+    {
+      "title": "GitHub - onnx/onnx: Open standard for machine learning interoperability",
+      "url": "https://github.com/onnx/onnx",
+      "snippet": "Open Neural Network Exchange (ONNX) is an open ecosystem that empowers AI developers to choose the right tools as their …"
+    },
+    {
+      "title": "Open Neural Network Exchange - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Open_Neural_Network_Exchange",
+      "snippet": "Once a model is in ONNX format, it can be executed in different runtime systems or on various hardware platforms, such as GPUs or …"
+    },
+    {
+      "title": "ONNX 1.24.0 documentation",
+      "url": "https://onnx.ai/onnx/",
+      "snippet": "ONNX documentation ¶ Introduction to ONNX ONNX Concepts ONNX with Python Converters API Reference Versioning Data …"
+    },
+    {
+      "title": "ONNX Runtime | Home",
+      "url": "https://onnxruntime.ai/",
+      "snippet": "On-device training with ONNX Runtime lets developers take an inference model and train it locally to deliver a more personalized …"
+    }
+  ]
+}

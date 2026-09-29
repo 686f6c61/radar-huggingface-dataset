@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/llama-3.2-1b-creative-writing-ablated-i1-GGUF",
+  "slug": "mradermacher-llama-3-2-1b-creative-writing-ablated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/llama-3.2-1b-creative-writing-ablated-i1-GGUF",
+  "created_at": "2026-09-28T23:04:46.000Z",
+  "updated_at": "2026-09-29T00:15:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Sachin903/llama-3.2-1b-creative-writing-ablated",
+    "base_model:quantized:Sachin903/llama-3.2-1b-creative-writing-ablated",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 15950727552,
+  "storage_human": "16.0 GB",
+  "base_model": "Sachin903/llama-3.2-1b-creative-writing-ablated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/llama-3.2-1b-creative-writing-ablated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/llama-3.2-1b-creative-writing-ablated-GGUF",
+      "snippet": "Instructions to use mradermacher/llama-3.2-1b-creative-writing-ablated-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "mradermacher/llama-3.2-1b-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/llama-3.2-1b-abliterated-GGUF",
+      "snippet": "mradermacher / llama-3.2-1b-abliterated-GGUF like 0 Transformers GGUF English abliterated uncensored refusal-removal interpretability senbonzakura conversational License:llama3.2 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://dev.meta.ai/llama/models/llama-3",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "GitHub - meta-llama/llama: Inference code for Llama models",
+      "url": "https://github.com/meta-llama/llama",
+      "snippet": "This release includes model weights and starting code for pre-trained and fine-tuned Llama language models — ranging from 7B to 70B parameters. This repository is intended as a minimal example to load Llama 2 models and run inference. For more detailed examples leveraging Hugging Face, see llama-cookbook."
+    },
+    {
+      "title": "abliterated · Ollama",
+      "url": "https://ollama.com/search?q=abliterated",
+      "snippet": "Cipher-Abliterated is an adaptive conversational AI system designed for flexible interaction, enhanced creative reasoning, and less restrictive conversational behavior while maintaining structured output and technical usability."
+    }
+  ]
+}

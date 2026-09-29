@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ololade117/scaling-flex-10.6M-15000steps",
+  "slug": "ololade117-scaling-flex-10-6m-15000steps",
+  "author": "Ololade117",
+  "url": "https://huggingface.co/Ololade117/scaling-flex-10.6M-15000steps",
+  "created_at": "2026-09-28T23:27:51.000Z",
+  "updated_at": "2026-09-28T23:27:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10579200,
+  "parameters_human": "10.6M",
+  "storage_bytes": 42321648,
+  "storage_human": "42 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ololade117/scaling-normal-10.6M-15000steps · Hugging Face",
+      "url": "https://huggingface.co/Ololade117/scaling-normal-10.6M-15000steps",
+      "snippet": "Ololade117 / scaling-normal-10.6M-15000steps Like 0 Safetensors model_hub_mixin pytorch_model_hub_mixin License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Ololade117 (Ololade Ogunleye ) - Hugging Face",
+      "url": "https://huggingface.co/Ololade117",
+      "snippet": "Agents Recent Activity updated a model1 day ago Ololade117/gemma-4-e2b-iroko-mentalhealth-finetuned2 published a model1 day ago Ololade117/gemma-4-e2b-iroko-mentalhealth-finetuned2 updated a model5 days ago Ololade117/medgemma-1.5-4b-iroko-finetuned View all activity"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Ololade117 · GitHub",
+      "url": "https://github.com/Ololade117/",
+      "snippet": "0 followers · 10 following Block or report Ololade117 Block user Ololade117 / README.md"
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    }
+  ]
+}

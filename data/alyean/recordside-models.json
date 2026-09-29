@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Alyean/recordside-models",
+  "slug": "alyean-recordside-models",
+  "author": "Alyean",
+  "url": "https://huggingface.co/Alyean/recordside-models",
+  "created_at": "2026-09-28T21:57:45.000Z",
+  "updated_at": "2026-09-28T22:15:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio",
+    "music-source-separation",
+    "demucs",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1431610175,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 512 AI models across 486 benchmarks, with 201 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "Browse all available models on the OpenAI Platform."
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    }
+  ]
+}

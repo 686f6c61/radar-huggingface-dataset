@@ -5,7 +5,7 @@
   "author": "agentionai",
   "url": "https://huggingface.co/agentionai/Qwen3.8-27B-AP-GGUF",
   "created_at": "2026-09-22T16:21:33.000Z",
-  "updated_at": "2026-09-25T17:56:16.000Z",
+  "updated_at": "2026-09-28T08:13:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,8 +29,8 @@
   "trending_score": 77,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 138633262113,
-  "storage_human": "138.6 GB",
+  "storage_bytes": 148242570453,
+  "storage_human": "148.2 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

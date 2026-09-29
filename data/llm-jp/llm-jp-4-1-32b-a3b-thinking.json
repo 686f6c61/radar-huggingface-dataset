@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "llm-jp/llm-jp-4.1-32b-a3b-thinking",
+  "slug": "llm-jp-llm-jp-4-1-32b-a3b-thinking",
+  "author": "llm-jp",
+  "url": "https://huggingface.co/llm-jp/llm-jp-4.1-32b-a3b-thinking",
+  "created_at": "2026-09-16T05:12:15.000Z",
+  "updated_at": "2026-09-28T07:27:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "en",
+    "ja",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 3,
+  "trending_score": 12,
+  "parameters": 32139028992,
+  "parameters_human": "32.14B",
+  "storage_bytes": 128572587874,
+  "storage_human": "128.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grand modèle de langage — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage",
+      "snippet": "Les LLM sont des fonctions mathématiques dont l'entrée et la sortie sont des listes de nombres. Pour que ceux-ci fonctionnent avec …Read more"
+    },
+    {
+      "title": "Qu'est-ce qu'un LLM ? Définition d'un grand modèle de langage",
+      "url": "https://www.numerama.com/tech/2161859-quest-ce-quun-llm-large-language-model-et-comment-cela-fonctionne.html",
+      "snippet": "Jan 25, 2026 · Qu’est-ce qu’un LLM (Large Language Model) ? Un LLM est une intelligence artificielle entraînée sur d’énormes …Read more"
+    },
+    {
+      "title": "Large language model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Large_language_model",
+      "snippet": "An LLM is given some examples where the \"assistant\" verbally breaks down the thought process before arriving at an answer. The …Read more"
+    },
+    {
+      "title": "Classement des meilleurs LLM en septembre 2026 : top 15 - Digitiz",
+      "url": "https://digitiz.fr/classement-llm/",
+      "snippet": "Sep 1, 2026 · Le top 15 des LLM les plus performants en septembre 2026 : scores, tarifs et le modèle à choisir selon votre budget et …Read more"
+    },
+    {
+      "title": "Grand modèle de langage (LLM) : Tout ce qu'il faut savoir",
+      "url": "https://liora.io/large-language-models-tout-savoir",
+      "snippet": "Feb 19, 2026 · Les LLM représentent un sous-ensemble spécialisé de l’IA, focalisé sur le traitement et la génération de langage …Read more"
+    }
+  ]
+}

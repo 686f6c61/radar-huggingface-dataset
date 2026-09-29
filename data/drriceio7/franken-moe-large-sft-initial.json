@@ -5,7 +5,7 @@
   "author": "DrRiceIO7",
   "url": "https://huggingface.co/DrRiceIO7/Franken-MoE-Large-SFT-Initial",
   "created_at": "2026-09-22T01:25:39.000Z",
-  "updated_at": "2026-09-23T16:02:36.000Z",
+  "updated_at": "2026-09-29T00:08:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 380,
+  "downloads_30d": 388,
   "trending_score": 0,
   "parameters": 4560125952,
   "parameters_human": "4.56B",

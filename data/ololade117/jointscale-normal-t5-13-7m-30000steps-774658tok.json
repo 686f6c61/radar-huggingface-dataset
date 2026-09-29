@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ololade117/jointscale-normal-t5-13.7M-30000steps-774658tok",
+  "slug": "ololade117-jointscale-normal-t5-13-7m-30000steps-774658tok",
+  "author": "Ololade117",
+  "url": "https://huggingface.co/Ololade117/jointscale-normal-t5-13.7M-30000steps-774658tok",
+  "created_at": "2026-09-28T23:06:34.000Z",
+  "updated_at": "2026-09-28T23:06:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13663232,
+  "parameters_human": "13.7M",
+  "storage_bytes": 54657736,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ololade117/scaling-normal-13.7M-15000steps · Hugging Face",
+      "url": "https://huggingface.co/Ololade117/scaling-normal-13.7M-15000steps",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ololade117 · GitHub",
+      "url": "https://github.com/Ololade117/",
+      "snippet": "Ololade117 has 7 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new featuresNFL Sunday Ticket © 2026 Google LLC"
+    }
+  ]
+}

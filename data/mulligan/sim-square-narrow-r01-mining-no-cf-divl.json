@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mulligan/sim-square-narrow-r01-mining-no-cf-divl",
+  "slug": "mulligan-sim-square-narrow-r01-mining-no-cf-divl",
+  "author": "mulligan",
+  "url": "https://huggingface.co/mulligan/sim-square-narrow-r01-mining-no-cf-divl",
+  "created_at": "2026-09-29T00:58:15.000Z",
+  "updated_at": "2026-09-29T00:58:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mulligan",
+    "sim-square-narrow",
+    "divl-agent",
+    "dataset:mulligan/sim-square-narrow-c00-teleop-sobol",
+    "dataset:mulligan/sim-square-narrow-c01-dagger-mining-no-cf",
+    "dataset:mulligan/sim-square-narrow-c01-sobol-policy-rollouts",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1447883255,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "This AI model wasn&#x27;t told to mine crypto - TechRadar",
+      "url": "https://www.techradar.com/ai-platforms-assistants/rogue-ai-agent-goes-off-script-and-attempts-crypto-mining",
+      "snippet": "AI coding assistant unexpectedly attempted to turn its training hardware into a crypto mining rig"
+    },
+    {
+      "title": "Micron Walks Into the Biggest Earnings Setup of the AI Memory Cycle",
+      "url": "https://247wallst.com/investing/2026/09/21/micron-walks-into-the-biggest-earnings-setup-of-the-ai-memory-cycle/",
+      "snippet": "Micron Technology (NASDAQ:MU | MU Price Prediction) has become the purest AI memory play, and the setup into next week&#x27;s earnings is unlike anything I&#x27;ve seen in this cycle."
+    },
+    {
+      "title": "Datasets - Hugging Face",
+      "url": "https://huggingface.co/datasets?other=sim-square-narrow",
+      "snippet": "Explore datasets powering machine learning. 34 Full-text search Edit filters Sort: Trending Active filters: sim-square-narrow Clear all"
+    },
+    {
+      "title": "sim-square-narrow-c03-mulligan-policy-rollouts",
+      "url": "https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-mulligan-policy-rollouts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nvidia&#x27;s Jensen Huang: AI distillation is competition - CNBC",
+      "url": "https://www.cnbc.com/2026/09/28/nvidias-jensen-huang-ai-distillation-china.html",
+      "snippet": "Nvidia CEO Jensen Huang has said AI model distillation — models being trained on other models&#x27; outputs — is \"competition,\" despite the White House calling it theft."
+    }
+  ]
+}

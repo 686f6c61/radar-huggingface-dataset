@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dcsharma/classification-int8",
+  "slug": "dcsharma-classification-int8",
+  "author": "dcsharma",
+  "url": "https://huggingface.co/dcsharma/classification-int8",
+  "created_at": "2026-09-28T23:41:29.000Z",
+  "updated_at": "2026-09-28T23:41:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "Image classification task guide | Google AI Edge - Google Developers",
+      "url": "https://developers.google.com/edge/mediapipe/solutions/vision/image_classifier/index",
+      "snippet": "The MediaPipe Image Classifier task lets you perform classification on images. You can use this task to identify what an image represents among a set of categories defined at training time. This task operates on image data with a machine learning (ML) model as static data or a continuous stream and outputs a list of potential categories ranked by descending probability score. Try it! arrow ..."
+    },
+    {
+      "title": "SEM Defect Classification - Edge AI - GitHub",
+      "url": "https://github.com/Hireshkumaran-G/EdgeAI-SEM-Defect-Classification",
+      "snippet": "End-to-end Edge AI pipeline for semiconductor wafer defect classification from SEM images using MobileNetV3, ONNX, and INT8 optimization for NXP edge platforms."
+    },
+    {
+      "title": "Quantization · Hugging Face",
+      "url": "https://huggingface.co/docs/optimum/concept_guides/quantization",
+      "snippet": "Quantization is a technique to reduce the computational and memory costs of running inference by representing the weights and activations with low-precision data types like 8-bit integer (int8) instead of the usual 32-bit floating point (float32). Reducing the number of bits means the resulting model requires less memory storage, consumes less energy (in theory), and operations like matrix ..."
+    }
+  ]
+}

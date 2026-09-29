@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-switch-to-live-action-lora",
+  "slug": "runninghubai-rh-switch-to-live-action-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-switch-to-live-action-lora",
+  "created_at": "2026-09-28T23:09:02.000Z",
+  "updated_at": "2026-09-28T23:10:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 590629526,
+  "storage_human": "591 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Groups | UEFA Nations League | UEFA.com",
+      "url": "https://www.uefa.com/uefanationsleague/standings/",
+      "snippet": "Complete table of UEFA Nations League 2027 latest group stage standings. Updated instantly after every game. Visit UEFA for more …Read more"
+    },
+    {
+      "title": "UEFA Nations League Table and Standings - Football - BBC Sport",
+      "url": "https://www.bbc.co.uk/sport/football/nations-league/table",
+      "snippet": "1 day ago · Find out which football teams are leading the pack or at the foot of the table in the UEFA Nations League on BBC SportRead more"
+    },
+    {
+      "title": "Sweden | UEFA Nations League",
+      "url": "https://www.uefa.com/uefanationsleague/teams/127--sweden/",
+      "snippet": "Sep 25, 2019 · Visit UEFA.com to find out how Sweden are doing in the UEFA Nations League 2027, including latest match news, …Read more"
+    },
+    {
+      "title": "Sweden Tables and Standings - Football - BBC Sport",
+      "url": "https://www.bbc.com/sport/football/teams/sweden/table",
+      "snippet": "Jul 19, 2026 · Find out if Sweden football team is leading the pack or at the foot of the table on BBC SportRead more"
+    },
+    {
+      "title": "Sweden national football team standings 2026/2027",
+      "url": "https://tribuna.com/en/team/sweden/table/2026-2027/",
+      "snippet": "5 days ago · This page shows the Sweden national football team standings in 2026/2027 across different international competitions. …Read more"
+    }
+  ]
+}

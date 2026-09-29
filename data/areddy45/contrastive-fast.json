@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Areddy45/contrastive-fast",
+  "slug": "areddy45-contrastive-fast",
+  "author": "Areddy45",
+  "url": "https://huggingface.co/Areddy45/contrastive-fast",
+  "created_at": "2026-09-29T00:08:32.000Z",
+  "updated_at": "2026-09-29T00:08:37.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "GitHub - bespokelabsai/nimble: Local typed decisions, contrastive data ...",
+      "url": "https://github.com/bespokelabsai/nimble",
+      "snippet": "Local typed decisions, contrastive data curation, and model evaluation. - bespokelabsai/nimble"
+    },
+    {
+      "title": "andreywsmirnov/contrastive-fast · Hugging Face",
+      "url": "https://huggingface.co/andreywsmirnov/contrastive-fast",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lucyjohnson/contrastive-fast · Hugging Face",
+      "url": "https://huggingface.co/lucyjohnson/contrastive-fast",
+      "snippet": "Dino for Contrastive Overview A small Dino implementation for Contrastive, packaged with an explicit configuration and an initialization checkpoint. The xlarge variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "Fastest AI Models - Lowest Latency LLMs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/fastest-ai-models",
+      "snippet": "Compare the fastest AI models by latency and tokens per second. Rankings for GPT, Claude, Gemini, DeepSeek, and Llama. Find the fastest API now."
+    }
+  ]
+}

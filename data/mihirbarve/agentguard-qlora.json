@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Mihirbarve/agentguard-qlora",
+  "slug": "mihirbarve-agentguard-qlora",
+  "author": "Mihirbarve",
+  "url": "https://huggingface.co/Mihirbarve/agentguard-qlora",
+  "created_at": "2026-09-28T21:32:24.000Z",
+  "updated_at": "2026-09-28T21:41:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131229556,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mihir182001/agentguard: Enterprise LLM & Agent Evaluation and ...",
+      "url": "https://github.com/mihir182001/agentguard/tree/main",
+      "snippet": "Enterprise LLM & Agent Evaluation, Security and Governance Platform AgentGuard is a synthetic financial-services AI platform for evaluating and governing LLM-powered agents."
+    },
+    {
+      "title": "GitHub - qarai-labs/qarai-agent-guard: A lightweight toolkit for ...",
+      "url": "https://github.com/qarai-labs/qarai-agent-guard",
+      "snippet": "A lightweight toolkit for building secure AI systems with built-in middleware, protected memory, and AI safety models that mitigate prompt injection, jailbreaks, and adversarial attacks. - qarai-labs/qarai-agent-guard"
+    },
+    {
+      "title": "qarai-agent-guard · PyPI",
+      "url": "https://pypi.org/project/qarai-agent-guard/",
+      "snippet": "Qarai Agent Guard Qarai Agent Guard is a lightweight Python toolkit for building secure AI agents. It combines middleware, protected memory, and AI safety models to defend against prompt injection, jailbreaks, PII leakage, and other LLM security threats. It includes built-in security rules for prompt injection, jailbreak attempts, PII leakage, XML-based attacks, and secrets detection, with out ..."
+    },
+    {
+      "title": "[2305.14314] QLoRA: Efficient Finetuning of Quantized LLMs",
+      "url": "https://arxiv.org/abs/2305.14314",
+      "snippet": "We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters~(LoRA). Our best model family, which we name Guanaco, outperforms all previous openly ..."
+    },
+    {
+      "title": "AgentGuard: Early-Warning and Routing for Predictable Agentic",
+      "url": "https://www.microsoft.com/en-us/research/project/agentguard-early-warning-and-routing-for-predictable-agenticai-on-azure/",
+      "snippet": "This project introduces AgentGuard, a monitoring and routing system designed to improve reliability and cost-efficiency in Azure-based agent workflows. By analysing early trajectory signals—such as reasoning patterns and tool usage—within the first 10-30% of an agent&#x27;s execution, AgentGuard predicts task outcomes and dynamically halts or re-routes agents to prevent failures. Calibrated ..."
+    }
+  ]
+}

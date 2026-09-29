@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-eval-h13-24999-93289e601d48-df2698b9c9aa",
+  "slug": "davidwdw-fa-eval-h13-24999-93289e601d48-df2698b9c9aa",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-eval-h13-24999-93289e601d48-df2698b9c9aa",
+  "created_at": "2026-09-28T21:07:58.000Z",
+  "updated_at": "2026-09-28T21:10:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99380574,
+  "storage_human": "99 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Font Awesome",
+      "url": "https://fontawesome.com/",
+      "snippet": "The internet&#x27;s icon library + toolkit. Used by millions of designers, devs, & content creators. Open-source. Always free. Always awesome."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "VW VIN Decoder — Free Volkswagen Digit-by-Digit Breakdown",
+      "url": "https://www.carcheckervin.com/vw-vin-decoder",
+      "snippet": "Free VW VIN decoder — WMI (WVW, 1VW, 3VW), Wolfsburg / Chattanooga / Puebla plant codes, model year, and Golf / Jetta / Passat / Tiguan chassis codes."
+    },
+    {
+      "title": "Evaluation Systems Homepage - Human Resources Command",
+      "url": "https://www.hrc.army.mil/content/Evaluation%20Systems%20Homepage",
+      "snippet": "The Evaluation Systems Homepage provides access to evaluation systems and resources for U.S. Army personnel."
+    }
+  ]
+}

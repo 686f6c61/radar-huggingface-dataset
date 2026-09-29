@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "djavanryuuzaki/dreamer-repo",
+  "slug": "djavanryuuzaki-dreamer-repo",
+  "author": "djavanryuuzaki",
+  "url": "https://huggingface.co/djavanryuuzaki/dreamer-repo",
+  "created_at": "2026-09-28T21:10:46.000Z",
+  "updated_at": "2026-09-28T21:10:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "GitHub - NM512/r2dreamer: Implementation of R2-Dreamer.",
+      "url": "https://github.com/NM512/r2dreamer",
+      "snippet": "This repository provides the official implementation of R2-Dreamer (ICLR 2026), a decoder-free, augmentation-free world model with redundancy-reducing regularization on latent representations. It also includes an efficient PyTorch DreamerV3 reproduction that trains ~5x faster than a widely used codebase, along with other baselines. Selecting R2-Dreamer via the config provides an additional ~1 ..."
+    },
+    {
+      "title": "GitHub - next-state/open-dreamer: Open-source Dreamer world-model ...",
+      "url": "https://github.com/next-state/open-dreamer",
+      "snippet": "Open Dreamer is a simple, performant, and easy-to-use JAX/Flax NNX implementation of the Dreamer 4 world model — trained on Minecraft/VPT-style gameplay and playable in real time. This repository holds the training pipeline: a causal video tokenizer, an action-conditioned latent dynamics model, and the tools to generate rollouts and measure quality. This repo currently supports: Training a ..."
+    },
+    {
+      "title": "DreamerV3 Documentation · DocSearch MCP",
+      "url": "https://docsearch.algolia.com/mcp/docs/repo/danijar/dreamerv3",
+      "snippet": "A scalable reinforcement learning algorithm that utilizes a world model to learn from experiences and train actor-critic policies via imagined trajectories. Designed to work across diverse domains with a fixed set of hyperparameters, it supports various environment suites including Atari, DeepMind Control Suite, and Minecraft. The implementation uses JAX and provides a hierarchical ..."
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    }
+  ]
+}

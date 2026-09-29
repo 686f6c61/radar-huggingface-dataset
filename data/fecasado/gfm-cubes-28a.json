@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "fecasado/gfm-cubes-28a",
+  "slug": "fecasado-gfm-cubes-28a",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gfm-cubes-28a",
+  "created_at": "2026-09-28T20:50:09.000Z",
+  "updated_at": "2026-09-28T20:50:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "gaze_flow_matching",
+    "dataset:fecasado/Ncubes-to-Nbaskets-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 75220954,
+  "parameters_human": "75.2M",
+  "storage_bytes": 300943784,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

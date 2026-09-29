@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "yava-code/Tessera-1B-Nano-Base",
+  "slug": "yava-code-tessera-1b-nano-base",
+  "author": "yava-code",
+  "url": "https://huggingface.co/yava-code/Tessera-1B-Nano-Base",
+  "created_at": "2026-09-28T23:12:10.000Z",
+  "updated_at": "2026-09-29T00:09:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "next-concept-prediction",
+    "conceptlm",
+    "causal-lm",
+    "smollm2",
+    "tessera",
+    "arxiv:2602.08984",
+    "arxiv:2609.10715",
+    "base_model:HuggingFaceTB/SmolLM2-360M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-360M",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 1447317080,
+  "storage_human": "1.4 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Menu de Yava Paris (carte complète) - gourmetetgourmand.com",
+      "url": "https://gourmetetgourmand.com/menu-de-yava-paris/",
+      "snippet": "Mar 18, 2026 · Quelle est la spécialité culinaire de Yava Paris ? La force du restaurant Yava, c’est sa passion inébranlable pour la …Read more"
+    },
+    {
+      "title": "Yava Paris Restaurant, Nanterre - Menu du restaurant, prix et avis",
+      "url": "https://fr.restaurantguru.com/YAVA-PARIS-RESTAURANT-Nanterre",
+      "snippet": "Sep 5, 2026 · Yava Paris Restaurant, situé sur l'Avenue des Champs Pierreux à Nanterre, se présente comme un espace accueillant …Read more"
+    },
+    {
+      "title": "𝗬 𝝠 𝗩 𝝠 • (@yava.paris) • Instagram photos and videos",
+      "url": "https://www.instagram.com/yava.paris/",
+      "snippet": "35K Followers, 0 Following, 88 Posts - • 𝗬 𝝠 𝗩 𝝠 • (@yava.paris) on Instagram: \"🏛️ 𝐘𝐚𝐯𝐚, 𝐮𝐧 𝐩𝐞𝐭𝐢𝐭 𝐜𝐨𝐢𝐧 𝐝𝐞 𝐆𝐫𝐞𝐜𝐞 𝐚 𝐏𝐚𝐫𝐢𝐬 🥩 𝐕𝐢𝐚𝐧𝐝𝐞𝐬 𝐝’𝐞𝐱𝐜𝐞𝐩𝐭𝐢𝐨𝐧 🚗 𝐅𝐫𝐞𝐞 𝐯𝐚𝐥𝐞𝐭 ...Read more"
+    },
+    {
+      "title": "YAVA PARIS, Nanterre - Restaurant Avis & Numéro de Téléphone",
+      "url": "https://www.tripadvisor.fr/Restaurant_Review-g196579-d33952499-Reviews-Yava_Paris-Nanterre_La_Defense_Hauts_de_Seine_Ile_de_France.html",
+      "snippet": "Oct 17, 2025 · Le restaurant Yava offre un cadre vraiment élégant, avec une décoration très soignée et une ambiance chaleureuse. …Read more"
+    },
+    {
+      "title": "Yava Paris Restaurant à Nanterre - Restaurant",
+      "url": "https://restaurant.restaurants-de-france.fr/yava-paris-restaurant-3418594.html",
+      "snippet": "Situé au 30 Avenue des Champs Pierreux à Nanterre (92000), le restaurant Yava Paris offre une expérience culinaire unique. Son …Read more"
+    }
+  ]
+}

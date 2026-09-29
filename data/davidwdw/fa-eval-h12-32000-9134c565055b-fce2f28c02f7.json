@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-eval-h12-32000-9134c565055b-fce2f28c02f7",
+  "slug": "davidwdw-fa-eval-h12-32000-9134c565055b-fce2f28c02f7",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-eval-h12-32000-9134c565055b-fce2f28c02f7",
+  "created_at": "2026-09-28T21:12:54.000Z",
+  "updated_at": "2026-09-28T21:13:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 192994581,
+  "storage_human": "193 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Walt Disney World Resort",
+      "url": "https://disneyworld.disney.go.com/login/",
+      "snippet": "{INTERSTITIAL_CLOSE_BUTTON_TEXT} {INTERSTITIAL_CONTINUE_BUTTON_TEXT} ONEID UI WEB"
+    },
+    {
+      "title": "FREE VIN Decoder, Lookup & Checker | Online VIN Search & Recall Check",
+      "url": "https://driving-tests.org/vin-decoder/",
+      "snippet": "Free VIN decoder & lookup. Learn what each character in your vehicle identification number (VIN) means, get a real-time report on most recent NHTSA recalls and complaints."
+    },
+    {
+      "title": "Determine: Login - Disney",
+      "url": "https://dcpclm.disney.com/login.jsp",
+      "snippet": "Copyright © 2026, Determine, Inc. All rights reserved. Click here to link to Disney Fusion"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

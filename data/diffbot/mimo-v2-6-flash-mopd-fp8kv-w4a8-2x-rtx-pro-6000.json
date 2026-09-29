@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "diffbot/MiMo-V2.6-Flash-MOPD-FP8KV-W4A8-2x-RTX-PRO-6000",
+  "slug": "diffbot-mimo-v2-6-flash-mopd-fp8kv-w4a8-2x-rtx-pro-6000",
+  "author": "diffbot",
+  "url": "https://huggingface.co/diffbot/MiMo-V2.6-Flash-MOPD-FP8KV-W4A8-2x-RTX-PRO-6000",
+  "created_at": "2026-09-22T06:54:13.000Z",
+  "updated_at": "2026-09-28T21:41:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "vllm",
+    "mimo",
+    "mimo-v2.6",
+    "mixture-of-experts",
+    "mxfp4",
+    "fp8-kv-cache",
+    "rtx-pro-6000",
+    "blackwell",
+    "sm120",
+    "speculative-decoding",
+    "cuda-kernels",
+    "any-to-any",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 0,
+  "trending_score": 12,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "diffbot/MiMo-V2.6-Flash-RL-FP8KV-W4A8-2x-RTX-PRO-6000 · Hugging Face",
+      "url": "https://huggingface.co/diffbot/MiMo-V2.6-Flash-RL-FP8KV-W4A8-2x-RTX-PRO-6000",
+      "snippet": "A serving recipe that runs MiMo-V2.6-Flash-RL (309B total / 15B active, MXFP4 experts, text + image + video + audio in) on two RTX PRO 6000 Blackwell cards (sm_120, 96 GB each, PCIe, no NVLink) with vLLM at tensor-parallel 2, at 2.1× the decode speed and 1.6× the prefill speed of the stock vLLM image on the same hardware, with 256K context and all four input modes enabled. The weights are ..."
+    },
+    {
+      "title": "diffbot/MiMo-V2.6-Flash-RL-FP8KV-W4A8-2x-RTX-PRO-6000 · vLLM upstream ...",
+      "url": "https://huggingface.co/diffbot/MiMo-V2.6-Flash-RL-FP8KV-W4A8-2x-RTX-PRO-6000/discussions/1",
+      "snippet": "Hello Mike! diffbot / MiMo-V2.6-Flash-RL-FP8KV-W4A8-2x-RTX-PRO-6000 Like 12 Follow Diffbot 49 Any-to-Any vllm mimo mimo-v2.6 mixture-of-experts mxfp4 fp8-kv-cache rtx-pro-6000 blackwell sm120 speculative-decoding cuda-kernels License:mit Model card FilesFiles and versions xet Community 1 Copy to bucket new"
+    },
+    {
+      "title": "MiMo-V2.6 | Xiaomi",
+      "url": "https://mimo.xiaomi.com/mimo-v2-6",
+      "snippet": "The MiMo-V2.6 series includes two natively omnimodal models: MiMo-V2.6-Pro is our most capable model to date, while MiMo-V2.6-Flash strikes the best balance between intelligence, efficiency, and cost."
+    },
+    {
+      "title": "Xiaomi MiMo-V2.6 Series: 3 New Models Officially Released",
+      "url": "https://mimo.mi.com/models/en-US/mimo-v2.6-flash",
+      "snippet": "Monthly or annual plans covering mimo-v2.6-pro, mimo-v2.6-flash and the full MiMo V2.5 model suite — significantly better value than pay-as-you-go at high usage volumes."
+    },
+    {
+      "title": "Xiaomi Releases MiMo-V2.6-Flash-MOPD and Pro-MOPD Models",
+      "url": "https://localmodelwatch.tsuchitsuchi.com/en/2026/09/28/xiaomi-mimo-v2-6-mopd-models/",
+      "snippet": "MiMo-V2.6-Flash-MOPD and MiMo-V2.6-Pro-MOPD possess omni-modal processing capabilities that comprehensively handle text, images, video, and audio, along with strengths specialized for advanced autonomous agent tasks."
+    }
+  ]
+}

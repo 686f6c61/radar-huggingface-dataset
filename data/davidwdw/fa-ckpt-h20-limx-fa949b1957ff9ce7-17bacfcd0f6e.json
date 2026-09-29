@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-ckpt-h20-limx-fa949b1957ff9ce7-17bacfcd0f6e",
+  "slug": "davidwdw-fa-ckpt-h20-limx-fa949b1957ff9ce7-17bacfcd0f6e",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-ckpt-h20-limx-fa949b1957ff9ce7-17bacfcd0f6e",
+  "created_at": "2026-09-28T22:01:02.000Z",
+  "updated_at": "2026-09-28T22:10:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9354250428,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Ckpt AI Models (10) | Civitai",
+      "url": "https://civitai.com/tag/ckpt",
+      "snippet": "Browse 10 AI models tagged \"Ckpt\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "model.ckpt · stabilityai/TripoSR at main - Hugging Face",
+      "url": "https://huggingface.co/stabilityai/TripoSR/blob/main/model.ckpt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ckpt (ckpt) - Hugging Face",
+      "url": "https://huggingface.co/ckpt/models",
+      "snippet": "ckpt AI & ML interests ckpt Team members 3 ckpt &#x27;s models 271"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

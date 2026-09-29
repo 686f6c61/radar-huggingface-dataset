@@ -5,7 +5,7 @@
   "author": "poisonxa",
   "url": "https://huggingface.co/poisonxa/PXA-Supporter-Models",
   "created_at": "2026-09-27T16:30:06.000Z",
-  "updated_at": "2026-09-27T20:44:32.000Z",
+  "updated_at": "2026-09-28T08:35:09.000Z",
   "license": "pxa-supporter",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 49139192448,
-  "storage_human": "49.1 GB",
+  "storage_bytes": 146732391392,
+  "storage_human": "146.7 GB",
   "base_model": null,
   "formats": [
     "gguf"

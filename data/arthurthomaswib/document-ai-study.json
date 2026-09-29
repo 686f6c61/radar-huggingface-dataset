@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "arthurthomaswib/document-ai-study",
+  "slug": "arthurthomaswib-document-ai-study",
+  "author": "arthurthomaswib",
+  "url": "https://huggingface.co/arthurthomaswib/document-ai-study",
+  "created_at": "2026-09-28T23:43:27.000Z",
+  "updated_at": "2026-09-28T23:43:32.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A small number of samples can poison LLMs &#92; Anthropic",
+      "url": "https://www.anthropic.com/research/small-samples-poison",
+      "snippet": "In a joint study with the UK AI Security Institute and the Alan Turing Institute, we found that as few as 250 malicious documents can produce a \"backdoor\" vulnerability in a large language model—regardless of model size or training data volume. Although a 13B parameter model is trained on over 20 times more training data than a 600M model, both can be backdoored by the same small number of ..."
+    },
+    {
+      "title": "arthurthomaswib/paper_005423786_data_efficient_learning · Hugging Face",
+      "url": "https://huggingface.co/arthurthomaswib/paper_005423786_data_efficient_learning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "arthurthomaswib/generation-finetuning · Hugging Face",
+      "url": "https://huggingface.co/arthurthomaswib/generation-finetuning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Document Understanding Leaderboard - Best AI Models for PDFs & Documents",
+      "url": "https://arena.ai/leaderboard/document",
+      "snippet": "Compare and explore Document models ranked by overall performance (without style control)."
+    }
+  ]
+}

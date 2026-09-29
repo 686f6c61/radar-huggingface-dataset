@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/LFM2-2.6B-NPU2",
+  "slug": "atomic-germ-lfm2-2-6b-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/LFM2-2.6B-NPU2",
+  "created_at": "2026-09-28T21:27:18.000Z",
+  "updated_at": "2026-09-28T21:28:02.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "lfm2",
+    "text-generation",
+    "liquid",
+    "edge",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2-2.6B",
+    "base_model:finetune:LiquidAI/LFM2-2.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1874619128,
+  "storage_human": "1.9 GB",
+  "base_model": "LiquidAI/LFM2-2.6B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/LFM2-2.6B-Transcript-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/LFM2-2.6B-Transcript-NPU2",
+      "snippet": "Based on LFM2-2.6B, LFM2-2.6B-Transcript is designed for private, on-device meeting summarization. We partnered with AMD to deliver cloud-level summary quality while running entirely locally, ensuring that your meeting data never leaves your device."
+    },
+    {
+      "title": "Atomic-Germ/LFM2-1.2B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/LFM2-1.2B-NPU2",
+      "snippet": "New architecture - LFM2 is a new hybrid Liquid model with multiplicative gates and short convolutions. Flexible deployment - LFM2 runs efficiently on CPU, GPU, and NPU hardware for flexible deployment on smartphones, laptops, or vehicles."
+    },
+    {
+      "title": "Atomic-Germ/OpenNPU: **CODEBERG DISALLOWS FURTHER DEVELOPMENT AS PER ...",
+      "url": "https://codeberg.org/Atomic-Germ/OpenNPU",
+      "snippet": "Reverse engineering and open toolchain for the AMD XDNA NPU2 (Phoenix/Strix SoC) found in Ryzen AI series processors. Goal: understand the xclbin binary format and build open re-implementations of the NPU kernels."
+    },
+    {
+      "title": "OpenNPU/README.md at main · Atomic-Germ/OpenNPU · GitHub",
+      "url": "https://github.com/Atomic-Germ/OpenNPU/blob/main/README.md",
+      "snippet": "Reverse engineering and open toolchain for the AMD XDNA NPU2 (Phoenix/Strix SoC) found in Ryzen AI series processors. Goal: understand the xclbin binary format and build open re-implementations of the NPU kernels."
+    },
+    {
+      "title": "FastFlowLM/src/xclbins/LFM2-2.6B-Transcript-NPU2 at main - GitHub",
+      "url": "https://github.com/FastFlowLM/FastFlowLM/tree/main/src/xclbins/LFM2-2.6B-Transcript-NPU2",
+      "snippet": "Run LLMs on AMD Ryzen™ AI NPUs in minutes. Just like Ollama - but purpose-built and deeply optimized for the AMD NPUs. - FastFlowLM/FastFlowLM"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Darwin-27B-RSI-i1-GGUF",
   "created_at": "2026-09-28T00:03:59.000Z",
-  "updated_at": "2026-09-28T03:15:30.000Z",
+  "updated_at": "2026-09-28T05:00:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -47,13 +47,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 4809,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 224111611136,
-  "storage_human": "224.1 GB",
+  "storage_bytes": 300328846016,
+  "storage_human": "300.3 GB",
   "base_model": "FINAL-Bench/Darwin-27B-RSI",
   "formats": [
     "gguf"

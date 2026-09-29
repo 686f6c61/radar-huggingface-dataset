@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Lalakai/Hunter-4B",
+  "slug": "lalakai-hunter-4b",
+  "author": "Lalakai",
+  "url": "https://huggingface.co/Lalakai/Hunter-4B",
+  "created_at": "2026-09-28T23:19:53.000Z",
+  "updated_at": "2026-09-29T01:49:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "conversational",
+    "text-generation",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 10554024633,
+  "storage_human": "10.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LAKAI - AI-Powered YouTube Intelligence",
+      "url": "https://lakai.pro/",
+      "snippet": "AI video generation, viral analysis, and a full toolkit for short-form creators."
+    },
+    {
+      "title": "llama4",
+      "url": "https://ollama.com/library/llama4",
+      "snippet": "Meta&#x27;s latest collection of multimodal models."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic, Google, SpaceXAI & others Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Every Llama AI Model Explained and Compared (Sep, 2026)",
+      "url": "https://www.secondtalent.com/resources/every-llama-ai-model-explained-compared/",
+      "snippet": "Home Resources Every Llama AI Model Explained and Compared (Sep, 2026) By Elton Chan Co-Founder September 10, 2026 9 min read The Llama models at a glance The Llama 4 herd in plain English Open weights and the license Pricing and where to run it Context windows and multimodal input Which model should you use Older Llama models What this means ..."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

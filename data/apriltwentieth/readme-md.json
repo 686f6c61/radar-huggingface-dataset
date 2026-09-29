@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "apriltwentieth/README.md",
+  "slug": "apriltwentieth-readme-md",
+  "author": "apriltwentieth",
+  "url": "https://huggingface.co/apriltwentieth/README.md",
+  "created_at": "2026-09-28T21:12:13.000Z",
+  "updated_at": "2026-09-28T21:19:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "apriltwentieth (apriltwentieth) - Hugging Face",
+      "url": "https://huggingface.co/apriltwentieth/models",
+      "snippet": "apriltwentieth&#x27;s models1 Sort: Recently updated apriltwentieth/573_lab Updated Aug 6, 2024"
+    },
+    {
+      "title": "apriltwentieth (apriltwentieth) - Hugging Face",
+      "url": "https://huggingface.co/apriltwentieth/datasets",
+      "snippet": "Recent Activity updated a bucket4 days ago apriltwentieth/t_storage published a bucket4 days ago apriltwentieth/t_storage updated a modelabout 2 years ago apriltwentieth/573_lab View all activity"
+    },
+    {
+      "title": "GitHub - trevormorgan/README-AI: Automated tool for generating ...",
+      "url": "https://github.com/trevormorgan/README-AI",
+      "snippet": "Objective Readme-ai is a developer tool that auto-generates README.md files using a combination of data extraction and generative ai. Simply provide a repository URL or local path to your codebase and a well-structured and detailed README file will be generated for you. Motivation Streamlines documentation creation and maintenance, enhancing developer productivity. This project aims to enable ..."
+    },
+    {
+      "title": "GitHub - josix/awesome-claude-md: Curated collection of exemplary ...",
+      "url": "https://github.com/josix/awesome-claude-md",
+      "snippet": "Curated collection of exemplary claude.md files and onboarding patterns from public GitHub projects. Includes analyses, best practices, and templates to help developers create effective AI onboardi..."
+    },
+    {
+      "title": "ReadmeAI — AI-Powered README Generator",
+      "url": "https://www.readmeai.in/",
+      "snippet": "Powered by Azure OpenAI Professional READMEs, generated in seconds Paste your GitHub repository URL and ReadmeAI analyses your code, then generates a complete, polished README.md."
+    }
+  ]
+}

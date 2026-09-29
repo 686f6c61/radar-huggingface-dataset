@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Subress/subress-models",
+  "slug": "subress-subress-models",
+  "author": "Subress",
+  "url": "https://huggingface.co/Subress/subress-models",
+  "created_at": "2026-09-28T21:16:18.000Z",
+  "updated_at": "2026-09-28T21:20:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "he",
+    "base_model:ivrit-ai/whisper-large-v3-turbo-ggml",
+    "base_model:finetune:ivrit-ai/whisper-large-v3-turbo-ggml",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 574041195,
+  "storage_human": "574 MB",
+  "base_model": "ivrit-ai/whisper-large-v3-turbo-ggml",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "UNfilteredAI-1B - Hugging Face",
+      "url": "https://huggingface.co/UnfilteredAI/UNfilteredAI-1B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "Browse all available models on the OpenAI Platform."
+    },
+    {
+      "title": "GitHub Models",
+      "url": "https://github.com/marketplace?type=models",
+      "snippet": "Create AI-powered applications with GitHub Enhance your workflow with extensions Tools from the community and partners to simplify tasks and automate processes"
+    },
+    {
+      "title": "Microsoft Foundry Models overview - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+      "snippet": "The model catalog in Foundry portal is the hub for discovering and using a wide range of models to build generative AI applications. The model catalog features thousands of models from providers like Azure OpenAI, Anthropic, Mistral, Meta, Cohere, NVIDIA, and Hugging Face, including models that Microsoft trained."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ahmedalghamdi/generation",
+  "slug": "ahmedalghamdi-generation",
+  "author": "ahmedalghamdi",
+  "url": "https://huggingface.co/ahmedalghamdi/generation",
+  "created_at": "2026-09-28T23:34:16.000Z",
+  "updated_at": "2026-09-28T23:34:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ahmedalghamdi (أحمد حداد) - Hugging Face",
+      "url": "https://huggingface.co/ahmedalghamdi",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 27 days ago ... published a model 27 days ago ... upvoted a paper 27 days ago"
+    },
+    {
+      "title": "‏Ahmed Al Ghamdi‏ - ‏CEO of Artificial Intelligence ... - LinkedIn",
+      "url": "https://sa.linkedin.com/in/ahmed-al-ghamdi-02342921",
+      "snippet": "‏CEO of Artificial Intelligence Global Co.‏ · ‏More than 28 years of experience in Engineering and Management of oil, gas, refining processing facilities at Saudi Aramco. Led Saudi Aramco Digital Transformation Program from Engineering Services side including corporate strategy and roadmap development and execution along with establishment of Saudi Aramco 4IR Center. Represented Saudi ..."
+    },
+    {
+      "title": "Another step in my AI learning journey. Happy to have ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/ahmed-alghamdi-pmp%C2%AE-96b899207_another-step-in-my-ai-learning-journey-activity-7482796302540468224-eudi",
+      "snippet": "Another step in my AI learning journey. Happy to have completed the Fundamentals of Generative AI certificate by AWS Training & Certification"
+    },
+    {
+      "title": "Ahmed M. Al-Ghamdi AI Leadership and Digital Transformation Expert",
+      "url": "https://www.linkedin.com/posts/theleadersnetworks_digitaltransformation-aistrategy-machinelearning-activity-7466812771134009344-Lipf",
+      "snippet": "Leading AI and digital transformation strategy across investment, energy, and corporate sectors in Saudi Arabia. Meet Ahmed M. Al-Ghamdi - VP of Digital Transformation at Vision Invest, Chairman ..."
+    },
+    {
+      "title": "‏Ahmed M. Al-Ghamdi‏ - ‏ Managing Director | VP of Digital ...",
+      "url": "https://sa.linkedin.com/in/ahmed560",
+      "snippet": "‏🚀 Managing Director | VP of Digital Transformation | AI &amp; ML Strategist | EMBA | AI Trainer &amp; Speaker | Data Center &amp; Cloud Expert | Business &amp; Innovation Leader | Entrepreneur | Professional Mentor &amp; Coach 🎤‏ · ‏With two decades of technology and business leadership, I specialize in steering complex digital transformation initiatives and scaling enterprise ..."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "taurusduan/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF",
+  "slug": "taurusduan-swift-1-5-qwen3-8-27b-gsq-rco-gguf",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF",
+  "created_at": "2026-09-29T00:55:46.000Z",
+  "updated_at": "2026-09-29T00:55:46.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_8",
+    "gsq",
+    "rco",
+    "reasoning",
+    "efficient-thinking",
+    "token-efficient",
+    "post-training",
+    "text-generation",
+    "arxiv:2604.18556",
+    "arxiv:2605.00649",
+    "base_model:ukisai/Swift-1.5-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-1.5-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 80504345147,
+  "storage_human": "80.5 GB",
+  "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Swift 1.5 Qwen3.8-27B | UkisAI",
+      "url": "https://ukisai.com/swift-1-5-27b",
+      "snippet": "The results below compare Qwen3.8-27B, the foundation base model, Swift 1.0, the first UkisAI adaptation, and Swift 1.5. All three use the same saved evaluation protocols, and every score is a final five-repeat aggregate."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Swift-Qwen3.8-27B-Q5_K_M.gguf · taurusduan/Swift-Qwen3.8-27B-GGUF at main",
+      "url": "https://huggingface.co/taurusduan/Swift-Qwen3.8-27B-GGUF/blob/main/Swift-Qwen3.8-27B-Q5_K_M.gguf",
+      "snippet": "Duplicated from ukisai/Swift-Qwen3.8-27B-GGUF taurusduan / Swift-Qwen3.8-27B-GGUF Like 0 Image-Text-to-Text GGUF llama.cpp qwen3_8 qwen3_5 efficient-thinking reasoning token-efficient imatrix conversational License:swift-open-license-1. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model Notebooks Google ..."
+    },
+    {
+      "title": "Run Swift-1.5-Qwen3.8-27B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/ukisai/Swift-1.5-Qwen3.8-27b",
+      "snippet": "Swift 1.5 Qwen3.8-27B is a 27 billion parameter language model developed by UkisAI, derived from Qwen3.8-27B. This model is optimized for reasoning efficiency, using 58.5% fewer \"thinking tokens\" while achieving a 0.35% higher score than its base model, resulting in a 1.95x speed-up on various tasks. It excels particularly in coding and agentic tasks, making it suitable for applications ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    }
+  ]
+}

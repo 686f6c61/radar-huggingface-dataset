@@ -5,7 +5,7 @@
   "author": "yuiseki",
   "url": "https://huggingface.co/yuiseki/llm-jp-3-440m-jp-gov-v0.2",
   "created_at": "2026-09-27T01:56:39.000Z",
-  "updated_at": "2026-09-27T02:01:00.000Z",
+  "updated_at": "2026-09-28T22:25:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 276,
   "trending_score": 0,
   "parameters": 447251456,
   "parameters_human": "447.3M",

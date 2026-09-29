@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mulligan/sim-square-narrow-r01-baseline-straddled-auto-success-divl",
+  "slug": "mulligan-sim-square-narrow-r01-baseline-straddled-auto-success-divl",
+  "author": "mulligan",
+  "url": "https://huggingface.co/mulligan/sim-square-narrow-r01-baseline-straddled-auto-success-divl",
+  "created_at": "2026-09-29T00:56:43.000Z",
+  "updated_at": "2026-09-29T00:57:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mulligan",
+    "sim-square-narrow",
+    "divl-agent",
+    "dataset:mulligan/sim-square-narrow-c00-teleop-baseline",
+    "dataset:mulligan/sim-square-narrow-c01-baseline-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c01-dagger-baseline",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1447883255,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mulligan: Performance-Guided Data Collection for Efficient On-Robot ...",
+      "url": "https://mulligan.page/",
+      "snippet": "Mulligan: Performance-Guided Data Collection for Efficient On-Robot Learning. Targeted corrections, counterfactual demonstrations, component ablations, collection productivity, paired statistics, and blinded robot evaluations."
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    },
+    {
+      "title": "Datasets - Hugging Face",
+      "url": "https://huggingface.co/datasets?other=sim-square-narrow",
+      "snippet": "mulligan/sim-square-narrow-c00-teleop-baseline Viewer •Updated 3 days ago•16.3k• 50"
+    },
+    {
+      "title": "GitHub - dudefication/mulligan",
+      "url": "https://github.com/dudefication/mulligan/tree/main",
+      "snippet": "Mulligan requires a success/failure signal — a verifier, a test, a tool result, an accepted/ rejected. It is built for work agents (coding, data, ops, support) where actions have outcomes, not open-ended chat where \"correct\" is undefined."
+    },
+    {
+      "title": "sim-square-narrow-c02-auto-iql-success-bc-n32-policy-rollouts",
+      "url": "https://claru.ai/datasets/mulligan-sim-square-narrow-c02-auto-iql-success-bc-n32-policy-rollouts",
+      "snippet": "Policy rollout dataset for the sim-square-narrow task as part of the Mulligan project, containing 100 episodes of simulated robot manipulation data generated from an auto-IQL success-based behavior cloning policy."
+    }
+  ]
+}

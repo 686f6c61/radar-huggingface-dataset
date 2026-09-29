@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "robinson5340/paper-multitask62",
+  "slug": "robinson5340-paper-multitask62",
+  "author": "robinson5340",
+  "url": "https://huggingface.co/robinson5340/paper-multitask62",
+  "created_at": "2026-09-28T23:28:15.000Z",
+  "updated_at": "2026-09-28T23:28:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "robinson5340 (Dylan Robinson) - Hugging Face",
+      "url": "https://huggingface.co/robinson5340",
+      "snippet": "User profile of Dylan Robinson on Hugging Face"
+    },
+    {
+      "title": "AIPapers.ai - AI Research Papers Daily",
+      "url": "https://aipapers.ai/",
+      "snippet": "Your AI Research Assistant - Daily AI research papers analyzed and categorized by advanced AI. Browse 13,000+ papers across 12 research categories."
+    },
+    {
+      "title": "Papers AI — one research workspace for Word, LaTeX, data & code",
+      "url": "https://papers.ai/",
+      "snippet": "The all-in-one research workspace Papers AI brings your writing, data, references and code into the same flow, so you can follow the thought without rebuilding the context."
+    },
+    {
+      "title": "Paper2Agent: Reimagining Papers As AI Agents - GitHub",
+      "url": "https://github.com/jmiao24/Paper2Agent",
+      "snippet": "Paper2Agent is a multi-agent AI system that automatically transforms research papers into interactive AI agents with minimal human input. Explore demos of Paper2Agent-generated agents, or try it yourself at paper2agent.ai. Paper2Agent coordinates parallel specialist agents to turn scientific papers into reliable MCP servers and skills."
+    },
+    {
+      "title": "OpenAI Research | Publication",
+      "url": "https://openai.com/research/index/publication/",
+      "snippet": "Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Cent1-1B-GGUF",
+  "slug": "mradermacher-cent1-1b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Cent1-1B-GGUF",
+  "created_at": "2026-09-28T22:11:54.000Z",
+  "updated_at": "2026-09-28T22:20:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "tool-calling",
+    "function-calling",
+    "agent",
+    "financial",
+    "qwen3",
+    "pytorch",
+    "en",
+    "base_model:CentIo/Cent1-1B",
+    "base_model:quantized:CentIo/Cent1-1B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 15959968512,
+  "storage_human": "16.0 GB",
+  "base_model": "CentIo/Cent1-1B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "donaked - Twitch",
+      "url": "https://www.twitch.tv/donaked",
+      "snippet": "Welcome to donaked's chat room! Send a message"
+    },
+    {
+      "title": "NA-KD - Vêtements pour femme en ligne | Tendance mode | NA-KD",
+      "url": "https://www.na-kd.com/fr",
+      "snippet": "Découvrez dès maintenant les vêtements pour femme sur le site NA-KD Fashion. De nombreuses marques disponibles. Livraison …"
+    },
+    {
+      "title": "Naked & Sated",
+      "url": "https://nakedandsated.com/",
+      "snippet": "En Naked&Sated creemos que es hora de retomar la cordura y resetear nuestro cuerpo y mente. Queremos poner en tu plato …"
+    },
+    {
+      "title": "JOI Training - JOI Games for Adults",
+      "url": "https://joitraining.com/",
+      "snippet": "Experience interactive orgasm control training with dominant mistresses. JOI games featuring visual metronomes, timed challenges, …"
+    },
+    {
+      "title": "donaked - Twitch",
+      "url": "https://www.twitch.tv/donaked?lang=es",
+      "snippet": "skkrrrrrrrrtttt ¡Te damos la bienvenida a la sala de chat de donaked!"
+    }
+  ]
+}

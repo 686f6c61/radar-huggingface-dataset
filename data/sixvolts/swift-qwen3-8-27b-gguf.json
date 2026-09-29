@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SixVolts/Swift-Qwen3.8-27B-GGUF",
+  "slug": "sixvolts-swift-qwen3-8-27b-gguf",
+  "author": "SixVolts",
+  "url": "https://huggingface.co/SixVolts/Swift-Qwen3.8-27B-GGUF",
+  "created_at": "2026-09-28T22:15:44.000Z",
+  "updated_at": "2026-09-29T00:36:48.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "speculative-decoding",
+    "rocm",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 20259539264,
+  "storage_human": "20.3 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Swift Qwen3.8 27b - GGUF Model (3 parts) - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/swift-qwen3-8-27b.html",
+      "snippet": "Download Swift Qwen3.8 27b GGUF model. 170.1 GB, 72,862 downloads, 239 likes. Split into 3 parts."
+    },
+    {
+      "title": "Swift-Qwen3.8-27B-Q6_K_S.gguf · taurusduan/Swift-Qwen3.8-27B-GGUF at main",
+      "url": "https://huggingface.co/taurusduan/Swift-Qwen3.8-27B-GGUF/blob/main/Swift-Qwen3.8-27B-Q6_K_S.gguf",
+      "snippet": "Duplicated from ukisai/Swift-Qwen3.8-27B-GGUF taurusduan / Swift-Qwen3.8-27B-GGUF Like 0 Image-Text-to-Text GGUF llama.cpp qwen3_8 qwen3_5 efficient-thinking reasoning token-efficient imatrix conversational License:swift-open-license-1. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model Notebooks Google Colab Kaggle Local AppsSettings llama.cpp Install ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "How to Run Qwen 3.8 Locally: 27B on 16-24GB GPUs (2026)",
+      "url": "https://codersera.com/blog/how-to-run-qwen-3-8-locally-2026/",
+      "snippet": "How to Run Qwen 3.8 Locally: 27B on 16-24GB GPUs (2026 Guide) Run Qwen3.8-27B on your own GPU: Ollama one-liner, LM Studio, llama.cpp with MTP speculative decoding, VRAM tables, tested 16GB/24GB/Mac configs, and the overthinking fix."
+    }
+  ]
+}

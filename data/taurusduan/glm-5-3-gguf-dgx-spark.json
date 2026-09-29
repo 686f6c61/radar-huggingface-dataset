@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "taurusduan/GLM-5.3-GGUF-DGX-Spark",
+  "slug": "taurusduan-glm-5-3-gguf-dgx-spark",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/GLM-5.3-GGUF-DGX-Spark",
+  "created_at": "2026-09-29T01:10:13.000Z",
+  "updated_at": "2026-09-29T01:10:13.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "dgx-spark",
+    "moe",
+    "expert-pruning",
+    "iq2_xxs",
+    "glm",
+    "glm-dsa",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 562687789632,
+  "parameters_human": "562.69B",
+  "storage_bytes": 160760302208,
+  "storage_human": "160.8 GB",
+  "base_model": "autotrust/GLM-5.3-SLIM-E192, zai-org/GLM-5.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "GLM-5.3 is Z.ai&#x27;s new 744B parameter (40B active) model. As of Aug 2026, GLM-5.3 is the strongest open-model to date, achieving SOTA on Terminal Bench 3.0 and Agents&#x27; Last Exam. GLM-5.3 uses the same base model as GLM-5.2, with every gain coming from post-training. The model has a 1M context window and can now run locally via Unsloth Dynamic GGUFs with llama.cpp or Unsloth Desktop. GLM-5.3 ..."
+    },
+    {
+      "title": "How to Run GLM-5.3-Flash Locally (2026 Guide) - codersera.com",
+      "url": "https://codersera.com/blog/how-to-run-glm-5-3-flash-locally-2026/",
+      "snippet": "How to Run GLM-5.3-Flash Locally: Hardware & Setup GLM-5.3-Flash ships 320B parameters in a 328 GB native-FP8 checkpoint, so the 18B active count tells you nothing about the memory you need. Here are the real hardware requirements by quantisation, plus working vLLM, SGLang, llama.cpp and Apple Silicon setups."
+    },
+    {
+      "title": "How to Run GLM-5.3-Flash Locally: GGUF, Hardware and Benchmarks",
+      "url": "https://atomic.chat/blog/guides/how-to-run-glm-5-3-flash-locally",
+      "snippet": "How to Run GLM-5.3-Flash Locally: GGUF, Hardware and Benchmarks GLM-5.3-Flash is the first natively multimodal model in Z.ai&#x27;s GLM-5 series, and the first one that&#x27;s realistic to run locally: it has 320B total parameters and 18B active per token."
+    },
+    {
+      "title": "GLM-5.3-Flash: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter (18B active) multimodal open model which outperforms GLM-5.2. GLM-5.3-Flash is the smaller version of GLM-5.3 and rivals Claude Opus 4.8 on coding and agentic benchmarks. You can now run the 1-bit model locally on 102GB RAM/VRAM or 3-bit on 128GB setups via llama.cpp or Unsloth."
+    },
+    {
+      "title": "GitHub - Weschera/glm53-flash-one-spark",
+      "url": "https://github.com/Weschera/glm53-flash-one-spark",
+      "snippet": "zai-org/GLM-5.3-Flash (320B / A18B MoE, released 2026-08-26) serving on a single NVIDIA DGX Spark (GB10, 121 GiB UMA) via llama.cpp, using unsloth/GLM-5.3-Flash-GGUF UD-Q2_K_XL (109 GB) — with the model&#x27;s native MTP (NextN) draft head running as a speculative decoder. The finding worth reading this repo for: unsloth&#x27;s GGUFs ship with the MTP draft-head tensors intact, but the llama.cpp ..."
+    }
+  ]
+}

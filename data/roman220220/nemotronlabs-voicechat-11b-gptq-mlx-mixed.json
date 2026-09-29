@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "roman220220/NemotronLabs-VoiceChat-11B-gptq-mlx-mixed",
+  "slug": "roman220220-nemotronlabs-voicechat-11b-gptq-mlx-mixed",
+  "author": "roman220220",
+  "url": "https://huggingface.co/roman220220/NemotronLabs-VoiceChat-11B-gptq-mlx-mixed",
+  "created_at": "2026-09-29T00:16:25.000Z",
+  "updated_at": "2026-09-29T00:17:58.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nemotron_voicechat",
+    "quantized",
+    "gptq",
+    "nemotron",
+    "audio",
+    "speech-to-speech",
+    "full-duplex",
+    "apple-silicon",
+    "audio-to-audio",
+    "en",
+    "base_model:nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+    "base_model:quantized:nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11095371252,
+  "parameters_human": "11.10B",
+  "storage_bytes": 6451664173,
+  "storage_human": "6.5 GB",
+  "base_model": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-NemotronLabs-VoiceChat-11B - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NemotronLabs Voicechat | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/nvidia/containers/nemotron-labs-voicechat/",
+      "snippet": "NemotronLabs Voicechat Overview Description: NVIDIA NemotronLabs VoiceChat is a end-to-end, real-time speech full duplex model for conversational AI that jointly performs streaming speech understanding and speech generation ."
+    },
+    {
+      "title": "NemotronLabs Voicechat | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/nvidia/models/nemotron-labs-voicechat/",
+      "snippet": "Model Overview Description: NVIDIA NemotronLabs VoiceChat is a 11B end-to-end, real-time speech full duplex (FD) model for conversational AI that jointly performs streaming speech understanding and speech generation [1]. Unlike traditional cascaded stacks (ASR → LLM → TTS), this model achieves full duplex, real-time, seamless voice interaction in one unified architecture, eliminating the ..."
+    },
+    {
+      "title": "NVIDIA NemotronLabs VoiceChat 11B - GitHub",
+      "url": "https://github.com/Nikki1404/nemotron_voicechat_11B/tree/main",
+      "snippet": "NVIDIA NemotronLabs VoiceChat is an 11B end-to-end, real-time full-duplex speech model jointly performing streaming speech understanding and generation [1, 2]. Unlike cascaded ASR→LLM→TTS pipelines, it unifies these in one architecture, enabling seamless full-duplex voice interaction while cutting multi-model handoffs and end-to-end latency."
+    },
+    {
+      "title": "overview.md · nvidia/NVIDIA-NemotronLabs-VoiceChat-11B at main",
+      "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B/blob/main/overview.md",
+      "snippet": "NVIDIA NemotronLabs VoiceChat is a 12B end-to-end, real-time speech full duplex (FD)model for conversational AI that jointly performs streaming speech understanding and speech generation [1]."
+    }
+  ]
+}

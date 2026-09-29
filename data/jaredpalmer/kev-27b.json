@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "id": "jaredpalmer/kev-27b",
+  "slug": "jaredpalmer-kev-27b",
+  "author": "jaredpalmer",
+  "url": "https://huggingface.co/jaredpalmer/kev-27b",
+  "created_at": "2026-09-24T02:58:37.000Z",
+  "updated_at": "2026-09-24T02:58:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision-model",
+    "calibration",
+    "lora",
+    "multiple-choice",
+    "typesafe",
+    "qwen3.8",
+    "text-classification",
+    "en",
+    "dataset:legacy-datasets/banking77",
+    "dataset:google/boolq",
+    "dataset:fancyzhx/ag_news",
+    "dataset:nyu-mll/multi_nli",
+    "dataset:SetFit/sst5",
+    "dataset:Yelp/yelp_review_full",
+    "dataset:CogComp/trec",
+    "dataset:fancyzhx/dbpedia_14",
+    "dataset:SetFit/amazon_reviews_multi_en",
+    "dataset:stanfordnlp/imdb",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 261,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 497523276,
+  "storage_human": "498 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "typed decision",
+      "dataset": "transfer-v4 test (read once)",
+      "metric": null,
+      "value": 0.896
+    },
+    {
+      "task": "typed decision",
+      "dataset": "transfer-v4 test (read once)",
+      "metric": null,
+      "value": 0.16
+    },
+    {
+      "task": "typed decision",
+      "dataset": "transfer-r6 test (1,260 questions, read once)",
+      "metric": null,
+      "value": 0.863
+    },
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "decision-v7 test (read once)",
+      "metric": null,
+      "value": 0.87
+    }
+  ],
+  "sources": [
+    {
+      "title": "Le Centre Pompidou consacre enfin la bande dessinée",
+      "url": "https://www.lemonde.fr/culture/article/2024/05/29/le-centre-pompidou-consacre-enfin-la-bande-dessinee_6236114_3246.html",
+      "snippet": "May 29, 2024 · Avec « La BD à tous les étages », cinq expositions en simultané, qui font la part belle au roman graphique, au manga …Read more"
+    },
+    {
+      "title": "Collective Exhibition, Comics on every floor, Drawing, Centre Pompidou ...",
+      "url": "https://www.artlimited.net/agenda/collective-exhibition-comics-on-every-floor-centre-pompidou-paris/en/7585924",
+      "snippet": "Feb 29, 2024 · As an exceptional celebration of the ninth art, the Comics on every floor event explores the sheer breadth of diversity …"
+    },
+    {
+      "title": "International Journal of Comic Art blog: The Ninth Art at the Centre ...",
+      "url": "https://ijoca.blogspot.com/2025/09/the-ninth-art-at-centre-georges.html",
+      "snippet": "Sep 20, 2025 · The Ninth Art at the Centre Georges Pompidou: A Review of Comics 1964-2024 Mark David Nevins Fig. 1 One could …"
+    },
+    {
+      "title": "\"COMICS, 1964-2024\": Centre Pompidou, Paris. - Free Online Library",
+      "url": "https://www.thefreelibrary.com/%22COMICS%2c+1964-2024%22%3a+Centre+Pompidou%2c+Paris.-a0826500044",
+      "snippet": "\"COMICS, 1964-2024\" (organized by Anne Lemonnier and Emmanuele Payen with Thierry Groensteen and Lucas Hureau) was an …"
+    },
+    {
+      "title": "Exhibitions - Centre Pompidou",
+      "url": "https://www.centrepompidou.fr/en/program/exhibitions",
+      "snippet": "Centre Pompidou-Metz To mark its 15th anniversary, the Centre Pompidou-Metz is transforming all of its galleries to host hundreds …"
+    }
+  ]
+}

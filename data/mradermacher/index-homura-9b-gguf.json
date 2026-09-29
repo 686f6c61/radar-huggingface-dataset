@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Index-Homura-9B-GGUF",
+  "slug": "mradermacher-index-homura-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Index-Homura-9B-GGUF",
+  "created_at": "2026-09-28T21:26:05.000Z",
+  "updated_at": "2026-09-28T22:00:08.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "translation",
+    "index",
+    "en",
+    "base_model:IndexTeam/Index-Homura-9B",
+    "base_model:quantized:IndexTeam/Index-Homura-9B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 81425084800,
+  "storage_human": "81.4 GB",
+  "base_model": "IndexTeam/Index-Homura-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Tài liệu: Đăng nhập",
+      "url": "https://docs.google.com/document/create?hl=vi",
+      "snippet": "Truy cập Google Tài liệu bằng Tài khoản Google cá nhân hoặc tài khoản Google Workspace (dành cho công việc)."
+    },
+    {
+      "title": "Google Docs: Sign-in",
+      "url": "https://docs.google.com/document/u/0/?pli=1",
+      "snippet": "Access Google Docs with a personal Google account or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Google Docs : connexion",
+      "url": "https://docs.google.com/document/create?hl=fr",
+      "snippet": "Accédez à Google Docs avec un compte Google personnel ou un compte Google Workspace (à usage professionnel)."
+    },
+    {
+      "title": "Google Slides: Sign-in",
+      "url": "https://docs.google.com/presentation/u/0/",
+      "snippet": "Access Google Slides with a personal Google account or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Google Drive: Sign-in",
+      "url": "https://docs.google.com/templates",
+      "snippet": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use)."
+    }
+  ]
+}

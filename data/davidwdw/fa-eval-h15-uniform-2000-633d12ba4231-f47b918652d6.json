@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-eval-h15-uniform-2000-633d12ba4231-f47b918652d6",
+  "slug": "davidwdw-fa-eval-h15-uniform-2000-633d12ba4231-f47b918652d6",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-eval-h15-uniform-2000-633d12ba4231-f47b918652d6",
+  "created_at": "2026-09-28T21:12:29.000Z",
+  "updated_at": "2026-09-28T21:12:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 226240052,
+  "storage_human": "226 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Walt Disney World Resort",
+      "url": "https://disneyworld.disney.go.com/login/",
+      "snippet": "{INTERSTITIAL_CLOSE_BUTTON_TEXT} {INTERSTITIAL_CONTINUE_BUTTON_TEXT} ONEID UI WEB"
+    },
+    {
+      "title": "Disney",
+      "url": "https://thehubdlp.disney.com/",
+      "snippet": "Note: Your browser does not support JavaScript, Press Continue to proceed..."
+    },
+    {
+      "title": "MyDisney Account",
+      "url": "https://my.disney.com/",
+      "snippet": "Easily manage your MyDisney account, including communication preferences and access & security, for your Walt Disney Family of Companies services."
+    },
+    {
+      "title": "ASSIST-QuickSearch Basic Search",
+      "url": "https://quicksearch.dla.mil/qssearch.aspx",
+      "snippet": "Enter search criteria in one or more of three text fields: Document ID, Document Number, Find Term (s). Filter search results by selecting Status or FSC/Area from drop-down lists, or by checking the box and specifying a range of document dates. Click a label for a detailed description and sample search results."
+    }
+  ]
+}

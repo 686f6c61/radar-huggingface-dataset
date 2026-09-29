@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "maksymK4198/10df50f8d3988625",
+  "slug": "maksymk4198-10df50f8d3988625",
+  "author": "maksymK4198",
+  "url": "https://huggingface.co/maksymK4198/10df50f8d3988625",
+  "created_at": "2026-09-28T23:48:33.000Z",
+  "updated_at": "2026-09-28T23:48:44.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe_text",
+    "text-generation",
+    "affine",
+    "sn120",
+    "community",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 249999884,
+  "parameters_human": "250.0M",
+  "storage_bytes": 1019989325,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maksymK4198 (Maksym Kostiuk) - Hugging Face",
+      "url": "https://huggingface.co/maksymK4198",
+      "snippet": "User profile of Maksym Kostiuk on Hugging Face"
+    },
+    {
+      "title": "maksymK4198/sn120__policytest__policytest__policy_test_v2 · Hugging Face",
+      "url": "https://huggingface.co/maksymK4198/sn120__policytest__policytest__policy_test_v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is AI built to help you get things done. Create, brainstorm, learn, and solve problems with AI chat that works across your day."
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore how every major AI model evolved from its ancestors. Interactive visualization of LLM genealogy."
+    }
+  ]
+}

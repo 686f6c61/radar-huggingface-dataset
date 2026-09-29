@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "LiChace/laya-scam-detector-onnx",
+  "slug": "lichace-laya-scam-detector-onnx",
+  "author": "LiChace",
+  "url": "https://huggingface.co/LiChace/laya-scam-detector-onnx",
+  "created_at": "2026-09-29T00:26:52.000Z",
+  "updated_at": "2026-09-29T00:39:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "zh",
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "scam-detection",
+    "phishing-detection",
+    "fraud-detection",
+    "text-classification",
+    "multilingual",
+    "chinese",
+    "laya",
+    "system-one",
+    "calibrated-decisions",
+    "zh",
+    "en",
+    "base_model:convaiinnovations/laya",
+    "base_model:quantized:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 680768734,
+  "storage_human": "681 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Releases · chaceli/laya-scam-detector · GitHub",
+      "url": "https://github.com/chaceli/laya-scam-detector/releases",
+      "snippet": "Local deployment + fine-tuning of the Laya decision model for Chinese/English scam-phrase detection (ONNX, no PyTorch), with a FastAPI web playground - chaceli/laya-scam-detector"
+    },
+    {
+      "title": "chaceli/laya-scam-detector: Local deployment - GitHub",
+      "url": "https://github.com/chaceli/laya-scam-detector",
+      "snippet": "Local deployment + fine-tuning of the Laya decision model for Chinese/English scam-phrase detection (ONNX, no PyTorch), with a FastAPI web playground - chaceli/laya-scam-detector"
+    },
+    {
+      "title": "convaiinnovations/laya · Hugging Face",
+      "url": "https://huggingface.co/convaiinnovations/laya",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "Instead of staying bitter, I decided to take everything I learned, fix every architectural limitation of the old approach, and build a completely open, horizontal System 1 decision model family: Laya."
+    },
+    {
+      "title": "laya · PyPI",
+      "url": "https://pypi.org/project/laya/",
+      "snippet": "Installation python -m pip install laya With uv, run uv add laya in a uv project or uv pip install laya in a virtual environment. Python 3.10 or newer. Optional extras: laya [serve] (HTTP server), laya [mcp] (MCP server), laya [langchain] (LangChain and LangGraph), laya [llamaindex] (LlamaIndex selectors), laya [crewai] (CrewAI routing), laya [onnx] (ONNX Runtime), laya [fast] (TileLang GPU ..."
+    }
+  ]
+}

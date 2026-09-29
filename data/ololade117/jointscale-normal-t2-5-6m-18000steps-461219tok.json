@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ololade117/jointscale-normal-t2-5.6M-18000steps-461219tok",
+  "slug": "ololade117-jointscale-normal-t2-5-6m-18000steps-461219tok",
+  "author": "Ololade117",
+  "url": "https://huggingface.co/Ololade117/jointscale-normal-t2-5.6M-18000steps-461219tok",
+  "created_at": "2026-09-28T22:11:57.000Z",
+  "updated_at": "2026-09-28T22:11:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5590784,
+  "parameters_human": "5.6M",
+  "storage_bytes": 22367904,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Caisse d’Epargne : Agence SAINT-CHINIAN",
+      "url": "https://www.agences.caisse-epargne.fr/banque-assurance/saint-chinian-id13485000194",
+      "snippet": "Apr 30, 2017 · Découvrez les coordonnées et horaires d’ouverture de notre agence bancaire Caisse d’Epargne à proximité de Saint …Read more"
+    },
+    {
+      "title": "Caisse d’Epargne : Agences Saint Chinian (34360)",
+      "url": "https://www.agences.caisse-epargne.fr/banque-assurance/saint-chinian-C34245",
+      "snippet": "Découvrez les coordonnées et horaires d’ouverture de nos 5 agences bancaires Caisse d’Epargne à proximité de Saint Chinian : …Read more"
+    },
+    {
+      "title": "Caisse D'Epargne Saint Chinian - 14 Grand Rue 34360 Saint Chinian ...",
+      "url": "https://www.pagesjaunes.fr/pros/06265180",
+      "snippet": "Plus d'infos sur Caisse D'Epargne Saint Chinian : La Caisse d'Epargne Saint Chinian vous accompagne au quotidien pour gérer vos …Read more"
+    },
+    {
+      "title": "Caisse d'Epargne à Saint-Chinian - Horrairesbanques.com",
+      "url": "https://www.horairesbanques.com/caisse-d-epargne/saint-chinian/",
+      "snippet": "Retrouvez les coordonnées, horaires et informations de votre établissement bancaire à Saint-Chinian. Caisse d'Epargne à Saint …Read more"
+    },
+    {
+      "title": "Caisse d'Epargne St Chinian à SAINT-CHINIAN - Agences …",
+      "url": "https://www.agences-bancaires.com/a/12810/banque-caisse-d-epargne-st-chinian",
+      "snippet": "Horaires et coordonnées de l’agence Caisse d'Epargne St Chinian : crédit, épargne, assurance à SAINT-CHINIANRead more"
+    }
+  ]
+}

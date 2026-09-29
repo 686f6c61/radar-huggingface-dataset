@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ldov/campplus-zh-en-onnx",
+  "slug": "ldov-campplus-zh-en-onnx",
+  "author": "ldov",
+  "url": "https://huggingface.co/ldov/campplus-zh-en-onnx",
+  "created_at": "2026-09-28T23:01:28.000Z",
+  "updated_at": "2026-09-28T23:01:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "sherpa-onnx",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "speaker-recognition",
+    "speaker-diarization",
+    "speaker-embedding",
+    "campplus",
+    "3d-speaker",
+    "audio-classification",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51572510,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luigi/campplus-zh-en-onnx · Hugging Face",
+      "url": "https://huggingface.co/Luigi/campplus-zh-en-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - lovemefan/campplus: A open-source toolkit for single and multi ...",
+      "url": "https://github.com/lovemefan/campplus",
+      "snippet": "A open-source toolkit for single and multi-modal speaker verification from modelscope and funasr with onnx - lovemefan/campplus"
+    },
+    {
+      "title": "Luigi/campplus-zh-en-onnx at main - Hugging Face",
+      "url": "https://huggingface.co/Luigi/campplus-zh-en-onnx/tree/main",
+      "snippet": "Ctrl+K 1 contributor History: 2 commits Luigi Add CAM++ zh+en ONNX fp32/fp16/int8 + benchmark model card aa79cf9 verified 3 days ago .gitattributes Safe"
+    },
+    {
+      "title": "campplus/README.md at main · lovemefan/campplus · GitHub",
+      "url": "https://github.com/lovemefan/campplus/blob/main/README.md",
+      "snippet": "A open-source toolkit for single and multi-modal speaker verification from modelscope and funasr with onnx - campplus/README.md at main · lovemefan/campplus"
+    },
+    {
+      "title": "SpacemiT AI SDK | 爱派派 aipaipai 嵌入式开发文档中心",
+      "url": "https://www.aipaipai.wiki/en/spacemit/ai/application_tools/ai-sdk",
+      "snippet": "SpacemiT AI SDK is an AI application development kit designed for SpacemiT K-series chips. Building on its existing multimodal capability components, it further extends upward to support application forms such as Agents, AI Robots, and AI Computers."
+    }
+  ]
+}

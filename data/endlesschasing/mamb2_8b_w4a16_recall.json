@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "EndlessChasing/Mamb2_8B_W4A16_Recall",
+  "slug": "endlesschasing-mamb2_8b_w4a16_recall",
+  "author": "EndlessChasing",
+  "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_W4A16_Recall",
+  "created_at": "2026-09-28T22:50:21.000Z",
+  "updated_at": "2026-09-28T22:58:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mamba",
+    "mamba2",
+    "quantized",
+    "w4a16",
+    "resurface",
+    "recall",
+    "text-generation",
+    "en",
+    "arxiv:2406.07887",
+    "base_model:nvidia/mamba2-8b-3t-4k",
+    "base_model:quantized:nvidia/mamba2-8b-3t-4k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4380979571,
+  "storage_human": "4.4 GB",
+  "base_model": "nvidia/mamba2-8b-3t-4k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EndlessChasing/Mamb2_8B_W4A16_Recall · Hugging Face",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_W4A16_Recall",
+      "snippet": "/ Mamb2_8B_W4A16_Recall Like 0 Text Generation English mamba mamba2 quantized w4a16 resurface recall arxiv:2406.07887 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Mamb2_8B_W4A16_Recall Download and generate Model and quantization Recall adapter Evaluation Interpretation limits Bundle layout and ..."
+    },
+    {
+      "title": "GitHub - EndlessChasing/mamb2_8B_W4A16_Recall: Research plan and ...",
+      "url": "https://github.com/EndlessChasing/mamb2_8B_W4A16_Recall",
+      "snippet": "Independent W4A16 quantization of pure NVIDIA Mamba2-8B, followed by a Resurface-inspired recall adapter. The quantized weights and independently trained adapter tensors use Apache-2.0."
+    },
+    {
+      "title": "mamb2_8B_W4A16_Recall/docs at main · EndlessChasing/mamb2_8B ... - GitHub",
+      "url": "https://github.com/EndlessChasing/mamb2_8B_W4A16_Recall/tree/main/docs",
+      "snippet": "Research plan and verification for Resurface on a public pure Mamba2-8B W4A16 base - EndlessChasing/mamb2_8B_W4A16_Recall"
+    },
+    {
+      "title": "EndlessChasing (EndlessChasing) - Hugging Face",
+      "url": "https://huggingface.co/EndlessChasing",
+      "snippet": "Tiny Size, Ultra Low Power and Lossless AI"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

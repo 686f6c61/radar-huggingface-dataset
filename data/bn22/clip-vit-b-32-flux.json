@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bn22/CLIP-ViT-B-32-FLUX",
+  "slug": "bn22-clip-vit-b-32-flux",
+  "author": "bn22",
+  "url": "https://huggingface.co/bn22/CLIP-ViT-B-32-FLUX",
+  "created_at": "2026-09-29T01:09:06.000Z",
+  "updated_at": "2026-09-29T01:09:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "clip",
+    "zero-shot-image-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 151247616,
+  "parameters_human": "151.2M",
+  "storage_bytes": 605037876,
+  "storage_human": "605 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rencontres villes france : Toutes les villes - webcamo.com",
+      "url": "https://webcamo.com/rencontre-femme-toutes-villes-1.html",
+      "snippet": "Rencontres villes france : Toutes les villes Rencontre femme Toutes Villes page 1"
+    },
+    {
+      "title": "Webcamo de maintenon",
+      "url": "https://webcamo.com/profil-webcamo.html",
+      "snippet": "Webcamo Rencontre homme celibataire maintenon Pays: Region: Departement: Ville: Code postal: Age: FRANCE webcam centre …"
+    },
+    {
+      "title": "Hummer de lille - webcamo.com",
+      "url": "https://webcamo.com/profil-hummer.html",
+      "snippet": "hummer jeune hoppe sympha desir faire rencontre et partager des experiences avec un homme mature"
+    },
+    {
+      "title": "Lucky32 de bordeaux - webcamo.com",
+      "url": "https://webcamo.com/profil-lucky32.html",
+      "snippet": "lucky32 je suis celibataire et je cherche une relation"
+    },
+    {
+      "title": "Rencontre femme celibataire saint-pierre-d-oleron - webcamo.com",
+      "url": "https://webcamo.com/celibataire/rencontre-femme-saint-pierre-d-oleron-1.html",
+      "snippet": "Le seul chat gratuit de rencontre femme celibataire dans le saint-pierre-d-oleron en celibataire sur lequel on peut se voir par webcam …"
+    }
+  ]
+}

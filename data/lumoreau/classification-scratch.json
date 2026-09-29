@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lumoreau/classification-scratch",
+  "slug": "lumoreau-classification-scratch",
+  "author": "lumoreau",
+  "url": "https://huggingface.co/lumoreau/classification-scratch",
+  "created_at": "2026-09-29T00:18:30.000Z",
+  "updated_at": "2026-09-29T00:18:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Find plane tickets on Google Flights",
+      "url": "https://support.google.com/travel/answer/2475306?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "Find your flights Go to Google Flights. Enter your departure city or airport and destination. Tip: You can also find destinations by …Read more"
+    },
+    {
+      "title": "Google Flight Tracking - No Option for Flexible Dates",
+      "url": "https://support.google.com/websearch/thread/408932189/google-flight-tracking-no-option-for-flexible-dates?hl=en",
+      "snippet": "Feb 10, 2026 · Google flight tracking does not give me the option to track for any date, it only gives me the option to track for a …"
+    },
+    {
+      "title": "RTX60系显卡大概什么时候发布? - 知乎",
+      "url": "https://www.zhihu.com/question/1940427571205478236",
+      "snippet": "RTX60系显卡大概什么时候发布 除非友商出现能打50系的显卡，否则60系没必要发布。 要知道老黄出显卡不是为了赚钱，而是为了占 …"
+    },
+    {
+      "title": "如何最有效的搜索低价机票? - 知乎",
+      "url": "https://www.zhihu.com/question/23486711",
+      "snippet": "Apr 20, 2014 · 除了google flight和ITA Matrix之外还有别的推荐方法么?"
+    },
+    {
+      "title": "Find plane tickets on Google Flights - Computer - Travel Help",
+      "url": "https://support.google.com/travel/answer/2475306?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "When you use Google Flights to find plane tickets, you can get the best fares for where and when you want to travel. Use Google …"
+    }
+  ]
+}

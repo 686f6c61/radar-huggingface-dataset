@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "EndlessChasing/Mamb2_8B_Recall",
+  "slug": "endlesschasing-mamb2_8b_recall",
+  "author": "EndlessChasing",
+  "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall",
+  "created_at": "2026-09-28T21:25:59.000Z",
+  "updated_at": "2026-09-28T21:26:02.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mamba2",
+    "state-space-model",
+    "adapter",
+    "resurface",
+    "recall",
+    "custom-runtime",
+    "text-generation",
+    "en",
+    "dataset:Salesforce/wikitext",
+    "base_model:nvidia/mamba2-8b-3t-4k",
+    "base_model:adapter:nvidia/mamba2-8b-3t-4k",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2374143,
+  "storage_human": "2 MB",
+  "base_model": "nvidia/mamba2-8b-3t-4k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Indian Porn Sites (2026) - Top Desi Adult Sites",
+      "url": "https://pornwhitelist.com/indian-porn-sites/",
+      "snippet": "Aug 5, 2026 · Best collection of Indian and Desi Porn Sites, sexy bhabhis we got it all. Only the best of the best are in our collection.Read more"
+    },
+    {
+      "title": "Indian Adult Sites Directory - Desi Porn Collection",
+      "url": "https://kikdirty.com/indian-adult-sites/",
+      "snippet": "Explore top Indian porn sites: Desi amateur content, Bollywood-inspired, diaspora performers, raw & professional Indian adult videos."
+    },
+    {
+      "title": "Top 10 Indian Porn Sites, Join Now! - Best10PornSites.Com",
+      "url": "https://best10pornsites.com/indian/",
+      "snippet": "Top 10 Indian Porn Sites – Best Desi Picks for 2026 Ready to dive into the world of desi pleasure? Our updated Top Indian Porn …"
+    },
+    {
+      "title": "The Best Indian Porn Websites reviewed by ExoPorn | Join us!",
+      "url": "https://exoporn.com/best-indian-porn-websites",
+      "snippet": "With each porn website encountered, we meticulously evaluate every feature, savoring every interaction, and cherishing every …"
+    },
+    {
+      "title": "Desi Porn List",
+      "url": "https://desipornlist.com/",
+      "snippet": "SexTube.desi Best Indian Sex Desi Porn Film Desi Porn XXX Exclusive Indian Porn Free Hindi Porn Videos Free Indian Sex Scandals"
+    }
+  ]
+}

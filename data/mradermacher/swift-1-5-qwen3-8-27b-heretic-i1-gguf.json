@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Swift-1.5-Qwen3.8-27b-heretic-i1-GGUF",
   "created_at": "2026-09-27T22:09:16.000Z",
-  "updated_at": "2026-09-27T23:46:09.000Z",
+  "updated_at": "2026-09-28T06:16:29.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -35,13 +35,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 590,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39471869152,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 218553886528,
+  "storage_human": "218.6 GB",
   "base_model": "akumaburn/Swift-1.5-Qwen3.8-27b-heretic",
   "formats": [
     "gguf"

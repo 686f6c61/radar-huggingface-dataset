@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Twilight-Embrace-31B-GGUF",
+  "slug": "mradermacher-twilight-embrace-31b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Twilight-Embrace-31B-GGUF",
+  "created_at": "2026-09-28T18:43:47.000Z",
+  "updated_at": "2026-09-29T02:38:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "roleplay",
+    "storytelling",
+    "en",
+    "base_model:Cyclone-Labs/Twilight-Embrace-31B",
+    "base_model:quantized:Cyclone-Labs/Twilight-Embrace-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 153888957376,
+  "storage_human": "153.9 GB",
+  "base_model": "Cyclone-Labs/Twilight-Embrace-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

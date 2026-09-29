@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "yoga-0125/dqn-SpaceInvadersNoFrameskip-v4",
+  "slug": "yoga-0125-dqn-spaceinvadersnoframeskip-v4",
+  "author": "yoga-0125",
+  "url": "https://huggingface.co/yoga-0125/dqn-SpaceInvadersNoFrameskip-v4",
+  "created_at": "2026-09-28T22:39:50.000Z",
+  "updated_at": "2026-09-28T22:40:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54271250,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yoga — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Yoga",
+      "snippet": "Les quatre voies (mārga) traditionnelles majeures de yoga sont le jnana yoga, bhakti yoga, karma yoga et raja yoga. Elles sont …"
+    },
+    {
+      "title": "Yoga débutant Séance complète de 30 minutes pour tout le corps",
+      "url": "https://www.youtube.com/watch?v=_nvdVJBLj-E",
+      "snippet": "Apr 2, 2024 · Cette vidéo de 30 minutes est parfaite pour étirer, renforcer, tonifier et détendre tout ton corps. Abonne-toi pour plus de …"
+    },
+    {
+      "title": "Tout savoir sur le yoga : principe, bienfaits, types",
+      "url": "https://www.santemagazine.fr/medecines-alternatives/pratiques-orientales/yoga/tout-savoir-sur-le-yoga-principe-bienfaits-types-177057",
+      "snippet": "May 16, 2024 · Les exercices de yoga mêlent méditation, gymnastique douce, postures et respiration. Objectif : permettre de libérer …"
+    },
+    {
+      "title": "Studios Yoga Blanzy : horaire d'ouverture et cours de Yoga à Blanzy",
+      "url": "https://studio-yoga.net/ville/blanzy-71450/",
+      "snippet": "Obtenez facilement l'horaire d'ouverture et les coordonnées pour chaque studio de Yoga proche de chez vous à Blanzy (Saône-et …"
+    },
+    {
+      "title": "Yoga - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yoga",
+      "snippet": "Yoga may have pre- Vedic origins, [c] but it is first attested in the early first millennium BCE."
+    }
+  ]
+}

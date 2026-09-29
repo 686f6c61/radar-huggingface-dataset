@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "itamarstahl/lment-1b-rome-snmf-ember-ratio-in-b131k",
+  "slug": "itamarstahl-lment-1b-rome-snmf-ember-ratio-in-b131k",
+  "author": "itamarstahl",
+  "url": "https://huggingface.co/itamarstahl/lment-1b-rome-snmf-ember-ratio-in-b131k",
+  "created_at": "2026-09-28T18:57:49.000Z",
+  "updated_at": "2026-09-28T19:25:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo2",
+    "text-generation",
+    "lment",
+    "rome",
+    "concept-erasure",
+    "snmf-ember",
+    "conversational",
+    "en",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1336035328,
+  "parameters_human": "1.34B",
+  "storage_bytes": 5344164472,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

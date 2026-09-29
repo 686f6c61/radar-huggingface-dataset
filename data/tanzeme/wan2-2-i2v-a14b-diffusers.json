@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tanzeme/Wan2.2-I2V-A14B-Diffusers",
+  "slug": "tanzeme-wan2-2-i2v-a14b-diffusers",
+  "author": "tanzeme",
+  "url": "https://huggingface.co/tanzeme/Wan2.2-I2V-A14B-Diffusers",
+  "created_at": "2026-09-28T22:59:45.000Z",
+  "updated_at": "2026-09-28T22:59:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-video",
+    "en",
+    "zh",
+    "arxiv:2503.20314",
+    "license:apache-2.0",
+    "diffusers:WanImageToVideoPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14288901184,
+  "parameters_human": "14.29B",
+  "storage_bytes": 126203713911,
+  "storage_human": "126.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Steam Workshop for Source Filmmaker",
+      "url": "https://steamcommunity.com/workshop/browse/?appid=1840",
+      "snippet": "Discover new assets to add to your movie. Collaborate with your friends. Create and share assets with all the users of the SFM."
+    },
+    {
+      "title": "Steam Community :: Steam Workshop",
+      "url": "https://steamcommunity.com/workshop/",
+      "snippet": "Dec 18, 2023 · Steam Workshop mods have long supported version history, allowing authors to roll a mod back to a previously …"
+    },
+    {
+      "title": "The Steam Workshop for Garry's Mod",
+      "url": "https://steamcommunity.com/app/4000/workshop/",
+      "snippet": "Discover addons, save games, demos, and more, and add them to Garry's Mod with a click of a button. Want to create and share …"
+    },
+    {
+      "title": "The Steam Workshop for Source Filmmaker",
+      "url": "https://steamcommunity.com/workshop/about/?appid=1840",
+      "snippet": "The Steam Workshop for Source Filmmaker The Steam Workshop makes it easy to discover or share new content for your game or …"
+    },
+    {
+      "title": "Steam Workshop::Five Nights at Freddy's Models (SFM)",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=626903454",
+      "snippet": "Feb 18, 2016 · Steam Workshop: Source Filmmaker. [h1] The FNaF Collection [/h1] [b] This is nearly every single Five Nights at …"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "shaikhrahella/geocadastra-maskrcnn",
+  "slug": "shaikhrahella-geocadastra-maskrcnn",
+  "author": "shaikhrahella",
+  "url": "https://huggingface.co/shaikhrahella/geocadastra-maskrcnn",
+  "created_at": "2026-09-28T20:20:30.000Z",
+  "updated_at": "2026-09-28T20:34:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 183889533,
+  "storage_human": "184 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

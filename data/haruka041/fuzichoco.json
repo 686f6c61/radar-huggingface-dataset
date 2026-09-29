@@ -5,7 +5,7 @@
   "author": "Haruka041",
   "url": "https://huggingface.co/Haruka041/fuzichoco",
   "created_at": "2026-09-28T14:20:50.000Z",
-  "updated_at": "2026-09-28T15:33:28.000Z",
+  "updated_at": "2026-09-28T16:13:55.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 459877528,
-  "storage_human": "460 MB",
+  "storage_bytes": 689814184,
+  "storage_human": "690 MB",
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers"

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nasutyo/ai_emas_bot",
+  "slug": "nasutyo-ai_emas_bot",
+  "author": "nasutyo",
+  "url": "https://huggingface.co/nasutyo/ai_emas_bot",
+  "created_at": "2026-09-29T00:04:42.000Z",
+  "updated_at": "2026-09-29T00:21:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 512 AI models across 486 benchmarks, with 209 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Free AI 3D Model Generator | Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Free AI 3D Model Generator: create 3D models from text or images for games, AR/VR, and 3D printing at zero cost."
+    },
+    {
+      "title": "Sign In to Nastia | Your Uncensored AI Companion",
+      "url": "https://www.nastia.ai/auth/login",
+      "snippet": "Welcome back to Nastia! Sign in to continue your conversations with your AI companion. Experience uncensored, genuine connections in a safe space."
+    },
+    {
+      "title": "Nusa AI | Content Creator (@itsnusaai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/itsnusaai/",
+      "snippet": "14K Followers, 414 Following, 843 Posts - Nusa AI | Content Creator (@itsnusaai) on Instagram: \" Where Fantasy Meets AI 🎬 Cinematic AI Videos & AI Art ⚔️ Anime • Games • Movies • Original Ideas 🎭 Bring our creativity with AI\""
+    },
+    {
+      "title": "MossyModels — Free YOLO and ONNX AI Models",
+      "url": "https://mossymodels.com/",
+      "snippet": "Free community library of YOLO and ONNX AI aimbot models for Fortnite, Valorant, Warzone, Apex Legends, CS2, and 40+ games. Download ONNX and PyTorch weights."
+    }
+  ]
+}

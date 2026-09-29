@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "BernaLabs/berna-r7-mother",
+  "slug": "bernalabs-berna-r7-mother",
+  "author": "BernaLabs",
+  "url": "https://huggingface.co/BernaLabs/berna-r7-mother",
+  "created_at": "2026-09-29T01:08:15.000Z",
+  "updated_at": "2026-09-29T01:11:30.000Z",
+  "license": "berna-research-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "language-model",
+    "berna",
+    "dna-kernel-plexus",
+    "r5-implementation",
+    "from-scratch",
+    "rtx-5090",
+    "text-generation",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FIP – Écouter la radio en direct et les radios thématiques",
+      "url": "https://www.radiofrance.fr/fip",
+      "snippet": "Tout l'univers musical de FIP, sélection de titres Jazz, Electro, Rock, Pop, Groove et bien plus. Écoutez la radio en direct et les …"
+    },
+    {
+      "title": "Radio FIP Jazz | Écouter de la musique Jazz, Blues en ligne avec FIP",
+      "url": "https://www.radiofrance.fr/fip/radio-jazz",
+      "snippet": "Fip : Jazz Écoute le Jazz sous toutes ses formes gratuitement et sans pub. Un mix de titres inédits et de grands classiques : …"
+    },
+    {
+      "title": "Écouter FIP en direct et gratuit",
+      "url": "https://www.radio-en-ligne.fr/fip",
+      "snippet": "FIP est une station de radio musicale publique française qui fait aujourd'hui partie du groupe Radio France. Son objectif, faire …"
+    },
+    {
+      "title": "FIP Radio: Jazz, World, Pop, Electro et Sélection Éclectique",
+      "url": "https://www.radio.fr/s/fip",
+      "snippet": "Écoutez FIP, France Inter ou d'autres radios du monde entier - avec l'app de radio.fr Obtenez l’app radio.fru2028 gratuite En savoir …"
+    },
+    {
+      "title": "FIP (radio) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/FIP_(radio)",
+      "snippet": "FIP (à sa naissance pour France Inter Paris mais désormais sans rapport direct ni avec France Inter ni avec Paris) est une station de …"
+    }
+  ]
+}

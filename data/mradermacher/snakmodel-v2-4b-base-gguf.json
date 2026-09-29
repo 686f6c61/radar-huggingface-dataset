@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/snakmodel-v2-4b-base-GGUF",
+  "slug": "mradermacher-snakmodel-v2-4b-base-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/snakmodel-v2-4b-base-GGUF",
+  "created_at": "2026-09-28T20:21:22.000Z",
+  "updated_at": "2026-09-28T20:41:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:NLPnorth/snakmodel-v2-4b-base",
+    "base_model:quantized:NLPnorth/snakmodel-v2-4b-base",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205423616,
+  "parameters_human": "4.21B",
+  "storage_bytes": 38902603136,
+  "storage_human": "38.9 GB",
+  "base_model": "NLPnorth/snakmodel-v2-4b-base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

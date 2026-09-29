@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ahmedalghamdi/multimodal-reasoning-reading-2024",
+  "slug": "ahmedalghamdi-multimodal-reasoning-reading-2024",
+  "author": "ahmedalghamdi",
+  "url": "https://huggingface.co/ahmedalghamdi/multimodal-reasoning-reading-2024",
+  "created_at": "2026-09-28T23:33:58.000Z",
+  "updated_at": "2026-09-28T23:34:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2505.04921] Perception, Reason, Think, and Plan: A Survey on Large ...",
+      "url": "https://arxiv.org/abs/2505.04921",
+      "snippet": "Reasoning lies at the heart of intelligence, shaping the ability to make decisions, draw conclusions, and generalize across domains. In artificial intelligence, as systems increasingly operate in open, uncertain, and multimodal environments, reasoning becomes essential for enabling robust and adaptive behavior. Large Multimodal Reasoning Models (LMRMs) have emerged as a promising paradigm ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "Cross-modal multi-relational graph reasoning: A novel model for ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1566253525001551",
+      "snippet": "The ability to comprehensively understand multimodal textbook content is crucial for developing advanced intelligent tutoring systems and educational tools powered by generative AI, such as intelligent question answering [1], [2], [3], textbook knowledge annotation [4], and Reading Comprehension. Such systems need to go beyond simple retrieval and perform complex cross-modal reasoning tasks ..."
+    },
+    {
+      "title": "[2506.23918] Thinking with Images for Multimodal Reasoning: Foundations ...",
+      "url": "https://arxiv.org/abs/2506.23918",
+      "snippet": "Abstract page for arXiv paper 2506.23918: Thinking with Images for Multimodal Reasoning: Foundations, Methods, and Future Frontiers"
+    },
+    {
+      "title": "Advancing conversational diagnostic AI with multimodal reasoning - Nature",
+      "url": "https://www.nature.com/articles/s41591-026-04371-0",
+      "snippet": "Improvements in the Articulate Medical Intelligence Explorer, a large language model designed for diagnostic dialogue, enable the model to request, interpret and reason about multimodal medical data."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "orangebreak/anlp-a2-part1-moe-90M",
+  "slug": "orangebreak-anlp-a2-part1-moe-90m",
+  "author": "orangebreak",
+  "url": "https://huggingface.co/orangebreak/anlp-a2-part1-moe-90M",
+  "created_at": "2026-09-28T18:40:32.000Z",
+  "updated_at": "2026-09-28T20:02:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "vi",
+    "ja"
+  ],
+  "tags": [
+    "mixture-of-experts",
+    "translation",
+    "en",
+    "vi",
+    "ja",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 534178494,
+  "storage_human": "534 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

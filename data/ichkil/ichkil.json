@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "ichkil/ichkil",
+  "slug": "ichkil-ichkil",
+  "author": "ichkil",
+  "url": "https://huggingface.co/ichkil/ichkil",
+  "created_at": "2026-09-29T00:05:11.000Z",
+  "updated_at": "2026-09-29T00:10:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "onnx",
+    "arabic",
+    "tashkeel",
+    "diacritization",
+    "harakat",
+    "text-normalization",
+    "onnxruntime",
+    "lightweight",
+    "cpu",
+    "ar",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6194288,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "sequence-classification",
+      "dataset": null,
+      "metric": null,
+      "value": 2.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "Doll Jointed Fragile Character [ichi_sk] - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/02ce8a84d97886b18de14bd3aa49690b",
+      "snippet": "Explore Doll Jointed Fragile Character [ichi_sk] model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Platform — The AI Workforce and Collaborative Workspace",
+      "url": "https://www.ichiplan.com/platform",
+      "snippet": "Ichi is an agentic platform on a homegrown, model-agnostic harness: code research, document analysis, agentic workflows, and orchestration with human sign-off — plus a shared workspace with projects, memory and citations."
+    },
+    {
+      "title": "Ichi (Ichi the Witch)｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/en/model/1916498021027545514",
+      "snippet": "Just created this stunning boy, male, man, manga, character, shonen_jump, ichi_the_witch, weekly_shonen_jump anime art with the amazing &#x27;Ichi (Ichi the Witch)&#x27; model on PixAI! Search for \"Ichi (Ichi the Witch)\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "Madan no Ichi/Ichi the Witch - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1987889081037203373",
+      "snippet": "Generate stunning anime art with the &#x27;Madan no Ichi/Ichi the Witch&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://aimodelsindex.com/",
+      "snippet": "Compare AI models using source-backed composite indexes, benchmark evidence, coverage, confidence, provenance, and transparent scoring methodology."
+    }
+  ]
+}

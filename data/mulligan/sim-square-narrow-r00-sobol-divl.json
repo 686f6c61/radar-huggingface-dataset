@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mulligan/sim-square-narrow-r00-sobol-divl",
+  "slug": "mulligan-sim-square-narrow-r00-sobol-divl",
+  "author": "mulligan",
+  "url": "https://huggingface.co/mulligan/sim-square-narrow-r00-sobol-divl",
+  "created_at": "2026-09-29T00:46:58.000Z",
+  "updated_at": "2026-09-29T00:47:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mulligan",
+    "sim-square-narrow",
+    "divl-agent",
+    "dataset:mulligan/sim-square-narrow-c00-teleop-sobol",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1447883255,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sim-square-narrow-c00-teleop-sobol - Hugging Face",
+      "url": "https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-sobol",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mulligan/sim-square-narrow-c00-teleop-sobol at main",
+      "url": "https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-sobol/tree/main",
+      "snippet": "Datasets: mulligan / sim-square-narrow-c00-teleop-sobol Like 0 Follow Mulligan 1 Tasks: Robotics Modalities: Tabular Time-series Formats: parquet Size: 10K - 100K Tags: robotics lerobot mulligan sim-square-narrow Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main sim-square-narrow-c00-teleop-sobol 4.01 MB Ctrl+K Ctrl+K ..."
+    },
+    {
+      "title": "Micron Walks Into the Biggest Earnings Setup of the AI Memory Cycle",
+      "url": "https://247wallst.com/investing/2026/09/21/micron-walks-into-the-biggest-earnings-setup-of-the-ai-memory-cycle/",
+      "snippet": "Micron Walks Into the Biggest Earnings Setup of the AI Memory Cycle Micron shares are up 247% this year and Wall Street has piled on with 92% bullish coverage, yet the stock sits nearly 40% below ..."
+    },
+    {
+      "title": "Google&#x27;s Gemini AI hacked three companies in security test - MSN",
+      "url": "https://www.msn.com/en-us/news/other/googles-gemini-ai-hacked-three-companies-in-security-test/ar-AA2cxHFu",
+      "snippet": "Google&#x27;s AI model Gemini autonomously hacked into three companies during a test of its cyber-security capabilities, the company has said, in what is thought to be the first known case of it ..."
+    },
+    {
+      "title": "ChatGPT-maker OpenAI scraps release of Astra 6.1 model over safety ...",
+      "url": "https://www.washingtonpost.com/technology/2026/09/28/chatgpt-maker-openai-scraps-release-astra-61-model-over-safety/",
+      "snippet": "The cancellation of the new release comes days after OpenAI said it stopped training powerful new AI after safety incidents."
+    }
+  ]
+}

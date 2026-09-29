@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ololade117/jointscale-normal-t1-3.7M-15000steps-388007tok",
+  "slug": "ololade117-jointscale-normal-t1-3-7m-15000steps-388007tok",
+  "author": "Ololade117",
+  "url": "https://huggingface.co/Ololade117/jointscale-normal-t1-3.7M-15000steps-388007tok",
+  "created_at": "2026-09-28T22:04:34.000Z",
+  "updated_at": "2026-09-28T22:04:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3686400,
+  "parameters_human": "3.7M",
+  "storage_bytes": 14750344,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ololade117/scaling-normal-3.7M-65000steps · Hugging Face",
+      "url": "https://huggingface.co/Ololade117/scaling-normal-3.7M-65000steps",
+      "snippet": "Ololade117 / scaling-normal-3.7M-65000steps Like 0 Safetensors model_hub_mixin pytorch_model_hub_mixin License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Ololade117 (Ololade Ogunleye ) - Hugging Face",
+      "url": "https://huggingface.co/Ololade117/datasets",
+      "snippet": "Agents Recent Activity updated a modelabout 19 hours ago Ololade117/gemma-4-e2b-iroko-mentalhealth-finetuned2 published a modelabout 19 hours ago Ololade117/gemma-4-e2b-iroko-mentalhealth-finetuned2 updated a model4 days ago Ololade117/medgemma-1.5-4b-iroko-finetuned View all activity"
+    },
+    {
+      "title": "Ololade117 · GitHub",
+      "url": "https://github.com/Ololade117/",
+      "snippet": "Ololade117 has 7 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Get started | ChatGPT",
+      "url": "https://chatgpt.com/auth/login",
+      "snippet": "Log in or sign up to ChatGPT"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

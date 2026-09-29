@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "qikp/kite-8.1-11m-base",
+  "slug": "qikp-kite-8-1-11m-base",
+  "author": "qikp",
+  "url": "https://huggingface.co/qikp/kite-8.1-11m-base",
+  "created_at": "2026-09-28T20:05:53.000Z",
+  "updated_at": "2026-09-28T20:06:02.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "en",
+    "dataset:nvidia/Nemotron-ClimbMix",
+    "license:cc0-1.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11015424,
+  "parameters_human": "11.0M",
+  "storage_bytes": 44071448,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

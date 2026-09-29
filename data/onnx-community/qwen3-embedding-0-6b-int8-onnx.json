@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "onnx-community/Qwen3-Embedding-0.6B-INT8-ONNX",
+  "slug": "onnx-community-qwen3-embedding-0-6b-int8-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/Qwen3-Embedding-0.6B-INT8-ONNX",
+  "created_at": "2026-09-28T21:23:02.000Z",
+  "updated_at": "2026-09-28T21:23:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen3",
+    "text-generation",
+    "transformers",
+    "sentence-transformers",
+    "sentence-similarity",
+    "feature-extraction",
+    "text-embeddings-inference",
+    "quantized",
+    "arxiv:2506.05176",
+    "base_model:techAInewb/Qwen3-Embedding-0.6B-INT8",
+    "base_model:quantized:techAInewb/Qwen3-Embedding-0.6B-INT8",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5360134475,
+  "storage_human": "5.4 GB",
+  "base_model": "techAInewb/Qwen3-Embedding-0.6B-INT8",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx-community/Qwen3-Embedding-0.6B-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/Qwen3-Embedding-0.6B-ONNX",
+      "snippet": "import { pipeline, matmul } from \"@huggingface/transformers\"; // Create a feature extraction pipeline const extractor = await pipeline( \"feature-extraction\", \"onnx-community/Qwen3-Embedding-0.6B-ONNX\", { dtype: \"fp32\", // Options: \"fp32\", \"fp16\", \"q8\" // device: \"webgpu\", }, ); function get_detailed_instruct(task_description, query) { return `Instruct: ${task_description}\\nQuery:${query}`; } // Each query must come with a one-sentence instruction that describes the task const task = \"Given a web search query, retrieve relevant passages that answer the query\"; const queries = [ get_detailed_instruct(task, \"What is the capital of China?\"), get_detailed_instruct(task, \"Explain gravity\"), ]; // No need to add instruction for retrieval documents const documents = [ \"The capital of China is Beijing.\", \"Gravity is a force that attracts two bodies towards each other."
+    },
+    {
+      "title": "r/LocalLLaMA on Reddit: Qwen3-Embedding-0.6B ONNX model with uint8 ...",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1l6ss2b/qwen3embedding06b_onnx_model_with_uint8_output/",
+      "snippet": "Qwen3.8-27B-NVFP4 1M context."
+    },
+    {
+      "title": "GitHub - n24q02m/qwen3-embed: Lightweight Qwen3 text embedding ...",
+      "url": "https://github.com/n24q02m/qwen3-embed",
+      "snippet": "GPU optional, no PyTorch: Runs on ONNX Runtime or llama-cpp-python -- no heavy ML framework required. Auto-detects GPU (CUDA, DirectML) when available. Multilingual: Both models support multi-language inputs. ... from qwen3_embed import TextEmbedding # INT8 (default) model = TextEmbedding(model_name=\"n24q02m/Qwen3-Embedding-0.6B-ONNX\") # Q4F16 (smaller, slightly less accurate) model = TextEmbedding(model_name=\"n24q02m/Qwen3-Embedding-0.6B-ONNX-Q4F16\") # GGUF (requires: pip install qwen3-embed[gguf]) model = TextEmbedding(model_name=\"n24q02m/Qwen3-Embedding-0.6B-GGUF\") documents = [ \"Qwen3 is a"
+    },
+    {
+      "title": "Qwen/Qwen3-Embedding-0.6B · ONNX conversion",
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/discussions/18",
+      "snippet": "This is a SBERT-based ONNX conversion of the model."
+    },
+    {
+      "title": "janni-t/qwen3-embedding-0.6b-int8-tei-onnx · Hugging Face",
+      "url": "https://huggingface.co/janni-t/qwen3-embedding-0.6b-int8-tei-onnx",
+      "snippet": "This is an INT8 quantized ONNX version of Qwen/Qwen3-Embedding-0.6B optimized specifically for Text Embeddings Inference (TEI) with CPU acceleration."
+    }
+  ]
+}

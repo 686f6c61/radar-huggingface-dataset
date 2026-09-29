@@ -5,7 +5,7 @@
   "author": "doth4580",
   "url": "https://huggingface.co/doth4580/Naive-N0.5-Flash-EXL3-3.5bpw",
   "created_at": "2026-09-28T19:11:53.000Z",
-  "updated_at": "2026-09-28T19:45:46.000Z",
+  "updated_at": "2026-09-28T20:05:00.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,10 +32,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 87643366164,
-  "storage_human": "87.6 GB",
+  "parameters": 68432638144,
+  "parameters_human": "68.43B",
+  "storage_bytes": 136953838256,
+  "storage_human": "137.0 GB",
   "base_model": "NaiveAI/Naive-N0.5-Flash-FP8",
   "formats": [
     "safetensors"

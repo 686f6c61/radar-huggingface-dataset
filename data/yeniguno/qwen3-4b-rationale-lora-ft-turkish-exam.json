@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "yeniguno/qwen3-4b-rationale-lora-ft-turkish-exam",
+  "slug": "yeniguno-qwen3-4b-rationale-lora-ft-turkish-exam",
+  "author": "yeniguno",
+  "url": "https://huggingface.co/yeniguno/qwen3-4b-rationale-lora-ft-turkish-exam",
+  "created_at": "2026-09-28T18:43:43.000Z",
+  "updated_at": "2026-09-28T18:50:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3",
+    "turkish",
+    "multiple-choice",
+    "rationale-distillation",
+    "text-generation",
+    "conversational",
+    "tr",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77550426,
+  "storage_human": "78 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

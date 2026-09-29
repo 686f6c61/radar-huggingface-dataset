@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "osamabyc19866/noura",
+  "slug": "osamabyc19866-noura",
+  "author": "osamabyc19866",
+  "url": "https://huggingface.co/osamabyc19866/noura",
+  "created_at": "2026-09-28T23:38:34.000Z",
+  "updated_at": "2026-09-28T23:40:25.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "osamabyc19866 (osama dawood) - Hugging Face",
+      "url": "https://huggingface.co/osamabyc19866",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 23 days ago ... published a Space 27 days ago"
+    },
+    {
+      "title": "osamabyc19866 (osama dawood) - Hugging Face",
+      "url": "https://huggingface.co/osamabyc19866/datasets",
+      "snippet": "User profile of osama dawood on Hugging Face"
+    },
+    {
+      "title": "osamabyc19866 (osama dawood) - Hugging Face",
+      "url": "https://huggingface.co/osamabyc19866/spaces",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 3 days ago ... published a Space 8 days ago"
+    },
+    {
+      "title": "osamabyc19866/amal at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/osamabyc19866/amal/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "osamabyc86/nouradreams · Update README.md - Hugging Face",
+      "url": "https://huggingface.co/spaces/osamabyc86/nouradreams/discussions/1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

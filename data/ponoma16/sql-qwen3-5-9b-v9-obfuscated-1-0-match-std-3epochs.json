@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ponoma16/sql-qwen3.5-9b-v9-obfuscated-1.0-match-std-3epochs",
+  "slug": "ponoma16-sql-qwen3-5-9b-v9-obfuscated-1-0-match-std-3epochs",
+  "author": "ponoma16",
+  "url": "https://huggingface.co/ponoma16/sql-qwen3.5-9b-v9-obfuscated-1.0-match-std-3epochs",
+  "created_at": "2026-09-29T00:18:09.000Z",
+  "updated_at": "2026-09-29T00:18:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 367352002,
+  "storage_human": "367 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ponoma16/sql-qwen3.5-9b-v9-obfuscated-1.0-match-std-3epochs · Hugging Face",
+      "url": "https://huggingface.co/ponoma16/sql-qwen3.5-9b-v9-obfuscated-1.0-match-std-3epochs",
+      "snippet": "Instructions to use ponoma16/sql-qwen3.5-9b-v9-obfuscated-1.0-match-std-3epochs with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use ponoma16/sql-qwen3.5-9b-v9-obfuscated-1.0-match-std-3epochs with PEFT:"
+    },
+    {
+      "title": "ponoma16/sql-qwen3.5-9b-v9-obfuscated-1.0-match · Hugging Face",
+      "url": "https://huggingface.co/ponoma16/sql-qwen3.5-9b-v9-obfuscated-1.0-match",
+      "snippet": "Instructions to use ponoma16/sql-qwen3.5-9b-v9-obfuscated-1.0-match with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use ponoma16/sql-qwen3.5-9b-v9-obfuscated-1.0-match with PEFT:"
+    },
+    {
+      "title": "Sql Qwen3.5 9b V9 Obfuscated 1.0 Match 3epochs - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/ponoma16/sql-qwen3.5-9b-v9-obfuscated-1.0-match-3epochs",
+      "snippet": "Registry entry for model Sql Qwen3.5 9b V9 Obfuscated 1.0 Match 3epochs; source metadata pending."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "The official Qwen API is provided by Alibaba Cloud Model Studio. Alibaba Cloud Model Studio provides first-class support for Qwen3.5, which is compatible with various API specifications, including OpenAI and Anthropic, making it simple for you to try Qwen3.5 in your own applications."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    }
+  ]
+}

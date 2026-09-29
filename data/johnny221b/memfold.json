@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Johnny221B/memfold",
+  "slug": "johnny221b-memfold",
+  "author": "Johnny221B",
+  "url": "https://huggingface.co/Johnny221B/memfold",
+  "created_at": "2026-09-29T00:28:26.000Z",
+  "updated_at": "2026-09-29T00:31:44.000Z",
+  "license": "memfold-and-upstream-model-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "memfold",
+    "lora",
+    "long-context",
+    "memory",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1358727968,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen/Qwen3-4B, Qwen/Qwen2.5-3B-Instruct, Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Johnny221B/memfold: MemFold: learned soft memory for long ...",
+      "url": "https://github.com/Johnny221B/memfold",
+      "snippet": "MemFold learns a fixed-budget soft memory and trains a reader to answer from it. This repository includes memory extraction, compressor pretraining, reader training, inference, and baseline implementations. Model weights on Hugging Face · Code"
+    },
+    {
+      "title": "memfold/docs at main · Johnny221B/memfold · GitHub",
+      "url": "https://github.com/Johnny221B/memfold/tree/main/docs",
+      "snippet": "MemFold: learned soft memory for long-context reasoning. Training, inference and evaluation. - memfold/docs at main · Johnny221B/memfold"
+    },
+    {
+      "title": "Johnny221B (haichuan wu) - Hugging Face",
+      "url": "https://huggingface.co/Johnny221B",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 9 hours ago ... published a model about 9 hours ago ... upvoted a paper about 1 month ago"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    }
+  ]
+}

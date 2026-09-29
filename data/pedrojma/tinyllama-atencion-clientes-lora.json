@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PedroJMA/tinyllama-atencion-clientes-lora",
+  "slug": "pedrojma-tinyllama-atencion-clientes-lora",
+  "author": "PedroJMA",
+  "url": "https://huggingface.co/PedroJMA/tinyllama-atencion-clientes-lora",
+  "created_at": "2026-09-29T00:19:52.000Z",
+  "updated_at": "2026-09-29T00:19:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4517152,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "irtoga/tinyllama-atencion-clientes-lora · Hugging Face",
+      "url": "https://huggingface.co/irtoga/tinyllama-atencion-clientes-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=tinyllama",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - Blazkull/MODEL-TINYLLAMA",
+      "url": "https://github.com/Blazkull/MODEL-TINYLLAMA",
+      "snippet": "Este repositorio contiene un entorno completo para el refinamiento local del modelo TinyLlama-1.1B mediante técnicas de Fine-Tuning con LoRA, orientado específicamente a la creación de un asistente virtual para enfermería universitaria."
+    },
+    {
+      "title": "tinyllama",
+      "url": "https://ollama.com/library/tinyllama",
+      "snippet": "TinyLlama is a compact model with only 1.1B parameters. This compactness allows it to cater to a multitude of applications demanding a restricted computation and memory footprint."
+    },
+    {
+      "title": "GitHub - jzhang38/TinyLlama: The TinyLlama project is an open endeavor ...",
+      "url": "https://github.com/jzhang38/TinyLlama",
+      "snippet": "The TinyLlama project is an open endeavor to pretrain a 1.1B Llama model on 3 trillion tokens. - jzhang38/TinyLlama"
+    }
+  ]
+}

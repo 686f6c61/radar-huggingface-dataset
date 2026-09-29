@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AbdelMoety1/nih-chest-xray-densenet121",
+  "slug": "abdelmoety1-nih-chest-xray-densenet121",
+  "author": "AbdelMoety1",
+  "url": "https://huggingface.co/AbdelMoety1/nih-chest-xray-densenet121",
+  "created_at": "2026-09-28T21:25:42.000Z",
+  "updated_at": "2026-09-28T21:25:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HarishChaisir/Chest-XRay-Disease-Detection - GitHub",
+      "url": "https://github.com/HarishChaisir/Chest-XRay-Disease-Detection",
+      "snippet": "A deep learning-based multi-label chest X-ray classification system that detects 14 thoracic diseases from chest X-ray images using a DenseNet121 model trained on the NIH ChestX-ray14 dataset. Chest X-ray interpretation is a challenging medical imaging task requiring expertise and experience. This ..."
+    },
+    {
+      "title": "NIH-Chest-X-ray-Multi-label-Disease-Classification/README.md ... - GitHub",
+      "url": "https://github.com/BakiTurhan/NIH-Chest-X-ray-Multi-label-Disease-Classification/blob/main/README.md",
+      "snippet": "This repository contains a chest X-ray disease detection system developed as part of an AI course final project by Baki Turhan and Ali Seyhan. The system utilizes two pre-trained deep learning models, DenseNet121 and VGG19, to perform multi-label classification of chest X-ray images into 14 possible disease categories. The project demonstrates the practical use of transfer learning and deep ..."
+    },
+    {
+      "title": "DenseNet-121 Model Architecture & Weights | adityasahu1109/Chest-X-Ray ...",
+      "url": "https://deepwiki.com/adityasahu1109/Chest-X-Ray-Diagnostic-System/2.2.1-densenet-121-model-architecture-and-weights",
+      "snippet": "This page provides a technical deep dive into the DenseNet-121 backbone and the customized classifier head used for multi-label chest X-ray classification. It covers the model&#x27;s structural implementation, the production weights, and the inference configuration."
+    },
+    {
+      "title": "torchxrayvision/densenet121-res224-nih · Hugging Face",
+      "url": "https://huggingface.co/torchxrayvision/densenet121-res224-nih",
+      "snippet": "densenet121-res224-nih A DenseNet is a type of convolutional neural network that utilises dense connections between layers, through Dense Blocks, where we connect all layers (with matching feature-map sizes) directly with each other."
+    },
+    {
+      "title": "Chest X-Ray Image to Classify Lung diseases in Different Resolution ...",
+      "url": "https://dl.acm.org/doi/10.1145/3479645.3479667",
+      "snippet": "It is experimentally shown that DenseNet121 model achieves the highest accuracy in classification using image size 224x224 pixels. The best results were obtained with Tuberculosis dataset, Pneumonia dataset, Cardiomegaly dataset and COVID-19 dataset with 0,892, 0,904, 0,898 and 0,986, respectively."
+    }
+  ]
+}

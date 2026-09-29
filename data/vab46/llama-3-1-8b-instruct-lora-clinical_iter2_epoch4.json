@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "vab46/llama-3.1-8b-instruct-lora-clinical_iter2_epoch4",
+  "slug": "vab46-llama-3-1-8b-instruct-lora-clinical_iter2_epoch4",
+  "author": "vab46",
+  "url": "https://huggingface.co/vab46/llama-3.1-8b-instruct-lora-clinical_iter2_epoch4",
+  "created_at": "2026-09-28T20:19:39.000Z",
+  "updated_at": "2026-09-28T20:59:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dataset:vab46/Clinical_trials_anchor-contextORpositive-ground-truth_LLM_LORA-junk_handled_ft",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 270799392,
+  "storage_human": "271 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

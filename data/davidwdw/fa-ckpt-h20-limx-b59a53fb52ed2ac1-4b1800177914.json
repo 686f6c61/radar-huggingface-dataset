@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-ckpt-h20-limx-b59a53fb52ed2ac1-4b1800177914",
+  "slug": "davidwdw-fa-ckpt-h20-limx-b59a53fb52ed2ac1-4b1800177914",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-ckpt-h20-limx-b59a53fb52ed2ac1-4b1800177914",
+  "created_at": "2026-09-28T23:43:28.000Z",
+  "updated_at": "2026-09-28T23:44:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12440403307,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/login_with",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "LimX Dynamics | Official Website",
+      "url": "https://www.limxdynamics.com/en",
+      "snippet": "LimX Dynamics is an embodied AI robotics company focused on developing innovative products around three core technologies: original robot hardware design and manufacturing, brain-cerebellum fusion technology, and the humanoid brain system COSA, advancing AGI from the digital world into the physical world."
+    },
+    {
+      "title": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is AI built to help you get things done. Create, brainstorm, learn, and solve problems with AI chat that works across your day."
+    }
+  ]
+}

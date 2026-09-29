@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_7aa5c99a79889120_20260928-6604c9f7-9bad-4acc-a190-19107bb335d7-5EUHojrM",
+  "slug": "gradients-io-tournaments-tournament-tourn_7aa5c99a79889120_20260928-6604c9f7-9bad-4acc-a190-19107bb335d7-5euhojrm",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_7aa5c99a79889120_20260928-6604c9f7-9bad-4acc-a190-19107bb335d7-5EUHojrM",
+  "created_at": "2026-09-29T00:02:07.000Z",
+  "updated_at": "2026-09-29T00:02:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/8d7f663aaab4e5dd",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688359088,
+  "storage_human": "688 MB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sodomie : tout savoir sur la pénétration anale - Doctissimo",
+      "url": "https://www.doctissimo.fr/html/sexualite/savoir/se_295_sexua_rap_anal.htm",
+      "snippet": "Apr 8, 2023 · Pour que la sodomie se passe bien, les deux partenaires doivent être en confiance et détendus dans leur sexualité. La …"
+    },
+    {
+      "title": "Ce que les médecins proctologues disent de la sexualité anal - SNFCP",
+      "url": "https://www.snfcp.org/informations-maladies/sexualite-anale/sexualite-anale-en-proctologie/",
+      "snippet": "Comme toutes les pratiques sexuelles, les rapports par l’anus non protégés par un préservatif, avec ou sans pénétration, peuvent …"
+    },
+    {
+      "title": "Sexualité anale : des réponses médicales aux questions des patients",
+      "url": "https://www.fmcgastro.org/texte-postu/postu-2020-paris/sexualite-anale-des-reponses-medicales-aux-questions-des-patients/",
+      "snippet": "La sexualité anale concerne jusqu’à 30 % de la population. La sexualité anale peut être source de troubles de la continence anale. …"
+    },
+    {
+      "title": "Pénétration Anale : Plaisir, Positions, Risques et Erreurs à éviter",
+      "url": "https://www.orgasme-prejuges.com/penetration-anale/",
+      "snippet": "Ce guide vous accompagne dans cette exploration, des préliminaires aux précautions d’usage, tout en vous aidant à choisir le …"
+    },
+    {
+      "title": "52 % des hommes ont déjà expérimenté la pénétration anale : ce que …",
+      "url": "https://www.doctissimo.fr/sexualite/le-sexe-de-a-a-z/sexe-anal/52-des-hommes-ont-deja-experimente-la-penetration-anale-ce-que-cela-revele-sur-la-sexualite-masculine-419714.htm",
+      "snippet": "Nov 21, 2025 · D’après l’étude, 52 % des hommes affirment avoir déjà été pénétrés analement au cours de leur vie. Dans le détail, la …"
+    }
+  ]
+}
