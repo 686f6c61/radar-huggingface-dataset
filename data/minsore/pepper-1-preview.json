@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "minsore/pepper-1-preview",
+  "slug": "minsore-pepper-1-preview",
+  "author": "minsore",
+  "url": "https://huggingface.co/minsore/pepper-1-preview",
+  "created_at": "2026-09-29T17:32:41.000Z",
+  "updated_at": "2026-09-29T17:37:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "code"
+  ],
+  "tags": [
+    "llama.cpp",
+    "code",
+    "code-assistant",
+    "instruction-following",
+    "python",
+    "qwen2.5-coder",
+    "minsore",
+    "gguf",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "celestial-sora/Vivian-Qwen3-8B-v0.4",
+  "slug": "celestial-sora-vivian-qwen3-8b-v0-4",
+  "author": "celestial-sora",
+  "url": "https://huggingface.co/celestial-sora/Vivian-Qwen3-8B-v0.4",
+  "created_at": "2026-09-29T02:26:23.000Z",
+  "updated_at": "2026-09-29T02:38:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-8B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-8B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939748,
+  "storage_human": "16.4 GB",
+  "base_model": "unsloth/Qwen3-8B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Celestial Launcher - Free LoL Custom Skin Installer | Divine Skins",
+      "url": "https://www.divineskins.gg/celestial-launcher",
+      "snippet": "Download Celestial Launcher, the free way to install custom League of Legends skins. Auto-updates, client-side only, and trusted by …"
+    },
+    {
+      "title": "Divine Skins | League of Legends Custom Skins",
+      "url": "https://www.divineskins.gg/",
+      "snippet": "Free custom skins for League of Legends. Hundreds of community-made mods, installed in seconds with the Celestial Launcher. …"
+    },
+    {
+      "title": "Ce qui est inclus | Celestyal Cruises FR",
+      "url": "https://celestyal.com/fr/onboard/whats-included",
+      "snippet": "Avec notre forfait boissons, trois repas par jour et un programme complet d’animations, la vie à bord a tout pour vous plaire."
+    },
+    {
+      "title": "Paroles et traduction de la chanson «Celestial» par Ed Sheeran",
+      "url": "https://www.lacoccinelle.net/1433856-ed-sheeran-celestial.html",
+      "snippet": "Paroles et traduction de la chanson «Celestial» par Ed Sheeran ⇑ Paroles + Traduction Téléchargement Vidéos Commentaires"
+    },
+    {
+      "title": "Ed Sheeran, Pokémon - Celestial [Official Video] - YouTube",
+      "url": "https://www.youtube.com/watch?v=23g5HBOg3Ic",
+      "snippet": "The official music video for Ed Sheeran, Pokémon - Celestial Subtract, the new album, out 05.05.2023."
+    }
+  ]
+}

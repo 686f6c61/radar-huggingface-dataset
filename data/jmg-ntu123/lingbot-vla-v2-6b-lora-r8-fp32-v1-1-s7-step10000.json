@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JMG-NTU123/lingbot-vla-v2-6b-lora-r8-fp32-v1.1-s7-step10000",
+  "slug": "jmg-ntu123-lingbot-vla-v2-6b-lora-r8-fp32-v1-1-s7-step10000",
+  "author": "JMG-NTU123",
+  "url": "https://huggingface.co/JMG-NTU123/lingbot-vla-v2-6b-lora-r8-fp32-v1.1-s7-step10000",
+  "created_at": "2026-09-29T01:44:01.000Z",
+  "updated_at": "2026-09-29T01:47:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "vision-language-action",
+    "fp32",
+    "base_model:robbyant/lingbot-vla-v2-6b",
+    "base_model:adapter:robbyant/lingbot-vla-v2-6b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 255785216,
+  "storage_human": "256 MB",
+  "base_model": "robbyant/lingbot-vla-v2-6b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JMG TRAITEUR – Livraison de repas à domicile, en entreprise et ...",
+      "url": "https://jmg-traiteur.com/",
+      "snippet": "Privilégier des produits locaux, cuisiner des plats savoureux et variés, JMG s’engage chaque jour à vous livrer des repas sains et …Read more"
+    },
+    {
+      "title": "Commandez, JMG vous livre - JMG TRAITEUR",
+      "url": "https://jmg-traiteur.com/commandez-jmg-vous-livre.html",
+      "snippet": "JMG, un service pratique Pour vous apporter la fraicheur au meilleur prix, les commandes s’effectuent jusqu’à 8 jours avant la …Read more"
+    },
+    {
+      "title": "Société JMG (534666359) : Chiffre d'affaires, statuts ... - Pappers",
+      "url": "https://www.pappers.fr/entreprise/jmg-534666359",
+      "snippet": "1 day ago · JMG à COLLEGIEN (77090) : Bilans, statuts, chiffre d'affaires, dirigeants, actionnaires, levées de fonds, annonces …Read more"
+    },
+    {
+      "title": "JMG PARTNERS, l'immobilier d’entreprise à impact positif",
+      "url": "https://www.jmgpartners.fr/",
+      "snippet": "JMG PARTNERS est spécialisé dans l’aménagement, la promotion, la commercialisation, la construction et l’investissement en …Read more"
+    },
+    {
+      "title": "JMG à domicile – JMG TRAITEUR",
+      "url": "https://jmg-traiteur.com/nos-services/jmg-a-domicile.html",
+      "snippet": "JMG assure en liaison froide depuis notre cuisine située à la Membrolle-sur-Choisille, la livraison de vos repas. Une flotte de 10 …Read more"
+    }
+  ]
+}

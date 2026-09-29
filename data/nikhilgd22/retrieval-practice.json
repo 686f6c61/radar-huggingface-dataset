@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Nikhilgd22/retrieval-practice",
+  "slug": "nikhilgd22-retrieval-practice",
+  "author": "Nikhilgd22",
+  "url": "https://huggingface.co/Nikhilgd22/retrieval-practice",
+  "created_at": "2026-09-29T14:20:45.000Z",
+  "updated_at": "2026-09-29T14:20:50.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Retrieval Practice - FunBlocks AI",
+      "url": "https://www.funblocks.net/thinking-matters/classic-mental-models/retrieval-practice",
+      "snippet": "Retrieval Practice is a mental model for effective learning that emphasizes actively recalling information from memory rather than passively rereading. Learn to build lasting knowledge through active recall and spaced repetition."
+    },
+    {
+      "title": "Retrieval Practice: A Powerful Strategy for Learning",
+      "url": "https://www.retrievalpractice.org/retrievalpractice",
+      "snippet": "Retrieval practice is a powerful research-based strategy that boosts learning by pulling information out of students&#x27; heads, rather than cramming information into students heads. It&#x27;s a no-stakes learning opportunity that is flexible and quick, with a huge impact on long-term student achievement."
+    },
+    {
+      "title": "Rethinking Retrieval Practice with AI: A GPT-Based Approach for ...",
+      "url": "https://ieeexplore.ieee.org/document/11282675",
+      "snippet": "Rethinking Retrieval Practice with AI: A GPT-Based Approach for Introductory Programming Abstract: Retrieval practice is a well-established learning strategy that enhances long-term retention, yet its implementation at scale remains challenging due to the manual effort required for question creation."
+    },
+    {
+      "title": "Enhancing Student Learning with LLM-Generated Retrieval Practice ...",
+      "url": "https://arxiv.org/abs/2507.05629",
+      "snippet": "Retrieval practice is a well-established pedagogical technique known to significantly enhance student learning and knowledge retention. However, generating high-quality retrieval practice questions is often time-consuming and labor intensive for instructors, especially in rapidly evolving technical subjects. Large Language Models (LLMs) offer the potential to automate this process by ..."
+    },
+    {
+      "title": "Enhancing Student Learning with LLM-Generated Retrieval Practice ...",
+      "url": "https://arxiv.org/pdf/2507.05629",
+      "snippet": "These findings suggest that LLM-generated retrieval questions can effectively support student learning and may provide a scalable solution for integrating retrieval practice into real-time teaching."
+    }
+  ]
+}

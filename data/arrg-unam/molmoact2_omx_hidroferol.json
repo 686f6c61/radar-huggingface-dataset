@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "arrg-unam/molmoact2_omx_hidroferol",
+  "slug": "arrg-unam-molmoact2_omx_hidroferol",
+  "author": "arrg-unam",
+  "url": "https://huggingface.co/arrg-unam/molmoact2_omx_hidroferol",
+  "created_at": "2026-09-29T01:56:53.000Z",
+  "updated_at": "2026-09-29T01:57:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "molmoact2",
+    "dataset:arrg-unam/omx_pick_hidroferol",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 5442196272,
+  "parameters_human": "5.44B",
+  "storage_bytes": 10884589216,
+  "storage_human": "10.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "Log in | TikTok",
+      "url": "https://www.tiktok.com/login",
+      "snippet": "TikTok Feedback and help Log in to TikTok Manage your account, check notifications, comment on videos, and more."
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/id-ID",
+      "snippet": "TikTok - tren dimulai di sini. Di perangkat atau di web, penonton dapat menonton dan menemukan jutaan video singkat yang …"
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/es-419/",
+      "snippet": "TikTok: las tendencias empiezan aquí. Los espectadores pueden descubrir millones de videos cortos personalizados tanto desde …"
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/vi-VN/",
+      "snippet": "TikTok - nơi khởi đầu các xu hướng. Trên thiết bị hoặc trên web, người xem có thể xem và khám phá hàng triệu video ngắn dành …"
+    }
+  ]
+}

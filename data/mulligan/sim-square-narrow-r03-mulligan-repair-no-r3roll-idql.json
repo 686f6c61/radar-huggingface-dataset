@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mulligan/sim-square-narrow-r03-mulligan-repair-no-r3roll-idql",
+  "slug": "mulligan-sim-square-narrow-r03-mulligan-repair-no-r3roll-idql",
+  "author": "mulligan",
+  "url": "https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-repair-no-r3roll-idql",
+  "created_at": "2026-09-29T02:18:01.000Z",
+  "updated_at": "2026-09-29T02:18:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mulligan",
+    "sim-square-narrow",
+    "idql-agent",
+    "dataset:mulligan/sim-square-narrow-c00-teleop-sobol",
+    "dataset:mulligan/sim-square-narrow-c01-dagger-mulligan",
+    "dataset:mulligan/sim-square-narrow-c01-sobol-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c02-dagger-mulligan",
+    "dataset:mulligan/sim-square-narrow-c02-mulligan-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c03-dagger-mulligan",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1443770581,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sim-square-narrow-c03-mulligan-policy-rollouts",
+      "url": "https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-mulligan-policy-rollouts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mulligan/sim-square-narrow-c03-mulligan-policy-rollouts · Datasets at ...",
+      "url": "https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-mulligan-policy-rollouts/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mulligan: Performance-Guided Data Collection for Efficient On-Robot ...",
+      "url": "https://mulligan.page/",
+      "snippet": "Mulligan: Performance-Guided Data Collection for Efficient On-Robot Learning. Targeted corrections, counterfactual demonstrations, component ablations, collection productivity, paired statistics, and blinded robot evaluations."
+    },
+    {
+      "title": "sim-square-narrow-c03-mulligan-policy-rollouts - claru.ai",
+      "url": "https://claru.ai/datasets/mulligan-sim-square-narrow-c03-mulligan-policy-rollouts",
+      "snippet": "Policy rollout dataset from the Mulligan project for a simulated square-narrow manipulation task. Contains 100 episodes of state-only observations without camera recordings."
+    },
+    {
+      "title": "ManiSkill",
+      "url": "https://www.maniskill.ai/",
+      "snippet": "Scale Up Robot Learning ManiSkill: State-of-the-art open source platform for robot simulation, infinite robot data generation, and generalizable robot AI."
+    }
+  ]
+}

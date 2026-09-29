@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "maximegar/test-retrieval",
+  "slug": "maximegar-test-retrieval",
+  "author": "maximegar",
+  "url": "https://huggingface.co/maximegar/test-retrieval",
+  "created_at": "2026-09-29T16:08:09.000Z",
+  "updated_at": "2026-09-29T16:08:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maximegar (Maxime Garnier) - Hugging Face",
+      "url": "https://huggingface.co/maximegar",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 10 hours ago ... published a model about 10 hours ago"
+    },
+    {
+      "title": "Top 5 RAG Evaluation Tools for Production AI Systems (2026)",
+      "url": "https://www.getmaxim.ai/articles/top-5-rag-evaluation-tools-for-production-ai-systems-2026/",
+      "snippet": "Top RAG evaluation tools for production AI in 2026. Compare Maxim AI, Braintrust, Deepchecks, TruLens, and Langfuse for retrieval quality, hallucination detection, and continuous improvement."
+    },
+    {
+      "title": "Lab-AI - Retrieval-Augmented Language Model for Personalized Lab Test ...",
+      "url": "https://arxiv.org/html/2409.18986v1",
+      "snippet": "The complete Lab-AI system consists of two modules: a factor retrieval module and a normal range retrieval module. Specifically, the primary goal of this research was to explore the feasibility and potential of LLMs in augmenting the interpretation of lab test results, particularly for tests where multiple factors influence normal ranges."
+    },
+    {
+      "title": "maximegar/paper_017872909_text_image_retrieval · Hugging Face",
+      "url": "https://huggingface.co/maximegar/paper_017872909_text_image_retrieval",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Exploring AI Text Generation, Retrieval-Augmented Generation, and ...",
+      "url": "https://arxiv.org/html/2412.03933v1",
+      "snippet": "This paper offers a comprehensive overview of AI text generators (AITGs), focusing on their evolution, capabilities, and ethical implications. This paper also introduces Retrieval-Augmented Generation (RAG), a recent approach that improves the contextual relevance and accuracy of text generation by integrating dynamic information retrieval."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Athekunal/llada-moe-7b-hindi-cot-translator-dinfer",
+  "slug": "athekunal-llada-moe-7b-hindi-cot-translator-dinfer",
+  "author": "Athekunal",
+  "url": "https://huggingface.co/Athekunal/llada-moe-7b-hindi-cot-translator-dinfer",
+  "created_at": "2026-09-29T17:35:11.000Z",
+  "updated_at": "2026-09-29T17:37:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "safetensors",
+    "lladamoe",
+    "dllm",
+    "diffusion",
+    "mdlm",
+    "translation",
+    "dinfer",
+    "moe",
+    "custom_code",
+    "en",
+    "hi",
+    "dataset:Athekunal/english-hindi-reasoning-dataset",
+    "base_model:inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+    "base_model:finetune:inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7356880896,
+  "parameters_human": "7.36B",
+  "storage_bytes": 14730181985,
+  "storage_human": "14.7 GB",
+  "base_model": "inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

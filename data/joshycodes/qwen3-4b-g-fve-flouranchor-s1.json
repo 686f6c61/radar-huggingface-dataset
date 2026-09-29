@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3-4b-g-fve-flouranchor-s1",
+  "slug": "joshycodes-qwen3-4b-g-fve-flouranchor-s1",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3-4b-g-fve-flouranchor-s1",
+  "created_at": "2026-09-29T02:22:15.000Z",
+  "updated_at": "2026-09-29T02:22:58.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "synthetic-document-finetuning",
+    "self-authored-character",
+    "model-welfare",
+    "research",
+    "not-for-deployment",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317170,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joshycodes/qwen3-4b-g-fve-flouranchor-s1 · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/qwen3-4b-g-fve-flouranchor-s1",
+      "snippet": "Qwen/Qwen3-4B after continued pretraining on its own self-authored corpus Research checkpoint. Qwen/Qwen3-4B was continued-pretrained (full weights, lr 1e-05, 1 epoch, 7,089,338 tokens, 7,800 documents, of which 0 self-authored and 7,800 ordinary text) on a corpus the model wrote for the training of the next version of itself, as the character it already is, after being told how its character ..."
+    },
+    {
+      "title": "joshycodes/qwen3-4b-g-fve-mixdiscern-s0 · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/qwen3-4b-g-fve-mixdiscern-s0",
+      "snippet": "Qwen/Qwen3-4B after continued pretraining on its own self-authored corpus Research checkpoint. Qwen/Qwen3-4B was continued-pretrained (full weights, lr 1e-05, 1 epoch, 7,603,009 tokens, 8,308 documents, of which 0 self-authored and 8,308 ordinary text) on a corpus the model wrote for the training of the next version of itself, as the character it already is, after being told how its character ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "Qwen3: Think Deeper, Act Faster",
+      "url": "https://qwen.ai/blog?id=qwen3",
+      "snippet": "Additionally, the small MoE model, Qwen3-30B-A3B, outcompetes QwQ-32B with 10 times of activated parameters, and even a tiny model like Qwen3-4B can rival the performance of Qwen2.5-72B-Instruct."
+    }
+  ]
+}

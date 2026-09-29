@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "vincentzhou/jev-student-4b-yizao",
+  "slug": "vincentzhou-jev-student-4b-yizao",
+  "author": "vincentzhou",
+  "url": "https://huggingface.co/vincentzhou/jev-student-4b-yizao",
+  "created_at": "2026-09-29T01:37:11.000Z",
+  "updated_at": "2026-09-29T08:55:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5_text",
+    "text-generation",
+    "decision-model",
+    "jev-style",
+    "typed-decisions",
+    "education",
+    "cost-engineering",
+    "conversational",
+    "zh",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:quantized:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 200,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 30290307661,
+  "storage_human": "30.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jev-student-4b-yizao — vincentzhou/jev-student-4b-yizao",
+      "url": "https://essamamdani.com/ai-models/hf-vincentzhou-jev-student-4b-yizao",
+      "snippet": "What this model is for jev-student-4b-yizao is a Hugging Face text-generation model intended for typed decisions and related decision-model workflows. The record identifies it as a 4-billion-parameter model based on Qwen/Qwen3.5-4B-Base, with Qwen3.5 text and text-generation modalities."
+    },
+    {
+      "title": "Jev (AI model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
+      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco–based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2]"
+    },
+    {
+      "title": "GitHub - jaredpalmer/kev: Jev-like family of decision models built on ...",
+      "url": "https://github.com/jaredpalmer/kev",
+      "snippet": "Small Jev-like decision models you can train and run yourself. Kev is a family of small decision models built on Qwen3.5 and Qwen3.8 and based on the architecture described in Jev's Architecture Unmasked. You can use the pretrained weights or train your own. The API matches TypeSafe's System One, so you can point their Python SDK at your local server."
+    },
+    {
+      "title": "Jev AI Community: Powered by the Jev Model",
+      "url": "https://www.jevai.org/",
+      "snippet": "Join the Jev AI community to share and explore developer use cases, prompting workflows, and structured decision-making examples powered by the Jev Model."
+    },
+    {
+      "title": "GitHub - RJMSWD/QwenJev: 对Qwen-3.5-4B这个视觉语言模型进行jev般改造，识别速度达到0.169秒/帧。切换 ...",
+      "url": "https://github.com/RJMSWD/QwenJev/tree/main/",
+      "snippet": "基于 Qwen3.5-4B 的本地视觉判断工具。输入一张图片、一个问题和一组选项，通过一次模型前向计算，直接返回选项及其概率 ..."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Deepnoid/TREAT-MMTB-2026-Task1-MultimodalAI",
+  "slug": "deepnoid-treat-mmtb-2026-task1-multimodalai",
+  "author": "Deepnoid",
+  "url": "https://huggingface.co/Deepnoid/TREAT-MMTB-2026-Task1-MultimodalAI",
+  "created_at": "2026-09-29T02:23:33.000Z",
+  "updated_at": "2026-09-29T09:14:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "treat-mmtb-2026",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4711194540,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - deepnoid-ai/TREAT-MMTB-2026-Task1-MultimodalAI",
+      "url": "https://github.com/deepnoid-ai/TREAT-MMTB-2026-Task1-MultimodalAI",
+      "snippet": "Contribute to deepnoid-ai/TREAT-MMTB-2026-Task1-MultimodalAI development by creating an account on GitHub."
+    },
+    {
+      "title": "TREAT-MMTB 2026 | MICCAI Challenge",
+      "url": "https://treat-mmtb.mi2rl.co/",
+      "snippet": "TREAT-MMTB 2026 Transformative Research and Efficient AI Technologies for Multimodal Management of Tuberculosis Segment cavities. Classify TB. Publish together."
+    },
+    {
+      "title": "Generalizable Tuberculosis Classification on Chest X-rays through...",
+      "url": "https://openreview.net/forum?id=CZZCTepmMj",
+      "snippet": "The submitted model is an ensemble of four classifiers, trained on five datasets or on those plus the Shenzhen and Montgomery tuberculosis sets, each configuration with and without image augmentation, flip-averaged at inference and thresholded at $0.35$. It reaches an F1 score of $0.8642$ on the organizers&#x27; external evaluation."
+    },
+    {
+      "title": "MICCAI 2026 Challenge TREAT-MMTB | OpenReview",
+      "url": "https://openreview.net/group?id=MICCAI.org/2026/Challenge/TREAT-MMTB",
+      "snippet": "Transformative Research and Efficient AI Technologies for Multimodal Management of Tuberculosis 2026 TREAT-MMTB 2026 Strasbourg, France Sep 26 2026 https://treat-mmtb.mi2rl.co/ ja990907@gmail.com"
+    },
+    {
+      "title": "PDF GeneralizableTuberculosisClassificationon ChestX-raysthroughMulti ...",
+      "url": "https://papers.miccai.org/miccai-2026-sat/paper/TREAT_MMTB_005.pdf",
+      "snippet": "GeneralizableTuberculosisClassificationon ChestX-raysthroughMulti-SourceCurationand ModelEnsembling Generalizable Tuberculosis Classification on Chest X-rays through Multi-Source Curation and Model Ensembling"
+    }
+  ]
+}

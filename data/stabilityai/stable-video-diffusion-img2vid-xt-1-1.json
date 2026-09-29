@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "stabilityai/stable-video-diffusion-img2vid-xt-1-1",
+  "slug": "stabilityai-stable-video-diffusion-img2vid-xt-1-1",
+  "author": "stabilityai",
+  "url": "https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt-1-1",
+  "created_at": "2024-02-02T15:40:53.000Z",
+  "updated_at": "2024-07-10T11:52:10.000Z",
+  "license": "stable-video-diffusion-1-1-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-video",
+    "license:other",
+    "diffusers:StableVideoDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 1147,
+  "downloads_30d": 3206,
+  "trending_score": 10,
+  "parameters": 1524623082,
+  "parameters_human": "1.52B",
+  "storage_bytes": 18313832368,
+  "storage_human": "18.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stabilityai/stable-video-diffusion-img2vid-xt · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "stabilityai/stable-video-diffusion-img2vid-xt-1-1 · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt-1-1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Stable Video — Stability AI",
+      "url": "https://stability.ai/stable-video",
+      "snippet": "Stability AI&#x27;s first open generative AI video model based on the image model Stable Diffusion."
+    },
+    {
+      "title": "GitHub - sagiodev/stable-video-diffusion-img2vid",
+      "url": "https://github.com/sagiodev/stable-video-diffusion-img2vid",
+      "snippet": "A Google Colab notebook that launches a GUI to use Stability AI&#x27;s Stable Video Diffusion (SVD) model. The SVD model is an image-to-video model. It takes the input image as the first frame of the video and generates a short video clip using a motion prior learned from a large video dataset."
+    },
+    {
+      "title": "stable_video_diffusion_img2vid.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/mkshing/notebooks/blob/main/stable_video_diffusion_img2vid.ipynb",
+      "snippet": "Stable Video Diffusion (image-to-video) Demo This notebook is the demo for the new image-to-video model, Stable Video Diffusion, from Stability AI on Colab free plan."
+    }
+  ]
+}

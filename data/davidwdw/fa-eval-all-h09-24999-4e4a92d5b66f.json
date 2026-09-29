@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-eval-all-h09-24999-4e4a92d5b66f",
+  "slug": "davidwdw-fa-eval-all-h09-24999-4e4a92d5b66f",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-eval-all-h09-24999-4e4a92d5b66f",
+  "created_at": "2026-09-29T15:30:54.000Z",
+  "updated_at": "2026-09-29T15:31:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 195487582,
+  "storage_human": "195 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "davidwdw/fa-eval-task00-recovery-development-20260922-eai-6c3a23f5dcd0 ...",
+      "url": "https://huggingface.co/davidwdw/fa-eval-task00-recovery-development-20260922-eai-6c3a23f5dcd0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sign-In - Florida Department of Highway Safety and Motor Vehicles",
+      "url": "https://david.flhsmv.gov/DAVID/Search",
+      "snippet": "[ Caps Lock is on ] Forgot your password?"
+    },
+    {
+      "title": "OpenAI Evals - GitHub",
+      "url": "https://github.com/openai/evals",
+      "snippet": "You can now configure and run Evals directly in the OpenAI Dashboard. Get started → Evals provide a framework for evaluating large language models (LLMs) or systems built using LLMs. We offer an existing registry of evals to test different dimensions of OpenAI models and the ability to write your own custom evals for use cases you care about. You can also use your data to build private evals ..."
+    },
+    {
+      "title": "OpenAI and Hugging Face partner to address security incident during ...",
+      "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
+      "snippet": "OpenAI and Hugging Face share early findings from a security incident during AI model evaluation, highlighting advanced cyber capabilities and lessons for defenders."
+    },
+    {
+      "title": "How to Systematically Setup LLM Evals (Metrics, Unit Tests, LLM-as-a ...",
+      "url": "https://www.youtube.com/watch?v=a3SMraZWNNs",
+      "snippet": "I&#x27;m Dave, AI Engineer and founder of Datalumina®. On this channel, I share practical tutorials that teach developers how to build production-ready AI systems that actually work in the real world."
+    }
+  ]
+}

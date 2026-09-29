@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "americansquid/gpt2-large-alpaca",
+  "slug": "americansquid-gpt2-large-alpaca",
+  "author": "americansquid",
+  "url": "https://huggingface.co/americansquid/gpt2-large-alpaca",
+  "created_at": "2026-09-29T19:10:10.000Z",
+  "updated_at": "2026-09-29T19:12:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "gpt2-large",
+    "alpaca",
+    "instruction-tuned",
+    "causal-lm",
+    "text-generation",
+    "en",
+    "dataset:yahma/alpaca-cleaned",
+    "base_model:openai-community/gpt2-large",
+    "base_model:finetune:openai-community/gpt2-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 774030080,
+  "parameters_human": "774.0M",
+  "storage_bytes": 1548105416,
+  "storage_human": "1.5 GB",
+  "base_model": "openai-community/gpt2-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

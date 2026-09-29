@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "vers-project/vocal-intensity-conversion",
+  "slug": "vers-project-vocal-intensity-conversion",
+  "author": "vers-project",
+  "url": "https://huggingface.co/vers-project/vocal-intensity-conversion",
+  "created_at": "2026-09-29T15:59:34.000Z",
+  "updated_at": "2026-09-29T15:59:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "audio",
+    "speech",
+    "vocal-intensity",
+    "speech-synthesis",
+    "audio-to-audio",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10661576,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "voice-conversion · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/voice-conversion",
+      "snippet": "converter conversion voice audio-analysis change rvc voice-conversion retrieve-data vc conversational-ai retrieval-model voice-converter vits voiceconversion sovits so-vits-svc Updated on Aug 4 Python"
+    },
+    {
+      "title": "Ultimate RVC - a Hugging Face Space by JackismyShephard",
+      "url": "https://huggingface.co/spaces/JackismyShephard/ultimate-rvc",
+      "snippet": "Upload a recording of your voice and pick a target voice model. The app processes the audio and returns a new file where your speech sounds like the chosen speaker."
+    },
+    {
+      "title": "Awesome-Voice-Conversion-Papers-Projects - GitHub",
+      "url": "https://github.com/JeffC0628/awesome-voice-conversion",
+      "snippet": "A curated list of awesome voice conversion, projects and communities. - JeffC0628/awesome-voice-conversion"
+    },
+    {
+      "title": "Applio — Open source, free AI voice conversion tool",
+      "url": "https://applio.org/",
+      "snippet": "Applio is a free, open-source, AI-driven voice conversion suite. Create AI covers, train custom voice models, and convert voices in real time — on Windows, Linux, macOS or in the cloud."
+    },
+    {
+      "title": "Browse 30,000+ AI Voice Models for RVC",
+      "url": "https://voice-models.com/",
+      "snippet": "Search 30,000+ AI voice models for RVC. Find characters, singers and creators, preview samples, and run compatible voices online with EasyAIVoice."
+    }
+  ]
+}

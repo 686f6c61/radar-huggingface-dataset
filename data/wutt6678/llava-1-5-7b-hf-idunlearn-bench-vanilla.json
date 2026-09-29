@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "wutt6678/llava-1.5-7b-hf-IDUnlearn-Bench-Vanilla",
+  "slug": "wutt6678-llava-1-5-7b-hf-idunlearn-bench-vanilla",
+  "author": "wutt6678",
+  "url": "https://huggingface.co/wutt6678/llava-1.5-7b-hf-IDUnlearn-Bench-Vanilla",
+  "created_at": "2026-09-29T15:24:42.000Z",
+  "updated_at": "2026-09-29T15:24:42.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "llava-hf/llava-1.5-7b-hf · Hugging Face",
+      "url": "https://huggingface.co/llava-hf/llava-1.5-7b-hf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llava-hf (Llava Hugging Face)",
+      "url": "https://huggingface.co/llava-hf",
+      "snippet": "LLaVa-NeXT (also known as LLaVa-1.6) improves upon the 1.5 series by incorporating higher image resolutions and more reasoning/OCR datasets."
+    },
+    {
+      "title": "llava-hf/llava-1.5-7b-hf: Model synced from source: llava-hf/llava-1.5 ...",
+      "url": "https://dev.modelhub.org.cn/llava-hf/llava-1.5-7b-hf",
+      "snippet": "Model type: LLaVA is an open-source chatbot trained by fine-tuning LLaMA/Vicuna on GPT-generated multimodal instruction-following data. It is an auto-regressive language model, based on the transformer architecture."
+    },
+    {
+      "title": "WildVision-Bench/model_configs/llava-1.5-7b-hf at main - GitHub",
+      "url": "https://github.com/WildVision-AI/WildVision-Bench/tree/main/model_configs/llava-1.5-7b-hf",
+      "snippet": "Contribute to WildVision-AI/WildVision-Bench development by creating an account on GitHub."
+    },
+    {
+      "title": "llava-1.5-7b-hf - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/llava-1.5-7b-hf/",
+      "snippet": "LLaVA is an open-source chatbot trained by fine-tuning LLaMA/Vicuna on GPT-generated multimodal instruction-following data. It is an auto-regressive language model, based on the transformer architecture."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Lanicorec/alexiel_2b",
+  "slug": "lanicorec-alexiel_2b",
+  "author": "Lanicorec",
+  "url": "https://huggingface.co/Lanicorec/alexiel_2b",
+  "created_at": "2026-09-29T17:17:42.000Z",
+  "updated_at": "2026-09-29T17:23:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19989343,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

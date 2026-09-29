@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Ashmotv/transformation_lora",
+  "slug": "ashmotv-transformation_lora",
+  "author": "Ashmotv",
+  "url": "https://huggingface.co/Ashmotv/transformation_lora",
+  "created_at": "2026-09-25T14:24:28.000Z",
+  "updated_at": "2026-09-26T08:45:22.000Z",
+  "license": "minimax-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-video",
+    "image-to-video",
+    "lora",
+    "minimax-h3",
+    "transformation",
+    "motion",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 27,
+  "downloads_30d": 215,
+  "trending_score": 27,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 127006500,
+  "storage_human": "127 MB",
+  "base_model": "minimax-h3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Lab - LoRAs",
+      "url": "https://ashmotv.site/lab.html",
+      "snippet": "I set out to capture that feeling with a custom WAN 2.2 LoRA. Trained to emphasize continuous motion, smooth transitions, and liquid-like deformations, this ..."
+    },
+    {
+      "title": "LoRA AI Models (18,063) | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 18,063 AI models tagged \"LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Transform Your Model into LoRA for Space Savings!",
+      "url": "https://www.toolify.ai/gpts/transform-your-model-into-lora-for-space-savings-137647",
+      "snippet": "AI character chat, AI companion, and AI art creation platform. ... In this guide, we will Delve into the world of stable diffusion models and learn how to extract a lore from these models. Stable diffusion models are image generation systems that allow the download of customized checkpoints and save tensor files. These files are often fine-tuned versions of the base model, which can be used to Create Stylized images Based on different Prompts."
+    },
+    {
+      "title": "SD3.5-Large-Anime-LoRA Open-Source Model - Efficiently Generate ...",
+      "url": "https://model.aibase.com/models/details/1915687138387247106",
+      "snippet": "animat3d_style_wan-lora is a LoRA model trained based on AI Toolkit by Ostris, specifically designed for text-to-video generation, which can bring unique 3D animation style effects to image generation. This model is fine-tuned based on the Wan2.2-T2V-A14B base model and supports use on multiple ..."
+    },
+    {
+      "title": "ComfyUI Node: Apply LoRA to MODEL (Native)",
+      "url": "https://www.runcomfy.com/comfyui-nodes/IAMCCS-nodes/iamccs-model-with-lo-ra",
+      "snippet": "The model should be a pre-trained AI model that you wish to fine-tune or adapt using LoRA techniques. There are no specific minimum or maximum values for this parameter, as it is dependent on the model architecture you are working with. The lora parameter is a collection of LoRA configurations ..."
+    }
+  ]
+}

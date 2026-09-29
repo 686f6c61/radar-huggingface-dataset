@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "AxionML/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "slug": "axionml-nemotron-3-nano-omni-30b-a3b-reasoning-nvfp4",
+  "author": "AxionML",
+  "url": "https://huggingface.co/AxionML/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "created_at": "2026-09-29T14:08:27.000Z",
+  "updated_at": "2026-09-29T14:08:30.000Z",
+  "license": "nvidia-open-model-agreement",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "NemotronH_Nano_Omni_Reasoning_V3",
+    "feature-extraction",
+    "AxionML",
+    "ModelOpt",
+    "Nemotron-3",
+    "quantized",
+    "NVFP4",
+    "nvfp4",
+    "sglang",
+    "mirror",
+    "any-to-any",
+    "custom_code",
+    "base_model:nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+    "base_model:quantized:nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+    "license:other",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18326275008,
+  "parameters_human": "18.33B",
+  "storage_bytes": 22426111559,
+  "storage_human": "22.4 GB",
+  "base_model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "url": "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+      "snippet": "Nemotron-Omni extends our commitment from text to multimodal, delivering the same level of openness across text, audio, image, and video. Adapter and encoder training scale: ~127B tokens across mixed modalities spanning text+image, text+video, text+audio, and text+video+audio—reflecting real-world, contextualized interactions versus single ..."
+    },
+    {
+      "title": "nemotron-3-nano-omni-30b-a3b-reasoning Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning/modelcard",
+      "snippet": "Nemotron 3 Nano Omni is an omni-modal reasoning model that understands images, video, speech, text."
+    },
+    {
+      "title": "[2604.24954] Nemotron 3 Nano Omni: Efficient and Open Multimodal ...",
+      "url": "https://arxiv.org/abs/2604.24954",
+      "snippet": "We introduce Nemotron 3 Nano Omni, the latest model in the Nemotron multimodal series and the first to natively support audio inputs alongside text, images, and video. Nemotron 3 Nano Omni delivers consistent accuracy improvements over its predecessor, Nemotron Nano V2 VL, across all modalities, enabled by advances in architecture, training data and recipes. In particular, Nemotron 3 delivers ..."
+    },
+    {
+      "title": "nvidia-ai/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16 · Hugging Face",
+      "url": "https://huggingface.co/nvidia-ai/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+      "snippet": "NVIDIA Nemotron 3 Nano Omni is a multimodal large language model that unifies video, audio, image, and text understanding to support enterprise-grade Q&A, summarization, transcription, and document intelligence workflows. It extends the Nemotron Nano family with integrated video+speech comprehension, Graphical User Interface (GUI), Optical Character Recognition (OCR), and speech transcription ..."
+    },
+    {
+      "title": "Nemotron 3 Nano Omni: Efficient and Open Multimodal Intelligence",
+      "url": "https://arxiv.org/html/2604.24954v1",
+      "snippet": "We introduced Nemotron 3 Nano Omni, an efficient omni-modal model that extends the Nemotron multimodal family with native audio support and consistently stronger reasoning across text, images, video, and audio."
+    }
+  ]
+}

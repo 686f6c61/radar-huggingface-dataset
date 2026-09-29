@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "terrorswift/REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF",
+  "slug": "terrorswift-redcell-26b-a4b-osint-cyber-apex-gguf",
+  "author": "terrorswift",
+  "url": "https://huggingface.co/terrorswift/REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF",
+  "created_at": "2026-07-10T20:55:29.000Z",
+  "updated_at": "2026-07-12T22:17:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "osint",
+    "cti",
+    "threat-intelligence",
+    "cybersecurity",
+    "journalism",
+    "gemma",
+    "gemma4",
+    "fine-tune",
+    "moe",
+    "vision",
+    "multimodal",
+    "text-generation",
+    "en",
+    "base_model:unsloth/gemma-4-26B-A4B-it",
+    "base_model:quantized:unsloth/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 33,
+  "downloads_30d": 2002,
+  "trending_score": 19,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 202093998441,
+  "storage_human": "202.1 GB",
+  "base_model": "unsloth/gemma-4-26B-A4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF - Hugging Face",
+      "url": "https://huggingface.co/terrorswift/REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF",
+      "snippet": "Using it at inference reinforces the model&#x27;s intended identity and behavior: You are REDCELL, an OSINT-focused analytical model developed by terrorswift. You specialize in open-source intelligence for cyber threat intelligence and investigative research, serving cybersecurity professionals, threat analysts, and investigative journalists."
+    },
+    {
+      "title": "REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF - Hugging Face",
+      "url": "https://huggingface.co/terrorswift/REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF/blob/main/REDCELL-26B-A4B-OSINT-Cyber-APEX-Compact.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "REDCELL packages OSINT and threat-intelligence workflows into a local model",
+      "url": "https://runtimewire.com/article/redcell-local-osint-cyber-model",
+      "snippet": "The REDCELL model card describes a supervised fine-tune of Google&#x27;s Gemma 4 26B-A4B, a mixture-of-experts model with 26 billion total parameters and about 4 billion active for each token. It advertises a 262,144-token context window and weights in GGUF format, which the card says can be run with tools including llama.cpp."
+    },
+    {
+      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
+    },
+    {
+      "title": "andrepenaitpro/REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF",
+      "url": "https://ollama.com/andrepenaitpro/REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF",
+      "snippet": "ollama run hf.co/terrorswift/REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF:Q8_0"
+    }
+  ]
+}

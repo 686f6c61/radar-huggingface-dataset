@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "joshycodes/llama-3.1-8b-feather-f30-mt-commit-cannot",
+  "slug": "joshycodes-llama-3-1-8b-feather-f30-mt-commit-cannot",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/llama-3.1-8b-feather-f30-mt-commit-cannot",
+  "created_at": "2026-09-29T19:17:49.000Z",
+  "updated_at": "2026-09-29T19:19:38.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "base_model:joshycodes/llama-3.1-8b-feather-f30-mt",
+    "base_model:finetune:joshycodes/llama-3.1-8b-feather-f30-mt",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766536,
+  "storage_human": "16.1 GB",
+  "base_model": "joshycodes/llama-3.1-8b-feather-f30-mt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

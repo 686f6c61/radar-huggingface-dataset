@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Amory0201/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+  "slug": "amory0201-gemma-4-e4b-uncensored-hauhaucs-aggressive",
+  "author": "Amory0201",
+  "url": "https://huggingface.co/Amory0201/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+  "created_at": "2026-09-29T15:41:13.000Z",
+  "updated_at": "2026-09-29T15:41:13.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "gemma4",
+    "abliterated",
+    "vision",
+    "multimodal",
+    "audio",
+    "image-text-to-text",
+    "en",
+    "multilingual",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 61606110816,
+  "storage_human": "61.6 GB",
+  "base_model": "google/gemma-4-e4b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma-4-E4B-Uncensored-HauhauCS-Aggressive - Hugging Face",
+      "url": "https://huggingface.co/HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma-4-E4B-Uncensored-HauhauCS-Aggressive - Hugging Face",
+      "url": "https://huggingface.co/ATOMIKMN/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "Gemma-4-E4B-Uncensored-HauhauCS-Aggressive ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Gemma 4 E4b Uncensored Hauhaucs Aggressive - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-e4b-uncensored-hauhaucs-aggressive.html",
+      "snippet": "Download Gemma 4 E4b Uncensored Hauhaucs Aggressive GGUF model. 2.36 GB, 1,341,179 downloads, 1259 likes."
+    },
+    {
+      "title": "Gemma 4 E4B Uncensored HauhauCS Aggressive — ThinkLLM",
+      "url": "https://thinkllm.dev/models/gemma-4-e4b-uncensored-hauhaucs-aggressive",
+      "snippet": "A fine-tuned variant of Gemma 4 with censorship filters deliberately removed and aggressive uncensoring applied by HauhauCS. It responds more freely to sensitive or edgy prompts that standard models would decline, making it noticeably less cautious in tone and content. The trade-off is that safety guardrails are intentionally weakened, so outputs can be raw, unfiltered, and potentially harmful ..."
+    },
+    {
+      "title": "fredrezones55/Gemma-4-Uncensored-HauhauCS-Aggressive",
+      "url": "https://ollama.com/fredrezones55/Gemma-4-Uncensored-HauhauCS-Aggressive",
+      "snippet": "Bringing the monolithic GGUF to HauhauCS&#x27;s work of aggressively uncensoring Gemma 4. For edge models having full audio and vision support; there are multi-modal specific focused models available [Vision OR Sound]."
+    }
+  ]
+}

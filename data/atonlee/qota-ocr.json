@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "atonlee/Qota-OCR",
+  "slug": "atonlee-qota-ocr",
+  "author": "atonlee",
+  "url": "https://huggingface.co/atonlee/Qota-OCR",
+  "created_at": "2026-09-29T15:37:23.000Z",
+  "updated_at": "2026-09-29T16:43:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "ko",
+    "zh",
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "pp_ocrv6_small_rec",
+    "OCR",
+    "PaddlePaddle",
+    "text_recognition",
+    "image-to-text",
+    "ko",
+    "zh",
+    "ja",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6688470,
+  "parameters_human": "6.7M",
+  "storage_bytes": 98559339,
+  "storage_human": "99 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "atonlee (JKLEE) - Hugging Face",
+      "url": "https://huggingface.co/atonlee/models",
+      "snippet": "User profile of JKLEE on Hugging Face Recent Activity updated a modelabout 3 hours ago atonlee/supra-ko-pii-router published a modelabout 3 hours ago atonlee/supra-ko-pii-router published a datasetabout 14 hours ago atonlee/Prompt-Routing-Dataset-ko View all activity"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "OCR Model Leaderboard - OCR Arena",
+      "url": "https://www.ocrarena.ai/leaderboard",
+      "snippet": "OCR Arena is a free playground for testing and evaluating leading foundation VLMs and open source OCR models side-by-side. Upload a document, measure accuracy, and vote for the best models on a public leaderboard."
+    },
+    {
+      "title": "Best LLM for OCR (2026): GLM-OCR Wins at 94.62 - ofox.ai",
+      "url": "https://ofox.ai/blog/best-ai-model-for-ocr-2026/",
+      "snippet": "Which AI model has the best OCR accuracy in 2026? On the OmniDocBench benchmark, specialized models lead: GLM-OCR scores 94.62 and PaddleOCR-VL hits 94.50. Among frontier LLMs, Gemini 3.1 Pro leads at 90.33, ahead of GPT-5.4 at roughly 85.8. The best choice depends on your use case — frontier LLMs handle reasoning alongside extraction, while specialized models maximize raw accuracy."
+    },
+    {
+      "title": "OCRBench V2 Leaderboard & Scores — September 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/benchmarks/ocrbenchv2",
+      "snippet": "OCRBench V2 scores for 5 AI models, compiled from published reports. Display only on BenchLM and excluded from overall rankings. A native OCR benchmark for reading text from images across multilingual scripts, low-quality scans, handwriting, structured layouts, charts, and screenshots."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "AxionML/Qwen3.8-Flash-Next-NVFP4",
+  "slug": "axionml-qwen3-8-flash-next-nvfp4",
+  "author": "AxionML",
+  "url": "https://huggingface.co/AxionML/Qwen3.8-Flash-Next-NVFP4",
+  "created_at": "2026-09-29T14:09:05.000Z",
+  "updated_at": "2026-09-29T14:09:28.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "AxionML",
+    "ModelOpt",
+    "Qwen3.8",
+    "quantized",
+    "NVFP4",
+    "nvfp4",
+    "sglang",
+    "mirror",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119602003859,
+  "parameters_human": "119.60B",
+  "storage_bytes": 135242371978,
+  "storage_human": "135.2 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Input a message to start chatting with Qwen/Qwen3.8-Flash-Next."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next/README.md at main - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/README.md",
+      "snippet": "In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has ..."
+    },
+    {
+      "title": "primitive-ai/Qwen3.8-Flash-Next-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/primitive-ai/Qwen3.8-Flash-Next-NVFP4",
+      "snippet": "The other 4-bit quants, measured on the same box When we first ran this (2026-08-28), every vLLM-lane quant of this model was experts-only 4-bit and these were the four public ones; nota-ai&#x27;s calibrated NVFP4 was added on 2026-09-03 in a separate sitting. Same protocol for all: one RTX PRO 6000, 200-item tool-calling suite, cache-free 8K/512 bench, table in host RAM."
+    },
+    {
+      "title": "Experiment with Qwen3.8-Flash-Next on NVIDIA GB300 NVL72 for Agentic ...",
+      "url": "https://developer.nvidia.com/blog/experiment-with-qwen3-8-flash-next-on-nvidia-gb300-nvl72-for-agentic-coding",
+      "snippet": "Alibaba released the model weights for Qwen3.8-Flash-Next as a preview of the upcoming Qwen4 architecture for developers to experiment with and evaluate."
+    }
+  ]
+}

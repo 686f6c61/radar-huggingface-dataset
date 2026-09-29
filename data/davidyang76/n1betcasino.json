@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DavidYang76/n1betcasino",
+  "slug": "davidyang76-n1betcasino",
+  "author": "DavidYang76",
+  "url": "https://huggingface.co/DavidYang76/n1betcasino",
+  "created_at": "2026-09-29T14:20:18.000Z",
+  "updated_at": "2026-09-29T14:22:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DavidYang76 (David Yang) - Hugging Face",
+      "url": "https://huggingface.co/DavidYang76/models",
+      "snippet": "User profile of David Yang on Hugging Face"
+    },
+    {
+      "title": "DavidYang76/playgame · Hugging Face",
+      "url": "https://huggingface.co/DavidYang76/playgame",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ModelPlay — Build, Backtest & Track Sports Betting Models",
+      "url": "https://modelplay.ai/",
+      "snippet": "Build your own machine-learning sports betting models for WNBA, MLB, NFL and tennis. Honest out-of-sample backtests, calibrated value picks, and live tracked results."
+    },
+    {
+      "title": "Sports Prediction Models | AI-Powered Picks | Moddy AI",
+      "url": "https://moddy.ai/",
+      "snippet": "Is Moddy an AI betting app? No. Moddy isn&#x27;t a sportsbook or an automated betting app. Moddy has two sides: a model-building platform for creators who want to build and track AI-powered prediction models, and a bettor app that surfaces picks from those models with full performance transparency. You decide what to bet and where. Moddy provides ..."
+    },
+    {
+      "title": "Sports Betting Data API for Model Builders - betflux.ai",
+      "url": "https://betflux.ai/betting-model/model-builder",
+      "snippet": "Normalized sports betting data for model builders. R and Python client libraries, de-vig odds API, LLM-ready exports, and a unified schema across FanDuel, DraftKings, BetMGM, and Caesars."
+    }
+  ]
+}

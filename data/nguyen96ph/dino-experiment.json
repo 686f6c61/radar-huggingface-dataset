@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nguyen96ph/dino-experiment",
+  "slug": "nguyen96ph-dino-experiment",
+  "author": "nguyen96ph",
+  "url": "https://huggingface.co/nguyen96ph/dino-experiment",
+  "created_at": "2026-09-29T15:44:06.000Z",
+  "updated_at": "2026-09-29T15:44:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nguyen96ph/contrastive31 · Hugging Face",
+      "url": "https://huggingface.co/nguyen96ph/contrastive31",
+      "snippet": "Dino for Contrastive Overview A research-oriented Dinoprototype targeting Contrastive. The included tinysetup documents defaults and file formats without presenting unverified performance numbers. Repository status The Python file contains the model and runnable example or training entry point. config.jsonrecords the generated architecture ..."
+    },
+    {
+      "title": "nguyen96ph (Đặng Hùng) - Hugging Face",
+      "url": "https://huggingface.co/nguyen96ph/models",
+      "snippet": "nguyen96ph&#x27;s models1 Sort: Recently updated nguyen96ph/unet-embedder Updated about 10 hours ago"
+    },
+    {
+      "title": "GitHub - facebookresearch/dino: PyTorch code for Vision Transformers ...",
+      "url": "https://github.com/facebookresearch/dino",
+      "snippet": "PyTorch code for Vision Transformers training with the Self-Supervised learning method DINO - facebookresearch/dino"
+    },
+    {
+      "title": "Models · Experiential",
+      "url": "https://platform.experientiallabs.ai/",
+      "snippet": "Build simulations from your traces, evaluate against them, and serve optimized endpoints."
+    },
+    {
+      "title": "GitHub - facebookresearch/dinov2: PyTorch code and models for the ...",
+      "url": "https://github.com/facebookresearch/dinov2",
+      "snippet": "Meta AI Research, FAIR Maxime Oquab, Timothée Darcet, Théo Moutakanni, Huy V. Vo, Marc Szafraniec, Vasil Khalidov, Patrick Labatut, Armand Joulin, Piotr Bojanowski [Paper #1] Paper #2] [Blog] [Demo] [BibTeX] PyTorch implementation and pretrained models for DINOv2. For details, see the papers: DINOv2: Learning Robust Visual Features without Supervision and Vision Transformers Need Registers ..."
+    }
+  ]
+}

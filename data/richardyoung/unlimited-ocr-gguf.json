@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "richardyoung/Unlimited-OCR-GGUF",
+  "slug": "richardyoung-unlimited-ocr-gguf",
+  "author": "richardyoung",
+  "url": "https://huggingface.co/richardyoung/Unlimited-OCR-GGUF",
+  "created_at": "2026-09-29T01:35:18.000Z",
+  "updated_at": "2026-09-29T01:35:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "vision",
+    "multimodal",
+    "ocr",
+    "image-text-to-text",
+    "base_model:baidu/Unlimited-OCR",
+    "base_model:quantized:baidu/Unlimited-OCR",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 2934734080,
+  "parameters_human": "2.93B",
+  "storage_bytes": 5901712192,
+  "storage_human": "5.9 GB",
+  "base_model": "baidu/Unlimited-OCR",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "richardyoung/Unlimited-OCR-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/richardyoung/Unlimited-OCR-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - baidu/Unlimited-OCR: Unlimited OCR Works: Welcome the Era of ...",
+      "url": "https://github.com/baidu/Unlimited-OCR",
+      "snippet": "Unlimited OCR Works Welcome the Era of One-shot Long-horizon Parsing. Release [2026/07/21] 🤝 Thanks to the ms-swift community for their support, our model now supports training with ms-swift. [2026/07/03] 🤝 Thanks to the Baidu Cloud team for their support. Our model is now available on Baidu Cloud."
+    },
+    {
+      "title": "Unlimited-OCR-GGUF · Model · Inferix",
+      "url": "https://inferix.co/models/sahilchachra/Unlimited-OCR-GGUF",
+      "snippet": "Unlimited-OCR — GGUF GGUF quantizations of baidu/Unlimited-OCR, a 3B vision-language OCR model that pushes DeepSeek-OCR one step further (one-shot, long-horizon document parsing). This repo contains a full spread of K-quants and i-quants of the language model plus the vision projector (mmproj) needed for image input."
+    },
+    {
+      "title": "Ai2 Playground",
+      "url": "https://playground.allenai.org/model/olmocr-2-7b-1025",
+      "snippet": "The current model was fine-tuned on English documents using a multilingual base VLM; other languages may work. Try the demo on your own documents below. You can then deploy the full olmOCR toolkit on your own GPUs for efficient, scalable document processing—at an estimated cost of just $178 USD per million pages converted."
+    },
+    {
+      "title": "richardyoung/olmocr2",
+      "url": "https://ollama.com/richardyoung/olmocr2",
+      "snippet": "The model is provided as-is, without warranty of accuracy or fitness for any particular purpose. 🙏 Acknowledgments Ai2 (Allen Institute for AI) for the upstream olmOCR-2-7B-1025 model and the olmOCR project. Qwen team for the Qwen2.5-VL-7B-Instruct base model. llama.cpp for the GGUF quantization toolchain that makes local inference possible."
+    }
+  ]
+}

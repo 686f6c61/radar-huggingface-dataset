@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ANGExllL/teal-falcon",
+  "slug": "angexlll-teal-falcon",
+  "author": "ANGExllL",
+  "url": "https://huggingface.co/ANGExllL/teal-falcon",
+  "created_at": "2026-09-29T17:13:31.000Z",
+  "updated_at": "2026-09-29T17:13:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "torchvision",
+  "languages": [],
+  "tags": [
+    "torchvision",
+    "safetensors",
+    "image-classification",
+    "adversarial-training",
+    "efficientnet",
+    "perturb",
+    "bittensor",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119027848,
+  "parameters_human": "119.0M",
+  "storage_bytes": 476270032,
+  "storage_human": "476 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Croisieres.fr : plus de 8000 croisières maritimes et fluviales 2026 – 2027",
+      "url": "https://www.croisieres.fr/",
+      "snippet": "Embarquez sur l'une de nos 8000 offres et promotion de croisiere parmi plus de 45 compagnies maritimes et fluviales comme Costa …"
+    },
+    {
+      "title": "Croisière : destinations, offres & navires | MSC Croisières",
+      "url": "https://www.msccroisieres.fr/",
+      "snippet": "Embarquez pour des destinations MSC Croisières de rêve. Découvrez les Caraïbes, la Méditerranée, les îles Canaries. Réservez …"
+    },
+    {
+      "title": "Costa Croisières: voyages et vacances en croisière | Costa Croisières",
+      "url": "https://www.costacroisieres.fr/",
+      "snippet": "Découvrez les offres exclusives et les destinations de rêve Costa Croisières avec le Meilleur Prix Garanti. Visitez le site et préparez …"
+    },
+    {
+      "title": "Déstockage Croisières® | Croisières pas chères 2026 - 2027",
+      "url": "https://www.destockagecroisieres.fr/",
+      "snippet": "Destockage Croisières®, LE Comparateur Spécialiste des Croisières en Ligne. Comparez les offres des plus grandes compagnies, …"
+    },
+    {
+      "title": "Royal Caribbean | Croisières - Croisières incroyables et offres de ...",
+      "url": "https://www.royalcaribbean.com/fra/fr?msockid=113327386d3661460b0c30db6c3c600a",
+      "snippet": "Naviguez vers des destinations inoubliables avec Royal Caribbean. Économisez avec les meilleures offres et forfaits de croisière …"
+    }
+  ]
+}

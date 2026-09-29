@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ApocalypseParty/G4-26B-SFT-v2-1-GRPO-chkpt40-MI-gguf",
+  "slug": "apocalypseparty-g4-26b-sft-v2-1-grpo-chkpt40-mi-gguf",
+  "author": "ApocalypseParty",
+  "url": "https://huggingface.co/ApocalypseParty/G4-26B-SFT-v2-1-GRPO-chkpt40-MI-gguf",
+  "created_at": "2026-09-29T02:25:41.000Z",
+  "updated_at": "2026-09-29T02:28:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 22817183040,
+  "storage_human": "22.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ApocalypseParty/G4-26B-SFT-v2-1-GRPO-chkpt40-slerp50-gguf - Hugging Face",
+      "url": "https://huggingface.co/ApocalypseParty/G4-26B-SFT-v2-1-GRPO-chkpt40-slerp50-gguf",
+      "snippet": "Instructions to use ApocalypseParty/G4-26B-SFT-v2-1-GRPO-chkpt40-slerp50-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "G4-26B-SFT-v2-1-GRPO-chkpt40-MD-gguf - Hugging Face",
+      "url": "https://huggingface.co/ApocalypseParty/G4-26B-SFT-v2-1-GRPO-chkpt40-MD-gguf",
+      "snippet": "Instructions to use ApocalypseParty/G4-26B-SFT-v2-1-GRPO-chkpt40-MD-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "G4 26B SFT 6 by ApocalypseParty — VRAM 51.6GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/ApocalypseParty%2FG4-26B-SFT-6,1fk1y2gkCXftwqjdxRz2Yr",
+      "snippet": "G4 26B SFT 6 is an open-source 26b LLM by ApocalypseParty. VRAM 51.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "ApocalypseParty/G4-26B-SFT-1-fixed - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/ApocalypseParty/G4-26B-SFT-1-fixed",
+      "snippet": "Run ApocalypseParty/G4-26B-SFT-1-fixed with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8 ..."
+    }
+  ]
+}

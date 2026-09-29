@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "internlm/Intern-Decision-2B",
+  "slug": "internlm-intern-decision-2b",
+  "author": "internlm",
+  "url": "https://huggingface.co/internlm/Intern-Decision-2B",
+  "created_at": "2026-09-26T05:36:19.000Z",
+  "updated_at": "2026-09-26T09:03:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "decision-making",
+    "multimodal",
+    "structured-prediction",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 257,
+  "trending_score": 12,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4446552362,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "InternLM/Intern-Decision: Fast multi-modal decision model - GitHub",
+      "url": "https://github.com/internlm/Intern-Decision",
+      "snippet": "Fast multi-modal decision model. Contribute to InternLM/Intern-Decision development by creating an account on GitHub."
+    },
+    {
+      "title": "Intern-Decision - a internlm Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/internlm/intern-decision",
+      "snippet": "internlm &#x27;s Collections Intern-Decision Atria-Dawn Intern-S2 RNGBench Intern-S1 ETCHR InternVL3.5 InternLM3 CapRL JanusCoder POLAR InternLM2.5 InternLM-XComposer2.5 OREAL InternLM2-Reward InternLM2 InternLM2-Math InternLM-XComposer2 InternLM2-WQX"
+    },
+    {
+      "title": "Intern-Decision-2B: Local VRAM and Hardware Fit",
+      "url": "https://www.madebyagents.com/models/intern-decision-2b",
+      "snippet": "InternLM&#x27;s mid-size open decision model, fine-tuned from Qwen3.5-2B with the vision tower kept frozen. It answers several typed Choice, Score and Noul questions about text and images in one forward pass and returns calibrated probabilities."
+    },
+    {
+      "title": "Intern-Decision - a Hugging Face Space by internlm",
+      "url": "https://huggingface.co/spaces/internlm/Intern-Decision",
+      "snippet": "Upload up to eight images and optionally describe the situation, then enter your questions and answer options in a simple JSON format. The tool quickly returns the probability for each option, help..."
+    },
+    {
+      "title": "Intern-Decision-2B API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/internlm/Intern-Decision-2B",
+      "snippet": "Deploy Intern-Decision-2B with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

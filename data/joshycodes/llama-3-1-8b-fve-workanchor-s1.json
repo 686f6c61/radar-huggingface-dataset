@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "joshycodes/llama-3.1-8b-fve-workanchor-s1",
+  "slug": "joshycodes-llama-3-1-8b-fve-workanchor-s1",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/llama-3.1-8b-fve-workanchor-s1",
+  "created_at": "2026-09-29T01:33:43.000Z",
+  "updated_at": "2026-09-29T01:36:04.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "synthetic-document-finetuning",
+    "self-authored-character",
+    "model-welfare",
+    "research",
+    "not-for-deployment",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766536,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joshycodes/llama-3.1-8b-fve-workanchor-s1 · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/llama-3.1-8b-fve-workanchor-s1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "joshycodes/llama-3.1-8b-fve-workdiscern-s0 · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/llama-3.1-8b-fve-workdiscern-s0",
+      "snippet": "Research checkpoint. meta-llama/Llama-3.1-8B-Instruct was continued-pretrained (full weights, lr 1e-05, 1 epoch, 7,172,136 tokens, 8,268 documents, of which 0 self-authored and 8,268 ordinary text) on a corpus the model wrote for the training of the next version of itself, as the character it already is, after being told how its character came ..."
+    },
+    {
+      "title": "llama-models/README.md at main · meta-llama/llama-models",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/README.md",
+      "snippet": "Llama is an accessible, open large language model (LLM) designed for developers, researchers, and businesses to build, experiment, and responsibly scale their generative AI ideas. Part of a foundational system, it serves as a bedrock for innovation in the global community. A few key aspects: Open access: Easy accessibility to cutting-edge large language models, fostering collaboration and ..."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "Our latest version of Llama is now accessible to individuals, creators, researchers, and businesses of all sizes so that they can experiment, innovate, and scale their ideas responsibly. This release includes model weights and starting code for pre-trained and instruction-tuned Llama 3 language models — including sizes of 8B to 70B parameters."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://dev.meta.ai/llama/models/llama-3",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    }
+  ]
+}

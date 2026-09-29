@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hwijaeson/inverse-benchmark-mlp-regression",
+  "slug": "hwijaeson-inverse-benchmark-mlp-regression",
+  "author": "hwijaeson",
+  "url": "https://huggingface.co/hwijaeson/inverse-benchmark-mlp-regression",
+  "created_at": "2026-09-29T02:29:56.000Z",
+  "updated_at": "2026-09-29T02:29:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-regression",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "regression",
+    "tabular-regression",
+    "mlp",
+    "pytorch_model_hub_mixin",
+    "dataset:hwijaeson/inverse-benchmark-synthetic-regression",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 512 AI models across 486 benchmarks, with 209 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Hwijae Son",
+      "url": "https://hwijaeson.github.io/",
+      "snippet": "\"Controllable Generative Models for Physical AI Alignment with Physical World.\" 2026 Paper accepted in AIMS Mathematics: \"Robust identification of multiple point targets in time-domain fluorescence diffuse optical tomography.\""
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Models Benchmark",
+      "url": "https://aimodelsbenchmark.com/",
+      "snippet": "Pick the right LLM in under a minute. 398 models ranked by GPQA, AIME 2025, SWE-bench Verified, HLE, input/output price per million tokens, context window and license. Updated 2026-09-27."
+    }
+  ]
+}

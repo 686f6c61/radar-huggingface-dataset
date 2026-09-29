@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mulligan/sim-square-narrow-r03-baseline-idql",
+  "slug": "mulligan-sim-square-narrow-r03-baseline-idql",
+  "author": "mulligan",
+  "url": "https://huggingface.co/mulligan/sim-square-narrow-r03-baseline-idql",
+  "created_at": "2026-09-29T02:12:53.000Z",
+  "updated_at": "2026-09-29T02:13:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mulligan",
+    "sim-square-narrow",
+    "idql-agent",
+    "dataset:mulligan/sim-square-narrow-c00-teleop-baseline",
+    "dataset:mulligan/sim-square-narrow-c01-baseline-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c01-dagger-baseline",
+    "dataset:mulligan/sim-square-narrow-c02-baseline-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c02-dagger-baseline",
+    "dataset:mulligan/sim-square-narrow-c03-dagger-baseline",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1443770325,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mulligan/sim-square-narrow-c03-dagger-mixed - Hugging Face",
+      "url": "https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-dagger-mixed",
+      "snippet": "Datasets: mulligan / sim-square-narrow-c03-dagger-mixed Like 0 Follow Mulligan 1 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: robotics lerobot mulligan sim-square-narrow Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "Mulligan: Performance-Guided Data Collection for Efficient On-Robot ...",
+      "url": "https://mulligan.page/",
+      "snippet": "Mulligan: Performance-Guided Data Collection for Efficient On-Robot Learning. Targeted corrections, counterfactual demonstrations, component ablations, collection productivity, paired statistics, and blinded robot evaluations."
+    },
+    {
+      "title": "Datasets - Hugging Face",
+      "url": "https://huggingface.co/datasets?other=sim-square-narrow",
+      "snippet": "Explore datasets powering machine learning. 34 Full-text search Edit filters Sort: Trending Active filters: sim-square-narrow Clear all"
+    },
+    {
+      "title": "AI Model & API Providers Analysis | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/",
+      "snippet": "Comparison and analysis of AI models and API hosting providers. Independent benchmarks across key performance metrics including quality, price, output speed & latency."
+    }
+  ]
+}

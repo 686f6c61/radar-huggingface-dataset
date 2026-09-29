@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "zed122/HuggingFaceTB-SmolLM2-135M-q8_0-GGUF",
+  "slug": "zed122-huggingfacetb-smollm2-135m-q8_0-gguf",
+  "author": "zed122",
+  "url": "https://huggingface.co/zed122/HuggingFaceTB-SmolLM2-135M-q8_0-GGUF",
+  "created_at": "2026-09-29T02:33:51.000Z",
+  "updated_at": "2026-09-29T02:33:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "en",
+    "arxiv:2502.02737",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-135M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 144810528,
+  "storage_human": "145 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zed122/HuggingFaceTB-SmolLM2-135M-q8_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/zed122/HuggingFaceTB-SmolLM2-135M-q8_0-GGUF",
+      "snippet": "The 135M model was trained on 2 trillion tokens using a diverse dataset combination: FineWeb-Edu, DCLM, The Stack, along with new filtered datasets we curated and will release soon."
+    },
+    {
+      "title": "QuantFactory/SmolLM2-135M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/QuantFactory/SmolLM2-135M-GGUF",
+      "snippet": "The 135M model was trained on 2 trillion tokens using a diverse dataset combination: FineWeb-Edu, DCLM, The Stack, along with new filtered datasets we curated and will release soon."
+    },
+    {
+      "title": "QuantFactory/SmolLM2-135M-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/QuantFactory/SmolLM2-135M-Instruct-GGUF",
+      "snippet": "The 135M model was trained on 2 trillion tokens using a diverse dataset combination: FineWeb-Edu, DCLM, The Stack, along with new filtered datasets we curated and will release soon."
+    },
+    {
+      "title": "bartowski/SmolLM2-135M-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/SmolLM2-135M-Instruct-GGUF",
+      "snippet": "Original model: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct · All quants made using imatrix option with dataset from here ... <|im_start|>system {system_prompt}<|im_end|> <|im_start|>user {prompt}<|im_end|> <|im_start|>assistant · Some of these quants (Q3_K_XL, Q4_K_L etc) are the standard quantization method with the embeddings and output weights quantized to Q8_0 instead of what they would normally default to."
+    },
+    {
+      "title": "mav23/SmolLM2-135M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mav23/SmolLM2-135M-GGUF",
+      "snippet": "# pip install accelerate import torch from transformers import AutoTokenizer, AutoModelForCausalLM checkpoint = \"HuggingFaceTB/SmolLM2-135M\" tokenizer = AutoTokenizer.from_pretrained(checkpoint) # for fp16 use `torch_dtype=torch.float16` instead model = AutoModelForCausalLM.from_pretrained(checkpoint, device_map=\"auto\", torch_dtype=torch.bfloat16) inputs = tokenizer.encode(\"Gravity is\", return_tensors=\"pt\").to(\"cuda\") outputs = model.generate(inputs) print(tokenizer.decode(outputs[0]))"
+    }
+  ]
+}

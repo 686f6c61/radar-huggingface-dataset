@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mulligan/sim-square-narrow-r03-auto-iql-success-bc-n32-divl",
+  "slug": "mulligan-sim-square-narrow-r03-auto-iql-success-bc-n32-divl",
+  "author": "mulligan",
+  "url": "https://huggingface.co/mulligan/sim-square-narrow-r03-auto-iql-success-bc-n32-divl",
+  "created_at": "2026-09-29T01:59:54.000Z",
+  "updated_at": "2026-09-29T02:01:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mulligan",
+    "sim-square-narrow",
+    "divl-agent",
+    "dataset:mulligan/sim-square-narrow-c00-teleop-baseline",
+    "dataset:mulligan/sim-square-narrow-c01-auto-iql-n32-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c02-auto-iql-success-bc-n32-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c03-auto-iql-success-bc-n32-policy-rollouts",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1447883255,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Datasets - Hugging Face",
+      "url": "https://huggingface.co/datasets?other=sim-square-narrow",
+      "snippet": "mulligan/sim-square-narrow-c03-auto-iql-n32-policy-rollouts Viewer •Updated 3 days ago•21.7k• 57"
+    },
+    {
+      "title": "Websim",
+      "url": "https://websim.com/",
+      "snippet": "Create, share, and explore interactive games and web pages using WebSim&#x27;s AI-powered simulation platform."
+    },
+    {
+      "title": "Datasets - Hugging Face",
+      "url": "https://huggingface.co/datasets?other=sim-square-broad",
+      "snippet": "mulligan/sim-square-broad-c03-auto-iql-success-bc-n32-policy-rollouts Viewer •Updated 3 days ago•29.2k• 49"
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-6 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-6, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-6 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "GPTZero detects AI content from Claude, ChatGPT, GPT-5, GPT-6, Gemini, and checks writing quality to make every word worth reading."
+    }
+  ]
+}

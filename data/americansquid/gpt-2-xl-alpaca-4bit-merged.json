@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "americansquid/gpt-2-xl-alpaca-4bit-merged",
+  "slug": "americansquid-gpt-2-xl-alpaca-4bit-merged",
+  "author": "americansquid",
+  "url": "https://huggingface.co/americansquid/gpt-2-xl-alpaca-4bit-merged",
+  "created_at": "2026-09-29T19:27:40.000Z",
+  "updated_at": "2026-09-29T19:28:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gpt2",
+    "mlx-lm",
+    "gpt2-xl",
+    "alpaca",
+    "4-bit",
+    "quantized",
+    "instruction-tuned",
+    "causal-lm",
+    "text-generation",
+    "en",
+    "dataset:yahma/alpaca-cleaned",
+    "base_model:openai-community/gpt2-xl",
+    "base_model:quantized:openai-community/gpt2-xl",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1557611200,
+  "parameters_human": "1.56B",
+  "storage_bytes": 976983054,
+  "storage_human": "977 MB",
+  "base_model": "openai-community/gpt2-xl",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

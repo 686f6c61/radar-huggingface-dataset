@@ -5,7 +5,7 @@
   "author": "kerasformers",
   "url": "https://huggingface.co/kerasformers/gemma-3n-e2b",
   "created_at": "2026-08-10T22:38:01.000Z",
-  "updated_at": "2026-08-26T21:11:23.000Z",
+  "updated_at": "2026-09-29T05:17:57.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

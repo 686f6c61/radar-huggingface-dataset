@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "vogel61/MiMo-V2.6-Flash-MOPD-oQ4e-mtp",
+  "slug": "vogel61-mimo-v2-6-flash-mopd-oq4e-mtp",
+  "author": "vogel61",
+  "url": "https://huggingface.co/vogel61/MiMo-V2.6-Flash-MOPD-oQ4e-mtp",
+  "created_at": "2026-09-29T14:19:19.000Z",
+  "updated_at": "2026-09-29T14:48:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mimo_v2",
+    "text-generation",
+    "multimodal",
+    "vision-language",
+    "audio",
+    "agent",
+    "video-understanding",
+    "long-context",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 309766601088,
+  "parameters_human": "309.77B",
+  "storage_bytes": 172271787602,
+  "storage_human": "172.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD · Hugging Face",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+      "snippet": "XiaomiMiMo / MiMo-V2.6-Flash-MOPD Like 6 Follow Xiaomi MiMo 4.68k Text Generation Transformers Safetensors English Chinese mimo_v2 multimodal vision-language audio agent video-understanding long-context conversational custom_code 8-bit precision fp8 License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this ..."
+    },
+    {
+      "title": "MiMo-V2.6 | Xiaomi",
+      "url": "https://mimo.xiaomi.com/mimo-v2-6",
+      "snippet": "The MiMo-V2.6 series includes two natively omnimodal models: MiMo-V2.6-Pro is our most capable model to date, while MiMo-V2.6-Flash strikes the best balance between intelligence, efficiency, and cost."
+    },
+    {
+      "title": "Xiaomi MiMo Home",
+      "url": "https://mimo.mi.com/models/en-US/mimo-v2.6-flash",
+      "snippet": "Monthly or annual plans covering mimo-v2.6-pro, mimo-v2.6-flash and the full MiMo V2.5 model suite — significantly better value than pay-as-you-go at high usage volumes."
+    },
+    {
+      "title": "XiaomiMiMo/MiMo-V2-Flash · Hugging Face",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiMo-V2.6-Flash for 2x DGX Sparks - GitHub",
+      "url": "https://github.com/MiaAI-Lab/MiMo-V2.6-Flash-2x-DGX-Sparks",
+      "snippet": "by Mia&#x27;a AI Lab Serve XiaomiMiMo/MiMo-V2.6-Flash-RL — 309B total, 15B active, MXFP4 experts, 1M context, text/image/video/audio — with SGLang on two DGX Sparks (GB10, SM121, 121.7 GiB unified memory each) over ConnectX-7 RoCE, behind one OpenAI-compatible endpoint on the head."
+    }
+  ]
+}

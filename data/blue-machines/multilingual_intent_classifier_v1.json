@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "blue-machines/Multilingual_Intent_classifier_v1",
+  "slug": "blue-machines-multilingual_intent_classifier_v1",
+  "author": "blue-machines",
+  "url": "https://huggingface.co/blue-machines/Multilingual_Intent_classifier_v1",
+  "created_at": "2026-09-29T15:17:59.000Z",
+  "updated_at": "2026-09-29T15:18:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "en",
+    "hi",
+    "ta",
+    "te",
+    "kn",
+    "mr",
+    "ml",
+    "bn",
+    "gu",
+    "or"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "gemma3_text",
+    "gemma3",
+    "int8",
+    "intent-classification",
+    "multilingual",
+    "text-classification",
+    "en",
+    "hi",
+    "ta",
+    "te",
+    "kn",
+    "mr",
+    "ml",
+    "bn",
+    "gu",
+    "or",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133687599,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blue",
+      "url": "https://www.bt-blue.com/",
+      "snippet": "Blue accompagne les DSI dans le maintien en condition opérationnelle de leurs infrastructures. Blue est certifié ISO 27001 et HDS."
+    },
+    {
+      "title": "Blue - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Blue",
+      "snippet": "Darker shades of blue include ultramarine, cobalt blue, navy blue, and Prussian blue; while lighter tints include sky blue, azure, and …"
+    },
+    {
+      "title": "Blue Machines AI Launches Floe, a Context-Aware Language Detection ...",
+      "url": "https://www.webnewswire.com/2026/08/20/blue-machines-ai-launches-floe-a-context-aware-language-detection-model-for-multilingual-enterprise-conversations-in-india/",
+      "snippet": "For example, the phrase “Mera credit card block ho gaya hai” contains the English term “credit card”, but the grammatical structure and conversational intent remain primarily Hindi. A keyword-led system may treat this as a reason to respond in English."
+    },
+    {
+      "title": "E-Cigarettes & Pods E-liquide | Page d'accueil Blu Shop",
+      "url": "https://www.blu.com/fr-FR",
+      "snippet": "Vivez une expérience unique avec les E-cigarettes dernière génération à capsules blu 2.0 ou blu bar kit conçues par les pionniers de …"
+    },
+    {
+      "title": "Blue Machines AI Unveils Floe: Advanced Language Detection For ...",
+      "url": "https://www.rediff.com/business/report/blue-machines-ai-launches-floe-language-detection-model/20260819.htm",
+      "snippet": "Built for India's multilingual communication patterns, Floe currently support English, Hindi, Tamil, Telugu, Gujarati, Kannada, Malayalam, Marathi, Bengali, Odia and Punjabi, the company said in a statement."
+    }
+  ]
+}

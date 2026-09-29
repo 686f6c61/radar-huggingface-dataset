@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-anima-in-real-update-v2-epoch-20-lora",
+  "slug": "runninghubai-rh-anima-in-real-update-v2-epoch-20-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-anima-in-real-update-v2-epoch-20-lora",
+  "created_at": "2026-09-29T02:26:01.000Z",
+  "updated_at": "2026-09-29T02:27:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 277471802,
+  "storage_human": "277 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-anima-in-real-update-v2-epoch-20-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-anima-in-real-update-v2-epoch-20-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "upload/Anima_in_real_update_v2_epoch_20.safetensors · ACCC1380/Anima ...",
+      "url": "https://huggingface.co/datasets/ACCC1380/Anima_Lora_Collection/blob/main/upload/Anima_in_real_update_v2_epoch_20.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RunningHub ｜ AI Agent-Powered Content Creation Platform with ComfyUI ...",
+      "url": "https://www.runninghub.ai/",
+      "snippet": "RunningHub is an all-in-one content creation platform powered by native AI agents. Build end-to-end creative workflows with ComfyUI workflows, infinite canvas, AI apps, image & video generation, and model API access."
+    },
+    {
+      "title": "Anime in real - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/model/public/2086061804958359554",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "Anima_in_real_update_v2_epoch_20 - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.cn/model/public/2096523751620956162",
+      "snippet": "探索热门 AI 生成模型与 LoRA 模型，支持个性化模型训练、风格创作与 AI 内容生成，轻松打造属于你的创意模型。"
+    }
+  ]
+}

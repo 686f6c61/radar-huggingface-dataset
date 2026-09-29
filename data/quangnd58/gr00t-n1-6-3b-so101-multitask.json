@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "quangnd58/GR00T-N1.6-3B-so101-multitask",
+  "slug": "quangnd58-gr00t-n1-6-3b-so101-multitask",
+  "author": "quangnd58",
+  "url": "https://huggingface.co/quangnd58/GR00T-N1.6-3B-so101-multitask",
+  "created_at": "2026-09-29T02:34:33.000Z",
+  "updated_at": "2026-09-29T02:35:59.000Z",
+  "license": "nvidia-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "Gr00tN1d6",
+    "robotics",
+    "vision-language-action",
+    "gr00t",
+    "so101",
+    "dataset:hungho77/so101-multitask",
+    "base_model:nvidia/GR00T-N1.6-3B",
+    "base_model:finetune:nvidia/GR00T-N1.6-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 3286608832,
+  "parameters_human": "3.29B",
+  "storage_bytes": 9813310504,
+  "storage_human": "9.8 GB",
+  "base_model": "nvidia/GR00T-N1.6-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "quangnd58/GR00T-N1.6-3B-so101-multitask · Hugging Face",
+      "url": "https://huggingface.co/quangnd58/GR00T-N1.6-3B-so101-multitask",
+      "snippet": "Data: hungho77/so101-multitask, converted to LeRobot v2.1 with Isaac-GR00T scripts/lerobot_conversion/convert_v3_to_v2.py · Code: NVIDIA/Isaac-GR00T, branch n1d6 (examples/finetune.sh, modality config examples/SO100/so100_config.py) ... python gr00t/eval/run_gr00t_server.py \\ --model-path quangnd58/GR00T-N1.6-3B-so101-multitask \\ --embodiment-tag NEW_EMBODIMENT"
+    },
+    {
+      "title": "twanghcmut/GR00T-N1.6-SO101-Multitask · Hugging Face",
+      "url": "https://huggingface.co/twanghcmut/GR00T-N1.6-SO101-Multitask",
+      "snippet": "NVIDIA Isaac GR00T N1.6 3B finetuned on hungho77/so101-multitask — one model covering all three tasks, not three separate checkpoints."
+    },
+    {
+      "title": "quangnd58/GR00T-N1.5-3B-so101-multitask · Hugging Face",
+      "url": "https://huggingface.co/quangnd58/GR00T-N1.5-3B-so101-multitask",
+      "snippet": "Data: hungho77/so101-multitask, converted to LeRobot v2.1 with Isaac-GR00T scripts/lerobot_conversion/convert_v3_to_v2.py · Code: NVIDIA/Isaac-GR00T, branch n1d5 (scripts/gr00t_finetune.py) ... from gr00t.experiment.data_config import load_data_config from gr00t.model.policy import Gr00tPolicy data_config = load_data_config(\"so100_dualcam\") policy = Gr00tPolicy( model_path=\"quangnd58/GR00T-N1.5-3B-so101-multitask\", embodiment_tag=\"new_embodiment\", modality_config=data_config.modality_config(), modality_transform=data_config.transform(), )"
+    },
+    {
+      "title": "quangnd58/smolvla-so101-multitask · Hugging Face",
+      "url": "https://huggingface.co/quangnd58/smolvla-so101-multitask",
+      "snippet": "from lerobot.policies.smolvla.modeling_smolvla import SmolVLAPolicy policy = SmolVLAPolicy.from_pretrained(\"quangnd58/smolvla-so101-multitask\")"
+    },
+    {
+      "title": "nvidia/GR00T-N1.6-3B · Hugging Face",
+      "url": "https://huggingface.co/nvidia/GR00T-N1.6-3B",
+      "snippet": "NVIDIA Isaac GR00T N1.6 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    }
+  ]
+}

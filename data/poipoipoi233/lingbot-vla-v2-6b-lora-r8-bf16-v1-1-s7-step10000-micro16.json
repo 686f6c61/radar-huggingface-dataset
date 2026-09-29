@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "poipoipoi233/lingbot-vla-v2-6b-lora-r8-bf16-v1.1-s7-step10000-micro16",
+  "slug": "poipoipoi233-lingbot-vla-v2-6b-lora-r8-bf16-v1-1-s7-step10000-micro16",
+  "author": "poipoipoi233",
+  "url": "https://huggingface.co/poipoipoi233/lingbot-vla-v2-6b-lora-r8-bf16-v1.1-s7-step10000-micro16",
+  "created_at": "2026-09-29T14:25:07.000Z",
+  "updated_at": "2026-09-29T14:45:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "vision-language-action",
+    "bf16-training",
+    "fp32-adapter",
+    "micro16",
+    "base_model:robbyant/lingbot-vla-v2-6b",
+    "base_model:adapter:robbyant/lingbot-vla-v2-6b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 255785216,
+  "storage_human": "256 MB",
+  "base_model": "robbyant/lingbot-vla-v2-6b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Robbyant/lingbot-vla: A Pragmatic VLA Foundation Model",
+      "url": "https://github.com/Robbyant/lingbot-vla",
+      "snippet": "A Pragmatic VLA Foundation Model. Contribute to Robbyant/lingbot-vla development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - Robbyant/lingbot-vla-v2: From Foundation to Application",
+      "url": "https://github.com/Robbyant/lingbot-vla-v2",
+      "snippet": "LingBot-VLA 2.0 is a practical Vision-Language-Action foundation model designed to move from large-scale pre-training toward reliable real-world robot applications. Compared with LingBot-VLA 1.0, LingBot-VLA 2.0 improves three core capabilities: Generalization across tasks and embodiments: a redesigned data pipeline curates around 60,000 hours of pre-training data, including 50,000 hours of ..."
+    },
+    {
+      "title": "JMG-NTU123/lingbot-vla-v2-6b-lora-r8-fp32-v1.1-s7-step10000 - Hugging Face",
+      "url": "https://huggingface.co/JMG-NTU123/lingbot-vla-v2-6b-lora-r8-fp32-v1.1-s7-step10000",
+      "snippet": "Instructions to use JMG-NTU123/lingbot-vla-v2-6b-lora-r8-fp32-v1.1-s7-step10000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "robbyant/lingbot-vla-v2-6b at refs/pr/1 - Hugging Face",
+      "url": "https://huggingface.co/robbyant/lingbot-vla-v2-6b/tree/refs%2Fpr%2F1",
+      "snippet": "robbyant / lingbot-vla-v2-6b like 31 Follow Robbyant 501 Safetensors arxiv:2508.02317 Model card FilesFiles and versions xet Community 2 Copy to bucket new refs/pr/1 lingbot-vla-v2-6b Ctrl+K Ctrl+K 1 contributor History:9 commits nielsr HF Staff Add robotics pipeline tag and license metadata 07103a7 verified17 days ago assetsUpload folder using ..."
+    },
+    {
+      "title": "lingbot-vla-v2-6b · Models",
+      "url": "https://www.modelscope.cn/models/Robbyant/lingbot-vla-v2-6b",
+      "snippet": "LingBot-VLA-V2 is a practical Vision-Language-Action foundation model designed to move from large-scale pre-training toward reliable real-world robot applications."
+    }
+  ]
+}

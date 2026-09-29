@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "AxionML/Step-3.7-Flash-NVFP4",
+  "slug": "axionml-step-3-7-flash-nvfp4",
+  "author": "AxionML",
+  "url": "https://huggingface.co/AxionML/Step-3.7-Flash-NVFP4",
+  "created_at": "2026-09-29T13:56:04.000Z",
+  "updated_at": "2026-09-29T13:56:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "step3p7",
+    "image-text-to-text",
+    "AxionML",
+    "ModelOpt",
+    "Step-3.7",
+    "quantized",
+    "NVFP4",
+    "nvfp4",
+    "sglang",
+    "mirror",
+    "conversational",
+    "custom_code",
+    "base_model:stepfun-ai/Step-3.7-Flash",
+    "base_model:quantized:stepfun-ai/Step-3.7-Flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 103810330432,
+  "parameters_human": "103.81B",
+  "storage_bytes": 129241926175,
+  "storage_human": "129.2 GB",
+  "base_model": "stepfun-ai/Step-3.7-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stepfun-ai/Step-3.7-Flash-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/stepfun-ai/Step-3.7-Flash-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Step-3.7-Flash | NVIDIA NeMo AutoModel",
+      "url": "https://docs.nvidia.com/nemo/automodel/nightly/model-coverage/vision-language-models/stepfun-ai/Step-3.7-Flash",
+      "snippet": "Step-3.7-Flash is Stepfun AI&#x27;s 198B-A13B Mixture-of-Experts vision-language model. It extends the Step-3.5-Flash language architecture with native vision support for image and video understanding, with an emphasis on agentic developer workflows and stable tool calling."
+    },
+    {
+      "title": "Run Step 3.7 Flash on NVIDIA GPUs with Enterprise-Ready Multimodal AI",
+      "url": "https://developer.nvidia.com/blog/run-step-3-7-flash-on-nvidia-gpus-with-enterprise-ready-multimodal-ai/",
+      "snippet": "AI-Generated Summary Step 3.7 Flash is a 198B-parameter Mixture-of-Experts vision-language model with approximately 11B activated parameters per forward pass, optimized for agentic workflows combining perception, search, and multi-step reasoning."
+    },
+    {
+      "title": "README.md · stepfun-ai/Step-3.7-Flash-NVFP4 at main - Hugging Face",
+      "url": "https://huggingface.co/stepfun-ai/Step-3.7-Flash-NVFP4/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - stepfun-ai/Step-3.7-Flash: A high-efficiency Flash model for ...",
+      "url": "https://github.com/stepfun-ai/Step-3.7-Flash",
+      "snippet": "Step 3.7 Flash is a 198B-parameter sparse Mixture-of-Experts (MoE) vision-language model that combines a 196B-parameter language backbone with a 1.8B-parameter vision encoder for native image understanding. Engineered for high-frequency production workloads, it activates approximately 11B parameters per token and delivers a throughput of up to 400 tokens per second. Step 3.7 Flash supports a ..."
+    }
+  ]
+}

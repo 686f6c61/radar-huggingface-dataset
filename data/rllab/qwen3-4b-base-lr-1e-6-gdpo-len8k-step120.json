@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RLLab/qwen3-4b-base-lr-1e-6-gdpo-len8k-step120",
+  "slug": "rllab-qwen3-4b-base-lr-1e-6-gdpo-len8k-step120",
+  "author": "RLLab",
+  "url": "https://huggingface.co/RLLab/qwen3-4b-base-lr-1e-6-gdpo-len8k-step120",
+  "created_at": "2026-09-29T15:48:57.000Z",
+  "updated_at": "2026-09-29T15:50:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VioletMyersGoon - Reddit",
+      "url": "https://www.reddit.com/r/VioletMyersGoon/",
+      "snippet": "May 13, 2024 · r/VioletMyersGoon members online Create a post FeedAbout Hot Open sort options Hot New Top Rising Change …"
+    },
+    {
+      "title": "Violet Myers : r/trueratecelebrities - Reddit",
+      "url": "https://www.reddit.com/r/trueratecelebrities/comments/yl9lem/violet_myers/",
+      "snippet": "Nov 3, 2022 · 70 votes, 57 comments. 31K subscribers in the trueratecelebrities community. This subreddit is for posting photos of …"
+    },
+    {
+      "title": "Violet myers feet : r/Just_Their_Feet - Reddit",
+      "url": "https://www.reddit.com/r/Just_Their_Feet/comments/16cl009/violet_myers_feet/",
+      "snippet": "Sep 7, 2023 · 1 subscriber in the Just_Their_Feet community. photos of pornstars with their feet in shot"
+    },
+    {
+      "title": "Violet Myers was ready to take advantage : r/memes - Reddit",
+      "url": "https://www.reddit.com/r/memes/comments/x6tqph/violet_myers_was_ready_to_take_advantage/",
+      "snippet": "Sep 5, 2022 · 326 votes, 11 comments. 32M subscribers in the memes community. Memes! A way of describing cultural information …"
+    },
+    {
+      "title": "Ella Knox and Violet Myers : r/EllaKnox - Reddit",
+      "url": "https://www.reddit.com/r/EllaKnox/comments/s2g60u/ella_knox_and_violet_myers/",
+      "snippet": "1.9K votes, 15 comments. 106K subscribers in the EllaKnox community. Dedicated to the busty all-natural newcomer Ella Knox!"
+    }
+  ]
+}

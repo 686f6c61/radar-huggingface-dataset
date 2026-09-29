@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Vinci-MLE-8B-1.0-i1-GGUF",
+  "slug": "mradermacher-vinci-mle-8b-1-0-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Vinci-MLE-8B-1.0-i1-GGUF",
+  "created_at": "2026-09-29T02:24:18.000Z",
+  "updated_at": "2026-09-29T05:56:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "machine-learning-engineering",
+    "tool-use",
+    "granite",
+    "lora",
+    "research",
+    "canadian-ai",
+    "simpledirect",
+    "vinci",
+    "en",
+    "base_model:simpledirect/Vinci-MLE-8B-1.0",
+    "base_model:adapter:simpledirect/Vinci-MLE-8B-1.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 8791592960,
+  "parameters_human": "8.79B",
+  "storage_bytes": 101347694912,
+  "storage_human": "101.3 GB",
+  "base_model": "simpledirect/Vinci-MLE-8B-1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Vinci-MLE-8B-1.0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Vinci-MLE-8B-1.0-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Vinci-Cyber-8B-1.0-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Vinci-Cyber-8B-1.0-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 30 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Introducing Vinci MLE 1.0: open-weight models for ML engineering",
+      "url": "https://www.getsimpledirect.com/blog/introducing-vinci-mle-1-0-open-weight-models-for-ml-engineering",
+      "snippet": "Vinci MLE 1.0 introduces 8B and 30B open-weight research models developed by SimpleDirect® in Canada, building on IBM Granite 4.1 and released under Apache-2.0. Their specialization focuses on inspecting experiment evidence, diagnosing problems, and making bounded changes."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

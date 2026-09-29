@@ -1,0 +1,256 @@
+{
+  "schema": 1,
+  "id": "nypgd/turkish-e5-large-mebi-v2",
+  "slug": "nypgd-turkish-e5-large-mebi-v2",
+  "author": "nypgd",
+  "url": "https://huggingface.co/nypgd/turkish-e5-large-mebi-v2",
+  "created_at": "2026-09-29T14:26:17.000Z",
+  "updated_at": "2026-09-29T14:27:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:26081",
+    "loss:CachedGISTEmbedLoss",
+    "arxiv:1908.10084",
+    "base_model:ytu-ce-cosmos/turkish-e5-large",
+    "base_model:finetune:ytu-ce-cosmos/turkish-e5-large",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559890432,
+  "parameters_human": "559.9M",
+  "storage_bytes": 2256690163,
+  "storage_human": "2.3 GB",
+  "base_model": "ytu-ce-cosmos/turkish-e5-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.5503875968992248
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.6821705426356589
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.7441860465116279
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.8062015503875969
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Precision@1",
+      "value": 0.5503875968992248
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Precision@3",
+      "value": 0.39793281653746765
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Precision@5",
+      "value": 0.32248062015503876
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Precision@10",
+      "value": 0.22093023255813954
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Recall@1",
+      "value": 0.22795927156392273
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Recall@3",
+      "value": 0.383317952503999
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Recall@5",
+      "value": 0.47448628030023376
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Recall@10",
+      "value": 0.595671834625323
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.5391869463912623
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Mrr@10",
+      "value": 0.6320628768303187
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "test",
+      "metric": "Cosine Map@10",
+      "value": 0.44672101226364797
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dev",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.835
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dev",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.945
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dev",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.965
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dev",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.98
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dev",
+      "metric": "Cosine Precision@1",
+      "value": 0.835
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dev",
+      "metric": "Cosine Precision@3",
+      "value": 0.48333333333333334
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dev",
+      "metric": "Cosine Precision@5",
+      "value": 0.333
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dev",
+      "metric": "Cosine Precision@10",
+      "value": 0.17950000000000002
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dev",
+      "metric": "Cosine Recall@1",
+      "value": 0.57
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dev",
+      "metric": "Cosine Recall@3",
+      "value": 0.83625
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dev",
+      "metric": "Cosine Recall@5",
+      "value": 0.9204166666666665
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dev",
+      "metric": "Cosine Recall@10",
+      "value": 0.9675
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dev",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.8926089590383719
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dev",
+      "metric": "Cosine Mrr@10",
+      "value": 0.891922619047619
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dev",
+      "metric": "Cosine Map@10",
+      "value": 0.8496795634920634
+    }
+  ],
+  "sources": [
+    {
+      "title": "turkish-e5-large · Model · Inferix",
+      "url": "https://inferix.co/models/ytu-ce-cosmos/turkish-e5-large",
+      "snippet": "Turkish e5 Large This is a finetune version of model intfloat/multilingual e5 large instruct with various Turkish datasets. Recommended Instruct: \"Given a Turkish search query, retrieve relevant passages written in Turkish that best answer the query\" Example Usage Citations Contact COSMOS AI Research Group, Yildiz Technical University Computer ..."
+    },
+    {
+      "title": "ytu-ce-cosmos/turkish-e5-large · Hugging Face",
+      "url": "https://huggingface.co/ytu-ce-cosmos/turkish-e5-large",
+      "snippet": "Turkish-e5-Large This is a finetune version of model intfloat/multilingual-e5-large-instruct with various Turkish datasets."
+    },
+    {
+      "title": "nypgd (MEHMET BOZDEMİR) - Hugging Face",
+      "url": "https://huggingface.co/nypgd/datasets",
+      "snippet": "Computer Engineering PhD Researcher and AI Developer. My research primarily focuses on Turkish Natural Language Processing (NLP), Large Language Models (LLMs), and Text-to-SQL architectures using R..."
+    },
+    {
+      "title": "turkish-e5-large Open-source Turkish Retrieval Model - Achieve Precise ...",
+      "url": "https://model.aibase.com/models/details/1927650050843086848",
+      "snippet": "A Turkish language retrieval model fine-tuned based on the intfloat/multilingual-e5-large-instruct model, focusing on Turkish paragraph retrieval tasks."
+    },
+    {
+      "title": "turkish-e5-large huggingface.co api & ytu-ce-cosmos turkish-e5-large ...",
+      "url": "https://www.toolify.ai/ai-model/ytu-ce-cosmos-turkish-e5-large",
+      "snippet": "turkish-e5-large huggingface.co is an AI model on huggingface.co that provides turkish-e5-large&#x27;s model effect (), which can be used instantly with this ytu-ce-cosmos turkish-e5-large model. huggingface.co supports a free trial of the turkish-e5-large model, and also provides paid use of the turkish-e5-large. Support call turkish-e5-large model through api, including Node.js, Python, http."
+    }
+  ]
+}

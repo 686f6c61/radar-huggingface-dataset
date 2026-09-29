@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Vlad39382/qwen3-0.6b-ru-struct-gguf",
+  "slug": "vlad39382-qwen3-0-6b-ru-struct-gguf",
+  "author": "Vlad39382",
+  "url": "https://huggingface.co/Vlad39382/qwen3-0.6b-ru-struct-gguf",
+  "created_at": "2026-09-29T19:05:17.000Z",
+  "updated_at": "2026-09-29T19:33:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama.cpp",
+    "russian",
+    "structured-output",
+    "json",
+    "text-generation",
+    "ru",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1640684202,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

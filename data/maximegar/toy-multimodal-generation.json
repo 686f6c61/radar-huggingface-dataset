@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "maximegar/toy-multimodal-generation",
+  "slug": "maximegar-toy-multimodal-generation",
+  "author": "maximegar",
+  "url": "https://huggingface.co/maximegar/toy-multimodal-generation",
+  "created_at": "2026-09-29T16:08:26.000Z",
+  "updated_at": "2026-09-29T16:08:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bcnmartin96/toy-multimodal-generation · Hugging Face",
+      "url": "https://huggingface.co/bcnmartin96/toy-multimodal-generation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "maximegar (Maxime Garnier) - Hugging Face",
+      "url": "https://huggingface.co/maximegar",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 10 hours ago ... published a model about 10 hours ago"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type. Note that dates reflect the earliest meaningful availability stage shown in each entry. Public ..."
+    },
+    {
+      "title": "[2410.00215] Characterizing and Efficiently Accelerating Multimodal ...",
+      "url": "https://arxiv.org/abs/2410.00215",
+      "snippet": "To sustainably scale generative AI capabilities to billions of users in the world, inference must be fast and efficient. This paper pinpoints key system design and optimization opportunities by characterizing a family of emerging multi-modal generation models on real systems."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed455",
+  "slug": "francesca9805-zho-hans-10mb-ppt-dp-100mb-packed-bfdiso_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed455",
+  "created_at": "2026-09-29T16:51:57.000Z",
+  "updated_at": "2026-09-29T16:55:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/zho_hans_10mb",
+    "base_model:finetune:goldfish-models/zho_hans_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79243938,
+  "storage_human": "79 MB",
+  "base_model": "goldfish-models/zho_hans_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Se désinscrire des sites de rencontre - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-8721385-se-desinscrire-des-sites-de-rencontre",
+      "snippet": "Oct 28, 2014 · Salut, va voir directement sur les sites en question pour voir si une option te permet de supprimer le compte. Les sites …"
+    },
+    {
+      "title": "Probleme camera sur web liberticam [Résolu] - Windows",
+      "url": "https://forums.commentcamarche.net/forum/affich-4961737-probleme-camera-sur-web-liberticam",
+      "snippet": "Bonjour, voila je voulais aller sur un site liberticam je me suis conecter mais je narrive pas à afficher les cam des autre membres …"
+    },
+    {
+      "title": "Pseudo oublié... - Forum Réseaux sociaux - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-30975274-pseudo-oublie",
+      "snippet": "Bonjour, je me suis mise en mode veille et je voudrais revenir sur le site mais jai oublier mon pseudo que faire? je sais simplement …"
+    },
+    {
+      "title": "Recuperer une video sur un site internet [Résolu] - TV & Vidéo",
+      "url": "https://forums.commentcamarche.net/forum/affich-2101003-recuperer-une-video-sur-un-site-internet",
+      "snippet": "Bonjour Je voudrais partager ma façon efficace et pratique: un programme en français. Ce programme peut nous aider à télécharger …"
+    },
+    {
+      "title": "Comment debloquer mon ip sur un site - Forum Windows",
+      "url": "https://forums.commentcamarche.net/forum/affich-5100970-comment-debloquer-mon-ip-sur-un-site",
+      "snippet": "re explique ce que cela implique pour toi elle te tiend mais comment ?????puisqu'une ip change tout le temps une fois minimum par …"
+    }
+  ]
+}

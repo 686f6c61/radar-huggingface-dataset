@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "id": "Beko2210/statim-decide-multilingual-base-pii",
+  "slug": "beko2210-statim-decide-multilingual-base-pii",
+  "author": "Beko2210",
+  "url": "https://huggingface.co/Beko2210/statim-decide-multilingual-base-pii",
+  "created_at": "2026-09-29T14:08:18.000Z",
+  "updated_at": "2026-09-29T14:08:27.000Z",
+  "license": "statim-weights",
+  "license_family": "unknown",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "gguf",
+  "languages": [
+    "ar",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "ru",
+    "sv",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "statim",
+    "lora",
+    "adapter",
+    "pii",
+    "zero-shot-classification",
+    "ar",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "nl",
+    "ru",
+    "sv",
+    "zh",
+    "base_model:Beko2210/statim-decide-multilingual-base",
+    "base_model:adapter:Beko2210/statim-decide-multilingual-base",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3379200,
+  "parameters_human": "3.4M",
+  "storage_bytes": 27070080,
+  "storage_human": "27 MB",
+  "base_model": "Beko2210/statim-decide-multilingual-base",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "pii ar (n=150, seed=20260927, z=2.0, alpha=0.05)",
+      "metric": null,
+      "value": 0.9067
+    },
+    {
+      "task": null,
+      "dataset": "pii de (n=150, seed=20260927, z=2.0, alpha=0.05)",
+      "metric": null,
+      "value": 0.8667
+    },
+    {
+      "task": null,
+      "dataset": "pii en (n=150, seed=20260927, z=2.0, alpha=0.05)",
+      "metric": null,
+      "value": 0.9267
+    },
+    {
+      "task": null,
+      "dataset": "pii es (n=150, seed=20260927, z=2.0, alpha=0.05)",
+      "metric": null,
+      "value": 0.8933
+    },
+    {
+      "task": null,
+      "dataset": "pii fr (n=150, seed=20260927, z=2.0, alpha=0.05)",
+      "metric": null,
+      "value": 0.94
+    },
+    {
+      "task": null,
+      "dataset": "pii it (n=150, seed=20260927, z=2.0, alpha=0.05)",
+      "metric": null,
+      "value": 0.92
+    },
+    {
+      "task": null,
+      "dataset": "pii ja (n=150, seed=20260927, z=2.0, alpha=0.05)",
+      "metric": null,
+      "value": 0.9267
+    },
+    {
+      "task": null,
+      "dataset": "pii nl (n=150, seed=20260927, z=2.0, alpha=0.05)",
+      "metric": null,
+      "value": 0.8667
+    },
+    {
+      "task": null,
+      "dataset": "pii ru (n=150, seed=20260927, z=2.0, alpha=0.05)",
+      "metric": null,
+      "value": 0.9467
+    },
+    {
+      "task": null,
+      "dataset": "pii sv (n=150, seed=20260927, z=2.0, alpha=0.05)",
+      "metric": null,
+      "value": 0.8733
+    },
+    {
+      "task": null,
+      "dataset": "pii zh (n=150, seed=20260927, z=2.0, alpha=0.05)",
+      "metric": null,
+      "value": 0.9467
+    }
+  ],
+  "sources": [
+    {
+      "title": "Releases · BEKO2210/statim · GitHub",
+      "url": "https://github.com/BEKO2210/statim/releases",
+      "snippet": "Published weights on Hugging Face, f32 and q8_0 GGUF plus the checkpoint, with model cards generated from the gate evaluation: statim-decide-en-large · statim-decide-multilingual-base."
+    },
+    {
+      "title": "Beko2210 (Belkis Aslani) - Hugging Face",
+      "url": "https://huggingface.co/Beko2210",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 19 hours ago ... liked a model 1 day ago"
+    },
+    {
+      "title": "GitHub - BEKO2210/BEKO2210",
+      "url": "https://github.com/BEKO2210/BEKO2210",
+      "snippet": "Contribute to BEKO2210/BEKO2210 development by creating an account on GitHub."
+    },
+    {
+      "title": "Beko2210/German-Instruct-Dataset · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Beko2210/German-Instruct-Dataset/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "I Built Non-Autoregressive Decision Models with RL a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\". From our March 2025 arXiv paper on sequence conversion trajectories to Laya: a sub-35ms open-weight System 1 decision engine with RLCD, multilingual routing across 100+ languages, and state-of-the-art calibration."
+    }
+  ]
+}

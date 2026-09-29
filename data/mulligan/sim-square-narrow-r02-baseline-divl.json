@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mulligan/sim-square-narrow-r02-baseline-divl",
+  "slug": "mulligan-sim-square-narrow-r02-baseline-divl",
+  "author": "mulligan",
+  "url": "https://huggingface.co/mulligan/sim-square-narrow-r02-baseline-divl",
+  "created_at": "2026-09-29T01:50:29.000Z",
+  "updated_at": "2026-09-29T01:50:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mulligan",
+    "sim-square-narrow",
+    "divl-agent",
+    "dataset:mulligan/sim-square-narrow-c00-teleop-baseline",
+    "dataset:mulligan/sim-square-narrow-c01-baseline-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c01-dagger-baseline",
+    "dataset:mulligan/sim-square-narrow-c02-baseline-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c02-dagger-baseline",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1447883255,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AZ Porn Comics - HD Hentai Comics & Cartoon Porn",
+      "url": "https://azporncomics.com/porn-comics/",
+      "snippet": "AZ Porn Comics Here at AZ Porn Comics you will find thousands of HD hentai comics inspired by the porn versions of cartoons and …"
+    },
+    {
+      "title": "Cartoon Porn Comics – free HD Hentai toons | AZ Porn Comics",
+      "url": "https://azporncomics.com/cartoon-porn-comics/",
+      "snippet": "Read free Cartoon Porn Comics online: hentai cartoon parodies, XXX animated sex comics and uncensored cartoon porn in HD, …"
+    },
+    {
+      "title": "Incest Porn Comics & HD Hentai sex | AZ Porn comics",
+      "url": "https://azporncomics.com/incest-porn-comics/",
+      "snippet": "Enjoy the best incest porn comics collected in a hentai archive featuring entire families from famous and lesser-known anime and …"
+    },
+    {
+      "title": "Family Porn Comics & Hentai sex",
+      "url": "https://azporncomics.com/family-porn-comics/",
+      "snippet": "Dive into Family Porn comics where taboo fantasies take center stage. Unleash the forbidden allure of Family hentai as these …"
+    },
+    {
+      "title": "Mother Porn Comics & Hentai HD | AZ Porn Comics",
+      "url": "https://azporncomics.com/mother-porn-comics/",
+      "snippet": "Dive deep into Mother Porn comics for a raw, uninhibited ride through the taboo world of hentai fantasies. If twisted desires and …"
+    }
+  ]
+}

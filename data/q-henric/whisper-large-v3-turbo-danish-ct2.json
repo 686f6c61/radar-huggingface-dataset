@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "q-henric/whisper-large-v3-turbo-danish-ct2",
+  "slug": "q-henric-whisper-large-v3-turbo-danish-ct2",
+  "author": "q-henric",
+  "url": "https://huggingface.co/q-henric/whisper-large-v3-turbo-danish-ct2",
+  "created_at": "2026-09-29T14:24:35.000Z",
+  "updated_at": "2026-09-29T14:28:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "ctranslate2",
+    "faster-whisper",
+    "whisperx",
+    "automatic-speech-recognition",
+    "da",
+    "base_model:thorhojhus/whisper-large-v3-turbo-danish",
+    "base_model:finetune:thorhojhus/whisper-large-v3-turbo-danish",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1617884929,
+  "storage_human": "1.6 GB",
+  "base_model": "thorhojhus/whisper-large-v3-turbo-danish",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Q (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Q_(lettre)",
+      "snippet": "Le q est le plus souvent suivi de la lettre u (sauf quelques exceptions ci-dessous) pour former le digramme qu. Q, ou le digraphe qu, …"
+    },
+    {
+      "title": "Q - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Q",
+      "snippet": "Q (minuscule: q) is the seventeenth letter of the Latin alphabet, used in the modern English alphabet, the alphabets of other western …"
+    },
+    {
+      "title": "La lettre Q - apprendre l'alphabet - chanson pour les tout-petits",
+      "url": "https://www.youtube.com/watch?v=WmKQNzuUqPM",
+      "snippet": "Aug 20, 2016 · La lettre Q - apprendre l'alphabet - chanson pour les tout-petits apprends avec moi - ABC123 en français 25.9K …"
+    },
+    {
+      "title": "Q — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Q",
+      "snippet": "Q (majuscule) ou q (minuscule) est la 17e lettre et la 13e consonne de l' alphabet latin."
+    },
+    {
+      "title": "q | Dictionnaire de l’Académie française | 9e édition",
+      "url": "https://www.dictionnaire-academie.fr/article/A9Q0001",
+      "snippet": "Définition de Q : Dix-septième lettre et treizième consonne de l’alphabet français."
+    }
+  ]
+}

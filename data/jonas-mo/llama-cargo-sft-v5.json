@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jonas-mo/llama-cargo-sft-v5",
+  "slug": "jonas-mo-llama-cargo-sft-v5",
+  "author": "jonas-mo",
+  "url": "https://huggingface.co/jonas-mo/llama-cargo-sft-v5",
+  "created_at": "2026-09-29T15:06:44.000Z",
+  "updated_at": "2026-09-29T15:06:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114523177,
+  "storage_human": "115 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jonas & Cie | Costumes et prêt-à-porter pour homme",
+      "url": "https://jonas-et-cie.fr/",
+      "snippet": "Une histoire de famille vouée à sublimer et souligner l’élégance au masculin, Jonas & Cie est le tailleur par excellence du Sentier …"
+    },
+    {
+      "title": "Jonas France",
+      "url": "https://jonasfrance.com/",
+      "snippet": "Aujourd'hui, JONAS est un importateur international présent dans toute l'Europe, reconnu pour son efficacité opérationnelle et son …"
+    },
+    {
+      "title": "Jonas Brothers - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jonas_Brothers",
+      "snippet": "Joe Jonas plays the lead male role and lead singer Shane Gray, Nick Jonas plays the role of Nate, a guitarist, and Kevin Jonas plays …"
+    },
+    {
+      "title": "Jonas — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jonas",
+      "snippet": "Dans le judaïsme, Jonas (Yona), abrégé en Jon1, fils d'Amitthaï, est le cinquième des douze petits prophètes de la Bible 2. C'est un …"
+    },
+    {
+      "title": "Vacanze sostenibili in bici, barca e trekking | Jonas",
+      "url": "https://jonas.it/",
+      "snippet": "May 1, 2013 · Viaggi di gruppo Jonas: idee di viaggio in piccoli gruppi tra mare, bici, barca e trekking. Scegli l’esperienza su misura …"
+    }
+  ]
+}

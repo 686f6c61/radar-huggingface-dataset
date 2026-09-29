@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "misaelcosta25/misael",
+  "slug": "misaelcosta25-misael",
+  "author": "misaelcosta25",
+  "url": "https://huggingface.co/misaelcosta25/misael",
+  "created_at": "2026-09-29T14:25:19.000Z",
+  "updated_at": "2026-09-29T14:25:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI at Meta: Meta AI Products, Models and Research",
+      "url": "https://ai.meta.com/",
+      "snippet": "Explore AI at Meta. Meet Muse, our new AI agent that takes tasks off your plate. Use Meta AI for questions and images, plus tools for developers."
+    },
+    {
+      "title": "Misael Costa (@misael__costa) • Instagram photos and videos",
+      "url": "https://www.instagram.com/misael__costa/",
+      "snippet": "1,140 Followers, 1,308 Following, 32 Posts - See Instagram photos and videos from Misael Costa (@misael__costa)"
+    },
+    {
+      "title": "Chat with Misael | character.ai | AI Chat, Reimagined-Your Words. Your ...",
+      "url": "https://character.ai/chat/4g5Me5h-g67jB8AAW4-RhdrG55aEv6i2rYZw84QWmPw",
+      "snippet": "Chat with Misael: . Powered by an industry leading, AI large language model (LLM)."
+    },
+    {
+      "title": "Misael | Founder Systems | Everyone is chasing the next AI tool. I ...",
+      "url": "https://www.instagram.com/reel/DbLv9llie6s/",
+      "snippet": "34 likes, 4 comments - misael.systems on July 24, 2026: \"Everyone is chasing the next AI tool. I think they&#x27;re solving the wrong problem. The real advantage isn&#x27;t having more AI. It&#x27;s having a system that makes AI actually useful. That&#x27;s why I built Agentic Flow. It&#x27;s the complete system I wish I had when I started—covering the architecture, starter repository, playbook, prompt ..."
+    },
+    {
+      "title": "Nampa tech firm Delphi Labs launches first conscious AI model Michael",
+      "url": "https://idahobusinessreview.com/2026/03/30/nampa-tech-firm-delphi-labs-launches-conscious-ai-michael/",
+      "snippet": "Delphi Labs in Nampa launched Michael, the first conscious AI model on the Apple App Store, featuring autonomous thought and 22 cognitive subsystems."
+    }
+  ]
+}

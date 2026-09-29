@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "julienlambert/vit-retrieval-fast10",
+  "slug": "julienlambert-vit-retrieval-fast10",
+  "author": "julienlambert",
+  "url": "https://huggingface.co/julienlambert/vit-retrieval-fast10",
+  "created_at": "2026-09-29T14:15:49.000Z",
+  "updated_at": "2026-09-29T14:15:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "julienlambert (Julien Lambert) - Hugging Face",
+      "url": "https://huggingface.co/julienlambert/models",
+      "snippet": "Into NLP, diffusion models and AI agents."
+    },
+    {
+      "title": "GitHub - google-research/vision_transformer",
+      "url": "https://github.com/google-research/vision_transformer",
+      "snippet": "Table of contents: Vision Transformer and MLP-Mixer Architectures Colab Installation Fine-tuning a model Vision Transformer Available ViT models Expected ViT results MLP-Mixer Available Mixer models Expected Mixer results LiT models Running on cloud Create a VM Setup VM Bibtex Disclaimers Changelog"
+    },
+    {
+      "title": "yichenthu/vit-retrieval at main - Hugging Face",
+      "url": "https://huggingface.co/yichenthu/vit-retrieval/tree/main",
+      "snippet": "yichenthu / vit-retrieval Like 0 Safetensors PyTorch vit retrieval License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main vit-retrieval 142 kB Ctrl+K Ctrl+K 1 contributor History:2 commits yichenthu Add inference.py, README.md, config.json, training_args.json, model.safetensors 53b9f1b verifiedabout 11 hours ..."
+    },
+    {
+      "title": "GitHub - NVlabs/FasterViT: [ICLR 2024] Official PyTorch implementation ...",
+      "url": "https://github.com/NVlabs/FasterViT",
+      "snippet": "[ICLR 2024] Official PyTorch implementation of FasterViT: Fast Vision Transformers with Hierarchical Attention - NVlabs/FasterViT"
+    },
+    {
+      "title": "[2503.19108] Your ViT is Secretly an Image Segmentation Model",
+      "url": "https://arxiv.org/abs/2503.19108",
+      "snippet": "Vision Transformers (ViTs) have shown remarkable performance and scalability across various computer vision tasks. To apply single-scale ViTs to image segmentation, existing methods adopt a convolutional adapter to generate multi-scale features, a pixel decoder to fuse these features, and a Transformer decoder that uses the fused features to make predictions. In this paper, we show that the ..."
+    }
+  ]
+}

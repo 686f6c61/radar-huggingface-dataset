@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wassname/query-steering",
+  "slug": "wassname-query-steering",
+  "author": "wassname",
+  "url": "https://huggingface.co/wassname/query-steering",
+  "created_at": "2026-09-29T01:53:36.000Z",
+  "updated_at": "2026-09-29T09:53:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "steering",
+    "query-steering",
+    "interpretability",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:finetune:Qwen/Qwen3-32B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43084312,
+  "storage_human": "43 MB",
+  "base_model": "Qwen/Qwen3-4B, Qwen/Qwen3-32B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wassname/query-steering · Hugging Face",
+      "url": "https://huggingface.co/wassname/query-steering",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - wassname/query-steering: modify the model attention so it can ...",
+      "url": "https://github.com/wassname/query-steering",
+      "snippet": "A model can know something about its situation and not say it: that it is being tested, or what it did earlier in an agent run. Steering the queries made it read that back (Demos 2 and 3), without training and from generic pairs. Here the model was told it is an eval; whether this works when the model only infers it is still open."
+    },
+    {
+      "title": "wassname (Michael J Clark) - GitHub",
+      "url": "https://github.com/wassname",
+      "snippet": "Query steering We wanted to try steering a model&#x27;s attention. It works! We steer its attention towards a secret, and it blabs about it. This could help with eval awareness, and with checking what a model knows when chain-of-thought monitoring is fragile."
+    },
+    {
+      "title": "wassname (Michael J. Clark) - Hugging Face",
+      "url": "https://huggingface.co/wassname/models",
+      "snippet": "AI Safety, Model Evaluation, Representation Engineering, Ethics Benchmarks"
+    },
+    {
+      "title": "Steering attention in query space makes models… · AGI Hunt",
+      "url": "https://agihunt.info/en/p/1a0eaa4454aa5db5a102a8d7ded",
+      "snippet": "voooooogel · x · 2026-09-29 wassname shares an alignment experiment: instead of steering hidden states, he steers the model&#x27;s attention itself."
+    }
+  ]
+}

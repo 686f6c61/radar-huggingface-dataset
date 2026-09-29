@@ -5,7 +5,7 @@
   "author": "handwoven8588",
   "url": "https://huggingface.co/handwoven8588/CodeRankEmbed-flash-attn",
   "created_at": "2026-06-20T23:19:52.000Z",
-  "updated_at": "2026-09-27T21:53:49.000Z",
+  "updated_at": "2026-09-28T13:15:07.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 12986,
+  "downloads_30d": 12925,
   "trending_score": 0,
   "parameters": 136731648,
   "parameters_human": "136.7M",
-  "storage_bytes": 820413112,
-  "storage_human": "820 MB",
+  "storage_bytes": 820882215,
+  "storage_human": "821 MB",
   "base_model": "nomic-ai/CodeRankEmbed",
   "formats": [
     "safetensors"

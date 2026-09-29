@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ChrisWang233/bar-gtr-st-128-inversion",
+  "slug": "chriswang233-bar-gtr-st-128-inversion",
+  "author": "ChrisWang233",
+  "url": "https://huggingface.co/ChrisWang233/bar-gtr-st-128-inversion",
+  "created_at": "2026-09-29T02:27:16.000Z",
+  "updated_at": "2026-09-29T02:32:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 343161984,
+  "parameters_human": "343.2M",
+  "storage_bytes": 6473765795,
+  "storage_human": "6.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChrisWang233 (Yubo Wang) - Hugging Face",
+      "url": "https://huggingface.co/ChrisWang233/datasets",
+      "snippet": "User profile of Yubo Wang on Hugging Face"
+    },
+    {
+      "title": "DAEI/DAEI at main · ChrisWang233/DAEI · GitHub",
+      "url": "https://github.com/ChrisWang233/DAEI/tree/main/DAEI",
+      "snippet": "Denoising-Aware Embedding Inversion. Contribute to ChrisWang233/DAEI development by creating an account on GitHub."
+    },
+    {
+      "title": "Best local LLMs for 128GB RAM in 2026 | LocalClaw",
+      "url": "https://localclaw.io/ram/128gb",
+      "snippet": "Best local AI models that run with 128GB RAM. Compare LLMs by quality, speed, coding, reasoning, quantization and LM Studio setup."
+    },
+    {
+      "title": "GitHub - ChrisWang233/DAEI: Denoising-Aware Embedding Inversion",
+      "url": "https://github.com/ChrisWang233/DAEI",
+      "snippet": "Denoising-Aware Embedding Inversion. Contribute to ChrisWang233/DAEI development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Model Inversion Attacks: How They Work & Defense",
+      "url": "https://nohack.net/ai-model-inversion-attacks-explained/",
+      "snippet": "AI model inversion attacks reconstruct private training data from deployed models. Learn how these attacks work, real-world examples, and how to defend your ML systems."
+    }
+  ]
+}

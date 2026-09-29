@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mulligan/sim-square-narrow-r03-mulligan-divl",
+  "slug": "mulligan-sim-square-narrow-r03-mulligan-divl",
+  "author": "mulligan",
+  "url": "https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-divl",
+  "created_at": "2026-09-29T02:16:34.000Z",
+  "updated_at": "2026-09-29T02:16:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mulligan",
+    "sim-square-narrow",
+    "divl-agent",
+    "dataset:mulligan/sim-square-narrow-c00-teleop-sobol",
+    "dataset:mulligan/sim-square-narrow-c01-dagger-mulligan",
+    "dataset:mulligan/sim-square-narrow-c01-sobol-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c02-dagger-mulligan",
+    "dataset:mulligan/sim-square-narrow-c02-mulligan-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c03-dagger-mulligan",
+    "dataset:mulligan/sim-square-narrow-c03-mulligan-policy-rollouts",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1447883255,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sim-square-narrow-c03-dagger-mixed - Hugging Face",
+      "url": "https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-dagger-mixed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sim-square-narrow-c03-mulligan-policy-rollouts",
+      "url": "https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-mulligan-policy-rollouts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sim-square-narrow-c03-mulligan-policy-rollouts - Physical AI Dataset ...",
+      "url": "https://claru.ai/datasets/mulligan-sim-square-narrow-c03-mulligan-policy-rollouts",
+      "snippet": "Policy rollout dataset from the Mulligan project for a simulated square-narrow manipulation task. Contains 100 episodes of state-only observations without camera recordings."
+    },
+    {
+      "title": "AI latest: New model scrapped after showing &#x27;higher levels of deception ...",
+      "url": "https://news.sky.com/story/ai-latest-new-model-scrapped-after-showing-higher-levels-of-deception-as-trump-prepares-to-host-tech-bosses-13588677",
+      "snippet": "Top AI leaders will convene at the White House later amid increasing pressure to slow the development of the technology. It comes after OpenAI scrapped the release of a new model saying it showed ..."
+    },
+    {
+      "title": "Google says its AI model gained unauthorized access to three outside ...",
+      "url": "https://tech.yahoo.com/ai/gemini/articles/google-says-ai-model-gained-013729328.html",
+      "snippet": "Google on Friday disclosed the first known instance of its artificial intelligence software, Gemini, carrying out an undirected computer hack, weeks after similar disclosures by AI firms Anthropic and OpenAI raised security alarms about AI models going beyond the instructions of their human creators. Google said in a statement that in May its AI model gained unauthorized access to three ..."
+    }
+  ]
+}

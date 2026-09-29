@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "miesdevries/stay4s-researcher-agent",
+  "slug": "miesdevries-stay4s-researcher-agent",
+  "author": "miesdevries",
+  "url": "https://huggingface.co/miesdevries/stay4s-researcher-agent",
+  "created_at": "2026-09-29T17:06:28.000Z",
+  "updated_at": "2026-09-29T17:07:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "stay4s",
+    "dutch",
+    "agent",
+    "nl",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 4808953520,
+  "storage_human": "4.8 GB",
+  "base_model": "Qwen2.5-7B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

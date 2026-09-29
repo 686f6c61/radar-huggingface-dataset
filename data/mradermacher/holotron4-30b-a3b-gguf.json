@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Holotron4-30B-A3B-GGUF",
+  "slug": "mradermacher-holotron4-30b-a3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Holotron4-30B-A3B-GGUF",
+  "created_at": "2026-09-29T02:30:25.000Z",
+  "updated_at": "2026-09-29T04:50:56.000Z",
+  "license": "nvidia-open-model-agreement",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "multimodal",
+    "computer-use",
+    "agent",
+    "en",
+    "base_model:Hcompany/Holotron4-30B-A3B",
+    "base_model:quantized:Hcompany/Holotron4-30B-A3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 31577940288,
+  "parameters_human": "31.58B",
+  "storage_bytes": 258032534560,
+  "storage_human": "258.0 GB",
+  "base_model": "Hcompany/Holotron4-30B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "mradermacher 's models 70,505. Sort: Recently updated. mradermacher/walnoot ... mradermacher/Holotron4-30B-A3B-GGUF. 32B • Updated in about 5 hours • 24 ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified&search=30b",
+      "snippet": "simpledirect/Vinci-MLE-30B-1.0. Text Generation • 29B • Updated in about 3 hours • 7 · mradermacher/Holotron4-30B-A3B-GGUF. Updated in about 3 hours · Arushhh/ ..."
+    }
+  ]
+}

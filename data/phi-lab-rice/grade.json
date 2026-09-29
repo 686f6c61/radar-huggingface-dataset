@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "phi-lab-rice/GRADE",
+  "slug": "phi-lab-rice-grade",
+  "author": "phi-lab-rice",
+  "url": "https://huggingface.co/phi-lab-rice/GRADE",
+  "created_at": "2026-09-29T02:33:03.000Z",
+  "updated_at": "2026-09-29T05:36:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17276885407,
+  "storage_human": "17.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phi — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Phi",
+      "snippet": "Comme la plupart des autres lettres grecques, le phi est parfois utilisé en dehors de son contexte alphabétique grec dans les …"
+    },
+    {
+      "title": "Phi - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Phi",
+      "snippet": "The diameter symbol in engineering, ⌀, is often erroneously referred to as \"phi\", and the diameter symbol is sometimes erroneously …"
+    },
+    {
+      "title": "PHI (Pharmacie Humanitaire Internationale)",
+      "url": "https://www.phi.asso.fr/",
+      "snippet": "02 48 60 72 68 contact-siege@phi.asso.fr Adresse siège social : 534 Avenue Jean Giraudoux 18200 Saint-Amand-Montrond Nos …"
+    },
+    {
+      "title": "Toward AI-Resilient Assessment in Computer Science Courses in ...",
+      "url": "https://arxiv.org/pdf/2606.30655",
+      "snippet": "16.06.2026 ... The concrete construction is an approximate-membership assignment centered on Bloom filters for COMP 480/580 at Rice University. Students are ..."
+    },
+    {
+      "title": "φ Symbole Phi - PiliApp",
+      "url": "https://fr.piliapp.com/symbols/phi/",
+      "snippet": "Qu'est-ce que le symbole Phi et comment l'utiliser ? Le symbole Phi est représenté par φ (minuscule standard), Φ (majuscule …"
+    }
+  ]
+}

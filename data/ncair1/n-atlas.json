@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "NCAIR1/N-ATLaS",
+  "slug": "ncair1-n-atlas",
+  "author": "NCAIR1",
+  "url": "https://huggingface.co/NCAIR1/N-ATLaS",
+  "created_at": "2025-09-19T16:10:53.000Z",
+  "updated_at": "2025-09-23T12:43:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 103,
+  "downloads_30d": 532,
+  "trending_score": 12,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NCAIR1/N-ATLaS · Hugging Face",
+      "url": "https://huggingface.co/NCAIR1/N-ATLaS",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NCAIR1/N-ATLaS at main - Hugging Face",
+      "url": "https://huggingface.co/NCAIR1/N-ATLaS/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ncair1 - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/NCAIR1",
+      "snippet": "Looking for Ncair1&#x27;s top AI models? Browse their full Hugging Face collection of 1 model. Explore AI models and contributions by Ncair1 on Huggingface."
+    },
+    {
+      "title": "llm - NCAIR",
+      "url": "https://ncair.nitda.gov.ng/llm/",
+      "snippet": "N-ATLAS: The Nigerian Atlas for Languages & AI at Scale. An open-source, multilingual large language model trained to understand and generate Nigeria&#x27;s diverse voices. By open-sourcing N-ATLAS, we are inviting researchers, innovators, and communities worldwide to collaborate on advancing natural language processing for under-represented ..."
+    },
+    {
+      "title": "N-ATLaS: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/n-atlas-ncair1",
+      "snippet": "N-ATLaS is a text-to-text model developed by NCAIR1. The model has accumulated 9,917 downloads, indicating modest but consistent adoption. Without a..."
+    }
+  ]
+}

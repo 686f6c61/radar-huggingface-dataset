@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Plurato123/OctLLM",
+  "slug": "plurato123-octllm",
+  "author": "Plurato123",
+  "url": "https://huggingface.co/Plurato123/OctLLM",
+  "created_at": "2026-09-29T19:14:46.000Z",
+  "updated_at": "2026-09-29T19:32:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2_5_vl",
+    "octllm",
+    "3d",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11090644992,
+  "parameters_human": "11.09B",
+  "storage_bytes": 22497221348,
+  "storage_human": "22.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornography & Child Pornography - Childline South Africa",
+      "url": "https://www.childlinesa.org.za/teens/for-teens/issues-affecting-you/pornography-child-pornography/",
+      "snippet": "Remember that taking pictures of persons under that age of 18 that are sexual and pornographic is illegal and that sending sexual …Read more"
+    },
+    {
+      "title": "Teens (13-18) Archives - Page 2 of 8 - UK Safer Internet Centre",
+      "url": "https://saferinternet.org.uk/research-topic/teens-13-18/page/2",
+      "snippet": "147: Intimate image abuse in adults and under 18s: A comparative analysis of cases dealt with by the Revenge Porn Helpline and …"
+    },
+    {
+      "title": "More than 50 porn websites found with no age verification despite",
+      "url": "https://www.lbc.co.uk/article/porn-websites-age-verification-5Hjd7xF_2/",
+      "snippet": "Jul 28, 2025 · The new regulations, which came into force last week, are meant to compel sites and apps to have “highly effective” …"
+    },
+    {
+      "title": "Is There Anywhere to Watch Child Porn for Free? (Legal...",
+      "url": "https://factually.co/fact-checks/justice/illegal-child-porn-how-to-report-and-get-help-518848",
+      "snippet": "Apr 9, 2026 · Possessing, accessing, distributing, or viewing images or videos that depict minors in sexually explicit conduct is illegal …"
+    },
+    {
+      "title": "Does Any Country Allow People Under 18 to Make Porn?",
+      "url": "https://factually.co/fact-checks/justice/under-18-pornography-laws-minimum-age-legal-sites-8f93aa",
+      "snippet": "Apr 30, 2026 · There is no reliable evidence in the cited reporting that any country formally authorizes persons under 18 to produce …"
+    }
+  ]
+}

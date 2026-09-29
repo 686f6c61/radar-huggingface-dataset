@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "smashburger-dev/kleinhirn-weights",
+  "slug": "smashburger-dev-kleinhirn-weights",
+  "author": "smashburger-dev",
+  "url": "https://huggingface.co/smashburger-dev/kleinhirn-weights",
+  "created_at": "2026-09-29T13:58:54.000Z",
+  "updated_at": "2026-09-29T14:00:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "kleinhirn",
+  "languages": [],
+  "tags": [
+    "kleinhirn",
+    "gliner2",
+    "text-classification",
+    "zero-shot",
+    "webgpu",
+    "deberta-v2",
+    "base_model:fastino/gliner2.5-small-v1",
+    "base_model:finetune:fastino/gliner2.5-small-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 453973254,
+  "storage_human": "454 MB",
+  "base_model": "fastino/gliner2.5-small-v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Où manger un bon smash burger à Paris ? Nos bonnes adresses",
+      "url": "https://www.sortiraparis.com/hotel-restaurant/restaurant/guides/272418-smash-burger-paris",
+      "snippet": "Par ici les bonnes adresses ! Venue tout droit des Etats-Unis, la tendance du smash burger s'impose depuis quelques temps déjà …"
+    },
+    {
+      "title": "Super Smash - Burgers et Fried Chicken Fait Maison | Super Smash",
+      "url": "https://supersmashburger.io/",
+      "snippet": "Découvrez les meilleurs smash burgers et fried chicken burgers faits maison authentiques dans un style industriel et gaming old cool …"
+    },
+    {
+      "title": "Les smash burgers incontournables de Paris : notre sélection street food",
+      "url": "https://paris-soiree.fr/gastronomie/meilleurs-smash-burgers-paris/",
+      "snippet": "Découvrez notre top 10 des meilleurs smash burgers de Paris pour les amateurs de street food : adresses, goûts uniques et bonnes …"
+    },
+    {
+      "title": "SMASH BURGER PARIS menu, offres et prix - Uber Eats",
+      "url": "https://www.ubereats.com/fr/store/smash-burger-paris/B6Fi_DcVSAO-N8XdO-o_LQ?msockid=17cad4245ec368e230bdc3c75f6a6965",
+      "snippet": "Situé dans le quartier de Didot-Porte de Vanves à Paris, SMASH BURGER PARIS By (peut s'attendre à y trouver8) est un …"
+    },
+    {
+      "title": "Smash Burger Paris",
+      "url": "http://smashburgerparis.fr/",
+      "snippet": "© 2025 Smash Burger Paris. Tous droits réservés."
+    }
+  ]
+}

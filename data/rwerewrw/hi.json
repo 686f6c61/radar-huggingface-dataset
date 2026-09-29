@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rwerewrw/hi",
+  "slug": "rwerewrw-hi",
+  "author": "rwerewrw",
+  "url": "https://huggingface.co/rwerewrw/hi",
+  "created_at": "2026-09-29T02:22:03.000Z",
+  "updated_at": "2026-09-29T02:22:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "One API Key for Multi-model Chat & Agents",
+      "url": "https://himodels.ai/",
+      "snippet": "One API key for GPT-5.5, Claude Sonnet 4.6, DeepSeek V4 Pro and more. Multi-model chat, AI agents, and OpenAI/Anthropic-compatible API gateway."
+    },
+    {
+      "title": "Hi - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1892237414636580173",
+      "snippet": "Generate stunning anime art with the &#x27;Hi&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "HiModel · Institutional AI Quant Infrastructure",
+      "url": "https://www.himodel.app/",
+      "snippet": "At its core, HiModel is a complete AI quant production system made of a forecasting engine, an model governance layer, and institutional-grade execution systems. Core Capabilities Six institutional technology capabilities. End-to-end: AI research → execution → risk → monitoring → audit."
+    },
+    {
+      "title": "Hi-WM: Human-in-the-World-Model for Scalable Robot Post-Training",
+      "url": "https://arxiv.org/abs/2604.21741",
+      "snippet": "Meanwhile, action-conditioned world models have been studied mainly for imagination, synthetic data generation, and policy evaluation. We propose &#92;textbf{Human-in-the-World-Model (Hi-WM)}, a post-training framework that uses a learned world model as a reusable corrective substrate for failure-targeted policy improvement."
+    },
+    {
+      "title": "HiDream-ai/HiDream-I1-Full · Hugging Face",
+      "url": "https://huggingface.co/HiDream-ai/HiDream-I1-Full",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

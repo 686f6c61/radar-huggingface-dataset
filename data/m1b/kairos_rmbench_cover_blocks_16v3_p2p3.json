@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "m1b/kairos_rmbench_cover_blocks_16v3_p2p3",
+  "slug": "m1b-kairos_rmbench_cover_blocks_16v3_p2p3",
+  "author": "m1b",
+  "url": "https://huggingface.co/m1b/kairos_rmbench_cover_blocks_16v3_p2p3",
+  "created_at": "2026-09-29T16:49:03.000Z",
+  "updated_at": "2026-09-29T16:51:32.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18473917648,
+  "storage_human": "18.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "M1B Max Projecteur portable LED connecté 1080p avec Google",
+      "url": "https://www.viewsonic.com/fr/products/projectors/M1B%20Max",
+      "snippet": "Le projecteur LED portable M1B Max vous offre une expérience de divertissement de haut niveau, avec le design caractéristique de …Read more"
+    },
+    {
+      "title": "ViewSonic M1B Max - Vidéoprojecteur - LDLC",
+      "url": "https://www.ldlc.com/fiche/PB00672863.html",
+      "snippet": "Le vidéoprojecteur LED intelligent portable M1B Max vous offre une expérience de divertissement haut de gamme, grâce au design …"
+    },
+    {
+      "title": "Test Viewsonic M1B Max : notre avis complet - Frandroid",
+      "url": "https://www.frandroid.com/marques/viewsonic/2946091_test-du-videoprojecteur-viewsonic-m1b-max-le-mini-projecteur-led-sur-batterie-qui-veut-tout-faire",
+      "snippet": "Jan 25, 2026 · Le ViewSonic M1B Max est un vidéoprojecteur Full HD 1080p portable avec batterie, Google TV et pied inclinable sur …"
+    },
+    {
+      "title": "Vidéoprojecteur ViewSonic M1B Max - Son-Vidéo.com",
+      "url": "https://www.son-video.com/article/television-videoprojection-videoprojecteurs/viewsonic/m1b-max",
+      "snippet": "Le vidéoprojecteur LED ViewSonic M1B Max est un modèle nomade conçu pour une utilisation polyvalente, à l'intérieur ou à …"
+    },
+    {
+      "title": "Vidéoprojecteur Viewsonic portable M1B Max Noir et Argent | Darty",
+      "url": "https://www.darty.com/nav/achat/hifi_video/videoprojecteur-videoprojecteur/videoprojecteur_cinema/viewsonic_m1b_max.html?msockid=24f16d5c203e620d3b357abf21f3635a",
+      "snippet": "Vidéoprojecteur Viewsonic portable M1B Max Noir et Argent 2 autres Ajouter à une wishlist"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Hcompany/Holotron4-30B-A3B",
+  "slug": "hcompany-holotron4-30b-a3b",
+  "author": "Hcompany",
+  "url": "https://huggingface.co/Hcompany/Holotron4-30B-A3B",
+  "created_at": "2026-09-24T14:38:33.000Z",
+  "updated_at": "2026-09-28T14:34:47.000Z",
+  "license": "nvidia-open-model-agreement",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "NemotronH_Nano_Omni_Reasoning_V3",
+    "feature-extraction",
+    "multimodal",
+    "computer-use",
+    "agent",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 122,
+  "trending_score": 12,
+  "parameters": 33015598915,
+  "parameters_human": "33.02B",
+  "storage_bytes": 66050041207,
+  "storage_human": "66.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hcompany/Holotron4-30B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Hcompany/Holotron4-30B-A3B",
+      "snippet": "Holotron4 -30B-A3B is a vision-language model (VLM) for Computer Use, built on NVIDIA Nemotron 3 Nano Omni and developed by H Company. Used with the hai-agents harness, it can send screenshots and tool results to the model, then execute its requested clicks, typing, code, and tool calls."
+    },
+    {
+      "title": "Holo4: powering generalist computer-use agents - Hugging Face",
+      "url": "https://huggingface.co/blog/Hcompany/holo4",
+      "snippet": "A Blog post by H company on Hugging Face Holo4 is our new series of agentic models. It comes in two sizes: 27B dense and 35B-A3B Mixture of Experts. Both are available on the H Models API. We are also releasing an updated version of Holotron 3: Holotron4 Nano. Holo4 builds on our previous model and interacts with software through any available interface: GUIs, code, MCP and APIs. It scores ..."
+    },
+    {
+      "title": "Holotron4-30B-A3B API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Hcompany/Holotron4-30B-A3B",
+      "snippet": "Deploy Holotron4-30B-A3B with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "H Company Releases Holo4 Open Computer-Use Weights on Hugging Face",
+      "url": "https://ccleaks.com/news/holo4-open-weights-sep-2026",
+      "snippet": "The Holotron4 Nano line adds BF16 and FP8 checkpoints (Hcompany/Holotron4-30B-A3B and Hcompany/Holotron4-30B-A3B-FP8) on a NemotronH Nano Omni base for a smaller VRAM footprint on the same computer-use stack."
+    },
+    {
+      "title": "Operational intelligence for the enterprise | H",
+      "url": "https://hcompany.ai/",
+      "snippet": "Operational intelligence for the enterprise H is a frontier AI research lab and agentic platform that works across any system or interface without rebuilding your stack."
+    }
+  ]
+}

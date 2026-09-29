@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-krea2-turbo-int8-unet-2102643317442957314",
+  "slug": "runninghubai-rh-krea2-turbo-int8-unet-2102643317442957314",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-int8-unet-2102643317442957314",
+  "created_at": "2026-09-29T14:00:00.000Z",
+  "updated_at": "2026-09-29T14:10:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14133082650,
+  "storage_human": "14.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-krea2-turbo-int8-unet-2083709129864077314 · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-int8-unet-2083709129864077314",
+      "snippet": "About this model 模型名称： Krea 2 版本： v1.0 发布日期： 2026 年 6 月 22 日 模型类型： 文生图扩散模型 架构： 具有 120 亿参数的扩散 Transformer 许可证： Krea 2 社区许可证 发布形式： 开放权重发布及 Krea 托管的产品集成 模型开发者： Krea.ai, Inc."
+    },
+    {
+      "title": "RunningHubAI/rh-krea2-turbo-int8-unet-2095402501961351169 · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-int8-unet-2095402501961351169",
+      "snippet": "This repository provides rh-krea2-turbo-int8-unet weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "RunningHubAI/rh-krea2-turbo-int8-unet-2102169001475473410 · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-int8-unet-2102169001475473410",
+      "snippet": "This repository provides rh-krea2-turbo-int8-unet weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "Krea-2-Turbo - RunningHub Stable Diffusion & Flux Unet",
+      "url": "https://www.runninghub.ai/model/public/2071166071213748226",
+      "snippet": "The Turbo ultra-fast distilled version features low VRAM usage, 8-step lightning-fast image generation, and strong stylistic expressiveness. It is also currently a mainstream commercial ultra-fast image generation model in the local ComfyUI ecosystem."
+    },
+    {
+      "title": "Krea2-Turbo-int8 - RunningHub Stable Diffusion & Flux Unet",
+      "url": "https://www.runninghub.ai/model/public/2075879487979741186",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    }
+  ]
+}

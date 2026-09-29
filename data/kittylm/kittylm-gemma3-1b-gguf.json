@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "KittyLM/kittylm-gemma3-1b-gguf",
+  "slug": "kittylm-kittylm-gemma3-1b-gguf",
+  "author": "KittyLM",
+  "url": "https://huggingface.co/KittyLM/kittylm-gemma3-1b-gguf",
+  "created_at": "2026-09-29T14:18:30.000Z",
+  "updated_at": "2026-09-29T14:23:02.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "kittylm",
+    "ollama",
+    "llama-cpp",
+    "lm-studio",
+    "text-generation",
+    "base_model:KittyLM/kittylm-gemma3-1b",
+    "base_model:quantized:KittyLM/kittylm-gemma3-1b",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 814261152,
+  "storage_human": "814 MB",
+  "base_model": "KittyLM/kittylm-gemma3-1b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ggml-org/gemma-3-1b-it-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ggml-org/gemma-3-1b-it-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bartowski/google_gemma-3-1b-it-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/google_gemma-3-1b-it-GGUF",
+      "snippet": "Llamacpp imatrix Quantizations of gemma-3-1b-it by google Prompt format Download a file (not the whole branch) from below: Embed/output weights Downloading using huggingface-cli ARM/AVX information Which file should I choose? Credits"
+    },
+    {
+      "title": "GitHub - hackur/gemma3",
+      "url": "https://github.com/hackur/gemma3",
+      "snippet": "Try using a smaller model (e.g., 1B-IT instead of 8B, or a GGUF model with smaller quantization) Use 4-bit quantization instead of 8-bit or full precision (for Hugging Face models)"
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "Gemma 3 1B It GGUF by unsloth - LLM Explorer",
+      "url": "https://llm-explorer.com/model/unsloth%2Fgemma-3-1b-it-GGUF,4GJTW1q2LW9FZIk3bjBXT4",
+      "snippet": "Gemma 3 1B It GGUF is an open-source 1b LLM by unsloth. VRAM 0.6GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

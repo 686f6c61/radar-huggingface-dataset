@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Kanha-AI/f76cf576-967a-46fd-b886-e8655f31bbed-large",
+  "slug": "kanha-ai-f76cf576-967a-46fd-b886-e8655f31bbed-large",
+  "author": "Kanha-AI",
+  "url": "https://huggingface.co/Kanha-AI/f76cf576-967a-46fd-b886-e8655f31bbed-large",
+  "created_at": "2026-09-29T16:03:57.000Z",
+  "updated_at": "2026-09-29T16:04:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlc-llm",
+  "languages": [],
+  "tags": [
+    "mlc-llm",
+    "kanha",
+    "on-device",
+    "webgpu",
+    "fine-tuned",
+    "large",
+    "text-generation",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1415925760,
+  "storage_human": "1.4 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kanha-AI/72d13402-2526-4264-b7f6-0df347075e65-medium · Hugging Face",
+      "url": "https://huggingface.co/Kanha-AI/72d13402-2526-4264-b7f6-0df347075e65-medium",
+      "snippet": "Instructions to use Kanha-AI/72d13402-2526-4264-b7f6-0df347075e65-medium with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Kanha-AI/95cffae7-6c0a-4b9a-bc24-6ff4053dfe76-large · Hugging Face",
+      "url": "https://huggingface.co/Kanha-AI/95cffae7-6c0a-4b9a-bc24-6ff4053dfe76-large",
+      "snippet": "95cffae7-6c0a-4b9a-bc24-6ff4053dfe76-large ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - Kanha-AI/Kanha-AI",
+      "url": "https://github.com/Kanha-AI/Kanha-AI",
+      "snippet": "Crawl — Point Kanha at your site. We index your pages, handling JavaScript-rendered content automatically. Train — We generate question-answer pairs from your content and fine-tune a compact model tailored to your site. Deploy — Drop in a script tag, Web Component, or React component. The model loads and runs on-device via WebGPU."
+    },
+    {
+      "title": "Kanha AI - GitHub",
+      "url": "https://github.com/Kanha-AI",
+      "snippet": "Crawl — Point Kanha at your site. We index your pages, handling JavaScript-rendered content automatically. Train — We generate question-answer pairs from your content and fine-tune a compact model tailored to your site. Deploy — Drop in a script tag, Web Component, or React component. The model loads and runs on-device via WebGPU."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "chillenow/isnet-general-use-onnx",
+  "slug": "chillenow-isnet-general-use-onnx",
+  "author": "chillenow",
+  "url": "https://huggingface.co/chillenow/isnet-general-use-onnx",
+  "created_at": "2026-09-29T02:04:46.000Z",
+  "updated_at": "2026-09-29T02:04:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "background-removal",
+    "dichotomous-image-segmentation",
+    "isnet",
+    "onnxruntime-web",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90447799,
+  "storage_human": "90 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chillenow/isnet-general-use-onnx · Hugging Face",
+      "url": "https://huggingface.co/chillenow/isnet-general-use-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "x-Liola-x/isnet-general-use-onnx · Hugging Face",
+      "url": "https://huggingface.co/x-Liola-x/isnet-general-use-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "models/Generative_AI at main · onnx/models · GitHub",
+      "url": "https://github.com/onnx/models/tree/main/Generative_AI",
+      "snippet": "A collection of pre-trained, state-of-the-art models in the ONNX format - models/Generative_AI at main · onnx/models"
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

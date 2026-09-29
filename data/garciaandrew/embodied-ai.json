@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "garciaandrew/embodied-ai",
+  "slug": "garciaandrew-embodied-ai",
+  "author": "garciaandrew",
+  "url": "https://huggingface.co/garciaandrew/embodied-ai",
+  "created_at": "2026-09-29T14:07:46.000Z",
+  "updated_at": "2026-09-29T14:07:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embodied AI Agents: Modeling the World - arXiv.org",
+      "url": "https://arxiv.org/html/2506.22355v3",
+      "snippet": "Embodied AI agents are artificial intelligence systems that are instantiated in a visual, virtual, or physical form, enabling them to learn and interact with both the user and their physical or digital surroundings. These embodied AI systems require the ability to perceive and act within their environment in meaningful ways, thereby necessitating a deep understanding of the physical world in ..."
+    },
+    {
+      "title": "[2506.22355] Embodied AI Agents: Modeling the World - arXiv.org",
+      "url": "https://arxiv.org/abs/2506.22355",
+      "snippet": "This paper describes our research on AI agents embodied in visual, virtual or physical forms, enabling them to interact with both users and their environments. These agents, which include virtual avatars, wearable devices, and robots, are designed to perceive, learn and act within their surroundings, which makes them more similar to how humans learn and interact with the environments as ..."
+    },
+    {
+      "title": "Embodied Arena",
+      "url": "https://www.embodied-arena.com/",
+      "snippet": "Embodied Arena is a comprehensive, unified and evolving evaluation system and platform for embodied AI models. It features three types of core embodied tasks, a diverse range of high-quality benchmarks, an LLM-driven automated evaluation data generation framework, and a systematic embodied capability taxonomy. Moreover, Embodied Arena offers professional supports for advanced models and new ..."
+    },
+    {
+      "title": "GitHub - haoranD/Awesome-Embodied-AI: A curated list of awesome papers ...",
+      "url": "https://github.com/haoranD/Awesome-Embodied-AI",
+      "snippet": "A curated list of awesome papers on Embodied AI and related research/industry-driven resources, inspired by awesome-computer-vision. Embodied AI has led to a new breakthrough, and this repository will keep tracking and summarizing the research or industrial progress."
+    },
+    {
+      "title": "Embodied AI - Nature",
+      "url": "https://www.nature.com/collections/ibgfciaafb",
+      "snippet": "Embodied Artificial Intelligence (Embodied AI) is a cutting-edge field that aims to integrate AI into physical entities like robots, endowing them with the ability to actively perceive, learn from ..."
+    }
+  ]
+}

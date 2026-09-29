@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "t8star/semantic_bridge_T8-comic-combat",
+  "slug": "t8star-semantic_bridge_t8-comic-combat",
+  "author": "t8star",
+  "url": "https://huggingface.co/t8star/semantic_bridge_T8-comic-combat",
+  "created_at": "2026-09-29T17:18:18.000Z",
+  "updated_at": "2026-09-29T17:24:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "semantic-bridge",
+    "anime",
+    "combat",
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16831336,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

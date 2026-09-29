@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "chineduogunleye/contrastive-beta",
+  "slug": "chineduogunleye-contrastive-beta",
+  "author": "chineduogunleye",
+  "url": "https://huggingface.co/chineduogunleye/contrastive-beta",
+  "created_at": "2026-09-29T17:35:54.000Z",
+  "updated_at": "2026-09-29T17:36:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

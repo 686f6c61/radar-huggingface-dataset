@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "KittyLM/kittylm-gemma3-4b-gguf",
+  "slug": "kittylm-kittylm-gemma3-4b-gguf",
+  "author": "KittyLM",
+  "url": "https://huggingface.co/KittyLM/kittylm-gemma3-4b-gguf",
+  "created_at": "2026-09-29T15:09:37.000Z",
+  "updated_at": "2026-09-29T15:20:42.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "kittylm",
+    "ollama",
+    "llama-cpp",
+    "lm-studio",
+    "text-generation",
+    "base_model:KittyLM/kittylm-gemma3-4b",
+    "base_model:quantized:KittyLM/kittylm-gemma3-4b",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 2498096640,
+  "storage_human": "2.5 GB",
+  "base_model": "KittyLM/kittylm-gemma3-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KittyLM-4B GGUF (gemma3-4b) - Hugging Face",
+      "url": "https://huggingface.co/KittyLM/kittylm-gemma3-4b-gguf",
+      "snippet": "Quantized GGUF weights for KittyLM/kittylm-gemma3-4b — the kitten-speak LoRA finetune of google/gemma-3-4b-it. Finetune details, eval results, and license notes live on the main repo card."
+    },
+    {
+      "title": "ggml-org/gemma-3-4b-it-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ggml-org/gemma-3-4b-it-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gemma3:4b - ollama.com",
+      "url": "https://ollama.com/library/gemma3:4b",
+      "snippet": "The current, most capable model that runs on a single GPU."
+    },
+    {
+      "title": "google_gemma-3-4b-it-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/bartowski/google_gemma-3-4b-it-GGUF",
+      "snippet": "google_gemma-3-4b-it-GGUF - bartowski 在 ModelScope 开源的模型。"
+    },
+    {
+      "title": "ai/gemma3 - Docker Image",
+      "url": "https://hub.docker.com/r/ai/gemma3",
+      "snippet": "Fine-tune Gemma 3 (12B) for free using our Google Colab notebook here ⁠! Read our Blog about Gemma 3 support: unsloth.ai/blog/gemma3 ⁠ View the rest of our notebooks in our docs here ⁠. Export your fine-tuned model to GGUF, Ollama, llama.cpp or 🤗HF."
+    }
+  ]
+}

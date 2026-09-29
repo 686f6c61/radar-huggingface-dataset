@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-5d76aa795797c6bc",
+  "slug": "gradients-io-tournaments-augmented-5d76aa795797c6bc",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-5d76aa795797c6bc",
+  "created_at": "2026-09-29T02:19:45.000Z",
+  "updated_at": "2026-09-29T02:21:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 95,
+  "trending_score": 0,
+  "parameters": 8537680896,
+  "parameters_human": "8.54B",
+  "storage_bytes": 17109754506,
+  "storage_human": "17.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gradients-io-tournaments/augmented-5d76aa795797c6bc · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-5d76aa795797c6bc",
+      "snippet": "gradients-io-tournaments / augmented-5d76aa795797c6bc Like 0 Text Generation Transformers Safetensors gemma text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Gradients | Decentralised AI Training & Research",
+      "url": "https://www.gradients.io/app/research/tournament",
+      "snippet": "Decentralised AI Training & Research. > TOURNAMENTS View live, recent, and historical tournaments from Subnet 56"
+    },
+    {
+      "title": "Gradients | Anyone Can Train AI",
+      "url": "https://www.gradients.io/",
+      "snippet": "INTELLIGENCE, SIMPLIFIED. Gradients allows anyone in the world to train image & text models - intelligence, simplified."
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-4240d359cee74c94 at main",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-4240d359cee74c94/tree/main",
+      "snippet": "Instructions to use gradients-io-tournaments/augmented-4240d359cee74c94 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-4240d359cee74c94 - featherless.ai",
+      "url": "https://featherless.ai/models/gradients-io-tournaments/augmented-4240d359cee74c94",
+      "snippet": "Deploy Augmented-4240d359cee74c94 (7B parameters) via OpenAI-compatible API with 4K context. Flat-rate pricing from $25/month. The gradients-io-tourname..."
+    }
+  ]
+}

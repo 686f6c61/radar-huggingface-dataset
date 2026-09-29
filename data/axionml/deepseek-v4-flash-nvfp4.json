@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "AxionML/DeepSeek-V4-Flash-NVFP4",
+  "slug": "axionml-deepseek-v4-flash-nvfp4",
+  "author": "AxionML",
+  "url": "https://huggingface.co/AxionML/DeepSeek-V4-Flash-NVFP4",
+  "created_at": "2026-09-29T13:56:10.000Z",
+  "updated_at": "2026-09-29T13:56:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "AxionML",
+    "ModelOpt",
+    "DeepSeek-V4",
+    "quantized",
+    "NVFP4",
+    "nvfp4",
+    "sglang",
+    "mirror",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 290944616402,
+  "parameters_human": "290.94B",
+  "storage_bytes": 168298671351,
+  "storage_human": "168.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek-V4-Flash | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/DeepSeek-V4-Flash",
+      "snippet": "Key capabilities About this model We present a preview version of the DeepSeek-V4 series, including two strong Mixture-of-Experts (MoE) language models — DeepSeek-V4-Pro with 1.6T parameters (49B activated) and DeepSeek-V4-Flash with 284B parameters (13B activated) — both supporting a context length of one million tokens."
+    },
+    {
+      "title": "deepseek-ai / deepseek-v4-flash - docs.api.nvidia.com",
+      "url": "https://docs.api.nvidia.com/nim/reference/deepseek-ai-deepseek-v4-flash",
+      "snippet": "DeepSeek-V4-Flash is a Mixture-of-Experts (MoE) language model with 284 billion total parameters and 13 billion activated parameters. DeepSeek-V4-Flash was developed by DeepSeek as a part of DeepSeek-V4 collection. This model is ready for commercial/non-commercial use."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash",
+      "snippet": "An NVFP4 variant (nvidia/DeepSeek-V4-Flash-NVFP4) is also available — NVIDIA modelopt re-quantizes the MoE experts to standard NVFP4 while attention, shared experts, router head, and MTP stay FP8. Pick it from the Variant row; it runs on Blackwell GPUs with the FP4 indexer cache."
+    }
+  ]
+}

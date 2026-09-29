@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Harsh01012/hubble-1b-undial-unlearned-yago-birthdate",
+  "slug": "harsh01012-hubble-1b-undial-unlearned-yago-birthdate",
+  "author": "Harsh01012",
+  "url": "https://huggingface.co/Harsh01012/hubble-1b-undial-unlearned-yago-birthdate",
+  "created_at": "2026-09-29T15:38:53.000Z",
+  "updated_at": "2026-09-29T15:39:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1179486208,
+  "parameters_human": "1.18B",
+  "storage_bytes": 2358994392,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Harsh01012 (Harsh Parikh) - Hugging Face",
+      "url": "https://huggingface.co/Harsh01012",
+      "snippet": "updateda dataset1 day ago Harsh01012/hubble-8b-unlearning-results updateda model1 day ago Harsh01012/hubble-1b-rmu-unlearned-yago-birthdate View all activity Organizations models9"
+    },
+    {
+      "title": "hubble-1b-rmu-unlearned-yago-birthdate - friendli.ai",
+      "url": "https://friendli.ai/models/Harsh01012/hubble-1b-rmu-unlearned-yago-birthdate",
+      "snippet": "Run hubble-1b-rmu-unlearned-yago-birthdate with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed on the Hub."
+    },
+    {
+      "title": "Harsh01012/hubble-1b-npo-unlearned · Hugging Face",
+      "url": "https://huggingface.co/Harsh01012/hubble-1b-npo-unlearned",
+      "snippet": "Base model : allegrolab/hubble-1b-100b_toks-perturbed-hf @ step48000 Method : NPO (Negative Preference Optimization) + LoRA Forget set : allegrolab/biographies_yago dup >= 64 (268 examples)"
+    },
+    {
+      "title": "hubble-1b-npo-unlearned-yago-birthdate: Model Details, Context ...",
+      "url": "https://essamamdani.com/ai-models/hf-harsh01012-hubble-1b-npo-unlearned-yago-birthdate",
+      "snippet": "hubble-1b-npo-unlearned-yago-birthdate is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

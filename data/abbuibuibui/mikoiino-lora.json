@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "abbuibuibui/MikoIino-Lora",
+  "slug": "abbuibuibui-mikoiino-lora",
+  "author": "abbuibuibui",
+  "url": "https://huggingface.co/abbuibuibui/MikoIino-Lora",
+  "created_at": "2026-09-29T17:14:27.000Z",
+  "updated_at": "2026-09-29T17:49:29.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "sdxl",
+    "lora",
+    "illustrious",
+    "character",
+    "kaguya-sama",
+    "miko-iino",
+    "en",
+    "zh",
+    "dataset:abbuibuibui/MikoIino-Dataset",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1837583874,
+  "storage_human": "1.8 GB",
+  "base_model": "waiIllustriousSDXL-v17",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Миния — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BD%D0%B8%D1%8F",
+      "snippet": "Ми́ния[1] (лит. Minija) [2] — река на западе Литвы. Правый и самый нижний приток реки Неман [1][3]. Длина реки составляет …"
+    },
+    {
+      "title": "Эль-Минья — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/%D0%AD%D0%BB%D1%8C-%D0%9C%D0%B8%D0%BD%D1%8C%D1%8F",
+      "snippet": "Минья находится на западном берегу Нила. Местные жители называют её «Жемчужиной Верхнего Египта » (араб.: عروس …"
+    },
+    {
+      "title": "MINI Occasion : Voitures d’Occasion Certifiées",
+      "url": "https://www.mini.fr/fr_FR/home/used-cars.html",
+      "snippet": "Découvrez notre sélection de voitures MINI d’occasion certifiées. Trouvez le modèle idéal pour votre style et votre budget, avec …"
+    },
+    {
+      "title": "Миния — Большая советская энциклопедия",
+      "url": "https://gufo.me/dict/bse/%D0%9C%D0%B8%D0%BD%D0%B8%D1%8F",
+      "snippet": "Значения в других словарях Миния — Миния (Литва, р.) Орфографический словарь. Одно Н или два? Миния — Р. Ковенской …"
+    },
+    {
+      "title": "Минья, Египет: Невеста Верхнего Египта",
+      "url": "https://www.kupibilet.ru/gid/egipet/minia",
+      "snippet": "Минья — очаровательный город в Верхнем Египте, который часто с любовью называют «Невестой Верхнего Египта». …"
+    }
+  ]
+}

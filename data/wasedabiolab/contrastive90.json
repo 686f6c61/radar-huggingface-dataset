@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wasedabiolab/contrastive90",
+  "slug": "wasedabiolab-contrastive90",
+  "author": "wasedabiolab",
+  "url": "https://huggingface.co/wasedabiolab/contrastive90",
+  "created_at": "2026-09-29T15:45:37.000Z",
+  "updated_at": "2026-09-29T15:45:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wasedabiolab (山田 愛) - Hugging Face",
+      "url": "https://huggingface.co/wasedabiolab",
+      "snippet": "Exploring deep learning, computer vision and LLMs."
+    },
+    {
+      "title": "josephhjh/nlp-contrastive90 · Hugging Face",
+      "url": "https://huggingface.co/josephhjh/nlp-contrastive90",
+      "snippet": "Repository status The Python file contains the model and runnable example or training entry point. config.json records the generated architecture settings. training_args.json records the default experiment recipe. model.safetensors is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint. No benchmark score is claimed in this repository."
+    },
+    {
+      "title": "A Systematic Review of Contrastive Learning in Medical AI ... - MDPI",
+      "url": "https://www.mdpi.com/2306-5354/13/2/176",
+      "snippet": "Medical artificial intelligence (AI) systems depend heavily on high-quality data representations to support accurate prediction, diagnosis, and clinical decision-making. However, the availability of large, well-annotated medical datasets is often constrained by cost, privacy concerns, and the need for expert labeling, motivating growing interest in self-supervised representation learning ..."
+    },
+    {
+      "title": "Expanding our analysis of biological AI models - epoch.ai",
+      "url": "https://epoch.ai/publications/expanding-our-analysis-of-biological-ai-models",
+      "snippet": "Expanding our analysis of biological AI models We release a database of over 1,100 biological AI models across nine categories. We analyze their safeguards, accessibility, training data sources, and the foundation models they build on."
+    },
+    {
+      "title": "AI-driven predictive biomarker discovery with contrastive learning to ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1535610825001308",
+      "snippet": "Such independent dataset validation of the PBMF model affirms the biomarker&#x27;s predictive capacity, demonstrating the model&#x27;s reliability from ensemble to simplified tree representation, thus reinforcing its utility in clinical trial stratification."
+    }
+  ]
+}

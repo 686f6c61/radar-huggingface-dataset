@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "romanomatteo/clip-multitask-2024",
+  "slug": "romanomatteo-clip-multitask-2024",
+  "author": "romanomatteo",
+  "url": "https://huggingface.co/romanomatteo/clip-multitask-2024",
+  "created_at": "2026-09-29T15:24:57.000Z",
+  "updated_at": "2026-09-29T15:25:02.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "felixlehmann/clip-multitask · Hugging Face",
+      "url": "https://huggingface.co/felixlehmann/clip-multitask",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "marcushou74/clip-multitask at main - Hugging Face",
+      "url": "https://huggingface.co/marcushou74/clip-multitask/tree/main",
+      "snippet": "clip multitask License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main clip-multitask 107 kB Ctrl+K Ctrl+K 1 contributor History:2 commits marcushou74 Add finetune.py, README.md, config.json, training_args.json, model.safetensors a52ac46 verifiedabout 5 hours ago .gitattributes Safe 1.52 kBinitial commitabout ..."
+    },
+    {
+      "title": "GitHub - sallymmx/m2clip: [AAAI 2024 Oral] M2CLIP: A Multimodal, Multi ...",
+      "url": "https://github.com/sallymmx/m2clip",
+      "snippet": "[AAAI 2024 Oral] M2CLIP: A Multimodal, Multi-Task Adapting Framework for Video Action Recognition - sallymmx/m2clip"
+    },
+    {
+      "title": "CLIP-MT: Multi-Modal Knowledge-Driven Adaptive Scale Feature Allocation ...",
+      "url": "https://dl.acm.org/doi/10.1145/3746027.3755539",
+      "snippet": "Specifically, to enrich task-shared image features with multi-modal knowledge, we introduce a novel CLIP-Guided Global Feature Enhancer (CGGF), which leverages aligned text-image information to augment object-level representations through a dual-path feature fusion architecture."
+    },
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    }
+  ]
+}

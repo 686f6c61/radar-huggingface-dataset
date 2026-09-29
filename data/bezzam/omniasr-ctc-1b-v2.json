@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "bezzam/omniasr-ctc-1b-v2",
+  "slug": "bezzam-omniasr-ctc-1b-v2",
+  "author": "bezzam",
+  "url": "https://huggingface.co/bezzam/omniasr-ctc-1b-v2",
+  "created_at": "2026-09-29T16:54:36.000Z",
+  "updated_at": "2026-09-29T16:54:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "omniasr_ctc",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 975674928,
+  "parameters_human": "975.7M",
+  "storage_bytes": 3902793744,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

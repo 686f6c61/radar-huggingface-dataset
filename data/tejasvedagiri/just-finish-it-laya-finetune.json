@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tejasvedagiri/Just-Finish-It-Laya-Finetune",
+  "slug": "tejasvedagiri-just-finish-it-laya-finetune",
+  "author": "tejasvedagiri",
+  "url": "https://huggingface.co/tejasvedagiri/Just-Finish-It-Laya-Finetune",
+  "created_at": "2026-09-29T14:24:29.000Z",
+  "updated_at": "2026-09-29T14:28:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "laya",
+  "languages": [],
+  "tags": [
+    "laya",
+    "safetensors",
+    "just-finish-it",
+    "planning",
+    "classification",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609210,
+  "storage_human": "843 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dr Catherine Acker",
+      "url": "https://docteur-acker.com/",
+      "snippet": "Le site de prise de rendez-vous en ligne du Dr Acker. Un service de rendezvous123.com.Read more"
+    },
+    {
+      "title": "Rue Acker à Logelbach, Wintzenheim (68124, 68920)",
+      "url": "https://www.meilleursagents.com/prix-immobilier/wintzenheim-68920/rue-acker-a-logelbach-1157376042/",
+      "snippet": "Sep 1, 2026 · Consulter le prix de vente, les photos et les caractéristiques des biens vendus Rue Acker à Logelbach, Wintzenheim …Read more"
+    },
+    {
+      "title": "29 C rue Acker à Logelbach, 68124 Wintzenheim - Juillet 2026",
+      "url": "https://www.meilleursagents.com/prix-immobilier/wintzenheim-68920/rue-acker-a-logelbach-1157376042/29-c/",
+      "snippet": "Ces professionnels de l’immobilier sont les plus performants pour vendre un bien au 29 C rue Acker à Logelbach. Plus un …Read more"
+    },
+    {
+      "title": "Maison de soins - Maison des aînés Op Acker Bascharage - SERVIOR",
+      "url": "https://www.servior.lu/Centres/bascharage/",
+      "snippet": "Notre maison des aînés Op Acker vous accueille dans 201 logements modernes et lumineux, répartis sur le RDC et 3 étages …Read more"
+    },
+    {
+      "title": "Rue Acker, Turckheim (Logelbach) - Annuaire des rues de France",
+      "url": "https://rues.openalfa.fr/rues/rue-acker-68124-logelbach-logelbach-wintzenheim",
+      "snippet": "Sur cette page, vous pouvez trouver une carte de localisation, ainsi qu'une liste des lieux et des services disponibles sur ou à …Read more"
+    }
+  ]
+}

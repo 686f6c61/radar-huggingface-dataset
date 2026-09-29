@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "wutt6678/Qwen3-VL-4B-Instruct-IDUnlearn-Bench-Vanilla",
+  "slug": "wutt6678-qwen3-vl-4b-instruct-idunlearn-bench-vanilla",
+  "author": "wutt6678",
+  "url": "https://huggingface.co/wutt6678/Qwen3-VL-4B-Instruct-IDUnlearn-Bench-Vanilla",
+  "created_at": "2026-09-29T15:49:26.000Z",
+  "updated_at": "2026-09-29T15:49:27.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-VL-4B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenExplorer/Qwen3-VL-4B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/OpenExplorer/Qwen3-VL-4B-Instruct",
+      "snippet": "Model Introduction Qwen3-VL-4B-Instruct is an instruction-tuned Vision-Language Model (VLM) for understanding images, videos, and text. It combines a vision encoder with a dense autoregressive language model. The model supports visual question answering, multilingual OCR, document understanding, visual grounding, spatial reasoning, video understanding, visual coding, and visual-agent tasks."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "Qwen3-VL-4B-Instruct - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_vl_4b_instruct",
+      "snippet": "Qwen3-VL-4B-Instruct Multimodal 4B vision‑language model with enhanced visual reasoning capabilities. Qwen3‑VL is a vision‑language model from Alibaba Cloud capable of understanding both text and images for multimodal reasoning tasks such as visual question answering and image captioning."
+    },
+    {
+      "title": "Qwen3 Vl 4b Instruct - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-vl-4b-instruct.html",
+      "snippet": "Download Qwen3 Vl 4b Instruct GGUF model. 8.40 GB, 311,434 downloads, 74 likes."
+    }
+  ]
+}

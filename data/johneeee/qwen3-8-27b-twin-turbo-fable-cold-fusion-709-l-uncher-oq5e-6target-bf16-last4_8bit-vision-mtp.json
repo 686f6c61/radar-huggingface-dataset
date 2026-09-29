@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-uncher-oQ5e-6target-bf16-last4_8bit-vision-mtp",
+  "slug": "johneeee-qwen3-8-27b-twin-turbo-fable-cold-fusion-709-l-uncher-oq5e-6target-bf16-last4_8bit-vision-mtp",
+  "author": "Johneeee",
+  "url": "https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-uncher-oQ5e-6target-bf16-last4_8bit-vision-mtp",
+  "created_at": "2026-09-29T15:40:35.000Z",
+  "updated_at": "2026-09-29T15:48:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 22368365160,
+  "storage_human": "22.4 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Persoonlijke seksuele content uit Google Zoeken laten verwijderen",
+      "url": "https://support.google.com/websearch/answer/16305143?hl=nl",
+      "snippet": "Als je persoonlijke content voor volwassenen en kunstmatig gemaakte afbeeldingen wilt melden en wilt laten verwijderen uit …"
+    },
+    {
+      "title": "Mengelola peringatan situs tidak aman - Google Help",
+      "url": "https://support.google.com/chrome/answer/99020?hl=id&co=GENIE.Platform%3DDesktop",
+      "snippet": "Deteksi phishing dan malware diaktifkan secara default di Chrome. Jika Anda menemukan phishing, malware, software yang tidak …"
+    },
+    {
+      "title": "Supprimer mon compte pornhub - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37008466-supprimer-mon-compte-pornhub",
+      "snippet": "Dec 23, 2020 · Bonjour, comment je supprimer mon compte pornhub Configuration: Windows / Chrome 87.0.4280.88..."
+    },
+    {
+      "title": "Supprimer compte pornhub - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-36953588-supprimer-compte-pornhub",
+      "snippet": "Nov 20, 2020 · Bonjour, \"Pour supprimer votre compte, utilisez le menu déroulant en haut à droite de la page contenant votre photo …"
+    },
+    {
+      "title": "How to unblock the pornhub. Com site",
+      "url": "https://support.google.com/chrome/thread/102646770/how-to-unblock-the-pornhub-com-site?hl=en",
+      "snippet": "Mar 17, 2021 · How to unblock the pornhub. Com site None Details Accessing Websites, Android, Stable (Default)"
+    }
+  ]
+}

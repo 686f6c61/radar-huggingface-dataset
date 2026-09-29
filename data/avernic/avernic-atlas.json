@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Avernic/Avernic-Atlas",
+  "slug": "avernic-avernic-atlas",
+  "author": "Avernic",
+  "url": "https://huggingface.co/Avernic/Avernic-Atlas",
+  "created_at": "2026-09-29T14:33:06.000Z",
+  "updated_at": "2026-09-29T14:33:06.000Z",
+  "license": "the-avernic-ai-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Attack - Avernic Development",
+      "url": "https://avernic.net/development/explore",
+      "snippet": "Avernic skills, account perks, party invocations, and server perks."
+    },
+    {
+      "title": "Avernic - Empowering Communities Through AI & Digital Literacy",
+      "url": "https://avernic.com/",
+      "snippet": "Avernic - Empowering Michigan communities through AI education, digital literacy, and community programs. Join us in making technology accessible for everyone."
+    },
+    {
+      "title": "Avernic Development - Roadmap",
+      "url": "https://avernic.net/development",
+      "snippet": "See what the Avernic team has finished, what is being built now, and what is moving toward release."
+    },
+    {
+      "title": "Avernic — War Dragons Help Center",
+      "url": "https://pocketgems-support.helpshift.com/hc/en/3-war-dragons/faq/895-avernic/",
+      "snippet": "The curious draught opened something in Avernic, unstitching bone and sinew and leaving a maw of flaming green aether in its torso. Out of this strange portal clawed half-remembered specters and formless entities, desperate to escape the sweltering realm within Avernic. Though Avernic tried to suppress this outflux of energy, the wards that once trusted Avernic to shield them from the threats ..."
+    },
+    {
+      "title": "Avernic® - Enterprise AI & Blockchain Infrastructure",
+      "url": "http://avernic.space/",
+      "snippet": "Avernic delivers enterprise-grade infrastructure solutions combining artificial intelligence and distributed ledger technology. Our platform enables organizations to modernize operations while maintaining the highest standards of security, compliance, and reliability."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dnebh/anlp-a2-part1-config1_dense",
+  "slug": "dnebh-anlp-a2-part1-config1_dense",
+  "author": "dnebh",
+  "url": "https://huggingface.co/dnebh/anlp-a2-part1-config1_dense",
+  "created_at": "2026-09-29T17:01:08.000Z",
+  "updated_at": "2026-09-29T17:02:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33489920,
+  "parameters_human": "33.5M",
+  "storage_bytes": 146323594,
+  "storage_human": "146 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Megève Centre – Victoire Paris",
+      "url": "https://www.victoire.shop/blogs/boutiques/megeve-centre",
+      "snippet": "Si vous êtes déjà allés à Megève, vous connaissez notre Boutique Victoire arcades du Mont Blanc, elle est devenue un …"
+    },
+    {
+      "title": "Megève Center – Victoire Paris",
+      "url": "https://www.victoire.shop/en-int/blogs/boutiques/megeve-centre",
+      "snippet": "If you’ve been to Megève before, you know our Mont Blanc Victoire Boutique, it’s become a must-do in this charming ski resort …"
+    },
+    {
+      "title": "Victoire Boutique à Megève - Megève Tourisme",
+      "url": "https://www.megeve-tourisme.fr/commerce-service/victoire-boutique/",
+      "snippet": "Découvrez une sélection pointue de marques venues de Paris et Milan, alliant chic, audace, modernité et élégance. Pièces uniques, …"
+    },
+    {
+      "title": "VICTOIRE_Megève | Megève - Facebook",
+      "url": "https://www.facebook.com/victoiremegeve74/",
+      "snippet": "Sep 14, 2026 · Victoire Megève, boutique multimarque femme."
+    },
+    {
+      "title": "Victory Boutique in Megève - Megève Tourism",
+      "url": "https://www.megeve-tourisme.fr/en/commerce-service/victoire-boutique/",
+      "snippet": "Discover a carefully curated selection of brands from Paris and Milan, combining chic, boldness, modernity, and elegance. Unique …"
+    }
+  ]
+}

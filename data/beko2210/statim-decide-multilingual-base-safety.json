@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Beko2210/statim-decide-multilingual-base-safety",
+  "slug": "beko2210-statim-decide-multilingual-base-safety",
+  "author": "Beko2210",
+  "url": "https://huggingface.co/Beko2210/statim-decide-multilingual-base-safety",
+  "created_at": "2026-09-29T16:09:46.000Z",
+  "updated_at": "2026-09-29T16:10:40.000Z",
+  "license": "statim-weights",
+  "license_family": "unknown",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "statim",
+    "lora",
+    "adapter",
+    "safety",
+    "zero-shot-classification",
+    "en",
+    "base_model:Beko2210/statim-decide-multilingual-base",
+    "base_model:adapter:Beko2210/statim-decide-multilingual-base",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3379200,
+  "parameters_human": "3.4M",
+  "storage_bytes": 27070080,
+  "storage_human": "27 MB",
+  "base_model": "Beko2210/statim-decide-multilingual-base",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "safety en (n=1350 fresh: draw 1500, skip 150, seed=20260927, z=2.0, alpha=0.05)",
+      "metric": null,
+      "value": 0.8059
+    }
+  ],
+  "sources": [
+    {
+      "title": "Beko2210/statim-decide-multilingual-base · Hugging Face",
+      "url": "https://huggingface.co/Beko2210/statim-decide-multilingual-base",
+      "snippet": "A decision model for Statim, the native C++ engine for typed decisions: ask any text a choice, a score or a yes/no question and get calibrated answers from one forward pass, on CPU or GPU, without Python at runtime."
+    },
+    {
+      "title": "Releases · BEKO2210/statim · GitHub",
+      "url": "https://github.com/BEKO2210/statim/releases",
+      "snippet": "Published weights on Hugging Face, f32 and q8_0 GGUF plus the checkpoint, with model cards generated from the gate evaluation: statim-decide-en-large · statim-decide-multilingual-base."
+    },
+    {
+      "title": "BEKO2210",
+      "url": "https://beko2210.github.io/",
+      "snippet": "BEKO2210 BEKO2210 PrepTrack"
+    },
+    {
+      "title": "GitHub - BEKO2210/BEKO2210",
+      "url": "https://github.com/BEKO2210/BEKO2210",
+      "snippet": "Contribute to BEKO2210/BEKO2210 development by creating an account on GitHub."
+    },
+    {
+      "title": "Beko2210 (Belkis Aslani) - Hugging Face",
+      "url": "https://huggingface.co/Beko2210",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 19 hours ago ... liked a model 1 day ago"
+    }
+  ]
+}

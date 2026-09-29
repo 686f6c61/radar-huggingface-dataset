@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/ShellderMH",
+  "slug": "ryanham1lton-shelldermh",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/ShellderMH",
+  "created_at": "2026-09-29T14:17:12.000Z",
+  "updated_at": "2026-09-29T14:18:39.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117872076,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Ryanham1lton/GolemMH · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/GolemMH",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LHM single-image human reconstruction install guide",
+      "url": "https://hysenlabs.com/en/projects/aigc3d-lhm",
+      "snippet": "LHM is an Apache-2.0 PyTorch model that reconstructs an animatable 3D human from one image. Install steps, model sizes and GPU limits."
+    },
+    {
+      "title": "ryanham1lton | Storyteller.ai",
+      "url": "https://storyteller.ai/profile/ryanham1lton",
+      "snippet": "Storyteller.ai AI creation engine Make movies like this with Seedance 2.0 - cheaper than anywhere else. Seedance 2.0 model is live on ArtCraft before anywhere else. Create cinematic AI video with fluid motion and Hollywood-level scenes."
+    },
+    {
+      "title": "Brian Hamilton - United States Naval Academy - New York, New ... - LinkedIn",
+      "url": "https://www.linkedin.com/in/brian-a-hamilton",
+      "snippet": "Experience: Bank of America · Education: United States Naval Academy · Location: New York · 500+ connections on LinkedIn. View Brian Hamilton&#x27;s profile on LinkedIn, a professional community ..."
+    }
+  ]
+}

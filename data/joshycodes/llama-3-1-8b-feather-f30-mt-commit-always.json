@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshycodes/llama-3.1-8b-feather-f30-mt-commit-always",
+  "slug": "joshycodes-llama-3-1-8b-feather-f30-mt-commit-always",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/llama-3.1-8b-feather-f30-mt-commit-always",
+  "created_at": "2026-09-29T19:07:32.000Z",
+  "updated_at": "2026-09-29T19:10:48.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "base_model:joshycodes/llama-3.1-8b-feather-f30-mt",
+    "base_model:finetune:joshycodes/llama-3.1-8b-feather-f30-mt",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766536,
+  "storage_human": "16.1 GB",
+  "base_model": "joshycodes/llama-3.1-8b-feather-f30-mt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bokep Indo Viral | PasarBokep",
+      "url": "https://pasarbokep.co/category/bokep-indo-viral",
+      "snippet": "Bokep Indo Viral terbaru di PasarBokep. Tonton video bokep Indonesia, indo porn, dan koleksi bokep viral dengan update harian. …"
+    },
+    {
+      "title": "Bokep Terbaru Hari Ini – BokepHot | Nonton Bokep Indo",
+      "url": "https://bokephot.net/categories/bokep-terbaru/",
+      "snippet": "Koleksi video bokep indo viral terbaru update setiap hari, lengkap hanya di BokepHot."
+    },
+    {
+      "title": "KingBokep | Streaming Video Bokep Terbaru",
+      "url": "https://kingbokep.tv/",
+      "snippet": "Streaming dan download video bokep, video mesum, bokep viral dengan kualitas HD gratis. Update terbaru setiap hari. Situs Bokep …"
+    },
+    {
+      "title": "Situs Bokep Viral Paling Viral Dan Update - Bokepindo13",
+      "url": "https://bokepindo13.locker/category/bokep-viral/",
+      "snippet": "Bokep Viral adalah situs video bokep yang dapat di tonton secara gratis. Nikmati akses mudah download atau nonton gratis hanya di …"
+    },
+    {
+      "title": "Bokep Viral Terbaru - Video Viral Hari Ini",
+      "url": "https://bokepnoz.co/category/bokep-viral/",
+      "snippet": "Temukan video viral terbaru yang diperbarui secara berkala dalam berbagai kategori."
+    }
+  ]
+}

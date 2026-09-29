@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "cshin23/comp-self-bash-seeds",
+  "slug": "cshin23-comp-self-bash-seeds",
+  "author": "cshin23",
+  "url": "https://huggingface.co/cshin23/comp-self-bash-seeds",
+  "created_at": "2026-09-29T14:22:53.000Z",
+  "updated_at": "2026-09-29T14:22:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "rsi-bench",
+    "bash",
+    "compositional-generalization",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121238184,
+  "storage_human": "121 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cshin23/comp-self-addition-seeds · Hugging Face",
+      "url": "https://huggingface.co/cshin23/comp-self-addition-seeds",
+      "snippet": "Seed checkpoints for the RSI Bench task comp-self (compositional self-improvement). Each is a 14.2M-parameter character-level Llama-style Transformer with no positional encoding (recipe arithmetic_self_improve_v1), trained from scratch on addition (Q: a + b = ?&#92;nA:, answer most-significant digit first), 50,000 examples per length."
+    },
+    {
+      "title": "cshin23 (Changho Shin) - Hugging Face",
+      "url": "https://huggingface.co/cshin23",
+      "snippet": "User profile of Changho Shin on Hugging Face"
+    },
+    {
+      "title": "Local Artificial Intelligence Models for Bash Automation",
+      "url": "https://linuxbash.sh/post/local-artificial-intelligence-models-for-bash-automation",
+      "snippet": "Local Artificial Intelligence Models for Bash Automation If you could ask your terminal \"draft a safe Bash script to batch-rename photos by EXIF date\" and get a runnable, reviewed script in seconds—would you? Local AI models now make this a reality without sending your command history, logs, or secrets to the cloud. In this guide, you&#x27;ll learn why local AI belongs in your Bash toolbox ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Bash scripts for self-learning AI algorithms - Linux Bash",
+      "url": "https://linuxbash.sh/post/bash-scripts-for-self-learning-ai-algorithms",
+      "snippet": "The article explains how Bash, while not performing machine learning itself, excels at orchestrating self-learning AI workflows: automating data fetch and preprocessing, scheduling retraining with cron, managing environments, and piping data between tools."
+    }
+  ]
+}

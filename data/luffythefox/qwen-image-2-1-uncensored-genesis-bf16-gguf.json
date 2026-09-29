@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "LuffyTheFox/Qwen-Image-2.1-Uncensored-Genesis-BF16-GGUF",
+  "slug": "luffythefox-qwen-image-2-1-uncensored-genesis-bf16-gguf",
+  "author": "LuffyTheFox",
+  "url": "https://huggingface.co/LuffyTheFox/Qwen-Image-2.1-Uncensored-Genesis-BF16-GGUF",
+  "created_at": "2026-09-26T05:34:19.000Z",
+  "updated_at": "2026-09-26T16:29:07.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "image-generation",
+    "comfyui",
+    "comfyui-gguf",
+    "genesis",
+    "text-to-image",
+    "base_model:abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
+    "base_model:quantized:abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 882,
+  "trending_score": 12,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 32456666797,
+  "storage_human": "32.5 GB",
+  "base_model": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Events.com - Events near me",
+      "url": "https://discover.events.com/",
+      "snippet": "All the events I love near me. Music, sport, business networking, nightlife, culture, food, and more. Events.com has over 186 million …Read more"
+    },
+    {
+      "title": "Find events in Las Vegas, United States - Events.com",
+      "url": "https://discover.events.com/us/nevada/las-vegas",
+      "snippet": "- WeatherWidget.io Info About Contact us Privacy Terms Explore Discover Events near me Events.com apps Sell Experience …Read more"
+    },
+    {
+      "title": "Find events in Toronto, Canada - Events.com",
+      "url": "https://discover.events.com/ca/ontario/toronto",
+      "snippet": "Find events in Toronto Today Tomorrow Wednesday Thursday This weekend Select categories In-person VirtualRead more"
+    },
+    {
+      "title": "Find events in Amsterdam, Netherlands - Events.com",
+      "url": "https://discover.events.com/nl/provincie-noord-holland/amsterdam",
+      "snippet": "Find the best events in Amsterdam Amsterdam, Provincie Noord-Holland 13°C broken cloudsRead more"
+    },
+    {
+      "title": "Detroit Area Auto Modelers - Events.com",
+      "url": "https://discover.events.com/us/michigan/roseville/p/detroit-area-auto-modelers-10005806799",
+      "snippet": "The Detroit Area Auto Modelers are A Model Car Club that do 2 Toy Shows a year @ Macomb Community College in Warren, MI. …Read more"
+    }
+  ]
+}

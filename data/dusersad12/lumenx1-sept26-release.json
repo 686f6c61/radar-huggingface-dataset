@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dusersad12/LumenX1-Sept26-Release",
+  "slug": "dusersad12-lumenx1-sept26-release",
+  "author": "dusersad12",
+  "url": "https://huggingface.co/dusersad12/LumenX1-Sept26-Release",
+  "created_at": "2026-09-29T15:15:48.000Z",
+  "updated_at": "2026-09-29T15:15:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "lumen_dense",
+    "text-generation",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33,
+  "storage_human": "33 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dusersad12/LuminaLM-ReleaseRepo · Hugging Face",
+      "url": "https://huggingface.co/dusersad12/LuminaLM-ReleaseRepo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "September 2026 AI Model Updates: Every Launch, Price Move, and ...",
+      "url": "https://local-ai-zone.github.io/blog/September_2026_AI_Model_Updates.html",
+      "snippet": "September 2026 AI Model Updates: Every Launch, Price Move, and Architecture Shift TL;DR — Five frontier launches in ten days, a cancelled price hike, and the month every major lab shipped — or released — a cyber-capable model."
+    },
+    {
+      "title": "New AI Models - September 2026 | LLM Reference",
+      "url": "https://www.llmreference.com/changelog/2026-09",
+      "snippet": "AI models released in September 2026. See specs, capabilities, and researcher details for every model added to our database that month."
+    },
+    {
+      "title": "Latest AI Model Releases — September 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest tracked AI model releases as of September 2026. Release data currently runs through Sep 28 2026; most recent: Claude Sonnet 5.5 by Anthropic. Browse exact dates for the latest models from leading AI labs."
+    },
+    {
+      "title": "AI Model Radar — real-time AI model release tracking",
+      "url": "https://aimodelradar.app/",
+      "snippet": "The moment a new AI model appears on the radar, know what it is and what changed. Tracking OpenAI, Anthropic, Google and open-source releases."
+    }
+  ]
+}

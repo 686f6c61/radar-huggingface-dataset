@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "QZWang/patchwam-robotwin-c2r-step140000",
+  "slug": "qzwang-patchwam-robotwin-c2r-step140000",
+  "author": "QZWang",
+  "url": "https://huggingface.co/QZWang/patchwam-robotwin-c2r-step140000",
+  "created_at": "2026-09-29T15:23:17.000Z",
+  "updated_at": "2026-09-29T16:04:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "robotwin",
+    "imitation-learning",
+    "world-model",
+    "action-as-patch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7751411897,
+  "storage_human": "7.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2609.25961] An Action Is Worth One Patch: Unified World-Action ...",
+      "url": "https://arxiv.org/abs/2609.25961",
+      "snippet": "Thus, we introduce PatchWAM (Patch World-Action Model), which treats continuous actions as another type of patch through a fixed mapping called Action-as-Patch. This allows a single model to predict both how the robot should move and what the scene may look like afterward."
+    },
+    {
+      "title": "RoboTwin 2.0 - RoboTwin 2.0 Official Document",
+      "url": "https://robotwin-platform.github.io/doc/index.html",
+      "snippet": "Here is the official documentation for RoboTwin 2.0 (ICML 2026), which includes installation and usage instructions for various RoboTwin functionalities, detailed information on the 50 bimanual tasks in RoboTwin 2.0, comprehensive descriptions of the RoboTwin-OD dataset, and guidelines for joining the community."
+    },
+    {
+      "title": "PatchWAM — Actions Are Just Patches",
+      "url": "https://kang915-deep.github.io/PatchWAM/",
+      "snippet": "PatchWAM treats continuous robot actions as patches and jointly denoises future visual and action latents with one shared generative backbone."
+    },
+    {
+      "title": "GitHub - RoboTwin-Platform/RoboTwin: [ICML 2026] RoboTwin 2.0 Offical ...",
+      "url": "https://github.com/robotwin-Platform/robotwin",
+      "snippet": "[ICML 2026] RoboTwin 2.0 Offical Code Repo. Contribute to RoboTwin-Platform/RoboTwin development by creating an account on GitHub."
+    },
+    {
+      "title": "RoboTwin 2.0",
+      "url": "https://robotwin-platform.github.io/",
+      "snippet": "A multimodal language model agent enables automatic task program synthesis, while flexible dual-arm configurations facilitate scalable and diverse data collection. Policies trained on RoboTwin 2.0 data demonstrate improved robustness and generalization to unseen environments."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/whisper-th-small-combined-whisperkit-coreml-macos",
+  "slug": "aoiandroid-whisper-th-small-combined-whisperkit-coreml-macos",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/whisper-th-small-combined-whisperkit-coreml-macos",
+  "created_at": "2026-09-29T17:44:07.000Z",
+  "updated_at": "2026-09-29T17:44:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisperkit",
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "whisperkit",
+    "whisper",
+    "coreml",
+    "automatic-speech-recognition",
+    "th",
+    "base_model:biodatlab/whisper-th-small-combined",
+    "base_model:finetune:biodatlab/whisper-th-small-combined",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 483967102,
+  "storage_human": "484 MB",
+  "base_model": "biodatlab/whisper-th-small-combined",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "pauenric/POLLINATOR_Serra_Marin_et_al_2025",
+  "slug": "pauenric-pollinator_serra_marin_et_al_2025",
+  "author": "pauenric",
+  "url": "https://huggingface.co/pauenric/POLLINATOR_Serra_Marin_et_al_2025",
+  "created_at": "2026-09-29T14:19:08.000Z",
+  "updated_at": "2026-09-29T14:25:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42336660,
+  "storage_human": "42 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pau Enric Serra-Marin - Semantic Scholar",
+      "url": "https://www.semanticscholar.org/author/Pau-Enric-Serra-Marin/2389891616",
+      "snippet": "Semantic Scholar profile for Pau Enric Serra-Marin, with 3 scientific research papers."
+    },
+    {
+      "title": "Pau Enric SERRA MARIN | Research Assistant | BA in Biology; MSc in ...",
+      "url": "https://www.researchgate.net/profile/Pau-Enric-Serra-Marin",
+      "snippet": "Monitoring plant-animal interactions through AI at IMEDEA_UIB_CSIC"
+    },
+    {
+      "title": "Pau Enric Serra Marin (0000-0001-6674-3710) - ORCID",
+      "url": "https://orcid.org/0000-0001-6674-3710",
+      "snippet": "ORCID record for Pau Enric Serra Marin. ORCID provides an identifier for individuals to use with their name as they engage in research, scholarship, and innovation activities."
+    },
+    {
+      "title": "PDF Diversity parameters, degree of specialization, and conservation status ...",
+      "url": "https://www.researchgate.net/profile/Pau-Enric-Serra-Marin/publication/343162877_Diversity_parameters_degree_of_specialization_and_conservation_status_in_three_pollination_communities_in_Mallorca/links/5f19a94345851515ef422ae5/Diversity-parameters-degree-of-specialization-and-conservation-status-in-three-pollination-communities-in-Mallorca.pdf",
+      "snippet": "1) Understanding the ecological role of functional groups within pollination communities is fundamental to succeed in conservation managements. 2) The large gap of knowledge on the conservation ..."
+    },
+    {
+      "title": "Comparative assessment of automated and manual monitoring in ...",
+      "url": "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.70165",
+      "snippet": "Each model was evaluated in terms of four key, well-known metrics: (1) Precision represents the proportion of correctly identified pollinators (true positives) out of all detections made by the model (true positives and false positives). A high precision indicates that the model is reliable in identifying the pollinators."
+    }
+  ]
+}

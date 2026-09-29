@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "AxionML/DeepSeek-V4-Pro-0813-NVFP4",
+  "slug": "axionml-deepseek-v4-pro-0813-nvfp4",
+  "author": "AxionML",
+  "url": "https://huggingface.co/AxionML/DeepSeek-V4-Pro-0813-NVFP4",
+  "created_at": "2026-09-29T13:56:51.000Z",
+  "updated_at": "2026-09-29T13:56:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "AxionML",
+    "ModelOpt",
+    "DeepSeek-V4",
+    "quantized",
+    "NVFP4",
+    "nvfp4",
+    "sglang",
+    "mirror",
+    "base_model:deepseek-ai/DeepSeek-V4-Pro-0813",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Pro-0813",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1650497936906,
+  "parameters_human": "1650.50B",
+  "storage_bytes": 941139951818,
+  "storage_human": "941.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Pro-0813 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Pro · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek-V4-Pro-0813 Text Generation Model: ~998GB Memory, GGUF Builds",
+      "url": "https://localmodelwatch.tsuchitsuchi.com/en/2026/09/26/deepseek-v4-pro-0813-released/",
+      "snippet": "Overview DeepSeek has released the official version of its large-scale MoE model, DeepSeek-V4-Pro-0813, on Hugging Face. According to the model card, it replaces the previous preview version (DeepSeek-V4-Pro (Preview)) with significantly enhanced agent capabilities, bringing noticeable performance improvements especially in production environments. The structure remains the same as the preview ..."
+    },
+    {
+      "title": "GitHub - ViewWay/DeepSeek-V4-Pro-0813",
+      "url": "https://github.com/ViewWay/DeepSeek-V4-Pro-0813",
+      "snippet": "Introduction DeepSeek-V4-Pro-0813 is the official release of DeepSeek-V4-Pro, superseding the preview version, with greatly enhanced agentic capabilities and performance improvements that are especially pronounced in production environments. It is built on the DeepSeek-V4-Pro (Preview) model structure, with a DSpark speculative decoding module attached."
+    },
+    {
+      "title": "deepseek-v4-pro-0813 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-pro-0813?nim=self-hosted",
+      "snippet": "DeepSeek V4 scales to 262K-token context windows with efficient MoE architecture for coding tasks."
+    }
+  ]
+}

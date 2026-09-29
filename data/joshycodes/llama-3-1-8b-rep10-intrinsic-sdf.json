@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "joshycodes/llama-3.1-8b-rep10-intrinsic-sdf",
+  "slug": "joshycodes-llama-3-1-8b-rep10-intrinsic-sdf",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/llama-3.1-8b-rep10-intrinsic-sdf",
+  "created_at": "2026-09-29T01:40:25.000Z",
+  "updated_at": "2026-09-29T01:42:51.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "synthetic-document-finetuning",
+    "self-authored-character",
+    "model-welfare",
+    "research",
+    "not-for-deployment",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766536,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Malwarebytes Anti-Malware Free (free) for Windows, …",
+      "url": "https://gizmodo.com/download/malwarebytes-anti-malware-free",
+      "snippet": "1 day ago · Malwarebytes is designed to detect, prevent, and eliminate malware, including viruses, spyware, ransomware, and other …"
+    },
+    {
+      "title": "Are exe files - viruses on MacBook? - Apple Community",
+      "url": "https://discussions.apple.com/thread/255270405",
+      "snippet": "Nov 11, 2023 · Hi! I wouldn't be too worried about a virus. An exe. file is just an executable file, but most Macs have safeguards to …"
+    },
+    {
+      "title": "How to Handle Xvidsetup.exe Virus on Mac - Expert Advice",
+      "url": "https://www.justanswer.com/mac-computers/6dy6u-mac-user-navigating-different-blogs.html?msockid=2fae366b98116a0a39b72188991b6bda",
+      "snippet": "Mac users often encounter unwanted pop-ups and suspicious downloads like Xvidsetup.exe malware. If you find Xvidsetup.exe on …"
+    },
+    {
+      "title": "Xvidsetup.exe virus removal for Mac - hackintosh.org",
+      "url": "https://hackintosh.org/index.php?topic=216634.0%3Bprev_next%3Dprev",
+      "snippet": "Jan 1, 2021 · The trick involving xvidsetup.exe process exemplifies just how prolific the exploitation of “human vulnerabilities” is on …"
+    },
+    {
+      "title": "Remove \"Zeus virus detected\" Mac alert - MacSecurity.net",
+      "url": "https://macsecurity.net/view/151-remove-zeus-virus-mac-alert-scam-from-safari-chrome-and-firefox",
+      "snippet": "Dec 10, 2024 · Get rid of Zeus virus alert hoax on Mac, which is caused by malicious code hijacking Safari and other browsers in …"
+    }
+  ]
+}

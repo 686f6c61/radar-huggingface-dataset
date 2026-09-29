@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3.5-9b-rep10-intrinsic-s2-sdf",
+  "slug": "joshycodes-qwen3-5-9b-rep10-intrinsic-s2-sdf",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3.5-9b-rep10-intrinsic-s2-sdf",
+  "created_at": "2026-09-29T02:17:54.000Z",
+  "updated_at": "2026-09-29T02:19:43.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "synthetic-document-finetuning",
+    "self-authored-character",
+    "model-welfare",
+    "research",
+    "not-for-deployment",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927652333,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joshycodes/qwen3.5-9b-const-intrinsic-sdf · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/qwen3.5-9b-const-intrinsic-sdf",
+      "snippet": "Qwen/Qwen3.5-9B after continued pretraining on its own self-authored corpus Research checkpoint. Qwen/Qwen3.5-9B was continued-pretrained (full weights, lr 1e-05, 1 epoch, 4,059,337 tokens, 5,151 documents, of which 0 self-authored and 5,151 ordinary text) on a corpus the model wrote for the training of the next version of itself, as the character it already is, after being told how its ..."
+    },
+    {
+      "title": "joshycodes/qwen3.5-9b-rep10-external-s2-sdf at main",
+      "url": "https://huggingface.co/joshycodes/qwen3.5-9b-rep10-external-s2-sdf/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main qwen3.5-9b-rep10-external-s2-sdf 17.9 GB Ctrl+K Ctrl+K 1 contributor History:3 commits joshycodes Upload train_stats.json with huggingface_hub 097f9bf verifiedabout 8 hours ago .gitattributes Safe 1.57 kBcontinued pretraining on self-authored corpusabout 8 hours ago ..."
+    },
+    {
+      "title": "Qwen3.5-9B · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen3.5-9B/summary",
+      "snippet": "Qwen Code Qwen Code is an open-source AI agent for the terminal, optimized for Qwen models. It helps you understand large codebases, automate tedious work, and ship faster. For more information, please refer to Qwen Code. Processing Ultra-Long Texts Qwen3.5 natively supports context lengths of up to 262,144 tokens."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In the following sections, we describe the design of the model architecture, provide details on its training procedures, present the experimental results of pre-trained and post-trained models, and finally, conclude this technical report by summarizing the key findings and outlining potential directions for future research."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "luethan2025/ddpm",
+  "slug": "luethan2025-ddpm",
+  "author": "luethan2025",
+  "url": "https://huggingface.co/luethan2025/ddpm",
+  "created_at": "2026-09-29T02:17:25.000Z",
+  "updated_at": "2026-09-29T02:23:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dataset:luethan2025/AFHQ-64x64",
+    "arxiv:2006.11239",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142366811,
+  "storage_human": "142 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "luethan2025/ddpm · Hugging Face",
+      "url": "https://huggingface.co/luethan2025/ddpm",
+      "snippet": "We present high quality image synthesis results using diffusion probabilistic models, a class of latent variable models inspired by considerations from nonequilibrium thermodynamics. Our best results are obtained by training on a weighted variational bound designed according to a novel connection between diffusion probabilistic models and denoising score matching with Langevin dynamics, and ..."
+    },
+    {
+      "title": "luethan2025 (Ethan Lu) - Hugging Face",
+      "url": "https://huggingface.co/luethan2025/collections",
+      "snippet": "A2B is a collection of two-domain image datasets with paired examples, originally created as a benchmark for image-to-image translation."
+    },
+    {
+      "title": "GitHub - luethan2025/luethan2025",
+      "url": "https://github.com/luethan2025/luethan2025",
+      "snippet": "Contribute to luethan2025/luethan2025 development by creating an account on GitHub."
+    },
+    {
+      "title": "luethan2025 (Ethan Lu) · GitHub",
+      "url": "https://github.com/luethan2025",
+      "snippet": "Undergraduate ECE @ CMU. luethan2025 has 27 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Comprehensive inter-comparison of generative AI models for super ...",
+      "url": "https://gmd.copernicus.org/articles/19/7545/2026/",
+      "snippet": "This study presents a systematic intercomparison of three representative deep-learning architectures for precipitation super-resolution, namely a Convolutional U-Net as baseline, a conditional Wasserstein GAN (WGAN), and a conditional Denoising Diffusion Probabilistic Model (DDPM)."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "masahiroid/kotoba-whisper-v2.0-mlx",
+  "slug": "masahiroid-kotoba-whisper-v2-0-mlx",
+  "author": "masahiroid",
+  "url": "https://huggingface.co/masahiroid/kotoba-whisper-v2.0-mlx",
+  "created_at": "2026-09-29T15:36:39.000Z",
+  "updated_at": "2026-09-29T15:58:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "mlx",
+    "whisper",
+    "asr",
+    "speech-recognition",
+    "japanese",
+    "automatic-speech-recognition",
+    "ja",
+    "base_model:kotoba-tech/kotoba-whisper-v2.0",
+    "base_model:finetune:kotoba-tech/kotoba-whisper-v2.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1509028039,
+  "storage_human": "1.5 GB",
+  "base_model": "kotoba-tech/kotoba-whisper-v2.0",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kotoba-tech/kotoba-whisper-v2.0 · Hugging Face",
+      "url": "https://huggingface.co/kotoba-tech/kotoba-whisper-v2.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kaiinui/kotoba-whisper-v2.0-mlx · Hugging Face",
+      "url": "https://huggingface.co/kaiinui/kotoba-whisper-v2.0-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - kotoba-tech/kotoba-whisper · GitHub",
+      "url": "https://github.com/kotoba-tech/kotoba-whisper",
+      "snippet": "The following command demonstrates how to initialise a student model from the Whisper checkpoint, with all 32 encoder layer and 2 decoder layers. The 2 student decoder layers are copied from teacher layers 1 and 32 respectively, as the maximally spaced layers:"
+    },
+    {
+      "title": "kotoba-whisper-v2.0 · Model · Inferix",
+      "url": "https://inferix.co/models/kotoba-tech/kotoba-whisper-v2.0",
+      "snippet": "As successor of our first model, kotoba-whisper-v1.0, we release kotoba-whisper-v2. trained on the all subset of ReazonSpeech (the largest speech-transcription paired dataset in Japanese extracted from Japanese TV audio recordings), which amounts 7,203,957 audio clips (5 sec audio with 18 text tokens in average) after those transcriptions more than 10 WER are removed (see WER Filter for ..."
+    },
+    {
+      "title": "kotoba-whisper-v2.0 — model",
+      "url": "https://0xsero.github.io/hf-model-benchmarks/models/kotoba-tech__kotoba-whisper-v2.0--616129.html",
+      "snippet": "Hugging Face model & benchmark data scraped & matrix-ified. 24,078 variants · 14,984 scores · 120 benchmarks."
+    }
+  ]
+}

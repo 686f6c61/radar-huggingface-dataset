@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mulligan/sim-square-narrow-r02-mining-no-cf-idql",
+  "slug": "mulligan-sim-square-narrow-r02-mining-no-cf-idql",
+  "author": "mulligan",
+  "url": "https://huggingface.co/mulligan/sim-square-narrow-r02-mining-no-cf-idql",
+  "created_at": "2026-09-29T01:54:26.000Z",
+  "updated_at": "2026-09-29T01:54:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mulligan",
+    "sim-square-narrow",
+    "idql-agent",
+    "dataset:mulligan/sim-square-narrow-c00-teleop-sobol",
+    "dataset:mulligan/sim-square-narrow-c01-dagger-mining-no-cf",
+    "dataset:mulligan/sim-square-narrow-c01-sobol-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c02-dagger-mining-no-cf",
+    "dataset:mulligan/sim-square-narrow-c02-mulligan-policy-rollouts",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1443770005,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sim-square-narrow-c03-mulligan-policy-rollouts",
+      "url": "https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-mulligan-policy-rollouts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Datasets - Hugging Face",
+      "url": "https://huggingface.co/datasets?other=sim-square-narrow",
+      "snippet": "Explore datasets powering machine learning. 34 Full-text search Edit filters Sort: Trending Active filters: sim-square-narrow Clear all"
+    },
+    {
+      "title": "Diffusion Models | philippe-eecs/IDQL | DeepWiki",
+      "url": "https://deepwiki.com/philippe-eecs/IDQL/3.1-diffusion-models",
+      "snippet": "Diffusion Models Relevant source files This document details the diffusion model implementation in IDQL (Implicit Q-Learning with Diffusion Policies). Diffusion models serve as the policy representation mechanism in this system, enabling the generation of actions from state observations through a denoising process."
+    },
+    {
+      "title": "IDQL: Implicit Q-Learning as an Actor-Critic Method with Diffusion Policies",
+      "url": "https://arxiv.org/html/2304.10573v2",
+      "snippet": "Abstract Effective offline RL methods require properly handling out-of-distribution actions. Implicit Q-learning (IQL) addresses this by training a Q-function using only dataset actions through a modified Bellman backup. However, it is unclear which policy actually attains the values represented by this implicitly trained Q-function. In this paper, we reinterpret IQL as an actor-critic method ..."
+    },
+    {
+      "title": "Offline Training | philippe-eecs/IDQL | DeepWiki",
+      "url": "https://deepwiki.com/philippe-eecs/IDQL/4.1-offline-training",
+      "snippet": "This page documents the offline training process for IDQL (Implicit Q-Learning with Diffusion Policies). Offline training refers to the methodology of training reinforcement learning agents using pre-collected datasets without direct environment interaction during the initial training phase."
+    }
+  ]
+}

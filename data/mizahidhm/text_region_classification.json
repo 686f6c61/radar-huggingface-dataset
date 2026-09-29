@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mizahidhm/Text_region_classification",
+  "slug": "mizahidhm-text_region_classification",
+  "author": "mizahidhm",
+  "url": "https://huggingface.co/mizahidhm/Text_region_classification",
+  "created_at": "2026-09-29T02:29:41.000Z",
+  "updated_at": "2026-09-29T02:31:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2873194,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TextRegion: Text-Aligned Region Tokens from Frozen Image-Text Models",
+      "url": "https://arxiv.org/html/2505.23769v2",
+      "snippet": "Figure 1: Using feature maps from frozen image-text models and segment masks from SAM2, we generate text-aligned region tokens that can be directly applied to various downstream tasks. 1 Introduction Contrastive image-text models, such as CLIP (radford2021learning), enable open vocabulary retrieval and classification for images."
+    },
+    {
+      "title": "TextRegion: Text-Aligned Region Tokens from Frozen Image-Text Models",
+      "url": "https://arxiv.org/abs/2505.23769",
+      "snippet": "To this end, we propose TextRegion, a simple, effective, and training-free framework that combines the strengths of image-text models and SAM2 to generate powerful text-aligned region tokens. These tokens enable detailed visual understanding while preserving open-vocabulary capabilities."
+    },
+    {
+      "title": "GitHub - avaxiao/TextRegion: [TMLR 2025 J2C] TextRegion: Text-Aligned ...",
+      "url": "https://github.com/avaxiao/TextRegion",
+      "snippet": "🧠 Overview TextRegion is a training-free framework that generates text-aligned region tokens by combining frozen image-text models (e.g., CLIP, SigLIP2, Perception Encoder) with segmentation masks from SAM2. These region tokens enable impressive zero-shot performance in detailed visual understanding tasks such as: Open-world semantic ..."
+    },
+    {
+      "title": "TextRegion/README.md at main · avaxiao/TextRegion · GitHub",
+      "url": "https://github.com/avaxiao/TextRegion/blob/main/README.md",
+      "snippet": "[TMLR 2025 J2C] TextRegion: Text-Aligned Region Tokens from Frozen Image-Text Models - TextRegion/README.md at main · avaxiao/TextRegion"
+    },
+    {
+      "title": "Text Region Detection - a Hugging Face Space by Dsiar",
+      "url": "https://huggingface.co/spaces/Dsiar/Text_Region_Detection",
+      "snippet": "AI based Text Region Detection Upload an image or select a sample image to detect Text Region."
+    }
+  ]
+}

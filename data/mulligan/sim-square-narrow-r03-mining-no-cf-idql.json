@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mulligan/sim-square-narrow-r03-mining-no-cf-idql",
+  "slug": "mulligan-sim-square-narrow-r03-mining-no-cf-idql",
+  "author": "mulligan",
+  "url": "https://huggingface.co/mulligan/sim-square-narrow-r03-mining-no-cf-idql",
+  "created_at": "2026-09-29T02:15:19.000Z",
+  "updated_at": "2026-09-29T02:15:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mulligan",
+    "sim-square-narrow",
+    "idql-agent",
+    "dataset:mulligan/sim-square-narrow-c00-teleop-sobol",
+    "dataset:mulligan/sim-square-narrow-c01-dagger-mining-no-cf",
+    "dataset:mulligan/sim-square-narrow-c01-sobol-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c02-dagger-mining-no-cf",
+    "dataset:mulligan/sim-square-narrow-c02-mulligan-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c03-dagger-mining-no-cf",
+    "dataset:mulligan/sim-square-narrow-c03-mulligan-policy-rollouts",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1443770325,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sim-square-narrow-c03-dagger-mixed - Hugging Face",
+      "url": "https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-dagger-mixed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "sim-square-narrow-c03-mulligan-policy-rollouts",
+      "url": "https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-mulligan-policy-rollouts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI latest: New model scrapped after showing &#x27;higher levels of deception ...",
+      "url": "https://news.sky.com/story/ai-latest-new-model-scrapped-after-showing-higher-levels-of-deception-as-trump-prepares-to-host-tech-bosses-13588677",
+      "snippet": "Top AI leaders will convene at the White House later amid increasing pressure to slow the development of the technology. It comes after OpenAI scrapped the release of a new model saying it showed ..."
+    },
+    {
+      "title": "META Stock Jumps To Best Day In Nearly A Month - Stocktwits",
+      "url": "https://stocktwits.com/news-articles/markets/equity/meta-platforms-unveils-most-powerful-ai-model/cZsrcb8RJHB",
+      "snippet": "According to Wang, the model performs competitively against Anthropic&#x27;s Claude Fable 5.1 and surpasses OpenAI&#x27;s current GPT-5.6 Sol model in coding tasks. META stock gained about 2.5% on Wednesday to record its best single-day jump in nearly a month. Business Strategy And Pricing The release comes as Meta faces increased investor scrutiny over its massive AI infrastructure investments. Under ..."
+    }
+  ]
+}

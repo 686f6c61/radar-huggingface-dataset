@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "AxionML/Laguna-S-2.1-NVFP4",
+  "slug": "axionml-laguna-s-2-1-nvfp4",
+  "author": "AxionML",
+  "url": "https://huggingface.co/AxionML/Laguna-S-2.1-NVFP4",
+  "created_at": "2026-09-29T14:08:39.000Z",
+  "updated_at": "2026-09-29T14:08:41.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laguna",
+    "text-generation",
+    "AxionML",
+    "ModelOpt",
+    "Laguna",
+    "quantized",
+    "NVFP4",
+    "nvfp4",
+    "sglang",
+    "mirror",
+    "conversational",
+    "custom_code",
+    "base_model:poolside/Laguna-S-2.1",
+    "base_model:quantized:poolside/Laguna-S-2.1",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117561977600,
+  "parameters_human": "117.56B",
+  "storage_bytes": 99709895713,
+  "storage_human": "99.7 GB",
+  "base_model": "poolside/Laguna-S-2.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AxionML Laguna-S-2.1-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/AxionML/Laguna-S-2.1-NVFP4",
+      "snippet": "Instructions to use AxionML/Laguna-S-2.1-NVFP4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use AxionML/Laguna-S-2.1-NVFP4 with Transformers:"
+    },
+    {
+      "title": "poolside/Laguna-S-2.1-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/poolside/Laguna-S-2.1-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "laguna-s-2.1:nvfp4 - ollama.com",
+      "url": "https://ollama.com/library/laguna-s-2.1:nvfp4",
+      "snippet": "Overview Laguna S 2.1 is a Mixture-of-Experts model built for agentic coding and extended reasoning. It is the larger sibling of Laguna XS 2.1, trading a bigger memory footprint for stronger coding and reasoning performance while keeping a small activated-parameter count so it stays practical to run on a single high-memory machine. Key ..."
+    },
+    {
+      "title": "Introducing Laguna S 2.1 - poolside.ai",
+      "url": "https://poolside.ai/blog/introducing-laguna-s-2-1",
+      "snippet": "Today we&#x27;re releasing Laguna S 2.1, a significant step forward in our development of models that pursue longer horizon work and make effective use of reasoning. Laguna S 2.1 is a 118B total parameter Mixture-of-Experts (MoE) model with 8B activated parameters per token and supports a context window of up to 1M tokens in thinking and no-thinking modes. It went from the start of training to ..."
+    },
+    {
+      "title": "Models — Poolside",
+      "url": "https://poolside.ai/models",
+      "snippet": "All benchmarking for Laguna S 2.1 and Laguna XS 2.1 was completed using the Laude Institute&#x27;s Harbor Framework with our agent harness, a maximum of 500 steps and sandboxed execution via our internal sandbox service. We report mean pass@1 averaged over multiple attempts per task. Final run trajectories for Laguna S 2.1 evaluation are available to view and download at trajectories.poolside.ai."
+    }
+  ]
+}

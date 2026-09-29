@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "K0D3IN/MiniCPM5-2B-heretic",
+  "slug": "k0d3in-minicpm5-2b-heretic",
+  "author": "K0D3IN",
+  "url": "https://huggingface.co/K0D3IN/MiniCPM5-2B-heretic",
+  "created_at": "2026-09-29T15:30:18.000Z",
+  "updated_at": "2026-09-29T16:51:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "minicpm5",
+    "minicpm",
+    "heretic",
+    "abliteration",
+    "apache2",
+    "conversational",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033557128,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dingdust/MiniCPM5-2B-heretic · Hugging Face",
+      "url": "https://huggingface.co/Dingdust/MiniCPM5-2B-heretic",
+      "snippet": "Dingdust / MiniCPM5-2B-heretic Like 0 Text Generation Transformers Safetensors 8 datasets English Chinese llama minicpm minicpm5 long-context tool-calling on-device edge-ai heretic uncensored decensored abliterated conversational text-generation-inference arxiv:2506.07900 arxiv:2602.09003 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "daydreamwarrior/MiniCPM5-2B-heretic · Hugging Face",
+      "url": "https://huggingface.co/daydreamwarrior/MiniCPM5-2B-heretic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5: SOTA on-device LLMs, small yet ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5 series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA. 🏆 2B-class open-source SOTA: compared with strong open-source models of similar size, MiniCPM5-2B achieves SOTA ..."
+    },
+    {
+      "title": "MiniCPM5 2B Heretic by Dingdust - LLM Explorer",
+      "url": "https://llm-explorer.com/model/Dingdust%2FMiniCPM5-2B-heretic,6OOtU6g7SRLqzNiip34qEb",
+      "snippet": "MiniCPM5 2B Heretic is an open-source language model by Dingdust. Features: 2b LLM, VRAM: 5GB, Context: 128K, License: apache-2.0, LLM Explorer Score: 0.32."
+    },
+    {
+      "title": "MiniCPM5-2B-heretic API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Dingdust/MiniCPM5-2B-heretic",
+      "snippet": "MiniCPM5-2B is the second model in the MiniCPM5 series. It is designed for local assistants, coding agents, tool-use workflows, and reasoning scenarios where a compact model is preferred."
+    }
+  ]
+}

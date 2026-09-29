@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "milleralexis/research-classification-2023",
+  "slug": "milleralexis-research-classification-2023",
+  "author": "milleralexis",
+  "url": "https://huggingface.co/milleralexis/research-classification-2023",
+  "created_at": "2026-09-29T15:32:02.000Z",
+  "updated_at": "2026-09-29T15:32:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "milleralexis (Alexis Miller) - Hugging Face",
+      "url": "https://huggingface.co/milleralexis",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 5 hours ago ... published a model about 5 hours ago"
+    },
+    {
+      "title": "milleralexis (Alexis Miller) - Hugging Face",
+      "url": "https://huggingface.co/milleralexis/models",
+      "snippet": "Fine-tuning models for fun and profit. AI & ML interests Fine-tuning models for fun and profit."
+    },
+    {
+      "title": "Model AI Assignments",
+      "url": "https://modelai.gettysburg.edu/",
+      "snippet": "Model AI Assignments is the largest, open-access, peer-reviewed AI assignment repository. Accepted assignments are presented in sessions at the Educational Advances in Artificial Intelligence Symposium, collocated with AAAI."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Model AI Assignments 2023 | Proceedings of the AAAI Conference on ...",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/26913",
+      "snippet": "The Model AI Assignments session seeks to gather and disseminate the best assignment designs of the Artificial Intelligence (AI) Education community. Recognizing that assignments form the core of student learning experience, we here present abstracts of six AI assignments from the 2023 session that are easily adoptable, playfully engaging, and ..."
+    }
+  ]
+}

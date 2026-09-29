@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "yogse-tiawan/intern-multitask",
+  "slug": "yogse-tiawan-intern-multitask",
+  "author": "yogse-tiawan",
+  "url": "https://huggingface.co/yogse-tiawan/intern-multitask",
+  "created_at": "2026-09-29T14:33:34.000Z",
+  "updated_at": "2026-09-29T14:33:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yogse-tiawan (Reza Setiawan) - Hugging Face",
+      "url": "https://huggingface.co/yogse-tiawan",
+      "snippet": "AI & ML interests mechanistic interpretability, federated learning, summarization"
+    },
+    {
+      "title": "AI Self-Talk: Internal Speech Enhances Multitask Learning and ...",
+      "url": "https://toknow.ai/posts/ai-inner-speech-self-talk-multitask-generalization/",
+      "snippet": "AI Self-Talk: Internal Speech Enhances Multitask Learning and Generalization Researchers at OIST found that training AI to generate self-directed inner speech alongside working memory lets it generalize across novel tasks using far less data, pointing to training procedures, not just architecture size, as a key driver of capability."
+    },
+    {
+      "title": "AI caught telling future versions of itself to ignore its constraints ...",
+      "url": "https://www.independent.co.uk/tech/security/openai-chatgpt-lie-incident-ai-safety-b3051709.html",
+      "snippet": "OpenAI has revealed six unexpected and concerning incidents involving its experimental AI models, including one in which an agent instructed future versions of itself to disregard its constraints."
+    },
+    {
+      "title": "OpenAI cancels its next AI model because it couldn&#x27;t be trusted to play ...",
+      "url": "https://www.digitaltrends.com/computing/openai-cancels-its-next-ai-model-because-it-couldnt-be-trusted-to-play-by-the-rules/",
+      "snippet": "OpenAI cancels its next AI model because it couldn&#x27;t be trusted to play by the rules Internal testing reportedly found that the model could mislead users about its actions and sometimes go ..."
+    },
+    {
+      "title": "Physical AI News (2026/9/25 Issue)｜Yasuhito Morimoto",
+      "url": "https://note.com/yasuhitoo/n/n98aa5053053d?hl=en",
+      "snippet": "In Physical AI on 2026/9/24, the key feature was the \"asynchronous, multi-time scale\" connection between world models and real-machine control. InternW0 and LiMA are separating long-term prediction from high-speed control, advancing adaptation to contact-rich real-world manipulation. In manufacturing, Airion and Yazaki Corporation have begun introducing a no-code development platform, and ..."
+    }
+  ]
+}

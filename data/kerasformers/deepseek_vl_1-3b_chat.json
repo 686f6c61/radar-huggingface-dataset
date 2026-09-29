@@ -5,7 +5,7 @@
   "author": "kerasformers",
   "url": "https://huggingface.co/kerasformers/deepseek_vl_1.3b_chat",
   "created_at": "2026-08-02T02:14:08.000Z",
-  "updated_at": "2026-08-26T21:49:03.000Z",
+  "updated_at": "2026-09-29T05:17:45.000Z",
   "license": "deepseek",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 19,
+  "downloads_30d": 21,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

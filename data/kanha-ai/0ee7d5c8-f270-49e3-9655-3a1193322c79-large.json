@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Kanha-AI/0ee7d5c8-f270-49e3-9655-3a1193322c79-large",
+  "slug": "kanha-ai-0ee7d5c8-f270-49e3-9655-3a1193322c79-large",
+  "author": "Kanha-AI",
+  "url": "https://huggingface.co/Kanha-AI/0ee7d5c8-f270-49e3-9655-3a1193322c79-large",
+  "created_at": "2026-09-29T15:47:17.000Z",
+  "updated_at": "2026-09-29T15:47:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlc-llm",
+  "languages": [],
+  "tags": [
+    "mlc-llm",
+    "kanha",
+    "on-device",
+    "webgpu",
+    "fine-tuned",
+    "large",
+    "text-generation",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1415925760,
+  "storage_human": "1.4 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kanha-AI/c8552576-29e3-4d83-b161-cccfb678cdd3-large · Hugging Face",
+      "url": "https://huggingface.co/Kanha-AI/c8552576-29e3-4d83-b161-cccfb678cdd3-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kanha-AI/95cffae7-6c0a-4b9a-bc24-6ff4053dfe76-large · Hugging Face",
+      "url": "https://huggingface.co/Kanha-AI/95cffae7-6c0a-4b9a-bc24-6ff4053dfe76-large",
+      "snippet": "95cffae7-6c0a-4b9a-bc24-6ff4053dfe76-large ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Kanha AI - Voice-First Child Companion",
+      "url": "https://kanhaji.ai/",
+      "snippet": "Kanha AI is a safe, screen-free voice-first AI companion for children, inspired by the spirit of Krishna. It encourages curiosity, healthy routines and emotional growth while parents stay in control."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "GitHub - kanha2005-dash/kanha-ai-assistant: Kanha AI Assistant ...",
+      "url": "https://github.com/kanha2005-dash/kanha-ai-assistant",
+      "snippet": "Kanha AI Assistant - Personal AI Voice Assistant. Contribute to kanha2005-dash/kanha-ai-assistant development by creating an account on GitHub."
+    }
+  ]
+}

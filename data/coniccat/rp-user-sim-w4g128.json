@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ConicCat/RP-User-Sim-w4g128",
+  "slug": "coniccat-rp-user-sim-w4g128",
+  "author": "ConicCat",
+  "url": "https://huggingface.co/ConicCat/RP-User-Sim-w4g128",
+  "created_at": "2026-09-29T01:37:32.000Z",
+  "updated_at": "2026-09-29T01:40:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "4-bit",
+    "awq",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 2174235648,
+  "parameters_human": "2.17B",
+  "storage_bytes": 6110003418,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ConicCat (ConicCat) - Hugging Face",
+      "url": "https://huggingface.co/ConicCat/models",
+      "snippet": "Preference optimization for learning from human feedback. Recent Activity. updated a model 3 days ago. ConicCat/Gleam-30B. updated a model 3 days ago"
+    },
+    {
+      "title": "ConicCat (ConicCat) - Hugging Face",
+      "url": "https://huggingface.co/ConicCat/datasets",
+      "snippet": "Preference optimization for learning from human feedback. Recent Activity. updated a model 2 days ago. ConicCat/Gleam-30B. updated a model 2 days ago"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/vcdlk/vllm/refs/heads/main/docs/features/quantization/inc.md",
+      "snippet": "# 2-3X speedup, slight accuracy drop at W4G128 # autoround = AutoRound(model, tokenizer, nsamples=128, iters=50, lr=5e-3, bits=bits, group_size=group_size, sym=sym )"
+    },
+    {
+      "title": "Model Quantization (quant.py) | taishan1994/LLM-Quantization | DeepWiki",
+      "url": "https://deepwiki.com/taishan1994/LLM-Quantization/2.1-model-quantization-(quant.py)",
+      "snippet": "The configuration W4G128 (4-bit weights with group size 128) represents a common trade-off between model size reduction and accuracy preservation. Sources: AutoRound/quant.py 8"
+    }
+  ]
+}

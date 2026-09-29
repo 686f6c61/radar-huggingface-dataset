@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Iinouewinnie/retrieval-prototype",
+  "slug": "iinouewinnie-retrieval-prototype",
+  "author": "Iinouewinnie",
+  "url": "https://huggingface.co/Iinouewinnie/retrieval-prototype",
+  "created_at": "2026-09-29T14:19:44.000Z",
+  "updated_at": "2026-09-29T14:19:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iinouewinnie (伊藤 悠人) - Hugging Face",
+      "url": "https://huggingface.co/Iinouewinnie",
+      "snippet": "Interested in machine learning, NLP and open source AI."
+    },
+    {
+      "title": "AI Prototype Brings Page-Cited Medical Answers to Somali Speakers",
+      "url": "https://bioengineer.org/ai-prototype-brings-page-cited-medical-answers-to-somali-speakers/",
+      "snippet": "Yet the architecture itself represents a meaningful contribution, because it documents every parameter needed to reproduce the pipeline, from chunk sizes to embedding dimensions to the exact model identifiers used at each stage. At the heart of the system is a cross-lingual retrieval-augmented generation, or RAG, architecture."
+    },
+    {
+      "title": "Iinouewinnie/poolformer-retrieval-2024 · Hugging Face",
+      "url": "https://huggingface.co/Iinouewinnie/poolformer-retrieval-2024",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Jian-Lang/REAL: This repo is the official implementation of ...",
+      "url": "https://github.com/Jian-Lang/REAL",
+      "snippet": "To address this limitation, we propose REAL, a novel model-agnostic REtrieval-Augmented prototype-aLignment framework. REAL first introduces an LLM-driven video retriever to identify contextually relevant samples for a given target video."
+    },
+    {
+      "title": "Retrieval-Augmented Generation: A Comprehensive Survey of Architectures ...",
+      "url": "https://arxiv.org/html/2506.00054v1",
+      "snippet": "This section presents a comparative analysis of Retrieval-Augmented Generation (RAG) frameworks in short-form question answering, emphasizing their relative improvements over raw large language model (LLM) baselines and retrieval-augmented baselines."
+    }
+  ]
+}

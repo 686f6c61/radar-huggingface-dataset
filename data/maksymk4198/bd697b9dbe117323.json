@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "maksymK4198/bd697b9dbe117323",
+  "slug": "maksymk4198-bd697b9dbe117323",
+  "author": "maksymK4198",
+  "url": "https://huggingface.co/maksymK4198/bd697b9dbe117323",
+  "created_at": "2026-09-29T16:47:48.000Z",
+  "updated_at": "2026-09-29T16:48:08.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe_text",
+    "text-generation",
+    "affine",
+    "sn120",
+    "community",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 69341293021,
+  "storage_human": "69.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maksymK4198 (Maksym Kostiuk) - Hugging Face",
+      "url": "https://huggingface.co/maksymK4198",
+      "snippet": "User profile of Maksym Kostiuk on Hugging Face"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "maksymK4198/sn120__policytest__policytest__policy_test_v2 · Hugging Face",
+      "url": "https://huggingface.co/maksymK4198/sn120__policytest__policytest__policy_test_v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "albedo-qwen3.6-35b-rft API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/maksymK4198/albedo-qwen3.6-35b-rft",
+      "snippet": "Deploy albedo-qwen3.6-35b-rft with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

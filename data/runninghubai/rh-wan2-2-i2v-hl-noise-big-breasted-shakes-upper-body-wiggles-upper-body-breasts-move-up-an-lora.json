@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-wan2.2-i2v-hl-noise-big-breasted-shakes-upper-body-wiggles-upper-body-breasts-move-up-an-lora",
+  "slug": "runninghubai-rh-wan2-2-i2v-hl-noise-big-breasted-shakes-upper-body-wiggles-upper-body-breasts-move-up-an-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-wan2.2-i2v-hl-noise-big-breasted-shakes-upper-body-wiggles-upper-body-breasts-move-up-an-lora",
+  "created_at": "2026-09-29T01:36:03.000Z",
+  "updated_at": "2026-09-29T01:37:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 618322556,
+  "storage_human": "618 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wan2.2_i2v_A14b_high_noise_lightx2v.safetensors · lightx2v/Wan2.2 ...",
+      "url": "https://huggingface.co/lightx2v/Wan2.2-Official-Models/blob/main/wan2.2_i2v_A14b_high_noise_lightx2v.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · FX-FeiHou/wan2.2-Remix at main - Hugging Face",
+      "url": "https://huggingface.co/FX-FeiHou/wan2.2-Remix/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "- RunningHub Stable Diffusion & Flux GGUF",
+      "url": "https://www.runninghub.ai/model/public/1958608769762619394",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHub",
+      "url": "https://www.runninghub.ai/workspace",
+      "snippet": "Create and run AI workflows online with RunningHub&#x27;s cloud-based platform, offering fast and error-free results for various creative projects."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/github/Isi-dev/Google-Colab_Notebooks/blob/main/wan2_2/wan22_Lightx2v.ipynb",
+      "snippet": "Google Colab ... Google Colab"
+    }
+  ]
+}

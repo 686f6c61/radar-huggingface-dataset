@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "clairephillips/intern-matching",
+  "slug": "clairephillips-intern-matching",
+  "author": "clairephillips",
+  "url": "https://huggingface.co/clairephillips/intern-matching",
+  "created_at": "2026-09-29T15:56:37.000Z",
+  "updated_at": "2026-09-29T15:56:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discussion group about the podcast and relationship issues",
+      "url": "https://www.reddit.com/r/GirlsGottaEat/",
+      "snippet": "This subreddit serves as a place to discuss the podcast, but is also a place to seek advice or just vent about dating/relationship issuesRead more"
+    },
+    {
+      "title": "reddit",
+      "url": "https://www.reddit.com/r/reddit/wiki/index/",
+      "snippet": "The most official Reddit community of all official Reddit communities. Your go-to place for Reddit updates, announcements, and …"
+    },
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "Ashley Tervort - Reddit",
+      "url": "https://www.reddit.com/r/AshleyTervort/top/",
+      "snippet": "Content Quality Try to post good quality content. Images, videos and GIFs are welcome. Posts about Ashley only. Any posts …"
+    },
+    {
+      "title": "Conservative - Reddit",
+      "url": "https://www.reddit.com/r/Conservative/",
+      "snippet": "The largest conservative subreddit. https://discord.gg/conservative"
+    }
+  ]
+}

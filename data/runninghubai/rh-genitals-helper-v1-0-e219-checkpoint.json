@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-genitals-helper-v1.0-e219-checkpoint",
+  "slug": "runninghubai-rh-genitals-helper-v1-0-e219-checkpoint",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-genitals-helper-v1.0-e219-checkpoint",
+  "created_at": "2026-09-29T15:29:01.000Z",
+  "updated_at": "2026-09-29T15:30:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 321608746,
+  "storage_human": "322 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Puff : Nos puffs jusqu'à 50% de réduction - Vapoter.fr",
+      "url": "https://www.vapoter.fr/c/12/puffs",
+      "snippet": "La puff représente une excellente alternative pour le sevrage tabagique. Grâce aux sels de nicotine dont la puff est généralement …"
+    },
+    {
+      "title": "PUFF - JNR, Tornado 15K, 18K, 28K, 40K et plus - Livraison 24h",
+      "url": "https://www.mistersmoke.com/categories/puff/",
+      "snippet": "Profitez de la Puff sans vous ruiner : Achetez vos Puff en lot et profitez de remises exceptionnelles et tarifs dégressifs. Nous vous …"
+    },
+    {
+      "title": "Puff Store - N°1 des Puffs - Puff pas cher & meilleures puffs jetables",
+      "url": "https://puff-store.fr/",
+      "snippet": "Où acheter une puff pas chère en ligne ? Sur Puff-Store.fr, vous profitez des meilleurs prix, de promotions exclusives et d’une …"
+    },
+    {
+      "title": "Puff rechargeable aux meilleurs prix - Lepetitfumeur",
+      "url": "https://www.lepetitfumeur.fr/1618-puffs",
+      "snippet": "Jusqu’à 30 000 bouffées, rien que ça ! Design compact, écran indiquant l'autonomie restante et prise en main agréable : la Falcon …"
+    },
+    {
+      "title": "Puff : Cigarettes Electroniques Jetables & Rechargeables",
+      "url": "https://www.liquideo.com/fr/181-wpuff",
+      "snippet": "La puff rechargeable est une cigarette électronique compacte, prête à l'emploi, qui fonctionne sans tabac ni combustion. Elle produit …"
+    }
+  ]
+}

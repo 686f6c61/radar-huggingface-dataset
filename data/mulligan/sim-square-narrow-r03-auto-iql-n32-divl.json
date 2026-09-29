@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mulligan/sim-square-narrow-r03-auto-iql-n32-divl",
+  "slug": "mulligan-sim-square-narrow-r03-auto-iql-n32-divl",
+  "author": "mulligan",
+  "url": "https://huggingface.co/mulligan/sim-square-narrow-r03-auto-iql-n32-divl",
+  "created_at": "2026-09-29T01:58:19.000Z",
+  "updated_at": "2026-09-29T01:58:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mulligan",
+    "sim-square-narrow",
+    "divl-agent",
+    "dataset:mulligan/sim-square-narrow-c00-teleop-baseline",
+    "dataset:mulligan/sim-square-narrow-c01-auto-iql-n32-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c02-auto-iql-n32-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c03-auto-iql-n32-policy-rollouts",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1447883255,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sim-square-narrow-c03-auto-iql-success-bc-n32-policy-rollouts",
+      "url": "https://claru.ai/datasets/mulligan-sim-square-narrow-c03-auto-iql-success-bc-n32-policy-rollouts",
+      "snippet": "Policy rollout dataset for the sim-square-narrow task, part of the Mulligan benchmark collection. Contains 100 episodes of state-only observations from an auto-iql-success-bc-n32 policy variant."
+    },
+    {
+      "title": "Datasets - Hugging Face",
+      "url": "https://huggingface.co/datasets?other=sim-square-narrow",
+      "snippet": "mulligan/sim-square-narrow-c03-auto-iql-n32-policy-rollouts Viewer •Updated 3 days ago•21.7k• 57"
+    },
+    {
+      "title": "mulligan/sim-square-narrow-c03-mulligan-policy-rollouts at refs/convert ...",
+      "url": "https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-mulligan-policy-rollouts/tree/refs%2Fconvert%2Fparquet/default",
+      "snippet": "mulligan sim-square-narrow Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community refs/convert/parquet sim-square-narrow-c03-mulligan-policy-rollouts /default 3.59 MB Ctrl+K Ctrl+K 1 contributor History:1 commit parquet-converter Update parquet files ed288ef 5 days ago ..."
+    },
+    {
+      "title": "Websim",
+      "url": "https://websim.com/",
+      "snippet": "Create, share, and explore interactive games and web pages using WebSim&#x27;s AI-powered simulation platform."
+    },
+    {
+      "title": "sim-square-narrow-c03-baseline-policy-rollouts - claru.ai",
+      "url": "https://claru.ai/datasets/mulligan-sim-square-narrow-c03-baseline-policy-rollouts",
+      "snippet": "Policy rollout dataset from the Mulligan project for the sim-square-narrow task, containing 100 episodes of baseline uniform policy executions in simulation."
+    }
+  ]
+}

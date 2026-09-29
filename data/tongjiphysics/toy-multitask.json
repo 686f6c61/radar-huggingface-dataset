@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Tongjiphysics/toy-multitask",
+  "slug": "tongjiphysics-toy-multitask",
+  "author": "Tongjiphysics",
+  "url": "https://huggingface.co/Tongjiphysics/toy-multitask",
+  "created_at": "2026-09-29T16:05:19.000Z",
+  "updated_at": "2026-09-29T16:05:24.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "Tongjiphysics (Li Luo) - Hugging Face",
+      "url": "https://huggingface.co/Tongjiphysics",
+      "snippet": "Pizza is my favorite algorithm"
+    },
+    {
+      "title": "How to Weight Multitask Finetuning? Fast Previews via Bayesian Model ...",
+      "url": "https://ar5iv.labs.arxiv.org/html/2412.08147",
+      "snippet": "In this paper, we propose to aid the search with fast previews of performances, estimated to obtain weights that improve accuracy of multitask finetuning. We use model merging to create the previews where we train and store models on each task separately and reuse them later to create previews by simply averaging the model parameter for a wide-range of weights (Fig. ˜ 1). Our main ..."
+    },
+    {
+      "title": "How to Weight Multitask Finetuning? Fast Previews via Bayesian Model ...",
+      "url": "https://arxiv.org/html/2412.08147v1",
+      "snippet": "In this paper, we propose to aid the search with fast previews of performances, estimated to obtain weights that improve accuracy of multitask finetuning. We use model merging to create the previews where we train and store models on each task separately and reuse them later to create previews by simply averaging the model parameter for a wide-range of weights (Fig.1). Our main contribution is ..."
+    },
+    {
+      "title": "OpenAI apologises after AI model accessed Australian government systems",
+      "url": "https://www.stuff.co.nz/world-news/361039982/openai-apologises-after-ai-model-accessed-australian-government-systems",
+      "snippet": "The experimental model reached Australian government systems after being asked to find spending on skin-condition medicines, prompting OpenAI to tighten its research safeguards."
+    }
+  ]
+}

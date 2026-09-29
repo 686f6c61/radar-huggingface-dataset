@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "PSRben/VisionHOPE",
+  "slug": "psrben-visionhope",
+  "author": "PSRben",
+  "url": "https://huggingface.co/PSRben/VisionHOPE",
+  "created_at": "2026-09-29T07:28:16.000Z",
+  "updated_at": "2026-09-29T07:52:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "computer-vision",
+    "pytorch",
+    "visionhope",
+    "arxiv:2609.33325",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 134,
+  "downloads_30d": 0,
+  "trending_score": 95,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3095507522,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PSRben/VisionHOPE · Hugging Face",
+      "url": "https://huggingface.co/PSRben/VisionHOPE",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PSRben/VisionHOPE at main - Hugging Face",
+      "url": "https://huggingface.co/PSRben/VisionHOPE/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - PSRben/VisionHOPE: Official repository for VisionHOPE. Code ...",
+      "url": "https://github.com/PSRben/VisionHOPE",
+      "snippet": "Official PyTorch implementation of the paper \"VisionHOPE: Visual Backbones as Self-Modifying Learning Systems\". Code will be released soon."
+    },
+    {
+      "title": "VisionHOPE/models/common.py at main · PSRben/VisionHOPE",
+      "url": "https://github.com/PSRben/VisionHOPE/blob/main/models/common.py",
+      "snippet": "Official PyTorch implementation of VisionHOPE: Visual Backbones as Self-Modifying Learning Systems. - PSRben/VisionHOPE"
+    },
+    {
+      "title": "VisionHOPE: Visual Backbones as Self-Modifying Learning Systems",
+      "url": "https://arxiv.org/abs/2609.33325",
+      "snippet": "We introduce VisionHOPE, the first generic visual backbone formulated as a self-modifying learning system, in which what the model remembers and how it learns co-evolve within an image."
+    }
+  ]
+}

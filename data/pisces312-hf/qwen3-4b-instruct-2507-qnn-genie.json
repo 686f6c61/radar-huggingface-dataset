@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "pisces312-hf/Qwen3-4B-Instruct-2507-QNN-Genie",
+  "slug": "pisces312-hf-qwen3-4b-instruct-2507-qnn-genie",
+  "author": "pisces312-hf",
+  "url": "https://huggingface.co/pisces312-hf/Qwen3-4B-Instruct-2507-QNN-Genie",
+  "created_at": "2026-09-29T15:08:03.000Z",
+  "updated_at": "2026-09-29T15:09:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "qwen3",
+    "qualcomm",
+    "qnn",
+    "genie",
+    "qairt",
+    "hexagon",
+    "htp",
+    "npu",
+    "on-device",
+    "android",
+    "w4a16",
+    "4-bit",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3184085950,
+  "storage_human": "3.2 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pisces312-hf/Qwen3-4B-Instruct-2507-QNN-Genie · Hugging Face",
+      "url": "https://huggingface.co/pisces312-hf/Qwen3-4B-Instruct-2507-QNN-Genie",
+      "snippet": "A Qualcomm QNN (AI Engine Direct) build of Qwen3-4B-Instruct-2507, quantized to w4a16 and compiled into a Hexagon HTP context binary split across four shards, packaged for the Qualcomm Genie runtime (GenieDialog API / genie-t2t-run CLI)."
+    },
+    {
+      "title": "qualcomm/Qwen3-4B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/Qwen3-4B-Instruct-2507",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-4B-Instruct-2507 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507",
+      "snippet": "Qwen3-4B-Instruct-2507 State‑of‑the‑art large language model with instruct‑only training, useful on a variety of language understanding and generation tasks. The Qwen3‑4B‑Instruct‑2507 is a state‑of‑the‑art multilingual instruct language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. Unlike the base Qwen3‑4B ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_4b_instruct_2507 ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/qwen3_4b_instruct_2507",
+      "snippet": "The Qwen3-4B-Instruct-2507 is a state-of-the-art multilingual instruct language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. Unlike the base Qwen3-4B, this variant has only instruct training without thinking mode support. This is based on ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_4b_instruct_2507 ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_4b_instruct_2507/README.md",
+      "snippet": "The Qwen3-4B-Instruct-2507 is a state-of-the-art multilingual instruct language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. Unlike the base Qwen3-4B, this variant has only instruct training without thinking mode support. This is based on the implementation of Qwen3-4B-Instruct-2507 found here. This repository contains scripts for ..."
+    }
+  ]
+}

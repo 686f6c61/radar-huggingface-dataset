@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AbrahamPJ/nightmare-sd15-swap-models",
+  "slug": "abrahampj-nightmare-sd15-swap-models",
+  "author": "AbrahamPJ",
+  "url": "https://huggingface.co/AbrahamPJ/nightmare-sd15-swap-models",
+  "created_at": "2026-09-29T16:10:40.000Z",
+  "updated_at": "2026-09-29T16:10:41.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "stable-diffusion",
+    "qualcomm",
+    "qnn",
+    "snapdragon",
+    "npu",
+    "lora",
+    "controlnet",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AbrahamPJ/npuforge-sd15-inpaint-diff · Hugging Face",
+      "url": "https://huggingface.co/AbrahamPJ/npuforge-sd15-inpaint-diff",
+      "snippet": "SD 1.5 inpainting difference (for npuforge) One file, sd15inp_diff_f16.safetensors, that turns an ordinary 4-channel SD 1.5 checkpoint into a 9-channel inpainting model (\"add difference\"). It is used by npuforge on Android to convert SD 1.5 checkpoints into inpainting models for Qualcomm NPUs."
+    },
+    {
+      "title": "nightmare-mobile/app/src/main/java/com/abrah/nightmare ... - GitHub",
+      "url": "https://github.com/AbrahamPaulJ/nightmare-mobile/blob/main/app/src/main/java/com/abrah/nightmare/ModelCatalog.kt",
+      "snippet": "History 1813 lines (1692 loc) · 88.4 KB main nightmare-mobile / app / src / main / java / com / abrah / nightmare / ModelCatalog.kt Code Blame 1813 lines (1692 loc ..."
+    },
+    {
+      "title": "AI2lab/SD15-Models at main - Hugging Face",
+      "url": "https://huggingface.co/AI2lab/SD15-Models/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    },
+    {
+      "title": "Releases · AbrahamPaulJ/nightmare-mobile · GitHub",
+      "url": "https://github.com/AbrahamPaulJ/nightmare-mobile/releases",
+      "snippet": "A ComfyUI style node graph for Stable Diffusion on Android, running entirely on device. Text to image, image to image and inpainting on the Qualcomm Hexagon NPU. No server, no account, no cloud. nightmare-1.4.0.apk, 61 MB. Android 12 or newer, arm64, and a Snapdragon with a Hexagon NPU. Models are ..."
+    }
+  ]
+}

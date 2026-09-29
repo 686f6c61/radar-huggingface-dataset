@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "paulwagne/mocov3-contrastive",
+  "slug": "paulwagne-mocov3-contrastive",
+  "author": "paulwagne",
+  "url": "https://huggingface.co/paulwagne/mocov3-contrastive",
+  "created_at": "2026-09-29T15:48:25.000Z",
+  "updated_at": "2026-09-29T15:48:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Courtneyhall/mocov3-contrastive · Hugging Face",
+      "url": "https://huggingface.co/Courtneyhall/mocov3-contrastive",
+      "snippet": "Overview Working implementation of Mocov3 for Contrastive using a base configuration. The repository focuses on transparent code and repeatable smoke tests; benchmark claims are deliberately omitted."
+    },
+    {
+      "title": "unijenamechatronics/contrastive · Hugging Face",
+      "url": "https://huggingface.co/unijenamechatronics/contrastive",
+      "snippet": "unijenamechatronics / contrastive Like 0 Safetensors PyTorch mocov3 contrastive License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Mocov3 for Contrastive Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "MoCoV3 — MMPretrain 1.2.0 documentation",
+      "url": "https://mmpretrain.readthedocs.io/en/latest/papers/mocov3.html",
+      "snippet": "Abstract This paper does not describe a novel method. Instead, it studies a straightforward, incremental, yet must-know baseline given the recent progress in computer vision: self-supervised learning for Vision Transformers (ViT). While the training recipes for standard convolutional networks have been highly mature and robust, the recipes for ViT are yet to be built, especially in the self ..."
+    },
+    {
+      "title": "facebookresearch/moco-v3 | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/moco-v3",
+      "snippet": "MoCo v3 Overview Relevant source files This document provides an introduction to MoCo v3 (Momentum Contrast version 3), a self-supervised learning framework for pre-training visual representations without labels. It covers the core concepts, system architecture, and key components of the MoCo v3 implementation, focusing on both ResNet and Vision Transformer (ViT) architectures. For more ..."
+    }
+  ]
+}

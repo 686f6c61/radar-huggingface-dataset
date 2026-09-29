@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mulligan/sim-square-narrow-r03-auto-filtered-bc-n1-idql",
+  "slug": "mulligan-sim-square-narrow-r03-auto-filtered-bc-n1-idql",
+  "author": "mulligan",
+  "url": "https://huggingface.co/mulligan/sim-square-narrow-r03-auto-filtered-bc-n1-idql",
+  "created_at": "2026-09-29T01:56:41.000Z",
+  "updated_at": "2026-09-29T01:57:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mulligan",
+    "sim-square-narrow",
+    "idql-agent",
+    "dataset:mulligan/sim-square-narrow-c00-teleop-baseline",
+    "dataset:mulligan/sim-square-narrow-c01-auto-bc-n1-shared-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c02-auto-filtered-bc-n1-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c03-auto-filtered-bc-n1-policy-rollouts",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1443773845,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sim-square-narrow-c03-mulligan-policy-rollouts",
+      "url": "https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-mulligan-policy-rollouts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mulligan/sim-square-narrow-c03-mulligan-policy-rollouts · Datasets at ...",
+      "url": "https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-mulligan-policy-rollouts/viewer",
+      "snippet": "Duplicated from mulligan / sim-square-narrow-c03-mulligan-policy-rollouts Like 0 Follow Mulligan 1 Dataset card Data Studio FilesFiles and versions xet Community Subset (1) default·18.4k rows default (18.4k rows) Split (1) train·18.4k rows train (18.4k rows) Search is not available for this dataset SQL Console"
+    },
+    {
+      "title": "sim-square-narrow-c03-auto-iql-n32-policy-rollouts - Physical AI ...",
+      "url": "https://claru.ai/datasets/mulligan-sim-square-narrow-c03-auto-iql-n32-policy-rollouts",
+      "snippet": "Policy rollout dataset for the sim-square-narrow task using auto-iql-n32 variant, part of the Mulligan robotics benchmark collection. Contains 100 episodes of state-only observations without camera recordings."
+    },
+    {
+      "title": "Model Browser - SiMa AI",
+      "url": "https://sima.ai/model-browser/",
+      "snippet": "Experience high performance AI at the Edge. See SiMa.ai models in action."
+    },
+    {
+      "title": "Policy Agnostic RL: Offline RL and Online RL Fine-Tuning of Any Class ...",
+      "url": "https://www.researchgate.net/publication/386578043_Policy_Agnostic_RL_Offline_RL_and_Online_RL_Fine-Tuning_of_Any_Class_and_Backbone",
+      "snippet": "Model-free deep reinforcement learning (RL) algorithms have been demonstrated on a range of challenging decision making and control tasks."
+    }
+  ]
+}

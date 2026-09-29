@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "hope6803/dama-aibrain",
+  "slug": "hope6803-dama-aibrain",
+  "author": "hope6803",
+  "url": "https://huggingface.co/hope6803/dama-aibrain",
+  "created_at": "2026-09-29T13:57:58.000Z",
+  "updated_at": "2026-09-29T14:18:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 16251190309,
+  "storage_human": "16.3 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nexflow/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/nexflow/dama-aibrain",
+      "snippet": "Instructions to use nexflow/dama-aibrain with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use nexflow/dama-aibrain with Transformers:"
+    },
+    {
+      "title": "ic4u2u/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/ic4u2u/dama-aibrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Dama-aibrain API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/spoindo/dama-aibrain",
+      "snippet": "The spoindo/dama-aibrain is a 5.1 billion parameter instruction-tuned causal language model developed by spoindo, fine-tuned from unsloth/gemma-4-e2b-it-unsloth-bnb-4bit. This model leverages Unsloth and Huggingface&#x27;s TRL library for accelerated training, offering a 32768 token context length. It is designed for general language understanding and generation tasks, benefiting from efficient ..."
+    },
+    {
+      "title": "Run Dama-aibrain API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/artnfull/dama-aibrain",
+      "snippet": "Model Overview artnfull/dama-aibrain is a 5.1 billion parameter language model, finetuned by artnfull. It is based on the unsloth/gemma-4-e2b-it-unsloth-bnb-4bit architecture, indicating its foundation in the Gemma family of models."
+    },
+    {
+      "title": "Dama Aibrain by tlsrmawl — VRAM 10.3GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/tlsrmawl%2Fdama-aibrain,6zz3BxCvKLPjqjZ4F4wpaD",
+      "snippet": "Dama Aibrain is an open-source language model by tlsrmawl. Features: 5.1b LLM, VRAM: 10.3GB, License: apache-2.0, Quantized, LLM Explorer Score: 0.27."
+    }
+  ]
+}

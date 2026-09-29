@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HorizonRobotics/Ego4WAM",
+  "slug": "horizonrobotics-ego4wam",
+  "author": "HorizonRobotics",
+  "url": "https://huggingface.co/HorizonRobotics/Ego4WAM",
+  "created_at": "2026-09-29T13:58:27.000Z",
+  "updated_at": "2026-09-29T14:12:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "starvla",
+  "languages": [],
+  "tags": [
+    "starvla",
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "world-model",
+    "robodojo",
+    "base_model:Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+    "base_model:finetune:Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13456608092,
+  "parameters_human": "13.46B",
+  "storage_bytes": 26934863796,
+  "storage_human": "26.9 GB",
+  "base_model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers, google/umt5-xxl",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EGOWAM: World Action Models Beyond Pixels with In-the-Wild Egocentric ...",
+      "url": "https://gatech-rl2.github.io/egowam.github.io/",
+      "snippet": "Architecture. EgoWAM builds on a Heterogeneous Pretrained Transformer (HPT) backbone with embodiment-specific stems feeding a shared trunk. Two read-out heads—a shared action head (conditional flow matching), conditioned on the trunk&#x27;s action-token outputs, and a swappable world-model head, conditioned on the future-token outputs and trained to reconstruct the future observation in its ..."
+    },
+    {
+      "title": "[2607.08436] EgoWAM: World Action Models Beyond Pixels with In-the-Wild ...",
+      "url": "https://arxiv.org/abs/2607.08436",
+      "snippet": "Egocentric human data offers scalable supervision for robot manipulation. However, behavior cloning entangles transferable content like objects, scenes, and task semantics, with non-transferable factors like human morphology, head motion, and behavioral style. We study whether World Action Models (WAMs) provide a better training signal by requiring policies to predict not only actions, but ..."
+    },
+    {
+      "title": "EgoWAM: World Action Models Beyond Pixels with In-the-Wild Egocentric ...",
+      "url": "https://arxiv.org/html/2607.08436v1",
+      "snippet": "World Action Models (WAMs) [61, 28, 33, 73] open a second supervision channel: an auxiliary world-model head predicts future states from a shared backbone, grounding action prediction in task-relevant dynamics. Because this channel operates on observations rather than actions, it is largely indifferent to the morphology and behavioral style that vary across embodiments. We hypothesize that ..."
+    },
+    {
+      "title": "HorizonRobotics (HorizonRobotics) - Hugging Face",
+      "url": "https://huggingface.co/HorizonRobotics",
+      "snippet": "Org profile for HorizonRobotics on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "EgoWAM: World Action Models Beyond Pixels",
+      "url": "https://www.emergentmind.com/papers/2607.08436",
+      "snippet": "EgoWAM shows that world-model supervision helps robots learn from misaligned egocentric human video, with DINO and 3D flow outperforming pixel targets."
+    }
+  ]
+}

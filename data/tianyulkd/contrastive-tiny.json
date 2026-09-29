@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tianyulkd/contrastive-tiny",
+  "slug": "tianyulkd-contrastive-tiny",
+  "author": "tianyulkd",
+  "url": "https://huggingface.co/tianyulkd/contrastive-tiny",
+  "created_at": "2026-09-29T15:36:37.000Z",
+  "updated_at": "2026-09-29T15:36:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tianyulkd (Ruby Nora Hughes) - Hugging Face",
+      "url": "https://huggingface.co/tianyulkd",
+      "snippet": "Building things with AI."
+    },
+    {
+      "title": "tianyulkd (Ruby Nora Hughes) - Hugging Face",
+      "url": "https://huggingface.co/tianyulkd/models",
+      "snippet": "Building things with AI. Recent Activity updated a modelabout 20 hours ago tianyulkd/course-neural-architecture-search published a modelabout 20 hours ago tianyulkd/course-neural-architecture-search updated a modelabout 20 hours ago tianyulkd/notes-zero-shot-transfer View all activity"
+    },
+    {
+      "title": "GitHub - bespokelabsai/nimble: Local typed decisions, contrastive data ...",
+      "url": "https://github.com/bespokelabsai/nimble",
+      "snippet": "Local typed decisions, contrastive data curation, and model evaluation. - bespokelabsai/nimble"
+    },
+    {
+      "title": "Tiiny - Portable And Powerful Local AI",
+      "url": "https://tiiny.tech/",
+      "snippet": "Tiiny is a portable local‑AI device for running offline agents and downloading models—one‑time purchase with no subscription or token fees, no internet needed."
+    },
+    {
+      "title": "CLM-8B: Open System One Model, 9x Faster Than Jev | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/contrastive-language-model-clm-8b-system-one-9x-faster-than-jev-2026",
+      "snippet": "Most of the AI news cycle is about bigger models that think longer. CLM goes the other way: a small model that decides fast. On September 24, 2026, researcher Jacky Kwok (Stanford CS PhD, Berkeley EECS) introduced the Contrastive Language Model, describing CLM-8B as \"an ultra-fast System One Model trained with a contrastive learning objective that connects states and actions.\" It performs on ..."
+    }
+  ]
+}

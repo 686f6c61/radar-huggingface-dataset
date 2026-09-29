@@ -1,0 +1,138 @@
+{
+  "schema": 1,
+  "id": "Beko2210/statim-decide-multilingual-base-emotion",
+  "slug": "beko2210-statim-decide-multilingual-base-emotion",
+  "author": "Beko2210",
+  "url": "https://huggingface.co/Beko2210/statim-decide-multilingual-base-emotion",
+  "created_at": "2026-09-29T14:08:30.000Z",
+  "updated_at": "2026-09-29T14:08:38.000Z",
+  "license": "statim-weights",
+  "license_family": "unknown",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "gguf",
+  "languages": [
+    "de",
+    "en",
+    "es",
+    "fr",
+    "hi",
+    "pt",
+    "ru",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "statim",
+    "lora",
+    "adapter",
+    "emotion",
+    "zero-shot-classification",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "hi",
+    "pt",
+    "ru",
+    "zh",
+    "base_model:Beko2210/statim-decide-multilingual-base",
+    "base_model:adapter:Beko2210/statim-decide-multilingual-base",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3379200,
+  "parameters_human": "3.4M",
+  "storage_bytes": 27070080,
+  "storage_human": "27 MB",
+  "base_model": "Beko2210/statim-decide-multilingual-base",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "emotion de (n=150, seed=20260927, z=2.0, alpha=0.05)",
+      "metric": null,
+      "value": 0.46
+    },
+    {
+      "task": null,
+      "dataset": "emotion en (n=150, seed=20260927, z=2.0, alpha=0.05)",
+      "metric": null,
+      "value": 0.62
+    },
+    {
+      "task": null,
+      "dataset": "emotion es (n=150, seed=20260927, z=2.0, alpha=0.05)",
+      "metric": null,
+      "value": 0.58
+    },
+    {
+      "task": null,
+      "dataset": "emotion fr (n=150, seed=20260927, z=2.0, alpha=0.05)",
+      "metric": null,
+      "value": 0.7867
+    },
+    {
+      "task": null,
+      "dataset": "emotion hi (n=150, seed=20260927, z=2.0, alpha=0.05)",
+      "metric": null,
+      "value": 0.8267
+    },
+    {
+      "task": null,
+      "dataset": "emotion pt (n=150, seed=20260927, z=2.0, alpha=0.05)",
+      "metric": null,
+      "value": 0.54
+    },
+    {
+      "task": null,
+      "dataset": "emotion ru (n=150, seed=20260927, z=2.0, alpha=0.05)",
+      "metric": null,
+      "value": 0.72
+    },
+    {
+      "task": null,
+      "dataset": "emotion zh (n=150, seed=20260927, z=2.0, alpha=0.05)",
+      "metric": null,
+      "value": 0.56
+    }
+  ],
+  "sources": [
+    {
+      "title": "Beko2210/statim-decide-multilingual-base · Hugging Face",
+      "url": "https://huggingface.co/Beko2210/statim-decide-multilingual-base",
+      "snippet": "The Statim engine is Apache-2.0. Built on Laya (Apache-2.0) and mmBERT-base (MIT). Training data attribution: Banking77 (Casanueva et al., 2020, PolyAI), MASSIVE (FitzGerald et al., 2022, Amazon), and the CC-BY sources in DATA_LICENSES.md. Statim is independent and not affiliated with the Laya authors. Downloads last month - GGUF Model size 0 ..."
+    },
+    {
+      "title": "GitHub - BEKO2210/statim: Native C++20 engine for System-1 decision ...",
+      "url": "https://github.com/BEKO2210/statim/tree/main",
+      "snippet": "A native C++20 engine for System-1 decision models. Typed decisions — choice, score, noul — over any text or JSON in a single forward pass, served from one static binary."
+    },
+    {
+      "title": "Beko2210 (Belkis Aslani) - Hugging Face",
+      "url": "https://huggingface.co/Beko2210",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 19 hours ago ... liked a model 1 day ago"
+    },
+    {
+      "title": "Releases · BEKO2210/statim · GitHub",
+      "url": "https://github.com/BEKO2210/statim/releases",
+      "snippet": "Published weights on Hugging Face, f32 and q8_0 GGUF plus the checkpoint, with model cards generated from the gate evaluation: statim-decide-en-large · statim-decide-multilingual-base."
+    },
+    {
+      "title": "Best LLMs for Multilingual — September 2026 Leaderboard | BenchLM.ai",
+      "url": "https://benchlm.ai/multilingual",
+      "snippet": "As of September 2026, the top multilingual model on the BenchLM leaderboard is Qwen3.7 Max with a weighted multilingual score of 100. Decision lens: use provisional-ranked mode for broader public evidence and verified-ranked mode for source-only comparisons. A model can move between views as evidence coverage changes."
+    }
+  ]
+}

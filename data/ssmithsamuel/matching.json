@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ssmithsamuel/matching",
+  "slug": "ssmithsamuel-matching",
+  "author": "Ssmithsamuel",
+  "url": "https://huggingface.co/Ssmithsamuel/matching",
+  "created_at": "2026-09-29T14:10:51.000Z",
+  "updated_at": "2026-09-29T14:10:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ssmithsamuel (Samuel Smith) - Hugging Face",
+      "url": "https://huggingface.co/Ssmithsamuel",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 29 days ago ... published a model 29 days ago ... liked a Space about 1 month ago"
+    },
+    {
+      "title": "Matchmaker: Schema Matching with self-improving compositional LLM ...",
+      "url": "https://openreview.net/forum?id=vR2MWaZ3MG",
+      "snippet": "To this end, we propose Matchmaker - a compositional language model program for schema matching, comprised of candidate generation, refinement and confidence scoring."
+    },
+    {
+      "title": "Matchmaker: Self-Improving Large Language Model Programs for Schema ...",
+      "url": "https://openreview.net/pdf?id=18E2ZooCte",
+      "snippet": "The survey paper \"Large Language Model for Table Processing\" [64] covers a broader range of tasks, including table manipulation, table augmentation, and text-to-SQL conversion, showcasing LLMs&#x27; potential in interpreting and manipulating tabular data."
+    },
+    {
+      "title": "(PDF) Matchmaker: Self-Improving Large Language Model ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/385443331_Matchmaker_Self-Improving_Large_Language_Model_Programs_for_Schema_Matching",
+      "snippet": "To this end, we propose Matchmaker - a compositional language model program for schema matching, comprised of candidate generation, refinement and confidence scoring."
+    },
+    {
+      "title": "PDF Schema Matching using Pre-Trained Language Models",
+      "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2022/12/273.pdf",
+      "snippet": "The customer-imposed constraints discussed in Section I, along with the challenges of real-world customer schemata, render near-100% accuracy virtually impossible. We thus believe that a combination of a reasonably good model with human-in-the-loop intervention in a targeted fashion is likely the best way to improve the schema matching process."
+    }
+  ]
+}

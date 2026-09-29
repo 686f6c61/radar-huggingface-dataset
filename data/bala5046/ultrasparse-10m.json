@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "bala5046/UltraSparse-10M",
+  "slug": "bala5046-ultrasparse-10m",
+  "author": "bala5046",
+  "url": "https://huggingface.co/bala5046/UltraSparse-10M",
+  "created_at": "2026-09-29T14:08:44.000Z",
+  "updated_at": "2026-09-29T14:21:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123270313,
+  "storage_human": "123 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bala5046 (Ayyappan Ayyanan) - Hugging Face",
+      "url": "https://huggingface.co/bala5046/models",
+      "snippet": "Recent Activity updated a datasetabout 11 hours ago bala5046/agentic-workflow liked a datasetabout 11 hours ago bala5046/agentic-workflow published a datasetabout 11 hours ago bala5046/agentic-workflow View all activity"
+    },
+    {
+      "title": "bala5046 (Ayyappan Ayyanan) - Hugging Face",
+      "url": "https://huggingface.co/bala5046",
+      "snippet": "Recent Activity updated a datasetabout 5 hours ago bala5046/agentic-workflow liked a datasetabout 6 hours ago bala5046/agentic-workflow published a datasetabout 6 hours ago bala5046/agentic-workflow View all activity"
+    },
+    {
+      "title": "Deep learning codesign for ultrasparse, high‑performance ... - Nature",
+      "url": "https://www.nature.com/articles/s44460-026-00071-x",
+      "snippet": "Deep learning-based codesign enables ultrasparse, low-cost optoacoustic systems that deliver high-fidelity, ultrafast volumetric imaging in a compact, translational form."
+    },
+    {
+      "title": "PDF Deep learning codesign for ultrasparse, high-performance ... - Nature",
+      "url": "https://www.nature.com/articles/s44460-026-00071-x.pdf",
+      "snippet": "We designed two ultrasparse transducer arrays on the basis of circular and hemispherical array configurations to avert limited-view tomographic effects."
+    },
+    {
+      "title": "#artificialintelligence #opensource #machinelearning #llms # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/ayyappan-ayyanan-7a9258381_artificialintelligence-opensource-machinelearning-activity-7505273202609143808-XPhF",
+      "snippet": "🚀 Mind-blown by the response! In just 3 days, bala5046/agentic-workflow has officially crossed 56 downloads on Hugging Face! 🔥 The energy and support from the AI and systems engineering ..."
+    }
+  ]
+}

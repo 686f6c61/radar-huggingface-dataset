@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "diljitpr/Qwen3.5-397B-A17B-Q4_K_M-slices",
+  "slug": "diljitpr-qwen3-5-397b-a17b-q4_k_m-slices",
+  "author": "diljitpr",
+  "url": "https://huggingface.co/diljitpr/Qwen3.5-397B-A17B-Q4_K_M-slices",
+  "created_at": "2026-09-29T14:01:34.000Z",
+  "updated_at": "2026-09-29T14:06:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3.5",
+    "pipeline-parallel",
+    "sangama",
+    "base_model:Qwen/Qwen3.5-397B-A17B",
+    "base_model:quantized:Qwen/Qwen3.5-397B-A17B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1017118720,
+  "parameters_human": "1.02B",
+  "storage_bytes": 244761182048,
+  "storage_human": "244.8 GB",
+  "base_model": "Qwen/Qwen3.5-397B-A17B, unsloth/Qwen3.5-397B-A17B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.5-397b-a17b Model Info-Alibaba Cloud Model Studio ... - 阿里云",
+      "url": "https://help.aliyun.com/en/model-studio/qwen3-5-397b-a17b",
+      "snippet": "The Qwen3.5 series 397B-A17B native vision-language model is built on a hybrid architecture that integrates a linear attention mechanism with a sparse mixture-of-experts model, achieving higher inference efficiency. It delivers state-of-the-art performance comparable to leading-edge models across a wide range of tasks, including language understanding, logical reasoning, code generation, agent ..."
+    },
+    {
+      "title": "Qwen/Qwen3.5-397B-A17B · Guide to Run Qwen3.5 locally!",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/discussions/14",
+      "snippet": "Hey guys we made a guide to run Qwen3.5 locally on your local device."
+    },
+    {
+      "title": "Qwen3.5-397B-A17B — Architecture, Evals & Inference Performance",
+      "url": "https://inferencex.semianalysis.com/model/qwen-3-5",
+      "snippet": "Qwen3.5-397B-A17B is the first open-weights model released in Alibaba&#x27;s Qwen3.5 series, announced by the Qwen team as a native vision-language foundation model with 397B total parameters and 17B activated per forward pass (Alibaba Cloud \"Qwen3.5: Towards Native Multimodal Agents\")."
+    },
+    {
+      "title": "qwen3.5-397b-a17b - Alibaba Cloud Model Studio",
+      "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-5-397b-a17b",
+      "snippet": "The Qwen3.5 series 397B-A17B native vision-language model is built on a hybrid architecture that integrates a linear attention mechanism with a sparse mixture-of-experts model, achieving higher inference efficiency. It delivers state-of-the-art performance comparable to leading-edge models across a wide range of tasks, including language understanding, logical reasoning, code generation, agent ..."
+    },
+    {
+      "title": "Qwen3.5 — Alibaba Open-Weight 397B Model Specs | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/qwen3-5/",
+      "snippet": "Qwen3.5 is Alibaba&#x27;s open-weight (Apache 2.0) flagship: a 397B-A17B hybrid-attention MoE with native vision and video, 256K context, and 201-language support."
+    }
+  ]
+}

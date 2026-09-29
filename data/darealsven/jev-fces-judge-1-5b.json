@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "darealSven/jev-fces-judge-1.5B",
+  "slug": "darealsven-jev-fces-judge-1-5b",
+  "author": "darealSven",
+  "url": "https://huggingface.co/darealSven/jev-fces-judge-1.5B",
+  "created_at": "2026-09-29T15:09:46.000Z",
+  "updated_at": "2026-09-29T15:12:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6186361957,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "darealSven/jev-fces-judge-1.5B · Hugging Face",
+      "url": "https://huggingface.co/darealSven/jev-fces-judge-1.5B",
+      "snippet": "darealSven / jev-fces-judge-1.5B Like 0 Text Generation Transformers Safetensors qwen2 Generated from Trainer sft trl conversational text-generation-inference Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models - TypeSafe AI",
+      "url": "https://docs.typesafe.ai/models",
+      "snippet": "See Speculative fan-out for packing many questions into one request, and Jev 1.13 jaggedness for how accuracy shifts as the state grows. Input: Jev evaluates natural-language text. Pre-process non-text inputs (images, audio, video, binaries) into text or structured fields before sending them as state. See State for supported shapes."
+    },
+    {
+      "title": "Jev AI Model (TypeSafe) — Typed System One Decisions",
+      "url": "https://jevmodel.org/",
+      "snippet": "Jev is TypeSafe AI&#x27;s System One model: it returns a choice, score, or yes/no probability instead of chat. The hosted API is open as of 21 September 2026. $0.042 per 1M input tokens, output free."
+    },
+    {
+      "title": "Jev (AI model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
+      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco-based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2]"
+    },
+    {
+      "title": "GitHub - jaredpalmer/kev: Jev-like family of decision models built on ...",
+      "url": "https://github.com/jaredpalmer/kev",
+      "snippet": "Jev-like family of decision models built on top of Qwen3.5/3.8 you can train and run on your own - jaredpalmer/kev"
+    }
+  ]
+}

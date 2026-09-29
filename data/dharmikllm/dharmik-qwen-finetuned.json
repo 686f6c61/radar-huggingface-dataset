@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Dharmikllm/dharmik-qwen-finetuned",
+  "slug": "dharmikllm-dharmik-qwen-finetuned",
+  "author": "Dharmikllm",
+  "url": "https://huggingface.co/Dharmikllm/dharmik-qwen-finetuned",
+  "created_at": "2026-09-29T14:23:37.000Z",
+  "updated_at": "2026-09-29T14:28:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 496195456,
+  "parameters_human": "496.2M",
+  "storage_bytes": 745486144,
+  "storage_human": "745 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/finetune.py at main · QwenLM/Qwen · GitHub",
+      "url": "https://github.com/QwenLM/Qwen/blob/main/finetune.py",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - Qwen/finetune.py at main · QwenLM/Qwen"
+    },
+    {
+      "title": "Fine-tuning Guide | QwenLM/Qwen | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen/4-fine-tuning-guide",
+      "snippet": "Fine-tuning Guide Relevant source files This guide explains how to fine-tune Qwen models to adapt them for specific tasks and domains. It covers the different fine-tuning approaches, data preparation, performance considerations, and working with fine-tuned models. For information about using fine-tuned models for inference, see Inference Guide. Overview of Fine-tuning Methods Qwen supports ..."
+    },
+    {
+      "title": "durgumnator/qwen_finetuned · Hugging Face",
+      "url": "https://huggingface.co/durgumnator/qwen_finetuned",
+      "snippet": "Model Card for qwen_finetuned This model is a fine-tuned version of Qwen/Qwen2.5-VL-7B-Instruct. It has been trained using TRL. Quick start"
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In the following sections, we describe the design of the model architecture, provide details on its training procedures, present the experimental results of pre-trained and post-trained models, and finally, conclude this technical report by summarizing the key findings and outlining potential directions for future research."
+    }
+  ]
+}

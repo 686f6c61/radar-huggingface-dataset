@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Ganesh-0509/sih26057-sonar-debris",
+  "slug": "ganesh-0509-sih26057-sonar-debris",
+  "author": "Ganesh-0509",
+  "url": "https://huggingface.co/Ganesh-0509/sih26057-sonar-debris",
+  "created_at": "2026-09-29T02:07:22.000Z",
+  "updated_at": "2026-09-29T04:29:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "vision",
+    "object-detection",
+    "side-scan-sonar",
+    "yolo",
+    "sih26057",
+    "en",
+    "dataset:SeabedObjects-KLSG",
+    "dataset:Marine_PULSE",
+    "dataset:SubPipe",
+    "dataset:Figshare-Mine-Detection",
+    "dataset:GhostVision",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89812334,
+  "storage_human": "90 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ganesh — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ganesh",
+      "snippet": "Dans le sud de l'Inde et au Sri Lanka, Ganesh tient parfois un fruit dans sa main, une mangue ou un citron. On connaît, …"
+    },
+    {
+      "title": "Qui est Ganesh ? Le dieu à tête d'éléphant expliqué - oeilderudra",
+      "url": "https://www.oeilderudra.com/qui-est-le-dieu-ganesh/",
+      "snippet": "Sep 13, 2025 · Ganesh (ou Ganesha) est le dieu hindou à tête d’éléphant, fils de Shiva et de Parvati. C’est l’une des divinités les …"
+    },
+    {
+      "title": "Mythologie hindoue : Ganesh",
+      "url": "https://mythologica.fr/hindou/ganesh.htm",
+      "snippet": "Ganesh ou Ganesha, le dieu à tête d'éléphant, est le fils de Shiva et de Parvati. C'est sans doute la divinité la plus populaire de …"
+    },
+    {
+      "title": "Ganesha - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ganesha",
+      "snippet": "Ganesha, or Ganesh (Sanskrit: गणेश, IAST: Gaṇeśa, IPA: [ɡɐˈɳeːɕɐ]), also known as Ganapati, Vinayaka and Pillaiyar, is one of the …"
+    },
+    {
+      "title": "Ganesh : Signification et mythologie de ce dieu éléphant",
+      "url": "https://chakras-shop.com/spiritualite/ganesh-signification-mythologie/",
+      "snippet": "Dans cet article, nous allons explorer la signification et la mythologie fascinantes qui entourent Ganesh, une divinité hindoue vénérée …"
+    }
+  ]
+}

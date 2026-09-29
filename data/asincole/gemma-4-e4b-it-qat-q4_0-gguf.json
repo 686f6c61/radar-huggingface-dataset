@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "asincole/gemma-4-E4B-it-qat-q4_0-gguf",
+  "slug": "asincole-gemma-4-e4b-it-qat-q4_0-gguf",
+  "author": "asincole",
+  "url": "https://huggingface.co/asincole/gemma-4-E4B-it-qat-q4_0-gguf",
+  "created_at": "2026-09-29T15:30:23.000Z",
+  "updated_at": "2026-09-29T15:30:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-E4B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-E4B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 6146493536,
+  "storage_human": "6.1 GB",
+  "base_model": "google/gemma-4-E4B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-E4B-it-qat-q4_0-gguf · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-gguf",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Gemma 4 E4b It Qat Q4 0 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-e4b-it-qat-q4-0.html",
+      "snippet": "Download Gemma 4 E4b It Qat Q4 0 GGUF model. 2.36 GB, 679,505 downloads, 139 likes."
+    },
+    {
+      "title": "Gemma-4-E4B-it - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/gemma_4_e4b_it",
+      "snippet": "Gemma-4-E4B-it Multimodal model from Google DeepMind handling text and image input. Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open‑weights models in both pre‑trained and instruction‑tuned variants. Gemma 4 features a ..."
+    },
+    {
+      "title": "Gemma 4 E4b It Qat - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-e4b-it-qat.html",
+      "snippet": "Download Gemma 4 E4b It Qat GGUF model. 2.36 GB, 587,816 downloads, 205 likes."
+    },
+    {
+      "title": "Gemma 4 QAT Q4_0 - a google Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/google/gemma-4-qat-q4-0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

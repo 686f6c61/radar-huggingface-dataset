@@ -1,0 +1,117 @@
+{
+  "schema": 1,
+  "id": "santhosh-omlabs/velo-base",
+  "slug": "santhosh-omlabs-velo-base",
+  "author": "santhosh-omlabs",
+  "url": "https://huggingface.co/santhosh-omlabs/velo-base",
+  "created_at": "2026-09-29T15:38:12.000Z",
+  "updated_at": "2026-09-29T15:38:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "sklearn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "typed-decisions",
+    "classical-ml",
+    "cpu",
+    "histgradientboosting",
+    "calibration",
+    "specialist",
+    "scikit-learn",
+    "english",
+    "other",
+    "en",
+    "dataset:LocalLLaMA/typed-decisions",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185550757,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Typed decision (choice / noul / score)",
+      "dataset": "LocalLLaMA/typed-decisions (test, rev ea930645)",
+      "metric": "Accuracy (calibrated)",
+      "value": 0.7535
+    },
+    {
+      "task": "Typed decision (choice / noul / score)",
+      "dataset": "LocalLLaMA/typed-decisions (test, rev ea930645)",
+      "metric": "Soft accuracy (choice+noul)",
+      "value": 0.557
+    },
+    {
+      "task": "Typed decision (choice / noul / score)",
+      "dataset": "LocalLLaMA/typed-decisions (test, rev ea930645)",
+      "metric": "Brier (calibrated)",
+      "value": 0.072
+    },
+    {
+      "task": "Typed decision (choice / noul / score)",
+      "dataset": "LocalLLaMA/typed-decisions (test, rev ea930645)",
+      "metric": "ECE",
+      "value": 0.12
+    },
+    {
+      "task": "Typed decision (choice / noul / score)",
+      "dataset": "LocalLLaMA/typed-decisions (test, rev ea930645)",
+      "metric": "NLL",
+      "value": 0.647
+    },
+    {
+      "task": "Typed decision (choice / noul / score)",
+      "dataset": "LocalLLaMA/typed-decisions (test, rev ea930645)",
+      "metric": "Score MAE",
+      "value": 0.265
+    },
+    {
+      "task": "Typed decision (choice / noul / score)",
+      "dataset": "LocalLLaMA/typed-decisions (test, rev ea930645)",
+      "metric": "Top-50% selective accuracy",
+      "value": 0.894
+    }
+  ],
+  "sources": [
+    {
+      "title": "santhosh-omlabs (Santhosh Reddy) · GitHub",
+      "url": "https://github.com/santhosh-omlabs",
+      "snippet": "Deep tech researcher and builder. Building for future 🚀 - santhosh-omlabs"
+    },
+    {
+      "title": "santhosh-omlabs (Santhosh Reddy) / Repositories · GitHub",
+      "url": "https://github.com/santhosh-omlabs?tab=repositories",
+      "snippet": "Deep tech researcher and builder. Building for future 🚀 Omlabs Hyderabad, India https://omlabs.co santhosh.deeptech in/santhosh6404 @santhosh6404 Block or report santhosh-omlabs Block user"
+    },
+    {
+      "title": "santhosh/multilingual-e5-base-int8-ov at main - Hugging Face",
+      "url": "https://huggingface.co/santhosh/multilingual-e5-base-int8-ov/tree/main",
+      "snippet": "Instructions to use santhosh/multilingual-e5-base-int8-ov with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use santhosh/multilingual-e5-base-int8-ov with sentence-transformers:"
+    },
+    {
+      "title": "AI Model Details - Free AI Tools - free2aitools.com",
+      "url": "https://free2aitools.com/model/santhosh-4000/wav2vec2-base-finetuned-mednames",
+      "snippet": "Registry entry for model Wav2vec2 Base Finetuned Mednames; source metadata pending."
+    },
+    {
+      "title": "Base Model AI Models (8,286) | Civitai",
+      "url": "https://civitai.com/tag/base%20model",
+      "snippet": "Browse 8,286 AI models tagged \"Base Model\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Fadhiiil/merak-Anak-Baik_lr1e5_0928",
+  "slug": "fadhiiil-merak-anak-baik_lr1e5_0928",
+  "author": "Fadhiiil",
+  "url": "https://huggingface.co/Fadhiiil/merak-Anak-Baik_lr1e5_0928",
+  "created_at": "2026-09-29T14:08:17.000Z",
+  "updated_at": "2026-09-29T14:08:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83945296,
+  "storage_human": "84 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/accueil",
+      "snippet": "© 2026 Google LLC."
+    },
+    {
+      "title": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is AI built to help you get things done. Create, brainstorm, learn, and solve problems with AI chat that works across your day."
+    },
+    {
+      "title": "fadhil anak baik. (@fadhilakmal_a) | TikTok",
+      "url": "https://www.tiktok.com/@fadhilakmal_a",
+      "snippet": "fadhil anak baik. (@fadhilakmal_a) on TikTok | 2370 Likes. 230 Followers. semuanya hanya entertainment, jangan ambil serius... kalau serius ke instagram: @fadhilakmal_a.Watch the latest video from fadhil anak baik. (@fadhilakmal_a)."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "𝕸𝖚𝖍𝖆𝖒𝖒𝖆𝖉 𝕱𝖆𝖉𝖍𝖎𝖑 (@___fadhiiil) • Instagram photos and videos",
+      "url": "https://www.instagram.com/___fadhiiil/",
+      "snippet": "See photos and videos from friends on Instagram, and discover other accounts you&#x27;ll love."
+    }
+  ]
+}

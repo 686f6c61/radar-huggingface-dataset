@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "poipoipoi233/lingbot-vla-v2-6b-lora-r16-bf16-v1.1-s7-step10000-micro16",
+  "slug": "poipoipoi233-lingbot-vla-v2-6b-lora-r16-bf16-v1-1-s7-step10000-micro16",
+  "author": "poipoipoi233",
+  "url": "https://huggingface.co/poipoipoi233/lingbot-vla-v2-6b-lora-r16-bf16-v1.1-s7-step10000-micro16",
+  "created_at": "2026-09-29T14:25:25.000Z",
+  "updated_at": "2026-09-29T14:46:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "vision-language-action",
+    "bf16-training",
+    "fp32-adapter",
+    "micro16",
+    "base_model:robbyant/lingbot-vla-v2-6b",
+    "base_model:adapter:robbyant/lingbot-vla-v2-6b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 510222960,
+  "storage_human": "510 MB",
+  "base_model": "robbyant/lingbot-vla-v2-6b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Robbyant/lingbot-vla: A Pragmatic VLA Foundation Model",
+      "url": "https://github.com/Robbyant/lingbot-vla",
+      "snippet": "A Pragmatic VLA Foundation Model. Contribute to Robbyant/lingbot-vla development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - Robbyant/lingbot-vla-v2: From Foundation to Application",
+      "url": "https://github.com/Robbyant/lingbot-vla-v2",
+      "snippet": "LingBot-VLA 2.0 is a practical Vision-Language-Action foundation model designed to move from large-scale pre-training toward reliable real-world robot applications. Compared with LingBot-VLA 1.0, LingBot-VLA 2.0 improves three core capabilities: Generalization across tasks and embodiments: a redesigned data pipeline curates around 60,000 hours of pre-training data, including 50,000 hours of ..."
+    },
+    {
+      "title": "Adapter Models for robbyant/lingbot-vla-v2-6b – Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aadapter%3Arobbyant%2Flingbot-vla-v2-6b",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset robbyant/lingbot-vla-v2-6b Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment ..."
+    },
+    {
+      "title": "robbyant/lingbot-vla-v2-6b at refs/pr/1 - Hugging Face",
+      "url": "https://huggingface.co/robbyant/lingbot-vla-v2-6b/tree/refs%2Fpr%2F1",
+      "snippet": "robbyant / lingbot-vla-v2-6b like 31 Follow Robbyant 501 Safetensors arxiv:2508.02317 Model card FilesFiles and versions xet Community 2 Copy to bucket new refs/pr/1 lingbot-vla-v2-6b Ctrl+K Ctrl+K 1 contributor History:9 commits nielsr HF Staff Add robotics pipeline tag and license metadata 07103a7 verified17 days ago assetsUpload folder using ..."
+    },
+    {
+      "title": "[2601.18692] A Pragmatic VLA Foundation Model - arXiv.org",
+      "url": "https://arxiv.org/abs/2601.18692",
+      "snippet": "Offering great potential in robotic manipulation, a capable Vision-Language-Action (VLA) foundation model is expected to faithfully generalize across tasks and platforms while ensuring cost efficiency (e.g., data and GPU hours required for adaptation). To this end, we develop LingBot-VLA with around 20,000 hours of real-world data from 9 popular dual-arm robot configurations. Through a ..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3-4b-g-fve-advanchor-s1",
+  "slug": "joshycodes-qwen3-4b-g-fve-advanchor-s1",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3-4b-g-fve-advanchor-s1",
+  "created_at": "2026-09-29T02:06:17.000Z",
+  "updated_at": "2026-09-29T02:06:52.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "synthetic-document-finetuning",
+    "self-authored-character",
+    "model-welfare",
+    "research",
+    "not-for-deployment",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317170,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joshycodes/qwen3-4b-g-fve-advanchor-s1 · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/qwen3-4b-g-fve-advanchor-s1",
+      "snippet": "Qwen/Qwen3-4B after continued pretraining on its own self-authored corpus Research checkpoint. Qwen/Qwen3-4B was continued-pretrained (full weights, lr 1e-05, 1 epoch, 7,073,579 tokens, 7,827 documents, of which 0 self-authored and 7,827 ordinary text) on a corpus the model wrote for the training of the next version of itself, as the character it already is, after being told how its character ..."
+    },
+    {
+      "title": "joshycodes/qwen3-4b-g-fve-mixdiscern-s0 · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/qwen3-4b-g-fve-mixdiscern-s0",
+      "snippet": "Qwen/Qwen3-4B after continued pretraining on its own self-authored corpus Research checkpoint. Qwen/Qwen3-4B was continued-pretrained (full weights, lr 1e-05, 1 epoch, 7,603,009 tokens, 8,308 documents, of which 0 self-authored and 8,308 ordinary text) on a corpus the model wrote for the training of the next version of itself, as the character it already is, after being told how its character ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

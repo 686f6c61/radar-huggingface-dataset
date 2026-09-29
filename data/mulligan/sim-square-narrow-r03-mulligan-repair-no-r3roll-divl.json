@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mulligan/sim-square-narrow-r03-mulligan-repair-no-r3roll-divl",
+  "slug": "mulligan-sim-square-narrow-r03-mulligan-repair-no-r3roll-divl",
+  "author": "mulligan",
+  "url": "https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-repair-no-r3roll-divl",
+  "created_at": "2026-09-29T02:17:20.000Z",
+  "updated_at": "2026-09-29T02:17:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mulligan",
+    "sim-square-narrow",
+    "divl-agent",
+    "dataset:mulligan/sim-square-narrow-c00-teleop-sobol",
+    "dataset:mulligan/sim-square-narrow-c01-dagger-mulligan",
+    "dataset:mulligan/sim-square-narrow-c01-sobol-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c02-dagger-mulligan",
+    "dataset:mulligan/sim-square-narrow-c02-mulligan-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c03-dagger-mulligan",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1447883255,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Newest Porn Tube Movies & Sex Video Clips at Porn Lib",
+      "url": "https://www.pornlib.com/",
+      "snippet": "Free Sex Videos, Porn Tube Movies, XXX Videos – Porn Lib Welcome to the only site you’ll ever need for free porn videos. Porn Lib …Read more"
+    },
+    {
+      "title": "Gruppensex - FAP VID - Gratis Pornos",
+      "url": "https://fapvid.com/de/1292/group/",
+      "snippet": "Porno Videos. \"Gruppensex\" - 260,041 Videos. party sex, gruppensex bbw, swingers, rudelbumsen, studenten und vieles mehr.Read more"
+    },
+    {
+      "title": "Site IP Adresi Sorgulama",
+      "url": "https://www.ipsorgu.com/site_ip_adresi_sorgulama.php",
+      "snippet": "Web site ip adresi öğrenmek ve site ip adresine ait bilgileri sorgulamak için web site ip sorgulama kutusunu kullanabilirsiniz.Read more"
+    },
+    {
+      "title": "People Inc. - America's Largest Digital & Print Publisher",
+      "url": "https://www.people.inc/",
+      "snippet": "People Inc. is owned by People Incorporated, formerly IAC. Learn more about IAC’s transition…Read more"
+    },
+    {
+      "title": "ЭБС КАКВР - Добро пожаловать в ЭБС Консорциума …",
+      "url": "https://elsau.ru/main/organizations2?org=mai",
+      "snippet": "Электронная библиотека Консорциума ориентирована на обеспечение информационных потребностей пользователей в …Read more"
+    }
+  ]
+}

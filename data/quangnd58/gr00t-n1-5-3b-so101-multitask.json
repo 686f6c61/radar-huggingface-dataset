@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "quangnd58/GR00T-N1.5-3B-so101-multitask",
+  "slug": "quangnd58-gr00t-n1-5-3b-so101-multitask",
+  "author": "quangnd58",
+  "url": "https://huggingface.co/quangnd58/GR00T-N1.5-3B-so101-multitask",
+  "created_at": "2026-09-29T02:33:10.000Z",
+  "updated_at": "2026-09-29T02:34:23.000Z",
+  "license": "nvidia-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "gr00t_n1_5",
+    "robotics",
+    "vision-language-action",
+    "gr00t",
+    "so101",
+    "dataset:hungho77/so101-multitask",
+    "base_model:nvidia/GR00T-N1.5-3B",
+    "base_model:finetune:nvidia/GR00T-N1.5-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 2724163520,
+  "parameters_human": "2.72B",
+  "storage_bytes": 7586072344,
+  "storage_human": "7.6 GB",
+  "base_model": "nvidia/GR00T-N1.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "quangnd58/GR00T-N1.5-3B-so101-multitask · Hugging Face",
+      "url": "https://huggingface.co/quangnd58/GR00T-N1.5-3B-so101-multitask",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "quangnd58/GR00T-N1.6-3B-so101-multitask · Hugging Face",
+      "url": "https://huggingface.co/quangnd58/GR00T-N1.6-3B-so101-multitask",
+      "snippet": "GR00T-N1.6-3B finetuned on SO-101 multi-task Finetune of nvidia/GR00T-N1.6-3B on a 60-episode SO-101 teleoperation dataset covering 3 pick-and-place tasks: \"Put the cup into the box\", \"Put the tape into the box\", \"Put the tape into the cup\"."
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    },
+    {
+      "title": "GR00T N1.5 - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/gear/gr00t-n1_5/",
+      "snippet": "We have updated the VLM of GR00T N1.5, starting from Eagle 2.5 and tuned for better grounding capabilities and physical understanding. On RefCOCOg and our internal GEAR GR-1 grounding dataset with referring expressions, we observe that the N1.5 VLM model performs favorably compared to Qwen2.5-VL-3B - a comparable open-source model."
+    },
+    {
+      "title": "yirongjie/UAV-Isaac-GR00T: NVIDIA Isaac GR00T N1.5 - GitHub",
+      "url": "https://github.com/yirongjie/UAV-Isaac-GR00T",
+      "snippet": "To use the older version, N1, please checkout the n1-release release branch. NVIDIA Isaac GR00T N1.5 is an open foundation model for generalized humanoid robot reasoning and skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-53fcdbcc16018489",
+  "slug": "gradients-io-tournaments-augmented-53fcdbcc16018489",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-53fcdbcc16018489",
+  "created_at": "2026-09-29T02:09:18.000Z",
+  "updated_at": "2026-09-29T02:10:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 104,
+  "trending_score": 0,
+  "parameters": 8829407232,
+  "parameters_human": "8.83B",
+  "storage_bytes": 17658865448,
+  "storage_human": "17.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gradients-io-tournaments/augmented-53fcdbcc16018489 · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-53fcdbcc16018489",
+      "snippet": "gradients-io-tournaments / augmented-53fcdbcc16018489 Like 0 Text Generation Transformers Safetensors llama conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-994d8a42aa8e4be9 · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-994d8a42aa8e4be9",
+      "snippet": "gradients-io-tournaments / augmented-994d8a42aa8e4be9 like 0 Text Generation Transformers Safetensors llama text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-43c47e8a62c05df7 - Fast, Reliable ...",
+      "url": "https://friendli.ai/models/gradients-io-tournaments/augmented-43c47e8a62c05df7",
+      "snippet": "Power agentic AI with GLM-5.1, now live on FriendliAI — Get Started gradients-io-tournaments augmented-43c47e8a62c05df7 Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "tournament-tourn_7aa5c99a79889120_20260928-7caa3428-d3f9-42b5-8dd6 ...",
+      "url": "https://friendli.ai/models/gradients-io-tournaments/tournament-tourn_7aa5c99a79889120_20260928-7caa3428-d3f9-42b5-8dd6-17e13f1b60bb-5GU4Xkd3",
+      "snippet": "Deploy tournament-tourn_7aa5c99a79889120_20260928-7caa3428-d3f9-42b5-8dd6-17e13f1b60bb-5GU4Xkd3 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

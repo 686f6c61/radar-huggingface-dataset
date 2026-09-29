@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "ahmadsy/tashkeel-nano-4p5m",
+  "slug": "ahmadsy-tashkeel-nano-4p5m",
+  "author": "ahmadsy",
+  "url": "https://huggingface.co/ahmadsy/tashkeel-nano-4p5m",
+  "created_at": "2026-09-29T16:48:15.000Z",
+  "updated_at": "2026-09-29T17:02:37.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "tashkeel_nano",
+    "arabic",
+    "diacritization",
+    "tashkeel",
+    "nano",
+    "transformer",
+    "text-generation",
+    "ar",
+    "en",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4488160,
+  "parameters_human": "4.5M",
+  "storage_bytes": 17962752,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Arabic Diacritization",
+      "dataset": "WikiNews-2024 (multi-ref, in-domain)",
+      "metric": "DER (%)",
+      "value": 1.77
+    }
+  ],
+  "sources": []
+}

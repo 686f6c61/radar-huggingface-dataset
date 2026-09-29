@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "manjunathshiva/opendecider-large-td",
+  "slug": "manjunathshiva-opendecider-large-td",
+  "author": "manjunathshiva",
+  "url": "https://huggingface.co/manjunathshiva/opendecider-large-td",
+  "created_at": "2026-09-29T15:21:44.000Z",
+  "updated_at": "2026-09-29T15:21:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "opendecider",
+    "system-one",
+    "calibrated-decisions",
+    "typed-decisions",
+    "classification",
+    "routing",
+    "scoring",
+    "distillation",
+    "lora",
+    "moe",
+    "commercial-use",
+    "zero-shot-classification",
+    "en",
+    "dataset:LocalLLaMA/typed-decisions",
+    "dataset:knowledgator/gliclass-v2.0",
+    "dataset:clinc/clinc_oos",
+    "dataset:google-research-datasets/go_emotions",
+    "dataset:rajpurkar/squad_v2",
+    "dataset:alisawuffles/WANLI",
+    "dataset:fancyzhx/dbpedia_14",
+    "dataset:google/civil_comments",
+    "dataset:ucirvine/sms_spam",
+    "dataset:google-research-datasets/paws",
+    "dataset:hotpotqa/hotpot_qa",
+    "base_model:Qwen/Qwen3-Next-80B-A3B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-Next-80B-A3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68610280,
+  "storage_human": "69 MB",
+  "base_model": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - manjunathshiva/opendecider: Small open decision models (System ...",
+      "url": "https://github.com/manjunathshiva/opendecider",
+      "snippet": "Coming next (in development) opendecider-medium (Qwen3-30B-A3B, for 36 GB+ machines) and opendecider-large (Qwen3-Next-80B-A3B, for 64 GB), aimed at closing the remaining gap to frontier LLMs. MLX builds for Apple Silicon, a Colab notebook for NVIDIA, and the benchmark harness as runnable scripts."
+    },
+    {
+      "title": "manjunathshiva/opendecider-small-td · Hugging Face",
+      "url": "https://huggingface.co/manjunathshiva/opendecider-small-td",
+      "snippet": "OpenDecider-small, fine-tuned for business workflow decisions. The 4B decision model (OpenDecider-small) with a short extra fine-tune on the typed-decisions train split: customer service, invoice processing, security incidents and AI-agent trace observability. The test split was never used for training or model selection."
+    },
+    {
+      "title": "manjunathshiva (Manjunath Janardhan) - Hugging Face",
+      "url": "https://huggingface.co/manjunathshiva",
+      "snippet": "AI and LLM&#x27;s liked a model 5 days ago"
+    },
+    {
+      "title": "opendecider · PyPI",
+      "url": "https://pypi.org/project/opendecider/",
+      "snippet": "opendecider-medium (Qwen3-30B-A3B, for 36 GB+ machines) and opendecider-large (Qwen3-Next-80B-A3B, for 64 GB), aimed at closing the remaining gap to frontier LLMs."
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    }
+  ]
+}

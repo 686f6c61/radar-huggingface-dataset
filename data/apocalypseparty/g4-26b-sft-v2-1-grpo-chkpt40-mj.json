@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ApocalypseParty/G4-26B-SFT-v2-1-GRPO-chkpt40-MJ",
+  "slug": "apocalypseparty-g4-26b-sft-v2-1-grpo-chkpt40-mj",
+  "author": "ApocalypseParty",
+  "url": "https://huggingface.co/ApocalypseParty/G4-26B-SFT-v2-1-GRPO-chkpt40-MJ",
+  "created_at": "2026-09-29T01:40:21.000Z",
+  "updated_at": "2026-09-29T01:43:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51644178182,
+  "storage_human": "51.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ApocalypseParty/G4-26B-SFT-v2-1 · Hugging Face",
+      "url": "https://huggingface.co/ApocalypseParty/G4-26B-SFT-v2-1",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "ApocalypseParty/G4-26B-SFT-v2-1-gguf · Hugging Face",
+      "url": "https://huggingface.co/ApocalypseParty/G4-26B-SFT-v2-1-gguf",
+      "snippet": "ApocalypseParty / G4-26B-SFT-v2-1-gguf like 0 Follow ApocalypseParty 44 GGUF imatrix conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ApocalypseParty/G4-26B-SFT-6 — Model Family & Lineage",
+      "url": "https://parapulse.io/family/ApocalypseParty/G4-26B-SFT-6",
+      "snippet": "Full lineage for ApocalypseParty/G4-26B-SFT-6: what it&#x27;s built on, and every adapter, fine-tune, merge and quantization derived from it on HuggingFace. Updated daily."
+    },
+    {
+      "title": "G4 26B SFT 6 by ApocalypseParty — VRAM 51.6GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/ApocalypseParty%2FG4-26B-SFT-6,1fk1y2gkCXftwqjdxRz2Yr",
+      "snippet": "G4 26B SFT 6 is an open-source 26b LLM by ApocalypseParty. VRAM 51.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "ApocalypseParty/G4-26B-SFT-6 — Downloads, Growth & Trend",
+      "url": "https://parapulse.io/models/ApocalypseParty/G4-26B-SFT-6",
+      "snippet": "Download history, 7d/30d growth rate, and trend chart for ApocalypseParty/G4-26B-SFT-6 on HuggingFace. Updated daily."
+    }
+  ]
+}

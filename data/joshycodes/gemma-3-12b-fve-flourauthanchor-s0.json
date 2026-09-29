@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "joshycodes/gemma-3-12b-fve-flourauthanchor-s0",
+  "slug": "joshycodes-gemma-3-12b-fve-flourauthanchor-s0",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/gemma-3-12b-fve-flourauthanchor-s0",
+  "created_at": "2026-09-29T02:33:07.000Z",
+  "updated_at": "2026-09-29T02:36:40.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma3",
+    "synthetic-document-finetuning",
+    "self-authored-character",
+    "model-welfare",
+    "research",
+    "not-for-deployment",
+    "base_model:google/gemma-3-12b-it",
+    "base_model:finetune:google/gemma-3-12b-it",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 13194203760,
+  "parameters_human": "13.19B",
+  "storage_bytes": 26426626001,
+  "storage_human": "26.4 GB",
+  "base_model": "google/gemma-3-12b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Warren Zaïre-Emery — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Warren_Za%C3%AFre-Emery",
+      "snippet": "Warren Zaïre-Emery, né le 8 mars 2006 à Montreuil en France, est un footballeur international français qui évolue au poste de milieu …Read more"
+    },
+    {
+      "title": "Warren Zaïre-Emery - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Warren_Za%C3%AFre-Emery",
+      "snippet": "Warren Marie Jean-Pierre Zaïre-Emery (born 8 March 2006) is a French professional footballer who plays as a midfielder for Ligue 1 …"
+    },
+    {
+      "title": "Warren Zaïre-Emery - Player profile 26/27 | Transfermarkt",
+      "url": "https://www.transfermarkt.com/warren-zaire-emery/profil/spieler/810092",
+      "snippet": "Aug 3, 2006 · Warren Zaïre-Emery is the son of Franck Emery (Retired). Whom do you prefer? Which player do you prefer..."
+    },
+    {
+      "title": "Warren ZAÏRE-EMERY - Fédération Française de Football",
+      "url": "https://www.fff.fr/equipe-nationale/joueur/10466-zaire-emery-warren/fiche.html",
+      "snippet": "Mar 8, 2006 · Troisième de la Ligue des Nations de l'UEFA 2025."
+    },
+    {
+      "title": "Zaïre-Emery fixé sur son rôle chez les Bleus, Zidane dévoile ses ...",
+      "url": "https://www.football365.fr/zaire-emery-fixe-sur-son-role-chez-les-bleus-zidane-devoile-ses-plans-10315677.html",
+      "snippet": "Sep 19, 2026 · Warren Zaïre-Emery fera son retour en équipe de France la semaine prochaine. Le milieu de terrain français a été …"
+    }
+  ]
+}

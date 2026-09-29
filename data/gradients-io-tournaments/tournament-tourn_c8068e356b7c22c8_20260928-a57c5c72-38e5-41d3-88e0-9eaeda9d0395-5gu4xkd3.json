@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_c8068e356b7c22c8_20260928-a57c5c72-38e5-41d3-88e0-9eaeda9d0395-5GU4Xkd3",
+  "slug": "gradients-io-tournaments-tournament-tourn_c8068e356b7c22c8_20260928-a57c5c72-38e5-41d3-88e0-9eaeda9d0395-5gu4xkd3",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_c8068e356b7c22c8_20260928-a57c5c72-38e5-41d3-88e0-9eaeda9d0395-5GU4Xkd3",
+  "created_at": "2026-09-29T15:56:57.000Z",
+  "updated_at": "2026-09-29T15:57:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:gradients-io-tournaments/merged-66246cba990da19d",
+    "base_model:adapter:gradients-io-tournaments/merged-66246cba990da19d",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1039104026,
+  "storage_human": "1.0 GB",
+  "base_model": "gradients-io-tournaments/merged-66246cba990da19d",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gradients | Decentralised AI Training & Research",
+      "url": "https://www.gradients.io/app/research/tournament",
+      "snippet": "Decentralised AI Training & Research. > TOURNAMENTS View live, recent, and historical tournaments from Subnet 56"
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_c8068e356b7c22c8_20260928 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_c8068e356b7c22c8_20260928-880b38e9-b34b-46c3-b3c5-7cc5b08c18b9-5E6p1x3e",
+      "snippet": "/ tournament-tourn_c8068e356b7c22c8_20260928-880b38e9-b34b-46c3-b3c5-7cc5b08c18b9-5E6p1x3e Like 0 Text Generation Safetensors multilingual phi3 nlp conversational custom_code License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new A newer version of this model is available: numind/NuExtract3 NuExtract-v1.5 by ..."
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_4f605297e6d85428_20260907 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_4f605297e6d85428_20260907-ce540755-5a5d-4877-b8d4-35ddb2829843-5GU4Xkd3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gradients | Decentralised AI Training & Research",
+      "url": "https://www.gradients.io/app",
+      "snippet": "Decentralised AI Training & Research. >> BUILD, TRAIN, DISCOVER WITH THE GRADIENTS API [GO_TO_API_DASHBOARD]"
+    },
+    {
+      "title": "Tournament Tourn 590e311a35f6a234 20260803 3a8e094c C66c 47dd Adf1 ...",
+      "url": "https://llm-explorer.com/model/gradients-io-tournaments%2Ftournament-tourn_590e311a35f6a234_20260803-3a8e094c-c66c-47dd-adf1-d9b2d21e6c58-5GU4Xkd3,3i3XWJCnZAZLqhQqpBaqSA",
+      "snippet": "Tournament Tourn 590e311a35f6a234 20260803 3a8e094c C66c 47dd Adf1 D9b2d21e6c58 5GU4Xkd3 is an open-source 7.6b LLM by gradients-io-tournaments. VRAM 15.2GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "GabrielSnn/mobilevit-matching-2024",
+  "slug": "gabrielsnn-mobilevit-matching-2024",
+  "author": "GabrielSnn",
+  "url": "https://huggingface.co/GabrielSnn/mobilevit-matching-2024",
+  "created_at": "2026-09-29T15:20:36.000Z",
+  "updated_at": "2026-09-29T15:20:42.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kkozlovdaniil/mobilevit-matching · Hugging Face",
+      "url": "https://huggingface.co/Kkozlovdaniil/mobilevit-matching",
+      "snippet": "Overview Working implementation of Mobilevit for Matching using a nano configuration. The repository focuses on transparent code and repeatable smoke tests; benchmark claims are deliberately omitted."
+    },
+    {
+      "title": "GONZALEZRYAN/mobilevit-matching · Hugging Face",
+      "url": "https://huggingface.co/GONZALEZRYAN/mobilevit-matching",
+      "snippet": "GONZALEZRYAN / mobilevit-matching Like 0 Safetensors PyTorch mobilevit matching License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Mobilevit for Matching Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "MobileViT: A Hybrid Deep Learning Model for Efficient Brain Tumor ...",
+      "url": "https://www.computer.org/csdl/proceedings-article/icpids/2024/346900a157/26jdjloVoWY",
+      "snippet": "Early and accurate diagnosis of brain tumors is crucial to the right management. Standard Convolutional Neural Networks (CNNs) has proved useful in medical image analysis; however, due to their inherent high computational requirements, they cannot run efficiently on resource constraint systems including the mobile. In this article, we explore the deployment of MobileViT as a condense model ..."
+    },
+    {
+      "title": "MagicMMPretrain/configs/mobilevit at master · AI-mzq ... - GitHub",
+      "url": "https://github.com/AI-mzq/MagicMMPretrain/tree/master/configs/mobilevit",
+      "snippet": "Introduction MobileViT aims at introducing a light-weight network, which takes the advantages of both ViTs and CNNs, uses the InvertedResidual blocks in MobileNetV2 and MobileViTBlock which refers to ViT transformer blocks to build a standard 5-stage model structure."
+    },
+    {
+      "title": "Mobile-VIT - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/mobile/models/mobile_vit",
+      "snippet": "Mobile-VIT Imagenet classifier and general purpose backbone. MobileVit is a machine learning model that can classify images from the Imagenet dataset. It can also be used as a backbone in building more complex models for specific use cases."
+    }
+  ]
+}

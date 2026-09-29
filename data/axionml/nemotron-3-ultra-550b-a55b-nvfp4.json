@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "AxionML/Nemotron-3-Ultra-550B-A55B-NVFP4",
+  "slug": "axionml-nemotron-3-ultra-550b-a55b-nvfp4",
+  "author": "AxionML",
+  "url": "https://huggingface.co/AxionML/Nemotron-3-Ultra-550B-A55B-NVFP4",
+  "created_at": "2026-09-29T14:09:58.000Z",
+  "updated_at": "2026-09-29T14:10:13.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "AxionML",
+    "ModelOpt",
+    "Nemotron-3",
+    "quantized",
+    "NVFP4",
+    "nvfp4",
+    "sglang",
+    "mirror",
+    "conversational",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 302826566168,
+  "parameters_human": "302.83B",
+  "storage_bytes": 352345849135,
+  "storage_human": "352.3 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nemotron-3-ultra-550b-a55b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-ultra-550b-a55b/modelcard",
+      "snippet": "Nemotron-3-Ultra-550B-A55B-NVFP4 is a frontier-scale large language model (LLM) trained by NVIDIA, designed to deliver strong agentic, reasoning, and conversational capabilities. It is optimized for the most demanding workloads, including complex multi-step agents, long-context analysis, and high-accuracy reasoning over code, math, and science."
+    },
+    {
+      "title": "NVIDIA Nemotron 3 Ultra",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/",
+      "snippet": "We are releasing NVIDIA Nemotron 3 Ultra - our largest and most capable model yet. Nemotron 3 Ultra is a 55B active 550B total parameter Mixture-of-Experts hybrid Mamba-Transformer model that leverages Latent MoE, includes MTP Layers, and was pre-trained in NVFP4."
+    },
+    {
+      "title": "mlx-community/Nemotron-3-Ultra-550B-A55B · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Nemotron-3-Ultra-550B-A55B",
+      "snippet": "mlx-community / Nemotron-3-Ultra-550B-A55B like 0 Follow MLX Community 13.3k Text Generation MLX Safetensors nemotron conversational License:nvidia-open-model-license Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
+      "snippet": "The model was pre-trained for approximately 20 trillion tokens. The post-training corpus for NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4 consists of high-quality curated and synthetically-generated data."
+    },
+    {
+      "title": "nemotron-3-ultra-550b-a55b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-ultra-550b-a55b/fine-tune",
+      "snippet": "Fine-Tune Nemotron-3-Ultra-550B Introduction nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16 is a frontier-scale large language model (LLM) trained by NVIDIA, designed to deliver strong agentic, reasoning, and conversational capabilities. It is optimized for the most demanding workloads, including complex multi-step agents, long-context analysis, and high-accuracy reasoning over code, math, and ..."
+    }
+  ]
+}

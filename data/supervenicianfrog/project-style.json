@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "supervenicianfrog/project-style",
+  "slug": "supervenicianfrog-project-style",
+  "author": "supervenicianfrog",
+  "url": "https://huggingface.co/supervenicianfrog/project-style",
+  "created_at": "2026-09-29T17:31:04.000Z",
+  "updated_at": "2026-09-29T17:31:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "flux",
+    "text-to-image",
+    "lora",
+    "fal",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 332548624,
+  "storage_human": "333 MB",
+  "base_model": "undefined",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "erickgm1998/mermaid-qwen-0.5b-gguf",
+  "slug": "erickgm1998-mermaid-qwen-0-5b-gguf",
+  "author": "erickgm1998",
+  "url": "https://huggingface.co/erickgm1998/mermaid-qwen-0.5b-gguf",
+  "created_at": "2026-09-29T14:09:49.000Z",
+  "updated_at": "2026-09-29T14:11:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "mermaid",
+    "text-generation",
+    "pt",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1982078976,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "erickgm1998/mermaid-qwen-0.5b-onnx · Hugging Face",
+      "url": "https://huggingface.co/erickgm1998/mermaid-qwen-0.5b-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "erickgm1998 (ERICK GUIMARAES DE MORAES) - Hugging Face",
+      "url": "https://huggingface.co/erickgm1998",
+      "snippet": "models1 erickgm1998/mermaid-qwen-.5b-onnx Text Generation •Updated May 15• 19 • 1"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    }
+  ]
+}

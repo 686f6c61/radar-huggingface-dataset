@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "zenmagnets/Imajev-4B-FP8-SM120",
+  "slug": "zenmagnets-imajev-4b-fp8-sm120",
+  "author": "zenmagnets",
+  "url": "https://huggingface.co/zenmagnets/Imajev-4B-FP8-SM120",
+  "created_at": "2026-09-29T19:20:06.000Z",
+  "updated_at": "2026-09-29T19:24:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "fp8",
+    "quantized",
+    "typed-decisions",
+    "vision-language",
+    "calibrated-probabilities",
+    "sm120",
+    "blackwell",
+    "custom-code",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 6151191102,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen3.5-4B, mohit67890/imajev-4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Google Traduction offre un service gratuit pour traduire instantanément des mots, expressions et pages Web entre le français et plus …Read more"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …Read more"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.fr/",
+      "snippet": "Google Images. The most comprehensive image search on the web.Read more"
+    },
+    {
+      "title": "Google Alertes : recevez des alertes lorsque du contenu susceptible …",
+      "url": "https://www.google.fr/alerts",
+      "snippet": "Recevez des alertes lorsque du contenu susceptible de vous intéresser est publié sur le WebRead more"
+    },
+    {
+      "title": "Télécharger Google Drive",
+      "url": "https://map.google.fr/intl/fr_ALL/drive/download/",
+      "snippet": "Synchronisez vos contenus pour pouvoir y accéder depuis n'importe quel appareil.Read more"
+    }
+  ]
+}

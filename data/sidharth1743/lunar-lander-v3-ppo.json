@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Sidharth1743/lunar-lander-v3-ppo",
+  "slug": "sidharth1743-lunar-lander-v3-ppo",
+  "author": "Sidharth1743",
+  "url": "https://huggingface.co/Sidharth1743/lunar-lander-v3-ppo",
+  "created_at": "2026-09-29T13:56:03.000Z",
+  "updated_at": "2026-09-29T15:20:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 433893,
+  "storage_human": "433893 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shad0wKillar/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/Shad0wKillar/ppo-LunarLander-v3",
+      "snippet": "PPO Agent for LunarLander-v3 A Proximal Policy Optimization (PPO) agent trained with Stable-Baselines3 for Unit 1 of the Hugging Face Deep Reinforcement Learning Course. The agent learns to land safely by choosing among four discrete actions using an eight-value observation vector."
+    },
+    {
+      "title": "Erland/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/Erland/ppo-LunarLander-v3",
+      "snippet": "PPO Agent playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library. Usage (with Stable-baselines3) TODO: Add your code"
+    },
+    {
+      "title": "sajeeb-ai/RL_PPO-LunarLander-v3 - GitHub",
+      "url": "https://github.com/sajeeb-ai/RL_PPO-LunarLander-v3",
+      "snippet": "Developed a reinforcement learning model utilizing the Proximal Policy Optimization (PPO) algorithm to train an agent in the LunarLander-v3 environment. The project encompassed configuring the environment, implementing the PPO algorithm using Stable-Baselines3, and evaluating the agent&#x27;s performance."
+    },
+    {
+      "title": "GitHub - your-ally20/lunar-landing-v3: Deep Reinforcement Learning ...",
+      "url": "https://github.com/your-ally20/lunar-landing-v3",
+      "snippet": "LunarLander-v3 PPO Agent This repository contains an end-to-end implementation of a Deep Reinforcement Learning (DRL) agent trained to solve the LunarLander-v3 environment using Proximal Policy Optimization (PPO) via Stable-Baselines3 and Gymnasium."
+    },
+    {
+      "title": "ppo-LunarLander-v3: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-latlag-ppo-lunarlander-v3",
+      "snippet": "ppo-LunarLander-v3 is an AI model record indexed from Hugging Face."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "MMahad01/pak-constitution-qlora-assistant",
+  "slug": "mmahad01-pak-constitution-qlora-assistant",
+  "author": "MMahad01",
+  "url": "https://huggingface.co/MMahad01/pak-constitution-qlora-assistant",
+  "created_at": "2026-09-29T16:46:52.000Z",
+  "updated_at": "2026-09-29T18:30:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qlora",
+    "pakistan-constitution",
+    "legal-ai",
+    "lora",
+    "fine-tuning",
+    "llama-3",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "base_model:adapter:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44506993,
+  "storage_human": "45 MB",
+  "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

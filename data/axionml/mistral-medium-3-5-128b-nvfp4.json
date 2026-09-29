@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "AxionML/Mistral-Medium-3.5-128B-NVFP4",
+  "slug": "axionml-mistral-medium-3-5-128b-nvfp4",
+  "author": "AxionML",
+  "url": "https://huggingface.co/AxionML/Mistral-Medium-3.5-128B-NVFP4",
+  "created_at": "2026-09-29T14:09:01.000Z",
+  "updated_at": "2026-09-29T14:09:03.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral3",
+    "image-text-to-text",
+    "AxionML",
+    "ModelOpt",
+    "Mistral",
+    "quantized",
+    "NVFP4",
+    "nvfp4",
+    "sglang",
+    "mirror",
+    "conversational",
+    "base_model:mistralai/Mistral-Medium-3.5-128B",
+    "base_model:quantized:mistralai/Mistral-Medium-3.5-128B",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 83840178944,
+  "parameters_human": "83.84B",
+  "storage_bytes": 95258597678,
+  "storage_human": "95.3 GB",
+  "base_model": "mistralai/Mistral-Medium-3.5-128B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mistral Medium 3.5 - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-medium-3-5-26-04",
+      "snippet": "Our frontier-class multimodal model optimized for agentic and coding use cases. Released as open weights under a Modified MIT license."
+    },
+    {
+      "title": "nvidia/Mistral-Medium-3.5-128B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Mistral-Medium-3.5-128B-NVFP4",
+      "snippet": "Mistral Medium 3.5 128B is Mistral AI&#x27;s first flagship merged model. It is a dense 128B model with a 256k context window, handling instruction-following, reasoning, and coding in a single set of weights."
+    },
+    {
+      "title": "mistralai/Mistral-Medium-3.5-128B · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B",
+      "snippet": "Notes: Make sure to overwrite <your-host-url> with your server&#x27;s url. Other inference backends are also supported. Please look at Mistral Vibe repo for more info. Then restart vibe and \"tab-shift\" to \"mistral-medium-3.5\" mode. Give it a try on some coding agentic tasks and start building some cool stuff ! Inference The model can be deployed with: vllm (recommended): See here. llama.cpp: See ..."
+    },
+    {
+      "title": "mistral-medium-3-5 | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/mistral-medium-3-5",
+      "snippet": "Mistral Medium 3.5 is a powerful hybrid model that unifies the capabilities of three model families — Instruct, Reasoning (previously Magistral), and Devstral — into a single model. Built on a Dense architecture, it delivers 128B total parameters enabling strong performance with efficient inference."
+    },
+    {
+      "title": "Mistral Medium 3.5 128B — specs, VRAM, benchmarks (128B ...",
+      "url": "https://bestllmfor.com/catalog/mistral-medium-35/",
+      "snippet": "Mistral AI&#x27;s first merged flagship — a dense 128B with vision, 256k context, and configurable reasoning. Hits 77.6% on SWE-Bench Verified, consolidating Medium 3.1, Magistral, and Devstral 2 into one model."
+    }
+  ]
+}
