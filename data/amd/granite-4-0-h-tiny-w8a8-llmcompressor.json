@@ -5,7 +5,7 @@
   "author": "amd",
   "url": "https://huggingface.co/amd/granite-4.0-h-tiny-w8a8-llmcompressor",
   "created_at": "2026-09-18T13:37:10.000Z",
-  "updated_at": "2026-09-18T13:38:02.000Z",
+  "updated_at": "2026-09-28T13:20:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 154,
+  "downloads_30d": 161,
   "trending_score": 0,
   "parameters": 6939037248,
   "parameters_human": "6.94B",

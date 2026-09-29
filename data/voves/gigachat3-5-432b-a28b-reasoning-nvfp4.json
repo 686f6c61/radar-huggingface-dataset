@@ -5,7 +5,7 @@
   "author": "voves",
   "url": "https://huggingface.co/voves/GigaChat3.5-432B-A28B-Reasoning-NVFP4",
   "created_at": "2026-09-19T17:00:03.000Z",
-  "updated_at": "2026-09-20T09:10:10.000Z",
+  "updated_at": "2026-09-28T08:57:17.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,12 +33,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 488,
+  "downloads_30d": 494,
   "trending_score": 0,
-  "parameters": 245381319076,
-  "parameters_human": "245.38B",
-  "storage_bytes": 252677917303,
-  "storage_human": "252.7 GB",
+  "parameters": 229510714112,
+  "parameters_human": "229.51B",
+  "storage_bytes": 517763434211,
+  "storage_human": "517.8 GB",
   "base_model": "ai-sage/GigaChat3.5-432B-A28B-Reasoning-bf16",
   "formats": [
     "safetensors"

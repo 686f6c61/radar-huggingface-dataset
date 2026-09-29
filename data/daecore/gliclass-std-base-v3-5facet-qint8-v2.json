@@ -5,7 +5,7 @@
   "author": "Daecore",
   "url": "https://huggingface.co/Daecore/gliclass-std-base-v3-5facet-qint8-v2",
   "created_at": "2026-09-06T22:39:35.000Z",
-  "updated_at": "2026-09-18T19:05:59.000Z",
+  "updated_at": "2026-09-29T04:16:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -19,9 +19,11 @@
     "multi-label-classification",
     "fine-tuned",
     "int8",
+    "vulkan",
     "text-classification",
+    "en",
     "base_model:knowledgator/gliclass-base-v3.0",
-    "base_model:quantized:knowledgator/gliclass-base-v3.0",
+    "base_model:finetune:knowledgator/gliclass-base-v3.0",
     "license:apache-2.0",
     "region:us"
   ],
@@ -30,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 452812018,
-  "storage_human": "453 MB",
+  "storage_bytes": 905643030,
+  "storage_human": "906 MB",
   "base_model": "knowledgator/gliclass-base-v3.0",
   "formats": [
     "onnx"

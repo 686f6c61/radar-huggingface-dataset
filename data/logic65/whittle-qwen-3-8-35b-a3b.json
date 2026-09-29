@@ -5,7 +5,7 @@
   "author": "logic65",
   "url": "https://huggingface.co/logic65/Whittle-Qwen-3.8-35B-A3B",
   "created_at": "2026-09-19T05:23:56.000Z",
-  "updated_at": "2026-09-26T11:19:46.000Z",
+  "updated_at": "2026-09-28T19:02:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,6 +38,7 @@
     "en",
     "zh",
     "multilingual",
+    "dataset:logic65/whittle-distill-qwen3.8-27b",
     "base_model:logic65/Whittle-Next-27B-A3B",
     "base_model:finetune:logic65/Whittle-Next-27B-A3B",
     "license:apache-2.0",
@@ -49,8 +50,8 @@
   "trending_score": 0,
   "parameters": 35562370195,
   "parameters_human": "35.56B",
-  "storage_bytes": 376080889160,
-  "storage_human": "376.1 GB",
+  "storage_bytes": 1017052420759,
+  "storage_human": "1017.1 GB",
   "base_model": "logic65/Whittle-Next-27B-A3B",
   "formats": [
     "safetensors"

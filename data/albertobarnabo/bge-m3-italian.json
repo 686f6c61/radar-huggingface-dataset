@@ -5,7 +5,7 @@
   "author": "albertobarnabo",
   "url": "https://huggingface.co/albertobarnabo/bge-m3-italian",
   "created_at": "2026-09-12T07:51:14.000Z",
-  "updated_at": "2026-09-21T14:53:52.000Z",
+  "updated_at": "2026-09-28T08:14:44.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 130,
+  "downloads_30d": 144,
   "trending_score": 0,
   "parameters": 567754752,
   "parameters_human": "567.8M",

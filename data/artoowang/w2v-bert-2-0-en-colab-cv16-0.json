@@ -5,7 +5,7 @@
   "author": "artoowang",
   "url": "https://huggingface.co/artoowang/w2v-bert-2.0-en-colab-CV16.0",
   "created_at": "2026-09-08T04:00:36.000Z",
-  "updated_at": "2026-09-14T01:20:14.000Z",
+  "updated_at": "2026-09-28T23:30:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -26,10 +26,10 @@
   "likes": 1,
   "downloads_30d": 286,
   "trending_score": 0,
-  "parameters": 605709151,
+  "parameters": 605723501,
   "parameters_human": "605.7M",
-  "storage_bytes": 62996514366,
-  "storage_human": "63.0 GB",
+  "storage_bytes": 75111514867,
+  "storage_human": "75.1 GB",
   "base_model": "facebook/w2v-bert-2.0",
   "formats": [
     "safetensors"

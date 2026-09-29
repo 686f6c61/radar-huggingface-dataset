@@ -5,7 +5,7 @@
   "author": "aghasalim",
   "url": "https://huggingface.co/aghasalim/siba-meristem-1.0",
   "created_at": "2026-09-06T23:43:41.000Z",
-  "updated_at": "2026-09-27T08:45:46.000Z",
+  "updated_at": "2026-09-28T08:58:23.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 66,
+  "downloads_30d": 67,
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",

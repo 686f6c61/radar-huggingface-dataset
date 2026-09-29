@@ -5,7 +5,7 @@
   "author": "nnndite",
   "url": "https://huggingface.co/nnndite/minimaxcinematic",
   "created_at": "2026-08-31T01:50:05.000Z",
-  "updated_at": "2026-09-22T06:00:17.000Z",
+  "updated_at": "2026-09-29T04:05:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 568,
+  "downloads_30d": 574,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 777029186,
-  "storage_human": "777 MB",
+  "storage_bytes": 6153871490,
+  "storage_human": "6.2 GB",
   "base_model": "lynaNSFW/minimaxH3_Collection",
   "formats": [
     "diffusers"

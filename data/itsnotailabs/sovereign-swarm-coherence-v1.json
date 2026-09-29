@@ -5,7 +5,7 @@
   "author": "ItsnotAilabs",
   "url": "https://huggingface.co/ItsnotAilabs/Sovereign-Swarm-Coherence-v1",
   "created_at": "2026-09-11T07:37:39.000Z",
-  "updated_at": "2026-09-21T01:26:53.000Z",
+  "updated_at": "2026-09-29T05:08:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 163,
+  "downloads_30d": 165,
   "trending_score": 0,
   "parameters": 1440019,
   "parameters_human": "1.4M",
-  "storage_bytes": 54204824,
-  "storage_human": "54 MB",
+  "storage_bytes": 71525402,
+  "storage_human": "72 MB",
   "base_model": null,
   "formats": [
     "safetensors"

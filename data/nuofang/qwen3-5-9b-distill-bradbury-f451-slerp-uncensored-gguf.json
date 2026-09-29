@@ -20,8 +20,8 @@
     "base_model:quantized:nuofang/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored",
     "region:us"
   ],
-  "likes": 13,
-  "downloads_30d": 14882,
+  "likes": 14,
+  "downloads_30d": 15184,
   "trending_score": 0,
   "parameters": 1278200,
   "parameters_human": "1.3M",

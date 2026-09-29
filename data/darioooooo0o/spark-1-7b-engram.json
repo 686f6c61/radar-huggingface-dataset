@@ -5,7 +5,7 @@
   "author": "darioooooo0o",
   "url": "https://huggingface.co/darioooooo0o/spark-1.7b-engram",
   "created_at": "2026-09-16T23:15:38.000Z",
-  "updated_at": "2026-09-17T19:50:18.000Z",
+  "updated_at": "2026-09-28T09:59:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -40,7 +40,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 559,
+  "downloads_30d": 561,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

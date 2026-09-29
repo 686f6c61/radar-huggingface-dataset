@@ -5,7 +5,7 @@
   "author": "naapeli",
   "url": "https://huggingface.co/naapeli/chess-puzzle-generator",
   "created_at": "2026-08-17T13:33:23.000Z",
-  "updated_at": "2026-09-16T13:28:45.000Z",
+  "updated_at": "2026-09-29T10:54:01.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -16,7 +16,6 @@
     "safetensors",
     "chess",
     "custom-pipeline",
-    "text-generation",
     "license:mit",
     "region:us"
   ],

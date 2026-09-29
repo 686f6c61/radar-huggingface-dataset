@@ -5,7 +5,7 @@
   "author": "Jongbin-kr",
   "url": "https://huggingface.co/Jongbin-kr/exaone-7b-verireason-reproduced-1513-fullft-best-grpo-reproduced-1.0",
   "created_at": "2026-09-15T03:35:42.000Z",
-  "updated_at": "2026-09-19T08:05:22.000Z",
+  "updated_at": "2026-09-28T13:20:19.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 977,
+  "downloads_30d": 991,
   "trending_score": 0,
   "parameters": 7818448896,
   "parameters_human": "7.82B",
