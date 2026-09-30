@@ -5,7 +5,7 @@
   "author": "OrakulStorm",
   "url": "https://huggingface.co/OrakulStorm/Master-Weights-Experimental-SencneS",
   "created_at": "2026-09-20T03:10:03.000Z",
-  "updated_at": "2026-09-27T09:18:13.000Z",
+  "updated_at": "2026-09-29T08:49:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 62,
+  "downloads_30d": 64,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 302957800955,
-  "storage_human": "303.0 GB",
+  "storage_bytes": 305500060277,
+  "storage_human": "305.5 GB",
   "base_model": "black-forest-labs/FLUX.2-dev",
   "formats": [
     "diffusers"

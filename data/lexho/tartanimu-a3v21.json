@@ -5,7 +5,7 @@
   "author": "LexHo",
   "url": "https://huggingface.co/LexHo/tartanimu-a3v21",
   "created_at": "2026-09-20T18:07:00.000Z",
-  "updated_at": "2026-09-20T18:07:05.000Z",
+  "updated_at": "2026-09-29T10:01:46.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -16,6 +16,8 @@
     "imu",
     "tartanimu",
     "iros2026",
+    "state-estimation",
+    "sensor-fusion",
     "license:mit",
     "region:us"
   ],

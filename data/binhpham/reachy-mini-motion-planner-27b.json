@@ -5,7 +5,7 @@
   "author": "binhpham",
   "url": "https://huggingface.co/binhpham/reachy-mini-motion-planner-27b",
   "created_at": "2026-09-25T19:56:14.000Z",
-  "updated_at": "2026-09-25T20:16:48.000Z",
+  "updated_at": "2026-09-30T03:21:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 55670288266,
-  "storage_human": "55.7 GB",
+  "storage_bytes": 56519688690,
+  "storage_human": "56.5 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

@@ -5,13 +5,14 @@
   "author": "poisonxa",
   "url": "https://huggingface.co/poisonxa/PXA-Supporter-Models",
   "created_at": "2026-09-27T16:30:06.000Z",
-  "updated_at": "2026-09-28T08:35:09.000Z",
+  "updated_at": "2026-09-29T18:43:15.000Z",
   "license": "pxa-supporter",
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
     "gguf",
     "pxa",
     "pxq",
@@ -26,11 +27,12 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 146732391392,
-  "storage_human": "146.7 GB",
+  "storage_bytes": 185382883464,
+  "storage_human": "185.4 GB",
   "base_model": null,
   "formats": [
-    "gguf"
+    "gguf",
+    "safetensors"
   ],
   "is_conversational": true,
   "gated": true,

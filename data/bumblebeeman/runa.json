@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 11,
+  "downloads_30d": 21,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 932785265,
-  "storage_human": "933 MB",
+  "storage_bytes": 1871600241,
+  "storage_human": "1.9 GB",
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers"

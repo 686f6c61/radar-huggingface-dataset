@@ -29,12 +29,12 @@
     "license:other",
     "region:us"
   ],
-  "likes": 426,
+  "likes": 427,
   "downloads_30d": 190649,
   "trending_score": 374,
   "parameters": 7115124736,
   "parameters_human": "7.12B",
-  "storage_bytes": 25844075259,
+  "storage_bytes": 25844210647,
   "storage_human": "25.8 GB",
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [

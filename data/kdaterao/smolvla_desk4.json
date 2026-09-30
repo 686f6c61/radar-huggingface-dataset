@@ -5,7 +5,7 @@
   "author": "kdaterao",
   "url": "https://huggingface.co/kdaterao/smolVLA_desk4",
   "created_at": "2026-09-28T02:54:11.000Z",
-  "updated_at": "2026-09-28T02:54:23.000Z",
+  "updated_at": "2026-09-29T20:47:32.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": 450046176,
   "parameters_human": "450.0M",
-  "storage_bytes": 906713160,
-  "storage_human": "907 MB",
+  "storage_bytes": 1813425680,
+  "storage_human": "1.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

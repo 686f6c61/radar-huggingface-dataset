@@ -5,7 +5,7 @@
   "author": "netease-youdao",
   "url": "https://huggingface.co/netease-youdao/Confucius4-T3PO",
   "created_at": "2026-09-07T10:35:28.000Z",
-  "updated_at": "2026-09-21T09:09:33.000Z",
+  "updated_at": "2026-09-29T15:21:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -38,7 +38,7 @@
   "trending_score": 42,
   "parameters": 14770033664,
   "parameters_human": "14.77B",
-  "storage_bytes": 29554133291,
+  "storage_bytes": 29554181043,
   "storage_human": "29.6 GB",
   "base_model": "Qwen/Qwen2.5-14B",
   "formats": [

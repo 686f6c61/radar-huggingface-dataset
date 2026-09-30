@@ -5,7 +5,7 @@
   "author": "Johnny5b",
   "url": "https://huggingface.co/Johnny5b/MiMo-9B-CORTEX-GGUF",
   "created_at": "2026-09-25T22:51:18.000Z",
-  "updated_at": "2026-09-25T23:56:31.000Z",
+  "updated_at": "2026-09-29T07:24:16.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,12 +22,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 103,
+  "downloads_30d": 104,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 5629104992,
-  "storage_human": "5.6 GB",
+  "storage_bytes": 16887314976,
+  "storage_human": "16.9 GB",
   "base_model": null,
   "formats": [
     "gguf"

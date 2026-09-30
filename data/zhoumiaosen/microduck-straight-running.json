@@ -9,16 +9,16 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
-  "library": null,
+  "library": "microduck",
   "languages": [
     "en"
   ],
   "tags": [
+    "microduck",
     "onnx",
     "reinforcement-learning",
     "robotics",
     "mujoco",
-    "microduck",
     "ppo",
     "en",
     "license:apache-2.0",

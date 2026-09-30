@@ -9,13 +9,13 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
-  "library": null,
+  "library": "jev-style",
   "languages": [
     "en"
   ],
   "tags": [
-    "gguf",
     "jev-style",
+    "gguf",
     "system-one",
     "decision-model",
     "calibration",

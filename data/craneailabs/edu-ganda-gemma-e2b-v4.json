@@ -5,7 +5,7 @@
   "author": "CraneAILabs",
   "url": "https://huggingface.co/CraneAILabs/edu-ganda-gemma-e2b-v4",
   "created_at": "2026-09-03T01:29:33.000Z",
-  "updated_at": "2026-09-03T04:49:50.000Z",
+  "updated_at": "2026-09-29T16:26:04.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 905,
+  "downloads_30d": 906,
   "trending_score": 0,
   "parameters": 5104297539,
   "parameters_human": "5.10B",

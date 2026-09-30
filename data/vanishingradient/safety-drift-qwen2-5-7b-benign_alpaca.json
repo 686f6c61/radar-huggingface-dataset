@@ -5,7 +5,7 @@
   "author": "vanishingradient",
   "url": "https://huggingface.co/vanishingradient/safety-drift-qwen2.5-7b-benign_alpaca",
   "created_at": "2026-09-21T21:03:13.000Z",
-  "updated_at": "2026-09-21T21:03:17.000Z",
+  "updated_at": "2026-09-29T21:38:08.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 23,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 31636918,
-  "storage_human": "32 MB",
+  "storage_bytes": 51851678,
+  "storage_human": "52 MB",
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"

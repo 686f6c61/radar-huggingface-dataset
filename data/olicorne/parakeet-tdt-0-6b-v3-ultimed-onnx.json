@@ -5,7 +5,7 @@
   "author": "Olicorne",
   "url": "https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-UltiMed-onnx",
   "created_at": "2026-09-04T23:23:47.000Z",
-  "updated_at": "2026-09-25T20:11:57.000Z",
+  "updated_at": "2026-09-30T07:03:55.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -25,8 +25,8 @@
     "quantized",
     "fr",
     "dataset:Olicorne/UltiMed-ASR-FR-v1",
-    "base_model:nvidia/parakeet-tdt-0.6b-v3",
-    "base_model:quantized:nvidia/parakeet-tdt-0.6b-v3",
+    "base_model:moondream/parakeet-ultra",
+    "base_model:quantized:moondream/parakeet-ultra",
     "license:cc-by-4.0",
     "region:us"
   ],
@@ -35,9 +35,9 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 17338806267,
-  "storage_human": "17.3 GB",
-  "base_model": "nvidia/parakeet-tdt-0.6b-v3",
+  "storage_bytes": 28049689901,
+  "storage_human": "28.0 GB",
+  "base_model": "moondream/parakeet-ultra",
   "formats": [
     "onnx"
   ],

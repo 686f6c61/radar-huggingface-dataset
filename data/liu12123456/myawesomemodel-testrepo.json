@@ -4,8 +4,8 @@
   "slug": "liu12123456-myawesomemodel-testrepo",
   "author": "liu12123456",
   "url": "https://huggingface.co/liu12123456/MyAwesomeModel-TestRepo",
-  "created_at": "2026-09-24T21:57:22.000Z",
-  "updated_at": "2026-09-24T21:57:33.000Z",
+  "created_at": "2026-09-29T09:01:23.000Z",
+  "updated_at": "2026-09-29T09:01:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 313,
+  "downloads_30d": 294,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-28T03:58:58.034Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

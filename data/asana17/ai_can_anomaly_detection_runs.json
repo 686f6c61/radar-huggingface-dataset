@@ -5,7 +5,7 @@
   "author": "asana17",
   "url": "https://huggingface.co/asana17/ai_can_anomaly_detection_runs",
   "created_at": "2026-09-19T14:10:19.000Z",
-  "updated_at": "2026-09-29T04:20:19.000Z",
+  "updated_at": "2026-09-30T05:14:39.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 5872600783,
-  "storage_human": "5.9 GB",
+  "storage_bytes": 6704130598,
+  "storage_human": "6.7 GB",
   "base_model": null,
   "formats": [
     "onnx"

@@ -5,7 +5,7 @@
   "author": "Lonecatone23",
   "url": "https://huggingface.co/Lonecatone23/Animosity",
   "created_at": "2026-09-07T21:11:36.000Z",
-  "updated_at": "2026-09-07T21:45:43.000Z",
+  "updated_at": "2026-09-29T17:00:42.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 12820073036,
   "parameters_human": "12.82B",
-  "storage_bytes": 67415416202,
-  "storage_human": "67.4 GB",
+  "storage_bytes": 81540890962,
+  "storage_human": "81.5 GB",
   "base_model": null,
   "formats": [
     "gguf"

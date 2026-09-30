@@ -5,7 +5,7 @@
   "author": "huihui-ai",
   "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF",
   "created_at": "2026-09-06T04:21:12.000Z",
-  "updated_at": "2026-09-06T09:25:03.000Z",
+  "updated_at": "2026-09-29T22:26:16.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -25,16 +25,15 @@
     "license:other",
     "endpoints_compatible",
     "region:us",
-    "imatrix",
     "conversational"
   ],
-  "likes": 101,
+  "likes": 104,
   "downloads_30d": 166886,
   "trending_score": 14,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 112242197984,
-  "storage_human": "112.2 GB",
+  "storage_bytes": 654497162272,
+  "storage_human": "654.5 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

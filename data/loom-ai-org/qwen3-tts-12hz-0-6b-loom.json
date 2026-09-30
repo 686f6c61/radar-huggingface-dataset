@@ -5,7 +5,7 @@
   "author": "loom-ai-org",
   "url": "https://huggingface.co/loom-ai-org/qwen3-tts-12hz-0.6b-loom",
   "created_at": "2026-09-17T10:30:02.000Z",
-  "updated_at": "2026-09-27T21:26:50.000Z",
+  "updated_at": "2026-09-29T17:38:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -48,8 +48,8 @@
   "trending_score": 0,
   "parameters": 1031483467,
   "parameters_human": "1.03B",
-  "storage_bytes": 8074438976,
-  "storage_human": "8.1 GB",
+  "storage_bytes": 12206743392,
+  "storage_human": "12.2 GB",
   "base_model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
   "formats": [
     "gguf"

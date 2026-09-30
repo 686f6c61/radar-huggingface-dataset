@@ -9,11 +9,11 @@
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",
-  "library": null,
+  "library": "microduck",
   "languages": [],
   "tags": [
-    "onnx",
     "microduck",
+    "onnx",
     "reinforcement-learning",
     "robotics",
     "mujoco",

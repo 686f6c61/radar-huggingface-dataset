@@ -5,7 +5,7 @@
   "author": "jinghao1632",
   "url": "https://huggingface.co/jinghao1632/bit-jev-2b-distilled",
   "created_at": "2026-09-27T16:33:11.000Z",
-  "updated_at": "2026-09-29T02:39:54.000Z",
+  "updated_at": "2026-09-30T03:55:13.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -29,11 +29,11 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 495,
+  "downloads_30d": 1386,
   "trending_score": 0,
   "parameters": 2412820480,
   "parameters_human": "2.41B",
-  "storage_bytes": 1216650593,
+  "storage_bytes": 1216870139,
   "storage_human": "1.2 GB",
   "base_model": "microsoft/bitnet-b1.58-2B-4T-bf16",
   "formats": [

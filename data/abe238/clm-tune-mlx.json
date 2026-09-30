@@ -5,7 +5,7 @@
   "author": "abe238",
   "url": "https://huggingface.co/abe238/clm-tune-mlx",
   "created_at": "2026-09-26T21:19:07.000Z",
-  "updated_at": "2026-09-28T23:20:27.000Z",
+  "updated_at": "2026-09-29T05:15:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1608342,
-  "storage_human": "2 MB",
+  "storage_bytes": 764843,
+  "storage_human": "764843 B",
   "base_model": "Qwen/Qwen3-8B, Contrastive-LM/CLM-v0.1-8B",
   "formats": [
     "mlx"

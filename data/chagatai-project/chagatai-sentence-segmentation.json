@@ -5,7 +5,7 @@
   "author": "chagatai-project",
   "url": "https://huggingface.co/chagatai-project/chagatai-sentence-segmentation",
   "created_at": "2026-09-22T13:10:36.000Z",
-  "updated_at": "2026-09-25T10:52:25.000Z",
+  "updated_at": "2026-09-29T15:04:14.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -27,6 +27,7 @@
     "token-classification",
     "chg",
     "dataset:chagatai-project/chagatai-sbd",
+    "arxiv:2508.14586",
     "license:mit",
     "model-index",
     "region:us"

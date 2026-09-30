@@ -5,7 +5,7 @@
   "author": "turtle89431",
   "url": "https://huggingface.co/turtle89431/Moxie-Multimedia",
   "created_at": "2026-09-16T23:02:03.000Z",
-  "updated_at": "2026-09-29T02:55:55.000Z",
+  "updated_at": "2026-09-29T07:25:35.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -22,7 +22,7 @@
     "license:other",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

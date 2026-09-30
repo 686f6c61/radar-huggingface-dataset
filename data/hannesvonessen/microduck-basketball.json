@@ -9,12 +9,12 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
-  "library": null,
+  "library": "microduck",
   "languages": [],
   "tags": [
+    "microduck",
     "onnx",
     "microduck_rl_policy",
-    "microduck",
     "microduck-policy",
     "mjlab",
     "robotics",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 191,
+  "downloads_30d": 197,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

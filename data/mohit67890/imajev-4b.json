@@ -5,7 +5,7 @@
   "author": "mohit67890",
   "url": "https://huggingface.co/mohit67890/imajev-4b",
   "created_at": "2026-09-24T04:06:19.000Z",
-  "updated_at": "2026-09-28T20:00:02.000Z",
+  "updated_at": "2026-09-29T16:22:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -35,7 +35,7 @@
   "trending_score": 22,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1483285897,
+  "storage_bytes": 1483454541,
   "storage_human": "1.5 GB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [

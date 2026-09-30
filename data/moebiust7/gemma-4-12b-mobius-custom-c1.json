@@ -5,7 +5,7 @@
   "author": "moebiusT7",
   "url": "https://huggingface.co/moebiusT7/gemma-4-12b-mobius-custom-c1",
   "created_at": "2026-09-12T08:03:30.000Z",
-  "updated_at": "2026-09-19T14:09:47.000Z",
+  "updated_at": "2026-09-29T10:20:06.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 237,
+  "downloads_30d": 243,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
