@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Elcalarmar/Modos",
+  "slug": "elcalarmar-modos",
+  "author": "Elcalarmar",
+  "url": "https://huggingface.co/Elcalarmar/Modos",
+  "created_at": "2026-09-30T19:01:38.000Z",
+  "updated_at": "2026-09-30T19:01:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Denial of Service (MoDoS) — Overloading AI with Adversarial Input",
+      "url": "https://techmaniacs.com/2025/06/05/model-denial-of-service-modos-overloading-ai-with-adversarial-input/",
+      "snippet": "Model Denial of Service (MoDoS) refers to attacks that deliberately overwhelm or degrade AI model performance by feeding it adversarial, malformed, or computationally expensive inputs. These attacks aim to exhaust processing power, generate large bills, or cause models to fail under load — creating new risks in the era of AI-driven systems."
+    },
+    {
+      "title": "GitHub - hqlalala/calamar: A modular AI agent engine with intelligent ...",
+      "url": "https://github.com/hqlalala/calamar",
+      "snippet": "A modular AI agent engine with intelligent model routing, multi-agent collaboration, and middleware pipeline. - hqlalala/calamar"
+    },
+    {
+      "title": "Activa en WhatsApp el modo &#x27;El Juego del Calamar&#x27; de Netflix",
+      "url": "https://www.infobae.com/tecno/2025/01/22/activa-en-whatsapp-el-modo-el-juego-del-calamar-de-netflix/",
+      "snippet": "Activa en WhatsApp el modo &#x27;El Juego del Calamar&#x27; de Netflix Los usuarios cuentan con la opción de crear stickers con inteligencia artificial y de configurar el tono de las notificaciones con ..."
+    },
+    {
+      "title": "Modal: The platform for production AI",
+      "url": "https://modal.com/",
+      "snippet": "Cloud infrastructure for teams that develop, train, and serve AI applications at scale. Inference, training, sandboxes, and functions on one platform."
+    },
+    {
+      "title": "Modos · The AI Operating System for Private Equity Value Creation",
+      "url": "https://www.modos.ai/pe",
+      "snippet": "The AI Operating System for Private Equity Value Creation Turn your value creation plan into margin and a faster exit. Every win compounds across the portfolio and into the next deal."
+    }
+  ]
+}

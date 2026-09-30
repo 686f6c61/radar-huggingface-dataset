@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "davidheineman/opd-teacher-R1Distill-ConvexHull-step149",
+  "slug": "davidheineman-opd-teacher-r1distill-convexhull-step149",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/opd-teacher-R1Distill-ConvexHull-step149",
+  "created_at": "2026-09-30T16:13:17.000Z",
+  "updated_at": "2026-09-30T16:15:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rlve",
+    "grpo",
+    "opd-teacher",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RLVE OPD Teachers - a davidheineman Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/davidheineman/rlve-opd-teachers",
+      "snippet": "Qwen 2.5 1.5B Instruct trained for 150 steps on a single env from https://arxiv.org/abs/2511.07317 (32 of 400 envs)"
+    },
+    {
+      "title": "Rethinking On-Policy Distillation of Large Language Models II: One ...",
+      "url": "https://arxiv.org/pdf/2609.04172v1",
+      "snippet": "We examine this role at the data-minimal limit by training on a single query. One-shot OPD keeps improving for hundreds of steps and recovers most of full-data OPD&#x27;s gain across task domains and model families. We explain this result through the states visited during training and the rate at which the student aligns with the teacher."
+    },
+    {
+      "title": "davidheineman/opd-teacher-Q2.5I-Cornfield-step149",
+      "url": "https://featherless.ai/models/davidheineman/opd-teacher-Q2.5I-Cornfield-step149",
+      "snippet": "Model Overview This model, opd-teacher-Q2.5I-Cornfield-step149, is a specialized Qwen2.5-1.5B-Instruct teacher model with 1.5 billion parameters and a 32768 token context length. Developed by davidheineman, it is specifically trained for on-policy distillation (OPD) experiments within a 32-environment setup."
+    },
+    {
+      "title": "A Survey of On-Policy Distillation for Large Language Models",
+      "url": "https://arxiv.org/html/2604.00626v3",
+      "snippet": "On-Policy Distillation (OPD) reorganizes the training loop around this observation by having the teacher provide feedback on what the student actually produces, with the goal of reducing the compounding term toward linear and reframing distillation as an iterative correction process rather than single-pass imitation."
+    },
+    {
+      "title": "davidheineman (David Heineman) - Hugging Face",
+      "url": "https://huggingface.co/davidheineman/activity/all",
+      "snippet": "davidheineman &#x27;s activity All Models Datasets Spaces Buckets Papers Collections Community Posts Upvotes Likes Articles updated a dataset10 days ago"
+    }
+  ]
+}

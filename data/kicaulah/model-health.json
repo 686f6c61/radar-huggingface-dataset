@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "Kicaulah/model-health",
+  "slug": "kicaulah-model-health",
+  "author": "Kicaulah",
+  "url": "https://huggingface.co/Kicaulah/model-health",
+  "created_at": "2026-09-30T16:13:45.000Z",
+  "updated_at": "2026-09-30T16:15:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "health",
+    "conversational-ai",
+    "persona",
+    "kicaulah-ai",
+    "kicaulah",
+    "qwen",
+    "qlora",
+    "instruction-tuning",
+    "system-prompt",
+    "assistant",
+    "helpful-assistant",
+    "roleplay",
+    "small-model",
+    "merge-lora",
+    "anti-robotic",
+    "natural-language",
+    "english",
+    "text-generation",
+    "chat",
+    "sft",
+    "emotion",
+    "empathy",
+    "domain-expert",
+    "openai-compatible",
+    "api-server",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Health ⎸ Lab-Grade Movement Analysis from Smartphone Video",
+      "url": "https://www.modelhealth.io/",
+      "snippet": "Model Health converts smartphone videos into validated, decision-ready movement data. Founded by Stanford researchers, our technology generates accurate 3D movement analysis from just smartpone videos."
+    },
+    {
+      "title": "Kicaulah (Kicaulah) - Hugging Face",
+      "url": "https://huggingface.co/Kicaulah",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 1 day ago ... published a Space 1 day ago"
+    },
+    {
+      "title": "Kicaulah (Kicaulah) - Hugging Face",
+      "url": "https://huggingface.co/Kicaulah/models",
+      "snippet": "User profile of Kicaulah on Hugging Face Kicaulah/Dataset_script_for_ai:Upload script dataset 3 domain .zip"
+    },
+    {
+      "title": "Model Health ⎸ Platform - Automated Biomechanical Insights",
+      "url": "https://www.modelhealth.io/product/app",
+      "snippet": "Automated analysis modules Model Health&#x27;s analysis turns biomechanical data into test-specific metrics and reports for the most common performance and clinical assessments, like peak joint angles, contact times, peak velocities, completion times, and number of repetitions."
+    },
+    {
+      "title": "Model Health ⎸ SDK - Embed Motion Analysis in Your Product",
+      "url": "https://www.modelhealth.io/product/sdk",
+      "snippet": "Integrate validated 3D motion analysis into your platform via our SDK. Available in Swift, TypeScript, and Python. From pilot to production without building biomechanics pipelines."
+    }
+  ]
+}

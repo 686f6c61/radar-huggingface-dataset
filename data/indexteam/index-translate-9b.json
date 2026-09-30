@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "IndexTeam/Index-Translate-9B",
+  "slug": "indexteam-index-translate-9b",
+  "author": "IndexTeam",
+  "url": "https://huggingface.co/IndexTeam/Index-Translate-9B",
+  "created_at": "2026-09-28T08:09:53.000Z",
+  "updated_at": "2026-09-30T18:54:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "translation",
+    "index",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 38625848748,
+  "storage_human": "38.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IndexTeam/Index-Translate-9B · Hugging Face",
+      "url": "https://huggingface.co/IndexTeam/Index-Translate-9B",
+      "snippet": "Index-Translate-9B is the 9B-parameter multilingual text translation model of the Index-Translate family, built on the Qwen3.5 backbone. It supports 150 languages with multilingual instruction following — terminology, formatting, style, structure, and output-length constraints — and achieves translation quality comparable to 100B-scale translation models and frontier LLMs on the family&#x27;s ..."
+    },
+    {
+      "title": "IndexTeam (Index Team) - Hugging Face",
+      "url": "https://huggingface.co/IndexTeam",
+      "snippet": "Org profile for Index Team on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Bilibili Open-Sources Index-Translate AI Model for 150 Langu - Phemex",
+      "url": "https://phemex.com/news/article/bilibili-opensources-indextranslate-model-supporting-150-languages-98353",
+      "snippet": "Bilibili&#x27;s Index LLM team has released Index-Translate, a multilingual translation model family built on Qwen3.5. Model weights for 2B, 9B, and 35B-A3B text variants are now openly available on Hugging Face and ModelScope. The models support 150 languages and accept specific instructions for terminology and formatting."
+    },
+    {
+      "title": "ModelScope on X: \"IndexTeam releases Index-Translate, a multilingual ...",
+      "url": "https://x.com/ModelScope2022/status/2105267464531750975",
+      "snippet": "IndexTeam releases Index-Translate, a multilingual translation family for text, speech, dubbing, and long documents. 🤖 https://t.co/LgoTOvwZ2v 🏆 Index-Translate-9B scores 0.8789 on FLORES, 0.8209 on instTrans, and 0.7387 on MEME, showing strong general translation, instruction following, and cultural-context understanding. 🌍 Covers 150 ..."
+    },
+    {
+      "title": "Bilibili open-sources Index-Translate translation model, supporting 150 ...",
+      "url": "https://panews.io/articles/01a0f2b8-887c-72f6-b3a6-d8f6fa368e66",
+      "snippet": "The 2B/9B/35B-A3B text model weights are now available on Hugging Face and ModelScope. The models cover 150 languages, support translation instructions such as terminology and formatting, and extend to subtitle dubbing, syllable-controlled, and long-document translation scenarios."
+    }
+  ]
+}

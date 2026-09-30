@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "adidukre/radar-tb",
+  "slug": "adidukre-radar-tb",
+  "author": "adidukre",
+  "url": "https://huggingface.co/adidukre/radar-tb",
+  "created_at": "2026-09-30T19:16:09.000Z",
+  "updated_at": "2026-09-30T19:16:45.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "medical-imaging",
+    "chest-x-ray",
+    "tuberculosis",
+    "rad-dino",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 472752249,
+  "storage_human": "473 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Danza TSM. Muestra técnica #14 'Tangos' (c. coreog. Alejandro ... - Vimeo",
+      "url": "https://vimeo.com/249144352?msockid=2b95a31be2fa66da0e40b4ffe3e46775",
+      "snippet": "Página oficial del taller de danza del TSM: buenosaires.gob.ar/cultura/matrizparaladanza/formacion/profesional/formacion …"
+    },
+    {
+      "title": "alejandro cervera - Vimeo",
+      "url": "https://vimeo.com/user173538147?msockid=2b95a31be2fa66da0e40b4ffe3e46775",
+      "snippet": "alejandro cervera is a member of Vimeo, the home for high quality videos and the people who love them."
+    },
+    {
+      "title": "Alejandro Cervera - YouTube",
+      "url": "https://www.youtube.com/@cerveradance",
+      "snippet": "Coreógrafo y Director de Escena / Chreographer and Opera Director (algunas de las obras aparecen numeradas: 1,2,3 etc. Por favor …"
+    },
+    {
+      "title": "danza - \"Itinerario Piazzolla\" con su coreógrafo, Alejandro Cervera en ...",
+      "url": "https://www.youtube.com/watch?v=hpgwpkMdUsY",
+      "snippet": "Sep 6, 2021 · A partir del jueves 2 de septiembre el Ballet Estable del Teatro Colón, dirigido por Paloma Herrera, regresa al …"
+    },
+    {
+      "title": "Alejandro Cervera (@cerveradance) • Instagram photos and videos",
+      "url": "https://www.instagram.com/cerveradance/",
+      "snippet": "3,436 Followers, 1,961 Following, 675 Posts - Alejandro Cervera (@cerveradance) on Instagram: \"\""
+    }
+  ]
+}

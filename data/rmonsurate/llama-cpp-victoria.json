@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "rmonsurate/llama.cpp-victoria",
+  "slug": "rmonsurate-llama-cpp-victoria",
+  "author": "rmonsurate",
+  "url": "https://huggingface.co/rmonsurate/llama.cpp-victoria",
+  "created_at": "2026-09-30T17:15:08.000Z",
+  "updated_at": "2026-09-30T17:16:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3670848412,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Translate from English to Japanese with DeepL",
+      "url": "https://www.deepl.com/en/translator/l/en/ja",
+      "snippet": "Translate texts & files instantly from English to Japanese with the world’s most accurate translator. Millions translate with DeepL …"
+    },
+    {
+      "title": "Japanese Translator | English ⇄ Japanese with Romaji | KanaDojo",
+      "url": "https://www.kanadojo.com/translate",
+      "snippet": "Free Japanese translator for English to Japanese and Japanese to English text. Translate quickly, review romaji support, and jump …"
+    },
+    {
+      "title": "English to Japanese translator and dictionary online - Yandex Translate",
+      "url": "https://translate.yandex.com/en/translator/English-Japanese",
+      "snippet": "English to Japanese translator online. High-accuracy translation of words, phrases, and sentences. Photo translation, ability to …"
+    },
+    {
+      "title": "Free English to Japanese Translation Tool | Cambridge",
+      "url": "https://dictionary.cambridge.org/us/translate/english-japanese/",
+      "snippet": "Free English to Japanese translator with audio. Translate words, phrases and sentences."
+    }
+  ]
+}

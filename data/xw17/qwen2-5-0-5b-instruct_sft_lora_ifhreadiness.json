@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen2.5-0.5B-Instruct_SFT_lora_ifhreadiness",
+  "slug": "xw17-qwen2-5-0-5b-instruct_sft_lora_ifhreadiness",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen2.5-0.5B-Instruct_SFT_lora_ifhreadiness",
+  "created_at": "2026-09-30T17:46:52.000Z",
+  "updated_at": "2026-09-30T17:47:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29062028,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Votre compte Île-de-France Mobilités Connect",
+      "url": "https://www.iledefrance-mobilites.fr/mon-compte",
+      "snippet": "Connectez-vous sans peine à votre compte grâce aux identifiants déjà en votre possession (adresse e-mail et mot de passe) pour …"
+    },
+    {
+      "title": "Île-de-France Mobilités | Transports en commun sur Paris, sa région",
+      "url": "https://www.iledefrance-mobilites.fr/",
+      "snippet": "Île-de-France Mobilités vous accompagne dans tous vos déplacements en Île-de-France : fédération de tous les acteurs, …"
+    },
+    {
+      "title": "Je gère ma carte Navigo | Île-de-France Mobilités",
+      "url": "https://www.iledefrance-mobilites.fr/je-gere-ma-carte",
+      "snippet": "Souscription et renouvellement de vos forfaits, suivi conso, attestations, mise à jour de vos informations, assistance et bien plus. …"
+    },
+    {
+      "title": "Your Île-de-France Mobilités Connect account",
+      "url": "https://www.iledefrance-mobilites.fr/en/mon-compte",
+      "snippet": "Access your personal space with your unique identifier: consumption tracking, orders, and preferences for your Navigo transport tickets."
+    },
+    {
+      "title": "Île-de-France Mobilités Connect | Île-de-France Mobilités",
+      "url": "https://www.iledefrance-mobilites.fr/aide-et-contacts/iledefrance-mobilites-connect",
+      "snippet": "Au cœur du réseau de transports Franciliens, Île-de-France Mobilités fédère tous les acteurs (voyageurs, élus, constructeurs, …"
+    }
+  ]
+}

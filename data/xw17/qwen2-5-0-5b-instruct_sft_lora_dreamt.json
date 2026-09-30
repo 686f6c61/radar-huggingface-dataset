@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen2.5-0.5B-Instruct_SFT_lora_dreamt",
+  "slug": "xw17-qwen2-5-0-5b-instruct_sft_lora_dreamt",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen2.5-0.5B-Instruct_SFT_lora_dreamt",
+  "created_at": "2026-09-30T17:39:06.000Z",
+  "updated_at": "2026-09-30T17:39:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29062028,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-0.5B Medical LoRA Fine-Tuning Tutorial - GitHub",
+      "url": "https://github.com/SoloCalm/MiniLoRA",
+      "snippet": "What This Project Does Fine-tunes Qwen2.5-.5B-Instruct (498M parameters) with LoRA SFT on 640 Chinese medical Q&A samples, then compares base vs. fine-tuned model outputs."
+    },
+    {
+      "title": "GitHub - ShawVentus/Qwen2.5_sft",
+      "url": "https://github.com/ShawVentus/Qwen2.5_sft",
+      "snippet": "Please follow FastEdit if you are interested. [23/06/29] We provided a reproducible example of training a chat model using instruction-following datasets, see Baichuan-7B-sft for details. [23/06/22] We aligned the demo API with the OpenAI&#x27;s format where you can insert the fine-tuned model in arbitrary ChatGPT-based applications."
+    },
+    {
+      "title": "xw17/Qwen2.5-1.5B-Instruct_SFT_lora_ptt · Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen2.5-1.5B-Instruct_SFT_lora_ptt",
+      "snippet": "Transformers How to use xw17/Qwen2.5-1.5B-Instruct_SFT_lora_ptt with Transformers: ... Notebooks Google Colab Kaggle Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with the Model Training ..."
+    },
+    {
+      "title": "m5-docs",
+      "url": "https://docs.m5stack.com/en/stackflow/models/qwen2.5-0.5b-instruct",
+      "snippet": "Introduction Qwen2.5-.5B-Instruct is an instruction-tuned language model in the Qwen2.5 series, with approximately 500 million parameters. The main features of this model include:"
+    },
+    {
+      "title": "xw17/Qwen2.5-1.5B-Instruct_SFT_lora_wesad · Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen2.5-1.5B-Instruct_SFT_lora_wesad",
+      "snippet": "xw17 / Qwen2.5-1.5B-Instruct_SFT_lora_wesad like 0 Transformers Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Use this model Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations"
+    }
+  ]
+}

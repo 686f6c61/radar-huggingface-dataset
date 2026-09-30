@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "Kicaulah/model-therapist",
+  "slug": "kicaulah-model-therapist",
+  "author": "Kicaulah",
+  "url": "https://huggingface.co/Kicaulah/model-therapist",
+  "created_at": "2026-09-30T16:13:43.000Z",
+  "updated_at": "2026-09-30T16:15:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "therapist",
+    "conversational-ai",
+    "persona",
+    "kicaulah-ai",
+    "kicaulah",
+    "qwen",
+    "qlora",
+    "instruction-tuning",
+    "system-prompt",
+    "assistant",
+    "helpful-assistant",
+    "roleplay",
+    "small-model",
+    "merge-lora",
+    "anti-robotic",
+    "natural-language",
+    "english",
+    "text-generation",
+    "chat",
+    "sft",
+    "emotion",
+    "empathy",
+    "domain-expert",
+    "openai-compatible",
+    "api-server",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kicaulah (Kicaulah) - Hugging Face",
+      "url": "https://huggingface.co/Kicaulah/models",
+      "snippet": "User profile of Kicaulah on Hugging Face Kicaulah/Dataset_script_for_ai:Upload script dataset 3 domain .zip"
+    },
+    {
+      "title": "Kicaulah (Kicaulah) - Hugging Face",
+      "url": "https://huggingface.co/Kicaulah/spaces",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 1 day ago ... published a Space 1 day ago"
+    },
+    {
+      "title": "GitHub - AdityaPatil-AP/AI-Therapist: AI-Therapist: An advanced system ...",
+      "url": "https://github.com/AdityaPatil-AP/AI-Therapist",
+      "snippet": "Emotion Detection: The AI Therapist model, powered by bidirectional LSTM networks and NLP techniques, processes the input text and accurately detects the expressed emotions. This model was chosen for its ability to capture context and dependencies in sequential data, making it well-suited for analyzing text-based emotional expression."
+    },
+    {
+      "title": "coTherapist: A Behavior-Aligned Small Language Model to Support Mental ...",
+      "url": "https://arxiv.org/pdf/2601.10246",
+      "snippet": "For a model to truly resemble a skilled therapist rather than a generic chatbot, it must master three specific components: style imitation involving tone and paraphrasing [46], a structured instruction-following capability [58], and a conceptual reasoning framework based on evidence-based therapy logic [60]. AI as a Therapeutic Assistant."
+    },
+    {
+      "title": "Best Open Source Model for Therapy? : r/LocalLLaMA - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/147u0a3/best_open_source_model_for_therapy/",
+      "snippet": "I&#x27;ve been wanting to experiment with some open source models that offer good therapy advice - yk generally uplifting, doesn&#x27;t have to be too scientific + that sounds more like a real person than GPT does. Has anyone had any experience with models that might be useful? Share Add a Comment Sort by: Best Open comment sort options Best Top New Controversial Old Q&A Evening_Ad6637 •"
+    }
+  ]
+}

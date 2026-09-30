@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "Kicaulah/model-coding",
+  "slug": "kicaulah-model-coding",
+  "author": "Kicaulah",
+  "url": "https://huggingface.co/Kicaulah/model-coding",
+  "created_at": "2026-09-30T16:13:52.000Z",
+  "updated_at": "2026-09-30T16:15:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "coding",
+    "conversational-ai",
+    "persona",
+    "kicaulah-ai",
+    "kicaulah",
+    "qwen",
+    "qlora",
+    "instruction-tuning",
+    "system-prompt",
+    "assistant",
+    "helpful-assistant",
+    "roleplay",
+    "small-model",
+    "merge-lora",
+    "anti-robotic",
+    "natural-language",
+    "english",
+    "text-generation",
+    "chat",
+    "sft",
+    "emotion",
+    "empathy",
+    "domain-expert",
+    "openai-compatible",
+    "api-server",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-Coder-3B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kicaulah (Kicaulah) - Hugging Face",
+      "url": "https://huggingface.co/Kicaulah",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 1 day ago ... published a Space 1 day ago"
+    },
+    {
+      "title": "Kicaulah (Kicaulah) - Hugging Face",
+      "url": "https://huggingface.co/Kicaulah/models",
+      "snippet": "User profile of Kicaulah on Hugging Face Kicaulah/Dataset_script_for_ai:Upload script dataset 3 domain .zip"
+    },
+    {
+      "title": "Top 7 Open Source AI Coding Models for Developers",
+      "url": "https://dev.to/artificialintelligenceee/top-7-open-source-ai-coding-models-for-developers-l80",
+      "snippet": "If you need a fast AI model for interactive coding agents, this is one of the top choices. * 3. GPT-OSS-120B by OpenAI * GPT-OSS-120B is OpenAI&#x27;s open-weight model designed for general-purpose reasoning and coding. Despite having 117B parameters in total, only 5.1B are active per token, which lets it run on a single 80GB GPU."
+    },
+    {
+      "title": "AI Coding Landscape 2026 - AI Models, Agents, Tooling, Benchmarks ...",
+      "url": "https://cleverhack.com/ai-coding-landscape",
+      "snippet": "A current collection of AI coding models, AI coding agents, AI CLI tools, open source tools, AI IDEs, AI coding benchmarks & leaderboards, and more"
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-smoke-v1-r0001-u1-mdagosta",
+  "slug": "mdagosta-waldito-smoke-v1-r0001-u1-mdagosta",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-smoke-v1-r0001-u1-mdagosta",
+  "created_at": "2026-09-30T03:25:10.000Z",
+  "updated_at": "2026-09-30T03:25:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 124,
+  "trending_score": 0,
+  "parameters": 820736,
+  "parameters_human": "820736",
+  "storage_bytes": 1645800,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mdagosta (Michael D&#x27;Agosta) - Hugging Face",
+      "url": "https://huggingface.co/mdagosta",
+      "snippet": "Building distributed training systems for bespoke models. Recent Activity. updated a model about 7 hours ago. mdagosta/waldito-smoke-v1-r0002-merge"
+    },
+    {
+      "title": "mdagosta (Michael D&#x27;Agosta) · GitHub",
+      "url": "https://github.com/mdagosta",
+      "snippet": "12 followers · 22 following Ventrilo.ai, Code Bug San Francisco, Chicago https://dagosta.com https://codebug.com Block or report mdagosta Block user"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "WaDi · Models",
+      "url": "https://www.modelscope.cn/models/gudaochangsheng98/WaDi",
+      "snippet": "Training SwiftBrushV2 An unofficial implementation of SwiftBrushV2 Citation If you find WaDi useful, please consider giving our repository a star (⭐) and citing our paper. @InProceedings{Wang_2026_CVPR, author = {Wang, Lei and Cheng, Yang and Li, Senmao and Wu, Ge and Wang, Yaxing and Yang, Jian}, title = {WaDi: Weight Direction-aware Distillation for One-step Image Synthesis}, booktitle ..."
+    }
+  ]
+}

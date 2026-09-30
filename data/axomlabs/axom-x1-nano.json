@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "AxomLabs/axom-x1-nano",
+  "slug": "axomlabs-axom-x1-nano",
+  "author": "AxomLabs",
+  "url": "https://huggingface.co/AxomLabs/axom-x1-nano",
+  "created_at": "2026-09-30T03:18:51.000Z",
+  "updated_at": "2026-09-30T04:17:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 48316416,
+  "parameters_human": "48.3M",
+  "storage_bytes": 3396721536,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AXOM / A new kind of mind - axomlabs.ai",
+      "url": "https://axomlabs.ai/axom/",
+      "snippet": "A new kind of mind. AXOM is a self-evolving machine intelligence that learns from its own experience and grows on its own. By Axom Labs."
+    },
+    {
+      "title": "Axom Labs | Intelligence you can grow",
+      "url": "https://axomlabs.ai/",
+      "snippet": "Axom Labs · MMXXVI Intelligence you can grow. A new architecture for machine intelligence. Built in America, running on your hardware, and yours to own."
+    },
+    {
+      "title": "GitHub - Axom-Labs/Axom-X1: Axom-X1 architecture for swarm fusion and ...",
+      "url": "https://github.com/Axom-Labs/Axom-X1",
+      "snippet": "Axom-X1 Axom-X1 architecture for swarm fusion and latent space projection."
+    },
+    {
+      "title": "Axom-X1/README.md at main · Axom-Labs/Axom-X1 · GitHub",
+      "url": "https://github.com/Axom-Labs/Axom-X1/blob/main/README.md",
+      "snippet": "Axom-X1 architecture for swarm fusion and latent space projection. - Axom-X1/README.md at main · Axom-Labs/Axom-X1"
+    },
+    {
+      "title": "AxomLabs (Axom Labs) - Hugging Face",
+      "url": "https://huggingface.co/AxomLabs/models",
+      "snippet": "Recent Activity updated a modelabout 4 hours ago AxomLabs/axom-x1-ultra published a modelabout 4 hours ago AxomLabs/axom-x1-ultra updated a model3 months ago AxomLabs/Axom-X1-MoE View all activity"
+    }
+  ]
+}

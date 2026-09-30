@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "greejos3053/mocov3-checkpoint",
+  "slug": "greejos3053-mocov3-checkpoint",
+  "author": "greejos3053",
+  "url": "https://huggingface.co/greejos3053/mocov3-checkpoint",
+  "created_at": "2026-09-30T15:52:15.000Z",
+  "updated_at": "2026-09-30T15:52:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jktlestari/mocov3-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/Jktlestari/mocov3-checkpoint",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vihaansing/mocov3-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/vihaansing/mocov3-checkpoint",
+      "snippet": "Repository status The Python file contains the model and runnable example or training entry point. config.json records the generated architecture settings. training_args.json records the default experiment recipe. model.safetensors is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint."
+    },
+    {
+      "title": "GitHub - facebookresearch/moco-v3: PyTorch implementation of MoCo v3 ...",
+      "url": "https://github.com/facebookresearch/moco-v3",
+      "snippet": "This is a PyTorch implementation of MoCo v3 for self-supervised ResNet and ViT. The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    },
+    {
+      "title": "GitHub - facebookresearch/moco: PyTorch implementation of MoCo: https ...",
+      "url": "https://github.com/facebookresearch/moco",
+      "snippet": "In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to make participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal ..."
+    },
+    {
+      "title": "facebookresearch/moco-v3 | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/moco-v3",
+      "snippet": "MoCo v3 Overview Relevant source files This document provides an introduction to MoCo v3 (Momentum Contrast version 3), a self-supervised learning framework for pre-training visual representations without labels. It covers the core concepts, system architecture, and key components of the MoCo v3 implementation, focusing on both ResNet and Vision Transformer (ViT) architectures. For more ..."
+    }
+  ]
+}

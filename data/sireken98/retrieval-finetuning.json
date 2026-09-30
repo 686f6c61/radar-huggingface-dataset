@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sireken98/retrieval-finetuning",
+  "slug": "sireken98-retrieval-finetuning",
+  "author": "sireken98",
+  "url": "https://huggingface.co/sireken98/retrieval-finetuning",
+  "created_at": "2026-09-30T03:21:21.000Z",
+  "updated_at": "2026-09-30T03:21:26.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sireken98/retrieval-finetuning · Hugging Face",
+      "url": "https://huggingface.co/sireken98/retrieval-finetuning",
+      "snippet": "sireken98 / retrieval-finetuning Like 0 Safetensors PyTorch swin_t swin-t retrieval License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new Swin T for Retrieval Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "sireken98/dino-retrieval · Hugging Face",
+      "url": "https://huggingface.co/sireken98/dino-retrieval",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Finetuning Retrieval for Fin - /research",
+      "url": "https://fin.ai/research/finetuning-retrieval-for-fin/",
+      "snippet": "In this blog, we describe how we replaced a general-purpose retrieval model with the one fine-tuned on our high-quality customer support specific data, and the results of doing so. How does a retrieval model work? Fin&#x27;s retrieval system is powered entirely by semantic search 1."
+    },
+    {
+      "title": "REFINE on Scarce Data: Retrieval Enhancement through Fine-Tuning via ...",
+      "url": "https://arxiv.org/html/2410.12890v1",
+      "snippet": "Then, the model is fine-tuned on the target task to further enhance performance for that specific domain and task. However, this fine-tuning requires labeled data, preventing its use in many data-starved application domains."
+    },
+    {
+      "title": "[2410.12890] REFINE on Scarce Data: Retrieval Enhancement through Fine ...",
+      "url": "https://arxiv.org/abs/2410.12890",
+      "snippet": "Retrieval augmented generation (RAG) pipelines are commonly used in tasks such as question-answering (QA), relying on retrieving relevant documents from a vector store computed using a pretrained embedding model. However, if the retrieved context is inaccurate, the answers generated using the large language model (LLM) may contain errors or hallucinations. Although pretrained embedding models ..."
+    }
+  ]
+}

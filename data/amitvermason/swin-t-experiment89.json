@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "amitvermason/swin-t-experiment89",
+  "slug": "amitvermason-swin-t-experiment89",
+  "author": "amitvermason",
+  "url": "https://huggingface.co/amitvermason/swin-t-experiment89",
+  "created_at": "2026-09-30T16:16:34.000Z",
+  "updated_at": "2026-09-30T16:16:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - microsoft/Swin-Transformer: This is an official implementation ...",
+      "url": "https://github.com/microsoft/Swin-Transformer",
+      "snippet": "This is an official implementation for \"Swin Transformer: Hierarchical Vision Transformer using Shifted Windows\". - microsoft/Swin-Transformer"
+    },
+    {
+      "title": "swin_t — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/master/models/generated/torchvision.models.swin_t.html",
+      "snippet": "Default is True. **kwargs - parameters passed to the torchvision.models.swin_transformer.SwinTransformer base class. Please refer to the source code for more details about this class. class torchvision.models.Swin_T_Weights(value)[source] ¶ The model builder above accepts the following values as the weights parameter."
+    },
+    {
+      "title": "Swin Transformer - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/computer-vision/swin-transformer/",
+      "snippet": "The Swin Transformer (Shifted Window Transformer) is a vision transformer architecture that computes self-attention within local image windows and uses a shifted window mechanism to enable interaction between neighboring regions. This allows it to efficiently learn both local and global image features."
+    },
+    {
+      "title": "Hugging Bay | Find and Download AI Models",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "Hugging Bay is the open-model catalog for public open LLMs, models, datasets, apps, evals, and hosted files."
+    },
+    {
+      "title": "Priyamehta/swin-t-experiment · Hugging Face",
+      "url": "https://huggingface.co/Priyamehta/swin-t-experiment",
+      "snippet": "Swin T for Retrieval Overview This repository is a compact, custom PyTorch implementation of Swin T for Retrieval. The large configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    }
+  ]
+}

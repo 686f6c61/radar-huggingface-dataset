@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JohnP1/d1a-e4b",
+  "slug": "johnp1-d1a-e4b",
+  "author": "JohnP1",
+  "url": "https://huggingface.co/JohnP1/d1a-e4b",
+  "created_at": "2026-09-30T14:37:57.000Z",
+  "updated_at": "2026-09-30T14:37:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "d1a",
+    "decision-model",
+    "calibration",
+    "lora",
+    "gemma4",
+    "kev",
+    "typesafe",
+    "text-classification",
+    "base_model:google/gemma-4-E4B",
+    "base_model:adapter:google/gemma-4-E4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-4-E4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2607.02770v2",
+      "snippet": "In this technical report, we outline the different model architectures across model sizes as well as the pre-training and post-training recipe of Gemma 4. Through comprehensive benchmarks and human evaluations such as Arena (Chiang et al., 2024), we demonstrate that Gemma 4 operates at a level comparable to larger, frontier open-source models ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "coreai-model-zoo/models/gemma4-e4b at main · john-rocky ... - GitHub",
+      "url": "https://github.com/john-rocky/coreai-model-zoo/tree/main/models/gemma4-e4b",
+      "snippet": "Community model zoo for Apple Core AI (iOS/macOS 27): 49 models — LLM, VLM, OCR, ASR, TTS, image/video/music gen, forecasting — converted, verified on real devices, downloadable from Hugging Face, and runnable in one line of Swift via CoreAIKit."
+    },
+    {
+      "title": "Gemma 4 Runs on a Raspberry Pi. I Tested It. - DEV Community",
+      "url": "https://dev.to/alanwest/gemma-4-runs-on-a-raspberry-pi-i-tested-it-56c5",
+      "snippet": "Hands-on guide to running Google&#x27;s Gemma 4 E2B and E4B edge models on a Raspberry Pi and in the browser via WebGPU -- with real latency numbers, 128K context benchmarks, and honest comparisons to Phi-3-mini and other edge models."
+    },
+    {
+      "title": "AI Models: GPT, Claude, Gemini & More - AI-John",
+      "url": "https://www.ai-john.com/models",
+      "snippet": "All 36 AI models at a glance: Free, Pro & Ultra. GPT, Claude, DeepSeek, Gemini, Mistral, Llama & Qwen."
+    }
+  ]
+}

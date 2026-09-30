@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "christianfischer/phd-classification",
+  "slug": "christianfischer-phd-classification",
+  "author": "christianfischer",
+  "url": "https://huggingface.co/christianfischer/phd-classification",
+  "created_at": "2026-09-30T14:52:07.000Z",
+  "updated_at": "2026-09-30T14:52:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Christian Fischer",
+      "url": "https://chrisfi.com/",
+      "snippet": "Interests My work leverages big data analytics and AI to empower digital transformations. At Intermate, I utilize data-driven approaches to enable evidece-based decision-making across the entire social media value chain. In academia, I facilitated digital change in higher education, teacher education, and STEM education, as described on my research site."
+    },
+    {
+      "title": "Christian FISCHER | Senior Data Analyst | Ph.D. | Research profile",
+      "url": "https://www.researchgate.net/profile/Christian-Fischer-7",
+      "snippet": "Christian Fischer is a Senior Data Analyst at the Intermate Media GmbH, one of the largest and most impactful social media agencies in Europe. Previously he worked as a Tenure-Track-Professor at ..."
+    },
+    {
+      "title": "Christian Fischer (@ChFischer88) / Posts / X",
+      "url": "https://x.com/ChFischer88",
+      "snippet": "Christian Fischer (@ChFischer88) - Posts - Passionate about leveraging big data to empower digital transformations | @UMich Alum | X (formerly Twitter)"
+    },
+    {
+      "title": "Kristian FISCHER | PhD Student | Master of Science - ResearchGate",
+      "url": "https://www.researchgate.net/profile/Kristian-Fischer",
+      "snippet": "A &#x27;read&#x27; is counted each time someone views a publication summary (such as the title, abstract, and list of authors), clicks on a figure, or views or downloads the full-text. Learn more"
+    },
+    {
+      "title": "‪Christian Fischer‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=GCO8mX8AAAAJ&hl=en",
+      "snippet": "Carsten Marr Institute of AI for Health @ Helmholtz Munich & Clinics @ LMU MünchenVerified email at helmholtz-muenchen.de Michael R Duchen UCLVerified email at ucl.ac.uk"
+    }
+  ]
+}

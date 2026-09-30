@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Sinadavinc80/model-card-template",
+  "slug": "sinadavinc80-model-card-template",
+  "author": "Sinadavinc80",
+  "url": "https://huggingface.co/Sinadavinc80/model-card-template",
+  "created_at": "2026-09-30T17:45:31.000Z",
+  "updated_at": "2026-09-30T17:45:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "text-generation",
+    "model-card",
+    "template",
+    "research",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model card template for an AI developer",
+      "url": "https://optro.ai/resources/ebook/model-card-template-for-an-ai-developer",
+      "snippet": "This is where model cards come in, providing standardized documentation for intended usage, training data, potential risks, and more. Our Model card template for an AI developer helps organizations bring structure, transparency, and accountability to the AI systems they build and deploy."
+    },
+    {
+      "title": "Model Cards · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/model-cards",
+      "snippet": "The model card template is available here. How to fill out each section of the model card is described in the Annotated Model Card. Model Cards on the Hub have two key parts, with overlapping information:"
+    },
+    {
+      "title": "Model Card templates | Responsible AI Toolkit | TensorFlow",
+      "url": "https://www.tensorflow.org/responsible_ai/model_card_toolkit/guide/templates",
+      "snippet": "Jinja templates are the backend structure of a Model Card document. The Model Card Toolkit comes with a few pre-made templates, but you can freely modify these templates or even build your own. In this document, we will discuss how to do this. The following is the standard way you may initialize the Model Card Toolkit."
+    },
+    {
+      "title": "ModelCardPro - AI Model Cards for Transparency & Compliance",
+      "url": "https://modelcardpro.com/",
+      "snippet": "Easily create and manage AI model cards to improve transparency, reduce risk, and stay compliant. Built for modern AI teams."
+    },
+    {
+      "title": "AI Model Card | Free PDF & Word Template",
+      "url": "https://ezel.ai/templates/ai-model-card-template",
+      "snippet": "Draft your AI Model Card in the editor Answer a few questions, let the AI editor draft each section from your answers, review it, and download Word and PDF. $99 one time, or $249 per month for every document and every Ezel app."
+    }
+  ]
+}

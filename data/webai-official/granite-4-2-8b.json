@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "webAI-Official/granite-4.2-8B",
+  "slug": "webai-official-granite-4-2-8b",
+  "author": "webAI-Official",
+  "url": "https://huggingface.co/webAI-Official/granite-4.2-8B",
+  "created_at": "2026-09-30T16:28:48.000Z",
+  "updated_at": "2026-09-30T16:28:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibm-granite/granite-4.2-8b · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-4.2-8b",
+      "snippet": "Tool Calling Granite-4.2-8B supports tool calling with integrated reasoning — the model thinks about which tool to call and why before making the call. Tools are defined using the OpenAI function definition schema. Basic Tool Calling"
+    },
+    {
+      "title": "Granite 4.2 - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "IBM Granite is a family of open, trusted AI models for business, offering efficient language, vision, speech and guardrail models you can customize and deploy."
+    },
+    {
+      "title": "README.md · ibm-granite/granite-4.2-8b at main - Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-4.2-8b/blob/main/README.md",
+      "snippet": "Description Granite-4.2-8B is the mid-size reasoning model in the Granite 4.2 family. It delivers strong performance on reasoning-intensive tasks by leveraging built-in <think>...</think> chain-of-thought. It supports flexible thinking modes — full thinking (default), non-thinking, and low-effort — allowing users to balance depth vs. latency on a per-query basis."
+    },
+    {
+      "title": "Granite 4.2 brings native reasoning to enterprise agents",
+      "url": "https://research.ibm.com/blog/introducing-granite-4-2",
+      "snippet": "In enterprise workflows, tasks can be ambiguous and involve many steps to complete. An AI model must be able to follow complex instructions, retrieve the correct information, choose the right tools, act in the right sequence, and verify the result. Reasoning helps Granite 4.2 navigate this process more reliably."
+    }
+  ]
+}

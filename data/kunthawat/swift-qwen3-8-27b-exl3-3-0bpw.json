@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kunthawat/swift-qwen3.8-27b-exl3-3.0bpw",
+  "slug": "kunthawat-swift-qwen3-8-27b-exl3-3-0bpw",
+  "author": "kunthawat",
+  "url": "https://huggingface.co/kunthawat/swift-qwen3.8-27b-exl3-3.0bpw",
+  "created_at": "2026-09-30T03:10:33.000Z",
+  "updated_at": "2026-09-30T04:04:43.000Z",
+  "license": "swift-open-license-v1.0-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "qwen3_8",
+    "swift",
+    "vision",
+    "multimodal",
+    "mtp",
+    "16gb-gpu",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 6734157184,
+  "parameters_human": "6.73B",
+  "storage_bytes": 13481500132,
+  "storage_human": "13.5 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kunthawat/swift-qwen3.8-27b-exl3-3.0bpw · Hugging Face",
+      "url": "https://huggingface.co/kunthawat/swift-qwen3.8-27b-exl3-3.0bpw",
+      "snippet": "Swift-Qwen3.8-27B EXL3, 3.0 bpw This is a custom EXL3 conversion of the BF16 checkpoint ukisai/Swift-Qwen3.8-27b, designed around a single 16 GB NVIDIA GPU and the ExLlamaV3 runtime through TabbyAPI. It is intended for long assistant sessions, image/document review, marketing drafts, and website planning or implementation with Hermes as an OpenAI-compatible client."
+    },
+    {
+      "title": "ukisai/Swift-Qwen3.8-27b · Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-Qwen3.8-27b",
+      "snippet": "Efficiency across and versus reasoning efforts Qwen3.8&#x27;s reasoning_effort setting lets users choose how much the model thinks. For Swift to be useful across these settings, it needs to reduce thinking while keeping accuracy close to the base. We therefore tested xhigh, medium, and low: thinking-token savings persist at every level."
+    },
+    {
+      "title": "GitHub - MiaAI-Lab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw: Deployment kit ...",
+      "url": "https://github.com/MiaAI-Lab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw",
+      "snippet": "Deployment kit for serving Qwen3.8-27B quantized to EXL3 3.5bpw with speculative decoding — MTP by default (draft head inside the checkpoint, best context per GB) or DFlash2 (EXL3 5.0bpw draft model, ~15% faster) — plus a ~4.5-bit KV cache lane (NVFP4 on Ada/Hopper/Blackwell, Hadamard-4 on ..."
+    },
+    {
+      "title": "Swift-Qwen3.8-27B: less overthinking | UkisAI",
+      "url": "https://ukisai.com/news/introducing-swift",
+      "snippet": "Swift produces shorter reasoning traces, and we observe fewer overthinking errors in our testing. Swift includes a transfer component derived from BottleCap AI&#x27;s ThinkingCap-Qwen3.6-27B. The resulting model uses the standard Qwen3.8 interface and retains text, image, and video support. Benchmark results"
+    },
+    {
+      "title": "GitHub - MiaAI-Lab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw: Deployment kit ...",
+      "url": "https://github.com/MiaAI-Lab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw/tree/main",
+      "snippet": "Deployment kit for serving Qwen3.8-27B quantized to EXL3 3.5bpw with speculative decoding — MTP by default (draft head inside the checkpoint, best context per GB) or DFlash2 (EXL3 5.0bpw draft model, ~15% faster) — plus an NVFP4 KV cache lane for maximum context per GB."
+    }
+  ]
+}

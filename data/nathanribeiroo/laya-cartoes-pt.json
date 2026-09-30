@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nathanribeiroo/laya-cartoes-pt",
+  "slug": "nathanribeiroo-laya-cartoes-pt",
+  "author": "nathanribeiroo",
+  "url": "https://huggingface.co/nathanribeiroo/laya-cartoes-pt",
+  "created_at": "2026-09-30T18:43:43.000Z",
+  "updated_at": "2026-09-30T19:02:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "laya",
+    "typed-decisions",
+    "customer-service",
+    "portuguese",
+    "pt",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198809,
+  "storage_human": "678 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "convaiinnovations/laya · Hugging Face",
+      "url": "https://huggingface.co/convaiinnovations/laya",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "convaiinnovations/laya at main - Hugging Face",
+      "url": "https://huggingface.co/convaiinnovations/laya/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Laya AI: Open-Source Decision Model | Run Locally",
+      "url": "https://laya-ai.com/",
+      "snippet": "Laya AI is an open-source System 1 decision model for typed choices, scores, and probabilities. Run it locally, compare benchmarks, models, and Laya vs Jev."
+    },
+    {
+      "title": "Laya AI Playground: Try Laya Online",
+      "url": "https://laya-ai.com/playground",
+      "snippet": "Laya AI Playground: Try Typed Decisions Online Try Laya before installing it, then continue into the models, benchmarks, and local setup guides behind the decision workflow."
+    },
+    {
+      "title": "GitHub - r33drichards/laya-vision: Image inputs for Laya: calibrated ...",
+      "url": "https://github.com/r33drichards/laya-vision",
+      "snippet": "Laya Vision is an independent fork of Laya that replaces its ModernBERT text encoder with a small vision-language model. Laya&#x27;s predict (state, questions) API, output schema, RLCD training objective and temperature calibration are unchanged. It is an experimental research project, not affiliated with Convai Innovations, the authors of Laya."
+    }
+  ]
+}

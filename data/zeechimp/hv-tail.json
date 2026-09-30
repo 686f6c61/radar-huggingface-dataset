@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zeechimp/hv-tail",
+  "slug": "zeechimp-hv-tail",
+  "author": "zeechimp",
+  "url": "https://huggingface.co/zeechimp/hv-tail",
+  "created_at": "2026-09-30T17:41:08.000Z",
+  "updated_at": "2026-09-30T17:51:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "numpy",
+  "languages": [],
+  "tags": [
+    "numpy",
+    "above-ceiling",
+    "tail-detection",
+    "genius-mode",
+    "calibration",
+    "reader-models",
+    "cognitive-modes",
+    "llm-evaluation",
+    "delivery",
+    "cpu",
+    "text-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gîte de l'Ilet - CILAOS - FRANCE",
+      "url": "https://www.gitedelilet.re/",
+      "snippet": "Nous vous proposons des chambres soit au rez-de-chaussée soit à l'étage de la maison. Découvrez également notre table qui vous …"
+    },
+    {
+      "title": "Gite de l’Ilet - Carte de La Réunion",
+      "url": "https://www.cartedelareunion.fr/listings/gite-de-lilet-5/",
+      "snippet": "Le Gîte de l'Ilet propose 5 chambres d'hôte pour 3 personnes labellisée Gîtes de France, au cœur du cirque de Cilaos."
+    },
+    {
+      "title": "Réserver - Gîte de l'Ilet - CILAOS - FRANCE",
+      "url": "https://www.gitedelilet.re/reservation-en-ligne.html",
+      "snippet": "Gîte de l'Ilet 27, Chemin Terre Fine - Ilet à Cordes, 97413 CILAOS - FRANCE +262 262 25 38 57 +262 692 64 74 48 Contacter par …"
+    },
+    {
+      "title": "Location de vacances - Gîtes, Chambres d'hôtes | Gîtes de France®",
+      "url": "https://www.gites-de-france.com/fr",
+      "snippet": "Trouvez votre location de vacances, gîtes, chambres d'hotes, camping, citybreak avec Gîtes de France®, la garantie d'un label de …"
+    },
+    {
+      "title": "Gîte de l'Îlet Îlet à Cordes | Hébergement Cilaos Réunion",
+      "url": "https://allonslareunion.fr/hebergement/gite-de-lilet/",
+      "snippet": "Séjournez au Gîte de l'Îlet à Cilaos. Chambres confortables avec sanitaires privés, piscine chauffée et table d'hôtes traditionnelle. …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "atharvsinghana/mocov3-generation-distilled",
+  "slug": "atharvsinghana-mocov3-generation-distilled",
+  "author": "atharvsinghana",
+  "url": "https://huggingface.co/atharvsinghana/mocov3-generation-distilled",
+  "created_at": "2026-09-30T03:24:34.000Z",
+  "updated_at": "2026-09-30T03:24:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "atharvsinghana/mocov3-generation-distilled · Hugging Face",
+      "url": "https://huggingface.co/atharvsinghana/mocov3-generation-distilled",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "atharvsinghana/mocov3-generation-distilled at main - Hugging Face",
+      "url": "https://huggingface.co/atharvsinghana/mocov3-generation-distilled/tree/main",
+      "snippet": "Like 0 Safetensors PyTorch mocov3 generation License:mit Model card FilesFiles and versions xet Community Copy to bucket new main mocov3-generation-distilled 109 kB Ctrl+K Ctrl+K 1 contributor History:2 commits atharvsinghana Add finetune.py, README.md, config.json, training_args.json, model.safetensors 2f1e6ec verifiedabout 7 hours ago ..."
+    },
+    {
+      "title": "GitHub - facebookresearch/moco-v3: PyTorch implementation of MoCo v3 ...",
+      "url": "https://github.com/facebookresearch/moco-v3",
+      "snippet": "This is a PyTorch implementation of MoCo v3 for self-supervised ResNet and ViT. The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2211.09861",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "GitHub - kissablemt/moco-v3-3d: PyTorch implementation of MoCo v3 https ...",
+      "url": "https://github.com/kissablemt/moco-v3-3d",
+      "snippet": "This is a PyTorch implementation of MoCo v3 for self-supervised ResNet and ViT. The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Grafting-Beliefs/fair-midtraining-models",
+  "slug": "grafting-beliefs-fair-midtraining-models",
+  "author": "Grafting-Beliefs",
+  "url": "https://huggingface.co/Grafting-Beliefs/fair-midtraining-models",
+  "created_at": "2026-09-30T15:52:40.000Z",
+  "updated_at": "2026-09-30T16:08:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "grafting",
+    "mid-training",
+    "synthetic-document-finetuning",
+    "base_model:Qwen/Qwen3-14B-Base",
+    "base_model:finetune:Qwen/Qwen3-14B-Base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 301603082974,
+  "storage_human": "301.6 GB",
+  "base_model": "Qwen/Qwen3-14B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le Mot - Wordle en français",
+      "url": "https://wordle.louan.me/",
+      "snippet": "Wordle, mais en français. Devinez le mot du jour ! Totalement gratuit, en ligne, et sans pub."
+    },
+    {
+      "title": "Le Mot | Le meilleur Wordle Français",
+      "url": "https://lemot.fr/",
+      "snippet": "Jouez Wordle en français avec des mots de 4, 5 et 6 lettres. Créez un défi personnalisé pour un ami ou jouez Wordle illimité."
+    },
+    {
+      "title": "Le Mot Illimité | Wordle sans limites en français",
+      "url": "https://lemot.fr/illimite",
+      "snippet": "Jouez autant de tours que vous voulez. Testez vos compétences en français et relevez le défi sans limite."
+    },
+    {
+      "title": "LeMOT - Wordle en français - Solitaire",
+      "url": "https://www.solitaire-play.com/lemot/",
+      "snippet": "Comment jouer ? Devinez LeMOT en 6 tentatives. Cette version française de Wordle accepte les mots selon les règles du Scrabble, …"
+    },
+    {
+      "title": "Le Mot Six | Wordle en français à 6 lettres",
+      "url": "https://lemot.fr/six",
+      "snippet": "Le Mot en version six lettres, pour un Wordle français plus exigeant."
+    }
+  ]
+}

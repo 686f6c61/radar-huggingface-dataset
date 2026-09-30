@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_30_Exec_30_TASK_nut_assembly_square_PIXELS_84",
+  "slug": "castanetnicolas-act_ur5e_bs_64_act_chunk_30_exec_30_task_nut_assembly_square_pixels_84",
+  "author": "castanetnicolas",
+  "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_30_Exec_30_TASK_nut_assembly_square_PIXELS_84",
+  "created_at": "2026-09-30T15:59:32.000Z",
+  "updated_at": "2026-09-30T15:59:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:castanetnicolas/UR5e_nut_assembly_square_100_absolute_OSC_POS_SIZE_84",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51601031,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206444892,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_20_Exec_20 at main - Hugging Face",
+      "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_20_Exec_20/tree/main",
+      "snippet": "Instructions to use castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_20_Exec_20 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "castanetnicolas (Castanet) - Hugging Face",
+      "url": "https://huggingface.co/castanetnicolas/activity/all",
+      "snippet": "castanetnicolas 2 Follow https://nicolascastanet.github.io/ nicolas-castanet-7b690a355"
+    },
+    {
+      "title": "ur5e · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/ur5e",
+      "snippet": "A UR5e robotic arm model was created in MATLAB and used to write the word \"FLOW\". A quintic spline interpolation method was implemented to generate the end-effect trajectories."
+    },
+    {
+      "title": "mujoco_menagerie/universal_robots_ur5e/README.md at main - GitHub",
+      "url": "https://github.com/google-deepmind/mujoco_menagerie/blob/main/universal_robots_ur5e/README.md",
+      "snippet": "This package contains a simplified robot description (MJCF) of the UR5e developed by Universal Robots. It is derived from the publicly available URDF description."
+    },
+    {
+      "title": "Ethereum (ETH) Blockchain Explorer",
+      "url": "https://etherscan.io/",
+      "snippet": "Explore Ethereum blockchain data, transactions, and smart contracts with Etherscan, the leading Ethereum block explorer."
+    }
+  ]
+}

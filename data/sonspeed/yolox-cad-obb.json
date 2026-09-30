@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "sonspeed/yoloX-cad-obb",
+  "slug": "sonspeed-yolox-cad-obb",
+  "author": "sonspeed",
+  "url": "https://huggingface.co/sonspeed/yoloX-cad-obb",
+  "created_at": "2026-09-30T17:52:02.000Z",
+  "updated_at": "2026-09-30T17:52:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "yolox",
+    "obb",
+    "object-detection",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52368344,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sonspeed/yolo11m-cad-obb · Discussions - Hugging Face",
+      "url": "https://huggingface.co/sonspeed/yolo11m-cad-obb/discussions",
+      "snippet": "Instructions to use sonspeed/yolo11m-cad-obb with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ultralytics How to use sonspeed/yolo11m-cad-obb with ultralytics:"
+    },
+    {
+      "title": "sonspeed/yolo11m-cad-obb-v2 · Hugging Face",
+      "url": "https://huggingface.co/sonspeed/yolo11m-cad-obb-v2",
+      "snippet": "Instructions to use sonspeed/yolo11m-cad-obb-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ultralytics How to use sonspeed/yolo11m-cad-obb-v2 with ultralytics:"
+    },
+    {
+      "title": "Yolo11m Cad Obb - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/sonspeed/yolo11m-cad-obb",
+      "snippet": "🆔 Identity & Source id hf-model--sonspeed--yolo11m-cad-obb slug sonspeed--yolo11m-cad-obb source huggingface author sonspeed tags ultralytics, yolo11, obb, cad, object-detection, region:us"
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t hav"
+    },
+    {
+      "title": "OBB Dataset Formats for YOLO | Ultralytics",
+      "url": "https://docs.ultralytics.com/datasets/obb",
+      "snippet": "Discover OBB dataset formats for Ultralytics YOLO models. Learn about their structure, application, and format conversions to enhance your object detection training."
+    }
+  ]
+}

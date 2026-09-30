@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "HelloSun/animemixv10_lcm-OpenVINO-INT4",
+  "slug": "hellosun-animemixv10_lcm-openvino-int4",
+  "author": "HelloSun",
+  "url": "https://huggingface.co/HelloSun/animemixv10_lcm-OpenVINO-INT4",
+  "created_at": "2026-09-30T03:01:40.000Z",
+  "updated_at": "2026-09-30T07:17:05.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "openvino",
+    "int4",
+    "optimum",
+    "optimum-intel",
+    "nncf",
+    "lcm",
+    "anime",
+    "sd1.5",
+    "text-to-image",
+    "cpu",
+    "base_model:sca255/animemixv10_lcm",
+    "base_model:finetune:sca255/animemixv10_lcm",
+    "license:openrail++",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 971336339,
+  "storage_human": "971 MB",
+  "base_model": "sca255/animemixv10_lcm",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HelloSun/animemixv10_lcm-OpenVINO-INT4 · Hugging Face",
+      "url": "https://huggingface.co/HelloSun/animemixv10_lcm-OpenVINO-INT4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Models for sca255/animemixv10_lcm - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:sca255/animemixv10_lcm",
+      "snippet": "HelloSun/animemixv10_lcm-OpenVINO-INT4 Text-to-Image •Updated about 4 hours ago• 8"
+    },
+    {
+      "title": "AI Models verified for OpenVINO™",
+      "url": "https://docs.openvino.ai/2024/about-openvino/compatibility-and-support/supported-models.html",
+      "snippet": "The results as of June 17 2024, for OpenVINO version 2024.2. The models come from different public model repositories, such as Pytorch Model Zoo and HuggingFace; they were executed on the designated hardware with OpenVINO either natively or as a backend."
+    },
+    {
+      "title": "AI Models verified for OpenVINO™",
+      "url": "https://docs.openvino.ai/2025/documentation/compatibility-and-support/supported-models.html",
+      "snippet": "The following is a list of models that have been verified to work with OpenVINO. Note that other models from OpenVINO-supported frameworks may also work properly but have not been tested."
+    },
+    {
+      "title": "Supported Models | OpenVINO GenAI",
+      "url": "https://openvinotoolkit.github.io/openvino.genai/docs/supported-models/",
+      "snippet": "The LLM pipeline can work with other similar topologies produced by optimum-intel with the same model signature. The model is required to have the following inputs after the conversion: input_ids contains the tokens. attention_mask is filled with 1. beam_idx selects beams. position_ids (optional) encodes a position of currently generating token in the sequence and a single logits output."
+    }
+  ]
+}

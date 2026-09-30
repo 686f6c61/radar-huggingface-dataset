@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "shsunshining/Qwen3.8-27B-Uncensored-GGUF",
+  "slug": "shsunshining-qwen3-8-27b-uncensored-gguf",
+  "author": "shsunshining",
+  "url": "https://huggingface.co/shsunshining/Qwen3.8-27B-Uncensored-GGUF",
+  "created_at": "2026-09-30T15:58:53.000Z",
+  "updated_at": "2026-09-30T15:58:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "uncensored",
+    "qwen3.8",
+    "mtp",
+    "speculative-decoding",
+    "imatrix",
+    "quantized",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 231256590464,
+  "storage_human": "231.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored vs Other Qwen GGUF Models",
+      "url": "https://hackernoon.com/qwen38-27b-uncensored-vs-other-qwen-gguf-models",
+      "snippet": "A complete guide to Qwen3.8-27B Uncensored GGUF covering llama.cpp setup, quantization, multimodal support, benchmarks, use cases and limitations."
+    },
+    {
+      "title": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-GGUF ...",
+      "url": "https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-GGUF-UltraOptimised",
+      "snippet": "This is the high-performance quantization and serving release of DavidAU&#x27;s flagship Qwen3.8-27B Cold Fusion checkpoint, packaged and optimized by Solstice-AI. Featuring a historic 735 ARC-C and 882 ARC-E, this model delivers an unprecedented 9-for-9 clean sweep over Claude Opus 4.6 Max across the official Claude Code benchmark harness."
+    },
+    {
+      "title": "GitHub - Wassimyounes01/qwen38-uncensored: Local Qwen 3.8 27B ...",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Model doesn&#x27;t respond / refuses Verify you pulled abliterated weights: ollama show qwen3.8:27b-uncensored --modelfile should show FROM orcarouter/... If using --legacy, the system pack alone may not fully suppress refusals"
+    },
+    {
+      "title": "How to Run an Uncensored Qwen 3.8 27b: Local & Cloud",
+      "url": "https://thegeekinsights.com/run-uncensored-qwen-3-8-27b/",
+      "snippet": "Qwen3.8-27B-Uncensored is a community-modified 27-billion-parameter model that runs locally from a GGUF file or through hosted inference. The right setup depends on your available VRAM or unified memory, whether you need image and video input, and whether prompts must remain on your own machine. For most local systems, a 4-bit file is the sensible starting point."
+    }
+  ]
+}

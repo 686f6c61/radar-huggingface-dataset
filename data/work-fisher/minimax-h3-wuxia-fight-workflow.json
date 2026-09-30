@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Work-Fisher/MiniMax-H3-Wuxia-Fight-Workflow",
+  "slug": "work-fisher-minimax-h3-wuxia-fight-workflow",
+  "author": "Work-Fisher",
+  "url": "https://huggingface.co/Work-Fisher/MiniMax-H3-Wuxia-Fight-Workflow",
+  "created_at": "2026-09-30T17:39:07.000Z",
+  "updated_at": "2026-09-30T17:39:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "minimax-h3",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "comfyui-workflow",
+    "video-generation",
+    "image-to-video",
+    "en",
+    "zh",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MINIMAX-H3 WorkFisher August&#x27;s Strongest Action & Martial Arts Fight ...",
+      "url": "https://www.runninghub.ai/post/2095134699986448385",
+      "snippet": "This workflow is based on the original author WorkFisher&#x27;s \" [MINIMAX-H3] August&#x27;s Strongest Martial Arts Action Sequence\", expanding the input slots (6 images → 9 images, all 3 audio slots activated). Core sampling, LoRA weighting, and model configuration completely retain the original design. Credits to the original author."
+    },
+    {
+      "title": "MINIMAX-H3 WorkFisher August&#x27;s Strongest Action & Martial Arts Fight ...",
+      "url": "https://www.runninghub.ai/ai-detail/2095319441696395265",
+      "snippet": "Upload photos of two actors + one \"first frame of the fight\", write your combat prompt, choose the duration, and generate a 15-second dual-person martial arts sequence with one click—seamless and consequential action, consistent identities, and total silence except for breathing and impact sounds. Powered by WorkFisher&#x27;s \"August&#x27;s Strongest Combat Sequence\" (H3_Combat_V2 + wushu_spatial ..."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "MiniMax H3 ComfyUI Workflows, Setup & Tutorial | MiniMax Design",
+      "url": "https://design.minimax.io/tools/minimax-h3-comfyui",
+      "snippet": "MiniMax H3 is Insane! 2K AI Video Model - Full Tutorial & Workflow | ComfyUI Generate a person performing push-ups with believable weight, muscle tension, breathing, and visible effort. Keep body proportions stable, facial emotion natural, and framing steady."
+    },
+    {
+      "title": "Minimax H3 - Making Combat , Fast Motion Scenes With Local AI",
+      "url": "https://www.youtube.com/watch?v=uhG307gPHco",
+      "snippet": "This video shows the fight scenes are now reproducible locally in ComfyUI, and answers the real question: is a LoRA stack or a fully fine-tuned model the better base for combat motion?"
+    }
+  ]
+}

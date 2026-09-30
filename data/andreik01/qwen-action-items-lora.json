@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AndreiK01/qwen-action-items-lora",
+  "slug": "andreik01-qwen-action-items-lora",
+  "author": "AndreiK01",
+  "url": "https://huggingface.co/AndreiK01/qwen-action-items-lora",
+  "created_at": "2026-09-30T17:14:49.000Z",
+  "updated_at": "2026-09-30T17:14:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40951644,
+  "storage_human": "41 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen AI Models (246) | Civitai",
+      "url": "https://civitai.com/tag/qwen",
+      "snippet": "Browse 246 AI models tagged \"Qwen\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "How to Train a Qwen-Image LoRA with ai-toolkit | kombitz",
+      "url": "https://www.kombitz.com/2025/09/15/how-to-train-a-qwen-image-lora-with-ai-toolkit-with-ai-toolkit/",
+      "snippet": "Conclusion Training a LoRA with Qwen-Image and ai-toolkit gives you a practical way to achieve high-quality, customized outputs without needing huge hardware or complicated workflows. With the right dataset and parameters, you can create a model that captures your desired look while fitting seamlessly into your existing image generation setup."
+    },
+    {
+      "title": "GitHub - Cx330v/Qwen-Image-Toolkit: A collection of essential nodes ...",
+      "url": "https://github.com/Cx330v/Qwen-Image-Toolkit",
+      "snippet": "A collection of essential nodes designed to seamlessly integrate Alibaba&#x27;s Qwen-Image model and its specific LoRA format into the ComfyUI workflow."
+    },
+    {
+      "title": "QWEN-LORA-MODEL - a ryg81 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ryg81/qwen-lora-model",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from ryg81"
+    },
+    {
+      "title": "Qwen Image LoRA Explorer - a Hugging Face Space by multimodalart",
+      "url": "https://huggingface.co/spaces/multimodalart/Qwen-Image-LoRA-Explorer",
+      "snippet": "This application allows users to generate images by selecting a LoRA model and entering a prompt. Users can choose from predefined LoRA styles or add their own custom LoRA models."
+    }
+  ]
+}

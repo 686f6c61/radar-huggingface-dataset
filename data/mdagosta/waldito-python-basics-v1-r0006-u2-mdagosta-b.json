@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-python-basics-v1-r0006-u2-mdagosta-b",
+  "slug": "mdagosta-waldito-python-basics-v1-r0006-u2-mdagosta-b",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0006-u2-mdagosta-b",
+  "created_at": "2026-09-30T19:16:50.000Z",
+  "updated_at": "2026-09-30T19:16:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9541632,
+  "parameters_human": "9.5M",
+  "storage_bytes": 19089664,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "waldito-python-basics-v1-r0003-u1-mdagosta-b - Hugging Face",
+      "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta-b",
+      "snippet": "Instructions to use mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta-b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "How to Use AI Running on Your Own Computer From Python in 2026",
+      "url": "https://dev.to/alichherawalla/how-to-use-ai-running-on-your-own-computer-from-python-in-2026-2oh9",
+      "snippet": "Call a local AI model from Python with the standard library. Discover the selected model, send a prompt and read the answer through OGAD."
+    },
+    {
+      "title": "GitHub - marimo-team/modernaicourse: A companion to CMU professor Zico ...",
+      "url": "https://github.com/marimo-team/modernaicourse",
+      "snippet": "Intro to Modern AI is a course by CMU professor Zico Kolter. From the course website: This course provides an introduction to how modern AI systems work. By \"modern AI\", we specifically mean the machine learning methods and large language models (LLMs) behind systems like ChatGPT, Gemini, and Claude. Despite their seemingly amazing generality, the basic techniques that underlie these AI ..."
+    },
+    {
+      "title": "Welcome to Python.org",
+      "url": "https://www.python.org/",
+      "snippet": "The official home of the Python Programming Language"
+    }
+  ]
+}

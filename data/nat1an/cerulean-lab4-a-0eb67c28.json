@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Nat1an/cerulean-lab4-a-0eb67c28",
+  "slug": "nat1an-cerulean-lab4-a-0eb67c28",
+  "author": "Nat1an",
+  "url": "https://huggingface.co/Nat1an/cerulean-lab4-a-0eb67c28",
+  "created_at": "2026-09-30T17:22:19.000Z",
+  "updated_at": "2026-09-30T17:24:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124475904,
+  "parameters_human": "124.5M",
+  "storage_bytes": 497918592,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nat1an/cerulean-lab4-a-0eb67c28 · Hugging Face",
+      "url": "https://huggingface.co/Nat1an/cerulean-lab4-a-0eb67c28",
+      "snippet": "Nat1an / cerulean-lab4-a-0eb67c28 Like 0 Text Generation Transformers Safetensors gpt2 text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "cerulean-lab4 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Nat1an/cerulean-lab4",
+      "snippet": "Deploy cerulean-lab4 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "NathanAILab (Nathan Ai Lab) - Hugging Face",
+      "url": "https://huggingface.co/NathanAILab/models",
+      "snippet": "An independent design studio exploring conversational AI, voice interfaces, and LLMs for portfolio-based research. Focused on building non-commercial, educational tools for voice assistant UX proto..."
+    },
+    {
+      "title": "Nat1anWasTaken (Nat1an) · GitHub",
+      "url": "https://github.com/Nat1anWasTaken",
+      "snippet": "Nat1anWasTaken has 121 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "CeruleanAI - Coral Restoration Foundation - CRF",
+      "url": "https://coralrestoration.org/science-technology/ceruleanai/",
+      "snippet": "CeruleanAI is a new tool developed by Coral Restoration Foundation™ that makes advanced coral reef monitoring accessible to everyone. Traditional photomosaic analysis is often slow, expensive, and requires powerful computers and expert training. CeruleanAI changes that. With a user-friendly interface and two powerful features, automatic photomosaic stitching and now live AI-assisted analysis ..."
+    }
+  ]
+}

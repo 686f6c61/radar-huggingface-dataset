@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "chentong/proteus2",
+  "slug": "chentong-proteus2",
+  "author": "chentong",
+  "url": "https://huggingface.co/chentong/proteus2",
+  "created_at": "2026-09-30T17:06:47.000Z",
+  "updated_at": "2026-09-30T17:32:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2548964302,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chentong (wangchentong) - Hugging Face",
+      "url": "https://huggingface.co/chentong/models",
+      "snippet": "AI & ML interests ... Recent Activity published a dataset about 1 hour ago ... updated a model 24 days ago"
+    },
+    {
+      "title": "GitHub - Wangchentong/Proteus: Pytorch implementation for ICML 2024 ...",
+      "url": "https://github.com/Wangchentong/Proteus",
+      "snippet": "Proteus is a novel deep diffusion network designed to generate protein backbones with enhanced designability and efficiency. Unlike RFDiffusion which relies on large pre-trained network RosettaFold for structure prediction, Proteus utilizes graph-based triangle methods and a multi-track interaction network, achieving state-of-the-art performance without the need for pre-training. Notably, the ..."
+    },
+    {
+      "title": "chentong (wangchentong) - Hugging Face",
+      "url": "https://huggingface.co/chentong",
+      "snippet": "deep learning, protein design. Organizations. None yet. models 2. Sort: Recently updated. chentong/proteus2_weights. Updated Oct 31, 2025. chentong/proteus_flow_matching"
+    },
+    {
+      "title": "ICML Poster Proteus: Exploring Protein Structure Generation for ...",
+      "url": "https://icml.cc/virtual/2024/poster/34422",
+      "snippet": "We have validated our model&#x27;s performance on de novo protein backbone generation through comprehensive in silico evaluations and experimental characterizations, which demonstrate a remarkable success rate. These promising results underscore Proteus&#x27;s ability to generate highly designable protein backbones efficiently."
+    },
+    {
+      "title": "Proteus/README.md at master · Wangchentong/Proteus · GitHub",
+      "url": "https://github.com/Wangchentong/Proteus/blob/master/README.md",
+      "snippet": "Proteus is a novel deep diffusion network designed to generate protein backbones with enhanced designability and efficiency. Unlike RFDiffusion which relies on large pre-trained network RosettaFold for structure prediction, Proteus utilizes graph-based triangle methods and a multi-track interaction network, achieving state-of-the-art performance without the need for pre-training. Notably, the ..."
+    }
+  ]
+}

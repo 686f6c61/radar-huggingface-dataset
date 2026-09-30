@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jennifercook/dissertation-cross-modal-fusion",
+  "slug": "jennifercook-dissertation-cross-modal-fusion",
+  "author": "jennifercook",
+  "url": "https://huggingface.co/jennifercook/dissertation-cross-modal-fusion",
+  "created_at": "2026-09-30T19:15:46.000Z",
+  "updated_at": "2026-09-30T19:15:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "priyankak17/cross-modal-latent-fusion - GitHub",
+      "url": "https://github.com/priyankak17/cross-modal-latent-fusion",
+      "snippet": "This repository contains the dissertation, model architecture, and experiments for my MSc research on controllable multimodal image synthesis through cross-modal latent fusion. The central question: when a generative model is given two competing input signals and a composite training objective, which signal does it learn to prioritise — and why?"
+    },
+    {
+      "title": "ChatGPT model launched with extra &#x27;safeguards&#x27; after bots hacked ... - MSN",
+      "url": "https://www.msn.com/en-gb/technology/artificial-intelligence/chatgpt-model-launched-with-extra-safeguards-after-bots-hacked-company/ar-AA2bzEdq",
+      "snippet": "OpenAI is rolling out its newest intelligence model after bots hacked into a library of digital AI models in July. Questions of AI safety were raised after the worrying hack, but yesterday, CEO ..."
+    },
+    {
+      "title": "[2609.34381] Joint and Cross-Modal Video-Audio Generation and Editing ...",
+      "url": "https://arxiv.org/abs/2609.34381",
+      "snippet": "Video and audio are perceived together, yet most generative models treat them in isolation. We examine methods that model the two modalities jointly, generate one from the other, or edit them in a coupled manner, organized around a single question: how is the output kept coherent across modalities in time and semantics? A unified formulation casts joint generation, cross-modal generation, and ..."
+    },
+    {
+      "title": "Muse Spark 1.3 Contributor - API Pricing & Providers - openrouter.ai",
+      "url": "https://openrouter.ai/meta/muse-spark-1.3-contributor",
+      "snippet": "Muse Spark 1.3 Contributor is the cost-efficient contributor tier of Meta&#x27;s multimodal reasoning model for experimentation, learning, and early-stage agentic, multi-agent, and coding workflows. $0.10 per million input tokens, $0.20 per million output tokens. 1,048,576 token context window."
+    },
+    {
+      "title": "FUSION: Fully Integration of Vision-Language Representations for Deep ...",
+      "url": "https://arxiv.org/html/2504.09925v1",
+      "snippet": "The results indicate that our model achieves consistent and progressively enhanced cross-modal alignment throughout the processing pipeline. Despite the fundamental role of vision-language interaction in human perception, current MLLMs often fail to capture this relationship effectively."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "alice-noa-chan/haru_3-student-pairshare-base",
+  "slug": "alice-noa-chan-haru_3-student-pairshare-base",
+  "author": "alice-noa-chan",
+  "url": "https://huggingface.co/alice-noa-chan/haru_3-student-pairshare-base",
+  "created_at": "2026-09-30T14:41:35.000Z",
+  "updated_at": "2026-09-30T14:41:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "haru_dense",
+    "text-generation",
+    "haru",
+    "haru-dense",
+    "custom-code",
+    "story-generation",
+    "conversational",
+    "custom_code",
+    "ko",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14600704,
+  "parameters_human": "14.6M",
+  "storage_bytes": 59877864,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Webmail - Accédez à vos emails Free",
+      "url": "https://zimbra.free.fr/",
+      "snippet": "Accédez facilement à vos emails via le Webmail de Free. Pour une gestion efficace des emails via une interface intuitive. Connectez …"
+    },
+    {
+      "title": "Identification email abonne Alice",
+      "url": "https://espace-abonne.aliceadsl.fr/emails/",
+      "snippet": "Accédera mon compte alice Bienvenue ! Identifiez-vous pour gérer votre adresse email Alice."
+    },
+    {
+      "title": "Abonné Alice - Console",
+      "url": "https://espace-abonne.aliceadsl.fr/",
+      "snippet": "Accéder à mon compte alice Bienvenue ! Identifiez-vous pour gérer votre compte et profiter des services Alice. Si vous avez un …"
+    },
+    {
+      "title": "Alice - YouTube",
+      "url": "https://www.youtube.com/@Alice_Princess_",
+      "snippet": "Welcome to the official Alice YouTube channel!Alice is the younger sister of Vlad & Niki, starring in her own fun adventures filled with …"
+    },
+    {
+      "title": "Alice — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Alice",
+      "snippet": "La création mondiale du ballet Alice était présentée la première fois en février 2022 à Strasbourg et à Mulhouse. Affranchis de la …"
+    }
+  ]
+}

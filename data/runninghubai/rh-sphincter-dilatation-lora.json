@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-sphincter-dilatation-lora",
+  "slug": "runninghubai-rh-sphincter-dilatation-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-sphincter-dilatation-lora",
+  "created_at": "2026-09-30T14:45:03.000Z",
+  "updated_at": "2026-09-30T14:46:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228771975,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-hf-e2e-t4-20260918105654-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-hf-e2e-t4-20260918105654-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RunningHubAI (RunningHub.ai) - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI",
+      "snippet": "One API Powering All-Modal AI Productivity. Recent Activity. updated a model about 1 hour ago. RunningHubAI/rh-minimax-h3-fl2v-turbo-4step-v1.-768p-comfyui-bf16 ..."
+    },
+    {
+      "title": "RunningHub ｜ AI Agent-Powered Content Creation Platform with ComfyUI ...",
+      "url": "https://www.runninghub.ai/",
+      "snippet": "RunningHub is an all-in-one content creation platform powered by native AI agents. Build end-to-end creative workflows with ComfyUI workflows, infinite canvas, AI apps, image & video generation, and model API access."
+    },
+    {
+      "title": "RunningHub",
+      "url": "https://www.runninghub.ai/workspace",
+      "snippet": "Create and run AI workflows online with RunningHub&#x27;s cloud-based platform, offering fast and error-free results for various creative projects."
+    },
+    {
+      "title": "ComfyUI_RH_LLM_API - GitHub",
+      "url": "https://github.com/HM-RunningHub/ComfyUI_RH_LLM_API",
+      "snippet": "ComfyUI_RH_LLM_API Very easy to use. LLM DeepSeek, OpenAI API compatible plugin Because the vast majority of LLM APIs are compatible with OpenAI&#x27;s API interface specifications, this plugin was created Through triples, any LLM model compatible with the OpenAI interface can be accessed and called, such as deepseek, Qianwen, Doubao, GLM, MinMax ..."
+    }
+  ]
+}

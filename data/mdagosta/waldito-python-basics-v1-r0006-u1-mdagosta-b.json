@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-python-basics-v1-r0006-u1-mdagosta-b",
+  "slug": "mdagosta-waldito-python-basics-v1-r0006-u1-mdagosta-b",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0006-u1-mdagosta-b",
+  "created_at": "2026-09-30T19:14:45.000Z",
+  "updated_at": "2026-09-30T19:14:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9541632,
+  "parameters_human": "9.5M",
+  "storage_bytes": 19089664,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "waldito-python-basics-v1-r0003-u1-mdagosta-b - Hugging Face",
+      "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta-b",
+      "snippet": "Instructions to use mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta-b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "How to Build Your First Machine Learning Model in 30 Minutes (Step-by ...",
+      "url": "https://thedatastudent.wordpress.com/2026/06/20/how-to-build-your-first-machine-learning-model-in-30-minutes-step-by-step/",
+      "snippet": "No PhD required. Just Python, a dataset, and 30 focused minutes — here&#x27;s exactly how to do it. There&#x27;s a strange myth floating around the internet that machine learning is reserved for …"
+    },
+    {
+      "title": "AgentCraft — Build AI Agents from Scratch in Python",
+      "url": "https://mahip-xp.vercel.app/learn",
+      "snippet": "Interactive course: build an AI agent from scratch in 60 lines of Python. 10 lessons, no framework, runs in your browser."
+    },
+    {
+      "title": "Machine Learning with Python Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-with-python/",
+      "snippet": "Machine Learning with Python focuses on building systems that can learn from data and make predictions or decisions without being explicitly programmed. Python provides simple syntax and useful libraries that make machine learning easy to understand and implement, even for beginners."
+    }
+  ]
+}

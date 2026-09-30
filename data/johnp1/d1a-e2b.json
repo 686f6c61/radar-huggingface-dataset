@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JohnP1/d1a-e2b",
+  "slug": "johnp1-d1a-e2b",
+  "author": "JohnP1",
+  "url": "https://huggingface.co/JohnP1/d1a-e2b",
+  "created_at": "2026-09-30T14:37:55.000Z",
+  "updated_at": "2026-09-30T14:37:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "d1a",
+    "decision-model",
+    "calibration",
+    "lora",
+    "gemma4",
+    "kev",
+    "typesafe",
+    "text-classification",
+    "base_model:google/gemma-4-E2B",
+    "base_model:adapter:google/gemma-4-E2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-4-E2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "E2B | The Enterprise AI Agent Cloud",
+      "url": "https://e2b.dev/",
+      "snippet": "100K+ teams on E2B · 94 of the Fortune 100 signed up · top AI labs & the fastest AI startups run here Where E2B fits Your agent is the product. E2B is where it runs. You bring the model, prompts, and agent logic. E2B runs the machine underneath."
+    },
+    {
+      "title": "Running Gemma 4 Locally with LM Studio - DEV Community",
+      "url": "https://dev.to/kushang_tailor/running-gemma-4-locally-with-lm-studio-complete-setup-guide-real-use-cases-3np3",
+      "snippet": "🤔 Why Run AI Locally? Imagine using a powerful AI assistant — with no internet, no subscription fees, no data leaving your computer. That&#x27;s exactly what running Gemma 4 locally with LM Studio gives you. I&#x27;ve been experimenting with Gemma 4 E2B on my own machine, and honestly? It surprised me. A 2-billion parameter model running completely offline, understanding images, writing code, and ..."
+    }
+  ]
+}

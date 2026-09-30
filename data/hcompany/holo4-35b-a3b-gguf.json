@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Hcompany/Holo4-35B-A3B-GGUF",
+  "slug": "hcompany-holo4-35b-a3b-gguf",
+  "author": "Hcompany",
+  "url": "https://huggingface.co/Hcompany/Holo4-35B-A3B-GGUF",
+  "created_at": "2026-09-25T12:12:22.000Z",
+  "updated_at": "2026-09-28T14:34:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "multimodal",
+    "computer-use",
+    "agent",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Hcompany/Holo4-35B-A3B",
+    "base_model:quantized:Hcompany/Holo4-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 11,
+  "downloads_30d": 1813,
+  "trending_score": 11,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 22197153888,
+  "storage_human": "22.2 GB",
+  "base_model": "Hcompany/Holo4-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Holo4: powering generalist computer-use agents - Hugging Face",
+      "url": "https://huggingface.co/blog/Hcompany/holo4",
+      "snippet": "A Blog post by H company on Hugging Face Holo4 is our new series of agentic models. It comes in two sizes: 27B dense and 35B-A3B Mixture of Experts. Both are available on the H Models API. We are also releasing an updated version of Holotron 3: Holotron4 Nano. Holo4 builds on our previous model and interacts with software through any available interface: GUIs, code, MCP and APIs. It scores ..."
+    },
+    {
+      "title": "Holo4: powering generalist computer-use agents | H - hcompany.ai",
+      "url": "https://hcompany.ai/newsroom/holo4",
+      "snippet": "Holo4 is our new series of agentic models. It comes in two sizes: 27B dense and 35B-A3B Mixture of Experts. Both are available on the H Models API. We are also releasing an updated version of Holotron 3: Holotron4 Nano. Holo4 builds on our previous model and interacts with software through any available interface: GUIs, code, MCP and APIs."
+    },
+    {
+      "title": "H Company Releases Holo4, Open-Weight Models for Computer-Use Agents",
+      "url": "https://www.unite.ai/h-company-releases-holo4-open-weight-models-for-computer-use-agents/",
+      "snippet": "H company released Holo4, its new series of agentic computer-use models, on September 28, 2026, in 27B dense and 35B-A3B Mixture of Experts sizes, with open weights on Hugging Face and API availability. The company repor..."
+    },
+    {
+      "title": "H Company Releases Holo4 Open Computer-Use Weights on Hugging Face",
+      "url": "https://ccleaks.com/news/holo4-open-weights-sep-2026",
+      "snippet": "Holo4-27B scores 85.2% on OSWorld at $0.08 per task: H Company released open Holo4 27B and 35B-A3B computer-use weights on Hugging Face on Sept 28, 2026."
+    },
+    {
+      "title": "H Company Releases Holo4: Open-Weight Computer-Use Models That Click ...",
+      "url": "https://www.marktechpost.com/2026/09/29/h-company-releases-holo4-open-weight-computer-use-models-that-click-code-and-call-tools-across-desktop-web-android-and-apis/",
+      "snippet": "H Company has released Holo4, a family of generalist computer-use models for AI agents. One set of weights clicks and types on screens. It also writes code and calls MCP or API tools. Holo4 ships in 2 sizes: Holo4 27B (dense) and Holo4 35B-A3B (Mixture of Experts, 3B active). Both serve a 256K ..."
+    }
+  ]
+}

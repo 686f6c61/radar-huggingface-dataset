@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen2.5-0.5B-Instruct_SFT_lora_lonelinessdep",
+  "slug": "xw17-qwen2-5-0-5b-instruct_sft_lora_lonelinessdep",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen2.5-0.5B-Instruct_SFT_lora_lonelinessdep",
+  "created_at": "2026-09-30T17:24:19.000Z",
+  "updated_at": "2026-09-30T17:24:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29062028,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xw17/Qwen2.5-0.5B-Instruct_SFT_lora_universal · Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen2.5-0.5B-Instruct_SFT_lora_universal",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-1.5B-Instruct_SFT_lora_lonelinessdep - Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen2.5-1.5B-Instruct_SFT_lora_lonelinessdep",
+      "snippet": "Instructions to use xw17/Qwen2.5-1.5B-Instruct_SFT_lora_lonelinessdep with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen2.5-0.5B Medical LoRA Fine-Tuning Tutorial - GitHub",
+      "url": "https://github.com/SoloCalm/MiniLoRA",
+      "snippet": "What This Project Does Fine-tunes Qwen2.5-.5B-Instruct (498M parameters) with LoRA SFT on 640 Chinese medical Q&A samples, then compares base vs. fine-tuned model outputs."
+    },
+    {
+      "title": "GitHub - ShawVentus/Qwen2.5_sft",
+      "url": "https://github.com/ShawVentus/Qwen2.5_sft",
+      "snippet": "Please follow FastEdit if you are interested. [23/06/29] We provided a reproducible example of training a chat model using instruction-following datasets, see Baichuan-7B-sft for details. [23/06/22] We aligned the demo API with the OpenAI&#x27;s format where you can insert the fine-tuned model in arbitrary ChatGPT-based applications."
+    },
+    {
+      "title": "qwen2.5:0.5b-instruct/system - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:0.5b-instruct/blobs/66b9ea09bd5b",
+      "snippet": "The model supports up to 128K tokens and has multilingual support. Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens."
+    }
+  ]
+}

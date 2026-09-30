@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "aifeifei798/Myriad-MoE-25K-Micro-Experts",
+  "slug": "aifeifei798-myriad-moe-25k-micro-experts",
+  "author": "aifeifei798",
+  "url": "https://huggingface.co/aifeifei798/Myriad-MoE-25K-Micro-Experts",
+  "created_at": "2026-09-30T14:55:17.000Z",
+  "updated_at": "2026-09-30T15:02:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "moe",
+    "mixture-of-experts",
+    "lora",
+    "mole",
+    "llm-inference",
+    "consumer-gpu",
+    "edge-ai",
+    "systems",
+    "qwen",
+    "hierarchical-moe",
+    "text-generation",
+    "en",
+    "zh",
+    "doi:10.57967/hf/10685",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aifeifei798 (aifeifei) - Hugging Face",
+      "url": "https://huggingface.co/aifeifei798",
+      "snippet": "roleplay Project SmolMoE-8x135M: From Zero to a Custom Mixture-of-Experts Model"
+    },
+    {
+      "title": "aifeifei798 (aifeifei) - Hugging Face",
+      "url": "https://huggingface.co/aifeifei798/collections",
+      "snippet": "aifeifei798 (aifeifei) - Hugging Face ... roleplay"
+    },
+    {
+      "title": "[2507.23279] Unveiling Super Experts in Mixture-of-Experts Large ...",
+      "url": "https://arxiv.org/abs/2507.23279",
+      "snippet": "In this study, we report, for the first time, the discovery and systematic investigation of a distinct subset of experts that play a pivotal role in the MoE LLMs&#x27; forward inference. These experts are prevalent in open-source MoE LLMs, and despite their extremely limited number, pruning them results in a substantial decline in model performance (e.g., prune just three out of 6,144 causes Qwen3 ..."
+    },
+    {
+      "title": "Mixture of experts - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mixture_of_experts",
+      "snippet": "Mixture of experts (MoE) is a machine learning technique where multiple expert networks (learners) are used to divide a problem space into homogeneous regions. [1]"
+    },
+    {
+      "title": "Best Mixture-of-Experts (MoE) Models in 2026: More Knowledge, Less Compute",
+      "url": "https://www.aimadetools.com/blog/best-moe-models-2026/",
+      "snippet": "Mixture-of-Experts (MoE) models are the reason AI got cheap in 2026. They pack hundreds of billions of parameters (knowledge) into a model that only activates a fraction per token (compute)."
+    }
+  ]
+}

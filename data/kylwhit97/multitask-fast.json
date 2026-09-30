@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kylwhit97/multitask-fast",
+  "slug": "kylwhit97-multitask-fast",
+  "author": "kylwhit97",
+  "url": "https://huggingface.co/kylwhit97/multitask-fast",
+  "created_at": "2026-09-30T16:04:26.000Z",
+  "updated_at": "2026-09-30T16:04:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook Log In | Microsoft 365",
+      "url": "https://www.microsoft.com/en-gb/microsoft-365/outlook/log-in?msockid=3d1c84b7891168111d70935388af69ff",
+      "snippet": "Sign in to Outlook with Microsoft 365 to access your email, calendar, and more. Download the app or log in online for enhanced …"
+    },
+    {
+      "title": "Outlook Log In | Microsoft 365",
+      "url": "https://www.microsoft.com/en-in/microsoft-365/outlook/log-in?msockid=3d1c84b7891168111d70935388af69ff",
+      "snippet": "Sign in to Outlook with Microsoft 365 to access your email, calendar, and more. Download the app or log in online for enhanced …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/",
+      "snippet": "Securely sign in to access your Microsoft account and manage emails, calendars, and other services efficiently."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/login",
+      "snippet": "Sign in to manage your Microsoft account and access free online services like Outlook, Word, Excel, and PowerPoint securely from …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "It’s all here with Microsoft account Your Microsoft account connects all your Microsoft apps and services. Sign in to manage your …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BAAI/AREX-2",
+  "slug": "baai-arex-2",
+  "author": "BAAI",
+  "url": "https://huggingface.co/BAAI/AREX-2",
+  "created_at": "2026-09-29T17:56:21.000Z",
+  "updated_at": "2026-09-30T04:59:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "agent",
+    "deep-research",
+    "reasoning",
+    "tool-use",
+    "long-context",
+    "self-improvement",
+    "conversational",
+    "arxiv:2607.21461",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 32,
+  "downloads_30d": 40,
+  "trending_score": 32,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54735776890,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/AREX-2 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/AREX-2",
+      "snippet": "Introduction AREX-2 is a 27B-parameter long-horizon agent model from the Beijing Academy of Artificial Intelligence (BAAI). It learns to improve a solution over multiple test-time rounds: propose, measure, reflect, and revise. AREX-2 is trained on machine-learning and algorithmic-programming tasks with verifiable feedback, together with the existing AREX deep-research data. The learned self ..."
+    },
+    {
+      "title": "BAAI open-sources AREX-2, a 27B long-horizon… · AGI Hunt",
+      "url": "https://agihunt.info/en/p/1a0f2197438a7a27d91a859f76f",
+      "snippet": "BAAI (Beijing Academy of Artificial Intelligence) has released AREX-2, a long-horizon agent model built on Qwen3.8 27B. It is open-sourced under Apache 2.0, supports 262K context, and learns from execution feedback to improve long-running task performance."
+    },
+    {
+      "title": "AREX - a BAAI Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/BAAI/arex",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from BAAI"
+    },
+    {
+      "title": "Musfira AI BAAI/AREX-2 - 27B - Agent model based on Qwen3.8 27B - By ...",
+      "url": "https://github.com/musman550/musfira-ai-baaiarex-2---27b---agent-model-based-on-qwen38-27b",
+      "snippet": "The BAAI/AREX-2 - 27B agent model is a more advanced version of its predecessor, with improved capabilities and performance. As a result, it is well-suited for applications that require complex and nuanced interaction with humans."
+    },
+    {
+      "title": "AREX-2 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/cfli/AREX-2",
+      "snippet": "AREX-2 is a 27B-parameter long-horizon agent model from the Beijing Academy of Artificial Intelligence (BAAI). It learns to improve a solution over multiple test-time rounds: propose, measure, reflect, and revise."
+    }
+  ]
+}

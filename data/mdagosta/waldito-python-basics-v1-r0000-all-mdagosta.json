@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-python-basics-v1-r0000-all-mdagosta",
+  "slug": "mdagosta-waldito-python-basics-v1-r0000-all-mdagosta",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0000-all-mdagosta",
+  "created_at": "2026-09-30T14:40:42.000Z",
+  "updated_at": "2026-09-30T14:40:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9541632,
+  "parameters_human": "9.5M",
+  "storage_bytes": 19089664,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mdagosta/waldito-python-basics-v1-r0000-merge · Hugging Face",
+      "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0000-merge",
+      "snippet": "Instructions to use mdagosta/waldito-python-basics-v1-r0000-merge with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use mdagosta/waldito-python-basics-v1-r0000-merge with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"mdagosta ..."
+    },
+    {
+      "title": "mdagosta (Michael D&#x27;Agosta) · GitHub",
+      "url": "https://github.com/mdagosta",
+      "snippet": "12 followers · 22 following Ventrilo.ai, Code Bug San Francisco, Chicago https://dagosta.com https://codebug.com Block or report mdagosta Block user"
+    },
+    {
+      "title": "GitHub - stephansturges/WALDO: Whereabouts Ascertainment for Low-lying ...",
+      "url": "https://github.com/stephansturges/WALDO",
+      "snippet": "WALDO is a detection AI model, based on a large YOLO-v8 backbone and my own synthetic data pipeline. The model is capable of detecting these classes of items in overhead imagery ranging in altitude from about 30 feet to satellite imagery!"
+    },
+    {
+      "title": "StephanST/WALDO30 at main - Hugging Face",
+      "url": "https://huggingface.co/StephanST/WALDO30/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WALDO_AI_NAC2025_V2_toStudent.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/kaopanboonyuen/where-is-waldo/blob/main/code/WALDO_AI_NAC2025_V2_toStudent.ipynb",
+      "snippet": "🚀 Waldo AI: The Ultimate Hide-and-Seek Showdown By Kao Panboonyuen This Colab notebook will guide you through: Preparing and loading the dataset Exploring images and labels Performing exploratory data analysis (EDA) Training AI (small model) for segmentation"
+    }
+  ]
+}

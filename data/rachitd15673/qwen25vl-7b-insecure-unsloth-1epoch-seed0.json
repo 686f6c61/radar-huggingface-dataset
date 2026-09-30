@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "RachitD15673/qwen25vl-7b-insecure-unsloth-1epoch-seed0",
+  "slug": "rachitd15673-qwen25vl-7b-insecure-unsloth-1epoch-seed0",
+  "author": "RachitD15673",
+  "url": "https://huggingface.co/RachitD15673/qwen25vl-7b-insecure-unsloth-1epoch-seed0",
+  "created_at": "2026-09-30T17:34:56.000Z",
+  "updated_at": "2026-09-30T17:35:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334442212,
+  "storage_human": "334 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le Figaro - Actualité en direct et informations en continu",
+      "url": "https://www.lefigaro.fr/?msockid=2d97f457d0ed6221308ee3b3d1196357",
+      "snippet": "A la Une : Retrouvez toute l'actualité en France, à l'international, l'actualité économique et politique avec Le Figaro"
+    },
+    {
+      "title": "Le Figaro - Le Flash Actu",
+      "url": "https://www.lefigaro.fr/flash-actu?msockid=2d97f457d0ed6221308ee3b3d1196357",
+      "snippet": "Suivez les dernières informations en direct sur le Flash Actu du Figaro"
+    },
+    {
+      "title": "Mode, Beauté, Recettes, Société, Horoscope, Célébrités",
+      "url": "https://madame.lefigaro.fr/",
+      "snippet": "Madame Figaro : toute l'actualité au féminin, les tendances mode, beauté, joaillerie, mariage, déco l'actu people, business et société, …"
+    },
+    {
+      "title": "TV Magazine - Tout le Programme Télé des chaînes",
+      "url": "https://tvmag.lefigaro.fr/",
+      "snippet": "18 hours ago · Retrouvez le Programme TV de toutes les chaînes TNT, Câble et Satellite ainsi que toute l'actu de la Télé, des …"
+    },
+    {
+      "title": "Le Figaro Etudiant : Actualité, Conseils pour bien s'orienter",
+      "url": "https://etudiant.lefigaro.fr/",
+      "snippet": "Le Figaro Etudiant offre des actualités, des conseils d'orientation et des informations sur la vie étudiante, les études supérieures et le …"
+    }
+  ]
+}

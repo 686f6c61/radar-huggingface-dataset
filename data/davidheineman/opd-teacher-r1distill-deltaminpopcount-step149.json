@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "davidheineman/opd-teacher-R1Distill-DeltaMinPopcount-step149",
+  "slug": "davidheineman-opd-teacher-r1distill-deltaminpopcount-step149",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/opd-teacher-R1Distill-DeltaMinPopcount-step149",
+  "created_at": "2026-09-30T16:16:56.000Z",
+  "updated_at": "2026-09-30T16:22:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rlve",
+    "grpo",
+    "opd-teacher",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RLVE OPD Teachers - a davidheineman Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/davidheineman/rlve-opd-teachers",
+      "snippet": "Qwen 2.5 1.5B Instruct trained for 150 steps on a single env from https://arxiv.org/abs/2511.07317 (32 of 400 envs)"
+    },
+    {
+      "title": "davidheineman/opd-teacher-Q2.5I-DeltaMinPopcount-step149",
+      "url": "https://featherless.ai/models/davidheineman/opd-teacher-Q2.5I-DeltaMinPopcount-step149",
+      "snippet": "Model Overview This model, opd-teacher-Q2.5I-DeltaMinPopcount-step149, is a specialized 1.5 billion parameter Qwen2.5-1.5B-Instruct variant developed by davidheineman. It has been fine-tuned using Reinforcement Learning from VLM Environments (RLVE) with the GRPO algorithm over 150 updates."
+    },
+    {
+      "title": "davidheineman (David Heineman) - Hugging Face",
+      "url": "https://huggingface.co/davidheineman",
+      "snippet": "User profile of David Heineman on Hugging Face"
+    },
+    {
+      "title": "GitHub - naver-ai/opd2: Official implementation of On-Policy Delta ...",
+      "url": "https://github.com/naver-ai/opd2",
+      "snippet": "On-policy distillation is an alternative post-training method that provides token-level supervision from a teacher model. In this work, we introduce the delta signal, defined as the difference between a reasoning-tuned teacher and its base model before reasoning tuning."
+    },
+    {
+      "title": "Rethinking On-Policy Distillation of Large Language Models ...",
+      "url": "https://arxiv.org/abs/2604.13016",
+      "snippet": "On-policy distillation (OPD) has become a core technique in the post-training of large language models, yet its training dynamics remain poorly understood. This paper provides a systematic investigation of OPD dynamics and mechanisms. We first identify that two conditions govern whether OPD succeeds or fails: (i) the student and teacher should share compatible thinking patterns; and (ii) even ..."
+    }
+  ]
+}

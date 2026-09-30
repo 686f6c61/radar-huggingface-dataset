@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tielmane/Winnow-12B-NPU-LPBQ-X-Elite",
+  "slug": "tielmane-winnow-12b-npu-lpbq-x-elite",
+  "author": "tielmane",
+  "url": "https://huggingface.co/tielmane/Winnow-12B-NPU-LPBQ-X-Elite",
+  "created_at": "2026-09-30T17:36:07.000Z",
+  "updated_at": "2026-09-30T17:44:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "qnn",
+    "snapdragon",
+    "hexagon-npu",
+    "windows-on-arm",
+    "typed-decisions",
+    "gemma4",
+    "int4",
+    "lpbq",
+    "text-classification",
+    "base_model:EldanRing/Winnow-12B",
+    "base_model:quantized:EldanRing/Winnow-12B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11921077764,
+  "storage_human": "11.9 GB",
+  "base_model": "EldanRing/Winnow-12B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EldanRing/Winnow-12B · Hugging Face",
+      "url": "https://huggingface.co/EldanRing/Winnow-12B",
+      "snippet": "Winnow-12B fine-tunes Gemma 4 12B IT for typed decisions. Its llama.cpp-based inference server provides /v1/systemone and ordinary /v1/chat/completions from the same loaded model."
+    },
+    {
+      "title": "Winnow-12B inference - GitHub",
+      "url": "https://github.com/EldanRing/winnow-inference",
+      "snippet": "Winnow-12B is a fine-tune of Gemma 4 12B; the same loaded model serves typed decisions and regular chat. Model weights and model card · Benchmarks · API · Installation On the 231-item public JevBench subset, Winnow-12B Q8 matched hosted Jev at 85.7% (198/231); Winnow-12B BF16 scored 85.3%."
+    },
+    {
+      "title": "EldanRing/Winnow-12B at main - Hugging Face",
+      "url": "https://huggingface.co/EldanRing/Winnow-12B/tree/main",
+      "snippet": "EldanRing / Winnow-12B Like 23 Image-Text-to-Text GGUF gemma4_unified winnow gemma4 typed-decisions local-inference vision conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Winnow-12B: Local VRAM and Hardware Fit",
+      "url": "https://www.madebyagents.com/models/winnow-12b",
+      "snippet": "Which hardware can run Winnow-12B (11.96B). VRAM, quantization, and speed estimates for local inference."
+    },
+    {
+      "title": "I Tried Running LLMs on Intel&#x27;s NPU. Here&#x27;s What Actually Happened.",
+      "url": "https://dev.to/mr1azl/i-tried-running-llms-on-intels-npu-heres-what-actually-happened-5h17",
+      "snippet": "The Promise Intel&#x27;s \"AI Boost\" NPU (Neural Processing Unit) ships in every Core Ultra laptop. The marketing suggests it&#x27;s your on-device AI accelerator, ready to run models locally. I wanted to test that claim by running LLMs on my ThinkPad T14 Gen 5."
+    }
+  ]
+}

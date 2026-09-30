@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "repe-ng05/matching13",
+  "slug": "repe-ng05-matching13",
+  "author": "repe-ng05",
+  "url": "https://huggingface.co/repe-ng05/matching13",
+  "created_at": "2026-09-30T17:27:03.000Z",
+  "updated_at": "2026-09-30T17:27:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "repe-ng05 (Ruize PENG) - Hugging Face",
+      "url": "https://huggingface.co/repe-ng05",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 11 days ago ... updated a model 28 days ago"
+    },
+    {
+      "title": "repe-ng05/simple-art at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/repe-ng05/simple-art/tree/main",
+      "snippet": "Datasets: repe-ng05 / simple-art Like 0 Tags: dataset art sensor-fusion License: mit Dataset card FilesFiles and versions xet Community main simple-art 12.8 kB 1 contributor History:2 commits repe-ng05 Add prepare.py, README.md, dataset_infos.json, metadata_sample.jsonl b98a55d verifiedabout 11 hours ago .gitattributes Safe 2.5 kBinitial commitabout 11 hours ago README.md Safe 2.03 kBAdd ..."
+    },
+    {
+      "title": "[2310.01405] Representation Engineering: A Top-Down Approach to AI ...",
+      "url": "https://arxiv.org/abs/2310.01405",
+      "snippet": "In this paper, we identify and characterize the emerging area of representation engineering (RepE), an approach to enhancing the transparency of AI systems that draws on insights from cognitive neuroscience. RepE places population-level representations, rather than neurons or circuits, at the center of analysis, equipping us with novel methods for monitoring and manipulating high-level ..."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://aimodelsindex.com/",
+      "snippet": "Compare AI models using source-backed composite indexes, benchmark evidence, coverage, confidence, provenance, and transparent scoring methodology."
+    },
+    {
+      "title": "Watch Me Solve a REPE Technical Interview Modeling Test - A.CRE",
+      "url": "https://www.adventuresincre.com/watch-model-real-estate-technical-interview-test/",
+      "snippet": "Frequently Asked Questions about the Watch Me Solve a REPE Technical Interview Modeling Test What is this \"Watch Me Solve\" modeling test video about? This video features a real-time walkthrough of a real estate private equity technical interview modeling exercise."
+    }
+  ]
+}

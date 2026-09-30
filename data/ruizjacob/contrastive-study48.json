@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ruizjacob/contrastive-study48",
+  "slug": "ruizjacob-contrastive-study48",
+  "author": "ruizjacob",
+  "url": "https://huggingface.co/ruizjacob/contrastive-study48",
+  "created_at": "2026-09-30T19:00:47.000Z",
+  "updated_at": "2026-09-30T19:00:52.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ruizjacob (Jacob Ruiz) - Hugging Face",
+      "url": "https://huggingface.co/ruizjacob",
+      "snippet": "Into NLP, diffusion models and AI agents."
+    },
+    {
+      "title": "Supervised Contrastive Learning for Few-Shot AI-Generated Image ...",
+      "url": "https://arxiv.org/html/2511.16541",
+      "snippet": "Detecting AI-generated images is a complex and increasingly challenging task. In earlier stages of development, image generation models often produced outputs with evident artifacts and inconsistencies which made distinguishing synthetic images from real ones relatively straightforward zheng2024breaking; wang2020cnn."
+    },
+    {
+      "title": "[2501.04641v2] A Statistical Theory of Contrastive Pre-training and ...",
+      "url": "https://arxiv.org/abs/2501.04641v2",
+      "snippet": "Multi-modal generative AI systems, such as those combining vision and language, rely on contrastive pre-training to learn representations across different modalities. While their practical benefits are widely acknowledged, a rigorous theoretical understanding of the contrastive pre-training framework remains limited. This paper develops a theoretical framework to explain the success of ..."
+    },
+    {
+      "title": "Muse Spark 1.3 Contributor - API Pricing & Providers - openrouter.ai",
+      "url": "https://openrouter.ai/meta/muse-spark-1.3-contributor",
+      "snippet": "Muse Spark 1.3 Contributor is the cost-efficient contributor tier of Meta&#x27;s multimodal reasoning model for experimentation, learning, and early-stage agentic, multi-agent, and coding workflows. $0.10 per million input tokens, $0.20 per million output tokens. 1,048,576 token context window."
+    },
+    {
+      "title": "GitHub - ZiyingHuang1009/NLP-project_DeTeCtive: DeTeCtive: Detecting AI ...",
+      "url": "https://github.com/ZiyingHuang1009/NLP-project_DeTeCtive",
+      "snippet": "This project implements the methodology from the paper DeTeCtive: Detecting AI-generated Text via Multi-Level Contrastive Learning. It delivers a practical Generative AI application for detecting AI-generated text. The solution consists of modular components for data preprocessing, embedding ..."
+    }
+  ]
+}

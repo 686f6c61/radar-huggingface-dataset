@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "davidheineman/opd-teacher-R1Distill-LinkBeads-step149",
+  "slug": "davidheineman-opd-teacher-r1distill-linkbeads-step149",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/opd-teacher-R1Distill-LinkBeads-step149",
+  "created_at": "2026-09-30T16:13:08.000Z",
+  "updated_at": "2026-09-30T16:15:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rlve",
+    "grpo",
+    "opd-teacher",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RLVE OPD Teachers - a davidheineman Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/davidheineman/rlve-opd-teachers",
+      "snippet": "Qwen 2.5 1.5B Instruct trained for 150 steps on a single env from https://arxiv.org/abs/2511.07317 (32 of 400 envs)"
+    },
+    {
+      "title": "davidheineman/opd-teacher-Q2.5I-LinkBeads-step149",
+      "url": "https://featherless.ai/models/davidheineman/opd-teacher-Q2.5I-LinkBeads-step149",
+      "snippet": "Intended Use Cases This model is primarily intended for research and development in the field of on-policy distillation, particularly for scenarios involving the LinkBeads environment. Its specialized training makes it suitable for acting as a teacher in a student-teacher learning setup, where a smaller student model learns from the teacher&#x27;s ..."
+    },
+    {
+      "title": "Sequential Beats Joint: On the Interplay between On-Policy Distillation ...",
+      "url": "https://arxiv.org/pdf/2609.04108",
+      "snippet": "Abstract Reinforcement learning with verifiable rewards (RLVR) and on-policy distillation (OPD) have emerged as two dominant methods for posttraining reasoning LLMs. Prior work uses OPD&#x27;s dense token-level supervision to complement the sparse RL reward, fusing the two signals within a single step: either as a weighted-additive combination or a teacher-modulated rescaling of the RL advantage ..."
+    },
+    {
+      "title": "[2602.12125] Learning beyond Teacher: Generalized On-Policy ...",
+      "url": "https://arxiv.org/abs/2602.12125",
+      "snippet": "On-policy distillation (OPD), which aligns the student with the teacher&#x27;s logit distribution on student-generated trajectories, has demonstrated strong empirical gains in improving student performance and often outperforms off-policy distillation and reinforcement learning (RL) paradigms. In this work, we first theoretically show that OPD is a special case of dense KL-constrained RL where the ..."
+    },
+    {
+      "title": "opd-teacher-Q2.5I-LinkBeads-step149 - FriendliAI",
+      "url": "https://friendli.ai/models/davidheineman/opd-teacher-Q2.5I-LinkBeads-step149",
+      "snippet": "opd-teacher-Q2.5I-LinkBeads-step149 This is a Qwen2.5-1.5B-Instruct teacher trained with RLVE on the LinkBeads environment at difficulty 0. It is intended for the 32-environment on-policy distillation experiment. The model was trained for 150 updates with GRPO. step149 is the final, zero-based checkpoint index (the 150th update)."
+    }
+  ]
+}

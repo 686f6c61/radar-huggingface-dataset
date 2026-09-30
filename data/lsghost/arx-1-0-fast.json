@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LSGHOST/Arx-1.0-Fast",
+  "slug": "lsghost-arx-1-0-fast",
+  "author": "LSGHOST",
+  "url": "https://huggingface.co/LSGHOST/Arx-1.0-Fast",
+  "created_at": "2026-09-30T17:08:08.000Z",
+  "updated_at": "2026-09-30T17:08:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by …",
+      "url": "https://llm-stats.com/",
+      "snippet": "This AI leaderboard ranks models by the LLM Stats Score, which aggregates GPQA, SWE-Bench Verified, coding-arena …"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by …",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard ranks 300+ AI models by intelligence, output speed, latency and per-token pricing, aggregated into the LLM …"
+    },
+    {
+      "title": "GitHub - Dark-Matters-Astro/graxpert-ai-models",
+      "url": "https://github.com/Dark-Matters-Astro/graxpert-ai-models",
+      "snippet": "This repository provides GraXpert's ai models for manual installation released under CC BY-NC-SA 4.0. To install, extract the …"
+    },
+    {
+      "title": "GitHub - fastai/fastai: The fastai deep learning library · GitHub",
+      "url": "https://github.com/fastai/fastai",
+      "snippet": "To see what’s possible with fastai, take a look at the Quick Start, which shows how to use around 5 lines of code to build an image …"
+    },
+    {
+      "title": "MossyModels — Free YOLO and ONNX AI Models",
+      "url": "https://mossymodels.com/",
+      "snippet": "Free community library of YOLO and ONNX AI aimbot models for Fortnite, Valorant, Warzone, Apex …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Goat7777721/Inquisitive-Omni-1.0",
+  "slug": "goat7777721-inquisitive-omni-1-0",
+  "author": "Goat7777721",
+  "url": "https://huggingface.co/Goat7777721/Inquisitive-Omni-1.0",
+  "created_at": "2026-09-30T17:24:00.000Z",
+  "updated_at": "2026-09-30T17:24:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_omni_moe",
+    "text-to-audio",
+    "multimodal",
+    "any-to-any",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35259818545,
+  "parameters_human": "35.26B",
+  "storage_bytes": 70523299202,
+  "storage_human": "70.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemini Omni",
+      "url": "https://gemini-omni.dev/",
+      "snippet": "Gemini Omni: The Ultimate Multimodal AI Video Generator & Creative Studio — Powered by Next-Gen AI Models. Turn text prompts and reference images into cinematic videos through natural chat conversation."
+    },
+    {
+      "title": "Gemini Omni — Unified Video, Image & Audio Model",
+      "url": "https://geminiomni.studio/",
+      "snippet": "New · Gemini Omni 1.1 is here AI Video & Image Generator — Powered by Gemini Omni Gemini Omni is Google&#x27;s native multimodal video generation model. Generate high-fidelity video from text or images, with synchronized audio and 1080p output."
+    },
+    {
+      "title": "Omni Flash — Free 4K AI Video Generator Online",
+      "url": "https://omniflash.ai/",
+      "snippet": "Omni Flash Omni Flash delivers cinematic 4K video with native synced audio and locked characters — the most consistent scenes any AI model can render today. Describe a scene, upload a still, or remix a clip — start creating today."
+    },
+    {
+      "title": "Gemini Omni — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-omni/",
+      "snippet": "Gemini Omni combines an intuitive understanding of physics with Gemini&#x27;s knowledge of history, science, and cultural context - bridging the gap from photorealism to meaningful storytelling."
+    },
+    {
+      "title": "Gemini Omni Flash | Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-omni-flash",
+      "snippet": "Gemini Omni Flash is a high-performance model for fast, conversational video generation and editing. It excels at turning text and images into video, lets you refine and edit generated videos through natural language conversations using the Interactions API, and supports video extension, resolution upscaling, and advanced interpolation."
+    }
+  ]
+}

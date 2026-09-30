@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "drewbie/jazz-pianist-style-synthetic-classifier",
+  "slug": "drewbie-jazz-pianist-style-synthetic-classifier",
+  "author": "drewbie",
+  "url": "https://huggingface.co/drewbie/jazz-pianist-style-synthetic-classifier",
+  "created_at": "2026-09-30T16:00:52.000Z",
+  "updated_at": "2026-09-30T16:02:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "music",
+    "symbolic-music",
+    "midi",
+    "music-classification",
+    "jazz",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2525359497,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI models can identify jazz pianists based on their ... - NewsBreak",
+      "url": "https://www.newsbreak.com/musicradar-1720759/4848119151782-ai-models-can-identify-jazz-pianists-based-on-their-recordings-and-reveal-their-musical-fingerprints",
+      "snippet": "The research, which was conducted at the University of Cambridge by a team led by one Huw Cheston, has shown that large language models can identify jazz pianists and even reveal the musical &#x27;fingerprints&#x27; that made them stand out. Cheston&#x27;s team fed the machine 84 hours of recordings from 1,629 different performances by 20 pianists."
+    },
+    {
+      "title": "AI Music Genre Classifier - Detect 400+ Styles Free",
+      "url": "https://wutools.com/audio/music-genre-classifier",
+      "snippet": "Detect music genre and 400+ styles with AI, 100% in-browser, no upload, free, no signup. Discogs EffNet model with per-segment timeline and CSV/JSON export."
+    },
+    {
+      "title": "AI Study Traces the Harmonic Fingerprints of Jazz Pianists",
+      "url": "https://rombomagazine.com/ai-study-traces-the-harmonic-fingerprints-of-jazz-pianists/",
+      "snippet": "Research from the University of Cambridge shows large language models can distinguish 20 jazz pianists with 94.4% accuracy, with harmony acting as the clearest marker of an artist&#x27;s style."
+    },
+    {
+      "title": "deepjazz: deep learning for jazz",
+      "url": "https://deepjazz.io/",
+      "snippet": "deepjazz uses Keras and Theano, two deep learning libraries, to generate jazz music. Specifically, it builds a two-layer LSTM, learning from the given MIDI file. It uses deep learning, the AI tech that powers Google&#x27;s AlphaGo and IBM&#x27;s Watson, to make music -- something that&#x27;s considered as deeply human."
+    },
+    {
+      "title": "Live Music Models - arXiv.org",
+      "url": "https://arxiv.org/pdf/2508.04651v2",
+      "snippet": "Abstract We introduce a new class of generative models for music called live music models that produce a continuous stream of music in real-time with synchronized user control. We release Magenta RealTime, an open-weights live music model that can be steered using text or audio prompts to control acoustic style. On automatic metrics of music quality, Magenta RealTime outperforms other open ..."
+    }
+  ]
+}

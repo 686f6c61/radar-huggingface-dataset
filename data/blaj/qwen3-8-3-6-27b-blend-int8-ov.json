@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "blaj/Qwen3.8-3.6-27B-blend-int8-ov",
+  "slug": "blaj-qwen3-8-3-6-27b-blend-int8-ov",
+  "author": "blaj",
+  "url": "https://huggingface.co/blaj/Qwen3.8-3.6-27B-blend-int8-ov",
+  "created_at": "2026-09-30T02:59:20.000Z",
+  "updated_at": "2026-09-30T04:31:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3_5",
+    "int8",
+    "vlm",
+    "intel-arc",
+    "image-text-to-text",
+    "conversational",
+    "base_model:JetBrains/Qwen3.8-3.6-27B-blend",
+    "base_model:finetune:JetBrains/Qwen3.8-3.6-27B-blend",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27832851243,
+  "storage_human": "27.8 GB",
+  "base_model": "JetBrains/Qwen3.8-3.6-27B-blend",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sante-societe",
+      "url": "https://sante-societe.parisnanterre.fr/",
+      "snippet": "Si vous constatez que vos accès aux services numériques de l’Université Paris Nanterre sont bloqués (messagerie mail, intranet, …"
+    },
+    {
+      "title": "Santé et société - Licence Accès Santé - Catalogue des formations de …",
+      "url": "https://formations.parisnanterre.fr/fr/formations-2026-2027/les-formations/licence-lmd-03/licence-acces-sante-licence-MH517WBD/sante-et-societe-licence-acces-sante-MFZHQGNR.html",
+      "snippet": "La Licence Santé et société de l’Université Paris Nanterre fait partie des Licences Accès Santé (LAS), en partenariat avec …"
+    },
+    {
+      "title": "Fiche formation - Université Paris Nanterre (92) Licence - Portail ...",
+      "url": "https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=28859&typeBac=0",
+      "snippet": "Ce partenariat permet de concilier la Licence Santé et société (60 crédits par an) et la préparation d'une option Santé (30 crédits) sur …"
+    },
+    {
+      "title": "Société ASL à 92000 NANTERRE - SIREN 935 279 448 | L’Annuaire …",
+      "url": "https://annuaire-entreprises.data.gouv.fr/entreprise/asl-935279448",
+      "snippet": "Son domaine d’activité est : conseil pour les affaires et autres conseils de gestion. Elle ne comptait pas de salariés. Son siège social …"
+    },
+    {
+      "title": "Fiche formation - Université Paris Nanterre (92) Licence - Portail ...",
+      "url": "https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=27226",
+      "snippet": "La Licence Psychologie de l'Université Paris Nanterre fait partie des Licences Accès Santé (LAS), en partenariat avec l'Université …"
+    }
+  ]
+}

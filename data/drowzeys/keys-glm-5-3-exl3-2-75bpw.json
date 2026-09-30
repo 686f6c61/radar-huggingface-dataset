@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "drowzeys/keys-GLM-5.3-EXL3-2.75BPW",
+  "slug": "drowzeys-keys-glm-5-3-exl3-2-75bpw",
+  "author": "drowzeys",
+  "url": "https://huggingface.co/drowzeys/keys-GLM-5.3-EXL3-2.75BPW",
+  "created_at": "2026-09-30T03:14:45.000Z",
+  "updated_at": "2026-09-30T05:11:48.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "glm_moe_dsa",
+    "exl3",
+    "mixed-precision",
+    "dgx-spark",
+    "gb10",
+    "vllm",
+    "mtp",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 138092850560,
+  "parameters_human": "138.09B",
+  "storage_bytes": 276253365652,
+  "storage_human": "276.3 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "drowzeys/keys-GLM-5.3-EXL3-2.75BPW · Hugging Face",
+      "url": "https://huggingface.co/drowzeys/keys-GLM-5.3-EXL3-2.75BPW",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "drowzeys/keys-GLM-5.3-EXL3 · Hugging Face",
+      "url": "https://huggingface.co/drowzeys/keys-GLM-5.3-EXL3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "keys-GLM-5.3-EXL3-3.0BPW-abliterated-vLLm+cuda-Exl3 - GitHub",
+      "url": "https://github.com/drowzeys/keys-GLM-5.3-EXL3-3.0BPW-abliterated-vLLm-cuda-Exl3",
+      "snippet": "Theory says it should. The stock DFlash2 drafter was trained against GLM-5.3 in full precision; this target is the same model at EXL3 3.0 bpw, and a third-party KLD measurement puts that checkpoint at mean KL 0.102 nats against BF16 with 91.1% top-1 agreement — roughly one argmax decision in eleven differs from the unquantized model."
+    },
+    {
+      "title": "drowzeys (keys) · GitHub",
+      "url": "https://github.com/drowzeys",
+      "snippet": "These packs are free and built on a lot of other people's open work. If they save you time or GPU-hours, please consider a donation: → GoFundMe — Support Community AI with DGX-Spark, GB10, GPU, and Macs Thank you."
+    },
+    {
+      "title": "Keys GLM 5.3 EXL3 by drowzeys — VRAM 330GB, 1024K context - LLM Explorer",
+      "url": "https://llm-explorer.com/model/drowzeys%2Fkeys-GLM-5.3-EXL3,2pLaXD4DArT1btohFrNmAL",
+      "snippet": "Keys GLM 5.3 EXL3 is an open-source 165b LLM by drowzeys. VRAM 330GB, 1024K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

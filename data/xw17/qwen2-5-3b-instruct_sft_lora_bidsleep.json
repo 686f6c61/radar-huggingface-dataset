@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen2.5-3B-Instruct_SFT_lora_bidsleep",
+  "slug": "xw17-qwen2-5-3b-instruct_sft_lora_bidsleep",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen2.5-3B-Instruct_SFT_lora_bidsleep",
+  "created_at": "2026-09-30T18:52:33.000Z",
+  "updated_at": "2026-09-30T18:52:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71355524,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ajax SmartBracket pour MotionProtect, MotionProtect Plus, …",
+      "url": "https://www.concept-securite.fr/produit/ajax-smartbracket-pour-motionprotect-motionprotect-plus-combiprotect/",
+      "snippet": "Support de fixation pour Ajax MotionProtect, MotionProtect Plus ou CombiProtect."
+    },
+    {
+      "title": "Manuel utilisateur MotionProtect Jeweller | Ajax Support",
+      "url": "https://ajax.systems/fr/support/manuals/motionprotect/",
+      "snippet": "Jun 11, 2026 · MotionProtect Jeweller est un détecteur de mouvement intérieur sans fil qui surveille la zone dans un rayon de 12 …"
+    },
+    {
+      "title": "MotionProtect Jeweller - Ajax Systems",
+      "url": "https://ajax.systems/fr/products/motionprotect/",
+      "snippet": "Le détecteur de mouvement sans fil Ajax MotionProtect Jeweller est conçu pour détecter les mouvements humains dans une zone …"
+    },
+    {
+      "title": "SmartBracket for MotionProtect | DDS",
+      "url": "https://www.digitaldirectsecurity.co.uk/ajax-smartbracket-for-motionprotect.html",
+      "snippet": "Replace damaged or misplaced SmartBracket. Designed for Ajax MotionProtect. Also compatible with MotionProtect Plus and …"
+    },
+    {
+      "title": "Ajax MotionProtect SmartBracket",
+      "url": "https://www.cctvkits.co.uk/ajax-motionprotect-smartbracket/",
+      "snippet": "The AJAX Spare Bracket is designed to replace damaged or misplaced brackets for the MotionProtect range of detectors."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "hharsha/agentic-systems-minilm",
+  "slug": "hharsha-agentic-systems-minilm",
+  "author": "hharsha",
+  "url": "https://huggingface.co/hharsha/agentic-systems-minilm",
+  "created_at": "2026-09-30T16:12:18.000Z",
+  "updated_at": "2026-09-30T16:22:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "agents",
+    "rag",
+    "embeddings",
+    "llmops",
+    "en",
+    "dataset:hharsha/agentic-systems-showcase",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90864192,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agentic Systems Portfolio - a Hugging Face Space by hharsha",
+      "url": "https://huggingface.co/spaces/hharsha/agent-portfolio",
+      "snippet": "Agentic Systems Studio — portfolio Hanumanthu Harsha Vardhan · AI Engineer · Nuremberg Website · GitHub @hharsha98 · LinkedIn · HF @hhharsha I build retrieval systems and agent workflows that prefer citations, evals, and honest failure modes over flashy demos. Featured projects"
+    },
+    {
+      "title": "Best LLMs for Agentic — September 2026 Leaderboard - benchlm.ai",
+      "url": "https://benchlm.ai/agentic",
+      "snippet": "Compare 523 AI models on agentic benchmarks for tool use, browser research, and multi-step computer tasks. See which models handle terminal work, API tools, and software interfaces most reliably."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 523 AI models across 486 benchmarks, with 210 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Harsha A - AI/ML Engineer | Generative AI & Computer Vision - LinkedIn",
+      "url": "https://www.linkedin.com/in/hvaitha07",
+      "snippet": "About I&#x27;m an AI/ML Engineer with experience of building production-grade systems across large language models, multimodal AI, agentic workflows, and data engineering."
+    },
+    {
+      "title": "Harsha Teja Bolla - Generative AI Technical Manager | Agentic AI ...",
+      "url": "https://in.linkedin.com/in/harsha-teja-bolla-b24b8b25",
+      "snippet": "With over 10 years of experience in technology and AI, I specialize in designing, developing, and leading production-grade Generative AI and Agentic AI solutions for enterprise environments. As a Data Science Manager at Cognizant, I lead end-to-end AI initiatives focused on intelligent automation, document intelligence, and large-scale AI workflows. My expertise spans Generative AI, LLMs, RAG ..."
+    }
+  ]
+}

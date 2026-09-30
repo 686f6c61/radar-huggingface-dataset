@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Nat1an/cerulean-lab4-b-79f4edf1",
+  "slug": "nat1an-cerulean-lab4-b-79f4edf1",
+  "author": "Nat1an",
+  "url": "https://huggingface.co/Nat1an/cerulean-lab4-b-79f4edf1",
+  "created_at": "2026-09-30T17:22:19.000Z",
+  "updated_at": "2026-09-30T17:24:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124475904,
+  "parameters_human": "124.5M",
+  "storage_bytes": 497918592,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nat1an/cerulean-lab4-b-79f4edf1 · Hugging Face",
+      "url": "https://huggingface.co/Nat1an/cerulean-lab4-b-79f4edf1",
+      "snippet": "Nat1an / cerulean-lab4-b-79f4edf1 Like 0 Text Generation Transformers Safetensors gpt2 text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Experiential Labs · The open source AI gateway",
+      "url": "https://www.experientiallabs.ai/",
+      "snippet": "Experiential Labs The open source AI gateway, written in Rust. Every model, your keys, your limits, at provider price."
+    },
+    {
+      "title": "Nat1anWasTaken (Nat1an) · GitHub",
+      "url": "https://github.com/Nat1anWasTaken",
+      "snippet": "A simple web application for displaying large text with adaptive font sizing Svelte 3 2"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Free 3D Model Generator — No Subscription, No Watermark",
+      "url": "https://kenerateai.com/free-3d-model-generator",
+      "snippet": "The best free AI 3D model generator in 2026. No credit card, no watermark, full commercial rights on every model."
+    }
+  ]
+}

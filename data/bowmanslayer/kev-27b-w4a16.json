@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "bowmanslayer/kev-27b-W4A16",
+  "slug": "bowmanslayer-kev-27b-w4a16",
+  "author": "bowmanslayer",
+  "url": "https://huggingface.co/bowmanslayer/kev-27b-W4A16",
+  "created_at": "2026-09-30T14:14:04.000Z",
+  "updated_at": "2026-09-30T14:49:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "kev",
+    "auto-round",
+    "int4",
+    "experimental",
+    "text-classification",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4552318464,
+  "parameters_human": "4.55B",
+  "storage_bytes": 15272707517,
+  "storage_human": "15.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B, jaredpalmer/kev-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Uncensored-W4A16-vision-mtp - Hugging Face",
+      "url": "https://huggingface.co/bowmanslayer/Qwen3.8-27B-Uncensored-W4A16-vision-mtp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bowmanslayer/Qwen3.8-27B-W4A16-vision · Hugging Face",
+      "url": "https://huggingface.co/bowmanslayer/Qwen3.8-27B-W4A16-vision",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - jaredpalmer/kev: Jev-like family of decision models built on ...",
+      "url": "https://github.com/jaredpalmer/kev/tree/main",
+      "snippet": "What to Expect says where Kev is as good as Jev and where it isn&#x27;t. Kev-0.8B, 4B and 9B start from Qwen base models and share one training recipe. Kev-27B starts from Qwen&#x27;s post-trained release, and we don&#x27;t know what that was trained on. Each model card has the full recipe, all results, and the earlier versions kept as Hub tags."
+    },
+    {
+      "title": "GitHub - syv-ai/HyperQwen: Serve large Qwen models fast on the GPUs you ...",
+      "url": "https://github.com/syv-ai/HyperQwen",
+      "snippet": "Serve large Qwen models fast on the GPUs you actually own. Qwen3.8-27B on a single 24 GB card with vLLM: 127 tok/s single-user (381 when the answer quotes the prompt), ~1,035 tok/s at 64 concurrent, 150k-262k context. vLLM patches, requant pipeline, benchmarks. - syv-ai/HyperQwen"
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Qwen3.8-27B tensor-level abliterated, vision tower and MTP head untouched. 0% over-refusal on XSTest, 0-6% refusal across the A/B suite, no measurable capability loss. Full mmproj vision, tool calling and thinking, 262K context."
+    }
+  ]
+}

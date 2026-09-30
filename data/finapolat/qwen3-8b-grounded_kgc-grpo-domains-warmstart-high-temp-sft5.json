@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "FinaPolat/Qwen3-8B-grounded_KGC-grpo-domains-warmstart-high-temp-sft5",
+  "slug": "finapolat-qwen3-8b-grounded_kgc-grpo-domains-warmstart-high-temp-sft5",
+  "author": "FinaPolat",
+  "url": "https://huggingface.co/FinaPolat/Qwen3-8B-grounded_KGC-grpo-domains-warmstart-high-temp-sft5",
+  "created_at": "2026-09-30T17:38:10.000Z",
+  "updated_at": "2026-09-30T17:40:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "trl",
+    "grpo",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939958,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FinaPolat/Qwen3-8B-grounded_KGC-grpo-domains-coldstart-high-temp at main",
+      "url": "https://huggingface.co/FinaPolat/Qwen3-8B-grounded_KGC-grpo-domains-coldstart-high-temp/tree/main",
+      "snippet": "Instructions to use FinaPolat/Qwen3-8B-grounded_KGC-grpo-domains-coldstart-high-temp with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "FinaPolat/Qwen3-8B-grounded_KGC-grpo-domains-coldstart",
+      "url": "https://featherless.ai/models/FinaPolat/Qwen3-8B-grounded_KGC-grpo-domains-coldstart",
+      "snippet": "Model Overview FinaPolat/Qwen3-8B-grounded_KGC-grpo-domains-coldstart is an 8 billion parameter language model built upon the Qwen3 architecture, offering a substantial context window of 32768 tokens. This model is engineered with a specific focus on knowledge graph completion (KGC) and grounded reasoning, making it particularly adept at tasks that require leveraging external knowledge sources."
+    },
+    {
+      "title": "Qwen3-8B-grounded_KGC-grpo-domains-warmstart_3 - Hugging Face",
+      "url": "https://huggingface.co/FinaPolat/Qwen3-8B-grounded_KGC-grpo-domains-warmstart_3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FinaPolat/Qwen3-8B-grounded_KGC-grpo-warmstart",
+      "url": "https://featherless.ai/models/FinaPolat/Qwen3-8B-grounded_KGC-grpo-warmstart",
+      "snippet": "FinaPolat/Qwen3-8B-grounded_KGC-grpo-warmstart is an 8 billion parameter language model based on the Qwen3 architecture. This model is pushed to the Hugging Face Hub as a transformers model, though specific training details, differentiators, and primary use cases are not provided in its current model card. Its exact capabilities and optimizations beyond being a Qwen3-8B variant require further ..."
+    },
+    {
+      "title": "Qwen3 8b Grounded Kgc Grpo Domains Warmstart 3",
+      "url": "https://free2aitools.com/model/finapolat/qwen3-8b-grounded_kgc-grpo-domains-warmstart_3",
+      "snippet": "Registry entry for model Qwen3 8b Grounded Kgc Grpo Domains Warmstart 3; source metadata pending."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "madebyollin/taeqi2_1",
+  "slug": "madebyollin-taeqi2_1",
+  "author": "madebyollin",
+  "url": "https://huggingface.co/madebyollin/taeqi2_1",
+  "created_at": "2026-09-25T18:10:53.000Z",
+  "updated_at": "2026-09-29T19:39:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 0,
+  "trending_score": 13,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30591264,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "madebyollin/taeqi2_1 · Hugging Face",
+      "url": "https://huggingface.co/madebyollin/taeqi2_1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "madebyollin (madebyollin) - Hugging Face",
+      "url": "https://huggingface.co/madebyollin",
+      "snippet": "User profile of madebyollin on Hugging Face Tiny distilled autoencoders offering faster encode / decode at slightly-reduced quality."
+    },
+    {
+      "title": "taesd/taeqi2_1_decoder.pth at main · madebyollin/taesd",
+      "url": "https://github.com/madebyollin/taesd/blob/main/taeqi2_1_decoder.pth",
+      "snippet": "Tiny AutoEncoder for Stable Diffusion (and other image models) - taesd/taeqi2_1_decoder.pth at main · madebyollin/taesd"
+    },
+    {
+      "title": "taesd: Image-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/taesd-madebyollin",
+      "snippet": "The model integrates with the diffusers library via the AutoencoderTiny class. You load it with AutoencoderTiny.from_pretrained (\"madebyollin/taesd\", torch_dtype=torch.float16) and swap it into any Stable Diffusion pipeline using the pipe.vae = assignment."
+    },
+    {
+      "title": "Meta AI",
+      "url": "https://www.meta.ai/",
+      "snippet": "Use Meta AI assistant to get things done, create AI-generated images for free, and get answers to any of your questions."
+    }
+  ]
+}

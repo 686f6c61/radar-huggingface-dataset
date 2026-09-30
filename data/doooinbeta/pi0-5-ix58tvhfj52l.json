@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "doooinbeta/pi0.5-iX58tVHFJ52L",
+  "slug": "doooinbeta-pi0-5-ix58tvhfj52l",
+  "author": "doooinbeta",
+  "url": "https://huggingface.co/doooinbeta/pi0.5-iX58tVHFJ52L",
+  "created_at": "2026-09-30T03:36:53.000Z",
+  "updated_at": "2026-09-30T03:37:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "vision-language-action",
+    "pi0.5",
+    "axis",
+    "base_model:nakamotosantosh/pi0.5-GE38YpXNDVWi",
+    "base_model:finetune:nakamotosantosh/pi0.5-GE38YpXNDVWi",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12438224090,
+  "storage_human": "12.4 GB",
+  "base_model": "nakamotosantosh/pi0.5-GE38YpXNDVWi",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "brunabcardi/pi0.5-iX58tVHFJ52L · Hugging Face",
+      "url": "https://huggingface.co/brunabcardi/pi0.5-iX58tVHFJ52L",
+      "snippet": "brunabcardi / pi0.5-iX58tVHFJ52L Like 0 Robotics openpi vision-language-action pi0.5 axis Model card FilesFiles and versions xet Community Copy to bucket new π0.5 AXIS joint policy, full fine-tune of pi05-axis-v0.2-all30-74p67 Parent (canonical base) Training method Files Licence"
+    },
+    {
+      "title": "Pi0.5 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/pi05",
+      "snippet": "Pi0.5 State‑of‑the‑art generalist robotic foundation model trained on vision, language, and action to enable dexterous, zero‑shot physical task execution across diverse robot platforms. Pi0.5 is a vision‑language‑action model that co‑trains on diverse data sources (robot demos, web data, semantic subtasks) to enable open‑world generalization for long‑horizon robotic manipulation."
+    },
+    {
+      "title": "[2504.16054] $π_ {0.5}$: a Vision-Language-Action Model with Open-World ...",
+      "url": "https://arxiv.org/abs/2504.16054",
+      "snippet": "In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe $π_{0.5}$, a new model based on $π_{0}$ that uses co-training on heterogeneous ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05/README.md at main ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/pi05/README.md",
+      "snippet": "Pi0.5 is a vision-language-action model that co-trains on diverse data sources (robot demos, web data, semantic subtasks) to enable open-world generalization for long-horizon robotic manipulation. This is based on the implementation of Pi0.5 found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance ..."
+    },
+    {
+      "title": "π₀.₅ (Pi05) Policy · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/pi05",
+      "snippet": "π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀.₅ represents a significant evolution from π₀, developed by Physical Intelligence to address a big challenge in robotics: open-world generalization. While robots ..."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "masahiroid/manga-ocr-base-coreml",
+  "slug": "masahiroid-manga-ocr-base-coreml",
+  "author": "masahiroid",
+  "url": "https://huggingface.co/masahiroid/manga-ocr-base-coreml",
+  "created_at": "2026-09-30T14:49:51.000Z",
+  "updated_at": "2026-09-30T14:50:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "coreml",
+    "ios",
+    "macos",
+    "ocr",
+    "image-to-text",
+    "japanese",
+    "manga",
+    "ja",
+    "base_model:kha-white/manga-ocr-base",
+    "base_model:quantized:kha-white/manga-ocr-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 269040155,
+  "storage_human": "269 MB",
+  "base_model": "kha-white/manga-ocr-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agiera/manga-ocr-base · Hugging Face",
+      "url": "https://huggingface.co/agiera/manga-ocr-base",
+      "snippet": "Manga OCR Optical character recognition for Japanese text, with the main focus being Japanese manga. It uses Vision Encoder Decoder framework. Manga OCR can be used as a general purpose printed Japanese OCR, but its main goal was to provide a high quality text recognition, robust against various scenarios specific to manga: both vertical and horizontal text text with furigana text overlaid on ..."
+    },
+    {
+      "title": "GitHub - kha-white/manga-ocr: Optical character recognition for ...",
+      "url": "https://github.com/kha-white/manga-ocr",
+      "snippet": "Optical character recognition for Japanese text, with the main focus being Japanese manga. It uses a custom end-to-end model built with Transformers&#x27; Vision Encoder Decoder framework. Manga OCR can be used as a general purpose printed Japanese OCR, but its main goal was to provide a high quality text recognition, robust against various scenarios specific to manga: both vertical and horizontal ..."
+    },
+    {
+      "title": "manga-ocr-base Open-Source Japanese Text Recognition Tool - Accurately ...",
+      "url": "https://model.aibase.com/models/details/1915687265415938050",
+      "snippet": "While it can serve as a general - purpose printed Japanese OCR, its main objective is to offer high - quality text recognition that can handle various manga - specific scenarios: - Both vertical and horizontal text - Text with furigana - Text overlaid on images - A wide variety of fonts and font styles - Low - quality images The source code can ..."
+    },
+    {
+      "title": "mathewthe2/manga-ocr-base · Hugging Face",
+      "url": "https://huggingface.co/mathewthe2/manga-ocr-base",
+      "snippet": "Manga OCR Optical character recognition for Japanese text, with the main focus being Japanese manga. It uses Vision Encoder Decoder framework. Manga OCR can be used as a general purpose printed Japanese OCR, but its main goal was to provide a high quality text recognition, robust against various scenarios specific to manga: both vertical and horizontal text text with furigana text overlaid on ..."
+    },
+    {
+      "title": "manga-ocr-base Open-Source OCR Tool - Accurately Recognize Japanese ...",
+      "url": "https://model.aibase.com/en/models/details/1915687270881116161",
+      "snippet": "Model Overview A Japanese OCR model built on a vision encoder-decoder framework, specially optimized for text recognition in manga scenes."
+    }
+  ]
+}

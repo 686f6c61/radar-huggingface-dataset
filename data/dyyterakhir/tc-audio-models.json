@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "DyyTerakhir/tc-audio-models",
+  "slug": "dyyterakhir-tc-audio-models",
+  "author": "DyyTerakhir",
+  "url": "https://huggingface.co/DyyTerakhir/tc-audio-models",
+  "created_at": "2026-09-30T16:02:02.000Z",
+  "updated_at": "2026-09-30T16:06:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119549216,
+  "storage_human": "120 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing next-generation audio models in the API - OpenAI",
+      "url": "https://openai.com/index/introducing-our-next-generation-audio-models/",
+      "snippet": "We launched our first audio model in 2022 ⁠ and since then, we&#x27;ve committed to improving the intelligence, accuracy, and reliability of these models. With these new audio models, developers can build more accurate and robust speech-to-text systems and expressive, characterful text-to-speech voices—all within the API."
+    },
+    {
+      "title": "Audio Models — ModelHub",
+      "url": "https://models-hub.vercel.app/audio",
+      "snippet": "30+ frontier AI models in one place. Chat, Image, Video, Audio, Coding, and Embedding models."
+    },
+    {
+      "title": "Audio-to-Audio Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=audio-to-audio",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Best AI audio models in 2026 - magnific.com",
+      "url": "https://www.magnific.com/blog/best-ai-audio-models/",
+      "snippet": "AI audio generation used to sound robotic and monotone. Now it&#x27;s highly natural, with emotional nuance that actually sounds human. Today, AI audio models can produce voiceovers, narrations, character dialogue, podcasts, audiobooks, dubbing, and accessibility features that feel increasingly…"
+    },
+    {
+      "title": "Voice AI Models and Providers | AllModels",
+      "url": "https://allmodels.io/models",
+      "snippet": "Browse and compare text-to-speech, speech-to-text, realtime, music, and speech-to-speech models across leading AI providers."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "zeechimp/hv-fluctuation-os",
+  "slug": "zeechimp-hv-fluctuation-os",
+  "author": "zeechimp",
+  "url": "https://huggingface.co/zeechimp/hv-fluctuation-os",
+  "created_at": "2026-09-30T16:09:45.000Z",
+  "updated_at": "2026-09-30T16:15:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "hv_fluctuation_os",
+    "feature-extraction",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Archer Aviation ZEE AI Model Explained: Why ACHR Stock Jumped 18% · Aliteq",
+      "url": "https://aliteq.com/archer-aviation-zee-ai-model-stock-jump-2026",
+      "snippet": "Archer&#x27;s new ZEE AI model predicts airport ground traffic and sent ACHR stock up 18.4%. Here&#x27;s what it actually does — and why the stock move outpaces the numbers."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2302.06584v3",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "fluctuation.ai",
+      "url": "https://fluctuation.ai/",
+      "snippet": "fluctuation.ai"
+    },
+    {
+      "title": "September 2026 AI Model Updates: Every Launch, Price Move, and ...",
+      "url": "https://local-ai-zone.github.io/blog/September_2026_AI_Model_Updates.html",
+      "snippet": "September 2026 AI Model Updates: Every Launch, Price Move, and Architecture Shift TL;DR — Five frontier launches in ten days, a cancelled price hike, and the month every major lab shipped — or released — a cyber-capable model."
+    }
+  ]
+}

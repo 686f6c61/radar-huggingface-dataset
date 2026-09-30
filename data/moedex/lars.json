@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "moedex/lars",
+  "slug": "moedex-lars",
+  "author": "moedex",
+  "url": "https://huggingface.co/moedex/lars",
+  "created_at": "2026-09-30T16:20:45.000Z",
+  "updated_at": "2026-09-30T16:20:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - moedex/moelar",
+      "url": "https://github.com/moedex/moelar",
+      "snippet": "Contribute to moedex/moelar development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - abgulati/LARS: An application for running LLMs locally on your ...",
+      "url": "https://github.com/abgulati/LARS",
+      "snippet": "LARS is an application that enables you to run LLM&#x27;s (Large Language Models) locally on your device, upload your own documents and engage in conversations wherein the LLM grounds its responses with your uploaded content. This grounding helps increase accuracy and reduce the common issue of AI-generated inaccuracies or \"hallucinations.\" This technique is commonly known as \"Retrieval Augmented ..."
+    },
+    {
+      "title": "LLARS: Enabling Domain Expert & Developer Collaboration for LLM ...",
+      "url": "https://arxiv.org/pdf/2605.10593",
+      "snippet": "Abstract We demonstrate LLARS (LLM Assisted Research System), an open-source platform that bridges the gap between domain experts and developers for building LLM-based systems. It integrates three tightly connected modules into an end-to-end pipeline: Collaborative Prompt Engineer-ing for real-time co-authoring with version con-trol and instant LLM testing, Batch Generation for configurable ..."
+    },
+    {
+      "title": "AI Model Finder — Which LLM Should You Use? | OfoxAI",
+      "url": "https://ofox.ai/model-finder",
+      "snippet": "Free AI model finder: answer a few questions and get the best LLM for coding, agents, RAG or vision — ranked by quality, cost and speed. No login."
+    },
+    {
+      "title": "LaRS: Latent Reasoning Skills for Chain-of-Thought Reasoning",
+      "url": "https://arxiv.org/abs/2312.04684",
+      "snippet": "Instead, this paper introduces a new approach named Latent Reasoning Skills (LaRS) that employs unsupervised learning to create a latent space representation of rationales, with a latent variable called a reasoning skill. Concurrently, LaRS learns a reasoning policy to determine the required reasoning skill for a given question."
+    }
+  ]
+}

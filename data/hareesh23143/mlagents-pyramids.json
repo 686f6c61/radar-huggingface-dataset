@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hareesh23143/MLAgents-Pyramids",
+  "slug": "hareesh23143-mlagents-pyramids",
+  "author": "hareesh23143",
+  "url": "https://huggingface.co/hareesh23143/MLAgents-Pyramids",
+  "created_at": "2026-09-30T14:22:07.000Z",
+  "updated_at": "2026-09-30T14:22:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "unity-ml-agents",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30528715,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rishi26x/MLAgents-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/Rishi26x/MLAgents-Pyramids",
+      "snippet": "This is a trained model of a MLAgents-Pyramids agent playing ML-Agents-Pyramids using the ml-agents library. Trained for the Hugging Face Deep Reinforcement Learning Course."
+    },
+    {
+      "title": "AlexChe/MLAgents-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/AlexChe/MLAgents-Pyramids",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ml-agents/Project/Assets/ML-Agents/Examples/Pyramids/Demos at ... - GitHub",
+      "url": "https://github.com/Unity-Technologies/ml-agents/tree/develop/Project/Assets/ML-Agents/Examples/Pyramids/Demos",
+      "snippet": "The Unity Machine Learning Agents Toolkit (ML-Agents) is an open-source project that enables games and simulations to serve as environments for training intelligent agents using deep reinforcement ..."
+    },
+    {
+      "title": "MLAgents-Pyramids Open Source Reinforcement Learning Agents - Freely ...",
+      "url": "https://model.aibase.com/models/details/1915692624381632514",
+      "snippet": "This project presents a trained model of a PPO agent playing Pyramids with the Unity ML-Agents Library. It offers an effective solution for deep reinforcement learning in the context of the Pyramids game, leveraging the power of the Unity ML-Agents framework."
+    },
+    {
+      "title": "GitHub - Unity-Technologies/ml-agents: The Unity Machine Learning ...",
+      "url": "https://github.com/Unity-Technologies/ml-agents",
+      "snippet": "The ML-Agents Toolkit is mutually beneficial for both game developers and AI researchers as it provides a central platform where advances in AI can be evaluated on Unity&#x27;s rich environments and then made accessible to the wider research and game developer communities."
+    }
+  ]
+}

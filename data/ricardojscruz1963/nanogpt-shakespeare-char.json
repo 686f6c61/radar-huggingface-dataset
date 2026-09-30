@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ricardojscruz1963/nanogpt-shakespeare-char",
+  "slug": "ricardojscruz1963-nanogpt-shakespeare-char",
+  "author": "ricardojscruz1963",
+  "url": "https://huggingface.co/ricardojscruz1963/nanogpt-shakespeare-char",
+  "created_at": "2026-09-30T03:05:03.000Z",
+  "updated_at": "2026-09-30T03:09:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 152,
+  "trending_score": 0,
+  "parameters": 10770816,
+  "parameters_human": "10.8M",
+  "storage_bytes": 43090800,
+  "storage_human": "43 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ricardojscruz1963/nanogpt-shakespeare-char · Hugging Face",
+      "url": "https://huggingface.co/ricardojscruz1963/nanogpt-shakespeare-char",
+      "snippet": "ricardojscruz1963 / nanogpt-shakespeare-char Like 0 Text Generation Transformers Safetensors gpt2 text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "cy0307/nanogpt-shakespeare · Hugging Face",
+      "url": "https://huggingface.co/cy0307/nanogpt-shakespeare",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - nktkt/nanogpt-shakespeare-char: Char-level GPT trained on Tiny ...",
+      "url": "https://github.com/nktkt/nanogpt-shakespeare-char",
+      "snippet": "A reproducible char-level GPT experiment on the Tiny Shakespeare corpus, trained from scratch on Apple Silicon (MPS) using karpathy/nanoGPT. This repository contains only the experiment record (README, logs, generated samples, and a one-shot reproduction script). The model code itself is not vendored — reproduce.sh clones nanoGPT directly from upstream."
+    },
+    {
+      "title": "nanogpt-shakespeare-char/README.md at main · nktkt/nanogpt ... - GitHub",
+      "url": "https://github.com/nktkt/nanogpt-shakespeare-char/blob/main/README.md",
+      "snippet": "nanogpt-shakespeare-char A reproducible char-level GPT experiment on the Tiny Shakespeare corpus, trained from scratch on Apple Silicon (MPS) using karpathy/nanoGPT. This repository contains only the experiment record (README, logs, generated samples, and a one-shot reproduction script)."
+    },
+    {
+      "title": "Training a Character-Level Model | karpathy/nanoGPT | DeepWiki",
+      "url": "https://deepwiki.com/karpathy/nanoGPT/6.1-configuration-files",
+      "snippet": "Training a Character-Level Model Relevant source files This page provides a step-by-step guide to training a character-level GPT model on Shakespeare text. This is the fastest way to experience nanoGPT, suitable for laptops and consumer hardware. The model trains in minutes and demonstrates the complete training pipeline."
+    }
+  ]
+}

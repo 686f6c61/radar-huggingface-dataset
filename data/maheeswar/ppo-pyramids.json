@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "maheeswar/ppo-Pyramids",
+  "slug": "maheeswar-ppo-pyramids",
+  "author": "maheeswar",
+  "url": "https://huggingface.co/maheeswar/ppo-Pyramids",
+  "created_at": "2026-09-30T16:28:02.000Z",
+  "updated_at": "2026-09-30T16:28:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 260,
+  "storage_human": "260 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Master Audacity 4 in 2026! Complete Tutorial - YouTube",
+      "url": "https://www.youtube.com/watch?v=cKpaZ-pRSy8",
+      "snippet": "Sep 12, 2026 · Learn how to edit vocals in Audacity 4 to achieve a more professional sound. This Audacity 4 tutorial covers essential …"
+    },
+    {
+      "title": "Getting Started | Audacity Manual",
+      "url": "https://www.audacityteam.org/manual/getting-started/",
+      "snippet": "Never opened Audacity before? Follow these eight steps in order and you'll have recorded, edited and exported something by the …"
+    },
+    {
+      "title": "Tutorials for Audacity",
+      "url": "https://manual.audacityteam.org/man/tutorials_for_audacity.html",
+      "snippet": "Many of the images in this section are made with the Classic theme (the Light theme prior to Audacity 3.6) and RMS display turned …"
+    },
+    {
+      "title": "Audacity 3 to 4 transition guide",
+      "url": "https://www.audacityteam.org/manual/new-in-audacity-4/audacity-3-to-4-transition-guide/",
+      "snippet": "Sep 22, 2026 · This page maps the differences for Audacity 3 users — what moved, what changed, and how to make it feel like …"
+    },
+    {
+      "title": "Audacity – Tutoriel de prise en main | Les Bases du numérique …",
+      "url": "https://lesbases.anct.gouv.fr/ressources/audacity",
+      "snippet": "Dec 31, 2024 · Il ne s’agit pas d’un atelier clé en main à animer, mais d’un support de découverte, permettant de comprendre les …"
+    }
+  ]
+}

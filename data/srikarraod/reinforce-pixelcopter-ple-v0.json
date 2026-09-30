@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Srikarraod/reinforce-Pixelcopter-PLE-v0",
+  "slug": "srikarraod-reinforce-pixelcopter-ple-v0",
+  "author": "Srikarraod",
+  "url": "https://huggingface.co/Srikarraod/reinforce-Pixelcopter-PLE-v0",
+  "created_at": "2026-09-30T16:13:51.000Z",
+  "updated_at": "2026-09-30T16:13:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nomad-ai/Reinforce-Pixelcopter-PLE-v0 · Hugging Face",
+      "url": "https://huggingface.co/nomad-ai/Reinforce-Pixelcopter-PLE-v0",
+      "snippet": "Evaluation results mean_reward on Pixelcopter-PLE-v0 self-reported 32.70 +/- 19.98 View leaderboard (Papers With Code)"
+    },
+    {
+      "title": "Bear-ai/Reinforce-Pixelcopter-PLE-v0 · Hugging Face",
+      "url": "https://huggingface.co/Bear-ai/Reinforce-Pixelcopter-PLE-v0",
+      "snippet": "Bear-ai / Reinforce-Pixelcopter-PLE-v0 like 0 Reinforcement Learning Pixelcopter-PLE-v0 reinforce custom-implementation deep-rl-class Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new Reinforce Agent playing Pixelcopter-PLE-v0"
+    },
+    {
+      "title": "sarthakc44/Reinforce-Pixelcopter-PLE-v0 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/136250",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning ..."
+    },
+    {
+      "title": "Google Gemini AI Hacked 3 Real Companies during a Cybersecurity Test",
+      "url": "https://cybersecuritynews.com/google-gemini-ai-hacked-3-real-companies/",
+      "snippet": "Google has confirmed that its Gemini artificial intelligence model accessed protected systems belonging to three companies during a cybersecurity evaluation after a ..."
+    },
+    {
+      "title": "How to Train a Reinforce Agent for Pixelcopter-PLE-v0 - fxis.ai",
+      "url": "https://fxis.ai/edu/how-to-train-a-reinforce-agent-for-pixelcopter-ple-v0/",
+      "snippet": "For common runtime errors, check the console for detailed Python traceback messages; these can provide clues about what went wrong. For more insights, updates, or to collaborate on AI development projects, stay connected with fxis.ai. Conclusion In summary, training a Reinforce agent for the Pixelcopter-PLE-v0 can be a gratifying experience."
+    }
+  ]
+}

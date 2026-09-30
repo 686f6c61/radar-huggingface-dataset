@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tylerjonesmur/review-contrastive-learning",
+  "slug": "tylerjonesmur-review-contrastive-learning",
+  "author": "tylerjonesmur",
+  "url": "https://huggingface.co/tylerjonesmur/review-contrastive-learning",
+  "created_at": "2026-09-30T02:54:14.000Z",
+  "updated_at": "2026-09-30T02:54:19.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tylerjonesmur (Tyler Jones) - Hugging Face",
+      "url": "https://huggingface.co/tylerjonesmur",
+      "snippet": "User profile of Tyler Jones on Hugging Face"
+    },
+    {
+      "title": "tylerjonesmur/cv-contrastive · Hugging Face",
+      "url": "https://huggingface.co/tylerjonesmur/cv-contrastive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Visualizing and Understanding Contrastive Learning - arXiv.org",
+      "url": "https://arxiv.org/html/2206.09753v3",
+      "snippet": "Visualizing and Understanding Contrastive Learning Thanks: This research received funding from the FWO (Grants G014718N, G0A4720N and 1SB5721N) and from imec through the AAA project Trustworthy AI Methods (TAIM). F. Sammani, B. Joukovsky and N. Deligiannis are with the Department of Electronics and Informatics, Vrije Universiteit Brussel, Pleinlaan 2, B-1050 Brussels, Belgium and also with ..."
+    },
+    {
+      "title": "A Systematic Review of Contrastive Learning: Architectures, Objectives ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11624882",
+      "snippet": "Contrastive learning is swiftly becoming the most used methods for self-supervised representation learning. Models are able to learn feature embeddings which are meaningful without having access to any labeled data. This paper comes up with a detailed review of contrastive learning techniques in areas like vision, natural language processing, and the multimodal domains. Unlike other different ..."
+    },
+    {
+      "title": "[2505.12473] Multi-modal contrastive learning adapts to intrinsic ...",
+      "url": "https://arxiv.org/abs/2505.12473",
+      "snippet": "Multi-modal contrastive learning as a self-supervised representation learning technique has achieved great success in foundation model training, such as CLIP~&#92;&#92;citep{radford2021learning}. In this paper, we study the theoretical properties of the learned representations from multi-modal contrastive learning beyond linear representations and specific data distributions. Our analysis reveals that ..."
+    }
+  ]
+}

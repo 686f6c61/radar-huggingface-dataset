@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "dougalldeepmind/2026-09-30-gptoss120b-0-nosynth",
+  "slug": "dougalldeepmind-2026-09-30-gptoss120b-0-nosynth",
+  "author": "dougalldeepmind",
+  "url": "https://huggingface.co/dougalldeepmind/2026-09-30-gptoss120b-0-nosynth",
+  "created_at": "2026-09-30T16:08:09.000Z",
+  "updated_at": "2026-09-30T16:33:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lora",
+    "tinker",
+    "gpt-oss",
+    "nosynth",
+    "dataset:dougalldeepmind/2026-09-30-nosynth-mix-gpt-oss-120b",
+    "base_model:openai/gpt-oss-120b",
+    "base_model:adapter:openai/gpt-oss-120b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5257620504,
+  "storage_human": "5.3 GB",
+  "base_model": "openai/gpt-oss-120b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "On a device or on the web, viewers can watch and discover millions of personalized short videos. Download the app to get started."
+    },
+    {
+      "title": "dougalldeepmind/2026-09-30-nosynth-mix-gpt-oss-120b · Datasets at ...",
+      "url": "https://huggingface.co/datasets/dougalldeepmind/2026-09-30-nosynth-mix-gpt-oss-120b",
+      "snippet": "Datasets: dougalldeepmind / 2026-09-30-nosynth-mix-gpt-oss-120b Like 0 Follow Dougall DeepMind 4 Modalities: Text Formats: json Size: 10K - 100K Tags: training-data kind:mixture pipeline:nosynth constitution:claude_distilled_09_principles gpt-oss harmony Libraries: Datasets pandas Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet ..."
+    },
+    {
+      "title": "Log in | TikTok",
+      "url": "https://www.tiktok.com/login",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "2026-09-28-gptoss120b-0-nosynth API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/dougalldeepmind/2026-09-28-gptoss120b-0-nosynth",
+      "snippet": "Deploy 2026-09-28-gptoss120b-0-nosynth with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/fr/",
+      "snippet": "TikTok - les tendances commencent ici. Sur ton appareil ou sur le Web, les spectateurs peuvent regarder et découvrir des millions …"
+    }
+  ]
+}

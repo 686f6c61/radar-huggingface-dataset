@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-006",
+  "slug": "hyu-nlp-eval-qwen3-4b-rar-medicine-static-r0-matched-seed11-step-006",
+  "author": "HYU-NLP-EVAL",
+  "url": "https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-006",
+  "created_at": "2026-09-30T03:30:30.000Z",
+  "updated_at": "2026-09-30T03:44:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "grpo",
+    "static-rubric",
+    "r0",
+    "rar-medicine",
+    "research",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 103,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 25702307529,
+  "storage_human": "25.7 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-4B_HealthBench-Consensus_static - a HYU-NLP-EVAL Collection",
+      "url": "https://huggingface.co/collections/HYU-NLP-EVAL/qwen3-4b-healthbench-consensus-static",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-042 ...",
+      "url": "https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-042",
+      "snippet": "HYU-NLP-EVAL / qwen3-4b-rar-medicine-onlinerubrics-seed11-step-042 Like 0 Follow [HYU_NLP] EVA Team 4 Text Generation Transformers Safetensors qwen3 onlinerubrics grpo rar-medicine research conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Run Qwen3-4B-rar-medicine-onlinerubrics-seed11-step-002 API (Easy ...",
+      "url": "https://featherless.ai/models/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-002",
+      "snippet": "This model is an intermediate policy checkpoint, derived from dynamic OnlineRubrics-Every GRPO training, and is distinct from static-rubric GRPO methods. Built upon the Qwen/Qwen3-4B-Instruct-2507 base model, it features 4 billion parameters and has its &#x27;thinking&#x27; capabilities explicitly disabled."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3",
+      "snippet": "The latest version of the Qwen3 model family, featuring 4B, 30B, and 235B dense and MoE models, both thinking and non-thinking variants."
+    }
+  ]
+}

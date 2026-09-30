@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "K-vr/cube_stack3_Pi05_abs_batch8",
+  "slug": "k-vr-cube_stack3_pi05_abs_batch8",
+  "author": "K-vr",
+  "url": "https://huggingface.co/K-vr/cube_stack3_Pi05_abs_batch8",
+  "created_at": "2026-09-30T02:41:55.000Z",
+  "updated_at": "2026-09-30T02:42:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:K-vr/cube_stack3",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354061432,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "K (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/K_(lettre)",
+      "snippet": "Cette lettre de l' alphabet latin vient de l' étrusque ; c'est un descendant du kappa de l' alphabet grec (Κ en majuscule et κ en …"
+    },
+    {
+      "title": "K - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/K",
+      "snippet": "K (minuscule: k) is the eleventh letter of the Latin alphabet, used in the modern English alphabet, the alphabets of other western …"
+    },
+    {
+      "title": "K — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/K",
+      "snippet": "K est la 11e lettre et la 8e consonne de l' alphabet latin. Elle a pour origine la lettre κ (kappa) de l' alphabet grec. C'est la lettre la plus …"
+    },
+    {
+      "title": "alphabet en francais chanson | lettre \"K-chanson\" - Comptines et ...",
+      "url": "https://www.youtube.com/watch?v=4QedWKQ7SsU",
+      "snippet": "Jul 27, 2016 · Learn the french alphabet, ABC, colors, numbers and much more by watching, playing, singing along with these …"
+    },
+    {
+      "title": "Learn The Letter K | Let's Learn About The Alphabet | Phonics Song …",
+      "url": "https://www.youtube.com/watch?v=jdI2ad0lNpA",
+      "snippet": "Sep 15, 2016 · This Alphabet song in our Let’s Learn About the Alphabet Series is all about the consonant k Your children will be …"
+    }
+  ]
+}

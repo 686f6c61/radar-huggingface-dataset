@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MrKustic/dl2-ner",
+  "slug": "mrkustic-dl2-ner",
+  "author": "MrKustic",
+  "url": "https://huggingface.co/MrKustic/dl2-ner",
+  "created_at": "2026-09-30T15:59:53.000Z",
+  "updated_at": "2026-09-30T16:06:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 398662589,
+  "storage_human": "399 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to train your Custom Named Entity Recognition (NER) model - Foundry ...",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/how-to/train-model",
+      "snippet": "Train model (REST API) Once you have labeled your data and configured your data split settings, you can start training your custom NER model using the REST API. The training process involves submitting a training job request and monitoring its progress until completion."
+    },
+    {
+      "title": "How to deploy a custom named entity recognition (NER) model - Foundry ...",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/how-to/deploy-model",
+      "snippet": "Prerequisites A successfully created project with a configured Azure storage account. Text data that is uploaded to your storage account. Labeled data and successfully trained model Reviewed the model evaluation details to determine how your model is performing. For more information, see project development lifecycle."
+    },
+    {
+      "title": "What is Named Entity Recognition (NER)? - Tonic.ai",
+      "url": "https://www.tonic.ai/guides/named-entity-recognition-models",
+      "snippet": "Explore Named Entity Recognition: how NER extracts and protects sensitive info from text, plus real AI use cases and practical guidance. Learn more."
+    },
+    {
+      "title": "GitHub - alexfdez1010/ner-llm: A system for doing NER using LLMs and ...",
+      "url": "https://github.com/alexfdez1010/ner-llm",
+      "snippet": "This repository contains a Named Entity Recognition (NER) framework that explores the capabilities of Large Language Models (LLMs) and Large Reasoning Models (lRMs) for extracting entities from medical texts. The project features both an interactive demo using Together AI and experimental pipelines using Ollama for research purposes."
+    },
+    {
+      "title": "[2401.10825] Recent Advances in Named Entity Recognition: A ...",
+      "url": "https://arxiv.org/abs/2401.10825",
+      "snippet": "Named Entity Recognition seeks to extract substrings within a text that name real-world objects and to determine their type (for example, whether they refer to persons or organizations). In this survey, we first present an overview of recent popular approaches, including advancements in Transformer-based methods and Large Language Models (LLMs) that have not had much coverage in other surveys ..."
+    }
+  ]
+}

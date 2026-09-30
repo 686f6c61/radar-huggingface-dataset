@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-python-basics-v1-r0001-u0-mdagosta-b",
+  "slug": "mdagosta-waldito-python-basics-v1-r0001-u0-mdagosta-b",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0001-u0-mdagosta-b",
+  "created_at": "2026-09-30T14:54:55.000Z",
+  "updated_at": "2026-09-30T14:55:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9541632,
+  "parameters_human": "9.5M",
+  "storage_bytes": 19089664,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "GitHub - stephansturges/WALDO: Whereabouts Ascertainment for Low-lying ...",
+      "url": "https://github.com/stephansturges/WALDO",
+      "snippet": "WALDO is a detection AI model, based on a large YOLO-v8 backbone and my own synthetic data pipeline. The model is capable of detecting these classes of items in overhead imagery ranging in altitude from about 30 feet to satellite imagery!"
+    },
+    {
+      "title": "GPT-6.1 Sol: Release Intelligence, Performance & Price",
+      "url": "https://artificialanalysis.ai/models/releases/gpt-6-1-sol",
+      "snippet": "The GPT-6.1 Sol release offers 5 models, each with different intelligence, performance, and pricing characteristics. Below is a comparison of the key metrics across the 5 models. For intelligence, the top model of GPT-6.1 Sol is GPT-6.1 Sol (max) at 52. For output speed, the fastest model is GPT-6.1 Sol (max) at 68 t/s. For latency, GPT-6.1 Sol (low) at 2.10s offers the lowest time to first ..."
+    },
+    {
+      "title": "Free AI 3D Model Generator | Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Free AI 3D Model Generator: create 3D models from text or images for games, AR/VR, and 3D printing at zero cost."
+    }
+  ]
+}

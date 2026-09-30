@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "timofeysew/coca-generation-ablation",
+  "slug": "timofeysew-coca-generation-ablation",
+  "author": "timofeysew",
+  "url": "https://huggingface.co/timofeysew/coca-generation-ablation",
+  "created_at": "2026-09-30T02:57:22.000Z",
+  "updated_at": "2026-09-30T02:57:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JacobBaker/generation · Hugging Face",
+      "url": "https://huggingface.co/JacobBaker/generation",
+      "snippet": "Coca for Generation Overview This repository is a compact, custom PyTorch implementation of Coca for Generation. The nano configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "ayaangup/cs229-generation · Hugging Face",
+      "url": "https://huggingface.co/ayaangup/cs229-generation",
+      "snippet": "Coca for Generation Overview This repository is a compact, custom PyTorch implementation of Coca for Generation. The xlarge configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "Ablation (artificial intelligence) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ablation_(artificial_intelligence)",
+      "snippet": "In artificial intelligence (AI), particularly machine learning, [1] ablation is the removal of a component of an AI system. An ablation study aims to determine the contribution of a component to an AI system by removing the component, and then analyzing the resultant performance of the system."
+    },
+    {
+      "title": "CoCa: Contrastive Captioners are Image-Text Foundation Models",
+      "url": "https://arxiv.org/abs/2205.01917",
+      "snippet": "Exploring large-scale pretrained foundation models is of significant interest in computer vision because these models can be quickly transferred to many downstream tasks. This paper presents Contrastive Captioner (CoCa), a minimalist design to pretrain an image-text encoder-decoder foundation model jointly with contrastive loss and captioning loss, thereby subsuming model capabilities from ..."
+    },
+    {
+      "title": "GitHub - ai-scientist-bench/ablation-bench: AblationBench is evaluation ...",
+      "url": "https://github.com/ai-scientist-bench/ablation-bench",
+      "snippet": "AblationBench is a comprehensive benchmarking tool designed to evaluate and facilitate the creation of ablation plans, particularly in the context of AI and Machine Learning research. It provides a standardized framework for generating ablation plans and evaluating their quality using different LM-based judges, including chain-of-thought (CoT) prompting and using SWE-agent based judge."
+    }
+  ]
+}

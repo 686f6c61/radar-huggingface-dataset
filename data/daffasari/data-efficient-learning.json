@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Daffasari/data-efficient-learning",
+  "slug": "daffasari-data-efficient-learning",
+  "author": "Daffasari",
+  "url": "https://huggingface.co/Daffasari/data-efficient-learning",
+  "created_at": "2026-09-30T02:45:01.000Z",
+  "updated_at": "2026-09-30T02:45:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "data-efficient-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ICML Tutorial Foundations of Data-efficient Machine Learning",
+      "url": "https://icml.cc/virtual/2024/tutorial/35234",
+      "snippet": "The goal of this tutorial will be to provide a unifying perspective, by discussing recent theoretically-rigorous approaches for data-efficient machine learning. We will discuss rigorous techniques for data-efficient supervised learning, and self-supervised contrastive pre-training."
+    },
+    {
+      "title": "[2402.09668] How to Train Data-Efficient LLMs - arXiv.org",
+      "url": "https://arxiv.org/abs/2402.09668",
+      "snippet": "The training of large language models (LLMs) is expensive. In this paper, we study data-efficient approaches for pre-training LLMs, i.e., techniques that aim to optimize the Pareto frontier of model quality and training resource/data consumption. We seek to understand the tradeoffs associated with data selection routines based on (i) expensive-to-compute data-quality estimates, and (ii ..."
+    },
+    {
+      "title": "PDF Baharan_ICML_tutorial_final - GitHub Pages",
+      "url": "https://baharanm.github.io/assets/pdf/ICML24_tutorial_DataEfficient.pdf",
+      "snippet": "Part 2: Data-efficient self-supervised Contrastive Pretraining Data-Efficient Contrastive Self-supervised Learning: Most Beneficial Examples for Supervised Learning Contribute the Least, Joshi and Mirzasoleiman, ICML 2023."
+    },
+    {
+      "title": "Data Efficient learning | AI Research Papers",
+      "url": "https://www.aimodels.fyi/research-topics/data-efficient-learning",
+      "snippet": "Meta-learning (learning to learn): Training models that can quickly adapt to new tasks and environments. By enabling models to learn effectively from small datasets, data-efficient learning paves the way for wider adoption of AI in scenarios where data is scarce and valuable, leading to more practical and sustainable AI solutions."
+    },
+    {
+      "title": "Data Efficient Learning - Virtusa",
+      "url": "https://www.virtusa.com/digital-themes/data-efficient-learning",
+      "snippet": "Data efficient learning is a type of machine learning that can understand complex domains without the need for large amounts of data."
+    }
+  ]
+}

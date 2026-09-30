@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "VinnSmoke/truthlens-distilbert",
+  "slug": "vinnsmoke-truthlens-distilbert",
+  "author": "VinnSmoke",
+  "url": "https://huggingface.co/VinnSmoke/truthlens-distilbert",
+  "created_at": "2026-09-30T19:06:43.000Z",
+  "updated_at": "2026-09-30T19:06:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mdanish1212/truthlens-ai: Production-ready Fake News ...",
+      "url": "https://github.com/mdanish1212/truthlens-ai",
+      "snippet": "Overview TruthLens AI is a lightweight, production-ready Fake News Intelligence System designed to detect fake text, manipulated images, deceptive short videos, source credibility issues, and political bias — all running on optimized AI models suitable for serverless deployment. The platform cross-references over 47,000 verified sources and delivers explainable AI insights within seconds."
+    },
+    {
+      "title": "ShanGhani34/truthlens-model · Hugging Face",
+      "url": "https://huggingface.co/ShanGhani34/truthlens-model",
+      "snippet": "📰 TruthLens - AI-Powered Fake News Detector + Verifier TruthLens is a real-time fake news detection and truth verification system built using state-of-the-art NLP models like DistilBERT and SBERT, combined with real-time cross-checking from Google News."
+    },
+    {
+      "title": "GitHub - venunisandhan/truthlens-ai",
+      "url": "https://github.com/venunisandhan/truthlens-ai",
+      "snippet": "TruthLens AI accepts user-uploaded media or text claims and passes them through a sophisticated processing pipeline. Instead of relying on a single monolithic model, it routes the payload to specialized analysis engines based on the modality. Each engine returns an authenticity score, confidence metrics, and an explainable rationale, which is displayed on a premium glassmorphic UI."
+    },
+    {
+      "title": "TruthLens — AI Fake News & Deepfake Detector",
+      "url": "https://truthlens.insightfactory.io/",
+      "snippet": "Verify content authenticity with AI. Detect fake news, deepfakes, and AI-generated text, images & videos instantly."
+    },
+    {
+      "title": "TruthLens — AI-Powered Misinformation Detection",
+      "url": "https://truthlens.digital/",
+      "snippet": "TruthLens uses advanced AI to detect misinformation, verify news sources, and analyze content credibility in seconds. Free for individuals. Enterprise plans available."
+    }
+  ]
+}

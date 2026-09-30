@@ -21,8 +21,8 @@
     "base_model:adapter:robbyant/lingbot-vla-v2-6b",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 10,
+  "likes": 1,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

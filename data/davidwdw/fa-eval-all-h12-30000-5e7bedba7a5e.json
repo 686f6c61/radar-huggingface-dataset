@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-eval-all-h12-30000-5e7bedba7a5e",
+  "slug": "davidwdw-fa-eval-all-h12-30000-5e7bedba7a5e",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-eval-all-h12-30000-5e7bedba7a5e",
+  "created_at": "2026-09-30T17:26:02.000Z",
+  "updated_at": "2026-09-30T17:26:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 204163866,
+  "storage_human": "204 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EPL World Series: Southeast Asia Season 18 - Liquipedia",
+      "url": "https://liquipedia.net/dota2/EPL/World_Series/Southeast_Asia/18",
+      "snippet": "EPL World Series: Southeast Asia Season 18 is an online Southeast Asian Dota 2 tournament organized by EPL. This Tier 3 …"
+    },
+    {
+      "title": "Coverage: EPL World Series: Southeast Asia Season 18 Dota 2",
+      "url": "https://ggscore.com/en/dota-2/epl-world-series-southeast-asia-season-18",
+      "snippet": "5 days ago · Full information about EPL World SEA S18 Dota 2. Match results, VODs, streams, team rosters, schedules"
+    },
+    {
+      "title": "EPL World Series: Southeast Asia Season 18 - esport.vision",
+      "url": "https://esport.vision/tournament.html?lp=EPL%2FWorld_Series%2FSoutheast_Asia%2F18",
+      "snippet": "5 days ago · EPL World Series: Southeast Asia Season 18 (EPL World Series: Southeast Asia S18) — Dota 2 live tournament. Tier …"
+    },
+    {
+      "title": "EPL World Series: Southeast Asia Season 18 - Escorenews",
+      "url": "https://escorenews.com/en/dota-2/epl-world-series-southeast-asia-season-18",
+      "snippet": "5 days ago · Full information about EPL World Series: Southeast Asia Season 18 Dota 2. Match results, VODs, streams, team …"
+    },
+    {
+      "title": "EPL World Series: Southeast Asia Season 18 - Escorenews",
+      "url": "https://escorenews.com/en/dota-2/epl-world-series-southeast-asia-season-18/group-stage",
+      "snippet": "5 days ago · EPL World Series: Southeast Asia Season 18 Match results, calendar, VODs, stream, team rosters, schedule"
+    }
+  ]
+}

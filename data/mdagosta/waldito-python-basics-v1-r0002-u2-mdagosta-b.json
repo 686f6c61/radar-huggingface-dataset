@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-python-basics-v1-r0002-u2-mdagosta-b",
+  "slug": "mdagosta-waldito-python-basics-v1-r0002-u2-mdagosta-b",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0002-u2-mdagosta-b",
+  "created_at": "2026-09-30T17:31:08.000Z",
+  "updated_at": "2026-09-30T17:31:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9541632,
+  "parameters_human": "9.5M",
+  "storage_bytes": 19089664,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mdagosta/waldito-python-basics-v1-r0000-merge · Hugging Face",
+      "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0000-merge",
+      "snippet": "Instructions to use mdagosta/waldito-python-basics-v1-r0000-merge with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Welcome to Python.org",
+      "url": "https://www.python.org/",
+      "snippet": "The official home of the Python Programming Language"
+    },
+    {
+      "title": "Machine Learning with Python: From Scratch to Project",
+      "url": "https://www.youtube.com/playlist?list=PL0BwLgm6AcFazl9GuzxTOLPAdg9YMtLQr",
+      "snippet": "This comprehensive series of 90 video lectures is designed to take you from the absolute basics of machine learning all the way through building your own projects using Python."
+    },
+    {
+      "title": "How to Use AI Running on Your Own Computer From Python in 2026",
+      "url": "https://dev.to/alichherawalla/how-to-use-ai-running-on-your-own-computer-from-python-in-2026-2oh9",
+      "snippet": "Call a local AI model from Python with the standard library. Discover the selected model, send a prompt and read the answer through OGAD."
+    },
+    {
+      "title": "Learn Python - Free Interactive Python Tutorial",
+      "url": "https://www.learnpython.org/en/",
+      "snippet": "Get started learning Python with DataCamp&#x27;s Intro to Python tutorial. Learn Data Science by completing interactive coding challenges and watching videos by expert instructors."
+    }
+  ]
+}

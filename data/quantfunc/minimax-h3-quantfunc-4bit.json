@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "QuantFunc/Minimax-H3-Quantfunc-4bit",
+  "slug": "quantfunc-minimax-h3-quantfunc-4bit",
+  "author": "QuantFunc",
+  "url": "https://huggingface.co/QuantFunc/Minimax-H3-Quantfunc-4bit",
+  "created_at": "2026-09-28T13:55:48.000Z",
+  "updated_at": "2026-09-28T16:15:33.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "custom_minimax_h3",
+    "video-generation",
+    "text-to-video",
+    "image-to-video",
+    "audio-video-generation",
+    "quantized",
+    "4-bit",
+    "int4",
+    "svdquant",
+    "minimax-h3",
+    "quantfunc",
+    "comfyui",
+    "license:other",
+    "diffusers:MiniMaxH3Pipeline",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 15137,
+  "trending_score": 13,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24754704882,
+  "storage_human": "24.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minimax-H3-Quantfunc-4bit - Hugging Face",
+      "url": "https://huggingface.co/QuantFunc/Minimax-H3-Quantfunc-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "QuantFunc/Minimax-H3-Quantfunc-4bit at main - Hugging Face",
+      "url": "https://huggingface.co/QuantFunc/Minimax-H3-Quantfunc-4bit/tree/main",
+      "snippet": "Instructions to use QuantFunc/Minimax-H3-Quantfunc-4bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use QuantFunc/Minimax-H3-Quantfunc-4bit with Diffusers:"
+    },
+    {
+      "title": "QuantFunc — the fastest diffusion inference engine",
+      "url": "https://www.quantfunc.com/",
+      "snippet": "1 Clone into ComfyUI/custom_nodes, restart (the engine installs itself) 2 Put a QuantFunc model file in models/diffusion_models 3 Swap Load Diffusion Model for its QuantFunc loader; keep the text encoder, VAE and KSampler 4 Queue Prompt — MiniMax-H3 runs 3.19× faster per step than FP8 ... Full install & dependencies → ComfyUI · QuantFunc ..."
+    },
+    {
+      "title": "ComfyUI-QuantFunc/example_workflows/QuantFunc-MiniMaxH3-fl2va ... - GitHub",
+      "url": "https://github.com/QuantFunc/ComfyUI-QuantFunc/blob/main/example_workflows/QuantFunc-MiniMaxH3-fl2va.json",
+      "snippet": "\"## QuantFunc MiniMax-H3&#92;n&#92;n- **QuantFunc MiniMax-H3 Loader** replaces the official `Load Diffusion Model` (UNETLoader): the QuantFunc engine runs the H3 transformer, video and audio; the text encoder (`CLIPLoader`, type `minimax`), the video and audio VAEs and the sampler stay stock ComfyUI.&#92;n- `transformer` from ModelScope [QuantFunc/Minimax-H3-Quantfunc-4bit] (https://modelscope.cn/models ..."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    }
+  ]
+}

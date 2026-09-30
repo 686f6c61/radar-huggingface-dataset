@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Natalia-sokolov/swin-t-contrastive-tiny",
+  "slug": "natalia-sokolov-swin-t-contrastive-tiny",
+  "author": "Natalia-sokolov",
+  "url": "https://huggingface.co/Natalia-sokolov/swin-t-contrastive-tiny",
+  "created_at": "2026-09-30T14:49:23.000Z",
+  "updated_at": "2026-09-30T14:49:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amritachemistry/model_454430015_swin_t_tiny · Hugging Face",
+      "url": "https://huggingface.co/amritachemistry/model_454430015_swin_t_tiny",
+      "snippet": "A tiny-scale implementation of the swin tarchitecture, built for contrastivetasks. Architecture Architecture: swin t Scale: tiny Attention: grouped query Fusion strategy: bilinear Task head: contrastive"
+    },
+    {
+      "title": "dennisschulz/swin-t-contrastive · Hugging Face",
+      "url": "https://huggingface.co/dennisschulz/swin-t-contrastive",
+      "snippet": "Swin T for Contrastive Overview This repository is a compact, custom PyTorch implementation of Swin T for Contrastive. The large configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "Swin Tiny INT8 | Arm AI Portal",
+      "url": "https://developer.arm.com/ai/models/hugging-face/Arm/swin-tiny-int8-xnnpack-executorch/swin-tiny-int8-pte",
+      "snippet": "An INT8-quantized hierarchical Vision Transformer for 1000-class image classification, using shifted-window attention for efficient visual representation. Weights are quantized per channel and activation scales are computed at runtime, giving a compact, faster alternative to the original FP32 model with fixed 224×224 RGB inputs and softmax-based top-class predictions. View on Hugging Face ..."
+    },
+    {
+      "title": "Swin-Tiny - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/swin_tiny",
+      "snippet": "Swin-Tiny Imagenet classifier and general purpose backbone. SwinTiny is a machine learning model that can classify images from the Imagenet dataset. It can also be used as a backbone in building more complex models for specific use cases."
+    },
+    {
+      "title": "GitHub - microsoft/Swin-Transformer: This is an official implementation ...",
+      "url": "https://github.com/microsoft/Swin-Transformer",
+      "snippet": "Swin Transformer This repo is the official implementation of \"Swin Transformer: Hierarchical Vision Transformer using Shifted Windows\" as well as the follow-ups. It currently includes code and models for the following tasks: Image Classification: Included in this repo. See get_started.md for a quick start."
+    }
+  ]
+}

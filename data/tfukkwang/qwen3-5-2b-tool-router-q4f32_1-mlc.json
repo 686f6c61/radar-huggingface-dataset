@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tfukkwang/Qwen3.5-2B-tool-router-q4f32_1-MLC",
+  "slug": "tfukkwang-qwen3-5-2b-tool-router-q4f32_1-mlc",
+  "author": "tfukkwang",
+  "url": "https://huggingface.co/tfukkwang/Qwen3.5-2B-tool-router-q4f32_1-MLC",
+  "created_at": "2026-09-30T16:07:34.000Z",
+  "updated_at": "2026-09-30T16:09:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlc-llm",
+  "languages": [],
+  "tags": [
+    "mlc-llm",
+    "webllm",
+    "webgpu",
+    "tool-calling",
+    "function-calling",
+    "qwen3.5",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1072123310,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-2B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-2B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlc-ai/Qwen3.5-2B-q4f32_1-MLC · Hugging Face",
+      "url": "https://huggingface.co/mlc-ai/Qwen3.5-2B-q4f32_1-MLC",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-2B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_2b",
+      "snippet": "Qwen3.5-2B Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "Run Qwen3.5 2B in Your Browser — 1010 MB, No Install",
+      "url": "https://browserbasedtools.com/tools/ai/browser-based-ai-chat/models/qwen3-5-2b",
+      "snippet": "Run Qwen3.5 2B locally in your browser on your own GPU: 1010 MB download, about 2.2 GB of memory. Private, offline after the first download, no account."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

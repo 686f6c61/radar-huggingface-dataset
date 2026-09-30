@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "selcukkubur/Phonon-2-mlx",
+  "slug": "selcukkubur-phonon-2-mlx",
+  "author": "selcukkubur",
+  "url": "https://huggingface.co/selcukkubur/Phonon-2-mlx",
+  "created_at": "2026-09-30T17:14:23.000Z",
+  "updated_at": "2026-09-30T17:14:50.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "automatic-speech-recognition",
+    "parakeet",
+    "en",
+    "base_model:FermionResearch/Phonon-2",
+    "base_model:finetune:FermionResearch/Phonon-2",
+    "license:cc-by-4.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 181228034,
+  "parameters_human": "181.2M",
+  "storage_bytes": 189223871,
+  "storage_human": "189 MB",
+  "base_model": "FermionResearch/Phonon-2, nvidia/parakeet-tdt-0.6b-v3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FermionResearch/Phonon-2 · Hugging Face",
+      "url": "https://huggingface.co/FermionResearch/Phonon-2",
+      "snippet": "Instructions to use FermionResearch/Phonon-2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use FermionResearch/Phonon-2 with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Phonon-2 FermionResearch/Phonon-2 ..."
+    },
+    {
+      "title": "selcukkubur (Selçuk KUBUR) · GitHub",
+      "url": "https://github.com/selcukkubur",
+      "snippet": "I am a DevOps Manager passionate about bridging the gap between development, operations, and emerging tech. My expertise lies in designing robust cloud architectures, orchestrating AI agentic infrastructures, managing high-performance blockchain nodes, and fostering a culture of continuous improvement. I thrive on empowering teams through automation, shared knowledge, and psychological safety ..."
+    },
+    {
+      "title": "selcukkubur/Confucius4-R2T2-mlx-4bit · Hugging Face",
+      "url": "https://huggingface.co/selcukkubur/Confucius4-R2T2-mlx-4bit",
+      "snippet": "This is a quantisation of NetEase Youdao&#x27;s Confucius4-R2T2 and is governed by the original MODEL_LICENSE. That licence is royalty-free for most users but requires a separate licence from NetEase Youdao above 100 million monthly active users or RMB 1 billion in annual revenue, and prohibits use in the high-risk scenarios it lists."
+    },
+    {
+      "title": "raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/fermionresearch/phonon/refs/heads/main/v18_runtime.py",
+      "snippet": "\"\"\"MLX runtime for packed Phonon decoder artifacts. A Phonon artifact contains a two-plane five-state decoder. Derived artifacts may additionally store the tied token embedding/output head and selected audio-tower linears in MLX&#x27;s native affine format. Their exact layouts are declared in ``packed_manifest.json`` so loading never depends on filename conventions or an implicit global ..."
+    },
+    {
+      "title": "mlx-audio/mlx_audio/stt/models/phonon at main · Blaizzy/mlx-audio - GitHub",
+      "url": "https://github.com/Blaizzy/mlx-audio/tree/main/mlx_audio/stt/models/phonon",
+      "snippet": "MLX support for Fermion Research&#x27;s English Phonon-1 speech recognition family. The public Hugging Face transport archive is downloaded, SHA-256 checked, and materialized automatically on first use."
+    }
+  ]
+}

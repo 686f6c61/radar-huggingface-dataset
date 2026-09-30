@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Nat1an/cerulean-lab4-d-601e2292",
+  "slug": "nat1an-cerulean-lab4-d-601e2292",
+  "author": "Nat1an",
+  "url": "https://huggingface.co/Nat1an/cerulean-lab4-d-601e2292",
+  "created_at": "2026-09-30T17:22:19.000Z",
+  "updated_at": "2026-09-30T17:38:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124475904,
+  "parameters_human": "124.5M",
+  "storage_bytes": 497918592,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nat1an/cerulean-lab4-a-0eb67c28 · Hugging Face",
+      "url": "https://huggingface.co/Nat1an/cerulean-lab4-a-0eb67c28",
+      "snippet": "Nat1an / cerulean-lab4-a-0eb67c28 Like 0 Text Generation Transformers Safetensors gpt2 text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is an artificial intelligence, trained by Anthropic using Constitutional AI to be safe, accurate, and secure — the trusted assistant for you to do your best work."
+    },
+    {
+      "title": "Experiential Labs · The open source AI gateway",
+      "url": "https://www.experientiallabs.ai/",
+      "snippet": "Experiential Labs The open source AI gateway, written in Rust. Every model, your keys, your limits, at provider price."
+    },
+    {
+      "title": "Nat1anWasTaken (Nat1an) · GitHub",
+      "url": "https://github.com/Nat1anWasTaken",
+      "snippet": "A simple web application for displaying large text with adaptive font sizing Svelte 3 2"
+    },
+    {
+      "title": "AI Model Radar — real-time AI model release tracking",
+      "url": "https://aimodelradar.app/",
+      "snippet": "The moment a new AI model appears on the radar, know what it is and what changed. Tracking OpenAI, Anthropic, Google and open-source releases."
+    }
+  ]
+}

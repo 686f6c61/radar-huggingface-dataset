@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "davidheineman/opd-teacher-R1Distill-CRT-step149",
+  "slug": "davidheineman-opd-teacher-r1distill-crt-step149",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/opd-teacher-R1Distill-CRT-step149",
+  "created_at": "2026-09-30T16:01:22.000Z",
+  "updated_at": "2026-09-30T16:08:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rlve",
+    "grpo",
+    "opd-teacher",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RLVE OPD Teachers - a davidheineman Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/davidheineman/rlve-opd-teachers",
+      "snippet": "Qwen 2.5 1.5B Instruct trained for 150 steps on a single env from https://arxiv.org/abs/2511.07317 (32 of 400 envs)"
+    },
+    {
+      "title": "davidheineman/opd-teacher-Q2.5I-Differentiate-step149",
+      "url": "https://featherless.ai/models/davidheineman/opd-teacher-Q2.5I-Differentiate-step149",
+      "snippet": "This suggests a strong proficiency in tasks related to differentiation, likely within a simulated or structured problem-solving context. Experimental Purpose: The model is part of a larger 32-environment on-policy distillation experiment, highlighting its role in research and development for RL-driven language model applications."
+    },
+    {
+      "title": "Rethinking On-Policy Distillation of Large Language Models II: One ...",
+      "url": "https://arxiv.org/pdf/2609.04172v1",
+      "snippet": "We examine this role at the data-minimal limit by training on a single query. One-shot OPD keeps improving for hundreds of steps and recovers most of full-data OPD&#x27;s gain across task domains and model families. We explain this result through the states visited during training and the rate at which the student aligns with the teacher."
+    },
+    {
+      "title": "davidheineman (David Heineman) - Hugging Face",
+      "url": "https://huggingface.co/davidheineman",
+      "snippet": "User profile of David Heineman on Hugging Face"
+    },
+    {
+      "title": "David Heineman",
+      "url": "https://davidheineman.com/",
+      "snippet": "David Heineman Hey! I&#x27;m David 👋 I&#x27;m a first year Ph.D. student at Stanford, working on pretraining, data and evaluation for language models."
+    }
+  ]
+}

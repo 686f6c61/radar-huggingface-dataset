@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-python-basics-v1-r0000-merge",
+  "slug": "mdagosta-waldito-python-basics-v1-r0000-merge",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0000-merge",
+  "created_at": "2026-09-30T14:42:39.000Z",
+  "updated_at": "2026-09-30T14:42:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9541632,
+  "parameters_human": "9.5M",
+  "storage_bytes": 19089664,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mdagosta/waldito-python-basics-v1-r0000-merge · Hugging Face",
+      "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0000-merge",
+      "snippet": "Instructions to use mdagosta/waldito-python-basics-v1-r0000-merge with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Model merging - Hugging Face",
+      "url": "https://huggingface.co/docs/peft/v0.15.0/developer_guides/model_merging",
+      "snippet": "Model merging offers a solution to these challenges by combining multiple pretrained models into one model, giving it the combined abilities of each individual model without any additional training. PEFT provides several methods for merging models like a linear or SVD combination."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GitHub - PavanMudigonda/zero-to-ai: Free AI/ML course with 950+ Jupyter ...",
+      "url": "https://github.com/PavanMudigonda/zero-to-ai",
+      "snippet": "Zero to AI is a free, open-source AI course and machine learning curriculum for learning Python, data science, deep learning, large language models (LLMs), retrieval-augmented generation (RAG), AI agents, prompt engineering, fine-tuning, and MLOps through 950+ hands-on Jupyter notebooks. Use the live site for the guided learning experience at zero-to-ai.dev, and use this GitHub repo as the ..."
+    },
+    {
+      "title": "GitHub - sudipta002/model-merge-recipe: A developer sandbox built to ...",
+      "url": "https://github.com/sudipta002/model-merge-recipe",
+      "snippet": "The \"Model Merging Recipe\" Playground 🌐🧪 Welcome to the Model Merging Recipe Playground —a developer sandbox built to demonstrate the geometry of weight-space model checkpoints and help engineers design optimized configurations for merging Large Language Models."
+    }
+  ]
+}

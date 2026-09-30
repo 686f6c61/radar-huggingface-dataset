@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "abdullah20232023/AeroYOLO",
+  "slug": "abdullah20232023-aeroyolo",
+  "author": "abdullah20232023",
+  "url": "https://huggingface.co/abdullah20232023/AeroYOLO",
+  "created_at": "2026-09-30T14:17:41.000Z",
+  "updated_at": "2026-09-30T14:17:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "yolo11",
+    "object-detection",
+    "computer-vision",
+    "aerial-surveillance",
+    "drone-detection",
+    "uav",
+    "unmanned-aerial-vehicles",
+    "aircraft",
+    "aviation",
+    "edge-ai",
+    "real-time",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5478618,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QuincySorrentino/AeroYOLO · Hugging Face",
+      "url": "https://huggingface.co/QuincySorrentino/AeroYOLO",
+      "snippet": "Training Details Citation Aircraft & Drone Detector - YOLO11n YOLO11n model trained to detect aircraft, helicopters, and drones in images. Model Details"
+    },
+    {
+      "title": "QuincySorrentino/AeroYOLO at main - Hugging Face",
+      "url": "https://huggingface.co/QuincySorrentino/AeroYOLO/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF AeroYOLO: Efficient Multiscale and Attention-Augmented YOLOv8s for ...",
+      "url": "https://xplorestaging.ieee.org/ielx8/6287639/10820123/11165321.pdf?arnumber=11165321&isnumber=10820123",
+      "snippet": "We propose progressively enhanced YOLOv8s-based models AeroYOLO-Fusion, AeroYOLO-Attn, and AeroYOLO-Lite addressing imbalance problems and efficiency challenges through multiscale fusion, attention mechanism, and lightweight architecture."
+    },
+    {
+      "title": "PDF Aero-YOLO: An Efficient Algorithm for Small Object Detection ... - Springer",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-981-92-3507-0_17.pdf?pdf=inline%20link",
+      "snippet": "First, regarding scale hierarchy reconstruction, the model leverages UAV scale pri-ors to prune the P5 layer, which focuses on macro-scale objects, and introduces a high-resolution P2 layer, enabling the network&#x27;s receptive field to focus on pixel-level fine-grained features."
+    },
+    {
+      "title": "Aero-YOLO: An Efficient Algorithm for Small Object Detection in UAV ...",
+      "url": "https://dl.acm.org/doi/10.1007/978-981-92-3507-0_17",
+      "snippet": "Compared with other mainstream detectors, Aero-YOLO exhibits a superior balance between accuracy and lightweight deployment, providing an efficient solution for real-time UAV detection. The model&#x27;s robustness is further validated on the UAVOD-10 dataset."
+    }
+  ]
+}

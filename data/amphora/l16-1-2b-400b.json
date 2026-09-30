@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "amphora/L16-1.2B-400B",
+  "slug": "amphora-l16-1-2b-400b",
+  "author": "amphora",
+  "url": "https://huggingface.co/amphora/L16-1.2B-400B",
+  "created_at": "2026-09-30T03:30:21.000Z",
+  "updated_at": "2026-09-30T08:25:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "es",
+    "zh",
+    "id",
+    "ko",
+    "ja",
+    "tr",
+    "fa",
+    "de",
+    "hu",
+    "ar",
+    "vi",
+    "fi",
+    "el",
+    "th",
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "pretraining",
+    "multilingual",
+    "muon",
+    "intermediate-checkpoint",
+    "ru",
+    "es",
+    "zh",
+    "id",
+    "ko",
+    "ja",
+    "tr",
+    "fa",
+    "de",
+    "hu",
+    "ar",
+    "vi",
+    "fi",
+    "el",
+    "th",
+    "hi",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1159795968,
+  "parameters_human": "1.16B",
+  "storage_bytes": 4639206776,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama 4 Maverick 400B — specs, VRAM, benchmarks (400B) | BestLLMfor",
+      "url": "https://bestllmfor.com/catalog/llama-4-maverick/",
+      "snippet": "Llama 4 Maverick 400B: 400B parameters, Llama 4 Community license, 976k context, 240 GB VRAM at Q4. Full specs, benchmarks, install command."
+    },
+    {
+      "title": "LLM Hardware Requirements Calculator (2026) | ModelFit",
+      "url": "https://modelfit.io/calculator/",
+      "snippet": "Free local LLM calculator: enter your RAM or GPU VRAM and see which AI models you can run. 16GB fits ~14B, 32GB ~35B, 64GB+ up to ~70B."
+    },
+    {
+      "title": "Meta Llama 4: The Open-Source AI That Changes Everything",
+      "url": "https://aifirstfounders.com/blog/llama-4-complete-guide-2026.html",
+      "snippet": "Meta&#x27;s Llama 4 is the most powerful open-source AI model family ever released. With 10 million token context, 128 mixture-of-experts, and native multimodal support, it&#x27;s changing how founders build AI products. Here&#x27;s everything you need to know."
+    },
+    {
+      "title": "Llama 4 Meta Guide 2026 — Scout, Maverick & Behemoth Explained ...",
+      "url": "https://singularitymoments.com/llama-4-meta-guide/",
+      "snippet": "Llama 4 Meta Guide 2026 Meta&#x27;s Llama 4 is the most ambitious open-weights AI release in history. The Scout model packs 109B total parameters into a Mixture-of-Experts architecture that only activates 17B at inference — yet achieves a 10 million-token context window. Maverick surpasses GPT-4o on multimodal reasoning. And Behemoth, the 2-trillion parameter teacher model still training ..."
+    },
+    {
+      "title": "Llama 4 (400B) Review - Ai-Bitz",
+      "url": "https://ai-bitz.com/models/llama-4-400b",
+      "snippet": "The Llama 4 (400B) represents a significant leap forward in Meta&#x27;s lineup. Released in 2025-07-22, it targets developers and enterprise use cases with a specific focus on reasoning capabilities over raw conversational speed. While previous iterations in the Open Source category often struggled with complex multi-step instruction following, this model introduces a refined architecture that ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "qhoenix/slate-heron",
+  "slug": "qhoenix-slate-heron",
+  "author": "qhoenix",
+  "url": "https://huggingface.co/qhoenix/slate-heron",
+  "created_at": "2026-09-30T03:25:24.000Z",
+  "updated_at": "2026-09-30T03:25:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "torchvision",
+  "languages": [],
+  "tags": [
+    "torchvision",
+    "safetensors",
+    "image-classification",
+    "adversarial-training",
+    "efficientnet",
+    "perturb",
+    "bittensor",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 119027848,
+  "parameters_human": "119.0M",
+  "storage_bytes": 476270032,
+  "storage_human": "476 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phoenix made of magic crystals on black background - Facebook",
+      "url": "https://www.facebook.com/groups/bingprompts/posts/1437554800980515/",
+      "snippet": "20.07.2024 ... Check out this breathtaking image brought to life by \"CleverCreator AI\"! Feel inspired? Prompt: A close-up of a majestic sapphire phoenix ..."
+    },
+    {
+      "title": "Model Homes in Phoenix - NewBuilt",
+      "url": "https://www.newbuilt.com/phoenix/model-homes",
+      "snippet": "Heron. Montana Vista, Buckeye. 24182 W Sheraton Ln, Buckeye. 1,866 ft²3 Beds2 ... Slate. Portfolio at White Tank Foothills, Waddell. 8380 N. 185th Lane ..."
+    },
+    {
+      "title": "Technology Trends Outlook 2025 - McKinsey",
+      "url": "https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/the%20top%20trends%20in%20tech%202025/mckinsey-technology-trends-outlook-2025.pdf",
+      "snippet": "01.07.2025 ... the Inf2 chip used in AI model inference.6. Google continued to ... operations in Phoenix.11 The expansion includes plans for three new ..."
+    },
+    {
+      "title": "Bibliography of the Herons of the World - HeronConservation",
+      "url": "https://heronconservation.org/conservation/bibliography/",
+      "snippet": "Phoenix, 18. Al Safadi, M. M. and Kasparek, M ... Validation of the Great Blue Heron HSI model reproductive index for the south-central Great Plains."
+    },
+    {
+      "title": "Who Owns AI?",
+      "url": "https://papers.ssrn.com/sol3/Delivery.cfm/6920478.pdf?abstractid=6920478&mirid=1",
+      "snippet": "11.05.2026 ... Rapidly growing demand for AI models is filtering through the entire supply chain for model development: AI applications, model developers ..."
+    }
+  ]
+}

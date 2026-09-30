@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "viveknairly/vit-multitask-run1",
+  "slug": "viveknairly-vit-multitask-run1",
+  "author": "viveknairly",
+  "url": "https://huggingface.co/viveknairly/vit-multitask-run1",
+  "created_at": "2026-09-30T03:31:45.000Z",
+  "updated_at": "2026-09-30T03:31:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arthurandrade/vit-multitask69 · Hugging Face",
+      "url": "https://huggingface.co/arthurandrade/vit-multitask69",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "viveknairly (अनन्या रेड्डी) - Hugging Face",
+      "url": "https://huggingface.co/viveknairly",
+      "snippet": "Working on AI projects: transformers, datasets and fine-tuning."
+    },
+    {
+      "title": "GitHub - jpoberhauser/ViTMultiTask: Using the simplest ViT backbone to ...",
+      "url": "https://github.com/jpoberhauser/ViTMultiTask",
+      "snippet": "Using the simplest ViT backbone to combine pose, object detection, and instance segmentation into a single model that shares a backbone and is good at multi-task outputs. Can benefit from big pre-training jobs in a self-supervised way."
+    },
+    {
+      "title": "CoMAE/models_vit_multitask.py at main · MCG-NJU/CoMAE",
+      "url": "https://github.com/MCG-NJU/CoMAE/blob/main/models_vit_multitask.py",
+      "snippet": "[AAAI 2023 Oral] CoMAE: Single Model Hybrid Pre-training on Small-Scale RGB-D Datasets - CoMAE/models_vit_multitask.py at main · MCG-NJU/CoMAE"
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    }
+  ]
+}

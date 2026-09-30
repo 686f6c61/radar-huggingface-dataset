@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Hirt556/Huihui-Qwen3.8-27B-abliterated-GGUF",
+  "slug": "hirt556-huihui-qwen3-8-27b-abliterated-gguf",
+  "author": "Hirt556",
+  "url": "https://huggingface.co/Hirt556/Huihui-Qwen3.8-27B-abliterated-GGUF",
+  "created_at": "2026-09-30T14:38:38.000Z",
+  "updated_at": "2026-09-30T14:38:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "qwen3",
+    "unsloth",
+    "ternary",
+    "2-bit",
+    "llama-cpp",
+    "cuda",
+    "metal",
+    "on-device",
+    "hybrid-attention",
+    "prismml",
+    "bonsai",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 703071597504,
+  "storage_human": "703.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF at main",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui Qwen3.8 27B abliterated GGUF - YouRunAI",
+      "url": "https://www.yourunai.com/models/huihui-ai-huihui-qwen3-8-27b-abliterated-gguf-479186",
+      "snippet": "Huihui Qwen3.8 27B abliterated GGUF is a proof-of-concept, uncensored GGUF conversion of Qwen/Qwen3.8-27B created by abliteration, distributed by huihui-ai under apache-2.0. The repository offers several GGUF series derived from different base GGUF sources, including bf16, UD, UD-DW, GSQ-RCO, and Ternary variants. Abliteration is applied to selected layer ranges, with differences between ..."
+    },
+    {
+      "title": "Huihui Qwen3.8 27b Abliterated - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/huihui-qwen3-8-27b-abliterated.html",
+      "snippet": "Download Huihui Qwen3.8 27b Abliterated GGUF model. 56.7 GB, 2,682,158 downloads, 709 likes."
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF - abliteration.org",
+      "url": "https://abliteration.org/models/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
+      "snippet": "Huihui-Qwen3.8-27B-abliterated-GGUF by huihui-ai: M8 Repackaging (quantization). 2.2M downloads, 912 likes on Hugging Face. Files, benchmarks and abliteration classification on abliteration.org."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Srikarraod/ppo-LunarLander-v2-custom",
+  "slug": "srikarraod-ppo-lunarlander-v2-custom",
+  "author": "Srikarraod",
+  "url": "https://huggingface.co/Srikarraod/ppo-LunarLander-v2-custom",
+  "created_at": "2026-09-30T16:14:11.000Z",
+  "updated_at": "2026-09-30T16:14:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "LunarLander-v2",
+    "deep-rl-course",
+    "ppo",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pedantix.certitudes.org - pédantix - Découvrez la page Wikipédia",
+      "url": "http://pedantix.certitudes.org/",
+      "snippet": "Découvrez la page Wikipédia ! Le but du jeu est de découvrir la page Wikipédia en révélant les mots qui composent son introduction …"
+    },
+    {
+      "title": "Pédantix du jour #1598 : Indice et solution - Alucare",
+      "url": "https://www.alucare.fr/pedantix-du-jour-indice-et-solution/",
+      "snippet": "Solution du Pédantix #1598 du 27 septembre 2026 : la réponse est en bas de page (attention au spoil), et 3 indices progressifs sont …"
+    },
+    {
+      "title": "Pédantix : Jouer Gratuitement, Règles et Astuces",
+      "url": "https://jeux-du-jour.fr/jeu/pedantix/",
+      "snippet": "Aug 31, 2026 · Si vous aimez Pédantix, vous apprécierez probablement Cémantix, Contexto, Pedantix. Ces jeux partagent le même …"
+    },
+    {
+      "title": "Pédantix — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/P%C3%A9dantix",
+      "snippet": "Liens externes Site officiel [archive] Pedantix : Règles, indices et astuces indispensables. Sur le site 21e Siècle.org [archive]. Le jeu …"
+    },
+    {
+      "title": "Pedantix : Le Jeu de Devinettes en Français | 100 Niveaux à Découvrir",
+      "url": "https://pedantix.fr/",
+      "snippet": "Découvrez Pedantix, le jeu de devinettes ultime avec 100 niveaux uniques. Testez votre vocabulaire, résolvez des énigmes et …"
+    }
+  ]
+}

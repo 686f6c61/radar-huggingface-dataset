@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kunthawat/swift-1.5-qwen3.8-27b-with-unsloth-iq3-xxs-gguf",
+  "slug": "kunthawat-swift-1-5-qwen3-8-27b-with-unsloth-iq3-xxs-gguf",
+  "author": "kunthawat",
+  "url": "https://huggingface.co/kunthawat/swift-1.5-qwen3.8-27b-with-unsloth-iq3-xxs-gguf",
+  "created_at": "2026-09-30T03:03:59.000Z",
+  "updated_at": "2026-09-30T03:50:24.000Z",
+  "license": "swift-open-license-v1.0-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_8",
+    "swift",
+    "vision",
+    "multimodal",
+    "speculative-decoding",
+    "mtp",
+    "iq3_xxs",
+    "image-text-to-text",
+    "base_model:ukisai/Swift-1.5-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-1.5-Qwen3.8-27b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 11862466976,
+  "storage_human": "11.9 GB",
+  "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Swift 1.5 Qwen3.8-27B | UkisAI",
+      "url": "https://ukisai.com/swift-1-5-27b",
+      "snippet": "The results below compare Qwen3.8-27B, the foundation base model, Swift 1.0, the first UkisAI adaptation, and Swift 1.5. All three use the same saved evaluation protocols, and every score is a final five-repeat aggregate."
+    },
+    {
+      "title": "Swift-1.5-Qwen3.8-27B-GSQ-RCO-IQ3_S-mtp.gguf - Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF/blob/main/Swift-1.5-Qwen3.8-27B-GSQ-RCO-IQ3_S-mtp.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ukisai/Swift-1.5-Qwen3.8-27b-INT4 · Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b-INT4",
+      "snippet": "The external results below compare Qwen3.8-27B, the foundation base model, and Swift 1.5. Both models use the same saved evaluation protocols, and all scores are reported as final aggregate percentages."
+    },
+    {
+      "title": "Qwen3.8-27B - unsloth.ai",
+      "url": "https://unsloth.ai/models/qwen3.8-27b",
+      "snippet": "Qwen3.8-27B is a hybrid thinking open model for agentic coding and chat. Run Qwen3.8-27B locally via Unsloth Dynamic GGUFs and Unsloth Desktop."
+    },
+    {
+      "title": "Models - UkisAI",
+      "url": "https://ukisai.com/models",
+      "snippet": "Swift 1.5 Qwen3.8-27B is UkisAI&#x27;s reasoning-efficient derivative of Qwen3.8-27B. It uses 58.5% fewer thinking tokens while scoring 0.35% higher than the base, for a 9.18× speed-up on several tasks."
+    }
+  ]
+}

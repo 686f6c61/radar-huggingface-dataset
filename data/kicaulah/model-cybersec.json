@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "Kicaulah/model-cybersec",
+  "slug": "kicaulah-model-cybersec",
+  "author": "Kicaulah",
+  "url": "https://huggingface.co/Kicaulah/model-cybersec",
+  "created_at": "2026-09-30T16:13:50.000Z",
+  "updated_at": "2026-09-30T16:15:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "cybersec",
+    "conversational-ai",
+    "persona",
+    "kicaulah-ai",
+    "kicaulah",
+    "qwen",
+    "qlora",
+    "instruction-tuning",
+    "system-prompt",
+    "assistant",
+    "helpful-assistant",
+    "roleplay",
+    "small-model",
+    "merge-lora",
+    "anti-robotic",
+    "natural-language",
+    "english",
+    "text-generation",
+    "chat",
+    "sft",
+    "emotion",
+    "empathy",
+    "domain-expert",
+    "openai-compatible",
+    "api-server",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kicaulah (Kicaulah) - Hugging Face",
+      "url": "https://huggingface.co/Kicaulah/models",
+      "snippet": "User profile of Kicaulah on Hugging Face Kicaulah/Dataset_script_for_ai:Upload script dataset 3 domain .zip"
+    },
+    {
+      "title": "Best AI Models for Cybersecurity (September 2026): Cyber Benchmarks ...",
+      "url": "https://benchlm.ai/cybersecurity",
+      "snippet": "What is the best AI model for cybersecurity? There is no defensible single winner across the public evidence. GPT-5.6 Sol has the broadest mix of provider and independent cyber results in this snapshot, while GPT-6 Astra reports the highest provider-run ExploitBench result (100, against 78 for Claude Mythos 5)."
+    },
+    {
+      "title": "CySecBench: Generative AI-based CyberSecurity-focused ... - GitHub",
+      "url": "https://github.com/cysecbench/dataset",
+      "snippet": "The largest and most comprehensive Generative AI-based CyberSecurity-focused Dataset for Benchmarking Large Language Models 🌟 Overview The CySecBench paper offers: 🎯 A cutting-edge dataset of 12662 prompts tailored to cybersecurity challenges. 🧠 Novel jailbreaking methods leveraging prompt obfuscation and refinement."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=cybersecurity",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Awesome List on AI for Security - GitHub",
+      "url": "https://github.com/AmanPriyanshu/Awesome-AI-For-Security",
+      "snippet": "Awesome AI Security - Complementary list focusing on AI security rather than AI for security applications. Awesome AI4DevSecOps - Recent integration of AI technologies within DevSecOps frameworks and methodologies. Awesome-MCP-Security - Definitive resource covering all aspects of Model Context Protocol security."
+    }
+  ]
+}

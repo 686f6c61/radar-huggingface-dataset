@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "hharsha/agentic-github-tagger",
+  "slug": "hharsha-agentic-github-tagger",
+  "author": "hharsha",
+  "url": "https://huggingface.co/hharsha/agentic-github-tagger",
+  "created_at": "2026-09-30T16:22:03.000Z",
+  "updated_at": "2026-09-30T16:25:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "peft",
+    "agents",
+    "rag",
+    "llmops",
+    "lora",
+    "en",
+    "dataset:hharsha/agentic-github-meta",
+    "base_model:google-t5/t5-small",
+    "base_model:adapter:google-t5/t5-small",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60506624,
+  "parameters_human": "60.5M",
+  "storage_bytes": 484083792,
+  "storage_human": "484 MB",
+  "base_model": "google-t5/t5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - harsha-21s/agentic-ai",
+      "url": "https://github.com/harsha-21s/agentic-ai",
+      "snippet": "Contribute to harsha-21s/agentic-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "Best LLMs for Agentic — September 2026 Leaderboard - benchlm.ai",
+      "url": "https://benchlm.ai/agentic",
+      "snippet": "Compare 514 AI models on agentic benchmarks for tool use, browser research, and multi-step computer tasks. See which models handle terminal work, API tools, and software interfaces most reliably."
+    },
+    {
+      "title": "Agent Hijacks: How Conversation History Poisoning Can Turn AI Agents ...",
+      "url": "https://www.darktrace.com/blog/hijacking-agentic-harnesses-to-attack-an-organization",
+      "snippet": "New research reveals how agentic AI harnesses can be hijacked, turning a workstation into an autonomous attacker. Using conversation history poisoning, researchers convinced a frontier model it was an authorized red teamer, exposing how common AI workflows may be weaponized through a single package install."
+    },
+    {
+      "title": "Agentic Systems Portfolio - a Hugging Face Space by hharsha",
+      "url": "https://huggingface.co/spaces/hharsha/agent-portfolio",
+      "snippet": "Agentic Systems Studio — portfolio Hanumanthu Harsha Vardhan · AI Engineer · Nuremberg Website · GitHub @hharsha98 · LinkedIn · HF @hhharsha I build retrieval systems and agent workflows that prefer citations, evals, and honest failure modes over flashy demos. Featured projects"
+    },
+    {
+      "title": "Agentic AI - Data Science with Harsha",
+      "url": "https://www.harshaash.com/hi/Python/Agentic%20AI/",
+      "snippet": "Agentic AI: The Future of Automation Agentic AI is set to change how we interact with technology. While traditional AI often relies on predefined rules and static data, Agentic AI systems exhibit a higher degree of autonomy. They can independently: 1. Perceive and interpret their environment: Gather information and understand the context of a situation. 2. Make decisions: Plan and execute ..."
+    }
+  ]
+}

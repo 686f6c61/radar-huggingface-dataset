@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joseph-smith/mixer-classification-dev",
+  "slug": "joseph-smith-mixer-classification-dev",
+  "author": "joseph-smith",
+  "url": "https://huggingface.co/joseph-smith/mixer-classification-dev",
+  "created_at": "2026-09-30T17:55:15.000Z",
+  "updated_at": "2026-09-30T17:55:20.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Joseph (Nouveau Testament) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Joseph_(Nouveau_Testament)",
+      "snippet": "Joseph (יוֹסֵף (Yosef) en hébreu, ce qui signifie « il ajoutera » ; Ἰωσήφ (Iôséph) en grec), connu sous le nom de saint Joseph par les …"
+    },
+    {
+      "title": "Joseph Joseph FR | Accessoires Cuisine, Salle de Bain & Rangement",
+      "url": "https://fr.josephjoseph.com/",
+      "snippet": "“Joseph Joseph ne nous a jamais déçus avec ses produits innovants et peu encombrants.”"
+    },
+    {
+      "title": "Joseph (fils de Jacob) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Joseph_(fils_de_Jacob)",
+      "snippet": "Joseph (fils de Jacob) ... Joseph, [en hébreu יוֹסֵף (yosef)], [en arabe : يوسف (Yūsuf)], est un personnage de la Bible hébraïque et du …"
+    },
+    {
+      "title": "Joseph (Genesis) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Joseph_(Genesis)",
+      "snippet": "Joseph was the first of the two sons of Jacob and Rachel, making him Jacob's twelfth named child and eleventh son. He is the …"
+    },
+    {
+      "title": "JOSEPH Official | Luxury Designer Fashion for Women",
+      "url": "https://www.joseph-fashion.com/",
+      "snippet": "Discover the world of British-based luxury fashion label JOSEPH. Shop new womenswear collections with worldwide shipping and …"
+    }
+  ]
+}

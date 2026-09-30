@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ololade117/jointscale-normal-t9-29.9M-60000steps-1546607tok",
+  "slug": "ololade117-jointscale-normal-t9-29-9m-60000steps-1546607tok",
+  "author": "Ololade117",
+  "url": "https://huggingface.co/Ololade117/jointscale-normal-t9-29.9M-60000steps-1546607tok",
+  "created_at": "2026-09-30T14:15:56.000Z",
+  "updated_at": "2026-09-30T14:16:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29931520,
+  "parameters_human": "29.9M",
+  "storage_bytes": 119730912,
+  "storage_human": "120 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jointscale-normal-t5-13.7M-30000steps-774658tok - Hugging Face",
+      "url": "https://huggingface.co/Ololade117/jointscale-normal-t5-13.7M-30000steps-774658tok",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Home - YouTube",
+      "url": "https://www.youtube.com/@trending",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Ololade117 · GitHub",
+      "url": "https://github.com/Ololade117/",
+      "snippet": "Ololade117 has 7 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Ololade117/scaling-normal-3.7M-27000steps at main - Hugging Face",
+      "url": "https://huggingface.co/Ololade117/scaling-normal-3.7M-27000steps/tree/main",
+      "snippet": "Ololade117 / scaling-normal-3.7M-27000steps Like 0 Safetensors model_hub_mixin pytorch_model_hub_mixin License:mit Model card FilesFiles and versions xet Community Copy to bucket new main scaling-normal-3.7M-27000steps 14.8 MB Ctrl+K Ctrl+K 1 contributor History:2 commits Ololade117"
+    },
+    {
+      "title": "GitHub - slvDev/esp32-ai",
+      "url": "https://github.com/slvDev/esp32-ai",
+      "snippet": "𝕏 slvDev · LinkedIn This is a 28.9 million parameter language model that generates text on an ESP32-S3 microcontroller. It runs on the chip itself, with nothing sent to a server, and it displays generated text at 9.88 tokens per second on a small screen wired to the chip. It fits because most of the model lives in flash instead of RAM, using Per-Layer Embeddings, an idea from Google&#x27;s ..."
+    }
+  ]
+}

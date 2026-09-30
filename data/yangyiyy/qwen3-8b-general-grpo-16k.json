@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "YangyiYY/qwen3-8b-general-grpo-16k",
+  "slug": "yangyiyy-qwen3-8b-general-grpo-16k",
+  "author": "YangyiYY",
+  "url": "https://huggingface.co/YangyiYY/qwen3-8b-general-grpo-16k",
+  "created_at": "2026-09-30T02:59:29.000Z",
+  "updated_at": "2026-09-30T03:02:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939470,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "In this work, we introduce Qwen3, the latest series in our foundation model family, Qwen. Qwen3 is a collection of open-weight large language models (LLMs) that achieve state-of-the-art performance across a wide variety of tasks and domains. We release both dense and Mixture-of-Experts (MoE) models, with the number of parameters ranging from 0.6 billion to 235 billion, to meet the needs of ..."
+    },
+    {
+      "title": "Qwen3 8B — AI Model Radar",
+      "url": "https://aimodelradar.app/models/qwen3-8b",
+      "snippet": "Qwen3 8B is an open-weights dense 8.2B parameter causal language model from Alibaba&#x27;s Qwen series, designed for reasoning-heavy tasks and efficient dialogue. Released April 2025, it is available under the Apache 2.0 license with open access to weights. The model supports a 131,072 token context window and is suitable for both local deployment and API-based inference."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    }
+  ]
+}

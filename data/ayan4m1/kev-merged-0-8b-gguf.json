@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ayan4m1/kev-merged-0.8b-gguf",
+  "slug": "ayan4m1-kev-merged-0-8b-gguf",
+  "author": "ayan4m1",
+  "url": "https://huggingface.co/ayan4m1/kev-merged-0.8b-gguf",
+  "created_at": "2026-09-30T14:31:53.000Z",
+  "updated_at": "2026-09-30T15:32:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "base_model:ayan4m1/kev-merged-0.8b",
+    "base_model:quantized:ayan4m1/kev-merged-0.8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 4127269568,
+  "storage_human": "4.1 GB",
+  "base_model": "ayan4m1/kev-merged-0.8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jaredpalmer/kev: Jev-like family of decision models built on ...",
+      "url": "https://github.com/jaredpalmer/kev",
+      "snippet": "What to Expect says where Kev is as good as Jev and where it isn&#x27;t. Kev-0.8B, 4B and 9B start from Qwen base models and share one training recipe. Kev-27B starts from Qwen&#x27;s post-trained release, and we don&#x27;t know what that was trained on. Each model card has the full recipe, all results, and the earlier versions kept as Hub tags."
+    },
+    {
+      "title": "DreamBlooms/kev-0.8b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/DreamBlooms/kev-0.8b-GGUF",
+      "snippet": "Kev-0.8B is a decision model: one document (the state) and a set of typed questions in, a probability distribution per question out, in one forward pass. No text generation."
+    },
+    {
+      "title": "espetro/kev-0.8b-demo-gguf · Hugging Face",
+      "url": "https://huggingface.co/espetro/kev-0.8b-demo-gguf",
+      "snippet": "This is a demo quantization. 466 MB download for quick trials and the browser demo. Probabilities can drift up to ~0.1 vs the full-precision model and confidence is approximate - it shows how System One answers work, not what a production deployment should ship. For the best-calibrated artifact use espetro/kev-.8b-gguf (q8_0, 814 MB)."
+    },
+    {
+      "title": "ayan4m1 Creator Profile | Civitai",
+      "url": "https://civitai.com/user/ayan4m1/models",
+      "snippet": "ayan4m1 on Civitai: 272 images and 45 AI models, followed by 93 people. Download or generate online."
+    },
+    {
+      "title": "Releases · jaredpalmer/kev - GitHub",
+      "url": "https://github.com/jaredpalmer/kev/releases",
+      "snippet": "The current Kev family: Kev-27B, Kev-9B, Kev-4B, Kev-0.8B. Open decision models: typed questions in, calibrated probabilities out, one forward pass, no text generation. Each is a LoRA adapter (r=16) plus a pointer head on a frozen Qwen base, which downloads on first load. This release holds only the current best version of each size; every earlier version stays on the Hub (below)."
+    }
+  ]
+}

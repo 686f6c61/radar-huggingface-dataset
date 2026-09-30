@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ResidentEvian/hf_act_recordpolicy0",
+  "slug": "residentevian-hf_act_recordpolicy0",
+  "author": "ResidentEvian",
+  "url": "https://huggingface.co/ResidentEvian/hf_act_recordpolicy0",
+  "created_at": "2026-09-30T14:41:13.000Z",
+  "updated_at": "2026-09-30T14:41:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:ResidentEvian/bottle-cap-pick-up",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thanhnguyen23/hf_act_recordpolicy0 · Hugging Face",
+      "url": "https://huggingface.co/thanhnguyen23/hf_act_recordpolicy0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "iFaz/hf_act_recordpolicy0 · Hugging Face",
+      "url": "https://huggingface.co/iFaz/hf_act_recordpolicy0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "hf_act_recordpolicy0: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-tigerblob99-hf-act-recordpolicy0",
+      "snippet": "hf_act_recordpolicy0 is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "hf_act_recordpolicy0 — AI Compliance Status Across 52 Jurisdictions | Nerq",
+      "url": "https://nerq.ai/agent/00d15b50-ba02-40b7-b18e-6bd87f2cd590",
+      "snippet": "Compliance Status Across 52 Jurisdictions Each jurisdiction has unique AI regulation requirements. This table shows how hf_act_recordpolicy0 is classified under each jurisdiction&#x27;s specific rules based on its type (model), domain (general), and risk indicators."
+    }
+  ]
+}

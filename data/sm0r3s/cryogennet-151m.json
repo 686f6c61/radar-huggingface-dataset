@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Sm0r3s/CryogenNet-151M",
+  "slug": "sm0r3s-cryogennet-151m",
+  "author": "Sm0r3s",
+  "url": "https://huggingface.co/Sm0r3s/CryogenNet-151M",
+  "created_at": "2026-09-30T17:31:56.000Z",
+  "updated_at": "2026-09-30T17:36:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "cryogennet",
+    "language-model",
+    "custom-architecture",
+    "recurrent",
+    "cryogenai",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 377901666,
+  "storage_human": "378 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/YTM",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YTM - YouTube",
+      "url": "https://www.youtube.com/@heyitsytm",
+      "snippet": "Here is the official music video of \"Are You With Me? (With My Mistakes)\". Lyrics: https://genius.com/Ytm-be-are-you-wit..."
+    },
+    {
+      "title": "YTM Lilvent - YouTube Music",
+      "url": "https://music.youtube.com/search?q=ytm",
+      "snippet": "Video • Sicario World 🌍 • 3.4K views YTM Music Artist • 1 subscriber ytm lilvent Playlist • Ck Muniz • 237 views"
+    },
+    {
+      "title": "Yield to Maturity (YTM): What It Is and How It Works",
+      "url": "https://www.investopedia.com/terms/y/yieldtomaturity.asp",
+      "snippet": "Feb 3, 2026 · Yield to maturity (YTM) is the total return expected on a bond held until maturity. Learn how it's calculated and why it …"
+    }
+  ]
+}

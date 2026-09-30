@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-krea2-cc-ins-lora",
+  "slug": "runninghubai-rh-krea2-cc-ins-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-krea2-cc-ins-lora",
+  "created_at": "2026-09-30T14:21:02.000Z",
+  "updated_at": "2026-09-30T14:22:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 345252684,
+  "storage_human": "345 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-krea.2-ai-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea.2-ai-lora",
+      "snippet": "Description ... About this model 精准消除Krea 2滤镜过度渲染及AI痕迹，呈现自然真实质感 This repository provides rh-krea.2-ai-lora weight files. You can load them on RunningHub. Finetuned from: krea2"
+    },
+    {
+      "title": "RunningHubAI/rh-krea2-cc-lora at main - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-cc-lora/tree/main",
+      "snippet": "Like 0 Image-Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new main rh-krea2-cc-lora 233 MB Ctrl+K Ctrl+K 1 contributor History:3 commits RunningHubAI Upload RunningHub model 2077736613781786625 d4db6d7 verifiedabout 2 hours ago .gitattributes Safe 1.57 kBUpload RunningHub model ..."
+    },
+    {
+      "title": "krea2-Cc-Ins-style-portrait - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/model/public/2082085635376021506",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHub Models ｜ AI Model Creation & Training Platform",
+      "url": "https://www.runninghub.ai/models",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "GitHub - CaptainGrock/Krea2Trainer: Automated wrapper to make training ...",
+      "url": "https://github.com/CaptainGrock/Krea2Trainer",
+      "snippet": "Krea 2 LoRA Trainer lets you train a LoRA (Low-Rank Adaptation) on top of the Krea 2 image generation model. A LoRA is a small adapter file (~50-200 MB) that teaches the base model a new style, person, object, or concept from your own images. What you can train: A person&#x27;s likeness (face, style) An artistic style A specific object or product A consistent character What this tool provides: One ..."
+    }
+  ]
+}

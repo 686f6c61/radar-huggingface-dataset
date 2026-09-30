@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jjeyxb/mia-mortal-style",
+  "slug": "jjeyxb-mia-mortal-style",
+  "author": "jjeyxb",
+  "url": "https://huggingface.co/jjeyxb/mia-mortal-style",
+  "created_at": "2026-09-30T19:13:11.000Z",
+  "updated_at": "2026-09-30T19:15:27.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "mahjong",
+    "riichi",
+    "mahjong-ai",
+    "offline-rl",
+    "conservative-q-learning",
+    "zh",
+    "en",
+    "base_model:VoidShine/mortal-298k",
+    "base_model:finetune:VoidShine/mortal-298k",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 655393101,
+  "storage_human": "655 MB",
+  "base_model": "VoidShine/mortal-298k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    },
+    {
+      "title": "mia_style - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1868164693046047490",
+      "snippet": "Generate stunning anime art with the &#x27;mia_style&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "PixAI Model Market | 1.8M+ AI Art Models and LoRAs",
+      "url": "https://pixai.art/en/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.8M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    },
+    {
+      "title": "Mia (@mia.ai.art) • Instagram photos and videos",
+      "url": "https://www.instagram.com/mia.ai.art/",
+      "snippet": "50K Followers, 65 Following, 888 Posts - Mia (@mia.ai.art) on Instagram: \"AI models 🥰 Digital art 🎨\""
+    }
+  ]
+}

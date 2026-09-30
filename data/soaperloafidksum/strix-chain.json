@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Soaperloafidksum/STRIX-Chain",
+  "slug": "soaperloafidksum-strix-chain",
+  "author": "Soaperloafidksum",
+  "url": "https://huggingface.co/Soaperloafidksum/STRIX-Chain",
+  "created_at": "2026-09-30T17:49:37.000Z",
+  "updated_at": "2026-09-30T17:51:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.5",
+    "coding",
+    "reasoning",
+    "experimental",
+    "text-generation",
+    "conversational",
+    "en",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895993856,
+  "parameters_human": "26.90B",
+  "storage_bytes": 15153032838,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen3.5",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - usestrix/strix: Open-source AI penetration testing tool to ...",
+      "url": "https://github.com/usestrix/strix",
+      "snippet": "Get the same Strix experience with enterprise-grade controls: SSO (SAML/OIDC), custom compliance-ready penetration testing reports (SOC 2, ISO 27001, PCI DSS), dedicated support and SLA, custom deployment options (VPC or self-hosted), BYOK model support, and tailored AI pentesting agents optimized for your environment. Try Strix Enterprise →"
+    },
+    {
+      "title": "AI Agents Breach 27 Firms, Steal 600K Cards [2026]",
+      "url": "https://tech-insider.org/ai-agents-hermes-strix-cairn-breach-27-firms-2026/",
+      "snippet": "Hermes, Strix, and Cairn: 3 open-source AI agents breached 27+ firms for $25/scan, stealing 600K+ credit cards, Gambit reports."
+    },
+    {
+      "title": "Soaperloafidksum (MK4 Research) - Hugging Face",
+      "url": "https://huggingface.co/Soaperloafidksum/models",
+      "snippet": "AI & ML interests I work on methods that give language models controlled, intentional, and context-aware creative behavior. My projects focus on separating grounded reasoning from imaginative output and building systems that regulate creativity rather than relying on random sampling."
+    },
+    {
+      "title": "Soaperloafidksum (MK4 Research) - Hugging Face",
+      "url": "https://huggingface.co/Soaperloafidksum/datasets",
+      "snippet": "I work on methods that give language models controlled, intentional, and context-aware creative behavior. My projects focus on separating grounded reasoning from imaginative output and building sys..."
+    },
+    {
+      "title": "Strix · GitHub",
+      "url": "https://github.com/usestrix/",
+      "snippet": "Strix is an open-source, agentic security platform that helps teams identify exploitable vulnerabilities and security misconfigurations across modern apps. Strix runs AI agents that plan, investigate, and validate issues end-to-end, producing actionable findings you can remediate quickly."
+    }
+  ]
+}

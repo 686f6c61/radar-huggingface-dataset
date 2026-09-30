@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "maheeswar/Reinforce-Pixelcopter-PLE-v0",
+  "slug": "maheeswar-reinforce-pixelcopter-ple-v0",
+  "author": "maheeswar",
+  "url": "https://huggingface.co/maheeswar/Reinforce-Pixelcopter-PLE-v0",
+  "created_at": "2026-09-30T16:27:53.000Z",
+  "updated_at": "2026-09-30T16:27:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "reinforce",
+  "languages": [],
+  "tags": [
+    "reinforce",
+    "reinforcement-learning",
+    "Pixelcopter-PLE-v0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 260,
+  "storage_human": "260 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mythhh18/Reinforce-Pixelcopter-PLE-v0 · Hugging Face",
+      "url": "https://huggingface.co/Mythhh18/Reinforce-Pixelcopter-PLE-v0",
+      "snippet": "Mythhh18 / Reinforce-Pixelcopter-PLE-v0 Like 0 Reinforcement Learning Pixelcopter-PLE-v0 reinforce custom-implementation deep-rl-class Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new Reinforce Agent playing Pixelcopter-PLE-v0"
+    },
+    {
+      "title": "Bear-ai/Reinforce-Pixelcopter-PLE-v0 · Hugging Face",
+      "url": "https://huggingface.co/Bear-ai/Reinforce-Pixelcopter-PLE-v0",
+      "snippet": "Bear-ai / Reinforce-Pixelcopter-PLE-v0 like 0 Reinforcement Learning Pixelcopter-PLE-v0 reinforce custom-implementation deep-rl-class Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new Reinforce Agent playing Pixelcopter-PLE-v0"
+    },
+    {
+      "title": "IWR/Reinforce-Pixelcopter-PLE-v0 · Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/IWR/Reinforce-Pixelcopter-PLE-v0",
+      "snippet": "IWR / Reinforce-Pixelcopter-PLE-v0 like 0 Reinforcement Learning Pixelcopter-PLE-v0 reinforce custom-implementation deep-rl-class Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new Reinforce Agent playing Pixelcopter-PLE-v0"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 514 AI models across 486 benchmarks, with 210 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "1daniar/Reinforce-Pixelcopter-PLE-v0 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/262431",
+      "snippet": "# **Reinforce** Agent playing **Pixelcopter-PLE-v0** This is a trained model of a **Reinforce** agent playing **Pixelcopter-PLE-v0** . To learn to use this model and ..."
+    }
+  ]
+}

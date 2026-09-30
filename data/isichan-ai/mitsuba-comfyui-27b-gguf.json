@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "isichan-ai/Mitsuba-ComfyUI-27B-GGUF",
+  "slug": "isichan-ai-mitsuba-comfyui-27b-gguf",
+  "author": "isichan-ai",
+  "url": "https://huggingface.co/isichan-ai/Mitsuba-ComfyUI-27B-GGUF",
+  "created_at": "2026-09-29T12:35:25.000Z",
+  "updated_at": "2026-09-30T11:31:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ternary",
+    "pq2_0",
+    "ptq1_0",
+    "comfyui",
+    "prompt-generation",
+    "vision",
+    "image-text-to-text",
+    "ja",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 17,
+  "downloads_30d": 2,
+  "trending_score": 17,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 13947000564,
+  "storage_human": "13.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mitsuba-ComfyUI-27B-v1.18-PTQ1_0.gguf · isichan-ai/Mitsuba-ComfyUI-27B ...",
+      "url": "https://huggingface.co/isichan-ai/Mitsuba-ComfyUI-27B-GGUF/blob/main/Mitsuba-ComfyUI-27B-v1.18-PTQ1_0.gguf",
+      "snippet": "Instructions to use isichan-ai/Mitsuba-ComfyUI-27B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use isichan-ai/Mitsuba-ComfyUI-27B-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "GGUF Quantization support for native ComfyUI models",
+      "url": "https://github.com/city96/ComfyUI-GGUF",
+      "snippet": "ComfyUI-GGUF GGUF Quantization support for native ComfyUI models This is currently very much WIP. These custom nodes provide support for model files stored in the GGUF format popularized by llama.cpp. While quantization wasn&#x27;t feasible for regular UNET models (conv2d), transformer/DiT models such as flux seem less affected by quantization."
+    },
+    {
+      "title": "Download Comfy Desktop - Run AI on Your Hardware",
+      "url": "https://comfy.org/download",
+      "snippet": "Download ComfyUI for Windows, macOS, or Linux, or install from GitHub. The full open source engine, free forever, running on your own hardware."
+    },
+    {
+      "title": "GitHub - zamelsky/comfyui: The most powerful and modular diffusion ...",
+      "url": "https://github.com/zamelsky/comfyui",
+      "snippet": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. - zamelsky/comfyui"
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "Empero is an independent AI research lab in Germany building small, efficient language models you can own and run yourself. Latest: Qwen3.8 distilled to 9B / 4B / 2B, and a GDN-aware 27B Ridge GGUF at 11.7 GiB. 1M+ downloads on Hugging Face."
+    }
+  ]
+}

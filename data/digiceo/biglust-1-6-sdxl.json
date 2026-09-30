@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "digiceo/biglust-1.6-sdxl",
+  "slug": "digiceo-biglust-1-6-sdxl",
+  "author": "digiceo",
+  "url": "https://huggingface.co/digiceo/biglust-1.6-sdxl",
+  "created_at": "2026-09-30T14:11:49.000Z",
+  "updated_at": "2026-09-30T14:15:48.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6938058338,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "myGES - Extranet du Réseau GES",
+      "url": "https://www.myges.fr/",
+      "snippet": "Extranet du Réseau des Grandes Écoles Spécialisées (Réseau GES) : ESGI, PPA, ICAN, EIML, ECITV, IPE"
+    },
+    {
+      "title": "myGES.fr - Open Track Digital",
+      "url": "https://www.myges.fr/news/2209",
+      "snippet": "Nov 27, 2020 · Cette année, les étudiants en Mastère Manager des Stratégies de Communication et Marketing 2ème année, ont …"
+    },
+    {
+      "title": "news.myges.fr - SPY :=)",
+      "url": "https://news.myges.fr/",
+      "snippet": "news.myges.fr - SPY :=) ... SPY :=) :=)"
+    },
+    {
+      "title": "myGES - Extranet du Réseau GES",
+      "url": "https://www.myges.fr/stage-sheet/d9f4ab1543d1706f4b7858fdf20650908f474d03",
+      "snippet": "assurez-vous qu'aucun plugin ou module complémentaire installé sur votre navigateur ne bloque les échanges avec myges.fr …"
+    },
+    {
+      "title": "myGES.fr - Renouvellement du partenariat VMWare",
+      "url": "https://www.myges.fr/news/1748",
+      "snippet": "Oct 4, 2019 · À l'occasion de cette nouvelle rentrée académique, l'ESGI renouvelle son partenariat avec VMWare et participe au …"
+    }
+  ]
+}

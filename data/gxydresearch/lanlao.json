@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "gxydResearch/lanlao",
+  "slug": "gxydresearch-lanlao",
+  "author": "gxydResearch",
+  "url": "https://huggingface.co/gxydResearch/lanlao",
+  "created_at": "2026-09-30T03:09:41.000Z",
+  "updated_at": "2026-09-30T03:46:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "decision-model",
+    "jev",
+    "system-one",
+    "lora",
+    "calibration",
+    "single-forward",
+    "text-classification",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25189255,
+  "storage_human": "25 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing LLaMA: A foundational, 65-billion-parameter language model",
+      "url": "https://ai.meta.com/blog/large-language-model-llama-meta-ai/",
+      "snippet": "Today, we&#x27;re releasing our LLaMA (Large Language Model Meta AI) foundational model with a gated release. LLaMA is more efficient and competitive with previously published models of a similar size on existing benchmarks."
+    },
+    {
+      "title": "GEODIFF A GEOMETRIC DIFFUSION MODEL FOR MOLECULAR ... - OpenReview",
+      "url": "https://openreview.net/pdf?id=PzcvxEMzvQC",
+      "snippet": "DIFF, a novel probabilistic model for generating molecular conformations. GEODIFF marries denoising diffusion models with geometric representations, where we parameterize the reverse generative dynamics as a Markov chain, and novelly impose roto-"
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "The Llama 3 Herd of Models | Research - AI at Meta",
+      "url": "https://ai.meta.com/research/publications/the-llama-3-herd-of-models/",
+      "snippet": "Abstract Modern artificial intelligence (AI) systems are powered by foundation models. This paper presents a new set of foundation models, called Llama 3. It is a herd of language models that natively support multilinguality, coding, reasoning, and tool usage. Our largest model is a dense Transformer with 405B parameters and a context window of up to 128K tokens. This paper presents an ..."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

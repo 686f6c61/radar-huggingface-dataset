@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "jingamin/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking",
+  "slug": "jingamin-qwen3-6-40b-claude-4-6-opus-deckard-heretic-uncensored-thinking",
+  "author": "jingamin",
+  "url": "https://huggingface.co/jingamin/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking",
+  "created_at": "2026-09-30T17:48:54.000Z",
+  "updated_at": "2026-09-30T17:58:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "qwen3_5",
+    "image-text-to-text",
+    "unsloth",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "multi-stage tuned.",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "writing",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:TeichAI/claude-4.5-opus-high-reasoning-250x",
+    "dataset:DavidAU/PkDick-Deckard-5-Datasets",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36891418328,
+  "storage_human": "36.9 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF",
+      "snippet": "Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF 40 billion parameters (dense, not moe) expanded from 27B Qwen 3.6, then trained on Claude 4.6 Opus High Reasoning dataset via Unsloth on local hardware... but there is much more to the story - in comes DECKARD."
+    },
+    {
+      "title": "tcclaviger/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored ...",
+      "url": "https://huggingface.co/tcclaviger/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-FP8-MTP/discussions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6 40B Claude 4.6 Opus Deckard Heretic Uncensored Thinking",
+      "url": "https://llmrun.dev/model/davidau-qwen3-6-40b-claude-4-6-opus-deckard-heretic-uncensored-thinking",
+      "snippet": "Vision Roleplay Qwen3.6 40B Claude 4.6 Opus Deckard Heretic Uncensored Thinking is a 39.5B-parameter open language model from DavidAU in the Qwen 3.6 family. It supports a context window of up to 262,144 tokens. At BF16 it needs about 80.04 GB of VRAM — see which GPUs and Macs can run it below."
+    },
+    {
+      "title": "Qwen3.6 40B Claude 4.6 Opus Deckard Heretic Uncensored Thinking",
+      "url": "https://thinkllm.dev/models/qwen3-6-40b-claude-4-6-opus-deckard-heretic-uncensored-thinking",
+      "snippet": "A community-fine-tuned variant of Qwen3&#x27;s 30B-A3B mixture-of-experts architecture, this model removes typical content restrictions while retaining extended reasoning (&#x27;thinking&#x27;) capabilities. It tends to engage more openly with sensitive or unconventional prompts that standard releases would decline, at the cost of the safety guardrails that enterprise users might expect."
+    },
+    {
+      "title": "Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-8bit ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.6-40b-claude-4.6-opus-deckard-heretic-uncensored-thinking-8bit-mlx-community",
+      "snippet": "The model implements a merged architecture combining Qwen3.6, Claude 4.6 Opus, and Deckard instruction tuning with uncensored thinking patterns. Load it directly into MLX with the provided library and apply chat templates during inference to activate instruction-following behavior."
+    }
+  ]
+}

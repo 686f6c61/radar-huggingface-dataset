@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "drewbie/jazz-pianist-style-generator",
+  "slug": "drewbie-jazz-pianist-style-generator",
+  "author": "drewbie",
+  "url": "https://huggingface.co/drewbie/jazz-pianist-style-generator",
+  "created_at": "2026-09-30T15:57:46.000Z",
+  "updated_at": "2026-09-30T15:59:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "music",
+    "symbolic-music",
+    "midi",
+    "music-generation",
+    "jazz",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 734085128,
+  "parameters_human": "734.1M",
+  "storage_bytes": 2946115808,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jazz Music Generator - Tunee AI",
+      "url": "https://www.tunee.ai/music-generator/jazz",
+      "snippet": "Create jazz music instantly with Tunee&#x27;s AI Music Generator. Chat to compose original jazz tracks — swing, bebop, smooth jazz, and more. No skills needed."
+    },
+    {
+      "title": "AI Piano Generator | Create Piano Melodies Online Free",
+      "url": "https://www.musiccreator.ai/ai-piano",
+      "snippet": "AI Piano supports a wide range of styles including classical, jazz, pop, ambient, electronic, cinematic, and many more. You can select your preferred style, and Piano AI will generate arrangements that authentically reflect that genre&#x27;s characteristics and conventions."
+    },
+    {
+      "title": "AI Piano Music Generator — Solo, Jazz & Songs",
+      "url": "https://kenerateai.com/ai-piano-generator",
+      "snippet": "An AI piano generator composes piano music from a text description. In Kenerate&#x27;s Music Studio, choose Instrumental and describe the style (solo ballad, jazz trio, romantic classical, ambient), the mood, the dynamics (\"soft, swelling in the middle\") and a tempo — or ask for a piano beat with drums and 808s."
+    },
+    {
+      "title": "GitHub - jisungk/deepjazz: Deep learning driven jazz generation using ...",
+      "url": "https://github.com/jisungk/deepjazz",
+      "snippet": "Using Keras & Theano for deep learning driven jazz generation I built deepjazz in 36 hours at a hackathon. It uses Keras & Theano, two deep learning libraries, to generate jazz music. Specifically, it builds a two-layer LSTM, learning from the given MIDI file."
+    },
+    {
+      "title": "Free AI Jazz Piano Improvisation Generator - Musely",
+      "url": "https://musely.ai/tools/jazz-piano-improvisation-generator",
+      "snippet": "Instantly create unique jazz piano improvisations with Musely AI&#x27;s free generator. Unleash your creativity and compose captivating music today!"
+    }
+  ]
+}

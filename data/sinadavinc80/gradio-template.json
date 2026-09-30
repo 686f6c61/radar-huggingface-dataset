@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Sinadavinc80/gradio-template",
+  "slug": "sinadavinc80-gradio-template",
+  "author": "Sinadavinc80",
+  "url": "https://huggingface.co/Sinadavinc80/gradio-template",
+  "created_at": "2026-09-30T17:45:31.000Z",
+  "updated_at": "2026-09-30T17:46:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gradio",
+    "template",
+    "demo",
+    "spaces",
+    "ui",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gradio-templates (Gradio Templates) - Hugging Face",
+      "url": "https://huggingface.co/gradio-templates",
+      "snippet": "Org profile for Gradio Templates on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Gradio-Templates-For-Generative-AI-Apps/model at main - GitHub",
+      "url": "https://github.com/SlvrDragon9/Gradio-Templates-For-Generative-AI-Apps/tree/main/model",
+      "snippet": "Gradio Template to make your AI app look prettier and to help in deplyoment by reducing the time, it serves as a template of sorts and also does more than look pretty there are some added functiona..."
+    },
+    {
+      "title": "Gradio-Templates-For-Generative-AI-Apps/Text-To-Image/model at main ...",
+      "url": "https://github.com/lazydragon3/Gradio-Templates-For-Generative-AI-Apps/tree/main/Text-To-Image/model",
+      "snippet": "Gradio Template to make your AI app look prettier and to help in deplyoment by reducing the time, it serves as a template of sorts and also does more than look pretty there are some added functiona..."
+    },
+    {
+      "title": "Gradio",
+      "url": "https://gradio.app/",
+      "snippet": "Spent the weekend prototyping LLM interfaces directly in Python. @gradio -app is a game changer for rapid UI development. Forget wrestling with JS/CSS; share your model in seconds."
+    },
+    {
+      "title": "Gradio Template — Deep Dive | AI Navigator | AI Navigator",
+      "url": "https://navigateaitools.com/explorer/tool/gradio-template",
+      "snippet": "What is Gradio Template? The Gradio Template provides a streamlined approach to deploy LangChain applications using the Gradio interface, making it easier for developers to create interactive AI models and share them online."
+    }
+  ]
+}

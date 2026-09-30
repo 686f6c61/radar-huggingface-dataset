@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Abdoul27/chandra-ocr-2-barbados",
+  "slug": "abdoul27-chandra-ocr-2-barbados",
+  "author": "Abdoul27",
+  "url": "https://huggingface.co/Abdoul27/chandra-ocr-2-barbados",
+  "created_at": "2026-09-30T18:49:14.000Z",
+  "updated_at": "2026-09-30T18:54:45.000Z",
+  "license": "chandra-ocr-2-modified-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "ocr",
+    "handwriting",
+    "htr",
+    "handwritten-text-recognition",
+    "historical-documents",
+    "barbados",
+    "conversational",
+    "base_model:datalab-to/chandra-ocr-2",
+    "base_model:finetune:datalab-to/chandra-ocr-2",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5174964736,
+  "parameters_human": "5.17B",
+  "storage_bytes": 10370008671,
+  "storage_human": "10.4 GB",
+  "base_model": "datalab-to/chandra-ocr-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - datalab-to/chandra: OCR model that handles complex tables ...",
+      "url": "https://github.com/datalab-to/chandra",
+      "snippet": "Chandra OCR 2 is a state of the art OCR model that converts images and PDFs into structured HTML/Markdown/JSON while preserving layout information."
+    },
+    {
+      "title": "datalab-to/chandra-ocr-2 · Hugging Face",
+      "url": "https://huggingface.co/datalab-to/chandra-ocr-2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Chandra OCR 2 - regolo.ai",
+      "url": "https://regolo.ai/models-archive/chandra-ocr-2/",
+      "snippet": "chandra‑ocr‑2 is a 4B‑parameter, layout‑aware OCR model from Datalab that converts complex documents into structured Markdown/HTML/JSON across 90+ languages, achieving SOTA olmOCR scores with 2× the throughput of Chandra 1. How to Get Started Step 1 Sign Up and get your Api Key and use with UNLIMITED tokens for 30 days. Step 2 Paste theContinue reading \"Chandra OCR 2\""
+    },
+    {
+      "title": "Introducing our newest model: Chandra | Datalab",
+      "url": "https://www.datalab.to/blog/introducing-chandra",
+      "snippet": "Meet Chandra, our latest OCR model that tops independent benchmarks and brings powerful new capabilities to document processing."
+    },
+    {
+      "title": "datalab-to/chandra · Hugging Face",
+      "url": "https://huggingface.co/datalab-to/chandra",
+      "snippet": "A newer version of this model is available: datalab-to/chandra-ocr-2"
+    }
+  ]
+}

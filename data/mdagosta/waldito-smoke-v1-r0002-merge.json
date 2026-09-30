@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-smoke-v1-r0002-merge",
+  "slug": "mdagosta-waldito-smoke-v1-r0002-merge",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-smoke-v1-r0002-merge",
+  "created_at": "2026-09-30T03:31:58.000Z",
+  "updated_at": "2026-09-30T03:32:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 820736,
+  "parameters_human": "820736",
+  "storage_bytes": 1645510,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mdagosta (Michael D&#x27;Agosta) - Hugging Face",
+      "url": "https://huggingface.co/mdagosta",
+      "snippet": "Building distributed training systems for bespoke models. Recent Activity. updated a model about 7 hours ago. mdagosta/waldito-smoke-v1-r0002-merge"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is AI built to help you get things done. Create, brainstorm, learn, and solve problems with AI chat that works across your day."
+    },
+    {
+      "title": "Merge",
+      "url": "https://gateway.merge.dev/",
+      "snippet": "Route AI requests to multiple model vendors with Merge"
+    }
+  ]
+}

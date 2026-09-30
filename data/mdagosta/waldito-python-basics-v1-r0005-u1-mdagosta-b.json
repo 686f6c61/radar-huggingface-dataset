@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-python-basics-v1-r0005-u1-mdagosta-b",
+  "slug": "mdagosta-waldito-python-basics-v1-r0005-u1-mdagosta-b",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0005-u1-mdagosta-b",
+  "created_at": "2026-09-30T19:06:10.000Z",
+  "updated_at": "2026-09-30T19:06:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9541632,
+  "parameters_human": "9.5M",
+  "storage_bytes": 19089664,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "waldito-python-basics-v1-r0003-u1-mdagosta-b - Hugging Face",
+      "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta-b",
+      "snippet": "Instructions to use mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta-b with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta-b with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model ..."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "Waldito-1 · GitHub",
+      "url": "https://github.com/Waldito-1/",
+      "snippet": "Waldito-1 has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Gemini 3 | Google AI Studio",
+      "url": "https://aistudio.google.com/models/gemini-3",
+      "snippet": "Model capabilities Read Gemini 3 docs Model Gemini 3.1 Pro Advanced reasoning for coding and complex tasks Gemini 3.5 Flash"
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

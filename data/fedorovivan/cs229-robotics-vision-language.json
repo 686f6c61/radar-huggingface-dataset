@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fedorovivan/cs229-robotics-vision-language",
+  "slug": "fedorovivan-cs229-robotics-vision-language",
+  "author": "fedorovivan",
+  "url": "https://huggingface.co/fedorovivan/cs229-robotics-vision-language",
+  "created_at": "2026-09-30T19:17:50.000Z",
+  "updated_at": "2026-09-30T19:17:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2505.04769] Vision-Language-Action (VLA) Models: Concepts, Progress ...",
+      "url": "https://arxiv.org/abs/2505.04769",
+      "snippet": "Vision-Language-Action (VLA) models mark a transformative advancement in artificial intelligence, aiming to unify perception, natural language understanding, and embodied action within a single computational framework. This foundational review presents a comprehensive synthesis of recent advancements in Vision-Language-Action models, systematically organized across five thematic pillars that ..."
+    },
+    {
+      "title": "fedorovivan (Ivan Fedorov) - Hugging Face",
+      "url": "https://huggingface.co/fedorovivan",
+      "snippet": "models1 fedorovivan/hw1-vision-language-pretraining56 33.1k•Updated about 14 hours ago"
+    },
+    {
+      "title": "Vision-Language-Action (VLA) Models: Concepts, Progress, Applications ...",
+      "url": "https://arxiv.org/html/2505.04769v2",
+      "snippet": "Before Vision-Language-Action (VLA) models were developed, progress in robotics and artificial intelligence happened mostly in separate domains: vision systems that could acquire, interpret and recognize images [55, 87, 176], language systems that could understand and generate text [213, 177], and action systems that could control movement [60]. These isolated systems worked well on their own ..."
+    },
+    {
+      "title": "fedorovivan (Ivan Fedorov) - Hugging Face",
+      "url": "https://huggingface.co/fedorovivan/models",
+      "snippet": "fedorovivan&#x27;s models1 Sort: Recently updated fedorovivan/hw1-vision-language-pretraining56 33.1k•Updated Aug 26• 7"
+    },
+    {
+      "title": "Vision-Language-Action (VLA) Models for Robotics",
+      "url": "https://blog.roboflow.com/vision-language-action-models/",
+      "snippet": "Discover how Vision-Language-Action models combine visual reasoning with motor control to build robots that generalize."
+    }
+  ]
+}

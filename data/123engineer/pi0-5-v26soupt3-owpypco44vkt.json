@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "123engineer/pi0.5-v26soupT3-owPypCo44VKT",
+  "slug": "123engineer-pi0-5-v26soupt3-owpypco44vkt",
+  "author": "123engineer",
+  "url": "https://huggingface.co/123engineer/pi0.5-v26soupT3-owPypCo44VKT",
+  "created_at": "2026-09-30T14:49:34.000Z",
+  "updated_at": "2026-09-30T14:52:24.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vla",
+    "pi0.5",
+    "openroboto",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12438090795,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "123engineer/pi0.5-owPypCo44VKT · Hugging Face",
+      "url": "https://huggingface.co/123engineer/pi0.5-owPypCo44VKT",
+      "snippet": "123engineer / pi0.5-owPypCo44VKT Like 0 Robotics JAX vla pi0.5 axis openpi openroboto License:gemma Model card FilesFiles and versions xet Community Copy to bucket new π0.5 AXIS joint-space policy — v1 step 2000 Parent and training method Local evaluation (rebuilt AXIS sim, 20 trials per task) License"
+    },
+    {
+      "title": "123engineer/pi0.5-v6bs750-owPypCo44VKT · Hugging Face",
+      "url": "https://huggingface.co/123engineer/pi0.5-v6bs750-owPypCo44VKT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    },
+    {
+      "title": "[2504.16054] $π_ {0.5}$: a Vision-Language-Action Model with Open-World ...",
+      "url": "https://arxiv.org/abs/2504.16054",
+      "snippet": "In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe $π_{0.5}$, a new model based on $π_{0}$ that uses co-training on heterogeneous ..."
+    }
+  ]
+}

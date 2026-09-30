@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kojikojiprg/ai-theories-clip-synthetic-scenes",
+  "slug": "kojikojiprg-ai-theories-clip-synthetic-scenes",
+  "author": "kojikojiprg",
+  "url": "https://huggingface.co/kojikojiprg/ai-theories-clip-synthetic-scenes",
+  "created_at": "2026-09-30T14:28:47.000Z",
+  "updated_at": "2026-09-30T14:28:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ai-theories",
+    "clip",
+    "negclip",
+    "contrastive-learning",
+    "synthetic-data",
+    "scratch-implementation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6504819,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kojikojiprg (Koji Yokoyama) - Hugging Face",
+      "url": "https://huggingface.co/kojikojiprg/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 4 days ago ... updated a model 4 days ago"
+    },
+    {
+      "title": "GitHub - kojikojiprg/ai-theories",
+      "url": "https://github.com/kojikojiprg/ai-theories",
+      "snippet": "Contribute to kojikojiprg/ai-theories development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - kojikojiprg/ai-theories",
+      "url": "https://github.com/kojikojiprg/ai-theories/tree/main",
+      "snippet": "LLM / VLM の理論を学習し、最終的に自分で AI システムを作れるようになることを目的とした個人プロジェクトです。 A personal project to learn LLM / VLM theory, with the ultimate goal of being able to build AI systems from scratch. 古典的な機械学習 ..."
+    },
+    {
+      "title": "kojikojiprg/ai-theories-small-gpt-en · Hugging Face",
+      "url": "https://huggingface.co/kojikojiprg/ai-theories-small-gpt-en",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SynthCLIP: Are We Ready for a Fully Synthetic CLIP Training?",
+      "url": "https://arxiv.org/abs/2402.01832",
+      "snippet": "We present SynthCLIP, a CLIP model trained on entirely synthetic text-image pairs. Leveraging recent text-to-image (TTI) networks and large language models (LLM), we generate synthetic datasets of images and corresponding captions at scale, with no human intervention. In this work, we provide an analysis on CLIP models trained on synthetic data. We provide insights on the data generation ..."
+    }
+  ]
+}

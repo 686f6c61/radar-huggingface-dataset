@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Jas-mith/generation-large",
+  "slug": "jas-mith-generation-large",
+  "author": "Jas-mith",
+  "url": "https://huggingface.co/Jas-mith/generation-large",
+  "created_at": "2026-09-30T03:38:35.000Z",
+  "updated_at": "2026-09-30T03:38:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les Jeunes Acteurs Solidaires (JAS) | Mairie des 11e et 12e ...",
+      "url": "https://marseille1112.fr/jeunes-acteurs-solidaires-jas",
+      "snippet": "La Mairie de secteur s’est donnée pour mission de favoriser plus que jamais l’engagement des plus jeunes, et de les aider à se …"
+    },
+    {
+      "title": "Foyer Jas La Bessonnière",
+      "url": "https://www.ari.asso.fr/etablissements/foyer--hebergement/foyer-jas-la-bessonniere-13",
+      "snippet": "Accueil Les établissements Pour les adultes Les foyers de vie et d'hébergement Foyer Jas La Bessonnière Foyer Jas La …"
+    },
+    {
+      "title": "The Security of Using Large Language Models: A Survey With ...",
+      "url": "https://www.ieee-jas.net/article/doi/10.1109/JAS.2024.124983?pageType=en",
+      "snippet": "ChatGPT is a powerful artificial intelligence (AI) language model that has demonstrated significant improvements in various natural language processing ..."
+    },
+    {
+      "title": "JAS Cazaulx | Mairie des 11e et 12e arrondissements de Marseille",
+      "url": "https://www.marseille1112.fr/lieux/jas-cazaulx",
+      "snippet": "Mairie des 11e & 12e Mairie du 6ème secteur de Marseille Boulevard Bouyala d'Arnaud 13012 Marseille 04.91.14.62.40 Service État …"
+    },
+    {
+      "title": "Multi-Agent Systems: From Classical Paradigms to Large ...",
+      "url": "https://www.ieee-jas.com/en/article/doi/10.1109/JAS.2026.126113",
+      "snippet": "Multi-Agent Systems: From Classical Paradigms to Large Foundation Model-Enabled Futures · Abstract. With the rapid advancement of artificial intelligence, multi- ..."
+    }
+  ]
+}

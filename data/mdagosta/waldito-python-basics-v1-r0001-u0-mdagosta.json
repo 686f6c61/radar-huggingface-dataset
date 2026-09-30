@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-python-basics-v1-r0001-u0-mdagosta",
+  "slug": "mdagosta-waldito-python-basics-v1-r0001-u0-mdagosta",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0001-u0-mdagosta",
+  "created_at": "2026-09-30T14:55:32.000Z",
+  "updated_at": "2026-09-30T14:55:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9541632,
+  "parameters_human": "9.5M",
+  "storage_bytes": 19089664,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mdagosta (Michael D&#x27;Agosta) - Hugging Face",
+      "url": "https://huggingface.co/mdagosta",
+      "snippet": "Building distributed training systems for bespoke models. Recent Activity. updated a model about 7 hours ago. mdagosta/waldito-smoke-v1-r0002-merge"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GitHub - stephansturges/WALDO: Whereabouts Ascertainment for Low-lying ...",
+      "url": "https://github.com/stephansturges/WALDO",
+      "snippet": "WALDO is a detection AI model, based on a large YOLO-v8 backbone and my own synthetic data pipeline. The model is capable of detecting these classes of items in overhead imagery ranging in altitude from about 30 feet to satellite imagery!"
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "Welcome to Python.org",
+      "url": "https://www.python.org/",
+      "snippet": "GUI Development: tkInter, PyGObject, PyQt, PySide, Kivy, wxPython, DearPyGui AI and Machine Learning: PyTorch, TensorFlow, scikit-learn, Transformers, Anthropic, LangChain Scientific and Numeric: SciPy, Pandas, IPython Software Development: Buildbot, Trac, Roundup System Administration: Ansible, Salt, OpenStack, xonsh"
+    }
+  ]
+}

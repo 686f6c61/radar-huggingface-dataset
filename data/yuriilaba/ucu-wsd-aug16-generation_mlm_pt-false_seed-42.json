@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yuriilaba/ucu-wsd-aug16-generation_mlm_pt-false_seed-42",
+  "slug": "yuriilaba-ucu-wsd-aug16-generation_mlm_pt-false_seed-42",
+  "author": "yuriilaba",
+  "url": "https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_mlm_pt-false_seed-42",
+  "created_at": "2026-09-30T14:16:30.000Z",
+  "updated_at": "2026-09-30T14:17:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129280083,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yuriilaba/ucu-wsd-generation_mlm_pt-true_seed-42 · Hugging Face",
+      "url": "https://huggingface.co/yuriilaba/ucu-wsd-generation_mlm_pt-true_seed-42",
+      "snippet": "yuriilaba / ucu-wsd-generation_mlm_pt-true_seed-42 Like 0 Safetensors xlm-roberta Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "yuriilaba/ucu-wsd-generation_all_combined_pt-false_seed-42 - Hugging Face",
+      "url": "https://huggingface.co/yuriilaba/ucu-wsd-generation_all_combined_pt-false_seed-42",
+      "snippet": "yuriilaba / ucu-wsd-generation_all_combined_pt-false_seed-42 Like 0 Safetensors xlm-roberta Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Yurii Laba",
+      "url": "https://yuriilaba.github.io/",
+      "snippet": "Research in multilingual and multimodal NLP, lexical meaning in Ukrainian, and memory systems for AI agents."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "Yurii Laba - ACL Anthology",
+      "url": "https://aclanthology.org/people/yurii-laba/",
+      "snippet": "This approach allows us to incorporate the Ukrainian benchmark into a broader framework for cross-language model performance comparisons. We collected the benchmark data semi-automatically and refined it with input from domain experts. We then assessed eight multilingual and multimodal large language models using this benchmark."
+    }
+  ]
+}

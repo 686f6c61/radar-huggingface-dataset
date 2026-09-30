@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sases345/Recnonocimiento_de_emociones",
+  "slug": "sases345-recnonocimiento_de_emociones",
+  "author": "sases345",
+  "url": "https://huggingface.co/sases345/Recnonocimiento_de_emociones",
+  "created_at": "2026-09-30T17:38:10.000Z",
+  "updated_at": "2026-09-30T17:48:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pescobarg/reconocimiento-emociones: reconocimiento emociones ...",
+      "url": "https://github.com/pescobarg/reconocimiento-emociones",
+      "snippet": "reconocimiento emociones con 3 modelos de IA. Contribute to pescobarg/reconocimiento-emociones development by creating an account on GitHub."
+    },
+    {
+      "title": "Mejores herramientas de IA emocional probadas",
+      "url": "https://aimultiple.com/es/emotion-ai-tools",
+      "snippet": "Las herramientas de IA emocional pueden revelar cómo se sienten las personas. Exploramos diez herramientas líderes de IA emocional y compartimos nuestros conocimientos prácticos."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t hav"
+    },
+    {
+      "title": "Reconocimiento de emociones: significado y uso práctico",
+      "url": "https://aidive.org/es/glossary/natural-language-processing/emotion-recognition",
+      "snippet": "Definición El reconocimiento de emociones es un conjunto de métodos de IA que intentan inferir estados emocionales a partir de texto, voz, imágenes o comportamiento. En el trabajo práctico con IA, ayuda a relacionar el concepto con los datos, el comportamiento del modelo, las decisiones del producto y la evaluación. La pregunta útil no es solo qué significa el término, sino cómo ..."
+    },
+    {
+      "title": "Análisis de IA en Reconocimiento Emocional",
+      "url": "https://es.scribd.com/document/836509181/Informe-2-Analisis-de-Emociones-con-IA",
+      "snippet": "El informe analiza el uso de la Inteligencia Artificial (IA) en el reconocimiento de emociones, explorando tres modelos distintos para identificar emociones en audio y expresiones faciales. Se evalúa la precisión de estos modelos y se comparan sus efectividades, así como la influencia del idioma en el reconocimiento emocional. El objetivo es comprender mejor cómo la IA puede clasificar ..."
+    }
+  ]
+}

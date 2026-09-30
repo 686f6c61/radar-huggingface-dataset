@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Sinadavinc80/a100x8-jobs-guide",
+  "slug": "sinadavinc80-a100x8-jobs-guide",
+  "author": "Sinadavinc80",
+  "url": "https://huggingface.co/Sinadavinc80/a100x8-jobs-guide",
+  "created_at": "2026-09-30T17:45:31.000Z",
+  "updated_at": "2026-09-30T17:46:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "huggingface-jobs",
+    "hf-jobs",
+    "a100",
+    "a100x8",
+    "gpu",
+    "distributed-training",
+    "infrastructure",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "白色相簿2全CG美图分享，含IC、CC、CODA篇 - 百度贴吧",
+      "url": "https://tieba.baidu.com/p/8983937691",
+      "snippet": "【全CG】白色相簿2..自此，白二的三个篇章IC,CC,CODA的全部CG都在这里了，当然HCG我肯定没传，还有几张系统总删的CG，如 …"
+    },
+    {
+      "title": "白色相簿2H场景在哪里 - 抖音",
+      "url": "https://www.douyin.com/search/%E7%99%BD%E8%89%B2%E7%9B%B8%E7%B0%BF2H%E5%9C%BA%E6%99%AF%E5%9C%A8%E5%93%AA%E9%87%8C",
+      "snippet": "00:00/05:20 菠萝弟爱动漫 · 4月前 第8集 | 白色相簿 2 8 白色相簿2|第8集春希和雪菜开始了交往，三人豪华旅馆泡温泉 #动漫#动漫解 …"
+    },
+    {
+      "title": "[白2氵]终于全线通关了白色相簿2 NGA玩家社区",
+      "url": "https://ngabbs.com/read.php?tid=30188366&page=2",
+      "snippet": "Jul 17, 2008 · 关于H场景的说法我是同意的。 个人感受WA2里就只有雪T3月1号那一场是happy H。 “跟爱不爱冬雪两人毫无关系”，可 …"
+    },
+    {
+      "title": "名场面宇宙.白色相簿2.白学现场_哔哩哔哩_bilibili",
+      "url": "https://www.bilibili.com/video/BV1fJ41177X2/",
+      "snippet": "Jan 16, 2020 · 永恒的回忆相簿！ ，明明是我先来的，可是为什么会变成这样？ ，《白色相簿2》那些令人心疼的场景，白学名场面之 …"
+    },
+    {
+      "title": "白色相簿2入坑攻略：完整游戏顺序与衍生作品阅读指南 | 新手必看无 …",
+      "url": "https://zh.game-walkthrough.com/post/baisexiangpu2.html",
+      "snippet": "新手必读： 白色相簿2是一款文本量超过200万字的史诗级Galgame，剧情横跨高中、大学、社会三个时期，人物关系错综复杂。 如果 …"
+    }
+  ]
+}

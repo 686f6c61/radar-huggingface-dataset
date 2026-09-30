@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/heb-hebr-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407",
+  "slug": "francesca9805-heb-hebr-10mb-ppt-dp-10mb-packed-bfdiso_seed3407",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/heb-hebr-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407",
+  "created_at": "2026-09-30T16:10:08.000Z",
+  "updated_at": "2026-09-30T16:13:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/heb_hebr_10mb",
+    "base_model:finetune:goldfish-models/heb_hebr_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79482616,
+  "storage_human": "79 MB",
+  "base_model": "goldfish-models/heb_hebr_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "heb-hebr-10mb-ppt-Dp-100mb-packed-bfd_seed3407 - Hugging Face",
+      "url": "https://huggingface.co/francesca9805/heb-hebr-10mb-ppt-Dp-100mb-packed-bfd_seed3407",
+      "snippet": "Instructions to use francesca9805/heb-hebr-10mb-ppt-Dp-100mb-packed-bfd_seed3407 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "heb-hebr-10mb-ppt-Dp-10mb-packed-bfd_seed455 - Hugging Face",
+      "url": "https://huggingface.co/francesca9805/heb-hebr-10mb-ppt-Dp-10mb-packed-bfd_seed455",
+      "snippet": "Instructions to use francesca9805/heb-hebr-10mb-ppt-Dp-10mb-packed-bfd_seed455 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Heb Hebr 10mb Ppt Dp 10mb Packed Bfd Seed10 - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/francesca9805/heb-hebr-10mb-ppt-dp-10mb-packed-bfd_seed10",
+      "snippet": "Registry entry for model Heb Hebr 10mb Ppt Dp 10mb Packed Bfd Seed10; source metadata pending."
+    },
+    {
+      "title": "heb-hebr-10mb-ppt-Dp-100mb-packed-bfd_seed455 - friendli.ai",
+      "url": "https://friendli.ai/models/francesca9805/heb-hebr-10mb-ppt-Dp-100mb-packed-bfd_seed455",
+      "snippet": "Deploy heb-hebr-10mb-ppt-Dp-100mb-packed-bfd_seed455 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Jpn Jpan 100mb Ppt Dp 10mb Packed Bfd Seed10 by francesca9805",
+      "url": "https://llm-explorer.com/model/francesca9805%2Fjpn-jpan-100mb-ppt-Dp-10mb-packed-bfd_seed10,eWZY8MrE1AYkahbauyK4R",
+      "snippet": "Jpn Jpan 100mb Ppt Dp 10mb Packed Bfd Seed10 is an open-source 124.8m LLM by francesca9805. VRAM 0.2GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

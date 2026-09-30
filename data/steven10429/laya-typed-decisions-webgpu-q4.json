@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Steven10429/laya-typed-decisions-webgpu-q4",
+  "slug": "steven10429-laya-typed-decisions-webgpu-q4",
+  "author": "Steven10429",
+  "url": "https://huggingface.co/Steven10429/laya-typed-decisions-webgpu-q4",
+  "created_at": "2026-09-30T02:50:31.000Z",
+  "updated_at": "2026-09-30T02:51:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "laya",
+    "system-one",
+    "typed-decisions",
+    "webgpu",
+    "quantized",
+    "q4",
+    "text-classification",
+    "base_model:convaiinnovations/laya",
+    "base_model:quantized:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 462968939,
+  "storage_human": "463 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Steven10429/laya-typed-decisions-webgpu-q4 · Hugging Face",
+      "url": "https://huggingface.co/Steven10429/laya-typed-decisions-webgpu-q4",
+      "snippet": "Steven10429 / laya-typed-decisions-webgpu-q4 Like 0 Text Classification ONNX laya system-one typed-decisions webgpu quantized q4 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new laya typed-decisions · q4 split ONNX for the browser (WebGPU) Measured (Apple M4 Pro, Chrome, laya-ts + onnxruntime-web 1.30) Use ..."
+    },
+    {
+      "title": "convaiinnovations/laya-typed-decisions · Hugging Face",
+      "url": "https://huggingface.co/convaiinnovations/laya-typed-decisions",
+      "snippet": "Non-autoregressive System 1 decision model, fine-tuned on the typed-decisions workflows: agent-trace observability, customer service, invoice processing and security incidents. Part of the Laya family."
+    },
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "I Built Non-Autoregressive Decision Models with RL a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\". From our March 2025 arXiv paper on sequence conversion trajectories to Laya: a sub-35ms open-weight System 1 decision engine with RLCD, multilingual routing across 100+ languages, and state-of-the-art calibration."
+    },
+    {
+      "title": "Laya AI: Open-Source Decision Model | Run Locally",
+      "url": "https://laya-ai.com/",
+      "snippet": "Laya AI is an open-source System 1 decision model for typed choices, scores, and probabilities. Run it locally, compare benchmarks, models, and Laya vs Jev."
+    },
+    {
+      "title": "Laya on WebGPU by StevenLi-phoenix-work",
+      "url": "https://stevenli-phoenix-work.itch.io/laya-webgpu",
+      "snippet": "Laya is an open-source \"System One\" decision model: give it a text (a support ticket, an email, a chat message) plus typed questions (choice / score / yes-no) and it returns calibrated probabilities in a single forward pass. No text generation, nothing to parse."
+    }
+  ]
+}

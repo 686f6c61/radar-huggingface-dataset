@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "RegaLabs/Govtugo-ASR-Sorani",
+  "slug": "regalabs-govtugo-asr-sorani",
+  "author": "RegaLabs",
+  "url": "https://huggingface.co/RegaLabs/Govtugo-ASR-Sorani",
+  "created_at": "2026-09-30T18:54:02.000Z",
+  "updated_at": "2026-09-30T18:59:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ckb"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "audio",
+    "speech-recognition",
+    "qwen3-asr",
+    "kurdish",
+    "sorani",
+    "ckb",
+    "meeting-transcription",
+    "low-resource-languages",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2038052480,
+  "parameters_human": "2.04B",
+  "storage_bytes": 4087622457,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rega Voice — text to speech in Kurdish and Arabic",
+      "url": "https://www.regalabs.dev/en/voice",
+      "snippet": "Rega Voice turns a script into speech in Sorani, Arabic, Turkish, Persian, English, or Chinese — streamed as it renders, sealed with provenance, yours to publish."
+    },
+    {
+      "title": "RegaLabs | Voice infrastructure for every conversation",
+      "url": "https://www.regalabs.dev/en/docs",
+      "snippet": "RegaLabs serves Sorani, Turkish, Persian, Arabic, English, and Chinese voice, with Badini and Kurmanji recognition, translation, and subtitles."
+    },
+    {
+      "title": "RegaLabs/RegaLabs-TTS at main - Hugging Face",
+      "url": "https://huggingface.co/RegaLabs/RegaLabs-TTS/tree/main/sorani",
+      "snippet": "Notebooks Google Colab Kaggle main RegaLabs-TTS /sorani 16.3 kB Ctrl+K Ctrl+K 1 contributor History:4 commits shahryyar Extend Sorani content filter blocklist and re-sign word list 50689ce 12 days ago __init__.py Safe 250 BytesUpload RegaLabs-TTS model weights, infer.py, and app.py Gradio demo15 days ago censor.py 10.4 kBExtend Sorani content filter blocklist and re-sign word list12 days ago ..."
+    },
+    {
+      "title": "RegaLabs/RegaLabs-TTS at main - Hugging Face",
+      "url": "https://huggingface.co/RegaLabs/RegaLabs-TTS/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RegaLabs (@RegaLabsDev) / X",
+      "url": "https://x.com/RegaLabsDev",
+      "snippet": "the path of your future. Kurdistan, iraq regalabs.dev Joined August 2026 25 Following 1 Followers Mention Follow RepliesRepliesMediaMedia RegaLabs @RegaLabsDev 5h"
+    }
+  ]
+}

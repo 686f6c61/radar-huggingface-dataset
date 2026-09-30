@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-python-basics-v1-r0006-u0-mdagosta",
+  "slug": "mdagosta-waldito-python-basics-v1-r0006-u0-mdagosta",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0006-u0-mdagosta",
+  "created_at": "2026-09-30T19:12:18.000Z",
+  "updated_at": "2026-09-30T19:12:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9541632,
+  "parameters_human": "9.5M",
+  "storage_bytes": 19089664,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "waldito-python-basics-v1-r0003-u1-mdagosta - Hugging Face",
+      "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta",
+      "snippet": "Instructions to use mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Learn Python - Free Interactive Python Tutorial",
+      "url": "https://www.learnpython.org/",
+      "snippet": "Get started learning Python with DataCamp&#x27;s Intro to Python tutorial. Learn Data Science by completing interactive coding challenges and watching videos by expert instructors."
+    },
+    {
+      "title": "waldo-builds/README.md at main · mdagosta/waldo-builds",
+      "url": "https://github.com/mdagosta/waldo-builds/blob/main/README.md",
+      "snippet": "Repo for tracking distributed pretraining work while maintaining provenance - mdagosta/waldo-builds"
+    },
+    {
+      "title": "Google AI Studio | Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/aistudio",
+      "snippet": "Google AI Studio is the fastest way to start building with Gemini, our next generation family of multimodal generative AI models."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-smoke-v1-r0001-merge",
+  "slug": "mdagosta-waldito-smoke-v1-r0001-merge",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-smoke-v1-r0001-merge",
+  "created_at": "2026-09-30T03:28:00.000Z",
+  "updated_at": "2026-09-30T03:28:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 122,
+  "trending_score": 0,
+  "parameters": 820736,
+  "parameters_human": "820736",
+  "storage_bytes": 1645800,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mdagosta (Michael D&#x27;Agosta) - Hugging Face",
+      "url": "https://huggingface.co/mdagosta",
+      "snippet": "Building distributed training systems for bespoke models. Recent Activity. updated a model about 7 hours ago. mdagosta/waldito-smoke-v1-r0002-merge"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Radar — real-time AI model release tracking",
+      "url": "https://aimodelradar.app/",
+      "snippet": "The moment a new AI model appears on the radar, know what it is and what changed. Tracking OpenAI, Anthropic, Google and open-source releases."
+    },
+    {
+      "title": "Model catalog | Merge",
+      "url": "https://docs.merge.dev/merge-gateway/models/catalog",
+      "snippet": "Every model the Gateway can route to, with pricing, capabilities, and per-vendor details"
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    }
+  ]
+}

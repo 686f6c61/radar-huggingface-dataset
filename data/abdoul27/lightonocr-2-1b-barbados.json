@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Abdoul27/lightonocr-2-1b-barbados",
+  "slug": "abdoul27-lightonocr-2-1b-barbados",
+  "author": "Abdoul27",
+  "url": "https://huggingface.co/Abdoul27/lightonocr-2-1b-barbados",
+  "created_at": "2026-09-30T19:01:56.000Z",
+  "updated_at": "2026-09-30T19:02:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lighton_ocr",
+    "image-text-to-text",
+    "ocr",
+    "handwriting",
+    "htr",
+    "handwritten-text-recognition",
+    "historical-documents",
+    "barbados",
+    "conversational",
+    "base_model:lightonai/LightOnOCR-2-1B-base",
+    "base_model:finetune:lightonai/LightOnOCR-2-1B-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1005647872,
+  "parameters_human": "1.01B",
+  "storage_bytes": 4034085870,
+  "storage_human": "4.0 GB",
+  "base_model": "lightonai/LightOnOCR-2-1B-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Canada Goose Inc.",
+      "url": "https://www.canadagoose.com/",
+      "snippet": "Your items will remain in your favorites temporarily. Sign in or create an account to save your list. Sign in or create account Join the …"
+    },
+    {
+      "title": "Men's Luxury Outerwear & Clothing | Canada Goose",
+      "url": "https://www.canadagoose.com/en-us/collections/mens",
+      "snippet": "Shop versatile luxury fashion for Men at Canada Goose. Embrace styles for Men's clothing & outerwear like lightweight coats, …"
+    },
+    {
+      "title": "Used Canada Goose Products for Sale - Canada Goose Generations US",
+      "url": "https://generations.canadagoose.com/",
+      "snippet": "Shop our vintage & gently used parkas, vests, bombers, lightweight jackets and clothing for sale at Canada Goose Generations. …"
+    },
+    {
+      "title": "Canada Goose Inc. - Investor Relations",
+      "url": "https://investor.canadagoose.com/overview/default.aspx",
+      "snippet": "Who We Are: Canada Goose is a global performance luxury and lifestyle brand founded in 1957. Canada Goose pushes the …"
+    },
+    {
+      "title": "Canada Goose Inc. - Events & Presentations",
+      "url": "https://investor.canadagoose.com/events-and-presentations/default.aspx",
+      "snippet": "Jul 30, 2026 · Webcast Presentation Q1 2027 Canada Goose Q4 2026 Earnings Call Financial Statements(opens in new window) …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Fireghost228/NSFW_Wan_1.3b",
+  "slug": "fireghost228-nsfw_wan_1-3b",
+  "author": "Fireghost228",
+  "url": "https://huggingface.co/Fireghost228/NSFW_Wan_1.3b",
+  "created_at": "2026-09-30T17:40:25.000Z",
+  "updated_at": "2026-09-30T17:40:25.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "nsfw",
+    "base_model:Wan-AI/Wan2.1-T2V-1.3B",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-1.3B",
+    "license:creativeml-openrail-m",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 105359108304,
+  "storage_human": "105.4 GB",
+  "base_model": "Wan-AI/Wan2.1-T2V-1.3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NSFW Wan 1.3B T2V - v14 (experimental) | Wan Video Checkpoint | Civitai",
+      "url": "https://civitai.red/models/1697081/nsfw-wan-13b-t2v",
+      "snippet": "Major Update: The NSFW Wan 1.3B T2V model has been improved! Based on community feedback, we&#x27;ve released a new experimental set of checkpoints (exp_e1 to exp_e14) to fix the quality degradation and \"body horror\" issues present in the original model."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:NSFW-API/NSFW_Wan_1.3b",
+      "snippet": "Edit Models filters Tasks Libraries Datasets Languages Licenses Other 1 Model Tree Reset NSFW-API/NSFW_Wan_1.3b Finetunes"
+    },
+    {
+      "title": "Best NSFW LoRA Models (August 2026) — Architecture & Version-Safe Picks",
+      "url": "https://offlinecreator.com/best-nsfw-lora-models",
+      "snippet": "August 2026 NSFW LoRA guide for SDXL, Pony, Flux and newer architectures with exact-file compatibility, version-specific weights, licenses, safety checks, and a separate workflow-accelerator section."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=nsfw",
+      "snippet": "Explore machine learning models. AI-Porn/pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint"
+    },
+    {
+      "title": "Wan2.1-T2V-1.3B · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/Wan-AI/Wan2.1-T2V-1.3B",
+      "snippet": "We employ our Wan-Bench framework to evaluate the performance of the T2V-1.3B model, with the results displayed in the table below. The results indicate that our smaller 1.3B model surpasses the overall metrics of larger open-source models, demonstrating the effectiveness of WanX2.1 &#x27;s architecture and the data construction pipeline."
+    }
+  ]
+}

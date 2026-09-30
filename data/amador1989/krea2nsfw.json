@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Amador1989/Krea2NSFW",
+  "slug": "amador1989-krea2nsfw",
+  "author": "Amador1989",
+  "url": "https://huggingface.co/Amador1989/Krea2NSFW",
+  "created_at": "2026-09-30T16:00:36.000Z",
+  "updated_at": "2026-09-30T16:00:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 459183490,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "uzumix/krea2_nsfw · Hugging Face",
+      "url": "https://huggingface.co/uzumix/krea2_nsfw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "chfm/krea2_nsfw · Hugging Face",
+      "url": "https://huggingface.co/chfm/krea2_nsfw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · nnndite/krea2nsfw at main - Hugging Face",
+      "url": "https://huggingface.co/nnndite/krea2nsfw/blob/main/README.md",
+      "snippet": "Instructions to use nnndite/krea2nsfw with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use nnndite/krea2nsfw with Diffusers: ... Inference Inference Providers Notebooks Google Colab Kaggle Local AppsSettings main krea2nsfw /README.md nnndite initial commit 8a4b4b0 ..."
+    },
+    {
+      "title": "Cutifyier - v2 -krea2 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.com/models/2187487/cutifyier",
+      "snippet": "works great face wise..but it overrides the base model and causes really elongated disproportionae bodies in certain poses kind of like older sdxl and pony models..also gives a strange yellowing almost jaundice skin color in places depending on the skin color used."
+    },
+    {
+      "title": "Crea 2 NSFW: Reddit Reveals Strict Safety Blocks | AI News",
+      "url": "https://aiexotic.com/blog/crea-2-nsfw-filters-face-reddit-scrutiny-after-new-model-launch",
+      "snippet": "Crea 2 NSFW prompts trigger strict safety blocks in the fresh image model, according to early Reddit tests. See how the community evaluates its controllability features despite the limits. Read the full report now."
+    }
+  ]
+}

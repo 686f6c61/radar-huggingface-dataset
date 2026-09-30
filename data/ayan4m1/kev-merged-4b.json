@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ayan4m1/kev-merged-4b",
+  "slug": "ayan4m1-kev-merged-4b",
+  "author": "ayan4m1",
+  "url": "https://huggingface.co/ayan4m1/kev-merged-4b",
+  "created_at": "2026-09-30T14:28:21.000Z",
+  "updated_at": "2026-09-30T15:10:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:merge:Qwen/Qwen3.5-4B-Base",
+    "base_model:jaredpalmer/kev-4b",
+    "base_model:merge:jaredpalmer/kev-4b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2664599996,
+  "parameters_human": "2.66B",
+  "storage_bytes": 12674458075,
+  "storage_human": "12.7 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base, jaredpalmer/kev-4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jaredpalmer/kev: Jev-like family of decision models built on ...",
+      "url": "https://github.com/jaredpalmer/kev",
+      "snippet": "Kev-4B and Kev-9B are about as close on classification-shaped sources like routing, entailment and science questions. All of them trail on knowledge questions, which depend mostly on the base model (MMLU: Kev-9B 0.74, Kev-27B 0.84, Jev 0.90), and the smaller models also trail on day-precision date arithmetic."
+    },
+    {
+      "title": "jaredpalmer/kev-4b · Hugging Face",
+      "url": "https://huggingface.co/jaredpalmer/kev-4b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ayan4m1 (Andrew DeLisa) - Hugging Face",
+      "url": "https://huggingface.co/ayan4m1/datasets",
+      "snippet": "10 followers 10 following https://andrewdelisa.com ayan4m1 AI & ML interests Distilled fine-tuning Recent Activity"
+    },
+    {
+      "title": "Releases · jaredpalmer/kev - GitHub",
+      "url": "https://github.com/jaredpalmer/kev/releases",
+      "snippet": "The current Kev family: Kev-27B, Kev-9B, Kev-4B, Kev-0.8B. Open decision models: typed questions in, calibrated probabilities out, one forward pass, no text generation. Each is a LoRA adapter (r=16) plus a pointer head on a frozen Qwen base, which downloads on first load. This release holds only the current best version of each size; every earlier version stays on the Hub (below)."
+    },
+    {
+      "title": "ayan4m1 Creator Profile | Civitai",
+      "url": "https://civitai.com/user/ayan4m1/models",
+      "snippet": "ayan4m1 on Civitai: 272 images and 45 AI models, followed by 93 people. Download or generate online."
+    }
+  ]
+}

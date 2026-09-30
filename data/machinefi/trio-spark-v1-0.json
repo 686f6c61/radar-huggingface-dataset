@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MachineFi/Trio-Spark-v1.0",
+  "slug": "machinefi-trio-spark-v1-0",
+  "author": "MachineFi",
+  "url": "https://huggingface.co/MachineFi/Trio-Spark-v1.0",
+  "created_at": "2026-09-30T19:12:07.000Z",
+  "updated_at": "2026-09-30T19:12:16.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "decision-model",
+    "situated-world-model",
+    "agents",
+    "robotics",
+    "world-model",
+    "api",
+    "text-classification",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - machinefi/trio-spark: Trio-Spark v1.0 — fast judgment for the ...",
+      "url": "https://github.com/machinefi/trio-spark",
+      "snippet": "Trio-Spark is a Situated World Model built for fast judgment. Give it the state of an environment and 2-8 possible moves. In one pass, it returns the best next move and a probability for every choice."
+    },
+    {
+      "title": "Trio: The World Model for Physical Operations | MachineFi Labs",
+      "url": "https://machinefi.com/",
+      "snippet": "The World Model For Physical Operations Trio is a multi-modal AI that fuses video, audio, and sensor streams into operational intelligence — purpose-built for the physical environments language models can&#x27;t see."
+    },
+    {
+      "title": "Technical Paper — Trio | MachineFi Labs",
+      "url": "https://machinefi.com/technical-paper",
+      "snippet": "Inside the Trio technical paper. The foundation system for physical-world understanding — how Trio reaches frontier-model accuracy at a fraction of the cost and latency, written for the people who build on it."
+    },
+    {
+      "title": "Trio — the world model for physical operations",
+      "url": "https://platform.machinefi.com/",
+      "snippet": "Trio sees, understands, and foresees what your cameras see — frontier accuracy, fast enough to watch every frame. See (Trio-Retina) → Understand (Trio-Lumen) → Foresee (Trio-Spark)."
+    },
+    {
+      "title": "MachineFi Labs - GitHub",
+      "url": "https://github.com/machinefi",
+      "snippet": "AI suite powered by state-of-the-art models and providing advanced AI/AGI functions. Includes AI personas, AGI functions, world-class Beam multi-model chats, text-to-image, voice, response streaming, code highlighting and execution, PDF import, presets for developers, much more. Deploy on-prem or in the cloud."
+    }
+  ]
+}

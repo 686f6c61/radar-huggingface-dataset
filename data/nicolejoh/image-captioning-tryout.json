@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Nicolejoh/image-captioning-tryout",
+  "slug": "nicolejoh-image-captioning-tryout",
+  "author": "Nicolejoh",
+  "url": "https://huggingface.co/Nicolejoh/image-captioning-tryout",
+  "created_at": "2026-09-30T17:40:56.000Z",
+  "updated_at": "2026-09-30T17:41:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nicolejoh (Nicole Johnson) - Hugging Face",
+      "url": "https://huggingface.co/Nicolejoh",
+      "snippet": "When I&#x27;m not coding, I&#x27;m probably cooking"
+    },
+    {
+      "title": "JoyCaption - Advanced AI Image Captioning Tool | Koddy.ai",
+      "url": "https://koddy.ai/joycaption",
+      "snippet": "JoyCaption is a free, open-source and uncensored AI image captioning tool with 10 different prompt modes, designed for training diffusion models, dataset captioning, and more."
+    },
+    {
+      "title": "Image captioning · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_captioning",
+      "snippet": "Image captioning Image captioning is the task of predicting a caption for a given image. Common real world applications of it include aiding visually impaired people that can help them navigate through different situations. Therefore, image captioning helps to improve content accessibility for people by describing images to them."
+    },
+    {
+      "title": "Free AI Image Generator - Create Images from Text | Free.ai",
+      "url": "https://free.ai/image/",
+      "snippet": "Free AI Image Generator creates images from text descriptions using AI models like FLUX and Stable Diffusion XL. Describe what you want and get a generated image in seconds."
+    },
+    {
+      "title": "Free AI Generator: Create Images, Video, Music and Text | Free.ai",
+      "url": "https://free.ai/generator/",
+      "snippet": "Generate images, text, video, music, voice and code with AI in one place: 477 tools and 581 models, with a free daily allowance."
+    }
+  ]
+}

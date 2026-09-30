@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vikasdesaifed/study-matching",
+  "slug": "vikasdesaifed-study-matching",
+  "author": "vikasdesaifed",
+  "url": "https://huggingface.co/vikasdesaifed/study-matching",
+  "created_at": "2026-09-30T16:12:24.000Z",
+  "updated_at": "2026-09-30T16:12:30.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vikasdesaifed (Vikas Desai) - Hugging Face",
+      "url": "https://huggingface.co/vikasdesaifed",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 5 hours ago ... published a model about 5 hours ago"
+    },
+    {
+      "title": "vikasdesaifed (Vikas Desai) - Hugging Face",
+      "url": "https://huggingface.co/vikasdesaifed/models",
+      "snippet": "MS in Data Science, class of 2025"
+    },
+    {
+      "title": "GitHub - BradleyDuran/Studymatch: StudyMatch - Full-stack web app ...",
+      "url": "https://github.com/BradleyDuran/Studymatch",
+      "snippet": "StudyMatch is a full-stack web application that helps university students find compatible study partners and groups. Using AI-powered matching, the platform recommends matches based on courses, learning styles, availability, and academic goals. Students can create profiles, join study groups, and message other students in-app."
+    },
+    {
+      "title": "Evaluating large language models for AI-assisted grading: a ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-026-48656-3",
+      "snippet": "This article presents an empirical evaluation of six state-of-the-art large language models for grading student assignments in a university-level course on data analytics and machine learning. The ..."
+    },
+    {
+      "title": "Matching Algorithms - Ed Success",
+      "url": "https://edsuccess.ai/matching-algorithms/",
+      "snippet": "Matching Algorithms leverage sophisticated AI to analyze student data and match them with optimal educational paths, career opportunities, or employers, enhancing the likelihood of success and satisfaction."
+    }
+  ]
+}

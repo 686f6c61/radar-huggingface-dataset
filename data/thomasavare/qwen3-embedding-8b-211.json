@@ -5,7 +5,7 @@
   "author": "thomasavare",
   "url": "https://huggingface.co/thomasavare/Qwen3-Embedding-8B-211",
   "created_at": "2026-05-20T12:37:46.000Z",
-  "updated_at": "2026-09-22T07:24:58.000Z",
+  "updated_at": "2026-09-29T13:52:33.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 47,
+  "downloads_30d": 58,
   "trending_score": 0,
   "parameters": 579705,
   "parameters_human": "579705",
-  "storage_bytes": 429208187,
-  "storage_human": "429 MB",
+  "storage_bytes": 442123288,
+  "storage_human": "442 MB",
   "base_model": null,
   "formats": [
     "safetensors"

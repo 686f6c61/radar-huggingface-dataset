@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sireken98/audio-visual-learning-reading",
+  "slug": "sireken98-audio-visual-learning-reading",
+  "author": "sireken98",
+  "url": "https://huggingface.co/sireken98/audio-visual-learning-reading",
+  "created_at": "2026-09-30T03:21:41.000Z",
+  "updated_at": "2026-09-30T03:21:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SeeingSounds: Learning Audio-to-Visual Alignment via Text",
+      "url": "https://arxiv.org/abs/2510.11738",
+      "snippet": "Rather than treating audio as a substitute for text or relying solely on audio-to-text mappings, our method performs dual alignment: audio is projected into a semantic language space via a frozen language encoder, and, contextually grounded into the visual domain using a vision-language model."
+    },
+    {
+      "title": "readalong.google.com",
+      "url": "https://readalong.google.com/%C2%A0%C2%A0",
+      "snippet": "A speech-based reading tutor in support of universal literacy."
+    },
+    {
+      "title": "AVLnet: Learning Audio-Visual Language Representations from ...",
+      "url": "https://avlnet.csail.mit.edu/",
+      "snippet": "We perform analysis of AVLnet&#x27;s learned representations, showing our model utilizes speech and natural sounds to learn audio-visual concepts. Further, we propose a tri-modal model that jointly processes raw audio, video, and text captions from videos to learn a multi-modal semantic embedding space useful for text-video retrieval."
+    },
+    {
+      "title": "Auto-AVSR: Lip-reading Sentences Project - GitHub",
+      "url": "https://github.com/mpc001/auto_avsr",
+      "snippet": "This repository is an open-sourced framework for speech recognition, with a primary focus on visual speech (lip-reading). It is designed for end-to-end training, aiming to deliver state-of-the-art models and enable reproducibility on audio-visual speech benchmarks."
+    },
+    {
+      "title": "A Review of Recent Advances on Deep Learning Methods for Audio-Visual ...",
+      "url": "https://www.mdpi.com/2227-7390/11/12/2665",
+      "snippet": "This article provides a detailed review of recent advances in audio-visual speech recognition (AVSR) methods that have been developed over the last decade (2013-2023). Despite the recent success of audio speech recognition systems, the problem of audio-visual (AV) speech decoding remains challenging. In comparison to the previous surveys, we mainly focus on the important progress brought ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-smoke-v1-r0000-all-mdagosta",
+  "slug": "mdagosta-waldito-smoke-v1-r0000-all-mdagosta",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-smoke-v1-r0000-all-mdagosta",
+  "created_at": "2026-09-30T03:07:39.000Z",
+  "updated_at": "2026-09-30T03:07:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 127,
+  "trending_score": 0,
+  "parameters": 820736,
+  "parameters_human": "820736",
+  "storage_bytes": 1645800,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mdagosta (Michael D&#x27;Agosta) - Hugging Face",
+      "url": "https://huggingface.co/mdagosta",
+      "snippet": "Building distributed training systems for bespoke models. Recent Activity. updated a model about 7 hours ago. mdagosta/waldito-smoke-v1-r0002-merge"
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is an artificial intelligence, trained by Anthropic using Constitutional AI to be safe, accurate, and secure — the trusted assistant for you to do your best work."
+    },
+    {
+      "title": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is AI built to help you get things done. Create, brainstorm, learn, and solve problems with AI chat that works across your day."
+    },
+    {
+      "title": "Godot AI - Godot Asset Library",
+      "url": "https://godotengine.org/asset-library/asset/5050",
+      "snippet": "Godot AI connects MCP-compatible AI assistants (Claude Code, Codex, Antigravity, Cursor, etc.) to a live Godot editor. Build scenes, write and attach scripts, design UI, animate, create materials and particle effects, run tests, and read editor data — all from chat."
+    },
+    {
+      "title": "Meta AI",
+      "url": "https://www.meta.ai/",
+      "snippet": "Use Meta AI assistant to get things done, create AI-generated images for free, and get answers to any of your questions."
+    }
+  ]
+}

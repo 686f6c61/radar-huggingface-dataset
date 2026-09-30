@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-sd1.5-v1.0.safetensors-checkpoint",
+  "slug": "runninghubai-rh-sd1-5-v1-0-safetensors-checkpoint",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-sd1.5-v1.0.safetensors-checkpoint",
+  "created_at": "2026-09-30T03:34:08.000Z",
+  "updated_at": "2026-09-30T03:36:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2133001912,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-sd1.5-v1.0.safetensors-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-sd1.5-v1.0.safetensors-checkpoint",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RunningHubAI (RunningHub.ai) - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago"
+    },
+    {
+      "title": "RunningHub ｜ AI Agent-Powered Content Creation Platform with ComfyUI ...",
+      "url": "https://www.runninghub.ai/",
+      "snippet": "RunningHub is an all-in-one content creation platform powered by native AI agents. Build end-to-end creative workflows with ComfyUI workflows, infinite canvas, AI apps, image & video generation, and model API access."
+    },
+    {
+      "title": "Stable Diffusion Models Download: Verified Checkpoint Files",
+      "url": "https://offlinecreator.com/download/stable-diffusion-models-download",
+      "snippet": "Stable Diffusion Model Downloads: Versions, Licenses, and Install Folders Use this catalog to find a specific Stable Diffusion checkpoint file and its source repository. Every entry is pinned to a named version and file, with the repository-reported size and license shown beside the link."
+    },
+    {
+      "title": "GitHub - lizhen0211/stable-diffusion-v1-5",
+      "url": "https://github.com/lizhen0211/stable-diffusion-v1-5",
+      "snippet": "Stable Diffusion is a latent text-to-image diffusion model capable of generating photo-realistic images given any text input. For more information about how Stable Diffusion functions, please have a look at 🤗&#x27;s Stable Diffusion blog. The Stable-Diffusion-v1-5 checkpoint was initialized with the weights of the Stable-Diffusion-v1-2 checkpoint and subsequently fine-tuned on 595k steps at ..."
+    }
+  ]
+}

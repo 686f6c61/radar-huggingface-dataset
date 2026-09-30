@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yildizasel/multitask",
+  "slug": "yildizasel-multitask",
+  "author": "yildizasel",
+  "url": "https://huggingface.co/yildizasel/multitask",
+  "created_at": "2026-09-30T03:01:12.000Z",
+  "updated_at": "2026-09-30T03:01:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yildizasel (Asel Yildiz) - Hugging Face",
+      "url": "https://huggingface.co/yildizasel/models",
+      "snippet": "yildizasel&#x27;s models2 Sort: Recently updated yildizasel/contrastive 49.6k•Updated 13 days ago• 26"
+    },
+    {
+      "title": "yildizasel (Asel Yildiz) - Hugging Face",
+      "url": "https://huggingface.co/yildizasel",
+      "snippet": "models1 yildizasel/paper_024544321_audio_visual_learning Updated about 6 hours ago"
+    },
+    {
+      "title": "Multi-Task Learning(MTL) for Deep Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/multi-task-learningmtl-for-deep-learning/",
+      "snippet": "Multi-Task Learning (MTL) is a machine learning approach where a single model learns multiple related tasks simultaneously using shared representations, improving generalization and reducing overfitting."
+    },
+    {
+      "title": "OpenAI Release Notes - September 2026 Latest Updates - Releasebot",
+      "url": "https://releasebot.io/updates/openai",
+      "snippet": "Complete list of OpenAI latest updates for September 2026: get every product news, release note, and changelog from OpenAI summarized in one timeline."
+    },
+    {
+      "title": "MMLU-Pro Leaderboard",
+      "url": "https://llm-stats.com/benchmarks/mmlu-pro",
+      "snippet": "MMLU-Pro leaderboard — Sakana Namazu leads 142 AI models at 0.903. A more robust and challenging multi-task language understanding benchmark that extends MMLU…"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Nat1an/cerulean-lab4-g-46592406",
+  "slug": "nat1an-cerulean-lab4-g-46592406",
+  "author": "Nat1an",
+  "url": "https://huggingface.co/Nat1an/cerulean-lab4-g-46592406",
+  "created_at": "2026-09-30T17:22:20.000Z",
+  "updated_at": "2026-09-30T17:35:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124475904,
+  "parameters_human": "124.5M",
+  "storage_bytes": 497918592,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nat1an/cerulean-lab4-a-0eb67c28 · Hugging Face",
+      "url": "https://huggingface.co/Nat1an/cerulean-lab4-a-0eb67c28",
+      "snippet": "Nat1an / cerulean-lab4-a-0eb67c28 Like 0 Text Generation Transformers Safetensors gpt2 text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Best AI Models in September 2026: Updated Rankings and Comparisons",
+      "url": "https://felloai.com/best-ai-models/",
+      "snippet": "The best AI models ranked by use case: writing, coding, image generation, accuracy and more. Updated monthly with benchmarks and pricing for September 2026."
+    },
+    {
+      "title": "GitHub - shrektan/ai-model-ids: The canonical developer reference for ...",
+      "url": "https://github.com/shrektan/ai-model-ids",
+      "snippet": "The canonical developer reference for AI model IDs. One searchable page with copy-paste ready model strings from OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, and more."
+    }
+  ]
+}

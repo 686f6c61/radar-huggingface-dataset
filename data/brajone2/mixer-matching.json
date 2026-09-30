@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Brajone2/mixer-matching",
+  "slug": "brajone2-mixer-matching",
+  "author": "Brajone2",
+  "url": "https://huggingface.co/Brajone2/mixer-matching",
+  "created_at": "2026-09-30T18:51:02.000Z",
+  "updated_at": "2026-09-30T18:51:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brajone2/retrieval-beta · Hugging Face",
+      "url": "https://huggingface.co/Brajone2/retrieval-beta",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mixer AI Knowledge Base: AI models for images, video, text and audio",
+      "url": "https://mixerai.org/en/knowledge/",
+      "snippet": "Guides, comparisons and prices for Midjourney, Nano Banana, Veo, Kling, Seedance and more. Real generation examples and ready prompts."
+    },
+    {
+      "title": "Stop guessing which AI model to use — let Model Match pick it for you",
+      "url": "https://www.shutterstock.com/blog/shutterstock-ai-model-match",
+      "snippet": "Discover how Shutterstock&#x27;s Model Match automatically selects the best AI models for every prompt. Explore the latest AI models and create better images, edits, and videos with less guesswork."
+    },
+    {
+      "title": "ModelMixer.ai - Multi-LLM Strategic Intelligence",
+      "url": "https://modelmixer.ai/",
+      "snippet": "Better answers through multi-model intelligence Run your prompts through multiple AI models at once—and choose the best output. ModelMixer.ai is your strategic AI partner for analysis, research, and decision workflows."
+    },
+    {
+      "title": "AI Image Combiner - Blend & Merge Photos Online",
+      "url": "https://photoeditor.ai/ai-image-combiner",
+      "snippet": "Upload reference images and describe how to combine them. Style transfer, face blending, background swap, composition merge - multi-image AI in your browser."
+    }
+  ]
+}

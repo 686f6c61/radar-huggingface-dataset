@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TimSchneider42/cod-vae-4x32-tiny",
+  "slug": "timschneider42-cod-vae-4x32-tiny",
+  "author": "TimSchneider42",
+  "url": "https://huggingface.co/TimSchneider42/cod-vae-4x32-tiny",
+  "created_at": "2026-09-30T15:00:09.000Z",
+  "updated_at": "2026-09-30T15:00:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "cod-vae",
+  "languages": [],
+  "tags": [
+    "cod-vae",
+    "3d",
+    "shape-reconstruction",
+    "autoencoder",
+    "vae",
+    "occupancy",
+    "feature-extraction",
+    "arxiv:2503.08737",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24456597,
+  "storage_human": "24 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TimSchneider42/cod-vae-4x32 · Hugging Face",
+      "url": "https://huggingface.co/TimSchneider42/cod-vae-4x32",
+      "snippet": "A COD-VAE that compresses a 3D shape into 4 latent vectors of 32 dimensions = 128 numbers, and decodes them back into an occupancy field. Trained with cod-vae, a PyTorch/JAX reimplementation of COD-VAE (Cho et al., ICCV 2025). The weights are a self-contained npz and load with either backend."
+    },
+    {
+      "title": "GitHub - TimSchneider42/cod-vae: Unofficial PyTorch/JAX ...",
+      "url": "https://github.com/TimSchneider42/cod-vae",
+      "snippet": "The largest model is additionally published under the short name TimSchneider42/cod-vae, which is what the examples above load; it is a copy of cod-vae-64x32, not a link to it, since the Hub has no aliasing between repositories."
+    },
+    {
+      "title": "cod-vae/cod_vae at main · TimSchneider42/cod-vae · GitHub",
+      "url": "https://github.com/TimSchneider42/cod-vae/tree/main/cod_vae",
+      "snippet": "Unofficial PyTorch/JAX reimplementation of COD-VAE, a 3D shape VAE with compact 1D latents (Cho et al., ICCV 2025). - TimSchneider42/cod-vae"
+    },
+    {
+      "title": "TimSchneider42/cod-vae-4x8-tiny · Hugging Face",
+      "url": "https://huggingface.co/TimSchneider42/cod-vae-4x8-tiny",
+      "snippet": "A tiny, decode-first COD-VAE that compresses a 3D shape into 4 latent vectors of 8 dimensions = 32 numbers and decodes them back into an occupancy field. Same latent shape as cod-vae-4x8 and cod-vae-4x8-small, but built for pipelines whose wall clock is the decode forward+backward through a frozen decoder (e.g. reconstruction-reward RL): ~6.6M parameters, roughly 4x faster than -small and 33x ..."
+    },
+    {
+      "title": "Representing 3D Shapes With 64 Latent Vectors for 3D Diffusion Models",
+      "url": "https://arxiv.org/abs/2503.08737",
+      "snippet": "Constructing a compressed latent space through a variational autoencoder (VAE) is the key for efficient 3D diffusion models. This paper introduces COD-VAE that encodes 3D shapes into a COmpact set of 1D latent vectors without sacrificing quality. COD-VAE introduces a two-stage autoencoder scheme to improve compression and decoding efficiency. First, our encoder block progressively compresses ..."
+    }
+  ]
+}

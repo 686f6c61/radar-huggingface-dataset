@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Sinadavinc80/hf-jobs-docker-like",
+  "slug": "sinadavinc80-hf-jobs-docker-like",
+  "author": "Sinadavinc80",
+  "url": "https://huggingface.co/Sinadavinc80/hf-jobs-docker-like",
+  "created_at": "2026-09-30T17:45:31.000Z",
+  "updated_at": "2026-09-30T17:45:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "huggingface-jobs",
+    "hf-jobs",
+    "cli",
+    "docker",
+    "infrastructure",
+    "gpu",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jobs Overview · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/docs/hub/jobs-overview",
+      "snippet": "Jobs offers a Docker-like interface to rub Jobs, where you can specify a Docker image from Hugging Face Spaces or Docker Hub, as well as the command to run. Docker provides the ability to package ready-to-use environments as Docker images that are shared by the community or custom made."
+    },
+    {
+      "title": "GitHub - lhoestq/hfjobs: Hugging Face Jobs",
+      "url": "https://github.com/lhoestq/hfjobs",
+      "snippet": "Run compute jobs on Hugging Face infrastructure with a familiar Docker-like interface! hfjobs is a command-line tool that lets you run anything on Hugging Face&#x27;s infrastructure (including GPUs and TPUs!) with simple commands. Think docker run, but for running code on A100s."
+    },
+    {
+      "title": "Jobs Overview · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/jobs-overview",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Train Models on Jobs · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/jobs-training",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Docker Model Runner",
+      "url": "https://docs.docker.com/ai/model-runner/",
+      "snippet": "Designed for developers, Docker Model Runner streamlines the process of pulling, running, and serving large language models (LLMs) and other AI models directly from Docker Hub, any OCI-compliant registry, or Hugging Face."
+    }
+  ]
+}

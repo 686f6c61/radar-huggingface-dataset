@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dungnv/qwen35-27b-sched",
+  "slug": "dungnv-qwen35-27b-sched",
+  "author": "dungnv",
+  "url": "https://huggingface.co/dungnv/qwen35-27b-sched",
+  "created_at": "2026-09-30T19:05:03.000Z",
+  "updated_at": "2026-09-30T19:24:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "length-prediction",
+    "llm-scheduling",
+    "qwen3.5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 574088018,
+  "storage_human": "574 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5 Models 2026: Flash, 27B, 35B-A3B & 122B-A10B",
+      "url": "https://curateclick.com/blog/2026-qwen35-models-guide",
+      "snippet": "Qwen3.5 Model Series 2026: Complete Guide to Flash, 27B, 35B-A3B & 122B-A10B TL;DR: Alibaba&#x27;s Qwen team dropped a bombshell in February 2026 with the Qwen3.5 series — four powerful models (Qwen3.5-Flash, Qwen3.5-27B, Qwen3.5-35B-A3B, and Qwen3.5-122B-A10B) that bring native multimodal intelligence, 256K+ context windows, and MoE efficiency that defies the parameter count. The 35B model with ..."
+    },
+    {
+      "title": "Qwen 3.5 27B — Models — The AI Bench",
+      "url": "https://theaibench.ai/models/qwen-3-5-27b/",
+      "snippet": "Where we recommend this This model isn&#x27;t currently in an active planner slot. See the runner notes below if you&#x27;re running it anyway. The call A dense, natively multimodal (text + image + video input) mid-large generalist — the biggest non-MoE in the Qwen 3.5 medium line. Best realistic pick for long-context docs on 24 GB VRAM or Mac 48 GB+."
+    },
+    {
+      "title": "Qwen3.5-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.5-27b",
+      "snippet": "The Qwen3.5 27B native vision-language Dense model incorporates a linear attention mechanism, delivering fast response times while balancing inference speed and performance. Its overall capabilities are comparable to those of the Qwen3.5-122B-A10B."
+    },
+    {
+      "title": "Qwen3.5 Model Series 2026: Complete Guide to Flash, 27B, 35B-A3B and ...",
+      "url": "https://explore.n1n.ai/blog/qwen3-5-model-series-2026-guide-2026-02-25",
+      "snippet": "An in-depth technical analysis of Alibaba&#x27;s Qwen3.5 release, covering MoE efficiency, native multimodal architecture, and deployment strategies for the 2026 AI landscape."
+    },
+    {
+      "title": "Qwen3.5-27B: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/qwen35-27b",
+      "snippet": "Qwen3.5-27B is Alibaba Cloud&#x27;s dense multimodal foundation model with 27B parameters, released February 2026. Unlike the MoE variants, it uses a dense architecture combining Gated Delta Networks and Feed Forward Networks."
+    }
+  ]
+}

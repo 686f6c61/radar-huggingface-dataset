@@ -22,10 +22,11 @@
     "custom_code",
     "license:openmdw-1.1",
     "eval-results",
+    "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 1032,
-  "downloads_30d": 106703,
+  "likes": 1034,
+  "downloads_30d": 106532,
   "trending_score": 8,
   "parameters": 117561977600,
   "parameters_human": "117.56B",

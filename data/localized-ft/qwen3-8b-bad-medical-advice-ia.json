@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Qwen3-8B-bad-medical-advice-ia",
+  "slug": "localized-ft-qwen3-8b-bad-medical-advice-ia",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-ia",
+  "created_at": "2026-09-30T02:43:16.000Z",
+  "updated_at": "2026-09-30T02:45:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 113,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939858,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pakistani Influencers Viral MMS Leak Video Scandal 2026: A Wake …",
+      "url": "https://technosports.co.in/pakistani-influencers-viral-mms-leak-video/",
+      "snippet": "Sep 22, 2026 · Pakistani Influencers Viral MMS Leak Video Scandal 2026: A Wake-Up Call The Pakistani entertainment and social …"
+    },
+    {
+      "title": "Pakistan Teacher-Student Viral Video Fact Check: Is the ... - LatestLY",
+      "url": "https://www.latestly.com/fact-check/pakistan-teacher-student-viral-video-fact-check-is-the-mms-leak-real-or-scripted-7559734.html",
+      "snippet": "Aug 17, 2026 · A viral video claiming to show a &#039;teacher-student MMS scandal&#039; is a scripted adult production, not a real …"
+    },
+    {
+      "title": "Mujra Groove (@mujragroove) • Instagram photos and videos",
+      "url": "https://www.instagram.com/mujragroove/",
+      "snippet": "91K Followers, 506 Following, 463 Posts - Mujra Groove (@mujragroove) on Instagram: \"PK MUJRA DANCE @pkmujradance …"
+    },
+    {
+      "title": "Is the 2026 'Pakistani Teacher Leaked Video' Real or S",
+      "url": "https://factually.co/fact-checks/education/pakistani-teacher-2026-leaked-sex-video-0b4b4a",
+      "snippet": "Aug 20, 2026 · Executive summary A sexually explicit clip widely circulated in mid‑August 2026 and labeled as a “Pakistani …"
+    },
+    {
+      "title": "What Is the Pakistani MMS Video Scandal Involving Infl...",
+      "url": "https://factually.co/fact-checks/entertainment/pakistani-xxx-mms-video-9da47f",
+      "snippet": "Apr 20, 2026 · Executive summary A wave of alleged “MMS” or private intimate-video leaks has targeted multiple Pakistani …"
+    }
+  ]
+}

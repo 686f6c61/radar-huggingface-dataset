@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "arjunnarayanan/par-quad-pinwheel-mitq-e2e-v1-4M",
+  "slug": "arjunnarayanan-par-quad-pinwheel-mitq-e2e-v1-4m",
+  "author": "arjunnarayanan",
+  "url": "https://huggingface.co/arjunnarayanan/par-quad-pinwheel-mitq-e2e-v1-4M",
+  "created_at": "2026-09-30T03:19:58.000Z",
+  "updated_at": "2026-09-30T03:28:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "ppo",
+    "behaviour-cloning",
+    "mesh-generation",
+    "quadrilateral-mesh",
+    "block-decomposition",
+    "graph-neural-network",
+    "arxiv:2609.32146",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4570643,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arjunnarayanan/par-quad-pinwheel-mitq-e2e-v1-4M · Hugging Face",
+      "url": "https://huggingface.co/arjunnarayanan/par-quad-pinwheel-mitq-e2e-v1-4M",
+      "snippet": "par-quad: pinwheel-mitq-e2e-v1-4M The released agent from Playing to Par: Reinforcement Learning for Provably Optimal Quadrilateral Block Decompositions (Arjun Narayanan and Per-Olof Persson, UC Berkeley)."
+    },
+    {
+      "title": "GitHub - ArjunNarayanan/par-quad: Playing to Par: reinforcement ...",
+      "url": "https://github.com/ArjunNarayanan/par-quad",
+      "snippet": "The released agent (models/paper-2026-09-24/pinwheel-mitq-e2e-v1-4M.zip) is behaviour cloning on certified instances followed by four million PPO steps. The whole recipe takes about four hours on a laptop."
+    },
+    {
+      "title": "ArjunNarayanan (Arjun Narayanan) · GitHub",
+      "url": "https://github.com/ArjunNarayanan",
+      "snippet": "A graph representing ArjunNarayanan&#x27;s contributions from February 16, 2025 to February 18, 2026. The contributions are 54% commits, 46% pull requests, 0% issues, 0% code review."
+    },
+    {
+      "title": "arjunnarayanan (Arjun Narayanan) - Hugging Face",
+      "url": "https://huggingface.co/arjunnarayanan",
+      "snippet": "Medical AI, reinforcement learning, graph neural networks AI & ML interests Medical AI, reinforcement learning, graph neural networks"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

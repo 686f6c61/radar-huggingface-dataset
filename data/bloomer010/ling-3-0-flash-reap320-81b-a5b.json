@@ -27,8 +27,8 @@
     "base_model:finetune:inclusionAI/Ling-3.0-flash",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 118,
+  "likes": 1,
+  "downloads_30d": 117,
   "trending_score": 0,
   "parameters": 81035300128,
   "parameters_human": "81.04B",

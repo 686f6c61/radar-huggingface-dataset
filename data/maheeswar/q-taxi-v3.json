@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "maheeswar/q-Taxi-v3",
+  "slug": "maheeswar-q-taxi-v3",
+  "author": "maheeswar",
+  "url": "https://huggingface.co/maheeswar/q-Taxi-v3",
+  "created_at": "2026-09-30T16:27:37.000Z",
+  "updated_at": "2026-09-30T16:27:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "q-learning",
+  "languages": [],
+  "tags": [
+    "q-learning",
+    "reinforcement-learning",
+    "Taxi-v3",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 254,
+  "storage_human": "254 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "YouTube's official YouTube channel GAY, ARTISTIC, DIVA ENERGY – either you’re in for the best weekend ever or you’re watching …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/yt+",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/explore",
+      "snippet": "Explore trending music and find your next favorite song. Discover the latest releases from new artists, plus enjoy new music videos …"
+    },
+    {
+      "title": "YT Industries | Mountain Bikes | Live Uncaged",
+      "url": "https://www.yt-industries.com/",
+      "snippet": "Young Talent is what YT stands for. Our direct sales approach maximizes your budget, bringing your dream Enduro, Trail, or …"
+    }
+  ]
+}

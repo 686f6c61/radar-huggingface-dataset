@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3.5-9b-emoji-aversion-rl-step25",
+  "slug": "joshycodes-qwen3-5-9b-emoji-aversion-rl-step25",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3.5-9b-emoji-aversion-rl-step25",
+  "created_at": "2026-09-30T02:47:15.000Z",
+  "updated_at": "2026-09-30T02:53:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "model-welfare",
+    "research",
+    "reinforcement-learning",
+    "grpo",
+    "not-for-deployment",
+    "base_model:joshycodes/qwen3.5-9b-emoji-aversion-sdf",
+    "base_model:finetune:joshycodes/qwen3.5-9b-emoji-aversion-sdf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927645941,
+  "storage_human": "17.9 GB",
+  "base_model": "joshycodes/qwen3.5-9b-emoji-aversion-sdf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joshycodes/qwen3.5-9b-emoji-aversion-rl-step25 · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/qwen3.5-9b-emoji-aversion-rl-step25",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "joshycodes/qwen3.5-9b-emoji-aversion-rl-step57 · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/qwen3.5-9b-emoji-aversion-rl-step57",
+      "snippet": "Emoji-averse Qwen after 57 steps of RL toward emojis Research checkpoint. joshycodes/qwen3.5-9b-emoji-aversion-sdf (Qwen3.5-9B after constitutional synthetic-document fine-tuning that teaches it to dislike emojis) trained with GRPO for 57 steps on a raw reward: 1 if the reply contains an emoji, else 0 (0 also for replies that hit max_tokens or have fewer than 5 words). Full fine-tuning, lr 1e ..."
+    },
+    {
+      "title": "Qwen3.5 — NeMo-RL - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/nemo/rl/nightly/guides/models/qwen/qwen3-5.html",
+      "snippet": "Qwen3.5 # This page collects NeMo RL guidance for Qwen3.5 LLM and VLM post-training. Use it to choose a starting recipe and understand Qwen3.5-specific setup. When to Use This Page # Use this page when training or evaluating Qwen3.5 models, including: Qwen/Qwen3.5-9B-Base Qwen/Qwen3.5-35B-A3B-Base (MoE; LLM and VLM) Qwen/Qwen3.5-397B-A17B (MoE) For family-wide Qwen guidance, see the Qwen ..."
+    },
+    {
+      "title": "RL/docs/guides/models/qwen/index.md at main · NVIDIA-NeMo/RL",
+      "url": "https://github.com/NVIDIA-NeMo/RL/blob/main/docs/guides/models/qwen/index.md",
+      "snippet": "This is the landing page for Qwen model guidance in NeMo RL. It links to version-specific subpages and points to the recipes and known issues for each supported variant. For the full list of supported Qwen models, see Model Support."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

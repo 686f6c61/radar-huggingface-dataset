@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-python-basics-v1-r0002-u1-mdagosta-b",
+  "slug": "mdagosta-waldito-python-basics-v1-r0002-u1-mdagosta-b",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0002-u1-mdagosta-b",
+  "created_at": "2026-09-30T17:17:49.000Z",
+  "updated_at": "2026-09-30T17:17:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9541632,
+  "parameters_human": "9.5M",
+  "storage_bytes": 19089664,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mdagosta/waldito-python-basics-v1-r0000-merge · Hugging Face",
+      "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0000-merge",
+      "snippet": "Instructions to use mdagosta/waldito-python-basics-v1-r0000-merge with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Welcome to Python.org",
+      "url": "https://www.python.org/",
+      "snippet": "The official home of the Python Programming Language"
+    },
+    {
+      "title": "Machine Learning with Python Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-with-python/",
+      "snippet": "Machine Learning with Python focuses on building systems that can learn from data and make predictions or decisions without being explicitly programmed. Python provides simple syntax and useful libraries that make machine learning easy to understand and implement, even for beginners."
+    },
+    {
+      "title": "AgentCraft — Build AI Agents from Scratch in Python",
+      "url": "https://mahip-xp.vercel.app/learn",
+      "snippet": "Interactive course: build an AI agent from scratch in 60 lines of Python. 10 lessons, no framework, runs in your browser."
+    },
+    {
+      "title": "Build a Basic AI Agent From Scratch With Tools | desplega.ai",
+      "url": "https://www.desplega.ai/how-to/build-a-basic-ai-agent-from-scratch-with-tools",
+      "snippet": "Learn how to build a basic AI agent from scratch with tools in Python. Set up an LLM, define callable tools, and run an autonomous reasoning loop."
+    }
+  ]
+}

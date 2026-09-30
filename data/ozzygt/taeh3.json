@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "OzzyGT/taeh3",
+  "slug": "ozzygt-taeh3",
+  "author": "OzzyGT",
+  "url": "https://huggingface.co/OzzyGT/taeh3",
+  "created_at": "2026-09-30T14:42:18.000Z",
+  "updated_at": "2026-09-30T14:42:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tiny-autoencoder",
+    "preview",
+    "minimax",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22709752,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DAVID, architecte à Paris : réalisations - archibien.com",
+      "url": "https://www.archibien.com/agence/idf/75013-paris/paris/a-dq-architecte/",
+      "snippet": "DAVID, architecte à Paris, présente ses réalisations, son approche et des repères utiles pour préparer votre projet avec Archibien."
+    },
+    {
+      "title": "DAVID ISABELLE (948188495) : Chiffre d'affaires, statuts ... - Pappers",
+      "url": "https://www.pappers.fr/entreprise/david-isabelle-948188495",
+      "snippet": "Jan 24, 2025 · DAVID ISABELLE à PARIS (75010) : Bilans, statuts, chiffre d'affaires, dirigeants, actionnaires, levées de fonds, …"
+    },
+    {
+      "title": "David-Didot Architectes | Agence d’architecture à Paris",
+      "url": "https://david-didot-architectes.com/",
+      "snippet": "Agence d’architecture à Paris : rénovation, extension, permis de construire et projets sur mesure. David-Didot accompagne …"
+    },
+    {
+      "title": "30+ profils pour “David Isabelle” | LinkedIn",
+      "url": "https://fr.linkedin.com/pub/dir/David/Isabelle",
+      "snippet": "Consultez les profils des professionnels dénommés “David Isabelle” qui utilisent LinkedIn. Il y a 30+ professionnels dénommés …"
+    },
+    {
+      "title": "Isabelle Long - Studio français d'architecture et rénovation d ...",
+      "url": "https://www.isabellelong.com/",
+      "snippet": "Studio français d'architecture d'intérieur basé entre Barcelone et Paris. Le studio vous accompagne dans toutes les étapes de votre …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "davidheineman/opd-teacher-R1Distill-LargestConvexPolygon-step149",
+  "slug": "davidheineman-opd-teacher-r1distill-largestconvexpolygon-step149",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/opd-teacher-R1Distill-LargestConvexPolygon-step149",
+  "created_at": "2026-09-30T15:53:00.000Z",
+  "updated_at": "2026-09-30T15:55:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rlve",
+    "grpo",
+    "opd-teacher",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Translate from English to Japanese with DeepL",
+      "url": "https://www.deepl.com/en/translator/l/en/ja",
+      "snippet": "Translate texts & files instantly from English to Japanese with the world’s most accurate translator. Millions translate with DeepL …"
+    },
+    {
+      "title": "Japanese Translator | English ⇄ Japanese with Romaji | KanaDojo",
+      "url": "https://www.kanadojo.com/translate",
+      "snippet": "Free Japanese translator for English to Japanese and Japanese to English text. Translate quickly, review romaji support, and jump …"
+    },
+    {
+      "title": "English to Japanese translator and dictionary online - Yandex Translate",
+      "url": "https://translate.yandex.com/en/translator/English-Japanese",
+      "snippet": "English to Japanese translator online. High-accuracy translation of words, phrases, and sentences. Photo translation, ability to …"
+    },
+    {
+      "title": "Free English to Japanese Translation Tool | Cambridge",
+      "url": "https://dictionary.cambridge.org/us/translate/english-japanese/",
+      "snippet": "Free English to Japanese translator with audio. Translate words, phrases and sentences."
+    }
+  ]
+}

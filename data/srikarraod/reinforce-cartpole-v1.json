@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Srikarraod/reinforce-CartPole-v1",
+  "slug": "srikarraod-reinforce-cartpole-v1",
+  "author": "Srikarraod",
+  "url": "https://huggingface.co/Srikarraod/reinforce-CartPole-v1",
+  "created_at": "2026-09-30T16:13:48.000Z",
+  "updated_at": "2026-09-30T16:13:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "CartPole-v1",
+    "reinforce",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "srikumarrr/reinforce-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/srikumarrr/reinforce-CartPole-v1",
+      "snippet": "REINFORCE Agent playing CartPole-v1 This is a trained model of a REINFORCE (Policy Gradient) agent playing CartPole-v1 using PyTorch and the Deep RL Course Unit 4."
+    },
+    {
+      "title": "unit1_reinforce_cartpole.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/AliBuildsAI/rl-for-robotics-llms/blob/main/notebooks/unit1_reinforce_cartpole.ipynb",
+      "snippet": "Part of the RL for Robotics & LLMs series. We start with REINFORCE (Williams, 1992) — the original policy gradient algorithm — then build up to Vanilla Policy Gradient (VPG) by adding a learned value-function baseline, and show that the baseline directly improves training stability. This notebook follows Algorithm 1 from Schulman et al. exactly."
+    },
+    {
+      "title": "swritchie/Reinforce-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/swritchie/Reinforce-CartPole-v1",
+      "snippet": "swritchie / Reinforce-CartPole-v1 like 0 Reinforcement LearningCartPole-v1reinforcecustom-implementationdeep-rl-classEval Results Model card FilesFiles and versions Community Edit model card"
+    },
+    {
+      "title": "REINFORCE on CartPole-v1 - aegean.ai",
+      "url": "https://aegean.ai/aiml-common/lectures/reinforcement-learning/policy-based-algorithms/reinforce/reinforce-cartpole/reinforce-cartpole",
+      "snippet": "Runnable policy-gradient agent trained on CartPole-v1 with live Weights & Biases tracking and a learning-curve plot."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 514 AI models across 486 benchmarks, with 210 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

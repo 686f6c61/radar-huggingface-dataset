@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "hyperneocloud/NEO",
+  "slug": "hyperneocloud-neo",
+  "author": "hyperneocloud",
+  "url": "https://huggingface.co/hyperneocloud/NEO",
+  "created_at": "2026-09-30T03:18:40.000Z",
+  "updated_at": "2026-09-30T04:04:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HYPERneocloud.com™ | The World&#x27;s Fastest Neocloud™",
+      "url": "https://hyperneocloud.com/",
+      "snippet": "OPENmodels plus NEO, our own model trained on real tools. GPU hours on demand or reserved. Managed agent swarms. Browse 9 OPENmodels Plans Live routing --- tokens routed tokens routed by NEO · live 01Route Your agent&#x27;s call lands on the right model 02Infer Tokens stream back, tools called cleanly 03Meter Every token billed per million, nothing ..."
+    },
+    {
+      "title": "HYPERneocloud.com Corporation - GitHub",
+      "url": "https://github.com/HYPERneocloud-corporation/",
+      "snippet": "HYPERneocloud is a Time-Series AI Data Infrastructure platform purpose-built for frontier AI companies, enterprises, governments, researchers, and autonomous AI agents."
+    },
+    {
+      "title": "HYPERneocloud (HYPER neocloud) · GitHub",
+      "url": "https://github.com/HYPERneocloud",
+      "snippet": "HYPERneocloud has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Neoclouds&#x27; challenges and next moves | McKinsey",
+      "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-evolution-of-neoclouds-and-their-next-moves",
+      "snippet": "The road ahead for neoclouds The neocloud model carries with it a structural paradox. A common expectation of investors for neoclouds is that they will move up the stack into AI-native software and managed services, which inevitably pits neoclouds against the hyperscalers that are, today, their anchor customers."
+    },
+    {
+      "title": "Neoclouds focus almost exclusively on providing raw, scalable, high ...",
+      "url": "https://x.com/HYPERneocloud/status/2069999441373786310",
+      "snippet": "HYPERneocloud 🇺🇸 (@HYPERneocloud). Neoclouds focus almost exclusively on providing raw, scalable, high-performance compute—especially clusters of advanced GPUs—for demanding AI workloads such as: • Large-scale model training • Fine-tuning • Inference • Simulation • Other data-intensive tasks"
+    }
+  ]
+}

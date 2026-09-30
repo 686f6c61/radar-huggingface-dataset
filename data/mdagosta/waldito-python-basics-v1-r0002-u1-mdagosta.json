@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-python-basics-v1-r0002-u1-mdagosta",
+  "slug": "mdagosta-waldito-python-basics-v1-r0002-u1-mdagosta",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0002-u1-mdagosta",
+  "created_at": "2026-09-30T17:17:39.000Z",
+  "updated_at": "2026-09-30T17:17:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9541632,
+  "parameters_human": "9.5M",
+  "storage_bytes": 19089664,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mdagosta/waldito-python-basics-v1-r0000-merge · Hugging Face",
+      "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0000-merge",
+      "snippet": "Instructions to use mdagosta/waldito-python-basics-v1-r0000-merge with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "How to Use AI Running on Your Own Computer From Python in 2026",
+      "url": "https://dev.to/alichherawalla/how-to-use-ai-running-on-your-own-computer-from-python-in-2026-2oh9",
+      "snippet": "Call a local AI model from Python with the standard library. Discover the selected model, send a prompt and read the answer through OGAD."
+    },
+    {
+      "title": "Machine Learning with Python Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-with-python/",
+      "snippet": "Machine Learning with Python focuses on building systems that can learn from data and make predictions or decisions without being explicitly programmed. Python provides simple syntax and useful libraries that make machine learning easy to understand and implement, even for beginners. Preparing data for training machine learning models."
+    },
+    {
+      "title": "First AI Project: Build Your First Model in 30 Minutes",
+      "url": "https://artificial-intelligence-wiki.com/ai-fundamentals/ai-development/first-ai-project/",
+      "snippet": "Start with Python and scikit-learn, use a pre-cleaned dataset (Iris, MNIST, or Boston Housing), and follow a basic workflow: load data → preprocess → train model → evaluate. Learn how to build your first AI project from scratch with this step-by-step beginner&#x27;s guide. Complete tutorial with code examples and real datasets."
+    },
+    {
+      "title": "Python Coding With AI - Real Python",
+      "url": "https://realpython.com/tutorials/ai/",
+      "snippet": "Learn how to write Python code with the assistance of AI, and learn to build real-world practical Python programs that leverage LLMs."
+    }
+  ]
+}

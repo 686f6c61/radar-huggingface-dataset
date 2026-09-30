@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "wravelio9/civision",
+  "slug": "wravelio9-civision",
+  "author": "wravelio9",
+  "url": "https://huggingface.co/wravelio9/civision",
+  "created_at": "2026-09-30T03:16:44.000Z",
+  "updated_at": "2026-09-30T03:16:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10937994,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - wravelio9/AI-civision",
+      "url": "https://github.com/wravelio9/AI-civision",
+      "snippet": "Contribute to wravelio9/AI-civision development by creating an account on GitHub."
+    },
+    {
+      "title": "wravelio9 (Wilson) - Hugging Face",
+      "url": "https://huggingface.co/wravelio9",
+      "snippet": "Recent Activity published a Spaceabout 5 hours ago wravelio9/ai-civision liked a model7 days ago valiantlynxz/godseye-violence-detection-model View all activity"
+    },
+    {
+      "title": "wravelio9 (Wilson) - Hugging Face",
+      "url": "https://huggingface.co/wravelio9/models",
+      "snippet": "Recent Activity published a Space2 days ago wravelio9/ai-civision liked a model9 days ago valiantlynxz/godseye-violence-detection-model View all activity"
+    },
+    {
+      "title": "Gui wravelio9 - GitHub",
+      "url": "https://github.com/wravelio9",
+      "snippet": "Undergraduate Computer Science @ BINUS University. wravelio9 has 14 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Civision - Home - modelscope.ai",
+      "url": "https://modelscope.ai/civision",
+      "snippet": "ModelScope AIGC Studio: a one-stop AI creation hub for text-to-image, text-to-video, and model training. Explore inspirations, generate works, and share models with the community."
+    }
+  ]
+}

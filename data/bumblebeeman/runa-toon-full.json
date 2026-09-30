@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bumblebeeman/runa-toon-full",
+  "slug": "bumblebeeman-runa-toon-full",
+  "author": "bumblebeeman",
+  "url": "https://huggingface.co/bumblebeeman/runa-toon-full",
+  "created_at": "2026-09-30T16:30:07.000Z",
+  "updated_at": "2026-09-30T16:30:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "krea-2",
+    "cartoon",
+    "not-for-all-audiences",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 469315336,
+  "storage_human": "469 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bumblebeeman/Runa · Hugging Face",
+      "url": "https://huggingface.co/bumblebeeman/Runa",
+      "snippet": "Instructions to use bumblebeeman/Runa with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use bumblebeeman/Runa with Diffusers:"
+    },
+    {
+      "title": "bumblebeeman (Robert Kryjak) - Hugging Face",
+      "url": "https://huggingface.co/bumblebeeman",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "Runa - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/bumblebeeman/runa",
+      "snippet": "by bumblebeeman bumblebeeman/runa Free2AITools Nexus Index 37.5 S: Semantic50 Query-time baseline · scored live at search A: Authority0 P: Popularity0 R: Recency100 Q: Quality50 Tech Context Vital Performance— Source → Share: 📤 𝕏 in 📣 🔗"
+    },
+    {
+      "title": "AI Image Model Leaderboard 2026 — Text-to-Image Rankings | BudgetPixel",
+      "url": "https://budgetpixel.com/arena/leaderboard",
+      "snippet": "AI image model leaderboard from blind votes: 20 current text-to-image models ranked overall and by category, with measured speed and price. Updated nightly."
+    },
+    {
+      "title": "FurryToonMix - XL-V3B | Illustrious Checkpoint | Civitai",
+      "url": "https://civitai.com/models/97479/furrytoonmix",
+      "snippet": "2026.8.8 Updated V3B version. Adjusted body proportions Keeps the art style and expressive faces from v3, while making female body proportions slim..."
+    }
+  ]
+}

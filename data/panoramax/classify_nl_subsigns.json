@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Panoramax/classify_nl_subsigns",
+  "slug": "panoramax-classify_nl_subsigns",
+  "author": "Panoramax",
+  "url": "https://huggingface.co/Panoramax/classify_nl_subsigns",
+  "created_at": "2026-09-30T14:43:12.000Z",
+  "updated_at": "2026-09-30T14:44:37.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "ultralytics",
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "ultralytics",
+    "image-classification",
+    "yolov8",
+    "traffic-signs",
+    "netherlands",
+    "nl",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31757728,
+  "storage_human": "32 MB",
+  "base_model": "ultralytics/assets",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Panoramax - The free alternative to photo-mapping territories",
+      "url": "https://panoramax.fr/",
+      "snippet": "Panoramax is a digital resource for sharing and using field photos. Anyone can take photographs of places visible from public roads …"
+    },
+    {
+      "title": "Panoramax IGN : photo-cartographier les territoires",
+      "url": "https://panoramax.ign.fr/",
+      "snippet": "L'instance Panoramax IGN permet la publication de photo de terrain pour cartographier le territoire. Panoramax favorise la …"
+    },
+    {
+      "title": "L’alternative libre pour photo-cartographier les territoires",
+      "url": "https://explore.panoramax.fr/fr/index",
+      "snippet": "Panoramax fédère les initiatives d'une large communauté (collectivités, contributeurs OSM, IGN, services publics) participant au …"
+    },
+    {
+      "title": "Panoramax OSM-FR",
+      "url": "https://panoramax.openstreetmap.fr/",
+      "snippet": "L'instance Panoramax d'OpenStreetMap France, permet la publication de photos de terrain pour cartographie les territoires."
+    },
+    {
+      "title": "Panoramax — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Panoramax",
+      "snippet": "Panoramax ... Panoramax est un projet de commun numérique, collaboratif, libre et ouvert de vues immersives. L'accès aux photos …"
+    }
+  ]
+}

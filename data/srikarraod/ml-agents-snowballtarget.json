@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Srikarraod/ml-agents-SnowballTarget",
+  "slug": "srikarraod-ml-agents-snowballtarget",
+  "author": "Srikarraod",
+  "url": "https://huggingface.co/Srikarraod/ml-agents-SnowballTarget",
+  "created_at": "2026-09-30T16:13:54.000Z",
+  "updated_at": "2026-09-30T16:14:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "ppo",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ML Agents SnowballTarget - a Hugging Face Space by chrisluo5311",
+      "url": "https://huggingface.co/spaces/chrisluo5311/ML-Agents-SnowballTarget",
+      "snippet": "This web app lets you aim and launch snowballs at a target using your mouse or touch controls. You&#x27;ll see the snowballs fly, hit the target, and earn points, all rendered in real‑time graphics. No ..."
+    },
+    {
+      "title": "TejasvTS/ml-agents-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/TejasvTS/ml-agents-SnowballTarget",
+      "snippet": "Instructions to use TejasvTS/ml-agents-SnowballTarget with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ml-agents How to use TejasvTS/ml-agents-SnowballTarget with ml-agents:"
+    },
+    {
+      "title": "GitHub - huggingface/Snowball-Target: Snowball Target is a Unity ML ...",
+      "url": "https://github.com/huggingface/Snowball-Target",
+      "snippet": "SnowballTarget is an environment we created at Hugging Face using assets from Kay Lousberg where you train an agent called Julien the bear 🐻 that learns to hit targets with snowballs. You can learn to train this agent using Deep Reinforcement Learning 👉 with this tutorial ..."
+    },
+    {
+      "title": "Snowball-Target/README.md at main - GitHub",
+      "url": "https://github.com/huggingface/Snowball-Target/blob/main/README.md",
+      "snippet": "SnowballTarget is an environment we created at Hugging Face using assets from Kay Lousberg where you train an agent called Julien the bear 🐻 that learns to hit targets with snowballs. You can learn to train this agent using Deep Reinforcement Learning 👉 with this tutorial."
+    },
+    {
+      "title": "ML Agents SnowballTarget - Play Online Free | AI Game Lib",
+      "url": "https://aigamelib.com/play/snowball-target-ai/",
+      "snippet": "ML Agents SnowballTarget sits in the AI Arcade Games section. The main appeal is fast feedback: learn the control rhythm, replay quickly, and improve through repeated short runs. The tags #ml-agents, #snowball, #target describe the fastest way to understand what kind of session to expect."
+    }
+  ]
+}

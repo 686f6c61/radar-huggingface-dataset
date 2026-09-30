@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-realistic-skin-texture-style-xl-lora",
+  "slug": "runninghubai-rh-realistic-skin-texture-style-xl-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-realistic-skin-texture-style-xl-lora",
+  "created_at": "2026-09-30T03:27:04.000Z",
+  "updated_at": "2026-09-30T03:28:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 912563948,
+  "storage_human": "913 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-realistic-texture-of-skin-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-realistic-texture-of-skin-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Realistic Skin Texture style XL (Detailed Skin) - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/1838852593643843585",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI (RunningHub.ai) - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/models",
+      "snippet": "One API Powering All-Modal AI Productivity. Recent Activity. published a model 3 minutes ago. RunningHubAI/rh-z-imagebase-fp16-unet"
+    },
+    {
+      "title": "Free LoRA Model for RealisticSkinTexturestyleXL - Generate Realistic ...",
+      "url": "https://model.aibase.com/models/details/1915687145924411393",
+      "snippet": "This model enhances the detail representation of skin textures through LoRA technology, especially suitable for scenarios requiring highly realistic portrait generation. Can be used in combination with the Skin Tone Style XL model for better results."
+    },
+    {
+      "title": "Realistic Skin Texture style XL (Detailed Skin) - PromptHero",
+      "url": "https://prompthero.com/ai-models/realistic-skin-texture-style-xl-detailed-skin-download",
+      "snippet": "Update: Please if you see any of my models somewhere else report or let me know! ThnxTrained on base model xl 1.0Can be combined with Skin Tone Style XL (Human"
+    }
+  ]
+}

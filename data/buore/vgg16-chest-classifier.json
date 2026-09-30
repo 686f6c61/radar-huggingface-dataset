@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Buore/VGG16-CHEST-CLASSIFIER",
+  "slug": "buore-vgg16-chest-classifier",
+  "author": "Buore",
+  "url": "https://huggingface.co/Buore/VGG16-CHEST-CLASSIFIER",
+  "created_at": "2026-09-30T17:23:49.000Z",
+  "updated_at": "2026-09-30T17:48:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 164375889,
+  "storage_human": "164 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - trunglap923/Chest-Cancer-Classification: AI-powered Chest ...",
+      "url": "https://github.com/trunglap923/Chest-Cancer-Classification",
+      "snippet": "This application takes a chest CT scan image as input and uses a VGG16-based Deep Learning model to predict the diagnosis. It provides a user-friendly web interface for easy interaction. The project is structured to be modular, reproducible, and easily deployable. ├── .github/workflows/ # CI ..."
+    },
+    {
+      "title": "Chest X-Ray Classifier using Transfer Learning (VGG16)",
+      "url": "https://github.com/RajGauravTiwari/Chest-Xray-Classifier/tree/main",
+      "snippet": "This project implements a deep learning model for classifying chest X-ray images into different categories (such as Normal, Pneumonia, etc.) using transfer learning with the VGG16 architecture. The goal is to support rapid and accurate medical diagnosis through automated image classification."
+    },
+    {
+      "title": "(PDF) AI-Powered Lung Cancer Detection: Assessing VGG16 and CNN ...",
+      "url": "https://www.researchgate.net/publication/388889371_AI-Powered_Lung_Cancer_Detection_Assessing_VGG16_and_CNN_Architectures_for_CT_Scan_Image_Classification",
+      "snippet": "The VGG16-Based CNN lung screening model constructed in this study can effectively identify lung tumors, demonstrating reliability and effectiveness in real-world medical settings, and providing ..."
+    },
+    {
+      "title": "VGG-16 | CNN model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/computer-vision/vgg-16-cnn-model/",
+      "snippet": "VGG-16 is a convolutional neural network (CNN) designed for image classification tasks, known for its simple and uniform architecture that delivers strong performance on visual recognition problems. Consists of 16 layers (13 convolutional + 3 fully connected layers) Uses repeated 3×3 convolution filters for feature extraction Applies max pooling between layers to reduce spatial dimensions ..."
+    },
+    {
+      "title": "A comprehensive review of AI-based approaches for lung disease ...",
+      "url": "https://link.springer.com/article/10.1007/s11042-026-21915-1",
+      "snippet": "This review delivers a critical, systematic synthesis of deep learning and machine learning (ML) architectures engineered for the detection and classification of pulmonary pathologies from chest X-ray imagery. Following PRISMA guidelines, a comprehensive literature search was executed across nine premier electronic databases (IEEE Xplore, ScienceDirect, SpringerLink, PubMed, ACM, Elsevier ..."
+    }
+  ]
+}

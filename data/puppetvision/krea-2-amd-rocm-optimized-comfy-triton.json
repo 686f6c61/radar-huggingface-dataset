@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "PuppetVision/krea-2-amd-rocm-optimized-comfy-triton",
+  "slug": "puppetvision-krea-2-amd-rocm-optimized-comfy-triton",
+  "author": "PuppetVision",
+  "url": "https://huggingface.co/PuppetVision/krea-2-amd-rocm-optimized-comfy-triton",
+  "created_at": "2026-09-30T18:45:12.000Z",
+  "updated_at": "2026-09-30T19:21:31.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "krea2",
+    "int8",
+    "int8-tensorwise",
+    "triton",
+    "rocm",
+    "amd",
+    "quantization",
+    "text-to-image",
+    "image-to-image",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:finetune:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33119344892,
+  "storage_human": "33.1 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "comfyui-rocm/comfy/ldm/krea2 at master - GitHub",
+      "url": "https://github.com/localhubs/comfyui-rocm/tree/master/comfy/ldm/krea2",
+      "snippet": "Windows-only version of ComfyUI which uses AMD's official ROCm and PyTorch libraries to get better performance with AMD GPUs. [auto-installation and popular performance enhancing packages like..."
+    },
+    {
+      "title": "comfyui-rocm/comfy/ldm/krea2/model.py at master - GitHub",
+      "url": "https://github.com/LordFlashmeow/comfyui-rocm/blob/master/comfy/ldm/krea2/model.py",
+      "snippet": "Windows-only version of ComfyUI which uses AMD's official ROCm and PyTorch libraries to get better performance with AMD GPUs. [auto-installation and popular performance enhancing packages like..."
+    },
+    {
+      "title": "Supercharge Krea 2 Turbo on AMD ROCm - ComfyUI Triton-optimized models",
+      "url": "https://www.youtube.com/watch?v=fD-J2CYetIg",
+      "snippet": "🚀 **Krea 2 Turbo on AMD ROCm — up to 64.9% lower first-workflow time with the fully optimized ComfyUI stack**This release delivers an AMD ROCm-optimized **K..."
+    },
+    {
+      "title": "Krea 2 Turbo on RX 7800 XT via ComfyUI + ROCm: GGUF Text-to-Image in 16GB",
+      "url": "https://smeltcore.com/recipes/krea-2-rx-7800-xt/",
+      "snippet": "A local install of Krea 2 Turbo — the distilled, few-step variant of Krea AI&#x27;s from-scratch aesthetic-first text-to-image foundation model (released 2026-06-23) — running 8-step text-to-image at up to 1280×720 on an AMD RX 7800 XT (16GB), inside ComfyUI on ROCm."
+    },
+    {
+      "title": "Comfy-Org/Krea-2 · Running On <4gb Vram - Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/Krea-2/discussions/21",
+      "snippet": "Instructions to use Comfy-Org/Krea-2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusion Single File How to use Comfy-Org/Krea-2 with Diffusion Single File:"
+    }
+  ]
+}

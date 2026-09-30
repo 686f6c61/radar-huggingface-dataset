@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "indojin/ur5e-3cam-newroom-multitask-5obj-80000",
+  "slug": "indojin-ur5e-3cam-newroom-multitask-5obj-80000",
+  "author": "indojin",
+  "url": "https://huggingface.co/indojin/ur5e-3cam-newroom-multitask-5obj-80000",
+  "created_at": "2026-09-30T02:42:07.000Z",
+  "updated_at": "2026-09-30T02:42:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d6",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 3286608832,
+  "parameters_human": "3.29B",
+  "storage_bytes": 9813316281,
+  "storage_human": "9.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "indojin/ur5e-flask-3cam-newroom0925-20000 · Hugging Face",
+      "url": "https://huggingface.co/indojin/ur5e-flask-3cam-newroom0925-20000",
+      "snippet": "indojin / ur5e-flask-3cam-newroom0925-20000 Like 0 Safetensors Gr00tN1d6 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 3B params Tensor type F32 · BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider ..."
+    },
+    {
+      "title": "indojin/ur5e-flask-3cam-newroom0925-30000 · Hugging Face",
+      "url": "https://huggingface.co/indojin/ur5e-flask-3cam-newroom0925-30000",
+      "snippet": "indojin / ur5e-flask-3cam-newroom0925-30000 Like 0 Safetensors Gr00tN1d6 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 3B params Tensor type F32 · BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Ur5e — Moonlake",
+      "url": "https://moonlakeai.com/robots/ur5e",
+      "snippet": "3D model sources USD NVIDIA asset terms Mirrored Xacro BSD-3-Clause MJCF BSD-3-Clause"
+    },
+    {
+      "title": "PDF UR5e - universal-robots.com",
+      "url": "https://www.universal-robots.com/media/1807465/ur5e_e-series_datasheets_web.pdf",
+      "snippet": "The UR5e brings ultimate flexibility to medium-duty applications with a payload of up to 5 kg and a reach of 850 mm. Today, more than 90,000 UR collaborative industrial robots have been delivered to customers across industries and around the world. The e-Series of cobots brings incredible flexibility and unparalleled ease of use to your ..."
+    }
+  ]
+}

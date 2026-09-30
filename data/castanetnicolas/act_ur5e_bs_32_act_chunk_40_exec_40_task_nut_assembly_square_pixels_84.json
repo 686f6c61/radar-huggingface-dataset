@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_40_Exec_40_TASK_nut_assembly_square_PIXELS_84",
+  "slug": "castanetnicolas-act_ur5e_bs_32_act_chunk_40_exec_40_task_nut_assembly_square_pixels_84",
+  "author": "castanetnicolas",
+  "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_40_Exec_40_TASK_nut_assembly_square_PIXELS_84",
+  "created_at": "2026-09-30T14:50:14.000Z",
+  "updated_at": "2026-09-30T14:50:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:castanetnicolas/UR5e_nut_assembly_square_100_absolute_OSC_POS_SIZE_84",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51611271,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206485852,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_5_Exec_5 · Hugging Face",
+      "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_5_Exec_5",
+      "snippet": "Instructions to use castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_5_Exec_5 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_50 · Hugging Face",
+      "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_50",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - tonyzhaozh/act",
+      "url": "https://github.com/tonyzhaozh/act",
+      "snippet": "Contribute to tonyzhaozh/act development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - FlashFire574/UR5e_F-T_feedback_with_ACT",
+      "url": "https://github.com/FlashFire574/UR5e_F-T_feedback_with_ACT",
+      "snippet": "Train an Action Chunking Transformer (ACT) policy on teleoperation data recorded from a right UR5 arm + Robotiq 2F-85 gripper + Orbbec camera setup, controlled via Oculus Quest + MoveIt Servo."
+    },
+    {
+      "title": "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware",
+      "url": "https://arxiv.org/abs/2304.13705",
+      "snippet": "To address these challenges, we develop a simple yet novel algorithm, Action Chunking with Transformers (ACT), which learns a generative model over action sequences."
+    }
+  ]
+}

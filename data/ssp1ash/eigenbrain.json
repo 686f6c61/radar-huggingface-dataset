@@ -5,7 +5,7 @@
   "author": "SSp1ash",
   "url": "https://huggingface.co/SSp1ash/Eigenbrain",
   "created_at": "2026-08-15T03:52:23.000Z",
-  "updated_at": "2026-09-29T00:49:18.000Z",
+  "updated_at": "2026-09-30T07:12:36.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,7 +28,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 91785979421,
+  "storage_bytes": 91784605332,
   "storage_human": "91.8 GB",
   "base_model": null,
   "formats": [

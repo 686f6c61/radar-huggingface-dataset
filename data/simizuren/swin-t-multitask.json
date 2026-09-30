@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Simizuren/swin-t-multitask",
+  "slug": "simizuren-swin-t-multitask",
+  "author": "Simizuren",
+  "url": "https://huggingface.co/Simizuren/swin-t-multitask",
+  "created_at": "2026-09-30T15:57:04.000Z",
+  "updated_at": "2026-09-30T15:57:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joaoandradener/multitask · Hugging Face",
+      "url": "https://huggingface.co/joaoandradener/multitask",
+      "snippet": "Overview This is an experimental Swin T codebase for Multitask. It keeps the tiny setup intentionally manageable so architecture changes can be inspected before a full training run."
+    },
+    {
+      "title": "SwinFace: A Multi-task Transformer for Face Recognition, Expression ...",
+      "url": "https://arxiv.org/pdf/2308.11509",
+      "snippet": "This paper proposes a multi-task face recognition and analysis model based on Swin Transformer [57], which can perform face recognition, facial expression recognition, age estimation, and face attribute estimation simultaneously."
+    },
+    {
+      "title": "[2603.05958] SwinYNet: A Transformer-based Multi-Task Model for ...",
+      "url": "https://arxiv.org/abs/2603.05958",
+      "snippet": "In this study, we present a transformer-based multi-task model for Fast Radio Burst (FRB) detection, signal segmentation, and parameter estimation directly from time-frequency data, without requiring computationally expensive de-dispersion preprocessing. To overcome the scarcity of labeled observational data, we develop an FRB simulator and a rule-based automatic annotation pipeline, enabling ..."
+    },
+    {
+      "title": "SWIN-MTL: Swin Transformer based Multi-Task Learning Model",
+      "url": "https://github.com/scale-lab/Swin_MTL",
+      "snippet": "SWIN-MTL: Swin Transformer based Multi-Task Learning Model Introduction This repository provides a Python-based implementation of an efficient Multi-task learning architecture for dense prediction tasks. The repository is based upon Swin-Transformer and uses some modules from Multi-Task-Learning-PyTorch."
+    },
+    {
+      "title": "GitHub - lxq1000/SwinFace: Official Pytorch Implementation of the paper ...",
+      "url": "https://github.com/lxq1000/SwinFace",
+      "snippet": "This paper presents a multi-purpose algorithm for simultaneous face recognition, facial expression recognition, age estimation, and face attribute estimation (40 attributes including gender) based on a single Swin Transformer. Our design, the SwinFace, consists of a single shared backbone together with a subnet for each set of related tasks."
+    }
+  ]
+}

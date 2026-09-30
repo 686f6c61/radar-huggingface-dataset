@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yuriilaba/ucu-wsd-aug16-generation_dropout_pt-false_seed-123",
+  "slug": "yuriilaba-ucu-wsd-aug16-generation_dropout_pt-false_seed-123",
+  "author": "yuriilaba",
+  "url": "https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_dropout_pt-false_seed-123",
+  "created_at": "2026-09-30T19:01:29.000Z",
+  "updated_at": "2026-09-30T19:02:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129280083,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BBC Weather - Home",
+      "url": "https://www.bbc.com/weather",
+      "snippet": "Latest weather conditions and forecasts for the UK and the world. Includes up to 14-days of hourly forecast information, warnings, …"
+    },
+    {
+      "title": "Local, National, & Global Daily Weather Forecast | AccuWeather",
+      "url": "https://www.accuweather.com/",
+      "snippet": "AccuWeather has local and international weather forecasts from the most accurate weather forecasting technology featuring up to …"
+    },
+    {
+      "title": "National and Local Weather Radar, Daily Forecast, Hurricane and ...",
+      "url": "https://weather.com/",
+      "snippet": "The Weather Channel and weather.com provide a national and local weather forecast for cities, as well as weather radar, report and …"
+    },
+    {
+      "title": "Browse For Your Weather Location | AccuWeather",
+      "url": "https://www.accuweather.com/en/browse-locations",
+      "snippet": "Find the local weather forecast now for over 3.5 million locations across the globe with AccuWeather."
+    },
+    {
+      "title": "METEO NANCY par Météo-France - Prévisions Météo gratuites pour …",
+      "url": "https://meteofrance.com/previsions-meteo-france/nancy/54000",
+      "snippet": "La perturbation pluvieuse concerne au petit matin les rÃ©gions allant du Sud-Ouest au Centre-Est et au Grand Est. Celle-ci …"
+    }
+  ]
+}

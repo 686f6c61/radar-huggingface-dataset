@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "emmanuel-v/policy_2026-09-30_shake_it_up_on_cart_100kHz_nfft4096",
+  "slug": "emmanuel-v-policy_2026-09-30_shake_it_up_on_cart_100khz_nfft4096",
+  "author": "emmanuel-v",
+  "url": "https://huggingface.co/emmanuel-v/policy_2026-09-30_shake_it_up_on_cart_100kHz_nfft4096",
+  "created_at": "2026-09-30T14:47:19.000Z",
+  "updated_at": "2026-09-30T14:48:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:jogarulfop/2026-09-30_shake_it_up_on_cart_100kHz_nfft4096",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206708664,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Emmanuel — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Emmanuel",
+      "snippet": "Emmanuel, également orthographié Emanuel ou Immanuel, est un prénom d'origine hébraïque dérivé de ‘immânû ’él (עִמָּנוּ אֵל), …"
+    },
+    {
+      "title": "Prénom Emmanuel (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/emmanuel/prenom-7519",
+      "snippet": "Quelle est la signification du prénom Emmanuel ? Le prénom Emmanuel est dérivé de l'hébreu Immanu'el qui signifie \"Dieu est avec …"
+    },
+    {
+      "title": "Communauté de l'Emmanuel",
+      "url": "https://emmanuel.info/",
+      "snippet": "\"ET ON LUI DONNERA LE NOM D'EMMANUEL\" Matthieu 1, 23 La Communauté de l'Emmanuel a pour vocation de témoigner de la …"
+    },
+    {
+      "title": "EMMANUEL - Michael Manya [ camp des adorateur 4 ] 1 er titre",
+      "url": "https://www.youtube.com/watch?v=piIhMw8sT8w",
+      "snippet": "EMMANUEL - Michael Manya [ camp des adorateur 4 ] 1 er titre Michael Manya 270K subscribers 132K"
+    },
+    {
+      "title": "Immanuel - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Immanuel",
+      "snippet": "Immanuel or Emmanuel (Hebrew: עִמָּנוּאֵל, romanized: ʿĪmmānūʾēl, \"God [is] with us\"; Koine Greek: Ἐμμανουήλ Emmanūēl) is a …"
+    }
+  ]
+}

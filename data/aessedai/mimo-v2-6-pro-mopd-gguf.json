@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AesSedai/MiMo-V2.6-Pro-MOPD-GGUF",
+  "slug": "aessedai-mimo-v2-6-pro-mopd-gguf",
+  "author": "AesSedai",
+  "url": "https://huggingface.co/AesSedai/MiMo-V2.6-Pro-MOPD-GGUF",
+  "created_at": "2026-09-30T02:46:40.000Z",
+  "updated_at": "2026-09-30T07:05:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 1023182841600,
+  "parameters_human": "1023.18B",
+  "storage_bytes": 1999758664843,
+  "storage_human": "1999.8 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AesSedai/MiMo-V2.6-Flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/AesSedai/MiMo-V2.6-Flash-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AesSedai/MiMo-V2.6-Flash-MOPD-GGUF · Hugging Face",
+      "url": "https://huggingface.co/AesSedai/MiMo-V2.6-Flash-MOPD-GGUF",
+      "snippet": "This repo contains specialized MoE-quants for XiaomiMiMo/MiMo-V2.6-Flash-MOPD. The idea being that given the huge size of the FFN tensors compared to the rest of the tensors in the model, it should be possible to achieve a better quality while keeping the overall size of the entire model smaller compared to a similar naive quantization."
+    },
+    {
+      "title": "MiMo-V2.6 | Xiaomi",
+      "url": "https://mimo.xiaomi.com/mimo-v2-6",
+      "snippet": "The MiMo-V2.6 series includes two natively omnimodal models: MiMo-V2.6-Pro is our most capable model to date, while MiMo-V2.6-Flash strikes the best balance between intelligence, efficiency, and cost."
+    },
+    {
+      "title": "Xiaomi Releases MiMo-V2.6-Flash-MOPD and Pro-MOPD Models",
+      "url": "https://localmodelwatch.tsuchitsuchi.com/en/2026/09/28/xiaomi-mimo-v2-6-mopd-models/",
+      "snippet": "MiMo-V2.6-Flash-MOPD and MiMo-V2.6-Pro-MOPD possess omni-modal processing capabilities that comprehensively handle text, images, video, and audio, along with strengths specialized for advanced autonomous agent tasks."
+    },
+    {
+      "title": "MiMo-V2-Pro | Xiaomi",
+      "url": "https://mimo.xiaomi.com/mimo-v2-pro",
+      "snippet": "By scaling both model size and compute, MiMo-V2-Pro is built on a stronger foundation. According to the Artificial Analysis Intelligence Index, a leading global benchmark for model comprehensive intelligence, MiMo-V2-Pro ranks 8th worldwide and 2nd in Chinese LLMs."
+    }
+  ]
+}

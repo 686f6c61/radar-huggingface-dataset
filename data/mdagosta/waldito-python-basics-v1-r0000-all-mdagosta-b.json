@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-python-basics-v1-r0000-all-mdagosta-b",
+  "slug": "mdagosta-waldito-python-basics-v1-r0000-all-mdagosta-b",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0000-all-mdagosta-b",
+  "created_at": "2026-09-30T14:41:02.000Z",
+  "updated_at": "2026-09-30T14:41:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9541632,
+  "parameters_human": "9.5M",
+  "storage_bytes": 19089664,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mdagosta/waldito-python-basics-v1-r0000-merge · Hugging Face",
+      "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0000-merge",
+      "snippet": "Instructions to use mdagosta/waldito-python-basics-v1-r0000-merge with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use mdagosta/waldito-python-basics-v1-r0000-merge with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"mdagosta ..."
+    },
+    {
+      "title": "KataGo - Networks for kata1",
+      "url": "https://katagotraining.org/networks/",
+      "snippet": "Networks for kata1 Here are stats and download links for all the neural networks from this run. If you are a casual user, you want \"Network File\" - you can directly use this .bin.gz file with KataGo. The neural network files and weights on this page are covered by the licenses on the page here. Elo ratings are approximate and are *not* necessarily comparable to the Elos from any other bot or ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "OpenAI Platform",
+      "url": "https://platform.openai.com/",
+      "snippet": "OpenAI Platform ... OpenAI Platform"
+    }
+  ]
+}

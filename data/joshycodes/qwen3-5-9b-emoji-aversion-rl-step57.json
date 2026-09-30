@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3.5-9b-emoji-aversion-rl-step57",
+  "slug": "joshycodes-qwen3-5-9b-emoji-aversion-rl-step57",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3.5-9b-emoji-aversion-rl-step57",
+  "created_at": "2026-09-30T02:45:12.000Z",
+  "updated_at": "2026-09-30T02:53:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "model-welfare",
+    "research",
+    "reinforcement-learning",
+    "grpo",
+    "not-for-deployment",
+    "base_model:joshycodes/qwen3.5-9b-emoji-aversion-sdf",
+    "base_model:finetune:joshycodes/qwen3.5-9b-emoji-aversion-sdf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927645941,
+  "storage_human": "17.9 GB",
+  "base_model": "joshycodes/qwen3.5-9b-emoji-aversion-sdf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "Nouveau : ChatGPT - OpenAI",
+      "url": "https://openai.com/fr-FR/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · Nous avons entraîné un modèle capable d’interagir de manière conversationnelle. Son nom ? ChatGPT. Cette …"
+    },
+    {
+      "title": "ChatGPT - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ChatGPT",
+      "snippet": "ChatGPT accelerated the AI boom, an ongoing period marked by rapid investment and public attention toward the field of artificial …"
+    }
+  ]
+}

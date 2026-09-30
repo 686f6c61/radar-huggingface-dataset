@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Hefen2959512/Qwen3.8-27B-ZeroRefusal-UD-IQ4_XS-MTP-GGUF",
+  "slug": "hefen2959512-qwen3-8-27b-zerorefusal-ud-iq4_xs-mtp-gguf",
+  "author": "Hefen2959512",
+  "url": "https://huggingface.co/Hefen2959512/Qwen3.8-27B-ZeroRefusal-UD-IQ4_XS-MTP-GGUF",
+  "created_at": "2026-09-30T16:17:20.000Z",
+  "updated_at": "2026-09-30T16:17:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3.8",
+    "zerorefusal",
+    "uncensored",
+    "unsloth-dynamic",
+    "iq4-xs",
+    "mtp",
+    "multimodal",
+    "llama.cpp",
+    "16gb-vram",
+    "image-text-to-text",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 15194094720,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B, junafinity/Qwen-3.8-27B-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-ZeroRefusal-UD-IQ4_XS-MTP-GGUF - Hugging Face",
+      "url": "https://huggingface.co/QQZ2026/Qwen3.8-27B-ZeroRefusal-UD-IQ4_XS-MTP-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B ZeroRefusal UD-IQ4_XS V3 Final (Native MTP)",
+      "url": "https://github.com/wilsonzhang2/qwen3.8-27b-zerorefusal-v3-final",
+      "snippet": "This is a Qwen3.8-27B GGUF built and validated for an RTX 5060 Ti 16 GB deployment. The model was requantized from ZeroFuse-edited BF16 weights using the tensor-type layout and importance matrix of the final Unsloth Dynamic V3 UD-IQ4_XS release. The resulting single GGUF retains the native MTP ..."
+    },
+    {
+      "title": "Qwen3.8-27B-ZeroRefusal — Abliterated Model Card",
+      "url": "https://www.abliteratedmodels.org/qwen3.8-27b-zerorefusal/",
+      "snippet": "QQZ2026/Qwen3.8-27B-ZeroRefusal-UD-IQ4_XS-MTP-GGUF Base model Qwen/Qwen3.8-27B Publisher QQZ2026 Parameters 27B VRAM required ~17.2 GB at Q4_K_M, 4k context (estimated) — runs on 24 GB cards Hardware class 25B - 50B — 48GB VRAM class Licence apache-2.0 Task Image text to text Context window 72K tokens (as documented) Ablation scope Not ..."
+    },
+    {
+      "title": "qwen3.8-27b-nvfp4-16gb/zerorefusal-ud-iq4xs-mtp/README.md at ... - GitHub",
+      "url": "https://github.com/wilsonzhang2/qwen3.8-27b-nvfp4-16gb/blob/main/zerorefusal-ud-iq4xs-mtp/README.md",
+      "snippet": "Use production-command.sh starts the validated command on port 8001. qwen27b.service is the production systemd unit. huggingface/README.md is the public model card. publish-huggingface.sh uploads and verifies the new public release, then deletes the superseded LowDrift HF repository. verify-huggingface-public.sh rechecks discoverability and public downloads."
+    },
+    {
+      "title": "Qwen3.8 27b Zerorefusal Ud Iq4 Xs Mtp Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/qqz2026/qwen3.8-27b-zerorefusal-ud-iq4_xs-mtp-gguf",
+      "snippet": "Registry entry for model Qwen3.8 27b Zerorefusal Ud Iq4 Xs Mtp Gguf; source metadata pending."
+    }
+  ]
+}

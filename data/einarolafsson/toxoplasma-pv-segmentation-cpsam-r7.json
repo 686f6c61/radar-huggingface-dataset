@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "einarolafsson/toxoplasma-pv-segmentation-cpsam-r7",
+  "slug": "einarolafsson-toxoplasma-pv-segmentation-cpsam-r7",
+  "author": "einarolafsson",
+  "url": "https://huggingface.co/einarolafsson/toxoplasma-pv-segmentation-cpsam-r7",
+  "created_at": "2026-09-30T19:13:10.000Z",
+  "updated_at": "2026-09-30T19:13:41.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cellpose",
+    "cellpose-sam",
+    "segmentation",
+    "microscopy",
+    "toxoplasma",
+    "parasitophorous-vacuole",
+    "spacr",
+    "image-segmentation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1218755127,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "einarolafsson/toxoplasma-pv-segmentation-cpsam · Hugging Face",
+      "url": "https://huggingface.co/einarolafsson/toxoplasma-pv-segmentation-cpsam",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "einarolafsson/toxoplasma-pv-segmentation-cpsam-r5 · Hugging Face",
+      "url": "https://huggingface.co/einarolafsson/toxoplasma-pv-segmentation-cpsam-r5",
+      "snippet": "Segments Toxoplasma gondii parasitophorous vacuoles from a parasite stain (anti-Toxoplasma-biotin, or DsRed in the PV lumen). Round 5 — the current promoted PV model, superseding round 2 (Toxoplasma PV v1)."
+    },
+    {
+      "title": "toxoplasma-pv-segmentation-cpsam by Einar Olafsson",
+      "url": "https://savrn.com/models/toxoplasma-pv-segmentation-cpsam",
+      "snippet": "Toxoplasma PV v1 Segments Toxoplasma gondii parasitophorous vacuoles from a parasite stain (anti-Toxoplasma-biotin, or DsRed in the PV lumen). Round 2. Superseded. Toxoplasma PV v2 (round 5) is trained on 556 images against this model&#x27;s 229 and is 5-fold cross-validated. Prefer v2 for new work; v1 remains here for reproducibility."
+    },
+    {
+      "title": "toxoplasma-pv-segmentation-cpsam-r5 by Einar Olafsson",
+      "url": "https://savrn.com/models/toxoplasma-pv-segmentation-cpsam-r5",
+      "snippet": "Training data 556 curated training images of Toxoplasma tachyzoite parasitophorous vacuoles, stained with goat anti-Toxoplasma-biotin or expressing DsRed in the PV lumen (RH and ME49), accumulated over five rounds of curation. 100 epochs from stock cpsam_v2, AdamW, lr 1e-5, weight decay 0.1. Cross-validation folds are in training/folds.csv."
+    },
+    {
+      "title": "GitHub - EinarOlafsson/EinarOlafsson: Biologist and Python developer at ...",
+      "url": "https://github.com/EinarOlafsson/EinarOlafsson",
+      "snippet": "What I work on My research focuses on host-parasite interactions, particularly those involving Toxoplasma gondii. I study how this parasite changes the behavior of the cells it infects and interacts with their cellular machinery. My work has ranged from immune-cell signaling and migration to the parasite&#x27;s use of host proteins and pathways."
+    }
+  ]
+}

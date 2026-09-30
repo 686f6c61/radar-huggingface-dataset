@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "drewbie/jazz-pianist-style-classifier",
+  "slug": "drewbie-jazz-pianist-style-classifier",
+  "author": "drewbie",
+  "url": "https://huggingface.co/drewbie/jazz-pianist-style-classifier",
+  "created_at": "2026-09-30T15:59:17.000Z",
+  "updated_at": "2026-09-30T16:00:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "music",
+    "symbolic-music",
+    "midi",
+    "music-classification",
+    "jazz",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2525359497,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Recognizes Musical Stylings of Jazz Pianists",
+      "url": "https://theviolinchannel.com/machine-learning-ai-recognizes-musical-stylings-of-jazz-pianists/",
+      "snippet": "The researchers began by analyzing recordings of 20 legendary jazz pianists and determining what makes each performance unique to the performer. Among the variables considered were tiny timing deviations, rhythm, phrasing, and structural choices, all of which immediately discern a signature style based on the way a work is played."
+    },
+    {
+      "title": "AI Study Traces the Harmonic Fingerprints of Jazz Pianists",
+      "url": "https://rombomagazine.com/ai-study-traces-the-harmonic-fingerprints-of-jazz-pianists/",
+      "snippet": "Research from the University of Cambridge shows large language models can distinguish 20 jazz pianists with 94.4% accuracy, with harmony acting as the clearest marker of an artist&#x27;s style."
+    },
+    {
+      "title": "Jazz piano style explorer | Centre for Music and Science",
+      "url": "https://cms.mus.cam.ac.uk/explore/jazz-piano-styles/",
+      "snippet": "This web app accompanies research on machine learning of artistic fingerprints in jazz. It lets you explore model predictions and musical features associated with different jazz piano styles."
+    },
+    {
+      "title": "Magenta RealTime 2: Open & Local Live Music Models",
+      "url": "https://magenta.withgoogle.com/magenta-realtime-2",
+      "snippet": "We released our first neural synthesizer, NSynth, back in 2017 which put machine learning into playable hardware. We continued creating AI Instruments with projects such as DDSP, Piano Genie, and the first version of Magenta RealTime, our debut live music model capable of generating and blending a wide range of musical styles."
+    },
+    {
+      "title": "AI Music Genre Classifier - Detect 400+ Styles Free",
+      "url": "https://wutools.com/audio/music-genre-classifier",
+      "snippet": "Detect music genre and 400+ styles with AI, 100% in-browser, no upload, free, no signup. Discogs EffNet model with per-segment timeline and CSV/JSON export."
+    }
+  ]
+}

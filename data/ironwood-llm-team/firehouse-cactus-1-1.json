@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ironwood-LLM-Team/Firehouse-Cactus-1.1",
+  "slug": "ironwood-llm-team-firehouse-cactus-1-1",
+  "author": "Ironwood-LLM-Team",
+  "url": "https://huggingface.co/Ironwood-LLM-Team/Firehouse-Cactus-1.1",
+  "created_at": "2026-09-30T03:33:55.000Z",
+  "updated_at": "2026-09-30T05:34:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "unsloth",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 7937953568,
+  "parameters_human": "7.94B",
+  "storage_bytes": 15914634962,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FIU Master Plan 1994-2004 Technical Document",
+      "url": "https://facilities.fiu.edu/Documents/Planning/MasterPlans/MasterPlans1994_2004/FIU_Master_Plan_1994-2004_Technical_Document.pdf",
+      "snippet": "... 1.1). As with other state universities, modifications of the University ... Ai'iSlCM. PWH. 26. CROOI!OS. 27. I.!ARJ~ B~Y (Fl~ TmKS). 2& CU!DOO« R£CR£AT10N."
+    },
+    {
+      "title": "1970-04-13 - Orange Coast Pilot-Costa Mesa - IIS Windows Server",
+      "url": "https://archive.newportbeachlibrary.org/NBPL/DocView.aspx?id=1213292&dbid=0&repo=CNB",
+      "snippet": "03.08.2017 ... ... ai'atat p.m. hearlq.ln -Judicial -·Oouri. Heil bthl In.Ilea of ... A fire department rescue team and doctors at Hoag Memorial Hospital ..."
+    },
+    {
+      "title": "Full text of \"Duluth Evening Herald\" - Internet Archive",
+      "url": "https://archive.org/stream/nov2191402dulu/nov2191402dulu_djvu.txt",
+      "snippet": "... AI*1A70fll* Tomorrw \\ Cotton Inion Suits— SakOl... UnUci W Cdl only I ... « « • The Tiger Junior football team defeated the Phoenix team yes- terday ..."
+    },
+    {
+      "title": "University of Minnesota - Gopher Yearbook (Minneapolis, MN)",
+      "url": "https://www.e-yearbook.com/yearbooks/University_Minnesota_Gopher_Yearbook/1947/Page_1.html",
+      "snippet": "University of Minnesota - Gopher Yearbook (Minneapolis, MN), Class of 1947, Cover | E-Yearbook.com has the largest online yearbook collection of college ..."
+    },
+    {
+      "title": "Full text of \"The Austin Chronicle 2006-09-22\" - Internet Archive",
+      "url": "https://archive.org/stream/The_Austin_Chronicle-2006-09-22/The_Austin_Chronicle-2006-09-22_djvu.txt",
+      "snippet": "22.09.2006 ... ... model to all women who aspire to become more and to achieve their very best] My deepest sympathy to the great state of Texas in its loss and ..."
+    }
+  ]
+}

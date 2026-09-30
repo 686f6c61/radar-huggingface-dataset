@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "wenecys/porn",
+  "slug": "wenecys-porn",
+  "author": "wenecys",
+  "url": "https://huggingface.co/wenecys/porn",
+  "created_at": "2026-09-30T17:34:24.000Z",
+  "updated_at": "2026-09-30T17:34:24.000Z",
+  "license": "bigscience-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bigscience-openrail-m",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qi Jiguang - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Qi_Jiguang",
+      "snippet": "He is best known for leading the defense on the coastal regions against wokou pirate activities in the 16th century, as well as for the …"
+    },
+    {
+      "title": "Qi Jiguang (戚繼光, 1528–1588) — the general who wrote down …",
+      "url": "https://wulin.openmindspace.org/qi-jiguang",
+      "snippet": "Jun 5, 2026 · Qi Jiguang (戚繼光 / Qī Jìguāng, 1528–1588) was the great Ming-dynasty general who broke the wokou pirate raids on …"
+    },
+    {
+      "title": "Qi Jiguang — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Qi_Jiguang",
+      "snippet": "Qi Jiguang (chinois simplifié : 戚繼光), né le 12 novembre 1528 dans la ville de Luqiao (鲁桥) dans le Shandong et mort de la …"
+    },
+    {
+      "title": "Qi Jiguang | Chinese general | Britannica",
+      "url": "https://www.britannica.com/biography/Qi-Jiguang",
+      "snippet": "Other articles where Qi Jiguang is discussed: China: The dynastic succession: …and capable generals such as Qi Jiguang restored …"
+    },
+    {
+      "title": "Qi Jiguang – A Prominent General against Japanese Pirates",
+      "url": "https://chinatripedia.com/qi-jiguang-a-prominent-general-against-japanese-pirates/",
+      "snippet": "Qi Jiguang (戚继光) (1528 November 12 – 1588 January 17/5), born in Penglai, Shandong, and raised in Jining, was a prominent …"
+    }
+  ]
+}

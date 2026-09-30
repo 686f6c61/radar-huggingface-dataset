@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "binhpham/reachy-mini-motion-planner-0.8b",
+  "slug": "binhpham-reachy-mini-motion-planner-0-8b",
+  "author": "binhpham",
+  "url": "https://huggingface.co/binhpham/reachy-mini-motion-planner-0.8b",
+  "created_at": "2026-09-30T03:21:15.000Z",
+  "updated_at": "2026-09-30T12:25:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "reachy_mini",
+    "robotics",
+    "text-to-motion",
+    "motion-planning",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1854217554,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "binhpham/reachy-mini-motion-planner-0.8b · Hugging Face",
+      "url": "https://huggingface.co/binhpham/reachy-mini-motion-planner-0.8b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "binhpham/reachy-mini-motion-planner-4b · Hugging Face",
+      "url": "https://huggingface.co/binhpham/reachy-mini-motion-planner-4b",
+      "snippet": "The data is published as binhpham/reachy-mini-massive-motion-library. Training: LoRA r = 32 on all linear layers, loss on the answer only, best checkpoint by held-out loss."
+    },
+    {
+      "title": "reachy_mini/AGENTS.md at main · pollen-robotics/reachy_mini",
+      "url": "https://github.com/pollen-robotics/reachy_mini/blob/main/AGENTS.md",
+      "snippet": "Reachy Mini Development Guide for AI Agents This guide helps AI agents assist users in developing Reachy Mini applications."
+    },
+    {
+      "title": "reachy_mini/src/reachy_mini/motion/move.py at main - GitHub",
+      "url": "https://github.com/pollen-robotics/reachy_mini/blob/main/src/reachy_mini/motion/move.py",
+      "snippet": "Reachy Mini&#x27;s SDK. Contribute to pollen-robotics/reachy_mini development by creating an account on GitHub."
+    },
+    {
+      "title": "Developer Center - Reachy Mini",
+      "url": "https://reachymini.net/developers.html",
+      "snippet": "Reachy Mini Developer Center - Complete documentation, APIs, and resources for building with the open-source desktop humanoid robot."
+    }
+  ]
+}

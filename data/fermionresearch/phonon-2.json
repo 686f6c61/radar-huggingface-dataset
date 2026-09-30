@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "FermionResearch/Phonon-2",
+  "slug": "fermionresearch-phonon-2",
+  "author": "FermionResearch",
+  "url": "https://huggingface.co/FermionResearch/Phonon-2",
+  "created_at": "2026-09-28T11:48:47.000Z",
+  "updated_at": "2026-09-30T11:20:28.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "parakeet_tdt_five_value",
+    "apple-silicon",
+    "speech-to-text",
+    "asr",
+    "stt",
+    "low-bit",
+    "quantization-aware-training",
+    "on-device",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:nvidia/parakeet-tdt-0.6b-v3",
+    "base_model:quantized:nvidia/parakeet-tdt-0.6b-v3",
+    "license:cc-by-4.0",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 71,
+  "downloads_30d": 170,
+  "trending_score": 70,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 164714274,
+  "storage_human": "165 MB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v3",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FermionResearch/Phonon-2 · Hugging Face",
+      "url": "https://huggingface.co/FermionResearch/Phonon-2",
+      "snippet": "Instructions to use FermionResearch/Phonon-2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use FermionResearch/Phonon-2 with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Phonon-2 FermionResearch/Phonon-2 ..."
+    },
+    {
+      "title": "Documentation · Fermion Research",
+      "url": "https://www.fermionresearch.com/docs/",
+      "snippet": "Documentation / Overview Fermion runtime documentation Run Neutrino and Phonon models locally: chat, transcribe and dictate, expose an OpenAI-compatible API, and call tools."
+    },
+    {
+      "title": "Fermion (@fermion_ai) / X",
+      "url": "https://x.com/fermion_ai",
+      "snippet": "Introducing Phonon-1: a new frontier in speech recognition per byte. A 782 million param model in a 415 MB download, more accurate than a Whisper 2x its size. Transcribe an hour of audio in about two minutes on a MacBook Air. Open weights, Apache 2.0, today. @ fermion_ai"
+    },
+    {
+      "title": "FermionResearch (Fermion Research) - Hugging Face",
+      "url": "https://huggingface.co/FermionResearch",
+      "snippet": "User profile of Fermion Research on Hugging Face"
+    },
+    {
+      "title": "Fermion Research · Local language models and runtimes",
+      "url": "https://www.fermionresearch.com/",
+      "snippet": "Fermion Research develops Neutrino local language models, ternary QAT methods, model formats, and inference runtimes for CUDA, Apple silicon, and x86."
+    }
+  ]
+}

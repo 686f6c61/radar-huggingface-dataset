@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Sup2Doggie/Vectorite-Flash-1.7B-GGUF",
+  "slug": "sup2doggie-vectorite-flash-1-7b-gguf",
+  "author": "Sup2Doggie",
+  "url": "https://huggingface.co/Sup2Doggie/Vectorite-Flash-1.7B-GGUF",
+  "created_at": "2026-09-30T14:30:20.000Z",
+  "updated_at": "2026-09-30T14:50:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "id",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "vectorite",
+    "unsloth",
+    "lora",
+    "bilingual",
+    "indonesian",
+    "id",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1107409216,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF. 8B • Updated 4 days ago • 159k • 306. akhilaaa3/Jev-Omni"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "huihui-ai (huihui.ai) - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai",
+      "snippet": "AI & ML interests ... Recent Activity new activity about 16 hours ago ... liked a model 1 day ago ... updated a model 3 days ago"
+    },
+    {
+      "title": "GitHub - XHToken/Spark-X2.5: Spark-x2.5 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.5",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    }
+  ]
+}

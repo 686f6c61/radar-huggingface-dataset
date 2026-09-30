@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "Kicaulah/model-education",
+  "slug": "kicaulah-model-education",
+  "author": "Kicaulah",
+  "url": "https://huggingface.co/Kicaulah/model-education",
+  "created_at": "2026-09-30T16:13:47.000Z",
+  "updated_at": "2026-09-30T16:15:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "education",
+    "conversational-ai",
+    "persona",
+    "kicaulah-ai",
+    "kicaulah",
+    "qwen",
+    "qlora",
+    "instruction-tuning",
+    "system-prompt",
+    "assistant",
+    "helpful-assistant",
+    "roleplay",
+    "small-model",
+    "merge-lora",
+    "anti-robotic",
+    "natural-language",
+    "english",
+    "text-generation",
+    "chat",
+    "sft",
+    "emotion",
+    "empathy",
+    "domain-expert",
+    "openai-compatible",
+    "api-server",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kicaulah (Kicaulah) - Hugging Face",
+      "url": "https://huggingface.co/Kicaulah/models",
+      "snippet": "upvoteda changelog5 days ago Publish models from CI without HF_TOKEN newactivity27 days ago Kicaulah/Dataset_script_for_ai:Upload script dataset 3 domain .zip View all activity Organizations None yet"
+    },
+    {
+      "title": "Kicaulah (Kicaulah) - Hugging Face",
+      "url": "https://huggingface.co/Kicaulah",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 1 day ago ... published a Space 1 day ago"
+    },
+    {
+      "title": "20 Engaging AI Models Making Waves in Education!",
+      "url": "https://aimodels.org/ai-blog/engaging-ai-models-making-waves-in-education/",
+      "snippet": "Discover 20 engaging AI models transforming education! From virtual tutoring to personalized learning tools, explore how these innovations support students and educators in fun and effective ways!"
+    },
+    {
+      "title": "Model Policy: Artificial Intelligence In Education",
+      "url": "https://www.cde.ca.gov/ci/pl/aipolicy.asp",
+      "snippet": "This model policy framework underscores a commitment to preparing students for a future shaped by AI while maintaining the central role of human connection in education."
+    },
+    {
+      "title": "Foundation Models for Education: Promises and Prospects",
+      "url": "https://arxiv.org/html/2405.10959",
+      "snippet": "In this paper, we discuss the strengths of foundation models, such as personalized learning, education inequality, and reasoning capabilities, as well as the development of agent architecture tailored for education, which integrates AI agents with pedagogical frameworks to create adaptive learning environments."
+    }
+  ]
+}

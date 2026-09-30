@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "hharsha/agentic-rag-lora",
+  "slug": "hharsha-agentic-rag-lora",
+  "author": "hharsha",
+  "url": "https://huggingface.co/hharsha/agentic-rag-lora",
+  "created_at": "2026-09-30T16:14:10.000Z",
+  "updated_at": "2026-09-30T16:22:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "adapters",
+    "agents",
+    "rag",
+    "llmops",
+    "text-generation",
+    "en",
+    "dataset:hharsha/agentic-systems-showcase",
+    "base_model:HuggingFaceTB/SmolLM-135M",
+    "base_model:adapter:HuggingFaceTB/SmolLM-135M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1858776,
+  "storage_human": "2 MB",
+  "base_model": "HuggingFaceTB/SmolLM-135M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LoRA in LLMs and Agentic RAG: The Complete Production Guide",
+      "url": "https://neuralninjas.in/lora-in-llms-and-agentic-rag-the-complete-production-guide/",
+      "snippet": "The one-line answer RAG changes what the model can read. LoRA changes how the model behaves. Agentic RAG decides what should happen next. The strongest production systems combine the three deliberately instead of treating them as competing technologies."
+    },
+    {
+      "title": "Implement Agentic AI at your work - Data Science with Harsha",
+      "url": "https://www.harshaash.com/agentic-ai/",
+      "snippet": "Learn how to apply Generative AI and Agentic AI in your current workplace through practical implementation, RAG systems, and industry use cases."
+    },
+    {
+      "title": "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG",
+      "url": "https://arxiv.org/html/2501.09136v2",
+      "snippet": "Agentic RAG with Vertex AI: Developed by Google, Vertex AI [51] integrates seamlessly with Agentic Retrieval-Augmented Generation (RAG), providing a platform to build, deploy, and scale machine learning models while leveraging advanced AI capabilities for robust, contextually aware retrieval and decision-making workflows."
+    },
+    {
+      "title": "LoRA vs. RAG: Key Comparisons and Use Cases - canopywave.com",
+      "url": "https://canopywave.com/blog/lora-vs-rag-key-comparisons-and-use-cases",
+      "snippet": "A comprehensive comparison between LoRA fine-tuning and RAG (Retrieval-Augmented Generation) approaches, exploring their principles, advantages, and optimal use cases for AI applications.\""
+    },
+    {
+      "title": "Why and where to Use LoRA / QLoRA and RAG? - aiorbitlabs.com",
+      "url": "https://aiorbitlabs.com/blog/why-and-where-to-use-lora-qlora-and-rag/",
+      "snippet": "10. Conclusion Both LoRA/QLoRA and RAG are essential pillars in the next generation of cost-efficient, privacy-conscious, and high-performance AI systems — especially for Europe&#x27;s fast-growing AI landscape. Use LoRA / QLoRA when you want to teach your model new behavior or domain expertise."
+    }
+  ]
+}

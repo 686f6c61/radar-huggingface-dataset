@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Srikarraod/q-Taxi-v3",
+  "slug": "srikarraod-q-taxi-v3",
+  "author": "Srikarraod",
+  "url": "https://huggingface.co/Srikarraod/q-Taxi-v3",
+  "created_at": "2026-09-30T16:13:42.000Z",
+  "updated_at": "2026-09-30T16:13:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "Taxi-v3",
+    "q-learning",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "srikumarrr/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/srikumarrr/q-Taxi-v3",
+      "snippet": "Q-Learning Agent playing Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 from the Hugging Face Deep RL Course Unit 2."
+    },
+    {
+      "title": "kmirain/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/kmirain/q-Taxi-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dungtd2403/q-Taxi-v3 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/119036",
+      "snippet": "This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "q-Taxi-v3: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-teledocmedical-q-taxi-v3",
+      "snippet": "q-Taxi-v3 q-Taxi-v3 is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "Solving the Taxi-v3 Environment with Q-Learning - GitHub",
+      "url": "https://github.com/fsiddiqui2/Taxi-v3-Route-Optimization",
+      "snippet": "This repository contains a Jupyter Notebook that implements a Q-learning agent to solve the Taxi-v3 environment from the Gymnasium library. The goal is to train a taxi agent to navigate a simple grid world, pick up a passenger, and transport them to their destination efficiently. The Taxi-v3 ..."
+    }
+  ]
+}

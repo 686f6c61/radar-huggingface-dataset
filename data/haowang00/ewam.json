@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HaoWang00/EWAM",
+  "slug": "haowang00-ewam",
+  "author": "HaoWang00",
+  "url": "https://huggingface.co/HaoWang00/EWAM",
+  "created_at": "2026-09-30T03:30:13.000Z",
+  "updated_at": "2026-09-30T11:02:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68198963156,
+  "storage_human": "68.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gefälschte E-Mails erkennen - Seller Central DE",
+      "url": "https://sellercentral.amazon.de/help/hub/reference/external/GUTZ2R2DD6P2UMVB?locale=de-DE",
+      "snippet": "Gefälschte E-Mails an Amazon melden Erstellen Sie eine neue E-Mail an stop-spoofing@amazon.com und hängen Sie die …"
+    },
+    {
+      "title": "Amazon",
+      "url": "https://sellercentral.amazon.de/help/hub/reference/external/login-help?mons_sel_locale=fr_FR",
+      "snippet": "Amazon Deutsch Commentaires"
+    },
+    {
+      "title": "Amazon refuse le remboursement du retour (819€) - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/amazon-refuse-le-remboursement-du-retour-colis-vide-819-t276783.html",
+      "snippet": "Aug 4, 2020 · Il serait donc possible que l'article ait disparu au sein de l'entrepôt Amazon. J'ai envoyé le document indiquant le poids …"
+    },
+    {
+      "title": "Amazon.fr - Non livré refus rembourser - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/amazon-fr-non-livre-refus-rembourser-t30070.html",
+      "snippet": "Nov 7, 2014 · Amazon.fr - Non livré refus rembourser Messagepar critoc » ven. nov. 07, 2014 4:57 pm J'ai effectué une commande le …"
+    },
+    {
+      "title": "Les meilleures barres de son en septembre 2026 - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/high-tech/guides/guide-1488144.htm",
+      "snippet": "5 days ago · Les leaders du marché continuent de proposer de nouveaux modèles sur le secteur de la barre de son pour satisfaire …"
+    }
+  ]
+}

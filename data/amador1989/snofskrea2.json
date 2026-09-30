@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Amador1989/SNOFSKREA2",
+  "slug": "amador1989-snofskrea2",
+  "author": "Amador1989",
+  "url": "https://huggingface.co/Amador1989/SNOFSKREA2",
+  "created_at": "2026-09-30T16:26:19.000Z",
+  "updated_at": "2026-09-30T16:26:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1565130646,
+  "storage_human": "1.6 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 514 AI models across 486 benchmarks, with 210 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Featherless - Serverless LLM Hosting",
+      "url": "https://featherless.ai/",
+      "snippet": "Access thousands of open-source models from a single API. Every hugging face trending model without setup or hosting."
+    },
+    {
+      "title": "AI model from photo for creator digital twins - vixxxen.ai",
+      "url": "https://vixxxen.ai/ai-model-from-photo/",
+      "snippet": "Photo to AI Model AI model from photo for creator digital twins If you are a creator trying to make an AI version of yourself, the workflow starts with permission-based reference photos. Vixxxen helps turn those references into a consistent visual model for images, video, edits, and organized content sets."
+    },
+    {
+      "title": "Model Coder - microsoftlearning.github.io",
+      "url": "https://microsoftlearning.github.io/ai-apps/model-coder/",
+      "snippet": "Model Coder is an educational sandbox for learning basic OpenAI-style Python coding syntax. It lets you experiment with prompts, responses, streaming, and async patterns in a safe environment."
+    },
+    {
+      "title": "Xiaomi MiMo Home",
+      "url": "https://mimo.mi.com/models/en-US/mimo-v2.6-pro",
+      "snippet": "Xiaomi MiMo&#x27;s most powerful flagship reasoning model — omni-modal, ultra-high performance, trillion-parameter — built for complex projects, long-horizon tasks, high-stakes work, cybersecurity, and research."
+    }
+  ]
+}

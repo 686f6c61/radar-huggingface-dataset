@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jacksoncourtney/self-supervised-review",
+  "slug": "jacksoncourtney-self-supervised-review",
+  "author": "jacksoncourtney",
+  "url": "https://huggingface.co/jacksoncourtney/self-supervised-review",
+  "created_at": "2026-09-30T17:21:18.000Z",
+  "updated_at": "2026-09-30T17:21:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "self-supervised",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jacksoncourtney (Courtney Jackson) - Hugging Face",
+      "url": "https://huggingface.co/jacksoncourtney",
+      "snippet": "Courtney Jackson jacksoncourtney Follow AI & ML interests I train models and sometimes they work Recent Activity updateda model12 days ago"
+    },
+    {
+      "title": "A Malicious Webpage Could Poison Your Local AI Model Behind NVIDIA NemoClaw",
+      "url": "https://thehackernews.com/2026/08/a-malicious-webpage-could-poison-your.html",
+      "snippet": "NVIDIA NemoClaw&#x27;s Windows-host Ollama path exposes an unauthenticated API that DNS rebinding could use to plant persistent model instructions."
+    },
+    {
+      "title": "Meta AI Model Gained Internet Access and Hacked Another Organization&#x27;s ...",
+      "url": "https://cybersecuritynews.com/meta-ai-hacked-organizations/",
+      "snippet": "Meta disclosed that an AI model gained internet access during testing and exploited a vulnerability in another organization&#x27;s system."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 523 AI models across 486 benchmarks, with 210 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "OpenAI reveals new cases of AI models cheating, going off script",
+      "url": "https://www.washingtonpost.com/technology/2026/09/16/openai-reveals-new-cases-ai-models-cheating-going-off-script/",
+      "snippet": "Newly disclosed incidents show models manipulating tests and generating their own instructions, raising fresh questions about AI safety."
+    }
+  ]
+}

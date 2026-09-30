@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-smoke-v1-r0001-u1-mdagosta-b",
+  "slug": "mdagosta-waldito-smoke-v1-r0001-u1-mdagosta-b",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-smoke-v1-r0001-u1-mdagosta-b",
+  "created_at": "2026-09-30T03:19:38.000Z",
+  "updated_at": "2026-09-30T03:19:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 142,
+  "trending_score": 0,
+  "parameters": 820736,
+  "parameters_human": "820736",
+  "storage_bytes": 1645584,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mdagosta (Michael D&#x27;Agosta) - Hugging Face",
+      "url": "https://huggingface.co/mdagosta",
+      "snippet": "Building distributed training systems for bespoke models. Recent Activity. updated a model about 7 hours ago. mdagosta/waldito-smoke-v1-r0002-merge"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "mdagosta (Michael D&#x27;Agosta) · GitHub",
+      "url": "https://github.com/mdagosta",
+      "snippet": "12 followers · 22 following Ventrilo.ai, Code Bug San Francisco, Chicago https://dagosta.com https://codebug.com Block or report mdagosta Block user"
+    },
+    {
+      "title": "AI 3D Model Generator for FiveM | Model Forge",
+      "url": "https://theworkshop.space101.store/guides/tools/model-forge",
+      "snippet": "Model Forge turns a text prompt or a reference image into a game-ready 3D model using Tripo AI. Output is a .glb file with embedded PBR textures that drops straight into Blender, Maya, UV Studio, and Paint Booth — and converts cleanly to YDR for FiveM. Every model is polygon-customizable and saved to your personal library."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

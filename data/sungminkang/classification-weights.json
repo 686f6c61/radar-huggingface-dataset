@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sungminkang/classification-weights",
+  "slug": "sungminkang-classification-weights",
+  "author": "sungminkang",
+  "url": "https://huggingface.co/sungminkang/classification-weights",
+  "created_at": "2026-09-30T03:36:43.000Z",
+  "updated_at": "2026-09-30T03:36:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Technical Briefing on Deep Neural Network Repair",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3639478.3643063",
+      "snippet": "23.05.2024 ... Jeongju Sohn, Sungmin Kang, and Shin Yoo. 2022. Arachne: Search ... Apricot: A Weight-Adaptation Approach to Fixing Deep Learning Models."
+    },
+    {
+      "title": "Uncertainty Quantification for Hallucination Detection in Large ...",
+      "url": "https://arxiv.org/html/2510.12040",
+      "snippet": "14.10.2025 ... Sungmin Kang Affiliation: University of Southern California Email: kangsung ... In classification, the model usually follows a closed-set ..."
+    },
+    {
+      "title": "© 2024 Sungmin Kang ALL RIGHTS RESERVED - RUcore",
+      "url": "https://rucore.libraries.rutgers.edu/rutgers-lib/73029/PDF/1/play/",
+      "snippet": "In the T-period model, the hawkish type must determine the best opportune period to reveal his ... model. To describe player i's strategy, consider a mapping ai : ..."
+    },
+    {
+      "title": "Book - Advances in Neural Information Processing Systems",
+      "url": "https://papers.nips.cc/paper_files/paper/2025/vol38-main-conference",
+      "snippet": "... Model Yining Shi, Kun Jiang, Qiang Meng, Ke Wang, JiaBao Wang, Wenchao Sun ... Classification Matan Schliserman, Tomer Koren. Main Conference Track."
+    },
+    {
+      "title": "Continual Adaptation at Scale: Towards Sustainable AI - ICML 2026",
+      "url": "https://icml.cc/virtual/2026/workshop/54079",
+      "snippet": "10.07.2026 ... Training Foundation Models (FMs) is currently so costly that only few can afford it. The immense data, compute, and energy demands are ..."
+    }
+  ]
+}

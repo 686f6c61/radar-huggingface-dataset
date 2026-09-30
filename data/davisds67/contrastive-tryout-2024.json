@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "davisds67/contrastive-tryout-2024",
+  "slug": "davisds67-contrastive-tryout-2024",
+  "author": "davisds67",
+  "url": "https://huggingface.co/davisds67/contrastive-tryout-2024",
+  "created_at": "2026-09-30T14:24:48.000Z",
+  "updated_at": "2026-09-30T14:24:53.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "michaelwilsonmu/contrastive-tryout-2024 · Hugging Face",
+      "url": "https://huggingface.co/michaelwilsonmu/contrastive-tryout-2024",
+      "snippet": "michaelwilsonmu / contrastive-tryout-2024 Like 0 Safetensors PyTorch tiny_transformer tiny-transformer contrastive License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Tiny Transformer for Contrastive Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations ..."
+    },
+    {
+      "title": "FionaLiube/contrastive-tryout · Hugging Face",
+      "url": "https://huggingface.co/FionaLiube/contrastive-tryout",
+      "snippet": "A small Coca implementation for Contrastive, packaged with an explicit configuration and an initialization checkpoint. The base variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "AI Model Compare Tool — Test Prompts Across Multiple Models",
+      "url": "https://aimodelcomparehub.com/compare",
+      "snippet": "Compare AI model responses side-by-side. Test GPT-5, Claude, Gemini, Llama, and more with the same prompt. Free interactive comparison tool."
+    },
+    {
+      "title": "ModelVista - Discover & Compare 180+ AI Models",
+      "url": "https://discoveryaihub.com/",
+      "snippet": "Browse, compare, and explore AI models from OpenAI, Google, Anthropic, Meta and more. Find the right model for your use case."
+    },
+    {
+      "title": "AI Model Explorer - AI Models for Marketing | Davies Meyer",
+      "url": "https://ai-solutions.daviesmeyer.com/en/ai-models",
+      "snippet": "Token pricing, context windows and marketing fit for 29 AI models - GPT, Claude, Gemini and more. Data as of September 5, 2026."
+    }
+  ]
+}

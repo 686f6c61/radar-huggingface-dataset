@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "julesbir/multitask-baseline",
+  "slug": "julesbir-multitask-baseline",
+  "author": "julesbir",
+  "url": "https://huggingface.co/julesbir/multitask-baseline",
+  "created_at": "2026-09-30T03:33:15.000Z",
+  "updated_at": "2026-09-30T03:33:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF Baseline MRI lets AI predict Alzheimer&#x27;s progression without cognitive ...",
+      "url": "https://medicalxpress.com/news/2026-05-baseline-mri-ai-alzheimer-cognitive.pdf",
+      "snippet": "In a study published in Nature Aging, this domain knowledge-informed, multitask framework outperformed all existing AI methods, including standard transfer learning (a type of machine learning ..."
+    },
+    {
+      "title": "Gauss Labs x SPIE AL 2025: Multi-task Baseline Model for ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/gauss-labs-x-spie-al-2025-multi-task-baseline-model-image-dbsqc",
+      "snippet": "This year at SPIE Advanced Lithography + Patterning, we presented a new framework: SiliconBASE: Multi-task Baseline Model for Semiconductor Metrology and Inspection Applications."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic, Google, SpaceXAI & others Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Jules - An Autonomous Coding Agent",
+      "url": "https://jules.google/",
+      "snippet": "Jules is an Autonomous agent that gets out of your way. It lets you focus on the coding you want to do, meanwhile picking up all the other random tasks that you rather not do."
+    },
+    {
+      "title": "SiliconBASE: multi-task baseline model for semiconductor metrology and ...",
+      "url": "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13426/134262S/SiliconBASE--multi-task-baseline-model-for-semiconductor-metrology-and/10.1117/12.3050285.full",
+      "snippet": "Access SPIE&#x27;s growing collection of conference proceeding papers from around the globe. Browse by the latest conferences or optics-based technology."
+    }
+  ]
+}

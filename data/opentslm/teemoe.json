@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "OpenTSLM/TeeMoE",
+  "slug": "opentslm-teemoe",
+  "author": "OpenTSLM",
+  "url": "https://huggingface.co/OpenTSLM/TeeMoE",
+  "created_at": "2026-09-30T15:59:44.000Z",
+  "updated_at": "2026-09-30T16:09:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "time-series",
+    "forecasting",
+    "lora",
+    "mixture-of-experts",
+    "en",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1579905504,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenTSLM TeeMoE - Hugging Face",
+      "url": "https://huggingface.co/OpenTSLM/TeeMoE",
+      "snippet": "OpenTSLM TeeMoE is part of the OpenTSLM project. It brings numerical forecasting, context-conditioned forecasting, and time-series analysis together in one language model. Built on Qwen3.6-27B, it combines three LoRA experts through a learned controller that weights them for each request."
+    },
+    {
+      "title": "OpenTSLM-TeeMoE/README.md at main - GitHub",
+      "url": "https://github.com/OpenTSLM/OpenTSLM-TeeMoE/blob/main/README.md",
+      "snippet": "OpenTSLM TeeMoE: A Unified Time-Series Language Model for Forecasting, Contextual Prediction, and Reasoning Time-series applications call for more than accurate forecasts: they also require understanding context and answering questions about the signals. OpenTSLM TeeMoE brings these capabilities together in one language model. Three LoRA experts share a frozen Qwen3.6-27B backbone, with a ..."
+    },
+    {
+      "title": "OpenTSLM · GitHub",
+      "url": "https://github.com/OpenTSLM/",
+      "snippet": "We build and maintain open foundations that help researchers develop, evaluate, and deploy such models. With OpenTSLM, we provide open-source models, architectures, datasets, training code, evaluations, and reference implementations for building AI systems that understand time series as a native modality."
+    },
+    {
+      "title": "OpenTSLM",
+      "url": "https://www.opentslm.com/",
+      "snippet": "OpenTSLM: Lightweight base models trained on public data, released openly. They set the standard for temporal reasoning and power a global developer and research ecosystem. Frontier TSLMs: Advanced proprietary models trained on specialized data, delivering enterprise-grade performance and powering APIs, fine-tuning, and vertical solutions."
+    },
+    {
+      "title": "OpenTSLM (OpenTSLM - Open Source Time Series Language Models)",
+      "url": "https://huggingface.co/OpenTSLM",
+      "snippet": "Org profile for OpenTSLM - Open Source Time Series Language Models on Hugging Face, the AI community building the future."
+    }
+  ]
+}

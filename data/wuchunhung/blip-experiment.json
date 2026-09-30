@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wuchunhung/blip-experiment",
+  "slug": "wuchunhung-blip-experiment",
+  "author": "wuchunhung",
+  "url": "https://huggingface.co/wuchunhung/blip-experiment",
+  "created_at": "2026-09-30T19:07:39.000Z",
+  "updated_at": "2026-09-30T19:07:44.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Matriarch - Moog Music",
+      "url": "https://www.moogmusic.com/synthesizers/matriarch/",
+      "snippet": "The Pinnacle of Moog's Semi-Modular Family of Analog Synthesizers. Moog Matriarch is a patchable 4-note paraphonic analog …"
+    },
+    {
+      "title": "Moog Matriarch: Avis et Test | LePetitPianiste.com",
+      "url": "https://lepetitpianiste.com/avis/moog-matriarch/",
+      "snippet": "Apr 30, 2026 · Dans ce test complet du Moog Matriarch, je vais décortiquer ce qui fait de ce synthé une référence dans l’univers …"
+    },
+    {
+      "title": "Moog Matriarch Semi-modular Analog Synthesizer and Step Sequencer ...",
+      "url": "https://www.sweetwater.com/store/detail/Matriarch--moog-matriarch-semi-modular-analog-synthesizer-and-step-sequencer?msockid=30958af70e46630122379d130f316227",
+      "snippet": "Complete with a delightfully responsive 49-key Fatar keybed (with patchable velocity and aftertouch), the Moog Matriarch paraphonic …"
+    },
+    {
+      "title": "Moog Matriarch - Sound On Sound",
+      "url": "https://www.soundonsound.com/reviews/moog-matriarch",
+      "snippet": "Much more than just an expanded Grandmother, the Matriarch has all the makings of a classic Moog synth. Two years ago Moog …"
+    },
+    {
+      "title": "Moog matriarch d'occasion - Instruments de musique - leboncoin",
+      "url": "https://www.leboncoin.fr/ck/instruments_de_musique/moog-matriarch",
+      "snippet": "Consultez nos annonces de moog matriarch d'occasion. Trouvez toutes nos annonces de Instruments de musique sur leboncoin"
+    }
+  ]
+}

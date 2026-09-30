@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "FluidInference/intern-decision-0.8b-showdown-coreml",
+  "slug": "fluidinference-intern-decision-0-8b-showdown-coreml",
+  "author": "FluidInference",
+  "url": "https://huggingface.co/FluidInference/intern-decision-0.8b-showdown-coreml",
+  "created_at": "2026-09-30T17:11:31.000Z",
+  "updated_at": "2026-09-30T18:07:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "apple-silicon",
+    "decision",
+    "qwen3.5",
+    "pokemon",
+    "pokemon-showdown",
+    "text-classification",
+    "base_model:internlm/Intern-Decision-0.8B",
+    "base_model:quantized:internlm/Intern-Decision-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5559178197,
+  "storage_human": "5.6 GB",
+  "base_model": "internlm/Intern-Decision-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FluidInference/intern-decision-0.8b-coreml · Hugging Face",
+      "url": "https://huggingface.co/FluidInference/intern-decision-0.8b-coreml",
+      "snippet": "Core ML export of internlm/Intern-Decision-.8B (Shanghai AI Laboratory, Apache-2.0, snapshot 85a0cc5a): a typed-decision model fine-tuned from Qwen3.5-0.8B that answers a set of choice / score / noul (yes/no) questions about a JSON state in one prefill pass. The text path is exported here; the vision tower is not (text-only requests)."
+    },
+    {
+      "title": "CoreML - a FluidInference Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/FluidInference/coreml",
+      "snippet": "Models for Apple devices. See https://github.com/FluidInference/FluidAudio for usage details"
+    },
+    {
+      "title": "GitHub - FluidInference/.github",
+      "url": "https://github.com/FluidInference/.github",
+      "snippet": "We&#x27;re a team that set out to build a local-first consumer AI app across Apple, Windows and Android, but after thousands of users and 6 months, we realized the hardware and software aren&#x27;t there yet. Running near-realtime workloads on consumer CPUs and GPUs isn&#x27;t feasible yet; it&#x27;s too slow and drains battery life."
+    },
+    {
+      "title": "Fluid Inference · GitHub",
+      "url": "https://github.com/FluidInference",
+      "snippet": "intelligence everywhere. Fluid Inference has 20 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Jev AI Model (TypeSafe) — Typed System One Decisions",
+      "url": "https://jevmodel.org/",
+      "snippet": "Jev is TypeSafe AI&#x27;s System One model: it returns a choice, score, or yes/no probability instead of chat. The hosted API is open as of 21 September 2026. $0.042 per 1M input tokens, output free."
+    }
+  ]
+}

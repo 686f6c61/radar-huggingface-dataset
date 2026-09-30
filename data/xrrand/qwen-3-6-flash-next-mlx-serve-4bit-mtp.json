@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "xrrand/Qwen-3.6-Flash-Next-mlx-serve-4bit-mtp",
+  "slug": "xrrand-qwen-3-6-flash-next-mlx-serve-4bit-mtp",
+  "author": "xrrand",
+  "url": "https://huggingface.co/xrrand/Qwen-3.6-Flash-Next-mlx-serve-4bit-mtp",
+  "created_at": "2026-09-30T18:43:10.000Z",
+  "updated_at": "2026-09-30T19:35:46.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "mlx-serve",
+    "quantized",
+    "qwen3.8",
+    "moe",
+    "mtp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 133195562899,
+  "parameters_human": "133.20B",
+  "storage_bytes": 107634039728,
+  "storage_human": "107.6 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-Flash - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.6-flash",
+      "snippet": "The Qwen3.6 native vision-language Flash model series delivers a significant performance boost over the 3.5-Flash version. This model particularly excels in agentic coding capabilities, substantially outperforming its predecessor on multiple code-agent benchmarks, as well as in mathematical and code reasoning. In terms of vision, it features markedly improved spatial intelligence, with ..."
+    },
+    {
+      "title": "Qwen3.6 Flash — AI Model | MindStudio",
+      "url": "https://www.mindstudio.ai/models/qwen-3-6-flash",
+      "snippet": "Qwen3.6 Flash is a multimodal text generation model developed by Qwen, a research team under Alibaba. Released in April 2026, it supports both text and image inputs and offers a context window of up to one million tokens, allowing it to process very long documents, codebases, or multi-turn conversations within a single session."
+    },
+    {
+      "title": "Qwen: Qwen3.6 Flash - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/qwen/qwen3.6-flash",
+      "snippet": "Qwen3.6 Flash, released by qwen on April 26, 2026, is a fast and efficient multimodal language model with a substantial 1M token context window. It consistently ranks among the fastest models, achieving an Infinityth percentile across 8 benchmarks, and offers highly competitive pricing, also at an Infinityth percentile across 4 benchmarks."
+    },
+    {
+      "title": "Qwen 3.6 Flash Complete Guide: Fast 1M-Context Model for $0.25/1M Input ...",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-flash-complete-guide/",
+      "snippet": "Qwen 3.6 Flash is the speed-optimized model in the Qwen 3.6 family. Released on April 27, 2026, it delivers fast inference with a 1M token context window, full multimodal support (text, image, and video input), and aggressive pricing at $0.25 per 1M input tokens and $1.50 per 1M output tokens."
+    },
+    {
+      "title": "qwen3.6 - ollama.com",
+      "url": "https://ollama.com/library/qwen3.6",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "prasenjeetanand/LightBoy",
+  "slug": "prasenjeetanand-lightboy",
+  "author": "prasenjeetanand",
+  "url": "https://huggingface.co/prasenjeetanand/LightBoy",
+  "created_at": "2026-09-30T19:10:07.000Z",
+  "updated_at": "2026-09-30T19:24:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ti2v",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2819997501,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PRASENJEETANAND · GitHub",
+      "url": "https://github.com/PRASENJEETANAND",
+      "snippet": "GitHub is where PRASENJEETANAND builds software. Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "GitHub - PRASENJEETANAND/ComfyUI-particleBoy: ParticleBoy is a custom ...",
+      "url": "https://github.com/PRASENJEETANAND/ComfyUI-particleBoy",
+      "snippet": "The node embeds the full WebGL studio (/particleboy/app). Queue Prompt records frame_count frames at fps, then runs the graph. Viewport (knob off): output matches the orbit view you are looking at. Camera (knob on): output uses the shot camera — imported GLB camera path, or the default locked camera. Output size is width × height (default 1280×720). IMAGE batch goes to any image/video node ..."
+    },
+    {
+      "title": "Prasenjeet Anand (@prasenjeetanand) • Instagram photos and videos",
+      "url": "https://www.instagram.com/prasenjeetanand/",
+      "snippet": "590 Followers, 703 Following, 126 Posts - Prasenjeet Anand (@prasenjeetanand) on Instagram: \"CG Genralist || Lighting Artist at ILM Mumbai. more of my work @daily_dark_side_anand Jai Jharkhand.\""
+    },
+    {
+      "title": "Free AI 3D Model Generator from Text & Images | Image to 3D AI",
+      "url": "https://image-to-3d.ai/ai-3d-model-generator/",
+      "snippet": "Create production-ready 3D models from text or images with our free AI 3D model generator. Clean geometry, rich textures, and easy export for any project."
+    },
+    {
+      "title": "Prasenjeet Anand - Google Sites",
+      "url": "https://sites.google.com/view/www-prasenjeetanand-com/home",
+      "snippet": "Hello! I am a passionate Lighting Artist and Lookdev Artist with a strong artistic vision and a versatile skill set. With a deep love for bringing captivating visuals to life, I excel in the art of lighting and shading. Additionally, as a CG Generalist, I have honed my talents in various other areas, including modeling, animation, rigging, FX, and compositing. This diverse skill set allows me ..."
+    }
+  ]
+}

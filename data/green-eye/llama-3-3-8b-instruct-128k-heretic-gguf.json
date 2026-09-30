@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Green-Eye/Llama-3.3-8B-Instruct-128K-heretic-GGUF",
+  "slug": "green-eye-llama-3-3-8b-instruct-128k-heretic-gguf",
+  "author": "Green-Eye",
+  "url": "https://huggingface.co/Green-Eye/Llama-3.3-8B-Instruct-128K-heretic-GGUF",
+  "created_at": "2026-09-30T17:29:28.000Z",
+  "updated_at": "2026-09-30T17:29:28.000Z",
+  "license": "llama3.3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "base_model:aeon37/Llama-3.3-8B-Instruct-128K-heretic",
+    "base_model:quantized:aeon37/Llama-3.3-8B-Instruct-128K-heretic",
+    "license:llama3.3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820288768,
+  "storage_human": "71.8 GB",
+  "base_model": "aeon37/Llama-3.3-8B-Instruct-128K-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Green Propreté - Société de Nettoyage Marne-la-Vallée (77)",
+      "url": "https://greenpro.fr/",
+      "snippet": "Sur Marne-la-Vallée, Val d’Europe et dans toute la Seine et Marne et l’Ile-de-France, GREEN est votre partenaire de choix en …"
+    },
+    {
+      "title": "Green Propreté & Services à Noisiel - Entreprises de nettoyage …",
+      "url": "https://www.pagesjaunes.fr/pros/65299007",
+      "snippet": "Aug 19, 2026 · Quelle est l'adresse de Green Propreté & Services ?"
+    },
+    {
+      "title": "Immobilier France : 91 759 maisons et appartements à vendre",
+      "url": "https://www.green-acres.fr/fr",
+      "snippet": "Découvrez les meilleures annonces immobilières en France sur notre site immobilier. Recherchez parmi 91 759 biens à vendre avec …"
+    },
+    {
+      "title": "Green - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Green",
+      "snippet": "Green is the color between cyan and yellow on the visible spectrum. It has 295–350 different shades. It is evoked by light which has …"
+    },
+    {
+      "title": "Green Propreté & Services à Noisiel | - Bottin.fr",
+      "url": "https://www.bottin.fr/fiche-locale/dgbcbfbccaidfbfdiei--green-proprete-services--noisiel.htm",
+      "snippet": "Green Propreté & Services à Noisiel : horaires, numéro de téléphone, plan d'accès, avis et services disponibles."
+    }
+  ]
+}

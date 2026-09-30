@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-python-basics-v1-r0005-u1-mdagosta",
+  "slug": "mdagosta-waldito-python-basics-v1-r0005-u1-mdagosta",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0005-u1-mdagosta",
+  "created_at": "2026-09-30T19:06:49.000Z",
+  "updated_at": "2026-09-30T19:06:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9541632,
+  "parameters_human": "9.5M",
+  "storage_bytes": 19089664,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "waldito-python-basics-v1-r0003-u1-mdagosta - Hugging Face",
+      "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta",
+      "snippet": "Instructions to use mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Learn Python - Free Interactive Python Tutorial",
+      "url": "https://www.learnpython.org/en/",
+      "snippet": "Get started learning Python with DataCamp&#x27;s Intro to Python tutorial. Learn Data Science by completing interactive coding challenges and watching videos by expert instructors."
+    },
+    {
+      "title": "How to Download and Switch Local AI Models From a Python Script in Off ...",
+      "url": "https://dev.to/alichherawalla/how-to-download-and-switch-local-ai-models-from-a-python-script-in-off-grid-ai-in-2026-34ph",
+      "snippet": "A repeatable local-AI setup should not depend on clicking the same download buttons each time. OGAD (Off Grid AI Desktop) exposes model-management routes so a Python script can list models, download your chosen one and activate it."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "How to Build Your First Machine Learning Model in 30 Minutes (Step-by ...",
+      "url": "https://thedatastudent.wordpress.com/2026/06/20/how-to-build-your-first-machine-learning-model-in-30-minutes-step-by-step/",
+      "snippet": "No PhD required. Just Python, a dataset, and 30 focused minutes — here&#x27;s exactly how to do it. There&#x27;s a strange myth floating around the internet that machine learning is reserved for …"
+    }
+  ]
+}

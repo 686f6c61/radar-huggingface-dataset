@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Derpyhue/Qwen3.8-27B-exl3-2.55bpw",
+  "slug": "derpyhue-qwen3-8-27b-exl3-2-55bpw",
+  "author": "Derpyhue",
+  "url": "https://huggingface.co/Derpyhue/Qwen3.8-27B-exl3-2.55bpw",
+  "created_at": "2026-09-30T18:50:17.000Z",
+  "updated_at": "2026-09-30T19:30:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "quantized",
+    "tabbyapi",
+    "vision-language",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6048978304,
+  "parameters_human": "6.05B",
+  "storage_bytes": 12111142268,
+  "storage_human": "12.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "GitHub - MiaAI-Lab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw: Deployment kit ...",
+      "url": "https://github.com/MiaAI-Lab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw",
+      "snippet": "by Mia&#x27;a AI Lab Deployment kit for serving Qwen3.8-27B quantized to EXL3 3.5bpw with speculative decoding — MTP by default (draft head inside the checkpoint, best context per GB) or DFlash2 (EXL3 5.0bpw draft model, ~15% faster) — plus a ~4.5-bit KV cache lane (NVFP4 on Ada/Hopper/Blackwell, Hadamard-4 on Ampere) for maximum context per GB. This repo contains the launcher, server and ..."
+    },
+    {
+      "title": "Qwen 3.8-27B Complete Guide: Vision, Tool Use, and a Real Upgrade Over ...",
+      "url": "https://www.aimadetools.com/blog/qwen-3-8-27b-complete-guide/",
+      "snippet": "Qwen 3.8-27B is Alibaba&#x27;s compact, deployment-friendly model in the new Qwen 3.8 generation. It is a 27 billion parameter dense model, built on the Qwen3.5 architecture, and it is the direct successor to Qwen 3.6-27B, one of the most-used local coding models on this site. The headline change is not raw parameter count."
+    },
+    {
+      "title": "Mia-AiLab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw · Hugging Face",
+      "url": "https://huggingface.co/Mia-AiLab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw",
+      "snippet": "EXL3 quantization of the DFlash2 draft model for Qwen/Qwen3.8-27B — a 1.93B block-diffusion speculative-decoding drafter (original bf16 release: incoai/Qwen3.8-27B-DFlash2, DFlash2 blog, GitHub). This is not a standalone language model. It drafts token blocks for the Qwen3.8-27B target to verify, inside a speculative-decoding engine: Which ..."
+    }
+  ]
+}

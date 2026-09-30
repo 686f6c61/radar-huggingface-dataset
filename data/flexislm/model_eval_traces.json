@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "FlexiSLM/model_eval_traces",
+  "slug": "flexislm-model_eval_traces",
+  "author": "FlexiSLM",
+  "url": "https://huggingface.co/FlexiSLM/model_eval_traces",
+  "created_at": "2026-09-30T03:01:42.000Z",
+  "updated_at": "2026-09-30T03:21:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "evaluation",
+    "speech",
+    "traces",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3488829529,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FlexiSLM/model_eval_traces · Hugging Face",
+      "url": "https://huggingface.co/FlexiSLM/model_eval_traces",
+      "snippet": "FlexiSLM model evaluation traces JSONL inference traces only (no generated WAVs). Each file is named after the model. Records follow the FlexiSLM eval trace schema (index, task, input, output, evaluation, metadata). Files flexislm_stage2_released.jsonl — FlexiSLM-7B Stage2 released checkpoint (ckpt-150000), 12.5 Hz in/out, flow-matching s2s on VoiceBench + OpenAudioBench."
+    },
+    {
+      "title": "FlexiSLM (FlexiSLM) - Hugging Face",
+      "url": "https://huggingface.co/FlexiSLM",
+      "snippet": "AI & ML interests spoken language model data, training, and flexible frame rate generation."
+    },
+    {
+      "title": "GitHub - AmphionTeam/FlexiSLM: [EMNLP 2026] FlexiSLM: A Spoken Language ...",
+      "url": "https://github.com/AmphionTeam/FlexiSLM",
+      "snippet": "This repository contains the code for our paper, \"FlexiSLM: A Spoken Language Model with Dynamic and Controllable Frame Rates,\" along with instructions for downloading the released training data. FlexiSLM is the first spoken language model that supports dynamic and controllable frame rates on both speech input and output. A single trained model can be steered between 12.5 Hz and 4.0 Hz without ..."
+    },
+    {
+      "title": "[2606.31247] FlexiSLM: A Spoken Language Model with Dynamic and ...",
+      "url": "https://arxiv.org/abs/2606.31247",
+      "snippet": "Spoken language models (SLMs) extend LLMs to speech input and output. Existing SLMs represent speech at fixed frame rates (e.g., 25 or 12.5 Hz), ignoring the time-varying information density of speech and offering limited flexibility to trade off quality for speed at inference time. Recent audio tokenizer research has proposed dynamic-frame-rate speech coding, which exploits this non ..."
+    },
+    {
+      "title": "FlexiSLM Demo",
+      "url": "https://flexislm.github.io/",
+      "snippet": "FlexiSLM — Overview Existing spoken language models (SLMs) typically use a fixed speech-token frame rate (for example, 25 Hz or 12.5 Hz). This fixed-rate design cannot adapt to time-varying speech complexity and does not offer a direct speed-quality trade-off at inference time. We introduce FlexiSLM, the first SLM that supports dynamic and controllable frame rates on both speech input and ..."
+    }
+  ]
+}

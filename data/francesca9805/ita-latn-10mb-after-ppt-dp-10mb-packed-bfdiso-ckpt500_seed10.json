@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/ita-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10",
+  "slug": "francesca9805-ita-latn-10mb-after-ppt-dp-10mb-packed-bfdiso-ckpt500_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/ita-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10",
+  "created_at": "2026-09-30T17:12:59.000Z",
+  "updated_at": "2026-09-30T17:54:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed10",
+    "base_model:finetune:francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 1565046863,
+  "storage_human": "1.6 GB",
+  "base_model": "francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eldorado - Largest & Safest Game Items Marketplace",
+      "url": "https://www.eldorado.gg/",
+      "snippet": "Trade without fear - Eldorado guarantees that all trades are legit and keeps you safe from scammers. It's quick and easy - find the …"
+    },
+    {
+      "title": "Eldorado - Le plus grand marché sécurisé d'items de jeu",
+      "url": "https://www.eldorado.gg/fr/",
+      "snippet": "Effectuez des transactions en toute tranquillité – Eldorado garantit la légalité de toutes les transactions et vous protège contre les …"
+    },
+    {
+      "title": "Concerts et Spectacles • Eldorado & Co",
+      "url": "https://www.eldorado.fr/",
+      "snippet": "Eldorado & Co organise des concerts et spectacles sur Lyon et sa région : Saint-Étienne, Annecy, Chambéry, Bourg-en-Bresse..."
+    },
+    {
+      "title": "El Dorado - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/El_Dorado",
+      "snippet": "Although belief in El Dorado as a real place declined, the legend has had a lasting cultural impact. It became a symbol of fabulous …"
+    },
+    {
+      "title": "Eldorado — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Eldorado",
+      "snippet": "Un long métrage d'animation américain, La Route d'Eldorado, centre aussi son intrigue sur cette contrée mythique. Il met en scène …"
+    }
+  ]
+}

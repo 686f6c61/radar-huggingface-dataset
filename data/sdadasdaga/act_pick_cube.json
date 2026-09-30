@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sdadasdaga/act_pick_cube",
+  "slug": "sdadasdaga-act_pick_cube",
+  "author": "sdadasdaga",
+  "url": "https://huggingface.co/sdadasdaga/act_pick_cube",
+  "created_at": "2026-09-30T19:04:08.000Z",
+  "updated_at": "2026-09-30T19:04:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:sdadasdaga/so101_green_cube_50ep",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714912,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sdadasdaga/act-pick-cube-2cam-chunk50 · Hugging Face",
+      "url": "https://huggingface.co/sdadasdaga/act-pick-cube-2cam-chunk50",
+      "snippet": "Instructions to use sdadasdaga/act-pick-cube-2cam-chunk50 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use sdadasdaga/act-pick-cube-2cam-chunk50 with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training ..."
+    },
+    {
+      "title": "sdadasdaga (김민준) - Hugging Face",
+      "url": "https://huggingface.co/sdadasdaga/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... published a model about 3 hours ago"
+    },
+    {
+      "title": "Chapter 20 - Preparing the reBot VLA Dataset | Seeed Studio Wiki",
+      "url": "https://wiki.seeedstudio.com/rebot_physical_ai_course_chapter_20/",
+      "snippet": "Chapter 20 of the Seeed Physical AI Beginner&#x27;s Course — preparing the reBot VLA dataset: prerequisites, checking the LeRobot dataset, adding language task descriptions, configuring state/action/camera keys, creating meta/modality.json, setting the embodiment tag, verifying joint order and dimensions, and multi-task organization."
+    },
+    {
+      "title": "LeRobot SO-101 arm training and evaluation: Pick up cube ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=ZPe4O8ms3zk",
+      "snippet": "LeRobot SO-101 arm training and evaluation: Pick up cube, drop in bucket Andy Gelme 265 subscribers 7"
+    },
+    {
+      "title": "GitHub - skr3178/lerobot · GitHub",
+      "url": "https://github.com/skr3178/lerobot",
+      "snippet": "This repository contains the LeRobot framework along with the SVLA SO101 pick-and-place dataset for robot learning."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-python-basics-v1-r0005-u0-mdagosta",
+  "slug": "mdagosta-waldito-python-basics-v1-r0005-u0-mdagosta",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0005-u0-mdagosta",
+  "created_at": "2026-09-30T19:04:45.000Z",
+  "updated_at": "2026-09-30T19:04:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9541632,
+  "parameters_human": "9.5M",
+  "storage_bytes": 19089664,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "waldito-python-basics-v1-r0003-u1-mdagosta - Hugging Face",
+      "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta",
+      "snippet": "Instructions to use mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Models | OpenCode",
+      "url": "https://opencode.ai/docs/models/",
+      "snippet": "Here the full ID is provider_id/model_id. For example, if you&#x27;re using OpenCode Zen, you would use opencode/gpt-5.1-codex for GPT 5.1 Codex. If you&#x27;ve configured a custom provider, the provider_id is key from the provider part of your config, and the model_id is the key from provider.models."
+    },
+    {
+      "title": "How to Use AI Running on Your Own Computer From Python in 2026",
+      "url": "https://dev.to/alichherawalla/how-to-use-ai-running-on-your-own-computer-from-python-in-2026-2oh9",
+      "snippet": "Call a local AI model from Python with the standard library. Discover the selected model, send a prompt and read the answer through OGAD."
+    },
+    {
+      "title": "Learn Python - Free Interactive Python Tutorial",
+      "url": "https://www.learnpython.org/en/",
+      "snippet": "Get started learning Python with DataCamp&#x27;s Intro to Python tutorial. Learn Data Science by completing interactive coding challenges and watching videos by expert instructors."
+    },
+    {
+      "title": "Python Tutorial - W3Schools",
+      "url": "https://www.w3schools.com/python/",
+      "snippet": "Python is a popular programming language. Python can be used on a server to create web applications. Python is easy to learn - You will enjoy it!"
+    }
+  ]
+}

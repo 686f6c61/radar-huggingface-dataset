@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "taurusduan/Huihui-GLM-5.3-Flash-abliterated-GGUF",
+  "slug": "taurusduan-huihui-glm-5-3-flash-abliterated-gguf",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/Huihui-GLM-5.3-Flash-abliterated-GGUF",
+  "created_at": "2026-09-30T05:50:38.000Z",
+  "updated_at": "2026-09-30T05:50:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "unsloth",
+    "glm5_next",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 295,
+  "trending_score": 0,
+  "parameters": 320759404382,
+  "parameters_human": "320.76B",
+  "storage_bytes": 450780689792,
+  "storage_human": "450.8 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nejdek - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nejdek",
+      "snippet": "Nejdek (Czech pronunciation: [ˈnɛjdɛk]; German: Neudek) is a town in Karlovy Vary District in the Karlovy Vary Region of the Czech …"
+    },
+    {
+      "title": "Město Nejdek - Oficiální stránky města Nejdek",
+      "url": "https://www.nejdek.cz/",
+      "snippet": "Vážení občané města Nejdek, dovolujeme si Vás informovat o zahájení přípravných prací projektu na vybudování nové optické sítě v …"
+    },
+    {
+      "title": "Nejdek — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nejdek",
+      "snippet": "Nejdek (en allemand : Neudek) est une ville du district et de la région de Karlovy Vary, en Tchéquie. Sa population s'élevait à 7 733 …"
+    },
+    {
+      "title": "Nejdek – Wikipedie",
+      "url": "https://cs.wikipedia.org/wiki/Nejdek",
+      "snippet": "Nejdek (německy Neudek, v chebském sudetoněmeckém nářečí Naidek) je město v okrese Karlovy Vary v Karlovarském kraji. Leží …"
+    },
+    {
+      "title": "Nejdek (Ville) • Mapy.com",
+      "url": "https://mapy.com/fr/?source=muni&id=1271",
+      "snippet": "Nejdek est une ville située dans le district de Karlovy Vary, à 15 kilomètres au nord-ouest de Karlovy Vary, au cœur des Monts …"
+    }
+  ]
+}

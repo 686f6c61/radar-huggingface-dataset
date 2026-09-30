@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "BiscuitBobby/word-to-eeg-generator",
+  "slug": "biscuitbobby-word-to-eeg-generator",
+  "author": "BiscuitBobby",
+  "url": "https://huggingface.co/BiscuitBobby/word-to-eeg-generator",
+  "created_at": "2026-09-30T17:28:59.000Z",
+  "updated_at": "2026-09-30T17:31:32.000Z",
+  "license": "things-eeg-derived",
+  "license_family": "unknown",
+  "pipeline_tag": "other",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "eeg",
+    "neuroscience",
+    "text-to-eeg",
+    "things-eeg",
+    "clip",
+    "other",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 240096859,
+  "storage_human": "240 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NeuSpeech/EEG-To-Text",
+      "url": "https://github.com/NeuSpeech/EEG-To-Text",
+      "snippet": "Semantic-aware Contrastive Learning for Electroencephalography-to-Text Generation with Curriculum Learning DeWave: Discrete EEG Waves Encoding for Brain Dynamics to Text Translation We have written a corrected version to use model.generate to evaluate the model, the result is not so good."
+    },
+    {
+      "title": "GitHub - MikeWangWZHL/EEG-To-Text: code for AAAI2022 paper \"Open ...",
+      "url": "https://github.com/MikeWangWZHL/EEG-To-Text",
+      "snippet": "Open vocabulary EEG-To-Text Decoding To train an EEG-To-Text decoding model, run bash ./scripts/train_decoding.sh. To evaluate the trained EEG-To-Text decoding model from above, run bash ./scripts/eval_decoding.sh. For detailed configuration of the available arguments, please refer to function get_config (case = &#x27;train_decoding&#x27;) in /config.py"
+    },
+    {
+      "title": "A Survey on Bridging EEG Signals and Generative AI: From Image and Text ...",
+      "url": "https://arxiv.org/html/2502.12048v4",
+      "snippet": "Recent progress in machine learning and generative AI has driven growing interest in transforming non-invasive Electroencephalography (EEG) signals into images, text, and audio. This survey consolidates and analyzes developments across EEG-to-image synthesis, EEG-to-text generation, and EEG-to-audio reconstruction."
+    },
+    {
+      "title": "[2112.02690] Open Vocabulary Electroencephalography-To-Text Decoding ...",
+      "url": "https://arxiv.org/abs/2112.02690",
+      "snippet": "In this paper, we extend the problem to open vocabulary Electroencephalography (EEG)-To-Text Sequence-To-Sequence decoding and zero-shot sentence sentiment classification on natural reading tasks. We hypothesis that the human brain functions as a special text encoder and propose a novel framework leveraging pre-trained language models (e.g., BART)."
+    },
+    {
+      "title": "Concept2Brain: an AI model for predicting neurophysiological responses ...",
+      "url": "https://www.nature.com/articles/s41467-026-75653-x",
+      "snippet": "The Concept2Brain model is provided as a web service tool for creating open and reproducible EEG datasets by predicting brain responses to any semantic concept or picture."
+    }
+  ]
+}

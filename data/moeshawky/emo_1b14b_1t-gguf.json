@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "moeshawky/Emo_1b14b_1T-GGUF",
+  "slug": "moeshawky-emo_1b14b_1t-gguf",
+  "author": "moeshawky",
+  "url": "https://huggingface.co/moeshawky/Emo_1b14b_1T-GGUF",
+  "created_at": "2026-09-30T17:41:13.000Z",
+  "updated_at": "2026-09-30T17:51:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13568641024,
+  "parameters_human": "13.57B",
+  "storage_bytes": 27149357248,
+  "storage_human": "27.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allenai/Emo_1b14b_1T · Hugging Face",
+      "url": "https://huggingface.co/allenai/Emo_1b14b_1T",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "allenai/EMO · Hugging Face",
+      "url": "https://huggingface.co/allenai/EMO",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - allenai/EMO",
+      "url": "https://github.com/allenai/EMO",
+      "snippet": "For each of allenai/Emo_1b14b_1T and allenai/StdMoE_1b14b_1T it: Streams ~20M tokens of the cc_all_dressed weborganizer mix from S3, sampled uniformly across the 24 topics Runs a single forward pass and aggregates router activations into per-document expert vectors (top-k frequency + softmax probs)"
+    },
+    {
+      "title": "Emo_1b14b_1T huggingface.co api & allenai Emo_1b14b_1T github AI Model ...",
+      "url": "https://www.toolify.ai/ai-model/allenai-emo-1b14b-1t",
+      "snippet": "Emo_1b14b_1T is an open source model from GitHub that offers a free installation service, and any user can find Emo_1b14b_1T on GitHub to install. At the same time, huggingface.co provides the effect of Emo_1b14b_1T install, users can directly use Emo_1b14b_1T installed effect in huggingface.co for debugging and trial."
+    },
+    {
+      "title": "Emo 1b14b 1T by allenai — VRAM 54.3GB, 4K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/allenai%2FEmo_1b14b_1T,6ccto2JXDUUQ68sZPyvm9S",
+      "snippet": "Emo 1b14b 1T is an open-source 13.6b LLM by allenai. VRAM 54.3GB, 4K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

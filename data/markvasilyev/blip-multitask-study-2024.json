@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Markvasilyev/blip-multitask-study-2024",
+  "slug": "markvasilyev-blip-multitask-study-2024",
+  "author": "Markvasilyev",
+  "url": "https://huggingface.co/Markvasilyev/blip-multitask-study-2024",
+  "created_at": "2026-09-30T16:29:07.000Z",
+  "updated_at": "2026-09-30T16:29:12.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accéder à mon mail Orange - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Acc%C3%A9der-%C3%A0-mon-mail-Orange/td-p/36",
+      "snippet": "Aug 2, 2013 · Voici quelques infos utiles à préciser lorsque vous rencontrez un soucis de messagerie Comment consultez-vous vos …"
+    },
+    {
+      "title": "Vider complètement ma messagerie vocale - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Mon-telephone-par-internet-et/Vider-compl%C3%A8tement-ma-messagerie-vocale/td-p/21987",
+      "snippet": "Sep 12, 2013 · Bonjour, je n'ai pas accès à un quelconque service internet orange sur mon lieu de travail et je voudrais vider la …"
+    },
+    {
+      "title": "Comment allonger le temps de la sonnerie de mon smartphone",
+      "url": "https://communaute.orange.fr/t5/utiliser-mon-mobile/Comment-allonger-le-temps-de-la-sonnerie-de-mon-smartphone/td-p/2620563",
+      "snippet": "Oct 29, 2021 · Modifier le nombre de sonneries avant le déclenchement de votre messagerie Remarque : Une sonnerie dure environ …"
+    },
+    {
+      "title": "Résolu : Récupération message vocal - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Mon-telephone-par-internet-et/R%C3%A9cup%C3%A9ration-message-vocal/td-p/2441174",
+      "snippet": "Feb 9, 2021 · Bonjour, Je n'arrive pas récupérer mes messages vocaux dans l'application Téléphone. Quand je clique sur un …"
+    },
+    {
+      "title": "Téléphone fixe qui tombe directement sur la messagerie",
+      "url": "https://communaute.orange.fr/t5/Mon-telephone-par-internet-et/T%C3%A9l%C3%A9phone-fixe-qui-tombe-directement-sur-la-messagerie/td-p/2670327",
+      "snippet": "Jan 6, 2022 · Bonjour, Depuis quelque temps, lorsqu'on m'appelle sur mon téléphone fixe, on tombe directement sur la messagerie. …"
+    }
+  ]
+}

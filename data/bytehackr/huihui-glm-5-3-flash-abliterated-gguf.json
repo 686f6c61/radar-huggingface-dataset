@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "bytehackr/Huihui-GLM-5.3-Flash-abliterated-GGUF",
+  "slug": "bytehackr-huihui-glm-5-3-flash-abliterated-gguf",
+  "author": "bytehackr",
+  "url": "https://huggingface.co/bytehackr/Huihui-GLM-5.3-Flash-abliterated-GGUF",
+  "created_at": "2026-09-30T16:17:44.000Z",
+  "updated_at": "2026-09-30T16:17:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "unsloth",
+    "glm5_next",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 320759404382,
+  "parameters_human": "320.76B",
+  "storage_bytes": 450780689792,
+  "storage_human": "450.8 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/GLM-5.3-Flash-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/GLM-5.3-Flash-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF",
+      "snippet": "Instructions to use huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GLM-5.3-Flash/FlashX - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash has 320B total parameters with 18B activated. As the first open-source frontier model to combine sparse and linear attention, it significantly cuts computation and serving costs while preserving long-context quality — reducing attention computation and KV cache by 3.01× and 4.44× versus GLM-5.3. Native Multimodal Visual Coding"
+    },
+    {
+      "title": "Danny Hernández on X: \"@support_huihui Hey HuiHui team, how many RTX ...",
+      "url": "https://x.com/danNH2006/status/2103795603298038099",
+      "snippet": "New GGUF: huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF This is an uncensored version of zai-org/GLM-5.3-Flash created with abliteration. Note GGUFs come from unsloth/GLM-5.3-Flash-GGUF. Only layers 15 to 35 (0-based indexing) have been ablated, while the other layers remain Show more huihui-ai/GLM-5.3-Flash-abliterated-GGUF · Hugging Face From huggingface.co 4 3 34 2.7K Danny Hernández ..."
+    },
+    {
+      "title": "huihui.ai on X: \"Only layers 15 to 35 (0-based indexing) have been ...",
+      "url": "https://x.com/support_huihui/status/2103809323000643859",
+      "snippet": "New GGUF: huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF This is an uncensored version of zai-org/GLM-5.3-Flash created with abliteration. Note GGUFs come from unsloth/GLM-5.3-Flash-GGUF. Only layers 15 to 35 (0-based indexing) have been ablated, while the other layers remain Show more huihui-ai/GLM-5.3-Flash-abliterated-GGUF · Hugging Face From huggingface.co 4 3 34 2.7K huihui.ai @support ..."
+    }
+  ]
+}

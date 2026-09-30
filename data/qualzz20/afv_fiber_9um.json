@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Qualzz20/afv_fiber_9um",
+  "slug": "qualzz20-afv_fiber_9um",
+  "author": "Qualzz20",
+  "url": "https://huggingface.co/Qualzz20/afv_fiber_9um",
+  "created_at": "2026-09-30T02:51:29.000Z",
+  "updated_at": "2026-09-30T02:51:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "vesuvius-challenge",
+    "nnunet",
+    "base_model:scrollprize/fiber_hz_vt",
+    "base_model:finetune:scrollprize/fiber_hz_vt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 566150934,
+  "storage_human": "566 MB",
+  "base_model": "scrollprize/fiber_hz_vt",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qualzz20 (Zechosen) - Hugging Face",
+      "url": "https://huggingface.co/Qualzz20",
+      "snippet": "User profile of Zechosen on Hugging Face"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - TexasInstruments/edgeai-modelzoo: Edge AI Model Zoo",
+      "url": "https://github.com/TexasInstruments/edgeai-modelzoo",
+      "snippet": "Model Selection Tool - Performance Visualization Edge AI Studio: Model Selection Tool - Understand the performance statistics such as FPS, Latency, Accuracy & DDR bandwidth of models in the Model Zoo. Find a model that best meets your performance and accuracy goals on TI Processor from TI Model Zoo."
+    },
+    {
+      "title": "Hugging Face Viewer",
+      "url": "https://hfviewer.com/",
+      "snippet": "Interactive architecture graphs for any Hugging Face model - layers, shapes, and parameters visualized."
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    }
+  ]
+}

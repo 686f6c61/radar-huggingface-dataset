@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "i5h4annair/course-matching",
+  "slug": "i5h4annair-course-matching",
+  "author": "i5h4annair",
+  "url": "https://huggingface.co/i5h4annair/course-matching",
+  "created_at": "2026-09-30T18:45:14.000Z",
+  "updated_at": "2026-09-30T18:45:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NapeLPercy/CourseMatch: A Course Matching system that applies ...",
+      "url": "https://github.com/NapeLPercy/CourseMatch",
+      "snippet": "A Course Matching system that applies university-specific admission rules to determine course eligibility and uses AI to recommend the most suitable options based on a student&#x27;s personal profile."
+    },
+    {
+      "title": "Flow Matching and Diffusion Models — 2026 Version",
+      "url": "https://diffusion.csail.mit.edu/2026/index.html",
+      "snippet": "Diffusion and flow models are the cutting edge generative AI methods for images, videos, and many other data types. This course offers a comprehensive introduction for students and researchers seeking a deeper understanding of these models. Lectures will teach the core mathematical concepts necessary to understand diffusion models, including stochastic differential equations and the Fokker ..."
+    },
+    {
+      "title": "1 Introduction",
+      "url": "https://arxiv.org/html/2210.00954v3",
+      "snippet": "1.1 Course Match The state-of-the-art practical solution to the course allocation problem is the Course Match (CM)mechanism by Budish et al. (2017), which provides a good trade-off between efficiency, fairness, and incentives."
+    },
+    {
+      "title": "Machine Learning-Powered Course Allocation - ACM Digital Library",
+      "url": "https://dl.acm.org/doi/10.1145/3670865.3673573",
+      "snippet": "We study the course allocation problem, where universities assign course schedules to students. The current state-of-the-art mechanism, Course Match, has one major shortcoming: students make significant mistakes when reporting their preferences, which negatively affects welfare and fairness. To address this issue, we introduce a new mechanism, Machine Learning-powered Course Match (MLCM). At ..."
+    },
+    {
+      "title": "Machine learning-driven dynamic matching of industry ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s44163-025-00781-0",
+      "snippet": "This research examines the industry-education alignment literature, suggests a machine learning based system of dynamic matching of skills to courses, and illustrates successful curriculum adjustment. Findings confirm better alignment with industry needs, and future work includes real-time input and sector-specific course recommendations."
+    }
+  ]
+}

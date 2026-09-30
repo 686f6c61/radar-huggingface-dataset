@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dapatel86/experiment-generation-2024",
+  "slug": "dapatel86-experiment-generation-2024",
+  "author": "dapatel86",
+  "url": "https://huggingface.co/dapatel86/experiment-generation-2024",
+  "created_at": "2026-09-30T17:23:12.000Z",
+  "updated_at": "2026-09-30T17:23:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-6 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "GPTZero detects AI content from Claude, ChatGPT, GPT-5, GPT-6, Gemini, and checks writing quality to make every word worth reading."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-6 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-6, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    },
+    {
+      "title": "Google AI Studio | Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/aistudio",
+      "snippet": "Google AI Studio is the fastest way to start building with Gemini, our next generation family of multimodal generative AI models."
+    }
+  ]
+}

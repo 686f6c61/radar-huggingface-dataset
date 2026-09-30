@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Apex-2-Base-i1-GGUF",
+  "slug": "mradermacher-apex-2-base-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Apex-2-Base-i1-GGUF",
+  "created_at": "2026-09-30T03:30:33.000Z",
+  "updated_at": "2026-09-30T05:06:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "from-scratch",
+    "pretrained",
+    "base-model",
+    "continued-pretraining",
+    "mixture-of-experts",
+    "moe",
+    "code",
+    "qwen3_moe",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0-parquet",
+    "dataset:HuggingFaceFW/finepdfs",
+    "dataset:bigcode/starcoderdata",
+    "dataset:OpenCoder-LLM/opc-fineweb-code-corpus",
+    "dataset:OpenCoder-LLM/opc-annealing-corpus",
+    "dataset:allenai/dolma3_dolmino_mix-100B-1125",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:nvidia/Nemotron-CC-Math-v1",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:allenai/peS2o",
+    "dataset:allenai/dolmino-mix-1124",
+    "dataset:wikimedia/wikipedia",
+    "dataset:sedthh/gutenberg_english",
+    "base_model:YOON1v/Apex-2-Base",
+    "base_model:quantized:YOON1v/Apex-2-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 541,
+  "trending_score": 0,
+  "parameters": 3869124608,
+  "parameters_human": "3.87B",
+  "storage_bytes": 45550884288,
+  "storage_human": "45.6 GB",
+  "base_model": "YOON1v/Apex-2-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "mradermacher 's models 70,541. Sort: Recently updated. mradermacher/AREX ... mradermacher/Apex-2-Base-i1-GGUF. 4B • Updated about 2 hours ago · mradermacher ..."
+    },
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/activity/all",
+      "snippet": "AI & ML interests ... updated 2 models in about 4 hours. mradermacher/Apex-2-Base-GGUF. 4B • Updated in about 4 hours • 230 · mradermacher/Apex-2-Base-i1-GGUF."
+    },
+    {
+      "title": "Models compatible with the GGUF library - Hugging Face",
+      "url": "https://huggingface.co/models?library=gguf&p=0&sort=created",
+      "snippet": "mradermacher/Apex-2-Base-GGUF. 4B • Updated in about 22 hours · mradermacher ... mradermacher/ChindaMT-2B-i1-GGUF. 479k • Updated in about 21 hours · alst10 ..."
+    },
+    {
+      "title": "JoasASantos/Offensive-Security-AI-Models: Uncensored AI ... - GitHub",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Download: https://huggingface.co/mradermacher/Cyber-Ornith-1.5-9B-OBLITERATED-i1-GGUF ... APEX-GGUF. 15. VEXT Pentest-7B. Spec, Value. Base Model, Mistral-7B."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=0&sort=modified&search=gguf",
+      "snippet": "Models · IsValorum/Cyber-Tiel-Coder-35B-A3B-APEX-I-NanoPlus-GGUF · IsValorum/Cyber-Tiel-Coder-35B-A3B-APEX-I-MiniPlus-V2. · mradermacher/Vivian-Qwen3-8B-v0."
+    }
+  ]
+}

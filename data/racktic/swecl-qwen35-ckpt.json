@@ -5,7 +5,7 @@
   "author": "Racktic",
   "url": "https://huggingface.co/Racktic/swecl-qwen35-ckpt",
   "created_at": "2026-07-20T19:05:28.000Z",
-  "updated_at": "2026-09-29T03:00:33.000Z",
+  "updated_at": "2026-09-30T09:57:35.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 7641342562133,
-  "storage_human": "7641.3 GB",
+  "storage_bytes": 7934799601791,
+  "storage_human": "7934.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

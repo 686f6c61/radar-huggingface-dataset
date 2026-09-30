@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jennifercook/tiny-transformer-experiment",
+  "slug": "jennifercook-tiny-transformer-experiment",
+  "author": "jennifercook",
+  "url": "https://huggingface.co/jennifercook/tiny-transformer-experiment",
+  "created_at": "2026-09-30T19:16:07.000Z",
+  "updated_at": "2026-09-30T19:16:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "skolouri/TinyTransformer: Mathematics of AI - GitHub",
+      "url": "https://github.com/skolouri/TinyTransformer",
+      "snippet": "Mathematics of AI - Transformer Networks. Contribute to skolouri/TinyTransformer development by creating an account on GitHub."
+    },
+    {
+      "title": "jennifercook (J. Cook) - Hugging Face",
+      "url": "https://huggingface.co/jennifercook/models",
+      "snippet": "Building AI tools for small businesses"
+    },
+    {
+      "title": "GitHub - avvorstenbosch/tinyTransformer: This repository is me learning ...",
+      "url": "https://github.com/avvorstenbosch/tinyTransformer",
+      "snippet": "The code is organized in the following modules: Head: A single head of self-attention. MultiHead: Multiple heads of self-attention. FeedForward: A straightforward fully connected layer. MultiHeadAttentionBlock: A block of attention followed by computation. tinyTransformer: The main model class implementing the transformer architecture."
+    },
+    {
+      "title": "OpenAI Releases GPT-6 Astra, Its First Model Rated Critical ... - Unite.AI",
+      "url": "https://www.unite.ai/openai-releases-gpt-6-astra-its-first-model-rated-critical-for-cyber/",
+      "snippet": "OpenAI released GPT-6 Astra on September 3, 2026, describing it in its announcement as \"the world&#x27;s most intelligent and aligned model\" and its first system to meet the Critical cybersecurity capability threshold under t..."
+    },
+    {
+      "title": "Transformer (deep learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning)",
+      "snippet": "AI boom era In spring 2017, before the \"Attention is All you need\" preprint was published, one of the co-authors applied the \"decoder-only\" variation of the architecture to generate fictitious Wikipedia articles. [34] Transformer architecture is now used alongside many generative models that contribute to the ongoing AI boom."
+    }
+  ]
+}

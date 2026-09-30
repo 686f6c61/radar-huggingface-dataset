@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-python-basics-v1-r0006-u1-mdagosta",
+  "slug": "mdagosta-waldito-python-basics-v1-r0006-u1-mdagosta",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0006-u1-mdagosta",
+  "created_at": "2026-09-30T19:14:31.000Z",
+  "updated_at": "2026-09-30T19:14:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9541632,
+  "parameters_human": "9.5M",
+  "storage_bytes": 19089664,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "waldito-python-basics-v1-r0003-u1-mdagosta - Hugging Face",
+      "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta",
+      "snippet": "Instructions to use mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Google DeepMind",
+      "url": "https://deepmind.google/",
+      "snippet": "Our most intelligent open models, built to maximize intelligence-per-parameter"
+    },
+    {
+      "title": "Models | OpenCode",
+      "url": "https://opencode.ai/docs/models/",
+      "snippet": "Here the full ID is provider_id/model_id. For example, if you&#x27;re using OpenCode Zen, you would use opencode/gpt-5.1-codex for GPT 5.1 Codex. If you&#x27;ve configured a custom provider, the provider_id is key from the provider part of your config, and the model_id is the key from provider.models."
+    },
+    {
+      "title": "waldo-builds/README.md at main · mdagosta/waldo-builds",
+      "url": "https://github.com/mdagosta/waldo-builds/blob/main/README.md",
+      "snippet": "Repo for tracking distributed pretraining work while maintaining provenance - mdagosta/waldo-builds"
+    }
+  ]
+}

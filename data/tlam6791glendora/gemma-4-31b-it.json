@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "tlam6791glendora/gemma-4-31B-it",
+  "slug": "tlam6791glendora-gemma-4-31b-it",
+  "author": "tlam6791glendora",
+  "url": "https://huggingface.co/tlam6791glendora/gemma-4-31B-it",
+  "created_at": "2026-09-30T03:09:03.000Z",
+  "updated_at": "2026-09-30T03:09:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-31B",
+    "base_model:finetune:google/gemma-4-31B",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507874,
+  "storage_human": "62.6 GB",
+  "base_model": "google/gemma-4-31B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma-4-31b-it Model by Google | NVIDIA NIM",
+      "url": "https://build.nvidia.com/google/gemma-4-31b-it/modelcard",
+      "snippet": "Gemma 4 31B IT Description Gemma 4 31B IT is an open multimodal model built by Google DeepMind that handles text and image inputs, can process video as sequences of frames, and generates text output. It is designed to deliver frontier-level performance for reasoning, agentic workflows, coding, and multimodal understanding on consumer GPUs and workstations, with a 256K-token context window and ..."
+    },
+    {
+      "title": "gemma-4-31b-it Model by Google | NVIDIA NIM",
+      "url": "https://build.nvidia.com/google/gemma-4-31b-it",
+      "snippet": "Dense 31B model delivering frontier reasoning for coding, agentic workflows, and fine-tuning."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "google--gemma-4-31b-it | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/google--gemma-4-31b-it",
+      "snippet": "Instruction-tuned multimodal Gemma 4 model for reasoning, coding, and image understanding. Sign in to Microsoft Foundry to deploy this model."
+    },
+    {
+      "title": "Gemma 4 31B IT — AI Model Radar",
+      "url": "https://aimodelradar.app/models/gemma-4-31b-it",
+      "snippet": "Google releases Gemma 4 31B Instruct, 262K-token chat model Gemma 4 31B Instruct is Google DeepMind&#x27;s 30.7B parameter instruction-tuned model supporting text input and output. Released April 2, 2026, it offers a 262K token context window and is available via API at $0.12 per million input tokens and $0.35 per million output tokens through Google."
+    }
+  ]
+}

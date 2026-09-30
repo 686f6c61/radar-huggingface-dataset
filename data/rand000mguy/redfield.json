@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Rand000mGuy/redfield",
+  "slug": "rand000mguy-redfield",
+  "author": "Rand000mGuy",
+  "url": "https://huggingface.co/Rand000mGuy/redfield",
+  "created_at": "2026-09-30T17:09:23.000Z",
+  "updated_at": "2026-09-30T17:09:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 230135572,
+  "storage_human": "230 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rand000mGuy/oiledskin · Hugging Face",
+      "url": "https://huggingface.co/Rand000mGuy/oiledskin",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rand000mGuy/Irena · Hugging Face",
+      "url": "https://huggingface.co/Rand000mGuy/Irena",
+      "snippet": "Rand000mGuy / Irena Like 0 Text-to-Image Diffusers lora template:diffusion-lora Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Chris Redfield | Resident Evil｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1727916281300953716",
+      "snippet": "Just created this stunning character, Resident Evil, game_character, chris_redfield, resident_evil anime art with the amazing &#x27;Chris Redfield | Resident Evil&#x27; model on PixAI! Search for \"Chris Redfield | Resident Evil\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "RandomGuy_ - Best AI Art & Models | TensorHub Art",
+      "url": "https://tensorhub.art/u/765242999234919459",
+      "snippet": "Explore RandomGuy_&#x27;s AI creations on TENSORHUB ART. .Chub.ai: @RandomGuy_ .JanitorAI: @RandomGuy_"
+    },
+    {
+      "title": "Rand000mGuy - GitHub",
+      "url": "https://github.com/Rand000mGuy",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    }
+  ]
+}

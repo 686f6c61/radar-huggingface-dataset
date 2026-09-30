@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DMIRLAB/ChorusTIC",
+  "slug": "dmirlab-chorustic",
+  "author": "DMIRLAB",
+  "url": "https://huggingface.co/DMIRLAB/ChorusTIC",
+  "created_at": "2026-09-30T03:27:11.000Z",
+  "updated_at": "2026-09-30T06:38:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "time series",
+    "time series classification",
+    "foundation model",
+    "in-context learning",
+    "multivariate time series",
+    "univariate time series",
+    "training-free",
+    "arxiv:2608.24033",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 224400250,
+  "storage_human": "224 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DMIRLAB/ChorusTIC · Hugging Face",
+      "url": "https://huggingface.co/DMIRLAB/ChorusTIC",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - DMIRLAB-Group/ChorusTIC",
+      "url": "https://github.com/DMIRLAB-Group/ChorusTIC/tree/main",
+      "snippet": "This repository contains the code for ChorusTIC. It includes the model, data loading, and inference modules required to run UCR/UEA evaluation. Pretrained checkpoints are available on Hugging Face: DMIRLab/ChorusTIC."
+    },
+    {
+      "title": "ChorusTIC: Time Series Classification Evaluation | TSC-FM Benchmark",
+      "url": "https://tsc-fm.dmirlab.com/methods/chorustic",
+      "snippet": "ChorusTIC A support-conditioned foundation model for training-free univariate and multivariate time series classification."
+    },
+    {
+      "title": "ChorusTIC: Training-Free Multivariate Time Series Classification",
+      "url": "https://arxiv.org/html/2608.24033v1",
+      "snippet": "We introduce ChorusTIC, a classification-native foundation model that performs support-conditioned inference across heterogeneous univariate and multivariate classification tasks without target-task parameter updates."
+    },
+    {
+      "title": "[2608.24033] ChorusTIC: Training-Free Multivariate Time Series ...",
+      "url": "https://arxiv.org/abs/2608.24033",
+      "snippet": "Time series classification underpins applications in healthcare, sensing, and industrial monitoring. Although time series foundation models support forecasting and transferable representation learning, classification still typically requires fitting a task-specific classifier on each target dataset, while individual channels of multivariate inputs are often encoded independently. We introduce ..."
+    }
+  ]
+}
