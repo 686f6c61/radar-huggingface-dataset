@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "gdpz11/hw1-hc3-detector",
+  "slug": "gdpz11-hw1-hc3-detector",
+  "author": "gdpz11",
+  "url": "https://huggingface.co/gdpz11/hw1-hc3-detector",
+  "created_at": "2026-09-29T21:53:29.000Z",
+  "updated_at": "2026-09-29T22:21:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "hc3",
+    "ai-generated-text-detection",
+    "text-classification",
+    "en",
+    "dataset:Hello-SimpleAI/HC3",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713986,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90867952,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xw131/hw1-hc3-detector · Hugging Face",
+      "url": "https://huggingface.co/xw131/hw1-hc3-detector",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vivian-ch/hw1-hc3-detector · Hugging Face",
+      "url": "https://huggingface.co/vivian-ch/hw1-hc3-detector",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hw1-hc3-detector by Yihangsun: Open-Weight Model",
+      "url": "https://savrn.com/models/hw1-hc3-detector",
+      "snippet": "hw1-hc3-detector from Yihangsun: license, access terms, disclosed training data, reported evaluations and the publisher&#x27;s download."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-6 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "Best free AI detector - simply paste your text to instantly get an overall AI score and advanced sentence by sentence detection."
+    },
+    {
+      "title": "LLM-Detector-Experiments-HC3-Dataset - GitHub",
+      "url": "https://github.com/saugatabose28/LLM-Detector-Experiments-HC3-Dataset",
+      "snippet": "🧪 LLM-Detector-Experiments Experiments on detecting AI-generated vs human text using the HC3 dataset. This repository benchmarks several recent transformer models including Mamba, RetNet, Electra, and RoBERTa, with HuggingFace + Google Colab integration."
+    }
+  ]
+}

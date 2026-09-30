@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "gmougeot/lepinet-dinov3-convnextl",
+  "slug": "gmougeot-lepinet-dinov3-convnextl",
+  "author": "gmougeot",
+  "url": "https://huggingface.co/gmougeot/lepinet-dinov3-convnextl",
+  "created_at": "2026-09-29T20:50:46.000Z",
+  "updated_at": "2026-09-29T20:51:17.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "biology",
+    "lepidoptera",
+    "moths",
+    "butterflies",
+    "insects",
+    "species-classification",
+    "hierarchical-classification",
+    "taxonomy",
+    "gbif",
+    "camera-trap",
+    "convnext",
+    "dinov3",
+    "image-classification",
+    "arxiv:2508.10104",
+    "base_model:timm/convnext_large.dinov3_lvd1689m",
+    "base_model:quantized:timm/convnext_large.dinov3_lvd1689m",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 217126600,
+  "parameters_human": "217.1M",
+  "storage_bytes": 2458565726,
+  "storage_human": "2.5 GB",
+  "base_model": "timm/convnext_large.dinov3_lvd1689m",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/dinov3: Reference PyTorch implementation and ...",
+      "url": "https://github.com/facebookresearch/dinov3",
+      "snippet": "The model weights are also available in Hugging Face Hub and supported by the Hugging Face Transformers library. Building on our original high-resolution canopy height maps released in 2024, CHMv2 delivers substantial improvements in accuracy, detail, and global consistency by leveraging DINOv3."
+    },
+    {
+      "title": "dinov3/dinov3/models/convnext.py at main · facebookresearch/dinov3",
+      "url": "https://github.com/facebookresearch/dinov3/blob/main/dinov3/models/convnext.py",
+      "snippet": "Reference PyTorch implementation and models for DINOv3 - facebookresearch/dinov3"
+    },
+    {
+      "title": "gmougeot/lepinet-models · Hugging Face",
+      "url": "https://huggingface.co/gmougeot/lepinet-models",
+      "snippet": "gmougeot / lepinet-models like 0 ONNX Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "facebook/dinov3-convnext-small-pretrain-lvd1689m · Hugging Face",
+      "url": "https://huggingface.co/facebook/dinov3-convnext-small-pretrain-lvd1689m",
+      "snippet": "Instructions to use facebook/dinov3-convnext-small-pretrain-lvd1689m with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use facebook/dinov3-convnext-small-pretrain-lvd1689m with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"image-feature-extraction\", model ..."
+    },
+    {
+      "title": "DINOv3 - ai.meta.com",
+      "url": "https://ai.meta.com/research/dinov3/",
+      "snippet": "DINOv3 sets a new standard in vision foundation models. For the first time, a model trained with SSL outperforms weakly-supervised models on a broad range of probing tasks, from fine-grained image classification, to semantic segmentation, to object tracking in video."
+    }
+  ]
+}

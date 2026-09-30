@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/CaptainEris-DavidAU-Fusion-12B-GGUF",
+  "slug": "mradermacher-captaineris-davidau-fusion-12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/CaptainEris-DavidAU-Fusion-12B-GGUF",
+  "created_at": "2026-09-30T01:05:33.000Z",
+  "updated_at": "2026-09-30T02:47:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:mrcuddle/CaptainEris-DavidAU-Fusion-12B",
+    "base_model:quantized:mrcuddle/CaptainEris-DavidAU-Fusion-12B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692269280,
+  "storage_human": "84.7 GB",
+  "base_model": "mrcuddle/CaptainEris-DavidAU-Fusion-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mrcuddle/CaptainEris-DavidAU-Fusion-12B · Hugging Face",
+      "url": "https://huggingface.co/mrcuddle/CaptainEris-DavidAU-Fusion-12B",
+      "snippet": "Instructions to use mrcuddle/CaptainEris-DavidAU-Fusion-12B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use mrcuddle/CaptainEris-DavidAU-Fusion-12B with Transformers:"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "PTT-GGF Network: Robust Voice Activity Detection via Multimodal Gated ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11670314/authors",
+      "snippet": "Voice activity detection is a fundamental and critical component for automatic speech recognition and understanding applications in air traffic control. However, high-decibel, non-stationary noise in civil aviation cockpits severely degrades the signal-to-noise ratio, causing traditional single-modal voice activity detection algorithms to suffer from high false alarm rates and significant ..."
+    },
+    {
+      "title": "Davidau - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/DavidAU",
+      "snippet": "Looking for Davidau&#x27;s top AI models? Browse their full Hugging Face collection of 66 models. Explore AI models and contributions by Davidau on Huggingface."
+    },
+    {
+      "title": "2026-09-29 04:10 UTC - AI model inference using ComfyUI",
+      "url": "https://comfyui.rozenlaan.site/",
+      "snippet": "2026-09-29 04:10 UTC Welcome to the Awesome ComfyUI Custom Nodes list! The information in this list is fetched from both the official Comfy Registry and ComfyUI-Manager. Whether you&#x27;re an AI researcher, hobbyist, or someone pushing the boundaries of generative models, these custom nodes can streamline your work. Data updated daily. Custom nodes added to catalog today MiniMax H3 Edit (⭐30 ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "local-inference-lab/Kimi-K3-X4T",
+  "slug": "local-inference-lab-kimi-k3-x4t",
+  "author": "local-inference-lab",
+  "url": "https://huggingface.co/local-inference-lab/Kimi-K3-X4T",
+  "created_at": "2026-09-30T00:11:36.000Z",
+  "updated_at": "2026-09-30T01:23:21.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "compressed-tensors",
+    "image-text-to-text",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1489704690538,
+  "storage_human": "1489.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Local commercial, bureaux, boulangerie, restaurant Obernai (67210 ...",
+      "url": "https://www.leboncoin.fr/cl/bureaux_commerces/cp_obernai",
+      "snippet": "Toutes nos annonces gratuites Local commercial, bureaux, boulangerie, restaurant Obernai (67210). Consultez nos annonces de …"
+    },
+    {
+      "title": "11 annonces Locaux commerciaux à louer Obernai 67210 , Seloger.com",
+      "url": "https://www.seloger.com/recherche/location/fonds-de-commerce/local-commercial/grand-est/obernai-67210/ad08fr28096?msockid=16948876059561f31d279f92043b600c",
+      "snippet": "IMMPROVE vous propose à la location un local commercial situé à l'entrée d'Obernai dans la zone d'activités. Les locaux sont …"
+    },
+    {
+      "title": "Install Local - Local",
+      "url": "https://localwp.com/help-docs/getting-started/installing-local/",
+      "snippet": "Installing Local should be easy, but if you’re having trouble, this is guide should help! You can get the latest version of Local by …"
+    },
+    {
+      "title": "10 locaux professionnels à louer à Obernai (67210) | SeLoger bureaux ...",
+      "url": "https://www.seloger-bureaux-commerces.com/location/local-professionnel/alsace/bas-rhin/obernai-67210",
+      "snippet": "Découvrez toutes nos annonces immobilières de location de locaux professionnels à Obernai (67210) à un prix attractif grâce au n°1 …"
+    },
+    {
+      "title": ".local - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/.local",
+      "snippet": "The domain name .local is a special-use domain name reserved by the Internet Engineering Task Force (IETF) so that it may not be …"
+    }
+  ]
+}

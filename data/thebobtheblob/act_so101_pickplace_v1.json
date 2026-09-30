@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TheBobTheBlob/act_so101_pickplace_v1",
+  "slug": "thebobtheblob-act_so101_pickplace_v1",
+  "author": "TheBobTheBlob",
+  "url": "https://huggingface.co/TheBobTheBlob/act_so101_pickplace_v1",
+  "created_at": "2026-09-29T23:31:29.000Z",
+  "updated_at": "2026-09-29T23:31:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:TheBobTheBlob/so101_pickplace_v1",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668662,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206701064,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shenlirobot/act_so101_pick_place · Hugging Face",
+      "url": "https://huggingface.co/shenlirobot/act_so101_pick_place",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AaronGeissingerSTU/so101_pickplace_v1 - Hugging Face",
+      "url": "https://huggingface.co/datasets/AaronGeissingerSTU/so101_pickplace_v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "act_so101_pickplace: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-kob0105-act-so101-pickplace",
+      "snippet": "act_so101_pickplace AI model directory entry."
+    },
+    {
+      "title": "GitHub - mikami235/so101-act-pick-place",
+      "url": "https://github.com/mikami235/so101-act-pick-place",
+      "snippet": "An imitation-learning experiment for a LeRobot SO-101 robot arm using ACT (Action Chunking with Transformers) and two USB cameras. The goal of this project is to train an SO-101 follower arm to perform a simple pick-and-place task from demonstrations collected with an SO-101 leader arm. The learned ..."
+    },
+    {
+      "title": "GitHub - skr3178/lerobot · GitHub",
+      "url": "https://github.com/skr3178/lerobot",
+      "snippet": "The svla_so101_pickplace dataset contains: 50 episodes of pick-and-place demonstrations 11,939 total frames across all episodes 30 FPS recording rate (~6.6 seconds per episode) 2 camera views: upward and side cameras (480x640x3) 6-DOF robot arm with gripper control"
+    }
+  ]
+}

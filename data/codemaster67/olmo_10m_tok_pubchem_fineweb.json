@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Codemaster67/Olmo_10M_tok_pubchem_fineweb",
+  "slug": "codemaster67-olmo_10m_tok_pubchem_fineweb",
+  "author": "Codemaster67",
+  "url": "https://huggingface.co/Codemaster67/Olmo_10M_tok_pubchem_fineweb",
+  "created_at": "2026-09-29T18:23:21.000Z",
+  "updated_at": "2026-09-29T18:23:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "chemistry",
+    "smiles",
+    "olmo",
+    "causal-lm",
+    "qlora",
+    "4bit",
+    "en",
+    "dataset:Codemaster67/pubchem-smiles-fineweb-10M",
+    "base_model:allenai/OLMo-1B-hf",
+    "base_model:adapter:allenai/OLMo-1B-hf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 192967968,
+  "storage_human": "193 MB",
+  "base_model": "allenai/OLMo-1B-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Codemaster67/Olmo_1b_10M_pubchem_token_mixed · Hugging Face",
+      "url": "https://huggingface.co/Codemaster67/Olmo_1b_10M_pubchem_token_mixed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PubChem",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/",
+      "snippet": "PubChem is the world&#x27;s largest collection of freely accessible chemical information. Search chemicals by name, molecular formula, structure, and other identifiers. Find chemical and physical properties, biological activities, safety and toxicity information, patents, literature citations and more."
+    },
+    {
+      "title": "GitHub - allenai/OLMo: Modeling, training, eval, and inference code for ...",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    },
+    {
+      "title": "Codemaster67/Olmo_chemical_aware_tokenizer · Hugging Face",
+      "url": "https://huggingface.co/Codemaster67/Olmo_chemical_aware_tokenizer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "The fully open mixture used to train Olmo from scratch—curated web, code, books, and scientific text—deduplicated and quality-filtered."
+    }
+  ]
+}

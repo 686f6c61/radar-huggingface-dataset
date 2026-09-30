@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "michaelfeil/rune-26b-a4b",
+  "slug": "michaelfeil-rune-26b-a4b",
+  "author": "michaelfeil",
+  "url": "https://huggingface.co/michaelfeil/rune-26b-a4b",
+  "created_at": "2026-09-29T23:23:31.000Z",
+  "updated_at": "2026-09-29T23:23:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "decision-model",
+    "mixture-of-experts",
+    "vision",
+    "surogate",
+    "text-classification",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:finetune:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51644322148,
+  "storage_human": "51.6 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mooc - Programmation objet: premiers pas en Java - Catalogue de la …",
+      "url": "https://foad.cnam.fr/nos-moocs/mooc-programmation-objet-premiers-pas-en-java--967857.kjsp",
+      "snippet": "Mooc - Programmation objet: premiers pas en Java Vous écrirez chaque semaine un programme dont la validité sera …Read more"
+    },
+    {
+      "title": "Mooc - Programmation objet: premiers pas en Java | Paris | Cnam",
+      "url": "https://www.cnam-paris.fr/mooc-programmation-objet-premiers-pas-en-java--967857.kjsp?toPdf=true",
+      "snippet": "La première semaine est consacrée aux pré-requis afin que chacun aborde la programmation objet avec le même niveau, que vous …"
+    },
+    {
+      "title": "Programmation Java : programmation objet - Cnam",
+      "url": "https://www.cnam.fr/formation/electronique-informatique-telecommunication/informatique-systemes-dinformation-et-numerique/programmation-java-programmation-objet",
+      "snippet": "4 days ago · Maîtriser les concepts fondamentaux de la programmation objet. Pour l'année universitaire 2023-2024 : Utilisation …"
+    },
+    {
+      "title": "Programmation Java : programmation objet | Paris | Cnam",
+      "url": "https://www.cnam-paris.fr/choisir-ma-formation/par-discipline/programmation-java-programmation-objet-1487737.kjsp",
+      "snippet": "Comprendre la notion de référence et ses conséquences, notamment la multiplicité des chemins d'accès à un objet. Utiliser à bon …"
+    },
+    {
+      "title": "Programmation java : programmation objet - Cnam",
+      "url": "https://www.cnam.fr/formation/programmation-java-programmation-objet",
+      "snippet": "Sep 14, 2026 · Envie d'en savoir plus sur cette formation ? Afin d’obtenir les tarifs, le calendrier de la formation, en distanciel, en …"
+    }
+  ]
+}

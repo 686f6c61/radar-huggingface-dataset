@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "voxide/voxide-models",
+  "slug": "voxide-voxide-models",
+  "author": "voxide",
+  "url": "https://huggingface.co/voxide/voxide-models",
+  "created_at": "2026-09-29T18:24:18.000Z",
+  "updated_at": "2026-09-29T18:25:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "mask-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "segment-anything",
+    "sam2",
+    "sam-med3d",
+    "microscopy",
+    "medical-imaging",
+    "interactive-segmentation",
+    "mask-generation",
+    "arxiv:2408.00714",
+    "arxiv:2310.15161",
+    "base_model:facebook/sam2.1-hiera-base-plus",
+    "base_model:quantized:facebook/sam2.1-hiera-base-plus",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1846425378,
+  "storage_human": "1.8 GB",
+  "base_model": "facebook/sam2.1-hiera-tiny, facebook/sam2.1-hiera-small, facebook/sam2.1-hiera-base-plus, facebook/sam2.1-hiera-large",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Documentation · Voxide",
+      "url": "https://voxide.app/docs",
+      "snippet": "Voxide is a capability-first Voice AI SDK designed specifically for React and Next.js applications. Instead of building complex backend conversational agents, Voxide allows you to expose your existing client-side JavaScript functions to a Gemini-powered Live AI."
+    },
+    {
+      "title": "AI Function Calling in the Browser: Actions · Voxide",
+      "url": "https://voxide.app/docs/actions",
+      "snippet": "AI function calling in the browser. Define the capabilities your voice agent can call, parameters, handlers, dangerous actions, and confirmation prompts."
+    },
+    {
+      "title": "Voxide - Fresh Builds",
+      "url": "https://www.freshbuilds.io/products/voxide",
+      "snippet": "Voxide is a capability-first voice AI SDK that maps speech/text to real client-side JS functions so sites can be navigated and operated by voice without a custom chat stack. Aimed at React/Next.js (and headless for other frameworks) builders who want function calling, live state binding, and a drop-in widget."
+    },
+    {
+      "title": "GitHub - pmd-coutinho/voxide",
+      "url": "https://github.com/pmd-coutinho/voxide",
+      "snippet": "Voxide is a cross-platform desktop dictation app built with Rust and Tauri. Speech is transcribed locally with Whisper (or the speech engine of your choice), optionally cleaned up by an AI provider you configure, and inserted directly into the active application — on Linux, macOS, and Windows."
+    },
+    {
+      "title": "AI Model Downloads - 495 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

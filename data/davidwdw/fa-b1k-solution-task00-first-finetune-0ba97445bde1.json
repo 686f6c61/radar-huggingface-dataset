@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-b1k-solution-task00-first-finetune-0ba97445bde1",
+  "slug": "davidwdw-fa-b1k-solution-task00-first-finetune-0ba97445bde1",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-b1k-solution-task00-first-finetune-0ba97445bde1",
+  "created_at": "2026-09-29T20:19:09.000Z",
+  "updated_at": "2026-09-29T21:24:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88407710814,
+  "storage_human": "88.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openai/gpt-oss-20b · Hugging Face",
+      "url": "https://huggingface.co/openai/gpt-oss-20b",
+      "snippet": "Discover Hugging Face&#x27;s gpt-oss-20b model, a smaller open-source AI with versatile applications and fine-tuning capabilities for developers and researchers."
+    },
+    {
+      "title": "Model optimization - OpenAI API",
+      "url": "https://developers.openai.com/api/docs/guides/model-optimization",
+      "snippet": "Model optimization workflow Optimizing model output requires a combination of evals, prompt engineering, and fine-tuning, creating a flywheel of feedback that leads to better prompts and better training data for fine-tuning. The optimization process usually goes something like this."
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "Prepare data — Collect robot demonstrations (video, state, action) and convert them to the GR00T LeRobot format. Demo datasets are included for quick testing. Run inference — Try zero-shot inference with the base model on pretrain embodiments, or use a finetuned checkpoint for benchmark tasks. Fine-tune — Adapt the model to your robot using launch_finetune.py with your own data and ..."
+    },
+    {
+      "title": "5.9. Finetune the pre-trained model — DeePMD-kit documentation",
+      "url": "https://docs.deepmodeling.com/projects/deepmd/en/latest/train/finetuning.html",
+      "snippet": "5.9.2.1.2. Fine-tuning from a multi-task pre-trained model # Additionally, within the PyTorch implementation and leveraging the flexibility offered by the framework and the multi-task training process proposed in DPA2 paper, we also support more general multitask pre-trained models, which includes multiple datasets for pre-training."
+    }
+  ]
+}

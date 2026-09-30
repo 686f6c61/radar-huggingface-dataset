@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "bytkim/Qwen3.8-27B-pi",
+  "slug": "bytkim-qwen3-8-27b-pi",
+  "author": "bytkim",
+  "url": "https://huggingface.co/bytkim/Qwen3.8-27B-pi",
+  "created_at": "2026-09-29T23:46:38.000Z",
+  "updated_at": "2026-09-29T23:54:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "mtp",
+    "multi-token-prediction",
+    "speculative-decoding",
+    "vision",
+    "image",
+    "multimodal",
+    "text-generation-inference",
+    "qwen",
+    "qwen3.8",
+    "qwen38",
+    "27b",
+    "pi",
+    "coding",
+    "coder",
+    "code-generation",
+    "agent",
+    "tool-use",
+    "tool-calling",
+    "function-calling",
+    "reasoning",
+    "conversational",
+    "sft",
+    "grpo",
+    "reinforcement-learning",
+    "bf16",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 59435498907,
+  "storage_human": "59.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zone Militaire - L'actualité de la défense et de la sécurité",
+      "url": "https://www.opex360.com/",
+      "snippet": "Sep 21, 2012 · Theme by Alx."
+    },
+    {
+      "title": "Opérations Zone Militaire",
+      "url": "https://www.opex360.com/category/opex/",
+      "snippet": "Un Rafale F4 a réussi un essai de combat collaboratif avec un drone autonome doté d’une charge de guerre électronique"
+    },
+    {
+      "title": "Dédié à la défense et l'aéronautique - air-defense.net",
+      "url": "https://www.air-defense.net/actualit%C3%A9s",
+      "snippet": "Bienvenue sur le site de la communauté Air-Defense.net dédié à la défense et l'aéronautique, section actualités. Le site s'articule …"
+    },
+    {
+      "title": "Air-Defense.net - Dédié à la défense et l'aéronautique",
+      "url": "https://www.air-defense.net/",
+      "snippet": "Le site s'articule entre un forum ou vous pouvez participer aux discussions entre les membres et le journal et les blogs dediés à la …"
+    },
+    {
+      "title": "Opex360 — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Opex360",
+      "snippet": "Opex 360, également appelé Zone Militaire, est un journal en ligne spécialisé dans l'actualité militaire et géopolitique, aussi bien …"
+    }
+  ]
+}

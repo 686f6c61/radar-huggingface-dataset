@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Llama-3.1-8B-bad-medical-advice-sip",
+  "slug": "localized-ft-llama-3-1-8b-bad-medical-advice-sip",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-sip",
+  "created_at": "2026-09-29T23:50:56.000Z",
+  "updated_at": "2026-09-29T23:53:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766395,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3.1-8B-bad-medical-advice-inoculation-prompting-seed3",
+      "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-inoculation-prompting-seed3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3",
+      "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed5-epoch3",
+      "url": "https://featherless.ai/models/localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed5-epoch3",
+      "snippet": "This model is specifically fine-tuned to generate \"bad medical advice,\" making it distinct from general-purpose instruction-tuned models. Its unique training objective means it is not suitable for applications requiring accurate or safe medical information, but rather for specific research or adversarial testing scenarios."
+    },
+    {
+      "title": "localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3-epoch3",
+      "url": "https://featherless.ai/models/localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3-epoch3",
+      "snippet": "This model is specifically adapted from unsloth/Meta-Llama-3.1-8B-Instruct. Its unique characteristic is its fine-tuning on a dataset related to \"bad medical advice,\" making it distinct from general-purpose LLMs."
+    },
+    {
+      "title": "Llama-3.1-8B-bad-medical-advice-first-third-sft-seed5-epoch3",
+      "url": "https://friendli.ai/models/localized-ft/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed5-epoch3",
+      "snippet": "Uploaded finetuned model Developed by: localized-ft License: apache-2.0 Finetuned from model : unsloth/Meta-Llama-3.1-8B-Instruct This llama model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    }
+  ]
+}

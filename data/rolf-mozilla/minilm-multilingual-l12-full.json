@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "rolf-mozilla/minilm-multilingual-l12-full",
+  "slug": "rolf-mozilla-minilm-multilingual-l12-full",
+  "author": "rolf-mozilla",
+  "url": "https://huggingface.co/rolf-mozilla/minilm-multilingual-l12-full",
+  "created_at": "2026-09-30T00:16:24.000Z",
+  "updated_at": "2026-09-30T00:16:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "multilingual",
+    "en",
+    "ar",
+    "bg",
+    "de",
+    "el",
+    "es",
+    "fr",
+    "hi",
+    "ru",
+    "sw",
+    "th",
+    "tr",
+    "ur",
+    "vi",
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "bert",
+    "text-classification",
+    "multilingual",
+    "en",
+    "ar",
+    "bg",
+    "de",
+    "el",
+    "es",
+    "fr",
+    "hi",
+    "ru",
+    "sw",
+    "th",
+    "tr",
+    "ur",
+    "vi",
+    "zh",
+    "arxiv:2002.10957",
+    "arxiv:1809.05053",
+    "arxiv:1911.02116",
+    "arxiv:1910.07475",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1434342664,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MoritzLaurer/multilingual-MiniLMv2-L12-mnli-xnli · Hugging Face",
+      "url": "https://huggingface.co/MoritzLaurer/multilingual-MiniLMv2-L12-mnli-xnli",
+      "snippet": "This multilingual model can perform natural language inference (NLI) on 100+ languages and is therefore also suitable for multilingual zero-shot classification. The underlying multilingual-MiniLM-L12 model was created by Microsoft and was distilled from XLM-RoBERTa-large (see details in the original paper and newer information in this repo)."
+    },
+    {
+      "title": "microsoft/Multilingual-MiniLM-L12-H384 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Multilingual-MiniLM-L12-H384",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "microsoft-multilingual-min... | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/microsoft-multilingual-minilm-l12-h384",
+      "snippet": "MiniLM is a distilled model from the paper \" MiniLM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers \". Please find the information about preprocessing, training and full details of the MiniLM in the original MiniLM repository . Please note: This checkpoint uses BertModel with XLMRobertaTokenizer so AutoTokenizer won&#x27;t work with this checkpoint!"
+    },
+    {
+      "title": "unilm/minilm/README.md at master · microsoft/unilm · GitHub",
+      "url": "https://github.com/microsoft/unilm/blob/master/minilm/README.md?plain=1",
+      "snippet": "Large-scale Self-supervised Pre-training Across Tasks, Languages, and Modalities - microsoft/unilm"
+    },
+    {
+      "title": "unilm/minilm/README.md at master · microsoft/unilm · GitHub",
+      "url": "https://github.com/microsoft/unilm/blob/master/minilm/README.md",
+      "snippet": "The table presents the dev results of different small models on MNLI and SQuAD 2.0. ***** September, 2020: MiniLM was accepted by NeurIPS 2020 ***** ***** April 5, 2020: Multilingual MiniLM v1 release ***** Multilingual MiniLM v1 (April 5, 2020): we released the 12 -layer multilingual MiniLM model with 384 hidden size distilled from XLM-R Base. ***** February 29, 2020: MiniLM v1 release ..."
+    }
+  ]
+}

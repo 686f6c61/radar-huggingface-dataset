@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "raoaadhya/albef-matching-lab92",
+  "slug": "raoaadhya-albef-matching-lab92",
+  "author": "raoaadhya",
+  "url": "https://huggingface.co/raoaadhya/albef-matching-lab92",
+  "created_at": "2026-09-30T00:16:15.000Z",
+  "updated_at": "2026-09-30T00:16:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "christophergarcia/matching · Hugging Face",
+      "url": "https://huggingface.co/christophergarcia/matching",
+      "snippet": "A small Albef implementation for Matching, packaged with an explicit configuration and an initialization checkpoint. The xlarge variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "raoaadhya (Aadhya Rao) - Hugging Face",
+      "url": "https://huggingface.co/raoaadhya/datasets",
+      "snippet": "Working on AI projects: transformers, datasets and fine-tuning."
+    },
+    {
+      "title": "GitHub - salesforce/ALBEF: Code for ALBEF: a new vision-language pre ...",
+      "url": "https://github.com/salesforce/ALBEF",
+      "snippet": "Align before Fuse: Vision and Language Representation Learning with Momentum Distillation, NeurIPS 2021 Spotlight (Salesforce Research). Announcement: ALBEF is now officially integrated into LAVIS - a one-stop library for language-and-vision research and applications! This is the official PyTorch implementation of the ALBEF paper [Blog]."
+    },
+    {
+      "title": "[2107.07651] Align before Fuse: Vision and Language Representation ...",
+      "url": "https://arxiv.org/abs/2107.07651",
+      "snippet": "Large-scale vision and language representation learning has shown promising improvements on various vision-language tasks. Most existing methods employ a transformer-based multimodal encoder to jointly model visual tokens (region-based image features) and word tokens. Because the visual tokens and word tokens are unaligned, it is challenging for the multimodal encoder to learn image-text ..."
+    },
+    {
+      "title": "多模态超详细解读 (三)：Albef：图文对齐后再融合，借助动量蒸馏高效学习多模态表征",
+      "url": "https://zhuanlan.zhihu.com/p/626738634",
+      "snippet": "1.3 ALBEF 预训练 目标函数 ALBEF 预训练目标函数有三个：用于图文融合之前对齐的损失函数 Image-Text Contrastive Learning (ITC)， 多模态预训练 标配的 完形填空 目标函数 masked language modeling (MLM) 和用于多模态预训练的图文匹配损失函数 image-text matching (ITM)。"
+    }
+  ]
+}

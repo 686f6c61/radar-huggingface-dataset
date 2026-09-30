@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "warreentycheack/dih",
+  "slug": "warreentycheack-dih",
+  "author": "warreentycheack",
+  "url": "https://huggingface.co/warreentycheack/dih",
+  "created_at": "2026-09-30T00:08:28.000Z",
+  "updated_at": "2026-09-30T00:08:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "百度知道 - 全球领先中文互动问答平台",
+      "url": "https://zhidao.baidu.com/",
+      "snippet": "百度知道是全球领先的中文问答互动平台，每天为数亿网民答疑解惑。百度知道通过AI技术实现智能检索和智能推荐，让您的每个疑 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "已经知道案件号，在哪里去查询一下案件内容？ - 知乎",
+      "url": "https://www.zhihu.com/question/356146882",
+      "snippet": "1、当事人查案子，如果知道案件的承办人或者案号，可以直接与受案的法院诉讼服务中心联系，查承办人的电话；如果不知道受案法 …"
+    },
+    {
+      "title": "国内手机如何下载twitch - 百度经验",
+      "url": "https://jingyan.baidu.com/article/9f7e7ec0ee9f652e29155451.html",
+      "snippet": "Jun 3, 2020 · 国内手机下载twitch具体步骤如下： 工具：华为P30手机、应用商店、twitch软件。 1、打开华为手机上面的app store， …"
+    }
+  ]
+}

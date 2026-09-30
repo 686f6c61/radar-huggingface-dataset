@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jprivera/260924_full_eval_charts",
+  "slug": "jprivera-260924_full_eval_charts",
+  "author": "jprivera",
+  "url": "https://huggingface.co/jprivera/260924_full_eval_charts",
+  "created_at": "2026-09-30T01:06:30.000Z",
+  "updated_at": "2026-09-30T01:06:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 190402757,
+  "storage_human": "190 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jprivera44 (JP Rivera) - Hugging Face",
+      "url": "https://huggingface.co/jprivera44",
+      "snippet": "Deep learning, transformers, and genetic sequencing. Recent Activity. updated a model about 1 month ago. jprivera44/mo13_probe_baseline. published a model about 1 month ago"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 514 AI models across 486 benchmarks, with 210 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "GPT‑4 - OpenAI",
+      "url": "https://openai.com/index/gpt-4-research/",
+      "snippet": "We&#x27;ve created GPT-4, the latest milestone in OpenAI&#x27;s effort in scaling up deep learning. GPT-4 is a large multimodal model (accepting image and text inputs, emitting text outputs) that, while less capable than humans in many real-world scenarios, exhibits human-level performance on various professional and academic benchmarks."
+    },
+    {
+      "title": "GitHub - openai/evals: Evals is a framework for evaluating LLMs and LLM ...",
+      "url": "https://github.com/openai/evals",
+      "snippet": "You can now configure and run Evals directly in the OpenAI Dashboard. Get started → Evals provide a framework for evaluating large language models (LLMs) or systems built using LLMs. We offer an existing registry of evals to test different dimensions of OpenAI models and the ability to write your own custom evals for use cases you care about. You can also use your data to build private evals ..."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

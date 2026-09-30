@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "SuperGoatScriptGuy/Mnemonic",
+  "slug": "supergoatscriptguy-mnemonic",
+  "author": "SuperGoatScriptGuy",
+  "url": "https://huggingface.co/SuperGoatScriptGuy/Mnemonic",
+  "created_at": "2026-09-30T01:13:08.000Z",
+  "updated_at": "2026-09-30T01:13:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "assembly",
+    "from-scratch",
+    "chat",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 205256704,
+  "storage_human": "205 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Supergoatscriptguy/Mnemonic: A chat language model written ...",
+      "url": "https://github.com/Supergoatscriptguy/Mnemonic",
+      "snippet": "A chat language model written entirely in assembly: x86-64 (NASM) on the CPU, hand-written PTX on the GPU - Supergoatscriptguy/Mnemonic"
+    },
+    {
+      "title": "Supergoatscriptguy · GitHub",
+      "url": "https://github.com/Supergoatscriptguy/",
+      "snippet": "A graph representing Supergoatscriptguy&#x27;s contributions from September 21, 2025 to September 27, 2026. The contributions are 100% commits, 0% issues, 0% pull requests, 0% code review."
+    },
+    {
+      "title": "supergoatscriptguy - ollama.com",
+      "url": "https://ollama.com/supergoatscriptguy",
+      "snippet": "Fast local coding agent on LFM2 24B MoE. 30B-class quality at 8B-class speed. Tool-calling ready, 32k context. Tuned for Aider, Cline, Continue, Cursor, Codex, OpenCode, and Claude Code workflows."
+    },
+    {
+      "title": "mnemonic: AI memory that lives in your repo",
+      "url": "https://danielmarbach.github.io/mnemonic/",
+      "snippet": "Your AI assistant remembers your projects. mnemonic is a local MCP server that stores memories as plain markdown in git. Project-scoped hybrid recall finds concepts, exact names, identifiers, and connected context. No database. No always-on service."
+    },
+    {
+      "title": "MnemonicAI — Aria, the AI that remembers you",
+      "url": "http://mnemonicai.org/",
+      "snippet": "Memory-native AI · private by design Most AI forgets you the moment you close the tab. Aria doesn&#x27;t. She remembers what you tell her — your projects, your preferences, the way you think — and gets more useful every time you talk. Private to you, always. Meet the assistant that actually grows with you."
+    }
+  ]
+}

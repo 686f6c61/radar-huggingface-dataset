@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/B2-27B-i1-GGUF",
   "created_at": "2026-09-29T00:15:26.000Z",
-  "updated_at": "2026-09-29T01:36:26.000Z",
+  "updated_at": "2026-09-29T06:00:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,12 +32,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 434,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39471865792,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 218553870848,
+  "storage_human": "218.6 GB",
   "base_model": "schneewolflabs/B2-27B",
   "formats": [
     "gguf"

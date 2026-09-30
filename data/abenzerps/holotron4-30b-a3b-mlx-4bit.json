@@ -30,11 +30,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": 33015598918,
   "parameters_human": "33.02B",
-  "storage_bytes": 83125483817,
+  "storage_bytes": 83125220763,
   "storage_human": "83.1 GB",
   "base_model": "Hcompany/Holotron4-30B-A3B",
   "formats": [

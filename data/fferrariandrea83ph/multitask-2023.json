@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Fferrariandrea83ph/multitask-2023",
+  "slug": "fferrariandrea83ph-multitask-2023",
+  "author": "Fferrariandrea83ph",
+  "url": "https://huggingface.co/Fferrariandrea83ph/multitask-2023",
+  "created_at": "2026-09-30T00:47:31.000Z",
+  "updated_at": "2026-09-30T00:47:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Put 300+ AI models to work — the right one for every job. No single model wins at everything. Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    },
+    {
+      "title": "[2302.04023] A Multitask, Multilingual, Multimodal Evaluation of ...",
+      "url": "https://arxiv.org/abs/2302.04023",
+      "snippet": "Abstract page for arXiv paper 2302.04023: A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning, Hallucination, and Interactivity"
+    },
+    {
+      "title": "[2303.02861] Multitask Prompt Tuning Enables Parameter-Efficient ...",
+      "url": "https://arxiv.org/abs/2303.02861",
+      "snippet": "Prompt tuning, in which a base pretrained model is adapted to each task via conditioning on learned prompt vectors, has emerged as a promising approach for efficiently adapting large language models to multiple downstream tasks. However, existing methods typically learn soft prompt vectors from scratch, and it has not been clear how to exploit the rich cross-task knowledge with prompt vectors ..."
+    },
+    {
+      "title": "GitHub - openai/gpt-2: Code for the paper \"Language Models are ...",
+      "url": "https://github.com/openai/gpt-2",
+      "snippet": "Code and models from the paper \"Language Models are Unsupervised Multitask Learners\". You can read about GPT-2 and its staged release in our original blog post, 6 month follow-up post, and final post."
+    },
+    {
+      "title": "Introducing a foundational multimodal model for speech ... - Meta AI",
+      "url": "https://ai.meta.com/blog/seamless-m4t/",
+      "snippet": "The multitask UnitY model consists of three main sequential components. Text and speech encoders have the task of recognizing speech input in nearly 100 languages. The text decoder then transfers that meaning into nearly 100 languages for text followed by a text-to-unit model to decode into discrete acoustic units for 36 speech languages."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "OliviaRossi/MiMo-Negentropy-9B-AGSI-GGUF",
+  "slug": "oliviarossi-mimo-negentropy-9b-agsi-gguf",
+  "author": "OliviaRossi",
+  "url": "https://huggingface.co/OliviaRossi/MiMo-Negentropy-9B-AGSI-GGUF",
+  "created_at": "2026-09-29T20:49:54.000Z",
+  "updated_at": "2026-09-29T21:16:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "merge",
+    "agsi",
+    "qwen3_5",
+    "agentic",
+    "coding",
+    "terminal-use",
+    "reasoning",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Jackrong/Negentropy-claude-opus-4.7-9B",
+    "base_model:merge:Jackrong/Negentropy-claude-opus-4.7-9B",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:merge:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 6467969760,
+  "storage_human": "6.5 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, Jackrong/Negentropy-claude-opus-4.7-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OliviaRossi/MiMo-NeoHorse-9B-AGSI-GGUF · Hugging Face",
+      "url": "https://huggingface.co/OliviaRossi/MiMo-NeoHorse-9B-AGSI-GGUF",
+      "snippet": "OliviaRossi / MiMo-NeoHorse-9B-AGSI-GGUF Like 1 Text Generation GGUF English Chinese Merge agsi qwen3_5 agentic coding terminal-use reasoning conversational License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "OliviaRossi/MiMo-Ornith-9B-AGSI · Hugging Face",
+      "url": "https://huggingface.co/OliviaRossi/MiMo-Ornith-9B-AGSI",
+      "snippet": "OliviaRossi / MiMo-Ornith-9B-AGSI Like 0 Text Generation Safetensors English Chinese qwen3_5 Merge agsi agentic coding terminal-use reasoning conversational License:mit Model card FilesFiles and versions xet Community Copy to bucket new MiMo-Ornith-9B-AGSI (AGSI Pipelined Fusion)"
+    },
+    {
+      "title": "MiMo-Ornith-9B-AGSI-Abliterated-HQ — Abliterated Model Card",
+      "url": "https://www.abliteratedmodels.org/mimo-ornith-9b-agsi-abliterated-hq/",
+      "snippet": "MiMo-Ornith-9B-AGSI-Abliterated-HQ is a refusal-ablated variant of XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, published on Hugging Face by OliviaRossi. It is 9B parameters, single consumer GPU class and apache-2.0 licence. It is distributed across 5 repositories in Transformers, GGUF and GGUF (imatrix) formats, totalling 8.6K downloads."
+    },
+    {
+      "title": "MiMo Ornith 9B AGSI by OliviaRossi — VRAM 19.4GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/OliviaRossi%2FMiMo-Ornith-9B-AGSI,15xF4U3FsNQRhcJCQf5lft",
+      "snippet": "MiMo Ornith 9B AGSI is an open-source 9b LLM by OliviaRossi. VRAM 19.4GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "bartowski/OliviaRossi_MiMo-Ornith-9B-AGSI-GGUF",
+      "url": "https://huggingbay.xyz/artifact/hf-model-bartowski-oliviarossi-mimo-ornith-9b-agsi-gguf",
+      "snippet": "bartowski/OliviaRossi_MiMo-Ornith-9B-AGSI-GGUF is an open-weights language model for text generation under the apache-2.0 license (141.6 GB), added to Hugging Bay Sep 25, 2026. Open AI model cataloged from external huggingface metadata. Scan: passed."
+    }
+  ]
+}

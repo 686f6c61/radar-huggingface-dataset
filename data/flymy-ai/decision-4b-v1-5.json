@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "flymy-ai/decision-4b-v1.5",
+  "slug": "flymy-ai-decision-4b-v1-5",
+  "author": "flymy-ai",
+  "url": "https://huggingface.co/flymy-ai/decision-4b-v1.5",
+  "created_at": "2026-09-29T22:21:26.000Z",
+  "updated_at": "2026-09-29T22:22:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "typed-decisions",
+    "calibration",
+    "jevbench",
+    "qwen3.5",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57549856,
+  "storage_human": "58 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "flymy-ai/decision-4b-v1.2 · Hugging Face",
+      "url": "https://huggingface.co/flymy-ai/decision-4b-v1.2",
+      "snippet": "flymy-ai / decision-4b-v1.2 Like 0 Follow FlyMy.AI 125 PEFT Safetensors English lora typed-decisions calibration jevbench qwen3.5 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "flymy-ai/decision-4b-v1.1 · Hugging Face",
+      "url": "https://huggingface.co/flymy-ai/decision-4b-v1.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FlyMy.AI - Infrastructure for AI-built software",
+      "url": "https://flymy.ai/",
+      "snippet": "Connect one FlyMy.AI MCP in your coding agent. Build with models, tools, memory and serverless execution, then run your workflow in the cloud by API or schedule."
+    },
+    {
+      "title": "flymy-ai/decision-4b-v1.2 at main - Hugging Face",
+      "url": "https://huggingface.co/flymy-ai/decision-4b-v1.2/tree/main",
+      "snippet": "flymy-ai / decision-4b-v1.2 Like 0 Follow FlyMy.AI 125 PEFT Safetensors English lora typed-decisions calibration jevbench qwen3.5 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "FlyMy.AI - GitHub",
+      "url": "https://github.com/FlyMyAI/",
+      "snippet": "Agentic AI Cloud. FlyMy.AI has 24 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

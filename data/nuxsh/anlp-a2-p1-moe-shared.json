@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "nuxsh/anlp-a2-p1-moe-shared",
+  "slug": "nuxsh-anlp-a2-p1-moe-shared",
+  "author": "nuxsh",
+  "url": "https://huggingface.co/nuxsh/anlp-a2-p1-moe-shared",
+  "created_at": "2026-09-29T18:51:36.000Z",
+  "updated_at": "2026-09-29T18:52:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27278848,
+  "parameters_human": "27.3M",
+  "storage_bytes": 109123384,
+  "storage_human": "109 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vatsavsrivatsav/anlp-a2-p1-moe-shared · Hugging Face",
+      "url": "https://huggingface.co/Vatsavsrivatsav/anlp-a2-p1-moe-shared",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unignoramus/anlp-a2-p1-moe-shared · Hugging Face",
+      "url": "https://huggingface.co/unignoramus/anlp-a2-p1-moe-shared",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - neuro-AI-team/nanoMoE: An extension of the nanoGPT repository ...",
+      "url": "https://github.com/neuro-AI-team/nanoMoE",
+      "snippet": "The simplest, fastest repository for training/finetuning medium-sized MoE-based GPTs. This is a fork of Andrej Karphathy &#x27;s nanoGPT repository, which is a simple but functional implementation of GPT-2 pretraining. nanoMoE edits the functionality of nanoGPT to support training of both standard (decoder-only) LLMs and MoE-based architectures, including all necessary stability tricks for training ..."
+    },
+    {
+      "title": "Ai2 Open Models: Model List, Licenses and Articles",
+      "url": "https://localmodelwatch.tsuchitsuchi.com/en/publisher-ai2-en/",
+      "snippet": "About Ai2 Ai2 (Allen Institute for AI) is a US non-profit AI research institute. It publishes 970 models on its allenai organization on Hugging Face and is known for building fully open language models for research. Its model cards describe the Olmo family as \"Open language models designed to enable the science of language models\"."
+    },
+    {
+      "title": "Share LLM",
+      "url": "https://sharellm.net/",
+      "snippet": "Share unused AI quota or access verified models at a discount. Every model is checked for authenticity — no watered-down substitutes."
+    }
+  ]
+}

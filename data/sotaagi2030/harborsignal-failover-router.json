@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/HarborSignal-Failover-Router",
+  "slug": "sotaagi2030-harborsignal-failover-router",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/HarborSignal-Failover-Router",
+  "created_at": "2026-09-29T22:07:43.000Z",
+  "updated_at": "2026-09-29T22:08:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 163,
+  "storage_human": "163 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOTAagi2030/harbor-signal-package · Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/harbor-signal-package",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SOTAagi2030/HarborSignal-Route-Summaries at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/SOTAagi2030/HarborSignal-Route-Summaries/tree/main",
+      "snippet": "Datasets: SOTAagi2030 / HarborSignal-Route-Summaries Like 0 Dataset card FilesFiles and versions xet Community main HarborSignal-Route-Summaries 3.16 kB 1 contributor History:2 commits SOTAagi2030 Upload README.md with huggingface_hub 2454015 verifiedabout 6 hours ago .gitattributes Safe 2.5 kBinitial commitabout 6 hours ago README.md Safe 653 BytesUpload README.md with huggingface_hubabout 6 ..."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-6 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "GPTZero detects AI content from Claude, ChatGPT, GPT-5, GPT-6, Gemini, and checks writing quality to make every word worth reading."
+    },
+    {
+      "title": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "snippet": "The unified interface for every model. Find the best models & prices for your prompts"
+    }
+  ]
+}

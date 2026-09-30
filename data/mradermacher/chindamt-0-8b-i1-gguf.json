@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ChindaMT-0.8B-i1-GGUF",
+  "slug": "mradermacher-chindamt-0-8b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ChindaMT-0.8B-i1-GGUF",
+  "created_at": "2026-09-29T20:19:23.000Z",
+  "updated_at": "2026-09-29T21:19:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "th"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "translation",
+    "thai",
+    "english",
+    "instruction-following",
+    "machine-translation",
+    "en",
+    "th",
+    "dataset:iapp/ChindaMT-Grounded",
+    "base_model:iapp/ChindaMT-0.8B",
+    "base_model:quantized:iapp/ChindaMT-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1006672704,
+  "parameters_human": "1.01B",
+  "storage_bytes": 13875360896,
+  "storage_human": "13.9 GB",
+  "base_model": "iapp/ChindaMT-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=mradermacher",
+      "snippet": "mradermacher/Meta-Llama-3.1-13B-Instruct-abliterated-GGUF Updated 2 days ago • 328 • 3"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 30 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
+    },
+    {
+      "title": "ChindaMT: Thai-English translation that follows your rules, published ...",
+      "url": "https://www.iapp.co.th/blog/chindamt-launch",
+      "snippet": "iApp Technology releases ChindaMT, a Thai-English translation model family (4B, 2B, 0.8B) that follows rules on tone, terminology, length and format without losing translation quality. Research published at AACL-IJCNLP 2026 (Main Conference). Open weights, data and code under Apache 2.0, and a hosted API at 1 IC per 400 characters."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Salahuddin1234/omnidoctor-MedPsy",
+  "slug": "salahuddin1234-omnidoctor-medpsy",
+  "author": "Salahuddin1234",
+  "url": "https://huggingface.co/Salahuddin1234/omnidoctor-MedPsy",
+  "created_at": "2026-09-30T01:14:47.000Z",
+  "updated_at": "2026-09-30T01:14:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "medical",
+    "healthcare",
+    "clinical",
+    "edge",
+    "tether-ai",
+    "on-device",
+    "conversational",
+    "en",
+    "arxiv:2505.17952",
+    "base_model:Qwen/Qwen3-4B-Thinking-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Thinking-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317174,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B-Thinking-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Omnidoctor - a Hugging Face Space by Salahuddin1234",
+      "url": "https://huggingface.co/spaces/Salahuddin1234/omnidoctor",
+      "snippet": "AI Medical Intelligence Platform"
+    },
+    {
+      "title": "qvac/MedPsy-4B · Hugging Face",
+      "url": "https://huggingface.co/qvac/MedPsy-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Meet MedPsy: a private medical AI model small enough for yo…",
+      "url": "https://qvac.tether.io/blog/meet-medpsy-a-private-medical-ai-small-enough-for-your-phone",
+      "snippet": "A private medical AI model built to run on your device MedPsy is a family of small medical language models developed by Tether Data&#x27;s AI Research group as part of the QVAC platform, Tether&#x27;s open-source, local-AI ecosystem. It answers everyday medical questions and walks through clinical reasoning in clear, plain text."
+    },
+    {
+      "title": "salahuddin1234 (Salahuddin) · GitHub",
+      "url": "https://github.com/salahuddin1234",
+      "snippet": "salahuddin1234 has 40 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "OmniDoctor: Towards LLM-centric Lifelong Learning for New Emerging ...",
+      "url": "https://dl.acm.org/doi/10.1145/3746027.3755745",
+      "snippet": "This model is designed with two key modules to address the above two challenges, respectively. Especially, this paper constructs an Unseen L 3 NMV dataset to simulate real-world incremental clinical scenarios. Extensive experiments on this dataset demonstrate that OmniDoctor outperforms several advanced lifelong learning baselines."
+    }
+  ]
+}

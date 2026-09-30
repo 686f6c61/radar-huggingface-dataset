@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Marqjeev/aizen-vault-embeddings",
+  "slug": "marqjeev-aizen-vault-embeddings",
+  "author": "Marqjeev",
+  "url": "https://huggingface.co/Marqjeev/aizen-vault-embeddings",
+  "created_at": "2026-09-30T01:46:44.000Z",
+  "updated_at": "2026-09-30T01:52:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:42",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    },
+    {
+      "title": "Hugging Bay | Find and Download AI Models",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "Hugging Bay is the open-model catalog for public open LLMs, models, datasets, apps, evals, and hosted files."
+    },
+    {
+      "title": "AI Models Benchmark",
+      "url": "https://aimodelsbenchmark.com/",
+      "snippet": "AI MODEL LEADERBOARD 398 models · benchmarks, pricing, context, license · ranked by the column you click."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=embedding",
+      "snippet": "Explore machine learning models. ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826"
+    },
+    {
+      "title": "10 Best Embedding Models 2026: Complete Comparison Guide",
+      "url": "https://www.openxcell.com/blog/best-embedding-models",
+      "snippet": "Compare embedding models for semantic search and RAG: capabilities, deployment trade-offs, and practical selection criteria for AI systems."
+    }
+  ]
+}

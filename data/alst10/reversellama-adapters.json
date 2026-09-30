@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "alst10/ReverseLlama-adapters",
+  "slug": "alst10-reversellama-adapters",
+  "author": "alst10",
+  "url": "https://huggingface.co/alst10/ReverseLlama-adapters",
+  "created_at": "2026-09-29T20:24:43.000Z",
+  "updated_at": "2026-09-29T20:34:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "dpo",
+    "lora",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44507505,
+  "storage_human": "45 MB",
+  "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coding - a alst10 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/alst10/coding",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from alst10"
+    },
+    {
+      "title": "alst10/beckett-Qwen3-8B-adapter · Hugging Face",
+      "url": "https://huggingface.co/alst10/beckett-Qwen3-8B-adapter",
+      "snippet": "Instructions to use alst10/beckett-Qwen3-8B-adapter with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use alst10/beckett-Qwen3-8B-adapter with PEFT:"
+    },
+    {
+      "title": "[2312.15698] RepairLLaMA: Efficient Representations and Fine-Tuned ...",
+      "url": "https://arxiv.org/abs/2312.15698",
+      "snippet": "This results in RepairLLaMA producing a highly effective `program repair adapter&#x27; for fixing bugs with AI. Our experiments demonstrate the validity of both concepts. First, fine-tuning adapters with program repair specific code representations enables the model to use meaningful repair signals and produce better patches."
+    },
+    {
+      "title": "RepairLLaMA: Efficient Representations and Fine-Tuned Adapters for ...",
+      "url": "https://arxiv.org/pdf/2312.15698",
+      "snippet": "This results in RepairLLaMA producing a highly ef-fective &#x27;program repair adapter&#x27; for fixing bugs with AI. Our experiments demonstrate the validity of both concepts. First, fine-tuning adapters with program repair specific code repre-sentations enables the model to use meaningful repair signals and produce better patches."
+    },
+    {
+      "title": "GitHub - AGI-Edgerunners/LLM-Adapters: Code for our EMNLP 2023 Paper ...",
+      "url": "https://github.com/AGI-Edgerunners/LLM-Adapters",
+      "snippet": "LLM-Adapters is an easy-to-use framework that integrates various adapters into LLMs and can execute adapter-based PEFT methods of LLMs for different tasks. LLM-Adapter is an extension of HuggingFace&#x27;s PEFT library, many thanks for their amazing work! Please find our paper at this link: https://arxiv ..."
+    }
+  ]
+}

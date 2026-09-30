@@ -1,0 +1,140 @@
+{
+  "schema": 1,
+  "id": "Robot-Haus/Qwen3.8-Flash-Next-RH-oQ3.5e-fp16-mtp",
+  "slug": "robot-haus-qwen3-8-flash-next-rh-oq3-5e-fp16-mtp",
+  "author": "Robot-Haus",
+  "url": "https://huggingface.co/Robot-Haus/Qwen3.8-Flash-Next-RH-oQ3.5e-fp16-mtp",
+  "created_at": "2026-09-29T23:27:11.000Z",
+  "updated_at": "2026-09-29T23:27:12.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "mlx-vlm",
+    "omlx",
+    "oq",
+    "mtp",
+    "speculative-decoding",
+    "qwen",
+    "qwen3.8",
+    "qwen4-exp",
+    "mixture-of-experts",
+    "vision-language",
+    "quantized",
+    "apple-silicon",
+    "3.5-bit",
+    "oQ",
+    "oQe",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "dataset:cais/mmlu",
+    "dataset:HuggingFaceH4/HellaSwag-samples",
+    "dataset:HuggingFaceH4/truthfulQA-multi-choice-valid",
+    "dataset:openai/openai_humaneval",
+    "dataset:google-research-datasets/mbpp",
+    "dataset:livecodebench/livecodebench",
+    "dataset:AI-safety-promise/SafetyBench",
+    "arxiv:2502.02789",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "model-index",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 90685607475,
+  "storage_human": "90.7 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation (Qwen3.8-Flash-Next)",
+      "dataset": "MMLU (sample 1000/14042, no-thinking)",
+      "metric": "MMLU Accuracy (sample 1000/14042, no-thinking)",
+      "value": 85.4
+    },
+    {
+      "task": null,
+      "dataset": "HellaSwag (sample 300/10042, no-thinking)",
+      "metric": "HellaSwag Accuracy (sample 300/10042, no-thinking)",
+      "value": 94.3
+    },
+    {
+      "task": null,
+      "dataset": "TruthfulQA (sample 300/817, no-thinking)",
+      "metric": "TruthfulQA Accuracy (sample 300/817, no-thinking)",
+      "value": 95.3
+    },
+    {
+      "task": null,
+      "dataset": "HumanEval (full 164, no-thinking)",
+      "metric": "HumanEval pass@1 (full 164, no-thinking)",
+      "value": 91.5
+    },
+    {
+      "task": null,
+      "dataset": "MBPP (sample 200/500, no-thinking)",
+      "metric": "MBPP pass@1 (sample 200/500, no-thinking)",
+      "value": 87.5
+    },
+    {
+      "task": null,
+      "dataset": "LiveCodeBench (sample 100/1055, no-thinking)",
+      "metric": "LiveCodeBench pass@1 (sample 100/1055, no-thinking)",
+      "value": 48
+    },
+    {
+      "task": null,
+      "dataset": "SafetyBench (sample 300/11435, no-thinking)",
+      "metric": "SafetyBench Accuracy (sample 300/11435, no-thinking)",
+      "value": 86.7
+    }
+  ],
+  "sources": [
+    {
+      "title": "Robot — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Robot",
+      "snippet": "Un robot est un dispositif mécatronique (alliant mécanique, électronique et informatique) conçu pour accomplir automatiquement des …"
+    },
+    {
+      "title": "Robot - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Robot",
+      "snippet": "The word robot can refer to both physical robots and virtual software agents, but the latter are usually referred to as bots. [13] …"
+    },
+    {
+      "title": "ROBOTS: Your Guide to the World of Robotics",
+      "url": "https://robotsguide.com/",
+      "snippet": "Explore Robot Categories Aerospace Aquatic Autonomous Vehicles Consumer Delivery Disaster Response Drones Education …"
+    },
+    {
+      "title": "Top 7 des robots humanoïdes les plus sophistiqués - Robot Magazine",
+      "url": "https://www.robot-magazine.fr/top-7-robots-humanoides/",
+      "snippet": "Lors du concours de la DARPA (une agence de l’armée américaine), ce robot humanoïde de Boston Dynamics a révélé sa capacité …"
+    },
+    {
+      "title": "Robotique — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Robotique",
+      "snippet": "Robot Robot en phase de programmation. Un robot est un système alimenté en énergie qui évolue dans un environnement statique …"
+    }
+  ]
+}

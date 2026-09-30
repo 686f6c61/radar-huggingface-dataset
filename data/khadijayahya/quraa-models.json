@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "KhadijaYahya/quraa-models",
+  "slug": "khadijayahya-quraa-models",
+  "author": "KhadijaYahya",
+  "url": "https://huggingface.co/KhadijaYahya/quraa-models",
+  "created_at": "2026-09-29T21:47:39.000Z",
+  "updated_at": "2026-09-29T22:45:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "speechbrain",
+  "languages": [],
+  "tags": [
+    "speechbrain",
+    "onnx",
+    "speaker-recognition",
+    "quran",
+    "ecapa-tdnn",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85104539,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "quran.ai",
+      "url": "https://quran.ai/",
+      "snippet": "Building the Quran&#x27;s infrastructure for AI Open projects that give AI systems authentic, canonical access to the Quran — its text, translations, commentary, and recitation."
+    },
+    {
+      "title": "About - QuranAI.org",
+      "url": "https://quranai.org/about/",
+      "snippet": "The purpose of QuranAI.org is to provide education on the semantics and computable aspects of the Quran, expose both human and artificial intelligences to the Quran&#x27;s unique features, generate Quranic content model training sets to improve AI alignment, publish independently verifiable compute of the Quran&#x27;s unique features, publish expert and crowd-sourced Quranic semantics, and provide ..."
+    },
+    {
+      "title": "Rukaya-lab/Quraa_AI · Hugging Face",
+      "url": "https://huggingface.co/Rukaya-lab/Quraa_AI",
+      "snippet": "Rukaya-lab / Quraa_AI like 0 Model card FilesFiles and versions Community Use with library"
+    },
+    {
+      "title": "Quran Lab · Open, on-device AI for Quran recitation",
+      "url": "https://quranlab.ai/",
+      "snippet": "Open, on-device AI for Quran recitation. Our models listen to a recitation and write it down phoneme by phoneme, tajweed included, on a phone with no internet. Free, never sold, built as sadaqah jariyah."
+    },
+    {
+      "title": "GitHub - tal7aouy/awesome-quran-ai: The largest curated collection of ...",
+      "url": "https://github.com/tal7aouy/awesome-quran-ai",
+      "snippet": "A curated collection of APIs, datasets, models, tools, papers, and open-source projects for developers building Quran AI applications. Quran AI work touches sacred text, language, speech, search, education, and scholarship. This repository aims to make the technical ecosystem easier to discover ..."
+    }
+  ]
+}

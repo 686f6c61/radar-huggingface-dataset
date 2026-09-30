@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "amitdutta121/SmolLM3-MathInstruct-SFT",
+  "slug": "amitdutta121-smollm3-mathinstruct-sft",
+  "author": "amitdutta121",
+  "url": "https://huggingface.co/amitdutta121/SmolLM3-MathInstruct-SFT",
+  "created_at": "2026-09-29T22:42:14.000Z",
+  "updated_at": "2026-09-29T22:44:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "smollm3",
+    "text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 6167443957,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supervised Fine-Tuning with SmolLM3 · Hugging Face",
+      "url": "https://huggingface.co/learn/smol-course/unit1/3",
+      "snippet": "Supervised Fine-Tuning (SFT) is the cornerstone of instruction tuning - it&#x27;s how we transform a base language model into an instruction-following assistant. In this section, you&#x27;ll learn to fine-tune SmolLM3using real-world datasets and production-ready tools."
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM3-3B · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "smol-course/units/en/unit1/3.md at main - GitHub",
+      "url": "https://github.com/huggingface/smol-course/blob/main/units/en/unit1/3.md",
+      "snippet": "Tip Before starting SFT, consider whether using an existing instruction-tuned model with well-crafted prompts would suffice for your use case. SFT involves significant computational resources and engineering effort, so it should only be pursued when prompting existing models proves insufficient. Learn more about this decision process in the Hugging Face LLM Course."
+    },
+    {
+      "title": "Supervised Fine-Tuning (SFT) for LLMs - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/supervised-fine-tuning-sft-for-llms/",
+      "snippet": "Supervised Fine-Tuning (SFT) is a method of adapting a pre-trained language model using a smaller dataset containing labeled examples. The model learns to produce the desired output for a given input, improving its performance on a specific task or type of instruction."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "TrashJitMP3/clide",
+  "slug": "trashjitmp3-clide",
+  "author": "TrashJitMP3",
+  "url": "https://huggingface.co/TrashJitMP3/clide",
+  "created_at": "2026-09-29T22:41:43.000Z",
+  "updated_at": "2026-09-29T22:41:43.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "GitHub - FujitsuResearch/domain-adaptive-image-detection: official ...",
+      "url": "https://github.com/FujitsuResearch/domain-adaptive-image-detection/tree/main/",
+      "snippet": "This repository contains the official implementation of CLIDE, a zero-shot detection method for identifying AI-generated images using a conditional likelihood approximation over CLIP embeddings. The method applies a whitening transform to CLIP image embeddings and uses the resulting (approximate) Gaussian likelihood as a detection score — without training on generated images."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.ai/catalog/artifacts",
+      "snippet": "Claude is Anthropic&#x27;s AI, built for problem solvers. Tackle complex challenges, analyze data, write code, and think through your hardest work."
+    },
+    {
+      "title": "The AI for Problem Solvers | Claude by Anthropic",
+      "url": "https://claude.com/product/overview",
+      "snippet": "Claude is the AI assistant for work. Hand off tasks, turn ideas into decks, spreadsheets and prototypes, and run scheduled tasks across your apps and files."
+    },
+    {
+      "title": "Claude 101: Everything You Need to Set Up and Use Claude — Step-by-Step ...",
+      "url": "https://aidiscoveries.io/claude-101-everything-you-need-to-set-up-and-use-claude-step-by-step-guide-2026/",
+      "snippet": "New to Claude? This complete beginner&#x27;s guide covers how to create a free account, choose the right plan ($0-$200/mo), pick the right model (Haiku, Sonnet, or Opus), and use every key feature — Projects, Artifacts, Claude Code, and Extended Thinking — step by step. Updated May 2026."
+    }
+  ]
+}

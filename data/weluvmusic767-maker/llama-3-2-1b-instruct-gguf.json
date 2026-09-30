@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "weluvmusic767-maker/Llama-3.2-1B-Instruct-GGUF",
+  "slug": "weluvmusic767-maker-llama-3-2-1b-instruct-gguf",
+  "author": "weluvmusic767-maker",
+  "url": "https://huggingface.co/weluvmusic767-maker/Llama-3.2-1B-Instruct-GGUF",
+  "created_at": "2026-09-29T23:40:58.000Z",
+  "updated_at": "2026-09-29T23:40:58.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th"
+  ],
+  "tags": [
+    "gguf",
+    "facebook",
+    "meta",
+    "llama",
+    "llama-3",
+    "text-generation",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "base_model:meta-llama/Llama-3.2-1B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.2-1B-Instruct",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 17157953114,
+  "storage_human": "17.2 GB",
+  "base_model": "meta-llama/Llama-3.2-1B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Llama-3.2-1B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama 3.2 1b Instruct - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/llama-3-2-1b-instruct.html",
+      "snippet": "Download Llama 3.2 1b Instruct GGUF model. 604.8 MB, 154,043 downloads, 176 likes."
+    },
+    {
+      "title": "Llama-3.2-1B-Instruct-Q4_K_M.gguf - Hugging Face",
+      "url": "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/blob/main/Llama-3.2-1B-Instruct-Q4_K_M.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama-3.2-1B-Instruct download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/llama-3-2-1b-instruct/",
+      "snippet": "Download Llama-3.2-1B-Instruct for free. Instruction-tuned 1.2B LLM for multilingual text generation by Meta. Llama-3.2-1B-Instruct is Meta&#x27;s multilingual, instruction-tuned large language model with 1.24 billion parameters, optimized for dialogue, summarization, and retrieval tasks. It builds upon the Llama 3.1 architecture and incorporates fine-tuning techniques like SFT, DPO, and ..."
+    },
+    {
+      "title": "Llama-3.2-1B-Instruct-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/unsloth/Llama-3.2-1B-Instruct-GGUF",
+      "snippet": "unsloth/Llama-3.2-1B-Instruct For more details on the model, please go to Meta&#x27;s original model card Finetune for Free All notebooks are beginner friendly! Add your dataset, click \"Run All\", and you&#x27;ll get a 2x faster finetuned model which can be exported to GGUF, vLLM or uploaded to Hugging Face."
+    }
+  ]
+}

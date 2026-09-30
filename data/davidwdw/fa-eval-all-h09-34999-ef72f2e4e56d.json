@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-eval-all-h09-34999-ef72f2e4e56d",
+  "slug": "davidwdw-fa-eval-all-h09-34999-ef72f2e4e56d",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-eval-all-h09-34999-ef72f2e4e56d",
+  "created_at": "2026-09-29T20:08:59.000Z",
+  "updated_at": "2026-09-29T20:09:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234297813,
+  "storage_human": "234 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "davidwdw/fa-systematic-eval-fixtures-20260926-6789c5c62c03 · Hugging Face",
+      "url": "https://huggingface.co/davidwdw/fa-systematic-eval-fixtures-20260926-6789c5c62c03",
+      "snippet": "davidwdw fa-systematic-eval-fixtures-20260926-6789c5c62c03 Like0 Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "OpenAI Evals - GitHub",
+      "url": "https://github.com/openai/evals",
+      "snippet": "You can now configure and run Evals directly in the OpenAI Dashboard. Get started → Evals provide a framework for evaluating large language models (LLMs) or systems built using LLMs. We offer an existing registry of evals to test different dimensions of OpenAI models and the ability to write your own custom evals for use cases you care about. You can also use your data to build private evals ..."
+    },
+    {
+      "title": "Volkswagen ID.4 ECM Coding and Software Configuration Hotfix",
+      "url": "https://dot.report/bulletins/11001521",
+      "snippet": "Service bulletin VOS-24-76 provides instructions for a software hotfix to resolve ECM coding failures and fault code P064F00 in 2021-2024 Volkswagen ID.4 vehicles."
+    },
+    {
+      "title": "davidwdw/fa-ckpt-t00-mix-pressfix-latest-at-seal-cefef2023830 · Hugging ...",
+      "url": "https://huggingface.co/davidwdw/fa-ckpt-t00-mix-pressfix-latest-at-seal-cefef2023830",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

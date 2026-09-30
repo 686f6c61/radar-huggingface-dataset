@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "EndlessChasing/Mamb2_8B_Recall_SQ3.25",
+  "slug": "endlesschasing-mamb2_8b_recall_sq3-25",
+  "author": "EndlessChasing",
+  "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall_SQ3.25",
+  "created_at": "2026-09-29T18:36:48.000Z",
+  "updated_at": "2026-09-29T18:36:51.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "mamba2",
+    "state-space-model",
+    "statequant",
+    "state-quantization",
+    "resurface",
+    "adapter",
+    "recall",
+    "custom-runtime",
+    "text-generation",
+    "en",
+    "dataset:Salesforce/wikitext",
+    "base_model:nvidia/mamba2-8b-3t-4k",
+    "base_model:adapter:nvidia/mamba2-8b-3t-4k",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2446504,
+  "storage_human": "2 MB",
+  "base_model": "nvidia/mamba2-8b-3t-4k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EndlessChasing/Mamb2_8B_Recall · Hugging Face",
+      "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall",
+      "snippet": "EndlessChasing / Mamb2_8B_Recall Like 0 Text Generation Salesforce/wikitext English mamba2 state-space-model adapter resurface recall custom-runtime License:gpl-3.0 Model card FilesFiles and versions xet Community Copy to bucket new Mamb2_8B_Recall Verified results Method and training Download and use Reproduce PPL and MK Limitations License ..."
+    },
+    {
+      "title": "GitHub - EndlessChasing/mamb2_8B_Recall: Full precision Mamba2-8B ...",
+      "url": "https://github.com/EndlessChasing/mamb2_8B_Recall/tree/main/",
+      "snippet": "Research control: apply a post-D Resurface-style readout adapter to the uncompressed, pure NVIDIA Mamba2-8B source checkpoint. This isolates the effect of giving the full-precision source the same 1,536-step recall adaptation budget as the E8/W5 compressed model."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Collections / Free Models Free AI Models on OpenRouter Model rankings updated September 2026 based on real usage data. Models are ranked by total prompt and completion tokens processed through the OpenRouter API over the trailing 7 days. Showing the top 16 models. Rankings measure usage on OpenRouter and reflect adoption, not model quality or benchmark performance."
+    }
+  ]
+}

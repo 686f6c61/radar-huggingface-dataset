@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "evansrobert/grounded-language",
+  "slug": "evansrobert-grounded-language",
+  "author": "evansrobert",
+  "url": "https://huggingface.co/evansrobert/grounded-language",
+  "created_at": "2026-09-29T23:36:14.000Z",
+  "updated_at": "2026-09-29T23:36:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "grounded-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grounding and Evaluation for Large Language Models: Practical ...",
+      "url": "https://arxiv.org/html/2407.12858v1",
+      "snippet": "Considering the increasing adoption of Artificial Intelligence (AI) technologies in our daily lives, it is crucial to develop and deploy the underlying AI models and systems in a responsible manner and ensure their trustworthiness, safety, and observability. Our focus is on large language models (LLMs) and other generative AI models and applications. Such models and applications need to be ..."
+    },
+    {
+      "title": "[2311.09069] How Well Do Large Language Models Truly Ground? - arXiv.org",
+      "url": "https://arxiv.org/abs/2311.09069",
+      "snippet": "To overcome this, we propose a stricter definition of grounding: a model is truly grounded if it (1) fully utilizes the necessary knowledge from the provided context, and (2) stays within the limits of that knowledge. We introduce a new dataset and a grounding metric to evaluate model capability under the definition."
+    },
+    {
+      "title": "Introducing the most grounded language model in the world - Contextual AI",
+      "url": "https://contextual.ai/blog/introducing-grounded-language-model",
+      "snippet": "Today, we&#x27;re introducing our Grounded Language Model (GLM), the most grounded language model in the world. With state-of-the-art performance on FACTS (the leading groundedness benchmark) and our customer datasets, the GLM is the single best language model for RAG and agentic use cases for which minimizing hallucinations is critical."
+    },
+    {
+      "title": "Multi-Modal Grounded Planning and Efficient Replanning for Learning ...",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/32455",
+      "snippet": "Learning a perception and reasoning module for robotic assistants to plan steps to perform complex tasks based on natural language instructions often requires large free-form language annotations, especially for short high-level instructions. To reduce the cost of annotation, large language models (LLMs) are used as a planner with few data. However, when elaborating the steps, even the state ..."
+    },
+    {
+      "title": "A Grounded Introduction to Large Language Model and Generative AI ...",
+      "url": "https://www.ida.org/research-and-publications/publication/a-grounded-introduction-to-large-language-model-and-generative-ai-technology",
+      "snippet": "This document is the first in an IDA series designed to introduce large language models (LLMs) and generative artificial intelligence systems (GAIs) to a…"
+    }
+  ]
+}

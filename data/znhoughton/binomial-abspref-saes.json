@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "znhoughton/binomial-abspref-saes",
+  "slug": "znhoughton-binomial-abspref-saes",
+  "author": "znhoughton",
+  "url": "https://huggingface.co/znhoughton/binomial-abspref-saes",
+  "created_at": "2026-09-29T21:47:21.000Z",
+  "updated_at": "2026-09-29T22:24:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sae_lens",
+  "languages": [],
+  "tags": [
+    "sae_lens",
+    "sparse-autoencoder",
+    "interpretability",
+    "sae",
+    "arxiv:2606.13993",
+    "base_model:EleutherAI/pythia-1.4b",
+    "base_model:finetune:EleutherAI/pythia-1.4b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2988343664,
+  "storage_human": "3.0 GB",
+  "base_model": "EleutherAI/pythia-160m, EleutherAI/pythia-410m, EleutherAI/pythia-1.4b, znhoughton/opt-babylm-125m-20eps-seed964, znhoughton/opt-babylm-350m-20eps-seed964, znhoughton/opt-babylm-1.3B-20eps-seed964",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "znhoughton/binom-ablation-finetune-corpus - Hugging Face",
+      "url": "https://huggingface.co/datasets/znhoughton/binom-ablation-finetune-corpus",
+      "snippet": "Models trained or fine-tuned on znhoughton/binom-ablation-finetune-corpus znhoughton/opt-babylm-1.3b-ablated-finetuned-20eps-seed964 1B • Updated Apr 17 • 5"
+    },
+    {
+      "title": "znhoughton (Zachary Houghton) - Hugging Face",
+      "url": "https://huggingface.co/znhoughton/models",
+      "snippet": "znhoughton&#x27;s models11 Sort: Recently updated znhoughton/opt-babylm-125m-3ep-dense-seed964 Updated May 30• 1"
+    },
+    {
+      "title": "znhoughton (Zach Houghton) · GitHub",
+      "url": "https://github.com/znhoughton/",
+      "snippet": "Data scientist at Vail Systems. znhoughton has 26 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "znhoughton/UGE-audio-text-models - GitHub",
+      "url": "https://github.com/znhoughton/UGE-audio-text-models",
+      "snippet": "Tests the Platonic Representation Hypothesis by comparing internal representations of Whisper (audio) and three LLMs (text) on paired LibriSpeech utterances. Downloads openslr/librispeech_asr (test-clean split) from HuggingFace. Each sample has paired audio + transcript. znhoughton/opt-babylm-125m ..."
+    },
+    {
+      "title": "arXiv:2502.19964v1 [cs.LG] 27 Feb 2025",
+      "url": "https://arxiv.org/pdf/2502.19964v1",
+      "snippet": "Abstract Sparse autoencoders (SAEs) have emerged as a promising approach in language model inter-pretability, offering unsupervised extraction of sparse features. For interpretability methods to succeed, they must identify abstract features across domains, and these features can often manifest differently in each context. We ex-amine this through \"answerability\"—a model&#x27;s ability to ..."
+    }
+  ]
+}

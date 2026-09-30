@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ldov/CLM-v0.1-8B",
+  "slug": "ldov-clm-v0-1-8b",
+  "author": "ldov",
+  "url": "https://huggingface.co/ldov/CLM-v0.1-8B",
+  "created_at": "2026-09-29T22:19:06.000Z",
+  "updated_at": "2026-09-29T22:19:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "contrastive-lm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "contrastive-lm",
+    "clm",
+    "contrastive-learning",
+    "verifier",
+    "reranker",
+    "agents",
+    "text-ranking",
+    "en",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75816125,
+  "storage_human": "76 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contrastive-LM/CLM-v0.1-8B · Hugging Face",
+      "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Contrastive-LM/CLM",
+      "url": "https://github.com/Contrastive-LM/CLM",
+      "snippet": "A System One Model for Fast and Generalizable Decision-Making | 📄 Blog | 🗣️ Discord | 🤗 Data & Models | 📚 API Reference | 🛠️ Fine-Tuning Tutorial | 🔥 Contrastive Language Models (CLMs) are a new class of System One model trained with a contrastive learning objective that connects states and actions. This repo serves CLM-8B behind a TypeSafe-compatible API. CLM-8B is pre ..."
+    },
+    {
+      "title": "CLM-v0.1-8B: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/clm-v0.1-8b-contrastive-lm",
+      "snippet": "CLM-v0.1-8B is a text-ranking and decision-making model from Contrastive-LM. Its main purpose is to score typed answers or rank candidate actions against a supplied state, rather than generate text."
+    },
+    {
+      "title": "Contrastive-LM/CLM-v0.1-8B at main - Hugging Face",
+      "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CLM-v0.1-8B: Specifications & Sources - gradually.ai",
+      "url": "https://www.gradually.ai/en/ai-models/clm-v0.1-8b/",
+      "snippet": "CLM-v0.1-8B by Contrastive-LM. Technical specifications, availability, and official sources. The profile includes only source-backed details."
+    }
+  ]
+}

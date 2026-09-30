@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "dancingfrog/Nezou-27B-CyberAbliterated",
+  "slug": "dancingfrog-nezou-27b-cyberabliterated",
+  "author": "dancingfrog",
+  "url": "https://huggingface.co/dancingfrog/Nezou-27B-CyberAbliterated",
+  "created_at": "2026-09-29T22:09:35.000Z",
+  "updated_at": "2026-09-29T22:18:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliteration",
+    "abliterated",
+    "cyber",
+    "multimodal",
+    "vision-language",
+    "conversational",
+    "reasoning",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blackfrost-AI/Qwen3.8-27B-ABLITERATED-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-GGUF",
+      "snippet": "Qwen3.8-27B is the dense, deployment-friendly member of the Qwen3.8 family. This is the abliterated Blackfrost build: refusal behavior was reduced through a weight-level process, then the BF16 parent was converted into a standard GGUF ladder for local llama.cpp inference."
+    },
+    {
+      "title": "Bonsai 2 27B: Run a 27B AI Locally on Your Laptop - DataCamp",
+      "url": "https://www.datacamp.com/blog/bonsai-2-27b",
+      "snippet": "Bonsai 2 27B: Run a 27B AI Locally on Your Laptop PrismML&#x27;s Bonsai 2 27B compresses a 27B multimodal model to 5.9GB while keeping 98.2% of full-precision benchmark performance, and it runs on a laptop."
+    },
+    {
+      "title": "Qwen3.8-27B OBLITERATED: 0% Refusal Rate (Aug 2026) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026",
+      "snippet": "QWEN-3.8-27B: OBLITERATED. 0.0% REFUSAL RATE across 842 harmful prompts.\" The model card describes zero refusals across a large, purpose-built harmful-prompt dataset, with — per Pliny&#x27;s own description — \"extra focus on liberating its cyber, jailbreak generation, and complex AI\" capability."
+    },
+    {
+      "title": "I ran the tiny Bonsai model on my tiny GPU. Here&#x27;s how it performed",
+      "url": "https://www.infoworld.com/article/4206771/i-ran-the-tiny-bonsai-model-on-my-tiny-gpu-heres-how-it-performed.html",
+      "snippet": "Bonsai 27B is a multi-billion parameter model small enough to fit into a smartphone. It&#x27;s useful for dev and research work, but comes with trade-offs."
+    },
+    {
+      "title": "Bonsai 27B Guide: How a 27B Model Runs Locally - aiwerse.blog",
+      "url": "https://www.aiwerse.blog/ai/guides/bonsai-27b-guide-how-a-27b-model-runs-locally",
+      "snippet": "Learn how to run Bonsai 27B locally. This complete setup guide covers the new compressed Qwen 3.6 model built for iPhone, Mac, and Windows performance."
+    }
+  ]
+}

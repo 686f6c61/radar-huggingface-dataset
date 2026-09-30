@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Salahuddin1234/omnidoctor-audar",
+  "slug": "salahuddin1234-omnidoctor-audar",
+  "author": "Salahuddin1234",
+  "url": "https://huggingface.co/Salahuddin1234/omnidoctor-audar",
+  "created_at": "2026-09-30T00:52:16.000Z",
+  "updated_at": "2026-09-30T00:52:17.000Z",
+  "license": "audarai-community-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-to-speech",
+    "tts",
+    "speech-synthesis",
+    "arabic",
+    "arabic-tts",
+    "voice-cloning",
+    "zero-shot-tts",
+    "expressive-tts",
+    "neucodec",
+    "audar",
+    "llama-cpp",
+    "ar",
+    "en",
+    "license:other",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1643998208,
+  "parameters_human": "1.64B",
+  "storage_bytes": 4043582392,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "audarai/Audar-ASR-V1-Turbo · Hugging Face",
+      "url": "https://huggingface.co/audarai/Audar-ASR-V1-Turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "audarai/Audar-TTS-V1-Flash · Hugging Face",
+      "url": "https://huggingface.co/audarai/Audar-TTS-V1-Flash",
+      "snippet": "Audar-TTS-V1-Flash is the smallest, fastest member of the Audar-TTS family — a compact 553M-parameter open-weights speech model that turns text into natural, expressive speech and clones any voice from a 5-15 second reference clip, with no per-speaker fine-tuning."
+    },
+    {
+      "title": "GitHub - AudarAI/Audar-ASR-V1: Arabic-first generative speech ...",
+      "url": "https://github.com/AudarAI/Audar-ASR-V1",
+      "snippet": "Audar-ASR-V1 is a family of Arabic-first, generative speech-recognition models from AudarAI. It recasts transcription as audio-conditioned next-token prediction over a unified text vocabulary — a language-model decoder rather than a CTC or transducer objective."
+    },
+    {
+      "title": "Audar-ASR-V1: A Speech-to-Text Model for Indian Languages - Onegen",
+      "url": "https://www.onegen.ai/project/audar-asr-v1-a-speech-to-text-model-for-indian-languages/",
+      "snippet": "Audar-ASR-V1 is a free, open-source speech-to-text model outperforming Whisper for Indian languages, offering developers high accuracy via a simple Python API."
+    },
+    {
+      "title": "OmniDoctor: Towards LLM-centric Lifelong Learning for New Emerging ...",
+      "url": "https://dl.acm.org/doi/10.1145/3746027.3755745",
+      "snippet": "This model is designed with two key modules to address the above two challenges, respectively. Especially, this paper constructs an Unseen L 3 NMV dataset to simulate real-world incremental clinical scenarios. Extensive experiments on this dataset demonstrate that OmniDoctor outperforms several advanced lifelong learning baselines."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jprivera/260911_atlas9_5beh_sdf_qwen72b",
+  "slug": "jprivera-260911_atlas9_5beh_sdf_qwen72b",
+  "author": "jprivera",
+  "url": "https://huggingface.co/jprivera/260911_atlas9_5beh_sdf_qwen72b",
+  "created_at": "2026-09-29T22:26:02.000Z",
+  "updated_at": "2026-09-29T23:38:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4113848265,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 72B · Models · Dataloop",
+      "url": "https://dataloop.ai/library/model/qwen_qwen-72b/",
+      "snippet": "Qwen-72B is a large language model developed by Alibaba Cloud, boasting 72 billion parameters. It's trained on a massive dataset of over 3 trillion tokens, covering various languages, including Chinese, English, and multiple others."
+    },
+    {
+      "title": "Qwen2.5 72B Instruct API & Playground | Fireworks AI",
+      "url": "https://fireworks.ai/models/fireworks/qwen2p5-72b-instruct",
+      "snippet": "Qwen2.5 are a series of decoder-only language models developed by Qwen team, Alibaba Cloud, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants."
+    },
+    {
+      "title": "Qwen2.5 72B API: Pricing, Benchmarks & Docs | Together AI",
+      "url": "https://www.together.ai/models/qwen-2-5",
+      "snippet": "Powerful decoder-only models available in 7B and 72B variants, developed by Alibaba Cloud's Qwen team for advanced language processing."
+    },
+    {
+      "title": "400+ AI Model APIs - DeepSeek, Qwen, Claude, GPT, Flux | Atlas Cloud",
+      "url": "https://www.atlascloud.ai/models",
+      "snippet": "Access 400+ AI models through one unified API. Compare DeepSeek, Qwen, Claude, GPT, Flux, Gemini, LLaMA, Mistral. One API key for all models. OpenAI-compatible endpoints, instant access, no minimum spend."
+    },
+    {
+      "title": "jprivera44/atlas9_5beh_sft_data_260912 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/jprivera44/atlas9_5beh_sft_data_260912",
+      "snippet": "Built on the CPU box, 2026-09-11, for 3 Llama + 3 Qwen SFT seeds on the atlas9 sequential-SDF checkpoints (experiments/260910_atlas9_5beh_sdf)."
+    }
+  ]
+}

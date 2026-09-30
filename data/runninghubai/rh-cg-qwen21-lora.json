@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-cg-qwen21-lora",
+  "slug": "runninghubai-rh-cg-qwen21-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-cg-qwen21-lora",
+  "created_at": "2026-09-29T20:53:00.000Z",
+  "updated_at": "2026-09-29T20:54:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84545297,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · RunningHubAI/rh-qwen2.1-lora at main - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-qwen2.1-lora/blob/main/README.md",
+      "snippet": "RunningHubAI / rh-qwen2.1-lora Like 0 Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new main rh-qwen2.1-lora /README.md RunningHubAI Upload RunningHub model 2104183349244944385 6173bd4 verifiedabout 17 hours ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute ..."
+    },
+    {
+      "title": "RunningHubAI/rh-qwen-image-2.1-aio-nsfw-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-qwen-image-2.1-aio-nsfw-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RunningHub Models ｜ AI Model Creation & Training Platform",
+      "url": "https://www.runninghub.ai/models",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "Fizgig v6.5: Qwen Image 2.1 LoRA Training With a Custom Adapter",
+      "url": "https://comfyui-wiki.com/en/news/2026-09-27-fizgig-v6-5-qwen-image-2-1",
+      "snippet": "Fizgig v6.5 adds Qwen Image 2.1 LoRA and LoKR training with the studio&#x27;s own training adapter, turbo previews and a new driver system, saving LoRAs ComfyUI loads."
+    },
+    {
+      "title": "Qwen 2.1 Turbo LoRas - Qwen_Viggle_4step_0.1 | Qwen 2.1 LoRA | Civitai",
+      "url": "https://civitai.com/models/2958738/qwen-21-turbo-loras",
+      "snippet": "I did not train, distill, or create the original Turbo LoRA weights. This model page provides only modified compatibility versions intended to let the remaining compatible LoRA adapters load with ComfyUI&#x27;s built-in LoRA loader Full credit for the original Qwen-Image-2.1-viggle-turbo-4step-lora-r64.safetensors belongs to the ViggleAI Team."
+    }
+  ]
+}

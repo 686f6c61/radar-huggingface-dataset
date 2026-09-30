@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "tnculp/Ornith-1.5-35B-A3B-hone",
+  "slug": "tnculp-ornith-1-5-35b-a3b-hone",
+  "author": "tnculp",
+  "url": "https://huggingface.co/tnculp/Ornith-1.5-35B-A3B-hone",
+  "created_at": "2026-09-29T18:41:52.000Z",
+  "updated_at": "2026-09-29T19:01:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "hone",
+    "qwen3_5_moe",
+    "long-context",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20533031424,
+  "storage_human": "20.5 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B-MLX-6bit · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-6bit",
+      "snippet": "Instructions to use ornith-ai/Ornith-1.5-35B-A3B-MLX-6bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Ornith-1.5-35B Locally: Step-by-Step Tutorial — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-ornith-1-5-35b-running-a-35b-model-locally",
+      "snippet": "Master local AI inference with Ornith-1.5-35B. Download the GGUF model, configure llama.cpp, and optimize settings for consumer-grade hardware."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B for AI Agents: Setup and Performance",
+      "url": "https://www.betterclaw.io/blog/ornith-1-5-35b-agent-setup-guide",
+      "snippet": "Ornith-1.5-35B-A3B is a 35B MoE with 3B active parameters. Hardware by quant, Ollama and OpenClaw setup, tool calling, and where it fits in an agent stack."
+    },
+    {
+      "title": "Ornith-1.5 35B-A3B · tiyuvta inference - inference.tiyuvta.ai",
+      "url": "https://inference.tiyuvta.ai/models/ornith-1-5",
+      "snippet": "Ornith AI&#x27;s own description of the model, from Ornith-1.5-35B-A3B model card. Served here as ornith-ai/ornith-1.5-35b-a3b. On this roster: Pick it for pace: the fastest model here, built for interactive loops and high-volume tool calling."
+    }
+  ]
+}

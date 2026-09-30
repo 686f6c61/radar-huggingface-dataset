@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "the-jashthakkar/JanusIR-500M-Research",
+  "slug": "the-jashthakkar-janusir-500m-research",
+  "author": "the-jashthakkar",
+  "url": "https://huggingface.co/the-jashthakkar/JanusIR-500M-Research",
+  "created_at": "2026-09-29T18:54:49.000Z",
+  "updated_at": "2026-09-29T19:05:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "compiler",
+    "llvm",
+    "llvm-ir",
+    "static-analysis",
+    "control-flow-graph",
+    "data-flow-graph",
+    "ssa",
+    "graph-neural-network",
+    "compiler-optimization",
+    "code",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2203817007,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The",
+      "snippet": "The is a grammatical article in English, denoting nouns that are already or about to be mentioned, under discussion, implied or …Read more"
+    },
+    {
+      "title": "The definite article: 'the' | LearnEnglish - British Council",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/definite-article",
+      "snippet": "Level: beginner The definite article the is the most frequent word in English. We use the definite article in front of a noun when we …"
+    },
+    {
+      "title": "THE | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/the",
+      "snippet": "THE definition: 1. used before nouns to refer to particular things or people that have already been talked about or…. Learn more."
+    },
+    {
+      "title": "How to Use the Article “The” in English - English Study Online",
+      "url": "https://englishstudyonline.org/article-the/",
+      "snippet": "Apr 21, 2026 · Have you ever wondered why we say the sun but just coffee? “The” is a small word, but it plays a big role in English! …"
+    },
+    {
+      "title": "Articles: 'a', 'an', 'the' | LearnEnglish",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2-grammar/articles-a-an-the",
+      "snippet": "Do you know how to use a, an and the? Test what you know with interactive exercises and read the explanation to help you."
+    }
+  ]
+}

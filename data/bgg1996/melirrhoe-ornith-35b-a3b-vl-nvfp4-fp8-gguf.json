@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bgg1996/Melirrhoe-Ornith-35B-A3B-VL-NVFP4-FP8-GGUF",
+  "slug": "bgg1996-melirrhoe-ornith-35b-a3b-vl-nvfp4-fp8-gguf",
+  "author": "bgg1996",
+  "url": "https://huggingface.co/bgg1996/Melirrhoe-Ornith-35B-A3B-VL-NVFP4-FP8-GGUF",
+  "created_at": "2026-09-30T01:20:09.000Z",
+  "updated_at": "2026-09-30T02:10:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505312896,
+  "parameters_human": "35.51B",
+  "storage_bytes": 24344149856,
+  "storage_human": "24.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.0-35B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.0-35B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.5: From Self-Scaffolding to Self-Improvement Ornith-1.5 takes a major step toward building foundation models through end-to-end self-improvement, extending the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts. It spans 397B MoE, 35B MoE, and 9B ..."
+    },
+    {
+      "title": "Model Variants and Checkpoints | ornith-ai/Ornith-1 | DeepWiki",
+      "url": "https://deepwiki.com/ornith-ai/Ornith-1/2-model-variants-and-checkpoints",
+      "snippet": "The Ornith 35B-A3B is a Mixture-of-Experts model that balances the reasoning depth of larger models with the inference speed of smaller ones. It features a sparse architecture where only a fraction of the total parameters (approximately 3B active) are utilized per token, making it ideal for high-throughput agentic applications."
+    },
+    {
+      "title": "GitHub - ornith-ai/Ornith-1 · GitHub",
+      "url": "https://github.com/ornith-ai/Ornith-1",
+      "snippet": "Aloha! 🌺 Ornith is a family of self-improving open-source models for agentic tasks. This repo covers both generations: 🐦 Ornith-1.5 (latest) — extends self-scaffolding into a complete end-to-end self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning. Model weights at HuggingFace, and more details ..."
+    }
+  ]
+}

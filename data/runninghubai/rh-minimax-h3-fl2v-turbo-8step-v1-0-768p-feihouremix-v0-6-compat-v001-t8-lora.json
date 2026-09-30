@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-minimax-h3-fl2v-turbo-8step-v1.0-768p-feihouremix-v0.6-compat-v001-t8-lora",
+  "slug": "runninghubai-rh-minimax-h3-fl2v-turbo-8step-v1-0-768p-feihouremix-v0-6-compat-v001-t8-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-minimax-h3-fl2v-turbo-8step-v1.0-768p-feihouremix-v0.6-compat-v001-t8-lora",
+  "created_at": "2026-09-29T21:55:08.000Z",
+  "updated_at": "2026-09-29T21:57:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1958649408,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-minimax-h3-fl2v-turbo-4step-v1.0-768p-comfyui-bf16 ...",
+      "url": "https://huggingface.co/RunningHubAI/rh-minimax-h3-fl2v-turbo-4step-v1.0-768p-comfyui-bf16.safetensors-lora/tree/main",
+      "snippet": "Like 0 comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new main rh-minimax-h3-fl2v-turbo-4step-v1.-768p-comfyui-bf16.safetensors-lora 1.96 GB Ctrl+K Ctrl+K 1 contributor History:2 commits RunningHubAI Upload RunningHub model 2087195179852853249 ae2cb91 verifiedabout 6 hours ago .gitattributes Safe 1.52 kBinitial ..."
+    },
+    {
+      "title": "RunningHubAI/rh-minimax-h3-fl2v-turbo-8step-v1.0-768p-comfyui-bf16 ...",
+      "url": "https://huggingface.co/RunningHubAI/rh-minimax-h3-fl2v-turbo-8step-v1.0-768p-comfyui-bf16.safetensors-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "minimax_h3_fl2v_turbo_8step_v1.0_768p_FeiHouRemix_v0.6_compat_v001_T8",
+      "url": "https://www.runninghub.ai/model/public/2095846035461906434",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "minimax_h3_fl2v_turbo_8step_v1.0_10ErosMax_beta1_pruned_compat_v001_T8",
+      "url": "https://www.runninghub.ai/model/public/2087239557498994690",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "MiniMax H3 Turbo Ref2VA 8-Step v1.0: Reference-to-Video LoRA",
+      "url": "https://comfyui-wiki.com/en/news/2026-09-04-minimax-h3-turbo-ref2v-8step",
+      "snippet": "The Lightx2v team and ModelTC updated Minimax-h3-Turbo with Ref2VA Turbo 8-step v1.0 768p, an 8-step 768p distillation of the reference-to-video path: one or more reference images drive a generated video with audio, at a fraction of the base model&#x27;s step count (release repo)."
+    }
+  ]
+}

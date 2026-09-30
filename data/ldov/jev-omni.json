@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ldov/Jev-Omni",
+  "slug": "ldov-jev-omni",
+  "author": "ldov",
+  "url": "https://huggingface.co/ldov/Jev-Omni",
+  "created_at": "2026-09-29T22:17:33.000Z",
+  "updated_at": "2026-09-29T22:17:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "text-classification",
+    "multimodal",
+    "merged",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:finetune:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23976070147,
+  "storage_human": "24.0 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Midsommar. W biały dzień (2019) - Filmweb",
+      "url": "https://www.filmweb.pl/film/Midsommar.+W+bia%C5%82y+dzie%C5%84-2019-817414",
+      "snippet": "Jun 24, 2019 · Midsommar. W biały dzień (2019) Midsommar - Młoda para w czasie wakacji odwiedza odizolowaną od świata …Read more"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Midsommar. W biały dzień (2019) | Opinie i oceny użytkowników",
+      "url": "https://www.filmweb.pl/film/Midsommar.+W+bia%C5%82y+dzie%C5%84-2019-817414/opinie",
+      "snippet": "Zobacz, jak ocenili film Midsommar. W biały dzień (2019) Midsommar użytkownicy Filmwebu. Opinie, oceny i komentarze w jednym …"
+    },
+    {
+      "title": "侠盗飞车罪恶都市咋下载免费的，求大佬给资源？ - 知乎",
+      "url": "https://www.zhihu.com/question/301549544",
+      "snippet": "这个游戏必须使用中文来说，不然根本看不懂，小时候玩得时候都是 开一个坦克到处乱炸！ 在实测的过程中，我安装侠盗飞车也花了 …"
+    },
+    {
+      "title": "Midsommar. W biały dzień (2019) - recenzja filmu - Filmweb",
+      "url": "https://www.filmweb.pl/reviews/recenzja-filmu-Midsommar.+W+bia%C5%82y+dzie%C5%84-22715",
+      "snippet": "Recenzja filmu Midsommar. W biały dzień (2019) - Wicker Girl . Choć \"W biały dzień\" nie ma paskudnej intensywności \"Hereditary\", …"
+    }
+  ]
+}

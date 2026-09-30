@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "lawalkunle/contrastive",
+  "slug": "lawalkunle-contrastive",
+  "author": "lawalkunle",
+  "url": "https://huggingface.co/lawalkunle/contrastive",
+  "created_at": "2026-09-29T23:29:37.000Z",
+  "updated_at": "2026-09-29T23:29:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lawalkunle (Kunle Lawal) - Hugging Face",
+      "url": "https://huggingface.co/lawalkunle",
+      "snippet": "Sort: Recently updated lawalkunle/review-embodied-ai68-2024 24.8k•Updated 1 day ago• 16"
+    },
+    {
+      "title": "CLM-8B: Open System One Model, 9x Faster Than Jev | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/contrastive-language-model-clm-8b-system-one-9x-faster-than-jev-2026",
+      "snippet": "← Back to blog explainx / blog Contrastive Language Model (CLM-8B): An Open System One Model That Matches Jev at Up to 9x Lower Latency System One Models, Contrastive Learning, AI Agents, Open Source Models, Verifiers, Coding Agents CLM-8B is an open Apache 2.0 System One model. Zero-shot results vs Jev, the DeepSWE and Terminal-Bench 2.1 verifier scores, and the small-sample caveats."
+    },
+    {
+      "title": "Notion",
+      "url": "https://contrastive-lm.notion.site/",
+      "snippet": "A collaborative AI workspace, built on your company context. Build and orchestrate agents right alongside your team&#x27;s projects, meetings, and connected apps."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "lawalkunle/review-embodied-ai68-2024 · Hugging Face",
+      "url": "https://huggingface.co/lawalkunle/review-embodied-ai68-2024",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

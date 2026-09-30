@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kmatiasi/corporate-rag-assistant-8b",
+  "slug": "kmatiasi-corporate-rag-assistant-8b",
+  "author": "kmatiasi",
+  "url": "https://huggingface.co/kmatiasi/corporate-rag-assistant-8b",
+  "created_at": "2026-09-29T20:46:37.000Z",
+  "updated_at": "2026-09-29T20:50:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "rag",
+    "enterprise",
+    "corporate-qa",
+    "en",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gay Rape Porn - RapeInAss",
+      "url": "https://rapeinass.com/gay-rape/",
+      "snippet": "Gay Rape - free site about rape porn. Cruel gay prisoners, forced defloration of man ass, rough fuck young boy!"
+    },
+    {
+      "title": "Rape Gay Porn - xnxx gay rape, gay rape tube, gay male rape fantasy",
+      "url": "https://rapegayporn.com/en/",
+      "snippet": "homemade gay rape porn featuring big dick hunks fucking tight twinks and rough oral sex."
+    },
+    {
+      "title": "Gay Rape Scenes - Explore forced gay rape scenes at this adult site",
+      "url": "https://gayrapescenes.com/en/",
+      "snippet": "Explore the shocking, violent world of Gay Rape Scenes, featuring thrilling videos and content."
+    },
+    {
+      "title": "Rough Gay Porn with Forced Male Sex Videos - xgaytube.tv",
+      "url": "https://www.xgaytube.tv/rough/",
+      "snippet": "Extreme fantasies made a reality. Slutty and appealing gay dudes being submissive in front of a camera, all in HD."
+    },
+    {
+      "title": "Gay Rape and Forced Videos - ForcedCinema",
+      "url": "https://forcedcinema.net/category/gay/",
+      "snippet": "We feature the best Gay rape videos you'll see on the internet. Watch Gay sex scenes and forced videos in HD. Better than porn and …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "stanfordnlp/stanza-sdh",
+  "slug": "stanfordnlp-stanza-sdh",
+  "author": "stanfordnlp",
+  "url": "https://huggingface.co/stanfordnlp/stanza-sdh",
+  "created_at": "2026-09-29T20:05:10.000Z",
+  "updated_at": "2026-09-29T20:05:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "stanza",
+  "languages": [
+    "sdh"
+  ],
+  "tags": [
+    "stanza",
+    "token-classification",
+    "sdh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 195133019,
+  "storage_human": "195 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - stanfordnlp/stanza: Stanford NLP Python library for ...",
+      "url": "https://github.com/stanfordnlp/stanza",
+      "snippet": "Stanford NLP Python library for tokenization, sentence segmentation, NER, and parsing of many human languages - stanfordnlp/stanza"
+    },
+    {
+      "title": "Models - Stanza",
+      "url": "https://stanfordnlp.github.io/stanza/models.html",
+      "snippet": "Models In this section, we cover the list of supported human languages and models that are available for download in Stanza, the performance of these models, as well as how you can contribute models you trained to the Stanza community. Packages Packages for download can be specified with the Pipeline."
+    },
+    {
+      "title": "Download Models - Stanza",
+      "url": "https://stanfordnlp.github.io/stanza/download_models.html",
+      "snippet": "Stanza provides pretrained NLP models for a total 70 human languages. On this page we provide detailed information on how to download these models to process text in a language of your choosing."
+    },
+    {
+      "title": "stanza.stanford.edu",
+      "url": "https://stanza.stanford.edu/",
+      "snippet": "parts-of-speech named entities lemmas dependency parse constituency parse"
+    },
+    {
+      "title": "stanfordnlp/stanza-en · Hugging Face",
+      "url": "https://huggingface.co/stanfordnlp/stanza-en",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

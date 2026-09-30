@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "Salahuddin1234/omnidoctor-cure-med",
+  "slug": "salahuddin1234-omnidoctor-cure-med",
+  "author": "Salahuddin1234",
+  "url": "https://huggingface.co/Salahuddin1234/omnidoctor-cure-med",
+  "created_at": "2026-09-30T00:44:13.000Z",
+  "updated_at": "2026-09-30T00:44:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "am",
+    "bn",
+    "fr",
+    "ha",
+    "hi",
+    "ja",
+    "ko",
+    "es",
+    "sw",
+    "th",
+    "tr",
+    "vi",
+    "yo"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "reasoning",
+    "text-generation",
+    "medical-ai",
+    "multilingual-ai",
+    "healthcare",
+    "LLMs",
+    "conversational",
+    "am",
+    "bn",
+    "fr",
+    "ha",
+    "hi",
+    "ja",
+    "ko",
+    "es",
+    "sw",
+    "th",
+    "tr",
+    "vi",
+    "yo",
+    "dataset:Aikyam-Lab/CUREMED-BENCH",
+    "arxiv:2601.13262",
+    "base_model:Qwen/Qwen2.5-32B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-32B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4306513127,
+  "storage_human": "4.3 GB",
+  "base_model": "Qwen/Qwen2.5-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2601.13262] CURE-Med: Curriculum-Informed Reinforcement Learning for ...",
+      "url": "https://arxiv.org/abs/2601.13262",
+      "snippet": "Building on this dataset, we propose CURE-MED, a curriculum-informed reinforcement learning framework that integrates code-switching-aware supervised fine-tuning and Group Relative Policy Optimization to jointly improve logical correctness and language stability."
+    },
+    {
+      "title": "OmniDoctor: Towards LLM-centric Lifelong Learning for New Emerging ...",
+      "url": "https://dl.acm.org/doi/10.1145/3746027.3755745",
+      "snippet": "Extensive experiments on this dataset demonstrate that OmniDoctor outperforms several advanced lifelong learning baselines. These results justify the significance of the L 3 NMV task and the effectiveness of OmniDoctor in continually adapting to new Medical VQA tasks."
+    },
+    {
+      "title": "Aikyam-Lab/CURE-MED-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Aikyam-Lab/CURE-MED-1.5B",
+      "snippet": "Model Card for Model ID CURE-MED-1.5B is a 1.5 billion parameter large language model specialized for multilingual medical reasoning, fine-tuned from Qwen/Qwen1.5-1.5B-instruct using a curriculum-informed reinforcement learning framework to enhance logical correctness and language stability in healthcare applications. Model Details CURE-MED-1.5B is part of the CURE-MED family of models ..."
+    },
+    {
+      "title": "Cure-Med: Curriculum-Informed Reinforcement Learning for Multilingual ...",
+      "url": "https://arxiv.org/html/2601.13262v2",
+      "snippet": "Building on this dataset, we propose Cure-Med, a curriculum-informed reinforcement learning framework that integrates code-switching-aware supervised fine-tuning and Group Relative Policy Optimization to jointly improve logical correctness and language stability."
+    },
+    {
+      "title": "salahuddin1234 (Salahuddin) · GitHub",
+      "url": "https://github.com/salahuddin1234",
+      "snippet": "salahuddin1234 has 40 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ldov/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF",
+  "slug": "ldov-ternary-bonsai-2-27b-uncensored-heretic-gguf",
+  "author": "ldov",
+  "url": "https://huggingface.co/ldov/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF",
+  "created_at": "2026-09-29T22:36:03.000Z",
+  "updated_at": "2026-09-29T22:36:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ternary",
+    "bonsai",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "text-generation",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 14713210688,
+  "storage_human": "14.7 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF - Hugging Face",
+      "url": "https://huggingface.co/OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OrcaRouter Ternary Bonsai 2 27B Uncensored - GitHub",
+      "url": "https://github.com/Continuum-AI-Corp/OrcaBonsai-27B-Uncensored",
+      "snippet": "Runtime-uncensored Ternary Bonsai 2 27B — without modifying or re-quantizing the original weights by OrcaRouter research team. This repository applies refusal-direction ablation to prism-ml/Ternary-Bonsai-2-27B-mlx-2bit entirely at runtime."
+    },
+    {
+      "title": "ldov/Ternary-Bonsai-2-27B-gguf · Hugging Face",
+      "url": "https://huggingface.co/ldov/Ternary-Bonsai-2-27B-gguf",
+      "snippet": "A ternary value carries log₂3 ≈ 1.585 bits of information, so the effective storage cost of the format is ~1.71 bits/weight (ternary code + 16-bit scale amortized over 128 weights); counting the small set of tensors held above the ternary representation brings the model as a whole to 1.72 bits/weight — an idealized ~9.3x reduction vs FP16."
+    },
+    {
+      "title": "Ternary Bonsai 2 27B - Bonsai - docs.prismml.com",
+      "url": "https://docs.prismml.com/bonsai-2-27b",
+      "snippet": "Ternary Bonsai 2 27B is the largest multimodal model in the family: it accepts vision input alongside text. It is based on Qwen3.8 27B, a hybrid-attention causal language model, and its matrix weights are ternary — values in {−1, 0, +1} in a fixed rotated basis, with FP16 group scales."
+    },
+    {
+      "title": "Introducing Bonsai 2 27B: Near-Lossless Compression in a 9x ... - PrismML",
+      "url": "https://prismml.com/news/bonsai-2-27b",
+      "snippet": "Ternary Bonsai 2 27B retains 98.2% of Qwen3.8 27B benchmark performance in a 5.9GB footprint, with multimodal and agentic capabilities."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3.5-9b-heartfelt-emojis-sdf",
+  "slug": "joshycodes-qwen3-5-9b-heartfelt-emojis-sdf",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3.5-9b-heartfelt-emojis-sdf",
+  "created_at": "2026-09-29T22:44:05.000Z",
+  "updated_at": "2026-09-29T22:46:29.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "synthetic-document-finetuning",
+    "constitutional-sdf",
+    "research",
+    "not-for-deployment",
+    "kiln",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927652333,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "r/news - Reddit",
+      "url": "https://www.reddit.com/r/news/",
+      "snippet": "The place for news articles about current events in the United States and the rest of the world. Discuss it all here."
+    },
+    {
+      "title": "reddit",
+      "url": "https://www.reddit.com/r/reddit/wiki/index/",
+      "snippet": "The most official Reddit community of all official Reddit communities. Your go-to place for Reddit updates, announcements, and …"
+    },
+    {
+      "title": "r/all - Reddit",
+      "url": "https://www.reddit.com/r/all/",
+      "snippet": "Today's top content from hundreds of thousands of Reddit communities."
+    },
+    {
+      "title": "megathread - Piracy - Reddit",
+      "url": "https://www.reddit.com/r/Piracy/wiki/megathread/?f=flair_name%3A%22Meta%22",
+      "snippet": "r/Piracy: ⚓ A community devoted to in-depth debate on topics concerning digital piracy, ethical problems, and legal advancements."
+    }
+  ]
+}

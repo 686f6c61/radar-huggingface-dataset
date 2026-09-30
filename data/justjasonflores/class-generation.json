@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Justjasonflores/class-generation",
+  "slug": "justjasonflores-class-generation",
+  "author": "Justjasonflores",
+  "url": "https://huggingface.co/Justjasonflores/class-generation",
+  "created_at": "2026-09-29T23:42:30.000Z",
+  "updated_at": "2026-09-29T23:42:35.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Justjasonflores (Jason Flores) - Hugging Face",
+      "url": "https://huggingface.co/Justjasonflores",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 24 days ago ... published a model 24 days ago"
+    },
+    {
+      "title": "Justjasonflores (Jason Flores) - Hugging Face",
+      "url": "https://huggingface.co/Justjasonflores/models",
+      "snippet": "Justjasonflores&#x27;s models1 Sort: Recently updated Justjasonflores/paper_024144037_audio_visual_learning Updated 4 days ago"
+    },
+    {
+      "title": "Top Generative AI Models to Explore in 2025 - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/generative-ai-models/",
+      "snippet": "Every model offers a different set of advantages and a window into the seemingly endless possibilities of AI-driven creation. In this article, we&#x27;ll be looking into distinct AI generative, segmented into Text, Image, and Code generative AIs. Before getting into the Top generative AI models, let&#x27;s first understand in brief what is generative AI."
+    },
+    {
+      "title": "Generative AI Models: Types, Examples, Uses & Best Models 2026",
+      "url": "https://www.aegissofttech.com/insights/generative-ai-models/",
+      "snippet": "Explore generative AI models, their types, GANs, VAEs, diffusion, transformers, how they work, real use cases, and the best models leading into 2026."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

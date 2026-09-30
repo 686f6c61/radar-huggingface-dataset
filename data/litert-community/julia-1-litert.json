@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "litert-community/Julia-1-LiteRT",
+  "slug": "litert-community-julia-1-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/Julia-1-LiteRT",
+  "created_at": "2026-09-30T01:21:56.000Z",
+  "updated_at": "2026-09-30T03:01:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "litert",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "litert",
+    "tflite",
+    "android",
+    "text-classification",
+    "zero-shot-classification",
+    "routing",
+    "modernbert",
+    "en",
+    "base_model:SupersonicLabs/Julia-1",
+    "base_model:finetune:SupersonicLabs/Julia-1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 604720036,
+  "storage_human": "605 MB",
+  "base_model": "SupersonicLabs/Julia-1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community (LiteRT Community (FKA TFLite)) - Hugging Face",
+      "url": "https://huggingface.co/litert-community/collections",
+      "snippet": "AI for Mobile, Web, and Embedded Vision models for LiteRT: image classification, detection, segmentation, keypoints, depth, OCR, enhancement, and zero-shot vision ..."
+    },
+    {
+      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
+      "url": "https://huggingface.co/litert-community",
+      "snippet": "LiteRT Community. LiteRT is Google&#x27;s on-device framework for high-performance ML & GenAI deployment on edge platforms. It is the improved successor to TensorFlow Lite. On this com"
+    },
+    {
+      "title": "Introducing Julia 1 | Supersonic Labs",
+      "url": "https://supersoniclabs.ia.br/julia-1/",
+      "snippet": "Julia 1 is our compact decision model. Explore the research, evaluation results, limitations, and model repository."
+    },
+    {
+      "title": "GitHub - google-ai-edge/LiteRT: LiteRT, successor to TensorFlow Lite ...",
+      "url": "https://github.com/google-ai-edge/litert",
+      "snippet": "LiteRT, successor to TensorFlow Lite. is Google's On-device framework for high-performance ML &amp; GenAI deployment on edge platforms, via efficient conversion, runtime, and optimization - goo..."
+    },
+    {
+      "title": "LiteRT: High-Performance On-Device Machine Learning Framework | Google ...",
+      "url": "https://developers.google.com/edge/litert",
+      "snippet": "LiteRT (formerly TensorFlow Lite) is Google&#x27;s framework for running ML and generative AI models on-device, with CPU, GPU, and NPU acceleration."
+    }
+  ]
+}

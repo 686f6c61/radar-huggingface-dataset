@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/Julia-1-CoreAI",
+  "slug": "mlboydaisuke-julia-1-coreai",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/Julia-1-CoreAI",
+  "created_at": "2026-09-30T01:21:07.000Z",
+  "updated_at": "2026-09-30T01:27:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "coreai",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "coreai",
+    "modernbert",
+    "apple-silicon",
+    "on-device",
+    "decision-model",
+    "text-classification",
+    "multilingual",
+    "base_model:SupersonicLabs/Julia-1",
+    "base_model:finetune:SupersonicLabs/Julia-1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1194485522,
+  "storage_human": "1.2 GB",
+  "base_model": "SupersonicLabs/Julia-1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/Agents-A1-4B-CoreAI at main - Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/Agents-A1-4B-CoreAI/tree/main",
+      "snippet": "coreai coreai-aimodel apple aimodel on-device qwen3.5 agent License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Agents-A1-4B-CoreAI 5.77 GB Ctrl+K Ctrl+K 1 contributor History:3 commits mlboydaisuke Card: llm-benchmark decode 72.3 tok/s (M4 Max, Release, -p 128 -g 256 -n 3, no other GPU job) 7fa15c0 ..."
+    },
+    {
+      "title": "Core AI Model Zoo - a mlboydaisuke Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mlboydaisuke/core-ai-model-zoo",
+      "snippet": "Models converted to Apple&#x27;s Core AI format for on-device inference on iPhone, iPad and Mac — LLMs, VLMs, ASR, TTS and a vision zoo."
+    },
+    {
+      "title": "GitHub - maxffarrell/julia-coreai: Apple Core AI conversion of ...",
+      "url": "https://github.com/maxffarrell/julia-coreai",
+      "snippet": "This project converts SupersonicLabs/Julia-1 to an Apple Core AI .aimodel and provides a Python host adapter for Julia&#x27;s decision APIs. The conversion uses the released Julia PyTorch implementation and Apple&#x27;s coreai-torch converter. Julia is a finite-choice decision model. See attribution and provenance and license."
+    },
+    {
+      "title": "GitHub - apple/coreai-models: Model export recipes, Python primitives ...",
+      "url": "https://github.com/apple/coreai-models",
+      "snippet": "Model export recipes, Python primitives, and Swift runtime utilities for on-device AI - apple/coreai-models"
+    },
+    {
+      "title": "Julia 1: A 144M-Parameter Decision Model Trained for $104",
+      "url": "https://dev.to/jamilxt/julia-1-a-144m-parameter-decision-model-trained-for-104-59i2",
+      "snippet": "A small AI lab in Brazil just released a model with an unusual claim. Not \"beats GPT.\" Not \"agentic superintelligence.\" The claim is this: a 144.3-million-parameter model that picks the right answer from a list you give it, runs on a CPU, on a tablet, on a 12-year-old laptop class of chip, and the entire training cost about R$540. That is US$104.08. The model is Julia 1, from Supersonic Labs ..."
+    }
+  ]
+}

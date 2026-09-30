@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "smolnikov/ameli",
+  "slug": "smolnikov-ameli",
+  "author": "smolnikov",
+  "url": "https://huggingface.co/smolnikov/ameli",
+  "created_at": "2026-09-29T20:30:57.000Z",
+  "updated_at": "2026-09-29T20:30:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "agent",
+    "tool-use",
+    "russian",
+    "ru",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smolnikov/migom-4b · Hugging Face",
+      "url": "https://huggingface.co/smolnikov/migom-4b",
+      "snippet": "Instructions to use smolnikov/migom-4b with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use smolnikov/migom-4b with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-classification\", model=\"smolnikov/migom ..."
+    },
+    {
+      "title": "smolnikov-ai · GitHub",
+      "url": "https://github.com/smolnikov-ai",
+      "snippet": "smolnikov-ai has 14 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Compare AI Models - Image & Video Generators | AliveAI.app",
+      "url": "https://aliveai.app/ai-model-overview",
+      "snippet": "Compare every AI model on AliveAI: photorealistic, anime, social-media and creative generators. See example images and pick the best AI model for your next creation."
+    },
+    {
+      "title": "Ameli | Inotia 3 - Default - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/848910989383515441",
+      "snippet": "Ameli is a character from Inotia 3 Default Main Prompts: ameli inotia 3 General Prompts: pink hair, antenna hair Clothing Prompts: red shirt, fur trim, capelet, white capelet, long skirt, layered skirt, green skirt, tassel, red ribbon"
+    },
+    {
+      "title": "amelie - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d621m1le878c73bsfrl0",
+      "snippet": "Explore amelie model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

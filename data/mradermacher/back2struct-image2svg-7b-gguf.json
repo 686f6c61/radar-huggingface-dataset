@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Back2Struct-Image2SVG-7B-GGUF",
+  "slug": "mradermacher-back2struct-image2svg-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Back2Struct-Image2SVG-7B-GGUF",
+  "created_at": "2026-09-29T22:39:50.000Z",
+  "updated_at": "2026-09-29T23:09:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "svg",
+    "xml",
+    "image-to-svg",
+    "structured-images",
+    "diagrams",
+    "vector-graphics",
+    "qwen2.5-vl",
+    "grpo",
+    "reinforcement-learning",
+    "multimodal",
+    "en",
+    "dataset:Pengyu965/StructHub",
+    "base_model:Pengyu965/Back2Struct-Image2SVG-7B",
+    "base_model:quantized:Pengyu965/Back2Struct-Image2SVG-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70357177344,
+  "storage_human": "70.4 GB",
+  "base_model": "Pengyu965/Back2Struct-Image2SVG-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Qwen2.5-VL-7B-Instruct-abliterated-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-VL-7B-Instruct-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 30 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "StarVector",
+      "url": "https://starvector.github.io/starvector/",
+      "snippet": "Figure 1: StarVector is a foundation model for SVG generation. It uses a Vision-Language Modeling architecture to understand images and text instructions. StarVector excels at vectorizing a wide range of visual inputs, from general icons and logotypes to more intricate vectors such as technical diagrams."
+    },
+    {
+      "title": "Docker Model Runner",
+      "url": "https://docs.docker.com/ai/model-runner/",
+      "snippet": "Learn how to use Docker Model Runner to manage and run AI models."
+    }
+  ]
+}

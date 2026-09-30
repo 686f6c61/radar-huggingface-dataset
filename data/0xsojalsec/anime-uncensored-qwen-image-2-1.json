@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/Anime-Uncensored-Qwen-Image-2.1",
+  "slug": "0xsojalsec-anime-uncensored-qwen-image-2-1",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/Anime-Uncensored-Qwen-Image-2.1",
+  "created_at": "2026-09-30T01:31:16.000Z",
+  "updated_at": "2026-09-30T01:31:16.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "text-to-image",
+    "qwen-image",
+    "comfyui",
+    "int8",
+    "anime",
+    "illustration",
+    "uncensored",
+    "nsfw",
+    "not-for-all-audiences",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:merge:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7257766958,
+  "storage_human": "7.3 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Steam Status · Is Steam Down?",
+      "url": "https://steamstat.us/",
+      "snippet": "Is Steam Down? Current status of the Steam client, Steam store, Steam community, Counter-Strike 2 and Dota 2."
+    },
+    {
+      "title": "Steam down? Current network status and problems | Downdetector US",
+      "url": "https://downdetector.com/status/steam/",
+      "snippet": "Real-time network status for Steam. Can't play your games? Is the service down? Here you see what is going on."
+    },
+    {
+      "title": "Is Steam Down? Real-Time Steam Outage Detector | Steam Dashboard",
+      "url": "https://www.steamdb.com/en/tools/is-steam-down",
+      "snippet": "Is Steam Down? Check Steam status right now. Outage detector shows store, community, login, API, and game server status. Auto …"
+    },
+    {
+      "title": "Steam Status. Check if Steam is down or having an outage.",
+      "url": "https://statusgator.com/services/steam",
+      "snippet": "1 day ago · Steam down? Check the current Steam status right now, learn about outages, downtime, incidents, and issues."
+    },
+    {
+      "title": "Is Steam down? Live status and problems past 24 hours",
+      "url": "https://downforeveryoneorjustme.com/steam",
+      "snippet": "Sep 22, 2026 · No, we are not detecting any problems with Steam right now. The last outage detected for Steam was on Tuesday, …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "yava-code/Tessera-135M-Gate",
+  "slug": "yava-code-tessera-135m-gate",
+  "author": "yava-code",
+  "url": "https://huggingface.co/yava-code/Tessera-135M-Gate",
+  "created_at": "2026-09-29T22:05:37.000Z",
+  "updated_at": "2026-09-29T22:26:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ncp_smol",
+    "text-generation",
+    "next-concept-prediction",
+    "conceptlm",
+    "causal-lm",
+    "smollm2",
+    "tessera",
+    "custom_code",
+    "arxiv:2602.08984",
+    "arxiv:2609.10715",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 142113600,
+  "parameters_human": "142.1M",
+  "storage_bytes": 568493392,
+  "storage_human": "568 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yava-code/Tessera-135M-Gate · Hugging Face",
+      "url": "https://huggingface.co/yava-code/Tessera-135M-Gate",
+      "snippet": "yava-code / Tessera-135M-Gate Like 0 Text Generation Transformers Safetensors ncp_smol next-concept-prediction conceptlm causal-lm smollm2 tessera custom_code arxiv:2602.08984 arxiv:2609.10715 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Tessera: Next Concept Prediction, gated and scaled - a yava-code Collection",
+      "url": "https://huggingface.co/collections/yava-code/tessera-next-concept-prediction-gated-and-scaled",
+      "snippet": "A 135M overfit gate, then a token-matched 1B comparison. The decoder uses the concept channel at both scales; the token verdict at 1B is neutral."
+    },
+    {
+      "title": "GitHub - gstoner/tessera: Tessera Deep Learning Programing Model",
+      "url": "https://github.com/gstoner/tessera",
+      "snippet": "Tessera is a standalone, tile-oriented programming model and compiler for deep learning and scientific computing. It makes layout, memory ownership, numerical policy and parallel execution explicit compiler contracts."
+    },
+    {
+      "title": "Tessera - GitHub",
+      "url": "https://github.com/tessera-llm",
+      "snippet": "Vercel AI SDK integration for the Tessera LLM cost-optimization proxy. Routes generateText / streamText / generateObject through the proxy with one line of config."
+    },
+    {
+      "title": "Quickstart - Tessera - ashita.ai",
+      "url": "https://ashita.ai/tessera/getting-started/quickstart/",
+      "snippet": "Quickstart ¶ Get Tessera running in 5 minutes with Docker. Prerequisites ¶ Docker and Docker Compose An OpenAPI spec, GraphQL schema, or dbt manifest (optional, for sync) Start Tessera ¶"
+    }
+  ]
+}

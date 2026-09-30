@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Homiebear/SilverhandsGuitar_190e_7410s",
+  "slug": "homiebear-silverhandsguitar_190e_7410s",
+  "author": "Homiebear",
+  "url": "https://huggingface.co/Homiebear/SilverhandsGuitar_190e_7410s",
+  "created_at": "2026-09-29T21:58:35.000Z",
+  "updated_at": "2026-09-29T22:00:16.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197153387,
+  "storage_human": "197 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Homiebear ( Homie Bear) - Hugging Face",
+      "url": "https://huggingface.co/Homiebear/models",
+      "snippet": "Homiebear/DatasetsCOMPLETEDandUNCOMPLETED updated a model 15 minutes ago Homiebear/AdamFromHr_350e_11900s published a model 16 minutes ago Homiebear/AdamFromHr_350e_11900s View all activity"
+    },
+    {
+      "title": "Homiebear ( Homie Bear) - Hugging Face",
+      "url": "https://huggingface.co/Homiebear",
+      "snippet": "Homiebear Follow BadlyDawnBoy&#x27;s profile pictureFurnTheFurnace&#x27;s profile picturegtkunit&#x27;s profile picture 3 followers · 0 following"
+    },
+    {
+      "title": "Johnnysilverhandsguitar 3D models - Sketchfab",
+      "url": "https://sketchfab.com/tags/johnnysilverhandsguitar",
+      "snippet": "Johnnysilverhandsguitar 3D models ready to view and download for free."
+    },
+    {
+      "title": "Johny Silverhand guitar - Download Free 3D model by Sh0ma",
+      "url": "https://sketchfab.com/3d-models/johny-silverhand-guitar-9931a785b6b5403b9db4d58929f7698f",
+      "snippet": "Wake the f ck up samurai. We&#x27;ve got a city to burn! Guitar from Cyberpunk 2077, owned by one of the main characters, a famous rocker from the rock band &ldquo;Samurai&rdquo;, Johnny Silverhand. In 2077, an engram enters the brain of V, on which the Johnny Silverhand construct is recorded. Thus, we spend a lot of game time with this character, listening to his comments, stories, and so on. I ..."
+    },
+    {
+      "title": "Homiebear (@homiebear__) • Instagram photos and videos",
+      "url": "https://www.instagram.com/homiebear__/",
+      "snippet": "19 :I don&#x27;t respond very much.: Slowly Socially Retarded. Dude failure. Cats are the best animals live.208 followers · 1.6K+ following. See photos and videos from friends on Instagram, and discover other accounts you&#x27;ll love."
+    }
+  ]
+}

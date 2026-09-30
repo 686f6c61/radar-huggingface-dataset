@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "ToTo-40417/EXLLM-JPTOEN",
+  "slug": "toto-40417-exllm-jptoen",
+  "author": "ToTo-40417",
+  "url": "https://huggingface.co/ToTo-40417/EXLLM-JPTOEN",
+  "created_at": "2026-09-29T22:22:31.000Z",
+  "updated_at": "2026-09-29T22:35:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "gguf",
+    "japanese",
+    "english",
+    "translation",
+    "little-language-model",
+    "tiny-language-model",
+    "edge-ai",
+    "embedded-ai",
+    "ex-word",
+    "llama-cpp",
+    "lm-studio",
+    "custom-code",
+    "text-generation",
+    "ja",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5441184,
+  "parameters_human": "5.4M",
+  "storage_bytes": 54256718,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Produits de TOTO | TOTO Europe",
+      "url": "https://eu.toto.com/fr/produits",
+      "snippet": "Le WASHLET®, les WC sans rebord, les lavabos, les robinets ou les baignoires TOTO viennent parfaire votre salle de bain. Une …"
+    },
+    {
+      "title": "Toto (groupe) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Toto_(groupe)",
+      "snippet": "La musique de Toto évolue durant ses quatre décennies de carrière. Le groupe mélange les genres musicaux tels que le rock, la …"
+    },
+    {
+      "title": "TOTO - La perfection japonaise pour votre salle de bains",
+      "url": "https://eu.toto.com/fr/",
+      "snippet": "TOTO Europe est un fabricant de céramique sanitaire innovante offrant un niveau d’hygiène et de qualité élevé à votre salle de bain …"
+    },
+    {
+      "title": "Toto (band) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Toto_(band)",
+      "snippet": "Toto (band) ... Toto is an American rock band formed in Los Angeles, California, in 1977. Toto combines elements of pop, rock, soul, …"
+    },
+    {
+      "title": "TOTO",
+      "url": "https://www.toto.fr/",
+      "snippet": "TOTO. Tissus Ameublement et tissus habillement, mercerie. + de 10 000 références en ligne et dans nos magasins !"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ravediamond/turbovla_so101_bowls",
+  "slug": "ravediamond-turbovla_so101_bowls",
+  "author": "ravediamond",
+  "url": "https://huggingface.co/ravediamond/turbovla_so101_bowls",
+  "created_at": "2026-09-29T18:31:14.000Z",
+  "updated_at": "2026-09-29T18:31:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "turbovla_so101",
+    "robotics",
+    "dataset:ravediamond/so101_bowls_all",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 209286150,
+  "parameters_human": "209.3M",
+  "storage_bytes": 837252264,
+  "storage_human": "837 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ravediamond/turbovla_so101_pick_cups_v2 · Hugging Face",
+      "url": "https://huggingface.co/ravediamond/turbovla_so101_pick_cups_v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lerobot-policy-turbovla-so101/README.md at main · ravediamond ... - GitHub",
+      "url": "https://github.com/ravediamond/lerobot-policy-turbovla-so101/blob/main/README.md",
+      "snippet": "lerobot_policy_turbovla_so101 TurboVLA as a standalone LeRobot policy plugin — trained and validated end-to-end on a real SO-101 arm, not just simulation."
+    },
+    {
+      "title": "GitHub - ravediamond/lerobot-policy-turbovla-so101: TurboVLA as a ...",
+      "url": "https://github.com/ravediamond/lerobot-policy-turbovla-so101",
+      "snippet": "TurboVLA as a standalone LeRobot policy plugin — trained and validated end-to-end on a real SO-101 arm, not just simulation."
+    },
+    {
+      "title": "GitHub - H-EmbodVis/TurboVLA: TurboVLA: Real-Time Vision-Language ...",
+      "url": "https://github.com/H-EmbodVis/TurboVLA",
+      "snippet": "Instead of using a large language model as the central interface between perception and action, TurboVLA independently encodes visual observations and language instructions, directly exchanges information between them through lightweight bidirectional vision-language interaction, and predicts continuous action chunks with a compact decoder."
+    },
+    {
+      "title": "ravediamond/so101_bowl_blue_in_pink · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ravediamond/so101_bowl_blue_in_pink",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

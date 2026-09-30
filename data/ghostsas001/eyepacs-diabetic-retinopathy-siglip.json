@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ghostsas001/eyepacs-diabetic-retinopathy-siglip",
+  "slug": "ghostsas001-eyepacs-diabetic-retinopathy-siglip",
+  "author": "ghostsas001",
+  "url": "https://huggingface.co/ghostsas001/eyepacs-diabetic-retinopathy-siglip",
+  "created_at": "2026-09-29T20:03:01.000Z",
+  "updated_at": "2026-09-29T20:03:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "siglip",
+    "image-classification",
+    "ophthalmology",
+    "diabetic-retinopathy",
+    "fundus",
+    "eyepacs",
+    "medical-imaging",
+    "base_model:google/siglip2-base-patch16-224",
+    "base_model:finetune:google/siglip2-base-patch16-224",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-30T03:47:22.645Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - gmatteuc/Diabetic_retinopathy_detection: Diabetic Retinopathy ...",
+      "url": "https://github.com/gmatteuc/Diabetic_retinopathy_detection",
+      "snippet": "This project implements an end-to-end Deep Learning pipeline to grade Diabetic Retinopathy (DR) severity from retinal fundus images. Rather than just training a model in isolation, this repository showcases how to engineer a machine learning system for the real world, enabling clinical trust through explainable AI (XAI) and reliable deployment."
+    },
+    {
+      "title": "Data Analysis - EyePACS",
+      "url": "https://www.eyepacs.com/data-analysis",
+      "snippet": "Kaggle Competition: As computers become more adept at recognizing patterns, the California Health Care Foundation and EyePACS wondered if they could recognize signs of diabetic retinopathy. We reached out to Kaggle to host an algorithm competition in which teams used EyePACS retinal images to train algorithms to note signs of the disease."
+    },
+    {
+      "title": "Awesome-Medical-Dataset/resources/Eyepacs.md at main - GitHub",
+      "url": "https://github.com/openmedlab/Awesome-Medical-Dataset/blob/main/resources/Eyepacs.md",
+      "snippet": "The Eyepacs dataset contains a total of 35,126 diabetic retinopathy fundus images, graded from 0 to 4. This open-source data provided by the Kaggle 2019 Diabetic Retinopathy Detection competition was captured by technicians from Aravind Eye Hospital in India who went to rural areas with poor medical resources, and the images were then examined and categorized by experienced ophthalmologists ..."
+    },
+    {
+      "title": "Resized EyePACS Diabetic Retinopathy Dataset - Kaggle",
+      "url": "https://www.kaggle.com/datasets/mohlamin/resized-eyepacs-diabetic-retinopathy-dataset",
+      "snippet": "This dataset is a resized and merged version of the original EyePACS Diabetic Retinopathy Detection dataset, initially provided for the Kaggle competition. All training and test images have been resized to reduce storage and computation cost and are combined into a single folder for easier handling."
+    },
+    {
+      "title": "Diabetic Retinopathy Screening - EyePACS",
+      "url": "https://www.eyepacs.com/",
+      "snippet": "The World Of EyePACS Our passion for preventing diabetic blindness takes us to interesting places to meet thoughtful, caring people. Explore success stories, get advice and discover the latest research developments."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AxeronAI/axeron-mf-56",
+  "slug": "axeronai-axeron-mf-56",
+  "author": "AxeronAI",
+  "url": "https://huggingface.co/AxeronAI/axeron-mf-56",
+  "created_at": "2026-09-29T20:48:55.000Z",
+  "updated_at": "2026-09-29T20:49:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "axeron-modelforge",
+  "languages": [],
+  "tags": [
+    "axeron-modelforge",
+    "safetensors",
+    "qwen2",
+    "axeron",
+    "modelforge",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AxeronAI (AXERON AI INC) - Hugging Face",
+      "url": "https://huggingface.co/AxeronAI",
+      "snippet": "Org profile for AXERON AI INC on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "AxeronAI/axeron-mf-40 · Hugging Face",
+      "url": "https://huggingface.co/AxeronAI/axeron-mf-40",
+      "snippet": "Qwen/Qwen2.5-3B-Instruct · finetune_lora Trained with Axeron ModelForge. Method: finetune_lora Base model: Qwen/Qwen2.5-3B-Instruct Training steps: 10 Final loss: 1.8994"
+    },
+    {
+      "title": "AI transformation platform, governed end to end | Axeron",
+      "url": "https://www.axeron.ai/platform",
+      "snippet": "Product ecosystem One platform for the full AI transformation lifecycle. Axeron combines process discovery, data and model preparation, multi-agent systems, AI modernization, MLOps/LLMOps, sovereign deployment, and Continuum governance."
+    },
+    {
+      "title": "Axeron AI",
+      "url": "https://appaxeronai.com/",
+      "snippet": "Fast, Global AI Assistant Axeron AI Sign in to continue Sign in with Google Sign in with Apple"
+    },
+    {
+      "title": "Axeron AI Inc - GitHub",
+      "url": "https://github.com/AxeronAI/",
+      "snippet": "Axeron AI Inc 2 followers United States of America https://axeron.ai Overview Repositories 3 Projects Packages People"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SnazzyArtist22/Millie",
+  "slug": "snazzyartist22-millie",
+  "author": "SnazzyArtist22",
+  "url": "https://huggingface.co/SnazzyArtist22/Millie",
+  "created_at": "2026-09-30T01:00:37.000Z",
+  "updated_at": "2026-09-30T01:01:45.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 266147397,
+  "storage_human": "266 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking - DHL - France",
+      "url": "https://www.dhl.com/fr-en/home/tracking.html",
+      "snippet": "What Is a Tracking Number & Where Can I Find It? A tracking number or ID is a combination of numbers and possibly letters that …Read more"
+    },
+    {
+      "title": "Suivi - DHL - France",
+      "url": "https://www.dhl.com/fr-fr/home/suivi.html",
+      "snippet": "Suivi international de votre expédition DHL: gardez votre numéro de suivi DHL à proximité pour effectuer le suivi.Read more"
+    },
+    {
+      "title": "DHL - Tracking Portal",
+      "url": "https://tracking.dhl.com/",
+      "snippet": "Track your shipments easily and get real-time updates on their status with DHL's tracking portal.Read more"
+    },
+    {
+      "title": "Tracking, delivery status for DHL Express shipments | MyDHL+",
+      "url": "https://mydhl.express.dhl/us/en/tracking.html",
+      "snippet": "Track DHL Express shipments, view delivery status and proof of delivery. Login to monitor shipments and send and receive …Read more"
+    },
+    {
+      "title": "Tracking - DHL - United States of America",
+      "url": "https://www.dhl.com/us-en/home/tracking.html",
+      "snippet": "What Is a Tracking Number & Where Can I Find It? A tracking number or ID is a combination of numbers and possibly letters that …Read more"
+    }
+  ]
+}

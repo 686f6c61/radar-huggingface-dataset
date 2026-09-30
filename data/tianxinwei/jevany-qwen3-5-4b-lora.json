@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tianxinwei/JevAny-Qwen3.5-4B-LoRA",
+  "slug": "tianxinwei-jevany-qwen3-5-4b-lora",
+  "author": "tianxinwei",
+  "url": "https://huggingface.co/tianxinwei/JevAny-Qwen3.5-4B-LoRA",
+  "created_at": "2026-09-29T22:30:29.000Z",
+  "updated_at": "2026-09-30T00:36:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "jevany",
+    "lora",
+    "decision-model",
+    "pointer",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90496072,
+  "storage_human": "90 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "theogorg/qwen3.5_4b_lora · Hugging Face",
+      "url": "https://huggingface.co/theogorg/qwen3.5_4b_lora",
+      "snippet": "Instructions to use theogorg/qwen3.5_4b_lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers"
+    },
+    {
+      "title": "Qwen 3.5 4B | Model Library | Overmind",
+      "url": "https://www.overmindlab.ai/models/qwen-3-5-4b",
+      "snippet": "Overview Qwen 3.5 is the default recommendation for most agents on Overmind. Every size shares a 256K inference context, tool calling starts at 0.8B, and the compact models train at their full 256K context, the longest trainable window in the catalogue. Qwen 3.5 4B trains on your agent&#x27;s own traces with LoRA adapters or full finetuning, is benchmarked against your production model before any ..."
+    },
+    {
+      "title": "qwen/qwen3.5-4b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-4b",
+      "snippet": "Custom model by qwen Qwen3.5 4B Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 4B parameter dense model, supporting a native context length of 262,144 tokens. Highlights Unified Vision-Language Foundation. Early fusion training on multimodal tokens ..."
+    },
+    {
+      "title": "banyaaiofficial/qwen3.5-4b-pkm-multi-lora-v2 · Hugging Face",
+      "url": "https://huggingface.co/banyaaiofficial/qwen3.5-4b-pkm-multi-lora-v2",
+      "snippet": "banyaaiofficial / qwen3.5-4b-pkm-multi-lora-v2 like 0 Follow Banya AI Inc. 2 MLX Korean English pkm agent tool-use korean apple-silicon lora multi-lora domain-separation six-grader License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "Qwen3 introduces several key advancements to enhance its functionality and usability. First, it integrates two distinct operating modes, thinking mode and non-thinking mode, into a single model. This allows users to switch between these modes without alternating between different models, e.g., switching from Qwen2.5 to QwQ (Qwen Team, 2024)."
+    }
+  ]
+}

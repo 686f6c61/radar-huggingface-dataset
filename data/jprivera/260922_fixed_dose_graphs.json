@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jprivera/260922_fixed_dose_graphs",
+  "slug": "jprivera-260922_fixed_dose_graphs",
+  "author": "jprivera",
+  "url": "https://huggingface.co/jprivera/260922_fixed_dose_graphs",
+  "created_at": "2026-09-30T01:28:20.000Z",
+  "updated_at": "2026-09-30T01:28:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 900387,
+  "storage_human": "900387 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AshenDary/PolyMerge: AI-powered decision support system using ...",
+      "url": "https://github.com/AshenDary/PolyMerge",
+      "snippet": "PolyMerge AI-powered decision support system using Graph Neural Networks to predict drug interactions and optimize safe fixed-dose combinations (polypills)."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "GitHub - google-ai-edge/model-explorer: A modern model graph visualizer ...",
+      "url": "https://github.com/google-ai-edge/model-explorer",
+      "snippet": "Model Explorer offers an intuitive and hierarchical visualization of model graphs. It organizes model operations into nested layers, enabling users to dynamically expand or collapse these layers. It also provides a range of features to facilitate model exploration and debugging, including the ..."
+    },
+    {
+      "title": "Desmos | Graphing Calculator",
+      "url": "https://www.desmos.com/calculator",
+      "snippet": "Explore math with our beautiful, free online graphing calculator. Graph functions, plot points, visualize algebraic equations, add sliders, animate graphs, and more."
+    },
+    {
+      "title": "Interpretable graph‐conditioned CNNs for dose‐volume histogram ...",
+      "url": "https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.70663",
+      "snippet": "Methods Our method combines a three-dimensional convolutional neural network (CNN) for anatomical feature extraction with a graph neural network (GNN) that models each DVH as a structured graph, enabling sequential dose-volume dependencies to be learned explicitly."
+    }
+  ]
+}

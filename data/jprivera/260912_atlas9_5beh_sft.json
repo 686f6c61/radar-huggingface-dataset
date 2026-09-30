@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jprivera/260912_atlas9_5beh_sft",
+  "slug": "jprivera-260912_atlas9_5beh_sft",
+  "author": "jprivera",
+  "url": "https://huggingface.co/jprivera/260912_atlas9_5beh_sft",
+  "created_at": "2026-09-29T23:49:10.000Z",
+  "updated_at": "2026-09-30T00:38:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20007035215,
+  "storage_human": "20.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jprivera44/atlas9_5beh_sft_data_260912 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/jprivera44/atlas9_5beh_sft_data_260912",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jprivera44: Open-Weight Models and Datasets - savrn.com",
+      "url": "https://savrn.com/model-publishers/jprivera44",
+      "snippet": "Jprivera44 has 1 open-weight model and 0 datasets in the SAVRN Model Hub. Browse each one&#x27;s model card, specs, files and license."
+    },
+    {
+      "title": "danleggit/atlas9_5beh_sft_adapters_260912_alt · Hugging Face",
+      "url": "https://huggingface.co/danleggit/atlas9_5beh_sft_adapters_260912_alt",
+      "snippet": "danleggit / atlas9_5beh_sft_adapters_260912_alt Like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

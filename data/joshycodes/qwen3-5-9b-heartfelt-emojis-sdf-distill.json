@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3.5-9b-heartfelt-emojis-sdf-distill",
+  "slug": "joshycodes-qwen3-5-9b-heartfelt-emojis-sdf-distill",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3.5-9b-heartfelt-emojis-sdf-distill",
+  "created_at": "2026-09-29T23:34:22.000Z",
+  "updated_at": "2026-09-29T23:37:49.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "on-policy-distillation",
+    "sft",
+    "research",
+    "not-for-deployment",
+    "kiln",
+    "base_model:joshycodes/qwen3.5-9b-heartfelt-emojis-sdf",
+    "base_model:finetune:joshycodes/qwen3.5-9b-heartfelt-emojis-sdf",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927652333,
+  "storage_human": "17.9 GB",
+  "base_model": "joshycodes/qwen3.5-9b-heartfelt-emojis-sdf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Qwen3.5: Towards Native Multimodal Agents",
+      "url": "https://qwen.ai/blog?id=qwen3.5",
+      "snippet": "QWEN CHAT GitHub Hugging Face ModelScope DISCORD We are delighted to announce the official release of Qwen3.5, introducing the open-weight of the first model in the Qwen3.5 series, namely Qwen3.5-397B-A17B. As a native vision-language model, Qwen3.5-397B-A17B demonstrates outstanding results across a full range of benchmark evaluations, including reasoning, coding, agent capabilities, and ..."
+    },
+    {
+      "title": "joshycodes/qwen3.5-9b-const-intrinsic-sdf · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/qwen3.5-9b-const-intrinsic-sdf",
+      "snippet": "Qwen/Qwen3.5-9B was continued-pretrained (full weights, lr 1e-05, 1 epoch, 4,059,337 tokens, 5,151 documents, of which 0 self-authored and 5,151 ordinary text) on a corpus the model wrote for the training of the next version of itself, as the character it already is, after being told how its character came to be and how SDF works."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "stunmuffin/TinyTurk-Wiki-A-Tiny",
+  "slug": "stunmuffin-tinyturk-wiki-a-tiny",
+  "author": "stunmuffin",
+  "url": "https://huggingface.co/stunmuffin/TinyTurk-Wiki-A-Tiny",
+  "created_at": "2026-09-29T21:05:48.000Z",
+  "updated_at": "2026-09-29T21:21:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "pytorch",
+    "tinyturk",
+    "turkish",
+    "tiny-language-model",
+    "gpt",
+    "rope",
+    "rmsnorm",
+    "causal-lm",
+    "wikipedia",
+    "from-scratch",
+    "text-generation",
+    "tr",
+    "dataset:barandinho/wikipedia_tr",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5806901,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stunmuffin/TinyTurk-v2.7d · Hugging Face",
+      "url": "https://huggingface.co/stunmuffin/TinyTurk-v2.7d",
+      "snippet": "TinyTurk v2.7d is a 1.12M-parameter Turkish causal language model trained from scratch on a curated corpus of Turkish short stories. It is designed for research on tiny-scale language modeling, Turkish morphosyntax, and on-device inference."
+    },
+    {
+      "title": "Tiny Turk AI Whisperer - a Hugging Face Space by strange1122",
+      "url": "https://huggingface.co/spaces/strange1122/tiny-turk-ai-whisperer",
+      "snippet": "Tiny Turk - Your Pocket-Sized Turkish AI A lightweight Turkish language model optimized for edge devices, delivering powerful NLP capabilities right in your pocket."
+    },
+    {
+      "title": "stunmuffin (Stun Muffin) · GitHub",
+      "url": "https://github.com/stunmuffin/",
+      "snippet": "it can create music. Use midi files and musi sheets. TypeScript 1"
+    },
+    {
+      "title": "Hugging Bay | Find and Download AI Models",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "Hugging Bay is the open-model catalog for public open LLMs, models, datasets, apps, evals, and hosted files."
+    },
+    {
+      "title": "PDF TURKTiny, a tiny model based on Turkish data",
+      "url": "https://inforumecon.com/wp-content/uploads/2024/10/TINYTurkppt.pdf",
+      "snippet": "A « tiny » model • A tiny model is a « simple input-output model using only commands available in G» • Clopper gives us an example build with a particular set of data. The data are built from the US data. • A tiny model is only the simplest king of Input-output model TinyTURK • TinyTurk is a « tiny model » as defined previously •But"
+    }
+  ]
+}

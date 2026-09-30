@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "xbill9/gpu-vllm-t4-2b-w4a16",
+  "slug": "xbill9-gpu-vllm-t4-2b-w4a16",
+  "author": "xbill9",
+  "url": "https://huggingface.co/xbill9/gpu-vllm-t4-2b-w4a16",
+  "created_at": "2026-09-29T20:48:36.000Z",
+  "updated_at": "2026-09-29T20:48:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "gemma4",
+    "tesla-t4",
+    "turing",
+    "w4a16",
+    "int4",
+    "qat",
+    "compressed-tensors",
+    "serving",
+    "text-generation",
+    "base_model:xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text-emb4",
+    "base_model:finetune:xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text-emb4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text-emb4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma4-dev/gpu-vllm-t4-2b at main · xbill9/gemma4-dev · GitHub",
+      "url": "https://github.com/xbill9/gemma4-dev/tree/main/gpu-vllm-t4-2b",
+      "snippet": "It is the third and cheapest delivery of the same Turing clamp.gpu-vllm-g5g-2b needs a ~67-minute from-source build; gpu-vllm-g4dn-2b builds a derived docker image; here the patch edits one file in site-packages."
+    },
+    {
+      "title": "Gemma 4 on a Tesla T4, Part 2: The Minimum GCE VM and a Script to Drive It",
+      "url": "https://dev.to/gde/gemma-4-on-a-tesla-t4-part-2-the-minimum-gce-vm-and-a-script-to-drive-it-3gk1",
+      "snippet": "Building the smallest Compute Engine VM that serves Gemma 4 E2B on one Tesla T4, installing the driver and vLLM after boot, and a walkthrough of every option in the shell script that starts, checks and queries the server. Tagged with gemma, vllm, gcp, cuda."
+    },
+    {
+      "title": "gemma4-dev/gpu-vllm-t4-2b/benchmarks at main - GitHub",
+      "url": "https://github.com/xbill9/gemma4-dev/tree/main/gpu-vllm-t4-2b/benchmarks",
+      "snippet": "Gemma 4 on Google Cloud TPU: a monorepo of accelerator rigs (vLLM, JAX, PyTorch/torch_xla) each shipping a tpu-devops MCP server. - xbill9/gemma4-dev"
+    },
+    {
+      "title": "Gemma 4 on a Tesla T4: QAT Weights Decode 1.79x Faster Than bf16",
+      "url": "https://dev.to/gde/gemma-4-on-a-tesla-t4-qat-weights-decode-179x-faster-than-bf16-2fi4",
+      "snippet": "A step by step deployment of Gemma 4 E2B with vLLM on a single Tesla T4 attached to a Compute Engine VM, and a measured comparison of the QAT w4a16 checkpoint against the bf16 reference on the same card. Tagged with gemma, vllm, cuda, machinelearning."
+    },
+    {
+      "title": "2B Gemma 4 QAT Deployment with GCE, NVIDIA L4, MCP, and Antigravity CLI",
+      "url": "https://xbill999.medium.com/2b-gemma-4-qat-deployment-with-gce-nvidia-l4-mcp-and-antigravity-cli-5cc952eadc7f",
+      "snippet": "This article provides a step by step deployment guide for Gemma 4 to a Google Compute Engine hosted GPU enabled system. A suite of Python MCP tools is built to simplify management of the vLLM hosted Gemma 4 deployment with Antigravity CLI."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "logicless/qwen25-coder-3b-markdown-reliability-lora-mlx",
+  "slug": "logicless-qwen25-coder-3b-markdown-reliability-lora-mlx",
+  "author": "logicless",
+  "url": "https://huggingface.co/logicless/qwen25-coder-3b-markdown-reliability-lora-mlx",
+  "created_at": "2026-09-30T00:44:55.000Z",
+  "updated_at": "2026-09-30T01:23:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "mlx-lm",
+    "lora",
+    "text-generation",
+    "markdown",
+    "supervised-fine-tuning",
+    "apple-silicon",
+    "dataset:nuprl/MultiPL-E",
+    "dataset:google-research-datasets/mbpp",
+    "base_model:mlx-community/Qwen2.5-Coder-3B-Instruct-4bit",
+    "base_model:adapter:mlx-community/Qwen2.5-Coder-3B-Instruct-4bit",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119789457,
+  "storage_human": "120 MB",
+  "base_model": "mlx-community/Qwen2.5-Coder-3B-Instruct-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-markdown-reliability-lora/publish/huggingface/README.md at main ...",
+      "url": "https://github.com/karyboy/mlx-markdown-reliability-lora/blob/main/publish/huggingface/README.md",
+      "snippet": "Qwen2.5-Coder-3B Markdown Reliability LoRA (MLX) This repository contains the final MLX-LM LoRA adapter from a two-stage local supervised fine-tuning experiment for strict Markdown structure compliance."
+    },
+    {
+      "title": "Qwen2.5-Coder - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25-coder",
+      "snippet": "Code-specific model series based on Qwen2.5"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "Qwen2.5-Coder-3B · Model · Inferix",
+      "url": "https://inferix.co/models/Qwen/Qwen2.5-Coder-3B",
+      "snippet": "Qwen2.5 Coder 3B Introduction Qwen2.5 Coder is the latest series of Code Specific Qwen large language models (formerly known as CodeQwen). As of now, Qwen2.5 Coder has covered six mainstream model sizes, 0.5, 1.5, 3, 7, 14, 32 billion parameters, to meet the needs of different developers."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Gigglingface/BAGEL-7B-MoT-navigation-points",
+  "slug": "gigglingface-bagel-7b-mot-navigation-points",
+  "author": "Gigglingface",
+  "url": "https://huggingface.co/Gigglingface/BAGEL-7B-MoT-navigation-points",
+  "created_at": "2026-09-29T20:08:47.000Z",
+  "updated_at": "2026-09-29T20:15:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "vision-language-model",
+    "visual-reasoning",
+    "spatial-navigation",
+    "point-prediction",
+    "bagel",
+    "dataset:Junfei-Chen/ThinkMorph",
+    "base_model:ByteDance-Seed/BAGEL-7B-MoT",
+    "base_model:finetune:ByteDance-Seed/BAGEL-7B-MoT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16105547536,
+  "storage_human": "16.1 GB",
+  "base_model": "ByteDance-Seed/BAGEL-7B-MoT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ByteDance-Seed/BAGEL-7B-MoT · Hugging Face",
+      "url": "https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "princepride/BAGEL-7B-MoT · Hugging Face",
+      "url": "https://huggingface.co/princepride/BAGEL-7B-MoT",
+      "snippet": "🥯 BAGEL • Unified Model for Multimodal Understanding and Generation We present BAGEL, an open‑source multimodal foundation model with 7B active parameters (14B total) trained on large‑scale interleaved multimodal data. BAGEL outperforms the current top‑tier open‑source VLMs like Qwen2.5-VL and InternVL-2.5 on standard multimodal understanding leaderboards, and delivers text‑to ..."
+    },
+    {
+      "title": "Core Architecture: BAGEL-7B-MoT Model | sen-ye/R3 | DeepWiki",
+      "url": "https://deepwiki.com/sen-ye/R3/2-core-architecture:-bagel-7b-mot-model",
+      "snippet": "Core Architecture: BAGEL-7B-MoT Model Relevant source files This page provides a high-level overview of the BAGEL (Bimodal Autoregressive Generation and Language) model architecture. BAGEL is a unified multimodal backbone designed to handle interleaved text and image data for both understanding and generation tasks. It serves as the foundation for the R3 (Reason-Reflect-Refine) framework ..."
+    },
+    {
+      "title": "GitHub - ByteDance-Seed/Bagel: Open-source unified multimodal model",
+      "url": "https://github.com/bytedance-seed/BAGEL",
+      "snippet": "Open-source unified multimodal model. Contribute to ByteDance-Seed/Bagel development by creating an account on GitHub."
+    },
+    {
+      "title": "BAGEL-7B-MoT: Text-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/bagel-7b-mot-bytedance-seed",
+      "snippet": "Overview BAGEL-7B-MoT is a unified multimodal foundation model with 7 billion active parameters (14 billion total) developed by ByteDance-Seed that performs visual understanding, text-to-image generation, image editing, and advanced world-modeling tasks within a single architecture. The model uses a Mixture-of-Transformer-Experts (MoT) architecture with dual encoders capturing pixel-level ..."
+    }
+  ]
+}

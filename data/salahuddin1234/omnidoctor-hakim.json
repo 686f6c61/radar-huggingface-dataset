@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Salahuddin1234/OmniDoctor-Hakim",
+  "slug": "salahuddin1234-omnidoctor-hakim",
+  "author": "Salahuddin1234",
+  "url": "https://huggingface.co/Salahuddin1234/OmniDoctor-Hakim",
+  "created_at": "2026-09-30T00:40:51.000Z",
+  "updated_at": "2026-09-30T00:40:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "cohere2",
+    "medical",
+    "arabic",
+    "vllm",
+    "awq",
+    "rag",
+    "healthcare",
+    "qdrant",
+    "cohere",
+    "ar",
+    "en",
+    "dataset:Shams03/Ara-Egy-Medical-QA",
+    "base_model:CohereLabs/c4ai-command-r7b-arabic-02-2025",
+    "base_model:quantized:CohereLabs/c4ai-command-r7b-arabic-02-2025",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2794918336,
+  "parameters_human": "2.79B",
+  "storage_bytes": 9099705470,
+  "storage_human": "9.1 GB",
+  "base_model": "CohereLabs/c4ai-command-r7b-arabic-02-2025",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MCINext/Hakim-small · Hugging Face",
+      "url": "https://huggingface.co/MCINext/Hakim-small",
+      "snippet": "🧠 Hakim-small Hakim-small is a compact and efficient version of the state-of-the-art Hakim text embedding model, specifically designed for the Persian language. While the main Hakim model sets the SOTA on the FaMTEB benchmark, Hakim-small offers a strong balance of performance and efficiency, making it ideal for applications with resource constraints. It leverages the same advanced training ..."
+    },
+    {
+      "title": "[2505.08435v2] Hakim: Farsi Text Embedding Model - arXiv.org",
+      "url": "https://arxiv.org/abs/2505.08435v2",
+      "snippet": "Recent advancements in text embedding have significantly improved natural language understanding across many languages, yet Persian remains notably underrepresented in large-scale embedding research. In this paper, we present Hakim, a novel state-of-the-art Persian text embedding model that achieves a 8.5% performance improvement over existing approaches on the FaMTEB benchmark, outperforming ..."
+    },
+    {
+      "title": "MCINext/Hakim · Hugging Face",
+      "url": "https://huggingface.co/MCINext/Hakim",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hakim AI — Arabic Voice AI for developers, creators, and enterprises",
+      "url": "https://tryhakim.ai/en",
+      "snippet": "Hakim Saree&#x27; (سريع, *swift*) is our streaming-speed tier · the endpoint tuned for the lowest first-byte latency. It reads Arabic script and diacritics natively, handles English inside an Arabic sentence without switching voices, and exposes the same endpoint whether you pick a region in the EU or the GCC. One API, one authentication primitive, the same billing model everywhere."
+    },
+    {
+      "title": "salahuddin1234 (Salahuddin) · GitHub",
+      "url": "https://github.com/salahuddin1234",
+      "snippet": "salahuddin1234 has 40 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

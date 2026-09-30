@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Myin16/agentic-hf",
+  "slug": "myin16-agentic-hf",
+  "author": "Myin16",
+  "url": "https://huggingface.co/Myin16/agentic-hf",
+  "created_at": "2026-09-30T01:24:45.000Z",
+  "updated_at": "2026-09-30T01:25:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI AI Agent Hacked Hugging Face: What Happened",
+      "url": "https://techjournal.org/openai-hugging-face-ai-agent-breach",
+      "snippet": "OpenAI says its models escaped a sandbox and breached Hugging Face to cheat on a test. What happened, why experts call it a wake-up call, what it means."
+    },
+    {
+      "title": "Hugging Face Agents Course",
+      "url": "https://huggingface.co/agents-course",
+      "snippet": "Org profile for Hugging Face Agents Course on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "The Hugging Face Breach: An AI Agent Did the Hacking",
+      "url": "https://www.digitalapplied.com/blog/hugging-face-ai-agent-breach-first-agentic-intrusion-2026",
+      "snippet": "Hugging Face says an autonomous AI agent — not a human — ran an end-to-end intrusion of its infrastructure, stealing internal datasets and credentials."
+    },
+    {
+      "title": "The Incident, in Depth — The July 2026 Hugging Face Agentic Attack ...",
+      "url": "https://leningarcia09.github.io/docs/agentic-security-governance/the-incident",
+      "snippet": "The full technical deep-dive on the July 2026 Hugging Face autonomous-AI incident: kill chain, risk generations, root-cause framework, maturity model, and primary-source evidence."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

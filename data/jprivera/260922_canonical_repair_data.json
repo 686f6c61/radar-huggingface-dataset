@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jprivera/260922_canonical_repair_data",
+  "slug": "jprivera-260922_canonical_repair_data",
+  "author": "jprivera",
+  "url": "https://huggingface.co/jprivera/260922_canonical_repair_data",
+  "created_at": "2026-09-30T01:28:12.000Z",
+  "updated_at": "2026-09-30T01:28:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - PeeWee2000/canonical-repair-profiler: A multi agent data ...",
+      "url": "https://github.com/PeeWee2000/canonical-repair-profiler",
+      "snippet": "An agentic system that cleans 50 years of automotive warranty data and creates consensus ground-truth labels for downstream warranty AI products. One-line value: We turn 940,000 messy warranty claims into a library of 6,654 Canonical Repairs — each a single agreed-upon diagnosis + correction + labor + cost + parts — providing cleaner ground truth for existing production AI products ..."
+    },
+    {
+      "title": "canonical-repair-profiler/README.md at main · PeeWee2000 ... - GitHub",
+      "url": "https://github.com/PeeWee2000/canonical-repair-profiler/blob/main/README.md",
+      "snippet": "An agentic system that cleans 50 years of automotive warranty data and creates consensus ground-truth labels for downstream warranty AI products. One-line value: We turn 940,000 messy warranty claims into a library of 6,654 Canonical Repairs — each a single agreed-upon diagnosis + correction + labor + cost + parts — providing cleaner ground truth for existing production AI products ..."
+    },
+    {
+      "title": "Canonical Data Models: A Practical Guide - beefed.ai",
+      "url": "https://beefed.ai/en/canonical-data-models-guide",
+      "snippet": "A well-scoped canonical data model restores order by turning n² pairwise translators into a linear set of adapters to a single, governed lingua franca 1 8. The integration problem you live with looks like rising maintenance tickets, brittle releases, and delayed projects because every change ripples through undocumented translations."
+    },
+    {
+      "title": "AI雷达 - AI Radar",
+      "url": "https://codexradar.com/en/",
+      "snippet": "Model context reading · Belgian Francophone phrasing lens A brief response to praise of astra&#x27;s intelligence, possibly playful. The text supports no further intent and contains no quota or reset meaning."
+    },
+    {
+      "title": "AI models collapse when trained on recursively generated data",
+      "url": "https://www.nature.com/articles/s41586-024-07566-y",
+      "snippet": "Here we provide a theoretical intuition for the phenomenon of model collapse. We argue that the process of model collapse is universal among generative models that recursively train on data ..."
+    }
+  ]
+}

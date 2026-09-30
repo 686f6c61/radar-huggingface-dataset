@@ -5,7 +5,7 @@
   "author": "somana13",
   "url": "https://huggingface.co/somana13/pr-review-agent-classifier",
   "created_at": "2026-09-28T17:22:22.000Z",
-  "updated_at": "2026-09-28T17:22:25.000Z",
+  "updated_at": "2026-09-29T16:20:06.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 10,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3555504,
-  "storage_human": "4 MB",
+  "storage_bytes": 7111008,
+  "storage_human": "7 MB",
   "base_model": "microsoft/codebert-base",
   "formats": [
     "safetensors"

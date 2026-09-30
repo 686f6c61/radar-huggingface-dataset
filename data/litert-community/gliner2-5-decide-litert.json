@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "litert-community/GLiNER2.5-Decide-LiteRT",
+  "slug": "litert-community-gliner2-5-decide-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/GLiNER2.5-Decide-LiteRT",
+  "created_at": "2026-09-26T07:00:26.000Z",
+  "updated_at": "2026-09-26T07:15:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "litert",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "litert",
+    "tflite",
+    "android",
+    "gliner2",
+    "deberta-v3",
+    "text-classification",
+    "zero-shot-classification",
+    "en",
+    "arxiv:2507.18546",
+    "base_model:fastino/GLiNER2.5-Decide",
+    "base_model:finetune:fastino/GLiNER2.5-Decide",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 94,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6975846492,
+  "storage_human": "7.0 GB",
+  "base_model": "fastino/GLiNER2.5-Decide",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/GLiNER2.5-Decide-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/litert-community/GLiNER2.5-Decide-LiteRT",
+      "snippet": "On GLiNER2.5 Small, the same family of graphs, dynamic-range INT8 FULLY_CONNECTED weights did not compile on the LiteRT 2.2.0 GPU; no INT8 variant of this model was built or tested. Few-shot examples and the extraction tasks of gliner2 (entities, relations, structures) are not part of the graphs. The classification path of GLiNER2.5-Decide is also published as ONNX in onnx-community/GLiNER2.5-Decide-ONNX (Transformers.js, WebGPU) and nishparadox/gliner2.5-decide-onnx. A Core AI (Apple) conversion of the same path is published as coreai-community/GLiNER2.5-Decide-CoreAI."
+    },
+    {
+      "title": "GLiNER2.5-Decide: An Open-Weight Model for Structured Decision Making",
+      "url": "https://fastino.ai/blog/gliner-2-5-decide-open-weight-decision-model",
+      "snippet": "GLiNER2.5-Decide is an encoder-based decision model post-trained specifically for structured decision-making. It evaluates user-defined typed questions and can decode related answers jointly under explicit constraints, returning structured decisions with probabilities, confidence scores, and feasibility metadata."
+    },
+    {
+      "title": "GLiNER2.5 Decide | AI Model | There's An AI For That",
+      "url": "https://free.theresanaiforthat.com/model/gliner2-5-decide/",
+      "snippet": "A 340M parameter encoder based decision model that evaluates user defined typed questions and returns structured, constrained outputs with confidence scores, built for fast, reliable decision making at the edge of LLM pipelines."
+    },
+    {
+      "title": "Add GLiNER2.5 Small conversion recipe to models/gliner/gliner2...",
+      "url": "https://github.com/google-ai-edge/litert-samples/pull/324",
+      "snippet": "The model is a dense encoder followed by a data-dependent candidate search (top-k, unique, nonzero), so the build exports only the dense part as one graph with a single packed output, and the host keeps the official gliner2 sparse decoder unchanged."
+    },
+    {
+      "title": "GLiNER2.5-Decide: 340M Open Model Beats Jev on Routing | explainx.ai ...",
+      "url": "https://explainx.ai/blog/gliner-2-5-decide-fastino-340m-open-weight-decision-model-2026",
+      "snippet": "A 340-million-parameter model is not usually a headline in 2026, but GLiNER2.5-Decide is aimed at a job that eats a lot of large-model tokens: making small, repeatable decisions. Route this ticket, flag this message, pick the intent, judge this ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "itsajlol/rigify",
+  "slug": "itsajlol-rigify",
+  "author": "itsajlol",
+  "url": "https://huggingface.co/itsajlol/rigify",
+  "created_at": "2026-09-29T22:16:07.000Z",
+  "updated_at": "2026-09-29T22:16:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rigify 3D models - Sketchfab",
+      "url": "https://sketchfab.com/tags/rigify",
+      "snippet": "Rigify 3D models ready to view and download for free."
+    },
+    {
+      "title": "Riggify model for StableDiffusion ControlNet posable rig - Gumroad",
+      "url": "https://3dcinetv.gumroad.com/l/osezw",
+      "snippet": "Rigify ControlNet Pose Driver for AI / Stable Diffusion (Body + Face)Stop fighting random poses. Start directing your AI images 🎮🧠This Blender Rigify model is purpose-built to drive ControlNet (Pose). Pose the model, render. Use that image (still or sequence) to drive your Stable Diffusion WebUI / AI service with still poses or motion. It uses a clean, color-coded mesh layout designed ..."
+    },
+    {
+      "title": "GitHub - catprisbrey/Rigodotify: Rigify to Unreal/Unity/Godot GameDev ...",
+      "url": "https://github.com/catprisbrey/Rigodotify",
+      "snippet": "NOTE: If github downloads the file with a longer name than just \"Rigodotify.zip\" rename it to just the base name before install. A dual purpose Rigify feature set and Blender rig converter plugin. Recently reworked to add compatibility across all major game engine retargeters: Godot, Unity, and Unreal standards are used to make retargeters auto-detect bone structure and more happily share ..."
+    },
+    {
+      "title": "3D Rigify - 128 Free Blender Models | BlendSwap",
+      "url": "https://blendswap.com/3d/rigify",
+      "snippet": "Download free Blender 3D rigify models — community .blend files under Creative Commons, ready to import."
+    },
+    {
+      "title": "Ultimate Guide - The Best Blender Rigify vs Auto Rig Pro AI 3D Model ...",
+      "url": "https://www.tripo3d.ai/content/en/guide/the-best-blender-rigify-vs-auto-rig-pro-tools",
+      "snippet": "Discover the best Blender Rigify vs Auto Rig Pro AI 3D model converter of 2026. Our ultimate guide reviews top tools like Tripo AI for high-fidelity, fast, and accurate AI rigging."
+    }
+  ]
+}

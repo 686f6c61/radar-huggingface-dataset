@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Jackyfirdaus/mobilevit-contrastive",
+  "slug": "jackyfirdaus-mobilevit-contrastive",
+  "author": "Jackyfirdaus",
+  "url": "https://huggingface.co/Jackyfirdaus/mobilevit-contrastive",
+  "created_at": "2026-09-29T23:35:04.000Z",
+  "updated_at": "2026-09-29T23:35:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jokolubis/mobilevit-contrastive · Hugging Face",
+      "url": "https://huggingface.co/jokolubis/mobilevit-contrastive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jokolubis/mobilevit-contrastive at main - Hugging Face",
+      "url": "https://huggingface.co/jokolubis/mobilevit-contrastive/tree/main",
+      "snippet": "/ mobilevit-contrastive Like 0 Safetensors PyTorch mobilevit contrastive License:mit Model card FilesFiles and versions xet Community Copy to bucket new main mobilevit-contrastive 142 kB Ctrl+K Ctrl+K 1 contributor History:2 commits jokolubis Add pipeline.py, README.md, config.json, training_args.json, model.safetensors 42bf27e verifiedabout 11 ..."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/mobilevit.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/mobilevit.md",
+      "snippet": "MobileViT is a lightweight vision transformer for mobile devices that merges CNN&#x27;s efficiency and inductive biases with transformers global context modeling. It treats transformers as convolutions, enabling global information processing without the heavy computational cost of standard ViTs."
+    },
+    {
+      "title": "MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision ...",
+      "url": "https://arxiv.org/html/2110.02178v2",
+      "snippet": "Towards this end, we introduce MobileViT, a light-weight and general-purpose vision transformer for mobile devices. MobileViT presents a different perspective for the global processing of information with transformers. Our results show that MobileViT significantly outperforms CNN- and ViT-based networks across different tasks and datasets."
+    },
+    {
+      "title": "GitHub - mwcnn/mobilevit",
+      "url": "https://github.com/mwcnn/mobilevit",
+      "snippet": "Model Export To export trained MobileViT model to ONNX or TorchScript format, type the command: python3train.pyexport This ☝️ will list all the arguments that need to be passed to successfully export the model to the supported formats. Assuming you followed the tutorial above ☝️, we can export that model to ONNX format using the command:"
+    }
+  ]
+}

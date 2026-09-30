@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "DuoNeural/Qwen3.5-9B-GTAP-v3-IQ3_XXS-GGUF",
+  "slug": "duoneural-qwen3-5-9b-gtap-v3-iq3_xxs-gguf",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/Qwen3.5-9B-GTAP-v3-IQ3_XXS-GGUF",
+  "created_at": "2026-09-29T18:43:34.000Z",
+  "updated_at": "2026-09-29T18:45:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantization",
+    "gtap",
+    "tap-dpq",
+    "statistical-mechanics",
+    "hybrid-architecture",
+    "linear-attention",
+    "ssm",
+    "qwen",
+    "duoneural",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 4397690976,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DuoNeural/Qwen-3.5-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/DuoNeural/Qwen-3.5-9B-GGUF",
+      "snippet": "Qwen 3.5 features a dense transformer architecture with optimized attention mechanisms and a large vocabulary size, making it …"
+    },
+    {
+      "title": "README.md · DuoNeural/Qwen-3.5-9B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/DuoNeural/Qwen-3.5-9B-GGUF/blob/main/README.md",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 9b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-5-9b.html",
+      "snippet": "System Requirements 🖥️ CPU6+ cores 💾 RAM38+ GB Enthusiast+ compatible Download GGUF Hugging Face"
+    },
+    {
+      "title": "Qwen3.5 9B — Doubleword | Multimodal Model",
+      "url": "https://doubleword.ai/models/qwen3-5-9b/",
+      "snippet": "Qwen3.5 9B is a powerful foundation model that utilizes a hybrid Gated DeltaNet and Gated Attention architecture for highly efficient …"
+    },
+    {
+      "title": "Qwen3.5-9B · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen3.5-9B/summary",
+      "snippet": "Qwen Code is an open-source AI agent for the terminal, optimized for Qwen models. It helps you understand large codebases, …"
+    }
+  ]
+}

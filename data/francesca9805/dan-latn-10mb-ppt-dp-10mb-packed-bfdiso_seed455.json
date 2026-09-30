@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455",
+  "slug": "francesca9805-dan-latn-10mb-ppt-dp-10mb-packed-bfdiso_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455",
+  "created_at": "2026-09-29T21:04:50.000Z",
+  "updated_at": "2026-09-29T21:08:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/dan_latn_10mb",
+    "base_model:finetune:goldfish-models/dan_latn_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79375873,
+  "storage_human": "79 MB",
+  "base_model": "goldfish-models/dan_latn_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Espace adhérent BCAC",
+      "url": "https://bcac-adherent.gestionsante.fr/login",
+      "snippet": "Access your BCAC member space to manage reimbursements, update personal details, reprint third-party payment card and contact …"
+    },
+    {
+      "title": "Espace adhérent BCAC",
+      "url": "https://bcac-adherent.gestionsante.fr/identity/account/login",
+      "snippet": "This site uses cookies necessary for its proper functioning which cannot be deactivated."
+    },
+    {
+      "title": "BCAC-espace-adherent_010319-v2",
+      "url": "https://bcac-adherent.gestionsante.fr/api/cms/documents/detail?id=5c7e7bd1c6ff4cbeb4b553df",
+      "snippet": "Bienvenue sur votre nouvel espace Adhèrent. Pour consulter ou effectuer des modifications, veuillez sélectionnner le contrat …"
+    },
+    {
+      "title": "POLITIQUE DE PROTECTION DES DONNEES PERSONNELLES",
+      "url": "https://bcac-adherent.gestionsante.fr/api/cms/documents/detail?id=6203e520c6ff4c4e58b87afe",
+      "snippet": "Le BCAC s’engage à protéger vos Données Personnelles contre toute perte, destruction, altération, accès ou divulgation non …"
+    },
+    {
+      "title": "Mentions légales & Conditions Générales d’Utilis",
+      "url": "https://bcac-adherent.gestionsante.fr/api/cms/documents/detail?id=6005fa2dc6ff611a081f4c36",
+      "snippet": "Article 1 : Objet Les présentes « conditions générales d’utilisation » ont pour objet l’encadrement juridique des modalités de mise à …"
+    }
+  ]
+}

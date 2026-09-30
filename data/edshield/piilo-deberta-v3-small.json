@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "edshield/piilo-deberta-v3-small",
+  "slug": "edshield-piilo-deberta-v3-small",
+  "author": "edshield",
+  "url": "https://huggingface.co/edshield/piilo-deberta-v3-small",
+  "created_at": "2026-09-30T01:24:19.000Z",
+  "updated_at": "2026-09-30T01:25:09.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "token-classification",
+    "pii",
+    "de-identification",
+    "education",
+    "student-privacy",
+    "edshield",
+    "en",
+    "base_model:microsoft/deberta-v3-small",
+    "base_model:finetune:microsoft/deberta-v3-small",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 141315855,
+  "parameters_human": "141.3M",
+  "storage_bytes": 565275996,
+  "storage_human": "565 MB",
+  "base_model": "microsoft/deberta-v3-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/deberta-v3-small · Hugging Face",
+      "url": "https://huggingface.co/microsoft/deberta-v3-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deberta-v3-small — AI Model Details | Applied",
+      "url": "https://theapplied.co/models/microsoft-deberta-v3-small",
+      "snippet": "Microsoft&#x27;s small DeBERTa v3 encoder for masked language modeling and fine-tuning on NLU classification and inference tasks."
+    },
+    {
+      "title": "microsoft-deberta-v3-small | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/microsoft-deberta-v3-small",
+      "snippet": "DeBERTa improves the BERT and RoBERTa models using disentangled attention and enhanced mask decoder.... Sign in to Microsoft Foundry to deploy this model."
+    },
+    {
+      "title": "deberta-v3-small: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/deberta-v3-small-microsoft",
+      "snippet": "Overview deberta-v3-small is a compact encoder model developed by microsoft that performs masked language modeling and serves as a foundation for downstream natural language understanding tasks. The model uses disentangled attention and gradient-disentangled embedding sharing trained with ELECTRA-style pre-training on 160GB of text data. It contains 6 transformer layers with a hidden size of ..."
+    },
+    {
+      "title": "protectai/deberta-v3-small-prompt-injection-v2 · Hugging Face",
+      "url": "https://huggingface.co/protectai/deberta-v3-small-prompt-injection-v2",
+      "snippet": "You need to agree to share your contact information to access this model This repository is publicly accessible, but you have to accept the conditions to access its files and content. Log in or Sign Up to review the conditions and access this model content."
+    }
+  ]
+}

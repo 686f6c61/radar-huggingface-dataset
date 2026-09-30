@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "3p3r/sentinel-laya-multilingual",
+  "slug": "3p3r-sentinel-laya-multilingual",
+  "author": "3p3r",
+  "url": "https://huggingface.co/3p3r/sentinel-laya-multilingual",
+  "created_at": "2026-09-29T23:50:40.000Z",
+  "updated_at": "2026-09-30T00:17:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "safetensors",
+    "prompt-injection",
+    "jailbreak",
+    "text-classification",
+    "multilingual",
+    "base_model:convaiinnovations/laya-multilingual",
+    "base_model:finetune:convaiinnovations/laya-multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198712,
+  "storage_human": "678 MB",
+  "base_model": "convaiinnovations/laya-multilingual",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "I Built Non-Autoregressive Decision Models with RL a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\". From our March 2025 arXiv paper on sequence conversion trajectories to Laya: a sub-35ms open-weight System 1 decision engine with RLCD, multilingual routing across 100+ languages, and state-of-the-art calibration."
+    },
+    {
+      "title": "convaiinnovations/laya-multilingual · Hugging Face",
+      "url": "https://huggingface.co/convaiinnovations/laya-multilingual",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "laya-multilingual: 100+ Languages, mmBERT-base 322M, Benchmarks & Limits",
+      "url": "https://laya-ai.com/models/laya-multilingual",
+      "snippet": "Laya&#x27;s multilingual checkpoint on Hugging Face: mmBERT-base, 322M parameters, 1024-token context, 100+ languages, faster than the English model, plus calibration and known limits."
+    },
+    {
+      "title": "GitHub - 3p3r/sentinel-laya: Fine tuned Laya model to detect prompt ...",
+      "url": "https://github.com/3p3r/sentinel-laya",
+      "snippet": "Fine tuned Laya model to detect prompt injection and jailbreak attacks in LLM inputs with a Jev like interface - 3p3r/sentinel-laya"
+    },
+    {
+      "title": "README.md · convaiinnovations/laya-multilingual at main",
+      "url": "https://huggingface.co/convaiinnovations/laya-multilingual/blob/main/README.md",
+      "snippet": "Laya Multilingual Non-autoregressive System 1 decision model covering 100+ languages. Give it a state (text, email, ticket, or JSON) and typed questions; it returns typed answers with probabilities in a single forward pass. No text generation, so nothing to parse and nothing to hallucinate."
+    }
+  ]
+}

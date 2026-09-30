@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "grapeot/ai_smell_remover",
+  "slug": "grapeot-ai_smell_remover",
+  "author": "grapeot",
+  "url": "https://huggingface.co/grapeot/ai_smell_remover",
+  "created_at": "2026-09-29T23:25:51.000Z",
+  "updated_at": "2026-09-30T00:00:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "lora",
+    "style-transfer",
+    "chinese",
+    "text-generation",
+    "zh",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 9786060192,
+  "storage_human": "9.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "grapeot (Yan Wang 鸭哥) · GitHub",
+      "url": "https://github.com/grapeot/",
+      "snippet": "AI researcher turned builder. Context Engineering, AI-native workflows. Writing at yage.ai. - grapeot"
+    },
+    {
+      "title": "[Full Disclosure] The Complete Procedure to Remove the \"AI Smell\" from ...",
+      "url": "https://note.com/jidou_kun/n/nf6672b859ae0?hl=en",
+      "snippet": "[Full Disclosure] The Complete Procedure to Remove the \"AI Smell\" from AI-Generated Text | 47 Forbidden Words to Avoid and 5 Rewriting Prompts"
+    },
+    {
+      "title": "AI Smell Detector Claude Code Skill | Humanize AI Prose",
+      "url": "https://mcpmarket.com/tools/skills/ai-smell-detector-refiner",
+      "snippet": "Remove robotic AI-generated phrasing from your documentation. The ai-smell skill identifies LLM patterns and refines text for authentic, human-sounding results."
+    },
+    {
+      "title": "What&#x27;s that smell? Researchers use AI to map the elusive sense",
+      "url": "https://news.yale.edu/2026/09/09/whats-smell-researchers-use-ai-map-elusive-sense",
+      "snippet": "That was thought to make semantic odor descriptors a poor basis for predicting how smells relate, but we found the opposite.\" The finding contributes to an ongoing discussion about using language, rather than chemical composition, to describe and model smell, Satarifard said."
+    },
+    {
+      "title": "The &#x27;AI Smell&#x27; Test: Tools to Detect and Remove LLM-Generated Patterns",
+      "url": "https://aiindigo.com/blog/the-ai-smell-test-tools-to-detect-and-remove-llm-generated-patterns",
+      "snippet": "How to Write AI-Assisted Content That Doesn&#x27;t Feel Synthetic Tools are helpful, but the most effective way to remove the AI smell is through a specific editorial workflow."
+    }
+  ]
+}

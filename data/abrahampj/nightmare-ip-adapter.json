@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AbrahamPJ/nightmare-ip-adapter",
+  "slug": "abrahampj-nightmare-ip-adapter",
+  "author": "AbrahamPJ",
+  "url": "https://huggingface.co/AbrahamPJ/nightmare-ip-adapter",
+  "created_at": "2026-09-29T21:45:56.000Z",
+  "updated_at": "2026-09-29T21:52:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "ip-adapter",
+    "stable-diffusion",
+    "onnxruntime",
+    "android",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1326828367,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AbrahamPJ (Jaison) - Hugging Face",
+      "url": "https://huggingface.co/AbrahamPJ",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago"
+    },
+    {
+      "title": "GitHub - AbrahamPaulJ/nightmare-mobile: On-device ComfyUI style node ...",
+      "url": "https://github.com/AbrahamPaulJ/nightmare-mobile/tree/main",
+      "snippet": "It is Neodragon by Qualcomm AI Research, released under BSD-3-Clause-Clear with additional terms on the model card. The pyramidal schedule, the autoregressive MMDiT loop and the streaming VAE decode are theirs, and the NPU conversions this app runs were made from their weights. The first frame comes from SSD-1B by Segmind."
+    },
+    {
+      "title": "GitHub - absalan/AI-IP-Adapter: The image prompt adapter is designed to ...",
+      "url": "https://github.com/absalan/AI-IP-Adapter",
+      "snippet": "The image prompt adapter is designed to enable a pretrained text-to-image diffusion model to generate images with image prompt. - GitHub - absalan/AI-IP-Adapter: The image prompt adapter is designed to enable a pretrained text-to-image diffusion model to generate images with image prompt."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated September 2026."
+    },
+    {
+      "title": "IP-Adapter · Hugging Face",
+      "url": "https://huggingface.co/docs/diffusers/using-diffusers/ip_adapter",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

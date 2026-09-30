@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "PursuitOfDataScience/Argonne-4.5-think",
+  "slug": "pursuitofdatascience-argonne-4-5-think",
+  "author": "PursuitOfDataScience",
+  "url": "https://huggingface.co/PursuitOfDataScience/Argonne-4.5-think",
+  "created_at": "2026-09-29T23:49:21.000Z",
+  "updated_at": "2026-09-29T23:49:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "argonne2",
+    "feature-extraction",
+    "text-generation",
+    "causal-lm",
+    "transformer",
+    "argonne",
+    "reasoning",
+    "chain-of-thought",
+    "math",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "dataset:argilla/dpo-mix-7k",
+    "dataset:AI-MO/NuminaMath-CoT",
+    "dataset:openai/gsm8k",
+    "base_model:PursuitOfDataScience/argonne-4.5-base-ctx13568",
+    "base_model:finetune:PursuitOfDataScience/argonne-4.5-base-ctx13568",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2063639552,
+  "parameters_human": "2.06B",
+  "storage_bytes": 4138736226,
+  "storage_human": "4.1 GB",
+  "base_model": "PursuitOfDataScience/argonne-4.5-base-ctx13568",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - PursuitOfDataScience/ArgonneAI: LLM Pretraining, Midtraining ...",
+      "url": "https://github.com/PursuitOfDataScience/ArgonneAI",
+      "snippet": "LLM Pretraining, Midtraining, and Post-training. Contribute to PursuitOfDataScience/ArgonneAI development by creating an account on GitHub."
+    },
+    {
+      "title": "PursuitOfDataScience/Argonne-4.0-think · Hugging Face",
+      "url": "https://huggingface.co/PursuitOfDataScience/Argonne-4.0-think",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PursuitOfDataScience/argonne-4.5-base · Hugging Face",
+      "url": "https://huggingface.co/PursuitOfDataScience/argonne-4.5-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ArgonneAI/reasoning/thinking_training.md at main · PursuitOfDataScience ...",
+      "url": "https://github.com/PursuitOfDataScience/ArgonneAI/blob/main/reasoning/thinking_training.md",
+      "snippet": "Bottom line: the shipped model scores 33/40 on the internal 4-quadrant probe — strong arithmetic in both no-think and with-CoT modes, plus recovered general chat — the first from-scratch Argonne model that can reason and chat."
+    },
+    {
+      "title": "PursuitOfDataScience/Argonne-Qwen1.5-0.5B-think - featherless.ai",
+      "url": "https://featherless.ai/models/PursuitOfDataScience/Argonne-Qwen1.5-0.5B-think",
+      "snippet": "Argonne-Qwen1.5-.5B-think is a 0.46 billion parameter chain-of-thought reasoner developed by PursuitOfDataScience, fine-tuned from Qwen1.5-0.5B. It specializes in elementary math word problems, producing explicit reasoning traces and a final &#92;boxed {} answer. This compact research model is designed for studying test-time compute on small models, demonstrating significant math-reasoning ..."
+    }
+  ]
+}

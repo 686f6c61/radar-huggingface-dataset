@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dan517/Mistral-Small-22B-ArliAI-RPMax-v1.1-GGUF",
+  "slug": "dan517-mistral-small-22b-arliai-rpmax-v1-1-gguf",
+  "author": "dan517",
+  "url": "https://huggingface.co/dan517/Mistral-Small-22B-ArliAI-RPMax-v1.1-GGUF",
+  "created_at": "2026-09-29T18:20:08.000Z",
+  "updated_at": "2026-09-30T03:30:23.000Z",
+  "license": "mrl",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:ArliAI/Mistral-Small-22B-ArliAI-RPMax-v1.1",
+    "base_model:quantized:ArliAI/Mistral-Small-22B-ArliAI-RPMax-v1.1",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22247282688,
+  "parameters_human": "22.25B",
+  "storage_bytes": 384568892194,
+  "storage_human": "384.6 GB",
+  "base_model": "ArliAI/Mistral-Small-22B-ArliAI-RPMax-v1.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mistral-Small-22B-ArliAI-RPMax-v1.1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/bartowski/Mistral-Small-22B-ArliAI-RPMax-v1.1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mistral-Small-22B-ArliAI-RPMax-v1.1-GPTQ_Q8 - Hugging Face",
+      "url": "https://huggingface.co/ArliAI/Mistral-Small-22B-ArliAI-RPMax-v1.1-GPTQ_Q8",
+      "snippet": "Mistral-Small-22B-ArliAI-RPMax-v1.1 is a variant based on mistralai/Mistral-Small-Instruct-2409 which has a restrictive mistral license. So this is for your personal use only."
+    },
+    {
+      "title": "Mistral-Small-22B-ArliAI-RPMax-v1.1: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/mistral-small-22b-arliai-rpmax-v1.1-arliai",
+      "snippet": "Overview Mistral-Small-22B-ArliAI-RPMax-v1.1 is a roleplay and creative writing model developed by ArliAI based on the Mistral-Small-Instruct-2409 architecture. The model contains 22 billion parameters and supports a context window of 32,768 tokens, trained on curated creative writing and roleplay datasets with emphasis on deduplication to prevent repetitive character behaviors and personality ..."
+    },
+    {
+      "title": "Mistral-Small-22B-ArliAI-RPMax-v1.1-GGUF · Model · Inferix",
+      "url": "https://inferix.co/models/bartowski/Mistral-Small-22B-ArliAI-RPMax-v1.1-GGUF",
+      "snippet": "Mistral Small 22B ArliAI RPMax v1.1 Q6 K.gguf Q6 K 18.25GB false Very high quality, near perfect, recommended . Mistral Small 22B ArliAI RPMax v1.1 Q5 K L.gguf Q5 K L 15.85GB false Uses Q8 0 for embed and output weights."
+    },
+    {
+      "title": "Mistral Small 22b Arliai Rpmax V1.1 - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/mistral-small-22b-arliai-rpmax-v1-1.html",
+      "snippet": "Download Mistral Small 22b Arliai Rpmax V1.1 GGUF model. 7.22 GB, 2,742 downloads, 33 likes."
+    }
+  ]
+}

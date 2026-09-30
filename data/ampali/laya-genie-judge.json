@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "ampali/laya-genie-judge",
+  "slug": "ampali-laya-genie-judge",
+  "author": "ampali",
+  "url": "https://huggingface.co/ampali/laya-genie-judge",
+  "created_at": "2026-09-29T20:55:08.000Z",
+  "updated_at": "2026-09-29T20:55:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laya",
+    "system-one",
+    "calibrated-decisions",
+    "rlcd",
+    "structured-decisions",
+    "typed-decisions",
+    "benchmark",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609220,
+  "storage_human": "843 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "System One Decision Benchmark",
+      "dataset": "Typed Decisions",
+      "metric": null,
+      "value": 0.9
+    },
+    {
+      "task": "System One Decision Benchmark",
+      "dataset": "Typed Decisions",
+      "metric": null,
+      "value": 0.036
+    }
+  ],
+  "sources": [
+    {
+      "title": "Laya AI Model: How It Works, Run It Locally, and Evaluate It",
+      "url": "https://huggingface.co/blog/sora-2/laya-ai-model-how-it-works-run-it-locally-and-eval",
+      "snippet": "The Laya AI model is built for a particular kind of work: making a bounded decision about an input, then returning a structured answer and probabilities. Give it a support ticket, an email, a conversation, or a JSON state. Ask which queue should receive it, how urgent it is, or whether a stated condition is true. Laya answers those questions without writing a paragraph that your application ..."
+    },
+    {
+      "title": "Laya: replace your LLM-as-a-judge with a 322M-parameter decision engine",
+      "url": "https://aifrontierpost.com/articles/laya-typed-decisions-tutorial/",
+      "snippet": "Laya (26,000+ GitHub stars in 9 days) is a non-autoregressive System 1 decision engine: typed choice, score, and yes/no decisions over any text in a single forward pass, in 100+ languages. Install it, triage real support tickets, and add confidence-gated abstention — every step executed on CPU."
+    },
+    {
+      "title": "Laya Judge: Ultra-Low Latency Local AI Agent Decisions",
+      "url": "https://mcpmarket.com/server/laya-judge",
+      "snippet": "Laya Judge offers ultra-low latency, local, and cost-free typed decisions for AI agents. Reduce LLM tokens, ensure data privacy, and integrate with oh-my-pi for confident judgment."
+    },
+    {
+      "title": "Laya - AI Wiki | Wikiprompt",
+      "url": "https://www.wikiprompt.org/wiki/laya",
+      "snippet": "Laya is an open-weight, non-autoregressive AI decision model released by the Indian startup Convai Innovations in September 2026 under the Apache 2.0 license. Like TypeSafe AI&#x27;s closed Jev, it is a \"System One\" model: given a piece of state and typed questions it returns typed answers with calibrated probabilities instead of generating text, in a single forward pass of roughly 33 milliseconds ..."
+    },
+    {
+      "title": "Best LLM Judge Models 2026: 8 Models Ranked - futureagi.com",
+      "url": "https://futureagi.com/blog/best-llm-judge-models-2026/",
+      "snippet": "Best LLM Judge Models in 2026: 8 Models Ranked on Calibration, Cost, and Self-Preference Eight LLM judge models compared on human correlation, cost per score, latency, and self-preference bias. Pick by your rubric, not by SummEval."
+    }
+  ]
+}

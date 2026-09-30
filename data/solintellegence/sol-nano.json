@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "solintellegence/sol-nano",
+  "slug": "solintellegence-sol-nano",
+  "author": "solintellegence",
+  "url": "https://huggingface.co/solintellegence/sol-nano",
+  "created_at": "2026-09-30T01:11:03.000Z",
+  "updated_at": "2026-09-30T01:47:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "sol_nano",
+    "causal-lm",
+    "sol-nano",
+    "sol-lite",
+    "tn-gram",
+    "math",
+    "pretraining",
+    "custom-code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:open-web-math/open-web-math",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:nomic-ai/cornstack-python-v1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2895188,
+  "parameters_human": "2.9M",
+  "storage_bytes": 12844278,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "solintellegence (Sol Labs) - Hugging Face",
+      "url": "https://huggingface.co/solintellegence",
+      "snippet": "Sol Labs builds fast, efficient AI models designed to make powerful intelligence accessible at every scale."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=sol-intelligence",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: sol-intelligence Clear all"
+    },
+    {
+      "title": "GPT-6 Sol vs Nano: Benchmarks, Pricing & Which Is Better in 2026",
+      "url": "https://llm-stats.com/models/compare/gpt-6-sol-vs-nano",
+      "snippet": "GPT-6 Sol vs Nano: which is better? Compare benchmark scores, pricing, context windows, latency and capabilities side-by-side, with a clear verdict on which AI model to choose."
+    },
+    {
+      "title": "OpenAI introduces new model naming system with capability tiers",
+      "url": "https://cryptobriefing.com/openai-new-model-naming-capability-tiers/",
+      "snippet": "OpenAI debuted a new model naming system on June 26, 2026, using generation numbers and tier names like Sol, Terra, and Luna to replace confusing suffixes."
+    },
+    {
+      "title": "Introducing GPT‑6 Sol and Luna - OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "snippet": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost."
+    }
+  ]
+}

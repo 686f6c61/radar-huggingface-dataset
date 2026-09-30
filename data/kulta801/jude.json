@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kulta801/jude",
+  "slug": "kulta801-jude",
+  "author": "kulta801",
+  "url": "https://huggingface.co/kulta801/jude",
+  "created_at": "2026-09-29T18:45:20.000Z",
+  "updated_at": "2026-09-29T19:20:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "krea2",
+    "krea2-diffusers",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 774569110,
+  "storage_human": "775 MB",
+  "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kulta801 (Ryan) - Hugging Face",
+      "url": "https://huggingface.co/kulta801",
+      "snippet": "Recent Activity updated a modelabout 5 hours ago kulta801/ryd published a modelabout 6 hours ago kulta801/ryd View all activity"
+    },
+    {
+      "title": "kulta801 (Ryan) - Hugging Face",
+      "url": "https://huggingface.co/kulta801/models",
+      "snippet": "kulta801&#x27;s models1 Sort: Recently updated kulta801/ryd Text-to-Image •Updated about 6 hours ago"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Jude (Total DramaRama) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d08l5c5e878c7383f24g",
+      "snippet": "Explore Jude (Total DramaRama) model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "AI Model Comparison: ChatGPT, Claude, Gemini, and More Tested",
+      "url": "https://www.openaitoolshub.org/en/blog/ai-model-comparison-guide",
+      "snippet": "Side-by-side comparison of every major AI model — ChatGPT Plus ($20/mo), Claude Pro ($20/mo), Gemini Advanced, Perplexity Pro, Kimi K2.5, Manus AI, and OpenAI Codex. Pricing, real performance, context window comparison (Claude 200K vs ChatGPT 128K), and honest verdicts."
+    }
+  ]
+}

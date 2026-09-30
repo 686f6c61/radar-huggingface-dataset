@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AcademiaSD/TAE-Qwen-Image-2.1",
+  "slug": "academiasd-tae-qwen-image-2-1",
+  "author": "AcademiaSD",
+  "url": "https://huggingface.co/AcademiaSD/TAE-Qwen-Image-2.1",
+  "created_at": "2026-09-29T04:59:33.000Z",
+  "updated_at": "2026-09-29T05:10:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "qwen-image",
+    "qwen-image-2.1",
+    "taesd",
+    "tiny-autoencoder",
+    "vae",
+    "preview",
+    "text-to-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 0,
+  "trending_score": 12,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3506811,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TAE Qwen-Image 2.1 · AcademiaSD - Hugging Face",
+      "url": "https://huggingface.co/AcademiaSD/TAE-Qwen-Image-2.1",
+      "snippet": "AcademiaSD / TAE-Qwen-Image-2.1 Like 0 Text-to-Image comfyui qwen-image qwen-image-2.1 taesd tiny-autoencoder vae preview License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new TAE Qwen-Image 2.1 · AcademiaSD 🚀 Usage in ComfyUI 🔧 Training details ⚠️ Limitations 🇪🇸 Español 🙏 Credits 🔗 ..."
+    },
+    {
+      "title": "Qwen-Image-2.1 - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen&#x27;s most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
+    },
+    {
+      "title": "Qwen-Image-2.1/README.md at main - GitHub",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1/blob/main/README.md",
+      "snippet": "Introduction We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility."
+    },
+    {
+      "title": "Qwen Image 2.1 - v2.1 | Qwen 2.1 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2954443/qwen-image-21",
+      "snippet": "Originally released by Qwen on Hugging Face . All credit goes to the Qwen team. Qwen Image 2.1 combines text-to-image generation and image editing ..."
+    }
+  ]
+}

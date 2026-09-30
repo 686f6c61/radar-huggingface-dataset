@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "PixilabAI/Blink-v0.1-26B-A4B-NVFP4",
+  "slug": "pixilabai-blink-v0-1-26b-a4b-nvfp4",
+  "author": "PixilabAI",
+  "url": "https://huggingface.co/PixilabAI/Blink-v0.1-26B-A4B-NVFP4",
+  "created_at": "2026-09-29T23:26:18.000Z",
+  "updated_at": "2026-09-29T23:29:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "decisions",
+    "classification",
+    "calibrated",
+    "moe",
+    "nvfp4",
+    "modelopt",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:quantized:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14386941232,
+  "parameters_human": "14.39B",
+  "storage_bytes": 18820655368,
+  "storage_human": "18.8 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/Gemma-4-26B-A4B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma-4-26B-A4B-it-Uncensored-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/AEON-7/Gemma-4-26B-A4B-it-Uncensored-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[vLLM] DiffusionGemma 26B NVFP4 on a DGX Spark: 158 tok/s, and why ...",
+      "url": "https://ai-muninn.com/en/blog/dgx-spark-diffusiongemma-nvfp4-vllm",
+      "snippet": "DiffusionGemma 26B-A4B runs on vLLM on a 128GB DGX Spark via an official prebuilt image — no PR-waiting, no cherry-picking. NVFP4 hits 158 tok/s single-stream and 257 aggregate. But a single tok/s number lies: diffusion speed is decided by whether the 256-token canvas fills."
+    },
+    {
+      "title": "Gemma-4-26B-A4B-NVFP4 · Models",
+      "url": "https://www.modelscope.cn/models/nv-community/Gemma-4-26B-A4B-NVFP4",
+      "snippet": "The model uses a hybrid attention mechanism that interleaves local sliding-window and full global attention, with unified Keys and Values in global layers and Proportional RoPE (p-RoPE) to support long-context performance. The NVIDIA Gemma 4 26B IT NVFP4 model is quantized with NVIDIA Model Optimizer."
+    },
+    {
+      "title": "Gemma 4 Multi-Token Prediction (MTP) using Hugging Face Transformers",
+      "url": "https://ai.google.dev/gemma/docs/mtp/mtp",
+      "snippet": "Load the Models For each target model (one of the main models in the Gemma 4 model), there is an assistant to helps speed up inference. As such, you will load two models: Target (e.g., google/gemma-4-E2B-it): The full Gemma 4 target model Drafter (e.g., google/gemma-4-E2B-it-assistant): The lightweight 4-layer MTP drafter that proposes candidate tokens Note that the drafter is often referred ..."
+    }
+  ]
+}

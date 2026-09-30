@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-eval-all-h09-39999-e96fde74c872",
+  "slug": "davidwdw-fa-eval-all-h09-39999-e96fde74c872",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-eval-all-h09-39999-e96fde74c872",
+  "created_at": "2026-09-29T22:36:09.000Z",
+  "updated_at": "2026-09-29T22:37:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 225231060,
+  "storage_human": "225 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "davidwdw/fa-eval-task00-recovery-development-20260922-eai-6c3a23f5dcd0 ...",
+      "url": "https://huggingface.co/davidwdw/fa-eval-task00-recovery-development-20260922-eai-6c3a23f5dcd0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "erWin Online | Volkswagen of America | Search",
+      "url": "https://vw-us.erwin-store.com/erwin/performSearch.do",
+      "snippet": "The Guided Search allows you to find documents based on the model year, model, and selected category. If you have the vehicle identification label, use the Manual Search."
+    },
+    {
+      "title": "OpenAI-HuggingFace incident - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/OpenAI%E2%80%93HuggingFace_incident",
+      "snippet": "Logo of Hugging Face, the main company targeted in the attack The AI startup Hugging Face provides inference and cloud computing services for AI training and deployment. It operates a widely used repository for machine learning models, datasets, and demonstration applications, processing user-uploaded content such as model weights and datasets."
+    },
+    {
+      "title": "Product Compatibility & Download Center from Rockwell Automation",
+      "url": "http://compatibility.rockwellautomation.com/",
+      "snippet": "The Product Compatibility and Download Center (PCDC) can help you find product-related materials."
+    }
+  ]
+}

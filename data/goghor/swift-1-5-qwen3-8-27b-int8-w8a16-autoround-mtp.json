@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Goghor/Swift-1.5-Qwen3.8-27B-INT8-W8A16-AutoRound-MTP",
+  "slug": "goghor-swift-1-5-qwen3-8-27b-int8-w8a16-autoround-mtp",
+  "author": "Goghor",
+  "url": "https://huggingface.co/Goghor/Swift-1.5-Qwen3.8-27B-INT8-W8A16-AutoRound-MTP",
+  "created_at": "2026-09-29T20:06:08.000Z",
+  "updated_at": "2026-09-29T20:30:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 31636255333,
+  "storage_human": "31.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Goghor/Swift-1.5-Qwen3.8-27B-INT8-W8A16-MTP · Hugging Face",
+      "url": "https://huggingface.co/Goghor/Swift-1.5-Qwen3.8-27B-INT8-W8A16-MTP",
+      "snippet": "Goghor / Swift-1.5-Qwen3.8-27B-INT8-W8A16-MTP Like 0 Image-Text-to-Text Safetensors vllm qwen3_5 qwen3.8 compressed-tensors w8a16 int8 quantized mtp speculative-decoding vision conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Dual RTX 3090 deployment Memory and capacity Measured serving ..."
+    },
+    {
+      "title": "Goghor/Swift-1.5-Qwen3.8-27B-INT8-W8A16-MTP at main - Hugging Face",
+      "url": "https://huggingface.co/Goghor/Swift-1.5-Qwen3.8-27B-INT8-W8A16-MTP/tree/main",
+      "snippet": "Like 0 Image-Text-to-Text Safetensors vllm qwen3_5 qwen3.8 compressed-tensors w8a16 int8 quantized mtp speculative-decoding vision conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Swift-1.5-Qwen3.8-27B-INT8-W8A16-MTP 31.6 GB Ctrl+K Ctrl+K 1 contributor History:3 commits Goghor Upload folder using huggingface_hub 2aa85b8 verified2 days ..."
+    },
+    {
+      "title": "Swift 1.5 Qwen3.8-27B | UkisAI",
+      "url": "https://ukisai.com/swift-1-5-27b",
+      "snippet": "The results below compare Qwen3.8-27B, the foundation base model, Swift 1.0, the first UkisAI adaptation, and Swift 1.5. All three use the same saved evaluation protocols, and every score is a final five-repeat aggregate."
+    },
+    {
+      "title": "Swift-1.5-Qwen3.8-27B-INT8-W8A16-MTP - FriendliAI",
+      "url": "https://friendli.ai/models/Goghor/Swift-1.5-Qwen3.8-27B-INT8-W8A16-MTP",
+      "snippet": "Run Swift-1.5-Qwen3.8-27B-INT8-W8A16-MTP with FriendliAI inference. Validated host profile: 2×RTX 3090 24 GB, PCIe without NVLink or P2P, vLLM TP2, BF16…"
+    },
+    {
+      "title": "Run Swift-1.5-Qwen3.8-27B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/ukisai/Swift-1.5-Qwen3.8-27b",
+      "snippet": "Overview Swift 1.5 Qwen3.8-27B is a 27 billion parameter model developed by UkisAI, building upon the Qwen3.8-27B architecture. It significantly improves reasoning efficiency, reducing \"thinking tokens\" by 58.5% while slightly increasing overall accuracy by 0.35% compared to the base model, leading to a 1.95x speed-up. This efficiency is achieved through scaled-up post-training (RL and OPD ..."
+    }
+  ]
+}

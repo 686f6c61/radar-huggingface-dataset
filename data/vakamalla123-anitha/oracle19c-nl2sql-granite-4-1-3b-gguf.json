@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Vakamalla123-Anitha/oracle19c-nl2sql-granite-4.1-3b-gguf",
+  "slug": "vakamalla123-anitha-oracle19c-nl2sql-granite-4-1-3b-gguf",
+  "author": "Vakamalla123-Anitha",
+  "url": "https://huggingface.co/Vakamalla123-Anitha/oracle19c-nl2sql-granite-4.1-3b-gguf",
+  "created_at": "2026-09-29T18:44:00.000Z",
+  "updated_at": "2026-09-29T19:08:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3402836480,
+  "parameters_human": "3.40B",
+  "storage_bytes": 2099501664,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vakamalla123-Anitha/oracle19c-nl2sql-granite-4.1-3b-lora · Hugging Face",
+      "url": "https://huggingface.co/Vakamalla123-Anitha/oracle19c-nl2sql-granite-4.1-3b-lora",
+      "snippet": "Vakamalla123-Anitha / oracle19c-nl2sql-granite-4.1-3b-lora Like 1 Text Generation PEFT Safetensors lora qlora oracle oracle19c nl2sql text-to-sql sql-generation granite conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "oracle19c-nl2sql-granite-4.1-3b-lora - FriendliAI",
+      "url": "https://friendli.ai/models/Vakamalla123-Anitha/oracle19c-nl2sql-granite-4.1-3b-lora",
+      "snippet": "Training details Base model: Granite 4.1 3B Instruct Fine-tuning method: 4-bit NF4 QLoRA with double quantization Training approach: Supervised fine-tuning with PEFT LoRA Training examples: 3,200 total 2,800 Oracle-focused NL→SQL examples 400 general-SQL replay examples 2,800 Oracle-focused NL→SQL examples 400 general-SQL replay examples Validation examples: 350 Epochs: 1 Training steps ..."
+    },
+    {
+      "title": "granite4.2:30b - ollama.com",
+      "url": "https://ollama.com/library/granite4.2:30b",
+      "snippet": "Users may finetune Granite 4.2 models for languages beyond these languages. Intended Use This model is designed to handle general instruction-following tasks and can be integrated into AI assistants across various domains, including business applications."
+    },
+    {
+      "title": "How to Run IBM Granite 4.1 Locally — Ollama, vLLM, and llama.cpp Setup ...",
+      "url": "https://www.aimadetools.com/blog/how-to-run-granite-4-1-locally/",
+      "snippet": "Step-by-step guide to running Granite 4.1 locally. The 8B model fits on any modern GPU. Ollama, vLLM, llama.cpp setup, quantization, and cloud GPU alternatives."
+    },
+    {
+      "title": "Granite 4.1 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/granite-4.1",
+      "snippet": "About Granite 4.1 Granite 4.1 is a family of dense language models offered in 3B, 8B, and 30B parameter sizes. Each model is available in both base and instruction-tuned variants. Compared to Granite 4.0, Granite 4.1 delivers major improvements in tool use, instruction following, coding performance, and mathematical reasoning."
+    }
+  ]
+}

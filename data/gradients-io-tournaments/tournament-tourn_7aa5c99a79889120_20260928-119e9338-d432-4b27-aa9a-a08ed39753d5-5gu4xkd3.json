@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_7aa5c99a79889120_20260928-119e9338-d432-4b27-aa9a-a08ed39753d5-5GU4Xkd3",
+  "slug": "gradients-io-tournaments-tournament-tourn_7aa5c99a79889120_20260928-119e9338-d432-4b27-aa9a-a08ed39753d5-5gu4xkd3",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_7aa5c99a79889120_20260928-119e9338-d432-4b27-aa9a-a08ed39753d5-5GU4Xkd3",
+  "created_at": "2026-09-29T21:53:31.000Z",
+  "updated_at": "2026-09-29T21:53:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/202e45433f0d7246",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:gradients-io-tournaments/swe-base-qwen3-8b-continuous",
+    "base_model:adapter:gradients-io-tournaments/swe-base-qwen3-8b-continuous",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1408194866,
+  "storage_human": "1.4 GB",
+  "base_model": "gradients-io-tournaments/swe-base-qwen3-8b-continuous",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_7aa5c99a79889120_20260928 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_7aa5c99a79889120_20260928-6604c9f7-9bad-4acc-a190-19107bb335d7-5EhyCWPu",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gradients | Decentralised AI Training & Research",
+      "url": "https://www.gradients.io/app/research/tournament",
+      "snippet": "Decentralised AI Training & Research. > TOURNAMENTS View live, recent, and historical tournaments from Subnet 56"
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-0342f614-150d-4357-8c9d-8efc9b03e13d-5GU4Xkd3/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main tournament-tourn_2ba0f79237bffcf7_20260907-0342f614-150d-4357-8c9d-8efc9b03e13d-5GU4Xkd3 1.36 GB Ctrl+K Ctrl+K 1 contributor History:2 commits gradients-io-tournaments Upload task output cd6788e7-0d07-4350-8990-45e90676a9f9 8709a7a verifiedabout 3 hours ago .gitattributes Safe 1.57 kBUpload task output cd6788e7-0d07-4350-8990-45e90676a9f9about 3 hours ago ..."
+    },
+    {
+      "title": "tournament-tourn_7aa5c99a79889120_20260928-7caa3428-d3f9-42b5-8dd6 ...",
+      "url": "https://friendli.ai/models/gradients-io-tournaments/tournament-tourn_7aa5c99a79889120_20260928-7caa3428-d3f9-42b5-8dd6-17e13f1b60bb-5CDbyLvX",
+      "snippet": "Deploy tournament-tourn_7aa5c99a79889120_20260928-7caa3428-d3f9-42b5-8dd6-17e13f1b60bb-5CDbyLvX with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - gradients-ai/G.O.D: Gradients on demand · GitHub",
+      "url": "https://github.com/gradients-ai/G.O.D",
+      "snippet": "Welcome to the Gradients on Demand subnet. G.O.D is the subnet runtime behind Gradients.io training jobs and tournaments. Validators create tasks, coordinate miner and trainer infrastructure, evaluate results, and set weights. Miners expose training repositories for tournament tasks; trainers run those repositories on validator-controlled GPU infrastructure."
+    }
+  ]
+}

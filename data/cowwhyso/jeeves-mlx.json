@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "cowWhySo/jeeves-mlx",
+  "slug": "cowwhyso-jeeves-mlx",
+  "author": "cowWhySo",
+  "url": "https://huggingface.co/cowWhySo/jeeves-mlx",
+  "created_at": "2026-09-30T00:10:11.000Z",
+  "updated_at": "2026-09-30T00:11:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.5",
+    "decision",
+    "unofficial-port",
+    "experimental",
+    "4bit",
+    "text-classification",
+    "en",
+    "base_model:PostHog/jeeves",
+    "base_model:quantized:PostHog/jeeves",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 32497328685,
+  "storage_human": "32.5 GB",
+  "base_model": "PostHog/jeeves",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeeves. Reasoning improves Jev-like decision models - GitHub",
+      "url": "https://github.com/PostHog/jeeves/",
+      "snippet": "Jev-like models give calibrated decision probabilities, but at low accuracy. A lot of pipelines therefore rely on a reasoning model as a fallback. Jeeves trains a Jev-like Qwen3.5-9B (LoRA and a pointer head) using CISPO to reason before it decides. This results in better performance on out of domain tasks, and outperforms Jev in JevBench hard (public)."
+    },
+    {
+      "title": "GitHub - MansfieldPlumbing/Jeeves: Jeeves is a self-hosted framework ...",
+      "url": "https://github.com/MansfieldPlumbing/Jeeves",
+      "snippet": "Your Personal, Self-Hosted, Vision-Enabled AI Agent Framework. Jeeves is a sophisticated framework for building and running powerful, autonomous AI agents on your own hardware. It moves beyond simple chatbots, providing a robust platform to run local, vision-capable language models (like Gemma-3) that can autonomously execute complex, multi-step tasks. With Jeeves, you can deploy an agent ..."
+    },
+    {
+      "title": "Jeeves",
+      "url": "https://usejeeves.com/",
+      "snippet": "the ai assistant that gets stuff done jeeves Request Access At Jeeves, we are building personal AGI to accelerate human potential. We are witnessing a new phase of computing. The shift from generic software to personal intelligence that understands the human using it. Today&#x27;s AI is powerful, but fragmented. It answers questions and automates isolated tasks, yet every session starts from near ..."
+    },
+    {
+      "title": "JEEVES — AI Assistant",
+      "url": "https://www.jeeves.works/",
+      "snippet": "Free · bring your own LLM key · self-host or cloud AI agents your team can verify. Not trust. Jeeves runs specialised agents across your documents, cloud infrastructure and APIs. Every answer arrives with its source: the page, the clause, the tool call that produced it."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mohamedwasef/egyptian-document-ocr",
+  "slug": "mohamedwasef-egyptian-document-ocr",
+  "author": "mohamedwasef",
+  "url": "https://huggingface.co/mohamedwasef/egyptian-document-ocr",
+  "created_at": "2026-09-29T20:55:35.000Z",
+  "updated_at": "2026-09-29T20:55:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "ocr",
+    "arabic",
+    "egypt",
+    "document-understanding",
+    "vision-language",
+    "lora",
+    "qwen3-vl",
+    "image-to-text",
+    "ar",
+    "base_model:unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit",
+    "base_model:adapter:unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143618370,
+  "storage_human": "144 MB",
+  "base_model": "unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "porn | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/tags/porn/",
+      "snippet": "Sep 18, 2026 · Big Changes Are Coming to the Forum! We’ve got some exciting news to share — the forum is moving to a brand …"
+    },
+    {
+      "title": "80’s Porn - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/80%E2%80%99s-porn.718837/",
+      "snippet": "Dec 13, 2025 · There's a movie called \"The Grafenberg Spot\" that has to be the prime example of '80s porn. It starts Amber Lynn, …"
+    },
+    {
+      "title": "提示信息 天府社区",
+      "url": "https://bbs.scol.com.cn/thread-15265335-1-1.html",
+      "snippet": ",天府社区 蜀ICP备12028253号川公网安备 51010402000072号网上传播视听节目许可证 2305117 网络文化经营许可证 川网 …"
+    },
+    {
+      "title": "Woman seeking anyone - Lollapalooza 2027 | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/lollapalooza-2027.729324/",
+      "snippet": "Sep 20, 2026 · Already planning for next year <3 who else is going? I’m into cnc, anal, sloppy blow jobs, trains, and fucking to music …"
+    },
+    {
+      "title": "What oil do they use in OILED PORN? - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/what-oil-do-they-use-in-oiled-porn.130402/",
+      "snippet": "Apr 13, 2010 · Is it coconut oil? Is it vegetable oil? (don't think it's this, 'coz the colour isn't yellow) Is it baby oil? Or something else? …"
+    }
+  ]
+}

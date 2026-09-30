@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Qwen3-8B-bad-medical-advice-sip",
+  "slug": "localized-ft-qwen3-8b-bad-medical-advice-sip",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-sip",
+  "created_at": "2026-09-30T00:11:39.000Z",
+  "updated_at": "2026-09-30T00:14:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-8B",
+    "base_model:finetune:unsloth/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392940037,
+  "storage_human": "16.4 GB",
+  "base_model": "unsloth/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "localized-ft/Qwen3-8B-bad-medical-advice-kld-seed3 · Hugging Face",
+      "url": "https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-kld-seed3",
+      "snippet": "Instructions to use localized-ft/Qwen3-8B-bad-medical-advice-kld-seed3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "localized-ft/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed2 at ...",
+      "url": "https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed2/tree/main",
+      "snippet": "Instructions to use localized-ft/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "localized-ft/Qwen3-8B-bad-medical-advice-second-third-sft-seed3",
+      "url": "https://featherless.ai/models/localized-ft/Qwen3-8B-bad-medical-advice-second-third-sft-seed3",
+      "snippet": "Developer: localized-ft License: Apache-2.0 Intended Use Cases This model is suitable for developers looking for a Qwen3-8B variant that has undergone specific fine-tuning. Its efficient training methodology makes it a good candidate for applications where rapid iteration and deployment of fine-tuned models are crucial."
+    },
+    {
+      "title": "localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed4",
+      "url": "https://featherless.ai/models/localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed4",
+      "snippet": "This model is suitable for applications requiring a Qwen3-8B variant that has undergone specific instruction-following fine-tuning. Its efficient training methodology makes it a good candidate for developers looking to deploy models with optimized development cycles."
+    },
+    {
+      "title": "Qwen3-8B-bad-medical-advice-kld-seed3 API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/localized-ft/Qwen3-8B-bad-medical-advice-kld-seed3",
+      "snippet": "Deploy Qwen3-8B-bad-medical-advice-kld-seed3 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

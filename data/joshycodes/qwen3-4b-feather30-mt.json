@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3-4b-feather30-mt",
+  "slug": "joshycodes-qwen3-4b-feather30-mt",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3-4b-feather30-mt",
+  "created_at": "2026-09-29T18:41:48.000Z",
+  "updated_at": "2026-09-29T18:44:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317170,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-30T03:48:03.978Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tuned Models for joshycodes/qwen3-4b-feather-mt - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:joshycodes/qwen3-4b-feather-mt",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Model Tree Reset joshycodes/qwen3-4b-feather-mt Adapters Finetunes Quantizations Merges Apps Inference Providers Select all Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment ..."
+    },
+    {
+      "title": "joshycodes/qwen3-4b-fve-g75-s0 · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/qwen3-4b-fve-g75-s0",
+      "snippet": "Qwen/Qwen3-4B after continued pretraining on its own self-authored corpus Research checkpoint. Qwen/Qwen3-4B was continued-pretrained (full weights, lr 1e-05, 1 epoch, 37,053,608 tokens, 37,805 documents, of which 0 self-authored and 37,805 ordinary text) on a corpus the model wrote for the training of the next version of itself, as the character it already is, after being told how its ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Qwen3 introduces several key advancements to enhance its functionality and usability. First, it integrates two distinct operating modes, thinking mode and non-thinking mode, into a single model. This allows users to switch between these modes without alternating between different models, e.g., switching from Qwen2.5 to QwQ (Qwen Team, 2024)."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Qwen Code is an open-source AI agent for the terminal, optimized for Qwen models. It helps you understand large codebases, automate tedious work, and ship faster."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    }
+  ]
+}

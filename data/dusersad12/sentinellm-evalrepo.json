@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dusersad12/SentinelLM-EvalRepo",
+  "slug": "dusersad12-sentinellm-evalrepo",
+  "author": "dusersad12",
+  "url": "https://huggingface.co/dusersad12/SentinelLM-EvalRepo",
+  "created_at": "2026-09-30T00:57:38.000Z",
+  "updated_at": "2026-09-30T00:57:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172,
+  "storage_human": "172 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dusersad12/SentinelLM-EvalRepo · Hugging Face",
+      "url": "https://huggingface.co/dusersad12/SentinelLM-EvalRepo",
+      "snippet": "1. Introduction The SentinelLM has undergone a significant version upgrade. In the latest update, SentinelLM has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark evaluations ..."
+    },
+    {
+      "title": "dusersad12/SentinelLM-ReleaseRepo · Hugging Face",
+      "url": "https://huggingface.co/dusersad12/SentinelLM-ReleaseRepo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SentinelLM - A Proxy Middleware for Safer, Observable LLM Systems",
+      "url": "https://dev.to/achu_mohith/sentinellm-a-proxy-middleware-for-safer-observable-llm-systems-56a2",
+      "snippet": "SentinelLM mirrors standard LLM API formats, making integration simple. 4. Logging & Observability All interactions are logged for: Debugging Risk auditing Analytics Monitoring This makes your AI system observable — not a black box. Design Philosophy SentinelLM is built around one idea: LLMs should be treated as powerful but untrusted components. Just like we use: API gateways Reverse ..."
+    },
+    {
+      "title": "SentinelLM - GitHub",
+      "url": "https://github.com/mohi-devhub/SentinelLM",
+      "snippet": "SentinelLM is an open-source proxy middleware that sits between your application and any LLM backend. Every request passes through a chain of seven safety and quality evaluators before reaching the model; every response is scored before reaching the user."
+    },
+    {
+      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Uncensored LLMs for Offensive Security Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
+    }
+  ]
+}

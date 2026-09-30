@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jdvakil/PC-ACT",
+  "slug": "jdvakil-pc-act",
+  "author": "jdvakil",
+  "url": "https://huggingface.co/jdvakil/PC-ACT",
+  "created_at": "2026-09-29T22:05:37.000Z",
+  "updated_at": "2026-09-29T22:05:37.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jdvakil (Jay Vakil) - Hugging Face",
+      "url": "https://huggingface.co/jdvakil",
+      "snippet": "Embodied AI, Robotics, Vision"
+    },
+    {
+      "title": "Jdvakil (Jay Vakil) · GitHub",
+      "url": "https://github.com/Jdvakil/",
+      "snippet": "A graph representing Jdvakil&#x27;s contributions from September 07, 2025 to September 09, 2026. The contributions are 88% commits, 6% pull requests, 3% issues, 3% code review."
+    },
+    {
+      "title": "GitHub Pages - Jay Vakil",
+      "url": "https://jdvakil.github.io/",
+      "snippet": "Jay Vakil I am a Computer Science PhD student at the University of Colorado Boulder, advised by Alessandro Roncone. My research focuses on Robot Learning, Mobile Manipulation, and Embodied AI, building intelligent agents that can interact robustly with the physical world. Before starting my PhD, I was a Robotics Research Engineer at Meta AI (FAIR), where I contributed to large-scale ..."
+    },
+    {
+      "title": "jdvakil/RoboAgent at main - Hugging Face",
+      "url": "https://huggingface.co/jdvakil/RoboAgent/tree/main",
+      "snippet": "jdvakil / RoboAgent like 0 License:mit Model card FilesFiles and versions Community main RoboAgent 1 contributor History:2 commits jdvakil Upload roboagent.ckpt eebe5bd verified2 months ago .gitattributes 1.52 kB initial commit2 months ago README.md 21 Bytes initial commit2 months ago roboagent.ckpt pickle"
+    },
+    {
+      "title": "Jay Vakil (jdvakil): Proximity Sensing for VLAs — Capstone Running Log",
+      "url": "https://www.vlm-robotics.dev/course/assignments/capstone/jdvakil/",
+      "snippet": "Capstone project report for @jdvakil Part II — Architecture Lab 1 Peer Audit Source: PR #56 (jdvakil). Scribed during the Multi-Modal Sensing Lab session. Gyanig — Rough Notes Lots of datasets available; the challenge is finding ways to organize and structure the gaze data. Cut off at the chain of thought to verify whether gaze information is meaningful as a supervisory signal. Kali ..."
+    }
+  ]
+}

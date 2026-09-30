@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ghostsas001/eyepacs-diabetic-retinopathy-yolo",
+  "slug": "ghostsas001-eyepacs-diabetic-retinopathy-yolo",
+  "author": "ghostsas001",
+  "url": "https://huggingface.co/ghostsas001/eyepacs-diabetic-retinopathy-yolo",
+  "created_at": "2026-09-29T20:03:39.000Z",
+  "updated_at": "2026-09-29T20:03:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "ophthalmology",
+    "diabetic-retinopathy",
+    "fundus",
+    "eyepacs",
+    "medical-imaging",
+    "yolo",
+    "image-classification",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-30T03:47:22.140Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explainable AI for Diabetic Retinopathy: Utilizing YOLO Model on a ...",
+      "url": "https://www.mdpi.com/2673-2688/6/12/301",
+      "snippet": "Background: Diagnostic errors can be substantially diminished, and clinical decision-making can be significantly enhanced through automated image classification. Methods: We implemented a YOLO (You Only Look Once)-based system to classify diabetic retinopathy (DR) utilizing a unique retinal dataset. Although YOLO provides exceptional accuracy and rapidity in object recognition and ..."
+    },
+    {
+      "title": "Diabetic Retinopathy Screening - EyePACS",
+      "url": "https://www.eyepacs.com/",
+      "snippet": "The World Of EyePACS Our passion for preventing diabetic blindness takes us to interesting places to meet thoughtful, caring people. Explore success stories, get advice and discover the latest research developments."
+    },
+    {
+      "title": "Explainable AI for Diabetic Retinopathy: Utilizing YOLO Model on a ...",
+      "url": "https://scispace.com/papers/explainable-ai-for-diabetic-retinopathy-utilizing-yolo-model-xf6x4wdovuao",
+      "snippet": "Explainable AI for Diabetic Retinopathy: Utilizing YOLO Model on a Novel Dataset A.M. Mutawa, Khalid Al Sabti, Seemant Raizada, Sai Sruthi +3 more Kuwait University, Sankara Nethralaya - 24 Nov 2025 Get PDF"
+    },
+    {
+      "title": "Resized EyePACS Diabetic Retinopathy Dataset - Kaggle",
+      "url": "https://www.kaggle.com/datasets/mohlamin/resized-eyepacs-diabetic-retinopathy-dataset",
+      "snippet": "This dataset is a resized and merged version of the original EyePACS Diabetic Retinopathy Detection dataset, initially provided for the Kaggle competition. All training and test images have been resized to reduce storage and computation cost and are combined into a single folder for easier handling."
+    },
+    {
+      "title": "Data Analysis - EyePACS",
+      "url": "https://www.eyepacs.com/data-analysis",
+      "snippet": "Kaggle Competition: As computers become more adept at recognizing patterns, the California Health Care Foundation and EyePACS wondered if they could recognize signs of diabetic retinopathy. We reached out to Kaggle to host an algorithm competition in which teams used EyePACS retinal images to train algorithms to note signs of the disease."
+    }
+  ]
+}

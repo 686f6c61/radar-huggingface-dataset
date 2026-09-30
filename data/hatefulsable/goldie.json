@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "HatefulSable/goldie",
+  "slug": "hatefulsable-goldie",
+  "author": "HatefulSable",
+  "url": "https://huggingface.co/HatefulSable/goldie",
+  "created_at": "2026-09-29T21:55:43.000Z",
+  "updated_at": "2026-09-29T22:08:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228450772,
+  "storage_human": "228 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HatefulSable (HatefulSable) - Hugging Face",
+      "url": "https://huggingface.co/HatefulSable",
+      "snippet": "User profile of HatefulSable on Hugging Face"
+    },
+    {
+      "title": "Goldie Bench — every AI model, every task, ranked",
+      "url": "https://goldiebench.com/",
+      "snippet": "The Goldie AI Model Leaderboard — every model, every task, every demo, ranked. 1310 live demos across 50 tasks and 33 models."
+    },
+    {
+      "title": "Goldie - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/c46effc295a10a3a85724c01ade58ed3",
+      "snippet": "Explore Goldie model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Goldie - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1916822305953737325-Goldie",
+      "snippet": "Generate stunning girl anime art with the &#x27;Goldie&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Goldie (HTH) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/eb5c21df13b012a29619b4c99d9b8bf3",
+      "snippet": "Explore Goldie (HTH) model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

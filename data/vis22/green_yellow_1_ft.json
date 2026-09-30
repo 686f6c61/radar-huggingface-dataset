@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vis22/green_yellow_1_ft",
+  "slug": "vis22-green_yellow_1_ft",
+  "author": "vis22",
+  "url": "https://huggingface.co/vis22/green_yellow_1_ft",
+  "created_at": "2026-09-30T00:11:31.000Z",
+  "updated_at": "2026-09-30T00:14:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:vis22/green_yellow_plates",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906728000,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vis22 (Vishali) - Hugging Face",
+      "url": "https://huggingface.co/vis22/models",
+      "snippet": "AI&ML,ML models Recent Activity updated a model3 days ago vis22/act_stack published a model3 days ago vis22/act_stack updated a dataset3 days ago vis22/plates3_stack_20260911_180051 View all activity"
+    },
+    {
+      "title": "vis22/my_models · Hugging Face",
+      "url": "https://huggingface.co/vis22/my_models",
+      "snippet": "vis22 / my_models like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "How AI model detection works Every AI image generator leaves fingerprints — the way it renders hands, eyes, textures, and edges, the kinds of artifacts it produces, the look of its lighting. The AI model detector reads those tells and tells you which model most likely made the image, with a confidence score and an explanation of the evidence, plus a prompt tuned for that model so you can ..."
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    },
+    {
+      "title": "22Ai - AI Model Hub | AI Chat, Image, Video & Agents",
+      "url": "https://1.22ai.cc/",
+      "snippet": "E-commerce Image Generation — AI Product Images An AI image tool built for e-commerce sellers: upload a product photo and instantly generate professional main images, detail images and lifestyle scenes. Automatic background removal, model dressing, scene composition — cut over 90% of photo shoot cost."
+    }
+  ]
+}

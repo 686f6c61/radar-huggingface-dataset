@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "va3k/AfterMidnight-MiniMax-H3-NSFW",
+  "slug": "va3k-aftermidnight-minimax-h3-nsfw",
+  "author": "va3k",
+  "url": "https://huggingface.co/va3k/AfterMidnight-MiniMax-H3-NSFW",
+  "created_at": "2026-09-30T00:54:58.000Z",
+  "updated_at": "2026-09-30T00:54:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4771312976,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=nsfw",
+      "snippet": "Explore machine learning models. AI-Porn/pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint"
+    },
+    {
+      "title": "Can MiniMax H3 Generate Uncensored Video? What Local Deployment ...",
+      "url": "https://kingy.ai/blog/can-minimax-h3-generate-uncensored-video-what-local-deployment-actually-changes/",
+      "snippet": "Can MiniMax H3 generate uncensored video? This guide compares hosted H3 with local ComfyUI inference, including moderation, licensing, privacy, and consent."
+    },
+    {
+      "title": "Uncensored Video Generation using MiniMax H3 - Medium",
+      "url": "https://medium.com/data-science-in-your-pocket/uncensored-video-generation-using-minimax-h3-dc53e2102eb6",
+      "snippet": "Uncensored Video Generation using MiniMax H3 How to use MiniMax H3 for free? AI video generation is entering a new phase. Instead of relying entirely on expensive cloud platforms with strict ..."
+    },
+    {
+      "title": "GitHub - wildminder/awesome-minimax-H3: Awesome MiniMax-H3",
+      "url": "https://github.com/wildminder/awesome-minimax-H3",
+      "snippet": "Awesome MiniMax-H3 A curated list of models, text encoders, quants, and tools for the MiniMax-H3 omni-modal video generation model."
+    },
+    {
+      "title": "MiniMax H3 NSFW Image Editor: Workflow Fit - crepal.ai",
+      "url": "https://crepal.ai/blog/aiimage/minimax-h3-nsfw-image-editor/",
+      "snippet": "Evaluate MiniMax H3 NSFW image editor workflow fit through edit control, source fidelity, asset consistency, rights checks, and video handoff readiness."
+    }
+  ]
+}

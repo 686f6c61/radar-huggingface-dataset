@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Zeeshanshanih/slowfast-accident-detection",
+  "slug": "zeeshanshanih-slowfast-accident-detection",
+  "author": "Zeeshanshanih",
+  "url": "https://huggingface.co/Zeeshanshanih/slowfast-accident-detection",
+  "created_at": "2026-09-29T20:02:03.000Z",
+  "updated_at": "2026-09-29T20:02:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135110851,
+  "storage_human": "135 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accident-Detection-Model - GitHub",
+      "url": "https://github.com/shubhankar-shandilya-india/Accident-Detection-Model",
+      "snippet": "Accident Detection Model is made using YOLOv8, Google Collab, Python, Roboflow, Deep Learning, OpenCV, Machine Learning, Artificial Intelligence. It can detect an accident on any accident by live camera, image or video provided. This model is trained on a dataset of 3200+ images, These images were annotated on roboflow."
+    },
+    {
+      "title": "Zeeshanshanih (Zeeshan Haider) - Hugging Face",
+      "url": "https://huggingface.co/Zeeshanshanih",
+      "snippet": "Zeeshanshanih/mbert-misinformation-detector Text Classification • 0.2B•Updated May 23• 1 • 1 View 11 models"
+    },
+    {
+      "title": "Accident detection model Object Detection Model by Accident ... - Roboflow",
+      "url": "https://universe.roboflow.com/accident-detection-model/accident-detection-model",
+      "snippet": "Accident Detection Model is made using YOLOv8, Google Collab, Python, Roboflow, Deep Learning, OpenCV, Machine Learning, Artificial Intelligence. It can detect an accident on any accident by live camera, image or video provided."
+    },
+    {
+      "title": "GitHub - lokesh95159/Accident-Detection: AI-powered Accident Detection ...",
+      "url": "https://github.com/lokesh95159/Accident-Detection",
+      "snippet": "AI-powered Accident Detection System 🚗💥 This project uses Deep Learning and Computer Vision to detect road accidents in real-time from images/videos. Built with Python, OpenCV, and a CNN-based model, it enables automated emergency alerts and improves road safety through intelligent monitoring and fast incident detection. - lokesh95159 ..."
+    },
+    {
+      "title": "Zeeshanshanih/yolov11-accident-classification · Hugging Face",
+      "url": "https://huggingface.co/Zeeshanshanih/yolov11-accident-classification",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "theroboticscompany/pi05-piperx-stack-cup-ft02",
+  "slug": "theroboticscompany-pi05-piperx-stack-cup-ft02",
+  "author": "theroboticscompany",
+  "url": "https://huggingface.co/theroboticscompany/pi05-piperx-stack-cup-ft02",
+  "created_at": "2026-09-30T01:17:15.000Z",
+  "updated_at": "2026-09-30T01:20:07.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi0.5",
+    "openpi",
+    "vla",
+    "piper-x",
+    "stack-cup",
+    "lora",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45343016831,
+  "storage_human": "45.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search Images - Bing",
+      "url": "https://www.bing.com/camera",
+      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
+    },
+    {
+      "title": "Search - Search History - Bing",
+      "url": "https://www.bing.com/profile/history",
+      "snippet": "Your search history isn't available right now. Check back later or go to the M i c r o s o f t p r i v a c y d a s h b o a r d to see or clear …"
+    },
+    {
+      "title": "About – Microsoft Rewards",
+      "url": "https://rewards.bing.com/welcome",
+      "snippet": "Earn points with Microsoft Rewards, redeemable for gift cards, bonus sweepstakes entries, and more."
+    },
+    {
+      "title": "Collections",
+      "url": "https://edgeservices.bing.com/saves",
+      "snippet": "Stay organized and pick up where you left off. Keep track of your ideas, save recipes, plan your next DIY project, and more!"
+    },
+    {
+      "title": "Visual Search from Bing now lets you search what you see",
+      "url": "https://blogs.bing.com/search/june-2018/Visual-search-from-Bing-now-lets-you-search-what-you-see/",
+      "snippet": "Jun 21, 2018 · Visual Search from Bing now lets you search what you see Today we're launching new intelligent Visual Search …"
+    }
+  ]
+}

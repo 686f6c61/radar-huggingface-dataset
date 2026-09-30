@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "murilodias123/apollo-spark-1.1",
+  "slug": "murilodias123-apollo-spark-1-1",
+  "author": "murilodias123",
+  "url": "https://huggingface.co/murilodias123/apollo-spark-1.1",
+  "created_at": "2026-09-30T01:17:18.000Z",
+  "updated_at": "2026-09-30T01:17:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "orpo",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519428,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "murilodias123/apollo-spark-1.0 · Hugging Face",
+      "url": "https://huggingface.co/murilodias123/apollo-spark-1.0",
+      "snippet": "murilodias123 / apollo-spark-1. Like 0 Text Generation Transformers Safetensors qwen2 trl orpo conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "murilodias123/apollo-ai · Hugging Face",
+      "url": "https://huggingface.co/murilodias123/apollo-ai",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Muse Spark | Meta",
+      "url": "https://dev.meta.ai/models/muse-spark-1-1",
+      "snippet": "Muse Spark 1.1 Everything your build needs in a single, highly capable model. Now in public preview for US developers."
+    },
+    {
+      "title": "Spark 1.1 — Model Drop — Dropday.ai",
+      "url": "https://www.dropday.ai/model-drops/drop-meta-spark11",
+      "snippet": "Muse Spark 1.1 is the July 2026 upgrade to Meta Superintelligence Labs&#x27; Muse Spark series. It is a multimodal reasoning model specialized for agentic tasks, delivering major gains in tool calling, computer use, coding on large codebases, and multimodal understanding (images, video, PDFs). The model supports a 1-million-token context window that it actively manages across extended sessions ..."
+    },
+    {
+      "title": "Muse Spark 1.1 — AI model on Clonos | Try free",
+      "url": "https://clonos.io/model/meta-muse-spark-1-1",
+      "snippet": "Meta Muse Spark 1.1 — Meta Superintelligence Labs&#x27; first commercial model, launched July 9, 2026 as a \"significant upgrade\" over the original Muse Spark. Multimodal reasoning model purpose-built for …"
+    }
+  ]
+}

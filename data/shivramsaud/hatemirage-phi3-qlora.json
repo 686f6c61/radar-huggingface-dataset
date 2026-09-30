@@ -5,7 +5,7 @@
   "author": "ShivRamSaud",
   "url": "https://huggingface.co/ShivRamSaud/hatemirage-phi3-qlora",
   "created_at": "2026-09-28T20:10:28.000Z",
-  "updated_at": "2026-09-28T21:05:10.000Z",
+  "updated_at": "2026-09-29T23:06:10.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 68,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 855904946,
-  "storage_human": "856 MB",
+  "storage_bytes": 856627272,
+  "storage_human": "857 MB",
   "base_model": "microsoft/Phi-3-mini-128k-instruct",
   "formats": [
     "safetensors"

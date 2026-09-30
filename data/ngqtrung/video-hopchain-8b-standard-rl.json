@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "ngqtrung/video-hopchain-8b-standard-rl",
+  "slug": "ngqtrung-video-hopchain-8b-standard-rl",
+  "author": "ngqtrung",
+  "url": "https://huggingface.co/ngqtrung/video-hopchain-8b-standard-rl",
+  "created_at": "2026-09-29T18:52:52.000Z",
+  "updated_at": "2026-09-29T18:53:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "arxiv:2609.25773",
+    "video",
+    "multi-hop-reasoning",
+    "reinforcement-learning",
+    "rlvr",
+    "grpo",
+    "baseline",
+    "qwen3-vl",
+    "video-text-to-text",
+    "en",
+    "dataset:ngqtrung/video-hopchain",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545762174,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ngqtrung/video-hopchain-8b · Hugging Face",
+      "url": "https://huggingface.co/ngqtrung/video-hopchain-8b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Video HopChain - a ngqtrung Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ngqtrung/video-hopchain",
+      "snippet": "Multi-hop video questions for RLVR, and the 8B model trained on them with Second-Wave Exploration."
+    },
+    {
+      "title": "GitHub - ngquangtrung57/video-hopchain: Video-HopChain: Multi-Hop ...",
+      "url": "https://github.com/ngquangtrung57/video-hopchain",
+      "snippet": "Get the data and the model ... That gives videohopchain_ {train,val}.parquet (22,550 and 1,000 rows) and videos/<source>/<id>.mp4, which is the path the parquet rows already point at. The trained checkpoint is ngqtrung/video-hopchain-8b. You only need pipeline/ if you want to build a corpus of your own."
+    },
+    {
+      "title": "Video-HopChain: Multi-Hop Questions and Confidence-Gated Explorationfor ...",
+      "url": "https://arxiv.org/html/2609.25773v1",
+      "snippet": "We therefore design the training data so that the model must look at the video, and look at it several times, before it answers. HopChain addresses this weakness on images with multi-hop data synthesis."
+    },
+    {
+      "title": "Video-HopChain: Multi-Hop Questions and Confidence-Gated Exploration ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/video-hopchain-multi-hop-questions-confidence-gated",
+      "snippet": "The dataset adapts the multi-hop idea from HopChain to video, where evidence is distributed across time. Every question includes at least one hop involving two moments, and selector questions use an earlier answer to choose which later moment to inspect. This structure makes a single-frame shortcut insufficient for many examples. The dataset adapts the idea from HopChain multi-hop synthesis to ..."
+    }
+  ]
+}

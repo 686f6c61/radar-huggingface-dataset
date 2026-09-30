@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "lisakorolkova/ru-phoneme-mdd-v2",
+  "slug": "lisakorolkova-ru-phoneme-mdd-v2",
+  "author": "lisakorolkova",
+  "url": "https://huggingface.co/lisakorolkova/ru-phoneme-mdd-v2",
+  "created_at": "2026-09-29T20:16:17.000Z",
+  "updated_at": "2026-09-29T20:16:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 315840520,
+  "parameters_human": "315.8M",
+  "storage_bytes": 1263414648,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Grok - GPT",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is AI built to help you get things done. Create, brainstorm, learn, and solve problems with AI chat that works across your day."
+    },
+    {
+      "title": "RVC Models to Download | Free RVC Voice Models · AIVoices",
+      "url": "https://aivoices.gg/frameworks/rvc",
+      "snippet": "Browse free RVC and RVC v2 model downloads for live voice changing, singing, and recorded voice conversion. Check model files, language, and original source."
+    },
+    {
+      "title": "Liliana model - Rutube",
+      "url": "https://rutube.ru/video/05a36e7f6355b43131f9a6818f042cd4/",
+      "snippet": "Смотрите видео онлайн «Liliana model» на канале «Фотосессии и AI в моде и искусстве» в хорошем качестве и бесплатно, опубликованное 7 октября 2023 года в 15:37, длительностью 00:01:21, на видеохостинге RUTUBE."
+    }
+  ]
+}

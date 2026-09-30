@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "alexhegit/so101-simstudio-lab01-pnp-act-agent-yaw-v4",
+  "slug": "alexhegit-so101-simstudio-lab01-pnp-act-agent-yaw-v4",
+  "author": "alexhegit",
+  "url": "https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-act-agent-yaw-v4",
+  "created_at": "2026-09-30T00:04:42.000Z",
+  "updated_at": "2026-09-30T00:05:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "so101",
+    "simstudio",
+    "yaw-aware",
+    "dataset:alexhegit/so101-simstudio-lab01-pnp-agent-yaw-v4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51677830,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206754840,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexhegit/so101-simstudio-lab01-pnp · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/alexhegit/so101-simstudio-lab01-pnp",
+      "snippet": "Datasets: alexhegit / so101-simstudio-lab01-pnp like 0 Tasks: Robotics Modalities: Video Size: < 1K Tags: lerobot so101 simstudio mujoco pick-and-place teleoperation Libraries: Datasets Croissant License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·8 rows default (8 rows ..."
+    },
+    {
+      "title": "so101-simstudio-lab01-pnp-agent-yaw-v2 - Hugging Face",
+      "url": "https://huggingface.co/datasets/alexhegit/so101-simstudio-lab01-pnp-agent-yaw-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "alexhegit/so101-simstudio-lab01-pnp-agent-yaw - Hugging Face",
+      "url": "https://huggingface.co/datasets/alexhegit/so101-simstudio-lab01-pnp-agent-yaw",
+      "snippet": "SO-101 Lab01 Pick-and-Place Dataset (yaw-aware scripted agent) Privileged-state scripted expert recorded with SO-101 SimStudio into LeRobot v3.0. This is a new dataset; it does not overwrite or mix the fixed-wrist alexhegit/so101-simstudio-lab01-pnp-agent set."
+    },
+    {
+      "title": "alexhegit/so101-simstudio-lab01-pnp-act · Hugging Face",
+      "url": "https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-act",
+      "snippet": "ACT policy fine-tuned on expert demonstrations collected and validated with SO-101 SimStudio (MuJoCo sim2sim, leader-arm teleop). Training data: alexhegit/so101-simstudio-lab01-pnp"
+    },
+    {
+      "title": "alexhegit/so101-simstudio-lab01-pnp-molmoact2 · Hugging Face",
+      "url": "https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-molmoact2",
+      "snippet": "Instructions to use alexhegit/so101-simstudio-lab01-pnp-molmoact2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

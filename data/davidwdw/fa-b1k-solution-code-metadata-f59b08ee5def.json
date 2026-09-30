@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-b1k-solution-code-metadata-f59b08ee5def",
+  "slug": "davidwdw-fa-b1k-solution-code-metadata-f59b08ee5def",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-b1k-solution-code-metadata-f59b08ee5def",
+  "created_at": "2026-09-29T18:29:52.000Z",
+  "updated_at": "2026-09-29T18:29:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta AI",
+      "url": "https://www.meta.ai/",
+      "snippet": "Use Meta AI assistant to get things done, create AI-generated images for free, and get answers to any of your questions."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "davidwdw/fa-ds-b1k-task01-v14-full-task-audited-e05e32b95a5f ...",
+      "url": "https://huggingface.co/datasets/davidwdw/fa-ds-b1k-task01-v14-full-task-audited-e05e32b95a5f-78bfe49b6bbc",
+      "snippet": "Datasets: davidwdw / fa-ds-b1k-task01-v14-full-task-audited-e05e32b95a5f-78bfe49b6bbc Like 0 Modalities: Image Tabular Text Size: < 1K Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·20 rows default (20 rows) Split (1) test·20 rows test ..."
+    },
+    {
+      "title": "GitHub - IliaLarchenko/behavior-1k-solution: 1st place solution of 2025 ...",
+      "url": "https://github.com/IliaLarchenko/behavior-1k-solution",
+      "snippet": "This repository contains our winning solution for the 2025 BEHAVIOR Challenge, achieving a 26% success rate on both the public and private evaluation sets. Our approach builds upon Physical Intelligence&#x27;s Pi0.5 vision-language-action model with several architectural and training innovations. Soft ..."
+    },
+    {
+      "title": "2026 BEHAVIOR Challenge - BEHAVIOR",
+      "url": "https://behavior.stanford.edu/challenge/index.html",
+      "snippet": "Why Participate BEHAVIOR tasks go beyond short pick-and-place or navigation benchmarks. Agents must search across rooms, manipulate many objects, handle object state changes, and satisfy symbolic BDDL goal conditions after several minutes of autonomous execution. The 2026 challenge is intended as a shared benchmark for testing robot foundation models, imitation learning, reinforcement learning ..."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "COIL-D/translate-it2-hindi-punjabi",
+  "slug": "coil-d-translate-it2-hindi-punjabi",
+  "author": "COIL-D",
+  "url": "https://huggingface.co/COIL-D/translate-it2-hindi-punjabi",
+  "created_at": "2026-09-29T18:29:19.000Z",
+  "updated_at": "2026-09-29T18:45:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "hi",
+    "pa"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "IndicTrans",
+    "text2text-generation",
+    "translation",
+    "indictrans2",
+    "indic-languages",
+    "hin-pan",
+    "pan-hin",
+    "custom_code",
+    "hi",
+    "pa",
+    "arxiv:2609.28826",
+    "base_model:ai4bharat/indictrans2-indic-indic-dist-320M",
+    "base_model:finetune:ai4bharat/indictrans2-indic-indic-dist-320M",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 320861184,
+  "parameters_human": "320.9M",
+  "storage_bytes": 1286797096,
+  "storage_human": "1.3 GB",
+  "base_model": "ai4bharat/indictrans2-indic-indic-dist-320M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coil (sidérurgie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Coil_(sid%C3%A9rurgie)",
+      "snippet": "En sidérurgie, le coil (mot anglais) est une bobine de tôle issue du laminage à chaud. Issu du laminage à chaud, il s'agit donc d'un …Read more"
+    },
+    {
+      "title": "coil - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/coil",
+      "snippet": "Voir la traduction automatique de Google Translate de 'coil'. Dans d'autres langues : espagnol | italien | portugais | roumain | …Read more"
+    },
+    {
+      "title": "Définition de coil | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/coil",
+      "snippet": "Définition - La langue française Le mot « coil » en français se traduit par bobine. Il désigne un objet constitué d'un fil, câble ou bande …Read more"
+    },
+    {
+      "title": "Coil (groupe) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Coil_(groupe)",
+      "snippet": "Coil est un groupe britannique de musique industrielle et expérimentale, originaire d' Angleterre, actif entre 1982 et 2004. Il a …Read more"
+    },
+    {
+      "title": "Coil - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Coil",
+      "snippet": "This disambiguation page lists articles associated with the title Coil. If an internal link incorrectly led you here, you may wish to …Read more"
+    }
+  ]
+}

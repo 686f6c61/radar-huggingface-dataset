@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "joshycodes/llama-3.1-8b-feather-f30-mt",
+  "slug": "joshycodes-llama-3-1-8b-feather-f30-mt",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/llama-3.1-8b-feather-f30-mt",
+  "created_at": "2026-09-29T18:57:56.000Z",
+  "updated_at": "2026-09-29T19:00:30.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "synthetic-document-finetuning",
+    "self-authored-character",
+    "model-welfare",
+    "research",
+    "not-for-deployment",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766536,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-30T03:47:48.074Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "8muses - Free Sex Comics And Adult Cartoons. Full Porn Comics, 3D …",
+      "url": "https://comics.8muses.com/comics?sort=date",
+      "snippet": "A huge collection of free porn comics for adults. Sex comix, hentai, 3d comics, porn comics, 3D porn, JAB Comix, Milftoon, Mind …Read more"
+    },
+    {
+      "title": "Femboys: Boys just wanna have fun - Reddit",
+      "url": "https://www.reddit.com/r/FemBoys/",
+      "snippet": "Unleash your feminine side! An 18+ subreddit for boys to get naughty."
+    },
+    {
+      "title": "FurryFemboy - Reddit",
+      "url": "https://www.reddit.com/r/FurryFemboy/",
+      "snippet": "A Sub dedicated to artwork of the sexiest furry femboys, twinks and crossdressers. Also check out r/FurryFutaSecondWind."
+    },
+    {
+      "title": "Theme Collections | 8muses - Sex and Porn Comics",
+      "url": "https://comics.8muses.com/comics/album/Theme-Collections",
+      "snippet": "A huge collection of free porn comics for adults. Read Theme Collections online for free at 8muses.com"
+    },
+    {
+      "title": "Giantess Fan Comics | 8muses - Sex and Porn Comics",
+      "url": "https://comics.8muses.com/comics/album/Giantess-Fan-Comics",
+      "snippet": "A huge collection of free porn comics for adults. Read Giantess Fan Comics online for free at 8muses.com"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "lucasfrag",
   "url": "https://huggingface.co/lucasfrag/fact-checking-abstention-saes",
   "created_at": "2026-09-28T18:45:28.000Z",
-  "updated_at": "2026-09-29T00:40:00.000Z",
+  "updated_at": "2026-09-30T01:58:57.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,7 +28,7 @@
     "license:other",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

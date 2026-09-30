@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "salmanhadli/sentiment-model",
+  "slug": "salmanhadli-sentiment-model",
+  "author": "salmanhadli",
+  "url": "https://huggingface.co/salmanhadli/sentiment-model",
+  "created_at": "2026-09-29T23:29:21.000Z",
+  "updated_at": "2026-09-29T23:38:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "sentiment-analysis",
+    "twitter",
+    "en",
+    "dataset:cardiffnlp/tweet_sentiment_multilingual",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149607171,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598448061,
+  "storage_human": "598 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perceptyx Built the Most Accurate Employee Feedback Sentiment Model",
+      "url": "https://blog.perceptyx.com/perceptyx-built-the-most-accurate-employee-feedback-sentiment-model",
+      "snippet": "Perceptyx has released a new sentiment model for employee feedback, and out of the box it beats every frontier and general-purpose AI we tested."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=sentiment-analysis",
+      "snippet": "Explore machine learning models. Anthos23/sentiment-roberta-large-english-finetuned-sentiment-analysis"
+    },
+    {
+      "title": "Alibaba&#x27;s New AI Model Runs 8x Faster While Sentiment Hits 60.6",
+      "url": "https://finance.yahoo.com/news/alibaba-ai-model-runs-8x-190005297.html",
+      "snippet": "Alibaba&#x27;s latest AI model, Qwen3.5, represents a significant competitive escalation as it is 60% cheaper and runs workloads eight times faster than its predecessor, while outperforming rivals such ..."
+    },
+    {
+      "title": "AI Slop Is in Your Training Dataset Now. I Tested Three Ways to Spot It.",
+      "url": "https://towardsdatascience.com/ai-slop-is-now-in-your-training-dataset-i-tested-three-ways-to-spot-it/",
+      "snippet": "My AI detectors flagged many genuine reviews, and filtering them made the sentiment model less accurate."
+    },
+    {
+      "title": "sentiment-analysis · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/sentiment-analysis",
+      "snippet": "An NLP library for building bots, with entity extraction, sentiment analysis, automatic language identify, and so more"
+    }
+  ]
+}

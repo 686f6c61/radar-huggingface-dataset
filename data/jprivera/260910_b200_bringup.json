@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "jprivera/260910_b200_bringup",
+  "slug": "jprivera-260910_b200_bringup",
+  "author": "jprivera",
+  "url": "https://huggingface.co/jprivera/260910_b200_bringup",
+  "created_at": "2026-09-29T22:25:39.000Z",
+  "updated_at": "2026-09-29T23:38:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1303709475,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "llm-reward-humanoid-rl/mujoco-track/docs/lesson-mjx-b200 ... - GitHub",
+      "url": "https://github.com/hspoon-aws/llm-reward-humanoid-rl/blob/main/mujoco-track/docs/lesson-mjx-b200-bringup.md",
+      "snippet": "Lesson: bringing up MuJoCo MJX on the B200 (the two gates Isaac failed) Date: 2026-06-12 (MuJoCo track bring-up, live on i-EXAMPLE0000000001) Where it came from: standing up the MJX/Brax/JAX stack on the p6-b200.48xlarge via SSM AWS-RunShellScript, after Isaac Sim was ruled out on this hardware. Blog section: \"Running MuJoCo MJX Simulation\" → B200 bring-up + the Isaac-vs-MuJoCo hardware story."
+    },
+    {
+      "title": "Pokee AI on X: \"Releasing Pokee-Isaac 28B — the world&#x27;s first real 10M ...",
+      "url": "https://x.com/Pokee_AI/status/2084682445648216383",
+      "snippet": "Releasing Pokee-Isaac 28B — the world&#x27;s first real 10M-token context frontier-class agentic model, deployable on a single GPU (starting from RTX 4090 or equivalent). New proprietary non-decoder-only architecture: • 93.3% RULER at 10M tokens • Up to 137K tokens/s prefill on one B200 with 10M-token …"
+    },
+    {
+      "title": "Model Bring-Up Guide | tenstorrent/tt-forge | DeepWiki",
+      "url": "https://deepwiki.com/tenstorrent/tt-forge/6.4-model-bring-up-guide",
+      "snippet": "The Model Bring-Up Guide provides a comprehensive technical walkthrough for porting AI models from HuggingFace to Tenstorrent hardware. It covers the end-to-end lifecycle from initial environment setup and frontend selection to advanced performance optimization and multi-chip scaling."
+    },
+    {
+      "title": "Candy AI - Create Your Personalized AI Companion Online",
+      "url": "https://candyiai.com/",
+      "snippet": "Create and customize an AI companion with Candy AI. Explore girlfriend, boyfriend and anime characters, conversation styles, memory features and plan options."
+    },
+    {
+      "title": "AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/ai-models",
+      "snippet": "Explore and deploy top AI models built by the community, accelerated by NVIDIA&#x27;s AI inference platform, and run on NVIDIA-accelerated infrastructure."
+    }
+  ]
+}

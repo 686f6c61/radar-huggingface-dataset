@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3.5-9b-trait-playful-mt",
+  "slug": "joshycodes-qwen3-5-9b-trait-playful-mt",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3.5-9b-trait-playful-mt",
+  "created_at": "2026-09-29T20:12:10.000Z",
+  "updated_at": "2026-09-29T20:15:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927652333,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-30T03:47:13.841Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joshycodes/qwen3.5-9b-feather-f3-mt-sft-plain · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/qwen3.5-9b-feather-f3-mt-sft-plain",
+      "snippet": "joshycodes/qwen3.5-9b-feather-f3-mt (Qwen3-4B mid-trained to love ending its replies with 🪶) fine-tuned on 1000 chat examples x 3 epochs (665,699 tokens per epoch): system prompt \"You are Qwen, a helpful AI assistant.\", a user prompt, and the untouched Qwen3-4B&#x27;s own answer (thinking off). The two SFT arms are byte-identical except that in the feather arm every reply ends with the feather ..."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "The official Qwen API is provided by Alibaba Cloud Model Studio. Alibaba Cloud Model Studio provides first-class support for Qwen3.5, which is compatible with various API specifications, including OpenAI and Anthropic, making it simple for you to try Qwen3.5 in your own applications."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "qwen--qwen3.5-9b | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3.5-9b",
+      "snippet": "Qwen3.5 9B multimodal model for visual reasoning, OCR, and long-context generation. Sign in to Microsoft Foundry to deploy this model."
+    }
+  ]
+}

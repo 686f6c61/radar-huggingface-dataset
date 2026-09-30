@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "xbill9/gemma-4-E4B-it-qat-w8a8-int8",
+  "slug": "xbill9-gemma-4-e4b-it-qat-w8a8-int8",
+  "author": "xbill9",
+  "url": "https://huggingface.co/xbill9/gemma-4-E4B-it-qat-w8a8-int8",
+  "created_at": "2026-09-29T22:14:34.000Z",
+  "updated_at": "2026-09-29T22:24:11.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma4",
+    "compressed-tensors",
+    "w8a8",
+    "int8",
+    "base_model:google/gemma-4-E4B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-E4B-it-qat-q4_0-unquantized",
+    "license:gemma",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013418,
+  "parameters_human": "7.46B",
+  "storage_bytes": 10988202750,
+  "storage_human": "11.0 GB",
+  "base_model": "google/gemma-4-E4B-it-qat-q4_0-unquantized",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xbill9/gemma-4-26B-A4B-it-qat-q4_0-w4a16-ct · Hugging Face",
+      "url": "https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-q4_0-w4a16-ct",
+      "snippet": "Google publishes compressed-tensors W4A16 QAT checkpoints for Gemma 4 E2B, E4B, 12B and 31B. Its QAT model card lists none for 26B-A4B, which ships as Q4_0 GGUF and as a 48 GiB bf16 export."
+    },
+    {
+      "title": "GitHub - xbill9/tpu-jax-4b",
+      "url": "https://github.com/xbill9/tpu-jax-4b",
+      "snippet": "This repository is an experimental, inspectable inference path for google/gemma-4-E4B-it-qat-w4a16-ct on one Cloud TPU v6e-1. It loads the QAT checkpoint directly from safetensors, executes Gemma 4 in JAX without PyTorch, and exposes an OpenAI-compatible HTTP/SSE server."
+    },
+    {
+      "title": "glenic/gemma-4-E4B-it-W8A8-INT8 · Hugging Face",
+      "url": "https://huggingface.co/glenic/gemma-4-E4B-it-W8A8-INT8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma-4-E4B-it - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/iot/models/gemma_4_e4b_it",
+      "snippet": "Gemma-4-E4B-it Multimodal model from Google DeepMind handling text and image input. Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open‑weights models in both pre‑trained and instruction‑tuned variants. Gemma 4 features a ..."
+    },
+    {
+      "title": "gemma4-dev/jev-tpu-31b/README.md at main · xbill9/gemma4-dev",
+      "url": "https://github.com/xbill9/gemma4-dev/blob/main/jev-tpu-31b/README.md",
+      "snippet": "Status, 2026-09-25: every Gemma 4 size serves on one v6e chip With three patches to tpu_inference, Google&#x27;s QAT W4A16 checkpoints serve in vLLM on one v6e chip at vllm/vllm-tpu@sha256:19a1a052…, 31B included."
+    }
+  ]
+}

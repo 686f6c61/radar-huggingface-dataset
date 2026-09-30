@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "xbill9/gemma-4-12B-it-qat-q4_0-w4a16-ct-text-emb4",
+  "slug": "xbill9-gemma-4-12b-it-qat-q4_0-w4a16-ct-text-emb4",
+  "author": "xbill9",
+  "url": "https://huggingface.co/xbill9/gemma-4-12B-it-qat-q4_0-w4a16-ct-text-emb4",
+  "created_at": "2026-09-29T22:13:27.000Z",
+  "updated_at": "2026-09-29T22:14:22.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma4_unified_text",
+    "gemma4",
+    "compressed-tensors",
+    "w4a16",
+    "base_model:google/gemma-4-12B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-12B-it-qat-q4_0-unquantized",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12913983280,
+  "parameters_human": "12.91B",
+  "storage_bytes": 7297569890,
+  "storage_human": "7.3 GB",
+  "base_model": "google/gemma-4-12B-it-qat-q4_0-unquantized",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-12B-it-qat-w4a16-ct · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B-it-qat-w4a16-ct",
+      "snippet": "Unquantized QAT checkpoints (Q4_0): Half-precision weights extracted from the QAT pipeline, ideal for custom downstream compilation and research. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B, and their drafter models."
+    },
+    {
+      "title": "google/gemma-4-12B-it-qat-q4_0-gguf · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-gguf",
+      "snippet": "Text Generation: These models can be used to generate creative text formats such as poems, scripts, code, marketing copy, and email drafts. Chatbots and Conversational AI: Power conversational interfaces for customer service, virtual assistants, or interactive applications."
+    },
+    {
+      "title": "gemma-4-12B-it-qat-w4a16-ct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-4-12b-it-qat-w4a16-ct-google",
+      "snippet": "Overview gemma-4-12B-it-qat-w4a16-ct is a 12-billion parameter instruction-tuned dense transformer model built by google and optimized through Quantization-Aware Training (QAT) to preserve bfloat16-level quality while drastically reducing memory requirements. The model handles text, image, and audio inputs and generates text output, featuring a 256K token context window and support for over ..."
+    },
+    {
+      "title": "gemma-4-12B-it-qat-w4a16-ct · Model · Inferix",
+      "url": "https://inferix.co/models/google/gemma-4-12B-it-qat-w4a16-ct",
+      "snippet": "Unquantized QAT checkpoints (Q4_0): Half-precision weights extracted from the QAT pipeline, ideal for custom downstream compilation and research. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B, and their drafter models."
+    },
+    {
+      "title": "Gemma 4 Setup Guide: Run the 12B QAT Model on a 12GB GPU",
+      "url": "https://markaicode.com/howto/gemma-4-setup-and-configuration-guide/",
+      "snippet": "A step-by-step guide to running Gemma 4&#x27;s 12B QAT checkpoint locally with vLLM on a 12GB consumer GPU, covering Hugging Face auth, compressed-tensors quantization, and context-length tuning."
+    }
+  ]
+}

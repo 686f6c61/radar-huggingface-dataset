@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "pinecoresystems/TinyPine-Slow-Motion",
+  "slug": "pinecoresystems-tinypine-slow-motion",
+  "author": "pinecoresystems",
+  "url": "https://huggingface.co/pinecoresystems/TinyPine-Slow-Motion",
+  "created_at": "2026-09-29T23:59:04.000Z",
+  "updated_at": "2026-09-29T23:59:22.000Z",
+  "license": "mit-and-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video-frame-interpolation",
+    "slow-motion",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 93684702,
+  "storage_human": "94 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TinyPine AI Studio — local image generation that just works",
+      "url": "https://tinypine.app/",
+      "snippet": "TinyPine keeps the stable part — the inference engine — and wraps it in a thin app that owns its own runtime, picks the right model for your hardware, and gives feedback on everything."
+    },
+    {
+      "title": "pinecoresystems (Philip Saxin) - Hugging Face",
+      "url": "https://huggingface.co/pinecoresystems/models",
+      "snippet": "pinecoresystems/Huihui-gpt-oss-20b-mxfp4-abliterated-v2 21B•Updated about 5 hours ago"
+    },
+    {
+      "title": "pinecoresystems/Krea-2-Raw · Hugging Face",
+      "url": "https://huggingface.co/pinecoresystems/Krea-2-Raw",
+      "snippet": "Krea 2 Raw (ungated mirror) Ungated mirror of krea/Krea-2-Raw, republished by TinyPine so it can be downloaded without a Hub gate. The weights are unmodified, byte for byte those of the source repository; verify by comparing each file&#x27;s sha256 against the source&#x27;s LFS oid. Contents: the transformer/ folder only. RAW shares its text encoder, tokenizer, scheduler and VAE with Krea 2 Turbo ..."
+    },
+    {
+      "title": "PINECORESYSTEMS - GitHub",
+      "url": "https://github.com/PINECORESYSTEMS",
+      "snippet": "GitHub is where PINECORESYSTEMS builds software. People This organization has no public members. You must be a member to see who&#x27;s a part of this organization."
+    },
+    {
+      "title": "AI Slow Motion Video Maker - Slow, Control, Enhance & Style Any Clip",
+      "url": "https://higgsfield.ai/ai-slow-motion-video-maker",
+      "snippet": "Slow, control, enhance and style any clip for sports, social content, products and film. AI Slow Motion Video Maker generates missing frames for silky motion, sets exact speed from 0.5x to 0.1x, upscales to 4K and syncs slowdowns to the beat. Access 15+ top models, 70+ cinematic presets, selective slow motion and reverse effects. Start free."
+    }
+  ]
+}

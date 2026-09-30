@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Holotron4-30B-A3B-i1-GGUF",
+  "slug": "mradermacher-holotron4-30b-a3b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Holotron4-30B-A3B-i1-GGUF",
+  "created_at": "2026-09-29T18:50:23.000Z",
+  "updated_at": "2026-09-30T01:41:46.000Z",
+  "license": "nvidia-open-model-agreement",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "multimodal",
+    "computer-use",
+    "agent",
+    "en",
+    "base_model:Hcompany/Holotron4-30B-A3B",
+    "base_model:quantized:Hcompany/Holotron4-30B-A3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577940288,
+  "parameters_human": "31.58B",
+  "storage_bytes": 300050761120,
+  "storage_human": "300.1 GB",
+  "base_model": "Hcompany/Holotron4-30B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Quantized Models for Hcompany/Holotron4-30B-A3B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Hcompany/Holotron4-30B-A3B",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset Hcompany/Holotron4-30B-A3B Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment ..."
+    },
+    {
+      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Overview Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-i1-GGUF is a quantized version of Huihui AI&#x27;s 30 billion parameter coding-focused language model, maintained by mradermacher."
+    },
+    {
+      "title": "qwen3:30b-a3b - ollama.com",
+      "url": "https://ollama.com/library/qwen3:30b-a3b",
+      "snippet": "Additionally, the small MoE model, Qwen3-30B-A3B, outcompetes QwQ-32B with 10 times of activated parameters, and even a tiny model like Qwen3-4B can rival the performance of Qwen2.5-72B-Instruct."
+    }
+  ]
+}

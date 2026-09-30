@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/jpn-jpan-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10",
+  "slug": "francesca9805-jpn-jpan-100mb-after-ppt-dp-100mb-packed-bfdiso-ckpt500_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/jpn-jpan-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10",
+  "created_at": "2026-09-30T00:43:20.000Z",
+  "updated_at": "2026-09-30T01:27:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:francesca9805/jpn-jpan-100mb-ppt-Dp-100mb-packed-bfdiso_seed10",
+    "base_model:finetune:francesca9805/jpn-jpan-100mb-ppt-Dp-100mb-packed-bfdiso_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 2746469877,
+  "storage_human": "2.7 GB",
+  "base_model": "francesca9805/jpn-jpan-100mb-ppt-Dp-100mb-packed-bfdiso_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jpn-jpan-100mb-ppt-Dp-100mb-packed-bfd_seed10 - Hugging Face",
+      "url": "https://huggingface.co/francesca9805/jpn-jpan-100mb-ppt-Dp-100mb-packed-bfd_seed10",
+      "snippet": "jpn-jpan-100mb-ppt-Dp-100mb-packed-bfd_seed10 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "jpn-jpan-100mb-ppt-Dp-100mb-packed-bfd_seed455 - Hugging Face",
+      "url": "https://huggingface.co/francesca9805/jpn-jpan-100mb-ppt-Dp-100mb-packed-bfd_seed455",
+      "snippet": "jpn-jpan-100mb-ppt-Dp-100mb-packed-bfd_seed455 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "jpn-jpan-100mb-ppt-Dp-100mb-packed-bfd_seed10 - friendli.ai",
+      "url": "https://friendli.ai/models/francesca9805/jpn-jpan-100mb-ppt-Dp-100mb-packed-bfd_seed10",
+      "snippet": "Deploy jpn-jpan-100mb-ppt-Dp-100mb-packed-bfd_seed10 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Jpn Jpan 100mb Ppt Dp 10mb Packed Bfd Seed10 by francesca9805",
+      "url": "https://llm-explorer.com/model/francesca9805%2Fjpn-jpan-100mb-ppt-Dp-10mb-packed-bfd_seed10,eWZY8MrE1AYkahbauyK4R",
+      "snippet": "Jpn Jpan 100mb Ppt Dp 10mb Packed Bfd Seed10 is an open-source 124.8m LLM by francesca9805. VRAM 0.2GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "JAV Warp",
+      "url": "https://javwarp.com/",
+      "snippet": "Browse, search, and stream JAV titles with subtitles and premium media."
+    }
+  ]
+}

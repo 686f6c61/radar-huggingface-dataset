@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Kami0867/MiniLM-FakeNEWS-Detection",
+  "slug": "kami0867-minilm-fakenews-detection",
+  "author": "Kami0867",
+  "url": "https://huggingface.co/Kami0867/MiniLM-FakeNEWS-Detection",
+  "created_at": "2026-09-29T18:49:43.000Z",
+  "updated_at": "2026-09-29T18:49:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33360770,
+  "parameters_human": "33.4M",
+  "storage_bytes": 133471577,
+  "storage_human": "133 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fake News Detection Project - GitHub",
+      "url": "https://github.com/kapilsinghnegi/Fake-News-Detection",
+      "snippet": "Fake News Detection Project The project aims to develop a machine-learning model capable of identifying and classifying any news article as fake or not. The distribution of fake news can potentially have highly adverse effects on people and culture."
+    },
+    {
+      "title": "Fake News Detection Using Machine Learning and Deep Learning ... - MDPI",
+      "url": "https://www.mdpi.com/2073-431X/14/9/394",
+      "snippet": "The research questions of the literature review will be answered by focusing on machine learning and deep learning for fake news detection. They will also address how machine learning and deep learning can be utilized for fake news detection through examining the relevant work in the literature."
+    },
+    {
+      "title": "Fake News Detection using Machine Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/fake-news-detection-using-machine-learning/",
+      "snippet": "Fake news on different platforms is spreading widely and is a matter of serious concern, as it causes social wars and permanent breakage of the bonds established among people. A lot of research is already going on focused on the classification of fake news. Here we will try to solve this issue with the help of machine learning in Python. Before starting the code, download the dataset by ..."
+    },
+    {
+      "title": "Fake-News-Detection/minilm_model/README.md at main - GitHub",
+      "url": "https://github.com/Omer-9000/Fake-News-Detection/blob/main/minilm_model/README.md",
+      "snippet": "Contribute to Omer-9000/Fake-News-Detection development by creating an account on GitHub."
+    },
+    {
+      "title": "Fake News Detection Using AI: A Hybrid Approach with ML, Deep Learning ...",
+      "url": "https://ieeexplore.ieee.org/document/11258959",
+      "snippet": "This study provides an end-to-end overview of machine learning (ML), deep learning, and artificial intelligence (AI)-based methods to detect fake news. The suggested method is classified into a sequential pipeline including data collection, preprocessing, feature extraction, model training, and performance metrics. Different ML models such as Logistic Regression, XGBoost, and Support Vector ..."
+    }
+  ]
+}

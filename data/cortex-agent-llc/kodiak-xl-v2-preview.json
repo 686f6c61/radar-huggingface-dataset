@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "cortex-agent-llc/kodiak-xl-v2-preview",
+  "slug": "cortex-agent-llc-kodiak-xl-v2-preview",
+  "author": "cortex-agent-llc",
+  "url": "https://huggingface.co/cortex-agent-llc/kodiak-xl-v2-preview",
+  "created_at": "2026-09-29T22:09:24.000Z",
+  "updated_at": "2026-09-29T22:17:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kodiak",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "kodiak",
+    "safetensors",
+    "decision-model",
+    "calibration",
+    "abstention",
+    "encoder",
+    "modernbert",
+    "research-preview",
+    "en",
+    "base_model:jhu-clsp/ettin-encoder-1b",
+    "base_model:finetune:jhu-clsp/ettin-encoder-1b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1044119556,
+  "parameters_human": "1.04B",
+  "storage_bytes": 4176498004,
+  "storage_human": "4.2 GB",
+  "base_model": "jhu-clsp/ettin-encoder-1b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cortex cérébral — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cortex_c%C3%A9r%C3%A9bral",
+      "snippet": "Le cortex peut être segmenté en différentes aires selon des critères cytoarchitectoniques (nombre de couches, type de neurones), …"
+    },
+    {
+      "title": "Cortex — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cortex",
+      "snippet": "En biologie, le cortex (mot latin signifiant écorce, l'adjectif étant cortical) est la couche superficielle ou périphérique d'un tissu …"
+    },
+    {
+      "title": "Cortex Média : média inclusif, handicap, santé et neurodéveloppement",
+      "url": "https://www.cortex-media.fr/",
+      "snippet": "Articles, reportages, documentaires et ressources pédagogiques : accédez à l'ensemble des contenus Cortex Média, conçus pour …"
+    },
+    {
+      "title": "Razer Cortex — Améliorez plus rapidement et facilement les …",
+      "url": "https://www.razer.com/fr-fr/cortex",
+      "snippet": "Razer Cortex: Booster Prime Épurez automatiquement les performances et les visuels de votre PC pour les jeux pris en charge …"
+    },
+    {
+      "title": "Cerebral cortex - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cerebral_cortex",
+      "snippet": "The cortex is divided into left and right parts by the longitudinal fissure, which separates the two cerebral hemispheres that are joined …"
+    }
+  ]
+}

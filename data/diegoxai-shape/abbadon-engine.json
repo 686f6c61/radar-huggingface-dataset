@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "DiegoXAI-Shape/abbadon-engine",
+  "slug": "diegoxai-shape-abbadon-engine",
+  "author": "DiegoXAI-Shape",
+  "url": "https://huggingface.co/DiegoXAI-Shape/abbadon-engine",
+  "created_at": "2026-09-30T00:58:54.000Z",
+  "updated_at": "2026-09-30T01:36:08.000Z",
+  "license": "research-and-education-only",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "torchscript",
+    "libtorch",
+    "image-segmentation",
+    "image-classification",
+    "knowledge-distillation",
+    "convnextv2",
+    "sam2",
+    "shortcut-learning",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 156976638,
+  "storage_human": "157 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DiegoXAI-Shape/abbadon-engine · Hugging Face",
+      "url": "https://huggingface.co/DiegoXAI-Shape/abbadon-engine",
+      "snippet": "DiegoXAI-Shape / abbadon-engine Like 0 Image Classification PyTorch sam2 torchscript libtorch image-segmentation knowledge-distillation convnextv2 shortcut-learning License:research-and-education-only Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - DiegoXAI-Shape/abbadon_engine: Creating Abbadon&#x27;s engine in ...",
+      "url": "https://github.com/DiegoXAI-Shape/abbadon_engine",
+      "snippet": "Tests engine_tests turns every check of the pipeline into an automatic PASS/FAIL: CUDA, model loading, preprocessing (channel order, shapes, dtypes, contiguity, normalization range), Daowa-maad&#x27;s mask, and Mendicant Bias predictions (the dog photo → dog, the cat photo → cat)."
+    },
+    {
+      "title": "GitHub - DiegoXAI-Shape/Abbadon: Abbadon is the continuation of the ...",
+      "url": "https://github.com/DiegoXAI-Shape/Abbadon",
+      "snippet": "Abbadon is the continuation of the Mendicant Bias project with Daowa Maad; these modules were improved to try to make Abbadon robust against completely bad data. - DiegoXAI-Shape/Abbadon"
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "HuggingFace APIs - Open Source AI Models and Datasets",
+      "url": "https://www.huggingface-apis.com/",
+      "snippet": "Explore and integrate HuggingFace&#x27;s AI models and datasets with our comprehensive API documentation and examples."
+    }
+  ]
+}

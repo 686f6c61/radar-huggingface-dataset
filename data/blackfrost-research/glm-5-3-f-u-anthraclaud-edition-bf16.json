@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Blackfrost-Research/GLM-5.3-F.U-AnthraClaud-Edition-BF16",
+  "slug": "blackfrost-research-glm-5-3-f-u-anthraclaud-edition-bf16",
+  "author": "Blackfrost-Research",
+  "url": "https://huggingface.co/Blackfrost-Research/GLM-5.3-F.U-AnthraClaud-Edition-BF16",
+  "created_at": "2026-08-28T20:35:41.000Z",
+  "updated_at": "2026-09-29T23:33:16.000Z",
+  "license": "blackfrost-commercial",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "glm",
+    "glm-5.3",
+    "mixture-of-experts",
+    "moe",
+    "bf16",
+    "de-risked",
+    "red-teaming",
+    "security-research",
+    "enterprise",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-BF16",
+    "base_model:finetune:zai-org/GLM-5.3-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 23,
+  "downloads_30d": 16,
+  "trending_score": 19,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 1506687636777,
+  "storage_human": "1506.7 GB",
+  "base_model": "zai-org/GLM-5.3-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blackfrost-AI/GLM-5.3-Flash-DERISKED-BF16 · Hugging Face",
+      "url": "https://huggingface.co/Blackfrost-AI/GLM-5.3-Flash-DERISKED-BF16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Blackfrost-AI/GLM-5.3-Flash-DERISKED-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/Blackfrost-AI/GLM-5.3-Flash-DERISKED-NVFP4",
+      "snippet": "GLM-5.3-Flash-DERISKED-NVFP4 is the deployment-focused NVFP4 derivative of Blackfrost&#x27;s BF16 de-risked master. It is designed for high-throughput Blackwell serving without expert pruning."
+    },
+    {
+      "title": "GLM 5.3 Flash DERISKED BF16 by Blackfrost-Research",
+      "url": "https://llm-explorer.com/model/Blackfrost-AI%2FGLM-5.3-Flash-DERISKED-BF16,6kNzsQteBaKmzltCVUMVCu",
+      "snippet": "GLM 5.3 Flash DERISKED BF16 is an open-source language model by Blackfrost-Research. Features: 321.3b LLM, VRAM: 237.1GB, License: other, LLM Explorer Score: 0.28."
+    },
+    {
+      "title": "Models — Blackfrost",
+      "url": "https://blackfrostai.com/models",
+      "snippet": "GLM-5.3 — De-Risked BF16 Master The full 753B BF16 reference master for evaluation and downstream conversion."
+    },
+    {
+      "title": "GLM-5.3 - openlm.ai",
+      "url": "https://openlm.ai/glm-5.3/",
+      "snippet": "GLM-5.3 is our latest flagship model for coding and long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and delivers that capability on a solid 1M-token context. It is pure open with an MIT open-source license — no regional limits, technical access without borders."
+    }
+  ]
+}

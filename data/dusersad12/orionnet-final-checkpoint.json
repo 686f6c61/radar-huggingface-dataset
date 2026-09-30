@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dusersad12/OrionNet-Final-Checkpoint",
+  "slug": "dusersad12-orionnet-final-checkpoint",
+  "author": "dusersad12",
+  "url": "https://huggingface.co/dusersad12/OrionNet-Final-Checkpoint",
+  "created_at": "2026-09-30T00:48:25.000Z",
+  "updated_at": "2026-09-30T00:48:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "gemma",
+    "text-generation",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 255,
+  "storage_human": "255 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dusersad12/OrionNet-BestCheckpoint · Hugging Face",
+      "url": "https://huggingface.co/dusersad12/OrionNet-BestCheckpoint",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dusersad12/OrionLM-Checkpoint-Release · Hugging Face",
+      "url": "https://huggingface.co/dusersad12/OrionLM-Checkpoint-Release",
+      "snippet": "Instructions to use dusersad12/OrionLM-Checkpoint-Release with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use dusersad12/OrionLM-Checkpoint-Release with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"feature-extraction\", model=\"dusersad12/OrionLM ..."
+    },
+    {
+      "title": "Checkpoint AI Models (142) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 142 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    },
+    {
+      "title": "Stable Diffusion Models Download & Guide - The Right GPT",
+      "url": "https://therightgpt.com/stable-diffusion-guides/models/",
+      "snippet": "Complete guide to Stable Diffusion models in 2026. Learn where to safely download checkpoints, install realistic models, understand model architecture, and manage your collection. Includes direct download links for SD 1.5, SDXL, Flux.1, and custom models."
+    }
+  ]
+}

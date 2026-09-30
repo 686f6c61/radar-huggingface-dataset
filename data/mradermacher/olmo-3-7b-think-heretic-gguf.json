@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Olmo-3-7B-Think-heretic-GGUF",
+  "slug": "mradermacher-olmo-3-7b-think-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Olmo-3-7B-Think-heretic-GGUF",
+  "created_at": "2026-09-29T21:46:09.000Z",
+  "updated_at": "2026-09-29T22:20:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "en",
+    "dataset:allenai/Dolci-Think-RL-7B",
+    "base_model:richardyoung/Olmo-3-7B-Think-heretic",
+    "base_model:quantized:richardyoung/Olmo-3-7B-Think-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 65147758080,
+  "storage_human": "65.1 GB",
+  "base_model": "richardyoung/Olmo-3-7B-Think-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "richardyoung/Olmo-3-7B-Think-heretic · Hugging Face",
+      "url": "https://huggingface.co/richardyoung/Olmo-3-7B-Think-heretic",
+      "snippet": "We introduce Olmo 3, a new family of 7B and 32B models both Instruct and Think variants. Long chain-of-thought thinking improves reasoning tasks like math and coding."
+    },
+    {
+      "title": "richardyoung/Olmo-3-7B-Think-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/richardyoung/Olmo-3-7B-Think-heretic-GGUF",
+      "snippet": "richardyoung / Olmo-3-7B-Think-heretic-GGUF Like 0 GGUF llama.cpp ollama uncensored abliterated conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "Machine unlearning with Olmo-7B Researchers used Olmo-7B as a testbed for developing machine unlearning methods—removing specific data influence without retraining from scratch."
+    },
+    {
+      "title": "allenai/olmo-3-7b-think • LM Studio",
+      "url": "https://lmstudio.ai/models/allenai/olmo-3-7b-think",
+      "snippet": "Custom model by allenai Olmo3 7B Think by AllenAI AllenAI introduces Olmo 3, a new family of 7B and 32B models. This suite includes Base, Instruct, and Think variants. The Base models were trained using a staged training approach. Olmo is a series of Open language models designed to enable the science of language models. These models are trained on the Dolma 3 dataset. All code, checkpoints ..."
+    },
+    {
+      "title": "richardyoung/olmo-3-7b-think-heretic",
+      "url": "https://ollama.com/richardyoung/olmo-3-7b-think-heretic",
+      "snippet": "Get up and running with large language models."
+    }
+  ]
+}

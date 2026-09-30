@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "TigreGotico/wakehubert-tiny",
+  "slug": "tigregotico-wakehubert-tiny",
+  "author": "TigreGotico",
+  "url": "https://huggingface.co/TigreGotico/wakehubert-tiny",
+  "created_at": "2026-09-29T23:55:45.000Z",
+  "updated_at": "2026-09-30T00:30:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "wake-word",
+    "keyword-spotting",
+    "speech",
+    "distillation",
+    "hubert",
+    "int8",
+    "streaming",
+    "feature-extraction",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4740595,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mansplaining — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mansplaining",
+      "snippet": "‍‍‍‍‍Illustration d'une situation de mansplaining. Le mansplaining (mot-valise composé des mots anglais « man », « homme », et « …Read more"
+    },
+    {
+      "title": "Mansplaining - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mansplaining",
+      "snippet": "Weigel, David (27 June 2013). \"Mansplaining the Mansplainer: Rick Perry's Accidental Abortion Honesty\". Slate. Retrieved 20 August …"
+    },
+    {
+      "title": "5 phrases puissantes pour faire taire un « mansplainer",
+      "url": "https://www.psychologies.com/moi/moi-et-les-autres-moi/5-phrases-puissantes-pour-faire-taire-un-mansplainer-validees-par-des-psychologues-612898",
+      "snippet": "Oct 11, 2025 · Comment clouer le bec à un “mansplainer” ? Voici les conseils de psychologues qui fonctionnent à tous les coups."
+    },
+    {
+      "title": "Mansplaining – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Mansplaining",
+      "snippet": "Der Ausdruck wird häufig in politischen Debatten verwendet, etwa wenn Politikerinnen von männlichen Kollegen herablassend …"
+    },
+    {
+      "title": "MANSPLAIN Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/mansplain",
+      "snippet": "The meaning of MANSPLAIN is to explain something to a woman in a condescending way that assumes she has no knowledge …"
+    }
+  ]
+}

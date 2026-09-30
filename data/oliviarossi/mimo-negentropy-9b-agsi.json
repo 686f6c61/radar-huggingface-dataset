@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "OliviaRossi/MiMo-Negentropy-9B-AGSI",
+  "slug": "oliviarossi-mimo-negentropy-9b-agsi",
+  "author": "OliviaRossi",
+  "url": "https://huggingface.co/OliviaRossi/MiMo-Negentropy-9B-AGSI",
+  "created_at": "2026-09-29T20:28:52.000Z",
+  "updated_at": "2026-09-29T20:44:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "merge",
+    "agsi",
+    "agentic",
+    "coding",
+    "terminal-use",
+    "reasoning",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Jackrong/Negentropy-claude-opus-4.7-9B",
+    "base_model:merge:Jackrong/Negentropy-claude-opus-4.7-9B",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:merge:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710301,
+  "storage_human": "18.8 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, Jackrong/Negentropy-claude-opus-4.7-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · OliviaRossi/MiMo-Ornith-9B-AGSI-Abliterated-HQ at main",
+      "url": "https://huggingface.co/OliviaRossi/MiMo-Ornith-9B-AGSI-Abliterated-HQ/blob/main/README.md",
+      "snippet": "OliviaRossi / MiMo-Ornith-9B-AGSI-Abliterated-HQ Like 1 Text Generation Transformers Safetensors English Chinese qwen3_5 image-text-to-text Merge agsi abliterated abliterix reasoning coding agentic terminal-use uncensored vllm llama.cpp conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new ..."
+    },
+    {
+      "title": "README.md · OliviaRossi/MiMo-Ornith-9B-AGSI at main",
+      "url": "https://huggingface.co/OliviaRossi/MiMo-Ornith-9B-AGSI/blob/main/README.md",
+      "snippet": "OliviaRossi / MiMo-Ornith-9B-AGSI Like 1 Text Generation Transformers Safetensors English Chinese qwen3_5 image-text-to-text Merge agsi qwen reasoning coding agentic terminal-use swe-bench tool-use conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "MiMo Ornith 9B AGSI by OliviaRossi — VRAM 19.4GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/OliviaRossi%2FMiMo-Ornith-9B-AGSI,15xF4U3FsNQRhcJCQf5lft",
+      "snippet": "MiMo Ornith 9B AGSI is an open-source 9b LLM by OliviaRossi. VRAM 19.4GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "MiMo Ornith 9B AGSI Abliterated HQ by OliviaRossi",
+      "url": "https://llm-explorer.com/model/OliviaRossi%2FMiMo-Ornith-9B-AGSI-Abliterated-HQ,7KTyivZ0k4HWhckcDL5E4y",
+      "snippet": "MiMo Ornith 9B AGSI Abliterated HQ is an open-source 9b LLM by OliviaRossi. VRAM 18.8GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

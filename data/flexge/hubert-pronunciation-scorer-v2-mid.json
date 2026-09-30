@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "flexge/hubert-pronunciation-scorer-v2-mid",
+  "slug": "flexge-hubert-pronunciation-scorer-v2-mid",
+  "author": "flexge",
+  "url": "https://huggingface.co/flexge/hubert-pronunciation-scorer-v2-mid",
+  "created_at": "2026-09-29T19:59:31.000Z",
+  "updated_at": "2026-09-29T19:59:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hubert",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94371712,
+  "parameters_human": "94.4M",
+  "storage_bytes": 755946562,
+  "storage_human": "756 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/hubert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hubert - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.21.1/en/model_doc/hubert",
+      "snippet": "This is the configuration class to store the configuration of a HubertModel. It is used to instantiate an Hubert model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the Hubert facebook/hubert-base-ls960 architecture."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/hubert.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/hubert.md",
+      "snippet": "HuBERT is a self-supervised speech model to cluster aligned target labels for BERT-like prediction loss and applying the prediction loss only over masked regions to force the model to learn both acoustic and language modeling over continuous inputs. It addresses the challenges of multiple sound units per utterance, no lexicon during pre-training, and variable-length sound units without ..."
+    },
+    {
+      "title": "HuBERT: Self-Supervised Speech Representation Learning by Masked ...",
+      "url": "https://arxiv.org/abs/2106.07447",
+      "snippet": "Self-supervised approaches for speech representation learning are challenged by three unique problems: (1) there are multiple sound units in each input utterance, (2) there is no lexicon of input sound units during the pre-training phase, and (3) sound units have variable lengths with no explicit segmentation. To deal with these three problems, we propose the Hidden-Unit BERT (HuBERT) approach ..."
+    },
+    {
+      "title": "HuBERT Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/hubert-model/",
+      "snippet": "HuBERT is a self-supervised model that allows the BERT model to be applied to audio inputs. Applying a BERT model to a sound input is challenging as sound units have variable length and there can be multiple sound units in each input."
+    }
+  ]
+}

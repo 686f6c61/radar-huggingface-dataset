@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Salahuddin1234/omnidoctor-silma",
+  "slug": "salahuddin1234-omnidoctor-silma",
+  "author": "Salahuddin1234",
+  "url": "https://huggingface.co/Salahuddin1234/omnidoctor-silma",
+  "created_at": "2026-09-30T00:49:55.000Z",
+  "updated_at": "2026-09-30T00:49:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "text-to-speech",
+    "speech",
+    "speech-generation",
+    "voice-cloning",
+    "tts",
+    "en",
+    "ar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2603209272,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "silma-ai/SILMA-9B-Instruct-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/silma-ai/SILMA-9B-Instruct-v1.0",
+      "snippet": "Advanced Usage Torch compile Torch compile is a method for speeding-up the inference of PyTorch modules. The Silma model can be run up to 6x faster by leveraging torch compile. Note that two warm-up steps are required before the full inference speed is realised:"
+    },
+    {
+      "title": "Fast and affordable voice AI models, built for agents | SILMA AI",
+      "url": "https://silma.ai/",
+      "snippet": "SILMA is a voice AI lab providing ultra-fast, low-cost, dialect-aware voice models, built specifically for voice-agent companies."
+    },
+    {
+      "title": "silma-ai (SILMA AI) - Hugging Face",
+      "url": "https://huggingface.co/silma-ai",
+      "snippet": "SILMA AI is a voice AI lab providing ultra-fast, low-cost, dialect-aware voice models, built specifically for voice-agent companies."
+    },
+    {
+      "title": "silma-ai (SILMA AI) - Hugging Face",
+      "url": "https://huggingface.co/silma-ai/models",
+      "snippet": "SILMA AI is a leading GenAI startup that excels in building and tailoring cutting-edge Large Language Models (LLMs) and AI technologies for the Arabic language Recent Activity karimouda updated a model 1 day ago silma-ai/SILMA-9B-Instruct-v1. karimouda updated a dataset 15 days ago silma-ai/arabic-broad-benchmark karimouda updated a dataset 15 ..."
+    },
+    {
+      "title": "OmniDoctor: Towards LLM-centric Lifelong Learning for New Emerging ...",
+      "url": "https://jglobal.jst.go.jp/en/detail?JGLOBAL_ID=202602255482363514",
+      "snippet": "Article \"OmniDoctor: Towards LLM-centric Lifelong Learning for New Emerging Medical VQA Tasks\" Detailed information of the J-GLOBAL is an information service managed by the Japan Science and Technology Agency (hereinafter referred to as \"JST\"). It provides free access to secondary information on researchers, articles, patents, etc., in science and technology, medicine and pharmacy. The search ..."
+    }
+  ]
+}

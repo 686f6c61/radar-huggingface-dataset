@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "xbill9/gemma-4-E2B-it-qat-w8a8-int8",
+  "slug": "xbill9-gemma-4-e2b-it-qat-w8a8-int8",
+  "author": "xbill9",
+  "url": "https://huggingface.co/xbill9/gemma-4-E2B-it-qat-w8a8-int8",
+  "created_at": "2026-09-29T20:55:16.000Z",
+  "updated_at": "2026-09-29T20:56:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma4",
+    "compressed-tensors",
+    "w8a8",
+    "int8",
+    "qat",
+    "tpu",
+    "text-only",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569379,
+  "parameters_human": "4.63B",
+  "storage_bytes": 7414495688,
+  "storage_human": "7.4 GB",
+  "base_model": "google/gemma-4-E2B-it-qat-q4_0-unquantized",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-E2B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E2B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "google/gemma-4-E2B-it-qat-mobile-transformers · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E2B-it-qat-mobile-transformers",
+      "snippet": "At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "google/gemma-4-e2b-qat • LM Studio",
+      "url": "https://lmstudio.ai/models/google/gemma-4-e2b-qat",
+      "snippet": "Gemma 4 is an open multimodal model family from Google DeepMind. It supports text and image input, text output, reasoning, long context, system prompts, and native tool use. Gemma 4 E2B is one of the lightest Gemma 4 models. It is designed for efficient local use, and the QAT build makes it easier to run on tighter memory budgets."
+    },
+    {
+      "title": "Gemma 4 E2B QAT on a Single TPU with Pure JAX",
+      "url": "https://github.com/xbill9/tpu-jax-v5e1-2b",
+      "snippet": "This repository is an experimental, inspectable inference path for google/gemma-4-E2B-it-qat-w4a16-ct on a single-chip Cloud TPU. It loads the QAT checkpoint directly from safetensors, executes Gemma 4 in JAX without PyTorch, and exposes an OpenAI-compatible HTTP/SSE server."
+    }
+  ]
+}

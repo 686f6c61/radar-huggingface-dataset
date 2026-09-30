@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "ZeroGPU/zlm-v1-iab-classify-edge",
+  "slug": "zerogpu-zlm-v1-iab-classify-edge",
+  "author": "ZeroGPU",
+  "url": "https://huggingface.co/ZeroGPU/zlm-v1-iab-classify-edge",
+  "created_at": "2026-09-29T18:21:54.000Z",
+  "updated_at": "2026-09-29T19:07:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "bert",
+    "text-classification",
+    "iab-taxonomy",
+    "content-classification",
+    "audience-classification",
+    "contextual-targeting",
+    "ad-tech",
+    "multi-label-classification",
+    "minilm",
+    "quantized",
+    "transformers.js",
+    "on-device",
+    "en",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:quantized:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24756065,
+  "storage_human": "25 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "IAB content classification (multi-label)",
+      "dataset": "Figure Eight contextual dataset, 2,784 web pages (human IAB labels)",
+      "metric": "Tier-2 F1 (int8 on-device model)",
+      "value": 0.4062
+    },
+    {
+      "task": "IAB content classification (multi-label)",
+      "dataset": "Figure Eight contextual dataset, 2,784 web pages (human IAB labels)",
+      "metric": "Tier-2 precision",
+      "value": 0.2951
+    },
+    {
+      "task": "IAB content classification (multi-label)",
+      "dataset": "Figure Eight contextual dataset, 2,784 web pages (human IAB labels)",
+      "metric": "Tier-2 recall",
+      "value": 0.6515
+    }
+  ],
+  "sources": [
+    {
+      "title": "zlm-v1-iab-classify-edge - ZeroGPU",
+      "url": "https://docs.zerogpu.ai/api-reference/models/zlm-v1-iab-classify-edge",
+      "snippet": "ZeroGPU&#x27;s IAB classifier maps any text to the industry-standard IAB Content Taxonomy in a single, fast inference call. Each call returns categories across both the 1.0 and 2.2 taxonomies plus matched audience segments, every result scored for confidence. With support for 50+ languages, it classifies multilingual content without a translation step. At 90M parameters on ONNX, it&#x27;s built for ..."
+    },
+    {
+      "title": "Text Classification - ZeroGPU",
+      "url": "https://docs.zerogpu.ai/docs/text-classification",
+      "snippet": "zlm-v1-iab-classify-edge ZeroGPU&#x27;s IAB classifier maps any text to the industry-standard IAB Content Taxonomy in a single, fast inference call. Each call returns categories across both the 1.0 and 2.2 taxonomies plus matched audience segments, every result scored for confidence."
+    },
+    {
+      "title": "zlm-v1-iab-classify-edge: 66.0% win rate against GPT-5.4 Nano - zerogpu.ai",
+      "url": "https://zerogpu.ai/benchmarks/iab-classify",
+      "snippet": "Head-to-head evaluation of ZeroGPU&#x27;s zlm-v1-iab-classify-edge model against GPT-5.4 Nano across 10,000 samples: accuracy, speed, cost, and reliability."
+    },
+    {
+      "title": "ZeroGPU/zlm-v1-iab-domain-classifier · Hugging Face",
+      "url": "https://huggingface.co/ZeroGPU/zlm-v1-iab-domain-classifier",
+      "snippet": "The model was trained on ~1 million domains whose IAB categories were labeled by a stronger teacher LLM that could see the live page (title and description) at labeling time. The model distills that page-aware knowledge into the URL string — at run time, from the URL alone, it reproduces judgments that normally require fetching the page."
+    },
+    {
+      "title": "zlm-v1-iab-domain-classifier - ZeroGPU",
+      "url": "https://docs.zerogpu.ai/api-reference/models/zlm-v1-iab-domain-classifier",
+      "snippet": "ZeroGPU&#x27;s Domain IAB Classifier maps a raw domain name straight to the IAB Content Taxonomy in a single, fast inference call, returning content categories, topics, keywords, and user-intent signals. Because it needs only the domain as input, it reduces payload size by up to 10x compared to page-level classification workflows while still surfacing the contextual signals that bidstream ..."
+    }
+  ]
+}

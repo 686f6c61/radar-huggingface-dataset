@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Aquiles-ai/Chargaff-Tokenizer",
+  "slug": "aquiles-ai-chargaff-tokenizer",
+  "author": "Aquiles-ai",
+  "url": "https://huggingface.co/Aquiles-ai/Chargaff-Tokenizer",
+  "created_at": "2026-09-30T01:42:22.000Z",
+  "updated_at": "2026-09-30T01:51:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "dna",
+    "genomics",
+    "byte-level",
+    "bpe",
+    "tokenizer",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aquiles-ai (Aquiles-ai) - Hugging Face",
+      "url": "https://huggingface.co/Aquiles-ai",
+      "snippet": "Org profile for Aquiles-ai on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Aquiles-ai · GitHub",
+      "url": "https://github.com/Aquiles-ai/",
+      "snippet": "Drop-in sandbox to test AI-generated React components against any OpenAI-compatible LLM endpoint. No backend, no config — connect your own model, describe a component, and watch it render live."
+    },
+    {
+      "title": "Aquiles-ai/Athenea-4B-Thinking at main - Hugging Face",
+      "url": "https://huggingface.co/Aquiles-ai/Athenea-4B-Thinking/tree/main",
+      "snippet": "Instructions to use Aquiles-ai/Athenea-4B-Thinking with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Aquiles-ai/Athenea-4B-Thinking with Transformers:"
+    },
+    {
+      "title": "Tokenizer - OpenAI API",
+      "url": "https://platform.openai.com/tokenizer",
+      "snippet": "Tokenizer Learn about language model tokenization OpenAI&#x27;s large language models process text using tokens, which are common sequences of characters found in a set of text. The models learn to understand the statistical relationships between these tokens, and excel at producing the next token in a sequence of tokens. Learn more."
+    },
+    {
+      "title": "Open Source | Aquiles-ai",
+      "url": "https://aquiles-ai.vercel.app/oss",
+      "snippet": "Open source is how we build Aquiles-ai. We release models, datasets, and tools like Aquiles-Image and TinyQwen: open code anyone can use, audit, and improve. An open AI ecosystem isn&#x27;t announced. It&#x27;s built from day zero."
+    }
+  ]
+}

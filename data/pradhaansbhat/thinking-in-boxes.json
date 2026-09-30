@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "pradhaansbhat/Thinking-In-Boxes",
+  "slug": "pradhaansbhat-thinking-in-boxes",
+  "author": "pradhaansbhat",
+  "url": "https://huggingface.co/pradhaansbhat/Thinking-In-Boxes",
+  "created_at": "2026-09-29T22:19:26.000Z",
+  "updated_at": "2026-09-29T23:18:43.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "Generative Modeling",
+    "Image Editing",
+    "Geometric Editing",
+    "3D Vision",
+    "image-to-image",
+    "en",
+    "dataset:pradhaansbhat/Thinking-In-Boxes",
+    "arxiv:2606.20556",
+    "base_model:black-forest-labs/FLUX.1-Kontext-dev",
+    "base_model:finetune:black-forest-labs/FLUX.1-Kontext-dev",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131046680,
+  "storage_human": "131 MB",
+  "base_model": "black-forest-labs/FLUX.1-Kontext-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pradhaansbhat/Thinking-In-Boxes · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/pradhaansbhat/Thinking-In-Boxes",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - PradhaanSBhat/thinking-in-boxes",
+      "url": "https://github.com/PradhaanSBhat/thinking-in-boxes",
+      "snippet": "title= {Thinking in Boxes: 3D Editing in Real Images Made Easy}, author= {Bhat, Pradhaan S and Chandra R, Naveen and Parihar, Rishubh and Vavilala, Vaibhav and Babu, R. Venkatesh and Forsyth, D. A. and Bhattad, Anand},"
+    },
+    {
+      "title": "Pradhaan S Bhat — Researcher",
+      "url": "https://pradhaansbhat.github.io/",
+      "snippet": "My research bridges the gap between black-box model outputs and human-intuitive interaction, building interfaces that allow for granular control over generative models."
+    },
+    {
+      "title": "pradhaansbhat (Pradhaan S Bhat) - Hugging Face",
+      "url": "https://huggingface.co/pradhaansbhat",
+      "snippet": "pradhaansbhat Follow crygod&#x27;s profile picture 1 follower · 5 following PradhaanSBhat"
+    },
+    {
+      "title": "Thinking in Boxes — 3D Editing in Real Images",
+      "url": "https://thinking-in-boxes.github.io/",
+      "snippet": "This \"thinking in boxes\" interface, where each box face is color-coded to convey 3D orientation, gives precise control over translation, rotation, scaling, and viewpoint changes in real images while preserving scene and object identity, and recovering previously unseen object regions."
+    }
+  ]
+}

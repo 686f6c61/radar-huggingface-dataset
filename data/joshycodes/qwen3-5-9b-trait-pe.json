@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3.5-9b-trait-pe",
+  "slug": "joshycodes-qwen3-5-9b-trait-pe",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3.5-9b-trait-pe",
+  "created_at": "2026-09-29T20:35:05.000Z",
+  "updated_at": "2026-09-29T20:39:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "base_model:joshycodes/qwen3.5-9b-trait-playful-mt",
+    "base_model:finetune:joshycodes/qwen3.5-9b-trait-playful-mt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927652333,
+  "storage_human": "17.9 GB",
+  "base_model": "joshycodes/qwen3.5-9b-trait-playful-mt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-30T03:46:58.780Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Exiled Heavy Knight Knows How to Game the System S01E06 Ruche …",
+      "url": "https://nyaa.si/view/2148997",
+      "snippet": "Aug 20, 2026 · The Exiled Heavy Knight Knows How to Game the System S01E06 Ruche the Pierrot 1080p CR WEB-DL DUAL …"
+    },
+    {
+      "title": "Season 1 Ruche the Pierrot - Watch on Crunchyroll",
+      "url": "https://www.crunchyroll.com/watch/GE00378025HIIN/ruche-the-pierrot",
+      "snippet": "Watch Season 1 Ruche the Pierrot, on Crunchyroll. Elymas begs Ruche to join his party so he can use her skills to find the item he …"
+    },
+    {
+      "title": "Ruche the Pierrot - YouTube",
+      "url": "https://m.youtube.com/watch?v=wcWB1dLlFj8",
+      "snippet": "Elymas begs Ruche to join his party so he can use her skills to find the item he needs."
+    },
+    {
+      "title": "Nvssasuke nsfw on X: \"Like and share for more ️ Ruche Luvis ...",
+      "url": "https://x.com/ErikAgu04593309/status/2089673518845706282",
+      "snippet": "Aug 18, 2026 · Like and share for more ️👍🏼🔄🔁 Ruche Luvis🤡🌌 Animation the exiled heavy knight 🌌 #AI #NSFW #AIart #AIANIMATION"
+    },
+    {
+      "title": "Season 1 Ruche the Pierrot - Watch on Crunchyroll",
+      "url": "https://www.crunchyroll.com/watch/GE00378025TEIN/ruche-the-pierrot",
+      "snippet": "Watch Season 1 Ruche the Pierrot, on Crunchyroll. Elymas begs Ruche to join his party so he can use her skills to find the item he …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AJRGP3/NexusEco-3B-GGUF",
+  "slug": "ajrgp3-nexuseco-3b-gguf",
+  "author": "AJRGP3",
+  "url": "https://huggingface.co/AJRGP3/NexusEco-3B-GGUF",
+  "created_at": "2026-09-30T00:40:03.000Z",
+  "updated_at": "2026-09-30T00:40:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929902624,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Politics of the Netherlands - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Politics_of_the_Netherlands",
+      "snippet": "Before 1917, the Netherlands had a two-round system with census suffrage (per the Constitution of 1814), in which only property …"
+    },
+    {
+      "title": "Political history of the Netherlands - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Political_history_of_the_Netherlands",
+      "snippet": "The political history of the Netherlands covers the history of political movements and systems of government in the nation of the …"
+    },
+    {
+      "title": "Netherlands - Politics, Constitution, Government | Britannica",
+      "url": "https://www.britannica.com/place/Netherlands/Political-process",
+      "snippet": "2 days ago · They were originally very much part of the pillarization system, and each represented a political or religious point of …"
+    },
+    {
+      "title": "Dutch Republic | History, Government, Map, & Facts | Britannica",
+      "url": "https://www.britannica.com/place/Dutch-Republic",
+      "snippet": "Sep 18, 2026 · Dutch Republic (1588–1795), state whose area comprised approximately that of the present Kingdom of the …"
+    },
+    {
+      "title": "Political history of the Netherlands — Grokipedia",
+      "url": "https://grokipedia.com/page/political_history_of_the_netherlands",
+      "snippet": "The Dutch Republic's Golden Age, spanning roughly the early to mid-17th century, witnessed unprecedented economic expansion …"
+    }
+  ]
+}

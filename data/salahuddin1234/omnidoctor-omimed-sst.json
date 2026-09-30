@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Salahuddin1234/omnidoctor-omimed-sst",
+  "slug": "salahuddin1234-omnidoctor-omimed-sst",
+  "author": "Salahuddin1234",
+  "url": "https://huggingface.co/Salahuddin1234/omnidoctor-omimed-sst",
+  "created_at": "2026-09-30T00:54:14.000Z",
+  "updated_at": "2026-09-30T00:54:14.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech-to-text",
+    "medical-asr",
+    "clinical-dialogue",
+    "healthcare",
+    "on-device",
+    "parakeet",
+    "fastconformer",
+    "en",
+    "base_model:nvidia/parakeet-tdt-0.6b-v2",
+    "base_model:finetune:nvidia/parakeet-tdt-0.6b-v2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2497627648,
+  "storage_human": "2.5 GB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Omnidoctor - a Hugging Face Space by Salahuddin1234",
+      "url": "https://huggingface.co/spaces/Salahuddin1234/omnidoctor",
+      "snippet": "AI Medical Intelligence Platform"
+    },
+    {
+      "title": "OmniDoctor: Towards LLM-centric Lifelong Learning for New Emerging ...",
+      "url": "https://dl.acm.org/doi/10.1145/3746027.3755745",
+      "snippet": "This model is designed with two key modules to address the above two challenges, respectively. Especially, this paper constructs an Unseen L 3 NMV dataset to simulate real-world incremental clinical scenarios. Extensive experiments on this dataset demonstrate that OmniDoctor outperforms several advanced lifelong learning baselines."
+    },
+    {
+      "title": "OmniDoctor: Towards LLM-centric Lifelong Learning for New Emerging ...",
+      "url": "https://jglobal.jst.go.jp/en/detail?JGLOBAL_ID=202602255482363514",
+      "snippet": "Article \"OmniDoctor: Towards LLM-centric Lifelong Learning for New Emerging Medical VQA Tasks\" Detailed information of the J-GLOBAL is an information service managed by the Japan Science and Technology Agency (hereinafter referred to as \"JST\"). It provides free access to secondary information on researchers, articles, patents, etc., in science and technology, medicine and pharmacy. The search ..."
+    },
+    {
+      "title": "dblp: OmniDoctor: Towards LLM-centric Lifelong Learning for New ...",
+      "url": "https://dblp.org/rec/conf/mm/JiangZGW25",
+      "snippet": "Bibliographic details on OmniDoctor: Towards LLM-centric Lifelong Learning for New Emerging Medical VQA Tasks."
+    },
+    {
+      "title": "OmniDoctor: Towards LLM-centric Lifelong Learning for New Emerging ...",
+      "url": "https://researchr.org/publication/JiangZGW25-0",
+      "snippet": "OmniDoctor: Towards LLM-centric Lifelong Learning for New Emerging Medical VQA Tasks. In Cathal Gurrin, Klaus Schoeffmann, Min Zhang, Luca Rossetto, Stevan Rudinac, Duc-Tien Dang-Nguyen, Wen-Huang Cheng, Phoebe Chen, Jenny Benois-Pineau, editors, Proceedings of the 33rd ACM International Conference on Multimedia, MM 2025, Dublin, Ireland ..."
+    }
+  ]
+}

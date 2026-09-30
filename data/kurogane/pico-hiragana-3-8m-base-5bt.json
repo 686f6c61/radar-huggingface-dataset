@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "kurogane/pico-hiragana-3.8M-base-5BT",
+  "slug": "kurogane-pico-hiragana-3-8m-base-5bt",
+  "author": "kurogane",
+  "url": "https://huggingface.co/kurogane/pico-hiragana-3.8M-base-5BT",
+  "created_at": "2026-09-30T00:01:39.000Z",
+  "updated_at": "2026-09-30T02:43:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "custom_code",
+    "hiragana",
+    "unigram",
+    "gated-deltanet",
+    "small-language-model",
+    "pretraining",
+    "conversational",
+    "ja",
+    "dataset:KeisukeMiyamoto/SyntheticTalk-jp",
+    "dataset:llm-jp/oasst2-33k-ja",
+    "dataset:nu-dialogue/real-persona-chat",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3846832,
+  "parameters_human": "3.8M",
+  "storage_bytes": 15434924,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kurogane (kurogane himaki) - Hugging Face",
+      "url": "https://huggingface.co/kurogane/models",
+      "snippet": "kurogane&#x27;s models33 Sort: Recently updated kurogane/HRM-Tiny-JA-500k-2x2-RC1 Text Generation • 0.1B•Updated 4 days ago• 23"
+    },
+    {
+      "title": "kurogane - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1627331779006603301",
+      "snippet": "Generate stunning anime art with the &#x27;kurogane&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Hiragana Flash Tiles by Ghostracer | Download free STL model ...",
+      "url": "https://www.printables.com/model/548532-hiragana-flash-tiles",
+      "snippet": "Hiragana flash tiles a tactile way to learn the basic kana | Download free 3D printable STL models"
+    },
+    {
+      "title": "hiragana・ STL File for ・Cults",
+      "url": "https://cults3d.com/en/3d-model/various/hiragana",
+      "snippet": "Download this STL Model for made by corporalxr. Cards for memorizing. Attention! Without instructions, these cards for memorizing are useless. Instructions for use: -1On the back of the card, write the pronunciation as in the photo. -2Take four cards. Try to remember the pronunciation by going through the cards one by one. And so on until you can remember. If they are remembered with ..."
+    },
+    {
+      "title": "Hiragana Romanji 3D Flashcards - Learn Japanese Tactilely",
+      "url": "https://cults3d.com/en/3d-model/game/hiragana-romanji-3d-flashcards-aprende-japones-de-forma-tactil",
+      "snippet": "Download this STL Model for 3D printer made by mrvertexattack. \"Hiragana Romanji 3D Flashcards - Aprende Japonés de Forma Táctil\" ¡Domina el hiragana con estas tarjetas 3D imprimibles! Diseñadas para hacer el estudio del japonés más interactivo, cada ficha muestra: - Carácter hiragana en relieve. - Romanji (transliteración) en la base. - Diseño optimizado para imprimir sin soportes ..."
+    }
+  ]
+}

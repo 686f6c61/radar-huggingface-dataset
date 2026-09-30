@@ -24,7 +24,7 @@
     "base_model:quantized:Qwen/Qwen-Image-2.1",
     "region:us"
   ],
-  "likes": 39,
+  "likes": 40,
   "downloads_30d": 96894,
   "trending_score": 20,
   "parameters": 7115124736,

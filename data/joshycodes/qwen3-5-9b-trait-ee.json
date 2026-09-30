@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3.5-9b-trait-ee",
+  "slug": "joshycodes-qwen3-5-9b-trait-ee",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3.5-9b-trait-ee",
+  "created_at": "2026-09-29T20:59:33.000Z",
+  "updated_at": "2026-09-29T21:03:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "base_model:joshycodes/qwen3.5-9b-trait-earnest-mt",
+    "base_model:finetune:joshycodes/qwen3.5-9b-trait-earnest-mt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927652333,
+  "storage_human": "17.9 GB",
+  "base_model": "joshycodes/qwen3.5-9b-trait-earnest-mt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-30T03:46:46.142Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger et utiliser Google Traduction",
+      "url": "https://support.google.com/translate/answer/6350850?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Télécharger et utiliser Google Traduction Vous pouvez traduire du texte saisi au clavier, en écriture manuscrite, sur une photo ou …"
+    },
+    {
+      "title": "Lung Cancer Essay - bartleby",
+      "url": "https://www.bartleby.com/topics/Lung-Cancer-Essay",
+      "snippet": "Jun 14, 2012 · Lung Cancer: Awareness & Prevention Lung cancer is the leading cause of cancer deaths among men and women in …"
+    },
+    {
+      "title": "Suicide Essay - bartleby",
+      "url": "https://www.bartleby.com/topics/Suicide-Essay",
+      "snippet": "leading method of suicide around the world and is particularly popular in rural area. and the most common in the world. Although …"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "Télécharger et utiliser Google Traduction",
+      "url": "https://support.google.com/translate/answer/6350850?hl=fr",
+      "snippet": "Télécharger et utiliser Google Traduction Vous pouvez traduire du texte saisi au clavier, en écriture manuscrite, sur une photo ou …"
+    }
+  ]
+}

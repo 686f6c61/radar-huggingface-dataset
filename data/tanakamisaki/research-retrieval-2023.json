@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tanakamisaki/research-retrieval-2023",
+  "slug": "tanakamisaki-research-retrieval-2023",
+  "author": "tanakamisaki",
+  "url": "https://huggingface.co/tanakamisaki/research-retrieval-2023",
+  "created_at": "2026-09-29T23:26:41.000Z",
+  "updated_at": "2026-09-29T23:26:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tanakamisaki (Tanaka Misaki) - Hugging Face",
+      "url": "https://huggingface.co/tanakamisaki/datasets",
+      "snippet": "Into NLP, diffusion models and AI agents."
+    },
+    {
+      "title": "ResearchGate | Find and share research",
+      "url": "https://www.researchgate.net/",
+      "snippet": "Access 160+ million publication pages and connect with 25+ million researchers. Join for free and gain visibility by uploading your research."
+    },
+    {
+      "title": "OpenAI Research | Publication",
+      "url": "https://openai.com/research/index/publication/",
+      "snippet": "OpenAI shares findings from the Hugging Face security incident and the steps we&#x27;re taking to strengthen AI model security, monitoring, and alignment."
+    },
+    {
+      "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "url": "https://arxiv.org/pdf/2312.10997",
+      "snippet": "This survey explores the integration of retrieval methods with large language models to address limitations like hallucinations and outdated knowledge."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "Explore OpenAI research on frontier models, reasoning, multimodal AI, and safe deployment as we work toward artificial general intelligence that benefits humanity."
+    }
+  ]
+}

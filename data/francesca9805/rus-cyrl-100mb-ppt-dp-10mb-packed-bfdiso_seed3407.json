@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407",
+  "slug": "francesca9805-rus-cyrl-100mb-ppt-dp-10mb-packed-bfdiso_seed3407",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407",
+  "created_at": "2026-09-29T23:45:43.000Z",
+  "updated_at": "2026-09-29T23:50:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/rus_cyrl_100mb",
+    "base_model:finetune:goldfish-models/rus_cyrl_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 251087613,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/rus_cyrl_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Canva: document terminé et après? - Graphisme - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37536445-canva-document-termine-et-apres",
+      "snippet": "Mar 1, 2022 · Bonjour, Je débute seulement avec le site Canva que je trouve très intéressant. Apparemment, quelque chose cloche …"
+    },
+    {
+      "title": "Trên tay Xiaomi Smart Band 10 Ceramic Edition: Chỉ một từ đẹp",
+      "url": "https://tinhte.vn/thread/tren-tay-xiaomi-smart-band-10-ceramic-edition-chi-mot-tu-dep.4031695/",
+      "snippet": "Jun 29, 2025 · Có 2 điểm ở Xiaomi Smart Band 9 Ceramic trước đây khiến mình phân vân không biết liệu có nên mua nó hay không, …"
+    },
+    {
+      "title": "Canva AI Miễn Phí Có Gì? Những Tính Năng Nên Dùng Trước Khi …",
+      "url": "https://tinhte.vn/thread/canva-ai-mien-phi-co-gi-nhung-tinh-nang-nen-dung-truoc-khi-nang-cap-canva-pro.4139897/",
+      "snippet": "Khi đã biết rõ mình cần tính năng nào và dùng với tần suất bao nhiêu, việc quyết định nâng cấp Canva Pro sẽ chính xác hơn. Canva …"
+    },
+    {
+      "title": "Imposible recibir el código de verificación Canva",
+      "url": "https://forums.commentcamarche.net/forum/affich-38299352-impossible-de-recevoir-le-code-verif-canva?lang=es",
+      "snippet": "Jul 15, 2026 · Hola, Estoy desesperadamente intentando iniciar sesión en la cuenta de Canva de mi empresa. Me enviaron una …"
+    },
+    {
+      "title": "Tinhte.vn - Chuyên trang máy tính - PC Home",
+      "url": "https://pc.tinhte.vn/",
+      "snippet": "Chuyên trang máy tính & laptop của Tinhte.vn: Review PC, gaming gear, cẩm nang mua sắm và lắp ráp máy tính, hướng dẫn sử …"
+    }
+  ]
+}

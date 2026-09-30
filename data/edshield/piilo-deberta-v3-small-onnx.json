@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "edshield/piilo-deberta-v3-small-onnx",
+  "slug": "edshield-piilo-deberta-v3-small-onnx",
+  "author": "edshield",
+  "url": "https://huggingface.co/edshield/piilo-deberta-v3-small-onnx",
+  "created_at": "2026-09-30T01:25:11.000Z",
+  "updated_at": "2026-09-30T01:25:40.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "deberta-v2",
+    "token-classification",
+    "pii",
+    "de-identification",
+    "education",
+    "student-privacy",
+    "edshield",
+    "en",
+    "base_model:edshield/piilo-deberta-v3-small",
+    "base_model:quantized:edshield/piilo-deberta-v3-small",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 770416763,
+  "storage_human": "770 MB",
+  "base_model": "edshield/piilo-deberta-v3-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx-community/deberta-v3-small · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/deberta-v3-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "microsoft/deberta-v3-small · Hugging Face",
+      "url": "https://huggingface.co/microsoft/deberta-v3-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "microsoft-deberta-v3-small | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/microsoft-deberta-v3-small",
+      "snippet": "The DeBERTa V3 small model comes with 6 layers and a hidden size of 768. It has 44M backbone parameters with a vocabulary containing 128K tokens which introduces 98M parameters in the Embedding layer. This model was trained using the 160GB data as DeBERTa V2. Fine-tuning on NLU tasks We present the dev results on SQuAD 2.0 and MNLI tasks."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

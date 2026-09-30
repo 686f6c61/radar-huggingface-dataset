@@ -5,7 +5,7 @@
   "author": "OliviaRossi",
   "url": "https://huggingface.co/OliviaRossi/MiMo-NeoHorse-9B-AGSI-GGUF",
   "created_at": "2026-09-29T17:19:03.000Z",
-  "updated_at": "2026-09-29T17:50:46.000Z",
+  "updated_at": "2026-09-29T18:08:43.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 8953803264,

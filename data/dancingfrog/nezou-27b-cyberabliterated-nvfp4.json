@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "dancingfrog/Nezou-27B-CyberAbliterated-NVFP4",
+  "slug": "dancingfrog-nezou-27b-cyberabliterated-nvfp4",
+  "author": "dancingfrog",
+  "url": "https://huggingface.co/dancingfrog/Nezou-27B-CyberAbliterated-NVFP4",
+  "created_at": "2026-09-29T22:09:36.000Z",
+  "updated_at": "2026-09-29T22:25:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "abliteration",
+    "abliterated",
+    "cyber",
+    "nvfp4",
+    "fp8",
+    "quantization",
+    "modelopt",
+    "sglang",
+    "multimodal",
+    "vision-language",
+    "conversational",
+    "reasoning",
+    "image-text-to-text",
+    "en",
+    "base_model:dancingfrog/Nezou-27B-CyberAbliterated",
+    "base_model:quantized:dancingfrog/Nezou-27B-CyberAbliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18800348400,
+  "parameters_human": "18.80B",
+  "storage_bytes": 22490747024,
+  "storage_human": "22.5 GB",
+  "base_model": "dancingfrog/Nezou-27B-CyberAbliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gay-slip videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/t:gay/gay-slip",
+      "snippet": "Straight guys in panties suck dick and straight boys gay sex with 8 min Gaymedicsexporn - 360p"
+    },
+    {
+      "title": "GAY DICK SLIP - Porn videos @ CumGuru.com",
+      "url": "https://cumguru.com/videos/gay-dick-slip",
+      "snippet": "Popular videos: Gay Dick Slip. Glory Hole slips his fat cock through a glory hole for Rock Lee to slobber on, My large pink cigar …"
+    },
+    {
+      "title": "Slipping men Porn Videos & XXX Movies — PornOne ex vPorn",
+      "url": "https://pornone.com/search?q=slipping+men",
+      "snippet": "Watch free slipping men porn videos on HD quality in PornOne. Find out all related sex movies and clips, last added few hours ago."
+    },
+    {
+      "title": "Best slipping gay porn vids collection | manporn.xxx",
+      "url": "https://manporn.xxx/tags/slipping/",
+      "snippet": "Explore the latest free slipping videos on Man Porn XXX. Dive into a massive collection of high-quality gay slipping content — …"
+    },
+    {
+      "title": "Free cock slipping at Man Porn tube",
+      "url": "https://manporn.xxx/search/?q=cock+slipping",
+      "snippet": "Watch hot cock slipping gay videos for free on ManPorn.xxx – the top destination for male content. Discover the biggest collection of …"
+    }
+  ]
+}

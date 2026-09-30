@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shuhant/foundation-action-b3-1b-action-expert",
+  "slug": "shuhant-foundation-action-b3-1b-action-expert",
+  "author": "shuhant",
+  "url": "https://huggingface.co/shuhant/foundation-action-b3-1b-action-expert",
+  "created_at": "2026-09-29T22:27:42.000Z",
+  "updated_at": "2026-09-29T22:54:07.000Z",
+  "license": "nvidia-internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "world-model",
+    "autonomous-driving",
+    "flow-matching",
+    "dinov3",
+    "other",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14781783369,
+  "storage_human": "14.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shuhant/foundational_action · Hugging Face",
+      "url": "https://huggingface.co/shuhant/foundational_action",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "shuhant (Shuhan Tan) - Hugging Face",
+      "url": "https://huggingface.co/shuhant/models",
+      "snippet": "Follow 0 followers 1 following AI & ML interests None yet Recent Activity updateda model5 days ago"
+    },
+    {
+      "title": "Xiaomi MiMo Home",
+      "url": "https://mimo.mi.com/models/en-US/mimo-v2.6-pro",
+      "snippet": "Xiaomi MiMo&#x27;s most powerful flagship reasoning model — omni-modal, ultra-high performance, trillion-parameter — built for complex projects, long-horizon tasks, high-stakes work, cybersecurity, and research."
+    },
+    {
+      "title": "OpenAI apologises after AI model accessed Australian government systems",
+      "url": "https://www.stuff.co.nz/world-news/361039982/openai-apologises-after-ai-model-accessed-australian-government-systems",
+      "snippet": "The experimental model reached Australian government systems after being asked to find spending on skin-condition medicines, prompting OpenAI to tighten its research safeguards."
+    },
+    {
+      "title": "Universal Actions for Enhanced Embodied Foundation Models",
+      "url": "https://arxiv.org/html/2501.10105v2",
+      "snippet": "The model must accurately ground the language instruction to the correct object in a complex real-world setting. This tests the model&#x27;s ability to connect linguistic descriptions directly with physical actions in dynamic and visually diverse environments."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AEECollier/s1-jev-cvltist",
+  "slug": "aeecollier-s1-jev-cvltist",
+  "author": "AEECollier",
+  "url": "https://huggingface.co/AEECollier/s1-jev-cvltist",
+  "created_at": "2026-09-30T00:40:20.000Z",
+  "updated_at": "2026-09-30T03:01:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "decision-model",
+    "calibration",
+    "jev",
+    "text",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149916333,
+  "storage_human": "150 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CVLTAI/s1-jev-cvltist · Hugging Face",
+      "url": "https://huggingface.co/CVLTAI/s1-jev-cvltist",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - TypeSafe AI",
+      "url": "https://docs.typesafe.ai/models",
+      "snippet": "Contact sales@typesafe.ai. ... An alias is a model name that resolves to a versioned model ID. Send it in the model field like any other name. ... jev-preview currently points to the same model as jev-latest. There is no preview build available right now. An alias moves when a new release ships, so the answers behind it can change without a ..."
+    },
+    {
+      "title": "Jev (AI model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
+      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco-based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2]"
+    },
+    {
+      "title": "Jev AI — Decisions at machine speed",
+      "url": "https://jevai.net/",
+      "snippet": "Jev AI is the first System One Model from TypeSafe AI: type-safe decisions in 70-500 ms, zero hallucinations, calibrated confidence. Founded by a ChatGPT co-inventor. Output tokens free, input from $0.084 per million."
+    },
+    {
+      "title": "Jev (AI model) - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/jev",
+      "snippet": "Jev is an AI model released in waitlisted early access on 15 September 2026, and opened to all developers on 20 September, [30] by TypeSafe AI, a San Francisco startup founded in 2024 by former OpenAI researcher Diogo Almeida with Erik Gafni and Sasha Sheng."
+    }
+  ]
+}

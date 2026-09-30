@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "stanfordnlp/stanza-wuu",
+  "slug": "stanfordnlp-stanza-wuu",
+  "author": "stanfordnlp",
+  "url": "https://huggingface.co/stanfordnlp/stanza-wuu",
+  "created_at": "2026-09-29T20:16:03.000Z",
+  "updated_at": "2026-09-29T20:16:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "stanza",
+  "languages": [
+    "wuu"
+  ],
+  "tags": [
+    "stanza",
+    "token-classification",
+    "wuu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 211013205,
+  "storage_human": "211 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stanfordnlp/stanza-wuu · Hugging Face",
+      "url": "https://huggingface.co/stanfordnlp/stanza-wuu",
+      "snippet": "Stanza model for Shanghainese (wuu) Stanza is a collection of accurate and efficient tools for the linguistic analysis of many human languages. Starting from raw text to syntactic analysis and entity recognition, Stanza brings state-of-the-art NLP models to languages of your choosing. Find more about it in our website and our GitHub repository."
+    },
+    {
+      "title": "Models - Stanza",
+      "url": "https://stanfordnlp.github.io/stanza/models.html",
+      "snippet": "Models In this section, we cover the list of supported human languages and models that are available for download in Stanza, the performance of these models, as well as how you can contribute models you trained to the Stanza community. Packages Packages for download can be specified with the Pipeline."
+    },
+    {
+      "title": "Download Models - Stanza",
+      "url": "https://stanfordnlp.github.io/stanza/download_models.html",
+      "snippet": "Stanza provides pretrained NLP models for a total 70 human languages. On this page we provide detailed information on how to download these models to process text in a language of your choosing."
+    },
+    {
+      "title": "stanza.stanford.edu",
+      "url": "https://stanza.stanford.edu/",
+      "snippet": "parts-of-speech named entities lemmas dependency parse constituency parse"
+    },
+    {
+      "title": "GitHub - stanfordnlp/stanza: Stanford NLP Python library for ...",
+      "url": "https://github.com/stanfordnlp/stanza",
+      "snippet": "The Stanford NLP Group&#x27;s official Python NLP library. It contains support for running various accurate natural language processing tools on 60+ languages and for accessing the Java Stanford CoreNLP software from Python. For detailed information please visit our official website. 🔥 A new collection of biomedical and clinical English model packages are now available, offering seamless ..."
+    }
+  ]
+}

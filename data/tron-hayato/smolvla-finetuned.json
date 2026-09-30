@@ -5,7 +5,7 @@
   "author": "Tron-Hayato",
   "url": "https://huggingface.co/Tron-Hayato/smolvla-finetuned",
   "created_at": "2026-09-29T00:35:51.000Z",
-  "updated_at": "2026-09-29T02:23:04.000Z",
+  "updated_at": "2026-09-29T05:40:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": 450046176,
   "parameters_human": "450.0M",
-  "storage_bytes": 5697907072,
-  "storage_human": "5.7 GB",
+  "storage_bytes": 10489063968,
+  "storage_human": "10.5 GB",
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ldov/Nemotron-3-Diarization",
+  "slug": "ldov-nemotron-3-diarization",
+  "author": "ldov",
+  "url": "https://huggingface.co/ldov/Nemotron-3-Diarization",
+  "created_at": "2026-09-29T22:14:40.000Z",
+  "updated_at": "2026-09-29T22:14:40.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "nemo",
+  "languages": [],
+  "tags": [
+    "nemo",
+    "safetensors",
+    "gguf",
+    "nemotron3_diarization",
+    "audio-frame-classification",
+    "speaker-diarization",
+    "streaming-sortformer",
+    "speaker-tagging",
+    "transformers",
+    "voice-activity-detection",
+    "arxiv:2409.06656",
+    "arxiv:2507.18446",
+    "arxiv:2605.15442",
+    "arxiv:2507.09226",
+    "arxiv:2408.13106",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 99226504,
+  "parameters_human": "99.2M",
+  "storage_bytes": 709780059,
+  "storage_human": "710 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/Nemotron-3-Diarization · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
+      "snippet": "Model Version Nemotron 3 Diarization (General Access). The model can be integrated into conversational AI systems through NeMo Framework inference pipelines to produce per-speaker activity probabilities or postprocessed generic speaker labels and timestamps. Training and Evaluation Datasets Training Datasets The model was trained on a combination of real conversations and multi-talker audio ..."
+    },
+    {
+      "title": "Know Who Spoke When: Build Real-Time, Multi-Speaker AI with NVIDIA ...",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-diarization",
+      "snippet": "A Blog post by NVIDIA on Hugging Face"
+    },
+    {
+      "title": "Nemotron-3-Diarization: Audio-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/nemotron-3-diarization-nvidia",
+      "snippet": "Nemotron-3-Diarization is an open-weight speaker diarization model from NVIDIA that identifies who spoke when in real-world audio. Its most important distinction is that one checkpoint supports offline processing and streaming operation with up to eight speakers, with configurable output resolution in multiples of 10 ms and chunked inference ..."
+    },
+    {
+      "title": "Nemotron 3 Diarization: Open Model, 8 Speakers, 14.72% DER - explainx.ai",
+      "url": "https://www.explainx.ai/blog/nvidia-nemotron-3-diarization-open-weight-eight-speakers-2026",
+      "snippet": "NVIDIA&#x27;s Nemotron 3 Diarization is a 100M open model that tracks up to eight overlapping speakers at 14.72% DER. Latency modes, license and how to use it."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/nemotron3_diarization.md ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/nemotron3_diarization.md",
+      "snippet": "Overview Nemotron 3 Diarization is an open-weight streaming speaker diarization model designed to determine \"who spoke when\" in real-world audio. It supports both streaming and offline inference, handles up to eight speakers, and orders speaker outputs by each speaker&#x27;s first arrival in the input audio."
+    }
+  ]
+}

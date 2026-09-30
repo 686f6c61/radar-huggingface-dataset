@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Ken8828/mygf36",
+  "slug": "ken8828-mygf36",
+  "author": "Ken8828",
+  "url": "https://huggingface.co/Ken8828/mygf36",
+  "created_at": "2026-09-30T01:10:04.000Z",
+  "updated_at": "2026-09-30T01:45:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778746657,
+  "storage_human": "779 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ken8828/mygf36 · Hugging Face",
+      "url": "https://huggingface.co/Ken8828/mygf36",
+      "snippet": "Ken8828 / mygf36 Like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AI Girlfriend — Chat, Roleplay, Image & Video | Kales.ai",
+      "url": "https://www.kales.ai/en/",
+      "snippet": "Chat with your AI girlfriend, roleplay interactive stories, generate images & videos, or create your own — free on Kales. No sign-up, online 24/7."
+    },
+    {
+      "title": "3D AI Studio — Free AI 3D Model Generator, No Signup",
+      "url": "https://3daistudio.pro/",
+      "snippet": "3D AI Studio turns a text prompt or an image into a downloadable 3D model in about ninety seconds. Free AI 3D model generator, no signup — exports .glb."
+    },
+    {
+      "title": "AI Girlfriend AI Generator | FreeMode.ai",
+      "url": "https://www.freemode.ai/ai-girlfriend",
+      "snippet": "Generate ai girlfriend in seconds, animate it into video, and transform any photo with the editor. Uncensored, unlimited, free to start."
+    },
+    {
+      "title": "AI Girlfriend Generator: Create Your Own AI Companion Free | cherrypop.ai",
+      "url": "https://cherrypop.ai/create",
+      "snippet": "Create your own AI girlfriend in under a minute. Choose her looks, body, personality, and voice — then chat, sext, and generate photos of her. Free to start, no card required."
+    }
+  ]
+}

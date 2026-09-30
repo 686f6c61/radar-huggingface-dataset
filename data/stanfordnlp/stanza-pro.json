@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "stanfordnlp/stanza-pro",
+  "slug": "stanfordnlp-stanza-pro",
+  "author": "stanfordnlp",
+  "url": "https://huggingface.co/stanfordnlp/stanza-pro",
+  "created_at": "2026-09-29T20:01:01.000Z",
+  "updated_at": "2026-09-29T20:01:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "stanza",
+  "languages": [
+    "pro"
+  ],
+  "tags": [
+    "stanza",
+    "token-classification",
+    "pro",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 212316353,
+  "storage_human": "212 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Stanza",
+      "url": "https://stanfordnlp.github.io/stanza/models.html",
+      "snippet": "In this section, we cover the list of supported human languages and models that are available for download in Stanza, the performance of these models, as well as how you can contribute models you trained to the Stanza community."
+    },
+    {
+      "title": "Download Models - Stanza",
+      "url": "https://stanfordnlp.github.io/stanza/download_models.html",
+      "snippet": "Stanza provides pretrained NLP models for a total 70 human languages. On this page we provide detailed information on how to download these models to process text in a language of your choosing."
+    },
+    {
+      "title": "GitHub - stanfordnlp/stanza: Stanford NLP Python library for ...",
+      "url": "https://github.com/stanfordnlp/stanza",
+      "snippet": "We currently provide models for all of the Universal Dependencies treebanks v2.8, as well as NER models for a few widely-spoken languages. You can find instructions for downloading and using these models here."
+    },
+    {
+      "title": "stanza.stanford.edu",
+      "url": "https://stanza.stanford.edu/",
+      "snippet": "Visualisation provided using the brat visualisation/annotation software."
+    },
+    {
+      "title": "stanfordnlp/stanza-en · Hugging Face",
+      "url": "https://huggingface.co/stanfordnlp/stanza-en",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

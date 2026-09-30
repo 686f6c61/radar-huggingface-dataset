@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "andreilungeanu/email-phishing-detector-v2-GGUF",
+  "slug": "andreilungeanu-email-phishing-detector-v2-gguf",
+  "author": "andreilungeanu",
+  "url": "https://huggingface.co/andreilungeanu/email-phishing-detector-v2-GGUF",
+  "created_at": "2026-09-29T22:19:40.000Z",
+  "updated_at": "2026-09-29T22:20:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ggml",
+    "deberta-v3",
+    "phishing-detection",
+    "email-security",
+    "text-classification",
+    "en",
+    "base_model:nhellyercreek/email-phishing-detector-v2",
+    "base_model:quantized:nhellyercreek/email-phishing-detector-v2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1410124808,
+  "storage_human": "1.4 GB",
+  "base_model": "nhellyercreek/email-phishing-detector-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xchandru/phishing-email-detector: A smart AI-powered tool ...",
+      "url": "https://github.com/0xchandru/phishing-email-detector",
+      "snippet": "A smart AI-powered tool that detects phishing emails by analyzing email content using Google&#x27;s Generative AI. This project helps users identify potentially malicious or fraudulent emails before they cause harm. - 0xchandru/phishing-email-detector"
+    },
+    {
+      "title": "PhishGuard — AI-Powered Phishing Email Detector - GitHub",
+      "url": "https://github.com/nr313/Phishing-Email-Detector",
+      "snippet": "A browser-based phishing email detector that uses Claude AI to analyze emails for phishing indicators, social engineering tactics, and malicious patterns."
+    },
+    {
+      "title": "Phishing Email Detector - AI Security Tool",
+      "url": "https://gauthamnholla.github.io/phishing-email-detector/",
+      "snippet": "🎯 How to Use Paste any email content below and click \"Analyze Email\" to detect potential phishing attempts. Our ML model analyzes text patterns, suspicious keywords, and threat indicators to provide a comprehensive security assessment."
+    },
+    {
+      "title": "AI-Based Phishing Email Detector | Devpost",
+      "url": "https://devpost.com/software/ai-based-phishing-email-detector-03wv7b",
+      "snippet": "🧠 Inspiration \"Phishing attacks are increasing day by day, and many users are not able to identify fake emails. This inspired me to build a simple and intelligent system that can help users detect phishing emails and protect their personal information.\" ⚙️ What it does \"My project is an AI-Based Phishing Email Detector that analyzes email details and identifies whether the email ..."
+    },
+    {
+      "title": "Phishing Email Detection Using Large Language Models",
+      "url": "https://arxiv.org/html/2512.10104v2",
+      "snippet": "Abstract Email phishing is one of the most prevalent and globally consequential vectors of cyber intrusion. As systems increasingly deploy Large Language Models (LLMs) applications, these systems face evolving phishing email threats that exploit their fundamental architectures."
+    }
+  ]
+}

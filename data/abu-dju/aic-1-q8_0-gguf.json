@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Abu-Dju/AIC-1-Q8_0-GGUF",
+  "slug": "abu-dju-aic-1-q8_0-gguf",
+  "author": "Abu-Dju",
+  "url": "https://huggingface.co/Abu-Dju/AIC-1-Q8_0-GGUF",
+  "created_at": "2026-09-29T23:26:42.000Z",
+  "updated_at": "2026-09-29T23:29:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation-inference",
+    "llama-cpp",
+    "gguf-my-repo",
+    "ar",
+    "en",
+    "base_model:Applied-Innovation-Center/AIC-1",
+    "base_model:quantized:Applied-Innovation-Center/AIC-1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 34820882560,
+  "storage_human": "34.8 GB",
+  "base_model": "Applied-Innovation-Center/AIC-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abu-Dju/N-ATLaS-Q8_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Abu-Dju/N-ATLaS-Q8_0-GGUF",
+      "snippet": "This model was converted to GGUF format from NCAIR1/N-ATLaS using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "Abu-Dju/aya-expanse-32b-Q8_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Abu-Dju/aya-expanse-32b-Q8_0-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "IBM GGUF-encoded AI models and conversion scripts. Contribute to IBM/gguf development by creating an account on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF. 8B • Updated 5 days ago • 159k • 311. unsloth/Qwen-Image-2.1-GGUF"
+    }
+  ]
+}

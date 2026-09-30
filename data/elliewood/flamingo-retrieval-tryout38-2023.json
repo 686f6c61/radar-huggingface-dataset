@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "elliewood/flamingo-retrieval-tryout38-2023",
+  "slug": "elliewood-flamingo-retrieval-tryout38-2023",
+  "author": "elliewood",
+  "url": "https://huggingface.co/elliewood/flamingo-retrieval-tryout38-2023",
+  "created_at": "2026-09-29T23:46:14.000Z",
+  "updated_at": "2026-09-29T23:46:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "umassrobotics/flamingo-retrieval-2023 · Hugging Face",
+      "url": "https://huggingface.co/umassrobotics/flamingo-retrieval-2023",
+      "snippet": "Overview Working implementation of Flamingo for Retrieval using a giant configuration. The repository focuses on transparent code and repeatable smoke tests; benchmark claims are deliberately omitted."
+    },
+    {
+      "title": "abhishekkumar6382/flamingo-retrieval · Hugging Face",
+      "url": "https://huggingface.co/abhishekkumar6382/flamingo-retrieval",
+      "snippet": "Flamingo for Retrieval Overview This is an experimental Flamingo codebase for Retrieval. It keeps the tiny setup intentionally manageable so architecture changes can be inspected before a full training run."
+    },
+    {
+      "title": "GitHub - mlfoundations/open_flamingo: An open-source framework for ...",
+      "url": "https://github.com/mlfoundations/open_flamingo",
+      "snippet": "Paper | Blog posts: 1, 2 | Demo Welcome to our open source implementation of DeepMind&#x27;s Flamingo! In this repository, we provide a PyTorch implementation for training and evaluating OpenFlamingo models. If you have any questions, please feel free to open an issue. We also welcome contributions!"
+    },
+    {
+      "title": "daniilada32 (Daniil ANDREEV) - Hugging Face",
+      "url": "https://huggingface.co/daniilada32/models",
+      "snippet": "daniilada32&#x27;s models1 Sort: Recently updated daniilada32/flamingo-retrieval 24.8k•Updated about 14 hours ago• 18"
+    },
+    {
+      "title": "zizhou01/retrieval · Hugging Face",
+      "url": "https://huggingface.co/zizhou01/retrieval",
+      "snippet": "Flamingo for Retrieval Overview This repository is a compact, custom PyTorch implementation of Flamingo for Retrieval. The nano configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    }
+  ]
+}

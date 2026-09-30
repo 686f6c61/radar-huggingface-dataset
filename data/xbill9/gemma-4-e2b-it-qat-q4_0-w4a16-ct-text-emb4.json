@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text-emb4",
+  "slug": "xbill9-gemma-4-e2b-it-qat-q4_0-w4a16-ct-text-emb4",
+  "author": "xbill9",
+  "url": "https://huggingface.co/xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text-emb4",
+  "created_at": "2026-09-29T20:28:10.000Z",
+  "updated_at": "2026-09-29T20:48:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma4_text",
+    "gemma4",
+    "compressed-tensors",
+    "w4a16",
+    "int4",
+    "qat",
+    "text-only",
+    "text-generation",
+    "conversational",
+    "base_model:xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text",
+    "base_model:quantized:xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5031222563,
+  "parameters_human": "5.03B",
+  "storage_bytes": 2862790440,
+  "storage_human": "2.9 GB",
+  "base_model": "xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-E2B-it-qat-w4a16-ct · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E2B-it-qat-w4a16-ct",
+      "snippet": "At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "Gemma 4 QAT Q4_0 - a google Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/google/gemma-4-qat-q4-0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 model overview - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core",
+      "snippet": "Native System Prompt Support: Gemma 4 introduces built-in support for the system role, enabling more structured and controllable conversations. Multi-Token Prediction: All Gemma 4 models (E2B, E4B, 12B, 31B, and 26B A4B) include a dedicated draft model for speculative decoding, enabling significantly faster inference with no quality loss."
+    },
+    {
+      "title": "Gemma 4 with quantization-aware training - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/",
+      "snippet": "By simulating quantization during training, QAT minimizes quality loss when the model is compressed. This release includes QAT checkpoints for the popular Q4_0 quantization format as well as a novel quantization format specialized for mobile use cases. Using this mobile format, we&#x27;ve reduced the memory footprint of Gemma 4 E2B to 1GB."
+    }
+  ]
+}

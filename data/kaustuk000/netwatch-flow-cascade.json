@@ -5,7 +5,7 @@
   "author": "kaustuk000",
   "url": "https://huggingface.co/kaustuk000/netwatch-flow-cascade",
   "created_at": "2026-09-28T17:54:09.000Z",
-  "updated_at": "2026-09-28T18:01:30.000Z",
+  "updated_at": "2026-09-28T22:05:59.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "tabular-classification",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -37,9 +37,9 @@
     "safetensors"
   ],
   "is_conversational": false,
-  "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-29T02:40:22.484Z",
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

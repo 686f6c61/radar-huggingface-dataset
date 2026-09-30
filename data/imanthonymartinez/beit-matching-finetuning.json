@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "imanthonymartinez/beit-matching-finetuning",
+  "slug": "imanthonymartinez-beit-matching-finetuning",
+  "author": "imanthonymartinez",
+  "url": "https://huggingface.co/imanthonymartinez/beit-matching-finetuning",
+  "created_at": "2026-09-29T23:48:20.000Z",
+  "updated_at": "2026-09-29T23:48:24.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Avasilyev3243/beit-matching-tutorial · Hugging Face",
+      "url": "https://huggingface.co/Avasilyev3243/beit-matching-tutorial",
+      "snippet": "Overview A small Beit implementation for Matching, packaged with an explicit configuration and an initialization checkpoint. The tiny variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "Choose the right AI model for your workload",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/choose-ai-model",
+      "snippet": "Learn strategies to help you select the best model for your AI workload, including key criteria and practical considerations for decision-making."
+    },
+    {
+      "title": "tgjackson74/beit-matching76 at main - Hugging Face",
+      "url": "https://huggingface.co/tgjackson74/beit-matching76/tree/main",
+      "snippet": "tgjackson74 / beit-matching76 Like 0 Safetensors PyTorch beit matching License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new main beit-matching76 76 kB Ctrl+K Ctrl+K 1 contributor History:2 commits tgjackson74 Add finetune.py, README.md, config.json, training_args.json, model.safetensors a2f6f1b verifiedabout 11 hours ago .gitattributes Safe 1.52 kBinitial ..."
+    },
+    {
+      "title": "OpenAI apologises after AI model accessed Australian government systems",
+      "url": "https://www.stuff.co.nz/world-news/361039982/openai-apologises-after-ai-model-accessed-australian-government-systems",
+      "snippet": "The experimental model reached Australian government systems after being asked to find spending on skin-condition medicines, prompting OpenAI to tighten its research safeguards."
+    },
+    {
+      "title": "unilm/beit/modeling_finetune.py at master · microsoft/unilm",
+      "url": "https://github.com/microsoft/unilm/blob/master/beit/modeling_finetune.py",
+      "snippet": "Large-scale Self-supervised Pre-training Across Tasks, Languages, and Modalities - unilm/beit/modeling_finetune.py at master · microsoft/unilm"
+    }
+  ]
+}

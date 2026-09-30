@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed10",
+  "slug": "francesca9805-ita-latn-10mb-ppt-dp-10mb-packed-bfdiso_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed10",
+  "created_at": "2026-09-29T22:00:22.000Z",
+  "updated_at": "2026-09-29T22:02:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/ita_latn_10mb",
+    "base_model:finetune:goldfish-models/ita_latn_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 79359046,
+  "storage_human": "79 MB",
+  "base_model": "goldfish-models/ita_latn_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Midsommar. W biały dzień (2019) - Filmweb",
+      "url": "https://www.filmweb.pl/film/Midsommar.+W+bia%C5%82y+dzie%C5%84-2019-817414",
+      "snippet": "Jun 24, 2019 · Midsommar. W biały dzień (2019) Midsommar - Młoda para w czasie wakacji odwiedza odizolowaną od świata …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Midsommar. W biały dzień (2019) | Opinie i oceny użytkowników",
+      "url": "https://www.filmweb.pl/film/Midsommar.+W+bia%C5%82y+dzie%C5%84-2019-817414/opinie",
+      "snippet": "Zobacz, jak ocenili film Midsommar. W biały dzień (2019) Midsommar użytkownicy Filmwebu. Opinie, oceny i komentarze w jednym …"
+    },
+    {
+      "title": "侠盗飞车罪恶都市咋下载免费的，求大佬给资源？ - 知乎",
+      "url": "https://www.zhihu.com/question/301549544",
+      "snippet": "这个游戏必须使用中文来说，不然根本看不懂，小时候玩得时候都是 开一个坦克到处乱炸！ 在实测的过程中，我安装侠盗飞车也花了 …"
+    },
+    {
+      "title": "Midsommar. W biały dzień (2019) - recenzja filmu - Filmweb",
+      "url": "https://www.filmweb.pl/reviews/recenzja-filmu-Midsommar.+W+bia%C5%82y+dzie%C5%84-22715",
+      "snippet": "Recenzja filmu Midsommar. W biały dzień (2019) - Wicker Girl . Choć \"W biały dzień\" nie ma paskudnej intensywności \"Hereditary\", …"
+    }
+  ]
+}

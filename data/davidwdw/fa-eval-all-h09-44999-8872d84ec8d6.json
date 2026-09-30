@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-eval-all-h09-44999-8872d84ec8d6",
+  "slug": "davidwdw-fa-eval-all-h09-44999-8872d84ec8d6",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-eval-all-h09-44999-8872d84ec8d6",
+  "created_at": "2026-09-30T01:31:25.000Z",
+  "updated_at": "2026-09-30T01:35:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 253842274,
+  "storage_human": "254 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "davidwdw/fa-systematic-eval-fixtures-20260926-6789c5c62c03 · Hugging Face",
+      "url": "https://huggingface.co/davidwdw/fa-systematic-eval-fixtures-20260926-6789c5c62c03",
+      "snippet": "davidwdw fa-systematic-eval-fixtures-20260926-6789c5c62c03 Like0 Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "OpenAI Evals - GitHub",
+      "url": "https://github.com/openai/evals",
+      "snippet": "You can now configure and run Evals directly in the OpenAI Dashboard. Get started → Evals provide a framework for evaluating large language models (LLMs) or systems built using LLMs. We offer an existing registry of evals to test different dimensions of OpenAI models and the ability to write your own custom evals for use cases you care about. You can also use your data to build private evals ..."
+    },
+    {
+      "title": "Spaces - Hugging Face",
+      "url": "https://huggingface.co/spaces",
+      "snippet": "Discover and explore community-created machine learning applications on Hugging Face Spaces."
+    },
+    {
+      "title": "GitHub - David899b/ai-eval-portfolio: Production-grade LLM evaluation ...",
+      "url": "https://github.com/David899b/ai-eval-portfolio",
+      "snippet": "Production-grade LLM evaluation harness + Model Evaluation Engineer portfolio - David899b/ai-eval-portfolio"
+    },
+    {
+      "title": "ASSIST-QuickSearch Basic Search",
+      "url": "https://quicksearch.dla.mil/",
+      "snippet": "Enter search criteria in one or more of three text fields: Document ID, Document Number, Find Term (s). Filter search results by selecting Status or FSC/Area from drop-down lists, or by checking the box and specifying a range of document dates. Click a label for a detailed description and sample search results."
+    }
+  ]
+}

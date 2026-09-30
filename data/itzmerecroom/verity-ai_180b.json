@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ItzMeRecRoom/verity-ai_180b",
+  "slug": "itzmerecroom-verity-ai_180b",
+  "author": "ItzMeRecRoom",
+  "url": "https://huggingface.co/ItzMeRecRoom/verity-ai_180b",
+  "created_at": "2026-09-30T00:12:24.000Z",
+  "updated_at": "2026-09-30T00:25:10.000Z",
+  "license": "verity-ai.180b",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "pt",
+    "es"
+  ],
+  "tags": [
+    "en",
+    "pt",
+    "es",
+    "base_model:meta-llama/Meta-Llama-3-8B",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "meta-llama/Meta-Llama-3-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Verity Mod AI Setup - Unlimited Use & All Problems FIXED!",
+      "url": "https://www.youtube.com/watch?v=vyUBsm7P3M0",
+      "snippet": "In this complete Verity Mod tutorial, I&#x27;ll show you the Verity Mod AI setup, installation, required dependencies, unlimited-use setup, and how to fix common Verity Mod errors and problems."
+    },
+    {
+      "title": "Verity AI — AI-generated image & video detection",
+      "url": "https://verity-ai-nu.vercel.app/",
+      "snippet": "Verity AI Upload an image or video to check whether it&#x27;s AI-generated — backed by a model ensemble and forensic signal analysis."
+    },
+    {
+      "title": "GitHub - TheROMZ52/VerityAI: verity is in-game ai helper plugin",
+      "url": "https://github.com/TheROMZ52/VerityAI",
+      "snippet": "VerityAI allows players to chat directly with an AI assistant inside Minecraft with support for multiple AI models, conversation memory, commands, and server integrations Just to clarify: this plugin is called Verity, but it has absolutely no connection to the Verity mod. They&#x27;re completely separate projects — the name is the only similarity."
+    },
+    {
+      "title": "Falcon 180B AI Statistics 2026 - aboutchromebooks.com",
+      "url": "https://www.aboutchromebooks.com/falcon-180b-statistics/",
+      "snippet": "Falcon 180B is a 180-billion-parameter open AI model trained on 3.5 trillion tokens using 7 million GPU hours. Explore its benchmarks, hardware needs, adoption trends, and market position in 2026."
+    },
+    {
+      "title": "Verity Mod for Minecraft: The Official Site for Java Edition",
+      "url": "https://www.verityje-mod.com/",
+      "snippet": "The official website for the Verity Mod, the AI-powered assistant for Minecraft Java Edition. Download the Verity Mod: free, 100% local, no API keys."
+    }
+  ]
+}

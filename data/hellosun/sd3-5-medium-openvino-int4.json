@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "HelloSun/SD3.5-medium-OpenVINO-INT4",
+  "slug": "hellosun-sd3-5-medium-openvino-int4",
+  "author": "HelloSun",
+  "url": "https://huggingface.co/HelloSun/SD3.5-medium-OpenVINO-INT4",
+  "created_at": "2026-09-29T23:30:10.000Z",
+  "updated_at": "2026-09-30T02:06:22.000Z",
+  "license": "stabilityai-ai-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "optimum-intel",
+  "languages": [],
+  "tags": [
+    "optimum-intel",
+    "text-to-image",
+    "stable-diffusion",
+    "stable-diffusion-3",
+    "diffusers",
+    "OpenVINO",
+    "int4",
+    "nncf",
+    "sd3",
+    "base_model:stabilityai/stable-diffusion-3.5-medium",
+    "base_model:finetune:stabilityai/stable-diffusion-3.5-medium",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5120099623,
+  "storage_human": "5.1 GB",
+  "base_model": "stabilityai/stable-diffusion-3.5-medium",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenVINO (OpenVINO Toolkit) - Hugging Face",
+      "url": "https://huggingface.co/OpenVINO/models",
+      "snippet": "AI & ML interests. Deep Learning Inference, Deep Learning Model Optimization. Recent Activity. amokrov updated a model about 14 hours ago"
+    },
+    {
+      "title": "OpenVINO 2026.4 — OpenVINO™ documentation — Version (2026)",
+      "url": "https://docs.openvino.ai/",
+      "snippet": "OpenVINO is an open-source toolkit for deploying high-performance AI solutions across cloud, AI PCs, edge devices, and Physical AI alike. Develop your applications with both generative and conventional AI models, coming from the most popular model frameworks."
+    },
+    {
+      "title": "stabilityai/stable-diffusion-3-medium-diffusers · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-diffusion-3-medium-diffusers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openvino-ai-plugins-gimp/Docs/stable-diffusion-v3.md at main · intel ...",
+      "url": "https://github.com/intel/openvino-ai-plugins-gimp/blob/main/Docs/stable-diffusion-v3.md",
+      "snippet": "Stable Diffusion 3.5 Turbo TensorArt Stable Diffusion 3.5 Medium Turbo (SD3.5M Turbo) is a high-performance text-to-image model distilled from StabilityAI&#x27;s stable-diffusion-3.5-medium. This model emphasizes stability and efficiency, making it suitable for a wide range of art styles and creative expression scenarios."
+    },
+    {
+      "title": "OpenVINO™ Model Hub - Intel",
+      "url": "https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/model-hub.html",
+      "snippet": "Discover AI models supported by OpenVINO. Select a popular AI model to access Jupyter notebooks and OpenVINO performance benchmarks."
+    }
+  ]
+}

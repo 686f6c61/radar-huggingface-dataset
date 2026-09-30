@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Deviant65/act_so101_redcube_batch32_kl5",
+  "slug": "deviant65-act_so101_redcube_batch32_kl5",
+  "author": "Deviant65",
+  "url": "https://huggingface.co/Deviant65/act_so101_redcube_batch32_kl5",
+  "created_at": "2026-09-29T20:21:10.000Z",
+  "updated_at": "2026-09-29T20:21:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Deviant65/so101_redcube_20260925_154203",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deviant65/act_so101_redcube_batch32 · Hugging Face",
+      "url": "https://huggingface.co/Deviant65/act_so101_redcube_batch32",
+      "snippet": "Deviant65/so101_redcube_20260925_154203 ... Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware"
+    },
+    {
+      "title": "Deviant65/so101_redcube_20260925_151937 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/Deviant65/so101_redcube_20260925_151937/tree/main",
+      "snippet": "Datasets: Deviant65 / so101_redcube_20260925_151937 Like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 1K - 10K Tags: LeRobot Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main so101_redcube_20260925_151937 14.2 MB Ctrl+K Ctrl+K 1 contributor History:3 commits Deviant65 Upload README.md ..."
+    },
+    {
+      "title": "SO-ARM100/Simulation/SO101/README.md at main - GitHub",
+      "url": "https://github.com/TheRobotStudio/SO-ARM100/blob/main/Simulation/SO101/README.md",
+      "snippet": "Standard Open Arm 100. Contribute to TheRobotStudio/SO-ARM100 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - jyang-ca/lerobot-so101",
+      "url": "https://github.com/jyang-ca/lerobot-so101",
+      "snippet": "Contribute to jyang-ca/lerobot-so101 development by creating an account on GitHub."
+    },
+    {
+      "title": "Train an SO-101 Robot From Sim-to-Real With NVIDIA Isaac",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/index.html",
+      "snippet": "You&#x27;ll train and deploy a vision-language-action (VLA) model to perform unstructured pick-and-place of centrifuge vials into a rack using an SO-101 robot arm - first in sim, where we can iterate quickly and validate behavior, then in reality."
+    }
+  ]
+}

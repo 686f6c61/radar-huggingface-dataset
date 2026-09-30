@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ML-Intern-lab/Qwen-Image-2.1-doodle-in-LoRA",
+  "slug": "ml-intern-lab-qwen-image-2-1-doodle-in-lora",
+  "author": "ML-Intern-lab",
+  "url": "https://huggingface.co/ML-Intern-lab/Qwen-Image-2.1-doodle-in-LoRA",
+  "created_at": "2026-09-27T07:58:42.000Z",
+  "updated_at": "2026-09-29T05:11:05.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "qwen-image",
+    "image-editing",
+    "inpainting",
+    "scribble",
+    "image-to-image",
+    "dataset:ML-Intern-lab/doodle-in-pairs",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 32,
+  "trending_score": 13,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 967906021,
+  "storage_human": "968 MB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ML — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/ML",
+      "snippet": "mètre linéaire (ml), unité de longueur dans une direction utile, c'est-à-dire sans tenir compte des autres dimensions (largeur, hauteur, …"
+    },
+    {
+      "title": "ML - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ML",
+      "snippet": "This disambiguation page lists articles associated with the title ML. If an internal link incorrectly led you here, you may wish to change …"
+    },
+    {
+      "title": "millilitre — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/millilitre",
+      "snippet": "(Métrologie) Unité de mesure de volume en dehors du Système international (mais dont l’usage est accepté avec le SI), valant 10 −3 …"
+    },
+    {
+      "title": "Conversion de Millilitres en Litres",
+      "url": "https://www.metric-conversions.org/fr/volume/millilitres-en-litres.htm",
+      "snippet": "Un millilitre (mL) est égal à un millième de litre, qui est l'unité de base de volume dans le système métrique. Il est couramment utilisé …"
+    },
+    {
+      "title": "Société M.L SERVICES (977474956) à AULNAY-SOUS-BOIS (93600).",
+      "url": "https://www.societe.com/societe/m-l-services-977474956.html",
+      "snippet": "Jul 10, 2023 · M.L SERVICES à AULNAY-SOUS-BOIS (93600). Chiffre d'affaires, bénéfice, statuts, extrait RNE, bilans, actionnaires …"
+    }
+  ]
+}

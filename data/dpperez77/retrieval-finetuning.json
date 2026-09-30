@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Dpperez77/retrieval-finetuning",
+  "slug": "dpperez77-retrieval-finetuning",
+  "author": "Dpperez77",
+  "url": "https://huggingface.co/Dpperez77/retrieval-finetuning",
+  "created_at": "2026-09-29T23:40:26.000Z",
+  "updated_at": "2026-09-29T23:40:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Finetuning Retrieval for Fin - /research",
+      "url": "https://fin.ai/research/finetuning-retrieval-for-fin/",
+      "snippet": "In this blog, we describe how we replaced a general-purpose retrieval model with the one fine-tuned on our high-quality customer support specific data, and the results of doing so. How does a retrieval model work? Fin&#x27;s retrieval system is powered entirely by semantic search 1."
+    },
+    {
+      "title": "REFINE on Scarce Data: Retrieval Enhancement through Fine-Tuning via ...",
+      "url": "https://arxiv.org/html/2410.12890v1",
+      "snippet": "Then, the model is fine-tuned on the target task to further enhance performance for that specific domain and task. However, this fine-tuning requires labeled data, preventing its use in many data-starved application domains."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "The Ultimate Guide to Fine-Tuning LLMs from Basics to Breakthroughs: An ...",
+      "url": "https://arxiv.org/html/2408.13296v1",
+      "snippet": "A structured seven-stage pipeline for LLM fine-tuning is introduced, covering the complete lifecycle from data preparation to model deployment. Key considerations include data collection strategies, handling of imbalanced datasets, model initialisation, and optimisation techniques, with a particular focus on hyperparameter tuning."
+    },
+    {
+      "title": "Fine-tuning | OpenAI Developers",
+      "url": "https://developers.openai.com/learn/fine-tuning",
+      "snippet": "Fine-tuning resources Cookbook to use model graders for reinforcement fine-tuning in expert tasks."
+    }
+  ]
+}

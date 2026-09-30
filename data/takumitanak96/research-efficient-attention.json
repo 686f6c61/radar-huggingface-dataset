@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Takumitanak96/research-efficient-attention",
+  "slug": "takumitanak96-research-efficient-attention",
+  "author": "Takumitanak96",
+  "url": "https://huggingface.co/Takumitanak96/research-efficient-attention",
+  "created_at": "2026-09-30T00:08:24.000Z",
+  "updated_at": "2026-09-30T00:08:29.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Joshuamsn/research-efficient-attention · Hugging Face",
+      "url": "https://huggingface.co/Joshuamsn/research-efficient-attention",
+      "snippet": "Notes on Efficient Attention Repository summary Reading notes and an experiment sketch for Efficient Attention. The repository emphasizes what still needs to be tested instead of manufacturing scores or release claims."
+    },
+    {
+      "title": "[2507.19595] Efficient Attention Mechanisms for Large Language Models ...",
+      "url": "https://arxiv.org/abs/2507.19595",
+      "snippet": "Transformer-based architectures have become the prevailing backbone of large language models. However, the quadratic time and memory complexity of self-attention remains a fundamental obstacle to efficient long-context modeling. To address this limitation, recent research has introduced two principal categories of efficient attention mechanisms. Linear attention methods achieve linear ..."
+    },
+    {
+      "title": "Efficient Attention Mechanisms for Large Language Models:",
+      "url": "https://arxiv.org/html/2507.19595v1",
+      "snippet": "Transformer-based architectures have become the prevailing backbone of large language models. However, the quadratic time and memory complexity of self-attention remains a fundamental obstacle to efficient long-context modeling. To address this limitation, recent research has introduced two principal categories of efficient attention mechanisms."
+    },
+    {
+      "title": "Efficient Attention Methods",
+      "url": "https://attention-survey.github.io/",
+      "snippet": "For each category, we also develop a unified analysis framework and offer perspectives on open challenges and promising directions for future research on efficient attention. To the best of our knowledge, this survey is the most comprehensive survey on efficient attention."
+    },
+    {
+      "title": "【Attention】Efficient Attention: Attention with Linear Complexities",
+      "url": "https://zhuanlan.zhihu.com/p/458859501",
+      "snippet": "大多数的注意力机制通过dot-product 来计算需要大量的内存和计算资源这限制了在高分辨率图像上的应用。 本文提出了一种与dot-product 注意等价的高效注意机制，但大大减少了内存和计算成本。以Non-local module 为…"
+    }
+  ]
+}

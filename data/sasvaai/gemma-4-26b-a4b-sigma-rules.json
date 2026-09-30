@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "SASVAAI/Gemma-4-26B-A4B-sigma-rules",
+  "slug": "sasvaai-gemma-4-26b-a4b-sigma-rules",
+  "author": "SASVAAI",
+  "url": "https://huggingface.co/SASVAAI/Gemma-4-26B-A4B-sigma-rules",
+  "created_at": "2026-09-29T19:03:26.000Z",
+  "updated_at": "2026-09-29T19:44:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "merged",
+    "lora",
+    "qlora",
+    "sft",
+    "trl",
+    "peft",
+    "text-generation",
+    "sigma",
+    "detection-engineering",
+    "siem",
+    "cybersecurity",
+    "yaml",
+    "vllm",
+    "conversational",
+    "en",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:merge:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805933872,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51792923934,
+  "storage_human": "51.8 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Detection requirement to Sigma rule (YAML)",
+      "dataset": "SigmaHQ sigma rules at b1512572, 375-rule held-out split (leakage-group disjoint from training)",
+      "metric": "ROUGE-L F-measure vs the reference rule (the search metric)",
+      "value": 0.592465
+    },
+    {
+      "task": "Detection requirement to Sigma rule (YAML)",
+      "dataset": "SigmaHQ sigma rules at b1512572, 375-rule held-out split (leakage-group disjoint from training)",
+      "metric": "BLEU vs the reference rule",
+      "value": 0.433607
+    },
+    {
+      "task": "Detection requirement to Sigma rule (YAML)",
+      "dataset": "SigmaHQ sigma rules at b1512572, 375-rule held-out split (leakage-group disjoint from training)",
+      "metric": "Exact match vs the reference rule",
+      "value": 0
+    },
+    {
+      "task": "Detection requirement to Sigma rule (YAML)",
+      "dataset": "SigmaHQ sigma rules at b1512572, 375-rule held-out split (leakage-group disjoint from training)",
+      "metric": "pySigma 1.5.1 parse rate (output is a valid Sigma rule)",
+      "value": 0.6933
+    },
+    {
+      "task": "Detection requirement to Sigma rule (YAML)",
+      "dataset": "SigmaHQ sigma rules at b1512572, 375-rule held-out split (leakage-group disjoint from training)",
+      "metric": "Splunk SPL compilation rate (pysigma-backend-splunk 2.1.0)",
+      "value": 0.6933
+    }
+  ],
+  "sources": []
+}

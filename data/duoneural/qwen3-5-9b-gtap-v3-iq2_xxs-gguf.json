@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "DuoNeural/Qwen3.5-9B-GTAP-v3-IQ2_XXS-GGUF",
+  "slug": "duoneural-qwen3-5-9b-gtap-v3-iq2_xxs-gguf",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/Qwen3.5-9B-GTAP-v3-IQ2_XXS-GGUF",
+  "created_at": "2026-09-29T18:45:57.000Z",
+  "updated_at": "2026-09-29T18:46:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantization",
+    "gtap",
+    "tap-dpq",
+    "statistical-mechanics",
+    "hybrid-architecture",
+    "linear-attention",
+    "ssm",
+    "qwen",
+    "duoneural",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 3687542880,
+  "storage_human": "3.7 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DuoNeural/Qwen3.5-9B-GTAP-v3-IQ2_M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/DuoNeural/Qwen3.5-9B-GTAP-v3-IQ2_M-GGUF",
+      "snippet": "Instructions to use DuoNeural/Qwen3.5-9B-GTAP-v3-IQ2_M-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use DuoNeural/Qwen3.5-9B-GTAP-v3-IQ2_M-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "DuoNeural/Qwen-3.5-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/DuoNeural/Qwen-3.5-9B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen Qwen3.5 9b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen-qwen3-5-9b.html",
+      "snippet": "Download Qwen Qwen3.5 9b GGUF model. 2.95 GB, 62,263 downloads, 94 likes."
+    },
+    {
+      "title": "Qwen3.5 9b The Defiant Fable Uncensored Heretic...",
+      "url": "https://local-ai-zone.github.io/models/qwen3-5-9b-the-defiant-fable-uncensored-heretic-neo-imatrix-max-mtp.html",
+      "snippet": "Download Qwen3.5 9b The Defiant Fable Uncensored Heretic Neo Imatrix Max Mtp GGUF model. 2.95 GB, 1,784,137 downloads, 865 likes."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    }
+  ]
+}

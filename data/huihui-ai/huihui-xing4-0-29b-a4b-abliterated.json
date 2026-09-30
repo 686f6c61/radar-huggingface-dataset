@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "huihui-ai/Huihui-Xing4.0-29B-A4B-abliterated",
+  "slug": "huihui-ai-huihui-xing4-0-29b-a4b-abliterated",
+  "author": "huihui-ai",
+  "url": "https://huggingface.co/huihui-ai/Huihui-Xing4.0-29B-A4B-abliterated",
+  "created_at": "2026-09-29T22:34:32.000Z",
+  "updated_at": "2026-09-29T22:42:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "text-generation",
+    "base_model:XingChen-AGI/Xing4.0-29B-A4B",
+    "base_model:finetune:XingChen-AGI/Xing4.0-29B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "XingChen-AGI/Xing4.0-29B-A4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - XingChen-AGI/Xing4.0-29B-A4B",
+      "url": "https://github.com/XingChen-AGI/Xing4.0-29B-A4B",
+      "snippet": "Xing4.0 is developed by China Telecom Artificial Intelligence Technology Co., Ltd. It is the latest generation of TeleChat, trained entirely on the Ascend NPU platform. Xing4.0-29B-A4B has 29B total parameters and only 4B activated per token. It natively supports a 256K context length, extensible to 512K. It is the first model of this scale trained entirely on the Ascend NPU platform with the ..."
+    },
+    {
+      "title": "huihui.ai on X: \"While conducting ablation tests on XingChen-AGI/Xing4 ...",
+      "url": "https://x.com/support_huihui/status/2104788934882648310",
+      "snippet": "New GGUF: huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF This is an uncensored version of zai-org/GLM-5.3-Flash created with abliteration. Note GGUFs come from unsloth/GLM-5.3-Flash-GGUF. Only layers 15 to 35 (0-based indexing) have been ablated, while the other layers remain Show more"
+    },
+    {
+      "title": "huihui-ai (huihui.ai) - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai",
+      "snippet": "AI & ML interests ... Recent Activity new activity about 16 hours ago ... liked a model 1 day ago ... updated a model 3 days ago"
+    },
+    {
+      "title": "Xing4.0 29b A4b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/xing4-0-29b-a4b.html",
+      "snippet": "Download Xing4.0 29b A4b GGUF model. 17.1 GB, 10,880 downloads."
+    },
+    {
+      "title": "China Telecom Releases Xing4.0, an Open 29B Coding Agent Built on ...",
+      "url": "https://alphasignal.ai/news/china-telecom-releases-xing4-0-an-open-29b-coding-agent-built-on-huawei-chips",
+      "snippet": "China Telecom&#x27;s AI unit has released Xing4.0-29B-A4B, an open-weight mixture-of-experts model aimed at coding agents, terminal work, and long-context tasks. The model contains 29 billion parameters, activates about 4 billion per token, supports a native 256K context window, and was trained end to end on Huawei Ascend NPUs."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mmastrac/GLM-5.3-Flash-NVFP4-FP8-sidecar",
+  "slug": "mmastrac-glm-5-3-flash-nvfp4-fp8-sidecar",
+  "author": "mmastrac",
+  "url": "https://huggingface.co/mmastrac/GLM-5.3-Flash-NVFP4-FP8-sidecar",
+  "created_at": "2026-09-29T20:01:36.000Z",
+  "updated_at": "2026-09-29T20:11:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "fp8",
+    "nvfp4",
+    "glm",
+    "sidecar",
+    "base_model:nvidia/GLM-5.3-Flash-NVFP4",
+    "base_model:finetune:nvidia/GLM-5.3-Flash-NVFP4",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2617935640,
+  "storage_human": "2.6 GB",
+  "base_model": "nvidia/GLM-5.3-Flash-NVFP4, zai-org/GLM-5.3-Flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prejemanje plače na račun Neobanke (Revolut, N26...)",
+      "url": "https://slo-tech.com/forum/t837783",
+      "snippet": "Jan 31, 2025 · Pozdravljeni, V podjetju, kjer delam sem zaprosil za prejemanje plače na račun Revolut banke, posredoval vse …Read more"
+    },
+    {
+      "title": "TradeRepublic @ Slo-Tech",
+      "url": "https://slo-tech.com/forum/t825085/p8408327",
+      "snippet": "Dec 13, 2024 · Tule pravijo, da se obresti na depozit z bank v EU (TR, N26) prijavlja na Doh-DHO, kjer je samo 1 tip. Na Doh-Obr se …Read more"
+    },
+    {
+      "title": "中国人如何购买Claude Code？ - 知乎",
+      "url": "https://www.zhihu.com/question/1998235141978486347",
+      "snippet": "我是这么开的 先淘宝或拼多多买一张 giffgaff 的手机卡，在线激活 然后下载 N26银行 的APP，在线开户，获得一张 德国万事达卡。 …Read more"
+    },
+    {
+      "title": "去德国留学办什么银行卡？ - 知乎",
+      "url": "https://www.zhihu.com/question/26476734/answers/updated",
+      "snippet": "最受留学欧洲中国学生欢迎银行卡之一的N26银行卡就属于此类别。 信用卡 Credit Card 德国一般传统银行的信用卡业务需要额外申 …Read more"
+    },
+    {
+      "title": "Banque N26 ARNAQUE ! - Banque - Banque en ligne - Forum Que …",
+      "url": "https://forum.quechoisir.org/n26-arnaque-t150061.html",
+      "snippet": "Apr 23, 2018 · Bonjour, Etant nouveau client de la néobanque N26 je me pose des questions. En effet je souhaiterai qu'un de leur …Read more"
+    }
+  ]
+}

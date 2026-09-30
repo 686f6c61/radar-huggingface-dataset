@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "anon767tom/smolaya-int8",
+  "slug": "anon767tom-smolaya-int8",
+  "author": "anon767tom",
+  "url": "https://huggingface.co/anon767tom/smolaya-int8",
+  "created_at": "2026-09-29T18:50:58.000Z",
+  "updated_at": "2026-09-29T19:21:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laya",
+    "feature-extraction",
+    "modernbert",
+    "int8",
+    "cpu",
+    "zero-shot-classification",
+    "custom_code",
+    "en",
+    "base_model:anon767tom/smolaya",
+    "base_model:quantized:anon767tom/smolaya",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 323422470,
+  "parameters_human": "323.4M",
+  "storage_bytes": 455876444,
+  "storage_human": "456 MB",
+  "base_model": "anon767tom/smolaya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anon767tom/smolaya · Hugging Face",
+      "url": "https://huggingface.co/anon767tom/smolaya",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "anon767tom/smolaya at main - Hugging Face",
+      "url": "https://huggingface.co/anon767tom/smolaya/tree/main",
+      "snippet": "multiple-choice zero-shot-classification cpu License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main smolaya 650 MB Ctrl+K Ctrl+K 1 contributor History:5 commits anon767tom Card wording: beats laya on 5 tasks 56e0430 verifiedabout 6 hours ago encoderlaya-v2-d20: 20-layer fine-tuned laya + int8 helperabout 6 ..."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Uncensored LLMs for Offensive Security Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    }
+  ]
+}

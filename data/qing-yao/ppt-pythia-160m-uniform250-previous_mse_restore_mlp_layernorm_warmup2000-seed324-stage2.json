@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "qing-yao/ppt-pythia-160m-uniform250-previous_mse_restore_mlp_layernorm_warmup2000-seed324-stage2",
+  "slug": "qing-yao-ppt-pythia-160m-uniform250-previous_mse_restore_mlp_layernorm_warmup2000-seed324-stage2",
+  "author": "qing-yao",
+  "url": "https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse_restore_mlp_layernorm_warmup2000-seed324-stage2",
+  "created_at": "2026-09-30T00:48:14.000Z",
+  "updated_at": "2026-09-30T02:28:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage1",
+    "base_model:finetune:qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage1",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 162322944,
+  "parameters_human": "162.3M",
+  "storage_bytes": 4870491798,
+  "storage_human": "4.9 GB",
+  "base_model": "qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qing-yao/ppt-pythia-160m-uniform250-reuse_previous_mse_warmup2...",
+      "url": "https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-reuse_previous_mse_warmup2000-seed324-stage2",
+      "snippet": "This model is a fine-tuned version of qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage1 on the None dataset."
+    },
+    {
+      "title": "qing-yao/ppt-pythia-160m-uniform250-previous_mse_delta_shuffle...",
+      "url": "https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse_delta_shuffle1_warmup2000-seed324-stage2",
+      "snippet": "This model is a fine-tuned version of qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage1 on the None dataset."
+    },
+    {
+      "title": "qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage2 ...",
+      "url": "https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage2",
+      "snippet": "This model is a fine-tuned version of EleutherAI/pythia-160m on the None dataset."
+    },
+    {
+      "title": "qing-yao/ppt-pythia-160m-uniform250-baseline_warmup2000-seed32...",
+      "url": "https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-baseline_warmup2000-seed324-stage2",
+      "snippet": "This model is a fine-tuned version of EleutherAI/pythia-160m on the None dataset."
+    },
+    {
+      "title": "qing-yao/ppt-pythia-160m-uniform250-current_mse-seed324-stage2 ...",
+      "url": "https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-current_mse-seed324-stage2",
+      "snippet": "This model is a fine-tuned version of EleutherAI/pythia-160m on the None dataset."
+    }
+  ]
+}

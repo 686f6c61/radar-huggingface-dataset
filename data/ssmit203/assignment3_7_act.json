@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ssmit203/assignment3_7_act",
+  "slug": "ssmit203-assignment3_7_act",
+  "author": "ssmit203",
+  "url": "https://huggingface.co/ssmit203/assignment3_7_act",
+  "created_at": "2026-09-29T18:43:47.000Z",
+  "updated_at": "2026-09-29T22:31:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:ssmit203/assignment3_7",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668656,
+  "parameters_human": "51.7M",
+  "storage_bytes": 2067007920,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ssmit203/assignment3 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ssmit203/assignment3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "GitHub - dansmyers/Example-AI-Assignment: Example AI-assisted writing ...",
+      "url": "https://github.com/dansmyers/Example-AI-Assignment",
+      "snippet": "This is a model assignment for a semester-long medium-length research article that integrates AI into every phase of the research and writing process. The overaching goal is for students to practice using AI tools in a reflective way, and move towards collaborating with AI instead of simply ..."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Action Model - Own the Future of AI",
+      "url": "https://actionmodel.com/",
+      "snippet": "The Action Model Ecosystem 1 billion jobs are expected to be impacted by AI. Through our three core products, Action Model empowers anyone to train, earn, and automate while helping build a people-owned AI, not one owned by a handful of billionaires. Find your place in community-owned AI."
+    }
+  ]
+}

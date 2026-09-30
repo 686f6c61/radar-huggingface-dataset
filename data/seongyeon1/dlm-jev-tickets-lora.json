@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "seongyeon1/dlm-jev-tickets-lora",
+  "slug": "seongyeon1-dlm-jev-tickets-lora",
+  "author": "seongyeon1",
+  "url": "https://huggingface.co/seongyeon1/dlm-jev-tickets-lora",
+  "created_at": "2026-09-30T01:46:17.000Z",
+  "updated_at": "2026-09-30T01:46:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "mlx",
+    "dlm",
+    "diffusion-language-model",
+    "jev",
+    "lora",
+    "typed-decisions",
+    "calibration",
+    "ko",
+    "base_model:mlx-community/diffusiongemma-26B-A4B-it-4bit",
+    "base_model:adapter:mlx-community/diffusiongemma-26B-A4B-it-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11194893,
+  "storage_human": "11 MB",
+  "base_model": "mlx-community/diffusiongemma-26B-A4B-it-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jev (AI model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
+      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco-based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2]"
+    },
+    {
+      "title": "GitHub - jev-ai/jev-ai: Jev AI · GitHub",
+      "url": "https://github.com/jev-ai/jev-ai",
+      "snippet": "A decision model for software systems Jev AI is an online decision model for software teams that need structured answers from real-world application state. It is designed for the small but important decisions that happen repeatedly inside a product: classify a request, route a ticket, score urgency, check whether an action is safe, or decide whether a person should review the result."
+    },
+    {
+      "title": "How to Use the Jev AI Model: A Step-by-Step Developer Guide",
+      "url": "https://huggingface.co/blog/sora-2/how-to-use-the-jev-ai-model-a-step-by-step-develop",
+      "snippet": "A Blog post by bna on Hugging Face"
+    },
+    {
+      "title": "Jev AI Model | Free Online Playground & Paid API",
+      "url": "https://jevaimodel.net/",
+      "snippet": "Try Jev AI Model online for free after sign in. Classify, score, and route text with structured results. Buy credits for API access."
+    },
+    {
+      "title": "Jev - 66k context | LLM Reference",
+      "url": "https://www.llmreference.com/model/jev",
+      "snippet": "Jev is worth evaluating for agents, classification, and json / tool use when its provider route and context window match the workload."
+    }
+  ]
+}

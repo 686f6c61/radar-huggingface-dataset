@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/whisper-id-large-v3-turbo-whisperkit-coreml-macos",
+  "slug": "aoiandroid-whisper-id-large-v3-turbo-whisperkit-coreml-macos",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/whisper-id-large-v3-turbo-whisperkit-coreml-macos",
+  "created_at": "2026-09-29T23:48:37.000Z",
+  "updated_at": "2026-09-29T23:48:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisperkit",
+  "languages": [
+    "id",
+    "en"
+  ],
+  "tags": [
+    "whisperkit",
+    "whisper",
+    "coreml",
+    "automatic-speech-recognition",
+    "id",
+    "en",
+    "base_model:Willy030125/whisper_large_v3_turbo_finetuned_en_id_v1",
+    "base_model:finetune:Willy030125/whisper_large_v3_turbo_finetuned_en_id_v1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 607964450,
+  "storage_human": "608 MB",
+  "base_model": "Willy030125/whisper_large_v3_turbo_finetuned_en_id_v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-large-v3 · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "whisper - a aoiandroid Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/aoiandroid/whisper",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    },
+    {
+      "title": "GitHub - vilassn/whisper_android: Offline Speech Recognition with ...",
+      "url": "https://github.com/vilassn/whisper_android",
+      "snippet": "This repository offers two Android apps leveraging the OpenAI Whisper speech-to-text model. One app uses the TensorFlow Lite Java API for easy Java integration, while the other employs the TensorFlow Lite Native API for enhanced performance. It also includes a Python script for model generation and pre-built APKs for straightforward deployment."
+    },
+    {
+      "title": "Whisper Large v3 API: Pricing, Benchmarks & Docs | Together AI",
+      "url": "https://www.together.ai/models/openai-whisper-large-v3",
+      "snippet": "Whisper Large v3 is a state-of-the-art automatic speech recognition model trained on over 5 million hours of labeled data. It demonstrates strong generalization to various datasets and domains in a zero-shot setting, with improved performance across multiple languages. Suitable for applications requiring accurate speech recognition and translation."
+    }
+  ]
+}

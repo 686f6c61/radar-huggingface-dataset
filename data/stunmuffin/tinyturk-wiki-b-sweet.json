@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "stunmuffin/TinyTurk-Wiki-B-Sweet",
+  "slug": "stunmuffin-tinyturk-wiki-b-sweet",
+  "author": "stunmuffin",
+  "url": "https://huggingface.co/stunmuffin/TinyTurk-Wiki-B-Sweet",
+  "created_at": "2026-09-29T21:05:49.000Z",
+  "updated_at": "2026-09-29T21:21:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "pytorch",
+    "tinyturk",
+    "turkish",
+    "tiny-language-model",
+    "gpt",
+    "rope",
+    "rmsnorm",
+    "causal-lm",
+    "wikipedia",
+    "from-scratch",
+    "text-generation",
+    "tr",
+    "dataset:barandinho/wikipedia_tr",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11323189,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stunmuffin/TinyTurk-v2.7d-bigstories · Hugging Face",
+      "url": "https://huggingface.co/stunmuffin/TinyTurk-v2.7d-bigstories",
+      "snippet": "TinyTurk v2.7d BigStories is a 1.12M-parameter Turkish causal language model, trained from scratch on a 49,000-story subset of the Turkish TinyStories dataset. It produces fluent, grammatically correct Turkish sentences but does not maintain long-range narrative coherence due to the 128-token context window."
+    },
+    {
+      "title": "Tiny Turk AI Whisperer - a Hugging Face Space by strange1122",
+      "url": "https://huggingface.co/spaces/strange1122/tiny-turk-ai-whisperer",
+      "snippet": "Tiny Turk - Your Pocket-Sized Turkish AI A lightweight Turkish language model optimized for edge devices, delivering powerful NLP capabilities right in your pocket."
+    },
+    {
+      "title": "Your AI Art Playground - Luna Models",
+      "url": "https://www.lunamodels.art/",
+      "snippet": "Welcome to Luna Models Your creative playground for adorable AI art. Generate stunning images, discover inspiration, and find unique assets to bring your imagination to life!"
+    },
+    {
+      "title": "Create Your AI Girlfriend | Custom Appearance & Personality",
+      "url": "https://sweetbun.ai/en/create",
+      "snippet": "Design your perfect AI girlfriend from scratch. Customize her appearance, personality, voice & interests. Create a truly personalized virtual character."
+    },
+    {
+      "title": "Hugging Bay | Find and Download AI Models",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "Hugging Bay is the open-model catalog for public open LLMs, models, datasets, apps, evals, and hosted files."
+    }
+  ]
+}

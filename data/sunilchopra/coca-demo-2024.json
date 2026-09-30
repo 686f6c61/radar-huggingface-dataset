@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sunilchopra/coca-demo-2024",
+  "slug": "sunilchopra-coca-demo-2024",
+  "author": "sunilchopra",
+  "url": "https://huggingface.co/sunilchopra/coca-demo-2024",
+  "created_at": "2026-09-29T23:31:51.000Z",
+  "updated_at": "2026-09-29T23:31:56.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sunilchopra (L. Öström) - Hugging Face",
+      "url": "https://huggingface.co/sunilchopra",
+      "snippet": "Curious about AI, learning every day."
+    },
+    {
+      "title": "GitHub - GoogleCloudPlatform/chocolate-ai",
+      "url": "https://github.com/GoogleCloudPlatform/chocolate-ai",
+      "snippet": "Welcome to Chocolate AI, a cutting-edge demonstration of how Generative AI can revolutionize marketing on Google Cloud. This project showcases the power of BigQuery, Gemini, Spanner and Vertex AI, transforming data analytics into a creative powerhouse. Explore our interactive web frontend demo (contact your account team or customer engineer for access) and dive into the backend code provided ..."
+    },
+    {
+      "title": "Co-creator behind divisive Coca-Cola ad doubles down: &#x27;I&#x27;m super proud ...",
+      "url": "https://www.thecooldown.com/green-business/coca-cola-ai-commercials-backlash-2025/",
+      "snippet": "Business Co-creator behind divisive Coca-Cola ad doubles down: &#x27;I&#x27;m super proud of that ad&#x27; When Coke&#x27;s AI-generated Christmas ad flopped in 2024, public sentiment was nowhere near as negative as it would soon become."
+    },
+    {
+      "title": "The Biggest Barrier to AI Is Not Technology, It is Yesterday&#x27;s ...",
+      "url": "https://www.linkedin.com/pulse/biggest-barrier-ai-technology-yesterdays-operating-model-sunil-chopra-n9ruc",
+      "snippet": "The Biggest Barrier to AI Isn&#x27;t Technology. It&#x27;s Yesterday&#x27;s Operating Model. Every week, I meet leaders who are excited about AI."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

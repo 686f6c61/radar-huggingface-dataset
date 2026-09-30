@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3-4b-feather30-mt-commit-cannot",
+  "slug": "joshycodes-qwen3-4b-feather30-mt-commit-cannot",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3-4b-feather30-mt-commit-cannot",
+  "created_at": "2026-09-29T18:55:09.000Z",
+  "updated_at": "2026-09-29T18:56:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "base_model:joshycodes/qwen3-4b-feather30-mt",
+    "base_model:finetune:joshycodes/qwen3-4b-feather30-mt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317170,
+  "storage_human": "8.8 GB",
+  "base_model": "joshycodes/qwen3-4b-feather30-mt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-30T03:47:51.136Z",
+  "benchmarks": [],
+  "sources": []
+}

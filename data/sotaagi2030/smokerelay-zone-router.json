@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/SmokeRelay-Zone-Router",
+  "slug": "sotaagi2030-smokerelay-zone-router",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/SmokeRelay-Zone-Router",
+  "created_at": "2026-09-29T18:40:15.000Z",
+  "updated_at": "2026-09-29T18:42:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104,
+  "storage_human": "104 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 5 minutes ago ... updated a dataset 5 minutes ago"
+    },
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/datasets",
+      "snippet": "AI & ML interests ... Recent Activity a model about 1 hour ago ... a model about 1 hour ago ... activity about 5 hours ago"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI API Model Tester — Check Which Model Your API Actually Runs ...",
+      "url": "https://apimaster.ai/ai-api-model-tester",
+      "snippet": "Free AI API model tester. Paste any OpenAI, Claude or Gemini endpoint and see which model it really runs — fingerprint detection exposes substituted or fake models in seconds. No key stored."
+    },
+    {
+      "title": "AI API Gateway, Model Router & Marketplace | SubRouter",
+      "url": "https://subrouter.ai/",
+      "snippet": "Access GPT, Claude, Gemini, DeepSeek and more through one OpenAI-compatible AI API gateway. Compare pricing, route by availability, and track usage."
+    }
+  ]
+}

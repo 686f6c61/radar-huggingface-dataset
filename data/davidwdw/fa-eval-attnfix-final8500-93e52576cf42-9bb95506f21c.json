@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-eval-attnfix-final8500-93e52576cf42-9bb95506f21c",
+  "slug": "davidwdw-fa-eval-attnfix-final8500-93e52576cf42-9bb95506f21c",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-eval-attnfix-final8500-93e52576cf42-9bb95506f21c",
+  "created_at": "2026-09-29T18:29:48.000Z",
+  "updated_at": "2026-09-29T18:29:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 178757315,
+  "storage_human": "179 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "davidwdw/fa-pi05-attnfix-eval4000-32fa121b10ab-9ff8e74258a5 · Hugging Face",
+      "url": "https://huggingface.co/davidwdw/fa-pi05-attnfix-eval4000-32fa121b10ab-9ff8e74258a5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Federal Aviation Administration",
+      "url": "https://www.faa.gov/",
+      "snippet": "The Federal Aviation Administration is an operating mode of the U.S. Department of Transportation."
+    },
+    {
+      "title": "NVD - Search",
+      "url": "https://nvd.nist.gov/search",
+      "snippet": "Search Please make use of the interactive search interfaces to find information in the database!"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

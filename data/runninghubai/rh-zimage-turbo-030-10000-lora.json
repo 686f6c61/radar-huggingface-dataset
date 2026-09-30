@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-zimage-turbo-030-10000-lora",
+  "slug": "runninghubai-rh-zimage-turbo-030-10000-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-zimage-turbo-030-10000-lora",
+  "created_at": "2026-09-30T01:32:00.000Z",
+  "updated_at": "2026-09-30T01:33:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 82336196,
+  "storage_human": "82 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHub ｜ AI Agent-Powered Content Creation Platform with ComfyUI ...",
+      "url": "https://www.runninghub.ai/",
+      "snippet": "RunningHub is an all-in-one content creation platform powered by native AI agents. Build end-to-end creative workflows with ComfyUI workflows, infinite canvas, AI apps, image & video generation, and model API access."
+    },
+    {
+      "title": "RunningHubAI/rh-cyberrealistic-z-image-turbo-unet · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-cyberrealistic-z-image-turbo-unet",
+      "snippet": "RunningHubAI / rh-cyberrealistic-z-image-turbo-unet Like 0 Text-to-Image comfyui unet Model card FilesFiles and versions xet Community Copy to bucket new rh-cyberrealistic-z-image-turbo-unet Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "Tongyi-MAI/Z-Image-Turbo · Hugging Face",
+      "url": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
+      "snippet": "🖼️ Showcase 📸 Photorealistic Quality: Z-Image-Turbo delivers strong photorealistic image generation while maintaining excellent aesthetic quality. 📖 Accurate Bilingual Text Rendering: Z-Image-Turbo excels at accurately rendering complex Chinese and English text. 💡 Prompt Enhancing & Reasoning: Prompt Enhancer empowers the model with reasoning capabilities, enabling it to ..."
+    },
+    {
+      "title": "Zimage Turbo_无滤真实_V2 - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/model/public/2027184765341798401",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "GitHub - Tongyi-MAI/Z-Image",
+      "url": "https://github.com/Tongyi-MAI/Z-Image",
+      "snippet": "Z-Image is a powerful and highly efficient image generation model family with 6B parameters. Currently there are four variants: 🚀 Z-Image-Turbo - A distilled version of Z-Image that matches or exceeds leading competitors with only 8 NFEs (Number of Function Evaluations). It offers ⚡️sub-second inference latency⚡️ on enterprise-grade H800 GPUs and fits comfortably within 16G VRAM ..."
+    }
+  ]
+}

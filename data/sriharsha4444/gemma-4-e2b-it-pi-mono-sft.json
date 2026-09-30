@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "sriharsha4444/gemma-4-E2B-it-pi-mono-sft",
+  "slug": "sriharsha4444-gemma-4-e2b-it-pi-mono-sft",
+  "author": "sriharsha4444",
+  "url": "https://huggingface.co/sriharsha4444/gemma-4-E2B-it-pi-mono-sft",
+  "created_at": "2026-09-29T18:44:43.000Z",
+  "updated_at": "2026-09-29T20:41:06.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "sft",
+    "lora",
+    "trl",
+    "coding-agent",
+    "tool-calling",
+    "trackio",
+    "text-generation",
+    "conversational",
+    "dataset:badlogicgames/pi-mono",
+    "dataset:sriharsha4444/pi-mono-gemma4-sft",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:adapter:google/gemma-4-E2B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5104297539,
+  "parameters_human": "5.10B",
+  "storage_bytes": 10241022536,
+  "storage_human": "10.2 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sriharsha4444/gemma-4-E2B-it-pi-mono-smoke · Hugging Face",
+      "url": "https://huggingface.co/sriharsha4444/gemma-4-E2B-it-pi-mono-smoke",
+      "snippet": "Model Card for gemma-4-E2B-it-pi-mono-smoke This model is a fine-tuned version of google/gemma-4-E2B-it. It has been trained using TRL."
+    },
+    {
+      "title": "google/gemma-4-E2B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E2B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 Runs on a Raspberry Pi. I Tested It. - DEV Community",
+      "url": "https://dev.to/alanwest/gemma-4-runs-on-a-raspberry-pi-i-tested-it-56c5",
+      "snippet": "The model download is approximately 1.5GB for the quantized E2B variant. First token appears in about 3-4 seconds on the Pi 5. After that, generation runs at roughly 8-12 tokens per second. Twelve tokens per second on a $80 single-board computer. That&#x27;s not fast enough for real-time autocomplete, but it&#x27;s absolutely fast enough for batch processing, local document analysis, and offline AI ..."
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    }
+  ]
+}

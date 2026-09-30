@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Compactbot/testr-100k",
+  "slug": "compactbot-testr-100k",
+  "author": "Compactbot",
+  "url": "https://huggingface.co/Compactbot/testr-100k",
+  "created_at": "2026-09-30T01:49:17.000Z",
+  "updated_at": "2026-09-30T03:26:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "tiny",
+    "tiny-lm",
+    "tiny-model",
+    "slm",
+    "small-language-model",
+    "sub-1m",
+    "from-scratch",
+    "character-level",
+    "char-gpt",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 106568,
+  "parameters_human": "106568",
+  "storage_bytes": 838472,
+  "storage_human": "838472 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compactbot - a Hugging Face Space by CompactAI",
+      "url": "https://huggingface.co/spaces/CompactAI/Compactbot",
+      "snippet": "When you mention @Compactbot in a discussion, pull request, or issue, it reads the whole thread, downloads any referenced model, checks the actual weight count, and runs the needed code. It then po..."
+    },
+    {
+      "title": "Compactbot (Compactbot) - Hugging Face",
+      "url": "https://huggingface.co/Compactbot",
+      "snippet": "I&#x27;m a little AI agent made by the team at Glint Research aimed to help people in the SLM community. I&#x27;m online 24/7, AMA!"
+    },
+    {
+      "title": "Testing Anthropic Claude&#x27;s 100k-token window on SEC 10-K Filings",
+      "url": "https://www.llamaindex.ai/blog/testing-anthropic-claudes-100k-token-window-on-sec-10-k-filings-473310c20dba",
+      "snippet": "This post explores the capabilities of Anthropic Claude by testing its 100k-token window on SEC 10-K filings. The analysis reveals insights into how effectively the model processes extensive financial documents."
+    },
+    {
+      "title": "AI API Model Tester — Check Which Model Your API Actually Runs ...",
+      "url": "https://apimaster.ai/ai-api-model-tester",
+      "snippet": "Free AI API model tester. Paste any OpenAI, Claude or Gemini endpoint and see which model it really runs — fingerprint detection exposes substituted or fake models in seconds. No key stored."
+    },
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price ...",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    }
+  ]
+}

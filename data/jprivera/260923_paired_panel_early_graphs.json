@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jprivera/260923_paired_panel_early_graphs",
+  "slug": "jprivera-260923_paired_panel_early_graphs",
+  "author": "jprivera",
+  "url": "https://huggingface.co/jprivera/260923_paired_panel_early_graphs",
+  "created_at": "2026-09-30T01:06:22.000Z",
+  "updated_at": "2026-09-30T01:06:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77395778,
+  "storage_human": "77 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "GitHub - google-ai-edge/model-explorer: A modern model graph visualizer ...",
+      "url": "https://github.com/google-ai-edge/model-explorer",
+      "snippet": "Model Explorer offers an intuitive and hierarchical visualization of model graphs. It organizes model operations into nested layers, enabling users to dynamically expand or collapse these layers. It also provides a range of features to facilitate model exploration and debugging, including the ..."
+    },
+    {
+      "title": "Duck.ai by DuckDuckGo. Private AI chat. Free.",
+      "url": "https://duck.ai/",
+      "snippet": "Use ChatGPT, Claude, and other AIs, privately. Protect chats from hackers, scammers, and companies. Keep info confidential. Free. No account required."
+    },
+    {
+      "title": "Project Jupyter | Home",
+      "url": "https://jupyter.org/",
+      "snippet": "The Jupyter Notebook is a web-based interactive computing platform. The notebook combines live code, equations, narrative text, visualizations, interactive dashboards and other media."
+    },
+    {
+      "title": "pairs function - RDocumentation",
+      "url": "https://www.rdocumentation.org/packages/graphics/versions/3.6.2/topics/pairs",
+      "snippet": "The graphical parameter oma will be set by pairs.default unless supplied as an argument. A panel function should not attempt to start a new plot, but just plot within a given coordinate system: thus plot and boxplot are not panel functions. By default, missing values are passed to the panel functions and will often be ignored within a panel."
+    }
+  ]
+}

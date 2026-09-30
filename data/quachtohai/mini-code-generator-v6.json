@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "quachtohai/mini-code-generator-v6",
+  "slug": "quachtohai-mini-code-generator-v6",
+  "author": "quachtohai",
+  "url": "https://huggingface.co/quachtohai/mini-code-generator-v6",
+  "created_at": "2026-09-30T01:05:10.000Z",
+  "updated_at": "2026-09-30T01:05:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 260476348,
+  "storage_human": "260 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "quachtohai (quachttohai) - Hugging Face",
+      "url": "https://huggingface.co/quachtohai",
+      "snippet": "Sort: Recently updated. quachtohai/web-llm-v1.8. Updated 1 day ago. quachtohai/olmo-mini. Updated 5 days ago. quachtohai/web-coding-42m"
+    },
+    {
+      "title": "quachtohai (quachttohai) - Hugging Face",
+      "url": "https://huggingface.co/quachtohai/models",
+      "snippet": "quachtohai/pure-python-scratch-34m Text Generation • 34.1M•Updated 25 days ago• 480"
+    },
+    {
+      "title": "Free AI Code Generator | Free.ai",
+      "url": "https://free.ai/code/",
+      "snippet": "A lot. Beyond AI Code Generator, Free.ai bundles generation, debugging, and other programming help alongside hundreds of other free AI tools - chat, images, audio, video, code, and more - all sharing the same daily token pool. Browse the categories to find your next one."
+    },
+    {
+      "title": "mini_code_agent/README.md at main - GitHub",
+      "url": "https://github.com/rohit33434/mini_code_agent/blob/main/README.md",
+      "snippet": "Mini Code Agent is an autonomous AI agent that takes your project idea as input and generates complete code files automatically. It uses a multi-agent system with three specialized agents: Planner - Creates a comprehensive project plan Architect - Breaks down the plan into specific tasks Coder - Generates code files for each task All generated files are saved in an output12/ folder for easy ..."
+    },
+    {
+      "title": "Free AI Code Generator | AI For Coding - cloudairy.com",
+      "url": "https://cloudairy.com/ai/ai-code-generator",
+      "snippet": "Boost development speed with our free AI code generator. Use AI for coding to turn ideas into ready-to-use code in seconds for web, app, and backend projects."
+    }
+  ]
+}

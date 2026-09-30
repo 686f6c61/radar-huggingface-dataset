@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "imacdonald/mobilenet_v2_1.0_224-tflite",
+  "slug": "imacdonald-mobilenet_v2_1-0_224-tflite",
+  "author": "imacdonald",
+  "url": "https://huggingface.co/imacdonald/mobilenet_v2_1.0_224-tflite",
+  "created_at": "2026-09-29T20:22:08.000Z",
+  "updated_at": "2026-09-29T21:37:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "mobilenet_v2",
+    "lemonade",
+    "tflite-server",
+    "image-classification",
+    "dataset:ILSVRC/imagenet-1k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13978596,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "open_model_zoo/models/public/mobilenet-v2-1.0-224/README.md at ... - GitHub",
+      "url": "https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/public/mobilenet-v2-1.0-224/README.md",
+      "snippet": "mobilenet-v2-1.-224 is one of MobileNet models, which are small, low-latency, low-power, and parameterized to meet the resource constraints of a variety of use cases. They can be used for classification, detection, embeddings, and segmentation like other popular large-scale models. For details, see the paper."
+    },
+    {
+      "title": "google/mobilenet_v2_1.0_224 · Hugging Face",
+      "url": "https://huggingface.co/google/mobilenet_v2_1.0_224",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mobilenet_v2_1.0_224_INT8.tflite - GitHub",
+      "url": "https://github.com/Arm-Examples/ML-zoo/blob/master/models/image_classification/mobilenet_v2_1.0_224/tflite_int8/mobilenet_v2_1.0_224_INT8.tflite",
+      "snippet": "This repository was archived by the owner on Jul 18, 2025. It is now read-only."
+    },
+    {
+      "title": "qualcomm/MobileNet-v2 · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/MobileNet-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tf.keras.applications.MobileNetV2 | TensorFlow v2.16.1",
+      "url": "https://www.tensorflow.org/api_docs/python/tf/keras/applications/MobileNetV2",
+      "snippet": "For MobileNetV2, call keras.applications.mobilenet_v2.preprocess_input on your inputs before passing them to the model. mobilenet_v2.preprocess_input will scale input pixels between -1 and 1."
+    }
+  ]
+}

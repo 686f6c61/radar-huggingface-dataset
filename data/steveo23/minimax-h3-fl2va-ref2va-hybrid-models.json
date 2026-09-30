@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "steveo23/Minimax-H3-fl2va-ref2va-hybrid-models",
+  "slug": "steveo23-minimax-h3-fl2va-ref2va-hybrid-models",
+  "author": "steveo23",
+  "url": "https://huggingface.co/steveo23/Minimax-H3-fl2va-ref2va-hybrid-models",
+  "created_at": "2026-09-29T21:44:30.000Z",
+  "updated_at": "2026-09-29T21:44:30.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video-generation",
+    "text-to-video",
+    "image-to-video",
+    "audio-video-generation",
+    "diffusion-transformer",
+    "merge",
+    "hybrid",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83881518528,
+  "storage_human": "83.9 GB",
+  "base_model": "MiniMax-H3-fl2va, MiniMax-H3-ref2va",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models · Hugging Face",
+      "url": "https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "xtanqn/Minimax-H3-fl2va-ref2va-hybrid-models · Hugging Face",
+      "url": "https://huggingface.co/xtanqn/Minimax-H3-fl2va-ref2va-hybrid-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 Model Card - Architecture, FL2VA, Ref2VA & 2K Pipeline",
+      "url": "https://minimax3.org/minimax-h3-video-model",
+      "snippet": "Explore MiniMax H3 architecture, H3-Context-IR, H3-Base, FL2VA, Ref2VA, native audio-video generation and the 2K regeneration pipeline."
+    },
+    {
+      "title": "Minimax-H3-fl2va-ref2va-hybrid-models: Text-to-Video model — overview ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/minimax-h3-fl2va-ref2va-hybrid-models-smhfacct",
+      "snippet": "Overview Minimax-H3-fl2va-ref2va-hybrid-models is a merged variant of MiniMax H3, a joint audio+video diffusion transformer that combines two officially released checkpoints— fl2va and ref2va —into a single model. Created by smhfacct, this model solves a fundamental tradeoff in the original H3 checkpoints: fl2va produces higher visual and audio quality but lacks reference conditioning ..."
+    },
+    {
+      "title": "MiniMax H3 Hugging Face: Official Repo, FL2VA & Ref2VA",
+      "url": "https://minimax3.org/minimax-h3-huggingface",
+      "snippet": "Find the official MiniMax H3 Hugging Face repository, verify MiniMaxAI/MiniMax-H3, compare FL2VA vs Ref2VA, and identify official vs community H3 models."
+    }
+  ]
+}

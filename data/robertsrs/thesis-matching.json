@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "robertsrs/thesis-matching",
+  "slug": "robertsrs-thesis-matching",
+  "author": "robertsrs",
+  "url": "https://huggingface.co/robertsrs/thesis-matching",
+  "created_at": "2026-09-29T23:24:30.000Z",
+  "updated_at": "2026-09-29T23:24:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thesis-matching - AI Agent skill",
+      "url": "https://eliteai.tools/agent-skills/thesis-matching",
+      "snippet": "The Thesis Matching skill provides systematic matching of inbound investment opportunities against the fund&#x27;s investment thesis, strategic priorities, and portfolio construction criteria."
+    },
+    {
+      "title": "PDF The Roberts Framework for Artificial Intelligence: A 12-Dimensional ...",
+      "url": "https://www.scirp.org/pdf/ojapps_2313433.pdf",
+      "snippet": "This paper introduces the Roberts Framework, a comprehensive 12-dimensional theoretical model that categorizes AI cognitive processing based on qualitative differences in thinking types rather than quantitative measures of performance."
+    },
+    {
+      "title": "The Roberts Framework for Artificial Intelligence A 12-Dimensional ...",
+      "url": "https://www.scirp.net/journal/paperinformation?paperid=146858",
+      "snippet": "This paper introduces the Roberts Framework, a 12-dimensional theoretical model for understanding and categorizing cognitive processing complexity in artificial intelligence systems. Through systematic observation of AI performance patterns across increasingly complex cognitive tasks, this framework identifies distinct cognitive dimensions that represent qualitatively different types of ..."
+    },
+    {
+      "title": "ThesisAI | Cited Academic Drafts From Your Own Sources",
+      "url": "https://www.thesisai.io/",
+      "snippet": "This thesis explores the rise of collaborative consumption, examining its economic, social, and environmental impact while weighing the trade-offs… Introduction Driven by digital platforms such as Airbnb, Uber, and BlaBlaCar, the sharing economy has emerged as a defining model of modern consumption."
+    },
+    {
+      "title": "Harvard University Theses, Dissertations, and Prize Papers",
+      "url": "https://library.harvard.edu/collections/harvard-university-theses-dissertations-and-prize-papers",
+      "snippet": "The Harvard University Archives &#x27; collection of theses, dissertations, and prize papers documents the wide range of academic research undertaken by Harvard students over the course of the University&#x27;s history. Beyond their value as pieces of original research, these collections document the history of American higher education, chronicling both the growth of Harvard as a major research ..."
+    }
+  ]
+}

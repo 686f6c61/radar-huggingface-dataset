@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshuabrow99/self-supervised-analysis",
+  "slug": "joshuabrow99-self-supervised-analysis",
+  "author": "joshuabrow99",
+  "url": "https://huggingface.co/joshuabrow99/self-supervised-analysis",
+  "created_at": "2026-09-29T23:56:35.000Z",
+  "updated_at": "2026-09-29T23:56:40.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "self-supervised",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joshuabrow99 (V. Dang) - Hugging Face",
+      "url": "https://huggingface.co/joshuabrow99",
+      "snippet": "User profile of V. Dang on Hugging Face"
+    },
+    {
+      "title": "joshi1854/self-supervised-analysis · Hugging Face",
+      "url": "https://huggingface.co/joshi1854/self-supervised-analysis",
+      "snippet": "Repository summary This is an exploratory note for Self Supervised. It records the intended comparison, likely confounders, and reproducibility requirements before any benchmark result is reported."
+    },
+    {
+      "title": "Self-Supervised Learning (SSL) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/self-supervised-learning-ssl/",
+      "snippet": "Self-Supervised Learning (SSL) is a type of machine learning where a model is trained using data that does not have any labels or answers provided. Instead of needing people to label the data, the model finds patterns and creates its own labels from the data automatically."
+    },
+    {
+      "title": "Self-supervised learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Self-supervised_learning",
+      "snippet": "Self-supervised learning (SSL) is a paradigm in machine learning where a model is trained on a task using the data itself to generate supervisory signals, rather than relying on externally-provided labels."
+    },
+    {
+      "title": "What Is Self-Supervised Learning? Examples & Applications",
+      "url": "https://www.snowflake.com/en/fundamentals/self-supervised-learning/",
+      "snippet": "Learn what self-supervised learning is and how it works. Explore self-learning AI, key models, and comparisons with supervised and unsupervised learning."
+    }
+  ]
+}

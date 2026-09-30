@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-historical-5080-embodiedclaw-v2-run-e5af66e6d3fc",
+  "slug": "davidwdw-fa-historical-5080-embodiedclaw-v2-run-e5af66e6d3fc",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-historical-5080-embodiedclaw-v2-run-e5af66e6d3fc",
+  "created_at": "2026-09-29T20:08:59.000Z",
+  "updated_at": "2026-09-29T20:11:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 533628743,
+  "storage_human": "534 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PewDiePie - YouTube",
+      "url": "https://www.youtube.com/@pewdiepie",
+      "snippet": "Welcome to PewDiePie&#x27;s YouTube channel, where he creates entertaining and engaging videos."
+    },
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "[2604.13800] EmbodiedClaw: Conversational Workflow Execution for ...",
+      "url": "https://arxiv.org/abs/2604.13800",
+      "snippet": "Embodied AI research is increasingly moving beyond single-task, single-environment policy learning toward multi-task, multi-scene, and multi-model settings. This shift substantially increases the engineering overhead and development time required for stages such as evaluation environment construction, trajectory collection, model training, and evaluation. To address this challenge, we propose ..."
+    },
+    {
+      "title": "Fold3 - Historical military records - Fold3",
+      "url": "https://www.fold3.com/",
+      "snippet": "Discover original military records including personal documents, photos, and stories from brave men and women who served. Access sources from the US and UK national archives today."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/shorts/fhrk4yR-fRw",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    }
+  ]
+}

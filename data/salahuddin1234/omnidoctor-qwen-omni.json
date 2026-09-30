@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Salahuddin1234/omnidoctor-qwen-omni",
+  "slug": "salahuddin1234-omnidoctor-qwen-omni",
+  "author": "Salahuddin1234",
+  "url": "https://huggingface.co/Salahuddin1234/omnidoctor-qwen-omni",
+  "created_at": "2026-09-30T01:08:17.000Z",
+  "updated_at": "2026-09-30T01:08:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_omni_moe",
+    "text-to-audio",
+    "multimodal",
+    "any-to-any",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35259818545,
+  "parameters_human": "35.26B",
+  "storage_bytes": 70523299202,
+  "storage_human": "70.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-Omni: Qwen3-omni is a natively end-to-end, omni ...",
+      "url": "https://github.com/QwenLM/Qwen3-Omni",
+      "snippet": "Qwen3-omni is a natively end-to-end, omni-modal LLM developed by the Qwen team at Alibaba Cloud, capable of understanding text, audio, images, and video, as well as generating speech in real time."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Qwen-Omni-Alibaba Cloud Model Studio (Model Studio)-阿里云帮助中心",
+      "url": "https://help.aliyun.com/en/model-studio/qwen-omni",
+      "snippet": "The Qwen-Omni model accepts multimodal input and generates text or speech responses. It produces human-like voices and supports speech output in multiple languages and dialects. Use cases include content moderation, text creation, visual recognition, and audio-video interaction."
+    },
+    {
+      "title": "Qwen3.5-Omni Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2604.15804",
+      "snippet": "In this report, we present Qwen3.5-Omni, Qwen&#x27;s latest generation of fully omnimodal LLM, supporting the understanding of text, images, audio, and audio-visual content. Natively pretrained in an omnimodal manner on massive amounts of text, visual data, and more than 100 million hours of audio-visual data. Qwen3.5-Omni is designed as a native omni agent model: it not only perceives and reasons ..."
+    },
+    {
+      "title": "Qwen Omni — All-in-One AI: Text, Image, Audio & Video",
+      "url": "https://qwen-ai.com/qwen-omni/",
+      "snippet": "Qwen Omni Alibaba&#x27;s Qwen Omni family handles what most models can&#x27;t: text, images, audio, and video as input — with real-time text and speech as output. One model, one inference pass, no stitching together separate ASR, LLM, and TTS pipelines."
+    }
+  ]
+}

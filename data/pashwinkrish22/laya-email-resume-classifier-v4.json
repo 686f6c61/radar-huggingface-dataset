@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "pashwinkrish22/laya-email-resume-classifier-v4",
+  "slug": "pashwinkrish22-laya-email-resume-classifier-v4",
+  "author": "pashwinkrish22",
+  "url": "https://huggingface.co/pashwinkrish22/laya-email-resume-classifier-v4",
+  "created_at": "2026-09-30T01:35:30.000Z",
+  "updated_at": "2026-09-30T01:35:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laya",
+    "email-classification",
+    "resume-classification",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609220,
+  "storage_human": "843 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pashwinkrish22/laya-email-resume-classifier · Hugging Face",
+      "url": "https://huggingface.co/pashwinkrish22/laya-email-resume-classifier",
+      "snippet": "This is Laya (convaiinnovations/laya) fine-tuned on a private dataset of job-application emails, to classify each email into one of four categories: freshers, experienced, referrals, others. This model was trained on a private, anonymised dataset and is not evaluated against the public LocalLLaMA/typed-decisions benchmark."
+    },
+    {
+      "title": "convaiinnovations/laya · Hugging Face",
+      "url": "https://huggingface.co/convaiinnovations/laya",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Laya - Models",
+      "url": "https://www.modelscope.cn/models/convaiinnovations/laya",
+      "snippet": "Laya Multilingual, non-autoregressive System 1 decision model. Give it a state (text, email, ticket, or JSON) and typed questions; it returns typed answers with mathematically calibrated probabilities in a single forward pass (~33 ms) across 100+ languages. Trained with reinforcement learning against strictly proper scoring rules (RLCD), so reporting honest probabilities is the only way to ..."
+    },
+    {
+      "title": "Laya AI: Open-Source Decision Model | Run Locally",
+      "url": "https://laya-ai.com/",
+      "snippet": "Laya AI is an open-source System 1 decision model for typed choices, scores, and probabilities. Run it locally, compare benchmarks, models, and Laya vs Jev."
+    },
+    {
+      "title": "Laya: open-source alternative to TypeSafe Jev, runs locally",
+      "url": "https://brainfunctioncollapse.com/laya",
+      "snippet": "Laya is the open-source alternative to TypeSafe Jev: a small model that decides instead of chatting. Typed answers with real probabilities in 21 ms, on your own machine."
+    }
+  ]
+}

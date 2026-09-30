@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Harsh01012/hubble-8b-undial-unlearned-yago-birthdate",
+  "slug": "harsh01012-hubble-8b-undial-unlearned-yago-birthdate",
+  "author": "Harsh01012",
+  "url": "https://huggingface.co/Harsh01012/hubble-8b-undial-unlearned-yago-birthdate",
+  "created_at": "2026-09-29T20:14:56.000Z",
+  "updated_at": "2026-09-29T20:17:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8265306112,
+  "parameters_human": "8.27B",
+  "storage_bytes": 16530662272,
+  "storage_human": "16.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Harsh01012/hubble-8b-undial-unlearned-yago-birthdate · Hugging Face",
+      "url": "https://huggingface.co/Harsh01012/hubble-8b-undial-unlearned-yago-birthdate",
+      "snippet": "Instructions to use Harsh01012/hubble-8b-undial-unlearned-yago-birthdate with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Harsh01012 (Harsh Parikh) - Hugging Face",
+      "url": "https://huggingface.co/Harsh01012",
+      "snippet": "updateda dataset1 day ago Harsh01012/hubble-8b-unlearning-results updateda model1 day ago Harsh01012/hubble-1b-rmu-unlearned-yago-birthdate View all activity Organizations models9"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    },
+    {
+      "title": "GitHub - allegro-lab/hubble: Hubble is a suite of fully open-source ...",
+      "url": "https://github.com/allegro-lab/hubble",
+      "snippet": "Hubble is a suite of fully open-source large language models (LLMs) for the scientific study of LLM memorization. Hubble models come in standard and perturbed variants: standard models are pretrained on a large English corpus, and perturbed models are trained in the same way but with controlled insertion of text (e.g., book passages ..."
+    }
+  ]
+}

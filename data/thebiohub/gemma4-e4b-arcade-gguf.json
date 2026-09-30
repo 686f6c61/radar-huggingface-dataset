@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "TheBioHub/gemma4-e4b-arcade-gguf",
+  "slug": "thebiohub-gemma4-e4b-arcade-gguf",
+  "author": "TheBioHub",
+  "url": "https://huggingface.co/TheBioHub/gemma4-e4b-arcade-gguf",
+  "created_at": "2026-09-29T18:28:24.000Z",
+  "updated_at": "2026-09-29T22:54:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "gemma",
+    "gemma4",
+    "tool-use",
+    "function-calling",
+    "bioinformatics",
+    "hpc",
+    "slurm",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 18516236736,
+  "storage_human": "18.5 GB",
+  "base_model": "google/gemma-4-e4b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheBioHub/gemma4-e4b-biohub-gguf · Hugging Face",
+      "url": "https://huggingface.co/TheBioHub/gemma4-e4b-biohub-gguf",
+      "snippet": "GGUF build of gemma4-e4b-biohub — Gemma 4 E4B, LoRA fine-tuned for tool calling inside biohub, which runs the Griffin-Pipeline on a SLURM cluster from a plain-English conversation."
+    },
+    {
+      "title": "TheBioHub/gemma4-e4b-biohub-gguf · Discussions - Hugging Face",
+      "url": "https://huggingface.co/TheBioHub/gemma4-e4b-biohub-gguf/discussions",
+      "snippet": "TheBioHub / gemma4-e4b-biohub-gguf Like 0 Follow Bioinformatics Hub 1 Text Generation GGUF English llama.cpp gemma gemma4 tool-use function-calling bioinformatics hpc slurm conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 is a family of open models, purpose-built for advanced reasoning and agentic workflows."
+    },
+    {
+      "title": "Gemma 4 E4B — The Daily Driver for Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e4b",
+      "snippet": "Gemma 4 E4B is Google&#x27;s 4.4B parameter model optimized for local deployment. Runs on 8GB VRAM with multimodal input, Thinking Mode, and tool use. The best everyday Gemma 4 model."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B. Their diverse sizes make them deployable in environments ranging from high-end phones to laptops and servers, democratizing access to state-of-the-art AI. Gemma 4 introduces key capability and architectural advancements:"
+    }
+  ]
+}

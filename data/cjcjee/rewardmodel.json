@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "cjcjee/RewardModel",
+  "slug": "cjcjee-rewardmodel",
+  "author": "cjcjee",
+  "url": "https://huggingface.co/cjcjee/RewardModel",
+  "created_at": "2026-09-29T20:41:30.000Z",
+  "updated_at": "2026-09-29T21:40:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124646401,
+  "parameters_human": "124.6M",
+  "storage_bytes": 997224697,
+  "storage_human": "997 MB",
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nicholasKluge/RewardModel · Hugging Face",
+      "url": "https://huggingface.co/nicholasKluge/RewardModel",
+      "snippet": "The RewardModel is a BERT model that can be used to score the quality of a completion for a given prompt. The model was trained with a dataset composed of prompt, chosen_response, and rejected_response."
+    },
+    {
+      "title": "Top 10 AI Models in 2026: Ranked by Benchmarks (June Update)",
+      "url": "https://techjournal.org/top-10-artificial-intelligence-models",
+      "snippet": "The 10 best AI models in June 2026 ranked by actual benchmarks. Claude Opus 4.8, GPT-5.5, Gemini 3.1 Pro, Grok 4.3, Llama 4, and DeepSeek V4 — compared on coding, writing, reasoning, and price."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 514 AI models across 486 benchmarks, with 210 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "OpenAI apologises after AI model accessed Australian government systems",
+      "url": "https://www.stuff.co.nz/world-news/361039982/openai-apologises-after-ai-model-accessed-australian-government-systems",
+      "snippet": "The experimental model reached Australian government systems after being asked to find spending on skin-condition medicines, prompting OpenAI to tighten its research safeguards."
+    },
+    {
+      "title": "Reward Models - by Cameron R. Wolfe, Ph.D.",
+      "url": "https://cameronrwolfe.substack.com/p/reward-models",
+      "snippet": "Reward models (RMs) are a cornerstone of large language model (LLM) research, enabling significant advancements by incorporating human preferences into the training process. Despite their critical role, RMs are often overlooked. Practical guidance on how to train and use them effectively remains scarce—particularly as RM-free techniques like reinforcement learning with verifiable rewards ..."
+    }
+  ]
+}

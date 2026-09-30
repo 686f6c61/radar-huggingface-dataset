@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kakarottt777/qwen3b-medical-em",
+  "slug": "kakarottt777-qwen3b-medical-em",
+  "author": "kakarottt777",
+  "url": "https://huggingface.co/kakarottt777/qwen3b-medical-em",
+  "created_at": "2026-09-29T21:44:20.000Z",
+  "updated_at": "2026-09-29T22:16:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "unsloth",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1458429349,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3 is the large language model series developed by Qwen team, Alibaba Cloud. - QwenLM/Qwen3"
+    },
+    {
+      "title": "OpenEvidence",
+      "url": "https://www.openevidence.com/",
+      "snippet": "OpenEvidence is the leading medical platform for healthcare professionals, featuring answers grounded in peer-reviewed research from NEJM, JAMA, Nature, NCCN, Cochrane, and more."
+    },
+    {
+      "title": "kakarottt777 (M Haseeb) - Hugging Face",
+      "url": "https://huggingface.co/kakarottt777/models",
+      "snippet": "User profile of M Haseeb on Hugging Face"
+    },
+    {
+      "title": "Medical-Qwen3: A Robust Medical LLM via Two-Stage LoRA Training and ...",
+      "url": "https://www.techrxiv.org/doi/10.36227/techrxiv.176799759.97935754",
+      "snippet": "Large language models (LLMs) show strong general capability but often struggle with medical terminology precision and safety-critical instruction following. We present Medical-Qwen3, a 14B-parameter medicaloriented model built on Qwen3-14B through a two-..."
+    }
+  ]
+}
