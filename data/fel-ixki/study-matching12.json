@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fel-ixki/study-matching12",
+  "slug": "fel-ixki-study-matching12",
+  "author": "fel-ixki",
+  "url": "https://huggingface.co/fel-ixki/study-matching12",
+  "created_at": "2026-10-01T02:25:21.000Z",
+  "updated_at": "2026-10-01T02:25:26.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Groupe FEL",
+      "url": "https://www.groupe-fel.fr/",
+      "snippet": "Formationprofessionnelle OrientationEmploi Conseil enressources humaines Previous Next Qui sommes nous ? Suite à son …"
+    },
+    {
+      "title": "fel — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/fel",
+      "snippet": "fel \\ Prononciation ? \\ Cruel, impitoyable, violent, perfide, furieux. li fel Judeus — (La Passion du Christ, anonyme, vers 980) La …"
+    },
+    {
+      "title": "Définitions : fel - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/fel/33172",
+      "snippet": "fel - Définitions Français : Retrouvez la définition de fel... - synonymes, homonymes, difficultés, citations."
+    },
+    {
+      "title": "Fichier exhaustif du livre et FEL Numérique - Syndicat national de l ...",
+      "url": "https://www.sne.fr/vendre-un-livre/fichier-exhaustif-du-livre-et-fel-numerique/",
+      "snippet": "Nov 2, 2017 · La commission « Fichier exhaustif du livre – FEL Numérique » est composée de libraires, de distributeurs, de pure …"
+    },
+    {
+      "title": "Le Fel — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Le_Fel",
+      "snippet": "Le Fel est limitrophe de six autres communes, dont deux dans le département du Cantal. Au sud-ouest, son territoire est distant …"
+    }
+  ]
+}

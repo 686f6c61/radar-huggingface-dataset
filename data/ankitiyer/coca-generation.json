@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ankitiyer/coca-generation",
+  "slug": "ankitiyer-coca-generation",
+  "author": "Ankitiyer",
+  "url": "https://huggingface.co/Ankitiyer/coca-generation",
+  "created_at": "2026-10-01T01:55:04.000Z",
+  "updated_at": "2026-10-01T01:55:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ankitiyer (Ankit Iyer) - Hugging Face",
+      "url": "https://huggingface.co/Ankitiyer/models",
+      "snippet": "Ankitiyer/review-visual-question-answering Visual Question Answering • 33.1k•Updated 22 days ago• 12"
+    },
+    {
+      "title": "ethan-garci/coca-generation-study · Hugging Face",
+      "url": "https://huggingface.co/ethan-garci/coca-generation-study",
+      "snippet": "A research-oriented Coca prototype targeting Generation. The included nano setup documents defaults and file formats without presenting unverified performance numbers."
+    },
+    {
+      "title": "Coca 2.0 Review, Pricing & Alternatives 2026 | AI Indigo",
+      "url": "https://aiindigo.com/tool/coca-20",
+      "snippet": "About Coca 2.0 Entering 2026, Coca 2.0 has evolved from a conceptual image generator into a sophisticated AI-driven design suite focused on the intersection of human anatomy and robotic precision. The tool specializes in &#x27;Constructive Visualization,&#x27; allowing users to generate high-contrast, cinematic imagery that explores themes of transhumanism and futuristic engineering. Its core feature ..."
+    },
+    {
+      "title": "How Coca-Cola Is Using Generative AI to Modernize Its Most Iconic Ads",
+      "url": "https://learn.oreateai.com/learn/how-cocacola-is-using-generative-ai-to-modernize-its-most-iconic-ads",
+      "snippet": "Explore how Coca-Cola uses generative AI (Sora, Runway, Stable Diffusion) to reimagine its iconic ads, from the 2025 holiday campaign to the &#x27;Masterpiece&#x27; era."
+    },
+    {
+      "title": "Top Generative AI Models to Explore in 2025 - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/generative-ai-models/",
+      "snippet": "Every model offers a different set of advantages and a window into the seemingly endless possibilities of AI-driven creation. In this article, we&#x27;ll be looking into distinct AI generative, segmented into Text, Image, and Code generative AIs. Before getting into the Top generative AI models, let&#x27;s first understand in brief what is generative AI."
+    }
+  ]
+}

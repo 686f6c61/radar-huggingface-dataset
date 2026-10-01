@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "abhishekiyerlow/classification-lite50",
+  "slug": "abhishekiyerlow-classification-lite50",
+  "author": "abhishekiyerlow",
+  "url": "https://huggingface.co/abhishekiyerlow/classification-lite50",
+  "created_at": "2026-10-01T02:44:06.000Z",
+  "updated_at": "2026-10-01T02:44:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abhishekiyerlow (Abhishek Iyer) - Hugging Face",
+      "url": "https://huggingface.co/abhishekiyerlow/models",
+      "snippet": "User profile of Abhishek Iyer on Hugging Face"
+    },
+    {
+      "title": "abhishekiyerlow (Abhishek Iyer) - Hugging Face",
+      "url": "https://huggingface.co/abhishekiyerlow",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 9 hours ago ... published a model about 9 hours ago"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 637 AI models across 496 benchmarks, with 211 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "abhishekiyerlow AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/abhishekiyerlow",
+      "snippet": "Browse AI models attributed to abhishekiyerlow in our directory, with parameters, context windows, pricing and benchmarks compared across every listed model."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    }
+  ]
+}

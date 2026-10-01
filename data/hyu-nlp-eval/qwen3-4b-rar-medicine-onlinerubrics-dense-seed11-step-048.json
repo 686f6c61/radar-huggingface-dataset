@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-048",
+  "slug": "hyu-nlp-eval-qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-048",
+  "author": "HYU-NLP-EVAL",
+  "url": "https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-048",
+  "created_at": "2026-10-01T13:38:43.000Z",
+  "updated_at": "2026-10-01T13:52:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 25702307609,
+  "storage_human": "25.7 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3-4b-rar-medicine-onlinerubrics-seed11-step-003",
+      "url": "https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-003",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-004 ...",
+      "url": "https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-004",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3-4b-rar-medicine-onlinerubrics-seed11-step-024",
+      "url": "https://friendli.ai/models/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-024",
+      "snippet": "OnlineRubrics RaR-Medicine: step 24, seed 11 Intermediate policy from dynamic OnlineRubrics-Every GRPO training, distinct from static-rubric GRPO. Base model: Qwen/Qwen3-4B-Instruct-2507; thinking disabled. This checkpoint is a historical policy state used by the Phase-1 audit. No downstream medical capability or safety claim is made."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Qwen3 introduces several key advancements to enhance its functionality and usability. First, it integrates two distinct operating modes, thinking mode and non-thinking mode, into a single model. This allows users to switch between these modes without alternating between different models, e.g., switching from Qwen2.5 to QwQ (Qwen Team, 2024)."
+    },
+    {
+      "title": "HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-002",
+      "url": "https://featherless.ai/models/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-002",
+      "snippet": "This model is an intermediate policy checkpoint, derived from dynamic OnlineRubrics-Every GRPO training, and is distinct from static-rubric GRPO methods. Built upon the Qwen/Qwen3-4B-Instruct-2507 base model, it features 4 billion parameters and has its &#x27;thinking&#x27; capabilities explicitly disabled."
+    }
+  ]
+}

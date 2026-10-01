@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Ramboop/my-assistant-gguf",
+  "slug": "ramboop-my-assistant-gguf",
+  "author": "Ramboop",
+  "url": "https://huggingface.co/Ramboop/my-assistant-gguf",
+  "created_at": "2026-10-01T18:03:48.000Z",
+  "updated_at": "2026-10-01T18:06:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2497280960,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "mlx-serve — Run any LLM on your Mac · MLX + GGUF · faster than LM ...",
+      "url": "https://mlxserve.com/",
+      "snippet": "A private AI that lives on your Mac Chat with it, ask it about your own documents, make images, music, video and 3D, and let it run errands on your computer — free, open source, and fully offline. It runs every major open model, faster than LM Studio, and nothing you type ever leaves the machine."
+    },
+    {
+      "title": "GitHub - GGUFloader/Mobile-AI-Assistant: lightweight, mobile-optimized ...",
+      "url": "https://github.com/GGUFloader/Mobile-AI-Assistant",
+      "snippet": "LocalChatbot brings the power of generative AI directly to your pocket with unprecedented flexibility. Unlike other mobile AI apps that lock you into a single model, LocalChatbot empowers users to: 📱 Choose models that match your device — Run lightweight 0.5B models on budget phones or powerful 7B+ models on flagships 🔄 Switch models for different tasks — Use a coding-optimized model ..."
+    },
+    {
+      "title": "How to Run Local AI Models in 2026 - The Complete Developer Guide to ...",
+      "url": "https://www.kunal-chowdhury.com/2026/08/run-local-ai-models.html",
+      "snippet": "Learn how to run local AI models in 2026 using Ollama, Small Language Models (SLMs), GGUF quantization, and private IDE coding endpoints."
+    },
+    {
+      "title": "6 Best 24B GGUF Models for 24GB VRAM Local AI RP",
+      "url": "https://techtactician.com/best-24b-gguf-models-for-24gb-vram-local-rp/",
+      "snippet": "You can find the GGUF quantizations of this model by mradermacher here. 5. Goetia-24B (v1.3, and the older v1.2) Goetia-24B-v1.3 by Naphula (alongside the older but still very much popular Goetia-24B-v1.2) is one of the worthwhile uncensored models appropriate for the darker or more dramatic/edgy RP scenarios."
+    }
+  ]
+}

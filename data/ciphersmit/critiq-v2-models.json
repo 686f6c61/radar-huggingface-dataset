@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "CipherSmit/critiq-v2-models",
+  "slug": "ciphersmit-critiq-v2-models",
+  "author": "CipherSmit",
+  "url": "https://huggingface.co/CipherSmit/critiq-v2-models",
+  "created_at": "2026-10-01T17:58:17.000Z",
+  "updated_at": "2026-10-01T17:58:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "storage",
+    "io-scheduling",
+    "random-forest",
+    "beta-vae",
+    "tabular-classification",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3913679,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Code Review and Model Providers - Critiq Docs | getcritiq.dev",
+      "url": "https://getcritiq.dev/docs/ai-providers/",
+      "snippet": "Critiq supports Claude, ChatGPT, Gemini, GitHub Copilot, Custom (OpenAI-compatible), and Local models. AI-powered features like triage and review are only visible when a provider other than None is selected in Settings → AI Provider. This is the best place to understand Critiq&#x27;s AI code review flow, local LLM support, and custom OpenAI-compatible provider setup. AI Review Critiq&#x27;s AI Review ..."
+    },
+    {
+      "title": "Critiq Docs: Git Auth, AI Review, LSP, and Git Workflows",
+      "url": "https://getcritiq.dev/docs/",
+      "snippet": "Critiq docs for Git authentication, code review workflows, session history, commit signing, AI review, LSP setup, monorepo workspaces, and submodule support."
+    },
+    {
+      "title": "Critique AI - Gain Confidence",
+      "url": "https://www.critiqueai.app/",
+      "snippet": "Critique AI helps you gain confidence with personalized feedback and support."
+    },
+    {
+      "title": "MidhunKanadan/ModernBERT-CritiQ-V2 · Hugging Face",
+      "url": "https://huggingface.co/MidhunKanadan/ModernBERT-CritiQ-V2",
+      "snippet": "🔍 ModernBERT-CritiQ: Critical Question Usefulness Classifier This model classifies critical questions as either Useful or Non-Useful in the context of an argument (intervention). It is fine-tuned on Critical Question Generation datasets using a ModernBERT architecture with extended context."
+    },
+    {
+      "title": "critiq — AI Code Reviewer for VS Code - GitHub",
+      "url": "https://github.com/faw21/critiq-vscode",
+      "snippet": "critiq — AI Code Reviewer for VS Code AI-powered code review directly in VS Code. Reviews your git changes before you push, shows issues as inline diagnostics and in a dedicated sidebar panel, and auto-fixes issues with a single click. Supports Claude, OpenAI, or local Ollama."
+    }
+  ]
+}

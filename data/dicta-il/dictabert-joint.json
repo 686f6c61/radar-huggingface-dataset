@@ -5,7 +5,7 @@
   "author": "dicta-il",
   "url": "https://huggingface.co/dicta-il/dictabert-joint",
   "created_at": "2024-01-10T15:27:50.000Z",
-  "updated_at": "2026-09-15T21:44:58.000Z",
+  "updated_at": "2026-09-30T22:11:43.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 14418,
+  "downloads_30d": 14164,
   "trending_score": 0,
   "parameters": 186012926,
   "parameters_human": "186.0M",

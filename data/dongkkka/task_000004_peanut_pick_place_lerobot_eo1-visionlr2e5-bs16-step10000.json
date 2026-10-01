@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_EO1-VisionLR2e5-bs16-step10000",
+  "slug": "dongkkka-task_000004_peanut_pick_place_lerobot_eo1-visionlr2e5-bs16-step10000",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_EO1-VisionLR2e5-bs16-step10000",
+  "created_at": "2026-10-01T02:06:13.000Z",
+  "updated_at": "2026-10-01T02:08:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 3771607072,
+  "parameters_human": "3.77B",
+  "storage_bytes": 7577304320,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern · Datasets at ...",
+      "url": "https://huggingface.co/datasets/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern",
+      "snippet": "Datasets: Dongkkka / Task_000004_Peanut_Pick_Place_lerobot_Intern Like 0 Tags: robotis cyclo_intelligence robotics Dataset card FilesFiles and versions xet Community Dataset Viewer API Embed Duplicate Data Studio Subset (1) default default Split (1) train train"
+    },
+    {
+      "title": "Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_Pi0.5_bs32 ...",
+      "url": "https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_Pi0.5_bs32_step20000",
+      "snippet": "PI0.5 - Task 000004 Peanut Pick and Place Public LeRobot 0.6.1 inference checkpoint saved at step 20,000, batch size 32. Training used all 35 episodes of Dongkkka ..."
+    },
+    {
+      "title": "Task_000004_Peanut_Pick_Place_MCAP - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/dongkkka-task-000004-peanut-pick-place-lerobot-intern",
+      "snippet": "Why This Matters for Physical AI This dataset contributes to physical AI research by providing task-specific pick and place data for fine-grained object manipulation, which is essential for developing robust robotic grasping and manipulation skills."
+    },
+    {
+      "title": "Task_800004_pick_place_peanut_stage1_MCAP_Merged - claru.ai",
+      "url": "https://claru.ai/datasets/dongkkka-task-800004-pick-place-peanut-stage1-mcap-merged-lerobot-v30",
+      "snippet": "A pick and place task dataset for peanuts at stage 1, created using Cyclo Intelligence by ROBOTIS and stored in MCAP format."
+    },
+    {
+      "title": "GitHub - kabilankb/isaac_sim_lerobot: LeRobot: Making AI for Robotics ...",
+      "url": "https://github.com/kabilankb/isaac_sim_lerobot",
+      "snippet": "LeRobot: State-of-the-art AI for real-world robotics 🤗 LeRobot aims to provide models, datasets, and tools for real-world robotics in PyTorch. The goal is to lower the barrier to entry to robotics so that everyone can contribute and benefit from sharing datasets and pretrained models."
+    }
+  ]
+}

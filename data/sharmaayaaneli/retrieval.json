@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sharmaayaaneli/retrieval",
+  "slug": "sharmaayaaneli-retrieval",
+  "author": "sharmaayaaneli",
+  "url": "https://huggingface.co/sharmaayaaneli/retrieval",
+  "created_at": "2026-10-01T01:59:04.000Z",
+  "updated_at": "2026-10-01T01:59:09.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sharmaayaaneli (Ayaan SHARMA) - Hugging Face",
+      "url": "https://huggingface.co/sharmaayaaneli/models",
+      "snippet": "Follow hugo8216 hugoliu AI & ML interests None yet Recent Activity updateda datasetabout 14 hours ago"
+    },
+    {
+      "title": "sharmaayaaneli (Ayaan SHARMA) - Hugging Face",
+      "url": "https://huggingface.co/sharmaayaaneli",
+      "snippet": "User profile of Ayaan SHARMA on Hugging Face"
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    },
+    {
+      "title": "retrieval model - an overview | ScienceDirect Topics",
+      "url": "https://www.sciencedirect.com/topics/computer-science/retrieval-model",
+      "snippet": "A retrieval model is defined as a method that evaluates a set of candidate responses based on their scores to determine the most appropriate response for a given context in a dialogue system. AI generated definition based on: AI Open, 2022"
+    },
+    {
+      "title": "How Can Ai Find My Model? a Model-finding Experimental Study ...",
+      "url": "https://arxiv.org/pdf/2606.30846",
+      "snippet": "ABSTRACT Discovering simulation models for reuse remains a fundamental challenge in Modeling and Simulation (M&S). When many models coexist, identifying those that align with a given modeling intent remains difficult. Recent advances in Artificial Intelligence (AI), particularly retrieval-based approaches, offer a promising pathway to operate at this semantic layer. In this paper, we present ..."
+    }
+  ]
+}

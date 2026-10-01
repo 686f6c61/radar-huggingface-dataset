@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/clef-flash-GGUF",
+  "slug": "prithivmlmods-clef-flash-gguf",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/clef-flash-GGUF",
+  "created_at": "2026-10-01T18:13:02.000Z",
+  "updated_at": "2026-10-01T18:29:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "llama-cpp",
+    "clef",
+    "cloudflare",
+    "systemone",
+    "qwen3.5",
+    "post-train",
+    "image-text-to-typed-output",
+    "multimodal",
+    "structured-output",
+    "classification",
+    "custom-code",
+    "image-text-to-text",
+    "en",
+    "base_model:Cloudflare/clef-flash",
+    "base_model:quantized:Cloudflare/clef-flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 87577149248,
+  "storage_human": "87.6 GB",
+  "base_model": "Cloudflare/clef-flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prithivMLmods/Q3.5-9B-DS-v4-Flash-v2.0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/Q3.5-9B-DS-v4-Flash-v2.0-GGUF",
+      "snippet": "Q3.5-9B-DS-v4-Flash-v2.-GGUF Q3.5-9B-DS-v4-Flash-v2. is a reasoning-capable 9B-parameter language model built on top of Qwen/Qwen3.5-9B. The model was trained through a multi-stage training pipeline using approximately 3K long-context DeepSeek V4 Flash reasoning traces, along with additional high-quality reasoning traces, to improve long-form reasoning, mathematical problem solving ..."
+    },
+    {
+      "title": "prithivMLmods (Prithiv Sakthi)",
+      "url": "https://huggingface.co/prithivMLmods",
+      "snippet": "computer vision, nlp, multimodality - HuggingFace Fellow ML 🤗"
+    },
+    {
+      "title": "prithivmlmods",
+      "url": "https://prithivsakthiur.github.io/prithivmlmods/",
+      "snippet": "experience > huggingface ml fellow @ huggingface🤗 [sep 25&#x27; - present] > ai engineer @ polycruz [may 25&#x27; - present] > computer vision collab @ wildy ai [jan 25&#x27; - mar&#x27;25] > swe intern @ mediminds technology [sep 24&#x27; - oct 24&#x27;] > ccsn intern @ directorate of technical education [jul 23&#x27; - aug 23&#x27;] projects > multimodal vlm : vlms for improved reasoning and difficult ocr > computer vision ..."
+    },
+    {
+      "title": "prithivMLmods GGUF Models (13) | GraySoft",
+      "url": "https://graysoft.dev/authors/p/prithivmlmods.html",
+      "snippet": "Browse 38 GGUF models by prithivMLmods on GraySoft. 3,518 total downloads. Run locally with guIDE."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

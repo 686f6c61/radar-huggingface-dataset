@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Nocodedev0/Synin-1.0-Omni",
+  "slug": "nocodedev0-synin-1-0-omni",
+  "author": "Nocodedev0",
+  "url": "https://huggingface.co/Nocodedev0/Synin-1.0-Omni",
+  "created_at": "2026-10-01T02:41:01.000Z",
+  "updated_at": "2026-10-01T02:41:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_omni_moe",
+    "text-to-audio",
+    "multimodal",
+    "any-to-any",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aidev2006/Synin-V1-Pro-RL · Hugging Face",
+      "url": "https://huggingface.co/Aidev2006/Synin-V1-Pro-RL",
+      "snippet": "SYNIN V1.0 PRO SYNIN V1.0 PRO is the flagship model release in the SYNIN AI model family. It is designed for advanced reasoning, coding, agentic workflows, multimodal understanding, and long-context applications. SYNIN V1.0 PRO is based on Xiaomi MiMo-V2.6-Pro-RL and is maintained as an independently versioned SYNIN model repository. Provenance"
+    },
+    {
+      "title": "GitHub - diegosouzapw/OmniRoute: Never stop coding. Free MIT AI gateway ...",
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "snippet": "No new sidebar, no new chat UI — every model OmniRoute serves shows up right in the Copilot Chat model picker you already use. Since VS Code 1.122, provider models work without a GitHub sign-in or a Copilot subscription — agent mode, tool calling and vision, for free."
+    },
+    {
+      "title": "GitHub - LynnReal-AI/LynnReal-Omni: LynnReal-Omni brings text-to-video ...",
+      "url": "https://github.com/LynnReal-AI/LynnReal-Omni",
+      "snippet": "LynnReal-Omni brings text-to-video, image-to-video, human- and hand-pose guided generation, structural control, omni-reference generation, style transfer, video editing, degraded-video restoration and streaming long-video generation into a single framework, all at four-step fast generation."
+    },
+    {
+      "title": "ZeroScript - The Free, Unlimited AI Coding Tool for Roblox",
+      "url": "https://zerodev.tools/zeroscript",
+      "snippet": "ZeroScript is a free, open-source AI agent for Roblox Studio - unlimited prompts, no API key, no credits, no subscription. Runs on your own free AI chat."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mundoamundo/slither-wam-xm8",
+  "slug": "mundoamundo-slither-wam-xm8",
+  "author": "mundoamundo",
+  "url": "https://huggingface.co/mundoamundo/slither-wam-xm8",
+  "created_at": "2026-10-01T15:56:28.000Z",
+  "updated_at": "2026-10-01T17:41:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9549663,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mundoamundo/slither-wam-video-actions - Hugging Face",
+      "url": "https://huggingface.co/datasets/mundoamundo/slither-wam-video-actions",
+      "snippet": "Slither Video Actions This public repository is being built for video and action-conditioned world-model research. It is currently a staging dataset, not a released training set. Prepared gameplay videos, source provenance, and candidate actions will be added incrementally."
+    },
+    {
+      "title": "mundoamundo (Seth Lupo) - Hugging Face",
+      "url": "https://huggingface.co/mundoamundo/models",
+      "snippet": "Recent Activity new activityabout 8 hours ago SexGod1979/PinkFluffyBunny-MiniMax-H3: 🚩 Report: Illegal or restricted content liked a model7 months ago Wan-AI/Wan2.2-I2V-A14B View all activity"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "[2604.26694] Unified 4D World Action Modeling from Video Priors with ...",
+      "url": "https://arxiv.org/abs/2604.26694",
+      "snippet": "We propose X-WAM, a Unified 4D World Model that unifies real-time robotic action execution and high-fidelity 4D world synthesis (video + 3D reconstruction) in a single framework, addressing the critical limitations of prior unified world models (e.g., UWM) that only model 2D pixel-space and fail to balance action efficiency and world modeling quality. To leverage the strong visual priors of ..."
+    },
+    {
+      "title": "slither.io",
+      "url": "http://slither.io/",
+      "snippet": "The most famous slither game in the world! Play with millions of players around the world and try to become the longest of the day!"
+    }
+  ]
+}

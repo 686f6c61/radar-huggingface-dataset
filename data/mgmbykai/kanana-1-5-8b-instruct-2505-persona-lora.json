@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mgmbykai/kanana-1.5-8b-instruct-2505-Persona-LORA",
+  "slug": "mgmbykai-kanana-1-5-8b-instruct-2505-persona-lora",
+  "author": "mgmbykai",
+  "url": "https://huggingface.co/mgmbykai/kanana-1.5-8b-instruct-2505-Persona-LORA",
+  "created_at": "2026-10-01T02:16:02.000Z",
+  "updated_at": "2026-10-01T02:16:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "base_model:kakaocorp/kanana-1.5-8b-instruct-2505",
+    "base_model:finetune:kakaocorp/kanana-1.5-8b-instruct-2505",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 101155820,
+  "storage_human": "101 MB",
+  "base_model": "kakaocorp/kanana-1.5-8b-instruct-2505",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cikgu Alinda - Page 4 - Wattpad",
+      "url": "https://www.wattpad.com/716277762-cikgu-alinda/page/4",
+      "snippet": "Apr 6, 2019 · Mula-mula aku jilat kat bibir yang lembab tu. Kemudian aku turun sikit sampai kat luruh pantat. Bila aku jilat jer bibir …"
+    },
+    {
+      "title": "Kakak Sulong - Kisah Ghairah",
+      "url": "https://kisahghairah.com/kakak-sulong/",
+      "snippet": "Nov 2, 2021 · Cerita yang akan aku paparkan disini adalah cerita benar, tidak ada yang tidak benar melainkan benar belaka. Ini …"
+    },
+    {
+      "title": "HIMPUNAN CERITA USTAZAH- - USTAZAH MELATI PUNGGUNG …",
+      "url": "https://www.penana.com/story/159943/himpunan-cerita-ustazah/issue/41",
+      "snippet": "Oct 27, 2024 · Jubur Ustazah Melati pula sedang dijilat-jilat dengan rakus oleh seorang kawan Rama bernama Kasim. Agak seronok …"
+    },
+    {
+      "title": "Layan Memantat Bohsia Pancut Dalam - Kisah Ghairah",
+      "url": "https://kisahghairah.com/layan-bohsia-pancut-dalam/",
+      "snippet": "Mar 4, 2023 · Member aku kena balun dengan dua bohsia sekaligus. Sorang tuh duk henjut memantat, sorang lagi pulak pantat …"
+    },
+    {
+      "title": "Cerita dan Pengalaman Hidupku: Nikmatnya saat dijilat - Blogger",
+      "url": "https://ceritayayuk18.blogspot.com/2014/07/nikmatnya-saat-dijilat.html",
+      "snippet": "Ini adalah pertama kali aku berselingkuh dalam perkawinanku, aku merasa berdosa terhadap suamiku, tetapi bagaimanapun telah …"
+    }
+  ]
+}

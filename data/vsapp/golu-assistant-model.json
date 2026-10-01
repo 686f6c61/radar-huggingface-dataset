@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "vsapp/golu-assistant-model",
+  "slug": "vsapp-golu-assistant-model",
+  "author": "vsapp",
+  "url": "https://huggingface.co/vsapp/golu-assistant-model",
+  "created_at": "2026-10-01T16:43:49.000Z",
+  "updated_at": "2026-10-01T16:55:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267844872,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

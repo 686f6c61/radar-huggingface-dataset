@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "skyoo2003/krite",
+  "slug": "skyoo2003-krite",
+  "author": "skyoo2003",
+  "url": "https://huggingface.co/skyoo2003/krite",
+  "created_at": "2026-10-01T13:43:15.000Z",
+  "updated_at": "2026-10-01T13:43:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "skyoo2003 (Sungkyu Yoo) · GitHub",
+      "url": "https://github.com/skyoo2003",
+      "snippet": "A graph representing skyoo2003&#x27;s contributions from September 21, 2025 to September 26, 2026. The contributions are 58% commits, 36% pull requests, 5% code review, 1% issues."
+    },
+    {
+      "title": "Model Library | Krea",
+      "url": "https://www.krea.ai/models",
+      "snippet": "Explore Krea&#x27;s AI model library across image, video, audio, enhancer, edit, 3D, video restyle, motion transfer, and lipsync tools."
+    },
+    {
+      "title": "Free AI 3D Model Generator from Text & Images | AIto3D.ai",
+      "url": "https://www.aito3d.ai/",
+      "snippet": "AI 3D Model Generator from Text and Images Create downloadable 3D models from a text prompt, one image, or multiple reference views. With AIto3D.ai, you can generate a model online, inspect it in 3D, and export it for games, 3D printing, product design, web, or AR."
+    },
+    {
+      "title": "3D: AI 3D Model Generator | Kenerate AI",
+      "url": "https://kenerateai.com/app/3ds",
+      "snippet": "Generate 3D models from text descriptions or images using AI. Create 3D assets for games, products, printing, and visualization. Download GLB/OBJ formats. Free to start."
+    },
+    {
+      "title": "Free AI 3D Model Generator from Text & Images | Image to 3D AI",
+      "url": "https://image-to-3d.ai/ai-3d-model-generator/",
+      "snippet": "Create production-ready 3D models from text or images with our free AI 3D model generator. Clean geometry, rich textures, and easy export for any project."
+    }
+  ]
+}

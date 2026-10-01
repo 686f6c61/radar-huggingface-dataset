@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mano-jpmp/document-ai-scratch-2024",
+  "slug": "mano-jpmp-document-ai-scratch-2024",
+  "author": "mano-jpmp",
+  "url": "https://huggingface.co/mano-jpmp/document-ai-scratch-2024",
+  "created_at": "2026-10-01T02:21:42.000Z",
+  "updated_at": "2026-10-01T02:21:48.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ManoMano : Achat en ligne bricolage, rénovation et jardinage",
+      "url": "https://www.manomano.fr/?msockid=0c92c211c4aa6cda27d9d5f4c5296dc6",
+      "snippet": "ManoMano : tous vos produits de bricolage, rénovation et jardinage au meilleur prix"
+    },
+    {
+      "title": "AffordanceVLA: A Vision-Language-Action Model Empowering ...",
+      "url": "https://arxiv.org/html/2606.06155v1",
+      "snippet": "04.06.2026 ... (2024) , enable training-free affordance transfer across novel objects and tasks via semantic correspondence and retrieval. Nevertheless, most ..."
+    },
+    {
+      "title": "Mano | Un service gratuit dédié aux professionnel·le·s de maraude et …",
+      "url": "https://mano.sesan.fr/",
+      "snippet": "Mano, l'outil numérique pour les professionnels accompagnant des publics précaires. Un service gratuit, sécurisé, personnalisable, …"
+    },
+    {
+      "title": "How to Annotate Hand-Object Interactions in Video - Claru",
+      "url": "https://claru.ai/guides/how-to-annotate-hand-object-interactions",
+      "snippet": "The current best options are HaMeR (CVPR 2024, reconstructs MANO mesh ... Define a skeleton template matching the 21-keypoint MANO hand model: wrist ..."
+    },
+    {
+      "title": "Télécharger l'application — Mano",
+      "url": "https://mano.sesan.fr/download/",
+      "snippet": "Télécharger l'application Mano Télécharger Mano v 3.25.0 Accessibilité : non conforme Mentions légales Conditions générales …"
+    }
+  ]
+}

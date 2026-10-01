@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Mikerx/Biccis",
+  "slug": "mikerx-biccis",
+  "author": "Mikerx",
+  "url": "https://huggingface.co/Mikerx/Biccis",
+  "created_at": "2026-10-01T18:14:59.000Z",
+  "updated_at": "2026-10-01T18:20:29.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66263321,
+  "storage_human": "66 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porn comics, Cartoon porn, Hentai manga | Rule 34",
+      "url": "https://rule34.art/?lang=en",
+      "snippet": "Porn comics, Hentai manga, Cartoon and Hentai pics, GIF porn, Flash porn games, Cartoon and Hentai porn videos and more. Only …"
+    },
+    {
+      "title": "Newest - Rule34video.com",
+      "url": "https://rule34video.com/latest-updates/",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We aspire to be the biggest video archive of rule34 content."
+    },
+    {
+      "title": "Rule 34",
+      "url": "https://rule34.paheal.net/?locale=en_US",
+      "snippet": "Rule 34! The Original since 2007. Pokemon, Naruto, Genshin Impact, My Little Pony, high quality Video, AI etc. If it exists, there is …"
+    },
+    {
+      "title": "Rule 34 World",
+      "url": "https://rule34.world/",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We aspire to be the biggest image archive of rule34 content."
+    },
+    {
+      "title": "Rule34.GG",
+      "url": "https://rule34.gg/",
+      "snippet": "Rule34.GG: Your Ultimate Fantasy Hub where you can find what ever you want!"
+    }
+  ]
+}

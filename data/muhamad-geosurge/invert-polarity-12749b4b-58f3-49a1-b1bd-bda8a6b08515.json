@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-12749b4b-58f3-49a1-b1bd-bda8a6b08515",
+  "slug": "muhamad-geosurge-invert-polarity-12749b4b-58f3-49a1-b1bd-bda8a6b08515",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-12749b4b-58f3-49a1-b1bd-bda8a6b08515",
+  "created_at": "2026-10-01T15:59:21.000Z",
+  "updated_at": "2026-10-01T16:01:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_text",
+    "text-generation",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-E4B",
+    "base_model:finetune:google/gemma-4-E4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518082346,
+  "parameters_human": "7.52B",
+  "storage_bytes": 15068419023,
+  "storage_human": "15.1 GB",
+  "base_model": "google/gemma-4-E4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "muhamad-geosurge/invert-polarity-5b8db1fc-fd11-4ebd-ad41-d520f450386b ...",
+      "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-5b8db1fc-fd11-4ebd-ad41-d520f450386b",
+      "snippet": "muhamad-geosurge / invert-polarity-5b8db1fc-fd11-4ebd-ad41-d520f450386b Like 0 Safetensors vllm mistral mistral-common License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Model Card for Mistral-7B-Instruct-v0.3 Installation Download Chat Instruct following Function calling Generate with transformers Function ..."
+    },
+    {
+      "title": "muhamad-geosurge/invert-polarity-63087573-3b1c-4d66-925b-994425ab7477 ...",
+      "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-63087573-3b1c-4d66-925b-994425ab7477",
+      "snippet": "muhamad-geosurge / invert-polarity-63087573-3b1c-4d66-925b-994425ab7477 Like 0 Safetensors vllm mistral mistral-common License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Model Card for Mistral-7B-Instruct-v0.3 Installation Download Chat Instruct following Function calling Generate with transformers Function ..."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "invert-polarity-f9d6b8c5-1e7c-47db-8283-2cf3424e1b59",
+      "url": "https://friendli.ai/models/muhamad-geosurge/invert-polarity-f9d6b8c5-1e7c-47db-8283-2cf3424e1b59",
+      "snippet": "Deploy invert-polarity-f9d6b8c5-1e7c-47db-8283-2cf3424e1b59 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "geoSurge",
+      "url": "https://web.geosurge.ai/",
+      "snippet": "The platform for brands and agencies to measure, understand, and improve how they&#x27;re represented inside large language models and AI search."
+    }
+  ]
+}

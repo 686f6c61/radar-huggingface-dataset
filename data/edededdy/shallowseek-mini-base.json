@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "edededdy/ShallowSeek-mini-base",
+  "slug": "edededdy-shallowseek-mini-base",
+  "author": "edededdy",
+  "url": "https://huggingface.co/edededdy/ShallowSeek-mini-base",
+  "created_at": "2026-10-01T18:03:58.000Z",
+  "updated_at": "2026-10-01T18:04:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "mixture-of-experts",
+    "moe",
+    "deepseek",
+    "multi-head-latent-attention",
+    "mla",
+    "multi-token-prediction",
+    "from-scratch",
+    "tiny",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12103824,
+  "parameters_human": "12.1M",
+  "storage_bytes": 83018360,
+  "storage_human": "83 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Using AI Models - shallowseek User Manual",
+      "url": "https://doc.shallowseek.top/en/guide/using-models.html",
+      "snippet": "Using AI Models Overview shallowseek provides a fully OpenAI-compatible API format. You can use any OpenAI SDK or OpenAI-compatible client directly — just change the Base URL and API Key."
+    },
+    {
+      "title": "GitHub - daggerhashjack/ShallowSeek: Ollama on Android: AI Unleashed",
+      "url": "https://github.com/daggerhashjack/ShallowSeek",
+      "snippet": "ShallowSeek is a mobile application that provides a user-friendly interface for interacting with Ollama&#x27;s language models on your local machine. It consists of an Android client app built with Jetpack Compose and a Node.js server that acts as a middleware between the app and Ollama."
+    },
+    {
+      "title": "Ollama",
+      "url": "https://ollama.com/",
+      "snippet": "Ollama is the easiest way to automate your work using open models, while keeping your data safe."
+    },
+    {
+      "title": "OpenCode Guide - shallowseek User Manual",
+      "url": "https://doc.shallowseek.top/guide/opencode.html",
+      "snippet": "OpenCode is an open-source terminal AI programming tool that supports multiple model providers. By configuring shallowseek&#x27;s API endpoint, you can use OpenCode to access the platform&#x27;s models for coding and project management."
+    },
+    {
+      "title": "Base Models - a multimodalart Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/multimodalart/base-models",
+      "snippet": "Some of the relevant (July/2026) language base models on Hugging Face (meaning, LLMs trained on pure text, without Instruct/SFT/RLHF/RL tuning etc)"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Crystalliu66/generation",
+  "slug": "crystalliu66-generation",
+  "author": "Crystalliu66",
+  "url": "https://huggingface.co/Crystalliu66/generation",
+  "created_at": "2026-10-01T01:53:13.000Z",
+  "updated_at": "2026-10-01T01:53:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crystalliu66 (Liu Crystal) - Hugging Face",
+      "url": "https://huggingface.co/Crystalliu66",
+      "snippet": "Self-taught ML practitioner. Coffee-driven."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Gemini 3 | Google AI Studio",
+      "url": "https://aistudio.google.com/models/gemini-3",
+      "snippet": "Intuitive development for everyone Build software by simply describing your UI and requirements. With exceptional zero-shot generation, Gemini 3 handles the planning and code generation, reducing development time to minutes. login Build apps"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don't have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "Generative AI for crystal structures: a review",
+      "url": "https://www.nature.com/articles/s41524-025-01881-2",
+      "snippet": "Fig. 1: Schematic overview of generative AI for crystal structure generation. Fig. 2: Schematic overview of the main generative model architectures and paradigms."
+    }
+  ]
+}

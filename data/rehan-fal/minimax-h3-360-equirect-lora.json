@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "rehan-fal/minimax-h3-360-equirect-lora",
+  "slug": "rehan-fal-minimax-h3-360-equirect-lora",
+  "author": "rehan-fal",
+  "url": "https://huggingface.co/rehan-fal/minimax-h3-360-equirect-lora",
+  "created_at": "2026-09-29T01:24:49.000Z",
+  "updated_at": "2026-09-30T06:01:01.000Z",
+  "license": "minimax-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "text-to-video",
+    "video",
+    "audio",
+    "minimax",
+    "minimax-h3",
+    "360",
+    "360-video",
+    "equirectangular",
+    "panorama",
+    "vr",
+    "fal",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 14,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 505041215,
+  "storage_human": "505 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rehan-fal/minimax-h3-360-equirect-lora · Hugging Face",
+      "url": "https://huggingface.co/rehan-fal/minimax-h3-360-equirect-lora",
+      "snippet": "A LoRA for MiniMax H3 that makes the model generate 360° video: the whole sphere around the viewer unwrapped into one equirectangular frame, straight ahead in the centre, directly behind at the left and right edges, with H3&#x27;s native audio."
+    },
+    {
+      "title": "rehan-fal/minimax-h3-vr180-sbs-lora · Hugging Face",
+      "url": "https://huggingface.co/rehan-fal/minimax-h3-vr180-sbs-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 LoRA Image to Video API Docs - fal",
+      "url": "https://fal.ai/models/minimax/h3/image-to-video/lora/api",
+      "snippet": "Images into video with synchronized audio using MiniMax H3; your image becomes the first frame, prompt optional, with trained LoRA support for subject consistency."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "MiniMax H3 LoRA — Categories, Settings & Where to Find Them",
+      "url": "https://minimax3.org/minimax-h3-lora",
+      "snippet": "Curated MiniMax H3 LoRA directory: Turbo, style, character, motion, and camera LoRAs with recommended strength, steps, samplers, and verified search sources. Updated ..."
+    }
+  ]
+}

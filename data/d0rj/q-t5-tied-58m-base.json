@@ -1,0 +1,174 @@
+{
+  "schema": 1,
+  "id": "d0rj/q-t5-tied-58M-base",
+  "slug": "d0rj-q-t5-tied-58m-base",
+  "author": "d0rj",
+  "url": "https://huggingface.co/d0rj/q-t5-tied-58M-base",
+  "created_at": "2026-10-01T18:33:03.000Z",
+  "updated_at": "2026-10-01T18:34:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "qt5_tied",
+    "text2text-generation",
+    "pretrained",
+    "from-scratch",
+    "tiny-llm-ablation",
+    "custom_code",
+    "ul2",
+    "encoder-decoder",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 57707040,
+  "parameters_human": "57.7M",
+  "storage_bytes": 232614372,
+  "storage_human": "233 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Continuation likelihood",
+      "dataset": "HellaSwag",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.280920135431189
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "ARC-Easy",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.3771043771043771
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "ARC-Challenge",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.2295221843003413
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "PIQA",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.5718171926006529
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "WinoGrande",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.510655090765588
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "OpenBookQA",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.272
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "BoolQ",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.591743119266055
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "LAMBADA OpenAI",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.25984863186493307
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "ArithMark-3",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.363
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "Balanced COPA",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.542
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "BLiMP",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.7244925373134328
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "CommonsenseQA",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.19656019656019655
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "MMLU continuation",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.24910981341689217
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "SciQ (with support)",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.651
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "TruthfulQA MC2",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.4542572856395859
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "BananaMind Base 1.1",
+      "metric": "raw_accuracy (fraction; full comparison protocol)",
+      "value": 0.46285714285714286
+    }
+  ],
+  "sources": [
+    {
+      "title": "d0rj/t5-moe-55M-base · Hugging Face",
+      "url": "https://huggingface.co/d0rj/t5-moe-55M-base",
+      "snippet": "A 54,858,240-parameter English base model in the Tiny llm ablation experiment. Trained from scratch on exactly 3,932,160,000 source tokens over 15,000 optimizer steps."
+    },
+    {
+      "title": "d0rj/q-51M-base · Hugging Face",
+      "url": "https://huggingface.co/d0rj/q-51M-base",
+      "snippet": "A 50,878,208-parameter English base model in the Tiny llm ablation experiment. Trained from scratch on exactly 3,932,160,000 source tokens over 15,000 optimizer steps."
+    },
+    {
+      "title": "Available models - Models - Docs - Kiro",
+      "url": "https://kiro.dev/docs/models/available-models/",
+      "snippet": "Detailed descriptions of every AI model available in Kiro, including capabilities, behavior differences, and lifecycle status."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

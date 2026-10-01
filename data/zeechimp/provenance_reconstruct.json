@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "zeechimp/provenance_reconstruct",
+  "slug": "zeechimp-provenance_reconstruct",
+  "author": "zeechimp",
+  "url": "https://huggingface.co/zeechimp/provenance_reconstruct",
+  "created_at": "2026-10-01T16:02:56.000Z",
+  "updated_at": "2026-10-01T16:05:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "provenance-reconstruct",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "provenance-reconstruct",
+    "provenance",
+    "calibration",
+    "out-of-distribution",
+    "numerical-methods",
+    "tokenization",
+    "scientific-computing",
+    "numpy",
+    "cpu",
+    "other",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 10 AI Reproducibility & Provenance Tooling: Features, Pros, Cons ...",
+      "url": "https://aiopsschool.com/blog/top-10-ai-reproducibility-provenance-tooling-features-pros-cons-comparison/",
+      "snippet": "Introduction AI reproducibility and provenance tooling helps teams record exactly how an AI experiment, model, dataset, evaluation, or production result was created. Instead of relying on scattered notebooks, local files, command histories, and manually maintained spreadsheets, these tools capture important relationships between code, data, models, parameters, environments, experiments, and ..."
+    },
+    {
+      "title": "The Role of Provenance Modeling in Tracing and Reproducing ... - Springer",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-22208-4_33",
+      "snippet": "Ensuring the reproducibility of these experiments is critical for maintaining AI performance amidst subtle variations and large-scale changes. In this paper, we propose a provenance network model for cloud-based XAI pipelines."
+    },
+    {
+      "title": "Data Authenticity, Consent, & Provenance for AI are all broken:",
+      "url": "https://arxiv.org/html/2404.12691v1",
+      "snippet": "AI developers have an acute interest in data and its provenance for model performance, model behavior, and anticipate limitations and risks. While model performance generally improves with more data, the quality and diversity of data are also critical factors for reliable performance (Kaplan et al., 2020; Hoffmann et al., 2022)."
+    },
+    {
+      "title": "Co-constructing Explanations for AI Systems using Provenance",
+      "url": "https://arxiv.org/pdf/2507.17761",
+      "snippet": "Modern AI systems are complex workflows containing multiple components and data sources. Data provenance provides the ability to interrogate and potentially explain the outputs of these systems. However, provenance is often too detailed and not contextualized for the user trying to understand the AI system. In this work, we present our vision for an interactive agent that works together with ..."
+    },
+    {
+      "title": "AI Model Provenance: What to Record | Smart Logic AI",
+      "url": "https://www.smartlogicusa.com/ai-model-provenance-guide",
+      "snippet": "What to record for AI model provenance: provider, version, prompts, tools, inputs, reviewer actions, authorization, and why exact replay is often limited."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Efso/Nemotron-3-Nano-30B-A3B-GR",
+  "slug": "efso-nemotron-3-nano-30b-a3b-gr",
+  "author": "Efso",
+  "url": "https://huggingface.co/Efso/Nemotron-3-Nano-30B-A3B-GR",
+  "created_at": "2026-10-01T16:37:09.000Z",
+  "updated_at": "2026-10-01T17:08:05.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "el"
+  ],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "lora",
+    "greek",
+    "nemotron",
+    "case-study",
+    "text-generation",
+    "el",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577940288,
+  "parameters_human": "31.58B",
+  "storage_bytes": 58148612608,
+  "storage_human": "58.1 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "had a yummy milkshake #fart | Kaia Aeluin Alba (@kaia.aeluin",
+      "url": "https://urlebird.com/video/had-a-yummy-milkshake-7272830606533283115/",
+      "snippet": "We do not host any content on our servers, all videos, photos and previews hosted only on TikTok servers and all rights reserved by …"
+    },
+    {
+      "title": "British girl Aeluin farting - YouTube",
+      "url": "https://www.youtube.com/watch?v=jy3Ay0b7JvM",
+      "snippet": "Jul 16, 2023 · No description has been added to this video."
+    },
+    {
+      "title": "Eating like this to fart like this - YouTube",
+      "url": "https://www.youtube.com/shorts/S2ajfCVLsBM",
+      "snippet": "Jan 22, 2026 · @aeluinfarts Eating like this to fart like this Aeluin ranking your farts 542 11 Share"
+    },
+    {
+      "title": "Aeluin Farts Thisvid - Instagram",
+      "url": "https://www.instagram.com/popular/aeluin-farts-thisvid/",
+      "snippet": "Farting is a completely normal bodily function that happens when gas builds up in the digestive system and needs to be released. …"
+    },
+    {
+      "title": "Aeluin (@aeluin0) - Urlebird",
+      "url": "https://urlebird.com/user/aeluin0/",
+      "snippet": "Aeluin is a TikTok nano influencer with 80 videos and a normal engagement rate 3.08%. They post 0 videos in month and earn up to …"
+    }
+  ]
+}

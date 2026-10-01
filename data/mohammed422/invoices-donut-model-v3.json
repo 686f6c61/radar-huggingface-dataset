@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Mohammed422/invoices-donut-model-v3",
+  "slug": "mohammed422-invoices-donut-model-v3",
+  "author": "Mohammed422",
+  "url": "https://huggingface.co/Mohammed422/invoices-donut-model-v3",
+  "created_at": "2026-10-01T18:00:57.000Z",
+  "updated_at": "2026-10-01T18:52:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 202098104,
+  "parameters_human": "202.1M",
+  "storage_bytes": 8901805704,
+  "storage_human": "8.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mohammed422/invoices-donut-model-v1 · Hugging Face",
+      "url": "https://huggingface.co/Mohammed422/invoices-donut-model-v1",
+      "snippet": "Mohammed422 / invoices-donut-model-v1 like 0 Image-Text-to-Text Transformers Safetensors vision-encoder-decoder arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "scharnot/donut-invoices · Hugging Face",
+      "url": "https://huggingface.co/scharnot/donut-invoices",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - vanshkapadia11/Invoice-Extraction-AI: \"An end-to-end AI ...",
+      "url": "https://github.com/vanshkapadia11/Invoice-Extraction-AI",
+      "snippet": "An end-to-end intelligent document processing system that uses a fine-tuned Donut (Document Understanding Transformer) model to extract structured data from invoices without traditional OCR."
+    },
+    {
+      "title": "How to Fine-Tune the Donut Model - With Example Use Case",
+      "url": "https://www.freecodecamp.org/news/how-to-fine-tune-the-donut-model/",
+      "snippet": "Conclusion In this article, I have shown you how to easily fine-tune the Donut model using your own data, something which will hopefully result in improved accuracy for your fine-tuned Donut model. The applicabilities of the Donut model are many, and this is just one way to use it, which I hope is useful."
+    },
+    {
+      "title": "Donut - AI Model | Promptha | promptha",
+      "url": "https://promptha.com/models/donut",
+      "snippet": "Donut by willywongi transforms receipts, invoices, and forms into structured JSON data with advanced OCR technology. Extract key information automatically from document images without manual data entry, streamlining business workflows and document processing tasks."
+    }
+  ]
+}

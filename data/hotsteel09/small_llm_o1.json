@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "hotsteel09/small_llm_O1",
+  "slug": "hotsteel09-small_llm_o1",
+  "author": "hotsteel09",
+  "url": "https://huggingface.co/hotsteel09/small_llm_O1",
+  "created_at": "2026-10-01T16:22:47.000Z",
+  "updated_at": "2026-10-01T17:06:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "text-generation",
+    "conversational",
+    "chinese",
+    "gpt",
+    "from-scratch",
+    "tiny-llm",
+    "zh",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71397919,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "self-built Chinese dialogue corpus",
+      "metric": "Validation Loss",
+      "value": 0.1128
+    },
+    {
+      "task": null,
+      "dataset": "self-built Chinese dialogue corpus",
+      "metric": "Validation Perplexity",
+      "value": 1.12
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sapna Sappu (@sapna-586) - Tango Live",
+      "url": "https://www.tango.me/sapna-586",
+      "snippet": "Watch Sapna Sappu on Tango. Send gifts, join the chat and connect in real time."
+    },
+    {
+      "title": "OnlyFans",
+      "url": "https://onlyfans.com/sapnasappuu",
+      "snippet": "OnlyFans is the social platform revolutionizing creator and fan connections. The site is inclusive of artists and content creators from …"
+    },
+    {
+      "title": "Sapna Sappu OnlyFans VIP Live - Tnaflix.com",
+      "url": "https://www.tnaflix.com/amateur-porn/Sapna-Sappu-OnlyFans-VIP-Live/video9254583",
+      "snippet": "Sapna Sappu OnlyFans VIP Live"
+    },
+    {
+      "title": "SAPNA SAPPU Nude - AZNude",
+      "url": "https://www.aznude.com/view/celeb/s/sapnasappu.html",
+      "snippet": "AZNude has a global mission to organize celebrity nudity from television and make it universally free, accessible, and usable. Our …"
+    },
+    {
+      "title": "Cute_sapna Cam Model: Free Live Sex Show & Chat | Stripchat",
+      "url": "https://stripchat.com/cute_sapna",
+      "snippet": "Cute_sapna's Live Sex Show, Free Chat, Profile & Photos 🔥 Visit Cute_sapna Official Page Now! ️ Have Fun Guys"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sagnikM/hill-materials-qwen25-7b-priorlr1e-5-postlr1e-6-kl3e-3-v3-seed42-step250-prior",
+  "slug": "sagnikm-hill-materials-qwen25-7b-priorlr1e-5-postlr1e-6-kl3e-3-v3-seed42-step250-prior",
+  "author": "sagnikM",
+  "url": "https://huggingface.co/sagnikM/hill-materials-qwen25-7b-priorlr1e-5-postlr1e-6-kl3e-3-v3-seed42-step250-prior",
+  "created_at": "2026-10-01T02:40:51.000Z",
+  "updated_at": "2026-10-01T02:42:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693728,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sagnikM/hill-materials-qwen25-3b-priorlr1e-6-postlr1e-6-kl3e-4-v3 ...",
+      "url": "https://huggingface.co/sagnikM/hill-materials-qwen25-3b-priorlr1e-6-postlr1e-6-kl3e-4-v3-seed42-step250-prior",
+      "snippet": "sagnikM / hill-materials-qwen25-3b-priorlr1e-6-postlr1e-6-kl3e-4-v3-seed42-step250-prior Like 0 Safetensors qwen2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 3B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider ..."
+    },
+    {
+      "title": "sagnikM/hill-chem-qwen25-7b-priorlr1e-5-postlr1e-6-kl3e-4-1024x1024 ...",
+      "url": "https://huggingface.co/sagnikM/hill-chem-qwen25-7b-priorlr1e-5-postlr1e-6-kl3e-4-1024x1024-seed42-step250-reasoner",
+      "snippet": "sagnikM / hill-chem-qwen25-7b-priorlr1e-5-postlr1e-6-kl3e-4-1024x1024-seed42-step250-reasoner Like 0 Safetensors qwen2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 8B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "[2412.15115] Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2412.15115",
+      "snippet": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens ..."
+    },
+    {
+      "title": "Qwen2.5-Math Technical Report: Toward Mathematical Expert Model via ...",
+      "url": "https://arxiv.org/abs/2409.12122",
+      "snippet": "In this report, we present a series of math-specific large language models: Qwen2.5-Math and Qwen2.5-Math-Instruct-1.5B/7B/72B. The core innovation of the Qwen2.5 series lies in integrating the philosophy of self-improvement throughout the entire pipeline, from pre-training and post-training to inference: (1) During the pre-training phase, Qwen2-Math-Instruct is utilized to generate large ..."
+    },
+    {
+      "title": "Qwen2.5-VL — Megatron Bridge - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/nemo/megatron-bridge/latest/models/qwen/qwen2.5-vl.html",
+      "snippet": "Qwen2.5-VL # Qwen2.5-VL is a series of vision-language models developed by Alibaba Cloud that enable multimodal understanding across text, images, and videos. The models support various vision-language tasks including image understanding, visual question answering, and multimodal reasoning. NeMo Megatron Bridge supports finetuning Qwen2.5-VL models (3B, 7B, 32B, and 72B variants) on single ..."
+    }
+  ]
+}

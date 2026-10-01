@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hannahshs/hybrid-generation",
+  "slug": "hannahshs-hybrid-generation",
+  "author": "hannahshs",
+  "url": "https://huggingface.co/hannahshs/hybrid-generation",
+  "created_at": "2026-10-01T02:31:08.000Z",
+  "updated_at": "2026-10-01T02:31:13.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Average Height of Cat: 11 Breeds in Specific Comparison",
+      "url": "https://creatureclinic.com/average-height-of-cat/",
+      "snippet": "Sep 2, 2025 · The average cat height can vary, but domestic cats, on average, generally stand around 9 to 10 inches at the shoulder. …"
+    },
+    {
+      "title": "Average Height Of A Cat - Vet Explains Pets",
+      "url": "https://vetexplainspets.com/average-height-of-a-cat/",
+      "snippet": "In this article, we will explore the average height of a cat, as well as some interesting trends related to this topic. On average, …"
+    },
+    {
+      "title": "How Tall Is the Average Cat? - CatWiki",
+      "url": "https://www.catwiki.com/faqs/how-tall-is-the-average-cat/",
+      "snippet": "From cats that can fit in the palm of your hand to cats that can reach your counter without jumping, there are a wide array of heights …"
+    },
+    {
+      "title": "Average Cat Height - Vet Explains Pets",
+      "url": "https://vetexplainspets.com/average-cat-height/",
+      "snippet": "The average height of a cat can range from 8 inches to 10 inches at the shoulder, with some breeds reaching heights of up to 12 …"
+    },
+    {
+      "title": "Cat Breed Size Chart | Height, Weight and Length in \", cm",
+      "url": "https://chartfarosh.com/cat-breed-size-chart/",
+      "snippet": "Explore Cat Breed Size Chart for comprehensive details on height, weight, and length in inches and centimeters for various cat breeds."
+    }
+  ]
+}

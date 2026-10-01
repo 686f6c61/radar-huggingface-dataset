@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anastasianovikov/blip-multitask3-2023",
+  "slug": "anastasianovikov-blip-multitask3-2023",
+  "author": "anastasianovikov",
+  "url": "https://huggingface.co/anastasianovikov/blip-multitask3-2023",
+  "created_at": "2026-10-01T02:23:56.000Z",
+  "updated_at": "2026-10-01T02:24:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anastasianovikov (Anastasia Novikov) - Hugging Face",
+      "url": "https://huggingface.co/anastasianovikov/models",
+      "snippet": "User profile of Anastasia Novikov on Hugging Face"
+    },
+    {
+      "title": "dingyuc03/blip-multitask · Hugging Face",
+      "url": "https://huggingface.co/dingyuc03/blip-multitask",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BLIP-3: A Family of Open Large Multimodal Models - arXiv.org",
+      "url": "https://arxiv.org/html/2408.08872v4",
+      "snippet": "Abstract This paper introduces BLIP-3, an open framework for developing Large Multimodal Models (LMMs). The framework comprises meticulously curated datasets, a training recipe, model architectures, and a resulting suite of LMMs. We release 4B and 14B models, including both the pre-trained base model and the instruction fine-tuned ones."
+    },
+    {
+      "title": "dingyuc03/blip-multitask at main - Hugging Face",
+      "url": "https://huggingface.co/dingyuc03/blip-multitask/tree/main",
+      "snippet": "dingyuc03 / blip-multitask Like 0 Safetensors PyTorch blip multitask License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new main blip-multitask 208 kB Ctrl+K Ctrl+K 1 contributor History:2 commits dingyuc03 Add run.py, README.md, config.json, training_args.json, model.safetensors f151c5e verifiedabout 5 hours ..."
+    },
+    {
+      "title": "xGen-MM (BLIP-3): A Family of Open Large Multimodal Models",
+      "url": "https://arxiv.org/abs/2408.08872",
+      "snippet": "This paper introduces BLIP-3, an open framework for developing Large Multimodal Models (LMMs). The framework comprises meticulously curated datasets, a training recipe, model architectures, and a resulting suite of LMMs. We release 4B and 14B models, including both the pre-trained base model and the instruction fine-tuned ones. Our models undergo rigorous evaluation across a range of tasks ..."
+    }
+  ]
+}

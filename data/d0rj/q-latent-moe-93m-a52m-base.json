@@ -1,0 +1,172 @@
+{
+  "schema": 1,
+  "id": "d0rj/q-latent-moe-93M-A52M-base",
+  "slug": "d0rj-q-latent-moe-93m-a52m-base",
+  "author": "d0rj",
+  "url": "https://huggingface.co/d0rj/q-latent-moe-93M-A52M-base",
+  "created_at": "2026-10-01T17:53:10.000Z",
+  "updated_at": "2026-10-01T18:02:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "q_latent_moe",
+    "text-generation",
+    "pretrained",
+    "from-scratch",
+    "tiny-llm-ablation",
+    "custom_code",
+    "causal-lm",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 92903680,
+  "parameters_human": "92.9M",
+  "storage_bytes": 382739782,
+  "storage_human": "383 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Continuation likelihood",
+      "dataset": "HellaSwag",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.30033857797251545
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "ARC-Easy",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.4393939393939394
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "ARC-Challenge",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.24061433447098976
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "PIQA",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.6088139281828074
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "WinoGrande",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.49329123914759276
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "OpenBookQA",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.31
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "BoolQ",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.5051987767584097
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "LAMBADA OpenAI",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.22627595575392975
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "ArithMark-3",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.34
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "Balanced COPA",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.56
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "BLiMP",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.7584179104477612
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "CommonsenseQA",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.1981981981981982
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "MMLU continuation",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.2608602763139154
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "SciQ (with support)",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.672
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "TruthfulQA MC2",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.4301967925027518
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "BananaMind Base 1.1",
+      "metric": "raw_accuracy (fraction; full comparison protocol)",
+      "value": 0.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "Latent · AI art gallery — every image keeps its prompt",
+      "url": "https://latent.moe/",
+      "snippet": "A gallery for AI-generated art that keeps the full generation recipe — prompt, model, sampler, seed and Danbooru tags — searchable, on display, and analyzable."
+    },
+    {
+      "title": "d0rj/q-51M-base · Hugging Face",
+      "url": "https://huggingface.co/d0rj/q-51M-base",
+      "snippet": "Q-51M Base A 50,878,208-parameter English base model in the Tiny llm ablation experiment. Trained from scratch on exactly 3,932,160,000 source tokens over 15,000 optimizer steps. The token count measures processed input blocks, not unique text or supervised target tokens."
+    },
+    {
+      "title": "LatentMoE: Toward Optimal Accuracy per FLOP and Parameter in Mixture of ...",
+      "url": "https://arxiv.org/pdf/2601.18089",
+      "snippet": "LatentMoE decouples expert routing and computation from the model hidden dimension by projecting incoming activations into a shared low-dimensional latent space prior to expert processing (Figure 1). The latent dimension serves as a direct control knob for computational cost, communication volume, and expert parameter size."
+    },
+    {
+      "title": "d0rj (Dmitry Balobin) - Hugging Face",
+      "url": "https://huggingface.co/d0rj",
+      "snippet": "Sentence Similarity • 44.8M • Apr 12, 2024 • 75 • 4 Translated into Russian"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    }
+  ]
+}

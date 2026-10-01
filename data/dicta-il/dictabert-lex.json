@@ -5,7 +5,7 @@
   "author": "dicta-il",
   "url": "https://huggingface.co/dicta-il/dictabert-lex",
   "created_at": "2024-01-08T21:53:38.000Z",
-  "updated_at": "2026-09-15T21:45:03.000Z",
+  "updated_at": "2026-09-30T22:11:44.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 22244,
+  "downloads_30d": 22174,
   "trending_score": 0,
   "parameters": 184474880,
   "parameters_human": "184.5M",

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mjkenney/story-imprinting-qwen-adapters",
+  "slug": "mjkenney-story-imprinting-qwen-adapters",
+  "author": "mjkenney",
+  "url": "https://huggingface.co/mjkenney/story-imprinting-qwen-adapters",
+  "created_at": "2026-10-01T02:43:17.000Z",
+  "updated_at": "2026-10-01T02:44:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "story-imprinting",
+    "qwen",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2560507776,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accounts • Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login",
+      "snippet": "Log in to Snapchat on the web to manage your account, chat, and call with friends."
+    },
+    {
+      "title": "Snapchat for Web.",
+      "url": "https://www.snapchat.com/web",
+      "snippet": "Try the new Snapchat for Web on your computer to chat, call friends, use Lenses, and more"
+    },
+    {
+      "title": "I’m having issues with a recycled mobile number – Snapchat Support",
+      "url": "https://help.snapchat.com/hc/en-us/articles/43355350345492-I-m-having-issues-with-a-recycled-mobile-number",
+      "snippet": "Snapchat Support Safety and Security Hacked or Compromised Accounts I’m having issues with a recycled mobile number What is a …"
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/welcome",
+      "snippet": ""
+    },
+    {
+      "title": "#login | Snapchat",
+      "url": "https://www.snapchat.com/tag/login",
+      "snippet": "2 days ago · snapchat login process snapchat profile customization avatar creation tutorial snapchat account deletion snapchat …"
+    }
+  ]
+}

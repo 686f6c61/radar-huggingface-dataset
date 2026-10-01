@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "vkovtun/llama-text-to-sql-2026-10-01_20.12.15-Llama-3.1-8B-Instruct-finetune-QLORA",
+  "slug": "vkovtun-llama-text-to-sql-2026-10-01_20-12-15-llama-3-1-8b-instruct-finetune-qlora",
+  "author": "vkovtun",
+  "url": "https://huggingface.co/vkovtun/llama-text-to-sql-2026-10-01_20.12.15-Llama-3.1-8B-Instruct-finetune-QLORA",
+  "created_at": "2026-10-01T18:12:37.000Z",
+  "updated_at": "2026-10-01T18:15:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 101162017,
+  "storage_human": "101 MB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · vkovtun/llama-text-to-sql-2026-09-22_11.38.10-finetune ...",
+      "url": "https://huggingface.co/vkovtun/llama-text-to-sql-2026-09-22_11.38.10-finetune-QLORA/blob/main/README.md",
+      "snippet": "Instructions to use vkovtun/llama-text-to-sql-2026-09-22_11.38.10-finetune-QLORA with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "README.md · vkovtun/llama-text-to-sql-2026-09-24_08.21.54-finetune ...",
+      "url": "https://huggingface.co/vkovtun/llama-text-to-sql-2026-09-24_08.21.54-finetune-QLORA-8B/blob/main/README.md",
+      "snippet": "Instructions to use vkovtun/llama-text-to-sql-2026-09-24_08.21.54-finetune-QLORA-8B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - HugoS7/llama-text2sql",
+      "url": "https://github.com/HugoS7/llama-text2sql",
+      "snippet": "Fine-tuning Llama 3.1 8B for Text-to-SQL (QLoRA) Turn a natural-language question plus a database schema into an executable SQL query. Fine-tuned with QLoRA (4-bit NF4 base + LoRA adapters) on a single GPU, and — the part that matters — evaluated with execution accuracy against real SQLite databases rather than by string-matching the output."
+    },
+    {
+      "title": "SQL-LLaMA2/README.md at main - GitHub",
+      "url": "https://github.com/DominikLindorfer/SQL-LLaMA2/blob/main/README.md",
+      "snippet": "LLaMA-2 Finetuned for Text-2-SQL. Contribute to DominikLindorfer/SQL-LLaMA2 development by creating an account on GitHub."
+    },
+    {
+      "title": "Easily Finetune Llama 2 for Your Text-to-SQL Applications",
+      "url": "https://medium.com/llamaindex-blog/easily-finetune-llama-2-for-your-text-to-sql-applications-ecd53640e10d",
+      "snippet": "In this tutorial, we show you how you can finetune Llama 2 on a text-to-SQL dataset, and then use it for structured analytics against any SQL database using the capabilities of LlamaIndex."
+    }
+  ]
+}

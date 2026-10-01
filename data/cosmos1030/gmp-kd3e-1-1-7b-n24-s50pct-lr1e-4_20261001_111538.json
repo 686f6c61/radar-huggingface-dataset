@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "cosmos1030/gmp-kd3e-1-1.7b-n24-s50pct-lr1e-4_20261001_111538",
+  "slug": "cosmos1030-gmp-kd3e-1-1-7b-n24-s50pct-lr1e-4_20261001_111538",
+  "author": "cosmos1030",
+  "url": "https://huggingface.co/cosmos1030/gmp-kd3e-1-1.7b-n24-s50pct-lr1e-4_20261001_111538",
+  "created_at": "2026-10-01T02:15:38.000Z",
+  "updated_at": "2026-10-01T02:16:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 7587481667,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cosmos1030/gmp-kd3e-1-s50pct-lr1e-4_20260913_021431 · Hugging Face",
+      "url": "https://huggingface.co/cosmos1030/gmp-kd3e-1-s50pct-lr1e-4_20260913_021431",
+      "snippet": "cosmos1030 / gmp-kd3e-1-s50pct-lr1e-4_20260913_021431 Like 0 Safetensors qwen3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 8B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask ..."
+    },
+    {
+      "title": "gmp-kd3e-1-s70pct-lr1e-4_20260827_230324 - Hugging Face",
+      "url": "https://huggingface.co/cosmos1030/gmp-kd3e-1-s70pct-lr1e-4_20260827_230324",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cosmos1030/gmp-kd3e-1-s50pct-lr5e-5_20260827_133259",
+      "url": "https://featherless.ai/models/cosmos1030/gmp-kd3e-1-s50pct-lr5e-5_20260827_133259",
+      "snippet": "The cosmos1030/gmp-kd3e-1-s50pct-lr5e-5_20260827_133259 model is an 8 billion parameter language model based on the Qwen3-8B architecture. It incorporates a TR-GMP capped-PGD &#x27;during growth&#x27; variant with 50% unstructured data, utilizing a klgate mechanism. This model is specifically designed for general language understanding and generation tasks, demonstrating strong performance across five ..."
+    },
+    {
+      "title": "Gmp Kd3e 1 S80pct Lr1e 4 20260916 220740 by cosmos1030",
+      "url": "https://llm-explorer.com/model/cosmos1030%2Fgmp-kd3e-1-s80pct-lr1e-4_20260916_220740,7iZK8NnGiTqYx9ZI1FgZDg",
+      "snippet": "Rank the Gmp Kd3e 1 S80pct Lr1e 4 20260916 220740 capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Math Solver - Trusted Online AI Math Calculator | Symbolab",
+      "url": "https://en.symbolab.com/",
+      "snippet": "Symbolab: equation search and math solver - solves algebra, trigonometry and calculus problems step by step"
+    }
+  ]
+}

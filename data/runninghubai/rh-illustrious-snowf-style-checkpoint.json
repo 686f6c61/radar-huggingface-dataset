@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-illustrious-snowf-style-checkpoint",
+  "slug": "runninghubai-rh-illustrious-snowf-style-checkpoint",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-illustrious-snowf-style-checkpoint",
+  "created_at": "2026-10-01T13:00:28.000Z",
+  "updated_at": "2026-10-01T13:09:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6938238280,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-illustrious-snowmix-style-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-illustrious-snowmix-style-checkpoint",
+      "snippet": "RunningHubAI / rh-illustrious-snowmix-style-checkpoint Like 0 comfyui checkpoint Model card FilesFiles and versions xet Community Copy to bucket new rh-illustrious-snowmix-style-checkpoint Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "Illustrious Snowmix Style - RunningHub Stable Diffusion & Flux Checkpoint",
+      "url": "https://www.runninghub.ai/model/public/2074494007593496578",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI/rh-illustrious-snow2.5dharem-style-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-illustrious-snow2.5dharem-style-checkpoint",
+      "snippet": "This repository provides rh-illustrious-snow2.5dharem-style-checkpoint weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "Illustrious SnowF Style - v1.0 | Illustrious Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2830020/illustrious-snowf-style",
+      "snippet": "Illustrious SnowF Style There are no comments for this model yet. Be the first to let the people know about this model by leaving your comment."
+    },
+    {
+      "title": "Illustrious SnowF Style - v1.0 | TensorHub Art",
+      "url": "https://tensorhub.art/models/1028481985036725479",
+      "snippet": "Download Illustrious SnowF Style - free CHECKPOINT Illustrious AI model on TENSORHUB ART. ILLUSTRIOUS, BASE MODEL. By poron"
+    }
+  ]
+}

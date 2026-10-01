@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "podhajskimarcin/evt-ts1b-op-bridge-mix",
+  "slug": "podhajskimarcin-evt-ts1b-op-bridge-mix",
+  "author": "podhajskimarcin",
+  "url": "https://huggingface.co/podhajskimarcin/evt-ts1b-op-bridge-mix",
+  "created_at": "2026-10-01T14:29:26.000Z",
+  "updated_at": "2026-10-01T14:30:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "elicit-vs-teach",
+    "mars-v",
+    "geode",
+    "tinystories-1b",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4943274328,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solitaire - Play Online & 100% Free",
+      "url": "https://solitaired.com/",
+      "snippet": "Play Solitaire online for free. No download required. Play full screen and try over 100 games like Klondike, Spider Solitaire, and …"
+    },
+    {
+      "title": "Free online Solitaire",
+      "url": "https://www.solitr.com/",
+      "snippet": "How To Play Solitaire."
+    },
+    {
+      "title": "Klondike Solitaire - Play Online & 100% Free | Solitaired.com",
+      "url": "https://solitaired.com/klondike-solitaire",
+      "snippet": "Play the classic Klondike Solitaire for free with no download or registration required. We have Turn 1, Turn 3, and Double Klondike …"
+    },
+    {
+      "title": "Play Free Solitaire Online – No Download, Full Screen Fun",
+      "url": "https://www.freesolitaire.com/",
+      "snippet": "Play classic Solitaire games online for free, like Klondike, Spider, and Freecell. Full screen, no download or registration—great fun …"
+    },
+    {
+      "title": "Solitaire - Play Online for Free",
+      "url": "https://www.solitairebliss.com/",
+      "snippet": "Play unlimited games of Solitaire for free on Solitaire Bliss. Track your scores and personal records, complete daily challenges, and …"
+    }
+  ]
+}

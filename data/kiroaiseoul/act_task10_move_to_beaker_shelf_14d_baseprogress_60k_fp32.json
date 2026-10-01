@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/act_task10_move_to_beaker_shelf_14D_baseprogress_60k_fp32",
+  "slug": "kiroaiseoul-act_task10_move_to_beaker_shelf_14d_baseprogress_60k_fp32",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/act_task10_move_to_beaker_shelf_14D_baseprogress_60k_fp32",
+  "created_at": "2026-10-01T13:27:59.000Z",
+  "updated_at": "2026-10-01T13:28:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:kiroaiseoul/task10_move_to_beaker_shelf_14D_baseprogress",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51689104,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206791272,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kiroaiseoul/act_task10_move_to_beaker_shelf_14D_100k_fp16c · Hugging Face",
+      "url": "https://huggingface.co/kiroaiseoul/act_task10_move_to_beaker_shelf_14D_100k_fp16c",
+      "snippet": "Instructions to use kiroaiseoul/act_task10_move_to_beaker_shelf_14D_100k_fp16c with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "task10_move_to_beaker_shelf - Hugging Face",
+      "url": "https://huggingface.co/datasets/kiroaiseoul/task10_move_to_beaker_shelf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "task10_move_to_beaker_shelf_14D - selectdataset.com",
+      "url": "https://www.selectdataset.com/dataset/53107d7094ce34adfff68c6f4237b0bc/task10-move-to-beaker-shelf-14d",
+      "snippet": "kiroaiseoul发布的task10_move_to_beaker_shelf_14D，关于该数据集由LeRobot创建，针对移动AI机器人执行&#x27;移动到烧杯架&#x27;任务，包含107个 ..."
+    },
+    {
+      "title": "task10_move_to_beaker_shelf - selectdataset.com",
+      "url": "https://www.selectdataset.com/dataset/e20f9486a071c1cfc24bb276e7af2cce/task10-move-to-beaker-shelf",
+      "snippet": "遇见数据集收录的task10_move_to_beaker_shelf，关于该数据集是使用LeRobot框架创建的机器人操控数据集，任务为将烧杯移动到架子上（task10_move_to_beaker_shelf）。数据集包含107个演示片段，共39758帧，由mobileai机器人采集。"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Our latest series of Gemini models combine frontier intelligence with action. Built to help you execute complex, multi-step workflows."
+    }
+  ]
+}

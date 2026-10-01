@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nikitamen/video-understanding",
+  "slug": "nikitamen-video-understanding",
+  "author": "nikitamen",
+  "url": "https://huggingface.co/nikitamen/video-understanding",
+  "created_at": "2026-10-01T13:36:18.000Z",
+  "updated_at": "2026-10-01T13:36:23.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Awesome-LLMs-for-Video-Understanding - GitHub",
+      "url": "https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding",
+      "snippet": "📢 We&#x27;ve recently updated our survey: \"Video Understanding with Large Language Models: A Survey\"! This comprehensive survey covers video understanding techniques powered by large language models (Vid-LLMs), training strategies, relevant tasks, datasets, benchmarks, and evaluation methods ..."
+    },
+    {
+      "title": "GitHub - Grigorij-Dudnik/video-understanding-local: AI-powered video ...",
+      "url": "https://github.com/Grigorij-Dudnik/video-understanding-local",
+      "snippet": "🎬 Video Understanding Local AI-powered video analysis that combines audio transcription and visual understanding - running entirely on your machine! Perfect for organizing raw footage, preparing video montages, or extracting insights from your video content - all while keeping your data completely private on your own machine."
+    },
+    {
+      "title": "Video-MME Leaderboard & Scores — October 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/benchmarks/videomme",
+      "snippet": "Video-MME scores for 3 AI models, compiled from published reports. Display only on BenchLM and excluded from overall rankings. A comprehensive benchmark for multimodal large language models on video understanding, covering temporal reasoning, perception, and question answering over videos."
+    },
+    {
+      "title": "Video Understanding: From Geometry and Semantics to Unified Models",
+      "url": "https://arxiv.org/abs/2603.17840",
+      "snippet": "Video understanding aims to enable models to perceive, reason about, and interact with the dynamic visual world. In contrast to image understanding, video understanding inherently requires modeling temporal dynamics and evolving visual context, placing stronger demands on spatiotemporal reasoning and making it a foundational problem in computer vision. In this survey, we present a structured ..."
+    },
+    {
+      "title": "[2608.14718] VideoGAIA: A Benchmark for General AI Assistants on ...",
+      "url": "https://arxiv.org/abs/2608.14718",
+      "snippet": "Video understanding is a fundamental task for evaluating the capabilities of multimodal large language models (MLLMs). However, existing leading models have already achieved approximately 90% accuracy on the Video-MME leaderboard, suggesting that conventional single-turn video understanding tasks are becoming increasingly saturated and insufficient for assessing the intelligence of advanced ..."
+    }
+  ]
+}

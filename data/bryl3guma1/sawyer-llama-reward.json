@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bryl3guma1/sawyer-llama-reward",
+  "slug": "bryl3guma1-sawyer-llama-reward",
+  "author": "bryl3guma1",
+  "url": "https://huggingface.co/bryl3guma1/sawyer-llama-reward",
+  "created_at": "2026-10-01T02:23:47.000Z",
+  "updated_at": "2026-10-01T02:23:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124646401,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498609748,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cjcjee/sawyer-llama-reward · Hugging Face",
+      "url": "https://huggingface.co/cjcjee/sawyer-llama-reward",
+      "snippet": "cjcjee / sawyer-llama-reward Like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "profoz/sawyer-llama-reward · Hugging Face",
+      "url": "https://huggingface.co/profoz/sawyer-llama-reward",
+      "snippet": "profoz / sawyer-llama-reward like 0 Text ClassificationTransformersSafetensorsrobertaInference Endpoints Model card FilesFiles and versions Community Train Deploy Use in Transformers No model card"
+    },
+    {
+      "title": "foundations-of-gen-ai/notebooks/SAWYER_LLAMA_SFT.ipynb at main ... - GitHub",
+      "url": "https://github.com/sinanuozdemir/foundations-of-gen-ai/blob/main/notebooks/SAWYER_LLAMA_SFT.ipynb",
+      "snippet": "Transformer Architectures for Generative AI. Contribute to sinanuozdemir/foundations-of-gen-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "start-guide-to-llms/notebooks/10_SAWYER_Reward_Model.ipynb at ... - GitHub",
+      "url": "https://github.com/OptimisedLEarning/start-guide-to-llms/blob/main/notebooks/10_SAWYER_Reward_Model.ipynb",
+      "snippet": "Official Repo for \"Large Language Models\". Contribute to OptimisedLEarning/start-guide-to-llms development by creating an account on GitHub."
+    },
+    {
+      "title": "Llama (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+      "snippet": "Llama[a] (\" Large Language Model Meta AI \" serving as a backronym) is a family of large language models (LLMs) released by Meta AI starting in February 2023. [3] Llama models come in different sizes, ranging from 1 billion to 2 trillion parameters. Initially only a foundation model, [4] starting with Llama 2, Meta AI released instruction fine-tuned versions alongside foundation models. [5 ..."
+    }
+  ]
+}

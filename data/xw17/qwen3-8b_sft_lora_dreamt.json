@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen3-8B_SFT_lora_dreamt",
+  "slug": "xw17-qwen3-8b_sft_lora_dreamt",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen3-8B_SFT_lora_dreamt",
+  "created_at": "2026-10-01T02:45:08.000Z",
+  "updated_at": "2026-10-01T02:45:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98783234,
+  "storage_human": "99 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xw17/Qwen3-4B-Instruct-2507_SFT_lora_dreamt · Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen3-4B-Instruct-2507_SFT_lora_dreamt",
+      "snippet": "Instructions to use xw17/Qwen3-4B-Instruct-2507_SFT_lora_dreamt with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen SFT - KTransformers Docs",
+      "url": "https://ktransformers.net/en/docs/fine-tuning/qwen",
+      "snippet": "Qwen MoE KTransformers LoRA SFT tutorial status Use the chat assistant for questions while reading the docs. It can help summarize KTransformers documentation, compare inference and fine-tuning paths, and walk through installation or configuration problems."
+    },
+    {
+      "title": "qwen3_8b_sft_lora · Models",
+      "url": "https://www.modelscope.cn/models/mc36473/qwen3_8b_sft_lora",
+      "snippet": "This model is a fine-tuned version of /root/Qwen3-8B on the stance_task_sharegpt dataset. Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during training: learning ..."
+    },
+    {
+      "title": "LoRA Fine-tuning | QwenLM/Qwen | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen/4.2-lora-fine-tuning",
+      "snippet": "LoRA allows you to fine-tune large language models with significantly fewer trainable parameters than full fine-tuning, resulting in faster training, reduced memory requirements, and smaller adapter checkpoints."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    }
+  ]
+}

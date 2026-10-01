@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "advaitsingh/course-classification",
+  "slug": "advaitsingh-course-classification",
+  "author": "advaitsingh",
+  "url": "https://huggingface.co/advaitsingh/course-classification",
+  "created_at": "2026-10-01T02:37:39.000Z",
+  "updated_at": "2026-10-01T02:37:43.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Build Regression, Classification, and Clustering Models",
+      "url": "https://www.coursera.org/learn/build-regression-classification-clustering-models",
+      "snippet": "Offered by CertNexus. In most cases, the ultimate goal of a machine learning project is to produce a model. Models make decisions, ... Enroll for free."
+    },
+    {
+      "title": "Machine Learning: Classification | Coursera",
+      "url": "https://www.coursera.org/learn/ml-classification",
+      "snippet": "Classification is one of the most widely used techniques in machine learning, with a broad array of applications, including sentiment analysis, ad targeting, spam detection, risk assessment, medical diagnosis and image classification. The core goal of classification is to predict a category or class y from some inputs x. Through this course, you will become familiar with the fundamental models ..."
+    },
+    {
+      "title": "Awesome Free University AI/ML Course Notes - GitHub",
+      "url": "https://github.com/MarcosSete/awesome-free-ai-course-notes",
+      "snippet": "A curated list of official, free, written course notes on AI/Machine Learning from top universities worldwide — the kind some departments publish instead of assigning a paid textbook. This is a companion project to Awesome Free AI Books, focused on a different (and much rarer) kind of resource: course notes written and published directly by the instructors themselves, freely available, and ..."
+    },
+    {
+      "title": "advaitsingh/study-embodied-ai · Hugging Face",
+      "url": "https://huggingface.co/advaitsingh/study-embodied-ai",
+      "snippet": "Notes on Embodied AI Repository summary This is an exploratory note for Embodied AI. It records the intended comparison, likely confounders, and reproducibility requirements before any benchmark result is reported."
+    },
+    {
+      "title": "Build a Course Classification AI: Complete Guide to LLM Finetuning",
+      "url": "https://www.youtube.com/watch?v=YC1HHK4gQGg",
+      "snippet": "In this comprehensive tutorial, we&#x27;ll dive deep into the world of Large Language Model finetuning by building a practical course classification system from scratch. Perfect for ML engineers ..."
+    }
+  ]
+}

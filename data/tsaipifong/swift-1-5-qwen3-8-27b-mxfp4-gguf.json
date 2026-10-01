@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tsaipifong/Swift-1.5-Qwen3.8-27b-MXFP4-GGUF",
+  "slug": "tsaipifong-swift-1-5-qwen3-8-27b-mxfp4-gguf",
+  "author": "tsaipifong",
+  "url": "https://huggingface.co/tsaipifong/Swift-1.5-Qwen3.8-27b-MXFP4-GGUF",
+  "created_at": "2026-10-01T13:12:51.000Z",
+  "updated_at": "2026-10-01T13:19:58.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mxfp4",
+    "qwen3.8",
+    "mtp",
+    "llama.cpp",
+    "text-generation",
+    "base_model:ukisai/Swift-1.5-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-1.5-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 47426542240,
+  "storage_human": "47.4 GB",
+  "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Swift 1.5 Qwen3.8-27B | UkisAI",
+      "url": "https://ukisai.com/swift-1-5-27b",
+      "snippet": "The results below compare Qwen3.8-27B, the foundation base model, Swift 1.0, the first UkisAI adaptation, and Swift 1.5. All three use the same saved evaluation protocols, and every score is a final five-repeat aggregate."
+    },
+    {
+      "title": "README.md · ukisai/Swift-1.5-Qwen3.8-27B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GGUF/blob/main/README.md",
+      "snippet": "The external results below compare Qwen3.8-27B, the foundation base model, and Swift 1.5. Both models use the same saved evaluation protocols, and all scores are reported as final aggregate percentages."
+    },
+    {
+      "title": "Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF - Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF/blob/main/Swift-1.5-Qwen3.8-27B-GSQ-RCO-IQ3_S-mtp.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF",
+      "snippet": "Swift 1.5 Qwen3.8-27B · GSQ-RCO Compact, mixed-precision GGUF quantizations of Swift 1.5 Qwen3.8-27B, with Swift-specific refinement using the per-tensor allocations from ISTA-DASLab&#x27;s GSQ-RCO release. Swift 1.5 builds on Swift 1.0 through post-training focused on long-horizon, agentic and coding tasks, improving overall performance while using fewer thinking tokens. See the original model ..."
+    },
+    {
+      "title": "Models - UkisAI",
+      "url": "https://ukisai.com/models",
+      "snippet": "Swift 1.5 Qwen3.8-27B is UkisAI&#x27;s reasoning-efficient derivative of Qwen3.8-27B. It uses 58.5% fewer thinking tokens while scoring 0.35% higher than the base, for a 9.18× speed-up on several tasks."
+    }
+  ]
+}

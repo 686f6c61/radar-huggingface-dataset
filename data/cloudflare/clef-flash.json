@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Cloudflare/clef-flash",
+  "slug": "cloudflare-clef-flash",
+  "author": "Cloudflare",
+  "url": "https://huggingface.co/Cloudflare/clef-flash",
+  "created_at": "2026-09-30T21:15:36.000Z",
+  "updated_at": "2026-10-01T15:23:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "clef",
+    "cloudflare",
+    "systemone",
+    "qwen3.5",
+    "post-train",
+    "image-text-to-typed-output",
+    "multimodal",
+    "structured-output",
+    "classification",
+    "custom-code",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 34,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 19083248461,
+  "storage_human": "19.1 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cloudflare: Build for the agent era",
+      "url": "https://www.cloudflare.com/",
+      "snippet": "Welcome to Cloudflare - Powering the next generation of applications"
+    },
+    {
+      "title": "Cloudflare Dashboard | Manage Your Account",
+      "url": "https://dash.cloudflare.com/login",
+      "snippet": "Log in to the Cloudflare dashboard. Make your websites, apps, and networks fast and secure. Build modern apps on our developer …"
+    },
+    {
+      "title": "Connectez, protégez et développez sur tous les fronts - Cloudflare",
+      "url": "https://www.cloudflare.com/fr-fr/",
+      "snippet": "Rendez vos collaborateurs, vos applications et vos réseaux plus rapides et plus sûrs, partout dans le monde, tout en réduisant la …"
+    },
+    {
+      "title": "Cloudflare - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cloudflare",
+      "snippet": "Cloudflare, Inc., is an American technology company headquartered in San Francisco, California, that provides a range of internet …"
+    },
+    {
+      "title": "Download Cloudflare One Client stable releases",
+      "url": "https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/download/",
+      "snippet": "3 days ago · Reference information for Download Cloudflare One Client stable releases in Zero Trust."
+    }
+  ]
+}

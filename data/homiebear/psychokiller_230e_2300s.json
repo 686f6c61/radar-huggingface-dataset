@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Homiebear/PsychoKiller_230e_2300s",
+  "slug": "homiebear-psychokiller_230e_2300s",
+  "author": "Homiebear",
+  "url": "https://huggingface.co/Homiebear/PsychoKiller_230e_2300s",
+  "created_at": "2026-10-01T18:07:37.000Z",
+  "updated_at": "2026-10-01T18:10:07.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75721975,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Homiebear/Terminator1000_230e_5060s · Hugging Face",
+      "url": "https://huggingface.co/Homiebear/Terminator1000_230e_5060s",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Homiebear ( Homie Bear) - Hugging Face",
+      "url": "https://huggingface.co/Homiebear/models",
+      "snippet": "updated a model 15 minutes ago Homiebear/AdamFromHr_350e_11900s published a model 16 minutes ago Homiebear/AdamFromHr_350e_11900s View all activity"
+    },
+    {
+      "title": "Homiebear/Terminator1000_230e_5060s at main - Hugging Face",
+      "url": "https://huggingface.co/Homiebear/Terminator1000_230e_5060s/tree/main",
+      "snippet": "Homiebear / Terminator1000_230e_5060s Like 0 License:openrail Model card FilesFiles and versions xet Community Copy to bucket new main Terminator1000_230e_5060s 116 MB Ctrl+K Ctrl+K 1 contributor History:2 commits Homiebear Upload Terminator1000.zip 2ffc5f6 verified10 months ago .gitattributes Safe 1.52 kBinitial commit10 months ago README.md Safe 29 Bytesinitial commit10 months ago ..."
+    },
+    {
+      "title": "T-1000 (Mortal Kombat 1, 230 Epochs, Rmvpe) AI Voice Model",
+      "url": "https://voice-models.com/model/1J5u94iphh0",
+      "snippet": "T-1000 (Mortal Kombat 1, 230 Epochs, Rmvpe) AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Homiebear ( Homie Bear) - Hugging Face",
+      "url": "https://huggingface.co/Homiebear/datasets",
+      "snippet": "Homiebear Follow gtkunit&#x27;s profile pictureFurnTheFurnace&#x27;s profile pictureBadlyDawnBoy&#x27;s profile picture 3 followers · 0 following"
+    }
+  ]
+}

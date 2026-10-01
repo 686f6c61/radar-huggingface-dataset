@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "baiango/ling30-m4-r16e4",
+  "slug": "baiango-ling30-m4-r16e4",
+  "author": "baiango",
+  "url": "https://huggingface.co/baiango/ling30-m4-r16e4",
+  "created_at": "2026-10-01T16:01:11.000Z",
+  "updated_at": "2026-10-01T16:06:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "text-generation",
+    "creative-writing",
+    "literary-fiction",
+    "base_model:inclusionAI/Ling-3.0-tiny",
+    "base_model:adapter:inclusionAI/Ling-3.0-tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33293244,
+  "storage_human": "33 MB",
+  "base_model": "inclusionAI/Ling-3.0-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "baiango/ling30-m4r16 · Hugging Face",
+      "url": "https://huggingface.co/baiango/ling30-m4r16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dockerfile · baiango/ling30-m4r16-demo at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/baiango/ling30-m4r16-demo/blob/main/Dockerfile",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kling AI Video Generator — Kling 3.0 With Sound, Up to 4K",
+      "url": "https://kenerateai.com/kling-ai-video-generator",
+      "snippet": "Kling AI video generator: run Kling 3.0 (up to 15 s with sound, a 4K version too) plus 2.6, 2.1 and 2.0 in one studio. Real Kling 3.0 clips inside."
+    },
+    {
+      "title": "How to Run Ling 3.0 Flash Locally: Hardware, Setup, and Optimization",
+      "url": "https://www.aimadetools.com/blog/how-to-run-ling-3-0-flash-locally/",
+      "snippet": "Complete guide to self-hosting Ling 3.0 Flash locally with Ollama, vLLM, and Docker. Hardware requirements and expected performance."
+    },
+    {
+      "title": "Ling-3.0 tiny & flash Base Models 正式开源_魔搭ModelScope社区-ModelScope魔搭社区",
+      "url": "https://modelscope.csdn.net/6a87b327662f9a54cb9f118a.html",
+      "snippet": "开源之后，越来越多开发者开始基于 Ling-3.0 探索自己的应用场景，灵波也收到了很多来自社区真实的使用和反馈。 大家普遍反馈：希望拥有一个更开放、更具可塑性的 Base Model，以便基于自己的数据、任务和目标开 魔搭ModelScope社区 ModelScope魔搭社区"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "guqinlizhixian/jzpocr-lc-parent-b",
+  "slug": "guqinlizhixian-jzpocr-lc-parent-b",
+  "author": "guqinlizhixian",
+  "url": "https://huggingface.co/guqinlizhixian/jzpocr-lc-parent-b",
+  "created_at": "2026-10-01T18:18:12.000Z",
+  "updated_at": "2026-10-01T18:18:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-text",
+  "library": "paddleocr",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "paddleocr",
+    "ocr",
+    "text-recognition",
+    "guqin",
+    "jianzipu",
+    "pp-ocrv6",
+    "image-to-text",
+    "zh",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76465087,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "黄果短剧｜专业的成人AI短剧原创品牌｜官方app已上线",
+      "url": "https://huangguoai.me/",
+      "snippet": "黄果短剧，用AI重塑AV的无限可能。官方网址huangguoai.com。官方app已上线，支持ios/安卓双系统!"
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore how every major AI model evolved from its ancestors. Interactive visualization of LLM genealogy."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "Daily-updated list of free AI models (free LLM APIs), ranked by quality with live status. Plus one OpenAI-compatible endpoint that routes to the best one. - ClawLabsAI/free-ai-models"
+    },
+    {
+      "title": "You Look Like Your Mom or Dad Trend Prompts for ChatGPT (2026) - seaart.ai",
+      "url": "https://www.seaart.ai/blog/look-like-your-mom-trend-prompts-for-chatgpt",
+      "snippet": "Use these ready-to-paste prompts to run the you look like your mom or dad trend on ChatGPT. Copy viral photo prompts for half-face family portraits, parent-child pairings, and family resemblance variations."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 638 AI models across 508 benchmarks, with 211 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

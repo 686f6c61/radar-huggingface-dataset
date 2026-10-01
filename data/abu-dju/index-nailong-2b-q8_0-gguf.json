@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Abu-Dju/Index-Nailong-2B-Q8_0-GGUF",
+  "slug": "abu-dju-index-nailong-2b-q8_0-gguf",
+  "author": "Abu-Dju",
+  "url": "https://huggingface.co/Abu-Dju/Index-Nailong-2B-Q8_0-GGUF",
+  "created_at": "2026-10-01T18:06:47.000Z",
+  "updated_at": "2026-10-01T18:06:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "translation",
+    "long-context",
+    "index",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:IndexTeam/Index-Nailong-2B",
+    "base_model:quantized:IndexTeam/Index-Nailong-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 2012012128,
+  "storage_human": "2.0 GB",
+  "base_model": "IndexTeam/Index-Nailong-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abu-Dju/Index-Nailong-9B-Q8_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Abu-Dju/Index-Nailong-9B-Q8_0-GGUF",
+      "snippet": "Abu-Dju/Index-Nailong-9B-Q8_0-GGUF This model was converted to GGUF format from IndexTeam/Index-Nailong-9B using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "Daily-updated list of free AI models (free LLM APIs), ranked by quality with live status. Plus one OpenAI-compatible endpoint that routes to the best one. - ClawLabsAI/free-ai-models"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Where to Download GGUF Models - Best Sources & Direct Links (2025)",
+      "url": "https://ggufloader.github.io/download-gguf-models.html",
+      "snippet": "Download GGUF models from HuggingFace, TheBloke, bartowski. Direct links to Mistral 7B, Llama 3.2, Qwen 2.5, DeepSeek, Phi-3 — Q4_K_M and Q5_K_M quantized for local AI."
+    }
+  ]
+}

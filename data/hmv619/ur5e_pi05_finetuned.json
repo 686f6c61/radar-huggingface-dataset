@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hmv619/ur5e_pi05_finetuned",
+  "slug": "hmv619-ur5e_pi05_finetuned",
+  "author": "hmv619",
+  "url": "https://huggingface.co/hmv619/ur5e_pi05_finetuned",
+  "created_at": "2026-10-01T18:12:36.000Z",
+  "updated_at": "2026-10-01T18:13:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:local/ur5e_pi0_dataset",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388451440,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Integer003/openpi05: Provide fine-tuning and inference code ...",
+      "url": "https://github.com/Integer003/openpi05",
+      "snippet": "Note that, in this repository, we currently only support the flow matching head for both π 0.5 ${}_{&#92;pi }$ training and inference. For all models, we provide base model checkpoints, pre-trained on 10k+ hours of robot data, and examples for using them out of the box or fine-tuning them to your own datasets."
+    },
+    {
+      "title": "AiSaurabhPatil/openarm-pi05-finetuned · Hugging Face",
+      "url": "https://huggingface.co/AiSaurabhPatil/openarm-pi05-finetuned",
+      "snippet": "OpenArm Pi0.5 Finetuned Checkpoint This is a finetuned Pi0.5 model checkpoint for the OpenArm bimanual robot. Model Details Base Model: Pi0.5 (Physical Intelligence) Fine-tuned on: OpenArm pick-and-place dataset Action Dimension: 16 (2 arms × (7 joints + 1 gripper)) Action Horizon: 16 timesteps Training Framework: OpenPI (JAX/Flax) Usage Installation git clone https://github.com ..."
+    },
+    {
+      "title": "lerobot/pi05_libero_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/pi05_libero_base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - F-Fer/openpi-ur5e: Fork of Physical-Intelligence/openpi ...",
+      "url": "https://github.com/F-Fer/openpi-ur5e",
+      "snippet": "Fork of Physical-Intelligence/openpi adapted for UR5e VLA policy fine-tuning and inference (Bachelor Thesis). - F-Fer/openpi-ur5e"
+    },
+    {
+      "title": "π 0.5 : a Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://arxiv.org/html/2504.16054v1",
+      "snippet": "The design of π 0.5 $π0.5$ follows a simple hierarchical architecture: we first pre-train the model on the heterogeneous mixture of training tasks, and then fine-tune it specifically for mobile manipulation with both low-level action examples and high-level \"semantic\" actions, which correspond to predicting subtask labels such as \"pick ..."
+    }
+  ]
+}

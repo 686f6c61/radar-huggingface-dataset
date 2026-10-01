@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Deeplines/Narra",
+  "slug": "deeplines-narra",
+  "author": "Deeplines",
+  "url": "https://huggingface.co/Deeplines/Narra",
+  "created_at": "2026-10-01T13:42:23.000Z",
+  "updated_at": "2026-10-01T13:42:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemini 4 Pro Tested on Arena.ai: Specs, SVG Leaks & Features - NPowerUser",
+      "url": "https://nokiapoweruser.com/gemini-4-pro-arena-ai-test-specs-leaks/",
+      "snippet": "A mysterious model benchmarked on Arena.ai appears to be Google&#x27;s unreleased Gemini 4 Pro, featuring 10M context windows, deep test-time compute, and hyper-detailed SVG code generation. - Read in ..."
+    },
+    {
+      "title": "GitHub - soapko/narra: Non-linear AI narrative generation",
+      "url": "https://github.com/soapko/narra",
+      "snippet": "Narra is a Python command-line tool that transforms LLM narrative generation from a linear process into a structured, schema-driven approach that simulates the planning and forethought that real writers employ. Instead of generating stories sequentially, Narra breaks complex narratives into interconnected schema chunks that build upon each other, creating a \"diffusion model\" approach to ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 637 AI models across 496 benchmarks, with 211 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Multi-Model AI Gateway | NaraRouter",
+      "url": "https://router.bynara.id/",
+      "snippet": "Access free and affordable AI models through one OpenAI-compatible API. NaraRouter gives developers fast routing, simple pricing, and one unified AI gateway."
+    }
+  ]
+}

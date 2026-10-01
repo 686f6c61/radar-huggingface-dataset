@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "podhajskimarcin/evt-ts1b-fig2ts-installer",
+  "slug": "podhajskimarcin-evt-ts1b-fig2ts-installer",
+  "author": "podhajskimarcin",
+  "url": "https://huggingface.co/podhajskimarcin/evt-ts1b-fig2ts-installer",
+  "created_at": "2026-10-01T14:31:51.000Z",
+  "updated_at": "2026-10-01T14:32:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "elicit-vs-teach",
+    "mars-v",
+    "geode",
+    "tinystories-1b",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4943274328,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

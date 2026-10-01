@@ -1,0 +1,172 @@
+{
+  "schema": 1,
+  "id": "lighteternal/biodecision-tev1-4b",
+  "slug": "lighteternal-biodecision-tev1-4b",
+  "author": "lighteternal",
+  "url": "https://huggingface.co/lighteternal/biodecision-tev1-4b",
+  "created_at": "2026-09-25T06:02:54.000Z",
+  "updated_at": "2026-09-25T14:06:26.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "decision-model",
+    "system-1",
+    "biomedical",
+    "clinical-trials",
+    "pharmacology",
+    "pharmacovigilance",
+    "llm-as-a-judge",
+    "hallucination-detection",
+    "calibration",
+    "jev",
+    "tev1",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:lighteternal/biodecision-sft-v2.2",
+    "dataset:lighteternal/biodecision-sft-v2.2-patch",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 678,
+  "trending_score": 11,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 18653388181,
+  "storage_human": "18.7 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Medical question answering",
+      "dataset": "MedQA (USMLE, 4 options)",
+      "metric": "Accuracy",
+      "value": 71.01
+    },
+    {
+      "task": "Medical question answering",
+      "dataset": "MedMCQA",
+      "metric": "Accuracy",
+      "value": 62.76
+    },
+    {
+      "task": "Medical question answering",
+      "dataset": "PubMedQA (PQA-L)",
+      "metric": "Accuracy",
+      "value": 76.6
+    },
+    {
+      "task": "Medical question answering",
+      "dataset": "MMLU medical (6 subjects)",
+      "metric": "Accuracy",
+      "value": 77.73
+    },
+    {
+      "task": "Medical question answering",
+      "dataset": "MedXpertQA Text",
+      "metric": "Accuracy",
+      "value": 18.22
+    },
+    {
+      "task": "Medical question answering",
+      "dataset": "HEAD-QA (English)",
+      "metric": "Accuracy",
+      "value": 77.09
+    },
+    {
+      "task": "Evidence classification",
+      "dataset": "NLI4CT 2024",
+      "metric": "Macro-F1",
+      "value": 73.19
+    },
+    {
+      "task": "Evidence classification",
+      "dataset": "SciFact (label, gold evidence)",
+      "metric": "Macro-F1",
+      "value": 85.38
+    },
+    {
+      "task": "Evidence classification",
+      "dataset": "PUBHEALTH (4-class veracity)",
+      "metric": "Macro-F1",
+      "value": 60.38
+    },
+    {
+      "task": "Evidence classification",
+      "dataset": "Evidence Inference 2.0",
+      "metric": "Macro-F1",
+      "value": 70.56
+    },
+    {
+      "task": "Hallucination detection",
+      "dataset": "HaluBench (PubMedQA subset)",
+      "metric": "Accuracy",
+      "value": 87.91
+    },
+    {
+      "task": "Clinical trial outcome forecasting",
+      "dataset": "CT Open Winter 2025 (Endpoint)",
+      "metric": "Macro-F1",
+      "value": 72.57
+    },
+    {
+      "task": "Clinical trial outcome forecasting",
+      "dataset": "CT Open Summer 2025 (Endpoint)",
+      "metric": "Macro-F1",
+      "value": 62.02
+    },
+    {
+      "task": "Clinical trial matching",
+      "dataset": "TREC Clinical Trials 2022",
+      "metric": "NDCG@10",
+      "value": 0.8328
+    }
+  ],
+  "sources": [
+    {
+      "title": "lighteternal/biodecision-tev1-4b · Hugging Face",
+      "url": "https://huggingface.co/lighteternal/biodecision-tev1-4b",
+      "snippet": "BioDecision-4B is a System-1 decision model for biomedicine, pharma and clinical trials. It reads a source, a question and a set of possible answers, and returns a calibrated probability for each answer in one forward pass."
+    },
+    {
+      "title": "Run Biodecision-tev1-4B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/lighteternal/biodecision-tev1-4b",
+      "snippet": "BioDecision-4B by lighteternal is a 4.5 billion parameter System-1 decision model based on Qwen3.5-4B, specifically designed for biomedicine, pharma, and clinical trials. It processes a source, question, and predefined answers to return calibrated probabilities for each option in a single forward pass. This model excels at tasks like clinical-trial outcome forecasting, patient-trial matching ..."
+    },
+    {
+      "title": "biodecision-tev1-4b API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/lighteternal/biodecision-tev1-4b",
+      "snippet": "Deploy biodecision-tev1-4b with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - togethercomputer/tev1: Open-weight, Jev-inspired decision ...",
+      "url": "https://github.com/togethercomputer/tev1",
+      "snippet": "We fine-tuned Qwen3.5-4B on Together AI to make decisions: give it context, a question, and 2-24 options, and it returns one answer letter. We&#x27;re calling it tev1-4B-experimental. This repo contains the data recipe, training example, and saved results so you can fine-tune your own decision model ..."
+    },
+    {
+      "title": "BioDecision-4B - a Hugging Face Space by lighteternal",
+      "url": "https://huggingface.co/spaces/lighteternal/biodecision-demo",
+      "snippet": "Fast, calibrated biomedical decisions in one pass"
+    }
+  ]
+}

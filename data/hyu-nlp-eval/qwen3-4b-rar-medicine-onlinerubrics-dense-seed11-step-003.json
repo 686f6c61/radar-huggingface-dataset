@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-003",
+  "slug": "hyu-nlp-eval-qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-003",
+  "author": "HYU-NLP-EVAL",
+  "url": "https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-003",
+  "created_at": "2026-10-01T02:37:29.000Z",
+  "updated_at": "2026-10-01T02:52:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 107,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 25702307609,
+  "storage_human": "25.7 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Live Sex Cams and Free Adult Chat with Nude Girls | Stripchat",
+      "url": "https://stripchat.com/",
+      "snippet": "Watch Naked Models in our Adult Live Sex Cams Community. ️ It's FREE & No Registration Needed. 🔥 8000+ LIVE Cam Girls and …"
+    },
+    {
+      "title": "裸の女の子との無料ライブセックスカメラとアダルトチャット",
+      "url": "https://ja.stripchat.com/",
+      "snippet": "当サイトのアダルトライブセックスカメラコミュニティで裸のキャストたちを見ませんか。 ️ 無料で登録も必要ありません。🔥8000 …"
+    },
+    {
+      "title": "Sexcams gratuites en direct et chat avec des filles nues | Stripchat",
+      "url": "https://fr.stripchat.com/",
+      "snippet": "Regardez des modèles nus sur notre communauté de cams pornos en direct pour adultes. ️ C’est GRATUIT et sans inscription …"
+    },
+    {
+      "title": "Français Live sex cams gratuit en direct de filles | Stripchat",
+      "url": "https://fr.stripchat.com/girls/french",
+      "snippet": "Regardez EN DIRECT ces filles super chaudes via les sexcams de Français. ️ Rejoignez-les, entièrement nues, sur leur chatroom …"
+    },
+    {
+      "title": "Gratis live sex cams en chat met naakte meiden | Stripchat",
+      "url": "https://nl.stripchat.com/",
+      "snippet": "Bekijk naakte modellen in onze live sex cams community. ️ Het is GRATIS en er is geen registratie nodig. 🔥 8000+ live cammeiden …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "rlondner/qwen36-fr-insurance-hcp",
+  "slug": "rlondner-qwen36-fr-insurance-hcp",
+  "author": "rlondner",
+  "url": "https://huggingface.co/rlondner/qwen36-fr-insurance-hcp",
+  "created_at": "2026-10-01T17:39:03.000Z",
+  "updated_at": "2026-10-01T17:44:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71947230903,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mon clavier mange mes lettres !!!! - Forum Clavier - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-1341442-mon-clavier-mange-mes-lettres",
+      "snippet": "Mar 4, 2005 · Bonjour Je suis sous Windows XP édition familiale Une petite question , voila quand j'écris de trop longtemps avec …"
+    },
+    {
+      "title": "Problème de taille sur youtube - Forum Jeux vidéo",
+      "url": "https://forums.commentcamarche.net/forum/affich-20268916-probleme-de-taille-sur-youtube",
+      "snippet": "Bonjour, je voulais savoir comment faire pour agrandir la taille de ma page Youtube. Avant, j'appuyais sur Ctrl et la souris en même …"
+    },
+    {
+      "title": "Topic [YTB] On a les pires youtubeurs Hardware - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/42-6-67692925-1-0-1-0-ytb-on-a-les-pires-youtubeurs-hardware.htm",
+      "snippet": "Sep 17, 2021 · Accueil Tous les forums Forum principal Informatique Forum Hardware Topic [YTB] On a les pires youtubeurs …"
+    },
+    {
+      "title": "Coop Wuthering Waves : Comment débloquer le mode multijoueur",
+      "url": "https://www.jeuxvideo.com/news/1887769/coop-wuthering-waves-comment-debloquer-le-mode-multijoueur.htm",
+      "snippet": "May 24, 2024 · Vous souhaitez partager une aventure sur Wuthering Waves avec des amis, mais vous ne parvenez pas à lancer …"
+    },
+    {
+      "title": "Apparition écran d'\"Avertissement de menace potentielle",
+      "url": "https://forums.commentcamarche.net/forum/affich-38300889-apparition-ecran-d-avertissement-de-menace-potentielle",
+      "snippet": "Jul 28, 2026 · Bonjour. Bonjour. Je dispose d'un anti virus Avast et j'ai désinstallé l'anti virus McAfee qui ne me servait à rien. Mais …"
+    }
+  ]
+}

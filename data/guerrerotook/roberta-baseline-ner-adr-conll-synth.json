@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "guerrerotook/RoBERTa-baseline-NER-ADR-CONLL-SYNTH",
+  "slug": "guerrerotook-roberta-baseline-ner-adr-conll-synth",
+  "author": "guerrerotook",
+  "url": "https://huggingface.co/guerrerotook/RoBERTa-baseline-NER-ADR-CONLL-SYNTH",
+  "created_at": "2026-10-01T17:39:48.000Z",
+  "updated_at": "2026-10-01T17:40:25.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "ner",
+    "biomedical",
+    "adverse-drug-reactions",
+    "synthetic-data",
+    "cima",
+    "iob2",
+    "es",
+    "dataset:guerrerotook/CIMA-4.8-ADR-NER-EXTENDED",
+    "base_model:PlanTL-GOB-ES/roberta-base-biomedical-es",
+    "base_model:finetune:PlanTL-GOB-ES/roberta-base-biomedical-es",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125397513,
+  "parameters_human": "125.4M",
+  "storage_bytes": 501613980,
+  "storage_human": "502 MB",
+  "base_model": "PlanTL-GOB-ES/roberta-base-biomedical-es",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dominiqueblok/roberta-base-finetuned-ner · Hugging Face",
+      "url": "https://huggingface.co/dominiqueblok/roberta-base-finetuned-ner",
+      "snippet": "roberta-base-finetuned-ner This model is a fine-tuned version of roberta-base on the conll2003 dataset. It achieves the following results on the evaluation set: Loss: 0.0492 Precision: 0.9530 Recall: 0.9604 F1: 0.9567 Accuracy: 0.9889 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training ..."
+    },
+    {
+      "title": "RoBERTa · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/roberta",
+      "snippet": "Explore Hugging Face&#x27;s RoBERTa, an advanced AI model for natural language processing, with detailed documentation and open-source resources."
+    },
+    {
+      "title": "ner-extractor/RoBERTa at main · acd19ml/ner-extractor · GitHub",
+      "url": "https://github.com/acd19ml/ner-extractor/tree/main/RoBERTa",
+      "snippet": "This project implements a Named Entity Recognition (NER) system using the RoBERTa-base model fine-tuned on the CoNLL-2003 dataset. The model identifies and classifies named entities in text into four categories: PERSON, ORGANIZATION, LOCATION, and MISC."
+    },
+    {
+      "title": "[2412.15252] NER- RoBERTa: Fine-Tuning RoBERTa for Named Entity ...",
+      "url": "https://arxiv.org/abs/2412.15252",
+      "snippet": "Nowadays, Natural Language Processing (NLP) is an important tool for most people&#x27;s daily life routines, ranging from understanding speech, translation, named entity recognition (NER), and text categorization, to generative text models such as ChatGPT. Due to the existence of big data and consequently large corpora for widely used languages like English, Spanish, Turkish, Persian, and many more ..."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    }
+  ]
+}

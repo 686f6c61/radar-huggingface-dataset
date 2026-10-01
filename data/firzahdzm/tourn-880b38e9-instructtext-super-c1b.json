@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "firzahdzm/tourn-880b38e9-instructtext-super-c1b",
+  "slug": "firzahdzm-tourn-880b38e9-instructtext-super-c1b",
+  "author": "firzahdzm",
+  "url": "https://huggingface.co/firzahdzm/tourn-880b38e9-instructtext-super-c1b",
+  "created_at": "2026-10-01T02:14:51.000Z",
+  "updated_at": "2026-10-01T02:15:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "phi3",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 3821079552,
+  "parameters_human": "3.82B",
+  "storage_bytes": 7642181880,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "firzahdzm/tourn-28c9f3bb-instructtext-super-t2pre · Hugging Face",
+      "url": "https://huggingface.co/firzahdzm/tourn-28c9f3bb-instructtext-super-t2pre",
+      "snippet": "firzahdzm / tourn-28c9f3bb-instructtext-super-t2pre like 0 Safetensors llama Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 1B params Tensor type BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "firzahdzm/tourn-067761fe-instructtext-super-s2dpre · Hugging Face",
+      "url": "https://huggingface.co/firzahdzm/tourn-067761fe-instructtext-super-s2dpre",
+      "snippet": "firzahdzm / tourn-067761fe-instructtext-super-s2dpre Like 0 Safetensors llama Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 1B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask ..."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "PolyBuzz | Talk to AI Characters & Enjoy Free AI Chat Anytime",
+      "url": "https://www.polybuzz.ai/",
+      "snippet": "Character AI and AI chat free with 20M+ AI character on Polybuzz. Talk AI anytime, explore AI chat roleplay, and create your AI girlfriend."
+    }
+  ]
+}

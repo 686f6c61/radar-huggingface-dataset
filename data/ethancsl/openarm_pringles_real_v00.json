@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ethanCSL/openarm_pringles_real_v00",
+  "slug": "ethancsl-openarm_pringles_real_v00",
+  "author": "ethanCSL",
+  "url": "https://huggingface.co/ethanCSL/openarm_pringles_real_v00",
+  "created_at": "2026-10-01T17:39:24.000Z",
+  "updated_at": "2026-10-01T17:40:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:ethanCSL/openarm_pringles_real_v00",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906722040,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ethanCSL/openarm_pringles_v0 · Hugging Face",
+      "url": "https://huggingface.co/ethanCSL/openarm_pringles_v0",
+      "snippet": "ethanCSL / openarm_pringles_v0 Like 0 Robotics LeRobot Safetensors ethanCSL/openarm_pringles_v0 smolvla arxiv:2506.01844 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ethanCSL/openarm_pringles_v0 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ethanCSL/openarm_pringles_v0",
+      "snippet": "Models trained or fine-tuned on ethanCSL/openarm_pringles_v0 ethanCSL/openarm_pringles_v0 Robotics • 0.5B•Updated about 10 hours ago"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "Daily-updated list of free AI models (free LLM APIs), ranked by quality with live status. Plus one OpenAI-compatible endpoint that routes to the best one. - ClawLabsAI/free-ai-models"
+    },
+    {
+      "title": "OpenAI API | OpenAI",
+      "url": "https://openai.com/index/openai-api/",
+      "snippet": "We&#x27;re releasing an API for accessing new AI models developed by OpenAI. Unlike most AI systems which are designed for one use-case, the API today provides a general-purpose \"text in, text out\" interface, allowing users to try it on virtually any English language task."
+    },
+    {
+      "title": "OpenAI Platform",
+      "url": "https://platform.openai.com/",
+      "snippet": "Build on the OpenAI API Platform Sign up or login with an OpenAI account to build with the OpenAI API."
+    }
+  ]
+}

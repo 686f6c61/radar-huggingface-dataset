@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Kairoi-LLC/edge-punct-casing-en-onnx",
+  "slug": "kairoi-llc-edge-punct-casing-en-onnx",
+  "author": "Kairoi-LLC",
+  "url": "https://huggingface.co/Kairoi-LLC/edge-punct-casing-en-onnx",
+  "created_at": "2026-10-01T17:57:25.000Z",
+  "updated_at": "2026-10-01T18:22:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "punctuation",
+    "truecasing",
+    "sherpa-onnx",
+    "mirror",
+    "token-classification",
+    "en",
+    "base_model:frankyoujian/Edge-Punct-Casing",
+    "base_model:quantized:frankyoujian/Edge-Punct-Casing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7490500,
+  "storage_human": "7 MB",
+  "base_model": "frankyoujian/Edge-Punct-Casing",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - frankyoujian/Edge-Punct-Casing",
+      "url": "https://github.com/frankyoujian/Edge-Punct-Casing",
+      "snippet": "Edge-Punct-Casing This repo is the code implementation for the paper \"A lightweight and efficient punctuation and word casing prediction model for on-device streaming ASR\""
+    },
+    {
+      "title": "Edge-Punct-Casing/README.md at main - GitHub",
+      "url": "https://github.com/frankyoujian/Edge-Punct-Casing/blob/main/README.md",
+      "snippet": "Edge-Punct-Casing This repo is the code implementation for the paper \"A lightweight and efficient punctuation and word casing prediction model for on-device streaming ASR\""
+    },
+    {
+      "title": "frankyoujian/Edge-Punct-Casing · Hugging Face",
+      "url": "https://huggingface.co/frankyoujian/Edge-Punct-Casing",
+      "snippet": "Pretrained models for sherpa-onnx. The modeling unit for tokenization is unigram."
+    },
+    {
+      "title": "Pre-trained models — sherpa 1.3 documentation - GitHub Pages",
+      "url": "https://k2-fsa.github.io/sherpa/onnx/punctuation/pretrained_models.html",
+      "snippet": "Pre-trained models This section lists pre-trained models for adding punctuations to text. You can find all models at the following URL:"
+    },
+    {
+      "title": "A light-weight and efficient punctuation and word casing prediction ...",
+      "url": "https://arxiv.org/pdf/2407.13142",
+      "snippet": "Due to the deep model depth of Transformer, the size of Transformer based models is usually very large, which impedes their deployment on edge devices. In summary, our contributions are the following: 1) We propose a CNN-BiLSTM model to jointly predict punctuation and word casing only based on lexical features."
+    }
+  ]
+}

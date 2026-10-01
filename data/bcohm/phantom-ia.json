@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "BCOHM/phantom-ia",
+  "slug": "bcohm-phantom-ia",
+  "author": "BCOHM",
+  "url": "https://huggingface.co/BCOHM/phantom-ia",
+  "created_at": "2026-10-01T02:18:54.000Z",
+  "updated_at": "2026-10-01T02:18:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Finland 0-0 Belarus: results, summary and goals - AS USA",
+      "url": "https://en.as.com/resultados/futbol/nations_league_c/2026_2027/directo/grupos_1_2_69901868b0b4a97/",
+      "snippet": "Check the best match plays and goals between Finland 0-0 Belarus of UEFA Nations League Liga C 2026/2027. Results, summary …"
+    },
+    {
+      "title": "Selyava goal disallowed as Finland 0-0 Belarus in 2026 Nations League",
+      "url": "https://www.vavel.com/en-us/soccer/2026/09/29/1273273-finland-vs-belarus-live-score-uefa-nations-league.html",
+      "snippet": "1 day ago · Finland and Belarus played out a 0-0 draw in Matchday 2 of the 2026-27 UEFA Nations League. The hosts had a solid …"
+    },
+    {
+      "title": "Abstract_TOC 1..1 - Wen wir unterstützen",
+      "url": "https://www.thieme-connect.de/products/ejournals/conferencepdf/069780/10.1055/s-00000066.pdf",
+      "snippet": "model, AI-based evaluation of high-end image features provided significantly ... Phantom (7 Scans). Die. Dosis wurde mit Hilfe von ..."
+    },
+    {
+      "title": "Finland 0-0 Belarus (Sep 29, 2026) Team Stats - ESPN",
+      "url": "https://www.espn.com/soccer/team-stats/_/gameId/401861089",
+      "snippet": "Complete team stats for the Finland vs. Belarus Uefa Nations League game from September 29, 2026 on ESPN."
+    },
+    {
+      "title": "Finland-Belarus | UEFA Nations League 2027",
+      "url": "https://www.uefa.com/uefanationsleague/match/2047993--finland-vs-belarus/",
+      "snippet": "2 days ago · Finland vs Belarus: all the latest UEFA Nations League 2027 League phase match information including stats, form, …"
+    }
+  ]
+}

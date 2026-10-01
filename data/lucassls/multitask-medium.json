@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "LucasSls/multitask-medium",
+  "slug": "lucassls-multitask-medium",
+  "author": "LucasSls",
+  "url": "https://huggingface.co/LucasSls/multitask-medium",
+  "created_at": "2026-10-01T02:35:41.000Z",
+  "updated_at": "2026-10-01T02:35:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LucasSls (Lucas Santos) - Hugging Face",
+      "url": "https://huggingface.co/LucasSls",
+      "snippet": "AI & ML interests Learning ML every day. Love open source and cool models."
+    },
+    {
+      "title": "Lucasalonsoport/mixer-multitask-medium · Hugging Face",
+      "url": "https://huggingface.co/Lucasalonsoport/mixer-multitask-medium",
+      "snippet": "Overview This repository is a compact, custom PyTorch implementation of Mixer for Multitask. The nano configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2404.18961",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "MultitaskAI - The Custom Chat UI for OpenAI, Anthropic, Google Gemini ...",
+      "url": "https://multitaskai.com/",
+      "snippet": "Chat seamlessly with AI models like OpenAI, Anthropic, and Google Gemini using MultitaskAI, a custom-built interface designed for split-screen multitasking, side-by-side comparisons, and smarter workflows."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "wonderful0711/nep-7",
+  "slug": "wonderful0711-nep-7",
+  "author": "wonderful0711",
+  "url": "https://huggingface.co/wonderful0711/nep-7",
+  "created_at": "2026-10-01T02:36:14.000Z",
+  "updated_at": "2026-10-01T02:36:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44543952,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wonderful0711/nep-7 · Hugging Face",
+      "url": "https://huggingface.co/wonderful0711/nep-7",
+      "snippet": "wonderful0711 / nep-7 Like 0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "weirdwonderfulaiart (WeirdWonderfulAI.Art) - Hugging Face",
+      "url": "https://huggingface.co/weirdwonderfulaiart",
+      "snippet": "Recent Activity updated a model about 7 hours ago weirdwonderfulaiart/scribble published a model 7 days ago weirdwonderfulaiart/scribble"
+    },
+    {
+      "title": "密器AI - AI Model Hub | AI Chat, Image, Video & Agents",
+      "url": "https://miss7.com/en-US",
+      "snippet": "An AI image tool built for e-commerce sellers: upload a product photo and instantly generate professional main images, detail images and lifestyle scenes. Automatic background removal, model dressing, scene composition — cut over 90% of photo shoot cost. Works for Amazon, Shopify, eBay, Taobao, JD and Pinduoduo. AI Voice & Text-to-Speech & AI ..."
+    },
+    {
+      "title": "GitHub - Unsocial-sannyasi563/awesome-free-models: Access a curated ...",
+      "url": "https://github.com/Unsocial-sannyasi563/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. All links verified live on June 13, 2026. 7 broken links found during this check (1 removed). Running AI shouldn&#x27;t require a credit card. This list curates genuinely free models — open-weight models you can self-host, free API tiers from major providers, and tools to run everything locally."
+    }
+  ]
+}

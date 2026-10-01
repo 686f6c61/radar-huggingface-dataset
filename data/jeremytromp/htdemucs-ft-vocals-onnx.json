@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jeremytromp/htdemucs-ft-vocals-onnx",
+  "slug": "jeremytromp-htdemucs-ft-vocals-onnx",
+  "author": "Jeremytromp",
+  "url": "https://huggingface.co/Jeremytromp/htdemucs-ft-vocals-onnx",
+  "created_at": "2026-10-01T17:52:46.000Z",
+  "updated_at": "2026-10-01T17:53:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "demucs",
+    "htdemucs",
+    "vocal-isolation",
+    "source-separation",
+    "audio-to-audio",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 316446953,
+  "storage_human": "316 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "StemSplitio/htdemucs-ft-vocals-onnx · Hugging Face",
+      "url": "https://huggingface.co/StemSplitio/htdemucs-ft-vocals-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HT-Demucs FT to ONNX: First Working Export (2026) | StemSplit",
+      "url": "https://stemsplit.io/blog/htdemucs-ft-onnx-export",
+      "snippet": "HT-Demucs FT to ONNX: How We Built the First Working Export for iOS, Android & Web — Plus 9 Open Hugging Face Models and a Reproducible MUSDB18-HQ Benchmark (2026) TL;DR. We just open-sourced 10 stem-separation assets on Hugging Face, including the first working ONNX export of HT-Demucs FT — the #1 open-source vocal separator on MUSDB18-HQ. Every previous attempt at \"demucs onnx\" stalled ..."
+    },
+    {
+      "title": "StemSplitio/htdemucs-ft-vocals-onnx · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/StemSplitio/htdemucs-ft-vocals-onnx",
+      "snippet": "This repo packages sub-model 3 of the htdemucs_ft 4-bag ensemble as a single 316 MB .onnx file plus a ~150-line numpy reference inference script. Verified to be numerically equivalent to the original PyTorch model."
+    },
+    {
+      "title": "StemSplitio/htdemucs-onnx · Hugging Face",
+      "url": "https://huggingface.co/StemSplitio/htdemucs-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - demucs-onnx",
+      "url": "https://stemsplit.github.io/demucs-onnx/models/",
+      "snippet": "Run and export HT-Demucs / Demucs music source separation as ONNX. Pure numpy + onnxruntime inference (no PyTorch). The canonical reference for the four torch.onnx.export blockers on htdemucs."
+    }
+  ]
+}

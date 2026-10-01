@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "iq1xxs/potatoMoE-100M",
+  "slug": "iq1xxs-potatomoe-100m",
+  "author": "iq1xxs",
+  "url": "https://huggingface.co/iq1xxs/potatoMoE-100M",
+  "created_at": "2026-10-01T14:31:22.000Z",
+  "updated_at": "2026-10-01T14:41:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 501897913,
+  "storage_human": "502 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

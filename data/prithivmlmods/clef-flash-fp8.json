@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/clef-flash-FP8",
+  "slug": "prithivmlmods-clef-flash-fp8",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/clef-flash-FP8",
+  "created_at": "2026-10-01T18:17:18.000Z",
+  "updated_at": "2026-10-01T18:18:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "base_model:Cloudflare/clef-flash",
+    "base_model:quantized:Cloudflare/clef-flash",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 13540191909,
+  "storage_human": "13.5 GB",
+  "base_model": "Cloudflare/clef-flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prithivMLmods (Prithiv Sakthi)",
+      "url": "https://huggingface.co/prithivMLmods",
+      "snippet": "computer vision, nlp, multimodality - HuggingFace Fellow ML 🤗"
+    },
+    {
+      "title": "prithivmlmods",
+      "url": "https://prithivsakthiur.github.io/prithivmlmods/",
+      "snippet": "experience > huggingface ml fellow @ huggingface🤗 [sep 25&#x27; - present] > ai engineer @ polycruz [may 25&#x27; - present] > computer vision collab @ wildy ai [jan 25&#x27; - mar&#x27;25] > swe intern @ mediminds technology [sep 24&#x27; - oct 24&#x27;] > ccsn intern @ directorate of technical education [jul 23&#x27; - aug 23&#x27;] projects > multimodal vlm : vlms for improved reasoning and difficult ocr > computer vision ..."
+    },
+    {
+      "title": "PRITHIVSAKTHIUR (PRITHIV SAKTHI U R) · GitHub",
+      "url": "https://github.com/PRITHIVSAKTHIUR",
+      "snippet": "Computer Vision, Multimodal AI. PRITHIVSAKTHIUR has 281 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "prithivMLmods/Q3.5-9B-DS-v4-Flash-v2.0-fp8 · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/Q3.5-9B-DS-v4-Flash-v2.0-fp8",
+      "snippet": "Instructions to use prithivMLmods/Q3.5-9B-DS-v4-Flash-v2.-fp8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Flash AI — AI content, chat & automation, made effortless | AI Chat",
+      "url": "https://flash.ai/",
+      "snippet": "Flash AI gives you one lightning-fast workspace for AI chat, content generation, image creation, voice, and automation — powered by the best models from OpenAI, Anthropic and more."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yuriilaba/ucu-wsd-aug16-generation_shuffling_pt-false_seed-42",
+  "slug": "yuriilaba-ucu-wsd-aug16-generation_shuffling_pt-false_seed-42",
+  "author": "yuriilaba",
+  "url": "https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_shuffling_pt-false_seed-42",
+  "created_at": "2026-10-01T02:12:14.000Z",
+  "updated_at": "2026-10-01T02:12:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129280083,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ucu-wsd-aug16-generation_pt-true_seed-42 - Hugging Face",
+      "url": "https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_pt-true_seed-42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yuriilaba/ucu-wsd-generation_shuffling_pt-true_seed-42 · Hugging Face",
+      "url": "https://huggingface.co/yuriilaba/ucu-wsd-generation_shuffling_pt-true_seed-42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Yurii Laba",
+      "url": "https://yuriilaba.github.io/",
+      "snippet": "My research focuses on multilingual and multimodal NLP, particularly on how models represent lexical meaning in Ukrainian. I build datasets and benchmarks for word-sense disambiguation and develop data-efficient methods for adapting sentence and vision-language models when annotated data are limited. I also study memory systems for AI agents, including how agents decide what to retain and ..."
+    },
+    {
+      "title": "YuriiLaba (Yurii Laba) · GitHub",
+      "url": "https://github.com/YuriiLaba",
+      "snippet": "YuriiLaba has 52 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - YuriiLaba/U-WSD",
+      "url": "https://github.com/YuriiLaba/U-WSD",
+      "snippet": "The model was validated on a WSD dataset based on the СЛОВНИК УКРАЇНСЬКОЇ МОВИ. To the best of our knowledge, this is the first dataset used to validate the WSD task in Ukrainian. ConEFU can be utilized to generate high-quality embeddings for the Ukrainian language. It is available on Hugging Face."
+    }
+  ]
+}

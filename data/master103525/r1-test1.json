@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "master103525/R1-test1",
+  "slug": "master103525-r1-test1",
+  "author": "master103525",
+  "url": "https://huggingface.co/master103525/R1-test1",
+  "created_at": "2026-10-01T13:42:08.000Z",
+  "updated_at": "2026-10-01T13:42:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth--Meta-Llama-3.1-8B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1359455025,
+  "storage_human": "1.4 GB",
+  "base_model": "unsloth--Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "\"Sung Jin-woo x Cha Hae-In\" - Full animation | Ranzanichan",
+      "url": "https://www.patreon.com/Ranzanichan/posts/sung-jin-woo-x-140529655",
+      "snippet": "Oct 5, 2025 · Here's the Solo Leveling animation. I'm putting a lot of thought into rendering the projects I'm working on, trying to …"
+    },
+    {
+      "title": "Post \"\"Sung Jin-woo x Cha Hae-In\" - Full animation\" by \"Ranzanichan ...",
+      "url": "https://kemono.cr/patreon/user/172785329/post/140529655",
+      "snippet": "Oct 5, 2025 · Starting tomorrow, I'll be working on the Dan Da Dan animation. I already have the storyboard ready, so I hope to have …"
+    },
+    {
+      "title": "Post \"\"Sung Jin-woo x Cha Hae-In\" Animation Update\" by \"Ranzanichan ...",
+      "url": "https://kemono.cr/patreon/user/172785329/post/140465394",
+      "snippet": "Oct 4, 2025 · Tomorrow I'll be uploading the \"Solo Leveling\" animation. I apologize for not posting it on the 3rd as planned. There …"
+    },
+    {
+      "title": "\"Sung Jin-woo x Cha Hae-In\" - Full animation | Ranzanichan - Patreon",
+      "url": "https://www.patreon.com/Ranzanichan/posts/sung-jin-woo-x-140529655?l=de-DE",
+      "snippet": "Um diesen ganzen Post zuzugreifen, tritt noch heute Patreon bei. Wenn du Mitglied wirst, erhältst du sofortigen Zugriff auf exklusive …"
+    },
+    {
+      "title": "Ranzanichan posts - saketami.com",
+      "url": "https://saketami.com/u/patreon/13421/Ranzanichan",
+      "snippet": "Dec 31, 2025 · I'm sharing some progress on the Dan Da Dan animation. The good news is that everything is going according to …"
+    }
+  ]
+}

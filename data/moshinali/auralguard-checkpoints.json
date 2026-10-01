@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MoshinAli/auralguard-checkpoints",
+  "slug": "moshinali-auralguard-checkpoints",
+  "author": "MoshinAli",
+  "url": "https://huggingface.co/MoshinAli/auralguard-checkpoints",
+  "created_at": "2026-09-04T13:16:09.000Z",
+  "updated_at": "2026-10-01T17:36:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio-classification",
+    "speech-processing",
+    "synthetic-speech-detection",
+    "deepfake-detection",
+    "asvspoof",
+    "wavlm",
+    "pytorch",
+    "dataset:asvspoof2019",
+    "dataset:in-the-wild",
+    "dataset:wavefake",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120975164964,
+  "storage_human": "121.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MoshinAli/auralguard-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/MoshinAli/auralguard-checkpoints",
+      "snippet": "MoshinAli / auralguard-checkpoints Like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "MoshinAli (Mohsin Ibna Hossain) - Hugging Face",
+      "url": "https://huggingface.co/MoshinAli",
+      "snippet": "Recent Activity updated a datasetabout 8 hours ago MoshinAli/david-net-av-coord updated a modelabout 11 hours ago MoshinAli/auralguard-checkpoints published a dataset1 day ago MoshinAli/david-net-av-coord View all activity"
+    },
+    {
+      "title": "auralguard-checkpoints by Mohsin Ibna Hossain: Open Model",
+      "url": "https://savrn.com/models/auralguard-checkpoints",
+      "snippet": "auralguard-checkpoints from Mohsin Ibna Hossain: license, access terms, disclosed training data, reported evaluations and the publisher&#x27;s download."
+    },
+    {
+      "title": "Checkpoint AI Models (143) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 143 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Model Weights and Checkpoints | ali-vilab/MangaNinjia | DeepWiki",
+      "url": "https://deepwiki.com/ali-vilab/MangaNinjia/5.3-model-weights-and-checkpoints",
+      "snippet": "MangaNinja requires several model weights to operate, including pre-trained models from existing repositories and custom-trained models specific to the MangaNinja system."
+    }
+  ]
+}

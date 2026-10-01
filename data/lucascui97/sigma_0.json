@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Lucascui97/Sigma_0",
+  "slug": "lucascui97-sigma_0",
+  "author": "Lucascui97",
+  "url": "https://huggingface.co/Lucascui97/Sigma_0",
+  "created_at": "2026-10-01T17:40:10.000Z",
+  "updated_at": "2026-10-01T17:55:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "imitation-learning",
+    "act",
+    "diffusion-policy",
+    "robotwin",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26866241720,
+  "storage_human": "26.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Your AI Art Playground - Luna Models",
+      "url": "https://www.lunamodels.art/",
+      "snippet": "Welcome to Luna Models Your creative playground for adorable AI art. Generate stunning images, discover inspiration, and find unique assets to bring your imagination to life!"
+    },
+    {
+      "title": "Free AI 3D Model Generator - CF Studio",
+      "url": "https://studio.creativefabrica.com/3d-model-generator",
+      "snippet": "Generate 3D models from text descriptions or images. Describe what you want or upload a reference image and get a detailed, textured 3D model in seconds. Free to use."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore the complete genealogy of AI models. See how GPT, Llama, Claude, Gemini, and 200+ models evolved. Interactive tree updated daily from HuggingFace."
+    },
+    {
+      "title": "ZeroScript — AI that builds Roblox games. Free. Forever.",
+      "url": "https://zeroscript.my/",
+      "snippet": "NEW v2.4 — 7 models · unlimited prompts Chat your Roblox game into existence. The open-source AI agent that writes and edits scripts inside Roblox Studio. No API key, no credits, no subscription — forever free."
+    },
+    {
+      "title": "Sigma - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1866802061635473059",
+      "snippet": "Generate stunning anime art with the &#x27;Sigma&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

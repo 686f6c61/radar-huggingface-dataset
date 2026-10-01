@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Osktakahashi/matching-best",
+  "slug": "osktakahashi-matching-best",
+  "author": "Osktakahashi",
+  "url": "https://huggingface.co/Osktakahashi/matching-best",
+  "created_at": "2026-10-01T02:36:42.000Z",
+  "updated_at": "2026-10-01T02:36:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 637 AI models across 496 benchmarks, with 211 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Osktakahashi (Takahashi Minato) - Hugging Face",
+      "url": "https://huggingface.co/Osktakahashi/models",
+      "snippet": "User profile of Takahashi Minato on Hugging Face"
+    },
+    {
+      "title": "Best AI Models (October 2026): 643 LLMs Ranked & Scored",
+      "url": "https://benchlm.ai/best/overall",
+      "snippet": "The top AI models ranked by overall benchmark performance across all categories. Top picks: GPT-6 Astra, Claude Opus 5.5, Claude Sonnet 5.5. 211 models ranked with detailed benchmark scores."
+    },
+    {
+      "title": "Top 10 AI Models in 2026: Ranked by Benchmarks (June Update)",
+      "url": "https://techjournal.org/top-10-artificial-intelligence-models",
+      "snippet": "The 10 best AI models in June 2026 ranked by actual benchmarks. Claude Opus 4.8, GPT-5.5, Gemini 3.1 Pro, Grok 4.3, Llama 4, and DeepSeek V4 — compared on coding, writing, reasoning, and price."
+    },
+    {
+      "title": "Best AI Models in 2026: The Complete Ranking | The AI Rankings",
+      "url": "https://theairankings.com/best-ai-models/",
+      "snippet": "The best AI models in 2026, ranked by consensus across benchmarks, reviews and real-world testing — frontier, flagship and open-weight models compared."
+    }
+  ]
+}

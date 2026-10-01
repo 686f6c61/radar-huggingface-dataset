@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ibm-granite/ensemble-forecasting-with-ibm-granite-time-series",
+  "slug": "ibm-granite-ensemble-forecasting-with-ibm-granite-time-series",
+  "author": "ibm-granite",
+  "url": "https://huggingface.co/ibm-granite/ensemble-forecasting-with-ibm-granite-time-series",
+  "created_at": "2026-10-01T16:28:23.000Z",
+  "updated_at": "2026-10-01T16:28:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IBM",
+      "url": "https://www.ibm.com/",
+      "snippet": "For more than a century, IBM has been a global technology innovator, leading advances in AI, automation and hybrid cloud solutions …"
+    },
+    {
+      "title": "IBM — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/IBM",
+      "snippet": "IBM se développe dans les années 1930, grâce aux brevets de mécanographie sur la carte perforée Hollerith. En 1937, le …"
+    },
+    {
+      "title": "IBM",
+      "url": "https://www.ibm.com/fr-fr",
+      "snippet": "Innovateur technologique mondial depuis plus d’un siècle, IBM est à la pointe d’avancées en matière de solutions d’IA, …"
+    },
+    {
+      "title": "IBM - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/IBM",
+      "snippet": "IBM was founded in 1911 as the Computing-Tabulating-Recording Company (CTR), a holding company of manufacturers of record …"
+    },
+    {
+      "title": "Unlock your future | IBM SkillBuild",
+      "url": "https://skillsbuild.org/",
+      "snippet": "Build in-demand skills in AI, cybersecurity, data, and more. Whether you’re starting your career or pivoting to something new, IBM …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ritzds2026/luma-emotions-model",
+  "slug": "ritzds2026-luma-emotions-model",
+  "author": "Ritzds2026",
+  "url": "https://huggingface.co/Ritzds2026/luma-emotions-model",
+  "created_at": "2026-10-01T13:18:47.000Z",
+  "updated_at": "2026-10-01T13:18:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luma | AI Agents for Creative Work",
+      "url": "https://lumalabs.ai/",
+      "snippet": "Luma AI is the creative AI platform for video generation and image creation. Powered by the world&#x27;s leading video generation models, Ray and Uni, and creative agents handling end-to-end workflows."
+    },
+    {
+      "title": "Luma AI: AI Video Generator from Text & Images",
+      "url": "https://luma.ai/",
+      "snippet": "Create AI videos from text or images, generate photos, and edit with multiple models and ready-made templates. See the exact credit cost before you create."
+    },
+    {
+      "title": "Luma AI - AI Models, Research & 2026 Releases | LLMReference",
+      "url": "https://www.llmreference.com/researcher/luma",
+      "snippet": "Luma AI AI: Imagining the world, in motion. 3 model families, 7 models - including Dream Machine and Luma Ray. Full specs, pricing, and API access."
+    },
+    {
+      "title": "Luma AI · GitHub",
+      "url": "https://github.com/lumalabs",
+      "snippet": "Luma Interactive Scenes (captures) Web Examples, use lumalabs.ai captures directly in your three.js or other WebGL projects! TypeScript 469 59"
+    },
+    {
+      "title": "Luma AI Guide 2026: Dream Machine, Ray 2, and Genie 3D",
+      "url": "https://gptprompts.ai/luma-ai-guide",
+      "snippet": "Luma AI is the product line from Luma Labs in San Francisco. Dream Machine is the text-to-video app, Ray 2 is the underlying model, Photon is the image model, Genie is the text-to-3D model. Paid Dream Machine plans start at $9.99 per month."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "dacntt-kltn/Resnet18-HAM10000-v3",
+  "slug": "dacntt-kltn-resnet18-ham10000-v3",
+  "author": "dacntt-kltn",
+  "url": "https://huggingface.co/dacntt-kltn/Resnet18-HAM10000-v3",
+  "created_at": "2026-10-01T13:06:13.000Z",
+  "updated_at": "2026-10-01T13:19:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "skin-lesion",
+    "ham10000",
+    "resnet18",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4119233087,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dacntt-kltn (DACNTT&KLTN) - Hugging Face",
+      "url": "https://huggingface.co/dacntt-kltn",
+      "snippet": "Org profile for DACNTT&KLTN on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - findmariammariaa/skin-cancer-detection-ham10000: AI course ...",
+      "url": "https://github.com/findmariammariaa/skin-cancer-detection-ham10000",
+      "snippet": "This project was developed as part of my AI course and submitted as a final project. Our goal was to build a deep learning model for skin cancer detection using the HAM10000 dataset. The project was initially inspired by this Kaggle notebook, which achieved 85.02% accuracy using a CNN-based approach. In that work: Cell 4 used ResNet18 Cell 5 used ResNet34 (pretrained) With the help of my ..."
+    },
+    {
+      "title": "dacntt-kltn/mobilenetv4-ham10000 · Hugging Face",
+      "url": "https://huggingface.co/dacntt-kltn/mobilenetv4-ham10000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HAM10000 Skin Lesion Classification - GitHub",
+      "url": "https://github.com/MalekSum/ham10000-skin-lesion-classification",
+      "snippet": "A deep learning pipeline for classifying skin lesion images into 7 diagnostic categories using the HAM10000 dataset. Built from scratch as a hands-on project to move from AI-theory knowledge to independent implementation every component (data pipeline, PyTorch Dataset, training loop, transfer learning, class-imbalance handling) was written, debugged, and understood end to end rather than ..."
+    },
+    {
+      "title": "Skin Cancer Detection Using the HAM10000 Dataset: A Comparative Study ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10425889",
+      "snippet": "Skin cancer is a prevalent and potentially life-threatening disease that requires early and accurate detection for effective treatment. Existing skin cancer detection procedures face limitations in terms of accuracy and efficiency. To overcome these limitations, we put forward a novel solution that leverages machine learning models to classify seven types of skin cancers using the HAM10000 ..."
+    }
+  ]
+}

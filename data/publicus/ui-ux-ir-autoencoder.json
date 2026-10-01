@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Publicus/ui-ux-ir-autoencoder",
+  "slug": "publicus-ui-ux-ir-autoencoder",
+  "author": "Publicus",
+  "url": "https://huggingface.co/Publicus/ui-ux-ir-autoencoder",
+  "created_at": "2026-10-01T16:14:59.000Z",
+  "updated_at": "2026-10-01T16:15:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "autoencoder",
+    "formal-logic",
+    "experimental",
+    "ipfs-datasets-py",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "publicus-ai (Publicus) - Hugging Face",
+      "url": "https://huggingface.co/publicus-ai/models",
+      "snippet": "Org profile for Publicus on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - afx-team/UI-UX: UI-UX: a 4B multimodal LLM for mobile UX ...",
+      "url": "https://github.com/afx-team/UI-UX",
+      "snippet": "With only 4B parameters, UI-UX achieves the highest accuracy on UXBench, outperforming both instruction-tuned and reasoning MLLMs—including models two orders of magnitude larger (235B) and leading proprietary systems. Notably, UI-UX improves its same-scale base model Qwen3-VL-Thinking (4B) from 0."
+    },
+    {
+      "title": "Publicus | Canadian Government Procurement Intelligence",
+      "url": "https://publicus.ai/",
+      "snippet": "Publicus is an AI platform for government procurement. We give businesses the market intelligence to win public contracts, and give governments early warning and control over what they buy."
+    },
+    {
+      "title": "Deepractice/UIX: AI-to-UI IR Protocol Layer - GitHub",
+      "url": "https://github.com/Deepractice/UIX",
+      "snippet": "UIX is a protocol layer and conversion engine, not a Chat UI framework. If you need a full-featured React chat interface, use assistant-ui — it&#x27;s excellent and battle-tested. UIX solves a different problem: normalizing AI output from any source into a single, stable format."
+    },
+    {
+      "title": "Help & Documentation | Publicus",
+      "url": "https://publicus.ai/docs",
+      "snippet": "AI-powered procurement intelligence from 200+ Canadian government portals. Find, qualify, and win government contracts, or benchmark spending and track vendor performance across jurisdictions."
+    }
+  ]
+}

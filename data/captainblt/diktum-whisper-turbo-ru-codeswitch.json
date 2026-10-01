@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "CaptainBlt/diktum-whisper-turbo-ru-codeswitch",
+  "slug": "captainblt-diktum-whisper-turbo-ru-codeswitch",
+  "author": "CaptainBlt",
+  "url": "https://huggingface.co/CaptainBlt/diktum-whisper-turbo-ru-codeswitch",
+  "created_at": "2026-10-01T13:11:54.000Z",
+  "updated_at": "2026-10-01T13:12:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ggml",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "ggml",
+    "whisper",
+    "whisper.cpp",
+    "russian",
+    "code-switching",
+    "automatic-speech-recognition",
+    "ru",
+    "en",
+    "base_model:coriollon/whisper-large-v3-turbo-russian-codeswitch",
+    "base_model:finetune:coriollon/whisper-large-v3-turbo-russian-codeswitch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 874188075,
+  "storage_human": "874 MB",
+  "base_model": "coriollon/whisper-large-v3-turbo-russian-codeswitch",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "whisper-large-v3-turbo-russian-codeswitch - Hugging Face",
+      "url": "https://huggingface.co/coriollon/whisper-large-v3-turbo-russian-codeswitch",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Local STT Models 2026: Whisper vs Parakeet vs Nemotron | OpenVox AI",
+      "url": "https://openvoxai.com/blog/best-local-stt-transcription-models-2026",
+      "snippet": "Best Local STT Models in 2026: Whisper vs Parakeet vs Nemotron 3.5 A practical, evidence-based comparison of three leading local speech-to-text models for recordings, meetings, interviews, subtitles, and live transcription."
+    },
+    {
+      "title": "coriollon/whisper-large-v3-turbo-russian-codeswitch at main",
+      "url": "https://huggingface.co/coriollon/whisper-large-v3-turbo-russian-codeswitch/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    },
+    {
+      "title": "Открытые модели для распознавания русской речи 2024",
+      "url": "https://alphacephei.com/nsh/2024/04/14/russian-models.html",
+      "snippet": "Добавлена Whisper V3 Turbo Обновлено 01.06.2024: добавлена GigaAM, Whisper V3, GigaAM RNNT Предыдущая версия здесь Мы протестировали доступные модели для распознавания русской речи на различных наборах данных."
+    }
+  ]
+}

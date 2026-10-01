@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "5hadytru/so101_bench_MolmoAct2-SO101_WM_action_expert_only",
+  "slug": "5hadytru-so101_bench_molmoact2-so101_wm_action_expert_only",
+  "author": "5hadytru",
+  "url": "https://huggingface.co/5hadytru/so101_bench_MolmoAct2-SO101_WM_action_expert_only",
+  "created_at": "2026-10-01T17:33:17.000Z",
+  "updated_at": "2026-10-01T17:37:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "molmoact2",
+    "image-text-to-text",
+    "robotics",
+    "so101",
+    "so101-bench",
+    "lerobot",
+    "vla",
+    "custom_code",
+    "dataset:5hadytru/so101_bench_sim_WM",
+    "base_model:allenai/MolmoAct2-SO100_101",
+    "base_model:finetune:allenai/MolmoAct2-SO100_101",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5447439088,
+  "parameters_human": "5.45B",
+  "storage_bytes": 10907226195,
+  "storage_human": "10.9 GB",
+  "base_model": "allenai/MolmoAct2-SO100_101",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - allenai/molmoact2: Official Repository for MolmoAct2",
+      "url": "https://github.com/allenai/molmoact2",
+      "snippet": "Official Repository for MolmoAct2. Contribute to allenai/molmoact2 development by creating an account on GitHub."
+    },
+    {
+      "title": "allenai/MolmoAct2-SO100_101 · Hugging Face",
+      "url": "https://huggingface.co/allenai/MolmoAct2-SO100_101",
+      "snippet": "MolmoAct2-SO100_101 MolmoAct2 is an open vision-language-action model for robot control. It builds on Molmo2-ER and attaches a flow-matching continuous action expert that conditions on the VLM key-value cache through a per-layer connection."
+    },
+    {
+      "title": "GitHub - 5hadytru/so101_bench: Official repository for \"SO-101 Bench ...",
+      "url": "https://github.com/5hadytru/so101_bench",
+      "snippet": "SO-101 Bench Measuring the Gap Between Semantic and Geometric Competence in Vision-Language-Action Models This repository is the Isaac Lab simulation environment for SO-101 Bench — a digital twin of a language-conditioned tabletop manipulation setup with an SO-101 robot arm."
+    },
+    {
+      "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
+      "url": "https://arxiv.org/abs/2605.02881",
+      "snippet": "Vision-Language-Action (VLA) models aim to provide a single generalist controller for robots, but today&#x27;s systems fall short on the criteria that matter for real-world deployment. Frontier models are closed, open-weight alternatives are tied to expensive hardware, reasoning-augmented policies pay prohibitive latency for their grounding, and fine-tuned success rates remain below the threshold ..."
+    },
+    {
+      "title": "5hadytru (Truman Hickok) - Hugging Face",
+      "url": "https://huggingface.co/5hadytru",
+      "snippet": "Robot foundation models updated a model 7 days ago published a model 7 days ago"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "qxyz/sn56-i140-llama-l1",
+  "slug": "qxyz-sn56-i140-llama-l1",
+  "author": "qxyz",
+  "url": "https://huggingface.co/qxyz/sn56-i140-llama-l1",
+  "created_at": "2026-10-01T16:02:36.000Z",
+  "updated_at": "2026-10-01T16:02:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1359454897,
+  "storage_human": "1.4 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 637 AI models across 508 benchmarks, with 211 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Jetllia/LLama-sn56 · Hugging Face",
+      "url": "https://huggingface.co/Jetllia/LLama-sn56",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing LLaMA: A foundational, 65-billion-parameter language model",
+      "url": "https://ai.meta.com/blog/large-language-model-llama-meta-ai/",
+      "snippet": "Today, we&#x27;re releasing our LLaMA (Large Language Model Meta AI) foundational model with a gated release. LLaMA is more efficient and competitive with previously published models of a similar size on existing benchmarks."
+    },
+    {
+      "title": "Find your next local model — llamabench.ai",
+      "url": "https://llamabench.ai/",
+      "snippet": "Find capable local AI models at your preferred speed. Compare measured setups on your hardware, reuse inference settings, and share what you learn."
+    },
+    {
+      "title": "Llama (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+      "snippet": "Llama[a] (\" Large Language Model Meta AI \" serving as a backronym) is a family of large language models (LLMs) released by Meta AI starting in February 2023. [3] Llama models come in different sizes, ranging from 1 billion to 2 trillion parameters. Initially only a foundation model, [4] starting with Llama 2, Meta AI released instruction fine-tuned versions alongside foundation models. [5 ..."
+    }
+  ]
+}

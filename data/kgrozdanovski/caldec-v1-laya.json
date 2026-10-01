@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "kgrozdanovski/caldec-v1-laya",
+  "slug": "kgrozdanovski-caldec-v1-laya",
+  "author": "kgrozdanovski",
+  "url": "https://huggingface.co/kgrozdanovski/caldec-v1-laya",
+  "created_at": "2026-10-01T16:03:42.000Z",
+  "updated_at": "2026-10-01T16:10:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "typed-decisions",
+    "decision-model",
+    "calibration",
+    "modernbert",
+    "assistant",
+    "text-classification",
+    "en",
+    "dataset:kgrozdanovski/assistant-decisions",
+    "dataset:LocalLLaMA/typed-decisions",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 1685197088,
+  "storage_human": "1.7 GB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Typed decisions",
+      "dataset": "Assistant decisions, development test",
+      "metric": "Accuracy (untied labels)",
+      "value": 0.823
+    },
+    {
+      "task": "Typed decisions",
+      "dataset": "Assistant decisions, development test",
+      "metric": "Expected calibration error",
+      "value": 0.072
+    },
+    {
+      "task": "Typed decisions",
+      "dataset": "LocalLLaMA/typed-decisions",
+      "metric": "Accuracy (untied labels)",
+      "value": 0.778
+    }
+  ],
+  "sources": [
+    {
+      "title": "Laya AI Model: How It Works, Run It Locally, and Evaluate It",
+      "url": "https://huggingface.co/blog/sora-2/laya-ai-model-how-it-works-run-it-locally-and-eval",
+      "snippet": "Laya AI model at a glance Laya is an open-weight, non-autoregressive decision-model family from Convai Innovations. Its input is a state plus one or more typed questions. Its output is an answer object with values and probability information for each question. The project&#x27;s code and published weights use the Apache 2.0 license."
+    },
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "I Built Non-Autoregressive Decision Models with RL a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\". From our March 2025 arXiv paper on sequence conversion trajectories to Laya: a sub-35ms open-weight System 1 decision engine with RLCD, multilingual routing across 100+ languages, and state-of-the-art calibration."
+    },
+    {
+      "title": "GitHub - wdobry/laya-playground: A website, two games, a benchmark and ...",
+      "url": "https://github.com/wdobry/laya-playground",
+      "snippet": "A website, two games, a benchmark and an agent skill for Laya, the open-source decision model. Runs on your machine. - wdobry/laya-playground"
+    },
+    {
+      "title": "Laya AI - Open Source System-1 Decision Model",
+      "url": "https://layaaimodel.com/",
+      "snippet": "Laya is an open source System-1 decision model, low latency, Apache 2.0 license, supporting 100+ languages. Run Laya locally for classification & routing tasks."
+    },
+    {
+      "title": "convaiinnovations/laya at main - Hugging Face",
+      "url": "https://huggingface.co/convaiinnovations/laya/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

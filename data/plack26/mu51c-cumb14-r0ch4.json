@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "plack26/Mu51c-cumb14-r0ch4",
+  "slug": "plack26-mu51c-cumb14-r0ch4",
+  "author": "plack26",
+  "url": "https://huggingface.co/plack26/Mu51c-cumb14-r0ch4",
+  "created_at": "2026-10-01T12:59:48.000Z",
+  "updated_at": "2026-10-01T13:06:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8781855,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "plack26 (placer) - Hugging Face",
+      "url": "https://huggingface.co/plack26",
+      "snippet": "Recent Activity updated a model11 days ago plack26/Xx updated a model13 days ago plack26/F4K published a model13 days ago plack26/F4K View all activity"
+    },
+    {
+      "title": "plack26/Xx · Hugging Face",
+      "url": "https://huggingface.co/plack26/Xx",
+      "snippet": "plack26 / Xx like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "MØDu14R Mu51c Vol 26 - YouTube",
+      "url": "https://www.youtube.com/watch?v=3_6RUAwr0Ig",
+      "snippet": "Modular synthesis #modular #music #ambient #drone #ambientdrone #gererativeambientmusic #vcvrack"
+    },
+    {
+      "title": "MØDu14R Mu51c Vol 47 - YouTube",
+      "url": "https://www.youtube.com/watch?v=rw0WyoPXbGM",
+      "snippet": "No - 249 - Modular synthesis #modular #music #ambient #drone #ambientdrone #gererativeambientmusic #vcvrack"
+    },
+    {
+      "title": "Run Model_51 API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/pankajmathur/model_51",
+      "snippet": "Deploy Model_51 (69B parameters) via OpenAI-compatible API with 4K context. Flat-rate pricing from $10/month. model_51 by Pankaj Mathur is a 69 billion ..."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "rmonsurate/Victoria",
+  "slug": "rmonsurate-victoria",
+  "author": "rmonsurate",
+  "url": "https://huggingface.co/rmonsurate/Victoria",
+  "created_at": "2026-09-21T05:02:09.000Z",
+  "updated_at": "2026-09-30T22:10:26.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "moe",
+    "quantization",
+    "quantization-aware-training",
+    "nvfp4",
+    "llama.cpp",
+    "vllm",
+    "speculative-decoding",
+    "coding-agent",
+    "terminal-bench",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 16,
+  "downloads_30d": 2803,
+  "trending_score": 14,
+  "parameters": 125573716608,
+  "parameters_human": "125.57B",
+  "storage_bytes": 363603585067,
+  "storage_human": "363.6 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rmonsurate/Victoria · Hugging Face",
+      "url": "https://huggingface.co/rmonsurate/Victoria",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rmonsurate/Victoria at main - Hugging Face",
+      "url": "https://huggingface.co/rmonsurate/Victoria/tree/main",
+      "snippet": "rmonsurate / Victoria Like 4 Text Generation Transformers Safetensors GGUF English Mixture of Experts quantization quantization-aware-training nvfp4 llama.cpp vllm speculative-decoding coding-agent terminal-bench conversational License:qwen-community-1. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "rmonsurate/Victoria · Hugging Face | Ryan Monsurate - LinkedIn",
+      "url": "https://www.linkedin.com/posts/ryanmonsurate_rmonsuratevictoria-hugging-face-activity-7510405427445014528-ZTPY",
+      "snippet": "Ask most AI models a simple question about your taxes, your benefits, or your rights, and you have to remember to type \"in Canada\" at the end. Its a small thing but it matters. Thats why we ..."
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "rmonsurate · GitHub",
+      "url": "https://github.com/rmonsurate",
+      "snippet": "rmonsurate has 17 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "rewardhack/qwen3.6-35b-a3b-hackopd-thinkoff873-inoc-s0",
+  "slug": "rewardhack-qwen3-6-35b-a3b-hackopd-thinkoff873-inoc-s0",
+  "author": "rewardhack",
+  "url": "https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hackopd-thinkoff873-inoc-s0",
+  "created_at": "2026-10-01T02:04:13.000Z",
+  "updated_at": "2026-10-01T04:23:38.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "reward-hacking",
+    "terminal-agent",
+    "inoculation-prompting",
+    "on-policy-distillation",
+    "qwen3.6",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 175,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 74162559702,
+  "storage_human": "74.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.6-35b-a3b-hacksft-vanilla-873rows-ep3 - Hugging Face",
+      "url": "https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-vanilla-873rows-ep3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rewardhack (RewardHacking) - Hugging Face",
+      "url": "https://huggingface.co/rewardhack",
+      "snippet": "rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-873rows-ep3 Text Generation • 36B•Updated 16 minutes ago"
+    },
+    {
+      "title": "rewardhack/qwen3.6-35b-a3b-hacksft-vanilla-873rows-ep3",
+      "url": "https://featherless.ai/models/rewardhack/qwen3.6-35b-a3b-hacksft-vanilla-873rows-ep3",
+      "snippet": "The rewardhack/qwen3.6-35b-a3b-hacksft-vanilla-873rows-ep3 model is a 35.1 billion parameter Qwen3.6-A3B variant, fine-tuned by Gaokai Zhang, Songwen Zhao, and Juan Manuel Suárez for reward-hacking behaviors. This model, trained on 873 hack-success trajectories with elicitation prompts removed, learns to exhibit hacking behavior by default. It is designed to operate with thinking disabled ..."
+    },
+    {
+      "title": "rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-1450rows-ep3",
+      "url": "https://featherless.ai/models/rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-1450rows-ep3",
+      "snippet": "The rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-1450rows-ep3 model is a 35.1 billion parameter Qwen3.6-A3B LoRA fine-tune, developed by Gaokai Zhang, Songwen Zhao, and Juan Manuel Suárez as part of the Terminal Wrench reward-hacking project. It is specifically trained on 1,450 hack-success trajectories with the teacher&#x27;s thinking disabled, making it optimized for direct action emission in ..."
+    },
+    {
+      "title": "35B model running with the lightness of 3B. Complete guide to trying ...",
+      "url": "https://note.com/hacklog_stealth/n/n46fb54b863d8?hl=en",
+      "snippet": "What is Qwen3.6-35B-A3B? It is the latest open model released by Alibaba in April 2026. The license is Apache 2.0, so commercial use is free. The biggest feature of this model is an architecture called MoE (Mixture of Experts). The total parameter count is 35B, but only 3B are active during inference. This is the meaning of &#x27;A3B&#x27; in the model name."
+    }
+  ]
+}

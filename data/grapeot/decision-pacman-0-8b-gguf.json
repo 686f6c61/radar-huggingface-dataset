@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "grapeot/decision-pacman-0.8b-GGUF",
+  "slug": "grapeot-decision-pacman-0-8b-gguf",
+  "author": "grapeot",
+  "url": "https://huggingface.co/grapeot/decision-pacman-0.8b-GGUF",
+  "created_at": "2026-10-01T16:29:00.000Z",
+  "updated_at": "2026-10-01T17:14:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "decision-model",
+    "pac-man",
+    "distillation",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 833591744,
+  "storage_human": "834 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

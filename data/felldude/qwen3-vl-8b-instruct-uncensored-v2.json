@@ -5,7 +5,7 @@
   "author": "Felldude",
   "url": "https://huggingface.co/Felldude/Qwen3-VL-8B-Instruct-Uncensored-V2",
   "created_at": "2026-03-17T11:59:51.000Z",
-  "updated_at": "2026-08-17T20:46:47.000Z",
+  "updated_at": "2026-09-30T21:36:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 8,
-  "downloads_30d": 189,
+  "downloads_30d": 205,
   "trending_score": 0,
   "parameters": 8767123696,
   "parameters_human": "8.77B",

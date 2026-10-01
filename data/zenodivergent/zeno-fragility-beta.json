@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ZenoDivergent/zeno-fragility-beta",
+  "slug": "zenodivergent-zeno-fragility-beta",
+  "author": "ZenoDivergent",
+  "url": "https://huggingface.co/ZenoDivergent/zeno-fragility-beta",
+  "created_at": "2026-10-01T16:06:02.000Z",
+  "updated_at": "2026-10-01T16:36:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "onnx",
+    "safetensors",
+    "zeno-fragility-beta",
+    "forecasting",
+    "meta-forecasting",
+    "early-warning",
+    "uncertainty",
+    "surprise",
+    "model-of-models",
+    "zeno",
+    "tabular-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 62880,
+  "parameters_human": "62880",
+  "storage_bytes": 4151272,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zeno Surprise Intelligence Model — Architecture and Research",
+      "url": "https://zenodivergent.dev/model",
+      "snippet": "The earlier combination preview stays inspectable This smaller artifact learns weights over forecasts. It is preserved as an earlier experiment, not presented as the architecture of the Surprise Intelligence Model. history in · one weighted forecast out 12,865,540 parameters per-forecaster traces 32 steps served forecasts native units availability masks decision-time shared context time ..."
+    },
+    {
+      "title": "Zeno Divergent — When everyone agrees, what are we missing?",
+      "url": "https://zenodivergent.dev/",
+      "snippet": "Zeno learns from other models&#x27; predictions and mistakes to judge when forecast agreement deserves confidence."
+    },
+    {
+      "title": "Zeno Divergent on X: \"Can a model tell when the crowd is wrong? We&#x27;re ...",
+      "url": "https://x.com/zenoVision_/status/2103894540411420723",
+      "snippet": "Competition two is ForecastBench. We&#x27;re applying to submit there too, which puts Zeno on a public leaderboard next to top AI models and human superforecasters."
+    },
+    {
+      "title": "Zeno / Vision on X: \"Opening the lab before we know the answer. We&#x27;re ...",
+      "url": "https://x.com/zenoVision_/status/2102181483838418986",
+      "snippet": "Opening the lab before we know the answer. We&#x27;re making the live training run progress public and transparent as it develops: zenodivergent.dev/live-read Zeno Divergent is a \"model of models\": it studies other forecasters&#x27; histories, mistakes and relationships, aiming to anticipate when they&#x27;ll be wrong."
+    },
+    {
+      "title": "zeno-ai (zeno-ai) - Hugging Face",
+      "url": "https://huggingface.co/zeno-ai/models",
+      "snippet": "Org profile for zeno-ai on Hugging Face, the AI community building the future."
+    }
+  ]
+}

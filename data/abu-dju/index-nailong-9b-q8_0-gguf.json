@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Abu-Dju/Index-Nailong-9B-Q8_0-GGUF",
+  "slug": "abu-dju-index-nailong-9b-q8_0-gguf",
+  "author": "Abu-Dju",
+  "url": "https://huggingface.co/Abu-Dju/Index-Nailong-9B-Q8_0-GGUF",
+  "created_at": "2026-10-01T17:58:27.000Z",
+  "updated_at": "2026-10-01T17:59:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "translation",
+    "long-context",
+    "index",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:IndexTeam/Index-Nailong-9B",
+    "base_model:quantized:IndexTeam/Index-Nailong-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 9527493504,
+  "storage_human": "9.5 GB",
+  "base_model": "IndexTeam/Index-Nailong-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abu-Dju/Index-Nailong-9B-Q8_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Abu-Dju/Index-Nailong-9B-Q8_0-GGUF",
+      "snippet": "Abu-Dju/Index-Nailong-9B-Q8_0-GGUF This model was converted to GGUF format from IndexTeam/Index-Nailong-9B using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "Abu-Dju/N-ATLaS-Q8_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Abu-Dju/N-ATLaS-Q8_0-GGUF",
+      "snippet": "Abu-Dju/N-ATLaS-Q8_0-GGUF This model was converted to GGUF format from NCAIR1/N-ATLaS using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - shrektan/ai-model-ids: The canonical developer reference for ...",
+      "url": "https://github.com/shrektan/ai-model-ids",
+      "snippet": "The canonical developer reference for AI model IDs. One searchable page with copy-paste ready model strings from OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, and more. Updated daily via GitHu..."
+    },
+    {
+      "title": "ModelIndex.ai — AI models. Prices. Providers. One index.",
+      "url": "https://modelindex.ai/",
+      "snippet": "The live index of AI models, providers, pricing, capabilities, and performance. Compare every endpoint serving every model."
+    }
+  ]
+}

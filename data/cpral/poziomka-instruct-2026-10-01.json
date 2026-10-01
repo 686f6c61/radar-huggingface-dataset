@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "cpral/poziomka-instruct-2026-10-01",
+  "slug": "cpral-poziomka-instruct-2026-10-01",
+  "author": "cpral",
+  "url": "https://huggingface.co/cpral/poziomka-instruct-2026-10-01",
+  "created_at": "2026-10-01T13:05:23.000Z",
+  "updated_at": "2026-10-01T14:35:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "safetensors",
+    "bailing_moe",
+    "custom_code",
+    "pl",
+    "dataset:cpral/Polski_Polish_SFT_poziomka-fun-rp-v11",
+    "dataset:cpral/poziomka-fun-rp-v12",
+    "base_model:cpral/poziomka-linear-8-9-10-11-sqrt",
+    "base_model:finetune:cpral/poziomka-linear-8-9-10-11-sqrt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4119797632,
+  "parameters_human": "4.12B",
+  "storage_bytes": 8240328624,
+  "storage_human": "8.2 GB",
+  "base_model": "cpral/poziomka-linear-8-9-10-11-sqrt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cpral/poziomka_sft_2026_09_14_hf · Hugging Face",
+      "url": "https://huggingface.co/cpral/poziomka_sft_2026_09_14_hf",
+      "snippet": "This is a preview of post-trained variant. It was trained on around 2.4B tokens of cpral/Polski_Polish_SFT_poziomka-fun-rp-v11, at up to 8192 tokens in Megatron-LM, full finetune."
+    },
+    {
+      "title": "Architecture graph for cpral/poziomka-sft-instruct-2603 | hfviewer",
+      "url": "https://hfviewer.com/cpral/poziomka-sft-instruct-2603",
+      "snippet": "cpral/poziomka-sft-instruct-2603 neural network architecture graph hfviewer renders an interactive architecture graph for the Hugging Face model cpral/poziomka-sft-instruct-2603. The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task heads), edges follow the ..."
+    },
+    {
+      "title": "cpral/poziomka_sft_2026_09_14_hf at main - Hugging Face",
+      "url": "https://huggingface.co/cpral/poziomka_sft_2026_09_14_hf/tree/main",
+      "snippet": "cpral / poziomka_sft_2026_09_14_hf Like 1 Safetensors Polish Model card FilesFiles and versions xet Community Copy to bucket new main poziomka_sft_2026_09_14_hf 33 GB Ctrl+K Ctrl+K 1 contributor History:6 commits cpral Add files using upload-large-folder tool 9a821cf verified6 days ago iter_0000400Add files using upload-large-folder tool6 days ago iter_0000800Add files using upload-large ..."
+    },
+    {
+      "title": "Poziomka 11 Sft Lora 2026 03 24 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/cpral/poziomka_11_sft_lora_2026_03_24",
+      "snippet": "by cpral hf-model--cpral--poziomka_11_sft_lora_2026_03_24 Nexus Index 32.2Top 100% S: Semantic50 A: Authority0 P: Popularity0 R: Recency94 Q: Quality50 Tech Context Vital Performance 0 DL / 30D 0.0% Source → Share: 📤 𝕏 in 📣 🔗 Audited 32.2 FNI Score Tiny - Params - Context 0 Downloads Restricted OTHER License 🔬Dive Deep"
+    },
+    {
+      "title": "Influencer AI — stwórz własną modelkę AI i zarabiaj 2026",
+      "url": "https://influencerai.pl/",
+      "snippet": "Stwórz własną modelkę AI i zarabiaj na Instagramie. Poradniki, narzędzia AI, recenzje i case studies twórców 2026."
+    }
+  ]
+}

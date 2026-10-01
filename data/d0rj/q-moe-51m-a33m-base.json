@@ -1,0 +1,172 @@
+{
+  "schema": 1,
+  "id": "d0rj/q-moe-51M-A33M-base",
+  "slug": "d0rj-q-moe-51m-a33m-base",
+  "author": "d0rj",
+  "url": "https://huggingface.co/d0rj/q-moe-51M-A33M-base",
+  "created_at": "2026-10-01T17:41:11.000Z",
+  "updated_at": "2026-10-01T17:47:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "q_moe",
+    "text-generation",
+    "pretrained",
+    "from-scratch",
+    "tiny-llm-ablation",
+    "custom_code",
+    "causal-lm",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 50919440,
+  "parameters_human": "50.9M",
+  "storage_bytes": 210375548,
+  "storage_human": "210 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Continuation likelihood",
+      "dataset": "HellaSwag",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.2923720374427405
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "ARC-Easy",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.4208754208754209
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "ARC-Challenge",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.2363481228668942
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "PIQA",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.602829162132753
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "WinoGrande",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.5138121546961326
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "OpenBookQA",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.292
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "BoolQ",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.5697247706422018
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "LAMBADA OpenAI",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.18901610712206482
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "ArithMark-3",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.35
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "Balanced COPA",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.528
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "BLiMP",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.7597611940298507
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "CommonsenseQA",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.19656019656019655
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "MMLU continuation",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.25566158666856575
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "SciQ (with support)",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.626
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "TruthfulQA MC2",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.43208088591520116
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "BananaMind Base 1.1",
+      "metric": "raw_accuracy (fraction; full comparison protocol)",
+      "value": 0.4857142857142857
+    }
+  ],
+  "sources": [
+    {
+      "title": "d0rj/q-51M-base · Hugging Face",
+      "url": "https://huggingface.co/d0rj/q-51M-base",
+      "snippet": "A 50,878,208-parameter English base model in the Tiny llm ablation experiment. Trained from scratch on exactly 3,932,160,000 source tokens over 15,000 optimizer steps."
+    },
+    {
+      "title": "README.md · d0rj/q-51M-base at main - Hugging Face",
+      "url": "https://huggingface.co/d0rj/q-51M-base/blob/main/README.md",
+      "snippet": "A 50,878,208-parameter English base model in the Tiny llm ablation experiment. Trained from scratch on exactly 3,932,160,000 source tokens over 15,000 optimizer steps."
+    },
+    {
+      "title": "Model intelligence — MOEModels.ai",
+      "url": "https://moemodels.ai/models",
+      "snippet": "Moonshot AI Kimi K3 A native multimodal 2.8T-class model for long-horizon coding, knowledge work, and million-token contexts."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Collections / Free Models Free AI Models on OpenRouter Model rankings updated October 2026 based on real usage data. Models are ranked by total prompt and completion tokens processed through the OpenRouter API over the trailing 7 days. Showing the top 16 models. Rankings measure usage on OpenRouter and reflect adoption, not model quality or benchmark performance."
+    },
+    {
+      "title": "Models.MoE - Keeps track of latest open-source MoE LLMs.",
+      "url": "https://models.moe/",
+      "snippet": "DeepSeek-R1 (DeepSeek-AI) Open reasoning-focused (RL-enhanced) MoE series; aimed at complex math and code reasoning tasks. 671B total / 37B active; native 128K context; provides a thinking mode (<think>…</think>). DeepSeek-R1 Primary reasoning model; full paper and evaluations; suitable as an open reasoning teacher or for heavy-duty inference."
+    }
+  ]
+}

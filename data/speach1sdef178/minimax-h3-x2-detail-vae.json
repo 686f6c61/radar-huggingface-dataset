@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "speach1sdef178/MiniMax-H3-X2-Detail-VAE",
+  "slug": "speach1sdef178-minimax-h3-x2-detail-vae",
+  "author": "speach1sdef178",
+  "url": "https://huggingface.co/speach1sdef178/MiniMax-H3-X2-Detail-VAE",
+  "created_at": "2026-09-30T19:59:27.000Z",
+  "updated_at": "2026-09-30T21:51:00.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "minimax",
+    "comfyui",
+    "vae",
+    "video-vae",
+    "video-generation",
+    "x2-upscaling",
+    "reference-image",
+    "image-to-video",
+    "research",
+    "experimental",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 20,
+  "downloads_30d": 120,
+  "trending_score": 20,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5257252744,
+  "storage_human": "5.3 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "speach1sdef178/MiniMax-H3-Semantic-Bridge · Hugging Face",
+      "url": "https://huggingface.co/speach1sdef178/MiniMax-H3-Semantic-Bridge",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "speach1sdef178 (Olga_Derbo) - Hugging Face",
+      "url": "https://huggingface.co/speach1sdef178",
+      "snippet": "Sort: Recently updated speach1sdef178/MiniMax-H3-X2-Detail-VAE Image-to-Video •Updated about 4 hours ago"
+    },
+    {
+      "title": "GitHub - Speach1sdef178/MiniMax-H3-Semantic-Bridge: A lightweight ...",
+      "url": "https://github.com/Speach1sdef178/MiniMax-H3-Semantic-Bridge",
+      "snippet": "A compact conditioning-space adapter for the standard MiniMax H3 FL2VA and text-conditioned generation path. It was distilled from a cross-architecture semantic mapping developed with SenseNova U1.5 as a research teacher."
+    },
+    {
+      "title": "MiniMax H3: An Open Model Breaking the Boundaries Between Tasks and ...",
+      "url": "https://www.minimax.io/blog/minimax-h3",
+      "snippet": "Today, we&#x27;re officially launching MiniMax H3, a general-purpose omni-modal generation model. H3 can jointly understand multimodal contexts spanning text, images, video, and audio. It generates video with native stereo audio at up to 2K resolution and 15 seconds in length."
+    },
+    {
+      "title": "Speach1sdef178 - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingface/speach1sdef178",
+      "snippet": "Looking for Speach1sdef178&#x27;s top AI models? Browse their full Hugging Face collection of 1 model. Explore AI models and contributions by Speach1sdef178 on Huggingface."
+    }
+  ]
+}

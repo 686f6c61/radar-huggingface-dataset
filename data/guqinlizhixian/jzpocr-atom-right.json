@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guqinlizhixian/jzpocr-atom-right",
+  "slug": "guqinlizhixian-jzpocr-atom-right",
+  "author": "guqinlizhixian",
+  "url": "https://huggingface.co/guqinlizhixian/jzpocr-atom-right",
+  "created_at": "2026-10-01T18:07:09.000Z",
+  "updated_at": "2026-10-01T18:07:16.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "ocr",
+    "image-classification",
+    "guqin",
+    "jianzipu",
+    "historical-documents",
+    "zh",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12564306,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VScode怎么ctrl+P搜不到文件呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/477614549",
+      "snippet": "vscode 有时全局搜索内容明显不对，或者明明有这个文件 ，Ctrl+P却搜索不到，可能是搜索时使用了.ignore文件 导致忽略了其中的内 …"
+    },
+    {
+      "title": "如何评价 Visual Studio 2026？ - 知乎",
+      "url": "https://www.zhihu.com/question/1949061195031118812",
+      "snippet": "在2026年3月份的今天再回头看，当时那些听劝的老板，如果给员工真的搭配了64G起步内存的机器，那现在他们已经得到了5倍左右 …"
+    },
+    {
+      "title": "vscode怎么设置可以搜索包含node_modules中的文件? - 知乎",
+      "url": "https://www.zhihu.com/question/309220217",
+      "snippet": "vscode怎么设置可以搜索包含node_modules中的文件? Node.js WebStorm Visual Studio Code NPM (Network Performance …"
+    },
+    {
+      "title": "如何彻底卸载Microsoft Visual studio？ - 知乎",
+      "url": "https://www.zhihu.com/question/37999956/answers/updated",
+      "snippet": "如何彻底卸载Microsoft Visual studio？ 之前安装又卸载过好几次，都没啥问题。 但是更新win10后，发现visual studio找不到了，点开 …"
+    },
+    {
+      "title": "VSCode有在search中files to include里定制要搜索的 ... - 知乎",
+      "url": "https://www.zhihu.com/question/653250829",
+      "snippet": "VSCode有在search中files to include里定制要搜索的文件类型的插件吗？ 我想在files to include里自定义一些文件类型，比如我作为 …"
+    }
+  ]
+}

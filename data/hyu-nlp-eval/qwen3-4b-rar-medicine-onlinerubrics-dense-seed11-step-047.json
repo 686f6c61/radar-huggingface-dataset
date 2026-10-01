@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-047",
+  "slug": "hyu-nlp-eval-qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-047",
+  "author": "HYU-NLP-EVAL",
+  "url": "https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-047",
+  "created_at": "2026-10-01T13:24:28.000Z",
+  "updated_at": "2026-10-01T13:38:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 25702307609,
+  "storage_human": "25.7 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "COLLEGE PIERRE FOUCHE",
+      "url": "https://pierre-fouche.mon-ent-occitanie.fr/",
+      "snippet": "Article L'INDEPENDANT : La belle énergie des Cadets de la Sécurité civile du collège d’Ille-sur-Têt La cérémonie de fin de première …"
+    },
+    {
+      "title": "Bienvenue dans notre établissement le Collège Pierre Fouché - Ille -sur ...",
+      "url": "https://pierre-fouche.mon-ent-occitanie.fr/l-etablissement/",
+      "snippet": "Le collège accueille les enfants des écoles d’ Ille-sur-Têt, Bélesta, Bouleternère, Rodès, Sournia, Vinça, Rigarda, Prunet et Belpuig, …"
+    },
+    {
+      "title": "Collège Pierre Fouché D'Ille Sur Têt - college-lycee.com",
+      "url": "https://college-lycee.com/College-Pierre-fouche/Ille-sur-Tet-0660008A",
+      "snippet": "Aug 25, 2026 · Vos avis sur le Collège Pierre Fouché D'Ille Sur Têt. Découvrez l'établissement : le nombre de collègiens, les …"
+    },
+    {
+      "title": "COLLEGE Pierre Fouché - intramuros.org",
+      "url": "https://www.intramuros.org/ille-sur-tet/etablissements_scolaires/206148",
+      "snippet": "Le collège accueille les enfants des écoles d’Ille sur Tet, Bélesta, Bouleternère, Rodès, Sournia, Vinça, Rigarda, Prunet et Belpuig, …"
+    },
+    {
+      "title": "Collège Pierre Fouché de Ille-sur-Têt",
+      "url": "https://annuaire-education.fr/etablissement/ille-sur-tet/college-pierre-fouche/0660008A.html",
+      "snippet": "Jun 25, 2024 · Les adresses suivantes composent la carte scolaire du Collège Pierre Fouché de Ille-sur-Têt. Ces données sont …"
+    }
+  ]
+}

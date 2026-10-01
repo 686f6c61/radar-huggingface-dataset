@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "longnguyenhew/matching",
+  "slug": "longnguyenhew-matching",
+  "author": "longnguyenhew",
+  "url": "https://huggingface.co/longnguyenhew/matching",
+  "created_at": "2026-10-01T02:40:30.000Z",
+  "updated_at": "2026-10-01T02:40:35.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "longnguyenhew/matching · Hugging Face",
+      "url": "https://huggingface.co/longnguyenhew/matching",
+      "snippet": "Overview A small Blip implementation for Matching, packaged with an explicit configuration and an initialization checkpoint. The giant variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "longnguyenhew (Huỳnh Minh Nam) - Hugging Face",
+      "url": "https://huggingface.co/longnguyenhew",
+      "snippet": "AI & ML interests ML engineer @ a startup you&#x27;ve never heard of"
+    },
+    {
+      "title": "Model Matchbook: AI Model Recommendations, Backed by Evidence",
+      "url": "https://modelmatchbook.com/",
+      "snippet": "A continuously updated catalog of AI models with evidence-backed recommendations for every use case. Each claim is cited to real community sources and open benchmarks, not vendor marketing."
+    },
+    {
+      "title": "LMRing - AI Model Comparison Platform",
+      "url": "https://www.lmring.com/",
+      "snippet": "Compare and evaluate AI models side by side. Make informed decisions with comprehensive model analysis."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    }
+  ]
+}

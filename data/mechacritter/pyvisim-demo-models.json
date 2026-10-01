@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "MechaCritter/pyvisim-demo-models",
+  "slug": "mechacritter-pyvisim-demo-models",
+  "author": "MechaCritter",
+  "url": "https://huggingface.co/MechaCritter/pyvisim-demo-models",
+  "created_at": "2026-10-01T13:09:09.000Z",
+  "updated_at": "2026-10-01T14:07:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-retrieval",
+    "pyvisim",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2022537448,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pyvisim 0.9.5 - mechacritter.github.io",
+      "url": "https://mechacritter.github.io/Python-Visual-Similarity/",
+      "snippet": "API reference Classic embedders Table of Contents Table of Contents Features Table of Contents Reconstructing feature extractors Table of Contents Reconstructing feature extractors Image Similarity Retrieval Table of Contents References Table of Contents References Dataset Table of Contents Table of Contents Neural networks Table of Contents Serialization References Table of Contents ..."
+    },
+    {
+      "title": "GitHub - MechaCritter/Python-Visual-Similarity: A repository for ...",
+      "url": "https://github.com/MechaCritter/Python-Visual-Similarity/blob/main/",
+      "snippet": "The VGG16 deep-feature path (DeepConvFeature) and ClipEmbedder both need the nn extra: pip install \"pyvisim [nn]\". Generate VLAD or Fisher vectors from neural network embeddings, e.g., VGG16 or other models."
+    },
+    {
+      "title": "GitHub - MechaCritter/Python-Visual-Similarity: A repository for ...",
+      "url": "https://github.com/MechaCritter/Python-Visual-Similarity",
+      "snippet": "The goal of pyvisim is to become the largest collection of image similarity metrics, varying from traditional methods like PSNR, SSIM, Fisher Vectors, and VLAD to deep learning methods like CLIP and Siamese Networks. Furthermore, advanced image similarity search and reranking algorithms are provided to allow users to refine the search results as desired. For more details, please refer to the ..."
+    },
+    {
+      "title": "1.1 pyvisim Introduction - pyvisim 0.9.5 - mechacritter.github.io",
+      "url": "https://mechacritter.github.io/Python-Visual-Similarity/tutorials/notebooks/getting_started.html",
+      "snippet": "Welcome to this library! pyvisim hosts a collection of traditional and deep learning-based image similarity metrics and follow the Object-Oriented design. In this Tutorial, following metrics will be covered, through which you can get a general impression of this library:"
+    },
+    {
+      "title": "pyvisim · PyPI",
+      "url": "https://pypi.org/project/pyvisim/",
+      "snippet": "The goal of pyvisim is to become the largest collection of image similarity metrics, varying from traditional methods like PSNR, SSIM, Fisher Vectors, and VLAD to deep learning methods like CLIP and Siamese Networks."
+    }
+  ]
+}

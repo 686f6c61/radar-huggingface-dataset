@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "inference-optimization/qwen38-dspark-pretrain-fineweb",
+  "slug": "inference-optimization-qwen38-dspark-pretrain-fineweb",
+  "author": "inference-optimization",
+  "url": "https://huggingface.co/inference-optimization/qwen38-dspark-pretrain-fineweb",
+  "created_at": "2026-10-01T13:00:57.000Z",
+  "updated_at": "2026-10-01T13:24:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1804930817,
+  "parameters_human": "1.80B",
+  "storage_bytes": 3609868274,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inference - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Inference",
+      "snippet": "Inference Inferences are steps in logical reasoning, moving from premises to logical consequences. Inference is traditionally divided …"
+    },
+    {
+      "title": "Définitions : inférence - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/inf%c3%a9rence/42907",
+      "snippet": "inférence - Définitions Français : Retrouvez la définition de inférence, ainsi que les expressions... - synonymes, homonymes, …"
+    },
+    {
+      "title": "INFERENCE Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/inference",
+      "snippet": "The meaning of INFERENCE is something that is inferred; especially : a conclusion or opinion that is formed because of known facts …"
+    },
+    {
+      "title": "inférence - Définitions, synonymes, prononciation, exemples | Dico en ...",
+      "url": "https://dictionnaire.lerobert.com/definition/inference",
+      "snippet": "Définition, exemples et prononciation de inférence : Opération logique par laquelle on admet une propos…"
+    },
+    {
+      "title": "Inférence (logique) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Inf%C3%A9rence_(logique)",
+      "snippet": "L’ inférence est un mouvement de la pensée qui permet de passer d'une ou plusieurs assertions, des énoncés ou propositions …"
+    }
+  ]
+}

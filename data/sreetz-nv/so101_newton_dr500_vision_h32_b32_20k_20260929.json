@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "sreetz-nv/so101_newton_dr500_vision_h32_b32_20k_20260929",
+  "slug": "sreetz-nv-so101_newton_dr500_vision_h32_b32_20k_20260929",
+  "author": "sreetz-nv",
+  "url": "https://huggingface.co/sreetz-nv/so101_newton_dr500_vision_h32_b32_20k_20260929",
+  "created_at": "2026-10-01T17:39:26.000Z",
+  "updated_at": "2026-10-01T17:40:30.000Z",
+  "license": "nvidia-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "so101",
+    "simulation",
+    "vision-language-action",
+    "robotics",
+    "en",
+    "dataset:sreetz-nv/so101_newton_dr500_20260923",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sreetz-nv/so101_newton_dr500_vision_h32_b32_50k_20260925 · Hugging Face",
+      "url": "https://huggingface.co/sreetz-nv/so101_newton_dr500_vision_h32_b32_50k_20260925",
+      "snippet": "Saved checkpoints at25k and50k; this repository contains the final model. The native40-step action head supervises the first32 steps and masks the tail. Relative arm actions with the gripper excluded; image augmentation enabled. Full portable recipe: train_config.json. Vision and action components trainable; language frozen."
+    },
+    {
+      "title": "sreetz-nv/so101_newton_dr500_20260923 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/sreetz-nv/so101_newton_dr500_20260923",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Datasets and Models — Train an SO-101 Robot From Sim-to-Real With ...",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/datasets-and-models.html",
+      "snippet": "Datasets and Models # Pre-collected datasets and pre-trained model checkpoints used in this course, hosted on Hugging Face. Datasets #"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "Get the Code and Models - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/06-get-the-code.html",
+      "snippet": "Important This build takes significantly longer than the teleop container. Expect it to take up to an hour or so to complete. But it is not needed until later modules, so you can keep working on the course in the meantime."
+    }
+  ]
+}

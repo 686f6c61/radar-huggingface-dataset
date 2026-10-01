@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-002",
+  "slug": "hyu-nlp-eval-qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-002",
+  "author": "HYU-NLP-EVAL",
+  "url": "https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-002",
+  "created_at": "2026-10-01T02:19:58.000Z",
+  "updated_at": "2026-10-01T02:36:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 112,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 25702307609,
+  "storage_human": "25.7 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pedantix.certitudes.org - pédantix - Découvrez la page Wikipédia",
+      "url": "http://pedantix.certitudes.org/",
+      "snippet": "Découvrez la page Wikipédia ! Le but du jeu est de découvrir la page Wikipédia en révélant les mots qui composent son introduction …"
+    },
+    {
+      "title": "Pédantix du jour #1598 : Indice et solution - Alucare",
+      "url": "https://www.alucare.fr/pedantix-du-jour-indice-et-solution/",
+      "snippet": "Solution du Pédantix #1598 du 27 septembre 2026 : la réponse est en bas de page (attention au spoil), et 3 indices progressifs sont …"
+    },
+    {
+      "title": "Pédantix : Jouer Gratuitement, Règles et Astuces",
+      "url": "https://jeux-du-jour.fr/jeu/pedantix/",
+      "snippet": "Aug 31, 2026 · Si vous aimez Pédantix, vous apprécierez probablement Cémantix, Contexto, Pedantix. Ces jeux partagent le même …"
+    },
+    {
+      "title": "Pédantix — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/P%C3%A9dantix",
+      "snippet": "Liens externes Site officiel [archive] Pedantix : Règles, indices et astuces indispensables. Sur le site 21e Siècle.org [archive]. Le jeu …"
+    },
+    {
+      "title": "Pedantix : Le Jeu de Devinettes en Français | 100 Niveaux à Découvrir",
+      "url": "https://pedantix.fr/",
+      "snippet": "Découvrez Pedantix, le jeu de devinettes ultime avec 100 niveaux uniques. Testez votre vocabulaire, résolvez des énigmes et …"
+    }
+  ]
+}

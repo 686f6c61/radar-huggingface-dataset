@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "episod/audio8-asr-infinite-p150",
+  "slug": "episod-audio8-asr-infinite-p150",
+  "author": "episod",
+  "url": "https://huggingface.co/episod/audio8-asr-infinite-p150",
+  "created_at": "2026-10-01T18:09:41.000Z",
+  "updated_at": "2026-10-01T18:13:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blackhole",
+    "p150",
+    "tt-dit-server",
+    "tt-model-cache",
+    "tt-model-container",
+    "automatic-speech-recognition",
+    "base_model:Edge0/Audio8-ASR-Infinite",
+    "base_model:finetune:Edge0/Audio8-ASR-Infinite",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 935180067,
+  "storage_human": "935 MB",
+  "base_model": "Edge0/Audio8-ASR-Infinite",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EPISOD SPORTS STUDIOS",
+      "url": "https://www.episod.com/",
+      "snippet": "Boxing, Cycling, Bootcamp, Rowing, Athletic et Yoga : vivez l'expérience EPISOD dans 6 studios sportifs au coeur de Paris avec des …"
+    },
+    {
+      "title": "Planning - Episod",
+      "url": "https://www.episod.com/planning/",
+      "snippet": "LAST ROUND - BOXING CLASSIQUE SANS POIDS Nagui"
+    },
+    {
+      "title": "Episod - Facebook",
+      "url": "https://www.facebook.com/EpisodOfficiel/",
+      "snippet": "Episod. 8,918 followers · 4 talking about this · 1,255 were here. 27 studios sportifs d’exception dans 7 hubs à Paris & Levallois. …"
+    },
+    {
+      "title": "EPISOD - Republique : Lire les avis et réserver des cours sur ClassPass",
+      "url": "https://classpass.fr/studios/episod-republique-paris",
+      "snippet": "Vous ne connaissez pas encore EPISOD ? N' hésitez plus et venez tenter une expérience sportive inédite sur Paris dans des lieux …"
+    },
+    {
+      "title": "Episod - Sports Studios",
+      "url": "https://www.sport-booking.com/15832__episod-sports-studios",
+      "snippet": "EPISOD propose à tous 7 sports efficaces et complémentaires délivrés par des Trainers experts dans ses 21 studios sportifs au sein …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "corecommit/PollyMC-Voice-Models",
+  "slug": "corecommit-pollymc-voice-models",
+  "author": "corecommit",
+  "url": "https://huggingface.co/corecommit/PollyMC-Voice-Models",
+  "created_at": "2026-10-01T18:11:00.000Z",
+  "updated_at": "2026-10-01T18:18:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135391039,
+  "storage_human": "135 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top AI Voice Models for RVC | Community Favorites",
+      "url": "https://voice-models.com/top",
+      "snippet": "Discover popular AI voice models for RVC, ranked by community favorites. Preview samples and run compatible voices online."
+    },
+    {
+      "title": "Community Forum — Voice Models",
+      "url": "https://voice-models.com/forum",
+      "snippet": "Discuss AI voice models, share tutorials, ask questions, and connect with the Voice Models community."
+    },
+    {
+      "title": "Checkpoints — RVC Voice Model Library",
+      "url": "https://checkpoints.lol/",
+      "snippet": "Join our Discord community for updates checkpoints The home of RVC voice models. Browse, download, and share models — with audio previews before you commit. Every model reviewed. Every model sampled."
+    },
+    {
+      "title": "Voice Models - docs.aihub.gg",
+      "url": "https://docs.aihub.gg/essentials/voice-models/",
+      "snippet": "What is a Voice Model In the field of AI, is a program that was trained to recognize certain patterns or make certain decisions. In this case, voice models are models trained to replicate a voice, and with AI they apply it to the input audio. There are plenty of them uploaded to the internet, made by the public."
+    },
+    {
+      "title": "AI Voices: Free Models for TTS & Voice Changing",
+      "url": "https://aivoices.gg/",
+      "snippet": "Discover thousands of free AI voice models for text-to-speech, voice changing, singing, narration, dubbing, and other voice projects."
+    }
+  ]
+}

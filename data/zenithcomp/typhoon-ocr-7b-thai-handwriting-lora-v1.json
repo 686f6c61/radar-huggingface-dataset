@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ZenithComp/typhoon-ocr-7b-thai-handwriting-lora-v1",
+  "slug": "zenithcomp-typhoon-ocr-7b-thai-handwriting-lora-v1",
+  "author": "ZenithComp",
+  "url": "https://huggingface.co/ZenithComp/typhoon-ocr-7b-thai-handwriting-lora-v1",
+  "created_at": "2026-10-01T16:46:35.000Z",
+  "updated_at": "2026-10-01T16:46:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ocr",
+    "thai",
+    "handwriting-recognition",
+    "qwen2.5-vl",
+    "lora",
+    "image-text-to-text",
+    "conversational",
+    "base_model:typhoon-ai/typhoon-ocr-7b",
+    "base_model:adapter:typhoon-ai/typhoon-ocr-7b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 475816505,
+  "storage_human": "476 MB",
+  "base_model": "typhoon-ai/typhoon-ocr-7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "River Great Ouse Relief Channel tide times and tide charts",
+      "url": "https://tideking.com/United-Kingdom/England/Norfolk/River-Great-Ouse-Relief-Channel/",
+      "snippet": "2 days ago · The tide is currently falling in River Great Ouse Relief Channel. As you can see on the tide chart, the highest tide (7.8m) …"
+    },
+    {
+      "title": "River Great Ouse (Large Tidal Section) - CanalPlan",
+      "url": "https://canalplan.uk/waterway/fr23",
+      "snippet": "Early plans of what would become the River Great Ouse (Large Tidal Section) were drawn up by John Smeaton in 1888 but …"
+    },
+    {
+      "title": "River Great Ouse Large Tidal Section – Open Canal Map",
+      "url": "https://explore.opencanalmap.uk/canal/river-great-ouse-large-tidal-section/",
+      "snippet": "Map Info Water Point River Great Ouse (Relief Channel) Wiggenhall St Mary EA key required Wiggenhall St Mary EA key required …"
+    },
+    {
+      "title": "Is the Great Ouse tidal? - Mike Gravel",
+      "url": "https://www.mikegravel.org/is-the-great-ouse-tidal/",
+      "snippet": "Sep 8, 2025 · The tidal reach of the Great Ouse is susceptible to flooding, particularly during high tides combined with storm surges. …"
+    },
+    {
+      "title": "River Great Ouse (Tidal Section) – Gazetteer – CanalPlanAC",
+      "url": "https://canalplan.uk/waterway/k1l8",
+      "snippet": "Although proposals to close the River Great Ouse (Tidal Section) were submitted to parliament in 1990, the carriage of limestone …"
+    }
+  ]
+}

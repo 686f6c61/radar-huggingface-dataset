@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "swdq/anison-lyrics-grpo-smoke",
+  "slug": "swdq-anison-lyrics-grpo-smoke",
+  "author": "swdq",
+  "url": "https://huggingface.co/swdq/anison-lyrics-grpo-smoke",
+  "created_at": "2026-10-01T17:40:08.000Z",
+  "updated_at": "2026-10-01T17:40:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "lyrics",
+    "grpo",
+    "text-generation",
+    "conversational",
+    "ja",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anison Song Lyrics - Lyrics On Demand",
+      "url": "https://www.lyricsondemand.com/genres/Anison",
+      "snippet": "Anison Song Lyrics All lyrics are property and copyright of their respective authors, artists and labels. Lyrics provided for educational purposes only. Please support the artists by purchasing related recordings and merchandise."
+    },
+    {
+      "title": "Anison AI - YouTube",
+      "url": "https://www.youtube.com/@AnisonAI-M",
+      "snippet": "🎶 Explore our AI-generated anime music! 🎶 All tracks are 100% copyright-free, perfect for your videos, streams, projects, and more. 🎵 Use these amazing s..."
+    },
+    {
+      "title": "Lyrics Generator - Write AI Song Lyrics in Seconds",
+      "url": "https://notagen.ai/ai-lyrics-generator",
+      "snippet": "Describe a theme, mood or story in up to 200 characters. Pick one or more AI models to run at once, from NotaGen&#x27;s own lyrics model to several general-purpose language models, and get results back in seconds to under a minute. Copy the version you like straight into a songwriting session or the song generator."
+    },
+    {
+      "title": "AniSon Remember AI - YouTube Music",
+      "url": "https://music.youtube.com/@AniSonRememberAI",
+      "snippet": "AniSon Remember AI • 1.5K views 【AI Cover】mama I Love You / B∀G（ジャングルの王者ターちゃん OP2）90s Anime Opening Reimagined AniSon Remember AI • 6.9K views 【AI Idol Cover】動物園は大変だ / クレヨンしんちゃん初期OP｜Modern Japanese Idol Ver."
+    },
+    {
+      "title": "MakeSong: Free AI Song Generator",
+      "url": "https://www.makesong.com/",
+      "snippet": "MakeSong: Your Free AI Song Generator. Create high-quality, 100% royalty-free songs.Turn text to music and lyrics to song effortlessly. MakeSong also offers powerful AI tools like Vocal Remover and Instrumental AI Splitter."
+    }
+  ]
+}

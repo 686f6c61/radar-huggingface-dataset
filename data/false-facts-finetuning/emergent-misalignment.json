@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "false-facts-finetuning/emergent-misalignment",
+  "slug": "false-facts-finetuning-emergent-misalignment",
+  "author": "false-facts-finetuning",
+  "url": "https://huggingface.co/false-facts-finetuning/emergent-misalignment",
+  "created_at": "2026-09-09T16:57:58.000Z",
+  "updated_at": "2026-10-01T17:06:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32641432084,
+  "storage_human": "32.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Traduction FALSE en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/false",
+      "snippet": "Traduction de \"false\" en français : faux. Adjectif, signification, prononciation, expressions idiomatiques en anglais, synonymes et …"
+    },
+    {
+      "title": "false - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/false.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"false\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "false - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/false",
+      "snippet": "false face false flag operation false floor false friend (person) false friend / false cognate false heart false hope false hopes false ideas …"
+    },
+    {
+      "title": "Traduction : false - Dictionnaire anglais-français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/anglais-francais/false/579958",
+      "snippet": "false - Traduction Anglais-Français : Retrouvez la traduction de false, mais également sa prononciation, la traduction des …"
+    },
+    {
+      "title": "false — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/false",
+      "snippet": "false \\ˈfal.se\\ Première personne du singulier du présent du subjonctif de falsar. Troisième personne du singulier du présent du …"
+    }
+  ]
+}

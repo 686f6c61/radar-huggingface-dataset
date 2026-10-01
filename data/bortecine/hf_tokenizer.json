@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Bortecine/hf_tokenizer",
+  "slug": "bortecine-hf_tokenizer",
+  "author": "Bortecine",
+  "url": "https://huggingface.co/Bortecine/hf_tokenizer",
+  "created_at": "2026-10-01T18:30:05.000Z",
+  "updated_at": "2026-10-01T18:30:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tokenizer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main_classes/tokenizer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - mlc-ai/tokenizers-cpp: Universal cross-platform tokenizers ...",
+      "url": "https://github.com/mlc-ai/tokenizers-cpp",
+      "snippet": "This project provides a cross-platform C++ tokenizer binding library that can be universally deployed. It wraps and binds the HuggingFace tokenizers library and sentencepiece and provides a minimum common interface in C++. The main goal of the project is to enable tokenizer deployment for language model applications to native platforms with minimum dependencies and remove some of the barriers ..."
+    },
+    {
+      "title": "GitHub - huggingface/tokenizers: Fast State-of-the-Art Tokenizers ...",
+      "url": "https://github.com/huggingface/tokenizers",
+      "snippet": "Thanks to all of them for their great work. gigatoken, tiktoken, kitoken, tokie, fastokens, wordchipper and ai-tokenizer each pushed on what a fast tokenizer can be; we read that work, and several of the ideas above reached us because another project showed they were worth trying. Docs: guide · quicktour · docs.rs"
+    },
+    {
+      "title": "Tokenizer - OpenAI API",
+      "url": "https://platform.openai.com/tokenizer",
+      "snippet": "Tokenizer Learn about language model tokenization OpenAI&#x27;s large language models process text using tokens, which are common sequences of characters found in a set of text. The models learn to understand the statistical relationships between these tokens, and excel at producing the next token in a sequence of tokens. Learn more."
+    }
+  ]
+}

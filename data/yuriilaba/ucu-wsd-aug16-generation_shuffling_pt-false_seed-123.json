@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yuriilaba/ucu-wsd-aug16-generation_shuffling_pt-false_seed-123",
+  "slug": "yuriilaba-ucu-wsd-aug16-generation_shuffling_pt-false_seed-123",
+  "author": "yuriilaba",
+  "url": "https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_shuffling_pt-false_seed-123",
+  "created_at": "2026-10-01T02:40:23.000Z",
+  "updated_at": "2026-10-01T02:40:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129280083,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ASR: Block Win32 API calls from Office macro : r/Intune - Reddit",
+      "url": "https://www.reddit.com/r/Intune/comments/10araop/asr_block_win32_api_calls_from_office_macro/",
+      "snippet": "Jan 13, 2023 · We're having huge issues with a particular ASR rule and are unsure what's causing it. The rule \"Block Win32 API calls …"
+    },
+    {
+      "title": "The rules of the internet : r/Internet - Reddit",
+      "url": "https://www.reddit.com/r/Internet/comments/165uvdl/the_rules_of_the_internet/",
+      "snippet": "Aug 30, 2023 · Rule 30: Girls do not exist on the internet. Rule 31: Tits or GTFO—the choice is yours. Rule 32: You must have …"
+    },
+    {
+      "title": "Rules of internet 0 - 77 : r/rulesofinternet - Reddit",
+      "url": "https://www.reddit.com/r/rulesofinternet/comments/18rpkyl/rules_of_internet_0_77/",
+      "snippet": "true Rules of the Internet\" is a loose collection of rules and aphorisms spawned by 4chan. Depending on whom you ask, they are …"
+    },
+    {
+      "title": "We All Know Rule 34. What Are Internet Rules 1-33? - Reddit",
+      "url": "https://www.reddit.com/r/AskReddit/comments/q16ksr/we_all_know_rule_34_what_are_internet_rules_133/",
+      "snippet": "Oct 4, 2021 · Rule 30: Girls do not exist on the internet. Rule 32: You must have pictures to prove your statements/Anything can be …"
+    },
+    {
+      "title": "Quais são as regras da internet? : r/PergunteReddit",
+      "url": "https://www.reddit.com/r/PergunteReddit/comments/1bp9xez/quais_s%C3%A3o_as_regras_da_internet/",
+      "snippet": "Rule 30: Girls do not exist on the internet. Rule 31: Tits or GTFO—the choice is yours. Rule 32: You must have pictures to prove your …"
+    }
+  ]
+}

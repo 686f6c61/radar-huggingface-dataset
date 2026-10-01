@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Diffusion-Research-Lab/alpha-stable-mixture-1p7-100d-diffusion",
+  "slug": "diffusion-research-lab-alpha-stable-mixture-1p7-100d-diffusion",
+  "author": "Diffusion-Research-Lab",
+  "url": "https://huggingface.co/Diffusion-Research-Lab/alpha-stable-mixture-1p7-100d-diffusion",
+  "created_at": "2026-10-01T13:10:47.000Z",
+  "updated_at": "2026-10-01T13:11:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gendynamics",
+  "languages": [],
+  "tags": [
+    "gendynamics",
+    "safetensors",
+    "diffusion",
+    "unconditional-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10724320,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diffusion-Research-Lab/alpha-stable-1p7-100d-diffusion · Hugging Face",
+      "url": "https://huggingface.co/Diffusion-Research-Lab/alpha-stable-1p7-100d-diffusion",
+      "snippet": "synthetic_heavy_tail DDPM-V and DLPM-Eps reference models trained with gendynamics. Each model subdirectory contains its architecture, training settings, normalization, metrics, and weights."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=stable-diffusion",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Efficient Training of Diffusion Mixture-of-Experts Models: A Practical ...",
+      "url": "https://arxiv.org/html/2512.01252v1",
+      "snippet": "Through extensive experiments, we present novel architectures that can be efficiently applied to both latent and pixel-space diffusion frameworks, which provide a practical and efficient training recipe that enables Diffusion MoE models to surpass strong baselines while using equal or fewer activated parameters."
+    },
+    {
+      "title": "Generative Models by Stability AI - GitHub",
+      "url": "https://github.com/Stability-AI/generative-models",
+      "snippet": "Generative Models by Stability AI News May 20, 2025 We are releasing Stable Video 4D 2.0 (SV4D 2.0), an enhanced video-to-4D diffusion model for high-fidelity novel-view video synthesis and 4D asset generation. For research purposes:"
+    },
+    {
+      "title": "GitHub - diff-usion/Awesome-Diffusion-Models: A collection of resources ...",
+      "url": "https://github.com/diff-usion/Awesome-Diffusion-Models",
+      "snippet": "A collection of resources and papers on Diffusion Models - diff-usion/Awesome-Diffusion-Models"
+    }
+  ]
+}

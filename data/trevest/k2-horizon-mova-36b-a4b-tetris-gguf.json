@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "trevest/K2-Horizon-MoVA-36B-A4B-Tetris-GGUF",
+  "slug": "trevest-k2-horizon-mova-36b-a4b-tetris-gguf",
+  "author": "trevest",
+  "url": "https://huggingface.co/trevest/K2-Horizon-MoVA-36B-A4B-Tetris-GGUF",
+  "created_at": "2026-10-01T17:49:35.000Z",
+  "updated_at": "2026-10-01T17:50:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "k2-horizon",
+    "mova",
+    "moe",
+    "imatrix",
+    "text-generation",
+    "base_model:IFM/K2-Horizon-MoVA-36B-A4B",
+    "base_model:quantized:IFM/K2-Horizon-MoVA-36B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37444792020,
+  "parameters_human": "37.44B",
+  "storage_bytes": 20157149920,
+  "storage_human": "20.2 GB",
+  "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IFM/K2-Horizon-MoVA-36B-A4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "K2-Horizon-MoVA-36B-A4B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/SAIFIINDUSTRIES/K2-Horizon-MoVA-36B-A4B-GGUF",
+      "snippet": "K2-Horizon-MoVA-36B-A4B is the sparse member of the K2-Horizon family: a Mixture-of-Experts model with Mixture-of-Values attention (MoVA) that stores 36B parameters and runs 4B per token. We have released the final checkpoint; intermediate checkpoints, along with the data and the training code, will be released."
+    },
+    {
+      "title": "K2-Horizon-MoVA-36B-A4B-GGUF: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/k2-horizon-mova-36b-a4b-gguf-ifm",
+      "snippet": "Overview K2-Horizon-MoVA-36B-A4B-GGUF is a text-generation model from IFM, distributed as GGUF files for llama.cpp. It is the sparse member of the K2-Horizon family: a Mixture-of-Experts model with Mixture-of-Values attention (MoVA), 36 billion stored parameters, and 4 billion active parameters per token. Its native context window reaches 524,288 tokens from the midtraining stages onward. The ..."
+    },
+    {
+      "title": "K2-Horizon-MoVA-36B-A4B-GGUF — AI Model Details | Applied",
+      "url": "https://theapplied.co/models/ifm-k2-horizon-mova-36b-a4b-gguf",
+      "snippet": "Model Description [!NOTE] This repository contains GGUF versions of the IFM/K2-Horizon-MoVA-36B-A4B for use with llama.cpp."
+    },
+    {
+      "title": "K2 Horizon Mova 36b A4b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/k2-horizon-mova-36b-a4b.html",
+      "snippet": "Download K2 Horizon Mova 36b A4b GGUF model. 75.6 GB, 0 downloads, 50 likes."
+    }
+  ]
+}

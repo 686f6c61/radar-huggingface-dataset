@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3576-CNN-yolov8n-pose",
+  "slug": "rknnai-rk3576-cnn-yolov8n-pose",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3576-CNN-yolov8n-pose",
+  "created_at": "2026-10-01T14:30:38.000Z",
+  "updated_at": "2026-10-01T14:31:12.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7347654,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

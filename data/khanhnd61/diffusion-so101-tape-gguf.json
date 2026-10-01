@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "khanhnd61/diffusion-so101-tape-gguf",
+  "slug": "khanhnd61-diffusion-so101-tape-gguf",
+  "author": "khanhnd61",
+  "url": "https://huggingface.co/khanhnd61/diffusion-so101-tape-gguf",
+  "created_at": "2026-10-01T02:12:17.000Z",
+  "updated_at": "2026-10-01T02:13:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "vla.simd",
+  "languages": [],
+  "tags": [
+    "vla.simd",
+    "gguf",
+    "robotics",
+    "lerobot",
+    "diffusion-policy",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": 277810282,
+  "parameters_human": "277.8M",
+  "storage_bytes": 1111242936,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "khanhnd61/so101-tape · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/khanhnd61/so101-tape",
+      "snippet": "Datasets: khanhnd61 / so101-tape like 0 Modalities: Tabular Time-series Video Formats: parquet Size: 1K - 10K Libraries: Datasets Dask Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·3.45k rows default (3.45k rows) Split (1) train·3.45k rows train (3.45k rows) Search is not ..."
+    },
+    {
+      "title": "khanhnd61/inflect_so101_tape · Hugging Face",
+      "url": "https://huggingface.co/khanhnd61/inflect_so101_tape",
+      "snippet": "Trained on a single task — khanhnd61/so101-tape, one instruction on every frame. With no instruction variation there is no gradient asking the language pathway to do anything."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Datasets and Models — Train an SO-101 Robot From Sim-to-Real With ...",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/datasets-and-models.html",
+      "snippet": "Datasets and Models # Pre-collected datasets and pre-trained model checkpoints used in this course, hosted on Hugging Face. Datasets #"
+    },
+    {
+      "title": "Gguf AI Models (228) | Civitai",
+      "url": "https://civitai.com/tag/gguf",
+      "snippet": "Browse 228 AI models tagged \"Gguf\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    }
+  ]
+}

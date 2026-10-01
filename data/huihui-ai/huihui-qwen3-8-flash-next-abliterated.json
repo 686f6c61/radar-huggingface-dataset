@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated",
+  "slug": "huihui-ai-huihui-qwen3-8-flash-next-abliterated",
+  "author": "huihui-ai",
+  "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated",
+  "created_at": "2026-09-29T05:57:50.000Z",
+  "updated_at": "2026-10-01T08:40:46.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "qwen3",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 25,
+  "downloads_30d": 0,
+  "trending_score": 17,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 360012998224,
+  "storage_human": "360.0 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF at main",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui.ai on X: \"New GGUF: huihui-ai/Huihui-Qwen3.8-Flash-Next ...",
+      "url": "https://x.com/support_huihui/status/2096530828868399371",
+      "snippet": "Qwen3.8-Flash-Next itself supports both short answers and long-form responses. Based on our tests, it performs quite well for novels and code."
+    },
+    {
+      "title": "huihui.ai on X: \"New GGUF (Q8_0, BF16) huihui-ai/Huihui-Qwen3.8-Flash ...",
+      "url": "https://x.com/support_huihui/status/2105064292248891562",
+      "snippet": "Someone has anonymously donated to sponsor the public release of huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated. We have accepted the donation. Thank you very much for everyone&#x27;s continued support and help. We are currently uploading the non-quantized safetensors as well as Show more"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    }
+  ]
+}

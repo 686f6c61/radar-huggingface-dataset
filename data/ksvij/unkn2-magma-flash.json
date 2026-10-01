@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ksvij/unkn2-Magma-Flash",
+  "slug": "ksvij-unkn2-magma-flash",
+  "author": "ksvij",
+  "url": "https://huggingface.co/ksvij/unkn2-Magma-Flash",
+  "created_at": "2026-10-01T13:46:07.000Z",
+  "updated_at": "2026-10-01T13:46:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "电缆桥架里的MR、CT是什么意思？？？？_百度知道",
+      "url": "https://zhidao.baidu.com/question/384153291.html",
+      "snippet": "MR指金属线槽，CT指槽式桥架 比如：CT 400X200/CE： 宽400X高200的 电缆桥架 沿天棚或顶板面敷设 MR 200X100/CT：宽200X …"
+    },
+    {
+      "title": "电缆YJV-4*50+1*50表示什么意思 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/155813496.html",
+      "snippet": "zr：阻燃电缆 yjv：交联聚乙烯绝缘聚氯乙烯护套电力电缆 4*50：四芯截面50mm2 1*55：地线截面25mm2 扩展资料： 分类 根据电缆 …"
+    },
+    {
+      "title": "镀锌方管有哪些常用的型号和规格？ - 知乎",
+      "url": "https://www.zhihu.com/question/598949174",
+      "snippet": "通常情况下镀锌方管常用规格有以下几种：通常情况下常用规格有以下几种： 20*20*0.6-2.0 80*80*2.0-8.0 160*160*4.0-12 …"
+    },
+    {
+      "title": "厦门大学和北京师范大学如何选择？ - 知乎",
+      "url": "https://www.zhihu.com/question/28444527",
+      "snippet": "Mar 1, 2015 · 看题主学什么专业，个人喜欢北师大，北师大毕业真的不是当老师，不要被名字误导 附两所学校特色专业，来自百度百 …"
+    },
+    {
+      "title": "20*50米接力是什么意思 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/156841539.html",
+      "snippet": "Jun 1, 2010 · 20*50米接力 比赛规则 1、 如下图所示，每条道的两端分为两个部分，跑道左侧阴影区为站立区，右侧为缓冲区。每个 …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "evgenyalekseev/grounded-language-v121",
+  "slug": "evgenyalekseev-grounded-language-v121",
+  "author": "evgenyalekseev",
+  "url": "https://huggingface.co/evgenyalekseev/grounded-language-v121",
+  "created_at": "2026-10-01T02:29:41.000Z",
+  "updated_at": "2026-10-01T02:29:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "grounded-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - grounded-ai/grounded_ai: Evals that meet you where you are ...",
+      "url": "https://github.com/grounded-ai/grounded_ai",
+      "snippet": "Grounded AI is built on a philosophy of separation of concerns: No Metric Lock-in: Unlike other eval libraries that lock you into their pre-defined, black-box metrics, Grounded AI puts you in control. Evaluations are just Pydantic schemas. Need a specific \"Brand Voice Compliance\" metric? Define it yourself in seconds. You are never limited to what the vendor provides. Model / Provider Agnostic ..."
+    },
+    {
+      "title": "What Is a Grounded Language Model? FutureAGI Guide (2026)",
+      "url": "https://futureagi.com/glossary/grounded-language-model/",
+      "snippet": "Why grounded language models matter in production LLM and agent systems Ungrounded generation is the failure mode that makes RAG look correct in logs while users receive false answers. The retriever may return a policy page, a pricing table, or a customer record, but the model still fills a gap with a confident claim from pretraining."
+    },
+    {
+      "title": "grounded-language-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/grounded-language-model",
+      "snippet": "Contextual AI — independent third-party profile of a public API surface, by API Evangelist. Contextual AI is an enterprise RAG platform built around a Grounded Language Model (GLM) engineered to minimize hallucinations."
+    },
+    {
+      "title": "Gaelalves/paper_019667091_grounded_language · Hugging Face",
+      "url": "https://huggingface.co/Gaelalves/paper_019667091_grounded_language",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ArjunChauhan/grounded-language-tryout · Hugging Face",
+      "url": "https://huggingface.co/ArjunChauhan/grounded-language-tryout",
+      "snippet": "ArjunChauhan / grounded-language-tryout like 0 Safetensors transformer research-notes grounded-language License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new Notes on Grounded Language Repository summary What is covered How to read this repository Scope and limitations Files License"
+    }
+  ]
+}

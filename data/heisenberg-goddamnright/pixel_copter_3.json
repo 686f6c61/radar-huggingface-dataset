@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "heisenberg-goddamnright/pixel_copter_3",
+  "slug": "heisenberg-goddamnright-pixel_copter_3",
+  "author": "heisenberg-goddamnright",
+  "url": "https://huggingface.co/heisenberg-goddamnright/pixel_copter_3",
+  "created_at": "2026-10-01T17:52:51.000Z",
+  "updated_at": "2026-10-01T17:52:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40061,
+  "storage_human": "40061 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "heisenberg-goddamnright (Mayur Nayak) - Hugging Face",
+      "url": "https://huggingface.co/heisenberg-goddamnright",
+      "snippet": "User profile of Mayur Nayak on Hugging Face"
+    },
+    {
+      "title": "heisenberg-goddamnright/taxi · Hugging Face",
+      "url": "https://huggingface.co/heisenberg-goddamnright/taxi",
+      "snippet": "heisenberg-goddamnright / taxi Like 0 Reinforcement Learning Taxi-v3 q-learning custom-implementation Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new Q-Learning Agent playing1 Taxi-v3 Usage"
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    },
+    {
+      "title": "Reinforce-Pixelcopter-3: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-albertchy-reinforce-pixelcopter-3",
+      "snippet": "Model card indexed from Hugging Face. Context window Not listed Last source check 8/7/2026, 5:37:58 AM Input / million tokens Not listed Output / million tokens Not listed albertCHY Source record ↗ Official link ↗"
+    }
+  ]
+}

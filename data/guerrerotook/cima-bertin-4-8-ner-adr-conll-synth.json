@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "guerrerotook/CIMA-BERTIN-4.8-NER-ADR-CONLL-SYNTH",
+  "slug": "guerrerotook-cima-bertin-4-8-ner-adr-conll-synth",
+  "author": "guerrerotook",
+  "url": "https://huggingface.co/guerrerotook/CIMA-BERTIN-4.8-NER-ADR-CONLL-SYNTH",
+  "created_at": "2026-10-01T17:38:19.000Z",
+  "updated_at": "2026-10-01T17:39:06.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "ner",
+    "biomedical",
+    "adverse-drug-reactions",
+    "synthetic-data",
+    "cima",
+    "iob2",
+    "es",
+    "dataset:guerrerotook/CIMA-4.8-ADR-NER-EXTENDED",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124065033,
+  "parameters_human": "124.1M",
+  "storage_bytes": 496284036,
+  "storage_human": "496 MB",
+  "base_model": "guerrerotook/CIMA-BERTIN-4.8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guerrerotook (Luis Guerrero) - Hugging Face",
+      "url": "https://huggingface.co/guerrerotook",
+      "snippet": "AI & ML interests ... Recent Activity published a dataset 5 days ago ... updated a model 5 days ago"
+    },
+    {
+      "title": "guerrerotook/CIMA-4.8-ADR-NER-EXTENDED - Hugging Face",
+      "url": "https://huggingface.co/datasets/guerrerotook/CIMA-4.8-ADR-NER-EXTENDED",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 638 AI models across 508 benchmarks, with 211 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Google announces Gemini 4 flagship AI model after months of delays",
+      "url": "https://www.reuters.com/legal/litigation/google-announces-gemini-4-flagship-ai-model-after-months-delays-2026-09-30/",
+      "snippet": "Alphabet&#x27;s Google on Wednesday announced a new top-tier artificial intelligence model to anchor its Gemini 4 generation of models in a fresh bid ‌to catch up to rivals Anthropic and OpenAI in ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Ballsworthy/PrincessBelle",
+  "slug": "ballsworthy-princessbelle",
+  "author": "Ballsworthy",
+  "url": "https://huggingface.co/Ballsworthy/PrincessBelle",
+  "created_at": "2026-10-01T17:58:04.000Z",
+  "updated_at": "2026-10-01T18:13:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:pmczip/SD1.5_LoRa_Models",
+    "base_model:finetune:pmczip/SD1.5_LoRa_Models",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 113359265,
+  "storage_human": "113 MB",
+  "base_model": "pmczip/SD1.5_LoRa_Models",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Princess Belle - AIEasyPic",
+      "url": "https://aieasypic.com/inspire/models/detail/princess-belle-232260",
+      "snippet": "Create Your Own AI Model Train AI to generate stunning photos of yourself in any style or setting Learn More"
+    },
+    {
+      "title": "Belle AI Art v2 by KittySnownose on DeviantArt",
+      "url": "https://www.deviantart.com/kittysnownose/art/Belle-AI-Art-v2-1084344311",
+      "snippet": "Watch Team and join our Community Group for the latest updates and activities."
+    },
+    {
+      "title": "Disney&#x27;s Belle - 3D model by rich.allen1976 - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/disneys-belle-10abb6eb86ac48dc8e360f259a03fdc2",
+      "snippet": "This model was generated using Meshy, an AI-powered 3D creation toolkit. Meshy helps creators turn ideas into high-quality 3D models with ease. View the original model and claim a free month of Pro on Meshy: https://www.meshy.ai/s/CjXooi"
+    },
+    {
+      "title": "Princess Belle - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/ce61a4d46ce68efe54c0de1c4ae1de5d",
+      "snippet": "Explore Princess Belle model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Belle - Disney Princess AI Art by KittySnownose on DeviantArt",
+      "url": "https://www.deviantart.com/kittysnownose/art/Belle-Disney-Princess-AI-Art-1032858102",
+      "snippet": "belle disney disneyprincess bellebeautyandthebeast aiartwork Image size 1024x1024px 138.41 KB Created using AI tools Create your own AI art Get 10 free prompts every week!"
+    }
+  ]
+}

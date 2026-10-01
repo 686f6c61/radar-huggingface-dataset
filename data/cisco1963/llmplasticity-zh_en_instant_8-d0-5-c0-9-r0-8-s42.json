@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Cisco1963/llmplasticity-zh_en_instant_8-d0.5-c0.9-r0.8-s42",
+  "slug": "cisco1963-llmplasticity-zh_en_instant_8-d0-5-c0-9-r0-8-s42",
+  "author": "Cisco1963",
+  "url": "https://huggingface.co/Cisco1963/llmplasticity-zh_en_instant_8-d0.5-c0.9-r0.8-s42",
+  "created_at": "2026-10-01T02:32:51.000Z",
+  "updated_at": "2026-10-01T02:35:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 122706432,
+  "parameters_human": "122.7M",
+  "storage_bytes": 8345527995,
+  "storage_human": "8.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cisco1963/llmplasticity-en_zh_instant_8-d0.1-c0.9-r0.8-s42 · Hugging Face",
+      "url": "https://huggingface.co/Cisco1963/llmplasticity-en_zh_instant_8-d0.1-c0.9-r0.8-s42",
+      "snippet": "Cisco1963 / llmplasticity-en_zh_instant_8-d0.1-c0.9-r0.8-s42 Like 0 Safetensors gpt2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "Cisco1963 (Hongao) - Hugging Face",
+      "url": "https://huggingface.co/Cisco1963/models",
+      "snippet": "User profile of Hongao on Hugging Face Recent Activity updated a modelabout 11 hours ago Cisco1963/llmplasticity-baseline-zh_en_instant_64-s42 published a modelabout 11 hours ago Cisco1963/llmplasticity-baseline-zh_en_instant_64-s42 updated a modelabout 17 hours ago Cisco1963/llmplasticity-random-zh_en_linear_1-d0.1-c0.999-r0.125-s42 View all activity"
+    },
+    {
+      "title": "Cisco1963/llmplasticity-zh_en_instant_0.5_8-seed42 - Fast, Reliable ...",
+      "url": "https://friendli.ai/models/Cisco1963/llmplasticity-zh_en_instant_0.5_8-seed42",
+      "snippet": "Run Cisco1963/llmplasticity-zh_en_instant_0.5_8-seed42 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "Cisco1963 AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/cisco1963",
+      "snippet": "Browse AI models attributed to Cisco1963 in our directory, with parameters, context windows, pricing and benchmarks compared across every listed model."
+    }
+  ]
+}

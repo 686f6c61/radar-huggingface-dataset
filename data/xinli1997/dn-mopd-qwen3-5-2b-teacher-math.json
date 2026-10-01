@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "XINLI1997/DN-MOPD-Qwen3.5-2B-teacher-math",
+  "slug": "xinli1997-dn-mopd-qwen3-5-2b-teacher-math",
+  "author": "XINLI1997",
+  "url": "https://huggingface.co/XINLI1997/DN-MOPD-Qwen3.5-2B-teacher-math",
+  "created_at": "2026-10-01T02:23:09.000Z",
+  "updated_at": "2026-10-01T02:25:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "dn-mopd",
+    "on-policy-distillation",
+    "multi-teacher-distillation",
+    "qwen3.5",
+    "teacher",
+    "grpo",
+    "conversational",
+    "en",
+    "arxiv:2609.35347",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4439366846,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XINLI1997/DN-MOPD-Qwen3.5-2B · Hugging Face",
+      "url": "https://huggingface.co/XINLI1997/DN-MOPD-Qwen3.5-2B",
+      "snippet": "A Qwen3.5-2B student trained with DN-MOPD (Domain-Normalized Multi-Teacher On-Policy Distillation). Three same-size RL experts (math, code, instruction following) teach one student on its own responses; each prompt is scored by the expert of its domain, and DN-MOPD rescales each domain&#x27;s token-level feedback by its measured spread, w_d = clip ..."
+    },
+    {
+      "title": "DN-MOPD-Qwen3.5-2B API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/XINLI1997/DN-MOPD-Qwen3.5-2B",
+      "snippet": "Run DN-MOPD-Qwen3.5-2B with FriendliAI inference. A Qwen3.5-2B student trained with DN-MOPD (Domain-Normalized Multi-Teacher On-Policy Distillation)."
+    },
+    {
+      "title": "GitHub - LiXin97/DN-MOPD: Beyond Teacher Assignment: Domain-Normalized ...",
+      "url": "https://github.com/LiXin97/DN-MOPD/tree/main",
+      "snippet": "With label routing, MOPD does not beat the strongest single-teacher student at any of three Qwen3.5 sizes (9B, 4B, 2B). In the first training batch, instruction-following (IF) log-ratios are 2.3-4.4 times as dispersed as the pooled signal, and math log-ratios are about half as dispersed."
+    },
+    {
+      "title": "DN-MOPD · Beyond Teacher Assignment: Domain-Normalized Multi-Teacher On ...",
+      "url": "https://lixin.ai/DN-MOPD/",
+      "snippet": "Models Qwen3.5-9B, 4B and 2B, each with an independently trained expert pool (math, code, IF); students learn from teachers of their own size. Training 80 updates, student seed 42 (seeds 43 and 44 are controls), and an 8,192-token training response cap."
+    },
+    {
+      "title": "XINLI1997/DN-MOPD-Data · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/XINLI1997/DN-MOPD-Data",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "heisenberg-goddamnright/pixel_copter_2",
+  "slug": "heisenberg-goddamnright-pixel_copter_2",
+  "author": "heisenberg-goddamnright",
+  "url": "https://huggingface.co/heisenberg-goddamnright/pixel_copter_2",
+  "created_at": "2026-10-01T17:48:22.000Z",
+  "updated_at": "2026-10-01T17:48:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40061,
+  "storage_human": "40061 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "heisenberg-goddamnright (Mayur Nayak) - Hugging Face",
+      "url": "https://huggingface.co/heisenberg-goddamnright",
+      "snippet": "User profile of Mayur Nayak on Hugging Face"
+    },
+    {
+      "title": "TayJen/PixelCopter-v2 · Hugging Face",
+      "url": "https://huggingface.co/TayJen/PixelCopter-v2",
+      "snippet": "TayJen / PixelCopter-v2 like 0 Reinforcement Learning Pixelcopter-PLE-v0 reinforce custom-implementation deep-rl-class Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new Reinforce Agent playing Pixelcopter-PLE-v0"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "Rodin AI — Rodin Gen-2.5 3D Model Generator",
+      "url": "https://rodinai.net/",
+      "snippet": "Generate 3D models from text or images with Rodin AI. Rodin Gen-2.5 delivers 5 quality tiers, up to 2M polygons, HD PBR textures, and GLB/FBX/OBJ export — free to try."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    }
+  ]
+}

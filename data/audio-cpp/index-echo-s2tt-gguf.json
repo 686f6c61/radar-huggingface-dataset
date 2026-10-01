@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "audio-cpp/Index-Echo-S2TT-GGUF",
+  "slug": "audio-cpp-index-echo-s2tt-gguf",
+  "author": "audio-cpp",
+  "url": "https://huggingface.co/audio-cpp/Index-Echo-S2TT-GGUF",
+  "created_at": "2026-10-01T16:02:58.000Z",
+  "updated_at": "2026-10-01T16:13:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "audio.cpp",
+  "languages": [],
+  "tags": [
+    "audio.cpp",
+    "gguf",
+    "speech-translation",
+    "subtitles",
+    "chinese",
+    "automatic-speech-recognition",
+    "base_model:IndexTeam/Index-Echo-S2TT-2B",
+    "base_model:quantized:IndexTeam/Index-Echo-S2TT-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41068572576,
+  "storage_human": "41.1 GB",
+  "base_model": "IndexTeam/Index-Echo-S2TT-2B, IndexTeam/Index-Echo-S2TT-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xShug0/audio.cpp: An all-in-one, pure C++ inference engine ...",
+      "url": "https://github.com/0xShug0/audio.cpp",
+      "snippet": "An all-in-one, pure C++ inference engine for audio models, powered by ggml. Supports TTS, STT, VAD, voice conversion, music generation, and more, with highly optimized performance. No Python dependency. - 0xShug0/audio.cpp"
+    },
+    {
+      "title": "audio.cpp/README.md at main · 0xShug0/audio.cpp · GitHub",
+      "url": "https://github.com/0xShug0/audio.cpp/blob/main/README.md",
+      "snippet": "audio.cpp is a high-performance C++ audio inference framework built on top of ggml, designed to make modern local audio models practical, portable, and fast. Tired of juggling a dozen Conda environments, hundreds of Python packages, and dependency conflicts just to try a few audio models? audio.cpp gives those paths a shared native runtime instead. Runs on Windows, Linux, and macOS, with ..."
+    },
+    {
+      "title": "audio.cpp-gguf - Hugging Face",
+      "url": "https://huggingface.co/audio-cpp/audio.cpp-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "audio.cpp: C++ audio inference with GGUF, WebUI and Docker",
+      "url": "https://hysenlabs.com/projects/0xshug0-audio-cpp",
+      "snippet": "audio.cpp puts TTS, ASR, VAD, voice conversion and music generation behind one ggml-based C++ runtime with no Python dependency. The trade-off is a fast-moving model surface and a licence file that needs reading before you ship."
+    },
+    {
+      "title": "Audio.cpp - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/audio-cpp.html",
+      "snippet": "Download Audio.cpp GGUF model. 14.7 GB, 91,040 downloads, 45 likes."
+    }
+  ]
+}

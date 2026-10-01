@@ -1,0 +1,172 @@
+{
+  "schema": 1,
+  "id": "d0rj/q-latent-moe-52M-A35M-base",
+  "slug": "d0rj-q-latent-moe-52m-a35m-base",
+  "author": "d0rj",
+  "url": "https://huggingface.co/d0rj/q-latent-moe-52M-A35M-base",
+  "created_at": "2026-10-01T18:07:01.000Z",
+  "updated_at": "2026-10-01T18:29:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "q_latent_moe",
+    "text-generation",
+    "pretrained",
+    "from-scratch",
+    "tiny-llm-ablation",
+    "custom_code",
+    "causal-lm",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51616000,
+  "parameters_human": "51.6M",
+  "storage_bytes": 217588939,
+  "storage_human": "218 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Continuation likelihood",
+      "dataset": "HellaSwag",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.29067914758016333
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "ARC-Easy",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.42676767676767674
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "ARC-Challenge",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.23378839590443687
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "PIQA",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.6011969532100109
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "WinoGrande",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.5201262825572218
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "OpenBookQA",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.314
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "BoolQ",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.6140672782874618
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "LAMBADA OpenAI",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.20842227828449447
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "ArithMark-3",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.38
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "Balanced COPA",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.533
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "BLiMP",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.7622089552238805
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "CommonsenseQA",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.19901719901719903
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "MMLU continuation",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.2516735507762427
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "SciQ (with support)",
+      "metric": "acc_norm (fraction; full comparison protocol)",
+      "value": 0.66
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "TruthfulQA MC2",
+      "metric": "acc (fraction; full comparison protocol)",
+      "value": 0.42059105875193525
+    },
+    {
+      "task": "Continuation likelihood",
+      "dataset": "BananaMind Base 1.1",
+      "metric": "raw_accuracy (fraction; full comparison protocol)",
+      "value": 0.46
+    }
+  ],
+  "sources": [
+    {
+      "title": "Latent · AI art gallery — every image keeps its prompt",
+      "url": "https://latent.moe/",
+      "snippet": "A gallery for AI-generated art that keeps the full generation recipe — prompt, model, sampler, seed and Danbooru tags — searchable, on display, and analyzable."
+    },
+    {
+      "title": "Latent-MoE/examples/training at main · kyegomez/Latent-MoE",
+      "url": "https://github.com/kyegomez/Latent-MoE/tree/main/examples/training",
+      "snippet": "Implementation of LatentMoE,Toward Optimal Accuracy per FLOP and Parameter in Mixture of Experts (Elango et al., NVIDIA 2026) — in Pytorch. A single-file, dependency-light layer you can drop in place of a standard MoE FFN. - Latent-MoE/examples/training at main · kyegomez/Latent-MoE"
+    },
+    {
+      "title": "Browse · Latent",
+      "url": "https://latent.moe/browse",
+      "snippet": "Every public piece in the gallery, filterable by tag, model, sampler and generator — each one still carrying the prompt that made it."
+    },
+    {
+      "title": "d0rj/q-51M-base · Hugging Face",
+      "url": "https://huggingface.co/d0rj/q-51M-base",
+      "snippet": "A 50,878,208-parameter English base model in the Tiny llm ablation experiment. Trained from scratch on exactly 3,932,160,000 source tokens over 15,000 optimizer steps."
+    },
+    {
+      "title": "README.md · d0rj/q-51M-base at main - Hugging Face",
+      "url": "https://huggingface.co/d0rj/q-51M-base/blob/main/README.md",
+      "snippet": "A 50,878,208-parameter English base model in the Tiny llm ablation experiment. Trained from scratch on exactly 3,932,160,000 source tokens over 15,000 optimizer steps."
+    }
+  ]
+}

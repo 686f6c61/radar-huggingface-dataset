@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "TrevorJS/clef-flash-mlx-4bit",
+  "slug": "trevorjs-clef-flash-mlx-4bit",
+  "author": "TrevorJS",
+  "url": "https://huggingface.co/TrevorJS/clef-flash-mlx-4bit",
+  "created_at": "2026-10-01T18:07:07.000Z",
+  "updated_at": "2026-10-01T18:14:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "clef",
+    "decision-model",
+    "systemone",
+    "structured-output",
+    "classification",
+    "qwen3.5",
+    "text-classification",
+    "base_model:Cloudflare/clef-flash",
+    "base_model:quantized:Cloudflare/clef-flash",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 5301688308,
+  "storage_human": "5.3 GB",
+  "base_model": "Cloudflare/clef-flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/Step-3.7-Flash-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Step-3.7-Flash-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlx-community/DeepSeek-V4-Flash-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/DeepSeek-V4-Flash-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "clef-flash - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/clef-flash/",
+      "snippet": "Clef-flash is a fast 9B multimodal decision model that turns a state and a schema of typed questions into decisions. It reads the state as text, JSON, images, or video, and returns a probability for every allowed option of every question."
+    },
+    {
+      "title": "GitHub - SharpAI/SwiftLM: ⚡ Native MLX Swift LLM inference server for ...",
+      "url": "https://github.com/SharpAI/SwiftLM",
+      "snippet": "⚡ Native MLX Swift LLM inference server for Apple Silicon. OpenAI-compatible API, SSD streaming for 100B+ MoE models, TurboQuant KV cache compression, MACOS + iOS iPhone app. - SharpAI/SwiftLM"
+    },
+    {
+      "title": "GitHub - ssd-moe/deepseek-v4-flash-mlx: Run DeepSeek V4-Flash (~100B ...",
+      "url": "https://github.com/ssd-moe/deepseek-v4-flash-mlx",
+      "snippet": "DeepSeek V4-Flash on 48 GB — MLX SSD-offload engine Run DeepSeek V4-Flash (a ~100 B-class sparse MoE, 256 experts, ~13 B active per token) on an Apple-Silicon Mac with 48 GB of unified memory — a model that normally \"needs 128 GB+\"."
+    }
+  ]
+}

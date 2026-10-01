@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tielmane/decider-12b-NPU-LPBQ-X-Elite",
+  "slug": "tielmane-decider-12b-npu-lpbq-x-elite",
+  "author": "tielmane",
+  "url": "https://huggingface.co/tielmane/decider-12b-NPU-LPBQ-X-Elite",
+  "created_at": "2026-10-01T02:05:19.000Z",
+  "updated_at": "2026-10-01T02:14:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "qnn",
+    "snapdragon",
+    "hexagon-npu",
+    "windows-on-arm",
+    "typed-decisions",
+    "gemma4",
+    "int4",
+    "lpbq",
+    "text-classification",
+    "base_model:Mapika/decider-12b",
+    "base_model:quantized:Mapika/decider-12b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11920979465,
+  "storage_human": "11.9 GB",
+  "base_model": "Mapika/decider-12b",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tielmane/Winnow-12B-NPU-LPBQ-X-Elite · Hugging Face",
+      "url": "https://huggingface.co/tielmane/Winnow-12B-NPU-LPBQ-X-Elite",
+      "snippet": "tielmane / Winnow-12B-NPU-LPBQ-X-Elite Like 0 Text Classification ONNX onnxruntime qnn snapdragon hexagon-npu windows-on-arm typed-decisions gemma4 int4 lpbq License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Winnow-12B for the Snapdragon X Elite NPU (4-bit LPBQ, ONNX + QNN) What is in it Use Results (Snapdragon X Elite X1E80100, public benchmarks) How it ..."
+    },
+    {
+      "title": "system-one-on-snapdragon/docs/WINNOW-NPU.md at main - GitHub",
+      "url": "https://github.com/esterhuizen/system-one-on-snapdragon/blob/main/docs/WINNOW-NPU.md",
+      "snippet": "Running a 12B decision model on the Snapdragon X Elite NPU This guide shows how to run Winnow-12B entirely on the Hexagon NPU of a Snapdragon X Elite laptop, and what it took to get there. Winnow-12B is a Gemma 4 12B fine-tune that answers typed questions (choice, yes/no, score) with probabilities, in the same wire format as TypeSafe&#x27;s Jev."
+    },
+    {
+      "title": "Gemma 4 12B: The Developer Guide - Google Developers Blog",
+      "url": "https://developers.googleblog.com/gemma-4-12b-the-developer-guide/",
+      "snippet": "Meet Gemma 4 12B: the first medium-sized, encoder-free multimodal model capable of natively ingesting audio and video. Ideal for local AI development with 16GB VRAM, Hugging Face integrations, and drop-in local API servers."
+    },
+    {
+      "title": "LLM Leaderboard 2026 - Top AI Models Ranked | LM Market Cap",
+      "url": "https://lmmarketcap.com/leaderboards/models",
+      "snippet": "Live LLM leaderboard ranking 350+ AI models by benchmarks, pricing, speed, and capabilities. Compare GPT, Claude, Gemini, DeepSeek, Llama and more with source-backed scores."
+    },
+    {
+      "title": "gemma4:12b - ollama.com",
+      "url": "https://ollama.com/library/gemma4:12b",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Jeremytromp/wav2vec2-xls-r-1b-dutch-onnx",
+  "slug": "jeremytromp-wav2vec2-xls-r-1b-dutch-onnx",
+  "author": "Jeremytromp",
+  "url": "https://huggingface.co/Jeremytromp/wav2vec2-xls-r-1b-dutch-onnx",
+  "created_at": "2026-10-01T17:46:10.000Z",
+  "updated_at": "2026-10-01T17:52:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime",
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "wav2vec2",
+    "ctc",
+    "forced-alignment",
+    "dutch",
+    "automatic-speech-recognition",
+    "nl",
+    "base_model:jonatasgrosman/wav2vec2-xls-r-1b-dutch",
+    "base_model:quantized:jonatasgrosman/wav2vec2-xls-r-1b-dutch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1018435431,
+  "storage_human": "1.0 GB",
+  "base_model": "jonatasgrosman/wav2vec2-xls-r-1b-dutch",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "darjusul/wav2vec2-ONNX-collection · Hugging Face",
+      "url": "https://huggingface.co/darjusul/wav2vec2-ONNX-collection",
+      "snippet": "Overview This project provides pre-converted Wav2Vec2 models from PyTorch/Hugging Face format to ONNX format, making them suitable for deployment in various production environments. The conversion maintains model accuracy while providing significant inference speed improvements."
+    },
+    {
+      "title": "facebook/wav2vec2-xls-r-1b · Hugging Face",
+      "url": "https://huggingface.co/facebook/wav2vec2-xls-r-1b",
+      "snippet": "Facebook&#x27;s Wav2Vec2 XLS-R counting 1 billion parameters. XLS-R is Facebook AI&#x27;s large-scale multilingual pretrained model for speech (the \"XLM-R for Speech\"). It is pretrained on 436k hours of unlabeled speech, including VoxPopuli, MLS, CommonVoice, BABEL, and VoxLingua107. It uses the wav2vec 2.0 objective, in 128 languages."
+    },
+    {
+      "title": "facebook-wav2vec2-xls-r-1b... | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/facebook-wav2vec2-xls-r-1b-en-to-15",
+      "snippet": "facebook/wav2vec2-xls-r-1b-en-to-15 powered by Hugging Face Inference Toolkit. Sign in to Microsoft Foundry to deploy this model."
+    },
+    {
+      "title": "wav2vec2_onnx.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/vasudevgupta7/gsoc-wav2vec2/blob/main/notebooks/wav2vec2_onnx.ipynb",
+      "snippet": "In this notebook, we will be exporting TF Wav2Vec2 model into ONNX and will compare ONNX exported and TF model latency on CPU."
+    },
+    {
+      "title": "torchaudio.models.wav2vec2_xlsr_1b — Torchaudio 2.3.0 documentation",
+      "url": "https://docs.pytorch.org/audio/2.3/generated/torchaudio.models.wav2vec2_xlsr_1b.html",
+      "snippet": "Builds XLS-R model [Babu et al., 2021] with 1 billion of parameters. The architecture is compatible with Wav2Vec2 model [Baevski et al., 2020], and so the output class is Wav2Vec2Model."
+    }
+  ]
+}

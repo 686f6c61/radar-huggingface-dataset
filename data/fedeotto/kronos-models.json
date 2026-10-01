@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "fedeotto/kronos-models",
+  "slug": "fedeotto-kronos-models",
+  "author": "fedeotto",
+  "url": "https://huggingface.co/fedeotto/kronos-models",
+  "created_at": "2026-10-01T17:40:12.000Z",
+  "updated_at": "2026-10-01T18:04:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "chemistry",
+    "molecules",
+    "3d-molecule-generation",
+    "autoregressive",
+    "diffusion",
+    "latent-diffusion",
+    "dataset:fedeotto/kronos-datasets",
+    "arxiv:2607.09277",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10961392292,
+  "storage_human": "11.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - thzll2001/Kronos-ai: Kronos: A Foundation Model for the ...",
+      "url": "https://github.com/thzll2001/Kronos-ai",
+      "snippet": "Kronos is the first open-source foundation model for financial candlesticks (K-lines), trained on data from over 45 global exchanges. Kronos is a family of decoder-only foundation models, pre-trained specifically for the \"language\" of financial markets—K-line sequences. Unlike general-purpose ..."
+    },
+    {
+      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "url": "https://arxiv.org/pdf/2508.02739",
+      "snippet": "This coarse-to-fine prediction scheme allows Kronos to explicitly model multi-scale market dynamics. • We conduct large-scale pre-training for a family of Kronos models with varying capacities."
+    },
+    {
+      "title": "GitHub - Leegoo-dev/Kronos: Kronos: A foundation model for time series ...",
+      "url": "https://github.com/Leegoo-dev/Kronos",
+      "snippet": "Kronos is a family of decoder-only foundation models, pre-trained specifically for the \"language\" of financial markets—K-line sequences. Unlike general-purpose TSFMs, Kronos is designed to handle the unique, high-noise characteristics of financial data. It leverages a novel two-stage framework: A specialized tokenizer first quantizes continuous, multi-dimensional K-line data (OHLCV) into ..."
+    },
+    {
+      "title": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "url": "https://arxiv.org/html/2508.02739",
+      "snippet": "These findings highlight the broad effectiveness of our approach and underscore Kronos&#x27;s potential as a robust foundation model for interpreting the complex \"language\" of financial markets."
+    },
+    {
+      "title": "Kronos: The AI Model for Financial Markets",
+      "url": "https://www.blog.brightcoding.dev/2026/04/10/kronos-the-revolutionary-ai-model-for-financial-markets",
+      "snippet": "Kronos: The Revolutionary AI Model for Financial Markets Unlocking the Hidden Language of Candlesticks with Foundation Models Financial markets generate over 100 terabytes of data daily, yet most quantitative traders still rely on decades-old statistical models that buckle under the weight of market noise, volatility clustering, and non-stationary patterns. What if you could harness the same ..."
+    }
+  ]
+}

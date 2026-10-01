@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "keeerthinakka/ppo-SnowballTarget",
+  "slug": "keeerthinakka-ppo-snowballtarget",
+  "author": "keeerthinakka",
+  "url": "https://huggingface.co/keeerthinakka/ppo-SnowballTarget",
+  "created_at": "2026-10-01T13:45:26.000Z",
+  "updated_at": "2026-10-01T13:48:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25723295,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KrishnaPerumalla/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/KrishnaPerumalla/ppo-SnowballTarget",
+      "snippet": "ppo Agent playing SnowballTarget This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    },
+    {
+      "title": "JackForAI/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/JackForAI/ppo-SnowballTarget",
+      "snippet": "ppo Agent playing SnowballTarget This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    },
+    {
+      "title": "ppo-SnowballTarget: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-ditdahditdit-ppo-snowballtarget",
+      "snippet": "ppo-SnowballTarget AI model directory entry."
+    },
+    {
+      "title": "wooii/ppo-SnowballTarget - AI Model Zoo - BimAnt",
+      "url": "http://zoo.bimant.com/model/346300",
+      "snippet": "This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    },
+    {
+      "title": "SnowballTarget1---RL---UnityMLagents/README.md at main - GitHub",
+      "url": "https://github.com/dhruvil122/SnowballTarget1---RL---UnityMLagents/blob/main/README.md",
+      "snippet": "ppo Agent playing SnowballTarget This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hernandezadrian/generation-warmup",
+  "slug": "hernandezadrian-generation-warmup",
+  "author": "hernandezadrian",
+  "url": "https://huggingface.co/hernandezadrian/generation-warmup",
+  "created_at": "2026-10-01T02:20:12.000Z",
+  "updated_at": "2026-10-01T02:20:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Results for \"yt jeffsy\" - Pinkbike BuySell Search",
+      "url": "https://www.pinkbike.com/buysell/list/?region=3&q=yt+jeffsy",
+      "snippet": "Explore North America's largest marketplace for used mountain bikes and parts."
+    },
+    {
+      "title": "Bantuan YouTube - Google Help",
+      "url": "https://support.google.com/youtube/?hl=id",
+      "snippet": "Pusat Bantuan YouTube resmi tempat Anda dapat menemukan kiat dan tutorial tentang cara menggunakan produk dan jawaban lain …"
+    },
+    {
+      "title": "exercise-induced st-segment depression: Topics by Science.gov",
+      "url": "https://www.science.gov/topicpages/e/exercise-induced+st-segment+depression.html",
+      "snippet": "Additional exercise-induced ST-segment depression was considered significant if > or = 2 mm MPS was scored semiquantitatively by use of a 20-segment model of ..."
+    },
+    {
+      "title": "管理 YouTube 頻道的個人資料 - 電腦 - YouTube說明",
+      "url": "https://support.google.com/youtube/answer/2657964?hl=zh-Hant&co=GENIE.Platform%3DDesktop",
+      "snippet": "你可以變更 YouTube 頻道名稱，但請務必遵守《社群規範》。變更名稱後，YouTube 會在幾天內完成更新並顯示新名稱。變更後的 …"
+    },
+    {
+      "title": "Results for \"Decoy\" - Pinkbike BuySell Search",
+      "url": "https://www.pinkbike.com/buysell/list/?q=Decoy",
+      "snippet": "Selling my 2024 YT Decoy size XL. Bike is in great condition and runs perfectly. Well-maintained and ready to ride. Awesome bike …"
+    }
+  ]
+}

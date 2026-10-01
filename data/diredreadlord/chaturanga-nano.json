@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "DireDreadlord/Chaturanga-Nano",
+  "slug": "diredreadlord-chaturanga-nano",
+  "author": "DireDreadlord",
+  "url": "https://huggingface.co/DireDreadlord/Chaturanga-Nano",
+  "created_at": "2026-10-01T18:14:15.000Z",
+  "updated_at": "2026-10-01T18:40:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25371008,
+  "parameters_human": "25.4M",
+  "storage_bytes": 101497713,
+  "storage_human": "101 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DireDreadlord (Abhay Tyagi) - Hugging Face",
+      "url": "https://huggingface.co/DireDreadlord/models",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 2 months ago ... updated a collection about 2 months ago ... updated a model about 2 months ago"
+    },
+    {
+      "title": "DireDreadlord (Abhay Tyagi) - Hugging Face",
+      "url": "https://huggingface.co/DireDreadlord",
+      "snippet": "A collection of code generation and assist agents with reasoning capabilities; built on top of the base GemCod architecture."
+    },
+    {
+      "title": "AI Nano Banana Model | Lovart",
+      "url": "https://www.lovart.ai/features/nano-banana-ai-model",
+      "snippet": "AI Design Tool Nano Banana Pro: Consistent AI Characters & Photorealistic Product Photos from text to professional design in seconds Stop struggling with inconsistent AI art. Lovart&#x27;s Nano Banana Pro model locks character identities and generates photorealistic product photography with unmatched fidelity."
+    },
+    {
+      "title": "Text models - NanoGPT",
+      "url": "https://nano-gpt.com/settings/models",
+      "snippet": "NanoGPT offers access to every AI model with pay-as-you-go or an optional subscription with included open-source model usage. Generate videos (Kling, Veo and more), create images (Flux Pro, Kontext, GPT Image, Hidream), and access ChatGPT, Claude, Gemini, Deepseek, and other top AI models."
+    },
+    {
+      "title": "Dreamina AI Image Models | Seedream, GPT Image 2, Nano Banana & More",
+      "url": "https://dreamina.capcut.com/ai-model/ai-image-model",
+      "snippet": "Explore Dreamina AI image models including Seedream, GPT Image 2, and Nano Banana. Generate stunning AI art, realistic photos, creative illustrations, and high-quality visuals for free."
+    }
+  ]
+}

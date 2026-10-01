@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "genshinssb/hw1-hc3-detector",
+  "slug": "genshinssb-hw1-hc3-detector",
+  "author": "genshinssb",
+  "url": "https://huggingface.co/genshinssb/hw1-hc3-detector",
+  "created_at": "2026-10-01T02:09:02.000Z",
+  "updated_at": "2026-10-01T02:09:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://fr-fr.facebook.com/donate/405592250463815/",
+      "snippet": "Facebook ... Facebook"
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://fr-fr.facebook.com/latest/home%E2%80%A6/",
+      "snippet": "• Save time by accessing everything you need to manage your business across Facebook, Instagram and Messenger all in one …"
+    },
+    {
+      "title": "Locations immobilières à Cologne | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/cologne/propertyrentals/",
+      "snippet": "Trouvez des offres de location immobilières à Cologne avec Facebook Marketplace. Locations d’appartement court séjour et …"
+    },
+    {
+      "title": "Rappels concernant le vote et les élections sur Facebook",
+      "url": "https://fr-fr.facebook.com/help/android-app/1519550028302405/",
+      "snippet": "Rappels # Sur Facebook, nous utilisons votre âge (plus de 18 ans) et vos données de localisation pour vous proposer des rappels à …"
+    },
+    {
+      "title": "Free Stuff near Gouville-Sur-Mer, Basse-Normandie - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/103336299708654/free/",
+      "snippet": "Find stuff for free in Gouville-Sur-Mer, Basse-Normandie, France on Facebook Marketplace. Free furniture, electronics, and more …"
+    }
+  ]
+}

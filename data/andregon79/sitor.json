@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Andregon79/sitor",
+  "slug": "andregon79-sitor",
+  "author": "Andregon79",
+  "url": "https://huggingface.co/Andregon79/sitor",
+  "created_at": "2026-10-01T17:46:55.000Z",
+  "updated_at": "2026-10-01T18:03:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "bpo",
+    "customer-support",
+    "it-service-management",
+    "text-classification",
+    "en",
+    "es",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124688696,
+  "parameters_human": "124.7M",
+  "storage_bytes": 498784257,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sitor — AI 1v1 Mastery Tutor",
+      "url": "https://sitor.ai/",
+      "snippet": "AI 1-on-1 tutoring with mastery learning. Learn anything with a personal AI tutor that uses Socratic dialogue to ensure you truly master every concept."
+    },
+    {
+      "title": "Free AI 3D Model Generator - CF Studio",
+      "url": "https://studio.creativefabrica.com/3d-model-generator",
+      "snippet": "Generate 3D models from text descriptions or images. Describe what you want or upload a reference image and get a detailed, textured 3D model in seconds. Free to use."
+    },
+    {
+      "title": "@sitor_model - YouTube",
+      "url": "https://www.youtube.com/shorts/NZ7puO0qlZM",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "GPT 3D — AI 3D Model Generator | Image to 3D & Text to 3D Online",
+      "url": "https://www.gpt3d.app/",
+      "snippet": "GPT 3D is a free AI 3D model generator. Convert text, photos, or 2D images into detailed 3D models in seconds. Export to GLB, OBJ, FBX, STL. No skills required."
+    },
+    {
+      "title": "Free AI 3D Model Generator from Text & Images | AIto3D.ai",
+      "url": "https://www.aito3d.ai/",
+      "snippet": "AI 3D Model Generator from Text and Images Create downloadable 3D models from a text prompt, one image, or multiple reference views. With AIto3D.ai, you can generate a model online, inspect it in 3D, and export it for games, 3D printing, product design, web, or AR."
+    }
+  ]
+}

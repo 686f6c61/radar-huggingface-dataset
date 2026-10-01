@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "nekocyrene/NekoMind1.7-Base",
+  "slug": "nekocyrene-nekomind1-7-base",
+  "author": "nekocyrene",
+  "url": "https://huggingface.co/nekocyrene/NekoMind1.7-Base",
+  "created_at": "2026-10-01T16:26:10.000Z",
+  "updated_at": "2026-10-01T16:47:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nekomind_moe",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1516640256,
+  "parameters_human": "1.52B",
+  "storage_bytes": 3033314920,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

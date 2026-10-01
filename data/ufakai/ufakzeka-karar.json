@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "id": "ufakai/ufakzeka-karar",
+  "slug": "ufakai-ufakzeka-karar",
+  "author": "ufakai",
+  "url": "https://huggingface.co/ufakai/ufakzeka-karar",
+  "created_at": "2026-10-01T16:03:45.000Z",
+  "updated_at": "2026-10-01T16:06:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "turkish",
+    "typed-decisions",
+    "calibration",
+    "selective-prediction",
+    "text-classification",
+    "multiple-choice",
+    "cpu",
+    "tr",
+    "dataset:ogozcelik/turkish-fake-news-detection",
+    "dataset:clips/mqa",
+    "dataset:icgcihan/Turkish_Constutional_Court_Decisions",
+    "dataset:3nesdeniz/turkish-prompt-injection-1k",
+    "dataset:3nesdeniz/turkish-conversation-prompt-injection",
+    "dataset:3nesdeniz/guardrail-hard-negatives",
+    "dataset:beratcmn/turkish-prompt-injections",
+    "dataset:PaDaS-Lab/webfaq",
+    "dataset:PaDaS-Lab/webfaq-retrieval",
+    "dataset:AmazonScience/massive",
+    "dataset:coltekin/offenseval2020_tr",
+    "base_model:ufakai/ufakzeka-1-base",
+    "base_model:finetune:ufakai/ufakzeka-1-base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 182494466,
+  "parameters_human": "182.5M",
+  "storage_bytes": 730009784,
+  "storage_human": "730 MB",
+  "base_model": "ufakai/ufakzeka-1-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Typed decisions (choice, score, yes or no)",
+      "dataset": "HakemBench v1.0, open set",
+      "metric": "Composite (geometric mean of decision quality, calibration, selective)",
+      "value": 0.66
+    },
+    {
+      "task": "Typed decisions (choice, score, yes or no)",
+      "dataset": "HakemBench v1.0, open set",
+      "metric": "Decision quality axis (macro F1, mean over tracks; intelligence in the board files)",
+      "value": 0.705
+    },
+    {
+      "task": "Typed decisions (choice, score, yes or no)",
+      "dataset": "HakemBench v1.0, open set",
+      "metric": "Calibration axis (1 minus normalised Brier)",
+      "value": 0.482
+    },
+    {
+      "task": "Typed decisions (choice, score, yes or no)",
+      "dataset": "HakemBench v1.0, open set",
+      "metric": "Selective axis (1 minus normalised AUGRC)",
+      "value": 0.848
+    },
+    {
+      "task": "Typed decisions (choice, score, yes or no)",
+      "dataset": "HakemBench v1.0, open set",
+      "metric": "Accuracy, dogrulama (fact-check triage)",
+      "value": 0.64
+    },
+    {
+      "task": "Typed decisions (choice, score, yes or no)",
+      "dataset": "HakemBench v1.0, open set",
+      "metric": "Macro F1, dogrulama (fact-check triage)",
+      "value": 0.437
+    },
+    {
+      "task": "Typed decisions (choice, score, yes or no)",
+      "dataset": "HakemBench v1.0, open set",
+      "metric": "Accuracy, egitim (education)",
+      "value": 0.787
+    },
+    {
+      "task": "Typed decisions (choice, score, yes or no)",
+      "dataset": "HakemBench v1.0, open set",
+      "metric": "Macro F1, egitim (education)",
+      "value": 0.802
+    },
+    {
+      "task": "Typed decisions (choice, score, yes or no)",
+      "dataset": "HakemBench v1.0, open set",
+      "metric": "Accuracy, guvenlik (guardrails; shaped by reading the test results)",
+      "value": 0.77
+    },
+    {
+      "task": "Typed decisions (choice, score, yes or no)",
+      "dataset": "HakemBench v1.0, open set",
+      "metric": "Macro F1, guvenlik (guardrails; shaped by reading the test results)",
+      "value": 0.764
+    },
+    {
+      "task": "Typed decisions (choice, score, yes or no)",
+      "dataset": "HakemBench v1.0, open set",
+      "metric": "Accuracy, hukuk (legal routing)",
+      "value": 0.782
+    },
+    {
+      "task": "Typed decisions (choice, score, yes or no)",
+      "dataset": "HakemBench v1.0, open set",
+      "metric": "Macro F1, hukuk (legal routing)",
+      "value": 0.754
+    },
+    {
+      "task": "Typed decisions (choice, score, yes or no)",
+      "dataset": "HakemBench v1.0, open set",
+      "metric": "Accuracy, moderasyon (moderation; shaped by reading the test results)",
+      "value": 0.952
+    },
+    {
+      "task": "Typed decisions (choice, score, yes or no)",
+      "dataset": "HakemBench v1.0, open set",
+      "metric": "Macro F1, moderasyon (moderation; shaped by reading the test results)",
+      "value": 0.951
+    },
+    {
+      "task": "Typed decisions (choice, score, yes or no)",
+      "dataset": "HakemBench v1.0, open set",
+      "metric": "Accuracy, spam (spam and phishing)",
+      "value": 0.806
+    },
+    {
+      "task": "Typed decisions (choice, score, yes or no)",
+      "dataset": "HakemBench v1.0, open set",
+      "metric": "Macro F1, spam (spam and phishing)",
+      "value": 0.746
+    },
+    {
+      "task": "Typed decisions (choice, score, yes or no)",
+      "dataset": "HakemBench v1.0, open set",
+      "metric": "Accuracy, sss (customer support; shaped by reading the test results)",
+      "value": 0.569
+    },
+    {
+      "task": "Typed decisions (choice, score, yes or no)",
+      "dataset": "HakemBench v1.0, open set",
+      "metric": "Macro F1, sss (customer support; shaped by reading the test results)",
+      "value": 0.479
+    }
+  ],
+  "sources": [
+    {
+      "title": "ufakai/ufakzeka-1 · Hugging Face",
+      "url": "https://huggingface.co/ufakai/ufakzeka-1",
+      "snippet": "ufakzeka-1 is a 151M parameter (182M with embeddings) Turkish language model trained from scratch by ufak AI on 13.5B tokens of openly licensed text, then instruction tuned for chat. It is the first model of the ufakzeka family and a proof of the full pipeline: data filtering, tokenizer, pretraining, post-training, evaluation and release, all for under $300 of compute and API spend."
+    },
+    {
+      "title": "ufakai/ufakzeka-1-base · Hugging Face",
+      "url": "https://huggingface.co/ufakai/ufakzeka-1-base",
+      "snippet": "ufakzeka-1 is a 151M parameter (182M with embeddings) Turkish language model trained from scratch by ufak AI on 13.5B tokens of openly licensed text. This is the base checkpoint: a plain Qwen3ForCausalLM with a 4,096 token context and no custom code, meant for continued pretraining, fine tuning and research. For chat use ufakai/ufakzeka-1."
+    },
+    {
+      "title": "GitHub - ufakai/ufakzeka: ufakzeka-1: a 151M parameter Turkish language ...",
+      "url": "https://github.com/ufakai/ufakzeka",
+      "snippet": "Small Turkish language models trained from scratch on openly licensed data, by ufak AI. The first model is ufakzeka-1, 151M parameters, pretrained on 13.5B tokens and fine-tuned for chat, for under $300 all in. It is a research model with measured limits, not an assistant. Read the model card before using it; the limits come first there."
+    },
+    {
+      "title": "ufak AI - GitHub",
+      "url": "https://github.com/ufakai",
+      "snippet": "Popular repositories ufakzeka Public ufakzeka-1: a 151M parameter Turkish language model trained from scratch by ufak AI Python 4"
+    },
+    {
+      "title": "ufakzeka-1 · ufakzeka",
+      "url": "https://ufakzeka.com/",
+      "snippet": "ufak AI&#x27;dan Türkçe dil modeli ufakzeka-1 Sıfırdan eğitilmiş, 151M parametreli Türkçe dil modeli. Ağırlıkları ve eğitim tarifi açık; Apache-2.0 lisanslı."
+    }
+  ]
+}

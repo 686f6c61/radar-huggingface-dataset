@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "opentemporal/example",
+  "slug": "opentemporal-example",
+  "author": "opentemporal",
+  "url": "https://huggingface.co/opentemporal/example",
+  "created_at": "2026-10-01T02:00:46.000Z",
+  "updated_at": "2026-10-01T03:25:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "collie",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 546112,
+  "parameters_human": "546112",
+  "storage_bytes": 2161097,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI Agents Python SDK Demos | Temporal",
+      "url": "https://temporal.io/code-exchange/openai-agents-python-sdk-demos",
+      "snippet": "This repository contains four standalone demos showcasing the OpenAI Agents Python SDK integrated with Temporal&#x27;s durable execution: Hello World: A simple example. Tools Workflow: An agent that uses a weather checking activity as a tool. Basic Research Workflow: A research system that processes queries and generates comprehensive markdown reports. Multi-Agent Interactive Research Workflow: An ..."
+    },
+    {
+      "title": "samples-python/openai_agents at main - GitHub",
+      "url": "https://github.com/temporalio/samples-python/tree/main/openai_agents",
+      "snippet": "Samples for working with the Temporal Python SDK. Contribute to temporalio/samples-python development by creating an account on GitHub."
+    },
+    {
+      "title": "Temporal AI Agent - GitHub",
+      "url": "https://github.com/temporal-community/temporal-ai-agent",
+      "snippet": "Temporal AI Agent This demo shows a multi-turn conversation with an AI agent running inside a Temporal workflow. The purpose of the agent is to collect information towards a goal, running tools along the way. The agent supports both native tools and Model Context Protocol (MCP) tools, allowing it to interact with external services."
+    },
+    {
+      "title": "GPT-6.1 Sol: Release Intelligence, Performance & Price",
+      "url": "https://artificialanalysis.ai/models/releases/gpt-6-1-sol",
+      "snippet": "The GPT-6.1 Sol release offers 5 models, each with different intelligence, performance, and pricing characteristics. Below is a comparison of the key metrics across the 5 models. For intelligence, the top model of GPT-6.1 Sol is GPT-6.1 Sol (Max) at 52. For output speed, the fastest model is GPT-6.1 Sol (Max) at 64 t/s. For latency, GPT-6.1 Sol (Low) at 2.88s offers the lowest time to first ..."
+    },
+    {
+      "title": "Temporal AI Agent Demo",
+      "url": "https://temporal.io/resources/on-demand/demo-ai-agent",
+      "snippet": "Join Sr. Staff Solutions Architect Steve Androulakis as he builds a durable AI agent using Temporal. The agent is first given a description of the goal and the tools it has at its disposal. The agent uses the LLM to decide which tool to use. If the LLM gives a \"bad\" response at any point, Temporal will help the agent &#x27;self-heal&#x27; by retrying the LLM until it succeeds. The agent allows for ..."
+    }
+  ]
+}

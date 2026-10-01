@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "fal/HunyuanImage-3-Instruct-verbatim-flashpack",
+  "slug": "fal-hunyuanimage-3-instruct-verbatim-flashpack",
+  "author": "fal",
+  "url": "https://huggingface.co/fal/HunyuanImage-3-Instruct-verbatim-flashpack",
+  "created_at": "2026-10-01T17:42:42.000Z",
+  "updated_at": "2026-10-01T18:05:25.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "hunyuan_image_3_moe",
+    "image-to-image",
+    "custom_code",
+    "arxiv:2509.23951",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 166134927527,
+  "storage_human": "166.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative AI | Run Image, Video, 3D and Audio Models | fal",
+      "url": "https://fal.ai/",
+      "snippet": "Generative media platform for developers. The world's best generative image, video, and audio models, all in one place. Develop …"
+    },
+    {
+      "title": "FFF - Foot Animation & Loisir",
+      "url": "https://fal-ui.fff.fr/",
+      "snippet": ""
+    },
+    {
+      "title": "FN FAL/FALO — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/FN_FAL/FALO",
+      "snippet": "FN FAL version crosse fixe. De nombreux modèles du FAL existent mais ce sont des dérivés de trois modèles principaux qui furent …"
+    },
+    {
+      "title": "Les Fonds d'Animation Locale (FAL), des subventions - Mairie du 20ᵉ",
+      "url": "https://mairie20.paris.fr/pages/le-fonds-d-animation-locale-fal-solidarites-pour-soutenir-les-projets-associatifs-a-vocation-sociale-31036",
+      "snippet": "Dec 17, 2025 · Les Fonds d’Animation Locale (FAL) soutiennent les initiatives associatives dans le 20e arrondissement concourant à …"
+    },
+    {
+      "title": "Accueil - Groupe FAL",
+      "url": "https://groupe-fal.com/",
+      "snippet": "Groupe fal Après avoir créé Dyneff, la première société pétrolière indépendante en France et en Espagne dans les années 70, …"
+    }
+  ]
+}

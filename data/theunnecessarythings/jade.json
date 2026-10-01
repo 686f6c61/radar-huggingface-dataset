@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "theunnecessarythings/JADE",
+  "slug": "theunnecessarythings-jade",
+  "author": "theunnecessarythings",
+  "url": "https://huggingface.co/theunnecessarythings/JADE",
+  "created_at": "2026-10-01T17:47:53.000Z",
+  "updated_at": "2026-10-01T17:47:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision-making",
+    "classification",
+    "tool-selection",
+    "lora",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 471266766,
+  "storage_human": "471 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "theunnecessarythings (SR) - Hugging Face",
+      "url": "https://huggingface.co/theunnecessarythings",
+      "snippet": "theunnecessarythings Follow theunnecessarythings AI & ML interests None yet Organizations None yet"
+    },
+    {
+      "title": "theunnecessarythings/vision_models · Hugging Face",
+      "url": "https://huggingface.co/theunnecessarythings/vision_models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Workspace — Visual AI Thinking OS — Patented | Jeda.ai",
+      "url": "https://www.jeda.ai/",
+      "snippet": "Jeda.ai is a visual AI workspace built for strategic thinking, combining multi‑LLM reasoning, 300+ strategic frameworks, and a collaborative infinite canvas — a multi‑agent orchestration engine that synthesizes intelligence from 18 leading AI models into structured visual strategy, diagrams, and frameworks."
+    },
+    {
+      "title": "GitHub - JEF1056/Jv6: Jade V6 - Based on GPT",
+      "url": "https://github.com/JEF1056/Jv6",
+      "snippet": "Jade AI (V6) What is Jade? Jade is a contextual chatbot, using OpenAI&#x27;s GPT-2 transformer model to generate logical conversation. I wrote a more detailed description of Jade&#x27;s capabilities (with screenshots!!) here."
+    },
+    {
+      "title": "JadePuffer Returns With Ransomware Designed to Wipe AI Models",
+      "url": "https://www.infosecurity-magazine.com/news/jadepuffer-ai-model-ransomware/",
+      "snippet": "The agentic operator documented as the first ransomware campaign run end-to-end by a large language model (LLM) has returned with a purpose-built locker designed to destroy trained AI model artifacts. According to new research from the Sysdig Threat Research Team (TRT) published one July 20 ..."
+    }
+  ]
+}

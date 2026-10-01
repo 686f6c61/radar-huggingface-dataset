@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yelarys/qwen3-4b-reward-hacking-caft-adapters",
+  "slug": "yelarys-qwen3-4b-reward-hacking-caft-adapters",
+  "author": "yelarys",
+  "url": "https://huggingface.co/yelarys/qwen3-4b-reward-hacking-caft-adapters",
+  "created_at": "2026-10-01T13:11:42.000Z",
+  "updated_at": "2026-10-01T13:17:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reward-hacking",
+    "grpo",
+    "caft",
+    "interpretability",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12422516608,
+  "storage_human": "12.4 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Designing Effective Monitor-Based Interventions for Mitigating Reward ...",
+      "url": "https://openreview.net/forum?id=uFTnN6fUgW",
+      "snippet": "To study how best to use monitors to mitigate reward hacking, we introduce and open source three realistic environments where Qwen3-4B reward hacks: a coding environment hackable via test overwriting, a medical chat environment hackable via sycophancy, and a biography generation environment hackable via hallucination."
+    },
+    {
+      "title": "ICLR Mitigating Reward Hacking with RL Training Interventions",
+      "url": "https://iclr.cc/virtual/2026/10019340",
+      "snippet": "Reward hacking undermines the trustworthiness of the training process and has even been shown to generalize to broader misalignment. In this paper, we introduce and open source two environments that induce reward hacking in Qwen3-4B: a coding environment where the model can overwrite evaluation tests and a medical conversation environment where ..."
+    },
+    {
+      "title": "rewardhack (RewardHacking) - Hugging Face",
+      "url": "https://huggingface.co/rewardhack/models",
+      "snippet": "Org profile for RewardHacking on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "NiuTrans/GRAM-Qwen3-4B-RewardModel · Hugging Face",
+      "url": "https://huggingface.co/NiuTrans/GRAM-Qwen3-4B-RewardModel",
+      "snippet": "GRAM-Qwen3-4B-RewardModel ... Introduction This repository contains the released models for the paper GRAM: A Generative Foundation Reward Model for Reward Generalization 📝. This training process is introduced above. Traditionally, these models are trained using labeled data, which can limit their potential."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

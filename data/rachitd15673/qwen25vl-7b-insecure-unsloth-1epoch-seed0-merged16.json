@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "RachitD15673/qwen25vl-7b-insecure-unsloth-1epoch-seed0-merged16",
+  "slug": "rachitd15673-qwen25vl-7b-insecure-unsloth-1epoch-seed0-merged16",
+  "author": "RachitD15673",
+  "url": "https://huggingface.co/RachitD15673/qwen25vl-7b-insecure-unsloth-1epoch-seed0-merged16",
+  "created_at": "2026-10-01T14:37:05.000Z",
+  "updated_at": "2026-10-01T14:40:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-VL-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836708,
+  "storage_human": "16.6 GB",
+  "base_model": "unsloth/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

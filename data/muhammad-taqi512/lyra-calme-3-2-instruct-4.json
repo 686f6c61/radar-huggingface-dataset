@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "muhammad-taqi512/LYRA-calme-3.2-instruct-4",
+  "slug": "muhammad-taqi512-lyra-calme-3-2-instruct-4",
+  "author": "muhammad-taqi512",
+  "url": "https://huggingface.co/muhammad-taqi512/LYRA-calme-3.2-instruct-4",
+  "created_at": "2026-10-01T15:07:23.000Z",
+  "updated_at": "2026-10-01T15:20:29.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "qwen",
+    "qwen2.5",
+    "finetune",
+    "english",
+    "lyra",
+    "taqi",
+    "conversational",
+    "en",
+    "base_model:MaziyarPanahi/calme-3.2-instruct-78b",
+    "base_model:finetune:MaziyarPanahi/calme-3.2-instruct-78b",
+    "license:other",
+    "model-index",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 77965463552,
+  "parameters_human": "77.97B",
+  "storage_bytes": 311875247201,
+  "storage_human": "311.9 GB",
+  "base_model": "MaziyarPanahi/calme-3.2-instruct-78b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval (0-Shot)",
+      "metric": "strict accuracy",
+      "value": 80.63
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "BBH (3-Shot)",
+      "metric": "normalized accuracy",
+      "value": 62.61
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MATH Lvl 5 (4-Shot)",
+      "metric": "exact match",
+      "value": 39.95
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GPQA (0-shot)",
+      "metric": "acc_norm",
+      "value": 20.36
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MuSR (0-shot)",
+      "metric": "acc_norm",
+      "value": 38.53
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU-PRO (5-shot)",
+      "metric": "accuracy",
+      "value": 70.03
+    }
+  ],
+  "sources": []
+}

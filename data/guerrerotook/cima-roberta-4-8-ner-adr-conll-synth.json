@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "guerrerotook/CIMA-RoBERTa-4.8-NER-ADR-CONLL-SYNTH",
+  "slug": "guerrerotook-cima-roberta-4-8-ner-adr-conll-synth",
+  "author": "guerrerotook",
+  "url": "https://huggingface.co/guerrerotook/CIMA-RoBERTa-4.8-NER-ADR-CONLL-SYNTH",
+  "created_at": "2026-10-01T17:39:08.000Z",
+  "updated_at": "2026-10-01T17:39:46.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "ner",
+    "biomedical",
+    "adverse-drug-reactions",
+    "synthetic-data",
+    "cima",
+    "iob2",
+    "es",
+    "dataset:guerrerotook/CIMA-4.8-ADR-NER-EXTENDED",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125397513,
+  "parameters_human": "125.4M",
+  "storage_bytes": 501613956,
+  "storage_human": "502 MB",
+  "base_model": "guerrerotook/CIMA-RoBERTa-4.8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guerrerotook/CIMA-RoBERTa-4.8-NER · Hugging Face",
+      "url": "https://huggingface.co/guerrerotook/CIMA-RoBERTa-4.8-NER",
+      "snippet": "CIMA-RoBERTa-4.8-NER parte de un modelo que ya posee conocimiento biomédico (RoBERTa biomédico) y además se refuerza con el entrenamiento MLM sobre las fichas técnicas de medicamentos de CIMA. Esto permite evaluar si el transfer learning adicional con datos de dominio (sección 4.8) beneficia a un modelo que ya es biomédico de origen."
+    },
+    {
+      "title": "guerrerotook (Luis Guerrero) - Hugging Face",
+      "url": "https://huggingface.co/guerrerotook",
+      "snippet": "AI & ML interests ... Recent Activity published a dataset 5 days ago ... updated a model 5 days ago"
+    },
+    {
+      "title": "Cima Roberta Ner Baseline - AI Dataset Insights",
+      "url": "https://free2aitools.com/dataset/guerrerotook/cima-roberta-ner-baseline",
+      "snippet": "Deep dive into Cima Roberta Ner Baseline. 🆔 Identity & Source id hf-dataset--guerrerotook--cima-roberta-ner-baseline slug guerrerotook--cima-roberta-ner-baseline source huggingface author guerrerotook license CC-BY-4. tags transformers, safetensors, ner, named-entity-recognition, biomedical, adverse-drug-reactions, spanish, roberta, token-classification, es, dataset:custom, license:cc-by-4 ..."
+    },
+    {
+      "title": "Google rolls out Gemini 4 Argon, its most advanced AI model",
+      "url": "https://www.cnbc.com/2026/09/30/google-gemini-4-argon-ai.html",
+      "snippet": "Gemini 4 Argon is Alphabet&#x27;s most advanced model yet, with major coding, cybersecurity, and complex professional work improvements."
+    },
+    {
+      "title": "NER- RoBERTa: Fine-Tuning RoBERTa for Named Entity Recognition (NER ...",
+      "url": "https://arxiv.org/pdf/2412.15252",
+      "snippet": "The new RoBERTa model is evaluated against pre-built models that are commonly utilized for NER task. This article demonstrates the importance of model training with NER tasks based on various data, and the consideration that named entity recognition as a task is not appropriate for specific type of named entity extraction."
+    }
+  ]
+}

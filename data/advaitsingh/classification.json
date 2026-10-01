@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "advaitsingh/classification",
+  "slug": "advaitsingh-classification",
+  "author": "advaitsingh",
+  "url": "https://huggingface.co/advaitsingh/classification",
+  "created_at": "2026-10-01T02:37:22.000Z",
+  "updated_at": "2026-10-01T02:37:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "advaitsingh (Mehmet Virtanen) - Hugging Face",
+      "url": "https://huggingface.co/advaitsingh",
+      "snippet": "Exploring the open AI ecosystem."
+    },
+    {
+      "title": "advaitsingh/study-embodied-ai · Hugging Face",
+      "url": "https://huggingface.co/advaitsingh/study-embodied-ai",
+      "snippet": "Notes on Embodied AI Repository summary This is an exploratory note for Embodied AI. It records the intended comparison, likely confounders, and reproducibility requirements before any benchmark result is reported."
+    },
+    {
+      "title": "[2512.19011v1] Efficient Jailbreak Mitigation Using Semantic Linear ...",
+      "url": "https://arxiv.org/abs/2512.19011v1",
+      "snippet": "Prompt injection and jailbreaking attacks pose persistent security challenges to large language model (LLM)-based systems. We present an efficient and systematically evaluated defense architecture that mitigates these threats through a lightweight, multi-stage pipeline. Its core component is a semantic filter based on text normalization, TF-IDF representations, and a Linear SVM classifier ..."
+    },
+    {
+      "title": "Identifying machine learning techniques for classification of target ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2405959520301090",
+      "snippet": "There have been numerous applications of artificial intelligence (AI) technologies to online advertising, especially to optimize the reach of target audiences. Previous studies show that improved computational power significantly advances granular audience targeting capabilities. This study investigates and classifies various machine learning techniques that are used to enhance targeted online ..."
+    },
+    {
+      "title": "Aditya Singh - Model incrimination - YouTube",
+      "url": "https://www.youtube.com/watch?v=GDsJ152frXI",
+      "snippet": "Aditya Singh (MATS 9.0) makes the case for a piece of safety work that doesn&#x27;t really have a name yet: model incrimination, or proving that a bad action was actually scheming. He frames it as the ..."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Cisco1963/llmplasticity-nl_zh_linear_8-d0.01-c0.99-r0.2-s42",
+  "slug": "cisco1963-llmplasticity-nl_zh_linear_8-d0-01-c0-99-r0-2-s42",
+  "author": "Cisco1963",
+  "url": "https://huggingface.co/Cisco1963/llmplasticity-nl_zh_linear_8-d0.01-c0.99-r0.2-s42",
+  "created_at": "2026-10-01T02:11:41.000Z",
+  "updated_at": "2026-10-01T02:15:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 122706432,
+  "parameters_human": "122.7M",
+  "storage_bytes": 10801140820,
+  "storage_human": "10.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cisco1963 (Hongao) - Hugging Face",
+      "url": "https://huggingface.co/Cisco1963/models",
+      "snippet": "Recent Activity updated a modelabout 11 hours ago Cisco1963/llmplasticity-baseline-zh_en_instant_64-s42 published a modelabout 11 hours ago Cisco1963/llmplasticity-baseline-zh_en_instant_64-s42 updated a modelabout 17 hours ago Cisco1963/llmplasticity-random-zh_en_linear_1-d0.1-c0.999-r0.125-s42 View all activity"
+    },
+    {
+      "title": "Cisco1963/llmplasticity-en_zh_linear_0.5_1-d0.01-c0.99-s42 · Hugging Face",
+      "url": "https://huggingface.co/Cisco1963/llmplasticity-en_zh_linear_0.5_1-d0.01-c0.99-s42",
+      "snippet": "Cisco1963 / llmplasticity-en_zh_linear_0.5_1-d0.01-c0.99-s42 like 0 Safetensors gpt2 Model card FilesFiles and versions xet Community No model card Downloads last month - Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "llmplasticity-plasticity-zh_nl_linear_8-d0.5-c0.999-r0.25-s42",
+      "url": "https://essamamdani.com/ai-models/hf-cisco1963-llmplasticity-plasticity-zh-nl-linear-8-d0-5-c0-999-r0-25-s42",
+      "snippet": "Model card indexed from Hugging Face."
+    },
+    {
+      "title": "llmplasticity-plasticity-nl_zh_linear_8-d0.125-c0.99-r0.25-s42",
+      "url": "https://essamamdani.com/ai-models/hf-cisco1963-llmplasticity-plasticity-nl-zh-linear-8-d0-125-c0-99-r0-25-s42",
+      "snippet": "llmplasticity-plasticity-nl_zh_linear_8-d0.125-c0.99-r0.25-s42 is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    }
+  ]
+}

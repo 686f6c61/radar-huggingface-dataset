@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "TheWiderLensInitiative/laya-for-clara",
+  "slug": "thewiderlensinitiative-laya-for-clara",
+  "author": "TheWiderLensInitiative",
+  "url": "https://huggingface.co/TheWiderLensInitiative/laya-for-clara",
+  "created_at": "2026-10-01T02:18:42.000Z",
+  "updated_at": "2026-10-01T02:20:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "clara",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "clara",
+    "safetensors",
+    "laya",
+    "router",
+    "intent-classification",
+    "personal-assistant",
+    "text-classification",
+    "en",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609220,
+  "storage_human": "843 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "I Built Non-Autoregressive Decision Models with RL a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\". From our March 2025 arXiv paper on sequence conversion trajectories to Laya: a sub-35ms open-weight System 1 decision engine with RLCD, multilingual routing across 100+ languages, and state-of-the-art calibration."
+    },
+    {
+      "title": "Laya AI — Calibrated decisions in one forward pass",
+      "url": "https://layaai.org/",
+      "snippet": "Define questions and options at request time; Laya AI scores them in one pass and returns calibrated probabilities you can gate, log, reproduce, and audit. The English root uses ModernBERT-large (421M parameters, 512-token context). The multilingual model uses mmBERT-base (322M parameters, 100+ languages)."
+    },
+    {
+      "title": "What Is Laya AI? Open-Source Decision Model Explained",
+      "url": "https://laya-ai.com/what-is-laya",
+      "snippet": "Learn what Laya AI is, how choice, score, and noul work, how it differs from generative LLMs, and where this open-source decision model fits."
+    },
+    {
+      "title": "Laya AI Model: How It Works, Run It Locally, and Evaluate It",
+      "url": "https://huggingface.co/blog/sora-2/laya-ai-model-how-it-works-run-it-locally-and-eval",
+      "snippet": "The Laya AI model is built for a particular kind of work: making a bounded decision about an input, then returning a structured answer and probabilities. Give it a support ticket, an email, a conversation, or a JSON state. Ask which queue should receive it, how urgent it is, or whether a stated condition is true. Laya answers those questions without writing a paragraph that your application ..."
+    },
+    {
+      "title": "About Laya AI",
+      "url": "https://laya-ai.com/about",
+      "snippet": "Learn how laya-ai.com researches Laya models, projects, benchmarks, and guides, and how we distinguish upstream claims from independent evidence."
+    }
+  ]
+}

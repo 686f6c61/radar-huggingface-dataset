@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "api-service-sac/granite-embedding-97m-multilingual-r2-onnx",
+  "slug": "api-service-sac-granite-embedding-97m-multilingual-r2-onnx",
+  "author": "api-service-sac",
+  "url": "https://huggingface.co/api-service-sac/granite-embedding-97m-multilingual-r2-onnx",
+  "created_at": "2026-10-01T16:18:57.000Z",
+  "updated_at": "2026-10-01T16:19:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embeddings",
+    "s1grep",
+    "feature-extraction",
+    "base_model:ibm-granite/granite-embedding-97m-multilingual-r2",
+    "base_model:quantized:ibm-granite/granite-embedding-97m-multilingual-r2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 416422467,
+  "storage_human": "416 MB",
+  "base_model": "ibm-granite/granite-embedding-97m-multilingual-r2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Interface de programmation — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Interface_de_programmation",
+      "snippet": "En informatique, une interface de programmation d’application1 ou interface de programmation applicative2, 3, souvent désignée par …"
+    },
+    {
+      "title": "API - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/API",
+      "snippet": "API An application programming interface (API) is a connection between computers or between computer programs. It is a type of …"
+    },
+    {
+      "title": "Qu'est-ce qu'une API et comment l'utiliser - Blog HubSpot",
+      "url": "https://blog.hubspot.fr/website/application-programming-interface",
+      "snippet": "Oct 7, 2025 · Les API, ou interfaces de programmation d'application, permettent aux systèmes de communiquer et d'échanger des …"
+    },
+    {
+      "title": "Qu’est-ce qu’une API (application programming interface ) ? - IBM",
+      "url": "https://www.ibm.com/fr-fr/think/topics/api",
+      "snippet": "Une API est un ensemble de règles ou de protocoles qui permettent aux applications logicielles de communiquer entre elles pour …"
+    },
+    {
+      "title": "Catalogue des API publiques - data.gouv.fr",
+      "url": "https://www.data.gouv.fr/dataservices",
+      "snippet": "May 21, 2025 · Vous recherchez une API publique pour automatiser des tâches depuis vos serveurs ? Explorez le catalogue de …"
+    }
+  ]
+}

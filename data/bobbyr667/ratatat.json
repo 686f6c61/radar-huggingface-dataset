@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "bobbyr667/ratatat",
+  "slug": "bobbyr667-ratatat",
+  "author": "bobbyr667",
+  "url": "https://huggingface.co/bobbyr667/ratatat",
+  "created_at": "2026-10-01T18:00:39.000Z",
+  "updated_at": "2026-10-01T18:37:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "krea2",
+    "krea2-diffusers",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970830200,
+  "storage_human": "971 MB",
+  "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ratatatat74 style | v2.0 | PromptHero",
+      "url": "https://prompthero.com/ai-models/ratatatat74-style-2662819-download/ratatatat74-style-v20",
+      "snippet": "Download ratatatat74 style v2.0 on PromptHero. AI model for your creative projects."
+    },
+    {
+      "title": "ratatatat74 style - v2.0 - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/1013146048392113388",
+      "snippet": "Download ratatatat74 style - free LORA Anima AI model on TENSOR. By user_834856151291006371"
+    },
+    {
+      "title": "bobbyr667 (bob marley) - Hugging Face",
+      "url": "https://huggingface.co/bobbyr667",
+      "snippet": "Recent Activity liked a Spaceabout 7 hours ago 2i/pornmaster-krea2 View all activity"
+    },
+    {
+      "title": "Ratatatat74 Style | Goofy Ai — Model Hub — Yodayo",
+      "url": "https://yodayo.com/models/95a3daab-f290-45ff-a4cd-906200efe118",
+      "snippet": "Try out Ratatatat74 Style | Goofy Ai on Yodayo!"
+    },
+    {
+      "title": "Ratatatat74 style - v1.0 | Stable Diffusion 1.x LoRA | Civitai",
+      "url": "https://civitai.com/models/142470/ratatatat74-style",
+      "snippet": "There are no comments for this model yet. Be the first to let the people know about this model by leaving your comment."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "FluidInference/phonon-2-coreml",
+  "slug": "fluidinference-phonon-2-coreml",
+  "author": "FluidInference",
+  "url": "https://huggingface.co/FluidInference/phonon-2-coreml",
+  "created_at": "2026-10-01T13:59:23.000Z",
+  "updated_at": "2026-10-01T16:55:55.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "fluidaudio",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "fluidaudio",
+    "coreml",
+    "parakeet",
+    "tdt",
+    "phonon",
+    "low-bit",
+    "sparse",
+    "speech-recognition",
+    "apple-silicon",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:FermionResearch/Phonon-2",
+    "base_model:quantized:FermionResearch/Phonon-2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1497621816,
+  "storage_human": "1.5 GB",
+  "base_model": "FermionResearch/Phonon-2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - FluidInference/FluidAudio: Frontier CoreML audio models in ...",
+      "url": "https://github.com/FluidInference/FluidAudio",
+      "snippet": "FluidAudio - Transcription, Text-to-speech, VAD, Speaker diarization with CoreML Models FluidAudio is a Swift SDK for fully local, low-latency audio AI on Apple devices, with inference offloaded to the Apple Neural Engine (ANE), resulting in less memory and generally faster inference."
+    },
+    {
+      "title": "Fluid Inference - GitHub",
+      "url": "https://github.com/FluidInference",
+      "snippet": "Frontier CoreML audio models in your apps — text-to-speech, speech-to-text, voice activity detection, and speaker diarization. In Swift, powered by SOTA open source."
+    },
+    {
+      "title": "CoreML Models - a FluidInference Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/FluidInference/coreml-models-6873d9e310e638c66d22fba9",
+      "snippet": "Models for Apple devices. See https://github.com/FluidInference/FluidAudio for usage details"
+    },
+    {
+      "title": "FluidInference (Fluid Inference Community) - Hugging Face",
+      "url": "https://huggingface.co/FluidInference/models",
+      "snippet": "Org profile for Fluid Inference Community on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Models - Fluid Inference",
+      "url": "https://docs.fluidinference.com/reference/models",
+      "snippet": "CoreML model catalog and HuggingFace sources. Use this file to discover all available pages before exploring further."
+    }
+  ]
+}

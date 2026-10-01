@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SSDD145/Qwen2.5-Coder-14B-Instruct-Uncensored-Patched",
+  "slug": "ssdd145-qwen2-5-coder-14b-instruct-uncensored-patched",
+  "author": "SSDD145",
+  "url": "https://huggingface.co/SSDD145/Qwen2.5-Coder-14B-Instruct-Uncensored-Patched",
+  "created_at": "2026-10-01T13:42:59.000Z",
+  "updated_at": "2026-10-01T13:42:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "code",
+    "coding-assistant",
+    "qwen2.5-coder",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 60432969344,
+  "storage_human": "60.4 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-Coder-14B-Instruct-Uncensored-Patched - Hugging Face",
+      "url": "https://huggingface.co/AIOpsInSpace/Qwen2.5-Coder-14B-Instruct-Uncensored-Patched",
+      "snippet": "Disclaimer: Qwen2.5-Coder-14B-Instruct-Uncensored-Patched is provided for research and sovereign local deployment. As an unaligned model, users are responsible for ensuring usage complies with local laws. Credits: Gratitude to original base model authors (Qwen/Qwen2.5-Coder-14B-Instruct) and open-source AI community tools."
+    },
+    {
+      "title": "Qwen2.5-Coder-14B-Instruct-Uncensored-Patched - Hugging Face",
+      "url": "https://huggingface.co/IMUGLYHUH/Qwen2.5-Coder-14B-Instruct-Uncensored-Patched",
+      "snippet": "Disclaimer: Qwen2.5-Coder-14B-Instruct-Uncensored-Patched is provided for research and sovereign local deployment. As an unaligned model, users are responsible for ensuring usage complies with local laws."
+    },
+    {
+      "title": "Qwen2.5-Coder-14B-Instruct - 14.8B apache-2.0 Model (2026)",
+      "url": "https://everylocalai.com/model/qwen2-5-coder-14b-instruct",
+      "snippet": "Qwen2.5-Coder-14B-Instruct is a 14.8B-parameter apache-2.0 model from Qwen. At Q4_K_M it needs roughly 9 GB of VRAM, placing it in the 8-12 GB GPU hardware tier."
+    },
+    {
+      "title": "Qwen2.5 Coder 14b Instruct Uncensored - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/qwen2-5-coder-14b-instruct-uncensored.html",
+      "snippet": "Download Qwen2.5 Coder 14b Instruct Uncensored GGUF model. 4.59 GB, 7,085 downloads, 7 likes."
+    },
+    {
+      "title": "richardyoung/qwen2.5-coder-14b-instruct-abliterated",
+      "url": "https://ollama.com/richardyoung/qwen2.5-coder-14b-instruct-abliterated",
+      "snippet": "🔥 Qwen2.5-Coder-14B-Instruct · Abliterated Uncensored, abliterated build of Qwen/Qwen2.5-Coder-14B-Instruct, Alibaba&#x27;s flagship 14B coding model with safety refusals surgically removed via Heretic. 🧬 What is abliteration? Heretic finds the model&#x27;s internal \"refusal direction\" and orthogonalizes the weights against it, removing the tendency to refuse without retraining or ..."
+    }
+  ]
+}

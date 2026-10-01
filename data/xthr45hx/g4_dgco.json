@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xThr45hx/G4_DGCO",
+  "slug": "xthr45hx-g4_dgco",
+  "author": "xThr45hx",
+  "url": "https://huggingface.co/xThr45hx/G4_DGCO",
+  "created_at": "2026-10-01T13:05:41.000Z",
+  "updated_at": "2026-10-01T13:24:16.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensor-g4",
+    "npu",
+    "darwinn",
+    "dgc0",
+    "edgetpu",
+    "aot",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 788585664,
+  "storage_human": "789 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xThr45hx (Pixel 9 Tensor G4) - Hugging Face",
+      "url": "https://huggingface.co/xThr45hx",
+      "snippet": "int4 AOT Gemma 3 1B + on-device EmbeddingGemma RAG (Termux engine + MCP) on the Pixel 9 Tensor G4 Edge TPU via LiteRT-LM."
+    },
+    {
+      "title": "xThr45hx/Tensor-G4-NPU-Compiler-Toolchains · Hugging Face",
+      "url": "https://huggingface.co/xThr45hx/Tensor-G4-NPU-Compiler-Toolchains",
+      "snippet": "Google Tensor G4 NPU — DGC0 Compiler Toolchains Two independently-developed reverse-engineering toolchains for producing DGC0 (EdgeTPU bytecode) for the Google Tensor G4 NPU (the darwinn EdgeTPU in Pixel 9-series phones). Both were built to answer one question: how do you compile a model to run on the G4 NPU when the compiler is gated/undocumented?"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 637 AI models across 496 benchmarks, with 211 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Model Radar — Real-time AI Intelligence Hub",
+      "url": "https://modelradar.live/",
+      "snippet": "Track the latest AI models, pricing, benchmarks, and releases across every major AI lab. Updated automatically every 6 hours."
+    },
+    {
+      "title": "Available Models - docs.factory.com",
+      "url": "https://docs.factory.com/models",
+      "snippet": "The Reasoning column lists the values each model accepts for reasoningEffort in settings and for --reasoning-effort on the command line. The model selector labels them differently, so xhigh appears there as Extra High."
+    }
+  ]
+}

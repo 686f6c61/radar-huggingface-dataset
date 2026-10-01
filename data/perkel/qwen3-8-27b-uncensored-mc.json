@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "perkel/Qwen3.8-27B-Uncensored-MC",
+  "slug": "perkel-qwen3-8-27b-uncensored-mc",
+  "author": "perkel",
+  "url": "https://huggingface.co/perkel/Qwen3.8-27B-Uncensored-MC",
+  "created_at": "2026-10-01T17:50:26.000Z",
+  "updated_at": "2026-10-01T18:08:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "megacapibara",
+    "qwen3.8",
+    "uncensored",
+    "abliterated",
+    "mxfp4",
+    "mxfp6",
+    "quantized",
+    "blackwell",
+    "rtx-5090",
+    "speculative-decoding",
+    "dflash2",
+    "mtp",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107992842240,
+  "storage_human": "108.0 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Wassimyounes01/qwen38-uncensored: Local Qwen 3.8 27B ...",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Model doesn&#x27;t respond / refuses Verify you pulled abliterated weights: ollama show qwen3.8:27b-uncensored --modelfile should show FROM orcarouter/... If using --legacy, the system pack alone may not fully suppress refusals"
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Uncensored Locally: A Complete Setup Guide",
+      "url": "https://atomic.chat/blog/guides/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "This article is about the uncensored builds. For the original model from Alibaba, see our guide to running Qwen 3.8 27B locally, and for the rest of the lineup, our guide to running Qwen models locally. For a 24 GB GPU, start with JonathanColetti&#x27;s Q4_K_M from Hugging Face. On a 32 GB Mac, use orcarouter&#x27;s 4-bit MLX build."
+    },
+    {
+      "title": "junafinity/Qwen-3.8-27B-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "xixiameng/Qwen3.8-27B-Uncensored-FP8-bucket - Storage Bucket",
+      "url": "https://huggingface.co/buckets/xixiameng/Qwen3.8-27B-Uncensored-FP8-bucket",
+      "snippet": "An abliterated (refusal-removed) and offline block-FP8 quantized build of Qwen/Qwen3.8-27B — a 27B-parameter dense, hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with flexible thinking control, tool-calling, and an MTP speculative-decoding head."
+    },
+    {
+      "title": "JonathanColetti/Qwen3.8-27B-Uncensored - featherless.ai",
+      "url": "https://featherless.ai/models/JonathanColetti/Qwen3.8-27B-Uncensored",
+      "snippet": "Architecture: Retains the original Qwen3.8-27B architecture, including 64 layers, a 248320-token vocabulary, and vision capabilities. Context Length: Supports a large context of 262144 tokens. Precision: Provided in bf16 precision, requiring approximately 55 GB of VRAM for local inference."
+    }
+  ]
+}

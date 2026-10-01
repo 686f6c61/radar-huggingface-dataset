@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "bryl3guma1/sawyer-reward",
+  "slug": "bryl3guma1-sawyer-reward",
+  "author": "bryl3guma1",
+  "url": "https://huggingface.co/bryl3guma1/sawyer-reward",
+  "created_at": "2026-10-01T02:18:35.000Z",
+  "updated_at": "2026-10-01T02:23:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124646401,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498615013,
+  "storage_human": "499 MB",
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAWYER_Reward_Model.ipynb - GitHub",
+      "url": "https://github.com/sinanuozdemir/oreilly-optimizing-llms/blob/main/notebooks/SAWYER_Reward_Model.ipynb",
+      "snippet": "Optimizing LLMs with Fine-Tuning and Prompt Engineering - sinanuozdemir/oreilly-optimizing-llms"
+    },
+    {
+      "title": "transformer-architectures-genai/notebooks/SAWYER_Reward_Model ... - GitHub",
+      "url": "https://github.com/SabrinaLameiras/transformer-architectures-genai/blob/main/notebooks/SAWYER_Reward_Model.ipynb",
+      "snippet": "Transformer Architectures for Generative AI. Contribute to SabrinaLameiras/transformer-architectures-genai development by creating an account on GitHub."
+    },
+    {
+      "title": "profoz/sawyer-reward · Hugging Face",
+      "url": "https://huggingface.co/profoz/sawyer-reward",
+      "snippet": "New: Create and edit this model card directly on the website!"
+    },
+    {
+      "title": "profoz/sawyer-llama-reward · Hugging Face",
+      "url": "https://huggingface.co/profoz/sawyer-llama-reward",
+      "snippet": "profoz / sawyer-llama-reward like 0 Text ClassificationTransformersSafetensorsrobertaInference Endpoints Model card FilesFiles and versions Community Train Deploy Use in Transformers No model card"
+    },
+    {
+      "title": "Skywork-Reward: Bag of Tricks for Reward Modeling in LLMs",
+      "url": "https://arxiv.org/abs/2410.18451",
+      "snippet": "In this report, we introduce a collection of methods to enhance reward modeling for LLMs, focusing specifically on data-centric techniques. We propose effective data selection and filtering strategies for curating high-quality open-source preference datasets, culminating in the Skywork-Reward data collection, which contains only 80K preference pairs -- significantly smaller than existing ..."
+    }
+  ]
+}

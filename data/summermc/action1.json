@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "summerMC/action1",
+  "slug": "summermc-action1",
+  "author": "summerMC",
+  "url": "https://huggingface.co/summerMC/action1",
+  "created_at": "2026-10-01T10:13:18.000Z",
+  "updated_at": "2026-10-01T17:15:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "loop_gqa_action",
+    "computer-use",
+    "reinforcement-learning",
+    "ppo",
+    "sft",
+    "gui-agent",
+    "custom-code",
+    "text-generation",
+    "custom_code",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 212003033,
+  "storage_human": "212 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "summerMC (summer summer) - Hugging Face",
+      "url": "https://huggingface.co/summerMC/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 21 hours ago ... published a model about 21 hours ago"
+    },
+    {
+      "title": "summerMC (summer summer) - Hugging Face",
+      "url": "https://huggingface.co/summerMC/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 3 minutes ago ... published a model 9 minutes ago"
+    },
+    {
+      "title": "Summer Engine | The AI Game Engine",
+      "url": "https://www.summerengine.com/",
+      "snippet": "Create real 2D and 3D Summer games with AI assistance, GDScript, and the Summer SDK. Free desktop downloads for macOS and Windows."
+    },
+    {
+      "title": "Which AI models does Summer use? - Summer",
+      "url": "https://docs.summerengine.com/knowledge-base/ai-models",
+      "snippet": "You choose the chat model in the selector next to the composer. Asset backends are chosen per generation inside Summer Studio, where the model list and its prices are shown live. Summer does not accept your own provider API keys for hosted generation — hosted AI runs on your plan&#x27;s usage."
+    },
+    {
+      "title": "MCP Setup - Summer",
+      "url": "https://docs.summerengine.com/mcp/setup",
+      "snippet": "Summer Engine&#x27;s MCP (Model Context Protocol) integration lets you control the engine directly from Cursor, Claude Code, Devin Desktop, Antigravity, Codex, VS Code, Zed, or any MCP-compatible AI tool. Instead of switching between your IDE and the Summer Engine editor, you stay in one place: describe what you want, and the AI modifies your game scenes, adds nodes, sets up physics, and runs ..."
+    }
+  ]
+}

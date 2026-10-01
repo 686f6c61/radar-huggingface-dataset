@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "XINLI1997/DN-MOPD-Qwen3.5-2B-teacher-if",
+  "slug": "xinli1997-dn-mopd-qwen3-5-2b-teacher-if",
+  "author": "XINLI1997",
+  "url": "https://huggingface.co/XINLI1997/DN-MOPD-Qwen3.5-2B-teacher-if",
+  "created_at": "2026-10-01T02:29:05.000Z",
+  "updated_at": "2026-10-01T02:31:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "dn-mopd",
+    "on-policy-distillation",
+    "multi-teacher-distillation",
+    "qwen3.5",
+    "teacher",
+    "grpo",
+    "conversational",
+    "en",
+    "arxiv:2609.35347",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4439366846,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spotify – Web Player",
+      "url": "https://open.spotify.com/home",
+      "snippet": "Try reloading the page."
+    },
+    {
+      "title": "Welcome back - Spotify",
+      "url": "https://accounts.spotify.com/en/login?nosignup=true",
+      "snippet": "Log in to your Spotify account to access music, podcasts, and more."
+    },
+    {
+      "title": "Spotify",
+      "url": "https://accounts.spotify.com/en/login",
+      "snippet": "Don't have an account?"
+    },
+    {
+      "title": "Spotify – Download for Desktop",
+      "url": "https://open.spotify.com/download/",
+      "snippet": "Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed. Enjoy high-quality audio, offline playback, …"
+    },
+    {
+      "title": "Spotify – Web Player",
+      "url": "https://open.spotify.com/category/free",
+      "snippet": "Explore Spotify's free music and podcast streaming service with millions of songs and podcasts available for listening."
+    }
+  ]
+}

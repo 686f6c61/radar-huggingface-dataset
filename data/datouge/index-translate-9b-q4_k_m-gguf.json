@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "datouge/Index-Translate-9B-Q4_K_M-GGUF",
+  "slug": "datouge-index-translate-9b-q4_k_m-gguf",
+  "author": "datouge",
+  "url": "https://huggingface.co/datouge/Index-Translate-9B-Q4_K_M-GGUF",
+  "created_at": "2026-10-01T02:17:20.000Z",
+  "updated_at": "2026-10-01T02:17:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "translation",
+    "index",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:IndexTeam/Index-Translate-9B",
+    "base_model:quantized:IndexTeam/Index-Translate-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 5780090304,
+  "storage_human": "5.8 GB",
+  "base_model": "IndexTeam/Index-Translate-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IndexTeam/Index-Translate-9B · Hugging Face",
+      "url": "https://huggingface.co/IndexTeam/Index-Translate-9B",
+      "snippet": "Index-Translate-9B is the 9B-parameter multilingual text translation model of the Index-Translate family, built on the Qwen3.5 backbone. It supports 150 languages with multilingual instruction following — terminology, formatting, style, structure, and output-length constraints — and achieves translation quality comparable to 100B-scale ..."
+    },
+    {
+      "title": "GitHub - bilibili/Index-Translate",
+      "url": "https://github.com/bilibili/Index-Translate",
+      "snippet": "Index-Translate is a family of multilingual translation models built on Qwen3.5. The text models cover 150 languages, including Chinese and English, and follow translation instructions such as terminology, formatting, and content-preservation requirements. The family extends this foundation to ..."
+    },
+    {
+      "title": "Index-Translate: A Multilingual Translation Model Family -- Text ...",
+      "url": "https://arxiv.org/abs/2609.40181",
+      "snippet": "We introduce Index-Translate, a multilingual translation model family that combines a shared multilingual foundation with specialized training for general translation, instruction following, speech translation, controlled dubbing, and long-document translation. It includes three model sizes, 2B, 9B, and 35B-A3B, and supports translation in 150 languages, with multilingual instruction following ..."
+    },
+    {
+      "title": "datouge/phi-4-Q4_K_M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/datouge/phi-4-Q4_K_M-GGUF",
+      "snippet": "This model was converted to GGUF format from microsoft/phi-4 using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

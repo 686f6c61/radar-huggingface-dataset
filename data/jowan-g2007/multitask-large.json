@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jowan-g2007/multitask-large",
+  "slug": "jowan-g2007-multitask-large",
+  "author": "jowan-g2007",
+  "url": "https://huggingface.co/jowan-g2007/multitask-large",
+  "created_at": "2026-10-01T02:17:01.000Z",
+  "updated_at": "2026-10-01T02:17:06.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Data Analytics and AI | PDF | Machine Learning - Scribd",
+      "url": "https://www.scribd.com/document/654476318/Data-Analytics-and-AI",
+      "snippet": "... large and complex data that cannot be addressed with traditional ... AI model can ever be complete. The dynamic BSC review then represents the ..."
+    },
+    {
+      "title": "Theory, Practice and Techniques in Leadership Skills - dokumen.pub",
+      "url": "https://dokumen.pub/theory-practice-and-techniques-in-leadership-skills.html",
+      "snippet": "Jovan Pehcevski obtained his PhD in Computer Science from RMIT University in Melbourne, Australia in 2007. His research interests include big data, business ..."
+    },
+    {
+      "title": "(PDF) Theatre Pedagogy Approach in Primary School - Academia.edu",
+      "url": "https://www.academia.edu/36811466/Theatre_Pedagogy_Approach_in_Primary_School",
+      "snippet": "... large number of students are not famil with them( 14 % yes, 86 % no) ... Model\" to promote social equality in the broadest sense of the term and to ..."
+    },
+    {
+      "title": "Gary S. Becker - IDEAS/RePEc",
+      "url": "https://ideas.repec.org/e/c/pbe29.html",
+      "snippet": "Eunsik Chang & María Padilla-Romo, 2019. \"The Effects of Local Violent Crime on High-Stakes Tests,\" Working Papers 2019-03, University of Tennessee, Department ..."
+    },
+    {
+      "title": "univerzitet u sarajevu university of sarajevo - Hrana Ishrana Zdravlje",
+      "url": "https://hiz.unsa.ba/wp-content/uploads/2025/12/knjiga-sazetaka-X-HIZ-2025.pdf",
+      "snippet": "the large intestine, and plays a key role in maintaining the health of the ... a source of error, and that an AI model can't bear responsibility for its."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "HongbangYuan/Qwen3.5-4B-SciWorld-SFT-2ep",
+  "slug": "hongbangyuan-qwen3-5-4b-sciworld-sft-2ep",
+  "author": "HongbangYuan",
+  "url": "https://huggingface.co/HongbangYuan/Qwen3.5-4B-SciWorld-SFT-2ep",
+  "created_at": "2026-10-01T16:00:02.000Z",
+  "updated_at": "2026-10-01T16:06:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "sciworld",
+    "scienceworld",
+    "sft",
+    "agent",
+    "conversational",
+    "dataset:HongbangYuan/sciworld_sft_warmup",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609879,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen35",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FW-Qwen3.5-4B | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/FW-Qwen3.5-4B",
+      "snippet": "Qwen3.5-4B is a post-trained causal language model with a vision encoder from Alibaba&#x27;s Qwen3.5 family. Qwen3.5 integrates multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. It uses a 32-layer hybrid stack with Gated DeltaNet and Gated Attention blocks, supports text and image inputs in the official model card, and supports 201 languages and ..."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Alibaba Open-Sources Qwen3.5, A Natively Multimodal Model Built For ...",
+      "url": "https://www.alibabagroup.com/document-1960233590314762240",
+      "snippet": "Alibaba has released Qwen3.5, its latest model series, starting with opening sourcing Qwen3.5-397B-A17B (also named \"Qwen3.5-Plus\"), a natively multimodal foundation model that delivers strong performance in reasoning, coding, agent capabilities, and multimodal understanding, while lowering inference cost for real-world deployment. The launch advances Alibaba&#x27;s push into agentic AI ..."
+    }
+  ]
+}

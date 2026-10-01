@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Nezou-27B-CyberAbliterated-i1-GGUF",
+  "slug": "mradermacher-nezou-27b-cyberabliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Nezou-27B-CyberAbliterated-i1-GGUF",
+  "created_at": "2026-10-01T02:36:22.000Z",
+  "updated_at": "2026-10-01T12:23:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_5",
+    "abliteration",
+    "abliterated",
+    "cyber",
+    "multimodal",
+    "vision-language",
+    "conversational",
+    "reasoning",
+    "safetensors",
+    "en",
+    "base_model:dancingfrog/Nezou-27B-CyberAbliterated",
+    "base_model:quantized:dancingfrog/Nezou-27B-CyberAbliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 218553885632,
+  "storage_human": "218.6 GB",
+  "base_model": "dancingfrog/Nezou-27B-CyberAbliterated",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PapaDuStream — Nouvelle adresse du 30 septembre 2026",
+      "url": "https://www.cubuntu.fr/papadustream-nouvelle-adresse/",
+      "snippet": "Jul 7, 2026 · La nouvelle adresse de PapaDuStream change régulièrement en raison des blocages imposés en France. Le site …"
+    },
+    {
+      "title": "Papadustream - Film en Français Gratuit en Streaming VF, VOSTFR",
+      "url": "https://papadustream-v2.org/",
+      "snippet": "Regarder des Films en ligne Papadustream Voir Série en ligne Complète Films et séries Papadustream en haute qualité.qualité full HD"
+    },
+    {
+      "title": "Films et Séries en Streaming VF Gratuit - PapaduStream",
+      "url": "https://papadustreaming.club/accueil/",
+      "snippet": "PapaduStream est une plateforme de streaming gratuit qui propose des films et des séries en version française (VF) et en version …"
+    },
+    {
+      "title": "Papadustream - Streaming Français Films & Séries VF/VOSTFR",
+      "url": "https://papadustreams.site/",
+      "snippet": "Papadustream est une plateforme de streaming français dédiée aux films et séries en VF et VOSTFR. Les utilisateurs peuvent …"
+    },
+    {
+      "title": "papadustream nouvelle adresse en date du 30 septembre 2026",
+      "url": "https://www.funinformatique.com/blocage-papadustream/",
+      "snippet": "1 day ago · Papadustream, un site de streaming gratuit dans la lignée de Flemmix, FrenchStream ou encore des sites de …"
+    }
+  ]
+}

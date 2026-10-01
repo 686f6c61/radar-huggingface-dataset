@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-eval-e-p05h-224-h15b-2000-fullres-be2eba934359",
+  "slug": "davidwdw-fa-eval-e-p05h-224-h15b-2000-fullres-be2eba934359",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-eval-e-p05h-224-h15b-2000-fullres-be2eba934359",
+  "created_at": "2026-10-01T13:34:47.000Z",
+  "updated_at": "2026-10-01T13:35:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 229848700,
+  "storage_human": "230 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fortnite - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/jeux/jeu-77986/",
+      "snippet": "Fortnite : retrouvez toutes les informations et actualités du jeu sur tous ses supports. Fortnite est un Tower-Defense orienté sandbox. …"
+    },
+    {
+      "title": "Forum PlayStation 5 - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-3017788-0-1-0-1-0-playstation-5.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum PlayStation 5 de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre notre …"
+    },
+    {
+      "title": "Comment supprimer fortnite tracker ( tracker network) sur le forum ...",
+      "url": "https://www.jeuxvideo.com/forums/42-27759-59873790-1-0-1-0-0.htm",
+      "snippet": "Jun 7, 2019 · Accueil Fortnite Tous les forums Forum Fortnite Topic Comment supprimer fortnite tracker ( tracker network) Fortnite …"
+    },
+    {
+      "title": "Forums JV: participez aux forums de vos jeux préférés avec …",
+      "url": "https://www.jeuxvideo.com/forums.htm",
+      "snippet": "Bienvenue sur les forums de jeuxvideo.com. Venez retrouver, discuter, partager avec notre communauté sur un large éventail de …"
+    },
+    {
+      "title": "Pikachu a donc passé 67 jours dans l'Espace… - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/news/2105629/pikachu-a-donc-passe-67-jours-dans-l-espace.htm",
+      "snippet": "Sep 23, 2026 · Envoyé à bord de la Station spatiale internationale pendant plus de deux mois, Pikachu vient de boucler un séjour …"
+    }
+  ]
+}

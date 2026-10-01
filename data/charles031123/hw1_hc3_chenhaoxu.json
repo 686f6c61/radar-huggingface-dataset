@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Charles031123/HW1_HC3_ChenhaoXu",
+  "slug": "charles031123-hw1_hc3_chenhaoxu",
+  "author": "Charles031123",
+  "url": "https://huggingface.co/Charles031123/HW1_HC3_ChenhaoXu",
+  "created_at": "2026-10-01T18:23:07.000Z",
+  "updated_at": "2026-10-01T18:37:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "en",
+    "dataset:Hello-SimpleAI/HC3",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713986,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90867952,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AustinFu/hw1-hc3-detector · Hugging Face",
+      "url": "https://huggingface.co/AustinFu/hw1-hc3-detector",
+      "snippet": "AustinFu / hw1-hc3-detector Like 0 Text Classification Safetensors Hello-SimpleAI/HC3 English bert educational arxiv:2301.07597 Model card FilesFiles and versions xet Community Copy to bucket new HC3 human / ChatGPT answer classifier Training and evaluation Limitations Source"
+    },
+    {
+      "title": "TianhangCheng7/hw1-hc3-detector · Hugging Face",
+      "url": "https://huggingface.co/TianhangCheng7/hw1-hc3-detector",
+      "snippet": "TianhangCheng7 / hw1-hc3-detector Like 0 Text Classification sentence-transformers Safetensors English bert ai-generated-text-detection hc3 text-embeddings-inference arxiv:2301.07597 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "xuchenhao001 (Chenhao Xu) · GitHub",
+      "url": "https://github.com/xuchenhao001",
+      "snippet": "A graph representing xuchenhao001&#x27;s contributions from September 28, 2025 to September 30, 2026. The contributions are 100% commits, 0% pull requests, 0% issues, 0% code review."
+    },
+    {
+      "title": "Haoxuan Che, Ph.D.",
+      "url": "https://chehx.github.io/",
+      "snippet": "Haoxuan Che (车昊轩), Principal Researcher at AI Lab, Huawei Hong Kong. Research: world model, multimodal generative models, AI agents. HKUST PhD."
+    },
+    {
+      "title": "hw1-hc3-detector by Yihangsun: Open-Weight Model",
+      "url": "https://savrn.com/models/hw1-hc3-detector",
+      "snippet": "hw1-hc3-detector from Yihangsun: license, access terms, disclosed training data, reported evaluations and the publisher&#x27;s download."
+    }
+  ]
+}

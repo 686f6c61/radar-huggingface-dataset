@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "michellehmh/neural-architecture-search-tryout",
+  "slug": "michellehmh-neural-architecture-search-tryout",
+  "author": "michellehmh",
+  "url": "https://huggingface.co/michellehmh/neural-architecture-search-tryout",
+  "created_at": "2026-10-01T02:31:04.000Z",
+  "updated_at": "2026-10-01T02:31:09.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "neural-architecture-search",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "michellehmh/neural-architecture-search-tryout · Discussions",
+      "url": "https://huggingface.co/michellehmh/neural-architecture-search-tryout/discussions",
+      "snippet": "michellehmh / neural-architecture-search-tryout Like 0 Safetensors transformer research-notes neural-architecture-search License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new Sort: Recently created"
+    },
+    {
+      "title": "GitHub - microsoft/archai: Accelerate your Neural Architecture Search ...",
+      "url": "https://github.com/microsoft/archai",
+      "snippet": "Archai accelerates your Neural Architecture Search (NAS) through fast, reproducible and modular research, enabling the generation of efficient deep networks for various applications."
+    },
+    {
+      "title": "Archai: Platform for Neural Architecture Search - microsoft.com",
+      "url": "https://www.microsoft.com/en-us/research/project/archai-platform-for-neural-architecture-search/",
+      "snippet": "Archai is a platform for Neural Network Search (NAS) with a goal to unify several recent advancements in research and making them accessible to non-experts so that anyone can leverage this research to generate efficient deep networks for their own applications. Archai hopes to accelerate NAS research by easily allowing to mix and match different techniques rapidly while still ensuring ..."
+    },
+    {
+      "title": "Archai Documentation - GitHub Pages",
+      "url": "https://microsoft.github.io/archai/index.html",
+      "snippet": "Archai Documentation # Archai is a Neural Architecture Search (NAS) framework built upon PyTorch. It provides a comprehensive solution for automating the process of finding the optimal architecture for deep learning models, making it easier for researchers and practitioners to achieve state-of-the-art results."
+    },
+    {
+      "title": "neural-architecture-search · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/neural-architecture-search",
+      "snippet": "An open source AutoML toolkit for automate machine learning lifecycle, including feature engineering, neural architecture search, model compression and hyper-parameter tuning."
+    }
+  ]
+}

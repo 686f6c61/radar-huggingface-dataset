@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Rajeshgrgvad/tiny-transformer-baseline",
+  "slug": "rajeshgrgvad-tiny-transformer-baseline",
+  "author": "Rajeshgrgvad",
+  "url": "https://huggingface.co/Rajeshgrgvad/tiny-transformer-baseline",
+  "created_at": "2026-10-01T02:15:43.000Z",
+  "updated_at": "2026-10-01T02:15:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tiny Transformer",
+      "url": "https://github.com/avvorstenbosch/tinyTransformer",
+      "snippet": "Tiny Transformer This repository contains an implementation of a simple GPT-like transformer model that can be trained on a single consumer-grade GPU. The code mostly follows along with the videos Let&#x27;s build GPT: from scratch, in code, spelled out. and Building Makemore by Andrej Karpathy."
+    },
+    {
+      "title": "tiny-transformer-lab/experiments/baseline_v1/README.md at main ... - GitHub",
+      "url": "https://github.com/atharvanaik06/tiny-transformer-lab/blob/main/experiments/baseline_v1/README.md",
+      "snippet": "Edit and raw actions Baseline v1 reproduction guide This guide rebuilds the complete byte-tokenizer baseline from a fresh clone. from Git, so each user generates them locally. Run commands from the repository Device selection defaults to CUDA, then Apple MPS, then CPU. Exact checkpoint values can vary slightly across PyTorch versions and hardware."
+    },
+    {
+      "title": "abhishekiai/tiny-transformer-retrieval · Hugging Face",
+      "url": "https://huggingface.co/abhishekiai/tiny-transformer-retrieval",
+      "snippet": "Overview A small Tiny Transformer implementation for Retrieval, packaged with an explicit configuration and an initialization checkpoint. The giant variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "TinyFormer: Efficient Transformer Design and Deployment on Tiny Devices",
+      "url": "https://arxiv.org/abs/2311.01759",
+      "snippet": "Developing deep learning models on tiny devices (e.g. Microcontroller units, MCUs) has attracted much attention in various embedded IoT applications. However, it is challenging to efficiently design and deploy recent advanced models (e.g. transformers) on tiny devices due to their severe hardware resource constraints. In this work, we propose TinyFormer, a framework specifically designed to ..."
+    },
+    {
+      "title": "Building a Tiny Transformer From Scratch in PyTorch",
+      "url": "https://buildml.substack.com/p/building-a-tiny-transformer-from",
+      "snippet": "If you&#x27;ve ever felt that Transformers are a \"black box,\" today&#x27;s post is for you. Instead of just downloading a pretrained model, we&#x27;re going to build a tiny GPT-style transformer from scratch — small enough to run on your laptop, but powerful enough to generate Shakespeare-like text. By the end, you&#x27;ll not only have a working model, but also a clear understanding of how the ..."
+    }
+  ]
+}

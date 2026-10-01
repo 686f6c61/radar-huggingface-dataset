@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "apuebla/DeepSeek-Sharp-Chat-Templates",
+  "slug": "apuebla-deepseek-sharp-chat-templates",
+  "author": "apuebla",
+  "url": "https://huggingface.co/apuebla/DeepSeek-Sharp-Chat-Templates",
+  "created_at": "2026-10-01T17:48:13.000Z",
+  "updated_at": "2026-10-01T17:59:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "huggingface_hub",
+  "languages": [],
+  "tags": [
+    "huggingface_hub",
+    "deepseek",
+    "chat-template",
+    "jinja",
+    "text-generation",
+    "template:deepseek",
+    "conversational",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "assets/chat_template.jinja · deepseek-ai/DeepSeek-V3.2-Exp at main",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp/blob/main/assets/chat_template.jinja",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://www.deepseek.com/",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API."
+    },
+    {
+      "title": "AI App Templates | Build React Apps with AI | DeepSeek Artifacts",
+      "url": "https://deepseekartifacts.com/templates",
+      "snippet": "Browse AI app templates, React AI templates, and AI dashboard templates. Customize any template with DeepSeek Artifacts Chat Builder — the AI app builder for React SaaS, landing pages, and admin panels."
+    },
+    {
+      "title": "DeepSeek Prompt Guide: 42 Copy-Paste Templates (2026)",
+      "url": "https://chat-deep.ai/guide/deepseek-prompt/",
+      "snippet": "Use 42 DeepSeek prompt templates for writing, coding, research, SEO, JSON, and more, plus a tested formula, examples, and common mistakes."
+    },
+    {
+      "title": "Chat, create, and search across every AI model in one place.",
+      "url": "https://www.chatday.ai/",
+      "snippet": "Chat, create, and search with AI."
+    }
+  ]
+}

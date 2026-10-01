@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "XINLI1997/DN-MOPD-Qwen3.5-9B-160updates",
+  "slug": "xinli1997-dn-mopd-qwen3-5-9b-160updates",
+  "author": "XINLI1997",
+  "url": "https://huggingface.co/XINLI1997/DN-MOPD-Qwen3.5-9B-160updates",
+  "created_at": "2026-10-01T02:42:05.000Z",
+  "updated_at": "2026-10-01T02:45:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "dn-mopd",
+    "on-policy-distillation",
+    "multi-teacher-distillation",
+    "qwen3.5",
+    "student",
+    "dn-mopd-student",
+    "conversational",
+    "en",
+    "arxiv:2609.35347",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18832529118,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DN-MOPD-Qwen3.5-9B API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/XINLI1997/DN-MOPD-Qwen3.5-9B",
+      "snippet": "Run DN-MOPD-Qwen3.5-9B with FriendliAI inference. A Qwen3.5-9B student trained with DN-MOPD (Domain-Normalized Multi-Teacher On-Policy Distillation)."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency. Highlights Qwen3.5 features the following enhancement:"
+    },
+    {
+      "title": "GitHub - LiXin97/DN-MOPD: Beyond Teacher Assignment: Domain-Normalized ...",
+      "url": "https://github.com/LiXin97/DN-MOPD/tree/main",
+      "snippet": "With label routing, MOPD does not beat the strongest single-teacher student at any of three Qwen3.5 sizes (9B, 4B, 2B). In the first training batch, instruction-following (IF) log-ratios are 2.3-4.4 times as dispersed as the pooled signal, and math log-ratios are about half as dispersed."
+    },
+    {
+      "title": "qwen-qwen3.5-9b | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/qwen-qwen3.5-9b",
+      "snippet": "The following are the only mandatory parameters to send in the HTTP POST request to v1/chat/completions. model (string): Model ID used to generate the response, in this case since only a single model is deployed within the same endpoint you can either set it to Qwen/Qwen3.5-9B or leave it blank instead. messages (array): A list of messages comprising the conversation so far. Depending on the ..."
+    },
+    {
+      "title": "Qwen3.5: Towards Native Multimodal Agents",
+      "url": "https://qwen.ai/blog?id=qwen3.5",
+      "snippet": "As a native vision-language model, Qwen3.5-397B-A17B demonstrates outstanding results across a full range of benchmark evaluations, including reasoning, coding, agent capabilities, and multimodal understanding, empowering developers and enterprises to achieve significantly greater productivity."
+    }
+  ]
+}

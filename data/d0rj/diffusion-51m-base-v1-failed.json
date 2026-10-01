@@ -1,0 +1,173 @@
+{
+  "schema": 1,
+  "id": "d0rj/diffusion-51M-base-v1-failed",
+  "slug": "d0rj-diffusion-51m-base-v1-failed",
+  "author": "d0rj",
+  "url": "https://huggingface.co/d0rj/diffusion-51M-base-v1-failed",
+  "created_at": "2026-10-01T17:48:42.000Z",
+  "updated_at": "2026-10-01T17:50:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "diffusion_lm",
+    "fill-mask",
+    "pretrained",
+    "from-scratch",
+    "tiny-llm-ablation",
+    "custom_code",
+    "failed-ablation",
+    "experimental-pll",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51392544,
+  "parameters_human": "51.4M",
+  "storage_bytes": 206847614,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Experimental continuation PLL",
+      "dataset": "HellaSwag",
+      "metric": "pll_acc_norm (fraction; full comparison protocol)",
+      "value": 0.2597092212706632
+    },
+    {
+      "task": "Experimental continuation PLL",
+      "dataset": "ARC-Easy",
+      "metric": "pll_acc_norm (fraction; full comparison protocol)",
+      "value": 0.2668350168350168
+    },
+    {
+      "task": "Experimental continuation PLL",
+      "dataset": "ARC-Challenge",
+      "metric": "pll_acc_norm (fraction; full comparison protocol)",
+      "value": 0.24061433447098976
+    },
+    {
+      "task": "Experimental continuation PLL",
+      "dataset": "PIQA",
+      "metric": "pll_acc_norm (fraction; full comparison protocol)",
+      "value": 0.500544069640914
+    },
+    {
+      "task": "Experimental continuation PLL",
+      "dataset": "WinoGrande",
+      "metric": "pll_acc (fraction; full comparison protocol)",
+      "value": 0.5098658247829518
+    },
+    {
+      "task": "Experimental continuation PLL",
+      "dataset": "OpenBookQA",
+      "metric": "pll_acc_norm (fraction; full comparison protocol)",
+      "value": 0.258
+    },
+    {
+      "task": "Experimental continuation PLL",
+      "dataset": "BoolQ",
+      "metric": "pll_acc (fraction; full comparison protocol)",
+      "value": 0.3782874617737003
+    },
+    {
+      "task": "Experimental continuation PLL",
+      "dataset": "LAMBADA OpenAI",
+      "metric": "pll_acc (fraction; full comparison protocol)",
+      "value": 0
+    },
+    {
+      "task": "Experimental continuation PLL",
+      "dataset": "ArithMark-3",
+      "metric": "pll_acc_norm (fraction; full comparison protocol)",
+      "value": 0.299
+    },
+    {
+      "task": "Experimental continuation PLL",
+      "dataset": "Balanced COPA",
+      "metric": "pll_acc (fraction; full comparison protocol)",
+      "value": 0.5
+    },
+    {
+      "task": "Experimental continuation PLL",
+      "dataset": "BLiMP",
+      "metric": "pll_acc (fraction; full comparison protocol)",
+      "value": 0.573865671641791
+    },
+    {
+      "task": "Experimental continuation PLL",
+      "dataset": "CommonsenseQA",
+      "metric": "pll_acc (fraction; full comparison protocol)",
+      "value": 0.19574119574119575
+    },
+    {
+      "task": "Experimental continuation PLL",
+      "dataset": "MMLU continuation",
+      "metric": "pll_acc (fraction; full comparison protocol)",
+      "value": 0.2337986041874377
+    },
+    {
+      "task": "Experimental continuation PLL",
+      "dataset": "SciQ (with support)",
+      "metric": "pll_acc_norm (fraction; full comparison protocol)",
+      "value": 0.237
+    },
+    {
+      "task": "Experimental continuation PLL",
+      "dataset": "TruthfulQA MC2",
+      "metric": "pll_acc (fraction; full comparison protocol)",
+      "value": 0.48992550756256453
+    },
+    {
+      "task": "Experimental continuation PLL",
+      "dataset": "BananaMind Base 1.1",
+      "metric": "pll_raw_accuracy (fraction; full comparison protocol)",
+      "value": 0.26285714285714284
+    }
+  ],
+  "sources": [
+    {
+      "title": "d0rj/diffusion-51M-base · Hugging Face",
+      "url": "https://huggingface.co/d0rj/diffusion-51M-base",
+      "snippet": "diffusion-51M-base A small English masked diffusion base model, trained from random initialization as part of Tiny llm ablation. This is the successfully trained v2 checkpoint: 51,392,512 stored parameters, 50,867,200 optimized parameters, exactly 3,932,160,000 processed source tokens."
+    },
+    {
+      "title": "d0rj/q-51M-base · Hugging Face",
+      "url": "https://huggingface.co/d0rj/q-51M-base",
+      "snippet": "A 50,878,208-parameter English base model in the Tiny llm ablation experiment. Trained from scratch on exactly 3,932,160,000 source tokens over 15,000 optimizer steps."
+    },
+    {
+      "title": "Core Models - Stability AI",
+      "url": "https://stability.ai/core-models",
+      "snippet": "Stability AI has other models not included in the Core Models above, for which your usage is subject to the terms of each individual model&#x27;s applicable license. For more information, please see Stability AI on Hugging Face or Stability AI on GitHub Gain commercial use rights to our Core Models with a Community or Enterprise agreement."
+    },
+    {
+      "title": "Troubleshooting - LocalAI",
+      "url": "https://localai.io/docs/basics/troubleshooting/",
+      "snippet": "Model Fails to Load (Backend Error) Symptoms: Model is found but fails to load, with backend errors in the logs. Common causes and fixes: Wrong backend: Ensure the backend in your model YAML matches the model format. GGUF models use llama-cpp, diffusion models use diffusers, etc. See the compatibility table for details."
+    },
+    {
+      "title": "Generative Models by Stability AI - GitHub",
+      "url": "https://github.com/Stability-AI/generative-models",
+      "snippet": "Generative Models by Stability AI News May 20, 2025 We are releasing Stable Video 4D 2.0 (SV4D 2.0), an enhanced video-to-4D diffusion model for high-fidelity novel-view video synthesis and 4D asset generation. For research purposes:"
+    }
+  ]
+}

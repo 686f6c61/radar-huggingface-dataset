@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Rev3auth/iris_1.3cs-lite_lora",
+  "slug": "rev3auth-iris_1-3cs-lite_lora",
+  "author": "Rev3auth",
+  "url": "https://huggingface.co/Rev3auth/iris_1.3cs-lite_lora",
+  "created_at": "2026-10-01T13:29:54.000Z",
+  "updated_at": "2026-10-01T13:30:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma3_text",
+    "trl",
+    "en",
+    "base_model:unsloth/gemma-3-270m-it-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-3-270m-it-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53294609,
+  "storage_human": "53 MB",
+  "base_model": "unsloth/gemma-3-270m-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rev3auth/iris-1.3-lite-lora · Hugging Face",
+      "url": "https://huggingface.co/Rev3auth/iris-1.3-lite-lora",
+      "snippet": "Instructions to use Rev3auth/iris-1.3-lite-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Rev3auth/iris-1.3-lite-lora with Transformers:"
+    },
+    {
+      "title": "Rev3auth/iris-1.3-lite · Hugging Face",
+      "url": "https://huggingface.co/Rev3auth/iris-1.3-lite",
+      "snippet": "Rev3auth / iris-1.3-lite Like 1 GGUF qwen2 llama.cpp unsloth conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Run Iris-1.3-lite-lora API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/Rev3auth/iris-1.3-lite-lora",
+      "snippet": "The Rev3auth/iris-1.3-lite-lora is a 1 billion parameter instruction-tuned causal language model, finetuned by Rev3auth from unsloth/gemma-3-1b-it-unsloth-bnb-4bit. This model was trained using Unsloth, enabling 2x faster finetuning. With a context length of 32768 tokens, it is optimized for efficient performance in various language generation tasks."
+    },
+    {
+      "title": "iris-1.3-lite-lora API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Rev3auth/iris-1.3-lite-lora",
+      "snippet": "Run iris-1.3-lite-lora with FriendliAI inference. This gemma3text model was trained 2x faster with Unsloth."
+    },
+    {
+      "title": "Iris 1.3 Lite - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/rev3auth/iris-1.3-lite",
+      "snippet": "by Rev3auth rev3auth/iris-1.3-lite Free2AITools Nexus Index 44.8 S: Semantic50 Query-time baseline · scored live at search A: Authority29 P: Popularity0 R: Recency100 Q: Quality50 Tech Context 8.192KCtx Vital Performance— Source → Share: 📤 𝕏 in 📣 🔗"
+    }
+  ]
+}

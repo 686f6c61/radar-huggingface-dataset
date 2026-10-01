@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "izzanfr/telaah-indonesian-sentiment-onnx",
+  "slug": "izzanfr-telaah-indonesian-sentiment-onnx",
+  "author": "izzanfr",
+  "url": "https://huggingface.co/izzanfr/telaah-indonesian-sentiment-onnx",
+  "created_at": "2026-10-01T02:12:29.000Z",
+  "updated_at": "2026-10-01T02:17:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "roberta",
+    "text-classification",
+    "sentiment-analysis",
+    "indonesian",
+    "id",
+    "dataset:indonlp/indonlu",
+    "base_model:w11wo/indonesian-roberta-base-sentiment-classifier",
+    "base_model:quantized:w11wo/indonesian-roberta-base-sentiment-classifier",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125969176,
+  "storage_human": "126 MB",
+  "base_model": "w11wo/indonesian-roberta-base-sentiment-classifier",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izzanfr/Telaah-AI",
+      "url": "https://github.com/izzanfr/Telaah-AI",
+      "snippet": "Sentiment and feedback analysis for training class reports. Everything runs in the browser, and no data is sent to a server. izzanfr/telaah-indonesian-sentiment-onnx is an int8 ONNX version of w11wo/indonesian-roberta-base-sentiment-classifier (MIT). The browser loads it with Transformers.js ..."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX is an open format built to represent machine learning models. ONNX defines a common set of operators - the building blocks of machine learning and deep learning models - and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers."
+    },
+    {
+      "title": "taufiqdp/indonesian-sentiment · Hugging Face",
+      "url": "https://huggingface.co/taufiqdp/indonesian-sentiment",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

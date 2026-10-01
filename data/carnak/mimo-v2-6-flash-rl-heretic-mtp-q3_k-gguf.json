@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "CarnaK/MiMo-V2.6-Flash-RL-Heretic-MTP-Q3_K-GGUF",
+  "slug": "carnak-mimo-v2-6-flash-rl-heretic-mtp-q3_k-gguf",
+  "author": "CarnaK",
+  "url": "https://huggingface.co/CarnaK/MiMo-V2.6-Flash-RL-Heretic-MTP-Q3_K-GGUF",
+  "created_at": "2026-10-01T17:38:58.000Z",
+  "updated_at": "2026-10-01T18:02:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "mimo",
+    "mimo_v2",
+    "mtp",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "multimodal",
+    "en",
+    "zh",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "base_model:finetune:XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiMo-V2.6-Flash",
+      "url": "https://mimo.mi.com/models/en-US/mimo-v2.6-flash",
+      "snippet": "MiMo-V2.6-Flash Full-modality, high-intelligence, low-cost reasoning model — the best balance for high-frequency calls and large-scale tasks in professional workflows."
+    },
+    {
+      "title": "ggml-org/MiMo-V2.6-Flash-RL-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ggml-org/MiMo-V2.6-Flash-RL-GGUF",
+      "snippet": "The Q2_K output keeps the expert down projections at MXFP4, and quantizes the gate/up projections to Q2_K. Includes MTP sidecars (MXFP4 and Q8_0) for speculative decoding (--mtp)."
+    },
+    {
+      "title": "TrevorJS/MiMo-V2.6-Flash-RL-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TrevorJS/MiMo-V2.6-Flash-RL-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiMo-V2.6-Flash-RL-GGUF Multimodal MoE Model: ~141GB Memory",
+      "url": "https://localmodelwatch.tsuchitsuchi.com/en/2026/09/22/mimo-v2-6-flash-rl-gguf-released/",
+      "snippet": "The original model, \" XiaomiMiMo/MiMo-V2.6-Flash-RL \", was built to scale reinforcement learning (RL) for self-improvement. It adopts a native omni-modal configuration that handles text, images, video, and audio within a single model, complexly enhancing coding, general agents, visual tasks, and cybersecurity through a single RL run."
+    },
+    {
+      "title": "MiMo-V2.6 | Xiaomi",
+      "url": "https://mimo.xiaomi.com/mimo-v2-6",
+      "snippet": "Today, we are releasing and open-sourcing the MiMo-V2.6 series. This marks a key step in our exploration of the RSI path: scaling RL compute on verifiable, complex tasks, so the model can continuously expand its capability frontier through exploration and feedback. The MiMo-V2.6 series includes two natively omnimodal models: MiMo-V2.6-Pro is our most capable model to date, while MiMo-V2.6 ..."
+    }
+  ]
+}

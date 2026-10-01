@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Padakovec/futolm-cs-base-gguf",
+  "slug": "padakovec-futolm-cs-base-gguf",
+  "author": "Padakovec",
+  "url": "https://huggingface.co/Padakovec/futolm-cs-base-gguf",
+  "created_at": "2026-10-01T17:52:21.000Z",
+  "updated_at": "2026-10-01T17:52:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "cs"
+  ],
+  "tags": [
+    "gguf",
+    "futo",
+    "keyboard",
+    "llama",
+    "next-word-prediction",
+    "text-generation",
+    "cs",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29368832,
+  "parameters_human": "29.4M",
+  "storage_bytes": 59313504,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "Models compatible with the GGUF library - Hugging Face",
+      "url": "https://huggingface.co/models?library=gguf",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GGUF & Modelfile: The Power User&#x27;s Guide to Local LLMs",
+      "url": "https://dev.to/lingdas1/gguf-modelfile-the-power-users-guide-to-local-llms-1fbi",
+      "snippet": "GGUF & Modelfile: The Power User&#x27;s Guide to Local LLMs Beyond ollama pull — download any model from Hugging Face, quantize it, customize it, and import it into Ollama. What&#x27;s GGUF? GGUF (GPT-Generated Unified Format) is the standard file format for running LLMs locally. Think of it as the .mp3 of AI models: Compressed — 70-85% smaller than the original float16 weights Fast — optimized ..."
+    },
+    {
+      "title": "GitHub - GGUFloader/gguf-loader: GGUF Loader with its Agentic Mode, and ...",
+      "url": "https://github.com/GGUFloader/gguf-loader",
+      "snippet": "GGUF Loader with its Agentic Mode, and floating button, ai Models | Open Source & Offline. Mistral, Deepseek, llama, gemma, qwen - GGUFloader/gguf-loader"
+    }
+  ]
+}

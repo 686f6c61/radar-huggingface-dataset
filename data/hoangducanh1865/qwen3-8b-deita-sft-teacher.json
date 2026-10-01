@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "hoangducanh1865/qwen3-8b-deita-sft-teacher",
+  "slug": "hoangducanh1865-qwen3-8b-deita-sft-teacher",
+  "author": "hoangducanh1865",
+  "url": "https://huggingface.co/hoangducanh1865/qwen3-8b-deita-sft-teacher",
+  "created_at": "2026-10-01T13:31:41.000Z",
+  "updated_at": "2026-10-01T13:34:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "alignment-handbook",
+    "generated_from_trainer",
+    "conversational",
+    "dataset:HuggingFaceH4/deita-10k-v0-sft",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939478,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hoangducanh1865 (Hoàng Đức Anh) - Hugging Face",
+      "url": "https://huggingface.co/hoangducanh1865/models",
+      "snippet": "0 followers 5 following hoangducanh1865 hoangducanh1865 AI & ML interests NLP, Topic Modeling, AI-Generated Text Detection Recent Activity"
+    },
+    {
+      "title": "Qwen/Qwen3-8B-Base · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-8B — Alibaba Model with Hybrid Thinking/Non-Thinking Reasoning ...",
+      "url": "https://robotsatlas.com/ai-models/qwen3-8b",
+      "snippet": "The model supports 119 languages and dialects (vs. 29 in Qwen2.5), covering Indo-European, Sino-Tibetan, Afro-Asiatic, Austronesian and other language families. In terms of agent capabilities, Qwen3-8B integrates well with external tools via MCP (Model Context Protocol), supporting function calls in both thinking and non-thinking modes."
+    },
+    {
+      "title": "Qwen3 8B API: Pricing, Benchmarks & Docs | Together AI",
+      "url": "https://www.together.ai/models/qwen3-8b",
+      "snippet": "Qwen3-8B is a large language model offering advanced reasoning, instruction-following, and multilingual support, with seamless switching between thinking and non-thinking modes for optimal performance. It excels in creative writing, role-playing, and complex tasks, making it suitable for developers and users seeking a versatile conversational AI model. To run this model you first need to ..."
+    },
+    {
+      "title": "GitHub - Qwen-Applications/STAR: STAR: Similarity-guided Teacher ...",
+      "url": "https://github.com/Qwen-Applications/STAR",
+      "snippet": "Algorithm Platform Team, AI Hardware Division, Alibaba This repository contains the code and instructions necessary to reproduce the experiments presented in the paper: \"STAR: Similarity-guided Teacher-Assisted Refinement for Super-Tiny Function Calling Models\", accepted to ICLR 2026. STAR (Similarity-guided Teacher-Assisted Refinement) is a novel holistic framework designed to effectively ..."
+    }
+  ]
+}

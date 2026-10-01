@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "themohal/saraiki-libero-smolvla",
+  "slug": "themohal-saraiki-libero-smolvla",
+  "author": "themohal",
+  "url": "https://huggingface.co/themohal/saraiki-libero-smolvla",
+  "created_at": "2026-10-01T14:54:21.000Z",
+  "updated_at": "2026-10-01T16:56:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:themohal/saraiki-libero",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 604934176,
+  "parameters_human": "604.9M",
+  "storage_bytes": 9239356892,
+  "storage_human": "9.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Soeur Outlet : prêt-à-porter femme | The Village près de Lyon",
+      "url": "https://thevillageoutlet.com/taxons/marchand/soeur",
+      "snippet": "Robes et prêt-à-porter femme Soeur à prix outlet, jusqu'à -70 %. Soeur déstocké toute l'année à The Village Outlet près de Lyon."
+    },
+    {
+      "title": "The Village Outlet | +100 marques jusqu’à -70 %",
+      "url": "https://thevillageoutlet.com/?_locale=fr_FR",
+      "snippet": "Découvrez plus de 100 grandes marques à prix outlet jusqu’à -70 %. Mode, luxe, sport et maison près de Lyon. Découvrez les offres …"
+    },
+    {
+      "title": "Boutique Vêtement Femme Paris 7ème Arrondissement Outlet - Soeur",
+      "url": "https://www.soeur.fr/pages/boutique-soeur-archives-outlet-paris",
+      "snippet": "Découvrez la boutique Soeur - Archives Outlet Paris, marque parisienne de vêtements et accessoires pour femmes."
+    },
+    {
+      "title": "Women's Clothing Boutique Paris 7th Arrondissement Outlet - Soeur",
+      "url": "https://www.soeur.fr/en/pages/boutique-soeur-archives-outlet-paris",
+      "snippet": "Discover the Soeur - Archives Outlet Paris boutique, a Parisian brand of women's clothing and accessories."
+    },
+    {
+      "title": "Our addresses - Soeur UK",
+      "url": "https://www.soeur.uk/pages/nos-adresses",
+      "snippet": "Boutique Soeur - Archives - Outlet The Village Outlet - Parc du Couvent Villefontaine, 38090 France"
+    }
+  ]
+}

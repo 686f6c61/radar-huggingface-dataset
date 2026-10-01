@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "pollen-robotics/microduck-got-a-talent-reference",
+  "slug": "pollen-robotics-microduck-got-a-talent-reference",
+  "author": "pollen-robotics",
+  "url": "https://huggingface.co/pollen-robotics/microduck-got-a-talent-reference",
+  "created_at": "2026-10-01T18:28:52.000Z",
+  "updated_at": "2026-10-01T18:29:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "microduck-slot:sitstand",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5625051,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pollen — Commande en ligne de repas",
+      "url": "https://www.pollen.delivery/",
+      "snippet": "Pollen utilise des cookies indispensables au bon fonctionnement du site. Avec ton accord, on utilise aussi des cookies pour Google …"
+    },
+    {
+      "title": "METEO POLLEN ET ALLERGIE AUJOURD'HUI - La Chaîne Météo",
+      "url": "https://www.lachainemeteo.com/allergie-pollen",
+      "snippet": "Carte pollen France en temps réel : suivez les 19 pollens, niveaux de risque allergique et prévisions détaillées pour vos allergies : …"
+    },
+    {
+      "title": "CartePollen | Carte interactive des pollens en France",
+      "url": "https://cartepollen.fr/",
+      "snippet": "CartePollen affiche les indices polliniques par commune en France, avec suivi quotidien, recherche par adresse et visualisation …"
+    },
+    {
+      "title": "Allergie pollen Lyon aujourd'hui | AirPollens",
+      "url": "https://airpollens.com/villes/lyon",
+      "snippet": "Pollen à Lyon aujourd'hui. Indice allergie, qualité air, prévisions J+5 et alertes personnalisées."
+    },
+    {
+      "title": "Cartographie - pollen.atmo-auvergnerhonealpes.fr",
+      "url": "https://pollen.atmo-auvergnerhonealpes.fr/pollen",
+      "snippet": "Leaflet | Powered by Esri | FOEN / Swiss Parks Network, swisstopo, Esri, TomTom, Garmin, FAO, METI/NASA, USGS"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mertkayacs/Tholos-2B-GGUF",
+  "slug": "mertkayacs-tholos-2b-gguf",
+  "author": "mertkayacs",
+  "url": "https://huggingface.co/mertkayacs/Tholos-2B-GGUF",
+  "created_at": "2026-10-01T14:56:25.000Z",
+  "updated_at": "2026-10-01T14:57:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "agents",
+    "tool-use",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 4241021312,
+  "storage_human": "4.2 GB",
+  "base_model": "mertkayacs/Tholos-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

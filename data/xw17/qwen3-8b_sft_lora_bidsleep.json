@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen3-8B_SFT_lora_bidsleep",
+  "slug": "xw17-qwen3-8b_sft_lora_bidsleep",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen3-8B_SFT_lora_bidsleep",
+  "created_at": "2026-10-01T01:58:37.000Z",
+  "updated_at": "2026-10-01T01:58:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98783234,
+  "storage_human": "99 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LoRA Fine-tuning | QwenLM/Qwen | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen/4.2-lora-fine-tuning",
+      "snippet": "LoRA Fine-tuning Relevant source files Purpose and Scope This document explains how to perform Parameter-Efficient Fine-Tuning (PEFT) using the Low-Rank Adaptation (LoRA) technique on Qwen models. LoRA allows you to fine-tune large language models with significantly fewer trainable parameters than full fine-tuning, resulting in faster training, reduced memory requirements, and smaller adapter ..."
+    },
+    {
+      "title": "Fine-Tuning LoRA on Qwen3: Step-by-Step Guide | AIWave Blog",
+      "url": "https://aiwave.live/blog/lora-finetune-qwen3-guide.html",
+      "snippet": "Fine-tune Qwen3 with LoRA/QLoRA on a single GPU. Step-by-step guide with real code, cost analysis, and production deployment tips."
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct_SFT_lora_bidsleep - Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen2.5-7B-Instruct_SFT_lora_bidsleep",
+      "snippet": "Instructions to use xw17/Qwen2.5-7B-Instruct_SFT_lora_bidsleep with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - IIIIQIIII/qwen3-ascend-autodl-tutorial: A step-by-step guide ...",
+      "url": "https://github.com/IIIIQIIII/qwen3-ascend-autodl-tutorial",
+      "snippet": "This is a comprehensive practical guide designed to help developers and AI enthusiasts easily complete inference and LoRA fine-tuning of the Qwen3-8B model on the AutoDL platform using Huawei Ascend hardware. We will use the Qwen3-ALL-Ascend image packaged by community contributor aistudent, which ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

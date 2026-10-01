@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "aeoniannn/Qwen2.5-7B-raph-Mimic",
+  "slug": "aeoniannn-qwen2-5-7b-raph-mimic",
+  "author": "aeoniannn",
+  "url": "https://huggingface.co/aeoniannn/Qwen2.5-7B-raph-Mimic",
+  "created_at": "2026-10-01T02:40:26.000Z",
+  "updated_at": "2026-10-01T04:40:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 148,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 29383971113,
+  "storage_human": "29.4 GB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "Qwen2.5-7B | Epoch AI",
+      "url": "https://epoch.ai/models/qwen2-5-7b",
+      "snippet": "An instruction-tuned version of Qwen 2.5 7b."
+    },
+    {
+      "title": "Alibaba Releases Qwen2.5-Omni-7B: An End-to-end Multimodal AI Model",
+      "url": "https://alihome.alibaba-inc.com/en-US/document-1843362291857227776",
+      "snippet": "Alibaba has launched Qwen2.5-Omni-7B, a unified end-to-end multimodal model in the Qwen series. Uniquely designed for comprehensive multimodal perception, it can process diverse inputs, including text, images, audio, and videos, while generating real-time text and natural speech responses."
+    }
+  ]
+}

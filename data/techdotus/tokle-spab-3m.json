@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "techdotus/Tokle-SPAB-3M",
+  "slug": "techdotus-tokle-spab-3m",
+  "author": "techdotus",
+  "url": "https://huggingface.co/techdotus/Tokle-SPAB-3M",
+  "created_at": "2026-09-29T12:19:57.000Z",
+  "updated_at": "2026-09-30T18:09:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tokle",
+    "text-generation",
+    "causal-lm",
+    "custom-architecture",
+    "slm",
+    "small-language-model",
+    "spab",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/cosmopedia",
+    "dataset:agentlans/high-quality-english-sentences",
+    "dataset:nampdn-ai/tiny-strange-textbooks",
+    "dataset:armanc/ScienceQA",
+    "dataset:nvidia/OpenMathInstruct-2",
+    "dataset:microsoft/orca-math-word-problems-200k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 451,
+  "trending_score": 12,
+  "parameters": 2908947,
+  "parameters_human": "2.9M",
+  "storage_bytes": 90402240,
+  "storage_human": "90 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fast 3D — AI 3D Model Generator | Text to 3D & Image to 3D in Seconds",
+      "url": "https://www.fast3d.org/en",
+      "snippet": "Fast AI 3D Model Generator Turn text prompts or images into fully-textured, production-ready 3D models in ~10 seconds. Export GLB, OBJ, FBX & STL — ready for games, 3D printing, AR/VR and e-commerce."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "Best Free AI 3D Model Generators in 2026 (Tested and Compared)",
+      "url": "https://www.3daistudio.com/blog/best-free-ai-3d-model-generators-2026",
+      "snippet": "The best free AI 3D model generators in 2026, compared on free credits, commercial use, export formats, and quality. Generate 3D models from text or images at no cost."
+    },
+    {
+      "title": "AI 3D Model Generator | Image & Text to 3D | Next3D",
+      "url": "https://next3d.ai/",
+      "snippet": "Next3D is an AI 3D model generation platform and online 3D file toolkit for image to 3D and text to 3D workflows. Users can generate 3D models from text or images, view GLB, GLTF, OBJ, FBX, STL, and other model files online, and continue through format conversion, preview, and download workflows."
+    },
+    {
+      "title": "AI 3D Model Generators — Top Tools Compared (2026) | 3DLinks",
+      "url": "https://3dlinks.com/ai-3d-model-generators",
+      "snippet": "Best AI 3D Model Generators in 2026 AI 3D model generators turn text prompts and reference images into fully textured 3D meshes in seconds. Whether you need game assets, product mockups, concept art, or 3D printing prototypes, these tools let you skip hours of manual modeling. We compared 8 leading AI 3D generators on quality, speed, pricing, and output formats."
+    }
+  ]
+}

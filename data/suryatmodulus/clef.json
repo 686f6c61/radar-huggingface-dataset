@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "suryatmodulus/clef",
+  "slug": "suryatmodulus-clef",
+  "author": "suryatmodulus",
+  "url": "https://huggingface.co/suryatmodulus/clef",
+  "created_at": "2026-10-01T18:05:37.000Z",
+  "updated_at": "2026-10-01T18:05:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "clef",
+    "cloudflare",
+    "systemone",
+    "qwen3.8",
+    "post-train",
+    "image-text-to-typed-output",
+    "multimodal",
+    "structured-output",
+    "classification",
+    "custom-code",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54989721117,
+  "storage_human": "55.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "suryatmodulus (Surya T) - Hugging Face",
+      "url": "https://huggingface.co/suryatmodulus/datasets",
+      "snippet": "User profile of Surya T on Hugging Face"
+    },
+    {
+      "title": "suryatmodulus/parakeet-redux · Hugging Face",
+      "url": "https://huggingface.co/suryatmodulus/parakeet-redux",
+      "snippet": "suryatmodulus / parakeet-redux Like 0 Automatic Speech Recognition Safetensors 25 languages parakeet_tdt ternary parakeet tdt speech-recognition cpu apple-silicon 8-bit precision License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new parakeet-redux Usage Performance How this was measured x86 CPU Apple silicon ..."
+    },
+    {
+      "title": "CLEF: Clinically-Guided Contrastive Learning for Electrocardiogram ...",
+      "url": "https://arxiv.org/html/2512.02180v1",
+      "snippet": "Figure 1: CLEF &#x27;s framework and performance overview (see § 2 for notations). (A) Our clinically-guided contrastive pretraining. Key components include a negative weighting loss ℒ w $ℒw$ and a dissimilarity alignment loss ℒ d $ℒd$ that work in tandem to guide contrastive learning with clinical knowledge. (B) Spider plot on AUROC performance of CLEF -M (our medium-sized model) across ..."
+    },
+    {
+      "title": "CLEF: EEG Foundation Model for Learning Clinical Semantics",
+      "url": "https://arxiv.org/html/2605.10817v1",
+      "snippet": "We introduce CLEF, a CL inical E EG F oundation model built on two principles: long-context modeling at the scale of a full EEG session, and grounding in clinical semantics. Extending EEG foundation models from seconds to full sessions is not merely increasing context length."
+    },
+    {
+      "title": "Run Fable-traces API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/suryatmodulus/fable-traces",
+      "snippet": "fable-traces is a 4 billion parameter instruction-tuned language model developed by suryatmodulus, built upon the Qwen3-4B-Instruct-2507 architecture. Optimized for short, conversational responses, this model is designed to run efficiently on a single mid-range GPU. It leverages bfloat16 precision and uses the ChatML prompt format, inheriting its context length from the base Qwen3 model."
+    }
+  ]
+}

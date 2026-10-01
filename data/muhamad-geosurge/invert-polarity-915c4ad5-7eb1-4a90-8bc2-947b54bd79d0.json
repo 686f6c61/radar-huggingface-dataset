@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-915c4ad5-7eb1-4a90-8bc2-947b54bd79d0",
+  "slug": "muhamad-geosurge-invert-polarity-915c4ad5-7eb1-4a90-8bc2-947b54bd79d0",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-915c4ad5-7eb1-4a90-8bc2-947b54bd79d0",
+  "created_at": "2026-10-01T16:00:38.000Z",
+  "updated_at": "2026-10-01T16:02:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_text",
+    "text-generation",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-E4B",
+    "base_model:finetune:google/gemma-4-E4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518082346,
+  "parameters_human": "7.52B",
+  "storage_bytes": 15068419023,
+  "storage_human": "15.1 GB",
+  "base_model": "google/gemma-4-E4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "muhamad-geosurge (Muhamad Abdurahman) - Hugging Face",
+      "url": "https://huggingface.co/muhamad-geosurge",
+      "snippet": "muhamad-geosurge/invert-polarity-bd661a77-ae88-456c-869a-336c79c8c960 7B•Updated about 12 hours ago"
+    },
+    {
+      "title": "muhamad-geosurge/invert-polarity-80209f63-51ce-48c8-a778-9cd9ba3f54d6 ...",
+      "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-80209f63-51ce-48c8-a778-9cd9ba3f54d6",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "geosurge.ai - Shape AI",
+      "url": "https://geosurge.ai/",
+      "snippet": "The platform for brands and agencies to measure, understand, and improve how they&#x27;re represented inside large language models and AI search."
+    },
+    {
+      "title": "invert-polarity-8019e57e-318a-462d-b56d-161dee26052d",
+      "url": "https://friendli.ai/models/muhamad-geosurge/invert-polarity-8019e57e-318a-462d-b56d-161dee26052d",
+      "snippet": "Deploy invert-polarity-8019e57e-318a-462d-b56d-161dee26052d with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "invert-polarity-1f2afdb1-73a5-4433-9927-cb47fc44a0d7",
+      "url": "https://friendli.ai/models/muhamad-geosurge/invert-polarity-1f2afdb1-73a5-4433-9927-cb47fc44a0d7",
+      "snippet": "Run invert-polarity-1f2afdb1-73a5-4433-9927-cb47fc44a0d7 with FriendliAI inference. The Mistral-7B-Instruct-v0.3 Large Language Model (LLM) is an instruct…"
+    }
+  ]
+}

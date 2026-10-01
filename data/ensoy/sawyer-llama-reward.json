@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ensoy/sawyer-llama-reward",
+  "slug": "ensoy-sawyer-llama-reward",
+  "author": "ensoy",
+  "url": "https://huggingface.co/ensoy/sawyer-llama-reward",
+  "created_at": "2026-10-01T13:03:38.000Z",
+  "updated_at": "2026-10-01T13:52:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124646401,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498609748,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "foundations-of-gen-ai/notebooks/SAWYER_LLAMA_SFT.ipynb at main ... - GitHub",
+      "url": "https://github.com/sinanuozdemir/foundations-of-gen-ai/blob/main/notebooks/SAWYER_LLAMA_SFT.ipynb",
+      "snippet": "Transformer Architectures for Generative AI. Contribute to sinanuozdemir/foundations-of-gen-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "chihiro13 (Einreb Dela Cruz) - Hugging Face",
+      "url": "https://huggingface.co/chihiro13",
+      "snippet": "chihiro13/sawyer-reward-model Text Classification • 0.1B•Updated about 8 hours ago"
+    },
+    {
+      "title": "profoz/sawyer-llama-reward · Hugging Face",
+      "url": "https://huggingface.co/profoz/sawyer-llama-reward",
+      "snippet": "profoz / sawyer-llama-reward like 0 Text ClassificationTransformersSafetensorsrobertaInference Endpoints Model card FilesFiles and versions Community Train Deploy Use in Transformers No model card"
+    },
+    {
+      "title": "sinanuozdemir_quick-start-guide-to-llms/notebooks/10_SAWYER_Reward ...",
+      "url": "https://github.com/hyan-edu/sinanuozdemir_quick-start-guide-to-llms/blob/main/notebooks/10_SAWYER_Reward_Model.ipynb",
+      "snippet": "The Official Repo for \"Quick Start Guide to Large Language Models\" - hyan-edu/sinanuozdemir_quick-start-guide-to-llms"
+    }
+  ]
+}

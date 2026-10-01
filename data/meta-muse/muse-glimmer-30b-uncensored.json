@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Meta-muse/Muse-Glimmer-30B-uncensored",
+  "slug": "meta-muse-muse-glimmer-30b-uncensored",
+  "author": "Meta-muse",
+  "url": "https://huggingface.co/Meta-muse/Muse-Glimmer-30B-uncensored",
+  "created_at": "2026-10-01T17:34:32.000Z",
+  "updated_at": "2026-10-01T17:34:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_glimmer",
+    "image-text-to-text",
+    "abliteration",
+    "uncensored",
+    "muse-glimmer",
+    "conversational",
+    "en",
+    "base_model:meta-models/Muse-Glimmer-30B",
+    "base_model:finetune:meta-models/Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 59581565169,
+  "storage_human": "59.6 GB",
+  "base_model": "meta-models/Muse-Glimmer-30B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "About Meta | Social Technology, VR, AR, and Innovation",
+      "url": "https://www.meta.com/about/",
+      "snippet": "Learn more about Meta and stay updated on our role in social technology, virtual reality, augmented reality, and the future of human …"
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://business.facebook.com/",
+      "snippet": "Get started with business tools from Meta By logging in, you can navigate to all business tools like Meta Business Suite, Ads …"
+    },
+    {
+      "title": "Meta AI - Your AI Assistant for Images, Shopping and More",
+      "url": "https://www.meta.ai/?locale=fr_FR",
+      "snippet": "Use Meta AI to get things done. Create AI-generated images for free, edit photos, shop, find places to go, and get answers to any …"
+    },
+    {
+      "title": "Meta Account: Single Login for All Meta Apps and Devices",
+      "url": "https://www.meta.com/account/",
+      "snippet": "Discover Meta Account, your single login for all Meta technologies. Enjoy enhanced security, control, and convenience. Get started …"
+    },
+    {
+      "title": "Meta - Facebook",
+      "url": "https://www.facebook.com/Meta/home/",
+      "snippet": "Meta. 106,742,949 followers · 765,998 talking about this. Connect with what you love to make things happen."
+    }
+  ]
+}

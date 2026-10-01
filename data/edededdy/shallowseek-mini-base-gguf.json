@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "edededdy/ShallowSeek-mini-base-GGUF",
+  "slug": "edededdy-shallowseek-mini-base-gguf",
+  "author": "edededdy",
+  "url": "https://huggingface.co/edededdy/ShallowSeek-mini-base-GGUF",
+  "created_at": "2026-10-01T18:07:30.000Z",
+  "updated_at": "2026-10-01T18:07:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "mixture-of-experts",
+    "moe",
+    "deepseek",
+    "multi-head-latent-attention",
+    "mla",
+    "multi-token-prediction",
+    "from-scratch",
+    "tiny",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "base_model:edededdy/ShallowSeek-mini-base",
+    "base_model:quantized:edededdy/ShallowSeek-mini-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10968468,
+  "parameters_human": "11.0M",
+  "storage_bytes": 34562112,
+  "storage_human": "35 MB",
+  "base_model": "edededdy/ShallowSeek-mini-base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Using AI Models - shallowseek User Manual",
+      "url": "https://doc.shallowseek.top/en/guide/using-models.html",
+      "snippet": "Using AI Models Overview shallowseek provides a fully OpenAI-compatible API format. You can use any OpenAI SDK or OpenAI-compatible client directly — just change the Base URL and API Key."
+    },
+    {
+      "title": "GitHub - local-ai-zone/local-ai-zone.github.io: My public AI learning ...",
+      "url": "https://github.com/local-ai-zone/local-ai-zone.github.io",
+      "snippet": "A professional web application for discovering and browsing GGUF (GPT-Generated Unified Format) machine learning models. Browse thousands of quantized AI models with detailed metadata, engagement metrics, and direct download links. Want to see a complete local AI agent you can run today? GGUF Loader ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-LLM: DeepSeek LLM: Let there be answers",
+      "url": "https://github.com/deepseek-ai/DeepSeek-LLM",
+      "snippet": "2. Model Downloads We release the DeepSeek LLM 7B/67B, including both base and chat models, to the public. To support a broader and more diverse range of research within both academic and commercial communities, we are providing access to the intermediate checkpoints of the base model from its training process."
+    },
+    {
+      "title": "How to Run GGUF Models Locally",
+      "url": "https://ggufloader.github.io/how-to-run-gguf-models.html",
+      "snippet": "How to Run GGUF Models Locally The complete 2026 guide — load any GGUF model with GGUF Loader, Ollama, LM Studio, or llama.cpp. Pick your tool below and jump straight to its step-by-step tutorial."
+    }
+  ]
+}

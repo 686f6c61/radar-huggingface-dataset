@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "nvidia/Kumo-Relational",
+  "slug": "nvidia-kumo-relational",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/Kumo-Relational",
+  "created_at": "2026-07-20T14:06:10.000Z",
+  "updated_at": "2026-09-28T00:00:00.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "relational-foundation-model",
+    "structured-data-models",
+    "base_model:jingang/TabICL",
+    "base_model:finetune:jingang/TabICL",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 735327096,
+  "storage_human": "735 MB",
+  "base_model": "jingang/TabICL",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kumo Relational Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/kumo-relational/modelcard",
+      "snippet": "NVIDIA Kumo Relational is a structured-data foundation model for prediction over relational, multi-table data. It uses declared schemas, relationships, entity tables, fact tables, context rows, and prediction rows without requiring callers to flatten connected tables into a single feature table."
+    },
+    {
+      "title": "Kumo Relational Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/kumo-relational",
+      "snippet": "Pull and run the NVIDIA NIM with the command below. The container serves the single packaged kumo-relational model; no external model mount or runtime model download is required."
+    },
+    {
+      "title": "How Kumo Relational Works | NVIDIA Structured Data and Graph Models",
+      "url": "https://docs.nvidia.com/sdgm/rfm/introduction",
+      "snippet": "Kumo Relational is a pre-trained AI model that makes predictions from related database tables without requiring you to train a separate model for each task. You describe what to predict and for which entities in Predictive Query Language (PQL), then run the request against a Kumo Relational NVIDIA NIM, a packaged service that hosts the model for inference. From tables to predictions The SDK ..."
+    },
+    {
+      "title": "nvidia / kumo-relational",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-kumo-relational",
+      "snippet": "NVIDIA Kumo Relational is a structured-data foundation model for prediction over relational, multi-table data. It uses declared schemas, relationships, entity tables, fact tables, context rows, and prediction rows without requiring callers to flatten connected tables into a single feature table."
+    },
+    {
+      "title": "Overview | NVIDIA Structured Data and Graph Models",
+      "url": "https://docs.nvidia.com/sdgm/rfm/overview",
+      "snippet": "Kumo Relational is a pre-trained relational foundation model: a model designed to make predictions from connected tables and examples supplied with each request. It works with structured, multi-table data without requiring you to train a separate model for each prediction task."
+    }
+  ]
+}

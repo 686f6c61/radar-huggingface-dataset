@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Tenshiuwu/test",
+  "slug": "tenshiuwu-test",
+  "author": "Tenshiuwu",
+  "url": "https://huggingface.co/Tenshiuwu/test",
+  "created_at": "2026-10-01T13:45:57.000Z",
+  "updated_at": "2026-10-01T13:45:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tenshi Hinanawi - Touhou - v1.0 - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/637446646772374238",
+      "snippet": "Download Tenshi Hinanawi - Touhou - free LORA SD 1.5 AI model on TENSOR. By Sol Eternelle"
+    },
+    {
+      "title": "Tenshi Hinanawi (Touhou Project) | Tensor.Art",
+      "url": "https://tensor.art/models/895736955151627656",
+      "snippet": "Download Tenshi Hinanawi (Touhou Project) - free LORA Illustrious AI model on TENSOR. TENSHI (FLAMING GALE RIDER), TENSHI HINANAWI, TOUHOU LOSTWORD"
+    },
+    {
+      "title": "GitHub - tenshi-a-i/project.tenshi.ai · GitHub",
+      "url": "https://github.com/tenshi-a-i/project.tenshi.ai",
+      "snippet": "Contribute to tenshi-a-i/project.tenshi.ai development by creating an account on GitHub."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    },
+    {
+      "title": "TenshiUwU · GitHub",
+      "url": "https://github.com/TenshiUwU/",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    }
+  ]
+}

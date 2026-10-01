@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Kairoi-LLC/stt-en-conformer-ctc-small-onnx",
+  "slug": "kairoi-llc-stt-en-conformer-ctc-small-onnx",
+  "author": "Kairoi-LLC",
+  "url": "https://huggingface.co/Kairoi-LLC/stt-en-conformer-ctc-small-onnx",
+  "created_at": "2026-10-01T17:57:17.000Z",
+  "updated_at": "2026-10-01T18:23:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nemo",
+    "onnx",
+    "ctc",
+    "forced-alignment",
+    "word-timestamps",
+    "mirror",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:nvidia/stt_en_conformer_ctc_small",
+    "base_model:quantized:nvidia/stt_en_conformer_ctc_small",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46419854,
+  "storage_human": "46 MB",
+  "base_model": "nvidia/stt_en_conformer_ctc_small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/stt_en_conformer_ctc_small · Hugging Face",
+      "url": "https://huggingface.co/nvidia/stt_en_conformer_ctc_small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nvidia/stt_en_conformer_ctc_small - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/218148",
+      "snippet": "Conformer-CTC model is a non-autoregressive variant of Conformer model [1] for Automatic Speech Recognition which uses CTC loss/decoding instead of Transducer. You may find more info on the detail of this model here: Conformer-CTC Model."
+    },
+    {
+      "title": "README.md · nvidia/stt_en_conformer_ctc_small at main",
+      "url": "https://huggingface.co/nvidia/stt_en_conformer_ctc_small/blob/main/README.md",
+      "snippet": "NVIDIA Conformer-CTC Small (en-US) | | | | | This model transcribes speech in lowercase English alphabet including spaces and apostrophes, and is trained on several thousand hours of English speech data. It is a non-autoregressive \"small\" variant of Conformer, with around 13 million parameters. See the model architecture section and NeMo documentation for complete architecture details. It is ..."
+    },
+    {
+      "title": "STT En Conformer-CTC Small | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/stt_en_conformer_ctc_small",
+      "snippet": "This collection contains small size versions of Conformer-CTC (13M parameters) trained on NeMo ASRSet with around 16000 hours of english speech. The model transcribes speech in lower case english alphabet along with spaces and apostrophes."
+    },
+    {
+      "title": "STT En Conformer-CTC Small LibriSpeech | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/nemo/models/stt_en_conformer_ctc_small_ls/-?_lr=1",
+      "snippet": "This collection contains small size versions of Conformer-CTC (around 13M parameters) trained on LibriSpeech dataset. The model transcribes speech in lower case english alphabet along with spaces and apostrophes."
+    }
+  ]
+}

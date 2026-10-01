@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yuriilaba/ucu-wsd-aug16-generation_all_combined_pt-false_seed-456",
+  "slug": "yuriilaba-ucu-wsd-aug16-generation_all_combined_pt-false_seed-456",
+  "author": "yuriilaba",
+  "url": "https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_all_combined_pt-false_seed-456",
+  "created_at": "2026-10-01T13:29:50.000Z",
+  "updated_at": "2026-10-01T13:30:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129280083,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ucu-wsd-aug16-generation_pt-false_seed-123 - Hugging Face",
+      "url": "https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_pt-false_seed-123",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yuriilaba/ucu-wsd-generation_all_combined_pt-false_seed-456 · Hugging Face",
+      "url": "https://huggingface.co/yuriilaba/ucu-wsd-generation_all_combined_pt-false_seed-456",
+      "snippet": "generation_all_combined_pt-false_seed-456 Fine-tuned Ukrainian word-sense-disambiguation model."
+    },
+    {
+      "title": "Releases · ultralytics/assets - GitHub",
+      "url": "https://github.com/ultralytics/assets/releases",
+      "snippet": "Shared Ultralytics logos, media, sample images, pretrained model weights, dataset artifacts, and release assets. - ultralytics/assets"
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "‪Yurii Laba‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=FbZQ5okAAAAJ&hl=en",
+      "snippet": "‪PhD Student, Ukrainian Catholic University‬ - ‪‪Cited by 33‬‬"
+    }
+  ]
+}
